@@ -11,9 +11,7 @@ The $ProductName$ Line Chart or Line Graph is a type of category charts that sho
 
 ## $Platform$ Line Chart Example
 
-In the following example, $Platform$ Line Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
-
-You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
+You can create the $Platform$ Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Line** enum, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

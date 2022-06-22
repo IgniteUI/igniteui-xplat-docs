@@ -10,7 +10,7 @@ The $ProductName$ Spline Chart belongs to a group of Category Charts that render
 
 ## $Platform$ Spline Chart Example
 
-The following example shows how to create $Platform$ Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to Spline enum.
+The following example shows how to create $Platform$ Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Spline** enum.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

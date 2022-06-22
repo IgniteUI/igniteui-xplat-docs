@@ -11,7 +11,7 @@ The $ProductName$ Point Chart renders a collection of points. Values are represe
 
 ## $Platform$ Point Chart Example
 
-You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
+You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Point** enum, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -24,7 +24,7 @@ You can create the $Platform$ Point Chart in the `CategoryChart` control by bind
 
 ## $Platform$ Point Chart with Single Series
 
-In the following example, the $Platform$ Point Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
+In the following example, the $Platform$ Point Chart plots a single data source by automatically selecting numeric data column for y-axis and non-numeric data column for x-axis.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

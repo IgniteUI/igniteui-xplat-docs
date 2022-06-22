@@ -11,9 +11,7 @@ The $ProductName$ Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the mo
 
 ## $Platform$ Bar Chart Example
 
-The $Platform$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
-
-You can create this type of chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
+You can create $Platform$ Bar Chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

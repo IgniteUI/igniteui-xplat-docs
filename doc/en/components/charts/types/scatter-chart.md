@@ -11,9 +11,7 @@ The $ProductName$ Scatter Chart belongs to a group of charts that show the relat
 
 ## $Platform$ Scatter Marker Chart
 
-$Platform$ Scatter Marker Chart renders as a collection of markers, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSeries`, as shown in the example below:
+$Platform$ Scatter Marker Chart renders as a collection of markers, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system. You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -26,9 +24,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $Platform$ Scatter Line Chart
 
-$Platform$ Scatter Line Chart renders as a collection of markers connected by a straight lines, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterLineSeries`, as shown in the example below:
+$Platform$ Scatter Line Chart renders as a collection of markers connected by a straight lines, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system. You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterLineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -41,9 +37,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $Platform$ Scatter Spline Chart
 
-$Platform$ Scatter Spline Chart renders as a collection of markers connected by a curved spline, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSplineSeries`, as shown in the example below:
+$Platform$ Scatter Spline Chart renders as a collection of markers connected by a curved spline, each having a pair of numeric X/Y values that determines its location in the Cartesian coordinate system. You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSplineSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -56,9 +50,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $Platform$ Scatter High Density Chart
 
-Use the $Platform$ Scatter High Density (HD) Chart to bind and show scatter data ranging from thousands to millions of data points with very little loading time. Due to this chart type being designed for such a large amount of points, it is visualized as tiny dots as opposed to full sized markers, and displays areas with the most data using a higher color density representing a cluster of data points.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `HighDensityScatterSeries`, as shown in the example below:
+Use the $Platform$ Scatter High Density (HD) Chart to bind and show scatter data ranging from thousands to millions of data points with very little loading time. Due to this chart type being designed for such a large amount of points, it is visualized as tiny dots as opposed to full sized markers, and displays areas with the most data using a higher color density representing a cluster of data points. You can create this type of chart in the `XamDataChart` control by binding your data to a `HighDensityScatterSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -71,9 +63,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $Platform$ Scatter Area Chart
 
-$Platform$ Scatter Area Chart draws a colored surface based on a triangulation of X and Y data with a numeric data value assigned to each point. This chart is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterAreaSeries`, as shown in the example below:
+$Platform$ Scatter Area Chart draws a colored surface based on a triangulation of X and Y data with a numeric data value assigned to each point. This chart is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterAreaSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -86,9 +76,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 ## $Platform$ Scatter Contour Chart
 
-$Platform$ Scatter Contour Chart draws colored contour lines based on a triangulation of X and Y data with a numeric data value assigned to each point. This chart is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office.
-
-You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterContourSeries`, as shown in the example below:
+$Platform$ Scatter Contour Chart draws colored contour lines based on a triangulation of X and Y data with a numeric data value assigned to each point. This chart is useful for rendering heat maps, magnetic field strength or Wi-Fi strength in an office. You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterContourSeries`, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
