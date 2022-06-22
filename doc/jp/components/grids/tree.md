@@ -276,9 +276,11 @@ igc-tree-item::part(active selected) {
 <!-- Blazor -->
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
+
 <!-- end: Blazor>
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
 <!-- end: React>
