@@ -11,6 +11,8 @@ The $ProductName$ Snackbar component is used to provide feedback about an operat
 
 ## $ProductName$ Snackbar Example
 
+This sample demonstrates how to create `Snackbar` component.
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="$Platform$ Snackbar Example"

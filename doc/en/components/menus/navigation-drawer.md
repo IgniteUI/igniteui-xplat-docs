@@ -12,6 +12,8 @@ The $ProductName$ Navigation Drawer provides side navigation that can be expande
 
 ## $Platform$ Navigation Drawer Example
 
+This sample demonstrates how to create `NavDrawer` component.
+
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"

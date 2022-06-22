@@ -12,7 +12,7 @@ The $ProductName$ Calendar component provides an easy and intuitive way to displ
 
 ## $Platform$ Calendar Example
 
-This sample demonstrates how to create  `Calendar` with option to select a single date.
+This sample demonstrates how to create `Calendar` with option to select a single date.
 
 <div class="divider--half"></div>
 

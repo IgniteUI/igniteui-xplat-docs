@@ -11,6 +11,8 @@ The $ProductName$ Toast component is primarily used for system messaging, push n
 
 ## $ProductName$ Toast Example
 
+This sample demonstrates how to create `Toast` component.
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast Example"
