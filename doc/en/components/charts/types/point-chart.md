@@ -2,7 +2,7 @@
 title: $Platform$ Point Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Point Chart
 _keywords: $Platform$ Charts, Point Chart, Infragistics
-mentionedTypes: ["CategoryChart", "CategoryChartType", "Legend"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Point Chart
@@ -11,7 +11,7 @@ The $ProductName$ Point Chart renders a collection of points. Values are represe
 
 ## $Platform$ Point Chart Example
 
-You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `DataSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
+You can create the $Platform$ Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

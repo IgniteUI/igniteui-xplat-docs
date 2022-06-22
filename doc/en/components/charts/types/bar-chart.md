@@ -2,7 +2,7 @@
 title: $Platform$ Bar Chart and Graph | $ProductName$
 _description: $Platform$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
 _keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
-mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
+mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Bar Chart
@@ -160,7 +160,7 @@ You can find more information about related chart types in these topics:
 The following table lists API members mentioned in the above sections:
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

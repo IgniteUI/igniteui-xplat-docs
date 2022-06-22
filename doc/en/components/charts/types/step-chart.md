@@ -2,7 +2,7 @@
 title: $Platform$ Step Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Step Chart
 _keywords: $Platform$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics
-mentionedTypes: ["CategoryChart", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Step Chart

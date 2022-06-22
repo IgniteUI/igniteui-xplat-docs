@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
 _description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 
 # $Platform$ Using Shape Polygon Series

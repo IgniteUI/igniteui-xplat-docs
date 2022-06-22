@@ -2,7 +2,7 @@
 title: $Platform$ Radial Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Radial Chart
 _keywords: $Platform$ Charts, Radial Chart, Infragistics
-mentionedTypes: ["XamDataChart", "RadialLineSeries"]
+mentionedTypes: ["XamDataChart", "RadialLineSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Radial Chart
@@ -104,7 +104,7 @@ The following table lists API members mentioned in the above sections:
 - `RadialColumnSeries`
 - `RadialLineSeries`
 - `RadialPieSeries`
-- `DataSource`
+- `ItemsSource`
 - `AngleAxisName`
 - `ValueAxisName`
 - `ValueMemberPath`

@@ -2,7 +2,7 @@
 title: $Platform$ Column Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Column Chart
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Column Chart

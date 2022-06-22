@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Geographic Series Types | Infragistics
 _description: Use Infragistics $Platform$ map's series to display geo-spatial data as points such as locations of cities, polylines such as road connections, or polygons such as shape of countries in a geographic context. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, geographic series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
 
 # $Platform$ Geographic Series Overview

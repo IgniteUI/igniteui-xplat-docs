@@ -2,7 +2,7 @@
 title: $Platform$ Stacked Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Stacked Chart
 _keywords: $Platform$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics
-mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
+mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Stacked Chart

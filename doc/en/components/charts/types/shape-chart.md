@@ -2,7 +2,7 @@
 title: $Platform$ Shape Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Shape Chart
 _keywords: $Platform$ Charts, Shape Chart, Infragistics
-mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
+mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Shape Charts
@@ -54,7 +54,7 @@ The following table lists API members mentioned in the above sections:
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

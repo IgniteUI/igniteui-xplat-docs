@@ -2,7 +2,7 @@
 title: $Platform$ Network Chart | Network Graph | Polyline Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Network Chart  / Graph
 _keywords: $Platform$ Charts, Network Chart, Network Graph, Network Polar Chart, Network Scatter Chart, Polyline Chart, Infragistics
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Network Chart

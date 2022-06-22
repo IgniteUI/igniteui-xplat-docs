@@ -2,7 +2,7 @@
 title: $Platform$ Polar Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Polar Chart
 _keywords: $Platform$ Charts, Polar Chart, Infragistics
-mentionedTypes: ["XamDataChart", "PolarAreaSeries"]
+mentionedTypes: ["XamDataChart", "PolarAreaSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Polar Chart
@@ -123,7 +123,7 @@ The following table lists API members mentioned in the above sections:
 - `PolarSplineSeries`
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
-- `DataSource`
+- `ItemsSource`
 - `AngleAxisName`
 - `AngleMemberPath`
 - `RadiusAxisName`

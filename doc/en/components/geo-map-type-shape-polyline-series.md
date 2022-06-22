@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Shape Polyline Series | Infragistics
 _description: Use Infragistics $Platform$ map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 # $Platform$ Using Shape Polyline Series
 

@@ -2,7 +2,7 @@
 title: $Platform$ Spline Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Spline Chart
 _keywords: $Platform$ Charts, Spline Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series']
 ---
 # $Platform$ Spline Chart
 

@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
 _description: Use Infragistics $Platform$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
+mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 ---
 # $Platform$ Using Scatter Area Series
 

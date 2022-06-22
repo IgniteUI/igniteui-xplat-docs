@@ -2,7 +2,7 @@
 title: $Platform$ Axis Gridlines | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Gridlines
 _keywords: $Platform$ Axis, Gridlines, Infragistics
-mentionedTypes: ["CategoryChart", "XYChart", "DomainChart", "XamDataChart", "NumericXAxis", "NumericYAxis", "NumericAxisBase" ]
+mentionedTypes: ["DomainChart", "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "NumericXAxis", "NumericYAxis", "NumericAxisBase" ]
 namespace: Infragistics.Controls.Charts
 ---
 

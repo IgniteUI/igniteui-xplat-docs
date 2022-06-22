@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
 _description: Use Infragistics $Platform$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 # $Platform$ Using Scatter Symbol Series
 

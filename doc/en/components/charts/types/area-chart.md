@@ -2,7 +2,7 @@
 title: $Platform$ Area Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Area Chart
 _keywords: $Platform$ Charts, Area Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Area Chart
@@ -13,7 +13,7 @@ Area Chart is based on [Line Chart](line-chart.md) or [Spline Chart](splin
 
 ## $Platform$ Area Chart Example
 
-You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `DataSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
+You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -71,7 +71,7 @@ $Platform$ Area Chart is often used to show the change of value over time such a
 
 ## $Platform$ Area Chart with Multiple Series
 
-Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same control. This is accomplished by binding multiple data source to `DataSource` property of the `CategoryChart` control.
+Similarly to how you can show multiple [Line Chart](line-chart.md) and [Spline Chart](spline-chart.md), you may also combine multiple Area Charts in the same control. This is accomplished by binding multiple data source to `ItemsSource` property of the `CategoryChart` control.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
