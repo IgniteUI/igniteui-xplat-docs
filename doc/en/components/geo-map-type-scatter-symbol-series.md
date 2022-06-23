@@ -4,11 +4,11 @@ _description: Use Infragistics $Platform$ map's scatter symbol series to display
 _keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Using Scatter Symbol Series
+# $Platform$ Geographic Symbol Map
 
-Use the $Platform$ map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
+In $Platform$ map component, you can use the `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
 
-## $Platform$ Using Scatter Symbol Series Example
+## $Platform$ Geographic Symbol Map Example
 
 
 <code-view style="height: 500px"

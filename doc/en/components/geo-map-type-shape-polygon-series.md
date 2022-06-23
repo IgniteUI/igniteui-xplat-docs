@@ -5,11 +5,11 @@ _keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 
-# $Platform$ Using Shape Polygon Series
+# $Platform$ Geographic Polygon Map
 
-Use the $Platform$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
+In $Platform$ map component, you can use the `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## $Platform$ Using Shape Polygon Series Example
+## $Platform$ Geographic Polygon Map Example
 
 
 <code-view style="height: 500px"

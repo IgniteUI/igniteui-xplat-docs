@@ -4,11 +4,11 @@ _description: Use Infragistics $Platform$ map's scatter contour series to draw c
 _keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale', 'Series']
 ---
-# $Platform$ Using Scatter Contour Series
+# $Platform$ Geographic Contour Map
 
-Use the $Platform$ map component's `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
+In $Platform$ map component, you can use the `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
 
-## $Platform$ Using Scatter Contour Series Example
+## $Platform$ Geographic Contour Map Example
 
 
 <code-view style="height: 500px"
