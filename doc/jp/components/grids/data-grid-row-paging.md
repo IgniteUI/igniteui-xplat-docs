@@ -57,3 +57,9 @@ Ignite UI $Platform$ グリッドを使用すると、開発者はページン�
 - applySorts
 - applyGroups
 - applyFilters
+
+## API メンバー
+
+ - `Grid`
+ - `IsPagerVisible`
+ - `PageSize`

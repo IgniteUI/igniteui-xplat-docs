@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | シェイプ ポリライン シリーズ | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップのシェイプ ポリライン シリーズを使用して、都市または空港などの地理的位置間の道路または接続を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics, $Platform$ マップ, シェイプ ポリライン シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 # $Platform$ シェイプ ポリライン シリーズの使用
@@ -305,3 +305,9 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
+## API メンバー
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapefileConverter`

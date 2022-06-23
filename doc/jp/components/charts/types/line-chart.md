@@ -2,7 +2,7 @@
 title: $Platform$ 折れ線チャートとグラフ | $ProductName$
 _description: $Platform$ 折れ線チャートは、数百万のデータポイントに及ぶ大量のデータを処理し、数ミリ秒ごとに更新することができます。無料でお試しください。
 _keywords: $Platform$ Charts, Line Chart, Line Graph, Infragistics, $Platform$ チャート, 折れ線チャート, 折れ線グラフ, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "Legend", "PolarLineSeries", "RadialLineSeries", "StackedLineSeries", "Stacked100LineSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,9 +12,7 @@ $ProductName$ 折れ線チャート (または折れ線グラフ) は、カテ�
 
 ## $Platform$ 折れ線チャートの例
 
-次の例では、$Platform$ 折れ線チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (TWh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
-
-`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
+次の例に示すように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Line** 列挙型に設定することで、`CategoryChart`コントロールに $Platform$ 折れ線チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

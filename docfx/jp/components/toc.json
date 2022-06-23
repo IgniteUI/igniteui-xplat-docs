@@ -533,7 +533,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
     "status": "UPDATED"

@@ -1,6 +1,6 @@
 ---
 title: $Platform$ スタイル設定およびテーマ | $Platform$ エレベーション | インフラジスティックス
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Elevations, Styling, インフラジスティックス, エレベーション, スタイル設定
 mentionedTypes: ["Elevations"]
 _language: ja
@@ -64,7 +64,7 @@ igc-navbar {
 ```css
 igc-snackbar,
 igc-toast {
-    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24); 
+    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -81,3 +81,7 @@ igc-toast {
 ```
 
 `--igc-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。
+
+## API メンバー
+
+ - `Elevations`

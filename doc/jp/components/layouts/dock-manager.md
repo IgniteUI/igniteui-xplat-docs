@@ -403,16 +403,16 @@ Dock Manager コンポーネントは、スロットとパーツを使用して�
 igc-dockmanager::part(unpinned-tab-area) {
     background: #bee9ec;
 }
-  
+
 igc-dockmanager::part(unpinned-tab-area--left) {
     border-right: 1px dashed #004d7a;
 }
-  
+
 igc-dockmanager::part(unpinned-tab-area--bottom) {
     border-top: 1px dashed #004d7a;
 }
 
-igc-dockmanager::part(tab-header-close-button), 
+igc-dockmanager::part(tab-header-close-button),
 igc-dockmanager::part(pane-header-close-button) {
     background-color: #e73c7e;
 }
@@ -465,7 +465,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 `unpinButton` | ピン固定解除ボタン。
 `splitterHandle` | スプリッターのハンドル。
 
-各スロットの対応するパーツは、このページの [CSS パーツ](dock-manager.md#css-parts) セクションにあります。
+各スロットの対応するパーツは、このページの**スタイル設定**セクションの **CSS パーツ**にあります。
 
 ## キーボード ナビゲーション
 
@@ -476,32 +476,32 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 ### ドッキング
 
-- <kbd>Cmd/Ctrl + Shift + 上矢印</kbd> グローバルの上へのドック。
-- <kbd>Cmd/Ctrl + Shift + 下矢印</kbd> グローバルの下へのドック。
-- <kbd>Cmd/Ctrl + Shift + 右矢印</kbd> グローバルの右へのドック。
-- <kbd>Cmd/Ctrl + Shift + 左矢印</kbd> グローバルのの左へのドック。
-- <kbd>Shift + 上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
-- <kbd>Shift + 下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
-- <kbd>Shift + 右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
-- <kbd>Shift + 左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> グローバルのの左へのドック。
+- <kbd>Shift</kbd> + <kbd>上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + 右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + 左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
- - <kbd>Alt + F6</kbd> 次のコンテンツ ペインにフォーカスします。
- - <kbd>Alt + Shift + F6</kbd> 前のコンテンツ ペインにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Alt</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
 ### ペイン ナビゲーター
 
 次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
 
- - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  最初のドキュメントから開始します。
- - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> 最初のペインから開始します。
- - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> 最後のドキュメントから逆方向に開始します。
- - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> 最後のペインから逆方向に開始します。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
+ - <kbd>Alt</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
 
 ### その他
- - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
+ - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
@@ -605,3 +605,7 @@ addResourceStrings('fr', dockManagerStringsFr);
 ドック マネージャーは、文字列を変更できる [`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `DockManager`

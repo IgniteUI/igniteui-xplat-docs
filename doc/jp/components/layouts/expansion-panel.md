@@ -79,7 +79,7 @@ defineComponents(IgcExpansionPanelComponent);
 
 `IgcExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
 
-展開インジケーターの位置の構成は、展開パネルの `indicatorAlignment` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。 
+展開インジケーターの位置の構成は、展開パネルの `indicatorAlignment` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
 
 次のコードサンプルは、コンポーネントのボタンが右側に移動するように構成する方法を示しています。
 
@@ -101,7 +101,7 @@ $ProductName$ 展開パネルのキーボード ナビゲーションは、W3C �
  - <kbd> Alt + 下矢印</kbd> - フォーカスされたパネルを展開します。
  - <kbd>Alt + 上矢印</kbd> - フォーカスされたパネルを縮小します。
  - <kbd>Space</kbd> / <kbd>Enter</kbd> - フォーカスされたパネルの展開状態を切り替えます。
- 
+
 
 ## スタイル設定
 
@@ -143,3 +143,7 @@ $ProductName$ 展開パネル コンポーネントは、いくつかの CSS パ
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `ExpansionPanel`

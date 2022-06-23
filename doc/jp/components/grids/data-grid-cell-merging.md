@@ -38,3 +38,10 @@ $Platform$ データ グリッドでのセルの結合は、$Platform$ グリッ
 - `FormattedText`: セルからのフォーマットされた値が同じである場合、隣接する行からのセルを結合します。
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `FormattedText`
+ - `MergedCellEvaluationCriteria`
+ - `MergedCellMode`
+ - `OnlyWhenSorted`

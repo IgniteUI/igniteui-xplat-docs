@@ -21,3 +21,6 @@ $ProductName$ Data Table / Data Grid は、周期表を作成する[テンプレ
            github-src="grids/data-grid/type-periodic-table">
 </code-view>
 
+## API メンバー
+
+ - `Grid`

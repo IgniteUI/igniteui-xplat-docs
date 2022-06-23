@@ -478,3 +478,16 @@ igc-calendar::part(year-inner current selected) {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `ActiveDate`
+ - `ActiveView`
+ - `After`
+ - `Before`
+ - `Between`
+ - `Calendar`
+ - `Change`
+ - `DateRangeDescriptor`
+ - `DateRangeType`
+ - `DateRange`

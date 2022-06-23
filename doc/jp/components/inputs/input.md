@@ -188,3 +188,10 @@ Input API の詳細については、次のリンクを参照してください�
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+
+## API メンバー
+
+ - `Icon`
+ - `Input`
+ - `Radio`

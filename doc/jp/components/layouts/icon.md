@@ -89,7 +89,7 @@ registerIcon(
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -129,7 +129,7 @@ registerIconFromText("search", searchIcon, "material");
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -214,3 +214,8 @@ igc-icon {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `Icon`
+ - `RegisterIcon`

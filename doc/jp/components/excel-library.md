@@ -7,7 +7,7 @@ _language: ja
 ---
 # $Platform$ Excel ライブラリの概要
 
-Infragistics $Platform$ Excel ライブラリは、Workbook、Worksheet、Cell、Formula などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics $Platform$ Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
+Infragistics $Platform$ Excel ライブラリは、`Workbook`、`Worksheet`、`Cell`、`Formula` などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics $Platform$ Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
 
 ## $Platform$ Excel ライブラリの例
 
@@ -215,3 +215,9 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 ```
 >
 <!-- -->
+
+## API メンバー
+
+ - `Load`
+ - `WorkbookInProcessRuntime`
+ - `Workbook`

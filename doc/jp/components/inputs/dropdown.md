@@ -37,12 +37,12 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
-import { 
+import {
     defineComponents,
     IgcDropdownComponent,
     IgcDropdownItemComponent,
     IgcDropdownHeaderComponent,
-    IgcDropdownGroupComponent 
+    IgcDropdownGroupComponent
 } from "igniteui-webcomponents";
 
 defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
@@ -163,3 +163,11 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Disabled`
+ - `DropdownGroup`
+ - `DropdownHeader`
+ - `DropdownItem`
+ - `Dropdown`

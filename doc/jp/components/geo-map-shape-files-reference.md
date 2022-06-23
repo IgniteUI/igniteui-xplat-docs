@@ -99,11 +99,18 @@ $Platform$ `XamGeographicMap`コントロールは、地理空間データのソ
 * [MapCruzin – シェープ ファイル](http://www.mapcruzin.com/download-free-arcgis-shapefiles.htm)
 
 
-#### その他リソース
-
-
+## その他リソース
 
 このトピックに関連する追加情報については、以下のトピックを参照してください。
 
  * [シェープファイルのバインディング](geo-map-binding-shp-file.md)
  * [地理的シリーズ](geo-map-type-series.md)
+ 
+## API メンバー
+
+ - `XamGeographicMap`
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`

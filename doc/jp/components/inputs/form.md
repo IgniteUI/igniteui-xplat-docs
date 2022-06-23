@@ -141,3 +141,12 @@ Form コンポーネントは、次のメソッドを公開します:
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `Button`
+ - `Checkbox`
+ - `Form`
+ - `Input`
+ - `Radio`
+ - `Submit`

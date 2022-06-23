@@ -62,3 +62,7 @@ this.dockManager.layout = {
     <div slot="content1" style="width: 100%; height: 100%;">Content 1</div>
 </igc-dockmanager>
 ``` -->
+
+ ## API メンバー
+
+ - `DockManager`

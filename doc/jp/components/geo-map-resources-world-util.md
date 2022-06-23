@@ -410,3 +410,7 @@ export default class WorldUtils {
         }
     }
 ```
+
+## API メンバー
+
+ - `XamGeographicMap`

@@ -12,7 +12,7 @@ The $ProductName$ ドーナツ チャートは[円チャート](pie-chart.md)と
 
 ## $Platform$ ドーナツ チャートの例
 
-`XamDoughnutChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドします。
+`XamDoughnutChart` コントロールでドーナツ チャートを作成するには、以下の例のように、データをバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

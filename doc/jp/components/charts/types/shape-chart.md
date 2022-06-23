@@ -2,7 +2,7 @@
 title: $Platform$ シェープ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ シェープ チャート
 _keywords: $Platform$ Charts, Shape Chart, Infragistics, $Platform$ チャート, シェープ チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries"]
+mentionedTypes: ["XamDataChart", "ScatterPolygonSeries", "ScatterPolylineSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -55,7 +55,7 @@ $Platform$ 散布ポリライン チャートは、`XamDataChart` コントロ�
 - `XamDataChart`
 - `ScatterPolygonSeries`
 - `ScatterPolylineSeries`
-- `DataSource`
+- `ItemsSource`
 - `ShapeMemberPath`
 - `NumericXAxis`
 - `NumericYAxis`

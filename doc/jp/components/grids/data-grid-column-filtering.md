@@ -62,3 +62,13 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 </code-view>
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `DisplayName`
+ - `FilterExpressions`
+ - `FilterFactory`
+ - `FilterLogicalOperator`
+ - `FilterOperand`
+ - `FilterRequested`
+ - `FilterUIType`

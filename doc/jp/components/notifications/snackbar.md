@@ -12,6 +12,8 @@ $ProductName$ Snackbar コンポーネントは、画面の下部に簡潔なメ
 
 ## $ProductName$ Snackbar の例
 
+このサンプルは、`Snackbar` コンポーネントを作成する方法を示しています。
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="$Platform$ Snackbar の例"
@@ -128,3 +130,11 @@ igc-snackbar::part(base) {
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+ ## API メンバー
+
+ - `ActionText`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Snackbar`

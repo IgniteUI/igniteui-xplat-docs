@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 散布エリア シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 散布エリア シリーズを使用して、各ポイントに割り当てられた数値を使い、経度および緯度データの三角測量に基づいて、色付きのエリア サーフェスを描画します。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics, $Platform$ マップ, 散布エリア シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
+mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 _language: ja
 ---
 # $Platform$ 散布エリア シリーズの使用
@@ -343,3 +343,16 @@ createAreaSeries(data: any[]) {
     }
 }
 ```
+
+## API メンバー
+
+ - `ColorMemberPath`
+ - `ColorScale`
+ - `CustomPaletteColorScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`

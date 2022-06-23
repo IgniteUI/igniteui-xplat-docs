@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 散布図記号シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップの散布図記号シリーズを使用して、地理的コンテキストでポイントまたはマーカーを使用し、地理空間データを表示します。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics, $Platform$ マップ, 散布図記号シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 # $Platform$ 散布図記号シリーズの使用
@@ -211,3 +211,11 @@ addSeriesWith(locations: any[], brush: string)
     }
 }
 ```
+
+## API メンバー
+
+ - `GeographicSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `ShapefileConverter`

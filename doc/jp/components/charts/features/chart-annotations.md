@@ -2,7 +2,7 @@
 title: $Platform$ チャート注釈 | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ チャート注釈
 _keywords: $Platform$ Charts, Annotations, Infragistics, $Platform$ チャート, 注釈, インフラジスティックス
-mentionedTypes: ["CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

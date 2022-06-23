@@ -2,7 +2,7 @@
 title: $Platform$ ポイント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ポイント チャート
 _keywords: $Platform$ Charts, Point Chart, Infragistics, $Platform$ チャート, ポイント チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "CategoryChartType", "Legend"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", "Legend", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 
 ## $Platform$ ポイント チャートの例
 
-`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `DataSource` プロパティにバインドし、`ChartType` プロパティを `Point` 値に設定します。
+`CategoryChart` コントロールで $Platform$  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Point** 列挙型に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -25,7 +25,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 
 ## 単一シリーズの $Platform$ ポイント チャート
 
-次の例では、$Platform$ ポイント チャートは、2009 年 から 2019 年までのヨーロッパ、中国、および米国の国々の再生可能エネルギーの発電量を比較しています。Y 軸 (チャートの左側のラベル) には、更新された電力のテラワット時 (Twh) 値が表示され、X 軸 (チャートの下部のラベル) には、年が表示されます。
+In the following example, the $Platform$ Point Chart plots a single data source by automatically selecting numeric data column for y-axis and non-numeric data column for x-axis.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

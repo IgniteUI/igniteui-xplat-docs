@@ -22,7 +22,7 @@ _language: ja
 <div class="divider--half"></div>
 
 ## 依存関係
-クリップボードを利用する前に、`SpreadsheetAction` 列挙体をインポートします。
+クリップボードを利用する前に、`SpreadsheetAction` 列挙型をインポートします。
 
 <!-- Angular -->
 ```ts

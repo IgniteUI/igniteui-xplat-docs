@@ -226,3 +226,9 @@ igc-switch::part(thumb) {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Form`
+ - `LabelPosition`
+ - `Switch`

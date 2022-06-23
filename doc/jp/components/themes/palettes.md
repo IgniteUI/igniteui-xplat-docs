@@ -1,6 +1,6 @@
 ---
 title: $Platform$ スタイル設定およびテーマ | $Platform$ パレット | インフラジスティックス
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
 mentionedTypes: ["Palettes"]
 _language: ja
@@ -92,10 +92,10 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 /* The HSLA representation of orange (#ffa500) */
 /* hsla(38.8, 100%, 50%, 1); */
 :root {
-  --igc-primary-h: 38.8deg; 
-  --igc-primary-s: 100%; 
-  --igc-primary-l: 50%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 38.8deg;
+  --igc-primary-s: 100%;
+  --igc-primary-l: 50%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -152,18 +152,18 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 ```css
 /* cornflowerblue hsl(218.5, 79.2%, 66.1%) */
 .blue-theme {
-  --igc-primary-h: 218.5deg; 
-  --igc-primary-s: 79.2%; 
-  --igc-primary-l: 66.1%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 218.5deg;
+  --igc-primary-s: 79.2%;
+  --igc-primary-l: 66.1%;
+  --igc-primary-a: 1;
 }
 
 /* brick red hsl(351.7, 57%, 52.5%) */
 .red-theme {
-  --igc-primary-h: 351.7deg; 
-  --igc-primary-s: 57%; 
-  --igc-primary-l: 52.5%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 351.7deg;
+  --igc-primary-s: 57%;
+  --igc-primary-l: 52.5%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -182,9 +182,9 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-surface-500: 210deg, 17%, 98%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 98%;
@@ -207,9 +207,9 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-surface-500: 210deg, 11%, 15%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 13%;
@@ -239,3 +239,7 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-error-500: 354deg, 70%, 54%, 1;
 }
 ```
+
+## API メンバー
+
+ - `Palettes`

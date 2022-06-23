@@ -17,7 +17,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 ## $Platform$ データ ツールチップの要素
 
-**DataToolTip** は、3 種類の行と 4 種類の列のセットを使用してコンテンツを表示します。 
+**DataToolTip** は、3 種類の行と 4 種類の列のセットを使用してコンテンツを表示します。
 
 ### $Platform$ データ ツールチップの行
 
@@ -66,7 +66,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
     - RadiusMemberAsLegendUnit="km"
     - AngleMemberAsLegendUnit="degrees"
 
-上記の各プロパティには、前述のラベル列のテキストを判別するための対応する `MemberAsLegendLabel` プロパティもあります。
+上記のプロパティには、前述のラベル列のテキストを決定するための **MemberAsLegendLabel** で終わる対応するプロパティがあります。
 
 `DataToolTipIncludedColumns` および `DataToolTipExcludedColumns` コレクションに含まれる列は、通常、基になるデータ項目の値パスに対応しますが、ファイナンシャル シリーズには、正しくプロットするために必要な `High`、`Low`、`Open`、`Close` パス、および、いくつかの特別なパスを含めるオプションがあります 。ツールチップ内に `TypicalPrice`、`Change`、および `Volume` オプションを表示することができます。
 
@@ -128,3 +128,27 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
            alt="$Platform$ ファイナンシャル チャート データ ツールチップの通貨の書式設定"
            github-src="charts/financial-chart/data-tooltip-formatting-currency">
 </code-view>
+
+## API メンバー
+
+ - `DataToolTipExcludedColumns`
+ - `DataToolTipGroupedPositionModeX`
+ - `DataToolTipGroupedPositionModeY`
+ - `DataToolTipGroupingMode`
+ - `DataToolTipHeaderText`
+ - `DataToolTipIncludedColumns`
+ - `DataToolTipLabelTextColor`
+ - `DataToolTipLayer`
+ - `DataToolTipSummaryTitleText`
+ - `DataToolTipSummaryType`
+ - `DataToolTipTitleTextColor`
+ - `DataToolTipUnitsTextColor`
+ - `DataToolTipUnitsText`
+ - `DataToolTipValueFormatAbbreviation`
+ - `DataToolTipValueFormatCulture`
+ - `DataToolTipValueFormatMaxFractions`
+ - `DataToolTipValueFormatMaxFractions`
+ - `DataToolTipValueFormatMinFractions`
+ - `DataToolTipValueFormatMode`
+ - `DataToolTipValueTextColor`
+ - `MemberAsLegendLabel`

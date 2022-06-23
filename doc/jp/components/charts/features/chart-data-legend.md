@@ -134,3 +134,33 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 - `StyleSummaryColumn`: このイベントは、集計列を描画するときに 1 回発生します。
 
 上記の各イベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。
+
+## API メンバー
+
+ - `ExcludedColumns`
+ - `ExcludedSeries`
+ - `HeaderFormatDate`
+ - `HeaderFormatTime`
+ - `HeaderText`
+ - `IncludedColumns`
+ - `IncludedSeries`
+ - `LabelDisplayMode`
+ - `LabelTextColor`
+ - `StyleHeaderRow`:
+ - `StyleSeriesColumn`:
+ - `StyleSeriesRow`
+ - `StyleSeriesRow`:
+ - `StyleSummaryColumn`:
+ - `StyleSummaryRow`:
+ - `SummaryTitleText`
+ - `SummaryType`
+ - `TitleTextColor`
+ - `UnitText`
+ - `UnitsTextColor`
+ - `ValueFormatAbbreviation`
+ - `ValueFormatCulture`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMinFractions`
+ - `ValueFormatMode`
+ - `ValueTextColor`

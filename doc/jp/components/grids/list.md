@@ -372,3 +372,13 @@ igc-list-item::part(end) {
 
 <!-- end: WebComponents -->
 
+
+## API メンバー
+
+ - `Avatar`
+ - `Button`
+ - `RadioGroup`
+ - `Radio`
+ - `ListHeader`
+ - `ListItem`
+ - `List`

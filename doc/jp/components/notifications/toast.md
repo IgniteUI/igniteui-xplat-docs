@@ -12,6 +12,8 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 ## $ProductName$ Toast の例
 
+This sample demonstrates how to create `Toast` component.
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast の例"
@@ -67,7 +69,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
     protected override void OnInitialized()
     {
         IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);        
+        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -96,18 +98,18 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 <igc-toast id="toast">Toast Message</igc-toast>
 ```
 
-```razor    
+```razor
 <IgbButton @onclick=@OnToggleToastButtonClick Variant="ButtonVariant.Contained">Toggle Toast</IgbButton>
 <IgbButton @onclick=@OnToggleKeepOpenButtonClick Variant="ButtonVariant.Contained">Toggle KeepOpen Property</IgbButton>
 <IgbButton @onclick=@OnDisplayTimeButtonClick Variant="ButtonVariant.Contained">Set DisplayTime to 8000</IgbButton>
-    
+
 <IgbToast @ref=ToastRef>Toast Message</IgbToast>
 
 @code {
-    public IgbToast ToastRef{  get;  set; } 
+    public IgbToast ToastRef{  get;  set; }
 
     protected override void OnInitialized()
-    {        
+    {
         IgbButtonModule.Register(IgniteUIBlazor);
         IgbToastModule.Register(IgniteUIBlazor);
     }
@@ -185,3 +187,11 @@ igc-toast {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API メンバー
+
+ - `Calendar`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Toast`

@@ -125,7 +125,7 @@ defineComponents(IgcLinearProgressComponent);
 
 ボタンなどの外部コントロールを使用して進行状況インジケーターの値を動的に変更できます。これを実現するには、値をクラス プロパティにバインドします。
 
-<code-view style="height:200px" 
+<code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
            alt="$Platform$ Linear Progress Dynamic の例"
@@ -136,7 +136,7 @@ defineComponents(IgcLinearProgressComponent);
 
 ## スタイル設定
 
-Linear Procress Indicatorコンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
+Linear Progress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -197,3 +197,9 @@ Linear Progress Indicator の API の詳細については、次のリンクを�
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Button`
+ - `Calendar`
+ - `LinearProgress`
