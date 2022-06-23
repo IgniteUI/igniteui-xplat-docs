@@ -1423,6 +1423,12 @@
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Select {ReleaseStatus_WebsInputs}",
+    "href": "inputs/select.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Switch {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md"
   },
