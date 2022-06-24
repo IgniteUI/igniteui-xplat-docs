@@ -5,11 +5,11 @@ _keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics, $Pl
 mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 _language: ja
 ---
-# $Platform$ 散布エリア シリーズの使用
+# $Platform$ 地理エリア マップ
 
-$Platform$ マップ コンポーネントの `GeographicScatterAreaSeries` を使用して、各ポイントに割り当てられた数値を持つ経度と緯度のデータの三角形分割に基づいて、地理的背景で色付きの表面を描画します。このタイプの地理的シリーズは、気象温度、降水量、人口分布、大気汚染などの地理的位置によって定義される散乱データのレンダリングに使用できます。
+$Platform$ マップ コンポーネントでは、`GeographicScatterAreaSeries` を使用して、各ポイントに割り当てられた数値を持つ経度と緯度のデータの三角形分割に基づいて、地理的背景で色付きの表面を描画できます。このタイプの地理的シリーズは、気象温度、降水量、人口分布、大気汚染などの地理的位置によって定義される散乱データのレンダリングに使用できます。
 
-## $Platform$ 散布エリア シリーズの使用の例
+## $Platform$ 地理エリア マップの例
 
 
 <code-view style="height: 500px"

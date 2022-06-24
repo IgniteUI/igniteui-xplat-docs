@@ -5,11 +5,11 @@ _keywords: $Platform$ map, scatter high density series, $ProductName$, Infragist
 mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ 散布高密度シリーズの使用
+# $Platform$ 地理高密度マップ
 
-$Platform$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
+$Platform$ マップ コンポーネントでは、`GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
 
-## $Platform$ 散布高密度シリーズの使用の例
+## $Platform$ 地理高密度マップの例
 
 
 <code-view style="height: 400px"

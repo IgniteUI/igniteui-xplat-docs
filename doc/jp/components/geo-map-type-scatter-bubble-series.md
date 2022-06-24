@@ -5,11 +5,11 @@ _keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragist
 mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ 散布図比例シリーズの使用
+# $Platform$ 地理バブル マップ
 
-アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$Platform$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
+In $Platform$ map component, you can use the `GeographicProportionalSymbolSeries` to plot bubbles or proportional markers at the geographic locations specified by the data in your application.このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
 
-## $Platform$ 散布図比例シリーズの使用の例
+## $Platform$ 地理バブル マップの例
 
 
 <code-view style="height: 500px"

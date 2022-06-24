@@ -5,11 +5,11 @@ _keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics, $
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
-# $Platform$ シェイプ ポリライン シリーズの使用
+# $Platform$ 地理ポリライン マップ
 
-地理的コンテキストでポリラインを使用して地理空間データを表示するには、$Platform$ マップ コンポーネントの `GeographicPolylineSeries` を使用します。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
+$Platform$ マップ コンポーネントでは、`GeographicPolylineSeries` を使用して、地理的コンテキストでポリラインを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
 
-## $Platform$ シェイプ ポリライン シリーズの使用の例
+## $Platform$ 地理ポリライン マップの例
 
 
 <code-view style="height: 500px"

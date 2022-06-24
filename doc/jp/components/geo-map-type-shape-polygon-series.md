@@ -6,11 +6,11 @@ mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 
-# $Platform$ シェイプ ポリゴン シリーズの使用
+# $Platform$ 地理ポリゴン マップ
 
-地理的コンテキストで形状ポリゴンを使用して地理空間データを表示するには、$Platform$ マップ コンポーネントの `GeographicShapeSeries` を使用します。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
+$Platform$ マップ コンポーネントでは、`GeographicShapeSeries` を使用して、地理的コンテキストで形状ポリゴンを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
 
-## $Platform$ シェイプ ポリゴン シリーズの使用の例
+## $Platform$ 地理ポリゴン マップの例
 
 
 <code-view style="height: 500px"
