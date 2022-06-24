@@ -4,11 +4,11 @@ _description: Use Infragistics $Platform$ map's shape polyline series to render 
 _keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Using Shape Polyline Series
+# $Platform$ Geographic Polyline Map
 
-Use the $Platform$ map component's `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
+In $Platform$ map component, you can use the `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
 
-## $Platform$ Using Shape Polyline Series Example
+## $Platform$ Geographic Polyline Map Example
 
 
 <code-view style="height: 500px"
