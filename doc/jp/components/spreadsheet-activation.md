@@ -38,3 +38,12 @@ this.spreadsheet.activeWorksheet = this.spreadsheet.workbook.worksheets(1);
 
 this.spreadsheet.activeCell = new SpreadsheetCell("C5");
 ```
+
+## API メンバー
+
+ - `ActiveCell`
+ - `ActivePane`
+ - `ActiveWorksheet`
+ - `SpreadsheetCell`
+ - `Spreadsheet`
+ - `Workbook`

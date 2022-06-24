@@ -200,6 +200,6 @@ igc-chip::part(suffix) {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Chip`

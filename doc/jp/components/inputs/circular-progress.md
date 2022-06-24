@@ -193,7 +193,7 @@ Circular Progress Indicator の API の詳細については、次のリンク�
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Button`
  - `Calendar`

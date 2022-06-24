@@ -144,6 +144,6 @@ $ProductName$ 展開パネル コンポーネントは、いくつかの CSS パ
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `ExpansionPanel`

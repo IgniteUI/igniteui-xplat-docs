@@ -142,7 +142,7 @@ Form コンポーネントは、次のメソッドを公開します:
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Button`
  - `Checkbox`

@@ -174,7 +174,7 @@ igc-icon-button::part(icon) {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `ButtonBase`
  - `Button`

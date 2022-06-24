@@ -131,7 +131,7 @@ igc-snackbar::part(base) {
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
- ## API メンバー
+## API メンバー
 
  - `ActionText`
  - `DisplayTime`

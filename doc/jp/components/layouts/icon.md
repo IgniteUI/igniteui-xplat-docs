@@ -215,7 +215,7 @@ igc-icon {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Icon`
  - `RegisterIcon`

@@ -253,7 +253,7 @@ input.spinDelta = spinDelta;
 <!-- end: WebComponents -->
 
 
- ## API メンバー
+## API メンバー
 
  - `DateParts`
  - `DateTimeInput`

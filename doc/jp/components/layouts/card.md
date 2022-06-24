@@ -444,7 +444,7 @@ igc-icon-button+igc-icon-button {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Avatar`
  - `Button`

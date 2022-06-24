@@ -606,6 +606,6 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `DockManager`

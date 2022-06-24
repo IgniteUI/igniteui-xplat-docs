@@ -63,6 +63,6 @@ this.dockManager.layout = {
 </igc-dockmanager>
 ``` -->
 
- ## API メンバー
+## API メンバー
 
  - `DockManager`

@@ -188,7 +188,7 @@ igc-toast {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Calendar`
  - `DisplayTime`

@@ -193,6 +193,6 @@ igc-avatar::part(base) {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Avatar`

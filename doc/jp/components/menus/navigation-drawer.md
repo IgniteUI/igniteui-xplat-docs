@@ -383,7 +383,7 @@ igc-nav-drawer-header-item {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `Button`
  - `Icon`

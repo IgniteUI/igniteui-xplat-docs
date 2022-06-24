@@ -479,7 +479,7 @@ igc-calendar::part(year-inner current selected) {
 
 <!-- end: WebComponents -->
 
- ## API メンバー
+## API メンバー
 
  - `ActiveDate`
  - `ActiveView`
