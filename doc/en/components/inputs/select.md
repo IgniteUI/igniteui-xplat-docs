@@ -57,7 +57,7 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 
 ### Select 
 
-The `igc-select` component can be used inside and `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default one, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. In addition, the `igc-select` also supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, `autocomplete`, etc.
+The `igc-select` component can be used inside and `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default one, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. 
 
 ### Item
 
@@ -83,7 +83,10 @@ You can use the `SelectHeader` to provide a header for a group of items.
 
 ### Group
 
-Multiple `igc-select-item`'s can be placed between the opening and close brackets of an `igc-select-group` component. The `SelectGroup` allows the users to visually group items together. The `igc-select-group` can be labelled via its `label` slot.
+Multiple `igc-select-item`'s can be placed between the opening and close brackets of an `igc-select-group` component so that users can visually group them together. The `igc-select-group` can be labelled via its `label` slot and disabled via its `Disable` property.
+
+> [!NOTE]
+> Keep in mind that if a select group is disabled, you cannot enable separate items of it.
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -92,6 +95,12 @@ Multiple `igc-select-item`'s can be placed between the opening and close bracket
            github-src="inputs/select/group">
 </code-view>
 
+## Validation
+
+In addition, the `igc-select` supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, `autocomplete`, etc. The component also exposes two methods bound to its validation:
+
+- reportValidity() - checks for validity and shows a validation message if the component is invalid.
+- setCustomValidity() - sets a custom validation message. If the message is not empty, the field will be considered invalid.	
 
 ## Keyboard Navigation
 
