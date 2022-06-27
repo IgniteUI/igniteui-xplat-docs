@@ -38,7 +38,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 
 ## 複数シリーズの $Platform$ バブル チャート
 
-$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
+$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

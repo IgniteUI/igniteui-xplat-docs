@@ -7,7 +7,7 @@ _language: ja
 ---
 
 # $Platform$ Linear Progress (リニア プログレス) の概要
-$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、 このコンポーネントがストライプまたは実線色でスタイル設定できます。
+$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、このコンポーネントがストライプまたは実線色でスタイル設定できます。
 
 ## $Platform$ Linear Progress の例
 
@@ -145,7 +145,7 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 
-次の表に、LinearProgress によって公開されるすべての CSS パーツを示します:
+次の表に、Linear Progress によって公開されるすべての CSS パーツを示します:
 
 |名前|説明|
 |--|--|

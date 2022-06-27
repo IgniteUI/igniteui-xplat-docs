@@ -35,7 +35,7 @@ $Platform$ データ グリッドの編集は、$Platform$ グリッドの `Edit
 
 さらに、`onCellValueChanging` イベントをフックし、コミットされる前に新しい値を調べることでエラー処理を実行できます。グリッドはエラー メッセージを出力できる `setEditError` メソッドを公開します。これにより、有効な値が入力されるまで、セルを編集モードに維持します。それ以外の場合は、グリッドの `rejectEdit` メソッドを実行して無効な値を元に戻すことができます。無効な値が見つからない場合、グリッドの `acceptEdit` メソッドを呼び出して変更をコミットすることもできます。
 
-コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
+コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
 
 ## Excel スタイル編集
 

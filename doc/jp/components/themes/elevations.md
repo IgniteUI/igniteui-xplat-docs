@@ -20,7 +20,7 @@ $ProductName$ のブートストラップ テーマのさまざまなコンポ�
 | ----------------------------------------------- | ----------------------- | ------------------ |
 | Button                                          | 0                       | --igc-elevation-0  |
 | Elevated Card                                   | 2                       | --igc-elevation-2  |
-| Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
+| Toast、Snackbar                                 | 10                      | --igc-elevation-10 |
 | Navdrawer                                       | 16                      | --igc-elevation-16 |
 
 `CSS 変数`列からわかるように、すべてのエレベーションは `--igc-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
@@ -68,7 +68,7 @@ igc-toast {
 }
 ```
 
-これにより、トーストとスナックバーのシャドウが `--igc-elevation-` 10 に割り当てられた値に設定されます。
+これにより、トーストとスナックバーのシャドウが `--igc-elevation-10` に割り当てられた値に設定されます。
 
 ## エレベーション係数の使用
 

@@ -128,7 +128,7 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 
 ## スタイル設定
 
-公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` 部分と `list` 部分を公開し、`DropdownItem` は `prefix`、 `content`、`suffix` 部分を公開し、`DropdownGroup` は `label` 部分を公開します。
+公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` 部分と `list` 部分を公開し、`DropdownItem` は `prefix`、`content`、`suffix` 部分を公開し、`DropdownGroup` は `label` 部分を公開します。
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -13,7 +13,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 ## $Platform$ データ ツールチップのプロパティ
 
-`DataToolTipLayer` のすべてのプロパティには **DataToolTip** のプレフィックスが付けられ、`CategoryChart` および `FinancialChart` コンポーネントの API で公開されます。ただし、ラジアル チャート、極座標チャート、散布図で使用する場合は、 `DataToolTipLayer` のインスタンスを作成し、それを `XamDataChart` コンポーネントのシリーズ コレクションに追加する必要があります。
+`DataToolTipLayer` のすべてのプロパティには **DataToolTip** のプレフィックスが付けられ、`CategoryChart` および `FinancialChart` コンポーネントの API で公開されます。ただし、ラジアル チャート、極座標チャート、散布図で使用する場合は、`DataToolTipLayer` のインスタンスを作成し、それを `XamDataChart` コンポーネントのシリーズ コレクションに追加する必要があります。
 
 ## $Platform$ データ ツールチップの要素
 
@@ -46,7 +46,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 ラベル列には、ツールチップの `DataToolTipIncludedColumns` または `DataToolTipExcludedColumns` コレクション内のさまざまなプロパティパスの名前または省略形が表示されます。
 
-値の列には、一連の値が省略形のテキストとして表示されます。この省略形は、 `DataToolTipValueFormatAbbreviation` プロパティを使用して書式設定でき、このプロパティを `Auto` または `Shared` に設定することですべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の精度は、最小桁数と最大桁数にそれぞれ `DataToolTipValueFormatMinFractions` と `DataToolTipValueFormatMaxFractions` を使用して制御されます。
+値の列には、一連の値が省略形のテキストとして表示されます。この省略形は、`DataToolTipValueFormatAbbreviation` プロパティを使用して書式設定でき、このプロパティを `Auto` または `Shared` に設定することですべての数値に同じ省略形を適用できます。または、ユーザーは `Independent`、`Kilo`、`Million` などの他の省略形を選択できます。省略値の精度は、最小桁数と最大桁数にそれぞれ `DataToolTipValueFormatMinFractions` と `DataToolTipValueFormatMaxFractions` を使用して制御されます。
 
 単位の列には、省略記号や単位のテキストが表示されます。これらは、すべての列に `DataToolTipUnitsText` を設定するか、チャートの各系列で次のプロパティを使用して、**DataToolTip** で設定できます:
 
@@ -81,7 +81,7 @@ $ProductName$ では、**DataToolTip** は、シリーズの値とタイトル�
 
 ## $Platform$ データ ツールチップのスタイル設定
 
-**DataToolTip** は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、 `DataToolTipTitleTextColor`、`DataToolTipLabelTextColor`、 `DataToolTipValueTextColor`、および `DataToolTipUnitsTextColor` プロパティを設定します。
+**DataToolTip** は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティ名は、Title、Label、Value、Units で始まり、テキストの色、フォント、およびマージンのスタイルを設定できます。たとえば、これらのそれぞれのテキストの色を設定する場合は、`DataToolTipTitleTextColor`、`DataToolTipLabelTextColor`、`DataToolTipValueTextColor`、および `DataToolTipUnitsTextColor` プロパティを設定します。
 
 次の例は、上記のスタイル設定プロパティの使用法を示しています。
 

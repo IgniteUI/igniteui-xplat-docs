@@ -243,6 +243,7 @@ input.spinDelta = spinDelta;
 
 * [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+
 <!-- end: Blazor -->
 
 <!-- WebComponents -->

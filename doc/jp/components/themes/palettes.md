@@ -40,7 +40,6 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 </table>
 
 <div class="divider--half"></div>
-
 上記の表に示すように、`gray` カラーには `A100`、`A200`、`A400`、および `A700` バリアントは含まれませんが、`primary` および `secondary` カラーには 14 カラー バリアントすべてが含まれます。2014 Material Design カラー パレットに含まれない `info`、`success`、`warn`、`error`、`surface` の 5つのカラーを追加しました。これらの色には、14 色すべてのバリエーションがあります。
 
 上記のカラーに加えて、各カラー バリアントに **Level AAA** [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 準拠の `contrast` カラーも含まれています。つまり、対応する `contrast` カラー バリアントをベースカラー バリアントの前景カラーとして安全に使用できます。
@@ -173,7 +172,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 $ProductName$ のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
 
-ライト テーマとダーク テーマの両方について、 `gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
+ライト テーマとダーク テーマの両方について、`gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
 
 *Bootstrap Light:*
 ```css

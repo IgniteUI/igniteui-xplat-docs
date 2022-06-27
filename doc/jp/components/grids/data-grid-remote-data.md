@@ -25,7 +25,7 @@ $ProductName$ Data Table / Data Grid は、1 行のコードでリモート デ�
 
 
 <!-- Angular, React, WebComponents -->
-コア パッケージとグリッド パッケージに加えて、データ ソース パッケージもインストールする必要があります。
+コア パッケージと $Platform$ データ グリッド パッケージに加えて、データ ソース パッケージもインストールする必要があります。
 
 - **npm install --save {PackageCore}**
 - **npm install --save {PackageGrids}**
