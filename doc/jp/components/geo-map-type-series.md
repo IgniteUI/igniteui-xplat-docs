@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 地理的シリーズ タイプ | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップ シリーズを使用して、地理的なデータをポイント (都市の位置など)、ポリライン (道路の接続など)、またはポリゴン (国の形状) として地理的コンテキストで表示します。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, $Platform$ マップ, 地理的シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
 
