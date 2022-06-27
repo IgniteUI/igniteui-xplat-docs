@@ -60,9 +60,8 @@ In the example below, we will apply a mask for a phone number with an extension 
 
 ```html
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999">
-    <igc-icon name="github" slot="prefix"></igc-icon>
-    <igc-icon name="github" slot="suffix"></igc-icon>
-    <span slot="helper-text">This is some helper text</span>
+    <igc-icon name="phone" slot="prefix"></igc-icon>
+    <span slot="helper-text">Phone number</span>
 </igc-mask-input>
 ```
 
