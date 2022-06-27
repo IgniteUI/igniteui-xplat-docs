@@ -25,7 +25,7 @@ $ProductName$ ポイント チャートは、ポイントのコレクション�
 
 ## 単一シリーズの $Platform$ ポイント チャート
 
-In the following example, the $Platform$ Point Chart plots a single data source by automatically selecting numeric data column for y-axis and non-numeric data column for x-axis.
+次の例では、$Platform$ ポイント チャートは、y 軸に数値データ列を、x 軸に非数値データ列を自動的に選択することにより、単一のデータ ソースをプロットします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

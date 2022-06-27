@@ -8,7 +8,7 @@ _language: ja
 ---
 # $Platform$ リニア ゲージの概要
 
-The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. The `XamLinearGauge` provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels.このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
+$ProductName$ リニア ゲージ コンポーネントを使用すると、リニア ゲージの形式でデータを視覚化できます。`XamLinearGauge` は、スケールおよび 1 つ以上の範囲と比較した値のシンプルで簡潔なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
 
 ## $Platform$ リニア ゲージの例
 
