@@ -88,7 +88,7 @@ Multiple `igc-select-item`s can be placed between the opening and closing bracke
 > [!NOTE]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
 
-<code-view style="height: 380px"
+<code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
            alt="$Platform$ Select Group Example"
