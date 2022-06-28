@@ -51,6 +51,9 @@ The table bellow shows the supported built-in mask rules:
 | a | requires an alphanumeric (0-9, a-Z) or a space |
 | & | any keyboard character (excluding space) |
 | C | any keyboard character |
+| \ | escapes a mask flag and turns it into a literal |
+
+These flags also participate in the component validation - i.e., the input becomes invalid if some, but not all required positions are filled (no positions filled/empty value is still a responsibility of `required`). This applies to both stand-alone inputs and when included in a form.
 
 ### Applying Mask
 
