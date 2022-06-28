@@ -92,7 +92,7 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 ## $Platform$ データ凡例のスタイル設定
 
-`XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティの名前は、**Title**、**Label**、**Value**、または **Units** で始まります。テキストの色、フォント、余白のスタイルを設定できます。たとえば、すべての列のテキストの色を設定する場合は、 `TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。次の例は、上記のスタイル設定プロパティの使用法を示しています:
+`XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティの名前は、**Title**、**Label**、**Value**、または **Units** で始まります。テキストの色、フォント、余白のスタイルを設定できます。たとえば、すべての列のテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -134,3 +134,33 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 - `StyleSummaryColumn`: このイベントは、集計列を描画するときに 1 回発生します。
 
 上記の各イベントは、引数として `DataLegendStylingRowEventArgs` パラメーターを公開します。これにより、各項目のテキスト、テキストの色、および行の全体的な可視性をカスタマイズできます。イベント引数は、イベント固有のプロパティも公開します。たとえば、`StyleSeriesRow` イベントはシリーズごとに発生するため、イベント引数は、シリーズを表す行の、シリーズ インデックスとシリーズ タイトルを返します。
+
+## API メンバー
+
+ - `ExcludedColumns`
+ - `ExcludedSeries`
+ - `HeaderFormatDate`
+ - `HeaderFormatTime`
+ - `HeaderText`
+ - `IncludedColumns`
+ - `IncludedSeries`
+ - `LabelDisplayMode`
+ - `LabelTextColor`
+ - `StyleHeaderRow`:
+ - `StyleSeriesColumn`:
+ - `StyleSeriesRow`
+ - `StyleSeriesRow`:
+ - `StyleSummaryColumn`:
+ - `StyleSummaryRow`:
+ - `SummaryTitleText`
+ - `SummaryType`
+ - `TitleTextColor`
+ - `UnitText`
+ - `UnitsTextColor`
+ - `ValueFormatAbbreviation`
+ - `ValueFormatCulture`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMinFractions`
+ - `ValueFormatMode`
+ - `ValueTextColor`

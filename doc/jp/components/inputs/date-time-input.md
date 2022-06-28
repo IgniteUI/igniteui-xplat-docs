@@ -79,7 +79,7 @@ input.value = date;
 
 ## 書式の設定
 
-`IgcDateTimeInput` は、さまざまな表示形式と入力形式をサポートしています。 
+`IgcDateTimeInput` は、さまざまな表示形式と入力形式をサポートしています。
 
 [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`displayFormat` が指定されていない場合、コンポーネントは `inputFormat` をそのまま使用します。
 
@@ -158,14 +158,14 @@ Minute | `m` | 最小桁数。 | 1, 60
 || `mm` | ゼロ埋込み | 01, 60
 Second | `s` | 最小桁数。 | 1, 60
 || `ss` | ゼロ埋込み | 01, 60
-Time Period | `t` | 省略 | AM, PM 
+Time Period | `t` | 省略 | AM, PM
 || `tt` | 省略 | AM, PM
 || `ttt` | 短い | noon
 || `tttt` | 長い | noon
 || `ttttt` | 狭い | n
 
 > 注: 
-多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。 また、12 時間制を使用した場合にのみ効果があります。 
+多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。 また、12 時間制を使用した場合にのみ効果があります。
 
 ## 最小値 / 最大値
 
@@ -243,6 +243,7 @@ input.spinDelta = spinDelta;
 
 * [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
@@ -251,3 +252,9 @@ input.spinDelta = spinDelta;
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+
+## API メンバー
+
+ - `DateParts`
+ - `DateTimeInput`

@@ -2,7 +2,7 @@
 title: $Platform$ 棒チャートとグラフ | $ProductName$
 _description: $Platform$ 棒チャートは、さまざまなカテゴリのデータの頻度、カウント、合計、または平均をすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。無料でお試しください。
 _keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics, $Platform$ チャート, 棒チャート, 棒グラフ, 水平チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
+mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,9 +12,7 @@ $ProductName$ 棒チャート、棒グラフ、または水平棒チャートは
 
 ## $Platform$ 棒チャートの例
 
-$ProductName$ カテゴリ棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、水平の棒または長方形として描画します。値は X 軸に表示され、カテゴリは Y 軸に表示されます。
-
-`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データ ソースを複数の `BarSeries` にバインドします:
+次の例に示すように、データ ソースを複数の `BarSeries` にバインドすることにより、`XamDataChart` コントロールに $Platform$ 棒チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -161,7 +159,7 @@ $Platform$ 積層型 100% 棒チャートは、X 軸 (チャートの下のラ�
 以下は、上記のセクションで説明されている API メンバーのリストです。
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `BarSeries`
 - `CalloutLayer`
 - `StackedBarSeries`

@@ -533,7 +533,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
     "status": "UPDATED"
@@ -1131,10 +1130,52 @@
   },
   {
     "name": "マップ",
-    "header": true
+    "header": true,
+    "href": "geo-map.md",
+    "status": ""
   },
   {
-    "name": "マップ",
+    "name": "地理エリア マップ",
+    "href": "geo-map-type-scatter-area-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理等高線マップ",
+    "href": "geo-map-type-scatter-contour-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理高密度マップ",
+    "href": "geo-map-type-scatter-density-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理バブル マップ",
+    "href": "geo-map-type-scatter-bubble-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理記号マップ",
+    "href": "geo-map-type-scatter-symbol-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理ポリゴン マップ",
+    "href": "geo-map-type-shape-polygon-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理ポリライン マップ",
+    "href": "geo-map-type-shape-polyline-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理マップ API",
+    "href": "maps/map-api.md",
+    "status": ""
+  },
+  {
+    "name": "地理マップの機能",
     "href": "geo-map.md",
     "status": "",
     "items": [
@@ -1193,46 +1234,6 @@
       {
         "name": "コンテンツのナビゲーション",
         "href": "geo-map-navigation.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズの概要",
-        "href": "geo-map-type-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布エリア シリーズ",
-        "href": "geo-map-type-scatter-area-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布等高線シリーズ",
-        "href": "geo-map-type-scatter-contour-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布高密度シリーズ",
-        "href": "geo-map-type-scatter-density-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布図比例シリーズ",
-        "href": "geo-map-type-scatter-bubble-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布図記号シリーズ",
-        "href": "geo-map-type-scatter-symbol-series.md",
-        "status": ""
-      },
-      {
-        "name": "シェイプ ポリゴン シリーズ",
-        "href": "geo-map-type-shape-polygon-series.md",
-        "status": ""
-      },
-      {
-        "name": "シェイプ ポリライン シリーズ",
-        "href": "geo-map-type-shape-polyline-series.md",
         "status": ""
       },
       {

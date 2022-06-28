@@ -146,3 +146,7 @@ protected override void OnInitialized()
 }
 ```
 
+## API メンバー
+
+ - `ArcGISOnlineMapImagery`
+ - `XamGeographicMap`

@@ -148,3 +148,10 @@ mainWindow = new BrowserWindow({
 このアプリケーションでは、メイン ウィンドウ (`IMainDockManagerWindow`) または子ウィンドウ (`IChildDockManagerWindow`) のいずれかである `IDockManagerWindow` タイプを実装しました。メイン ウィンドウは、アプリケーションの起動時に作成されるウィンドウです。すべての子ウィンドウへの参照が含まれています。子ウィンドウは、ペインがウィンドウからドロップされ、アプリケーションのメイン ウィンドウへの参照がある場合に作成されます。
 
 完全なソース コードについては、[リポジトリ](https://github.com/IgniteUI/dock-manager-electron-app)のクローンを作成してください。
+
+ ## API メンバー
+
+ - `BrowserWindow`
+ - `DockManager`
+ - `IDockManagerWindow`
+ - `Window`

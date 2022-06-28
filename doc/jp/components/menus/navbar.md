@@ -144,3 +144,9 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `End`
+ - `Icon`
+ - `Navbar`

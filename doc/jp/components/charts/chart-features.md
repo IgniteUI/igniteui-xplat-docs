@@ -140,3 +140,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 </code-view>
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `Grid`

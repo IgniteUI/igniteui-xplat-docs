@@ -250,3 +250,17 @@ $Platform$ Spreadsheet コンポーネントは、`ZoomLevel` プロパティを
 ```ts
 this.spreadsheet.zoomLevel = 200;
 ```
+
+## API メンバー
+
+ - `ActiveCell`
+ - `ActiveSelection`
+ - `CellRanges`
+ - `ExtendSelection`:
+ - `SelectionMode`
+ - `SpreadsheetCellRange`
+ - `SpreadsheetSelection`
+ - `Spreadsheet`
+ - `WindowOptions`
+ - `Workbook`
+ - `ZoomLevel`

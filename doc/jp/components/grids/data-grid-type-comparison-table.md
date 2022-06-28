@@ -21,3 +21,6 @@ $ProductName$ Data Table / Data Grid は、画像を挿入する[テンプレー
            github-src="grids/data-grid/type-comparison-table">
 </code-view>
 
+## API メンバー
+
+ - `Grid`

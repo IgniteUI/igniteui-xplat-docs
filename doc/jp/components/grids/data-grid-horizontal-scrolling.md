@@ -96,3 +96,7 @@ $ProductName$ Data Table / Data Grid は、$Platform$ データ グリッドの�
     <IgbNumericColumn Field="Sales" Width="300" />
 </IgbDataGrid>
 ```
+
+## API メンバー
+
+ - `Grid`

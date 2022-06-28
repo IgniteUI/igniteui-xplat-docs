@@ -1,6 +1,6 @@
 ---
 title: $Platform$ スタイル設定およびテーマ | $Platform$ エレベーション | インフラジスティックス
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Elevations, Styling, インフラジスティックス, エレベーション, スタイル設定
 mentionedTypes: ["Elevations"]
 _language: ja
@@ -20,7 +20,7 @@ $ProductName$ のブートストラップ テーマのさまざまなコンポ�
 | ----------------------------------------------- | ----------------------- | ------------------ |
 | Button                                          | 0                       | --igc-elevation-0  |
 | Elevated Card                                   | 2                       | --igc-elevation-2  |
-| Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
+| Toast、Snackbar                                 | 10                      | --igc-elevation-10 |
 | Navdrawer                                       | 16                      | --igc-elevation-16 |
 
 `CSS 変数`列からわかるように、すべてのエレベーションは `--igc-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
@@ -64,11 +64,11 @@ igc-navbar {
 ```css
 igc-snackbar,
 igc-toast {
-    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24); 
+    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
-これにより、トーストとスナックバーのシャドウが `--igc-elevation-` 10 に割り当てられた値に設定されます。
+これにより、トーストとスナックバーのシャドウが `--igc-elevation-10` に割り当てられた値に設定されます。
 
 ## エレベーション係数の使用
 
@@ -81,3 +81,7 @@ igc-toast {
 ```
 
 `--igc-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。
+
+## API メンバー
+
+ - `Elevations`

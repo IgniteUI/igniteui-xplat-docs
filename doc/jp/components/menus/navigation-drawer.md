@@ -13,6 +13,8 @@ $Platform$ Navigation Drawer は、コンテンツ内で展開または縮小さ
 
 ## $Platform$ Navigation Drawer の例
 
+このサンプルは、`NavDrawer` コンポーネントを作成する方法を示しています。
+
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
@@ -58,7 +60,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 
 `NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
 
-```html    
+```html
 <igc-nav-drawer open="true">
     <igc-nav-drawer-header-item>
         Sample Drawer
@@ -71,7 +73,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -123,7 +125,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -181,7 +183,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </IgbRadioGroup>
 
 @code {
-    
+
     public IgbNavDrawer NavDrawerRef { get; set; }
 
     public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
@@ -259,7 +261,7 @@ public void OnMenuIconClick()
 
 ミニ バリアントを使用する場合、Navigation Drawer を閉じる代わりに幅を変更します。アイコンだけを残して、いつでも利用できるクイック ナビゲーションを維持するために使用されます。これを実現するには、ドロワーの `mini` スロットを設定するだけです。
 
-```html    
+```html
 <igc-nav-drawer position="start">
     <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
     <igc-nav-drawer-item>
@@ -278,7 +280,7 @@ public void OnMenuIconClick()
             <igc-icon slot="icon" name="search"></igc-icon>
         </igc-nav-drawer-item>
     </div>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -380,3 +382,14 @@ igc-nav-drawer-header-item {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Button`
+ - `Icon`
+ - `NavDrawerHeaderItem`
+ - `NavDrawerItem`
+ - `NavDrawer`
+ - `Navbar`
+ - `RadioGroup`
+ - `Radio`

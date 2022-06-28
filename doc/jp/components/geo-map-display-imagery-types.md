@@ -47,3 +47,9 @@ $Platform$ 地理的画像は、上空から見た世界の詳細な表現です
 ```html
  TODO - ADD CODE SNIPPET
 ```
+
+## API メンバー
+
+ - `BackgroundContent`
+ - `GeographicMapImagery`
+ - `OpenStreetMapImagery`

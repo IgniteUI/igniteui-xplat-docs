@@ -2,7 +2,7 @@
 title: $Platform$ 軸レイアウト | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 軸レイアウト
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics, $Platform$ 軸, レイアウト, 位置, 配置, 共有, 複数, 交差, インフラジスティックス
-mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
+mentionedTypes: [ "DomainChart", "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
 _language: ja
 ---
 
@@ -52,7 +52,7 @@ $Platform$ `XamDataChart` の同じプロット領域に複数の軸を共有し
 
 ### 軸交差の例
 
-軸をプロット領域の外側に配置することに加えて、$Platform$  `XamDataChart` は、軸をプロット領域の内側に配置し、特定の値で交差させるオプションも提供します。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0, 0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
+軸をプロット領域の外側に配置することに加えて、$Platform$ `XamDataChart` は、軸をプロット領域の内側に配置し、特定の値で交差させるオプションも提供します。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0, 0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
 
 以下の例は、[散布スプライン チャート](../types/scatter-chart.md)で表される Sin と Cos 波を示します。X 軸と Y 軸は (0、0) 原点で交差します。
 

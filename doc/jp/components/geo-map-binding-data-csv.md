@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding, $Platform$ マップ, プロット データ, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
@@ -308,3 +308,13 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+## API メンバー
+
+ - `GeographicHighDensityScatterSeries`
+ - `DataSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `PointExtent`

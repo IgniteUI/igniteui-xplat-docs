@@ -58,7 +58,8 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
 
 ### ツリーの宣言
-`TreeItem` は、`Tree` に属するすべての項の表現です。項目は、`disabled`、`active`、`selected`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。 
+`TreeItem` は、`Tree` に属するすべての項の表現です。
+項目は、`disabled`、`active`、`selected`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。
 `value` プロパティを使用して、項目が表すデータ エントリへの参照を追加できます。
 
 項目は、次のいずれかのアプローチを使用して宣言できます:
@@ -102,10 +103,10 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
             I am a parent item 1
 	        <img src="hard_coded_src.webb" alt="Alt Text">
         </div>
-	    <igc-tree-item label="I am a child item 1">    
+	    <igc-tree-item label="I am a child item 1">
 	    </igc-tree-item>
     </igc-tree-item>
-	
+
     <igc-tree-item>
         <div slot="label">
             I am a parent item 2
@@ -163,7 +164,7 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 </IgbTree>
 ```
 ### Cascade
-`Tree` カスケード項目の選択を有効にするには、selection プロパティを **cascade** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。 
+`Tree` カスケード項目の選択を有効にするには、selection プロパティを **cascade** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。
 
 ```html
 <igc-tree selection="Cascade">
@@ -276,11 +277,14 @@ igc-tree-item::part(active selected) {
 <!-- Blazor -->
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
-
 <!-- end: Blazor>
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
-<!-- end: React>
+## API メンバー
+
+ - `TreeItem`
+ - `Tree`

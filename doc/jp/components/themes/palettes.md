@@ -1,6 +1,6 @@
 ---
 title: $Platform$ スタイル設定およびテーマ | $Platform$ パレット | インフラジスティックス
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
 mentionedTypes: ["Palettes"]
 _language: ja
@@ -40,7 +40,6 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 </table>
 
 <div class="divider--half"></div>
-
 上記の表に示すように、`gray` カラーには `A100`、`A200`、`A400`、および `A700` バリアントは含まれませんが、`primary` および `secondary` カラーには 14 カラー バリアントすべてが含まれます。2014 Material Design カラー パレットに含まれない `info`、`success`、`warn`、`error`、`surface` の 5つのカラーを追加しました。これらの色には、14 色すべてのバリエーションがあります。
 
 上記のカラーに加えて、各カラー バリアントに **Level AAA** [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 準拠の `contrast` カラーも含まれています。つまり、対応する `contrast` カラー バリアントをベースカラー バリアントの前景カラーとして安全に使用できます。
@@ -92,10 +91,10 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 /* The HSLA representation of orange (#ffa500) */
 /* hsla(38.8, 100%, 50%, 1); */
 :root {
-  --igc-primary-h: 38.8deg; 
-  --igc-primary-s: 100%; 
-  --igc-primary-l: 50%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 38.8deg;
+  --igc-primary-s: 100%;
+  --igc-primary-l: 50%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -152,18 +151,18 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 ```css
 /* cornflowerblue hsl(218.5, 79.2%, 66.1%) */
 .blue-theme {
-  --igc-primary-h: 218.5deg; 
-  --igc-primary-s: 79.2%; 
-  --igc-primary-l: 66.1%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 218.5deg;
+  --igc-primary-s: 79.2%;
+  --igc-primary-l: 66.1%;
+  --igc-primary-a: 1;
 }
 
 /* brick red hsl(351.7, 57%, 52.5%) */
 .red-theme {
-  --igc-primary-h: 351.7deg; 
-  --igc-primary-s: 57%; 
-  --igc-primary-l: 52.5%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 351.7deg;
+  --igc-primary-s: 57%;
+  --igc-primary-l: 52.5%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -173,7 +172,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 $ProductName$ のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
 
-ライト テーマとダーク テーマの両方について、 `gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
+ライト テーマとダーク テーマの両方について、`gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
 
 *Bootstrap Light:*
 ```css
@@ -182,9 +181,9 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-surface-500: 210deg, 17%, 98%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 98%;
@@ -207,9 +206,9 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-surface-500: 210deg, 11%, 15%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 13%;
@@ -239,3 +238,7 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
   --igc-error-500: 354deg, 70%, 54%, 1;
 }
 ```
+
+## API メンバー
+
+ - `Palettes`

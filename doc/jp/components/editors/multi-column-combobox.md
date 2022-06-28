@@ -285,3 +285,16 @@ constructor() {
     }
 }
 ```
+
+## API メンバー
+
+ - `DataSource`
+ - `Fields`
+ - `GetValueAsync`
+ - `GetValue`
+ - `MultiColumnComboBox`
+ - `Placeholder`
+ - `SortMode`
+ - `TextField`
+ - `ValueChanged`
+ - `ValueField`

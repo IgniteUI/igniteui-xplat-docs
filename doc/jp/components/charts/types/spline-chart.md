@@ -2,7 +2,7 @@
 title: $Platform$ スプライン チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ スプライン チャート
 _keywords: $Platform$ Charts, Spline Chart, Infragistics, $Platform$ チャート, スプライン チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "SplineSeries", "StackedSplineSeries", "Stacked100SplineSeries", 'Series']
 _language: ja
 ---
 # $Platform$ スプライン チャート
@@ -11,7 +11,7 @@ $ProductName$ スプライン チャートは、スプラインのスムーズ�
 
 ## $Platform$ スプライン チャートの例
 
-次の例は、データをバインドし、`ChartType` プロパティを Spline 列挙型に設定することにより、`CategoryChart` コントロールで $Platform$ スプライン チャートを作成する方法を示しています。
+次の例は、データをバインドし、`ChartType` プロパティを **Spline** 列挙型に設定することにより、`CategoryChart` コントロールで $Platform$ スプライン チャートを作成する方法を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

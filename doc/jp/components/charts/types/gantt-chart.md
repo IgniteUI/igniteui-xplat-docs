@@ -2,7 +2,7 @@
 title: $Platform$ ガント チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ガント チャート
 _keywords: $Platform$ Charts, Gantt Chart, Infragistics, $Platform$ チャート, ガント チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

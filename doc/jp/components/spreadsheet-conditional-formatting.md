@@ -162,3 +162,42 @@ textFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(red);
 let uniqueFormat = sheet.conditionalFormats().addUniqueCondition("O1:O10");
 uniqueFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(blue);
 ```
+
+## API メンバー
+
+ - `AddAverageCondition`
+ - `AddBlanksCondition`
+ - `AddColorScaleCondition`
+ - `AddDataBarCondition`
+ - `AddDateTimeCondition`
+ - `AddDuplicateCondition`
+ - `AddErrorsCondition`
+ - `AddFormulaCondition`
+ - `AddIconSetCondition`
+ - `AddNoBlanksCondition`
+ - `AddNoErrorsCondition`
+ - `AddOperatorCondition`
+ - `AddRankCondition`
+ - `AddTextCondition`
+ - `AddUniqueCondition`
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ColorScaleConditionalFormat`:
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DataBarConditionalFormat`:
+ - `DateTimeConditionalFormat`:
+ - `DuplicateConditionalFormat`:
+ - `ErrorsConditionalFormat`:
+ - `FormatConditionTextOperator`
+ - `FormatString`
+ - `FormulaConditionalFormat`:
+ - `IconSetConditionalFormat`
+ - `IconSetConditionalFormat`:
+ - `NoBlanksConditionalFormat`:
+ - `NoErrorsConditionalFormat`:
+ - `OperatorConditionalFormat`:
+ - `RankConditionalFormat`:
+ - `Spreadsheet`
+ - `TextOperatorConditionalFormat`:
+ - `UniqueConditionalFormat`:
