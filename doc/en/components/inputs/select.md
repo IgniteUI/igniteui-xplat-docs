@@ -48,10 +48,10 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 
 ```html
 <igc-select>
-    <igc-select-item value="Orange">Orange</igc-select-item>
-    <igc-select-item value="Apple">Apple</igc-select-item>
-    <igc-select-item value="Banana">Banana</igc-select-item>
-    <igc-select-item value="Mango">Mango</igc-select-item>
+    <igc-select-item value="orange">Orange</igc-select-item>
+    <igc-select-item value="apple">Apple</igc-select-item>
+    <igc-select-item value="banana">Banana</igc-select-item>
+    <igc-select-item value="mango">Mango</igc-select-item>
 </igc-select>
 ```
 
