@@ -57,11 +57,11 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 
 ### Select 
 
-The `igc-select` component can be used inside and `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default one, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. 
+The `igc-select` component can be used inside an `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. 
 
 ### Item
 
-The `igc-select-item` component allows the users to declaratively specify a list of options to be used by the `igc-select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the content of the item. This content will only be used for visual purposes and will not be used in case the `Value` property is not present on the `igc-select-item`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
+The `igc-select-item` component allows the users to declaratively specify a list of options to be used by the `igc-select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `igc-select-item`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -83,7 +83,7 @@ You can use the `SelectHeader` to provide a header for a group of items.
 
 ### Group
 
-Multiple `igc-select-item`'s can be placed between the opening and close brackets of an `igc-select-group` component so that users can visually group them together. The `igc-select-group` can be labelled via its `label` slot and disabled via its `Disable` property.
+Multiple `igc-select-item`s can be placed between the opening and closing brackets of an `igc-select-group` component so that users can visually group them together. The `igc-select-group` can be labelled via its `label` slot and disabled via its `Disabled` property.
 
 > [!NOTE]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
@@ -97,10 +97,9 @@ Multiple `igc-select-item`'s can be placed between the opening and close bracket
 
 ## Validation
 
-In addition, the `igc-select` supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, `autocomplete`, etc. The component also exposes two methods bound to its validation:
+In addition, the `igc-select` supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, etc. The component also exposes a method bound to its validation:
 
-- reportValidity() - checks for validity and shows a validation message if the component is invalid.
-- setCustomValidity() - sets a custom validation message. If the message is not empty, the field will be considered invalid.	
+- reportValidity() - checks for validity and focuses the component if invalid.
 
 ## Keyboard Navigation
 
@@ -123,20 +122,38 @@ When the select is focused and the list of options is **visible**:
 > [!NOTE]
 > The `igc-select` component supports only **single** selection of items.
 
-## CSS Parts
-
-Part name | Description
----------|------------
-`container` | The main wrapper that holds all main input elements.
-`prefix`  | A prefix wrapper that renders content before the input.
-`suffix` | A suffix wrapper that renders content after the input.
-`helper-text` | A helper-text wrapper that renders content below the input.
-
 <!-- WebComponents -->
 
 ## Styling
 
-The $ProductName$ Select component is built up entirely by the `igc-input` and the `igc-dropdown` components. Therefore, if you want to change the `igc-select` appearance you have to use the CSS parts exposed by the other two components.
+You can change the appearance of the $ProductName$ Select component and its items, by using the exposed CSS parts listed below:
+### CSS Parts
+
+**Select Component**
+
+Part name | Description
+---------|------------
+`input` | The encapsulated igc-input.
+`label` | The encapsulated text label.
+`list` | A wrapper that holds the list of options.
+`prefix`  | A prefix wrapper that renders content before the input.
+`suffix` | A suffix wrapper that renders content after the input.
+`toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
+`helper-text` | A helper-text wrapper that renders content below the input.
+
+**Select Item Component**
+
+Part name | Description
+---------|------------
+`content` | The main wrapper that holds the text content of an item.
+`prefix`  | A prefix wrapper that renders content before the main wrapper.
+`suffix` | A suffix wrapper that renders content after the main wrapper.
+
+**Select Group Component**
+
+Part name | Description
+---------|------------
+`label` | A label wrapper that renders content above the select group items.
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
