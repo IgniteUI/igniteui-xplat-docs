@@ -42,16 +42,17 @@ The table bellow shows the supported built-in mask rules:
 
 | Mask Character | Description |
 | :--- | :--- |
-| 0 | requires a digit (0-9) |
-| 9 | requires a digit (0-9) or a space |
-| # | requires a digit (0-9), plus (+), or minus (-) sign |
-| L | requires a letter (a-Z) |
-| ? | requires a letter (a-Z) or a space |
-| A | requires an alphanumeric (0-9, a-Z) |
-| a | requires an alphanumeric (0-9, a-Z) or a space |
-| & | any keyboard character (excluding space) |
-| C | any keyboard character |
-| \ | escapes a mask flag and turns it into a literal |
+| 0 | Digit character [0-9]. Entry is required. |
+| 9 | Digit character [0-9]. Entry is optional. |
+| # | Digit character [0-9], plus (+), or minus (-) sign. Entry is required. |
+| L | Letter character. Entry is required. |
+| ? | Letter character. Entry is optional. |
+| A | Alphanumeric (letter or digit) character. Entry is required. |
+| a | Alphanumeric (letter or digit) character. Entry is optional. |
+| & | Any keyboard character. Entry is required. |
+| C | Any keyboard character. Entry is optional. |
+| \ | Escapes a mask flag and turns it into a literal. |
+
 
 These flags also participate in the component validation - i.e., the input becomes invalid if some but not all required positions are filled (no positions filled/empty value is still a responsibility of `required`). This applies to both stand-alone inputs and when included in a form.
 
