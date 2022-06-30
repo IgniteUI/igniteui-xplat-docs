@@ -7,14 +7,11 @@ namespace: Infragistics.Controls.Gauges
 ---
 # $Platform$ Linear Gauge Overview
 
-Use the $Platform$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
-
-The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. It provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The component has also a built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property. The features of the linear gauge component include configurable orientation and direction, configurable visual elements such as the needle, and more.
+The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. The `XamLinearGauge` provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The component has also a built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property. The features of the linear gauge component include configurable orientation and direction, configurable visual elements such as the needle, and more.
 
 ## $Platform$ Linear Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same `XamLinearGauge` can transform it to completely different linear gauge.
-
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

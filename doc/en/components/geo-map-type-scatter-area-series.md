@@ -2,13 +2,13 @@
 title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
 _description: Use Infragistics $Platform$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
+mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 ---
-# $Platform$ Using Scatter Area Series
+# $Platform$ Geographic Area Map
 
-Use the $Platform$ map component's `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
+In $Platform$ map component, you can use the `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
 
-## $Platform$ Using Scatter Area Series Example
+## $Platform$ Geographic Area Map Example
 
 
 <code-view style="height: 500px"
@@ -342,3 +342,16 @@ createAreaSeries(data: any[]) {
     }
 }
 ```
+
+ ## API Members
+
+ - `ColorMemberPath`
+ - `ColorScale`
+ - `CustomPaletteColorScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`

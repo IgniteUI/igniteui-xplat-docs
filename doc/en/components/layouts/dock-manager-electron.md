@@ -147,3 +147,10 @@ mainWindow = new BrowserWindow({
 In this application we have implemented an `IDockManagerWindow` type which could be either a main window (`IMainDockManagerWindow`) or a child window (`IChildDockManagerWindow`). The main window is the one created when the application starts. It contains references to all its child windows. A child window is created when a pane is dropped out of a window and has a reference to the main window of the application.
 
 For the full source code please clone the [repository](https://github.com/IgniteUI/dock-manager-electron-app).
+
+ ## API Members
+
+ - `BrowserWindow`
+ - `DockManager`
+ - `IDockManagerWindow`
+ - `Window`

@@ -2,7 +2,7 @@
 title: $Platform$ 縦棒チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 縦棒チャート
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics, $Platform$ チャート, 縦棒チャート, 縦棒グラフ, 垂直棒チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,9 +12,7 @@ $ProductName$ 縦棒チャート、縦棒グラフ、または垂直棒チャー
 
 ## $Platform$ 縦棒チャートの例
 
-$ProductName$ カテゴリ縦棒チャートは、複数のデータ ソースのデータ項目をカテゴリにグループ化し、それらを縦棒または長方形として描画します。値は Y 軸に表示され、カテゴリは X 軸に表示されます。
-
-次の例に示すように、データをバインドし、`ChartType` を **Column** 値に設定することで、`CategoryChart` コントロールでこのタイプのチャートを作成できます。
+次の例に示すように、データをバインドし、`ChartType` を **Column** 列挙型に設定することで、`CategoryChart` コントロールに $Platform$ 縦棒チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -82,7 +80,7 @@ $ProductName$ カテゴリ縦棒チャートは、複数のデータ ソース�
 
 ## $Platform$ 縦棒チャートのスタイル設定
 
-$Platform$ 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。たとえば、以下のサンプルは、縦棒の外観を変更し、[マーカー テンプレート](../features/chart-markers.md)を使用して、対応する列の上 (または下) に項目の値を表示する方法を示しています。
+$Platform$ 縦棒チャートには、外観のスタイル設定と変更のための多くのオプションがあります。
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ColumnSeries` にバインドします:
 

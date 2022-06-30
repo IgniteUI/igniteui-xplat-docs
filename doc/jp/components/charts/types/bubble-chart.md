@@ -2,7 +2,7 @@
 title: $Platform$ バブル チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックス の $Platform$ バブル チャート
 _keywords: $Platform$ Charts, Bubble Chart, Infragistics, $Platform$ チャート, バブル チャート, インフラジスティックス
-mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
+mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 
 ## $Platform$ バブル チャートの例
 
-次の例に示すように、`BubbleSeries` と 2 つの数値軸を使用して、`XamDataChart` コントロールでバブル チャートを作成できます。
+次の例に示すように、`BubbleSeries` と 2 つの数値軸を使用して、`XamDataChart` コントロールで $ProductName$ バブル チャートを作成できます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -38,7 +38,7 @@ $ProductName$ バブル チャートは[散布図](scatter-chart.md)の一種で
 
 ## 複数シリーズの $Platform$ バブル チャート
 
-$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の  `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
+$Platform$ バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

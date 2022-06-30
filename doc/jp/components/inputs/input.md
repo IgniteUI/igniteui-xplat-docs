@@ -2,7 +2,7 @@
 title: $Platform$ Input | データ可視化ツール | インフラジスティックス
 _description: インフラジスティックスの $Platform$ Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
 _keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
-mentionedTypes: ['Input']
+mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
 ---
 # $Platform$ Input の概要
@@ -13,6 +13,8 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 
 <div class="divider--half"></div>
 
+<!-- React, WebComponents -->
+
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
@@ -20,9 +22,18 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
            github-src="inputs/input/overview">
 </code-view>
 
-## 依存関係
+<!-- end:React, WebComponents -->
 
 <!-- Blazor -->
+
+<code-view style="height: 120px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
+           alt="$Platform$ Input の例"
+           github-src="inputs/input/binding">
+</code-view>
+
+## 依存関係
 
 Input コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
@@ -32,7 +43,7 @@ IgbInputModule.Register(IgniteUIBlazor);
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -103,6 +114,7 @@ defineComponents(IgcInputComponent);
 - `required` - 入力を必須としてマークするために使用されます。
 - `disabled` - 入力を無効にするために使用されます。
 - `readonly` - 入力を読み取り専用としてマークするために使用されます。
+
 <!-- WebComponents -->
 
 属性の完全なリストは、`Input` API にあります。
@@ -177,3 +189,10 @@ Input API の詳細については、次のリンクを参照してください�
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+
+## API メンバー
+
+ - `Icon`
+ - `Input`
+ - `Radio`

@@ -431,3 +431,23 @@ var worksheet = workbook.Worksheets.Add("Sheet1");
 
 var cellText = worksheet.Rows[0].Cells[0].GetText();
 ```
+
+## API メンバー
+
+ - `Add`
+ - `CellFillLinearGradient`
+ - `CellFillPattern`
+ - `CellFillRectangularGradient`
+ - `CellFill`
+ - `CellFormat`
+ - `DisplayOptions`'
+ - `Formula`
+ - `MergedCellsRegions`
+ - `WorkbookColorInfo`
+ - `WorkbookStyle`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetRegion`
+ - `WorksheetRow`
+ - `Worksheet`

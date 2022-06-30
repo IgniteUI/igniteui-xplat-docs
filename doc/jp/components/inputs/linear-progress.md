@@ -7,11 +7,11 @@ _language: ja
 ---
 
 # $Platform$ Linear Progress (リニア プログレス) の概要
-$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、 このコンポーネントがストライプまたは実線色でスタイル設定できます。
+$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、このコンポーネントがストライプまたは実線色でスタイル設定できます。
 
 ## $Platform$ Linear Progress の例
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
            alt="$Platform$  Linear Progress の例"
@@ -43,7 +43,7 @@ defineComponents(IgcLinearProgressComponent);
 ```
 
 <!-- Blazor -->
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -125,7 +125,7 @@ defineComponents(IgcLinearProgressComponent);
 
 ボタンなどの外部コントロールを使用して進行状況インジケーターの値を動的に変更できます。これを実現するには、値をクラス プロパティにバインドします。
 
-<code-view style="height:200px" 
+<code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
            alt="$Platform$ Linear Progress Dynamic の例"
@@ -136,16 +136,16 @@ defineComponents(IgcLinearProgressComponent);
 
 ## スタイル設定
 
-Linear Procress Indicatorコンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
+Linear Progress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
-<code-view style="height: 50px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
            alt="$Platform$ Linear Progress のスタイル設定"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 
-次の表に、LinearProgress によって公開されるすべての CSS パーツを示します:
+次の表に、Linear Progress によって公開されるすべての CSS パーツを示します:
 
 |名前|説明|
 |--|--|
@@ -190,9 +190,16 @@ Linear Progress Indicator の API の詳細については、次のリンクを�
 
 <!-- end: Blazor -->
 
+
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Button`
+ - `Calendar`
+ - `LinearProgress`

@@ -12,7 +12,7 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 ## $Platform$ ツリーマップの例
 
-次の例では、ツリーマップは世界の最大総面積の上位 30 の国を示しています。
+次の例では、`Treemap` は世界の最大総面積の上位 30 の国を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

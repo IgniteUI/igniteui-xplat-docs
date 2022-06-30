@@ -25,7 +25,7 @@ $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ 
 <div class="divider--half"></div>
 
 
-### その他のリソース
+## その他のリソース
 
 <!-- Angular, React, WebComponents -->
 <!-- TODO fix build flagging list items -->
@@ -33,3 +33,8 @@ $ProductName$ Data Table / Data Grid は、高パフォーマンスのライブ 
 <!-- end: Angular, React, WebComponents -->
 - [列タイプ ](data-grid-column-types.md)
 - [行のグループ化](data-grid-row-grouping.md)
+
+
+## API メンバー
+
+ - `Grid`

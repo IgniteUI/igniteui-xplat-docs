@@ -143,3 +143,9 @@ Our community is active and always welcoming to new ideas.
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `End`
+ - `Icon`
+ - `Navbar`

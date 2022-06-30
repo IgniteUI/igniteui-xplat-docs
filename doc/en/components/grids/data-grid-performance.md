@@ -25,7 +25,7 @@ This sample demonstrates this performance by binding thousands of financial reco
 <div class="divider--half"></div>
 
 
-### Additional Resources
+## Additional Resources
 
 <!-- Angular, React, WebComponents -->
 <!-- TODO fix build flagging list items -->
@@ -33,3 +33,8 @@ This sample demonstrates this performance by binding thousands of financial reco
 <!-- end: Angular, React, WebComponents -->
 - [Column Types ](data-grid-column-types.md)
 - [Row Grouping](data-grid-row-grouping.md)
+
+
+ ## API Members
+
+ - `Grid`

@@ -51,3 +51,9 @@ import { WorksheetHyperlink } from 'igniteui-webcomponents-excel';
 ```ts
 this.spreadsheet.activeWorksheet.hyperlinks().add(new WorksheetHyperlink("A1", "http://www.infragistics.com", "Infragistics", "Infragistics Home Page"));
 ```
+
+## API メンバー
+
+ - `Hyperlinks`
+ - `Spreadsheet`
+ - `WorksheetHyperlink`

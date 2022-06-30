@@ -2,7 +2,7 @@
 title: $Platform$ Column Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Column Chart
 _keywords: $Platform$ Charts, Column Chart, Column Graph, Vertical Bar Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "ColumnSeries", "WaterfallSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "RangeColumnSeries", "RadialColumnSeries", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Column Chart
@@ -11,9 +11,7 @@ The $ProductName$ Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 ## $Platform$ Column Chart Example
 
-The $Platform$ Category Column Chart groups data items from multiple data sources into categories and renders them as vertical columns or rectangles. Values are represented on the Y-Axis and categories are displayed on the X-Axis.
-
-You can create this type of chart in the `CategoryChart` control by binding your data and setting `ChartType` to **Column** value, as shown in the example below:
+You can create $Platform$ Column Chart in the `CategoryChart` control by binding your data and setting `ChartType` to **Column** enum, as shown in the example below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -81,7 +79,7 @@ The Column Chart is able to render multiple columns per category for comparison 
 
 ## $Platform$ Column Chart Styling
 
-The $Platform$ Column Chart has many options for styling and modification of the visual appearance. For example, the sample below demonstrates changing appearance of columns and using [Marker Templates](../features/chart-markers.md) to display the value of an item above (or below) its corresponding column.
+The $Platform$ Column Chart has many options for styling and modification of the visual appearance.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ColumnSeries`, as shown in the example below:
 

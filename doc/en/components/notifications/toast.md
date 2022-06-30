@@ -11,6 +11,8 @@ The $ProductName$ Toast component is primarily used for system messaging, push n
 
 ## $ProductName$ Toast Example
 
+This sample demonstrates how to create `Toast` component.
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast Example"
@@ -66,7 +68,7 @@ The simplest way to display the toast component is to use its `Show` method and 
     protected override void OnInitialized()
     {
         IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);        
+        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -83,7 +85,7 @@ The simplest way to display the toast component is to use its `Show` method and 
 
 ### Properties
 
-Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 miliseconds.
+Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 milliseconds.
 
 By default, the toast component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the toast will remain visible.
 
@@ -95,18 +97,18 @@ By default, the toast component is hidden automatically after a period specified
 <igc-toast id="toast">Toast Message</igc-toast>
 ```
 
-```razor    
+```razor
 <IgbButton @onclick=@OnToggleToastButtonClick Variant="ButtonVariant.Contained">Toggle Toast</IgbButton>
 <IgbButton @onclick=@OnToggleKeepOpenButtonClick Variant="ButtonVariant.Contained">Toggle KeepOpen Property</IgbButton>
 <IgbButton @onclick=@OnDisplayTimeButtonClick Variant="ButtonVariant.Contained">Set DisplayTime to 8000</IgbButton>
-    
+
 <IgbToast @ref=ToastRef>Toast Message</IgbToast>
 
 @code {
-    public IgbToast ToastRef{  get;  set; } 
+    public IgbToast ToastRef{  get;  set; }
 
     protected override void OnInitialized()
-    {        
+    {
         IgbButtonModule.Register(IgniteUIBlazor);
         IgbToastModule.Register(IgniteUIBlazor);
     }
@@ -184,3 +186,11 @@ igc-toast {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Calendar`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Toast`

@@ -7,7 +7,7 @@ mentionedTypes: ['Icon']
 
 # $Platform$ Icon Overview
 
-The $Platform$ Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it. 
+The $Platform$ Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it.
 
 ## $Platform$ Icon Example
 
@@ -89,7 +89,7 @@ The `RegisterIcon` method allows you to register an SVG image as an icon from an
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -129,7 +129,7 @@ registerIconFromText("search", searchIcon, "material");
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -214,3 +214,8 @@ igc-icon {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Icon`
+ - `RegisterIcon`

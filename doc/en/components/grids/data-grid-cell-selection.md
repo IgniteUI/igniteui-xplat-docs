@@ -54,3 +54,14 @@ The following example demonstrates how to selected or deselected all rows in the
 </code-view>
 
 <div class="divider--half"></div>
+
+ ## API Members
+
+ - `ModifierBased`
+ - `MultipleCell`
+ - `MultipleRow`
+ - `RangeCell`
+ - `SelectionBehavior`
+ - `SelectionMode`
+ - `SingleCell`
+ - `SingleRow`

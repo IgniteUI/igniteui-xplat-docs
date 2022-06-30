@@ -95,3 +95,7 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
     <IgbNumericColumn Field="Sales" Width="300" />
 </IgbDataGrid>
 ```
+
+ ## API Members
+
+ - `Grid`

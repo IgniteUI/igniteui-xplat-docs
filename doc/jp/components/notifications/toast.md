@@ -12,6 +12,8 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 ## $ProductName$ Toast の例
 
+This sample demonstrates how to create `Toast` component.
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast の例"
@@ -43,7 +45,7 @@ defineComponents(IgcToastComponent);
 ```
 
 <!-- Blazor -->
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -67,7 +69,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
     protected override void OnInitialized()
     {
         IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);        
+        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -86,7 +88,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
 `DisplayTime` プロパティを使用して、Toast コンポーネントが表示される期間を構成します。デフォルトでは、4000 ミリ秒に設定されています。
 
-デフォルトでは、Toast コンポーネントは、`DisplayTime` で指定された期間が経過すると自動的に非表示になります。`KeepOpen` プロパティを使用して、この動作を変更できます。このようにして、Toast  は表示されたままになります。
+デフォルトでは、Toast コンポーネントは、`DisplayTime` で指定された期間が経過すると自動的に非表示になります。`KeepOpen` プロパティを使用して、この動作を変更できます。このようにして、Toast は表示されたままになります。
 
 ```html
 <igc-button onclick="toast.toggle()" variant="contained">Toggle Toast</igc-button>
@@ -96,18 +98,18 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 <igc-toast id="toast">Toast Message</igc-toast>
 ```
 
-```razor    
+```razor
 <IgbButton @onclick=@OnToggleToastButtonClick Variant="ButtonVariant.Contained">Toggle Toast</IgbButton>
 <IgbButton @onclick=@OnToggleKeepOpenButtonClick Variant="ButtonVariant.Contained">Toggle KeepOpen Property</IgbButton>
 <IgbButton @onclick=@OnDisplayTimeButtonClick Variant="ButtonVariant.Contained">Set DisplayTime to 8000</IgbButton>
-    
+
 <IgbToast @ref=ToastRef>Toast Message</IgbToast>
 
 @code {
-    public IgbToast ToastRef{  get;  set; } 
+    public IgbToast ToastRef{  get;  set; }
 
     protected override void OnInitialized()
-    {        
+    {
         IgbButtonModule.Register(IgniteUIBlazor);
         IgbToastModule.Register(IgniteUIBlazor);
     }
@@ -147,7 +149,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
 ## スタイル設定
 
-タグ セレクターを直接使用して、Toast  のスタイルを設定できます: 
+タグ セレクターを直接使用して、Toast のスタイルを設定できます: 
 
 ```css
 igc-toast {
@@ -185,3 +187,11 @@ igc-toast {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Calendar`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Toast`

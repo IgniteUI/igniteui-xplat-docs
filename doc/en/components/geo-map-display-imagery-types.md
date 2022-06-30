@@ -46,3 +46,9 @@ This code example explicitly sets `BackgroundContent` of the map component to th
 ```html
  TODO - ADD CODE SNIPPET
 ```
+
+ ## API Members
+
+ - `BackgroundContent`
+ - `GeographicMapImagery`
+ - `OpenStreetMapImagery`

@@ -43,7 +43,7 @@ defineComponents(IgcCircularProgressComponent);
 ```
 
 <!-- Blazor -->
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ defineComponents(IgcCircularProgressComponent);
 ```razor
 <IgbCircularProgress Value=100/>
 ```
+
 ### 進行状況タイプ
 
 `variant` 属性を使用して、インジケーターのタイプを設定できます。Circular Progress インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
@@ -99,9 +100,10 @@ defineComponents(IgcCircularProgressComponent);
 ```razor
 <IgbCircularProgress AnimationDuration=5000 Indeterminate=true />
 ```
+
 ### グラデーション プログレス
 
-単色の代わりにカラー グラデーションを使用するためにプログレス バーをカスタマイズするには、公開された `gradient` スロットとグラデーション境界を定義する `CircularGradient` を使用します。 
+単色の代わりにカラー グラデーションを使用するためにプログレス バーをカスタマイズするには、公開された `gradient` スロットとグラデーション境界を定義する `CircularGradient` を使用します。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -114,7 +116,7 @@ defineComponents(IgcCircularProgressComponent);
 >$ProductName$ `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
 
 ```html
-<igc-circular-progress> 
+<igc-circular-progress>
     <igc-circular-gradient slot="gradient" offset="0%" color="#ff9a40"></igc-circular-gradient>
     <igc-circular-gradient slot="gradient" offset="50%" color="#1eccd4"></igc-circular-gradient>
     <igc-circular-gradient slot="gradient" offset="100%" color="#ff0079"></igc-circular-gradient>
@@ -123,9 +125,9 @@ defineComponents(IgcCircularProgressComponent);
 
 ```razor
 <IgbCircularProgress>
-    <IgbCircularGradient slot="gradient" Offset="0%"   Color="#ff9a40"/>        
-    <IgbCircularGradient slot="gradient" Offset="50%"  Color="#1eccd4"/>        
-    <IgbCircularGradient slot="gradient" Offset="100%" Color="#ff0079"/>        
+    <IgbCircularGradient slot="gradient" Offset="0%"   Color="#ff9a40"/>
+    <IgbCircularGradient slot="gradient" Offset="50%"  Color="#1eccd4"/>
+    <IgbCircularGradient slot="gradient" Offset="100%" Color="#ff0079"/>
 </IgbCircularProgress>
 ```
 
@@ -190,3 +192,10 @@ Circular Progress Indicator の API の詳細については、次のリンク�
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Button`
+ - `Calendar`
+ - `CircularGradient`
+ - `CircularProgress`

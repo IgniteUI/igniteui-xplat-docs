@@ -280,6 +280,75 @@ function updateApiSection(cb) {
 }
 exports.updateApiSection = updateApiSection;
 
+function verifyApiSections(cb) {
+    // ensureEnvironment();
+
+    gulp.src([
+    'doc/en/**/gantt-chart.md',
+    'doc/en/**/area-chart.md',
+    'doc/en/**/types/*.md',
+    'doc/en/**/features/chart-*.md',
+    'doc/en/**/geo-*.md',
+    'doc/en/**/excel-*.md',
+    'doc/en/**/spreadsheet-*.md',
+    'doc/en/**/*gauge.md',
+    'doc/en/**/bullet-*.md',
+    'doc/en/**/zoomslider-*.md',
+    'doc/en/**/grids/*.md',
+    'doc/en/**/editors/*.md',
+    'doc/en/**/inputs/*.md',
+    'doc/en/**/layouts/*.md',
+    'doc/en/**/notifications/*.md',
+    'doc/en/**/scheduling/*.md',
+    'doc/en/**/themes/*.md',
+    'doc/en/**/menus/*.md',
+    // 'doc/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var filePath = file.dirname + "\\" + file.basename
+        var fileContent = file.contents.toString();
+        var fileHasAPI = fileContent.indexOf(" API Members") > 0;
+        if (!fileHasAPI) {
+            let apiLinks = [];
+            let words = fileContent.split(' ');
+            for (const w of words) {
+                if (!apiLinks.includes(w) && w !== "" && w.indexOf('`') === 0) {
+                    apiLinks.push(w.replace(",","").replace(".","").replace(":",""));
+                }
+            }
+
+            let lines = fileContent.split("\n");
+            for (const line of lines) {
+                if (line.indexOf('mentionedTypes:') >= 0) {
+                    let items = line.replace("mentionedTypes:","").replace("[","").replace("]","").trim().split(",");
+                    for (const item of items) {
+                        if (!apiLinks.includes(item)) {
+                             let link = item.replace('"',"").replace('"',"").replace("'","").replace("'","").trim()
+                             apiLinks.push("`" + link + "`");
+                        }
+                    }
+                    break;
+                }
+            }
+
+            if (apiLinks.length > 0) {
+                apiLinks.sort();
+                console.log('missing API Section: ' + filePath + "\n ## API Members \n\n - " + apiLinks.join("\n - "));
+            }
+
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        cb();
+    })
+    .on("error", (err) => {
+        console.log("ERROR in verifyApiSections()");
+        cb(err);
+    });
+}
+exports.verifyApiSections = verifyApiSections;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;

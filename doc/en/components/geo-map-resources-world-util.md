@@ -409,3 +409,7 @@ export default class WorldUtils {
         }
     }
 ```
+
+ ## API Members
+
+ - `XamGeographicMap`

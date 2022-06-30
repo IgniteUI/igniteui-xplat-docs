@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Data Binding | Infragistics
 _description: Use Infragistics'  $Platform$ map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View $ProductName$ map demos!
 _keywords: $Platform$ map, geo-spatial data, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 ---
 # $Platform$ Data Binding
@@ -17,3 +17,9 @@ The following section list some of data source that you can bind in the geograph
 - [Binding CSV Files](geo-map-binding-data-csv.md)
 - [Binding Data Models](geo-map-binding-data-model.md)
 - [Binding Multiple Sources](geo-map-binding-multiple-sources.md)
+
+
+ ## API Members
+
+- `GeographicMap`
+- `DataSource`

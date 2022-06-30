@@ -140,3 +140,12 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Button`
+ - `Checkbox`
+ - `Form`
+ - `Input`
+ - `Radio`
+ - `Submit`

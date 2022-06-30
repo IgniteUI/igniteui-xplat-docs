@@ -7,9 +7,11 @@ mentionedTypes: ['Snackbar']
 
 # $Platform$ Snackbar
 
-The $ProductName$ Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen. 
+The $ProductName$ Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen.
 
 ## $ProductName$ Snackbar Example
+
+This sample demonstrates how to create `Snackbar` component.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -78,7 +80,7 @@ The simplest way to display the snackbar component is to use its `Show` method a
 
 ### Display Time
 
-Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 miliseconds.
+Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 milliseconds.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -127,3 +129,11 @@ igc-snackbar::part(base) {
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+ ## API Members
+
+ - `ActionText`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Snackbar`

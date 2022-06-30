@@ -2,7 +2,7 @@
 title: $Platform$ ステップ チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ステップ チャート
 _keywords: $Platform$ Charts, Step Chart, Step Area Chart, Step Line Chart, Infragistics, $Platform$ チャート, ステップ チャート, ステップ エリア チャート, ステップ折れ線チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -12,7 +12,7 @@ $ProductName$ ステップ チャートは連続する垂直線と水平線で�
 
 ## $Platform$ ステップ エリア チャート
 
-`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを `StepArea` 値に設定します。
+`CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを **StepArea** 列挙型に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

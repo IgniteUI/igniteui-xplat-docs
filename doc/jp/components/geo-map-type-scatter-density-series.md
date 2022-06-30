@@ -2,14 +2,14 @@
 title: $Platform$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
 _keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics, $Platform$ マップ, 散布高密度シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ 散布高密度シリーズの使用
+# $Platform$ 地理高密度マップ
 
-$Platform$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
+$Platform$ マップ コンポーネントでは、`GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
 
-## $Platform$ 散布高密度シリーズの使用の例
+## $Platform$ 地理高密度マップの例
 
 
 <code-view style="height: 400px"
@@ -290,3 +290,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+## API メンバー
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

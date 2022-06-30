@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 Tabular table UIs are used commonly in many web products. Building a tabular table UI from scratch isn't easy, however, Ignite UI for $Platform$ grid, creating a Table UI is simple, and binding large amounts of local or remote data to the $Platform$ grid is easy.  Since the grid is virtualized by default, you are not required to include table pagination to show large data sets.  It is mainly used due to its most efficient ways of organizing complex data in the UI. With table pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without actually needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows / buttons that let users flip through pages, as demonstrated here:
 
-Row Paging is enabled within the $ProductName$ Data Table / Data Grid by setting the `IsPagerVisible` property. In addition, you can limit the maximum number of visible rows by setting `PageSize`. 
+Row Paging is enabled within the $ProductName$ Data Table / Data Grid by setting the `IsPagerVisible` property. In addition, you can limit the maximum number of visible rows by setting `PageSize`.
 
 ## $Platform$ Row Paging Example
 
@@ -56,3 +56,9 @@ When users interact with the Grid like sorting and grouping, and you have enable
 - applySorts
 - applyGroups
 - applyFilters
+
+ ## API Members
+
+ - `Grid`
+ - `IsPagerVisible`
+ - `PageSize`

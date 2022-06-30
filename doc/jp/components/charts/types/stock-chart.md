@@ -2,7 +2,7 @@
 title: $Platform$ 株価/ファイナンシャル チャート | $ProductName$
 _description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
 _keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $Platform$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
-mentionedTypes: ["FinancialChart", "CategoryChartType", "IndicatorTypes", "ZoomSliderType"]
+mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
