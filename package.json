@@ -19,6 +19,7 @@
     "buildBlazor": "tsc && gulp buildOutputBlazor",
     "buildReact": "tsc && gulp buildOutputReact",
     "buildWebComponents": "tsc && gulp buildOutputWC",
+    "buildReactStaging": "tsc && set NODE_ENV=staging && gulp buildOutputReact",
     "buildWC": "tsc && gulp buildOutputWC",
     "buildAll": "tsc && gulp buildAll",
     "start": "tsc && gulp startDefault",
