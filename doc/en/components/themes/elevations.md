@@ -22,7 +22,7 @@ Here's a list of resting elevations as used in various components in $ProductNam
 | Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
 | Navdrawer                                       | 16                      | --igc-elevation-16 |
 
-As you can see from the `CSS Variable` column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
+As you can see from the **CSS Variable** column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
 
 ## Usage
 
