@@ -293,7 +293,7 @@ function transformCodeRefs(options: any) {
                         }
                     }
                 }
-                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
+                // console.log("getApiLink " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
@@ -1057,6 +1057,7 @@ export class MarkdownTransformer {
             fileContent = codeViewers.join('<code-view');
         }
 
+        // resolving links to sample browsers: local, staging, production
         if (this._platform === APIPlatform.Blazor ||
             this._platform === APIPlatform.React ||
             this._platform === APIPlatform.WebComponents) {
