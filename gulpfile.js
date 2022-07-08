@@ -97,7 +97,7 @@ function transformFiles() {
       console.log("- " + file.path);
       //var typeName = "CategoryChart";
 
-      transformer.transformContent(typeName, fileContent, // file.path,
+      transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
@@ -354,7 +354,7 @@ function buildPlatform(cb) {
     let platformName = PLAT;
     let apiPlatform = PLAT_API;
     log("=========================================================");
-    log("building " + PLAT + " docs for " + ENV_TARGET + " environment");
+    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
     ensureEnvironment();
 
     // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
