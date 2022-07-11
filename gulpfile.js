@@ -93,16 +93,13 @@ function transformFiles() {
 
       var fileContent = file.contents.toString();
       var typeName = path.basename(path.dirname(file.path))
-
       console.log("- " + file.path);
-      //var typeName = "CategoryChart";
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
         }
-        //console.log("HERE!!!");
         file.contents = Buffer.from(results);
 
         cb(null, file);
@@ -120,7 +117,6 @@ function transformStaticFiles(platformName) {
 
       var replacements = docs[platformName].replacements;
       //console.log(typeName);
-      //var typeName = "CategoryChart";
       for (var i = 0; i < replacements.length; i++) {
           fileContent = fileContent.replace(new RegExp(replacements[i].name, "gm"), replacements[i].value);
       }
@@ -205,7 +201,6 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
-
         fileContent = fileContent.split('],"types":').join('],\n  "types":');
         fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
         fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
@@ -406,37 +401,6 @@ function buildPlatform(cb) {
                '!doc/**/obsolete/*.md' // excluding old chart topics
             ];
             sources = sources.concat(topicExclusions);
-
-            // NOTE there is not need to exclude topics based on platform
-            // because they are already filtered based on build flags in toc.json
-
-            // if (platformName == "Angular") {
-            //     // excluding topics for controls that are not in Angular product, e.g. Data-grid
-            //     sources.push('!doc/**/layouts/*avatar*.md');
-            //     sources.push('!doc/**/layouts/*card*.md');
-            //     sources.push('!doc/**/layouts/*icon*.md');
-            //     sources.push('!doc/**/layouts/dock-manager*.md');
-            //     sources.push('!doc/**/grids/data-grid*.md');
-            //     sources.push('!doc/**/grids/grids.md');
-            //     sources.push('!doc/**/grids/list.md');
-            //     sources.push('!doc/**/editors/multi-column-combobox.md');
-            //     sources.push('!doc/**/editors/date-picker.md');
-            //     sources.push('!doc/**/inputs/*.md');     // e.g. badge, checkbox
-            //     sources.push('!doc/**/menus/*.md');      // e.g. nav-bar
-            //     sources.push('!doc/**/scheduling/*calendar*.md'); // e.g. calendar
-            // } else if (platformName == "Blazor") {
-            //     // excluding topics for controls that are not in Blazor product or API is broken for these components/features
-            //     // sources.push('!doc/**/dock-manager*.md');
-            //     sources.push('!doc/**/spreadsheet*.md');
-            //     // sources.push('!doc/**/excel*.md');
-            //     // sources.push('!doc/**/treemap*.md');
-            //     sources.push('!doc/**/general-cli*.md');
-            //     // sources.push('!doc/**/general-breaking-changes*.md');
-            //     // sources.push('!doc/**/data-chart-type-stacked*.md');
-            //     // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
-            //     // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
-            //     // sources.push('!doc/**/zoomslider*.md');
-            // }
 
         // uncomment to test faster build
         // sources.push('!doc/**/obsolete/**/*.md');
@@ -703,7 +667,6 @@ function buildSite(cb) {
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
-
 // functions for building Docfx for each platform:
 var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
 var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
@@ -791,7 +754,6 @@ function copyTemplateBackup(cb) {
 }
 exports.copyTemplateBackup = copyTemplateBackup;
 
-
 function verifyMarkdown(cb) {
     ensureEnvironment();
     if (transformer === null || transformer === undefined) {
@@ -843,5 +805,4 @@ function verifyMarkdown(cb) {
         if (cb) cb(err);
     });
 }
-
 exports.verifyMarkdown = verifyMarkdown;
