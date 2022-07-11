@@ -1071,7 +1071,8 @@ export class MarkdownTransformer {
                     browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
 
                     // TODO remove this IF and ELSE condition when Blazor and WC are on JP staging server
-                    if (this._platform === APIPlatform.React) {
+                    if (this._platform === APIPlatform.React ||
+                        this._platform === APIPlatform.Blazor) {
                         // only React samples are on JP staging website
                         browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
                     }
