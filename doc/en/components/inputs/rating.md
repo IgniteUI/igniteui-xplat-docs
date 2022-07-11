@@ -49,12 +49,6 @@ This will create a five-star rating component that can be used to input and read
 
 The `Rating` component allows you to use custom symbols in place of the default star symbol. If you want to use a different unicode symbol, use the `symbol` attribute.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating Custom Symbols Example"
-           github-src="inputs/rating/custom">
-</code-view>
-
 ```html
 <igc-rating symbol="🍒"></igc-rating>
 ```
@@ -63,6 +57,27 @@ If you want to use anything other than unicode symbols, like SVG(s) or icons, th
 
 ```html
 <igc-rating>
+  <igc-rating-symbol>💙</igc-rating-symbol>
+  <igc-rating-symbol>💙</igc-rating-symbol>
+  <igc-rating-symbol>💙</igc-rating-symbol>
+  <igc-rating-symbol>💙</igc-rating-symbol>
+  <igc-rating-symbol>💙</igc-rating-symbol>
+</igc-rating>
+```
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating Custom Symbols Example"
+           github-src="inputs/rating/custom">
+</code-view>
+
+> [!NOTE] Placing rating symbols between the opening and closing brackets of the rating component determines the max value to be used.
+
+## Single Selection
+The $ProductName$ Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user. 
+
+```html
+<igc-rating single>
   <igc-rating-symbol>😣</igc-rating-symbol>
   <igc-rating-symbol>😔</igc-rating-symbol>
   <igc-rating-symbol>😐</igc-rating-symbol>
@@ -71,7 +86,29 @@ If you want to use anything other than unicode symbols, like SVG(s) or icons, th
 </igc-rating>
 ```
 
-> [!NOTE] Placing rating symbols between the opening and closing brackets of the rating component determines the max value to be used.
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating with Signle Selection"
+           github-src="inputs/rating/custom">
+</code-view>
+
+> [!NOTE] Keep in mind that the `step` attribute doesn't work with single selection mode.
+
+## Empty & Selected 
+The $ProductName$ Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. To use this feature, you should provide a pair of icons for each rating symbol. For instance:
+
+```html
+<igc-rating-symbol>
+  <igc-icon collection="default" name="bandage"></igc-icon>
+  <igc-icon collection="default" name="bacteria" empty></igc-icon>
+</igc-rating-symbol>
+```
+
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/inputs/rating-empty" alt="$Platform$ Rating with Empty and Selected state"
+           github-src="inputs/rating/empty">
+</code-view>
 
 ## Configuration
 
@@ -92,7 +129,7 @@ A format string which sets [aria-valuetext](https://developer.mozilla.org/en-US/
 
 #### Max Value
 
-The `max` attribute max sets the maximum allowed value of the rating component.
+The `max` attribute sets the maximum allowed value of the rating component.
 
 #### Step
 
@@ -110,7 +147,6 @@ The `read-only` attribute allows the users to set the `Rating` in read-only mode
 
 The `disabled` attribute disables the component, making it impossible to select a value using the mouse or keyboard.
 
-
 ## Methods
 
 #### Step Up
@@ -122,7 +158,6 @@ The `stepUp` method increments the value of the component by `n` steps. Determin
 The `stepDown` method decrements the value of the component by `n` steps. Determined by the `step` factor.
 
 ## Events
-
 
 The `Rating` component emits two separate events - `igcHover` and `igcChange`.
 
