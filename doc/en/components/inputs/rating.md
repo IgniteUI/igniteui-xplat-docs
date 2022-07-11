@@ -47,13 +47,7 @@ This will create a five-star rating component that can be used to input and read
 
 ## Using Custom Symbols
 
-The `Rating` component allows you to use custom symbols in place of the default star symbol. If you want to use a different unicode symbol, use the `symbol` attribute.
-
-```html
-<igc-rating symbol="🍒"></igc-rating>
-```
-
-If you want to use anything other than unicode symbols, like SVG(s) or icons, then you should place the `RatingSymbol` between the opening and closing brackets of the `Rating`:
+The `Rating` component allows you to use custom symbols in place of the default star symbol. If you want to use a different symbol, like SVG, icon or another unicode symbol, you should place the `RatingSymbol` between the opening and closing brackets of the `Rating`:
 
 ```html
 <igc-rating>
@@ -111,10 +105,6 @@ The $ProductName$ Rating component allows users to use different icons/elements 
 </code-view>
 
 ## Configuration
-
-#### Symbol
-
-The `symbol` attribute sets the unicode symbol to be used.
 
 #### Value
 
