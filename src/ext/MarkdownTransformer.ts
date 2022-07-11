@@ -1067,18 +1067,11 @@ export class MarkdownTransformer {
                 this._envBrowser !== "") {
                 let browserLink = this._envBrowser;
                 if (filePath.indexOf("\\jp\\") > 0) {
-                    // changing samples links to JP browser in JP topics
+                    // changing samples links to JP production website in JP topics
                     browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
 
-                    // TODO remove this IF and ELSE condition when Blazor and WC are on JP staging server
-                    if (this._platform === APIPlatform.React ||
-                        this._platform === APIPlatform.Blazor) {
-                        // only React samples are on JP staging website
-                        browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
-                    }
-                    else {
-                        browserLink = browserLink.replace('staging.infragistics.com', 'jp.infragistics.com');
-                    }
+                    // changing samples links to JP staging website in JP topics
+                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
                 }
 
                 fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
