@@ -147,6 +147,11 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
+"@stackblitz/sdk@^1.5.3":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@stackblitz/sdk/-/sdk-1.8.0.tgz#9bd5f028ccfc1a921d66f914d1e7ea2761139c1e"
+  integrity sha512-hbS4CpQVF3bxJ+ZD8qu8lAjTZVLTPToLbMtgxbxUmp1AIgqm7i0gMFM1POBA8BqY84CT1A3z74gdCd1bsro7qA==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -2240,11 +2245,12 @@ iconv-lite@^0.6.2:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-igniteui-docfx-template@3.0.20:
-  version "3.0.20"
-  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.0.20.tgz#feaa5f4c36fefd103a84f4f6703666e9a1bbe1cb"
-  integrity sha512-gXIBNvdk95YrP7s9rX1+uNZ7xN35jnJL3lEI7U4PvnearMqtZWFd642JUaQuiRnYDXtnSWeyx8rjBg8XUPHyew==
+igniteui-docfx-template@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.2.0.tgz#38f7a70acfe66e411f35f8b3f799de99b0411804"
+  integrity sha512-ZjzFYtiHkBkOk6MdJq9vpXZhn5P1eNMpvOXlhqTJeRq3r8dr5RM/NRrBJQTMwyS2Ka33QRB5B7uOPDzIZ6j6gQ==
   dependencies:
+    "@stackblitz/sdk" "^1.5.3"
     anchor-js "^4.3.0"
     babel-polyfill "^6.26.0"
     bootstrap "^3.3.7"
