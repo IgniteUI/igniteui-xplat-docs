@@ -17,7 +17,7 @@ In it, you can see how to define an accordion and its expansion panels. The samp
 
 <code-view style="height: 460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/overview"
+           iframe-src="{environment:demosBaseUrl}/layouts/accordion-overview"
            alt="$Platform$ Accordion Example"
            github-src="layouts/accordion/overview">
 </code-view>
@@ -94,7 +94,7 @@ The sample below demonstrates how elaborate filtering options can be implemented
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/customization"
+           iframe-src="{environment:demosBaseUrl}/layouts/accordion-customization"
            alt="$Platform$ Accordion Customization Example"
            github-src="layouts/accordion/customization">
 </code-view>
@@ -106,7 +106,7 @@ In the following $Platform$ Accordion example is created a complex FAQ section i
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/nested-scenario"
+           iframe-src="{environment:demosBaseUrl}/layouts/accordion-nested-scenario"
            alt="$Platform$ Accordion Nested Example"
            github-src="layouts/accordion/nested-scenario">
 </code-view>
@@ -127,10 +127,6 @@ The Accordion navigation is compliant with W3C accessibility standards and conve
  - <kbd>Shift + Alt + Arrow Up</kbd> - closes all enabled panels
  - <kbd>Home</kbd> - navigates to the FIRST enabled panel in the accordion
  - <kbd>End</kbd> - navigates to the LAST enabled panel in the accordion
-
-
-## Styling
-
 
 <!-- WebComponents -->
 
