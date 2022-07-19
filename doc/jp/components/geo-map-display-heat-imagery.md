@@ -353,3 +353,18 @@ public onDataLoaded(csvData: string) {
     this.geoMap.series.add(series);
 }
 ```
+
+## API メンバー
+
+ - `HeatTileGenerator`
+ - `HeatTileGenerator`
+ - `MaximumColor`
+ - `MinimumColor`
+ - `ShapeFileRecord`
+ - `ShapeFileRecords`
+ - `ShapefileConverter`
+ - `TileGeneratorMapImagery`
+ - `TileGenerator`
+ - `TileImagery`
+ - `UseBlurRadiusAdjustedForZoom`
+ - `UseLogarithmicScale`

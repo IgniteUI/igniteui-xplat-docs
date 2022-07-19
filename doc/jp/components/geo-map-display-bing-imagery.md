@@ -93,3 +93,9 @@ geoMap.backgroundContent = tileSource;
 |`IsInitialized`|ブール値|True に設定されているプロパティは、Bing Maps サービスからの地理的画像タイルが初期化され、マップ コンポーネントでのレンダリングの準備ができたときに発生することを表します。|
 |`SubDomains`|`SubDomainsCollection`|URI サブ ドメインの画像コレクションを表します。|
 |`TilePath`|文字列|マップ タイル画像 URI を設定するプロパティを表します。これは Bing Maps の実際の位置です。|
+
+## API メンバー
+
+ - `BingMapsImageryStyle`
+ - `BingMapsMapImagery`
+ - `XamGeographicMap`

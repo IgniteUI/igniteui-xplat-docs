@@ -20,3 +20,6 @@ The $ProductName$ Data Table / Data Grid supports [template columns](data-grid-c
            github-src="grids/data-grid/type-heatmap-table">
 </code-view>
 
+ ## API Members
+
+ - `Grid`

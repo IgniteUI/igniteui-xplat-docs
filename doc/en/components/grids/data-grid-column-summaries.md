@@ -328,3 +328,10 @@ class CustomDomestic extends SummaryCalculator
 }
 ```
 <!--end: Angular, React, WebComponents -->
+
+
+ ## API Members
+
+ - `Grid`
+ - `GroupSummaryDisplayMode`
+ - `SummaryScope`

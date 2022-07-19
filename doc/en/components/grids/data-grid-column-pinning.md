@@ -389,3 +389,11 @@ connectedCallback() {
     }
 }
 ```
+
+ ## API Members
+
+ - `Button`
+ - `DataGridToolbar`
+ - `PinColumn`
+ - `PinnedPositions`
+ - `Pinned`

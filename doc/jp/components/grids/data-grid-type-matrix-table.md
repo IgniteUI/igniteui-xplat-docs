@@ -21,3 +21,6 @@ $ProductName$ Data Table / Data Grid は、マトリックス テーブルを作
            github-src="grids/data-grid/type-matrix-table">
 </code-view>
 
+## API メンバー
+
+ - `Grid`

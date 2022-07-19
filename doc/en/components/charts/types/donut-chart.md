@@ -11,7 +11,7 @@ The $ProductName$ Donut Chart is similar to the [Pie Chart](pie-chart.md), pro
 
 ## $Platform$ Donut Chart Example
 
-You can create this type of chart with the `XamDoughnutChart` control by binding your data as shown in the example below.
+You can create Donut Chart using the `XamDoughnutChart` control by binding your data as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

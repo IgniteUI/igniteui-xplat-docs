@@ -2,7 +2,7 @@
 title: $Platform$ チャート パフォーマンス | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ チャート パフォーマンス
 _keywords: $Platform$ Charts, Performance, Infragistics, $Platform$ チャート, パフォーマンス, インフラジスティックス
-mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -55,7 +55,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 
 ### データ構造
 
-$Platform$ チャートは、データ ポイントの配列の配列を `ItemsSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
+$Platform$ チャートは、データ ポイントの配列の配列を `DataSource` プロパティにバインドすることにより、複数のデータ ソースの描画をサポートします。複数のデータ ソースが単一のデータ ソースにフラット化され、各データ項目に 1 つのデータ列だけでなく複数のデータ列が含まれる場合、チャートははるかに高速になります。例えば:
 
 ```razor
 this.CategoryChart.DataSource = FlattenDataSource.Create();

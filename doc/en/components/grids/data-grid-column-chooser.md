@@ -281,3 +281,12 @@ connectedCallback() {
 }
 ```
 
+## API Members
+
+ - `Button`
+ - `ColumnChooserText`
+ - `ColumnChooserTitle`
+ - `ColumnChooser`
+ - `ColumnHidingAnimationMode`
+ - `ColumnShowingAnimationMode`
+ - `DataGridToolbar`

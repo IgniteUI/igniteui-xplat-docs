@@ -2,13 +2,13 @@
 title: $Platform$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
 _description: Use Infragistics $Platform$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
 _keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $Platform$ Using Scatter High Density Series
+# $Platform$ Geographic High Density Map
 
-Use the $Platform$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
+In $Platform$ map component, you can use the `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
-## $Platform$ Using Scatter High Density Series Example
+## $Platform$ Geographic High Density Map Example
 
 
 <code-view style="height: 400px"
@@ -289,3 +289,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+ ## API Members
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

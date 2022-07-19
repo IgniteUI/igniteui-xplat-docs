@@ -93,3 +93,10 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
     <IgbTextColumn Field="ID" IsFilteringEnabled="false" />
 </IgbDataGrid>
 ```
+
+## API Members
+
+ - `HeaderClickAction`
+ - `IsColumnOptionsEnabled`
+ - `IsFilteringEnabled`
+ - `SortByOneColumnOnly`

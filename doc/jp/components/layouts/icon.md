@@ -38,7 +38,7 @@ IgbIconModule.Register(IgniteUIBlazor);
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Icon` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Icon` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -57,6 +57,7 @@ defineComponents(IgcIconComponent);
 ### アイコンの追加
 
 <!-- WebComponents -->
+
 画像をアイコンとして登録するには、アイコンをアイコン コレクションに追加できるアイコン レジストリ サービスから 2 つのユーティリティ関数のいずれかをインポートするだけです。
 
 ```ts
@@ -89,7 +90,7 @@ registerIcon(
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -115,7 +116,7 @@ registerIcon(
 IgbIcon IconName="search" Collection="material" />
 ```
 
-アイコンを登録する 2 番目の方法は、SVG 文字列を [`RegisterIconFromText`] メソッドに渡すことです。
+アイコンを登録する 2 番目の方法は、SVG 文字列を `RegisterIconFromText` メソッドに渡すことです。
 
 ```ts
 const searchIcon =
@@ -129,7 +130,7 @@ registerIconFromText("search", searchIcon, "material");
 
 @code {
   private IgbIcon IconRef { get; set; }
-      
+
   protected override void OnAfterRender(bool firstRender)
   {
      base.OnAfterRender(firstRender);
@@ -214,3 +215,8 @@ igc-icon {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Icon`
+ - `RegisterIcon`

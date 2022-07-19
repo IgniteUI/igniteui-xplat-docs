@@ -73,3 +73,11 @@ The following demonstrates the implementation of each of the column animations d
     ColumnPropertyUpdatingAnimationMode="ColumnPropertyUpdatingAnimationMode.Interpolate"
     ColumnShowingAnimationMode="ColumnShowingAnimationMode.SlideFromBottomAndFadeIn" />
 ```
+
+ ## API Members
+
+ - `ColumnAddingAnimationMode`
+ - `ColumnExchangingAnimationMode`
+ - `ColumnHidingAnimationMode`
+ - `ColumnMovingAnimationMode`
+ - `ColumnPropertyUpdatingAnimation`

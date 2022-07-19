@@ -12,7 +12,7 @@ The $ProductName$ Calendar component provides an easy and intuitive way to displ
 
 ## $Platform$ Calendar Example
 
-This sample demonstrates how to create  `Calendar` with option to select a single date.
+This sample demonstrates how to create `Calendar` with option to select a single date.
 
 <div class="divider--half"></div>
 
@@ -477,3 +477,16 @@ The following sample demonstrates the above CSS configuration:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `ActiveDate`
+ - `ActiveView`
+ - `After`
+ - `Before`
+ - `Between`
+ - `Calendar`
+ - `Change`
+ - `DateRangeDescriptor`
+ - `DateRangeType`
+ - `DateRange`

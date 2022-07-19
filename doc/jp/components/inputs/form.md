@@ -2,7 +2,7 @@
 title: $Platform$ Form コンポーネント | $ProductName$
 _description: $Platform$ Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
 _keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
-mentionedTypes: ['Form']
+mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 _language: ja
 ---
 
@@ -40,7 +40,7 @@ IgbFormModule.Register(IgniteUIBlazor);
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Form` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Form` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -85,8 +85,8 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 ### イベント
 
 Form コンポーネントは、次のイベントを発生させます:
-- igcSubmit - フォームが送信されたときに発生します。
-- igcSubmit - フォームがリセットされたときに発生します。
+- Submit - フォームが送信されたときに発生します。
+- Reset - フォームがリセットされたときに発生します。
 
 `Submit` イベントのイベント リスナーを追加する方法を示す例を次に示します:
 
@@ -141,3 +141,12 @@ Form コンポーネントは、次のメソッドを公開します:
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Button`
+ - `Checkbox`
+ - `Form`
+ - `Input`
+ - `Radio`
+ - `Submit`

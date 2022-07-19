@@ -43,7 +43,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 
 ## フィルター演算子
 
-列には、filter-row オペランド ドロップダウンに表示されるカスタムの  `FilterOperand` を指定できます。重要な要件は、オペランドに `DisplayName` が指定されていることを確認し、オペランドで `FilterRequested` イベントを利用して、`FilterFactory` を適用できるようにすることです。これにより、列をフィルタリングする演算子と値を割り当てることができます。例えば、「A」の値で開始します。
+列には、filter-row オペランド ドロップダウンに表示されるカスタムの `FilterOperand` を指定できます。重要な要件は、オペランドに `DisplayName` が指定されていることを確認し、オペランドで `FilterRequested` イベントを利用して、`FilterFactory` を適用できるようにすることです。これにより、列をフィルタリングする演算子と値を割り当てることができます。例えば、「A」の値で開始します。
 
 さらに、グリッドの `FilterLogicalOperator` プロパティは、フィールド間のフィルターがどのように組み合わされるかを示す役割を果たします。
 
@@ -62,3 +62,13 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 </code-view>
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `DisplayName`
+ - `FilterExpressions`
+ - `FilterFactory`
+ - `FilterLogicalOperator`
+ - `FilterOperand`
+ - `FilterRequested`
+ - `FilterUIType`

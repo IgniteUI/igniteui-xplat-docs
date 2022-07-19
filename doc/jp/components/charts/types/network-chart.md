@@ -2,7 +2,7 @@
 title: $Platform$ ネットワーク チャート | ネットワーク グラフ | ポリライン チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ ネットワーク チャート / グラフ
 _keywords: $Platform$ Charts, Network Chart, Network Graph, Network Polar Chart, Network Scatter Chart, Polyline Chart, Infragistics, $Platform$ チャート, ネットワーク チャート, ネットワーク グラフ, ネットワーク極座標チャート, ネットワーク散布図, ポリライン チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

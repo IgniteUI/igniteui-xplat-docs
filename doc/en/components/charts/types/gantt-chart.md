@@ -2,7 +2,7 @@
 title: $Platform$ Gantt Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Gantt Chart
 _keywords: $Platform$ Charts, Gantt Chart, Infragistics
-mentionedTypes: ["XamDataChart"]
+mentionedTypes: ["XamDataChart", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Gantt Chart

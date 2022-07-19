@@ -12,6 +12,8 @@ The $ProductName$ Input is a component where the user can enter data.
 
 <div class="divider--half"></div>
 
+<!-- React, WebComponents -->
+
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
@@ -19,9 +21,18 @@ The $ProductName$ Input is a component where the user can enter data.
            github-src="inputs/input/overview">
 </code-view>
 
-## Dependencies
+<!-- end:React, WebComponents -->
 
 <!-- Blazor -->
+
+<code-view style="height: 120px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
+           alt="$Platform$ Input Example"
+           github-src="inputs/input/binding">
+</code-view>
+
+## Dependencies
 
 To get started with the Input component, you first need to register its module.
 
@@ -177,3 +188,10 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+
+## API Members
+
+ - `Icon`
+ - `Input`
+ - `Radio`

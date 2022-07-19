@@ -2,7 +2,7 @@
 title: $Platform$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
 _description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
 _keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープファイル, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 # $Platform$ シェープ ファイルを地理的データにバインディング
@@ -258,3 +258,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
     }
 }
 ```
+
+## API メンバー
+
+ - `Fields`
+ - `GeographicPolylineSeries`
+ - `ImportCompleted`
+ - `ItemsSource`
+ - `Points`
+ - `ShapefileConverter`

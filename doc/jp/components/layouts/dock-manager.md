@@ -7,18 +7,7 @@ mentionedTypes: ['DockManager']
 ---
 # $Platform$ ドック マネージャーの概要
 
-Infragistics $Platform$ Dock Manager コンポーネントは、ペインでアプリケーションのレイアウトを管理する方法を提供する WebComponent です。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
-
-<!-- Blazor -->
-> [!NOTE]
-> <b>追加予定</b>
-
-Blazor ドック マネージャーは現在開発中で、間もなく完成します。Blazor ドック マネージャー コンポーネントの完成後、このトピックとサンプルが更新される予定です。この間にドック マネージャーコ ンポーネントが必要な場合、Blazor アプリケーションで Ignite UI for Web Components ドック マネージャーを使用できます。
-
-以下のブログ (英語) に記載されている手順に従ってください。
-
- <a href="https://www.infragistics.com/community/blogs/b/infragistics/posts/using-the-igniteui-for-web-components-dock-manager-in-blazor">"Using the Ignite UI for Web Components Dock Manager in Blazor"  </a>
-<!-- end: Blazor -->
+Infragistics $Platform$ Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
 ## $Platform$ ドック マネージャーの例
 
@@ -32,7 +21,6 @@ Blazor ドック マネージャーは現在開発中で、間もなく完成し
 </code-view>
 
 <div class="divider--half"></div>
-
 
 <!-- Angular, React, WebComponents -->
 ドック マネージャー パッケージをインストールするには、以下のコマンドを実行します。
@@ -376,6 +364,109 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 <div class="divider--half"></div>
 
+## カスタマイズ
+
+Dock Manager コンポーネントは、スロットとパーツを使用してすべてのボタンをカスタマイズするオプションを提供します。ボタンを変更するには、Dock Manager 内で独自の要素を定義し、slot 属性を対応する識別子に設定します。
+
+これらのスロットとパーツを使用して、カスタマイズされた Dock Manager レイアウトを作成してみましょう。最初に、`closeButton`、`maximizeButton`、`minimizeButton`、`pinButton`、および `unpinButton` スロットを使用して独自のアイコンを提供します。
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+</igc-dockmanager>
+```
+
+次に、スタイルシートで公開されたパーツを使用します。このようにして、コンポーネントのスタイル設定を完全に制御できます。
+
+```css
+igc-dockmanager::part(unpinned-tab-area) {
+    background: #bee9ec;
+}
+
+igc-dockmanager::part(unpinned-tab-area--left) {
+    border-right: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(unpinned-tab-area--bottom) {
+    border-top: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(tab-header-close-button),
+igc-dockmanager::part(pane-header-close-button) {
+    background-color: #e73c7e;
+}
+
+igc-dockmanager::part(pane-header-pin-button),
+igc-dockmanager::part(pane-header-unpin-button) {
+  background: rgb(218, 218, 218);
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+igc-dockmanager::part(tabs-maximize-button),
+igc-dockmanager::part(tabs-minimize-button),
+igc-dockmanager::part(pane-header-minimize-button),
+igc-dockmanager::part(pane-header-maximize-button) {
+  width: 24px;
+  height: 24px;
+  border: none;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0.3;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-left: 0px;
+}
+```
+
+すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
+
+<!-- WebComponents -->
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
+           alt="$Platform$ Dock Manager カスタマイズ ボタンの例"
+           github-src="layouts/dock-manager/customize-buttons">
+</code-view>
+<!-- end: WebComponents -->
+
+以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
+
+スロット名 | 説明
+----------|------------
+`closeButton` | 閉じるボタン。
+`moreTabsButton` | その他のタブボタン。
+`moreOptionsButton` | その他のオプションボタン。
+`maximizeButton` | 最大化ボタン。
+`minimizeButton` | 最小化ボタン。
+`pinButton` | ピン固定ボタン。
+`unpinButton` | ピン固定解除ボタン。
+`splitterHandle` | スプリッターのハンドル。
+
+各スロットの対応するパーツは、このページの**スタイル設定**セクションの **CSS パーツ**にあります。
+
 ## キーボード ナビゲーション
 
 キーボード ナビゲーションは、**ドック マネージャー**のアクセシビリティを強化し、すべてのペインをナビゲートしたり、アクティブなペインをドッキングしてビューを複数の方向に分割したりするなど、エンドユーザーにさまざまな操作を提供します。
@@ -385,32 +476,32 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 ### ドッキング
 
-- <kbd>Cmd/Ctrl + Shift + 上矢印</kbd> グローバルの上へのドック。
-- <kbd>Cmd/Ctrl + Shift + 下矢印</kbd> グローバルの下へのドック。
-- <kbd>Cmd/Ctrl + Shift + 右矢印</kbd> グローバルの右へのドック。
-- <kbd>Cmd/Ctrl + Shift + 左矢印</kbd> グローバルのの左へのドック。
-- <kbd>Shift + 上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
-- <kbd>Shift + 下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
-- <kbd>Shift + 右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
-- <kbd>Shift + 左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>上矢印</kbd> グローバルの上へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>下矢印</kbd> グローバルの下へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>右矢印</kbd> グローバルの右へのドック。
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>左矢印</kbd> グローバルのの左へのドック。
+- <kbd>Shift</kbd> + <kbd>上矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが上にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>下矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが下にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>右矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが右にドッキングされます。
+- <kbd>Shift</kbd> + <kbd>左矢印</kbd> タブ グループに複数のタブがある場合、ビューが分割され、フォーカスされたタブが左にドッキングされます。
 
 ### ナビゲーション
- - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + 右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + 左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
- - <kbd>Alt + F6</kbd> 次のコンテンツ ペインにフォーカスします。
- - <kbd>Alt + Shift + F6</kbd> 前のコンテンツ ペインにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>右矢印</kbd> ドキュメント ホストの次のタブにフォーカスします。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>左矢印</kbd> ドキュメント ホストの前のタブにフォーカスします。
+ - <kbd>Alt</kbd> + <kbd>F6</kbd> 次のコンテンツ ペインにフォーカスします。
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> 前のコンテンツ ペインにフォーカスします。
 
 ### ペイン ナビゲーター
 
 次のキーボード ショートカットは、ペインやドキュメントをを反復できるナビゲーターを示しています。
 
- - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  最初のドキュメントから開始します。
- - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> 最初のペインから開始します。
- - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> 最後のドキュメントから逆方向に開始します。
- - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> 最後のペインから逆方向に開始します。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  最初のドキュメントから開始します。
+ - <kbd>Alt</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>F8</kbd> 最初のペインから開始します。
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のドキュメントから逆方向に開始します。
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> または <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> 最後のペインから逆方向に開始します。
 
 ### その他
- - <kbd>Alt + F3</kbd> アクティブなペインを閉じます。
+ - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
 サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
@@ -470,6 +561,19 @@ igc-dockmanager::part(content-pane) {
 `pane-navigator-items-group` | ペイン ナビゲーター コンポーネントの項目グループ。
 `pane-navigator-items-group-title` | ペイン ナビゲーターの項目グループのタイトル要素。
 `pane-navigator-item` | ペイン ナビゲーターの項目。
+`pane-header-close-button` | ペイン ヘッダーの閉じるボタン。
+`pane-header-maximize-button` | ペイン ヘッダーの最大化ボタン。
+`pane-header-minimize-button` | ペイン ヘッダーの最小化ボタン。
+`pane-header-pin-button` | ペイン ヘッダーのピン固定ボタン。
+`pane-header-unpin-button` | ペイン ヘッダーのピン固定解除ボタン。
+`tab-header-more-options-button` | タブ ヘッダーのその他のオプションボタン。
+`tab-header-close-button` | タブ ヘッダーの閉じるボタン。
+`tabs-maximize-button` | タブの最大化ボタン。
+`tabs-minimize-button` | タブの最小化ボタン。
+`tabs-more-button` | その他のタブ ボタン。
+`context-menu-unpin-button` | コンテキスト メニューのピン固定解除ボタン。
+`context-menu-close-button` | コンテキスト メニューの閉じるボタン。
+`splitter-handle` | スプリッターのハンドル。
 
 ## テーマ
 
@@ -502,3 +606,6 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 <!-- end: WebComponents -->
 
+## API メンバー
+
+ - `DockManager`

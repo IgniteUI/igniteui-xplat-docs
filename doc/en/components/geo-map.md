@@ -2,7 +2,7 @@
 title: $Platform$ Map | Data Visualization Tools | Map Overview | Infragistics
 _description: Use Infragistics' $Platform$ JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the $ProductName$ map demos!
 _keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
 # $Platform$ Map Overview
 

@@ -1056,7 +1056,9 @@ Infragistics の $Platform$ 製品の受賞歴のあるサポートにアクセ�
     <div class="faqs-accordion h4">Infragistics $ProductName$ Data Grid の価格について教えてください。</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ は、サブスクリプション モデルで利用可能な商用ライセンス製品である Ignite UI に含まれています。
+$ProductName$ コンポーネントは、Ignite UI バンドルの一部として含まれています。
+<div class="divider--half"></div>
+$ProductName$ は、サブスクリプション モデルで利用可能な商用ライセンス製品です。このサブスクリプションには、$Platform$ グリッド、$Platform$ チャート、その他の $Platform$ UI コントロールが含まれます。
 <div class="divider--half"></div>
 価格の詳細については、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">価格ページを参照してください。</a>
 <div class="divider--half"></div>
@@ -1103,7 +1105,9 @@ $ProductName$ は、サブスクリプション モデルで利用可能な商�
     <div class="faqs-accordion h4">Infragistics $ProductName$ Data Grid の価格について教えてください。</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-$ProductName$ は、サブスクリプション モデルで利用可能な商用ライセンス製品である Ignite UI に含まれています。
+$ProductName$ コンポーネントは、Ignite UI バンドルの一部として含まれています。 
+<div class="divider--half"></div>
+$ProductName$ は、サブスクリプション モデルで利用可能な商用ライセンス製品です。このサブスクリプションには、$Platform$ グリッド、$Platform$ チャート、その他の $Platform$ UI コントロールが含まれます。
 <div class="divider--half"></div>
 価格の詳細については、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">価格ページを参照してください。</a>
 <div class="divider--half"></div>

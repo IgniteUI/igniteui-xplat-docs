@@ -85,3 +85,7 @@ this.geoMap.backgroundContent = mapImagery;
 }
 ```
 
+ ## API Members
+
+ - `BackgroundContent`
+ - `OpenStreetMapImagery`

@@ -2,18 +2,16 @@
 title: $Platform$ Area Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Area Chart
 _keywords: $Platform$ Charts, Area Chart, Infragistics
-mentionedTypes: ["CategoryChart", "XamDataChart", "CategoryChartType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Area Chart
 
-The $ProductName$ Area Chart renders as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). This chart emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values.
-
-Area Chart is based on [Line Chart](line-chart.md) or [Spline Chart](spline-chart.md). Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
+The $ProductName$ Area Chart renders as a collection of points connected by straight line segments with the area below the line filled in. Values are represented on the y-axis (labels on the left side) and categories are displayed on the x-axis (bottom labels). This chart emphasize the amount of change over a period of time or compare multiple items as well as the relationship of parts of a whole by displaying the total of the plotted values. Therefore, they are often chronological, showing a change of quantity e.g. accumulation of a commodity over time.
 
 ## $Platform$ Area Chart Example
 
-You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Area` value, as shown in the example below.
+You can create $Platform$ Category Area Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Area** enum, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

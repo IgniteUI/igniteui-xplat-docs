@@ -57,3 +57,8 @@ $Platform$ データ内のレコードの強調表示は、$Platform$ グリッ�
     IsRowHoverEnabled="true"
     RowHoverBackground="#bfbfff" />
 ```
+
+## API メンバー
+
+ - `IsRowHoverEnabled`
+ - `RowHoverBackground`

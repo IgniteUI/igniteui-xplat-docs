@@ -293,7 +293,7 @@ function transformCodeRefs(options: any) {
                         }
                     }
                 }
-                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
+                // console.log("getApiLink " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
@@ -983,7 +983,7 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
-        // filePath: string,
+        filePath: string,
         callback: (err: any, results: string | null) => void): void {
 
         // check for strings that should be API links:
@@ -1016,14 +1016,66 @@ export class MarkdownTransformer {
             platformSpinalPrefix: null as string | null
         };
 
+        if (this._platform === APIPlatform.Angular) {
+            // injecting sandbox and stackblitz buttons
+            let codeViewers = fileContent.split("<code-view");
+            // console.log("codeViewers " + codeViewers.length);
+            let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
+            for (let v = 0; v < codeViewers.length; v++) {
+                let viewer = codeViewers[v];
+                let viewerEnd = -1;
+                let viewerStart = viewer.indexOf("code-view");
+                if (viewerStart >= 0) {
+                    let samplePath = null;
+                    let lines = viewer.split("\n");
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i];
+                        if (line.indexOf("github-src=") > 0) {
+                            samplePath = line.replace('github-src="',"");
+                            samplePath = samplePath.replace('"','');
+                            samplePath = samplePath.replace('>','');
+                            samplePath = samplePath.trim();
+                        }
+                        if (line.indexOf("code-view>") > 0) {
+                            viewerEnd = i + 1;
+                        }
+                    }
+
+                    if (viewerEnd >= 0 && samplePath !== null) {
+                        let github = "github/IgniteUI/igniteui-angular-examples/tree/master/samples/" + samplePath;
+                        let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
+                        let sandbox = "https://codesandbox.io/s/" + github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/app.component.html";
+                        let editButtons = editButtonTemplate + "";
+                        editButtons = editButtons.replace('{sandbox}', sandbox);
+                        editButtons = editButtons.replace('{stackblitz}', stackblitz);
+                        lines.splice(viewerEnd, 0, editButtons);
+                        // console.log("codeViewers " + github + " " + viewerEnd + " " + lines.length);
+                    }
+                    codeViewers[v] = lines.join('\n');
+                }
+            }
+            fileContent = codeViewers.join('<code-view');
+        }
+
+        // resolving links to sample browsers: local, staging, production
+        // except for Angular because the main Angular repo will update these links
         if (this._platform === APIPlatform.Blazor ||
             this._platform === APIPlatform.React ||
             this._platform === APIPlatform.WebComponents) {
             // using 'samplesBrowsers' variable in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
-                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", this._envBrowser);
-                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", this._envBrowser);
+                let browserLink = this._envBrowser;
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
+
+                    // changing samples links to JP staging website in JP topics
+                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
+
+                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
+                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", browserLink);
             }
         }
 

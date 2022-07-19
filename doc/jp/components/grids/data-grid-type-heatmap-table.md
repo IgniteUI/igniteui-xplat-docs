@@ -21,3 +21,6 @@ $ProductName$ Data Table / Data Grid は、ヒートマップを作成する[テ
            github-src="grids/data-grid/type-heatmap-table">
 </code-view>
 
+## API メンバー
+
+ - `Grid`

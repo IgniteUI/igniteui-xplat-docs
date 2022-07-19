@@ -39,7 +39,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Badge` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Badge` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -150,3 +150,7 @@ igc-badge::part(base) {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Badge`

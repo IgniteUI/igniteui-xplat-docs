@@ -2,7 +2,7 @@
 title: $Platform$ チャート ツールチップ | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ チャート ツールチップ
 _keywords: $Platform$ Charts, Tooltips, Infragistics, $Platform$ チャート, ツールチップ, インフラジスティックス
-mentionedTypes: ["CategoryChart", "ToolTipType"]
+mentionedTypes: ["DomainChart", "CategoryChart", "ToolTipType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
@@ -29,6 +29,7 @@ $Platform$ チャートでは、ツールチップはバインドされたデー
 プロパティの値     | 説明
 -------------------|----------------
 `Default` ツールチップ | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
+`Data` ツールチップ | チャートのすべてのシリーズのデータ ツールチップを表示します。
 `Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
 `Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
 
