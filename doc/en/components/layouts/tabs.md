@@ -68,9 +68,9 @@ Simple `Tabs` declaration is done as follows:
 
 The `Tabs` emits `igcChange` event when the user selects an item either by key press or click. The `select` method allows you to select a tab by specifying its panel as string value.
 
-If the selected tab is not specified on initial load, the first not disabled tab will be selected.
+If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but only after pressing space bar or enter the tab will be selected.
+The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing `Space` or `Enter`
 
 ### Disabled Tab
 
@@ -86,7 +86,7 @@ A tab is disabled by setting the `disabled` attribute:
 
 ### Alignment
 
-The `alignment` property controls how tabs are positioned. It accepts four different values - start, center, end and justify.
+The `alignment` property controls how tabs are positioned. It accepts the following values:
 
 - `start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
 - `center`: the width of the tab depends on the content and occupies the tabs container's center.
