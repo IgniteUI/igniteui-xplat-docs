@@ -136,7 +136,7 @@ $Platform$ 折れ線チャートは、次のデモに示すように、数百万
 
 ## $Platform$ 積層型折れ線チャート
 
-積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
+積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

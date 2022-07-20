@@ -757,7 +757,7 @@ $ProductName$ データ グリッド コンポーネントには、グリッド�
 </div>
     <div class="feature__details">
         <span class="h3 features__heading">$Platform$ Grid 列と行の Outlook スタイルのグループ化<a class="anchorjs-link" href="data-grid-row-grouping.md" aria-label="Anchor" data-anchorjs-icon style="padding-left: 0.375em;"></a></span>
-        <p>$ProductName$ データ グリッドを使用すると、行を「固定ヘッダー」[行グループにまとめる](data-grid-row-grouping.md)ことができます。 ユーザーは、Microsoft Outlook スタイルの方法で、類似したデータ エントリを持つ列でグループ化することにより、類似したデータ項目を視覚化できます。</p>
+        <p>$ProductName$ データ グリッドを使用すると、行を「固定ヘッダー」[行グループにまとめる](data-grid-row-grouping.md)ことができます。ユーザーは、Microsoft Outlook スタイルの方法で、類似したデータ エントリを持つ列でグループ化することにより、類似したデータ項目を視覚化できます。</p>
     </div>
 </div>
 <div class="divider--half"></div>

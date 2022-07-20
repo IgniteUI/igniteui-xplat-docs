@@ -90,7 +90,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 > [!NOTE]
 > **Igb** プレフィックスは $ProductName$ のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
-> たとえば、 ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
+> たとえば、``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 
 ### 新しいコンポーネント
 
@@ -159,7 +159,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 #### チャートとマップ
 
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
