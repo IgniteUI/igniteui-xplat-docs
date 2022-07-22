@@ -103,6 +103,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Accordion",
+    "href": "layouts/accordion.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Avatar {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md"
@@ -142,6 +148,12 @@
     "exclude":  ["Angular", "React", "Blazor"],
     "name": "Expansion Panel",
     "href": "layouts/expansion-panel.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tabs",
+    "href": "layouts/tabs.md",
     "status": "NEW"
   },
   {
@@ -1412,8 +1424,14 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Date Time Input",
+    "exclude": ["Angular", "React", "Blazor"], 
+    "name": "Mask Input {ReleaseStatus_WebsInputs}",
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"], 
+    "name": "Date Time Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/date-time-input.md",
     "status": "NEW"
   },
@@ -1421,6 +1439,18 @@
     "exclude": ["Angular", "React"],
     "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Select {ReleaseStatus_WebsInputs}",
+    "href": "inputs/select.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "href": "inputs/rating.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
