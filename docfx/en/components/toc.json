@@ -1393,7 +1393,7 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Mask Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/mask-input.md",
     "status": "NEW"
