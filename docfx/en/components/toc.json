@@ -1442,6 +1442,12 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
+    "name": "Select {ReleaseStatus_WebsInputs}",
+    "href": "inputs/select.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Rating {ReleaseStatus_WebsInputs}",
     "href": "inputs/rating.md",
     "status": "NEW"
