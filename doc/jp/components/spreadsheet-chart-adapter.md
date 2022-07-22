@@ -202,3 +202,12 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
     chart4.setSourceData(dataCellAddress, true);
 });
 ```
+
+## API メンバー
+
+ - `AddChart`
+ - `ChartAdapter`
+ - `SpreadsheetChartAdapter`
+ - `Spreadsheet`
+ - `Workbook`
+ - `XamSpreadsheet`

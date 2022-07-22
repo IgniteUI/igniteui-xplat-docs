@@ -74,3 +74,11 @@ $ProductName$ Data Table / Data Grid は、列の非表示や列の移動など�
     ColumnPropertyUpdatingAnimationMode="ColumnPropertyUpdatingAnimationMode.Interpolate"
     ColumnShowingAnimationMode="ColumnShowingAnimationMode.SlideFromBottomAndFadeIn" />
 ```
+
+## API メンバー
+
+ - `ColumnAddingAnimationMode`
+ - `ColumnExchangingAnimationMode`
+ - `ColumnHidingAnimationMode`
+ - `ColumnMovingAnimationMode`
+ - `ColumnPropertyUpdatingAnimation`

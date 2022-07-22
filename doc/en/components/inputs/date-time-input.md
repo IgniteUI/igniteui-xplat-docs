@@ -78,7 +78,7 @@ The `IgcDateTimeInputComponent` has intuitive keyboard navigation that makes it 
 
 ## Setting formats
 
-The `IgcDateTimeInput` supports different display and input formats. 
+The `IgcDateTimeInput` supports different display and input formats.
 
 It uses [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `displayFormat` is provided, the component will use the `inputFormat` as such.
 
@@ -157,14 +157,14 @@ Minute | `m` | Minimum digits | 1, 60
 || `mm` | Zero padded | 01, 60
 Second | `s` | Minimum digits | 1, 60
 || `ss` | Zero padded | 01, 60
-Time Period | `t` | Abbreviated | AM, PM 
+Time Period | `t` | Abbreviated | AM, PM
 || `tt` | Abbreviated | AM, PM
 || `ttt` | Short | noon
 || `tttt` | Long | noon
 || `ttttt` | Narrow | n
 
-> Note: 
-Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used. 
+> Note:
+Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
 
 ## Min/max value
 
@@ -251,3 +251,9 @@ Additional Web Components that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+
+ ## API Members
+
+ - `DateParts`
+ - `DateTimeInput`

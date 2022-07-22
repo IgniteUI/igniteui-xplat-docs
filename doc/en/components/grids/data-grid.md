@@ -424,7 +424,7 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 </iframe>
 <!-- end: Blazor -->
 
-### Additional Resources
+## Additional Resources
 
 - [Accessibility Compliance](data-grid-accessibility.md)
 - [Cell Activation](data-grid-cell-activation.md)
@@ -447,3 +447,7 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 <!-- React -->
 <!-- - [Row Paging](data-grid-row-paging.md) -->
 <!-- end: React -->
+
+ ## API Members
+
+ - `Grid`

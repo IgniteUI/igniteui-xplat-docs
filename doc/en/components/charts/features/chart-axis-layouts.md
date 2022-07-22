@@ -2,7 +2,7 @@
 title: $Platform$ Axis Layouts | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Axis Layouts
 _keywords: $Platform$ Axis, Layouts, Location, Position, Share, Multiple, Crossing, Infragistics
-mentionedTypes: [ "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
+mentionedTypes: [ "DomainChart", "CategoryChart", "XYChart", "DomainChart", "XamDataChart", "Axis", "AxisLabelSettings", "ScatterSplineSeries", "TimeXAxis" ]
 ---
 
 # $Platform$ Axis Layouts

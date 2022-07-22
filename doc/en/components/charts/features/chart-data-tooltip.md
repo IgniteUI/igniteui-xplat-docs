@@ -16,7 +16,7 @@ All properties of `DataToolTipLayer` are prefixed with **DataToolTip** and expos
 
 ## $Platform$ Data Tooltip Elements
 
-The **DataToolTip** displays content using a set of three types of rows and four types of columns. 
+The **DataToolTip** displays content using a set of three types of rows and four types of columns.
 
 ### $Platform$ Data Tooltip Rows
 
@@ -60,14 +60,14 @@ The units column displays an abbreviation symbol and/or unit text, which can be 
     - LowMemberAsLegendUnit="K"
     - HighMemberAsLegendUnit="K"
 - Radial Series:
-    - ValueMemberAsLegendUnit="km"    
+    - ValueMemberAsLegendUnit="km"
 - Polar Series:
     - RadiusMemberAsLegendUnit="km"
     - AngleMemberAsLegendUnit="degrees"
 
-For each of the above-listed properties, there is a corresponding `MemberAsLegendLabel` property as well to determine the text in the label columns mentioned previously.
+For the above-listed properties, there are corresponding properties ending with **MemberAsLegendLabel** to determine the text in the label columns mentioned previously.
 
-The columns included in the `DataToolTipIncludedColumns` and `DataToolTipExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip.    
+The columns included in the `DataToolTipIncludedColumns` and `DataToolTipExcludedColumns` collections generally correspond to the value paths of your underlying data items, but the financial series has the option to include some special ones in addition to the `High`, `Low`, `Open`, and `Close` paths that are required for the financial series to plot correctly. You have the ability to show `TypicalPrice`, `Change`, and `Volume` options within the tooltip.
 
 The following example demonstrates a data tooltip with the added columns of Open, High, Low, Close, and Change:
 
@@ -127,3 +127,27 @@ You can change the default decimal display of values within the **DataToolTip** 
            alt="$Platform$ Financial Chart Data Tooltip Formatting Currency Example"
            github-src="charts/financial-chart/data-tooltip-formatting-currency">
 </code-view>
+
+ ## API Members
+
+ - `DataToolTipExcludedColumns`
+ - `DataToolTipGroupedPositionModeX`
+ - `DataToolTipGroupedPositionModeY`
+ - `DataToolTipGroupingMode`
+ - `DataToolTipHeaderText`
+ - `DataToolTipIncludedColumns`
+ - `DataToolTipLabelTextColor`
+ - `DataToolTipLayer`
+ - `DataToolTipSummaryTitleText`
+ - `DataToolTipSummaryType`
+ - `DataToolTipTitleTextColor`
+ - `DataToolTipUnitsTextColor`
+ - `DataToolTipUnitsText`
+ - `DataToolTipValueFormatAbbreviation`
+ - `DataToolTipValueFormatCulture`
+ - `DataToolTipValueFormatMaxFractions`
+ - `DataToolTipValueFormatMaxFractions`
+ - `DataToolTipValueFormatMinFractions`
+ - `DataToolTipValueFormatMode`
+ - `DataToolTipValueTextColor`
+ - `MemberAsLegendLabel`

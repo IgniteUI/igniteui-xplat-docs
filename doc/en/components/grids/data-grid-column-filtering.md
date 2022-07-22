@@ -61,3 +61,13 @@ Since the operands are applied to the column they can be added in several ways, 
 </code-view>
 
 <div class="divider--half"></div>
+
+ ## API Members
+
+ - `DisplayName`
+ - `FilterExpressions`
+ - `FilterFactory`
+ - `FilterLogicalOperator`
+ - `FilterOperand`
+ - `FilterRequested`
+ - `FilterUIType`

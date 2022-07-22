@@ -297,3 +297,9 @@ igc-radio::part(control) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Form`
+ - `RadioGroup`
+ - `Radio`

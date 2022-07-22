@@ -103,6 +103,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Accordion",
+    "href": "layouts/accordion.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Avatar {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md"
@@ -142,6 +148,12 @@
     "exclude":  ["Angular", "React", "Blazor"],
     "name": "Expansion Panel",
     "href": "layouts/expansion-panel.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tabs",
+    "href": "layouts/tabs.md",
     "status": "NEW"
   },
   {
@@ -533,7 +545,6 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
     "name": "Chart API",
     "href": "charts/chart-api.md",
     "status": "UPDATED"
@@ -1131,10 +1142,52 @@
   },
   {
     "name": "Maps",
-    "header": true
+    "header": true,
+    "href": "geo-map.md",
+    "status": ""
   },
   {
-    "name": "Map",
+    "name": "Geographic Area Map",
+    "href": "geo-map-type-scatter-area-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Contour Map",
+    "href": "geo-map-type-scatter-contour-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic High Density Map",
+    "href": "geo-map-type-scatter-density-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Bubble Map",
+    "href": "geo-map-type-scatter-bubble-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Symbol Map",
+    "href": "geo-map-type-scatter-symbol-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Polygon Map",
+    "href": "geo-map-type-shape-polygon-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Polyline Map",
+    "href": "geo-map-type-shape-polyline-series.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Map API",
+    "href": "maps/map-api.md",
+    "status": ""
+  },
+  {
+    "name": "Geographic Map Features",
     "href": "geo-map.md",
     "status": "",
     "items": [
@@ -1193,46 +1246,6 @@
       {
         "name": "Navigating Map Content",
         "href": "geo-map-navigation.md",
-        "status": ""
-      },
-      {
-        "name": "Series Overview",
-        "href": "geo-map-type-series.md",
-        "status": ""
-      },
-      {
-        "name": "Scatter Area Series",
-        "href": "geo-map-type-scatter-area-series.md",
-        "status": ""
-      },
-      {
-        "name": "Scatter Contour Series",
-        "href": "geo-map-type-scatter-contour-series.md",
-        "status": ""
-      },
-      {
-        "name": "Scatter Density Series",
-        "href": "geo-map-type-scatter-density-series.md",
-        "status": ""
-      },
-      {
-        "name": "Scatter Proportional Series",
-        "href": "geo-map-type-scatter-bubble-series.md",
-        "status": ""
-      },
-      {
-        "name": "Scatter Symbol Series",
-        "href": "geo-map-type-scatter-symbol-series.md",
-        "status": ""
-      },
-      {
-        "name": "Shape Polygon Series",
-        "href": "geo-map-type-shape-polygon-series.md",
-        "status": ""
-      },
-      {
-        "name": "Shape Polyline Series",
-        "href": "geo-map-type-shape-polyline-series.md",
         "status": ""
       },
       {
@@ -1412,6 +1425,12 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
+    "name": "Mask Input {ReleaseStatus_WebsInputs}",
+    "href": "inputs/mask-input.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Date Time Input",
     "href": "inputs/date-time-input.md",
     "status": "NEW"
@@ -1425,6 +1444,12 @@
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Select {ReleaseStatus_WebsInputs}",
     "href": "inputs/select.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "href": "inputs/rating.md",
     "status": "NEW"
   },
   {

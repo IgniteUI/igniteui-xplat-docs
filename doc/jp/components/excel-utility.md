@@ -333,3 +333,9 @@ export class ExcelUtility {
     }
 }
 ```
+
+## API メンバー
+
+ - `WorkbookFormat`
+ - `WorkbookSaveOptions`
+ - `Workbook`

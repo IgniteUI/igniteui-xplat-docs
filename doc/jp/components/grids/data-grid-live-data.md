@@ -21,3 +21,6 @@ $ProductName$ Data Table / Data Grid は、1 秒間に何千もの更新を処�
            github-src="grids/data-grid/binding-live-data">
 </code-view>
 
+## API メンバー
+
+ - `Grid`

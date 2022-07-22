@@ -134,3 +134,33 @@ The `XamDataLegend` has three events that fire when rendering their correspondin
 - `StyleSummaryColumn`: This event fires once when rendering the summary column.
 
 Each of the above events exposes a `DataLegendStylingRowEventArgs` parameter as its arguments, which lets you customize each item's text, text color, and the overall visibility of the row. The event arguments also expose event-specific properties. For example, since the `StyleSeriesRow` event fires for each series, the event arguments will return the series index and series title for the row that represents the series.
+
+## API Members
+
+ - `ExcludedColumns`
+ - `ExcludedSeries`
+ - `HeaderFormatDate`
+ - `HeaderFormatTime`
+ - `HeaderText`
+ - `IncludedColumns`
+ - `IncludedSeries`
+ - `LabelDisplayMode`
+ - `LabelTextColor`
+ - `StyleHeaderRow`:
+ - `StyleSeriesColumn`:
+ - `StyleSeriesRow`
+ - `StyleSeriesRow`:
+ - `StyleSummaryColumn`:
+ - `StyleSummaryRow`:
+ - `SummaryTitleText`
+ - `SummaryType`
+ - `TitleTextColor`
+ - `UnitText`
+ - `UnitsTextColor`
+ - `ValueFormatAbbreviation`
+ - `ValueFormatCulture`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMaxFractions`
+ - `ValueFormatMinFractions`
+ - `ValueFormatMode`
+ - `ValueTextColor`

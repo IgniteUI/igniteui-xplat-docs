@@ -442,3 +442,15 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Avatar`
+ - `Button`
+ - `CardActions`
+ - `CardContent`
+ - `CardHeader`
+ - `CardMedia`
+ - `Card`
+ - `IconButton`
+ - `Icon`

@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Styling and Themes | $Platform$ Palettes | Infragistics
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Palettes, Styling
 mentionedTypes: ["Palettes"]
 ---
@@ -90,10 +90,10 @@ If you wanted to change the color variants for a color from the palette, you can
 /* The HSLA representation of orange (#ffa500) */
 /* hsla(38.8, 100%, 50%, 1); */
 :root {
-  --igc-primary-h: 38.8deg; 
-  --igc-primary-s: 100%; 
-  --igc-primary-l: 50%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 38.8deg;
+  --igc-primary-s: 100%;
+  --igc-primary-l: 50%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -150,18 +150,18 @@ Apart from having a single global palette, you can also create several palettes 
 ```css
 /* cornflowerblue hsl(218.5, 79.2%, 66.1%) */
 .blue-theme {
-  --igc-primary-h: 218.5deg; 
-  --igc-primary-s: 79.2%; 
-  --igc-primary-l: 66.1%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 218.5deg;
+  --igc-primary-s: 79.2%;
+  --igc-primary-l: 66.1%;
+  --igc-primary-a: 1;
 }
 
 /* brick red hsl(351.7, 57%, 52.5%) */
 .red-theme {
-  --igc-primary-h: 351.7deg; 
-  --igc-primary-s: 57%; 
-  --igc-primary-l: 52.5%; 
-  --igc-primary-a: 1; 
+  --igc-primary-h: 351.7deg;
+  --igc-primary-s: 57%;
+  --igc-primary-l: 52.5%;
+  --igc-primary-a: 1;
 }
 ```
 
@@ -180,9 +180,9 @@ To make this a bit clearer, below is the complete list of all `gray` and `surfac
   --igc-surface-500: 210deg, 17%, 98%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 98%;
@@ -205,9 +205,9 @@ To make this a bit clearer, below is the complete list of all `gray` and `surfac
   --igc-surface-500: 210deg, 11%, 15%, 1;
 
   /* gray variants */
-  --igc-gray-h: 210deg; 
-  --igc-gray-s: 11%; 
-  --igc-gray-l: 71%; 
+  --igc-gray-h: 210deg;
+  --igc-gray-s: 11%;
+  --igc-gray-l: 71%;
   --igc-gray-a: 1;
 
   --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 13%;
@@ -223,7 +223,7 @@ To make this a bit clearer, below is the complete list of all `gray` and `surfac
 }
 ```
 
-Be mindful when changing the `gray` and `surface` color variants as they are used in most components and have a big impact on their overall look and feel. 
+Be mindful when changing the `gray` and `surface` color variants as they are used in most components and have a big impact on their overall look and feel.
 
 ## Other Colors
 
@@ -237,3 +237,7 @@ So far we've covered the `primary`, `secondary`, `gray`, and `surface` color var
   --igc-error-500: 354deg, 70%, 54%, 1;
 }
 ```
+
+ ## API Members
+
+ - `Palettes`

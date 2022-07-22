@@ -303,3 +303,7 @@ export default class WorldConnections {
         public List<List<Point>> Points { get; set; }
     }
 ```
+
+ ## API Members
+
+ - `XamGeographicMap`

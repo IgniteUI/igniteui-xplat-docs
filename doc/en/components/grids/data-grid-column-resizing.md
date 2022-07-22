@@ -101,3 +101,12 @@ grid1.dataSource = data;
     <IgbTextColumn Field="City" />
 </IgbDataGrid>
 ```
+
+ ## API Members
+
+ - `ColumnResizingAnimationMode`
+ - `ColumnResizingMode`
+ - `ColumnResizingSeparatorBackground`
+ - `ColumnResizingSeparatorWidth`
+ - `Deferred`
+ - `Interpolate`

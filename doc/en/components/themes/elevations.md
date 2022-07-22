@@ -1,13 +1,13 @@
 ---
 title: $Platform$ Styling and Themes | $Platform$ Elevations | Infragistics
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Elevations, Styling
 mentionedTypes: ["Elevations"]
 ---
 
 # Elevations in $ProductName$
 
-The implementation of the Elevations in $ProductName$ is modeled after the [Elevations in Material Design](https://material.io/design/environment/elevation.html#elevation-in-material-design). They are used to establish and maintain functional boundaries between Document Object Model trees to enable better functional encapsulation. 
+The implementation of the Elevations in $ProductName$ is modeled after the [Elevations in Material Design](https://material.io/design/environment/elevation.html#elevation-in-material-design). They are used to establish and maintain functional boundaries between Document Object Model trees to enable better functional encapsulation.
 
 ## Overview
 
@@ -22,7 +22,7 @@ Here's a list of resting elevations as used in various components in $ProductNam
 | Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
 | Navdrawer                                       | 16                      | --igc-elevation-16 |
 
-As you can see from the `CSS Variable` column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
+As you can see from the **CSS Variable** column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
 
 ## Usage
 
@@ -63,7 +63,7 @@ You can shadow the globally set elevations for a specific scope only. We already
 ```css
 igc-snackbar,
 igc-toast {
-    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24); 
+    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -80,3 +80,7 @@ In addition to elevation levels, $ProductName$ exposes a CSS variable that makes
 ```
 
 The `--igc-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.
+
+## API Members
+
+ - `Elevations`

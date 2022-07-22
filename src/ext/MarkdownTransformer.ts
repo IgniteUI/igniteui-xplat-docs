@@ -293,7 +293,7 @@ function transformCodeRefs(options: any) {
                         }
                     }
                 }
-                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
+                // console.log("getApiLink " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
@@ -983,7 +983,7 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
-        // filePath: string,
+        filePath: string,
         callback: (err: any, results: string | null) => void): void {
 
         // check for strings that should be API links:
@@ -1057,14 +1057,25 @@ export class MarkdownTransformer {
             fileContent = codeViewers.join('<code-view');
         }
 
+        // resolving links to sample browsers: local, staging, production
+        // except for Angular because the main Angular repo will update these links
         if (this._platform === APIPlatform.Blazor ||
             this._platform === APIPlatform.React ||
             this._platform === APIPlatform.WebComponents) {
             // using 'samplesBrowsers' variable in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
-                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", this._envBrowser);
-                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", this._envBrowser);
+                let browserLink = this._envBrowser;
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
+
+                    // changing samples links to JP staging website in JP topics
+                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
+
+                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
+                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", browserLink);
             }
         }
 

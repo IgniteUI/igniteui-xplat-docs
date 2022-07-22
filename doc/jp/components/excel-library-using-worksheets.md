@@ -312,3 +312,21 @@ var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
 var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Documents.Excel.ConditionalFormatting.FormatConditionAboveBelow.AboveAverage);
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
+
+## API メンバー
+
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DisplayOptions`
+ - `FilterSettings`
+ - `ShowGridlines`
+ - `ShowRowAndColumnHeaders`
+ - `SortSettings`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetFilterSettings`
+ - `WorksheetSortSettings`
+ - `Worksheet`

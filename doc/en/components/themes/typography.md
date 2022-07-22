@@ -1,6 +1,6 @@
 ---
 title: $Platform$ Styling and Themes | $Platform$ Typography | Infragistics
-_description: 
+_description:
 _keywords: $ProductName$, Infragistics, Typography, Styling
 mentionedTypes: ["Typography"]
 ---
@@ -45,7 +45,7 @@ To change the font family in all components, all you have to do is overwrite the
 
 ### Changing type styles
 
-The type styles are used internally by most of the components in $ProductName$. For instance, the `igc-button` component uses the button type style. 
+The type styles are used internally by most of the components in $ProductName$. For instance, the `igc-button` component uses the button type style.
 To change any of the type style properties, we need to overwrite the corresponding CSS variable:
 
 ```css
@@ -56,4 +56,8 @@ To change any of the type style properties, we need to overwrite the correspondi
 }
 ```
 
-Keep in mind that this will update the global button typography styles. If you want to apply these changes to a specific button, you can make use of a class selector. 
+Keep in mind that this will update the global button typography styles. If you want to apply these changes to a specific button, you can make use of a class selector.
+
+ ## API Members
+
+ - `Typography`

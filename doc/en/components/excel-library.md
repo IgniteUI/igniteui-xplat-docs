@@ -6,7 +6,7 @@ mentionedTypes: ['Workbook']
 ---
 # $Platform$ Excel Library Overview
 
-The Infragistics $Platform$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like Workbooks, Worksheets, Cells, Formulas and many more. The Infragistics $Platform$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
+The Infragistics $Platform$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like `Workbook`, `Worksheet`, `Cell`, `Formula` and many more. The Infragistics $Platform$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
 ## $Platform$ Excel Library Example
 
@@ -214,3 +214,9 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 ```
 >
 <!-- -->
+
+ ## API Members
+
+ - `Load`
+ - `WorkbookInProcessRuntime`
+ - `Workbook`

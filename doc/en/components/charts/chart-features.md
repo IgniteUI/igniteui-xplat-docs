@@ -139,3 +139,7 @@ Use trendlines to identify a trend or find patterns in your data. There are many
 </code-view>
 
 <div class="divider--half"></div>
+
+ ## API Members
+
+ - `Grid`

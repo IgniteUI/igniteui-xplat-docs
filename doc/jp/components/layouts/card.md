@@ -443,3 +443,15 @@ igc-icon-button+igc-icon-button {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Avatar`
+ - `Button`
+ - `CardActions`
+ - `CardContent`
+ - `CardHeader`
+ - `CardMedia`
+ - `Card`
+ - `IconButton`
+ - `Icon`

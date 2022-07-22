@@ -102,7 +102,7 @@ You can use the `animationDuration` property on the `CircularProgress` component
 
 ### Gradient Progress
 
-Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops. 
+Customizing the progress bar in order to use a color gradient instead of a solid color could be done via the exposed `gradient` slot and `CircularGradient` which defines the gradient stops.
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -115,7 +115,7 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 >For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
 ```html
-<igc-circular-progress> 
+<igc-circular-progress>
     <igc-circular-gradient slot="gradient" offset="0%" color="#ff9a40"></igc-circular-gradient>
     <igc-circular-gradient slot="gradient" offset="50%" color="#1eccd4"></igc-circular-gradient>
     <igc-circular-gradient slot="gradient" offset="100%" color="#ff0079"></igc-circular-gradient>
@@ -124,9 +124,9 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 ```razor
 <IgbCircularProgress>
-    <IgbCircularGradient slot="gradient" Offset="0%"   Color="#ff9a40"/>        
-    <IgbCircularGradient slot="gradient" Offset="50%"  Color="#1eccd4"/>        
-    <IgbCircularGradient slot="gradient" Offset="100%" Color="#ff0079"/>        
+    <IgbCircularGradient slot="gradient" Offset="0%"   Color="#ff9a40"/>
+    <IgbCircularGradient slot="gradient" Offset="50%"  Color="#1eccd4"/>
+    <IgbCircularGradient slot="gradient" Offset="100%" Color="#ff0079"/>
 </IgbCircularProgress>
 ```
 
@@ -191,3 +191,10 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Button`
+ - `Calendar`
+ - `CircularGradient`
+ - `CircularProgress`

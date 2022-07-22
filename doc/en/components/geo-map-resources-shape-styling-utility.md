@@ -258,3 +258,8 @@ export class ShapeComparison {
   public strokeThickness?: number;
 }
 ```
+
+ ## API Members
+
+ - `GeographicShapeSeries`
+ - `XamGeographicMap`

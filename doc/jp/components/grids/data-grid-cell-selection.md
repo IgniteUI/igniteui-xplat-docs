@@ -55,3 +55,14 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 </code-view>
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `ModifierBased`
+ - `MultipleCell`
+ - `MultipleRow`
+ - `RangeCell`
+ - `SelectionBehavior`
+ - `SelectionMode`
+ - `SingleCell`
+ - `SingleRow`

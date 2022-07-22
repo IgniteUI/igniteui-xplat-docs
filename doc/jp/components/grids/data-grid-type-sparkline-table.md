@@ -157,3 +157,8 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
     </IgbTemplateColumn>
 </IgbDataGrid>
 ```
+
+## API メンバー
+
+ - `Grid`
+ - `XamSparkline`

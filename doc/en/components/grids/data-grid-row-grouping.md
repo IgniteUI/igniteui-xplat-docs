@@ -191,3 +191,10 @@ public connectedCallback() {
 }
 ```
 
+ ## API Members
+
+ - `Grid`
+ - `GroupDescriptions`
+ - `GroupHeaderDisplayMode`
+ - `IsGroupByAreaVisible`
+ - `IsGroupCollapsable`
