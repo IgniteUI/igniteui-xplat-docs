@@ -103,6 +103,12 @@
     "header": true
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Accordion",
+    "href": "layouts/accordion.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Avatar {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md"
