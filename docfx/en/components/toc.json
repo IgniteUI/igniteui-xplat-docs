@@ -145,6 +145,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Tabs",
+    "href": "layouts/tabs.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Menus",
     "header": true
