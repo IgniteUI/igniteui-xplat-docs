@@ -138,7 +138,7 @@ Furthermore, users can construct a displayFormat string using the supported symb
 
 Type | Format | Description | Example |
 |:---|:-------:|:-----------|:--------|
-Date | `d` | Minimum digits. | 7, 17 |
+Day of month | `d` | Minimum digits. | 7, 17 |
 || `dd` | Zero padded. | 07, 17 |
 Month | `M` | Minimum digits. | 3, 10 |
 || `MM` | Zero padded. | 03, 10 |
@@ -151,12 +151,12 @@ Year | `y` | Numeric | 2022
 || `yyyy` | Numeric  | 2022
 Hour 1-12 | `h` | Minimum digits | 1, 12
 || `hh` | Zero padded | 01, 12
-Hour 1-24 | `H` | Zero padded | 01, 23
+Hour 1-24 | `H` | Minimum digits | 1, 23
 || `HH` | Zero padded | 01, 23
-Minute | `m` | Minimum digits | 1, 60
-|| `mm` | Zero padded | 01, 60
-Second | `s` | Minimum digits | 1, 60
-|| `ss` | Zero padded | 01, 60
+Minute | `m` | Minimum digits | 1, 59
+|| `mm` | Zero padded | 01, 59
+Second | `s` | Minimum digits | 1, 59
+|| `ss` | Zero padded | 01, 59
 Time Period | `t` | Abbreviated | AM, PM
 || `tt` | Abbreviated | AM, PM
 || `ttt` | Short | noon
@@ -194,7 +194,7 @@ If all went well, the component will be `invalid` if the value is greater or low
 
 The `IgcDateTimeInputComponent` exposes public `stepUp` and `stepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
 
-In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `inputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/Down step.
+In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `inputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/stepDown step.
 
 Additionally, `spinDelta` is a property that can be used to apply a different delta to each date time segment. It will be applied when spinning with the keyboard, mouse wheel or with the `stepUp` and `stepDown` methods, as long as they don't have the delta parameter provided since it will take precedence over `spinDelta`.
 
