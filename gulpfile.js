@@ -93,16 +93,13 @@ function transformFiles() {
 
       var fileContent = file.contents.toString();
       var typeName = path.basename(path.dirname(file.path))
-
       console.log("- " + file.path);
-      //var typeName = "CategoryChart";
 
-      transformer.transformContent(typeName, fileContent, // file.path,
+      transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
         }
-        //console.log("HERE!!!");
         file.contents = Buffer.from(results);
 
         cb(null, file);
@@ -120,7 +117,6 @@ function transformStaticFiles(platformName) {
 
       var replacements = docs[platformName].replacements;
       //console.log(typeName);
-      //var typeName = "CategoryChart";
       for (var i = 0; i < replacements.length; i++) {
           fileContent = fileContent.replace(new RegExp(replacements[i].name, "gm"), replacements[i].value);
       }
@@ -205,7 +201,6 @@ function updateApiFor(platformName) {
         // let fileContent = JSON.stringify(jsonNodes).replace(/\[\,/g, '\[\,\n');
         let fileContent = JSON.stringify(jsonNodes);
         // changing JSON format to pretty-compact
-
         fileContent = fileContent.split('],"types":').join('],\n  "types":');
         fileContent = fileContent.split('{"originalName":').join('\n  { "originalName":');
         fileContent = fileContent.split('}],"members":[{').join('}],\n    "members":[{');
@@ -280,12 +275,81 @@ function updateApiSection(cb) {
 }
 exports.updateApiSection = updateApiSection;
 
+function verifyApiSections(cb) {
+    // ensureEnvironment();
+
+    gulp.src([
+    'doc/en/**/gantt-chart.md',
+    'doc/en/**/area-chart.md',
+    'doc/en/**/types/*.md',
+    'doc/en/**/features/chart-*.md',
+    'doc/en/**/geo-*.md',
+    'doc/en/**/excel-*.md',
+    'doc/en/**/spreadsheet-*.md',
+    'doc/en/**/*gauge.md',
+    'doc/en/**/bullet-*.md',
+    'doc/en/**/zoomslider-*.md',
+    'doc/en/**/grids/*.md',
+    'doc/en/**/editors/*.md',
+    'doc/en/**/inputs/*.md',
+    'doc/en/**/layouts/*.md',
+    'doc/en/**/notifications/*.md',
+    'doc/en/**/scheduling/*.md',
+    'doc/en/**/themes/*.md',
+    'doc/en/**/menus/*.md',
+    // 'doc/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var filePath = file.dirname + "\\" + file.basename
+        var fileContent = file.contents.toString();
+        var fileHasAPI = fileContent.indexOf(" API Members") > 0;
+        if (!fileHasAPI) {
+            let apiLinks = [];
+            let words = fileContent.split(' ');
+            for (const w of words) {
+                if (!apiLinks.includes(w) && w !== "" && w.indexOf('`') === 0) {
+                    apiLinks.push(w.replace(",","").replace(".","").replace(":",""));
+                }
+            }
+
+            let lines = fileContent.split("\n");
+            for (const line of lines) {
+                if (line.indexOf('mentionedTypes:') >= 0) {
+                    let items = line.replace("mentionedTypes:","").replace("[","").replace("]","").trim().split(",");
+                    for (const item of items) {
+                        if (!apiLinks.includes(item)) {
+                             let link = item.replace('"',"").replace('"',"").replace("'","").replace("'","").trim()
+                             apiLinks.push("`" + link + "`");
+                        }
+                    }
+                    break;
+                }
+            }
+
+            if (apiLinks.length > 0) {
+                apiLinks.sort();
+                console.log('missing API Section: ' + filePath + "\n ## API Members \n\n - " + apiLinks.join("\n - "));
+            }
+
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        cb();
+    })
+    .on("error", (err) => {
+        console.log("ERROR in verifyApiSections()");
+        cb(err);
+    });
+}
+exports.verifyApiSections = verifyApiSections;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;
     let apiPlatform = PLAT_API;
     log("=========================================================");
-    log("building " + PLAT + " docs for " + ENV_TARGET + " environment");
+    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
     ensureEnvironment();
 
     // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
@@ -337,37 +401,6 @@ function buildPlatform(cb) {
                '!doc/**/obsolete/*.md' // excluding old chart topics
             ];
             sources = sources.concat(topicExclusions);
-
-            // NOTE there is not need to exclude topics based on platform
-            // because they are already filtered based on build flags in toc.json
-
-            // if (platformName == "Angular") {
-            //     // excluding topics for controls that are not in Angular product, e.g. Data-grid
-            //     sources.push('!doc/**/layouts/*avatar*.md');
-            //     sources.push('!doc/**/layouts/*card*.md');
-            //     sources.push('!doc/**/layouts/*icon*.md');
-            //     sources.push('!doc/**/layouts/dock-manager*.md');
-            //     sources.push('!doc/**/grids/data-grid*.md');
-            //     sources.push('!doc/**/grids/grids.md');
-            //     sources.push('!doc/**/grids/list.md');
-            //     sources.push('!doc/**/editors/multi-column-combobox.md');
-            //     sources.push('!doc/**/editors/date-picker.md');
-            //     sources.push('!doc/**/inputs/*.md');     // e.g. badge, checkbox
-            //     sources.push('!doc/**/menus/*.md');      // e.g. nav-bar
-            //     sources.push('!doc/**/scheduling/*calendar*.md'); // e.g. calendar
-            // } else if (platformName == "Blazor") {
-            //     // excluding topics for controls that are not in Blazor product or API is broken for these components/features
-            //     // sources.push('!doc/**/dock-manager*.md');
-            //     sources.push('!doc/**/spreadsheet*.md');
-            //     // sources.push('!doc/**/excel*.md');
-            //     // sources.push('!doc/**/treemap*.md');
-            //     sources.push('!doc/**/general-cli*.md');
-            //     // sources.push('!doc/**/general-breaking-changes*.md');
-            //     // sources.push('!doc/**/data-chart-type-stacked*.md');
-            //     // sources.push('!doc/**/data-chart-type-scatter-polygon-series.md');
-            //     // sources.push('!doc/**/data-chart-type-scatter-polyline-series.md');
-            //     // sources.push('!doc/**/zoomslider*.md');
-            // }
 
         // uncomment to test faster build
         // sources.push('!doc/**/obsolete/**/*.md');
@@ -634,7 +667,6 @@ function buildSite(cb) {
 exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
-
 // functions for building Docfx for each platform:
 var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
 var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
@@ -722,7 +754,6 @@ function copyTemplateBackup(cb) {
 }
 exports.copyTemplateBackup = copyTemplateBackup;
 
-
 function verifyMarkdown(cb) {
     ensureEnvironment();
     if (transformer === null || transformer === undefined) {
@@ -774,5 +805,4 @@ function verifyMarkdown(cb) {
         if (cb) cb(err);
     });
 }
-
 exports.verifyMarkdown = verifyMarkdown;

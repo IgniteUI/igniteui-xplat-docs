@@ -43,3 +43,6 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
+ ## API Members
+
+ - `ConfigureTheme`

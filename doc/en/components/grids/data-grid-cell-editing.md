@@ -317,3 +317,11 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     }
 }
 ```
+
+## API Members
+
+ - `CellBatch`
+ - `EditModeClickAction`
+ - `EditMode`
+ - `SingleClick`
+ - `TransactionType`

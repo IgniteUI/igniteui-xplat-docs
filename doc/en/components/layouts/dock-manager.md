@@ -363,6 +363,109 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 
 <div class="divider--half"></div>
 
+## Customization
+
+The Dock Manager component provides the option to customize all buttons using slots and parts. To change any of the buttons you simply have to define your own element inside the Dock Manager and set the slot attribute to the corresponding identifier.
+
+Let's utilize these slots and parts to create a customized Dock Manager layout. First, we will provide our own icons, using the `closeButton`, `maximizeButton`, `minimizeButton`, `pinButton` and `unpinButton` slots:
+
+```html
+<igc-dockmanager id="dockManager">
+    <div slot="content1" class="dockManagerContent">Content 1</div>
+    <div slot="content2" class="dockManagerContent">Content 2</div>
+    <div slot="content3" class="dockManagerContent">Content 3</div>
+    <!-- ... -->
+
+    <button slot="closeButton">x</button>
+
+    <button slot="maximizeButton">
+        <img src="https://www.svgrepo.com/show/419558/arrow-top-chevron-chevron-top.svg" alt="" />
+    </button>
+
+    <button slot="minimizeButton">
+        <img src="https://www.svgrepo.com/show/419557/bottom-chevron-chevron-down.svg" alt="" />
+    </button>
+
+    <button slot="pinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+
+    <button slot="unpinButton">
+        <img src="https://www.svgrepo.com/show/154123/pin.svg" alt="" />
+    </button>
+</igc-dockmanager>
+```
+
+Then, we will use the exposed parts in our stylesheet. This way we have full control of the component's styling:
+
+```css
+igc-dockmanager::part(unpinned-tab-area) {
+    background: #bee9ec;
+}
+
+igc-dockmanager::part(unpinned-tab-area--left) {
+    border-right: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(unpinned-tab-area--bottom) {
+    border-top: 1px dashed #004d7a;
+}
+
+igc-dockmanager::part(tab-header-close-button),
+igc-dockmanager::part(pane-header-close-button) {
+    background-color: #e73c7e;
+}
+
+igc-dockmanager::part(pane-header-pin-button),
+igc-dockmanager::part(pane-header-unpin-button) {
+  background: rgb(218, 218, 218);
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+igc-dockmanager::part(tabs-maximize-button),
+igc-dockmanager::part(tabs-minimize-button),
+igc-dockmanager::part(pane-header-minimize-button),
+igc-dockmanager::part(pane-header-maximize-button) {
+  width: 24px;
+  height: 24px;
+  border: none;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0.3;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-left: 0px;
+}
+```
+
+If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
+
+<!-- WebComponents -->
+<code-view style="height: 700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
+           alt="$Platform$ Dock Manager Customize Buttons Example"
+           github-src="layouts/dock-manager/customize-buttons">
+</code-view>
+<!-- end: WebComponents -->
+
+Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
+
+Slot name | Description
+----------|------------
+`closeButton` | The close buttons.
+`moreTabsButton` | The more tabs buttons.
+`moreOptionsButton` | The more options buttons.
+`maximizeButton` | The maximize buttons.
+`minimizeButton` | The minimize buttons.
+`pinButton` | The pin buttons.
+`unpinButton` | The unpin buttons.
+`splitterHandle` | The splitter handle.
+
+You can find each slot's corresponding part in the **CSS Parts** under **Styling** section of this page.
+
 ## Keyboard Navigation
 
 Keyboard navigation enhances the accessibility of the **Dock Manager** and provides a rich variety of interactions to the end-user like navigating through all panes, splitting the view in multiple directions through docking the active pane, etc.
@@ -372,32 +475,32 @@ The shortcuts are as follows:
 
 ### Docking
 
-- <kbd>Cmd/Ctrl + Shift + Arrow up</kbd> Docks to global top
-- <kbd>Cmd/Ctrl + Shift + Arrow down</kbd> Docks to global bottom
-- <kbd>Cmd/Ctrl + Shift + Arrow right</kbd> Docks to global right
-- <kbd>Cmd/Ctrl + Shift + Arrow left</kbd> Docks to global left
-- <kbd>Shift + Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
-- <kbd>Shift + Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
-- <kbd>Shift + Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
-- <kbd>Shift + Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow up</kbd> Docks to global top
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow down</kbd> Docks to global bottom
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow right</kbd> Docks to global right
+- <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow left</kbd> Docks to global left
+- <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> With multiple tabs in a tab group splits the view and docks the focused tab above
+- <kbd>Shift</kbd> + <kbd>Arrow down</kbd> With multiple tabs in a tab group splits the view and docks the focused tab below
+- <kbd>Shift</kbd> + <kbd>Arrow right</kbd> With multiple tabs in a tab group splits the view and docks the focused tab right
+- <kbd>Shift</kbd> + <kbd>Arrow left</kbd> With multiple tabs in a tab group splits the view and docks the focused tab left
 
 ### Navigating
- - <kbd>Cmd/Ctrl + F6</kbd> / <kbd>Cmd/Ctrl + Arrow right</kbd> Focuses next tab in document host
- - <kbd>Cmd/Ctrl + Shift + F6</kbd> / <kbd>Cmd/Ctrl + Arrow left</kbd> Focuses previous tab in document host
- - <kbd>Alt + F6</kbd> Focuses next content pane
- - <kbd>Alt + Shift + F6</kbd> Focuses previous content pane
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow right</kbd> Focuses next tab in document host
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Arrow left</kbd> Focuses previous tab in document host
+ - <kbd>Alt</kbd> + <kbd>F6</kbd> Focuses next content pane
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> Focuses previous content pane
 
 ### Pane Navigator
 
 Тhe following keyboard shortcuts show a navigator from which you can iterate through panes and documents.
 
- - <kbd>Cmd/Ctrl + F7</kbd> / <kbd>Cmd/Ctrl + F8</kbd>  Starts from the first document forward
- - <kbd>Alt + F7</kbd> / <kbd>Alt + F8</kbd> Starts from the first pane forward
- - <kbd>Cmd/Ctrl + Shift + F7</kbd> / <kbd>Cmd/Ctrl + Shift + F8</kbd> Starts from the last document backwards
- - <kbd>Alt + Shift + F7</kbd> / <kbd>Alt + Shift + F8</kbd> Starts from the last pane backwards
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>F8</kbd>  Starts from the first document forward
+ - <kbd>Alt</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>F8</kbd> Starts from the first pane forward
+ - <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last document backwards
+ - <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> Starts from the last pane backwards
 
 ### Other
- - <kbd>Alt + F3</kbd> Closes the active pane
+ - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
 Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
 
@@ -457,7 +560,19 @@ Part name | Description
 `pane-navigator-items-group` | An items group in the pane navigator component.
 `pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
 `pane-navigator-item` | An item in the pane navigator.
-
+`pane-header-close-button` | The close button in the pane header.
+`pane-header-maximize-button` | The maximize button in the pane header.
+`pane-header-minimize-button` | The minimize button in the pane header.
+`pane-header-pin-button` | The pin button in the pane header.
+`pane-header-unpin-button` | The unpin button in the pane header.
+`tab-header-more-options-button` | The more options button in the tab header.
+`tab-header-close-button` | The close button in the tab header.
+`tabs-maximize-button` | The tabs maximize button.
+`tabs-minimize-button` | The tabs minimize button.
+`tabs-more-button` | The more tabs button.
+`context-menu-unpin-button` | The unpin button in the context menu.
+`context-menu-close-button` | The close button in the context menu.
+`splitter-handle` | The splitter handle.
 
 ### Themes
 
@@ -490,3 +605,6 @@ The Dock Manager exposes [`resourceStrings`]({environment:infragisticsBaseUrl}/p
 
 <!-- end: WebComponents -->
 
+ ## API Members
+
+ - `DockManager`

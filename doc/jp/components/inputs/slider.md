@@ -202,3 +202,19 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `HidePrimaryLabels`
+ - `HideSecondaryLabels`
+ - `HideTooltip`
+ - `PrimaryTicks`
+ - `RangeSlider`
+ - `SecondaryTicks`
+ - `SliderLabel`
+ - `Slider`
+ - `TickLabelRotation`
+ - `TickOrientation`
+ - `UpperBound`
+ - `ValueFormatOptions`
+ - `ValueFormat`

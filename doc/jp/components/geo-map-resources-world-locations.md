@@ -1290,3 +1290,7 @@ export default class WorldLocations {
         }
     }
 ```
+
+## API メンバー
+
+ - `XamGeographicMap`

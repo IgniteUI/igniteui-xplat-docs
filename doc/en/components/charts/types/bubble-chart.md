@@ -2,7 +2,7 @@
 title: $Platform$ Bubble Chart | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Bubble Chart
 _keywords: $Platform$ Charts, Bubble Chart, Infragistics
-mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries"]
+mentionedTypes: ["Series", "BubbleSeries", "ScatterSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 ---
 # $Platform$ Bubble Chart
@@ -11,7 +11,7 @@ The $ProductName$ Bubble Chart is a type of [Scatter Chart](scatter-chart.md) th
 
 ## $Platform$ Bubble Chart Example
 
-You can create the Bubble Chart in `XamDataChart` control using the `BubbleSeries` and two numeric axes, as shown in the example below.
+You can create $ProductName$ Bubble Chart in `XamDataChart` control using the `BubbleSeries` and two numeric axes, as shown in the example below.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

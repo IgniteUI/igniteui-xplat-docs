@@ -92,3 +92,9 @@ The following table summarized properties of the `BingMapsMapImagery` class:
 |`IsInitialized`|boolean|Represents the property that is set to True occurs when geographic imagery tiles from Bing Maps service have been initialized and they are ready for rendering in the map component.|
 |`SubDomains`|`SubDomainsCollection`|Represents an image collection of URI sub domains|
 |`TilePath`|string|Represents a property that sets the map tile image URI, this is the actual location of the Bing Maps|
+
+ ## API Members
+
+ - `BingMapsImageryStyle`
+ - `BingMapsMapImagery`
+ - `XamGeographicMap`

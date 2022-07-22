@@ -80,6 +80,24 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "パレット",
+    "href": "themes/palettes.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "エレベーション",
+    "href": "themes/elevations.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "タイポグラフィ",
+    "href": "themes/typography.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular"],
     "name": "レイアウト",
     "header": true
@@ -101,13 +119,13 @@
     "status": "",
     "items": [
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "ペインの更新",
         "href": "layouts/dock-manager-updating-panes.md",
         "status": ""
       },
       {
-        "exclude": ["Angular", "Blazor"],
+        "exclude": ["Angular"],
         "name": "フレームの埋め込み",
         "href": "layouts/dock-manager-embedding-frames.md",
         "status": ""
@@ -317,7 +335,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "ツリー",
     "href": "grids/tree.md",
     "status": "NEW"
@@ -515,10 +533,9 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
     "name": "チャート API",
     "href": "charts/chart-api.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
     "name": "チャート機能",
@@ -1113,10 +1130,52 @@
   },
   {
     "name": "マップ",
-    "header": true
+    "header": true,
+    "href": "geo-map.md",
+    "status": ""
   },
   {
-    "name": "マップ",
+    "name": "地理エリア マップ",
+    "href": "geo-map-type-scatter-area-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理等高線マップ",
+    "href": "geo-map-type-scatter-contour-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理高密度マップ",
+    "href": "geo-map-type-scatter-density-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理バブル マップ",
+    "href": "geo-map-type-scatter-bubble-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理記号マップ",
+    "href": "geo-map-type-scatter-symbol-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理ポリゴン マップ",
+    "href": "geo-map-type-shape-polygon-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理ポリライン マップ",
+    "href": "geo-map-type-shape-polyline-series.md",
+    "status": ""
+  },
+  {
+    "name": "地理マップ API",
+    "href": "maps/map-api.md",
+    "status": ""
+  },
+  {
+    "name": "地理マップの機能",
     "href": "geo-map.md",
     "status": "",
     "items": [
@@ -1175,46 +1234,6 @@
       {
         "name": "コンテンツのナビゲーション",
         "href": "geo-map-navigation.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズの概要",
-        "href": "geo-map-type-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布エリア シリーズ",
-        "href": "geo-map-type-scatter-area-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布等高線シリーズ",
-        "href": "geo-map-type-scatter-contour-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布高密度シリーズ",
-        "href": "geo-map-type-scatter-density-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布図比例シリーズ",
-        "href": "geo-map-type-scatter-bubble-series.md",
-        "status": ""
-      },
-      {
-        "name": "散布図記号シリーズ",
-        "href": "geo-map-type-scatter-symbol-series.md",
-        "status": ""
-      },
-      {
-        "name": "シェイプ ポリゴン シリーズ",
-        "href": "geo-map-type-shape-polygon-series.md",
-        "status": ""
-      },
-      {
-        "name": "シェイプ ポリライン シリーズ",
-        "href": "geo-map-type-shape-polyline-series.md",
         "status": ""
       },
       {
@@ -1391,6 +1410,12 @@
     "exclude": ["Angular", "React"],
     "name": "入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/input.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor", "WebComponents"],
+    "name": "日時入力",
+    "href": "inputs/date-time-input.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],

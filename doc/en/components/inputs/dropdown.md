@@ -36,12 +36,12 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
-import { 
+import {
     defineComponents,
     IgcDropdownComponent,
     IgcDropdownItemComponent,
     IgcDropdownHeaderComponent,
-    IgcDropdownGroupComponent 
+    IgcDropdownGroupComponent
 } from "igniteui-webcomponents";
 
 defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
@@ -162,3 +162,11 @@ You can change the appearance of the Dropdown and its items, by using the expose
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API Members
+
+ - `Disabled`
+ - `DropdownGroup`
+ - `DropdownHeader`
+ - `DropdownItem`
+ - `Dropdown`

@@ -20,3 +20,6 @@ The $ProductName$ Data Table / Data Grid is able to handle thousands of updates 
            github-src="grids/data-grid/binding-live-data">
 </code-view>
 
+ ## API Members
+
+ - `Grid`

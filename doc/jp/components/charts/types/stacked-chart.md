@@ -2,7 +2,7 @@
 title: $Platform$ 積層型チャート | データ可視化 | インフラジスティックス
 _description: インフラジスティックスの $Platform$ 積層型チャート
 _keywords: $Platform$ Charts, Stacked Chart, Stacked 100% Chart, Infragistics, $Platform$ チャート, 積層型チャート, 積層型 100% チャート, インフラジスティックス
-mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries"]
+mentionedTypes: ["XamDataChart", "StackedAreaSeries", "Stacked100AreaSeries", "StackedBarSeries", "Stacked100BarSeries", "StackedColumnSeries", "Stacked100ColumnSeries", "StackedLineSeries", "Stacked100LineSeries", "StackedSplineSeries", "Stacked100SplineSeries", "StackedSplineAreaSeries", "Stacked100SplineAreaSeries", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---

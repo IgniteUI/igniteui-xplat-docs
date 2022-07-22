@@ -201,3 +201,12 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
     chart4.setSourceData(dataCellAddress, true);
 });
 ```
+
+ ## API Members
+
+ - `AddChart`
+ - `ChartAdapter`
+ - `SpreadsheetChartAdapter`
+ - `Spreadsheet`
+ - `Workbook`
+ - `XamSpreadsheet`

@@ -199,3 +199,7 @@ igc-chip::part(suffix) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `Chip`

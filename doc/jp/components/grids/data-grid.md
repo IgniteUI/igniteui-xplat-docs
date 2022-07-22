@@ -425,7 +425,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 </iframe>
 <!-- end: Blazor -->
 
-### その他のリソース
+## その他のリソース
 
 - [アクセシビリティの遵守](data-grid-accessibility.md)
 - [セルのアクティブ化](data-grid-cell-activation.md)
@@ -448,3 +448,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 <!-- React -->
 <!-- - [行のページング](data-grid-row-paging.md) -->
 <!-- end: React -->
+
+## API メンバー
+
+ - `Grid`

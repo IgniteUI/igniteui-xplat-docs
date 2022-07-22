@@ -2,7 +2,7 @@
 title: $Platform$ Chart Performance | Data Visualization | Infragistics
 _description: Infragistics' $Platform$ Chart Performance
 _keywords: $Platform$ Charts, Performance, Infragistics
-mentionedTypes: ["CategoryChart", "FinancialChart", "XamDataChart"]
+mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
 ---
 

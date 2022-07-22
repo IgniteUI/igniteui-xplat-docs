@@ -161,3 +161,15 @@ table.Columns[0].SortCondition = new Infragistics.Documents.Excel.Sorting.Ordere
 table.SortSettings.SortConditions.Add(table.Columns[0], new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
 ```
 
+ ## API Members
+
+ - `DeleteColumns`
+ - `DeleteDataRows`
+ - `FillFilter`
+ - `InsertColumns`
+ - `InsertDataRows`
+ - `SortConditions`
+ - `SortSettings`
+ - `Tables`
+ - `WorksheetTableStyle`
+ - `WorksheetTable`

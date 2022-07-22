@@ -13,6 +13,8 @@ _language: ja
 
 このサンプルは、ポップアップ ウィンドウの複数の列にデータを表示する `MultiColumnComboBox` を作成する方法を示しています。
 
+<!-- Blazor -->
+
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
@@ -20,7 +22,17 @@ _language: ja
            github-src="editors/multi-column-combobox/overview">
 </code-view>
 
+<!-- end:Blazor -->
+
 <!-- Angular, React, WebComponents -->
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
+           alt="$Platform$ 複数列コンボ ボックスの例"
+           github-src="editors/multi-column-combobox/overview">
+</code-view>
+
 ## 依存関係
 Chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
@@ -273,3 +285,16 @@ constructor() {
     }
 }
 ```
+
+## API メンバー
+
+ - `DataSource`
+ - `Fields`
+ - `GetValueAsync`
+ - `GetValue`
+ - `MultiColumnComboBox`
+ - `Placeholder`
+ - `SortMode`
+ - `TextField`
+ - `ValueChanged`
+ - `ValueField`
