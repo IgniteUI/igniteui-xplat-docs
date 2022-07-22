@@ -1422,7 +1422,7 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Select {ReleaseStatus_WebsInputs}",
     "href": "inputs/select.md",
     "status": "NEW"
