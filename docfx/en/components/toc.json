@@ -1435,6 +1435,12 @@
     "href": "inputs/radio.md"
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "href": "inputs/rating.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Switch {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md"
