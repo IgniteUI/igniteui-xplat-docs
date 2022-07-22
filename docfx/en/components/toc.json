@@ -1424,14 +1424,14 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React", "Blazor"], 
     "name": "Mask Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/mask-input.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Date Time Input",
+    "exclude": ["Angular", "React", "Blazor"], 
+    "name": "Date Time Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/date-time-input.md",
     "status": "NEW"
   },
