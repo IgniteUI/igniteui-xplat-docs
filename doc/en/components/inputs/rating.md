@@ -47,15 +47,30 @@ This will create a five-star rating component that can be used to input and read
 
 ## Using Custom Symbols
 
-The `Rating` component allows you to use custom symbols in place of the default star symbol. If you want to use a different symbol, like SVG, icon or another unicode symbol, you should place the `RatingSymbol` between the opening and closing brackets of the `Rating`:
+The `Rating` component allows you to use custom symbols in place of the default star symbols. If you want to use a different symbol, like SVG, icon or another unicode symbol, you should place `RatingSymbol` components between the opening and closing brackets of the `Rating`:
 
 ```html
 <igc-rating>
-  <igc-rating-symbol>💙</igc-rating-symbol>
-  <igc-rating-symbol>💙</igc-rating-symbol>
-  <igc-rating-symbol>💙</igc-rating-symbol>
-  <igc-rating-symbol>💙</igc-rating-symbol>
-  <igc-rating-symbol>💙</igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>💙</div>
+    <div slot="empty">💙</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>💙</div>
+    <div slot="empty">💙</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>💙</div>
+    <div slot="empty">💙</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>💙</div>
+    <div slot="empty">💙</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>💙</div>
+    <div slot="empty">💙</div>
+  </igc-rating-symbol>
 </igc-rating>
 ```
 
@@ -65,18 +80,33 @@ The `Rating` component allows you to use custom symbols in place of the default 
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] Placing rating symbols between the opening and closing brackets of the rating component determines the max value to be used.
+> [!NOTE] The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
 
 ## Single Selection
 The $ProductName$ Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user. 
 
 ```html
 <igc-rating single>
-  <igc-rating-symbol>😣</igc-rating-symbol>
-  <igc-rating-symbol>😔</igc-rating-symbol>
-  <igc-rating-symbol>😐</igc-rating-symbol>
-  <igc-rating-symbol>🙂</igc-rating-symbol>
-  <igc-rating-symbol>😆</igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>😣</div>
+    <div slot="empty">😣</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>😔</div>
+    <div slot="empty">😔</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>😐</div>
+    <div slot="empty">😐</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>🙂</div>
+    <div slot="empty">🙂</div>
+  </igc-rating-symbol>
+  <igc-rating-symbol>
+    <div>😆</div>
+    <div slot="empty">😆</div>
+  </igc-rating-symbol>
 </igc-rating>
 ```
 
@@ -89,12 +119,12 @@ The $ProductName$ Rating component has a single selection mode that allows users
 > [!NOTE] Keep in mind that the `step` attribute doesn't work with single selection mode.
 
 ## Empty & Selected 
-The $ProductName$ Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. To use this feature, you should provide a pair of icons for each rating symbol. For instance:
+The $ProductName$ Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. It is mandatory to provide 2 icons for each slot(empty and full) when declaring a symbol, even if they are the same. For instance:
 
 ```html
 <igc-rating-symbol>
   <igc-icon collection="default" name="bandage"></igc-icon>
-  <igc-icon collection="default" name="bacteria" empty></igc-icon>
+  <igc-icon collection="default" name="bacteria" slot="empty"></igc-icon>
 </igc-rating-symbol>
 ```
 
@@ -105,6 +135,10 @@ The $ProductName$ Rating component allows users to use different icons/elements 
 </code-view>
 
 ## Configuration
+
+#### Single
+
+Turns on the `single` visual mode for the rating. Useful when using symbols that communicate unique values, like feedback emoji faces.
 
 #### Value
 
@@ -131,7 +165,7 @@ The `hover-preview` attribute makes the component show the possible outcome of u
 
 #### Read-Only
 
-The `read-only` attribute allows the users to set the `Rating` in read-only mode. This attribute is useful when you want to use the component for information purposes only.
+The `readonly` attribute allows the users to set the `Rating` in read-only mode. This attribute is useful when you want to use the component for information purposes only.
 
 #### Disabled
 
@@ -161,7 +195,7 @@ The `igcChange` event is fired when the selected value changes.
 
 ## Styling
 
-The `Rating` component provides base, label, symbol-Wrapper, and symbol that allow you to style the component symbols and its encompassing label.
+The `Rating` component provides base, label, value-label, symbols, and symbol that allow you to style the component symbols and its encompassing label.
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
