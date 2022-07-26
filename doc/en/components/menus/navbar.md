@@ -37,6 +37,12 @@ Before using the `Navbar`, you need to register it as follows:
 IgbNavbarModule.Register(IgniteUIBlazor);
 ```
 
+```ts
+import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcNavbarComponent);
+```
+
 <!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Navbar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -47,21 +53,43 @@ You will also need to link an additional CSS file to apply the styling to the `N
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+<!-- React -->
 
-defineComponents(IgcNavbarComponent);
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
 ```
 
+You will then need to import the `Navbar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavbarModule.register();
+```
+
+<!-- end: React -->
 
 Then in the template of `Navbar`, you can add the following code to show a basic `Navbar` with a title only:
+
+<!-- WebComponents -->
 
 ```html
 <igc-navbar>Navigation Title</igc-navbar>
 ```
 
+<!-- end: WebComponents -->
+
 ```razor
 <IgbNavbar>Navigation Title</IgbNavbar>
+```
+
+```tsx
+<IgrNavbar>
+    <span>Navigation Title</span>
+</IgrNavbar>
 ```
 
 ## Content
@@ -136,6 +164,13 @@ Our community is active and always welcoming to new ideas.
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 
