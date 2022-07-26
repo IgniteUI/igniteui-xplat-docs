@@ -26,20 +26,12 @@ In this basic $ProductName$ Tree example, you can see how to define a tree and i
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
-
-<!-- Blazor -->
-You will also need to link an additional CSS file to apply the styling to the `Tree` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
-
-```razor
-<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
-```
-<!-- end: Blazor -->
 
 Before using the `Tree`, you need to register it as follows:
 
@@ -48,6 +40,37 @@ import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconCompone
 
 defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Tree`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrTreeModule, IgrTree, IgrTreeItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrTreeModule.register();
+```
+
+<!-- end: React -->
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Tree` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```razor
 IgbTreeModule.Register(IgniteUIBlazor);
@@ -60,6 +83,8 @@ The simplest way to start using the `Tree` is as follows:
 `TreeItem` is the representation of every item that belongs to the `Tree`.
 Items provide `disabled`, `active`, `selected` and `expanded` properties, which give you opportunity to configure the states of the item as per your requirement.
 The `value` property can be used to add a reference to the data entry the item represents.
+
+<!-- WebComponents, Blazor -->
 
 Items can be declared using one of the following approaches.
 
@@ -88,6 +113,8 @@ Items can be declared using one of the following approaches.
     }
 </IgbTree>
 ```
+
+<!-- end: WebComponents, Blazor -->
 
 Items can be bound to a data model so that their expanded and selected states are reflected in the underlying data as well.
 
@@ -136,11 +163,32 @@ In order to render a tree you do not necessarily need a data set - individual it
 </IgbTree>
 ```
 
+```tsx
+<IgrTree>
+    <IgrTreeItem label='North America'>
+        <IgrTreeItem label='United States' />
+        <IgrTreeItem label='Canada' />
+        <IgrTreeItem label='Mexico' />
+    </IgrTreeItem>
+    <IgrTreeItem label='South America'>
+        <IgrTreeItem label='Brazil' />
+        <IgrTreeItem label='Uruguay' />                        
+    </IgrTreeItem>
+    <IgrTreeItem label='Europe'>
+        <IgrTreeItem label='United Kingdom' />
+        <IgrTreeItem label='Germany' />
+        <IgrTreeItem label='Bulgaria' />
+    </IgrTreeItem>
+</IgrTree>
+```
+
 > [!NOTE]
 > You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
 
 ### Item Interactions
+
 The `Tree` provides the following API methods for item interactions:
+
 - `expand` - expands all items. If an items array is passed, expands only the specified items.
 - `collapse` - collapses all items. If an items array is passed, collapses only the specified items.
 - `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
@@ -151,17 +199,27 @@ The `Tree` provides the following API methods for item interactions:
 In order to setup item selection in the $ProductName$ Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
+
 In the `Tree` by default item selection is disabled. Users cannot select or deselect an item through UI interaction, but these actions can still be completed through the provided API method.
+
 ### Multiple
+
 To enable multiple item selection in the `Tree` just set the `selection` property to **multiple**. This will render a checkbox for every item. Each item has two states - selected or not. This mode supports multiple selection.
+
 ```html
 <igc-tree selection="multiple">
 </igc-tree>
 ```
+
 ```razor
 <IgbTree Selection=TreeSelection.Multiple>
 </IgbTree>
 ```
+
+```tsx
+<IgrTree selection="multiple" />
+```
+
 ### Cascade
 To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item.
 
@@ -169,10 +227,16 @@ To enable cascade item selection in the `Tree`, just set the selection property 
 <igc-tree selection="Cascade">
 </igc-tree>
 ```
+
 ```razor
 <IgbTree Selection=TreeSelection.Multiple>
 </IgbTree>
 ```
+
+```tsx
+<IgrTree selection="cascade" />
+```
+
 In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
 
 ## Keyboard Navigation
@@ -203,6 +267,7 @@ When selection is enabled, end-user selection of items is only allowed through t
  - <kbd>Shift + Click</kbd> - when performed on the item checkbox, toggles selection of all items between the active one and the one clicked while holding Shift if selection is enabled
 
 <!-- WebComponents -->
+
 ## $Platform$ Tree Load On Demand
 
 The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
@@ -219,6 +284,7 @@ After the user clicks the expand icon, it is replaced by a loading indicator. Wh
 You can provide a custom slot content for the loading area using the `loadingIndicator` slot. If such slot is not defined, the `CircularProgress` is used.
 
 <!-- end: WebComponents -->
+
 ## Styling
 
 You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
@@ -274,13 +340,17 @@ igc-tree-item::part(active selected) {
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 * [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
-<!-- end: Blazor>
+
+<!-- end: Blazor -->
 
 <!-- React -->
+
 * [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
 <!-- end: React -->
 
 ## API Members

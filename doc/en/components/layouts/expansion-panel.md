@@ -27,7 +27,6 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 Before using the `ExpansionPanel`, you need to register it as follows:
 
@@ -37,8 +36,30 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 defineComponents(IgcExpansionPanelComponent);
 ```
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `ExpansionPanel`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrExpansionPanel, IgrExpansionPanelModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrExpansionPanelModule.register();
+```
+
+<!-- end: React -->
+
 The simplest way to start using the `ExpansionPanel` is as follows:
 
+<!-- WebComponents -->
 ```html
 <igc-expansion-panel>
     <div slot="title">Golden Retriever</div>
@@ -51,18 +72,54 @@ The simplest way to start using the `ExpansionPanel` is as follows:
     </div>
 </igc-expansion-panel>
 ```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrExpansionPanel>
+    <h1 slot="title">Golden Retriever</h1>
+    <h3 slot="subtitle">Medium-large gun dog</h3>
+    <span>The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
+        and upland game birds, during hunting and shooting parties.[3] The name retriever refers to the breeds ability
+        to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and
+        are easy to train to basic or advanced obedience standards.</span>
+</IgrExpansionPanel>
+```
 
 ## Binding to events
 
 The Expansion Panel component raises the following events:
+
+<!-- WebComponents -->
+
 - igcClosed - Raised when the expansion panel is collapsed
-- igcOpeneded - Raised when the expansion panel is expanded
+- igcOpened - Raised when the expansion panel is expanded
 - igcClosing - Raised when the expansion panel starts collapsing
 - igcOpening - Raised when the expansion panel starts expanding
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+- Closed - Raised when the expansion panel is collapsed
+- Opened - Raised when the expansion panel is expanded
+- Closing - Raised when the expansion panel starts collapsing
+- Opening - Raised when the expansion panel starts expanding
+
+<!-- end: React -->
+
 The following sample demonstrates how we can add some logic to our component to make it show/hide the `subtitle` depending on the current state of the panel.
 
+<!-- WebComponents -->
+
 We can do this by binding to the `igcOpened` and `igcClosed` event emitters:
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+We can do this by binding to the `Opened` and `Closed` events:
+
+<!-- end: React -->
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -74,9 +131,9 @@ We can do this by binding to the `igcOpened` and `igcClosed` event emitters:
 <div class="divider--half"></div>
 
 ## Component Customization
-The `IgcExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
+The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
 
-The `IgcExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
+The `ExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 
 Configuring the position of the expansion indicator can be done through the `indicatorAlignment` property of the Expansion Panel. The possible options are **start**, **end** or **none**.
 
@@ -122,7 +179,6 @@ The $ProductName$ Expansion Panel component exposes several CSS parts (`header`,
 For more detailed information regarding the Expansion Panel's API, refer to the following links:
 * `ExpansionPanel`
 
-
 <!-- end: WebComponents -->
 
 <div class="divider"></div>
@@ -135,6 +191,13 @@ For more detailed information regarding the Expansion Panel's API, refer to the 
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

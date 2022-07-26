@@ -24,12 +24,33 @@ This sample demonstrates how to create `NavDrawer` component.
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `NavDrawer`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrNavDrawerModule, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavDrawerModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `NavDrawer`, you need to register it as follows:
 
@@ -91,6 +112,26 @@ The simplest way to start using the `NavDrawer` is as follows:
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer open={true}>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
@@ -146,6 +187,33 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
         <span slot="content">Search</span>
     </IgbNavDrawerItem>
 </IgbNavDrawer>
+```
+
+```tsx
+<IgrNavbar>
+    <div slot="start">
+        <IgrIcon iconName="menu" collection="material"/>
+    </div>
+    <h2>Home</h2>
+</IgrNavbar>
+
+<IgrNavDrawer>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
 ```
 
 Let's also add some radio buttons to display all `position` values. This way whenever one gets selected, we will change the position of the drawer.
@@ -219,6 +287,31 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="start" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Start</span>
+    </IgrRadio>
+    <IgrRadio value="end" labelPosition="after" change={this.onRadioChange}>
+        <span>End</span>
+    </IgrRadio>
+    <IgrRadio value="top" labelPosition="after" change={this.onRadioChange}>
+        <span>Top</span>
+    </IgrRadio>
+    <IgrRadio value="bottom" labelPosition="after" change={this.onRadioChange}>
+        <span>Bottom</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrNavDrawer position={this.state.drawerPosition} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ drawerPosition: e.value });
+    }
+}
+```
+
 And finally, we need a way to open and close our navigation drawer. There are a couple of ways to achieve this, but for the sake of this example we will do the following:
 
 ```ts
@@ -243,6 +336,14 @@ public void OnMenuIconClick()
     if(this.NavDrawerRef != null)
     {
         this.NavDrawerRef.Show();
+    }
+}
+```
+
+```tsx
+public onMenuIconClick() {
+    if (this.navDrawerRef) {
+        this.navDrawerRef.show();
     }
 }
 ```
@@ -304,6 +405,35 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
         </IgbNavDrawerItem>
     </div>
 </IgbNavDrawer>
+```
+
+```tsx
+<IgrNavDrawer>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material"/>
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+    <div slot="mini">
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="home" collection="material"/>
+            </div>                                
+        </IgrNavDrawerItem>
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="search" collection="material" />
+            </div>                                
+        </IgrNavDrawerItem>
+    </div>
+</IgrNavDrawer>
 ```
 
 And here's the result:
@@ -374,6 +504,13 @@ Additional Web Components that were used:
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

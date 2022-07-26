@@ -34,6 +34,25 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `List`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrListModule, IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrListModule.register();
+```
+
+<!-- end: React -->
+
 Before using the `List`, you need to register it as follows:
 
 ```razor
@@ -55,8 +74,6 @@ import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemC
 
 defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
 ```
-
-The simplest way to start using the `List` is as follows:
 
 
 ### Add List Items
@@ -91,6 +108,23 @@ Now, we can add the following code to get a simple list of items:
         <h2 slot="title">Item 3</h2>
     </IgbListItem>
 </IgbList>
+```
+
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Header</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgrListItem>
+</IgrList>
 ```
 
 If all went well, you should see the following in your browser:
@@ -142,6 +176,26 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
         <span slot="subtitle">859-496-2817</span>
     </IgbListItem>
 </IgbList>
+```
+
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgrListItem>
+</IgrList>
 ```
 
 After implementing the above code, our list component should now look like the following:
@@ -233,6 +287,65 @@ We can use some of our other components in conjunction with the `List` component
 </IgbList>
 ```
 
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" shape="circle" />
+        </div>                        
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+</IgrList>
+```
+
 The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case the `Avatar` component, will also be provided with a default position and spacing.
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use `Button` components.
@@ -289,6 +402,28 @@ this.radioGroup.addEventListener('click', (radio: any) => {
                     break;
                 }
         }
+    }
+}
+```
+
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="small" labelPosition="after" change={this.onRadioChange}>
+        <span>Small</span>
+    </IgrRadio>
+    <IgrRadio value="medium" labelPosition="after" change={this.onRadioChange}>
+        <span>Medium</span>
+    </IgrRadio>
+    <IgrRadio value="large" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Large</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrList size={this.state.listSize} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ listSize: e.value });
     }
 }
 ```
@@ -363,6 +498,13 @@ Additional components that were used:
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

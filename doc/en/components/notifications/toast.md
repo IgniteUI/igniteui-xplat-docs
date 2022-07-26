@@ -24,12 +24,33 @@ This sample demonstrates how to create `Toast` component.
 ### Usage
 
 <!-- WebComponents -->
+
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Toast`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrToastModule, IgrToast } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrToastModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Toast`, you need to register it as follows:
 
@@ -44,11 +65,13 @@ defineComponents(IgcToastComponent);
 ```
 
 <!-- Blazor -->
+
 You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 The simplest way to display the toast component is to use its `Show` method and call it on a button click.
@@ -77,6 +100,27 @@ The simplest way to display the toast component is to use its `Show` method and 
         {
             this.ToastRef.Show();
         }
+    }
+}
+```
+
+```tsx
+<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+    <span>Show Toast</span>
+</IgrButton>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onShowButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.show();
     }
 }
 ```
@@ -139,6 +183,47 @@ By default, the toast component is hidden automatically after a period specified
 }
 ```
 
+```tsx
+<div>
+    <IgrButton variant="contained" clicked={this.onToggleButtonClicked}>
+        <span>Toggle Toast</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onKeepOpenButtonClicked}>
+        <span>Toggle keepOpen Property</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onDisplayTimeButtonClicked}>
+        <span>Set DisplayTime to 8000</span>
+    </IgrButton>
+</div>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onToggleButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.toggle();
+    }
+}
+
+public onKeepOpenButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.keepOpen = !this.toastRef.keepOpen;
+    }
+}
+
+public onDisplayTimeButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.displayTime = 8000;
+    }
+}
+```
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
@@ -179,6 +264,13 @@ igc-toast {
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 
