@@ -12,7 +12,7 @@ The $ProductName$ Radio component allows the user to select a single option from
 
 ## $ProductName$ Radio Example
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example"
            github-src="inputs/radio/group">
@@ -193,7 +193,7 @@ You can use the `checked` attribute to toggle on the radio.
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
            alt="$Platform$ Radio Example"
@@ -254,7 +254,7 @@ You can use the `disabled` attribute to disable the radio.
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
            alt="$Platform$ Radio Example"
