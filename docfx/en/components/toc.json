@@ -1370,26 +1370,22 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Checkbox {ReleaseStatus_WebsInputs}",
-    "href": "inputs/checkbox.md"
+    "name": "Checkbox {ReleaseStatus_WebsInputs}"
   },
   {
     "exclude": ["Angular"],
     "name": "Circular Progress",
-    "href": "inputs/circular-progress.md",
-     "status": "NEW"
+    "href": "inputs/circular-progress.md"
   },
   {
     "exclude": ["Angular"],
     "name": "Chip {ReleaseStatus_WebsInputs}",
-    "href": "inputs/chip.md",
-    "status": "NEW"
+    "href": "inputs/chip.md"
   },
   {
     "exclude": ["Angular"],
     "name": "Dropdown {ReleaseStatus_WebsInputs}",
-    "href": "inputs/dropdown.md",
-    "status": "NEW"
+    "href": "inputs/dropdown.md"
   },
   {
     "exclude": ["Angular"],
@@ -1409,8 +1405,7 @@
   {
     "exclude": ["Angular"],
     "name": "Linear Progress",
-    "href": "inputs/linear-progress.md",
-    "status": "NEW"
+    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],
@@ -1426,14 +1421,12 @@
   {
     "exclude": ["Angular", "React", "Blazor"], 
     "name": "Mask Input {ReleaseStatus_WebsInputs}",
-    "href": "inputs/mask-input.md",
-    "status": "NEW"
+    "href": "inputs/mask-input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"], 
     "name": "Date Time Input {ReleaseStatus_WebsInputs}",
-    "href": "inputs/date-time-input.md",
-    "status": "NEW"
+    "href": "inputs/date-time-input.md"
   },
   {
     "exclude": ["Angular"],
@@ -1443,14 +1436,12 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Select {ReleaseStatus_WebsInputs}",
-    "href": "inputs/select.md",
-    "status": "NEW"
+    "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Rating {ReleaseStatus_WebsInputs}",
-    "href": "inputs/rating.md",
-    "status": "NEW"
+    "href": "inputs/rating.md"
   },
   {
     "exclude": ["Angular"],
@@ -1469,8 +1460,7 @@
   {
     "exclude": ["Angular"],
     "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
-    "href": "inputs/slider.md",
-    "status": "NEW"
+    "href": "inputs/slider.md"
   },
   {
     "exclude": ["Blazor"],
@@ -1486,14 +1476,12 @@
   {
     "exclude": ["Angular"],
     "name": "Snackbar {ReleaseStatus_WebsInputs}",
-    "href": "notifications/snackbar.md",
-    "status": "NEW"
+    "href": "notifications/snackbar.md"
   },
   {
      "exclude": ["Angular"],
      "name": "Toast {ReleaseStatus_WebsInputs}",
-     "href": "notifications/toast.md",
-     "status": "NEW"
+     "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular"],
