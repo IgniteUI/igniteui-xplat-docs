@@ -1370,7 +1370,8 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Checkbox {ReleaseStatus_WebsInputs}"
+    "name": "Checkbox {ReleaseStatus_WebsInputs}",
+    "href": "inputs/checkbox.md"
   },
   {
     "exclude": ["Angular"],
