@@ -26,22 +26,50 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Slider` and `RangeSlider`, you need to register them as follows:
+
+```ts
+import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Slider` and `RangeSlider`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrSliderModule.register();
+IgrRangeSliderModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 Before using the `Slider` and `RangeSlider`, you need to register them as follows:
 
 ```razor
 IgbSliderModule.Register(IgniteUIBlazor);
 IgbRangeSliderModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
-```
+<!-- end: Blazor -->
 
 The simplest way to start using the `Slider` and `RangeSlider` is as follows:
+
+```tsx
+ <IgrSlider value="40" />
+    <span className="slider-label"></span>
+<IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
+```
 
 ```html
 <igc-slider value="40"></igc-slider>
@@ -201,6 +229,11 @@ The following sample demonstrates how to style the track fill and thumb parts:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
   k`

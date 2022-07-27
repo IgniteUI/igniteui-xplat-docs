@@ -30,9 +30,9 @@ npm install {PackageWebComponents}
 
 Before using the `IgcMaskInput`, you need to register it as follows:
 
-
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcMaskInputComponent);
 ```

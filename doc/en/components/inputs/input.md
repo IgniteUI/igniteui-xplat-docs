@@ -36,11 +36,11 @@ The $ProductName$ Input is a component where the user can enter data.
 
 To get started with the Input component, you first need to register its module.
 
+<!-- Blazor -->
+
 ```razor
 IgbInputModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Input` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -50,23 +50,40 @@ You will also need to link an additional CSS file to apply the styling to the `I
 
 <!-- end: Blazor -->
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
 <!-- WebComponents -->
 
 To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Input`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrInputModule, IgrInput } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrInputModule.register();
+```
+<!-- end: React -->
+
 After we import the `Input` component we are ready to start using it, so let's add our first Input.
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
+```
 
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
@@ -189,6 +206,10 @@ Additional components and/or directives that were used:
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API Members
 

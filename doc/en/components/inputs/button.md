@@ -26,15 +26,40 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+You will then need to import the `Button`, its necessary CSS, and register its module, like so:
+
+```ts
+import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcButtonComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Button`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrButtonModule, IgrButton } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrButtonModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Button`, you need to register it as follows:
 
 ```razor
 IgbButtonModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Button` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -44,13 +69,11 @@ You will also need to link an additional CSS file to apply the styling to the `B
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcButtonComponent);
-```
-
 The simplest way to start using the `Button` is as follows:
+
+```tsx
+<IgrButton />
+```
 
 ```html
 <igc-button>Click me</igc-button>
@@ -63,6 +86,12 @@ The simplest way to start using the `Button` is as follows:
 ## Prefix / Suffix
 
 With `prefix` and `suffix` slots of the `Button` component, we can add different content before and after the main content of the button.
+
+```tsx
+<IgrButton type="button" variant="contained">
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+</IgrButton>
+```
 
 ```html
 <igc-button type="button" variant="contained">
@@ -91,6 +120,10 @@ In the case when the button component uses an actual [`<button>`](https://develo
 
 Use the `variant` attribute to add a simple contained button in your component template. Note that if you do not set variant, by default it will be set to contained.
 
+```tsx
+<IgrButton variant="contained"><span>Contained</span></IgrButton>
+```
+
 ```html
 <igc-button variant="contained">Contained</igc-button>
 ```
@@ -106,6 +139,10 @@ Use the `variant` attribute to add a simple contained button in your component t
 ### Outlined Button
 
 All you have to do to create an `outlined` button is to change the value of the `variant` property:
+
+```tsx
+<IgrButton variant="outlined"><span>Outlined</span></IgrButton>
+```
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
@@ -123,6 +160,10 @@ All you have to do to create an `outlined` button is to change the value of the 
 
 Analogically, we can switch to `flat` variant.
 
+```tsx
+<IgrButton variant="flat"><span>Flat</span></IgrButton>
+```
+
 ```html
 <igc-button variant="flat">Flat</igc-button>
 ```
@@ -138,6 +179,10 @@ Analogically, we can switch to `flat` variant.
 ### Floating Action Button
 
 We can create a floating action button by setting the `variant` property to `fab`:
+
+```tsx
+<IgrButton variant="fab"><span>Fab</span></IgrButton>
+```
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
@@ -181,6 +226,37 @@ this.radioGroup.addEventListener('click', (radio: any) => {
     this.containedButton.size = radio.target.value;
     this.fabButton.size = radio.target.value;
 });
+```
+
+```tsx
+import { IgrButton, IgrRadio, IgrRadioGroup, IgrButtonModule, IgrRadioModule, IgrRadioGroupModule } from 'igniteui-react';
+
+<IgrRadioGroup alignment="horizontal" style={{display: 'flex', margin: '0 auto', width: '15%'}}>
+    <IgrRadio name="size" value="small" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Small</span>
+    </IgrRadio>
+    <IgrRadio name="size" value="medium" labelPosition="after" change={this.onRadioChange}>
+        <span>Medium</span>
+    </IgrRadio>
+    <IgrRadio name="size" value="large" labelPosition="after" change={this.onRadioChange}>
+        <span>Large</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<div>
+    <IgrButton ref={this.flatButtonRef}  className="flat-btn" variant="flat"><span>Flat</span></IgrButton>
+    <IgrButton ref={this.containedButtonRef}  className="contained-btn" variant="contained"><span>Contained</span></IgrButton>
+    <IgrButton ref={this.outlinedButtonRef}  className="outlined-btn" variant="outlined"><span>Outlined</span></IgrButton>
+    <IgrButton ref={this.fabButtonRef}  className="fab-btn" variant="fab"><span>Like</span></IgrButton>
+</div>
+
+
+public onRadioChange(e: any) {
+    this.flatButton.size = e.value;
+    this.containedButton.size = e.value;
+    this.outlinedButton.size = e.value;
+    this.fabButton.size = e.value;
+}
 ```
 
 ```razor
@@ -229,6 +305,16 @@ The result of implementing the above code should look like the following:
 ### Download
 
 Setting the `download` property will prompt the user to save the linked URL instead of navigating to it.
+
+```tsx
+<IgrButton 
+    href="" 
+    variant="contained" 
+    download="url" 
+    target="_blank" >
+    <span>Download</span>
+</IgrButton>
+```
 
 ```html
 <igc-button
@@ -297,6 +383,11 @@ Additional Web Components that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API Members
 

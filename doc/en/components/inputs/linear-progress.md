@@ -27,21 +27,39 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `LinearProgress`, you need to register it as follows:
+
+```ts
+import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcLinearProgressComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `LinearProgress`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrLinearProgressModule, IgrLinearProgress } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrLinearProgressModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 Before using the `LinearProgress`, you need to register it as follows:
 
 ```razor
 IgbLinearProgressModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
-
-defineComponents(IgcLinearProgressComponent);
-```
-
-<!-- Blazor -->
 You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
@@ -51,6 +69,10 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 
 The simplest way to start using the `LinearProgress` is as follows:
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
@@ -63,6 +85,10 @@ The simplest way to start using the `LinearProgress` is as follows:
 ### Progress Types
 
 You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+
+```tsx
+<IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
@@ -92,6 +118,10 @@ If you want to track a process that is not determined precisely, you can set the
 ### Animation Duration
 
 The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
+
+```tsx
+<IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
@@ -196,6 +226,11 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API Members
 

@@ -25,15 +25,40 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Ripple`, you need to register it as follows:
+
+```ts
+import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcRippleComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Ripple`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrRippleModule, IgrRipple } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrRippleModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Ripple`, you need to register it as follows:
 
 ```razor
 IgbRippleModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Ripple` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -43,13 +68,14 @@ You will also need to link an additional CSS file to apply the styling to the `R
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcRippleComponent);
-```
-
 The simplest way to start using the `Ripple` is as follows:
+
+```tsx
+<IgrButton>
+  <IgrRipple></IgrRipple>
+  <span>Ripple Button</span>
+</IgrButton>
+```
 
 ```html
 <igc-button>
@@ -112,6 +138,11 @@ Additional Web Components that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 

@@ -24,16 +24,22 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
-Before using the `DateTimeInput`, you need to register it as follows:
-
+You will then need to import the `DateTimeInput`, its necessary CSS, and register its module, like so:
 
 ```ts
 import { defineComponents, IgcDateTimeInput } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDateTimeInput);
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+Before using the `DateTimeInput`, you need to register it as follows:
+
+<!-- end: Blazor -->
 
 ### Value binding
 The easiest way to set the value of the `IgcDateTimeInputComponent` component is by passing a Date object to the `value` property:
@@ -252,6 +258,10 @@ Additional Web Components that were used:
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 

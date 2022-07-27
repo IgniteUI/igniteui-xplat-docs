@@ -28,7 +28,35 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
+
+```ts
+import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Radio` and the `RadioGroup`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrRadioModule, IgrRadio, IgrRadioGroupComponent, IgrRadioGroupModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrRadioModule.register();
+IgrRadioGroupModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
 
@@ -36,8 +64,6 @@ Before using the `Radio` and the `RadioGroup`, you need to register them as foll
 IgbRadioModule.Register(IgniteUIBlazor);
 IgbRadioGroupModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Radio` and the `RadioGroup` components. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -47,13 +73,16 @@ You will also need to link an additional CSS file to apply the styling to the `R
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
-
-defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
-```
-
 The simplest way to start using the `Radio` is as follows:
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group>
@@ -82,6 +111,10 @@ The simplest way to start using the `Radio` is as follows:
 
 To provide a meaningful label for the `Radio`, simply place some text between the opening and closing tags:
 
+```tsx
+<IgrRadio><span>Label</span></IgrRadio>
+```
+
 ```html
 <igc-radio>Apple</igc-radio>
 ```
@@ -92,6 +125,9 @@ To provide a meaningful label for the `Radio`, simply place some text between th
 
 You can specify if the label should be positioned before or after the `Radio` button by setting the `label-position` attribute. Allowed values are `before` and `after`(default):
 
+```tsx
+<IgrRadio labelPosition="before"><span>Apple</span></IgrRadio>
+```
 
 ```html
 <igc-radio label-position="before">Apple</igc-radio>
@@ -102,6 +138,12 @@ You can specify if the label should be positioned before or after the `Radio` bu
 ```
 
 The `Radio` can also be labelled by elements external to it. In this case the user is given full control to position and style the label in accordance to their needs.
+
+
+```tsx
+<span id="radio-label">Label</span>
+<IgrRadio ariaLabelledby="radio-label"></IgrRadio>
+```
 
 ```html
 <span id="radio-label">Label</span>
@@ -123,6 +165,15 @@ The `Radio` can also be labelled by elements external to it. In this case the us
 ### Checked
 
 You can use the `checked` attribute to toggle on the radio.
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" checked="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group>
@@ -153,6 +204,10 @@ You can use the `checked` attribute to toggle on the radio.
 
 You can use the `invalid` attribute to mark the radio as invalid.
 
+```tsx
+<IgrRadio invalid="true"></IgrRadio> 
+```
+
 ```html
 <igc-radio invalid></igc-radio>
 ```
@@ -171,6 +226,15 @@ You can use the `invalid` attribute to mark the radio as invalid.
 ### Disabled
 
 You can use the `disabled` attribute to disable the radio.
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group>
@@ -201,6 +265,15 @@ You can use the `disabled` attribute to disable the radio.
 
 The `RadioGroup` allows you to easily change the placement directionality of the radio buttons it contains using the `alignment` attribute. Allowed values are `vertical`(default) and `horizontal`.
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
+
 ```html
 <igc-radio-group alignment="horizontal">
   <igc-radio>Apple</igc-radio>
@@ -229,6 +302,15 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 ### Forms
 
 You can use the `name` and `value` attributes when using the radio with `Form`.
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio name="option1" value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio name="option2" value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio name="option3" value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio name="option4" value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group>
@@ -297,6 +379,11 @@ igc-radio::part(control) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 

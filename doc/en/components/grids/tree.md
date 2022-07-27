@@ -279,7 +279,7 @@ igc-tree-item::part(active selected) {
 <!-- end: Blazor>
 
 <!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
