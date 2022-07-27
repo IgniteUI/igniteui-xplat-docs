@@ -10,7 +10,7 @@ The $ProductName$ Circular Progress Indicator component provides a visual indica
 
 ## $Platform$ Circular Progress Example
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
            alt="$Platform$ Circular Progress Example"
@@ -117,7 +117,7 @@ If you want to track a process that is not determined precisely, you can set the
 
 The following sample demonstrates the above configuration:
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
            alt="$Platform$ Circular Progress Indeterminate Example"
@@ -189,7 +189,7 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
            alt="$Platform$ Circular Progress Styling"
