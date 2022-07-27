@@ -26,12 +26,33 @@ This sample demonstrates how to create `Calendar` with option to select a single
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the $ProductName$ by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Calendar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCalendarModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Calendar`, you need to register it as follows:
 
@@ -65,6 +86,10 @@ The simplest way to start using the `Calendar` is as follows:
 <IgbCalendar />
 ```
 
+```tsx
+<IgrCalendar />
+```
+
 ### Selection Modes
 
 Users can choose from three different selection modes - single selection, multiple selection or range selection. By default, the `Calendar` is using single selection mode but you can change it by setting the `Selection` property as shown in this example.
@@ -75,6 +100,10 @@ Users can choose from three different selection modes - single selection, multip
 
 ```razor
 <IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
+```
+
+```tsx
+<IgrCalendar selection="multiple" />
 ```
 
 <code-view style="height: 370px"
@@ -95,6 +124,10 @@ Following the same approach, we can switch `Selection` to range mode:
 
 ```razor
 <IgbCalendar Selection="@CalendarBaseSelection.Range" />
+```
+
+```tsx
+<IgrCalendar selection="range" />
 ```
 
 <code-view style="height: 480px"
@@ -269,6 +302,10 @@ You can use the `ShowWeekNumbers` property to show the week numbers of the Calen
 <IgbCalendar ShowWeekNumbers="true" />
 ```
 
+```tsx
+<IgrCalendar showWeekNumbers={true} />
+```
+
 The following demo illustrates a Calendar with enabled week numbers:
 
 <code-view style="height: 480px"
@@ -290,6 +327,10 @@ The Calendar displays leading and trailing dates from the previous and the next 
 
 ```razor
 <IgbCalendar VisibleMonths="2" HideOutsideDays="true" />
+```
+
+```tsx
+<IgrCalendar visibleMonths={2} hideOutsideDays={true} />
 ```
 
 The following sample demonstrates the multiple months configuration:
@@ -316,9 +357,13 @@ You could control the size and spacing of the Calendar inner elements by changin
 
 The Calendar component emits the `Change` event when the selected dates are changed by the end user. You can subscribe to the event like this:
 
+<!-- WebComponents -->
+
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
+
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCalendar Change="@OnCalendarChange" />
@@ -328,6 +373,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
     {
 
     }
+}
+```
+
+```tsx
+<IgbCalendar change={this.onCalendarChange} />
+
+public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs){
+
 }
 ```
 
@@ -470,6 +523,13 @@ The following sample demonstrates the above CSS configuration:
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

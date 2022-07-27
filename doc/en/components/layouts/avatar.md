@@ -23,12 +23,31 @@ The $ProductName$ Avatar helps to display initials, images, or icons in your app
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the $ProductName$ npm package by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Avatar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrAvatarModule, IgrAvatar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrAvatarModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Avatar`, you need to register it as follows:
 
@@ -58,6 +77,10 @@ The `Avatar` is capable of displaying images, initials, or any other content, in
 <igc-avatar></igc-avatar>
 ```
 
+```tsx
+<IgrAvatar />
+```
+
 ```razor
 <IgbAvatar />
 ```
@@ -68,6 +91,12 @@ The avatar has several attributes that allow rendering different content based o
 <igc-avatar>
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```tsx
+<IgrAvatar>
+    <IgrIcon iconName="home" />
+</IgrAvatar>
 ```
 
 ```razor
@@ -86,6 +115,12 @@ If the `initials` attribute is set all children elements of the avatar will be i
 <igc-avatar initials="AZ">
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```tsx
+<IgrAvatar initials="AZ">
+    <IgrIcon iconName="home" />
+</IgrAvatar>
 ```
 
 ```razor
@@ -115,6 +150,15 @@ The avatar can also display an image when the `src` attribute is assigned a vali
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
 ```
+
+```tsx
+<IgrAvatar initials="AZ"
+           src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
+           alt="A photo of a man.">
+    <IgrIcon iconName="home" />
+</IgrAvatar>
+```
+
 
 ```razor
 <IgbAvatar Initials="AZ"
@@ -184,6 +228,13 @@ igc-avatar::part(base) {
 * [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

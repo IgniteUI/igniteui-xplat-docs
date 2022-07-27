@@ -109,12 +109,12 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Avatar {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Card {ReleaseStatus_WebsInputs}",
     "href": "layouts/card.md"
   },
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "exclude":  ["Angular", "React", "Blazor"],
+    "exclude":  ["Angular", "Blazor"],
     "name": "Expansion Panel",
     "href": "layouts/expansion-panel.md",
     "status": "NEW"
@@ -157,17 +157,17 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Menus",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Navbar {ReleaseStatus_WebsMenus}",
     "href": "menus/navbar.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md"
   },
@@ -178,7 +178,7 @@
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "List {ReleaseStatus_WebsList}",
     "href": "grids/list.md"
   },
@@ -347,7 +347,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Tree",
     "href": "grids/tree.md",
     "status": "NEW"
@@ -1354,60 +1354,60 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Data Entry & Display",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Badge {ReleaseStatus_WebsInputs}",
     "href": "inputs/badge.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/button.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Checkbox {ReleaseStatus_WebsInputs}",
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Circular Progress",
     "href": "inputs/circular-progress.md",
      "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Chip {ReleaseStatus_WebsInputs}",
     "href": "inputs/chip.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Dropdown {ReleaseStatus_WebsInputs}",
     "href": "inputs/dropdown.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Form {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Icon {ReleaseStatus_WebsInputs}",
     "href": "layouts/icon.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Icon Button {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Linear Progress",
     "href": "inputs/linear-progress.md",
     "status": "NEW"
@@ -1419,7 +1419,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/input.md"
   },
@@ -1436,7 +1436,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md"
   },
@@ -1453,7 +1453,7 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Switch {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md"
   },
@@ -1462,12 +1462,12 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Ripple {ReleaseStatus_WebsInputs}",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
     "href": "inputs/slider.md",
     "status": "NEW"
@@ -1479,18 +1479,18 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Notifications",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Snackbar {ReleaseStatus_WebsInputs}",
     "href": "notifications/snackbar.md",
     "status": "NEW"
   },
   {
-     "exclude": ["Angular", "React"],
+     "exclude": ["Angular"],
      "name": "Toast {ReleaseStatus_WebsInputs}",
      "href": "notifications/toast.md",
      "status": "NEW"
@@ -1501,7 +1501,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "Calendar",
     "href": "scheduling/calendar.md"
   },
