@@ -213,6 +213,10 @@ To enable multiple item selection in the `Tree` just set the `selection` propert
 </IgbTree>
 ```
 
+```tsx
+<IgrTree selection="multiple" />
+```
+
 ### Cascade
 To enable cascade item selection in the `Tree`, just set the selection property to **cascade**. This will render a checkbox for every item.
 
@@ -222,7 +226,7 @@ To enable cascade item selection in the `Tree`, just set the selection property 
 ```
 
 ```razor
-<IgbTree Selection=TreeSelection.Multiple>
+<IgbTree Selection=TreeSelection.Cascade>
 </IgbTree>
 ```
 
