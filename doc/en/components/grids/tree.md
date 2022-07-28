@@ -37,7 +37,6 @@ Before using the `Tree`, you need to register it as follows:
 
 ```ts
 import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
-
 defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
 ```
 
@@ -56,7 +55,6 @@ You will then need to import the `Tree`, its necessary CSS, and register its mod
 ```tsx
 import { IgrTreeModule, IgrTree, IgrTreeItem } from 'igniteui-react';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
-
 IgrTreeModule.register();
 ```
 
@@ -69,7 +67,6 @@ You will also need to link an additional CSS file to apply the styling to the `T
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
-
 <!-- end: Blazor -->
 
 ```razor
@@ -229,7 +226,7 @@ To enable cascade item selection in the `Tree`, just set the selection property 
 ```
 
 ```razor
-<IgbTree Selection=TreeSelection.Multiple>
+<IgbTree Selection=TreeSelection.Cascade>
 </IgbTree>
 ```
 
@@ -344,11 +341,11 @@ igc-tree-item::part(active selected) {
 * [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
 
-<!-- end: Blazor -->
+<!-- end: Blazor>
 
 <!-- React -->
 
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
 * [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
 
 <!-- end: React -->

@@ -31,11 +31,28 @@ Before using the `Rating`, you need to register it as follows:
 
 ```ts
 import { defineComponents, IgcRatingComponent, IgcRatingSymbolComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcRatingComponent, IgcRatingSymbolComponent);
 ```
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Rating`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrRatingModule, IgrRating } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrRatingModule.register();
+```
+<!-- end: React -->
 
 The simplest way to start using the `Rating` is as follows:
 

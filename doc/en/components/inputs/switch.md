@@ -29,15 +29,40 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+You will then need to import the `Switch`, its necessary CSS, and register its module, like so:
+
+```ts
+import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcSwitchComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Switch`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrSwitchModule, IgrSwitch } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrSwitchModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Switch`, you need to register it as follows:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -47,13 +72,11 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcSwitchComponent);
-```
-
 The simplest way to start using the `Switch` is as follows:
+
+```tsx
+<IgrSwitch></IgrSwitch>
+```
 
 ```html
 <igc-switch></igc-switch>
@@ -72,6 +95,10 @@ The simplest way to start using the `Switch` is as follows:
 
 To provide a meaningful label for the switch, simply place some text between the opening and closing tags:
 
+```tsx
+<IgrSwitch><span>Label</span></IgrSwitch>
+```
+
 ```html
 <igc-switch>Label</igc-switch>
 ```
@@ -82,6 +109,10 @@ To provide a meaningful label for the switch, simply place some text between the
 
 You can specify if the label should be positioned before or after the switch toggle by setting the `LabelPosition` attribute of the switch. Allowed values are `before` and `after`(default):
 
+```tsx
+<IgrSwitch ariaLabelledby="switchLabel" labelPosition="Before" ><span id="switch-label">Label</span></IgrSwitch>
+```
+
 ```html
 <igc-switch label-position="before">Label</igc-switch>
 ```
@@ -91,6 +122,11 @@ You can specify if the label should be positioned before or after the switch tog
 ```
 
 The switch can also be labelled by elements external to the switch. In this case, the user is given full control to position and style the label in accordance with their needs.
+
+```tsx
+<span id="switch-label">Label</span>
+<IgrSwitch ariaLabelledby="switchLabel"></IgrSwitch>
+```
 
 ```html
 <span id="switch-label">Label</span>
@@ -113,6 +149,10 @@ The switch can also be labelled by elements external to the switch. In this case
 
 You can use the `checked` attribute to toggle on the switch.
 
+```tsx
+<IgrSwitch checked="true"></IgrSwitch>
+```
+
 ```html
 <igc-switch checked></igc-switch>
 ```
@@ -131,6 +171,10 @@ You can use the `checked` attribute to toggle on the switch.
 ### Required
 
 You can use the `required` attribute to mark the switch as required.
+
+```tsx
+<IgrSwitch required="true"></IgrSwitch>
+```
 
 ```html
 <igc-switch required></igc-switch>
@@ -156,6 +200,10 @@ You can use the `invalid` attribute to mark the switch as invalid.
 
 You can use the `disabled` attribute to disable the switch.
 
+```tsx
+<IgrSwitch disabled="true"></IgrSwitch>
+```
+
 ```html
 <igc-switch disabled></igc-switch>
 ```
@@ -174,6 +222,10 @@ You can use the `disabled` attribute to disable the switch.
 ### Forms
 
 You can use the `name` and `value` attributes when using the switch with `Form`.
+
+```tsx
+<IgrSwitch name="wifi" value="enabled"></IgrSwitch>
+```
 
 ```html
 <igc-switch name="wifi" value="enabled"></igc-switch>
@@ -225,6 +277,11 @@ igc-switch::part(thumb) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 

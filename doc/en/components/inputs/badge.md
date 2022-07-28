@@ -25,18 +25,43 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 <!-- WebComponents -->
 First, you need to install the $ProductName$ by running the following command:
 
+You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
+
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+```ts
+import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcBadgeComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrBadgeModule, IgrBadge } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrBadgeModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Badge`, you need to register it as follows:
 
 ```razor
 IgbBadgeModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Badge` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
@@ -46,13 +71,11 @@ You will also need to link an additional CSS file to apply the styling to the `B
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcBadgeComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcBadgeComponent);
-```
-
 The simplest way to start using the `Badge` is as follows:
+
+```tsx
+<IgrBadge />
+```
 
 ```html
 <igc-badge></igc-badge>
@@ -63,6 +86,10 @@ The simplest way to start using the `Badge` is as follows:
 ```
 
 To display a subtle border around the badge, you can set the `outlined` attribute of the badge.
+
+```tsx
+<IgrBadge outlined="true" ></IgrBadge>
+```
 
 ```html
 <igc-badge outlined></igc-badge>
@@ -77,6 +104,10 @@ To display a subtle border around the badge, you can set the `outlined` attribut
 ### Variants
 
 The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+
+```tsx
+<IgrBadge variant="success" ></IgrBadge>
+```
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -96,6 +127,10 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 ### Shape
 
 The badge component supports `rounded`(default) and `square` shapes. These values can be assigned to the `shape` attribute.
+
+```tsx
+<IgrBadge shape="square" ></IgrBadge>
+```
 
 ```html
 <igc-badge shape="square"></igc-badge>
@@ -149,6 +184,11 @@ igc-badge::part(base) {
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 

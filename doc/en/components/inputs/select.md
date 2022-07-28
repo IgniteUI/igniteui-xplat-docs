@@ -26,7 +26,6 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 Before using the `Select` component, you need to register it together with its additional components:
 
@@ -37,9 +36,12 @@ import { defineComponents,
          IgcSelectGroupComponent,
          IgcSelectHeaderComponent } 
 from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcSelectComponent, IgcSelectItemComponent, IgcSelectGroupComponent, IgcSelectHeaderComponent);
 ```
+
+<!-- end: WebComponents -->
 
 > [!NOTE]
 > Please note that the select header and group components are not mandatory unless you want to use them.

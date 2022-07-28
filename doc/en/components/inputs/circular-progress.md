@@ -10,7 +10,7 @@ The $ProductName$ Circular Progress Indicator component provides a visual indica
 
 ## $Platform$ Circular Progress Example
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
            alt="$Platform$ Circular Progress Example"
@@ -27,7 +27,34 @@ First, you need to install the $ProductName$ by running the following command:
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+You will then need to import the `CircularProgress`, its necessary CSS, and register its module, like so:
+
+```ts
+import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcCircularProgressComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `CircularProgress`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCircularProgressModule, IgrCircularProgress } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrCircularProgressModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `CircularProgress`, you need to register it as follows:
 
@@ -35,13 +62,6 @@ Before using the `CircularProgress`, you need to register it as follows:
 IgbCircularProgressModule.Register(IgniteUIBlazor);
 ```
 
-```ts
-import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcomponents';
-
-defineComponents(IgcCircularProgressComponent);
-```
-
-<!-- Blazor -->
 You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
@@ -50,6 +70,10 @@ You will also need to link an additional CSS file to apply the styling to the `C
 <!-- end: Blazor -->
 
 The simplest way to start using the `CircularProgress` is as follows:
+
+```tsx
+<IgrCircularProgress value="100"></IgrCircularProgress>
+```
 
 ```html
 <igc-circular-progress value="100"></igc-circular-progress>
@@ -63,6 +87,9 @@ The simplest way to start using the `CircularProgress` is as follows:
 
 You can set the type of your indicator, using the  `variant` attribute. There are five types of circular progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
 
+```tsx
+<IgrCircularProgress value="100" variant="success"></IgrCircularProgress>
+```
 
 ```html
 <igc-circular-progress value="100" variant="success"></igc-circular-progress>
@@ -76,9 +103,21 @@ You can set the type of your indicator, using the  `variant` attribute. There ar
 
 If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
 
+```tsx
+<IgrCircularProgress value="100" indeterminate="true"></IgrCircularProgress>
+```
+
+```html
+<igc-circular-progress value="100" indeterminate="true"></igc-circular-progress>
+```
+
+```razor
+<IgbCircularProgress Value=100 Indeterminate=true/>
+```
+
 The following sample demonstrates the above configuration:
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
            alt="$Platform$ Circular Progress Indeterminate Example"
@@ -91,6 +130,9 @@ The following sample demonstrates the above configuration:
 
 You can use the `animationDuration` property on the `CircularProgress` component to specify how long the animation cycle should take in milliseconds.
 
+```tsx
+<IgrCircularProgress animationDuration="5000" indeterminate="true"></IgrCircularProgress>
+```
 
 ```html
 <igc-circular-progress animation-duration="5000" indeterminate></igc-circular-progress>
@@ -114,6 +156,17 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 >[!NOTE]
 >For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
+```tsx
+<IgrCircularProgress >
+    <IgrCircularGradient slot="gradient" offset="0%" color="#ff9a40">
+    </IgrCircularGradient>
+    <IgrCircularGradient slot="gradient" offset="50%" color="#1eccd4">
+    </IgrCircularGradient>
+    <IgrCircularGradient slot="gradient" offset="100%" color="#ff0079">
+    </IgrCircularGradient>
+</IgrCircularProgress>
+```
+
 ```html
 <igc-circular-progress>
     <igc-circular-gradient slot="gradient" offset="0%" color="#ff9a40"></igc-circular-gradient>
@@ -136,7 +189,7 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
-<code-view style="height: 100px"
+<code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
            alt="$Platform$ Circular Progress Styling"
@@ -191,6 +244,11 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
  ## API Members
 
