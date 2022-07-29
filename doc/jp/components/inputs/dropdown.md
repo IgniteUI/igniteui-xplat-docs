@@ -39,13 +39,10 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 ```ts
 import {
     defineComponents,
-    IgcDropdownComponent,
-    IgcDropdownItemComponent,
-    IgcDropdownHeaderComponent,
-    IgcDropdownGroupComponent
+    IgcDropdownComponent
 } from "igniteui-webcomponents";
 
-defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
+defineComponents(IgcDropdownComponent);
 ```
 
 `Dropdown` の使用を開始する最も簡単な方法は次のとおりです:

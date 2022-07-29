@@ -42,9 +42,9 @@ IgbListModule.Register(IgniteUIBlazor);
 ```
 
 ```ts
-import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
+defineComponents(IgcListComponent);
 ```
 
 The simplest way to start using the `List` is as follows:

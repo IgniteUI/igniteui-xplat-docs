@@ -52,9 +52,9 @@ IgbListModule.Register(IgniteUIBlazor);
 <!-- end: Blazor -->
 
 ```ts
-import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
+defineComponents(IgcListComponent);
 ```
 
 `List` の使用を開始する最も簡単な方法は次のとおりです:

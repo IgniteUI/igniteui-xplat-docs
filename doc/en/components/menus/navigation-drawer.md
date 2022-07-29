@@ -70,11 +70,10 @@ You will also need to link an additional CSS file to apply the styling to the `N
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
+defineComponents(IgcNavDrawerComponent);
 ```
-
 
 ## Adding Navigation Drawer Items
 
@@ -220,11 +219,9 @@ Let's also add some radio buttons to display all `position` values. This way whe
 
 ```ts
 // ...
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-    IgcRadioComponent, IgcRadioGroupComponent);
+defineComponents(IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {

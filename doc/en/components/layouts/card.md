@@ -72,9 +72,9 @@ You will also need to link an additional CSS file to apply the styling to the `C
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
+defineComponents(IgcCardComponent );
 ```
 
 Then, to represent the demo card template, we can add the following code:
