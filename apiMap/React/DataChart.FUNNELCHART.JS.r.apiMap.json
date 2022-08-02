@@ -54,21 +54,21 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"allowSliceSelection"}],"originalName":"AllowSliceSelection"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useUnselectedStyle"}],"originalName":"UseUnselectedStyle"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"selectedSliceStyle.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"ew.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedSliceStyle.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"ew.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedSliceStyle.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ew.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedSliceStyle.opacity"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"ew.opacity"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"unselectedSliceStyle.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"ex.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"unselectedSliceStyle.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"ex.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"unselectedSliceStyle.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ex.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"unselectedSliceStyle.opacity"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"ex.opacity"},
     { "names":[{"platform":"React","mappedType":"IgDataTemplate","mappedName":"legendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useOuterLabelsForLegend"}],"originalName":"UseOuterLabelsForLegend"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"},

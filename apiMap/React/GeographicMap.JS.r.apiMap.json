@@ -100,13 +100,13 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isPolyline"}],"originalName":"IsPolyline"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"rk.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"rk.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"rk.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"rk.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeries",
     "names":[{"platform":"React","fileName":"igr-geographic-proportional-symbol-series.ts","dynamicModuleName":"igr-geographic-proportional-symbol-series-dynamic-module.ts","moduleName":"igr-geographic-proportional-symbol-series-module.ts","mappedName":"IgrGeographicProportionalSymbolSeries"}],
     "members":[
@@ -203,13 +203,13 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isPolygon"}],"originalName":"IsPolygon"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"shapeStyle.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"sl.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"shapeStyle.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"sl.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"sl.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"shapeStyle.opacity"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"sl.opacity"},
     { "names":[{"platform":"React","mappedType":"MarkerType","mappedName":"markerType"}],"originalName":"MarkerType"},
     { "names":[{"platform":"React","mappedType":"MarkerOutlineMode","mappedName":"markerOutlineMode"}],"originalName":"MarkerOutlineMode"},
     { "names":[{"platform":"React","mappedType":"MarkerFillMode","mappedName":"markerFillMode"}],"originalName":"MarkerFillMode"},

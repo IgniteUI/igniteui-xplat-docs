@@ -112,7 +112,9 @@
   { "originalName":"PropertyEditorPropertyDescriptionButtonClickEventArgs",
     "names":[{"platform":"React","fileName":"igr-property-editor-property-description-button-click-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionButtonClickEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionChangedEventArgs",
-    "names":[{"platform":"React","fileName":"igr-property-editor-property-description-changed-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+    "names":[{"platform":"React","fileName":"igr-property-editor-property-description-changed-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
     "names":[{"platform":"React","fileName":"igr-property-editor-property-description-target-property-updating-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}],
     "members":[

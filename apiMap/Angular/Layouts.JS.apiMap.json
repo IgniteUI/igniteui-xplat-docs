@@ -112,7 +112,9 @@
   { "originalName":"PropertyEditorPropertyDescriptionButtonClickEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-button-click-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionButtonClickEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionChangedEventArgs",
-    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-changed-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-changed-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-target-property-updating-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}],
     "members":[

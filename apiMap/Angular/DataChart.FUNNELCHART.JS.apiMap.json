@@ -54,21 +54,21 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"allowSliceSelection"}],"originalName":"AllowSliceSelection"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useUnselectedStyle"}],"originalName":"UseUnselectedStyle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"selectedSliceStyle.fill"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"ew.fill"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedSliceStyle.stroke"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"ew.stroke"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedSliceStyle.strokeThickness"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ew.strokeThickness"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedSliceStyle.opacity"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"ew.opacity"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"unselectedSliceStyle.fill"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"fill"}],"originalName":"ex.fill"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"unselectedSliceStyle.stroke"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"stroke"}],"originalName":"ex.stroke"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"unselectedSliceStyle.strokeThickness"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"ex.strokeThickness"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"unselectedSliceStyle.opacity"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"opacity"}],"originalName":"ex.opacity"},
     { "names":[{"platform":"Angular","mappedType":"IgDataTemplate","mappedName":"legendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useOuterLabelsForLegend"}],"originalName":"UseOuterLabelsForLegend"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"},

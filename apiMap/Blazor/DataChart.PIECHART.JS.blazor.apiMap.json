@@ -84,21 +84,21 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartAngle"}],"originalName":"StartAngle"},
     { "names":[{"platform":"Blazor","mappedType":"SweepDirection","mappedName":"SweepDirection"}],"originalName":"SweepDirection"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"othersCategoryStyle.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"i7.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"othersCategoryStyle.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"i7.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"i7.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"othersCategoryStyle.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"i7.opacity"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedStyle.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"i8.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedStyle.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"i8.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"i8.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedStyle.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"i8.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualBrushes"}],"originalName":"ActualBrushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outlines"}],"originalName":"Outlines"},

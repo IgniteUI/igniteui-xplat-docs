@@ -134,7 +134,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualThickness"}],"originalName":"ActualThickness"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MarkerThickness"}],"originalName":"MarkerThickness"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualMarkerThickness"}],"originalName":"ActualMarkerThickness"},
-    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Title"}],"originalName":"Title"},
+    { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"Title"}],"originalName":"Title"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionInDuration"}],"originalName":"TransitionInDuration"},
     { "names":[{"platform":"Blazor","mappedType":"CategoryTransitionInMode","mappedName":"TransitionInMode"}],"originalName":"TransitionInMode"},

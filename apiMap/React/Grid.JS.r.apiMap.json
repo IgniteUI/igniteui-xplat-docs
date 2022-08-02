@@ -683,13 +683,13 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"rowHoverTextColor"}],"originalName":"RowHoverTextColor"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"editRowBorder"}],"originalName":"EditRowBorder"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"editRowBorderWidth.bottom"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"z4.bottom"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"editRowBorderWidth.left"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"z4.left"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"editRowBorderWidth.right"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"z4.right"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"editRowBorderWidth.top"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"z4.top"},
     { "names":[{"platform":"React","mappedType":"IgrSectionHeader","mappedName":"sectionHeader"}],"originalName":"SectionHeader"},
     { "names":[{"platform":"React","mappedType":"IgrSummaryRowRoot","mappedName":"summaryRowRoot"}],"originalName":"SummaryRowRoot"},
     { "names":[{"platform":"React","mappedType":"IgrSummaryRowSection","mappedName":"summaryRowSection"}],"originalName":"SummaryRowSection"},
@@ -785,30 +785,30 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"border"}],"originalName":"Border"},
     { "names":[{"platform":"React","mappedType":"Thickness","mappedName":"actualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"z1.bottom"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"z1.left"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"z1.right"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"z1.top"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"notifyOnAllSelectionChanges"}],"originalName":"NotifyOnAllSelectionChanges"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"cornerRadius.bottomRight"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"xu.b"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"xu.a"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"cornerRadius.topLeft"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"xu.c"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"cornerRadius.topRight"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"xu.d"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"xs.b"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"xs.a"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"actualCornerRadius.topLeft"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"xs.c"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"actualCornerRadius.topRight"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"xs.d"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isActiveCellStyleEnabled"}],"originalName":"IsActiveCellStyleEnabled"},
     { "names":[{"platform":"React","mappedType":"IgrResponsiveStatesCollection","mappedName":"responsiveStates"}],"originalName":"ResponsiveStates"},
     { "names":[{"platform":"React","mappedType":"IgRect","mappedName":"actualVisibleRegion"}],"originalName":"ActualVisibleRegion"},

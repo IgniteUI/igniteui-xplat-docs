@@ -28,37 +28,37 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ColumnHeadersVisible"}],"originalName":"ColumnHeadersVisible"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingBottom"}],"originalName":"contentPadding.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingBottom"}],"originalName":"h8.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingLeft"}],"originalName":"contentPadding.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingLeft"}],"originalName":"h8.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingRight"}],"originalName":"contentPadding.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingRight"}],"originalName":"h8.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingTop"}],"originalName":"contentPadding.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ContentPaddingTop"}],"originalName":"h8.top"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingBottom"}],"originalName":"actualContentPadding.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingBottom"}],"originalName":"h7.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingLeft"}],"originalName":"actualContentPadding.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingLeft"}],"originalName":"h7.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingRight"}],"originalName":"actualContentPadding.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingRight"}],"originalName":"h7.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingTop"}],"originalName":"actualContentPadding.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualContentPaddingTop"}],"originalName":"h7.top"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomRight"}],"originalName":"cornerRadius.bottomRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomRight"}],"originalName":"gk.b"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomLeft"}],"originalName":"gk.a"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopLeft"}],"originalName":"cornerRadius.topLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopLeft"}],"originalName":"gk.c"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopRight"}],"originalName":"cornerRadius.topRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopRight"}],"originalName":"gk.d"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusBottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusBottomRight"}],"originalName":"gj.b"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusBottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusBottomLeft"}],"originalName":"gj.a"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusTopLeft"}],"originalName":"actualCornerRadius.topLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusTopLeft"}],"originalName":"gj.c"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusTopRight"}],"originalName":"actualCornerRadius.topRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualCornerRadiusTopRight"}],"originalName":"gj.d"},
     { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"DataSourceDesiredProperties"}],"originalName":"DataSourceDesiredProperties"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualDensity"}],"originalName":"ActualDensity"},

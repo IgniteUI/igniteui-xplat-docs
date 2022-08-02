@@ -19,24 +19,24 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueFormatString"}],"originalName":"ValueFormatString"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"ValueFormatSpecifiers"}],"originalName":"ValueFormatSpecifiers"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginBottom"}],"originalName":"valueRowMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginBottom"}],"originalName":"ir.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginLeft"}],"originalName":"valueRowMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginLeft"}],"originalName":"ir.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginRight"}],"originalName":"valueRowMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginRight"}],"originalName":"ir.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginTop"}],"originalName":"valueRowMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueRowMarginTop"}],"originalName":"ir.top"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ValueRowVisible"}],"originalName":"ValueRowVisible"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueTextWhenMissingData"}],"originalName":"ValueTextWhenMissingData"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ValueTextUseSeriesColors"}],"originalName":"ValueTextUseSeriesColors"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginBottom"}],"originalName":"valueTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginBottom"}],"originalName":"is.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginLeft"}],"originalName":"valueTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginLeft"}],"originalName":"is.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginRight"}],"originalName":"valueTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginRight"}],"originalName":"is.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginTop"}],"originalName":"valueTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ValueTextMarginTop"}],"originalName":"is.top"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ValueTextColor"}],"originalName":"ValueTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeaderFormatString"}],"originalName":"HeaderFormatString"},
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"HeaderFormatSpecifiers"}],"originalName":"HeaderFormatSpecifiers"},
@@ -46,54 +46,54 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeaderText"}],"originalName":"HeaderText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HeaderTextColor"}],"originalName":"HeaderTextColor"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginBottom"}],"originalName":"headerTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginBottom"}],"originalName":"ij.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginLeft"}],"originalName":"headerTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginLeft"}],"originalName":"ij.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginRight"}],"originalName":"headerTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginRight"}],"originalName":"ij.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginTop"}],"originalName":"headerTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderTextMarginTop"}],"originalName":"ij.top"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginBottom"}],"originalName":"headerRowMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginBottom"}],"originalName":"ii.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginLeft"}],"originalName":"headerRowMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginLeft"}],"originalName":"ii.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginRight"}],"originalName":"headerRowMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginRight"}],"originalName":"ii.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginTop"}],"originalName":"headerRowMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HeaderRowMarginTop"}],"originalName":"ii.top"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"HeaderRowVisible"}],"originalName":"HeaderRowVisible"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryTitleTextColor"}],"originalName":"SummaryTitleTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"DataLegendSummaryType","mappedName":"SummaryType"}],"originalName":"SummaryType"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryTitleText"}],"originalName":"SummaryTitleText"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginBottom"}],"originalName":"summaryTitleTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginBottom"}],"originalName":"im.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginLeft"}],"originalName":"summaryTitleTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginLeft"}],"originalName":"im.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginRight"}],"originalName":"summaryTitleTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginRight"}],"originalName":"im.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginTop"}],"originalName":"summaryTitleTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryTitleTextMarginTop"}],"originalName":"im.top"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginBottom"}],"originalName":"summaryRowMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginBottom"}],"originalName":"il.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginLeft"}],"originalName":"summaryRowMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginLeft"}],"originalName":"il.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginRight"}],"originalName":"summaryRowMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginRight"}],"originalName":"il.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginTop"}],"originalName":"summaryRowMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SummaryRowMarginTop"}],"originalName":"il.top"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryValueTextColor"}],"originalName":"SummaryValueTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryLabelText"}],"originalName":"SummaryLabelText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryLabelTextColor"}],"originalName":"SummaryLabelTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryUnitsText"}],"originalName":"SummaryUnitsText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SummaryUnitsTextColor"}],"originalName":"SummaryUnitsTextColor"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginBottom"}],"originalName":"badgeMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginBottom"}],"originalName":"ih.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginLeft"}],"originalName":"badgeMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginLeft"}],"originalName":"ih.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginRight"}],"originalName":"badgeMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginRight"}],"originalName":"ih.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginTop"}],"originalName":"badgeMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BadgeMarginTop"}],"originalName":"ih.top"},
     { "names":[{"platform":"Blazor","mappedType":"LegendItemBadgeShape","mappedName":"BadgeShape"}],"originalName":"BadgeShape"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TargetCursorPositionX"}],"originalName":"TargetCursorPositionX"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TargetCursorPositionY"}],"originalName":"TargetCursorPositionY"},
@@ -102,32 +102,32 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnitsText"}],"originalName":"UnitsText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnitsTextColor"}],"originalName":"UnitsTextColor"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginBottom"}],"originalName":"unitsTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginBottom"}],"originalName":"ip.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginLeft"}],"originalName":"unitsTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginLeft"}],"originalName":"ip.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginRight"}],"originalName":"unitsTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginRight"}],"originalName":"ip.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginTop"}],"originalName":"unitsTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnitsTextMarginTop"}],"originalName":"ip.top"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginBottom"}],"originalName":"titleTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginBottom"}],"originalName":"io.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginLeft"}],"originalName":"titleTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginLeft"}],"originalName":"io.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginRight"}],"originalName":"titleTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginRight"}],"originalName":"io.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginTop"}],"originalName":"titleTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTextMarginTop"}],"originalName":"io.top"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TitleTextColor"}],"originalName":"TitleTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"DataLegendLabelMode","mappedName":"LabelDisplayMode"}],"originalName":"LabelDisplayMode"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelTextColor"}],"originalName":"LabelTextColor"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginBottom"}],"originalName":"labelTextMargin.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginBottom"}],"originalName":"ik.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginLeft"}],"originalName":"labelTextMargin.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginLeft"}],"originalName":"ik.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginRight"}],"originalName":"labelTextMargin.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginRight"}],"originalName":"ik.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginTop"}],"originalName":"labelTextMargin.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginTop"}],"originalName":"ik.top"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySizeChanged"}],"originalName":"NotifySizeChanged"},
@@ -184,7 +184,9 @@
   { "originalName":"ItemLegend",
     "names":[{"platform":"Blazor","fileName":"ItemLegend.cs","mappedName":"IgbItemLegend"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"Blazor","fileName":"Legend.cs","mappedName":"IgbLegend"}],
     "members":[

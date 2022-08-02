@@ -445,13 +445,13 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"RowHoverTextColor"}],"originalName":"RowHoverTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"EditRowBorder"}],"originalName":"EditRowBorder"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthBottom"}],"originalName":"editRowBorderWidth.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthBottom"}],"originalName":"z4.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthLeft"}],"originalName":"editRowBorderWidth.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthLeft"}],"originalName":"z4.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthRight"}],"originalName":"editRowBorderWidth.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthRight"}],"originalName":"z4.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthTop"}],"originalName":"editRowBorderWidth.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"EditRowBorderWidthTop"}],"originalName":"z4.top"},
     { "names":[{"platform":"Blazor","mappedType":"IgbSectionHeader","mappedName":"SectionHeader"}],"originalName":"SectionHeader"},
     { "names":[{"platform":"Blazor","mappedType":"IgbSummaryRowRoot","mappedName":"SummaryRowRoot"}],"originalName":"SummaryRowRoot"},
     { "names":[{"platform":"Blazor","mappedType":"IgbSummaryRowSection","mappedName":"SummaryRowSection"}],"originalName":"SummaryRowSection"},
@@ -547,22 +547,22 @@
     { "names":[{"platform":"Blazor","mappedType":"ColumnOptionsIconBehavior","mappedName":"ColumnOptionsIconBehavior"}],"originalName":"ColumnOptionsIconBehavior"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Border"}],"originalName":"Border"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"borderWidth.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"z1.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"borderWidth.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"z1.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"borderWidth.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"z1.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"borderWidth.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"z1.top"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"NotifyOnAllSelectionChanges"}],"originalName":"NotifyOnAllSelectionChanges"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomRight"}],"originalName":"cornerRadius.bottomRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomRight"}],"originalName":"xu.b"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusBottomLeft"}],"originalName":"xu.a"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopLeft"}],"originalName":"cornerRadius.topLeft"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopLeft"}],"originalName":"xu.c"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopRight"}],"originalName":"cornerRadius.topRight"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CornerRadiusTopRight"}],"originalName":"xu.d"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsActiveCellStyleEnabled"}],"originalName":"IsActiveCellStyleEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"IgbResponsiveStatesCollection","mappedName":"ResponsiveStates"}],"originalName":"ResponsiveStates"},
     { "names":[{"platform":"Blazor","mappedType":"IgbColumnSortDescriptionCollection","mappedName":"SortDescriptions"}],"originalName":"SortDescriptions"},

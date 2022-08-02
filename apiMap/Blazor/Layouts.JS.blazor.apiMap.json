@@ -70,7 +70,9 @@
   { "originalName":"PropertyEditorPropertyDescriptionButtonClickEventArgs",
     "names":[{"platform":"Blazor","fileName":"PropertyEditorPropertyDescriptionButtonClickEventArgs.cs","mappedName":"IgbPropertyEditorPropertyDescriptionButtonClickEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionChangedEventArgs",
-    "names":[{"platform":"Blazor","fileName":"PropertyEditorPropertyDescriptionChangedEventArgs.cs","mappedName":"IgbPropertyEditorPropertyDescriptionChangedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+    "names":[{"platform":"Blazor","fileName":"PropertyEditorPropertyDescriptionChangedEventArgs.cs","mappedName":"IgbPropertyEditorPropertyDescriptionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"NewValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
     "names":[{"platform":"Blazor","fileName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs.cs","mappedName":"IgbPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}],
     "members":[

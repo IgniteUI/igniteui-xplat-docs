@@ -26,7 +26,8 @@
     { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"targetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"Angular","fileName":"igx-value-overlay-component.ts","dynamicModuleName":"igx-value-overlay-dynamic-module.ts","moduleName":"igx-value-overlay-module.ts","mappedName":"IgxValueOverlayComponent"}],
     "members":[
@@ -225,24 +226,24 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueFormatString"}],"originalName":"ValueFormatString"},
     { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"valueFormatSpecifiers"}],"originalName":"ValueFormatSpecifiers"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"valueRowMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yw.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"valueRowMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yw.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"valueRowMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yw.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"valueRowMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yw.top"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"valueRowVisible"}],"originalName":"ValueRowVisible"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueTextWhenMissingData"}],"originalName":"ValueTextWhenMissingData"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"valueTextUseSeriesColors"}],"originalName":"ValueTextUseSeriesColors"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"valueTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yx.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"valueTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yx.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"valueTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yx.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"valueTextMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yx.top"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerFormatString"}],"originalName":"HeaderFormatString"},
     { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"headerFormatSpecifiers"}],"originalName":"HeaderFormatSpecifiers"},
@@ -252,86 +253,87 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerTextColor"}],"originalName":"HeaderTextColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"headerTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yq.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"headerTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yq.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"headerTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yq.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"headerTextMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yq.top"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"headerRowMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yp.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"headerRowMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yp.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"headerRowMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yp.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"headerRowMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yp.top"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"headerRowVisible"}],"originalName":"HeaderRowVisible"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryTitleTextColor"}],"originalName":"SummaryTitleTextColor"},
     { "names":[{"platform":"Angular","mappedType":"DataLegendSummaryType","mappedName":"summaryType"}],"originalName":"SummaryType"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryTitleText"}],"originalName":"SummaryTitleText"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryTitleTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yt.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"summaryTitleTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yt.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"summaryTitleTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yt.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"summaryTitleTextMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yt.top"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryRowMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"ys.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"summaryRowMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"ys.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"summaryRowMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"ys.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"summaryRowMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"ys.top"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryValueTextColor"}],"originalName":"SummaryValueTextColor"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryLabelText"}],"originalName":"SummaryLabelText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryLabelTextColor"}],"originalName":"SummaryLabelTextColor"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryUnitsText"}],"originalName":"SummaryUnitsText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryUnitsTextColor"}],"originalName":"SummaryUnitsTextColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"badgeMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yo.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"badgeMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yo.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"badgeMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yo.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"badgeMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yo.top"},
     { "names":[{"platform":"Angular","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
     { "names":[{"platform":"Angular","mappedType":"DataLegendUnitsMode","mappedName":"unitsDisplayMode"}],"originalName":"UnitsDisplayMode"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"unitsTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yv.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"unitsTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yv.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"unitsTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yv.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"unitsTextMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yv.top"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"titleTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yu.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"titleTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yu.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"titleTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yu.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"titleTextMargin.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yu.top"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"},
     { "names":[{"platform":"Angular","mappedType":"DataLegendLabelMode","mappedName":"labelDisplayMode"}],"originalName":"LabelDisplayMode"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"labelTextMargin.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"yr.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"labelTextMargin.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"yr.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"yr.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"yr.top"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"Angular","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[

@@ -85,13 +85,13 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"ShapeStyleSelector"}],"originalName":"ShapeStyleSelector"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeFill"}],"originalName":"shapeStyle.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeFill"}],"originalName":"rk.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeStroke"}],"originalName":"shapeStyle.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeStroke"}],"originalName":"rk.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeStrokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeStrokeThickness"}],"originalName":"rk.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"shapeStyle.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"rk.opacity"}],"originalBaseTypeName":"GeographicShapeSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Maps","originalNamespace":"Infragistics.Controls.Maps"},
   { "originalName":"GeographicProportionalSymbolSeries",
     "names":[{"platform":"Blazor","fileName":"GeographicProportionalSymbolSeries.cs","mappedName":"IgbGeographicProportionalSymbolSeries"}],
     "members":[
@@ -183,13 +183,13 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"ShapeStyleSelector"}],"originalName":"ShapeStyleSelector"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeFill"}],"originalName":"shapeStyle.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeFill"}],"originalName":"sl.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeStroke"}],"originalName":"shapeStyle.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ShapeStroke"}],"originalName":"sl.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeStrokeThickness"}],"originalName":"shapeStyle.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeStrokeThickness"}],"originalName":"sl.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"shapeStyle.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ShapeOpacity"}],"originalName":"sl.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"MarkerType","mappedName":"MarkerType"}],"originalName":"MarkerType"},
     { "names":[{"platform":"Blazor","mappedType":"MarkerOutlineMode","mappedName":"MarkerOutlineMode"}],"originalName":"MarkerOutlineMode"},
     { "names":[{"platform":"Blazor","mappedType":"MarkerFillMode","mappedName":"MarkerFillMode"}],"originalName":"MarkerFillMode"},

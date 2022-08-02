@@ -15,13 +15,13 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnPinningText"}],"originalName":"ColumnPinningText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnPinningTitle"}],"originalName":"ColumnPinningTitle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottom"}],"originalName":"bi.bottom"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"left"}],"originalName":"bi.left"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"bi.right"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"bi.top"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
