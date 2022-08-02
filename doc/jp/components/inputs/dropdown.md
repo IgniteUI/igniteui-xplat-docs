@@ -28,13 +28,6 @@ $Platform$ ドロップダウンは、事前定義された値の切り替え可
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
-
-`Dropdown` を使用する前に、次のように登録する必要があります:
-
-```razor
-IgbDropdownModule.Register(IgniteUIBlazor);
-```
 
 ```ts
 import {
@@ -44,9 +37,37 @@ import {
     IgcDropdownHeaderComponent,
     IgcDropdownGroupComponent
 } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Dropdown`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrDropdownModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+
+Before using the `Dropdown`, you need to register it as follows:
+
+```razor
+IgbDropdownModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
 
 `Dropdown` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -163,6 +184,11 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

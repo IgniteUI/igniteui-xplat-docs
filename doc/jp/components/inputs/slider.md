@@ -27,22 +27,50 @@ $Platform$ スライダーと範囲スライダー コンポーネントを使�
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Slider` and `RangeSlider`, you need to register them as follows:
+
+```ts
+import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Slider` and `RangeSlider`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrSliderModule.register();
+IgrRangeSliderModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 `Slider` と `RangeSlider` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbSliderModule.Register(IgniteUIBlazor);
 IgbRangeSliderModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
-```
+<!-- end: Blazor -->
 
 `Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+ <IgrSlider value="40" />
+    <span className="slider-label"></span>
+<IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
+```
 
 ```html
 <igc-slider value="40"></igc-slider>
@@ -202,6 +230,11 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

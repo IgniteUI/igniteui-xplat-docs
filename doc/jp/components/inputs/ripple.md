@@ -26,15 +26,40 @@ $ProductName$ Ripple コンポーネントは、タッチまたはマウス ク�
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Ripple`, you need to register it as follows:
+
+```ts
+import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcRippleComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Ripple`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrRippleModule, IgrRipple } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrRippleModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 `Ripple` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbRippleModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Ripple` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
@@ -44,13 +69,14 @@ IgbRippleModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcRippleComponent);
-```
-
 `Ripple` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+<IgrButton>
+  <IgrRipple></IgrRipple>
+  <span>Ripple Button</span>
+</IgrButton>
+```
 
 ```html
 <igc-button>
@@ -113,6 +139,11 @@ igc-ripple {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

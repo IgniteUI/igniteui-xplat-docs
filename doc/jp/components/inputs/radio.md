@@ -13,7 +13,7 @@ $ProductName$ Radio コンポーネントを使用すると、ユーザーは、
 
 ## $ProductName$ Radio の例
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group の例"
            github-src="inputs/radio/group">
@@ -29,7 +29,35 @@ $ProductName$ Radio コンポーネントを使用すると、ユーザーは、
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
+
+```ts
+import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Radio` and the `RadioGroup`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrRadioModule, IgrRadio, IgrRadioGroupComponent, IgrRadioGroupModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrRadioModule.register();
+IgrRadioGroupModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 `Radio` と `RadioGroup` を使用する前に、次のように登録する必要があります:
 
@@ -37,8 +65,6 @@ npm install {PackageWebComponents}
 IgbRadioModule.Register(IgniteUIBlazor);
 IgbRadioGroupModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Radio` および `RadioGroup` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
@@ -48,13 +74,16 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+The simplest way to start using the `Radio` is as follows:
 
-defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
 ```
-
-ラジオの使用を開始する最も簡単な方法は次のとおりです:
 
 ```html
 <igc-radio-group>
@@ -83,6 +112,10 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 `Radio` に意味のあるラベルを付けるには、開始タグと終了タグの間にテキストを配置するだけです。
 
+```tsx
+<IgrRadio><span>Label</span></IgrRadio>
+```
+
 ```html
 <igc-radio>Apple</igc-radio>
 ```
@@ -93,6 +126,9 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 `label-position` 属性を設定することにより、`Radio` ボタンの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
+```tsx
+<IgrRadio labelPosition="before"><span>Apple</span></IgrRadio>
+```
 
 ```html
 <igc-radio label-position="before">Apple</igc-radio>
@@ -103,6 +139,12 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ```
 
 `Radio` には、ラジオの外部の要素でラベルを付けることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
+
+
+```tsx
+<span id="radio-label">Label</span>
+<IgrRadio ariaLabelledby="radio-label"></IgrRadio>
+```
 
 ```html
 <span id="radio-label">Label</span>
@@ -125,6 +167,15 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ラジオをオンに切り替えるには、`checked` 属性を使用できます。
 
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" checked="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
+
 ```html
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
@@ -143,7 +194,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
            alt="$Platform$ Radio の例"
@@ -153,6 +204,10 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ### 無効
 
 `invalid` 属性を使用して、ラジオを無効としてマークできます。
+
+```tsx
+<IgrRadio invalid="true"></IgrRadio> 
+```
 
 ```html
 <igc-radio invalid></igc-radio>
@@ -173,6 +228,15 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 
 ラジオをオフにするには、`disabled` 属性を使用できます。
 
+```tsx
+<IgrRadioGroup>
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
+
 ```html
 <igc-radio-group>
   <igc-radio>Apple</igc-radio>
@@ -191,7 +255,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 205px"
+<code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
            alt="$Platform$ Radio の例"
@@ -201,6 +265,15 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ### グループの配置
 
 `RadioGroup` を使用すると、`alignment` 属性を使用して、含まれているラジオ ボタンの配置方向を簡単に変更できます。許可される値は、`vertical` (デフォルト) と `horizontal` です。
+
+```tsx
+<IgrRadioGroup alignment="horizontal">
+  <IgrRadio value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio value="banana" disabled="true"><span>Banana</span></IgrRadio>
+  <IgrRadio value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group alignment="horizontal">
@@ -230,6 +303,15 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 ### フォーム
 
 `Form` で無線を使用する場合は、`name` 属性と `value` 属性を使用できます。
+
+```tsx
+<IgrRadioGroup>
+  <IgrRadio name="option1" value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio name="option2" value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio name="option3" value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio name="option4" value="orange"><span>Orange</span></IgrRadio>
+</IgrRadioGroup>
+```
 
 ```html
 <igc-radio-group>
@@ -298,6 +380,11 @@ igc-radio::part(control) {
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

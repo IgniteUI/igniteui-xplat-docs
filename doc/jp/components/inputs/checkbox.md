@@ -30,15 +30,40 @@ $Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追�
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+You will then need to import the `Checkbox`, its necessary CSS, and register its module, like so:
+
+```ts
+import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcCheckboxComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Checkbox`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCheckboxModule, IgrCheckbox } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrCheckboxModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 `Checkbox` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbCheckboxModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Checkbox` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
@@ -48,16 +73,13 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcCheckboxComponent);
-```
-
 <div class="divider--half"></div>
 
-
 `Checkbox` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+<IgrCheckbox></IgrCheckbox>
+```
 
 ```html
 <igc-checkbox></igc-checkbox>
@@ -77,6 +99,10 @@ defineComponents(IgcCheckboxComponent);
 
 チェックボックスに意味のあるラベルを付けるには、開始タグと終了タグの間にテキストを配置するだけです。
 
+```tsx
+<IgrCheckbox><span>Label</span></IgrCheckbox>
+```
+
 ```html
 <igc-checkbox>Label</igc-checkbox>
 ```
@@ -87,6 +113,9 @@ defineComponents(IgcCheckboxComponent);
 
 チェックボックスの `label-position` 属性を設定することにより、チェックボックスの切り替えの前または後にラベルを配置するかどうかを指定できます。許可される値は、`before` と `after` (デフォルト) です。
 
+```tsx
+<IgrCheckbox labelPosition="before"></IgrCheckbox>
+```
 
 ```html
 <igc-checkbox label-position="before">Label</igc-checkbox>
@@ -97,6 +126,11 @@ defineComponents(IgcCheckboxComponent);
 ```
 
 チェックボックスは、チェックボックスの外部の要素でラベル付けすることもできます。この場合、ユーザーはニーズに応じてラベルの位置とスタイルを完全に制御できます。
+
+```tsx
+<span id="checkbox-label">Label</span>
+<IgrCheckbox ariaLabelledby="checkbox-label" labelPosition="before"></IgrCheckbox>
+```
 
 ```html
 <span id="checkbox-label">Label</span>
@@ -119,6 +153,10 @@ defineComponents(IgcCheckboxComponent);
 
 コンポーネントの `Checked` 属性を使用して、チェックボックスをデフォルトでオンにするかオフにするかを決定できます。
 
+```tsx
+<IgrCheckbox checked="true"></IgrCheckbox>
+```
+
 ```html
 <igc-checkbox checked></igc-checkbox>
 ```
@@ -137,6 +175,10 @@ defineComponents(IgcCheckboxComponent);
 ### 不確定
 
 コンポーネントの `Indeterminate` プロパティを使用して、チェックボックスの値を **true** にも **false** にも設定しません。
+
+```tsx
+<IgrCheckbox indeterminate="true"></IgrCheckbox>
+```
 
 ```html
 <igc-checkbox indeterminate></igc-checkbox>
@@ -157,6 +199,10 @@ defineComponents(IgcCheckboxComponent);
 
 `Required` プロパティを使用して、チェックボックスを必須としてマークできます。
 
+```tsx
+<IgrCheckbox required="true"></IgrCheckbox>
+```
+
 ```html
 <igc-checkbox required></igc-checkbox>
 ```
@@ -169,6 +215,10 @@ defineComponents(IgcCheckboxComponent);
 
 `Invalid` 属性を使用して、チェックボックスを無効としてマークすることができます。
 
+```tsx
+<IgrCheckbox invalid="true"></IgrCheckbox>
+```
+
 ```html
 <igc-checkbox invalid></igc-checkbox>
 ```
@@ -180,6 +230,10 @@ defineComponents(IgcCheckboxComponent);
 ### オフ
 
 チェックボックスをオフにするには、`Disabled` 属性を使用します。
+
+```tsx
+<IgrCheckbox disabled="true"></IgrCheckbox>
+```
 
 ```html
 <igc-checkbox disabled></igc-checkbox>
@@ -199,6 +253,10 @@ defineComponents(IgcCheckboxComponent);
 ### フォーム
 
 `Form` でチェックボックスを使用する場合は、`name` と `value` の属性を使用できます。
+
+```tsx
+<IgrCheckbox name="wifi" value="enabled"></IgrCheckbox>
+```
 
 ```html
 <igc-checkbox name="wifi" value="enabled"></igc-checkbox>
@@ -244,16 +302,21 @@ igc-checkbox::part(indicator checked) {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React *フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

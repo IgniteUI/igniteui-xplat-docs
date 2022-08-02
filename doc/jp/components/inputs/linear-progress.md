@@ -28,21 +28,39 @@ $ProductName$ Linear Progress Indicator コンポーネントは、変更でア�
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 `LinearProgress` を使用する前に、次のように登録する必要があります:
+
+```ts
+import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcLinearProgressComponent);
+```
+<!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `LinearProgress`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrLinearProgressModule, IgrLinearProgress } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrLinearProgressModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+Before using the `LinearProgress`, you need to register it as follows:
 
 ```razor
 IgbLinearProgressModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
-
-defineComponents(IgcLinearProgressComponent);
-```
-
-<!-- Blazor -->
 また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
@@ -52,6 +70,10 @@ defineComponents(IgcLinearProgressComponent);
 
 
 `LinearProgress` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
@@ -64,6 +86,10 @@ defineComponents(IgcLinearProgressComponent);
 ### 進行状況タイプ
 
 `variant` 属性を使用して、インジケーターのタイプを設定できます。リニア プログレス インジケーターには、**primary** (デフォルト)、**error**、**success**、**info**、および **warning** の 5 種類があります。
+
+```tsx
+<IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
@@ -93,6 +119,10 @@ defineComponents(IgcLinearProgressComponent);
 ### アニメーション期間
 
 `animationDuration` プロパティは、アニメーション サイクルにかかる時間を指定するために使用されます。値として、アニメーションの継続時間をミリ秒単位で表す数値を取ります。
+
+```tsx
+<IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
@@ -185,7 +215,7 @@ Linear Progress Indicator の API の詳細については、次のリンクを�
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
 * [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
@@ -193,10 +223,15 @@ Linear Progress Indicator の API の詳細については、次のリンクを�
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 
