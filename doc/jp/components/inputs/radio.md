@@ -30,7 +30,7 @@ $ProductName$ Radio コンポーネントを使用すると、ユーザーは、
 npm install {PackageWebComponents}
 ```
 
-Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
+`Radio` および `RadioGroup` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -41,13 +41,13 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Radio` and the `RadioGroup`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Radio` および `RadioGroup` とそれぞれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrRadioModule, IgrRadio, IgrRadioGroupComponent, IgrRadioGroupModule } from 'igniteui-react';
@@ -74,7 +74,7 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-The simplest way to start using the `Radio` is as follows:
+`Radio` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```tsx
 <IgrRadioGroup>
@@ -370,7 +370,7 @@ igc-radio::part(control) {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -383,7 +383,7 @@ igc-radio::part(control) {
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー

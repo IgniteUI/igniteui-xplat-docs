@@ -26,7 +26,7 @@ $ProductName$ 日時入力を使用すると、ユーザーは選択した入力
 npm install {PackageWebComponents}
 ```
 
-You will then need to import the `DateTimeInput`, its necessary CSS, and register its module, like so:
+次に、以下のように、`DateTimeInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcDateTimeInput } from 'igniteui-webcomponents';
@@ -38,7 +38,7 @@ defineComponents(IgcDateTimeInput);
 
 <!-- Blazor -->
 
-Before using the `DateTimeInput`, you need to register it as follows:
+`DateTimeInput` を使用する前に、次のように登録する必要があります:
 
 <!-- end: Blazor -->
 
@@ -248,20 +248,20 @@ input.spinDelta = spinDelta;
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー

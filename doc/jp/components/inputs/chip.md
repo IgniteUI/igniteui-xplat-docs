@@ -30,7 +30,7 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 npm install {PackageWebComponents}
 ```
 
-You will then need to import the `Chip`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
@@ -41,13 +41,13 @@ defineComponents(IgcChipComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Chip`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrChipModule, IgrChip } from 'igniteui-react';
@@ -247,19 +247,19 @@ igc-chip::part(suffix) {
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 

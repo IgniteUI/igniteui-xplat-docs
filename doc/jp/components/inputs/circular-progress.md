@@ -29,7 +29,7 @@ $ProductName$ Circular Progress Indicator コンポーネントは、変更で�
 npm install {PackageWebComponents}
 ```
 
-You will then need to import the `CircularProgress`, its necessary CSS, and register its module, like so:
+次に、以下のように、`CircularProgress` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import {defineComponents, IgcCircularProgressComponent} from 'igniteui-webcomponents';
@@ -40,13 +40,13 @@ defineComponents(IgcCircularProgressComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `CircularProgress`, its necessary CSS, and register its module, like so:
+次に、以下のように、`CircularProgress` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrCircularProgressModule, IgrCircularProgress } from 'igniteui-react';
@@ -57,7 +57,7 @@ IgrCircularProgressModule.register();
 
 <!-- Blazor -->
 
-Before using the `CircularProgress`, you need to register it as follows:
+`CircularProgress` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbCircularProgressModule.Register(IgniteUIBlazor);
@@ -235,20 +235,20 @@ Circular Progress Indicator の API の詳細については、次のリンク�
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー

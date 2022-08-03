@@ -41,13 +41,13 @@ defineComponents(IgcExpansionPanelComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `ExpansionPanel`, its necessary CSS, and register its module, like so:
+次に、以下のように、`ExpansionPanel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrExpansionPanel, IgrExpansionPanelModule } from 'igniteui-react';
@@ -93,18 +93,18 @@ IgrExpansionPanelModule.register();
 <!-- WebComponents -->
 
 - igcClosed - 展開パネルが縮小されたときに発生します。
-- igcOpened - 展開パネルが展開パネルされたときに発生します。
+- igcOpened - 展開パネルが展開されたときに発生します。
 - igcClosing - 展開パネルが縮小を開始たときに発生します。
-- igcOpening - 展開パネルが展開パネルを開始したときに発生します。
+- igcOpening - 展開パネルが展開を開始したときに発生します。
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 
-- Closed - Raised when the expansion panel is collapsed
-- Opened - Raised when the expansion panel is expanded
-- Closing - Raised when the expansion panel starts collapsing
-- Opening - Raised when the expansion panel starts expanding
+- Closed - 展開パネルが縮小されたときに発生します。
+- Opened - 展開パネルが展開されたときに発生します。
+- Closing - 展開パネルが縮小を開始たときに発生します。
+- Opening - 展開パネルが展開を開始したときに発生します。
 
 <!-- end: React -->
 
@@ -118,7 +118,7 @@ IgrExpansionPanelModule.register();
 
 <!-- React -->
 
-We can do this by binding to the `Opened` and `Closed` events:
+これを行うには、`Opened` および `Closed` イベントにバインドします:
 
 <!-- end: React -->
 
@@ -196,14 +196,14 @@ $ProductName$ 展開パネル コンポーネントは、いくつかの CSS パ
 <!-- React -->
 
 * [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
+* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
 
 <!-- end: React -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 

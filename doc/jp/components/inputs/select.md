@@ -3,6 +3,7 @@ title: $Platform$ Select Component – $ProductName$
 _description: $ProductName$ Select component 
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Select components, $Platform$ Select controls
 mentionedTypes: ['Select']
+_language: ja
 ---
 
 # $Platform$ Select
@@ -21,7 +22,7 @@ The $ProductName$ Select component allows a single selection from a list of item
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}

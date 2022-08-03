@@ -26,7 +26,7 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
-You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,13 +41,13 @@ defineComponents(IgcBadgeComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrBadgeModule, IgrBadge } from 'igniteui-react';
@@ -72,7 +72,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-The simplest way to start using the `Badge` is as follows:
+`Badge` の使用を開始する最も簡単な方法は次のとおりです:
 
 ```tsx
 <IgrBadge />
@@ -182,13 +182,13 @@ igc-badge::part(base) {
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー

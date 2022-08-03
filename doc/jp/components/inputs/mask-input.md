@@ -3,6 +3,7 @@ title: $Platform$ MaskInput | Infragistics
 _description: Infragistics' $Platform$ MaskInput allows the user to control input and format the visible value based on configurable mask rules
 _keywords: $Platform$ input, $ProductName$, Infragistics
 mentionedTypes: ['MaskInput']
+_language: ja
 ---
 
 ## $Platform$ Mask Input Overview
@@ -21,7 +22,7 @@ The $ProductName$ Mask Input is an input field that allows the developer to cont
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}

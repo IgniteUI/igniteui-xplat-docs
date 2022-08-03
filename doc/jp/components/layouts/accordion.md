@@ -3,6 +3,7 @@ title: $Platform$ Accordion | Accordion | Infragistics
 _description: Accordion is used to build vertical expandable panels in accordion menu.
 _keywords: $Platform$ Accordion, $ProductName$, Infragistics
 mentionedTypes: ['Accordion', 'ExpansionPanel']
+_language: ja
 ---
 
 # $Platform$ Accordion Overview
@@ -27,7 +28,7 @@ In it, you can see how to define an accordion and its expansion panels. The samp
 ## Getting Started with $Platform$ Accordion
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}

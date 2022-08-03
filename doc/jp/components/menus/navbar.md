@@ -56,13 +56,13 @@ defineComponents(IgcNavbarComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Navbar`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Navbar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';

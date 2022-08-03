@@ -28,7 +28,7 @@ $Platform$ スライダーと範囲スライダー コンポーネントを使�
 npm install {PackageWebComponents}
 ```
 
-Before using the `Slider` and `RangeSlider`, you need to register them as follows:
+`Slider` と `RangeSlider` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
@@ -39,13 +39,13 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-You will then need to import the `Slider` and `RangeSlider`, its necessary CSS, and register its module, like so:
+次に、以下のように、`Slider` および `RangeSlider` とそれぞれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
@@ -220,7 +220,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -233,7 +233,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 
 <!-- React -->
 * [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー

@@ -3,6 +3,7 @@ title: $Platform$ Tabs | Layout Controls | Infragistics
 _description: Use Infragistics' $Platform$ tabs component to switch between similar data sets.
 _keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Tabs Component, Infragistics
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
+_language: ja
 ---
 
 # $Platform$ Tabs
@@ -21,7 +22,7 @@ The $ProductName$ Tabs organizes and switches between similar data sets. The tab
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}

@@ -3,6 +3,7 @@ title: $Platform$ Rating
 _description: With $ProductName$ Rating, allows users to view and provide feedback using unicode symbols, svg, or icons.
 _keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Rating components, $Platform$ Rating controls
 mentionedTypes: ["Rating"]
+_language: ja
 ---
 
 # $Platform$ Rating Overview
@@ -17,7 +18,7 @@ The $ProductName$ Rating component allows users to view and provide feedback.
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +40,7 @@ defineComponents(IgcRatingComponent, IgcRatingSymbolComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
