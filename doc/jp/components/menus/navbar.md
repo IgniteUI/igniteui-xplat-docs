@@ -38,6 +38,12 @@ npm install {PackageWebComponents}
 IgbNavbarModule.Register(IgniteUIBlazor);
 ```
 
+```ts
+import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcNavbarComponent);
+```
+
 <!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Navbar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -48,21 +54,43 @@ IgbNavbarModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+<!-- React -->
 
-defineComponents(IgcNavbarComponent);
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
 ```
 
+You will then need to import the `Navbar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavbarModule.register();
+```
+
+<!-- end: React -->
 
 次に、`Navbar` のテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
+
+<!-- WebComponents -->
 
 ```html
 <igc-navbar>Navigation Title</igc-navbar>
 ```
 
+<!-- end: WebComponents -->
+
 ```razor
 <IgbNavbar>Navigation Title</IgbNavbar>
+```
+
+```tsx
+<IgrNavbar>
+    <span>Navigation Title</span>
+</IgrNavbar>
 ```
 
 ## コンテンツ
@@ -134,9 +162,16 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

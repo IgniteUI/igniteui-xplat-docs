@@ -25,12 +25,33 @@ $Platform$ Navigation Drawer は、コンテンツ内で展開または縮小さ
 ## 使用方法
 
 <!-- WebComponents -->
+
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `NavDrawer`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrNavDrawerModule, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavDrawerModule.register();
+```
+
+<!-- end: React -->
 
 `NavDrawer` を使用する前に、次のように登録する必要があります。
 
@@ -92,6 +113,26 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer open={true}>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 以下は結果です:
 
 <code-view style="height: 300px"
@@ -147,6 +188,33 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
         <span slot="content">Search</span>
     </IgbNavDrawerItem>
 </IgbNavDrawer>
+```
+
+```tsx
+<IgrNavbar>
+    <div slot="start">
+        <IgrIcon iconName="menu" collection="material"/>
+    </div>
+    <h2>Home</h2>
+</IgrNavbar>
+
+<IgrNavDrawer>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
 ```
 
 また、すべての `position` の値を表示するためにいくつかのラジオ ボタンを追加しましょう。このように、1 つが選択されるたびに、ドロワーの位置を変更します。
@@ -220,6 +288,31 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="start" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Start</span>
+    </IgrRadio>
+    <IgrRadio value="end" labelPosition="after" change={this.onRadioChange}>
+        <span>End</span>
+    </IgrRadio>
+    <IgrRadio value="top" labelPosition="after" change={this.onRadioChange}>
+        <span>Top</span>
+    </IgrRadio>
+    <IgrRadio value="bottom" labelPosition="after" change={this.onRadioChange}>
+        <span>Bottom</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrNavDrawer position={this.state.drawerPosition} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ drawerPosition: e.value });
+    }
+}
+```
+
 そして最後に、Navigation Drawer を開閉する方法が必要です。これを実現するにはいくつかの方法がありますが、この例のために、次のことを行います:
 
 ```ts
@@ -244,6 +337,14 @@ public void OnMenuIconClick()
     if(this.NavDrawerRef != null)
     {
         this.NavDrawerRef.Show();
+    }
+}
+```
+
+```tsx
+public onMenuIconClick() {
+    if (this.navDrawerRef) {
+        this.navDrawerRef.show();
     }
 }
 ```
@@ -305,6 +406,35 @@ public void OnMenuIconClick()
         </IgbNavDrawerItem>
     </div>
 </IgbNavDrawer>
+```
+
+```tsx
+<IgrNavDrawer>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material"/>
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+    <div slot="mini">
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="home" collection="material"/>
+            </div>                                
+        </IgrNavDrawerItem>
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="search" collection="material" />
+            </div>                                
+        </IgrNavDrawerItem>
+    </div>
+</IgrNavDrawer>
 ```
 
 以下は結果です:
@@ -372,9 +502,16 @@ igc-nav-drawer-header-item {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

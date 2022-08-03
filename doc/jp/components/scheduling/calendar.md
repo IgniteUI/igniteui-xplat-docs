@@ -27,12 +27,33 @@ $ProductName$ Calendar コンポーネントは、日付情報を表示するた
 ## 使用方法
 
 <!-- WebComponents -->
+
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Calendar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCalendarModule.register();
+```
+
+<!-- end: React -->
 
 `Calendar` を使用する前に、次のように登録する必要があります。
 
@@ -66,6 +87,10 @@ defineComponents(IgcCalendarComponent);
 <IgbCalendar />
 ```
 
+```tsx
+<IgrCalendar />
+```
+
 ### 単一モード
 
 ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
@@ -76,6 +101,10 @@ defineComponents(IgcCalendarComponent);
 
 ```razor
 <IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
+```
+
+```tsx
+<IgrCalendar selection="multiple" />
 ```
 
 <code-view style="height: 370px"
@@ -96,6 +125,10 @@ defineComponents(IgcCalendarComponent);
 
 ```razor
 <IgbCalendar Selection="@CalendarBaseSelection.Range" />
+```
+
+```tsx
+<IgrCalendar selection="range" />
 ```
 
 <code-view style="height: 480px"
@@ -270,6 +303,10 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 <IgbCalendar ShowWeekNumbers="true" />
 ```
 
+```tsx
+<IgrCalendar showWeekNumbers={true} />
+```
+
 次のデモは、週番号が有効になっている Calendar を示しています:
 
 <code-view style="height: 480px"
@@ -291,6 +328,10 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 ```razor
 <IgbCalendar VisibleMonths="2" HideOutsideDays="true" />
+```
+
+```tsx
+<IgrCalendar visibleMonths={2} hideOutsideDays={true} />
 ```
 
 次のサンプルは、複数月の構成を示しています:
@@ -317,9 +358,13 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 選択した日付がエンド ユーザーによって変更されると、Calendar コンポーネントは `Change` イベントを発行します。このようにイベントをサブスクライブできます:
 
+<!-- WebComponents -->
+
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
+
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCalendar Change="@OnCalendarChange" />
@@ -329,6 +374,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
     {
 
     }
+}
+```
+
+```tsx
+<IgbCalendar change={this.onCalendarChange} />
+
+public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs){
+
 }
 ```
 
@@ -468,9 +521,16 @@ igc-calendar::part(year-inner current selected) {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

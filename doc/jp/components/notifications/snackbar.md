@@ -32,6 +32,25 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Snackbar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrSnackbarModule, IgrSnackbar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrSnackbarModule.register();
+```
+
+<!-- end: React -->
+
 `Snackbar` を使用する前に、次のように登録する必要があります:
 
 ```razor
@@ -73,6 +92,25 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
     {
         IgbSnackbarModule.Register(IgniteUIBlazor);
         IgbButtonModule.Register(IgniteUIBlazor);
+    }
+}
+```
+
+```tsx
+<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+    <span>Show Snackbar</span>
+</IgrButton>
+<IgrSnackbar ref={this.onSnackbarRef}>
+    <span>Snackbar Message</span>
+</IgrSnackbar>
+
+public onSnackbarRef(snackbar: IgrSnackbar){
+    if (!snackbar) { return; }
+    this.snackbarRef = snackbar;
+}
+public onShowButtonClicked() {
+    if(this.snackbarRef){
+        this.snackbarRef.show();
     }
 }
 ```
@@ -128,8 +166,26 @@ igc-snackbar::part(base) {
 
 ## その他のリソース
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
 
 ## API メンバー
 

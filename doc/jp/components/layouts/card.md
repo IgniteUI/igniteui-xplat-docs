@@ -37,6 +37,25 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Card`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCardModule, IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCardModule.register();
+```
+
+<!-- end: React -->
+
 `Card` を使用する前に、次のように登録する必要があります:
 
 ```razor
@@ -93,6 +112,38 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </igc-card>
 ```
 
+```tsx
+<IgrCard>
+    <IgrCardMedia>
+        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50"></img>
+    </IgrCardMedia>
+    <IgrCardHeader>
+        <h3 slot="title">New York City</h3>
+        <h5 slot="subtitle">City in New York</h5>
+    </IgrCardHeader>
+    <IgrCardContent>
+        <p>New York City comprises 5 boroughs sitting where the
+            Hudson River meets the Atlantic Ocean. At its core is Manhattan,
+            a densely populated borough that’s among the world’s major commercial,
+            financial and cultural centers.</p>
+    </IgrCardContent>
+    <IgrCardActions>
+        <IgrButton>
+            <span>Read more</span>
+            <IgrRipple />
+        </IgrButton>
+        <div slot="end">
+            <IgrIconButton iconName="twitter" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+            <IgrIconButton iconName="facebook" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+        </div>
+    </IgrCardActions>
+</IgrCard>
+```
+
 ```razor
 <IgbCard>
     <IgbCardMedia>
@@ -146,6 +197,16 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
+```
+
+```tsx
+<IgrCardHeader>
+    <div slot="thumbnail">
+        <IgrAvatar src="path/to/image" initials="TS" />
+    </div>
+    <h3 slot="title">Title</h3>
+    <h5 slot="subtitle">Subtitle</h5>
+</IgrCardHeader>
 ```
 
 ```razor
@@ -216,6 +277,30 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </IgbCardActions>
     </div>
 </IgbCard>
+```
+
+```tsx
+<IgrCard>
+    <div className="card-horizontal">
+        <div>
+            <IgrCardHeader>
+                <img src="https://static.infragistics.com/xplatform/images/music/rozes.jpg" slot="thumbnail"></img>
+                <h5 slot="title">Rozes</h5>
+                <h5 slot="subtitle">Under the Grave (2016)</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>As I have always said: I write what’s real and what’s true,
+                    even if it means throwing myself under the bus.</p>
+            </IgrCardContent>
+        </div>
+        <div className="divider"></div>
+        <IgrCardActions>
+            <span className="material-icons">skip_previous</span>
+            <span className="material-icons">play_arrow</span>
+            <span className="material-icons">skip_next</span>
+        </IgrCardActions>
+    </div>
+</IgrCard>
 ```
 
 追加の `div` 要素を使用して `CardHeader` と `CardContent` をバンドルし、それらを垂直方向に整列させ、`.card-horizontal` クラスをラッピング `div` 要素に適用して、カードの 2 つのセクションを水平方向に整列させます。
@@ -304,6 +389,32 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCard>
 ```
 
+```tsx
+<IgrCard>
+    <div className="semi-horizontal">
+        <div>
+            <IgrCardHeader>
+                <IgrAvatar src="https://static.infragistics.com/xplatform/images/music/singer_with_mic.jpg" slot="thumbnail" />
+                <h5 slot="title">HERE</h5>
+                <h5 slot="subtitle">by Mellow D</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>Far far away, behind the word mountains,
+                    far from the countries Vokalia and Consonantia,
+                    there live the blind texts.</p>
+            </IgrCardContent>
+            <IgrCardActions>
+                <IgrButton><span>Play Album</span></IgrButton>
+            </IgrCardActions>
+        </div>
+        
+        <IgrCardMedia className='card-media'>
+            <img src="https://static.infragistics.com/xplatform/images/music/singer_female.jpg"></img>
+        </IgrCardMedia>
+    </div>
+</IgrCard>
+```
+
 ```css
 .semi-horizontal {
     display: flex;
@@ -363,6 +474,23 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </IgbIconButton>
     </div>
 </IgbCardActions>
+```
+
+```tsx
+<IgrCardActions>
+    <IgrButton>
+        <span>Read more</span>
+        <IgrRipple />
+    </IgrButton>
+    <div slot="end">
+        <IgrIconButton ref={this.iconRef} className="marginIcon" iconName="twitter" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+        <IgrIconButton iconName="facebook" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+    </div>
+</IgrCardActions>
 ```
 
 これで、アイコン ボタンがフラット スタイル テキスト ボタンの前に表示されます。
@@ -433,9 +561,17 @@ igc-icon-button+igc-icon-button {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [GitHub の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
 
 <!-- WebComponents -->
 
