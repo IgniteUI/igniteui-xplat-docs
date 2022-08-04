@@ -1,31 +1,31 @@
 ---
-title: $Platform$ Accordion | Accordion | Infragistics
-_description: Accordion is used to build vertical expandable panels in accordion menu.
-_keywords: $Platform$ Accordion, $ProductName$, Infragistics
+title: $Platform$ Accordion | アコーディオン | インフラジスティックス
+_description: アコーディオンは、アコーディオン メニューで垂直方向に展開可能なパネルを構築するために使用されます。
+_keywords: $Platform$ Accordion, $ProductName$, Infragistics, $Platform$ アコーディオン, インフラジスティックス
 mentionedTypes: ['Accordion', 'ExpansionPanel']
 _language: ja
 ---
 
-# $Platform$ Accordion Overview
-The $ProductName$ Accordion is a GUI component for building vertical expandable panels with clickable headers and associated content sections, displayed in a single container. The accordion is commonly used to reduce the need of scrolling across multiple sections of content on a single page. It offers keyboard navigation and API to control the underlying panels' expansion state. 
+# $Platform$ Accordion (アコーディオン) の概要
+$ProductName$ アコーディオンは、単一のコンテナーに表示されるクリック可能なヘッダーと関連するコンテンツ セクションを含む垂直方向に展開可能なパネルを構築するための GUI コンポーネントです。Accordion は、単一のページのコンテンツの複数のセクションでスクロールする必要性を軽減するためによく使用されます。キーボード ナビゲーションと基になるパネルの展開状態を制御する API を提供します。 
 
-Users are enabled to interact and navigate among a list of items, such as thumbnails or labels. Each one of those items can be toggled (expanded or collapsed) in order to reveal the containing information. Depending on the configuration, there can be a single or multiple expanded items at a time. 
+ユーザーは、サムネイルやラベルなどの項目のリスト間で操作および移動できます。含まれる情報を表示するために、各項目を切り替えることができます (展開または縮小)。構成に応じて、一度に 1 つまたは複数の展開されている項目があります。 
 
-## $Platform$ Accordion Example
-The following is a basic $ProductName$ Accordion example of a FAQ section. It operates as an accordion, with individually working sections. You can toggle each text block with a single click, while expanding multiple panels at the same time. This way you can read information more easily, without having to go back and forth between an automatically expanding and collapsing panel, which conceals the previously opened section every time. 
+## $Platform$ アコーディオンの例
+以下は FAQ セクションの基本的な $ProductName$ アコーディオンの例です。アコーディオンとして動作し、個別に動作します。複数のパネルを同時に展開しながら、各テキスト ブロックをシングル クリックで切り替えることができます。これにより、自動的に展開および縮小パネル間を前後に移動することなく、情報をより簡単に読み取ることができます。このパネルは、以前に開いたセクションを毎回非表示にします。 
 
-In it, you can see how to define an accordion and its expansion panels. The sample also demonstrates the two types of expansion behavior. The switch button sets the `singleExpand` property to toggle between single and multiple branches to be expanded at a time.
+その中で、アコーディオンとその展開パネルを定義する方法を見ることができます。このサンプルは、2 種類の展開動作も示します。切り替えボタンは `singleExpand` プロパティを設定し、一度に展開する単一ブランチと複数ブランチを切り替えます。
 
 <code-view style="height: 460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-overview"
-           alt="$Platform$ Accordion Example"
+           alt="$Platform$ アコーディオンの例"
            github-src="layouts/accordion/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Getting Started with $Platform$ Accordion
+## $Platform$ アコーディオンで作業を開始
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
@@ -34,7 +34,7 @@ In it, you can see how to define an accordion and its expansion panels. The samp
 npm install {PackageWebComponents}
 ```
 
-Before using the `Accordion`, you need to register it as follows:
+`Accordion` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import {defineComponents, IgcAccordionComponent, IgcExpansionPanelComponent} from 'igniteui-webcomponents';
@@ -43,16 +43,16 @@ defineComponents(IgcAccordionComponent, IgcExpansionPanelComponent);
 ```
 
 <!-- end: WebComponents -->
-Now you can start with a basic configuration of the `Accordion` and its panels.
+これで、 `Accordion` とそのパネルの基本構成から始めることができます。
 
-## Usage
+## 使用方法
 
-Each section in the $Platform$ Accordion Component is defined using an $Platform$ Expansion Panel.
-Panels provide `disabled` and `open` properties, which give you the ability to configure the states of the panel as per your requirement. 
+$Platform$ アコーディオン コンポーネントの各セクションは、$Platform$ 展開パネルを使用して定義されます。
+パネルには、`disabled` および `open` プロパティが用意されており、要件に応じてパネルの状態を構成できます。
 
-### Declaring an accordion
+### Accordion の宣言
 
-The accordion wraps all expansion panel`s declared inside it.
+アコーディオンは、その中で宣言されたすべての展開パネルをラップします。
 
 ```html
 <igc-accordion id="accordion" single-expand="true">
@@ -71,7 +71,7 @@ The accordion wraps all expansion panel`s declared inside it.
 </igx-accordion>
 ```
 
-Using the `panels` accessor you can get a reference to the collection containing all expansion panels children of the `Accordion`.
+`panels` アクセサーを使用して、`Accordion` のすべての子の拡張パネルを含むコレクションへの参照を取得できます。
 
 ```typescript
 private accordion: IgcAccordionComponent;
@@ -83,57 +83,57 @@ constructor() {
 }
 ```
 
-As demonstrated above, the `singleExpand`property gives you the ability to set whether single or multiple panels can be expanded at a time.
+上記で示したように、`singleExpand` プロパティを使用すると、一度に 1 つまたは複数のパネルを展開できるかどうかを設定できます。
 
-By using the `hideAll` and `showAll` methods you can respectively collapse and expand all `ExpansionPanel`s of the `Accordion` programmatically.
+`hideAll` メソッドと `showAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanels` をプログラムでそれぞれ省略したり展開したりできます。
 
-> Note: If `singleExpand` property is set to *true* calling `showAll` method would expand only the focused panel.
+> 注: `singleExpand` プロパティが *true* に設定されている場合、`showAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
 
-### $Platform$ Accordion Customization Example
-With the $Platform$ Accordion, you can customize the header and content panel's appearance. 
-The sample below demonstrates how elaborate filtering options can be implemented using the built-in slots of the `ExpansionPanel`.
+### $Platform$ アコーディオンのカスタマイズの例
+$Platform$ アコーディオンを使用すると、ヘッダーとコンテンツ パネルの外観をカスタマイズできます。 
+以下のサンプルは、`ExpansionPanel` の組み込みスロットを使用して、複雑なフィルタリング オプションを実装する方法を示しています。
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-customization"
-           alt="$Platform$ Accordion Customization Example"
+           alt="$Platform$ アコーディオンのカスタマイズの例"
            github-src="layouts/accordion/customization">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Nested $Platform$ Accordions Scenario
-In the following $Platform$ Accordion example is created a complex FAQ section in order to illustrate how you can go about this common application scenario. In the sample nested `Accordion` is achieved by adding an accordion inside an expansion panel.
+### ネストされた $Platform$ アコーディオンのシナリオ
+次の $Platform$ アコーディオンの例では、この一般的なアプリケーション シナリオにどのように取り組むことができるかを説明するために、複雑な FAQ セクションが作成されています。サンプルでは、ネストされたアコーディオンは、展開パネル内に `Accordion` を追加することによって実現されます。
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-nested-scenario"
-           alt="$Platform$ Accordion Nested Example"
+           alt="ネストされた $Platform$ アコーディオンの例"
            github-src="layouts/accordion/nested-scenario">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-Keyboard navigation in the $Platform$ Accordion provides a rich variety of keyboard interactions to the end-user. This functionality is enabled by default and allows end-users to easily navigate through the panels.
-The Accordion navigation is compliant with W3C accessibility standards and convenient to use.
+$Platform$ アコーディオンのキーボード ナビゲーションは、エンド ユーザーにさまざまなキーボード操作を提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にパネル間を移動できます。
+アコーディオン ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすいです。
 
-**Key Combinations**
- - <kbd>Arrow Down</kbd> - moves the focus to the panel below
- - <kbd>Arrow Up</kbd> - moves the focus to the panel above
- - <kbd>Alt + Arrow Down</kbd> - opens the focused panel in the accordion
- - <kbd>Alt + Arrow Up</kbd> - closes the focused panel in the accordion
- - <kbd>Shift + Alt + Arrow Down</kbd> - opens all enabled panels (if singleExpand is set to true opens the focused panel)
- - <kbd>Shift + Alt + Arrow Up</kbd> - closes all enabled panels
- - <kbd>Home</kbd> - navigates to the FIRST enabled panel in the accordion
- - <kbd>End</kbd> - navigates to the LAST enabled panel in the accordion
+**キーの組み合わせ**
+ - <kbd>下矢印</kbd> - フォーカスを下のパネルに移動します。
+ - <kbd>上矢印</kbd> - フォーカスを上のパネルに移動します。
+ - <kbd>Alt +下矢印</kbd> - アコーディオンでフォーカスされたパネルを開きます。
+ - <kbd>Alt +上矢印</kbd> - Accordion でフォーカスされたパネルを閉じます。
+ - <kbd>Shift + Alt +下矢印</kbd> - 有効なすべてのパネルを開きます。 (singleExpand が true に設定されている場合、フォーカスされたパネルが開きます)。
+ - <kbd>Shift + Alt +上矢印</kbd> - 有効なすべてのパネルを閉じます。
+ - <kbd>Home</kbd> - Accordion の最初の有効なパネルに移動します。
+ - <kbd>END</kbd> - Accordion の最後の有効なパネルに移動します。
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the Accordion's API, refer to the following links:
+アコーディオン API の詳細については、次のリンクを参照してください:
 * `Accordion`
 * `ExpansionPanel`
 
@@ -141,22 +141,22 @@ For more detailed information regarding the Accordion's API, refer to the follow
 
 <div class="divider"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
- ## API Members
+ ## API メンバー
  - `Accordion`
  - `ExpansionPanel`

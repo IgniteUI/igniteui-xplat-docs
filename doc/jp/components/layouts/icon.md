@@ -126,9 +126,9 @@ registerIcon(
 
 <!-- React -->
 
-To register an image as an icon, all you need to do is call one of the 2 "register" methods on a single `Icon` element that allow you to add icons to an icon collection on your page.
+画像をアイコンとして登録するには、1 つの `Icon` 要素で 2 つの「登録」メソッドのいずれかを呼び出すだけで、ページ上のアイコン コレクションにアイコンを追加できます。
 
-The `RegisterIcon` method allows you to register an SVG image as an icon from an external file:
+`RegisterIcon` メソッドを使用すると、外部ファイルから SVG 画像をアイコンとして登録できます。
 
 ```tsx
 

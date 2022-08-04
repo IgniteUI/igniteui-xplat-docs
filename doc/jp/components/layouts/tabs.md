@@ -1,25 +1,25 @@
 ---
-title: $Platform$ Tabs | Layout Controls | Infragistics
-_description: Use Infragistics' $Platform$ tabs component to switch between similar data sets.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Tabs Component, Infragistics
+title: $Platform$ Tabs | レイアウト コントロール | インフラジスティックス
+_description: 同様のデータ セットを切り替えるには、インフラジスティックスの $Platform$ タブ コンポーネントを使用します。
+_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ タブ コンポーネント, インフラジスティックス
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 _language: ja
 ---
 
-# $Platform$ Tabs
+# $Platform$ Tabs (タブ)
 
-The $ProductName$ Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
+$ProductName$ タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
 
-## $Platform$ Tabs Example
+## $Platform$ タブの例
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-overview"
-           alt="$Platform$ Tabs Example"
+           alt="$Platform$ タブの例"
            github-src="layouts/tabs/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
@@ -29,7 +29,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Tabs`, you need to register it as follows:
+`Tabs` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbTabsModule.Register(IgniteUIBlazor);
@@ -41,7 +41,7 @@ import { defineComponents, IgcTabsComponent } from 'igniteui-webcomponents';
 defineComponents(IgcTabsComponent);
 ```
 
-Simple `Tabs` declaration is done as follows:
+単純な `Tabs` の宣言は次のように行われます:
 
 ```html
 <igc-tabs>
@@ -65,17 +65,17 @@ Simple `Tabs` declaration is done as follows:
 </IgbTabs>
 ```
 
-### Selection
+### 選択
 
-The `Tabs` emits `igcChange` event when the user selects an item either by key press or click. The `select` method allows you to select a tab by specifying its panel as string value.
+ユーザーがキーを押すかクリックして項目を選択すると、 `Tabs` は `igcChange` イベントを発行します。`select` メソッドを使用すると、パネルを文字列値として指定してタブを選択できます。
 
-If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
+選択したタブが初期の読み込み時に指定されていない場合、無効になっていない最初のタブが選択されます。
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing `Space` or `Enter`
+ユーザーが矢印キーでナビゲートしているときにタブを選択するデフォルトの動作は、 `activation` プロパティによって変更できます。`manual` に設定すると、矢印キーを押すと次 / 前のタブにフォーカスしますが、タブは `Space` または `Enter` を押した後にのみ選択されます。
 
-### Disabled Tab
+### 無効化されたタブ
 
-A tab is disabled by setting the `disabled` attribute:
+`disabled` 属性を設定すると、タブが無効になります:
 
 ```html
 <igc-tab panel="first" disabled>Tab 1</igc-tab>
@@ -85,78 +85,78 @@ A tab is disabled by setting the `disabled` attribute:
 <IgbTab Panel="first" Disabled>Tab 1</IgbTab>
 ```
 
-### Alignment
+### 配置
 
-The `alignment` property controls how tabs are positioned. It accepts the following values:
+`alignment` プロパティは、タブの配置方法を制御します。プロパティは以下の値を含みます:
 
-- `start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
-- `center`: the width of the tab depends on the content and occupies the tabs container's center.
-- `end`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
-- `justify`: all tabs are equal in width and fully fit the tabs container. 
+- `start` (デフォルト): タブの幅はコンテンツ (ラベル、アイコン、両方) に依存し、すべてのタブのパディングは等しくなります。最初のタブは、タブ コンテナーの左側に配置されます。
+- `center`: タブの幅はコンテンツによって異なり、タブ コンテナーの中心を占めます。
+- `end`: タブの幅はコンテンツによって異なり、すべてのタブのパディングは同じです。最後のタブは、タブ コンテナーの右側に配置されます。
+- `justify`: すべてのタブは幅が等しく、タブ コンテナーに完全に収まります。 
 
-If the space is not enough to fit all tabs, scroll buttons are displayed.
+スペースがすべてのタブに収まらない場合は、スクロール ボタンが表示されます。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-alignment"
-           alt="$Platform$ Tabs Example"
+           alt="$Platform$ タブの例"
            github-src="layouts/tabs/alignment">
 </code-view>
 
-### Scrolling
+### スクローリング
 
-Scroll buttons are shown when the available space is not enough to render all tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
+スクロール ボタンは、利用可能なスペースがすべてのタブを描画するのに十分でない場合に表示されます。最初のタブが表示されている場合、スクロール開始ボタンは無効になります。最後のタブが表示されている場合、スクロール終了ボタンは無効になります。スクロール ボタンの 1 つを押すと、その方向のタブが完全に表示されるようにタブがスクロールされます。または、既に表示されている場合は、その方向の前 / 次のタブが表示されます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-scrolling"
-           alt="$Platform$ Tabs Example"
+           alt="$Platform$ タブの例"
            github-src="layouts/tabs/scrolling">
 </code-view>
 
-### Keyboard Navigation
+### キーボード ナビゲーション
 
-|Keys|Description|
+|キー|説明|
 |----|-----------|
-| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to end if on first tab.  |
-| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to start if on last tab. |
-| <kbd>Home</kbd> | Selects the first tab. |
-| <kbd>End</kbd> | Selects the last tab. |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `activation` is `manual` |
+| <kbd>&larr;</kbd> | 前 (右から左モードでは次) のタブを選択します。`activation` が `manual` に設定されている場合は、タブのみがフォーカスされます。最初のタブにある場合は最後までスクロールします。 |
+| <kbd>&rarr;</kbd> | 次へ (右から左モードでは前へ) タブを選択します。`activation` が `manual` に設定されている場合は、タブのみがフォーカスされます。最後のタブにある場合は、スクロールして開始します。 |
+| <kbd>Home</kbd> | 最初のタブを選択します。 |
+| <kbd>End</kbd> | 最後のタブを選択します。 |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | `activation` が `manual` の場合、フォーカスされたタブを選択します。 |
 
-### Prefix / Suffix
+### Prefix / Suffix (プレフィックス / サフィックス)
 
-Each tab has default slot to display information - icon, text or both and `prefix` and `suffix` slots to show additional content in the beginning and/or in the end.
+各タブには、情報を表示するためのデフォルト スロットがあります。アイコン、テキスト、またはその両方と、開始および / または終了に追加のコンテンツを表示するための `prefix` と `suffix` のスロットです。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-prefix-suffix"
-           alt="$Platform$ Tabs Example"
+           alt="$Platform$ タブの例"
            github-src="layouts/tabs/prefix-suffix">
 </code-view>
 
-### Styling
+### スタイル設定
 
-The `Tabs` component exposes CSS parts for all of its elements:
+`Tabs` コンポーネントは、そのすべての要素の CSS パーツを公開します。
 
-| Name | Description |
+| 名前 | 説明 |
 |--|--|
-| `headers` | The wrapper which includes the tabs and the scroll buttons. |
-| `headers-content` | The container for the tabs which represents the available space for rendering of the tabs. |
-| `headers-wrapper` | The wrapper for the tabs and the selected indicator. |
-| `headers-scroll` | The container for the tabs. |
-| `selected-indicator` | The selected indicator. |
-| `start-scroll-button` | The start scroll button displayed when the tabs overflow. |
-| `end-scroll-button` | The end scroll button displayed when the tabs overflow. |
-| `content` | The container for the content where the data is displayed. |
+| `headers` | タブとスクロール ボタンを含むラッパー。 |
+| `headers-content` | タブの描画に使用できるスペースを表すタブのコンテナー。 |
+| `headers-wrapper` | タブと選択されたインジケーターのラッパー。 |
+| `headers-scroll` | タブのコンテナー。 |
+| `selected-indicator` | 選択されたインジケーター。 |
+| `start-scroll-button` | タブがオーバーフローしたときに表示されるスクロール開始ボタン。 |
+| `end-scroll-button` | タブがオーバーフローしたときに表示されるスクロール終了ボタン。|
+| `content` | データが表示されるコンテンツのコンテナー。 |
 
-The `Tab` component exposes the following CSS parts:
+`Tab` コンポーネントは、次の CSS パーツを公開します:
 
-|Name|Description|
+|名前|説明|
 |--|--|
-| `base` | The base wrapper of the tab header. |
-| `prefix` | The prefix wrapper. |
-| `suffix` | The suffix wrapper. |
+| `base` | タブ ヘッダーの基本ラッパー。|
+| `prefix` | プレフィックス ラッパー。 |
+| `suffix` | サフィックス ラッパー。 |
 
 ```css
 igc-tabs::part(selected-indicator) {
@@ -170,31 +170,31 @@ igc-tab::part(base) {
 
 <!-- WebComponents -->
 
-## API Reference
+## API リファレンス
 
 * `Tabs`
 * `Tab`
 * `TabPanel`
 
-Additional components and/or directives that were used:
+使用したその他のコンポーネントとディレクティブ:
 * `Icon`
 * `IconButton`
 * `RadioGroup`
 
 <!-- end: WebComponents -->
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

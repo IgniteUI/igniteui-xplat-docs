@@ -1,25 +1,25 @@
 ---
-title: $Platform$ MaskInput | Infragistics
-_description: Infragistics' $Platform$ MaskInput allows the user to control input and format the visible value based on configurable mask rules
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: $Platform$ MaskInput | インフラジスティックス
+_description: インフラジスティックスの $Platform$ MaskInput により、ユーザーは入力を制御し、構成可能なマスク ルールに基づいて表示される値を書式設定できます。
+_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
 mentionedTypes: ['MaskInput']
 _language: ja
 ---
 
-## $Platform$ Mask Input Overview
+## $Platform$ Mask Input (マスク入力) の概要
 
-The $ProductName$ Mask Input is an input field that allows the developer to control user input and format the visible value, based on configurable rules. It provides different input options and ease in use and configuration.
+$ProductName$ マスク入力は、構成可能なルールに基づいて、開発者がユーザー入力を制御し、表示される値を書式設定できるようにする入力フィールドです。入力オプションも構成できます。
 
-### $Platform$ Mask Input Example
+### $Platform$ マスク入力の例
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="$Platform$ Mask Input Overview Example"
+           alt="$Platform$ マスク入力の概要の例"
            github-src="inputs/mask-input/overview">
 </code-view>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
@@ -29,7 +29,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `IgcMaskInput`, you need to register it as follows:
+`IgcMaskInput` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
@@ -38,29 +38,29 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 defineComponents(IgcMaskInputComponent);
 ```
 
-### Mask Rules
-The table bellow shows the supported built-in mask rules:
+### マスクのルール
+次の表は、サポートされている組み込みのマスク ルールを示しています:
 
-| Mask Character | Description |
+| マスク文字 | 説明 |
 | :--- | :--- |
-| 0 | Digit character [0-9]. Entry is required. |
-| 9 | Digit character [0-9]. Entry is optional. |
-| # | Digit character [0-9], plus (+), or minus (-) sign. Entry is required. |
-| L | Letter character. Entry is required. |
-| ? | Letter character. Entry is optional. |
-| A | Alphanumeric (letter or digit) character. Entry is required. |
-| a | Alphanumeric (letter or digit) character. Entry is optional. |
-| & | Any keyboard character. Entry is required. |
-| C | Any keyboard character. Entry is optional. |
-| \ | Escapes a mask flag and turns it into a literal. |
+| 0 | 数字文字 [0-9]。エントリは必須です。 |
+| 9 | 数字文字 [0-9]。エントリはオプションです。 |
+| # | 数字文字 (0-9]、正符号 (+) 、または負符号 (-) が必須。エントリは必須です。 |
+| L | 通常の文字。エントリは必須です。 |
+| ? | 通常の文字。エントリはオプションです。 |
+| A | 英数字 (文字または数字) 文字。エントリは必須です。 |
+| a | 英数字 (文字または数字) 文字。エントリはオプションです。|
+| & | 任意のキーボード文字。エントリは必須です。 |
+| C | 任意のキーボード文字。エントリはオプションです。 |
+| \ | マスク フラグをエスケープし、リテラルに変換します。|
 
-These flags also participate in the component validation - i.e., the input becomes invalid if some but not all required positions are filled (no positions filled/empty value is still a responsibility of `required`). This applies to both stand-alone inputs and when included in a form.
+これらのフラグは、コンポーネントの検証にも参加します。つまり、必要な位置のすべてではなく一部が満たされている場合、入力は無効になります (位置が満たされていない/空の値は、依然として `required` の責任です)。これは、スタンドアロンの入力とフォームに含まれる場合の両方に適用されます。
 
-### Applying Mask
+### マスクの適用
 
-Applying the mask is pretty straightforward. All you need to do is provide a predetermined pattern to the `mask` property of the input.
+マスクの適用は非常に簡単です。必要なことは、入力の `mask` プロパティに事前に決定されたパターンを提供することだけです。
 
-In the example below, we will apply a mask for a phone number with an extension code.
+以下の例では、内線番号付きの電話番号にマスクを適用します。
 
 ```html
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999">
@@ -69,61 +69,61 @@ In the example below, we will apply a mask for a phone number with an extension 
 </igc-mask-input>
 ```
 
-After that you should see the following in your browser:
+その後、ブラウザーに次のように表示されます:
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="$Platform$ Mask Input Applying Mask Example"
+           alt="$Platform$ マスク入力マスクの適用の例"
            github-src="inputs/mask-input/applying-mask">
 </code-view>
 
-### Prompt Character
+### プロンプト文字
 
-Developers can customize the prompt symbol used for unfilled parts of the mask. To do this, simply provide any character to the `prompt` property:
+開発者は、マスクの塗りつぶされていない部分に使用されるプロンプト シンボルをカスタマイズできます。これを行うには、 `prompt` プロパティに任意の文字を指定するだけです:
 
 ```html
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999" prompt="-"></igc-mask-input>
 ```
 
-By default, the `prompt` character is *underscore*.
+デフォルトでは、`prompt` 文字はアンダースコアです。
 
-### Placeholder
+### プレースホルダー
 
-Developers can also take advantage of the `placeholder` property, which serves the purpose of the native input placeholder attribute. If no value is provided for the placeholder, the value of the mask is used as such.
+開発者は、ネイティブ入力プレースホルダー属性の目的を果たす `placeholder` プロパティを利用することもできます。プレースホルダーに値が指定されていない場合は、マスクの値がそのまま使用されます。
 
 ```html
 <igc-mask-input id="mask-input" mask="00/00/0000" placeholder="dd/MM/yyyy"></igc-mask-input>
 ```
 
-### Value Modes
+### 値モード
 
-The `IgcMaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
+IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `valueMode` プロパティを公開します。デフォルトでは、`valueMode` は *raw* に設定されています。以下の例をご覧ください:
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="$Platform$ Mask Input Value Modes Example"
+           alt="$Platform$ マスク入力値モードの例"
            github-src="inputs/mask-input/value-modes">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The `IgcMaskInput` component derives from the `IgcInput` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+`IgcMaskInput` コンポーネントは `IgcInput` コンポーネントから派生するため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#styling)を参照してください。
 
-## Assumptions and limitations
+## 仮定と制限
 
-- The masked input does not expose a _type_ attribute since it is always an input of type **text**.
-- Undo/redo behavior is currently unsupported.
+- マスクされた入力は、常に**テキスト**型の入力であるため、_type_ 属性を公開しません。
+- 元に戻す / やり直しの動作は現在サポートされていません。
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
 * `Input`
 * `MaskInput`
 
-Additional Web Components that were used:
+使用したその他の WEB コンポーネント:
 
 * `Icon`
 * `Radio`
@@ -131,18 +131,18 @@ Additional Web Components that were used:
 
 <!-- end: WebComponents -->
 
-### Additional Resources
+### その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
