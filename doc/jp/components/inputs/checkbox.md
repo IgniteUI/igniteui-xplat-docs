@@ -314,7 +314,7 @@ igc-checkbox::part(indicator checked) {
 <!-- end: WebComponents -->
 
 <!-- React -->
-* [Ignite UI for React *フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
 * [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 

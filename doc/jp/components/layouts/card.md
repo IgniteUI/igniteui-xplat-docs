@@ -532,7 +532,7 @@ igc-icon-button+igc-icon-button {
 ### まとめ
 このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の $Platform$ を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
 
-<!-- Web Components -->
+<!-- WebComponents -->
 
 ## API リファレンス
 
@@ -571,7 +571,6 @@ igc-icon-button+igc-icon-button {
 * [GitHub の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
 
 <!-- end: React -->
-
 
 <!-- WebComponents -->
 

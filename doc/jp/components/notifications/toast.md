@@ -12,7 +12,7 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 ## $ProductName$ Toast の例
 
-This sample demonstrates how to create `Toast` component.
+このサンプルは、`Toast` コンポーネントの作成方法を示しています:
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
