@@ -1,25 +1,25 @@
 ---
-title: $Platform$ Select Component – $ProductName$
-_description: $ProductName$ Select component 
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Select components, $Platform$ Select controls
+title: $Platform$ Select コンポーネント – $ProductName$
+_description: $ProductName$ Select コンポーネント
+_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Select components, $Platform$ Select controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Select コンポーネント, $Platform$ Select コントロール
 mentionedTypes: ['Select']
 _language: ja
 ---
 
-# $Platform$ Select
-The $ProductName$ Select component allows a single selection from a list of items, placed in a dropdown. This form control offers a quick items list navigation, including selection, based on a single or multiple characters match. 
+# $Platform$ Select (選択)
+選択コンポーネントは、ドロップダウンに配置された項目のリストからの単一選択できます。このフォーム コントロールは、1 つまたは複数の文字の一致に基づく選択を含む、項目リストの迅速なナビゲーションを提供します。 
 
-## $Platform$ Select Example
+## $Platform$ 選択の例
 
 <code-view style="height:220px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="$Platform$ Select Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="$Platform$ Select の例"
            github-src="inputs/select/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Usage
+## 使用方法
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
@@ -28,7 +28,7 @@ The $ProductName$ Select component allows a single selection from a list of item
 npm install {PackageWebComponents}
 ```
 
-Before using the `Select` component, you need to register it together with its additional components:
+`Select` コンポーネントを使用する前に、追加のコンポーネントとともに登録する必要があります:
 
 ```ts
 import { defineComponents,
@@ -45,9 +45,9 @@ defineComponents(IgcSelectComponent, IgcSelectItemComponent, IgcSelectGroupCompo
 <!-- end: WebComponents -->
 
 > [!NOTE]
-> Please note that the select header and group components are not mandatory unless you want to use them.
+> ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
-To start using the component add the `igc-select` along with a list of `igc-select-item`'s to choose from:
+コンポーネントの使用を開始するには、選択する `igc-select-item` のリストとともに `igc-select` を追加します。
 
 ```html
 <igc-select>
@@ -58,114 +58,112 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 </igc-select>
 ```
 
-### Select 
+### Select (選択) 
 
-The `igc-select` component can be used inside an `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. 
+`igc-select` コンポーネントは `igc-form` 内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。 
 
-### Item
+### Item (項目)
 
-The `igc-select-item` component allows the users to declaratively specify a list of options to be used by the `igc-select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `igc-select-item`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
+`igc-select-item` コンポーネントを使用すると、ユーザーは `igc-select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `igc-select-item` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="$Platform$ Select Item Example"
+           alt="$Platform$ Select Item の例"
            github-src="inputs/select/item">
 </code-view>
 
-### Header
+### Header (ヘッダー)
 
-You can use the `SelectHeader` to provide a header for a group of items.
+`SelectHeader` を使用して、項目のグループのヘッダーを提供できます。
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="$Platform$ Select Header Example"
+           alt="$Platform$ Select Header の例"
            github-src="inputs/select/header">
 </code-view>
 
-### Group
+### Group (グループ)
 
-Multiple `igc-select-item`s can be placed between the opening and closing brackets of an `igc-select-group` component so that users can visually group them together. The `igc-select-group` can be labelled via its `label` slot and disabled via its `Disabled` property.
+複数の `igc-select-item` を `igc-select-group` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`igc-select-group` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
 
-> [!NOTE]
-> Keep in mind that if a select group is disabled, you cannot enable separate items of it.
+> [!NOTE] 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="$Platform$ Select Group Example"
+           alt="$Platform$ Select Group の例"
            github-src="inputs/select/group">
 </code-view>
 
-## Validation
+## 検証
 
-In addition, the `igc-select` supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, etc. The component also exposes a method bound to its validation:
+さらに、`igc-select` は、`required`、`disabled`、`autofocus` など、ほとんどの `igc-input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
 
-- reportValidity() - checks for validity and focuses the component if invalid.
+- reportValidity() - 有効性をチェックし、無効な場合はコンポーネントにフォーカスします。
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-When the select is focused and the list of options is **not visible**:
+選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
-- Open the `igc-select` using the `ALT + Up/Down Arrow` combination or by clicking on the `Space` or the `Enter` key.
-- Close the `igc-select` using the `ALT + Up/Down Arrow` combination or any of the `Enter`, `Space`, `Esc` or `Tab` keys.
-- Using the `Up/Left Arrow` keys will select the previous item in the list.
-- Using the `Down/Right Arrow` keys will select the next item in the list.
-- Using the `Home` or `End` keys will select the first or last item in the list.
-- Typing characters will query the list of items and select the one that most closely matches the current user input.
+- `ALT + 上 / 下矢印`の組み合わせを使用するか、`Space` または `Enter` キーをクリックして、`igc-select` を開きます。
+- `Alt + 上矢印 / 下矢印`の組み合わせ、または `Enter`、`Space`、`Esc`、`Tab` キーのいずれかを使用して、`igc-select` を閉じます。
+- `上 / 左矢印`キーを使用すると、リスト内の前の項目が選択されます。
+- `下 / 右矢印`キーを使用すると、リスト内の次の項目が選択されます。
+- `Home` キーまたは `End` キーを使用すると、リストの最初または最後の項目が選択されます。
+- 文字を入力すると、項目のリストが照会され、現在のユーザー入力に最も近いものが選択されます。
 
-When the select is focused and the list of options is **visible**:
+選択がフォーカスされ、オプションのリストが**表示されている**場合:
 
-- Using the `Enter` or `Space` keys will select an item and close the list.
-- Using the `Up/Left Arrow` keys will activate the previous item in the list.
-- Using the `Down/Right Arrow` keys will activate the next item in the list.
-- Using the `Home` or `End` keys will activate the first or last item in the list.
+- `Enter` キーまたは `Space` キーを使用すると、項目が選択され、リストが閉じます。
+- `上 / 左矢印`キーを使用すると、リスト内の前の項目がアクティブになります。
+- `下 / 右矢印`キーを使用すると、リスト内の次の項目がアクティブになります。
+- `Home` キーまたは `End` キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
-> [!NOTE]
-> The `igc-select` component supports only **single** selection of items.
+> [!NOTE] `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
 <!-- WebComponents -->
 
-## Styling
+## スタイル設定
 
-You can change the appearance of the $ProductName$ Select component and its items, by using the exposed CSS parts listed below:
-### CSS Parts
+以下に示す公開された CSS パーツを使用して、$ProductName$ 選択コンポーネントとその項目の外観を変更できます。
+### CSS パーツ
 
-**Select Component**
+**Select コンポーネント**
 
-Part name | Description
+部分名 | 説明
 ---------|------------
-`input` | The encapsulated igc-input.
-`label` | The encapsulated text label.
-`list` | A wrapper that holds the list of options.
-`prefix`  | A prefix wrapper that renders content before the input.
-`suffix` | A suffix wrapper that renders content after the input.
-`toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
-`helper-text` | A helper-text wrapper that renders content below the input.
+`input` | カプセル化された igc-input。
+`label` | カプセル化されたテキスト ラベル。
+`list` | オプションのリストを保持するラッパー。
+`prefix`  | 入力の前にコンテンツを描画するプレフィックス ラッパー。
+`suffix` | 入力後にコンテンツを描画するサフィックス ラッパー。
+`toggle-icon` | サフィックス ラッパー内のコンテンツを描画するトグル アイコン ラッパー。
+`helper-text` | 入力の下にコンテンツを描画するヘルパー テキスト ラッパー。
 
-**Select Item Component**
+**Select Item コンポーネント**
 
-Part name | Description
+部分名 | 説明
 ---------|------------
-`content` | The main wrapper that holds the text content of an item.
-`prefix`  | A prefix wrapper that renders content before the main wrapper.
-`suffix` | A suffix wrapper that renders content after the main wrapper.
+`content` | 項目のテキスト コンテンツを保持するメイン ラッパー。
+`prefix`  | メイン ラッパーの前にコンテンツを描画するプレフィックス ラッパー。
+`suffix` | メイン ラッパーの後にコンテンツを描画するサフィックス ラッパー。
 
-**Select Group Component**
+**Select Group コンポーネント**
 
-Part name | Description
+部分名 | 説明
 ---------|------------
-`label` | A label wrapper that renders content above the select group items.
+`label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="$Platform$ Select Styling Example"
+           alt="$Platform$ Select スタイル設定の例"
            github-src="inputs/select/styling">
 </code-view>
 
-## API Reference
+## API リファレンス
 
 * `Select`
 * `SelectItem`
@@ -174,11 +172,11 @@ Part name | Description
 
 <!-- end: WebComponents -->
 
-## Additional Resources
+## その他のリソース
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
