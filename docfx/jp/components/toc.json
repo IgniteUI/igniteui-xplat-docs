@@ -1421,7 +1421,7 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"], 
-    "name": "Mask Input {ReleaseStatus_WebsInputs}",
+    "name": "マスク入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/mask-input.md"
   },
   {
@@ -1436,12 +1436,12 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Select {ReleaseStatus_WebsInputs}",
+    "name": "選択 {ReleaseStatus_WebsInputs}",
     "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "name": "評価 {ReleaseStatus_WebsInputs}",
     "href": "inputs/rating.md"
   },
   {
