@@ -368,6 +368,7 @@
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteError"}],"originalName":"PasteError"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteIntersectsMergedCells"}],"originalName":"PasteIntersectsMergedCells"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteMultipleSheetsTables"}],"originalName":"PasteMultipleSheetsTables"},
+    { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"copyError"}],"originalName":"CopyError"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"intersectsMergedCells"}],"originalName":"IntersectsMergedCells"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"copyInvalidRanges"}],"originalName":"CopyInvalidRanges"},
     { "names":[{"platform":"React","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"general"}],"originalName":"General"},

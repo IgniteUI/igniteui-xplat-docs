@@ -33,13 +33,13 @@
     { "names":[{"platform":"Blazor","mappedType":"LabelsPosition","mappedName":"LabelsPosition"}],"originalName":"LabelsPosition"},
     { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"LeaderLineVisibility"}],"originalName":"LeaderLineVisibility"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LeaderLineFill"}],"originalName":"ei.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LeaderLineFill"}],"originalName":"leaderLineStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LeaderLineStroke"}],"originalName":"ei.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LeaderLineStroke"}],"originalName":"leaderLineStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeaderLineStrokeThickness"}],"originalName":"ei.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeaderLineStrokeThickness"}],"originalName":"leaderLineStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeaderLineOpacity"}],"originalName":"ei.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeaderLineOpacity"}],"originalName":"leaderLineStyle.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"LeaderLineType","mappedName":"LeaderLineType"}],"originalName":"LeaderLineType"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeaderLineMargin"}],"originalName":"LeaderLineMargin"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryThreshold"}],"originalName":"OthersCategoryThreshold"},
@@ -57,21 +57,21 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelExtent"}],"originalName":"LabelExtent"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StartAngle"}],"originalName":"StartAngle"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"ej.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryFill"}],"originalName":"othersCategoryStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"ej.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"OthersCategoryStroke"}],"originalName":"othersCategoryStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"ej.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryStrokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"ej.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"OthersCategoryOpacity"}],"originalName":"othersCategoryStyle.opacity"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"ek.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"ek.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"ek.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"ek.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outlines"}],"originalName":"Outlines"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelOuterColor"}],"originalName":"LabelOuterColor"},
@@ -88,13 +88,13 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbRingSeriesCollection","mappedName":"Series"}],"originalName":"Series"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerExtent"}],"originalName":"InnerExtent"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"cg.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"cg.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"cg.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"cg.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},

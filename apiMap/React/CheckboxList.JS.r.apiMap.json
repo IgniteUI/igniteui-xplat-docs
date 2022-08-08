@@ -14,6 +14,8 @@
     { "names":[{"platform":"React","mappedType":"CheckboxListIndexType","mappedName":"indexType"}],"originalName":"IndexType"},
     { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"React","mappedType":"ScrollbarStyle","mappedName":"scrollbarStyle"}],"originalName":"ScrollbarStyle"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"scrollbarBackground"}],"originalName":"ScrollbarBackground"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"selectAllCaption"}],"originalName":"SelectAllCaption"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"selectAllCaptionTextColor"}],"originalName":"SelectAllCaptionTextColor"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"actualSelectAllCaptionTextColor"}],"originalName":"ActualSelectAllCaptionTextColor"},

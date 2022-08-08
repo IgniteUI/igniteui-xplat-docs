@@ -683,13 +683,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"rowHoverTextColor"}],"originalName":"RowHoverTextColor"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editRowBorder"}],"originalName":"EditRowBorder"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"z4.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"editRowBorderWidth.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"z4.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"editRowBorderWidth.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"z4.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"editRowBorderWidth.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"z4.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"editRowBorderWidth.top"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSectionHeaderComponent","mappedName":"sectionHeader"}],"originalName":"SectionHeader"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSummaryRowRootComponent","mappedName":"summaryRowRoot"}],"originalName":"SummaryRowRoot"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSummaryRowSectionComponent","mappedName":"summaryRowSection"}],"originalName":"SummaryRowSection"},
@@ -785,33 +785,39 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"border"}],"originalName":"Border"},
     { "names":[{"platform":"WebComponents","mappedType":"Thickness","mappedName":"actualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"z1.bottom"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"borderWidth.bottom"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"z1.left"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"borderWidth.left"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"z1.right"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"borderWidth.right"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"z1.top"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"borderWidth.top"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"notifyOnAllSelectionChanges"}],"originalName":"NotifyOnAllSelectionChanges"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"xu.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"cornerRadius.bottomRight"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"xu.a"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"xu.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"cornerRadius.topLeft"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"xu.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"cornerRadius.topRight"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"xs.b"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"xs.a"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"xs.c"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topLeft"}],"originalName":"actualCornerRadius.topLeft"},
     { 
-    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"xs.d"},
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"topRight"}],"originalName":"actualCornerRadius.topRight"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isActiveCellStyleEnabled"}],"originalName":"IsActiveCellStyleEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcResponsiveStatesCollection","mappedName":"responsiveStates"}],"originalName":"ResponsiveStates"},
     { "names":[{"platform":"WebComponents","mappedType":"IgRect","mappedName":"actualVisibleRegion"}],"originalName":"ActualVisibleRegion"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcColumnSortDescriptionCollection","mappedName":"initialSortDescriptions"}],"originalName":"InitialSortDescriptions"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcColumnGroupDescriptionCollection","mappedName":"initialGroupDescriptions"}],"originalName":"InitialGroupDescriptions"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcColumnSummaryDescriptionCollection","mappedName":"initialSummaryDescriptions"}],"originalName":"InitialSummaryDescriptions"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"initialSorts"}],"originalName":"InitialSorts"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"initialGroups"}],"originalName":"InitialGroups"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"initialSummaries"}],"originalName":"InitialSummaries"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumnSortDescriptionCollection","mappedName":"sortDescriptions"}],"originalName":"SortDescriptions"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcColumnGroupDescriptionCollection","mappedName":"groupDescriptions"}],"originalName":"GroupDescriptions"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcFilterExpressionCollection","mappedName":"filterExpressions"}],"originalName":"FilterExpressions"},
@@ -851,6 +857,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toolbarColumnChooserTitle"}],"originalName":"ToolbarColumnChooserTitle"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toolbarColumnPinningText"}],"originalName":"ToolbarColumnPinningText"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toolbarColumnPinningTitle"}],"originalName":"ToolbarColumnPinningTitle"},
+    { "names":[{"platform":"WebComponents","mappedType":"ScrollbarStyle","mappedName":"scrollbarStyle"}],"originalName":"ScrollbarStyle"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"scrollbarBackground"}],"originalName":"ScrollbarBackground"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"refresh"}],"originalName":"Refresh"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyScrollStart"}],"originalName":"NotifyScrollStart"},
@@ -1092,6 +1100,7 @@
   { "originalName":"ColumnGroupDescriptionCollection",
     "names":[{"platform":"WebComponents","fileName":"igc-column-group-description-collection.ts","mappedName":"IgcColumnGroupDescriptionCollection"}],
     "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldDetachOnTargetChange"}],"originalName":"ShouldDetachOnTargetChange"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"add"}],"originalName":"Add"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"insert"}],"originalName":"Insert"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},
@@ -1107,6 +1116,7 @@
   { "originalName":"ColumnSortDescriptionCollection",
     "names":[{"platform":"WebComponents","fileName":"igc-column-sort-description-collection.ts","mappedName":"IgcColumnSortDescriptionCollection"}],
     "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldDetachOnTargetChange"}],"originalName":"ShouldDetachOnTargetChange"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"add"}],"originalName":"Add"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"insert"}],"originalName":"Insert"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},
@@ -1138,6 +1148,7 @@
   { "originalName":"ColumnSummaryDescriptionCollection",
     "names":[{"platform":"WebComponents","fileName":"igc-column-summary-description-collection.ts","mappedName":"IgcColumnSummaryDescriptionCollection"}],
     "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldDetachOnTargetChange"}],"originalName":"ShouldDetachOnTargetChange"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"add"}],"originalName":"Add"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"insert"}],"originalName":"Insert"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"clear"}],"originalName":"Clear"},

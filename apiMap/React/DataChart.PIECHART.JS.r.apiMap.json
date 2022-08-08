@@ -113,21 +113,21 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"startAngle"}],"originalName":"StartAngle"},
     { "names":[{"platform":"React","mappedType":"SweepDirection","mappedName":"sweepDirection"}],"originalName":"SweepDirection"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"i7.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"othersCategoryStyle.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"i7.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"othersCategoryStyle.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"i7.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"othersCategoryStyle.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"i7.opacity"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"othersCategoryStyle.opacity"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"i8.fill"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"fill"}],"originalName":"selectedStyle.fill"},
     { 
-    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"i8.stroke"},
+    "names":[{"platform":"React","mappedType":"string","mappedName":"stroke"}],"originalName":"selectedStyle.stroke"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"i8.strokeThickness"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"strokeThickness"}],"originalName":"selectedStyle.strokeThickness"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"i8.opacity"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"opacity"}],"originalName":"selectedStyle.opacity"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"brushes"}],"originalName":"Brushes"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"actualBrushes"}],"originalName":"ActualBrushes"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"outlines"}],"originalName":"Outlines"},

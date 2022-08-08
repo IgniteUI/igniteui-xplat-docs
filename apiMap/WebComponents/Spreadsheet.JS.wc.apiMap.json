@@ -368,6 +368,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteError"}],"originalName":"PasteError"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteIntersectsMergedCells"}],"originalName":"PasteIntersectsMergedCells"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"pasteMultipleSheetsTables"}],"originalName":"PasteMultipleSheetsTables"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"copyError"}],"originalName":"CopyError"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"intersectsMergedCells"}],"originalName":"IntersectsMergedCells"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"copyInvalidRanges"}],"originalName":"CopyInvalidRanges"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"general"}],"originalName":"General"},

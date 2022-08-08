@@ -57,6 +57,11 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isMap"}],"originalName":"IsMap"},
     { "names":[{"platform":"Angular","mappedType":"WindowResponse","mappedName":"windowResponse"}],"originalName":"WindowResponse"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"windowRectMinWidth"}],"originalName":"WindowRectMinWidth"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"windowRectMinHeight"}],"originalName":"WindowRectMinHeight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualWindowRectMinWidth"}],"originalName":"ActualWindowRectMinWidth"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualWindowRectMinHeight"}],"originalName":"ActualWindowRectMinHeight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"windowSizeMinWidth"}],"originalName":"WindowSizeMinWidth"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"windowSizeMinHeight"}],"originalName":"WindowSizeMinHeight"},
     { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"crosshairVisibility"}],"originalName":"CrosshairVisibility"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"horizontalCrosshairBrush"}],"originalName":"HorizontalCrosshairBrush"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"verticalCrosshairBrush"}],"originalName":"VerticalCrosshairBrush"},
@@ -96,9 +101,14 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interactionPixelScalingRatio"}],"originalName":"InteractionPixelScalingRatio"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualInteractionPixelScalingRatio"}],"originalName":"ActualInteractionPixelScalingRatio"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldPanOnMaximumZoom"}],"originalName":"ShouldPanOnMaximumZoom"},
     { "names":[{"platform":"Angular","mappedType":"IgRect","mappedName":"actualWindowRect"}],"originalName":"ActualWindowRect"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualWindowPositionHorizontal"}],"originalName":"ActualWindowPositionHorizontal"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualWindowPositionVertical"}],"originalName":"ActualWindowPositionVertical"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getDesiredToolbarActions"}],"originalName":"GetDesiredToolbarActions"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onToolCommandExecuting"}],"originalName":"OnToolCommandExecuting"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"addCommandAvailabilityListener"}],"originalName":"AddCommandAvailabilityListener"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeCommandAvailabilityListener"}],"originalName":"RemoveCommandAvailabilityListener"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTip"}],"originalName":"HideToolTip"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"simulateHover"}],"originalName":"SimulateHover"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"startTiledZoomingIfNecessary"}],"originalName":"StartTiledZoomingIfNecessary"},
@@ -175,61 +185,61 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"enhancedIntervalMinimumCharacters"}],"originalName":"EnhancedIntervalMinimumCharacters"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"enhancedIntervalPreferMoreCategoryLabels"}],"originalName":"EnhancedIntervalPreferMoreCategoryLabels"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"ay.textStyle"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"labelSettings.textStyle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"ay.textColor"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"labelSettings.textColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"ay.location"},
+    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"labelSettings.location"},
     { 
-    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"ay.visibility"},
+    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"labelSettings.visibility"},
     { 
-    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"ay.showFirstLabel"},
+    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"labelSettings.showFirstLabel"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"ay.angle"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"labelSettings.angle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"ay.extent"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"labelSettings.extent"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"ay.leftMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"labelSettings.leftMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"ay.rightMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"labelSettings.rightMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"ay.topMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"labelSettings.topMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"ay.bottomMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"labelSettings.bottomMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"ay.horizontalAlignment"},
+    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"labelSettings.horizontalAlignment"},
     { 
-    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"ay.verticalAlignment"},
+    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"labelSettings.verticalAlignment"},
     { "names":[{"platform":"Angular","mappedType":"IgxAxisComponent","mappedName":"crossingAxis"}],"originalName":"CrossingAxis"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"crossingValue"}],"originalName":"CrossingValue"},
     { 
-    "names":[{"platform":"Angular","mappedType":"AxisTitlePosition","mappedName":"position"}],"originalName":"be.position"},
+    "names":[{"platform":"Angular","mappedType":"AxisTitlePosition","mappedName":"position"}],"originalName":"titleSettings.position"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"be.textStyle"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"titleSettings.textStyle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"be.textColor"},
+    "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"titleSettings.textColor"},
     { 
-    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"be.location"},
+    "names":[{"platform":"Angular","mappedType":"AxisLabelsLocation","mappedName":"location"}],"originalName":"titleSettings.location"},
     { 
-    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"be.visibility"},
+    "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"visibility"}],"originalName":"titleSettings.visibility"},
     { 
-    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"be.showFirstLabel"},
+    "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"showFirstLabel"}],"originalName":"titleSettings.showFirstLabel"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"be.angle"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"angle"}],"originalName":"titleSettings.angle"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"be.extent"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"extent"}],"originalName":"titleSettings.extent"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"be.leftMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"titleSettings.leftMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"be.rightMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"titleSettings.rightMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"be.topMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"titleSettings.topMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"be.bottomMargin"},
+    "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"titleSettings.bottomMargin"},
     { 
-    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"be.horizontalAlignment"},
+    "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"horizontalAlignment"}],"originalName":"titleSettings.horizontalAlignment"},
     { 
-    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"be.verticalAlignment"},
+    "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"verticalAlignment"}],"originalName":"titleSettings.verticalAlignment"},
     { "names":[{"platform":"Angular","mappedType":"IgxAxisAnnotationCollection","mappedName":"annotations"}],"originalName":"Annotations"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"coercionMethods"}],"originalName":"CoercionMethods"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"expectFunctions"}],"originalName":"ExpectFunctions"},
@@ -262,6 +272,7 @@
   { "originalName":"CategoryXAxis",
     "names":[{"platform":"Angular","fileName":"igx-category-x-axis-component.ts","dynamicModuleName":"igx-category-x-axis-dynamic-module.ts","moduleName":"igx-category-x-axis-module.ts","mappedName":"IgxCategoryXAxisComponent"}],
     "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumZoomCategories"}],"originalName":"MaximumZoomCategories"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
@@ -918,6 +929,7 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isActualLegendFinancial"}],"originalName":"IsActualLegendFinancial"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isComponentHighlightingModeIgnored"}],"originalName":"IsComponentHighlightingModeIgnored"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isHighlightingEnabled"}],"originalName":"IsHighlightingEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldHideAutoCallouts"}],"originalName":"ShouldHideAutoCallouts"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isDropShadowEnabled"}],"originalName":"IsDropShadowEnabled"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shadowBlur"}],"originalName":"ShadowBlur"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"shadowColor"}],"originalName":"ShadowColor"},

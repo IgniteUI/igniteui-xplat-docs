@@ -36,37 +36,37 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"actualBorderWidth"}],"originalName":"ActualBorderWidth"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"columnHeadersVisible"}],"originalName":"ColumnHeadersVisible"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"h8.bottom"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"contentPadding.bottom"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"h8.left"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"contentPadding.left"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"h8.right"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"contentPadding.right"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"h8.top"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"contentPadding.top"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"h7.bottom"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottom"}],"originalName":"actualContentPadding.bottom"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"h7.left"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"left"}],"originalName":"actualContentPadding.left"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"h7.right"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"actualContentPadding.right"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"h7.top"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"actualContentPadding.top"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"gk.b"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"cornerRadius.bottomRight"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"gk.a"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"cornerRadius.bottomLeft"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"gk.c"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"cornerRadius.topLeft"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"gk.d"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"cornerRadius.topRight"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"gj.b"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomRight"}],"originalName":"actualCornerRadius.bottomRight"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"gj.a"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"bottomLeft"}],"originalName":"actualCornerRadius.bottomLeft"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"gj.c"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topLeft"}],"originalName":"actualCornerRadius.topLeft"},
     { 
-    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"gj.d"},
+    "names":[{"platform":"React","mappedType":"number","mappedName":"topRight"}],"originalName":"actualCornerRadius.topRight"},
     { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dataSourceDesiredProperties"}],"originalName":"DataSourceDesiredProperties"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"actualDensity"}],"originalName":"ActualDensity"},

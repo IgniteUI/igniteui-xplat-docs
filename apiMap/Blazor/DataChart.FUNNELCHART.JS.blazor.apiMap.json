@@ -39,21 +39,21 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowSliceSelection"}],"originalName":"AllowSliceSelection"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseUnselectedStyle"}],"originalName":"UseUnselectedStyle"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"ew.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceFill"}],"originalName":"selectedSliceStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"ew.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectedSliceStroke"}],"originalName":"selectedSliceStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"ew.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceStrokeThickness"}],"originalName":"selectedSliceStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"ew.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SelectedSliceOpacity"}],"originalName":"selectedSliceStyle.opacity"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnselectedSliceFill"}],"originalName":"ex.fill"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnselectedSliceFill"}],"originalName":"unselectedSliceStyle.fill"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnselectedSliceStroke"}],"originalName":"ex.stroke"},
+    "names":[{"platform":"Blazor","mappedType":"string","mappedName":"UnselectedSliceStroke"}],"originalName":"unselectedSliceStyle.stroke"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnselectedSliceStrokeThickness"}],"originalName":"ex.strokeThickness"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnselectedSliceStrokeThickness"}],"originalName":"unselectedSliceStyle.strokeThickness"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnselectedSliceOpacity"}],"originalName":"ex.opacity"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"UnselectedSliceOpacity"}],"originalName":"unselectedSliceStyle.opacity"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"LegendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseOuterLabelsForLegend"}],"originalName":"UseOuterLabelsForLegend"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextStyle"}],"originalName":"TextStyle"},

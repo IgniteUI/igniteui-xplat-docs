@@ -6,6 +6,7 @@
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualInterval"}],"originalName":"ActualInterval"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MinorInterval"}],"originalName":"MinorInterval"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MaximumZoomCategories"}],"originalName":"MaximumZoomCategories"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},

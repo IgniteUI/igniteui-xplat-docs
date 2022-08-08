@@ -29,8 +29,8 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RadiusExtentScale"}],"originalName":"RadiusExtentScale"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"InnerRadiusExtentScale"}],"originalName":"InnerRadiusExtentScale"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledValue"}],"originalName":"GetScaledValue"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledValue"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledValue3"}],"originalName":"GetScaledValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"OrdinalTimeXAxis",
     "names":[{"platform":"Blazor","fileName":"OrdinalTimeXAxis.cs","mappedName":"IgbOrdinalTimeXAxis"}],
     "members":[

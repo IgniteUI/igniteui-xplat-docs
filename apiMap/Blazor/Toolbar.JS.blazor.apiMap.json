@@ -14,13 +14,13 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningText"}],"originalName":"ColumnPinningText"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ColumnPinningTitle"}],"originalName":"ColumnPinningTitle"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"bi.bottom"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthBottom"}],"originalName":"borderWidth.bottom"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"bi.left"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthLeft"}],"originalName":"borderWidth.left"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"bi.right"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthRight"}],"originalName":"borderWidth.right"},
     { 
-    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"bi.top"},
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BorderWidthTop"}],"originalName":"borderWidth.top"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ExportVisualModel"}],"originalName":"ExportVisualModel"},
