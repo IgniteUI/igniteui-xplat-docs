@@ -29,15 +29,40 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```ts
+import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcChipComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrChipModule, IgrChip } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrChipModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 `Chip` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbChipModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
@@ -46,11 +71,6 @@ IgbChipModule.Register(IgniteUIBlazor);
 ```
 
 <!-- end: Blazor -->
-
-```ts
-import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
-defineComponents(IgcChipComponent);
-```
 
 `Chip` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -70,11 +90,19 @@ defineComponents(IgcChipComponent);
 }
 ```
 
+```tsx
+<IgrChip></IgrChip>
+```
+
 ```html
 <igc-chip></igc-chip>
 ```
 
 選択可能な Chip を表示するには、Chip の `Selectable` プロパティを使用できます。
+
+```tsx
+<IgrChip selectable="true"></IgrChip>
+```
 
 ```html
 <igc-chip selectable></igc-chip>
@@ -85,6 +113,10 @@ defineComponents(IgcChipComponent);
 ```
 
 削除可能可能な Chip を表示するには、Chip の `Removable` プロパティを使用できます。
+
+```tsx
+<IgrChip removable="true"></IgrChip>
+```
 
 ```html
 <igc-chip removable></igc-chip>
@@ -99,6 +131,10 @@ defineComponents(IgcChipComponent);
 ### バリアント
 
 $ProductName$ Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+
+```tsx
+<IgrChip variant="success"></IgrChip>
+```
 
 ```html
 <igc-chip variant="success"></igc-chip>
@@ -118,6 +154,10 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 ### 無効
 
 $ProductName$ Chip は、`Disabled` プロパティを使用して無効にできます。
+
+```tsx
+<IgrChip disabled="true"></IgrChip>
+```
 
 ```html
 <igc-chip disabled></igc-chip>
@@ -147,6 +187,18 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 ## Size (サイズ)
 
 `Size` プロパティを使用して、ユーザーが `Chip` のサイズを選択できるようにします。
+
+```tsx
+<IgrChip size="small" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+<IgrChip size="medium" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+<IgrChip size="large" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+```
 
 ```html
 <igc-chip size="small" selectable removable>Chip</igc-chip>
@@ -188,7 +240,6 @@ igc-chip::part(suffix) {
 
 * `Chip`
 
-
 <div class="divider--half"></div>
 
 ## その他のリソース
@@ -196,9 +247,21 @@ igc-chip::part(suffix) {
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
 
 ## API メンバー
 

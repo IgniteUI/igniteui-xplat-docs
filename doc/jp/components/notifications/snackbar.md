@@ -32,6 +32,25 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Snackbar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrSnackbarModule, IgrSnackbar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrSnackbarModule.register();
+```
+
+<!-- end: React -->
+
 `Snackbar` を使用する前に、次のように登録する必要があります:
 
 ```razor
@@ -73,6 +92,25 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
     {
         IgbSnackbarModule.Register(IgniteUIBlazor);
         IgbButtonModule.Register(IgniteUIBlazor);
+    }
+}
+```
+
+```tsx
+<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+    <span>Show Snackbar</span>
+</IgrButton>
+<IgrSnackbar ref={this.onSnackbarRef}>
+    <span>Snackbar Message</span>
+</IgrSnackbar>
+
+public onSnackbarRef(snackbar: IgrSnackbar){
+    if (!snackbar) { return; }
+    this.snackbarRef = snackbar;
+}
+public onShowButtonClicked() {
+    if(this.snackbarRef){
+        this.snackbarRef.show();
     }
 }
 ```
@@ -128,8 +166,26 @@ igc-snackbar::part(base) {
 
 ## その他のリソース
 
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
+<!-- WebComponents -->
+
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
 
 ## API メンバー
 

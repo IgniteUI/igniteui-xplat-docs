@@ -37,11 +37,11 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 
 Input コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
+<!-- Blazor -->
+
 ```razor
 IgbInputModule.Register(IgniteUIBlazor);
 ```
-
-<!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
@@ -51,23 +51,40 @@ IgbInputModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
 <!-- WebComponents -->
 
 開始するには、typescript ファイルに `Input` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Input` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrInputModule, IgrInput } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrInputModule.register();
+```
+<!-- end: React -->
+
 `Input` コンポーネントをインポートしたら、使用を開始する準備ができているので、最初の Input を追加しましょう。
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
+```
 
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
@@ -179,7 +196,7 @@ Input API の詳細については、次のリンクを参照してください�
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -190,6 +207,10 @@ Input API の詳細については、次のリンクを参照してください�
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

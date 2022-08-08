@@ -28,13 +28,6 @@ $Platform$ ドロップダウンは、事前定義された値の切り替え可
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
-
-`Dropdown` を使用する前に、次のように登録する必要があります:
-
-```razor
-IgbDropdownModule.Register(IgniteUIBlazor);
-```
 
 ```ts
 import {
@@ -44,9 +37,37 @@ import {
     IgcDropdownHeaderComponent,
     IgcDropdownGroupComponent
 } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Dropdown` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrDropdownModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+
+`Dropdown` を使用する前に、次のように登録する必要があります:
+
+```razor
+IgbDropdownModule.Register(IgniteUIBlazor);
+```
+
+<!-- end: Blazor -->
 
 `Dropdown` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -153,16 +174,21 @@ defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHead
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

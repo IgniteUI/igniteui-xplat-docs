@@ -25,16 +25,22 @@ $ProductName$ 日時入力を使用すると、ユーザーは選択した入力
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
-`DateTimeInput` を使用する前に、次のように登録する必要があります:
-
+次に、以下のように、`DateTimeInput` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcDateTimeInput } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcDateTimeInput);
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+`DateTimeInput` を使用する前に、次のように登録する必要があります:
+
+<!-- end: Blazor -->
 
 ### 値バインディング
 `IgcDateTimeInputComponent` コンポーネントの値を設定する最も簡単な方法は、Date オブジェクトを `value` プロパティに渡すことです。
@@ -139,26 +145,26 @@ input.value = date;
 
 タイプ | 書式 | 説明 | 例 |
 |:---|:-------:|:-----------|:--------|
-Date | `d` | 最小桁数。 | 7, 17 |
+日付 | `d` | 最小桁数 | 7, 17 |
 || `dd` |ゼロ埋込み | 07, 17 |
-Month | `M` | 最小桁数。 | 3, 10 |
+月 | `M` | 最小桁数 | 3, 10 |
 || `MM` | ゼロ埋込み | 03, 10 |
 || `MMM` | 省略 | Oct |
 || `MMMM` | ワイド | October |
 || `MMMMM` | 狭い | O |
-Year | `y` | 数値 | 2022
+年 | `y` | 数値 | 2022
 || `yy` | 2 桁 | 22
 || `yyy` | 数値 | 2022
 || `yyyy` | 数値  | 2022
-Hour 1-12 | `h` | 最小桁数。 | 1, 12
+12 時間 | `h` | 最小桁数 | 1, 12
 || `hh` | ゼロ埋込み | 01, 12
-Hour 1-24 | `H` | ゼロ埋込み | 01, 23
+24 時間 | `H` | 最小桁数 | 1, 23
 || `HH` | ゼロ埋込み | 01, 23
-Minute | `m` | 最小桁数。 | 1, 60
-|| `mm` | ゼロ埋込み | 01, 60
-Second | `s` | 最小桁数。 | 1, 60
-|| `ss` | ゼロ埋込み | 01, 60
-Time Period | `t` | 省略 | AM, PM
+分 | `m` | 最小桁数 | 1, 59
+|| `mm` | ゼロ埋込み | 01, 59
+秒 | `s` | 最小桁数 | 1, 59
+|| `ss` | ゼロ埋込み | 01, 59
+期間 | `t` | 省略 | AM, PM
 || `tt` | 省略 | AM, PM
 || `ttt` | 短い | noon
 || `tttt` | 長い | noon
@@ -195,7 +201,7 @@ input.minValue = new Date(2021, 0, 1);
 
 `IgcDateTimeInputComponent` は、公開な `stepUp` メソッドと `stepDown` メソッドを公開します。現在設定されている日付と時刻の特定の `DatePart` を増減し、いくつかの方法で使用できます。
 
-最初のシナリオでは、特定の DatePart がメソッドに渡されない場合、指定した `inputFormat` および内部コンポーネントの実装に基づいてデフォルトの DatePart が増減します。2 番目のシナリオでは、さまざまな要件を満たすために操作する DatePart を明示的に指定できます。また、どちらのメソッドも、stepUp/Down ステップを設定するために使用できるタイプ番号のオプションの `delta` パラメーターを受け入れます。
+最初のシナリオでは、特定の DatePart がメソッドに渡されない場合、指定した `inputFormat` および内部コンポーネントの実装に基づいてデフォルトの DatePart が増減します。2 番目のシナリオでは、さまざまな要件を満たすために操作する DatePart を明示的に指定できます。また、どちらのメソッドも、stepUp/stepDown ステップを設定するために使用できるタイプ番号のオプションの `delta` パラメーターを受け入れます。
 
 さらに、`spinDelta` は、各日時セグメントに異なる delta を適用するために使用できるプロパティです。キーボード、マウス ホイール、または `stepUp` メソッドと `stepDown` メソッドを使用してスピンする場合に適用されます。ただし、`spinDelta` よりも優先されるため、delta パラメーターが提供されていない場合に限ります。
 
@@ -242,17 +248,21 @@ input.spinDelta = spinDelta;
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

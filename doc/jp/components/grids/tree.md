@@ -27,28 +27,48 @@ $ProductName$ ツリー要素を使用すると、ユーザーはツリービュ
 ## 使用方法
 
 <!-- WebComponents -->
+
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+`Tree` を使用する前に、次のように登録する必要があります:
+
+```ts
+import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
+defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
+```
+
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Tree` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrTreeModule, IgrTree, IgrTreeItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrTreeModule.register();
+```
+
+<!-- end: React -->
+
 <!-- Blazor -->
+
 また、追加の CSS ファイルをリンクして、スタイルを `Tree` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
 <!-- end: Blazor -->
-
-`Tree` を使用する前に、次のように登録する必要があります:
-
-```ts
-import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
-
-defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
-```
 
 ```razor
 IgbTreeModule.Register(IgniteUIBlazor);
@@ -61,6 +81,8 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 `TreeItem` は、`Tree` に属するすべての項の表現です。
 項目は、`disabled`、`active`、`selected`、および `expanded` プロパティを提供します。これにより、要件に応じて項目の状態を構成できます。
 `value` プロパティを使用して、項目が表すデータ エントリへの参照を追加できます。
+
+<!-- WebComponents, Blazor -->
 
 項目は、次のいずれかのアプローチを使用して宣言できます:
 
@@ -89,6 +111,8 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
     }
 </IgbTree>
 ```
+
+<!-- end: WebComponents, Blazor -->
 
 項目をデータ モデルにバインドして、展開された状態と選択された状態が基になるデータにも反映されるようにすることができます。
 
@@ -137,11 +161,32 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 </IgbTree>
 ```
 
+```tsx
+<IgrTree>
+    <IgrTreeItem label='North America'>
+        <IgrTreeItem label='United States' />
+        <IgrTreeItem label='Canada' />
+        <IgrTreeItem label='Mexico' />
+    </IgrTreeItem>
+    <IgrTreeItem label='South America'>
+        <IgrTreeItem label='Brazil' />
+        <IgrTreeItem label='Uruguay' />                        
+    </IgrTreeItem>
+    <IgrTreeItem label='Europe'>
+        <IgrTreeItem label='United Kingdom' />
+        <IgrTreeItem label='Germany' />
+        <IgrTreeItem label='Bulgaria' />
+    </IgrTreeItem>
+</IgrTree>
+```
+
 > [!NOTE]
 > 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
 
 ### 項目のインタラクション
+
 `Tree` は、項目のインタラクションのために次の API メソッドを提供します:
+
 - `expand` - すべての項目を展開します。項目配列が渡されると、指定された項目のみが展開されます。
 - `collapse` - すべての項目を縮小します。項目配列が渡されると、指定された項目のみが縮小されます。
 - `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。`Selection` イベントを発行しません。
@@ -152,17 +197,27 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 $ProductName$ ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
+
 `Tree` では、デフォルトで項目の選択が無効になっています。ユーザーは UI インタラクションを介して項目を選択または選択解除することはできませんが、これらのアクションは提供された API メソッドを介して実行できます。
+
 ### Multiple
+
 `Tree` で複数の項目を選択できるようにするには、`selection` プロパティを **multiple** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。各項目には、選択されているまたは選択されていないの 2 つの状態があります。このモードは複数選択をサポートします。
+
 ```html
 <igc-tree selection="multiple">
 </igc-tree>
 ```
+
 ```razor
 <IgbTree Selection=TreeSelection.Multiple>
 </IgbTree>
 ```
+
+```tsx
+<IgrTree selection="multiple" />
+```
+
 ### Cascade
 `Tree` カスケード項目の選択を有効にするには、selection プロパティを **cascade** に設定するだけです。これにより、すべての項目のチェックボックスが表示されます。
 
@@ -170,10 +225,16 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 <igc-tree selection="Cascade">
 </igc-tree>
 ```
+
 ```razor
-<IgbTree Selection=TreeSelection.Multiple>
+<IgbTree Selection=TreeSelection.Cascade>
 </IgbTree>
 ```
+
+```tsx
+<IgrTree selection="cascade" />
+```
+
 このモードでは、親の選択状態はその子の選択状態に完全に依存します。親に選択された子と選択解除された子がある場合、そのチェックボックスは不確定な状態になります。
 
 ## キーボード ナビゲーション
@@ -204,6 +265,7 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
  - <kbd>Shift + クリック</kbd> - 項目チェックボックスで実行すると、選択が有効になっている場合、Shift キーを押しながらアクティブな項目とクリックした項目の間ですべての項目の選択を切り替えます。
 
 <!-- WebComponents -->
+
 ## $Platform$ Tree ロードオンデマンド
 
 $ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
@@ -220,6 +282,7 @@ $ProductName$ Tree は、サーバーから最小限のデータのみ取得し�
 `loadingIndicator` スロットを使用して、読み込み領域にカスタム スロット コンテンツを提供できます。そのようなスロットが定義されていない場合、`CircularProgress` が使用されます。
 
 <!-- end: WebComponents -->
+
 ## スタイル設定
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`TreeItem` の外観を変更できます:
@@ -270,18 +333,21 @@ igc-tree-item::part(active selected) {
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
+
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor **GitHub**](https://github.com/IgniteUI/igniteui-blazor)
+* [Ignite UI for Blazor **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor)
+
 <!-- end: Blazor>
 
 <!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
 <!-- end: React -->
 
 ## API メンバー
