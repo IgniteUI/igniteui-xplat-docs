@@ -50,7 +50,6 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AreThumbCalloutsEnabled"}],"originalName":"AreThumbCalloutsEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"OnDetachedFromUI"}],"originalName":"OnDetachedFromUI"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"OnAttachedToUI"}],"originalName":"OnAttachedToUI"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Destroy"}],"originalName":"Destroy"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"TrackDirty"}],"originalName":"TrackDirty"},

@@ -184,7 +184,9 @@
   { "originalName":"ItemLegend",
     "names":[{"platform":"Blazor","fileName":"ItemLegend.cs","mappedName":"IgbItemLegend"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendOrientation","mappedName":"Orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"Blazor","fileName":"Legend.cs","mappedName":"IgbLegend"}],
     "members":[

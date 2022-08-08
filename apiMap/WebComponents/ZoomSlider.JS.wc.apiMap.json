@@ -55,7 +55,6 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"areThumbCalloutsEnabled"}],"originalName":"AreThumbCalloutsEnabled"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"onDetachedFromUI"}],"originalName":"OnDetachedFromUI"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"onAttachedToUI"}],"originalName":"OnAttachedToUI"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"trackDirty"}],"originalName":"TrackDirty"},

@@ -12,7 +12,8 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"Blazor","fileName":"ValueOverlay.cs","mappedName":"IgbValueOverlay"}],
     "members":[
@@ -136,6 +137,8 @@
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XValue"}],"originalName":"XValue"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YValue"}],"originalName":"YValue"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SeriesName"}],"originalName":"SeriesName"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"Blazor","fileName":"CalloutSeriesSelectingEventArgs.cs","mappedName":"IgbCalloutSeriesSelectingEventArgs"}],
@@ -280,7 +283,8 @@
     "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginRight"}],"originalName":"labelTextMargin.right"},
     { 
     "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LabelTextMarginTop"}],"originalName":"labelTextMargin.top"},
-    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueLayer",
     "names":[{"platform":"Blazor","fileName":"FinalValueLayer.cs","mappedName":"IgbFinalValueLayer"}],
     "members":[

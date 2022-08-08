@@ -191,7 +191,9 @@
     "names":[{"platform":"React","fileName":"igr-item-legend.ts","mappedName":"IgrItemLegend"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
-    { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"React","fileName":"igr-legend.ts","mappedName":"IgrLegend"}],
     "members":[
