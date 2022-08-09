@@ -151,6 +151,6 @@ For the full source code please clone the [repository](https://github.com/Ignite
  ## API Members
 
  - `BrowserWindow`
- - `DockManager`
+ - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
  - `IDockManagerWindow`
  - `Window`

@@ -608,4 +608,4 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 ## API メンバー
 
- - `DockManager`
+ - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

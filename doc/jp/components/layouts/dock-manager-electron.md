@@ -152,6 +152,6 @@ mainWindow = new BrowserWindow({
  ## API メンバー
 
  - `BrowserWindow`
- - `DockManager`
+ - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
  - `IDockManagerWindow`
  - `Window`
