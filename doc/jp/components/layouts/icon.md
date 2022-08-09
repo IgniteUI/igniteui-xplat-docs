@@ -28,6 +28,13 @@ $Platform$ Icon コンポーネントを使用すると、フォントを簡単�
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+```ts
+import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
+
+defineComponents(IgcIconComponent);
+```
+
 <!-- end: WebComponents -->
 
 `Icon` を使用する前に、次のように登録する必要があります:
@@ -35,6 +42,25 @@ npm install {PackageWebComponents}
 ```razor
 IgbIconModule.Register(IgniteUIBlazor);
 ```
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Icon` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrIcon, IgrIconModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrIconModule.register();
+```
+
+<!-- end: React -->
 
 <!-- Blazor -->
 
@@ -45,12 +71,6 @@ IgbIconModule.Register(IgniteUIBlazor);
 ```
 
 <!-- end: Blazor -->
-
-```ts
-import { defineComponents, IgcIconComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcIconComponent);
-```
 
 `Icon` には、それ自体にアイコンは含まれていません。これは、登録された SVG 画像を表示するためのコンジットです。
 
@@ -67,7 +87,7 @@ import {
 } from "igniteui-webcomponents";
 ```
 
-[`registerIcon`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#registerIcon) 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
+`registerIcon` 関数を使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
 ```ts
 registerIcon(
@@ -81,7 +101,7 @@ registerIcon(
 
 <!-- Blazor -->
 
-画像をアイコンとして登録するには、単一の `Icon` 要素で 2 つの「register」メソッドの 1 つを呼び出すだけで、アイコンをアイコン コレクションに追加できます。
+画像をアイコンとして登録するには、単一の `Icon` 要素で 2 つの「register」メソッドの 1 つを呼び出すだけで、アイコンをページ上のアイコン コレクションに追加できます。
 
 `RegisterIcon` メソッドを使用すると、SVG 画像を外部ファイルからアイコンとして登録できます。
 
@@ -104,6 +124,27 @@ registerIcon(
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+画像をアイコンとして登録するには、1 つの `Icon` 要素で 2 つの「登録」メソッドのいずれかを呼び出すだけで、ページ上のアイコン コレクションにアイコンを追加できます。
+
+`RegisterIcon` メソッドを使用すると、外部ファイルから SVG 画像をアイコンとして登録できます。
+
+```tsx
+
+<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+
+public iconRef(icon: IgrIcon){
+    if(!icon){
+        return;
+    }
+              
+    icon.registerIcon("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
+}
+```
+
+<!-- end: React -->
+
 上記の方法では、`search` という名前のアイコンが `material` という名前のコレクションに追加されます。
 
 次に、新しく登録されたアイコンを使用するには、名前とコレクションを `Icon` 要素に渡すだけです。
@@ -114,6 +155,10 @@ registerIcon(
 
 ```razor
 IgbIcon IconName="search" Collection="material" />
+```
+
+```tsx
+<IgrIcon iconName="search" collection="material" />
 ```
 
 アイコンを登録する 2 番目の方法は、SVG 文字列を `RegisterIconFromText` メソッドに渡すことです。
@@ -143,6 +188,22 @@ registerIconFromText("search", searchIcon, "material");
 }
 ```
 
+```tsx
+
+<IgrIcon ref={this.iconRef} iconName="search" collection="material" />
+
+public iconRef(icon: IgrIcon){
+    if(!icon){
+        return;
+    }
+
+    const searchIcon =
+      '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
+              
+    icon.registerIconFromText("search", searchIcon, "material");
+}
+```
+
 次に、上記のコンポーネント サンプルで説明したのと同じ方法で使用します。
 
 ### サイズ
@@ -155,6 +216,10 @@ registerIconFromText("search", searchIcon, "material");
 
 ```razor
 <IgbIcon Size="@SizableComponentSize.Large">
+```
+
+```tsx
+<IgrIcon size="large" />
 ```
 
 <code-view style="height: 60px"
@@ -173,6 +238,10 @@ registerIconFromText("search", searchIcon, "material");
 
 ```razor
 IgbIcon IconName="search" Collection="material" Mirrored="true" />
+```
+
+```tsx
+<IgrIcon iconName="search" collection="material" mirrored={true} />
 ```
 
 ## スタイル設定
@@ -205,9 +274,16 @@ igc-icon {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [GitHub の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

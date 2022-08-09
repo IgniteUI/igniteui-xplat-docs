@@ -24,12 +24,31 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して $ProductName$ npm パッケージをインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Avatar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrAvatarModule, IgrAvatar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrAvatarModule.register();
+```
+
+<!-- end: React -->
 
 `Avatar` を使用する前に、次のように登録する必要があります。
 
@@ -59,6 +78,10 @@ defineComponents(IgcAvatarComponent);
 <igc-avatar></igc-avatar>
 ```
 
+```tsx
+<IgrAvatar />
+```
+
 ```razor
 <IgbAvatar />
 ```
@@ -69,6 +92,12 @@ defineComponents(IgcAvatarComponent);
 <igc-avatar>
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```tsx
+<IgrAvatar>
+    <IgrIcon iconName="home" />
+</IgrAvatar>
 ```
 
 ```razor
@@ -87,6 +116,12 @@ defineComponents(IgcAvatarComponent);
 <igc-avatar initials="AZ">
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
+```
+
+```tsx
+<IgrAvatar initials="AZ">
+    <IgrIcon iconName="home" />
+</IgrAvatar>
 ```
 
 ```razor
@@ -116,6 +151,15 @@ defineComponents(IgcAvatarComponent);
   <igc-icon name="home"></igc-icon>
 </igc-avatar>
 ```
+
+```tsx
+<IgrAvatar initials="AZ"
+           src="https://static.infragistics.com/xplatform/images/people/men/1.jpg"
+           alt="A photo of a man.">
+    <IgrIcon iconName="home" />
+</IgrAvatar>
+```
+
 
 ```razor
 <IgbAvatar Initials="AZ"
@@ -182,9 +226,16 @@ igc-avatar::part(base) {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [GitHub の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 

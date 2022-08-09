@@ -516,6 +516,7 @@
     "names":[{"platform":"WebComponents","fileName":"igc-filter-expression-collection.ts","mappedName":"IgcFilterExpressionCollection"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"IgcFilterExpressionCollection","mappedName":"syncTarget"}],"originalName":"SyncTarget"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldDetachOnTargetChange"}],"originalName":"ShouldDetachOnTargetChange"},
     { "names":[{"platform":"WebComponents","mappedType":"() => void","mappedName":"onChanged"}],"originalName":"OnChanged"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"add"}],"originalName":"Add"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"insert"}],"originalName":"Insert"},

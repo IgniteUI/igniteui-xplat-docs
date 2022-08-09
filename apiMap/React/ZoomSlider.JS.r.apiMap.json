@@ -55,7 +55,6 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"areThumbCalloutsEnabled"}],"originalName":"AreThumbCalloutsEnabled"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"onDetachedFromUI"}],"originalName":"OnDetachedFromUI"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"onAttachedToUI"}],"originalName":"OnAttachedToUI"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"trackDirty"}],"originalName":"TrackDirty"},

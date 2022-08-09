@@ -12,7 +12,7 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 ## $ProductName$ Toast の例
 
-This sample demonstrates how to create `Toast` component.
+このサンプルは、`Toast` コンポーネントの作成方法を示しています:
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -25,12 +25,33 @@ This sample demonstrates how to create `Toast` component.
 ### 使用方法
 
 <!-- WebComponents -->
+
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrToastModule, IgrToast } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrToastModule.register();
+```
+
+<!-- end: React -->
 
 `Toast` を使用する前に、次のように登録する必要があります:
 
@@ -45,11 +66,13 @@ defineComponents(IgcToastComponent);
 ```
 
 <!-- Blazor -->
+
 また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 Toast コンポーネントを表示する最も簡単な方法は、`Show` メソッドを使用して、ボタン クリックで呼び出すことです。
@@ -78,6 +101,27 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
         {
             this.ToastRef.Show();
         }
+    }
+}
+```
+
+```tsx
+<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+    <span>Show Toast</span>
+</IgrButton>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onShowButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.show();
     }
 }
 ```
@@ -140,6 +184,47 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 }
 ```
 
+```tsx
+<div>
+    <IgrButton variant="contained" clicked={this.onToggleButtonClicked}>
+        <span>Toggle Toast</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onKeepOpenButtonClicked}>
+        <span>Toggle keepOpen Property</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onDisplayTimeButtonClicked}>
+        <span>Set DisplayTime to 8000</span>
+    </IgrButton>
+</div>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onToggleButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.toggle();
+    }
+}
+
+public onKeepOpenButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.keepOpen = !this.toastRef.keepOpen;
+    }
+}
+
+public onDisplayTimeButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.displayTime = 8000;
+    }
+}
+```
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
@@ -177,14 +262,21 @@ igc-toast {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例v](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 

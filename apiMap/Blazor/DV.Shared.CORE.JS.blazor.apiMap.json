@@ -28,6 +28,13 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"OldRect"}],"originalName":"OldRect"},
     { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"NewRect"}],"originalName":"NewRect"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics"},
+  { "originalName":"SvgIconRegistry",
+    "names":[{"platform":"Blazor","fileName":"SvgIconRegistry.cs","mappedName":"SvgIconRegistry"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Dictionary","mappedName":"_collections"}],"originalName":"_collections"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"addSvgPathString"}],"originalName":"AddSvgPathString"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getSvgPathString"}],"originalName":"GetSvgPathString"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"FormatSpecifier",
     "names":[{"platform":"Blazor","fileName":"FormatSpecifier.cs","mappedName":"IgbFormatSpecifier"}],
     "members":[
@@ -146,4 +153,25 @@
     "members":[
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ResolveLegendIndex"}],"originalName":"ResolveLegendIndex"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ILegendOwner",
-    "names":[{"platform":"Blazor","fileName":"ILegendOwner.cs","mappedName":"LegendOwner"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    "names":[{"platform":"Blazor","fileName":"ILegendOwner.cs","mappedName":"LegendOwner"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"IToolbarTarget",
+    "names":[{"platform":"Blazor","fileName":"IToolbarTarget.cs","mappedName":"IToolbarTarget"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"ToolActionInfo[]","mappedName":"getDesiredToolbarActions"}],"originalName":"GetDesiredToolbarActions"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"addCommandAvailabilityListener"}],"originalName":"AddCommandAvailabilityListener"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"removeCommandAvailabilityListener"}],"originalName":"RemoveCommandAvailabilityListener"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"onToolCommandExecuting"}],"originalName":"OnToolCommandExecuting"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ICommandAvailabilityListener",
+    "names":[{"platform":"Blazor","fileName":"ICommandAvailabilityListener.cs","mappedName":"ICommandAvailabilityListener"}],"members":[],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ToolCommand",
+    "names":[{"platform":"Blazor","fileName":"ToolCommand.cs","mappedName":"ToolCommand"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"Blazor","mappedType":"ToolCommandArgument[]","mappedName":"argumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ToolCommandArgument",
+    "names":[{"platform":"Blazor","fileName":"ToolCommandArgument.cs","mappedName":"ToolCommandArgument"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"argumentName"}],"originalName":"ArgumentName"},
+    { "names":[{"platform":"Blazor","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"}]}

@@ -144,7 +144,8 @@
   { "originalName":"IExternalDataSeriesAdapter",
     "names":[{"platform":"Blazor","fileName":"IExternalDataSeriesAdapter.cs","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"DataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
+    { "names":[{"platform":"Blazor","mappedType":"DataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"},
+    { "names":[{"platform":"Blazor","mappedType":"DataSource","mappedName":"getLocalDataSource"}],"originalName":"GetLocalDataSource"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"SimpleFinancialPriceSeriesRule",
     "names":[{"platform":"Blazor","fileName":"SimpleFinancialPriceSeriesRule.cs","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[

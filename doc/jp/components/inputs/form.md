@@ -23,36 +23,52 @@ $Platform$ の Form コンポーネントは、アプリケーションの要件
 
 ## 使用方法
 
-
 <!-- WebComponents -->
 まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+`Form` を使用する前に、次のように登録する必要があります:
+
+```ts
+import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Form` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrFormModule, IgrForm } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrFormModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 `Form` を使用する前に、次のように登録する必要があります。
 
 ```razor
 IgbFormModule.Register(IgniteUIBlazor);
 ```
 
-<!-- Blazor -->
-
 また、追加の CSS ファイルをリンクして、スタイルを `Form` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
-
 <!-- end: Blazor -->
-
-```ts
-import {defineComponents, IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent } from 'igniteui-webcomponents';
-
-defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcButtonComponent);
-```
 
 `Form` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -71,6 +87,9 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 
 フォーム コントロールが無効な場合、フォームは送信されず、エラー メッセージが表示されます。フォームの送信時にフォーム要素を検証しないように指定する場合は、`novalidate` 属性を `Form` 要素に追加できます。
 
+```tsx
+<IgrForm novalidate="true"></IgrForm>
+```
 
 ```html
   <igc-form novalidate>
@@ -131,7 +150,7 @@ Form コンポーネントは、次のメソッドを公開します:
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -141,6 +160,11 @@ Form コンポーネントは、次のメソッドを公開します:
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
 
 ## API メンバー
 

@@ -191,7 +191,9 @@
     "names":[{"platform":"Angular","fileName":"igx-item-legend-component.ts","mappedName":"IgxItemLegendComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
-    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"Angular","fileName":"igx-legend-component.ts","mappedName":"IgxLegendComponent"}],
     "members":[

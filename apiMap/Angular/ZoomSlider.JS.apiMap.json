@@ -55,7 +55,6 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"areThumbCalloutsEnabled"}],"originalName":"AreThumbCalloutsEnabled"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onDetachedFromUI"}],"originalName":"OnDetachedFromUI"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onAttachedToUI"}],"originalName":"OnAttachedToUI"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"trackDirty"}],"originalName":"TrackDirty"},

@@ -26,7 +26,8 @@
     { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"targetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"Angular","fileName":"igx-value-overlay-component.ts","dynamicModuleName":"igx-value-overlay-dynamic-module.ts","moduleName":"igx-value-overlay-module.ts","mappedName":"IgxValueOverlayComponent"}],
     "members":[
@@ -161,6 +162,8 @@
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-callout-series-selecting-event-args.ts","mappedName":"IgxCalloutSeriesSelectingEventArgs"}],
@@ -331,7 +334,8 @@
     "names":[{"platform":"Angular","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
     { 
     "names":[{"platform":"Angular","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"Angular","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[

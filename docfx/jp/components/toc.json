@@ -103,12 +103,18 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "アコーディオン",
+    "href": "layouts/accordion.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "アバター {ReleaseStatus_WebsInputs}",
     "href": "layouts/avatar.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "カード {ReleaseStatus_WebsInputs}",
     "href": "layouts/card.md"
   },
@@ -139,23 +145,29 @@
     ]
   },
   {
-    "exclude":  ["Angular", "React", "Blazor"],
+    "exclude":  ["Angular", "Blazor"],
     "name": "展開パネル",
     "href": "layouts/expansion-panel.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "タブ",
+    "href": "layouts/tabs.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "メニュー",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
     "href": "menus/navbar.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
     "href": "menus/navigation-drawer.md"
   },
@@ -166,7 +178,7 @@
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "リスト {ReleaseStatus_WebsList}",
     "href": "grids/list.md"
   },
@@ -335,7 +347,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ツリー",
     "href": "grids/tree.md",
     "status": "NEW"
@@ -1342,63 +1354,59 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "データ入力と表示",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "バッジ {ReleaseStatus_WebsInputs}",
     "href": "inputs/badge.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ボタン {ReleaseStatus_WebsInputs}",
     "href": "inputs/button.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "チェックボックス {ReleaseStatus_WebsInputs}",
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "円形プログレス",
-    "href": "inputs/circular-progress.md",
-     "status": "NEW"
+    "href": "inputs/circular-progress.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "チップ {ReleaseStatus_WebsInputs}",
-    "href": "inputs/chip.md",
-    "status": "NEW"
+    "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "ドロップダウン {ReleaseStatus_WebsInputs}",
-    "href": "inputs/dropdown.md",
-    "status": "NEW"
+    "href": "inputs/dropdown.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "フォーム {ReleaseStatus_WebsInputs}",
     "href": "inputs/form.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "アイコン {ReleaseStatus_WebsInputs}",
     "href": "layouts/icon.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
     "href": "inputs/icon-button.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "リニア プログレス",
-    "href": "inputs/linear-progress.md",
-    "status": "NEW"
+    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],
@@ -1407,23 +1415,37 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor", "WebComponents"],
-    "name": "日時入力",
-    "href": "inputs/date-time-input.md",
-    "status": "NEW"
+    "exclude": ["Angular", "React", "Blazor"], 
+    "name": "マスク入力 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"], 
+    "name": "日時入力 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/date-time-input.md"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "選択 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/select.md"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "評価 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/rating.md"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "スイッチ {ReleaseStatus_WebsInputs}",
     "href": "inputs/switch.md"
   },
@@ -1432,15 +1454,14 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "リップル {ReleaseStatus_WebsInputs}",
     "href": "inputs/ripple.md"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "スライダー & 範囲スライダー {ReleaseStatus_WebsInputs}",
-    "href": "inputs/slider.md",
-    "status": "NEW"
+    "href": "inputs/slider.md"
   },
   {
     "exclude": ["Blazor"],
@@ -1449,21 +1470,19 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "通知",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "スナックバー {ReleaseStatus_WebsInputs}",
-    "href": "notifications/snackbar.md",
-    "status": "NEW"
+    "href": "notifications/snackbar.md"
   },
   {
-     "exclude": ["Angular", "React"],
+     "exclude": ["Angular"],
      "name": "トースト {ReleaseStatus_WebsInputs}",
-     "href": "notifications/toast.md",
-     "status": "NEW"
+     "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular"],
@@ -1471,7 +1490,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular"],
     "name": "カレンダー",
     "href": "scheduling/calendar.md"
   },

@@ -28,7 +28,6 @@ $ProductName$ 展開パネルは、縮小または展開の 2 つの状態で描
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
 `ExpansionPanel` を使用する前に、次のように登録する必要があります:
 
@@ -38,8 +37,30 @@ import {defineComponents, IgcExpansionPanelComponent} from 'igniteui-webcomponen
 defineComponents(IgcExpansionPanelComponent);
 ```
 
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`ExpansionPanel` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrExpansionPanel, IgrExpansionPanelModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrExpansionPanelModule.register();
+```
+
+<!-- end: React -->
+
 `ExpansionPanel` の使用を開始する最も簡単な方法は次のとおりです:
 
+<!-- WebComponents -->
 ```html
 <igc-expansion-panel>
     <div slot="title">Golden Retriever</div>
@@ -52,18 +73,54 @@ defineComponents(IgcExpansionPanelComponent);
     </div>
 </igc-expansion-panel>
 ```
+<!-- end: WebComponents -->
+
+```tsx
+<IgrExpansionPanel>
+    <h1 slot="title">Golden Retriever</h1>
+    <h3 slot="subtitle">Medium-large gun dog</h3>
+    <span>The Golden Retriever is a medium-large gun dog that retrieves shot waterfowl, such as ducks
+        and upland game birds, during hunting and shooting parties.[3] The name retriever refers to the breeds ability
+        to retrieve shot game undamaged due to their soft mouth. Golden retrievers have an instinctive love of water, and
+        are easy to train to basic or advanced obedience standards.</span>
+</IgrExpansionPanel>
+```
 
 ## イベントにバインド
 
 展開パネル コンポーネントは、次のイベントを発生させます:
+
+<!-- WebComponents -->
+
 - igcClosed - 展開パネルが縮小されたときに発生します。
-- igcOpeneded - 展開パネルが展開パネルされたときに発生します。
+- igcOpened - 展開パネルが展開されたときに発生します。
 - igcClosing - 展開パネルが縮小を開始たときに発生します。
-- igcOpening - 展開パネルが展開パネルを開始したときに発生します。
+- igcOpening - 展開パネルが展開を開始したときに発生します。
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+- Closed - 展開パネルが縮小されたときに発生します。
+- Opened - 展開パネルが展開されたときに発生します。
+- Closing - 展開パネルが縮小を開始たときに発生します。
+- Opening - 展開パネルが展開を開始したときに発生します。
+
+<!-- end: React -->
 
 次のサンプルは、コンポーネントにロジックを追加して、パネルの現在の状態に応じて `subtitle` を表示 / 非表示にする方法を示しています。
 
+<!-- WebComponents -->
+
 これを行うには、`igcOpened` および `igcClosed` イベント エミッターにバインドします。
+
+<!-- end: WebComponents -->
+
+<!-- React -->
+
+これを行うには、`Opened` および `Closed` イベントにバインドします:
+
+<!-- end: React -->
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -75,9 +132,9 @@ defineComponents(IgcExpansionPanelComponent);
 <div class="divider--half"></div>
 
 ## コンポーネントのカスタマイズ
-`IgcExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[Input](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
+`ExpansionPanel` コントロールを使用すると、あらゆる種類のコンテンツを本体内に追加できます。[Input](../inputs/input.md)、チャート、さらには他の展開パネルを描画できます!
 
-`IgcExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
+`ExpansionPanel` を使用すると、公開された *title*、*subTitle*、および *indicator* スロット全体でヘッダーを簡単にカスタマイズできます。
 
 展開インジケーターの位置の構成は、展開パネルの `indicatorAlignment` プロパティを使用して行うことができます。可能なオプションは、**start**、**end**、または **none** です。
 
@@ -123,7 +180,6 @@ $ProductName$ 展開パネル コンポーネントは、いくつかの CSS パ
 展開パネルの API の詳細については、次のリンクを参照してください:
 * `ExpansionPanel`
 
-
 <!-- end: WebComponents -->
 
 <div class="divider"></div>
@@ -137,10 +193,17 @@ $ProductName$ 展開パネル コンポーネントは、いくつかの CSS パ
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
 

@@ -35,6 +35,25 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`List` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrListModule, IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrListModule.register();
+```
+
+<!-- end: React -->
+
 `List` を使用する前に、次のように登録する必要があります。
 
 ```razor
@@ -56,8 +75,6 @@ import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
 defineComponents(IgcListComponent);
 ```
-
-`List` の使用を開始する最も簡単な方法は次のとおりです:
 
 
 ### リスト項目の追加
@@ -92,6 +109,23 @@ defineComponents(IgcListComponent);
         <h2 slot="title">Item 3</h2>
     </IgbListItem>
 </IgbList>
+```
+
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Header</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgrListItem>
+</IgrList>
 ```
 
 以下は結果です:
@@ -143,6 +177,26 @@ defineComponents(IgcListComponent);
         <span slot="subtitle">859-496-2817</span>
     </IgbListItem>
 </IgbList>
+```
+
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgrListItem>
+</IgrList>
 ```
 
 上記のコードを実装すると、リスト コンポーネントは次のようになります:
@@ -234,6 +288,65 @@ defineComponents(IgcListComponent);
 </IgbList>
 ```
 
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" shape="circle" />
+        </div>                        
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+</IgrList>
+```
+
 `start` スロットは、リスト項目の他のすべてのコンテンツの前に、ある種のメディアを追加するために使用することを目的としています。ターゲット要素 (この場合は `Avatar` コンポーネント) にも、デフォルトの位置と間隔が提供されます。
 
 `end` スロットは、switch、button、checkbox などで表される、ある種のアクションまたはメタデータを持つリスト項目に使用することを目的としています。`Button` コンポーネントを使用します。
@@ -290,6 +403,28 @@ this.radioGroup.addEventListener('click', (radio: any) => {
                     break;
                 }
         }
+    }
+}
+```
+
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="small" labelPosition="after" change={this.onRadioChange}>
+        <span>Small</span>
+    </IgrRadio>
+    <IgrRadio value="medium" labelPosition="after" change={this.onRadioChange}>
+        <span>Medium</span>
+    </IgrRadio>
+    <IgrRadio value="large" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Large</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrList size={this.state.listSize} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ listSize: e.value });
     }
 }
 ```
@@ -361,9 +496,16 @@ igc-list-item::part(end) {
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 
