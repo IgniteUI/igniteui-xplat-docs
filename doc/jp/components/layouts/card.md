@@ -73,9 +73,9 @@ IgbCardModule.Register(IgniteUIBlazor);
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
+defineComponents(IgcCardComponent);
 ```
 
 次に、デモのカード テンプレートを表すために、以下のコードを追加します:

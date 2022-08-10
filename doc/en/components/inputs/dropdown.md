@@ -31,14 +31,11 @@ npm install {PackageWebComponents}
 ```ts
 import {
     defineComponents,
-    IgcDropdownComponent,
-    IgcDropdownItemComponent,
-    IgcDropdownHeaderComponent,
-    IgcDropdownGroupComponent
+    IgcDropdownComponent
 } from "igniteui-webcomponents";
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
-defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
+defineComponents(IgcDropdownComponent);
 ```
 <!-- end: WebComponents -->
 

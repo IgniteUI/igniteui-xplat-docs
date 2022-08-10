@@ -71,9 +71,9 @@ IgbListModule.Register(IgniteUIBlazor);
 <!-- end: Blazor -->
 
 ```ts
-import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
+defineComponents(IgcListComponent);
 ```
 
 

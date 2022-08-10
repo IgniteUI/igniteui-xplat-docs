@@ -37,8 +37,8 @@ npm install {PackageWebComponents}
 `Tree` を使用する前に、次のように登録する必要があります:
 
 ```ts
-import {defineComponents, IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent} from 'igniteui-webcomponents';
-defineComponents(IgcTreeComponent, IgcTreeItemComponent, IgcIconComponent);
+import { defineComponents, IgcTreeComponent } from 'igniteui-webcomponents';
+defineComponents(IgcTreeComponent);
 ```
 
 <!-- end: WebComponents -->

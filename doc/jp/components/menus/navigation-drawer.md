@@ -71,9 +71,9 @@ IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
 <!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
+defineComponents(IgcNavDrawerComponent);
 ```
 
 
@@ -221,11 +221,9 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 
 ```ts
 // ...
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-    IgcRadioComponent, IgcRadioGroupComponent);
+defineComponents(IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {

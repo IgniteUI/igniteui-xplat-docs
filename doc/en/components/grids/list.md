@@ -70,9 +70,9 @@ You will also need to link an additional CSS file to apply the styling to the `L
 <!-- end: Blazor -->
 
 ```ts
-import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
+defineComponents(IgcListComponent);
 ```
 
 
