@@ -31,15 +31,14 @@ npm install {PackageWebComponents}
 `Select` コンポーネントを使用する前に、追加のコンポーネントとともに登録する必要があります:
 
 ```ts
-import { defineComponents,
-         IgcSelectComponent,
-         IgcSelectItemComponent,
-         IgcSelectGroupComponent,
-         IgcSelectHeaderComponent } 
+import {
+    defineComponents,
+    IgcSelectComponent
+}
 from 'igniteui-webcomponents';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
-defineComponents(IgcSelectComponent, IgcSelectItemComponent, IgcSelectGroupComponent, IgcSelectHeaderComponent);
+defineComponents(IgcSelectComponent);
 ```
 
 <!-- end: WebComponents -->
