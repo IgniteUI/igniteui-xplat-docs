@@ -37,9 +37,9 @@ npm install {PackageWebComponents}
 `Accordion` を使用する前に、次のように登録する必要があります:
 
 ```ts
-import {defineComponents, IgcAccordionComponent, IgcExpansionPanelComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcAccordionComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcAccordionComponent, IgcExpansionPanelComponent);
+defineComponents(IgcAccordionComponent);
 ```
 
 <!-- end: WebComponents -->
