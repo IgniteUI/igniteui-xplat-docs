@@ -22,7 +22,7 @@ The Infragistics $Platform$ Excel Engine enables you to save data to and load da
 
 ## Change Default Font
 
-First create a new instance of `IWorkbookFont`. Next, add the new font to the `Styles` collection of the `Workbook`. This style contains the default properties for all cells in the workbook, unless otherwise specified on a row, column, or cell. Changing properties of the style will change the default cell format properties in the workbook.
+First create a new instance of <a class="external-link" href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/api/docs/typescript/latest/interfaces/iworkbookfont.html">IWorkbookFont</a>. Next, add the new font to the `Styles` collection of the `Workbook`. This style contains the default properties for all cells in the workbook, unless otherwise specified on a row, column, or cell. Changing properties of the style will change the default cell format properties in the workbook.
 
 ```ts
 var workbook = new Workbook();
