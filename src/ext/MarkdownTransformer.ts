@@ -108,6 +108,18 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
+
+            let char1 = resolvedTypeName[0];
+
+            if(char1 == "I"){            
+                let char2 = resolvedTypeName[1];
+                if(char2.toUpperCase() == char2){                
+                    isClass = false;
+                    isEnum = false;
+                    isInterface = true;
+                }
+            }
+
             if (isClass) {
                 linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
             } else if (isEnum) {
