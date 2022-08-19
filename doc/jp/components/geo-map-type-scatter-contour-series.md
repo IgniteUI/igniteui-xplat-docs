@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter contour series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布等高線シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布等高線シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布等高線シリーズを使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics, $Platform$ マップ, 散布等高線シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale']
 _language: ja
 ---
-# $PlatformShort$ 散布等高線シリーズの使用
+# $Platform$ 散布等高線シリーズの使用
 
-$PlatformShort$ マップ コンポーネントの `GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
+$Platform$ マップ コンポーネントの `GeographicContourLineSeries` を使用して、各点に数値が割り当てられた経度および緯度データの三角測量に基づいて、地理的なコンテキストで色付きの等高線を描画します。このタイプの地理的シリーズは、天気の気温、気圧、降水量、人口分布、地形データなどの地理的位置によって定義される散在データをレンダリングするのに役立ちます。
 
-## サンプル
+## $Platform$ 散布等高線シリーズの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-contour-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-contour-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-contour-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
+           alt="$Platform$ 散布等高線シリーズの使用の例"
+           github-src="maps/geo-map/type-scatter-contour-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -34,8 +33,8 @@ $PlatformShort$ マップ コンポーネントの `GeographicContourLineSeries`
 | プロパティ名  | プロパティ型   | 概要   |
 |--------------|---------------| ---------------|
 |`ItemsSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
-|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの経度を含むプロパティの名前。|
-|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの Latitude を含むプロパティの名前。|
+|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
+|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
 |`ValueMemberPath`|文字列|各データ項目の緯度および経度座標の値を含むプロパティの名前。`FillScale` プロパティが設定されている場合、この数値は色に変換されます。|
 |`TrianglesSource`|任意|三角測量データのソースを取得または設定します。TriangulationSource オブジェクトの Triangles をこのプロパティに設定すると、ランタイムパフォーマンスと地理的シリーズレンダリングの両方が向上します。|
 |`TriangleVertexMemberPath1`|文字列|各三角形に対して ItemsSource の最初の頂点のインデックスを含む、TrianglesSource 項目のプロパティ名。このプロパティを設定することは義務ではありません。カスタムの三角測量ロジックが提供されない場合はデフォルトで取得されます。|
@@ -306,15 +305,15 @@ createContourSeries(data: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicContourLineSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ValueMemberPath="Value"
         FillScale="@BrushScale"
         DataSource="@Data"
         Thickness="2">
-    </GeographicContourLineSeries>
-</GeographicMap>
+    </IgbGeographicContourLineSeries>
+</IgbGeographicMap>
 
 @code {
     private List<Location> Data;
@@ -322,7 +321,7 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue

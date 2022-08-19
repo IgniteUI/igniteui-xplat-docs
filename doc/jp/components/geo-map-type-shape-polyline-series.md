@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | シェイプ ポリライン シリーズ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップのシェイプ ポリライン シリーズを使用して、都市または空港などの地理的位置間の道路または接続を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, $ProductName$, shape polyline series, Infragistics, $PlatformShort$ マップ, シェイプ ポリライン シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | シェイプ ポリライン シリーズ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップのシェイプ ポリライン シリーズを使用して、都市または空港などの地理的位置間の道路または接続を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics, $Platform$ マップ, シェイプ ポリライン シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ シェイプ ポリライン シリーズの使用
+# $Platform$ シェイプ ポリライン シリーズの使用
 
-地理的コンテキストでポリラインを使用して地理空間データを表示するには、$PlatformShort$ マップ コンポーネントの `GeographicPolylineSeries` を使用します。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
+地理的コンテキストでポリラインを使用して地理空間データを表示するには、$Platform$ マップ コンポーネントの `GeographicPolylineSeries` を使用します。地理的シリーズのこのタイプは、都市または空港などの地理的位置間の道路または接続を描画するためにしばしば使用されます。
 
-## サンプル
+## $Platform$ シェイプ ポリライン シリーズの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-shape-polyline-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-shape-polyline-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-shape-polyline-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
+           alt="$Platform$ シェイプ ポリライン シリーズの使用の例"
+           github-src="maps/geo-map/type-shape-polyline-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -136,7 +135,7 @@ public addSeries(shapeData: any[], shapeBrush: string)
 ```ts
 import { AfterViewInit, Component, EmbeddedViewRef, TemplateRef, ViewChild} from "@angular/core";
 import { IgxShapeDataSource } from 'igniteui-angular-core';
-import { IgxGeographicMapComponent } from 'igniteui-angular-maps';
+import { IgxIgxGeographicMapComponent } from 'igniteui-angular-maps';
 import { IgxGeographicPolylineSeriesComponent } from 'igniteui-angular-maps';
 
 @Component({
@@ -285,23 +284,24 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.dbf"
-        };        
+        };
     }
 }
 ```
+

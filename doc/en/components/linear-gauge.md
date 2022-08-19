@@ -1,34 +1,33 @@
 ---
-title: $PlatformShort$ Linear Gauge | Data Visualization Tools | Infragistics
-_description: Use Infragistics' $PlatformShort$ linear gauge control to visualize data with a simple and concise view. Learn about the $ProductName$ linear gauge configurable elements!
+title: $Platform$ Linear Gauge | Data Visualization Tools | Infragistics
+_description: Use Infragistics' $Platform$ linear gauge control to visualize data with a simple and concise view. Learn about the $ProductName$ linear gauge configurable elements!
 _keywords: linear gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamLinearGauge']
+namespace: Infragistics.Controls.Gauges
 ---
-# $PlatformShort$ Linear Gauge Overview
+# $Platform$ Linear Gauge Overview
 
-Use the $PlatformShort$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
-
-## Demo
+Use the $Platform$ linear gauge component to see a simple display of a value compared against a scale and one or more ranges.
 
 The $ProductName$ linear gauge component allows for visualizing data in the form of a linear gauge. It provides a simple and concise view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels. The component has also a built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property. The features of the linear gauge component include configurable orientation and direction, configurable visual elements such as the needle, and more.
 
-The following sample demonstrates how setting multiple properties on the same linear gauge can transform it to completely different linear gauge.
+## $Platform$ Linear Gauge Example
 
-<div class="sample-container loading" style="height: 155px">
-    <iframe id="linear-gauge-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/animation"></sample-button>
+The following sample demonstrates how setting multiple properties on the same `XamLinearGauge` can transform it to completely different linear gauge.
 
-</div>
+
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
+           alt="$Platform$ Linear Gauge Example"
+           github-src="gauges/linear-gauge/animation">
+</code-view>
 
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
-When installing the $PlatformShort$ gauge component, the core package must also be installed.
+When installing the $Platform$ gauge component, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -38,21 +37,21 @@ npm install --save {PackageGauges}
 
 ## Required Modules
 
-The `XamLinearGauge` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `XamLinearGauge` requires the following modules:
 
-* LinearGaugeModule 
-<!-- end: Blazor -->
+```razor
+IgbLinearGaugeModule.Register(IgniteUIBlazor);
+```
+
 
 ```ts
 // app.module.ts
 import { IgxLinearGaugeModule } from 'igniteui-angular-gauges';
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxLinearGaugeModule,
-        IgxLinearGaugeComponent,
+        IgxLinearGaugeModule
         // ...
     ]
 })
@@ -61,14 +60,12 @@ export class AppModule {}
 
 ```ts
 import { IgrLinearGaugeModule } from 'igniteui-react-gauges';
-import { IgrLinearGauge } from 'igniteui-react-gauges';
 
 IgrLinearGaugeModule.register();
 ```
 
 ```ts
 import { IgcLinearGaugeModule } from 'igniteui-webcomponents-gauges';
-import { IgcLinearGaugeComponent } from 'igniteui-webcomponents-gauges';
 
 ModuleManager.register(
     IgcLinearGaugeModule
@@ -145,22 +142,22 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
-        MinimumValue="5"      
+<IgbLinearGauge Height="80px" Width="100%"
+        MinimumValue="5"
         MaximumValue="55"
         Value="43" >
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="15"
             Brush="red" >
-    </LinearGraphRange>
-     <LinearGraphRange StartValue="15"
+    </IgbLinearGraphRange>
+     <IgbLinearGraphRange StartValue="15"
             EndValue="30"
-            Brush="yellow">   
-    <LinearGraphRange StartValue="30"
+            Brush="yellow">
+    <IgbLinearGraphRange StartValue="30"
             EndValue="55"
             Brush="green">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
 <div class="divider--half"></div>
@@ -238,7 +235,7 @@ This is the primary measure displayed by the linear gauge component and is visua
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsNeedleDraggingEnabled="true"
@@ -255,18 +252,15 @@ This is the primary measure displayed by the linear gauge component and is visua
     NeedleOuterPointWidth="0.3"
     NeedleInnerBaseWidth="0"
     NeedleOuterBaseWidth="0.07">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-needle-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-needle-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/needle"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
+           github-src="gauges/linear-gauge/needle">
+</code-view>
 
 ## Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same times the degree to which it resides within that state.
@@ -330,37 +324,34 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
         MinimumValue="0" Value="50"
         MaximumValue="100" Interval="10"
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
             EndValue="50"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.25"
             OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
             EndValue="100"
             InnerStartExtent="0.075"
             InnerEndExtent="0.075"
             OuterStartExtent="0.4"
             OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
+           github-src="gauges/linear-gauge/ranges">
+</code-view>
 
 ## Tick Marks
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the linear gauge.
@@ -429,7 +420,7 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
 ```
 
 ```razor
- <LinearGauge Height="80px" Width="100%"
+ <IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     TickBrush="DodgerBlue"
@@ -443,17 +434,14 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
     MinorTickEndExtent="0.05"
     MinorTickStartExtent="0.15"
     MinorTickStrokeThickness="1">
-</LinearGauge>
-```        
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/tickmarks"></sample-button>
+</IgbLinearGauge>
+```
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
+           github-src="gauges/linear-gauge/tickmarks">
+</code-view>
 
 ## Labels
 The labels indicate the measures on the scale.
@@ -499,7 +487,7 @@ The labels indicate the measures on the scale.
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     LabelInterval="10"
@@ -508,18 +496,15 @@ The labels indicate the measures on the scale.
     LabelsPostInitial="0"
     FontBrush="DodgerBlue"
     Font="11px Verdana">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
+           github-src="gauges/linear-gauge/labels">
+</code-view>
 
 ## Backing
 The backing element represents background and border of the linear gauge component. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
@@ -563,7 +548,7 @@ The backing element represents background and border of the linear gauge compone
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
     Value="50"
@@ -573,18 +558,15 @@ The backing element represents background and border of the linear gauge compone
     BackingStrokeThickness="4"
     BackingInnerExtent="0"
     BackingOuterExtent="1">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-backing-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-backing-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/backing"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
+           github-src="gauges/linear-gauge/backing">
+</code-view>
 
 ## Scale
 The scale is a visual element that highlights the full range of values in the linear gauge. You can customize the appearance and the shape of the scale. It can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
@@ -636,7 +618,7 @@ The scale is a visual element that highlights the full range of values in the li
 </igc-linear-gauge>
 ```
 ```razor
-<LinearGauge Height="80px" Width="100%"
+<IgbLinearGauge Height="80px" Width="100%"
     MinimumValue="0" Value="50"
     MaximumValue="100" Interval="10"
     IsScaleInverted="false"
@@ -647,18 +629,15 @@ The scale is a visual element that highlights the full range of values in the li
     ScaleOuterExtent="0.65"
     ScaleStartExtent="0.05"
     ScaleEndExtent="0.95">
-</LinearGauge>
+</IgbLinearGauge>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="linear-gauge-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="linear-gauge-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/linear-gauge/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
+           github-src="gauges/linear-gauge/scale">
+</code-view>
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the linear gauge with all features and visuals enabled.
@@ -881,9 +860,9 @@ For your convenience, all above code snippets are combined into one code block b
 ```
 
 ```razor
-<LinearGauge Height="80px" Width="100%"
-        MinimumValue="0" 
-        MaximumValue="100" 
+<IgbLinearGauge Height="80px" Width="100%"
+        MinimumValue="0"
+        MaximumValue="100"
 
         LabelInterval="10"
         LabelExtent="0.025"
@@ -939,19 +918,34 @@ For your convenience, all above code snippets are combined into one code block b
 
         RangeBrushes="#A4BD29, #F86232"
         RangeOutlines="#A4BD29, #F86232">
-    <LinearGraphRange StartValue="0"
+    <IgbLinearGraphRange StartValue="0"
                 EndValue="50"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.25"
                 OuterEndExtent="0.4">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="50"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="50"
                 EndValue="100"
                 InnerStartExtent="0.075"
                 InnerEndExtent="0.075"
                 OuterStartExtent="0.4"
                 OuterEndExtent="0.55">
-    </LinearGraphRange>
-</LinearGauge>
+    </IgbLinearGraphRange>
+</IgbLinearGauge>
 ```
+<div class="divider--half"></div>
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Bullet Graph](bullet-graph.md)
+- [Radial Gauge](radial-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamLinearGauge`
+- `XamLinearGraphRange`

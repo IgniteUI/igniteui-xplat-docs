@@ -1,32 +1,31 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | マップ ナビゲーション | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップをナビゲートするには、マウスまたはタッチを使用して左右にパンニングし、水平および垂直にズームします。$ProductName$ マップのナビゲーション機能について説明します。
-_keywords: $PlatformShort$ map, navigations, $ProductName$, Infragistics, $PlatformShort$ マップ, ナビゲーション, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | マップ ナビゲーション | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップをナビゲートするには、マウスまたはタッチを使用して左右にパンニングし、水平および垂直にズームします。$ProductName$ マップのナビゲーション機能について説明します。
+_keywords: $Platform$ map, navigation, $ProductName$, Infragistics, $Platform$ マップ, ナビゲーション, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ コンテンツのナビゲーション
+# $Platform$ コンテンツのナビゲーション
 
 `XamGeographicMap` コントロールのナビゲーションは、既定では有効にされており、マップ コンテンツのズームとパンが可能です。ただし、この動作は `Zoomable` プロパティを使用して変更できます。マップでは同期ズームのみが許可されていること、つまり、アスペクト比を維持したままマップコンテンツをスケーリングすることを知っておくことが重要です。結果として、マップコンテンツを水平方向にスケーリングせずに垂直方向にスケーリングすることはできません。
 
-## サンプル
+## $Platform$ コンテンツのナビゲーションの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-navigation-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-navigation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-navigation-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-    <sample-button src="maps/geo-map/navigation"></sample-button>
-</div>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
+           alt="$Platform$ コンテンツのナビゲーションの例"
+           github-src="maps/geo-map/navigation">
+</code-view>
 
 <div class="divider--half"></div>
 
 ## 地理座標
 
 これらの座標で囲まれた地理的領域内の地図コンテンツをナビゲートします。
-- 経度180°E(マイナス) から 180°W(プラス) の緯度
-- 南緯 85 度 (マイナス) から北緯 85 度 (プラス)
+- 水平方向に 180°E (マイナス) から 180°W (プラス) の経度
+- 垂直方向に 85°S (マイナス) から 85°N (プラス) の緯度
 
 このコード スニペットは、地理座標を使用してマップをナビゲートする方法を示しています。
 

@@ -1,30 +1,30 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, plot data, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, プロット データ, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding, $Platform$ マップ, プロット データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $PlatformShort$ CSV ファイルを地理的な場所にバインド
+# $Platform$ CSV ファイルを地理的な場所にバインド
 
 $ProductName$ Map コンポーネントを使用すると、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、カンマ区切り値 (CSV) ファイルから地理的な場所を読み込むことができます。
 
-## サンプル
+## $Platform$ CSV ファイルを地理的な場所にバインドの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-csv-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-csv-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-data-csv"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
+           alt="$Platform$ CSV ファイルを地理的な場所にバインドの例"
+           github-src="maps/geo-map/binding-data-csv">
+</code-view>
 
 <div class="divider--half"></div>
 
 
 ## データ例
-CSVファイルからのデータの例:
+CSV ファイルからのデータの例:
 
 ```ts
 City,Lat,Lon,State,Code,County,Density,Population
@@ -248,8 +248,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         HeatMaximumColor="Red"
@@ -258,14 +258,14 @@ onDataLoaded(csvData: string) {
         HeatMaximum="5"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
     private List<WorldPlaceCsv> DataSource;
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/UsaCitiesPopulation.csv";
         string csv = await Http.GetStringAsync(url);

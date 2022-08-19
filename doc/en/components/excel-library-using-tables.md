@@ -1,23 +1,28 @@
 ---
-title: $PlatformShort$ Excel Library| Using Tables | Infragistics
-_description: Use Infragistics' $PlatformShort$ excel library's table functionality to format your data in rows and columns. View $ProductName$ excel tutorials for more information!
+title: $Platform$ Excel Library| Using Tables | Infragistics
+_description: Use Infragistics' $Platform$ excel library's table functionality to format your data in rows and columns. View $ProductName$ excel tutorials for more information!
 _keywords: Excel library, tables, $ProductName$, Infragistics
 mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 ---
-# $PlatformShort$ Using Tables
+# $Platform$ Using Tables
 
-The Infragistics $PlatformShort$ Excel Engine's `WorksheetTable` functionality allows you to format your data in rows and columns The data in a worksheet table can be managed independently from the data in the other rows and columns in a `Worksheet`.
-<!--## Demo
+The Infragistics $Platform$ Excel Engine's `WorksheetTable` functionality allows you to format your data in rows and columns The data in a worksheet table can be managed independently from the data in the other rows and columns in a `Worksheet`.
+<!--## $Platform$ Using Tables Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>-->
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"
+           alt="$Platform$ Using Tables Example" >
+</code-view>
+
+-->
 
 
 <div class="divider--half"></div>
 
 ## Adding a Table to a Worksheet
-Worksheet tables in the Infragistics $PlatformShort$ Excel Engine are represented by the `WorksheetTable` object and are added in the worksheet's `Tables` collection. In order to add a table, you need to invoke the `Add` method on this collection. In this method, you can specify the region in which you would like to add a table, whether or not the table should contain headers, and optionally, specify the table's style as a `WorksheetTableStyle` object.
+Worksheet tables in the Infragistics $Platform$ Excel Engine are represented by the `WorksheetTable` object and are added in the worksheet's `Tables` collection. In order to add a table, you need to invoke the `Add` method on this collection. In this method, you can specify the region in which you would like to add a table, whether or not the table should contain headers, and optionally, specify the table's style as a `WorksheetTableStyle` object.
 
 The following code demonstrates how you can add a table with headers to a `Worksheet` spanning a region of A1 to G10, where A1 to G1 will be the column headers:
 
@@ -28,13 +33,20 @@ var worksheet = this.workbook.worksheets().add("Sheet1");
 worksheet.tables().add("A1:G10", true);
 ```
 
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Tables.Add("A1:G10", true);
+```
+
 Once you have added a table, you can modify it by adding or deleting rows and columns by calling the `InsertColumns`, `InsertDataRows`, `DeleteColumns`, or `DeleteDataRows` methods on the `WorksheetTable`. You can also set a new table range by using the `Resize` method of the table.
 
 The following code snippet shows the usage of these methods:
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 //Will add 5 columns at index 1.
@@ -51,6 +63,27 @@ table.deleteDataRows(0, 5);
 
 //Will resize the table to be in the region of A1:G15.
 table.resize("A1:G15");
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+//Will add 5 columns at index 1.
+table.InsertColumns(1, 5);
+
+//Will add 5 rows at index 0.
+table.InsertDataRows(0, 5);
+
+//Will delete 5 columns starting at index 1.
+table.DeleteColumns(1, 5);
+
+//Will delete 5 rows starting at index 0.
+table.DeleteDataRows(0, 5);
+
+//Will resize the table to be in the region of A1:G15.
+table.Resize("A1:G15");
 ```
 
 ## Filtering Tables
@@ -74,10 +107,18 @@ The following code snippet demonstrates how to apply an "above average" filter t
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
-var worksheet = this.workbook.worksheets().add("Sheet1");
+var worksheet = workbook.worksheets().add("Sheet1");
 var table = worksheet.tables().add("A1:G10", true);
 
 table.columns(0).applyAverageFilter(AverageFilterType.AboveAverage);
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].ApplyAverageFilter(Documents.Excel.Filtering.AverageFilterType.AboveAverage);
 ```
 
 ## Sorting Tables
@@ -107,5 +148,16 @@ table.columns(0).sortCondition = new OrderedSortCondition(SortDirection.Ascendin
 
 //Alternative:
 table.sortSettings.sortConditions().addItem(table.columns(0), new OrderedSortCondition(SortDirection.Ascending));
+```
+
+```razor
+var workbook = new Workbook(WorkbookFormat.Excel2007);
+var worksheet = workbook.Worksheets.Add("Sheet1");
+var table = worksheet.Tables.Add("A1:G10", true);
+
+table.Columns[0].SortCondition = new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending);
+
+//Alternative
+table.SortSettings.SortConditions.Add(table.Columns[0], new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
 ```
 

@@ -1,19 +1,22 @@
 ---
-title: $PlatformShort$ Spreadsheet | Conditional Formatting | Infragistics
-_description: Use Infragistics' $PlatformShort$ spreadsheet control to conditionally format the cells of a worksheet. Check out $ProductName$ spreadsheet demos!
+title: $Platform$ Spreadsheet | Conditional Formatting | Infragistics
+_description: Use Infragistics' $Platform$ spreadsheet control to conditionally format the cells of a worksheet. Check out $ProductName$ spreadsheet demos!
 _keywords: Spreadsheet, conditional formatting, $ProductName$, Infragistics, Worksheet
 mentionedTypes: ['Spreadsheet', 'ConditionalFormatCollection', 'WorksheetCell', 'Worksheet', 'IWorksheetCellFormat']
 ---
-# $PlatformShort$ Spreadsheet Conditional Formatting
+# $Platform$ Spreadsheet Conditional Formatting
 
-The $PlatformShort$ Spreadsheet component allows you to conditionally format the cells of a worksheet. This allows you to highlight different pieces of your data based on a condition.
+The $Platform$ Spreadsheet component allows you to conditionally format the cells of a worksheet. This allows you to highlight different pieces of your data based on a condition.
 
-## Demo
+## $Platform$ Spreadsheet Conditional Formatting Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="data-grid-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/conditional-formatting"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting"
+           alt="$Platform$ Spreadsheet Conditional Formatting Example"
+           github-src="excel/spreadsheet/conditional-formatting">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -29,7 +32,7 @@ There are a few conditional formats that do not have a `CellFormat` property, as
 
 When loading a pre-existing workbook from Excel, the formats will be preserved when that workbook is loaded. The same is true for when you save the workbook out to an Excel file.
 
-The following lists the supported conditional formats in the $PlatformShort$ `Spreadsheet` control:
+The following lists the supported conditional formats in the $Platform$ `Spreadsheet` control:
 
 - `AverageConditionalFormat`: Added using the `AddAverageCondition` method, this conditional format exposes properties which control the visual attributes of a worksheet cell based on whether a cell’s value is above or below the average or standard deviation for the associated range.
 - `BlanksConditionalFormat`: Added using the `AddBlanksCondition` method, this conditional format exposes properties which control the visual attributes of a worksheet cell based on whether the cell’s value is not set.

@@ -9,6 +9,12 @@ test
 src/**/*.js
 src/**/*.js.map
 
+doc/**/obsolete
+
 # excluding auto-generated files:
 docfx/**/components/toc_*.json
 docfx/**/components/toc.yml
+docfx/**/web.config
+
+# excluding to avoid errors with yarn install
+# package-lock.json

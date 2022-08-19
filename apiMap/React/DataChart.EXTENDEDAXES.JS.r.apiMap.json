@@ -1,467 +1,114 @@
-{
-"extraFiles": [
-"igr-time-axis-break-module.ts",
-"igr-time-axis-interval-module.ts",
-"igr-time-axis-label-format-module.ts"
-],
-"types": [
-{
-    "originalName": "CategoryAngleAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-category-angle-axis.ts",
-    "dynamicModuleName": "igr-category-angle-axis-dynamic-module.ts",
-    "moduleName": "igr-category-angle-axis-module.ts",
- "mappedName": "IgrCategoryAngleAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAngular"}            ],
-           "originalName": "IsAngular"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "startAngleOffset"}            ],
-           "originalName": "StartAngleOffset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualInterval"}            ],
-           "originalName": "ActualInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorInterval"}            ],
-           "originalName": "MinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualMinorInterval"}            ],
-           "originalName": "ActualMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getScaledAngle"}            ],
-           "originalName": "GetScaledAngle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getUnscaledAngle"}            ],
-           "originalName": "GetUnscaledAngle"
-       }   ],
-    "originalBaseTypeName": "CategoryAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryDateTimeXAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-category-date-time-x-axis.ts",
-    "dynamicModuleName": "igr-category-date-time-x-axis-dynamic-module.ts",
-    "moduleName": "igr-category-date-time-x-axis-module.ts",
- "mappedName": "IgrCategoryDateTimeXAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isContinuous"}            ],
-           "originalName": "IsContinuous"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisDisplayType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualInterval"}            ],
-           "originalName": "ActualInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "minorInterval"}            ],
-           "originalName": "MinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualMinorInterval"}            ],
-           "originalName": "ActualMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCategoryDateTime"}            ],
-           "originalName": "IsCategoryDateTime"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "TimeAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "NumericAngleAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-numeric-angle-axis.ts",
-    "dynamicModuleName": "igr-numeric-angle-axis-dynamic-module.ts",
-    "moduleName": "igr-numeric-angle-axis-module.ts",
- "mappedName": "IgrNumericAngleAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isAngular"}            ],
-           "originalName": "IsAngular"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "startAngleOffset"}            ],
-           "originalName": "StartAngleOffset"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getScaledAngle"}            ],
-           "originalName": "GetScaledAngle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getUnscaledAngle"}            ],
-           "originalName": "GetUnscaledAngle"
-       }   ],
-    "originalBaseTypeName": "NumericAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "NumericRadiusAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-numeric-radius-axis.ts",
-    "dynamicModuleName": "igr-numeric-radius-axis-dynamic-module.ts",
-    "moduleName": "igr-numeric-radius-axis-module.ts",
- "mappedName": "IgrNumericRadiusAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isRadial"}            ],
-           "originalName": "IsRadial"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "radiusExtentScale"}            ],
-           "originalName": "RadiusExtentScale"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "innerRadiusExtentScale"}            ],
-           "originalName": "InnerRadiusExtentScale"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getScaledValue3"}            ],
-           "originalName": "GetScaledValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getUnscaledValue3"}            ],
-           "originalName": "GetUnscaledValue"
-       }   ],
-    "originalBaseTypeName": "NumericAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "OrdinalTimeXAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-ordinal-time-x-axis.ts",
-    "dynamicModuleName": "igr-ordinal-time-x-axis-dynamic-module.ts",
-    "moduleName": "igr-ordinal-time-x-axis-module.ts",
- "mappedName": "IgrOrdinalTimeXAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "dateTimeMemberPath"}            ],
-           "originalName": "DateTimeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrTimeAxisLabelFormatCollection", "mappedName": "labelFormats"}            ],
-           "originalName": "LabelFormats"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getValueLabel"}            ],
-           "originalName": "GetValueLabel"
-       }   ],
-    "originalBaseTypeName": "CategoryXAxis",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PercentChangeYAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-percent-change-y-axis.ts",
-    "dynamicModuleName": "igr-percent-change-y-axis-dynamic-module.ts",
-    "moduleName": "igr-percent-change-y-axis-module.ts",
- "mappedName": "IgrPercentChangeYAxis"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "NumericYAxis",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeAxisBase",
-   "names": [
-        { "platform": "React",     "fileName": "igr-time-axis-base.ts",
- "mappedName": "IgrTimeAxisBase"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "dateTimeMemberPath"}            ],
-           "originalName": "DateTimeMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDataPreSorted"}            ],
-           "originalName": "IsDataPreSorted"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "actualMinimumValue"}            ],
-           "originalName": "ActualMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "actualMaximumValue"}            ],
-           "originalName": "ActualMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "minimumValue"}            ],
-           "originalName": "MinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "maximumValue"}            ],
-           "originalName": "MaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isDateTime"}            ],
-           "originalName": "IsDateTime"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isSorting"}            ],
-           "originalName": "IsSorting"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getIndexClosestToUnscaledValue"}            ],
-           "originalName": "GetIndexClosestToUnscaledValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyDataChanged"}            ],
-           "originalName": "NotifyDataChanged"
-       }   ],
-    "originalBaseTypeName": "CategoryAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeAxisBreak",
-   "names": [
-        { "platform": "React",     "fileName": "igr-time-axis-break.ts",
- "mappedName": "IgrTimeAxisBreak"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "start"}            ],
-           "originalName": "Start"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "end"}            ],
-           "originalName": "End"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeAxisInterval",
-   "names": [
-        { "platform": "React",     "fileName": "igr-time-axis-interval.ts",
- "mappedName": "IgrTimeAxisInterval"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "range"}            ],
-           "originalName": "Range"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "intervalType"}            ],
-           "originalName": "IntervalType"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeAxisIntervalType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "TimeAxisIntervalType.ts",
- "mappedName": "TimeAxisIntervalType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Ticks"}            ],
-           "originalName": "Ticks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Milliseconds"}            ],
-           "originalName": "Milliseconds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Seconds"}            ],
-           "originalName": "Seconds"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Minutes"}            ],
-           "originalName": "Minutes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Hours"}            ],
-           "originalName": "Hours"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Days"}            ],
-           "originalName": "Days"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Weeks"}            ],
-           "originalName": "Weeks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Months"}            ],
-           "originalName": "Months"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "TimeAxisIntervalType", "mappedName": "Years"}            ],
-           "originalName": "Years"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeAxisLabelFormat",
-   "names": [
-        { "platform": "React",     "fileName": "igr-time-axis-label-format.ts",
- "mappedName": "IgrTimeAxisLabelFormat"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "range"}            ],
-           "originalName": "Range"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "format"}            ],
-           "originalName": "Format"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TimeXAxis",
-   "names": [
-        { "platform": "React",     "fileName": "igr-time-x-axis.ts",
-    "dynamicModuleName": "igr-time-x-axis-dynamic-module.ts",
-    "moduleName": "igr-time-x-axis-module.ts",
- "mappedName": "IgrTimeXAxis"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isPiecewise"}            ],
-           "originalName": "IsPiecewise"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrTimeAxisBreakCollection", "mappedName": "breaks"}            ],
-           "originalName": "Breaks"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrTimeAxisLabelFormatCollection", "mappedName": "labelFormats"}            ],
-           "originalName": "LabelFormats"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrTimeAxisIntervalCollection", "mappedName": "intervals"}            ],
-           "originalName": "Intervals"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCategoryDateTime"}            ],
-           "originalName": "IsCategoryDateTime"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getValueLabel"}            ],
-           "originalName": "GetValueLabel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getIndexClosestToUnscaledValue"}            ],
-           "originalName": "GetIndexClosestToUnscaledValue"
-       }   ],
-    "originalBaseTypeName": "TimeAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"CategoryAngleAxis",
+    "names":[{"platform":"React","fileName":"igr-category-angle-axis.ts","dynamicModuleName":"igr-category-angle-axis-dynamic-module.ts","moduleName":"igr-category-angle-axis-module.ts","mappedName":"IgrCategoryAngleAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAngular"}],"originalName":"IsAngular"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"startAngleOffset"}],"originalName":"StartAngleOffset"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getScaledAngle"}],"originalName":"GetScaledAngle"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategoryDateTimeXAxis",
+    "names":[{"platform":"React","fileName":"igr-category-date-time-x-axis.ts","dynamicModuleName":"igr-category-date-time-x-axis-dynamic-module.ts","moduleName":"igr-category-date-time-x-axis-module.ts","mappedName":"IgrCategoryDateTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isContinuous"}],"originalName":"IsContinuous"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisDisplayType","mappedName":"displayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCategoryDateTime"}],"originalName":"IsCategoryDateTime"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"NumericAngleAxis",
+    "names":[{"platform":"React","fileName":"igr-numeric-angle-axis.ts","dynamicModuleName":"igr-numeric-angle-axis-dynamic-module.ts","moduleName":"igr-numeric-angle-axis-module.ts","mappedName":"IgrNumericAngleAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAngular"}],"originalName":"IsAngular"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"startAngleOffset"}],"originalName":"StartAngleOffset"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getScaledAngle"}],"originalName":"GetScaledAngle"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"NumericRadiusAxis",
+    "names":[{"platform":"React","fileName":"igr-numeric-radius-axis.ts","dynamicModuleName":"igr-numeric-radius-axis-dynamic-module.ts","moduleName":"igr-numeric-radius-axis-module.ts","mappedName":"IgrNumericRadiusAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isRadial"}],"originalName":"IsRadial"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusExtentScale"}],"originalName":"RadiusExtentScale"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"innerRadiusExtentScale"}],"originalName":"InnerRadiusExtentScale"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getScaledValue3"}],"originalName":"GetScaledValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"OrdinalTimeXAxis",
+    "names":[{"platform":"React","fileName":"igr-ordinal-time-x-axis.ts","dynamicModuleName":"igr-ordinal-time-x-axis-dynamic-module.ts","moduleName":"igr-ordinal-time-x-axis-module.ts","mappedName":"IgrOrdinalTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"labellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"React","mappedType":"IgrTimeAxisLabelFormatCollection","mappedName":"labelFormats"}],"originalName":"LabelFormats"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getValueLabel"}],"originalName":"GetValueLabel"}],"originalBaseTypeName":"CategoryXAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PercentChangeYAxis",
+    "names":[{"platform":"React","fileName":"igr-percent-change-y-axis.ts","dynamicModuleName":"igr-percent-change-y-axis-dynamic-module.ts","moduleName":"igr-percent-change-y-axis-module.ts","mappedName":"IgrPercentChangeYAxis"}],"members":[],"originalBaseTypeName":"NumericYAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisBase",
+    "names":[{"platform":"React","fileName":"igr-time-axis-base.ts","mappedName":"IgrTimeAxisBase"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDataPreSorted"}],"originalName":"IsDataPreSorted"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"actualMinimumValue"}],"originalName":"ActualMinimumValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"actualMaximumValue"}],"originalName":"ActualMaximumValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDateTime"}],"originalName":"IsDateTime"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isSorting"}],"originalName":"IsSorting"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyDataChanged"}],"originalName":"NotifyDataChanged"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisLabellingMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"TimeAxisLabellingMode.ts","mappedName":"TimeAxisLabellingMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"Normal"}],"originalName":"Normal"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"Compressed"}],"originalName":"Compressed"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisBreak",
+    "names":[{"platform":"React","fileName":"igr-time-axis-break.ts","dynamicModuleName":"igr-time-axis-break-dynamic-module.ts","moduleName":"igr-time-axis-break-module.ts","mappedName":"IgrTimeAxisBreak"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"start"}],"originalName":"Start"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"end"}],"originalName":"End"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisInterval",
+    "names":[{"platform":"React","fileName":"igr-time-axis-interval.ts","dynamicModuleName":"igr-time-axis-interval-dynamic-module.ts","moduleName":"igr-time-axis-interval-module.ts","mappedName":"IgrTimeAxisInterval"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"range"}],"originalName":"Range"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"intervalType"}],"originalName":"IntervalType"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisIntervalType","isEnum":true,
+    "names":[{"platform":"React","fileName":"TimeAxisIntervalType.ts","mappedName":"TimeAxisIntervalType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Ticks"}],"originalName":"Ticks"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Milliseconds"}],"originalName":"Milliseconds"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Seconds"}],"originalName":"Seconds"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Minutes"}],"originalName":"Minutes"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Hours"}],"originalName":"Hours"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Days"}],"originalName":"Days"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Weeks"}],"originalName":"Weeks"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Months"}],"originalName":"Months"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisIntervalType","mappedName":"Years"}],"originalName":"Years"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeAxisLabelFormat",
+    "names":[{"platform":"React","fileName":"igr-time-axis-label-format.ts","dynamicModuleName":"igr-time-axis-label-format-dynamic-module.ts","moduleName":"igr-time-axis-label-format-module.ts","mappedName":"IgrTimeAxisLabelFormat"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"range"}],"originalName":"Range"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"format"}],"originalName":"Format"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"repeatedYearFormat"}],"originalName":"RepeatedYearFormat"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"repeatedMonthFormat"}],"originalName":"RepeatedMonthFormat"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"repeatedDayFormat"}],"originalName":"RepeatedDayFormat"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TimeXAxis",
+    "names":[{"platform":"React","fileName":"igr-time-x-axis.ts","dynamicModuleName":"igr-time-x-axis-dynamic-module.ts","moduleName":"igr-time-x-axis-module.ts","mappedName":"IgrTimeXAxis"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isPiecewise"}],"originalName":"IsPiecewise"},
+    { "names":[{"platform":"React","mappedType":"IgrTimeAxisBreakCollection","mappedName":"breaks"}],"originalName":"Breaks"},
+    { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"labellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"React","mappedType":"IgrTimeAxisLabelFormatCollection","mappedName":"labelFormats"}],"originalName":"LabelFormats"},
+    { "names":[{"platform":"React","mappedType":"IgrTimeAxisIntervalCollection","mappedName":"intervals"}],"originalName":"Intervals"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCategoryDateTime"}],"originalName":"IsCategoryDateTime"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getValueLabel"}],"originalName":"GetValueLabel"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

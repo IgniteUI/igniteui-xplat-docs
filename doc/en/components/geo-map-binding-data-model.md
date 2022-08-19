@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, binding data models, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap', GeographicScatterAreaSeries, GeographicHighDensityScatterSeries, GeographicProportionalSymbolSeries, GeographicScatterAreaSeries, GeographicContourLineSeries, GeographicShapeSeries, GeographicPolylineSeries  ]
+title: $Platform$ Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View $ProductName$ map demos!
+_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'GeographicScatterAreaSeries', 'GeographicHighDensityScatterSeries', 'GeographicProportionalSymbolSeries', GeographicScatterAreaSeries', GeographicContourLineSeries', 'GeographicShapeSeries', 'GeographicPolylineSeries' ]
+namespace: Infragistics.Controls.Maps
 ---
-# $PlatformShort$ Binding Geographic Data Models
+# $Platform$ Binding Geographic Data Models
 
 The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.
 
-## Demo
+## $Platform$ Binding Geographic Data Models Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-model-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-model-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-data-model"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
+           alt="$Platform$ Binding Geographic Data Models Example"
+           github-src="maps/geo-map/binding-data-model">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -312,7 +312,7 @@ createPolylineSeries(flight: any)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     @for (int i = 0; i < this.DataSource.Count; i++)
     {
         FlightInfo info = this.DataSource[i];
@@ -323,7 +323,7 @@ createPolylineSeries(flight: any)
 
         List<List<Point>> geoPath = WorldUtils.CalcPaths(geoOrigin, geoDest);
         double geoDistance = WorldUtils.CalcDistance(geoOrigin, geoDest);
-        
+
         FlightInfo route = new FlightInfo()
         {
             Points =  geoPath,
@@ -335,17 +335,17 @@ createPolylineSeries(flight: any)
 
         List<FlightInfo> geoRoute = new List<FlightInfo>() { route };
 
-        <GeographicSymbolSeries DataSource="@symbolData" MarkerType="MarkerType.Circle"
+        <IgbGeographicSymbolSeries DataSource="@symbolData" MarkerType="MarkerType.Circle"
                                 LatitudeMemberPath="Lat" LongitudeMemberPath="Lon"
                                 MarkerBrush="White" MarkerOutline="@info.Color"
                                 Thickness="1">
-        </GeographicSymbolSeries>
-        <GeographicPolylineSeries DataSource="@geoRoute" ShapeMemberPath="Points"
+        </IgbGeographicSymbolSeries>
+        <IgbGeographicPolylineSeries DataSource="@geoRoute" ShapeMemberPath="Points"
                                   ShapeStrokeThickness="9" ShapeOpacity="0.5"
                                   ShapeStroke="@info.Color">
-        </GeographicPolylineSeries>
+        </IgbGeographicPolylineSeries>
     }
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -353,7 +353,7 @@ createPolylineSeries(flight: any)
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         WorldCity cityDAL = new WorldCity() { Lat = 32.763, Lon = -96.663, Country = "US", Name = "Dallas" };
         WorldCity citySYD = new WorldCity() { Lat = -33.889, Lon = 151.028, Country = "Australia", Name = "Sydney" };

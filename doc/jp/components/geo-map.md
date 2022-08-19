@@ -1,29 +1,29 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | マップ概要 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, geographic map, imagery tiles, $ProductName$, Infragistics, $PlatformShort$ マップ, 地理マップ, 画像タイル, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | マップ概要 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics, $Platform$ マップ, 地理マップ, 画像タイル, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ マップの概要
+# $Platform$ マップの概要
 
 $ProductName$ Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-bubble-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-bubble-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-bubble-series"></sample-button>
+# $Platform$ マップの例
+
+以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           github-src="maps/geo-map/type-scatter-bubble-series">
+</code-view>
 
 <div class="divider--half"></div>
 
+$Platform$ 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
 
-$PlatformShort$ 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
-
-マップの `Series` プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
+マップの Series プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
 
 Map は、マウス、キーボード、またはコードビハインドを使用して、マップ コンテンツをナビゲーションするためのカスタマイズ可能なナビゲーション動作を提供します。
 
@@ -41,16 +41,12 @@ npm install --save {PackageMaps}
 
 ## モジュールの要件
 
-<!-- Angular, React, WebComponents -->
-`XamGeographicMap` には以下のモジュールが必要ですが、Ig$DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
-<!-- end: Angular, React, WebComponents -->
-
-<!-- Blazor -->
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 // app.module.ts
@@ -150,5 +146,33 @@ ModuleManager.register(
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true" />
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
 ```
+
+<div class="divider--half"></div>
+
+## その他のリソース
+
+関連する $Platform$ マップ機能の詳細については、以下のトピックを参照してください。
+
+- [地理マップのナビゲーション](geo-map-navigation.md)
+<!-- - [地理マップ画像](geo-map-display-imagery-types.md) -->
+- [散布図記号シリーズの使用](geo-map-type-scatter-symbol-series.md)
+- [散布図比例シリーズの使用](geo-map-type-scatter-bubble-series.md)
+- [散布等高線シリーズの使用](geo-map-type-scatter-contour-series.md)
+- [散布図密度シリーズの使用](geo-map-type-scatter-density-series.md)
+- [散布エリア シリーズの使用](geo-map-type-scatter-area-series.md)
+- [シェイプ ポリゴン シリーズの使用](geo-map-type-shape-polygon-series.md)
+- [シェイプ ポリライン シリーズの使用](geo-map-type-shape-polyline-series.md)
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamGeographicMap`
+- `GeographicContourLineSeries`
+- `GeographicHighDensityScatterSeries`
+- `GeographicPolylineSeries`
+- `GeographicShapeSeries`
+- `GeographicProportionalSymbolSeries`
+- `GeographicSymbolSeries`

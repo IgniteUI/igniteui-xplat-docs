@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter symbol series, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Using Scatter Symbol Series
+# $Platform$ Using Scatter Symbol Series
 
-Use the $PlatformShort$ map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
+Use the $Platform$ map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
 
-## Demo
+## $Platform$ Using Scatter Symbol Series Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-symbol-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-symbol-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-symbol-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
+           alt="$Platform$ Using Scatter Symbol Series Example"
+           github-src="maps/geo-map/type-scatter-symbol-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -182,20 +181,20 @@ addSeriesWith(locations: any[], brush: string)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="Cities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="Cities"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="Gray" />
-    <GeographicSymbolSeries DataSource="Capitals"
+    <IgbGeographicSymbolSeries DataSource="Capitals"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="White"
         MarkerOutline="rgb(32, 146, 252)" />
-</GeographicMap>    
+</IgbGeographicMap>
 
 @code {
 
@@ -204,7 +203,7 @@ addSeriesWith(locations: any[], brush: string)
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.Cities = WorldLocations.GetCities();
         this.Capitals = WorldLocations.GetCapitals();

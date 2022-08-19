@@ -1,11 +1,16 @@
 {
     "_navBarTitle": "{ProductName}",
     "_navBarTitleHref": "https://jp.infragistics.com/products/{ProductSpinal}/",
-    "_currentBaseUrl": "https://jp.infragistics.com/products/{ProductSpinal}/{PlatformShortLower}/",
+    "_currentBaseUrl": "https://jp.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
     "_hasKRLang": false,
-    "_ENBaseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformShortLower}/",
-    "_JABaseUrl": "https://jp.infragistics.com/products/{ProductSpinal}/{PlatformShortLower}/",
-    "_KRBaseUrl": "https://www.infragistics.co.kr/products/{ProductSpinal}/{PlatformShortLower}/",
+    "_ENBaseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
+    "_JABaseUrl": "https://jp.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
+    "_KRBaseUrl": "https://www.infragistics.co.kr/products/{ProductSpinal}/{PlatformLower}/",
     "_themeUsage": false,
-    "_demosBaseUrlVar": "{environment:dvDemosBaseUrl}"
+    "_demosBaseUrlVar": "",
+    "_platform": "{PlatformLower}",
+    "_toc-dir": "components",
+    "_initialPage": "components/general-getting-started",
+    "_enableSearch": true,
+    "_useRedirects": true
 }

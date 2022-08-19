@@ -1,459 +1,157 @@
-{
-"types": [
-{
-    "originalName": "InterpolationMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "InterpolationMode.ts",
- "mappedName": "InterpolationMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InterpolationMode", "mappedName": "RGB"}            ],
-           "originalName": "RGB"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InterpolationMode", "mappedName": "HSV"}            ],
-           "originalName": "HSV"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "EasingFunctions",
-   "names": [
-        { "platform": "Angular",     "fileName": "EasingFunctions.ts",
- "mappedName": "EasingFunctions"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "DoubleValueChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-double-value-changed-event-args.ts",
- "mappedName": "IgxDoubleValueChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorReference",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "ErrorBarCalculatorReference.ts",
- "mappedName": "ErrorBarCalculatorReference"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "X"}            ],
-           "originalName": "X"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorReference", "mappedName": "Y"}            ],
-           "originalName": "Y"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "ErrorBarCalculatorType",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "ErrorBarCalculatorType.ts",
- "mappedName": "ErrorBarCalculatorType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Fixed"}            ],
-           "originalName": "Fixed"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Percentage"}            ],
-           "originalName": "Percentage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorType", "mappedName": "Data"}            ],
-           "originalName": "Data"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardDeviation"}            ],
-           "originalName": "StandardDeviation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ErrorBarCalculatorType", "mappedName": "StandardError"}            ],
-           "originalName": "StandardError"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "RectChangedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-rect-changed-event-args.ts",
- "mappedName": "IgxRectChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "oldRect"}            ],
-           "originalName": "OldRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "newRect"}            ],
-           "originalName": "NewRect"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics"
-},
-{
-    "originalName": "InteractionState",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "InteractionState.ts",
- "mappedName": "InteractionState"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InteractionState", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InteractionState", "mappedName": "DragZoom"}            ],
-           "originalName": "DragZoom"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InteractionState", "mappedName": "DragPan"}            ],
-           "originalName": "DragPan"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "InteractionState", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "ISyncableObservableCollectionChangedListener",
-   "names": [
-        { "platform": "Angular",     "fileName": "SyncableObservableCollectionChangedListener.ts",
- "mappedName": "SyncableObservableCollectionChangedListener"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "onChanged"}            ],
-           "originalName": "OnChanged"
-       }   ],
-    "originalNamespace": "Infragistics.Controls"
-},
-{
-    "originalName": "DataContext",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-data-context.ts",
- "mappedName": "IgxDataContext"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualItemBrush"}            ],
-           "originalName": "ActualItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "itemLabel"}            ],
-           "originalName": "ItemLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "itemBrush"}            ],
-           "originalName": "ItemBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "legendLabel"}            ],
-           "originalName": "LegendLabel"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TrendLineType",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "TrendLineType.ts",
- "mappedName": "TrendLineType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "LinearFit"}            ],
-           "originalName": "LinearFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "QuadraticFit"}            ],
-           "originalName": "QuadraticFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "CubicFit"}            ],
-           "originalName": "CubicFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "QuarticFit"}            ],
-           "originalName": "QuarticFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "QuinticFit"}            ],
-           "originalName": "QuinticFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "LogarithmicFit"}            ],
-           "originalName": "LogarithmicFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "ExponentialFit"}            ],
-           "originalName": "ExponentialFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "PowerLawFit"}            ],
-           "originalName": "PowerLawFit"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "SimpleAverage"}            ],
-           "originalName": "SimpleAverage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "ExponentialAverage"}            ],
-           "originalName": "ExponentialAverage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "ModifiedAverage"}            ],
-           "originalName": "ModifiedAverage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "CumulativeAverage"}            ],
-           "originalName": "CumulativeAverage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "WeightedAverage"}            ],
-           "originalName": "WeightedAverage"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "UnknownValuePlotting",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "UnknownValuePlotting.ts",
- "mappedName": "UnknownValuePlotting"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "LinearInterpolate"}            ],
-           "originalName": "LinearInterpolate"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "DontPlot"}            ],
-           "originalName": "DontPlot"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PropertyUpdatedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-property-updated-event-args.ts",
- "mappedName": "IgxPropertyUpdatedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "propertyName"}            ],
-           "originalName": "PropertyName"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "oldValue"}            ],
-           "originalName": "OldValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "newValue"}            ],
-           "originalName": "NewValue"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BaseControlTheme",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "BaseControlTheme.ts",
- "mappedName": "BaseControlTheme"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "Default"}            ],
-           "originalName": "Default"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "DenaliLight"}            ],
-           "originalName": "DenaliLight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "BaseControlTheme", "mappedName": "MaterialLight"}            ],
-           "originalName": "MaterialLight"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-},
-{
-    "originalName": "ElevationMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "ElevationMode.ts",
- "mappedName": "ElevationMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ElevationMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ElevationMode", "mappedName": "MaterialShadow"}            ],
-           "originalName": "MaterialShadow"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ElevationMode", "mappedName": "HaloShadow"}            ],
-           "originalName": "HaloShadow"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-},
-{
-    "originalName": "ControlDisplayDensity",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "ControlDisplayDensity.ts",
- "mappedName": "ControlDisplayDensity"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "Comfortable"}            ],
-           "originalName": "Comfortable"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "Cosy"}            ],
-           "originalName": "Cosy"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ControlDisplayDensity", "mappedName": "Compact"}            ],
-           "originalName": "Compact"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Implementation"
-}
-]
-}
+{"types":[
+  { "originalName":"InterpolationMode","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"InterpolationMode.ts","mappedName":"InterpolationMode"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"InterpolationMode","mappedName":"RGB"}],"originalName":"RGB"},
+    { "names":[{"platform":"Angular","mappedType":"InterpolationMode","mappedName":"HSV"}],"originalName":"HSV"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"EasingFunctions",
+    "names":[{"platform":"Angular","fileName":"EasingFunctions.ts","mappedName":"EasingFunctions"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"DoubleValueChangedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-double-value-changed-event-args.ts","mappedName":"IgxDoubleValueChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"oldValue"}],"originalName":"OldValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics"},
+  { "originalName":"ErrorBarCalculatorReference","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"ErrorBarCalculatorReference.ts","mappedName":"ErrorBarCalculatorReference"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorReference","mappedName":"X"}],"originalName":"X"},
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorReference","mappedName":"Y"}],"originalName":"Y"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"ErrorBarCalculatorType","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"ErrorBarCalculatorType.ts","mappedName":"ErrorBarCalculatorType"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"Fixed"}],"originalName":"Fixed"},
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"Percentage"}],"originalName":"Percentage"},
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"Data"}],"originalName":"Data"},
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
+    { "names":[{"platform":"Angular","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"RectChangedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-rect-changed-event-args.ts","mappedName":"IgxRectChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgRect","mappedName":"oldRect"}],"originalName":"OldRect"},
+    { "names":[{"platform":"Angular","mappedType":"IgRect","mappedName":"newRect"}],"originalName":"NewRect"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics"},
+  { "originalName":"InteractionState","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"InteractionState.ts","mappedName":"InteractionState"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"InteractionState","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"Angular","mappedType":"InteractionState","mappedName":"DragZoom"}],"originalName":"DragZoom"},
+    { "names":[{"platform":"Angular","mappedType":"InteractionState","mappedName":"DragPan"}],"originalName":"DragPan"},
+    { "names":[{"platform":"Angular","mappedType":"InteractionState","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"FormatSpecifier",
+    "names":[{"platform":"Angular","fileName":"igx-format-specifier.ts","dynamicModuleName":"igx-format-specifier-dynamic-module.ts","moduleName":"igx-format-specifier-module.ts","mappedName":"IgxFormatSpecifier"}],"members":[],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"NumberFormatSpecifier",
+    "names":[{"platform":"Angular","fileName":"igx-number-format-specifier.ts","dynamicModuleName":"igx-number-format-specifier-dynamic-module.ts","moduleName":"igx-number-format-specifier-module.ts","mappedName":"IgxNumberFormatSpecifier"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"compactDisplay"}],"originalName":"CompactDisplay"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"currency"}],"originalName":"Currency"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"currencyDisplay"}],"originalName":"CurrencyDisplay"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"currencySign"}],"originalName":"CurrencySign"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"localeMatcher"}],"originalName":"LocaleMatcher"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"notation"}],"originalName":"Notation"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"numberingSystem"}],"originalName":"NumberingSystem"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"signDisplay"}],"originalName":"SignDisplay"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"style"}],"originalName":"Style"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unit"}],"originalName":"Unit"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unitDisplay"}],"originalName":"UnitDisplay"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useGrouping"}],"originalName":"UseGrouping"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumIntegerDigits"}],"originalName":"MinimumIntegerDigits"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumFractionDigits"}],"originalName":"MinimumFractionDigits"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumFractionDigits"}],"originalName":"MaximumFractionDigits"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minimumSignificantDigits"}],"originalName":"MinimumSignificantDigits"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumSignificantDigits"}],"originalName":"MaximumSignificantDigits"}],"originalBaseTypeName":"FormatSpecifier","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DateTimeFormatSpecifier",
+    "names":[{"platform":"Angular","fileName":"igx-date-time-format-specifier.ts","dynamicModuleName":"igx-date-time-format-specifier-dynamic-module.ts","moduleName":"igx-date-time-format-specifier-module.ts","mappedName":"IgxDateTimeFormatSpecifier"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"locale"}],"originalName":"Locale"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"dateStyle"}],"originalName":"DateStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"timeStyle"}],"originalName":"TimeStyle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"fractionalSecondDigits"}],"originalName":"FractionalSecondDigits"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calendar"}],"originalName":"Calendar"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"dayPeriod"}],"originalName":"DayPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"numberingSystem"}],"originalName":"NumberingSystem"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"localeMatcher"}],"originalName":"LocaleMatcher"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"timeZone"}],"originalName":"TimeZone"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"hour12"}],"originalName":"Hour12"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"hourCycle"}],"originalName":"HourCycle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"formatMatcher"}],"originalName":"FormatMatcher"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"weekDay"}],"originalName":"WeekDay"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"era"}],"originalName":"Era"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"year"}],"originalName":"Year"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"month"}],"originalName":"Month"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"day"}],"originalName":"Day"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"hour"}],"originalName":"Hour"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"minute"}],"originalName":"Minute"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"second"}],"originalName":"Second"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"timeZoneName"}],"originalName":"TimeZoneName"}],"originalBaseTypeName":"FormatSpecifier","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"ISyncableObservableCollectionChangedListener",
+    "names":[{"platform":"Angular","fileName":"SyncableObservableCollectionChangedListener.ts","mappedName":"SyncableObservableCollectionChangedListener"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"onChanged"}],"originalName":"OnChanged"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"DataContext",
+    "names":[{"platform":"Angular","fileName":"igx-data-context.ts","mappedName":"IgxDataContext"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualItemBrush"}],"originalName":"ActualItemBrush"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"itemLabel"}],"originalName":"ItemLabel"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"itemBrush"}],"originalName":"ItemBrush"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"legendLabel"}],"originalName":"LegendLabel"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TrendLineType","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"TrendLineType.ts","mappedName":"TrendLineType"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"LinearFit"}],"originalName":"LinearFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"QuadraticFit"}],"originalName":"QuadraticFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"CubicFit"}],"originalName":"CubicFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"QuarticFit"}],"originalName":"QuarticFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"QuinticFit"}],"originalName":"QuinticFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"LogarithmicFit"}],"originalName":"LogarithmicFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"ExponentialFit"}],"originalName":"ExponentialFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"PowerLawFit"}],"originalName":"PowerLawFit"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"SimpleAverage"}],"originalName":"SimpleAverage"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"ExponentialAverage"}],"originalName":"ExponentialAverage"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"ModifiedAverage"}],"originalName":"ModifiedAverage"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"CumulativeAverage"}],"originalName":"CumulativeAverage"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"WeightedAverage"}],"originalName":"WeightedAverage"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"UnknownValuePlotting","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"UnknownValuePlotting.ts","mappedName":"UnknownValuePlotting"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"LinearInterpolate"}],"originalName":"LinearInterpolate"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"DontPlot"}],"originalName":"DontPlot"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PropertyUpdatedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-property-updated-event-args.ts","mappedName":"IgxPropertyUpdatedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyName"}],"originalName":"PropertyName"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"oldValue"}],"originalName":"OldValue"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BaseControlTheme","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"BaseControlTheme.ts","mappedName":"BaseControlTheme"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"Default"}],"originalName":"Default"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"DenaliLight"}],"originalName":"DenaliLight"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"MaterialLight"}],"originalName":"MaterialLight"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
+  { "originalName":"ElevationMode","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"ElevationMode.ts","mappedName":"ElevationMode"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"ElevationMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"ElevationMode","mappedName":"MaterialShadow"}],"originalName":"MaterialShadow"},
+    { "names":[{"platform":"Angular","mappedType":"ElevationMode","mappedName":"HaloShadow"}],"originalName":"HaloShadow"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
+  { "originalName":"ControlDisplayDensity","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"ControlDisplayDensity.ts","mappedName":"ControlDisplayDensity"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"Comfortable"}],"originalName":"Comfortable"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"Cosy"}],"originalName":"Cosy"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"Compact"}],"originalName":"Compact"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"}]}

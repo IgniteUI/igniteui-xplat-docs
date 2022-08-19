@@ -1,25 +1,24 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, shapefiles, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, シェープファイル, データ バインディング, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 _language: ja
 ---
-# $PlatformShort$ シェープ ファイルを地理的データにバインディング
+# $Platform$ シェープ ファイルを地理的データにバインディング
 
 $ProductName$ Map コンポーネントの `ShapeDataSource` クラスは、形状ファイルから地理空間データ (ポイント/位置、ポリライン、ポリゴン) を読み込み、それを `ShapefileRecord` オブジェクトのコレクションに変換します。
 
 
-## サンプル
+## $Platform$ シェープ ファイルを地理的データにバインディングの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-shp-polylines-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-shp-polylines-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-shp-polylines"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
+           alt="$Platform$ シェープ ファイルを地理的データにバインディングの例"
+           github-src="maps/geo-map/binding-shp-polylines">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -236,12 +235,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries ShapefileDataSource="@DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
         ShapeFilterResolution="0.0"
         ShapeStrokeThickness="3"
         ShapeStroke="rgb(82, 82, 82, 0.4)"/>
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -249,9 +248,9 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.dbf"

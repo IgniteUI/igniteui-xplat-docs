@@ -1,13 +1,13 @@
 ---
-title: $PlatformShort$ マップ | ワールド コネクション | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップ データ ユーティリティを使用して、空港の位置、飛行経路、および地理的なグリッド線を生成します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, map data, $ProductName$, Infragistics, $PlatformShort$ マップ, マップ データ, インフラジスティックス
+title: $Platform$ マップ | ワールド コネクション | データ ソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップ データ ユーティリティを使用して、空港の位置、飛行経路、および地理的なグリッド線を生成します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, map data, $ProductName$, Infragistics, $Platform$ マップ, マップ データ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ ワールド コネクション
+# $Platform$ ワールド コネクション
 
-リソース　トピックは、空港の位置、飛行経路、および地理的なグリッド線を生成するためのデータユーティリティの実装を提供します。これらのデータソースを独自の地理データを作成するための参照点として使用できます。このユーティリティは [WorldUtil](geo-map-resources-world-util.md) と [WorldLocations](geo-map-resources-world-locations.md) スクリプトに依存していることに注意してください。
+リソース トピックは、空港の位置、飛行経路、および地理的なグリッド線を生成するためのデータユーティリティの実装を提供します。これらのデータ ソースを独自の地理データを作成するための参照点として使用できます。このユーティリティは [WorldUtil](geo-map-resources-world-util.md) と [WorldLocations](geo-map-resources-world-locations.md) スクリプトに依存していることに注意してください。
 
 ## コード スニペット
 
@@ -194,7 +194,7 @@ export default class WorldConnections {
             for (int i=0; i<count; i++)
             {
                 WorldCity origin = cities[i];
-                
+
                 for(int j=0; j<count; j++)
                 {
                     WorldCity dest = cities[j];
@@ -301,6 +301,6 @@ export default class WorldConnections {
 
     public class CoordinateLine
     {
-        public List<List<Point>> Points { get; set; }        
+        public List<List<Point>> Points { get; set; }
     }
 ```

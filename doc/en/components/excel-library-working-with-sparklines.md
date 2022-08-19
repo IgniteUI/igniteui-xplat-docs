@@ -1,20 +1,22 @@
 ---
-title: $PlatformShort$ Excel Library| Working with Sparklines | Infragistics
-_description: Use sparkline charts in Infragistics' $PlatformShort$ excel library to visual data trends across a region of cells in your worksheet. View $ProductName$ excel engine tutorials!
+title: $Platform$ Excel Library| Working with Sparklines | Infragistics
+_description: Use sparkline charts in Infragistics' $Platform$ excel library to visual data trends across a region of cells in your worksheet. View $ProductName$ excel engine tutorials!
 _keywords: Excel library, sparkline chart, $ProductName$, Infragistics
 mentionedTypes: ['Workbook']
 ---
-# $PlatformShort$ Working with Sparklines
+# $Platform$ Working with Sparklines
 
-The Infragistics $PlatformShort$ Excel Library has support for adding sparklines to an Excel Worksheet. These can be used to show simple visual representations of data trends across a region of cells of data in your worksheet. For example, if you wanted to see your Excel data across a particular cell region visualized as a simple column or line sparkline chart, this feature can help you to achieve that.
+The Infragistics $Platform$ Excel Library has support for adding sparklines to an Excel Worksheet. These can be used to show simple visual representations of data trends across a region of cells of data in your worksheet. For example, if you wanted to see your Excel data across a particular cell region visualized as a simple column or line sparkline chart, this feature can help you to achieve that.
 
-## Demo
+## $Platform$ Working with Sparklines Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/working-with-sparklines"></sample-button>
 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines"
+           alt="$Platform$ Working with Sparklines Example"
+           github-src="excel/excel-library/working-with-sparklines">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -34,5 +36,13 @@ var sheet2 = workbook.worksheets().add("Data");
 sheet1.sparklineGroups().add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
 sheet1.sparklineGroups().add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 workbook.save(workbook, "Sparklines.xlsx");
+```
 
+```razor
+var workbook = new Workbook();
+var sheet1 = workbook.Sheets.Add("Sparklines", SheetType.Worksheet) as Worksheet;
+var sheet2 = workbook.Sheets.Add("Data", SheetType.Worksheet) as Worksheet;
+
+sheet1.SparklineGroups.Add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
+sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 ```

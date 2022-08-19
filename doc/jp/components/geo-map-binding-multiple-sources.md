@@ -1,25 +1,24 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 複数のデータソースのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, geographic series, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ マップ | データ可視化ツール | 複数のデータ ソースのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データ ソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'SeriesViewer']
 _language: ja
 ---
-# $PlatformShort$ 複数データ ソースのバインド
+# $Platform$ 複数データ ソースのバインド
 
-$ProductName$ マップでは、カスタム データソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
+$ProductName$ マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
 
 
-## サンプル
+## $Platform$ 複数データ ソースのバインドの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-multiple-sources-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-multiple-sources-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-multiple-sources"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
+           alt="$Platform$ 複数データ ソースのバインドの例"
+           github-src="maps/geo-map/binding-multiple-sources">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -106,7 +105,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();
@@ -117,7 +116,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## フライトのオーバーレイ
 
-主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、$ProductName$ マップの `Series` コレクションに追加します。
+主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、$ProductName$ マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-polyline-series  #polylineSeries
@@ -139,15 +138,15 @@ this.geoMap.series.add(lineSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
         ShapeStroke="rgba(196, 14, 14, 0.05)" ShapeStrokeThickness="4" />
-</GeographicMap>
+</IgbGeographicMap>
 ```
 
 ## グリッド線のオーバーレイ
 
-地理グリッド線を使用して2番目の `GeographicPolylineSeries` オブジェクトを作成し、それを XamGeographicMap の `Series` コレクションに追加します。
+地理グリッド線を使用して2番目の `GeographicPolylineSeries` オブジェクトを作成し、それを XamGeographicMap の Series コレクションに追加します。
 
 ```html
   <igx-geographic-polyline-series  #polylineSeries
@@ -170,15 +169,15 @@ this.geoMap.series.add(gridSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">    
-    <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
-        ShapeStroke="Gray" ShapeStrokeThickness="1" />    
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
+        ShapeStroke="Gray" ShapeStrokeThickness="1" />
+</IgbGeographicMap>
 ```
 
 ## 空港のオーバーレイ
 
-空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを $ProductName$ 地理マップの `Series` コレクションに追加します。
+空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを $ProductName$ 地理マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-symbol-series  #symbolSeries
@@ -203,11 +202,11 @@ this.geoMap.series.add(symbolSeries);
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon" MarkerType="MarkerType.Circle"
         MarkerBrush="#AAD3DF" MarkerOutline="Black" Thickness="1" />
-</GeographicMap>
+</IgbGeographicMap>
 ```
 
 ## まとめ
@@ -290,21 +289,20 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
 ```
 
-
 ```razor
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
         ShapeStroke="rgba(196, 14, 14, 0.05)" ShapeStrokeThickness="4" />
-    <GeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
+    <IgbGeographicPolylineSeries DataSource="Coordinates" ShapeMemberPath="Points"
         ShapeStroke="Gray" ShapeStrokeThickness="1">
-    </GeographicPolylineSeries>
-    <GeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
+    </IgbGeographicPolylineSeries>
+    <IgbGeographicSymbolSeries DataSource="Airports" LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon" MarkerType="MarkerType.Circle"
         MarkerBrush="#AAD3DF" MarkerOutline="Black" Thickness="1" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -314,7 +312,7 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();

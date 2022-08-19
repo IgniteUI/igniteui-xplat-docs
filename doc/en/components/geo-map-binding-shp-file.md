@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
-_description: Use Infragistics' $PlatformShort$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, shapefiles, $ProductName$, Infragistics, data binding
+title: $Platform$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
+_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
+_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
-# $PlatformShort$ Binding Shape Files with Geo-spatial Data
+# $Platform$ Binding Shape Files with Geo-spatial Data
 
 The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-## Demo
+## $Platform$ Binding Shape Files with Geo-spatial Data Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-shp-polylines-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-shp-polylines-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-shp-polylines"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
+           alt="$Platform$ Binding Shape Files with Geo-spatial Data Example"
+           github-src="maps/geo-map/binding-shp-polylines">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -235,12 +234,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries ShapefileDataSource="@DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
         ShapeFilterResolution="0.0"
         ShapeStrokeThickness="3"
         ShapeStroke="rgb(82, 82, 82, 0.4)"/>
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -248,9 +247,9 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.dbf"

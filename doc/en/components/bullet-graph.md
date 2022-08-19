@@ -1,28 +1,27 @@
 ---
-title: $PlatformShort$ Bullet Graph | Data Visualization Tools | Infragistics
-_description: Infragistics' $PlatformShort$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
-_keywords: $PlatformShort$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
+title: $Platform$ Bullet Graph | Data Visualization Tools | Infragistics
+_description: Infragistics' $Platform$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
+_keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
 mentionedTypes: ['XamBulletGraph']
+namespace: Infragistics.Controls.Gauges
 ---
-# $PlatformShort$ Bullet Graph Overview
+# $Platform$ Bullet Graph Overview
 
-The $PlatformShort$ bullet graph component allows for a linear and concise view of measures compared against a scale.
-
-## Demo
+The $Platform$ bullet graph component allows for a linear and concise view of measures compared against a scale.
 
 The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
-The following sample demonstrates how setting multiple properties on the same bullet graph can transform it to completely different bullet graph.
+## $Platform$ Bullet Graph Example
 
-<div class="sample-container loading" style="height: 155px">
-    <iframe id="bullet-graph-sample-iframe" src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-sample-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/animation"></sample-button>
+The following sample demonstrates how setting multiple properties on the same `XamBulletGraph` can transform it to completely different bullet graph.
 
-</div>
+<code-view style="height: 155px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
+           alt="$Platform$ Bullet Graph Example"
+           github-src="gauges/bullet-graph/animation">
+</code-view>
+
 <div class="divider--half"></div>
 
 The bullet graph supports one scale, one set of tick marks and one set of labels. The bullet graph component also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
@@ -39,23 +38,22 @@ npm install --save {PackageGauges}
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-<!-- Blazor -->
-The `XamBulletGraph` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
 
-* BulletGraphModule
-<!-- end: Blazor -->
+The `XamBulletGraph` requires the following modules:
+
+```razor
+IgbBulletGraphModule.Register(IgniteUIBlazor);
+```
 
 <!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
-import { IgxBulletGraphComponent } from 'igniteui-angular-gauges';
 
 @NgModule({
     imports: [
         // ...
-        IgxBulletGraphModule,
-        IgxBulletGraphComponent
+        IgxBulletGraphModule
         // ...
     ]
 })
@@ -64,7 +62,6 @@ export class AppModule {}
 
 ```ts
 import { IgrBulletGraphModule } from 'igniteui-react-gauges';
-import { IgrBulletGraph } from 'igniteui-react-gauges';
 
 IgrBulletGraphModule.register();
 ```
@@ -156,20 +153,20 @@ The following code walks through creating a bullet graph component, and configur
   </igc-bullet-graph>
 ```
 
-```razor   
-<BulletGraph Height="80px" Width="100%"
+```razor
+<IgbBulletGraph Height="80px" Width="100%"
 MinimumValue="5" Value="35"
 MaximumValue="55" TargetValue="43">
-<LinearGraphRange StartValue="0"
+<IgbLinearGraphRange StartValue="0"
   EndValue="15"
   Brush="#828181" />
-<LinearGraphRange StartValue="15"
+<IgbLinearGraphRange StartValue="15"
   EndValue="30"
   Brush="#AAAAAA" />
-<LinearGraphRange StartValue="30"
+<IgbLinearGraphRange StartValue="30"
   EndValue="55"
   Brush="#D0D0D0" />
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
 <div class="divider--half"></div>
@@ -240,7 +237,7 @@ Performance value is the primary measure displayed by the component and it is vi
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0"
     MaximumValue="100"
 
@@ -257,18 +254,15 @@ Performance value is the primary measure displayed by the component and it is vi
     TargetValueStrokeThickness="1"
     TargetValueInnerExtent="0.3"
     TargetValueOuterExtent="0.85">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-measures-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-measures-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/measures"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
+           github-src="gauges/bullet-graph/measures">
+</code-view>
 
 ## Comparative Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same time the degree to which it resides within that state.
@@ -346,46 +340,43 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="80" Interval="10"
   MaximumValue="100" TargetValue="90"
   RangeBrushes="#C62828,#F96232,#FF9800"
   RangeOutlines="#C62828,#F96232,#FF9800">
-<LinearGraphRange 
-  StartValue="0" 
-  EndValue="40" 
-  InnerStartExtent="0.075" 
+<IgbLinearGraphRange
+  StartValue="0"
+  EndValue="40"
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange 
-  StartValue="40" 
+</IgbLinearGraphRange>
+<IgbLinearGraphRange
+  StartValue="40"
   EndValue="70"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-<LinearGraphRange StartValue="70" 
+</IgbLinearGraphRange>
+<IgbLinearGraphRange StartValue="70"
   EndValue="100"
-  InnerStartExtent="0.075" 
+  InnerStartExtent="0.075"
   InnerEndExtent="0.075"
-  OuterStartExtent="0.95" 
+  OuterStartExtent="0.95"
   OuterEndExtent="0.95">
-</LinearGraphRange>
-</BulletGraph>
+</IgbLinearGraphRange>
+</IgbBulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-ranges-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-ranges-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/ranges"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
+           github-src="gauges/bullet-graph/ranges">
+</code-view>
 
 ## Tick Marks
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the bullet graph.
@@ -451,7 +442,7 @@ The tick marks serve as a visual division of the scale into intervals in order t
   </igc-bullet-graph>
 ```
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="70" Interval="10"
     MaximumValue="100" TargetValue="90"
 
@@ -467,18 +458,15 @@ The tick marks serve as a visual division of the scale into intervals in order t
     MinorTickEndExtent="0.1"
     MinorTickStartExtent="0.2"
     MinorTickStrokeThickness="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-tickmarks-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-tickmarks-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/tickmarks"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
+           github-src="gauges/bullet-graph/tickmarks">
+</code-view>
 
 ## Labels
 The labels indicate the measures on the scale.
@@ -525,7 +513,7 @@ The labels indicate the measures on the scale.
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   LabelInterval="10"
@@ -534,18 +522,15 @@ The labels indicate the measures on the scale.
   LabelsPostInitial="0"
   FontBrush="DodgerBlue"
   Font="11px Verdana">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-labels-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-labels-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/labels"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
+           github-src="gauges/bullet-graph/labels">
+</code-view>
 
 ## Backing
 The backing element represents background and border of the bullet graph component. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
@@ -589,7 +574,7 @@ The backing element represents background and border of the bullet graph compone
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   BackingBrush="#BDDCFC"
@@ -597,18 +582,15 @@ The backing element represents background and border of the bullet graph compone
   BackingStrokeThickness="4"
   BackingInnerExtent="0"
   BackingOuterExtent="1">
-</BulletGraph>
+</IgbBulletGraph>
 ```
 
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-background-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-background' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-background-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/background"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
+           github-src="gauges/bullet-graph/background">
+</code-view>
 
 ## Scale
 The scale is visual element that highlights the full range of values in the gauge. You can customize appearance and shape of the scale. The scale can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
@@ -655,7 +637,7 @@ The scale is visual element that highlights the full range of values in the gaug
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
   MinimumValue="0" Value="70" Interval="10"
   MaximumValue="100" TargetValue="90"
   IsScaleInverted="false"
@@ -664,17 +646,14 @@ The scale is visual element that highlights the full range of values in the gaug
   ScaleBackgroundThickness="2"
   ScaleStartExtent="0.05"
   ScaleEndExtent="0.95">
-</BulletGraph>
+</IgbBulletGraph>
 ```
-<div class="sample-container loading" style="height: 125px">
-    <iframe id="bullet-graph-scale-iframe" data-src='{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale' width="100%" height="100%" seamless frameBorder="0" class="lazyload"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="bullet-graph-scale-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-<sample-button src="gauges/bullet-graph/scale"></sample-button>
 
-</div>
+<code-view style="height: 125px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
+           github-src="gauges/bullet-graph/scale">
+</code-view>
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the bullet graph with all features and visuals enabled.
@@ -893,7 +872,7 @@ For your convenience, all above code snippets are combined into one code block b
 ```
 
 ```razor
-<BulletGraph Height="80px" Width="100%"
+<IgbBulletGraph Height="80px" Width="100%"
     MinimumValue="0" Value="50" Interval="10"
     MaximumValue="100" TargetValue="90"
     IsScaleInverted="false"
@@ -942,17 +921,31 @@ For your convenience, all above code snippets are combined into one code block b
 
     RangeBrushes="#C62828,#F96232,#FF9800"
     RangeOutlines="#C62828,#F96232,#FF9800">
-    <LinearGraphRange StartValue="20" EndValue="40"
+    <IgbLinearGraphRange StartValue="20" EndValue="40"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="40" EndValue="60"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="40" EndValue="60"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9" OuterEndExtent="0.9">
-    </LinearGraphRange>
-    <LinearGraphRange StartValue="60" EndValue="90"
+    </IgbLinearGraphRange>
+    <IgbLinearGraphRange StartValue="60" EndValue="90"
         InnerStartExtent="0.025" InnerEndExtent="0.025"
         OuterStartExtent="0.9 OuterEndExtent="0.9">
-    </LinearGraphRange>
-</BulletGraph>
+    </IgbLinearGraphRange>
+</IgbBulletGraph>
 ```
+
+## Additional Resources
+
+You can find more information about other types of gauges in these topics:
+
+- [Linear Gauge](Linear-gauge.md)
+- [Radial Gauge](radial-gauge.md)
+
+## API Members
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`

@@ -1,44 +1,12 @@
-{
-"types": [
-{
-    "originalName": "KeyEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "KeyEventArgs.cs",
- "mappedName": "KeyEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Alt"}            ],
-           "originalName": "Alt"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Ctrl"}            ],
-           "originalName": "Ctrl"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "KeyCode"}            ],
-           "originalName": "KeyCode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ModifierKeys", "mappedName": "Modifiers"}            ],
-           "originalName": "Modifiers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "Shift"}            ],
-           "originalName": "Shift"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "PreventDefault"}            ],
-           "originalName": "PreventDefault"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Inputs"
-}
-]
-}
+{"types":[
+  { "originalName":"KeyEventArgs",
+    "names":[{"platform":"Blazor","fileName":"KeyEventArgs.cs","mappedName":"IgbKeyEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Alt"}],"originalName":"Alt"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Ctrl"}],"originalName":"Ctrl"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"KeyCode"}],"originalName":"KeyCode"},
+    { "names":[{"platform":"Blazor","mappedType":"ModifierKeys","mappedName":"Modifiers"}],"originalName":"Modifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"Shift"}],"originalName":"Shift"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DefaultPrevented"}],"originalName":"DefaultPrevented"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"PreventDefault"}],"originalName":"PreventDefault"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"StopPropagation"}],"originalName":"StopPropagation"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs"}]}

@@ -1,25 +1,24 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | Open Street Maps 画像の表示 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ を使用して OSM Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, OSM, $ProductName$, Infragistics, imagery tile source, map background, $PlatformShort$ マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+title: $Platform$ マップ | データ可視化ツール | Open Street Maps 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ を使用して OSM Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, OSM, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ オープン ストリート マップ画像の表示
+# $Platform$ オープン ストリート マップ画像の表示
 
-$PlatformShort$ `OpenStreetMapImagery` は、世界中の OpenStreetMap© のコントリビューターが共同で作成した無料の地理的画像マッピングサービスです。これは、構成オプションなしで、道路地図スタイル限定で世界の地理的画像を提供します。この地理的画像サービスは、<a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> に直接アクセスして利用できます。
+$Platform$ `OpenStreetMapImagery` は、世界中の OpenStreetMap© のコントリビューターが共同で作成した無料の地理的画像マッピングサービスです。これは、構成オプションなしで、道路地図スタイル限定で世界の地理的画像を提供します。この地理的画像サービスは、<a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> に直接アクセスして利用できます。
 デフォルトでは、$ProductName$ マップ コンポーネントには、Open Street Maps の地理的画像が既に表示されています。したがって、Open Street Maps から地理的画像を表示するように、コントロールを構成する必要はありません。
 
-## サンプル
+## $Platform$ オープン ストリート マップ画像の表示の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-display-osm-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="geo-map-display-osm-imagery-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/display-osm-imagery"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
+           alt="$Platform$ オープン ストリート マップ画像の表示の例"
+           github-src="maps/geo-map/display-osm-imagery">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -72,17 +71,18 @@ this.geoMap.backgroundContent = mapImagery;
 ```
 
 ```razor
-<GeographicMap Height="100%" Width="100%" Zoomable="true"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true"
     BackgroundContent="OSMImagery" />
 
 @code {
 
-    public OpenStreetMapImagery OSMImagery;
-    
+    public IgbOpenStreetMapImagery OSMImagery;
+
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
-        this.OSMImagery = new OpenStreetMapImagery();        
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
+        this.OSMImagery = new IgbOpenStreetMapImagery();
     }
 }
 ```
+

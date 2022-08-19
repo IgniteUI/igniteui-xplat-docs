@@ -1,826 +1,245 @@
-{
-"types": [
-{
-    "originalName": "DomainChart",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-domain-chart-component.ts",
- "mappedName": "IgxDomainChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "pixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "titleLeftMargin"}            ],
-           "originalName": "TitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "titleRightMargin"}            ],
-           "originalName": "TitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "titleTopMargin"}            ],
-           "originalName": "TitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "titleBottomMargin"}            ],
-           "originalName": "TitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "subtitleLeftMargin"}            ],
-           "originalName": "SubtitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "subtitleTopMargin"}            ],
-           "originalName": "SubtitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "subtitleRightMargin"}            ],
-           "originalName": "SubtitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "subtitleBottomMargin"}            ],
-           "originalName": "SubtitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "subtitleTextColor"}            ],
-           "originalName": "SubtitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "titleTextColor"}            ],
-           "originalName": "TitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "leftMargin"}            ],
-           "originalName": "LeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "topMargin"}            ],
-           "originalName": "TopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "rightMargin"}            ],
-           "originalName": "RightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "bottomMargin"}            ],
-           "originalName": "BottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "transitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(time: number) => number", "mappedName": "transitionEasingFunction"}            ],
-           "originalName": "TransitionEasingFunction"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "subtitleTextStyle"}            ],
-           "originalName": "SubtitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "titleTextStyle"}            ],
-           "originalName": "TitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "includedProperties"}            ],
-           "originalName": "IncludedProperties"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "excludedProperties"}            ],
-           "originalName": "ExcludedProperties"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
-           "originalName": "IsHorizontalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
-           "originalName": "IsVerticalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isSeriesHighlightingEnabled"}            ],
-           "originalName": "IsSeriesHighlightingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "windowRect"}            ],
-           "originalName": "WindowRect"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgRect", "mappedName": "viewport"}            ],
-           "originalName": "Viewport"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "chartTitle"}            ],
-           "originalName": "Title"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "subtitle"}            ],
-           "originalName": "Subtitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "titleAlignment"}            ],
-           "originalName": "TitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "subtitleAlignment"}            ],
-           "originalName": "SubtitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "resolution"}            ],
-           "originalName": "Resolution"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxMarkerTypeCollection", "mappedName": "markerTypes"}            ],
-           "originalName": "MarkerTypes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "markerBrushes"}            ],
-           "originalName": "MarkerBrushes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "markerOutlines"}            ],
-           "originalName": "MarkerOutlines"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "markerMaxCount"}            ],
-           "originalName": "MarkerMaxCount"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "animateSeriesWhenAxisRangeChanges"}            ],
-           "originalName": "AnimateSeriesWhenAxisRangeChanges"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string[]", "mappedName": "trendLineBrushes"}            ],
-           "originalName": "TrendLineBrushes"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "alignsGridLinesToPixels"}            ],
-           "originalName": "AlignsGridLinesToPixels"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ToolTipType", "mappedName": "toolTipType"}            ],
-           "originalName": "ToolTipType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "crosshairsDisplayMode"}            ],
-           "originalName": "CrosshairsDisplayMode"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "crosshairsSnapToData"}            ],
-           "originalName": "CrosshairsSnapToData"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "crosshairsAnnotationEnabled"}            ],
-           "originalName": "CrosshairsAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "finalValueAnnotationsVisible"}            ],
-           "originalName": "FinalValueAnnotationsVisible"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "calloutsVisible"}            ],
-           "originalName": "CalloutsVisible"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "calloutStyleUpdatingEventEnabled"}            ],
-           "originalName": "CalloutStyleUpdatingEventEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutsXMemberPath"}            ],
-           "originalName": "CalloutsXMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutsYMemberPath"}            ],
-           "originalName": "CalloutsYMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutsLabelMemberPath"}            ],
-           "originalName": "CalloutsLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "calloutsContentMemberPath"}            ],
-           "originalName": "CalloutsContentMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "destroy"}            ],
-           "originalName": "Destroy"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyVisualPropertiesChanged"}            ],
-           "originalName": "NotifyVisualPropertiesChanged"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "hideToolTip"}            ],
-           "originalName": "HideToolTip"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XYChart",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-xy-chart-component.ts",
- "mappedName": "IgxXYChartComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(item: any) => string", "mappedName": "xAxisFormatLabel"}            ],
-           "originalName": "XAxisFormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "(item: any) => string", "mappedName": "yAxisFormatLabel"}            ],
-           "originalName": "YAxisFormatLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisLabelLeftMargin"}            ],
-           "originalName": "XAxisLabelLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisLabelTopMargin"}            ],
-           "originalName": "XAxisLabelTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisLabelRightMargin"}            ],
-           "originalName": "XAxisLabelRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisLabelBottomMargin"}            ],
-           "originalName": "XAxisLabelBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisLabelLeftMargin"}            ],
-           "originalName": "YAxisLabelLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisLabelTopMargin"}            ],
-           "originalName": "YAxisLabelTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisLabelRightMargin"}            ],
-           "originalName": "YAxisLabelRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisLabelBottomMargin"}            ],
-           "originalName": "YAxisLabelBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisLabelTextColor"}            ],
-           "originalName": "XAxisLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisLabelTextColor"}            ],
-           "originalName": "YAxisLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleMargin"}            ],
-           "originalName": "XAxisTitleMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleMargin"}            ],
-           "originalName": "YAxisTitleMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleLeftMargin"}            ],
-           "originalName": "XAxisTitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleLeftMargin"}            ],
-           "originalName": "YAxisTitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleTopMargin"}            ],
-           "originalName": "XAxisTitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleTopMargin"}            ],
-           "originalName": "YAxisTitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleRightMargin"}            ],
-           "originalName": "XAxisTitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleRightMargin"}            ],
-           "originalName": "YAxisTitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleBottomMargin"}            ],
-           "originalName": "XAxisTitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleBottomMargin"}            ],
-           "originalName": "YAxisTitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisTitleTextColor"}            ],
-           "originalName": "XAxisTitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisTitleTextColor"}            ],
-           "originalName": "YAxisTitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisLabelTextStyle"}            ],
-           "originalName": "XAxisLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisLabelTextStyle"}            ],
-           "originalName": "YAxisLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisTitleTextStyle"}            ],
-           "originalName": "XAxisTitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisTitleTextStyle"}            ],
-           "originalName": "YAxisTitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "xAxisLabel"}            ],
-           "originalName": "XAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "yAxisLabel"}            ],
-           "originalName": "YAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisMajorStroke"}            ],
-           "originalName": "XAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisMajorStroke"}            ],
-           "originalName": "YAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisMajorStrokeThickness"}            ],
-           "originalName": "XAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisMajorStrokeThickness"}            ],
-           "originalName": "YAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisMinorStrokeThickness"}            ],
-           "originalName": "XAxisMinorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisMinorStrokeThickness"}            ],
-           "originalName": "YAxisMinorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisStrip"}            ],
-           "originalName": "XAxisStrip"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisStrip"}            ],
-           "originalName": "YAxisStrip"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisStroke"}            ],
-           "originalName": "XAxisStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisStroke"}            ],
-           "originalName": "YAxisStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisStrokeThickness"}            ],
-           "originalName": "XAxisStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisStrokeThickness"}            ],
-           "originalName": "YAxisStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTickLength"}            ],
-           "originalName": "XAxisTickLength"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTickLength"}            ],
-           "originalName": "YAxisTickLength"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisTickStroke"}            ],
-           "originalName": "XAxisTickStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisTickStroke"}            ],
-           "originalName": "YAxisTickStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTickStrokeThickness"}            ],
-           "originalName": "XAxisTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTickStrokeThickness"}            ],
-           "originalName": "YAxisTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisTitle"}            ],
-           "originalName": "XAxisTitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisTitle"}            ],
-           "originalName": "YAxisTitle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "xAxisMinorStroke"}            ],
-           "originalName": "XAxisMinorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "yAxisMinorStroke"}            ],
-           "originalName": "YAxisMinorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisLabelAngle"}            ],
-           "originalName": "XAxisLabelAngle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisLabelAngle"}            ],
-           "originalName": "YAxisLabelAngle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisExtent"}            ],
-           "originalName": "XAxisExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisExtent"}            ],
-           "originalName": "YAxisExtent"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "xAxisTitleAngle"}            ],
-           "originalName": "XAxisTitleAngle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "yAxisTitleAngle"}            ],
-           "originalName": "YAxisTitleAngle"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "xAxisInverted"}            ],
-           "originalName": "XAxisInverted"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "yAxisInverted"}            ],
-           "originalName": "YAxisInverted"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisTitleAlignment"}            ],
-           "originalName": "XAxisTitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "VerticalAlignment", "mappedName": "yAxisTitleAlignment"}            ],
-           "originalName": "YAxisTitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "xAxisLabelHorizontalAlignment"}            ],
-           "originalName": "XAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}            ],
-           "originalName": "YAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "VerticalAlignment", "mappedName": "xAxisLabelVerticalAlignment"}            ],
-           "originalName": "XAxisLabelVerticalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "VerticalAlignment", "mappedName": "yAxisLabelVerticalAlignment"}            ],
-           "originalName": "YAxisLabelVerticalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "xAxisLabelVisibility"}            ],
-           "originalName": "XAxisLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "Visibility", "mappedName": "yAxisLabelVisibility"}            ],
-           "originalName": "YAxisLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
-           "originalName": "YAxisLabelLocation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getScaledValueX"}            ],
-           "originalName": "GetScaledValueX"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getUnscaledValueX"}            ],
-           "originalName": "GetUnscaledValueX"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getScaledValueY"}            ],
-           "originalName": "GetScaledValueY"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getUnscaledValueY"}            ],
-           "originalName": "GetUnscaledValueY"
-       }   ],
-    "originalBaseTypeName": "DomainChart",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ToolTipType",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "ToolTipType.ts",
- "mappedName": "ToolTipType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ToolTipType", "mappedName": "Default"}            ],
-           "originalName": "Default"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ToolTipType", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ToolTipType", "mappedName": "Category"}            ],
-           "originalName": "Category"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "ToolTipType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CrosshairsDisplayMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "Angular",     "fileName": "CrosshairsDisplayMode.ts",
- "mappedName": "CrosshairsDisplayMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Default"}            ],
-           "originalName": "Default"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Horizontal"}            ],
-           "originalName": "Horizontal"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Vertical"}            ],
-           "originalName": "Vertical"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "CrosshairsDisplayMode", "mappedName": "Both"}            ],
-           "originalName": "Both"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ChartSeriesEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-chart-series-event-args.ts",
- "mappedName": "IgxChartSeriesEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "series"}            ],
-           "originalName": "Series"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "DomainChartSeriesPointerEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-domain-chart-series-pointer-event-args.ts",
- "mappedName": "IgxDomainChartSeriesPointerEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxSeriesComponent", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"DomainChart",
+    "names":[{"platform":"Angular","fileName":"igx-domain-chart-component.ts","mappedName":"IgxDomainChartComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"titleLeftMargin"}],"originalName":"TitleLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"titleRightMargin"}],"originalName":"TitleRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"titleTopMargin"}],"originalName":"TitleTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"titleBottomMargin"}],"originalName":"TitleBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"subtitleLeftMargin"}],"originalName":"SubtitleLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"subtitleTopMargin"}],"originalName":"SubtitleTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"subtitleRightMargin"}],"originalName":"SubtitleRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"subtitleBottomMargin"}],"originalName":"SubtitleBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"subtitleTextColor"}],"originalName":"SubtitleTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"leftMargin"}],"originalName":"LeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"topMargin"}],"originalName":"TopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rightMargin"}],"originalName":"RightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"bottomMargin"}],"originalName":"BottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"transitionDuration"}],"originalName":"TransitionDuration"},
+    { "names":[{"platform":"Angular","mappedType":"(time: number) => number","mappedName":"transitionEasingFunction"}],"originalName":"TransitionEasingFunction"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"subtitleTextStyle"}],"originalName":"SubtitleTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleTextStyle"}],"originalName":"TitleTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"domainType"}],"originalName":"DomainType"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"includedProperties"}],"originalName":"IncludedProperties"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"excludedProperties"}],"originalName":"ExcludedProperties"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"brushes"}],"originalName":"Brushes"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"outlines"}],"originalName":"Outlines"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"actualBrushes"}],"originalName":"ActualBrushes"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"actualOutlines"}],"originalName":"ActualOutlines"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isHorizontalZoomEnabled"}],"originalName":"IsHorizontalZoomEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isVerticalZoomEnabled"}],"originalName":"IsVerticalZoomEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSeriesHighlightingEnabled"}],"originalName":"IsSeriesHighlightingEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"IgRect","mappedName":"windowRect"}],"originalName":"WindowRect"},
+    { "names":[{"platform":"Angular","mappedType":"IgRect","mappedName":"viewport"}],"originalName":"Viewport"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"chartTitle"}],"originalName":"Title"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"subtitle"}],"originalName":"Subtitle"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"titleAlignment"}],"originalName":"TitleAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"subtitleAlignment"}],"originalName":"SubtitleAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"Angular","mappedType":"SeriesOutlineMode","mappedName":"outlineMode"}],"originalName":"OutlineMode"},
+    { "names":[{"platform":"Angular","mappedType":"MarkerOutlineMode","mappedName":"markerOutlineMode"}],"originalName":"MarkerOutlineMode"},
+    { "names":[{"platform":"Angular","mappedType":"MarkerFillMode","mappedName":"markerFillMode"}],"originalName":"MarkerFillMode"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"markerFillOpacity"}],"originalName":"MarkerFillOpacity"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"markerThickness"}],"originalName":"MarkerThickness"},
+    { "names":[{"platform":"Angular","mappedType":"IgxMarkerTypeCollection","mappedName":"markerTypes"}],"originalName":"MarkerTypes"},
+    { "names":[{"platform":"Angular","mappedType":"MarkerAutomaticBehavior","mappedName":"markerAutomaticBehavior"}],"originalName":"MarkerAutomaticBehavior"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"markerBrushes"}],"originalName":"MarkerBrushes"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"markerOutlines"}],"originalName":"MarkerOutlines"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"markerMaxCount"}],"originalName":"MarkerMaxCount"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"areaFillOpacity"}],"originalName":"AreaFillOpacity"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"animateSeriesWhenAxisRangeChanges"}],"originalName":"AnimateSeriesWhenAxisRangeChanges"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"trendLineBrushes"}],"originalName":"TrendLineBrushes"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"alignsGridLinesToPixels"}],"originalName":"AlignsGridLinesToPixels"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"plotAreaMarginLeft"}],"originalName":"PlotAreaMarginLeft"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"plotAreaMarginTop"}],"originalName":"PlotAreaMarginTop"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"plotAreaMarginRight"}],"originalName":"PlotAreaMarginRight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"plotAreaMarginBottom"}],"originalName":"PlotAreaMarginBottom"},
+    { "names":[{"platform":"Angular","mappedType":"ComputedPlotAreaMarginMode","mappedName":"computedPlotAreaMarginMode"}],"originalName":"ComputedPlotAreaMarginMode"},
+    { "names":[{"platform":"Angular","mappedType":"SeriesHighlightingMode","mappedName":"highlightingMode"}],"originalName":"HighlightingMode"},
+    { "names":[{"platform":"Angular","mappedType":"SeriesHighlightingBehavior","mappedName":"highlightingBehavior"}],"originalName":"HighlightingBehavior"},
+    { "names":[{"platform":"Angular","mappedType":"LegendHighlightingMode","mappedName":"legendHighlightingMode"}],"originalName":"LegendHighlightingMode"},
+    { "names":[{"platform":"Angular","mappedType":"LegendItemBadgeShape","mappedName":"legendItemBadgeShape"}],"originalName":"LegendItemBadgeShape"},
+    { "names":[{"platform":"Angular","mappedType":"LegendItemBadgeMode","mappedName":"legendItemBadgeMode"}],"originalName":"LegendItemBadgeMode"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldAutoExpandMarginForInitialLabels"}],"originalName":"ShouldAutoExpandMarginForInitialLabels"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"autoExpandMarginExtraPadding"}],"originalName":"AutoExpandMarginExtraPadding"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"autoExpandMarginMaximumValue"}],"originalName":"AutoExpandMarginMaximumValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"toolTipType"}],"originalName":"ToolTipType"},
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"crosshairsDisplayMode"}],"originalName":"CrosshairsDisplayMode"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"crosshairsSnapToData"}],"originalName":"CrosshairsSnapToData"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsLineVerticalStroke"}],"originalName":"CrosshairsLineVerticalStroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"crosshairsLineThickness"}],"originalName":"CrosshairsLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsLineHorizontalStroke"}],"originalName":"CrosshairsLineHorizontalStroke"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"crosshairsAnnotationEnabled"}],"originalName":"CrosshairsAnnotationEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsAnnotationXAxisBackground"}],"originalName":"CrosshairsAnnotationXAxisBackground"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsAnnotationYAxisBackground"}],"originalName":"CrosshairsAnnotationYAxisBackground"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsAnnotationXAxisTextColor"}],"originalName":"CrosshairsAnnotationXAxisTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"crosshairsAnnotationYAxisTextColor"}],"originalName":"CrosshairsAnnotationYAxisTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"crosshairsAnnotationXAxisPrecision"}],"originalName":"CrosshairsAnnotationXAxisPrecision"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"crosshairsAnnotationYAxisPrecision"}],"originalName":"CrosshairsAnnotationYAxisPrecision"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldAvoidAxisAnnotationCollisions"}],"originalName":"ShouldAvoidAxisAnnotationCollisions"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"finalValueAnnotationsVisible"}],"originalName":"FinalValueAnnotationsVisible"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"finalValueAnnotationsBackground"}],"originalName":"FinalValueAnnotationsBackground"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"finalValueAnnotationsTextColor"}],"originalName":"FinalValueAnnotationsTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"finalValueAnnotationsPrecision"}],"originalName":"FinalValueAnnotationsPrecision"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"calloutsVisible"}],"originalName":"CalloutsVisible"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"calloutStyleUpdatingEventEnabled"}],"originalName":"CalloutStyleUpdatingEventEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calloutsXMemberPath"}],"originalName":"CalloutsXMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calloutsYMemberPath"}],"originalName":"CalloutsYMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calloutsLabelMemberPath"}],"originalName":"CalloutsLabelMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"calloutsContentMemberPath"}],"originalName":"CalloutsContentMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"destroy"}],"originalName":"Destroy"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyResized"}],"originalName":"NotifyResized"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyVisualPropertiesChanged"}],"originalName":"NotifyVisualPropertiesChanged"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hideToolTip"}],"originalName":"HideToolTip"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"replayTransitionIn"}],"originalName":"ReplayTransitionIn"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"XYChart",
+    "names":[{"platform":"Angular","fileName":"igx-xy-chart-component.ts","mappedName":"IgxXYChartComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"(item: any) => string","mappedName":"xAxisFormatLabel"}],"originalName":"XAxisFormatLabel"},
+    { "names":[{"platform":"Angular","mappedType":"(item: any) => string","mappedName":"yAxisFormatLabel"}],"originalName":"YAxisFormatLabel"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisLabelLeftMargin"}],"originalName":"XAxisLabelLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisLabelTopMargin"}],"originalName":"XAxisLabelTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisLabelRightMargin"}],"originalName":"XAxisLabelRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisLabelBottomMargin"}],"originalName":"XAxisLabelBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisLabelLeftMargin"}],"originalName":"YAxisLabelLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisLabelTopMargin"}],"originalName":"YAxisLabelTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisLabelRightMargin"}],"originalName":"YAxisLabelRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisLabelBottomMargin"}],"originalName":"YAxisLabelBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisLabelTextColor"}],"originalName":"XAxisLabelTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisLabelTextColor"}],"originalName":"YAxisLabelTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualXAxisLabelTextColor"}],"originalName":"ActualXAxisLabelTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualYAxisLabelTextColor"}],"originalName":"ActualYAxisLabelTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleMargin"}],"originalName":"XAxisTitleMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleMargin"}],"originalName":"YAxisTitleMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleLeftMargin"}],"originalName":"XAxisTitleLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleLeftMargin"}],"originalName":"YAxisTitleLeftMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleTopMargin"}],"originalName":"XAxisTitleTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleTopMargin"}],"originalName":"YAxisTitleTopMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleRightMargin"}],"originalName":"XAxisTitleRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleRightMargin"}],"originalName":"YAxisTitleRightMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleBottomMargin"}],"originalName":"XAxisTitleBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleBottomMargin"}],"originalName":"YAxisTitleBottomMargin"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisTitleTextColor"}],"originalName":"XAxisTitleTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisTitleTextColor"}],"originalName":"YAxisTitleTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisLabelTextStyle"}],"originalName":"XAxisLabelTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisLabelTextStyle"}],"originalName":"YAxisLabelTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisTitleTextStyle"}],"originalName":"XAxisTitleTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisTitleTextStyle"}],"originalName":"YAxisTitleTextStyle"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"xAxisLabel"}],"originalName":"XAxisLabel"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"yAxisLabel"}],"originalName":"YAxisLabel"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisMajorStroke"}],"originalName":"XAxisMajorStroke"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisMajorStroke"}],"originalName":"YAxisMajorStroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisMajorStrokeThickness"}],"originalName":"XAxisMajorStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisMajorStrokeThickness"}],"originalName":"YAxisMajorStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisMinorStrokeThickness"}],"originalName":"XAxisMinorStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisMinorStrokeThickness"}],"originalName":"YAxisMinorStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisStrip"}],"originalName":"XAxisStrip"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisStrip"}],"originalName":"YAxisStrip"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisStroke"}],"originalName":"XAxisStroke"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisStroke"}],"originalName":"YAxisStroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisStrokeThickness"}],"originalName":"XAxisStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisStrokeThickness"}],"originalName":"YAxisStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTickLength"}],"originalName":"XAxisTickLength"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTickLength"}],"originalName":"YAxisTickLength"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisTickStroke"}],"originalName":"XAxisTickStroke"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisTickStroke"}],"originalName":"YAxisTickStroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTickStrokeThickness"}],"originalName":"XAxisTickStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTickStrokeThickness"}],"originalName":"YAxisTickStrokeThickness"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisTitle"}],"originalName":"XAxisTitle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisTitle"}],"originalName":"YAxisTitle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisMinorStroke"}],"originalName":"XAxisMinorStroke"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisMinorStroke"}],"originalName":"YAxisMinorStroke"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisLabelAngle"}],"originalName":"XAxisLabelAngle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisLabelAngle"}],"originalName":"YAxisLabelAngle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisExtent"}],"originalName":"XAxisExtent"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisExtent"}],"originalName":"YAxisExtent"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"xAxisTitleAngle"}],"originalName":"XAxisTitleAngle"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"yAxisTitleAngle"}],"originalName":"YAxisTitleAngle"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"xAxisInverted"}],"originalName":"XAxisInverted"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"yAxisInverted"}],"originalName":"YAxisInverted"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"xAxisTitleAlignment"}],"originalName":"XAxisTitleAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"yAxisTitleAlignment"}],"originalName":"YAxisTitleAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"xAxisLabelHorizontalAlignment"}],"originalName":"XAxisLabelHorizontalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"HorizontalAlignment","mappedName":"yAxisLabelHorizontalAlignment"}],"originalName":"YAxisLabelHorizontalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"xAxisLabelVerticalAlignment"}],"originalName":"XAxisLabelVerticalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"VerticalAlignment","mappedName":"yAxisLabelVerticalAlignment"}],"originalName":"YAxisLabelVerticalAlignment"},
+    { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"xAxisLabelVisibility"}],"originalName":"XAxisLabelVisibility"},
+    { "names":[{"platform":"Angular","mappedType":"Visibility","mappedName":"yAxisLabelVisibility"}],"originalName":"YAxisLabelVisibility"},
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"yAxisLabelLocation"}],"originalName":"YAxisLabelLocation"},
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"xAxisLabelLocation"}],"originalName":"XAxisLabelLocation"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"xAxisLabelFormat"}],"originalName":"XAxisLabelFormat"},
+    { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"xAxisLabelFormatSpecifiers"}],"originalName":"XAxisLabelFormatSpecifiers"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"yAxisLabelFormat"}],"originalName":"YAxisLabelFormat"},
+    { "names":[{"platform":"Angular","mappedType":"any[]","mappedName":"yAxisLabelFormatSpecifiers"}],"originalName":"YAxisLabelFormatSpecifiers"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledValueX"}],"originalName":"GetScaledValueX"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValueX"}],"originalName":"GetUnscaledValueX"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledValueY"}],"originalName":"GetScaledValueY"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValueY"}],"originalName":"GetUnscaledValueY"}],"originalBaseTypeName":"DomainChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ToolTipType","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"ToolTipType.ts","mappedName":"ToolTipType"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"Default"}],"originalName":"Default"},
+    { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"Category"}],"originalName":"Category"},
+    { "names":[{"platform":"Angular","mappedType":"ToolTipType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CrosshairsDisplayMode","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"CrosshairsDisplayMode.ts","mappedName":"CrosshairsDisplayMode"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Horizontal"}],"originalName":"Horizontal"},
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Vertical"}],"originalName":"Vertical"},
+    { "names":[{"platform":"Angular","mappedType":"CrosshairsDisplayMode","mappedName":"Both"}],"originalName":"Both"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DomainType","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"DomainType.ts","mappedName":"DomainType"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Category"}],"originalName":"Category"},
+    { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Financial"}],"originalName":"Financial"},
+    { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Scatter"}],"originalName":"Scatter"},
+    { "names":[{"platform":"Angular","mappedType":"DomainType","mappedName":"Shape"}],"originalName":"Shape"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"YAxisLabelLocation","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"YAxisLabelLocation.ts","mappedName":"YAxisLabelLocation"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"OutsideLeft"}],"originalName":"OutsideLeft"},
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"OutsideRight"}],"originalName":"OutsideRight"},
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"InsideLeft"}],"originalName":"InsideLeft"},
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"InsideRight"}],"originalName":"InsideRight"},
+    { "names":[{"platform":"Angular","mappedType":"YAxisLabelLocation","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"XAxisLabelLocation","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"XAxisLabelLocation.ts","mappedName":"XAxisLabelLocation"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"OutsideTop"}],"originalName":"OutsideTop"},
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"OutsideBottom"}],"originalName":"OutsideBottom"},
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"InsideTop"}],"originalName":"InsideTop"},
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"InsideBottom"}],"originalName":"InsideBottom"},
+    { "names":[{"platform":"Angular","mappedType":"XAxisLabelLocation","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChartSeriesEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-chart-series-event-args.ts","mappedName":"IgxChartSeriesEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DomainChartSeriesPointerEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-domain-chart-series-pointer-event-args.ts","mappedName":"IgxDomainChartSeriesPointerEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxSeriesComponent","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

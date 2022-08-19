@@ -1,13 +1,13 @@
 ---
-title: $PlatformShort$ マップ | ワールド ユーティリティ | データソース | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップ データ ユーティリティを使用して、地理的データを生成します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, map data, $ProductName$, Infragistics, $PlatformShort$ マップ, マップ データ, インフラジスティックス
+title: $Platform$ マップ | ワールド ユーティリティ | データ ソース | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップ データ ユーティリティを使用して、地理的データを生成します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, map data, $ProductName$, Infragistics, $Platform$ マップ, マップ データ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $PlatformShort$ ワールド ユーティリティ
+# $Platform$ ワールド ユーティリティ
 
-リソース トピックは、$PlatformShort$ 地理データの生成に役立つユーティリティの実装です。
+リソース トピックは、$Platform$ 地理データの生成に役立つユーティリティの実装です。
 
 ## コード スニペット
 

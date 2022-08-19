@@ -1,28 +1,33 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ JavaScript マップを使用してヒートマップ画像を表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, heat map imagery, $ProductName$, Infragistics, $PlatformShort$ マップ, ヒートマップ画像, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの $Platform$ JavaScript マップを使用してヒートマップ画像を表示します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, heat map imagery, $ProductName$, Infragistics, $Platform$ マップ, ヒートマップ画像, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 _language: ja
 ---
-# $PlatformShort$ ヒート画像の表示
+# $Platform$ ヒート画像の表示
 
 $ProductName$ マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapeDataSource` によって生成される `ShapeFileRecords` を使用して、ヒートマップ画像を表示する機能があります。
 
 このトピックを読み進めるための前提条件として、[シェープ ファイルを地理的データにバインディング](geo-map-binding-shp-file.md)をお読みください。
 
-## サンプル
+## $Platform$ ヒート画像の表示の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-display-heat-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-display-heat-imagery-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/display-heat-imagery"></sample-button>
+<!-- Angular, React -->
+```ts
+//WebComponents サンプルが CodeSandbox で機能しません。これが修正されたら、ビルドのフラグを削除します。
+```
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
+           alt="$Platform$ ヒート画像の表示の例"
+           github-src="maps/geo-map/display-heat-imagery">
+</code-view>
 
 <div class="divider--half"></div>
+
+<!-- end: Angular, React -->
 
 `ShapeDataSource` がそのシェイプ ファイルを読み込むと、そのデータを ShapeFileRecord オブジェクトに変換します。これらのオブジェクトは、`ShapeDataSource` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして地理タイルシリーズで使用できます。
 

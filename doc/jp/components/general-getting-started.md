@@ -1,25 +1,28 @@
 ---
-title: $PlatformShort$ データ可視化ツール | 作業の開始 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $PlatformShort$ データ グリッドと財務ストリーミングおよびビジネスと財務チャートでデータの可視化を改善します。
+title: $Platform$ データ可視化ツール | 作業の開始 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
 _keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
 # $ProductName$ を使用した作業の開始
 
-$ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $PlatformShort$ コンポーネントのコンプリート セットです。
+$ProductName$ は、最新のデスクトップ ブラウザー対応の高パフォーマンス HTML 5 および TypeScript アプリケーションを構築するために設計された $Platform$ コンポーネントのコンプリート セットです。
+
+> [!NOTE]
+> この [GitHub]({RepoSamples}) リポジトリから $ProductName$ を使用した $Platform$ プロジェクトの例を取得するか、新しい $Platform$ プロジェクトを作成する方法について次の手順に従うことができます。
 
 <!-- Angular, React, WebComponents -->
 
 ## コンピューターのセットアップ
 
-$ProductName$ を実行する前に、$ProductName$ を含むすべての $PlatformShort$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$PlatformShort$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $PlatformShort$ アプリケーションを構築するための開発環境は、 Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
+$ProductName$ を実行する前に、$ProductName$ を含むすべての $Platform$ アプリケーションを実行するためにシステムでセットアップする必要のあるステップが 2 つあります。最初にシステムに NodeJS と Visual Studio Code をインストールします。$Platform$ を使用した最新の Web 開発には NodeJS が必要で、これはブラウザーで実行されている ASP.NET アプリケーションのようなもので、サーバーに ASP.NET ランタイムを配備する必要があります。また $Platform$ アプリケーションを構築するための開発環境は、Visual Studio Code が最も適しているため、作業を開始する前に Node.js と Visual Studio Code をインストールします。
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
       <img src="../images/general/nodejs.svg"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://nodejs.org/en/download/"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
         DOWNLOAD NODE JS
       </a>
     </div>
@@ -27,12 +30,13 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
       <img src="../images/general/vs-code.svg"
            style="display:flex;max-height:100px;margin:auto auto 20px auto;" />
       <a target="_blank" href="https://code.visualstudio.com/download"
-         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 15px 5px 15px;">
+         style="color:white;background-color:#09f;text-decoration:none;font-weight:700;font-size:16px;padding: 5px 25px 5px 15px;">
         DOWNLOAD VS CODE
       </a>
     </div>
 </div>
 
+<!-- using a note because there is no other way to build flag content for specific platform. -->
 > [!NOTE]
 > For React:
 > 以上ですべて準備が整いました。新しい React アプリケーションを作成しましょう。  <br>
@@ -43,6 +47,27 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 > <br> 以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
 
 <!-- end: Angular, React, WebComponents -->
+
+<!-- commented out because this section is present in the "Updating Existing App"
+You need to open $Platform$ app in **VS Code** and install the following packages for $ProductName$ using these commands:
+
+- **npm install --save {PackageCharts} {PackageCore}**
+- **npm install --save {PackageExcel} {PackageCore}**
+- **npm install --save {PackageGauges} {PackageCore}**
+- **npm install --save {PackageGrids} {PackageCore}**
+- **npm install --save {PackageMaps} {PackageCore}**
+- **npm install --save {PackageSpreadsheet} {PackageCore}**
+
+Or
+
+- **yarn add {PackageCharts} {PackageCore}**
+- **yarn add {PackageExcel} {PackageCore}**
+- **yarn add {PackageGauges} {PackageCore}**
+- **yarn add {PackageGrids} {PackageCore}**
+- **yarn add {PackageMaps} {PackageCore}**
+- **yarn add {PackageSpreadsheet} {PackageCore}**
+
+Lastly,  -->
 
 <!-- WebComponents -->
 ## 手順 1 - Web コンポーネント プロジェクトの作成
@@ -82,7 +107,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
         <title>Getting Started with Ignite UI for Web Components</title>
     </head>
     <body>
-        
+
     </body>
 </html>
 ```
@@ -91,7 +116,7 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 <img src="../images/wc-project.jpg"/>
 
-8 - **package.config** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
+8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
 ```
   "scripts": {
@@ -101,6 +126,14 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 
 > [!Note]
 > このスクリプトは webpack を使用して **index.js** ファイルを **index.bundle.js** と呼ばれる別のファイルにバンドルし、**dist** という名前のフォルダーに配置します。
+>
+> ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
+
+```
+"scripts": {
+    "build2": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
+},
+```
 
 ## 手順 2 - ポリフィルのインストール
 
@@ -110,22 +143,22 @@ $ProductName$ を実行する前に、$ProductName$ を含むすべての $Platf
 </pre>
 
 2 - Web コンポーネント ポリフィルを **index.js** にインポートします。
-```tsx
+```
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
 ## 手順 3 - Ignite UI for Web Components のインストール
 
-1. **npm** を使用して Ignite UI for Web コンポーネントをインストールします。
-この例では、Spreadsheet Web コンポーネントをインストールします。
+1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Spreadsheet Web コンポーネントをインストールします。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm install igniteui-webcomponents-core
 > npm install igniteui-webcomponents-excel
 > npm install igniteui-webcomponents-spreadsheet
 </pre>
 
-2. **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+2 - **ModuleManager** と Web コンポーネント モジュールを **index.js** にインポートします。
+
 ```
 // module manager for registering the modules
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -135,7 +168,8 @@ import { IgcExcelModule } from 'igniteui-webcomponents-excel';
 import { IgcSpreadsheetModule } from 'igniteui-webcomponents-spreadsheet';
 ```
 
-3. **ModuleManager** で Web コンポーネント モジュールを登録します。
+3 - **ModuleManager** で Web コンポーネント モジュールを登録します。
+
 ```
 // register the modules
 ModuleManager.register(
@@ -144,7 +178,8 @@ ModuleManager.register(
 );
 ```
 
-4. `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+4 - `igc-spreadsheet` Web コンポーネント を **index.html** に追加します。
+
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -154,7 +189,8 @@ ModuleManager.register(
 
 ## 手順 4 - Web コンポーネント プロジェクトのビルドと実行
 
-1. **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+1 - **VS Code** でターミナルを開き、**ビルド** スクリプトを実行します。
+
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 > npm run build
 </pre>
@@ -162,7 +198,7 @@ ModuleManager.register(
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
 
-2. **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
+2 - **index.bundle.js** スクリプトを **index.html** の `igc-spreadsheet` の後に追加します。
 ```
 <body>
     <igc-spreadsheet id="spreadsheet" height="500px" width="100%">
@@ -172,23 +208,23 @@ ModuleManager.register(
 </body>
 ```
 
-3. プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
+3 - プロジェクトを実行するには、ローカル開発サーバーを起動します。この例では、Live Server を使用しています。**index.html** のエディター内で右クリックし、**[Live Server で開く]** を選択します。
 
 <img src="../images/wc-live-server.jpg" />
 
 > [!Note]
 > Live Server は Visual Studio Code の拡張機能で、静的および動的ページの自動更新機能を備えたローカル開発サーバーを起動できます。この拡張機能は、Visual Studio Code の [拡張機能] タブから、または [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) からダウンロードしてインストールできます。
 
-4. ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
+4 - ローカル サーバー上の Web ブラウザーを使用して **index.html** に移動すると、Ignite UI for Web Components のスプレッドシートがブラウザーに表示されます。
 
 <img src="../images/wc-project-running.jpg" />
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+
 ## 既存アプリの更新
 
-既存の $PlatformShort$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
-
+既存の $Platform$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -216,10 +252,10 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
-<!-- Blazor -->
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+IgbGeographicMapModule.Register(IgniteUIBlazor);
+IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGeographicMapModule } from 'igniteui-react-maps';
@@ -288,96 +324,129 @@ npm run-script start
 
 <!-- Blazor -->
 
-$ProductName$ は、開発者がモダンなデスクトップ ブラウザー用の最新の高性能アプリケーションを構築できるように設計された $PlatformShort$ コンポーネントの完全なセットです。
-
 ## 手順 1 - 新しい Blazor プロジェクトの作成
-以下の手順では、新しい Blazor プロジェクトを作成する方法を説明します。Ignite UI for Blazor コンポーネントを既存のアプリケーションに追加する場合は、[**手順 2**](#手順-2---ignite-ui-for-blazor-nuget-パッケージのインストール) に進みます。
+以下の手順では、新しい Blazor プロジェクトを作成する方法を説明します。Ignite UI for Blazor コンポーネントを既存のアプリケーションに追加する場合は、[**手順 2 - Ignite UI for Blazor パッケージのインストール**](#手順-2---ignite-ui-for-blazor-パッケージのインストール) に進みます。
 
 1 - Visual Studio 2019 を起動し、スタート ページで **[新しいプロジェクトの作成]** をクリックします。**Blazor App** テンプレートを選択し、**[次へ]** をクリックします。
 
-<img src="../images/new-blazor-project.jpg" />
+<img src="../images/general/new-blazor-project.jpg" />
 
 2 - プロジェクト名と説明を入力し、**[作成]** をクリックします。
 
-<img src="../images/new-blazor-project-name.jpg" />
+<img src="../images/general/new-blazor-project-name.jpg" />
 
 3 - 使用したい Blazor テンプレート (サーバーまたは Web アセンブリ (WASM)) を選択します。
 
-<img src="../images/new-blazor-project-template.jpg" />
+<img src="../images/general/new-blazor-project-template.jpg" />
 
-## 手順 2 - Ignite UI for Blazor NuGet パッケージのインストール
+## 手順 2 - Ignite UI for Blazor パッケージのインストール
+
+次のコマンドを使用して、**VS Package Manage Console** に Ignite UI for Blazor パッケージをインストールできます。
+
+```cmd
+dotnet add package IgniteUI.Blazor --version {PackageVerLatest}
+```
+
+または、次の手順に従って手動でバージョンを選択することもできます:
 
 1 - ソリューションまたはプロジェクトを右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
-   
-<img src="../images/nuget-manage-packages.jpg" />
+
+<img src="../images/general/nuget-manage-packages.jpg" />
 
 2 - パッケージ マネージャー ダイアログで **[参照]** タブを開き、**Infragistics** パッケージ ソースを選択して **IgniteUI.Blazor** NuGet パッケージをプロジェクトにインストールします。
-   
-<img src="../images/nuget-package-manager-browse.jpg" />
+
+<img src="../images/general/nuget-package-manager-browse.jpg" />
 
 > [!Note]
 > トライアル版をお使いの場合、[NuGet.org](https://www.nuget.org/packages/IgniteUI.Blazor/20.1.15-trial) にある `IgniteUI.Blazor` トライアル版 NuGet パッケージをインストールできます。
 
 > [!Note]
-> Infragistics パッケージソースがない場合、追加するには [Infragistics NuGet フィード トピック](./nuget-feed.md)を参照してください。
+> Infragistics パッケージソースがない場合、追加するには [Infragistics NuGet フィード トピック](./general-nuget-feed.md)を参照してください。
 
-## 手順 3 - Ignite UI for Blazor の登録
+## 手順 3 - Ignite UI for Blazor コンポーネントの登録
 
-1 - 静的ファイルをリンクします。`_content/IgniteUI.Blazor/app.bundle.js` スクリプトをプロジェクトのデフォルトの Blazor スクリプトの上に追加します。
+1 - Ignite UI for Blazor スクリプトをデフォルトの Blazor スクリプトの上に追加します。
 
-*Web アセンブリ - wwwroot/index.html*
+**Blazor Web Assembly** プロジェクトで **wwwroot/index.html** ファイルを変更します。
+
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.webassembly.js"></script>
 ```
-*サーバー - Pages/_Host.cshtml*
+
+**Blazor Server** プロジェクトで **Pages/_Host.cshtml** ファイルを変更します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 <script src="_framework/blazor.server.js"></script>
 ```
 
-2 - サービスおよびコンポーネント モジュールの登録
+2 - Ignite UI Blazor コンポーネントのサービス モジュールを登録します。
 
-**Web アセンブリ** - `Main` メソッドの `Program.cs` ファイルで `AddIgniteUIBlazor` メソッドを呼び出します。
+**Blazor Web Assembly** プロジェクトで **Program.cs** ファイルを変更します。
 
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public static async Task Main(string[] args)
 {
+    var builder = WebAssemblyHostBuilder.CreateDefault(args);
     // ...
-
-    builder.Services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    builder.Services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
-**サーバー** - `ConfigureServices` メソッドの `Startup.cs` ファイルで `AddIgniteUIBlazor` メソッドを呼び出します。
+
+In **Blazor Server** project - change the **Startup.cs** file:
+
 ```razor
+using IgniteUI.Blazor.Controls;
+// ...
+
 public void ConfigureServices(IServiceCollection services)
 {
     // ...
-
-    services.AddIgniteUIBlazor(
-        typeof(DataGridModule)
-    );
+    services.AddScoped(typeof(IIgniteUIBlazor), typeof(IgniteUIBlazor));
 }
 ```
-> [!Note]
-> この例では、Blazor アプリケーションで使用する `DataGridModule` を登録します。Ignite UI for Blazor コンポーネントとその機能は、Blazor アプリケーションで正しく動作するためにそれぞれのモジュールを登録する必要があります。詳細については、各コンポーネントのヘルプを参照してください。
 
-3 - `_Imports.razor` に `IgniteUI.Blazor.Controls` 名前空間を追加します。
+オプションで、アプリケーション レベルでモジュールを登録できない場合は、ページの初期化時にモジュールを razor りファイルに登録できます。
+
+```razor
+@page "/pages/some-page-name"
+
+@using IgniteUI.Blazor.Controls
+@inject IIgniteUIBlazor IgniteUIBlazor;
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
+        IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+        // ...
+    }
+}
+```
+
+> [!Note]
+> この例では、Blazor ラジアル ゲージ コンポーネントを使用するために `IgbGeographicMapModule` を登録しました。ただし、Blazor アプリケーションで適切に動作するためには、他の Blazor コンポーネントおよびその機能用の追加モジュールを登録する必要があります。必要なモジュールの詳細については、各コンポーネントのトピックを参照してください。
+
+
+3 - `_Imports.razor` ファイルの $ProductName$ コンポーネントに名前空間を追加します。
 
 ```razor
 @using IgniteUI.Blazor.Controls;
 ```
 
-4 - Ignite UI for Blazor コンポーネントを追加します。
+4 - Ignite UI for Blazor コンポーネントを razor ページに追加します。
 
 ```razor
-<DataGrid DataSource="data" />
-</Datagrid>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true" />
+</IgbGeographicMap>
 ```
-> [!Note]
-> Ignite UI for Blazor コンポーネントとその機能は、それぞれのモジュールを `AddIgniteUIBlazor` メソッドに登録する必要があります。詳細については、各コンポーネントのヘルプを参照してください。
+
+5 - Blazor アプリをビルドして実行します。
 
 <!-- end: Blazor -->

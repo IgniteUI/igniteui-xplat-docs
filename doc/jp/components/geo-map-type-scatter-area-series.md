@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布エリア シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ 散布エリア シリーズを使用して、各ポイントに割り当てられた数値を使い、経度および緯度データの三角測量に基づいて、色付きのエリア サーフェスを描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter area series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布エリア シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | 散布エリア シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ 散布エリア シリーズを使用して、各ポイントに割り当てられた数値を使い、経度および緯度データの三角測量に基づいて、色付きのエリア サーフェスを描画します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics, $Platform$ マップ, 散布エリア シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
 _language: ja
 ---
-# $PlatformShort$ 散布エリア シリーズの使用
+# $Platform$ 散布エリア シリーズの使用
 
-$PlatformShort$ マップ コンポーネントの `GeographicScatterAreaSeries` を使用して、各ポイントに割り当てられた数値を持つ経度と緯度のデータの三角形分割に基づいて、地理的背景で色付きの表面を描画します。このタイプの地理的シリーズは、気象温度、降水量、人口分布、大気汚染などの地理的位置によって定義される散乱データのレンダリングに使用できます。
+$Platform$ マップ コンポーネントの `GeographicScatterAreaSeries` を使用して、各ポイントに割り当てられた数値を持つ経度と緯度のデータの三角形分割に基づいて、地理的背景で色付きの表面を描画します。このタイプの地理的シリーズは、気象温度、降水量、人口分布、大気汚染などの地理的位置によって定義される散乱データのレンダリングに使用できます。
 
-## サンプル
+## $Platform$ 散布エリア シリーズの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-area-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-area-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-area-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series"
+           alt="$Platform$ 散布エリア シリーズの使用の例"
+           github-src="maps/geo-map/type-scatter-area-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -34,8 +33,8 @@ $PlatformShort$ マップ コンポーネントの `GeographicScatterAreaSeries`
 | プロパティ名  | プロパティ型   | 説明   |
 |--------------|---------------| ---------------|
 |`ItemsSource`|任意|`TrianglesSource` プロパティが三角測量データを提供しない場合に三角測量を実行するデータ項目のソースです。|
-|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの経度を含むプロパティの名前。|
-|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべてのアイテムの Latitude を含むプロパティの名前。|
+|`LongitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の経度を含むプロパティの名前。|
+|`LatitudeMemberPath`|文字列|`ItemsSource` にバインドされているすべての項目の Latitude を含むプロパティの名前。|
 |`ColorMemberPath`|文字列|各データ項目の緯度および経度座標の値を含むプロパティの名前。`ColorScale` プロパティが設定されている場合、この数値は色に変換されます。|
 |`TrianglesSource`|任意|三角測量データのソース。`TriangulationSource` オブジェクトの Triangles をこのプロパティに設定すると、ランタイム パフォーマンスと地理的シリーズの描画の両方が改善します。|
 |`TriangleVertexMemberPath1`|文字列|各三角形に対して ItemsSource の最初の頂点のインデックスを含む、`TrianglesSource` 項目のプロパティ名。このプロパティを設定することは義務ではありません。カスタムの三角測量ロジックが提供されない場合はデフォルトで取得されます。|
@@ -311,14 +310,14 @@ createAreaSeries(data: any[]) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicScatterAreaSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ColorMemberPath="Value"
         ColorScale="ColorScale"
         DataSource="Data">
-    </GeographicScatterAreaSeries>
-</GeographicMap>
+    </IgbGeographicScatterAreaSeries>
+</IgbGeographicMap>
 
 @code {
 
@@ -327,7 +326,7 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
@@ -340,7 +339,7 @@ createAreaSeries(data: any[]) {
         this.ColorScale.MinimumValue = 0;
         this.ColorScale.MaximumValue = 30;
 
-        this.Data = WorldTemperatures.Load();        
+        this.Data = WorldTemperatures.Load();
     }
 }
 ```

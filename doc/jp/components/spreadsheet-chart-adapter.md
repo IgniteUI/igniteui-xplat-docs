@@ -1,20 +1,23 @@
 ---
-title: $PlatformShort$ スプレッドシート | チャート アダプター | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ スプレッドシート コントロールに縦棒、折れ線、エリアなどのチャートを表示します。$ProductName$ スプレッドシートにチャートを統合する方法について説明します。
+title: $Platform$ スプレッドシート | チャート アダプター | インフラジスティックス
+_description: インフラジスティックスの $Platform$ スプレッドシート コントロールに縦棒、折れ線、エリアなどのチャートを表示します。$ProductName$ スプレッドシートにチャートを統合する方法について説明します。
 _keywords: Excel Spreadsheet, chart adapter, $ProductName$, Infragistics, Excel スプレッドシート、チャート アダプター, インフラジスティックス
 mentionedTypes: ['Spreadsheet', 'Worksheet', 'WorksheetShapeCollection', 'WorksheetChart']
 _language: ja
 ---
-# $PlatformShort$ Spreadsheet チャート アダプター
+# $Platform$ Spreadsheet チャート アダプター
 
-$PlatformShort$ Spreadsheet コンポーネントを使用して `Spreadsheet` にチャートを表示できます。
+$Platform$ Spreadsheet コンポーネントを使用して `Spreadsheet` にチャートを表示できます。
 
-## サンプル
+## $Platform$ Spreadsheet チャート アダプターの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-adapter-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/adapter-chart"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
+           alt="$Platform$ Spreadsheet チャート アダプターの例"
+           github-src="excel/spreadsheet/adapter-chart">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -84,7 +87,7 @@ Spreadsheet ChartAdapter は、折れ線、エリア、縦棒、ドーナツを�
 >
 > 以下のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
-ハイパーリンクを使用するように $PlatformShort$ スプレッドシート コントロールを設定するときは、`SpreadsheetChartAdapter` クラスをインポートする必要があります。
+ハイパーリンクを使用するように $Platform$ スプレッドシート コントロールを設定するときは、`SpreadsheetChartAdapter` クラスをインポートする必要があります。
 
 ```ts
 import { IgxSpreadsheetChartAdapterModule } from 'igniteui-angular-spreadsheet-chart-adapter';
@@ -168,7 +171,7 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 
     const chart1 = sheet.shapes().addChart(ChartType.Line, cell1, { x: 0, y: 0 }, cell1, { x: 100, y: 100 });
 
-    const title: $PlatformShort$ ChartTitle = new ChartTitle();
+    const title: $Platform$ ChartTitle = new ChartTitle();
     title.text = new FormattedString("Line Chart");
     chart1.chartTitle = title;
 

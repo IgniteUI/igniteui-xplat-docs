@@ -1,22 +1,6 @@
-{
-"types": [
-{
-    "originalName": "FlattenerSettings",
-   "names": [
-        { "platform": "Angular",     "fileName": "FlattenerSettings.ts",
- "mappedName": "FlattenerSettings"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "chunkingAmount"}            ],
-           "originalName": "ChunkingAmount"
-       }   ],
-    "originalNamespace": "Infragistics"
-}
-]
-}
+{"types":[
+  { "originalName":"FlattenerSettings",
+    "names":[{"platform":"Angular","fileName":"FlattenerSettings.ts","mappedName":"FlattenerSettings"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"chunkingAmount"}],"originalName":"ChunkingAmount"}],"originalNamespace":"Infragistics"}]}

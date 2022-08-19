@@ -1,863 +1,196 @@
-{
-"types": [
-{
-    "originalName": "CategoryToolTipLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CategoryToolTipLayer.cs",
- "mappedName": "CategoryToolTipLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Axis", "mappedName": "TargetAxis"}            ],
-           "originalName": "TargetAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "HideToolTips"}            ],
-           "originalName": "HideToolTips"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ItemToolTipLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ItemToolTipLayer.cs",
- "mappedName": "ItemToolTipLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SkipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "HideToolTips"}            ],
-           "originalName": "HideToolTips"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ValueOverlay",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ValueOverlay.cs",
- "mappedName": "ValueOverlay"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Axis", "mappedName": "Axis"}            ],
-           "originalName": "Axis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAxisAnnotationEnabled"}            ],
-           "originalName": "IsAxisAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationTextColor"}            ],
-           "originalName": "AxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationBackground"}            ],
-           "originalName": "AxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "AxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "AxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationOutline"}            ],
-           "originalName": "AxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingLeft"}            ],
-           "originalName": "AxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingTop"}            ],
-           "originalName": "AxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingRight"}            ],
-           "originalName": "AxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingBottom"}            ],
-           "originalName": "AxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationStrokeThickness"}            ],
-           "originalName": "AxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ScrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetLabel"}            ],
-           "originalName": "GetLabel"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AnnotationLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "AnnotationLayer.cs",
- "mappedName": "AnnotationLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseIndex"}            ],
-           "originalName": "UseIndex"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseLegend"}            ],
-           "originalName": "UseLegend"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Point", "mappedName": "CursorPosition"}            ],
-           "originalName": "CursorPosition"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsDefaultCrosshairDisabled"}            ],
-           "originalName": "IsDefaultCrosshairDisabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "ShouldRenderAsOverlay"}            ],
-           "originalName": "ShouldRenderAsOverlay"
-       }   ],
-    "originalBaseTypeName": "Series",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AxisAnnotation",
-   "names": [
-        { "platform": "Blazor",     "fileName": "AxisAnnotation.cs",
- "mappedName": "AxisAnnotation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Value"}            ],
-           "originalName": "Value"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelFormat"}            ],
-           "originalName": "LabelFormat"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "FormatSpecifierCollection", "mappedName": "LabelFormatSpecifiers"}            ],
-           "originalName": "LabelFormatSpecifiers"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingLeft"}            ],
-           "originalName": "BackgroundPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingTop"}            ],
-           "originalName": "BackgroundPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingRight"}            ],
-           "originalName": "BackgroundPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingBottom"}            ],
-           "originalName": "BackgroundPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResetCachedExtent"}            ],
-           "originalName": "ResetCachedExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ResolveLabelValue"}            ],
-           "originalName": "ResolveLabelValue"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutAnnotation",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CalloutAnnotation.cs",
- "mappedName": "CalloutAnnotation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Text"}            ],
-           "originalName": "Text"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Key"}            ],
-           "originalName": "Key"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Content"}            ],
-           "originalName": "Content"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Background"}            ],
-           "originalName": "Background"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outline"}            ],
-           "originalName": "Outline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LeaderBrush"}            ],
-           "originalName": "LeaderBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "StrokeThickness"}            ],
-           "originalName": "StrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingLeft"}            ],
-           "originalName": "BackgroundPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingTop"}            ],
-           "originalName": "BackgroundPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingRight"}            ],
-           "originalName": "BackgroundPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BackgroundPaddingBottom"}            ],
-           "originalName": "BackgroundPaddingBottom"
-       }   ],
-    "originalBaseTypeName": "DependencyObject",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryHighlightLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CategoryHighlightLayer.cs",
- "mappedName": "CategoryHighlightLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryAxisBase", "mappedName": "TargetAxis"}            ],
-           "originalName": "TargetAxis"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BandHighlightWidth"}            ],
-           "originalName": "BandHighlightWidth"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CalloutLayer.cs",
- "mappedName": "CalloutLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "LabelMemberPath"}            ],
-           "originalName": "LabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XMemberPath"}            ],
-           "originalName": "XMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YMemberPath"}            ],
-           "originalName": "YMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "KeyMemberPath"}            ],
-           "originalName": "KeyMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCalloutOffsettingEnabled"}            ],
-           "originalName": "IsCalloutOffsettingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ContentMemberPath"}            ],
-           "originalName": "ContentMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CollisionChannel"}            ],
-           "originalName": "CollisionChannel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAutoCalloutBehaviorEnabled"}            ],
-           "originalName": "IsAutoCalloutBehaviorEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseValueForAutoCalloutLabels"}            ],
-           "originalName": "UseValueForAutoCalloutLabels"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsCustomCalloutStyleEnabled"}            ],
-           "originalName": "IsCustomCalloutStyleEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "AutoCalloutLabelPrecision"}            ],
-           "originalName": "AutoCalloutLabelPrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutTextColor"}            ],
-           "originalName": "CalloutTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutBackground"}            ],
-           "originalName": "CalloutBackground"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "CalloutInterpolatedValuePrecision"}            ],
-           "originalName": "CalloutInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutOutline"}            ],
-           "originalName": "CalloutOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutLeaderBrush"}            ],
-           "originalName": "CalloutLeaderBrush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutPaddingLeft"}            ],
-           "originalName": "CalloutPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutPaddingTop"}            ],
-           "originalName": "CalloutPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutPaddingRight"}            ],
-           "originalName": "CalloutPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutPaddingBottom"}            ],
-           "originalName": "CalloutPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CalloutCollisionMode", "mappedName": "CalloutCollisionMode"}            ],
-           "originalName": "CalloutCollisionMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutPositionPadding"}            ],
-           "originalName": "CalloutPositionPadding"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "CalloutStrokeThickness"}            ],
-           "originalName": "CalloutStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TextStyle"}            ],
-           "originalName": "TextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "InvalidateCalloutContent"}            ],
-           "originalName": "InvalidateCalloutContent"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutContentUpdatingEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CalloutContentUpdatingEventArgs.cs",
- "mappedName": "CalloutContentUpdatingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Content"}            ],
-           "originalName": "Content"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutLabelUpdatingEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CalloutLabelUpdatingEventArgs.cs",
- "mappedName": "CalloutLabelUpdatingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Label"}            ],
-           "originalName": "Label"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CalloutSeriesSelectingEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CalloutSeriesSelectingEventArgs.cs",
- "mappedName": "CalloutSeriesSelectingEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XValue"}            ],
-           "originalName": "XValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YValue"}            ],
-           "originalName": "YValue"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SeriesName"}            ],
-           "originalName": "SeriesName"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinalValueLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "FinalValueLayer.cs",
- "mappedName": "FinalValueLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "FinalValueSelectionMode", "mappedName": "FinalValueSelectionMode"}            ],
-           "originalName": "FinalValueSelectionMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationTextColor"}            ],
-           "originalName": "AxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationBackground"}            ],
-           "originalName": "AxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "AxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "AxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "AxisAnnotationOutline"}            ],
-           "originalName": "AxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingLeft"}            ],
-           "originalName": "AxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingTop"}            ],
-           "originalName": "AxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingRight"}            ],
-           "originalName": "AxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationPaddingBottom"}            ],
-           "originalName": "AxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "AxisAnnotationStrokeThickness"}            ],
-           "originalName": "AxisAnnotationStrokeThickness"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategoryItemHighlightLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CategoryItemHighlightLayer.cs",
- "mappedName": "CategoryItemHighlightLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CategoryItemHighlightType", "mappedName": "HighlightType"}            ],
-           "originalName": "HighlightType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "MarkerTemplate"}            ],
-           "originalName": "MarkerTemplate"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BandHighlightWidth"}            ],
-           "originalName": "BandHighlightWidth"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SkipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CrosshairLayer",
-   "names": [
-        { "platform": "Blazor",     "fileName": "CrosshairLayer.cs",
- "mappedName": "CrosshairLayer"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "HorizontalLineStroke"}            ],
-           "originalName": "HorizontalLineStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "VerticalLineStroke"}            ],
-           "originalName": "VerticalLineStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "TargetSeries"}            ],
-           "originalName": "TargetSeries"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "UseInterpolation"}            ],
-           "originalName": "UseInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsAxisAnnotationEnabled"}            ],
-           "originalName": "IsAxisAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisAnnotationTextColor"}            ],
-           "originalName": "XAxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisAnnotationBackground"}            ],
-           "originalName": "XAxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "XAxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "XAxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisAnnotationOutline"}            ],
-           "originalName": "XAxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisAnnotationPaddingLeft"}            ],
-           "originalName": "XAxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisAnnotationPaddingTop"}            ],
-           "originalName": "XAxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisAnnotationPaddingRight"}            ],
-           "originalName": "XAxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisAnnotationPaddingBottom"}            ],
-           "originalName": "XAxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisAnnotationPaddingLeft"}            ],
-           "originalName": "YAxisAnnotationPaddingLeft"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisAnnotationPaddingTop"}            ],
-           "originalName": "YAxisAnnotationPaddingTop"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisAnnotationPaddingRight"}            ],
-           "originalName": "YAxisAnnotationPaddingRight"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisAnnotationPaddingBottom"}            ],
-           "originalName": "YAxisAnnotationPaddingBottom"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisAnnotationStrokeThickness"}            ],
-           "originalName": "XAxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisAnnotationTextColor"}            ],
-           "originalName": "YAxisAnnotationTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisAnnotationBackground"}            ],
-           "originalName": "YAxisAnnotationBackground"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "YAxisAnnotationInterpolatedValuePrecision"}            ],
-           "originalName": "YAxisAnnotationInterpolatedValuePrecision"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisAnnotationOutline"}            ],
-           "originalName": "YAxisAnnotationOutline"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisAnnotationStrokeThickness"}            ],
-           "originalName": "YAxisAnnotationStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "VerticalLineVisibility"}            ],
-           "originalName": "VerticalLineVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "HorizontalLineVisibility"}            ],
-           "originalName": "HorizontalLineVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "SkipUnknownValues"}            ],
-           "originalName": "SkipUnknownValues"
-       }   ],
-    "originalBaseTypeName": "AnnotationLayer",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"CategoryToolTipLayer",
+    "names":[{"platform":"Blazor","fileName":"CategoryToolTipLayer.cs","mappedName":"IgbCategoryToolTipLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbAxis","mappedName":"TargetAxis"}],"originalName":"TargetAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ItemToolTipLayer",
+    "names":[{"platform":"Blazor","fileName":"ItemToolTipLayer.cs","mappedName":"IgbItemToolTipLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ValueOverlay",
+    "names":[{"platform":"Blazor","fileName":"ValueOverlay.cs","mappedName":"IgbValueOverlay"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbAxis","mappedName":"Axis"}],"originalName":"Axis"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsAxisAnnotationEnabled"}],"originalName":"IsAxisAnnotationEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationTextColor"}],"originalName":"AxisAnnotationTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationBackground"}],"originalName":"AxisAnnotationBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"AxisAnnotationInterpolatedValuePrecision"}],"originalName":"AxisAnnotationInterpolatedValuePrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationOutline"}],"originalName":"AxisAnnotationOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingLeft"}],"originalName":"AxisAnnotationPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingTop"}],"originalName":"AxisAnnotationPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingRight"}],"originalName":"AxisAnnotationPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingBottom"}],"originalName":"AxisAnnotationPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ScrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetLabel"}],"originalName":"GetLabel"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AnnotationLayer",
+    "names":[{"platform":"Blazor","fileName":"AnnotationLayer.cs","mappedName":"IgbAnnotationLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseIndex"}],"originalName":"UseIndex"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseLegend"}],"originalName":"UseLegend"},
+    { "names":[{"platform":"Blazor","mappedType":"Point","mappedName":"CursorPosition"}],"originalName":"CursorPosition"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsDefaultCrosshairDisabled"}],"originalName":"IsDefaultCrosshairDisabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldRenderAsOverlay"}],"originalName":"ShouldRenderAsOverlay"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AxisAnnotation",
+    "names":[{"platform":"Blazor","fileName":"AxisAnnotation.cs","mappedName":"IgbAxisAnnotation"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Value"}],"originalName":"Value"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Text"}],"originalName":"Text"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelFormat"}],"originalName":"LabelFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"LabelFormatSpecifiers"}],"originalName":"LabelFormatSpecifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Background"}],"originalName":"Background"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingLeft"}],"originalName":"BackgroundPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingTop"}],"originalName":"BackgroundPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ResetCachedExtent"}],"originalName":"ResetCachedExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ResolveLabelValue"}],"originalName":"ResolveLabelValue"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CalloutAnnotation",
+    "names":[{"platform":"Blazor","fileName":"CalloutAnnotation.cs","mappedName":"IgbCalloutAnnotation"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XValue"}],"originalName":"XValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YValue"}],"originalName":"YValue"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Text"}],"originalName":"Text"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Key"}],"originalName":"Key"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Content"}],"originalName":"Content"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Background"}],"originalName":"Background"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outline"}],"originalName":"Outline"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LeaderBrush"}],"originalName":"LeaderBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"StrokeThickness"}],"originalName":"StrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingLeft"}],"originalName":"BackgroundPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingTop"}],"originalName":"BackgroundPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BackgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategoryHighlightLayer",
+    "names":[{"platform":"Blazor","fileName":"CategoryHighlightLayer.cs","mappedName":"IgbCategoryHighlightLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbCategoryAxisBase","mappedName":"TargetAxis"}],"originalName":"TargetAxis"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BandHighlightWidth"}],"originalName":"BandHighlightWidth"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CalloutLayer",
+    "names":[{"platform":"Blazor","fileName":"CalloutLayer.cs","mappedName":"IgbCalloutLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"LabelMemberPath"}],"originalName":"LabelMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XMemberPath"}],"originalName":"XMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YMemberPath"}],"originalName":"YMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"KeyMemberPath"}],"originalName":"KeyMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCalloutOffsettingEnabled"}],"originalName":"IsCalloutOffsettingEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ContentMemberPath"}],"originalName":"ContentMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CollisionChannel"}],"originalName":"CollisionChannel"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsAutoCalloutBehaviorEnabled"}],"originalName":"IsAutoCalloutBehaviorEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseValueForAutoCalloutLabels"}],"originalName":"UseValueForAutoCalloutLabels"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsCustomCalloutStyleEnabled"}],"originalName":"IsCustomCalloutStyleEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"AutoCalloutLabelPrecision"}],"originalName":"AutoCalloutLabelPrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutTextColor"}],"originalName":"CalloutTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutBackground"}],"originalName":"CalloutBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"CalloutInterpolatedValuePrecision"}],"originalName":"CalloutInterpolatedValuePrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutOutline"}],"originalName":"CalloutOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutLeaderBrush"}],"originalName":"CalloutLeaderBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutPaddingLeft"}],"originalName":"CalloutPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutPaddingTop"}],"originalName":"CalloutPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutPaddingRight"}],"originalName":"CalloutPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutPaddingBottom"}],"originalName":"CalloutPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"CalloutCollisionMode","mappedName":"CalloutCollisionMode"}],"originalName":"CalloutCollisionMode"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutPositionPadding"}],"originalName":"CalloutPositionPadding"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CalloutStrokeThickness"}],"originalName":"CalloutStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextStyle"}],"originalName":"TextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"InvalidateCalloutContent"}],"originalName":"InvalidateCalloutContent"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CalloutContentUpdatingEventArgs",
+    "names":[{"platform":"Blazor","fileName":"CalloutContentUpdatingEventArgs.cs","mappedName":"IgbCalloutContentUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XValue"}],"originalName":"XValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YValue"}],"originalName":"YValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Content"}],"originalName":"Content"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CalloutLabelUpdatingEventArgs",
+    "names":[{"platform":"Blazor","fileName":"CalloutLabelUpdatingEventArgs.cs","mappedName":"IgbCalloutLabelUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XValue"}],"originalName":"XValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YValue"}],"originalName":"YValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CalloutSeriesSelectingEventArgs",
+    "names":[{"platform":"Blazor","fileName":"CalloutSeriesSelectingEventArgs.cs","mappedName":"IgbCalloutSeriesSelectingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XValue"}],"originalName":"XValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YValue"}],"originalName":"YValue"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SeriesName"}],"originalName":"SeriesName"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinalValueLayer",
+    "names":[{"platform":"Blazor","fileName":"FinalValueLayer.cs","mappedName":"IgbFinalValueLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"FinalValueSelectionMode","mappedName":"FinalValueSelectionMode"}],"originalName":"FinalValueSelectionMode"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationTextColor"}],"originalName":"AxisAnnotationTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationBackground"}],"originalName":"AxisAnnotationBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"AxisAnnotationInterpolatedValuePrecision"}],"originalName":"AxisAnnotationInterpolatedValuePrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"AxisAnnotationOutline"}],"originalName":"AxisAnnotationOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingLeft"}],"originalName":"AxisAnnotationPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingTop"}],"originalName":"AxisAnnotationPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingRight"}],"originalName":"AxisAnnotationPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationPaddingBottom"}],"originalName":"AxisAnnotationPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AxisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategoryItemHighlightLayer",
+    "names":[{"platform":"Blazor","fileName":"CategoryItemHighlightLayer.cs","mappedName":"IgbCategoryItemHighlightLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"CategoryItemHighlightType","mappedName":"HighlightType"}],"originalName":"HighlightType"},
+    { "names":[{"platform":"Blazor","mappedType":"MarkerType","mappedName":"MarkerType"}],"originalName":"MarkerType"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MarkerBrush"}],"originalName":"MarkerBrush"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MarkerOutline"}],"originalName":"MarkerOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"MarkerTemplate"}],"originalName":"MarkerTemplate"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BandHighlightWidth"}],"originalName":"BandHighlightWidth"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CrosshairLayer",
+    "names":[{"platform":"Blazor","fileName":"CrosshairLayer.cs","mappedName":"IgbCrosshairLayer"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HorizontalLineStroke"}],"originalName":"HorizontalLineStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"VerticalLineStroke"}],"originalName":"VerticalLineStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TargetSeriesName"}],"originalName":"TargetSeriesName"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"TargetSeries"}],"originalName":"TargetSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"UseInterpolation"}],"originalName":"UseInterpolation"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsAxisAnnotationEnabled"}],"originalName":"IsAxisAnnotationEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisAnnotationTextColor"}],"originalName":"XAxisAnnotationTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisAnnotationBackground"}],"originalName":"XAxisAnnotationBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"XAxisAnnotationInterpolatedValuePrecision"}],"originalName":"XAxisAnnotationInterpolatedValuePrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisAnnotationOutline"}],"originalName":"XAxisAnnotationOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisAnnotationPaddingLeft"}],"originalName":"XAxisAnnotationPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisAnnotationPaddingTop"}],"originalName":"XAxisAnnotationPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisAnnotationPaddingRight"}],"originalName":"XAxisAnnotationPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisAnnotationPaddingBottom"}],"originalName":"XAxisAnnotationPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationPaddingLeft"}],"originalName":"YAxisAnnotationPaddingLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationPaddingTop"}],"originalName":"YAxisAnnotationPaddingTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationPaddingRight"}],"originalName":"YAxisAnnotationPaddingRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationPaddingBottom"}],"originalName":"YAxisAnnotationPaddingBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisAnnotationStrokeThickness"}],"originalName":"XAxisAnnotationStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisAnnotationTextColor"}],"originalName":"YAxisAnnotationTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisAnnotationBackground"}],"originalName":"YAxisAnnotationBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"YAxisAnnotationInterpolatedValuePrecision"}],"originalName":"YAxisAnnotationInterpolatedValuePrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisAnnotationOutline"}],"originalName":"YAxisAnnotationOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"VerticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
+    { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"HorizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"SkipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

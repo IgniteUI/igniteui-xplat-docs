@@ -1,32 +1,31 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, shape polygon series, $ProductName$, Infragistics, $PlatformShort$ マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
+title: $Platform$ マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics, $Platform$ マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
 
-# $PlatformShort$ シェイプ ポリゴン シリーズの使用
+# $Platform$ シェイプ ポリゴン シリーズの使用
 
-地理的コンテキストで形状ポリゴンを使用して地理空間データを表示するには、$PlatformShort$ マップ コンポーネントの `GeographicShapeSeries` を使用します。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
+地理的コンテキストで形状ポリゴンを使用して地理空間データを表示するには、$Platform$ マップ コンポーネントの `GeographicShapeSeries` を使用します。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
 
-## サンプル
+## $Platform$ シェイプ ポリゴン シリーズの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-shape-polygon-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-shape-polygon-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-shape-polygon-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
+           alt="$Platform$ シェイプ ポリゴン シリーズの使用の例"
+           github-src="maps/geo-map/type-shape-polygon-series">
+</code-view>
 
 <div class="divider--half"></div>
 
 `GeographicShapeSeries` は、地理空間データがポリラインではなくポリゴンでレンダリングされる以外、`GeographicPolylineSeries` とほとんど同じです。
 
 ## データ要件
-マップコントロールの他の種類の地理的シリーズと同様に、`GeographicShapeSeries` には、オブジェクトの配列にバインドできる `DataSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、`ShapeMemberPath` プロパティにマップされます。`GeographicShapeSeries` は、マップされたデータ列の点を使用してマップコントロールにポリゴンをプロットします。
+マップコントロールの他の種類の地理的シリーズと同様に、`GeographicShapeSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、`ShapeMemberPath` プロパティにマップされます。`GeographicShapeSeries` は、マップされたデータ列の点を使用してマップコントロールにポリゴンをプロットします。
 
 ## コード スニペット
 以下のコードは、`ShapeDataSource` を使用してシェイプ ファイルからロードした世界の国々の図形に `GeographicShapeSeries` をバインドする方法を示します。
@@ -296,19 +295,19 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
-</GeographicMap>    
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.dbf"

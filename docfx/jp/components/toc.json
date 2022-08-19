@@ -11,26 +11,25 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "NuGet フィードの追加",
-    "href": "nuget-feed.md",
-    "status": "NEW"
+    "href": "general-nuget-feed.md",
+    "status": ""
   },
   {
-    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "exclude": ["Angular", "Blazor"],
     "name": "Ignite UI CLI",
     "href": "general-cli-overview.md",
-    "status": "NEW"
+    "status": ""
   },
   {
     "exclude": ["Blazor"],
     "name": "ライセンス",
     "href": "general-licensing.md",
-    "status": "NEW"
+    "status": ""
   },
   {
-    "exclude": ["Blazor"],
-    "name": "重大な変更",
-    "href": "general-breaking-changes-dv.md",
-    "status": "UPDATED"
+    "name": "変更ログ",
+    "href": "general-changelog-dv.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -38,202 +37,232 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "Blazor"],
-    "name": "ドック マネージャー",
-    "href": "dock-manager.md",
-    "status": "NEW",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "ペインの更新",
-        "href": "dock-manager-updating-panes.md",
-        "status": "NEW"
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "フレームの埋め込み",
-        "href": "dock-manager-embedding-frames.md",
-        "status": "NEW"
-      }
-    ]
+    "exclude": ["Angular", "React"],
+    "name": "アバター {ReleaseStatus_WebsInputs}",
+    "href": "layouts/avatar.md",
+    "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "ドック マネージャー (追加予定)",
-    "href": "dock-manager.md",
-    "status": "NEW",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "ペインの更新",
-        "href": "dock-manager-updating-panes.md",
-        "status": "NEW"
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "フレームの埋め込み",
-        "href": "dock-manager-embedding-frames.md",
-        "status": "NEW"
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "エディター",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "複数列コンボ ボックス",
-    "href": "multi-column-combobox.md",
+    "exclude": ["Angular", "React"],
+    "name": "カード {ReleaseStatus_WebsInputs}",
+    "href": "layouts/card.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular"],
-    "name": "グリッド",
+    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Angular", "Blazor"],
+        "name": "ペインの更新",
+        "href": "layouts/dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor"],
+        "name": "フレームの埋め込み",
+        "href": "layouts/dock-manager-embedding-frames.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "デスクトップ統合",
+        "href": "layouts/dock-manager-electron.md",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "メニュー",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
+    "href": "menus/navbar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "グリッド & リスト",
     "header": true,
-    "href": "grids.md"
+    "href": "grids/grids.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "リスト {ReleaseStatus_WebsList}",
+    "href": "grids/list.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
     "name": "テーブル / グリッド",
-    "href": "data-grid.md",
-    "status": "",
+    "href": "grids/data-grid.md",
+    "status": "UPDATED",
     "items": [
       {
+        "name": "アクセシビリティの遵守",
+        "href": "grids/data-grid-accessibility.md",
+        "status": ""
+      },
+      {
         "name": "ライブ データのバインド",
-        "href": "data-grid-live-data.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-live-data.md",
+        "status": ""
       },
       {
         "name": "ローカル データのバインディング",
-        "href": "data-grid-local-data.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-local-data.md",
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "比較データのバインディング",
-        "href": "data-grid-type-comparison-table.md",
-        "status": "NEW"
+        "href": "grids/data-grid-type-comparison-table.md",
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "ヒートマップ データのバインディング",
-        "href": "data-grid-type-heatmap-table.md",
-        "status": "NEW"
+        "href": "grids/data-grid-type-heatmap-table.md",
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "マトリックス データのバインディング",
-        "href": "data-grid-type-matrix-table.md",
-        "status": "NEW"
+        "href": "grids/data-grid-type-matrix-table.md",
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "周期性データのバインディング",
-        "href": "data-grid-type-periodic-table.md",
-        "status": "NEW"
+        "href": "grids/data-grid-type-periodic-table.md",
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "仮想データのバインディング",
-        "href": "data-grid-remote-data.md",
+        "href": "grids/data-grid-remote-data.md",
         "status": ""
       },
       {
         "name": "セルのアクティブ化",
-        "href": "data-grid-cell-activation.md",
+        "href": "grids/data-grid-cell-activation.md",
         "status": ""
       },
       {
-        "name": "セル編集",
-        "href": "data-grid-cell-editing.md",
+        "name": "グリッド編集",
+        "href": "grids/data-grid-cell-editing.md",
+        "status": ""
+      },
+      {
+        "name": "セルの結合",
+        "href": "grids/data-grid-cell-merging.md",
         "status": "NEW"
       },
       {
         "name": "セル選択",
-        "href": "data-grid-cell-selection.md",
+        "href": "grids/data-grid-cell-selection.md",
         "status": ""
       },
       {
         "name": "列アニメーション",
-        "href": "data-grid-column-animation.md",
+        "href": "grids/data-grid-column-animation.md",
         "status": ""
       },
       {
         "name": "列フィルタリング",
-        "href": "data-grid-column-filtering.md",
-        "status": ""
+        "href": "grids/data-grid-column-filtering.md",
+        "status": "NEW"
       },
       {
         "name": "列移動",
-        "href": "data-grid-column-moving.md",
+        "href": "grids/data-grid-column-moving.md",
         "status": ""
       },
       {
         "name": "列の選択",
-        "href": "data-grid-column-chooser.md",
-        "status": "NEW"
-      },
-      {
-        "name": "列のオプション",
-        "href": "data-grid-column-options.md",
-        "status": "NEW"
-      },
-      {
-        "name": "列のピン固定",
-        "href": "data-grid-column-pinning.md",
-        "status": "NEW"
-      },
-      {
-        "name": "列サイズの変更",
-        "href": "data-grid-column-resizing.md",
+        "href": "grids/data-grid-column-chooser.md",
         "status": ""
       },
       {
-        "name": "列の並べ替え",
-        "href": "data-grid-column-sorting.md",
+        "name": "列のオプション",
+        "href": "grids/data-grid-column-options.md",
+        "status": ""
+      },
+      {
+        "name": "列のピン固定",
+        "href": "grids/data-grid-column-pinning.md",
+        "status": ""
+      },
+      {
+        "name": "列サイズの変更",
+        "href": "grids/data-grid-column-resizing.md",
+        "status": ""
+      },
+      {
+        "name": "列のソート",
+        "href": "grids/data-grid-column-sorting.md",
         "status": ""
       },
       {
         "name": "列スパークライン",
-        "href": "data-grid-type-sparkline-table.md",
+        "href": "grids/data-grid-type-sparkline-table.md",
         "status": ""
       },
       {
         "name": "列集計",
-        "href": "data-grid-column-summaries.md",
-        "status": "NEW"
+        "href": "grids/data-grid-column-summaries.md",
+        "status": ""
       },
       {
         "name": "列タイプ",
-        "href": "data-grid-column-types.md",
-        "status": "UPDATED"
+        "href": "grids/data-grid-column-types.md",
+        "status": ""
       },
       {
         "name": "高いパフォーマンス",
-        "href": "data-grid-performance.md",
+        "href": "grids/data-grid-performance.md",
         "status": ""
       },
       {
         "name": "水平方向のスクロール",
-        "href": "data-grid-horizontal-scrolling.md",
+        "href": "grids/data-grid-horizontal-scrolling.md",
         "status": ""
       },
       {
+        "name": "グリッド レイアウトの読み込みと保存",
+        "href": "grids/data-grid-load-save-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "行グループ",
-        "href": "data-grid-row-grouping.md",
+        "href": "grids/data-grid-row-grouping.md",
+        "status": "NEW"
+      },
+      {
+        "name": "行の強調表示",
+        "href": "grids/data-grid-row-highlighting.md",
         "status": ""
       },
       {
         "exclude": ["Blazor", "WebComponents"],
         "name": "行のページング",
-        "href": "data-grid-row-paging.md",
+        "href": "grids/data-grid-row-paging.md",
         "status": ""
       },
       {
         "name": "行のピン固定",
-        "href": "data-grid-row-pinning.md",
+        "href": "grids/data-grid-row-pinning.md",
         "status": ""
       }
     ]
@@ -285,6 +314,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel ユーティリティ",
         "href": "excel-utility.md",
         "status": ""
@@ -292,13 +322,240 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR THE NEW STRUCTURE OF CHARTS",
     "name": "チャート",
-    "header": true
+    "href": "charts/chart-overview.md",
+    "header": true,
+    "status": ""
   },
   {
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
+    "name": "リアルタイム データのバインド",
+    "href": "category-chart-high-frequency.md",
+    "status": ""
+  },
+  {
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
+    "name": "大規模データのバインド",
+    "href": "category-chart-high-volume.md",
+    "status": ""
+  },
+  {
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
+    "name": "複数データ ソースのバインド",
+    "href": "financial-chart-multiple-data.md",
+    "status": ""
+  },
+  {
+    "name": "エリア チャート",
+    "href": "charts/types/area-chart.md",
+    "status": ""
+  },
+  {
+    "name": "棒チャート",
+    "href": "charts/types/bar-chart.md",
+    "status": ""
+  },
+  {
+    "name": "バブル チャート",
+    "href": "charts/types/bubble-chart.md",
+    "status": ""
+  },
+  {
+    "name": "縦棒チャート",
+    "href": "charts/types/column-chart.md",
+    "status": ""
+  },
+  {
+    "name": "複合チャート",
+    "href": "charts/types/composite-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ドーナツ チャート",
+    "href": "charts/types/donut-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ファイナンシャル / 株価チャート",
+    "href": "charts/types/stock-chart.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
+    "name": "ガント チャート",
+    "href": "charts/types/gantt-chart.md",
+    "status": ""
+  },
+  {
+    "name": "折れ線チャート",
+    "href": "charts/types/line-chart.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
+    "name": "ネットワーク チャート",
+    "href": "charts/types/network-chart.md",
+    "status": ""
+  },
+  {
+    "name": "円チャート",
+    "href": "charts/types/pie-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ポイント チャート",
+    "href": "charts/types/point-chart.md",
+    "status": ""
+  },
+  {
+    "name": "極座標チャート",
+    "href": "charts/types/polar-chart.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
+    "name": "ピラミッド チャート",
+    "href": "charts/types/pyramid-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ラジアル チャート",
+    "href": "charts/types/radial-chart.md",
+    "status": ""
+  },
+  {
+    "name": "散布図",
+    "href": "charts/types/scatter-chart.md",
+    "status": ""
+  },
+  {
+    "name": "シェープ チャート",
+    "href": "charts/types/shape-chart.md",
+    "status": ""
+  },
+  {
+    "name": "スプライン チャート",
+    "href": "charts/types/spline-chart.md",
+    "status": ""
+  },
+  {
+    "name": "スパークライン",
+    "href": "charts/types/sparkline-chart.md",
+    "status": ""
+  },
+  {
+    "name": "積層型チャート",
+    "href": "charts/types/stacked-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ステップ チャート",
+    "href": "charts/types/step-chart.md",
+    "status": ""
+  },
+  {
+    "name": "ツリーマップ",
+    "href": "charts/types/treemap-chart.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Blazor"],
+    "name": "チャート API",
+    "href": "charts/chart-api.md",
+    "status": ""
+  },
+  {
+    "name": "チャート機能",
+    "href": "charts/chart-features.md",
+    "status": "",
+    "items": [
+        {
+          "name": "軸グリッド線",
+          "href": "charts/features/chart-axis-gridlines.md",
+          "status": ""
+        },
+        {
+          "name": "軸レイアウト",
+          "href": "charts/features/chart-axis-layouts.md",
+          "status": ""
+        },
+        {
+          "name": "軸オプション",
+          "href": "charts/features/chart-axis-options.md",
+          "status": ""
+        },
+        {
+          "name": "チャート アニメーション",
+          "href": "charts/features/chart-animations.md",
+          "status": ""
+        },
+        {
+          "name": "チャート注釈",
+          "href": "charts/features/chart-annotations.md",
+          "status": ""
+        },
+        {
+          "name": "チャート強調表示",
+          "href": "charts/features/chart-highlighting.md",
+          "status": ""
+        },
+        {
+          "name": "チャート マーカー",
+          "href": "charts/features/chart-markers.md",
+          "status": ""
+        },
+        {
+          "name": "チャート ナビゲーション",
+          "href": "charts/features/chart-navigation.md",
+          "status": ""
+        },
+        {
+          "name": "チャート オーバーレイ",
+          "href": "charts/features/chart-overlays.md",
+          "status": ""
+        },
+        {
+          "name": "チャート パフォーマンス",
+          "href": "charts/features/chart-performance.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Blazor"],
+          "name": "チャートの同期",
+          "href": "charts/features/chart-synchronization.md",
+          "status": ""
+        },
+        {
+          "name": "チャート ツールチップ",
+          "href": "charts/features/chart-tooltips.md",
+          "status": ""
+        },
+        {
+          "name": "チャート トレンドライン",
+          "href": "charts/features/chart-trendlines.md",
+          "status": ""
+        }
+      ]
+  },
+  {
+    "name": "データ ソース",
+    "href": "data-chart-data-sources.md",
+    "exclude": ["React", "WebComponents", "Blazor", "Angular"],
+    "status": ""
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "チャート",
+    "header": true,
+    "exclude": ["Blazor", "Angular","React", "WebComponents"]
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "カテゴリ チャート",
     "href": "category-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "items": [
       {
         "name": "注釈",
@@ -338,9 +595,11 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "データ チャート",
     "href": "data-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
     "items": [
       {
         "name": "軸",
@@ -679,7 +938,7 @@
         "exclude": ["Blazor"],
         "name": "同期",
         "href": "data-chart-synchronization.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "name": "タイトルとサブタイトル",
@@ -717,7 +976,7 @@
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Blazor", "Angular", "React", "WebComponents"],
         "name": "データ ソース",
         "href": "data-chart-data-sources.md",
         "status": ""
@@ -725,9 +984,11 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "ファイナンシャル チャート",
     "href": "financial-chart.md",
     "status": "",
+    "exclude": ["Blazor", "Angular","React", "WebComponents"],
     "items": [
       {
         "name": "リアルタイムにデータをバインド",
@@ -772,18 +1033,22 @@
     ]
   },
   {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
+    "name": "ツリーマップ",
+    "href": "charts/types/treemap-chart.md",
+    "exclude": ["Blazor", "Angular","React", "WebComponents"],
+    "status": ""
+  },
+  {
+    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
     "name": "スパークライン",
-    "href": "sparkline.md",
+    "href": "charts/types/sparkline-chart.md",
+    "exclude": ["Blazor", "Angular","React", "WebComponents"],
     "status": ""
   },
   {
     "name": "マップ",
     "header": true
-  },
-  {
-    "name": "ツリーマップ",
-    "href": "treemap-overview.md",
-    "status": ""
   },
   {
     "name": "マップ",
@@ -829,7 +1094,7 @@
       {
         "name": "Esri 画像の表示",
         "href": "geo-map-display-esri-imagery.md",
-        "status": "UPDATED"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
@@ -845,6 +1110,11 @@
       {
         "name": "コンテンツのナビゲーション",
         "href": "geo-map-navigation.md",
+        "status": ""
+      },
+      {
+        "name": "シリーズの概要",
+        "href": "geo-map-type-series.md",
         "status": ""
       },
       {
@@ -885,19 +1155,24 @@
       {
         "name": "シェープ ファイルの参照",
         "href": "geo-map-shape-files-reference.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "シェープ スタイリング",
         "href": "geo-map-shape-styling.md",
-        "status": "NEW"
+        "status": ""
       },
       {
         "exclude": ["Blazor"],
         "name": "シェープ スタイリング ユーティリティ",
         "href": "geo-map-resources-shape-styling-utility.md",
-        "status": "NEW"
+        "status": ""
+      },
+      {
+        "name": "Esri ユーティリティ",
+        "href": "geo-map-resources-esri.md",
+        "status": ""
       },
       {
         "name": "ワールド コネクション",
@@ -917,12 +1192,10 @@
     ]
   },
   {
-    "exclude": ["Blazor"],
     "name": "フレームワーク",
     "header": true
   },
   {
-    "exclude": ["Blazor"],
     "name": "Excel ライブラリ",
     "href": "excel-library.md",
     "status": "",
@@ -958,6 +1231,7 @@
         "status": ""
       },
       {
+        "exclude": ["Blazor"],
         "name": "Excel ユーティリティ",
         "href": "excel-utility.md",
         "status": ""
@@ -984,14 +1258,101 @@
     "status": ""
   },
   {
-    "exclude": ["Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "データ入力と表示",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "バッジ {ReleaseStatus_WebsInputs}",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "ボタン {ReleaseStatus_WebsInputs}",
+    "href": "inputs/button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "チェックボックス {ReleaseStatus_WebsInputs}",
+    "href": "inputs/checkbox.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "フォーム {ReleaseStatus_WebsInputs}",
+    "href": "inputs/form.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "アイコン {ReleaseStatus_WebsInputs}",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
+    "href": "inputs/icon-button.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "複数列コンボ ボックス",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "入力 {ReleaseStatus_WebsInputs}",
+    "href": "inputs/input.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
+    "href": "inputs/radio.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "スイッチ {ReleaseStatus_WebsInputs}",
+    "href": "inputs/switch.md",
+    "status": "NEW"
+  },
+  {
     "name": "インタラクション",
     "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "リップル {ReleaseStatus_WebsInputs}",
+    "href": "inputs/ripple.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Blazor"],
     "name": "ズーム スライダー",
     "href": "zoomslider-overview.md",
     "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "スケジュール",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "カレンダー {ReleaseStatus_WebCalendar}",
+    "href": "scheduling/calendar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "日付ピッカー",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   }
 ]

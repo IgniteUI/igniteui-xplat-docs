@@ -1,19 +1,22 @@
 ---
-title: $PlatformShort$ Spreadsheet | Data Validation | Infragistics
-_description: Use Infragistics' $PlatformShort$ spreadsheet control to setup built-in data validation rules. View $ProductName$ spreadsheet demos!
+title: $Platform$ Spreadsheet | Data Validation | Infragistics
+_description: Use Infragistics' $Platform$ spreadsheet control to setup built-in data validation rules. View $ProductName$ spreadsheet demos!
 _keywords: Excel Spreadsheet, data validation, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Data Validation
+# $Platform$ Data Validation
 
 This topic explains how to configure and set the built-in data validation rules.
 
-## Demo
+## $Platform$ Data Validation Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-data-validation-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/data-validation"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
+           alt="$Platform$ Data Validation Example"
+           github-src="excel/spreadsheet/data-validation">
+</code-view>
 
 <div class="divider--half"></div>
 

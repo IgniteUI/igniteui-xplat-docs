@@ -1,20 +1,21 @@
 ---
-title: $PlatformShort$ ZoomSlider | Data Visualization Tools | Data Binding | Infragistics
+title: $Platform$ ZoomSlider | Data Visualization Tools | Data Binding | Infragistics
 _description: Use the ZoomSlider within the data chart to easily display a subset of data. It is displayed with two handles representing minimum and maximum values.
+_language: kr
+_keywords: zoom slider, $ProductName$, Infragistics, data chart
 mentionedTypes: ['ZoomSlider, XamDataChart']
 ---
-## Zoom Slider
+
+# Zoom Slider
 The ZoomSlider control provides zooming functionality to range-enabled controls. The ZoomSlider features a horizontal scroll bar, a thumbnail of the whole range, and a resizable zoom-range window. The ZoomSlider cannot work as a standalone control and it acts as an enhancement for range-based controls like the DataChart or CategoryChart.
 
 ## Demo
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="zoomslider-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/zoomslider-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="zoomslider-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"  >
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -39,11 +40,11 @@ When installing the chart package, the core package must also be installed.
 <!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
-The `ZoomSlider` requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
+The `ZoomSlider` requires the following modules:
 
-* ZoomSliderModule
-<!-- end: Blazor -->
-
+```razor
+ZoomSliderModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxZoomSliderModule } from 'igniteui-angular-charts';

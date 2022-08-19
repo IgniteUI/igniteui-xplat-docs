@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | シェイプ スタイリング | 条件付き書式 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの図形シリーズにカスタム スタイルを適用する方法について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $PlatformShort$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling, $PlatformShort$ マップ, カスタム スタイル設定, インフラジスティックス, 条件付き書式, シェイプ スタイリング
+title: $Platform$ マップ | データ可視化ツール | シェイプ スタイリング | 条件付き書式 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップのシェイプ シリーズにカスタム スタイルを適用する方法について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
+_keywords: $Platform$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling, $Platform$ マップ, カスタム スタイル設定, インフラジスティックス, 条件付き書式, シェイプ スタイリング
 mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries']
 _language: ja
 ---
-# $PlatformShort$ 地理シェイプ シリーズのスタイル設定
+# $Platform$ 地理シェイプ シリーズのスタイル設定
 
-このトピックでは、$PlatformShort$ `XamGeographicMap` で `GeographicShapeSeries` にカスタム スタイリングを適用する方法を説明します。
+このトピックでは、$Platform$ `XamGeographicMap` で `GeographicShapeSeries` にカスタム スタイリングを適用する方法を説明します。
 
-## サンプル
+## $Platform$ 地理シェイプ シリーズのスタイル設定の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-shape-styling-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="geo-map-shape-styling-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/map-shape-styling"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling"
+           alt="$Platform$ 地理シェイプ シリーズのスタイル設定の例"
+           github-src="maps/geo-map/map-shape-styling">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -47,7 +46,7 @@ import { IgcShapeDataSource } from 'igniteui-webcomponents-core';
 import { IgcShapefileRecord } from 'igniteui-webcomponents-core';
 ```
 
-次のコード例は、シェイプ スタイリングを設定する 4 つの異なる方法を提供する [シェイプ スタイリング ユーティリティ](geo-map-resources-shape-styling-utility.md) ファイルを使用していることに注意してください。
+次のコード例は、シェイプ スタイリングを設定する 4 つの異なる方法を提供する[シェイプ スタイリング ユーティリティ](geo-map-resources-shape-styling-utility.md) ファイルを使用していることに注意してください。
 * [シェイプ比較スタイリング](#シェイプ比較スタイリング)
 * [シェイプ ランダム スタイリング](#シェイプ-ランダム-スタイリング)
 * [シェイプ範囲スタイリング](#シェイプ範囲スタイリング)

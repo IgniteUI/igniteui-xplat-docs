@@ -1,741 +1,161 @@
-{
-"extraFiles": [
-"igr-financial-chart-module.ts",
-"igr-financial-chart-core-module.ts",
-"igr-financial-chart-default-templates.tsx"
-],
-"types": [
-{
-    "originalName": "FinancialChart",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-chart.ts",
- "mappedName": "IgrFinancialChart"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "leftMargin"}            ],
-           "originalName": "LeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isHorizontalZoomEnabled"}            ],
-           "originalName": "IsHorizontalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "toolbarHeight"}            ],
-           "originalName": "ToolbarHeight"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisIsLogarithmic"}            ],
-           "originalName": "YAxisIsLogarithmic"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisLogarithmBase"}            ],
-           "originalName": "YAxisLogarithmBase"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisInterval"}            ],
-           "originalName": "YAxisInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMinimumValue"}            ],
-           "originalName": "YAxisMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMaximumValue"}            ],
-           "originalName": "YAxisMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisMinorInterval"}            ],
-           "originalName": "YAxisMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisActualMinimum"}            ],
-           "originalName": "YAxisActualMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "yAxisActualMaximum"}            ],
-           "originalName": "YAxisActualMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartVolumeType", "mappedName": "volumeType"}            ],
-           "originalName": "VolumeType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartXAxisMode", "mappedName": "xAxisMode"}            ],
-           "originalName": "XAxisMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartYAxisMode", "mappedName": "yAxisMode"}            ],
-           "originalName": "YAxisMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isToolbarVisible"}            ],
-           "originalName": "IsToolbarVisible"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "chartType"}            ],
-           "originalName": "ChartType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "HorizontalAlignment", "mappedName": "yAxisLabelHorizontalAlignment"}            ],
-           "originalName": "YAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isWindowSyncedToVisibleRange"}            ],
-           "originalName": "IsWindowSyncedToVisibleRange"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrFinancialIndicatorTypeCollection", "mappedName": "indicatorTypes"}            ],
-           "originalName": "IndicatorTypes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrFinancialOverlayTypeCollection", "mappedName": "overlayTypes"}            ],
-           "originalName": "OverlayTypes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "yAxisAbbreviateLargeNumbers"}            ],
-           "originalName": "YAxisAbbreviateLargeNumbers"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "resolution"}            ],
-           "originalName": "Resolution"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "AxisLabelsLocation", "mappedName": "yAxisLabelLocation"}            ],
-           "originalName": "YAxisLabelLocation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "zoomSliderType"}            ],
-           "originalName": "ZoomSliderType"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "negativeBrushes"}            ],
-           "originalName": "NegativeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "negativeOutlines"}            ],
-           "originalName": "NegativeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "overlayBrushes"}            ],
-           "originalName": "OverlayBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "overlayOutlines"}            ],
-           "originalName": "OverlayOutlines"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "volumeOutlines"}            ],
-           "originalName": "VolumeOutlines"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "volumeBrushes"}            ],
-           "originalName": "VolumeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "indicatorNegativeBrushes"}            ],
-           "originalName": "IndicatorNegativeBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string[]", "mappedName": "indicatorBrushes"}            ],
-           "originalName": "IndicatorBrushes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "volumeThickness"}            ],
-           "originalName": "VolumeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "overlayThickness"}            ],
-           "originalName": "OverlayThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorThickness"}            ],
-           "originalName": "IndicatorThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrIndicatorDisplayTypeCollection", "mappedName": "indicatorDisplayTypes"}            ],
-           "originalName": "IndicatorDisplayTypes"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorPeriod"}            ],
-           "originalName": "IndicatorPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorMultiplier"}            ],
-           "originalName": "IndicatorMultiplier"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorSmoothingPeriod"}            ],
-           "originalName": "IndicatorSmoothingPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorShortPeriod"}            ],
-           "originalName": "IndicatorShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorLongPeriod"}            ],
-           "originalName": "IndicatorLongPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "indicatorSignalPeriod"}            ],
-           "originalName": "IndicatorSignalPeriod"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrFinancialChartRangeSelectorOptionCollection", "mappedName": "rangeSelectorOptions"}            ],
-           "originalName": "RangeSelectorOptions"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrCustomIndicatorNameCollection", "mappedName": "customIndicatorNames"}            ],
-           "originalName": "CustomIndicatorNames"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isVerticalZoomEnabled"}            ],
-           "originalName": "IsVerticalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "zoomSliderXAxisMajorStroke"}            ],
-           "originalName": "ZoomSliderXAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "zoomSliderXAxisMajorStrokeThickness"}            ],
-           "originalName": "ZoomSliderXAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isLegendVisible"}            ],
-           "originalName": "IsLegendVisible"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "xAxisMinimumValue"}            ],
-           "originalName": "XAxisMinimumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "Date", "mappedName": "xAxisMaximumValue"}            ],
-           "originalName": "XAxisMaximumValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "provideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "notifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "exportSerializedVisualData"}            ],
-           "originalName": "ExportSerializedVisualData"
-       }   ],
-    "originalBaseTypeName": "XYChart",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartRangeSelectorOption",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartRangeSelectorOption.ts",
- "mappedName": "FinancialChartRangeSelectorOption"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneMonth"}            ],
-           "originalName": "OneMonth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "ThreeMonths"}            ],
-           "originalName": "ThreeMonths"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "SixMonths"}            ],
-           "originalName": "SixMonths"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "YearToDate"}            ],
-           "originalName": "YearToDate"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "OneYear"}            ],
-           "originalName": "OneYear"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartRangeSelectorOption", "mappedName": "All"}            ],
-           "originalName": "All"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartCustomIndicatorArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-financial-chart-custom-indicator-args.ts",
- "mappedName": "IgrFinancialChartCustomIndicatorArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "IgrSeries", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "index"}            ],
-           "originalName": "Index"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartVolumeType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartVolumeType.ts",
- "mappedName": "FinancialChartVolumeType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartVolumeType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartVolumeType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartVolumeType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartVolumeType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartType.ts",
- "mappedName": "FinancialChartType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "Bar"}            ],
-           "originalName": "Bar"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "Candle"}            ],
-           "originalName": "Candle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartXAxisMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartXAxisMode.ts",
- "mappedName": "FinancialChartXAxisMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartXAxisMode", "mappedName": "Ordinal"}            ],
-           "originalName": "Ordinal"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartXAxisMode", "mappedName": "Time"}            ],
-           "originalName": "Time"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartYAxisMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartYAxisMode.ts",
- "mappedName": "FinancialChartYAxisMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartYAxisMode", "mappedName": "Numeric"}            ],
-           "originalName": "Numeric"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartYAxisMode", "mappedName": "PercentChange"}            ],
-           "originalName": "PercentChange"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialChartZoomSliderType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialChartZoomSliderType.ts",
- "mappedName": "FinancialChartZoomSliderType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "None"}            ],
-           "originalName": "None"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Bar"}            ],
-           "originalName": "Bar"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Candle"}            ],
-           "originalName": "Candle"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Column"}            ],
-           "originalName": "Column"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Line"}            ],
-           "originalName": "Line"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialChartZoomSliderType", "mappedName": "Area"}            ],
-           "originalName": "Area"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialOverlayType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialOverlayType.ts",
- "mappedName": "FinancialOverlayType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialOverlayType", "mappedName": "BollingerBands"}            ],
-           "originalName": "BollingerBands"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialOverlayType", "mappedName": "PriceChannel"}            ],
-           "originalName": "PriceChannel"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialIndicatorType",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "FinancialIndicatorType.ts",
- "mappedName": "FinancialIndicatorType"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "AbsoluteVolumeOscillator"}            ],
-           "originalName": "AbsoluteVolumeOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "AccumulationDistribution"}            ],
-           "originalName": "AccumulationDistribution"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "AverageDirectionalIndex"}            ],
-           "originalName": "AverageDirectionalIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "AverageTrueRange"}            ],
-           "originalName": "AverageTrueRange"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "BollingerBandWidth"}            ],
-           "originalName": "BollingerBandWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinOscillator"}            ],
-           "originalName": "ChaikinOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "ChaikinVolatility"}            ],
-           "originalName": "ChaikinVolatility"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "CommodityChannelIndex"}            ],
-           "originalName": "CommodityChannelIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "DetrendedPriceOscillator"}            ],
-           "originalName": "DetrendedPriceOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "EaseOfMovement"}            ],
-           "originalName": "EaseOfMovement"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "FastStochasticOscillator"}            ],
-           "originalName": "FastStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "ForceIndex"}            ],
-           "originalName": "ForceIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "FullStochasticOscillator"}            ],
-           "originalName": "FullStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "MarketFacilitationIndex"}            ],
-           "originalName": "MarketFacilitationIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "MassIndex"}            ],
-           "originalName": "MassIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "MedianPrice"}            ],
-           "originalName": "MedianPrice"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "MoneyFlowIndex"}            ],
-           "originalName": "MoneyFlowIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "MovingAverageConvergenceDivergence"}            ],
-           "originalName": "MovingAverageConvergenceDivergence"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "NegativeVolumeIndex"}            ],
-           "originalName": "NegativeVolumeIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "OnBalanceVolume"}            ],
-           "originalName": "OnBalanceVolume"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "PercentagePriceOscillator"}            ],
-           "originalName": "PercentagePriceOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "PercentageVolumeOscillator"}            ],
-           "originalName": "PercentageVolumeOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "PositiveVolumeIndex"}            ],
-           "originalName": "PositiveVolumeIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "PriceVolumeTrend"}            ],
-           "originalName": "PriceVolumeTrend"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "RateOfChangeAndMomentum"}            ],
-           "originalName": "RateOfChangeAndMomentum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "RelativeStrengthIndex"}            ],
-           "originalName": "RelativeStrengthIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "SlowStochasticOscillator"}            ],
-           "originalName": "SlowStochasticOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "StandardDeviation"}            ],
-           "originalName": "StandardDeviation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "StochRSI"}            ],
-           "originalName": "StochRSI"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "TRIX"}            ],
-           "originalName": "TRIX"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "TypicalPrice"}            ],
-           "originalName": "TypicalPrice"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "UltimateOscillator"}            ],
-           "originalName": "UltimateOscillator"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "WeightedClose"}            ],
-           "originalName": "WeightedClose"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "FinancialIndicatorType", "mappedName": "WilliamsPercentR"}            ],
-           "originalName": "WilliamsPercentR"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles":["igr-financial-chart-module.ts","igr-financial-chart-core-module.ts","igr-financial-chart-default-templates.tsx"],
+  "types":[
+  { "originalName":"FinancialChart",
+    "names":[{"platform":"React","fileName":"igr-financial-chart.ts","mappedName":"IgrFinancialChart"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"leftMargin"}],"originalName":"LeftMargin"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isHorizontalZoomEnabled"}],"originalName":"IsHorizontalZoomEnabled"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"toolbarHeight"}],"originalName":"ToolbarHeight"},
+    { "names":[{"platform":"React","mappedType":"DomainType","mappedName":"domainType"}],"originalName":"DomainType"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"yAxisIsLogarithmic"}],"originalName":"YAxisIsLogarithmic"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisLogarithmBase"}],"originalName":"YAxisLogarithmBase"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisInterval"}],"originalName":"YAxisInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisMinimumValue"}],"originalName":"YAxisMinimumValue"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisMaximumValue"}],"originalName":"YAxisMaximumValue"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisMinorInterval"}],"originalName":"YAxisMinorInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisActualMinimum"}],"originalName":"YAxisActualMinimum"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"yAxisActualMaximum"}],"originalName":"YAxisActualMaximum"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartVolumeType","mappedName":"volumeType"}],"originalName":"VolumeType"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartXAxisMode","mappedName":"xAxisMode"}],"originalName":"XAxisMode"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartYAxisMode","mappedName":"yAxisMode"}],"originalName":"YAxisMode"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isToolbarVisible"}],"originalName":"IsToolbarVisible"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"chartType"}],"originalName":"ChartType"},
+    { "names":[{"platform":"React","mappedType":"HorizontalAlignment","mappedName":"yAxisLabelHorizontalAlignment"}],"originalName":"YAxisLabelHorizontalAlignment"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isWindowSyncedToVisibleRange"}],"originalName":"IsWindowSyncedToVisibleRange"},
+    { "names":[{"platform":"React","mappedType":"IgrFinancialIndicatorTypeCollection","mappedName":"indicatorTypes"}],"originalName":"IndicatorTypes"},
+    { "names":[{"platform":"React","mappedType":"IgrFinancialOverlayTypeCollection","mappedName":"overlayTypes"}],"originalName":"OverlayTypes"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"yAxisAbbreviateLargeNumbers"}],"originalName":"YAxisAbbreviateLargeNumbers"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"zoomSliderType"}],"originalName":"ZoomSliderType"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"negativeBrushes"}],"originalName":"NegativeBrushes"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"negativeOutlines"}],"originalName":"NegativeOutlines"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"overlayBrushes"}],"originalName":"OverlayBrushes"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"overlayOutlines"}],"originalName":"OverlayOutlines"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"volumeOutlines"}],"originalName":"VolumeOutlines"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"volumeBrushes"}],"originalName":"VolumeBrushes"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"indicatorNegativeBrushes"}],"originalName":"IndicatorNegativeBrushes"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"indicatorBrushes"}],"originalName":"IndicatorBrushes"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"volumeThickness"}],"originalName":"VolumeThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"overlayThickness"}],"originalName":"OverlayThickness"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"overlayMultiplier"}],"originalName":"OverlayMultiplier"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorThickness"}],"originalName":"IndicatorThickness"},
+    { "names":[{"platform":"React","mappedType":"IgrIndicatorDisplayTypeCollection","mappedName":"indicatorDisplayTypes"}],"originalName":"IndicatorDisplayTypes"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorPeriod"}],"originalName":"IndicatorPeriod"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorMultiplier"}],"originalName":"IndicatorMultiplier"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorSmoothingPeriod"}],"originalName":"IndicatorSmoothingPeriod"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorShortPeriod"}],"originalName":"IndicatorShortPeriod"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorLongPeriod"}],"originalName":"IndicatorLongPeriod"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"indicatorSignalPeriod"}],"originalName":"IndicatorSignalPeriod"},
+    { "names":[{"platform":"React","mappedType":"IgrFinancialChartRangeSelectorOptionCollection","mappedName":"rangeSelectorOptions"}],"originalName":"RangeSelectorOptions"},
+    { "names":[{"platform":"React","mappedType":"IgrCustomIndicatorNameCollection","mappedName":"customIndicatorNames"}],"originalName":"CustomIndicatorNames"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isVerticalZoomEnabled"}],"originalName":"IsVerticalZoomEnabled"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"zoomSliderXAxisMajorStroke"}],"originalName":"ZoomSliderXAxisMajorStroke"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"zoomSliderXAxisMajorStrokeThickness"}],"originalName":"ZoomSliderXAxisMajorStrokeThickness"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isLegendVisible"}],"originalName":"IsLegendVisible"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"xAxisMinimumValue"}],"originalName":"XAxisMinimumValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"xAxisMaximumValue"}],"originalName":"XAxisMaximumValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"XYChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartRangeSelectorOption","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartRangeSelectorOption.ts","mappedName":"FinancialChartRangeSelectorOption"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"OneMonth"}],"originalName":"OneMonth"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"ThreeMonths"}],"originalName":"ThreeMonths"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"SixMonths"}],"originalName":"SixMonths"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"YearToDate"}],"originalName":"YearToDate"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"OneYear"}],"originalName":"OneYear"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartRangeSelectorOption","mappedName":"All"}],"originalName":"All"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartCustomIndicatorArgs",
+    "names":[{"platform":"React","fileName":"igr-financial-chart-custom-indicator-args.ts","mappedName":"IgrFinancialChartCustomIndicatorArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartVolumeType","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartVolumeType.ts","mappedName":"FinancialChartVolumeType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartVolumeType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartVolumeType","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartVolumeType","mappedName":"Line"}],"originalName":"Line"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartVolumeType","mappedName":"Area"}],"originalName":"Area"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartType","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartType.ts","mappedName":"FinancialChartType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"Bar"}],"originalName":"Bar"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"Candle"}],"originalName":"Candle"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartType","mappedName":"Line"}],"originalName":"Line"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartXAxisMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartXAxisMode.ts","mappedName":"FinancialChartXAxisMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartXAxisMode","mappedName":"Ordinal"}],"originalName":"Ordinal"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartXAxisMode","mappedName":"Time"}],"originalName":"Time"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartYAxisMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartYAxisMode.ts","mappedName":"FinancialChartYAxisMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartYAxisMode","mappedName":"Numeric"}],"originalName":"Numeric"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartYAxisMode","mappedName":"PercentChange"}],"originalName":"PercentChange"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialChartZoomSliderType","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialChartZoomSliderType.ts","mappedName":"FinancialChartZoomSliderType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"None"}],"originalName":"None"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Bar"}],"originalName":"Bar"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Candle"}],"originalName":"Candle"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Line"}],"originalName":"Line"},
+    { "names":[{"platform":"React","mappedType":"FinancialChartZoomSliderType","mappedName":"Area"}],"originalName":"Area"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialOverlayType","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialOverlayType.ts","mappedName":"FinancialOverlayType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialOverlayType","mappedName":"BollingerBands"}],"originalName":"BollingerBands"},
+    { "names":[{"platform":"React","mappedType":"FinancialOverlayType","mappedName":"PriceChannel"}],"originalName":"PriceChannel"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialIndicatorType","isEnum":true,
+    "names":[{"platform":"React","fileName":"FinancialIndicatorType.ts","mappedName":"FinancialIndicatorType"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"AbsoluteVolumeOscillator"}],"originalName":"AbsoluteVolumeOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"AccumulationDistribution"}],"originalName":"AccumulationDistribution"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"AverageDirectionalIndex"}],"originalName":"AverageDirectionalIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"AverageTrueRange"}],"originalName":"AverageTrueRange"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"BollingerBandWidth"}],"originalName":"BollingerBandWidth"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"ChaikinOscillator"}],"originalName":"ChaikinOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"ChaikinVolatility"}],"originalName":"ChaikinVolatility"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"CommodityChannelIndex"}],"originalName":"CommodityChannelIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"DetrendedPriceOscillator"}],"originalName":"DetrendedPriceOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"EaseOfMovement"}],"originalName":"EaseOfMovement"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"FastStochasticOscillator"}],"originalName":"FastStochasticOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"ForceIndex"}],"originalName":"ForceIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"FullStochasticOscillator"}],"originalName":"FullStochasticOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"MarketFacilitationIndex"}],"originalName":"MarketFacilitationIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"MassIndex"}],"originalName":"MassIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"MedianPrice"}],"originalName":"MedianPrice"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"MoneyFlowIndex"}],"originalName":"MoneyFlowIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"MovingAverageConvergenceDivergence"}],"originalName":"MovingAverageConvergenceDivergence"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"NegativeVolumeIndex"}],"originalName":"NegativeVolumeIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"OnBalanceVolume"}],"originalName":"OnBalanceVolume"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"PercentagePriceOscillator"}],"originalName":"PercentagePriceOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"PercentageVolumeOscillator"}],"originalName":"PercentageVolumeOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"PositiveVolumeIndex"}],"originalName":"PositiveVolumeIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"PriceVolumeTrend"}],"originalName":"PriceVolumeTrend"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"RateOfChangeAndMomentum"}],"originalName":"RateOfChangeAndMomentum"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"RelativeStrengthIndex"}],"originalName":"RelativeStrengthIndex"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"SlowStochasticOscillator"}],"originalName":"SlowStochasticOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"StochRSI"}],"originalName":"StochRSI"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"TRIX"}],"originalName":"TRIX"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"TypicalPrice"}],"originalName":"TypicalPrice"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"UltimateOscillator"}],"originalName":"UltimateOscillator"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"WeightedClose"}],"originalName":"WeightedClose"},
+    { "names":[{"platform":"React","mappedType":"FinancialIndicatorType","mappedName":"WilliamsPercentR"}],"originalName":"WilliamsPercentR"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

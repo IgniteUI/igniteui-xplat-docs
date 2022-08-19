@@ -1,15 +1,17 @@
 ---
-title: $PlatformShort$ Data Visualization Tools | Infragistics
-_description: The $ProductName$ is a complete set of $PlatformShort$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
-_keywords: $ProductName$, Infragistics, Getting started, IG, Install $PlatformShort$
+title: $Platform$ Data Visualization Tools | Infragistics
+_description: The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
+_keywords: $ProductName$, Infragistics, Getting started, IG, Install $Platform$
+_language: kr
 ---
-# $PlatformShort$ Getting Started With $ProductName$
 
-The $ProductName$ is a complete set of $PlatformShort$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
+# $Platform$ Getting Started With $ProductName$
+
+The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
 ## Setting Up Computer
 
-Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $PlatformShort$ app, including $ProductName$, and to build $PlatformShort$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $PlatformShort$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $PlatformShort$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
+Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $Platform$ app, including $ProductName$, and to build $Platform$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $Platform$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $Platform$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
@@ -75,7 +77,7 @@ After executing those simple commands, your new project will be built and served
 
 ## Updating Existing App
 
-What if you want to use $ProductName$ in an existing $PlatformShort$ CLI project (one that you have from before)? We have you covered! All you have to do is execute these commands:
+What if you want to use $ProductName$ in an existing $Platform$ CLI project (one that you have from before)? We have you covered! All you have to do is execute these commands:
 
 
 - **npm install --save {PackageCharts} {PackageCore}**
@@ -101,10 +103,10 @@ This will automatically install packages for $ProductName$, along with all of th
 
 First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
-<!-- Blazor -->
-* GeographicMapModule
-* DataChartInteractivityModule
-<!-- end: Blazor -->
+```razor
+GeographicMapModule.Register(IgniteUIBlazor);
+DataChartInteractivityModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgrGeographicMap } from 'igniteui-react-maps';
