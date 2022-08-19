@@ -1,152 +1,251 @@
-{
-"extraFiles": [
-"igx-expansion-panel-module.ts"
-],
-"types": [
-{
-    "originalName": "OnExpandedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-on-expanded-event-args.ts",
- "mappedName": "IgxOnExpandedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnCollapsedEventArgs",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-on-collapsed-event-args.ts",
- "mappedName": "IgxOnCollapsedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "ExpansionPanel",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-expansion-panel-component.ts",
- "mappedName": "IgxExpansionPanelComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "caption"}            ],
-           "originalName": "Caption"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
-           "originalName": "CaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
-           "originalName": "ActualCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
-           "originalName": "CaptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
-           "originalName": "CaptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "description"}            ],
-           "originalName": "Description"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
-           "originalName": "DescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
-           "originalName": "ActualDescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
-           "originalName": "DescriptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
-           "originalName": "DescriptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "expanded"}            ],
-           "originalName": "Expanded"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
-           "originalName": "HeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
-           "originalName": "ActualHeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
-           "originalName": "HeaderCollapsedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
-           "originalName": "HeaderExpandedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "collapse"}            ],
-           "originalName": "Collapse"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "expand"}            ],
-           "originalName": "Expand"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "toggle"}            ],
-           "originalName": "Toggle"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-}
-]
-}
+{"extraFiles":["igx-x-expansion-panel-module.ts","igx-popup-module.ts","igx-property-editor-panel-module.ts","igx-list-panel-module.ts","igx-tool-panel-module.ts","igx-toolbar-module.ts"],
+  "types":[
+  { "originalName":"PopupAlignment","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"PopupAlignment.ts","mappedName":"PopupAlignment"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"PopupAlignment","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"PopupAlignment","mappedName":"Near"}],"originalName":"Near"},
+    { "names":[{"platform":"Angular","mappedType":"PopupAlignment","mappedName":"Far"}],"originalName":"Far"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PopupDirection","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"PopupDirection.ts","mappedName":"PopupDirection"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"PopupDirection","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"Angular","mappedType":"PopupDirection","mappedName":"Down"}],"originalName":"Down"},
+    { "names":[{"platform":"Angular","mappedType":"PopupDirection","mappedName":"Up"}],"originalName":"Up"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnExpandedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-on-expanded-event-args.ts","mappedName":"IgxOnExpandedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnCollapsedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-on-collapsed-event-args.ts","mappedName":"IgxOnCollapsedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnPopupEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-on-popup-event-args.ts","mappedName":"IgxOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnClosedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-on-closed-event-args.ts","mappedName":"IgxOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"Toolbar",
+    "names":[{"platform":"Angular","fileName":"igx-toolbar-component.ts","mappedName":"IgxToolbarComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxToolActionCollection","mappedName":"actualActions"}],"originalName":"ActualActions"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"ToolbarOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolPanel",
+    "names":[{"platform":"Angular","fileName":"igx-tool-panel-component.ts","mappedName":"IgxToolPanelComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"ToolPanelOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolAction",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-component.ts","dynamicModuleName":"igx-tool-action-dynamic-module.ts","moduleName":"igx-tool-action-module.ts","mappedName":"IgxToolActionComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"id"}],"originalName":"Id"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"parentId"}],"originalName":"ParentId"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"commandArgument"}],"originalName":"CommandArgument"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"commandArgumentValue"}],"originalName":"CommandArgumentValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"paddingLeft"}],"originalName":"PaddingLeft"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"paddingRight"}],"originalName":"PaddingRight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"paddingBottom"}],"originalName":"PaddingBottom"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"paddingTop"}],"originalName":"PaddingTop"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"iconName"}],"originalName":"IconName"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"iconCollectionName"}],"originalName":"IconCollectionName"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommand",
+    "names":[{"platform":"Angular","fileName":"igx-tool-command.ts","mappedName":"IgxToolCommand"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"Angular","mappedType":"IgxToolCommandArgumentCollection","mappedName":"argumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommandArgument",
+    "names":[{"platform":"Angular","fileName":"igx-tool-command-argument.ts","mappedName":"IgxToolCommandArgument"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"argumentName"}],"originalName":"ArgumentName"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommandEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-tool-command-event-args.ts","mappedName":"IgxToolCommandEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxToolCommand","mappedName":"command"}],"originalName":"Command"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolPanelContentRefreshedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-tool-panel-content-refreshed-event-args.ts","mappedName":"IgxToolPanelContentRefreshedEventArgs"}],"members":[],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionPerformedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-performed-event-args.ts","mappedName":"IgxToolActionPerformedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isAggregate"}],"originalName":"IsAggregate"},
+    { "names":[{"platform":"Angular","mappedType":"IgxToolActionEventDetail","mappedName":"detail"}],"originalName":"Detail"},
+    { "names":[{"platform":"Angular","mappedType":"IgxToolActionEventDetailCollection","mappedName":"detailCollection"}],"originalName":"DetailCollection"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionEventDetail",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-event-detail.ts","mappedName":"IgxToolActionEventDetail"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxToolActionComponent","mappedName":"action"}],"originalName":"Action"},
+    { "names":[{"platform":"Angular","mappedType":"ToolActionType","mappedName":"actionType"}],"originalName":"ActionType"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isModified"}],"originalName":"IsModified"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"boolValue"}],"originalName":"BoolValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"numberValue"}],"originalName":"NumberValue"},
+    { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"dateTimeValue"}],"originalName":"DateTimeValue"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"untypedValue"}],"originalName":"UntypedValue"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"CheckboxToolAction",
+    "names":[{"platform":"Angular","fileName":"igx-checkbox-tool-action-component.ts","dynamicModuleName":"igx-checkbox-tool-action-dynamic-module.ts","moduleName":"igx-checkbox-tool-action-module.ts","mappedName":"IgxCheckboxToolActionComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionGroupHeader",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-group-header-component.ts","dynamicModuleName":"igx-tool-action-group-header-dynamic-module.ts","moduleName":"igx-tool-action-group-header-module.ts","mappedName":"IgxToolActionGroupHeaderComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionSeparator",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-separator-component.ts","dynamicModuleName":"igx-tool-action-separator-dynamic-module.ts","moduleName":"igx-tool-action-separator-module.ts","mappedName":"IgxToolActionSeparatorComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionCheckbox",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-checkbox-component.ts","dynamicModuleName":"igx-tool-action-checkbox-dynamic-module.ts","moduleName":"igx-tool-action-checkbox-module.ts","mappedName":"IgxToolActionCheckboxComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionIconButton",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-icon-button-component.ts","dynamicModuleName":"igx-tool-action-icon-button-dynamic-module.ts","moduleName":"igx-tool-action-icon-button-module.ts","mappedName":"IgxToolActionIconButtonComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionMenuAction",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-menu-action-component.ts","mappedName":"IgxToolActionMenuActionComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxToolActionCollection","mappedName":"actions"}],"originalName":"Actions"}],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionIconMenu",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-icon-menu-component.ts","dynamicModuleName":"igx-tool-action-icon-menu-dynamic-module.ts","moduleName":"igx-tool-action-icon-menu-module.ts","mappedName":"IgxToolActionIconMenuComponent"}],"members":[],"originalBaseTypeName":"ToolActionMenuAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionNumberInput",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-number-input-component.ts","dynamicModuleName":"igx-tool-action-number-input-dynamic-module.ts","moduleName":"igx-tool-action-number-input-module.ts","mappedName":"IgxToolActionNumberInputComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"Popup",
+    "names":[{"platform":"Angular","fileName":"igx-popup-component.ts","mappedName":"IgxPopupComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"animationDuration"}],"originalName":"AnimationDuration"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"animationEnabled"}],"originalName":"AnimationEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"elevation"}],"originalName":"Elevation"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualElevation"}],"originalName":"ActualElevation"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isShown"}],"originalName":"IsShown"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualUmbraShadowColor"}],"originalName":"ActualUmbraShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualPenumbraShadowColor"}],"originalName":"ActualPenumbraShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualAmbientShadowColor"}],"originalName":"ActualAmbientShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"background"}],"originalName":"Background"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"close"}],"originalName":"Close"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"showRelativeToExclusionRect"}],"originalName":"ShowRelativeToExclusionRect"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ExpansionPanel",
+    "names":[{"platform":"Angular","fileName":"igx-x-expansion-panel-component.ts","mappedName":"IgxXExpansionPanelComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"caption"}],"originalName":"Caption"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"captionTextColor"}],"originalName":"CaptionTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualCaptionTextColor"}],"originalName":"ActualCaptionTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"captionCollapsedTextColor"}],"originalName":"CaptionCollapsedTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"captionExpandedTextColor"}],"originalName":"CaptionExpandedTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"description"}],"originalName":"Description"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionTextColor"}],"originalName":"DescriptionTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualDescriptionTextColor"}],"originalName":"ActualDescriptionTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionCollapsedTextColor"}],"originalName":"DescriptionCollapsedTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionExpandedTextColor"}],"originalName":"DescriptionExpandedTextColor"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"elevation"}],"originalName":"Elevation"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualElevation"}],"originalName":"ActualElevation"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"expanded"}],"originalName":"Expanded"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerBackgroundColor"}],"originalName":"HeaderBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualHeaderBackgroundColor"}],"originalName":"ActualHeaderBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerCollapsedBackgroundColor"}],"originalName":"HeaderCollapsedBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"headerExpandedBackgroundColor"}],"originalName":"HeaderExpandedBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualUmbraShadowColor"}],"originalName":"ActualUmbraShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualPenumbraShadowColor"}],"originalName":"ActualPenumbraShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualAmbientShadowColor"}],"originalName":"ActualAmbientShadowColor"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"collapse"}],"originalName":"Collapse"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"expand"}],"originalName":"Expand"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toggle"}],"originalName":"Toggle"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanel",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-component.ts","mappedName":"IgxListPanelComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualRowHeight"}],"originalName":"ActualRowHeight"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasUnevenSizes"}],"originalName":"HasUnevenSizes"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"ListPanelOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomRowHeightEnabled"}],"originalName":"IsCustomRowHeightEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getLastVisibleIndex"}],"originalName":"GetLastVisibleIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getFirstVisibleIndex"}],"originalName":"GetFirstVisibleIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"invalidateVisibleItems"}],"originalName":"InvalidateVisibleItems"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"dataIndexOfItem"}],"originalName":"DataIndexOfItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"dataIndexOfPrimaryKey"}],"originalName":"DataIndexOfPrimaryKey"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelContentRefreshedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-content-refreshed-event-args.ts","mappedName":"IgxListPanelContentRefreshedEventArgs"}],"members":[],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateHeightRequestedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-template-height-requested-event-args.ts","mappedName":"IgxListPanelTemplateHeightRequestedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"dataItem"}],"originalName":"DataItem"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"height"}],"originalName":"Height"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateWidthRequestedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-template-width-requested-event-args.ts","mappedName":"IgxListPanelTemplateWidthRequestedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"dataItem"}],"originalName":"DataItem"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"width"}],"originalName":"Width"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateItemUpdatingEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-template-item-updating-event-args.ts","mappedName":"IgxListPanelTemplateItemUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxListPanelItemModel","mappedName":"model"}],"originalName":"Model"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelItemModel",
+    "names":[{"platform":"Angular","fileName":"igx-list-panel-item-model.ts","mappedName":"IgxListPanelItemModel"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"rowObject"}],"originalName":"RowObject"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isDirty"}],"originalName":"IsDirty"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPanel",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-panel-component.ts","mappedName":"IgxPropertyEditorPanelComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxPropertyEditorPropertyDescriptionCollection","mappedName":"actualDataSource"}],"originalName":"ActualProperties"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualRowHeight"}],"originalName":"ActualRowHeight"},
+    { "names":[{"platform":"Angular","mappedType":"TypeDescriptionContext","mappedName":"actualDescriptionContext"}],"originalName":"ActualDescriptionContext"},
+    { "names":[{"platform":"Angular","mappedType":"TypeDescriptionContext","mappedName":"descriptionContext"}],"originalName":"DescriptionContext"},
+    { "names":[{"platform":"Angular","mappedType":"ComponentRenderer","mappedName":"componentRenderer"}],"originalName":"ComponentRenderer"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"target"}],"originalName":"Target"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isHorizontal"}],"originalName":"IsHorizontal"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isWrappingEnabled"}],"originalName":"IsWrappingEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isIndirectModeEnabled"}],"originalName":"IsIndirectModeEnabled"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorDataSource",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-data-source.ts","mappedName":"IgxPropertyEditorDataSource"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"Angular","mappedType":"TypeDescriptionContext","mappedName":"context"}],"originalName":"Context"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescription",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-component.ts","dynamicModuleName":"igx-property-editor-property-description-dynamic-module.ts","moduleName":"igx-property-editor-property-description-module.ts","mappedName":"IgxPropertyEditorPropertyDescriptionComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyPath"}],"originalName":"PropertyPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
+    { "names":[{"platform":"Angular","mappedType":"PropertyEditorValueType","mappedName":"valueType"}],"originalName":"ValueType"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyDescriptionType"}],"originalName":"PropertyDescriptionType"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldOverrideDefaultEditor"}],"originalName":"ShouldOverrideDefaultEditor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"elementDescriptionType"}],"originalName":"ElementDescriptionType"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"dropDownNames"}],"originalName":"DropDownNames"},
+    { "names":[{"platform":"Angular","mappedType":"string[]","mappedName":"dropDownValues"}],"originalName":"DropDownValues"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"primitiveValue"}],"originalName":"PrimitiveValue"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"min"}],"originalName":"Min"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"editorWidth"}],"originalName":"EditorWidth"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"labelWidth"}],"originalName":"LabelWidth"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"max"}],"originalName":"Max"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"step"}],"originalName":"Step"},
+    { "names":[{"platform":"Angular","mappedType":"IgxPropertyEditorDescriptionObject","mappedName":"complexValue"}],"originalName":"ComplexValue"},
+    { "names":[{"platform":"Angular","mappedType":"IgxPropertyEditorDescriptionObjectCollection","mappedName":"complexValues"}],"originalName":"ComplexValues"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionButtonClickEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-button-click-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionButtonClickEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionChangedEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-changed-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-property-description-target-property-updating-event-args.ts","mappedName":"IgxPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"target"}],"originalName":"Target"},
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"propertyPath"}],"originalName":"PropertyPath"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorDescriptionObject",
+    "names":[{"platform":"Angular","fileName":"igx-property-editor-description-object.ts","mappedName":"IgxPropertyEditorDescriptionObject"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"Angular","mappedType":"IgxPropertyEditorPropertyDescriptionCollection","mappedName":"properties"}],"originalName":"Properties"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"}]}

@@ -1,183 +1,41 @@
-{
-"types": [
-{
-    "originalName": "CategoryTransitionInMode",
-    "isEnum": true,
-   "names": [
-        { "platform": "React",     "fileName": "CategoryTransitionInMode.ts",
- "mappedName": "CategoryTransitionInMode"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "Auto"}            ],
-           "originalName": "Auto"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "FromZero"}            ],
-           "originalName": "FromZero"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromLeft"}            ],
-           "originalName": "SweepFromLeft"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromRight"}            ],
-           "originalName": "SweepFromRight"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromTop"}            ],
-           "originalName": "SweepFromTop"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromBottom"}            ],
-           "originalName": "SweepFromBottom"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromCenter"}            ],
-           "originalName": "SweepFromCenter"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromLeft"}            ],
-           "originalName": "AccordionFromLeft"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromRight"}            ],
-           "originalName": "AccordionFromRight"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromTop"}            ],
-           "originalName": "AccordionFromTop"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromBottom"}            ],
-           "originalName": "AccordionFromBottom"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "Expand"}            ],
-           "originalName": "Expand"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromCategoryAxisMinimum"}            ],
-           "originalName": "SweepFromCategoryAxisMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromCategoryAxisMaximum"}            ],
-           "originalName": "SweepFromCategoryAxisMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromValueAxisMinimum"}            ],
-           "originalName": "SweepFromValueAxisMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "SweepFromValueAxisMaximum"}            ],
-           "originalName": "SweepFromValueAxisMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromCategoryAxisMinimum"}            ],
-           "originalName": "AccordionFromCategoryAxisMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromCategoryAxisMaximum"}            ],
-           "originalName": "AccordionFromCategoryAxisMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromValueAxisMinimum"}            ],
-           "originalName": "AccordionFromValueAxisMinimum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "AccordionFromValueAxisMaximum"}            ],
-           "originalName": "AccordionFromValueAxisMaximum"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CategorySeries",
-   "names": [
-        { "platform": "React",     "fileName": "igr-category-series.ts",
- "mappedName": "IgrCategorySeries"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCategory"}            ],
-           "originalName": "IsCategory"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomCategoryStyleAllowed"}            ],
-           "originalName": "IsCustomCategoryStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isCustomCategoryMarkerStyleAllowed"}            ],
-           "originalName": "IsCustomCategoryMarkerStyleAllowed"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "useHighMarkerFidelity"}            ],
-           "originalName": "UseHighMarkerFidelity"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "CategoryTransitionInMode", "mappedName": "transitionInMode"}            ],
-           "originalName": "TransitionInMode"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "isTransitionInEnabled"}            ],
-           "originalName": "IsTransitionInEnabled"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
-           "originalName": "GetOffsetValue"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
-           "originalName": "GetCategoryWidth"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       }   ],
-    "originalBaseTypeName": "MarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"CategoryTransitionInMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"CategoryTransitionInMode.ts","mappedName":"CategoryTransitionInMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"FromZero"}],"originalName":"FromZero"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromLeft"}],"originalName":"SweepFromLeft"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromRight"}],"originalName":"SweepFromRight"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromTop"}],"originalName":"SweepFromTop"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromBottom"}],"originalName":"SweepFromBottom"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromCenter"}],"originalName":"SweepFromCenter"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromLeft"}],"originalName":"AccordionFromLeft"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromRight"}],"originalName":"AccordionFromRight"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromTop"}],"originalName":"AccordionFromTop"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromBottom"}],"originalName":"AccordionFromBottom"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"Expand"}],"originalName":"Expand"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromCategoryAxisMinimum"}],"originalName":"SweepFromCategoryAxisMinimum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromCategoryAxisMaximum"}],"originalName":"SweepFromCategoryAxisMaximum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromValueAxisMinimum"}],"originalName":"SweepFromValueAxisMinimum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"SweepFromValueAxisMaximum"}],"originalName":"SweepFromValueAxisMaximum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromCategoryAxisMinimum"}],"originalName":"AccordionFromCategoryAxisMinimum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromCategoryAxisMaximum"}],"originalName":"AccordionFromCategoryAxisMaximum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMinimum"}],"originalName":"AccordionFromValueAxisMinimum"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMaximum"}],"originalName":"AccordionFromValueAxisMaximum"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CategorySeries",
+    "names":[{"platform":"React","fileName":"igr-category-series.ts","mappedName":"IgrCategorySeries"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hasValueAxis"}],"originalName":"HasValueAxis"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isValueAxisInverted"}],"originalName":"IsValueAxisInverted"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCategory"}],"originalName":"IsCategory"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomCategoryStyleAllowed"}],"originalName":"IsCustomCategoryStyleAllowed"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomCategoryMarkerStyleAllowed"}],"originalName":"IsCustomCategoryMarkerStyleAllowed"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useHighMarkerFidelity"}],"originalName":"UseHighMarkerFidelity"},
+    { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"transitionInMode"}],"originalName":"TransitionInMode"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isTransitionInEnabled"}],"originalName":"IsTransitionInEnabled"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

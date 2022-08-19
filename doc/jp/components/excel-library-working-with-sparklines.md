@@ -1,21 +1,23 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | スパークラインの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリのスパークライン チャートを使用して、ワークシートのセル領域全体のデータ トレンドを視覚化します。$ProductName$ Excel エンジン チュートリアルを是非お試しください!
+title: $Platform$ Excel ライブラリ | スパークラインの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリのスパークライン チャートを使用して、ワークシートのセル領域全体のデータ トレンドを視覚化します。$ProductName$ Excel エンジン チュートリアルを是非お試しください!
 _keywords: Excel library, sparkline chart, $ProductName$, Infragistics, Excel ライブラリ, スパークライン チャート, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $PlatformShort$ スパークラインを使用した作業
+# $Platform$ スパークラインを使用した作業
 
-Infragistics $PlatformShort$ Excel Library は、Excel ワークシートにスパークラインを追加する機能があります。これらを使用して、ワークシートのデータ セルの領域全体のデータの傾向を簡単に視覚的に表現することができます。たとえば、特定のセル領域の Excel データを単純な縦棒チャートまたは折れ線チャートとして視覚化したい場合は、この機能を使用すると役立ちます。
+Infragistics $Platform$ Excel Library は、Excel ワークシートにスパークラインを追加する機能があります。これらを使用して、ワークシートのデータ セルの領域全体のデータの傾向を簡単に視覚的に表現することができます。たとえば、特定のセル領域の Excel データを単純な縦棒チャートまたは折れ線チャートとして視覚化したい場合は、この機能を使用すると役立ちます。
 
-## サンプル
+## $Platform$ スパークラインを使用した作業の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/working-with-sparklines"></sample-button>
 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines"
+           alt="$Platform$ スパークラインを使用した作業の例"
+           github-src="excel/excel-library/working-with-sparklines">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -35,5 +37,17 @@ var sheet2 = workbook.worksheets().add("Data");
 sheet1.sparklineGroups().add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
 sheet1.sparklineGroups().add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 workbook.save(workbook, "Sparklines.xlsx");
-
 ```
+
+```razor
+var workbook = new Workbook();
+var sheet1 = workbook.Sheets.Add("Sparklines", SheetType.Worksheet) as Worksheet;
+var sheet2 = workbook.Sheets.Add("Data", SheetType.Worksheet) as Worksheet;
+
+sheet1.SparklineGroups.Add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11");
+sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
+```
+
+## API メンバー
+
+ - `Workbook`

@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter proportional series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布図比例シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ マップ | データ可視化ツール | 散布図比例シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布図比例シリーズを使用して、アプリケーション内のデータで指定された地理的な地点のマーカーをプロットします。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics, $Platform$ マップ, 散布図比例シリーズ, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $PlatformShort$ 散布図比例シリーズの使用
+# $Platform$ 地理バブル マップ
 
-アプリケーション内のデータで指定された地理的な地点のマーカーをプロットするには、$PlatformShort$ マップコンポーネントの `GeographicProportionalSymbolSeries` を使用します。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
+$Platform$ マップ コンポーネントでは、`GeographicProportionalSymbolSeries` を使用して、アプリケーションのデータで指定された地理的位置にバブルまたは相対マーカーをプロットできます。このマップ シリーズは、百貨店、倉庫、オフィスなど、特定のビジネス ケースに応じたポイントを強調表示する場合に役立ちます。また、動的な車両追跡のためにフリート管理システムまたは GPS システムでこの地図シリーズを使用することができます。
 
-## サンプル
+## $Platform$ 地理バブル マップの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-bubble-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-bubble-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-bubble-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           alt="$Platform$ マップ | データ可視化ツール | 散布図比例"
+           github-src="maps/geo-map/type-scatter-bubble-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -147,37 +146,37 @@ export class MapTypeScatterBubbleSeriesComponent implements AfterViewInit {
     }
 
     public ngAfterViewInit(): void {
-		const sds = new IgxShapeDataSource();
-		sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
-		sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
-		sds.dataBind();
-		sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
-	}
+    const sds = new IgxShapeDataSource();
+    sds.shapefileSource = "assets/Shapes/WorldTemperatures.shp";
+    sds.databaseSource  = "assets/Shapes/WorldTemperatures.dbf";
+    sds.dataBind();
+    sds.importCompleted.subscribe(() => this.onDataLoaded(sds, ""));
+}
 
     public onDataLoaded(sds: IgxShapeDataSource, e: any) {
-		const shapeRecords = sds.getPointData();
-		console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
+    const shapeRecords = sds.getPointData();
+    console.log("loaded contour shapes: " + shapeRecords.length + " from /Shapes/WorldTemperatures.shp");
 
-		const contourPoints: any[] = [];
-		for (const record of shapeRecords) {
-			const temp = record.fieldValues.Contour;
-			// using only major contours (every 10th degrees Celsius)
-			if (temp % 10 === 0 && temp >= 0) {
-				for (const shapes of record.points) {
-					 for (let i = 0; i < shapes.length; i++) {
-						if (i % 5 === 0) {
-							const p = shapes[i];
-							const item = { lon: p.x, lat: p.y, value: temp};
-							contourPoints.push(item);
-						}
-					 }
-				}
-			}
-		}
+    const contourPoints: any[] = [];
+    for (const record of shapeRecords) {
+        const temp = record.fieldValues.Contour;
+        // using only major contours (every 10th degrees Celsius)
+        if (temp % 10 === 0 && temp >= 0) {
+            for (const shapes of record.points) {
+                 for (let i = 0; i < shapes.length; i++) {
+                    if (i % 5 === 0) {
+                        const p = shapes[i];
+                        const item = { lon: p.x, lat: p.y, value: temp};
+                        contourPoints.push(item);
+                    }
+                 }
+            }
+        }
+    }
 
-		console.log("loaded contour points: " + contourPoints.length);
-		this.addSeriesWith(WorldLocations.getAll());
-	}
+    console.log("loaded contour points: " + contourPoints.length);
+    this.addSeriesWith(WorldLocations.getAll());
+}
 
     public addSeriesWith(locations: any[]) {
         const sizeScale = new IgxSizeScaleComponent();
@@ -266,8 +265,8 @@ addSeriesWith(locations: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicProportionalSymbolSeries DataSource="WorldCities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
         MarkerType="MarkerType.Circle"
         RadiusScale="SeriesSizeScale"
         FillScale="ColorScale"
@@ -276,7 +275,7 @@ addSeriesWith(locations: any[])
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerOutline="rgba(0,0,0,0.3)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -286,7 +285,7 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.WorldCities = WorldLocations.GetAll();
 
@@ -305,3 +304,12 @@ addSeriesWith(locations: any[])
     }
 }
 ```
+
+## API メンバー
+
+ - `GeographicProportionalSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `RadiusMemberPath`
+ - `RadiusScale`

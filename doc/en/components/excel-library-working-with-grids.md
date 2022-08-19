@@ -1,20 +1,22 @@
 ---
-title: $PlatformShort$ Excel Library| Data Spreadsheet | Infragistics
+title: $Platform$ Excel Library| Data Spreadsheet | Infragistics
 _description: Use the Excel Library to work with spreadsheet data using Microsoft Excel features. Easily transfer data from excel to your application.
 _keywords: Excel library, $ProductName$, Infragistics
 mentionedTypes: ['Workbook']
 ---
-# $PlatformShort$ Working with Grids
+# $Platform$ Working with Grids
 
 TODO
 
-## Demo
+## $Platform$ Working with Grids Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/working-with-grids"></sample-button>
 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids"
+           alt="$Platform$ Working with Grids Example"
+           github-src="excel/excel-library/working-with-grids">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -26,3 +28,7 @@ The following code demonstrates how to use ... TODO
 TODO
 
 ```
+
+ ## API Members
+
+ - `Workbook`

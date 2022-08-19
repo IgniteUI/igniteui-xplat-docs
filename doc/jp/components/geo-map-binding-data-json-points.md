@@ -1,24 +1,24 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | JSON ファイルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $PlatformShort$ map, JSON files, $ProductName$, Infragistics, data binding, $PlatformShort$ マップ, JSON ファイル, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ マップ | データ可視化ツール | JSON ファイルのバインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
+_keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding, $Platform$ マップ, JSON ファイル, データ バインディング, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'Series']
+namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $PlatformShort$ JSON ファイルを地理的な場所にバインド
+# $Platform$ JSON ファイルを地理的な場所にバインド
 
 $ProductName$ Map マップは、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、JavaScript Object Notation (JSON) ファイルから地理的位置をロードできます。
 
-## サンプル
+## $Platform$ JSON ファイルを地理的な場所にバインドの例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-json-points-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-json-points-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-data-json-points"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
+           alt="$Platform$ JSON ファイルを地理的な場所にバインドの例"
+           github-src="maps/geo-map/binding-data-json-points">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -208,14 +208,14 @@ onDataLoaded(jsonData: any[]) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="DataSource"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="LightGray"
         MarkerOutline="Black" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -243,3 +243,12 @@ onDataLoaded(jsonData: any[]) {
     }
 }
 ```
+
+## API メンバー
+
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicMap`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`

@@ -1,55 +1,12 @@
-{
-"extraFiles": [
-"igc-column-pinning-module.ts"
-],
-"types": [
-{
-    "originalName": "ColumnPinning",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-column-pinning-component.ts",
- "mappedName": "IgcColumnPinningComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "IgcDataGridComponent", "mappedName": "targetGrid"}            ],
-           "originalName": "TargetGrid"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "title"}            ],
-           "originalName": "Title"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "FontInfo", "mappedName": "titleStyle"}            ],
-           "originalName": "TitleStyle"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "titleColor"}            ],
-           "originalName": "TitleColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "filterPlaceholderText"}            ],
-           "originalName": "FilterPlaceholderText"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "BaseControlTheme", "mappedName": "baseTheme"}            ],
-           "originalName": "BaseTheme"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ControlDisplayDensity", "mappedName": "density"}            ],
-           "originalName": "Density"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "backgroundColor"}            ],
-           "originalName": "BackgroundColor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Grids.Implementation"
-}
-]
-}
+{"extraFiles":["igc-column-pinning-module.ts"],
+  "types":[
+  { "originalName":"ColumnPinning",
+    "names":[{"platform":"WebComponents","fileName":"igc-column-pinning-component.ts","mappedName":"IgcColumnPinningComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"IgcDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"filterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

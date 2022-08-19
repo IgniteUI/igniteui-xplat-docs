@@ -1,5 +1,8 @@
-{
-"types": [
-
-]
-}
+{"types":[
+  { "originalName":"ScrollbarStyle","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ScrollbarStyle.ts","mappedName":"ScrollbarStyle"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ScrollbarStyle","mappedName":"Default"}],"originalName":"Default"},
+    { "names":[{"platform":"WebComponents","mappedType":"ScrollbarStyle","mappedName":"Fading"}],"originalName":"Fading"},
+    { "names":[{"platform":"WebComponents","mappedType":"ScrollbarStyle","mappedName":"Thin"}],"originalName":"Thin"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Navigation"}]}

@@ -1,11 +1,11 @@
 ---
-title: $PlatformShort$ ライセンス | ドック マネージャー | $ProductName$ | インフラジスティックス
+title: $Platform$ ライセンス | ドック マネージャー | $ProductName$ | インフラジスティックス
 _description: インフラジスティックスの $ProductName$ ライセンス npm フィードの使用方法について説明します。
-_keywords: npm package license,  $PlatformName$ license feed,  licensing, npm パッケージのライセンス, $PlatformName$ ライセンス フィード, ライセンス
+_keywords: npm package license,  $ProductName$ license feed,  licensing, npm パッケージのライセンス, $Platform$ ライセンス フィード, ライセンス
 _language: ja
 ---
 
-# $PlatformShort$ 使用許諾契約
+# $ProductName$ 使用許諾契約
 購入して使用する $ProductName$ に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
 >[!NOTE]
@@ -16,7 +16,7 @@ _language: ja
 >[!NOTE]
 > 現在、プライベート npm フィードで **igniteui-dockmanager** パッケージのみ使用できますが、今後は他の $ProductName$ パッケージを追加する予定です。
 
-**市販されない製品**をビルドする場合は、[お気軽にお、問い合わせください](https://jp.infragistics.com/about-us/contact-us)。適切なライセンスを提供します。
+**市販されない製品**をビルドする場合は、[お気軽にお問い合わせください](https://jp.infragistics.com/about-us/contact-us)。適切なライセンスを提供します。
 
 ## プライベート npm フィードの使用
 Npm は Node.js ランタイム環境で使用する一般的なデフォルト パッケージ マネージャーです。プロジェクトに依存するパッケージをすばやく簡単に処理できます。npm の使用方法の詳細については、[npm ヘルプ](https://docs.npmjs.com/)を参照してください。
@@ -33,7 +33,7 @@ Infragistics $ProductName$ は npm パッケージで提供され、[いくつ�
 これにより公開用の npm レジストリおよびプライベート Infragistics レジストリからのパッケージを同時に使用できます。Infragistics アカウントにログインするユーザー名およびパスワードを入力する必要があります。Infragistics プロファイルに登録されるメールも入力してください。
 
 >[!NOTE]
->  **npm**  はユーザー名で **「@」** の使用を許可しません。ユーザー名が Infragistics アカウントのメール アドレスであるため、**「@」** 記号は既に含まれています。この制限を回避するには、 **「@」** 記号の代わりに **「!!」** (2 つの感嘆符) を使用します。たとえば、ユーザー名が **username@example.com** の場合、**username!!example.com** と入力します。
+>  **npm**  はユーザー名で **「@」** の使用を許可しません。ユーザー名が Infragistics アカウントのメール アドレスであるため、**「@」** 記号は既に含まれています。この制限を回避するには、**「@」** 記号の代わりに **「!!」** (2 つの感嘆符) を使用します。たとえば、ユーザー名が **username@example.com** の場合、**username!!example.com** と入力します。
 
 ### npm を使用してプライベート フィードにログインするには、adduser コマンドを実行し、ユーザー アカウントとパスワードを指定します。
 

@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter proportional series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ Map | Data Visualization Tools | Scatter Proportional Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter proportional series to plot markers for the geographic points specified by the data in your application. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter proportional series, $ProductName$, Infragistics
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $PlatformShort$ Using Scatter Proportional Series
+# $Platform$ Geographic Bubble Map
 
-Use the $PlatformShort$ map component's `GeographicProportionalSymbolSeries` to plot markers for the geographic points specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
+In $Platform$ map component, you can use the `GeographicProportionalSymbolSeries` to plot bubbles or proportional markers at the geographic locations specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
 
-## Demo
+## $Platform$ Geographic Bubble Map Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-bubble-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-bubble-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-bubble-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
+           alt="$Platform$ Using Scatter Proportional Series Example"
+           github-src="maps/geo-map/type-scatter-bubble-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -265,8 +264,8 @@ addSeriesWith(locations: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicProportionalSymbolSeries DataSource="WorldCities"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
         MarkerType="MarkerType.Circle"
         RadiusScale="SeriesSizeScale"
         FillScale="ColorScale"
@@ -275,7 +274,7 @@ addSeriesWith(locations: any[])
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerOutline="rgba(0,0,0,0.3)" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -285,7 +284,7 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         this.WorldCities = WorldLocations.GetAll();
 
@@ -304,3 +303,12 @@ addSeriesWith(locations: any[])
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicProportionalSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `RadiusMemberPath`
+ - `RadiusScale`

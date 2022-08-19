@@ -1,779 +1,173 @@
-{
-"extraFiles": [
-"igx-overlay-proxy-module.ts",
-"igx-indicator-proxy-module.ts",
-"igx-indicators-module.ts",
-"igx-overlays-module.ts"
-],
-"types": [
-{
-    "originalName": "AbsoluteVolumeOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-absolute-volume-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-absolute-volume-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-absolute-volume-oscillator-indicator-module.ts",
- "mappedName": "IgxAbsoluteVolumeOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AccumulationDistributionIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-accumulation-distribution-indicator-component.ts",
-    "dynamicModuleName": "igx-accumulation-distribution-indicator-dynamic-module.ts",
-    "moduleName": "igx-accumulation-distribution-indicator-module.ts",
- "mappedName": "IgxAccumulationDistributionIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AverageDirectionalIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-average-directional-index-indicator-component.ts",
-    "dynamicModuleName": "igx-average-directional-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-average-directional-index-indicator-module.ts",
- "mappedName": "IgxAverageDirectionalIndexIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "AverageTrueRangeIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-average-true-range-indicator-component.ts",
-    "dynamicModuleName": "igx-average-true-range-indicator-dynamic-module.ts",
-    "moduleName": "igx-average-true-range-indicator-module.ts",
- "mappedName": "IgxAverageTrueRangeIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BollingerBandsOverlay",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-bollinger-bands-overlay-component.ts",
-    "dynamicModuleName": "igx-bollinger-bands-overlay-dynamic-module.ts",
-    "moduleName": "igx-bollinger-bands-overlay-module.ts",
- "mappedName": "IgxBollingerBandsOverlayComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "multiplier"}            ],
-           "originalName": "Multiplier"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       }   ],
-    "originalBaseTypeName": "FinancialOverlay",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BollingerBandWidthIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-bollinger-band-width-indicator-component.ts",
-    "dynamicModuleName": "igx-bollinger-band-width-indicator-dynamic-module.ts",
-    "moduleName": "igx-bollinger-band-width-indicator-module.ts",
- "mappedName": "IgxBollingerBandWidthIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "multiplier"}            ],
-           "originalName": "Multiplier"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ChaikinOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-chaikin-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-chaikin-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-chaikin-oscillator-indicator-module.ts",
- "mappedName": "IgxChaikinOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ChaikinVolatilityIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-chaikin-volatility-indicator-component.ts",
-    "dynamicModuleName": "igx-chaikin-volatility-indicator-dynamic-module.ts",
-    "moduleName": "igx-chaikin-volatility-indicator-module.ts",
- "mappedName": "IgxChaikinVolatilityIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CommodityChannelIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-commodity-channel-index-indicator-component.ts",
-    "dynamicModuleName": "igx-commodity-channel-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-commodity-channel-index-indicator-module.ts",
- "mappedName": "IgxCommodityChannelIndexIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "CustomIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-custom-indicator-component.ts",
-    "dynamicModuleName": "igx-custom-indicator-dynamic-module.ts",
-    "moduleName": "igx-custom-indicator-module.ts",
- "mappedName": "IgxCustomIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "DetrendedPriceOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-detrended-price-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-detrended-price-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-detrended-price-oscillator-indicator-module.ts",
- "mappedName": "IgxDetrendedPriceOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "EaseOfMovementIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ease-of-movement-indicator-component.ts",
-    "dynamicModuleName": "igx-ease-of-movement-indicator-dynamic-module.ts",
-    "moduleName": "igx-ease-of-movement-indicator-module.ts",
- "mappedName": "IgxEaseOfMovementIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FastStochasticOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-fast-stochastic-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-fast-stochastic-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-fast-stochastic-oscillator-indicator-module.ts",
- "mappedName": "IgxFastStochasticOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-financial-indicator-component.ts",
- "mappedName": "IgxFinancialIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IndicatorDisplayType", "mappedName": "displayType"}            ],
-           "originalName": "DisplayType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
-           "originalName": "IgnoreFirst"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
-           "originalName": "GetSeriesValueBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "FinancialSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialOverlay",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-financial-overlay-component.ts",
- "mappedName": "IgxFinancialOverlayComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "ignoreFirst"}            ],
-           "originalName": "IgnoreFirst"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "FinancialSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ForceIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-force-index-indicator-component.ts",
-    "dynamicModuleName": "igx-force-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-force-index-indicator-module.ts",
- "mappedName": "IgxForceIndexIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FullStochasticOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-full-stochastic-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-full-stochastic-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-full-stochastic-oscillator-indicator-module.ts",
- "mappedName": "IgxFullStochasticOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "smoothingPeriod"}            ],
-           "originalName": "SmoothingPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "triggerPeriod"}            ],
-           "originalName": "TriggerPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ItemwiseStrategyBasedIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-itemwise-strategy-based-indicator-component.ts",
- "mappedName": "IgxItemwiseStrategyBasedIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "MarketFacilitationIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-market-facilitation-index-indicator-component.ts",
-    "dynamicModuleName": "igx-market-facilitation-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-market-facilitation-index-indicator-module.ts",
- "mappedName": "IgxMarketFacilitationIndexIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "MassIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-mass-index-indicator-component.ts",
-    "dynamicModuleName": "igx-mass-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-mass-index-indicator-module.ts",
- "mappedName": "IgxMassIndexIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "MedianPriceIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-median-price-indicator-component.ts",
-    "dynamicModuleName": "igx-median-price-indicator-dynamic-module.ts",
-    "moduleName": "igx-median-price-indicator-module.ts",
- "mappedName": "IgxMedianPriceIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "MoneyFlowIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-money-flow-index-indicator-component.ts",
-    "dynamicModuleName": "igx-money-flow-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-money-flow-index-indicator-module.ts",
- "mappedName": "IgxMoneyFlowIndexIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "MovingAverageConvergenceDivergenceIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-moving-average-convergence-divergence-indicator-component.ts",
-    "dynamicModuleName": "igx-moving-average-convergence-divergence-indicator-dynamic-module.ts",
-    "moduleName": "igx-moving-average-convergence-divergence-indicator-module.ts",
- "mappedName": "IgxMovingAverageConvergenceDivergenceIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "signalPeriod"}            ],
-           "originalName": "SignalPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "NegativeVolumeIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-negative-volume-index-indicator-component.ts",
-    "dynamicModuleName": "igx-negative-volume-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-negative-volume-index-indicator-module.ts",
- "mappedName": "IgxNegativeVolumeIndexIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "OnBalanceVolumeIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-on-balance-volume-indicator-component.ts",
-    "dynamicModuleName": "igx-on-balance-volume-indicator-dynamic-module.ts",
-    "moduleName": "igx-on-balance-volume-indicator-module.ts",
- "mappedName": "IgxOnBalanceVolumeIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PercentagePriceOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-percentage-price-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-percentage-price-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-percentage-price-oscillator-indicator-module.ts",
- "mappedName": "IgxPercentagePriceOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PercentageVolumeOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-percentage-volume-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-percentage-volume-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-percentage-volume-oscillator-indicator-module.ts",
- "mappedName": "IgxPercentageVolumeOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "shortPeriod"}            ],
-           "originalName": "ShortPeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "longPeriod"}            ],
-           "originalName": "LongPeriod"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PositiveVolumeIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-positive-volume-index-indicator-component.ts",
-    "dynamicModuleName": "igx-positive-volume-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-positive-volume-index-indicator-module.ts",
- "mappedName": "IgxPositiveVolumeIndexIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PriceChannelOverlay",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-price-channel-overlay-component.ts",
-    "dynamicModuleName": "igx-price-channel-overlay-dynamic-module.ts",
-    "moduleName": "igx-price-channel-overlay-module.ts",
- "mappedName": "IgxPriceChannelOverlayComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       }   ],
-    "originalBaseTypeName": "FinancialOverlay",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PriceVolumeTrendIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-price-volume-trend-indicator-component.ts",
-    "dynamicModuleName": "igx-price-volume-trend-indicator-dynamic-module.ts",
-    "moduleName": "igx-price-volume-trend-indicator-module.ts",
- "mappedName": "IgxPriceVolumeTrendIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RateOfChangeAndMomentumIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-rate-of-change-and-momentum-indicator-component.ts",
-    "dynamicModuleName": "igx-rate-of-change-and-momentum-indicator-dynamic-module.ts",
-    "moduleName": "igx-rate-of-change-and-momentum-indicator-module.ts",
- "mappedName": "IgxRateOfChangeAndMomentumIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "RelativeStrengthIndexIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-relative-strength-index-indicator-component.ts",
-    "dynamicModuleName": "igx-relative-strength-index-indicator-dynamic-module.ts",
-    "moduleName": "igx-relative-strength-index-indicator-module.ts",
- "mappedName": "IgxRelativeStrengthIndexIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "SlowStochasticOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-slow-stochastic-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-slow-stochastic-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-slow-stochastic-oscillator-indicator-module.ts",
- "mappedName": "IgxSlowStochasticOscillatorIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "StandardDeviationIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-standard-deviation-indicator-component.ts",
-    "dynamicModuleName": "igx-standard-deviation-indicator-dynamic-module.ts",
-    "moduleName": "igx-standard-deviation-indicator-module.ts",
- "mappedName": "IgxStandardDeviationIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "StochRSIIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-stoch-rsi-indicator-component.ts",
-    "dynamicModuleName": "igx-stoch-rsi-indicator-dynamic-module.ts",
-    "moduleName": "igx-stoch-rsi-indicator-module.ts",
- "mappedName": "IgxStochRSIIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "StrategyBasedIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-strategy-based-indicator-component.ts",
- "mappedName": "IgxStrategyBasedIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "FinancialIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TRIXIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-trix-indicator-component.ts",
-    "dynamicModuleName": "igx-trix-indicator-dynamic-module.ts",
-    "moduleName": "igx-trix-indicator-module.ts",
- "mappedName": "IgxTRIXIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "TypicalPriceIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-typical-price-indicator-component.ts",
-    "dynamicModuleName": "igx-typical-price-indicator-dynamic-module.ts",
-    "moduleName": "igx-typical-price-indicator-module.ts",
- "mappedName": "IgxTypicalPriceIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "UltimateOscillatorIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-ultimate-oscillator-indicator-component.ts",
-    "dynamicModuleName": "igx-ultimate-oscillator-indicator-dynamic-module.ts",
-    "moduleName": "igx-ultimate-oscillator-indicator-module.ts",
- "mappedName": "IgxUltimateOscillatorIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "WeightedCloseIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-weighted-close-indicator-component.ts",
-    "dynamicModuleName": "igx-weighted-close-indicator-dynamic-module.ts",
-    "moduleName": "igx-weighted-close-indicator-module.ts",
- "mappedName": "IgxWeightedCloseIndicatorComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "ItemwiseStrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "WilliamsPercentRIndicator",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-williams-percent-r-indicator-component.ts",
-    "dynamicModuleName": "igx-williams-percent-r-indicator-dynamic-module.ts",
-    "moduleName": "igx-williams-percent-r-indicator-module.ts",
- "mappedName": "IgxWilliamsPercentRIndicatorComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "period"}            ],
-           "originalName": "Period"
-       }   ],
-    "originalBaseTypeName": "StrategyBasedIndicator",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles":["igx-overlay-proxy-module.ts","igx-indicator-proxy-module.ts","igx-indicators-module.ts","igx-overlays-module.ts"],
+  "types":[
+  { "originalName":"AbsoluteVolumeOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-absolute-volume-oscillator-indicator-component.ts","dynamicModuleName":"igx-absolute-volume-oscillator-indicator-dynamic-module.ts","moduleName":"igx-absolute-volume-oscillator-indicator-module.ts","mappedName":"IgxAbsoluteVolumeOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shortPeriod"}],"originalName":"ShortPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"longPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AccumulationDistributionIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-accumulation-distribution-indicator-component.ts","dynamicModuleName":"igx-accumulation-distribution-indicator-dynamic-module.ts","moduleName":"igx-accumulation-distribution-indicator-module.ts","mappedName":"IgxAccumulationDistributionIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AverageDirectionalIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-average-directional-index-indicator-component.ts","dynamicModuleName":"igx-average-directional-index-indicator-dynamic-module.ts","moduleName":"igx-average-directional-index-indicator-module.ts","mappedName":"IgxAverageDirectionalIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"AverageTrueRangeIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-average-true-range-indicator-component.ts","dynamicModuleName":"igx-average-true-range-indicator-dynamic-module.ts","moduleName":"igx-average-true-range-indicator-module.ts","mappedName":"IgxAverageTrueRangeIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BollingerBandsOverlay",
+    "names":[{"platform":"Angular","fileName":"igx-bollinger-bands-overlay-component.ts","dynamicModuleName":"igx-bollinger-bands-overlay-dynamic-module.ts","moduleName":"igx-bollinger-bands-overlay-module.ts","mappedName":"IgxBollingerBandsOverlayComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"multiplier"}],"originalName":"Multiplier"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"}],"originalBaseTypeName":"FinancialOverlay","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BollingerBandWidthIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-bollinger-band-width-indicator-component.ts","dynamicModuleName":"igx-bollinger-band-width-indicator-dynamic-module.ts","moduleName":"igx-bollinger-band-width-indicator-module.ts","mappedName":"IgxBollingerBandWidthIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"multiplier"}],"originalName":"Multiplier"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChaikinOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-chaikin-oscillator-indicator-component.ts","dynamicModuleName":"igx-chaikin-oscillator-indicator-dynamic-module.ts","moduleName":"igx-chaikin-oscillator-indicator-module.ts","mappedName":"IgxChaikinOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shortPeriod"}],"originalName":"ShortPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"longPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChaikinVolatilityIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-chaikin-volatility-indicator-component.ts","dynamicModuleName":"igx-chaikin-volatility-indicator-dynamic-module.ts","moduleName":"igx-chaikin-volatility-indicator-module.ts","mappedName":"IgxChaikinVolatilityIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CommodityChannelIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-commodity-channel-index-indicator-component.ts","dynamicModuleName":"igx-commodity-channel-index-indicator-dynamic-module.ts","moduleName":"igx-commodity-channel-index-indicator-module.ts","mappedName":"IgxCommodityChannelIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"CustomIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-custom-indicator-component.ts","dynamicModuleName":"igx-custom-indicator-dynamic-module.ts","moduleName":"igx-custom-indicator-module.ts","mappedName":"IgxCustomIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DetrendedPriceOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-detrended-price-oscillator-indicator-component.ts","dynamicModuleName":"igx-detrended-price-oscillator-indicator-dynamic-module.ts","moduleName":"igx-detrended-price-oscillator-indicator-module.ts","mappedName":"IgxDetrendedPriceOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"EaseOfMovementIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-ease-of-movement-indicator-component.ts","dynamicModuleName":"igx-ease-of-movement-indicator-dynamic-module.ts","moduleName":"igx-ease-of-movement-indicator-module.ts","mappedName":"IgxEaseOfMovementIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FastStochasticOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-fast-stochastic-oscillator-indicator-component.ts","dynamicModuleName":"igx-fast-stochastic-oscillator-indicator-dynamic-module.ts","moduleName":"igx-fast-stochastic-oscillator-indicator-module.ts","mappedName":"IgxFastStochasticOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-financial-indicator-component.ts","mappedName":"IgxFinancialIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancialIndicator"}],"originalName":"IsFinancialIndicator"},
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"displayType"}],"originalName":"DisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"ignoreFirst"}],"originalName":"IgnoreFirst"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialOverlay",
+    "names":[{"platform":"Angular","fileName":"igx-financial-overlay-component.ts","mappedName":"IgxFinancialOverlayComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancialOverlay"}],"originalName":"IsFinancialOverlay"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"ignoreFirst"}],"originalName":"IgnoreFirst"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ForceIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-force-index-indicator-component.ts","dynamicModuleName":"igx-force-index-indicator-dynamic-module.ts","moduleName":"igx-force-index-indicator-module.ts","mappedName":"IgxForceIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FullStochasticOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-full-stochastic-oscillator-indicator-component.ts","dynamicModuleName":"igx-full-stochastic-oscillator-indicator-dynamic-module.ts","moduleName":"igx-full-stochastic-oscillator-indicator-module.ts","mappedName":"IgxFullStochasticOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"smoothingPeriod"}],"originalName":"SmoothingPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"triggerPeriod"}],"originalName":"TriggerPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ItemwiseStrategyBasedIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-itemwise-strategy-based-indicator-component.ts","mappedName":"IgxItemwiseStrategyBasedIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"MarketFacilitationIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-market-facilitation-index-indicator-component.ts","dynamicModuleName":"igx-market-facilitation-index-indicator-dynamic-module.ts","moduleName":"igx-market-facilitation-index-indicator-module.ts","mappedName":"IgxMarketFacilitationIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"}],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"MassIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-mass-index-indicator-component.ts","dynamicModuleName":"igx-mass-index-indicator-dynamic-module.ts","moduleName":"igx-mass-index-indicator-module.ts","mappedName":"IgxMassIndexIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"MedianPriceIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-median-price-indicator-component.ts","dynamicModuleName":"igx-median-price-indicator-dynamic-module.ts","moduleName":"igx-median-price-indicator-module.ts","mappedName":"IgxMedianPriceIndicatorComponent"}],"members":[],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"MoneyFlowIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-money-flow-index-indicator-component.ts","dynamicModuleName":"igx-money-flow-index-indicator-dynamic-module.ts","moduleName":"igx-money-flow-index-indicator-module.ts","mappedName":"IgxMoneyFlowIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"MovingAverageConvergenceDivergenceIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-moving-average-convergence-divergence-indicator-component.ts","dynamicModuleName":"igx-moving-average-convergence-divergence-indicator-dynamic-module.ts","moduleName":"igx-moving-average-convergence-divergence-indicator-module.ts","mappedName":"IgxMovingAverageConvergenceDivergenceIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shortPeriod"}],"originalName":"ShortPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"longPeriod"}],"originalName":"LongPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"signalPeriod"}],"originalName":"SignalPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"NegativeVolumeIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-negative-volume-index-indicator-component.ts","dynamicModuleName":"igx-negative-volume-index-indicator-dynamic-module.ts","moduleName":"igx-negative-volume-index-indicator-module.ts","mappedName":"IgxNegativeVolumeIndexIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"OnBalanceVolumeIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-on-balance-volume-indicator-component.ts","dynamicModuleName":"igx-on-balance-volume-indicator-dynamic-module.ts","moduleName":"igx-on-balance-volume-indicator-module.ts","mappedName":"IgxOnBalanceVolumeIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PercentagePriceOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-percentage-price-oscillator-indicator-component.ts","dynamicModuleName":"igx-percentage-price-oscillator-indicator-dynamic-module.ts","moduleName":"igx-percentage-price-oscillator-indicator-module.ts","mappedName":"IgxPercentagePriceOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shortPeriod"}],"originalName":"ShortPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"longPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PercentageVolumeOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-percentage-volume-oscillator-indicator-component.ts","dynamicModuleName":"igx-percentage-volume-oscillator-indicator-dynamic-module.ts","moduleName":"igx-percentage-volume-oscillator-indicator-module.ts","mappedName":"IgxPercentageVolumeOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"shortPeriod"}],"originalName":"ShortPeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"longPeriod"}],"originalName":"LongPeriod"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PositiveVolumeIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-positive-volume-index-indicator-component.ts","dynamicModuleName":"igx-positive-volume-index-indicator-dynamic-module.ts","moduleName":"igx-positive-volume-index-indicator-module.ts","mappedName":"IgxPositiveVolumeIndexIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PriceChannelOverlay",
+    "names":[{"platform":"Angular","fileName":"igx-price-channel-overlay-component.ts","dynamicModuleName":"igx-price-channel-overlay-dynamic-module.ts","moduleName":"igx-price-channel-overlay-module.ts","mappedName":"IgxPriceChannelOverlayComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"}],"originalBaseTypeName":"FinancialOverlay","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PriceVolumeTrendIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-price-volume-trend-indicator-component.ts","dynamicModuleName":"igx-price-volume-trend-indicator-dynamic-module.ts","moduleName":"igx-price-volume-trend-indicator-module.ts","mappedName":"IgxPriceVolumeTrendIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"RateOfChangeAndMomentumIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-rate-of-change-and-momentum-indicator-component.ts","dynamicModuleName":"igx-rate-of-change-and-momentum-indicator-dynamic-module.ts","moduleName":"igx-rate-of-change-and-momentum-indicator-module.ts","mappedName":"IgxRateOfChangeAndMomentumIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"RelativeStrengthIndexIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-relative-strength-index-indicator-component.ts","dynamicModuleName":"igx-relative-strength-index-indicator-dynamic-module.ts","moduleName":"igx-relative-strength-index-indicator-module.ts","mappedName":"IgxRelativeStrengthIndexIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"SlowStochasticOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-slow-stochastic-oscillator-indicator-component.ts","dynamicModuleName":"igx-slow-stochastic-oscillator-indicator-dynamic-module.ts","moduleName":"igx-slow-stochastic-oscillator-indicator-module.ts","mappedName":"IgxSlowStochasticOscillatorIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StandardDeviationIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-standard-deviation-indicator-component.ts","dynamicModuleName":"igx-standard-deviation-indicator-dynamic-module.ts","moduleName":"igx-standard-deviation-indicator-module.ts","mappedName":"IgxStandardDeviationIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StochRSIIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-stoch-rsi-indicator-component.ts","dynamicModuleName":"igx-stoch-rsi-indicator-dynamic-module.ts","moduleName":"igx-stoch-rsi-indicator-module.ts","mappedName":"IgxStochRSIIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"StrategyBasedIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-strategy-based-indicator-component.ts","mappedName":"IgxStrategyBasedIndicatorComponent"}],"members":[],"originalBaseTypeName":"FinancialIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TRIXIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-trix-indicator-component.ts","dynamicModuleName":"igx-trix-indicator-dynamic-module.ts","moduleName":"igx-trix-indicator-module.ts","mappedName":"IgxTRIXIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"TypicalPriceIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-typical-price-indicator-component.ts","dynamicModuleName":"igx-typical-price-indicator-dynamic-module.ts","moduleName":"igx-typical-price-indicator-module.ts","mappedName":"IgxTypicalPriceIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"UltimateOscillatorIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-ultimate-oscillator-indicator-component.ts","dynamicModuleName":"igx-ultimate-oscillator-indicator-dynamic-module.ts","moduleName":"igx-ultimate-oscillator-indicator-module.ts","mappedName":"IgxUltimateOscillatorIndicatorComponent"}],"members":[],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"WeightedCloseIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-weighted-close-indicator-component.ts","dynamicModuleName":"igx-weighted-close-indicator-dynamic-module.ts","moduleName":"igx-weighted-close-indicator-module.ts","mappedName":"IgxWeightedCloseIndicatorComponent"}],"members":[],"originalBaseTypeName":"ItemwiseStrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"WilliamsPercentRIndicator",
+    "names":[{"platform":"Angular","fileName":"igx-williams-percent-r-indicator-component.ts","dynamicModuleName":"igx-williams-percent-r-indicator-dynamic-module.ts","moduleName":"igx-williams-percent-r-indicator-module.ts","mappedName":"IgxWilliamsPercentRIndicatorComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

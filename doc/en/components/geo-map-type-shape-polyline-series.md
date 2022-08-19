@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Shape Polyline Series | Infragistics
-_description: Use Infragistics $PlatformShort$ map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, $ProductName$, shape polyline series, Infragistics
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ Map | Data Visualization Tools | Shape Polyline Series | Infragistics
+_description: Use Infragistics $Platform$ map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $PlatformShort$ Using Shape Polyline Series
+# $Platform$ Geographic Polyline Map
 
-Use the $PlatformShort$ map component's `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
+In $Platform$ map component, you can use the `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
 
-## Demo
+## $Platform$ Geographic Polyline Map Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-shape-polyline-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-shape-polyline-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-shape-polyline-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
+           alt="$Platform$ Using Shape Polyline Series Example"
+           github-src="maps/geo-map/type-shape-polyline-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -27,7 +26,7 @@ The `GeographicPolylineSeries` works a lot like the `GeographicShapeSeries` exce
 Similarly to other types of geographic series in the control, the `GeographicPolylineSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the ShapeMemberPath property. The `GeographicPolylineSeries` uses points of this mapped data column to plot polygons in the control.
 
 ## Code Snippet
-The following code shows how to bind the `GeographicPolylineSeries` to locations of cities loaded from a shape file using the ``ShapeDataSource``.
+The following code shows how to bind the `GeographicPolylineSeries` to locations of cities loaded from a shape file using the `ShapefileConverter`.
 
 <!-- React -->
 ```tsx
@@ -284,24 +283,30 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
-</GeographicMap>
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
+</IgbGeographicMap>
 
 @code {
 
-    public ShapeDataSource DataSource;
+    public IgbShapeDataSource DataSource;
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
-        this.DataSource = new ShapeDataSource()
+        this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
             DatabaseSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.dbf"
-        };        
+        };
     }
 }
 ```
 
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapefileConverter`

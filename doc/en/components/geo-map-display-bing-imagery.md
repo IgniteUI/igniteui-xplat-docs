@@ -1,28 +1,27 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Displaying Bing Imagery | Infragistics
-_description: Use Infragistics' $PlatformShort$ to display imagery from Microsoft Bing Maps. View $ProductName$ map tutorials!
-_keywords: $PlatformShort$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background
+title: $Platform$ Map | Data Visualization Tools | Displaying Bing Imagery | Infragistics
+_description: Use Infragistics' $Platform$ to display imagery from Microsoft Bing Maps. View $ProductName$ map tutorials!
+_keywords: $Platform$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background
 mentionedTypes: ['XamGeographicMap', 'BingMapsMapImagery']
 ---
-# $PlatformShort$ Displaying Imagery from Bing Maps
+# $Platform$ Displaying Imagery from Bing Maps
 
-The $PlatformShort$ `BingMapsMapImagery` is geographic imagery mapping service provided by Microsoft® company. It provides 3 styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> web site. The $ProductName$ map component can display geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class.
+The $Platform$ `BingMapsMapImagery` is geographic imagery mapping service provided by Microsoft® company. It provides 3 styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> web site. The $ProductName$ map component can display geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class.
 
-## Demo
+## $Platform$ Displaying Imagery from Bing Maps Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-display-bing-imagery-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-display-bing-imagery-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/display-bing-imagery"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
+           alt="$Platform$ Displaying Imagery from Bing Maps Example"
+           github-src="maps/geo-map/display-bing-imagery">
+</code-view>
 
 <div class="divider--half"></div>
 
 ## Code Snippet
-The following code snippet shows how to display geographic imagery tiles from Bing Maps in $PlatformShort$ `XamGeographicMap` using `BingMapsMapImagery` class.
+The following code snippet shows how to display geographic imagery tiles from Bing Maps in $Platform$ `XamGeographicMap` using `BingMapsMapImagery` class.
 
 ```html
 <igx-geographic-map #map
@@ -93,3 +92,9 @@ The following table summarized properties of the `BingMapsMapImagery` class:
 |`IsInitialized`|boolean|Represents the property that is set to True occurs when geographic imagery tiles from Bing Maps service have been initialized and they are ready for rendering in the map component.|
 |`SubDomains`|`SubDomainsCollection`|Represents an image collection of URI sub domains|
 |`TilePath`|string|Represents a property that sets the map tile image URI, this is the actual location of the Bing Maps|
+
+ ## API Members
+
+ - `BingMapsImageryStyle`
+ - `BingMapsMapImagery`
+ - `XamGeographicMap`

@@ -1,24 +1,28 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | ワークシートの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。$ProductName$ Excel からアプリケーションへデータを簡単に転送できます。
+title: $Platform$ Excel ライブラリ | ワークシートの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。$ProductName$ Excel からアプリケーションへデータを簡単に転送できます。
 _keywords: Excel library, worksheet, $ProductName$, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 _language: ja
 ---
-# $PlatformShort$ ワークシートの使用
+# $Platform$ ワークシートの使用
 
-$PlatformShort$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
+$Platform$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
 
-## サンプル
+## $Platform$ ワークシートの使用の例
 
-<div class="sample-container loading" style="height: 200px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/operations-on-worksheets"></sample-button>
 
+<code-view style="height: 200px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
+           alt="$Platform$ ワークシートの使用の例"
+           github-src="excel/excel-library/operations-on-worksheets">
+</code-view>
 
 <div class="divider--half"></div>
 
+
+<!-- Angular, React, WebComponents -->
 以下のコードは、以下のコード スニペットを使用するインポートを示します。
 
 ```ts
@@ -35,6 +39,7 @@ import { RelativeIndex } from "{PackageExcel}";
 import { SortDirection } from "{PackageExcel}";
 import { WorkbookColorInfo } from "{PackageExcel}";
 ```
+<!-- end: Angular, React, WebComponents -->
 
 ## ガイドラインの設定
 グリッド線は、ワークシートでセルを視覚的に分離するために使用されます。グリッド線は表示または非表示にできます。また、色を変更することもできます。
@@ -48,6 +53,13 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.displayOptions.showGridlines = false;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.ShowGridlines = false;
+```
+
 ワークシートの `DisplayOptions` の `GridlineColor` プロパティを使用して、グリッド線の色を設定できます。以下のコードは、ワークシートのグリッド線を変更する方法を示します。
 
 ```ts
@@ -55,6 +67,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.displayOptions.gridlineColor = "Red";
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ```
 
 ## ヘッダーの構成
@@ -69,8 +88,15 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.displayOptions.showRowAndColumnHeaders = false;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.ShowRowAndColumnHeaders = false;
+```
+
 ## ワークシートの編集を設定
-デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、`false` に設定した場合はワークシートの編集を防止します。
+デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、**false** に設定した場合はワークシートの編集を防止します。
 
 以下のコードは、ワークシートで編集を無効にする方法を示します。
 
@@ -81,9 +107,16 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.protect();
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
+```
+
 `Worksheet` オブジェクトの `Protect` メソッドを使用して構造変更からワークシートを保護できます。
 
-保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を `false` に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
+保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を **false** に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
 
 以下のコードはその方法を示します。
 
@@ -93,6 +126,14 @@ var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.protect();
 worksheet.columns(0).cellFormat.locked = false;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
+worksheet.Columns[0].CellFormat.Locked = ExcelDefaultableBoolean.False;
 ```
 
 ## ワークシート領域のフィルタリング
@@ -125,10 +166,18 @@ worksheet.filterSettings.setRegion("Sheet1!A1:A10");
 worksheet.filterSettings.applyAverageFilter(0, AverageFilterType.AboveAverage);
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.FilterSettings.SetRegion("Sheet1!A1:A10");
+worksheet.FilterSettings.ApplyAverageFilter(0, Documents.Excel.Filtering.AverageFilterType.AboveAverage);
+```
+
 ## ペインの固定と分割
 ペイン固定機能は、行をワークシートの上または列を左にで固定できます。ユーザーがスクロールしている間、固定した行や列は表示されたままになります。固定された行列は、削除できない実線によってワークシートの残りの部分と区切られます。
 
-ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを `true` に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
+ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを **true** に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
 
 また `FirstRowInBottomPane` と `FirstColumnInRightPane` を個々に使用して下ペインの最初の行または右ペインの最初の列を指定できます。
 
@@ -147,6 +196,19 @@ worksheet.displayOptions.frozenPaneSettings.firstColumnInRightPane = 2;
 worksheet.displayOptions.frozenPaneSettings.firstRowInBottomPane = 6;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.PanesAreFrozen = true;
+
+worksheet.DisplayOptions.FrozenPaneSettings.FrozenRows = 3;
+worksheet.DisplayOptions.FrozenPaneSettings.FrozenColumns = 3;
+
+worksheet.DisplayOptions.FrozenPaneSettings.FirstColumnInRightPane = 2;
+worksheet.DisplayOptions.FrozenPaneSettings.FirstRowInBottomPane = 6;
+```
+
 ## ワークシート ズーム レベルの設定
 各ワークシートのズーム レベルは、`Worksheet` オブジェクトの `DisplayOptions` の `MagnificationInNormalView` プロパティを使用して個別に変更できます。このプロパティは、10 から 400 の間の値を取得して適用したいズームのパーセンテージを表します。
 
@@ -157,6 +219,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.displayOptions.magnificationInNormalView = 300;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.DisplayOptions.MagnificationInNormalView = 300;
 ```
 
 ## ワークシート レベルのソート
@@ -173,6 +242,13 @@ var workbook = new Workbook(WorkbookFormat.Excel2007);
 var worksheet = workbook.worksheets().add("Sheet1");
 
 worksheet.sortSettings.sortConditions().addItem(new RelativeIndex(0), new OrderedSortCondition(SortDirection.Ascending));
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.SortSettings.SortConditions.Add(new RelativeIndex(0), new Infragistics.Documents.Excel.Sorting.OrderedSortCondition(Documents.Excel.Sorting.SortDirection.Ascending));
 ```
 
 ## ワークシートの保護
@@ -200,6 +276,13 @@ var worksheet = workbook.worksheets().add("Sheet1");
 worksheet.protect();
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+worksheet.Protect();
+```
+
 ## ワークシートの条件付き書式設定
 `Worksheet` の条件付き書式を設定するには、ワークシートの `ConditionalFormats` コレクションで公開される多数の Add メソッドを使用できます。この Add メソッドの最初のパラメーターは条件付き書式に適用する Worksheet の `string` 領域です。
 
@@ -221,3 +304,29 @@ color.colorString = "Red";
 var format = worksheet.conditionalFormats().addAverageCondition("A1:A10", FormatConditionAboveBelow.AboveAverage);
 format.cellFormat.font.colorInfo = new WorkbookColorInfo(color);
 ```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
+
+var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Documents.Excel.ConditionalFormatting.FormatConditionAboveBelow.AboveAverage);
+format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
+```
+
+## API メンバー
+
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DisplayOptions`
+ - `FilterSettings`
+ - `ShowGridlines`
+ - `ShowRowAndColumnHeaders`
+ - `SortSettings`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetFilterSettings`
+ - `WorksheetSortSettings`
+ - `Worksheet`

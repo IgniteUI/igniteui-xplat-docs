@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter contour series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale']
+title: $Platform$ Map | Data Visualization Tools | Scatter Contour Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter contour series to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter contour series, $ProductName$, Infragistics
+mentionedTypes: ['XamGeographicMap','GeographicContourLineSeries','CustomPaletteColorScale', 'Series']
 ---
-# $PlatformShort$ Using Scatter Contour Series
+# $Platform$ Geographic Contour Map
 
-Use the $PlatformShort$ map component's `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
+In $Platform$ map component, you can use the `GeographicContourLineSeries` to draw colored contour lines, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data defined by geographic locations such as weather temperature, atmospheric pressure, precipitation, population distribution, topographic data, etc.
 
-## Demo
+## $Platform$ Geographic Contour Map Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-contour-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-contour-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-contour-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-contour-series"
+           alt="$Platform$ Using Scatter Contour Series Example"
+           github-src="maps/geo-map/type-scatter-contour-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -305,15 +304,15 @@ createContourSeries(data: any[])
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicContourLineSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ValueMemberPath="Value"
         FillScale="@BrushScale"
         DataSource="@Data"
         Thickness="2">
-    </GeographicContourLineSeries>
-</GeographicMap>
+    </IgbGeographicContourLineSeries>
+</IgbGeographicMap>
 
 @code {
     private List<Location> Data;
@@ -321,7 +320,7 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
@@ -338,3 +337,16 @@ createContourSeries(data: any[])
     }
 }
 ```
+
+ ## API Members
+
+ - `FillScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`
+ - `ValueBrushScale`
+ - `ValueMemberPath`

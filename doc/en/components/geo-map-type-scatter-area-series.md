@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
-_description: Use Infragistics $PlatformShort$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $PlatformShort$ map, scatter area series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale']
+title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
+_description: Use Infragistics $Platform$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
+_keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics
+mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 ---
-# $PlatformShort$ Using Scatter Area Series
+# $Platform$ Geographic Area Map
 
-Use the $PlatformShort$ map component's `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
+In $Platform$ map component, you can use the `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
 
-## Demo
+## $Platform$ Geographic Area Map Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-type-scatter-area-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-area-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-area-series"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series"
+           alt="$Platform$ Using Scatter Area Series Example"
+           github-src="maps/geo-map/type-scatter-area-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -310,14 +309,14 @@ createAreaSeries(data: any[]) {
 @using IgniteUI.Blazor.Controls
 @inject IIgniteUIBlazor IgniteUIBlazor
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicScatterAreaSeries LongitudeMemberPath="Lon"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         ColorMemberPath="Value"
         ColorScale="ColorScale"
         DataSource="Data">
-    </GeographicScatterAreaSeries>
-</GeographicMap>
+    </IgbGeographicScatterAreaSeries>
+</IgbGeographicMap>
 
 @code {
 
@@ -326,7 +325,7 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
@@ -339,7 +338,20 @@ createAreaSeries(data: any[]) {
         this.ColorScale.MinimumValue = 0;
         this.ColorScale.MaximumValue = 30;
 
-        this.Data = WorldTemperatures.Load();        
+        this.Data = WorldTemperatures.Load();
     }
 }
 ```
+
+ ## API Members
+
+ - `ColorMemberPath`
+ - `ColorScale`
+ - `CustomPaletteColorScale`
+ - `GeographicContourLineSeries`
+ - `GeographicScatterAreaSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `TrianglesSource`
+ - `TriangulationSource`

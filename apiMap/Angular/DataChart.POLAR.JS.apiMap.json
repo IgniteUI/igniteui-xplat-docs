@@ -1,206 +1,62 @@
-{
-"types": [
-{
-    "originalName": "PolarAreaSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-area-series-component.ts",
-    "dynamicModuleName": "igx-polar-area-series-dynamic-module.ts",
-    "moduleName": "igx-polar-area-series-module.ts",
- "mappedName": "IgxPolarAreaSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-base-component.ts",
- "mappedName": "IgxPolarBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isPolar"}            ],
-           "originalName": "IsPolar"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "angleMemberPath"}            ],
-           "originalName": "AngleMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "radiusMemberPath"}            ],
-           "originalName": "RadiusMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericAngleAxisComponent", "mappedName": "angleAxis"}            ],
-           "originalName": "AngleAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericRadiusAxisComponent", "mappedName": "radiusAxis"}            ],
-           "originalName": "RadiusAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "useCartesianInterpolation"}            ],
-           "originalName": "UseCartesianInterpolation"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "maximumMarkers"}            ],
-           "originalName": "MaximumMarkers"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "TrendLineType", "mappedName": "trendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "trendLineBrush"}            ],
-           "originalName": "TrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "string", "mappedName": "actualTrendLineBrush"}            ],
-           "originalName": "ActualTrendLineBrush"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "trendLineZIndex"}            ],
-           "originalName": "TrendLineZIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "clipSeriesToBounds"}            ],
-           "originalName": "ClipSeriesToBounds"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemValue"}            ],
-           "originalName": "GetItemValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsRadiusAxis"}            ],
-           "originalName": "CanUseAsRadiusAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsAngleAxis"}            ],
-           "originalName": "CanUseAsAngleAxis"
-       }   ],
-    "originalBaseTypeName": "MarkerSeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarLineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-line-series-component.ts",
-    "dynamicModuleName": "igx-polar-line-series-dynamic-module.ts",
-    "moduleName": "igx-polar-line-series-module.ts",
- "mappedName": "IgxPolarLineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "UnknownValuePlotting", "mappedName": "unknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarLineSeriesBase",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-line-series-base-component.ts",
- "mappedName": "IgxPolarLineSeriesBaseComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "PolarBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarScatterSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-scatter-series-component.ts",
-    "dynamicModuleName": "igx-polar-scatter-series-dynamic-module.ts",
-    "moduleName": "igx-polar-scatter-series-module.ts",
- "mappedName": "IgxPolarScatterSeriesComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "PolarBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarSplineAreaSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-spline-area-series-component.ts",
-    "dynamicModuleName": "igx-polar-spline-area-series-dynamic-module.ts",
-    "moduleName": "igx-polar-spline-area-series-module.ts",
- "mappedName": "IgxPolarSplineAreaSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "PolarSplineSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-polar-spline-series-component.ts",
-    "dynamicModuleName": "igx-polar-spline-series-dynamic-module.ts",
-    "moduleName": "igx-polar-spline-series-module.ts",
- "mappedName": "IgxPolarSplineSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "stiffness"}            ],
-           "originalName": "Stiffness"
-       }   ],
-    "originalBaseTypeName": "PolarLineSeriesBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"PolarAreaSeries",
+    "names":[{"platform":"Angular","fileName":"igx-polar-area-series-component.ts","dynamicModuleName":"igx-polar-area-series-dynamic-module.ts","moduleName":"igx-polar-area-series-module.ts","mappedName":"IgxPolarAreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarBase",
+    "names":[{"platform":"Angular","fileName":"igx-polar-base-component.ts","mappedName":"IgxPolarBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isPolar"}],"originalName":"IsPolar"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"angleMemberPath"}],"originalName":"AngleMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"radiusMemberPath"}],"originalName":"RadiusMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericAngleAxisComponent","mappedName":"angleAxis"}],"originalName":"AngleAxis"},
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericRadiusAxisComponent","mappedName":"radiusAxis"}],"originalName":"RadiusAxis"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"useCartesianInterpolation"}],"originalName":"UseCartesianInterpolation"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumMarkers"}],"originalName":"MaximumMarkers"},
+    { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineZIndex"}],"originalName":"TrendLineZIndex"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"clipSeriesToBounds"}],"originalName":"ClipSeriesToBounds"},
+    { "names":[{"platform":"Angular","mappedType":"ScatterItemSearchMode","mappedName":"actualItemSearchMode"}],"originalName":"ActualItemSearchMode"},
+    { "names":[{"platform":"Angular","mappedType":"ScatterItemSearchMode","mappedName":"itemSearchMode"}],"originalName":"ItemSearchMode"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"itemSearchThreshold"}],"originalName":"ItemSearchThreshold"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomPolarStyleAllowed"}],"originalName":"IsCustomPolarStyleAllowed"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCustomPolarMarkerStyleAllowed"}],"originalName":"IsCustomPolarMarkerStyleAllowed"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"radiusMemberAsLegendLabel"}],"originalName":"RadiusMemberAsLegendLabel"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"angleMemberAsLegendLabel"}],"originalName":"AngleMemberAsLegendLabel"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"radiusMemberAsLegendUnit"}],"originalName":"RadiusMemberAsLegendUnit"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"angleMemberAsLegendUnit"}],"originalName":"AngleMemberAsLegendUnit"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsRadiusAxis"}],"originalName":"CanUseAsRadiusAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsAngleAxis"}],"originalName":"CanUseAsAngleAxis"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarLineSeries",
+    "names":[{"platform":"Angular","fileName":"igx-polar-line-series-component.ts","dynamicModuleName":"igx-polar-line-series-dynamic-module.ts","moduleName":"igx-polar-line-series-module.ts","mappedName":"IgxPolarLineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarLineSeriesBase",
+    "names":[{"platform":"Angular","fileName":"igx-polar-line-series-base-component.ts","mappedName":"IgxPolarLineSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarScatterSeries",
+    "names":[{"platform":"Angular","fileName":"igx-polar-scatter-series-component.ts","dynamicModuleName":"igx-polar-scatter-series-dynamic-module.ts","moduleName":"igx-polar-scatter-series-module.ts","mappedName":"IgxPolarScatterSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasOnlyMarkers"}],"originalName":"HasOnlyMarkers"}],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarSplineAreaSeries",
+    "names":[{"platform":"Angular","fileName":"igx-polar-spline-area-series-component.ts","dynamicModuleName":"igx-polar-spline-area-series-dynamic-module.ts","moduleName":"igx-polar-spline-area-series-module.ts","mappedName":"IgxPolarSplineAreaSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"PolarSplineSeries",
+    "names":[{"platform":"Angular","fileName":"igx-polar-spline-series-component.ts","dynamicModuleName":"igx-polar-spline-series-dynamic-module.ts","moduleName":"igx-polar-spline-series-module.ts","mappedName":"IgxPolarSplineSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -1,0 +1,26 @@
+{
+    "development": {
+        "infragisticsBaseUrl": "https://staging.infragistics.com",
+        "dvApiBaseUrl": "https://staging.infragistics.com",
+        "wcApiUrl": "https://staging.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest",
+        "GTMContainerId": "GTM-WLXLBZD",
+        "themeApiUrl": "http://localhost:59296/api/taas",
+        "themingWidgetVersion": "latest"
+    },
+    "staging": {
+        "infragisticsBaseUrl": "https://staging.infragistics.com",
+        "dvApiBaseUrl": "https://staging.infragistics.com",
+        "wcApiUrl": "https://staging.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest",
+        "GTMContainerId": "GTM-NCKNPN",
+        "themeApiUrl": "https://igniteuithemingwidget-staging.infragistics.com/api/taas",
+        "themingWidgetVersion": "latest"
+    },
+    "production": {
+        "infragisticsBaseUrl": "https://www.infragistics.com",
+        "dvApiBaseUrl": "https://www.infragistics.com",
+        "wcApiUrl": "https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest",
+        "GTMContainerId": "GTM-T65CF7",
+        "themeApiUrl": "https://igniteuithemingwidget-prod.infragistics.com/api/taas",
+        "themingWidgetVersion": "latest-stable"
+    }
+}

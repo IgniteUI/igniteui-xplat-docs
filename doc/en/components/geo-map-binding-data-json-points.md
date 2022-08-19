@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding JSON Files | Infragistics
-_description: Learn how to use Infragistics' $PlatformShort$ map to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, JSON files, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ Map | Data Visualization Tools | Binding JSON Files | Infragistics
+_description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View $ProductName$ map demos!
+_keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'Series']
+namespace: Infragistics.Controls.Maps
 ---
-# $PlatformShort$ Binding JSON Files with Geographic Locations
+# $Platform$ Binding JSON Files with Geographic Locations
 
 With the $ProductName$ map, you can plot geographic data loaded from various file types. For example, you can load geographic locations from JavaScript Object Notation (JSON) file.
 
-## Demo
+## $Platform$ Binding JSON Files with Geographic Locations Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-json-points-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-json-points-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-data-json-points"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
+           alt="$Platform$ Binding JSON Files with Geographic Locations Example"
+           github-src="maps/geo-map/binding-data-json-points">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -207,14 +207,14 @@ onDataLoaded(jsonData: any[]) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicSymbolSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicSymbolSeries DataSource="DataSource"
         MarkerType="MarkerType.Circle"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         MarkerBrush="LightGray"
         MarkerOutline="Black" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -243,3 +243,11 @@ onDataLoaded(jsonData: any[]) {
 }
 ```
 
+ ## API Members
+
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicMap`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`

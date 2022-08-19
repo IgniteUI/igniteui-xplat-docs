@@ -1,20 +1,22 @@
 ---
-title: $PlatformShort$ Excel Library| Data Spreadsheet and Table | Infragistics
-_description: Use Infragistics' $PlatformShort$ excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using $ProductName$ excel library!
+title: $Platform$ Excel Library| Data Spreadsheet and Table | Infragistics
+_description: Use Infragistics' $Platform$ excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using $ProductName$ excel library!
 _keywords: Excel library, $ProductName$, Infragistics, workbook
 mentionedTypes: ['Workbook']
 ---
-# $PlatformShort$ Excel Library Overview
+# $Platform$ Excel Library Overview
 
-The Infragistics $PlatformShort$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like Workbooks, Worksheets, Cells, Formulas and many more. The Infragistics $PlatformShort$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
+The Infragistics $Platform$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like `Workbook`, `Worksheet`, `Cell`, `Formula` and many more. The Infragistics $Platform$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
-## Demo
+## $Platform$ Excel Library Example
 
-<div class="sample-container loading" style="height: 100px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/overview"></sample-button>
 
+<code-view style="height: 100px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
+           alt="$Platform$ Excel Library Example"
+           github-src="excel/excel-library/overview">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -26,14 +28,10 @@ When installing the excel package, the core package must also be installed.
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 </pre>
-<!-- end: Angular, React, WebComponents -->
 
 ## Required Modules
 
-The $PlatformShort$ excel library requires the following modules<!-- Angular, React, WebComponents -->.<!-- end: Angular, React, WebComponents --><!-- Blazor --> to be registered in your application entry point:
-
-* ExcelModule
-<!-- end: Blazor -->
+The $Platform$ excel library requires the following modules:
 
 ```ts
 // app.module.ts
@@ -75,6 +73,46 @@ The Excel Library contains 5 modules that you can use to limit bundle size of yo
 -	**IgxExcelXlsxModule** – This contains the load and save logic for xlsx (and related) type files – namely the Excel2007 related and StrictOpenXml WorkbookFormats.
 -	**IgxExcelModule** – This references the other 4 modules and so basically ensures that all the functionality is loaded/available.
 
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+## Requirements
+
+In order to use the $Platform$ excel library, you need to add the following using statement:
+
+```razor
+@using Infragistics.Documents.Excel
+```
+
+If you are using a Web Assembly (WASM) Blazor project, there are a couple of extra steps:
+
+- Add a reference to the following script in the wwwroot/index.html file:
+
+```razor
+<script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
+```
+
+- Set the static `Workbook.InProcessRuntime` to the current runtime. This can be done by using the following code:
+
+```razor
+@using Microsoft.JSInterop
+
+@code {
+
+    [Inject]
+    public IJSRuntime Runtime { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Workbook.InProcessRuntime = (IJSInProcessRuntime)this.Runtime;
+    }
+}
+```
+
+<!-- end: Blazor -->
+
 ## Supported Versions of Microsoft Excel
 The following is a list of the supported versions of Excel.**
 
@@ -100,10 +138,11 @@ The following is a list of the supported versions of Excel.**
 ## Load and Save Workbooks
 Now that the Excel Library module is imported, next step is to load a workbook.
 
+<!-- Angular, React, WebComponents -->
 
-> [!NOTE]
->
-> In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
+
+<!-- end: Angular, React, WebComponents -->
 
 In order to load and save `Workbook` objects, you can utilize the save method of the actual `Workbook` object, as well as its static `Load` method.
 
@@ -117,7 +156,25 @@ var workbook = ExcelUtility.load(file);
 ExcelUtility.save(workbook, "fileName");
 ```
 
+```razor
+protected override void OnInitialized()
+{
+    var memoryStream = new System.IO.MemoryStream();
+    workbook.Save(memoryStream);
 
+    memoryStream.Position = 0;
+    var bytes = memoryStream.ToArray();
+    this.SaveFile(bytes, "fileName.xlsx", string.Empty);
+}
+
+private void SaveFile(byte[] bytes, string fileName, string mime)
+{
+    if (this.Runtime is WebAssemblyJSRuntime wasmRuntime)
+      wasmRuntime.InvokeUnmarshalled<string, string, byte[], bool>("BlazorDownloadFileFast", fileName, mime, bytes);
+    else if (this.Runtime is IJSInProcessRuntime inProc)
+      inProc.InvokeVoid("BlazorDownloadFile", fileName, mime, bytes);
+}
+```
 
 >[!NOTE]
 >For Angular
@@ -157,3 +214,9 @@ ExcelUtility.save(workbook, "fileName");
 ```
 >
 <!-- -->
+
+ ## API Members
+
+ - `Load`
+ - `WorkbookInProcessRuntime`
+ - `Workbook`

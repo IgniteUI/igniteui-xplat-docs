@@ -1,24 +1,23 @@
 ---
-title: $PlatformShort$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $PlatformShort$ map, scatter high density series, $ProductName$, Infragistics, $PlatformShort$ マップ, 散布高密度シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
+_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics, $Platform$ マップ, 散布高密度シリーズ, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $PlatformShort$ 散布高密度シリーズの使用
+# $Platform$ 地理高密度マップ
 
-$PlatformShort$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
+$Platform$ マップ コンポーネントでは、`GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
 
-## サンプル
+## $Platform$ 地理高密度マップの例
 
-<div class="sample-container loading" style="height: 400px">
-    <iframe id="geo-map-type-scatter-density-series-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-type-scatter-density-series-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="maps/geo-map/type-scatter-density-series"></sample-button>
+
+<code-view style="height: 400px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
+           alt="$Platform$ 散布高密度シリーズの使用の例"
+           github-src="maps/geo-map/type-scatter-density-series">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -233,8 +232,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LongitudeMemberPath="Lon"
         LatitudeMemberPath="Lat"
         HeatMaximumColor="Red"
@@ -243,7 +242,7 @@ onDataLoaded(csvData: string) {
         HeatMinimum="0"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
 
@@ -252,7 +251,7 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 
@@ -291,3 +290,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+## API メンバー
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

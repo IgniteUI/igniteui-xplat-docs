@@ -1,5 +1,8 @@
-{
-"types": [
-
-]
-}
+{"types":[
+  { "originalName":"ScrollbarStyle","isEnum":true,
+    "names":[{"platform":"React","fileName":"ScrollbarStyle.ts","mappedName":"ScrollbarStyle"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"ScrollbarStyle","mappedName":"Default"}],"originalName":"Default"},
+    { "names":[{"platform":"React","mappedType":"ScrollbarStyle","mappedName":"Fading"}],"originalName":"Fading"},
+    { "names":[{"platform":"React","mappedType":"ScrollbarStyle","mappedName":"Thin"}],"originalName":"Thin"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Navigation"}]}

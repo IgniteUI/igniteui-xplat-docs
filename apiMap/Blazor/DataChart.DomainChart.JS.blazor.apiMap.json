@@ -1,743 +1,374 @@
-{
-"types": [
-{
-    "originalName": "DomainChart",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DomainChart.cs",
- "mappedName": "DomainChart"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "PixelScalingRatio"}            ],
-           "originalName": "PixelScalingRatio"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleLeftMargin"}            ],
-           "originalName": "TitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleRightMargin"}            ],
-           "originalName": "TitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleTopMargin"}            ],
-           "originalName": "TitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TitleBottomMargin"}            ],
-           "originalName": "TitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleLeftMargin"}            ],
-           "originalName": "SubtitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleTopMargin"}            ],
-           "originalName": "SubtitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleRightMargin"}            ],
-           "originalName": "SubtitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "SubtitleBottomMargin"}            ],
-           "originalName": "SubtitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SubtitleTextColor"}            ],
-           "originalName": "SubtitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleTextColor"}            ],
-           "originalName": "TitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "LeftMargin"}            ],
-           "originalName": "LeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TopMargin"}            ],
-           "originalName": "TopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "RightMargin"}            ],
-           "originalName": "RightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "BottomMargin"}            ],
-           "originalName": "BottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TransitionDuration"}            ],
-           "originalName": "TransitionDuration"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "SubtitleTextStyle"}            ],
-           "originalName": "SubtitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TitleTextStyle"}            ],
-           "originalName": "TitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "DataSource"}            ],
-           "originalName": "ItemsSource"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "IncludedProperties"}            ],
-           "originalName": "IncludedProperties"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "ExcludedProperties"}            ],
-           "originalName": "ExcludedProperties"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Brushes"}            ],
-           "originalName": "Brushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Outlines"}            ],
-           "originalName": "Outlines"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Legend"}            ],
-           "originalName": "Legend"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsHorizontalZoomEnabled"}            ],
-           "originalName": "IsHorizontalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsVerticalZoomEnabled"}            ],
-           "originalName": "IsVerticalZoomEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "IsSeriesHighlightingEnabled"}            ],
-           "originalName": "IsSeriesHighlightingEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Rect", "mappedName": "WindowRect"}            ],
-           "originalName": "WindowRect"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "ChartTitle"}            ],
-           "originalName": "Title"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "Subtitle"}            ],
-           "originalName": "Subtitle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "TitleAlignment"}            ],
-           "originalName": "TitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "SubtitleAlignment"}            ],
-           "originalName": "SubtitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "UnknownValuePlotting", "mappedName": "UnknownValuePlotting"}            ],
-           "originalName": "UnknownValuePlotting"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Resolution"}            ],
-           "originalName": "Resolution"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "Thickness"}            ],
-           "originalName": "Thickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "MarkerTypeCollection", "mappedName": "MarkerTypes"}            ],
-           "originalName": "MarkerTypes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerBrushes"}            ],
-           "originalName": "MarkerBrushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "MarkerOutlines"}            ],
-           "originalName": "MarkerOutlines"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "MarkerMaxCount"}            ],
-           "originalName": "MarkerMaxCount"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AnimateSeriesWhenAxisRangeChanges"}            ],
-           "originalName": "AnimateSeriesWhenAxisRangeChanges"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "TrendLineBrushes"}            ],
-           "originalName": "TrendLineBrushes"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "TrendLineType", "mappedName": "TrendLineType"}            ],
-           "originalName": "TrendLineType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "TrendLineThickness"}            ],
-           "originalName": "TrendLineThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "AlignsGridLinesToPixels"}            ],
-           "originalName": "AlignsGridLinesToPixels"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "int", "mappedName": "TrendLinePeriod"}            ],
-           "originalName": "TrendLinePeriod"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "ToolTipType", "mappedName": "ToolTipType"}            ],
-           "originalName": "ToolTipType"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "CrosshairsDisplayMode", "mappedName": "CrosshairsDisplayMode"}            ],
-           "originalName": "CrosshairsDisplayMode"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CrosshairsSnapToData"}            ],
-           "originalName": "CrosshairsSnapToData"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CrosshairsAnnotationEnabled"}            ],
-           "originalName": "CrosshairsAnnotationEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "FinalValueAnnotationsVisible"}            ],
-           "originalName": "FinalValueAnnotationsVisible"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CalloutsVisible"}            ],
-           "originalName": "CalloutsVisible"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "CalloutStyleUpdatingEventEnabled"}            ],
-           "originalName": "CalloutStyleUpdatingEventEnabled"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutsXMemberPath"}            ],
-           "originalName": "CalloutsXMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutsYMemberPath"}            ],
-           "originalName": "CalloutsYMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutsLabelMemberPath"}            ],
-           "originalName": "CalloutsLabelMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "CalloutsContentMemberPath"}            ],
-           "originalName": "CalloutsContentMemberPath"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Destroy"}            ],
-           "originalName": "Destroy"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyResized"}            ],
-           "originalName": "NotifyResized"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyVisualPropertiesChanged"}            ],
-           "originalName": "NotifyVisualPropertiesChanged"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "Flush"}            ],
-           "originalName": "Flush"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "HideToolTip"}            ],
-           "originalName": "HideToolTip"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifySetItem"}            ],
-           "originalName": "NotifySetItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyClearItems"}            ],
-           "originalName": "NotifyClearItems"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyInsertItem"}            ],
-           "originalName": "NotifyInsertItem"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "NotifyRemoveItem"}            ],
-           "originalName": "NotifyRemoveItem"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "XYChart",
-   "names": [
-        { "platform": "Blazor",     "fileName": "XYChart.cs",
- "mappedName": "XYChart"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisLabelLeftMargin"}            ],
-           "originalName": "XAxisLabelLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisLabelTopMargin"}            ],
-           "originalName": "XAxisLabelTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisLabelRightMargin"}            ],
-           "originalName": "XAxisLabelRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisLabelBottomMargin"}            ],
-           "originalName": "XAxisLabelBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisLabelLeftMargin"}            ],
-           "originalName": "YAxisLabelLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisLabelTopMargin"}            ],
-           "originalName": "YAxisLabelTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisLabelRightMargin"}            ],
-           "originalName": "YAxisLabelRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisLabelBottomMargin"}            ],
-           "originalName": "YAxisLabelBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisLabelTextColor"}            ],
-           "originalName": "XAxisLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisLabelTextColor"}            ],
-           "originalName": "YAxisLabelTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleMargin"}            ],
-           "originalName": "XAxisTitleMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleMargin"}            ],
-           "originalName": "YAxisTitleMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleLeftMargin"}            ],
-           "originalName": "XAxisTitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleLeftMargin"}            ],
-           "originalName": "YAxisTitleLeftMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleTopMargin"}            ],
-           "originalName": "XAxisTitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleTopMargin"}            ],
-           "originalName": "YAxisTitleTopMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleRightMargin"}            ],
-           "originalName": "XAxisTitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleRightMargin"}            ],
-           "originalName": "YAxisTitleRightMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleBottomMargin"}            ],
-           "originalName": "XAxisTitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleBottomMargin"}            ],
-           "originalName": "YAxisTitleBottomMargin"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisTitleTextColor"}            ],
-           "originalName": "XAxisTitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisTitleTextColor"}            ],
-           "originalName": "YAxisTitleTextColor"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisLabelTextStyle"}            ],
-           "originalName": "XAxisLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisLabelTextStyle"}            ],
-           "originalName": "YAxisLabelTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisTitleTextStyle"}            ],
-           "originalName": "XAxisTitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisTitleTextStyle"}            ],
-           "originalName": "YAxisTitleTextStyle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "XAxisLabel"}            ],
-           "originalName": "XAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "YAxisLabel"}            ],
-           "originalName": "YAxisLabel"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisMajorStroke"}            ],
-           "originalName": "XAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisMajorStroke"}            ],
-           "originalName": "YAxisMajorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisMajorStrokeThickness"}            ],
-           "originalName": "XAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisMajorStrokeThickness"}            ],
-           "originalName": "YAxisMajorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisMinorStrokeThickness"}            ],
-           "originalName": "XAxisMinorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisMinorStrokeThickness"}            ],
-           "originalName": "YAxisMinorStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisStrip"}            ],
-           "originalName": "XAxisStrip"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisStrip"}            ],
-           "originalName": "YAxisStrip"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisStroke"}            ],
-           "originalName": "XAxisStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisStroke"}            ],
-           "originalName": "YAxisStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisStrokeThickness"}            ],
-           "originalName": "XAxisStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisStrokeThickness"}            ],
-           "originalName": "YAxisStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTickLength"}            ],
-           "originalName": "XAxisTickLength"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTickLength"}            ],
-           "originalName": "YAxisTickLength"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisTickStroke"}            ],
-           "originalName": "XAxisTickStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisTickStroke"}            ],
-           "originalName": "YAxisTickStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTickStrokeThickness"}            ],
-           "originalName": "XAxisTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTickStrokeThickness"}            ],
-           "originalName": "YAxisTickStrokeThickness"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisTitle"}            ],
-           "originalName": "XAxisTitle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisTitle"}            ],
-           "originalName": "YAxisTitle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "XAxisMinorStroke"}            ],
-           "originalName": "XAxisMinorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string", "mappedName": "YAxisMinorStroke"}            ],
-           "originalName": "YAxisMinorStroke"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisLabelAngle"}            ],
-           "originalName": "XAxisLabelAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisLabelAngle"}            ],
-           "originalName": "YAxisLabelAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisExtent"}            ],
-           "originalName": "XAxisExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisExtent"}            ],
-           "originalName": "YAxisExtent"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "XAxisTitleAngle"}            ],
-           "originalName": "XAxisTitleAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "double", "mappedName": "YAxisTitleAngle"}            ],
-           "originalName": "YAxisTitleAngle"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "XAxisInverted"}            ],
-           "originalName": "XAxisInverted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "bool", "mappedName": "YAxisInverted"}            ],
-           "originalName": "YAxisInverted"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "XAxisTitleAlignment"}            ],
-           "originalName": "XAxisTitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "VerticalAlignment", "mappedName": "YAxisTitleAlignment"}            ],
-           "originalName": "YAxisTitleAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "XAxisLabelHorizontalAlignment"}            ],
-           "originalName": "XAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "HorizontalAlignment", "mappedName": "YAxisLabelHorizontalAlignment"}            ],
-           "originalName": "YAxisLabelHorizontalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "VerticalAlignment", "mappedName": "XAxisLabelVerticalAlignment"}            ],
-           "originalName": "XAxisLabelVerticalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "VerticalAlignment", "mappedName": "YAxisLabelVerticalAlignment"}            ],
-           "originalName": "YAxisLabelVerticalAlignment"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "XAxisLabelVisibility"}            ],
-           "originalName": "XAxisLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Visibility", "mappedName": "YAxisLabelVisibility"}            ],
-           "originalName": "YAxisLabelVisibility"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "AxisLabelsLocation", "mappedName": "YAxisLabelLocation"}            ],
-           "originalName": "YAxisLabelLocation"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "ProvideContainer"}            ],
-           "originalName": "ProvideContainer"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetScaledValueX"}            ],
-           "originalName": "GetScaledValueX"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetUnscaledValueX"}            ],
-           "originalName": "GetUnscaledValueX"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetScaledValueY"}            ],
-           "originalName": "GetScaledValueY"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "method", "mappedName": "GetUnscaledValueY"}            ],
-           "originalName": "GetUnscaledValueY"
-       }   ],
-    "originalBaseTypeName": "DomainChart",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ChartSeriesEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "ChartSeriesEventArgs.cs",
- "mappedName": "ChartSeriesEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
-           "originalName": "Series"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "DomainChartSeriesPointerEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "DomainChartSeriesPointerEventArgs.cs",
- "mappedName": "DomainChartSeriesPointerEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Series", "mappedName": "Series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "Object", "mappedName": "Item"}            ],
-           "originalName": "Item"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"DomainChart",
+    "names":[{"platform":"Blazor","fileName":"DomainChart.cs","mappedName":"IgbDomainChart"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleLeftMargin"}],"originalName":"TitleLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleRightMargin"}],"originalName":"TitleRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleTopMargin"}],"originalName":"TitleTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TitleBottomMargin"}],"originalName":"TitleBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SubtitleLeftMargin"}],"originalName":"SubtitleLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SubtitleTopMargin"}],"originalName":"SubtitleTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SubtitleRightMargin"}],"originalName":"SubtitleRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"SubtitleBottomMargin"}],"originalName":"SubtitleBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SubtitleTextColor"}],"originalName":"SubtitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TitleTextColor"}],"originalName":"TitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"LeftMargin"}],"originalName":"LeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TopMargin"}],"originalName":"TopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"RightMargin"}],"originalName":"RightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"BottomMargin"}],"originalName":"BottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TransitionDuration"}],"originalName":"TransitionDuration"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SubtitleTextStyle"}],"originalName":"SubtitleTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TitleTextStyle"}],"originalName":"TitleTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"DataToolTipLayerGroupingMode","mappedName":"DataToolTipGroupingMode"}],"originalName":"DataToolTipGroupingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipPositionOffsetX"}],"originalName":"DataToolTipPositionOffsetX"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipPositionOffsetY"}],"originalName":"DataToolTipPositionOffsetY"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipDefaultPositionOffsetX"}],"originalName":"DataToolTipDefaultPositionOffsetX"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipDefaultPositionOffsetY"}],"originalName":"DataToolTipDefaultPositionOffsetY"},
+    { "names":[{"platform":"Blazor","mappedType":"DataTooltipGroupedPositionX","mappedName":"DataToolTipGroupedPositionModeX"}],"originalName":"DataToolTipGroupedPositionModeX"},
+    { "names":[{"platform":"Blazor","mappedType":"DataTooltipGroupedPositionY","mappedName":"DataToolTipGroupedPositionModeY"}],"originalName":"DataToolTipGroupedPositionModeY"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DataToolTipShouldUpdateWhenSeriesDataChanges"}],"originalName":"DataToolTipShouldUpdateWhenSeriesDataChanges"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"DataToolTipIncludedSeries"}],"originalName":"DataToolTipIncludedSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"DataToolTipExcludedSeries"}],"originalName":"DataToolTipExcludedSeries"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"DataToolTipIncludedColumns"}],"originalName":"DataToolTipIncludedColumns"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"DataToolTipExcludedColumns"}],"originalName":"DataToolTipExcludedColumns"},
+    { "names":[{"platform":"Blazor","mappedType":"DataAbbreviationMode","mappedName":"DataToolTipValueFormatAbbreviation"}],"originalName":"DataToolTipValueFormatAbbreviation"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"DataToolTipValueFormatMaxFractions"}],"originalName":"DataToolTipValueFormatMaxFractions"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"DataToolTipValueFormatMinFractions"}],"originalName":"DataToolTipValueFormatMinFractions"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendValueMode","mappedName":"DataToolTipValueFormatMode"}],"originalName":"DataToolTipValueFormatMode"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipValueFormatCulture"}],"originalName":"DataToolTipValueFormatCulture"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DataToolTipValueFormatUseGrouping"}],"originalName":"DataToolTipValueFormatUseGrouping"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipValueFormatString"}],"originalName":"DataToolTipValueFormatString"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"DataToolTipValueFormatSpecifiers"}],"originalName":"DataToolTipValueFormatSpecifiers"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueRowMarginBottom"}],"originalName":"dataToolTipValueRowMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueRowMarginLeft"}],"originalName":"dataToolTipValueRowMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueRowMarginRight"}],"originalName":"dataToolTipValueRowMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueRowMarginTop"}],"originalName":"dataToolTipValueRowMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DataToolTipValueRowVisible"}],"originalName":"DataToolTipValueRowVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipValueTextWhenMissingData"}],"originalName":"DataToolTipValueTextWhenMissingData"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DataToolTipValueTextUseSeriesColors"}],"originalName":"DataToolTipValueTextUseSeriesColors"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueTextMarginBottom"}],"originalName":"dataToolTipValueTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueTextMarginLeft"}],"originalName":"dataToolTipValueTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueTextMarginRight"}],"originalName":"dataToolTipValueTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipValueTextMarginTop"}],"originalName":"dataToolTipValueTextMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipValueTextColor"}],"originalName":"DataToolTipValueTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipHeaderFormatString"}],"originalName":"DataToolTipHeaderFormatString"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"DataToolTipHeaderFormatSpecifiers"}],"originalName":"DataToolTipHeaderFormatSpecifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipHeaderFormatCulture"}],"originalName":"DataToolTipHeaderFormatCulture"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendHeaderDateMode","mappedName":"DataToolTipHeaderFormatDate"}],"originalName":"DataToolTipHeaderFormatDate"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendHeaderTimeMode","mappedName":"DataToolTipHeaderFormatTime"}],"originalName":"DataToolTipHeaderFormatTime"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipHeaderText"}],"originalName":"DataToolTipHeaderText"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipHeaderTextColor"}],"originalName":"DataToolTipHeaderTextColor"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderTextMarginBottom"}],"originalName":"dataToolTipHeaderTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderTextMarginLeft"}],"originalName":"dataToolTipHeaderTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderTextMarginRight"}],"originalName":"dataToolTipHeaderTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderTextMarginTop"}],"originalName":"dataToolTipHeaderTextMargin.top"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderRowMarginBottom"}],"originalName":"dataToolTipHeaderRowMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderRowMarginLeft"}],"originalName":"dataToolTipHeaderRowMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderRowMarginRight"}],"originalName":"dataToolTipHeaderRowMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipHeaderRowMarginTop"}],"originalName":"dataToolTipHeaderRowMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"DataToolTipHeaderRowVisible"}],"originalName":"DataToolTipHeaderRowVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryTitleTextColor"}],"originalName":"DataToolTipSummaryTitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendSummaryType","mappedName":"DataToolTipSummaryType"}],"originalName":"DataToolTipSummaryType"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryTitleText"}],"originalName":"DataToolTipSummaryTitleText"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryTitleTextMarginBottom"}],"originalName":"dataToolTipSummaryTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryTitleTextMarginLeft"}],"originalName":"dataToolTipSummaryTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryTitleTextMarginRight"}],"originalName":"dataToolTipSummaryTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryTitleTextMarginTop"}],"originalName":"dataToolTipSummaryTitleTextMargin.top"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryRowMarginBottom"}],"originalName":"dataToolTipSummaryRowMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryRowMarginLeft"}],"originalName":"dataToolTipSummaryRowMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryRowMarginRight"}],"originalName":"dataToolTipSummaryRowMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipSummaryRowMarginTop"}],"originalName":"dataToolTipSummaryRowMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryValueTextColor"}],"originalName":"DataToolTipSummaryValueTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryLabelText"}],"originalName":"DataToolTipSummaryLabelText"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryLabelTextColor"}],"originalName":"DataToolTipSummaryLabelTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryUnitsText"}],"originalName":"DataToolTipSummaryUnitsText"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipSummaryUnitsTextColor"}],"originalName":"DataToolTipSummaryUnitsTextColor"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipBadgeMarginBottom"}],"originalName":"dataToolTipBadgeMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipBadgeMarginLeft"}],"originalName":"dataToolTipBadgeMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipBadgeMarginRight"}],"originalName":"dataToolTipBadgeMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipBadgeMarginTop"}],"originalName":"dataToolTipBadgeMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendItemBadgeShape","mappedName":"DataToolTipBadgeShape"}],"originalName":"DataToolTipBadgeShape"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendUnitsMode","mappedName":"DataToolTipUnitsDisplayMode"}],"originalName":"DataToolTipUnitsDisplayMode"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipUnitsText"}],"originalName":"DataToolTipUnitsText"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipUnitsTextColor"}],"originalName":"DataToolTipUnitsTextColor"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipUnitsTextMarginBottom"}],"originalName":"dataToolTipUnitsTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipUnitsTextMarginLeft"}],"originalName":"dataToolTipUnitsTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipUnitsTextMarginRight"}],"originalName":"dataToolTipUnitsTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipUnitsTextMarginTop"}],"originalName":"dataToolTipUnitsTextMargin.top"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipTitleTextMarginBottom"}],"originalName":"dataToolTipTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipTitleTextMarginLeft"}],"originalName":"dataToolTipTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipTitleTextMarginRight"}],"originalName":"dataToolTipTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipTitleTextMarginTop"}],"originalName":"dataToolTipTitleTextMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipTitleTextColor"}],"originalName":"DataToolTipTitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"DataLegendLabelMode","mappedName":"DataToolTipLabelDisplayMode"}],"originalName":"DataToolTipLabelDisplayMode"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"DataToolTipLabelTextColor"}],"originalName":"DataToolTipLabelTextColor"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipLabelTextMarginBottom"}],"originalName":"dataToolTipLabelTextMargin.bottom"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipLabelTextMarginLeft"}],"originalName":"dataToolTipLabelTextMargin.left"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipLabelTextMarginRight"}],"originalName":"dataToolTipLabelTextMargin.right"},
+    { 
+    "names":[{"platform":"Blazor","mappedType":"double","mappedName":"DataToolTipLabelTextMarginTop"}],"originalName":"dataToolTipLabelTextMargin.top"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSortDescriptionCollection","mappedName":"SortDescriptions"}],"originalName":"SortDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSortDescriptionCollection","mappedName":"GroupDescriptions"}],"originalName":"GroupDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFilterExpressionCollection","mappedName":"FilterExpressions"}],"originalName":"FilterExpressions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSummaryDescriptionCollection","mappedName":"SummaryDescriptions"}],"originalName":"SummaryDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSortDescriptionCollection","mappedName":"InitialSortDescriptions"}],"originalName":"InitialSortDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSortDescriptionCollection","mappedName":"InitialGroupDescriptions"}],"originalName":"InitialGroupDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbChartSummaryDescriptionCollection","mappedName":"InitialSummaryDescriptions"}],"originalName":"InitialSummaryDescriptions"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"InitialSorts"}],"originalName":"InitialSorts"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"InitialGroups"}],"originalName":"InitialGroups"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"InitialSummaries"}],"originalName":"InitialSummaries"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"DataSource"}],"originalName":"ItemsSource"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"IncludedProperties"}],"originalName":"IncludedProperties"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"ExcludedProperties"}],"originalName":"ExcludedProperties"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Brushes"}],"originalName":"Brushes"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Outlines"}],"originalName":"Outlines"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualBrushes"}],"originalName":"ActualBrushes"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualOutlines"}],"originalName":"ActualOutlines"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbLegendBase","mappedName":"Legend"}],"originalName":"Legend"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsHorizontalZoomEnabled"}],"originalName":"IsHorizontalZoomEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsVerticalZoomEnabled"}],"originalName":"IsVerticalZoomEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSeriesHighlightingEnabled"}],"originalName":"IsSeriesHighlightingEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"Rect","mappedName":"WindowRect"}],"originalName":"WindowRect"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ChartTitle"}],"originalName":"Title"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Subtitle"}],"originalName":"Subtitle"},
+    { "names":[{"platform":"Blazor","mappedType":"HorizontalAlignment","mappedName":"TitleAlignment"}],"originalName":"TitleAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"HorizontalAlignment","mappedName":"SubtitleAlignment"}],"originalName":"SubtitleAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"UnknownValuePlotting","mappedName":"UnknownValuePlotting"}],"originalName":"UnknownValuePlotting"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Resolution"}],"originalName":"Resolution"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"Thickness"}],"originalName":"Thickness"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesOutlineMode","mappedName":"OutlineMode"}],"originalName":"OutlineMode"},
+    { "names":[{"platform":"Blazor","mappedType":"MarkerOutlineMode","mappedName":"MarkerOutlineMode"}],"originalName":"MarkerOutlineMode"},
+    { "names":[{"platform":"Blazor","mappedType":"MarkerFillMode","mappedName":"MarkerFillMode"}],"originalName":"MarkerFillMode"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MarkerFillOpacity"}],"originalName":"MarkerFillOpacity"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"MarkerThickness"}],"originalName":"MarkerThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbMarkerTypeCollection","mappedName":"MarkerTypes"}],"originalName":"MarkerTypes"},
+    { "names":[{"platform":"Blazor","mappedType":"MarkerAutomaticBehavior","mappedName":"MarkerAutomaticBehavior"}],"originalName":"MarkerAutomaticBehavior"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MarkerBrushes"}],"originalName":"MarkerBrushes"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MarkerOutlines"}],"originalName":"MarkerOutlines"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"MarkerMaxCount"}],"originalName":"MarkerMaxCount"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"AreaFillOpacity"}],"originalName":"AreaFillOpacity"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AnimateSeriesWhenAxisRangeChanges"}],"originalName":"AnimateSeriesWhenAxisRangeChanges"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TrendLineBrushes"}],"originalName":"TrendLineBrushes"},
+    { "names":[{"platform":"Blazor","mappedType":"TrendLineType","mappedName":"TrendLineType"}],"originalName":"TrendLineType"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"TrendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AlignsGridLinesToPixels"}],"originalName":"AlignsGridLinesToPixels"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PlotAreaMarginLeft"}],"originalName":"PlotAreaMarginLeft"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PlotAreaMarginTop"}],"originalName":"PlotAreaMarginTop"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PlotAreaMarginRight"}],"originalName":"PlotAreaMarginRight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PlotAreaMarginBottom"}],"originalName":"PlotAreaMarginBottom"},
+    { "names":[{"platform":"Blazor","mappedType":"ComputedPlotAreaMarginMode","mappedName":"ComputedPlotAreaMarginMode"}],"originalName":"ComputedPlotAreaMarginMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesPlotAreaMarginHorizontalMode","mappedName":"SeriesPlotAreaMarginHorizontalMode"}],"originalName":"SeriesPlotAreaMarginHorizontalMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesPlotAreaMarginVerticalMode","mappedName":"SeriesPlotAreaMarginVerticalMode"}],"originalName":"SeriesPlotAreaMarginVerticalMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesHighlightingMode","mappedName":"HighlightingMode"}],"originalName":"HighlightingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesHighlightingBehavior","mappedName":"HighlightingBehavior"}],"originalName":"HighlightingBehavior"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendHighlightingMode","mappedName":"LegendHighlightingMode"}],"originalName":"LegendHighlightingMode"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendItemBadgeShape","mappedName":"LegendItemBadgeShape"}],"originalName":"LegendItemBadgeShape"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendItemBadgeMode","mappedName":"LegendItemBadgeMode"}],"originalName":"LegendItemBadgeMode"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"TrendLinePeriod"}],"originalName":"TrendLinePeriod"},
+    { "names":[{"platform":"Blazor","mappedType":"ToolTipType","mappedName":"ToolTipType"}],"originalName":"ToolTipType"},
+    { "names":[{"platform":"Blazor","mappedType":"CrosshairsDisplayMode","mappedName":"CrosshairsDisplayMode"}],"originalName":"CrosshairsDisplayMode"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CrosshairsSnapToData"}],"originalName":"CrosshairsSnapToData"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsLineVerticalStroke"}],"originalName":"CrosshairsLineVerticalStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"CrosshairsLineThickness"}],"originalName":"CrosshairsLineThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsLineHorizontalStroke"}],"originalName":"CrosshairsLineHorizontalStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CrosshairsAnnotationEnabled"}],"originalName":"CrosshairsAnnotationEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsAnnotationXAxisBackground"}],"originalName":"CrosshairsAnnotationXAxisBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsAnnotationYAxisBackground"}],"originalName":"CrosshairsAnnotationYAxisBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsAnnotationXAxisTextColor"}],"originalName":"CrosshairsAnnotationXAxisTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CrosshairsAnnotationYAxisTextColor"}],"originalName":"CrosshairsAnnotationYAxisTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"CrosshairsAnnotationXAxisPrecision"}],"originalName":"CrosshairsAnnotationXAxisPrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"CrosshairsAnnotationYAxisPrecision"}],"originalName":"CrosshairsAnnotationYAxisPrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldAvoidAxisAnnotationCollisions"}],"originalName":"ShouldAvoidAxisAnnotationCollisions"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"FinalValueAnnotationsVisible"}],"originalName":"FinalValueAnnotationsVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FinalValueAnnotationsBackground"}],"originalName":"FinalValueAnnotationsBackground"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"FinalValueAnnotationsTextColor"}],"originalName":"FinalValueAnnotationsTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"FinalValueAnnotationsPrecision"}],"originalName":"FinalValueAnnotationsPrecision"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CalloutsVisible"}],"originalName":"CalloutsVisible"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"CalloutStyleUpdatingEventEnabled"}],"originalName":"CalloutStyleUpdatingEventEnabled"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"CalloutsDataSource"}],"originalName":"CalloutsItemsSource"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbCalloutPlacementPositionsCollection","mappedName":"CalloutsAllowedPositions"}],"originalName":"CalloutsAllowedPositions"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutsXMemberPath"}],"originalName":"CalloutsXMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutsYMemberPath"}],"originalName":"CalloutsYMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutsLabelMemberPath"}],"originalName":"CalloutsLabelMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalloutsContentMemberPath"}],"originalName":"CalloutsContentMemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesViewerScrollbarMode","mappedName":"HorizontalViewScrollbarMode"}],"originalName":"HorizontalViewScrollbarMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesViewerScrollbarMode","mappedName":"VerticalViewScrollbarMode"}],"originalName":"VerticalViewScrollbarMode"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesViewerHorizontalScrollbarPosition","mappedName":"HorizontalViewScrollbarPosition"}],"originalName":"HorizontalViewScrollbarPosition"},
+    { "names":[{"platform":"Blazor","mappedType":"SeriesViewerVerticalScrollbarPosition","mappedName":"VerticalViewScrollbarPosition"}],"originalName":"VerticalViewScrollbarPosition"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HorizontalViewScrollbarFill"}],"originalName":"HorizontalViewScrollbarFill"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"HorizontalViewScrollbarOutline"}],"originalName":"HorizontalViewScrollbarOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarStrokeThickness"}],"originalName":"HorizontalViewScrollbarStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarMaxOpacity"}],"originalName":"HorizontalViewScrollbarMaxOpacity"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarCornerRadius"}],"originalName":"HorizontalViewScrollbarCornerRadius"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarHeight"}],"originalName":"HorizontalViewScrollbarHeight"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarInset"}],"originalName":"HorizontalViewScrollbarInset"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarTrackStartInset"}],"originalName":"HorizontalViewScrollbarTrackStartInset"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"HorizontalViewScrollbarTrackEndInset"}],"originalName":"HorizontalViewScrollbarTrackEndInset"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"HorizontalViewScrollbarShouldAddAutoTrackInsets"}],"originalName":"HorizontalViewScrollbarShouldAddAutoTrackInsets"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"VerticalViewScrollbarFill"}],"originalName":"VerticalViewScrollbarFill"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"VerticalViewScrollbarOutline"}],"originalName":"VerticalViewScrollbarOutline"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarStrokeThickness"}],"originalName":"VerticalViewScrollbarStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarMaxOpacity"}],"originalName":"VerticalViewScrollbarMaxOpacity"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarCornerRadius"}],"originalName":"VerticalViewScrollbarCornerRadius"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarWidth"}],"originalName":"VerticalViewScrollbarWidth"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarInset"}],"originalName":"VerticalViewScrollbarInset"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarTrackStartInset"}],"originalName":"VerticalViewScrollbarTrackStartInset"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"VerticalViewScrollbarTrackEndInset"}],"originalName":"VerticalViewScrollbarTrackEndInset"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"VerticalViewScrollbarShouldAddAutoTrackInsets"}],"originalName":"VerticalViewScrollbarShouldAddAutoTrackInsets"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Destroy"}],"originalName":"Destroy"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyResized"}],"originalName":"NotifyResized"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyVisualPropertiesChanged"}],"originalName":"NotifyVisualPropertiesChanged"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"HideToolTip"}],"originalName":"HideToolTip"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ReplayTransitionIn"}],"originalName":"ReplayTransitionIn"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"NotifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"XYChart",
+    "names":[{"platform":"Blazor","fileName":"XYChart.cs","mappedName":"IgbXYChart"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisLabelLeftMargin"}],"originalName":"XAxisLabelLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisLabelTopMargin"}],"originalName":"XAxisLabelTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisLabelRightMargin"}],"originalName":"XAxisLabelRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisLabelBottomMargin"}],"originalName":"XAxisLabelBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisLabelLeftMargin"}],"originalName":"YAxisLabelLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisLabelTopMargin"}],"originalName":"YAxisLabelTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisLabelRightMargin"}],"originalName":"YAxisLabelRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisLabelBottomMargin"}],"originalName":"YAxisLabelBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisLabelTextColor"}],"originalName":"XAxisLabelTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisLabelTextColor"}],"originalName":"YAxisLabelTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualXAxisLabelTextColor"}],"originalName":"ActualXAxisLabelTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualYAxisLabelTextColor"}],"originalName":"ActualYAxisLabelTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleMargin"}],"originalName":"XAxisTitleMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleMargin"}],"originalName":"YAxisTitleMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleLeftMargin"}],"originalName":"XAxisTitleLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleLeftMargin"}],"originalName":"YAxisTitleLeftMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleTopMargin"}],"originalName":"XAxisTitleTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleTopMargin"}],"originalName":"YAxisTitleTopMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleRightMargin"}],"originalName":"XAxisTitleRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleRightMargin"}],"originalName":"YAxisTitleRightMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleBottomMargin"}],"originalName":"XAxisTitleBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleBottomMargin"}],"originalName":"YAxisTitleBottomMargin"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisTitleTextColor"}],"originalName":"XAxisTitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisTitleTextColor"}],"originalName":"YAxisTitleTextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisLabelTextStyle"}],"originalName":"XAxisLabelTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisLabelTextStyle"}],"originalName":"YAxisLabelTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisTitleTextStyle"}],"originalName":"XAxisTitleTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisTitleTextStyle"}],"originalName":"YAxisTitleTextStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"XAxisLabel"}],"originalName":"XAxisLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"YAxisLabel"}],"originalName":"YAxisLabel"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisMajorStroke"}],"originalName":"XAxisMajorStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisMajorStroke"}],"originalName":"YAxisMajorStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisMajorStrokeThickness"}],"originalName":"XAxisMajorStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMajorStrokeThickness"}],"originalName":"YAxisMajorStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisMinorStrokeThickness"}],"originalName":"XAxisMinorStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisMinorStrokeThickness"}],"originalName":"YAxisMinorStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisStrip"}],"originalName":"XAxisStrip"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisStrip"}],"originalName":"YAxisStrip"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisStroke"}],"originalName":"XAxisStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisStroke"}],"originalName":"YAxisStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisStrokeThickness"}],"originalName":"XAxisStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisStrokeThickness"}],"originalName":"YAxisStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTickLength"}],"originalName":"XAxisTickLength"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTickLength"}],"originalName":"YAxisTickLength"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisTickStroke"}],"originalName":"XAxisTickStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisTickStroke"}],"originalName":"YAxisTickStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTickStrokeThickness"}],"originalName":"XAxisTickStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTickStrokeThickness"}],"originalName":"YAxisTickStrokeThickness"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisTitle"}],"originalName":"XAxisTitle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisTitle"}],"originalName":"YAxisTitle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisMinorStroke"}],"originalName":"XAxisMinorStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisMinorStroke"}],"originalName":"YAxisMinorStroke"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisLabelAngle"}],"originalName":"XAxisLabelAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisLabelAngle"}],"originalName":"YAxisLabelAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisExtent"}],"originalName":"XAxisExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisExtent"}],"originalName":"YAxisExtent"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"XAxisTitleAngle"}],"originalName":"XAxisTitleAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"YAxisTitleAngle"}],"originalName":"YAxisTitleAngle"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"XAxisInverted"}],"originalName":"XAxisInverted"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"YAxisInverted"}],"originalName":"YAxisInverted"},
+    { "names":[{"platform":"Blazor","mappedType":"HorizontalAlignment","mappedName":"XAxisTitleAlignment"}],"originalName":"XAxisTitleAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"VerticalAlignment","mappedName":"YAxisTitleAlignment"}],"originalName":"YAxisTitleAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"HorizontalAlignment","mappedName":"XAxisLabelHorizontalAlignment"}],"originalName":"XAxisLabelHorizontalAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"HorizontalAlignment","mappedName":"YAxisLabelHorizontalAlignment"}],"originalName":"YAxisLabelHorizontalAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"VerticalAlignment","mappedName":"XAxisLabelVerticalAlignment"}],"originalName":"XAxisLabelVerticalAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"VerticalAlignment","mappedName":"YAxisLabelVerticalAlignment"}],"originalName":"YAxisLabelVerticalAlignment"},
+    { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"XAxisLabelVisibility"}],"originalName":"XAxisLabelVisibility"},
+    { "names":[{"platform":"Blazor","mappedType":"Visibility","mappedName":"YAxisLabelVisibility"}],"originalName":"YAxisLabelVisibility"},
+    { "names":[{"platform":"Blazor","mappedType":"YAxisLabelLocation","mappedName":"YAxisLabelLocation"}],"originalName":"YAxisLabelLocation"},
+    { "names":[{"platform":"Blazor","mappedType":"XAxisLabelLocation","mappedName":"XAxisLabelLocation"}],"originalName":"XAxisLabelLocation"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"XAxisLabelFormat"}],"originalName":"XAxisLabelFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"XAxisLabelFormatSpecifiers"}],"originalName":"XAxisLabelFormatSpecifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"YAxisLabelFormat"}],"originalName":"YAxisLabelFormat"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"YAxisLabelFormatSpecifiers"}],"originalName":"YAxisLabelFormatSpecifiers"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledValueX"}],"originalName":"GetScaledValueX"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledValueX"}],"originalName":"GetUnscaledValueX"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetScaledValueY"}],"originalName":"GetScaledValueY"},
+    { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetUnscaledValueY"}],"originalName":"GetUnscaledValueY"}],"originalBaseTypeName":"DomainChart","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChartGroupDescription",
+    "names":[{"platform":"Blazor","fileName":"ChartGroupDescription.cs","mappedName":"IgbChartGroupDescription"}],"members":[],"originalBaseTypeName":"ChartSortDescription","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChartSortDescription",
+    "names":[{"platform":"Blazor","fileName":"ChartSortDescription.cs","mappedName":"IgbChartSortDescription"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Field"}],"originalName":"Field"},
+    { "names":[{"platform":"Blazor","mappedType":"ListSortDirection","mappedName":"SortDirection"}],"originalName":"SortDirection"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChartSummaryDescription",
+    "names":[{"platform":"Blazor","fileName":"ChartSummaryDescription.cs","mappedName":"IgbChartSummaryDescription"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Field"}],"originalName":"Field"},
+    { "names":[{"platform":"Blazor","mappedType":"SummaryOperand","mappedName":"Operand"}],"originalName":"Operand"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CalculatorDisplayName"}],"originalName":"CalculatorDisplayName"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ChartSeriesEventArgs",
+    "names":[{"platform":"Blazor","fileName":"ChartSeriesEventArgs.cs","mappedName":"IgbChartSeriesEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DomainChartSeriesPointerEventArgs",
+    "names":[{"platform":"Blazor","fileName":"DomainChartSeriesPointerEventArgs.cs","mappedName":"IgbDomainChartSeriesPointerEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"IgbSeries","mappedName":"Series"}],"originalName":"Series"},
+    { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"Item"}],"originalName":"Item"}],"originalNamespace":"Infragistics.Controls.Charts"}]}

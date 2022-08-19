@@ -1,20 +1,22 @@
 ---
-title: $PlatformShort$ Excel Library| Using Workbooks| Infragistics
-_description: Use Infragistics' $PlatformShort$ excel library to create workbooks and worksheets, input data and export the date to Microsoft® Excel. View $ProductName$ excel tutorials for more information!
+title: $Platform$ Excel Library| Using Workbooks| Infragistics
+_description: Use Infragistics' $Platform$ excel library to create workbooks and worksheets, input data and export the date to Microsoft® Excel. View $ProductName$ excel tutorials for more information!
 _keywords: Excel library, workbooks, $ProductName$, Infragistics
 mentionedTypes: ['Workbook']
 ---
-# $PlatformShort$ Using Workbooks
+# $Platform$ Using Workbooks
 
-The Infragistics $PlatformShort$ Excel Engine enables you to save data to and load data from Microsoft® Excel®. You can create workbooks and worksheets, input data, and export the data to Excel using the library’s various classes. The Infragistics $PlatformShort$ Excel Engine makes it easy to export the data in your application as an Excel spreadsheet as well as import data from Excel into your application.
+The Infragistics $Platform$ Excel Engine enables you to save data to and load data from Microsoft® Excel®. You can create workbooks and worksheets, input data, and export the data to Excel using the library’s various classes. The Infragistics $Platform$ Excel Engine makes it easy to export the data in your application as an Excel spreadsheet as well as import data from Excel into your application.
 
-## Demo
+## $Platform$ Using Workbooks Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/operations-on-workbooks"></sample-button>
 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
+           alt="$Platform$ Using Workbooks Example"
+           github-src="excel/excel-library/operations-on-workbooks">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -30,27 +32,34 @@ font.name = "Times New Roman";
 font.height = 16 * 20;
 ```
 
+```razor
+var workbook = new Workbook();
+var font = workbook.Styles.NormalStyle.StyleFormat.Font;
+font.Name = "Times New Roman";
+font.Height = 16 * 20;
+```
+
 ## Setting Workbook Properties
 
-Microsoft Excel® document properties provide information to help organize and keep track of your documents. You can use the Infragistics $PlatformShort$ Excel Library to set these properties using the `Workbook` object’s `DocumentProperties` property. The available properties are:
+Microsoft Excel® document properties provide information to help organize and keep track of your documents. You can use the Infragistics $Platform$ Excel Library to set these properties using the `Workbook` object’s `DocumentProperties` property. The available properties are:
 
 - `Author`
 
 - `Title`
 
-- `subject`
+- `Subject`
 
-- `keywords`
+- `Keywords`
 
-- `category`
+- `Category`
 
-- `status`
+- `Status`
 
-- `comments`
+- `Comments`
 
-- `company`
+- `Company`
 
-- `manager`
+- `Manager`
 
 The following code demonstrates how to create a workbook and set its `title` and `status` document properties.
 
@@ -58,6 +67,12 @@ The following code demonstrates how to create a workbook and set its `title` and
 var workbook = new Workbook();
 workbook.documentProperties.title = "Expense Report";
 workbook.documentProperties.status = "Complete";
+```
+
+```razor
+var workbook = new Workbook();
+workbook.DocumentProperties.Title = "Expense Report";
+workbook.DocumentProperties.Status = "Complete";
 ```
 
 ## Workbook Protection
@@ -79,7 +94,10 @@ var workbook = new Workbook();
 workbook.protect(false, false);
 ```
 
-- isProtected
+```razor
+var workbook = new Workbook();
+workbook.Protect(false, false);
+```
 
 Check if a workbook has protection. This read-only property returns true if the workbook has any protection set using the overloads of the Protect method.
 
@@ -88,7 +106,10 @@ var workbook = new Workbook();
 var protect = workbook.isProtected;
 ```
 
-- protection
+```razor
+var workbook = new Workbook();
+var protect = workbook.IsProtected;
+```
 
 This read-only property returns an object of type WorkbookProtection which contains properties for obtaining each protection setting individually.
 
@@ -96,3 +117,15 @@ This read-only property returns an object of type WorkbookProtection which conta
 var workbook = new Workbook();
 var protection = workbook.protection;
 ```
+
+```razor
+var workbook = new Workbook();
+var protect = workbook.Protection;
+```
+
+ ## API Members
+
+ - `DocumentProperties`
+ - `WorkbookProtection`
+ - `Workbook`
+ - `Workbook`

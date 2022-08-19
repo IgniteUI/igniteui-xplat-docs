@@ -1,0 +1,17 @@
+{"extraFiles":["igx-column-grouping-module.ts"],
+  "types":[
+  { "originalName":"ColumnGrouping",
+    "names":[{"platform":"Angular","fileName":"igx-column-grouping-component.ts","mappedName":"IgxColumnGroupingComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxDataGridComponent","mappedName":"targetGrid"}],"originalName":"TargetGrid"},
+    { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
+    { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"title"}],"originalName":"Title"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleColor"}],"originalName":"TitleColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"iconColor"}],"originalName":"IconColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"itemBackgroundColor"}],"originalName":"ItemBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"itemHoverBackgroundColor"}],"originalName":"ItemHoverBackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}

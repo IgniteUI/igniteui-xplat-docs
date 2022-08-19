@@ -1,19 +1,22 @@
 ---
-title: $PlatformShort$ Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
-_description: Learn how configuring your $PlatformShort$ spreadsheets with $ProductName$ helps you better chart data. Improve your data visualization with Infragistics!
+title: $Platform$ Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
+_description: Learn how configuring your $Platform$ spreadsheets with $ProductName$ helps you better chart data. Improve your data visualization with Infragistics!
 _keywords: Excel Spreadsheet,  $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Configuring Spreadsheet
+# $Platform$ Configuring Spreadsheet
 
-The $PlatformShort$ Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
+The $Platform$ Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
 
-## Demo
+## $Platform$ Configuring Spreadsheet Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/config-options"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
+           alt="$Platform$ Configuring Spreadsheet Example"
+           github-src="excel/spreadsheet/config-options">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -21,7 +24,7 @@ The $PlatformShort$ Spreadsheet component allows the user to configure many diff
 
 When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the `Enter` key, depending on the configuration of the spreadsheet.
 
-In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to `true`. If set to false, the active cell will stay the same when pressing the `Enter` key.
+In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the `Enter` key.
 
 You can also configure the direction of the adjacent cell navigated to on press of the `Enter` key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
 
@@ -60,7 +63,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## Configuring Formula Bar
 
-The $PlatformShort$ `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
+The $Platform$ `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
 
 The following code snippets demonstrate the above:
 
@@ -225,7 +228,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## Configuring Zoom Level
 
-The $PlatformShort$ Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
+The $Platform$ Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
 
 Setting this property to a number represents the percentage as a whole number, so setting the `ZoomLevel` to 100 is equivalent to setting it to 100%.
 
@@ -246,3 +249,17 @@ The following code snippets show how to configure the spreadsheet's zoom level:
 ```ts
 this.spreadsheet.zoomLevel = 200;
 ```
+
+## API Members
+
+ - `ActiveCell`
+ - `ActiveSelection`
+ - `CellRanges`
+ - `ExtendSelection`:
+ - `SelectionMode`
+ - `SpreadsheetCellRange`
+ - `SpreadsheetSelection`
+ - `Spreadsheet`
+ - `WindowOptions`
+ - `Workbook`
+ - `ZoomLevel`

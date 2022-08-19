@@ -1,23 +1,27 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | セルの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。$ProductName$ Excel のサンプルを是非お試しください!
+title: $Platform$ Excel ライブラリ | セルの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。$ProductName$ Excel のサンプルを是非お試しください!
 _keywords: Excel library,  cell operations, $ProductName$, Infragistics, Excel ライブラリ, セル操作, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'WorkbookStyleCollection', 'IWorksheetCellFormat', 'WorkbookColorInfo', 'DisplayOptions']
 _language: ja
 ---
-# $PlatformShort$ セルの使用
+# $Platform$ セルの使用
 
 Excel ワークシートの `WorksheetCell` オブジェクトは、ワークシートの実際のデータ値を保持するオブジェクトです。このトピックは、名前で領域にアクセス、数式やコメントをセルに追加、結合および書式設定など、セルで実行できる多くの操作について説明します。
 
-## サンプル
+## $Platform$ セルの使用の例
 
-<div class="sample-container loading" style="height: 150px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/working-with-cells"></sample-button>
+
+<code-view style="height: 200px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
+           alt="$Platform$ セルの使用の例"
+           github-src="excel/excel-library/working-with-cells">
+</code-view>
 
 <div class="divider--half"></div>
 
+<!-- Angular, React, WebComponents -->
 ## 参照
 
 以下のコードは、以下のコード スニペットを使用するインポートを示します。
@@ -31,6 +35,7 @@ import { NamedReference } from "{PackageExcel}";
 import { WorksheetCellComment } from "{PackageExcel}";
 import { FormattedString } from "{PackageExcel}";
 ```
+<!-- end: Angular, React, WebComponents -->
 
 ## セルと領域を参照
 
@@ -48,11 +53,21 @@ var cell = worksheet.getCell("E2");
 var region = worksheet.getRegion("G1:G10");
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Accessing a single cell
+var cell = worksheet.GetCell("E2");
+//Accessing a range of cells
+var region = worksheet.GetRegion("G1:G10");
+```
+
 ## セルと領域に名前でアクセス
 
 Microsoft Excel では各セルとセル領域に名前が割り当てられています。アドレスの代わりにセルまたは領域の名前を使用してセルまたは領域を参照できます。
 
-Infragistics $PlatformShort$ Excel Library は、`Worksheet` オブジェクトの `GetCell` と `GetRegion` メソッドによって、名前によるセルおよび領域の参照をサポートします。そのセルまたは領域を参照する `NamedReference` インスタンスを使用してセルまたは領域を参照します。
+Infragistics $Platform$ Excel Library は、`Worksheet` オブジェクトの `GetCell` と `GetRegion` メソッドによって、名前によるセルおよび領域の参照をサポートします。そのセルまたは領域を参照する `NamedReference` インスタンスを使用してセルまたは領域を参照します。
 
 以下のコード スニペットは、セルまたは領域の名前の例です。
 
@@ -64,6 +79,14 @@ var cell_reference = workbook.namedReferences().add("myCell", "=Sheet1:A1");
 var region_reference = workbook.namedReferences().add("myRegion", "=Sheet1!A1:B2");
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cell_reference = workbook.NamedReferences.Add("myCell", "=Sheet1:A1");
+var region_reference = workbook.NamedReferences.Add("myRegion", "=Sheet1!A1:B2");
+```
+
 以下のコードは、"myCell" と "myRegion" 名前付き参照によって参照されたセルと領域を取得する例です。
 
 ```ts
@@ -71,9 +94,14 @@ var cell = worksheet.getCell("myCell");
 var region = worksheet.getRegion("myRegion");
 ```
 
+```razor
+var cell = worksheet.GetCell("myCell");
+var region = worksheet.GetRegion("myRegion");
+```
+
 ## セルにコメントを追加
 
-コメントによって、エンドユーザーがマウスをセル上にホバーするとセルのヒントまたはメモを表示することができます。コメントはテキストを含むツールチップのような吹き出しとして表示します。Infragistics $PlatformShort$ Excel Library は `WorksheetCell` オブジェクトの `Comment` プロパティでセルにコメントを追加できます。
+コメントによって、エンドユーザーがマウスをセル上にホバーするとセルのヒントまたはメモを表示することができます。コメントはテキストを含むツールチップのような吹き出しとして表示します。Infragistics $Platform$ Excel Library は `WorksheetCell` オブジェクトの `Comment` プロパティでセルにコメントを追加できます。
 
 以下のコード例は、セルにコメントを追加する方法を示します。
 
@@ -86,6 +114,17 @@ var commentText = new FormattedString("This cell has a comment.");
 cellComment.text = commentText;
 
 worksheet.rows(0).cells(0).comment = cellComment;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellComment = new WorksheetCellComment();
+var commentText = new FormattedString("This cell has a comment!");
+cellComment.Text = commentText;
+
+worksheet.Rows[0].Cells[0].Comment = cellComment;
 ```
 
 ## セルに数式を追加
@@ -102,6 +141,16 @@ Infragistics Excel ライブラリは、ワークシートでセルまたはセ�
  //Using a Formula object to apply a formula
  var sumFormula = Formula.parse("=SUM(A1:A5)", CellReferenceMode.A1);
  sumFormula.applyTo(worksheet.rows(5).cells(0));
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+worksheet.Rows[5].Cells[0].ApplyFormula("=SUM(A1:A5)");
+
+//Using a Formula object to apply a formula
+var sumFormula = Formula.Parse("=SUM(A1:A5)", CellReferenceMode.A1);
+sumFormula.ApplyTo(worksheet.Rows[5].Cells[0]);
 ```
 
 ## セル書式のコピー
@@ -121,9 +170,21 @@ worksheet.columns(1).cellFormat.font.bold = true;
 worksheet.columns(3).cellFormat.setFormatting(worksheet.columns(1).cellFormat);
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+//Format 2nd column
+worksheet.Columns[1].CellFormat.Fill = CellFill.CreateSolidFill(CoreGraphics.Colors.Blue);
+worksheet.Columns[1].CellFormat.Font.Bold = ExcelDefaultableBoolean.True;
+
+//Copy format of 2nd column to 4th column
+worksheet.Columns[3].CellFormat.SetFormatting(worksheet.Columns[1].CellFormat);
+```
+
 ## セルの書式設定
 
-Infragistics $PlatformShort$ Excel Library は、セルの外観と動作をカスタマイズすることができます。`WorksheetCell`、`WorksheetRow`、`WorksheetColumn`、または `WorksheetMergedCellsRegion` オブジェクトの `CellFormat` プロパティで公開したプロパティを設定してセルをカスタマイズできます。
+Infragistics $Platform$ Excel Library は、セルの外観と動作をカスタマイズすることができます。`WorksheetCell`、`WorksheetRow`、`WorksheetColumn`、または `WorksheetMergedCellsRegion` オブジェクトの `CellFormat` プロパティで公開したプロパティを設定してセルをカスタマイズできます。
 
 セル外観の各アスペクトをカスタマイズできます。セルのフォント、背景、境界線だけでなくテキストの配列と回転を設定できます。セルのテキストで文字ごとに異なる書式を適用することさえ可能です。
 
@@ -136,6 +197,13 @@ var workbook = new Workbook(format);
 var workbook = workbook.worksheets().add("Sheet1");
 
 worksheet.columns(2).cellFormat.formatString = "\"$\"#,##0.00";
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+worksheet.Columns[2].CellFormat.FormatString = "\"$\"#,##0.00";
 ```
 
 ## Excel 2007 カラー モデル
@@ -170,6 +238,14 @@ var worksheet = workbook.worksheets().add("Sheet1");
 
 var cellFill = CellFill.createSolidFill("Blue");
 worksheet.rows(0).cells(0).cellFormat.fill = cellFill;
+```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellFill = CellFill.CreateSolidFill(Core.Graphics.Colors.Blue);
+worksheet.Rows[0].Cells[0].CellFormat.Fill = cellFill;
 ```
 
 セルで線状グラデーションと長方形グラデーションを使用して、色 (Excel セルの背景、罫線などの色) を指定できます。これらのグラデーションを付けられたワークブックを .xls ファイル形式で保存して、Excel 2007/2010 で開いたときはグラデーションを表示し、これらのファイルを Microsoft Excel 2003 で開くときは、最初のグラデーション境界からのベタ一色の色でセルが塗りつぶされるようにします。
@@ -252,9 +328,9 @@ RGB またはテーマの色が使用される場合、色を明るくする、�
 
 セルを結合した場合、領域の各セルが同じ値とセル書式になります。結合セルは同じ `WorksheetMergedCellsRegion` オブジェクトに関連付けされ、`AssociatedMergedCellsRegion` プロパティからアクセスできるようになります。`WorksheetMergedCellsRegion` オブジェクトも結果としてセルと同じ値およびセル書式になります。
 
-領域または領域内の任意のセルの値（またはセル書式）を設定すると、すべてのセルおよび領域の値を変更します。セルを結合を解除する場合、以前結合したセルすべて結合以前に指定された共有のセル書式を保持します。ただし、領域の左上のセルのみが共有値を保持します。
+領域または領域内の任意のセルの値 (またはセル書式) を設定すると、すべてのセルおよび領域の値を変更します。セルを結合を解除する場合、以前結合したセルすべて結合以前に指定された共有のセル書式を保持します。ただし、領域の左上のセルのみが共有値を保持します。
 
-結合されたセル領域を作成するには、セルの範囲を `Worksheet` オブジェクトの `MergedCellsRegions` コレクションに追加する必要があります。このコレクションは、4 つの整数パラメーターを取得する `Add` メソッドを公開します。4 つのパラメーターは、開始する行と列（左上隅のセル）のインデックス、および終了する行と列（右下隅のセル）のインデックスを決定します。
+結合されたセル領域を作成するには、セルの範囲を `Worksheet` オブジェクトの `MergedCellsRegions` コレクションに追加する必要があります。このコレクションは、4 つの整数パラメーターを取得する `Add` メソッドを公開します。4 つのパラメーターは、開始する行と列 (左上隅のセル) のインデックス、および終了する行と列 (右下隅のセル) のインデックスを決定します。
 
 ```ts
 var workbook = new Workbook();
@@ -276,6 +352,26 @@ mergedRegion1.value = "Day 1";
 worksheet.rows(0).cells(2).cellFormat.alignment = HorizontalCellAlignment.Center;
 ```
 
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+// Make some column headers
+worksheet.Rows[1].Cells[1].Value = "Morning";
+worksheet.Rows[1].Cells[2].Value = "Afternoon";
+worksheet.Rows[1].Cells[3].Value = "Evening";
+
+// Create a merged region from column 1 to column 3
+var mergedRegion1 = worksheet.MergedCellsRegions.Add(0, 1, 0, 3);
+
+// Set the value of the merged region
+mergedRegion1.Value = "Day1";
+
+// Set the cell alignment of the middle cell in the merged region.
+// Since a cell and its merged region shared a cell format, this will ultimately set the format of the merged region
+worksheet.Rows[0].Cells[2].CellFormat.Alignment = HorizontalCellAlignment.Center;
+```
+
 ## Excel に表示されるセル テキストを取得
 
 セルに表示されるテキストは、書式文字列やセルが含まれる列幅など実際のセル値以外の複数の要因に依存します。
@@ -290,7 +386,7 @@ worksheet.rows(0).cells(2).cellFormat.alignment = HorizontalCellAlignment.Center
 
 - **Normal Value** - スペースに制限がない場合と同じように数字が表示されます。
 
-- **10 進数の削除** - 10 進数は、一致する書式が見つかるまで 1 つづつ削除されます。たとえば、値 12345.6789 値は以下の書式に一致するまで減らされます。 12345.679、12345.68、12345.7、12346。最初の有効数字が 1 つだけ残るとこれは停止します。したがって、たとえば 0.0001234567890 のような値は 0.0001 に短縮されます。
+- **10 進数の削除** - 10 進数は、一致する書式が見つかるまで 1 つづつ削除されます。たとえば、値 12345.6789 値は以下の書式に一致するまで減らされます。12345.679、12345.68、12345.7、12346。最初の有効数字が 1 つだけ残るとこれは停止します。したがって、たとえば 0.0001234567890 のような値は 0.0001 に短縮されます。
 
 - **指数、5 decimal digits** - 数字は 1.23457E+09 または 1.23457E-04 などの 0.00000E+00 の形式で表示されます。
 
@@ -328,3 +424,30 @@ var worksheet = this.workbook.worksheets().add("Sheet1");
 
 var cellText = worksheet.rows(0).cells(0).getText();
 ```
+
+```razor
+var workbook = new Workbook();
+var worksheet = workbook.Worksheets.Add("Sheet1");
+
+var cellText = worksheet.Rows[0].Cells[0].GetText();
+```
+
+## API メンバー
+
+ - `Add`
+ - `CellFillLinearGradient`
+ - `CellFillPattern`
+ - `CellFillRectangularGradient`
+ - `CellFill`
+ - `CellFormat`
+ - `DisplayOptions`'
+ - `Formula`
+ - `MergedCellsRegions`
+ - `WorkbookColorInfo`
+ - `WorkbookStyle`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetRegion`
+ - `WorksheetRow`
+ - `Worksheet`

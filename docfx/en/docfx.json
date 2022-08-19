@@ -22,7 +22,7 @@
             }
         ],
         "resource": [{
-            "files": ["images/**"],
+            "files": ["images/**", "web.config"],
             "exclude": ["obj/**", "_site/**"]
         }],
         "overwrite": [{
@@ -30,13 +30,29 @@
             "exclude": ["obj/**", "_site/**"]
         }],
         "dest": "_site",
-        "globalMetadataFiles": ["global.json", "../../../dist/igniteui-docfx-template/template/bundling.global.json"],
+        "globalMetadataFiles": ["global.json", "../../../node_modules/igniteui-docfx-template/template/bundling.global.json"],
         "fileMetadataFiles": [],
-        "template": ["../../../dist/igniteui-docfx-template/template"],
+        "template": ["../../../node_modules/igniteui-docfx-template/template"],
         "postProcessors": ["SetEnvironmentVariables"],
         "noLangKeyword": false,
         "keepFileLink": false,
         "cleanupCacheHistory": true,
-        "disableGitFeatures": true
+        "disableGitFeatures": true,
+        "sitemap": {
+            "baseUrl": "https://www.infragistics.com/products/{ProductSpinal}/{PlatformLower}/",
+            "changefreq": "weekly",
+            "priority": 0.7,
+            "fileOptions":{
+                "**/data-grid.md": {
+                    "priority": 0.8
+                },
+                "**/grids.md": {
+                    "priority": 0.8
+                },
+                "**/*-grid-*.md": {
+                    "priority": 0.8
+                }
+            }
+        }
     }
 }

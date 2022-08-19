@@ -1,21 +1,23 @@
 ---
-title: $PlatformShort$ Excel ライブラリ | ワークブックの使用 | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ Excel ライブラリを使用してワークブックおよびワークシートを作成し、データを入力して日付を Microsoft®Excel にエクスポートします。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
+title: $Platform$ Excel ライブラリ | ワークブックの使用 | インフラジスティックス
+_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークブックおよびワークシートを作成し、データを入力して日付を Microsoft®Excel にエクスポートします。詳細については、$ProductName$ Excel のチュートリアルを参照してください。
 _keywords: Excel library, workbooks, $ProductName$, Infragistics, Excel ライブラリ, ワークブック, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $PlatformShort$ ワークブックの使用
+# $Platform$ ワークブックの使用
 
-Infragistics $PlatformShort$ Excel Engine は、データを Microsoft® Excel® に保存、また Microsoft® Excel® からの読み込みを可能にします。ライブラリのさまざまなクラスを使用してワークブックやワークシートを作成、データを入力、データを Excel にエクスポートできます。Infragistics $PlatformShort$ Excel Engine は、Excel スプレッドシートでアプリケーションのデータの表示や Excel からアプリケーションへのデータのインポートが簡単にできます。
+Infragistics $Platform$ Excel Engine は、データを Microsoft® Excel® に保存、また Microsoft® Excel® からの読み込みを可能にします。ライブラリのさまざまなクラスを使用してワークブックやワークシートを作成、データを入力、データを Excel にエクスポートできます。Infragistics $Platform$ Excel Engine は、Excel スプレッドシートでアプリケーションのデータの表示や Excel からアプリケーションへのデータのインポートが簡単にできます。
 
-## サンプル
+## $Platform$ ワークブックの使用の例
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="excel-library-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/excel-library/operations-on-workbooks"></sample-button>
 
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
+           alt="$Platform$ ワークブックの使用の例"
+           github-src="excel/excel-library/operations-on-workbooks">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -31,27 +33,34 @@ font.name = "Times New Roman";
 font.height = 16 * 20;
 ```
 
+```razor
+var workbook = new Workbook();
+var font = workbook.Styles.NormalStyle.StyleFormat.Font;
+font.Name = "Times New Roman";
+font.Height = 16 * 20;
+```
+
 ## ワークブック プロパティの設定
 
-Microsoft Excel® ドキュメント プロパティは、ドキュメントの整理やトラッキングを改善するための情報を提供します。`Workbook` オブジェクトの `DocumentProperties` プロパティを使用してこれらのプロパティを設定するために、Infragistics $PlatformShort$ Excel Engine を使用できます。使用可能なプロパティは以下のとおりです。
+Microsoft Excel® ドキュメント プロパティは、ドキュメントの整理やトラッキングを改善するための情報を提供します。`Workbook` オブジェクトの `DocumentProperties` プロパティを使用してこれらのプロパティを設定するために、Infragistics $Platform$ Excel Engine を使用できます。使用可能なプロパティは以下のとおりです。
 
 - `Author`
 
 - `Title`
 
-- `subject`
+- `Subject`
 
-- `keywords`
+- `Keywords`
 
-- `category`
+- `Category`
 
-- `status`
+- `Status`
 
-- `comments`
+- `Comments`
 
-- `company`
+- `Company`
 
-- `manager`
+- `Manager`
 
 以下のコードは、ブックを作成し、`title` および `status` ドキュメント プロパティを設定する方法を示します。
 
@@ -59,6 +68,12 @@ Microsoft Excel® ドキュメント プロパティは、ドキュメントの�
 var workbook = new Workbook();
 workbook.documentProperties.title = "Expense Report";
 workbook.documentProperties.status = "Complete";
+```
+
+```razor
+var workbook = new Workbook();
+workbook.DocumentProperties.Title = "Expense Report";
+workbook.DocumentProperties.Status = "Complete";
 ```
 
 ## ブックの保護
@@ -80,7 +95,10 @@ var workbook = new Workbook();
 workbook.protect(false, false);
 ```
 
-- isProtected
+```razor
+var workbook = new Workbook();
+workbook.Protect(false, false);
+```
 
 ブックが保護されているかどうかの確認この読み取り専用プロパティは、ワークブックに Protect メソッドのオーバーロードを使用して設定された保護がある場合、true を返します。
 
@@ -89,7 +107,10 @@ var workbook = new Workbook();
 var protect = workbook.isProtected;
 ```
 
-- protection
+```razor
+var workbook = new Workbook();
+var protect = workbook.IsProtected;
+```
 
 この読み取り専用プロパティは、保護の各設定を個別に取得するためにプロパティを含む WorkbookProtection 型のオブジェクトを返します。
 
@@ -97,3 +118,15 @@ var protect = workbook.isProtected;
 var workbook = new Workbook();
 var protection = workbook.protection;
 ```
+
+```razor
+var workbook = new Workbook();
+var protect = workbook.Protection;
+```
+
+## API メンバー
+
+ - `DocumentProperties`
+ - `WorkbookProtection`
+ - `Workbook`
+ - `Workbook`

@@ -1,205 +1,220 @@
-{
-"extraFiles": [
-"igc-legend-module.ts",
-"igc-item-legend-module.ts",
-"igc-scale-legend-module.ts",
-"igc-financial-legend-module.ts"
-],
-"types": [
-{
-    "originalName": "LegendMouseEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-legend-mouse-event-args.ts",
- "mappedName": "IgcLegendMouseEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalSource"}            ],
-           "originalName": "OriginalSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ILegendSeries", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ILegendOwner", "mappedName": "chart"}            ],
-           "originalName": "Chart"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "legendItem"}            ],
-           "originalName": "LegendItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toString"}            ],
-           "originalName": "ToString"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "LegendMouseButtonEventArgs",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-legend-mouse-button-event-args.ts",
- "mappedName": "IgcLegendMouseButtonEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "handled"}            ],
-           "originalName": "Handled"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "originalSource"}            ],
-           "originalName": "OriginalSource"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "item"}            ],
-           "originalName": "Item"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ILegendSeries", "mappedName": "series"}            ],
-           "originalName": "Series"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "ILegendOwner", "mappedName": "chart"}            ],
-           "originalName": "Chart"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "any", "mappedName": "legendItem"}            ],
-           "originalName": "LegendItem"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "method", "mappedName": "toString"}            ],
-           "originalName": "ToString"
-       }   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ItemLegend",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-item-legend-component.ts",
- "mappedName": "IgcItemLegendComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
-           "originalName": "IsItemwise"
-       }   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "Legend",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-legend-component.ts",
- "mappedName": "IgcLegendComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "orientation"}            ],
-           "originalName": "Orientation"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textColor"}            ],
-           "originalName": "TextColor"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "string", "mappedName": "textStyle"}            ],
-           "originalName": "TextStyle"
-       }   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "LegendOrientation",
-    "isEnum": true,
-   "names": [
-        { "platform": "WebComponents",     "fileName": "LegendOrientation.ts",
- "mappedName": "LegendOrientation"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "Horizontal"}            ],
-           "originalName": "Horizontal"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "LegendOrientation", "mappedName": "Vertical"}            ],
-           "originalName": "Vertical"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "void", "mappedName": "init"}            ],
-           "originalName": ".ctor"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "LegendBase",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-legend-base-component.ts",
- "mappedName": "IgcLegendBaseComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isItemwise"}            ],
-           "originalName": "IsItemwise"
-       },
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
-           "originalName": "IsFinancial"
-       }   ],
-    "originalBaseTypeName": "ContentControl",
-    "originalBaseTypeNamespace": "System.Windows",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "FinancialLegend",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-financial-legend-component.ts",
- "mappedName": "IgcFinancialLegendComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "WebComponents",  "mappedType": "boolean", "mappedName": "isFinancial"}            ],
-           "originalName": "IsFinancial"
-       }   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "ScaleLegend",
-   "names": [
-        { "platform": "WebComponents",     "fileName": "igc-scale-legend-component.ts",
- "mappedName": "IgcScaleLegendComponent"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "LegendBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"extraFiles":["igc-legend-module.ts","igc-item-legend-module.ts","igc-scale-legend-module.ts","igc-financial-legend-module.ts","igc-data-legend-module.ts"],
+  "types":[
+  { "originalName":"XamDataLegend",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-legend-component.ts","mappedName":"IgcDataLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"actualBadgesVisible"}],"originalName":"ActualBadgesVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"includedSeries"}],"originalName":"IncludedSeries"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"excludedSeries"}],"originalName":"ExcludedSeries"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"includedColumns"}],"originalName":"IncludedColumns"},
+    { "names":[{"platform":"WebComponents","mappedType":"string[]","mappedName":"excludedColumns"}],"originalName":"ExcludedColumns"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldUpdateWhenSeriesDataChanges"}],"originalName":"ShouldUpdateWhenSeriesDataChanges"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataAbbreviationMode","mappedName":"valueFormatAbbreviation"}],"originalName":"ValueFormatAbbreviation"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"valueFormatMaxFractions"}],"originalName":"ValueFormatMaxFractions"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"valueFormatMinFractions"}],"originalName":"ValueFormatMinFractions"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendValueMode","mappedName":"valueFormatMode"}],"originalName":"ValueFormatMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormatCulture"}],"originalName":"ValueFormatCulture"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormatCurrencyCode"}],"originalName":"ValueFormatCurrencyCode"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueFormatUseGrouping"}],"originalName":"ValueFormatUseGrouping"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueFormatString"}],"originalName":"ValueFormatString"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"valueFormatSpecifiers"}],"originalName":"ValueFormatSpecifiers"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"valueRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"valueRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"valueRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"valueRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueRowVisible"}],"originalName":"ValueRowVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueTextWhenMissingData"}],"originalName":"ValueTextWhenMissingData"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"valueTextUseSeriesColors"}],"originalName":"ValueTextUseSeriesColors"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"valueTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"valueTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"valueTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"valueTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerFormatString"}],"originalName":"HeaderFormatString"},
+    { "names":[{"platform":"WebComponents","mappedType":"any[]","mappedName":"headerFormatSpecifiers"}],"originalName":"HeaderFormatSpecifiers"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerFormatCulture"}],"originalName":"HeaderFormatCulture"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendHeaderDateMode","mappedName":"headerFormatDate"}],"originalName":"HeaderFormatDate"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendHeaderTimeMode","mappedName":"headerFormatTime"}],"originalName":"HeaderFormatTime"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerText"}],"originalName":"HeaderText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"headerTextColor"}],"originalName":"HeaderTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"headerTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"headerTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"headerTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"headerTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"headerRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"headerRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"headerRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"headerRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"headerRowVisible"}],"originalName":"HeaderRowVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryTitleTextColor"}],"originalName":"SummaryTitleTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendSummaryType","mappedName":"summaryType"}],"originalName":"SummaryType"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryTitleText"}],"originalName":"SummaryTitleText"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryTitleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"summaryTitleTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"summaryTitleTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"summaryTitleTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"summaryRowMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"summaryRowMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"summaryRowMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"summaryRowMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryValueTextColor"}],"originalName":"SummaryValueTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryLabelText"}],"originalName":"SummaryLabelText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryLabelTextColor"}],"originalName":"SummaryLabelTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryUnitsText"}],"originalName":"SummaryUnitsText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryUnitsTextColor"}],"originalName":"SummaryUnitsTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"badgeMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"badgeMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"badgeMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"badgeMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetCursorPositionX"}],"originalName":"TargetCursorPositionX"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"targetCursorPositionY"}],"originalName":"TargetCursorPositionY"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendUnitsMode","mappedName":"unitsDisplayMode"}],"originalName":"UnitsDisplayMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"unitsTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"unitsTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"unitsTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"unitsTextMargin.top"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"titleTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"titleTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"titleTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"titleTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataLegendLabelMode","mappedName":"labelDisplayMode"}],"originalName":"LabelDisplayMode"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bottom"}],"originalName":"labelTextMargin.bottom"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"left"}],"originalName":"labelTextMargin.left"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
+    { 
+    "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifySizeChanged"}],"originalName":"NotifySizeChanged"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getAbbreviatedNumber"}],"originalName":"GetAbbreviatedNumber"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getAbbreviatedSymbol"}],"originalName":"GetAbbreviatedSymbol"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataLegendSummaryEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-legend-summary-event-args.ts","mappedName":"IgcDataLegendSummaryEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"number[]","mappedName":"columnValues"}],"originalName":"ColumnValues"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"columnMemberPath"}],"originalName":"ColumnMemberPath"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"summaryValue"}],"originalName":"SummaryValue"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryUnits"}],"originalName":"SummaryUnits"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendMouseEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-legend-mouse-event-args.ts","mappedName":"IgcLegendMouseEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"originalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"WebComponents","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"WebComponents","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendMouseButtonEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-legend-mouse-button-event-args.ts","mappedName":"IgcLegendMouseButtonEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"handled"}],"originalName":"Handled"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"originalSource"}],"originalName":"OriginalSource"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"WebComponents","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"WebComponents","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataLegendStylingRowEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-legend-styling-row-event-args.ts","mappedName":"IgcDataLegendStylingRowEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"LegendItemBadgeShape","mappedName":"badgeShape"}],"originalName":"BadgeShape"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isBadgeVisible"}],"originalName":"IsBadgeVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isRowVisible"}],"originalName":"IsRowVisible"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleText"}],"originalName":"TitleText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"DataLegendStylingColumnEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-data-legend-styling-column-event-args.ts","mappedName":"IgcDataLegendStylingColumnEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"columnIndex"}],"originalName":"ColumnIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"valueOriginal"}],"originalName":"ValueOriginal"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataAbbreviationMode","mappedName":"valueAbbreviation"}],"originalName":"ValueAbbreviation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelText"}],"originalName":"LabelText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueText"}],"originalName":"ValueText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ItemLegend",
+    "names":[{"platform":"WebComponents","fileName":"igc-item-legend-component.ts","mappedName":"IgcItemLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"Legend",
+    "names":[{"platform":"WebComponents","fileName":"igc-legend-component.ts","mappedName":"IgcLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendOrientation","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"LegendOrientation.ts","mappedName":"LegendOrientation"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"Horizontal"}],"originalName":"Horizontal"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"Vertical"}],"originalName":"Vertical"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"LegendBase",
+    "names":[{"platform":"WebComponents","fileName":"igc-legend-base-component.ts","mappedName":"IgcLegendBaseComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"FinancialLegend",
+    "names":[{"platform":"WebComponents","fileName":"igc-financial-legend-component.ts","mappedName":"IgcFinancialLegendComponent"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"ScaleLegend",
+    "names":[{"platform":"WebComponents","fileName":"igc-scale-legend-component.ts","mappedName":"IgcScaleLegendComponent"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -1,23 +1,25 @@
 ---
-title: $PlatformShort$ ズームスライダー | データ可視化ツール | ナビゲーション | ズーム | データ チャート | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $PlatformShort$ ズームスライダー コントロールを使用して、最小値と最大値を表す 2 つのハンドルのデータ サブセットを簡単に表示します。$ProductName$ ズームスライダーでデータの可視化を向上させます。
+title: $Platform$ ズームスライダー | データ可視化ツール | ナビゲーション | ズーム | データ チャート | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの $Platform$ ズームスライダー コントロールを使用して、最小値と最大値を表す 2 つのハンドルのデータ サブセットを簡単に表示します。$ProductName$ ズームスライダーでデータの可視化を向上させます。
 _keywords: zoom slider, $ProductName$, Infragistics, data chart, ズームスライダー, インフラジスティックス, データ チャート
 mentionedTypes: ['ZoomSlider, XamDataChart']
 _language: ja
 ---
-## $PlatformShort$ ズーム スライダーの概要
-$PlatformShort$ ZoomSlider コントロールは、範囲対応コントロールにズーム機能を提供します。ZoomSlider には、水平スクロールバー、全範囲の縮小表示、サイズ変更可能なズーム範囲ウィンドウの機能があります。ZoomSlider は、スタンド アロン コントロールとして機能できません。または、DataChart や CategoryChart などの範囲ベースのコントロールの拡張機能として動作します。
 
-## サンプル
+# $Platform$ ズーム スライダーの概要
 
-<div class="sample-container loading" style="height: 600px">
-    <iframe id="zoomslider-overview-iframe" src='{environment:dvDemosBaseUrl}/charts/zoomslider-overview' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="zoomslider-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">StackBlitz で表示
-    </button>
-</div>
-<sample-button src="charts/zoomslider/overview"></sample-button>
+$Platform$ ZoomSlider コントロールは、範囲対応コントロールにズーム機能を提供します。ZoomSlider には、水平スクロールバー、全範囲の縮小表示、サイズ変更可能なズーム範囲ウィンドウの機能があります。ZoomSlider は、スタンド アロン コントロールとして機能できません。または、DataChart や CategoryChart などの範囲ベースのコントロールの拡張機能として動作します。
+
+## $Platform$ ズーム スライダーの例
+
+以下のサンプルは、`ZoomSlider` を使用して `XamDataChart` のコンテンツをナビゲートする方法を示しています。
+
+<code-view style="height: 600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
+           alt="$Platform$ ズーム スライダーの例"
+           github-src="charts/zoomslider/overview">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -34,7 +36,7 @@ $PlatformShort$ ZoomSlider コントロールは、範囲対応コントロー�
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-$PlatformShort$ chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
+$Platform$ chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -43,10 +45,11 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
-`ZoomSlider` を作成するには、以下のモジュールが必要です。<!-- Angular, React, WebComponents --> <!-- end: Angular, React, WebComponents --><!-- Blazor -->モジュールはアプリケーションのエントリ ポイントに登録する必要があります。
+`ZoomSlider` を作成するには、以下のモジュールが必要です。
 
-* ZoomSliderModule
-<!-- end: Blazor -->
+```razor
+IgbZoomSliderModule.Register(IgniteUIBlazor);
+```
 
 ```ts
 import { IgxZoomSliderModule } from 'igniteui-angular-charts';
@@ -103,3 +106,14 @@ IgcZoomSliderModule.register();
   </igc-zoom-slider>
 ```
 <div class="divider--half"></div>
+
+## その他のリソース
+
+チャートの詳細については、[グラフの機能](charts/chart-features.md)トピックを参照してください。
+
+## API メンバー
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `ZoomSlider`
+- `XamDataChart`

@@ -1,23 +1,22 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Map Navigation | Infragistics
-_description: Navigate Infragistics' $PlatformShort$ map by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ map's navigation capabilities!
-_keywords: $PlatformShort$ map, navigations, $ProductName$, Infragistics
+title: $Platform$ Map | Data Visualization Tools | Map Navigation | Infragistics
+_description: Navigate Infragistics' $Platform$ map by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ map's navigation capabilities!
+_keywords: $Platform$ map, navigation, $ProductName$, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $PlatformShort$ Navigating Map Content
+# $Platform$ Navigating Map Content
 
 Navigation in the `XamGeographicMap` control is enabled by default and it allows zooming and panning of the map content. However, this behavior can be changed using the `Zoomable` property. It is important to know that the map allows only synchronized zooming - scaling the map content with preserved aspect ratio. As result, it is not possible to scale the map content vertically without scaling it also horizontally and vice versa.
 
-## Demo
+## $Platform$ Navigating Map Content Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-navigation-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-navigation' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-navigation-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-    <sample-button src="maps/geo-map/navigation"></sample-button>
-</div>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
+           alt="$Platform$ Navigating Map Content Example"
+           github-src="maps/geo-map/navigation">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -78,3 +77,10 @@ The following table summarizes properties that can be used in navigation of the 
 |`ActualWindowScale`| number | Indicates current size of the navigation window in of the map control. It is equivalent to smallest value of Width or Height stored in the `ActualWindowRect` property |
 |`ActualWindowPositionHorizontal`| number | Indicates current horizontal position of the navigation window’s anchor point from the left edge of the map control. It is equivalent to value stored in the Left of the `ActualWindowRect` property. |
 |`ActualWindowPositionVertical`| number | Indicates vertical position of the navigation window’s anchor point from the top edge of the map control. It is equivalent to value stored in the Top of the `ActualWindowRect` property. |
+
+ ## API Members
+
+ - `ActualWindowRect`
+ - `WindowRect`
+ - `XamGeographicMap`
+ - `Zoomable`

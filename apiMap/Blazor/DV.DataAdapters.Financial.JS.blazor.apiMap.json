@@ -1,22 +1,6 @@
-{
-"types": [
-{
-    "originalName": "StockChangedEventArgs",
-   "names": [
-        { "platform": "Blazor",     "fileName": "StockChangedEventArgs.cs",
- "mappedName": "StockChangedEventArgs"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "AddedSymbols"}            ],
-           "originalName": "AddedSymbols"
-       },
-        {
-           "names": [
-               { "platform": "Blazor",  "mappedType": "string[]", "mappedName": "RemovedSymbols"}            ],
-           "originalName": "RemovedSymbols"
-       }   ],
-    "originalNamespace": "Infragistics.DataAdapters"
-}
-]
-}
+{"types":[
+  { "originalName":"StockChangedEventArgs",
+    "names":[{"platform":"Blazor","fileName":"StockChangedEventArgs.cs","mappedName":"IgbStockChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"AddedSymbols"}],"originalName":"AddedSymbols"},
+    { "names":[{"platform":"Blazor","mappedType":"string[]","mappedName":"RemovedSymbols"}],"originalName":"RemovedSymbols"}],"originalNamespace":"Infragistics.DataAdapters"}]}

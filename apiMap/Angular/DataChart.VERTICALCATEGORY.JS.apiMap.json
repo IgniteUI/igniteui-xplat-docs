@@ -1,178 +1,41 @@
-{
-"types": [
-{
-    "originalName": "CategoryYAxis",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-category-y-axis-component.ts",
-    "dynamicModuleName": "igx-category-y-axis-dynamic-module.ts",
-    "moduleName": "igx-category-y-axis-module.ts",
- "mappedName": "IgxCategoryYAxisComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
-           "originalName": "IsVertical"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "interval"}            ],
-           "originalName": "Interval"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualInterval"}            ],
-           "originalName": "ActualInterval"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "minorInterval"}            ],
-           "originalName": "MinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "actualMinorInterval"}            ],
-           "originalName": "ActualMinorInterval"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCategoryBoundingBox"}            ],
-           "originalName": "GetCategoryBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollRangeIntoView"}            ],
-           "originalName": "ScrollRangeIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       }   ],
-    "originalBaseTypeName": "CategoryAxisBase",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "BarSeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-bar-series-component.ts",
-    "dynamicModuleName": "igx-bar-series-dynamic-module.ts",
-    "moduleName": "igx-bar-series-module.ts",
- "mappedName": "IgxBarSeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusX"}            ],
-           "originalName": "RadiusX"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "number", "mappedName": "radiusY"}            ],
-           "originalName": "RadiusY"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueBoundingBox"}            ],
-           "originalName": "GetSeriesValueBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "scrollIntoView"}            ],
-           "originalName": "ScrollIntoView"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemSpan"}            ],
-           "originalName": "GetItemSpan"
-       }   ],
-    "originalBaseTypeName": "VerticalAnchoredCategorySeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-},
-{
-    "originalName": "VerticalAnchoredCategorySeries",
-   "names": [
-        { "platform": "Angular",     "fileName": "igx-vertical-anchored-category-series-component.ts",
- "mappedName": "IgxVerticalAnchoredCategorySeriesComponent"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxNumericXAxisComponent", "mappedName": "xAxis"}            ],
-           "originalName": "XAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "IgxCategoryYAxisComponent", "mappedName": "yAxis"}            ],
-           "originalName": "YAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "boolean", "mappedName": "isVertical"}            ],
-           "originalName": "IsVertical"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getOffsetValue"}            ],
-           "originalName": "GetOffsetValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getCategoryWidth"}            ],
-           "originalName": "GetCategoryWidth"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getNextOrExactIndex"}            ],
-           "originalName": "GetNextOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getPreviousOrExactIndex"}            ],
-           "originalName": "GetPreviousOrExactIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValueMarkerBoundingBox"}            ],
-           "originalName": "GetSeriesValueMarkerBoundingBox"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValue"}            ],
-           "originalName": "GetSeriesValue"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getSeriesValuePosition"}            ],
-           "originalName": "GetSeriesValuePosition"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getExactItemIndex"}            ],
-           "originalName": "GetExactItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItemIndex"}            ],
-           "originalName": "GetItemIndex"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "getItem"}            ],
-           "originalName": "GetItem"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsYAxis"}            ],
-           "originalName": "CanUseAsYAxis"
-       },
-        {
-           "names": [
-               { "platform": "Angular",  "mappedType": "method", "mappedName": "canUseAsXAxis"}            ],
-           "originalName": "CanUseAsXAxis"
-       }   ],
-    "originalBaseTypeName": "AnchoredCategorySeries",
-    "originalBaseTypeNamespace": "Infragistics.Controls.Charts",
-    "originalNamespace": "Infragistics.Controls.Charts"
-}
-]
-}
+{"types":[
+  { "originalName":"CategoryYAxis",
+    "names":[{"platform":"Angular","fileName":"igx-category-y-axis-component.ts","dynamicModuleName":"igx-category-y-axis-dynamic-module.ts","moduleName":"igx-category-y-axis-module.ts","mappedName":"IgxCategoryYAxisComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isVertical"}],"originalName":"IsVertical"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumZoomCategories"}],"originalName":"MaximumZoomCategories"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"BarSeries",
+    "names":[{"platform":"Angular","fileName":"igx-bar-series-component.ts","dynamicModuleName":"igx-bar-series-dynamic-module.ts","moduleName":"igx-bar-series-module.ts","mappedName":"IgxBarSeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isBar"}],"originalName":"IsBar"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"VerticalAnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+  { "originalName":"VerticalAnchoredCategorySeries",
+    "names":[{"platform":"Angular","fileName":"igx-vertical-anchored-category-series-component.ts","mappedName":"IgxVerticalAnchoredCategorySeriesComponent"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"IgxNumericXAxisComponent","mappedName":"xAxis"}],"originalName":"XAxis"},
+    { "names":[{"platform":"Angular","mappedType":"IgxCategoryYAxisComponent","mappedName":"yAxis"}],"originalName":"YAxis"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isVertical"}],"originalName":"IsVertical"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getNextOrExactIndex"}],"originalName":"GetNextOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getPreviousOrExactIndex"}],"originalName":"GetPreviousOrExactIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValueMarkerBoundingBox"}],"originalName":"GetSeriesValueMarkerBoundingBox"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValue"}],"originalName":"GetSeriesValue"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"AnchoredCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}

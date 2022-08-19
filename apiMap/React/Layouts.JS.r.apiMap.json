@@ -1,152 +1,251 @@
-{
-"extraFiles": [
-"igr-expansion-panel-module.ts"
-],
-"types": [
-{
-    "originalName": "OnExpandedEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-expanded-event-args.ts",
- "mappedName": "IgrOnExpandedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "OnCollapsedEventArgs",
-   "names": [
-        { "platform": "React",     "fileName": "igr-on-collapsed-event-args.ts",
- "mappedName": "IgrOnCollapsedEventArgs"}   ],
-   "members": [
-   ],
-    "originalBaseTypeName": "EventArgs",
-    "originalBaseTypeNamespace": "System",
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-},
-{
-    "originalName": "ExpansionPanel",
-   "names": [
-        { "platform": "React",     "fileName": "igr-expansion-panel.ts",
- "mappedName": "IgrExpansionPanel"}   ],
-   "members": [
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "caption"}            ],
-           "originalName": "Caption"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionTextColor"}            ],
-           "originalName": "CaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualCaptionTextColor"}            ],
-           "originalName": "ActualCaptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionCollapsedTextColor"}            ],
-           "originalName": "CaptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "captionExpandedTextColor"}            ],
-           "originalName": "CaptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "description"}            ],
-           "originalName": "Description"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionTextColor"}            ],
-           "originalName": "DescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualDescriptionTextColor"}            ],
-           "originalName": "ActualDescriptionTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionCollapsedTextColor"}            ],
-           "originalName": "DescriptionCollapsedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "descriptionExpandedTextColor"}            ],
-           "originalName": "DescriptionExpandedTextColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "elevation"}            ],
-           "originalName": "Elevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "number", "mappedName": "actualElevation"}            ],
-           "originalName": "ActualElevation"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "boolean", "mappedName": "expanded"}            ],
-           "originalName": "Expanded"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerBackgroundColor"}            ],
-           "originalName": "HeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualHeaderBackgroundColor"}            ],
-           "originalName": "ActualHeaderBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerCollapsedBackgroundColor"}            ],
-           "originalName": "HeaderCollapsedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "headerExpandedBackgroundColor"}            ],
-           "originalName": "HeaderExpandedBackgroundColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualUmbraShadowColor"}            ],
-           "originalName": "ActualUmbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualPenumbraShadowColor"}            ],
-           "originalName": "ActualPenumbraShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "string", "mappedName": "actualAmbientShadowColor"}            ],
-           "originalName": "ActualAmbientShadowColor"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "collapse"}            ],
-           "originalName": "Collapse"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "expand"}            ],
-           "originalName": "Expand"
-       },
-        {
-           "names": [
-               { "platform": "React",  "mappedType": "method", "mappedName": "toggle"}            ],
-           "originalName": "Toggle"
-       }   ],
-    "originalNamespace": "Infragistics.Controls.Layouts.Implementation"
-}
-]
-}
+{"extraFiles":["igr-x-expansion-panel-module.ts","igr-popup-module.ts","igr-property-editor-panel-module.ts","igr-list-panel-module.ts","igr-tool-panel-module.ts","igr-toolbar-module.ts"],
+  "types":[
+  { "originalName":"PopupAlignment","isEnum":true,
+    "names":[{"platform":"React","fileName":"PopupAlignment.ts","mappedName":"PopupAlignment"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"PopupAlignment","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"PopupAlignment","mappedName":"Near"}],"originalName":"Near"},
+    { "names":[{"platform":"React","mappedType":"PopupAlignment","mappedName":"Far"}],"originalName":"Far"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PopupDirection","isEnum":true,
+    "names":[{"platform":"React","fileName":"PopupDirection.ts","mappedName":"PopupDirection"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"PopupDirection","mappedName":"Auto"}],"originalName":"Auto"},
+    { "names":[{"platform":"React","mappedType":"PopupDirection","mappedName":"Down"}],"originalName":"Down"},
+    { "names":[{"platform":"React","mappedType":"PopupDirection","mappedName":"Up"}],"originalName":"Up"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnExpandedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-on-expanded-event-args.ts","mappedName":"IgrOnExpandedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnCollapsedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-on-collapsed-event-args.ts","mappedName":"IgrOnCollapsedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnPopupEventArgs",
+    "names":[{"platform":"React","fileName":"igr-on-popup-event-args.ts","mappedName":"IgrOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"OnClosedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-on-closed-event-args.ts","mappedName":"IgrOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"Toolbar",
+    "names":[{"platform":"React","fileName":"igr-toolbar.ts","mappedName":"IgrToolbar"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrToolActionCollection","mappedName":"actualActions"}],"originalName":"ActualActions"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"ToolbarOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolPanel",
+    "names":[{"platform":"React","fileName":"igr-tool-panel.ts","mappedName":"IgrToolPanel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"ToolPanelOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolAction",
+    "names":[{"platform":"React","fileName":"igr-tool-action.ts","dynamicModuleName":"igr-tool-action-dynamic-module.ts","moduleName":"igr-tool-action-module.ts","mappedName":"IgrToolAction"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"id"}],"originalName":"Id"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"parentId"}],"originalName":"ParentId"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"commandArgument"}],"originalName":"CommandArgument"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"commandArgumentValue"}],"originalName":"CommandArgumentValue"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"paddingLeft"}],"originalName":"PaddingLeft"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"paddingRight"}],"originalName":"PaddingRight"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"paddingBottom"}],"originalName":"PaddingBottom"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"paddingTop"}],"originalName":"PaddingTop"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"name"}],"originalName":"Name"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"iconName"}],"originalName":"IconName"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"iconCollectionName"}],"originalName":"IconCollectionName"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommand",
+    "names":[{"platform":"React","fileName":"igr-tool-command.ts","mappedName":"IgrToolCommand"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"React","mappedType":"IgrToolCommandArgumentCollection","mappedName":"argumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommandArgument",
+    "names":[{"platform":"React","fileName":"igr-tool-command-argument.ts","mappedName":"IgrToolCommandArgument"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"argumentName"}],"originalName":"ArgumentName"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolCommandEventArgs",
+    "names":[{"platform":"React","fileName":"igr-tool-command-event-args.ts","mappedName":"IgrToolCommandEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrToolCommand","mappedName":"command"}],"originalName":"Command"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolPanelContentRefreshedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-tool-panel-content-refreshed-event-args.ts","mappedName":"IgrToolPanelContentRefreshedEventArgs"}],"members":[],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionPerformedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-tool-action-performed-event-args.ts","mappedName":"IgrToolActionPerformedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAggregate"}],"originalName":"IsAggregate"},
+    { "names":[{"platform":"React","mappedType":"IgrToolActionEventDetail","mappedName":"detail"}],"originalName":"Detail"},
+    { "names":[{"platform":"React","mappedType":"IgrToolActionEventDetailCollection","mappedName":"detailCollection"}],"originalName":"DetailCollection"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionEventDetail",
+    "names":[{"platform":"React","fileName":"igr-tool-action-event-detail.ts","mappedName":"IgrToolActionEventDetail"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrToolAction","mappedName":"action"}],"originalName":"Action"},
+    { "names":[{"platform":"React","mappedType":"ToolActionType","mappedName":"actionType"}],"originalName":"ActionType"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isModified"}],"originalName":"IsModified"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"boolValue"}],"originalName":"BoolValue"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"numberValue"}],"originalName":"NumberValue"},
+    { "names":[{"platform":"React","mappedType":"Date","mappedName":"dateTimeValue"}],"originalName":"DateTimeValue"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"untypedValue"}],"originalName":"UntypedValue"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"CheckboxToolAction",
+    "names":[{"platform":"React","fileName":"igr-checkbox-tool-action.ts","dynamicModuleName":"igr-checkbox-tool-action-dynamic-module.ts","moduleName":"igr-checkbox-tool-action-module.ts","mappedName":"IgrCheckboxToolAction"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionGroupHeader",
+    "names":[{"platform":"React","fileName":"igr-tool-action-group-header.ts","dynamicModuleName":"igr-tool-action-group-header-dynamic-module.ts","moduleName":"igr-tool-action-group-header-module.ts","mappedName":"IgrToolActionGroupHeader"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionSeparator",
+    "names":[{"platform":"React","fileName":"igr-tool-action-separator.ts","dynamicModuleName":"igr-tool-action-separator-dynamic-module.ts","moduleName":"igr-tool-action-separator-module.ts","mappedName":"IgrToolActionSeparator"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionCheckbox",
+    "names":[{"platform":"React","fileName":"igr-tool-action-checkbox.ts","dynamicModuleName":"igr-tool-action-checkbox-dynamic-module.ts","moduleName":"igr-tool-action-checkbox-module.ts","mappedName":"IgrToolActionCheckbox"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionIconButton",
+    "names":[{"platform":"React","fileName":"igr-tool-action-icon-button.ts","dynamicModuleName":"igr-tool-action-icon-button-dynamic-module.ts","moduleName":"igr-tool-action-icon-button-module.ts","mappedName":"IgrToolActionIconButton"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionMenuAction",
+    "names":[{"platform":"React","fileName":"igr-tool-action-menu-action.ts","mappedName":"IgrToolActionMenuAction"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrToolActionCollection","mappedName":"actions"}],"originalName":"Actions"}],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionIconMenu",
+    "names":[{"platform":"React","fileName":"igr-tool-action-icon-menu.ts","dynamicModuleName":"igr-tool-action-icon-menu-dynamic-module.ts","moduleName":"igr-tool-action-icon-menu-module.ts","mappedName":"IgrToolActionIconMenu"}],"members":[],"originalBaseTypeName":"ToolActionMenuAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionNumberInput",
+    "names":[{"platform":"React","fileName":"igr-tool-action-number-input.ts","dynamicModuleName":"igr-tool-action-number-input-dynamic-module.ts","moduleName":"igr-tool-action-number-input-module.ts","mappedName":"IgrToolActionNumberInput"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"Popup",
+    "names":[{"platform":"React","fileName":"igr-popup.ts","mappedName":"IgrPopup"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"animationDuration"}],"originalName":"AnimationDuration"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"animationEnabled"}],"originalName":"AnimationEnabled"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"elevation"}],"originalName":"Elevation"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualElevation"}],"originalName":"ActualElevation"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isShown"}],"originalName":"IsShown"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualUmbraShadowColor"}],"originalName":"ActualUmbraShadowColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualPenumbraShadowColor"}],"originalName":"ActualPenumbraShadowColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualAmbientShadowColor"}],"originalName":"ActualAmbientShadowColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"background"}],"originalName":"Background"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"close"}],"originalName":"Close"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"showRelativeToExclusionRect"}],"originalName":"ShowRelativeToExclusionRect"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ExpansionPanel",
+    "names":[{"platform":"React","fileName":"igr-x-expansion-panel.ts","mappedName":"IgrXExpansionPanel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"caption"}],"originalName":"Caption"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"captionTextColor"}],"originalName":"CaptionTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualCaptionTextColor"}],"originalName":"ActualCaptionTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"captionCollapsedTextColor"}],"originalName":"CaptionCollapsedTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"captionExpandedTextColor"}],"originalName":"CaptionExpandedTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"description"}],"originalName":"Description"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionTextColor"}],"originalName":"DescriptionTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualDescriptionTextColor"}],"originalName":"ActualDescriptionTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionCollapsedTextColor"}],"originalName":"DescriptionCollapsedTextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionExpandedTextColor"}],"originalName":"DescriptionExpandedTextColor"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"elevation"}],"originalName":"Elevation"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualElevation"}],"originalName":"ActualElevation"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"expanded"}],"originalName":"Expanded"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerBackgroundColor"}],"originalName":"HeaderBackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualHeaderBackgroundColor"}],"originalName":"ActualHeaderBackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerCollapsedBackgroundColor"}],"originalName":"HeaderCollapsedBackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"headerExpandedBackgroundColor"}],"originalName":"HeaderExpandedBackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualUmbraShadowColor"}],"originalName":"ActualUmbraShadowColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualPenumbraShadowColor"}],"originalName":"ActualPenumbraShadowColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"actualAmbientShadowColor"}],"originalName":"ActualAmbientShadowColor"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"collapse"}],"originalName":"Collapse"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"expand"}],"originalName":"Expand"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"toggle"}],"originalName":"Toggle"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanel",
+    "names":[{"platform":"React","fileName":"igr-list-panel.ts","mappedName":"IgrListPanel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualRowHeight"}],"originalName":"ActualRowHeight"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"hasUnevenSizes"}],"originalName":"HasUnevenSizes"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"ListPanelOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isCustomRowHeightEnabled"}],"originalName":"IsCustomRowHeightEnabled"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getLastVisibleIndex"}],"originalName":"GetLastVisibleIndex"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getFirstVisibleIndex"}],"originalName":"GetFirstVisibleIndex"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"invalidateVisibleItems"}],"originalName":"InvalidateVisibleItems"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"dataIndexOfItem"}],"originalName":"DataIndexOfItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"dataIndexOfPrimaryKey"}],"originalName":"DataIndexOfPrimaryKey"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelContentRefreshedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-list-panel-content-refreshed-event-args.ts","mappedName":"IgrListPanelContentRefreshedEventArgs"}],"members":[],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateHeightRequestedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-list-panel-template-height-requested-event-args.ts","mappedName":"IgrListPanelTemplateHeightRequestedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"dataItem"}],"originalName":"DataItem"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"height"}],"originalName":"Height"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateWidthRequestedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-list-panel-template-width-requested-event-args.ts","mappedName":"IgrListPanelTemplateWidthRequestedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"dataItem"}],"originalName":"DataItem"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"width"}],"originalName":"Width"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelTemplateItemUpdatingEventArgs",
+    "names":[{"platform":"React","fileName":"igr-list-panel-template-item-updating-event-args.ts","mappedName":"IgrListPanelTemplateItemUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrListPanelItemModel","mappedName":"model"}],"originalName":"Model"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ListPanelItemModel",
+    "names":[{"platform":"React","fileName":"igr-list-panel-item-model.ts","mappedName":"IgrListPanelItemModel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"dataRow"}],"originalName":"DataRow"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"rowObject"}],"originalName":"RowObject"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDirty"}],"originalName":"IsDirty"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPanel",
+    "names":[{"platform":"React","fileName":"igr-property-editor-panel.ts","mappedName":"IgrPropertyEditorPanel"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"IgrPropertyEditorPropertyDescriptionCollection","mappedName":"actualDataSource"}],"originalName":"ActualProperties"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"rowHeight"}],"originalName":"RowHeight"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"actualRowHeight"}],"originalName":"ActualRowHeight"},
+    { "names":[{"platform":"React","mappedType":"TypeDescriptionContext","mappedName":"actualDescriptionContext"}],"originalName":"ActualDescriptionContext"},
+    { "names":[{"platform":"React","mappedType":"TypeDescriptionContext","mappedName":"descriptionContext"}],"originalName":"DescriptionContext"},
+    { "names":[{"platform":"React","mappedType":"ComponentRenderer","mappedName":"componentRenderer"}],"originalName":"ComponentRenderer"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"target"}],"originalName":"Target"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isHorizontal"}],"originalName":"IsHorizontal"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isWrappingEnabled"}],"originalName":"IsWrappingEnabled"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isIndirectModeEnabled"}],"originalName":"IsIndirectModeEnabled"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorDataSource",
+    "names":[{"platform":"React","fileName":"igr-property-editor-data-source.ts","mappedName":"IgrPropertyEditorDataSource"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"React","mappedType":"TypeDescriptionContext","mappedName":"context"}],"originalName":"Context"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescription",
+    "names":[{"platform":"React","fileName":"igr-property-editor-property-description.ts","dynamicModuleName":"igr-property-editor-property-description-dynamic-module.ts","moduleName":"igr-property-editor-property-description-module.ts","mappedName":"IgrPropertyEditorPropertyDescription"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"propertyPath"}],"originalName":"PropertyPath"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"label"}],"originalName":"Label"},
+    { "names":[{"platform":"React","mappedType":"PropertyEditorValueType","mappedName":"valueType"}],"originalName":"ValueType"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"propertyDescriptionType"}],"originalName":"PropertyDescriptionType"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldOverrideDefaultEditor"}],"originalName":"ShouldOverrideDefaultEditor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"elementDescriptionType"}],"originalName":"ElementDescriptionType"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dropDownNames"}],"originalName":"DropDownNames"},
+    { "names":[{"platform":"React","mappedType":"string[]","mappedName":"dropDownValues"}],"originalName":"DropDownValues"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"primitiveValue"}],"originalName":"PrimitiveValue"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"min"}],"originalName":"Min"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"editorWidth"}],"originalName":"EditorWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"labelWidth"}],"originalName":"LabelWidth"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"max"}],"originalName":"Max"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"step"}],"originalName":"Step"},
+    { "names":[{"platform":"React","mappedType":"IgrPropertyEditorDescriptionObject","mappedName":"complexValue"}],"originalName":"ComplexValue"},
+    { "names":[{"platform":"React","mappedType":"IgrPropertyEditorDescriptionObjectCollection","mappedName":"complexValues"}],"originalName":"ComplexValues"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionButtonClickEventArgs",
+    "names":[{"platform":"React","fileName":"igr-property-editor-property-description-button-click-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionButtonClickEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionChangedEventArgs",
+    "names":[{"platform":"React","fileName":"igr-property-editor-property-description-changed-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionChangedEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"newValue"}],"originalName":"NewValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs",
+    "names":[{"platform":"React","fileName":"igr-property-editor-property-description-target-property-updating-event-args.ts","mappedName":"IgrPropertyEditorPropertyDescriptionTargetPropertyUpdatingEventArgs"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"target"}],"originalName":"Target"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"propertyPath"}],"originalName":"PropertyPath"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"PropertyEditorDescriptionObject",
+    "names":[{"platform":"React","fileName":"igr-property-editor-description-object.ts","mappedName":"IgrPropertyEditorDescriptionObject"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"descriptionType"}],"originalName":"DescriptionType"},
+    { "names":[{"platform":"React","mappedType":"IgrPropertyEditorPropertyDescriptionCollection","mappedName":"properties"}],"originalName":"Properties"}],"originalNamespace":"Infragistics.Controls.Layouts.Implementation"}]}

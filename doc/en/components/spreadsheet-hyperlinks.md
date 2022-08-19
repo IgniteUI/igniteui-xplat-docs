@@ -1,19 +1,22 @@
 ---
-title: $PlatformShort$ Spreadsheet | Hyperlinks | Infragistics
-_description: Use Infragistics' $PlatformShort$ spreadsheet control to display hyperlinks in the Excel workbook, which can link to websites, file directories and other worksheets. View $ProductName$ spreadsheet tutorials!
+title: $Platform$ Spreadsheet | Hyperlinks | Infragistics
+_description: Use Infragistics' $Platform$ spreadsheet control to display hyperlinks in the Excel workbook, which can link to websites, file directories and other worksheets. View $ProductName$ spreadsheet tutorials!
 _keywords: Excel Spreadsheet, hyperlinks, $ProductName$, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $PlatformShort$ Spreadsheet Hyperlinks
+# $Platform$ Spreadsheet Hyperlinks
 
-The $PlatformShort$ Spreadsheet component allows display of pre-existing hyperlinks in your Excel workbook as well as insertion of new ones that can link to websites, file directories, and even other worksheets in the workbook.
+The $Platform$ Spreadsheet component allows display of pre-existing hyperlinks in your Excel workbook as well as insertion of new ones that can link to websites, file directories, and even other worksheets in the workbook.
 
-## Demo
+## $Platform$ Spreadsheet Hyperlinks Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="spreadsheet-overview-sample-iframe" src='{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<sample-button src="excel/spreadsheet/hyperlinks"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks"
+           alt="$Platform$ Spreadsheet Hyperlinks Example"
+           github-src="excel/spreadsheet/hyperlinks">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -23,7 +26,7 @@ Hyperlinks are added to the `Spreadsheet` control by accessing the `Hyperlinks` 
 
 ## Dependencies
 
-When setting up your $PlatformShort$ spreadsheet control to use hyperlinks, you will need to import the `WorksheetHyperlink` class like so:
+When setting up your $Platform$ spreadsheet control to use hyperlinks, you will need to import the `WorksheetHyperlink` class like so:
 
 <!-- Angular -->
 ```ts
@@ -42,8 +45,14 @@ import { WorksheetHyperlink } from 'igniteui-webcomponents-excel';
 
 ## Code Snippet
 
-The following code snippet demonstrates how to add a hyperlink to the currently viewed worksheet in the $PlatformShort$ `Spreadsheet` control:
+The following code snippet demonstrates how to add a hyperlink to the currently viewed worksheet in the $Platform$ `Spreadsheet` control:
 
 ```ts
 this.spreadsheet.activeWorksheet.hyperlinks().add(new WorksheetHyperlink("A1", "http://www.infragistics.com", "Infragistics", "Infragistics Home Page"));
 ```
+
+ ## API Members
+
+ - `Hyperlinks`
+ - `Spreadsheet`
+ - `WorksheetHyperlink`

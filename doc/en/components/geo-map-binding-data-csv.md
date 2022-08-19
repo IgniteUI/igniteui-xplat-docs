@@ -1,23 +1,23 @@
 ---
-title: $PlatformShort$ Map | Data Visualization Tools | Binding CSV Data | Infragistics
-_description: Learn how to use Infragistics' $PlatformShort$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
-_keywords: $PlatformShort$ map, plot data, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap']
+title: $Platform$ Map | Data Visualization Tools | Binding CSV Data | Infragistics
+_description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
+_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'Series']
+namespace: Infragistics.Controls.Maps
 ---
-# $PlatformShort$ Binding CSV Files with Geographic Locations
+# $Platform$ Binding CSV Files with Geographic Locations
 
 With the $ProductName$ map component, you can plot geographic data loaded from various file types. For example, you can load geographic locations from a comma separated values (CSV) file.
 
-## Demo
+## $Platform$ Binding CSV Files with Geographic Locations Example
 
-<div class="sample-container loading" style="height: 500px">
-    <iframe id="geo-map-binding-data-csv-iframe" src='{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv' width="100%" height="100%" seamless frameBorder="0" onload="onXPlatSampleIframeContentLoaded(this);"></iframe>
-</div>
-<div>
-    <button data-localize="stackblitz" disabled class="stackblitz-btn"   data-iframe-id="geo-map-binding-data-csv-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
-    </button>
-</div>
-<sample-button src="maps/geo-map/binding-data-csv"></sample-button>
+
+<code-view style="height: 500px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
+           alt="$Platform$ Binding CSV Files with Geographic Locations Example"
+           github-src="maps/geo-map/binding-data-csv">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -247,8 +247,8 @@ onDataLoaded(csvData: string) {
 @inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
-<GeographicMap Height="100%" Width="100%" Zoomable="true">
-    <GeographicHighDensityScatterSeries DataSource="DataSource"
+<IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
+    <IgbGeographicHighDensityScatterSeries DataSource="DataSource"
         LatitudeMemberPath="Lat"
         LongitudeMemberPath="Lon"
         HeatMaximumColor="Red"
@@ -257,14 +257,14 @@ onDataLoaded(csvData: string) {
         HeatMaximum="5"
         PointExtent="1"
         MouseOverEnabled="true" />
-</GeographicMap>
+</IgbGeographicMap>
 
 @code {
     private List<WorldPlaceCsv> DataSource;
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
+        IgbGeographicMapModule.Register(IgniteUIBlazor);
 
         string url = "https://static.infragistics.com/xplatform/data/UsaCitiesPopulation.csv";
         string csv = await Http.GetStringAsync(url);
@@ -307,3 +307,13 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicHighDensityScatterSeries`
+ - `DataSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `PointExtent`

@@ -1,6 +1,7 @@
 import { MappingLoader, APIPlatform, APIMapping } from './MappingLoader';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
+import { inherits } from 'util';
 
 let remark = require(`remark`);
 let parse = require('remark-parse');
@@ -10,15 +11,73 @@ let visit = require('unist-util-visit');
 let jsyaml = require('js-yaml');
 let fs = require('fs');
 
+// this array defines blazor namespaces mapped to API members
+// and it is converted to a lookup table for finding blazor namespaces in getApiLink()
+let BlazorNamespaces = [
+    {   "namespace": "Infragistics.Core",
+        "members": [
+            "ImageWrapper",
+            "Rect",
+            "Point",
+            "Size",
+        ]
+    },
+    {   "namespace": "Infragistics.Core.Graphics",
+        "members": [
+            "Colors",
+            "Color",
+        ]
+    },
+    {   "namespace": "Infragistics.IO",
+        "members": [
+            "FileAccess",
+            "FileMode",
+        ]
+    },
+    {   "namespace": "Infragistics.Documents.Excel",
+        "members": [
+            "Workbook",
+            "WorkbookSaveOptions",
+            "WorkbookFormat",
+            "WorkbookProtection",
+            "Worksheet",
+            "WorksheetCell",
+            "WorksheetRegion",
+            "WorksheetRow",
+            "WorksheetColumn",
+            "WorkbookColorInfo",
+            "WorksheetTable",
+            "WorksheetTableStyle",
+            "WorksheetCellComment",
+            "NamedReference",
+            "FormattedString",
+        ]
+    },
+];
+
+var BlazorNamespaceLookup: any = null;
+// converts above array to a lookup table for finding blazor namespaces in getApiLink()
+function getBlazorNamespaceLookup() {
+    if (BlazorNamespaceLookup === null) {
+        BlazorNamespaceLookup = {};
+        for (const item of BlazorNamespaces) {
+            for (const member of item.members) {
+                BlazorNamespaceLookup[member] = item.namespace
+            }
+        }
+    }
+    return BlazorNamespaceLookup;
+}
+
 function getApiLink(apiRoot: string, typeName: string, memberName: string | null, options: any): any {
     let mappings: MappingLoader = options.mappings;
     let resolvedTypeName: string | null = typeName;
     let isClass = false;
     let isInterface = false;
     let isEnum = false;
+    let platform = <APIPlatform>options.platform;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
-
         resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
         if (resolvedTypeName) {
             let typeInfo = mappings.getType(typeName);
@@ -34,18 +93,57 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     } else {
         isClass = true;
     }
+
+    let blazorNamespace: string = "IgniteUI.Blazor.Controls";
     let linkText: string | null = null;
     if (resolvedTypeName) {
-        if (isClass) {
-            linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
-        } else if (isEnum) {
-            linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
-        } else if (isInterface) {
-            linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+        //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html
+        // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html
+        if (platform === APIPlatform.Blazor) {
+            var blazorNamespaceLookup = getBlazorNamespaceLookup();
+            if (blazorNamespaceLookup[resolvedTypeName]) {
+                blazorNamespace = blazorNamespaceLookup[resolvedTypeName];
+            }
+            linkText = apiRoot + blazorNamespace + "." + resolvedTypeName + ".html";
+            // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
+
+        } else { // Angular || React || WC
+
+            let char1 = resolvedTypeName[0];
+
+            if(char1 == "I"){            
+                let char2 = resolvedTypeName[1];
+                if(char2.toUpperCase() == char2){                
+                    isClass = false;
+                    isEnum = false;
+                    isInterface = true;
+                }
+            }
+
+            if (isClass) {
+                linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
+            } else if (isEnum) {
+                linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
+            } else if (isInterface) {
+                linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+            }
         }
     }
+
     if (linkText && memberName) {
-        linkText = linkText + "#" + memberName.toLowerCase();
+        //         https://infragistics.com/blazor-apps/blazor-api/api/IgniteUI.Blazor.Controls.IgbCategoryChart.html#ChartType
+        // https://infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/classes/igrcategorychart.html#charttype
+        if (platform === APIPlatform.Blazor) {
+            var prefix = blazorNamespace.split('.').join('_') + '_';
+            linkText = linkText + "#" + prefix + resolvedTypeName + '_' + memberName;
+            // if (linkText.indexOf('.IgbDataGrid') > 0) {
+            //     linkText = linkText + "#" + prefix + 'IgbDataGrid_' + memberName;
+            // } else {
+            //     linkText = linkText + "#" + prefix + memberName;
+            // }
+        } else { // Angular, React, WC
+            linkText = linkText + "#" + memberName.toLowerCase();
+        }
     }
 
     if (linkText) {
@@ -66,7 +164,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 let warningsCount = 0;
 function transformWarning(msg: string) {
     warningsCount += 1;
-    console.log("- warning " + pad(warningsCount, 4) + ": " + msg);
+    console.log(pad(warningsCount, 4) + " WARNING: " + msg);
 }
 
 function pad(num: number, width: number) {
@@ -80,6 +178,8 @@ function transformCodeRefs(options: any) {
         let memberName = node.value;
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
+        let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
+        let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
         let createLink: boolean = <boolean><any>apiDocRoot;
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
@@ -104,7 +204,8 @@ function transformCodeRefs(options: any) {
         }
 
         if (memberName.indexOf("Ig$") >= 0) {
-            memberName = memberName.replace("Ig$", options.platformPascalPrefix);
+            memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
+            memberName = memberName.replace("Component", options.platformPascalSuffix);
             apiTypeName = memberName;
             if (createLink) {
                 let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
@@ -116,9 +217,10 @@ function transformCodeRefs(options: any) {
             node.value = memberName;
             return;
         }
-        if (memberName.indexOf("ig$-") >= 0) {
-            memberName = memberName.replace("ig$-", options.platformSpinalPrefix);
 
+        if (memberName.indexOf("ig$-") >= 0) {
+            memberName = memberName.replace("ig$-",       options.platformSpinalPrefix);
+            memberName = memberName.replace("-component", options.platformSpinalSuffix);
             node.value = memberName;
             return;
         }
@@ -169,22 +271,43 @@ function transformCodeRefs(options: any) {
         if (resolvedName == null) {
             //console.log("couldn't find name");
             //console.log(options);
+
+            // console.log("getApiLink not resolved " + memberName);
+            // if (filePath.indexOf("calendar.md")) {
+            // }
+
             return;
         }
 
         if (createLink) {
+            let link: any = null;
+            // console.log("getApiLink memberName " + memberName);
             if (isTypeName) {
-                let link = getApiLink(apiDocRoot, apiTypeName!, null, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
-                }
+                link = getApiLink(apiDocRoot, apiTypeName!, null, options);
             } else {
-                let link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
-                if (link) {
-                    parent.children.splice(index, 1, link);
-                    return;
+                link = getApiLink(apiDocRoot, apiTypeName!, resolvedName, options);
+                // console.log("getApiLink other " + link.url);
+            }
+
+            if (link) {
+                // overriding api root for components specified in docsConfig.json
+                if (apiDocOverrideComponents !== undefined) {
+                    //console.log("getApiLink replace apiDocOverride " + link.url);
+                    for (const component of apiDocOverrideComponents) {
+                        let className = new RegExp(component.toLowerCase() + ".*.html", "im")
+                        if (link.url.match(className)) {
+                            // if (link.url.indexOf("calendar") >= 0)
+                            //     console.log("getApiLink old " + memberName + " >> '" + link.url + "'");
+                            link.url = link.url.replace(apiDocRoot, apiDocOverrideRoot);
+                            //link.url = urls.replace("\/api\/docs\/", "\/docs\/");
+                            //if (link.url.indexOf("calendar") >= 0)
+                            //    console.log("getApiLink new " + memberName + " >> '" + link.url + "'");
+                        }
+                    }
                 }
+                // console.log("getApiLink " + memberName + " '" + link.url + "'");
+                parent.children.splice(index, 1, link);
+                return;
             }
 
         }
@@ -251,6 +374,27 @@ function getFrontMatterTypes(options: any) {
 function transformDocLinks(options: any) {
     function transformLink(node: any) {
         let reference = node.url;
+
+        // allows usage of $Platform$ in links to topics/sections
+        if (reference.indexOf("$Platform$") > 0) {
+            let platform = getPlatformName(options.platform);
+            reference = reference.replace("$Platform$", platform).toLowerCase();
+            reference = reference.replace("webcomponents", "web-components");
+            reference = reference.replace(" ", "-");
+        } else if (reference.indexOf("$") > 0) {
+            throw new Error("cannot transform a link with this variable:\n" + reference);
+        }
+
+        var isApiDocLink = reference.indexOf("{environment:dvApiBaseUrl") > 0;
+        var isSampleLink = reference.indexOf("{environment:dvDemo") > 0 ||
+                           reference.indexOf("{environment:demo") > 0;
+
+        var isTopicLink = !isApiDocLink && reference.indexOf(".md") > 0;
+        if (isTopicLink) {
+            // ensuring link to topics/section using lower-case per DocFX requirement
+            node.url = reference.toLowerCase();
+        }
+
         let mappings: MappingLoader = options.mappings;
         if (reference.indexOf("doc://") !== 0) {
             return;
@@ -285,6 +429,7 @@ function transformDocLinks(options: any) {
             docUrl = docUrl.replace("{CONTROL_NAME}", controlName);
         }
 
+
         node.url = docUrl;
     }
 
@@ -295,22 +440,28 @@ function transformDocLinks(options: any) {
 
 function transformDocPlaceholders(options: any) {
     function transformText(node: any) {
-        if (!node.value) {
-            return;
+        if (node.value) {
+            node.value = replaceVariables(node.value);
+            //console.log('transformText ' + node.value);
         }
-        let value = node.value;
 
+        if (node.url) {
+            node.url = replaceVariables(node.url);
+            //console.log('transformText ' + node.url);
+        }
+    }
+
+    function replaceVariables(nodeValue: string) {
         let docs = options.docs;
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
                 let curr = docs.replacements[i];
                 let name = curr.name;
                 let r = new RegExp(name, "g");
-                value = value.replace(r, curr.value);
+                nodeValue = nodeValue.replace(r, curr.value);
             }
-
-            node.value = value;
         }
+        return nodeValue;
     }
 
     return function (tree: any) {
@@ -464,6 +615,11 @@ function isPlatformComment(node: any): boolean {
     return false;
 }
 
+function getPlatformName(enumInt: number): string {
+    let platformEnum = APIPlatform[enumInt];
+    return platformEnum.toString();
+}
+
 function getPlatformsFromString(str: string): APIPlatform[] {
     let val = str.replace("<!--", "");
     val = val.replace("-->", "");
@@ -612,11 +768,11 @@ function manageAutoButtons(options: any) {
     function manageButtons(node: any, index: number, parent: any) {
         let docs = options.docs;
         if (node.value.indexOf("sample-button") >= 0) {
-            if (!docs.addAutoButtons) {
+            if (!docs.codeSandboxButtonInject) {
                 node.value = node.value.replace(/<\s*sample-button\s*[^>]*>\s*<\/\s*sample-button>/, "");
             } else {
-                let startFileSubst = docs.autoButtonStartFileReplace;
-                let indexFileSubst = docs.autoButtonIndexFileReplace;
+                let startFileSubst = docs.codeSandboxButtonStartFileReplace;
+                let indexFileSubst = docs.codeSandboxButtonIndexFileReplace;
                 if (startFileSubst && indexFileSubst) {
                     if (node.value.indexOf("start-file") >= 0) {
                         node.value = node.value.replace(
@@ -748,6 +904,8 @@ export class MarkdownTransformer {
     private _envTarget: string = "development";
     private _envBrowser: string = "";
 
+    public docsLanguage: string = '';
+
     shouldOmitFencedCode(language: string, platform: APIPlatform[]) {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
@@ -837,6 +995,7 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
+        filePath: string,
         callback: (err: any, results: string | null) => void): void {
 
         // check for strings that should be API links:
@@ -863,37 +1022,102 @@ export class MarkdownTransformer {
             toDelete: deleteMap,
             platformDetector: this._platformDetector,
             docs: this._docs,
+            platformSpinalSuffix: null as string | null,
+            platformPascalSuffix: null as string | null,
             platformPascalPrefix: null as string | null,
             platformSpinalPrefix: null as string | null
         };
 
+        if (this._platform === APIPlatform.Angular) {
+            // injecting sandbox and stackblitz buttons
+            let codeViewers = fileContent.split("<code-view");
+            // console.log("codeViewers " + codeViewers.length);
+            let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
+            for (let v = 0; v < codeViewers.length; v++) {
+                let viewer = codeViewers[v];
+                let viewerEnd = -1;
+                let viewerStart = viewer.indexOf("code-view");
+                if (viewerStart >= 0) {
+                    let samplePath = null;
+                    let lines = viewer.split("\n");
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i];
+                        if (line.indexOf("github-src=") > 0) {
+                            samplePath = line.replace('github-src="',"");
+                            samplePath = samplePath.replace('"','');
+                            samplePath = samplePath.replace('>','');
+                            samplePath = samplePath.trim();
+                        }
+                        if (line.indexOf("code-view>") > 0) {
+                            viewerEnd = i + 1;
+                        }
+                    }
+
+                    if (viewerEnd >= 0 && samplePath !== null) {
+                        let github = "github/IgniteUI/igniteui-angular-examples/tree/master/samples/" + samplePath;
+                        let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
+                        let sandbox = "https://codesandbox.io/s/" + github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/app.component.html";
+                        let editButtons = editButtonTemplate + "";
+                        editButtons = editButtons.replace('{sandbox}', sandbox);
+                        editButtons = editButtons.replace('{stackblitz}', stackblitz);
+                        lines.splice(viewerEnd, 0, editButtons);
+                        // console.log("codeViewers " + github + " " + viewerEnd + " " + lines.length);
+                    }
+                    codeViewers[v] = lines.join('\n');
+                }
+            }
+            fileContent = codeViewers.join('<code-view');
+        }
+
+        // resolving links to sample browsers: local, staging, production
+        // except for Angular because the main Angular repo will update these links
         if (this._platform === APIPlatform.Blazor ||
             this._platform === APIPlatform.React ||
             this._platform === APIPlatform.WebComponents) {
             // using 'samplesBrowsers' variable in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
-                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", this._envBrowser);
-                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", this._envBrowser);
+                let browserLink = this._envBrowser;
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
+
+                    // changing samples links to JP staging website in JP topics
+                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
+
+                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
+                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", browserLink);
             }
         }
 
+        // using better looking arrows between API links this way we do not mess markdown with custom symbols
+        fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
+
         switch (this._platform) {
             case APIPlatform.Angular:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igx";
                 options.platformSpinalPrefix = "igx-";
                 break;
             case APIPlatform.React:
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igr";
                 options.platformSpinalPrefix = "igr-";
                 break;
             case APIPlatform.WebComponents:
+                options.platformPascalSuffix = "Component";
+                options.platformSpinalSuffix = "";
                 options.platformPascalPrefix = "Igc";
                 options.platformSpinalPrefix = "igc-";
                 break;
             case APIPlatform.Blazor:
-                options.platformPascalPrefix = "";
-                options.platformSpinalPrefix = "";
+                options.platformPascalSuffix = "";
+                options.platformSpinalSuffix = "";
+                options.platformPascalPrefix = "Igb";
+                options.platformSpinalPrefix = "Igb";
         }
 
         remark().data('settings', {
@@ -904,7 +1128,7 @@ export class MarkdownTransformer {
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
         .use(getFrontMatterTypes, options)
-        .use(transformCodeRefs, options)
+        .use(transformCodeRefs, options) // filePath
         .use(transformDocLinks, options)
         .use(transformDocPlaceholders, options)
         .use(omitPlatformSpecificSections, options)
@@ -924,6 +1148,224 @@ export class MarkdownTransformer {
 
             callback(null, vfile.toString());
         });
+    }
+
+    getGithubURL(codeViewerLine: string): string {
+        var url = "url/to/sample/folder";
+        var lines = codeViewerLine.split('\r\n');
+        var iframe = "";
+        for (const line of lines) {
+            if (line.indexOf("iframe-src=") >= 0) {
+                iframe = line; break;
+            }
+        }
+        if (iframe !== "") {
+            // console.log(">> iframe \n" +  iframe );
+
+            url = iframe.replace('iframe-src=', '');
+            url = url.replace('{environment:dvDemosBaseUrl}/', '');
+            url = url.replace('{environment:demosBaseUrl}/', '');
+            url = url.replace('-chart-', '-chart/');
+            url = url.replace('-gauge-', '-gauge/');
+            url = url.replace('-graph-', '-graph/');
+            url = url.replace('data-grid-', 'data-grid/');
+            url = url.replace('geo-map-', 'geo-map/');
+            url = url.replace('data-picker-', 'data-picker/');
+            url = url.replace('dock-manager-', 'dock-manager/');
+            url = url.replace('multi-column-combobox-', 'multi-column-combobox/');
+            url = url.replace('spreadsheet-', 'spreadsheet/');
+            url = url.replace('excel-library-', 'excel-library/');
+            url = url.replace('zoomslider-', 'zoomslider/');
+            url = url.replace('sparkline-', 'sparkline/');
+            url = url.replace('>', '');
+            url = url.split('"').join('');
+            url = url.trim();
+            // console.log(">> iframe \n" +  iframe + "\n>> url  " + url);
+        }
+        return url;
+    }
+    verifyCodeViewer(fileContent: string, filePath: string): number {
+        // var fileContent = file.contents.toString();
+        // var filePath = file.dirname + "\\" + file.basename
+        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+
+        var md = new MarkdownContent(fileContent, filePath);
+
+        // console.log("sections " + md.sections.length);
+        var errorsCount = 0;
+        for (const section of md.sections) {
+
+            for (const line of section.lines) {
+                if (line.isCodeViewer()) {
+
+                    // console.log(line.index + " s=" + line.isCodeViewerWithStyle());
+                    // console.log(line.index + " u=" + line.isCodeViewerWithURL());
+                    // console.log(line.index + " f=" + line.isCodeViewerWithIFrame());
+                    // console.log(line.index + " a=" + line.isCodeViewerWithAltName());
+                    // console.log(line.index + " g=" + line.isCodeViewerWithGithub());
+                    // console.log("");
+                    // console.log(line);
+                    if (!line.isCodeViewerWithGithub()) {
+                        var url = '"' + this.getGithubURL(line.content) + '"';
+                        console.log("");
+                        console.log('>> Missing github-src=' + url + ' on code-view in: ' +  filePath);
+                        console.log("" + line.content + "");
+                        errorsCount++;
+                    }
+                }
+            }
+        }
+        // errorsCount = 0;
+        return errorsCount;
+    }
+
+    verifyMetadata(fileContent: string, filePath: string): any {
+        var md = new MarkdownContent(fileContent, filePath);
+        var mdValidated = false;
+
+        if (md.metadata.hasContent())
+        {
+            // if (md.isLocalEN()) {
+            //     md.metadata.language = '_language: en';
+            // }
+
+            // auto-correct metadata
+            // if (md.isLocalJP()) {
+            //     md.metadata.language = '_language: jp';
+            // }
+
+            // if (md.isLocalKR()) {
+            //     md.metadata.language = '_language: kr';
+            // }
+
+            //fileContent = md.toString();
+            // console.log("metadata: \n" + md.metadata);
+
+            //var meta = md.metadata.toString();
+            if (!md.metadata.hasTitle())
+                console.log("ERROR: missing metadata 'title:' in " + filePath);
+            else if (!md.metadata.hasDescription())
+                console.log("ERROR: missing metadata '_description:' in " + filePath);
+            else if (!md.metadata.hasKeywords())
+                console.log("ERROR: missing metadata '_keywords:' in " + filePath);
+            else if (!md.metadata.hasLanguage() && !md.isLocalEN())
+                console.log("ERROR: missing metadata '_language:' in " + filePath);
+            else if (md.metadata.hasMentionedLinks())
+            {
+                if (!md.metadata.hasMentionedTypes())
+                    console.log("ERROR: missing metadata 'mentionedTypes:' in " + filePath);
+                else if (md.metadata.mentionedLinks.includes("`true`"))
+                    console.log("ERROR: replace `true` with **true** in " + filePath);
+                else if (md.metadata.mentionedLinks.includes("`false`"))
+                    console.log("ERROR: replace `false` with **false** in " + filePath);
+                else
+                    mdValidated = true;
+            }
+            else
+            {
+                mdValidated = true;
+            }
+        } else {
+            console.log("ERROR: missing metadata section wrapped with '---' in " + filePath);
+        }
+
+        //console.log("metadata " + filePath);
+
+        return { fileContent: fileContent, isValid: mdValidated};
+    }
+
+    updateApiSection(fileContent: string, filePath: string): string {
+        var newApiMembers = [];
+
+        var md = new MarkdownContent(fileContent, filePath);
+
+        var apiSection = new MarkdownSection('');
+        for (const section of md.sections) {
+            if (section.index === 0) continue;
+
+            if (section.withApiList()) {
+                apiSection = section;
+                // console.log("==================== API " +  section.index + " ==================================================");
+                // console.log(section.content);
+                for (const line of section.lines) {
+                    if (!line.isListItem()) continue;
+
+              //      console.log(line.index + " " + line.content);
+                }
+
+            } else if (section.withParagraphs()) {
+                // console.log("==================== section " +  section.index + " ==================================================");
+                // console.log(section.lines.length);
+                // console.log(section.content);
+                for (const line of section.lines) {
+                    if (line.isParagraph()) {
+                       // console.log(line.index + "\n" + line.content);
+                        // var members = line.getMembers();
+                        var words = line.content.split(' ');
+                        // apiMembers.push.apply(apiMembers, members);
+                        for (const word of words) {
+                            if (word.indexOf('`') === 0 &&
+                                newApiMembers.indexOf(word) === -1)
+                                newApiMembers.push('- ' + word);
+                        }
+                    }
+                    //
+                }
+            }
+        }
+
+        // console.log("==============================================================");
+
+        for (const api of newApiMembers) {
+            var apiMissing = apiSection.content.indexOf(api) === -1;
+            if (apiMissing) {
+                //apiSection.content += api;;
+                var line = new MarkdownLine(api)
+                line.index = apiSection.lines.length;
+                apiSection.lines.push(line);
+            }
+            // for (const line of apiSection.lines) {
+            //     if (line.)
+            // }
+        }
+        apiSection.lines.sort((a, b) => (a.content > b.content) ? 1 : -1)
+
+        var orgApiContent = apiSection.content;
+        var newApiContent = '';
+        for (const line of apiSection.lines) {
+            if (line.isEmpty()) continue;
+
+            // console.log(line.index + " " + line.content);
+
+            newApiContent += line.content + '\n';
+        }
+
+        if (newApiContent.trim() !== '') {
+            if (orgApiContent === '') {
+                newApiContent = '\n' + '## API Members \n' + newApiContent;
+                fileContent += newApiContent;
+            } else {
+                fileContent = fileContent.replace(orgApiContent, newApiContent);
+            }
+        }
+
+        // console.log(fileContent);
+
+        // console.log("=====================================\n");
+        // console.log(newApiContent);
+        // console.log("========================");
+
+        // console.log(md.metadata.content);
+        // console.log(md.sections.length);
+        // console.log(md.sections[0].content);
+        // console.log("========================");
+        // console.log(md.sections[1].content);
+
+        // console.log(apiSection);
+        //console.log(md.sections[md.sections.length- 1].content);
+         //console.log(newApiMembers.join(', '));
+
+         return fileContent;
     }
 
     // simplifies converted YML to JSON string into new format of TOC
@@ -992,7 +1434,7 @@ export class MarkdownTransformer {
     }
 
     // generates toc.yml file from toc.json file by filtering out its nodes for specified platform
-    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string {
+    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string[] {
 
         // console.log('generateTOC for "' + platform + '"  platform from');
         console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
@@ -1009,17 +1451,35 @@ export class MarkdownTransformer {
         // optional end:
 
         let ymlPath = jsonPath.replace('toc.json', 'toc.yml');
-        let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease);
+        let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease, platform);
 
         console.log(">> TOC generate done: " + ymlPath);
 
         fs.writeFileSync(ymlPath, ymlContent);
 
-        return ymlContent;
+        let topicPaths: string[] = [];
+        this.generateTopics(topicPaths, tocNodes);
+
+        return topicPaths;
+    }
+
+    // generates list of topic paths from TOC nodes that were filter for specific platform
+    generateTopics(paths: string[], tocNodes: TocNode[]) {
+        for (const node of tocNodes) {
+            // generating path to referenced topic
+            if (node.href !== undefined && node.href.indexOf(".md") > 0) {
+                paths.push(node.href);
+                // console.log('>> TOC match ' + node.href);
+            }
+            // generating paths to children topics
+            if (node.items !== undefined) {
+                this.generateTopics(paths, node.items);
+            }
+        }
     }
 
     // generates nodes recursively for toc.yml file
-    generateNodes(tocNodes: TocNode[], tabIndent: number, isFirstRelease: boolean): string {
+    generateNodes(tocNodes: TocNode[], tabIndent: number, isFirstRelease: boolean, platform: string): string {
         let yml: string = "";
         let tab: string = "";
         if (tabIndent > 0) tab = "  ".repeat(tabIndent);
@@ -1036,23 +1496,39 @@ export class MarkdownTransformer {
             if (node.header) {
                 yml += tab + "  header: true" + "\n";
             } else {
-                if (node.status &&
-                    node.status.toUpperCase() === "NEW") {
-                    yml += tab + "  new: true" + "\n";
-                }
-                else { //if (node.header === undefined) {
+                if (node.status) {
+                    let status = node.status.toString();
+
+                    // checking if a node has status specific to a platform, e.g. "NEW in Blazor"
+                    if (status.indexOf(platform)) {
+                        status = status.replace(" in ", "");
+                        status = status.replace(platform, "");
+                    } else {
+                        status = "";
+                    }
+
+                    // if (node.name && node.name.indexOf("BETA") > 0) {
+                    //     yml += tab + "  beta: true" + "\n";
+                    // } else
+                    if (status.toUpperCase() === "NEW") {
+                        yml += tab + "  new: true" + "\n";
+                    }
+                    else if (status.toUpperCase() === "UPDATED") {
+                        yml += tab + "  updated: true" + "\n";
+                    }
+                    else { // status === ""
+                        yml += tab + "  new: false" + "\n";
+                    }
+
+                } else { //if (node.header === undefined) {
                     yml += tab + "  new: false" + "\n";
                 }
 
-                if (node.status &&
-                    node.status.toUpperCase() === "UPDATED") {
-                    yml += tab + "  updated: true" + "\n";
-                }
             }
 
             if (node.items) {
                 yml += tab + "  items:" + "\n";
-                yml += this.generateNodes(node.items, tabIndent + 2, isFirstRelease);
+                yml += this.generateNodes(node.items, tabIndent + 2, isFirstRelease, platform);
             }
         }
         return yml;
@@ -1076,6 +1552,13 @@ export class MarkdownTransformer {
                 node.exclude.length === 0 ||
                 node.exclude.indexOf(platform) === -1) {
 
+                node.name = node.name.replace("$Platform$", platform);
+                if (node.href) {
+                    node.href = node.href.replace("$Platform$", platform);
+                    node.href = node.href.toLowerCase();
+                    // node.href = node.href.replace(".md", ".html");
+                }
+
                 node.exclude = undefined;
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
@@ -1083,13 +1566,60 @@ export class MarkdownTransformer {
                     node.items = this.filterNodes(node.items, platform);
                 }
                 matchingNodes.push(node);
+                // console.log('>> TOC filter in  ' + this.getNodeInfo(node));
             }
             else {
-                console.log('>> TOC filtering out "' + node.name + '" node with exclude="' + node.exclude.join(',') + '"');
+                // console.log('>> TOC filter out ' + this.getNodeInfo(node) + ' with exclude="' + node.exclude.join(',') + '"');
             }
         }
         return matchingNodes;
     }
+
+    getNodeInfo(node: TocNode) {
+        if (node.href !== undefined) {
+            return '"' + './doc/' + this.docsLanguage + '/components/' + node.href + '" node';
+        } else {
+            return '"' + node.name + '" node header';
+        }
+    }
+}
+
+export class Strings {
+
+    public static endsWith(str: string, pattern: string): boolean {
+        return str.endsWith(pattern);
+    }
+
+    public static excludes(str: string, exclusions: string[], useEndsWith?: boolean): boolean {
+        for (const exclusion of exclusions) {
+            if (useEndsWith) {
+                if (str.endsWith(exclusion)) { return false; }
+            } else {
+                if (str.includes(exclusion)) { return false; }
+            }
+        }
+        return true;
+    }
+
+    public static includes(str: string, pattern: string): boolean {
+        return str.includes(pattern);
+    }
+
+    public static replace(orgStr: string, oldStr: string, newStr: string): string {
+        return orgStr.split(oldStr).join(newStr);
+    }
+
+    public static toTitleCase(str: string, separator?: string) {
+        if (separator === undefined) { separator = ' '; }
+        return str.toLowerCase().split(separator).map(function(word) {
+          return (word.charAt(0).toUpperCase() + word.slice(1));
+        }).join(separator);
+    }
+
+    public static splitCamel(orgStr: string): string {
+        return orgStr.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
+    }
+
 }
 
 export class TocNode {
@@ -1105,4 +1635,222 @@ export class TocNode {
     constructor() {
           this.name = "NOTE without name";
     }
+}
+
+class MarkdownContent {
+    public sections: MarkdownSection[];
+    public metadata: MarkdownMetadata;
+    public content: string = '';
+    public filePath: string = '';
+    public sectionStrings: string[];
+    public apiMembers: string[] = [];
+
+    public isLocalEN() { return this.filePath.indexOf('\\en\\') >= 0 || this.filePath.indexOf('/en/') >= 0; }
+    public isLocalJP() { return this.filePath.indexOf('\\jp\\') >= 0 || this.filePath.indexOf('/jp/') >= 0; }
+    public isLocalKR() { return this.filePath.indexOf('\\kr\\') >= 0 || this.filePath.indexOf('/kr/') >= 0; }
+
+    public toString() {
+        var str = '';
+        if (this.metadata.hasContent()) {
+            str = '---\r\n' + this.metadata.toString() + '---\r\n\r\n';
+        }
+        for (const section of this.sections) {
+            str += section.toString() + '\r\n';
+        }
+        return str;
+    }
+
+    constructor(content: string, filePath: string) {
+
+        this.sections = [];
+        this.sectionStrings = [];
+        this.filePath = filePath;
+        this.metadata = new MarkdownMetadata('');
+
+        if (content === undefined) return;
+
+        var words = content.split(' ');
+        for (const word of words) {
+            if (word.indexOf("```") >= 0) continue;
+
+            if (word.startsWith("`") && word.endsWith("`"))
+                this.apiMembers.push(word);
+        }
+        this.apiMembers = this.apiMembers.filter((v, i, a) => a.indexOf(v) === i);
+
+        var parts = content.split('---');
+        if (parts === undefined) return;
+
+        if (parts.length < 3) { // metadata missing
+            // console.log('Failed on creating MarkdownContent from file without metadata ' + path);
+            // console.log(content);
+            // return;
+
+            this.metadata = new MarkdownMetadata('');
+            this.sectionStrings = parts[0].split('\n## ');
+        } else { // metadata found
+            this.metadata = new MarkdownMetadata(parts[1]);
+            this.metadata.mentionedLinks = this.apiMembers;
+            this.sectionStrings = parts[2].split('\n## ');
+        }
+        // console.log("parts: " + parts.length);
+        // console.log("parts0:" + parts[0]);
+        // console.log("parts1:" + parts[1]);
+        // console.log("parts2:" + parts[2]);
+
+        for (const s of this.sectionStrings) {
+            var section = new MarkdownSection('## ' + s);
+            section.index = this.sections.length;
+            this.sections.push(section);
+            // console.log("==================== section " +  this.sections.length + " ==================================================");
+            // console.log(section.content);
+        }
+        // this.sections.push(new MarkdownSection());
+
+    }
+}
+
+class MarkdownSection {
+
+    public content: string = '';
+    public lines: MarkdownLine[] = [];
+    public index: number = 0;
+
+    public withMetadata() { return this.content.indexOf('---') === 0; }
+    public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
+    public withApiList() { return this.content.indexOf('## API Members') === 0; }
+    public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
+
+    public withParagraphs() {
+        return !this.withMetadata() && !this.withCodeViewer() && !this.withTopicList();
+    }
+
+    public toString() {
+        var str = '';
+        for (const line of this.lines) {
+            var content = line.content.trim();
+            if (line.index === 0)
+                str = content + '\n';
+            else
+                str += content + '\r\n\r\n';
+        }
+        return str;
+    }
+
+    constructor(content: string) {
+
+        if (content === undefined) return;
+
+        this.content = content;
+        var contentLines = [];
+        if (this.withTopicList() || this.withApiList() || this.withMetadata()) {
+            contentLines = content.split('\r\n');
+        } else { // paragraphs
+            contentLines = content.split('\r\n\r\n');
+        }
+
+        for (const l of contentLines) {
+            var line = new MarkdownLine(l)
+            line.index = this.lines.length;
+            this.lines.push(line);
+            // console.log("== line " +  this.lines.length + " ======================");
+            // console.log(line.content);
+        }
+
+    }
+}
+
+class MarkdownMetadata  {
+
+    public content: string = '';
+    public lines: MarkdownLine[] = [];
+    public mentionedTypes: string = '';
+    public mentionedLinks: string[] = [];
+    public title: string = '';
+    public keywords: string = '';
+    public description: string = '';
+    public language: string = '';
+
+    public isEmpty() { return this.content === ""; }
+    public hasContent() { return this.content !== ""; }
+    public hasMentionedTypes() { return this.mentionedTypes !== ""; }
+    public hasMentionedLinks() { return this.mentionedLinks.length > 0; }
+    public hasTitle() { return this.title.indexOf('title:') >= 0; }
+    public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
+    public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
+    public hasDescription() { return this.description.indexOf('_description:') >= 0; }
+
+    public toString() {
+        var str: string = this.title + '\n';
+        if (this.hasDescription()) str += this.description + '\n';
+        if (this.hasLanguage()) str += this.language + '\n';
+        if (this.hasKeywords()) str += this.keywords + '\n';
+        if (this.hasMentionedLinks()) str += this.mentionedLinks.length + '\n';
+        if (this.hasMentionedTypes()) str += this.mentionedTypes + '\n';
+        return str;
+    }
+
+    constructor(content: string) {
+        if (content === undefined) return;
+
+        this.content = content;
+        var lines = content.split('\n');
+        for (const line of lines) {
+            this.lines.push(new MarkdownLine(line.trim()));
+            // find metadata lines while ignoring any commented out lines
+            if (line.indexOf('#') !== 0 && line.indexOf('title:') >= 0) this.title = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_keywords:') >= 0) this.keywords = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_language:') >= 0) this.language = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
+        }
+    }
+
+
+
+}
+
+class MarkdownLine {
+
+    public content: string = '';
+    public index: number = 0;
+
+    constructor(content: string) {
+        if (content !== undefined) {
+            this.content = content;
+        }
+    }
+    public isCodeViewerWithGithub() { return this.content.indexOf('github-src') > 0; }
+    public isCodeViewerWithAltName() { return this.content.indexOf('alt=') > 0; }
+    public isCodeViewerWithIFrame() { return this.content.indexOf('iframe-src=') > 0; }
+    public isCodeViewerWithURL() { return this.content.indexOf('data-demos-base-url=') > 0; }
+    public isCodeViewerWithStyle() { return this.content.indexOf('style=') > 0; }
+
+    public isCodeViewer() { return this.content.indexOf('<code-view') === 0; }
+    public isDivider() { return this.content.indexOf('<div class="divider--half"') === 0; }
+    public isListItem() { return this.content.indexOf('- ') === 0; }
+    public isTitle() { return this.content.indexOf('#') === 0; }
+    public isEmpty() { return this.content.trim() === ''; }
+    public isCodeSnippet() {
+        return this.content.indexOf('```') === 0 ||
+               this.content.indexOf('   ') === 0 ||
+               this.content.indexOf('<Ig') >= 0;
+    }
+    public isParagraph() { return !this.isTitle() && !this.isDivider() && !this.isEmpty() && !this.isListItem() && !this.isCodeViewer(); }
+
+    // public getWords(): string[] {
+    //     var words = this.content.split(' ');
+    //     return words;
+    // }
+
+    // public getMembers(): string[] {
+    //     var words = this.getWords();
+    //     var apiMembers = [];
+    //     for (const word of words) {
+    //         if (word.indexOf('`') === 0 &&
+    //             apiMembers.indexOf(word) === -1)
+    //             apiMembers.push(word);
+    //     }
+    //     return apiMembers;
+    // }
 }
