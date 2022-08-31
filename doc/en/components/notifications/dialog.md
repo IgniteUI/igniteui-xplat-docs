@@ -7,7 +7,7 @@ mentionedTypes: ['Dialog']
 
 # $Platform$ Dialog
 
-The $ProductName$ Dialog component informs users about a task. They can contain important information and require decisions to be taken. A Dialog is a type of modal window that appears on top of all the content to provide valuable information or ask for a decision. Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken.
+The $ProductName$ Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user can't interact with the main app and user action is required before returning to the main window. 
 
 ## $ProductName$ Dialog Example
 
@@ -42,21 +42,22 @@ The simplest way to display the dialog component is to use its `Show` method and
 ```html
 <igc-button onclick="dialog.show()" variant="contained">Show Dialog</igc-button>
 
-<igc-dialog id="dialog" title="Title Content">
-    Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?
-
-    <igc-button slot="footer">OK</igc-button>
-    <igc-button slot="footer" variant="outlined">Cancel</igc-button>
+<igc-dialog id="dialog" title="Confirmation">
+    <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
+    <igc-button slot="footer" onclick="dialog.close()" variant="flat">Cancel</igc-button>
+    <igc-button slot="footer" onclick="dialog.close()" variant="flat">OK</igc-button>
 </igc-dialog>
 ```
 
-## Examples
+The Dialog provides `open` property, which give you the ability to configure the state of the Dialog as per your requirement.
 
-### Close on Outside Click & Close on Escape
+Use the `title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property. Action buttons or additional information can be placed in the bottom part of the Dialog via the `footer` slot.
 
-Use the `closeOnOutsideClick` and `closeOnEscape` properties to configure how the dialog can be closed. By default `closeOnOutsideClick` is set to **true** and `closeOnEscape` - to **false**.
+### Closing
 
-Try it for yourself in the example below:
+By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `closeOnEscape` property. The default value is **true**. If there is an opened dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
+
+Use the `closeOnOutsideClick` property to configure if the Dialog should be closed when clicking outside of it. The default value is **false**.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -64,22 +65,15 @@ Try it for yourself in the example below:
            github-src="notifications/dialog/closing-variations">
 </code-view>
 
-> NOTE
-> If there is an opened dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
-
-### Title
-
-Use the `title` property to set the title of the dialog. If any content is provided in the `title` slot however, it will take precedence over the property.
-
 ### Form
 
-<!-- TODO -->
+Form elements can close a Dialog if they have the attribute `method="dialog"`. Submitting the form will trigger the closing of the Dialog.
 
-<!-- <code-view style="height: 400px"
+<code-view style="height: 500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/dialog/dialog-form" alt="$Platform$ Dialog Form Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="$Platform$ Dialog Form Example"
            github-src="notifications/dialog/form">
-</code-view> -->
+</code-view>
 
 ## Styling
 
@@ -104,15 +98,6 @@ igc-dialog::part(footer) {
            github-src="notifications/dialog/styling">
 </code-view>
 
-## Accessibility
-
-The $Platform$ Dialog component exposes several aria attributes as properties so that they can be assigned to the actual `<dialog>` element and removed from the `<igc-dialog>` element:
-
-- `role` defaults to `dialog`.
-- `aria-label` attribute is not assigned by default
-- `aria-describedby` attribute is not assigned by default
-- `aria-labelledby` attribute defaults to the dialog title's id.
-
 ## API Reference
 
 * `Dialog`
@@ -126,12 +111,9 @@ The $Platform$ Dialog component exposes several aria attributes as properties so
 
 ## API Members
 
-- `role`
 - `title`
-- `toggle`
-- `aria-label`
+- `open`
+- `hide`
 - `closeOnEscape`
-- `aria-labelledby`
-- `aria-describedby`
 - `closeOnOutsideClick`
 - `Dialog`
