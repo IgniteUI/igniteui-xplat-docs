@@ -51,7 +51,9 @@ The simplest way to display the dialog component is to use its `Show` method and
 
 The Dialog provides `open` property, which give you the ability to configure the state of the Dialog as per your requirement.
 
-Use the `title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property. Action buttons or additional information can be placed in the bottom part of the Dialog via the `footer` slot.
+Use the `title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property.
+
+Action buttons or additional information can be placed in the bottom part of the Dialog via the `footer` slot. If no content is added here, a default `OK` button will be shown that closes the Dialog when clicked. In case you don't want this button to be shown you can set the `hideDefaultAction` property to **true**. The default value is **false**.
 
 ### Closing
 
@@ -111,9 +113,10 @@ igc-dialog::part(footer) {
 
 ## API Members
 
-- `title`
-- `open`
-- `hide`
 - `closeOnEscape`
 - `closeOnOutsideClick`
+- `hide`
+- `hideDefaultAction`
+- `open`
+- `title`
 - `Dialog`
