@@ -12,11 +12,6 @@ It is highly recommended that you review the [Binding Shape Files with Geo-Spati
 
 ## $Platform$ Displaying Heat Imagery Example
 
-<!-- Angular, React -->
-```ts
-//WebComponents sample not working in CodeSandbox. Remove build flag once this is fixed.
-```
-
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
@@ -25,8 +20,6 @@ It is highly recommended that you review the [Binding Shape Files with Geo-Spati
 </code-view>
 
 <div class="divider--half"></div>
-
-<!-- end: Angular, React -->
 
 When a `ShapefileConverter` loads its shape files, it converts that data into `ShapeFileRecord` objects. These objects can be retrieved from the `GetPointData()` method of the `ShapefileConverter` and can then be used to create a heat-map through usage of a `TileGeneratorMapImagery` object with a `HeatTileGenerator` assigned to its `TileGenerator` property. This `TileGeneratorMapImagery` can then be used in a geographic tile series as its `TileImagery` source.
 
