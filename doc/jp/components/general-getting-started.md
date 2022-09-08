@@ -1,5 +1,5 @@
 ---
-title: $Platform$ データ可視化ツール | 作業の開始 | インフラジスティックス
+title: 作業の開始 | $ProductName$ | インフラジスティックス
 _description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
 _keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja

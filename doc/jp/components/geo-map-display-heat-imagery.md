@@ -13,11 +13,6 @@ $ProductName$ マップ コントロールには、Shape ファイルをタイ�
 
 ## $Platform$ ヒート画像の表示の例
 
-<!-- Angular, React -->
-```ts
-//WebComponents サンプルが CodeSandbox で機能しません。これが修正されたら、ビルドのフラグを削除します。
-```
-
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
@@ -27,7 +22,6 @@ $ProductName$ マップ コントロールには、Shape ファイルをタイ�
 
 <div class="divider--half"></div>
 
-<!-- end: Angular, React -->
 
 `ShapefileConverter` がそのシェイプ ファイルを読み込むと、そのデータを ShapeFileRecord オブジェクトに変換します。これらのオブジェクトは、`ShapefileConverter` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして地理タイルシリーズで使用できます。
 
