@@ -14,7 +14,6 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 - [Writing Documentation](#Writing-Documentation)
   * [Creating Branches](#Creating-Branches)
   * [Changing Docs](#Changing-Docs)
-  * [Creating Pull Requests](#Creating-Pull-Requests)
   * [Following Rules](#Following-Rules)
   * [Using Variables](#Using-Variables)
 
@@ -22,7 +21,8 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 - [Building Docs](#Building-Docs)
 
 - [Maintenance](#Maintenance)
-  * [Updating API Mapping Files](#Updating-API-Mapping-Files)
+  * [API Mapping Files](#API-Mapping-Files)
+  * [API Resource Links](#API-Resource-Links)
   * [Merging Branches](#Merging-Branches)
 
 
@@ -72,7 +72,7 @@ yarn install
 
 - commit your changes to you branch
 - push your branch to origin
-- create pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
+- create a pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
 
 ## Following Rules
 
@@ -212,7 +212,7 @@ yarn start --plat=Angular
 yarn start --plat=Blazor
 
 For internal use only:
-    npm run startBlazorStaging 
+    npm run startBlazorStaging
     (Note staging samples only )
 ``` -->
 
@@ -288,20 +288,18 @@ yarn build-production --lang=kr --plat=Blazor
 
 ## Maintenance
 
-Follow this section only if you have access to XPlatform source code.
 
-#### Updating API Mapping Files
+#### API Mapping Files
+
+Follow this section to update API mapping files in the `apiMap` folder:
 
 - open, get latest, and build Translator solution: <br>
-**$/NetAdvantage/DEV/XPlatform/2020.2/Source/Translator/Translator_NoRoslyn.sln**
+**$/NetAdvantage/DEV/XPlatform/2022.1/Source/Translator/Translator_NoRoslyn.sln**
 
-- open, get latest, and build DV.Controls solution: <br>
-**$/NetAdvantage/DEV/XPlatform/2020.2/Source/DV.Controls.sln**
+- open, get latest, and build jQuery solution in `Debug` mode: <br>
+**$/NetAdvantage/DEV/XPlatform/2022.1/Source/jQuery/Infragistics.jQuery.sln**
 
-- open, get latest, and build jQuery solution: <br>
-**$/NetAdvantage/DEV/XPlatform/2020.2/Source/jQuery/Infragistics.jQuery.sln**
-
-- follow instructions to [create a new branch](#Creating-Branches)
+- create a new branch from `vnext` branch
 
 - open this repository in VS Code
 
@@ -311,9 +309,23 @@ Follow this section only if you have access to XPlatform source code.
 gulp updateApiMapping
 ```
 
-- commit changes made in the **apiMap** folder
+- commit changes made in the `apiMap` folder
 
-- follow instructions to [a new pull request](#Creating-Pull-Requests)
+- create a pull request and target vnext branch on [github](https://github.com/IgniteUI/igniteui-xplat-docs)
+
+
+#### API Resource Links
+
+This table provides links to API source repositories and build definitions for all platforms:
+
+Platform |API Source | API Build | API DV Web | API LOB Web | Help Docs Web | Help Docs Build
+----|------|---|---|---|---|---
+Blazor| [igniteui-blazor-api](https://github.com/IgniteUI/igniteui-blazor-api) | [BlazorDocFX_API_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=2376&_a=completed) | [STAG](https://staging.infragistics.com/blazor/docs/api/api/IgniteUI.Blazor.Controls.html) - [PROD](https://infragistics.com/blazor/docs/api/api/IgniteUI.Blazor.Controls.html) | N/A | [STAG](https://staging.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) | [BlazorDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=2130&_a=completed)
+React | [/Source/RBuild]($/NetAdvantage/DEV/XPlatform/2022.1/Source/RBuild) | [React.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2387&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-react/api/docs/typescript/latest/index.html) | N/A | [STAG](https://staging.infragistics.com/products/ignite-ui-react/react/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-react/react/components/general-getting-started) | [ReactDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1780&_a=completed)
+Angular| [/Source/NGBuild]($/NetAdvantage/DEV/XPlatform/2022.1/Source/NGBuild) | [Angular.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2385&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/api/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/api/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting-started) | [AngularDocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1812&_a=completed)
+WC| [/Source/WCBuild]($/NetAdvantage/DEV/XPlatform/2022.1/Source/WCBuild) | [XPlat.WC.DEV](http://tfs.infragistics.local:8080/tfs/Engineering/NetAdvantage/XSharp%20Team/_build/index?context=allDefinitions&path=%5CProducts%5CXPlatform%5C22.1&definitionId=2384&_a=completed) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/index.html) - [PROD](https://infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html) - [PROD](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html) | [STAG](https://staging.infragistics.com/products/ignite-ui-web-components/web-components/components/general-getting-started) - [PROD](https://www.infragistics.com/products/ignite-ui-web-components/web-components/components/general-getting-started) | [WC_DocFX_EN](http://tfs.infragistics.local:8080/tfs/Engineering/IgInternalApplicationsGit/IgInternalApplicationsGit%20Team/_build/index?context=allDefinitions&path=%5C&definitionId=1784&_a=completed)
+
+
 
 #### Merging Branches
 
