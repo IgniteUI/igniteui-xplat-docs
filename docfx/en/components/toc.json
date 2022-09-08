@@ -172,15 +172,33 @@
     "href": "menus/navigation-drawer.md"
   },
   {
-    "exclude": ["Angular"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular"],
-    "name": "List {ReleaseStatus_WebsList}",
-    "href": "grids/list.md"
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Data Grid",
+    "href": "lob/grid/overview.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Hierarchical Grid",
+    "href": "lob/hierarchical-grid/overview.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Pivot Grid",
+    "href": "lob/pivot-grid/overview.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Tree Grid",
+    "href": "lob/tree-grid/overview.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -345,6 +363,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "List {ReleaseStatus_WebsList}",
+    "href": "grids/list.md"
   },
   {
     "exclude": ["Angular"],
@@ -1420,12 +1443,12 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"], 
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Mask Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"], 
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Date Time Input {ReleaseStatus_WebsInputs}",
     "href": "inputs/date-time-input.md"
   },
