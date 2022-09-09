@@ -22,6 +22,33 @@ All notable changes for each version of $ProductName$ are documented on this pag
 > [!NOTE]
 Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
+## 3.4.0
+### {PackageComponents}
+
+- Added the highly-configurable [Dialog](notifications/dialog.md) component.
+- Added the highly-configurable [Select](inputs/select.md) component.
+- Improved Calendar's range selection accessibility.
+- Improved Range slider's accessibility during value selection.
+- Improved Rating's accessibility by with assistive software now reading the total number of items.
+- Improved Toast's accessibility by adding `role="alert"` to the message container so that assistive software can read it without the need of focusing
+- Improved Chip's accessibility with the remove button now participating in the tab sequence.
+- Fixed Button prefix/suffix not aligning icons to the button text.
+
+## 3.3.0
+### {PackageComponents}
+
+- Added the highly-configurable [DateTime input](inputs/date-time-input.md) component.
+- Added the highly-configurable [Accordion](layouts/accordion.md) component.
+- Added the feature-rich [Tabs](layouts/tabs.md) component.
+- Added typography styles in themes.
+- New features for [Rating](inputs/rating.md) including single selection mode and the ability to define empty symbols.
+- Improved slider steps rendering.
+- Components now auto register their dependencies when they are registered with `defineComponents`.
+- Removed input helper text container when it is empty.
+- Fixed Icon not showing in Safari.
+- Fixed Checkbox not showing in Safari.
+- Button now stretches correctly in flex containers.
+
 <!-- end: WebComponents -->
 
 <!-- Blazor -->
