@@ -1,13 +1,13 @@
 ---
-title: $Platform$ Data Grid | Build Fast $Platform$ Tables | Infragistics
-_description: Create super fast, responsive $Platform$ data grids and tables with $ProductName$. Supports  editing, filtering, data binding and many more. Try it now!
-_keywords: angular data grid, angular material table, ignite ui for angular
+title: $Platform$ データ グリッド | 高速な $Platform$ テーブルの構築 | インフラジスティックス
+_description: $ProductName$ を使用して、超高速でレスポンシブな $Platform$ データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディング、その他多くの機能をサポートします。今すぐお試しください!
+_keywords: angular data grid, angular material table, ignite ui for angular, angular データ グリッド, angular マテリアル テーブル
 ---
 
 
-# $Platform$ Data Grid Overview and Configuration
+# $Platform$ データ グリッドの概要と構成
 
-$ProductName$ Data Grid is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel, CSV, and pdf formats and more.
+$ProductName$ データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。
 
 
 <!--

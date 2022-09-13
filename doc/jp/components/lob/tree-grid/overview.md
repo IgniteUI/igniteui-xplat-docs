@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Tree Grid | Fastest $Platform$ Tree Table | Infragistics
-_description: The $ProductName$ Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
-_keywords: angular data grid, igniteui for angular, infragistics
+title: $Platform$ ツリー グリッド | 最速の $Platform$ ツリー テーブル | インフラジスティックス
+_description: $ProductName$ ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作するために使用されます。わずかなコーディングでデータをすばやくバインドできます。無料でお試しください。
+_keywords: angular data grid, igniteui for angular, infragistics, angular データ グリッド、インフラジスティックス
 ---
 
-# $Platform$ Tree Grid Overview and Configuration
+# $Platform$ ツリー グリッドの概要と構成
 
-$ProductName$ Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little code or use a variety of events to customize different behaviors. This component provides a rich set of features like data selection, excel style filtering, sorting, paging, templating and column moving. Displaying of tabular data has never been easier and beautiful thanks to the Material Table-based UI Tree Grid.
+$ProductName$ ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作できます。最小限のコードでデータをすばやくバインドするか、さまざまなイベントを使用してさまざまな動作をカスタマイズします。このコンポーネントは、データ選択、Excel スタイル フィルタリング、ソート、ページング、テンプレート、列移動などの豊富な機能を提供します。マテリアル テーブルをベースとした UI ツリー グリッドにより、表形式のデータの表示がさらに簡単できれいになりました。
 
 <!--
 TODO port rest of topic from
