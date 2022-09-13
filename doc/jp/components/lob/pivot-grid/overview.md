@@ -1,7 +1,7 @@
 ---
 title: $Platform$ ピボット グリッドとテーブル – Ignite UI for $Platform$
 _description: $ProductName$ を使用して、高速でレスポンシブな $Platform$ ピボット グリッドとテーブルを作成します。複雑な分析を実行し、データのソート、グループ化、またはフィルター処理を適用します。
-_keywords: $Platform$ pivot grid, $Platform$ material pivot table, Infragistics, $Platform$ ピボット グリッド、$Platform$ マテリアル ピボット テーブル、$ProductName$、インフラジスティックス
+_keywords: $Platform$ pivot grid, $Platform$ material pivot table, Infragistics, $Platform$ ピボット グリッド, $Platform$ マテリアル ピボット テーブル, $ProductName$, インフラジスティックス
 _language: ja
 ---
 
