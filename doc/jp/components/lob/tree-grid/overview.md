@@ -2,6 +2,7 @@
 title: $Platform$ ツリー グリッド | 最速の $Platform$ ツリー テーブル | インフラジスティックス
 _description: $ProductName$ ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作するために使用されます。わずかなコーディングでデータをすばやくバインドできます。無料でお試しください。
 _keywords: angular data grid, igniteui for angular, infragistics, angular データ グリッド、インフラジスティックス
+_language: ja
 ---
 
 # $Platform$ ツリー グリッドの概要と構成

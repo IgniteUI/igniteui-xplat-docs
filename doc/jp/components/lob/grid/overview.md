@@ -2,6 +2,7 @@
 title: $Platform$ データ グリッド | 高速な $Platform$ テーブルの構築 | インフラジスティックス
 _description: $ProductName$ を使用して、超高速でレスポンシブな $Platform$ データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディング、その他多くの機能をサポートします。今すぐお試しください!
 _keywords: angular data grid, angular material table, ignite ui for angular, angular データ グリッド, angular マテリアル テーブル
+_language: ja
 ---
 
 
