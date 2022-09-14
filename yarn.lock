@@ -2245,10 +2245,10 @@ iconv-lite@^0.6.2:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-igniteui-docfx-template@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.2.0.tgz#38f7a70acfe66e411f35f8b3f799de99b0411804"
-  integrity sha512-ZjzFYtiHkBkOk6MdJq9vpXZhn5P1eNMpvOXlhqTJeRq3r8dr5RM/NRrBJQTMwyS2Ka33QRB5B7uOPDzIZ6j6gQ==
+igniteui-docfx-template@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/igniteui-docfx-template/-/igniteui-docfx-template-3.3.1.tgz#c957bb1c332021db2f2ce6156a46737a58a90524"
+  integrity sha512-Tce9rKRULVHTCwQsgyws04xvEKzgc0h/hhZgQqEgEnkaJIHyFE+8lmcvvxaWIPBM6soMgYfJsKAWCjCD5sOyvw==
   dependencies:
     "@stackblitz/sdk" "^1.5.3"
     anchor-js "^4.3.0"
