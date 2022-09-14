@@ -179,6 +179,15 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 
 ```razor
 @code {
+
+    public List<SaleInfo> DataSource { get; set;}
+    Random Rand = new Random();
+    
+    protected override void OnInitialized()
+    {
+        GenerateData();
+    }
+
     public void GenerateData()
     {
         string[] names = new string[] {
@@ -255,10 +264,10 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 
     public class SaleInfo
     {
-        public string Status { get; set; }
-        public string ProductName { get; set; }
-        public string CountryFlag { get; set; }
-        public string Country { get; set; }
+        public string? Status { get; set; }
+        public string? ProductName { get; set; }
+        public string? CountryFlag { get; set; }
+        public string? Country { get; set; }
         public DateTime OrderDate { get; set; }
         public double Profit { get; set; }
         public double ProductPrice { get; set; }
@@ -327,7 +336,7 @@ grid1.dataSource = data;
     DataSource="DataSource"
     AutoGenerateColumns="true"
     DefaultColumnMinWidth="100"
-    SummaryScope="DataSourceSummaryScope.Root"
+    SummaryScope="SummaryScope.Root"
     IsColumnOptionsEnabled="true"
     IsGroupCollapsable="true"
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowBottom"
