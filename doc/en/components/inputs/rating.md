@@ -97,10 +97,11 @@ The `Rating` component allows you to use custom symbols in place of the default 
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
+> [!NOTE]
+The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
 
 ## Single Selection
-The $ProductName$ Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user. 
+The $ProductName$ Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user.
 
 ```html
 <igc-rating single>
@@ -133,9 +134,10 @@ The $ProductName$ Rating component has a single selection mode that allows users
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] Keep in mind that the `step` attribute doesn't work with single selection mode.
+> [!NOTE]
+Keep in mind that the `step` attribute doesn't work with single selection mode.
 
-## Empty & Selected 
+## Empty & Selected
 The $ProductName$ Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. It is mandatory to provide 2 icons for each slot(empty and full) when declaring a symbol, even if they are the same. For instance:
 
 ```html
