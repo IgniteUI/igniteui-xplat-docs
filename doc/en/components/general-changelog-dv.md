@@ -22,8 +22,8 @@ All notable changes for each version of $ProductName$ are documented on this pag
 > [!NOTE]
 Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
-## 3.4.0
-### {PackageComponents}
+## **3.4.0**
+### (*) {PackageComponents}
 
 - Added the highly-configurable [Dialog](notifications/dialog.md) component.
 - Added the highly-configurable [Select](inputs/select.md) component.
@@ -34,8 +34,8 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 - Improved Chip's accessibility with the remove button now participating in the tab sequence.
 - Fixed Button prefix/suffix not aligning icons to the button text.
 
-## 3.3.0
-### {PackageComponents}
+## **3.3.0**
+### (*) {PackageComponents}
 
 - Added the highly-configurable [DateTime input](inputs/date-time-input.md) component.
 - Added the highly-configurable [Accordion](layouts/accordion.md) component.
