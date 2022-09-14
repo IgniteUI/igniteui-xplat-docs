@@ -27,6 +27,31 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "How to",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Blazor Excel Library",
+        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "How To Read & Write Excel Files To Reduce Server Load",
+        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "How To Customize Marker Display in Blazor Charts",
+        "href": "customize-marker-display-in-blazor-charts.md",
+        "status": ""
+      }
+    ]
+  },
+  {
     "name": "Changelog",
     "href": "general-changelog-dv.md",
     "status": "NEW"
