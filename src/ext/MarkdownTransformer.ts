@@ -111,9 +111,9 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
 
             let char1 = resolvedTypeName[0];
 
-            if(char1 == "I"){            
+            if(char1 == "I"){
                 let char2 = resolvedTypeName[1];
-                if(char2.toUpperCase() == char2){                
+                if(char2.toUpperCase() == char2){
                     isClass = false;
                     isEnum = false;
                     isInterface = true;
@@ -1434,7 +1434,10 @@ export class MarkdownTransformer {
     }
 
     // generates toc.yml file from toc.json file by filtering out its nodes for specified platform
-    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string[] {
+    generateTOC(jsonPath: string, platform: string, language: string, isFirstRelease: boolean, excludedFiles: string[]): string[] {
+
+        if (excludedFiles === undefined)
+            excludedFiles = [];
 
         // console.log('generateTOC for "' + platform + '"  platform from');
         console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
@@ -1442,7 +1445,7 @@ export class MarkdownTransformer {
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
 
-        let tocNodes = this.filterTOC(jsonContent, platform);
+        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles);
 
         // optional start:
         // let tocPath = jsonPath.replace('toc.json', 'toc_' + platform + '.json')
@@ -1535,16 +1538,24 @@ export class MarkdownTransformer {
     }
 
     // filters out nodes if they have "exclude" array that contains platform name
-    filterTOC(jsonContent: string, platform: string): TocNode[] {
+    filterTOC(jsonContent: string, platform: string, language: string, excludedFiles: string[]): TocNode[] {
 
         let jsonNodes: TocNode[] = JSON.parse(jsonContent);
-        let tocNodes = this.filterNodes(jsonNodes, platform);
+        let tocNodes = this.filterNodes(jsonNodes, platform, language, excludedFiles);
         // console.log('>> filterTOC completed: ' + jsonNodes.length + ' to ' + tocNodes.length + ' nodes');
 
         return tocNodes;
     }
 
-    filterNodes(tocNodes: TocNode[], platform: string): TocNode[] {
+    filterContains(nodeReference: string, excludedFiles: string[]): boolean {
+        for (const file of excludedFiles) {
+            if (file.indexOf(nodeReference) >= 0)
+                return true;
+        }
+        return false;
+    }
+
+    filterNodes(tocNodes: TocNode[], platform: string, language: string, excludedFiles: string[]): TocNode[] {
         let matchingNodes: TocNode[] = [];
 
         for (const node of tocNodes) {
@@ -1554,6 +1565,9 @@ export class MarkdownTransformer {
 
                 node.name = node.name.replace("$Platform$", platform);
                 if (node.href) {
+                    if (this.filterContains(language + "/components/" + node.href, excludedFiles)){
+                        continue; // skip node if node reference is in excluded files
+                    }
                     node.href = node.href.replace("$Platform$", platform);
                     node.href = node.href.toLowerCase();
                     // node.href = node.href.replace(".md", ".html");
@@ -1563,7 +1577,7 @@ export class MarkdownTransformer {
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
                     node.items.length > 0) {
-                    node.items = this.filterNodes(node.items, platform);
+                    node.items = this.filterNodes(node.items, platform, language, excludedFiles);
                 }
                 matchingNodes.push(node);
                 // console.log('>> TOC filter in  ' + this.getNodeInfo(node));

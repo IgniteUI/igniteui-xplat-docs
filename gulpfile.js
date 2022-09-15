@@ -344,6 +344,107 @@ function verifyApiSections(cb) {
 }
 exports.verifyApiSections = verifyApiSections;
 
+// this array stores actual topic that are resolved from TOC and optional excludedTopics array
+let includedTopics = [];
+function buildTOC(cb) {
+
+    let excludedTopics = [];
+    excludedTopics.push('doc/**/obsolete*.md');
+    // uncomment these lines to build docs without topics:
+    // excludedTopics.push('doc/**/general*.md');
+    // excludedTopics.push('doc/**/general-getting-started.md');
+    // excludedTopics.push('doc/**/general-changelog-dv.md');
+    // excludedTopics.push('doc/**/grids/grids.md');
+    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/charts/**/*.md');
+    // excludedTopics.push('doc/**/charts/types/**/*.md');
+    // excludedTopics.push('doc/**/charts/features/**/*.md');
+    // excludedTopics.push('doc/**/editors/**/*.md');
+    // excludedTopics.push('doc/**/inputs/**/*.md');
+    // excludedTopics.push('doc/**/layouts/**/*.md');
+    // excludedTopics.push('doc/**/menus/**/*.md');
+    // excludedTopics.push('doc/**/data-chart*.md');
+    // excludedTopics.push('doc/**/financial-chart*.md');
+    // excludedTopics.push('doc/**/category-chart*.md');
+    // excludedTopics.push('doc/**/doughnut-chart.md');
+    // excludedTopics.push('doc/**/pie-chart.md');
+    // excludedTopics.push('doc/**/zoomslider*.md');
+    // excludedTopics.push('doc/**/sparkline*.md');
+    // excludedTopics.push('doc/**/treemap*.md');
+    // excludedTopics.push('doc/**/*map*.md');
+    // excludedTopics.push('doc/**/bullet-graph.md');
+    // excludedTopics.push('doc/**/linear-gauge.md');
+    // excludedTopics.push('doc/**/radial-gauge.md');
+    // excludedTopics.push('doc/**/*gauge*.md');
+    // excludedTopics.push('doc/**/*excel*.md');
+    // excludedTopics.push('doc/**/spreadsheet*.md');
+    // excludedTopics.push('doc/**/dock-manager*.md');
+    // excludedTopics.push('doc/**/editors/*.md');
+    // excludedTopics.push('doc/**/scheduling/*.md');
+    // excludedTopics.push('doc/**/notifications/*.md');
+    // excludedTopics.push('doc/**/jp/**/*.md');
+    // excludedTopics.push('doc/**/kr/**/*.md');
+
+    let excludedFiles = [];
+    gulp.src(excludedTopics)
+    .pipe(es.map(function(file, fileCallback) {
+        var filePath = file.path.split('\\').join('/');
+        var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+        // log(fileLocal);
+        excludedFiles.push(fileLocal);
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        log("excludedTopics " + excludedFiles.length + " ... done ");
+
+        let platformName = PLAT;
+        ensureEnvironment();
+
+         // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
+        let isFirstRelease = docs[platformName].isFirstRelease;
+        // generating an array of topic and TOC.yml files from TOC.json files:
+        let enTopics = generateTocFor(platformName, 'en', isFirstRelease, excludedFiles);
+        let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease, excludedFiles);
+        let krTopics = generateTocFor(platformName, 'kr', isFirstRelease, excludedFiles);
+        var tocTopics = [];
+        tocTopics = tocTopics.concat(enTopics); // including EN topics
+        tocTopics = tocTopics.concat(jpTopics); // including JP topics
+        tocTopics = tocTopics.concat(krTopics); // including KR topics
+        // for (const topic of tocTopics) {
+        //     log("topics included in toc: " + topic);
+        // }
+
+        includedTopics = ['doc/**/*.md'];
+        // includedTopics = [];
+        gulp.src(['doc/**/*.md'])
+        .pipe(es.map(function(topicFile, topicCallback) {
+            var filePath = topicFile.path.split('\\').join('/');
+            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+            var includedInTOC = false;
+            for (const topic of tocTopics) {
+                if (filePath.indexOf(topic) >= 0) {
+                    includedInTOC = true;
+                }
+            }
+            if (!includedInTOC) {
+                includedTopics.push('!' + fileLocal);
+            }
+            // including topics that are present in EN/JP/KR TOC files
+            // if (includedInTOC) {
+            //     includedTopics.push(fileLocal);
+            // }
+            topicCallback(null, topicFile);
+        }))
+        .on("end", () => {
+            // for (const topic of includedTopics) {
+            //     log("actual topic: " + topic);
+            // }
+            cb();
+        })
+    });
+}
+exports.buildTOC = buildTOC;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;
@@ -352,19 +453,13 @@ function buildPlatform(cb) {
     log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
     ensureEnvironment();
 
-    // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
-    let isFirstRelease = docs[platformName].isFirstRelease;
-    // generating topic list and TOC.yml files from TOC.json files:
-    let enTopics = generateTocFor(platformName, 'en', isFirstRelease);
-    let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease);
-    let krTopics = generateTocFor(platformName, 'kr', isFirstRelease);
-    let tocTopics = [];
-    tocTopics = tocTopics.concat(enTopics); // including EN topics
-    tocTopics = tocTopics.concat(jpTopics); // including JP topics
-    tocTopics = tocTopics.concat(krTopics); // including KR topics
+    log("building with " + includedTopics.length + " topics");
+    // for (const topic of includedTopics) {
+    //     log("act Topic " + topic);
+    // }
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
-    log("API source mapping: " + apiSourcePath);
+    log("building with API mapping: " + apiSourcePath);
     gulp.src([
         apiSourcePath
     ])
@@ -373,68 +468,8 @@ function buildPlatform(cb) {
     .on("end", () => {
         transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
 
-        // excluding topics that are not present in any of EN/JP/KR TOC files
-        let topicExclusions = [];
-        gulp.src(['doc/**/*.md'])
-        .pipe(es.map(function(file, fileCallback) {
-            var filePath = file.path.split('\\').join('/');
-            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
-            var fileMatch = false;
-            for (const topic of tocTopics) {
-                if (filePath.indexOf(topic) >= 0) {
-                    fileMatch = true;
-                }
-            }
-            if (fileMatch) {
-            //    console.log('>> TOC contains "' + fileLocal + '"');
-            } else {
-            //    console.log('>> TOC excludes "' + fileLocal + '"');
-               topicExclusions.push('!' + fileLocal);
-            }
-            fileCallback(null, file);
-        }))
-        .on("end", () => {
-
-            console.log('>> excluding ' + topicExclusions.length + ' topics');
-            let sources = [
-               'doc/**/*.md', // including all markdown files
-               '!doc/**/obsolete/*.md' // excluding old chart topics
-            ];
-            sources = sources.concat(topicExclusions);
-
-        // uncomment to test faster build
-        // sources.push('!doc/**/obsolete/**/*.md');
-        // sources.push('!doc/**/grids/**/*.md');
-        // sources.push('!doc/**/charts/**/*.md');
-        // sources.push('!doc/**/charts/types/**/*.md');
-        // sources.push('!doc/**/charts/features/**/*.md');
-        // sources.push('!doc/**/editors/**/*.md');
-        // sources.push('!doc/**/inputs/**/*.md');
-        // sources.push('!doc/**/layouts/**/*.md');
-        // sources.push('!doc/**/menus/**/*.md');
-        // sources.push('!doc/**/data-chart*.md');
-        // sources.push('!doc/**/financial-chart*.md');
-        // sources.push('!doc/**/category-chart*.md');
-        // sources.push('!doc/**/doughnut-chart.md');
-        // sources.push('!doc/**/pie-chart.md');
-        // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/sparkline*.md');
-        // sources.push('!doc/**/treemap*.md');
-        // sources.push('!doc/**/general*.md');
-        // sources.push('!doc/**/general-getting-started.md');
-        // sources.push('!doc/**/general-changelog-dv.md');
-        // sources.push('!doc/**/*map*.md');
-        // sources.push('!doc/**/bullet-graph.md');
-        // sources.push('!doc/**/linear-gauge.md');
-        // sources.push('!doc/**/radial-gauge.md');
-        // sources.push('!doc/**/*gauge*.md');
-        // sources.push('!doc/**/*excel*.md');
-        // sources.push('!doc/**/spreadsheet*.md');
-        // sources.push('!doc/**/dock-manager*.md');
-        // sources.push('!doc/**/editors/*.md');
-        // sources.push('!doc/**/scheduling/*.md');
-        // sources.push('!doc/**/jp/**/*.md');
-        // sources.push('!doc/**/kr/**/*.md');
+        // the includedTopics array is generated in buildTOC task
+        let sources = includedTopics;
 
         gulp.src(sources)
         .pipe(transformFiles())
@@ -467,8 +502,6 @@ function buildPlatform(cb) {
             console.log("ERROR building platform: " + platformName.toString());
             cb(err);
         });
-
-        }) // end of finding topicExclusions
     })
     .on("error", (err) => {
         console.log("ERROR building platform: " + platformName.toString());
@@ -523,14 +556,16 @@ function generateTocYML(cb) {
 }
 exports.generateTocYML = generateTocYML;
 
-// generate "toc.yml" file from "toc.json" by filtering its nodes for specified platform
+// generate "toc.yml" file from "toc.json" by filtering its nodes for specified platform name
 // e.g.  generateTocFor('All', 'en');
 // e.g.  generateTocFor('Angular', 'en');
-function generateTocFor(platformName, language, isFirstRelease) {
+// e.g.  generateTocFor('React', 'en');
+// e.g.  generateTocFor('Blazor', 'en');
+function generateTocFor(platform, language, isFirstRelease, excludedFiles) {
     ensureEnvironment();
     transformer.docsLanguage = language;
     let tocPath = './docfx/' + language + '/components/toc.json';
-    let tocTopics = transformer.generateTOC(tocPath, platformName, isFirstRelease);
+    let tocTopics = transformer.generateTOC(tocPath, platform, language, isFirstRelease, excludedFiles);
     tocTopics.sort();
     for (let i = 0; i < tocTopics.length; i++) {
         tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
@@ -582,13 +617,16 @@ function buildCore(cb) {
     copyWebConfig();
     buildPlatform(cb);
 }
+
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
+
 // functions for building each platform:
-function buildAngular(cb)   { PLAT = "Angular"; buildCore(cb); }
-function buildBlazor(cb)    { PLAT = "Blazor"; buildCore(cb); }
-function buildReact(cb)     { PLAT = "React"; buildCore(cb); }
-function buildWC(cb)        { PLAT = "WebComponents"; buildCore(cb); }
+function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }
+function buildBlazor(cb)    { PLAT = "Blazor"; buildCoreAndTOC(cb); }
+function buildReact(cb)     { PLAT = "React"; buildCoreAndTOC(cb); }
+function buildWC(cb)        { PLAT = "WebComponents"; buildCoreAndTOC(cb); }
 // function for building output of a platform specified in arguments, e.g. --plat=React
-function buildWithArgs(cb)  { buildCore(cb); }
+function buildWithArgs(cb)  { buildCoreAndTOC(cb); }
 // exporting build functions for each platform:
 exports['buildOutputAngular'] = gulp.series(verifyFiles, buildAngular)
 exports['buildOutputBlazor'] = gulp.series(verifyFiles, buildBlazor)
