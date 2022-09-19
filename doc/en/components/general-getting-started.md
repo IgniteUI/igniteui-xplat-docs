@@ -83,7 +83,7 @@ code .
 
 ```
   "scripts": {
-    "build": "webpack src/index.js -o dist/index.bundle.js"
+    "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
 ```
 
@@ -114,7 +114,7 @@ import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## Step 3 - Install Ignite UI for Web Components
+## Step 3 - Install Ignite UI for Web Components and lit-html
 
 1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Map web component:
 
@@ -122,9 +122,10 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
+npm install lit-html
 </pre>
 
-2 - Import the Geographic Map modules and **ModuleManager** in **index.ts** file:
+2 - Import the Geographic Map modules and **ModuleManager** in **index.js** file:
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';

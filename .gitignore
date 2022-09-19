@@ -20,3 +20,12 @@ docfx/**/web.config
 # package-lock.json
 
 _exported_templates
+
+_angular-org-grids
+
+# shared-files-start
+doc/en/components/lob/grid/template.md
+doc/en/components/lob/tree-grid/template.md
+doc/en/components/lob/pivot-grid/template.md
+doc/en/components/lob/hierarchical-grid/template.md
+# shared-files-end

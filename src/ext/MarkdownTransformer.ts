@@ -191,7 +191,8 @@ function transformCodeRefs(options: any) {
             transformWarning("found empty API member");
         }
         if (memberHasCharSpace && !memberHasCharDot) {
-            transformWarning("found a space in API member: `" + memberName + "` did you mean: **" + memberName + "**");
+            var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
+            transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
         if (memberName.includes("Igc", 0)) {
             transformWarning("found 'Igc' instead of 'Ig$' in API member: `" + memberName + "`");
@@ -1252,7 +1253,7 @@ export class MarkdownTransformer {
                 console.log("ERROR: missing metadata '_language:' in " + filePath);
             else if (md.metadata.hasMentionedLinks())
             {
-                if (!md.metadata.hasMentionedTypes())
+                if (!md.metadata.hasMentionedTypes() && !md.metadata.hasSharedComponents())
                     console.log("ERROR: missing metadata 'mentionedTypes:' in " + filePath);
                 else if (md.metadata.mentionedLinks.includes("`true`"))
                     console.log("ERROR: replace `true` with **true** in " + filePath);
@@ -1272,6 +1273,81 @@ export class MarkdownTransformer {
         //console.log("metadata " + filePath);
 
         return { fileContent: fileContent, isValid: mdValidated};
+    }
+
+    updateGitIgnore(excludeFiles: string[])
+    {
+
+        let gitIgnore = fs.readFileSync(".gitignore").toString();
+        // var gitReg = new RegExp("shared-files-start([\S\s]*?)shared-files-end", "gm");
+        // gitIgnore = gitIgnore.replace(gitReg, generatedFiles.join('\n'));
+        // console.log(gitIgnore);
+        // let start = gitIgnore.indexOf("# shared-files-start");
+        // let end = gitIgnore.indexOf("# shared-files-end");
+        // gitIgnore = gitIgnore.slice(start + 1, end);
+        var startStr = "# shared-files-start";
+        var endStr = "# shared-files-end";
+        let start = gitIgnore.indexOf(startStr);
+        let end = gitIgnore.indexOf(endStr);
+        // console.log(start);
+        // console.log(end)
+        // var out = gitIgnore.substring(start + startStr.length, end);
+        // out = out.splice(out + startStr.length, 0, 'Feb');
+
+
+        gitIgnore = gitIgnore.substring(0, start + startStr.length)
+        + "\r\n" + excludeFiles.join("\n") + "\r\n"
+        + gitIgnore.substring(end);
+        //var out = Strings.extract("# shared-files-start", "# shared-files-end")
+
+        console.log(gitIgnore);
+        fs.writeFileSync(".gitignore", gitIgnore);
+
+    }
+
+    transformSharedFile(
+        fileContent: string,
+        filePath: string, docsComponents: any, docsConfig: any): string[] {
+        var md = new MarkdownContent(fileContent, filePath);
+
+        var generatedFiles: string[] = [];
+        if (!md.metadata.hasSharedComponents()) return generatedFiles;
+
+        var componentsLine = md.metadata.sharedComponents;
+        componentsLine = componentsLine.replace("sharedComponents:", "");
+        componentsLine = componentsLine.replace("[", "");
+        componentsLine = componentsLine.replace("]", "");
+        componentsLine = componentsLine.replace("_", "");
+        componentsLine = Strings.replace(componentsLine, '"', '');
+        var componentsNames = componentsLine.split(",");
+        if (componentsNames.length === 0) return generatedFiles;
+
+        console.log("transformSharedFile " + filePath);
+        var docPath = ".\\doc\\" + filePath.split("\\doc\\")[1];
+        var note = 'note: AUTO-GEN from "' + Strings.replace(docPath, "\\", "/") + '"';
+
+        for (const name of componentsNames) {
+            var component = docsComponents[name.trim()];
+            if (component === undefined) {
+                console.log(docsComponents);
+                var err = "docComponents.json does not define component: " + name;
+                throw err;
+            } else {
+
+                var newPath = filePath.replace("\\shared\\", component.output);
+                var newContent = fileContent.replace("---\r\ntitle:", "---\r\n" + note + "\r\ntitle:");
+                newContent = newContent.replace(md.metadata.sharedComponents + "\r\n", "");
+
+                newContent = Strings.replace(newContent, "$IgComponent", "$" + component.variable);
+                newContent = Strings.replace(newContent, "{IgComponent", "{" + component.variable);
+                fs.writeFileSync(newPath, newContent);
+
+                var gitPath = "doc\\" + newPath.split("\\doc\\")[1];
+                gitPath = Strings.replace(gitPath, "\\", "/")
+                generatedFiles.push(gitPath);
+            }
+        }
+        return generatedFiles;
     }
 
     updateApiSection(fileContent: string, filePath: string): string {
@@ -1440,7 +1516,7 @@ export class MarkdownTransformer {
             excludedFiles = [];
 
         // console.log('generateTOC for "' + platform + '"  platform from');
-        console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
+        console.log(">> TOC generating from: " + jsonPath + ' for "' + platform); // + '" and isFirstRelease=' + isFirstRelease);
 
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
@@ -1456,7 +1532,7 @@ export class MarkdownTransformer {
         let ymlPath = jsonPath.replace('toc.json', 'toc.yml');
         let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease, platform);
 
-        console.log(">> TOC generate done: " + ymlPath);
+        // console.log(">> TOC generating done: " + ymlPath);
 
         fs.writeFileSync(ymlPath, ymlContent);
 
@@ -1623,6 +1699,12 @@ export class Strings {
         return orgStr.split(oldStr).join(newStr);
     }
 
+    public static extract(orgStr: string, startStr: string, endStr: string): string {
+       let start = orgStr.indexOf(startStr);
+        let end = orgStr.indexOf(endStr);
+        return orgStr.substring(start + startStr.length, end);
+    }
+
     public static toTitleCase(str: string, separator?: string) {
         if (separator === undefined) { separator = ' '; }
         return str.toLowerCase().split(separator).map(function(word) {
@@ -1780,6 +1862,7 @@ class MarkdownMetadata  {
     public lines: MarkdownLine[] = [];
     public mentionedTypes: string = '';
     public mentionedLinks: string[] = [];
+    public sharedComponents: string = '';
     public title: string = '';
     public keywords: string = '';
     public description: string = '';
@@ -1789,6 +1872,7 @@ class MarkdownMetadata  {
     public hasContent() { return this.content !== ""; }
     public hasMentionedTypes() { return this.mentionedTypes !== ""; }
     public hasMentionedLinks() { return this.mentionedLinks.length > 0; }
+    public hasSharedComponents() { return this.sharedComponents !== ""; }
     public hasTitle() { return this.title.indexOf('title:') >= 0; }
     public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
     public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
@@ -1817,6 +1901,7 @@ class MarkdownMetadata  {
             if (line.indexOf('#') !== 0 && line.indexOf('_language:') >= 0) this.language = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('sharedComponents:') >= 0) this.sharedComponents = line.trim();
         }
     }
 
