@@ -178,26 +178,34 @@
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Data Grid",
-    "href": "lob/grid/overview.md",
+    "name": "Grid",
+    "href": "grids/lob-grid/overview.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Hierarchical Grid",
-    "href": "lob/hierarchical-grid/overview.md",
+    "href": "grids/hierarchical-grid/overview.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Pivot Grid",
-    "href": "lob/pivot-grid/overview.md",
-    "status": "NEW"
+    "href": "grids/pivot-grid/overview.md",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Pivot Grid Shared Topic",
+        "href": "grids/pivot-grid/template.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Tree Grid",
-    "href": "lob/tree-grid/overview.md",
+    "href": "grids/tree-grid/overview.md",
     "status": "NEW"
   },
   {

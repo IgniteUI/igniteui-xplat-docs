@@ -1,23 +1,7 @@
 {
-    "NOTE": "this file defines components that used to lookup variables from _components array in metadata of topics",
-    "IgGrid" : {
-        "variable": "IgGrid",
-        "output": "\\grid\\",
-        "mentionedTypes": ["Grid", "GridCell", "GridRow", "Column"]
-    },
-    "IgHierarchicalGrid" :{
-        "variable": "IgHierarchicalGrid",
-        "output": "\\hierarchical-grid\\",
-        "mentionedTypes": ["HierarchicalGrid", "GridCell", "HierarchicalGridRow", "Column"]
-    },
-    "IgTreeGrid" :{
-        "variable": "IgTreeGrid",
-        "output": "\\tree-grid\\",
-        "mentionedTypes": ["TreeGrid", "GridCell", "TreeGridRow", "Column"]
-    },
-    "IgPivotGrid" :{
-        "variable": "IgPivotGrid",
-        "output": "\\pivot-grid\\",
-        "mentionedTypes": ["PivotGrid"]
-    }
+    "NOTE": "these entries are mapping {IgComponent} to variables defined in docConfig.json file",
+    "Grid" :             { "name": "Grid", "output": "\\lob-grid\\" },
+    "TreeGrid" :         { "name": "TreeGrid", "output": "\\tree-grid\\" },
+    "PivotGrid" :        { "name": "PivotGrid","output": "\\pivot-grid\\" },
+    "HierarchicalGrid" : { "name": "HierarchicalGrid", "output": "\\hierarchical-grid\\" }
 }

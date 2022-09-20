@@ -441,6 +441,8 @@ function transformDocLinks(options: any) {
 
 function transformDocPlaceholders(options: any) {
     function transformText(node: any) {
+        // console.log("transformDocPlaceholders");
+        // console.log(node);
         if (node.value) {
             node.value = replaceVariables(node.value);
             //console.log('transformText ' + node.value);
@@ -456,10 +458,12 @@ function transformDocPlaceholders(options: any) {
         let docs = options.docs;
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
-                let curr = docs.replacements[i];
-                let name = curr.name;
-                let r = new RegExp(name, "g");
-                nodeValue = nodeValue.replace(r, curr.value);
+                let variable = docs.replacements[i];
+                if (variable.name && variable.value) {
+                    let name = variable.name;
+                    let r = new RegExp(name, "gm");
+                    nodeValue = nodeValue.replace(r, variable.value);
+                }
             }
         }
         return nodeValue;
@@ -600,7 +604,6 @@ function getPlatformSegments(node: any): PlatformSegment[] {
             ret.push(seg);
         }
     }
-
     return ret;
 }
 
@@ -749,16 +752,12 @@ function omitPlatformSpecificSections(options: any) {
                             }
                         }
                     }
-
-
                     checkIndex--;
                 }
             }
         }
         //console.log(node);
     }
-
-
 
     return function (tree: any) {
         visit(tree, 'html', omitSections)
@@ -885,6 +884,145 @@ function omitFencedCode(options: any) {
         visit(tree, 'code', omitFence)
     }
 }
+
+
+// class ComponentSegment {
+//     isBegin: boolean;
+//     components: string[];
+//     startIndex: number;
+//     endIndex: number;
+
+//     constructor(isBegin: boolean, components: string[], startIndex: number, endIndex: number) {
+//         this.isBegin = isBegin;
+//         this.components = components;
+//         this.startIndex = startIndex;
+//         this.endIndex = endIndex;
+//     }
+// }
+
+// function isComponentComment(node: any): boolean {
+//     if (node &&
+//         node.type == "html" &&
+//         node.value &&
+//         node.value.trim().indexOf("<!-- Component") >= 0) {
+//         let segments = getComponentSegments(node);
+//         if (segments && segments.length > 0) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// function getComponentSegments(node: any): ComponentSegment[] {
+//     let reg = /(<!--[^>]*-->)/gm;
+//     let match: RegExpExecArray | null;
+//     let ret: ComponentSegment[] = [];
+//     while (match = reg.exec(node.value)) {
+//         let val = match[0];
+//         let isBegin = val.indexOf("ComponentEnd:") == -1;
+//         let components = getComponentsFromString(val);
+//         if (components && components.length > 0) {
+//             //let platforms: APIPlatform[] = [];
+//             let seg = new ComponentSegment(isBegin, components, match.index, match.index + val.length);
+//             ret.push(seg);
+//         }
+//     }
+//     return ret;
+// }
+
+// function getComponentsFromString(str: string): string[] {
+//     let val = str.replace("<!--", "");
+//     val = val.replace("-->", "");
+//     val = val.replace("ComponentStart:", "");
+//     val = val.replace("ComponentEnd:", "");
+//     val = val.trim(); //.toLowerCase();
+//     let vals = val.split(',');
+//     for (let i = 0; i < vals.length; i++) {
+//         vals[i] = vals[i].trim();
+//     }
+//     return vals;
+// }
+
+// function getComponentsFromComment(node: any) : string[] {
+//     return getComponentsFromString(node.value);
+// }
+
+// function componentEqual(plats: string[], otherPlats: string[]): boolean {
+//     if (plats.length !== otherPlats.length) {
+//         return false;
+//     }
+//     for (let i = 0; i < plats.length; i++) {
+//         if (plats[i] !== otherPlats[i]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function omitComponentSections(options: any) {
+//     console.log('omitting component segment for ' + options.targetComponent)
+//     function omitSections(node: any, index: number, parent: any) {
+
+//         if (node.value.indexOf("ComponentEnd:") >= 0) {
+//             let segments = getComponentSegments(node);
+//             console.log('omitting segments ')
+//             console.log(segments);
+
+//             for (let segment of segments) {
+//                 let checkIndex = index;
+//                 while (checkIndex >= 0) {
+
+//                     if (parent.children[checkIndex] &&
+//                         parent.children[checkIndex].type == "html" &&
+//                         isComponentComment(parent.children[checkIndex]) &&
+//                         parent.children[checkIndex].value.indexOf("ComponentEnd:") == -1) {
+//                         let startSegments = getComponentSegments(parent.children[checkIndex]);
+//                         for (let i = segments.length - 1; i >= 0; i--) {
+//                             //let currPlats = getPlatformsFromComment(parent.children[checkIndex]);
+//                             let startSeg = startSegments[i];
+//                             let currPlats = startSeg.components;
+
+//                             var segIndex = segment.components.indexOf(options.targetComponent)
+//                             var segMatch = componentEqual(currPlats, segment.components);
+//                             console.log('\n  omitting current component ' + currPlats + ' segIndex=' + segIndex + ' segMatch=' + segMatch)
+
+//                             if (componentEqual(currPlats, segment.components) &&
+//                                 segment.components.indexOf(options.targetComponent) == -1) {
+//                                 for (let ind = checkIndex + 1; ind < index; ind++) {
+//                                     var removeNode = parent.children[ind];
+//                                     console.log('omitting component segment ind ' + ind + ' ' + removeNode.type)
+//                                     console.log(removeNode.value);
+//                                     options.toDelete.add(parent.children[ind]);
+//                                 }
+
+//                                 parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+//                                 if (parent.children[checkIndex].value.length == 0) {
+//                                     var removeNode = parent.children[checkIndex];
+//                                     console.log('omitting component segment checkIndex ' + checkIndex + ' ' + removeNode.type)
+//                                     console.log(removeNode.value);
+//                                     options.toDelete.add(parent.children[checkIndex])
+//                                 }
+//                                 parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+//                                 if (parent.children[index].value.length == 0) {
+//                                     var removeNode = parent.children[index];
+//                                     console.log('omitting component segment index ' + index + ' ' + removeNode.type)
+//                                     console.log(removeNode.value);
+//                                     options.toDelete.add(parent.children[index]);
+//                                 }
+//                                 break;
+//                             }
+//                         }
+//                     }
+//                     checkIndex--;
+//                 }
+//             }
+//         }
+//         //console.log(node);
+//     }
+//     return function (tree: any) {
+//         visit(tree, 'html', omitSections)
+//     }
+// }
 
 let invalidApiMembers = [
     " IgxFinancialChart ",
@@ -1014,10 +1152,18 @@ export class MarkdownTransformer {
 
         let deleteMap: Set<any> = new Set<any>();
 
+        // var targetComponent = '';
+        // var md = new MarkdownContent(fileContent, filePath);
+        // if (md && md.metadata) {
+        //     targetComponent = md.metadata.targetComponent;
+        //     console.log('transform for targetComponent ' + targetComponent)
+        // }
+
         let options = {
             typeName: typeName,
             platform: this._platform,
             mappings: this._mappings,
+            // targetComponent: targetComponent,
             gatheredText: [],
             transformer: this,
             toDelete: deleteMap,
@@ -1128,10 +1274,11 @@ export class MarkdownTransformer {
         })
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
+        .use(transformDocPlaceholders, options)
         .use(getFrontMatterTypes, options)
         .use(transformCodeRefs, options) // filePath
         .use(transformDocLinks, options)
-        .use(transformDocPlaceholders, options)
+        // .use(transformDocPlaceholders, options)
         .use(omitPlatformSpecificSections, options)
         .use(omitStackblitzButtons, options)
         .use(manageAutoButtons, options)
@@ -1277,32 +1424,83 @@ export class MarkdownTransformer {
 
     updateGitIgnore(excludeFiles: string[])
     {
-
         let gitIgnore = fs.readFileSync(".gitignore").toString();
-        // var gitReg = new RegExp("shared-files-start([\S\s]*?)shared-files-end", "gm");
-        // gitIgnore = gitIgnore.replace(gitReg, generatedFiles.join('\n'));
-        // console.log(gitIgnore);
-        // let start = gitIgnore.indexOf("# shared-files-start");
-        // let end = gitIgnore.indexOf("# shared-files-end");
-        // gitIgnore = gitIgnore.slice(start + 1, end);
         var startStr = "# shared-files-start";
         var endStr = "# shared-files-end";
         let start = gitIgnore.indexOf(startStr);
         let end = gitIgnore.indexOf(endStr);
-        // console.log(start);
-        // console.log(end)
-        // var out = gitIgnore.substring(start + startStr.length, end);
-        // out = out.splice(out + startStr.length, 0, 'Feb');
 
+        if (start < 0) {
+            throw ".gitignore file is missing # shared-files-start";
+        }
+        if (end < 0) {
+            throw ".gitignore file is missing # shared-files-end";
+        }
 
         gitIgnore = gitIgnore.substring(0, start + startStr.length)
         + "\r\n" + excludeFiles.join("\n") + "\r\n"
         + gitIgnore.substring(end);
-        //var out = Strings.extract("# shared-files-start", "# shared-files-end")
 
-        console.log(gitIgnore);
         fs.writeFileSync(".gitignore", gitIgnore);
+    }
 
+    omitComponentSections(
+        targetComponent: string,
+        fileContent: string) : string {
+
+        var lines = fileContent.split('\r\n');
+        // console.log('omitComponentSections "' + targetComponent + '"')
+
+        var topicSections = [];
+        var shareSection = new SharedSection();
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            var start = line.indexOf("<!-- ComponentStart:");
+            var end = line.indexOf("<!-- ComponentEnd:");
+            if (start >= 0) {
+                topicSections.push(shareSection);
+
+                var componentLine = line.trim();
+                componentLine = componentLine.replace("<!-- ComponentStart:", "")
+                componentLine = componentLine.replace(" -->", "")
+                shareSection = new SharedSection();
+                shareSection.components = componentLine.trim().split(',');
+                shareSection.added = true;
+                shareSection.lines.push(line);
+            } else if (end >= 0) {
+                shareSection.lines.push(line);
+                shareSection.added = true;
+                topicSections.push(shareSection);
+
+                shareSection = new SharedSection();
+            } else {
+
+                if (line.indexOf('<!-- NOTE') < 0 &&
+                    line.indexOf('<!-- EXAMPLE') < 0) {
+                    shareSection.lines.push(line);
+                }
+            }
+        }
+
+        if (!shareSection.added)
+        {
+            shareSection.added = true;
+            topicSections.push(shareSection);
+        }
+
+        // console.log(topicSections)
+
+        var outputLines = [];
+        for (let i = 0; i < topicSections.length; i++) {
+            var section = topicSections[i];
+            // console.log("outputSegments" + segment.components.indexOf(targetComponent))
+            if (section.components.length === 0 ||
+                section.components.indexOf(targetComponent) >= 0) {
+                    outputLines.push(...section.lines);
+            }
+        }
+        // console.log(outputLines)
+        return outputLines.join('\r\n');
     }
 
     transformSharedFile(
@@ -1324,22 +1522,27 @@ export class MarkdownTransformer {
 
         console.log("transformSharedFile " + filePath);
         var docPath = ".\\doc\\" + filePath.split("\\doc\\")[1];
-        var note = 'note: AUTO-GEN from "' + Strings.replace(docPath, "\\", "/") + '"';
+        var note = 'note: AUTO-GENERATED from "' + Strings.replace(docPath, "\\", "/") + '"';
 
         for (const name of componentsNames) {
             var component = docsComponents[name.trim()];
             if (component === undefined) {
                 console.log(docsComponents);
-                var err = "docComponents.json does not define component: " + name;
-                throw err;
+                throw "docComponents.json does not define component: '" + name + "'";
             } else {
 
-                var newPath = filePath.replace("\\shared\\", component.output);
+                var newTarget = 'targetComponent: "' + component.name + '"';
+                var newPath = filePath.replace("\\_shared\\", component.output);
                 var newContent = fileContent.replace("---\r\ntitle:", "---\r\n" + note + "\r\ntitle:");
                 newContent = newContent.replace(md.metadata.sharedComponents + "\r\n", "");
+                // newContent = newContent.replace(md.metadata.sharedComponents, newTarget);
+                // newContent = newContent.replace(new RegExp("{(Component)[a-zA-Z]*}", "gm"), component.name);
 
-                newContent = Strings.replace(newContent, "$IgComponent", "$" + component.variable);
-                newContent = Strings.replace(newContent, "{IgComponent", "{" + component.variable);
+                // replacing {Component*} variables with acutal variables, e.g. {TreeGridName}
+                newContent = Strings.replace(newContent, "$Component", "$" + component.name);
+                newContent = Strings.replace(newContent, "{Component", "{" + component.name);
+                // omitting topic sections that are specific to a component
+                newContent = this.omitComponentSections(component.name, newContent);
                 fs.writeFileSync(newPath, newContent);
 
                 var gitPath = "doc\\" + newPath.split("\\doc\\")[1];
@@ -1716,6 +1919,13 @@ export class Strings {
         return orgStr.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
     }
 
+    public static removeLines(lines: string[], start: number, end: number) {
+        if (lines.length < start) return lines;
+        if (lines.length <= end) return lines;
+        if (end - start <= 0) return lines;
+
+        return lines.splice(start, end - start);
+    }
 }
 
 export class TocNode {
@@ -1863,6 +2073,7 @@ class MarkdownMetadata  {
     public mentionedTypes: string = '';
     public mentionedLinks: string[] = [];
     public sharedComponents: string = '';
+    public targetComponent: string = 'NONE';
     public title: string = '';
     public keywords: string = '';
     public description: string = '';
@@ -1902,6 +2113,9 @@ class MarkdownMetadata  {
             if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('sharedComponents:') >= 0) this.sharedComponents = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('targetComponent:') >= 0) {
+                this.targetComponent = line.replace('targetComponent:', '').trim();
+            }
         }
     }
 
@@ -1952,4 +2166,13 @@ class MarkdownLine {
     //     }
     //     return apiMembers;
     // }
+}
+
+class SharedSection {
+    components: string[] = [];
+    lines: string[] = [];
+    added: boolean = false;
+    constructor() {
+        // this.lines = [];
+    }
 }
