@@ -70,7 +70,7 @@ The `Tabs` emits `igcChange` event when the user selects an item either by key p
 
 If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing `Space` or `Enter`
+The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
 
 ### Disabled Tab
 

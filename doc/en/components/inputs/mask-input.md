@@ -28,7 +28,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `IgcMaskInput`, you need to register it as follows:
+Before using the `MaskInput`, you need to register it as follows:
 
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
@@ -97,7 +97,7 @@ Developers can also take advantage of the `placeholder` property, which serves t
 
 ### Value Modes
 
-The `IgcMaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
+The `MaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -108,7 +108,7 @@ The `IgcMaskInput` exposes a `valueMode` property that lets you choose between `
 
 ## Styling
 
-The `IgcMaskInput` component derives from the `IgcInput` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+The `MaskInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
 
 ## Assumptions and limitations
 

@@ -106,19 +106,19 @@ In addition, the `igc-select` supports most of the `igc-input` properties, such 
 
 When the select is focused and the list of options is **not visible**:
 
-- Open the `igc-select` using the `ALT + Up/Down Arrow` combination or by clicking on the `Space` or the `Enter` key.
-- Close the `igc-select` using the `ALT + Up/Down Arrow` combination or any of the `Enter`, `Space`, `Esc` or `Tab` keys.
-- Using the `Up/Left Arrow` keys will select the previous item in the list.
-- Using the `Down/Right Arrow` keys will select the next item in the list.
-- Using the `Home` or `End` keys will select the first or last item in the list.
+- Open the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
+- Close the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
+- Using the <kbd>Up/Left Arrow</kbd> keys will select the previous item in the list.
+- Using the <kbd>Down/Right Arrow</kbd> keys will select the next item in the list.
+- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will select the first or last item in the list.
 - Typing characters will query the list of items and select the one that most closely matches the current user input.
 
 When the select is focused and the list of options is **visible**:
 
-- Using the `Enter` or `Space` keys will select an item and close the list.
-- Using the `Up/Left Arrow` keys will activate the previous item in the list.
-- Using the `Down/Right Arrow` keys will activate the next item in the list.
-- Using the `Home` or `End` keys will activate the first or last item in the list.
+- Using the <kbd>Enter</kbd> or <kbd>Space</kbd> keys will select an item and close the list.
+- Using the <kbd>Up/Left Arrow</kbd> keys will activate the previous item in the list.
+- Using the <kbd>Down/Right Arrow</kbd> keys will activate the next item in the list.
+- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or last item in the list.
 
 > [!NOTE]
 > The `igc-select` component supports only **single** selection of items.

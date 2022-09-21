@@ -42,7 +42,7 @@ Before using the `DateTimeInput`, you need to register it as follows:
 <!-- end: Blazor -->
 
 ### Value binding
-The easiest way to set the value of the `IgcDateTimeInputComponent` component is by passing a Date object to the `value` property:
+The easiest way to set the value of the `DateTimeInput` component is by passing a Date object to the `value` property:
 
 ```typescript
 const input = document.querySelector('igc-date-time-input') as IgcDateTimeInputComponent;
@@ -51,7 +51,7 @@ const date = new Date();
 input.value = date;
 ```
 
-The `IgcDateTimeInputComponent` also accepts [`ISO 8601`](https://tc39.es/ecma262/#sec-date-time-string-format) strings.
+The `DateTimeInput` also accepts [ISO 8601](https://tc39.es/ecma262/#sec-date-time-string-format) strings.
 
 The string can be a full `ISO` string, in the format `YYYY-MM-DDTHH:mm:ss.sssZ` or it could be separated into date-only and time-only portions.
 
@@ -68,7 +68,7 @@ All falsy values, including `InvalidDate` will be parsed as `null`. Incomplete d
 
 ### Keyboard Navigation
 
-The `IgcDateTimeInputComponent` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different `DateParts` among others without having to touch the mouse.
+The `DateTimeInput` has intuitive keyboard navigation that makes it easy to increment, decrement, or jump through different `DateParts` among others without having to touch the mouse.
 
 |Keys|Description|
 |----|-----------|
@@ -84,7 +84,7 @@ The `IgcDateTimeInputComponent` has intuitive keyboard navigation that makes it 
 
 ## Setting formats
 
-The `IgcDateTimeInput` supports different display and input formats.
+The `DateTimeInput` supports different display and input formats.
 
 It uses [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) which allows it to support predefined format options, such as `long` and `short`, `medium` and `full`. Additionally, it can also accept a custom string constructed from supported characters, such as `dd-MM-yy`. Also, if no `displayFormat` is provided, the component will use the `inputFormat` as such.
 
@@ -107,7 +107,7 @@ The table bellow shows formats that are supported by the component's `inputForma
 | `mm` | Minutes with an explicitly set leading zero. |
 | `tt` | AM/PM section for 12-hour format. |
 
-To set a specific input format, pass it as a string to the `IgcDateTimeInput`. This will set both the expected user input format and the `mask`. Additionally, the `inputFormat` is locale based, so if none is provided, the editor will default to `dd/MM/yyyy`.
+To set a specific input format, pass it as a string to the `DateTimeInput`. This will set both the expected user input format and the `mask`. Additionally, the `inputFormat` is locale based, so if none is provided, the editor will default to `dd/MM/yyyy`.
 
 ```html
 <igc-date-time-input input-format="dd-MM-yy" display-format="medium"/>
@@ -198,7 +198,7 @@ If all went well, the component will be `invalid` if the value is greater or low
 
 ## Step up/down
 
-The `IgcDateTimeInputComponent` exposes public `stepUp` and `stepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
+The `DateTimeInput` exposes public `stepUp` and `stepDown` methods. They increment or decrement a specific `DatePart` of the currently set date and time and can be used in a couple of ways.
 
 In the first scenario, if no specific DatePart is passed to the method, a default DatePart will increment or decrement, based on the specified `inputFormat` and the internal component implementation. In the second scenario, you can explicitly specify what DatePart to manipulate as it may suite different requirements. Also, both methods accept an optional `delta` parameter of type number which can be used to set the stepUp/stepDown step.
 
@@ -227,7 +227,7 @@ Try it in the example below:
 
 ## Styling
 
-The `IgcDateTimeInput` component derives from the `IgcInput` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
+The `DateTimeInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
 
 <!-- WebComponents -->
 

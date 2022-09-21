@@ -29,7 +29,7 @@ npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-`IgcMaskInput` を使用する前に、次のように登録する必要があります:
+`MaskInput` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcMaskInputComponent } from 'igniteui-webcomponents';
@@ -109,7 +109,7 @@ IgcMaskInput は、特定のマスクが適用されたときにフォームに�
 
 ## スタイル設定
 
-`IgcMaskInput` コンポーネントは `IgcInput` コンポーネントから派生するため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
+`MaskInput` コンポーネントは `Input` コンポーネントから派生するため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
 
 ## 仮定と制限
 
