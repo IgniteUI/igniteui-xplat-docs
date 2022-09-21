@@ -21,7 +21,7 @@ The [docConfig.json](docConfig.json) file defines variables for each platform an
 
 # Documentation Components
 
-The [docComponents.json](docComponents.json) file defines mapping from a shared variable to actual variable names defined in [docConfig.json](docConfig.json) file.
+The [docComponents.json](docComponents.json) file contains mapping from a shared variable to actual variable names defined in [docConfig.json](docConfig.json) file.
 
 ```json
 {
@@ -44,10 +44,10 @@ In shared topics, these variables are mapped from {Component*} and auto-replaced
 Also, it defines `output` path folder used when generating topics from shared topics, e.g.
 
 ```
-/doc/en/components/grids/_shared/template.md -> /doc/en/components/grids/lob-grid/template.md
-/doc/en/components/grids/_shared/template.md -> /doc/en/components/grids/tree-grid/template.md
-/doc/en/components/grids/_shared/template.md -> /doc/en/components/grids/pivot-grid/template.md
-/doc/en/components/grids/_shared/template.md -> /doc/en/components/grids/hierarchical-grid/template.md
+/_shared/template.md -> /lob-grid/template.md
+/_shared/template.md -> /tree-grid/template.md
+/_shared/template.md -> /pivot-grid/template.md
+/_shared/template.md -> /hierarchical-grid/template.md
 ```
 
 # Shared Topics
@@ -74,13 +74,12 @@ NOTE: keep Angular code snippets when porting to xplatform docs.
 
 /doc/en/components/grids/_shared/template.md
 
-- Rename copied file to match name of a topic located in `grids_templates` folder in Angular repo
+- Rename copied file to match name of a topic located in [grids_templates](https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates) folder in Angular repo
 
-https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates
 
-- Pasted content (without metadata) of a topic from `grids_templates` to a topic in `_shared` folder
+- Pasted content (without metadata) of the topic from `grids_templates` to a topic in `_shared` folder
 
-- Remove URLs in API links, e.g. from
+- Remove URLs in API links because they will be auto-generated
 
 ```
 [`HierarchicalTransactionService`]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
@@ -107,8 +106,8 @@ to
 - Replace `@@igComponent` with `{ComponentTitle}`
 
 - Replace `ignite ui for angular` with `{ProductName}`
-- Replace `Angular` with `{Platform}`
 
+- Replace `Angular` with `{Platform}`
 
 - Replace Angular build flags with XPlatform build flags:
 
@@ -131,17 +130,17 @@ Some content about grids components....
 from:
 
 ```
-<code-view style="height:650px"
+<code-view style="height:500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-batch-editing"
-           alt="Angular @@igComponent Batch Editing and Transactions Example">
+           iframe-src="{environment:demosBaseUrl}/grid/grid-advanced-filtering"
+           alt="Angular @@igComponent Advanced Filtering Example">
 </code-view>
 ```
 
 to:
 
 ```
-<code-view style="height:510px"
+<code-view style="height:500px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-advanced-filtering"
            github-src="{ComponentSample}/advanced-filtering"
