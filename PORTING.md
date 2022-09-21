@@ -5,7 +5,7 @@ This document explains process of porting Angular topics to XPlatform docs.
 
 # Documentation Config
 
-The [docConfig.json](docConfig.json) file defines variables for each platform and also for shared components
+The [docConfig.json](https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/docConfig.json#L369) file defines variables for each platform and also for shared components
 
 ```json
     "replacements": [
@@ -21,7 +21,7 @@ The [docConfig.json](docConfig.json) file defines variables for each platform an
 
 # Documentation Components
 
-The [docComponents.json](docComponents.json) file contains mapping from a shared variable to actual variable names defined in [docConfig.json](docConfig.json) file.
+The [docComponents.json](docComponents.json) file contains mapping from a shared variable to actual variable names defined in [docConfig.json](https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/docConfig.json#L369) file.
 
 ```json
 {
