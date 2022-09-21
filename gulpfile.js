@@ -101,11 +101,13 @@ function buildSharedFiles(cb) {
 
     let source = [
         // "doc/en/**/general-getting-started.md",
-        "doc/en/**/shared/*.md"];
+        "doc/en/**/_shared/*.md",
+        "doc/jp/**/_shared/*.md",
+        "doc/kr/**/_shared/*.md"];
     gulp.src(source)
     // .pipe(getSharedTopics)
     .pipe(es.map(function(file, fileCallback) {
-
+        // finding all shared topics
         var fileContent = file.contents.toString();
         if (fileContent.indexOf("sharedComponents") > 0) {
             var info = { contents: fileContent, path: file.path };
@@ -115,6 +117,7 @@ function buildSharedFiles(cb) {
     })
     .on("end", () => {
         // console.log("buildSharedFiles " + sharedTopics.length);
+        // generating topics from shared topics
         var generatedFiles = [];
         for (const file of sharedTopics) {
 
@@ -125,17 +128,6 @@ function buildSharedFiles(cb) {
         // console.log("transformSharedFiles ");
         // console.log(generatedFiles);
         transformer.updateGitIgnore(generatedFiles);
-
-        // var lines = gitIgnore.split("\r\n");
-        // console.log(lines);
-        // var start = lines.findIndex((i) => i === "# shared-files-start");
-        // let end = lines.findIndex((i) => i === "# shared-files-end");
-        // lines = lines.sp
-        // console.log(start);
-        // console.log(end)
-        // lines.splice(start+1, end - start);
-        // lines.join();
-        // console.log(gitIgnore);
 
         cb();
     }));
@@ -173,12 +165,15 @@ function transformStaticFiles(platformName) {
     return es.map(function(file, cb) {
 
       var fileContent = file.contents.toString();
-      var typeName = path.basename(path.dirname(file.path))
+    //   var typeName = path.basename(path.dirname(file.path))
 
       var replacements = docsConfig[platformName].replacements;
       //console.log(typeName);
       for (var i = 0; i < replacements.length; i++) {
-          fileContent = fileContent.replace(new RegExp(replacements[i].name, "gm"), replacements[i].value);
+          var variable = replacements[i];
+          if (variable.name && variable.value) {
+              fileContent = fileContent.replace(new RegExp(variable.name, "gm"), variable.value);
+          }
       }
       file.contents = Buffer.from(fileContent);
       cb(null, file);
@@ -410,13 +405,17 @@ function buildTOC(cb) {
 
     let excludedTopics = [];
     excludedTopics.push('doc/**/obsolete*.md');
-    excludedTopics.push('doc/**/shared/*.md');
+    excludedTopics.push('doc/**/_shared/*.md');
     // uncomment these lines to build docs without topics:
     // excludedTopics.push('doc/**/general-getting-started.md');
     // excludedTopics.push('doc/**/general-*.md');
     // excludedTopics.push('doc/**/general-getting-started-*.md');
     // excludedTopics.push('doc/**/general-changelog-dv.md');
     // excludedTopics.push('doc/**/lob/*.md');
+    // excludedTopics.push('doc/**/grids/lob-grid/*.md');
+    // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
+    // excludedTopics.push('doc/**/grids/tree-grid/*.md');
+    // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
     // excludedTopics.push('doc/**/grids/*.md');
     // excludedTopics.push('doc/**/grids/data-grid*.md');
     // excludedTopics.push('doc/**/charts/**/*.md');
@@ -681,7 +680,7 @@ function buildCore(cb) {
     buildPlatform(cb);
 }
 
-exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildSharedFiles, buildCore)
 
 // functions for building each platform:
 function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }
