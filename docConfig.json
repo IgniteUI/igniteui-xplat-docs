@@ -359,7 +359,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
-            { "name": "{GridName}",                   "value": "IgbGrid"},
+            { "name": "{GridName}",                   "value": "bGrid"},
             { "name": "{GridModule}",                 "value": "IgbGridModule"},
             { "name": "{GridSelector}",               "value": "igb-grid"},
             { "name": "{GridPackage}",                "value": "igniteui-blazor-grids"},
@@ -367,7 +367,7 @@
             { "name": "{GridApiMembers}",             "value": ["Grid", "GridCell", "GridRow", "Column"]},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
-            { "name": "{TreeGridName}",               "value": "IgbTreeGrid"},
+            { "name": "{TreeGridName}",               "value": "TreeGrid"},
             { "name": "{TreeGridModule}",             "value": "IgbTreeGridModule"},
             { "name": "{TreeGridSelector}",           "value": "igb-tree-grid"},
             { "name": "{TreeGridPackage}",            "value": "igniteui-blazor-grids"},
@@ -375,7 +375,7 @@
             { "name": "{TreeGridApiMembers}",         "value": ["TreeGrid", "GridCell", "TreeGridRow", "Column"]},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
-            { "name": "{PivotGridName}",              "value": "IgbPivotGrid"},
+            { "name": "{PivotGridName}",              "value": "PivotGrid"},
             { "name": "{PivotGridModule}",            "value": "IgbPivotGridModule"},
             { "name": "{PivotGridSelector}",          "value": "igb-pivot-grid"},
             { "name": "{PivotGridPackage}",           "value": "igniteui-blazor-grids"},
@@ -383,7 +383,7 @@
             { "name": "{PivotGridApiMembers}",        "value": ["PivotGrid"]},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
-            { "name": "{HierarchicalGridName}",       "value": "IgbHierarchicalGrid"},
+            { "name": "{HierarchicalGridName}",       "value": "HierarchicalGrid"},
             { "name": "{HierarchicalGridModule}",     "value": "IgbHierarchicalGridModule"},
             { "name": "{HierarchicalGridSelector}",   "value": "igb-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-blazor-grids"},
