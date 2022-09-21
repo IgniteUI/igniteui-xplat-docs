@@ -65,9 +65,10 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 # Instructions
 
 This section provides instructions on how to port Angular topics located in
-https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates
+[grids_templates](https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates) to xplatform docs repo.
 
-to xplatform docs repo.
+NOTE: keep Angular code snippets when porting to xplatform docs.
+
 
 - Copy and paste the `template` markdown file located in the `_shared` folder:
 
@@ -91,13 +92,25 @@ to
 `HierarchicalTransactionService`
 ```
 
+- Remove "..." from code snippets
+
+- Remove backticks from topic links:
+
+```md
+[`Transaction Service class hierarchy`](../transaction-classes.md)
+```
+
+```md
+[Transaction Service class hierarchy](../transaction-classes.md)
+```
+
 - Replace `@@igComponent` with `{ComponentTitle}`
 
 - Replace `ignite ui for angular` with `{ProductName}`
 - Replace `Angular` with `{Platform}`
 
 
-- Replace build flags:
+- Replace Angular build flags with XPlatform build flags:
 
 ```
 @@if (igxName === 'IgxGrid' || igxName === 'IgxHierarchicalGrid') {
