@@ -23,7 +23,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 </{ComponentSelector}>
 ```
 
-<!-- EXAMPLE of build flagging content for single components: -->
+<!-- EXAMPLE of build flagging content for single component: -->
 <!-- ComponentStart: PivotGrid -->
 The Batch Editing feature of the {ComponentName} is {ComponentName} based on the `HierarchicalTransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
 <!-- ComponentEnd: PivotGrid -->
@@ -49,7 +49,7 @@ Below is a detailed example of how is Batch Editing enabled for the `{ComponentN
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-advanced-filtering"
            github-src="{ComponentSample}/advanced-filtering"
-           alt="{Platform} {ComponentName} Advanced Filtering Example">
+           alt="{Platform} {ComponentTitle} Advanced Filtering Example">
 </code-view>
 
 
@@ -128,6 +128,13 @@ After batch editing is enabled, define a {ComponentSelector} with bound data sou
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- ComponentStart: Grid -->
+```razor
+<IgbGrid batchEditing="true" data="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
+
+</IgbGrid>
+```
+<!-- ComponentEnd: Grid -->
 
 <!-- EXAMPLE of a code snippet that applies only to TreeGrid  -->
 <!-- ComponentStart: TreeGrid -->
