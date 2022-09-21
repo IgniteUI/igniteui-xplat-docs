@@ -2,15 +2,23 @@
 
 This document explains process of porting Angular topics to XPlatform docs.
 
+## Table of Contents
 
-# Documentation Config
+- [Documentation Config](#Documentation-Config)
+- [Documentation Components](#Documentation-Components)
+- [Shared Topics](#Shared-Topics)
+- [Instructions](#Instructions)
+- [Building Docs](#Building-Docs)
+
+
+## Documentation Config
 
 The [docConfig.json](https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/docConfig.json#L369) file defines variables for each platform and also for shared components
 
 ```json
     "replacements": [
         { "name": "{TreeGridTitle}",      "value": "Tree Grid"},
-        { "name": "{TreeGridName}",       "value": "IgbTreeGrid"},
+        { "name": "{TreeGridName}",       "value": "TreeGrid"},
         { "name": "{TreeGridModule}",     "value": "IgbTreeGridModule"},
         { "name": "{TreeGridSelector}",   "value": "igb-tree-grid"},
         { "name": "{TreeGridPackage}",    "value": "igniteui-blazor-grids"},
@@ -19,7 +27,7 @@ The [docConfig.json](https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/
     ]
 ```
 
-# Documentation Components
+## Documentation Components
 
 The [docComponents.json](docComponents.json) file contains mapping from a shared variable to actual variable names defined in [docConfig.json](https://github.com/IgniteUI/igniteui-xplat-docs/blob/vnext/docConfig.json#L369) file.
 
@@ -50,7 +58,7 @@ Also, it defines `output` path folder used when generating topics from shared to
 /_shared/template.md -> /hierarchical-grid/template.md
 ```
 
-# Shared Topics
+## Shared Topics
 
 Shared topics are markdown files that share content between multiple components. The shared topics are located in `_shared` folder and they have `sharedComponents` array that defines names of components that a given topic will share content with.
 
@@ -62,7 +70,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ```
 
 
-# Instructions
+## Instructions
 
 This section provides instructions on how to port Angular topics located in
 [grids_templates](https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates) to xplatform docs repo.
@@ -74,12 +82,27 @@ NOTE: keep Angular code snippets when porting to xplatform docs.
 
 /doc/en/components/grids/_shared/template.md
 
-- Rename copied file to match name of a topic located in [grids_templates](https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates) folder in Angular repo
+- Rename copied file to match name of a topic located in [grids_templates](https://github.com/IgniteUI/igniteui-docfx/tree/master/en/components/grids_templates) folder in Angular repo, e.g.
 
 
-- Pasted content (without metadata) of the topic from `grids_templates` to a topic in `_shared` folder
+/doc/en/components/grids/_shared/advanced-filtering.md
 
-- Remove URLs in API links because they will be auto-generated
+- add a new node to [TOC.json](/docfx/en/components/toc.json) file with title and reference path to the new markdown file, e.g.
+
+```json
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Pivot Grid Shared Topic",
+        "href": "grids/pivot-grid/advanced-filtering.md",
+        "status": "NEW"
+      }
+```
+NOTE that reference path should be using name of gird folder (e.g. `pivot-grid`) instead of `_shared` folder.
+
+
+- Pasted content (without metadata) of the topic from `grids_templates` to a topic in `_shared` folder.
+
+- Remove URLs in API links because they will be auto-generated:
 
 ```
 [`HierarchicalTransactionService`]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
@@ -91,7 +114,7 @@ to
 `HierarchicalTransactionService`
 ```
 
-- Remove "..." from code snippets
+- Remove "..." from code snippets.
 
 - Remove backticks from topic links:
 
@@ -103,11 +126,11 @@ to
 [Transaction Service class hierarchy](../transaction-classes.md)
 ```
 
-- Replace `@@igComponent` with `{ComponentTitle}`
+- Replace `@@igComponent` with `{ComponentTitle}` variable.
 
-- Replace `ignite ui for angular` with `{ProductName}`
+- Replace `ignite ui for angular` with `{ProductName}` variable.
 
-- Replace `Angular` with `{Platform}`
+- Replace `Angular` with `{Platform}` variable.
 
 - Replace Angular build flags with XPlatform build flags:
 
@@ -125,7 +148,7 @@ Some content about grids components....
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 ```
 
-- Replace path to samples with `ComponentSample` in code-viewer:
+- Replace routing path to samples with `{ComponentSample}` variable in code-viewer:
 
 from:
 
@@ -146,4 +169,28 @@ to:
            github-src="{ComponentSample}/advanced-filtering"
            alt="{Platform} {ComponentName} Advanced Filtering Example">
 </code-view>
+```
+
+## Building Docs
+
+You can use one of the following commands to build docs:
+
+```
+yarn run buildBlazor
+```
+
+```
+yarn run buildReact
+```
+
+```
+yarn run buildWebComponents
+```
+
+You can review output of docs in this folders:
+
+```
+/dist/Blazor/en/
+/dist/React/en/
+/dist/WebComponents/en/
 ```
