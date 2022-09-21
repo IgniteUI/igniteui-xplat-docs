@@ -1,21 +1,21 @@
 ---
-title: $Platform$ スプレッドシート | 設定 | セル | 数式 | ナビゲーション | 選択 | インフラジスティックス
-_description: $ProductName$ によって $Platform$ スプレッドシートを設定して、チャート データを向上させる方法について説明します。Infragistics はデータ可視化を向上させます。
-_keywords: Excel Spreadsheet, $ProductName$, Infragistics, Excel スプレッドシート, インフラジスティックス
+title: {Platform} スプレッドシート | 設定 | セル | 数式 | ナビゲーション | 選択 | インフラジスティックス
+_description: {ProductName} によって {Platform} スプレッドシートを設定して、チャート データを向上させる方法について説明します。Infragistics はデータ可視化を向上させます。
+_keywords: Excel Spreadsheet, {ProductName}, Infragistics, Excel スプレッドシート, インフラジスティックス
 mentionedTypes: ['Spreadsheet']
 _language: ja
 ---
-# $Platform$ Spreadsheet の構成
+# {Platform} Spreadsheet の構成
 
-$Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズーム レベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
+{Platform} Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズーム レベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
 
-## $Platform$ Spreadsheet の構成の例
+## {Platform} Spreadsheet の構成の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           alt="$Platform$ Spreadsheet の構成の例"
+           alt="{Platform} Spreadsheet の構成の例"
            github-src="excel/spreadsheet/config-options">
 </code-view>
 
@@ -64,7 +64,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## 数式バーの構成
 
-$Platform$ `Spreadsheet` は、コントロールの `IsFormulaBarVisible` プロパティを設定して数式バーの表示/非表示を設定できます。
+{Platform} `Spreadsheet` は、コントロールの `IsFormulaBarVisible` プロパティを設定して数式バーの表示/非表示を設定できます。
 
 以下のコード スニペットは上記のデモです。
 
@@ -229,7 +229,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## ズーム レベルの設定
 
-$Platform$ Spreadsheet コンポーネントは、`ZoomLevel` プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
+{Platform} Spreadsheet コンポーネントは、`ZoomLevel` プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
 
 このプロパティを数値に設定すると、整数としてのパーセンテージが表されるため、`ZoomLevel` を 100 に設定することは、100% に設定することと同じです。
 

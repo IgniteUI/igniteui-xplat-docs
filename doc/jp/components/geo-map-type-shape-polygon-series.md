@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics, $Platform$ マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics, {Platform} マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 
-# $Platform$ 地理ポリゴン マップ
+# {Platform} 地理ポリゴン マップ
 
-$Platform$ マップ コンポーネントでは、`GeographicShapeSeries` を使用して、地理的コンテキストで形状ポリゴンを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
+{Platform} マップ コンポーネントでは、`GeographicShapeSeries` を使用して、地理的コンテキストで形状ポリゴンを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
 
-## $Platform$ 地理ポリゴン マップの例
+## {Platform} 地理ポリゴン マップの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="$Platform$ シェイプ ポリゴン シリーズの使用の例"
+           alt="{Platform} シェイプ ポリゴン シリーズの使用の例"
            github-src="maps/geo-map/type-shape-polygon-series">
 </code-view>
 

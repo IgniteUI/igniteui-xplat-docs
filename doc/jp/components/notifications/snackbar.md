@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Snackbar | インフラジスティックス
-_description: $ProductName$ Snackbar コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
-_keywords: $ProductName$, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, $Platform$, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Snackbar コンポーネント
+title: {Platform} Snackbar | インフラジスティックス
+_description: {ProductName} Snackbar コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Snackbar コンポーネント
 mentionedTypes: ['Snackbar']
 _language: ja
 ---
 
-# $Platform$ Snackbar (スナックバー)
+# {Platform} Snackbar (スナックバー)
 
-$ProductName$ Snackbar コンポーネントは、画面の下部に簡潔なメッセージを表示することにより、操作に関するフィードバックを提供するために使用されます。
+{ProductName} Snackbar コンポーネントは、画面の下部に簡潔なメッセージを表示することにより、操作に関するフィードバックを提供するために使用されます。
 
-## $ProductName$ Snackbar の例
+## {ProductName} Snackbar の例
 
 このサンプルは、`Snackbar` コンポーネントを作成する方法を示しています。
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="$Platform$ Snackbar の例"
+           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="{Platform} Snackbar の例"
            github-src="notifications/snackbar/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ Snackbar コンポーネントは、画面の下部に簡潔なメ
 ### 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -34,7 +34,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -124,7 +124,7 @@ public onShowButtonClicked() {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-display-time"
-           alt="$Platform$ Snackbar 表示時間の例"
+           alt="{Platform} Snackbar 表示時間の例"
            github-src="notifications/snackbar/display-time">
 </code-view>
 
@@ -135,7 +135,7 @@ public onShowButtonClicked() {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-action-text"
-           alt="$Platform$ Sanckbar アクション テキストの例"
+           alt="{Platform} Sanckbar アクション テキストの例"
            github-src="notifications/snackbar/action-text">
 </code-view>
 
@@ -154,7 +154,7 @@ igc-snackbar::part(base) {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="$Platform$ Sanckbar スタイル設定の例"
+           alt="{Platform} Sanckbar スタイル設定の例"
            github-src="notifications/snackbar/styling">
 </code-view>
 

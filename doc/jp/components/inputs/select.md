@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Select コンポーネント – $ProductName$
-_description: $ProductName$ Select コンポーネント
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Select components, $Platform$ Select controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Select コンポーネント, $Platform$ Select コントロール
+title: {Platform} Select コンポーネント – {ProductName}
+_description: {ProductName} Select コンポーネント
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Select components, {Platform} Select controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Select コンポーネント, {Platform} Select コントロール
 mentionedTypes: ['Select']
 _language: ja
 ---
 
-# $Platform$ Select (選択)
-選択コンポーネントは、ドロップダウンに配置された項目のリストからの単一選択できます。このフォーム コントロールは、1 つまたは複数の文字の一致に基づく選択を含む、項目リストの迅速なナビゲーションを提供します。 
+# {Platform} Select (選択)
+選択コンポーネントは、ドロップダウンに配置された項目のリストからの単一選択できます。このフォーム コントロールは、1 つまたは複数の文字の一致に基づく選択を含む、項目リストの迅速なナビゲーションを提供します。
 
-## $Platform$ 選択の例
+## {Platform} 選択の例
 
 <code-view style="height:220px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="$Platform$ Select の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="{Platform} Select の例"
            github-src="inputs/select/overview">
 </code-view>
 
@@ -22,7 +22,7 @@ _language: ja
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -57,9 +57,9 @@ defineComponents(IgcSelectComponent);
 </igc-select>
 ```
 
-### Select (選択) 
+### Select (選択)
 
-`igc-select` コンポーネントは `igc-form` 内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。 
+`igc-select` コンポーネントは `igc-form` 内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。
 
 ### Item (項目)
 
@@ -68,7 +68,7 @@ defineComponents(IgcSelectComponent);
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="$Platform$ Select Item の例"
+           alt="{Platform} Select Item の例"
            github-src="inputs/select/item">
 </code-view>
 
@@ -79,7 +79,7 @@ defineComponents(IgcSelectComponent);
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="$Platform$ Select Header の例"
+           alt="{Platform} Select Header の例"
            github-src="inputs/select/header">
 </code-view>
 
@@ -92,7 +92,7 @@ defineComponents(IgcSelectComponent);
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="$Platform$ Select Group の例"
+           alt="{Platform} Select Group の例"
            github-src="inputs/select/group">
 </code-view>
 
@@ -126,7 +126,7 @@ defineComponents(IgcSelectComponent);
 
 ## スタイル設定
 
-以下に示す公開された CSS パーツを使用して、$ProductName$ 選択コンポーネントとその項目の外観を変更できます。
+以下に示す公開された CSS パーツを使用して、{ProductName} 選択コンポーネントとその項目の外観を変更できます。
 ### CSS パーツ
 
 **Select コンポーネント**
@@ -158,7 +158,7 @@ defineComponents(IgcSelectComponent);
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="$Platform$ Select スタイル設定の例"
+           alt="{Platform} Select スタイル設定の例"
            github-src="inputs/select/styling">
 </code-view>
 

@@ -1,7 +1,7 @@
 ---
 title: Infragistics NuGet Feed
-_description: Infragistics NuGet Feed for $Platform$ components.
-_keywords: $Platform$, NuGet, Feed, Infragistics
+_description: Infragistics NuGet Feed for {Platform} components.
+_keywords: {Platform}, NuGet, Feed, Infragistics
 mentionedTypes: []
 ---
 

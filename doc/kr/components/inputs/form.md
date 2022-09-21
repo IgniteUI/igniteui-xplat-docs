@@ -1,23 +1,23 @@
 ---
-title: $Platform$ Form | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ form is a component used to collect user input from interactive controls. Improve your application with Ignite UI for  $Platform$!
-_keywords: $Platform$ form, $ProductName$, Infragistics
+title: {Platform} Form | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} form is a component used to collect user input from interactive controls. Improve your application with Ignite UI for  {Platform}!
+_keywords: {Platform} form, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Form']
 ---
 
-# $Platform$ Form Overview
+# {Platform} Form Overview
 
 The `Form` collects data from Ignite UI Webcomponents form controls and native form controls. The resulting form data is exposed into a single FormData object.
 
-## $Platform$ Form Example
+## {Platform} Form Example
 
 The following example represents a form that has some inputs, buttons and a checkbox inside.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
+           alt="{Platform} Form Example"
            github-src="inputs/form/overview">
 </code-view>
 
@@ -110,5 +110,5 @@ Additional components and/or directives that were used:
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)

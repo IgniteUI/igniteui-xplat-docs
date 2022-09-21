@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Toast | インフラジスティックス
-_description: $ProductName$ Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
-_keywords: $ProductName$, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, $Platform$, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Toast コンポーネント
+title: {Platform} Toast | インフラジスティックス
+_description: {ProductName} Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Toast コンポーネント
 mentionedTypes: ['Toast']
 _language: ja
 ---
 
-# $Platform$ Toast (トースト)
+# {Platform} Toast (トースト)
 
-$ProductName$ Toast コンポーネントは、主にシステム メッセージ、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。
+{ProductName} Toast コンポーネントは、主にシステム メッセージ、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。
 
-## $ProductName$ Toast の例
+## {ProductName} Toast の例
 
 このサンプルは、`Toast` コンポーネントの作成方法を示しています:
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast の例"
+           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast の例"
            github-src="notifications/toast/overview">
 </code-view>
 
@@ -26,7 +26,7 @@ $ProductName$ Toast コンポーネントは、主にシステム メッセー�
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -36,7 +36,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -228,13 +228,13 @@ public onDisplayTimeButtonClicked() {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="$Platform$ Toast プロパティの例"
+           alt="{Platform} Toast プロパティの例"
            github-src="notifications/toast/properties">
 </code-view>
 
 ## スタイル設定
 
-タグ セレクターを直接使用して、Toast のスタイルを設定できます: 
+タグ セレクターを直接使用して、Toast のスタイルを設定できます:
 
 ```css
 igc-toast {
@@ -247,7 +247,7 @@ igc-toast {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="$Platform$ Toast スタイル設定の例"
+           alt="{Platform} Toast スタイル設定の例"
            github-src="notifications/toast/styling">
 </code-view>
 

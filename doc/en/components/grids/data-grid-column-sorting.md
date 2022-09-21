@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Data Grid | Column Sorting | Infragistics
-_description: Use Infragistics' $Platform$ grid component's sorting feature to configure a mix of sortable and non-sortable columns, with rich API and data sorting. View $ProductName$ tutorials!
-_keywords: $Platform$ Table, Data Grid, column, sorting, row, $ProductName$, Infragistics
+title: {Platform} Data Grid | Column Sorting | Infragistics
+_description: Use Infragistics' {Platform} grid component's sorting feature to configure a mix of sortable and non-sortable columns, with rich API and data sorting. View {ProductName} tutorials!
+_keywords: {Platform} Table, Data Grid, column, sorting, row, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'HeaderClickAction']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Sorting Overview
-The $ProductName$ Data Table / Data Grid supports ascending and descending column sorting with a Single Column, Multi-Column and Tri-State Column Sorting configuration.
+# {Platform} Grid Sorting Overview
+The {ProductName} Data Table / Data Grid supports ascending and descending column sorting with a Single Column, Multi-Column and Tri-State Column Sorting configuration.
 
-## $Platform$ Grid Sorting Example
+## {Platform} Grid Sorting Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
-           alt="$Platform$ Grid Sorting Example"
+           alt="{Platform} Grid Sorting Example"
            github-src="grids/data-grid/column-sorting">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ Data Table / Data Grid supports ascending and descending colum
 
 ## Code Snippet
 
-You can sort by a single or multiple column ascending or descending in the $Platform$ data grid by using the `HeaderClickAction` property. If TriState is enabled you can remove the sort applied to a column.
+You can sort by a single or multiple column ascending or descending in the {Platform} data grid by using the `HeaderClickAction` property. If TriState is enabled you can remove the sort applied to a column.
 
 - `SortByMultipleColumns`
 - `SortByMultipleColumnsTriState`

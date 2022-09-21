@@ -1,31 +1,31 @@
 ---
-title: $Platform$ Navbar | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
-_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+title: {Platform} Navbar | インフラジスティックス
+_description: インフラジスティックスの {Platform} ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['Navbar']
 _language: ja
 ---
 
-# $Platform$ Navbar の概要
+# {Platform} Navbar の概要
 
-$Platform$ `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
+{Platform} `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
 
 
-## $Platform$ Navbar の例
+## {Platform} Navbar の例
 
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar 概要の例"
+           alt="{Platform} Navbar 概要の例"
            github-src="menus/nav-bar/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -56,7 +56,7 @@ defineComponents(IgcNavbarComponent);
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -100,7 +100,7 @@ IgrNavbarModule.register();
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
-           alt="$Platform$ Navbar スタイル設定の例"
+           alt="{Platform} Navbar スタイル設定の例"
            github-src="menus/nav-bar/content">
 </code-view>
 
@@ -137,7 +137,7 @@ igc-navbar::part(end) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="$Platform$ Navbar スタイル設定の例"
+           alt="{Platform} Navbar スタイル設定の例"
            github-src="menus/nav-bar/styling">
 </code-view>
 

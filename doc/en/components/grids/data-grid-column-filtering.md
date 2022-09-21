@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Data Grid | Filtering | Infragistics
-_description: Use Infragistics' $ProductName$ grid component to perform expressive sort conditions and return data easily. View $ProductName$ table's demo for more information!
-_keywords: $Platform$ Table, Data Grid, column, filtering, filter expressions, filter operands, $ProductName$, Infragistics
+title: {Platform} Data Grid | Filtering | Infragistics
+_description: Use Infragistics' {ProductName} grid component to perform expressive sort conditions and return data easily. View {ProductName} table's demo for more information!
+_keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'FilterExpressions']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Filtering Overview
+# {Platform} Grid Filtering Overview
 
-The $ProductName$ Data Table / Data Grid includes column filtering with both a filter row and API that gives you the ability to perform expressive sort conditions based on the data type of the column being filtered.
+The {ProductName} Data Table / Data Grid includes column filtering with both a filter row and API that gives you the ability to perform expressive sort conditions based on the data type of the column being filtered.
 
-## $Platform$ Grid Filtering Example
+## {Platform} Grid Filtering Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
-           alt="$Platform$ Grid Filtering Example"
+           alt="{Platform} Grid Filtering Example"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 
@@ -33,7 +33,7 @@ In the example below, the data grid's FilterExpressions collection is updated to
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
-           alt="$Platform$ Grid Filter Expressions Example"
+           alt="{Platform} Grid Filter Expressions Example"
            github-src="grids/data-grid/column-filter-expressions">
 </code-view>
 
@@ -56,7 +56,7 @@ Since the operands are applied to the column they can be added in several ways, 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
-           alt="$Platform$ Grid Filtering Example"
+           alt="{Platform} Grid Filtering Example"
            github-src="grids/data-grid/column-filter-operands">
 </code-view>
 

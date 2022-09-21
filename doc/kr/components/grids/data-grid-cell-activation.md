@@ -1,14 +1,14 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 셀 활성화 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 셀 활성화 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $Platform$ 셀 활성화
+# {Platform} 셀 활성화
 
-$ProductName$ 데이터 표/데이터 그리드는 그리드 셀을 통한 키보드 탐색을 가능하게 하는 셀 활성화 기능을 지원합니다. 그리드의 `ActivationMode` 속성을 `Cell`에 설정함으로써 활성화됩니다.
+{ProductName} 데이터 표/데이터 그리드는 그리드 셀을 통한 키보드 탐색을 가능하게 하는 셀 활성화 기능을 지원합니다. 그리드의 `ActivationMode` 속성을 `Cell`에 설정함으로써 활성화됩니다.
 
 ## 데모
 

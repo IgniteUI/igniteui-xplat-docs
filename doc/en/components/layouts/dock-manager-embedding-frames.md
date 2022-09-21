@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Dock Manager | Embed Frames | Infragistics
-_description: Use Infragistics' $Platform$ dock manager to embed interactive content using panes. View $ProductName$ dock manager tutorials!
-_keywords: dock manager, embed frames, $ProductName$, Infragistics
+title: {Platform} Dock Manager | Embed Frames | Infragistics
+_description: Use Infragistics' {Platform} dock manager to embed interactive content using panes. View {ProductName} dock manager tutorials!
+_keywords: dock manager, embed frames, {ProductName}, Infragistics
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ Embedding Frames in Dock Manager
+# {Platform} Embedding Frames in Dock Manager
 
-The Infragistics $Platform$ Dock Manager component provides you with the layout for embedding interactive content in your application using panes.
+The Infragistics {Platform} Dock Manager component provides you with the layout for embedding interactive content in your application using panes.
 
-## $Platform$ Embedding Frames in Dock Manager Example
+## {Platform} Embedding Frames in Dock Manager Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames"
-           alt="$Platform$ Embedding Frames in Dock Manager Example"
+           alt="{Platform} Embedding Frames in Dock Manager Example"
            github-src="layouts/dock-manager/embedding-frames">
 </code-view>
 

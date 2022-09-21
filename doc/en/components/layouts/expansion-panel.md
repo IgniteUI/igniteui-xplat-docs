@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Expansion Panel | Expansion Panel | Infragistics
+title: {Platform} Expansion Panel | Expansion Panel | Infragistics
 _description: Expansion Panel component provides an easily configurable expandable component with two states - collapsed and expanded.
-_keywords: $Platform$ Expansion Panel, $ProductName$, Infragistics
+_keywords: {Platform} Expansion Panel, {ProductName}, Infragistics
 mentionedTypes: ['ExpansionPanel']
 ---
 
-# $Platform$ Expansion Panel Overview
-The $ProductName$ Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
+# {Platform} Expansion Panel Overview
+The {ProductName} Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
 
-## $Platform$ Expansion Panel Example
+## {Platform} Expansion Panel Example
 
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="$Platform$ Expansion Panel Example"
+           alt="{Platform} Expansion Panel Example"
            github-src="layouts/expansion-panel/usage">
 </code-view>
 
@@ -22,7 +22,7 @@ The $ProductName$ Expansion Panel is a lightweight accordion component which can
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcExpansionPanelComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -124,7 +124,7 @@ We can do this by binding to the `Opened` and `Closed` events:
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="$Platform$ Expansion Panel Events"
+           alt="{Platform} Expansion Panel Events"
            github-src="layouts/expansion-panel/properties-and-events">
 </code-view>
 
@@ -142,7 +142,7 @@ The next code sample demonstrates how to configure the component's button to go 
 <code-view style="height: 460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="$Platform$ Expansion Panel Customization"
+           alt="{Platform} Expansion Panel Customization"
            github-src="layouts/expansion-panel/component-customization">
 </code-view>
 
@@ -150,7 +150,7 @@ The next code sample demonstrates how to configure the component's button to go 
 
 ## Keyboard Navigation
 
-The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C accessibility standards and convenient to use.
+The {ProductName} Expansion Panel keyboard navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
 
@@ -161,12 +161,12 @@ The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C acce
 
 ## Styling
 
-The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
+The {ProductName} Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="$Platform$ Expansion Panel Styling"
+           alt="{Platform} Expansion Panel Styling"
            github-src="layouts/expansion-panel/styling">
 </code-view>
 

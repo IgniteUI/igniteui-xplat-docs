@@ -1,9 +1,9 @@
 ---
-title: Getting Started | $ProductName$ | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Getting Started
+title: Getting Started | {ProductName} | Infragistics
+_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
+_keywords: {ProductName}, Infragistics, Getting Started
 ---
-# Getting Started With $ProductName$
+# Getting Started With {ProductName}
 
 <!-- React -->
 
@@ -190,7 +190,7 @@ npm run build
 
 ## Updating Existing App
 
-If you want to use $ProductName$ in an existing $Platform$ CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
+If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -212,7 +212,7 @@ yarn add {PackageMaps} {PackageCore}
 yarn add {PackageSpreadsheet} {PackageCore}
 </pre>
 
-This will automatically install packages for $ProductName$, along with all of their dependencies, font imports and styles references to the existing project.
+This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
 ## Importing Modules
 
@@ -247,7 +247,7 @@ ModuleManager.register(
 
 ## Using Components
 
-We are now ready to use the $ProductName$ map component in our markup! Let's go ahead and define it:
+We are now ready to use the {ProductName} map component in our markup! Let's go ahead and define it:
 
 ```tsx
 // App.txs
@@ -281,7 +281,7 @@ Finally, we can run our new application by using one of the following commands:
 npm run-script start
 </pre>
 
-After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use $ProductName$ components in your project.
+After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project.
 
 The final result should look something like this screenshot:
 

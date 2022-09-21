@@ -1,15 +1,15 @@
 ---
-title: $Platform$ Donut Chart | Data Visualization | Infragistics
-_description: Infragistics' $Platform$ Donut Chart
-_keywords: $Platform$ Charts, Donut Chart, Donut Chart, Infragistics
+title: {Platform} Donut Chart | Data Visualization | Infragistics
+_description: Infragistics' {Platform} Donut Chart
+_keywords: {Platform} Charts, Donut Chart, Donut Chart, Infragistics
 _language: kr
 mentionedTypes: ["XamDoughnutChart", "DoughnutChart"]
 ---
-# $Platform$ Donut Chart
+# {Platform} Donut Chart
 
-The $ProductName$ Donut Chart is similar to the [Pie Chart](pie-chart.md), proportionally illustrating the occurrences of a variable. The donut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
+The {ProductName} Donut Chart is similar to the [Pie Chart](pie-chart.md), proportionally illustrating the occurrences of a variable. The donut chart can display multiple variables in concentric rings, and provides built-in support for visualizing hierarchical data. The rings are capable of being bound to a different data item, or they can share a common data source.
 
-## $Platform$ Donut Chart Example
+## {Platform} Donut Chart Example
 
 You can create this type of chart with the `XamDoughnutChart` control by binding your data as shown in the example below.
 
@@ -17,14 +17,14 @@ You can create this type of chart with the `XamDoughnutChart` control by binding
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
            github-src="charts/doughnut-chart/legend"
-           alt="$Platform$ Doughnut Legend" >
+           alt="{Platform} Doughnut Legend" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Donut Chart Recommendations
+## {Platform} Donut Chart Recommendations
 
-### Are $Platform$ Donut Charts right for your project?
+### Are {Platform} Donut Charts right for your project?
 
 Donut Charts are appropriate for small data sets and are easy to read at a glance. Donut charts are just one type of part-to-whole visualization. Others include:
 
@@ -37,7 +37,7 @@ Donut Charts are appropriate for small data sets and are easy to read at a glanc
 - [Treemap](treemap-chart.md)
 - [Waterfall](column-chart.md)
 
-The $Platform$ Donut Chart includes interactive features that give the viewer tools to analyze data, like:
+The {Platform} Donut Chart includes interactive features that give the viewer tools to analyze data, like:
 
 - Legends
 - Slice Explosion
@@ -61,28 +61,28 @@ The $Platform$ Donut Chart includes interactive features that give the viewer to
 - It would be easier for the viewer to perceive the value difference in a [Bar](bar-chart.md) chart.
 - You have negative data, as this can not be represented in a donut chart.
 
-## $Platform$ Donut Chart - Slice Selection
+## {Platform} Donut Chart - Slice Selection
 
-The $Platform$ Donut Chart has the ability to select slices on click. Optionally, you may apply a single custom visual style to the selected slices. The `SliceClick` event is raised when the user clicks on a slice. Enabling slice selection allows you to modify the slice's selection upon click. The following sample demonstrates how to enable slice selection and set the selected slice color to gray.
+The {Platform} Donut Chart has the ability to select slices on click. Optionally, you may apply a single custom visual style to the selected slices. The `SliceClick` event is raised when the user clicks on a slice. Enabling slice selection allows you to modify the slice's selection upon click. The following sample demonstrates how to enable slice selection and set the selected slice color to gray.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
            github-src="charts/doughnut-chart/selection"
-           alt="$Platform$ Donut Slice Selection" >
+           alt="{Platform} Donut Slice Selection" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Donut Chart - Multiple Rings
+## {Platform} Donut Chart - Multiple Rings
 
-It is possible to have a multiple ring display in the $Platform$ Donut Chart, with each of the rings capable of being bound to a different data item, or they can share a common data source. This can be helpful if you need to display your data as tiers that have an underlying common category, such as the season to month data display below:
+It is possible to have a multiple ring display in the {Platform} Donut Chart, with each of the rings capable of being bound to a different data item, or they can share a common data source. This can be helpful if you need to display your data as tiers that have an underlying common category, such as the season to month data display below:
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
            github-src="charts/doughnut-chart/rings"
-           alt="$Platform$ Doughnut Multiple Rings" >
+           alt="{Platform} Doughnut Multiple Rings" >
 </code-view>
 
 <div class="divider--half"></div>

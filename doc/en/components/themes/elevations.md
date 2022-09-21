@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Elevations | Infragistics
+title: {Platform} Styling and Themes | {Platform} Elevations | Infragistics
 _description:
-_keywords: $ProductName$, Infragistics, Elevations, Styling
+_keywords: {ProductName}, Infragistics, Elevations, Styling
 mentionedTypes: ["Elevations"]
 ---
 
-# Elevations in $ProductName$
+# Elevations in {ProductName}
 
-The implementation of the Elevations in $ProductName$ is modeled after the [Elevations in Material Design](https://material.io/design/environment/elevation.html#elevation-in-material-design). They are used to establish and maintain functional boundaries between Document Object Model trees to enable better functional encapsulation.
+The implementation of the Elevations in {ProductName} is modeled after the [Elevations in Material Design](https://material.io/design/environment/elevation.html#elevation-in-material-design). They are used to establish and maintain functional boundaries between Document Object Model trees to enable better functional encapsulation.
 
 ## Overview
 
-$ProductName$ shadows closely follow the Material Design guidelines for establishing depth hierarchy based on 25 elevation levels. The size of the shadow cast is related to the elevation level number. The higher the elevation level number, the larger the shadow will be. Elevations in $ProductName$ are exposed as CSS variables. Each variable stores a set of 3 `box-shadows`. These `box-shadows` represent the umbra, penumbra, and antumbra elements that are the properties of shadows as observed in the real world.
+{ProductName} shadows closely follow the Material Design guidelines for establishing depth hierarchy based on 25 elevation levels. The size of the shadow cast is related to the elevation level number. The higher the elevation level number, the larger the shadow will be. Elevations in {ProductName} are exposed as CSS variables. Each variable stores a set of 3 `box-shadows`. These `box-shadows` represent the umbra, penumbra, and antumbra elements that are the properties of shadows as observed in the real world.
 
-Here's a list of resting elevations as used in various components in $ProductName$ in the Bootstrap Theme and their corresponding CSS variable names:
+Here's a list of resting elevations as used in various components in {ProductName} in the Bootstrap Theme and their corresponding CSS variable names:
 
 | Component                                       | Default Elevation Level | CSS Variable       |
 | ----------------------------------------------- | ----------------------- | ------------------ |
@@ -71,7 +71,7 @@ This will set the toast and the snackbar shadows to the value assigned to `--igc
 
 ## Using Elevation Factor
 
-In addition to elevation levels, $ProductName$ exposes a CSS variable that makes it easy to control the global elevation factor. The default value is set to 1 which means all component shadows will be the same as defined in their component themes. If you want to remove all shadows, you just need to change the property value to 0:
+In addition to elevation levels, {ProductName} exposes a CSS variable that makes it easy to control the global elevation factor. The default value is set to 1 which means all component shadows will be the same as defined in their component themes. If you want to remove all shadows, you just need to change the property value to 0:
 
 ```css
 :root {

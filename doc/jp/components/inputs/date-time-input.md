@@ -1,26 +1,26 @@
 ---
-title: $Platform$ 日時入力 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
-_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
+title: {Platform} 日時入力 | インフラジスティックス
+_description: インフラジスティックスの {Platform} 日時入力を使用すると、ユーザーは入力要素の日付と時刻を編集できます。
+_keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
 mentionedTypes: ['DateTimeInput']
 _language: ja
 ---
 
-# $Platform$ 日時入力の概要
+# {Platform} 日時入力の概要
 
-$ProductName$ 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
+{ProductName} 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="$Platform$ 日時入力の概要の例"
+           alt="{Platform} 日時入力の概要の例"
            github-src="inputs/date-time-input/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -119,7 +119,7 @@ input.value = date;
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="$Platform$ 日時入力の表示書式の例"
+           alt="{Platform} 日時入力の表示書式の例"
            github-src="inputs/date-time-input/input-format-display-format">
 </code-view>
 
@@ -170,7 +170,7 @@ input.value = date;
 || `tttt` | 長い | noon
 || `ttttt` | 狭い | n
 
-> 注: 
+> 注:
 多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。また、12 時間制を使用した場合にのみ効果があります。
 
 ## 最小値 / 最大値
@@ -192,7 +192,7 @@ input.minValue = new Date(2021, 0, 1);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="$Platform$ 日時入力最小 / 最大値の例"
+           alt="{Platform} 日時入力最小 / 最大値の例"
            github-src="inputs/date-time-input/min-max-value">
 </code-view>
 
@@ -222,7 +222,7 @@ input.spinDelta = spinDelta;
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="$Platform$ 日時入力ステップアップ / ステップダウンの例"
+           alt="{Platform} 日時入力ステップアップ / ステップダウンの例"
            github-src="inputs/date-time-input/step-up-down">
 </code-view>
 

@@ -1,22 +1,22 @@
 ---
-title: $Platform$ チャート タイトル | データ可視化ツール | インフラジスティックス
-_description: タイトル付きの Infragistics $ProductName$ チャートをお試しください!
-_keywords: $Platform$ charts, chart titles, titles, $ProductName$, Infragistics, $Platform$ チャート, チャート タイトル, タイトル, インフラジスティックス
+title: {Platform} チャート タイトル | データ可視化ツール | インフラジスティックス
+_description: タイトル付きの Infragistics {ProductName} チャートをお試しください!
+_keywords: {Platform} charts, chart titles, titles, {ProductName}, Infragistics, {Platform} チャート, チャート タイトル, タイトル, インフラジスティックス
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $Platform$ チャート タイトルとサブタイトル
+# {Platform} チャート タイトルとサブタイトル
 
-チャート コントロールのタイトルとサブタイトル機能を使用すると、$Platform$ チャートの上部セクションに情報を追加できます。
+チャート コントロールのタイトルとサブタイトル機能を使用すると、{Platform} チャートの上部セクションに情報を追加できます。
 
 ## 例
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-titles"
-           alt="$Platform$ チャート同期の例"
+           alt="{Platform} チャート同期の例"
            github-src="charts/category-chart/line-chart-with-titles">
 </code-view>
 

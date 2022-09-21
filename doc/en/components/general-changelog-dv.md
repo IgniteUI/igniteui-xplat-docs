@@ -1,13 +1,13 @@
 ---
-title: $Platform$ What's New | $ProductName$ | Infragistics
-_description: Learn about new features in the $ProductName$.
-_keywords: Changelog, What's New,  $ProductName$, Infragistics
+title: {Platform} What's New | {ProductName} | Infragistics
+_description: Learn about new features in the {ProductName}.
+_keywords: Changelog, What's New,  {ProductName}, Infragistics
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ Changelog
+# {ProductName} Changelog
 
-All notable changes for each version of $ProductName$ are documented on this page.
+All notable changes for each version of {ProductName} are documented on this page.
 
 <!-- Angular -->
 
@@ -46,7 +46,7 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 ### {PackageDockManager}
 
-* The $Platform$ Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
 
 ### {PackageGrids}
 
@@ -87,7 +87,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 ## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
-> The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+> The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
 

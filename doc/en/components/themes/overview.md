@@ -1,13 +1,13 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Theming | Theme Switching | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Themes, Styling
+title: {Platform} Styling and Themes | {Platform} Theming | Theme Switching | Infragistics
+_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
+_keywords: {ProductName}, Infragistics, Themes, Styling
 mentionedTypes: ["ConfigureTheme"]
 ---
 
-# Themes in $ProductName$
+# Themes in {ProductName}
 
-$ProductName$ ships with four distinct themes - Bootstrap, Material, Fluent, and Indigo. All component themes are baked into the components, however, a global style file is required for palettes, typography, and other global configurations to work.
+{ProductName} ships with four distinct themes - Bootstrap, Material, Fluent, and Indigo. All component themes are baked into the components, however, a global style file is required for palettes, typography, and other global configurations to work.
 
 ## Loading a Theme
 
@@ -32,7 +32,7 @@ Here's the complete list of all bundled themes and their path:
 > [!NOTE]
 Changing the theme at runtime also requires you to replace the global stylesheet from the table above.
 
-$ProductName$ allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
+{ProductName} allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
 
 Calling it and passing one of the four valid themes - bootstrap, material, fluent, or indigo as a string will change the loaded component styles;
 

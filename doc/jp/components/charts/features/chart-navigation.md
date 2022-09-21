@@ -1,28 +1,28 @@
 ---
-title: $Platform$  データ チャート | データ可視化ツール | ナビゲーション | インフラジスティックス
-_description: インフラジスティックスの $Platform$ チャートをナビゲートするには、マウスまたはタッチを使用して左右にパンし、水平および垂直にズームします。$ProductName$ のグラフ ナビゲーション機能について説明します。
-_keywords: $Platform$ charts, data chart, navigation, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, ナビゲーション, インフラジスティックス
+title: {Platform}  データ チャート | データ可視化ツール | ナビゲーション | インフラジスティックス
+_description: インフラジスティックスの {Platform} チャートをナビゲートするには、マウスまたはタッチを使用して左右にパンし、水平および垂直にズームします。{ProductName} のグラフ ナビゲーション機能について説明します。
+_keywords: {Platform} charts, data chart, navigation, {ProductName}, Infragistics, {Platform} チャート, データ チャート, ナビゲーション, インフラジスティックス
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 _language: ja
 ---
-# $Platform$ チャート ナビゲーション
+# {Platform} チャート ナビゲーション
 
-$ProductName$ チャートを使用すると、マウス、キーボード、およびタッチを介してインタラクティブなパンやズームが可能になります。
+{ProductName} チャートを使用すると、マウス、キーボード、およびタッチを介してインタラクティブなパンやズームが可能になります。
 
-## $Platform$ チャート ナビゲーションの例
+## {Platform} チャート ナビゲーションの例
 
 次の例は、使用可能なすべてのパンやズームのオプションを示しています。ボタンを使用して例を操作したり、ドロップダウンまたはチェックボックスを使用して目的のオプションを選択したりできます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$Platform$ ナビゲーションの例"
+           alt="{Platform} ナビゲーションの例"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
 <div class="divider--half"></div>
 
-このサンプルが気に入りましたか?完全な $Platform$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+このサンプルが気に入りましたか?完全な {Platform} ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">無料でダウンロードできます。</a>
 
 ## ユーザー インタラクションによるチャート ナビゲーション
 
@@ -32,7 +32,7 @@ $ProductName$ チャートを使用すると、マウス、キーボード、お
 
 ## タッチ、マウスとキーボードによるチャート ナビゲーション
 
-$Platform$ データ チャートのナビゲーションは、タッチ、マウスまたはキーボードのいずれかを使用して発生します。以下の操作は、デフォルトで以下のタッチ、マウスまたはキーボード操作を使用して呼び出すことができます。
+{Platform} データ チャートのナビゲーションは、タッチ、マウスまたはキーボードのいずれかを使用して発生します。以下の操作は、デフォルトで以下のタッチ、マウスまたはキーボード操作を使用して呼び出すことができます。
 
 - **パン**: キーボードの矢印キーを使用するか、Shift キーを押したまま、マウスでクリックしてドラッグするか、タッチで指を押して移動します。
 - **ズームイン**: キーボードの PageUp キーを使用するか、マウスホイールを上に回転させるか、ピンチしてタッチでズームインします。
@@ -52,11 +52,11 @@ $Platform$ データ チャートのナビゲーションは、タッチ、マ�
 
 ## スクロールバーを使用したチャート ナビゲーション
 
-チャートは、`VerticalViewScrollbarMode` プロパティと `HorizontalViewScrollbarMode` プロパティを有効にすることでスクロールできます。 
+チャートは、`VerticalViewScrollbarMode` プロパティと `HorizontalViewScrollbarMode` プロパティを有効にすることでスクロールできます。
 
 これらは、次のオプションに構成できます:
 
-- `Persistent` - チャートがズームインされている限り、スクロールバーは常に表示されたままになり、完全にズームアウトされるとフェードアウトします。 
+- `Persistent` - チャートがズームインされている限り、スクロールバーは常に表示されたままになり、完全にズームアウトされるとフェードアウトします。
 - `Fading` - スクロールバーは使用後に消え、マウスがその位置に近づくと再び表示されます。
 - `FadeToLine` - ズームを使用していないときは、スクロールバーが細い線に縮小されます。
 - `None` - 既定値で、スクロールバーは表示されません。
@@ -66,7 +66,7 @@ $Platform$ データ チャートのナビゲーションは、タッチ、マ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
-           alt="$Platform$ ナビゲーションの例"
+           alt="{Platform} ナビゲーションの例"
            github-src="charts/financial-chart/scrollbars">
 </code-view>
 
@@ -76,7 +76,7 @@ $Platform$ データ チャートのナビゲーションは、タッチ、マ�
 
 > 注: チャートのコード ナビゲーションは、`XamDataChart` コントロールにのみ使用できます。
 
-$Platform$ データ チャートは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
+{Platform} データ チャートは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。
 
 - `WindowPositionHorizontal`: コンテンツ ビュー長方形の X 部分を表す数値は、チャートで表示されます。
 - `WindowPositionVertical`: 数値は、チャートに表示されるコンテンツビュー四角形のの Y 部分を表します。

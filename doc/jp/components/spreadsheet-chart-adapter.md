@@ -1,21 +1,21 @@
 ---
-title: $Platform$ スプレッドシート | チャート アダプター | インフラジスティックス
-_description: インフラジスティックスの $Platform$ スプレッドシート コントロールに縦棒、折れ線、エリアなどのチャートを表示します。$ProductName$ スプレッドシートにチャートを統合する方法について説明します。
-_keywords: Excel Spreadsheet, chart adapter, $ProductName$, Infragistics, Excel スプレッドシート、チャート アダプター, インフラジスティックス
+title: {Platform} スプレッドシート | チャート アダプター | インフラジスティックス
+_description: インフラジスティックスの {Platform} スプレッドシート コントロールに縦棒、折れ線、エリアなどのチャートを表示します。{ProductName} スプレッドシートにチャートを統合する方法について説明します。
+_keywords: Excel Spreadsheet, chart adapter, {ProductName}, Infragistics, Excel スプレッドシート、チャート アダプター, インフラジスティックス
 mentionedTypes: ['Spreadsheet', 'Worksheet', 'WorksheetShapeCollection', 'WorksheetChart']
 _language: ja
 ---
-# $Platform$ Spreadsheet チャート アダプター
+# {Platform} Spreadsheet チャート アダプター
 
-$Platform$ Spreadsheet コンポーネントを使用して `Spreadsheet` にチャートを表示できます。
+{Platform} Spreadsheet コンポーネントを使用して `Spreadsheet` にチャートを表示できます。
 
-## $Platform$ Spreadsheet チャート アダプターの例
+## {Platform} Spreadsheet チャート アダプターの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
-           alt="$Platform$ Spreadsheet チャート アダプターの例"
+           alt="{Platform} Spreadsheet チャート アダプターの例"
            github-src="excel/spreadsheet/adapter-chart">
 </code-view>
 
@@ -87,7 +87,7 @@ Spreadsheet ChartAdapter は、折れ線、エリア、縦棒、ドーナツを�
 >
 > 以下のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 
-ハイパーリンクを使用するように $Platform$ スプレッドシート コントロールを設定するときは、`SpreadsheetChartAdapter` クラスをインポートする必要があります。
+ハイパーリンクを使用するように {Platform} スプレッドシート コントロールを設定するときは、`SpreadsheetChartAdapter` クラスをインポートする必要があります。
 
 ```ts
 import { IgxSpreadsheetChartAdapterModule } from 'igniteui-angular-spreadsheet-chart-adapter';
@@ -171,7 +171,7 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 
     const chart1 = sheet.shapes().addChart(ChartType.Line, cell1, { x: 0, y: 0 }, cell1, { x: 100, y: 100 });
 
-    const title: $Platform$ ChartTitle = new ChartTitle();
+    const title: {Platform} ChartTitle = new ChartTitle();
     title.text = new FormattedString("Line Chart");
     chart1.chartTitle = title;
 

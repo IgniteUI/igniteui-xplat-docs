@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Data Binding | Infragistics
+title: {Platform} Map | Data Visualization Tools | Data Binding | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Data Binding
+# {Platform} Data Binding
 
-The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models.
+The {ProductName} map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models.
 
 ## Types of Data Sources
 The following section list some of data source that you can bind in the geographic map component

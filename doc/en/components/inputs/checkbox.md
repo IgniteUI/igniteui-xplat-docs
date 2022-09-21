@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Checkbox Component | $ProductName$
-_description: Learn how to use the $Platform$ Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+title: {Platform} Checkbox Component | {ProductName}
+_description: Learn how to use the {Platform} Checkbox Component to add checkboxes and enable checked, unchecked or indeterminate state for end-users.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
 mentionedTypes: ['Checkbox', 'Form']
 ---
 
-# $Platform$ Checkbox Overview
+# {Platform} Checkbox Overview
 
-The $Platform$ Checkbox is a component that lets you add checkboxes to your $Platform$ apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the $Platform$ checkbox component and ability to use it with forms.
+The {Platform} Checkbox is a component that lets you add checkboxes to your {Platform} apps. It behaves as a standard HTML checkbox, enabling users to select basic checked and unchecked states or an additional indeterminate state. You also get full control over the styling of the {Platform} checkbox component and ability to use it with forms.
 
 ## Checkbox Example
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/overview">
 </code-view>
 
@@ -24,7 +24,7 @@ The $Platform$ Checkbox is a component that lets you add checkboxes to your $Pla
 At its core, the `Checkbox` allows for a choice between selected/unselected state. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +41,7 @@ defineComponents(IgcCheckboxComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -144,7 +144,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/label">
 </code-view>
 
@@ -167,7 +167,7 @@ You can use the `Checked` attribute of the component to determine whether the ch
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/checking">
 </code-view>
 
@@ -190,7 +190,7 @@ You can use the `Indeterminate` property of the component to set the checkbox's 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
@@ -245,7 +245,7 @@ You can use the `Disabled` attribute to disable the checkbox.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/disabled">
 </code-view>
 

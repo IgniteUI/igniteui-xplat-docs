@@ -1,27 +1,27 @@
 ---
-title: $Platform$ MaskInput | Infragistics
-_description: Infragistics' $Platform$ MaskInput allows the user to control input and format the visible value based on configurable mask rules
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: {Platform} MaskInput | Infragistics
+_description: Infragistics' {Platform} MaskInput allows the user to control input and format the visible value based on configurable mask rules
+_keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['MaskInput']
 ---
 
-## $Platform$ Mask Input Overview
+## {Platform} Mask Input Overview
 
-The $ProductName$ Mask Input is an input field that allows the developer to control user input and format the visible value, based on configurable rules. It provides different input options and ease in use and configuration.
+The {ProductName} Mask Input is an input field that allows the developer to control user input and format the visible value, based on configurable rules. It provides different input options and ease in use and configuration.
 
-### $Platform$ Mask Input Example
+### {Platform} Mask Input Example
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="$Platform$ Mask Input Overview Example"
+           alt="{Platform} Mask Input Overview Example"
            github-src="inputs/mask-input/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -73,7 +73,7 @@ After that you should see the following in your browser:
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="$Platform$ Mask Input Applying Mask Example"
+           alt="{Platform} Mask Input Applying Mask Example"
            github-src="inputs/mask-input/applying-mask">
 </code-view>
 
@@ -102,7 +102,7 @@ The `IgcMaskInput` exposes a `valueMode` property that lets you choose between `
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="$Platform$ Mask Input Value Modes Example"
+           alt="{Platform} Mask Input Value Modes Example"
            github-src="inputs/mask-input/value-modes">
 </code-view>
 

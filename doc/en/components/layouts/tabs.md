@@ -1,27 +1,27 @@
 ---
-title: $Platform$ Tabs | Layout Controls | Infragistics
-_description: Use Infragistics' $Platform$ tabs component to switch between similar data sets.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Tabs Component, Infragistics
+title: {Platform} Tabs | Layout Controls | Infragistics
+_description: Use Infragistics' {Platform} tabs component to switch between similar data sets.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 ---
 
-# $Platform$ Tabs
+# {Platform} Tabs
 
-The $ProductName$ Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
+The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
 
-## $Platform$ Tabs Example
+## {Platform} Tabs Example
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-overview"
-           alt="$Platform$ Tabs Example"
+           alt="{Platform} Tabs Example"
            github-src="layouts/tabs/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -91,14 +91,14 @@ The `alignment` property controls how tabs are positioned. It accepts the follow
 - `start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
 - `center`: the width of the tab depends on the content and occupies the tabs container's center.
 - `end`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
-- `justify`: all tabs are equal in width and fully fit the tabs container. 
+- `justify`: all tabs are equal in width and fully fit the tabs container.
 
 If the space is not enough to fit all tabs, scroll buttons are displayed.
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-alignment"
-           alt="$Platform$ Tabs Example"
+           alt="{Platform} Tabs Example"
            github-src="layouts/tabs/alignment">
 </code-view>
 
@@ -109,7 +109,7 @@ Scroll buttons are shown when the available space is not enough to render all ta
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-scrolling"
-           alt="$Platform$ Tabs Example"
+           alt="{Platform} Tabs Example"
            github-src="layouts/tabs/scrolling">
 </code-view>
 
@@ -130,7 +130,7 @@ Each tab has default slot to display information - icon, text or both and `prefi
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-prefix-suffix"
-           alt="$Platform$ Tabs Example"
+           alt="{Platform} Tabs Example"
            github-src="layouts/tabs/prefix-suffix">
 </code-view>
 

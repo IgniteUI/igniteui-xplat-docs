@@ -1,17 +1,17 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Typography | Infragistics
+title: {Platform} Styling and Themes | {Platform} Typography | Infragistics
 _description:
-_keywords: $ProductName$, Infragistics, Typography, Styling
+_keywords: {ProductName}, Infragistics, Typography, Styling
 mentionedTypes: ["Typography"]
 ---
 
-# Typography in $ProductName$
-The typography in $ProductName$ is modeled after the [Material Type System](https://material.io/design/typography/the-type-system.html#). It's non-intrusive and optional, allowing you to modify the type styles using CSS only.
+# Typography in {ProductName}
+The typography in {ProductName} is modeled after the [Material Type System](https://material.io/design/typography/the-type-system.html#). It's non-intrusive and optional, allowing you to modify the type styles using CSS only.
 
 ## Overview
 The type system is a **_type scale_** consisting of **_13 different category type styles_** used across most components. All of the scale categories are completely reusable and adjustable by the end user.
 
-Here's a list of all 13 category styles as defined for the Bootstrap Theme in $ProductName$:
+Here's a list of all 13 category styles as defined for the Bootstrap Theme in {ProductName}:
 
 | **Scale Category** | **Font Family** | **Font Weight** | **Font Size** | **Text Transform** | **Letter Spacing** | **Line Height** |
 |--------------------|-----------------|-----------------|---------------|--------------------|--------------------|-----------------|
@@ -45,7 +45,7 @@ To change the font family in all components, all you have to do is overwrite the
 
 ### Changing type styles
 
-The type styles are used internally by most of the components in $ProductName$. For instance, the `igc-button` component uses the button type style.
+The type styles are used internally by most of the components in {ProductName}. For instance, the `igc-button` component uses the button type style.
 To change any of the type style properties, we need to overwrite the corresponding CSS variable:
 
 ```css

@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Data Grid | Table Controls | $ProductName$ | Column Types | Infragistics
-_description: The $ProductName$ Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
-_keywords: grid, table, $ProductName$, Infragistics
+title: {Platform} Data Grid | Table Controls | {ProductName} | Column Types | Infragistics
+_description: The {ProductName} Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $Platform$ Column Resizing
+# {Platform} Column Resizing
 
-The $ProductName$ Data Grid supports the ability to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each.
+The {ProductName} Data Grid supports the ability to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each.
 
 ## Demo
 
@@ -21,7 +21,7 @@ The $ProductName$ Data Grid supports the ability to resize columns, giving you f
 
 <div class="divider--half"></div>
 
-Column resizing in the $ProductName$ DataGrid is on by default, and can be controlled by using the `ColumnResizingMode` property of the grid. This property has three options. Each option is explained below:
+Column resizing in the {ProductName} DataGrid is on by default, and can be controlled by using the `ColumnResizingMode` property of the grid. This property has three options. Each option is explained below:
 
 - `Deferred`: The default option. When resizing, a separator will appear showing how large or small the column will become when resized.
 - `Immediate`: When resizing, there will be no separator. The column's width will follow the pointer as you drag the edge of the column and resize accordingly.

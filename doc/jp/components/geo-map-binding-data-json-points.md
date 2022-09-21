@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | JSON ファイルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding, $Platform$ マップ, JSON ファイル, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | JSON ファイルのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップを使用して、ビュー モデルの地理的位置や JSON ファイルからロードされた地理的位置を含むデータの表示方法について説明します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, JSON files, {ProductName}, Infragistics, data binding, {Platform} マップ, JSON ファイル, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $Platform$ JSON ファイルを地理的な場所にバインド
+# {Platform} JSON ファイルを地理的な場所にバインド
 
-$ProductName$ Map マップは、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、JavaScript Object Notation (JSON) ファイルから地理的位置をロードできます。
+{ProductName} Map マップは、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、JavaScript Object Notation (JSON) ファイルから地理的位置をロードできます。
 
-## $Platform$ JSON ファイルを地理的な場所にバインドの例
+## {Platform} JSON ファイルを地理的な場所にバインドの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
-           alt="$Platform$ JSON ファイルを地理的な場所にバインドの例"
+           alt="{Platform} JSON ファイルを地理的な場所にバインドの例"
            github-src="maps/geo-map/binding-data-json-points">
 </code-view>
 

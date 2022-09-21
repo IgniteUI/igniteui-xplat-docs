@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Excel ライブラリ | セルの使用 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。$ProductName$ Excel のサンプルを是非お試しください!
-_keywords: Excel library,  cell operations, $ProductName$, Infragistics, Excel ライブラリ, セル操作, インフラジスティックス
+title: {Platform} Excel ライブラリ | セルの使用 | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリのセルでセルへのアクセス、数式とコメントの追加、セルの結合、セルの書式設定などの操作を実行する方法について説明します。{ProductName} Excel のサンプルを是非お試しください!
+_keywords: Excel library,  cell operations, {ProductName}, Infragistics, Excel ライブラリ, セル操作, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'WorkbookStyleCollection', 'IWorksheetCellFormat', 'WorkbookColorInfo', 'DisplayOptions']
 _language: ja
 ---
-# $Platform$ セルの使用
+# {Platform} セルの使用
 
 Excel ワークシートの `WorksheetCell` オブジェクトは、ワークシートの実際のデータ値を保持するオブジェクトです。このトピックは、名前で領域にアクセス、数式やコメントをセルに追加、結合および書式設定など、セルで実行できる多くの操作について説明します。
 
-## $Platform$ セルの使用の例
+## {Platform} セルの使用の例
 
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
-           alt="$Platform$ セルの使用の例"
+           alt="{Platform} セルの使用の例"
            github-src="excel/excel-library/working-with-cells">
 </code-view>
 
@@ -67,7 +67,7 @@ var region = worksheet.GetRegion("G1:G10");
 
 Microsoft Excel では各セルとセル領域に名前が割り当てられています。アドレスの代わりにセルまたは領域の名前を使用してセルまたは領域を参照できます。
 
-Infragistics $Platform$ Excel Library は、`Worksheet` オブジェクトの `GetCell` と `GetRegion` メソッドによって、名前によるセルおよび領域の参照をサポートします。そのセルまたは領域を参照する `NamedReference` インスタンスを使用してセルまたは領域を参照します。
+Infragistics {Platform} Excel Library は、`Worksheet` オブジェクトの `GetCell` と `GetRegion` メソッドによって、名前によるセルおよび領域の参照をサポートします。そのセルまたは領域を参照する `NamedReference` インスタンスを使用してセルまたは領域を参照します。
 
 以下のコード スニペットは、セルまたは領域の名前の例です。
 
@@ -101,7 +101,7 @@ var region = worksheet.GetRegion("myRegion");
 
 ## セルにコメントを追加
 
-コメントによって、エンドユーザーがマウスをセル上にホバーするとセルのヒントまたはメモを表示することができます。コメントはテキストを含むツールチップのような吹き出しとして表示します。Infragistics $Platform$ Excel Library は `WorksheetCell` オブジェクトの `Comment` プロパティでセルにコメントを追加できます。
+コメントによって、エンドユーザーがマウスをセル上にホバーするとセルのヒントまたはメモを表示することができます。コメントはテキストを含むツールチップのような吹き出しとして表示します。Infragistics {Platform} Excel Library は `WorksheetCell` オブジェクトの `Comment` プロパティでセルにコメントを追加できます。
 
 以下のコード例は、セルにコメントを追加する方法を示します。
 
@@ -184,7 +184,7 @@ worksheet.Columns[3].CellFormat.SetFormatting(worksheet.Columns[1].CellFormat);
 
 ## セルの書式設定
 
-Infragistics $Platform$ Excel Library は、セルの外観と動作をカスタマイズすることができます。`WorksheetCell`、`WorksheetRow`、`WorksheetColumn`、または `WorksheetMergedCellsRegion` オブジェクトの `CellFormat` プロパティで公開したプロパティを設定してセルをカスタマイズできます。
+Infragistics {Platform} Excel Library は、セルの外観と動作をカスタマイズすることができます。`WorksheetCell`、`WorksheetRow`、`WorksheetColumn`、または `WorksheetMergedCellsRegion` オブジェクトの `CellFormat` プロパティで公開したプロパティを設定してセルをカスタマイズできます。
 
 セル外観の各アスペクトをカスタマイズできます。セルのフォント、背景、境界線だけでなくテキストの配列と回転を設定できます。セルのテキストで文字ごとに異なる書式を適用することさえ可能です。
 

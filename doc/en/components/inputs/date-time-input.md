@@ -1,25 +1,25 @@
 ---
-title: $Platform$ DateTimeInput | Infragistics
-_description: Infragistics' $Platform$ DateTimeInput allows the user to edit date and time in an input element
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: {Platform} DateTimeInput | Infragistics
+_description: Infragistics' {Platform} DateTimeInput allows the user to edit date and time in an input element
+_keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['DateTimeInput']
 ---
 
-# $Platform$ Date Time Input Overview
+# {Platform} Date Time Input Overview
 
-The $ProductName$ Date Time Input allows the user to set and edit the date and time in a chosen input element. The user can edit both date and time portions using an editable masked input. Additionally, one can specify a desired display and input format, as well as min and max values to utilize validation.
+The {ProductName} Date Time Input allows the user to set and edit the date and time in a chosen input element. The user can edit both date and time portions using an editable masked input. Additionally, one can specify a desired display and input format, as well as min and max values to utilize validation.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="$Platform$ Date Time Input Overview Example"
+           alt="{Platform} Date Time Input Overview Example"
            github-src="inputs/date-time-input/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -118,7 +118,7 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="$Platform$ Date Time Input Input Format Display Format Example"
+           alt="{Platform} Date Time Input Input Format Display Format Example"
            github-src="inputs/date-time-input/input-format-display-format">
 </code-view>
 
@@ -191,7 +191,7 @@ If all went well, the component will be `invalid` if the value is greater or low
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="$Platform$ Date Time Input Min Max Value Example"
+           alt="{Platform} Date Time Input Min Max Value Example"
            github-src="inputs/date-time-input/min-max-value">
 </code-view>
 
@@ -221,7 +221,7 @@ Try it in the example below:
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="$Platform$ Date Time Input Step Up/Down Example"
+           alt="{Platform} Date Time Input Step Up/Down Example"
            github-src="inputs/date-time-input/step-up-down">
 </code-view>
 

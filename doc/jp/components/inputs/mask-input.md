@@ -1,28 +1,28 @@
 ---
-title: $Platform$ MaskInput | インフラジスティックス
-_description: インフラジスティックスの $Platform$ MaskInput により、ユーザーは入力を制御し、構成可能なマスク ルールに基づいて表示される値を書式設定できます。
-_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
+title: {Platform} MaskInput | インフラジスティックス
+_description: インフラジスティックスの {Platform} MaskInput により、ユーザーは入力を制御し、構成可能なマスク ルールに基づいて表示される値を書式設定できます。
+_keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
 mentionedTypes: ['MaskInput']
 _language: ja
 ---
 
-## $Platform$ Mask Input (マスク入力) の概要
+## {Platform} Mask Input (マスク入力) の概要
 
-$ProductName$ マスク入力は、構成可能なルールに基づいて、開発者がユーザー入力を制御し、表示される値を書式設定できるようにする入力フィールドです。入力オプションも構成できます。
+{ProductName} マスク入力は、構成可能なルールに基づいて、開発者がユーザー入力を制御し、表示される値を書式設定できるようにする入力フィールドです。入力オプションも構成できます。
 
-### $Platform$ マスク入力の例
+### {Platform} マスク入力の例
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="$Platform$ マスク入力の概要の例"
+           alt="{Platform} マスク入力の概要の例"
            github-src="inputs/mask-input/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -74,7 +74,7 @@ defineComponents(IgcMaskInputComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="$Platform$ マスク入力マスクの適用の例"
+           alt="{Platform} マスク入力マスクの適用の例"
            github-src="inputs/mask-input/applying-mask">
 </code-view>
 
@@ -103,7 +103,7 @@ IgcMaskInput は、特定のマスクが適用されたときにフォームに�
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="$Platform$ マスク入力値モードの例"
+           alt="{Platform} マスク入力値モードの例"
            github-src="inputs/mask-input/value-modes">
 </code-view>
 

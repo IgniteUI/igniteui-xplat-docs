@@ -1,24 +1,24 @@
 ---
-title: $Platform$ Chart Data Tooltip | Data Visualization Tools | Infragistics
-_description: Use Infragistics $ProductName$ chart with the data tooltip layer!
-_keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics
+title: {Platform} Chart Data Tooltip | Data Visualization Tools | Infragistics
+_description: Use Infragistics {ProductName} chart with the data tooltip layer!
+_keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics
 mentionedTypes: ["XamDataChart", "Legend", "CategoryChart", "FinancialChart", "XamDataLegend", "DataToolTipLayer"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $Platform$ Chart Data Tooltip
+# {Platform} Chart Data Tooltip
 
-In $ProductName$, the **DataToolTip** displays values and titles of series as well as legend badges of series in a tooltip. In addition, it provides many configuration properties of the `XamDataLegend` for filtering series rows and values columns, styling, and formatting values. This tooltip type updates while moving the mouse inside of the plot area of the `CategoryChart`, `FinancialChart`, and `XamDataChart` components.
+In {ProductName}, the **DataToolTip** displays values and titles of series as well as legend badges of series in a tooltip. In addition, it provides many configuration properties of the `XamDataLegend` for filtering series rows and values columns, styling, and formatting values. This tooltip type updates while moving the mouse inside of the plot area of the `CategoryChart`, `FinancialChart`, and `XamDataChart` components.
 
-## $Platform$ Data Tooltip Properties
+## {Platform} Data Tooltip Properties
 
 All properties of `DataToolTipLayer` are prefixed with **DataToolTip** and exposed on API of `CategoryChart` and `FinancialChart` components. However, you will need to create an instance of `DataToolTipLayer` and add it to series collection of `XamDataChart` component if you want to use it with Radial Charts, Polar Charts, Scatter Charts.
 
-## $Platform$ Data Tooltip Elements
+## {Platform} Data Tooltip Elements
 
 The **DataToolTip** displays content using a set of three types of rows and four types of columns.
 
-### $Platform$ Data Tooltip Rows
+### {Platform} Data Tooltip Rows
 
 The rows of the **DataToolTip** include the header row, series row(s), and the summary row.
 
@@ -33,11 +33,11 @@ The following example demonstrates the data tooltip with a summary applied:
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip"
-           alt="$Platform$ Category Chart Data Tooltip Example"
+           alt="{Platform} Category Chart Data Tooltip Example"
            github-src="charts/category-chart/data-tooltip">
 </code-view>
 
-### $Platform$ Data Tooltip Columns
+### {Platform} Data Tooltip Columns
 
 The columns of the `DataToolTipLayer` include the title, label, value, and units columns. Each series in the chart can have multiple columns for label, value, and units depending on the `DataToolTipIncludedColumns` or `DataToolTipExcludedColumns` collections of the chart.
 
@@ -74,11 +74,11 @@ The following example demonstrates a data tooltip with the added columns of Open
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip"
-           alt="$Platform$ Financial Chart Data Tooltip Example"
+           alt="{Platform} Financial Chart Data Tooltip Example"
            github-src="charts/financial-chart/data-tooltip">
 </code-view>
 
-## $Platform$ Data Tooltip Styling
+## {Platform} Data Tooltip Styling
 
 The **DataToolTip** provides properties for styling each type of column. Each of these properties begins with Title, Label, Value, or Units, and you can style the text's color, font, and margin. For example, if you wanted to set the text color of each of these, you would set the `DataToolTipTitleTextColor`, `DataToolTipLabelTextColor`, `DataToolTipValueTextColor`, and `DataToolTipUnitsTextColor` properties.
 
@@ -87,11 +87,11 @@ The following example demonstrates usage of the styling properties mentioned abo
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-styling-props"
-           alt="$Platform$ Financial Chart Data Tooltip Styling Example"
+           alt="{Platform} Financial Chart Data Tooltip Styling Example"
            github-src="charts/financial-chart/data-tooltip-styling-props">
 </code-view>
 
-## $Platform$ Data Tooltip Grouping & Positioning
+## {Platform} Data Tooltip Grouping & Positioning
 
 You can set `DataToolTipGroupingMode` property to either `Grouped` or `Individual` to group content for multiple series into single tooltip or separate content for each series in multiple tooltips. In the `Grouped` mode, you can customize where the tooltip is shown by setting the `DataToolTipGroupedPositionModeX` and `DataToolTipGroupedPositionModeY` properties. This essentially allows you to customize the horizontal and vertical alignments of the tooltip and whether you want it to track to the closest series points to the mouse position or pin the tooltip to edge of plot area.
 
@@ -100,11 +100,11 @@ The following example demonstrates a data tooltip positioned to the top-right of
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-positioning"
-           alt="$Platform$ Category Chart Data Tooltip Positioning Example"
+           alt="{Platform} Category Chart Data Tooltip Positioning Example"
            github-src="charts/category-chart/data-tooltip-positioning">
 </code-view>
 
-## $Platform$ Data Tooltip Value Formatting
+## {Platform} Data Tooltip Value Formatting
 
 The **DataToolTip** provides automatic abbreviation of large numbers using its `DataToolTipValueFormatAbbreviation` property. This adds a multiplier in the units column such as kilo, million, billion, etc. You can customize the number of fractional digits that are displayed by setting the `DataToolTipValueFormatMinFractions` and `DataToolTipValueFormatMaxFractions`. This will allow you to determine the minimum and maximum number of digits that appear after the decimal point, respectively.
 
@@ -113,18 +113,18 @@ The following example demonstrates a **DataToolTip** with the minimum and maximu
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-formatting-decimals"
-           alt="$Platform$ Category Chart Data Tooltip Formatting Decimals Example"
+           alt="{Platform} Category Chart Data Tooltip Formatting Decimals Example"
            github-src="charts/category-chart/data-tooltip-formatting-decimals">
 </code-view>
 
-## $Platform$ Data Tooltip Value Mode
+## {Platform} Data Tooltip Value Mode
 
 You can change the default decimal display of values within the **DataToolTip** to be currency by changing the `DataToolTipValueFormatMode` property of the layer. The **DataToolTip** also exposes the ability to modify the culture of the displayed currency symbol by using its `DataToolTipValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `DataToolTipValueFormatCulture` set to "en-GB":
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-formatting-currency"
-           alt="$Platform$ Financial Chart Data Tooltip Formatting Currency Example"
+           alt="{Platform} Financial Chart Data Tooltip Formatting Currency Example"
            github-src="charts/financial-chart/data-tooltip-formatting-currency">
 </code-view>
 

@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Chip | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
-_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, $Platform$ Chip コンポーネント, インフラジスティックス
+title: {Platform} Chip | インフラジスティックス
+_description: インフラジスティックスの {Platform} Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
+_keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, {Platform} Chip コンポーネント, インフラジスティックス
 mentionedTypes: ['Chip']
 _language: ja
 ---
 
-# $Platform$ Chip (チップ) の概要
+# {Platform} Chip (チップ) の概要
 
-$ProductName$ Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
+{ProductName} Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
 
-## $Platform$ Chip の例
+## {Platform} Chip の例
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="$Platform$ Chip の例"
+           alt="{Platform} Chip の例"
            github-src="inputs/chip/overview">
 </code-view>
 
@@ -24,7 +24,7 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +41,7 @@ defineComponents(IgcChipComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -130,7 +130,7 @@ IgbChipModule.Register(IgniteUIBlazor);
 
 ### バリアント
 
-$ProductName$ Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+{ProductName} Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
 
 ```tsx
 <IgrChip variant="success"></IgrChip>
@@ -147,13 +147,13 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="$Platform$ Chip バリアントの例"
+           alt="{Platform} Chip バリアントの例"
            github-src="inputs/chip/variants">
 </code-view>
 
 ### 無効
 
-$ProductName$ Chip は、`Disabled` プロパティを使用して無効にできます。
+{ProductName} Chip は、`Disabled` プロパティを使用して無効にできます。
 
 ```tsx
 <IgrChip disabled="true"></IgrChip>
@@ -180,7 +180,7 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
-           alt="$Platform$ Chip Multiple Example"
+           alt="{Platform} Chip Multiple Example"
            github-src="inputs/chip/multiple">
 </code-view>
 
@@ -209,7 +209,7 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
-           alt="$Platform$ Chip Size Example"
+           alt="{Platform} Chip Size Example"
            github-src="inputs/chip/size">
 </code-view>
 
@@ -231,7 +231,7 @@ igc-chip::part(suffix) {
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="$Platform$ Chip スタイル設定の例"
+           alt="{Platform} Chip スタイル設定の例"
            github-src="inputs/chip/styling">
 </code-view>
 
