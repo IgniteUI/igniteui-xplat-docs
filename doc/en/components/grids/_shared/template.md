@@ -19,6 +19,10 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 <!-- EXAMPLE of razor code snippet that is automatically filtered for Blazor -->
 
 ```razor
+<IgbGrid></IgbGrid>
+```
+
+```razor
 <{ComponentSelector} data="data" >
 </{ComponentSelector}>
 ```

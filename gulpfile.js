@@ -3,6 +3,7 @@ var yaml = require('gulp-yaml');
 var del = require('del');
 var flatten = require('gulp-flatten');
 var es = require('event-stream');
+var through = require('through2');
 var path = require('path');
 const { buildDocfx } = require('igniteui-docfx-template');
 
@@ -138,8 +139,8 @@ function transformFiles() {
     ensureEnvironment();
 
     log("transforming files: ");
-    let mapStream = es.map(function(file, cb) {
-
+    let mapStream = through.obj(function(file, encoding, cb) {
+        
       var fileContent = file.contents.toString();
       var fileDir = path.dirname(file.path) + "\\";
       var fileName = file.path.replace(fileDir, "");
@@ -152,9 +153,23 @@ function transformFiles() {
         if (err) {
             cb(err, null);
         }
-        file.contents = Buffer.from(results);
 
-        cb(null, file);
+        if (results) {
+            for (let i = 1; i < results.length; i++) {
+                let newFile = file.clone();
+
+                newFile.contents = Buffer.from(results[i].content);
+                if (results[i].alteredPath) {
+                    newFile.path = newFile.path.replace("_shared", results[i].alteredPath);
+                }               
+                this.push(newFile);
+            }
+            file.contents = Buffer.from(results[0].content);
+            if (results[0].alteredPath) {
+                file.path = file.path.replace("_shared", results[0].alteredPath);
+            }
+            cb(null, file);
+        }
       });
     });
     return mapStream;
@@ -524,16 +539,22 @@ function buildPlatform(cb) {
     log("building with API mapping: " + apiSourcePath);
     gulp.src([
         apiSourcePath
-    ])
+    ],)
     .pipe(flatten())
     .pipe(readMappings())
     .on("end", () => {
         transformer.configure(loader, apiPlatform, docsConfig[platformName], ENV_TARGET);
 
         // the includedTopics array is generated in buildTOC task
-        let sources = includedTopics;
+        let sources = [
 
-        gulp.src(sources)
+            'doc/en/components/grids/pivot-grid/overview.md',
+
+            'doc/en/components/grids/_shared/template.md',
+
+        ];
+
+        gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
         .pipe(gulp.dest("dist/" + platformName))
         .on("end", function() {
@@ -680,7 +701,7 @@ function buildCore(cb) {
     buildPlatform(cb);
 }
 
-exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildSharedFiles, buildCore)
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
 
 // functions for building each platform:
 function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }

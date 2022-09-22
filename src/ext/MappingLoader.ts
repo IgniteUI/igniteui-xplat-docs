@@ -47,6 +47,9 @@ export class MappingLoader {
         if (name === undefined || name === null){
             return undefined;
         }
+        if (!(typeof name == "string")) {
+            return undefined;
+        }
         else if (name.indexOf(".") >= 0) {
             return this._typeMap.get(name);
         } else {
