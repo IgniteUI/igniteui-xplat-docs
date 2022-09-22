@@ -11,8 +11,8 @@
             "name": "Debug buildBlazor",
             "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
             "args": [
-                "buildOutputBlazor"
-            ]           
+                "buildBlazor"
+            ]
         }
     ]
 }
