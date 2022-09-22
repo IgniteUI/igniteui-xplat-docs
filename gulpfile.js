@@ -94,46 +94,46 @@ function readMappings() {
     });
 }
 
-function buildSharedFiles(cb) {
-    console.log("buildSharedFiles");
-    ensureEnvironment();
+// function buildSharedFiles(cb) {
+//     console.log("buildSharedFiles");
+//     ensureEnvironment();
 
-    let sharedTopics = [];
+//     let sharedTopics = [];
 
-    let source = [
-        // "doc/en/**/general-getting-started.md",
-        "doc/en/**/_shared/*.md",
-        "doc/jp/**/_shared/*.md",
-        "doc/kr/**/_shared/*.md"];
-    gulp.src(source)
-    // .pipe(getSharedTopics)
-    .pipe(es.map(function(file, fileCallback) {
-        // finding all shared topics
-        var fileContent = file.contents.toString();
-        if (fileContent.indexOf("sharedComponents") > 0) {
-            var info = { contents: fileContent, path: file.path };
-            sharedTopics.push(info);
-        }
-        fileCallback(null, file);
-    })
-    .on("end", () => {
-        // console.log("buildSharedFiles " + sharedTopics.length);
-        // generating topics from shared topics
-        var generatedFiles = [];
-        for (const file of sharedTopics) {
+//     let source = [
+//         // "doc/en/**/general-getting-started.md",
+//         "doc/en/**/_shared/*.md",
+//         "doc/jp/**/_shared/*.md",
+//         "doc/kr/**/_shared/*.md"];
+//     gulp.src(source)
+//     // .pipe(getSharedTopics)
+//     .pipe(es.map(function(file, fileCallback) {
+//         // finding all shared topics
+//         var fileContent = file.contents.toString();
+//         if (fileContent.indexOf("sharedComponents") > 0) {
+//             var info = { contents: fileContent, path: file.path };
+//             sharedTopics.push(info);
+//         }
+//         fileCallback(null, file);
+//     })
+//     .on("end", () => {
+//         // console.log("buildSharedFiles " + sharedTopics.length);
+//         // generating topics from shared topics
+//         var generatedFiles = [];
+//         for (const file of sharedTopics) {
 
-            var files = transformer.transformSharedFile(file.contents, file.path,
-                docsComponents, docsConfig[PLAT]);
-            generatedFiles.push(...files);
-        }
-        // console.log("transformSharedFiles ");
-        // console.log(generatedFiles);
-        transformer.updateGitIgnore(generatedFiles);
+//             var files = transformer.transformSharedFile(file.contents, file.path,
+//                 docsComponents, docsConfig[PLAT]);
+//             generatedFiles.push(...files);
+//         }
+//         // console.log("transformSharedFiles ");
+//         // console.log(generatedFiles);
+//         transformer.updateGitIgnore(generatedFiles);
 
-        cb();
-    }));
-}
-exports.buildSharedFiles = buildSharedFiles;
+//         cb();
+//     }));
+// }
+// exports.buildSharedFiles = buildSharedFiles;
 
 function transformFiles() {
     ensureEnvironment();

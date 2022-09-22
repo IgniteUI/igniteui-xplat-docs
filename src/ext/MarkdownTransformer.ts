@@ -1511,136 +1511,136 @@ export class MarkdownTransformer {
         return { fileContent: fileContent, isValid: mdValidated};
     }
 
-    updateGitIgnore(excludeFiles: string[])
-    {
-        let gitIgnore = fs.readFileSync(".gitignore").toString();
-        var startStr = "# shared-files-start";
-        var endStr = "# shared-files-end";
-        let start = gitIgnore.indexOf(startStr);
-        let end = gitIgnore.indexOf(endStr);
+    // updateGitIgnore(excludeFiles: string[])
+    // {
+    //     let gitIgnore = fs.readFileSync(".gitignore").toString();
+    //     var startStr = "# shared-files-start";
+    //     var endStr = "# shared-files-end";
+    //     let start = gitIgnore.indexOf(startStr);
+    //     let end = gitIgnore.indexOf(endStr);
 
-        if (start < 0) {
-            throw ".gitignore file is missing # shared-files-start";
-        }
-        if (end < 0) {
-            throw ".gitignore file is missing # shared-files-end";
-        }
+    //     if (start < 0) {
+    //         throw ".gitignore file is missing # shared-files-start";
+    //     }
+    //     if (end < 0) {
+    //         throw ".gitignore file is missing # shared-files-end";
+    //     }
 
-        gitIgnore = gitIgnore.substring(0, start + startStr.length)
-        + "\r\n" + excludeFiles.join("\n") + "\r\n"
-        + gitIgnore.substring(end);
+    //     gitIgnore = gitIgnore.substring(0, start + startStr.length)
+    //     + "\r\n" + excludeFiles.join("\n") + "\r\n"
+    //     + gitIgnore.substring(end);
 
-        fs.writeFileSync(".gitignore", gitIgnore);
-    }
+    //     fs.writeFileSync(".gitignore", gitIgnore);
+    // }
 
-    omitComponentSections(
-        targetComponent: string,
-        fileContent: string) : string {
+    // omitComponentSections(
+    //     targetComponent: string,
+    //     fileContent: string) : string {
 
-        var lines = fileContent.split('\r\n');
-        // console.log('omitComponentSections "' + targetComponent + '"')
+    //     var lines = fileContent.split('\r\n');
+    //     // console.log('omitComponentSections "' + targetComponent + '"')
 
-        var topicSections = [];
-        var shareSection = new SharedSection();
-        for (let i = 0; i < lines.length; i++) {
-            const line = lines[i];
-            var start = line.indexOf("<!-- ComponentStart:");
-            var end = line.indexOf("<!-- ComponentEnd:");
-            if (start >= 0) {
-                topicSections.push(shareSection);
+    //     var topicSections = [];
+    //     var shareSection = new SharedSection();
+    //     for (let i = 0; i < lines.length; i++) {
+    //         const line = lines[i];
+    //         var start = line.indexOf("<!-- ComponentStart:");
+    //         var end = line.indexOf("<!-- ComponentEnd:");
+    //         if (start >= 0) {
+    //             topicSections.push(shareSection);
 
-                var componentLine = line.trim();
-                componentLine = componentLine.replace("<!-- ComponentStart:", "")
-                componentLine = componentLine.replace(" -->", "")
-                shareSection = new SharedSection();
-                shareSection.components = componentLine.trim().split(',');
-                shareSection.added = true;
-                shareSection.lines.push(line);
-            } else if (end >= 0) {
-                shareSection.lines.push(line);
-                shareSection.added = true;
-                topicSections.push(shareSection);
+    //             var componentLine = line.trim();
+    //             componentLine = componentLine.replace("<!-- ComponentStart:", "")
+    //             componentLine = componentLine.replace(" -->", "")
+    //             shareSection = new SharedSection();
+    //             shareSection.components = componentLine.trim().split(',');
+    //             shareSection.added = true;
+    //             shareSection.lines.push(line);
+    //         } else if (end >= 0) {
+    //             shareSection.lines.push(line);
+    //             shareSection.added = true;
+    //             topicSections.push(shareSection);
 
-                shareSection = new SharedSection();
-            } else {
+    //             shareSection = new SharedSection();
+    //         } else {
 
-                if (line.indexOf('<!-- NOTE') < 0 &&
-                    line.indexOf('<!-- EXAMPLE') < 0) {
-                    shareSection.lines.push(line);
-                }
-            }
-        }
+    //             if (line.indexOf('<!-- NOTE') < 0 &&
+    //                 line.indexOf('<!-- EXAMPLE') < 0) {
+    //                 shareSection.lines.push(line);
+    //             }
+    //         }
+    //     }
 
-        if (!shareSection.added)
-        {
-            shareSection.added = true;
-            topicSections.push(shareSection);
-        }
+    //     if (!shareSection.added)
+    //     {
+    //         shareSection.added = true;
+    //         topicSections.push(shareSection);
+    //     }
 
-        // console.log(topicSections)
+    //     // console.log(topicSections)
 
-        var outputLines = [];
-        for (let i = 0; i < topicSections.length; i++) {
-            var section = topicSections[i];
-            // console.log("outputSegments" + segment.components.indexOf(targetComponent))
-            if (section.components.length === 0 ||
-                section.components.indexOf(targetComponent) >= 0) {
-                    outputLines.push(...section.lines);
-            }
-        }
-        // console.log(outputLines)
-        return outputLines.join('\r\n');
-    }
+    //     var outputLines = [];
+    //     for (let i = 0; i < topicSections.length; i++) {
+    //         var section = topicSections[i];
+    //         // console.log("outputSegments" + segment.components.indexOf(targetComponent))
+    //         if (section.components.length === 0 ||
+    //             section.components.indexOf(targetComponent) >= 0) {
+    //                 outputLines.push(...section.lines);
+    //         }
+    //     }
+    //     // console.log(outputLines)
+    //     return outputLines.join('\r\n');
+    // }
 
-    transformSharedFile(
-        fileContent: string,
-        filePath: string, docsComponents: any, docsConfig: any): string[] {
-        var md = new MarkdownContent(fileContent, filePath);
+    // transformSharedFile(
+    //     fileContent: string,
+    //     filePath: string, docsComponents: any, docsConfig: any): string[] {
+    //     var md = new MarkdownContent(fileContent, filePath);
 
-        var generatedFiles: string[] = [];
-        if (!md.metadata.hasSharedComponents()) return generatedFiles;
+    //     var generatedFiles: string[] = [];
+    //     if (!md.metadata.hasSharedComponents()) return generatedFiles;
 
-        var componentsLine = md.metadata.sharedComponents;
-        componentsLine = componentsLine.replace("sharedComponents:", "");
-        componentsLine = componentsLine.replace("[", "");
-        componentsLine = componentsLine.replace("]", "");
-        componentsLine = componentsLine.replace("_", "");
-        componentsLine = Strings.replace(componentsLine, '"', '');
-        var componentsNames = componentsLine.split(",");
-        if (componentsNames.length === 0) return generatedFiles;
+    //     var componentsLine = md.metadata.sharedComponents;
+    //     componentsLine = componentsLine.replace("sharedComponents:", "");
+    //     componentsLine = componentsLine.replace("[", "");
+    //     componentsLine = componentsLine.replace("]", "");
+    //     componentsLine = componentsLine.replace("_", "");
+    //     componentsLine = Strings.replace(componentsLine, '"', '');
+    //     var componentsNames = componentsLine.split(",");
+    //     if (componentsNames.length === 0) return generatedFiles;
 
-        console.log("transformSharedFile " + filePath);
-        var docPath = ".\\doc\\" + filePath.split("\\doc\\")[1];
-        var note = 'note: AUTO-GENERATED from "' + Strings.replace(docPath, "\\", "/") + '"';
+    //     console.log("transformSharedFile " + filePath);
+    //     var docPath = ".\\doc\\" + filePath.split("\\doc\\")[1];
+    //     var note = 'note: AUTO-GENERATED from "' + Strings.replace(docPath, "\\", "/") + '"';
 
-        for (const name of componentsNames) {
-            var component = docsComponents[name.trim()];
-            if (component === undefined) {
-                console.log(docsComponents);
-                throw "docComponents.json does not define component: '" + name + "'";
-            } else {
+    //     for (const name of componentsNames) {
+    //         var component = docsComponents[name.trim()];
+    //         if (component === undefined) {
+    //             console.log(docsComponents);
+    //             throw "docComponents.json does not define component: '" + name + "'";
+    //         } else {
 
-                var newTarget = 'targetComponent: "' + component.name + '"';
-                var newPath = filePath.replace("\\_shared\\", component.output);
-                var newContent = fileContent.replace("---\r\ntitle:", "---\r\n" + note + "\r\ntitle:");
-                newContent = newContent.replace(md.metadata.sharedComponents + "\r\n", "");
-                // newContent = newContent.replace(md.metadata.sharedComponents, newTarget);
-                // newContent = newContent.replace(new RegExp("{(Component)[a-zA-Z]*}", "gm"), component.name);
+    //             var newTarget = 'targetComponent: "' + component.name + '"';
+    //             var newPath = filePath.replace("\\_shared\\", component.output);
+    //             var newContent = fileContent.replace("---\r\ntitle:", "---\r\n" + note + "\r\ntitle:");
+    //             newContent = newContent.replace(md.metadata.sharedComponents + "\r\n", "");
+    //             // newContent = newContent.replace(md.metadata.sharedComponents, newTarget);
+    //             // newContent = newContent.replace(new RegExp("{(Component)[a-zA-Z]*}", "gm"), component.name);
 
-                // replacing {Component*} variables with acutal variables, e.g. {TreeGridName}
-                newContent = Strings.replace(newContent, "$Component", "$" + component.name);
-                newContent = Strings.replace(newContent, "{Component", "{" + component.name);
-                // omitting topic sections that are specific to a component
-                newContent = this.omitComponentSections(component.name, newContent);
-                fs.writeFileSync(newPath, newContent);
+    //             // replacing {Component*} variables with acutal variables, e.g. {TreeGridName}
+    //             newContent = Strings.replace(newContent, "$Component", "$" + component.name);
+    //             newContent = Strings.replace(newContent, "{Component", "{" + component.name);
+    //             // omitting topic sections that are specific to a component
+    //             newContent = this.omitComponentSections(component.name, newContent);
+    //             fs.writeFileSync(newPath, newContent);
 
-                var gitPath = "doc\\" + newPath.split("\\doc\\")[1];
-                gitPath = Strings.replace(gitPath, "\\", "/")
-                generatedFiles.push(gitPath);
-            }
-        }
-        return generatedFiles;
-    }
+    //             var gitPath = "doc\\" + newPath.split("\\doc\\")[1];
+    //             gitPath = Strings.replace(gitPath, "\\", "/")
+    //             generatedFiles.push(gitPath);
+    //         }
+    //     }
+    //     return generatedFiles;
+    // }
 
     updateApiSection(fileContent: string, filePath: string): string {
         var newApiMembers = [];
