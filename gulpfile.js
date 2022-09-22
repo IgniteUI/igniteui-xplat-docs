@@ -140,7 +140,7 @@ function transformFiles() {
 
     log("transforming files: ");
     let mapStream = through.obj(function(file, encoding, cb) {
-        
+
       var fileContent = file.contents.toString();
       var fileDir = path.dirname(file.path) + "\\";
       var fileName = file.path.replace(fileDir, "");
@@ -161,7 +161,7 @@ function transformFiles() {
                 newFile.contents = Buffer.from(results[i].content);
                 if (results[i].alteredPath) {
                     newFile.path = newFile.path.replace("_shared", results[i].alteredPath);
-                }               
+                }
                 this.push(newFile);
             }
             file.contents = Buffer.from(results[0].content);
@@ -420,45 +420,35 @@ function buildTOC(cb) {
 
     let excludedTopics = [];
     excludedTopics.push('doc/**/obsolete*.md');
-    excludedTopics.push('doc/**/_shared/*.md');
     // uncomment these lines to build docs without topics:
     // excludedTopics.push('doc/**/general-getting-started.md');
-    // excludedTopics.push('doc/**/general-*.md');
     // excludedTopics.push('doc/**/general-getting-started-*.md');
     // excludedTopics.push('doc/**/general-changelog-dv.md');
-    // excludedTopics.push('doc/**/lob/*.md');
+    // excludedTopics.push('doc/**/general-nuget-feed.md');
+    // excludedTopics.push('doc/**/general-installing-blazor.md');
+    // excludedTopics.push('doc/**/grids/grids.md');
     // excludedTopics.push('doc/**/grids/lob-grid/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
-    // excludedTopics.push('doc/**/grids/*.md');
     // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/tree.md');
+    // excludedTopics.push('doc/**/grids/list.md');
     // excludedTopics.push('doc/**/charts/**/*.md');
-    // excludedTopics.push('doc/**/charts/types/**/*.md');
-    // excludedTopics.push('doc/**/charts/features/**/*.md');
     // excludedTopics.push('doc/**/editors/**/*.md');
     // excludedTopics.push('doc/**/inputs/**/*.md');
     // excludedTopics.push('doc/**/layouts/**/*.md');
     // excludedTopics.push('doc/**/menus/**/*.md');
-    // excludedTopics.push('doc/**/data-chart*.md');
-    // excludedTopics.push('doc/**/financial-chart*.md');
-    // excludedTopics.push('doc/**/category-chart*.md');
-    // excludedTopics.push('doc/**/doughnut-chart.md');
-    // excludedTopics.push('doc/**/pie-chart.md');
-    // excludedTopics.push('doc/**/zoomslider*.md');
-    // excludedTopics.push('doc/**/sparkline*.md');
-    // excludedTopics.push('doc/**/treemap*.md');
     // excludedTopics.push('doc/**/*map*.md');
     // excludedTopics.push('doc/**/bullet-graph.md');
     // excludedTopics.push('doc/**/linear-gauge.md');
     // excludedTopics.push('doc/**/radial-gauge.md');
-    // excludedTopics.push('doc/**/*gauge*.md');
     // excludedTopics.push('doc/**/*excel*.md');
     // excludedTopics.push('doc/**/spreadsheet*.md');
-    // excludedTopics.push('doc/**/dock-manager*.md');
-    // excludedTopics.push('doc/**/editors/*.md');
     // excludedTopics.push('doc/**/scheduling/*.md');
     // excludedTopics.push('doc/**/notifications/*.md');
+    // excludedTopics.push('doc/**/themes/*.md');
+    // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
 
@@ -492,7 +482,6 @@ function buildTOC(cb) {
         // }
 
         includedTopics = ['doc/**/*.md'];
-        // includedTopics = [];
         gulp.src(['doc/**/*.md'])
         .pipe(es.map(function(topicFile, topicCallback) {
             var filePath = topicFile.path.split('\\').join('/');
@@ -503,13 +492,11 @@ function buildTOC(cb) {
                     includedInTOC = true;
                 }
             }
-            if (!includedInTOC) {
+            // excluding topics that are not in TOC but always including shared topics
+            if (!includedInTOC && filePath.indexOf("/_shared/") < 0) {
                 includedTopics.push('!' + fileLocal);
             }
-            // including topics that are present in EN/JP/KR TOC files
-            // if (includedInTOC) {
-            //     includedTopics.push(fileLocal);
-            // }
+
             topicCallback(null, topicFile);
         }))
         .on("end", () => {
@@ -546,13 +533,16 @@ function buildPlatform(cb) {
         transformer.configure(loader, apiPlatform, docsConfig[platformName], ENV_TARGET);
 
         // the includedTopics array is generated in buildTOC task
-        let sources = [
+        let sources = includedTopics;
 
-            'doc/en/components/grids/pivot-grid/overview.md',
-
-            'doc/en/components/grids/_shared/template.md',
-
-        ];
+        // uncomment to force building specific set of topics
+        // let sources = [
+        //   'doc/en/components/grids/pivot-grid/overview.md',
+        //   'doc/en/components/grids/_shared/template.md',
+        //   'doc/en/**/*.md',
+        //   'doc/jp/**/*.md',
+        //   'doc/kr/**/*.md',
+        // ];
 
         gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
