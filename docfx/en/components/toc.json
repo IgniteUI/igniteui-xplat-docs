@@ -180,13 +180,29 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Grid",
     "href": "grids/lob-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Column Headers",
+        "href": "grids/lob-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Hierarchical Grid",
     "href": "grids/hierarchical-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Column Headers",
+        "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -206,7 +222,15 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Column Headers",
+        "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular"],
