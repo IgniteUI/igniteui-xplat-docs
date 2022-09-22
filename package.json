@@ -26,7 +26,6 @@
     "startBlazor": "tsc && gulp startBlazor",
     "startReact": "tsc && gulp startReact",
     "startWC": "tsc && gulp startWC",
-    "buildSharedFiles": "tsc && gulp buildSharedFiles",
     "stageAngular": "tsc && set NODE_ENV=staging  && gulp startAngular",
     "stageBlazor": "tsc && set NODE_ENV=staging && gulp startBlazor",
     "stageReact": "tsc && set NODE_ENV=staging  && gulp startReact",
@@ -68,6 +67,7 @@
     "js-yaml": "^3.12.0",
     "remark": "^9.0.0",
     "remark-frontmatter": "^1.3.0",
+    "through2": "^4.0.2",
     "typescript": "3.0.1"
   }
 }
