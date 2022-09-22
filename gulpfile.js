@@ -539,10 +539,16 @@ function buildPlatform(cb) {
         // let sources = [
         //   'doc/en/components/grids/pivot-grid/overview.md',
         //   'doc/en/components/grids/_shared/template.md',
-        //   'doc/en/**/*.md',
-        //   'doc/jp/**/*.md',
-        //   'doc/kr/**/*.md',
+        // //   'doc/en/**/*.md',
+        // //   'doc/jp/**/*.md',
+        // //   'doc/kr/**/*.md',
         // ];
+
+        if (platformName === "Angular") {
+            // excluding grids and shared topics from angular builds
+            sources.push('!doc/**/grids/**/*.md');
+            sources.push('!doc/**/grids/_shared/*.md');
+        }
 
         gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
