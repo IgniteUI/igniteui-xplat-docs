@@ -198,15 +198,16 @@ function transformCodeRefs(options: any) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
             transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
-        if (memberName.includes("Igc", 0)) {
-            transformWarning("found 'Igc' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
-        if (memberName.includes("Igr", 0)) {
-            transformWarning("found 'Igr' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
-        if (memberName.includes("Igx", 0)) {
-            transformWarning("found 'Igx' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
+
+        // if (memberName.includes("Igc", 0)) {
+        //     transformWarning("found 'Igc' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
+        // if (memberName.includes("Igr", 0)) {
+        //     transformWarning("found 'Igr' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
+        // if (memberName.includes("Igx", 0)) {
+        //     transformWarning("found 'Igx' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
 
         if (memberName.indexOf("Ig$") >= 0) {
             memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
@@ -484,7 +485,7 @@ function transformDocPlaceholders(options: any) {
                 }
             }
         }
-        
+
         return nodeValue;
     }
 
@@ -647,7 +648,7 @@ function getComponentSegments(node: any): ComponentSegment[] {
     while (match = reg.exec(node.value)) {
         let val = match[0];
         let isBegin = val.indexOf("ComponentStart:") >= 0;
-       
+
         let components = getComponentsFromString(val);
         if (components && components.length > 0) {
             //let platforms: APIPlatform[] = [];
@@ -1024,7 +1025,7 @@ function omitFencedCode(options: any) {
                         components = getComponentsFromComment(parent.children[index - 2])!;
                     }
                 }
-            }  
+            }
 
             if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
                options.toDelete.add(parent.children[index - 2]);
@@ -1510,7 +1511,7 @@ export class MarkdownTransformer {
                 }
 
                 output.push({ content: vfile.toString(), alteredPath: alteredPath });
-                
+
                 if (iteration == runFor.length - 1) {
                     callback(null, output);
                 } else {
@@ -1522,7 +1523,7 @@ export class MarkdownTransformer {
         }
         doIteration();
 
-        
+
     }
 
     getGithubURL(codeViewerLine: string): string {
