@@ -135,7 +135,7 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE]
+> [!NOTE] 
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
 
 ## 空および選択済み 
