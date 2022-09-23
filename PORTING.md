@@ -116,6 +116,13 @@ to
 
 - Remove "..." from code snippets.
 
+- Remove all DIV elements that are below topic's headers
+
+```md
+## Topic Header
+<div class="divider--half"></div>
+```
+
 - Remove backticks from topic links:
 
 ```md
