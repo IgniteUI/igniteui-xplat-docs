@@ -1,15 +1,15 @@
 ---
-title: Multi-column Headers in {Platform} {ComponentTitle} - Infragistics
-_description: Start grouping column headers by placing them under a common hierarchical header with the help of Ignite UI for Angular grid and combine them into multi headers.
+title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
+_description: Start grouping column headers by placing them under a common hierarchical header with the help of Ignite UI for {Platform} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: []
+_keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 ---
 
-# {ComponentTitle} Multi-column Headers Overview
+# {Platform} {ComponentTitle} Multi-Column Headers Overview
 
 The `Grid` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
 
-## {Platform} Grid Multi-column Headers Overview Example
+## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
 
 <code-view style="height:550px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
@@ -20,8 +20,9 @@ The `Grid` supports multi-column headers which allow you to group columns by pla
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
 
+<!-- ComponentStart: Grid -->
 ```html
-<igx-grid [data]="data" height="600px" [allowFiltering]="true">
+<igx-grid [data]="data" [allowFiltering]="true">
     <igx-column-group header="Contact Information">
         <igx-column sortable="true" resizable="true" field="Phone"></igx-column>
         <igx-column sortable="true" resizable="true" field="Fax"></igx-column>
@@ -31,11 +32,53 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 
 ```razor
-TO-DO CODE SNIPPET
+TO-DO GRID CODE SNIPPET
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID">
+    <igx-column-group header="Contact Information">
+        <igx-column field="Phone" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+        <igx-column field="Fax" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+        <igx-column field="PostalCode" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+    </igx-column-group>
+</igx-tree-grid>
+```
+
+```razor
+TO-DO TREEGRID CODE SNIPPET
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
+    <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
+    <igx-column-group header="Address Information">
+        <igx-column-group header="Location">
+            <igx-column field="Address" sortable="true" resizable="true"></igx-column>
+            <igx-column field="City" sortable="true" resizable="true"></igx-column>
+            <igx-column field="PostalCode" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Country" sortable="true" resizable="true"></igx-column>
+        </igx-column-group>
+        <igx-column-group header="Contact Information">
+            <igx-column field="Phone" sortable="true" resizable="true"></igx-column>
+            <igx-column field="Fax" sortable="true" resizable="true"></igx-column>
+        </igx-column-group>
+    </igx-column-group>
+</igx-hierarchical-grid>
+```
+
+```razor
+TO-DO H-GRID CODE SNIPPET
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 For achieving `n-th` level of nested headers, the declaration above should be followed. So by nesting `ColumnGroup` leads to the desired result.
 
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group header="General Information">
@@ -49,8 +92,49 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```
 
 ```razor
-TO-DO CODE SNIPPET
+TO-DO GRID CODE SNIPPET
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
+    <igx-column-group [pinned]="false" header="General Information">
+        <igx-column field="HireDate" dataType="date" [sortable]="true" [resizable]="true"></igx-column>
+        <igx-column-group header="Person Details">
+            <igx-column field="ID" dataType="number" [resizable]="true" [filterable]="false"></igx-column>
+            <igx-column field="Title" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+            <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
+        </igx-column-group>            
+    </igx-column-group>
+</igx-tree-grid>
+```
+
+```razor
+TO-DO TREEGRID CODE SNIPPET
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+    <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
+    <igx-column-group pinned]="false" header="General Information">
+        <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
+        <igx-column-group header="Person Details">
+            <igx-column field="ContactName" sortable="true" resizable="true"></igx-column>
+            <igx-column field="ContactTitle" sortable="true" resizable="true"></igx-column>
+        </igx-column-group>
+    </igx-column-group>
+</igx-hierarchical-grid>
+```
+
+```razor
+TO-DO H-GRID CODE SNIPPET
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
 > [!NOTE]
@@ -59,6 +143,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
 
 
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
@@ -71,8 +156,47 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 ```
 
 ```razor
-TO-DO CODE SNIPPET
+TO-DO GRID CODE SNIPPET
 ```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```html
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
+    <igx-column-group header="Contact Information">
+        <igx-column field="Phone" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+    </igx-column-group>
+    <igx-column field="Name" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+    <igx-column field="Title" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
+    <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
+</igx-tree-grid>
+```
+
+```razor
+TO-DO TREEGRID CODE SNIPPET
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```html
+<igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
+    <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
+    <igx-column-group [pinned]="false" header="General Information">
+        <igx-column field="CompanyName" sortable="true" resizable="true"></igx-column>
+        <igx-column-group header="Person Details">
+            <igx-column field="ContactName" sortable="true" resizable="true"></igx-column>
+            <igx-column field="ContactTitle" sortable="true" resizable="true"></igx-column>
+        </igx-column-group>
+    </igx-column-group>    
+</igx-hierarchical-grid>
+```
+
+```razor
+TO-DO H-GRID CODE SNIPPET
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
+
 
 ## Multi-column Header Template
 
@@ -250,17 +374,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
     ```
 
 ## API References
-<div class="divider--half"></div>
 
-* `IgxGridComponent`
-* IgxGridComponent Styles
-* `IgxColumnGroupComponent`
-
-<div class="divider--half"></div>
+* `Grid`
+* `ColumnGroup`
 
 ## Additional Resources
-
-<div class="divider--half"></div>
 
 * [Grid overview](grid.md)
 * [Virtualization and Performance](virtualization.md)
@@ -272,9 +390,14 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Selection](selection.md)
 * [Group by](groupby.md)
 
-<div class="divider--half"></div>
-
 Our community is active and always welcoming to new ideas.
 
+<!-- Angular -->
 * [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
 * [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
+<!-- end: Angular -->
+
+<!-- Blazor -->
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+<!-- end: Blazor -->
