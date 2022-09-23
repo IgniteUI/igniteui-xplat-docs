@@ -131,7 +131,7 @@ IgrRatingModule.register();
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="単一選択による $Platform$ Rating"
+           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="単一選択による {Platform} Rating"
            github-src="inputs/rating/custom">
 </code-view>
 
@@ -139,7 +139,7 @@ IgrRatingModule.register();
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
 
 ## 空および選択済み 
-$ProductName$ 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
+{ProductName} 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
 
 ```html
 <igc-rating-symbol>
