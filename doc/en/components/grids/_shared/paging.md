@@ -5,11 +5,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 ---
 
-# {Platform} {ComponentTitle} Pagination
+# {Platform} {ComponentTitle} Pagination Overview
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. {ComponentTitle} pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the {ComponentTitle} supports template for custom pages.
 
-## {Platform} Pagination Example
+## {Platform} {ComponentTitle} Pagination Example
 
 The following example represents {ComponentTitle} pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the {ComponentTitle} pages via "Go to last page" and "Go to first page" buttons.
 
@@ -20,7 +20,7 @@ The following example represents {ComponentTitle} pagination and exposes the opt
            alt="{Platform} {ComponentName} Pagination Example">
 </code-view>
 
-Adding a `Paginator`(../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our {ComponentTitle} to enable paging:
+Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our {ComponentTitle} to enable paging:
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -61,7 +61,6 @@ TO-DO TREEGRID CODE SNIPPET
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-Example:
 ```html
 <igx-paginator #paginator [totalRecords]="20">
     <igx-paginator-content>
