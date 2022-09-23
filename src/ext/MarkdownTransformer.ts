@@ -1177,7 +1177,7 @@ export class MarkdownTransformer {
         typeName: string,
         fileContent: string,
         filePath: string,
-        callback: (err: any, results: { content: string, alteredPath: string | null }[] | null) => void): void {
+        callback: (err: any, results: { content: string, componentOutput: string | null }[] | null) => void): void {
 
         // check for strings that should be API links:
         let fileLines = fileContent.toLowerCase().split("\n");
@@ -1331,18 +1331,24 @@ export class MarkdownTransformer {
             runFor = ((options as any).sharedComponents as string[]).map((c) => { return { componentName: c } });
         }
 
-        let output: {content: string, alteredPath: string | null }[] = [];
+        let output: {content: string, componentOutput: string | null }[] = [];
         let iteration = 0;
         var doIteration = () => {
             let currRun = runFor[iteration];
-            let alteredPath: string | null = null;
+            let componentOutput: string | null = null;
 
             if (currRun.componentName != null) {
                 (options as any).componentName = currRun.componentName;
+
+                console.log("- " + filePath + " for " + currRun.componentName);
+
                 if (docsComponents[currRun.componentName] !== undefined) {
-                    alteredPath = docsComponents[currRun.componentName].output;
+                    componentOutput = docsComponents[currRun.componentName].output;
                 }
+            } else {
+                console.log("- " + filePath);
             }
+
             remark().data('settings', {
                 commonmark: false,
                 footnotes: true,
@@ -1354,7 +1360,6 @@ export class MarkdownTransformer {
             .use(getFrontMatterTypes, options)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)
-            // .use(transformDocPlaceholders, options)
             .use(omitPlatformSpecificSections, options)
             .use(omitComponentSpecificSections, options)
             .use(omitStackblitzButtons, options)
@@ -1371,7 +1376,7 @@ export class MarkdownTransformer {
                     return;
                 }
 
-                output.push({ content: vfile.toString(), alteredPath: alteredPath });
+                output.push({ content: vfile.toString(), componentOutput: componentOutput });
 
                 if (iteration == runFor.length - 1) {
                     callback(null, output);

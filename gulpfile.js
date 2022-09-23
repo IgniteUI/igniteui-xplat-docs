@@ -146,7 +146,7 @@ function transformFiles() {
       var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
-      console.log("- " + file.path);
+      // console.log("- " + file.path);
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
@@ -159,14 +159,14 @@ function transformFiles() {
                 let newFile = file.clone();
 
                 newFile.contents = Buffer.from(results[i].content);
-                if (results[i].alteredPath) {
-                    newFile.path = newFile.path.replace("_shared", results[i].alteredPath);
+                if (results[i].componentOutput) {
+                    newFile.path = newFile.path.replace("_shared", results[i].componentOutput);
                 }
                 this.push(newFile);
             }
             file.contents = Buffer.from(results[0].content);
-            if (results[0].alteredPath) {
-                file.path = file.path.replace("_shared", results[0].alteredPath);
+            if (results[0].componentOutput) {
+                file.path = file.path.replace("_shared", results[0].componentOutput);
             }
             cb(null, file);
         }
