@@ -7,7 +7,7 @@ _keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, 
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The `Grid` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {Platform} {ComponentTitle} supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
 
 ## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
 
