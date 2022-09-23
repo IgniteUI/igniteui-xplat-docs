@@ -139,22 +139,6 @@ to
 
 - Replace `Angular` with `{Platform}` variable.
 
-- Replace Angular build flags with XPlatform build flags:
-
-```
-@@if (igxName === 'IgxGrid' || igxName === 'IgxHierarchicalGrid') {
-Some content about grids components....
-}
-```
-
-with:
-
-```md
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-Some content about grids components....
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-```
-
 - Replace routing path to samples with `{ComponentSample}` variable in code-viewer:
 
 from:
@@ -177,6 +161,46 @@ to:
            alt="{Platform} {ComponentName} Advanced Filtering Example">
 </code-view>
 ```
+
+## Build Flaging Topic
+
+- Replace Angular build flags with Xplat build flags:
+
+```
+@@if (igxName === 'IgxGrid' || igxName === 'IgxHierarchicalGrid') {
+This paragraph is about grids components.
+}
+```
+
+with:
+
+```md
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+This paragraph is about grids components.
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
+```
+
+- You should NOT build flag code snippets for components because gulp script automatically detects whether or not to omit code snippets based on selector names:
+
+
+```md
+ 
+<igx-tree-grid [data]="data" >
+</igx-tree-grid>
+
+```
+
+instead of:
+
+```md
+<!-- ComponentStart: TreeGrid -->
+ 
+<igx-tree-grid [data]="data" >
+</igx-tree-grid>
+
+<!-- ComponentEnd: TreeGrid -->
+```
+
 
 ## Building Docs
 
