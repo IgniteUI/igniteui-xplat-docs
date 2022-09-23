@@ -1,22 +1,22 @@
 ---
-title: $Platform$ ドック マネージャー | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
-_keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
+title: {Platform} ドック マネージャー | レイアウト コントロール | インフラジスティックス
+_description: インフラジスティックスの {Platform} ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。{ProductName} ドック マネージャー チュートリアルを是非お試しください!
+_keywords: dock manager, layout, {ProductName}, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ ドック マネージャーの概要
+# {Platform} ドック マネージャーの概要
 
-Infragistics $Platform$ Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
+Infragistics {Platform} Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
-## $Platform$ ドック マネージャーの例
+## {Platform} ドック マネージャーの例
 
-この例は、$Platform$ ドック マネージャのほとんどの機能とドッキング オプションを示しています。
+この例は、{Platform} ドック マネージャのほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$Platform$ ドック マネージャーの例"
+           alt="{Platform} ドック マネージャーの例"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
@@ -329,7 +329,7 @@ this.dockManager.layout = { ...layout };
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
-           alt="$Platform$ ドック マネージャー実行時にペインを追加するの例"
+           alt="{Platform} ドック マネージャー実行時にペインを追加するの例"
            github-src="layouts/dock-manager/add-content-runtime">
 </code-view>
 
@@ -357,7 +357,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="$Platform$ ドック マネージャー ペインを閉じる例"
+           alt="{Platform} ドック マネージャー ペインを閉じる例"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
 <!-- end: WebComponents -->
@@ -447,7 +447,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
-           alt="$Platform$ Dock Manager カスタマイズ ボタンの例"
+           alt="{Platform} Dock Manager カスタマイズ ボタンの例"
            github-src="layouts/dock-manager/customize-buttons">
 </code-view>
 <!-- end: WebComponents -->
@@ -503,7 +503,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 ### その他
  - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
-サンプル [`demo`](dock-manager.md#$Platform$-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+サンプル [`demo`](dock-manager.md#{Platform}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 <!-- WebComponents -->
 
@@ -522,7 +522,7 @@ igc-dockmanager::part(content-pane) {
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="$Platform$ ドック マネージャー スタイル設定の例"
+           alt="{Platform} ドック マネージャー スタイル設定の例"
            github-src="layouts/dock-manager/styling">
 </code-view>
 

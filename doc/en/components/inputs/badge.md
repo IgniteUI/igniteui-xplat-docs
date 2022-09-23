@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
 mentionedTypes: ['Badge']
 ---
 
-# $Platform$ Badge Overview
+# {Platform} Badge Overview
 
-The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+The {ProductName} Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
 
-## $Platform$ Badge Example
+## {Platform} Badge Example
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/outlined">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ Badge is a component used in conjunction with avatars, navigat
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 You will then need to import the `Badge`, its necessary CSS, and register its module, like so:
 
@@ -40,7 +40,7 @@ defineComponents(IgcBadgeComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -103,7 +103,7 @@ To display a subtle border around the badge, you can set the `outlined` attribut
 
 ### Variants
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -120,7 +120,7 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/variants">
 </code-view>
 
@@ -143,7 +143,7 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/shape">
 </code-view>
 

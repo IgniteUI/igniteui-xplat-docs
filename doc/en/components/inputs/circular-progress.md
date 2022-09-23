@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Circular Progress | Circular Progress | Infragistics
+title: {Platform} Circular Progress | Circular Progress | Infragistics
 _description: Circular Progress Indicator component allows developers to display progress in a circle with endless customization options.
-_keywords: $Platform$ Circular Progress, $ProductName$, Infragistics
+_keywords: {Platform} Circular Progress, {ProductName}, Infragistics
 mentionedTypes: ['CircularProgress', 'CircularGradient']
 ---
 
-# $Platform$ Circular Progress Overview
-The $ProductName$ Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
+# {Platform} Circular Progress Overview
+The {ProductName} Circular Progress Indicator component provides a visual indicator of an application’s process as it changes. The circular indicator updates its appearance as its state changes.
 
-## $Platform$ Circular Progress Example
+## {Platform} Circular Progress Example
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
-           alt="$Platform$ Circular Progress Example"
+           alt="{Platform} Circular Progress Example"
            github-src="inputs/circular-progress-indicator/simple">
 </code-view>
 
@@ -22,7 +22,7 @@ The $ProductName$ Circular Progress Indicator component provides a visual indica
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +39,7 @@ defineComponents(IgcCircularProgressComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -101,7 +101,7 @@ You can set the type of your indicator, using the  `variant` attribute. There ar
 
 ### Indeterminate Progress
 
-If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the $ProductName$ `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
+If you want to track a process that is not determined precisely, you can set the `indeterminate` property. Also, you can hide the default label of the {ProductName} `CircularProgress` by setting the `hideLabel` property and customize the progress indicator default label via the exposed `labelFormat` property.
 
 ```tsx
 <IgrCircularProgress value="100" indeterminate="true"></IgrCircularProgress>
@@ -120,7 +120,7 @@ The following sample demonstrates the above configuration:
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
-           alt="$Platform$ Circular Progress Indeterminate Example"
+           alt="{Platform} Circular Progress Indeterminate Example"
            github-src="inputs/circular-progress-indicator/indeterminate">
 </code-view>
 
@@ -149,12 +149,12 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
-           alt="$Platform$ Circular Progress Dynamic Example"
+           alt="{Platform} Circular Progress Dynamic Example"
            github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
 >[!NOTE]
->For each `CircularGradient` defined as gradient slot of $ProductName$ `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
+>For each `CircularGradient` defined as gradient slot of {ProductName} `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
 ```tsx
 <IgrCircularProgress >
@@ -187,12 +187,12 @@ Customizing the progress bar in order to use a color gradient instead of a solid
 
 ## Styling
 
-The $ProductName$ Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
+The {ProductName} Circular Procress Indicator component exposes CSS parts for almost all of its inner elements.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
-           alt="$Platform$ Circular Progress Styling"
+           alt="{Platform} Circular Progress Styling"
            github-src="inputs/circular-progress-indicator/styling">
 </code-view>
 

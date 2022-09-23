@@ -1,30 +1,30 @@
 ---
-title: $Platform$ チャート オーバーレイ | データ可視化ツール | 値オーバーレイ | インフラジスティックス
-_description: $ProductName$ チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。$ProductName$ グラフ タイプについて説明します。
-_keywords: $Platform$ charts, data chart, value overlay, $ProductName$, Infragistics, $Platform$ チャート, データ チャート, 値オーバーレイ, インフラジスティックス
+title: {Platform} チャート オーバーレイ | データ可視化ツール | 値オーバーレイ | インフラジスティックス
+_description: {ProductName} チャート コントロールの値オーバーレイ機能を使用して、単一の数値に水平線または垂直線を配置します。{ProductName} グラフ タイプについて説明します。
+_keywords: {Platform} charts, data chart, value overlay, {ProductName}, Infragistics, {Platform} チャート, データ チャート, 値オーバーレイ, インフラジスティックス
 mentionedTypes: ["XamDataChart", "ValueOverlay"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $Platform$ チャートのオーバーレイ
+# {Platform} チャートのオーバーレイ
 
-$Platform$ `XamDataChart` を使用すると、`ValueOverlay` を使用して定義した単一の数値で水平線または垂直線を配置できます。特定のシリーズの平均値や中央値などのデータを視覚化するのに役立ちます。
+{Platform} `XamDataChart` を使用すると、`ValueOverlay` を使用して定義した単一の数値で水平線または垂直線を配置できます。特定のシリーズの平均値や中央値などのデータを視覚化するのに役立ちます。
 
-## $Platform$ 値オーバーレイの例
+## {Platform} 値オーバーレイの例
 
 次の例は、いくつかの水平値オーバーレイがプロットされた[縦棒チャート](../types/column-chart.md)を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$Platform$ 値オーバーレイの例"
+           alt="{Platform} 値オーバーレイの例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 値オーバーレイのプロパティ
+## {Platform} 値オーバーレイのプロパティ
 
 データバインディングに `DataSource` を使用する他のシリーズ タイプとは異なり、値オーバーレイは `ValueMemberPath` プロパティを使用して単一の数値をバインドします。さらに、値オーバーレイでは、使用する単一の `Axis` を定義する必要があります。X 軸を使用する場合、値のオーバーレイは垂直線になり、Y 軸を使用する場合は、水平線になります。
 
@@ -36,9 +36,9 @@ $Platform$ `XamDataChart` を使用すると、`ValueOverlay` を使用して定
 
 `ValueOverlay` に軸注釈を表示して、所有する軸にオーバーレイの値を表示することもできます。これを示すために、`IsAxisAnnotationEnabled` プロパティを true に設定できます。
 
-## $Platform$ ファイナンシャル オーバーレイ
+## {Platform} ファイナンシャル オーバーレイ
 
-$Platform$ [株価チャート](../types/stock-chart.md)に組み込みのファイナンシャル オーバーレイとインジケーターをプロットすることもできます。
+{Platform} [株価チャート](../types/stock-chart.md)に組み込みのファイナンシャル オーバーレイとインジケーターをプロットすることもできます。
 
 ## その他のリソース
 

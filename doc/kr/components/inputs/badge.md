@@ -1,23 +1,23 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Badge component allows you to display content in a predefined style to decorate other components anywhere in an application.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics
 _language: kr
 mentionedTypes: ['Badge']
 ---
 
-# $Platform$ Badge
+# {Platform} Badge
 
-The $ProductName$ Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
+The {ProductName} Badge is a component used in conjunction with avatars, navigation menus, or other components in an application when a visual notification is needed. Badges are usually designed with predefined styles to communicate information, success, warnings, or errors.
 
 <div class="divider"></div>
 
-## $Platform$ Badge Example
+## {Platform} Badge Example
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/outlined">
 </code-view>
 
@@ -37,7 +37,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the badge web component, first you need to install $ProductName$ by typing the following command:
+To get started with the badge web component, first you need to install {ProductName} by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -77,7 +77,7 @@ To display a subtle border around the badge set the `outlined` attribute of the 
 
 ### Variants
 
-The $ProductName$ badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
+The {ProductName} badge supports several pre-defined stylistic variants. You can change the variant by assigning one of the supported values - `primary`(default), `info`, `success`, `warning`, or `danger` to the `variant` attribute.
 
 ```html
 <igc-badge variant="success"></igc-badge>
@@ -90,7 +90,7 @@ The $ProductName$ badge supports several pre-defined stylistic variants. You can
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/variants">
 </code-view>
 
@@ -109,7 +109,7 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge Example"
+           alt="{Platform} Badge Example"
            github-src="inputs/badge/shape">
 </code-view>
 

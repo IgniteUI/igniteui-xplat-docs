@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Accessibility Compliance | Infragistics
-_description: Use Infragistics' $ProductName$ Data Table & Grid to support accessibility feature that will enable screen readers to read "speak" keyboard navigation interactions through the cells and columns of the grid. View $ProductName$ table tutorials!
-_keywords: $Platform$ Table, Data Grid, cell accessibility, $ProductName$, Infragistics
+title: {Platform} Data Grid | Real-Time Data Grid and Tables | Accessibility Compliance | Infragistics
+_description: Use Infragistics' {ProductName} Data Table & Grid to support accessibility feature that will enable screen readers to read "speak" keyboard navigation interactions through the cells and columns of the grid. View {ProductName} table tutorials!
+_keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Accessibility Compliance
+# {Platform} Grid Accessibility Compliance
 
-The $ProductName$ Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid.
+The {ProductName} Data Table / Data Grid supports accessibility and screen readers that interpret keyboard navigation interactions through the cells and columns of the grid.
 
 <!-- React, WebComponents -->
 This is activated by setting the `useAccessibility` property of the grid to **true**.
@@ -18,13 +18,13 @@ This is activated by setting the `useAccessibility` property of the grid to **tr
 This is activated by setting `--use-accessibility` property to **true** explicitly in CSS, preferably using a div tag around the grid.
 <!-- end: Blazor -->
 
-## $Platform$ Grid Accessible Example
+## {Platform} Grid Accessible Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-accessibility"
-           alt="$Platform$ Grid Cell Accessibility Example"
+           alt="{Platform} Grid Cell Accessibility Example"
            github-src="grids/data-grid/accessibility">
 </code-view>
 
@@ -89,7 +89,7 @@ Screen Reader Commands
 
 ## Code Snippet
 
-The following demonstrates how to implement cell accessibility in the  $Platform$ data grid:
+The following demonstrates how to implement cell accessibility in the  {Platform} data grid:
 
 ```tsx
 <IgrDataGrid

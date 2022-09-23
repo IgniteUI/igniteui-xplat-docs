@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 複数のデータ ソースのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データ ソースを地理空間データとオーバーレイすることができます。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding, $Platform$ マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 複数のデータ ソースのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用して、複数の地理的シリーズオブジェクトを追加し、カスタム データ ソースを地理空間データとオーバーレイすることができます。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, geographic series, {ProductName}, Infragistics, data binding, {Platform} マップ, 地理的シリーズ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'SeriesViewer', 'Series']
 _language: ja
 ---
-# $Platform$ 複数データ ソースのバインド
+# {Platform} 複数データ ソースのバインド
 
-$ProductName$ マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
+{ProductName} マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
 
 
-## $Platform$ 複数データ ソースのバインドの例
+## {Platform} 複数データ ソースのバインドの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
-           alt="$Platform$ 複数データ ソースのバインドの例"
+           alt="{Platform} 複数データ ソースのバインドの例"
            github-src="maps/geo-map/binding-multiple-sources">
 </code-view>
 
@@ -32,7 +32,7 @@ $ProductName$ マップでは、カスタム データ ソースを地理空間�
 
 ## データ ソースの作成
 
-$ProductName$ マップに表示するすべての地理的シリーズのデータ​​ソースを作成します。たとえば、[WorldConnections](geo-map-resources-world-connections.md) スクリプトを使用できます。
+{ProductName} マップに表示するすべての地理的シリーズのデータ​​ソースを作成します。たとえば、[WorldConnections](geo-map-resources-world-connections.md) スクリプトを使用できます。
 
 
 ```html
@@ -116,7 +116,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## フライトのオーバーレイ
 
-主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、$ProductName$ マップの Series コレクションに追加します。
+主要空港間のフライト接続を持つ最初の `GeographicPolylineSeries` オブジェクトを作成し、{ProductName} マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-polyline-series  #polylineSeries
@@ -177,7 +177,7 @@ this.geoMap.series.add(gridSeries);
 
 ## 空港のオーバーレイ
 
-空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを $ProductName$ 地理マップの Series コレクションに追加します。
+空港ポイントを使用して `GeographicSymbolSeries` オブジェクトを作成し、それを {ProductName} 地理マップの Series コレクションに追加します。
 
 ```html
 <igx-geographic-symbol-series  #symbolSeries

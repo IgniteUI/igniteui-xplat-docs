@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | 水平方向スクロール | インフラジスティックス
-_description: Infragistics のグリッド コンポーネントの水平方向スクロール機能を使用して、列をシームレスにスクロールします。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
+title: {Platform} データ グリッド | 水平方向スクロール | インフラジスティックス
+_description: Infragistics のグリッド コンポーネントの水平方向スクロール機能を使用して、列をシームレスにスクロールします。{ProductName} テーブルのサンプルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ 水平方向のスクロール
+# {Platform} 水平方向のスクロール
 
-$ProductName$ Data Table / Data Grid は、$Platform$ データ グリッドの幅より大きい列の合計幅を設定することにより Horizontal Scrolling を有効にできます。
+{ProductName} Data Table / Data Grid は、{Platform} データ グリッドの幅より大きい列の合計幅を設定することにより Horizontal Scrolling を有効にできます。
 
-## $Platform$ 水平方向のスクロールの例
+## {Platform} 水平方向のスクロールの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
-           alt="$Platform$ 水平方向のスクロールの例"
+           alt="{Platform} 水平方向のスクロールの例"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 

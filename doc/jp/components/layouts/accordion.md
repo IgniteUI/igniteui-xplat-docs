@@ -1,34 +1,34 @@
 ---
-title: $Platform$ Accordion | アコーディオン | インフラジスティックス
+title: {Platform} Accordion | アコーディオン | インフラジスティックス
 _description: アコーディオンは、アコーディオン メニューで垂直方向に展開可能なパネルを構築するために使用されます。
-_keywords: $Platform$ Accordion, $ProductName$, Infragistics, $Platform$ アコーディオン, インフラジスティックス
+_keywords: {Platform} Accordion, {ProductName}, Infragistics, {Platform} アコーディオン, インフラジスティックス
 mentionedTypes: ['Accordion', 'ExpansionPanel']
 _language: ja
 ---
 
-# $Platform$ Accordion (アコーディオン) の概要
-$ProductName$ アコーディオンは、単一のコンテナーに表示されるクリック可能なヘッダーと関連するコンテンツ セクションを含む垂直方向に展開可能なパネルを構築するための GUI コンポーネントです。Accordion は、単一のページのコンテンツの複数のセクションでスクロールする必要性を軽減するためによく使用されます。キーボード ナビゲーションと基になるパネルの展開状態を制御する API を提供します。 
+# {Platform} Accordion (アコーディオン) の概要
+{ProductName} アコーディオンは、単一のコンテナーに表示されるクリック可能なヘッダーと関連するコンテンツ セクションを含む垂直方向に展開可能なパネルを構築するための GUI コンポーネントです。Accordion は、単一のページのコンテンツの複数のセクションでスクロールする必要性を軽減するためによく使用されます。キーボード ナビゲーションと基になるパネルの展開状態を制御する API を提供します。
 
-ユーザーは、サムネイルやラベルなどの項目のリスト間で操作および移動できます。含まれる情報を表示するために、各項目を切り替えることができます (展開または縮小)。構成に応じて、一度に 1 つまたは複数の展開されている項目があります。 
+ユーザーは、サムネイルやラベルなどの項目のリスト間で操作および移動できます。含まれる情報を表示するために、各項目を切り替えることができます (展開または縮小)。構成に応じて、一度に 1 つまたは複数の展開されている項目があります。
 
-## $Platform$ アコーディオンの例
-以下は FAQ セクションの基本的な $ProductName$ アコーディオンの例です。アコーディオンとして動作し、個別に動作します。複数のパネルを同時に展開しながら、各テキスト ブロックをシングル クリックで切り替えることができます。これにより、自動的に展開および縮小パネル間を前後に移動することなく、情報をより簡単に読み取ることができます。このパネルは、以前に開いたセクションを毎回非表示にします。 
+## {Platform} アコーディオンの例
+以下は FAQ セクションの基本的な {ProductName} アコーディオンの例です。アコーディオンとして動作し、個別に動作します。複数のパネルを同時に展開しながら、各テキスト ブロックをシングル クリックで切り替えることができます。これにより、自動的に展開および縮小パネル間を前後に移動することなく、情報をより簡単に読み取ることができます。このパネルは、以前に開いたセクションを毎回非表示にします。
 
 その中で、アコーディオンとその展開パネルを定義する方法を見ることができます。このサンプルは、2 種類の展開動作も示します。切り替えボタンは `singleExpand` プロパティを設定し、一度に展開する単一ブランチと複数ブランチを切り替えます。
 
 <code-view style="height: 460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-overview"
-           alt="$Platform$ アコーディオンの例"
+           alt="{Platform} アコーディオンの例"
            github-src="layouts/accordion/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ アコーディオンで作業を開始
+## {Platform} アコーディオンで作業を開始
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -47,7 +47,7 @@ defineComponents(IgcAccordionComponent);
 
 ## 使用方法
 
-$Platform$ アコーディオン コンポーネントの各セクションは、$Platform$ 展開パネルを使用して定義されます。
+{Platform} アコーディオン コンポーネントの各セクションは、{Platform} 展開パネルを使用して定義されます。
 パネルには、`disabled` および `open` プロパティが用意されており、要件に応じてパネルの状態を構成できます。
 
 ### Accordion の宣言
@@ -60,14 +60,14 @@ $Platform$ アコーディオン コンポーネントの各セクションは�
         <div slot="title">Title Panel 1</div>
         <div>
             Content Panel 1
-        </div>        
+        </div>
     </igc-expansion-panel>
     <igc-expansion-panel>
         <div slot="title">Title Panel 2</div>
         <div>
             Content Panel 2
-        </div>        
-    </igc-expansion-panel>        
+        </div>
+    </igc-expansion-panel>
 </igx-accordion>
 ```
 
@@ -89,26 +89,26 @@ constructor() {
 
 > 注: `singleExpand` プロパティが *true* に設定されている場合、`showAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
 
-### $Platform$ アコーディオンのカスタマイズの例
-$Platform$ アコーディオンを使用すると、ヘッダーとコンテンツ パネルの外観をカスタマイズできます。 
+### {Platform} アコーディオンのカスタマイズの例
+{Platform} アコーディオンを使用すると、ヘッダーとコンテンツ パネルの外観をカスタマイズできます。
 以下のサンプルは、`ExpansionPanel` の組み込みスロットを使用して、複雑なフィルタリング オプションを実装する方法を示しています。
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-customization"
-           alt="$Platform$ アコーディオンのカスタマイズの例"
+           alt="{Platform} アコーディオンのカスタマイズの例"
            github-src="layouts/accordion/customization">
 </code-view>
 
 <div class="divider--half"></div>
 
-### ネストされた $Platform$ アコーディオンのシナリオ
-次の $Platform$ アコーディオンの例では、この一般的なアプリケーション シナリオにどのように取り組むことができるかを説明するために、複雑な FAQ セクションが作成されています。サンプルでは、ネストされたアコーディオンは、展開パネル内に `Accordion` を追加することによって実現されます。
+### ネストされた {Platform} アコーディオンのシナリオ
+次の {Platform} アコーディオンの例では、この一般的なアプリケーション シナリオにどのように取り組むことができるかを説明するために、複雑な FAQ セクションが作成されています。サンプルでは、ネストされたアコーディオンは、展開パネル内に `Accordion` を追加することによって実現されます。
 
 <code-view style="height: 550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/accordion-nested-scenario"
-           alt="ネストされた $Platform$ アコーディオンの例"
+           alt="ネストされた {Platform} アコーディオンの例"
            github-src="layouts/accordion/nested-scenario">
 </code-view>
 
@@ -116,7 +116,7 @@ $Platform$ アコーディオンを使用すると、ヘッダーとコンテン
 
 ## キーボード ナビゲーション
 
-$Platform$ アコーディオンのキーボード ナビゲーションは、エンド ユーザーにさまざまなキーボード操作を提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にパネル間を移動できます。
+{Platform} アコーディオンのキーボード ナビゲーションは、エンド ユーザーにさまざまなキーボード操作を提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にパネル間を移動できます。
 アコーディオン ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすいです。
 
 **キーの組み合わせ**

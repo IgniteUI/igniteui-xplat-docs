@@ -1,14 +1,14 @@
 ---
-title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
-_description: $ProductName$ の新機能について学んでください。
-_keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
+title: {Platform} 新機能 | {ProductName} | インフラジスティックス
+_description: {ProductName} の新機能について学んでください。
+_keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ 変更ログ
+# {ProductName} 変更ログ
 
-$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
+{ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
 <!-- Angular -->
 
@@ -47,7 +47,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### {PackageDockManager}
 
-* $Platform$ ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
+* {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
 
 ### {PackageGrids}
 
@@ -78,7 +78,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 - 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
-#### 日付ピッカー 
+#### 日付ピッカー
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス
@@ -88,7 +88,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
-> **Igb** プレフィックスは $ProductName$ のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは {ProductName} のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
 > たとえば、``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 
@@ -301,7 +301,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <div class="divider--half"></div>
 
-## **2.0.0** 
+## **2.0.0**
 ### (*) {PackageComponents}
 #### 新しいコンポーネントとテーマ
 
@@ -342,7 +342,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### {PackageInputs}
 
-#### 日付選択 
+#### 日付選択
 - ValueChanged イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボ ボックス

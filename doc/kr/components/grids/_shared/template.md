@@ -1,7 +1,7 @@
 ---
 title: Batch Editing and Transactions in {Platform} {ComponentTitle} - Infragistics
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: $Platform$, {ComponentTitle}, {ComponentName}, $ProductName$, Infragistics
+_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]

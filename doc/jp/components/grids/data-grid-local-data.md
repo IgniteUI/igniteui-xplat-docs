@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | ローカル データ ソースのバインディング | インフラジスティックス
-_description: Infragistics のグリッド コントロールを使用してデータの配列にバインドします。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $Platform$ Table, Data Grid, binding to data, $ProductName$, Infragistics, data binding, $Platform$ テーブル, データ グリッド, データへのバインド, データ バインディング, インフラジスティックス
+title: {Platform} データ グリッド | ローカル データ ソースのバインディング | インフラジスティックス
+_description: Infragistics のグリッド コントロールを使用してデータの配列にバインドします。{ProductName} を使用したデータの表示方法について説明します。
+_keywords: {Platform} Table, Data Grid, binding to data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, データへのバインド, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ ローカル データのバインディング
+# {Platform} ローカル データのバインディング
 
-次のサンプルは、データの配列への $ProductName$ Data Table / Data Grid データ バインディングを示します。
+次のサンプルは、データの配列への {ProductName} Data Table / Data Grid データ バインディングを示します。
 
-## $Platform$ ローカル データのバインディングの例
+## {Platform} ローカル データのバインディングの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-local-data"
-           alt="$Platform$ ローカル データのバインディングの例"
+           alt="{Platform} ローカル データのバインディングの例"
            github-src="grids/data-grid/binding-local-data">
 </code-view>
 

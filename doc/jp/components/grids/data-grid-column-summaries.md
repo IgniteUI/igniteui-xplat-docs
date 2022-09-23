@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | 列集計 | インフラジスティックス
-_description: Infragistics のグリッド コンポーネントの列集計機能を使用して、件数、最大値、最小値などの集計データを表示します。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, column, summaries, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, 集計, インフラジスティックス
+title: {Platform} データ グリッド | 列集計 | インフラジスティックス
+_description: Infragistics のグリッド コンポーネントの列集計機能を使用して、件数、最大値、最小値などの集計データを表示します。{ProductName} テーブルのサンプルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, column, summaries, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, 集計, インフラジスティックス
 mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ 列集計
+# {Platform} 列集計
 
-$ProductName$ Data Table / Data Grid は、列集計をサポートしています。エンドユーザーは、グリッドに表示されるデータ量が多い場合などでデータ集計の表示を必要とすることがあります。エンドユーザーは、特定の列のデータから追加情報を取得することもできます。これを実現するには集計が役立ちます。集計を有効にするには、`SummaryScope` プロパティを設定します。
+{ProductName} Data Table / Data Grid は、列集計をサポートしています。エンドユーザーは、グリッドに表示されるデータ量が多い場合などでデータ集計の表示を必要とすることがあります。エンドユーザーは、特定の列のデータから追加情報を取得することもできます。これを実現するには集計が役立ちます。集計を有効にするには、`SummaryScope` プロパティを設定します。
 
-## $Platform$ 列集計の例
+## {Platform} 列集計の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-summaries"
-           alt="$Platform$ 列集計の例"
+           alt="{Platform} 列集計の例"
            github-src="grids/data-grid/column-summaries">
 </code-view>
 

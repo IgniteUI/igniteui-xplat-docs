@@ -1,28 +1,28 @@
 ---
-title: $Platform$ スライダーと範囲スライダー コンポーネント | $ProductName$
-_description: $ProductName$ の $Platform$ スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ スライダー コンポーネント, インフラジスティックス
+title: {Platform} スライダーと範囲スライダー コンポーネント | {ProductName}
+_description: {ProductName} の {Platform} スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} スライダー コンポーネント, インフラジスティックス
 mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
 _language: ja
 ---
 
-# $Platform$ Slider & Range Slider (スライダーと範囲スライダー) の概要
+# {Platform} Slider & Range Slider (スライダーと範囲スライダー) の概要
 
-$Platform$ スライダーと範囲スライダー コンポーネントを使用すると、つまみをトラックに沿って動かすことで、特定の範囲を選択できます。トラックを連続またはステップに定義でき、単一または範囲スライダーのどちらかを選択できます。
+{Platform} スライダーと範囲スライダー コンポーネントを使用すると、つまみをトラックに沿って動かすことで、特定の範囲を選択できます。トラックを連続またはステップに定義でき、単一または範囲スライダーのどちらかを選択できます。
 
-## $Platform$ スライダーと範囲スライダーの例
+## {Platform} スライダーと範囲スライダーの例
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-overview"
-           alt="$Platform$ Slider の例"
+           alt="{Platform} Slider の例"
            github-src="inputs/slider/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +39,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -86,12 +86,12 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 
 スライダーと範囲スライダー コンポーネントの主な違いは、スライダー コンポーネントには単一のつまみがあり、範囲スライダー コンポーネントには 2 つのつまみがあることです。スライダー コンポーネントの単一のつまみで、その `Value` プロパティが表示されます。範囲スライダー コンポーネントの 2 つのつまみは、`Lower` 値と `Upper` 値のプロパティを表示します。
 
-いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`igcInput` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
+いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`Input` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value"
-           alt="$Platform$ Slider Value の例"
+           alt="{Platform} Slider Value の例"
            github-src="inputs/slider/value">
 </code-view>
 
@@ -104,7 +104,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-disabled"
-           alt="$Platform$ Slider Disabled の例"
+           alt="{Platform} Slider Disabled の例"
            github-src="inputs/slider/disabled">
 </code-view>
 
@@ -115,7 +115,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-constraints"
-           alt="$Platform$ Slider 制約の例"
+           alt="{Platform} Slider 制約の例"
            github-src="inputs/slider/constraints">
 </code-view>
 
@@ -126,7 +126,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-discrete"
-           alt="$Platform$ Slider Discrete Track の例"
+           alt="{Platform} Slider Discrete Track の例"
            github-src="inputs/slider/discrete">
 </code-view>
 
@@ -139,7 +139,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-ticks"
-           alt="$Platform$ Slider Tick Marks の例"
+           alt="{Platform} Slider Tick Marks の例"
            github-src="inputs/slider/ticks">
 </code-view>
 
@@ -150,7 +150,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-tick-labels"
-           alt="$Platform$ Slider Tick Mark Labels の例"
+           alt="{Platform} Slider Tick Mark Labels の例"
            github-src="inputs/slider/tick-labels">
 </code-view>
 
@@ -161,7 +161,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value-format"
-           alt="$Platform$ Slider Value Format の例"
+           alt="{Platform} Slider Value Format の例"
            github-src="inputs/slider/value-format">
 </code-view>
 
@@ -172,7 +172,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
-           alt="$Platform$ Slider Labels の例"
+           alt="{Platform} Slider Labels の例"
            github-src="inputs/slider/labels">
 </code-view>
 
@@ -202,7 +202,7 @@ IgbRangeSliderModule.Register(IgniteUIBlazor);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-styling"
-           alt="$Platform$ Slider スタイル設定の例"
+           alt="{Platform} Slider スタイル設定の例"
            github-src="inputs/slider/styling">
 </code-view>
 

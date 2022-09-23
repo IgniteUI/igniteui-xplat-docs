@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Spreadsheet Component – Ignite UI for $Platform$
-_description: Get flexible layouts, easy customization options & convenient Excel-like interface with Ignite UI for $Platform$ Spreadsheet. Manage tabular data the way you want!
-_keywords: Excel Spreadsheet, $ProductName$, Infragistics
+title: {Platform} Spreadsheet Component – Ignite UI for {Platform}
+_description: Get flexible layouts, easy customization options & convenient Excel-like interface with Ignite UI for {Platform} Spreadsheet. Manage tabular data the way you want!
+_keywords: Excel Spreadsheet, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $Platform$ Spreadsheet Overview
+# {Platform} Spreadsheet Overview
 
-The $Platform$ Spreadsheet  (Excel viewer) component is lightweight, feature-rich and supplied with all the necessary options for operating, visualizing, and editing all types of spreadsheet data – scientific, business, financial, and more. All the information can be presented in a tabular format that feels intuitive and easy to navigate across cells, panes, and worksheets. The `Spreadsheet` is complemented by flexible Excel-like interface, detailed charts, and features such as activation, cell editing, conditional formatting, styling, selection, clipboard.
+The {Platform} Spreadsheet  (Excel viewer) component is lightweight, feature-rich and supplied with all the necessary options for operating, visualizing, and editing all types of spreadsheet data – scientific, business, financial, and more. All the information can be presented in a tabular format that feels intuitive and easy to navigate across cells, panes, and worksheets. The `Spreadsheet` is complemented by flexible Excel-like interface, detailed charts, and features such as activation, cell editing, conditional formatting, styling, selection, clipboard.
 
-## $Platform$ Spreadsheet Example
+## {Platform} Spreadsheet Example
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="$Platform$ Spreadsheet Example"
+           alt="{Platform} Spreadsheet Example"
            github-src="excel/spreadsheet/overview">
 </code-view>
 
@@ -52,7 +52,7 @@ With our spreadsheet, processing data is 100% safe and secure…
 With the built-in Excel import/export functionality, you can instantly load and open Excel documents and view them on-demand, add changes and save them. Also, effortlessly export your completed Excel .xlsx spreadsheets.
 
 ## Dependencies
-When installing the $Platform$ spreadsheet component, the core and excel package must also be installed.
+When installing the {Platform} spreadsheet component, the core and excel package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -110,7 +110,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## Usage
-Now that the $Platform$ spreadsheet module is imported, next is the basic configuration of the spreadsheet.
+Now that the {Platform} spreadsheet module is imported, next is the basic configuration of the spreadsheet.
 
 ```html
 <igx-spreadsheet #spreadsheet height="500px" width="100%">
@@ -126,7 +126,7 @@ Now that the $Platform$ spreadsheet module is imported, next is the basic config
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
-The following demonstrates how to load a workbook into the $Platform$ spreadsheet
+The following demonstrates how to load a workbook into the {Platform} spreadsheet
 
 ```ts
 import { IgxSpreadsheetComponent } from 'igniteui-angular-spreadsheet';

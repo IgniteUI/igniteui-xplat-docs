@@ -1,23 +1,23 @@
 ---
-title: $Platform$ NavDrawer | Infragistics
-_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} NavDrawer | Infragistics
+_description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 mentionedTypes: ['NavDrawer']
 ---
 
-# $Platform$ Navigation Drawer Overview
+# {Platform} Navigation Drawer Overview
 
-The $ProductName$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The {ProductName} Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 
-## $Platform$ Navigation Drawer Example
+## {Platform} Navigation Drawer Example
 
 This sample demonstrates how to create `NavDrawer` component.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
@@ -25,7 +25,7 @@ This sample demonstrates how to create `NavDrawer` component.
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -35,7 +35,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -136,7 +136,7 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
@@ -350,7 +350,7 @@ If all goes well, your component should now look like this:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar Example"
+           alt="{Platform} Navigation Drawer Navbar Example"
            github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
 
@@ -422,12 +422,12 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="home" collection="material"/>
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="search" collection="material" />
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
@@ -438,7 +438,7 @@ And here's the result:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini Example"
+           alt="{Platform} Navigation Drawer Mini Example"
            github-src="menus/nav-drawer/add-mini">
 </code-view>
 
@@ -472,7 +472,7 @@ igc-nav-drawer-header-item {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer Styling Example"
+           alt="{Platform} Navigation Drawer Styling Example"
            github-src="menus/nav-drawer/styling">
 </code-view>
 

@@ -1,29 +1,29 @@
 ---
-title: $Platform$ Dropdown コンポーネント | $ProductName$
-_description: インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示します。今すぐ $ProductName$ のドロップダウン コンポーネントの使用を開始しましょう。
-_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ ドロップダウン コンポーネント, インフラジスティックス
+title: {Platform} Dropdown コンポーネント | {ProductName}
+_description: インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示します。今すぐ {ProductName} のドロップダウン コンポーネントの使用を開始しましょう。
+_keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ドロップダウン コンポーネント, インフラジスティックス
 mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
 _language: ja
 ---
 
-# $Platform$ Dropdown (ドロップダウン) の概要
+# {Platform} Dropdown (ドロップダウン) の概要
 
 
-$Platform$ ドロップダウンは、事前定義された値の切り替え可能なリストを表示し、ユーザーがクリックするだけで単一のオプション項目を簡単に選択できるようにするコンポーネントです。ドロップダウン メニューとして機能するようにすばやく構成することも、データをグループ化することでより有用な視覚情報を提供するために使用することもできます。グループ化を使用すると、フラット データと階層データの両方を使用できます。
+{Platform} ドロップダウンは、事前定義された値の切り替え可能なリストを表示し、ユーザーがクリックするだけで単一のオプション項目を簡単に選択できるようにするコンポーネントです。ドロップダウン メニューとして機能するようにすばやく構成することも、データをグループ化することでより有用な視覚情報を提供するために使用することもできます。グループ化を使用すると、フラット データと階層データの両方を使用できます。
 
-## $Platform$ Dropdown の例
+## {Platform} Dropdown の例
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
-           alt="$Platform$ Dropdown の例"
+           alt="{Platform} Dropdown の例"
            github-src="inputs/dropdown/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +41,7 @@ defineComponents(IgcDropdownComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -84,7 +84,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-target"
-           alt="$Platform$ Dropdown Target の例"
+           alt="{Platform} Dropdown Target の例"
            github-src="inputs/dropdown/target">
 </code-view>
 
@@ -95,7 +95,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
-           alt="$Platform$ Dropdown Position の例"
+           alt="{Platform} Dropdown Position の例"
            github-src="inputs/dropdown/position">
 </code-view>
 
@@ -110,7 +110,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
-           alt="$Platform$ Dropdown Item の例"
+           alt="{Platform} Dropdown Item の例"
            github-src="inputs/dropdown/item">
 </code-view>
 
@@ -121,7 +121,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-header"
-           alt="$Platform$ Dropdown Header の例"
+           alt="{Platform} Dropdown Header の例"
            github-src="inputs/dropdown/header">
 </code-view>
 
@@ -132,7 +132,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
-           alt="$Platform$ Dropdown Group の例"
+           alt="{Platform} Dropdown Group の例"
            github-src="inputs/dropdown/group">
 </code-view>
 
@@ -151,7 +151,7 @@ IgbDropdownModule.Register(IgniteUIBlazor);
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
-           alt="$Platform$ Dropdown Styling の例"
+           alt="{Platform} Dropdown Styling の例"
            github-src="inputs/dropdown/styling">
 </code-view>
 

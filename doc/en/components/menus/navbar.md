@@ -1,30 +1,30 @@
 ---
-title: $Platform$ Navbar | Infragistics
-_description: Infragistics' $Platform$ navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  $Platform$!
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} Navbar | Infragistics
+_description: Infragistics' {Platform} navbar provides optimal UI experience with seamless integration to allow users to move within an application smoothly. Improve your application with Ignite UI for  {Platform}!
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 mentionedTypes: ['Navbar']
 ---
 
-# $Platform$ Navbar Overview
+# {Platform} Navbar Overview
 
-The $ProductName$ Navbar informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
+The {ProductName} Navbar informs the user of their current position in an app. The Navigation Bar can also provide links to quick actions such as search or favorite, helping users navigate smoothly through an application without trying to move to invalid routes or states. The bar sits at the top of the container it is placed in.
 
 
-## $Platform$ Navbar Example
+## {Platform} Navbar Example
 
 The following example represents a `Navbar` with icons and text header:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar Overview Example"
+           alt="{Platform} Navbar Overview Example"
            github-src="menus/nav-bar/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -55,7 +55,7 @@ You will also need to link an additional CSS file to apply the styling to the `N
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -99,7 +99,7 @@ You can added some `Icon` elements using the `Start` and `End` slots to the`Navb
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar Styling Example"
+           alt="{Platform} Navbar Styling Example"
            github-src="menus/nav-bar/overview">
 </code-view>
 
@@ -136,7 +136,7 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="$Platform$ Navbar Styling Example"
+           alt="{Platform} Navbar Styling Example"
            github-src="menus/nav-bar/styling">
 </code-view>
 

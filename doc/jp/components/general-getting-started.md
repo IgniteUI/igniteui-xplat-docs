@@ -1,10 +1,10 @@
 ---
-title: 作業の開始 | $ProductName$ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
-_keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
+title: 作業の開始 | {ProductName} | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
+_keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
-# $ProductName$ を使用した作業の開始
+# {ProductName} を使用した作業の開始
 
 <!-- React -->
 
@@ -191,7 +191,7 @@ npm run build
 
 ## 既存アプリの更新
 
-既存の $Platform$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
+既存の {Platform} CLI プロジェクト (以前のもの) で {ProductName} を使用する場合は、以下のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -213,7 +213,7 @@ yarn add {PackageMaps} {PackageCore}
 yarn add {PackageSpreadsheet} {PackageCore}
 </pre>
 
-これにより、$ProductName$ のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
+これにより、{ProductName} のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
 
 ## モジュールのインポート
 
@@ -248,7 +248,7 @@ ModuleManager.register(
 
 ## コンポーネントの使用
 
-マークアップに $ProductName$ マップ コンポーネントを使用する準備が整いました。以下のように定義します。
+マークアップに {ProductName} マップ コンポーネントを使用する準備が整いました。以下のように定義します。
 
 ```tsx
 // App.txs
@@ -282,7 +282,7 @@ render() {
 npm run-script start
 </pre>
 
-コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで $ProductName$ コンポーネントを使用できるようになります。
+コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。
 
 以下の画像は、上記を実行した結果です。
 

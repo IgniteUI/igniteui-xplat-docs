@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Map | Shape Map Resources | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $Platform$ map, shape styling, conditional formatting, $ProductName$, Infragistics
+title: {Platform} Map | Shape Map Resources | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to load geo-spatial data from shape files. View {ProductName} map demos!
+_keywords: {Platform} map, shape styling, conditional formatting, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $Platform$ Shape Styling Utility
+# {Platform} Shape Styling Utility
 
-The resource topic provides implementation of an utility that helps with styling UI elements of `GeographicShapeSeries` in $Platform$ `XamGeographicMap` component.
+The resource topic provides implementation of an utility that helps with styling UI elements of `GeographicShapeSeries` in {Platform} `XamGeographicMap` component.
 
 ## Required Imports
 

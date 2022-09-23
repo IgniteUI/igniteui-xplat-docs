@@ -1,27 +1,27 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Displaying Bing Imagery | Infragistics
-_description: Use Infragistics' $Platform$ to display imagery from Microsoft Bing Maps. View $ProductName$ map tutorials!
-_keywords: $Platform$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background
+title: {Platform} Map | Data Visualization Tools | Displaying Bing Imagery | Infragistics
+_description: Use Infragistics' {Platform} to display imagery from Microsoft Bing Maps. View {ProductName} map tutorials!
+_keywords: {Platform} map, bing maps, {ProductName}, Infragistics, imagery tile source, map background
 mentionedTypes: ['XamGeographicMap', 'BingMapsMapImagery']
 ---
-# $Platform$ Displaying Imagery from Bing Maps
+# {Platform} Displaying Imagery from Bing Maps
 
-The $Platform$ `BingMapsMapImagery` is geographic imagery mapping service provided by Microsoft® company. It provides 3 styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> web site. The $ProductName$ map component can display geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class.
+The {Platform} `BingMapsMapImagery` is geographic imagery mapping service provided by Microsoft® company. It provides 3 styles of geographic imagery tiles of the world. This geographic imagery service is accessible directly on the <a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> web site. The {ProductName} map component can display geographic imagery from Bing Maps in the map’s background content using the `BingMapsMapImagery` class.
 
-## $Platform$ Displaying Imagery from Bing Maps Example
+## {Platform} Displaying Imagery from Bing Maps Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
-           alt="$Platform$ Displaying Imagery from Bing Maps Example"
+           alt="{Platform} Displaying Imagery from Bing Maps Example"
            github-src="maps/geo-map/display-bing-imagery">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Code Snippet
-The following code snippet shows how to display geographic imagery tiles from Bing Maps in $Platform$ `XamGeographicMap` using `BingMapsMapImagery` class.
+The following code snippet shows how to display geographic imagery tiles from Bing Maps in {Platform} `XamGeographicMap` using `BingMapsMapImagery` class.
 
 ```html
 <igx-geographic-map #map

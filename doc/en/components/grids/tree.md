@@ -1,23 +1,23 @@
 ---
-title: $Platform$ Tree Component | Infragistics
-_description: Infragistics' $Platform$ Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ Tree, Item Tree, overview, $ProductName$, Infragistics
+title: {Platform} Tree Component | Infragistics
+_description: Infragistics' {Platform} Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how {ProductName} can help you better display your data!
+_keywords: {Platform} Tree, Item Tree, overview, {ProductName}, Infragistics
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 ---
 
-# $Platform$ Tree Overview
+# {Platform} Tree Overview
 
-The $ProductName$ Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
+The {ProductName} Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
 
-## $Platform$ Tree Example
+## {Platform} Tree Example
 
-In this basic $ProductName$ Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
+In this basic {ProductName} Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="$Platform$ Tree Example"
+           alt="{Platform} Tree Example"
            github-src="grids/tree/basic-example">
 </code-view>
 
@@ -27,7 +27,7 @@ In this basic $ProductName$ Tree example, you can see how to define a tree and i
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -44,7 +44,7 @@ defineComponents(IgcTreeComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -169,7 +169,7 @@ In order to render a tree you do not necessarily need a data set - individual it
     </IgrTreeItem>
     <IgrTreeItem label='South America'>
         <IgrTreeItem label='Brazil' />
-        <IgrTreeItem label='Uruguay' />                        
+        <IgrTreeItem label='Uruguay' />
     </IgrTreeItem>
     <IgrTreeItem label='Europe'>
         <IgrTreeItem label='United Kingdom' />
@@ -191,9 +191,9 @@ The `Tree` provides the following API methods for item interactions:
 - `select` - selects all items. If an items array is passed, selects only the specified items. Does not emit `Selection` event.
 - `deselect` - deselects all items. If an items array is passed, deselects only the specified items. Does not emit `Selection` event.
 
-## $Platform$ Tree Selection
+## {Platform} Tree Selection
 
-In order to setup item selection in the $ProductName$ Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+In order to setup item selection in the {ProductName} Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
 
@@ -265,14 +265,14 @@ When selection is enabled, end-user selection of items is only allowed through t
 
 <!-- WebComponents -->
 
-## $Platform$ Tree Load On Demand
+## {Platform} Tree Load On Demand
 
-The $ProductName$ Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
+The {ProductName} Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="$Platform$ Tree Load On Demand Example"
+           alt="{Platform} Tree Load On Demand Example"
            github-src="grids/tree/load-on-demand">
 </code-view>
 

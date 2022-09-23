@@ -1,17 +1,17 @@
 ---
-title: $Platform$ Bar Chart and Graph | $ProductName$
-_description: $Platform$ Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
-_keywords: $Platform$ Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
+title: {Platform} Bar Chart and Graph | {ProductName}
+_description: {Platform} Bar Chart is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories. Try for FREE.
+_keywords: {Platform} Charts, Bar Chart, Bar Graph, Horizontal Chart, Infragistics
 _language: kr
 mentionedTypes: ["XamDataChart", "BarSeries", "StackedBarSeries", "Stacked100BarSeries"]
 ---
-# $Platform$ Bar Chart
+# {Platform} Bar Chart
 
-The $ProductName$ Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but different lengths. This chart is ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down)
+The {ProductName} Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the most common category chart types used to quickly compare frequency, count, total, or average of data in different categories with data encoded by horizontal bars with equal heights but different lengths. This chart is ideal for showing variations in the value of an item over time. Data is represented using a collection of rectangles that extend from the left to right of the chart towards the values of data points. Bar Chart is very similar to [Column Chart](column-chart.md) except that Bar Chart renders with 90 degrees clockwise rotation and therefore it has horizontal orientation (left to right) while [Column Chart](column-chart.md) has vertical orientation (up and down)
 
-## $Platform$ Bar Chart Example
+## {Platform} Bar Chart Example
 
-The $Platform$ Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
+The {Platform} Category Bar Chart groups data items from multiple data sources into categories and renders them as horizontal bars or rectangles. Values are represented on the X-Axis and categories are displayed on the Y-Axis.
 
 You can create this type of chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
 
@@ -19,16 +19,16 @@ You can create this type of chart in the `XamDataChart` control by binding your 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="$Platform$ Bar Chart Multiple Sources" >
+           alt="{Platform} Bar Chart Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Bar Chart Recommendations
 
-### Are $Platform$ Bar Charts right for your project?
+### Are {Platform} Bar Charts right for your project?
 
-$Platform$ Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
+{Platform} Bar Chart includes several variants based on your data or how you want to tell the correct story with your data. These include:
 
 - Grouped Bar Chart
 - Stacked Bar Chart
@@ -74,7 +74,7 @@ These use cases are commonly used for the following scenarios:
 
 <div class="divider--half"></div>
 
-## $Platform$ Bar Chart with Single Series
+## {Platform} Bar Chart with Single Series
 
 Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points. You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries`, as shown in the example below:
 
@@ -82,12 +82,12 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
            github-src="charts/data-chart/bar-chart-single-source"
-           alt="$Platform$ Bar Chart with Single Source" >
+           alt="{Platform} Bar Chart with Single Source" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Bar Chart with Multiple Series
+## {Platform} Bar Chart with Multiple Series
 
 The Bar Chart is able to render multiple bars per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular movie franchises. You can create this type of chart in the `XamDataChart` control by binding your data to multiple `BarSeries`, as shown in the example below:
 
@@ -95,12 +95,12 @@ The Bar Chart is able to render multiple bars per category for comparison purpos
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
            github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="$Platform$ Bar Chart with Multiple Sources" >
+           alt="{Platform} Bar Chart with Multiple Sources" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Bar Chart Styling
+## {Platform} Bar Chart Styling
 
 The Bar Chart can be styled, and allows for the ability to use [annotation values](../features/chart-annotations.md) for each bar, for example, to demonstrate percent comparisons. You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries` and adding a `CalloutLayer`, as shown in the example below:
 
@@ -108,12 +108,12 @@ The Bar Chart can be styled, and allows for the ability to use [annotation value
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
            github-src="charts/data-chart/bar-chart-styling"
-           alt="$Platform$ Bar Chart Styling" >
+           alt="{Platform} Bar Chart Styling" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Stacked Bar Chart
+## {Platform} Stacked Bar Chart
 
 A Stacked Bar Chart, or Stacked Bar Graph, is a type of category chart that is used to compare the composition of different categories of data by displaying different sized fragments in the horizontal bars of the chart. The length of each bar, or stack of fragments, is proportionate to its overall value.
 
@@ -125,14 +125,14 @@ You can create this type of chart in the `XamDataChart` control by binding your 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
            github-src="charts/data-chart/stacked-bar-chart"
-           alt="$Platform$ Stacked Bar Chart" >
+           alt="{Platform} Stacked Bar Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Stacked 100% Bar Chart
+## {Platform} Stacked 100% Bar Chart
 
-The $Platform$ Stacked 100% Bar Chart is identical to the $Platform$ Stacked Bar Chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
+The {Platform} Stacked 100% Bar Chart is identical to the {Platform} Stacked Bar Chart in all aspects except in their treatment of the values on X-Axis (bottom labels of the chart). Instead of presenting a direct representation of the data, the stacked 100 bar chart presents the data in terms of percent of the sum of all values in a data point.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below:
 
@@ -140,7 +140,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
            github-src="charts/data-chart/stacked-100-bar-chart"
-           alt="$Platform$ Stacked 100 Bar Chart" >
+           alt="{Platform} Stacked 100 Bar Chart" >
 </code-view>
 
 <div class="divider--half"></div>

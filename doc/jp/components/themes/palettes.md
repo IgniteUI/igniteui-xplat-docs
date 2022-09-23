@@ -1,18 +1,18 @@
 ---
-title: $Platform$ スタイル設定およびテーマ | $Platform$ パレット | インフラジスティックス
+title: {Platform} スタイル設定およびテーマ | {Platform} パレット | インフラジスティックス
 _description:
-_keywords: $ProductName$, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
+_keywords: {ProductName}, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
 mentionedTypes: ["Palettes"]
 _language: ja
 ---
 
-# $ProductName$ のパレット
+# {ProductName} のパレット
 
-$ProductName$ は、アプリケーションで一貫した方法でカラーを更新できる CSS 変数を公開します。
+{ProductName} は、アプリケーションで一貫した方法でカラーを更新できる CSS 変数を公開します。
 
 ## 概要
 
-$ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`success`、`warn`、`error`、および `surface`の 8 つの基本色に対して 100 を超えるカラー バリエーションを提供します。
+{ProductName} のパレットは、`primary`、`secondary`、`gray`、`info`、`success`、`warn`、`error`、および `surface`の 8 つの基本色に対して 100 を超えるカラー バリエーションを提供します。
 
 `primary`、`secondary`、および `gray` カラーは [2014 Material Design カラー パレット (英語)](https://material.io/design/color/the-color-system.html#tools-for-picking-colors) に則っています。これらのカラーが以下のバリアントを含みます:
 
@@ -170,7 +170,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 ## ダークとライト
 
-$ProductName$ のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
+{ProductName} のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
 
 ライト テーマとダーク テーマの両方について、`gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
 

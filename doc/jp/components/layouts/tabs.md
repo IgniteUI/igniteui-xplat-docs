@@ -1,28 +1,28 @@
 ---
-title: $Platform$ Tabs | レイアウト コントロール | インフラジスティックス
-_description: 同様のデータ セットを切り替えるには、インフラジスティックスの $Platform$ タブ コンポーネントを使用します。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ タブ コンポーネント, インフラジスティックス
+title: {Platform} Tabs | レイアウト コントロール | インフラジスティックス
+_description: 同様のデータ セットを切り替えるには、インフラジスティックスの {Platform} タブ コンポーネントを使用します。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 _language: ja
 ---
 
-# $Platform$ Tabs (タブ)
+# {Platform} Tabs (タブ)
 
-$ProductName$ タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
+{ProductName} タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
 
-## $Platform$ タブの例
+## {Platform} タブの例
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-overview"
-           alt="$Platform$ タブの例"
+           alt="{Platform} タブの例"
            github-src="layouts/tabs/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -71,7 +71,7 @@ defineComponents(IgcTabsComponent);
 
 選択したタブが初期の読み込み時に指定されていない場合、無効になっていない最初のタブが選択されます。
 
-ユーザーが矢印キーでナビゲートしているときにタブを選択するデフォルトの動作は、 `activation` プロパティによって変更できます。`manual` に設定すると、矢印キーを押すと次 / 前のタブにフォーカスしますが、タブは `Space` または `Enter` を押した後にのみ選択されます。
+ユーザーが矢印キーでナビゲートしているときにタブを選択するデフォルトの動作は、 `activation` プロパティによって変更できます。`manual` に設定すると、矢印キーを押すと次 / 前のタブにフォーカスしますが、タブは <kbd>Space</kbd> または <kbd>Enter</kbd> を押した後にのみ選択されます。
 
 ### 無効化されたタブ
 
@@ -92,14 +92,14 @@ defineComponents(IgcTabsComponent);
 - `start` (デフォルト): タブの幅はコンテンツ (ラベル、アイコン、両方) に依存し、すべてのタブのパディングは等しくなります。最初のタブは、タブ コンテナーの左側に配置されます。
 - `center`: タブの幅はコンテンツによって異なり、タブ コンテナーの中心を占めます。
 - `end`: タブの幅はコンテンツによって異なり、すべてのタブのパディングは同じです。最後のタブは、タブ コンテナーの右側に配置されます。
-- `justify`: すべてのタブは幅が等しく、タブ コンテナーに完全に収まります。 
+- `justify`: すべてのタブは幅が等しく、タブ コンテナーに完全に収まります。
 
 スペースがすべてのタブに収まらない場合は、スクロール ボタンが表示されます。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-alignment"
-           alt="$Platform$ タブの例"
+           alt="{Platform} タブの例"
            github-src="layouts/tabs/alignment">
 </code-view>
 
@@ -110,7 +110,7 @@ defineComponents(IgcTabsComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-scrolling"
-           alt="$Platform$ タブの例"
+           alt="{Platform} タブの例"
            github-src="layouts/tabs/scrolling">
 </code-view>
 
@@ -131,7 +131,7 @@ defineComponents(IgcTabsComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-prefix-suffix"
-           alt="$Platform$ タブの例"
+           alt="{Platform} タブの例"
            github-src="layouts/tabs/prefix-suffix">
 </code-view>
 
