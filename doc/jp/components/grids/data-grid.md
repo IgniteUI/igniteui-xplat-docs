@@ -183,7 +183,7 @@ ModuleManager.register(
 
     public List<SaleInfo> DataSource { get; set;}
     Random Rand = new Random();
-    
+
     protected override void OnInitialized()
     {
         GenerateData();
