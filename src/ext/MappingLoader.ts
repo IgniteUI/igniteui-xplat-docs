@@ -33,18 +33,24 @@ export class MappingLoader {
         if (member == null) {
             return null;
         }
-        
+
         for (let platformName of member.names) {
             if (platformName.platform == platform) {
                 return platformName.mappedName;
             }
         }
-                
+
         return null;
     }
 
     getType(name: string) : APITypeInfo | undefined {
-        if (name.indexOf(".") >= 0) {
+        if (name === undefined || name === null){
+            return undefined;
+        }
+        if (!(typeof name == "string")) {
+            return undefined;
+        }
+        else if (name.indexOf(".") >= 0) {
             return this._typeMap.get(name);
         } else {
             if (this._aliasedNames.has(name)) {
@@ -56,10 +62,10 @@ export class MappingLoader {
             }
             return this._quickTypeMap.get(name);
         }
-    }   
+    }
 
     mergeNames(target: APIPlatformNameGroup, source: APIPlatformNameGroup): any {
-        
+
     }
 
     mergeMember(target: APIMemberInfo, source: APIMemberInfo): any {
@@ -84,7 +90,7 @@ export class MappingLoader {
             this._memberMap.set(target.originalNamespace + "." + target.originalName, new Map<string, APIMemberInfo>());
         }
         let map = this._memberMap.get(target.originalNamespace + "." + target.originalName)!;
-        
+
         if (source.members) {
             if (!target.members) {
                 target.members = [];
@@ -101,7 +107,7 @@ export class MappingLoader {
                 }
             }
         }
-        
+
         if (source.names) {
             if (!target.names) {
                 target.names = [];
@@ -136,7 +142,7 @@ export class MappingLoader {
         return this._mapping;
     }
 
-    private _memberMap: Map<string, Map<string, APIMemberInfo>> = new 
+    private _memberMap: Map<string, Map<string, APIMemberInfo>> = new
         Map<string, Map<string, APIMemberInfo>>();
 
     private _mapping: APIMapping = {

@@ -1,18 +1,18 @@
 ---
-title: $Platform$ Select Component – $ProductName$
-_description: $ProductName$ Select component 
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Select components, $Platform$ Select controls
+title: {Platform} Select Component – {ProductName}
+_description: {ProductName} Select component
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Select components, {Platform} Select controls
 mentionedTypes: ['Select']
 ---
 
-# $Platform$ Select
-The $ProductName$ Select component allows a single selection from a list of items, placed in a dropdown. This form control offers a quick items list navigation, including selection, based on a single or multiple characters match. 
+# {Platform} Select
+The {ProductName} Select component allows a single selection from a list of items, placed in a dropdown. This form control offers a quick items list navigation, including selection, based on a single or multiple characters match.
 
-## $Platform$ Select Example
+## {Platform} Select Example
 
 <code-view style="height:220px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="$Platform$ Select Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="{Platform} Select Example"
            github-src="inputs/select/overview">
 </code-view>
 
@@ -21,7 +21,7 @@ The $ProductName$ Select component allows a single selection from a list of item
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -56,9 +56,9 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 </igc-select>
 ```
 
-### Select 
+### Select
 
-The `igc-select` component can be used inside an `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`. 
+The `igc-select` component can be used inside an `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
 
 ### Item
 
@@ -67,7 +67,7 @@ The `igc-select-item` component allows the users to declaratively specify a list
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="$Platform$ Select Item Example"
+           alt="{Platform} Select Item Example"
            github-src="inputs/select/item">
 </code-view>
 
@@ -78,7 +78,7 @@ You can use the `SelectHeader` to provide a header for a group of items.
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="$Platform$ Select Header Example"
+           alt="{Platform} Select Header Example"
            github-src="inputs/select/header">
 </code-view>
 
@@ -92,7 +92,7 @@ Multiple `igc-select-item`s can be placed between the opening and closing bracke
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="$Platform$ Select Group Example"
+           alt="{Platform} Select Group Example"
            github-src="inputs/select/group">
 </code-view>
 
@@ -106,19 +106,19 @@ In addition, the `igc-select` supports most of the `igc-input` properties, such 
 
 When the select is focused and the list of options is **not visible**:
 
-- Open the `igc-select` using the `ALT + Up/Down Arrow` combination or by clicking on the `Space` or the `Enter` key.
-- Close the `igc-select` using the `ALT + Up/Down Arrow` combination or any of the `Enter`, `Space`, `Esc` or `Tab` keys.
-- Using the `Up/Left Arrow` keys will select the previous item in the list.
-- Using the `Down/Right Arrow` keys will select the next item in the list.
-- Using the `Home` or `End` keys will select the first or last item in the list.
+- Open the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
+- Close the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
+- Using the <kbd>Up/Left Arrow</kbd> keys will select the previous item in the list.
+- Using the <kbd>Down/Right Arrow</kbd> keys will select the next item in the list.
+- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will select the first or last item in the list.
 - Typing characters will query the list of items and select the one that most closely matches the current user input.
 
 When the select is focused and the list of options is **visible**:
 
-- Using the `Enter` or `Space` keys will select an item and close the list.
-- Using the `Up/Left Arrow` keys will activate the previous item in the list.
-- Using the `Down/Right Arrow` keys will activate the next item in the list.
-- Using the `Home` or `End` keys will activate the first or last item in the list.
+- Using the <kbd>Enter</kbd> or <kbd>Space</kbd> keys will select an item and close the list.
+- Using the <kbd>Up/Left Arrow</kbd> keys will activate the previous item in the list.
+- Using the <kbd>Down/Right Arrow</kbd> keys will activate the next item in the list.
+- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or last item in the list.
 
 > [!NOTE]
 > The `igc-select` component supports only **single** selection of items.
@@ -127,7 +127,7 @@ When the select is focused and the list of options is **visible**:
 
 ## Styling
 
-You can change the appearance of the $ProductName$ Select component and its items, by using the exposed CSS parts listed below:
+You can change the appearance of the {ProductName} Select component and its items, by using the exposed CSS parts listed below:
 ### CSS Parts
 
 **Select Component**
@@ -159,7 +159,7 @@ Part name | Description
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="$Platform$ Select Styling Example"
+           alt="{Platform} Select Styling Example"
            github-src="inputs/select/styling">
 </code-view>
 

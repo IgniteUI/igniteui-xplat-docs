@@ -1,15 +1,15 @@
 ---
-title: $Platform$ Input | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
-_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
+title: {Platform} Input | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
 mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
 ---
-# $Platform$ Input の概要
+# {Platform} Input の概要
 
-$ProductName$ Input は、ユーザーがデータを入力できるコンポーネントです。
+{ProductName} Input は、ユーザーがデータを入力できるコンポーネントです。
 
-## $Platform$ Input の例
+## {Platform} Input の例
 
 <div class="divider--half"></div>
 
@@ -18,7 +18,7 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="$Platform$ Input の例"
+           alt="{Platform} Input の例"
            github-src="inputs/input/overview">
 </code-view>
 
@@ -29,7 +29,7 @@ $ProductName$ Input は、ユーザーがデータを入力できるコンポー
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
-           alt="$Platform$ Input の例"
+           alt="{Platform} Input の例"
            github-src="inputs/input/binding">
 </code-view>
 
@@ -65,7 +65,7 @@ defineComponents(IgcInputComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -101,7 +101,7 @@ IgrInputModule.register();
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="$Platform$ Input Prefix & Suffix の例"
+           alt="{Platform} Input Prefix & Suffix の例"
            github-src="inputs/input/prefix-suffix">
 </code-view>
 
@@ -112,7 +112,7 @@ IgrInputModule.register();
 <code-view style="height: 140px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="$Platform$ Input ヘルパー テキストの例"
+           alt="{Platform} Input ヘルパー テキストの例"
            github-src="inputs/input/helper-text">
 </code-view>
 
@@ -123,7 +123,7 @@ IgrInputModule.register();
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="$Platform$ Input サイズ設定の例"
+           alt="{Platform} Input サイズ設定の例"
            github-src="inputs/input/size">
 </code-view>
 
@@ -172,7 +172,7 @@ igc-input::part(suffix){
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="$Platform$ Input のスタイル設定"
+           alt="{Platform} Input のスタイル設定"
            github-src="inputs/input/styling">
 </code-view>
 

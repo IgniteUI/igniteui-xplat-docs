@@ -1,24 +1,24 @@
 ---
-title: $Platform$ チャート データの凡例 | データ視覚化ツール | インフラジスティックス
-_description: インフラジスティックス $ProductName$ チャートでデータ凡例を使用する
-_keywords: $Platform$ charts, chart legend, legend, legend types, $ProductName$, Infragistics, $Platform$ チャート、チャート凡例、凡例、凡例タイプ、インフラジスティックス
+title: {Platform} チャート データの凡例 | データ視覚化ツール | インフラジスティックス
+_description: インフラジスティックス {ProductName} チャートでデータ凡例を使用する
+_keywords: {Platform} charts, chart legend, legend, legend types, {ProductName}, Infragistics, {Platform} チャート、チャート凡例、凡例、凡例タイプ、インフラジスティックス
 mentionedTypes: ["XamCategoryChart", "XamDataLegend", "Series", "DataLegendSummaryType", "DataAbbreviationMode" ]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $Platform$ データ凡例
+# {Platform} データ凡例
 
-$ProductName$ では、`XamDataLegend` は `Legend` の高度にカスタマイズ可能なバージョンであり、シリーズの値を表示するほか、シリーズの行や値の列のフィルタリング、値のスタイルと書式設定を行うための多くの構成プロパティを提供します。この凡例は、`CategoryChart`、`FinancialChart`、および `XamDataChart` のプロット領域内でマウスを動かすと更新されます。また、ユーザーのマウス ポインターがプロット領域を出ると、最後にホバーされたポイントが維持されます。このコンテンツは、3 種類の行 (ヘッダー、シリーズ、要約) と 4 種類の列 (タイトル、ラベル、値、単位) のセットを使用して表示されます。
+{ProductName} では、`XamDataLegend` は `Legend` の高度にカスタマイズ可能なバージョンであり、シリーズの値を表示するほか、シリーズの行や値の列のフィルタリング、値のスタイルと書式設定を行うための多くの構成プロパティを提供します。この凡例は、`CategoryChart`、`FinancialChart`、および `XamDataChart` のプロット領域内でマウスを動かすと更新されます。また、ユーザーのマウス ポインターがプロット領域を出ると、最後にホバーされたポイントが維持されます。このコンテンツは、3 種類の行 (ヘッダー、シリーズ、要約) と 4 種類の列 (タイトル、ラベル、値、単位) のセットを使用して表示されます。
 
-## $Platform$ データ凡例の行
+## {Platform} データ凡例の行
 
 `XamDataLegend` の行には、ヘッダー行、シリーズ行、および集計行が含まれます。ヘッダー行には、ホバーされたポイントの軸ラベルが表示され、`HeaderText` プロパティを使用して変更できます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend"
-           alt="$Platform$ カテゴリ チャート データ凡例の例"
+           alt="{Platform} カテゴリ チャート データ凡例の例"
            github-src="charts/category-chart/data-legend">
 </code-view>
 
@@ -34,14 +34,14 @@ $ProductName$ では、`XamDataLegend` は `Legend` の高度にカスタマイ�
 
 最後に、すべてのシリーズ値の合計を表示する集計行があります。デフォルトの集計タイトルは、凡例の `SummaryTitleText` プロパティを使用して変更できます。また、`SummaryType` プロパティを使用して、集計行にシリーズの値の `Total`、`Min`、`Max`、または `Average` を表示するかどうかをカスタマイズできます。
 
-## $Platform$ データ凡例の列
+## {Platform} データ凡例の列
 
 `XamDataLegend` の列には、シリーズのタイトル、ラベル、データ列の値、および値に関連付けられたオプションの単位が含まれます。チャートの一部のシリーズには、ラベル、値、および単位の複数の列を含めることができます。たとえば、財務価格シリーズには、**High**、**Low**、**Open**、および **Close** のデータ列があります。これらは、`IncludedColumns` または `ExcludedColumns` プロパティを使用して `XamDataLegend` でフィルタリングできます。
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend"
-           alt="$Platform$ ファイナンシャル チャート データ凡例の例"
+           alt="{Platform} ファイナンシャル チャート データ凡例の例"
            github-src="charts/financial-chart/data-legend">
 </code-view>
 
@@ -90,40 +90,40 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 また、`XamDataLegend` の `UnitText` プロパティを使用して、すべての Unit 列に表示されるテキストを変更できます。
 
-## $Platform$ データ凡例のスタイル設定
+## {Platform} データ凡例のスタイル設定
 
 `XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティの名前は、**Title**、**Label**、**Value**、または **Units** で始まります。テキストの色、フォント、余白のスタイルを設定できます。たとえば、すべての列のテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-styling-props"
-           alt="$Platform$ データ凡例のスタイル設定"
+           alt="{Platform} データ凡例のスタイル設定"
            github-src="charts/financial-chart/data-legend-styling-props">
 </code-view>
 
-## $Platform$ データ凡例値の書式設定
+## {Platform} データ凡例値の書式設定
 
 `XamDataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。次の例は、これらのプロパティの使用方法を示しています:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend-formatting-decimals"
-           alt="$Platform$ データ凡例の小数の書式設定"
+           alt="{Platform} データ凡例の小数の書式設定"
            github-src="charts/category-chart/data-legend-formatting-decimals">
 </code-view>
 
-## $Platform$ データ凡例値モード
+## {Platform} データ凡例値モード
 
 `ValueFormatMode` プロパティを変更することにより、`XamDataLegend` 内の値のデフォルトの 10 進表示を通貨表示に変更することができます。また、`ValueFormatCulture` プロパティにカルチャ タグを設定することで、表示される通貨記号のカルチャを変更できます。たとえば、次のデータ凡例の例では、`ValueFormatCulture` が「en-GB」に設定されており、英国ポンド (£) の記号が表示されています:
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-formatting-currency"
-           alt="$Platform$ 通貨の書式設定"
+           alt="{Platform} 通貨の書式設定"
            github-src="charts/financial-chart/data-legend-formatting-currency">
 </code-view>
 
-## $Platform$ データ凡例のスタイル設定イベント
+## {Platform} データ凡例のスタイル設定イベント
 
 `XamDataLegend` には、対応する行を描画するときに発生する 5 つのイベントがあります。それらのイベントを、その使用目的とあわせて以下に示します:
 

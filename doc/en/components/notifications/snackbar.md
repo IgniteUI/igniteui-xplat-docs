@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Snackbar | Infragistics
-_description: With $ProductName$ Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Snackbar components
+title: {Platform} Snackbar | Infragistics
+_description: With {ProductName} Snackbar component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Snackbar components
 mentionedTypes: ['Snackbar']
 ---
 
-# $Platform$ Snackbar
+# {Platform} Snackbar
 
-The $ProductName$ Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen.
+The {ProductName} Snackbar component is used to provide feedback about an operation by showing a brief message at the bottom of the screen.
 
-## $ProductName$ Snackbar Example
+## {ProductName} Snackbar Example
 
 This sample demonstrates how to create `Snackbar` component.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="$Platform$ Snackbar Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="{Platform} Snackbar Example"
            github-src="notifications/snackbar/overview">
 </code-view>
 
@@ -24,7 +24,7 @@ This sample demonstrates how to create `Snackbar` component.
 ### Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -33,7 +33,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -123,7 +123,7 @@ Use the `DisplayTime` property to configure how long the snackbar component is v
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-display-time"
-           alt="$Platform$ Snackbar Display Time Example"
+           alt="{Platform} Snackbar Display Time Example"
            github-src="notifications/snackbar/display-time">
 </code-view>
 
@@ -134,7 +134,7 @@ By default, the snackbar component is hidden automatically after a period specif
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-action-text"
-           alt="$Platform$ Sanckbar Action Text Example"
+           alt="{Platform} Sanckbar Action Text Example"
            github-src="notifications/snackbar/action-text">
 </code-view>
 
@@ -153,7 +153,7 @@ igc-snackbar::part(base) {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="$Platform$ Sanckbar Styling Example"
+           alt="{Platform} Sanckbar Styling Example"
            github-src="notifications/snackbar/styling">
 </code-view>
 

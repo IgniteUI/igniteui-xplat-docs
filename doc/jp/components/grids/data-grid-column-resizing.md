@@ -1,29 +1,29 @@
 ---
-title: $Platform$ データ グリッド | 列サイズ変更 | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ グリッド コンポーネントは列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column resizing, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列サイズ変更, インフラジスティックス
+title: {Platform} データ グリッド | 列サイズ変更 | インフラジスティックス
+_description: インフラジスティックスの {ProductName} グリッド コンポーネントは列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。詳細については、{ProductName} テーブル サンプルを参照してください。
+_keywords: {Platform} Table, Data Grid, column resizing, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列サイズ変更, インフラジスティックス
 mentionedTypes: ['Grid', 'ColumnResizingMode', 'ColumnResizingAnimationMode']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッドの列サイズ変更
+# {Platform} グリッドの列サイズ変更
 
-$ProductName$ Data Grid は列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。
+{ProductName} Data Grid は列サイズを変更する機能をサポートしており、各列の幅に関して列の表示方法を柔軟に選択できます。
 
-## $Platform$ グリッドの列サイズ変更の例
+## {Platform} グリッドの列サイズ変更の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
-           alt="$Platform$ グリッドの列サイズ変更の例"
+           alt="{Platform} グリッドの列サイズ変更の例"
            github-src="grids/data-grid/column-resizing">
 </code-view>
 
 <div class="divider--half"></div>
 
-$ProductName$ データグリッド内の列サイズ変更はデフォルトでオンになっており、グリッドの `ColumnResizingMode` プロパティを使用して制御できます。このプロパティには 3 つのオプションがあります。各オプションを以下に説明します。
+{ProductName} データグリッド内の列サイズ変更はデフォルトでオンになっており、グリッドの `ColumnResizingMode` プロパティを使用して制御できます。このプロパティには 3 つのオプションがあります。各オプションを以下に説明します。
 
 - `Deferred`: デフォルト オプションです。サイズを変更すると、サイズが変更された後に列が大きくまたは小さくなる量を示すセパレーターが表示されます。
 - `Immediate`: サイズを変更する際のセパレーターはありません。列の端をドラッグすると、列の幅はポインターの動きを追ってそれに応じてサイズを変更します。
@@ -39,7 +39,7 @@ $ProductName$ データグリッド内の列サイズ変更はデフォルトで
 
 ## コード スニペット
 
-以下のコード スニペットは、$Platform$ データ グリッドで列のサイズ変更を実装する方法を示します。この場合、<b>Street</b> 列はサイズ変更できません。</b>この場合、列のサイズ変更セパレーターの幅は 5 ピクセルになり、サイズ変更可能な列もサイズ変更時にアニメーション化されます。
+以下のコード スニペットは、{Platform} データ グリッドで列のサイズ変更を実装する方法を示します。この場合、<b>Street</b> 列はサイズ変更できません。</b>この場合、列のサイズ変更セパレーターの幅は 5 ピクセルになり、サイズ変更可能な列もサイズ変更時にアニメーション化されます。
 
 <!--React-->
 ```ts

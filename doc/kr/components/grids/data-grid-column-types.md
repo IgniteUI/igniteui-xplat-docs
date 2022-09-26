@@ -1,14 +1,14 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 열 유형 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 열 유형 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $Platform$ 열 데이터 유형
+# {Platform} 열 데이터 유형
 
-$ProductName$ 데이터 테이블/데이터 그리드는 데이터를 $Platform$ 데이터 그리드에 표시하는 방법에 대해4개의 열 유형과 템플릿 열 유형을 지원합니다.  지원되는 열 유형은 텍스트, 숫자, 날짜·시간, 이미지, 템플릿입니다.
+{ProductName} 데이터 테이블/데이터 그리드는 데이터를 {Platform} 데이터 그리드에 표시하는 방법에 대해4개의 열 유형과 템플릿 열 유형을 지원합니다.  지원되는 열 유형은 텍스트, 숫자, 날짜·시간, 이미지, 템플릿입니다.
 
 ## 데모
 
@@ -21,11 +21,11 @@ $ProductName$ 데이터 테이블/데이터 그리드는 데이터를 $Platform$
 
 <div class="divider--half"></div>
 
-각 열은 `propertyPath` 속성을 $Platform$ 데이터 그리드에 바인딩된 기본 `dataSource` 항목의 해당 속성 이름으로 설정하여 데이터에 바인딩합니다.
+각 열은 `propertyPath` 속성을 {Platform} 데이터 그리드에 바인딩된 기본 `dataSource` 항목의 해당 속성 이름으로 설정하여 데이터에 바인딩합니다.
 
 ## 텍스트 열
 
-$Platform$ 그리드는 관련된 셀에 포맷된 텍스트를 표시하는 데 사용됩니다. 이것은 `string` 데이터 유형의 데이터를 표시하는 데 사용되는 기본 열 유형입니다.
+{Platform} 그리드는 관련된 셀에 포맷된 텍스트를 표시하는 데 사용됩니다. 이것은 `string` 데이터 유형의 데이터를 표시하는 데 사용되는 기본 열 유형입니다.
 
 ## 숫자 열
 

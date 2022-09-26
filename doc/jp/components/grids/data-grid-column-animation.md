@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | 列アニメーション | インフラジスティックス
-_description: Infragistics $ProductName$ データ テーブルとグリッドを使用して、列を移動または非表示にするときに、イベントで列アニメーションを表示する方法を説明します。$ProductName$ テーブル チュートリアルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, column animations, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列アニメーション, インフラジスティックス
+title: {Platform} データ グリッド | 列アニメーション | インフラジスティックス
+_description: Infragistics {ProductName} データ テーブルとグリッドを使用して、列を移動または非表示にするときに、イベントで列アニメーションを表示する方法を説明します。{ProductName} テーブル チュートリアルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列アニメーション, インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッド列アニメーション
+# {Platform} グリッド列アニメーション
 
-$ProductName$ Data Table / Data Grid は、列の非表示や列の移動などのイベント時に列のアニメーションをサポートします。$Platform$ データ グリッドで Column Animation が設定されている場合、対応するアニメーションはその列のすべてのセルに対して発生します。
+{ProductName} Data Table / Data Grid は、列の非表示や列の移動などのイベント時に列のアニメーションをサポートします。{Platform} データ グリッドで Column Animation が設定されている場合、対応するアニメーションはその列のすべてのセルに対して発生します。
 
-## $Platform$ グリッド列アニメーションの例
+## {Platform} グリッド列アニメーションの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
-           alt="$Platform$ グリッド列アニメーションの例"
+           alt="{Platform} グリッド列アニメーションの例"
            github-src="grids/data-grid/column-animation">
 </code-view>
 

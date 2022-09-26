@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | Open Street Maps 画像の表示 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ を使用して OSM Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, OSM, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+title: {Platform} マップ | データ可視化ツール | Open Street Maps 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの {Platform} を使用して OSM Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, OSM, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ オープン ストリート マップ画像の表示
+# {Platform} オープン ストリート マップ画像の表示
 
-$Platform$ `OpenStreetMapImagery` は、世界中の OpenStreetMap© のコントリビューターが共同で作成した無料の地理的画像マッピングサービスです。これは、構成オプションなしで、道路地図スタイル限定で世界の地理的画像を提供します。この地理的画像サービスは、<a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> に直接アクセスして利用できます。
-デフォルトでは、$ProductName$ マップ コンポーネントには、Open Street Maps の地理的画像が既に表示されています。したがって、Open Street Maps から地理的画像を表示するように、コントロールを構成する必要はありません。
+{Platform} `OpenStreetMapImagery` は、世界中の OpenStreetMap© のコントリビューターが共同で作成した無料の地理的画像マッピングサービスです。これは、構成オプションなしで、道路地図スタイル限定で世界の地理的画像を提供します。この地理的画像サービスは、<a href="http://www.openstreetmap.org" target="_blank">www.OpenStreetMap.org</a> に直接アクセスして利用できます。
+デフォルトでは、{ProductName} マップ コンポーネントには、Open Street Maps の地理的画像が既に表示されています。したがって、Open Street Maps から地理的画像を表示するように、コントロールを構成する必要はありません。
 
-## $Platform$ オープン ストリート マップ画像の表示の例
+## {Platform} オープン ストリート マップ画像の表示の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
-           alt="$Platform$ オープン ストリート マップ画像の表示の例"
+           alt="{Platform} オープン ストリート マップ画像の表示の例"
            github-src="maps/geo-map/display-osm-imagery">
 </code-view>
 

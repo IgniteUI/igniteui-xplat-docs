@@ -1,5 +1,5 @@
 ---
-title: $ProductName$
+title: {ProductName}
 _language: jp
 ---
 

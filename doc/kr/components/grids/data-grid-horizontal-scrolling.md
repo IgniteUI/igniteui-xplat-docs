@@ -1,13 +1,13 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 수평 스크롤 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 수평 스크롤 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 ---
 
-# $Platform$ 수평 스크롤
+# {Platform} 수평 스크롤
 
-$ProductName$ 데이터 표/데이터 그리드는 $Platform$ 데이터 그리드의 너비보다 큰 열의 총 너비를 설정하여 수평 스크롤을 활성화할 수 있습니다.
+{ProductName} 데이터 표/데이터 그리드는 {Platform} 데이터 그리드의 너비보다 큰 열의 총 너비를 설정하여 수평 스크롤을 활성화할 수 있습니다.
 
 ## 데모
 

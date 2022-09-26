@@ -1,15 +1,15 @@
 ---
-title: $Platform$ Radial Gauge Chart | Data Visualization Tools | Infragistics
-_description: Use Infragistics' $Platform$ radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the $ProductName$ radial gauge configurable elements!
-_keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
+title: {Platform} Radial Gauge Chart | Data Visualization Tools | Infragistics
+_description: Use Infragistics' {Platform} radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the {ProductName} radial gauge configurable elements!
+_keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 namespace: Infragistics.Controls.Gauges
 ---
-# $Platform$ Radial Gauge Overview
+# {Platform} Radial Gauge Overview
 
-The $Platform$ radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale. The `XamRadialGauge`  also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
+The {Platform} radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale. The `XamRadialGauge`  also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
 
-## $Platform$ Radial Gauge Example
+## {Platform} Radial Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same `XamRadialGauge` can transform it to completely different radial gauge.
 
@@ -17,7 +17,7 @@ The following sample demonstrates how setting multiple properties on the same `X
 <code-view style="height: 375px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$Platform$ Radial Gauge Example"
+           alt="{Platform} Radial Gauge Example"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 

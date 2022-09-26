@@ -1,23 +1,23 @@
 ---
-title: $Platform$ ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。$ProductName$ ツリーマップについて説明します。
-_keywords: $Platform$ Tree Map, Treemap, layout, orientation, $ProductName$, Infragistics, $Platform$ ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
+title: {Platform} ツリーマップ | データ可視化ツール | 方向 | レイアウト | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} ツリーマップ コントロールを使用して、複数のレベルをサポートするストリップ、長方形、およびスライスアンドダイス アルゴリズムのデータ ポイントの相対的なウェイトを表示します。{ProductName} ツリーマップについて説明します。
+_keywords: {Platform} Tree Map, Treemap, layout, orientation, {ProductName}, Infragistics, {Platform} ツリーマップ, ツリーマップ, レイアウト, 方向, インフラジスティックス
 mentionedTypes: ["Treemap", "TreemapOrientation", "TreemapLayoutType"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $Platform$ ツリーマップ
+# {Platform} ツリーマップ
 
-$ProductName$ ツリーマップ チャートは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
+{ProductName} ツリーマップ チャートは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。
 
-## $Platform$ ツリーマップの例
+## {Platform} ツリーマップの例
 
 次の例では、`Treemap` は世界の最大総面積の上位 30 の国を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="$Platform$ ツリーマップの例"
+           alt="{Platform} ツリーマップの例"
            github-src="charts/tree-map/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 
 ## ツリーマップの推奨事項
 
-### $Platform$ ツリーマップはプロジェクトに適していますか?
+### {Platform} ツリーマップはプロジェクトに適していますか?
 
 色とサイズのディメンションが何らかの方法でツリー構造と関連付けられている場合、他の方法では見つけにくいパターンを簡単に識別できます。ツリーマップは、より効率的にスペースを使用します。このため、数千の項目を同時に画面に表示することが可能となります。
 
@@ -60,14 +60,14 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 - すべてのデータ項目には、`ValueMemberPath` プロパティにマッピングする必要がある数値データ列を少なくとも 1 列含める必要があります。
 - データを整理されたタイルに分類するには、オプションで `ParentIdMemberPath` および `IdMemberPath` を使用できます。
 
-## $Platform$ ツリーマップの構成
+## {Platform} ツリーマップの構成
 
 次の例では、ツリーマップは、`LayoutType` プロパティと `LayoutOrientation` プロパティを変更することにより、アルゴリズム構造を変更する機能を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
-           alt="$Platform$ ツリーマップのレイアウト構成"
+           alt="{Platform} ツリーマップのレイアウト構成"
            github-src="charts/tree-map/layout">
 </code-view>
 
@@ -95,14 +95,14 @@ $ProductName$ ツリーマップ チャートは、ネストされた一連の�
 - `Horizontal` – 子ノードは水平に積み重ねられます (SliceAndDice)。
 - `Vertical` – 子ノードは垂直に積み重ねられます (SliceAndDice)。
 
-## $Platform$ ツリーマップのスタイル設定
+## {Platform} ツリーマップのスタイル設定
 
 次の例では、ツリーマップは、`NodeStylingScript` イベントを介してスタイル設定することによって実現されるノードのルック アンド フィールを変更する機能を示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
-           alt="$Platform$ ツリーマップのスタイル設定"
+           alt="{Platform} ツリーマップのスタイル設定"
            github-src="charts/tree-map/styling">
 </code-view>
 

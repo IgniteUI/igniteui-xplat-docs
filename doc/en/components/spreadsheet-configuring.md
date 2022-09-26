@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
-_description: Learn how configuring your $Platform$ spreadsheets with $ProductName$ helps you better chart data. Improve your data visualization with Infragistics!
-_keywords: Excel Spreadsheet,  $ProductName$, Infragistics
+title: {Platform} Spreadsheet | Configuring | Cell | Formula | Navigation | Selection | Infragistics
+_description: Learn how configuring your {Platform} spreadsheets with {ProductName} helps you better chart data. Improve your data visualization with Infragistics!
+_keywords: Excel Spreadsheet,  {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $Platform$ Configuring Spreadsheet
+# {Platform} Configuring Spreadsheet
 
-The $Platform$ Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
+The {Platform} Spreadsheet component allows the user to configure many different aspects of the control. This includes, but is not limited to, editing of the cells, the visibility of gridlines and headers, protection, zoom level, and various other properties related to the Excel worksheet.
 
-## $Platform$ Configuring Spreadsheet Example
+## {Platform} Configuring Spreadsheet Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           alt="$Platform$ Configuring Spreadsheet Example"
+           alt="{Platform} Configuring Spreadsheet Example"
            github-src="excel/spreadsheet/config-options">
 </code-view>
 
@@ -22,11 +22,11 @@ The $Platform$ Spreadsheet component allows the user to configure many different
 
 ## Configuring Cell Editing
 
-When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the `Enter` key, depending on the configuration of the spreadsheet.
+When a user edits a cell value and confirms the new input, the `Spreadsheet` control has the ability to navigate to cells adjacent to the currently active cell on press of the <kbd>Enter</kbd> key, depending on the configuration of the spreadsheet.
 
-In order to enable this `Enter` key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the `Enter` key.
+In order to enable this <kbd>Enter</kbd> key navigation, you can set the `IsEnterKeyNavigationEnabled` property to **true**. If set to false, the active cell will stay the same when pressing the <kbd>Enter</kbd> key.
 
-You can also configure the direction of the adjacent cell navigated to on press of the `Enter` key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
+You can also configure the direction of the adjacent cell navigated to on press of the <kbd>Enter</kbd> key by setting the `EnterKeyNavigationDirection` property to `Down`, `Up`, `Left` or `Right`.
 
 The following code snippets demonstrate the above:
 
@@ -63,7 +63,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## Configuring Formula Bar
 
-The $Platform$ `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
+The {Platform} `Spreadsheet` allows you to configure the visibility of the formula bar by setting the `IsFormulaBarVisible` property of the control.
 
 The following code snippets demonstrate the above:
 
@@ -133,7 +133,7 @@ The `Spreadsheet` control allows you to configure navigation between a worksheet
 
 For example, if you are in end mode, and you click in a large 100x100 block of data, and press the `Right` arrow key, this will navigate to the right end of the row that you are in to the furthest right column with data. After this operation, the `Spreadsheet` will pop out of end mode.
 
-End mode goes into effect at runtime when the user presses the `End` key, but it can be configured programmatically by setting the `IsInEndMode` property of the spreadsheet control.
+End mode goes into effect at runtime when the user presses the <kbd>End</kbd> key, but it can be configured programmatically by setting the `IsInEndMode` property of the spreadsheet control.
 
 The following code snippets demonstrate the above, in that the `Spreadsheet` will begin in end mode:
 
@@ -228,7 +228,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## Configuring Zoom Level
 
-The $Platform$ Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
+The {Platform} Spreadsheet component supports zooming in and out by configuring its `ZoomLevel` property. The zoom level can be a maximum of 400% and a minimum of 10%.
 
 Setting this property to a number represents the percentage as a whole number, so setting the `ZoomLevel` to 100 is equivalent to setting it to 100%.
 

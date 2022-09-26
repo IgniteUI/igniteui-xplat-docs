@@ -1,17 +1,17 @@
 ---
-title: $Platform$ Calendar | Calendar | インフラジスティックス
-_description: アプリケーションが日付情報を表示し、ユーザーが $ProductName$ Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
-_keywords: $Platform$ Calendar, $Platform$ カレンダー, $ProductName$, インフラジスティックス
+title: {Platform} Calendar | Calendar | インフラジスティックス
+_description: アプリケーションが日付情報を表示し、ユーザーが {ProductName} Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
+_keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 _language: ja
 ---
 
-# $Platform$ Calendar (カレンダー) の概要
+# {Platform} Calendar (カレンダー) の概要
 
-$ProductName$ Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。
+{ProductName} Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。
 
 
-## $Platform$ Calendar の例
+## {Platform} Calendar の例
 
 このサンプルは、単一の日付を選択するオプションを使用して `Calendar` を作成する方法を示しています。
 
@@ -20,7 +20,7 @@ $ProductName$ Calendar コンポーネントは、日付情報を表示するた
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="$Platform$ Calendar の例"
+           alt="{Platform} Calendar の例"
            github-src="scheduling/calendar/overview">
 </code-view>
 
@@ -28,7 +28,7 @@ $ProductName$ Calendar コンポーネントは、日付情報を表示するた
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +38,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -110,7 +110,7 @@ defineComponents(IgcCalendarComponent);
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="$Platform$ Calendar 複数選択の例"
+           alt="{Platform} Calendar 複数選択の例"
            github-src="scheduling/calendar/multiple-selection ">
 </code-view>
 
@@ -134,7 +134,7 @@ defineComponents(IgcCalendarComponent);
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="$Platform$ Calendar 範囲選択の例"
+           alt="{Platform} Calendar 範囲選択の例"
            github-src="scheduling/calendar/range-selection">
 </code-view>
 
@@ -154,7 +154,7 @@ Calendar コンポーネントを使用すると、日、月、年の 3 つの�
 > [!NOTE]
 > Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
 
-$ProductName$ Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
+{ProductName} Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
 
 ```html
 <igc-calendar selection="range" header-orientation="vertical">
@@ -167,7 +167,7 @@ $ProductName$ Calendar コンポーネントは、ヘッダーのタイトルを
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="$Platform$ Calendar ヘッダーの例"
+           alt="{Platform} Calendar ヘッダーの例"
            github-src="scheduling/calendar/header">
 </code-view>
 
@@ -219,7 +219,7 @@ this.radios.forEach(radio => {
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="$Platform$ Calendar 書式設定の例"
+           alt="{Platform} Calendar 書式設定の例"
            github-src="scheduling/calendar/formatting">
 </code-view>
 
@@ -256,7 +256,7 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="$Platform$ Calendar 無効な日付の例"
+           alt="{Platform} Calendar 無効な日付の例"
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
@@ -285,7 +285,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="$Platform$ Calendar 特定の日付の例"
+           alt="{Platform} Calendar 特定の日付の例"
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
@@ -312,7 +312,7 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="$Platform$ Calendar 週番号の例"
+           alt="{Platform} Calendar 週番号の例"
            github-src="scheduling/calendar/week-numbers">
 </code-view>
 
@@ -339,7 +339,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="$Platform$ 複数の月の例"
+           alt="{Platform} 複数の月の例"
            github-src="scheduling/calendar/multiple-months">
 </code-view>
 
@@ -350,7 +350,7 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="$Platform$ Calendar サイズの例"
+           alt="{Platform} Calendar サイズの例"
            github-src="scheduling/calendar/size">
 </code-view>
 
@@ -502,7 +502,7 @@ igc-calendar::part(year-inner current selected) {
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="$Platform$ スタイル設定の例"
+           alt="{Platform} スタイル設定の例"
            github-src="scheduling/calendar/styling">
 </code-view>
 

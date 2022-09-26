@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Linear Progress | Linear Progress | Infragistics
+title: {Platform} Linear Progress | Linear Progress | Infragistics
 _description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
-_keywords: $Platform$ Linear Progress, $ProductName$, Infragistics
+_keywords: {Platform} Linear Progress, {ProductName}, Infragistics
 mentionedTypes: ['LinearProgress']
 ---
 
-# $Platform$ Linear Progress Overview
-The $ProductName$ Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
+# {Platform} Linear Progress Overview
+The {ProductName} Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
 
-## $Platform$ Linear Progress Example
+## {Platform} Linear Progress Example
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="$Platform$  Linear Progress Example"
+           alt="{Platform}  Linear Progress Example"
            github-src="inputs/linear-progress-indicator/simple">
 </code-view>
 
@@ -22,7 +22,7 @@ The $ProductName$ Linear Progress Indicator component provides a visual indicato
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +39,7 @@ defineComponents(IgcLinearProgressComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -105,7 +105,7 @@ You can make the indicator striped, using the `striped` property:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="$Platform$  Linear Progress Striped Example"
+           alt="{Platform}  Linear Progress Striped Example"
            github-src="inputs/linear-progress-indicator/types">
 </code-view>
 
@@ -144,7 +144,7 @@ The following sample demonstrates the above configuration:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="$Platform$ Linear Progress Text Example"
+           alt="{Platform} Linear Progress Text Example"
            github-src="inputs/linear-progress-indicator/striped">
 </code-view>
 
@@ -157,7 +157,7 @@ You can dynamically change the value of the progress indicator by using external
 <code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="$Platform$ Linear Progress Dynamic Example"
+           alt="{Platform} Linear Progress Dynamic Example"
            github-src="inputs/linear-progress-indicator/dynamic">
 </code-view>
 
@@ -170,7 +170,7 @@ The Linear Progress Indicator component exposes CSS parts for almost all of its 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="$Platform$ Linear Progress Styling"
+           alt="{Platform} Linear Progress Styling"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 

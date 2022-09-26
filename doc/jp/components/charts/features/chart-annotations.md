@@ -1,32 +1,32 @@
 ---
-title: $Platform$ チャート注釈 | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ チャート注釈
-_keywords: $Platform$ Charts, Annotations, Infragistics, $Platform$ チャート, 注釈, インフラジスティックス
+title: {Platform} チャート注釈 | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの {Platform} チャート注釈
+_keywords: {Platform} Charts, Annotations, Infragistics, {Platform} チャート, 注釈, インフラジスティックス
 mentionedTypes: ["DomainChart", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
 
-# $Platform$ チャート注釈
+# {Platform} チャート注釈
 
-$Platform$ チャートのホバー操作と注釈は、シリーズ コレクションに追加されるシリーズであるホバー操作レイヤーを介して実装されます。これらのレイヤーはカーソルの位置に依存します。これらの注釈レイヤーはそれぞれ、個別に使用することも、他のレイヤーと組み合わせて強力なホバー操作を提供することもできる、異なるホバー操作を提供します。
+{Platform} チャートのホバー操作と注釈は、シリーズ コレクションに追加されるシリーズであるホバー操作レイヤーを介して実装されます。これらのレイヤーはカーソルの位置に依存します。これらの注釈レイヤーはそれぞれ、個別に使用することも、他のレイヤーと組み合わせて強力なホバー操作を提供することもできる、異なるホバー操作を提供します。
 
-## $Platform$ 注釈の例
+## {Platform} 注釈の例
 
-次の例は、$Platform$ チャートで使用できる注釈レイヤーを示しています。チェックボックスをクリックして、各レイヤーのオンとオフを切り替えます。
+次の例は、{Platform} チャートで使用できる注釈レイヤーを示しています。チェックボックスをクリックして、各レイヤーのオンとオフを切り替えます。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="$Platform$ 注釈の例"
+           alt="{Platform} 注釈の例"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
 <div class="divider--half"></div>
 
-このサンプルが気に入りましたか? 完全な $Platform$ ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">無料でダウンロードできます。</a>
+このサンプルが気に入りましたか? 完全な {Platform} ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">無料でダウンロードできます。</a>
 
-## $Platform$ 十字線レイヤー
+## {Platform} 十字線レイヤー
 
 `CrosshairLayer` は、対象にするために構成される各シリーズの実際値で、異なるセットの線を描画する各シリーズと交差する十字線として描画されます。
 
@@ -46,13 +46,13 @@ $Platform$ チャートのホバー操作と注釈は、シリーズ コレク�
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-crosshair-layer-styling"
-           alt="$Platform$ 十字線レイヤーのスタイル設定"
+           alt="{Platform} 十字線レイヤーのスタイル設定"
            github-src="charts/data-chart/crosshair-layer-styling">
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 最終値レイヤー
+## {Platform} 最終値レイヤー
 
 `XamDataChart` コントロールの `FinalValueLayer` は、シリーズに表示された最終値の軸に沿ったクイック ビューをサポートします。
 
@@ -69,7 +69,7 @@ $Platform$ チャートのホバー操作と注釈は、シリーズ コレク�
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-final-value-layer-styling"
-           alt="$Platform$ 最終値レイヤーのスタイル設定"
+           alt="{Platform} 最終値レイヤーのスタイル設定"
            github-src="charts/data-chart/final-value-layer-styling">
 </code-view>
 
@@ -95,7 +95,7 @@ $Platform$ チャートのホバー操作と注釈は、シリーズ コレク�
 ```
 
 
-## $Platform$ コールアウト レイヤー
+## {Platform} コールアウト レイヤー
 
 `CalloutLayer` はチャート コントロール既存または新しいデータの注釈を表示します。注釈は、データ ソース内の指定されたデータ値の横に表示されます。
 
@@ -118,7 +118,7 @@ $Platform$ チャートのホバー操作と注釈は、シリーズ コレク�
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-callout-layer-styling"
-           alt="$Platform$ コールアウト レイヤーのスタイル設定"
+           alt="{Platform} コールアウト レイヤーのスタイル設定"
            github-src="charts/data-chart/callout-layer-styling">
 </code-view>
 
@@ -172,7 +172,7 @@ chart.calloutsLabelMemberPath = "info";
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
-           alt="コールアウト レイヤーを使用した $Platform$ タイムライン"
+           alt="コールアウト レイヤーを使用した {Platform} タイムライン"
            github-src="charts/data-chart/timeline-axis-type">
 </code-view>
 <!-- end: Blazor -->

@@ -1,30 +1,30 @@
 ---
-title: $Platform$ Form コンポーネント | $ProductName$
-_description: $Platform$ Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
-_keywords: $Platform$ form, $ProductName$, Infragistics, $Platform$ フォーム, インフラジスティックス
+title: {Platform} Form コンポーネント | {ProductName}
+_description: {Platform} Form コンポーネントを使用すると、次のアプリの新しい連絡フォームまたは登録ページをすばやく簡単に作成できます。詳細については、こちらをご覧ください。
+_keywords: {Platform} form, {ProductName}, Infragistics, {Platform} フォーム, インフラジスティックス
 mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 _language: ja
 ---
 
-# $Platform$ (フォーム) の概要
+# {Platform} (フォーム) の概要
 
-$Platform$ の Form コンポーネントは、アプリケーションの要件に適合するお問い合わせフォームや登録ページを設定するために使用されます。$Platform$ フォーム検証を簡単に提供し、フォームの向きを定義し、必要なレイアウトを構成またはカスタマイズすることもできます。$Platform$ フォーム コンポーネントは、ユーザー アクションに応答する機会を与えるイベントも公開します。
+{Platform} の Form コンポーネントは、アプリケーションの要件に適合するお問い合わせフォームや登録ページを設定するために使用されます。{Platform} フォーム検証を簡単に提供し、フォームの向きを定義し、必要なレイアウトを構成またはカスタマイズすることもできます。{Platform} フォーム コンポーネントは、ユーザー アクションに応答する機会を与えるイベントも公開します。
 
-## $Platform$ の例
+## {Platform} の例
 
 次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがある `Form` を表しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form の例"
+           alt="{Platform} Form の例"
            github-src="inputs/form/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +41,7 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -75,7 +75,7 @@ IgbFormModule.Register(IgniteUIBlazor);
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form の例"
+           alt="{Platform} Form の例"
            github-src="inputs/form/overview">
 </code-view>
 

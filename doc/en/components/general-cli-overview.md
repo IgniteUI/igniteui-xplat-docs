@@ -1,12 +1,12 @@
 ---
-title: $Platform$ CLI | Data Visualization Tools and Tables | Infragistics
-_description: The $ProductName$ toolset has a $Platform$ CLI to help you boost productivity and get your project started quickly. Create a $ProductName$ application now!
-_keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics
+title: {Platform} CLI | Data Visualization Tools and Tables | Infragistics
+_description: The {ProductName} toolset has a {Platform} CLI to help you boost productivity and get your project started quickly. Create a {ProductName} application now!
+_keywords: {Platform} cli, command line interface, {ProductName}, Infragistics
 ---
 
-# Ignite UI CLI for $Platform$
+# Ignite UI CLI for {Platform}
 
-Our CLI tools provide project templates pre-configured for the $ProductName$ toolset that help you get your next application off the ground in record time. The <!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> is a stand-alone command-line tool for creating and scaffolding your applications for a variety of different frameworks and provides a substantial productivity boost for developers.
+Our CLI tools provide project templates pre-configured for the {ProductName} toolset that help you get your next application off the ground in record time. The <!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> is a stand-alone command-line tool for creating and scaffolding your applications for a variety of different frameworks and provides a substantial productivity boost for developers.
 
 ## Getting Started
 
@@ -16,11 +16,11 @@ To get started, install the CLI:
 npm install -g igniteui-cli
 </pre>
 
-The above install command will make the Ignite UI CLI available for creation, scaffolding, and running of your $ProductName$ application.
+The above install command will make the Ignite UI CLI available for creation, scaffolding, and running of your {ProductName} application.
 
 ## Create a New Project
 
-To create an application that is configured to use the $ProductName$ controls using the Ignite UI CLI, you can use the following template in your command line:
+To create an application that is configured to use the {ProductName} controls using the Ignite UI CLI, you can use the following template in your command line:
 
 <!-- React -->
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -66,7 +66,7 @@ After running **ig list** and you find the component template you would like to 
 ig add [component_template] [component_name]
 </pre>
 
-The "component_template" above will generally match an $ProductName$ component ("grid", "category-chart", "linear-gauge", etc.).
+The "component_template" above will generally match an {ProductName} component ("grid", "category-chart", "linear-gauge", etc.).
 
 For example, if you wanted to add a data grid templated component named "MyGridComponent" to your application, you could run the following:
 
@@ -100,7 +100,7 @@ Currently the CLI can be used with the following Web Components:
 
 ## Build and Run the Application
 
-In order to build and run the $ProductName$ application, you can call the **ig build** and **ig run** commands:
+In order to build and run the {ProductName} application, you can call the **ig build** and **ig run** commands:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig build

@@ -1,16 +1,16 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | シェープ ファイル リファレンス | シェープ ファイルの編集 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップで使用するシェープ ファイル形式について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
+title: {Platform} マップ | データ可視化ツール | シェープ ファイル リファレンス | シェープ ファイルの編集 | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップで使用するシェープ ファイル形式について説明します。{ProductName} マップ チュートリアルを是非お試しください!
 _language: ja
-_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, shape editing, $Platform$ マップ, シェープ ファイル, シェイプの編集, インフラジスティックス
+_keywords: {Platform} map, shape files, {ProductName}, Infragistics, shape editing, {Platform} マップ, シェープ ファイル, シェイプの編集, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $Platform$ シェープ ファイルの参照
+# {Platform} シェープ ファイルの参照
 
 ## 目的
 
-このトピックでは、マップおよび関連する地理的素材についてのリソースおよびシェープ ファイルの情報を提供します。これらのリソースを使用して、$ProductName$ マップ コンポーネント™ コントロールに地理空間データをバインドする前に編集で使用するツールおよびシェープ ファイルを取得します。
+このトピックでは、マップおよび関連する地理的素材についてのリソースおよびシェープ ファイルの情報を提供します。これらのリソースを使用して、{ProductName} マップ コンポーネント™ コントロールに地理空間データをバインドする前に編集で使用するツールおよびシェープ ファイルを取得します。
 
 ## リソース
 
@@ -34,7 +34,7 @@ mentionedTypes: ['XamGeographicMap']
 
 ## シェイプ ファイルのフォーマット
 
-$Platform$ `XamGeographicMap`コントロールは、地理空間データのソースとして人気の高い[シェープ ファイル (英語)](http://en.wikipedia.org/wiki/Shapefile#Overview) フォーマットを使用します。シェープ ファイルは他のファイル タイプと一緒に配布されます。一般的なファイルには、*.shp*、*.shx*、および *.dbf* の拡張子が付いています。
+{Platform} `XamGeographicMap`コントロールは、地理空間データのソースとして人気の高い[シェープ ファイル (英語)](http://en.wikipedia.org/wiki/Shapefile#Overview) フォーマットを使用します。シェープ ファイルは他のファイル タイプと一緒に配布されます。一般的なファイルには、*.shp*、*.shx*、および *.dbf* の拡張子が付いています。
 
 以下の表は、シェープ ファイルの各タイプの基本情報および目的を提供しています。
 
@@ -104,7 +104,7 @@ $Platform$ `XamGeographicMap`コントロールは、地理空間データのソ
 このトピックに関連する追加情報については、以下のトピックを参照してください。
 
  * [シェープファイルのバインディング](geo-map-binding-shp-file.md)
- 
+
 ## API メンバー
 
  - `XamGeographicMap`

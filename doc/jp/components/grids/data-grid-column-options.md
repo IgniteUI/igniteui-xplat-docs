@@ -1,25 +1,25 @@
 ---
-title: $Platform$ データ グリッド | 列オプション | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ データ グリッドは、各列ヘッダーのドロップダウン UI を介して列のピン固定、移動、フィルター、およびソートの機能をサポートします。$ProductName$ テーブルの列オプションを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, column options, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列オプション, インフラジスティックス
+title: {Platform} データ グリッド | 列オプション | インフラジスティックス
+_description: インフラジスティックスの {ProductName} データ グリッドは、各列ヘッダーのドロップダウン UI を介して列のピン固定、移動、フィルター、およびソートの機能をサポートします。{ProductName} テーブルの列オプションを是非お試しください!
+_keywords: {Platform} Table, Data Grid, column options, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列オプション, インフラジスティックス
 mentionedTypes: ['Grid', 'HeaderClickAction', 'IsColumnOptionsEnabled', 'IsFilteringEnabled', 'Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ Grid 列オプションの概要
+# {Platform} Grid 列オプションの概要
 
-$ProductName$ データ グリッドは、各列ヘッダに表示される UI による列のグループ化、非表示、移動、固定、フィルター、およびソートの機能をサポートします。
+{ProductName} データ グリッドは、各列ヘッダに表示される UI による列のグループ化、非表示、移動、固定、フィルター、およびソートの機能をサポートします。
 
 列オプション UI を有効にするには、グリッドの `IsColumnOptionsEnabled` プロパティを true に設定します。
 
-## $Platform$ Grid 列オプションの例
+## {Platform} Grid 列オプションの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-options"
-           alt="$Platform$ Grid 列オプションの例"
+           alt="{Platform} Grid 列オプションの例"
            github-src="grids/data-grid/column-options">
 </code-view>
 

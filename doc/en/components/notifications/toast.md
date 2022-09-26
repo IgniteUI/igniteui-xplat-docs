@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Toast | Infragistics
-_description: With $ProductName$ Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Toast components
+title: {Platform} Toast | Infragistics
+_description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
 mentionedTypes: ['Toast']
 ---
 
-# $Platform$ Toast
+# {Platform} Toast
 
-The $ProductName$ Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
+The {ProductName} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
 
-## $ProductName$ Toast Example
+## {ProductName} Toast Example
 
 This sample demonstrates how to create `Toast` component.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast Example"
            github-src="notifications/toast/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ This sample demonstrates how to create `Toast` component.
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -35,7 +35,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -227,7 +227,7 @@ public onDisplayTimeButtonClicked() {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="$Platform$ Toast Properties Example"
+           alt="{Platform} Toast Properties Example"
            github-src="notifications/toast/properties">
 </code-view>
 
@@ -246,7 +246,7 @@ igc-toast {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="$Platform$ Toast Styling Example"
+           alt="{Platform} Toast Styling Example"
            github-src="notifications/toast/styling">
 </code-view>
 

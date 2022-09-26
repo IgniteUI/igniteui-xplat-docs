@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding, $Platform$ マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 地理的データ モデルのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用して、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, binding data models, {ProductName}, Infragistics, data binding, {Platform} マップ, データ モデルのバインディング, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'GeographicScatterAreaSeries', 'GeographicHighDensityScatterSeries', 'GeographicProportionalSymbolSeries', GeographicScatterAreaSeries', GeographicContourLineSeries', 'GeographicShapeSeries', 'GeographicPolylineSeries', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $Platform$ 地理的データ モデルのバインディング
+# {Platform} 地理的データ モデルのバインディング
 
-$ProductName$ マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
+{ProductName} マップ コンポーネントは、シェイプ ファイルからの地理空間データやデータ モデルからの地理的位置を地理的画像マップに表示するように設計されています。地理的シリーズの `ItemsSource` プロパティは、データ モデルへのバインディングのために使用されます。このプロパティは、カスタム オブジェクトの配列にバインドできます。
 
-## $Platform$ 地理的データ モデルのバインディングの例
+## {Platform} 地理的データ モデルのバインディングの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="$Platform$ 地理的データ モデルのバインディングの例"
+           alt="{Platform} 地理的データ モデルのバインディングの例"
            github-src="maps/geo-map/binding-data-model">
 </code-view>
 

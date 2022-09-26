@@ -1,22 +1,22 @@
 ---
-title: $Platform$ データ グリッド | 行のグループ化 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
+title: {Platform} データ グリッド | 行のグループ化 | インフラジスティックス
+_description: インフラジスティックスの {Platform} グリッド コンポーネントのグループ行機能を使用して、行を「固定ヘッダー」行グループにまとめます。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。{ProductName} テーブルのサンプルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, row grouping, groupby area,  {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ 行のグループ化
+# {Platform} 行のグループ化
 
-$ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グループにまとめることができます。これ機能は Microsoft Outlook の Group By 機能に似ています。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。
+{ProductName} Data Table / Data Grid は、行を「固定ヘッダー」行グループにまとめることができます。これ機能は Microsoft Outlook の Group By 機能に似ています。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。
 
-## $Platform$ 行の GroupBy 領域の例
+## {Platform} 行の GroupBy 領域の例
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-grouping"
-           alt="$Platform$ 行のグループ化の例"
+           alt="{Platform} 行のグループ化の例"
            github-src="grids/data-grid/row-grouping">
 </code-view>
 
@@ -31,7 +31,7 @@ $ProductName$ Data Table / Data Grid は、行を「固定ヘッダー」行グ�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-group-descriptions"
-           alt="$Platform$ 行のグループ化の例"
+           alt="{Platform} 行のグループ化の例"
            github-src="grids/data-grid/row-grouping-descriptions">
 </code-view>
 

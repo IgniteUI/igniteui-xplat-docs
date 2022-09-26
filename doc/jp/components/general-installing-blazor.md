@@ -1,7 +1,7 @@
 ---
 title: Ignite UI for Blazor のインストール
-_description: NuGet パッケージを使用して $Platform$ をインストールする方法
-_keywords: $Platform$, NuGet, Feed, Infragistics, Install, フィード, インフラジスティックス, インストール
+_description: NuGet パッケージを使用して {Platform} をインストールする方法
+_keywords: {Platform}, NuGet, Feed, Infragistics, Install, フィード, インフラジスティックス, インストール
 mentionedTypes: []
 _language: ja
 ---

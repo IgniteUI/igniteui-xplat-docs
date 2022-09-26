@@ -1,20 +1,20 @@
 ---
 title: Radio and Radio Group
-_description: With $ProductName$ Radio Button and Radio Group controls, developers can seamlessly present lists of options for users to select for better UI in template-driven and reactive forms.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Radio Button components, $Platform$ Radio Button controls, $Platform$ Radio Group component, $Platform$ Radio Group control
+_description: With {ProductName} Radio Button and Radio Group controls, developers can seamlessly present lists of options for users to select for better UI in template-driven and reactive forms.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Radio Button components, {Platform} Radio Button controls, {Platform} Radio Group component, {Platform} Radio Group control
 mentionedTypes: ['Radio', 'RadioGroup', 'Form']
 ---
 
-# $Platform$ Radio & Radio Group
+# {Platform} Radio & Radio Group
 
-The $ProductName$ Radio component allows the user to select a single option from an available set of options that are listed side by side.
+The {ProductName} Radio component allows the user to select a single option from an available set of options that are listed side by side.
 
 
-## $ProductName$ Radio Example
+## {ProductName} Radio Example
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="{Platform} Radio & Radio Group Example"
            github-src="inputs/radio/group">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ Radio component allows the user to select a single option from
 ### Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -158,7 +158,7 @@ The `Radio` can also be labelled by elements external to it. In this case the us
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
-           alt="$Platform$ Radio Example"
+           alt="{Platform} Radio Example"
            github-src="inputs/radio/label">
 </code-view>
 
@@ -196,7 +196,7 @@ You can use the `checked` attribute to toggle on the radio.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
-           alt="$Platform$ Radio Example"
+           alt="{Platform} Radio Example"
            github-src="inputs/radio/group">
 </code-view>
 
@@ -205,7 +205,7 @@ You can use the `checked` attribute to toggle on the radio.
 You can use the `invalid` attribute to mark the radio as invalid.
 
 ```tsx
-<IgrRadio invalid="true"></IgrRadio> 
+<IgrRadio invalid="true"></IgrRadio>
 ```
 
 ```html
@@ -219,7 +219,7 @@ You can use the `invalid` attribute to mark the radio as invalid.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
-           alt="$Platform$ Radio Example"
+           alt="{Platform} Radio Example"
            github-src="inputs/radio/invalid">
 </code-view>
 
@@ -257,7 +257,7 @@ You can use the `disabled` attribute to disable the radio.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
-           alt="$Platform$ Radio Example"
+           alt="{Platform} Radio Example"
            github-src="inputs/radio/disabled">
 </code-view>
 
@@ -295,7 +295,7 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
-           alt="$Platform$ Radio Example"
+           alt="{Platform} Radio Example"
            github-src="inputs/radio/alignment">
 </code-view>
 
@@ -349,7 +349,7 @@ igc-radio::part(control) {
 <code-view style="height: 205px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
-           alt="$Platform$ Radio Styling"
+           alt="{Platform} Radio Styling"
            github-src="inputs/radio/styling">
 </code-view>
 

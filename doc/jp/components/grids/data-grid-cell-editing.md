@@ -1,22 +1,22 @@
 ---
-title: $Platform$ データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
-_description: セルおよび行の編集機能をサポートするインフラジスティックスの $Platform$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
+title: {Platform} データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
+_description: セルおよび行の編集機能をサポートするインフラジスティックスの {Platform} グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。{ProductName} を使用したデータの表示方法について説明します。
 _language: ja
-_keywords: $Platform$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $Platform$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
+_keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics, {Platform} テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 namespace: Infragistics.Controls
 ---
-# $Platform$ Grid 編集
+# {Platform} Grid 編集
 
-$ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
+{ProductName} Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
 
-## $Platform$ Grid 編集の例
+## {Platform} Grid 編集の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="$Platform$ Grid 編集の例"
+           alt="{Platform} Grid 編集の例"
            github-src="grids/data-grid/cell-editing">
 </code-view>
 
@@ -24,7 +24,7 @@ $ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編�
 
 ## 概要
 
-$Platform$ データ グリッドの編集は、$Platform$ グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
+{Platform} データ グリッドの編集は、{Platform} グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
 
 - `None`: 編集は有効ではありません。
 - `Cell`: セルが編集モードに入り、編集モードの終了時に値をコミットできるようにします。

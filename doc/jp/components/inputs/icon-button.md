@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Icon Button コンポーネント
-_description: 開発者は、$ProductName$ Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon Button components, $Platform$ Icon Button controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Icon Button コンポーネント, $Platform$ Icon Button コントロール
+title: {Platform} Icon Button コンポーネント
+_description: 開発者は、{ProductName} Icon Button コンポーネントを使用して、さまざまなアイコンをカスタム色のボタンなどと交換して使用できます。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon Button components, {Platform} Icon Button controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Icon Button コンポーネント, {Platform} Icon Button コントロール
 mentionedTypes: ['IconButton', 'ButtonBase', 'Button', 'Icon']
 _language: ja
 ---
 
-# $Platform$ Icon Button (アイコン ボタン) の概要
+# {Platform} Icon Button (アイコン ボタン) の概要
 
-$ProductName$ Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
+{ProductName} Icon Button コンポーネントを使用すると、開発者は登録済みのアイコンをアプリケーションのボタンとして使用できます。[アイコン](../layouts/icon.md) コンポーネントのすべての機能を備えていますが、[ボタン](button.md) コンポーネントの機能も追加しています。
 
-# $Platform$ Icon Button の例
+# {Platform} Icon Button の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="{Platform} Icon Button の例"
            github-src="inputs/icon-button/size">
 </code-view>
 
@@ -23,7 +23,7 @@ $ProductName$ Icon Button コンポーネントを使用すると、開発者は
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcIconButtonComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -91,7 +91,7 @@ IgbIconButtonModule.Register(IgniteUIBlazor);
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="{Platform} Icon Button の例"
            github-src="inputs/icon-button/variant">
 </code-view>
 
@@ -113,7 +113,7 @@ IgbIconButtonModule.Register(IgniteUIBlazor);
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="{Platform} Icon Button の例"
            github-src="inputs/icon-button/size">
 </code-view>
 
@@ -184,7 +184,7 @@ igc-icon-button::part(icon) {
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="{Platform} Icon Button の例"
            github-src="inputs/icon-button/styling">
 </code-view>
 

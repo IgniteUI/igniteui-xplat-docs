@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | セル選択 | 選択 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ データ グリッドのセルおよび行選択を使用して、テーブルの領域を強調表示します。$ProductName$ テーブルの単一行選択または複数行選択を設定する方法について説明します。
-_keywords: $Platform$ Table, Data Grid, cell selection, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セル選択, インフラジスティックス
+title: {Platform} データ グリッド | セル選択 | 選択 | インフラジスティックス
+_description: インフラジスティックスの {Platform} データ グリッドのセルおよび行選択を使用して、テーブルの領域を強調表示します。{ProductName} テーブルの単一行選択または複数行選択を設定する方法について説明します。
+_keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セル選択, インフラジスティックス
 mentionedTypes: ['Grid', 'GridSelectionMode']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッドの選択
+# {Platform} グリッドの選択
 
-$ProductName$ Data Table / Data Grid は、単一行または複数行およびセルの選択をサポートしています。
+{ProductName} Data Table / Data Grid は、単一行または複数行およびセルの選択をサポートしています。
 
-## $Platform$ グリッド選択の例
+## {Platform} グリッド選択の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
-           alt="$Platform$ グリッド選択の例"
+           alt="{Platform} グリッド選択の例"
            github-src="grids/data-grid/cell-selection">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ Data Table / Data Grid は、単一行または複数行および�
 
 ## 概要
 
-$Platform$ データ グリッドでの選択は行およびセル レベルで有効になり、$Platform$ グリッドの `SelectionMode` オプションを使用して構成できます。このプロパティには、以下にリストされている 5 つの異なるオプションがあります。
+{Platform} データ グリッドでの選択は行およびセル レベルで有効になり、{Platform} グリッドの `SelectionMode` オプションを使用して構成できます。このプロパティには、以下にリストされている 5 つの異なるオプションがあります。
 
 - `None`: 選択は有効にされていません。
 - `SingleCell`: 単一セルの選択が有効です。
@@ -50,7 +50,7 @@ $Platform$ データ グリッドでの選択は行およびセル レベルで�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
-           alt="$Platform$ グリッド選択の例"
+           alt="{Platform} グリッド選択の例"
            github-src="grids/data-grid/row-selection" >
 </code-view>
 

@@ -1,24 +1,24 @@
 ---
-title: $Platform$ ツリー コンポーネント | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。$ProductName$ がデータの表示を改善するのにどのように役立つかをご覧ください。
-_keywords: $Platform$ ツリー、項目ツリー、概要、$ProductName$、インフラジスティックス
+title: {Platform} ツリー コンポーネント | インフラジスティックス
+_description: インフラジスティックスの {Platform} ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。{ProductName} がデータの表示を改善するのにどのように役立つかをご覧ください。
+_keywords: {Platform} ツリー、項目ツリー、概要、{ProductName}、インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
 ---
 
-# $Platform$ Tree (ツリー) の概要
+# {Platform} Tree (ツリー) の概要
 
-$ProductName$ ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
+{ProductName} ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
 
-## $Platform$ ツリーの例
+## {Platform} ツリーの例
 
-この基本的な $ProductName$ ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
+この基本的な {ProductName} ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="$Platform$ ツリーの例"
+           alt="{Platform} ツリーの例"
            github-src="grids/tree/basic-example">
 </code-view>
 
@@ -28,7 +28,7 @@ $ProductName$ ツリー要素を使用すると、ユーザーはツリービュ
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -45,7 +45,7 @@ defineComponents(IgcTreeComponent);
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -170,7 +170,7 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
     </IgrTreeItem>
     <IgrTreeItem label='South America'>
         <IgrTreeItem label='Brazil' />
-        <IgrTreeItem label='Uruguay' />                        
+        <IgrTreeItem label='Uruguay' />
     </IgrTreeItem>
     <IgrTreeItem label='Europe'>
         <IgrTreeItem label='United Kingdom' />
@@ -192,9 +192,9 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 - `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。`Selection` イベントを発行しません。
 - `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。`Selection` イベントを発行しません。
 
-## $Platform$ ツリーの選択
+## {Platform} ツリーの選択
 
-$ProductName$ ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
+{ProductName} ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
 
@@ -266,14 +266,14 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 
 <!-- WebComponents -->
 
-## $Platform$ Tree ロードオンデマンド
+## {Platform} Tree ロードオンデマンド
 
-$ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
+{ProductName} Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="$Platform$ Tree ロードオンデマンドの例"
+           alt="{Platform} Tree ロードオンデマンドの例"
            github-src="grids/tree/load-on-demand">
 </code-view>
 

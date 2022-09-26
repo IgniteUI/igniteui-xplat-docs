@@ -3,6 +3,7 @@ var yaml = require('gulp-yaml');
 var del = require('del');
 var flatten = require('gulp-flatten');
 var es = require('event-stream');
+var through = require('through2');
 var path = require('path');
 const { buildDocfx } = require('igniteui-docfx-template');
 
@@ -17,7 +18,8 @@ var ml = null; // MappingLoader
 var rm = null; // RedirectManager
 var transformer = null;
 var loader = null;
-var docs = null;
+var docsConfig = null;
+var docsComponents = null;
 
 let LANG = argv.lang === undefined ? "en" : argv.lang;
 let PLAT = argv.plat === undefined ? "React": argv.plat;
@@ -48,7 +50,14 @@ function ensureEnvironment() {
 
         transformer = new mt.MarkdownTransformer();
         loader = new ml.MappingLoader();
-        docs = require("./docConfig.json");
+        docsConfig = require("./docConfig.json");
+        docsComponents = require("./docComponents.json");
+
+        // var platformName = PLAT;
+        // var platformData = docsConfig[platformName];
+        // if (platformData !== undefined) {
+        //     throw "docsConfig,json does not have platform: " + platformName;
+        // }
 
         log("initialling environment...");
     }
@@ -85,24 +94,82 @@ function readMappings() {
     });
 }
 
+// function buildSharedFiles(cb) {
+//     console.log("buildSharedFiles");
+//     ensureEnvironment();
+
+//     let sharedTopics = [];
+
+//     let source = [
+//         // "doc/en/**/general-getting-started.md",
+//         "doc/en/**/_shared/*.md",
+//         "doc/jp/**/_shared/*.md",
+//         "doc/kr/**/_shared/*.md"];
+//     gulp.src(source)
+//     // .pipe(getSharedTopics)
+//     .pipe(es.map(function(file, fileCallback) {
+//         // finding all shared topics
+//         var fileContent = file.contents.toString();
+//         if (fileContent.indexOf("sharedComponents") > 0) {
+//             var info = { contents: fileContent, path: file.path };
+//             sharedTopics.push(info);
+//         }
+//         fileCallback(null, file);
+//     })
+//     .on("end", () => {
+//         // console.log("buildSharedFiles " + sharedTopics.length);
+//         // generating topics from shared topics
+//         var generatedFiles = [];
+//         for (const file of sharedTopics) {
+
+//             var files = transformer.transformSharedFile(file.contents, file.path,
+//                 docsComponents, docsConfig[PLAT]);
+//             generatedFiles.push(...files);
+//         }
+//         // console.log("transformSharedFiles ");
+//         // console.log(generatedFiles);
+//         transformer.updateGitIgnore(generatedFiles);
+
+//         cb();
+//     }));
+// }
+// exports.buildSharedFiles = buildSharedFiles;
+
 function transformFiles() {
     ensureEnvironment();
 
     log("transforming files: ");
-    let mapStream = es.map(function(file, cb) {
+    let mapStream = through.obj(function(file, encoding, cb) {
 
       var fileContent = file.contents.toString();
+      var fileDir = path.dirname(file.path) + "\\";
+      var fileName = file.path.replace(fileDir, "");
+
       var typeName = path.basename(path.dirname(file.path))
-      console.log("- " + file.path);
+      // console.log("- " + file.path);
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
         if (err) {
             cb(err, null);
         }
-        file.contents = Buffer.from(results);
 
-        cb(null, file);
+        if (results) {
+            for (let i = 1; i < results.length; i++) {
+                let newFile = file.clone();
+
+                newFile.contents = Buffer.from(results[i].content);
+                if (results[i].componentOutput) {
+                    newFile.path = newFile.path.replace("_shared", results[i].componentOutput);
+                }
+                this.push(newFile);
+            }
+            file.contents = Buffer.from(results[0].content);
+            if (results[0].componentOutput) {
+                file.path = file.path.replace("_shared", results[0].componentOutput);
+            }
+            cb(null, file);
+        }
       });
     });
     return mapStream;
@@ -113,12 +180,15 @@ function transformStaticFiles(platformName) {
     return es.map(function(file, cb) {
 
       var fileContent = file.contents.toString();
-      var typeName = path.basename(path.dirname(file.path))
+    //   var typeName = path.basename(path.dirname(file.path))
 
-      var replacements = docs[platformName].replacements;
+      var replacements = docsConfig[platformName].replacements;
       //console.log(typeName);
       for (var i = 0; i < replacements.length; i++) {
-          fileContent = fileContent.replace(new RegExp(replacements[i].name, "gm"), replacements[i].value);
+          var variable = replacements[i];
+          if (variable.name && variable.value) {
+              fileContent = fileContent.replace(new RegExp(variable.name, "gm"), variable.value);
+          }
       }
       file.contents = Buffer.from(fileContent);
       cb(null, file);
@@ -344,6 +414,101 @@ function verifyApiSections(cb) {
 }
 exports.verifyApiSections = verifyApiSections;
 
+// this array stores actual topic that are resolved from TOC and optional excludedTopics array
+let includedTopics = [];
+function buildTOC(cb) {
+
+    let excludedTopics = [];
+    excludedTopics.push('doc/**/obsolete*.md');
+    // uncomment these lines to build docs without topics:
+    // excludedTopics.push('doc/**/general-getting-started.md');
+    // excludedTopics.push('doc/**/general-getting-started-*.md');
+    // excludedTopics.push('doc/**/general-changelog-dv.md');
+    // excludedTopics.push('doc/**/general-nuget-feed.md');
+    // excludedTopics.push('doc/**/general-installing-blazor.md');
+    // excludedTopics.push('doc/**/grids/grids.md');
+    // excludedTopics.push('doc/**/grids/lob-grid/*.md');
+    // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
+    // excludedTopics.push('doc/**/grids/tree-grid/*.md');
+    // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
+    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/tree.md');
+    // excludedTopics.push('doc/**/grids/list.md');
+    // excludedTopics.push('doc/**/charts/**/*.md');
+    // excludedTopics.push('doc/**/editors/**/*.md');
+    // excludedTopics.push('doc/**/inputs/**/*.md');
+    // excludedTopics.push('doc/**/layouts/**/*.md');
+    // excludedTopics.push('doc/**/menus/**/*.md');
+    // excludedTopics.push('doc/**/*map*.md');
+    // excludedTopics.push('doc/**/bullet-graph.md');
+    // excludedTopics.push('doc/**/linear-gauge.md');
+    // excludedTopics.push('doc/**/radial-gauge.md');
+    // excludedTopics.push('doc/**/*excel*.md');
+    // excludedTopics.push('doc/**/spreadsheet*.md');
+    // excludedTopics.push('doc/**/scheduling/*.md');
+    // excludedTopics.push('doc/**/notifications/*.md');
+    // excludedTopics.push('doc/**/themes/*.md');
+    // uncomment these lines to skip JP and KR topics:
+    // excludedTopics.push('doc/**/jp/**/*.md');
+    // excludedTopics.push('doc/**/kr/**/*.md');
+
+    let excludedFiles = [];
+    gulp.src(excludedTopics)
+    .pipe(es.map(function(file, fileCallback) {
+        var filePath = file.path.split('\\').join('/');
+        var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+        // log(fileLocal);
+        excludedFiles.push(fileLocal);
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        log("excludedTopics " + excludedFiles.length + " ... done ");
+
+        let platformName = PLAT;
+        ensureEnvironment();
+
+         // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
+        let isFirstRelease = docsConfig[platformName].isFirstRelease;
+        // generating an array of topic and TOC.yml files from TOC.json files:
+        let enTopics = generateTocFor(platformName, 'en', isFirstRelease, excludedFiles);
+        let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease, excludedFiles);
+        let krTopics = generateTocFor(platformName, 'kr', isFirstRelease, excludedFiles);
+        var tocTopics = [];
+        tocTopics = tocTopics.concat(enTopics); // including EN topics
+        tocTopics = tocTopics.concat(jpTopics); // including JP topics
+        tocTopics = tocTopics.concat(krTopics); // including KR topics
+        // for (const topic of tocTopics) {
+        //     log("topics included in toc: " + topic);
+        // }
+
+        includedTopics = ['doc/**/*.md'];
+        gulp.src(['doc/**/*.md'])
+        .pipe(es.map(function(topicFile, topicCallback) {
+            var filePath = topicFile.path.split('\\').join('/');
+            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
+            var includedInTOC = false;
+            for (const topic of tocTopics) {
+                if (filePath.indexOf(topic) >= 0) {
+                    includedInTOC = true;
+                }
+            }
+            // excluding topics that are not in TOC but always including shared topics
+            if (!includedInTOC && filePath.indexOf("/_shared/") < 0) {
+                includedTopics.push('!' + fileLocal);
+            }
+
+            topicCallback(null, topicFile);
+        }))
+        .on("end", () => {
+            // for (const topic of includedTopics) {
+            //     log("actual topic: " + topic);
+            // }
+            cb();
+        })
+    });
+}
+exports.buildTOC = buildTOC;
+
 // function buildPlatform(cb, platformName, apiPlatform) {
 function buildPlatform(cb) {
     let platformName = PLAT;
@@ -352,91 +517,40 @@ function buildPlatform(cb) {
     log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
     ensureEnvironment();
 
-    // checking if we need to hide NEW and UPDATED labels in TOC for the first release of product, e.g. Blazor
-    let isFirstRelease = docs[platformName].isFirstRelease;
-    // generating topic list and TOC.yml files from TOC.json files:
-    let enTopics = generateTocFor(platformName, 'en', isFirstRelease);
-    let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease);
-    let krTopics = generateTocFor(platformName, 'kr', isFirstRelease);
-    let tocTopics = [];
-    tocTopics = tocTopics.concat(enTopics); // including EN topics
-    tocTopics = tocTopics.concat(jpTopics); // including JP topics
-    tocTopics = tocTopics.concat(krTopics); // including KR topics
+    log("building with " + includedTopics.length + " topics");
+    // for (const topic of includedTopics) {
+    //     log("act Topic " + topic);
+    // }
 
     let apiSourcePath = './apiMap/' + platformName + '/**/*apiMap.json';
-    log("API source mapping: " + apiSourcePath);
+    log("building with API mapping: " + apiSourcePath);
     gulp.src([
         apiSourcePath
-    ])
+    ],)
     .pipe(flatten())
     .pipe(readMappings())
     .on("end", () => {
-        transformer.configure(loader, apiPlatform, docs[platformName], ENV_TARGET);
+        transformer.configure(loader, apiPlatform, docsConfig[platformName], ENV_TARGET);
 
-        // excluding topics that are not present in any of EN/JP/KR TOC files
-        let topicExclusions = [];
-        gulp.src(['doc/**/*.md'])
-        .pipe(es.map(function(file, fileCallback) {
-            var filePath = file.path.split('\\').join('/');
-            var fileLocal = 'doc/' + filePath.split('/doc/')[1];
-            var fileMatch = false;
-            for (const topic of tocTopics) {
-                if (filePath.indexOf(topic) >= 0) {
-                    fileMatch = true;
-                }
-            }
-            if (fileMatch) {
-            //    console.log('>> TOC contains "' + fileLocal + '"');
-            } else {
-            //    console.log('>> TOC excludes "' + fileLocal + '"');
-               topicExclusions.push('!' + fileLocal);
-            }
-            fileCallback(null, file);
-        }))
-        .on("end", () => {
+        // the includedTopics array is generated in buildTOC task
+        let sources = includedTopics;
 
-            console.log('>> excluding ' + topicExclusions.length + ' topics');
-            let sources = [
-               'doc/**/*.md', // including all markdown files
-               '!doc/**/obsolete/*.md' // excluding old chart topics
-            ];
-            sources = sources.concat(topicExclusions);
+        // uncomment to force building specific set of topics
+        // let sources = [
+        //   'doc/en/components/grids/pivot-grid/overview.md',
+        //   'doc/en/components/grids/_shared/template.md',
+        // //   'doc/en/**/*.md',
+        // //   'doc/jp/**/*.md',
+        // //   'doc/kr/**/*.md',
+        // ];
 
-        // uncomment to test faster build
-        // sources.push('!doc/**/obsolete/**/*.md');
-        // sources.push('!doc/**/grids/**/*.md');
-        // sources.push('!doc/**/charts/**/*.md');
-        // sources.push('!doc/**/charts/types/**/*.md');
-        // sources.push('!doc/**/charts/features/**/*.md');
-        // sources.push('!doc/**/editors/**/*.md');
-        // sources.push('!doc/**/inputs/**/*.md');
-        // sources.push('!doc/**/layouts/**/*.md');
-        // sources.push('!doc/**/menus/**/*.md');
-        // sources.push('!doc/**/data-chart*.md');
-        // sources.push('!doc/**/financial-chart*.md');
-        // sources.push('!doc/**/category-chart*.md');
-        // sources.push('!doc/**/doughnut-chart.md');
-        // sources.push('!doc/**/pie-chart.md');
-        // sources.push('!doc/**/zoomslider*.md');
-        // sources.push('!doc/**/sparkline*.md');
-        // sources.push('!doc/**/treemap*.md');
-        // sources.push('!doc/**/general*.md');
-        // sources.push('!doc/**/general-getting-started.md');
-        // sources.push('!doc/**/general-changelog-dv.md');
-        // sources.push('!doc/**/*map*.md');
-        // sources.push('!doc/**/bullet-graph.md');
-        // sources.push('!doc/**/linear-gauge.md');
-        // sources.push('!doc/**/radial-gauge.md');
-        // sources.push('!doc/**/*gauge*.md');
-        // sources.push('!doc/**/*excel*.md');
-        // sources.push('!doc/**/spreadsheet*.md');
-        // sources.push('!doc/**/dock-manager*.md');
-        // sources.push('!doc/**/editors/*.md');
-        // sources.push('!doc/**/scheduling/*.md');
-        // sources.push('!doc/**/jp/**/*.md');
-        // sources.push('!doc/**/kr/**/*.md');
+        if (platformName === "Angular") {
+            // excluding grids and shared topics from angular builds
+            sources.push('!doc/**/grids/**/*.md');
+            sources.push('!doc/**/grids/_shared/*.md');
+        }
 
-        gulp.src(sources)
+        gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
         .pipe(gulp.dest("dist/" + platformName))
         .on("end", function() {
@@ -467,8 +581,6 @@ function buildPlatform(cb) {
             console.log("ERROR building platform: " + platformName.toString());
             cb(err);
         });
-
-        }) // end of finding topicExclusions
     })
     .on("error", (err) => {
         console.log("ERROR building platform: " + platformName.toString());
@@ -523,14 +635,16 @@ function generateTocYML(cb) {
 }
 exports.generateTocYML = generateTocYML;
 
-// generate "toc.yml" file from "toc.json" by filtering its nodes for specified platform
+// generate "toc.yml" file from "toc.json" by filtering its nodes for specified platform name
 // e.g.  generateTocFor('All', 'en');
 // e.g.  generateTocFor('Angular', 'en');
-function generateTocFor(platformName, language, isFirstRelease) {
+// e.g.  generateTocFor('React', 'en');
+// e.g.  generateTocFor('Blazor', 'en');
+function generateTocFor(platform, language, isFirstRelease, excludedFiles) {
     ensureEnvironment();
     transformer.docsLanguage = language;
     let tocPath = './docfx/' + language + '/components/toc.json';
-    let tocTopics = transformer.generateTOC(tocPath, platformName, isFirstRelease);
+    let tocTopics = transformer.generateTOC(tocPath, platform, language, isFirstRelease, excludedFiles);
     tocTopics.sort();
     for (let i = 0; i < tocTopics.length; i++) {
         tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
@@ -582,13 +696,16 @@ function buildCore(cb) {
     copyWebConfig();
     buildPlatform(cb);
 }
+
+exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
+
 // functions for building each platform:
-function buildAngular(cb)   { PLAT = "Angular"; buildCore(cb); }
-function buildBlazor(cb)    { PLAT = "Blazor"; buildCore(cb); }
-function buildReact(cb)     { PLAT = "React"; buildCore(cb); }
-function buildWC(cb)        { PLAT = "WebComponents"; buildCore(cb); }
+function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }
+function buildBlazor(cb)    { PLAT = "Blazor"; buildCoreAndTOC(cb); }
+function buildReact(cb)     { PLAT = "React"; buildCoreAndTOC(cb); }
+function buildWC(cb)        { PLAT = "WebComponents"; buildCoreAndTOC(cb); }
 // function for building output of a platform specified in arguments, e.g. --plat=React
-function buildWithArgs(cb)  { buildCore(cb); }
+function buildWithArgs(cb)  { buildCoreAndTOC(cb); }
 // exporting build functions for each platform:
 exports['buildOutputAngular'] = gulp.series(verifyFiles, buildAngular)
 exports['buildOutputBlazor'] = gulp.series(verifyFiles, buildBlazor)
@@ -696,8 +813,7 @@ function logArgs(cb) {
     ensureEnvironment();
     let platformName = PLAT; //"Angular";
 
-    // log("docs " + JSON.stringify(docs[platformName], null, '  ') + " ... ");
-    let isFirstRelease = docs[platformName].isFirstRelease;
+    let isFirstRelease = docsConfig[platformName].isFirstRelease;
     log("isFirstRelease " + isFirstRelease + " ... ");
 
     cb();

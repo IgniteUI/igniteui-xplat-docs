@@ -1,21 +1,21 @@
 ---
-title: $Platform$ スプレッドシート | クリップボード操作 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ スプレッドシート コントロール内でコピー、切り取り、貼り付けなどのクリップボード操作を使用します。Infragistics $ProductName$ スプレッドシートのサンプルを是非お試しください!
-_keywords: Spreadsheet, clipboard operations, $ProductName$, Infragistics, スプレッドシート, クリップボード操作, インフラジスティックス
+title: {Platform} スプレッドシート | クリップボード操作 | インフラジスティックス
+_description: インフラジスティックスの {Platform} スプレッドシート コントロール内でコピー、切り取り、貼り付けなどのクリップボード操作を使用します。Infragistics {ProductName} スプレッドシートのサンプルを是非お試しください!
+_keywords: Spreadsheet, clipboard operations, {ProductName}, Infragistics, スプレッドシート, クリップボード操作, インフラジスティックス
 mentionedTypes: ['Spreadsheet', 'SpreadsheetAction', 'SpreadsheetCommandType', 'Command']
 _language: ja
 ---
-# $Platform$ クリップボードでの作業
+# {Platform} クリップボードでの作業
 
 このトピックでは、クリップボードの操作を実行する方法を説明します。
 
-## $Platform$ クリップボードでの作業の例
+## {Platform} クリップボードでの作業の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"
-           alt="$Platform$ クリップボードでの作業の例"
+           alt="{Platform} クリップボードでの作業の例"
            github-src="excel/spreadsheet/clipboard">
 </code-view>
 
@@ -45,7 +45,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## 使用方法
-次のコード スニペットは、$Platform$ `Spreadsheet` コントロールでクリップボードに関連するコマンドを実行する方法を示しています。
+次のコード スニペットは、{Platform} `Spreadsheet` コントロールでクリップボードに関連するコマンドを実行する方法を示しています。
 
 ```ts
 public cut(): void {

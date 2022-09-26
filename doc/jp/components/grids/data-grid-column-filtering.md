@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | フィルタリング | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ グリッド コンポーネントを使用して表現的なソート条件を実行し、データを簡単に返します。詳細については、$ProductName$ テーブルのサンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column, filtering, filter expressions, filter operands, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, フィルタリング, フィルター式, フィルター オペランド, インフラジスティックス
+title: {Platform} データ グリッド | フィルタリング | インフラジスティックス
+_description: インフラジスティックスの {ProductName} グリッド コンポーネントを使用して表現的なソート条件を実行し、データを簡単に返します。詳細については、{ProductName} テーブルのサンプルを参照してください。
+_keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, フィルタリング, フィルター式, フィルター オペランド, インフラジスティックス
 mentionedTypes: ['Grid', 'FilterExpressions']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッド フィルターの概要
+# {Platform} グリッド フィルターの概要
 
-$ProductName$ Data Table / Data Grid には、フィルター行と API の両方を使用した列フィルタリングが含まれており、フィルター処理される列のデータ型に基づいてソート条件を実行できます。
+{ProductName} Data Table / Data Grid には、フィルター行と API の両方を使用した列フィルタリングが含まれており、フィルター処理される列のデータ型に基づいてソート条件を実行できます。
 
-## $Platform$ グリッド フィルターの例
+## {Platform} グリッド フィルターの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
-           alt="$Platform$ グリッド フィルターの例"
+           alt="{Platform} グリッド フィルターの例"
            github-src="grids/data-grid/column-filtering">
 </code-view>
 
@@ -34,7 +34,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
-           alt="$Platform$ グリッド フィルター式の例"
+           alt="{Platform} グリッド フィルター式の例"
            github-src="grids/data-grid/column-filter-expressions">
 </code-view>
 
@@ -57,7 +57,7 @@ $ProductName$ Data Table / Data Grid には、フィルター行と API の両�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
-           alt="$Platform$ グリッド フィルターの例"
+           alt="{Platform} グリッド フィルターの例"
            github-src="grids/data-grid/column-filter-operands">
 </code-view>
 

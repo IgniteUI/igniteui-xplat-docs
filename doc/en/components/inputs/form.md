@@ -1,29 +1,29 @@
 ---
-title: $Platform$ Form Component | $ProductName$
-_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
-_keywords: $Platform$ form, $ProductName$, Infragistics
+title: {Platform} Form Component | {ProductName}
+_description: Using the {Platform} Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
+_keywords: {Platform} form, {ProductName}, Infragistics
 mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 ---
 
-# $Platform$ Form Overview
+# {Platform} Form Overview
 
-The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
+The Form Component in {Platform} is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide {Platform} form validation, define form orientation, and configure or customize your desired layout as well. The {Platform} form component also exposes events that give you the opportunity to respond to user actions.
 
-## $Platform$ Form Example
+## {Platform} Form Example
 
 The following example represents `Form` that has some inputs, buttons and a checkbox inside.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
+           alt="{Platform} Form Example"
            github-src="inputs/form/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -74,7 +74,7 @@ The simplest way to start using the `Form` is as follows:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
+           alt="{Platform} Form Example"
            github-src="inputs/form/overview">
 </code-view>
 

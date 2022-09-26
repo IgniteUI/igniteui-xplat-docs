@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Checkbox Component
-_description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+title: {Platform} Checkbox Component
+_description: {ProductName} Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
 _language: kr
 mentionedTypes: ['Checkbox']
 ---
 
-# $Platform$ Checkbox Overview
+# {Platform} Checkbox Overview
 
-The $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.
+The {ProductName} Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.
 
 <div class="divider"></div>
 
@@ -16,7 +16,7 @@ The $ProductName$ Checkbox component is a selection control that allows users to
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/sample-1">
 </code-view>
 
@@ -38,7 +38,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-To get started with the checkbox web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the checkbox web component, first you need to install the {ProductName} by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
@@ -108,7 +108,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/label">
 </code-view>
 
@@ -137,7 +137,7 @@ Use the `checked` attribute to toggle on the checkbox.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/checked">
 </code-view>
 
@@ -166,7 +166,7 @@ Use the `indeterminate` attribute to set the value of the checkbox to neither **
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
@@ -239,7 +239,7 @@ Use the `disabled` attribute to disable the checkbox.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/disabled">
 </code-view>
 

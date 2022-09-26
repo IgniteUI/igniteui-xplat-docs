@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | 列選択 | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ グリッド コンポーネントで UI から直接、または $Platform$ コントロールを使用して列の表示/非表示機能をサポートする方法について説明します。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column chooser, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列選択, インフラジスティックス
+title: {Platform} データ グリッド | 列選択 | インフラジスティックス
+_description: インフラジスティックスの {ProductName} グリッド コンポーネントで UI から直接、または {Platform} コントロールを使用して列の表示/非表示機能をサポートする方法について説明します。詳細については、{ProductName} テーブル サンプルを参照してください。
+_keywords: {Platform} Table, Data Grid, column chooser, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列選択, インフラジスティックス
 mentionedTypes: ['Grid', 'DataGridToolbar', 'Button', 'ColumnChooser', 'IsHidden', 'ColumnHidingAnimationMode', 'ColumnShowingAnimationMode', 'ColumnChooserTitle', 'Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ Grid 列選択の概要
+# {Platform} Grid 列選択の概要
 
-$ProductName$ Data Grid は、`DataGridToolbar` コンポーネントまたはページのどこにでも配置できる `ColumnChooser` コンポーネントによって UI から列の表示/非表示を行う機能をサポートしています。列の `IsHidden` プロパティにより、手動生成の列に対してプログラムによって列の表示/非表示を設定することができます。`IsHidden` の値は `ColumnChooser` コンポーネントに反映されます。各方法は列の表示状態を変更するために使用できます。
+{ProductName} Data Grid は、`DataGridToolbar` コンポーネントまたはページのどこにでも配置できる `ColumnChooser` コンポーネントによって UI から列の表示/非表示を行う機能をサポートしています。列の `IsHidden` プロパティにより、手動生成の列に対してプログラムによって列の表示/非表示を設定することができます。`IsHidden` の値は `ColumnChooser` コンポーネントに反映されます。各方法は列の表示状態を変更するために使用できます。
 
-## $Platform$ Grid 列選択の例
+## {Platform} Grid 列選択の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-toolbar"
-           alt="$Platform$ Grid 列選択の例"
+           alt="{Platform} Grid 列選択の例"
            github-src="grids/data-grid/column-chooser-toolbar">
 </code-view>
 

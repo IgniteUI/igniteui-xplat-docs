@@ -1,21 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 散布図記号シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップの散布図記号シリーズを使用して、地理的コンテキストでポイントまたはマーカーを使用し、地理空間データを表示します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics, $Platform$ マップ, 散布図記号シリーズ, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 散布図記号シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップの散布図記号シリーズを使用して、地理的コンテキストでポイントまたはマーカーを使用し、地理空間データを表示します。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, scatter symbol series, {ProductName}, Infragistics, {Platform} マップ, 散布図記号シリーズ, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
-# $Platform$ 地理記号マップ
+# {Platform} 地理記号マップ
 
-$Platform$ マップ コンポーネントでは、`GeographicSymbolSeries` を使用して、地理的コンテキストでポイントまたはマーカーを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、都市、空港、地震または興味のあるポイントなどの地理的位置のコレクションを描画するためにしばしば使用されます。
+{Platform} マップ コンポーネントでは、`GeographicSymbolSeries` を使用して、地理的コンテキストでポイントまたはマーカーを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、都市、空港、地震または興味のあるポイントなどの地理的位置のコレクションを描画するためにしばしば使用されます。
 
-## $Platform$ 地理記号マップの例
+## {Platform} 地理記号マップの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
-           alt="$Platform$ 散布図記号シリーズの使用の例"
+           alt="{Platform} 散布図記号シリーズの使用の例"
            github-src="maps/geo-map/type-scatter-symbol-series">
 </code-view>
 

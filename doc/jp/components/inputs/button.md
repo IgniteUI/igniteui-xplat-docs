@@ -1,28 +1,28 @@
 ---
-title: $Platform$ Button コンポーネント | $ProductName$
-_description: $Platform$ Button コンポーネントの使用を開始します。$Platform$ Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ Button コンポーネント, インフラジスティックス
+title: {Platform} Button コンポーネント | {ProductName}
+_description: {Platform} Button コンポーネントの使用を開始します。{Platform} Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} Button コンポーネント, インフラジスティックス
 mentionedTypes: ['Button', 'ButtonBase']
 _language: ja
 ---
 
-# $Platform$ Button (ボタン) の概要
+# {Platform} Button (ボタン) の概要
 
-$Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
+{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button OnClick イベント、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
 
-## $Platform$ Button の例
+## {Platform} Button の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button の例"
+           alt="{Platform} Button の例"
            github-src="inputs/button/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +39,7 @@ defineComponents(IgcButtonComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -299,7 +299,7 @@ public onRadioChange(e: any) {
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button のサイズ設定"
+           alt="{Platform} Button のサイズ設定"
            github-src="inputs/button/size">
 </code-view>
 
@@ -308,10 +308,10 @@ public onRadioChange(e: any) {
 `download` プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
 
 ```tsx
-<IgrButton 
-    href="" 
-    variant="contained" 
-    download="url" 
+<IgrButton
+    href=""
+    variant="contained"
+    download="url"
     target="_blank" >
     <span>Download</span>
 </IgrButton>
@@ -352,7 +352,7 @@ igc-button::part(base) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button スタイル設定の例"
+           alt="{Platform} Button スタイル設定の例"
            github-src="inputs/button/styling">
 </code-view>
 

@@ -1,14 +1,14 @@
 ---
-title: $Platform$ What's New | $ProductName$ | Infragistics
-_description: Learn about new features in the $ProductName$.
-_keywords: Changelog, What's New,  $ProductName$, Infragistics
+title: {Platform} What's New | {ProductName} | Infragistics
+_description: Learn about new features in the {ProductName}.
+_keywords: Changelog, What's New,  {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamGeographicMap"]
 ---
 
-# $ProductName$ Changelog (Data Visualization)
+# {ProductName} Changelog (Data Visualization)
 
-All notable changes for each version of $ProductName$ are documented on this page.
+All notable changes for each version of {ProductName} are documented on this page.
 
 <!-- Angular -->
 
@@ -19,12 +19,12 @@ All notable changes for each version of $ProductName$ are documented on this pag
 
 <div class="divider--half"></div>
 
-## **$Platform$ {PackageVerChanges-21-2}**
+## **{Platform} {PackageVerChanges-21-2}**
 
 <!-- Blazor -->
 
 > [!NOTE]
-> The **Igb** prefix is now required for the $ProductName$ components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+> The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
 >
@@ -139,7 +139,7 @@ Old brushes/outlines | New outline/brushes
 
 <div class="divider--half"></div>
 
-## **$Platform$ {PackageVerChanges-21-1}**
+## **{Platform} {PackageVerChanges-21-1}**
 
 ### Charts & Maps
 
@@ -238,7 +238,7 @@ for example:
 <div class="divider--half"></div>
 
 <!-- React, WebComponents -->
-## **$Platform$ {PackageVerChangedFields}**
+## **{Platform} {PackageVerChangedFields}**
 
 > [!NOTE]
 > These breaking changes were introduce in the grid package.
@@ -277,7 +277,7 @@ const income = new IgcColumnGroupDescription();
 income.field = "Income";
 
 ```
-## **$Platform$ {PackageVerRenamedGrid}**
+## **{Platform} {PackageVerRenamedGrid}**
 ### Data Grid
 
 - Changed Name of Live Grid
@@ -311,7 +311,7 @@ The data grid component requires the "inputs" package.
 <div class="divider--half"></div>
 
 <!-- Angular, React, WebComponents -->
-## **$Platform$ {PackageVerChangedImports}**
+## **{Platform} {PackageVerChangedImports}**
 
 - Changed Import Statements
 
