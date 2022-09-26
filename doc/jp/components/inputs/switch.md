@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Switch コンポーネント – $ProductName$
-_description: $ProductName$ Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Switch コントロール
+title: {Platform} Switch コンポーネント – {ProductName}
+_description: {ProductName} Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Switch コントロール
 mentionedTypes: ['Switch']
 _language: ja
 ---
 
-# $Platform$ Switch (スイッチ)
+# {Platform} Switch (スイッチ)
 
-$ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
+{ProductName} Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
 
-## $Platform$ Switch の例
+## {Platform} Switch の例
 
 <code-view style="height:100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="{Platform} Switch の例"
            github-src="inputs/switches/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 `Switch` コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -42,7 +42,7 @@ defineComponents(IgcSwitchComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -59,7 +59,7 @@ IgrSwitchModule.register();
 
 <!-- Blazor -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```razor
 IgbSwitchModule.Register(IgniteUIBlazor);
@@ -142,7 +142,7 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="inputs/switches/label">
 </code-view>
 
@@ -165,7 +165,7 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="inputs/switches/checking">
 </code-view>
 
@@ -216,7 +216,7 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="inputs/switches/disabled">
 </code-view>
 

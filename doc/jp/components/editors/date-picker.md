@@ -1,22 +1,22 @@
 ---
-title: $Platform$ 日付選択 | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$日付選択コンポーネントは、ユーザーの日付選択を支援します。Ignite UI for $Platform$ でグラフと視覚化を改善します!
-_keywords: $Platform$ date picker, drop down, $ProductName$, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
+title: {Platform} 日付選択 | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform}日付選択コンポーネントは、ユーザーの日付選択を支援します。Ignite UI for {Platform} でグラフと視覚化を改善します!
+_keywords: {Platform} date picker, drop down, {ProductName}, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
 mentionedTypes: ['DatePicker']
 _language: ja
 ---
-# $Platform$ 日付選択の概要
+# {Platform} 日付選択の概要
 
 日付選択コンポーネントは、ドロップダウン カレンダー UI を使用して日、月、年を直感的に選択できます。これは、アプリケーション ユーザーが特定の日付を選択する必要があり、複数のエディターを組み合わせて日付範囲 UI を作成する場合に便利です。
 
-## $Platform$ 日付選択の例
+## {Platform} 日付選択の例
 
 このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="$Platform$ 日付選択の例"
+           alt="{Platform} 日付選択の例"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -56,7 +56,7 @@ ModuleManager.register(IgcDatePickerModule);
 
 ## 使用方法
 
-$Platform$ 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
+{Platform} 日付選択エディター コンポーネントは、デフォルトでは、テキスト領域、カレンダー ドロップダウン ボタン、およびクリア ボタンの 3 つの構成されます。これらの領域について以下に説明します。
 
 - テキスト領域: エディターの `Value` プロパティに保存されている選択した日付を表示します。
 
@@ -91,7 +91,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$Platform$ Date Picker 編集の例"
+           alt="{Platform} Date Picker 編集の例"
            github-src="editors/date-picker/editing">
 </code-view>
 
@@ -104,7 +104,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 360px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="$Platform$ Date Picker 日付制限の例"
+           alt="{Platform} Date Picker 日付制限の例"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
@@ -117,7 +117,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="$Platform$ Date Picker 書式の例"
+           alt="{Platform} Date Picker 書式の例"
            github-src="editors/date-picker/format">
 </code-view>
 
@@ -130,7 +130,7 @@ $Platform$ 日付選択エディター コンポーネントは、デフォル�
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="$Platform$ Date Picker 日付範囲の例"
+           alt="{Platform} Date Picker 日付範囲の例"
            github-src="editors/date-picker/range">
 </code-view>
 

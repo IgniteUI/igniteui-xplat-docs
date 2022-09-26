@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Checkbox コンポーネント | $ProductName$
-_description: $Platform$ Checkbox コンポーネントを使用してチェックボックスを追加し、エンドユーザーのチェック状態、チェックなし状態、または不確定状態を有効にする方法を紹介します。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Checkbox コンポーネント, $Platform$ Checkbox コントロール
+title: {Platform} Checkbox コンポーネント | {ProductName}
+_description: {Platform} Checkbox コンポーネントを使用してチェックボックスを追加し、エンドユーザーのチェック状態、チェックなし状態、または不確定状態を有効にする方法を紹介します。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Checkbox コンポーネント, {Platform} Checkbox コントロール
 mentionedTypes: ['Checkbox', 'Form']
 _language: ja
 ---
 
-# $Platform$ Checkbox (チェックボックス) の概要
+# {Platform} Checkbox (チェックボックス) の概要
 
-$Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追加できるコンポーネントです。これは標準の HTML チェックボックスとして動作し、ユーザーが基本的なチェック状態とチェックなし状態、または追加の不確定状態を選択できるようにします。また、$Platform$ Checkbox コンポーネントのスタイルと、フォームで使用する機能を完全に制御できます。
+{Platform} Checkbox は、{Platform} アプリにチェックボックスを追加できるコンポーネントです。これは標準の HTML チェックボックスとして動作し、ユーザーが基本的なチェック状態とチェックなし状態、または追加の不確定状態を選択できるようにします。また、{Platform} Checkbox コンポーネントのスタイルと、フォームで使用する機能を完全に制御できます。
 
 ## Checkbox の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="$Platform$ Checkbox の例"
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="{Platform} Checkbox の例"
            github-src="inputs/checkbox/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ $Platform$ Checkbox は、$Platform$ アプリにチェックボックスを追�
 `Checkbox` は、選択された状態と選択されていない状態のどちらかを選択できることです。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -42,7 +42,7 @@ defineComponents(IgcCheckboxComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -145,7 +145,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox の例"
+           alt="{Platform} Checkbox の例"
            github-src="inputs/checkbox/label">
 </code-view>
 
@@ -168,7 +168,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
-           alt="$Platform$ Checkbox の例"
+           alt="{Platform} Checkbox の例"
            github-src="inputs/checkbox/checking">
 </code-view>
 
@@ -191,7 +191,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox の例"
+           alt="{Platform} Checkbox の例"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
@@ -246,7 +246,7 @@ IgbCheckboxModule.Register(IgniteUIBlazor);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox の例"
+           alt="{Platform} Checkbox の例"
            github-src="inputs/checkbox/disabled">
 </code-view>
 

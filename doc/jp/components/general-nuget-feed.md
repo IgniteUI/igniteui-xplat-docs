@@ -1,7 +1,7 @@
 ---
 title: Infragistics NuGet フィード
-_description: インフラジスティックスの $Platform$ コンポーネントの NuGet フィード。
-_keywords: $Platform$, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントの NuGet フィード。
+_keywords: {Platform}, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
 mentionedTypes: []
 _language: ja
 ---

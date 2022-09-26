@@ -197,15 +197,41 @@
     "href": "menus/navigation-drawer.md"
   },
   {
-    "exclude": ["Angular"],
     "name": "グリッド & リスト",
     "header": true,
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular"],
-    "name": "リスト {ReleaseStatus_WebsList}",
-    "href": "grids/list.md"
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "データ グリッド",
+    "href": "grids/lob-grid/overview.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "階層グリッド",
+    "href": "grids/hierarchical-grid/overview.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "ピボット グリッド",
+    "href": "grids/pivot-grid/overview.md",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Pivot Grid Shared Topic",
+        "href": "grids/pivot-grid/template.md",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "ツリー グリッド",
+    "href": "grids/tree-grid/overview.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -370,6 +396,11 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "リスト {ReleaseStatus_WebsList}",
+    "href": "grids/list.md"
   },
   {
     "exclude": ["Angular"],
@@ -664,508 +695,6 @@
     "status": ""
   },
   {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "チャート",
-    "header": true,
-    "exclude": ["Blazor", "Angular","React", "WebComponents"]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "カテゴリ チャート",
-    "href": "category-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-    "items": [
-      {
-        "name": "注釈",
-        "href": "category-chart-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "軸オプション",
-        "href": "category-chart-axis-options.md",
-        "status": ""
-      },
-      {
-        "name": "リアルタイム データ",
-        "href": "category-chart-high-frequency.md",
-        "status": ""
-      },
-      {
-        "name": "大規模データのバインド",
-        "href": "category-chart-high-volume.md",
-        "status": ""
-      },
-      {
-        "name": "構成オプション",
-        "href": "category-chart-config-options.md",
-        "status": ""
-      },
-      {
-        "name": "ハイライト",
-        "href": "category-chart-highlighting.md",
-        "status": ""
-      },
-      {
-        "name": "ツールチップ タイプ",
-        "href": "category-chart-tooltip-types.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "データ チャート",
-    "href": "data-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-    "items": [
-      {
-        "name": "軸",
-        "href": "data-chart-axis-types.md",
-        "status": "",
-        "items": [
-          {
-            "name": "軸の注釈",
-            "href": "data-chart-axis-annotations.md",
-            "status": ""
-          },
-          {
-            "name": "軸設定",
-            "href": "data-chart-axis-settings.md",
-            "status": ""
-          },
-          {
-            "name": "軸の位置",
-            "href": "data-chart-axis-locations.md",
-            "status": ""
-          },
-          {
-            "name": "軸の共有",
-            "href": "data-chart-axis-sharing.md",
-            "status": ""
-          }
-        ]
-      },
-      {
-        "name": "チャート タイプ",
-        "href": "data-chart-series-types.md",
-        "status": "",
-        "items": [
-          {
-            "name": "エリア",
-            "href": "data-chart-types-overview-area.md",
-            "status": "",
-            "items": [
-              {
-                "name": "エリア チャート",
-                "href": "data-chart-type-category-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "極座標エリア チャート",
-                "href": "data-chart-type-polar-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "極座標スプライン エリア チャート",
-                "href": "data-chart-type-polar-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "ラジアル エリア チャート",
-                "href": "data-chart-type-radial-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "範囲エリア チャート",
-                "href": "data-chart-type-range-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布エリア チャート",
-                "href": "data-chart-type-scatter-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布ポリゴン チャート",
-                "href": "data-chart-type-scatter-polygon-series.md",
-                "status": ""
-              },
-              {
-                "name": "スプライン エリア チャート",
-                "href": "data-chart-type-category-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 エリア チャート",
-                "href": "data-chart-type-stacked-100-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 スプライン エリア チャート",
-                "href": "data-chart-type-stacked-100-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型エリア チャート",
-                "href": "data-chart-type-stacked-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型スプライン エリア チャート",
-                "href": "data-chart-type-stacked-spline-area-series.md",
-                "status": ""
-              },
-              {
-                "name": "ステップ エリア チャート",
-                "href": "data-chart-type-category-step-area-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "棒と縦棒",
-            "href": "data-chart-types-overview-column.md",
-            "status": "",
-            "items": [
-              {
-                "name": "棒チャート",
-                "href": "data-chart-type-category-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "縦棒チャート",
-                "href": "data-chart-type-category-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "ラジアル縦棒チャート",
-                "href": "data-chart-type-radial-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "範囲縦棒チャート",
-                "href": "data-chart-type-range-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 棒チャート",
-                "href": "data-chart-type-stacked-100-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 縦棒チャート",
-                "href": "data-chart-type-stacked-100-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型棒チャート",
-                "href": "data-chart-type-stacked-bar-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型縦棒チャート",
-                "href": "data-chart-type-stacked-column-series.md",
-                "status": ""
-              },
-              {
-                "name": "ウォーターフォール チャート",
-                "href": "data-chart-type-category-waterfall-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "ファイナンシャル",
-            "href": "data-chart-types-overview-financial.md",
-            "status": "",
-            "items": [
-              {
-                "name": "ファイナンシャル ローソク足チャート",
-                "href": "data-chart-type-financial-candlestick-series.md",
-                "status": ""
-              },
-              {
-                "name": "ファイナンシャル OHLC チャート",
-                "href": "data-chart-type-financial-ohlc-series.md",
-                "status": ""
-              },
-              {
-                "name": "財務指標 (エリア)",
-                "href": "data-chart-type-financial-area-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "財務指標 (縦棒)",
-                "href": "data-chart-type-financial-column-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "財務指標 (折れ線)",
-                "href": "data-chart-type-financial-line-indicators.md",
-                "status": ""
-              },
-              {
-                "name": "ファイナンシャル オーバーレイ",
-                "href": "data-chart-type-financial-overlays.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "折れ線",
-            "href": "data-chart-types-overview-line.md",
-            "status": "",
-            "items": [
-              {
-                "name": "折れ線チャート",
-                "href": "data-chart-type-category-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "極座標折れ線チャート",
-                "href": "data-chart-type-polar-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "極座標スプライン チャート",
-                "href": "data-chart-type-polar-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "ラジアル折れ線チャート",
-                "href": "data-chart-type-radial-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布等高線チャート",
-                "href": "data-chart-type-scatter-contour-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布折れ線チャート",
-                "href": "data-chart-type-scatter-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布スプライン チャート",
-                "href": "data-chart-type-scatter-spline-series.md",
-                "status": ""
-              },
-              {
-                "exclude": ["Blazor"],
-                "name": "散布ポリライン チャート",
-                "href": "data-chart-type-scatter-polyline-series.md",
-                "status": ""
-              },
-              {
-                "name": "スプライン チャート",
-                "href": "data-chart-type-category-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 折れ線チャート",
-                "href": "data-chart-type-stacked-100-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型 100 スプライン チャート",
-                "href": "data-chart-type-stacked-100-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型折れ線チャート",
-                "href": "data-chart-type-stacked-line-series.md",
-                "status": ""
-              },
-              {
-                "name": "積層型スプライン チャート",
-                "href": "data-chart-type-stacked-spline-series.md",
-                "status": ""
-              },
-              {
-                "name": "ステップ折れ線チャート",
-                "href": "data-chart-type-category-step-line-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "円とドーナツ",
-            "href": "data-chart-types-overview-pie.md",
-            "status": "",
-            "items": [
-              {
-                "name": "ドーナツ チャート",
-                "href": "doughnut-chart.md",
-                "status": ""
-              },
-              {
-                "name": "円チャート",
-                "href": "pie-chart.md",
-                "status": ""
-              },
-              {
-                "name": "ラジアル円チャート",
-                "href": "data-chart-type-radial-pie-series.md",
-                "status": ""
-              }
-            ]
-          },
-          {
-            "name": "ポイント",
-            "href": "data-chart-types-overview-point.md",
-            "status": "",
-            "items": [
-              {
-                "name": "ポイント チャート",
-                "href": "data-chart-type-category-point-series.md",
-                "status": ""
-              },
-              {
-                "name": "極座標散布チャート",
-                "href": "data-chart-type-polar-scatter-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布バブル チャート",
-                "href": "data-chart-type-scatter-bubble-series.md",
-                "status": ""
-              },
-              {
-                "name": "散布マーカー チャート",
-                "href": "data-chart-type-scatter-point-series.md",
-                "status": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "凡例",
-        "href": "data-chart-legends.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor"],
-        "name": "ナビゲーション",
-        "href": "data-chart-navigation.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor"],
-        "name": "同期",
-        "href": "data-chart-synchronization.md",
-        "status": ""
-      },
-      {
-        "name": "タイトルとサブタイトル",
-        "href": "data-chart-titles.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズの注釈",
-        "href": "data-chart-series-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズのハイライト",
-        "href": "data-chart-series-highlighting.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズ マーカー",
-        "href": "data-chart-series-markers.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズのツールチップ",
-        "href": "data-chart-series-tooltips.md",
-        "status": ""
-      },
-      {
-        "name": "シリーズ トレンドライン",
-        "href": "data-chart-series-trendlines.md",
-        "status": ""
-      },
-      {
-        "name": "値オーバーレイ",
-        "href": "data-chart-value-overlay.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor", "Angular", "React", "WebComponents"],
-        "name": "データ ソース",
-        "href": "data-chart-data-sources.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "ファイナンシャル チャート",
-    "href": "financial-chart.md",
-    "status": "",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "items": [
-      {
-        "name": "リアルタイムにデータをバインド",
-        "href": "financial-chart-high-frequency.md",
-        "status": ""
-      },
-      {
-        "name": "大規模データのバインド",
-        "href": "financial-chart-high-volume.md",
-        "status": ""
-      },
-      {
-        "name": "複数データ ソースのバインド",
-        "href": "financial-chart-multiple-data.md",
-        "status": ""
-      },
-      {
-        "name": "注釈",
-        "href": "financial-chart-annotations.md",
-        "status": ""
-      },
-      {
-        "name": "近似曲線",
-        "href": "financial-chart-trendlines.md",
-        "status": ""
-      },
-      {
-        "name": "軸タイプ",
-        "href": "financial-chart-axis-types.md",
-        "status": ""
-      },
-      {
-        "name": "パフォーマンス",
-        "href": "financial-chart-performance.md",
-        "status": ""
-      },
-      {
-        "name": "チャート ペイン",
-        "href": "financial-chart-panes.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "ツリーマップ",
-    "href": "charts/types/treemap-chart.md",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "status": ""
-  },
-  {
-    "note": "THIS NODE IS FOR OLD STRUCTURE OF CHARTS",
-    "name": "スパークライン",
-    "href": "charts/types/sparkline-chart.md",
-    "exclude": ["Blazor", "Angular","React", "WebComponents"],
-    "status": ""
-  },
-  {
     "name": "マップ",
     "header": true,
     "href": "geo-map.md",
@@ -1445,12 +974,12 @@
     "href": "inputs/input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"], 
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "マスク入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/mask-input.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"], 
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "日時入力 {ReleaseStatus_WebsInputs}",
     "href": "inputs/date-time-input.md"
   },

@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Circular Progress | Circular Progress | インフラジスティックス
+title: {Platform} Circular Progress | Circular Progress | インフラジスティックス
 _description: Circular Progress Indicator コンポーネントを使用すると、開発者は無限のカスタマイズ オプションを使用して進行状況を円で表示できます。
-_keywords: $Platform$ Circular Progress, $ProductName$, インフラジスティックス
+_keywords: {Platform} Circular Progress, {ProductName}, インフラジスティックス
 mentionedTypes: ['CircularProgress', 'CircularGradient']
 _language: ja
 ---
 
-# $Platform$ Circular Progress (円形プログレス) の概要
-$ProductName$ Circular Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。丸形インジケーターは状態変更で外観を更新します。
+# {Platform} Circular Progress (円形プログレス) の概要
+{ProductName} Circular Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。丸形インジケーターは状態変更で外観を更新します。
 
-## $Platform$ Circular Progress の例
+## {Platform} Circular Progress の例
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
-           alt="$Platform$ Circular Progress の例"
+           alt="{Platform} Circular Progress の例"
            github-src="inputs/circular-progress-indicator/simple">
 </code-view>
 
@@ -23,7 +23,7 @@ $ProductName$ Circular Progress Indicator コンポーネントは、変更で�
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcCircularProgressComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -102,7 +102,7 @@ IgbCircularProgressModule.Register(IgniteUIBlazor);
 
 ### 不確定のプログレス
 
-正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。また、`hideLabel` プロパティを設定することで、$ProductName$ `CircularProgress` のデフォルトのラベルを非表示にし、公開された `labelFormat` プロパティを介して進行状況インジケーターのデフォルトのラベルをカスタマイズできます。
+正確に決定されていないプロセスをトラックしたい場合、`indeterminate` プロパティを設定できます。また、`hideLabel` プロパティを設定することで、{ProductName} `CircularProgress` のデフォルトのラベルを非表示にし、公開された `labelFormat` プロパティを介して進行状況インジケーターのデフォルトのラベルをカスタマイズできます。
 
 ```tsx
 <IgrCircularProgress value="100" indeterminate="true"></IgrCircularProgress>
@@ -121,7 +121,7 @@ IgbCircularProgressModule.Register(IgniteUIBlazor);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
-           alt="$Platform$ Circular Progress Indeterminate の例"
+           alt="{Platform} Circular Progress Indeterminate の例"
            github-src="inputs/circular-progress-indicator/indeterminate">
 </code-view>
 
@@ -150,12 +150,12 @@ IgbCircularProgressModule.Register(IgniteUIBlazor);
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
-           alt="$Platform$ Circular Progress Dynamic の例"
+           alt="{Platform} Circular Progress Dynamic の例"
            github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
 >[!NOTE]
->$ProductName$ `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
+>{ProductName} `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
 
 ```tsx
 <IgrCircularProgress >
@@ -188,12 +188,12 @@ IgbCircularProgressModule.Register(IgniteUIBlazor);
 
 ## スタイル設定
 
-$ProductName$ Circular Procress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
+{ProductName} Circular Procress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
-           alt="$Platform$ Circular Progress のスタイル設定"
+           alt="{Platform} Circular Progress のスタイル設定"
            github-src="inputs/circular-progress-indicator/styling">
 </code-view>
 

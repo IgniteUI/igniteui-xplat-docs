@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Data Grid | Remote Data | Infragistics
-_description: Use the Infragistics $Platform$ grid component's Virtual Data Source to bind remote data. View $ProductName$ table tutorials!
-_keywords: $Platform$ Table, Data Grid, virtual data, $ProductName$, Infragistics, data binding
+title: {Platform} Data Grid | Remote Data | Infragistics
+_description: Use the Infragistics {Platform} grid component's Virtual Data Source to bind remote data. View {ProductName} table tutorials!
+_keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 ---
-# $Platform$ Grid Binding Virtual Data
+# {Platform} Grid Binding Virtual Data
 
-The $ProductName$ Data Table / Data Grid supports data binding to remote datasources with one line of code.  With the $Platform$ data table’s Virtual Data Source, you simply configure the $Platform$ grid with your remote URI and which OData Entity you’d like returned, and the $Platform$ grid does the rest of the work for you.
+The {ProductName} Data Table / Data Grid supports data binding to remote datasources with one line of code.  With the {Platform} data table’s Virtual Data Source, you simply configure the {Platform} grid with your remote URI and which OData Entity you’d like returned, and the {Platform} grid does the rest of the work for you.
 
-## $Platform$ Grid Binding Virtual Data Example
+## {Platform} Grid Binding Virtual Data Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           alt="$Platform$ Grid Binding Virtual Data Example"
+           alt="{Platform} Grid Binding Virtual Data Example"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ Data Table / Data Grid supports data binding to remote datasou
 
 
 <!-- Angular, React, WebComponents -->
-In addition to the core and $Platform$ data grid packages you will also have to install the datasources package.
+In addition to the core and {Platform} data grid packages you will also have to install the datasources package.
 
 - **npm install --save {PackageCore}**
 - **npm install --save {PackageGrids}**
@@ -67,7 +67,7 @@ ModuleManager.register(
 
 ## Code Snippet
 
-Now that the $Platform$ data grid module is imported, the next step is the basic configuration of the $Platform$ grid that binds to remote data. Create the virtual data source. Assign the url where the data will be retrieved from to the <b>baseUri</b> property. Setting the <b>entitySet</b> property will inform which table to retrieve from the virtual data source.
+Now that the {Platform} data grid module is imported, the next step is the basic configuration of the {Platform} grid that binds to remote data. Create the virtual data source. Assign the url where the data will be retrieved from to the <b>baseUri</b> property. Setting the <b>entitySet</b> property will inform which table to retrieve from the virtual data source.
 
 ```tsx
 <IgrDataGrid

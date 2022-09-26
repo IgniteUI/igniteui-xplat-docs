@@ -1,16 +1,16 @@
 ---
-title: $Platform$ ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。$ProductName$ ラジアル ゲージの設定可能な要素について説明します。
-_keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
+title: {Platform} ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。{ProductName} ラジアル ゲージの設定可能な要素について説明します。
+_keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
-# $Platform$ ラジアル ゲージの概要
+# {Platform} ラジアル ゲージの概要
 
-$Platform$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。`XamRadialGauge` には、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
+{Platform} Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。`XamRadialGauge` には、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
 
-## $Platform$ ラジアル ゲージの例
+## {Platform} ラジアル ゲージの例
 
 以下のサンプルは、同じ `XamRadialGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
@@ -18,7 +18,7 @@ $Platform$ Radial Gauge コンポーネントは、針、目盛り、範囲、�
 <code-view style="height: 375px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$Platform$ ラジアル ゲージの例"
+           alt="{Platform} ラジアル ゲージの例"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 

@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Avatar | レイアウト コントロール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
-_keywords: avatar, layout, $ProductName$, Infragistics, アバター, レイアウト, インフラジスティックス
+title: {Platform} Avatar | レイアウト コントロール | インフラジスティックス
+_description: インフラジスティックスの {Platform} Avatar コンポーネントを使用して、画像、アイコン、またはイニシャルを表示します。
+_keywords: avatar, layout, {ProductName}, Infragistics, アバター, レイアウト, インフラジスティックス
 mentionedTypes: ['Avatar']
 _language: ja
 ---
 
-# $Platform$ Avatar (アバター)
+# {Platform} Avatar (アバター)
 
-$ProductName$ アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
+{ProductName} アバターは、アプリケーションでイニシャル、画像、またはアイコンを表示するのに役立ちます。
 
-## $Platform$ Icon Avatar の例
+## {Platform} Icon Avatar の例
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="layouts/avatar/icon">
 </code-view>
 
@@ -24,7 +24,7 @@ $ProductName$ アバターは、アプリケーションでイニシャル、画
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ npm パッケージをインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} npm パッケージをインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -33,7 +33,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -135,7 +135,7 @@ defineComponents(IgcAvatarComponent);
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="layouts/avatar/initials">
 </code-view>
 
@@ -172,7 +172,7 @@ defineComponents(IgcAvatarComponent);
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="layouts/avatar/image">
 </code-view>
 
@@ -183,7 +183,7 @@ defineComponents(IgcAvatarComponent);
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="layouts/avatar/shape">
 </code-view>
 
@@ -194,7 +194,7 @@ defineComponents(IgcAvatarComponent);
 <code-view style="height: 130px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
-           alt="$Platform$ Avatar の例"
+           alt="{Platform} Avatar の例"
            github-src="layouts/avatar/size">
 </code-view>
 

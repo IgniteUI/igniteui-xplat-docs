@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Dock Manager | Layout Controls | Infragistics
-_description: Use Infragistics' $Platform$ dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out $ProductName$ dock manager tutorials!
-_keywords: dock manager, layout, $ProductName$, Infragistics
+title: {Platform} Dock Manager | Layout Controls | Infragistics
+_description: Use Infragistics' {Platform} dock manager component to manage the layout through panes, with the ability to customize it by pinning, resizing, moving and hiding panes. Check out {ProductName} dock manager tutorials!
+_keywords: dock manager, layout, {ProductName}, Infragistics
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ Dock Manager Overview
+# {Platform} Dock Manager Overview
 
-The Infragistics $Platform$ Dock Manager provides a means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
+The Infragistics {Platform} Dock Manager provides a means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving, maximizing and hiding panes.
 
-## $Platform$ Dock Manager Example
+## {Platform} Dock Manager Example
 
-This example shows most functionalities and docking options of the $Platform$ Dock Manager.
+This example shows most functionalities and docking options of the {Platform} Dock Manager.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="$Platform$ Dock Manager Example"
+           alt="{Platform} Dock Manager Example"
            github-src="layouts/dock-manager/overview">
 </code-view>
 
@@ -328,7 +328,7 @@ Contents and panes can be added to the [`layout`]({environment:infragisticsBaseU
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
-           alt="$Platform$ Dock Manager Add Content Runtime Example"
+           alt="{Platform} Dock Manager Add Content Runtime Example"
            github-src="layouts/dock-manager/add-content-runtime">
 </code-view>
 
@@ -356,7 +356,7 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="$Platform$ Dock Manager Pane Closing Example"
+           alt="{Platform} Dock Manager Pane Closing Example"
            github-src="layouts/dock-manager/hiding-panes">
 </code-view>
 <!-- end: WebComponents -->
@@ -446,7 +446,7 @@ If everything went well, we should now have a DockManager with customized icons 
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
-           alt="$Platform$ Dock Manager Customize Buttons Example"
+           alt="{Platform} Dock Manager Customize Buttons Example"
            github-src="layouts/dock-manager/customize-buttons">
 </code-view>
 <!-- end: WebComponents -->
@@ -502,7 +502,7 @@ The shortcuts are as follows:
 ### Other
  - <kbd>Alt</kbd> + <kbd>F3</kbd> Closes the active pane
 
-Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#$Platform$-dock-manager-example).
+Practice all of the above mentioned actions in the sample [`demo`](dock-manager.md#{Platform}-dock-manager-example).
 
 <!-- WebComponents -->
 
@@ -521,7 +521,7 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="$Platform$ Dock Manager Styling Example"
+           alt="{Platform} Dock Manager Styling Example"
            github-src="layouts/dock-manager/styling">
 </code-view>
 

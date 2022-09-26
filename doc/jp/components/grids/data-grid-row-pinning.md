@@ -1,29 +1,29 @@
 ---
-title: $Platform$ データ グリッド | 行のピン固定 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ グリッド コンポーネントの行ピン固定機能を使用し、豊富で使いやすい API によって、行変更の順序をロックします。$ProductName$ テーブルのサンプルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, row pinning, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 行のピン固定, インフラジスティックス
+title: {Platform} データ グリッド | 行のピン固定 | インフラジスティックス
+_description: インフラジスティックスの {Platform} グリッド コンポーネントの行ピン固定機能を使用し、豊富で使いやすい API によって、行変更の順序をロックします。{ProductName} テーブルのサンプルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のピン固定, インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ 行のピン固定
+# {Platform} 行のピン固定
 
-$ProductName$ Data Table / Data Grid では、キーまたは基本データ ソースの項目を使用した行のピン固定が可能です。行を固定するとその行が $PlatformLower$ データ グリッドの最上部に複製され、薄い灰色の背景で固定されたままになり、実際の行は低い不透明度でレンダリングされます。
+{ProductName} Data Table / Data Grid では、キーまたは基本データ ソースの項目を使用した行のピン固定が可能です。行を固定するとその行が {PlatformLower} データ グリッドの最上部に複製され、薄い灰色の背景で固定されたままになり、実際の行は低い不透明度でレンダリングされます。
 
-## $Platform$ 行のピン固定の例
+## {Platform} 行のピン固定の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
-           alt="$Platform$ 行のピン固定の例"
+           alt="{Platform} 行のピン固定の例"
            github-src="grids/data-grid/row-pinning">
 </code-view>
 
 <div class="divider--half"></div>
 
-$Platform$ データ グリッドでターゲット行の基本データ項目を $Platform$ グリッドの pinnedItems コレクションに追加して行をピン固定できます。
+{Platform} データ グリッドでターゲット行の基本データ項目を {Platform} グリッドの pinnedItems コレクションに追加して行をピン固定できます。
 
 ## コード スニペット
 

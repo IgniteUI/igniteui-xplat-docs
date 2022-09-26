@@ -1,23 +1,23 @@
 ---
-title: $Platform$ List Component | Infragistics
-_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+title: {Platform} List Component | Infragistics
+_description: Infragistics' {Platform} List component helps you with presenting a group of items. Learn how {ProductName} can help you better display your data!
+_keywords: {Platform} List, Item List, overview, {ProductName}, data binding, Infragistics
 _language: kr
 mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
 ---
 
-# $Platform$ List Overview
+# {Platform} List Overview
 
-The $ProductName$ List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
+The {ProductName} List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
 
-## $Platform$ List Example
+## {Platform} List Example
 
 The following example represents a list populated with contacts with a name and a phone number properties. The `List` component uses `Avatar` and `Button` to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/overview">
 </code-view>
 
@@ -28,7 +28,7 @@ The following example represents a list populated with contacts with a name and 
 At its core the list web component allows you to easily display a vertical list of items.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -89,7 +89,7 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="$Platform$ Add list items Example"
+           alt="{Platform} Add list items Example"
            github-src="grids/list/add-list-items">
 </code-view>
 
@@ -142,7 +142,7 @@ After all that our list component should now look like that:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/list-item-content">
 </code-view>
 
@@ -291,7 +291,7 @@ And here's the result of all that work:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/overview">
 </code-view>
 
@@ -323,7 +323,7 @@ igc-list-item::part(end) {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/styling">
 </code-view>
 
@@ -331,7 +331,7 @@ igc-list-item::part(end) {
 
 ## API References
 
-In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional $ProductName$ components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
+In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
 * `List`
 * `ListHeader`

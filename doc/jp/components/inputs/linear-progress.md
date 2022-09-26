@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Linear Progress | Linear Progress | インフラジスティックス
+title: {Platform} Linear Progress | Linear Progress | インフラジスティックス
 _description: プログレス バーを表示し、Linear Progress Indicator コンポーネントを使用して、無限の色とストライプ オプションで外観をカスタマイズします。
-_keywords: $Platform$ Linear Progress, $ProductName$, インフラジスティックス
+_keywords: {Platform} Linear Progress, {ProductName}, インフラジスティックス
 mentionedTypes: ['LinearProgress']
 _language: ja
 ---
 
-# $Platform$ Linear Progress (リニア プログレス) の概要
-$ProductName$ Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、このコンポーネントがストライプまたは実線色でスタイル設定できます。
+# {Platform} Linear Progress (リニア プログレス) の概要
+{ProductName} Linear Progress Indicator コンポーネントは、変更でアプリケーションの進行状況を表す視覚的なインジケーターです。`LinearProgress` インジケーターは状態変更で外観を更新します。また、このコンポーネントがストライプまたは実線色でスタイル設定できます。
 
-## $Platform$ Linear Progress の例
+## {Platform} Linear Progress の例
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="$Platform$  Linear Progress の例"
+           alt="{Platform}  Linear Progress の例"
            github-src="inputs/linear-progress-indicator/simple">
 </code-view>
 
@@ -23,7 +23,7 @@ $ProductName$ Linear Progress Indicator コンポーネントは、変更でア�
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +40,7 @@ defineComponents(IgcLinearProgressComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -106,7 +106,7 @@ IgbLinearProgressModule.Register(IgniteUIBlazor);
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="$Platform$  Linear Progress Striped の例"
+           alt="{Platform}  Linear Progress Striped の例"
            github-src="inputs/linear-progress-indicator/types">
 </code-view>
 
@@ -145,7 +145,7 @@ IgbLinearProgressModule.Register(IgniteUIBlazor);
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="$Platform$ Linear Progress Text の例"
+           alt="{Platform} Linear Progress Text の例"
            github-src="inputs/linear-progress-indicator/striped">
 </code-view>
 
@@ -158,7 +158,7 @@ IgbLinearProgressModule.Register(IgniteUIBlazor);
 <code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="$Platform$ Linear Progress Dynamic の例"
+           alt="{Platform} Linear Progress Dynamic の例"
            github-src="inputs/linear-progress-indicator/dynamic">
 </code-view>
 
@@ -171,7 +171,7 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="$Platform$ Linear Progress のスタイル設定"
+           alt="{Platform} Linear Progress のスタイル設定"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 

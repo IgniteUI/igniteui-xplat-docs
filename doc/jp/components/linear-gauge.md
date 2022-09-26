@@ -1,23 +1,23 @@
 ---
-title: $Platform$ リニア ゲージ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ リニア ゲージ コントロールを使用して、シンプルで簡潔なビューでデータを可視化します。$ProductName$ リニア ゲージの設定可能な要素について説明します。
-_keywords: linear gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, リニア ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
+title: {Platform} リニア ゲージ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} リニア ゲージ コントロールを使用して、シンプルで簡潔なビューでデータを可視化します。{ProductName} リニア ゲージの設定可能な要素について説明します。
+_keywords: linear gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, リニア ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamLinearGauge']
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
-# $Platform$ リニア ゲージの概要
+# {Platform} リニア ゲージの概要
 
-$ProductName$ リニア ゲージ コンポーネントを使用すると、リニア ゲージの形式でデータを視覚化できます。`XamLinearGauge` は、スケールおよび 1 つ以上の範囲と比較した値のシンプルで簡潔なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
+{ProductName} リニア ゲージ コンポーネントを使用すると、リニア ゲージの形式でデータを視覚化できます。`XamLinearGauge` は、スケールおよび 1 つ以上の範囲と比較した値のシンプルで簡潔なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれており、アニメーションでは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。また構成可能な向きや方向、視覚要素やツールチップなどがサポートされます。
 
-## $Platform$ リニア ゲージの例
+## {Platform} リニア ゲージの例
 
 以下のサンプルは、同じ `XamLinearGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
-           alt="$Platform$ リニア ゲージの例"
+           alt="{Platform} リニア ゲージの例"
            github-src="gauges/linear-gauge/animation">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ リニア ゲージ コンポーネントを使用すると、リ�
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
-$Platform$ gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
+{Platform} gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}

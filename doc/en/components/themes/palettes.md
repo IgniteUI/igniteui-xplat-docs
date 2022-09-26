@@ -1,17 +1,17 @@
 ---
-title: $Platform$ Styling and Themes | $Platform$ Palettes | Infragistics
+title: {Platform} Styling and Themes | {Platform} Palettes | Infragistics
 _description:
-_keywords: $ProductName$, Infragistics, Palettes, Styling
+_keywords: {ProductName}, Infragistics, Palettes, Styling
 mentionedTypes: ["Palettes"]
 ---
 
-# Palettes in $ProductName$
+# Palettes in {ProductName}
 
-$ProductName$ exposes CSS variables that allow you to update the colors in your application in a consistent way.
+{ProductName} exposes CSS variables that allow you to update the colors in your application in a consistent way.
 
 ## Overview
 
-Palettes in $ProductName$ provide over 100 color variants for 8 base colors - `primary`, `secondary`, `gray`, `info`, `success`, `warn`, `error`, and `surface`.
+Palettes in {ProductName} provide over 100 color variants for 8 base colors - `primary`, `secondary`, `gray`, `info`, `success`, `warn`, `error`, and `surface`.
 
 The `primary`, `secondary`, and `gray` colors follow the [2014 Material Design Color Palette](https://material.io/design/color/the-color-system.html#tools-for-picking-colors). This means these colors include the following variants:
 
@@ -169,7 +169,7 @@ Then you can simply overhaul the colors in your application by changing the valu
 
 ## Dark vs. Light
 
-Palettes in $ProductName$ dictate whether a theme is going to be light or dark. The two colors that have the biggest impact on that are `gray` and `surface`. See, the `gray` color variants in all themes are based on either a very light color shade, like `#fff`, or a very dark one like `#222`. Light themes have `gray` variants based on dark shades of gray, while dark themes are the opposite - all `gray` variants are a shade of white. These `gray` colors will be displayed against another color, usually the `surface` color. The `surface` color should always be on the opposite end of the `gray` in the gray scale to ensure themes look good.
+Palettes in {ProductName} dictate whether a theme is going to be light or dark. The two colors that have the biggest impact on that are `gray` and `surface`. See, the `gray` color variants in all themes are based on either a very light color shade, like `#fff`, or a very dark one like `#222`. Light themes have `gray` variants based on dark shades of gray, while dark themes are the opposite - all `gray` variants are a shade of white. These `gray` colors will be displayed against another color, usually the `surface` color. The `surface` color should always be on the opposite end of the `gray` in the gray scale to ensure themes look good.
 
 To make this a bit clearer, below is the complete list of all `gray` and `surface` color variants in both a light and a dark theme.
 

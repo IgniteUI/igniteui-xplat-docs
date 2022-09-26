@@ -1,24 +1,24 @@
 ---
-title: $Platform$ Data Grid | Column Pinning | Infragistics
-_description: See how Infragistics' $ProductName$ grid component supports the ability to pin columns and gives you the flexibility over how you wish to position your columns. View $ProductName$ table demos for more information!
-_keywords: $Platform$ Table, Data Grid, column pinning, $ProductName$, Infragistics
+title: {Platform} Data Grid | Column Pinning | Infragistics
+_description: See how Infragistics' {ProductName} grid component supports the ability to pin columns and gives you the flexibility over how you wish to position your columns. View {ProductName} table demos for more information!
+_keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Column Pinning Overview
+# {Platform} Grid Column Pinning Overview
 
-The $ProductName$ Data Grid supports the ability to pin columns, allowing the end users to lock a column in a particular column order.
+The {ProductName} Data Grid supports the ability to pin columns, allowing the end users to lock a column in a particular column order.
 
 A column or multiple columns can be pinned to the left-hand or right-hand side of the Data Grid. In addition, you can change the pin state of the columns by utilizing the `PinColumn` function.
 
-## $Platform$ Grid Column Pinning Example
+## {Platform} Grid Column Pinning Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="$Platform$ Grid Column Pinning Example"
+           alt="{Platform} Grid Column Pinning Example"
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
 
@@ -39,7 +39,7 @@ The `PinColumn` function contains two required parameters. The first parameter i
 
 ## Code Snippet
 
-The following code demonstrates how to implement column pinning in the $Platform$ Data Grid with column pinning by using the `Pinned` property and `PinColumn` function:
+The following code demonstrates how to implement column pinning in the {Platform} Data Grid with column pinning by using the `Pinned` property and `PinColumn` function:
 
 <!--React-->
 ```tsx

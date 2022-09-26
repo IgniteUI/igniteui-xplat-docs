@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Badge | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, Web Components, $Platform$ Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, $Platform$ バッジ コンポーネント, インフラジスティックス
+title: {Platform} Badge | インフラジスティックス
+_description: インフラジスティックスの {Platform} Badge コンポーネントを使用すると、事前定義されたスタイルでコンテンツを表示して、アプリケーション内の任意の場所で他のコンポーネントを装飾できます。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, Web Components, {Platform} Badge Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, ウェブ コンポーネント, {Platform} バッジ コンポーネント, インフラジスティックス
 mentionedTypes: ['Badge']
 _language: ja
 ---
 
-# $Platform$ Badge (バッジ) の概要
+# {Platform} Badge (バッジ) の概要
 
-$ProductName$ Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
+{ProductName} Badge は、視覚的な通知が必要な場合に、アバター、ナビゲーション メニュー、またはアプリケーション内の他のコンポーネントと組み合わせて使用されるコンポーネントです。バッジは通常、情報、成功、警告、またはエラーを伝達するために事前定義されたスタイルでデザインされています。
 
-## $Platform$ Badge の例
+## {Platform} Badge の例
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="$Platform$ Badge の例"
+           alt="{Platform} Badge の例"
            github-src="inputs/badge/outlined">
 </code-view>
 
@@ -24,7 +24,7 @@ $ProductName$ Badge は、視覚的な通知が必要な場合に、アバター
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 次に、以下のように、`Badge` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
@@ -41,7 +41,7 @@ defineComponents(IgcBadgeComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -104,7 +104,7 @@ IgbBadgeModule.Register(IgniteUIBlazor);
 
 ### バリアント
 
-$ProductName$ バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
+{ProductName} バッジは、いくつかの事前定義されたスタイルのバリアントをサポートします。サポートされている値 `primary` (デフォルト)、`info`、`success`、`warning`、または `danger` のいずれかを `variant` 属性に割り当てることにより、バリアントを変更できます。
 
 ```tsx
 <IgrBadge variant="success" ></IgrBadge>
@@ -121,7 +121,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="$Platform$ Badge の例"
+           alt="{Platform} Badge の例"
            github-src="inputs/badge/variants">
 </code-view>
 
@@ -144,7 +144,7 @@ $ProductName$ バッジは、いくつかの事前定義されたスタイルの
 <code-view style="height: 60px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="$Platform$ Badge の例"
+           alt="{Platform} Badge の例"
            github-src="inputs/badge/shape">
 </code-view>
 

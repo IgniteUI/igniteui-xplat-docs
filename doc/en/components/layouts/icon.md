@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Icon Component | $ProductName$
-_description: See how you can easily get started with $Platform$ Icon Component. Choose icons and select from different styling options to customize them further.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Icon components, $Platform$ Icon controls
+title: {Platform} Icon Component | {ProductName}
+_description: See how you can easily get started with {Platform} Icon Component. Choose icons and select from different styling options to customize them further.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Icon components, {Platform} Icon controls
 mentionedTypes: ['Icon']
 ---
 
-# $Platform$ Icon Overview
+# {Platform} Icon Overview
 
-The $Platform$ Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it.
+The {Platform} Icon component allows you to easily display font or choose from a large set of predefined SVG icons, but it also gives you the ability to create custom font icons for your project. Benefiting from a number of attributes, you can define or change the size of the icon in use or apply different styles to it.
 
-## $Platform$ Icon Example
+## {Platform} Icon Example
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Example"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon Example"
            github-src="layouts/icon/sizing">
 </code-view>
 
@@ -22,7 +22,7 @@ The $Platform$ Icon component allows you to easily display font or choose from a
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -44,7 +44,7 @@ IgbIconModule.Register(IgniteUIBlazor);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -137,7 +137,7 @@ public iconRef(icon: IgrIcon){
     if(!icon){
         return;
     }
-              
+
     icon.registerIcon("search", "https://unpkg.com/material-design-icons@3.0.1/action/svg/production/ic_build_24px.svg", "material");
 }
 ```
@@ -198,7 +198,7 @@ public iconRef(icon: IgrIcon){
 
     const searchIcon =
       '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>';
-              
+
     icon.registerIconFromText("search", searchIcon, "material");
 }
 ```
@@ -223,7 +223,7 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 
 <code-view style="height: 60px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="$Platform$ Icon Sizing"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon Sizing"
            github-src="layouts/icon/sizing">
 </code-view>
 
@@ -256,7 +256,7 @@ igc-icon {
 
 <code-view style="height: 70px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="$Platform$ Icon Sizing"
+           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="{Platform} Icon Sizing"
            github-src="layouts/icon/styling">
 </code-view>
 

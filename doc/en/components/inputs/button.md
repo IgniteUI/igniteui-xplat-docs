@@ -1,27 +1,27 @@
 ---
-title: $Platform$ Button Component | $ProductName$
-_description: Get started with the $Platform$ Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the $Platform$ Button OnClick event.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Button Component | {ProductName}
+_description: Get started with the {Platform} Button Component. Select button variants, configure sizes, define styling, and gain flexibility through the {Platform} Button OnClick event.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Button Overview
+# {Platform} Button Overview
 
-The $Platform$ Button Component lets you enable clickable elements that trigger actions in your $Platform$ app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the $Platform$ Button OnClick event, toggle the $Platform$ button, disable the $Platform$ button, and more.
+The {Platform} Button Component lets you enable clickable elements that trigger actions in your {Platform} app. You get full control over how you set button variants, configure styles for the wrapped element, and define sizes. The Button Component also gives flexibility through the {Platform} Button OnClick event, toggle the {Platform} button, disable the {Platform} button, and more.
 
-## $Platform$ Button Example
+## {Platform} Button Example
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button Example"
+           alt="{Platform} Button Example"
            github-src="inputs/button/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +38,7 @@ defineComponents(IgcButtonComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -298,7 +298,7 @@ The result of implementing the above code should look like the following:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button Sizing Example"
+           alt="{Platform} Button Sizing Example"
            github-src="inputs/button/size">
 </code-view>
 
@@ -307,10 +307,10 @@ The result of implementing the above code should look like the following:
 Setting the `download` property will prompt the user to save the linked URL instead of navigating to it.
 
 ```tsx
-<IgrButton 
-    href="" 
-    variant="contained" 
-    download="url" 
+<IgrButton
+    href=""
+    variant="contained"
+    download="url"
     target="_blank" >
     <span>Download</span>
 </IgrButton>
@@ -351,7 +351,7 @@ igc-button::part(base) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button Styling Example"
+           alt="{Platform} Button Styling Example"
            github-src="inputs/button/styling">
 </code-view>
 

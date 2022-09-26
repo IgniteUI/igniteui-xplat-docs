@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Data Grid | Row Grouping | Infragistics
-_description: Use Infragistics' $Platform$ grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out $ProductName$ table demos!
-_keywords: $Platform$ Table, Data Grid, row grouping, groupby area,  $ProductName$, Infragistics
+title: {Platform} Data Grid | Row Grouping | Infragistics
+_description: Use Infragistics' {Platform} grid component's Group Row feature to group rows into a sticky header Row Group. This is an easy way to visually group data based on your criteria. Check out {ProductName} table demos!
+_keywords: {Platform} Table, Data Grid, row grouping, groupby area,  {ProductName}, Infragistics
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Row Grouping
+# {Platform} Row Grouping
 
-The $ProductName$ Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
+The {ProductName} Data Table / Data Grid lets you group rows into a ‘sticky header’ Row Group.  This is similar to the Group By feature in Microsoft Outlook, which is an easy way to visually group data based on your own criteria.
 
-## $Platform$ Row Group-By Area Example
+## {Platform} Row Group-By Area Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-grouping"
-           alt="$Platform$ Row Grouping Example"
+           alt="{Platform} Row Grouping Example"
            github-src="grids/data-grid/row-grouping">
 </code-view>
 
@@ -30,7 +30,7 @@ Set `IsGroupByAreaVisible` property on the DataGrid to True, as shown in the exa
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-group-descriptions"
-           alt="$Platform$ Row Grouping Example"
+           alt="{Platform} Row Grouping Example"
            github-src="grids/data-grid/row-grouping-descriptions">
 </code-view>
 

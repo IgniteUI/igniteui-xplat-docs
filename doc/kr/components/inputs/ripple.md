@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Ripple
-_description: With $ProductName$ Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Ripple components, $Platform$ Ripple controls
+title: {Platform} Ripple
+_description: With {ProductName} Ripple, developers can define an area which received a ripple animation effect for a visually enticing UI enhancement.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Ripple components, {Platform} Ripple controls
 _language: kr
 mentionedTypes: ['Ripple']
 ---
 
-# $Platform$ Ripple Overview
+# {Platform} Ripple Overview
 
-The $ProductName$ Ripple component creates an animation in response to a touch or a mouse click.
+The {ProductName} Ripple component creates an animation in response to a touch or a mouse click.
 
 <div class="divider"></div>
 
-## $Platform$ Ripple Example
+## {Platform} Ripple Example
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="$Platform$ Ripple Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="{Platform} Ripple Example"
            github-src="inputs/ripple/button">
 </code-view>
 
@@ -55,7 +55,7 @@ igc-ripple {
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="$Platform$ Ripple Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="{Platform} Ripple Example"
            github-src="inputs/ripple/color">
 </code-view>
 

@@ -1,23 +1,23 @@
 ---
-title: $Platform$ Axis Options | Data Visualization | Infragistics
-_description: Infragistics' $Platform$ Axis Options
-_keywords: $Platform$ Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
+title: {Platform} Axis Options | Data Visualization | Infragistics
+_description: Infragistics' {Platform} Axis Options
+_keywords: {Platform} Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
 mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $Platform$ Axis Options
+# {Platform} Axis Options
 
-In all $ProductName$ charts, the axes provide properties for visual configurations such as titles, labels, and ranges. These features are demonstrated in the examples provided below.
+In all {ProductName} charts, the axes provide properties for visual configurations such as titles, labels, and ranges. These features are demonstrated in the examples provided below.
 
 ## Axis Titles Example
 
-The axis titles feature of the $Platform$ charts, allows you to add contextual information to the your chart. You can customize the look and feel of the axis titles in many different ways such as applying different font styles, colors, margins, and alignments.
+The axis titles feature of the {Platform} charts, allows you to add contextual information to the your chart. You can customize the look and feel of the axis titles in many different ways such as applying different font styles, colors, margins, and alignments.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-titles"
-           alt="$Platform$ Axis Titles Example"
+           alt="{Platform} Axis Titles Example"
            github-src="charts/category-chart/axis-titles">
 </code-view>
 
@@ -26,12 +26,12 @@ The axis titles feature of the $Platform$ charts, allows you to add contextual i
 
 ## Axis Labels Example
 
-The $Platform$ Charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels. The following example shows how to use these features of axes.
+The {Platform} Charts allows you full control over configuring, formatting, and styling the font of the labels displayed on an axis in your chart. You can change the rotation angle, margin, horizontal and vertical alignment, color, padding, and visibility of axis labels. The following example shows how to use these features of axes.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-labels"
-           alt="$Platform$ Axis Labels Example"
+           alt="{Platform} Axis Labels Example"
            github-src="charts/category-chart/axis-labels">
 </code-view>
 
@@ -49,14 +49,14 @@ After setting the `AutoMarginAndAngleUpdateMode`, you can set the `ShouldAutoExp
 
 ## Axis Range Example
 
-In the $Platform$ charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.
+In the {Platform} charts, you can define a range minimum and range maximum value of a numeric or time axis. The range minimum is the lowest value of the axis and the range maximum is the highest value of the axis. These are set by setting the `YAxisMinimumValue` and `YAxisMaximumValue` options.
 
 By default, charts will calculate the minimum and maximum values for the numeric and time axis range based on the lowest and highest corresponding value points in your data, but this automatic calculation may not be appropriate for your set of data points in all cases. For example, if your data has a minimum value of 850, you may want to set the `YAxisMinimumValue` to 800 so that there will be a space value of 50 between the axis minimum and the lowest value of data points. The same idea can be applied to the axis minimum value and the highest value of data points using the `YAxisMaximumValue` property.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-range"
-           alt="$Platform$ Axis Range Example"
+           alt="{Platform} Axis Range Example"
            github-src="charts/category-chart/axis-range">
 </code-view>
 
@@ -74,7 +74,7 @@ In addition to `YAxisMode` property, the `FinancialChart` control has `XAxisMode
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"
-           alt="$Platform$ Axis Range Example"
+           alt="{Platform} Axis Range Example"
            github-src="charts/financial-chart/axis-types">
 </code-view>
 
@@ -82,18 +82,18 @@ In addition to `YAxisMode` property, the `FinancialChart` control has `XAxisMode
 
 ## Axis Gap Example
 
-The `XAxisGap` property of the $Platform$ charts, determines the amount of space between columns or bars of plotted series. This property accepts a numeric value between 0.0 and 1.0. The value represents a relative width of the gap out of the available number of pixels between the series. Setting this property to 0 would mean there is no gap rendered between the series, and setting it 1 would render the maximum available gap.
+The `XAxisGap` property of the {Platform} charts, determines the amount of space between columns or bars of plotted series. This property accepts a numeric value between 0.0 and 1.0. The value represents a relative width of the gap out of the available number of pixels between the series. Setting this property to 0 would mean there is no gap rendered between the series, and setting it 1 would render the maximum available gap.
 
-The `XAxisMaximumGap` property of the $Platform$ charts, determines the maximum gap value to allow. This default is set to 1.0 but can be changed depending on what you set `XAxisGap` to.
+The `XAxisMaximumGap` property of the {Platform} charts, determines the maximum gap value to allow. This default is set to 1.0 but can be changed depending on what you set `XAxisGap` to.
 
-The `XAxisMinimumGapSize` property of the $Platform$ charts, determines the minimum amount of pixels to use for the gap between the categories, if possible.
+The `XAxisMinimumGapSize` property of the {Platform} charts, determines the minimum amount of pixels to use for the gap between the categories, if possible.
 
 The following example shows the average maximum temperature in Celsius in New York City's Central Park represented by a [Column Chart](../types/column-chart.md) with an `XAxisGap` initially set to 1, and so there will be a full category's width between the columns. There is a slider that allows you to configure the gap in this example so that you can see what the different values do.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
-           alt="$Platform$ Axis Gap Example"
+           alt="{Platform} Axis Gap Example"
            github-src="charts/category-chart/axis-gap">
 </code-view>
 
@@ -101,14 +101,14 @@ The following example shows the average maximum temperature in Celsius in New Yo
 
 ## Axis Overlap Example
 
-The `XAxisOverlap` property of the $Platform$ charts, allows setting the overlap of the rendered columns or bars of plotted series. This property accepts a numeric value between -1.0 and 1.0. The value represents a relative overlap out of the available number of pixels dedicated to each series. Setting this property to a negative value (down to -1.0) results in the categories being pushed away from each other, producing a gap between themselves. Conversely, setting this property to a positive value (up to 1.0) results in the categories overlapping each other. A value of 1 directs the chart to render the categories on top of each other.
+The `XAxisOverlap` property of the {Platform} charts, allows setting the overlap of the rendered columns or bars of plotted series. This property accepts a numeric value between -1.0 and 1.0. The value represents a relative overlap out of the available number of pixels dedicated to each series. Setting this property to a negative value (down to -1.0) results in the categories being pushed away from each other, producing a gap between themselves. Conversely, setting this property to a positive value (up to 1.0) results in the categories overlapping each other. A value of 1 directs the chart to render the categories on top of each other.
 
 The following example shows a comparison of the highest grossing worldwide film franchises compared by the total world box office revenue of the franchise and the highest grossing movie in the series, represented by a [Column Chart](../types/column-chart.md) with an `XAxisOverlap` initially set to 1, and so the columns will completely overlap each other. There is a slider that allows you to configure the overlap in this example so that you can see what the different values do.
 
 <code-view style="height: 450px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
-           alt="$Platform$ Axis Overlap Example"
+           alt="{Platform} Axis Overlap Example"
            github-src="charts/category-chart/axis-overlap">
 </code-view>
 

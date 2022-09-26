@@ -1,13 +1,13 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Geographic Imagery | Infragistics
+title: {Platform} Map | Data Visualization Tools | Geographic Imagery | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: $Platform$ map, Geographic Imagery, tiles, $ProductName$, Infragistics
+_keywords: {Platform} map, Geographic Imagery, tiles, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $Platform$ Geographic Imagery
+# {Platform} Geographic Imagery
 
-$Platform$ Geographic imagery is a detailed representation of the world from a top view perspective. It can consist of an aerial-satellite map or road maps in a multi-scale imagery tiles structure. The geographic map component can display geographic imagery in order to provide end-users with rich and interactive world maps and geographic context for geo-spatial data.
+{Platform} Geographic imagery is a detailed representation of the world from a top view perspective. It can consist of an aerial-satellite map or road maps in a multi-scale imagery tiles structure. The geographic map component can display geographic imagery in order to provide end-users with rich and interactive world maps and geographic context for geo-spatial data.
 
 ## Types of geographic imagery
 The map component can display geographic imagery tiles from three supported mapping services or from other mapping services that can be easily implemented in an application.

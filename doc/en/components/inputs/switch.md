@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Switch Component – $ProductName$
-_description: $ProductName$ Switch component enables developers to use binary on/off or true/false data input functions within their applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls
+title: {Platform} Switch Component – {ProductName}
+_description: {ProductName} Switch component enables developers to use binary on/off or true/false data input functions within their applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls
 mentionedTypes: ['Switch']
 ---
 
-# $Platform$ Switch
+# {Platform} Switch
 
-The $ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+The {ProductName} Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
 
-## $Platform$ Switch Example
+## {Platform} Switch Example
 
 <code-view style="height:100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="{Platform} Switch Example"
            github-src="inputs/switches/overview">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ Switch component is a binary choice selection component that b
 At its core, the `Switch` component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +41,7 @@ defineComponents(IgcSwitchComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -141,7 +141,7 @@ The switch can also be labelled by elements external to the switch. In this case
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="$Platform$ Avatar Example"
+           alt="{Platform} Avatar Example"
            github-src="inputs/switches/label">
 </code-view>
 
@@ -164,7 +164,7 @@ You can use the `checked` attribute to toggle on the switch.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="$Platform$ Avatar Example"
+           alt="{Platform} Avatar Example"
            github-src="inputs/switches/checking">
 </code-view>
 
@@ -215,7 +215,7 @@ You can use the `disabled` attribute to disable the switch.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="$Platform$ Avatar Example"
+           alt="{Platform} Avatar Example"
            github-src="inputs/switches/disabled">
 </code-view>
 

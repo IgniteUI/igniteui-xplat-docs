@@ -1,24 +1,24 @@
 ---
-title: $Platform$ Bullet Graph | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
-_keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
+title: {Platform} Bullet Graph | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
+_keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
 mentionedTypes: ['XamBulletGraph']
 namespace: Infragistics.Controls.Gauges
 ---
-# $Platform$ Bullet Graph Overview
+# {Platform} Bullet Graph Overview
 
-The $Platform$ bullet graph component allows for a linear and concise view of measures compared against a scale.
+The {Platform} bullet graph component allows for a linear and concise view of measures compared against a scale.
 
-The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
+The {ProductName} bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
-## $Platform$ Bullet Graph Example
+## {Platform} Bullet Graph Example
 
 The following sample demonstrates how setting multiple properties on the same `XamBulletGraph` can transform it to completely different bullet graph.
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
-           alt="$Platform$ Bullet Graph Example"
+           alt="{Platform} Bullet Graph Example"
            github-src="gauges/bullet-graph/animation">
 </code-view>
 

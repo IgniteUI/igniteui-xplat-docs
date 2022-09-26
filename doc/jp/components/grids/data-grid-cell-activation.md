@@ -1,23 +1,23 @@
 ---
-title: $Platform$ データ グリッド | リアルタイム データ グリッドとテーブル | アクティブ化 | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ Data Table / Data Grid を使用して、グリッドのセルを介したキーボードナビゲーションを可能にするセルのアクティブ化機能をサポートします。$ProductName$ テーブル チュートリアルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, cell activation, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
+title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | アクティブ化 | インフラジスティックス
+_description: インフラジスティックスの {ProductName} Data Table / Data Grid を使用して、グリッドのセルを介したキーボードナビゲーションを可能にするセルのアクティブ化機能をサポートします。{ProductName} テーブル チュートリアルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
 mentionedTypes: ['Grid', 'GridActivationMode']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッド セルのアクティブ化
+# {Platform} グリッド セルのアクティブ化
 
-$ProductName$ Data Table / Data Grid は、グリッドのセルを介したキーボードナビゲーションを可能にするセルアクティベーション機能をサポートします。これは、グリッドの `ActivationMode` プロパティを `Cell` に設定することによってアクティブになります。
+{ProductName} Data Table / Data Grid は、グリッドのセルを介したキーボードナビゲーションを可能にするセルアクティベーション機能をサポートします。これは、グリッドの `ActivationMode` プロパティを `Cell` に設定することによってアクティブになります。
 
-## $Platform$ グリッド セルのアクティブ化の例
+## {Platform} グリッド セルのアクティブ化の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-activation"
-           alt="$Platform$ グリッド セルのアクティブ化の例"
+           alt="{Platform} グリッド セルのアクティブ化の例"
            github-src="grids/data-grid/cell-activation">
 </code-view>
 

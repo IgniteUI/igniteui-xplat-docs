@@ -1,27 +1,27 @@
 ---
-title: $Platform$ Slider & Range Slider Components | $ProductName$
-_description: Learn how to configure a selection in a given range by using the thumb track with $Platform$ Slider & Range Slider part of $ProductName$. Choose between single and range slider.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics
+title: {Platform} Slider & Range Slider Components | {ProductName}
+_description: Learn how to configure a selection in a given range by using the thumb track with {Platform} Slider & Range Slider part of {ProductName}. Choose between single and range slider.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics
 mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
 ---
 
-# $Platform$ Slider & Range Slider Overview
+# {Platform} Slider & Range Slider Overview
 
-The $Platform$ Slider & Range Slider components allow selection in a given range by moving the thumb along the track. The track can be defined as continuous or stepped and you can choose between single and range slider.
+The {Platform} Slider & Range Slider components allow selection in a given range by moving the thumb along the track. The track can be defined as continuous or stepped and you can choose between single and range slider.
 
-## $Platform$ Slider & Range Slider Example
+## {Platform} Slider & Range Slider Example
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-overview"
-           alt="$Platform$ Slider Example"
+           alt="{Platform} Slider Example"
            github-src="inputs/slider/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +38,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -85,12 +85,12 @@ The simplest way to start using the `Slider` and `RangeSlider` is as follows:
 
 The main difference between the Slider and Range Slider components is that the Slider component has a single thumb, while the Range Slider component has two thumbs. The single thumb of the Slider component displays its `Value` property. The two thumbs of the Range Slider component display its `Lower` and `Upper` value properties.
 
-Both sliders emit two events when any of the values is changed. The `igcInput` event is emitted whenever a value is changed using keyboard or drag interaction while the `igcChange` event is emitted when the value change is committed on drag end or keyboard interaction.
+Both sliders emit two events when any of the values is changed. The `Input` event is emitted whenever a value is changed using keyboard or drag interaction while the `igcChange` event is emitted when the value change is committed on drag end or keyboard interaction.
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value"
-           alt="$Platform$ Slider Value Example"
+           alt="{Platform} Slider Value Example"
            github-src="inputs/slider/value">
 </code-view>
 
@@ -103,7 +103,7 @@ You can use the `Disabled` property of the sliders to disable their user interac
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-disabled"
-           alt="$Platform$ Slider Disabled Example"
+           alt="{Platform} Slider Disabled Example"
            github-src="inputs/slider/disabled">
 </code-view>
 
@@ -114,7 +114,7 @@ The track of the sliders has a minimum and maximum values which are configured u
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-constraints"
-           alt="$Platform$ Slider Constraints Example"
+           alt="{Platform} Slider Constraints Example"
            github-src="inputs/slider/constraints">
 </code-view>
 
@@ -125,7 +125,7 @@ The `Step` property specifies the granularity of the slider that the value must 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-discrete"
-           alt="$Platform$ Slider Discrete Track Example"
+           alt="{Platform} Slider Discrete Track Example"
            github-src="inputs/slider/discrete">
 </code-view>
 
@@ -138,7 +138,7 @@ The slider components could display tick marks and labels. The slider components
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-ticks"
-           alt="$Platform$ Slider Tick Marks Example"
+           alt="{Platform} Slider Tick Marks Example"
            github-src="inputs/slider/ticks">
 </code-view>
 
@@ -149,7 +149,7 @@ By default, the tick marks display labels with their values. You could modify th
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-tick-labels"
-           alt="$Platform$ Slider Tick Mark Labels Example"
+           alt="{Platform} Slider Tick Mark Labels Example"
            github-src="inputs/slider/tick-labels">
 </code-view>
 
@@ -160,7 +160,7 @@ If you want to format the thumb and tick label values, the slider provides `Valu
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value-format"
-           alt="$Platform$ Slider Value Format Example"
+           alt="{Platform} Slider Value Format Example"
            github-src="inputs/slider/value-format">
 </code-view>
 
@@ -171,7 +171,7 @@ In some cases you would want to format the values of the slider as string values
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
-           alt="$Platform$ Slider Labels Example"
+           alt="{Platform} Slider Labels Example"
            github-src="inputs/slider/labels">
 </code-view>
 
@@ -201,7 +201,7 @@ The following sample demonstrates how to style the track fill and thumb parts:
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-styling"
-           alt="$Platform$ Slider Styling Example"
+           alt="{Platform} Slider Styling Example"
            github-src="inputs/slider/styling">
 </code-view>
 

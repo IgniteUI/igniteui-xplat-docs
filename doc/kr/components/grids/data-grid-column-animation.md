@@ -1,13 +1,13 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 애니메이션 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 애니메이션 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 ---
 
-# $Platform$ 열 애니메이션
+# {Platform} 열 애니메이션
 
-$ProductName$ 데이터 표/데이터 그리드는 열 숨기기 또는 열 이동 등의 이벤트 시에 열 애니메이션을 지원합니다.  $Platform$ 데이터 그리드에서 열 애니메이션을 설정하면 해당 애니메이션이 해당 열의 모든 셀에 대해 실행됩니다.
+{ProductName} 데이터 표/데이터 그리드는 열 숨기기 또는 열 이동 등의 이벤트 시에 열 애니메이션을 지원합니다.  {Platform} 데이터 그리드에서 열 애니메이션을 설정하면 해당 애니메이션이 해당 열의 모든 셀에 대해 실행됩니다.
 
 ## 데모
 

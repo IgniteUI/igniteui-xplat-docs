@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 _language: kr
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Button Overview
+# {Platform} Button Overview
 
 The Ignite UI for Web Components Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
 
-## $Platform$ Button Example
+## {Platform} Button Example
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button Example"
+           alt="{Platform} Button Example"
            github-src="inputs/button/overview">
 </code-view>
 
@@ -137,7 +137,7 @@ And here's the result of all that work:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button Sizing Example"
+           alt="{Platform} Button Sizing Example"
            github-src="inputs/button/size">
 </code-view>
 
@@ -174,7 +174,7 @@ igc-button::part(base) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button Styling Example"
+           alt="{Platform} Button Styling Example"
            github-src="inputs/button/styling">
 </code-view>
 
