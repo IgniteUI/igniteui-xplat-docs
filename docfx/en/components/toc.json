@@ -184,6 +184,12 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Master Detail",
+        "href": "grids/lob-grid/master-detail.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
