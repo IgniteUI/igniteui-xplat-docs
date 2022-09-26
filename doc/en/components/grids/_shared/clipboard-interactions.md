@@ -44,16 +44,16 @@ You can use a custom paste handler in order to configure `paste` behavior, have 
 <!-- ComponentEnd: Grid -->
 
 ## API Usage
-We expose `clipboardOptions` property, which handles the following options:
-- `enabled` Enables/disables copying of selected cells.
-- `copyHeaders` Include the associated headers when copying.
-- `copyFormatters` Apply any existing column formatters to the copied data.
-- `separator` The string separator to use the for formatting the data in the clipboard. Default is `/t`
+We expose `ClipboardOptions` property, which handles the following options:
+- `Enabled` Enables/disables copying of selected cells.
+- `CopyHeaders` Include the associated headers when copying.
+- `CopyFormatters` Apply any existing column formatters to the copied data.
+- `Separator` The string separator to use the for formatting the data in the clipboard. Default is `/t`
 
 > [!NOTE] 
 > Excel can automatically detect text that is separated by tabs (tab-delimited `/t`) and properly paste the data into separate columns. When the paste format doesn't work, and everything you paste appears in a single column, then Excel's delimiter is set to another character, or your text is using spaces instead of tabs.
 
-- `gridCopy` Emitted when a copy operation is executed. Fired only if copy behavior is enabled through the `clipboardOptions`
+- `GridCopy` Emitted when a copy operation is executed. Fired only if copy behavior is enabled through the `ClipboardOptions`
 
 ## Additional Resources
 
