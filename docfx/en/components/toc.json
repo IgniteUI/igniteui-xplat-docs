@@ -187,7 +187,14 @@
         "name": "Multi-Column Headers",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Clipboard Interactions",
+        "href": "grids/lob-grid/clipboard-interactions.md",
+        "status": "NEW"
       }
+      
     ]
   },
   {
@@ -228,6 +235,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Clipboard Interactions",
+        "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       }
     ]
