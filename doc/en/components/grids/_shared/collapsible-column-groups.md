@@ -72,22 +72,18 @@ So let's see the markup below:
 ```
 
 ```razor
-<IgbGridColumnGroup Header="Customer Information" Collapsible="true"> <!-- Initially the column groups will be expanded--->
+ <IgbGridColumnGroup Header="Customer Information" Collapsible="true">
     <!--The column below will be visible when its parent is collapsed-->
-    <IgbGridColumn Field="CustomerName" Header="Full name" DataType="string" VisibleWhenCollapsed="true"></IgbGridColumn>
-    <!--The three columns below will be visible when its parent is expanded-->
-    <IgbGridColumn Field="CustomerID" Header="Customer ID" DataType="string" VisibleWhenCollapsed="false"></IgbGridColumn>
-    <IgbGridColumn Field="FirstName" Header="First Name" DataType="string" VisibleWhenCollapsed="false">
-    </IgbGridColumn>
-    <IgbGridColumn Field="LastName" Header="Last Name" DataType="string" VisibleWhenCollapsed="false">
-    </IgbGridColumn>
-    <IgbGridColumnGroup Header="Customer Address"> <!--This column visibility will not be changed based on parent expand/collapsed state-->
-        <IgbGridColumn Field="Country" Header="Country" DataType="string" Sortable="true">
-        </IgbGridColumn>
-        <IgbGridColumn Field="City" Header="City" DataType="string" Sortable="true">
-        </IgbGridColumn>
-    </IgbGridColumnGroup>
-</IgbGridColumnGroup>
+    <IgbGridColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbGridColumn>
+        <!--The three columns below will be visible when its parent is expanded-->
+        <IgbGridColumn Field="CustomerID" Header="Customer ID" VisibleWhenCollapsed="false"></IgbGridColumn>
+        <IgbGridColumn Field="FirstName" Header="First Name" VisibleWhenCollapsed="false"></IgbGridColumn>
+        <IgbGridColumn Field="LastName" Header="Last Name" VisibleWhenCollapsed="false"></IgbGridColumn>
+        <IgbGridColumnGroup Header="Customer Address">
+            <IgbGridColumn Field="Country" Header="Country" Sortable="true"></IgbGridColumn>
+            <IgbGridColumn Field="City" Header="City" Sortable="true"></IgbGridColumn>
+        </IgbGridColumnGroup>
+ </IgbGridColumnGroup>
 ```
 
 ```html
@@ -128,10 +124,10 @@ Default collapse indicator for the {ComponentName} is the following:
 
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
 
-<!-- Angular -->
-### Using an input property
 
-You can define custom expand/collapse template and provide it to each of the collapsible column groups using **collapsibleIndicatorTemplate** input property. Check the markup below:
+### Using property
+
+You can define custom expand/collapse template and provide it to each of the collapsible column groups using `CollapsibleIndicatorTemplate` property. Check the markup below:
 
 ```html
 <ng-template #indTemplate let-column="column">
@@ -146,6 +142,12 @@ You can define custom expand/collapse template and provide it to each of the col
     </igx-column-group>
 </igx-column-group>
 ```
+
+```razor
+TO-DO CollapsibleIndicatorTemplate SNIPPET
+```
+
+<!-- Angular -->
 ### Using igxCollapsibleIndicator directive
 
 Another way to achieve this behavior is to use the igxCollapsibleIndicator directive as shown in the example below:
