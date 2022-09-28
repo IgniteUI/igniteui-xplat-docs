@@ -96,17 +96,11 @@ We must define a factory function that returns a JavaScript object with two me
 
 ```razor
 // wwwroot / customMarkerTemplateFunc.js
-
-function customMarkerTemplateFunc ( ) {
-
-return {
-
-measure: function ( mesureInfo ) {
-
-},
-
-render: function ( renderInfo ) {
-
+function customMarkerTemplateFunc () {
+    return {
+        measure: function (mesureInfo) {},
+        render: function (renderInfo) {}
+   }
 }
 ```
 
