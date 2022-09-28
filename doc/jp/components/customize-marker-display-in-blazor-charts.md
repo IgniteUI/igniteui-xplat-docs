@@ -13,21 +13,13 @@ In this quick how-to article, we will explain how to use the marker display cust
 Contents of this article:
 
 * [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
-
 * [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
-
 * [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
-
 * [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
-
 * [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
-
 * [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
-
 * [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
-
 * [Conclusion – why Blazor is such a great framework](#in-conclusion)
-
 
 Let’s get started with the customization of the marker display in Blazor Charts and Graphs.
 
@@ -40,7 +32,6 @@ Keep in mind that prior knowledge about drawing on JavaScript and HTML Canvas is
 First, the type of sample data to be bound is the following record type. In addition to having properties such as XValue and YValue as the values ​​for the X-axis and Y-axis in the [Blazor Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview), which are generally used in [Blazor Scatter chart type](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart), we will also add:
 
 * a "Double" type Volume property
-
 * a "Color" property
 
 The Volume property value of the Blazor Chart will be used as the size of the marker and the Color property value as the fill color of the marker.
@@ -114,25 +105,20 @@ As a result, when calling this method the width and height of the marker (both i
 ```razor
 // wwwroot / customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc ( ) {
+function customMarkerTemplateFunc () {
+    return {
+        measure: function ( measureInfo ) {
+           // In this example, based on the Volume property value of the data to draw
+           // 3 times that radius (so the diameter is 2 times that) Circle as a marker
+           // Width and height are calculated and set for drawing.
+           const item = measureInfo. data . item ;
+           const size = item. Volume * 3 * 2 ;
+           measureInfo. width = size;
+           easureInfo. height = size;
+       }
+   } 
+}
 
-return {
-    measure: function ( measureInfo ) {
-
-    // In this example, based on the Volume property value of the data to draw
-
-    // 3 times that radius (so the diameter is 2 times that) Circle as a marker
-
-    // Width and height are calculated and set for drawing.
-
-    const item = measureInfo. data . item ;
-
-    const size = item. Volume * 3 * 2 ;
-
-    measureInfo. width = size;
-
-    easureInfo. height = size;
-}, 
 ...
 ```
 
@@ -147,47 +133,29 @@ You will see that the method draws a marker on the 2D context object of the HTML
 ```razor
 // wwwroot / customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc ( ) {
-
-return {
-
-    ... 
-
-    render: function ( renderInfo ) {
-
-    // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
-
-    // Take this out
-
-    const cx = renderInfo.xPosition;
-
-    const cy = renderInfo.yPosition;
-
-    const halfWidth = renderInfo.availableWidth / 2.0;
-
-    const halfHeight = renderInfo.availableHeight / 2.0;
-
-    // For the marker fill color, use the Color property value of the data to be drawn.
-
-    // (By the way, the default marker fill color is
-
-    // stored in renderInfo.data.actualItemBrush.fill)
-
-    const color = renderInfo.data.item .Color; 
-
-    // Draw a marker against the 2D context of the HTML Canvas element
-
-    // (Draw a perfect circle marker with the size calculated by the measure method)
-
-    const ctx = renderInfo.context ; 
-
-    ctx.beginPath(); 
-
-    ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`; 
-
-    ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
-
-    ctx.fill(); 
+function customMarkerTemplateFunc () {
+    return {
+        ... 
+        render: function ( renderInfo ) {
+            // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
+            // Take this out
+            const cx = renderInfo.xPosition;
+            const cy = renderInfo.yPosition;
+            const halfWidth = renderInfo.availableWidth / 2.0;
+            const halfHeight = renderInfo.availableHeight / 2.0;
+            // For the marker fill color, use the Color property value of the data to be drawn.
+            // (By the way, the default marker fill color is
+            // stored in renderInfo.data.actualItemBrush.fill)
+            const color = renderInfo.data.item .Color; 
+            // Draw a marker against the 2D context of the HTML Canvas element
+            // (Draw a perfect circle marker with the size calculated by the measure method)
+            const ctx = renderInfo.context ; 
+            ctx.beginPath(); 
+            ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`; 
+            ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
+            ctx.fill(); 
+        }
+    }
 }
 ...
 ```
@@ -205,16 +173,12 @@ With Ignite UI, it is identified by the “script name” specified in this firs
 // wwwroot / customMarkerTemplateFunc.js
 
 function customMarkerTemplateFunc ( ) {
-... 
-
+...
 }
 
 // Register the factory function implemented above in the Ignite UI.
-
 // (* The "script" name specified in the first argument of this registration is used
-
 // regardless of the JavaScript name of the factory function.
-
 igRegisterScript ( "customMarkerTemplateFunc" , customMarkerTemplateFunc );
 ```
 
@@ -223,16 +187,12 @@ The above JavaScript program is loaded into the browser. However, in order to av
 ```razor
 // wwwroot / customMarkerTemplateFunc.js
 
-( function ( ) {
-
-function customMarkerTemplateFunc ( ) {
-
-...
-} 
-
-igRegisterScript ( "customMarkerTemplateFunc" , customMarkerTemplateFunc );
-
-} ) ( );
+(function () {
+    function customMarkerTemplateFunc ( ) {
+        ...
+    } 
+    igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
+}) ();
 ```
 This completes the implementation on the JavaScript side.
 
@@ -241,13 +201,12 @@ The created JavaScript program file (.js) should be included in the fallback pag
 Mind the arrangement order of the script elements in order to ensure it will be loaded after the JavaScript runtime of Ignite UI for Blazor.
 
 ```razor
-<script src = "_content / IgniteUI.Blazor / app.bundle.js" > </script>
+<script src="_content / IgniteUI.Blazor / app.bundle.js"> </script>
 
 <!-After JavaScript in Ignite UI for Blazor,
-
 Load a custom drawing JavaScript program for marker display-> 
 
-<script src = "customMarkerTemplateFunc.js" > </script>  
+<script src="customMarkerTemplateFunc.js"></script>  
 ... 
 ```
 
@@ -258,16 +217,12 @@ Finally, specify the "script name" in the series parameter to use the JavaScript
 There is a string parameter called MarkerTemplateScript, where you specify the script name of the JavaScript program that will perform the custom drawing of the marker. It is identified by the character string specified in the first argument when registering with the igRegisterScript () JavaScript function.
 
 ```razor
-@ * In the markup in the sample Razor component (.razor) * @
+@* In the markup in the sample Razor component (.razor) *@
 <IgbDataChart Height = "320px" Width = "320px">  
-... 
-
-< IgbScatterSeries ...
-
-... 
-
-MarkerTemplateScript = "customMarkerTemplateFunc" />
-
+    ... 
+    <IgbScatterSeries ...
+    ...
+    MarkerTemplateScript = "customMarkerTemplateFunc"/>
 </IgbDataChart> 
 ```
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.

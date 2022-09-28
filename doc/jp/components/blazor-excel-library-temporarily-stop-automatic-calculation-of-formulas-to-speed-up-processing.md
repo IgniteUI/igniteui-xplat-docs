@@ -15,13 +15,9 @@ But we’ve identified a way to help you speed up processing by using our [Blazo
 How?
 
 By temporarily disabling the automatic calculation of formulas.
-
 In this quick how-to article, we will show you how exactly to do it and will cover the following questions: 
-
 * What is Blazor Excel Library in Ignite UI
-
 * What are Blazor Workbooks in Ignite UI
-
 * Speeding Up Processing in Blazor Excel Library
 
 ## What Is Blazor Excel Library in Ignite UI
@@ -67,24 +63,17 @@ This is how to create a workbook and set its title and status document p
 
 ```razor
 var workbook = new Workbook();
-
 workbook.DocumentProperties.Title = "Expense Report";
-
 workbook.DocumentProperties.Status = "Complete";
 ```
 
 Using the Infragistics Blazor Excel Engine you can:
 
 * Save data to and load data from Microsoft® Excel®.
-
 * Create a collection of worksheets with related data.
-
 * Manage Blazor export to Excel and Blazor Excel import into your app, using the library’s classes.
-
 * Change default styles and add new font to the Styles collection of the Workbook.
-
 * Set Workbook Properties that provide information to help organize and keep track of your documents. The available properties are: Author, Title, Subject, Keywords, Category, Status, Comments, Company, and Manager.
-
 * Enable workbook protection feature to protect the structure of the workbook by invoking its protect method.
 
 ## Speeding Up Processing in Blazor Excel Library
@@ -118,7 +107,6 @@ However, there are two basic cases when this method of temporarily stopping the 
 It’s important to note that in .NET 6 and later [Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly) programs, enabling "AOT compilation" is expected to improve processing speed, especially for compute-intensive processes (such as Excel sheet processing). However, AOT compilation has some disadvantages such as:
 
 * It takes too long to publish.
-
 * It increases the output application content size.
 
 ## Conclusion

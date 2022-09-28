@@ -16,23 +16,14 @@ This article will guide you through the easiest ways to implement Blazor Excel l
 
 Topics to be covered:
 * What is Blazor?
-
 * Creating a Blazor WebAssembly sample app
-
 * Implementation steps and project structure overview
-
     - Adding NuGet package
-
     - Adding a reference to a JavaScript file
-
     - Workbook.InProcessRuntime - setting static property
-
     - Reading and writing Excel files using the Workbook class
-
 * What to do if the process takes too long
-
 * How does "lazy loading of assembly" improve the initial app speed
-
 * Summary
 
 ## Blazor in a Nutshell: Understanding WebAssembly and Blazor Server
@@ -285,9 +276,6 @@ Using the Infragistics Blazor Excel library on your Blazor WebAssembly applicati
 This article also included several options for improving the processing speed by:
 
 * Pausing the automatic calculation of formulas.
-
 * Using Ahead-Of-Time (AOT) compilation.
-
 * Running on the server side.
-
 * Specifying “lazy loading of assembly."
