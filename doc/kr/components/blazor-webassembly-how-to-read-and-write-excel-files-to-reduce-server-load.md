@@ -164,9 +164,7 @@ As you can see, the entire processing of the Excel file is performed on the Web 
 Processing an Excel file may take a considerable amount of time depending on:
 
 * the content
-
 * the scale of the data you want to handle
-
 * the number of cells and so on
 
 In terms of Blazor WebAssembly applications where .NET code is processed in an interpreted manner, the processing performance is significantly degraded. Here are some useful ways to help you improve the processing speed in such cases.

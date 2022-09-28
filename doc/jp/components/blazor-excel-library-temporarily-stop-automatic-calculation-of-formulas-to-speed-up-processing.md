@@ -125,9 +125,7 @@ It’s important to note that in .NET 6 and later [Blazor WebAssembly](https://w
 Processing an Excel file may take a considerable amount of time depending on:
 
 * the content
-
 * the scale of the data you want to handle
-
 * the number of cells
 
 The focus of this article was to quickly show you how to improve speed for your documents and data processing when using Ignite UI for Blazor Excel Library and Workbooks. The primary technique we demonstrated was disabling the automatic formula calculation.
@@ -135,7 +133,6 @@ The focus of this article was to quickly show you how to improve speed for your 
 But there are a few other tricks you can try out as well:
 
 * Use Ahead-Of-Time (AOT) compilation.
-
 * Run on the server side.
 
 You can read about the exact steps to do it in our previous blog post - How to Read and Write Excel Files on Blazor WebAssembly To Reduce Server Load.
