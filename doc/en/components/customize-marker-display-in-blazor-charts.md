@@ -73,23 +73,15 @@ Then, bind the sample data to the IgbScatterSeries data source, provided in the 
 ```razor
 @ * In the markup in the sample Razor component (.razor) * @
 
-< IgbDataChart Height = "320px" Width = "320px" >
-
-    < IgbNumericXAxis Name = "xAxis" MinimumValue = "0" MaximumValue = "7" />
-
-    < IgbNumericYAxis Name = "yAxis" MinimumValue = "0" MaximumValue = "10" />
-
-    < IgbScatterSeries DataSource = "@DataSource"
-
+<IgbDataChart Height = "320px" Width = "320px">
+    <IgbNumericXAxis Name = "xAxis" MinimumValue = "0" MaximumValue = "7"/>
+    <IgbNumericYAxis Name = "yAxis" MinimumValue = "0" MaximumValue = "10"/>
+    <IgbScatterSeries DataSource = "@DataSource"
         XMemberPath = "XValue"
-
         YMemberPath = "YValue"
-
         XAxisName = "xAxis"
-
-        YAxisName = "yAxis" />
-
-</ IgbDataChart >
+        YAxisName = "yAxis"/>
+</IgbDataChart>
 ```
 
 Below you can see how the scatter plot is displayed.
