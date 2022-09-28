@@ -39,6 +39,8 @@ Let's start by creating our {ComponentTitle} and binding it to our data. We will
 </{ComponentSelector}>
 ```
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
     <IgbGridColumn Field="ID" Sortable=true Hidden=true></IgbGridColumn>
@@ -53,6 +55,8 @@ Let's start by creating our {ComponentTitle} and binding it to our data. We will
     <IgbGridColumn Field="Phone" Sortable=true></IgbGridColumn>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 ## Toolbar's Column Hiding UI
 
@@ -74,6 +78,8 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
@@ -86,6 +92,8 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 The {ComponentTitle} provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
@@ -105,6 +113,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 </div>
 ```
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
@@ -118,6 +128,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 </div>
 ```
 
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
 By using the `ColumnsAreaMaxHeight` property of the `GridToolbarHiding`, we can set the maximum height of the area that contains the column actions. This way if we have a lot of actions and not all of them can fit in the container, a scrollbar will appear, which will allow us to scroll to any action we want.
 
 ```typescript
@@ -128,6 +140,8 @@ public ngAfterViewInit() {
 }
 ```
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
 @code {
     public IgbGridToolbarHiding HidingAction { get; set; }
@@ -137,6 +151,8 @@ public ngAfterViewInit() {
     }
 }
 ```
+
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 In order to use the expanded set of functionalities for the column hiding UI, we can use the `ColumnActions`'s `ColumnsAreaMaxHeight` property. This way we can use it according to our application's requirements.
 
