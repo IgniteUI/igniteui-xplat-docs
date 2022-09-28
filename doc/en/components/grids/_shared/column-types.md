@@ -106,7 +106,7 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The {ComponentTitle} accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](@@if (igxName !== 'IgxGrid') {../grid/}grid.md#custom-display-format).
+The {ComponentTitle} accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../lob-grid/overview.md#custom-display-format).
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
@@ -134,9 +134,9 @@ public timeFormats = [
 
 #### Cell editing
 When it comes to cell editing based on the column type a different editor will appear:
-- dateTime - [IgxDateTimeEditor directive]({environment:angularApiUrl}/classes/igxdatetimeeditordirective.html) will be used. This editor will give you a mask directions for the input elements part of the DateTime object.
-- date - [IgxDatePicker component]({environment:angularApiUrl}/classes/igxdatepickercomponent.html) will be used. 
-- time - [IgxTimePicker component]({environment:angularApiUrl}/classes/igxtimepickercomponent.html) will be used. 
+- dateTime - `DateTimeEditor` will be used. This editor will give you a mask directions for the input elements part of the DateTime object.
+- date - `DatePicker` will be used. 
+- time - `TimePicker` will be used. 
 
 #### Filtering
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:
@@ -153,7 +153,7 @@ Date type column sorts based on the date portion, disregards the time portion.
 DateTime column sorts based on the full date
 ### Boolean
 
-The default template is using material icons for visualization of boolean values - 'clear' icon for *false* values and 'check' icon for *true* values. As for the editing template, it is using [igx-checkbox]({environment:angularApiUrl}/classes/igxcheckboxcomponent.html) component.
+The default template is using material icons for visualization of boolean values - 'clear' icon for *false* values and 'check' icon for *true* values. As for the editing template, it is using `Checkbox` component.
 
 ```html
 <igx-column [dataType]="'boolean'">
