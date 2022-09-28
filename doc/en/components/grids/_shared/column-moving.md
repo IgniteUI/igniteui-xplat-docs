@@ -66,6 +66,8 @@ const nameColumn = grid.getColumnByName("Name");
 grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 ```
 
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
     public IgbGridColumn Col1;
     public IgbGridColumn Col2;
@@ -83,6 +85,11 @@ const idColumn = grid.getColumnByName("ID");
 idColumn.move(3);
 ```
 
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+
+
+<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
+
 ```razor
     public IgbGridColumn Col1;
     public async void HandleClick()
@@ -90,6 +97,8 @@ idColumn.move(3);
         await Col1.MoveAsync(3);
     }
 ```
+
+<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 Note that when using the API, only the ColumnMovingEnd event will be emitted, if the operation was successful. Also note that in comparison to the drag and drop functionality, using the API does not require setting the `Moving` property to true. 
 
