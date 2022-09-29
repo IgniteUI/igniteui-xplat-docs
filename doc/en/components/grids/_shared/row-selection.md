@@ -34,19 +34,19 @@ The sample below demonstrates the three types of {ComponentTitle}'s **row select
 
 
 ## Setup
-In order to setup row selection in the `{ComponentSelector}`, you just need to set the **rowSelection** property. This property accepts **GridSelectionMode** enumeration. **GridSelectionMode** exposes the following
+In order to setup row selection in the `{ComponentSelector}`, you just need to set the **rowSelection** property. This property accepts **GridSelectionMode** enumeration. **GridSelectionMode** exposes the following modes:
+
+- **none**
+- **single** 
+- **multiple**
 
 <!-- ComponentStart: TreeGrid -->
-three modes: **none**, **single** and **multiple**
+
+- **multipleCascade**
+
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: Grid, HierarchicalGrid -->
-
-four modes: **none**, **single**, **multiple** and **multipleCascade**
-
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
-
- Below we will take a look at each of them in more detail.
+Below we will take a look at each of them in more detail.
 
 ### None Selection
 
@@ -54,7 +54,7 @@ In the `{ComponentSelector}` by default row selection is disabled *(`RowSelectio
 
 ### Single Selection
 
-Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the *space* key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected **rowSelectionChanging** event is emitted.
+Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the *space* key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected **RowSelectionChanging** event is emitted.
 
 ```html
 <!-- selectionExample.component.html -->
@@ -91,7 +91,7 @@ function rowSelectionChangingHandler(args) {
         if (args.added.length && args.added[0] === 3) {
         args.cancel = true;
     }
-
+}
 igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
 ```
 
@@ -167,7 +167,7 @@ In this mode a parent's selection state entirely depends on the selection state 
 
 ### Select rows programmatically
 
-The code snippet below can be used to select one or multiple rows simultaneously (via `PrimaryKey`); Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
+The code snippet below can be used to select one or multiple rows simultaneously (via `PrimaryKey`).Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
 
 ```html
 <{ComponentSelector} #grid  [data]="remote | async" 
@@ -183,7 +183,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
     <{ComponentSelector} Width="100%" 
              Id="grid"
              Height="100%"
-             RowSelection=GridSelectionMode.MultipleCascade
+             RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
@@ -195,7 +195,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
 This will add the rows which correspond to the data entries with IDs 1, 2 and 5 to the {ComponentTitle} selection.
 
 ### Deselect rows
-If you need to deselect rows programmatically, you can use the `deselectRows(rowIds: [])` method.
+If you need to deselect rows programmatically, you can use the `DeselectRows` method.
 
 ```html
 <{ComponentSelector} #grid  [data]="remote | async" 
@@ -212,7 +212,7 @@ If you need to deselect rows programmatically, you can use the `deselectRows(row
     <{ComponentSelector} Width="100%" 
              Id="grid"
              Height="100%"
-             RowSelection=GridSelectionMode.MultipleCascade
+             RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
@@ -253,7 +253,7 @@ public handleRowSelectionChange(args) {
     <{ComponentSelector} Width="100%" 
              Id="grid"
              Height="100%"
-             RowSelection=GridSelectionMode.MultipleCascade
+             RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
              @ref=Grid
              AutoGenerate=true
@@ -287,7 +287,7 @@ public getSelectedRows() {
 }
 ```
 
-Additionally, assigning row IDs to `selectedRows` will allow you to change the grid's selection state.
+Additionally, assigning row IDs to `SelectedRows` will allow you to change the grid's selection state.
 
 
 ```typescript
@@ -305,7 +305,7 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
-             RowSelection=GridSelectionMode.MultipleCascade
+             RowSelection=GridSelectionMode.Multiple
              PrimaryKey="Key"
              SelectedRows=selectedRows
              @ref=Grid
@@ -351,10 +351,12 @@ The `rowID` property can be used to get a reference of an `{ComponentSelector}` 
 ```
 In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [`Row Numbering Demo`](#row-numbering-demo).
 
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentStart: HierarchicalGrid -->
+
 > [!NOTE]
 The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle the current row, especially in a child grid, when you implement a click handler that overrides the base functionality.
-}
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Angular -->
 
@@ -427,7 +429,7 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 <!-- ComponentEnd: Grid -->
 
 ### Conditional Selection Demo
-This demo prevents some rows from being selected using the `rowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
+This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:demosBaseUrl}"
