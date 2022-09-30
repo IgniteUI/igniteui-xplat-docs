@@ -221,7 +221,7 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Pivot Grid Shared Topic",
+        "name": "ピボット グリッドの共有トピック",
         "href": "grids/pivot-grid/template.md",
         "status": "NEW"
       }
