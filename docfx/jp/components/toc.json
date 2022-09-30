@@ -81,7 +81,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "How To Customize Marker Display in Blazor Charts",
         "href": "customize-marker-display-in-blazor-charts.md",
         "status": ""
