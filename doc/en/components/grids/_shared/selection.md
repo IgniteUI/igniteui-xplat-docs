@@ -13,42 +13,19 @@ With {ProductName} {ComponentTitle} you can easily select data by using variety 
 
 The sample below demonstrates the three types of {ComponentTitle}'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:650px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
            alt="{Platform} {ComponentName}  Selection Example">
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:650px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
-           alt="{Platform} {ComponentName}  Selection Example">
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:750px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
-           alt="{Platform} {ComponentName}  Selection Example">
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ## {Platform} Grid Selection Options
 
-{ProductName} {ComponentTitle} component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the {ComponentTitle}. In order to change/enable selection mode you can use `rowSelection`, `cellSelection` or `selectable` properties.
+{ProductName} {ComponentTitle} component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the {ComponentTitle}. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
 
 ### {Platform} Row Selection
 
-Property `rowSelection` enables you to specify the following options:
+Property `RowSelection` enables you to specify the following options:
 - none - Row selection would be disabled for the {ComponentTitle}
 - single - Selection of only one row within the {ComponentTitle} would be available
 - multiple - Multi-row selection would be available by using the `Row selectors`, with a key combination like <kbd>ctrl</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused
@@ -63,7 +40,7 @@ Property `rowSelection` enables you to specify the following options:
 
 ### {Platform} Cell Selection
 
-Property `cellSelection` enables you to specify the following options:
+Property `CellSelection` enables you to specify the following options:
 - none - Cell selection would be disabled for the {ComponentTitle}
 - single - Selection of only one cell within the {ComponentTitle} would be available.
 - multiple - Currently, this is the default state of the selection in the {ComponentTitle}. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
@@ -72,7 +49,7 @@ Property `cellSelection` enables you to specify the following options:
 
 ### {Platform} Column Selection
 
-The `selectable` property enables you to specify the following options for each **column**:
+The `Selectable` property enables you to specify the following options for each **column**:
 - false - the corresponding column selection will be disabled for the {ComponentTitle}
 - true - the corresponding column selection will be enabled for the {ComponentTitle}
 - This lead to the following three variations:
@@ -86,7 +63,7 @@ The `selectable` property enables you to specify the following options for each 
 
 ## Grid Context Menu
 
-Using the `contextMenu` event you can add a custom context menu to facilitate your work with **{ComponentName}**. With a **right click** on the grid's body, the event emits the cell on which it is triggered. The **context menu** will operate with the emitted cell.
+Using the `ContextMenu` event you can add a custom context menu to facilitate your work with **{ComponentName}**. With a **right click** on the grid's body, the event emits the cell on which it is triggered. The **context menu** will operate with the emitted cell.
 
 If there is a **multi-cell selection**, we will put logic, which will check whether the selected cell is in the area of the multi-cell selection. If it is, we will also emit the values of the selected cells.
 
@@ -205,7 +182,7 @@ TO DO
 import 'core-js/es7/array';
 ```
 
-- When the grid has no `primaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
+- When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
     * Row Selection
     * Row Expand/collapse
     * Row Editing
@@ -225,7 +202,6 @@ import 'core-js/es7/array';
 
 <!-- ComponentEnd: TreeGrid -->
 * GridCell
-* Styles
 
 ## Additional Resources
 
