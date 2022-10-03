@@ -38,13 +38,13 @@ The sample below demonstrates the three types of {ComponentTitle}'s **column sel
 
 ## Basic usage
 
-The column selection feature can be enabled through the `columnSelection` input, which takes GridSelectionMode values.
+The column selection feature can be enabled through the `ColumnSelection` input, which takes GridSelectionMode values.
 
 ## Interactions
-The default selection mode is `none`. If set to `single` or `multiple` all of the presented columns will be `selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
+The default selection mode is `none`. If set to `single` or `multiple` all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
 > [!NOTE]
-> [`Multi-column Headers`](multi-column-headers.md) don't reflect on the `selectable` input. The `ColumnGroupComponent` is `selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `selected` if all of its `selectable` descendants are `selected`.
+> [`Multi-column Headers`](multi-column-headers.md) don't reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
 
 <!-- ComponentStart: Grid -->
 
@@ -71,17 +71,17 @@ The default selection mode is `none`. If set to `single` or `multiple` all of th
 ## Keyboard combinations
 
 > [!NOTE]
-> The keyboard combinations are available only when the grid `columnSelection` input is set to `multiple`.
+> The keyboard combinations are available only when the grid `ColumnSelection` input is set to `multiple`.
 
 There are two scenarios for keyboard navigation of the **Column Selection** feature:
 - Multi-column selection - holding <kbd>ctrl</kbd> + <kbd>click</kbd> on every **selectable** header cell.
 - Range column selection - holding <kbd>shift</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
 
 ## API manipulations
-The **API** provides some additional capabilities when it comes to the **non-visible** columns such that, every **hidden** column could be marked as `selected` by setting the corresponding **setter**.
+The **API** provides some additional capabilities when it comes to the **non-visible** columns such that, every **hidden** column could be marked as `Selected` by setting the corresponding **setter**.
 
 > [!NOTE]
-> The above statement also applies to the `ColumnGroupComponent`, except that when the `selected` property is changed it changes the state of its descendants.
+> The above statement also applies to the `ColumnGroupComponent`, except that when the `Selected` property is changed it changes the state of its descendants.
 
 More information regarding the API manipulations could be found in the [`API References`](#api-references) section.
 
@@ -201,26 +201,25 @@ The column selection UI has a few more APIs to explore, which are listed below.
 * {ComponentName}
 * ColumnComponent
 * ColumnGroupComponent
-* Styles
 
 `{ComponentName}` properties:
-* columnSelection
-* selectedColumns
-* selectColumns
-* deselectColumns
-* selectAllColumns
-* deselectAllColumns
+* ColumnSelection
+* SelectedColumns
+* SelectColumns
+* DeselectColumns
+* SelectAllColumns
+* DeselectAllColumns
 
 `ColumnComponent` properties:
-* selectable
-* selected
+* Selectable
+* Selected
 
 `ColumnGroupComponent` properties:
-* selectable
-* selected
+* Selectable
+* Selected
 
 `{ComponentName}` events:
-* onColumnsSelectionChange
+* OnColumnsSelectionChange
 
 ## Additional Resources
 
