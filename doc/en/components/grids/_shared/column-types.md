@@ -23,13 +23,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <!-- ComponentEnd: Grid -->
 
 ## Default template
-If you want to enable a data type-specific template, you should set the column `dataType` input otherwise the column will be treated as a string column since that is the default value for column dataType. Let's see what are the default templates for each type.
+If you want to enable a data type-specific template, you should set the column `DataType` input otherwise the column will be treated as a string column since that is the default value for column dataType. Let's see what are the default templates for each type.
 
 ### String
-This column `dataType` is not changing the appearance or format of the cell value.
+This column `DataType` is not changing the appearance or format of the cell value.
 
 ### Number
-If the `dataType` is set to *number*, the cell value will be formatted based on application or grid's `locale` settings, as well as when `pipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
+If the `DataType` is set to *number*, the cell value will be formatted based on application or grid's `Locale` settings, as well as when `PipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
  - Number of digits after the decimal point
  - Decimal separator with `,` or `.`
 
@@ -54,7 +54,7 @@ public formatOptions = this.options;
 ```
 
 ### DateTime, Date and Time
-The appearance of the date portions will be set (e.g. day, month, year) based on `locale` format or `pipeArgs` input. The pipe arguments can be used to specify a custom [`date format`](https://angular.io/api/common/DatePipe#pre-defined-format-options) or [`timezone`](https://angular.io/api/common/DatePipe#parameters):
+The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom [`date format`](https://angular.io/api/common/DatePipe#pre-defined-format-options) or [`timezone`](https://angular.io/api/common/DatePipe#parameters):
  - **format** - The default value for formatting the date is 'mediumDate'. Other available options are 'short', 'long', 'shortDate', 'fullDate', 'longTime', 'fulLTime' and etc. This is a full list of all available [pre-defined format options](https://angular.io/api/common/DatePipe#pre-defined-format-options).
  - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
@@ -169,7 +169,7 @@ The default template is using material icons for visualization of boolean values
 #### Default template
 
 <!-- Angular -->
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `locale`.
+The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
 
 *By using LOCALE_ID*
 ```ts
@@ -185,7 +185,7 @@ import { LOCALE_ID } from '@angular/core';
 <!-- end: Angular -->
 
 <!-- Blazor -->
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided {ComponentTitle} `locale`.
+The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided {ComponentTitle} `Locale`.
 <!-- end: Blazor -->
 
 *By using Grid's locale*
@@ -199,7 +199,7 @@ The default template will show a numeric value with currency symbol that would b
 </{ComponentSelector}>
 ```
 
-By using the `pipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
+By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
 
 ```ts
 public options = {
@@ -298,7 +298,7 @@ See the editing templates part of [{ComponentTitle} Editing topic](editing.md#ed
 
 Custom template and column formatter definition will always take precedence over the column data type set:
 
-<!-- Angular, React, WebComponents -->
+<!-- Angular -->
 
 ### Custom template
 
@@ -330,18 +330,18 @@ public init(column: IgxColumnComponent) {
 }
 ```
 
-<!-- end: Angular, React, WebComponents -->
+<!-- end: Angular -->
 
-<!-- Blazor -->
+```razor
 TO DO!
-<!-- end: Blazor -->
+```
 
 ## API References
 
 * GridCell
-* Column `pipeArgs`
-* {ComponentTitle} `locale`
-* Column `dataType`
+* Column `PipeArgs`
+* {ComponentTitle} `Locale`
+* Column `DataType`
 
 ## Additional Resources
 
