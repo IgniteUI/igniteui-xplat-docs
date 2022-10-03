@@ -37,7 +37,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-**Column resizing** is also enabled per-column level, meaning that the **{ComponentSelector}** can have a mix of resizable and non-resizable columns. This is done via the `resizable` input of the `ColumnComponent`.
+**Column resizing** is also enabled per-column level, meaning that the **{ComponentSelector}** can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `ColumnComponent`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -62,7 +62,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You can subscribe to the `columnResized` event of the `{ComponentSelector}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `ColumnComponent` object, are exposed through the event arguments.
+You can subscribe to the `ColumnResized` event of the `{ComponentSelector}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `ColumnComponent` object, are exposed through the event arguments.
 
 <!-- ComponentStart: Grid -->
 
@@ -214,7 +214,7 @@ When resizing columns with width in percentages, the horizontal amount of the mo
 
 ## Restrict column resizing
 
-You can also configure the minimum and maximum allowable column widths. This is done via the `minWidth` and `maxWidth` inputs of the `ColumnComponent`. In this case the resize indicator drag operation is restricted to notify the user that the column cannot be resized outside the boundaries defined by `minWidth` and `maxWidth`.
+You can also configure the minimum and maximum allowable column widths. This is done via the `MinWidth` and `MaxWidth` inputs of the `ColumnComponent`. In this case the resize indicator drag operation is restricted to notify the user that the column cannot be resized outside the boundaries defined by `MinWidth` and `MaxWidth`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -299,9 +299,9 @@ or
 
 ## Auto-size columns on double click
 
-Each column can be **auto sized** by double clicking the right side of the header - the column will be sized to the longest currently visible cell value, including the header itself. This behavior is enabled by default, no additional configuration is needed. However, the column will not be auto-sized in case `maxWidth` is set on that column and the new width exceeds that `maxWidth` value. In this case the column will be sized according to preset `maxWidth` value.
+Each column can be **auto sized** by double clicking the right side of the header - the column will be sized to the longest currently visible cell value, including the header itself. This behavior is enabled by default, no additional configuration is needed. However, the column will not be auto-sized in case `MaxWidth` is set on that column and the new width exceeds that `MaxWidth` value. In this case the column will be sized according to preset `MaxWidth` value.
 
-You can also auto-size a column dynamically using the exposed `autosize` method on `ColumnComponent`.
+You can also auto-size a column dynamically using the exposed `Autosize` method on `ColumnComponent`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -350,7 +350,7 @@ column.autosize();
 
 ## Auto-size columns on initialization
 
-Each column can be set to auto-size on initialization by setting `width` to 'auto':
+Each column can be set to auto-size on initialization by setting `Width` to 'auto':
 
 ```html
 <igx-column width='auto'>...
@@ -515,18 +515,10 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
-
-TO DO!
-
-<!-- end: Blazor -->
-
-
 ## API References
 
 * ColumnComponent
 * {ComponentName}
-* Styles
 
 ## Additional Resources
 
