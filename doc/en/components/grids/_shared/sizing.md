@@ -131,7 +131,7 @@ When the parent element does not have defined height, the browser does not assig
 
 Let's have `width` set to `1200px` and the parent element not having any size applied to it:
 
-* If there are less than 10 rows the grid will try to fit all rows in the `visible area without having an empty space between the last row and the bottom of the visible area. For example, let's have the grid data to consist of 7 rows. The grid will render all 7 rows without vertical scrollbar and without empty space inside the grid.
+* If there are less than 10 rows the grid will try to fit all rows in the visible area without having an empty space between the last row and the bottom of the visible area. For example, let's have the grid data to consist of 7 rows. The grid will render all 7 rows without vertical scrollbar and without empty space inside the grid.
 
     <img src="../../../images/grid_sizing/height-undefined-7rows-v2.jpg" style="width: 80%"/>
 
@@ -257,7 +257,6 @@ The difference is that for the child grid, when `height` is set to percentages, 
 * TreeGridRow
 
 <!-- ComponentEnd: TreeGrid -->
-* Styles
 
 ## Additional Resources
 
