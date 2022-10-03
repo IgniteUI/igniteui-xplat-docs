@@ -70,7 +70,7 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Blazor Excel Library",
+        "name": "Blazor Excel ライブラリ",
         "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
         "status": ""
       },
