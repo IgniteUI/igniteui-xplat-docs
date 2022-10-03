@@ -37,7 +37,7 @@ A column or multiple columns can be pinned to the left or right side of the {Pla
 
 ## Column Pinning API
 
-Column pinning is controlled through the `pinned` input of the `ColumnComponent`. Pinned columns are rendered on the left side of the {ComponentTitle} by default and stay fixed through horizontal scrolling of the unpinned columns in the {ComponentTitle} body.
+Column pinning is controlled through the `Pinned` input of the `ColumnComponent`. Pinned columns are rendered on the left side of the {ComponentTitle} by default and stay fixed through horizontal scrolling of the unpinned columns in the {ComponentTitle} body.
 
 <!-- ComponentStart: Grid -->
 
@@ -84,7 +84,7 @@ Column pinning is controlled through the `pinned` input of the `ColumnComponent`
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You may also use the {ComponentTitle}'s `pinColumn` or `unpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
+You may also use the {ComponentTitle}'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
 
 <!-- ComponentStart: Grid -->
 
@@ -120,7 +120,7 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the column is already in the desired state.
 
-A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `columnPin` event and changing the `insertAtIndex` property of the event arguments to the desired position index.
+A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPin` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
 <!-- ComponentStart: Grid -->
 
@@ -187,7 +187,7 @@ public columnPinning(event) {
 
 ## Pinning Position
 
-You can change the column pinning position via the `pinning` configuration option. It allows you to set the columns position to either Start or End.
+You can change the column pinning position via the `Pinning` configuration option. It allows you to set the columns position to either Start or End.
 When set to End the columns are rendered at the end of the grid, after the unpinned columns. Unpinned columns can be scrolled horizontally, while the pinned columns remain fixed on the right.
 
 <!-- ComponentStart: Grid -->
