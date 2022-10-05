@@ -213,6 +213,13 @@
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
       },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Types",
+        "href": "grids/lob-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
       { 
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
@@ -247,6 +254,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Types",
+        "href": "grids/hierarchical-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW"
@@ -299,6 +311,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Types",
+        "href": "grids/tree-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
         "status": "NEW"
