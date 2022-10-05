@@ -181,13 +181,13 @@ TO-DO H-GRID CODE SNIPPET
 
 ## リモート ページング
 
-リモート ページングは、データ取得を担当するサービスと、グリッドの構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`@@igComponent リモート データ操作`](remote-data-operations.md#remote-paging)トピックをご覧ください。
+リモート ページングは、データ取得を担当するサービスと、グリッドの構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`@@igComponent リモート データ操作`](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
 
 <!-- ComponentStart: Grid -->
 
 ## カスタム テンプレートのリモート ページング
 
-独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#remote-paging-with-custom-igx-paginator-content)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
+独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#カスタム-igx-paginator-content-のリモート-ページングt)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
 
 <!-- ComponentEnd: Grid -->
 
@@ -202,7 +202,7 @@ TO-DO H-GRID CODE SNIPPET
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ``` 
 
-最も簡単な方法は、`PaginatorTheme` を拡張する新しいテーマを作成し、`$text-color`、`$background-color`、`$border-radius` パラメーターを受け取る方法です。
+最も簡単な方法は、`PaginatorTheme` を拡張する新しいテーマを作成し、`$text-color`、`$background-color`、`$border-color` パラメーターを受け取る方法です。
 
 ```scss
 $dark-paginator: paginator-theme(
@@ -240,7 +240,7 @@ $dark-button: button-theme(
 >`Button` ミックスインを `.igx-paginator__pager` 内でスコープして、ページネーター ボタンのみにスタイルが設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+ >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
 ```scss
 :host {
@@ -382,7 +382,7 @@ $dark-button: button-theme(
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
 * [集計](summaries.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
