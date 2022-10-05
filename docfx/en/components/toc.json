@@ -215,6 +215,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/lob-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Clipboard Interactions",
         "href": "grids/lob-grid/clipboard-interactions.md",
         "status": "NEW"
@@ -260,6 +265,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
@@ -317,6 +327,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/tree-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
