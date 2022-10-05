@@ -1,31 +1,31 @@
 ---
-title: $Platform$ Dialog | Infragistics
-_description: With $ProductName$ Dialog component, developers can easily integrate a dialog window centered on top of app content.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Dialog components
+title: $Platform$ Dialog | インフラジスティックス
+_description: $ProductName$ Dialog コンポーネントを使用すると、開発者はアプリ コンテンツの上にダイアログ ウィンドウを簡単に統合できます。
+_keywords: $ProductName$, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, $Platform$, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ ダイアログ コンポーネント
 _language: ja
 mentionedTypes: ['Dialog']
 ---
 
-# $Platform$ Dialog
+# $Platform$ (ダイアログ)
 
-The $ProductName$ Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog. 
+$ProductName$ Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。 
 
-## $ProductName$ Dialog Example
+## $ProductName$ Dialog の例
 
-This sample demonstrates how to create a Dialog component.
+このサンプルでは、Dialog コンポーネントを作成する方法を示します。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="$Platform$ Dialog Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="$Platform$ Dialog の例"
            github-src="notifications/dialog/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Usage
+### 使用方法
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,7 +38,7 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
-The simplest way to display the dialog component is to use its `show` method and call it on a button click.
+Dialog コンポーネントを表示する最も簡単な方法は、`show` メソッドを使用して、ボタン クリックで呼び出すことです。
 
 ```html
 <igc-button onclick="dialog.show()" variant="contained">Show Dialog</igc-button>
@@ -50,37 +50,37 @@ The simplest way to display the dialog component is to use its `show` method and
 </igc-dialog>
 ```
 
-The Dialog component provides an `open` property, which gives you the ability to configure its state as per your application scenario.
+Dialog コンポーネントは `open` プロパティを提供します。これにより、アプリケーション シナリオに従ってその状態を構成できます。
 
-Use the `title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property.
+Dialog のタイトルを設定するには、 `title` プロパティを使用します。ただし、`title` スロットにコンテンツが指定されている場合は、プロパティよりも優先されます。
 
-Action buttons or additional information can be placed in the bottom part of the dialog via the `footer` slot. If no content is added there, a default `OK` button will be shown that closes the Dialog when clicked. In case you do not want this button to be shown you can set the `hideDefaultAction` property to **true**. The default value is **false**.
+アクション ボタンまたは追加情報は、`footer` スロットを介してダイアログの下部に配置できます。そこにコンテンツが追加されていない場合、デフォルトの `[OK]` ボタンが表示され、クリックするとダイアログが閉じます。このボタンを表示したくない場合は、`hideDefaultAction` プロパティを **true** に設定できます。デフォルト値は **false** です。
 
-### Closing
+### 閉じる (Closing)
 
-By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `closeOnEscape` property. The default value is **true**. If there is an open dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
+デフォルトでは、ユーザーが `ESC` キーを押すと、ダイアログは自動的に閉じられます。`closeOnEscape` プロパティを使用して、この動作を防ぐことができます。デフォルト値は **true** です。ダイアログに開いているドロップダウン (または `ESC` を内部で処理する必要があるその他の要素) がある場合、`ESC` を 1 回押すとドロップダウンが閉じ、もう一度押すとダイアログが閉じます。
 
-Use the `closeOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
+`closeOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="$Platform$ Dialog Closing Variations"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="$Platform$ Dialog Closing のバリエーション"
            github-src="notifications/dialog/closing-variations">
 </code-view>
 
-### Form
+### (フォーム)
 
-Form elements can close a Dialog if they have the attribute `method="dialog"`. Submitting the form will trigger the closing of the dialog.
+属性 `method="dialog"` がある場合、フォーム要素はダイアログを閉じることができます。フォームを送信すると、ダイアログが閉じられます。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="$Platform$ Dialog Form Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="$Platform$ Dialog Form の例"
            github-src="notifications/dialog/form">
 </code-view>
 
-## Styling
+## スタイル設定
 
-The dialog component exposes several CSS parts (`base`, `title`, `content` and `footer`) to give you full control over its style.
+Dialog コンポーネントは、いくつかの CSS パーツ (`base`、`title`、`content` および `footer`) を公開して、そのスタイルを完全に制御できるようにします。
 
 ```css
 igc-dialog::part(content) {
@@ -97,22 +97,22 @@ igc-dialog::part(footer) {
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="$Platform$ Dialog Styling Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="$Platform$ Dialog スタイル設定の例"
            github-src="notifications/dialog/styling">
 </code-view>
 
-## API Reference
+## API リファレンス
 
 * `Dialog`
 
 <div class="divider--half"></div>
 
-## Additional Resources
+## その他のリソース
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
-## API Members
+## API メンバー
 
 - `closeOnEscape`
 - `closeOnOutsideClick`
