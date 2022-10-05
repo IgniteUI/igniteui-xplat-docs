@@ -15,7 +15,7 @@ When it comes to border and padding size for the {ComponentName}, they are taken
 > [!Note]
 > If the Border box sizing is overridden by the user we cannot guarantee that the {ComponentName} will size correctly.
 
-## Width
+## {Platform} {ComponentTitle} Width
 
 If the `width` input does not have value assigned, its default value is `100%` and the {ComponentName} tries to fill the available space. You can check how the grid reacts to it in the `Percentages` section.
 
@@ -77,7 +77,7 @@ When the `width` of the {ComponentName} is set to percentages it will size the g
     <img src="../../../images/grid_sizing/width-percent-150p-parent-noscroll-v2.jpg" style="width: 80%"/>
     <img src="../../../images/grid_sizing/width-percent-150p-parent-scroll-v2.jpg" style="width: 80%"/>
 
-## Height
+## {Platform} {ComponentTitle} Height
 
 By default if no height is defined for the {ComponentName}, it will be set to `100%`. You can check how the grid reacts depending on the DOM structure in the `Percentages` section.
 
@@ -154,7 +154,7 @@ Let's have `width` set to `1200px` and the parent element not having any size ap
     <img src="../../../images/grid_sizing/height-percent-100-parent-100-v2.jpg" style="width: 80%"/>
 
 
-## Column Sizing
+## {Platform} {ComponentTitle} Column Sizing
 
 Depending on the grid size itself, the columns inside it can also be sized differently that could result in scenarios where the grid renders horizontal scrollbar or not.  Columns can have width set in pixels, percentages or autosized when nothing is set. We will take a deeper look regarding these scenarios in this section.
 
@@ -222,7 +222,7 @@ When columns have set `width` in percentages, their size is calculated relativel
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-## Child Grid Sizing
+## {Platform} {ComponentTitle} Child Sizing
 
 Because the {ComponentName} usually contains children, they can also have their `width` and `height` specified, in order to accommodate different scenarios. Since the children are defined using `row island` template, this means that all children in the same level and island will have the same `width` and `height` property applied to them. 
 
@@ -249,12 +249,12 @@ The difference is that for the child grid, when `height` is set to percentages, 
 * {ComponentName}
 <!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
 
-* GridRow
+* `GridRow`
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
 <!-- ComponentStart: TreeGrid -->
 
-* TreeGridRow
+* `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
 
