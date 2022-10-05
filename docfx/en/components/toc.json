@@ -214,9 +214,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/lob-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md",
+        "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -234,9 +240,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/hierarchical-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md",
+        "href": "grids/hierarchical-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -268,9 +280,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/tree-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md",
+        "href": "grids/tree-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
