@@ -6,12 +6,12 @@ mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ---
 
-# {Platform} {ComponentTitle} Selection
+# {Platform} {ComponentTitle} Selection Overview
 With {ProductName} {ComponentTitle} you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
 
-## {Platform} Grid Selection Example
+## {Platform} {ComponentTitle} Selection Example
 
-The sample below demonstrates the three types of {ComponentTitle}'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
+The sample below demonstrates three types of **cell selection** behaviors in {ComponentTitle}. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
 <code-view style="height:650px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
@@ -19,11 +19,11 @@ The sample below demonstrates the three types of {ComponentTitle}'s **cell selec
            alt="{Platform} {ComponentName}  Selection Example">
 </code-view>
 
-## {Platform} Grid Selection Options
+## {Platform} {ComponentTitle} Selection Options
 
 {ProductName} {ComponentTitle} component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the {ComponentTitle}. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
 
-### {Platform} Row Selection
+### {Platform} {ComponentTitle} Row Selection
 
 Property `RowSelection` enables you to specify the following options:
 - none - Row selection would be disabled for the {ComponentTitle}
@@ -38,7 +38,7 @@ Property `RowSelection` enables you to specify the following options:
 
 > Go to [Row selection topic](row-selection.md) for more information.
 
-### {Platform} Cell Selection
+### {Platform} {ComponentTitle} Cell Selection
 
 Property `CellSelection` enables you to specify the following options:
 - none - Cell selection would be disabled for the {ComponentTitle}
@@ -47,21 +47,21 @@ Property `CellSelection` enables you to specify the following options:
 
 > Go to [Cell selection topic](cell-selection.md) for more information.
 
-### {Platform} Column Selection
+### {Platform} {ComponentTitle} Column Selection
 
 The `Selectable` property enables you to specify the following options for each **column**:
 - false - the corresponding column selection will be disabled for the {ComponentTitle}
 - true - the corresponding column selection will be enabled for the {ComponentTitle}
 - This lead to the following three variations:
- - Single selection - <kbd>mouse click</kbd> over the column cell.
- - Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
- - Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
+- Single selection - <kbd>mouse click</kbd> over the column cell.
+- Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
+- Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
 > Go to [Column selection topic](column-selection.md) for more information.
 
 <!-- ComponentStart: Grid -->
 
-## Grid Context Menu
+## {Platform} {ComponentTitle} Context Menu
 
 Using the `ContextMenu` event you can add a custom context menu to facilitate your work with **{ComponentName}**. With a **right click** on the grid's body, the event emits the cell on which it is triggered. The **context menu** will operate with the emitted cell.
 
@@ -193,15 +193,15 @@ import 'core-js/es7/array';
 * {ComponentName}
 <!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
 
-* GridRow
+* `GridRow`
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
 <!-- ComponentStart: TreeGrid -->
 
-* TreeGridRow
+* `TreeGridRow`
 
 <!-- ComponentEnd: TreeGrid -->
-* GridCell
+* `GridCell`
 
 ## Additional Resources
 
