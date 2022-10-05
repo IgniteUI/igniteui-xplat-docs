@@ -215,6 +215,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Clipboard Interactions",
+        "href": "grids/lob-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Column Types",
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
@@ -238,6 +243,7 @@
         "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
       }
+      
     ]
   },
   {
@@ -311,6 +317,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Clipboard Interactions",
+        "href": "grids/tree-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
