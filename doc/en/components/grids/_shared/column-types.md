@@ -6,13 +6,13 @@ mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# {Platform} {ComponentTitle} Column Types
+# {Platform} {ComponentTitle} Column Types Overview
 
 {ProductName} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid -->
 
-## {Platform} Column Types Example
+## {Platform} {ComponentTitle} Column Types Example
 
 
 <code-view style="height:550px" 
@@ -22,7 +22,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <!-- ComponentEnd: Grid -->
 
-## Default template
+## {Platform} {ComponentTitle} Default Template
 If you want to enable a data type-specific template, you should set the column `DataType` input otherwise the column will be treated as a string column since that is the default value for column dataType. Let's see what are the default templates for each type.
 
 ### String
@@ -300,7 +300,7 @@ Custom template and column formatter definition will always take precedence over
 
 <!-- Angular -->
 
-### Custom template
+### Custom Template
 
 ```html
 <igx-grid #grid1 [data]="data | async" [autoGenerate]="false">
