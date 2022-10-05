@@ -6,10 +6,10 @@ mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# {Platform} {ComponentTitle} Column Selection
+# {Platform} {ComponentTitle} Column Selection Overview
 The Column selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich `API` that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
 
-## {Platform} Column Selection Example
+## {Platform} {ComponentTitle} Column Selection Example
 
 The sample below demonstrates the three types of {ComponentTitle}'s **column selection** behavior. Use the _column selection_ dropdown below to enable each of the available selection modes.
 
@@ -36,9 +36,9 @@ The sample below demonstrates the three types of {ComponentTitle}'s **column sel
            alt="{Platform} Column Selection Example">
 </code-view>
 
-## Basic usage
+## Basic Usage
 
-The column selection feature can be enabled through the `ColumnSelection` input, which takes GridSelectionMode values.
+The column selection feature can be enabled through the `ColumnSelection` input, which takes `GridSelectionMode` values.
 
 ## Interactions
 The default selection mode is `none`. If set to `single` or `multiple` all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
@@ -68,7 +68,7 @@ The default selection mode is `none`. If set to `single` or `multiple` all of th
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-group-selection" >
 </code-view>
 
-## Keyboard combinations
+## Keyboard Combinations
 
 > [!NOTE]
 > The keyboard combinations are available only when the grid `ColumnSelection` input is set to `multiple`.
@@ -199,27 +199,27 @@ TO DO
 The column selection UI has a few more APIs to explore, which are listed below.
 
 * {ComponentName}
-* ColumnComponent
-* ColumnGroupComponent
+* `ColumnComponent`
+* `ColumnGroupComponent`
 
 `{ComponentName}` properties:
-* ColumnSelection
-* SelectedColumns
-* SelectColumns
-* DeselectColumns
-* SelectAllColumns
-* DeselectAllColumns
+* `ColumnSelection`
+* `SelectedColumns`
+* `SelectColumns`
+* `DeselectColumns`
+* `SelectAllColumns`
+* `DeselectAllColumns`
 
 `ColumnComponent` properties:
-* Selectable
-* Selected
+* `Selectable`
+* `Selected`
 
 `ColumnGroupComponent` properties:
-* Selectable
-* Selected
+* `Selectable`
+* `Selected`
 
 `{ComponentName}` events:
-* OnColumnsSelectionChange
+* `OnColumnsSelectionChange`
 
 ## Additional Resources
 
