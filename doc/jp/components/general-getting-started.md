@@ -84,7 +84,7 @@ code .
 
 ```
   "scripts": {
-    "build": "webpack src/index.js -o dist/index.bundle.js"
+    "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
 ```
 
@@ -115,7 +115,7 @@ import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## 手順 3 - Ignite UI for Web Components のインストール
+## 手順 3 - Ignite UI for Web Components と lit-html をインストール
 
 1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Map Web コンポーネントをインストールします。
 
@@ -123,9 +123,10 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
+npm install lit-html
 </pre>
 
-2 - Geographic Map モジュールと**ModuleManager** を **index.ts** ファイルにインポートします。
+2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
