@@ -64,6 +64,31 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "How to",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Blazor Excel Library",
+        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "How To Read & Write Excel Files To Reduce Server Load",
+        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "How To Customize Marker Display in Blazor Charts",
+        "href": "customize-marker-display-in-blazor-charts.md",
+        "status": ""
+      }
+    ]
+  },
+  {
     "name": "Changelog",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
@@ -189,9 +214,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Column Selection",
         "href": "grids/lob-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -209,9 +240,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Column Selection",
         "href": "grids/hierarchical-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -243,9 +280,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/tree-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -1055,6 +1098,12 @@
      "name": "Toast {ReleaseStatus_WebsInputs}",
      "href": "notifications/toast.md"
   },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Dialog {ReleaseStatus_WebsInputs}",
+    "href": "notifications/dialog.md",
+    "status": "NEW"
+ },
   {
     "exclude": ["Angular"],
     "name": "Scheduling",
