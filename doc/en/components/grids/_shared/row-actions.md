@@ -16,18 +16,14 @@ The first step is to import the **IgxActionStripModule** in our **app.module.ts*
 
 ```typescript
 // app.module.ts
-
-...
 import { IgxActionStripModule } from 'igniteui-angular';
 
 @NgModule({
-    ...
     imports: [..., IgxActionStripModule],
-    ...
 })
 ```
 <!-- end: Angular -->
-The predefined `actions` UI components are:
+The predefined actions UI components are:
 - `GridEditingActionsComponent` - includes functionality and UI specifically designed for the {ComponentTitle} editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the {ComponentTitle}.
 
 - `GridPinningActionsComponent` - includes functionality and UI specifically designed for the {ComponentTitle} row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
@@ -63,7 +59,7 @@ They are added inside the {ComponentSelector} and this is all needed to have an 
 
 ## Custom implementation
 
-These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStrip` for a Gmail scenario with row actions such as `delete`, `edit` and etc. You can simply create button component with `igx-icon`, add click event to it and insert it into the `igx-action-strip` component.
+These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
 
 ```html
 <{ComponentSelector}>
