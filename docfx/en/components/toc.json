@@ -212,6 +212,12 @@
         "name": "Multi-Column Headers",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/lob-grid/advanced-filtering.md",
+        "status": "NEW"
       }
     ]
   },
@@ -225,6 +231,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/hierarchical-grid/advanced-filtering.md",
         "status": "NEW"
       }
     ]
@@ -253,6 +265,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
       }
     ]
