@@ -5,16 +5,16 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragi
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
-# Collapsible Column Groups in {Platform} {ComponentTitle}
+# {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
 Multi-column headers allow you to have multiple levels of nested columns and column groups. They also provide the ability to mark each column group as **collapsible**. **Collapsible multi-column headers** make it possible to collapse/expand, i.e. to show and hide the nested headers under the current one, which will give you a shortened/summarized information for example.
 
-## {Platform} {ComponentTitle} Collapsible Column Groups Overview Example
+## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
 <code-view style="height:600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-collapsible-groups"
-            github-src="{ComponentSample}/collapsible-groups"
+           github-src="{ComponentSample}/collapsible-groups"
            alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
 </code-view>
 
@@ -112,7 +112,7 @@ And now let's sum up: every child column has three states:
 
 The initial state of the column group which is specified as collapsible is `Expanded`set to **true**. But you can easily change this behavior by setting it to **false**.
 
-## Expand/Collapse indicator template
+## Expand/Collapse Indicator Template
 
 Default expand indicator for the {ComponentName} is the following:
 
@@ -125,7 +125,7 @@ Default collapse indicator for the {ComponentName} is the following:
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
 
 
-### Using property
+### Using Property
 
 You can define custom expand/collapse template and provide it to each of the collapsible column groups using `CollapsibleIndicatorTemplate` property. Check the markup below:
 
@@ -148,7 +148,7 @@ TO-DO CollapsibleIndicatorTemplate SNIPPET
 ```
 
 <!-- Angular -->
-### Using igxCollapsibleIndicator directive
+### Using igxCollapsibleIndicator Directive
 
 Another way to achieve this behavior is to use the igxCollapsibleIndicator directive as shown in the example below:
 
@@ -174,8 +174,8 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 ## API References
 
+* `{ComponentName}` 
 * `Column`
-* `Grid`
 
 ## Additional Resources
 
