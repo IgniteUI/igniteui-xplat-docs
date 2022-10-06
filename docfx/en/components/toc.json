@@ -229,7 +229,6 @@
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
-      {  
       { 
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
@@ -247,8 +246,13 @@
         "name": "Row Actions",
         "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Batch Editing",
+        "href": "grids/lob-grid/batch-editing.md", 
+        "status": "NEW"
       }
-      
     ]
   },
   {
@@ -289,6 +293,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Batch Editing",
+        "href": "grids/hierarchical-grid/batch-editing.md", 
         "status": "NEW"
       }
     ]
@@ -356,6 +366,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Batch Editing",
+        "href": "grids/tree-grid/batch-editing.md", 
         "status": "NEW"
       }
     ]
