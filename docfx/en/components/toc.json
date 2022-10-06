@@ -218,7 +218,42 @@
         "name": "Advanced Filtering",
         "href": "grids/lob-grid/advanced-filtering.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/lob-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Clipboard Interactions",
+        "href": "grids/lob-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/lob-grid/column-types.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/lob-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/lob-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/lob-grid/row-actions.md", 
+        "status": "NEW"
       }
+      
     ]
   },
   {
@@ -238,6 +273,34 @@
         "name": "Advanced Filtering",
         "href": "grids/hierarchical-grid/advanced-filtering.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/hierarchical-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Selection",
+        "href": "grids/hierarchical-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/hierarchical-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -251,6 +314,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Pivot Grid Shared Topic",
         "href": "grids/pivot-grid/template.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/pivot-grid/selection.md",
         "status": "NEW"
       }
     ]
@@ -271,6 +340,39 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/tree-grid/advanced-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/tree-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Clipboard Interactions",
+        "href": "grids/tree-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/tree-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Selection",
+        "href": "grids/tree-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/tree-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/tree-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
