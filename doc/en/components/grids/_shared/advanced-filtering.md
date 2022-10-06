@@ -404,30 +404,32 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-@@if (igxName === 'IgxGrid') {
+<!-- ComponentStart: Grid -->
 
 <code-view style="height:530px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/grid/grid-advanced-filtering-style" >
 </code-view>
 
-}
-@@if (igxName === 'IgxTreeGrid') {
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 
 <code-view style="height:510px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-advanced-filtering-style" >
 </code-view>
 
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
 
 <code-view style="height:630px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-advanced-filtering-style" >
 </code-view>
 
-}
+<!-- ComponentEnd: HierarchicalGrid -->
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
@@ -437,7 +439,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 * `IgxColumnComponent`
-* `{ComponentName}Component`
+* `{ComponentName}`
 * [{ComponentName} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## Additional Resources
