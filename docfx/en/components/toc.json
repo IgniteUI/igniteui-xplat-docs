@@ -229,7 +229,6 @@
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
-      {  
       { 
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
@@ -247,8 +246,13 @@
         "name": "Row Actions",
         "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Search",
+        "href": "grids/lob-grid/search.md", 
+        "status": "NEW"
       }
-      
     ]
   },
   {
@@ -356,6 +360,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Search",
+        "href": "grids/tree-grid/search.md", 
         "status": "NEW"
       }
     ]
