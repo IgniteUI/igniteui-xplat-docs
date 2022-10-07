@@ -246,7 +246,7 @@ The difference is that for the child grid, when `height` is set to percentages, 
 
 ## API References
 
-* {ComponentName}
+* `{ComponentName}`
 <!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
 
 * `GridRow`
