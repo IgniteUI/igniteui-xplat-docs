@@ -455,8 +455,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ## API References
 
-* ColumnComponent
-* {ComponentName}
+* `ColumnComponent`
+* `{ComponentName}`
 
 ## Additional Resources
 
