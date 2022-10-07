@@ -9,31 +9,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 # {Platform} {ComponentTitle} Column Pinning 
 A column or multiple columns can be pinned to the left or right side of the {Platform} UI {ComponentTitle}. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the {ComponentTitle}. The Material UI Grid has a built-in column pinning UI, which can be used through the {ComponentTitle}'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning API.
 
-## {Platform} {ComponentTitle} Column Pinning  Example
-
-<!-- ComponentStart: Grid -->
+## {Platform} {ComponentTitle} Column Pinning Example
 
 <code-view style="height:510px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}{ComponentSample}-sample-toolbar-pinning" alt="{Platform} {ComponentTitle} Column Pinning  Example">
+           iframe-src="{environment:demosBaseUrl}{ComponentSample}-toolbar-pinning"
+           alt="{Platform} {ComponentTitle} Column Pinning  Example">
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:630px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-toolbar-pinning" alt="{Platform} {ComponentTitle} Column Pinning  Example">
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:510px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-toolbar-pinning" alt="{Platform} {ComponentTitle} Column Pinning  Example">
-</code-view>
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ## Column Pinning API
 
@@ -333,31 +315,10 @@ public toggleColumn(col: IgxColumnComponent) {
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:510px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sample-pinning" >
-</code-view>
-
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:630px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-pinning" >
 </code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:510px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}{ComponentSample}-pinning" >
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## Pinning Limitations
 
@@ -372,7 +333,7 @@ The {ComponentName} allows styling through the [{ProductName} Theme Library](../
 
 In the below steps, we are going through the steps of customizing the grid's Pinning styling.
 
-### Importing global theme
+### Importing Global Theme
 To begin the customization of the Pinning feature, you need to import the `index` file, where all styling functions and mixins are located.
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -381,7 +342,7 @@ To begin the customization of the Pinning feature, you need to import the `index
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ``` 
 
-### Defining custom theme
+### Defining Custom Theme
 Next, create a new theme, that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the Pinning feature as desired.   
 
 ```scss
@@ -395,7 +356,7 @@ $custom-theme: grid-theme(
 );
 ```    
 
-### Defining a custom color palette
+### Defining a Custom Color Palette
 In the approach, that was described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.   
 `igx-palette` generates a color palette, based on provided primary and secondary colors.  
 
@@ -423,7 +384,7 @@ $custom-theme: grid-theme(
 
 The `$custom-theme` contains the same properties as the one in the previous section, but this time the colors are not hardcoded. Instead, the custom `igx-palette` was used and the colors were obtained through its primary and secondary colors, with a given color variant.   
 
-### Defining custom schemas
+### Defining Custom Schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.   
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.   
 ```scss
@@ -445,13 +406,13 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Applying the custom theme
+### Applying the Custom Theme
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file: 
 ```scss
 @include grid($custom-theme);
 ```
 
-### Scoped component theme
+### Scoped Component Theme
 
 In order for the custom theme to affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
 
@@ -483,8 +444,8 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 <!-- end: Angular -->
 
 ## API References
-* {ComponentName}
-* ColumnComponent
+* `{ComponentName}`
+* `ColumnComponent`
 
 ## Additional Resources
 * [{ComponentTitle} overview](overview.md)
