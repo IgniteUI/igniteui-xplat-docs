@@ -247,8 +247,13 @@
         "name": "Row Actions",
         "href": "grids/lob-grid/row-actions.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/lob-grid/cell-editing.md", 
+        "status": "NEW"
       }
-      
     ]
   },
   {
@@ -289,6 +294,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/cell-editing.md", 
         "status": "NEW"
       }
     ]
@@ -356,6 +367,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/tree-grid/cell-editing.md", 
         "status": "NEW"
       }
     ]
