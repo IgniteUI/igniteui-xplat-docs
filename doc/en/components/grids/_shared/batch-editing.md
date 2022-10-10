@@ -6,7 +6,7 @@ mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# Angular {ComponentTitle} Batch Editing and Transactions
+# {Platform} {ComponentTitle} Batch Editing and Transactions
 
 <!-- ComponentStart: Grid -->
 The Batch Editing feature of the {ComponentName} is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
@@ -18,14 +18,14 @@ The Batch Editing feature of the {ComponentName} is based on the `HierarchicalTr
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-In order to use the [`HierarchicalTransactionService`]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html) with [`@@igxName`]({environment:angularApiUrl}/classes/igxhierarchicalgridcomponent.html), but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `IgxHierarchicalTransactionServiceFactory`.
+In order to use the `HierarchicalTransactionService` with `{ComponentTitle}`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `IgxHierarchicalTransactionServiceFactory`.
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Below is a detailed example of how is Batch Editing enabled for the {ComponentTitle} component.
 
-## Angular {ComponentTitle} Batch Editing and Transactions Example
+## {Platform} {ComponentTitle} Batch Editing and Transactions Example
 
-The following sample demonstrates a scenario, where the @@igObjectRef has [`batchEditing`]({environment:angularApiUrl}/classes/@@igTypeDoc.html#batchEditing) enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
+The following sample demonstrates a scenario, where the {ComponentTitle} has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
 
 <code-view style="height:680px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -253,11 +253,6 @@ Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are 
 ## Remote Paging with Batch Editing Demo
 
 [Check out the full demo configuration](remote-data-operations.md#remote-paging-with-batch-editing)
-
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/remote-paging-batch-editing" >
-</code-view>
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
