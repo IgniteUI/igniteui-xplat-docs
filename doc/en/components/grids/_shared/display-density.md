@@ -1,7 +1,7 @@
 ---
 title: {Platform} Grid Display Density - {ProductName}
 _description: Learn how to apply display density capabilities to the {ComponentTitle} component. You can use a set of compact view options in the {ProductName}.
-_keywords:  material density, {ProductName}, infragistics
+_keywords:  material density, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -44,7 +44,7 @@ this.grid.displayDensity = 'cosy';
 }
 ```
 
-And now let's see in details how each option reflects on the {ComponentTitle} component. When you switch between different density options the height of each {ComponentName} element and the corresponding paddings will be changed. Also if you want to apply custom column **`Width`**, please consider the fact that it must be bigger than the sum of left and right padding.
+And now let's see in details how each option reflects on the {ComponentTitle} component. When you switch between different density options the height of each {ComponentName} element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
  - **comfortable** - this is the default {ComponentTitle} display density with the lowest intense and row height equal to `50px`. Left and Right paddings are `24px`; Minimal column `Width` is `80px`;
  - **cosy** - this is the middle intense density with `40px` row height. Left and Right paddings are `16px`; Minimal column `Width` is `64px`;
  - **compact** - this is the density with highest intense and `32px` row height. Left and Right paddings are `12px`; Minimal column `Width` is `56px`;
@@ -53,11 +53,13 @@ And now let's see in details how each option reflects on the {ComponentTitle} co
 
 Let's now continue with our sample and see in action how the `DisplayDensity` is applied. Let's first add a button which will help us to switch between each density:
 
+<!-- Angular -->
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities"></igx-buttongroup>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="density-chooser">
@@ -98,6 +100,7 @@ public ngOnInit() {
 Now we can add the markup.
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -152,6 +155,7 @@ Now we can add the markup.
     </igx-column-group>
 </igx-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="density-chooser"> 
@@ -171,6 +175,8 @@ Now we can add the markup.
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+
+<!-- Angular -->
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -217,13 +223,15 @@ Now we can add the markup.
     </igx-column-group>
 </igx-tree-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO TREEGRID CODE SNIPPET
 ```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
 ```html
 <div class="density-chooser">
     <igx-buttongroup [values]="displayDensities" (selected)="selectDensity($event)"></igx-buttongroup>
@@ -263,9 +271,9 @@ TO-DO TREEGRID CODE SNIPPET
 
 </igx-hierarchical-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO H-GRID CODE SNIPPET
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -301,7 +309,7 @@ public selectDensity(event) {
 }
 ```
 
-Another option that **`{ComponentTitle}`** provides for you, in order to be able to change the height of the rows in the {ComponentTitle}, is the property `RowHeight`. So let's see in action how this property affects the {ComponentTitle} layout along with the `DisplayDensity`
+Another option that `{ComponentTitle}` provides for you, in order to be able to change the height of the rows in the {ComponentTitle}, is the property `RowHeight`. So let's see in action how this property affects the {ComponentTitle} layout along with the `DisplayDensity`
 
 Please keep in mind the following:
  - `DisplayDensity` options will have **NO** impact on row height **if there is `RowHeight` specified**;
@@ -312,7 +320,6 @@ And now we can extend our sample and add `RowHeight` property to the {ComponentT
  ```html
  <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%" 
  height="550px" [allowFiltering]="true">
- ..............
  </{ComponentSelector}>
  ```
 
