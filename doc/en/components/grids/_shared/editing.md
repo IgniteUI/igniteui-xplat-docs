@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Editing - {ProductName}
 _description: Get a powerful public API and an easy way to perform data manipulations like creating, updating, or deleting records. See the {Platform} {ComponentTitle} editing options!
-_keywords: data manipulation,{ProductName}, Infragistics
+_keywords: data manipulation, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -49,16 +49,16 @@ All available column data types could be found in the official [Column types top
 ### Event arguments and sequence
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
 
- | Event | Description | Arguments | Cancellable |
-|-------|-------------|-----------|-------------|
-| `RowEditEnter` | If `RowEditing` is enabled, fires when a row enters edit mode | `IgbGridEditEventArgs` | **true** |
-| `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`) | `IgbGridEditEventArgs` | **true** |
-| `CellEdit` | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing `Enter`) | `IgbGridEditEventArgs` | **true** |
-| `CellEditDone` | If value is changed, fires **after** a cell has been edited and cell's value is **committed** | `IgbGridEditDoneEventArgs` | **false** |
-| `CellEditExit` | Fires when a cell **exits edit mode** | `IgbGridEditDoneEventArgs` | **false** |
-| `RowEdit` | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `IgbGridEditEventArgs` | **true** |
-| `RowEditDone` | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**. | `IgbGridEditDoneEventArgs` | **false** |
-| `RowEditExit` | If `RowEditing` is enabled, fires when a row **exits edit mode** | `IgbGridEditDoneEventArgs` | **false** |
+ | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
+ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
+ | `RowEditEnter`  | If `RowEditing` is enabled, fires when a row enters edit mode                                                                                             | `IgbGridEditEventArgs`     | **true**    |
+ | `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`)                                                                                             | `IgbGridEditEventArgs`     | **true**    |
+ | `CellEdit`      | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing `Enter`)                                                     | `IgbGridEditEventArgs`     | **true**    |
+ | `CellEditDone`  | If value is changed, fires **after** a cell has been edited and cell's value is **committed**                                                             | `IgbGridEditDoneEventArgs` | **false**   |
+ | `CellEditExit`  | Fires when a cell **exits edit mode**                                                                                                                     | `IgbGridEditDoneEventArgs` | **false**   |
+ | `RowEdit`       | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `IgbGridEditEventArgs`     | **true**    |
+ | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `IgbGridEditDoneEventArgs` | **false**   |
+ | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `IgbGridEditDoneEventArgs` | **false**   |
 
 ### Event cancelation
  - `RowEditEnter` - Neither Row nor Cell will enter edit mode.
@@ -102,20 +102,20 @@ The following sample demonstrates the editing execution sequence in action:
 ### Features integration
 While a cell/row is in edit mode, a user may interact with the grid in many ways. The following table specifies how a certain interaction affects the current editing:
 
-| {ComponentTitle}     | Filtering  | Sorting | Paging | Moving | Pinning | Hiding | GroupBy | Resizing | Escape | Enter | F2 | Tab | Cell Click | Add new row/Delete/Edit |
-| ----------------- |:---------:|:-------:|:------:|:------:|:-------:|:------:|:-------:|:--------:|:------:|:-----:|:--:|:---:|:----------:|:-----------------------:|
-| Keep edit mode    |           |      |   |   |   |   |   | ✔ |   |   |   |   |   |   |
-| Exit edit mode    |✔         | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |   | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Commit            |   |   |  |  |  |   |   |   |  | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Discard           | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |✔ |   | ✔  |  |   |   |   |  |
+| {ComponentTitle} | Filtering | Sorting | Paging | Moving | Pinning | Hiding | GroupBy | Resizing | Escape | Enter |  F2   |  Tab  | Cell Click | Add new row/Delete/Edit |
+| ---------------- | :-------: | :-----: | :----: | :----: | :-----: | :----: | :-----: | :------: | :----: | :---: | :---: | :---: | :--------: | :---------------------: |
+| Keep edit mode   |           |         |        |        |         |        |         |    ✔     |        |       |       |       |            |                         |
+| Exit edit mode   |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |   ✔   |   ✔   |   ✔   |     ✔      |            ✔            |
+| Commit           |           |         |        |        |         |        |         |          |        |   ✔   |   ✔   |   ✔   |     ✔      |            ✔            |
+| Discard          |     ✔     |    ✔    |   ✔    |   ✔    |    ✔    |   ✔    |    ✔    |          |   ✔    |       |       |       |            |                         |
 
 As seen from the table, all interactions, except resizing a column, will end the editing and will discard the new values. Should the new value be committed, this can be done by the developer in the corresponding feature "-ing" event.
 
 Example how to commit new values, if user tries to sort the column while a cell/row is in edit mode:
 
+<!-- Angular -->
 ```html
 <igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
-...
 </igx-grid>
 ```
 
@@ -125,9 +125,19 @@ public onSorting(event: ISortingEventArgs) {
     // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
+<!-- end: Angular -->
 
 ```razor
-Add razor snippet
+<IgbGrid
+    Id="grid"
+    SortingScript="SortingHandler"
+    RowEditable="true">        
+</IgbGrid>
+
+function SortingHandler() {
+    grid.endEdit(true);
+}
+igRegisterScript("SortingHandler", SortingHandler, false);
 ```
 
 ## API References
@@ -156,7 +166,7 @@ Add razor snippet
 
 
 * [{ComponentTitle} overview](overview.md)
-* [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
+* [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
