@@ -1,7 +1,7 @@
 ---
 title: Conditional Cell Styling in {Platform} {ComponentTitle} - {ProductName}
 _description: Let users identify different cells quickly. Define a variety of cell styles. Use the conditional cell styling in {Platform} {ComponentTitle} to make cells stand out.
-_keywords: conditional styling, {ProductName}, Infragistics
+_keywords: conditional styling, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -63,7 +63,7 @@ Add snippet
 ```
 
 <!-- Angular -->
-Use **::ng-deep** or **`ViewEncapsulation.None`** to force the custom styles down through the current component and its children.
+Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
 
@@ -133,12 +133,14 @@ public rowStyles = {
 add styles
 ```
 
+<!-- Angular -->
 ```html
 <!-- sample.component.html -->
 <igx-grid #grid1 [data]="data | async" [height]="'500px'" width="100%"
         [autoGenerate]="false" [allowFiltering]="true" [rowStyles]="rowStyles">
 </igx-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add grid sample
@@ -170,12 +172,14 @@ public rowStyles = {
 Add treegrid styles
 ```
 
+<!-- Angular -->
 ```html
 <!-- sample.component.html -->
 <igx-tree-grid #treeGrid [data]="data" [moving]="true" primaryKey="ID" foreignKey="ParentID"
         width="100%" height="550px" [rowStyles]="rowStyles">
 </igx-tree-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add treegrid markup
@@ -201,6 +205,7 @@ public childRowStyles = {
 Add hgrid styles
 ```
 
+<!-- Angular -->
 ```html
 <igx-hierarchical-grid  #hierarchicalGrid [data]="localdata" [autoGenerate]="false"
         [height]="'580px'" [width]="'100%'" [rowStyles]="rowStyles">
@@ -208,6 +213,7 @@ Add hgrid styles
         </igx-row-island>  
 </igx-hierarchical-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add hgrid markup
@@ -274,7 +280,8 @@ private downFontCondition = (rowData: any, columnKey: any): boolean => {
 cellclasses example
 ```
 
-```css
+<!-- Angular -->
+```scss
 // component.scss file
 .upFont {
     color: red;
@@ -284,6 +291,7 @@ cellclasses example
     color: green;
 }
 ```
+<!-- end: Angular -->
 
 
 ### Using cellClasses
@@ -291,10 +299,12 @@ You can conditionally style the {ComponentName} cells by setting the `Column` `C
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
 <!-- sample.component.html -->
 <igx-column field="BeatsPerMinute" dataType="number" [cellClasses]="beatsPerMinuteClasses"></igx-column>
 ```
+<!-- end: Angular -->
 
 ```razor
 example
@@ -304,6 +314,7 @@ example
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
 ```html
 <!-- sample.component.html -->
 <igx-column field="UnitPrice" header="Unit Price" [dataType]="'number'" [cellClasses] = "priceClasses">
@@ -313,6 +324,7 @@ example
     </ng-template>
 </igx-column>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add tree grid example
@@ -353,6 +365,7 @@ public beatsPerMinuteClasses = {
 add example
 ```
 
+<!-- Angular -->
 ```scss
 // sample.component.scss
 
@@ -366,6 +379,7 @@ add example
     }
 }
 ```
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -416,7 +430,7 @@ Add hierarchical grid example
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- Angular -->
-Use **::ng-deep** or **`ViewEncapsulation.None`** to force the custom styles down through the current component and its children.
+Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
 ### Demo
@@ -618,14 +632,13 @@ public backgroundClasses = {
         return rowData.Col2 < 10;
     }
 };
-...
 
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
 
 ```
-
+<!-- Angular -->
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
@@ -633,6 +646,7 @@ editDone(evt) {
   <igx-column field="Col3" header="Col3" dataType="string" [cellClasses]="backgroundClasses"></igx-column>
 </igx-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Logic for that
