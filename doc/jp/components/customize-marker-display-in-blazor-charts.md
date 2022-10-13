@@ -12,7 +12,7 @@ mentionedTypes: []
 
 目次:
 
-* [Blazor チャートを使用したサンプルアプリケーションの作成](#blazor-チャートを使用したサンプルアプリケーションの作成)
+* [Blazor チャートを使用したサンプル アプリケーションの作成](#blazor-チャートを使用したサンプルアプリケーションの作成)
 * [マーカーのカスタム描画オブジェクトを返す、ファクトリー関数を定義](#マーカーのカスタム描画オブジェクトを返す、ファクトリー関数を定義)
 * [マーカーのカスタム描画オブジェクトの measure メソッドを実装](#マーカーのカスタム描画オブジェクトの-measure-メソッドを実装)
 * [マーカーのカスタム描画オブジェクトの render メソッドを実装](#マーカーのカスタム描画オブジェクトの-render-メソッドを実装)
@@ -40,7 +40,7 @@ public record SampleDataType(
 );
 ```
 
-[Blazor チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview)の[散布図](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart)で一般的に使われるであろう、X軸・Y軸用の値として XValue、YValue といったプロパティを持つことに加えて、
+[Blazor チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview)の[散布図](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart)で一般的に使われるであろう、X 軸・Y 軸用の値として XValue、YValue といったプロパティを持つことに加えて、
 
 * double 型の Volume プロパティと、
 * System.Drawing.Color 型の Color プロパティを設けておきます。
@@ -61,7 +61,7 @@ public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 };
 ```
 
-上記のとおり用意したサンプルデータを、別途用意した IgbDataChart 内に設けた、IgbScatterSeries のデータソースにバインドします (下記コード)。
+上記のとおり用意したサンプル データを、別途用意した IgbDataChart 内に設けた、IgbScatterSeries のデータ ソースにバインドします (下記コード)。
 
 ```razor
 @* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
@@ -168,7 +168,7 @@ function customMarkerTemplateFunc() {
 
 measure および render メソッドが実装できたら、残りの作業はあと少しです。ここまでで実装した、measure および render の 2つのメソッドを持つオブジェクトを返す関数を、Ignite UI が提供する igRegisterScript() 関数を呼び出して、Ignite UI に対して登録します。
 
-このとき、igRegisterScript() 関数の第1引数に、文字列の "スクリプト名" を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した “スクリプト名" で識別されます。以下にコード例を示します。
+このとき、igRegisterScript() 関数の第1引数に、文字列の「スクリプト名」を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した「スクリプト名」で識別されます。以下にコード例を示します。
 
 ```js
 // wwwroot/customMarkerTemplateFunc.js
@@ -197,7 +197,7 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```
 これで JavaScript 側の実装がひととおり完了となります。
 
-こうして作成した JavaScript プログラムファイル (.js) を、ブラウザから読み込むように、フォールバックページ ( "wwwroot/index.html" や "Pages/_Layout.cshtml"、"Pages/_Host.cshtml" など) に script 要素を記載します。
+こうして作成した JavaScript プログラムファイル (.js) を、ブラウザから読み込むように、フォールバックページ (wwwroot/index.html や Pages/_Layout.cshtml、Pages/_Host.cshtml など) に script 要素を記載します。
 
 その際、Ignite UI for Blazor の JavaScript ランタイムよりあとで読み込まれるよう、script 要素の配置順にはご注意ください。以下に Blazor WebAssembly プログラムにおけるコード例を示します。
 
@@ -232,8 +232,8 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 ## まとめ
 
-Blazor は、[Angular](https://blogs.jp.infragistics.com/entry/blazor-vs-angular) のようなよく知られてはいるが複雑なフレームワークを扱うことなく、ハイエンドな Web アプリケーションの構築や、データ可視化の管理、データチャートの既定の外観と操作感の改善を望む .NET 開発者にとって優れた選択です。
+Blazor は、[Angular](https://blogs.jp.infragistics.com/entry/blazor-vs-angular) のようなよく知られてはいるが複雑なフレームワークを扱うことなく、ハイエンドな Web アプリケーションの構築や、データ可視化の管理、データ チャートの既定の外観と操作感の改善を望む .NET 開発者にとって優れた選択です。
 
 しかし、そのような Web アプリケーションを構築するには、色やマージン、パディングを調整するだけでは不十分です。大量のリアルタイムのデータロードを処理できると同時に、美しく対話的な体験を提供できるデータ可視化ツールセットが重要であるとの認識から、我々は[最新の Ultimate 22.1 製品リリース](https://jp.infragistics.com/community/blogs/b/jason_beres/posts/product-release-whats-new-in-infragistics-ultimate-22-1) で Ignite UI for Blazor のすべてのデータ可視化機能およびデータチャートの改善に努力と時間をつぎ込みました。
 
-Ignite UI for Blazor の最新のアドオンには、自動ラベル回転、スタイルイベント、ラベルギャップのプロパティ、コールアウトレイヤーでの位置決め、シリーズモードの強調、水平および垂直スクロールバー、マージンアングルモードと [Blazor グリッド](https://www.youtube.com/watch?v=1dWR_N4teDs)、データ凡例とデータツールチップなどのコンポーネントが含まれます。
+Ignite UI for Blazor の最新のアドオンには、自動ラベル回転、スタイル イベント、ラベル ギャップのプロパティ、コールアウト レイヤーでの位置決め、シリーズ モードの強調、水平および垂直スクロールバー、マージンアングル モードと [Blazor グリッド](https://www.youtube.com/watch?v=1dWR_N4teDs)、データ凡例とデータ ツールチップなどのコンポーネントが含まれます。

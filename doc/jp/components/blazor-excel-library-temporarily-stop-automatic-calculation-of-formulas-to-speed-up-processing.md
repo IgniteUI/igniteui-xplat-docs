@@ -8,7 +8,7 @@ mentionedTypes: []
 
 # Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
 
-Excel シートを、[Blazor Excel Library](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library) で読み込み、そのセルの値を参照したり書き換えたりする際、とくにその Excel シートが数式を含むセルを大量に持っていると、セルの値の参照・書き換えにかなりの時間がかかる場合があります。この現象は (Blazor Server プログラムに比べ) [Blazor WebAssembly](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client) プログラム上ではとくに顕著です。
+Excel シートを、[Blazor Excel Library](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library)で読み込み、そのセルの値を参照したり書き換えたりする際、とくにその Excel シートが数式を含むセルを大量に持っていると、セルの値の参照・書き換えにかなりの時間がかかる場合があります。この現象は (Blazor Server プログラムに比べ) [Blazor WebAssembly](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client)プログラム上ではとくに顕著です。
 
 このような場合に処理時間を改善する方法のひとつとして、数式の自動計算を一時的に停止する、という方法があります。
 
@@ -30,7 +30,7 @@ Blazor の Excel ライブラリを使用するには、まず以下の @using �
 
 WebAssembly (WASM) Blazor プロジェクトを使用している場合、さらにいくつかのステップがあります。
 
-まず "wwwroot/index.html" ファイルに以下のスクリプトへの参照を追加します。
+まず wwwroot/index.html ファイルに以下のスクリプトへの参照を追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
@@ -57,7 +57,7 @@ WebAssembly (WASM) Blazor プロジェクトを使用している場合、さら
 
 [Ignite UI の Blazor ワークブック](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library-using-workbooks)は、複数のワークシートを簡単に集約できるように設計されており、最も効率的な方法で、データの取得、保存、整理、管理、編集、加工を行うことが可能です。Blazor ワークブックは、ゼロから新規に作成することも、作成済みの既存のドキュメントをインポートすることもできます。
 
-以下では、新規にワークブックを作成し、そのタイトルとステータスのドキュメントプロパティを設定する方法を示しています。
+以下では、新規にワークブックを作成し、そのタイトルとステータスのドキュメント プロパティを設定する方法を示しています。
 
 ```razor
 var workbook = new Workbook();
@@ -70,7 +70,7 @@ Infragistics Blazor Excel Engine を使用することで、以下が可能に�
 * Microsoft® Excel® へのデータ保存と読み込み。
 * ワークシートのコレクションの作成。
 * Blazor アプリケーションから Excel へのエクスポート・アプリケーションへのインポート。
-* 既定のスタイルの変更、ワークブックのスタイルコレクションへの新しいフォントの追加。
+* 既定のスタイルの変更、ワークブックのスタイル コレクションへの新しいフォントの追加。
 * ドキュメントの整理と追跡に有用な情報を提供するワークブック・プロパティの設定。 利用可能なプロパティは次のとおりです: 著者、タイトル、件名、キーワード、カテゴリ、ステータス、コメント、会社、および管理者。
 * ワークブックの保護機能の設定。保護機能を使うことで、ワークブックの構造を保護することができます。
 
@@ -102,7 +102,7 @@ workbook.ResumeCalculations();
 
 2. 処理時間が長くなる原因が数式の自動計算にない場合、この回避策による処理速度の向上は期待できません。
 
-その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) プログラムにおいては、"AOT コンパイル" を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
+その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts)プログラムにおいては、「AOT コンパイル」を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
 
 * 発行処理に長い時間がかかる
 * 出力されるアプリケーションコンテンツサイズが大きくなる
@@ -119,7 +119,7 @@ Excel ファイルの処理には、下記項目の状況によっては、か�
 
 しかし、他にも試せる技法がいくつかあります。
 
-* AOT（Ahead-Of-Time）コンパイルを使用する。
+* AOT (Ahead-Of-Time) コンパイルを使用する。
 * サーバーサイドで実行する。
 
 具体的な手順は、以前のブログ記事「Blazor WebAssemblyでExcelファイルを読み書きしてサーバーの負荷を軽減する方法」を参照してください。
