@@ -1000,7 +1000,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## Additional Resources
 
 
-* [{ComponentTitle} overview](@@igMainTopic.md)
+* [{ComponentTitle} overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
