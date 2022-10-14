@@ -48,21 +48,23 @@ The grid Excel filtering provides an Excel like filtering UI for any Angular Mat
 
 To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter`.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowFiltering]="true" [filterMode]="'excelStyleFilter'" >
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-Add snippet
+<IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter">
+</IgbGrid>
 ```
-
 
 ## Interactions
 
-In order to open the filter menu for a particular column, the {Platform} filter icon in the header should be clicked. Additionally, you can use the `Ctrl + Shift + L` combination on a selected header. If the column can be sorted, pinned, moved, selected or hidden along with the filtering functionality, there will be buttons available for the features that are turned on.
+In order to open the filter menu for a particular column, the {Platform} filter icon in the header should be clicked. Additionally, you can use the <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> combination on a selected header. If the column can be sorted, pinned, moved, selected or hidden along with the filtering functionality, there will be buttons available for the features that are turned on.
 
-If no filter is applied, all the items in the list will be selected. They can be filtered from the input above the list. In order to filter the data, you can select/deselect the items in the list and either click the Apply button, or press `Enter`. The filtering applied through the list items creates filter expressions with `equals` operator and the logic operator between the expressions is `OR`.
+If no filter is applied, all the items in the list will be selected. They can be filtered from the input above the list. In order to filter the data, you can select/deselect the items in the list and either click the Apply button, or press <kbd>Enter</kbd>. The filtering applied through the list items creates filter expressions with `equals` operator and the logic operator between the expressions is `OR`.
 
 If you type something in the search box and apply the filter, only the items that match the search criteria will be selected. If you want to add items to the currently filtered ones, however, you should select the option `Add current selection to filter`.
 
@@ -96,7 +98,16 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
 
 
 ```razor
-Add razor sample
+    <IgbGrid Data=northwindEmployees
+             AllowFiltering="true"
+             FilterMode="FilterMode.ExcelStyleFilter"
+             AutoGenerate="false">
+        <IgbColumn Field="EmployeeID" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="FirstName" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="BirthDate" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+    </IgbGrid>
 ```
 
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
