@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Sorting - {ProductName}
 _description: Get started with the {Platform} sorting feature of {ProductName} {ComponentTitle}! Configure a mix of sortable columns & change the display order of data records.
-_keywords: {Platform} sort, {ProductName}, Infragistics
+_keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -52,14 +52,14 @@ Additionally there is a custom contextmenu added for sorting using **{ComponentS
 This is done via the `Sortable` input. With the {ComponentTitle} sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
 
 
-
-
+<!-- Angular -->
 ```html
 <igx-column field="ProductName" header="Product Name" [dataType]="'string'" sortable="true"></igx-column>
 ```
+<!-- end: Angular -->
 
 ```razor
-Add razor snippet
+<IgbGridColumn Field="Title" Sortable="true"></IgbGridColumn>
 ```
 
 ## Sorting Indicators
@@ -81,6 +81,7 @@ The **{ComponentName}** provides a solution for this problem by indicating the i
 
 You can sort any column or a combination of columns through the {ComponentTitle} API using the {ComponentTitle} `Sort` method:
 
+<!-- Angular -->
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
 
@@ -93,9 +94,12 @@ this.grid.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
+<!-- end: Angular -->
 
 ```razor
-Add blazor snippet for sort with API
+@code {
+Currently not working
+}
 ```
 
 > [!NOTE]
@@ -103,6 +107,7 @@ Add blazor snippet for sort with API
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
 
+<!-- Angular -->
 ```typescript
 // Removes the sorting state from the ProductName column
 this.grid.clearSort('ProductName');
@@ -110,9 +115,16 @@ this.grid.clearSort('ProductName');
 // Removes the sorting state from every column in the {ComponentTitle}
 this.grid.clearSort();
 ```
+<!-- end: Angular -->
 
 ```razor
-Add clear sort snippet for blazor
+@code {
+    @*Removes the sorting state from the Title column*@
+    this.grid.ClearSortAsync("Title");
+
+    @*Removes the sorting state from every column in the Grid*@
+    this.grid.ClearSortAsync("");
+}
 ```
 
 > [!NOTE]
@@ -125,17 +137,29 @@ Add clear sort snippet for blazor
 
 It is possible to set the initial sorting state of the {ComponentTitle} by passing an array of sorting expressions to the `SortingExpressions` property of the {ComponentTitle}.
 
+<!-- Angular -->
 ```typescript
 public ngOnInit() {
-    this.@@igObjectRef.sortingExpressions = [
+    this.grid.sortingExpressions = [
         { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
         { fieldName: 'Price', dir: SortingDirection.Desc }
     ];
 }
 ```
+<!-- end: Angular -->
 
 ```razor
-Add blazor snippet for initial sorting state
+@code {
+    protected override void OnAfterRender(bool first)
+    {
+        this.grid.SortingExpressions = new IgbSortingExpression[]{
+            new IgbSortingExpression()
+            {
+                FieldName = "Title",
+                Dir = SortingDirection.Asc
+            }};
+    }
+}
 ```
 
 > [!NOTE]
@@ -324,8 +348,7 @@ Add Styling section for Blazor
 
 ## Additional Resources
 
-
-* [{ComponentTitle} overview](@@igMainTopic.md)
+* [{ComponentTitle} overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
