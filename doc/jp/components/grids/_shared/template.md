@@ -1,7 +1,7 @@
 ---
-title: Batch Editing and Transactions in {Platform} {ComponentTitle} - Infragistics
-_description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+title: {Platform} {ComponentTitle} での一括編集とトランザクション - インフラジスティックス
+_description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} 一括編集で基になるデータに影響を与えずにデータ操作を実行します。デモと例をご覧ください!
+_keywords: {Platform}, {ComponentTitle}, {ComponentName}, $ProductName$, インフラジスティックス
 _language: ja
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
@@ -15,7 +15,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 <!-- NOTE {ComponentTitle} -> {PivotGridTitle} -> Tree Grid -->
 
 <!-- EXAMPLE of shared variable that will be converted to actual component: {ComponentTitle} -> {IgbTreeGridTitle} -> 'Tree Grid'-->
-# {Platform} {ComponentTitle} Batch Editing and Transactions
+# {Platform} {ComponentTitle} 一括編集とトランザクション
 
 <!-- EXAMPLE of razor code snippet that is automatically filtered for Blazor -->
 
@@ -26,41 +26,41 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 <!-- EXAMPLE of build flagging content for single components: -->
 <!-- ComponentStart: PivotGrid -->
-The Batch Editing feature of the {ComponentName} is {ComponentName} based on the `HierarchicalTransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+{ComponentName} の一括編集機能は、`HierarchicalTransactionService` に基づく {ComponentName} です。[Transaction Service クラス階層](transaction-classes.md)のトピックに従って、`HierarchicalTransactionService` の概要と実装方法の詳細を確認してください。
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- EXAMPLE of build flagging content for multiple components: -->
 <!-- ComponentStart: PivotGrid, HierarchicalGrid -->
-The Batch Editing feature of the {ComponentName} is based on the `TransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+{ComponentName} の一括編集機能は、`TransactionService` に基づいています。[Transaction Service クラス階層](transaction-classes.md)のトピックに従って、`TransactionService` の概要と実装方法の詳細を確認してください。
 <!-- ComponentEnd: PivotGrid, HierarchicalGrid -->
 
 <!-- EXAMPLE of build flagging content for single components: -->
 <!-- ComponentStart: HierarchicalGrid -->
-In order to use the `HierarchicalTransactionService`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `HierarchicalTransactionServiceFactory`.
+HierarchicalTransactionService を使用した場合も各アイランドに個別のトランザクション ログを累積させるには、代わりにサービス ファクトリが必要です。エクスポートされると `HierarchicalTransactionServiceFactory` として利用できます。
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-## {Platform} {ComponentTitle} Example
+## {Platform} {ComponentTitle} の例
 
 <!-- EXAMPLE of shared variable that will be converted to actual API link: {ComponentName} -> {TreeGridName} -> `IgTreeGrid`-->
-Below is a detailed example of how is Batch Editing enabled for the `{ComponentName}` component.
+以下は、`{ComponentName}` コンポーネントに対して一括編集を有効にする方法の詳細な例です。
 
 <!-- EXAMPLE of embedding sample with ComponentSample path variable -->
 <code-view style="height:510px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-advanced-filtering"
            github-src="{ComponentSample}/advanced-filtering"
-           alt="{Platform} {ComponentName} Advanced Filtering Example">
+           alt="{Platform} {ComponentName} 高度なフィルタリングの例">
 </code-view>
 
 
 > [!NOTE]
-> Transaction state consists of all the updated, added and deleted rows, and their last states.
+> トランザクション ステートは、すべての更新、追加、削除された行、そして最後のステートで構成されます。
 
-## {Platform} {ComponentTitle} Module
+## {Platform} {ComponentTitle} のモジュール
 
 <!-- EXAMPLE of using a module variable that will be resolved to actual module, e.g. {ComponentModule} -> IgbPivotGridModule  -->
-Register the `{ComponentModule}` as demonstrated in the following code snippet:
+次のコード スニペットに示すように、`{ComponentModule}` を登録します:
 
 <!-- EXAMPLE of Blazor code snippet with module variable -->
 <!-- Blazor -->
@@ -92,9 +92,9 @@ export class AppModule {}
 ```
 <!-- end: Angular -->
 
-## {Platform} {ComponentTitle} Usage
+## {Platform} {ComponentTitle} の使用
 
-Then, all you need to do is enable `BatchEditing` property:
+次に、`BatchEditing` プロパティを有効にするだけです:
 
 <!-- EXAMPLE of shared code snippet with selector variable that will be resolved, e.g. {ComponentSelector} -> igb-pivot-grid  -->
 
@@ -108,11 +108,11 @@ Then, all you need to do is enable `BatchEditing` property:
 </{ComponentSelector}>
 ```
 
-## {Platform} {ComponentTitle} Transaction
+## {Platform} {ComponentTitle} のトランザクション
 
-This will ensure a proper instance of `Transaction` service is provided for the {ComponentSelector}. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the `TransactionFactory` class.
+これにより、`Transaction` サービスの適切なインスタンスが {ComponentSelector} に提供されます。適切な `TransactionService` は `TransactionFactory` を通じて提供されます。この内部実装の詳細については、`TransactionFactory` クラスを参照してください。
 
-After batch editing is enabled, define a {ComponentSelector} with bound data source and `RowEditable` set to true and bind:
+一括編集を有効にした後、バインドされたデータ ソースと `RowEditable` を true に設定して {ComponentSelector} を定義し、バインドします:
 
 <!-- EXAMPLE of a code snippet that applies only to Grid component  -->
 <!-- ComponentStart: Grid -->
@@ -172,8 +172,8 @@ After batch editing is enabled, define a {ComponentSelector} with bound data sou
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-## {Platform} {ComponentTitle} API Members
+## {Platform} {ComponentTitle} API メンバー
 
-The following is a list of API members mentioned in this topic:
+以下は、このトピックで言及されている API メンバーのリストです:
 
 - `{ComponentName}`
