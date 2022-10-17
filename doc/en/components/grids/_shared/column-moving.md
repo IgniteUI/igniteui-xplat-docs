@@ -29,7 +29,10 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ```razor
-TODO TEMPLATING CODE SNIPPET
+    public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
+    {
+        return @<igx-icon family="fas" name="fa-thumbtack" onclick="onClick()"></igx-icon>;
+    };
 ```
 
 ## {Platform} {ComponentTitle} Column Moving Overview Example
