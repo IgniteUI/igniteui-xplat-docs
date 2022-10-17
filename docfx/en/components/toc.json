@@ -249,6 +249,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/lob-grid/row-adding.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Search",
         "href": "grids/lob-grid/search.md", 
         "status": "NEW"
@@ -293,6 +299,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/hierarchical-grid/row-adding.md", 
         "status": "NEW"
       }
     ]
@@ -360,6 +372,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/tree-grid/row-adding.md", 
         "status": "NEW"
       },
       {
