@@ -162,7 +162,18 @@ Let's say that instead of an action strip you would like to show a pin icon in e
 This can be done by adding an extra column with a cell template containing the custom icon.
 
 ```razor
-TODO
+<IgbGridColumn Width="70px" BodyTemplate=@bodyTemplate/>
+
+@code {
+    public RenderFragment<IgbCellTemplateContext> bodyTemplate = (context) =>
+    {
+        double index = context.Cell.Id.RowIndex;
+        var grid = context.Cell.Grid;
+        bool pinned = grid.GetRowByIndex(index).Pinned;
+        var icon = pinned ? "lock" : "lock_open";
+        return @<IgbIcon Size="SizableComponentSize.Small" IconName="@icon" Collection="material" onclick='togglePinning(@index)' />;
+    };
+}
 ```
 
 ```html
@@ -193,7 +204,11 @@ public togglePinning(row: IgxGridRow, event) {
 ```
 
 ```razor
-TODO
+function togglePinning(rowIndex) {
+    const row = grid1.getRowByIndex(0).pinned;
+    row.pinned = !row.pinned;    
+}
+igRegisterScript("togglePinning", togglePinning, false);
 ```
 
 #### Demo
