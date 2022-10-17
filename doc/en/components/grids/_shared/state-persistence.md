@@ -1,11 +1,10 @@
 ---
 title: {Platform} {ComponentTitle} State Persistence - {ProductName}
 _description: Easily save and restore the grid state, using our comprehensive Ignite UI toolset for {Platform}. Learn how to restore columns, explore usage, and see demos!
-_keywords: state persistence, {ProductName}, Infragistics
+_keywords: state persistence, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ---
-
 
 # {Platform} {ComponentTitle} State Persistence
 
@@ -114,10 +113,12 @@ SetState blazor snippet
 public options =  { cellSelection: false; sorting: false; }
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [igxGridState]="options">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add options snippet blazor
@@ -166,7 +167,7 @@ Add blazor snippet for working with the sessionStorage
 1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
    
 <!-- ComponentStart: Grid -->
-
+<!-- Angular -->
 ```html
 <igx-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -176,6 +177,7 @@ Add blazor snippet for working with the sessionStorage
     </igx-column>
 </igx-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add snippet for grid
@@ -185,6 +187,7 @@ Add snippet for grid
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- Angular -->
 ```html
 <igx-hierarchical-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -192,9 +195,9 @@ Add snippet for grid
             <igx-checkbox [checked]="val"></igx-checkbox>
         </ng-template>
     </igx-column>
-    ...
 </igx-hierarchical-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add snippet for grid
@@ -204,6 +207,7 @@ Add snippet for grid
 
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
 ```html
 <igx-tree-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -213,6 +217,7 @@ Add snippet for grid
     </igx-column>
 </igx-tree-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add sample
@@ -250,11 +255,14 @@ Add blazor handler for bodyTemplate
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 
+<!-- Angular -->
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfig" [igxGridState]="options"
     (valueInit)='onValueInit($event)' (dimensionInit)='onDimensionInit($event)'>
 </igx-pivot-grid>
 ```
+<!-- end: Angular -->
+
 ```razor
 blazor snippet
 ```
@@ -328,10 +336,12 @@ Add blazor handling for dimensionInit
 ## Restoring Child Grids
 Saving / Restoring state for the child grids is controlled by the `RowIslands` property and is enabled by default. `GridState` will use the same options for saving/restoring features both for the root grid and all child grids down the hierarchy. For example, if we pass the following options:
 
+<!-- Angular -->
 ``` html
 <!-- public options = {selection: false, sorting: false, rowIslands: true} -->
 <igx-grid [igxGridState]="options"></igx-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Blazor snippet
@@ -400,6 +410,7 @@ setState snippet
 
 * Set custom sorting strategy and custom pivot column and row dimension strategies:
 
+<!-- Angular -->
 ```html
 <igx-pivot-grid #grid [data]="data" [pivotConfiguration]="pivotConfigHierarchy" [defaultExpandState]='true'
     [igxGridState]="options" [sortStrategy]="customStrategy" [showPivotConfigurationUI]='false' [superCompactMode]="true" [height]="'500px'">
@@ -421,6 +432,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     filters: [...]
 };
 ```
+<!-- end: Angular -->
 
 ```razor
 Add snippet for blazor
@@ -428,6 +440,7 @@ Add snippet for blazor
 
 * Restoring the state from the `sessionStorage` and applying the custom strategies looks like the following:
 
+<!-- Angular -->
 ```typescript
 public restoreState() {
     const state = window.sessionStorage.getItem('grid-state');
@@ -439,6 +452,8 @@ public restoreState() {
     this.state.setState(state as string);
 }
 ```
+<!-- end: Angular -->
+
 ```razor
 Add snippet for blazor for restore state
 ```
