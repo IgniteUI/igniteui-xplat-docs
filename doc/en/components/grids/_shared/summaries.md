@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Summaries - {ProductName}
 _description: Configure {Platform} {ComponentTitle} summaries in the group footer of the column and use the option to set custom {Platform} template in the {ProductName} Material table
-_keywords: {Platform} {ComponentTitle} summaries, {ProductName}, Infragistics
+_keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -73,6 +73,7 @@ All available column data types could be found in the official [Column types top
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -83,9 +84,16 @@ All available column data types could be found in the official [Column types top
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
 
 ```razor
-Add blazor snippet
+<IgbGrid>
+        <IgbGridColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="FirstName" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="LastName" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="Title" HasSummary="true"></IgbGridColumn>
+</IgbGrid>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -93,6 +101,7 @@ Add blazor snippet
 
 <!-- ComponentStart: HierarchicalGrid -->
 
+<!-- Angular -->
 ```html
 <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false">
     <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -108,6 +117,7 @@ Add blazor snippet
     <igx-column field="Grammy Awards" [hasSummary]='true' [dataType]="'number'"></igx-column>
 </igx-hierarchical-grid>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
@@ -120,6 +130,7 @@ The other way to enable/disable summaries for a specific column or a list of col
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -143,16 +154,35 @@ public disableSummary() {
     this.grid.disableSummaries('ProductName');
 }
 ```
+<!-- end: Angular -->
 
 ```razor
-Add blazor snippet
+ <IgbGrid @ref=grid Id="grid" AutoGenerate="false">
+        <IgbGridColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="FirstName" Sortable="true" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true" HasSummary="true"></IgbGridColumn>
+        <IgbGridColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbGridColumn>
+</IgbGrid>
+
+@code {
+    public void EnableSummary()
+    {
+        @*this.grid.EnableSummariesAsync not working*@
+    }
+
+    public void EnableSummary()
+    {
+        object[] disabledSummaries = { "EmployeeID" };
+        this.grid.DisableSummariesAsync(disabledSummaries);
+    } 
+}
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 
 <!-- ComponentStart: HierarchicalGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} #hierarchicalGrid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
   <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -181,11 +211,11 @@ public disableSummary() {
     this.hierarchicalGrid.disableSummaries('Photo');
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -193,7 +223,7 @@ Add blazor snippet for hgrid
 If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. In order to achieve this you have to override one of the base classes `SummaryOperand`, `NumberSummaryOperand` or `DateSummaryOperand` according to the column data type and your needs. This way you can redefine the existing function or you can add new functions. `SummaryOperand` class provides the default implementation only for the `Count` method. `NumberSummaryOperand` extends `SummaryOperand` and provides implementation for the `Min`, `Max`, `Sum` and `Average`. `DateSummaryOperand` extends `SummaryOperand` and additionally gives you `Earliest` and `Latest`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
-
+<!-- Angular -->
 ```typescript
 import { IgxSummaryResult, IgxSummaryOperand, IgxNumberSummaryOperand, IgxDateSummaryOperand } from 'igniteui-angular';
 
@@ -213,6 +243,7 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet
@@ -223,7 +254,7 @@ Add blazor snippet
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-
+<!-- Angular -->
 ```typescript
 import { IgxRowIslandComponent, IgxHierarchicalGridComponent, IgxNumberSummaryOperand, IgxSummaryResult } from 'igniteui-angular';
 
@@ -244,17 +275,18 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
 
 As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
 
 The method returns a list of `SummaryResult`.
 
+<!-- Angular -->
 ```typescript
 interface IgxSummaryResult {
     key: string;
@@ -262,6 +294,7 @@ interface IgxSummaryResult {
     summaryResult: any;
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add IgxSummaryResult snippet here
@@ -275,7 +308,7 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
 
 <!-- ComponentStart: Grid, TreeGrid -->
 And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below.
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" width="200px"  [sortable]="true">
@@ -290,11 +323,11 @@ And now let's add our custom summary to the column `UnitsInStock`. We will achie
 ```
 
 ```typescript
-...
 export class GridComponent implements OnInit {
     mySummary = MySummary;
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet
@@ -306,6 +339,8 @@ Add blazor snippet
 <!-- ComponentStart: HierarchicalGrid -->
 
 And now let's add our custom summary to the column `GramyNominations`. We will achieve that by setting the `Summaries` property to the class we create below.
+
+<!-- Angular -->
 ```html
  <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false">
     <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -323,18 +358,17 @@ And now let's add our custom summary to the column `GramyNominations`. We will a
 ```
 
 ```typescript
-...
 export class HGridSummarySampleComponent implements OnInit {
     mySummary = MySummary;
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
-
 
 ### Custom summaries, which access all data
  Now you can access all {ComponentTitle} data inside the custom column summary. Two additional optional parameters are introduced in the SummaryOperand `Operate` method.
@@ -343,6 +377,7 @@ As you can see in the code snippet below the operate method has the following th
 - allGridData - gives you the whole grid data source
 - fieldName - current column field
 
+<!-- Angular -->
 ```typescript
 class MySummary extends IgxNumberSummaryOperand {
     constructor() {
@@ -355,6 +390,7 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for Mysummary
@@ -396,6 +432,7 @@ Add blazor snippet for Mysummary
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
 
+<!-- Angular -->
 ```html
 <igx-column [hasSummary]="true">
     <ng-template igxSummary let-summaryResults>
@@ -404,6 +441,7 @@ Add blazor snippet for Mysummary
     </ng-template>
 </igx-column>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add blazor template for templatable summary
@@ -451,6 +489,7 @@ When a default summary is defined, the height of the summary area is calculated 
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
 
+<!-- Angular -->
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
     const result = summary.summaryResult;
@@ -466,11 +505,11 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```html
 <igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
 ```
+<!-- end: Angular -->
 
 ```razor
 Add custom summary formatter snippets for blazor
 ```
-
 
 <!-- ComponentStart: Grid -->
 
@@ -579,7 +618,6 @@ The summary rows can be navigated with the following keyboard interactions:
 - <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell
 
 ## Styling
-
 <!-- Angular -->
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
 
@@ -727,7 +765,6 @@ Add razor styling section
 
 
 ## API References
-
 
 * `SummaryOperand`
 * `NumberSummaryOperand`
