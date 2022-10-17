@@ -43,7 +43,7 @@ defineComponents(IgcAccordionComponent);
 ```
 
 <!-- end: WebComponents -->
-これで、 `Accordion` とそのパネルの基本構成から始めることができます。
+これで、`Accordion` とそのパネルの基本構成から始めることができます。
 
 ## 使用方法
 
