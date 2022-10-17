@@ -80,7 +80,7 @@ defineComponents(IgcMaskInputComponent);
 
 ### プロンプト文字
 
-開発者は、マスクの塗りつぶされていない部分に使用されるプロンプト シンボルをカスタマイズできます。これを行うには、 `prompt` プロパティに任意の文字を指定するだけです:
+開発者は、マスクの塗りつぶされていない部分に使用されるプロンプト シンボルをカスタマイズできます。これを行うには、`prompt` プロパティに任意の文字を指定するだけです:
 
 ```html
 <igc-mask-input id="mask-input" mask="(####) 00-00-00 Ext. 9999" prompt="-"></igc-mask-input>
