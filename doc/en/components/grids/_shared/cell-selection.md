@@ -52,12 +52,12 @@ How to select cells:
 
 ### {ComponentTitle} Single Selection
 
-When you set the **[cellSelection]="'single'"**, this allows you to have only one selected cell in the grid at a time. Also the mode **mouse drag** will not work and instead of selecting a cell, this will make default text selection.
+When you set the `CellSelection` to **single**, this allows you to have only one selected cell in the grid at a time. Also the mode **mouse drag** will not work and instead of selecting a cell, this will make default text selection.
 
 > When single cell is selected `Selected` event is emitted, no matter if the **selection mode** is **single** or **multiple**. In multi-cell selection mode when you select a range of cells `RangeSelected` event is emitted.
 
 ### {ComponentTitle} None selection
-If you want to disable cell selection you can just set **[cellSelection]="'none'"** property. In this mode when you click over the cell or try to navigate with keyboard, the cell is **not selected**, only the **activation style** is applied and it is going to be lost when you scroll or click over other element on the page. The only way for you to define selection is by using the API methods that are described below.
+If you want to disable cell selection you can just set `CellSelection` to **none** property. In this mode when you click over the cell or try to navigate with keyboard, the cell is **not selected**, only the **activation style** is applied and it is going to be lost when you scroll or click over other element on the page. The only way for you to define selection is by using the API methods that are described below.
 
 @@if (igxName !== 'IgxHierarchicalGrid') {
 ## Keyboard navigation interactions
