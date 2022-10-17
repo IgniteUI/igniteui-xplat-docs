@@ -28,9 +28,9 @@ mentionedTypes: []
 
 ## Blazor WebAssembly と Blazor Server を理解する
 
-[Blazor](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started)を簡潔に説明すると、これはマイクロソフトが開発したオープンソースのクライアント Web アプリケーション フレームワークです。JavaScript ではなく .NET と C# を使ったシングルページ Web アプリケーションの構築を可能にします。Blazor アプリケーションをホストする方法は [Blazor Server と Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts)の 2 種類があります。
+[Blazor](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) を簡潔に説明すると、これはマイクロソフトが開発したオープンソースのクライアント Web アプリケーション フレームワークです。JavaScript ではなく .NET と C# を使ったシングルページ Web アプリケーションの構築を可能にします。Blazor アプリケーションをホストする方法は [Blazor Server と Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) の 2 種類があります。
 
-Blazor WebAssembly (WASM とも呼ばれます) は、[W3C](https://www.computerhope.com/jargon/w/w3c.htm)が策定した、Web ブラウザ上で動作するソフトウェアを作成するための規格であり、CPU のネイティブに近い速度で動作する、コンパイルされたソフトウェアです。
+Blazor WebAssembly (WASM とも呼ばれます) は、[W3C](https://www.computerhope.com/jargon/w/w3c.htm) が策定した、Web ブラウザ上で動作するソフトウェアを作成するための規格であり、CPU のネイティブに近い速度で動作する、コンパイルされたソフトウェアです。
 
 一方、Blazor Server は、標準的な ASP.NET Core アプリケーションを使用して、サーバー上でクライアント処理を実行します。ブラウザは SignalR によってアプリケーションと常時接続し、通信を行います。
 

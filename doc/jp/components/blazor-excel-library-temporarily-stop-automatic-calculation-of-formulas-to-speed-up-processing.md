@@ -1,14 +1,14 @@
 ---
 title: $Platform$ Excel ライブラリ | 数式の自動計算を一時的に停止して処理速度を上げる | インフラジスティックス
 _description: Infragistics Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
-_keywords: $Platform$ excel ライブラリ、計算、処理の高速化、$ProductName$、インフラジスティックス
+_keywords: $Platform$ excel ライブラリ, 計算, 処理の高速化, $ProductName$, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---
 
 # Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
 
-Excel シートを、[Blazor Excel Library](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library)で読み込み、そのセルの値を参照したり書き換えたりする際、とくにその Excel シートが数式を含むセルを大量に持っていると、セルの値の参照・書き換えにかなりの時間がかかる場合があります。この現象は (Blazor Server プログラムに比べ) [Blazor WebAssembly](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client)プログラム上ではとくに顕著です。
+Excel シートを、[Blazor Excel ライブラリ](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library)で読み込み、そのセルの値を参照したり書き換えたりする際、とくにその Excel シートが数式を含むセルを大量に持っていると、セルの値の参照・書き換えにかなりの時間がかかる場合があります。この現象は (Blazor Server プログラムに比べ) [Blazor WebAssembly](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client) プログラム上ではとくに顕著です。
 
 このような場合に処理時間を改善する方法のひとつとして、数式の自動計算を一時的に停止する、という方法があります。
 
@@ -102,7 +102,7 @@ workbook.ResumeCalculations();
 
 2. 処理時間が長くなる原因が数式の自動計算にない場合、この回避策による処理速度の向上は期待できません。
 
-その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts)プログラムにおいては、「AOT コンパイル」を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
+その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) プログラムにおいては、「AOT コンパイル」を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
 
 * 発行処理に長い時間がかかる
 * 出力されるアプリケーションコンテンツサイズが大きくなる
@@ -126,6 +126,6 @@ Excel ファイルの処理には、下記項目の状況によっては、か�
 
 ## Ignite UI for Blazor について
 
-[Ignite UI for Blazor](https://jp.infragistics.com/products/ignite-ui-blazor) には、[Blazor ドックマネージャー](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager)、超高速・軽量の [Blazor データグリッド](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grids)、60 以上の高性能チャート - [株価チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/stock-chart)、[円チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/pie-chart)、その他多数 - [マップ](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map)、[Blazor 複数列コンボボックス](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox)、などといった、Blazor Server と Blazor WebAssembly および .NET 6 を完全にサポートするプロフェッショナルレベルの Blazor コンポーネントが搭載されています。
+[Ignite UI for Blazor](https://jp.infragistics.com/products/ignite-ui-blazor) には、[Blazor ドック マネージャー](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager)、超高速・軽量の [Blazor データグリッド](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grids)、60 以上の高性能チャート - [株価チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/stock-chart)、[円チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/pie-chart)、その他多数 - [マップ](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map)、[Blazor 複数列コンボボックス](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox)、などといった、Blazor Server と Blazor WebAssembly および .NET 6 を完全にサポートするプロフェッショナルレベルの Blazor コンポーネントが搭載されています。
 
 最新の [Ultimate 22.1 リリース](https://blogs.jp.infragistics.com/entry/ignite-ui-for-blazor---what-s-new-in-22-1) では、更新された [ローコード/ノーコードツール App Builder™](https://jp.infragistics.com/products/appbuilder) を通じて提供される最新のコード生成、Blazor グリッドのページネーション、Blazor データ可視化、 ツールチップ、その他の素晴らしい機能とコントロールを利用することができます。
