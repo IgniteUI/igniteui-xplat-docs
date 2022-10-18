@@ -1,7 +1,7 @@
 ---
 title: {Platform} {Component} Export to Excel - {ProductName} for {Platform}
 _description: With {ProductName} Excel Exporter you can make client Excel functionality more convenient & simpler. This format allows features like filtering, sorting, etc.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -10,18 +10,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 
 <p class="highlight">
-  The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html) class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html)'s [`export`]({environment:demosBaseUrl}/classes/excelexporterservice.html#export) method and pass the {ComponentName} component as first argument to export grid easily.
+  The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html) class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html)'s [`export`]({environment:demosBaseUrl}/classes/excelexporterservice.html#export) method and pass the {ComponentTitle} component as first argument to export grid easily.
 </p>
-
-
-
-@@if (Name === 'HierarchicalGrid') {
-
-<p class="highlight">
-  The Excel Exporter service can export data to excel from the {ComponentName}. The data export functionality is encapsulated in the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html) class. To trigger the process, you need to invoke the [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html)'s [`export`]({environment:demosBaseUrl}/classes/excelexporterservice.html#export) method and pass the {ComponentName} component as the first argument.
-</p>
-
-}
 
 ## {Platform} Excel Exporter Example
 
@@ -80,11 +70,11 @@ export class AppModule {}
 To initiate an export process you may use the handler of a button in your component's template.
 
 ```html
-<{ComponentName} #{ComponentName} [data]="localData" [autoGenerate]="true"></{ComponentName}>
-<button (click)="exportButtonHandler()">Export {ComponentName} to Excel</button>
+<{ComponentTitle} #{ComponentTitle} [data]="localData" [autoGenerate]="true"></{ComponentTitle}>
+<button (click)="exportButtonHandler()">Export {ComponentTitle} to Excel</button>
 ```
 
-You may access the exporter service by defining an argument of type [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html) in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's [`export`]({environment:demosBaseUrl}/classes/excelexporterservice.html#export) method and pass the {ComponentName} component as first argument.
+You may access the exporter service by defining an argument of type [`ExcelExporterService`]({environment:demosBaseUrl}/classes/excelexporterservice.html) in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's [`export`]({environment:demosBaseUrl}/classes/excelexporterservice.html#export) method and pass the {ComponentTitle} component as first argument.
 
 Here is the code which will execute the export process in the component's razor file:
 
@@ -93,17 +83,17 @@ Here is the code which will execute the export process in the component's razor 
 import { ExcelExporterService, ExcelExporterOptions } from 'igniteui-{Platform}';
 import { {Component} } from 'igniteui-{Platform}';
 
-@ViewChild('{ComponentName}') public {ComponentName}: {ComponentName}Component;
+@ViewChild('{ComponentTitle}') public {ComponentTitle}: {ComponentTitle}Component;
 
 constructor(private excelExportService: ExcelExporterService) {
 }
 
 public exportButtonHandler() {
-  this.excelExportService.export(this.{ComponentName}, new ExcelExporterOptions('ExportedDataFile'));
+  this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 }
 ```
 
-If all went well, you should see the {ComponentName} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format.
+If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format.
 
 ## Export All Data
 
@@ -186,7 +176,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
       args.cancel = true;
   }
 });
-this.excelExportService.export(this.{ComponentName}, new ExcelExporterOptions('ExportedDataFile'));
+this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
 When you are exporting data from the {Component} component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the {Component}. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the [`ExcelExporterOptions`]({environment:demosBaseUrl}/classes/excelexporteroptions.html) object.
@@ -233,8 +223,8 @@ The Excel Exporter service has a few more APIs to explore, which are listed belo
 
 Additional components that were used:
 
-* [{ComponentName}Component API]({environment:demosBaseUrl}/classes/{ComponentName}.md)
-* [{ComponentName}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle}Component API]({environment:demosBaseUrl}/classes/{ComponentTitle}.md)
+* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## Additional Resources
 
