@@ -1,29 +1,29 @@
 ---
-title: {Platform} {Component} {ComponentName} - {ProductName} for {Platform}
-_description: Use {Platform} {Component} {ComponentName} for essential UI operations. Hosts different UI controls for the Grid’s features - column hiding, pinning, excel exporting, etc.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+title: {Platform} {Component} {ComponentTitle} - {ProductName} for {Platform}
+_description: Use {Platform} {Component} {ComponentTitle} for essential UI operations. Hosts different UI controls for the Grid’s features - column hiding, pinning, excel exporting, etc.
+_keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# Angular @@igComponent Toolbar
+# {Platform} {ComponentTitle} Toolbar
 
-The @@igComponent in Ignite UI for Angular provides an [`IgxGridToolbarComponent`]({environment:angularApiUrl}/classes/igxgridtoolbarcomponent.html) which is essentially a container for **UI** operations. The Angular toolbar is located at the top of the Angular component, i.e the @@igComponent and it matches its horizontal size. The toolbar container can host predefined UI controls for the following @@igComponent's features:
+The {ComponentTitle} in {ProductName} for {Platform} provides an [`GridToolbarComponent`]({environment:{Platform}ApiUrl}/classes/gridtoolbarcomponent.html) which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the {ComponentTitle} and it matches its horizontal size. The toolbar container can host predefined UI controls for the following {ComponentTitle}'s features:
 
  - Column Hiding
  - Column Pinning
  - Excel Exporting
  - Advanced Filtering
 
-or just any other custom content. The toolbar and the predefined UI components support Angular events and expose API for developers.
+or just any other custom content. The toolbar and the predefined UI components support {Platform} events and expose API for developers.
 
-## Angular Toolbar Grid Example
+## {Platform} Toolbar Grid Example
 
 @@if (igxName === 'IgxGrid') {
 
 <code-view style="height:420px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-toolbar-sample-1" alt="Angular Toolbar Grid Example">
+           iframe-src="{environment:demosBaseUrl}/grid/grid-toolbar-sample-1" alt="{Platform} Toolbar Grid Example">
 </code-view>
 
 }
@@ -31,7 +31,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 
 <code-view style="height:420px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-toolbar-4" alt="Angular Toolbar Grid Example">
+           iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-toolbar-4" alt="{Platform} Toolbar Grid Example">
 </code-view>
 
 }
@@ -39,7 +39,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 
 <code-view style="height:510px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-toolbar-title" alt="Angular Toolbar Grid Example">
+           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-toolbar-title" alt="{Platform} Toolbar Grid Example">
 </code-view>
 
 }
@@ -92,7 +92,7 @@ The predefined `actions` and `title` UI components are added inside the `<igx-gr
 ```
 }
 
-> Note: As seen in the code snippet above, the predefined `actions` UI components are wrapped in the [`<igx-grid-toolbar-actions>` container]({environment:angularApiUrl}/classes/igxgridtoolbaractionsdirective.html). This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> Note: As seen in the code snippet above, the predefined `actions` UI components are wrapped in the [`<igx-grid-toolbar-actions>` container]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html). This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
 
 Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
 
@@ -156,7 +156,7 @@ The toolbar is great at separating logic/interactions which affects the grid as 
 As shown above, it can be configured to provide default components for controlling, column hiding, column pinning,
 advanced filtering and exporting data from the grid.
 These features can be enabled independently from each other by following a pattern similar to the card component of
-the Ignite UI for Angular suite.
+the {ProductName} for {Platform} suite.
 Listed below are the main features of the toolbar with example code for each of them.
 
 
@@ -187,7 +187,7 @@ Listed below are the main features of the toolbar with example code for each of 
 
 
 ### Title
-Setting a title for the toolbar in your grid is achieved by using the [IgxGridToolbarTitleDirective]({environment:angularApiUrl}/classes/igxgridtoolbartitledirective.html).
+Setting a title for the toolbar in your grid is achieved by using the [IgxGridToolbarTitleDirective]({environment:{Platform}ApiUrl}/classes/igxgridtoolbartitledirective.html).
 Users can provide anything from simple text to more involved templates.
 ```html
 <igx-grid-toolbar>
@@ -196,7 +196,7 @@ Users can provide anything from simple text to more involved templates.
 ```
 
 ### Actions
-The toolbar exposes a [specific container]({environment:angularApiUrl}/classes/igxgridtoolbaractionsdirective.html) where users can place actions/interactions in relation to the parent grid.
+The toolbar exposes a [specific container]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html) where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 ```html
@@ -209,7 +209,7 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
-Each action now exposes a way to change the overlay settings of the actions dialog by using the [`overlaySettings`]({environment:angularApiUrl}/classes/igxgridtoolbarhidingcomponent.html#overlaysettings) input, example:
+Each action now exposes a way to change the overlay settings of the actions dialog by using the [`overlaySettings`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html#overlaysettings) input, example:
 
 ```html
 <igx-grid-toolbar-actions>
@@ -246,7 +246,7 @@ constructor() {
 The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
 
 ### Column pinning
-[Toolbar Pinning component]({environment:angularApiUrl}/classes/igxgridtoolbarpinningcomponent.html) provides the default UI for interacting with column pinning in the grid.
+[Toolbar Pinning component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarpinningcomponent.html) provides the default UI for interacting with column pinning in the grid.
 The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component
 title, the placeholder for the component input and the height of the dropdown itself.
 
@@ -265,7 +265,7 @@ title, the placeholder for the component input and the height of the dropdown it
 
 
 ### Column hiding
-[Toolbar Hiding component]({environment:angularApiUrl}/classes/igxgridtoolbarhidingcomponent.html) provides the default
+[Toolbar Hiding component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html) provides the default
 UI for interacting with column hiding. Exposes the same input properties for customizing the UI, such as the component
 title, the placeholder for the component input and the height of the dropdown itself.
 
@@ -283,7 +283,7 @@ title, the placeholder for the component input and the height of the dropdown it
 ```
 
 ### Advanced filtering
-[Toolbar Advanced Filtering component]({environment:angularApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html) provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
+[Toolbar Advanced Filtering component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html) provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -300,16 +300,16 @@ title, the placeholder for the component input and the height of the dropdown it
 > belonging to their respective grid (the child grids will not be included in the exported data).
 }
 
-As with the rest of the toolbar actions, exporting is provided through a [Toolbar Exporter component]({environment:angularApiUrl}/classes/igxgridtoolbarexportercomponent.html) out of the box.
-The exporting component is using the respective service for the target data format ([Excel]({environment:angularApiUrl}/classes/igxexcelexporterservice.html) [CSV]({environment:angularApiUrl}/classes/igxcsvexporterservice.html)). That means if the respective service is not provided through the dependency injection chain, the component
+As with the rest of the toolbar actions, exporting is provided through a [Toolbar Exporter component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html) out of the box.
+The exporting component is using the respective service for the target data format ([Excel]({environment:{Platform}ApiUrl}/classes/igxexcelexporterservice.html) [CSV]({environment:{Platform}ApiUrl}/classes/igxcsvexporterservice.html)). That means if the respective service is not provided through the dependency injection chain, the component
 won't be able to export anything.
-If you need a refresher on the DI in Angular, check the [official guide](https://angular.io/guide/dependency-injection). Here is a sample snippet showing how to enable
+If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable
 all export services for your application.
 
 ```typescript
 // app.module.ts
 
-import { IgxExcelExporterService, IgxCsvExporterService } from 'igniteui-angular';
+import { IgxExcelExporterService, IgxCsvExporterService } from 'igniteui-{Platform}';
 
 @NgModule({
     ...
@@ -323,9 +323,9 @@ export class AppModule { ... }
 
 The toolbar exporter component exposes several input properties for customizing both the UI and the exporting experience.
 These range from changing the display text, to enabling/disabling options in the dropdown to customizing the name of the
-generated file. For full reference, consult the [API documentation]({environment:angularApiUrl}/classes/igxgridtoolbarexportercomponent.html) for the toolbar exporter component.
+generated file. For full reference, consult the [API documentation]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html) for the toolbar exporter component.
 
-Here is a snippet showing some of the options which can be customized through the Angular template:
+Here is a snippet showing some of the options which can be customized through the {Platform} template:
 
 ```html
 <igx-grid-toolbar>
@@ -348,7 +348,7 @@ Here is a snippet showing some of the options which can be customized through th
 
 @@if (igxName !== 'IgxHierarchicalGrid') {
 
-In addition to changing the exported filename, the user can further configure the exporter options by waiting for the [toolbarExporting]({environment:angularApiUrl}/classes/@@igTypeDoc.html#toolbarExporting) event and customizing the options entry in the event properties.
+In addition to changing the exported filename, the user can further configure the exporter options by waiting for the [toolbarExporting]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html#toolbarExporting) event and customizing the options entry in the event properties.
 
 > [!NOTE]
 > By default when exporting to CSV the exporter exports using a comma separator and uses a '.csv' extension for the output file.
@@ -413,7 +413,7 @@ The following sample demonstrates how to customize the exported files:
 ## Exporting Indicator
 
 When using the default toolbar exporter component, whenever an export operation takes place the toolbar will show a progress indicator while the operation is in progress.
-Moreover, users can set the toolbar [showProgress]({environment:angularApiUrl}/classes/igxgridtoolbarcomponent.html#showprogress) property and use for their own long running operations
+Moreover, users can set the toolbar [showProgress]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarcomponent.html#showprogress) property and use for their own long running operations
 or just as another way to signify an action taking place in the grid.
 The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button
 that simulates a long running operation in the grid:
@@ -510,10 +510,10 @@ The following sample demonstrates how to add an additional button to the toolbar
 To get started with styling the toolbar, we need to import the index file, where all the theme functions and component mixins live:
 
 ```scss
-@use "igniteui-angular/theming" as *;
+@use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for Angular version 13 use:
-// @import '~igniteui-angular/lib/core/styles/themes/index';
+// IMPORTANT: Prior to {ProductName} for {Platform} version 13 use:
+// @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ``` 
 
 First, let's create a new palette.
@@ -644,17 +644,17 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* [`IgxGridToolbarActionsDirective`]({environment:angularApiUrl}/classes/igxgridtoolbaractionsdirective.html)
-* [`IgxGridToolbarAdvancedFilteringComponent`]({environment:angularApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html)
-* [`IgxGridToolbarComponent`]({environment:angularApiUrl}/classes/igxgridtoolbarcomponent.html)
-* [`IgxGridToolbarExporterComponent`]({environment:angularApiUrl}/classes/igxgridtoolbarexportercomponent.html)
-* [`IgxGridToolbarHidingComponent`]({environment:angularApiUrl}/classes/igxgridtoolbarhidingcomponent.html)
-* [`IgxGridToolbarPinningComponent`]({environment:angularApiUrl}/classes/igxgridtoolbarpinningcomponent.html)
-* [`IgxGridToolbarTitleDirective`]({environment:angularApiUrl}/classes/igxgridtoolbartitledirective.html)
+* [`IgxGridToolbarActionsDirective`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html)
+* [`IgxGridToolbarAdvancedFilteringComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html)
+* [`IgxGridToolbarComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarcomponent.html)
+* [`IgxGridToolbarExporterComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html)
+* [`IgxGridToolbarHidingComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html)
+* [`IgxGridToolbarPinningComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarpinningcomponent.html)
+* [`IgxGridToolbarTitleDirective`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbartitledirective.html)
 
 
-[`@@igxNameComponent`]({environment:angularApiUrl}/classes/@@igTypeDoc.html) events:
-* [`toolbarExporting`]({environment:angularApiUrl}/classes/@@igTypeDoc.html#toolbarExporting)
+[`@@igxNameComponent`]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html) events:
+* [`toolbarExporting`]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html#toolbarExporting)
 
 Styles:
 
@@ -665,5 +665,5 @@ Styles:
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
+* [{ProductName} for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
