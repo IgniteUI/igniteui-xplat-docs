@@ -1,17 +1,17 @@
 ---
-title: Editing and Validation in Angular @@igComponent - Infragistics
-_description: Validate the input of the users in grid and notify them if it's valid or not while using Angular @@igComponent. See demos & examples!
-_keywords: angular validation, ignite ui for angular, infragistics
+title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
+_description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
+_keywords: {Platform} validation, ignite ui for {Platform}, infragistics
 ---
 
-# Angular @@igComponent Editing and Validation
-The @@igComponent's editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the [Angular Form validation](https://angular.io/guide/form-validation) functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
+# {Platform} {ComponentTitle} Editing and Validation
+The {ComponentTitle}'s editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the [{Platform} Form validation](https://{Platform}.io/guide/form-validation) functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
 
 ## Configuration
 
 ### Configure via template-driven configuration
 
-We extend some of the Angular Forms validator directives to directly work with the `IgxColumn`. The same validators are available as attributes to be set declaratively in `igx-column`. The following validators are supported out-of-the-box:
+We extend some of the {Platform} Forms validator directives to directly work with the `IgxColumn`. The same validators are available as attributes to be set declaratively in `igx-column`. The following validators are supported out-of-the-box:
 - required
 - min
 - max
@@ -25,31 +25,29 @@ To validate that a column input would be set and the value is going to be format
 <igx-column [field]="email" [header]="User E-mail" required email></igx-column>
 ```
 
-The following sample demonstrates how to use the prebuilt `required`, `email` and `min` validator directives in a @@igComponent.
-@@if (igxName === 'IgxGrid') {
+The following sample demonstrates how to use the prebuilt `required`, `email` and `min` validator directives in a {ComponentTitle}.
+<!-- ComponentStart: Grid -->
 <code-view style="height:600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-validator-service" alt="Angular @@igComponent Validation Basic Example">
+           iframe-src="{environment:demosBaseUrl}/grid/grid-validator-service" alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
+<!--ComponentEnd:Grid-->
 
-<div class="divider--half"></div>
-}
-@@if (igxName === 'IgxTreeGrid') {
+<!-- ComponentStart:TreeGrid -->
 <code-view style="height:600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-validator-service" alt="Angular @@igComponent Validation Basic Example">
+           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-validator-service" alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
-<div class="divider--half"></div>
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentEnd:TreeGrid -->
+
+<!-- ComponentStart:HierarchicalGrid -->
 <code-view style="height:680px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-validator-service" alt="Angular @@igComponent Validation Basic Example">
+           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-validator-service" alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
-<div class="divider--half"></div>
-}
+<!-- ComponentEnd:HierarchicalGrid -->
 
 ### Configure via reactive forms
 
@@ -57,7 +55,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 
 @@if (igxName === 'IgxGrid') {
 ```html
-<igx-grid (formGroupCreated)='formCreateHandler($event)' ...>
+<{ComponentInstance} (formGroupCreated)='formCreateHandler($event)' ...>
 ```
 }
 @@if (igxName === 'IgxHierarchicalGrid') {
@@ -73,7 +71,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 }
 
 @@if (igxName === 'IgxGrid' || igxName === 'IgxHierarchicalGrid') {
-```ts
+```razor
     public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const orderDateRecord = formGroup.get('OrderDate');
@@ -88,7 +86,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 }
 
 @@if (igxName === 'IgxTreeGrid') {
-```ts
+```razor
    public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const hireDateRecord = formGroup.get('HireDate');
@@ -97,17 +95,17 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 ```
 }
 
-You can decide to write your own validator function, or use one of the [built-in Angular validator functions](https://angular.io/guide/form-validation#built-in-validator-functions).
+You can decide to write your own validator function, or use one of the [built-in {Platform} validator functions](https://{Platform}.io/guide/form-validation#built-in-validator-functions).
 
 
 ## Validation service API
 
-The grid exposes a validation service via the [`validation`]({environment:angularApiUrl}/classes/IgxGridComponent.html#validation) property.
+The grid exposes a validation service via the [`validation`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#validation) property.
 That service has the following public APIs:
-- [`valid`]({environment:angularApiUrl}/classes/IgxGridValidationService.html#valid) - returns if the grid validation state is valid.
-- [`getInvalid`]({environment:angularApiUrl}/classes/IgxGridValidationService.html#getInvalid) - returns records with invalid states.
-- [`clear`]({environment:angularApiUrl}/classes/IgxGridValidationService.html#clear) - clears state for record by id or clears all state if no id is provided.
-- [`markAsTouched`]({environment:angularApiUrl}/classes/IgxGridValidationService.html#markAsTouched) - marks the related record/field as touched.
+- [`valid`]({environment:{Platform}ApiUrl}/classes/IgxGridValidationService.html#valid) - returns if the grid validation state is valid.
+- [`getInvalid`]({environment:{Platform}ApiUrl}/classes/IgxGridValidationService.html#getInvalid) - returns records with invalid states.
+- [`clear`]({environment:{Platform}ApiUrl}/classes/IgxGridValidationService.html#clear) - clears state for record by id or clears all state if no id is provided.
+- [`markAsTouched`]({environment:{Platform}ApiUrl}/classes/IgxGridValidationService.html#markAsTouched) - marks the related record/field as touched.
 
 Invalid states will persis until the validation errors in them are fixed according to the validation rule or they are cleared.
 
@@ -115,19 +113,19 @@ Invalid states will persis until the validation errors in them are fixed accordi
 
 Validation will be triggered in the following scenarios:
 
-- While editing via the cell editor based on the grid's [`validationTrigger`]({environment:angularApiUrl}/classes/IgxGridComponent.html#validationTrigger). Either on `change` while typing in the editor, or on `blur` when the editor loses focus or closes.
-- When updating cells/rows via the API - [`updateRow`]({environment:angularApiUrl}/classes/IgxGridComponent.html#updateRow), [`updateCell`]({environment:angularApiUrl}/classes/IgxGridComponent.html#updateCell) etc..
-- When using batch editing and the [`undo`]({environment:angularApiUrl}/classes/IgxTransactionService.html#undo)/[`redo`]({environment:angularApiUrl}/classes/IgxTransactionService.html#redo) API of the transaction service.
+- While editing via the cell editor based on the grid's [`validationTrigger`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#validationTrigger). Either on `change` while typing in the editor, or on `blur` when the editor loses focus or closes.
+- When updating cells/rows via the API - [`updateRow`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#updateRow), [`updateCell`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#updateCell) etc..
+- When using batch editing and the [`undo`]({environment:{Platform}ApiUrl}/classes/IgxTransactionService.html#undo)/[`redo`]({environment:{Platform}ApiUrl}/classes/IgxTransactionService.html#redo) API of the transaction service.
 
 > Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `markAsTouched` API of the validation service.
 
-## Angular @@igComponent Validation Customization Options
+## {Platform} {ComponentTitle} Validation Customization Options
 
 ### Set a custom validator
 
 You can define your own validation directive to use on a `<igx-column>` in the template.
 
-```ts
+```razor
 @Directive({
     selector: '[phoneFormat]',
     providers: [{ provide: NG_VALIDATORS, useExisting: PhoneFormatDirective, multi: true }]
@@ -169,27 +167,15 @@ This is useful in scenarios where you want to add your own custom error message 
 ### Prevent exiting edit mode on invalid state
 
 In some cases you may want to disallow submitting an invalid value in the data.
-In that scenarios you can use the [`cellEdit`]({environment:angularApiUrl}/classes/IgxGridComponent.html#cellEdit) or [`rowEdit`]({environment:angularApiUrl}/classes/IgxGridComponent.html#rowEdit) events and cancel the event in case the new value is invalid.
-Both events' arguments have a [`valid`]({environment:angularApiUrl}/interfaces/IGridEditEventArgs.html#valid) property and can be canceled accordingly.
+In that scenarios you can use the [`cellEdit`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#cellEdit) or [`rowEdit`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#rowEdit) events and cancel the event in case the new value is invalid.
+Both events' arguments have a [`valid`]({environment:{Platform}ApiUrl}/interfaces/IGridEditEventArgs.html#valid) property and can be canceled accordingly.
 
-@@if (igxName === 'IgxGrid') {
-```html
-<igx-grid (cellEdit)='cellEdit($event)' ...>
-```
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
-```html
-<igx-hierarchical-grid (cellEdit)='cellEdit($event)' ...>
-```
-}
 
-@@if (igxName === 'IgxTreeGrid') {
 ```html
-<igx-tree-grid (cellEdit)='cellEdit($event)' ...>
+<{ComponentInstance} (cellEdit)='cellEdit($event)' ...>
 ```
-}
 
-```ts
+```razor
 public cellEdit(evt) {
   if (!evt.valid) {
     evt.cancel = true;
@@ -201,43 +187,23 @@ public cellEdit(evt) {
 
 The below example demonstrates the above-mentioned customization options.
 
-@@if (igxName === 'IgxGrid') {
 <code-view style="height:570px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-validator-service-extended" alt="Angular @@igComponent Custom Validation Example">
+           iframe-src="{environment:demosBaseUrl}/grid/{ComponentInstance}-validator-service-extended" alt="{Platform} {ComponentTitle} Custom Validation Example">
 </code-view>
-
-<div class="divider--half"></div>
-}
-@@if (igxName === 'IgxTreeGrid') {
-<code-view style="height:570px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-validator-service-extended" alt="Angular @@igComponent Custom Validation Example">
-</code-view>
-
-<div class="divider--half"></div>
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
-<code-view style="height:640px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-validator-service-extended" alt="Angular @@igComponent Custom Validation Example">
-</code-view>
-
-<div class="divider--half"></div>
-}
 
 ### Cross-field validation
 
 In some scenarios validation of one field may depend on the value of another field in the record.
 In that case a custom validator can be used to compare the values in the record via their shared `FormGroup`.
 
-@@if (igxName === 'IgxGrid') {
+<!-- ComponentStart:Grid -->
 
 The below sample demonstrates a cross-field validation between different field of the same record. It checks the dates validity compared to the current date and between the active and created on date of the record as well as the deals won/lost ration for each employee. All errors are collected in a separate pinned column that shows that the record is invalid and displays the related errors.
 
 The next lines of code show the cross-field validator function, which contains the comparisons and sets the related errors relative to them.
 
-```ts
+```razor
 private rowValidator(): ValidatorFn {
     return (formGroup: FormGroup): ValidationErrors | null => {
         let returnObject = {};
@@ -283,14 +249,14 @@ public calculateDealsRatio(dealsWon, dealsLost) {
 }
 ```
 
-The cross-field validator can be added to the `formGroup` of the row from [`formGroupCreated`]({environment:angularApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event, which returns the new `formGroup` for each row when entering edit mode:
+The cross-field validator can be added to the `formGroup` of the row from [`formGroupCreated`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event, which returns the new `formGroup` for each row when entering edit mode:
 
 ```html
-<igx-grid #grid1 [data]="transactionData" [width]="'100%'" [height]="'480px'" [autoGenerate]="false" 
+<{ComponentInstance} #grid1 [data]="transactionData" [width]="'100%'" [height]="'480px'" [autoGenerate]="false" 
         [batchEditing]="true" [rowEditable]="true" [primaryKey]="'id'"
         (formGroupCreated)='formCreateHandler($event)'>
     <!-- ... -->
-</igx-grid>
+</{ComponentInstance}>
 
 ```
 
@@ -350,19 +316,17 @@ The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:560px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-cross-field-validator-service" alt="Angular @@igComponent Cross-field Validation Example">
+           iframe-src="{environment:demosBaseUrl}/grid/grid-cross-field-validator-service" alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
 
-<div class="divider--half"></div>
+<!-- ComponentEnd:Grid -->
 
-}
+<!-- ComponentStart:HierarchicalGrid -->
 
-@@if (igxName === 'IgxHierarchicalGrid') {
+  Cross-field validators can be added to the formGroup on the [`formGroupCreated`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event. In them multiple fields can be compared for validity.
 
-  Cross-field validators can be added to the formGroup on the [`formGroupCreated`]({environment:angularApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event. In them multiple fields can be compared for validity.
-
-  ```ts
+  ```razor
   public formCreateCustomerHandler(event: IGridFormGroupCreatedEventArgs) {
         const formGroup = event.formGroup;
         formGroup.addValidators(this.addressValidator());
@@ -425,7 +389,7 @@ The multi-field errors can then be displayed in a separate pinned column.
 
 Errors and the detailed messages can be determined based on the row and cell's validity.
 
-```ts
+```razor
     public isRowValid(cell: IgxGridCell) {
         const hasErrors = !!cell.row.validation.errors || cell.row.cells.some(x => !!x.validation.errors);
         return !hasErrors;
@@ -458,20 +422,18 @@ The below sample demonstrates cross-field validation in a Hierarchical Grid for 
 
 <code-view style="height:530px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-cross-field-validation" alt="Angular @@igComponent Cross-field Validation Example">
+           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-cross-field-validation" alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
-<div class="divider--half"></div>
-}
+<!-- ComponentEnd:HierarchicalGrid -->
 
-
-@@if (igxName === 'IgxTreeGrid') {
+<!-- ComponentStart:TreeGrid -->
 
 The below sample demonstrates a cross-field validation between different field of the same record. It checks that a specified City for a person is in the Country currently set and vice versa. Also check if the age for a person was 18 already when it was hired.
 
 The next lines of code show the cross-field validator function, which contains comparisons described above and sets the related errors.
 
-```ts
+```razor
 private rowValidator(): ValidatorFn {
     return (formGroup: FormGroup): ValidationErrors | null => {
         let returnObject = {};
@@ -494,7 +456,7 @@ private rowValidator(): ValidatorFn {
 }
 ```
 
-The cross-field validator can be added to the `formGroup` of the row from [`formGroupCreated`]({environment:angularApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event, which returns the new `formGroup` for each row when entering edit mode:
+The cross-field validator can be added to the `formGroup` of the row from [`formGroupCreated`]({environment:{Platform}ApiUrl}/classes/IgxGridComponent.html#formGroupCreated) event, which returns the new `formGroup` for each row when entering edit mode:
 
 ```html
 <igx-tree-grid igxPreventDocumentScroll #treeGrid [batchEditing]="true" [data]="data" primaryKey="ID"
@@ -566,15 +528,14 @@ The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:570px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-cross-field-validator-service" alt="Angular @@igComponent Cross-field Validation Example">
+           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-cross-field-validator-service" alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
-<div class="divider--half"></div>
-}
+<!-- ComponentEnd:TreeGrid -->
 
 ## Styling
 
-Using the [Ignite UI for Angular Theme Library](../themes/index.md), we can alter the default validation styles while editing. 
+Using the [Ignite UI for {Platform} Theme Library](../themes/index.md), we can alter the default validation styles while editing. 
 
 In the example below, we will make use of the exposed template for validation message, which pops out in a tooltip and overriding the error color to modify the default looks of the validation.
 We will also style the background of the invalid rows to make them more distinct.
@@ -582,13 +543,13 @@ We will also style the background of the invalid rows to make them more distinct
 ### Import theme
 
 The easiest way to style and access css variables is to define styles in our `app`'s global style file (typically `styles.scss`).
-The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the Ignite UI for Angular Sass framework:
+The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the Ignite UI for {Platform} Sass framework:
 
 ```scss
-@use "igniteui-angular/theming" as *;
+@use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for Angular version 13 use:
-// @import '~igniteui-angular/lib/core/styles/themes/index';
+// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
 ### Include the styles
@@ -610,8 +571,8 @@ Changing the default error template allows setting custom classes and styles:
 
 ### Invalid row and cell styles
 Rows and cells provide API for the developers to know if a row or cell is invalid and what kind of errors are active.
-@@if (igxName === 'IgxGrid'){
-```ts
+<!-- ComponentStart:Grid -->
+```razor
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };
@@ -624,13 +585,13 @@ public cellStyles = {
 }
 ```
 ```html
-<igx-grid [rowStyles]="rowStyles">
+<{ComponentInstance} [rowStyles]="rowStyles">
     <igx-column field="ReorderLevel" header="ReorderLever" required [cellClasses]="cellStyles">
 ```
-}
+<!-- ComponentEnd:Grid -->
 
-@@if (igxName === 'IgxHierarchicalGrid'){
-```ts
+<!-- ComponentStart:HierarchicalGrid -->
+```razor
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };
@@ -655,11 +616,12 @@ public cellStyles = {
     <igx-row-island [key]="'Albums'" [rowStyles]="rowStyles">
         <igx-column field="Album" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
 ```
-}
+
+<!-- ComponentEnd:HierarchicalGrid -->
 
 
-@@if (igxName === 'IgxTreeGrid'){
-```ts
+<!-- ComponentStart:TreeGrid -->
+```razor
 public rowStyles = {
     background: (row: RowType) => row.cells.find(c => c.validation.errors !== null && c.validation.errors !== undefined) ? '#FF000033' : '#00000000'
 };
@@ -675,59 +637,36 @@ public cellStyles = {
 <igx-tree-grid [rowStyles]="rowStyles">
         <igx-column *ngFor="let c of columns" [field]="c.field" [dataType]="c.dataType" [header]="c.label" [required]="c.required" [cellClasses]="cellStyles">
 ```
-}
+<!-- ComponentEnd:TreeGrid -->
 
 
 ### Demo
 
-@@if (igxName === 'IgxGrid'){
-
 <code-view style="height:560px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-validation-style" >
-</code-view>
-}
-
-@@if (igxName === 'IgxHierarchicalGrid'){
-
-<code-view style="height:630px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-validation-style" >
+           iframe-src="{environment:demosBaseUrl}/grid/{ComponentTitle}-validation-style" >
 </code-view>
 
-}
-
-
-@@if (igxName === 'IgxTreeGrid'){
-
-<code-view style="height:560px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/tree-grid/tree-grid-validation-style" >
-</code-view>
-
-}
-
-<div class="divider--half"></div>
 
 
 ## API References
 
-* [IgxBaseTransactionService]({environment:angularApiUrl}/classes/igxbasetransactionservice.html)
-* [IgxGridComponent]({environment:angularApiUrl}/classes/igxgridcomponent.html)
-* [IgxColumnComponent]({environment:angularApiUrl}/classes/igxcolumncomponent.html)
+* [IgxBaseTransactionService]({environment:{Platform}ApiUrl}/classes/igxbasetransactionservice.html)
+* [IgxGridComponent]({environment:{Platform}ApiUrl}/classes/igxgridcomponent.html)
+* [IgxColumnComponent]({environment:{Platform}ApiUrl}/classes/igxcolumncomponent.html)
 
 
 ## Additional Resources
 
 * [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
-* [@@igComponent Overview](@@igMainTopic.md)
-* [@@igComponent Editing](editing.md)
-* [@@igComponent Row Editing](row-editing.md)
-* [@@igComponent Row Adding](row-adding.md)
-* [@@igComponent Transactions](batch-editing.md)
+* [{ComponentTitle} Overview](@@igMainTopic.md)
+* [{ComponentTitle} Editing](editing.md)
+* [{ComponentTitle} Row Editing](row-editing.md)
+* [{ComponentTitle} Row Adding](row-adding.md)
+* [{ComponentTitle} Transactions](batch-editing.md)
 
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
