@@ -1,22 +1,22 @@
 ---
-title: $Platform$ データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
-_description: セルおよび行の編集機能をサポートするインフラジスティックスの $Platform$ グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。$ProductName$ を使用したデータの表示方法について説明します。
+title: {Platform} データ グリッド | 一括更新のセルおよび行編集 | インフラジスティックス
+_description: セルおよび行の編集機能をサポートするインフラジスティックスの {Platform} グリッド コンポーネントを使用して、任意の時点でグリッドのすべてのセルを一括更新するように設定できます。{ProductName} を使用したデータの表示方法について説明します。
 _language: ja
-_keywords: $Platform$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics, $Platform$ テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
+_keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics, {Platform} テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 namespace: Infragistics.Controls
 ---
-# $Platform$ Grid 編集
+# {Platform} Grid 編集
 
-$ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
+{ProductName} Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
 
-## $Platform$ Grid 編集の例
+## {Platform} Grid 編集の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="$Platform$ Grid 編集の例"
+           alt="{Platform} Grid 編集の例"
            github-src="grids/data-grid/cell-editing">
 </code-view>
 
@@ -24,7 +24,7 @@ $ProductName$ Data Table / Data Grid は、一括更新のセルおよび行編�
 
 ## 概要
 
-$Platform$ データ グリッドの編集は、$Platform$ グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
+{Platform} データ グリッドの編集は、{Platform} グリッドの `EditMode` オプションを使用して設定します。このプロパティには、以下にリストされている 3 つの異なるオプションがあります。
 
 - `None`: 編集は有効ではありません。
 - `Cell`: セルが編集モードに入り、編集モードの終了時に値をコミットできるようにします。
@@ -35,7 +35,7 @@ $Platform$ データ グリッドの編集は、$Platform$ グリッドの `Edit
 
 さらに、`onCellValueChanging` イベントをフックし、コミットされる前に新しい値を調べることでエラー処理を実行できます。グリッドはエラー メッセージを出力できる `setEditError` メソッドを公開します。これにより、有効な値が入力されるまで、セルを編集モードに維持します。それ以外の場合は、グリッドの `rejectEdit` メソッドを実行して無効な値を元に戻すことができます。無効な値が見つからない場合、グリッドの `acceptEdit` メソッドを呼び出して変更をコミットすることもできます。
 
-コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを  `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
+コミットは、`acceptCommit` または `rejectCommit` メソッドで `onDataCommitting` をフックし、`commitID` イベント引数をパラメーターとして渡すことで、グリッド レベルで承認または拒否できます。このイベントは、コミットされる前のすべての変更を保存する `changes` コレクションも公開します。たとえば、コミットが追加、更新、削除操作のいずれであるかを `changes` コレクションで公開された `TransactionType` プロパティによって確認し、必要に応じて `acceptCommit` または `rejectCommit` を実行できます。
 
 ## Excel スタイル編集
 
@@ -318,3 +318,11 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     }
 }
 ```
+
+## API メンバー
+
+ - `CellBatch`
+ - `EditModeClickAction`
+ - `EditMode`
+ - `SingleClick`
+ - `TransactionType`

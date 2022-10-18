@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Dock Manager | Updating Panes | Infragistics
-_description: Use Infragistics' $Platform$ dock manager control to create interactive content using panes that can update based on actions. Check out $ProductName$ dock manager tutorials!
-_keywords: dock manager, layout, updating panes, $ProductName$
+title: {Platform} Dock Manager | Updating Panes | Infragistics
+_description: Use Infragistics' {Platform} dock manager control to create interactive content using panes that can update based on actions. Check out {ProductName} dock manager tutorials!
+_keywords: dock manager, layout, updating panes, {ProductName}
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ Updating Panes in Dock Manager
+# {Platform} Updating Panes in Dock Manager
 
-The Infragistics $Platform$ Dock Manager component provides you with the layout for creating interactive content in your application using panes that can update based on actions of end-users.
+The Infragistics {Platform} Dock Manager component provides you with the layout for creating interactive content in your application using panes that can update based on actions of end-users.
 
-## $Platform$ Updating Panes in Dock Manager Example
+## {Platform} Updating Panes in Dock Manager Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes"
-           alt="$Platform$ Updating Panes in Dock Manager Example"
+           alt="{Platform} Updating Panes in Dock Manager Example"
            github-src="layouts/dock-manager/updating-panes">
 </code-view>
 
@@ -61,3 +61,7 @@ this.dockManager.layout = {
     <div slot="content1" style="width: 100%; height: 100%;">Content 1</div>
 </igc-dockmanager>
 ``` -->
+
+ ## API Members
+
+ - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

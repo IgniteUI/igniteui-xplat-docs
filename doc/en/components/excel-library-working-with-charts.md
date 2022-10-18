@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Excel Library| Working with Charts | Infragistics
-_description: Use the Infragistics' $Platform$ excel library's chart feature to add visual charting representations of data trends across regions of cells in a worksheet. Visualize $ProductName$ excel data in over 70 chart types!
-_keywords: Excel library, charts,  $ProductName$, Infragistics
+title: {Platform} Excel Library| Working with Charts | Infragistics
+_description: Use the Infragistics' {Platform} excel library's chart feature to add visual charting representations of data trends across regions of cells in a worksheet. Visualize {ProductName} excel data in over 70 chart types!
+_keywords: Excel library, charts,  {ProductName}, Infragistics
 mentionedTypes: ['Workbook', 'Worksheet']
 ---
-# $Platform$ Working with Charts
+# {Platform} Working with Charts
 
-The Infragistics $Platform$ Excel Engine's `WorksheetChart` functionality allows you to add visual charting representations of data trends across regions of cells in a worksheet. For example, if you want to see your Excel data in a region of cells visualized as a column, line, or over 70 other chart types, this feature can help you to achieve that.
+The Infragistics {Platform} Excel Engine's `WorksheetChart` functionality allows you to add visual charting representations of data trends across regions of cells in a worksheet. For example, if you want to see your Excel data in a region of cells visualized as a column, line, or over 70 other chart types, this feature can help you to achieve that.
 
-## $Platform$ Working with Charts Example
+## {Platform} Working with Charts Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
-           alt="$Platform$ Working with Charts Example"
+           alt="{Platform} Working with Charts Example"
            github-src="excel/excel-library/working-with-charts">
 </code-view>
 
@@ -44,3 +44,12 @@ var chart = sheet.Shapes.AddChart(Documents.Excel.Charts.ChartType.ColumnCluster
 
 chart.SetSourceData("A2:M6", true);
 ```
+
+ ## API Members
+
+ - `AddChart`
+ - `Area`
+ - `Column`
+ - `Line`
+ - `Pie`
+ - `WorksheetChart`

@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Data Grid | Cell and Row Editing with Batch Updating | Infragistics
-_description: Use Infragistics' $Platform$ grid component which supports the cell and row editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ Table, Data Grid, cell and row editing, $ProductName$, batch updating, Infragistics
+title: {Platform} Data Grid | Cell and Row Editing with Batch Updating | Infragistics
+_description: Use Infragistics' {Platform} grid component which supports the cell and row editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how {ProductName} can help you better display your data!
+_keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics
 mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
 namespace: Infragistics.Controls
 ---
-# $Platform$ Grid Editing
+# {Platform} Grid Editing
 
-The $ProductName$ Data Table / Data Grid supports cell and row editing with batch updating. Note, this is currently limited to non-templated columns.
+The {ProductName} Data Table / Data Grid supports cell and row editing with batch updating. Note, this is currently limited to non-templated columns.
 
-## $Platform$ Grid Editing Example
+## {Platform} Grid Editing Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="$Platform$ Grid Editing Example"
+           alt="{Platform} Grid Editing Example"
            github-src="grids/data-grid/cell-editing">
 </code-view>
 
@@ -23,7 +23,7 @@ The $ProductName$ Data Table / Data Grid supports cell and row editing with batc
 
 ## Overview
 
-Editing in the $Platform$ data grid is configured by using the `EditMode` option of the $Platform$ grid. This property takes three different options, listed below:
+Editing in the {Platform} data grid is configured by using the `EditMode` option of the {Platform} grid. This property takes three different options, listed below:
 
 - `None`: Editing is not enabled.
 - `Cell`: Allow cells to enter edit mode and commit the value on exiting edit mode.
@@ -317,3 +317,11 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
     }
 }
 ```
+
+## API Members
+
+ - `CellBatch`
+ - `EditModeClickAction`
+ - `EditMode`
+ - `SingleClick`
+ - `TransactionType`

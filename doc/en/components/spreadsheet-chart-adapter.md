@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Spreadsheet | Chart Adapter | Infragistics
-_description: Display charts such as column, line and area, in the Infragistics' $Platform$ spreadsheet control. Learn how to integrate charts in $ProductName$ spreadsheet!
-_keywords: Excel Spreadsheet, chart adapter, $ProductName$, Infragistics
+title: {Platform} Spreadsheet | Chart Adapter | Infragistics
+_description: Display charts such as column, line and area, in the Infragistics' {Platform} spreadsheet control. Learn how to integrate charts in {ProductName} spreadsheet!
+_keywords: Excel Spreadsheet, chart adapter, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet', 'Worksheet', 'WorksheetShapeCollection', 'WorksheetChart']
 ---
-# $Platform$ Spreadsheet Chart Adapter
+# {Platform} Spreadsheet Chart Adapter
 
-The $Platform$ Spreadsheet component allows displaying charts in your `Spreadsheet`.
+The {Platform} Spreadsheet component allows displaying charts in your `Spreadsheet`.
 
-## $Platform$ Spreadsheet Chart Adapter Example
+## {Platform} Spreadsheet Chart Adapter Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
-           alt="$Platform$ Spreadsheet Chart Adapter Example"
+           alt="{Platform} Spreadsheet Chart Adapter Example"
            github-src="excel/spreadsheet/adapter-chart">
 </code-view>
 
@@ -86,7 +86,7 @@ There are over 35 chart types supported by the Spreadsheet ChartAdapters includi
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
-When setting up your $Platform$ spreadsheet control to add charts, you will need to import the `SpreadsheetChartAdapter` class like so:
+When setting up your {Platform} spreadsheet control to add charts, you will need to import the `SpreadsheetChartAdapter` class like so:
 
 ```ts
 import { IgxSpreadsheetChartAdapterModule } from 'igniteui-angular-spreadsheet-chart-adapter';
@@ -170,7 +170,7 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 
     const chart1 = sheet.shapes().addChart(ChartType.Line, cell1, { x: 0, y: 0 }, cell1, { x: 100, y: 100 });
 
-    const title: $Platform$ ChartTitle = new ChartTitle();
+    const title: {Platform} ChartTitle = new ChartTitle();
     title.text = new FormattedString("Line Chart");
     chart1.chartTitle = title;
 
@@ -201,3 +201,12 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
     chart4.setSourceData(dataCellAddress, true);
 });
 ```
+
+ ## API Members
+
+ - `AddChart`
+ - `ChartAdapter`
+ - `SpreadsheetChartAdapter`
+ - `Spreadsheet`
+ - `Workbook`
+ - `XamSpreadsheet`

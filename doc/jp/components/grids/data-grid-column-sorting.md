@@ -1,22 +1,22 @@
 ---
-title: $Platform$ データ グリッド | 列ソート | インフラジスティックス
-_description: インフラジスティックスの $Platform$ グリッド コンポーネントのソート機能を使用して、豊富な API とデータ並び替えによって、ソート可能な列とソート不可の列の組み合わせを設定します。$ProductName$ チュートリアルを是非お試しください!
-_keywords: $Platform$ Table, Data Grid, column, sorting, row, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列, ソート, 行, インフラジスティックス
+title: {Platform} データ グリッド | 列ソート | インフラジスティックス
+_description: インフラジスティックスの {Platform} グリッド コンポーネントのソート機能を使用して、豊富な API とデータ並び替えによって、ソート可能な列とソート不可の列の組み合わせを設定します。{ProductName} チュートリアルを是非お試しください!
+_keywords: {Platform} Table, Data Grid, column, sorting, row, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, ソート, 行, インフラジスティックス
 mentionedTypes: ['Grid', 'HeaderClickAction']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッド ソートの概要
-$Platform$ Data Table / Data Grid は、単一列、複数列、およびトライステート列のソート構成で昇順および降順の列のソートをサポートします。
+# {Platform} グリッド ソートの概要
+{Platform} Data Table / Data Grid は、単一列、複数列、およびトライステート列のソート構成で昇順および降順の列のソートをサポートします。
 
-## $Platform$ グリッド ソートの例
+## {Platform} グリッド ソートの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
-           alt="$Platform$ グリッド ソートの例"
+           alt="{Platform} グリッド ソートの例"
            github-src="grids/data-grid/column-sorting">
 </code-view>
 
@@ -24,7 +24,7 @@ $Platform$ Data Table / Data Grid は、単一列、複数列、およびトラ�
 
 ## コード スニペット
 
-`HeaderClickAction` プロパティを使用して、$Platform$ データ グリッドで単一または複数の列を昇順降順にソートできます。TriState が有効な場合、列に適用されているソートを削除できます。
+`HeaderClickAction` プロパティを使用して、{Platform} データ グリッドで単一または複数の列を昇順降順にソートできます。TriState が有効な場合、列に適用されているソートを削除できます。
 
 - `SortByMultipleColumns`
 - `SortByMultipleColumnsTriState`
@@ -123,3 +123,10 @@ grid1.sortDescriptions.add(colSortDesc);
     }
 }
 ```
+
+## API メンバー
+
+ - `HeaderClickAction`
+ - `SortByMultipleColumnsTriState`
+ - `SortByMultipleColumns`
+ - `SortByOneColumnOnlyTriState`

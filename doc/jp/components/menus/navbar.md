@@ -1,31 +1,31 @@
 ---
-title: $Platform$ Navbar | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
-_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+title: {Platform} Navbar | インフラジスティックス
+_description: インフラジスティックスの {Platform} ナビゲーション バーは、シームレスな統合により最適な UI エクスペリエンスを提供し、ユーザーがアプリケーション内をスムーズに移動できるようにします。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['Navbar']
 _language: ja
 ---
 
-# $Platform$ Navbar の概要
+# {Platform} Navbar の概要
 
-$Platform$ `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
+{Platform} `Navbar` は、アプリ内の現在の位置をユーザーに通知します。ナビゲーション バーは、検索やお気に入りなどのクイック アクションへのリンクを提供することもでき、ユーザーが無効なルートや状態に移動しようとせずに、アプリケーション内をスムーズにナビゲートできるようにします。ナビゲーション バーは、それが配置されているコンテナの上部にあります。
 
 
-## $Platform$ Navbar の例
+## {Platform} Navbar の例
 
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="$Platform$ Navbar 概要の例"
+           alt="{Platform} Navbar 概要の例"
            github-src="menus/nav-bar/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -38,9 +38,15 @@ npm install {PackageWebComponents}
 IgbNavbarModule.Register(IgniteUIBlazor);
 ```
 
+```ts
+import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcNavbarComponent);
+```
+
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Navbar` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Navbar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -48,21 +54,43 @@ IgbNavbarModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-```ts
-import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
+<!-- React -->
 
-defineComponents(IgcNavbarComponent);
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
 ```
 
+次に、以下のように、`Navbar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrNavbarModule, IgrNavbar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavbarModule.register();
+```
+
+<!-- end: React -->
 
 次に、`Navbar` のテンプレートに次のコードを追加して、タイトルのみの基本的な `Navbar` を表示できます。
+
+<!-- WebComponents -->
 
 ```html
 <igc-navbar>Navigation Title</igc-navbar>
 ```
 
+<!-- end: WebComponents -->
+
 ```razor
 <IgbNavbar>Navigation Title</IgbNavbar>
+```
+
+```tsx
+<IgrNavbar>
+    <span>Navigation Title</span>
+</IgrNavbar>
 ```
 
 ## コンテンツ
@@ -72,7 +100,7 @@ defineComponents(IgcNavbarComponent);
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
-           alt="$Platform$ Navbar スタイル設定の例"
+           alt="{Platform} Navbar スタイル設定の例"
            github-src="menus/nav-bar/content">
 </code-view>
 
@@ -109,7 +137,7 @@ igc-navbar::part(end) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="$Platform$ Navbar スタイル設定の例"
+           alt="{Platform} Navbar スタイル設定の例"
            github-src="menus/nav-bar/styling">
 </code-view>
 
@@ -134,9 +162,16 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
+
+<!-- React -->
+
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+
+<!-- end: React -->
 
 <!-- WebComponents -->
 
@@ -144,3 +179,9 @@ Navbar の API の詳細については、次のリンクを参照してくだ�
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+## API メンバー
+
+ - `End`
+ - `Icon`
+ - `Navbar`

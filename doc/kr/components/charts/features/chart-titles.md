@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Chart Titles | Data Visualization Tools | Infragistics
-_description: Use Infragistics $ProductName$ chart with Titles
-_keywords: $Platform$ charts, chart titles, titles, $ProductName$, Infragistics
+title: {Platform} Chart Titles | Data Visualization Tools | Infragistics
+_description: Use Infragistics {ProductName} chart with Titles
+_keywords: {Platform} charts, chart titles, titles, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ["CategoryChart"]
 namespace: Infragistics.Controls.Charts
 ---
 
-# $Platform$ Chart Title and Subtitle
+# {Platform} Chart Title and Subtitle
 
-This topic provides information on using the chart title and subtitle feature of the $Platform$ charts.
+This topic provides information on using the chart title and subtitle feature of the {Platform} charts.
 
 ## Example
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-titles"
-           alt="$Platform$ Chart Synchronization Example"
+           alt="{Platform} Chart Synchronization Example"
            github-src="charts/category-chart/line-chart-with-titles">
 </code-view>
 

@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
-_description: Use Infragistics' $ProductName$ Data Table & Grid to support the cell activation feature that will enable keyboard navigation through the cells of the grid. View $ProductName$ table tutorials!
-_keywords: $Platform$ Table, Data Grid, cell activation, $ProductName$, Infragistics
+title: {Platform} Data Grid | Real-Time Data Grid and Tables | Activation | Infragistics
+_description: Use Infragistics' {ProductName} Data Table & Grid to support the cell activation feature that will enable keyboard navigation through the cells of the grid. View {ProductName} table tutorials!
+_keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'GridActivationMode']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Cell Activation
+# {Platform} Grid Cell Activation
 
-The $ProductName$ Data Table / Data Grid supports a cell activation feature that will enable keyboard navigation through the cells of the grid. This is activated by setting the `ActivationMode` property of the grid to `Cell`.
+The {ProductName} Data Table / Data Grid supports a cell activation feature that will enable keyboard navigation through the cells of the grid. This is activated by setting the `ActivationMode` property of the grid to `Cell`.
 
-## $Platform$ Grid Cell Activation Example
+## {Platform} Grid Cell Activation Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-activation"
-           alt="$Platform$ Grid Cell Activation Example"
+           alt="{Platform} Grid Cell Activation Example"
            github-src="grids/data-grid/cell-activation">
 </code-view>
 
@@ -44,3 +44,8 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 - <b>Ctrl + Arrow Key Right</b>: Move to the right-most cell in the row.
 - <b>Ctrl + Home</b>: Move to the top-left cell in the grid.
 - <b>Ctrl + End</b>: Move to the bottom-right cell in the grid.
+
+ ## API Members
+
+ - `ActivationMode`
+ - `Cell`

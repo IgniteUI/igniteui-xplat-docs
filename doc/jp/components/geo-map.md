@@ -1,15 +1,15 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | マップ概要 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics, $Platform$ マップ, 地理マップ, 画像タイル, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} マップ | データ可視化ツール | マップ概要 | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップ コンポーネントを使用して、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics, {Platform} マップ, 地理マップ, 画像タイル, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ マップの概要
+# {Platform} マップの概要
 
-$ProductName$ Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
+{ProductName} Map コンポーネントを使用すると、ビューモデルからの地理的位置を含むデータ、またはシェープ ファイルからロードされた地理空間データを地理的画像マップに表示できます。
 
-# $Platform$ マップの例
+# {Platform} マップの例
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 
@@ -21,7 +21,7 @@ $ProductName$ Map コンポーネントを使用すると、ビューモデル�
 
 <div class="divider--half"></div>
 
-$Platform$ 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
+{Platform} 地図コンポーネントを使用すると、Bing Maps™ および Open Street Maps から地理的画像をレンダリングできます。マップは何万ものデータポイントをプロットし、コントロールがリアルタイム フィードを処理できるように数ミリ秒ごとにそれらを更新します。
 
 マップの Series プロパティは、無制限の地理的シリーズのレンダリングをサポートするために使用されます。このプロパティは、地理的シリーズ オブジェクトのコレクションで、任意のタイプの地理的シリーズをそれに追加できます。たとえば、都市などの地理的位置をプロットするために `GeographicSymbolSeries`、またこれらの地理的位置の間の接続 (道路など) をプロットするために `GeographicPolylineSeries` を追加できます。
 
@@ -153,7 +153,7 @@ ModuleManager.register(
 
 ## その他のリソース
 
-関連する $Platform$ マップ機能の詳細については、以下のトピックを参照してください。
+関連する {Platform} マップ機能の詳細については、以下のトピックを参照してください。
 
 - [地理マップのナビゲーション](geo-map-navigation.md)
 <!-- - [地理マップ画像](geo-map-display-imagery-types.md) -->

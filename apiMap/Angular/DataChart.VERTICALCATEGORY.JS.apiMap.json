@@ -7,6 +7,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"maximumZoomCategories"}],"originalName":"MaximumZoomCategories"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},

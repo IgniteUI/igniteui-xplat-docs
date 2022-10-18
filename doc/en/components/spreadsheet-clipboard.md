@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Spreadsheet | Clipboard Operations | Infragistics
-_description: Use clipboard operations such as copy, cut and paste within Infragistics' $Platform$ spreadsheet control. View Infragistics $ProductName$ spreadsheet demos today!
-_keywords: Spreadsheet, clipboard operations, $ProductName$, Infragistics
+title: {Platform} Spreadsheet | Clipboard Operations | Infragistics
+_description: Use clipboard operations such as copy, cut and paste within Infragistics' {Platform} spreadsheet control. View Infragistics {ProductName} spreadsheet demos today!
+_keywords: Spreadsheet, clipboard operations, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet', 'SpreadsheetAction', 'SpreadsheetCommandType', 'Command']
 ---
-# $Platform$ Working with Clipboard
+# {Platform} Working with Clipboard
 
-This topic explains how to perform clipboard operations on the $ProductName$ spreadsheet component.
+This topic explains how to perform clipboard operations on the {ProductName} spreadsheet component.
 
-## $Platform$ Working with Clipboard Example
+## {Platform} Working with Clipboard Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"
-           alt="$Platform$ Working with Clipboard Example"
+           alt="{Platform} Working with Clipboard Example"
            github-src="excel/spreadsheet/clipboard">
 </code-view>
 
@@ -44,7 +44,7 @@ import { SpreadsheetAction } from 'igniteui-webcomponents-spreadsheet';
 
 
 ## Usage
-The following code snippet shows how you can execute commands related to the clipboard in the $Platform$ `Spreadsheet` control:
+The following code snippet shows how you can execute commands related to the clipboard in the {Platform} `Spreadsheet` control:
 
 ```ts
 public cut(): void {
@@ -59,3 +59,8 @@ public paste(): void {
     this.spreadsheet.executeAction(SpreadsheetAction.Paste);
 }
 ```
+
+ ## API Members
+
+ - `SpreadsheetAction`
+ - `Spreadsheet`

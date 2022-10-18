@@ -1,28 +1,28 @@
 ---
-title: $Platform$ Data Grid | Column Resizing | Infragistics
-_description: Start using Infragistics' $Platform$ grid component to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each. View $ProductName$ table demos for more information!
-_keywords: $Platform$ Table, Data Grid, column resizing, $ProductName$, Infragistics
+title: {Platform} Data Grid | Column Resizing | Infragistics
+_description: Start using Infragistics' {Platform} grid component to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each. View {ProductName} table demos for more information!
+_keywords: {Platform} Table, Data Grid, column resizing, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'ColumnResizingMode', 'ColumnResizingAnimationMode']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Column Resizing
+# {Platform} Grid Column Resizing
 
-The $ProductName$ Data Grid supports the ability to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each.
+The {ProductName} Data Grid supports the ability to resize columns, giving you flexibility over how you wish to display your columns with respect to the width of each.
 
-## $Platform$ Grid Column Resizing Example
+## {Platform} Grid Column Resizing Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
-           alt="$Platform$ Grid Column Resizing Example"
+           alt="{Platform} Grid Column Resizing Example"
            github-src="grids/data-grid/column-resizing">
 </code-view>
 
 <div class="divider--half"></div>
 
-Column resizing in the $ProductName$ DataGrid is on by default, and can be controlled by using the `ColumnResizingMode` property of the grid. This property has three options. Each option is explained below:
+Column resizing in the {ProductName} DataGrid is on by default, and can be controlled by using the `ColumnResizingMode` property of the grid. This property has three options. Each option is explained below:
 
 - `Deferred`: The default option. When resizing, a separator will appear showing how large or small the column will become when resized.
 - `Immediate`: When resizing, there will be no separator. The column's width will follow the pointer as you drag the edge of the column and resize accordingly.
@@ -38,7 +38,7 @@ When resizing a star-width column, it will change that column to a fixed column.
 
 ## Code Snippet
 
-The following code snippet demonstrates how to implement column resizing in the $Platform$ data grid, where the <b>Street</b> column in this case will not be resizable. In this case, the column resizing separator will be 5 pixels wide and the columns that are resizable would animate when resized as well:
+The following code snippet demonstrates how to implement column resizing in the {Platform} data grid, where the <b>Street</b> column in this case will not be resizable. In this case, the column resizing separator will be 5 pixels wide and the columns that are resizable would animate when resized as well:
 
 <!--React-->
 ```ts
@@ -101,3 +101,12 @@ grid1.dataSource = data;
     <IgbTextColumn Field="City" />
 </IgbDataGrid>
 ```
+
+ ## API Members
+
+ - `ColumnResizingAnimationMode`
+ - `ColumnResizingMode`
+ - `ColumnResizingSeparatorBackground`
+ - `ColumnResizingSeparatorWidth`
+ - `Deferred`
+ - `Interpolate`

@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Spreadsheet | Commands | Infragistics
-_description: Perform commands to activate different features of Infragistics' $Platform$ spreadsheet control. Learn commands such as ZoomIn and ZoomOut with $ProductName$ spreadsheet!
-_keywords: Spreadsheet, commands, $ProductName$, Infragistics
+title: {Platform} Spreadsheet | Commands | Infragistics
+_description: Perform commands to activate different features of Infragistics' {Platform} spreadsheet control. Learn commands such as ZoomIn and ZoomOut with {ProductName} spreadsheet!
+_keywords: Spreadsheet, commands, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet', 'SpreadsheetAction']
 ---
-# $Platform$ Working with Commands
+# {Platform} Working with Commands
 
-The $Platform$ Spreadsheet component allows you to perform commands for activating different features of the spreadsheet. This topic explains how to perform different operations with the control using commands. Many of the commands will perform their action based on the active cells, rows, or worksheets. For example two such commands are ZoomIn and ZoomOut. See the SpreadsheetAction enum for a full list.
+The {Platform} Spreadsheet component allows you to perform commands for activating different features of the spreadsheet. This topic explains how to perform different operations with the control using commands. Many of the commands will perform their action based on the active cells, rows, or worksheets. For example two such commands are ZoomIn and ZoomOut. See the SpreadsheetAction enum for a full list.
 
-## $Platform$ Working with Commands Example
+## {Platform} Working with Commands Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands"
-           alt="$Platform$ Working with Commands Example"
+           alt="{Platform} Working with Commands Example"
            github-src="excel/spreadsheet/commands">
 </code-view>
 
@@ -86,3 +86,8 @@ function zoomOut(): void {
     this.spreadsheet.executeAction(SpreadsheetAction.ZoomOut);
 }
 ```
+
+ ## API Members
+
+ - `ExecuteAction`
+ - `SpreadsheetAction`

@@ -1,13 +1,13 @@
 ---
-title: $Platform$ マップ | シェープ マップのリソース | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, shape styling, conditional formatting, $ProductName$, Infragistics, $Platform$ マップ, 図形スタイル, 条件付き書式, インフラジスティックス
+title: {Platform} マップ | シェープ マップのリソース | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, shape styling, conditional formatting, {ProductName}, Infragistics, {Platform} マップ, 図形スタイル, 条件付き書式, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ シェイプ スタイリング ユーティリティ
+# {Platform} シェイプ スタイリング ユーティリティ
 
-リソース トピックは、$Platform$ `XamGeographicMap` コンポーネントで `GeographicShapeSeries` の UI 要素のスタイリングに役立つユーティリティの実装を提供します。
+リソース トピックは、{Platform} `XamGeographicMap` コンポーネントで `GeographicShapeSeries` の UI 要素のスタイリングに役立つユーティリティの実装を提供します。
 
 ## 必要なインポート
 
@@ -259,3 +259,8 @@ export class ShapeComparison {
   public strokeThickness?: number;
 }
 ```
+
+## API メンバー
+
+ - `GeographicShapeSeries`
+ - `XamGeographicMap`

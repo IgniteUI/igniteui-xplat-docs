@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Data Grid | Column Summaries | Infragistics
-_description: Use Infragistics' $Platform$ grid component's column summaries feature to display summarized data such as count, max, min and many more. Check out $ProductName$ table demos!
-_keywords: $Platform$ Table, Data Grid, column, summaries, $ProductName$, Infragistics
+title: {Platform} Data Grid | Column Summaries | Infragistics
+_description: Use Infragistics' {Platform} grid component's column summaries feature to display summarized data such as count, max, min and many more. Check out {ProductName} table demos!
+_keywords: {Platform} Table, Data Grid, column, summaries, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Column Summaries
+# {Platform} Column Summaries
 
-The $ProductName$ Data Table / Data Grid supports column summaries. In some cases, your end users may be overwhelmed by the amount of data displayed in the grid, and often may be looking for a summary of the data. Your end users may also want to derive additional information from the data of a specific column. Summaries help your end users achieve this, and you can enable them by setting the `SummaryScope` property.
+The {ProductName} Data Table / Data Grid supports column summaries. In some cases, your end users may be overwhelmed by the amount of data displayed in the grid, and often may be looking for a summary of the data. Your end users may also want to derive additional information from the data of a specific column. Summaries help your end users achieve this, and you can enable them by setting the `SummaryScope` property.
 
-## $Platform$ Column Summaries Example
+## {Platform} Column Summaries Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-summaries"
-           alt="$Platform$ Column Summaries Example"
+           alt="{Platform} Column Summaries Example"
            github-src="grids/data-grid/column-summaries">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ Data Table / Data Grid supports column summaries. In some case
 
 ## Summary Scope Property
 
-The $Platform$ data grid supports 4 summary settings that you can configure using the `SummaryScope` property. These are listed and described below:
+The {Platform} data grid supports 4 summary settings that you can configure using the `SummaryScope` property. These are listed and described below:
 
 - `Root`: This will display a grand total for all rows in the grid for the column the summary is applied to.
 - `Groups`: This is specific to grouped rows and shows the grand total for all rows in a particular group.
@@ -33,7 +33,7 @@ The $Platform$ data grid supports 4 summary settings that you can configure usin
 
 ## Group Summary Display Mode Property
 
-The $Platform$ data grid supports configuration of the locations that summaries are displayed. You can configure this by using the `GroupSummaryDisplayMode` property. The different options for this property are listed and described below:
+The {Platform} data grid supports configuration of the locations that summaries are displayed. You can configure this by using the `GroupSummaryDisplayMode` property. The different options for this property are listed and described below:
 
 - **List**: This will render the group summaries in a flat list in the spanning group header.
 - **Cells**: This will render the group header as cells, and the summary values will be rendered inside the cells, aligned with their corresponding column. The grid will only display a single summary per column using this option.
@@ -328,3 +328,10 @@ class CustomDomestic extends SummaryCalculator
 }
 ```
 <!--end: Angular, React, WebComponents -->
+
+
+ ## API Members
+
+ - `Grid`
+ - `GroupSummaryDisplayMode`
+ - `SummaryScope`

@@ -1,17 +1,17 @@
 ---
-title: $Platform$ ドック マネージャー | デスクトップ統合 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ドック マネージャー コンポーネントを使用して、複数ウィンドウの Electron デスクトップ アプリケーションのレイアウトを管理します。$ProductName$ ドック マネージャーのチュートリアルを是非お試しください!
-_keywords: dock manager, layout, $ProductName$, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
+title: {Platform} ドック マネージャー | デスクトップ統合 | インフラジスティックス
+_description: インフラジスティックスの {Platform} ドック マネージャー コンポーネントを使用して、複数ウィンドウの Electron デスクトップ アプリケーションのレイアウトを管理します。{ProductName} ドック マネージャーのチュートリアルを是非お試しください!
+_keywords: dock manager, layout, {ProductName}, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ ドック マネージャー デスクトップ統合
+# {Platform} ドック マネージャー デスクトップ統合
 
-インフラジスティックスの $Platform$ ドック マネージャー コンポーネントは、複数ウィンドウの [Electron](https://www.electronjs.org/) デスクトップ アプリケーションで、各ウィンドウのレイアウトを管理したり、新しいウィンドウを作成するためにウィンドウの外側にペインをドラッグしたり、あるウィンドウから別のウィンドウにペインをドラッグアンドドロップしたりできます。このようなアプリケーションのサンプル実装は、次のリポジトリ https://github.com/IgniteUI/dock-manager-electron-app にあります。
+インフラジスティックスの {Platform} ドック マネージャー コンポーネントは、複数ウィンドウの [Electron](https://www.electronjs.org/) デスクトップ アプリケーションで、各ウィンドウのレイアウトを管理したり、新しいウィンドウを作成するためにウィンドウの外側にペインをドラッグしたり、あるウィンドウから別のウィンドウにペインをドラッグアンドドロップしたりできます。このようなアプリケーションのサンプル実装は、次のリポジトリ https://github.com/IgniteUI/dock-manager-electron-app にあります。
 
 <!-- TODO: Add a gif of the application and a link to download the exe -->
 <img class="responsive-img" src="../../images/dockmanager-electron-app.gif"
-alt="$Platform$ ドック マネージャー デスクトップ統合"/>
+alt="{Platform} ドック マネージャー デスクトップ統合"/>
 
 ## 実装
 
@@ -148,3 +148,10 @@ mainWindow = new BrowserWindow({
 このアプリケーションでは、メイン ウィンドウ (`IMainDockManagerWindow`) または子ウィンドウ (`IChildDockManagerWindow`) のいずれかである `IDockManagerWindow` タイプを実装しました。メイン ウィンドウは、アプリケーションの起動時に作成されるウィンドウです。すべての子ウィンドウへの参照が含まれています。子ウィンドウは、ペインがウィンドウからドロップされ、アプリケーションのメイン ウィンドウへの参照がある場合に作成されます。
 
 完全なソース コードについては、[リポジトリ](https://github.com/IgniteUI/dock-manager-electron-app)のクローンを作成してください。
+
+ ## API メンバー
+
+ - `BrowserWindow`
+ - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
+ - `IDockManagerWindow`
+ - `Window`

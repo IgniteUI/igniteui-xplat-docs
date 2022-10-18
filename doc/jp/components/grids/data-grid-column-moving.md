@@ -1,29 +1,29 @@
 ---
-title: $Platform$ データ グリッド | 列移動 | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ データ グリッドは列の移動をサポートし、列の表示方法を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column moving, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列移動, インフラジスティックス
+title: {Platform} データ グリッド | 列移動 | インフラジスティックス
+_description: インフラジスティックスの {ProductName} データ グリッドは列の移動をサポートし、列の表示方法を柔軟に選択できます。詳細については、{ProductName} テーブル サンプルを参照してください。
+_keywords: {Platform} Table, Data Grid, column moving, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列移動, インフラジスティックス
 mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ グリッド列移動の概要
+# {Platform} グリッド列移動の概要
 
-$ProductName$ Data Grid は列を移動する機能をサポートしているので、表示されている列の順序に関して列の表示方法を柔軟に選択できます。
+{ProductName} Data Grid は列を移動する機能をサポートしているので、表示されている列の順序に関して列の表示方法を柔軟に選択できます。
 
-## $Platform$ グリッド列移動の例
+## {Platform} グリッド列移動の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
-           alt="$Platform$ グリッド列移動の例"
+           alt="{Platform} グリッド列移動の例"
            github-src="grids/data-grid/column-moving">
 </code-view>
 
 <div class="divider--half"></div>
 
-$ProductName$ Data Grid の列移動はデフォルトで有効になっているため、グリッドの `ColumnMovingMode` プロパティを設定して制御できます。このプロパティには、Deferred または None の 2 つのオプションがあります。`Deferred` は列の移動を許可しますが、`None` はグリッド全体の列の移動を無効にします。
+{ProductName} Data Grid の列移動はデフォルトで有効になっているため、グリッドの `ColumnMovingMode` プロパティを設定して制御できます。このプロパティには、Deferred または None の 2 つのオプションがあります。`Deferred` は列の移動を許可しますが、`None` はグリッド全体の列の移動を無効にします。
 
 列の移動が `Deferred` に設定されていると、列を移動している間、セパレーターが表示されます。列を移動しているときにマウス ポインタを離すと、移動した列は区切り記号の右側にある列の位置に移動します。このセパレータは、それぞれ `ColumnMovingSeparatorWidth` プロパティと `ColumnMovingSeparatorBackground` プロパティを使用して幅と色をカスタマイズすることもできます。
 
@@ -31,7 +31,7 @@ $ProductName$ Data Grid の列移動はデフォルトで有効になってい�
 
 ## コード スニペット
 
-以下は、遅延列の移動、アニメーションの有効化、5 ピクセル幅のセパレーターを使用して $ProductName$ Data グリッドに列移動を実装する方法を示しています。
+以下は、遅延列の移動、アニメーションの有効化、5 ピクセル幅のセパレーターを使用して {ProductName} Data Grid に列移動を実装する方法を示しています。
 
 <!--React-->
 ```ts
@@ -79,3 +79,10 @@ grid1.dataSource = data;
     ColumnMovingSeparatorWidth="5" />
 ```
 
+## API メンバー
+
+ - `ColumnMovingAnimationMode`
+ - `ColumnMovingMode`
+ - `ColumnMovingSeparatorBackground`
+ - `ColumnMovingSeparatorWidth`
+ - `Deferred`

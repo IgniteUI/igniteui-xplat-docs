@@ -1,48 +1,76 @@
 ---
-title: $Platform$ スライダーと範囲スライダー コンポーネント | $ProductName$
-_description: $ProductName$ の $Platform$ スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ スライダー コンポーネント, インフラジスティックス
+title: {Platform} スライダーと範囲スライダー コンポーネント | {ProductName}
+_description: {ProductName} の {Platform} スライダーと範囲スライダーでつまみトラックを使用して、特定の範囲で選択を構成する方法を学びます。単一スライダーと範囲スライダーのどちらかを選択できます。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Slider Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} スライダー コンポーネント, インフラジスティックス
 mentionedTypes: ['Slider', 'SliderLabel', 'RangeSlider']
 _language: ja
 ---
 
-# $Platform$ Slider & Range Slider (スライダーと範囲スライダー) の概要
+# {Platform} Slider & Range Slider (スライダーと範囲スライダー) の概要
 
-$Platform$ スライダーと範囲スライダー コンポーネントを使用すると、つまみをトラックに沿って動かすことで、特定の範囲を選択できます。トラックを連続またはステップに定義でき、単一または範囲スライダーのどちらかを選択できます。
+{Platform} スライダーと範囲スライダー コンポーネントを使用すると、つまみをトラックに沿って動かすことで、特定の範囲を選択できます。トラックを連続またはステップに定義でき、単一または範囲スライダーのどちらかを選択できます。
 
-## $Platform$ スライダーと範囲スライダーの例
+## {Platform} スライダーと範囲スライダーの例
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-overview"
-           alt="$Platform$ Slider の例"
+           alt="{Platform} Slider の例"
            github-src="inputs/slider/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+`Slider` と `RangeSlider` を使用する前に、次のように登録する必要があります:
+
+```ts
+import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Slider` および `RangeSlider` とそれぞれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrSliderModule, IgrSlider, IgrRangeSlider, IgrRangeSliderModule } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrSliderModule.register();
+IgrRangeSliderModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 `Slider` と `RangeSlider` を使用する前に、次のように登録する必要があります:
 
 ```razor
 IgbSliderModule.Register(IgniteUIBlazor);
 IgbRangeSliderModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import { defineComponents, IgcSliderComponent, IgcRangeSliderComponent } from "igniteui-webcomponents";
-
-defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
-```
+<!-- end: Blazor -->
 
 `Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+ <IgrSlider value="40" />
+    <span className="slider-label"></span>
+<IgrRangeSlider lower="20" upper="70"></IgrRangeSlider>
+```
 
 ```html
 <igc-slider value="40"></igc-slider>
@@ -58,12 +86,12 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 
 スライダーと範囲スライダー コンポーネントの主な違いは、スライダー コンポーネントには単一のつまみがあり、範囲スライダー コンポーネントには 2 つのつまみがあることです。スライダー コンポーネントの単一のつまみで、その `Value` プロパティが表示されます。範囲スライダー コンポーネントの 2 つのつまみは、`Lower` 値と `Upper` 値のプロパティを表示します。
 
-いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`igcInput` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
+いずれかの値が変更されると、両方のスライダーが 2 つのイベントを発行します。`Input` イベントは、キーボードまたはドラッグ操作を使用して値が変更されるたびに発行され、`igcChange` イベントは、値の変更がドラッグエンドまたはキーボード操作でコミットされたときに発行されます。
 
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value"
-           alt="$Platform$ Slider Value の例"
+           alt="{Platform} Slider Value の例"
            github-src="inputs/slider/value">
 </code-view>
 
@@ -76,7 +104,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-disabled"
-           alt="$Platform$ Slider Disabled の例"
+           alt="{Platform} Slider Disabled の例"
            github-src="inputs/slider/disabled">
 </code-view>
 
@@ -87,7 +115,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-constraints"
-           alt="$Platform$ Slider 制約の例"
+           alt="{Platform} Slider 制約の例"
            github-src="inputs/slider/constraints">
 </code-view>
 
@@ -98,7 +126,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-discrete"
-           alt="$Platform$ Slider Discrete Track の例"
+           alt="{Platform} Slider Discrete Track の例"
            github-src="inputs/slider/discrete">
 </code-view>
 
@@ -111,7 +139,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-ticks"
-           alt="$Platform$ Slider Tick Marks の例"
+           alt="{Platform} Slider Tick Marks の例"
            github-src="inputs/slider/ticks">
 </code-view>
 
@@ -122,7 +150,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-tick-labels"
-           alt="$Platform$ Slider Tick Mark Labels の例"
+           alt="{Platform} Slider Tick Mark Labels の例"
            github-src="inputs/slider/tick-labels">
 </code-view>
 
@@ -133,7 +161,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-value-format"
-           alt="$Platform$ Slider Value Format の例"
+           alt="{Platform} Slider Value Format の例"
            github-src="inputs/slider/value-format">
 </code-view>
 
@@ -144,7 +172,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-labels"
-           alt="$Platform$ Slider Labels の例"
+           alt="{Platform} Slider Labels の例"
            github-src="inputs/slider/labels">
 </code-view>
 
@@ -174,7 +202,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/slider-styling"
-           alt="$Platform$ Slider スタイル設定の例"
+           alt="{Platform} Slider スタイル設定の例"
            github-src="inputs/slider/styling">
 </code-view>
 
@@ -192,7 +220,7 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -202,3 +230,24 @@ defineComponents(IgcSliderComponent, IgcRangeSliderComponent);
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+## API メンバー
+
+ - `HidePrimaryLabels`
+ - `HideSecondaryLabels`
+ - `HideTooltip`
+ - `PrimaryTicks`
+ - `RangeSlider`
+ - `SecondaryTicks`
+ - `SliderLabel`
+ - `Slider`
+ - `TickLabelRotation`
+ - `TickOrientation`
+ - `UpperBound`
+ - `ValueFormatOptions`
+ - `ValueFormat`

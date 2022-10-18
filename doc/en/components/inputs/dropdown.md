@@ -1,33 +1,61 @@
 ---
-title: $Platform$ Dropdown Component | $ProductName$
-_description: Add interactivity and see styling options to a scrollable list of items in your app. Get started using the Dropdown Component in $ProductName$ now.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Dropdown Component, Infragistics
+title: {Platform} Dropdown Component | {ProductName}
+_description: Add interactivity and see styling options to a scrollable list of items in your app. Get started using the Dropdown Component in {ProductName} now.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Dropdown Component, Infragistics
 mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
 ---
 
-# $Platform$ Dropdown Overview
+# {Platform} Dropdown Overview
 
 
-The $Platform$ Dropdown is a component, which displays a toggleable list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a dropdown menu or you can simply use it to deliver more useful visual information by grouping data. With grouping you can use both flat and hierarchical data.
+The {Platform} Dropdown is a component, which displays a toggleable list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a dropdown menu or you can simply use it to deliver more useful visual information by grouping data. With grouping you can use both flat and hierarchical data.
 
-## $Platform$ Dropdown Example
+## {Platform} Dropdown Example
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
-           alt="$Platform$ Dropdown Example"
+           alt="{Platform} Dropdown Example"
            github-src="inputs/dropdown/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+```ts
+import {
+    defineComponents,
+    IgcDropdownComponent
+} from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcDropdownComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Dropdown`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrDropdownModule, IgrDropdown } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrDropdownModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 Before using the `Dropdown`, you need to register it as follows:
 
@@ -35,17 +63,7 @@ Before using the `Dropdown`, you need to register it as follows:
 IgbDropdownModule.Register(IgniteUIBlazor);
 ```
 
-```ts
-import { 
-    defineComponents,
-    IgcDropdownComponent,
-    IgcDropdownItemComponent,
-    IgcDropdownHeaderComponent,
-    IgcDropdownGroupComponent 
-} from "igniteui-webcomponents";
-
-defineComponents(IgcDropdownComponent, IgcDropdownItemComponent, IgcDropdownHeaderComponent, IgcDropdownGroupComponent);
-```
+<!-- end: Blazor -->
 
 The simplest way to start using the `Dropdown` is as follows:
 
@@ -65,7 +83,7 @@ The Dropdown list is positioned relatively to its target. The `target` slot allo
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-target"
-           alt="$Platform$ Dropdown Target Example"
+           alt="{Platform} Dropdown Target Example"
            github-src="inputs/dropdown/target">
 </code-view>
 
@@ -76,7 +94,7 @@ The preferred placement of the Dropdown can be set using the `Placement` propert
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
-           alt="$Platform$ Dropdown Position Example"
+           alt="{Platform} Dropdown Position Example"
            github-src="inputs/dropdown/position">
 </code-view>
 
@@ -91,7 +109,7 @@ The `DropdownItem` represents a selectable item in the Dropdown list. You could 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
-           alt="$Platform$ Dropdown Item Example"
+           alt="{Platform} Dropdown Item Example"
            github-src="inputs/dropdown/item">
 </code-view>
 
@@ -102,7 +120,7 @@ You could use the `DropdownHeader` to provide a header for a group of items.
 <code-view style="height: 250px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-header"
-           alt="$Platform$ Dropdown Header Example"
+           alt="{Platform} Dropdown Header Example"
            github-src="inputs/dropdown/header">
 </code-view>
 
@@ -113,7 +131,7 @@ The Dropdown items can also be grouped using the `DropdownGroup`, making it easi
 <code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
-           alt="$Platform$ Dropdown Group Example"
+           alt="{Platform} Dropdown Group Example"
            github-src="inputs/dropdown/group">
 </code-view>
 
@@ -132,7 +150,7 @@ You can change the appearance of the Dropdown and its items, by using the expose
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
-           alt="$Platform$ Dropdown Styling Example"
+           alt="{Platform} Dropdown Styling Example"
            github-src="inputs/dropdown/styling">
 </code-view>
 
@@ -162,3 +180,16 @@ You can change the appearance of the Dropdown and its items, by using the expose
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+## API Members
+
+ - `Disabled`
+ - `DropdownGroup`
+ - `DropdownHeader`
+ - `DropdownItem`
+ - `Dropdown`

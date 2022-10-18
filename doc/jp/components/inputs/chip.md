@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Chip | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
-_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, $Platform$ Chip コンポーネント, インフラジスティックス
+title: {Platform} Chip | インフラジスティックス
+_description: インフラジスティックスの {Platform} Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
+_keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, {Platform} Chip コンポーネント, インフラジスティックス
 mentionedTypes: ['Chip']
 _language: ja
 ---
 
-# $Platform$ Chip (チップ) の概要
+# {Platform} Chip (チップ) の概要
 
-$ProductName$ Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
+{ProductName} Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
 
-## $Platform$ Chip の例
+## {Platform} Chip の例
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="$Platform$ Chip の例"
+           alt="{Platform} Chip の例"
            github-src="inputs/chip/overview">
 </code-view>
 
@@ -24,12 +24,39 @@ $ProductName$ Chip は、ユーザーが情報を入力したり、選択した�
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```ts
+import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcChipComponent);
+```
 <!-- end: WebComponents -->
+
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Chip` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrChipModule, IgrChip } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrChipModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 
 `Chip` を使用する前に、次のように登録する必要があります:
 
@@ -37,20 +64,13 @@ npm install {PackageWebComponents}
 IgbChipModule.Register(IgniteUIBlazor);
 ```
 
-<!-- Blazor -->
-
-また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
 
 <!-- end: Blazor -->
-
-```ts
-import { defineComponents, IgcChipComponent } from 'igniteui-webcomponents';
-defineComponents(IgcChipComponent);
-```
 
 `Chip` の使用を開始する最も簡単な方法は次のとおりです:
 
@@ -70,11 +90,19 @@ defineComponents(IgcChipComponent);
 }
 ```
 
+```tsx
+<IgrChip></IgrChip>
+```
+
 ```html
 <igc-chip></igc-chip>
 ```
 
 選択可能な Chip を表示するには、Chip の `Selectable` プロパティを使用できます。
+
+```tsx
+<IgrChip selectable="true"></IgrChip>
+```
 
 ```html
 <igc-chip selectable></igc-chip>
@@ -85,6 +113,10 @@ defineComponents(IgcChipComponent);
 ```
 
 削除可能可能な Chip を表示するには、Chip の `Removable` プロパティを使用できます。
+
+```tsx
+<IgrChip removable="true"></IgrChip>
+```
 
 ```html
 <igc-chip removable></igc-chip>
@@ -98,7 +130,11 @@ defineComponents(IgcChipComponent);
 
 ### バリアント
 
-$ProductName$ Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+{ProductName} Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+
+```tsx
+<IgrChip variant="success"></IgrChip>
+```
 
 ```html
 <igc-chip variant="success"></igc-chip>
@@ -108,16 +144,20 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="$Platform$ Chip バリアントの例"
+           alt="{Platform} Chip バリアントの例"
            github-src="inputs/chip/variants">
 </code-view>
 
 ### 無効
 
-$ProductName$ Chip は、`Disabled` プロパティを使用して無効にできます。
+{ProductName} Chip は、`Disabled` プロパティを使用して無効にできます。
+
+```tsx
+<IgrChip disabled="true"></IgrChip>
+```
 
 ```html
 <igc-chip disabled></igc-chip>
@@ -137,10 +177,10 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 </igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
-           alt="$Platform$ Chip Multiple Example"
+           alt="{Platform} Chip Multiple Example"
            github-src="inputs/chip/multiple">
 </code-view>
 
@@ -148,16 +188,28 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 
 `Size` プロパティを使用して、ユーザーが `Chip` のサイズを選択できるようにします。
 
+```tsx
+<IgrChip size="small" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+<IgrChip size="medium" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+<IgrChip size="large" selectable="true" removable="true">
+    <span>Chip</span>
+</IgrChip>
+```
+
 ```html
 <igc-chip size="small" selectable removable>Chip</igc-chip>
 <igc-chip size="medium" selectable removable>Chip</igc-chip>
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
-           alt="$Platform$ Chip Size Example"
+           alt="{Platform} Chip Size Example"
            github-src="inputs/chip/size">
 </code-view>
 
@@ -176,10 +228,10 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 60px"
+<code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="$Platform$ Chip スタイル設定の例"
+           alt="{Platform} Chip スタイル設定の例"
            github-src="inputs/chip/styling">
 </code-view>
 
@@ -188,7 +240,6 @@ igc-chip::part(suffix) {
 
 * `Chip`
 
-
 <div class="divider--half"></div>
 
 ## その他のリソース
@@ -196,6 +247,22 @@ igc-chip::part(suffix) {
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+## API メンバー
+
+ - `Chip`

@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Data Grid | Cell Selection | Selection | Infragistics
-_description: Use cell and row selection of the Infragistics' $Platform$ data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the $ProductName$ table.
-_keywords: $Platform$ Table, Data Grid, cell selection, $ProductName$, Infragistics
+title: {Platform} Data Grid | Cell Selection | Selection | Infragistics
+_description: Use cell and row selection of the Infragistics' {Platform} data grid to highlight areas of the table. Learn how to configure single or multiple row selection for the {ProductName} table.
+_keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics
 mentionedTypes: ['Grid', 'GridSelectionMode']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Grid Selection
+# {Platform} Grid Selection
 
-The $ProductName$ Data Table / Data Grid supports single or multiple row and cell selection.
+The {ProductName} Data Table / Data Grid supports single or multiple row and cell selection.
 
-## $Platform$ Grid Selection Example
+## {Platform} Grid Selection Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
-           alt="$Platform$ Grid Selection Example"
+           alt="{Platform} Grid Selection Example"
            github-src="grids/data-grid/cell-selection">
 </code-view>
 
@@ -24,7 +24,7 @@ The $ProductName$ Data Table / Data Grid supports single or multiple row and cel
 
 ## Overview
 
-Selection in the $Platform$ data grid is enabled on a row and cell level and can be configured by using the `SelectionMode` option of the $Platform$ grid. This property takes five different options, listed below:
+Selection in the {Platform} data grid is enabled on a row and cell level and can be configured by using the `SelectionMode` option of the {Platform} grid. This property takes five different options, listed below:
 
 - `None`: Selection is not enabled.
 - `SingleCell`: Selection of a single cell is enabled.
@@ -49,8 +49,19 @@ The following example demonstrates how to selected or deselected all rows in the
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
-           alt="$Platform$ Grid Selection Example"
+           alt="{Platform} Grid Selection Example"
            github-src="grids/data-grid/row-selection" >
 </code-view>
 
 <div class="divider--half"></div>
+
+ ## API Members
+
+ - `ModifierBased`
+ - `MultipleCell`
+ - `MultipleRow`
+ - `RangeCell`
+ - `SelectionBehavior`
+ - `SelectionMode`
+ - `SingleCell`
+ - `SingleRow`

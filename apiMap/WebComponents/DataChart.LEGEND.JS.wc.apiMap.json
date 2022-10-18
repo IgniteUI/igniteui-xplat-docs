@@ -191,7 +191,9 @@
     "names":[{"platform":"WebComponents","fileName":"igc-item-legend-component.ts","mappedName":"IgcItemLegendComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
-    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"WebComponents","fileName":"igc-legend-component.ts","mappedName":"IgcLegendComponent"}],
     "members":[

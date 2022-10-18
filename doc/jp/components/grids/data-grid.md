@@ -1,16 +1,16 @@
 ---
-title: $Platform$ データ グリッド コンポーネント | リアルタイム $Platform$ テーブル | インフラジスティックス
-_description: インフラジスティックスの $Platform$ グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。$ProductName$ を使用したデータの表示方法について説明します。
-_keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics, $Platform$ テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
+title: {Platform} データ グリッド コンポーネント | リアルタイム {Platform} テーブル | インフラジスティックス
+_description: インフラジスティックスの {Platform} グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。{ProductName} を使用したデータの表示方法について説明します。
+_keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
-# $Platform$ Data Grid 概要
+# {Platform} Data Grid 概要
 
-$ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポーネントでコーディングや設定をほとんど行わずにデータをすばやくバインドして表示できます。$Platform$ の機能には、フィルタリング、ソート、テンプレート、行選択、行のグループ化、行の固定、および列移動があります。$Platform$ データ テーブルは、ライブ ストリーミング データ用に最適化されており、無制限のデータセットサイズを行数または列数で処理することができます。
+{ProductName} Data Table / Data Grid は、表形式の {Platform} コンポーネントでコーディングや設定をほとんど行わずにデータをすばやくバインドして表示できます。{Platform} の機能には、フィルタリング、ソート、テンプレート、行選択、行のグループ化、行の固定、および列移動があります。{Platform} データ テーブルは、ライブ ストリーミング データ用に最適化されており、無制限のデータセットサイズを行数または列数で処理することができます。
 
-## $Platform$ Data Grid の例
+## {Platform} Data Grid の例
 
 このデモは、グリッドで利用可能な機能のいくつかを実装しています:
 フィルタリング、グループ化、列のピン固定/ピン固定解除、列の再配置、ソート、および集計。
@@ -18,7 +18,7 @@ $ProductName$ Data Table / Data Grid は、表形式の $Platform$ コンポー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="$Platform$ Data Grid の例"
+           alt="{Platform} Data Grid の例"
            github-src="grids/data-grid/overview">
 </code-view>
 
@@ -41,7 +41,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-$Platform$ Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
+{Platform} Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -54,10 +54,14 @@ npm install --save {PackageInputs}
 
 `Grid` を作成するには、以下のモジュールが必要です。
 
+<!-- Blazor -->
+
 ```razor
 IgbDataGridModule.Register(IgniteUIBlazor);
 ```
 <!-- end: Blazor -->
+
+<!-- React -->
 
 ```ts
 import { IgrDataGridModule } from 'igniteui-react-grids';
@@ -65,6 +69,10 @@ import { IgrDataGrid } from 'igniteui-react-grids';
 
 IgrDataGridModule.register();
 ```
+
+<!-- end: React -->
+
+<!-- WebComponents -->
 
 ```ts
 import { ModuleManager } from 'igniteui-webcomponents-core';
@@ -75,6 +83,8 @@ ModuleManager.register(
     IgcDataGridModule
 );
 ```
+
+<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -117,7 +127,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ### サンプル データ ソース
-$Platform$ グリッド モジュールがインポートされました。以下のステップはローカル データにバインドするグリッドの基本的な設定です。
+{Platform} グリッド モジュールがインポートされました。以下のステップはローカル データにバインドするグリッドの基本的な設定です。
 
 ```ts
     this.data = [{
@@ -170,6 +180,15 @@ $Platform$ グリッド モジュールがインポートされました。以�
 
 ```razor
 @code {
+
+    public List<SaleInfo> DataSource { get; set;}
+    Random Rand = new Random();
+
+    protected override void OnInitialized()
+    {
+        GenerateData();
+    }
+
     public void GenerateData()
     {
         string[] names = new string[] {
@@ -246,10 +265,10 @@ $Platform$ グリッド モジュールがインポートされました。以�
 
     public class SaleInfo
     {
-        public string Status { get; set; }
-        public string ProductName { get; set; }
-        public string CountryFlag { get; set; }
-        public string Country { get; set; }
+        public string? Status { get; set; }
+        public string? ProductName { get; set; }
+        public string? CountryFlag { get; set; }
+        public string? Country { get; set; }
         public DateTime OrderDate { get; set; }
         public double Profit { get; set; }
         public double ProductPrice { get; set; }
@@ -262,7 +281,7 @@ $Platform$ グリッド モジュールがインポートされました。以�
 ```
 
 ### 列の自動生成
-以下のコードは、$Platform$ データ グリッドを上記のローカルデータにバインドする方法を示しています。
+以下のコードは、{Platform} データ グリッドを上記のローカルデータにバインドする方法を示しています。
 
 ```tsx
 <IgrDataGrid
@@ -318,7 +337,7 @@ grid1.dataSource = data;
     DataSource="DataSource"
     AutoGenerateColumns="true"
     DefaultColumnMinWidth="100"
-    SummaryScope="DataSourceSummaryScope.Root"
+    SummaryScope="SummaryScope.Root"
     IsColumnOptionsEnabled="true"
     IsGroupCollapsable="true"
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowBottom"
@@ -415,7 +434,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 </iframe>
 <!-- end: Blazor -->
 
-### その他のリソース
+## その他のリソース
 
 - [アクセシビリティの遵守](data-grid-accessibility.md)
 - [セルのアクティブ化](data-grid-cell-activation.md)
@@ -438,3 +457,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 <!-- React -->
 <!-- - [行のページング](data-grid-row-paging.md) -->
 <!-- end: React -->
+
+## API メンバー
+
+ - `Grid`

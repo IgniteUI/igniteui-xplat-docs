@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+title: {Platform} Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to load geo-spatial data from shape files. View {ProductName} map demos!
+_keywords: {Platform} map, shapefiles, {ProductName}, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Binding Shape Files with Geo-spatial Data
+# {Platform} Binding Shape Files with Geo-spatial Data
 
-The $ProductName$ map component, the `ShapefileConverter` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
+The {ProductName} map component, the `ShapefileConverter` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-## $Platform$ Binding Shape Files with Geo-spatial Data Example
+## {Platform} Binding Shape Files with Geo-spatial Data Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="$Platform$ Binding Shape Files with Geo-spatial Data Example"
+           alt="{Platform} Binding Shape Files with Geo-spatial Data Example"
            github-src="maps/geo-map/binding-shp-polylines">
 </code-view>
 
@@ -257,3 +257,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
     }
 }
 ```
+
+ ## API Members
+
+ - `Fields`
+ - `GeographicPolylineSeries`
+ - `ImportCompleted`
+ - `ItemsSource`
+ - `Points`
+ - `ShapefileConverter`

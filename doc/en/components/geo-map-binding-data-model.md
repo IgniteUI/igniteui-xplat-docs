@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View $ProductName$ map demos!
-_keywords: $Platform$ map, binding data models, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap', 'GeographicScatterAreaSeries', 'GeographicHighDensityScatterSeries', 'GeographicProportionalSymbolSeries', GeographicScatterAreaSeries', GeographicContourLineSeries', 'GeographicShapeSeries', 'GeographicPolylineSeries']
+title: {Platform} Map | Data Visualization Tools | Binding Geographic Data Models | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. View {ProductName} map demos!
+_keywords: {Platform} map, binding data models, {ProductName}, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'GeographicScatterAreaSeries', 'GeographicHighDensityScatterSeries', 'GeographicProportionalSymbolSeries', GeographicScatterAreaSeries', GeographicContourLineSeries', 'GeographicShapeSeries', 'GeographicPolylineSeries', 'Series']
 namespace: Infragistics.Controls.Maps
 ---
-# $Platform$ Binding Geographic Data Models
+# {Platform} Binding Geographic Data Models
 
-The $ProductName$ map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.
+The {ProductName} map component is designed to display geo-spatial data from shape files and/or geographic locations from data models on geographic imagery maps. The `ItemsSource` property of geographic series is used for the purpose of binding to data models. This property can be bound an array of custom objects.
 
-## $Platform$ Binding Geographic Data Models Example
+## {Platform} Binding Geographic Data Models Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="$Platform$ Binding Geographic Data Models Example"
+           alt="{Platform} Binding Geographic Data Models Example"
            github-src="maps/geo-map/binding-data-model">
 </code-view>
 
@@ -404,3 +404,18 @@ createPolylineSeries(flight: any)
     }
 }
 ```
+
+ ## API Members
+
+ - `ColorMemberPath`
+ - `GeographicContourLineSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicPolylineSeries`
+ - `GeographicProportionalSymbolSeries`
+ - `GeographicScatterAreaSeries`
+ - `GeographicSymbolSeries`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`
+ - `RadiusMemberPath`
+ - `ValueMemberPath`

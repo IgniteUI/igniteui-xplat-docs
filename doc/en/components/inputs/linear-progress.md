@@ -1,19 +1,19 @@
 ---
-title: $Platform$ Linear Progress | Linear Progress | Infragistics
+title: {Platform} Linear Progress | Linear Progress | Infragistics
 _description: Display a progress bar and customize its appearance with endless color and striping options with Linear Progress Indicator component.
-_keywords: $Platform$ Linear Progress, $ProductName$, Infragistics
+_keywords: {Platform} Linear Progress, {ProductName}, Infragistics
 mentionedTypes: ['LinearProgress']
 ---
 
-# $Platform$ Linear Progress Overview
-The $ProductName$ Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
+# {Platform} Linear Progress Overview
+The {ProductName} Linear Progress Indicator component provides a visual indicator of an application’s process as it changes. The `LinearProgress` indicator updates its appearance as its state changes. Also, you can style this component with a choice of colors in stripes or solids.
 
-## $Platform$ Linear Progress Example
+## {Platform} Linear Progress Example
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="$Platform$  Linear Progress Example"
+           alt="{Platform}  Linear Progress Example"
            github-src="inputs/linear-progress-indicator/simple">
 </code-view>
 
@@ -22,26 +22,44 @@ The $ProductName$ Linear Progress Indicator component provides a visual indicato
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
+Before using the `LinearProgress`, you need to register it as follows:
+
+```ts
+import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+defineComponents(IgcLinearProgressComponent);
+```
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `LinearProgress`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrLinearProgressModule, IgrLinearProgress } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrLinearProgressModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
 Before using the `LinearProgress`, you need to register it as follows:
 
 ```razor
 IgbLinearProgressModule.Register(IgniteUIBlazor);
 ```
-
-```ts
-import {defineComponents, IgcLinearProgressComponent} from 'igniteui-webcomponents';
-
-defineComponents(IgcLinearProgressComponent);
-```
-
-<!-- Blazor -->
 You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
@@ -51,6 +69,10 @@ You will also need to link an additional CSS file to apply the styling to the `C
 
 
 The simplest way to start using the `LinearProgress` is as follows:
+
+```tsx
+<IgrLinearProgress value="100"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100"></igc-linear-progress>
@@ -63,6 +85,10 @@ The simplest way to start using the `LinearProgress` is as follows:
 ### Progress Types
 
 You can set the type of your indicator, using  the `variant` attribute. There are five types of linear progress indicators - **primary** (default), **error**, **success**, **info**, and **warning**.
+
+```tsx
+<IgrLinearProgress value="100" variant="success"></IgrLinearProgress>
+```
 
 ```html
 <igc-linear-progress value="100" variant="success"></igc-linear-progress>
@@ -79,7 +105,7 @@ You can make the indicator striped, using the `striped` property:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="$Platform$  Linear Progress Striped Example"
+           alt="{Platform}  Linear Progress Striped Example"
            github-src="inputs/linear-progress-indicator/types">
 </code-view>
 
@@ -93,6 +119,10 @@ If you want to track a process that is not determined precisely, you can set the
 
 The `animationDuration` property is used to specify how long the animation cycle should take. It takes as value a number which represents the animation duration in milliseconds.
 
+```tsx
+<IgrLinearProgress animationDuration="5000" indeterminate="true"></IgrLinearProgress>
+```
+
 ```html
 <igc-linear-progress animation-duration="5000" indeterminate></igc-linear-progress>
 ```
@@ -103,7 +133,7 @@ The `animationDuration` property is used to specify how long the animation cycle
 
 ### Text Properties
 
-You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**. 
+You can align the default value, using the `labelAlign` property. Permitted values are **top**, **bottom**, **top-start**, **top-end**, **bottom-start** and **bottom-end**.
 
 To hide the default label of the progress indicator, use the `hideLabel` attribute.
 
@@ -114,7 +144,7 @@ The following sample demonstrates the above configuration:
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="$Platform$ Linear Progress Text Example"
+           alt="{Platform} Linear Progress Text Example"
            github-src="inputs/linear-progress-indicator/striped">
 </code-view>
 
@@ -124,10 +154,10 @@ The following sample demonstrates the above configuration:
 
 You can dynamically change the value of the progress indicator by using external controls like buttons. To achieve this, we can bind the value to a class property:
 
-<code-view style="height:200px" 
+<code-view style="height:200px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="$Platform$ Linear Progress Dynamic Example"
+           alt="{Platform} Linear Progress Dynamic Example"
            github-src="inputs/linear-progress-indicator/dynamic">
 </code-view>
 
@@ -135,12 +165,12 @@ You can dynamically change the value of the progress indicator by using external
 
 ## Styling
 
-The Linear Procress Indicator component exposes CSS parts for almost all of its inner elements.
+The Linear Progress Indicator component exposes CSS parts for almost all of its inner elements.
 
 <code-view style="height: 80px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="$Platform$ Linear Progress Styling"
+           alt="{Platform} Linear Progress Styling"
            github-src="inputs/linear-progress-indicator/styling">
 </code-view>
 
@@ -196,3 +226,14 @@ Additional components and/or directives that were used:
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+## API Members
+
+ - `Button`
+ - `Calendar`
+ - `LinearProgress`

@@ -238,7 +238,8 @@
   { "originalName":"IExternalDataSeriesAdapter",
     "names":[{"platform":"Angular","fileName":"IExternalDataSeriesAdapter.ts","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
+    { "names":[{"platform":"Angular","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"},
+    { "names":[{"platform":"Angular","mappedType":"IDataSource","mappedName":"getLocalDataSource"}],"originalName":"GetLocalDataSource"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"SimpleFinancialPriceSeriesRule",
     "names":[{"platform":"Angular","fileName":"SimpleFinancialPriceSeriesRule.ts","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[

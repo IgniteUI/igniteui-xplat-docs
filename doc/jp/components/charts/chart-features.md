@@ -1,24 +1,24 @@
 ---
-title: $Platform$ チャート機能 | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ チャート機能
-_keywords: $Platform$ Charts, Features, Infragistics, $Platform$ チャート, 機能, インフラジスティックス
+title: {Platform} チャート機能 | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの {Platform} チャート機能
+_keywords: {Platform} Charts, Features, Infragistics, {Platform} チャート, 機能, インフラジスティックス
 mentionedTypes: []
 _language: ja
 ---
-# $Platform$ チャート機能
+# {Platform} チャート機能
 
-$ProductName$ チャートを使用すると、さまざまな機能を表示して、チャートで伝えられる完全なデータ ストーリーを表現できます。これらの各機能は完全にカスタマイズ可能であり、デザインのニーズにに合わせてスタイルを設定できるため、完全に制御できます。強調表示や注釈などの操作により、重要なデータの詳細を呼び出すことができ、チャート内のより深いデータ分析が可能になります。
+{ProductName} チャートを使用すると、さまざまな機能を表示して、チャートで伝えられる完全なデータ ストーリーを表現できます。これらの各機能は完全にカスタマイズ可能であり、デザインのニーズにに合わせてスタイルを設定できるため、完全に制御できます。強調表示や注釈などの操作により、重要なデータの詳細を呼び出すことができ、チャート内のより深いデータ分析が可能になります。
 
-$Platform$ チャートは、次のチャート機能を提供します。
+{Platform} チャートは、次のチャート機能を提供します。
 
 ### 軸
 
-異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。$Platform$ チャートのカスタマイズについての詳細には、[軸グリッド線](features/chart-axis-gridlines.md)、[軸レイアウト](features/chart-axis-layouts.md)、および[軸オプション](features/chart-axis-options.md)のトピックをご覧ください。
+異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。{Platform} チャートのカスタマイズについての詳細には、[軸グリッド線](features/chart-axis-gridlines.md)、[軸レイアウト](features/chart-axis-layouts.md)、および[軸オプション](features/chart-axis-options.md)のトピックをご覧ください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="$Platform$ 軸交差軸の例"
+           alt="{Platform} 軸交差軸の例"
            github-src="charts/data-chart/axis-crossing">
 </code-view>
 
@@ -31,7 +31,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="$Platform$ 注釈の例"
+           alt="{Platform} 注釈の例"
            github-src="charts/category-chart/line-chart-with-annotations">
 </code-view>
 
@@ -44,7 +44,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="$Platform$ 構成オプションの例"
+           alt="{Platform} 構成オプションの例"
            github-src="charts/category-chart/line-chart-with-animations">
 </code-view>
 
@@ -57,8 +57,8 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="$Platform$ 強調表示の例"
-           github-src="charts/category-chart/category-chart-column-chart-with-highlighting">
+           alt="{Platform} 強調表示の例"
+           github-src="charts/category-chart/column-chart-with-highlighting">
 </code-view>
 
 <div class="divider--half"></div>
@@ -70,7 +70,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="$Platform$ 構成オプションの例"
+           alt="{Platform} 構成オプションの例"
            github-src="charts/category-chart/marker-options">
 </code-view>
 
@@ -83,7 +83,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$Platform$ ナビゲーションの例"
+           alt="{Platform} ナビゲーションの例"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
@@ -96,7 +96,7 @@ $Platform$ チャートは、次のチャート機能を提供します。
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="$Platform$ 値オーバーレイの例"
+           alt="{Platform} 値オーバーレイの例"
            github-src="charts/data-chart/series-value-overlay">
 </code-view>
 
@@ -104,13 +104,13 @@ $Platform$ チャートは、次のチャート機能を提供します。
 
 ### パフォーマンス
 
-$Platform$ チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。この機能の詳細については、[チャート パフォーマンス](features/chart-performance.md)トピックを参照してください。
+{Platform} チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。この機能の詳細については、[チャート パフォーマンス](features/chart-performance.md)トピックを参照してください。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
            github-src="charts/category-chart/high-volume"
-           alt="$Platform$ チャート パフォーマンスの例" >
+           alt="{Platform} チャート パフォーマンスの例" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -122,7 +122,7 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="$Platform$ ツールチップ タイプの例"
+           alt="{Platform} ツールチップ タイプの例"
            github-src="charts/category-chart/column-chart-with-tooltips">
 </code-view>
 
@@ -130,13 +130,17 @@ $Platform$ チャートは、数百万のデータ ポイントを描画し、�
 
 ### トレンドライン
 
-トレンドラインを使用して、トレンドを特定したり、データ内のパターンを見つけたりします。$Platform$ チャートでは、CubicFit や LinearFit など、さまざまなトレンドラインがサポートされています。この機能の詳細については、[チャート トレンドライン](features/chart-trendlines.md)トピックを参照してください。
+トレンドラインを使用して、トレンドを特定したり、データ内のパターンを見つけたりします。{Platform} チャートでは、CubicFit や LinearFit など、さまざまなトレンドラインがサポートされています。この機能の詳細については、[チャート トレンドライン](features/chart-trendlines.md)トピックを参照してください。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="$Platform$ トレンドラインの例"
+           alt="{Platform} トレンドラインの例"
            github-src="charts/financial-chart/trendlines">
 </code-view>
 
 <div class="divider--half"></div>
+
+## API メンバー
+
+ - `Grid`

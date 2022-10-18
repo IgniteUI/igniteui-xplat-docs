@@ -1,21 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | シェイプ スタイリング | 条件付き書式 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップのシェイプ シリーズにカスタム スタイルを適用する方法について説明します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling, $Platform$ マップ, カスタム スタイル設定, インフラジスティックス, 条件付き書式, シェイプ スタイリング
-mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries']
+title: {Platform} マップ | データ可視化ツール | シェイプ スタイリング | 条件付き書式 | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップのシェイプ シリーズにカスタム スタイルを適用する方法について説明します。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, custom styling, {ProductName}, Infragistics, conditional formatting, shape styling, {Platform} マップ, カスタム スタイル設定, インフラジスティックス, 条件付き書式, シェイプ スタイリング
+mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries', 'Series']
 _language: ja
 ---
-# $Platform$ 地理シェイプ シリーズのスタイル設定
+# {Platform} 地理シェイプ シリーズのスタイル設定
 
-このトピックでは、$Platform$ `XamGeographicMap` で `GeographicShapeSeries` にカスタム スタイリングを適用する方法を説明します。
+このトピックでは、{Platform} `XamGeographicMap` で `GeographicShapeSeries` にカスタム スタイリングを適用する方法を説明します。
 
-## $Platform$ 地理シェイプ シリーズのスタイル設定の例
+## {Platform} 地理シェイプ シリーズのスタイル設定の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling"
-           alt="$Platform$ 地理シェイプ シリーズのスタイル設定の例"
+           alt="{Platform} 地理シェイプ シリーズのスタイル設定の例"
            github-src="maps/geo-map/map-shape-styling">
 </code-view>
 
@@ -404,3 +404,8 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
     args.shapeStrokeThickness = shapeStyle.strokeThickness;
 }
 ```
+
+## API メンバー
+
+ - `GeographicShapeSeries`
+ - `XamGeographicMap`

@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Excel ライブラリ | ワークシートの使用 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。$ProductName$ Excel からアプリケーションへデータを簡単に転送できます。
-_keywords: Excel library, worksheet, $ProductName$, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
+title: {Platform} Excel ライブラリ | ワークシートの使用 | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。{ProductName} Excel からアプリケーションへデータを簡単に転送できます。
+_keywords: Excel library, worksheet, {ProductName}, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 _language: ja
 ---
-# $Platform$ ワークシートの使用
+# {Platform} ワークシートの使用
 
-$Platform$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
+{Platform} Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
 
-## $Platform$ ワークシートの使用の例
+## {Platform} ワークシートの使用の例
 
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="$Platform$ ワークシートの使用の例"
+           alt="{Platform} ワークシートの使用の例"
            github-src="excel/excel-library/operations-on-worksheets">
 </code-view>
 
@@ -312,3 +312,21 @@ var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
 var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Documents.Excel.ConditionalFormatting.FormatConditionAboveBelow.AboveAverage);
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
+
+## API メンバー
+
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DisplayOptions`
+ - `FilterSettings`
+ - `ShowGridlines`
+ - `ShowRowAndColumnHeaders`
+ - `SortSettings`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetFilterSettings`
+ - `WorksheetSortSettings`
+ - `Worksheet`

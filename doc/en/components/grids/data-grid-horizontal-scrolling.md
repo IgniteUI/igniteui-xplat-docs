@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Data Grid | Horizontal Scrolling | Infragistics
-_description: Use Infragistics' $Platform$ grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out $ProductName$ table demos!
-_keywords: $Platform$ Table, Data Grid, column, horizontal, scrolling, $ProductName$, Infragistics
+title: {Platform} Data Grid | Horizontal Scrolling | Infragistics
+_description: Use Infragistics' {Platform} grid component's horizontal scrolling feature to scroll seamlessly through the columns. Check out {ProductName} table demos!
+_keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 ---
 
-# $Platform$ Horizontal Scrolling
+# {Platform} Horizontal Scrolling
 
-The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the $Platform$ data grid.
+The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the {Platform} data grid.
 
-## $Platform$ Horizontal Scrolling Example
+## {Platform} Horizontal Scrolling Example
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
-           alt="$Platform$ Horizontal Scrolling Example"
+           alt="{Platform} Horizontal Scrolling Example"
            github-src="grids/data-grid/column-scrolling">
 </code-view>
 
@@ -95,3 +95,7 @@ The $ProductName$ Data Table / Data Grid supports Horizontal Scrolling is enable
     <IgbNumericColumn Field="Sales" Width="300" />
 </IgbDataGrid>
 ```
+
+ ## API Members
+
+ - `Grid`

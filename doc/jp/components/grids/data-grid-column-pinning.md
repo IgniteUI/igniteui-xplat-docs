@@ -1,25 +1,25 @@
 ---
-title: $Platform$ データ グリッド | 列ピン固定 | インフラジスティックス
-_description: インフラジスティックスの $ProductName$ グリッド コンポーネントは列のピン固定をサポートし、列の位置を柔軟に選択できます。詳細については、$ProductName$ テーブル サンプルを参照してください。
-_keywords: $Platform$ Table, Data Grid, column pinning, $ProductName$, Infragistics, $Platform$ テーブル, データ グリッド, 列ピン固定, インフラジスティックス
+title: {Platform} データ グリッド | 列ピン固定 | インフラジスティックス
+_description: インフラジスティックスの {ProductName} グリッド コンポーネントは列のピン固定をサポートし、列の位置を柔軟に選択できます。詳細については、{ProductName} テーブル サンプルを参照してください。
+_keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列ピン固定, インフラジスティックス
 mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
 
-# $Platform$ Grid 列ピン固定の概要
+# {Platform} Grid 列ピン固定の概要
 
-$ProductName$ Data Grid は列をピン固定する機能をサポートし、エンド ユーザーが特定の列順序で列をロックできます。
+{ProductName} Data Grid は列をピン固定する機能をサポートし、エンド ユーザーが特定の列順序で列をロックできます。
 
 単一または複数の列をデータ グリッドの左側または右側にピン固定できます。その他、`PinColumn` 関数を介して列のピン固定状態を変更できます。
 
-## $Platform$ Grid 列ピン固定の例
+## {Platform} Grid 列ピン固定の例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="$Platform$ Grid 列ピン固定の例"
+           alt="{Platform} Grid 列ピン固定の例"
            github-src="grids/data-grid/column-pinning-picker">
 </code-view>
 
@@ -35,7 +35,7 @@ $ProductName$ Data Grid は列をピン固定する機能をサポートし、�
 
 ピン固定された列に近接するピン固定されていない列は、水平スクロールを維持します。
 
-`PinColumn` 関数に 2 つのパラメーターがあります。最初のパラメーターはピン固定する列で、2 番目は `PinnedPositions` 列挙体設定です。
+`PinColumn` 関数に 2 つのパラメーターがあります。最初のパラメーターはピン固定する列で、2 番目は `PinnedPositions` 列挙型設定です。
 
 
 ## コード スニペット
@@ -261,7 +261,7 @@ onButtonUnPin () {
 
 ## ツールバーの列ピン固定 UI
 
-列ピン固定 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。 このため、ツールバーの `columnPinning` プロパティを true に設定します。ツールバーは `Button` を表示し、クリックすると列ピン固定 UI を表示します。このボタンは、左側にピン固定された列の合計も表示します。ツールバーが作成されていない場合、`columnPinning` プロパティを有効にしても効果はなく、ボタンを非表示にします。
+列ピン固定 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。このため、ツールバーの `columnPinning` プロパティを true に設定します。ツールバーは `Button` を表示し、クリックすると列ピン固定 UI を表示します。このボタンは、左側にピン固定された列の合計も表示します。ツールバーが作成されていない場合、`columnPinning` プロパティを有効にしても効果はなく、ボタンを非表示にします。
 
 `DataGridToolbar` は、`toolbarTitle` プロパティを使用してツールバーにタイトルを追加、`columnPinningText` プロパティを設定して `Button` にテキストを配置、`columnPinningTitle` を設定して、タイトル ヘッダーを列非表示 UI に追加などの追加プロパティを提供します。
 

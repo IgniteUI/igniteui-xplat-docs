@@ -42,6 +42,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"DragPan"}],"originalName":"DragPan"},
     { "names":[{"platform":"WebComponents","mappedType":"InteractionState","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
+  { "originalName":"SvgIconRegistry",
+    "names":[{"platform":"WebComponents","fileName":"SvgIconRegistry.ts","mappedName":"SvgIconRegistry"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"Dictionary","mappedName":"_collections"}],"originalName":"_collections"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"addSvgPathString"}],"originalName":"AddSvgPathString"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getSvgPathString"}],"originalName":"GetSvgPathString"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"FormatSpecifier",
     "names":[{"platform":"WebComponents","fileName":"igc-format-specifier.ts","dynamicModuleName":"igc-format-specifier-dynamic-module.ts","moduleName":"igc-format-specifier-module.ts","mappedName":"IgcFormatSpecifier"}],
     "members":[
@@ -366,4 +373,36 @@
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Comfortable"}],"originalName":"Comfortable"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Cosy"}],"originalName":"Cosy"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"Compact"}],"originalName":"Compact"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
+  { "originalName":"IToolbarTarget",
+    "names":[{"platform":"WebComponents","fileName":"IToolbarTarget.ts","mappedName":"IToolbarTarget"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionInfo[]","mappedName":"getDesiredToolbarActions"}],"originalName":"GetDesiredToolbarActions"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"addCommandAvailabilityListener"}],"originalName":"AddCommandAvailabilityListener"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"removeCommandAvailabilityListener"}],"originalName":"RemoveCommandAvailabilityListener"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"onToolCommandExecuting"}],"originalName":"OnToolCommandExecuting"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ICommandAvailabilityListener",
+    "names":[{"platform":"WebComponents","fileName":"ICommandAvailabilityListener.ts","mappedName":"ICommandAvailabilityListener"}],"members":[],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ToolActionType","isEnum":true,
+    "names":[{"platform":"WebComponents","fileName":"ToolActionType.ts","mappedName":"ToolActionType"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"Unknown"}],"originalName":"Unknown"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"GroupHeader"}],"originalName":"GroupHeader"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"Checkbox"}],"originalName":"Checkbox"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"IconButton"}],"originalName":"IconButton"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"NumberInput"}],"originalName":"NumberInput"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"Separator"}],"originalName":"Separator"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolActionType","mappedName":"IconMenu"}],"originalName":"IconMenu"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ToolCommand",
+    "names":[{"platform":"WebComponents","fileName":"ToolCommand.ts","mappedName":"ToolCommand"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"WebComponents","mappedType":"ToolCommandArgument[]","mappedName":"argumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+  { "originalName":"ToolCommandArgument",
+    "names":[{"platform":"WebComponents","fileName":"ToolCommandArgument.ts","mappedName":"ToolCommandArgument"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"argumentName"}],"originalName":"ArgumentName"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"}]}

@@ -26,7 +26,8 @@
     { "names":[{"platform":"React","mappedType":"IgrSeries","mappedName":"targetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"React","fileName":"igr-value-overlay.ts","dynamicModuleName":"igr-value-overlay-dynamic-module.ts","moduleName":"igr-value-overlay-module.ts","mappedName":"IgrValueOverlay"}],
     "members":[
@@ -161,6 +162,8 @@
     { "names":[{"platform":"React","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"React","mappedType":"IgrSeries","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"React","fileName":"igr-callout-series-selecting-event-args.ts","mappedName":"IgrCalloutSeriesSelectingEventArgs"}],
@@ -331,7 +334,8 @@
     "names":[{"platform":"React","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
     { 
     "names":[{"platform":"React","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"React","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[

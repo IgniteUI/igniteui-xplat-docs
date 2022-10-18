@@ -1,37 +1,58 @@
 ---
-title: $Platform$ Calendar | Calendar | Infragistics
-_description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
-_keywords: $Platform$ Calendar, $ProductName$, Infragistics
+title: {Platform} Calendar | Calendar | Infragistics
+_description: Create an intuitive calendar for applications to display date information, and users to input date information with {ProductName} Calendar component.
+_keywords: {Platform} Calendar, {ProductName}, Infragistics
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 ---
 
-# $Platform$ Calendar Overview
+# {Platform} Calendar Overview
 
-The $ProductName$ Calendar component provides an easy and intuitive way to display date information.
+The {ProductName} Calendar component provides an easy and intuitive way to display date information.
 
 
-## $Platform$ Calendar Example
+## {Platform} Calendar Example
 
-This sample demonstrates how to create  `Calendar` with option to select a single date.
+This sample demonstrates how to create `Calendar` with option to select a single date.
 
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="$Platform$ Calendar Example"
+           alt="{Platform} Calendar Example"
            github-src="scheduling/calendar/overview">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Calendar`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCalendarModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Calendar`, you need to register it as follows:
 
@@ -65,6 +86,10 @@ The simplest way to start using the `Calendar` is as follows:
 <IgbCalendar />
 ```
 
+```tsx
+<IgrCalendar />
+```
+
 ### Selection Modes
 
 Users can choose from three different selection modes - single selection, multiple selection or range selection. By default, the `Calendar` is using single selection mode but you can change it by setting the `Selection` property as shown in this example.
@@ -77,10 +102,14 @@ Users can choose from three different selection modes - single selection, multip
 <IgbCalendar Selection="@CalendarBaseSelection.Multiple" />
 ```
 
+```tsx
+<IgrCalendar selection="multiple" />
+```
+
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="$Platform$ Calendar Multiple Selection Example"
+           alt="{Platform} Calendar Multiple Selection Example"
            github-src="scheduling/calendar/multiple-selection ">
 </code-view>
 
@@ -97,10 +126,14 @@ Following the same approach, we can switch `Selection` to range mode:
 <IgbCalendar Selection="@CalendarBaseSelection.Range" />
 ```
 
+```tsx
+<IgrCalendar selection="range" />
+```
+
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="$Platform$ Calendar Range Selection Example"
+           alt="{Platform} Calendar Range Selection Example"
            github-src="scheduling/calendar/range-selection">
 </code-view>
 
@@ -120,7 +153,7 @@ By default, the Calendar component renders a header area which contains informat
 > [!NOTE]
 > Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `HeaderOrientation` property corresponds to the `header-orientation` attribute.
 
-The $ProductName$ Calendar component exposes a `title` slot which allows you to customize the title of the header.
+The {ProductName} Calendar component exposes a `title` slot which allows you to customize the title of the header.
 
 ```html
 <igc-calendar selection="range" header-orientation="vertical">
@@ -133,7 +166,7 @@ The following sample demonstrates the above configuration:
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="$Platform$ Calendar Header Example"
+           alt="{Platform} Calendar Header Example"
            github-src="scheduling/calendar/header">
 </code-view>
 
@@ -185,7 +218,7 @@ If everything went well, we should now have a Calendar with customized display, 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="$Platform$ Calendar Formatting Example"
+           alt="{Platform} Calendar Formatting Example"
            github-src="scheduling/calendar/formatting">
 </code-view>
 
@@ -222,7 +255,7 @@ These configurations should have the following result:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="$Platform$ Calendar Disabled Dates Example"
+           alt="{Platform} Calendar Disabled Dates Example"
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
@@ -251,7 +284,7 @@ The following demo illustrates a Calendar with a vacation request option:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="$Platform$ Calendar Special Dates Example"
+           alt="{Platform} Calendar Special Dates Example"
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
@@ -269,12 +302,16 @@ You can use the `ShowWeekNumbers` property to show the week numbers of the Calen
 <IgbCalendar ShowWeekNumbers="true" />
 ```
 
+```tsx
+<IgrCalendar showWeekNumbers={true} />
+```
+
 The following demo illustrates a Calendar with enabled week numbers:
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="$Platform$ Calendar Week Numbers Example"
+           alt="{Platform} Calendar Week Numbers Example"
            github-src="scheduling/calendar/week-numbers">
 </code-view>
 
@@ -292,12 +329,16 @@ The Calendar displays leading and trailing dates from the previous and the next 
 <IgbCalendar VisibleMonths="2" HideOutsideDays="true" />
 ```
 
+```tsx
+<IgrCalendar visibleMonths={2} hideOutsideDays={true} />
+```
+
 The following sample demonstrates the multiple months configuration:
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="$Platform$ Calendar Multiple Months Example"
+           alt="{Platform} Calendar Multiple Months Example"
            github-src="scheduling/calendar/multiple-months">
 </code-view>
 
@@ -308,7 +349,7 @@ You could control the size and spacing of the Calendar inner elements by changin
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="$Platform$ Calendar Size Example"
+           alt="{Platform} Calendar Size Example"
            github-src="scheduling/calendar/size">
 </code-view>
 
@@ -316,9 +357,13 @@ You could control the size and spacing of the Calendar inner elements by changin
 
 The Calendar component emits the `Change` event when the selected dates are changed by the end user. You can subscribe to the event like this:
 
+<!-- WebComponents -->
+
 ```ts
 this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```
+
+<!-- end: WebComponents -->
 
 ```razor
 <IgbCalendar Change="@OnCalendarChange" />
@@ -328,6 +373,14 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
     {
 
     }
+}
+```
+
+```tsx
+<IgbCalendar change={this.onCalendarChange} />
+
+public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs){
+
 }
 ```
 
@@ -448,7 +501,7 @@ The following sample demonstrates the above CSS configuration:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="$Platform$ Calendar Styling Example"
+           alt="{Platform} Calendar Styling Example"
            github-src="scheduling/calendar/styling">
 </code-view>
 
@@ -471,9 +524,29 @@ The following sample demonstrates the above CSS configuration:
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `ActiveDate`
+ - `ActiveView`
+ - `After`
+ - `Before`
+ - `Between`
+ - `Calendar`
+ - `Change`
+ - `DateRangeDescriptor`
+ - `DateRangeType`
+ - `DateRange`

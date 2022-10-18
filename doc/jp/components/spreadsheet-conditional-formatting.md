@@ -1,21 +1,21 @@
 ---
-title: $Platform$ スプレッドシート | 条件付き書式 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ スプレッドシート コントロールを使用して、ワークシートのセルに条件付き書式を設定します。$ProductName$ スプレッドシートのサンプルを是非お試しください!
-_keywords: Spreadsheet, conditional formatting, $ProductName$, Infragistics, Worksheet, スプレッドシート, 条件付き書式, インフラジスティックス, ワークシート
+title: {Platform} スプレッドシート | 条件付き書式 | インフラジスティックス
+_description: インフラジスティックスの {Platform} スプレッドシート コントロールを使用して、ワークシートのセルに条件付き書式を設定します。{ProductName} スプレッドシートのサンプルを是非お試しください!
+_keywords: Spreadsheet, conditional formatting, {ProductName}, Infragistics, Worksheet, スプレッドシート, 条件付き書式, インフラジスティックス, ワークシート
 mentionedTypes: ['Spreadsheet', 'ConditionalFormatCollection', 'WorksheetCell', 'Worksheet', 'IWorksheetCellFormat']
 _language: ja
 ---
-# $Platform$ Spreadsheet の条件付き書式設定
+# {Platform} Spreadsheet の条件付き書式設定
 
-$Platform$ Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分を強調表示できます。
+{Platform} Spreadsheet コンポーネントは、ワークシートのセルに条件付き書式を設定できます。これにより、条件に基づいてデータのさまざまな部分を強調表示できます。
 
-## $Platform$ Spreadsheet の条件付き書式設定の例
+## {Platform} Spreadsheet の条件付き書式設定の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting"
-           alt="$Platform$ Spreadsheet の条件付き書式設定の例"
+           alt="{Platform} Spreadsheet の条件付き書式設定の例"
            github-src="excel/spreadsheet/conditional-formatting">
 </code-view>
 
@@ -33,7 +33,7 @@ $Platform$ Spreadsheet コンポーネントは、ワークシートのセルに
 
 既存の Workbook を Excel から読み込む際に、ワークブックが読み込まれた場合も書式設定は保持されます。ワークブックを Excel ファイルに保存する場合も保持されます。
 
-以下は、$Platform$ `Spreadsheet` コントロールでサポートされている条件付き書式の一覧です。
+以下は、{Platform} `Spreadsheet` コントロールでサポートされている条件付き書式の一覧です。
 
 - `AverageConditionalFormat`: `AddAverageCondition` メソッドを使用して追加されたこの条件付きフォーマットは、セルの値が関連する範囲の平均または標準偏差より上か下かに基づいて、ワークシートセルの視覚属性を制御するプロパティを公開します。
 - `BlanksConditionalFormat`: `AddBlanksCondition` メソッドを使用して追加されたこの条件付き書式では、セルの値が設定されていないかどうかに基づいてワークシートセルの表示属性を制御するプロパティを公開します。
@@ -162,3 +162,42 @@ textFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(red);
 let uniqueFormat = sheet.conditionalFormats().addUniqueCondition("O1:O10");
 uniqueFormat.cellFormat.font.colorInfo = new WorkbookColorInfo(blue);
 ```
+
+## API メンバー
+
+ - `AddAverageCondition`
+ - `AddBlanksCondition`
+ - `AddColorScaleCondition`
+ - `AddDataBarCondition`
+ - `AddDateTimeCondition`
+ - `AddDuplicateCondition`
+ - `AddErrorsCondition`
+ - `AddFormulaCondition`
+ - `AddIconSetCondition`
+ - `AddNoBlanksCondition`
+ - `AddNoErrorsCondition`
+ - `AddOperatorCondition`
+ - `AddRankCondition`
+ - `AddTextCondition`
+ - `AddUniqueCondition`
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ColorScaleConditionalFormat`:
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DataBarConditionalFormat`:
+ - `DateTimeConditionalFormat`:
+ - `DuplicateConditionalFormat`:
+ - `ErrorsConditionalFormat`:
+ - `FormatConditionTextOperator`
+ - `FormatString`
+ - `FormulaConditionalFormat`:
+ - `IconSetConditionalFormat`
+ - `IconSetConditionalFormat`:
+ - `NoBlanksConditionalFormat`:
+ - `NoErrorsConditionalFormat`:
+ - `OperatorConditionalFormat`:
+ - `RankConditionalFormat`:
+ - `Spreadsheet`
+ - `TextOperatorConditionalFormat`:
+ - `UniqueConditionalFormat`:

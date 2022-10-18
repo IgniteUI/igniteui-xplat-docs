@@ -1,38 +1,49 @@
 ---
-title: $Platform$ Input | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for $Platform$ を使用してアプリケーションを改善します。
-_keywords: $Platform$ input, $ProductName$, Infragistics, $Platform$ 入力, インフラジスティックス
-mentionedTypes: ['Input']
+title: {Platform} Input | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
+mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
 ---
-# $Platform$ Input の概要
+# {Platform} Input の概要
 
-$ProductName$ Input は、ユーザーがデータを入力できるコンポーネントです。
+{ProductName} Input は、ユーザーがデータを入力できるコンポーネントです。
 
-## $Platform$ Input の例
+## {Platform} Input の例
 
 <div class="divider--half"></div>
+
+<!-- React, WebComponents -->
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="$Platform$ Input の例"
+           alt="{Platform} Input の例"
            github-src="inputs/input/overview">
+</code-view>
+
+<!-- end:React, WebComponents -->
+
+<!-- Blazor -->
+
+<code-view style="height: 120px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
+           alt="{Platform} Input の例"
+           github-src="inputs/input/binding">
 </code-view>
 
 ## 依存関係
 
-<!-- Blazor -->
-
 Input コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
+
+<!-- Blazor -->
 
 ```razor
 IgbInputModule.Register(IgniteUIBlazor);
 ```
 
-<!-- Blazor -->
-
-また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **BlazorServer** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -40,23 +51,40 @@ IgbInputModule.Register(IgniteUIBlazor);
 
 <!-- end: Blazor -->
 
-<!-- end: Blazor -->
-
-<div class="divider--half"></div>
-
 <!-- WebComponents -->
 
 開始するには、typescript ファイルに `Input` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Input` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrInputModule, IgrInput } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrInputModule.register();
+```
+<!-- end: React -->
+
 `Input` コンポーネントをインポートしたら、使用を開始する準備ができているので、最初の Input を追加しましょう。
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
+```
 
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
@@ -73,7 +101,7 @@ defineComponents(IgcInputComponent);
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="$Platform$ Input Prefix & Suffix の例"
+           alt="{Platform} Input Prefix & Suffix の例"
            github-src="inputs/input/prefix-suffix">
 </code-view>
 
@@ -84,7 +112,7 @@ defineComponents(IgcInputComponent);
 <code-view style="height: 140px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="$Platform$ Input ヘルパー テキストの例"
+           alt="{Platform} Input ヘルパー テキストの例"
            github-src="inputs/input/helper-text">
 </code-view>
 
@@ -95,7 +123,7 @@ defineComponents(IgcInputComponent);
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="$Platform$ Input サイズ設定の例"
+           alt="{Platform} Input サイズ設定の例"
            github-src="inputs/input/size">
 </code-view>
 
@@ -103,6 +131,7 @@ defineComponents(IgcInputComponent);
 - `required` - 入力を必須としてマークするために使用されます。
 - `disabled` - 入力を無効にするために使用されます。
 - `readonly` - 入力を読み取り専用としてマークするために使用されます。
+
 <!-- WebComponents -->
 
 属性の完全なリストは、`Input` API にあります。
@@ -143,7 +172,7 @@ igc-input::part(suffix){
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="$Platform$ Input のスタイル設定"
+           alt="{Platform} Input のスタイル設定"
            github-src="inputs/input/styling">
 </code-view>
 
@@ -167,7 +196,7 @@ Input API の詳細については、次のリンクを参照してください�
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
@@ -177,3 +206,14 @@ Input API の詳細については、次のリンクを参照してください�
 * [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+<!-- React -->
+* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
+<!-- end: React -->
+
+## API メンバー
+
+ - `Icon`
+ - `Input`
+ - `Radio`

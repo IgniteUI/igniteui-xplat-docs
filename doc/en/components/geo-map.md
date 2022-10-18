@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Map Overview | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the $ProductName$ map demos!
-_keywords: $Platform$ map, geographic map, imagery tiles, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} Map | Data Visualization Tools | Map Overview | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps. View the {ProductName} map demos!
+_keywords: {Platform} map, geographic map, imagery tiles, {ProductName}, Infragistics
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $Platform$ Map Overview
+# {Platform} Map Overview
 
-The $ProductName$ map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
+The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
-# $Platform$ Map Example
+# {Platform} Map Example
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
@@ -29,7 +29,7 @@ The map provides customizable navigation behaviors for navigating map content us
 <!-- Angular, React, WebComponents -->
 ## Dependencies
 
-The $Platform$ geographic map component, you need to first install these packages:
+The {Platform} geographic map component, you need to first install these packages:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -152,7 +152,7 @@ Now that the map module is imported, next step is to create geographic map. The 
 
 ## Additional Resources
 
-You can find more information about related $Platform$ map features in these topics:
+You can find more information about related {Platform} map features in these topics:
 
 - [Geographic Map Navigation](geo-map-navigation.md)
 <!-- - [Geographic Map Imagery](geo-map-display-imagery-types.md) -->

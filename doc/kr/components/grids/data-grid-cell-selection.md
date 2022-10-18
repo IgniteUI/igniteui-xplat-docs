@@ -1,14 +1,14 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 선택 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 선택 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $Platform$ 선택
+# {Platform} 선택
 
-$ProductName$ 데이터 표/데이터 그리드는 단일 또는 다중 행 및 셀 선택을 지원합니다.
+{ProductName} 데이터 표/데이터 그리드는 단일 또는 다중 행 및 셀 선택을 지원합니다.
 
 ## 데모
 
@@ -23,7 +23,7 @@ $ProductName$ 데이터 표/데이터 그리드는 단일 또는 다중 행 및 
 
 ## 개요
 
-$Platform$ 데이터 그리드의 선택은 행과 셀 수준에서 활성화되며, $Platform$ 그리드의 `selectionMode` 옵션을 사용하여 설정할 수 있습니다. 이 속성에는 다음과 같은 5가지 옵션이 있습니다:
+{Platform} 데이터 그리드의 선택은 행과 셀 수준에서 활성화되며, {Platform} 그리드의 `selectionMode` 옵션을 사용하여 설정할 수 있습니다. 이 속성에는 다음과 같은 5가지 옵션이 있습니다:
 
 - `None`: 선택이 활성화되지 않음.
 - `SingleCell`: 단일 셀의 선택이 활성화됨.
@@ -36,7 +36,7 @@ $Platform$ 데이터 그리드의 선택은 행과 셀 수준에서 활성화되
 
 ## 코드 조각
 
-다음은 $Platform$ 데이터 그리드에서 다중 행 선택을 설정하기 위해 선택을 구성하는 방법을 보여 줍니다:
+다음은 {Platform} 데이터 그리드에서 다중 행 선택을 설정하기 위해 선택을 구성하는 방법을 보여 줍니다:
 
 ```tsx
 <IgrDataGrid

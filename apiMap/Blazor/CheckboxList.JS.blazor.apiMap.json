@@ -13,6 +13,8 @@
     { "names":[{"platform":"Blazor","mappedType":"CheckboxListIndexType","mappedName":"IndexType"}],"originalName":"IndexType"},
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"BaseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
+    { "names":[{"platform":"Blazor","mappedType":"ScrollbarStyle","mappedName":"ScrollbarStyle"}],"originalName":"ScrollbarStyle"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ScrollbarBackground"}],"originalName":"ScrollbarBackground"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectAllCaption"}],"originalName":"SelectAllCaption"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"SelectAllCaptionTextColor"}],"originalName":"SelectAllCaptionTextColor"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ActualSelectAllCaptionTextColor"}],"originalName":"ActualSelectAllCaptionTextColor"},

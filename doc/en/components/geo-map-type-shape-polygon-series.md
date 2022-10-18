@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
-_description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+title: {Platform} Map | Data Visualization Tools | Shape Polygon Series | Infragistics
+_description: Use Infragistics {Platform} map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 
-# $Platform$ Using Shape Polygon Series
+# {Platform} Geographic Polygon Map
 
-Use the $Platform$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
+In {Platform} map component, you can use the `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## $Platform$ Using Shape Polygon Series Example
+## {Platform} Geographic Polygon Map Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="$Platform$ Using Shape Polygon Series Example"
+           alt="{Platform} Using Shape Polygon Series Example"
            github-src="maps/geo-map/type-shape-polygon-series">
 </code-view>
 
@@ -314,3 +314,11 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`

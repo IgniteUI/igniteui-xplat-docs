@@ -1,32 +1,96 @@
 ---
-title: $Platform$ 新機能 | $ProductName$ | インフラジスティックス
-_description: $ProductName$ の新機能について学んでください。
-_keywords: Changelog, What's New, $ProductName$, Infragistics, 変更ログ, 新機能, インフラジスティックス
+title: {Platform} 新機能 | {ProductName} | インフラジスティックス
+_description: {ProductName} の新機能について学んでください。
+_keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
 namespace: Infragistics.Controls.Charts
 ---
-# $ProductName$ 変更ログ
+# {ProductName} 変更ログ
 
-$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
+{ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+<!-- Angular -->
+
+> [!NOTE]
+> このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
+> {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+> [!NOTE]
+(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+
+## **3.4.0**
+### (*) {PackageComponents}
+
+- 高度な設定が可能な [Dialog](notifications/dialog.md) コンポーネントを追加しました。
+- 高度な設定が可能な [Select](inputs/select.md) コンポーネントを追加しました。
+- カレンダーの範囲選択のアクセシビリティを改善しました。
+- 値を選択中の範囲スライダーのアクセシビリティを改善しました。
+- 支援ソフトウェアが項目の総数を読み取れるようになり、Rating のアクセシビリティが改善されました。
+- Toast のメッセージ コンテナーに `role="alert"` を追加し、フォーカスしなくても支援ソフトウェアがメッセージを読み取れるようになり、Toast のアクセシビリティが改善されました。
+- Chip の削除ボタンにタブでフォーカス移動できるようになり、Chip のアクセシビリティが改善されました。
+- ボタンのプレフィックス / サフィックスアイコンが、ボタンのテキストと位置が揃わない問題を修正しました。
+
+## **3.3.0**
+### (*) {PackageComponents}
+
+- 高度な設定が可能な [DateTime 入力](inputs/date-time-input.md)コンポーネントを追加しました。
+- 高度な設定が可能な [Accordion](layouts/accordion.md) コンポーネントを追加しました。
+- 機能豊富な[タブ](layouts/tabs.md) コンポーネントを追加しました。
+- テーマにタイポグラフィ スタイルを追加しました。
+- [Rating](inputs/rating.md) の新機能として、単一選択モードと空のシンボルを定義する機能を追加しました。
+- スライダー ステップの描画を改善しました。
+- コンポーネントは、`defineComponents` で登録されると、その依存関係を自動登録するようになりました。
+- 空の入力ヘルパー テキスト コンテナーを削除するようにしました。
+- Safari でアイコンが表示されない問題を修正しました。
+- Safari でチェックボックスが表示されない問題を修正しました。
+- フレックス コンテナーでボタンが正しく伸張するようになりました。
+
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
-## {22.1}
-#### チャート
+## **{PackageVerChanges-22-1}**
+### {PackageCharts}
 
+* 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
+* 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
-* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
+* `CalloutLayer` の新しい `AllowedPositions` 列挙型。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 * 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
-    - CalloutLayer の `CalloutCornerRadius`
-    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
-    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
-* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
-* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (NumericX、NumericY、PercentChangeY など) とのみ互換性があります。
+    - `CalloutLayer` の `CalloutCornerRadius`
+    - `FinalValueLayer` の `AxisAnnotationBackgroundCornerRadius`
+    - `CrosshairLayer` の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
+* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙型。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeYAxis` など) とのみ互換性があります。
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
-* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。 
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
+
+### {PackageDockManager}
+
+* {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
+
+### {PackageGrids}
+
+* [行のページング](grids/data-grid-row-paging.md)を追加しました。
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -41,7 +105,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 - 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
-#### 日付ピッカー 
+#### 日付ピッカー
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス
@@ -51,9 +115,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
-> **Igb** プレフィックスは $ProductName$ のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは {ProductName} のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
-> たとえば、 ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
+> たとえば、``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 
 ### 新しいコンポーネント
 
@@ -122,7 +186,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 #### チャートとマップ
 
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
@@ -212,35 +276,69 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 <!-- end: Blazor -->
 
-<div class="divider--half"></div>
+<!-- Angular, WebComponents, React -->
 
-<!-- Angular -->
+## **{PackageVerChanges-22-1}**
+### {PackageCharts}
 
-> [!NOTE]
-> このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
-> Angular {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+* 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
+* 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
+* 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
+* 追加された `AssigningCategoryStyle` イベントは、`XamDataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
+* CalloutLayer の新しい `AllowedPositions` 列挙型。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
+* 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
+    - CalloutLayer の `CalloutCornerRadius`
+    - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
+    - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
+* さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙型。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
+* 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
+* 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
+* 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents, React -->
 
-<div class="divider--half"></div>
+<!-- React -->
+
+### {PackageGrids}
+
+* [行のページング](grids/data-grid-row-paging.md)を追加しました。
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+<!-- end: React -->
 
 <!-- WebComponents -->
-> [!NOTE]
-(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+
+### {PackageGrids}
+
+* [行のページング](grids/data-grid-row-paging.md)を追加しました。
+
+改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+### 新しいコンポーネント
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
 
 <div class="divider--half"></div>
 
-## **2.0.0** 
+## **2.0.0**
 ### (*) {PackageComponents}
 #### 新しいコンポーネントとテーマ
 
 * [スライダー](inputs/slider.md)を追加しました。
 * [範囲スライダー](inputs/slider.md)を追加しました。
 * `igniteui-webcomponents/themes/bootstrap.css` のテーマの構造を変更するダーク テーマを追加しました:
-ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css` 
+ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css`
 ダーク テーマの場合は `igniteui-webcomponents/themes/dark/bootstrap.css`
 
-### 重大な変更
+#### 重大な変更
 
 このリリースでは、Calendar、Card、Navigation Drawer、および Radio コンポーネントの API にいくつかの重大な変更が導入されています。
 
@@ -271,7 +369,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 ### {PackageInputs}
 
-#### 日付選択 
+#### 日付選択
 - ValueChanged イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボ ボックス

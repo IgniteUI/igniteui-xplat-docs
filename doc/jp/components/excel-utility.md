@@ -1,11 +1,11 @@
 ---
-title: $Platform$ Excel ライブラリ | Excel ユーティリティ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。$ProductName$ Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
-_keywords: excel library, $ProductName$, Infragistics, saving files, loading files, WorkbookFormat, Excel ライブラリ, ファイルの保存, ファイルの読み込み, インフラジスティックス
+title: {Platform} Excel ライブラリ | Excel ユーティリティ | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。{ProductName} Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
+_keywords: excel library, {ProductName}, Infragistics, saving files, loading files, WorkbookFormat, Excel ライブラリ, ファイルの保存, ファイルの読み込み, インフラジスティックス
 mentionedTypes: ['Workbook', 'WorkbookFormat', 'WorkbookSaveOptions']
 _language: ja
 ---
-# $Platform$ Excel ユーティリティ
+# {Platform} Excel ユーティリティ
 
 [Excel ライブラリ](excel-library.md)には、Microsoft Excel ファイルの読み込みや保存が可能なユーティリティ関数があります。
 
@@ -333,3 +333,9 @@ export class ExcelUtility {
     }
 }
 ```
+
+## API メンバー
+
+ - `WorkbookFormat`
+ - `WorkbookSaveOptions`
+ - `Workbook`

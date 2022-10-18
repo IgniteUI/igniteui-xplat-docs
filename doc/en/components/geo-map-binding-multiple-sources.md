@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View $ProductName$ map tutorials!
-_keywords: $Platform$ map, geographic series, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap', 'SeriesViewer']
+title: {Platform} Map | Data Visualization Tools | Binding Multiple Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to add multiple geographic series objects to overlay custom data sources with geo-spacial data. View {ProductName} map tutorials!
+_keywords: {Platform} map, geographic series, {ProductName}, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'SeriesViewer', 'Series']
 ---
-# $Platform$ Binding Multiple Data Sources
+# {Platform} Binding Multiple Data Sources
 
-In the $ProductName$ map, you can add multiple geographic series objects to overlay custom data sources with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of airports, the `GeographicPolylineSeries` for plotting flights between airports, and 2nd `GeographicPolylineSeries` for plotting gridlines of major geographic coordinates.
+In the {ProductName} map, you can add multiple geographic series objects to overlay custom data sources with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of airports, the `GeographicPolylineSeries` for plotting flights between airports, and 2nd `GeographicPolylineSeries` for plotting gridlines of major geographic coordinates.
 
 
-## $Platform$ Binding Multiple Data Sources Example
+## {Platform} Binding Multiple Data Sources Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
-           alt="$Platform$ Binding Multiple Data Sources Example"
+           alt="{Platform} Binding Multiple Data Sources Example"
            github-src="maps/geo-map/binding-multiple-sources">
 </code-view>
 
@@ -31,7 +31,7 @@ You can use geographic series in this or other combinations to plot desired data
 
 ## Creating Data Sources
 
-Create data sources for all geographic series that you want to display in the $ProductName$ map. For example, you can the use [WorldConnections](geo-map-resources-world-connections.md) script.
+Create data sources for all geographic series that you want to display in the {ProductName} map. For example, you can the use [WorldConnections](geo-map-resources-world-connections.md) script.
 
 
 ```html
@@ -115,7 +115,7 @@ public onMapReferenced(map: IgrGeographicMap) {
 
 ## Overlaying Flights
 
-Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to the Series collection of the $ProductName$ map.
+Create first `GeographicPolylineSeries` object with flight connections between major airports and add it to the Series collection of the {ProductName} map.
 
 ```html
 <igx-geographic-polyline-series  #polylineSeries
@@ -145,7 +145,7 @@ this.geoMap.series.add(lineSeries);
 
 ## Overlaying Gridlines
 
-Create second `GeographicPolylineSeries` object with geographic gridlines and add it to the Series collection of the $ProductName$ map.
+Create second `GeographicPolylineSeries` object with geographic gridlines and add it to the Series collection of the {ProductName} map.
 
 ```html
   <igx-geographic-polyline-series  #polylineSeries
@@ -176,7 +176,7 @@ this.geoMap.series.add(gridSeries);
 
 ## Overlaying Airports
 
-Create `GeographicSymbolSeries` object with airport points and add it to the Series collection of the geographic $ProductName$ map.
+Create `GeographicSymbolSeries` object with airport points and add it to the Series collection of the geographic {ProductName} map.
 
 ```html
 <igx-geographic-symbol-series  #symbolSeries
@@ -319,3 +319,8 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
     }
 }
 ```
+
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicSymbolSeries`

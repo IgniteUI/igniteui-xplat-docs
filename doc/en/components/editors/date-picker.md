@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Date Picker | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ date picker component helps your users select dates. Improve your graphs and visualization with Ignite UI for  $Platform$!
-_keywords: $Platform$ date picker, drop down, $ProductName$, Infragistics
+title: {Platform} Date Picker | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} date picker component helps your users select dates. Improve your graphs and visualization with Ignite UI for  {Platform}!
+_keywords: {Platform} date picker, drop down, {ProductName}, Infragistics
 mentionedTypes: ['DatePicker']
 ---
-# $Platform$ Date Picker Overview
+# {Platform} Date Picker Overview
 
 The Date Picker component allows users to use a drop-down calendar UI allowing the intuitive selection of a day, month and year. This can be helpful when an application user needs to select specific dates, and multiple editors can be combined to create a date-range UI.
 
-## $Platform$ Date Picker Example
+## {Platform} Date Picker Example
 
 This sample demonstrates how to create `DatePicker` with option to select a single date.
 
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="$Platform$ Date Picker Example"
+           alt="{Platform} Date Picker Example"
            github-src="editors/date-picker/overview">
 </code-view>
 
@@ -55,7 +55,7 @@ ModuleManager.register(IgcDatePickerModule);
 
 ## Usage
 
-The $Platform$ Date Picker editor component consists of three default parts - the text area, a calendar drop-down button, and a clear button. These areas are described below:
+The {Platform} Date Picker editor component consists of three default parts - the text area, a calendar drop-down button, and a clear button. These areas are described below:
 
 - Text Area: This displays the selected date, stored in the `Value` property of the editor.
 
@@ -90,7 +90,7 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="$Platform$ Date Picker Editing Example"
+           alt="{Platform} Date Picker Editing Example"
            github-src="editors/date-picker/editing">
 </code-view>
 
@@ -103,7 +103,7 @@ The following example demonstrates how to restrict selected dates in the `DatePi
 <code-view style="height: 360px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="$Platform$ Date Picker Date Limits Example"
+           alt="{Platform} Date Picker Date Limits Example"
            github-src="editors/date-picker/date-limits">
 </code-view>
 
@@ -116,7 +116,7 @@ The following example demonstrates how apply a long date in the `DatePicker`.
 <code-view style="height: 350px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="$Platform$ Date Picker Format Example"
+           alt="{Platform} Date Picker Format Example"
            github-src="editors/date-picker/format">
 </code-view>
 
@@ -129,7 +129,7 @@ The following example demonstrates how combine multiple `DatePicker` controls.
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="$Platform$ Date Picker Date Range Example"
+           alt="{Platform} Date Picker Date Range Example"
            github-src="editors/date-picker/range">
 </code-view>
 

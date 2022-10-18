@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding JSON Files | Infragistics
-_description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View $ProductName$ map demos!
-_keywords: $Platform$ map, JSON files, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} Map | Data Visualization Tools | Binding JSON Files | Infragistics
+_description: Learn how to use Infragistics' {Platform} map to display data that contains geographic locations from view models or geographic locations loaded from JSON files. View {ProductName} map demos!
+_keywords: {Platform} map, JSON files, {ProductName}, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 ---
-# $Platform$ Binding JSON Files with Geographic Locations
+# {Platform} Binding JSON Files with Geographic Locations
 
-With the $ProductName$ map, you can plot geographic data loaded from various file types. For example, you can load geographic locations from JavaScript Object Notation (JSON) file.
+With the {ProductName} map, you can plot geographic data loaded from various file types. For example, you can load geographic locations from JavaScript Object Notation (JSON) file.
 
-## $Platform$ Binding JSON Files with Geographic Locations Example
+## {Platform} Binding JSON Files with Geographic Locations Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
-           alt="$Platform$ Binding JSON Files with Geographic Locations Example"
+           alt="{Platform} Binding JSON Files with Geographic Locations Example"
            github-src="maps/geo-map/binding-data-json-points">
 </code-view>
 
@@ -243,3 +243,11 @@ onDataLoaded(jsonData: any[]) {
 }
 ```
 
+ ## API Members
+
+- `GeographicHighDensityScatterSeries`
+- `GeographicSymbolSeries`
+- `GeographicMap`
+- `DataSource`
+- `LatitudeMemberPath`
+- `LongitudeMemberPath`

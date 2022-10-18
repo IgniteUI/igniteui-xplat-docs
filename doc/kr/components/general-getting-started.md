@@ -1,17 +1,17 @@
 ---
-title: $Platform$ Data Visualization Tools | Infragistics
-_description: The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
-_keywords: $ProductName$, Infragistics, Getting started, IG, Install $Platform$
+title: {Platform} Data Visualization Tools | Infragistics
+_description: The {ProductName} is a complete set of {Platform} components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
+_keywords: {ProductName}, Infragistics, Getting started, IG, Install {Platform}
 _language: kr
 ---
 
-# $Platform$ Getting Started With $ProductName$
+# {Platform} Getting Started With {ProductName}
 
-The $ProductName$ is a complete set of $Platform$ components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
+The {ProductName} is a complete set of {Platform} components designed to enable developers to build the most modern, high-performance HTML5 & TypeScript apps for modern desktop browsers.
 
 ## Setting Up Computer
 
-Before you can run $ProductName$, there are 2 steps to get everything on your machine set up to run any $Platform$ app, including $ProductName$, and to build $Platform$ apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with $Platform$ requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build $Platform$ apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
+Before you can run {ProductName}, there are 2 steps to get everything on your machine set up to run any {Platform} app, including {ProductName}, and to build {Platform} apps. To get started, you must install both NodeJS and Visual Studio Code on your machine. Modern web development with {Platform} requires NodeJS, it’s sort of like an ASP.NET app running in the browser and requires ASP.NET runtime deployed on the server. For development, there is nothing better than Visual Studio Code to build {Platform} apps. Getting started is easy, just download and install both Node.js and Visual Studio Code.
 
 <div style="display:block;width:100%;margin:50px;">
     <div style="display:inline-block;width:45%;text-align:center;">
@@ -49,7 +49,7 @@ Or
 Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
 
 
-Next, you need to open the **my-app-name** folder in **VS Code** app and install the following packages for $ProductName$ using these commands:
+Next, you need to open the **my-app-name** folder in **VS Code** app and install the following packages for {ProductName} using these commands:
 
 - **npm install --save {PackageCharts} {PackageCore}**
 - **npm install --save {PackageExcel} {PackageCore}**
@@ -73,11 +73,11 @@ Lastly, you can build for production or start your application with these comman
 - **npm run-script build**
 - **npm run-script start**
 
-After executing those simple commands, your new project will be built and served. It will automatically open in your default browser and you will be able to use $ProductName$ components in your project.
+After executing those simple commands, your new project will be built and served. It will automatically open in your default browser and you will be able to use {ProductName} components in your project.
 
 ## Updating Existing App
 
-What if you want to use $ProductName$ in an existing $Platform$ CLI project (one that you have from before)? We have you covered! All you have to do is execute these commands:
+What if you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before)? We have you covered! All you have to do is execute these commands:
 
 
 - **npm install --save {PackageCharts} {PackageCore}**
@@ -96,7 +96,7 @@ Or
 - **yarn add {PackageMaps} {PackageCore}**
 - **yarn add {PackageSpreadsheet} {PackageCore}**
 
-This will automatically install packages for $ProductName$, along with all of their dependencies, font imports and styles references to the existing project.
+This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
 
 ## Importing Modules
@@ -119,7 +119,7 @@ IgrDataChartInteractivityModule.register();
 
 ## Using Components
 
-We are now ready to use the $ProductName$ map component in our markup! Let's go ahead and define it:
+We are now ready to use the {ProductName} map component in our markup! Let's go ahead and define it:
 
 ```tsx
 // App.txs

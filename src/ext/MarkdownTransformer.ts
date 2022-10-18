@@ -2,6 +2,7 @@ import { MappingLoader, APIPlatform, APIMapping } from './MappingLoader';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
 import { inherits } from 'util';
+import { ComponentDetector } from './ComponentDetector';
 
 let remark = require(`remark`);
 let parse = require('remark-parse');
@@ -10,6 +11,9 @@ let frontmatter = require('remark-frontmatter');
 let visit = require('unist-util-visit');
 let jsyaml = require('js-yaml');
 let fs = require('fs');
+
+let docsConfig = require("../../docConfig.json");
+let docsComponents = require("../../docComponents.json");
 
 // this array defines blazor namespaces mapped to API members
 // and it is converted to a lookup table for finding blazor namespaces in getApiLink()
@@ -108,6 +112,18 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
             // console.log( blazorNamespaceLookup[resolvedTypeName] + " " + resolvedTypeName + " " + linkText);
 
         } else { // Angular || React || WC
+
+            let char1 = resolvedTypeName[0];
+
+            if(char1 == "I"){
+                let char2 = resolvedTypeName[1];
+                if(char2.toUpperCase() == char2){
+                    isClass = false;
+                    isEnum = false;
+                    isInterface = true;
+                }
+            }
+
             if (isClass) {
                 linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
             } else if (isEnum) {
@@ -179,17 +195,19 @@ function transformCodeRefs(options: any) {
             transformWarning("found empty API member");
         }
         if (memberHasCharSpace && !memberHasCharDot) {
-            transformWarning("found a space in API member: `" + memberName + "` did you mean: **" + memberName + "**");
+            var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
+            transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
-        if (memberName.includes("Igc", 0)) {
-            transformWarning("found 'Igc' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
-        if (memberName.includes("Igr", 0)) {
-            transformWarning("found 'Igr' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
-        if (memberName.includes("Igx", 0)) {
-            transformWarning("found 'Igx' instead of 'Ig$' in API member: `" + memberName + "`");
-        }
+
+        // if (memberName.includes("Igc", 0)) {
+        //     transformWarning("found 'Igc' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
+        // if (memberName.includes("Igr", 0)) {
+        //     transformWarning("found 'Igr' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
+        // if (memberName.includes("Igx", 0)) {
+        //     transformWarning("found 'Igx' instead of 'Ig$' in API member: `" + memberName + "`");
+        // }
 
         if (memberName.indexOf("Ig$") >= 0) {
             memberName = memberName.replace("Ig$",       options.platformPascalPrefix);
@@ -293,7 +311,7 @@ function transformCodeRefs(options: any) {
                         }
                     }
                 }
-                // console.log("getApiLink return " + memberName + " '" + link.url + "'");
+                // console.log("getApiLink " + memberName + " '" + link.url + "'");
                 parent.children.splice(index, 1, link);
                 return;
             }
@@ -351,6 +369,10 @@ function getFrontMatterTypes(options: any) {
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
             }
+        }
+
+        if (ym.sharedComponents) {
+            options.sharedComponents = ym.sharedComponents;
         }
     }
 
@@ -428,27 +450,42 @@ function transformDocLinks(options: any) {
 
 function transformDocPlaceholders(options: any) {
     function transformText(node: any) {
+        // console.log("transformDocPlaceholders");
+        // console.log(node);
         if (node.value) {
-            node.value = replaceVariables(node.value);
+            node.value = replaceVariables(node.value, options);
             //console.log('transformText ' + node.value);
         }
 
         if (node.url) {
-            node.url = replaceVariables(node.url);
+            node.url = replaceVariables(node.url, options);
             //console.log('transformText ' + node.url);
         }
     }
 
-    function replaceVariables(nodeValue: string) {
+    function replaceVariables(nodeValue: string, options: any) {
         let docs = options.docs;
-        if (docs.replacements) {
-            for (let i = 0; i < docs.replacements.length; i++) {
-                let curr = docs.replacements[i];
-                let name = curr.name;
-                let r = new RegExp(name, "g");
-                nodeValue = nodeValue.replace(r, curr.value);
+
+
+        if (options.componentName) {
+            if (docsComponents[options.componentName]) {
+                let value = docsComponents[options.componentName];
+                let name = "{Component";
+                let r = new RegExp(name, "gm");
+                nodeValue = nodeValue.replace(r, "{" + value.name);
             }
         }
+        if (docs.replacements) {
+            for (let i = 0; i < docs.replacements.length; i++) {
+                let variable = docs.replacements[i];
+                if (variable.name && variable.value) {
+                    let name = variable.name;
+                    let r = new RegExp(name, "gm");
+                    nodeValue = nodeValue.replace(r, variable.value);
+                }
+            }
+        }
+
         return nodeValue;
     }
 
@@ -573,6 +610,20 @@ class PlatformSegment {
     }
 }
 
+class ComponentSegment {
+    isBegin: boolean;
+    components: string[];
+    startIndex: number;
+    endIndex: number;
+
+    constructor(isBegin: boolean, components: string[], startIndex: number, endIndex: number) {
+        this.isBegin = isBegin;
+        this.components = components;
+        this.startIndex = startIndex;
+        this.endIndex = endIndex;
+    }
+}
+
 function getPlatformSegments(node: any): PlatformSegment[] {
     let reg = /(<!--[^>]*-->)/gm;
     let match: RegExpExecArray | null;
@@ -587,16 +638,51 @@ function getPlatformSegments(node: any): PlatformSegment[] {
             ret.push(seg);
         }
     }
+    return ret;
+}
 
+function getComponentSegments(node: any): ComponentSegment[] {
+    let reg = /(<!--[^>]*-->)/gm;
+    let match: RegExpExecArray | null;
+    let ret: ComponentSegment[] = [];
+    while (match = reg.exec(node.value)) {
+        let val = match[0];
+        let isBegin = val.indexOf("ComponentStart:") >= 0;
+
+        let components = getComponentsFromString(val);
+        if (components && components.length > 0) {
+            //let platforms: APIPlatform[] = [];
+            let seg = new ComponentSegment(isBegin, components, match.index, match.index + val.length);
+            ret.push(seg);
+        }
+    }
     return ret;
 }
 
 function isPlatformComment(node: any): boolean {
     if (node.type == "html" &&
         node.value.trim().indexOf("<!--") >= 0) {
-
+        if (node.value.indexOf("ComponentStart") >= 0) {
+            return false;
+        }
         let platformSegments = getPlatformSegments(node);
         if (platformSegments && platformSegments.length > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function isComponentComment(node: any): boolean {
+    if (node.type == "html" &&
+        node.value.trim().indexOf("<!--") >= 0) {
+        if (node.value.indexOf("ComponentStart") == -1 &&
+        node.value.indexOf("ComponentEnd") == -1) {
+            return false;
+        }
+
+        let componentSegments = getComponentSegments(node);
+        if (componentSegments && componentSegments.length > 0) {
             return true;
         }
     }
@@ -635,8 +721,28 @@ function getPlatformsFromString(str: string): APIPlatform[] {
     return plats;
 }
 
+function getComponentsFromString(str: string): string[] {
+    let val = str.replace("<!--", "");
+    val = val.replace("-->", "");
+    val = val.replace("ComponentEnd:", "");
+    val = val.replace("ComponentStart:", "");
+    //val = val.trim().toLowerCase();
+
+    let vals = val.split(',');
+    for (let i = 0; i < vals.length; i++) {
+        vals[i] = vals[i].trim();
+    }
+
+
+    return vals;
+}
+
 function getPlatformsFromComment(node: any) : APIPlatform[] {
     return getPlatformsFromString(node.value);
+}
+
+function getComponentsFromComment(node: any) : string[] {
+    return getComponentsFromString(node.value);
 }
 
 function finishRemove(options: any) {
@@ -700,6 +806,19 @@ function platformsEqual(plats: APIPlatform[], otherPlats: APIPlatform[]): boolea
     return true;
 }
 
+function componentsEqual(components: string[], otherComponents: string[]): boolean {
+    if (components.length !== otherComponents.length) {
+        return false;
+    }
+    for (let i = 0; i < components.length; i++) {
+        if (components[i] != otherComponents[i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function omitPlatformSpecificSections(options: any) {
     function omitSections(node: any, index: number, parent: any) {
 
@@ -736,8 +855,6 @@ function omitPlatformSpecificSections(options: any) {
                             }
                         }
                     }
-
-
                     checkIndex--;
                 }
             }
@@ -745,7 +862,53 @@ function omitPlatformSpecificSections(options: any) {
         //console.log(node);
     }
 
+    return function (tree: any) {
+        visit(tree, 'html', omitSections)
+    }
+}
 
+function omitComponentSpecificSections(options: any) {
+    function omitSections(node: any, index: number, parent: any) {
+
+        if (node.value.indexOf("ComponentEnd:") >= 0) {
+            let segments = getComponentSegments(node);
+            for (let segment of segments) {
+                let checkIndex = index;
+                while (checkIndex >= 0) {
+
+                    if (parent.children[checkIndex] &&
+                    parent.children[checkIndex].type == "html" &&
+                    isComponentComment(parent.children[checkIndex]) &&
+                    parent.children[checkIndex].value.indexOf("ComponentEnd:") == -1) {
+                        let startSegments = getComponentSegments(parent.children[checkIndex]);
+                        for (let i = segments.length - 1; i >= 0; i--) {
+                            //let currPlats = getPlatformsFromComment(parent.children[checkIndex]);
+                            let startSeg = startSegments[i];
+                            let currComponents = startSeg.components;
+
+                            if (componentsEqual(currComponents, segment.components) &&
+                            segment.components.indexOf(options.componentName) == -1) {
+                                for (let ind = checkIndex + 1; ind < index; ind++) {
+                                    options.toDelete.add(parent.children[ind]);
+                                }
+                                parent.children[checkIndex].value = parent.children[checkIndex].value.substring(0, startSeg.startIndex);
+                                if (parent.children[checkIndex].value.length == 0) {
+                                    options.toDelete.add(parent.children[checkIndex])
+                                }
+                                parent.children[index].value = parent.children[index].value.substring(segment.endIndex);
+                                if (parent.children[index].value.length == 0) {
+                                    options.toDelete.add(parent.children[index]);
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    checkIndex--;
+                }
+            }
+        }
+        //console.log(node);
+    }
 
     return function (tree: any) {
         visit(tree, 'html', omitSections)
@@ -807,12 +970,17 @@ function omitFencedCode(options: any) {
         let lang = node.lang;
 
         let platformDetector: PlatformDetector = options.platformDetector;
+        let componentDetector: ComponentDetector = options.componentDetector;
 
         let info = new FencedBlockInfo();
         info.code = node.value;
         info.lang = lang;
 
         let plats = platformDetector.detectPlatform(info);
+        let components: string[] | null = null;
+        if (options.componentName) {
+            components = componentDetector.detectComponents(docsComponents, info);
+        }
 
         if (index - 1 >= 0 &&
             parent.children[index - 1] &&
@@ -824,8 +992,15 @@ function omitFencedCode(options: any) {
                     plats = getPlatformsFromComment(parent.children[index - 1])!;
                 }
             }
+            if (options.componentName) {
+                if (isComponentComment(parent.children[index - 1])) {
+                    if (getComponentsFromComment(parent.children[index - 1]) !== null) {
+                        components = getComponentsFromComment(parent.children[index - 1]);
+                    }
+                }
+            }
 
-            if (options.transformer.shouldOmitFencedCode(lang, plats)) {
+            if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
                options.toDelete.add(parent.children[index - 1]);
                options.toDelete.add(node);
             }
@@ -844,14 +1019,22 @@ function omitFencedCode(options: any) {
                 }
             }
 
-            if (options.transformer.shouldOmitFencedCode(lang, plats)) {
+            if (options.componentName) {
+                if (isComponentComment(parent.children[index - 2])) {
+                    if (getComponentsFromComment(parent.children[index - 2]) !== null) {
+                        components = getComponentsFromComment(parent.children[index - 2])!;
+                    }
+                }
+            }
+
+            if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
                options.toDelete.add(parent.children[index - 2]);
                options.toDelete.add(parent.children[index - 1]);
                options.toDelete.add(node);
             }
         }
 
-        if (options.transformer.shouldOmitFencedCode(lang, plats)) {
+        if (options.transformer.shouldOmitFencedCode(lang, plats, components, options)) {
             options.toDelete.add(node);
 
             //return index;
@@ -887,6 +1070,7 @@ let invalidApiMembers = [
 
 export class MarkdownTransformer {
     private _platformDetector: PlatformDetector | undefined;
+    private _componentDetector: ComponentDetector | undefined;
     private _mappings: MappingLoader | undefined;
     private _platform: APIPlatform | undefined;
     private _envTarget: string = "development";
@@ -894,7 +1078,7 @@ export class MarkdownTransformer {
 
     public docsLanguage: string = '';
 
-    shouldOmitFencedCode(language: string, platform: APIPlatform[]) {
+    shouldOmitFencedCode(language: string, platform: APIPlatform[], components: string[], options: any) {
 
         // https://docs.microsoft.com/en-us/contribute/code-in-docs#supported-languages
         if (language === "json" || language === "cmd" ||
@@ -948,6 +1132,14 @@ export class MarkdownTransformer {
                 break;
         }
 
+        if (options.componentName) {
+            if (components && components.length > 0) {
+                if (components.indexOf(options.componentName) == -1) {
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
@@ -957,6 +1149,7 @@ export class MarkdownTransformer {
         this._mappings = mappings;
         this._platform = platform;
         this._platformDetector = new PlatformDetector();
+        this._componentDetector = new ComponentDetector();
         this._docs = docs;
         this._envTarget = envTarget; // development || staging || production
 
@@ -983,8 +1176,8 @@ export class MarkdownTransformer {
     transformContent(
         typeName: string,
         fileContent: string,
-        // filePath: string,
-        callback: (err: any, results: string | null) => void): void {
+        filePath: string,
+        callback: (err: any, results: { content: string, componentOutput: string | null }[] | null) => void): void {
 
         // check for strings that should be API links:
         let fileLines = fileContent.toLowerCase().split("\n");
@@ -1001,14 +1194,23 @@ export class MarkdownTransformer {
 
         let deleteMap: Set<any> = new Set<any>();
 
+        // var targetComponent = '';
+        // var md = new MarkdownContent(fileContent, filePath);
+        // if (md && md.metadata) {
+        //     targetComponent = md.metadata.targetComponent;
+        //     console.log('transform for targetComponent ' + targetComponent)
+        // }
+
         let options = {
             typeName: typeName,
             platform: this._platform,
             mappings: this._mappings,
+            // targetComponent: targetComponent,
             gatheredText: [],
             transformer: this,
             toDelete: deleteMap,
             platformDetector: this._platformDetector,
+            componentDetector: this._componentDetector,
             docs: this._docs,
             platformSpinalSuffix: null as string | null,
             platformPascalSuffix: null as string | null,
@@ -1016,14 +1218,66 @@ export class MarkdownTransformer {
             platformSpinalPrefix: null as string | null
         };
 
+        if (this._platform === APIPlatform.Angular) {
+            // injecting sandbox and stackblitz buttons
+            let codeViewers = fileContent.split("<code-view");
+            // console.log("codeViewers " + codeViewers.length);
+            let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
+            for (let v = 0; v < codeViewers.length; v++) {
+                let viewer = codeViewers[v];
+                let viewerEnd = -1;
+                let viewerStart = viewer.indexOf("code-view");
+                if (viewerStart >= 0) {
+                    let samplePath = null;
+                    let lines = viewer.split("\n");
+                    for (let i = 0; i < lines.length; i++) {
+                        const line = lines[i];
+                        if (line.indexOf("github-src=") > 0) {
+                            samplePath = line.replace('github-src="',"");
+                            samplePath = samplePath.replace('"','');
+                            samplePath = samplePath.replace('>','');
+                            samplePath = samplePath.trim();
+                        }
+                        if (line.indexOf("code-view>") > 0) {
+                            viewerEnd = i + 1;
+                        }
+                    }
+
+                    if (viewerEnd >= 0 && samplePath !== null) {
+                        let github = "github/IgniteUI/igniteui-angular-examples/tree/master/samples/" + samplePath;
+                        let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
+                        let sandbox = "https://codesandbox.io/s/" + github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/app.component.html";
+                        let editButtons = editButtonTemplate + "";
+                        editButtons = editButtons.replace('{sandbox}', sandbox);
+                        editButtons = editButtons.replace('{stackblitz}', stackblitz);
+                        lines.splice(viewerEnd, 0, editButtons);
+                        // console.log("codeViewers " + github + " " + viewerEnd + " " + lines.length);
+                    }
+                    codeViewers[v] = lines.join('\n');
+                }
+            }
+            fileContent = codeViewers.join('<code-view');
+        }
+
+        // resolving links to sample browsers: local, staging, production
+        // except for Angular because the main Angular repo will update these links
         if (this._platform === APIPlatform.Blazor ||
             this._platform === APIPlatform.React ||
             this._platform === APIPlatform.WebComponents) {
             // using 'samplesBrowsers' variable in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
-                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", this._envBrowser);
-                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", this._envBrowser);
+                let browserLink = this._envBrowser;
+                if (filePath.indexOf("\\jp\\") > 0) {
+                    // changing samples links to JP production website in JP topics
+                    browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
+
+                    // changing samples links to JP staging website in JP topics
+                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                }
+
+                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
+                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", browserLink);
             }
         }
 
@@ -1063,27 +1317,79 @@ export class MarkdownTransformer {
         })
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
-        .use(getFrontMatterTypes, options)
-        .use(transformCodeRefs, options) // filePath
-        .use(transformDocLinks, options)
         .use(transformDocPlaceholders, options)
-        .use(omitPlatformSpecificSections, options)
-        .use(omitStackblitzButtons, options)
-        .use(manageAutoButtons, options)
-        .use(finishRemove, options)
-        .use(omitFencedCode, options)
-        .use(finishRemoveBlocks, options)
-        .use(transformNotes, options)
-        .use(finishRemoveNotes, options)
-        .use(stringify)
+        .use(getFrontMatterTypes, options)
         .process(fileContent, function(err: any, vfile: any) {
             if (err) {
                 callback(err, null);
                 return;
             }
-
-            callback(null, vfile.toString());
         });
+
+        let runFor: { componentName: string | null }[] = [{ componentName: null }];
+        if ((options as any).sharedComponents) {
+            runFor = ((options as any).sharedComponents as string[]).map((c) => { return { componentName: c } });
+        }
+
+        let output: {content: string, componentOutput: string | null }[] = [];
+        let iteration = 0;
+        var doIteration = () => {
+            let currRun = runFor[iteration];
+            let componentOutput: string | null = null;
+
+            if (currRun.componentName != null) {
+                (options as any).componentName = currRun.componentName;
+
+                console.log("- " + filePath + " for " + currRun.componentName);
+
+                if (docsComponents[currRun.componentName] !== undefined) {
+                    componentOutput = docsComponents[currRun.componentName].output;
+                }
+            } else {
+                console.log("- " + filePath);
+            }
+
+            remark().data('settings', {
+                commonmark: false,
+                footnotes: true,
+                pedantic: true,
+            })
+            .use(parse)
+            .use(frontmatter, ['yaml', 'toml'])
+            .use(transformDocPlaceholders, options)
+            .use(getFrontMatterTypes, options)
+            .use(transformCodeRefs, options) // filePath
+            .use(transformDocLinks, options)
+            .use(omitPlatformSpecificSections, options)
+            .use(omitComponentSpecificSections, options)
+            .use(omitStackblitzButtons, options)
+            .use(manageAutoButtons, options)
+            .use(finishRemove, options)
+            .use(omitFencedCode, options)
+            .use(finishRemoveBlocks, options)
+            .use(transformNotes, options)
+            .use(finishRemoveNotes, options)
+            .use(stringify)
+            .process(fileContent, function(err: any, vfile: any) {
+                if (err) {
+                    callback(err, null);
+                    return;
+                }
+
+                output.push({ content: vfile.toString(), componentOutput: componentOutput });
+
+                if (iteration == runFor.length - 1) {
+                    callback(null, output);
+                } else {
+                    iteration++;
+                    doIteration();
+                }
+                //callback(null, vfile.toString());
+            });
+        }
+        doIteration();
+
+
     }
 
     getGithubURL(codeViewerLine: string): string {
@@ -1188,7 +1494,7 @@ export class MarkdownTransformer {
                 console.log("ERROR: missing metadata '_language:' in " + filePath);
             else if (md.metadata.hasMentionedLinks())
             {
-                if (!md.metadata.hasMentionedTypes())
+                if (!md.metadata.hasMentionedTypes() && !md.metadata.hasSharedComponents())
                     console.log("ERROR: missing metadata 'mentionedTypes:' in " + filePath);
                 else if (md.metadata.mentionedLinks.includes("`true`"))
                     console.log("ERROR: replace `true` with **true** in " + filePath);
@@ -1209,6 +1515,137 @@ export class MarkdownTransformer {
 
         return { fileContent: fileContent, isValid: mdValidated};
     }
+
+    // updateGitIgnore(excludeFiles: string[])
+    // {
+    //     let gitIgnore = fs.readFileSync(".gitignore").toString();
+    //     var startStr = "# shared-files-start";
+    //     var endStr = "# shared-files-end";
+    //     let start = gitIgnore.indexOf(startStr);
+    //     let end = gitIgnore.indexOf(endStr);
+
+    //     if (start < 0) {
+    //         throw ".gitignore file is missing # shared-files-start";
+    //     }
+    //     if (end < 0) {
+    //         throw ".gitignore file is missing # shared-files-end";
+    //     }
+
+    //     gitIgnore = gitIgnore.substring(0, start + startStr.length)
+    //     + "\r\n" + excludeFiles.join("\n") + "\r\n"
+    //     + gitIgnore.substring(end);
+
+    //     fs.writeFileSync(".gitignore", gitIgnore);
+    // }
+
+    // omitComponentSections(
+    //     targetComponent: string,
+    //     fileContent: string) : string {
+
+    //     var lines = fileContent.split('\r\n');
+    //     // console.log('omitComponentSections "' + targetComponent + '"')
+
+    //     var topicSections = [];
+    //     var shareSection = new SharedSection();
+    //     for (let i = 0; i < lines.length; i++) {
+    //         const line = lines[i];
+    //         var start = line.indexOf("<!-- ComponentStart:");
+    //         var end = line.indexOf("<!-- ComponentEnd:");
+    //         if (start >= 0) {
+    //             topicSections.push(shareSection);
+
+    //             var componentLine = line.trim();
+    //             componentLine = componentLine.replace("<!-- ComponentStart:", "")
+    //             componentLine = componentLine.replace(" -->", "")
+    //             shareSection = new SharedSection();
+    //             shareSection.components = componentLine.trim().split(',');
+    //             shareSection.added = true;
+    //             shareSection.lines.push(line);
+    //         } else if (end >= 0) {
+    //             shareSection.lines.push(line);
+    //             shareSection.added = true;
+    //             topicSections.push(shareSection);
+
+    //             shareSection = new SharedSection();
+    //         } else {
+
+    //             if (line.indexOf('<!-- NOTE') < 0 &&
+    //                 line.indexOf('<!-- EXAMPLE') < 0) {
+    //                 shareSection.lines.push(line);
+    //             }
+    //         }
+    //     }
+
+    //     if (!shareSection.added)
+    //     {
+    //         shareSection.added = true;
+    //         topicSections.push(shareSection);
+    //     }
+
+    //     // console.log(topicSections)
+
+    //     var outputLines = [];
+    //     for (let i = 0; i < topicSections.length; i++) {
+    //         var section = topicSections[i];
+    //         // console.log("outputSegments" + segment.components.indexOf(targetComponent))
+    //         if (section.components.length === 0 ||
+    //             section.components.indexOf(targetComponent) >= 0) {
+    //                 outputLines.push(...section.lines);
+    //         }
+    //     }
+    //     // console.log(outputLines)
+    //     return outputLines.join('\r\n');
+    // }
+
+    // transformSharedFile(
+    //     fileContent: string,
+    //     filePath: string, docsComponents: any, docsConfig: any): string[] {
+    //     var md = new MarkdownContent(fileContent, filePath);
+
+    //     var generatedFiles: string[] = [];
+    //     if (!md.metadata.hasSharedComponents()) return generatedFiles;
+
+    //     var componentsLine = md.metadata.sharedComponents;
+    //     componentsLine = componentsLine.replace("sharedComponents:", "");
+    //     componentsLine = componentsLine.replace("[", "");
+    //     componentsLine = componentsLine.replace("]", "");
+    //     componentsLine = componentsLine.replace("_", "");
+    //     componentsLine = Strings.replace(componentsLine, '"', '');
+    //     var componentsNames = componentsLine.split(",");
+    //     if (componentsNames.length === 0) return generatedFiles;
+
+    //     console.log("transformSharedFile " + filePath);
+    //     var docPath = ".\\doc\\" + filePath.split("\\doc\\")[1];
+    //     var note = 'note: AUTO-GENERATED from "' + Strings.replace(docPath, "\\", "/") + '"';
+
+    //     for (const name of componentsNames) {
+    //         var component = docsComponents[name.trim()];
+    //         if (component === undefined) {
+    //             console.log(docsComponents);
+    //             throw "docComponents.json does not define component: '" + name + "'";
+    //         } else {
+
+    //             var newTarget = 'targetComponent: "' + component.name + '"';
+    //             var newPath = filePath.replace("\\_shared\\", component.output);
+    //             var newContent = fileContent.replace("---\r\ntitle:", "---\r\n" + note + "\r\ntitle:");
+    //             newContent = newContent.replace(md.metadata.sharedComponents + "\r\n", "");
+    //             // newContent = newContent.replace(md.metadata.sharedComponents, newTarget);
+    //             // newContent = newContent.replace(new RegExp("{(Component)[a-zA-Z]*}", "gm"), component.name);
+
+    //             // replacing {Component*} variables with acutal variables, e.g. {TreeGridName}
+    //             newContent = Strings.replace(newContent, "$Component", "$" + component.name);
+    //             newContent = Strings.replace(newContent, "{Component", "{" + component.name);
+    //             // omitting topic sections that are specific to a component
+    //             newContent = this.omitComponentSections(component.name, newContent);
+    //             fs.writeFileSync(newPath, newContent);
+
+    //             var gitPath = "doc\\" + newPath.split("\\doc\\")[1];
+    //             gitPath = Strings.replace(gitPath, "\\", "/")
+    //             generatedFiles.push(gitPath);
+    //         }
+    //     }
+    //     return generatedFiles;
+    // }
 
     updateApiSection(fileContent: string, filePath: string): string {
         var newApiMembers = [];
@@ -1370,15 +1807,18 @@ export class MarkdownTransformer {
     }
 
     // generates toc.yml file from toc.json file by filtering out its nodes for specified platform
-    generateTOC(jsonPath: string, platform: string, isFirstRelease: boolean): string[] {
+    generateTOC(jsonPath: string, platform: string, language: string, isFirstRelease: boolean, excludedFiles: string[]): string[] {
+
+        if (excludedFiles === undefined)
+            excludedFiles = [];
 
         // console.log('generateTOC for "' + platform + '"  platform from');
-        console.log(">> TOC generate from: " + jsonPath + ' for "' + platform + '" and isFirstRelease=' + isFirstRelease);
+        console.log(">> TOC generating from: " + jsonPath + ' for "' + platform); // + '" and isFirstRelease=' + isFirstRelease);
 
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
 
-        let tocNodes = this.filterTOC(jsonContent, platform);
+        let tocNodes = this.filterTOC(jsonContent, platform, language, excludedFiles);
 
         // optional start:
         // let tocPath = jsonPath.replace('toc.json', 'toc_' + platform + '.json')
@@ -1389,7 +1829,7 @@ export class MarkdownTransformer {
         let ymlPath = jsonPath.replace('toc.json', 'toc.yml');
         let ymlContent = this.generateNodes(tocNodes, 0, isFirstRelease, platform);
 
-        console.log(">> TOC generate done: " + ymlPath);
+        // console.log(">> TOC generating done: " + ymlPath);
 
         fs.writeFileSync(ymlPath, ymlContent);
 
@@ -1471,16 +1911,24 @@ export class MarkdownTransformer {
     }
 
     // filters out nodes if they have "exclude" array that contains platform name
-    filterTOC(jsonContent: string, platform: string): TocNode[] {
+    filterTOC(jsonContent: string, platform: string, language: string, excludedFiles: string[]): TocNode[] {
 
         let jsonNodes: TocNode[] = JSON.parse(jsonContent);
-        let tocNodes = this.filterNodes(jsonNodes, platform);
+        let tocNodes = this.filterNodes(jsonNodes, platform, language, excludedFiles);
         // console.log('>> filterTOC completed: ' + jsonNodes.length + ' to ' + tocNodes.length + ' nodes');
 
         return tocNodes;
     }
 
-    filterNodes(tocNodes: TocNode[], platform: string): TocNode[] {
+    filterContains(nodeReference: string, excludedFiles: string[]): boolean {
+        for (const file of excludedFiles) {
+            if (file.indexOf(nodeReference) >= 0)
+                return true;
+        }
+        return false;
+    }
+
+    filterNodes(tocNodes: TocNode[], platform: string, language: string, excludedFiles: string[]): TocNode[] {
         let matchingNodes: TocNode[] = [];
 
         for (const node of tocNodes) {
@@ -1490,6 +1938,9 @@ export class MarkdownTransformer {
 
                 node.name = node.name.replace("$Platform$", platform);
                 if (node.href) {
+                    if (this.filterContains(language + "/components/" + node.href, excludedFiles)){
+                        continue; // skip node if node reference is in excluded files
+                    }
                     node.href = node.href.replace("$Platform$", platform);
                     node.href = node.href.toLowerCase();
                     // node.href = node.href.replace(".md", ".html");
@@ -1499,7 +1950,7 @@ export class MarkdownTransformer {
                 // recursively check if child items need to be excluded
                 if (node.items !== undefined &&
                     node.items.length > 0) {
-                    node.items = this.filterNodes(node.items, platform);
+                    node.items = this.filterNodes(node.items, platform, language, excludedFiles);
                 }
                 matchingNodes.push(node);
                 // console.log('>> TOC filter in  ' + this.getNodeInfo(node));
@@ -1545,6 +1996,12 @@ export class Strings {
         return orgStr.split(oldStr).join(newStr);
     }
 
+    public static extract(orgStr: string, startStr: string, endStr: string): string {
+       let start = orgStr.indexOf(startStr);
+        let end = orgStr.indexOf(endStr);
+        return orgStr.substring(start + startStr.length, end);
+    }
+
     public static toTitleCase(str: string, separator?: string) {
         if (separator === undefined) { separator = ' '; }
         return str.toLowerCase().split(separator).map(function(word) {
@@ -1556,6 +2013,13 @@ export class Strings {
         return orgStr.replace(/([a-z0-9])([A-Z])/g, '$1 $2');
     }
 
+    public static removeLines(lines: string[], start: number, end: number) {
+        if (lines.length < start) return lines;
+        if (lines.length <= end) return lines;
+        if (end - start <= 0) return lines;
+
+        return lines.splice(start, end - start);
+    }
 }
 
 export class TocNode {
@@ -1702,6 +2166,8 @@ class MarkdownMetadata  {
     public lines: MarkdownLine[] = [];
     public mentionedTypes: string = '';
     public mentionedLinks: string[] = [];
+    public sharedComponents: string = '';
+    public targetComponent: string = 'NONE';
     public title: string = '';
     public keywords: string = '';
     public description: string = '';
@@ -1711,6 +2177,7 @@ class MarkdownMetadata  {
     public hasContent() { return this.content !== ""; }
     public hasMentionedTypes() { return this.mentionedTypes !== ""; }
     public hasMentionedLinks() { return this.mentionedLinks.length > 0; }
+    public hasSharedComponents() { return this.sharedComponents !== ""; }
     public hasTitle() { return this.title.indexOf('title:') >= 0; }
     public hasKeywords() { return this.keywords.indexOf('_keywords:') >= 0; }
     public hasLanguage() { return this.language.indexOf('_language:') >= 0; }
@@ -1739,6 +2206,10 @@ class MarkdownMetadata  {
             if (line.indexOf('#') !== 0 && line.indexOf('_language:') >= 0) this.language = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('_description:') >= 0) this.description = line.trim();
             if (line.indexOf('#') !== 0 && line.indexOf('mentionedTypes:') >= 0) this.mentionedTypes = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('sharedComponents:') >= 0) this.sharedComponents = line.trim();
+            if (line.indexOf('#') !== 0 && line.indexOf('targetComponent:') >= 0) {
+                this.targetComponent = line.replace('targetComponent:', '').trim();
+            }
         }
     }
 
@@ -1789,4 +2260,13 @@ class MarkdownLine {
     //     }
     //     return apiMembers;
     // }
+}
+
+class SharedSection {
+    components: string[] = [];
+    lines: string[] = [];
+    added: boolean = false;
+    constructor() {
+        // this.lines = [];
+    }
 }

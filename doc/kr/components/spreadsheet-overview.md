@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Spreadsheet | Grid Controls | Overview | Infragistics |
+title: {Platform} Spreadsheet | Grid Controls | Overview | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
-_keywords: Spreadsheet, $ProductName$, Infragistics
+_keywords: Spreadsheet, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Spreadsheet']
 ---
 
-# $Platform$ $Platform$ Spreadsheet
+# {Platform} {Platform} Spreadsheet
 
-The $Platform$ Spreadsheet is a $Platform$ component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
+The {Platform} Spreadsheet is a {Platform} component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
 
 ## Demo
 

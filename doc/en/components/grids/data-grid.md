@@ -1,15 +1,15 @@
 ---
-title: $Platform$ Data Grid Component | Real-Time $Platform$ Tables | Infragistics
-_description: Infragistics' $Platform$ grid component helps you create a fast, real-time react data grid. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ Table, Data Grid, overview, $ProductName$, data binding, Infragistics
+title: {Platform} Data Grid Component | Real-Time {Platform} Tables | Infragistics
+_description: Infragistics' {Platform} grid component helps you create a fast, real-time react data grid. Learn how {ProductName} can help you better display your data!
+_keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, Infragistics
 mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 ---
-# $Platform$ Data Grid Overview
+# {Platform} Data Grid Overview
 
-The $ProductName$ Data Table / Data Grid is a tabular $Platform$ grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the $Platform$ data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The $Platform$ tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
+The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The {Platform} tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
 
-## $Platform$ Data Grid Example
+## {Platform} Data Grid Example
 
 This demo implements some of the features that are available in the Grid:
 Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
@@ -17,7 +17,7 @@ Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summari
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="$Platform$ Data Grid Example"
+           alt="{Platform} Data Grid Example"
            github-src="grids/data-grid/overview">
 </code-view>
 
@@ -40,7 +40,7 @@ Afterwards, you may start implementing the control by adding the following names
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-When installing the $Platform$ grid package, the core package must also be installed.
+When installing the {Platform} grid package, the core package must also be installed.
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -126,7 +126,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ### Sample Data Source
-Now that the $Platform$ data grid module is imported, next is the basic configuration of the $Platform$ grid that binds to local data.
+Now that the {Platform} data grid module is imported, next is the basic configuration of the {Platform} grid that binds to local data.
 
 ```ts
     this.data = [{
@@ -179,6 +179,15 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 
 ```razor
 @code {
+
+    public List<SaleInfo> DataSource { get; set;}
+    Random Rand = new Random();
+
+    protected override void OnInitialized()
+    {
+        GenerateData();
+    }
+
     public void GenerateData()
     {
         string[] names = new string[] {
@@ -255,10 +264,10 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 
     public class SaleInfo
     {
-        public string Status { get; set; }
-        public string ProductName { get; set; }
-        public string CountryFlag { get; set; }
-        public string Country { get; set; }
+        public string? Status { get; set; }
+        public string? ProductName { get; set; }
+        public string? CountryFlag { get; set; }
+        public string? Country { get; set; }
         public DateTime OrderDate { get; set; }
         public double Profit { get; set; }
         public double ProductPrice { get; set; }
@@ -271,7 +280,7 @@ Now that the $Platform$ data grid module is imported, next is the basic configur
 ```
 
 ### Auto-Generate Columns
-The following code demonstrates how to bind the $Platform$ data grid to the above local data.
+The following code demonstrates how to bind the {Platform} data grid to the above local data.
 
 ```tsx
 <IgrDataGrid
@@ -327,7 +336,7 @@ grid1.dataSource = data;
     DataSource="DataSource"
     AutoGenerateColumns="true"
     DefaultColumnMinWidth="100"
-    SummaryScope="DataSourceSummaryScope.Root"
+    SummaryScope="SummaryScope.Root"
     IsColumnOptionsEnabled="true"
     IsGroupCollapsable="true"
     GroupSummaryDisplayMode="GroupSummaryDisplayMode.RowBottom"
@@ -424,7 +433,7 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 </iframe>
 <!-- end: Blazor -->
 
-### Additional Resources
+## Additional Resources
 
 - [Accessibility Compliance](data-grid-accessibility.md)
 - [Cell Activation](data-grid-cell-activation.md)
@@ -447,3 +456,7 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 <!-- React -->
 <!-- - [Row Paging](data-grid-row-paging.md) -->
 <!-- end: React -->
+
+ ## API Members
+
+ - `Grid`

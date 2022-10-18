@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Excel ライブラリ | データ スプレッドシートとテーブル | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。$ProductName$ Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
-_keywords: Excel library, $ProductName$, Infragistics, workbook, Excel ライブラリ, ワークブック, インフラジスティックス
+title: {Platform} Excel ライブラリ | データ スプレッドシートとテーブル | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリは、Microsoft Excel 機能を使用してスプレッドシート データを使用した作業が可能になります。{ProductName} Excel ライブラリを使用して Excel からアプリケーションにデータを簡単に転送できる方法について説明します。
+_keywords: Excel library, {ProductName}, Infragistics, workbook, Excel ライブラリ, ワークブック, インフラジスティックス
 mentionedTypes: ['Workbook']
 _language: ja
 ---
-# $Platform$ Excel ライブラリの概要
+# {Platform} Excel ライブラリの概要
 
-Infragistics $Platform$ Excel ライブラリは、Workbook、Worksheet、Cell、Formula などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics $Platform$ Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
+Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`Cell`、`Formula` などの人気の Microsoft® Excel® スプレッドシート オブジェクトを使用してスプレッドシート データで作業をすることができます。Infragistics {Platform} Excel ライブラリによって Excel スプレッドシートでアプリケーションのデータを表示するだけでなく、Excel からアプリケーションへのデータの転送も簡単になります。
 
-## $Platform$ Excel ライブラリの例
+## {Platform} Excel ライブラリの例
 
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="$Platform$ Excel ライブラリの例"
+           alt="{Platform} Excel ライブラリの例"
            github-src="excel/excel-library/overview">
 </code-view>
 
@@ -32,7 +32,7 @@ npm install --save {PackageExcel}
 
 ## モジュールの要件
 
-$Platform$ Excel ライブラリを作成するには、以下のモジュールが必要です。
+{Platform} Excel ライブラリを作成するには、以下のモジュールが必要です。
 
 ```ts
 // app.module.ts
@@ -80,7 +80,7 @@ Excel ライブラリには、アプリのバンドル サイズを制限する�
 
 ## 要件
 
-$Platform$ Excel ライブラリを使用するには、次の using ステートメントを追加する必要があります:
+{Platform} Excel ライブラリを使用するには、次の using ステートメントを追加する必要があります:
 
 ```razor
 @using Infragistics.Documents.Excel
@@ -215,3 +215,9 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 ```
 >
 <!-- -->
+
+## API メンバー
+
+ - `Load`
+ - `WorkbookInProcessRuntime`
+ - `Workbook`

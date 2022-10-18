@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Multiple Series | Infragistics
+title: {Platform} Map | Data Visualization Tools | Multiple Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Binding and Overlaying Multiple Shape Files
+# {Platform} Binding and Overlaying Multiple Shape Files
 
 In the `XamGeographicMap`, you can add multiple geographic series objects to overlay a few shapefiles with geo-spacial data. For example, `GeographicSymbolSeries` for plotting geographic locations of ports, the `GeographicPolylineSeries` for plotting routes between ports, and the `GeographicShapeSeries` for plotting shapes of countries.
 

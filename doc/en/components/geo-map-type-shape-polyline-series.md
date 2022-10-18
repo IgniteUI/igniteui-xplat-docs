@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Polyline Series | Infragistics
-_description: Use Infragistics $Platform$ map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, $ProductName$, shape polyline series, Infragistics
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+title: {Platform} Map | Data Visualization Tools | Shape Polyline Series | Infragistics
+_description: Use Infragistics {Platform} map's shape polyline series to render roads or connections between geographic locations such as cities or airports. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, {ProductName}, shape polyline series, Infragistics
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Using Shape Polyline Series
+# {Platform} Geographic Polyline Map
 
-Use the $Platform$ map component's `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
+In {Platform} map component, you can use the `GeographicPolylineSeries` to display geo-spatial data using polylines in a geographic context. This type of geographic series is often used to render roads or connections between geographic locations such as cities or airports.
 
-## $Platform$ Using Shape Polyline Series Example
+## {Platform} Geographic Polyline Map Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
-           alt="$Platform$ Using Shape Polyline Series Example"
+           alt="{Platform} Using Shape Polyline Series Example"
            github-src="maps/geo-map/type-shape-polyline-series">
 </code-view>
 
@@ -304,3 +304,9 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
+ ## API Members
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapefileConverter`

@@ -26,7 +26,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcSeriesComponent","mappedName":"targetSeries"}],"originalName":"TargetSeries"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"WebComponents","fileName":"igc-value-overlay-component.ts","dynamicModuleName":"igc-value-overlay-dynamic-module.ts","moduleName":"igc-value-overlay-module.ts","mappedName":"IgcValueOverlayComponent"}],
     "members":[
@@ -161,6 +162,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcSeriesComponent","mappedName":"series"}],"originalName":"Series"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-series-selecting-event-args.ts","mappedName":"IgcCalloutSeriesSelectingEventArgs"}],
@@ -331,7 +334,8 @@
     "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"right"}],"originalName":"labelTextMargin.right"},
     { 
     "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[

@@ -7,6 +7,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"actualInterval"}],"originalName":"ActualInterval"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"maximumZoomCategories"}],"originalName":"MaximumZoomCategories"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getCategoryBoundingBox"}],"originalName":"GetCategoryBoundingBox"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},

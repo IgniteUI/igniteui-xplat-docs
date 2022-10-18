@@ -1,14 +1,14 @@
 ---
-title: 반응형 데이터 그리드 | 테이블 제어 | $ProductName$ | 원격 데이터 바인딩 | Infragistics
-_description: $ProductName$ Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
-_keywords: grid, table, $ProductName$, Infragistics
+title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 원격 데이터 바인딩 | Infragistics
+_description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
+_keywords: grid, table, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
 ---
 
-# $Platform$ 가상 데이터 소스
+# {Platform} 가상 데이터 소스
 
-$ProductName$ 데이터 표/데이터 그리드는 하나의 코드 행으로 원격 데이터 소스에의 바인딩을 지원합니다.  $Platform$ 데이터 표의 가상 데이터 소스를 사용하면 원격 URI와 반환할 OData 엔터티로 $Platform$ 그리드를 설정하는 것만으로 $Platform$ 그리드가 나머지 작업을 실행합니다.
+{ProductName} 데이터 표/데이터 그리드는 하나의 코드 행으로 원격 데이터 소스에의 바인딩을 지원합니다.  {Platform} 데이터 표의 가상 데이터 소스를 사용하면 원격 URI와 반환할 OData 엔터티로 {Platform} 그리드를 설정하는 것만으로 {Platform} 그리드가 나머지 작업을 실행합니다.
 
 ## 데모
 
@@ -22,7 +22,7 @@ $ProductName$ 데이터 표/데이터 그리드는 하나의 코드 행으로 �
 <div class="divider--half"></div>
 
 ## 의존성
-코어 및 $Platform$ 데이터 그리드 패키지 외에도 데이터 소스 패키지를 설치해야 합니다.
+코어 및 {Platform} 데이터 그리드 패키지 외에도 데이터 소스 패키지를 설치해야 합니다.
 
 - **npm install --save {PackageCore}**
 - **npm install --save {PackageGrids}**
@@ -56,7 +56,7 @@ ModuleManager.register(
 <div class="divider--half"></div>
 
 ## 사용 방법
-$Platform$ 데이터 그리드 모듈을 가져 왔으므로 다음 단계는 원격 데이터에 바인딩하는 $Platform$ 그리드의 기본 설정입니다. 가상 데이터 소스를 생성합니다. 데이터를 검색할 URL을 `baseUri` 속성에 할당합니다. `entitySet` 속성을 설정하면 가상 데이터 소스에서 검색할 테이블을 알 수 있습니다.
+{Platform} 데이터 그리드 모듈을 가져 왔으므로 다음 단계는 원격 데이터에 바인딩하는 {Platform} 그리드의 기본 설정입니다. 가상 데이터 소스를 생성합니다. 데이터를 검색할 URL을 `baseUri` 속성에 할당합니다. `entitySet` 속성을 설정하면 가상 데이터 소스에서 검색할 테이블을 알 수 있습니다.
 
 ```ts
 private virtualData: ODataVirtualDataSource;

@@ -1,19 +1,21 @@
 ---
-title: $Platform$ Toast | Infragistics
-_description: With $ProductName$ Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Toast components
+title: {Platform} Toast | Infragistics
+_description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
 mentionedTypes: ['Toast']
 ---
 
-# $Platform$ Toast
+# {Platform} Toast
 
-The $ProductName$ Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
+The {ProductName} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
 
-## $ProductName$ Toast Example
+## {ProductName} Toast Example
+
+This sample demonstrates how to create `Toast` component.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast Example"
            github-src="notifications/toast/overview">
 </code-view>
 
@@ -22,12 +24,33 @@ The $ProductName$ Toast component is primarily used for system messaging, push n
 ### Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Toast`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrToastModule, IgrToast } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrToastModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `Toast`, you need to register it as follows:
 
@@ -42,11 +65,13 @@ defineComponents(IgcToastComponent);
 ```
 
 <!-- Blazor -->
+
 You will also need to link an additional CSS file to apply the styling to the `Calendar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
+
 <!-- end: Blazor -->
 
 The simplest way to display the toast component is to use its `Show` method and call it on a button click.
@@ -66,7 +91,7 @@ The simplest way to display the toast component is to use its `Show` method and 
     protected override void OnInitialized()
     {
         IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);        
+        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -79,11 +104,32 @@ The simplest way to display the toast component is to use its `Show` method and 
 }
 ```
 
+```tsx
+<IgrButton variant="contained" clicked={this.onShowButtonClicked}>
+    <span>Show Toast</span>
+</IgrButton>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onShowButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.show();
+    }
+}
+```
+
 ## Examples
 
 ### Properties
 
-Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 miliseconds.
+Use the `DisplayTime` property to configure how long the toast component is visible. By default, it's set to 4000 milliseconds.
 
 By default, the toast component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the toast will remain visible.
 
@@ -95,18 +141,18 @@ By default, the toast component is hidden automatically after a period specified
 <igc-toast id="toast">Toast Message</igc-toast>
 ```
 
-```razor    
+```razor
 <IgbButton @onclick=@OnToggleToastButtonClick Variant="ButtonVariant.Contained">Toggle Toast</IgbButton>
 <IgbButton @onclick=@OnToggleKeepOpenButtonClick Variant="ButtonVariant.Contained">Toggle KeepOpen Property</IgbButton>
 <IgbButton @onclick=@OnDisplayTimeButtonClick Variant="ButtonVariant.Contained">Set DisplayTime to 8000</IgbButton>
-    
+
 <IgbToast @ref=ToastRef>Toast Message</IgbToast>
 
 @code {
-    public IgbToast ToastRef{  get;  set; } 
+    public IgbToast ToastRef{  get;  set; }
 
     protected override void OnInitialized()
-    {        
+    {
         IgbButtonModule.Register(IgniteUIBlazor);
         IgbToastModule.Register(IgniteUIBlazor);
     }
@@ -137,10 +183,51 @@ By default, the toast component is hidden automatically after a period specified
 }
 ```
 
+```tsx
+<div>
+    <IgrButton variant="contained" clicked={this.onToggleButtonClicked}>
+        <span>Toggle Toast</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onKeepOpenButtonClicked}>
+        <span>Toggle keepOpen Property</span>
+    </IgrButton>
+    <IgrButton variant="contained" clicked={this.onDisplayTimeButtonClicked}>
+        <span>Set DisplayTime to 8000</span>
+    </IgrButton>
+</div>
+
+<IgrToast ref={this.onToastRef}>
+    <span>Toast Message</span>
+</IgrToast>
+
+public onToastRef(toast: IgrToast){
+    if (!toast) { return; }
+    this.toastRef = toast;
+}
+
+public onToggleButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.toggle();
+    }
+}
+
+public onKeepOpenButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.keepOpen = !this.toastRef.keepOpen;
+    }
+}
+
+public onDisplayTimeButtonClicked() {
+    if(this.toastRef){
+        this.toastRef.displayTime = 8000;
+    }
+}
+```
+
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="$Platform$ Toast Properties Example"
+           alt="{Platform} Toast Properties Example"
            github-src="notifications/toast/properties">
 </code-view>
 
@@ -159,7 +246,7 @@ igc-toast {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="$Platform$ Toast Styling Example"
+           alt="{Platform} Toast Styling Example"
            github-src="notifications/toast/styling">
 </code-view>
 
@@ -178,9 +265,24 @@ igc-toast {
 
 <!-- end: Blazor -->
 
+<!-- React -->
+
+* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+
+<!-- end: React -->
+
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
+
+ ## API Members
+
+ - `Calendar`
+ - `DisplayTime`
+ - `KeepOpen`
+ - `Show`
+ - `Toast`

@@ -1,27 +1,27 @@
 ---
-title: $Platform$ NavDrawer | Infragistics
-_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} NavDrawer | Infragistics
+_description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['NavDrawer']
 ---
 
-# $Platform$ Navigation Drawer Overview
+# {Platform} Navigation Drawer Overview
 
-The Infragistics $Platform$ Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The Infragistics {Platform} Navigation Drawer is a WebComponent that provides side navigation. It can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
-## $Platform$ Navigation Drawer Example
+## {Platform} Navigation Drawer Example
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
 ## Usage
 
-To get started with the `NavDrawer`, first you need to install $ProductName$ by executing the following command:
+To get started with the `NavDrawer`, first you need to install {ProductName} by executing the following command:
 
 ```cmd
 npm install {PackageComponents}
@@ -30,9 +30,9 @@ npm install {PackageComponents}
 Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
+defineComponents(IgcNavDrawerComponent);
 ```
 
 ## Adding Navigation Drawer Items
@@ -64,7 +64,7 @@ If all went well, you should see the following in your browser:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
@@ -101,12 +101,9 @@ Let's also add some radio buttons to display all `position` values. This way whe
 
 ```ts
 // ...
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
-
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-    IgcRadioComponent, IgcRadioGroupComponent);
+defineComponents(IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {
@@ -147,7 +144,7 @@ If all goes well, your component should now look like this:
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar Example"
+           alt="{Platform} Navigation Drawer Navbar Example"
            github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
 
@@ -188,7 +185,7 @@ And here's the result:
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini Example"
+           alt="{Platform} Navigation Drawer Mini Example"
            github-src="menus/nav-drawer/add-mini">
 </code-view>
 
@@ -222,7 +219,7 @@ igc-nav-drawer-header-item {
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer Styling Example"
+           alt="{Platform} Navigation Drawer Styling Example"
            github-src="menus/nav-drawer/styling">
 </code-view>
 
@@ -245,5 +242,5 @@ Additional Web Components that were used:
 
 Our community is active and always welcoming to new ideas.
 
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
+* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
