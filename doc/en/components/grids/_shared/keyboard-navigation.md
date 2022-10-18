@@ -47,9 +47,9 @@ When the **{ComponentTitle}** header container is focused, the following key com
  - <kbd>Ctrl + Arrow Up</kbd> sorts the active column header in ASC order. If the column is already sorted in ASC, sorting state is cleared
  - <kbd>Ctrl + Arrow Down</kbd> sorts the active column header in DSC order. If the column is already sorted in DSC, sorting state is cleared
  - <kbd>Space</kbd> selects the column; If the column is already selected, selection is cleared
- <!-- ComponentStart:{Grid} -->
+ <!-- ComponentStart:Grid -->
  - <kbd>Shift + Alt + Arrow Left</kbd> groups the column, if the column is marked as groupable
- <!-- ComponentEnd:{Grid} -->
+ <!-- ComponentEnd:Grid -->
  - <kbd>Shift + Alt + Arrow Right</kbd> ungroups the column, if the column is marked as groupable
  - <kbd>Alt + Arrow Left</kbd> or <kbd>Alt + Arrow Up</kbd> collapses the column group header, if the header is not already collapsed
  - <kbd>Alt + Arrow Right</kbd> or `Alt + Arrow Down</kbd> expands the column group header, if the header is not already expanded}
@@ -60,14 +60,8 @@ When the **{ComponentTitle}** body is focused, the following key combinations ar
 
 ### Key Combination
 
- - <kbd>Arrow Up</kbd>- navigates one cell up 
-<!-- ComponentStart:{HierarchicalGrid} --> 
-or one level up the {Component} hierarchy if necessary 
-<!-- ComponentEnd:{HierarchicalGrid} -->
- - <kbd>Arrow Down</kbd> navigates one cell down
- <!-- ComponentStart:{HierarchicalGrid} -->  
- or one level down the {Component} hierarchy if necessary
- <!-- ComponentEnd:{HierarchicalGrid} --> 
+ - <kbd>Arrow Up</kbd>- navigates one cell up @@if (igxName === 'IgxHierarchicalGrid') {, or one level up the grid hierarchy if necessary }(no wrapping)
+ - <kbd>Arrow Down</kbd> navigates one cell down @@if (igxName === 'IgxHierarchicalGrid') {, or one level down the grid hierarchy if necessary}(no wrapping)
  - <kbd>Arrow Left</kbd> navigates one cell left (no wrapping between lines)
  - <kbd>Arrow Right</kbd> - navigates one cell right (no wrapping between lines)
  - <kbd>Ctrl + Arrow Left</kbd> navigates to the leftmost cell in the row
@@ -76,8 +70,8 @@ or one level up the {Component} hierarchy if necessary
  - <kbd>Ctrl + Arrow Down</kbd> navigates to the last cell in the column
  - <kbd>Home</kbd> navigates to the leftmost cell in the row
  - <kbd>End</kbd> navigates to the rightmost cell in the row
- - <kbd>Ctrl + Home</kbd> navigates to the top leftmost data cell in the {Component}
- - <kbd>Ctrl + End</kbd> navigates to the bottom rightmost data cell in the {Component}
+ - <kbd>Ctrl + Home</kbd> navigates to the top leftmost data cell in the grid
+ - <kbd>Ctrl + End</kbd> navigates to the bottom rightmost data cell in the grid
  - <kbd>Page Up</kbd> scrolls one page (view port) up
  - <kbd>Page Down</kbd> scrolls one page (view port) down
  - <kbd>Enter</kbd> enters edit mode
@@ -95,7 +89,7 @@ or one level up the {Component} hierarchy if necessary
  <!-- ComponentEnd: HierarchicalGrid --> 
  <!-- ComponentStart: TreeGrid -->
   collapses the current node
- <!-- ComponentEnd: TreeGrid} -->
+ <!-- ComponentEnd: TreeGrid -->
  - <kbd>Alt + Arrow Right</kbd> or <kbd>Alt + Arrow Down</kbd> -  <!-- ComponentStart: Grid --> 
   over Group Row - expands the group
  <!-- ComponentEnd: Grid --> 
@@ -104,21 +98,45 @@ or one level up the {Component} hierarchy if necessary
  <!-- ComponentEnd: HierarchicalGrid --> 
  <!-- ComponentStart: TreeGrid -->
   expands the current node
- <!-- ComponentEnd: Tree{Component} --> 
- <!-- ComponentStart: {Component} --> 
+ <!-- ComponentEnd: TreeGrid --> 
+ <!-- ComponentStart: Grid --> 
  - <kbd>Alt + Arrow Left</kbd> or <kbd>Alt + Arrow Up</kbd> - over Master Detail Row - collapses the details view
  - <kbd>Alt + Arrow Right</kbd> or <kbd>Alt + Arrow Down</kbd> - over Master Detail Row - expands the details view
  - <kbd>Space</kbd> - over Group Row - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
- <!-- ComponentEnd: {Component} --> 
+ <!-- ComponentEnd: Grid --> 
 
-Practice all of the above mentioned actions in the demo sample below. Focus any navigable {Component} element and a list with some of the available actions for the element will be shown to guide you through.
+Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
 ## Demo
+ <!-- ComponentStart: Grid --> 
 
 <code-view style="height:470px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{Component}/{Component}-keyboardnav-guide" >
+           iframe-src="{environment:demosBaseUrl}/grid/grid-keyboardnav-guide" >
 </code-view>
+
+<div class="divider--half"></div>
+ <!-- ComponentEnd: Grid --> 
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<code-view style="height:600px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hgrid-keyboard-guide" >
+</code-view>
+
+<div class="divider--half"></div>
+<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+
+<code-view style="height:470px" 
+           data-demos-base-url="{environment:demosBaseUrl}" 
+           iframe-src="{environment:demosBaseUrl}/tree-grid/tgrid-keyboardnav-guide" >
+</code-view>
+
+<div class="divider--half"></div>
+<!-- ComponentEnd: TreeGrid -->
+
 
 ## Custom keyboard navigation
 Overriding the default behavior for a certain key or keys combination is one of the benefits that the **Keyboard Navigation** feature provides. For example: press the <kbd>Enter</kbd> or <kbd>Tab</kbd> key to navigate to the next cell or the cell below. This or any other navigation scenario is easily achieved by the **Keyboard Navigation** API:
@@ -126,42 +144,42 @@ Overriding the default behavior for a certain key or keys combination is one of 
 
 | API | Description | Arguments |
 |---------|-------------|-----------|
-| [`{Component}Keydown`]({environment:demosBaseUrl}/classes/{Component}component.html#{Component}Keydown) | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | [I{Component}KeydownEventArgs]({environment:demosBaseUrl}/interfaces/i{Component}keydowneventargs.html) |
-| [`activeNodeChange`]({environment:demosBaseUrl}/classes/{Component}component.html#activenodechange) | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | [IActiveNodeChangeEventArgs]({environment:demosBaseUrl}/interfaces/iactivenodechangeeventargs.html) |
-| [`navigateTo`]({environment:demosBaseUrl}/classes/{Component}component.html#navigateto) | Navigates to a position in the {Component}, based on provided `rowindex` and `visibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: {Component}KeydownTargetType, target: Object }` . Usage: <br />*{Component}.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `rowindex`: number, `visibleColumnIndex`: number, `callback`: (`{ targetType: {Component}KeydownTargetType, target: Object }`) => {} |
-| [`getNextCell`]({environment:demosBaseUrl}/classes/{Component}component.html#getnextcell)| returns [`ICellPosition`]({environment:demosBaseUrl}/interfaces/icellposition.html) object, which defines the next cell by `rowIndex` and `visibileColumnIndex`. A callback function can be passed as a third parameter of [`getNextCell`]({environment:demosBaseUrl}/classes/{Component}component.html#getnextcell) method. The callback function accepts `ColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const nextEditableCell = {Component}.getNextCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`ColumnComponent`) => boolean |
-| [`getPreviousCell`]({environment:demosBaseUrl}/classes/{Component}component.html#getPreviousCell)| returns [`ICellPosition`]({environment:demosBaseUrl}/interfaces/icellposition.html) object, which defines the previous cell by `rowIndex` and `visibileColumnIndex`. A callback function can be passed as a third parameter of [`getPreviousCell`]({environment:demosBaseUrl}/classes/{Component}component.html#getPreviousCell) method. The callback function accepts `ColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const prevEditableCell = {Component}.getPreviousCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`ColumnComponent`) => boolean |
+| [`gridKeydown`]({environment:angularApiUrl}/classes/igxgridcomponent.html#gridKeydown) | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | [IGridKeydownEventArgs]({environment:angularApiUrl}/interfaces/igridkeydowneventargs.html) |
+| [`activeNodeChange`]({environment:angularApiUrl}/classes/igxgridcomponent.html#activenodechange) | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | [IActiveNodeChangeEventArgs]({environment:angularApiUrl}/interfaces/iactivenodechangeeventargs.html) |
+| [`navigateTo`]({environment:angularApiUrl}/classes/igxgridcomponent.html#navigateto) | Navigates to a position in the grid, based on provided `rowindex` and `visibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: GridKeydownTargetType, target: Object }` . Usage: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `rowindex`: number, `visibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
+| [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell)| returns [`ICellPosition`]({environment:angularApiUrl}/interfaces/icellposition.html) object, which defines the next cell by `rowIndex` and `visibileColumnIndex`. A callback function can be passed as a third parameter of [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell) method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
+| [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getPreviousCell)| returns [`ICellPosition`]({environment:angularApiUrl}/interfaces/icellposition.html) object, which defines the previous cell by `rowIndex` and `visibileColumnIndex`. A callback function can be passed as a third parameter of [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getPreviousCell) method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
 <br />
 <!-- ComponentStart: HierarchicalGrid -->
 >[!NOTE]
-> Both [`getNextCell`]({environment:demosBaseUrl}/classes/{Component}component.html#getnextcell) and [`getPreviousCell`]({environment:demosBaseUrl}/classes/{Component}basedirective.html#getpreviouscell) are
+> Both [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell) and [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridbasedirective.html#getpreviouscell) are
 > availabe for the current level and cannot access cells from upper or lower level.
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the [`{Component}Keydown`]({environment:demosBaseUrl}/classes/{Component}component.html#{Component}Keydown) event:
+Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the [`gridKeydown`]({environment:angularApiUrl}/classes/igxgridcomponent.html#gridKeydown) event:
 
 <!-- ComponentStart: Grid -->
 ```html
-<-{Component} #{Component}1 [data]="data" [primaryKey]="'ProductID'" ({Component}Keydown)="customKeydown($event)">
+<igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-<-hierarchical-{Component} #{Component}1 [data]="data" ({Component}Keydown)="customKeydown($event, {Component}1)">
-    <-row-island [key]="'Albums'" ({Component}Created)="child{Component}Created($event)">
-    </-row-island>
-</-hierarchical-{Component}>
+<igx-hierarchical-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event, grid1)">
+    <igx-row-island [key]="'Albums'" (gridCreated)="childGridCreated($event)">
+    </igx-row-island>
+</igx-hierarchical-grid>
 ```
 
-In order to add custom keyboard navigation to Hierarchical{Component} child {Component}s too, each child {Component} should subscribe to [`{Component}Keydown`]({environment:demosBaseUrl}/classes/hierarchical{Component}component.html#{Component}Keydown) event. That's why in example above we have registered and event handler for for the [`{Component}Created`]({environment:demosBaseUrl}/classes/rowislandcomponent.html#{Component}Created) event:
+In order to add custom keyboard navigation to igxHierarchicalGrid child grids too, each child grid should subscribe to [`gridKeydown`]({environment:angularApiUrl}/classes/igxhierarchicalgridcomponent.html#gridKeydown) event. That's why in example above we have registered and event handler for for the [`gridCreated`]({environment:angularApiUrl}/classes/igxrowislandcomponent.html#gridCreated) event:
 
-```razor
-public child{Component}Created(event: I{Component}CreatedEventArgs) {
-    const {Component} = event.{Component};
-    event.{Component}.{Component}Keydown.subscribe((args) => {
-        this.customKeydown(args, {Component});
+```typescript
+public childGridCreated(event: IGridCreatedEventArgs) {
+    const grid = event.grid;
+    event.grid.gridKeydown.subscribe((args) => {
+        this.customKeydown(args, grid);
     });
 }
 ```
@@ -170,14 +188,14 @@ public child{Component}Created(event: I{Component}CreatedEventArgs) {
 
 <!-- ComponentStart: TreeGrid -->
 ```html
-<-tree-{Component} #{Component}1 [data]="data" ({Component}Keydown)="customKeydown($event)">
-</-tree-{Component}>
+<igx-tree-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event)">
+</igx-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-```razor
+```typescript
 public customKeydown(args: IGridKeydownEventArgs) {
-    const target: GridCell = args.target as GridCell;
+    const target: IgxGridCell = args.target as IgxGridCell;
     const evt: KeyboardEvent = args.event as KeyboardEvent;
     const type = args.targetType;
 
@@ -190,17 +208,17 @@ public customKeydown(args: IGridKeydownEventArgs) {
 }
 ```
 
-Based on the [I{Component}KeydownEventArgs]({environment:demosBaseUrl}/interfaces/i{Component}keydowneventargs.html) values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
+Based on the [IGridKeydownEventArgs]({environment:angularApiUrl}/interfaces/igridkeydowneventargs.html) values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
 
 <!-- ComponentStart: Grid -->
-```razor
+```typescript
     // 1. USER INPUT VALIDATON ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
         // alert the user that the input is invalid
         return;
     }
     // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    this.{Component}1.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
+    this.grid1.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
             obj.target.activate();
         });
 ```
@@ -215,13 +233,13 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:400px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{Component}/{Component}-custom-keyboard-navigation" >
+           iframe-src="{environment:demosBaseUrl}/grid/grid-custom-keyboard-navigation" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-```razor
+```typescript
     // 1. USER INPUT VALIDATON ON TAB
     if (target.column.dataType === 'number' && target.editValue < 0) {
         // alert the user that the input is invalid
@@ -229,7 +247,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
     }
     // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
     const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    {Component}.navigateTo(nexRowIndex, target.visibleColumnIndex,
+    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
         (obj) => { obj.target.nativeElement.focus(); });
 ```
 > Note: Please refer to the sample code for full implementation details.
@@ -243,7 +261,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:520px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/hierarchical-{Component}/hierarchical-{Component}-custom-kb-navigation" >
+           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-custom-kb-navigation" >
 </code-view>
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -251,7 +269,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 
 <!-- ComponentStart: TreeGrid -->
-```razor
+```typescript
     // 1. USER INPUT VALIDATON ON TAB
     if (target.column.dataType === 'number' && target.editValue < 18) {
         // alert the user that the input is invalid
@@ -273,22 +291,36 @@ Use the demo below to try out the custom scenarios that we just implemented:
            iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-keyboard-navigation" >
 </code-view>
 
-<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentEnd : TreeGrid -->
 
 ## Known Limitations
 
 |Limitation|Description|
 |--- |--- |
-| Navigating inside а {Component} with scrollable parent container. | If the {Component} is positioned inside a scrollable parent container and the user navigates to a {Component} cell that is out of view, parent container will not be scrolled.|
+| Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled.|
 
 ## API References
-* [{ComponentTitle}Component API]({environment:demosBaseUrl}/classes/@@igTypeDoc.html)
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-{Component}-theme)
+* [{ComponentTitle}Component API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## Additional Resources
+<div class="divider--half"></div>
 
-* [{Component} Keyboard Navigation](../{Component}/keyboard-navigation.md)
-* [{Component} overview]({Component}.md)
+<!-- ComponentStart: TreeGrid -->
+* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
+* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
+* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- ComponentStart: Grid -->
+* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
+* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
+<!-- ComponentEnd: Grid -->
+* [{ComponentTitle} overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -298,7 +330,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
+<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{platform})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{platform})
