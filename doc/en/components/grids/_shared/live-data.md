@@ -1,31 +1,21 @@
-@@if (igxName === 'IgxGrid') {
 ---
-title: Live Data Updates in Angular Data Grid - Ignite UI for Angular
-_description: Check out how the Ignite UI for Angular Data Grid can handle thousands of updates per second, while staying responsive for user interactions.
-_keywords: angular data grid, angular grid updates, angular live data
+title: Live Data updates in {Platform} {ComponentTitle} - {ProductName} for {Platform}
+_description: Check out how the {ProductName} for {Platform} {Component Name} can handle thousands of updates per second, while staying responsive for user interactions.
+_keywords: {Platform} {ComponentTitle}, {Platform} {Component} updates, {Platform} live data, infragistics
+sharedComponents: ["Grid", "TreeGrid"]
 ---
-}
 
-@@if (igxName === 'IgxTreeGrid') {
----
-title: Live Data Updates in Angular Tree Grid - Ignite UI for Angular
-_description: Check out how the Ignite UI for Angular Tree Grid can handle thousands of updates per second, while staying responsive for user interactions.
-_keywords: angular data grid, angular grid updates, angular live data
-_canonicalLink: grid/live-data
----
-}
-
-# Angular @@igComponent Live Data Updates
-The @@igComponent component is able to handle thousands of updates per second, while staying responsive for user interactions.
+# Angular {ComponentTitle} Live Data Updates
+The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
 
 ## Angular Live-data Update Example
-The sample below demonstrates the @@igComponent performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
+The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
 Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show `Category Prices per Region` data for the selected rows and the `Chart` column button will show the same for the current row.
 @@if (igxName === 'IgxGrid') {
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:lobDemosBaseUrl}"
-           iframe-src="{environment:lobDemosBaseUrl}/grid-finjs" alt="Angular Live-data Update Example">
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid-finjs" alt="Angular Live-data Update Example">
 </code-view>
 
 
@@ -69,15 +59,15 @@ The purpose of this demo is to showcase a financial screen board with Real-time 
 As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:lobDemosBaseUrl}"
-           iframe-src="{environment:lobDemosBaseUrl}/grid-finjs-dock-manager/grid-finjs-dock-manager" alt="Angular Live-data Update Example with a service">
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid-finjs-dock-manager/grid-finjs-dock-manager" alt="{Platform} Live-data Update Example with a service">
 </code-view>
 
 ### Start the hub connection
 
 The signal-r.service handles the connectivity and updates of the exposed manageable parameters *frequency*, *volume* and *live-update state toggle* (Start/Stop).
 
-```ts
+```razor
 this.hubConnection = new signalR.HubConnectionBuilder()
         .configureLogging(signalR.LogLevel.Trace)
         .withUrl('https://www.infragistics.com/angular-apis/webapi/streamHub')
@@ -100,7 +90,7 @@ By using the Action panel on the left, you can manage the frequency of the data 
 
 We use the 'updateparameters' method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
 
-```ts
+```razor
 this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll)
     .then(() => console.log('requestLiveData', volume))
     .catch(err => {
@@ -116,16 +106,9 @@ By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFac
 Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
 
 ## API References
-* [IgxGridComponent]({environment:angularApiUrl}/classes/igxgridcomponent.html)
-* [IgxGridComponent Styles]({environment:sassApiUrl}/#function-grid-theme)
-* [IgxColumnComponent]({environment:angularApiUrl}/classes/igxcolumncomponent.html)
-* [IgxGridRow]({environment:angularApiUrl}/classes/igxgridrow.html)
-* [IgxTreeGridRow]({environment:angularApiUrl}/classes/igxtreegridrow.html)
-* [IgxHierarchicalGridRow]({environment:angularApiUrl}/classes/igxhierarchicalgridrow.html)
-* [IgxGridCell]({environment:angularApiUrl}/classes/igxgridcell.html)
+* [{ComponentTitle}]({environment:angularApiUrl}/classes/igxgridcomponent.html)
 
 ## Additional Resources
-<div class="divider--half"></div>
 
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -137,7 +120,6 @@ Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build y
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
-<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
 * [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
@@ -147,14 +129,14 @@ Our community is active and always welcoming to new ideas.
 @@if (igxName === 'IgxTreeGrid') {
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:lobDemosBaseUrl}"
-           iframe-src="{environment:lobDemosBaseUrl}/treegrid-finjs" alt="Angular Live-data Update Example">
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/treegrid-finjs" alt="Angular Live-data Update Example">
 </code-view>
 
 
 ## API References
 
-<div class="divider--half"></div>
+
 
 * [IgxTreeGridComponent]({environment:angularApiUrl}/classes/igxtreegridcomponent.html)
 * [IgxGridCell]({environment:angularApiUrl}/classes/igxgridcell.html)
@@ -167,12 +149,12 @@ Our community is active and always welcoming to new ideas.
 
 ## Additional Resources
 
-<div class="divider--half"></div>
+
 
 * [Data Grid](../grid/grid.md)
 * [Row Editing](row-editing.md)
 
-<div class="divider--half"></div>
+
 Our community is active and always welcoming to new ideas.
 
 * [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
