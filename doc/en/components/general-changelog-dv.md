@@ -13,13 +13,36 @@ All notable changes for each version of {ProductName} are documented on this pag
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
-## Latest
+## **{PackageVerChanges-22-2}**
+
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
+
+These new chart improvements include: 
+
+* Automatic responsive layouts for horizontal label rotation based on browser / screen size. 
+* Automatic crosshair, animations and Y-Axis labels and label formatting. 
+* Enhanced rendering for rounded labels on all platforms. 
+* New API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
+  - InitialSortDescriptions 
+  - InitialSorts
+  - SortDescriptions
+  - InitialGroups
+  - InitialGroupDescriptions
+  - GroupDescriptions
+  - InitialSummaries
+  - InitialSummaryDescriptions
+  - SummaryDescriptions
+  - InitialGroupSortDescriptions
+  - GroupSorts
+  - GroupSortDescriptions
+
+## **{PackageVerChanges-22-1}**
 ### {PackageCharts} 
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
 * Added animation and transition-in support for Stacked Series. Animations can be enabled by setting the `IsTransitionInEnabled` property to true. From there, you can set the `TransitionInDuration` property to determine how long your animation should take to complete and the `TransitionInMode` to determine the type of animation that takes place.
-* Added `AssigningCategoryStyle` event, is now available to all series in `XamDataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
+* Added `AssigningCategoryStyle` event, is now available to all series in `DataChart`. This event is handled when you want to conditionally configure aspects of the series items such as `Fill` background-color and highlighting.
 * New `AllowedPositions` enumeration for CalloutLayer. Used to limit where the callouts are to be placed within the chart. By default, the callouts are intelligently placed in the best place but this used to force for example `TopLeft`, `TopRight`, `BottomLeft` or `BottomRight`.
 * New corner radius properties added for Annotation Layers; used to round-out the corners of each of the callouts. Note, a corner radius has now been added by default.
     - `CalloutCornerRadius` for CalloutLayer
@@ -186,22 +209,22 @@ Before, you had to import using full paths to API classes and enums:
 
 ```ts
 // gauges:
-import { IgxLinearGaugeComponent } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-component';
-import { IgxLinearGaugeModule } from 'igniteui-webcomponents-gauges/ES5/igx-linear-gauge-module';
-import { IgxLinearGraphRange } from 'igniteui-webcomponents-gauges/ES5/igx-linear-graph-range';
+import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-component';
+import { IgxLinearGaugeModule } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-module';
+import { IgxLinearGraphRange } from 'igniteui-angular-gauges/ES5/igx-linear-graph-range';
 
-import { IgxRadialGaugeComponent } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-component";
-import { IgxRadialGaugeModule } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-module";
-import { IgxRadialGaugeRange } from "igniteui-webcomponents-gauges/ES5/igx-radial-gauge-range";
-import { SweepDirection } from "igniteui-webcomponents-core/ES5/SweepDirection";
+import { IgxRadialGaugeComponent } from "igniteui-angular-gauges/ES5/igx-radial-gauge-component";
+import { IgxRadialGaugeModule } from "igniteui-angular-gauges/ES5/igx-radial-gauge-module";
+import { IgxRadialGaugeRange } from "igniteui-angular-gauges/ES5/igx-radial-gauge-range";
+import { SweepDirection } from "igniteui-angular-core/ES5/SweepDirection";
 
 // charts:
-import { IgxFinancialChartComponent } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-component";
-import { IgxFinancialChartModule } from "igniteui-webcomponents-charts/ES5/igx-financial-chart-module";
-import { IgxDataChartComponent } from "igniteui-webcomponents-charts/ES5/igx-data-chart-component";
-import { IgxDataChartCoreModule } from "igniteui-webcomponents-charts/ES5/igx-data-chart-core-module";
+import { IgxFinancialChartComponent } from "igniteui-angular-charts/ES5/igx-financial-chart-component";
+import { IgxFinancialChartModule } from "igniteui-angular-charts/ES5/igx-financial-chart-module";
+import { IgxDataChartComponent } from "igniteui-angular-charts/ES5/igx-data-chart-component";
+import { IgxDataChartCoreModule } from "igniteui-angular-charts/ES5/igx-data-chart-core-module";
 
 // maps:
-import { IgxGeographicMapComponent } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-component";
-import { IgxGeographicMapModule } from "igniteui-webcomponents-maps/ES5/igx-geographic-map-module";
+import { IgxGeographicMapComponent } from "igniteui-angular-maps/ES5/igx-geographic-map-component";
+import { IgxGeographicMapModule } from "igniteui-angular-maps/ES5/igx-geographic-map-module";
 ```
