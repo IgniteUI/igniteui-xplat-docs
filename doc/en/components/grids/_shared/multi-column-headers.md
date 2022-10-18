@@ -2,7 +2,7 @@
 title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of Ignite UI for {Platform} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
@@ -15,20 +15,20 @@ The {Platform} {ComponentTitle} supports multi-column headers which allow you to
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers"
            github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentName} Multi-Column Headers Overview Example">
+           alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
 </code-view>
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
 
 <!-- ComponentStart: Grid -->
 ```html
-<igx-grid [data]="data" [allowFiltering]="true">
+<{ComponentSelector} [data]="data" [allowFiltering]="true">
     <igx-column-group header="Contact Information">
         <igx-column sortable="true" resizable="true" field="Phone"></igx-column>
         <igx-column sortable="true" resizable="true" field="Fax"></igx-column>
         <igx-column sortable="true" resizable="true" field="PostalCode"></igx-column>
     </igx-column-group>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -80,7 +80,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 
 <!-- ComponentStart: Grid -->
 ```html
-<igx-grid [data]="data" height="600px" [allowFiltering]="true">
+<{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group header="General Information">
         <igx-column [movable]="true" sortable="true" resizable="true" field="CompanyName"></igx-column>
         <igx-column-group [movable]="true" header="Person Details">
@@ -88,7 +88,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
             <igx-column [movable]="true" sortable="true" resizable="true" field="ContactTitle"></igx-column>
         </igx-column-group>
     </igx-column-group>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -145,14 +145,14 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 
 <!-- ComponentStart: Grid -->
 ```html
-<igx-grid [data]="data" height="600px" [allowFiltering]="true">
+<{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
         <igx-column [movable]="true" sortable="true" resizable="true" field="CompanyName"></igx-column>
     </igx-column-group>
     <igx-column sortable="true" resizable="true" field="Phone"></igx-column>
     <igx-column sortable="true" resizable="true" field="Fax"></igx-column>
     <igx-column sortable="true" resizable="true" field="PostalCode"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -251,7 +251,7 @@ The following sample demonstrates how to implement collapsible column groups usi
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-header-template"
            github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentName} Multi Column Header Template Sample">
+           alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
 
 ## Styling
@@ -262,10 +262,10 @@ To get started with styling the sorting behavior, we need to import the `index` 
 @import '~igniteui-angular/lib/core/styles/themes/index';
 ``` 
 
-Following the simplest approach, we create a new theme that extends the [`igx-grid-theme`]({environment:sassApiUrl}/index.html#function-igx-grid-theme) and accepts the `$header-background`, `$header-text-color`, `$header-border-width`, `$header-border-style` and `$header-border-color` parameters.
+Following the simplest approach, we create a new theme that extends the [`{ComponentSelector}-theme`]({environment:sassApiUrl}/index.html#function-{ComponentSelector}-theme) and accepts the `$header-background`, `$header-text-color`, `$header-border-width`, `$header-border-style` and `$header-border-color` parameters.
 
 ```scss
-$custom-theme: igx-grid-theme(
+$custom-theme: {ComponentSelector}-theme(
     $header-background: #e0f3ff,
     $header-text-color: #e41c77,
     $header-border-width: 1px,
@@ -276,7 +276,7 @@ $custom-theme: igx-grid-theme(
 The last step is to **include** the component mixins: 
 
 ```scss
-@include igx-grid($custom-theme);
+@include {ComponentSelector}($custom-theme);
 ```
 
 >[!NOTE]
@@ -285,7 +285,7 @@ The last step is to **include** the component mixins:
  ```scss
 :host {
     ::ng-deep {
-        @include igx-grid($custom-theme);
+        @include {ComponentSelector}($custom-theme);
     }
 }
 ```
@@ -306,7 +306,7 @@ $custom-palette: igx-palette($primary: $light-blue-color, $deep-pink-color);
 And then with `igx-color` we can easily retrieve color from the palette.
 
 ```scss
-$custom-theme: igx-grid-theme(
+$custom-theme: {ComponentSelector}-theme(
     $header-background: igx-color($custom-palette, "primary", 500),
     $header-text-color: igx-color($custom-palette, "secondary", 500),
     $header-border-width: 1px,
@@ -343,12 +343,12 @@ In order to apply our custom schema we have to **extend** one of the globals `li
 Extending the global light-schema
 $my-custom-schema: extend($light-schema, 
     (
-        igx-grid: $custom-grid-schema
+        {ComponentSelector}: $custom-grid-schema
     )
 );
 
 // Defining our custom theme with the custom schema
-$custom-theme: igx-grid-theme(
+$custom-theme: {ComponentSelector}-theme(
   $palette: $custom-palette,
   $schema: $my-custom-schema
 );
@@ -362,7 +362,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
            github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentName} Multi Column Headers Styling Sample">
+           alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample">
 </code-view>
 
 ## Known Issues and Limitations
