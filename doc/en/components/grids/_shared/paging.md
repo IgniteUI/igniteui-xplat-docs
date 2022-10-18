@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Paging - Infragistics
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview
@@ -17,17 +17,17 @@ The following example represents {ComponentTitle} pagination and exposes the opt
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-sample"
            github-src="{ComponentSample}/paging-sample"
-           alt="{Platform} {ComponentName} Pagination Example">
+           alt="{Platform} {ComponentTitle} Pagination Example">
 </code-view>
 
 Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our {ComponentTitle} to enable paging:
 
 <!-- ComponentStart: Grid -->
 ```html
-<igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -94,15 +94,15 @@ Integration between Paging and Group By is described in the [Group By](groupby.m
 
 ## Usage
 
-The `Paginator` component is used along with the `{ComponentName}` component in the example below, but you can use it with any other component in case paging functionality is needed.
+The `Paginator` component is used along with the `{ComponentTitle}` component in the example below, but you can use it with any other component in case paging functionality is needed.
 
 <!-- ComponentStart: Grid -->
 ```html
-<igx-grid #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
             [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
@@ -156,8 +156,8 @@ Due to certain limitations in how the child grids of an IgxHierarchicalGrid are 
 ```html
 <igx-hierarchical-grid>    
     <igx-row-island>        
-        <igx-grid-toolbar *igxPaginator>           
-        </igx-grid-toolbar>
+        <{ComponentSelector}-toolbar *igxPaginator>           
+        </{ComponentSelector}-toolbar>
     </igx-row-island>    
 </igx-hierarchical-grid>
 ```
@@ -173,7 +173,7 @@ TO-DO H-GRID CODE SNIPPET
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-reusable-paginator"
            github-src="{ComponentSample}/reusable-paginator"
-           alt="{Platform} {ComponentName} Reusable Paginator Example">
+           alt="{Platform} {ComponentTitle} Reusable Paginator Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -230,7 +230,7 @@ The last step is to **include** the component mixins, each with its respective t
 
 ```scss
 @include grid-paginator($dark-grid-paginator);
-.igx-grid-paginator__pager {
+.{ComponentSelector}-paginator__pager {
     @include button($dark-button);
 }
 ```
@@ -365,13 +365,13 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-style"
            github-src="{ComponentSample}/paging-style"
-           alt="{Platform} {ComponentName} Paging Style Example">
+           alt="{Platform} {ComponentTitle} Paging Style Example">
 </code-view>
 
 <div class="divider--half"></div>
 
 ## API References
-* `{ComponentName}`
+* `{ComponentTitle}`
 * `GridPaginator`
 
 ## Additional Resources
