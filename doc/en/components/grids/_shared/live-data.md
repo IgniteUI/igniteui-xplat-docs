@@ -5,11 +5,11 @@ _keywords: {Platform} {ComponentTitle}, {Platform} {Component} updates, {Platfor
 sharedComponents: ["Grid", "TreeGrid"]
 ---
 
-# Angular {ComponentTitle} Live Data Updates
+# {Platform} {ComponentTitle} Live Data Updates
 
 The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
 
-## Angular Live-data Update Example
+## {Platform} Live-data Update Example
 
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
 Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show `Category Prices per Region` data for the selected rows and the `Chart` column button will show the same for the current row.
