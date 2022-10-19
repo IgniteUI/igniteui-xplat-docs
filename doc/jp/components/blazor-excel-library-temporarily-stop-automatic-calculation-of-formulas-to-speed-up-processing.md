@@ -1,44 +1,42 @@
 ---
-title: $Platform$ Excel Library | Temporarily Stop Automatic Calculation of Formulas to Speed Up Processing | Infragistics
-_description: Infragistics Blazor Excel Library – Temporarily Stop Automatic Calculation of Formulas to Speed Up Processing
-_keywords: $Platform$ excel library, calculation, speed up processing, $ProductName$, Infragistics
+title: $Platform$ Excel ライブラリ | 数式の自動計算を一時的に停止して処理速度を上げる | インフラジスティックス
+_description: Infragistics Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
+_keywords: $Platform$ excel ライブラリ, 計算, 処理の高速化, $ProductName$, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---
 
-# Blazor Excel Library – Temporarily Stop Automatic Calculation of Formulas to Speed Up Processing
+# Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
 
-When reading an Excel sheet using a certain document processing library, referencing or rewriting the value of a cell can take a considerable amount of time, especially if the Excel sheet contains a large number of cells with formulas. This is particularly true for [Blazor WebAssembly apps](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client).
+Excel シートを、[Blazor Excel ライブラリ](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library)で読み込み、そのセルの値を参照したり書き換えたりする際、とくにその Excel シートが数式を含むセルを大量に持っていると、セルの値の参照・書き換えにかなりの時間がかかる場合があります。この現象は (Blazor Server プログラムに比べ) [Blazor WebAssembly](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client) プログラム上ではとくに顕著です。
 
-But we’ve identified a way to help you speed up processing by using our [Blazor Excel Library](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library).
+このような場合に処理時間を改善する方法のひとつとして、数式の自動計算を一時的に停止する、という方法があります。
 
-How?
+このトピックではその具体的な方法を解説し、以下の疑問に答えます。
 
-By temporarily disabling the automatic calculation of formulas.
-In this quick how-to article, we will show you how exactly to do it and will cover the following questions: 
-* What is Blazor Excel Library in Ignite UI
-* What are Blazor Workbooks in Ignite UI
-* Speeding Up Processing in Blazor Excel Library
+* Ignite UI の Blazor Excel ライブラリ とは
+* Ignite UI の Blazor ワークブックとは
+* Blazor Excel ライブラリ での処理の高速化
 
-## What Is Blazor Excel Library in Ignite UI
+## Ignite UI の Blazor Excel ライブラリ とは
 
-The Infragistics Blazor Excel Library is a document processing library that allows you to work with spreadsheet data in a fast and easy way, similarly to Microsoft® Excel®. It comes with the familiar spreadsheet objects like Workbook, Worksheet, Cell, Formula, and more.
+Infragistics Blazor Excel ライブラリは、Microsoft® Excel® と同様に、表計算データを高速かつ簡単に操作できる文書処理ライブラリです。Workbook、Worksheet、Cell、Formula などのおなじみの表計算オブジェクトが付属しています。
 
-However, to use the Blazor excel library, you must first add the following @using statement:
+Blazor の Excel ライブラリを使用するには、まず以下の @using ステートメントを追加する必要があります。
 
 ```razor
 @using Infragistics.Documents.Excel
 ```
 
-If you are using a Web Assembly (WASM) Blazor project, there are a few more steps:
+WebAssembly (WASM) Blazor プロジェクトを使用している場合、さらにいくつかのステップがあります。
 
-Add a reference to the following script in the wwwroot/index.html file:
+まず wwwroot/index.html ファイルに以下のスクリプトへの参照を追加します。
 
 ```razor
 <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
 ```
 
-Set the static Workbook.InProcessRuntime to the current runtime. This can be done by using the following code:
+および、アプリケーションの初期化時に、Workbook クラスの InProcessRuntime 静的プロパティに、IJSInProcessRuntime オブジェクトを設定します。以下にコード例を示します。
 
 ```razor
 @using Microsoft.JSInterop
@@ -55,11 +53,11 @@ Set the static Workbook.InProcessRuntime to the current runtime. This can be
 }
 ```
 
-## What Are Blazor Workbooks in Ignite UI
+## Ignite UI の Blazor ワークブックとは
 
-The [Blazor Workbooks in Ignite UI](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library-using-workbooks) are designed to easily collect multiple worksheets so you can retrieve, store, organize, manage, edit, and process data in the most efficient way. You can either create a new Blazor workbook from scratch or import an existing document that’s been completed before.
+[Ignite UI の Blazor ワークブック](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/excel-library-using-workbooks)は、複数のワークシートを簡単に集約できるように設計されており、最も効率的な方法で、データの取得、保存、整理、管理、編集、加工を行うことが可能です。Blazor ワークブックは、ゼロから新規に作成することも、作成済みの既存のドキュメントをインポートすることもできます。
 
-This is how to create a workbook and set its title and status document properties:
+以下では、新規にワークブックを作成し、そのタイトルとステータスのドキュメント プロパティを設定する方法を示しています。
 
 ```razor
 var workbook = new Workbook();
@@ -67,66 +65,67 @@ workbook.DocumentProperties.Title = "Expense Report";
 workbook.DocumentProperties.Status = "Complete";
 ```
 
-Using the Infragistics Blazor Excel Engine you can:
+Infragistics Blazor Excel Engine を使用することで、以下が可能になります。
 
-* Save data to and load data from Microsoft® Excel®.
-* Create a collection of worksheets with related data.
-* Manage Blazor export to Excel and Blazor Excel import into your app, using the library’s classes.
-* Change default styles and add new font to the Styles collection of the Workbook.
-* Set Workbook Properties that provide information to help organize and keep track of your documents. The available properties are: Author, Title, Subject, Keywords, Category, Status, Comments, Company, and Manager.
-* Enable workbook protection feature to protect the structure of the workbook by invoking its protect method.
+* Microsoft® Excel® へのデータ保存と読み込み。
+* ワークシートのコレクションの作成。
+* Blazor アプリケーションから Excel へのエクスポート・アプリケーションへのインポート。
+* 既定のスタイルの変更、ワークブックのスタイル コレクションへの新しいフォントの追加。
+* ドキュメントの整理と追跡に有用な情報を提供するワークブック・プロパティの設定。 利用可能なプロパティは次のとおりです: 著者、タイトル、件名、キーワード、カテゴリ、ステータス、コメント、会社、および管理者。
+* ワークブックの保護機能の設定。保護機能を使うことで、ワークブックの構造を保護することができます。
 
-## Speeding Up Processing in Blazor Excel Library
+## Blazor Excel ライブラリ での処理の高速化
 
-As mentioned already, the best and quickest way to improve the processing time when you deal with a large number of cells with added formulas, is to temporarily stop the automatic formula calculation. Then refer to and rewrite the cell value and resume the automatic calculation of the formula after the process is completed. You can enable the automatic calculation whenever you decide.
+すでに述べたように、数式を含むセルを大量に扱う場合、処理時間を改善する方法のひとつとして、数式の自動計算を一時的に停止する方法があります。式の自動計算を一時的に停止している間にセルの値の参照・書き換えを行ない、ひととおり処理が完了してから、数式の自動計算を再開します。数式の自動計算はいつでも好きなタイミングで再開できます。
 
-How exactly does this suspension of the automatic formula calculation work? When it’s disabled, even if you refer to or rewrite the cell value, the formula isn’t recalculated each time which reduces the processing time.
+数式の自動計算が一時停止されている間は、セルの値を参照・書き換えても、都度毎回の数式の再計算が実行されなくなることで、処理時間を改善することができます。
 
-Call the SuspendCalculations () and ResumeCalculations () methods of the Workbook object.
+具体的には、Workbook オブジェクトの SuspendCalculations() メソッドと ResumeCalculations() メソッドをそれぞれ呼び出します (下記コード例)。
 
 ```razor
-@ using Infragistics. Documents . Excel
+@ using Infragistics.Documents.Excel
 ...
-var workbook = Workbook. Load ( ... );
+var workbook = Workbook.Load(...);
 
-// Calling SuspendCalculations () will stop the automatic calculation of formulas.
-workbook. SuspendCalculations (); 
+// 👇 SuspendCalculations() を呼び出すと、これ以降、数式の自動計算が止る
+workbook.SuspendCalculations();
 
-// ... Here is where you read, write, etc. the cells contained in this Workbook...
-// Call ResumeCalculations ()to resume the automatic formula calculation. 
+// ... ここで、この Workbook に含まれるセルの読み書きなどを行なう ...
 
-workbook. ResumeCalculations ();
+// 👇 ResumeCalculations() を呼び出すと、数式の自動計算が再開する
+workbook.ResumeCalculations();
 ```
 
-However, there are two basic cases when this method of temporarily stopping the automatic calculation of formulas cannot be applied to improve the processing speed.
+但し、数式の自動計算を一時的に停止する方法では、処理速度を向上させることができない基本的なケースが 2 つあります。
 
-1. This approach temporarily stops automatic cell calculation. So, if your business logic depends on automatic formula calculation, you may not be able to use this approach. There is a chance that a cell may hold a value which is not updated yet.
+1. この方法は、数式の自動計算を一時的に停止させるものです。そのため、ビジネスロジックが数式の自動計算に依存している場合、この方法を利用できないことが想定されます。また、セルに未更新の値が格納される可能性があります。
 
-2. If the automatic calculation of formulas is not the cause of the long processing time, this workaround cannot be expected to improve the processing speed.
+2. 処理時間が長くなる原因が数式の自動計算にない場合、この回避策による処理速度の向上は期待できません。
 
-It’s important to note that in .NET 6 and later [Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly) programs, enabling "AOT compilation" is expected to improve processing speed, especially for compute-intensive processes (such as Excel sheet processing). However, AOT compilation has some disadvantages such as:
+その他に、.NET 6 以降の [Blazor WebAssembly](https://blogs.jp.infragistics.com/entry/Blazor-Server-vs-Blazor-WebAssembly-Just-the-Facts) プログラムにおいては、「AOT コンパイル」を有効にすることにより、特に計算が中心となる処理 (Excel シートの処理のような) については処理速度の改善が見込まれます。但し AOT コンパイルには以下のようなデメリットもあります。
 
-* It takes too long to publish.
-* It increases the output application content size.
+* 発行処理に長い時間がかかる
+* 出力されるアプリケーションコンテンツサイズが大きくなる
 
-## Conclusion
-Processing an Excel file may take a considerable amount of time depending on:
+## まとめ
 
-* the content
-* the scale of the data you want to handle
-* the number of cells
+Excel ファイルの処理には、下記項目の状況によっては、かなりの時間がかかる場合があります。
 
-The focus of this article was to quickly show you how to improve speed for your documents and data processing when using Ignite UI for Blazor Excel Library and Workbooks. The primary technique we demonstrated was disabling the automatic formula calculation.
+* 内容
+* 処理するデータの規模
+* セル数
 
-But there are a few other tricks you can try out as well:
+この記事では、Ignite UI の Blazor Excel ライブラリおよびワークブックを使用する際に、ドキュメントやデータの処理速度を向上させる、その容易に適用できる技法に焦点を置き、そのひとつとして数式の自動式計算を一時停止する方法を紹介しました。
 
-* Use Ahead-Of-Time (AOT) compilation.
-* Run on the server side.
+しかし、他にも試せる技法がいくつかあります。
 
-You can read about the exact steps to do it in our previous blog post - How to Read and Write Excel Files on Blazor WebAssembly To Reduce Server Load.
+* AOT (Ahead-Of-Time) コンパイルを使用する。
+* サーバーサイドで実行する。
 
-## What is Ignite UI for Blazor?
+具体的な手順は、以前のブログ記事「Blazor WebAssemblyでExcelファイルを読み書きしてサーバーの負荷を軽減する方法」を参照してください。
 
-[Ignite UI for Blazor](https://www.infragistics.com/products/ignite-ui-blazor) is packed with professionally designed Blazor components like [Blazor Dock Manager](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager), super-fast and lightweight [Blazor Data Grid](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grids), over 60 high-performance Charts - [Financial/Stock Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/stock-chart), [Pie Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/pie-chart) and more - [Geospatial Maps](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map), [Multi-Column Combo Box](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox), full support for Blazor Server, Blazor WebAssembly, and .NET 6.
+## Ignite UI for Blazor について
 
-With the latest [Ultimate 22.1 Release](https://www.infragistics.com/community/blogs/b/infragistics/posts/ignite-ui-for-blazor---what-s-new-in-22-1), you can now take advantage of things like updated code generation delivered through the updated [low-code/no-code App Builder™](https://www.infragistics.com/products/appbuilder), Pagination for the Blazor Grid, Blazor Data Visualization, Tooltip and other great features and controls.
+[Ignite UI for Blazor](https://jp.infragistics.com/products/ignite-ui-blazor) には、[Blazor ドック マネージャー](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/layouts/dock-manager)、超高速・軽量の [Blazor データグリッド](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/grids/grids)、60 以上の高性能チャート - [株価チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/stock-chart)、[円チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/pie-chart)、その他多数 - [マップ](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/geo-map)、[Blazor 複数列コンボボックス](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/editors/multi-column-combobox)、などといった、Blazor Server と Blazor WebAssembly および .NET 6 を完全にサポートするプロフェッショナルレベルの Blazor コンポーネントが搭載されています。
+
+最新の [Ultimate 22.1 リリース](https://blogs.jp.infragistics.com/entry/ignite-ui-for-blazor---what-s-new-in-22-1) では、更新された [ローコード/ノーコードツール App Builder™](https://jp.infragistics.com/products/appbuilder) を通じて提供される最新のコード生成、Blazor グリッドのページネーション、Blazor データ可視化、 ツールチップ、その他の素晴らしい機能とコントロールを利用することができます。
