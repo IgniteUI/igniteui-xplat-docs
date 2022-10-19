@@ -6,12 +6,13 @@ sharedComponents: ["Grid", "TreeGrid"]
 ---
 
 # Angular {ComponentTitle} Live Data Updates
+
 The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
 
 ## Angular Live-data Update Example
+
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
 Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show `Category Prices per Region` data for the selected rows and the `Chart` column button will show the same for the current row.
-@@if (igxName === 'IgxGrid') {
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,10 +21,13 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
 
 
 ## Data binding and updates
+
 A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
+
 ```html
 <igx-grid #grid [data]="data"></igx-grid>
 ```
+
 ```typescript
 public ngOnInit() {
     this.localService.getData(this.volume);
@@ -39,6 +43,7 @@ Angular pipes are used internally to update the grid view. A change in the data 
     <igx-column field="price.usd"></igx-column>
 </igx-grid>
 ```
+
 ```typescript
 private updateData(data: IRecord[]) {
     const newData = []
@@ -124,9 +129,7 @@ Our community is active and always welcoming to new ideas.
 
 * [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
 * [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-}
 
-@@if (igxName === 'IgxTreeGrid') {
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -135,8 +138,6 @@ Our community is active and always welcoming to new ideas.
 
 
 ## API References
-
-
 
 * [IgxTreeGridComponent]({environment:angularApiUrl}/classes/igxtreegridcomponent.html)
 * [IgxGridCell]({environment:angularApiUrl}/classes/igxgridcell.html)
@@ -149,8 +150,6 @@ Our community is active and always welcoming to new ideas.
 
 ## Additional Resources
 
-
-
 * [Data Grid](../grid/grid.md)
 * [Row Editing](row-editing.md)
 
@@ -160,4 +159,4 @@ Our community is active and always welcoming to new ideas.
 * [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
 * [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
 
-}
+
