@@ -252,6 +252,12 @@
         "name": "Search",
         "href": "grids/lob-grid/search.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/lob-grid/filtering.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -293,6 +299,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/hierarchical-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -366,6 +378,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Search",
         "href": "grids/tree-grid/search.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/tree-grid/filtering.md", 
         "status": "NEW"
       }
     ]
