@@ -64,31 +64,50 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "How to",
-    "status": "NEW",
-    "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Blazor Excel Library",
-        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "How To Read & Write Excel Files To Reduce Server Load",
-        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "How To Customize Marker Display in Blazor Charts",
-        "href": "customize-marker-display-in-blazor-charts.md",
-        "status": ""
-      }
-    ]
+      "status": "NEW",
+      "items": [
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "Blazor Excel Library",
+          "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "How To Read & Write Excel Files To Reduce Server Load",
+          "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "name": "How To Customize Marker Display in Blazor Charts",
+          "href": "customize-marker-display-in-blazor-charts.md",
+          "status": ""
+        }
+      ]
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-blazor.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-react.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-wc.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "Changelog",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
@@ -258,6 +277,12 @@
         "name": "Summaries",
         "href": "grids/lob-grid/summaries.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
       }
     ]
   },
@@ -306,6 +331,12 @@
         "name": "Summaries",
         "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
       }
     ]
   },
@@ -325,6 +356,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
@@ -384,6 +421,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
