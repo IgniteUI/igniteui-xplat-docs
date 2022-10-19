@@ -273,6 +273,13 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/lob-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/lob-grid/display-density.md",
@@ -333,6 +340,13 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/hierarchical-grid/display-density.md",
@@ -430,6 +444,13 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/tree-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
