@@ -274,6 +274,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/lob-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/lob-grid/state-persistence.md",
         "status": "NEW"
@@ -318,6 +324,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/hierarchical-grid/summaries.md",
         "status": "NEW"
       },
       {
@@ -403,6 +415,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Search",
         "href": "grids/tree-grid/search.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/tree-grid/summaries.md",
         "status": "NEW"
       },
       {
