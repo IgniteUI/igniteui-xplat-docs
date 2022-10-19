@@ -271,6 +271,12 @@
         "name": "Search",
         "href": "grids/lob-grid/search.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
       }
     ]
   },
@@ -313,6 +319,12 @@
         "name": "Row Actions",
         "href": "grids/hierarchical-grid/row-actions.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
       }
     ]
   },
@@ -332,6 +344,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
@@ -385,6 +403,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Search",
         "href": "grids/tree-grid/search.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
