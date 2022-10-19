@@ -66,29 +66,48 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "操作方法",
-    "status": "NEW",
-    "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Blazor Excel ライブラリ",
-        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "サーバーの負荷を軽減するために Excel ファイルを読み書きする方法",
-        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Blazor チャートでマーカー表示をカスタマイズする方法",
-        "href": "customize-marker-display-in-blazor-charts.md",
-        "status": ""
-      }
-    ]
+      "status": "NEW",
+      "items": [
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "Blazor Excel ライブラリ",
+          "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "サーバーの負荷を軽減するために Excel ファイルを読み書きする方法",
+          "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "name": "Blazor チャートでマーカー表示をカスタマイズする方法",
+          "href": "customize-marker-display-in-blazor-charts.md",
+          "status": ""
+        }
+      ]
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-blazor.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-react.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-wc.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "変更ログ",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
@@ -212,6 +231,46 @@
         "name": "複数列ヘッダー",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/lob-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Clipboard Interactions",
+        "href": "grids/lob-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/lob-grid/column-types.md",
+        "status": "NEW"
+      },
+      { 
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/lob-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/lob-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/lob-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Search",
+        "href": "grids/lob-grid/search.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -225,6 +284,34 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/hierarchical-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Selection",
+        "href": "grids/hierarchical-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/hierarchical-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/row-actions.md", 
         "status": "NEW"
       }
     ]
@@ -240,6 +327,12 @@
         "name": "ピボット グリッドの共有トピック",
         "href": "grids/pivot-grid/template.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
       }
     ]
   },
@@ -253,6 +346,45 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Collapsible Column Groups",
+        "href": "grids/tree-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Clipboard Interactions",
+        "href": "grids/tree-grid/clipboard-interactions.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Column Types",
+        "href": "grids/tree-grid/column-types.md",
+        "status": "NEW"
+      },
+      {  
+        "name": "Selection",
+        "href": "grids/tree-grid/selection.md",
+        "status": "NEW"
+      },
+      {  
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Column Selection",
+        "href": "grids/tree-grid/column-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Actions",
+        "href": "grids/tree-grid/row-actions.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Search",
+        "href": "grids/tree-grid/search.md", 
         "status": "NEW"
       }
     ]
