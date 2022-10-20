@@ -1,120 +1,123 @@
 ---
-title: Customize Marker Display | Blazor Charts | Infragistics
-_description: Infragistics Blazor Charts - How to customize marker display in blazor charts
-_keywords: Blazor charts, marker display, $ProductName$, Infragistics
+title: マーカー表示をカスタマイズする | Blazor チャート | インフラジスティックス
+_description: Infragistics Blazor チャート - Blazor チャートでマーカー表示をカスタマイズする方法
+_keywords: Blazor チャート, マーカー表示, $ProductName$, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---
 
-# How To Customize Marker Display in Blazor Charts
+# Blazor チャートでマーカー表示をカスタマイズする方法
 
-In this quick how-to article, we will explain how to use the marker display customization function with Ignite UI for Blazor to display a scatter plot with markers of different sizes and fill colors depending on the properties of the bound items. For demonstration purposes, we will first create a sample Blazor app.
+このトピックでは、Ignite UI for Blazor のマーカー表示カスタマイズ機能を使って、バインドした項目のプロパティに応じた大きさと塗りつぶし色のマーカーで散布図を表示する方法を説明します。
 
-Contents of this article:
+目次:
 
-* [Customizing the display (drawing) of markers](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Creating a sample app with Blazor Chart](#creating-a-sample-blazor-app-and-blazor-chart)
-* [Defining a factory function that returns a custom drawing object](#defining-a-factory-function-that-returns-a-custom-drawing-object-for-the-marker)
-* [Implementing a measure method](#implementing-a-measure-method-for-the-markers-custom-drawing-object-in-the-blazor-chart)
-* [Implementing a custom rendering object render method](#implementing-a-render-method-for-the-markers-custom-rendering-object)
-* [Registering a factory function in Ignite UI](#registering-a-factory-function-in-the-ignite-ui-that-returns-a-custom-drawing-object-for-the-marker)
-* [Specifying the "script name" in the series parameters](#specifying-the-script-name-in-the-series-parameters)
-* [Conclusion – why Blazor is such a great framework](#in-conclusion)
+- [Blazor チャートでマーカー表示をカスタマイズする方法](#blazor-チャートでマーカー表示をカスタマイズする方法)
+  - [Blazor チャートを使用したサンプルアプリケーションの作成](#blazor-チャートを使用したサンプルアプリケーションの作成)
+  - [マーカーのカスタム描画オブジェクトを返す、ファクトリー関数を定義](#マーカーのカスタム描画オブジェクトを返すファクトリー関数を定義)
+  - [マーカーのカスタム描画オブジェクトの measure メソッドを実装](#マーカーのカスタム描画オブジェクトの-measure-メソッドを実装)
+  - [マーカーのカスタム描画オブジェクトの render メソッドを実装](#マーカーのカスタム描画オブジェクトの-render-メソッドを実装)
+  - [マーカーのカスタム描画オブジェクトを返すファクトリー関数を、Ignite UI に登録](#マーカーのカスタム描画オブジェクトを返すファクトリー関数をignite-ui-に登録)
+  - [マーカー描画に指定のスクリプト名の JavaScript プログラムを使うよう指定](#マーカー描画に指定のスクリプト名の-javascript-プログラムを使うよう指定)
+  - [まとめ](#まとめ)
 
-Let’s get started with the customization of the marker display in Blazor Charts and Graphs.
+それでは、Blazor チャートのマーカー表示のカスタマイズを始めましょう。デモのため、まずサンプル Blazor アプリを作成するところから始めます。
 
-## Creating a Sample Blazor App and Blazor Chart
+## Blazor チャートを使用したサンプルアプリケーションの作成
 
-To customize the display (drawing) of a marker based on the properties of the bound item, we create a JavaScript program that draws the marker, and specify the properties of the series that the marker should be drawn using this JavaScript program. A 2D context object of an HTML Canvas element is passed from the series to the JavaScript program responsible for drawing the marker.
+バインドした項目のプロパティに基づいて、マーカーの表示 (描画) をカスタマイズするには、マーカーの描画を行なう JavaScript プログラムを作成し、その自作の JavaScript プログラムを使ってマーカーの描画を行なうようシリーズのプロパティに指定することで行ないます。そのマーカーの描画を任される JavaScript プログラムには、シリーズから、HTML Canvas 要素の 2D コンテキストオブジェクトが渡されます。その HTML Canvas 2D コンテキストに対して、自由に描画することでマーカーの描画を実装します。
 
-Keep in mind that prior knowledge about drawing on JavaScript and HTML Canvas is required in order to customize the display (drawing) of the marker.
+そのため、マーカーの表示 (描画) のカスタマイズのためには、JavaScript および HTML Canvas への描画についての事前知識が必要となります。
 
-First, the type of sample data to be bound is the following record type. In addition to having properties such as XValue and YValue as the values ​​for the X-axis and Y-axis in the [Blazor Chart](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview), which are generally used in [Blazor Scatter chart type](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart), we will also add:
-
-* a "Double" type Volume property
-* a "Color" property
-
-The Volume property value of the Blazor Chart will be used as the size of the marker and the Color property value as the fill color of the marker.
+さて、バインドするサンプルデータの型ですが、下記のレコード型とします。
 
 ```razor
-public record SampleDataType (
+public record SampleDataType(
     string Name, 
     double XValue, 
     double YValue,
-    double Volume, // Set Shape 👈this property to the size of the marker,
-    System.Drawing.Color // Shape 👈Refer to this property as the fill color
+    double Volume, // 👈 このプロパティをマーカーの大きさに、
+    System.Drawing.Color Color // 👈 このプロパティを塗りつぶし色として参照
 );
 ```
 
-Using the above SampleDataType record type, prepare the sample data accordingly as shown below:
+[Blazor チャート](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/chart-overview)の[散布図](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/charts/types/scatter-chart)で一般的に使われるであろう、X 軸・Y 軸用の値として XValue、YValue といったプロパティを持つことに加えて、
+
+* double 型の Volume プロパティと、
+* System.Drawing.Color 型の Color プロパティを設けておきます。
+
+この Volume プロパティ値をマーカーの大きさとして、Color プロパティ値をマーカーの塗りつぶし色として、マーカーの表示に用いることとします。
+
+上記 SampleDataType レコード型を使用して、以下のとおり適当にサンプルデータを用意しておきます。
 
 ```razor
-// In the @code block in the sample Razor component (.razor)
-public IEnumerable <SampleDataType> DataSource { get ; } = new SampleDataType []  
+// サンプルの Razor コンポーネント (.razor) 中の @code ブロック内にて
+public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 {
-    new ( Name: "item1" , XValue: 0 , YValue: 2 , Volume: 5.7 , Color: System. Drawing . Color . Fuchsia ),
-    new ( Name: "item2" , XValue: 2 , YValue: 5 , Volume: 3.6 , Color: System. Drawing . Color . MediumOrchid ),
-    new ( Name: "item3" , XValue: 3 , YValue: 1 , Volume: 2.3 , Color: System. Drawing . Color . DarkViolet ),
-    new ( Name: "item4" , XValue: 4 , YValue: 6 , Volume: 8.5 , Color: System. Drawing . Color . SlateBlue ),
-    new ( Name: "item5" , XValue: 6 , YValue: 3 , Volume: 4.2 , Color: System. Drawing . Color . RoyalBlue ),
+    new (Name: "item1", XValue: 0, YValue: 2, Volume: 5.7, Color: System.Drawing.Color.Fuchsia),
+    new (Name: "item2", XValue: 2, YValue: 5, Volume: 3.6, Color: System.Drawing.Color.MediumOrchid),
+    new (Name: "item3", XValue: 3, YValue: 1, Volume: 2.3, Color: System.Drawing.Color.DarkViolet),
+    new (Name: "item4", XValue: 4, YValue: 6, Volume: 8.5, Color: System.Drawing.Color.SlateBlue),
+    new (Name: "item5", XValue: 6, YValue: 3, Volume: 4.2, Color: System.Drawing.Color.RoyalBlue),
 };
 ```
 
-Then, bind the sample data to the IgbScatterSeries data source, provided in the separately prepared IgbDataChart.
+上記のとおり用意したサンプル データを、別途用意した IgbDataChart 内に設けた、IgbScatterSeries のデータ ソースにバインドします (下記コード)。
 
 ```razor
-@ * In the markup in the sample Razor component (.razor) * @
-<IgbDataChart Height = "320px" Width = "320px">
-    <IgbNumericXAxis Name = "xAxis" MinimumValue = "0" MaximumValue = "7"/>
-    <IgbNumericYAxis Name = "yAxis" MinimumValue = "0" MaximumValue = "10"/>
-    <IgbScatterSeries DataSource = "@DataSource"
-        XMemberPath = "XValue"
-        YMemberPath = "YValue"
-        XAxisName = "xAxis"
-        YAxisName = "yAxis"/>
+@* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
+<IgbDataChart Height="320px" Width="320px">
+    <IgbNumericXAxis Name="xAxis" MinimumValue="0" MaximumValue="7"/>
+    <IgbNumericYAxis Name="yAxis" MinimumValue="0" MaximumValue="10"/>
+    <IgbScatterSeries DataSource="@DataSource"
+        XMemberPath="XValue"
+        YMemberPath="YValue"
+        XAxisName="xAxis"
+        YAxisName="yAxis"/>
 </IgbDataChart>
 ```
 
-Below you can see how the scatter plot is displayed.
+ここまでの実装で、下図のとおり、散布図が表示されるようになります。
 
 <img src="../images/general/blazor-wasm-app.png" />
 
-Moving on to customization now. Let’s tweak the display of the markers to show the size and fill color based on the properties of the bound item (Volume and Color this time).
+それではここから、この散布図におけるマーカーの表示を、冒頭の画像のように、バインドした項目のプロパティ (今回は Volume と Color) に応じた大きさと塗りつぶし色で表示するよう、カスタマイズしていきます。
 
-## Defining a Factory Function that Returns a Custom Drawing Object for the Marker
+## マーカーのカスタム描画オブジェクトを返す、ファクトリー関数を定義
 
-We must define a factory function that returns a JavaScript object with two methods - measure and render. This function is called from the Ignite UI toolbox each time a marker is drawn.
+まずはじめに、マーカー描画の必要が発生する毎に Ignite UI 側から呼び出される measure および render という2つのメソッドを持つ JavaScript オブジェクトを返す、そのような関数を定義します。
+例えば下記のとおり customMarkerTemplateFunc() とします。
 
-```razor
-// wwwroot / customMarkerTemplateFunc.js
-function customMarkerTemplateFunc () {
+```js
+// wwwroot/customMarkerTemplateFunc.js
+function customMarkerTemplateFunc() {
     return {
-        measure: function (mesureInfo) {},
-        render: function (renderInfo) {}
+        measure: function(mesureInfo) {},
+        render: function(renderInfo) {}
    }
 }
 ```
 
-## Implementing a measure Method for the Marker’s Custom Drawing Object in the Blazor Chart
-Ignite UI automatically calls this measure method every time the marker size is needed. At that time, the argument in the call to this measure method contains the JavaScript side representation of the data to be drawn in the .data.item field of the argument object.
+## マーカーのカスタム描画オブジェクトの measure メソッドを実装
+さて measure メソッドは、マーカーの大きさが必要となる度に、Ignite UI 側から呼び出されます。そのとき、この measure メソッドの呼び出し時の引数には、その引数オブジェクトの .data.item フィールドに、描画対象のデータの JavaScript 側表現が含まれています。
 
-In other words, the value of each property of the SampleDataType record type can be referenced from the argument when calling the measure method. This way, the size of the marker is calculated based on the specific value and the call from the Ignite UI is answered.
+つまり今回の例ですと、SampleDataType レコード型の各プロパティの値が、measure メソッド呼び出し時の引数から参照できますので、それに基づいてマーカーの大きさを算定し、Ignite UI からの呼び出しに対する回答とします。
 
-As a result, when calling this method the width and height of the marker (both in px) are set in the width and height fields of the argument.
+Ignite UI への回答方法は、この measure メソッド呼び出し時の引数の width および height フィールドにマーカーの幅と高さ (いずれも px 単位) を設定することで行ないます。
 
-```razor
-// wwwroot / customMarkerTemplateFunc.js
+```js
+// wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
-        measure: function ( measureInfo ) {
-           // In this example, based on the Volume property value of the data to draw
-           // 3 times that radius (so the diameter is 2 times that) Circle as a marker
-           // Width and height are calculated and set for drawing.
-           const item = measureInfo. data . item ;
-           const size = item. Volume * 3 * 2 ;
-           measureInfo. width = size;
-           easureInfo. height = size;
+        measure: function(measureInfo) {
+           // この例では、描画するデータの Volume プロパティ値に基づいて、
+           // その 3倍を半径とした (なので直径はその2倍) 円をマーカーとして
+           // 描画することとして、width と height を計算・設定しています。
+           const item = measureInfo.data.item;
+           const size = item.Volume * 3 * 2;
+           measureInfo.width = size;
+           easureInfo.height = size;
        }
    } 
 }
@@ -122,117 +125,116 @@ function customMarkerTemplateFunc () {
 ...
 ```
 
-## Implementing a render Method for the Marker's Custom Rendering Object
+## マーカーのカスタム描画オブジェクトの render メソッドを実装
 
-Next, we continue by implementing the render method. This method is called from the Ignite UI side every time a marker needs to be rendered. 
-During that time, the JavaScript-side representation of the data to be rendered will be included in the .data.item field of the argument object when this render method is called (similarly to the measure method). 
+引き続き render メソッドを実装していきます。この render メソッドは、マーカーの描画が必要となる度に、Ignite UI 側から呼び出されます。
+そのとき、この render メソッドの呼び出し時の引数には、(measure メソッドと同じく) その引数オブジェクトの .data.item フィールドに、描画対象のデータの JavaScript 側表現が含まれています。
 
-Therefore, when calling the render method, the data to be drawn can be referenced as a marker drawing parameter via its JavaScript-side representation. 
-You will see that the method draws a marker on the 2D context object of the HTML Canvas element passed via that argument.
+そのため、measure メソッドのときと同じように render メソッド呼び出し時も、その描画対象のデータを、その JavaScript 側表現を介して、マーカー描画のパラメータとして参照できます。そしてまた、render メソッド呼び出し時の引数には、マーカーを描画する対象となる HTML Canvas 要素の 2D コンテキストオブジェクトも、そのフィールド変数に格納されています。render メソッドでは、その引数経由で渡された 2D コンテキストオブジェクトに対して、マーカーの描画を実行します。以下にコード例を示します。
 
-```razor
-// wwwroot / customMarkerTemplateFunc.js
+```js
+// wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
         ... 
-        render: function ( renderInfo ) {
-            // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
-            // Take this out
+        render: function(renderInfo) {
+            // 引数に渡された renderInfo に描画のための座標関係の情報がつまっているので、
+            // これを取り出しておく
             const cx = renderInfo.xPosition;
             const cy = renderInfo.yPosition;
             const halfWidth = renderInfo.availableWidth / 2.0;
             const halfHeight = renderInfo.availableHeight / 2.0;
-            // For the marker fill color, use the Color property value of the data to be drawn.
-            // (By the way, the default marker fill color is
-            // stored in renderInfo.data.actualItemBrush.fill)
-            const color = renderInfo.data.item .Color; 
-            // Draw a marker against the 2D context of the HTML Canvas element
-            // (Draw a perfect circle marker with the size calculated by the measure method)
-            const ctx = renderInfo.context ; 
-            ctx.beginPath(); 
-            ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`; 
-            ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
+            // マーカーの塗りつぶしの色は、描画するデータの Color プロパティ値を使う
+            // (ちなみに、既定のマーカーの塗りつぶし色は、
+            //  renderInfo.data.actualItemBrush.fill に格納されています)
+            const color = renderInfo.data.item.Color; 
+            // HTML Canvas 要素の 2D コンテキストに対して、マーカーの描画を実行
+            // (measure メソッドで算定した大きさで、真円のマーカーを描画)
+            const ctx = renderInfo.context;
+            ctx.beginPath();
+            ctx.fillStyle = `rgba (${color.R}, ${color.G}, ${color.B}, ${color.A})`; 
+            ctx.ellipse(cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
             ctx.fill(); 
         }
     }
 }
 ...
 ```
-Note you can implement any custom drawing with the HTML Canvas 2D context.
+なお、HTML Canvas の 2D コンテキストに対して行える処理は何でも実行可能ですので、どのようなカスタム描画も実装できます。
 
-However, since the render method is responsible for rendering the markers, it is necessary to implement all the processing required to display the markers by yourself. Therefore, prior knowledge of 2D rendering to the HTML Canvas element is required.
+ただし、マーカーを描画する全責任がこの render メソッドに任されていますから、マーカー表示に必要な処理は、些細なことでもすべてを自身で実装する必要があり、そのため HTML Canvas 要素への 2D 描画処理についての事前知識が必要となります。
 
-## Registering a Factory Function in the Ignite UI That Returns a Custom Drawing Object for the Marker
+## マーカーのカスタム描画オブジェクトを返すファクトリー関数を、Ignite UI に登録
 
-Once the measure and render methods are implemented, call the igRegisterScript() function provided by Ignite UI. This will register the function that returns an object with two methods - measure and render. Then, specify the "script name" character string in the first argument of the igRegisterScript () function.
+measure および render メソッドが実装できたら、残りの作業はあと少しです。ここまでで実装した、measure および render の 2つのメソッドを持つオブジェクトを返す関数を、Ignite UI が提供する igRegisterScript() 関数を呼び出して、Ignite UI に対して登録します。
 
-With Ignite UI, it is identified by the “script name” specified in this first argument, regardless of the name of the actual JavaScript function.
+このとき、igRegisterScript() 関数の第1引数に、文字列の「スクリプト名」を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した「スクリプト名」で識別されます。以下にコード例を示します。
 
-```razor
-// wwwroot / customMarkerTemplateFunc.js
+```js
+// wwwroot/customMarkerTemplateFunc.js
 
-function customMarkerTemplateFunc ( ) {
-...
+function customMarkerTemplateFunc() {
+    ...
 }
 
-// Register the factory function implemented above in the Ignite UI.
-// (* The "script" name specified in the first argument of this registration is used
-// regardless of the JavaScript name of the factory function.
-igRegisterScript ( "customMarkerTemplateFunc" , customMarkerTemplateFunc );
+// 上で実装したファクトリー関数を、Ignite UI に登録します。
+// (※ファクトリー関数の JavaScript 上の名前とは関係なく、
+//    この登録時の第一引数で指定した "スクリプト" 名称で参照されます)
+igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```
 
-The above JavaScript program is loaded into the browser. However, in order to avoid global pollution, when the above script registration is executed, the JavaScript program up to this point is wrapped in an anonymous function that is immediately executed.
+以上の JavaScript プログラムをブラウザに読み込ませるわけですが、ブラウザに読み込まれたときに、上記スクリプト登録が実行されつつグローバル汚染を避けるために、ここまでの JavaScript プログラムを即時実行の無名関数でくるんでおくことにします。以下にコード例を示します。
 
-```razor
-// wwwroot / customMarkerTemplateFunc.js
+```js
+// wwwroot/customMarkerTemplateFunc.js
 
-(function () {
-    function customMarkerTemplateFunc ( ) {
+(function() {
+    function customMarkerTemplateFunc() {
         ...
     } 
-    igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
+    igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
-This completes the implementation on the JavaScript side.
+これで JavaScript 側の実装がひととおり完了となります。
 
-The created JavaScript program file (.js) should be included in the fallback page (wwwroot/index.html, Pages/_Layout.cshtml、Pages/_Host.cshtml) as a script element so that it can be loaded from the browser.
+こうして作成した JavaScript プログラムファイル (.js) を、ブラウザから読み込むように、フォールバックページ (wwwroot/index.html や Pages/_Layout.cshtml、Pages/_Host.cshtml など) に script 要素を記載します。
 
-Mind the arrangement order of the script elements in order to ensure it will be loaded after the JavaScript runtime of Ignite UI for Blazor.
+その際、Ignite UI for Blazor の JavaScript ランタイムよりあとで読み込まれるよう、script 要素の配置順にはご注意ください。以下に Blazor WebAssembly プログラムにおけるコード例を示します。
 
-```razor
-<script src="_content / IgniteUI.Blazor / app.bundle.js"> </script>
+```html
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 
-<!-After JavaScript in Ignite UI for Blazor,
-Load a custom drawing JavaScript program for marker display-> 
+<!-- Ignite UI for Blazor の JavaScript よりあとで、
+     マーカー表示のカスタム描画の JavaScript プログラムを読み込み --> 
 
 <script src="customMarkerTemplateFunc.js"></script>  
 ... 
 ```
 
-## Specifying the “Script Name” in the Series Parameters
+## マーカー描画に指定のスクリプト名の JavaScript プログラムを使うよう指定
 
-Finally, specify the "script name" in the series parameter to use the JavaScript program for custom rendering of markers created up to this point.
+最後に、ここまでで作成した、マーカーのカスタム描画を行なう JavaScript を使うよう、シリーズのパラメータにて、"スクリプト名" で指定します。
 
-There is a string parameter called MarkerTemplateScript, where you specify the script name of the JavaScript program that will perform the custom drawing of the marker. It is identified by the character string specified in the first argument when registering with the igRegisterScript () JavaScript function.
+具体的には MarkerTemplateScript という string 型のパラメータがありますので、ここに、マーカーのカスタム描画を行なう JavaScript プログラムのスクリプト名 (igRegisterScript() JavaScript 関数での登録時に、第1引数に指定した文字列で識別) を指定します。下記にコード例を示します。
 
 ```razor
-@* In the markup in the sample Razor component (.razor) *@
-<IgbDataChart Height = "320px" Width = "320px">  
+@* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
+<IgbDataChart Height="320px" Width="320px">  
     ... 
     <IgbScatterSeries ...
-    ...
-    MarkerTemplateScript = "customMarkerTemplateFunc"/>
+        ...
+        MarkerTemplateScript="customMarkerTemplateFunc"/>
 </IgbDataChart> 
 ```
-The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.
+これで、バインドした項目のプロパティに応じた大きさと塗りつぶし色のマーカーで、散布図が表示されるようになりました。
 
 <img src="../images/general/blazor-wasm-app-2.png" />
 
-## In Conclusion
+## まとめ
 
-We find Blazor a great choice for .NET developers who want to build high-end web applications, manage data visualizations, and improve the default look and feel of Data Charts without dealing with the complexity of popular [frameworks like Angular](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-vs-angular).
+Blazor は、[Angular](https://blogs.jp.infragistics.com/entry/blazor-vs-angular) のようなよく知られてはいるが複雑なフレームワークを扱うことなく、ハイエンドな Web アプリケーションの構築や、データ可視化の管理、データ チャートの既定の外観と操作感の改善を望む .NET 開発者にとって優れた選択です。
 
-Doing this, however, takes more than just tweaking colors, margins, and paddings. Knowing that it’s critical to have a data visualization toolset that can handle voluminous, real-time data loads, while simultaneously providing beautiful and interactive experience, we invested efforts and time in improving all data visualization capabilities and data charts in Ignite UI for Blazor in [the latest Ultimate 22.1 Product Release](https://www.infragistics.com/community/blogs/b/jason_beres/posts/product-release-whats-new-in-infragistics-ultimate-22-1). 
+しかし、そのような Web アプリケーションを構築するには、色やマージン、パディングを調整するだけでは不十分です。大量のリアルタイムのデータロードを処理できると同時に、美しく対話的な体験を提供できるデータ可視化ツールセットが重要であるとの認識から、我々は[最新の Ultimate 22.1 製品リリース](https://jp.infragistics.com/community/blogs/b/jason_beres/posts/product-release-whats-new-in-infragistics-ultimate-22-1) で Ignite UI for Blazor のすべてのデータ可視化機能およびデータチャートの改善に努力と時間をつぎ込みました。
 
-Some of the most recent add-ons to Ignite UI for Blazor include: Auto-Label Rotation, Style Events, Properties for Label Gaps, Positioning in Callout Layers, Highlighting Series Modes, Horizontal & Vertical Scrollbars, Margin Angle Modes and [Blazor grids](https://www.youtube.com/watch?v=1dWR_N4teDs) and components such as Data Legend and Data Tooltip. 
+Ignite UI for Blazor の最新のアドオンには、自動ラベル回転、スタイル イベント、ラベル ギャップのプロパティ、コールアウト レイヤーでの位置決め、シリーズ モードの強調、水平および垂直スクロールバー、マージンアングル モードと [Blazor グリッド](https://www.youtube.com/watch?v=1dWR_N4teDs)、データ凡例とデータ ツールチップなどのコンポーネントが含まれます。
