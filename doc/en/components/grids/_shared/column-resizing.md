@@ -26,7 +26,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 ```
 
 ```razor
-<IgbGridColumn Field="ID" Resizable=true Width="100px"></IgbGridColumn>
+<IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -37,7 +37,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 ```
 
 ```razor
-<IgbGridColumn Field="Artist" Resizable=true></IgbGridColumn>
+<IgbColumn Field="Artist" Resizable=true></IgbColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -63,8 +63,8 @@ public onResize(event) {
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
-    <IgbGridColumn Field="ID" Resizable=true Width="100px"></IgbGridColumn>
-    <IgbGridColumn Field="CompanyName" Resizable=true Width="100px"></IgbGridColumn>
+    <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
 </IgbGrid>
 
 @code {
@@ -141,9 +141,9 @@ This means that the following configuration is possible:
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
-    <IgbGridColumn Field="ID" Resizable=true Width="10%"></IgbGridColumn>
-    <IgbGridColumn Field="CompanyName" Resizable=true Width="100px"></IgbGridColumn>
-    <IgbGridColumn Field="ContactTitle" Resizable=true></IgbGridColumn>
+    <IgbColumn Field="ID" Resizable=true Width="10%"></IgbColumn>
+    <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="ContactTitle" Resizable=true></IgbColumn>
 </IgbGrid>
 ```
 
@@ -204,7 +204,7 @@ You can also configure the minimum and maximum allowable column widths. This is 
 ```
 
 ```razor
-<IgbGridColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbGridColumn>
+<IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -216,7 +216,7 @@ You can also configure the minimum and maximum allowable column widths. This is 
 ```
 
 ```razor
-<IgbGridColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbGridColumn>
+<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -233,7 +233,7 @@ This means the following configurations are possible:
 ```
 
 ```razor
-<IgbGridColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbGridColumn>
+<IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -245,7 +245,7 @@ This means the following configurations are possible:
 ```
 
 ```razor
-<IgbGridColumn Field="Artist" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbGridColumn>
+<IgbColumn Field="Artist" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -260,7 +260,7 @@ or
 ```
 
 ```razor
-<IgbGridColumn Field="ID" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbGridColumn>
+<IgbColumn Field="ID" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbColumn>
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -272,7 +272,7 @@ or
 ```
 
 ```razor
-<IgbGridColumn Field="Artist" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbGridColumn>
+<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbColumn>
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -298,7 +298,7 @@ column.autosize();
 
     protected void OnInitialize()
     {
-        IgbGridColumn column = gridRef.Columns.Where((col) => { return col.Field == "ID"; }).FirstOrDefault();
+        IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "ID"; }).FirstOrDefault();
         column.Autosize(false);
     }
 }
@@ -320,7 +320,7 @@ column.autosize();
 
     protected void OnInitialize()
     {
-        IgbGridColumn column = gridRef.Columns.Where((col) => { return col.Field == "Artist"; }).FirstOrDefault();
+        IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "Artist"; }).FirstOrDefault();
         column.Autosize(false);
     }
 }
@@ -337,7 +337,7 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 ```
 
 ```razor
-<IgbGridColumn Width="auto"></IgbGridColumn>
+<IgbColumn Width="auto"></IgbColumn>
 ```
 
 When the column is first initialized in the view it resolves its width to the size of the longest visible cell or header. Note that cells that are outside of the visible rows are not included.
