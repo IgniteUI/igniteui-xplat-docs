@@ -273,6 +273,30 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/lob-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/lob-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/lob-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/lob-grid/filtering.md", 
@@ -321,6 +345,30 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/hierarchical-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/hierarchical-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/hierarchical-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md", 
@@ -344,6 +392,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
@@ -397,6 +451,30 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Search",
         "href": "grids/tree-grid/search.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/tree-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/tree-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/tree-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       },
       {
