@@ -273,13 +273,12 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
         "href": "grids/lob-grid/cell-editing.md", 
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/lob-grid/display-density.md",
@@ -295,6 +294,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/lob-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -340,13 +345,12 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
         "href": "grids/hierarchical-grid/cell-editing.md", 
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/hierarchical-grid/display-density.md",
@@ -362,6 +366,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/hierarchical-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -444,13 +454,12 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
         "href": "grids/tree-grid/cell-editing.md", 
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Display Density",
         "href": "grids/tree-grid/display-density.md",
@@ -466,6 +475,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/tree-grid/filtering.md", 
         "status": "NEW"
       }
     ]
