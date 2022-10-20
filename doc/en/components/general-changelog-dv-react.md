@@ -2,16 +2,12 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
-
-> [!NOTE]
-> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
-> For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 ## **{PackageVerChanges-22-2}**
 
@@ -36,6 +32,13 @@ These new chart improvements include:
   - GroupSorts
   - GroupSortDescriptions
 
+### {PackageGrids}
+
+* Changed `Column` to `DataGridColumn`
+* Changed `GridCellEventArgs` to `DataGridCellEventArgs`
+* Changed `GridSelectionMode` to `DataGridSelectionMode`
+* Changed `SummaryOperand` to `DataSourceSummaryOperand`
+
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts} 
 
@@ -54,6 +57,34 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+## **{PackageVerChanges-21-2.1}**
+
+### {PackageGrids}
+
+#### Data Grid 
+- Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
+
+> [!NOTE]
+> The following breaking changes were introduced
+
+- Changed `ValueField` property from type string[] to string. 
+
+### {PackageInputs}
+
+#### Date Picker 
+- Changed ValueChanged event to `SelectedValueChanged`.
+
+#### Multi-Column ComboBox
+- Changed `TextChanged` event to `TextValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
+
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-2}**
@@ -61,7 +92,7 @@ These new chart improvements include:
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts}
+### {PackageCharts} 
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -93,6 +124,22 @@ This release introduces a few improvements and simplifications to visual design 
 Old brushes/outlines | New outline/brushes
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+
+<div class="divider--half"></div>
+
+### {PackageGrids}
+
+* New Features Added:
+    - [Filter Row](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [Cell Merging](grids/data-grid-cell-merging.md)
+* New API:
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+     e.g. Multiple row selection.
+* Breaking Changes:
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 <div class="divider--half"></div>
 
@@ -160,6 +207,90 @@ for example:
 
 <div class="divider--half"></div>
 
+### {PackageGrids}
+
+* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
+* Added `SelectAllRows` - method.
+* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+    - Click and drag to select rows
+    - Shift and click to select multiple rows.
+    - Shift and press the up/down arrow keys to select multiple rows.
+* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+* Added Column Summaries to Column Options Dialog.
+
+### {PackageInputs}
+
+#### Date Picker
+
+* `ShowTodayButton` - Toggles Today button visibility
+* `Label` - Adds a label above the date value
+* `Placeholder` property - adds custom text when no value is selected
+* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
+* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
+* `FirstDayOfWeek` - Specifies first day of week
+* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
+* `ShowWeekNumbers` - Toggles Week number visibility
+* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+* Added Accessibility
+
+<div class="divider--half"></div>
+
+## **{PackageVerChangedFields}**
+
+### {PackageGrids}
+
+> [!NOTE]
+> These breaking changes were introduce in the grid package.
+
+- Changed name of PropertyPath
+
+The data grid component property `propertyPath` has been renamed to `field`. This applies to all Column types, GroupDescription, SortDescription & SummaryDescription.
+
+```tsx
+ <IgrTextColumn field="Name"/>
+```
+
+```ts
+import { IgrColumnSummaryDescription, IgrColumnSortDescription, IgrColumnGroupDescription } from 'igniteui-react-grids'
+const productCount = new IgrColumnSummaryDescription();
+productCount.field = "ProductName";
+const colSortDesc = new IgrColumnSortDescription();
+colSortDesc.field = "UnitsInStock";
+const income = new IgrColumnGroupDescription();
+income.field = "Income";
+```
+
+## **{PackageVerRenamedGrid}**
+
+### {PackageGrids}
+
+- Changed Name of Live Grid
+
+The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
+
+> [!NOTE]
+> These breaking changes were introduce in these packages and components only:
+
+The new code for importing the grid and it's corresponding module is:
+
+```ts
+import { IgrDataGrid } from "igniteui-react-grids";
+import { IgrDataGridModule } from 'igniteui-react-grids';
+```
+
+- Required Peer Dependency for Data Grid
+
+The data grid component requires the "inputs" package.
+
+```ts
+**npm install --save {PackageInputs}**
+```
+
+<div class="divider--half"></div>
+
 ## **{PackageVerChangedImports}**
 
 - Changed Import Statements
@@ -177,6 +308,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid.md) |
 
 - Code After Changes
 
@@ -186,21 +318,24 @@ Please also note that the name of the Data Grid component and its corresponding 
 
 ```ts
 // gauges:
-import { IgxLinearGauge } from "igniteui-angular-gauges";
-import { IgxLinearGaugeModule } from "igniteui-angular-gauges";
-import { IgxLinearGraphRange } from "igniteui-angular-gauges";
-import { IgxRadialGauge } from 'igniteui-angular-gauges}';
-import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeRange } from 'igniteui-angular-gauges';
-import { SweepDirection } from 'igniteui-angular-core';
+import { IgrLinearGauge } from "igniteui-react-gauges";
+import { IgrLinearGaugeModule } from "igniteui-react-gauges";
+import { IgrLinearGraphRange } from "igniteui-react-gauges";
+import { IgrRadialGauge } from 'igniteui-react-gauges';
+import { IgrRadialGaugeModule } from 'igniteui-react-gauges';
+import { IgrRadialGaugeRange } from 'igniteui-react-gauges';
+import { SweepDirection } from 'igniteui-react-core';
 // charts:
-import { IgxFinancialChartComponent } from "igniteui-angular-charts";
-import { IgxFinancialChartModule } from "igniteui-angular-charts";
-import { IgxDataChartComponent } from "igniteui-angular-charts";
-import { IgxDataChartCoreModule } from "igniteui-angular-charts";
+import { IgrFinancialChart } from 'igniteui-react-charts';
+import { IgrFinancialChartModule } from 'igniteui-react-charts';
+import { IgrDataChart } from 'igniteui-react-charts';
+import { IgrDataChartCoreModule } from 'igniteui-react-charts';
 // maps:
-import { IgxGeographicMapComponent } from "igniteui-angular-maps";
-import { IgxGeographicMapModule } from "igniteui-angular-maps";
+import { IgrGeographicMap } from "igniteui-react-maps";
+import { IgrGeographicMapModule } from "igniteui-react-maps";
+// grids:
+import { IgrLiveGrid } from "igniteui-react-grids";
+import { IgrLiveGridModule } from 'igniteui-react-grids';
 ```
 
 - Code Before Changes
@@ -209,22 +344,26 @@ Before, you had to import using full paths to API classes and enums:
 
 ```ts
 // gauges:
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-component';
-import { IgxLinearGaugeModule } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-module';
-import { IgxLinearGraphRange } from 'igniteui-angular-gauges/ES5/igx-linear-graph-range';
+import { IgrLinearGauge } from "igniteui-react-gauges/ES5/igr-linear-gauge";
+import { IgrLinearGaugeModule } from "igniteui-react-gauges/ES5/igr-linear-gauge-module";
+import { IgrLinearGraphRange } from "igniteui-react-gauges/ES5/igr-linear-graph-range";
 
-import { IgxRadialGaugeComponent } from "igniteui-angular-gauges/ES5/igx-radial-gauge-component";
-import { IgxRadialGaugeModule } from "igniteui-angular-gauges/ES5/igx-radial-gauge-module";
-import { IgxRadialGaugeRange } from "igniteui-angular-gauges/ES5/igx-radial-gauge-range";
-import { SweepDirection } from "igniteui-angular-core/ES5/SweepDirection";
+import { IgrRadialGauge } from "igniteui-react-gauges/ES5/igr-radial-gauge";
+import { IgrRadialGaugeModule } from "igniteui-react-gauges/ES5/igr-radial-gauge-module";
+import { IgrRadialGaugeRange } from "igniteui-react-gauges/ES5/igr-radial-gauge-range";
+import { SweepDirection } from "igniteui-react-core/ES5/SweepDirection";
 
 // charts:
-import { IgxFinancialChartComponent } from "igniteui-angular-charts/ES5/igx-financial-chart-component";
-import { IgxFinancialChartModule } from "igniteui-angular-charts/ES5/igx-financial-chart-module";
-import { IgxDataChartComponent } from "igniteui-angular-charts/ES5/igx-data-chart-component";
-import { IgxDataChartCoreModule } from "igniteui-angular-charts/ES5/igx-data-chart-core-module";
+import { IgrFinancialChart } from "igniteui-react-charts/ES5/igr-financial-chart";
+import { IgrFinancialChartModule } from "igniteui-react-charts/ES5/igr-financial-chart-module";
+import { IgrDataChart } from "igniteui-react-charts/ES5/igr-data-chart";
+import { IgrDataChartCoreModule } from "igniteui-react-charts/ES5/igr-data-chart-core-module";
 
 // maps:
-import { IgxGeographicMapComponent } from "igniteui-angular-maps/ES5/igx-geographic-map-component";
-import { IgxGeographicMapModule } from "igniteui-angular-maps/ES5/igx-geographic-map-module";
+import { IgrGeographicMap } from "igniteui-react-maps/ES5/igr-geographic-map";
+import { IgrGeographicMapModule } from "igniteui-react-maps/ES5/igr-geographic-map-module";
+
+// grids:
+import { IgrLiveGrid } from "igniteui-react-grids/ES5/igr-live-grid";
+import { IgrLiveGridModule } from 'igniteui-react-grids/ES5/igr-live-grid-module';
 ```
