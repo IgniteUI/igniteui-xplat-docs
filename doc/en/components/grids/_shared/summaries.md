@@ -89,10 +89,10 @@ All available column data types could be found in the official [Column types top
 
 ```razor
 <IgbGrid>
-        <IgbGridColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="FirstName" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="LastName" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="Title" HasSummary="true"></IgbGridColumn>
+        <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="FirstName" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="LastName" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="Title" HasSummary="true"></IgbColumn>
 </IgbGrid>
 ```
 
@@ -158,10 +158,10 @@ public disableSummary() {
 
 ```razor
  <IgbGrid @ref=grid Id="grid" AutoGenerate="false">
-        <IgbGridColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="FirstName" Sortable="true" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true" HasSummary="true"></IgbGridColumn>
-        <IgbGridColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbGridColumn>
+        <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="FirstName" Sortable="true" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true" HasSummary="true"></IgbColumn>
+        <IgbColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
 </IgbGrid>
 
 @code {
