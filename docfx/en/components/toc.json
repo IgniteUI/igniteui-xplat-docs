@@ -250,38 +250,38 @@
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/lob-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
-      { 
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/lob-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/lob-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md", 
+        "href": "grids/lob-grid/row-actions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Search",
-        "href": "grids/lob-grid/search.md", 
+        "href": "grids/lob-grid/search.md",
         "status": "NEW"
       },
       {
@@ -334,26 +334,26 @@
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/hierarchical-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md", 
+        "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
       },
       {
@@ -432,37 +432,37 @@
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md", 
+        "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Search",
-        "href": "grids/tree-grid/search.md", 
+        "href": "grids/tree-grid/search.md",
         "status": "NEW"
       },
       {
@@ -671,6 +671,12 @@
     "name": "Tree",
     "href": "grids/tree.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["React", "WebComponents", "Angular"],
+    "name": "Theming",
+    "status": "NEW",
+    "href": "grids/theming.md"
   },
   {
     "exclude": ["Blazor"],
