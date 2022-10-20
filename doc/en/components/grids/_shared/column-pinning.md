@@ -36,9 +36,9 @@ Column pinning is controlled through the `Pinned` input of the `ColumnComponent`
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false>
-    <IgbGridColumn Field="Name" Pinned=true></IgbGridColumn>
-    <IgbGridColumn Field="AthleteNumber"></IgbGridColumn>
-    <IgbGridColumn Field="TrackProgress"></IgbGridColumn>
+    <IgbColumn Field="Name" Pinned=true></IgbColumn>
+    <IgbColumn Field="AthleteNumber"></IgbColumn>
+    <IgbColumn Field="TrackProgress"></IgbColumn>
 </IgbGrid>
 ```
 
