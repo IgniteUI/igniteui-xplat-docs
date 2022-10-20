@@ -113,32 +113,44 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Styling & Themes",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Overview",
     "href": "themes/overview.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "Configuration",
+    "href": "themes/configuration.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Palettes",
     "href": "themes/palettes.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Elevations",
     "href": "themes/elevations.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Typography",
     "href": "themes/typography.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Component Styles",
+    "href": "themes/component-themes.md",
     "status": "NEW"
   },
   {
