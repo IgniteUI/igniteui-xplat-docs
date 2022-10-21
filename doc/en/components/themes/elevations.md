@@ -17,12 +17,12 @@ Here's a list of resting elevations as used in various components in {ProductNam
 
 | Component                                       | Default Elevation Level | CSS Variable       |
 | ----------------------------------------------- | ----------------------- | ------------------ |
-| Button                                          | 0                       | --igc-elevation-0  |
-| Elevated Card                                   | 2                       | --igc-elevation-2  |
-| Toast, Snackbar                                 | 10                      | --igc-elevation-10 |
-| Navdrawer                                       | 16                      | --igc-elevation-16 |
+| Button                                          | 0                       | --ig-elevation-0  |
+| Elevated Card                                   | 2                       | --ig-elevation-2  |
+| Toast, Snackbar                                 | 10                      | --ig-elevation-10 |
+| Navdrawer                                       | 16                      | --ig-elevation-16 |
 
-As you can see from the **CSS Variable** column, all elevations are defined in the following format `--igc-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
+As you can see from the **CSS Variable** column, all elevations are defined in the following format `--ig-elevation-[level]`. As mentioned, the elevation level number go from 0 through 24 (inclusive).
 
 ## Usage
 
@@ -30,7 +30,7 @@ To begin using elevations in your own components all you need is to reference th
 
 ```css
 .custom-element {
-  box-shadow: var(--igc-elevation-6);
+  box-shadow: var(--ig-elevation-6);
 }
 ```
 
@@ -38,7 +38,7 @@ Changing the elevation in an existing component theme works in a similar way:
 
 ```css
 igc-navbar {
-  box-shadow: var(--igc-elevation-8);
+  box-shadow: var(--ig-elevation-8);
 }
 ```
 
@@ -50,8 +50,8 @@ Example:
 
 ```css
 :root {
-    --igc-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
-    --igc-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
+    --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
+    --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -63,11 +63,11 @@ You can shadow the globally set elevations for a specific scope only. We already
 ```css
 igc-snackbar,
 igc-toast {
-    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
+    --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
-This will set the toast and the snackbar shadows to the value assigned to `--igc-elevation-10`.
+This will set the toast and the snackbar shadows to the value assigned to `--ig-elevation-10`.
 
 ## Using Elevation Factor
 
@@ -75,11 +75,11 @@ In addition to elevation levels, {ProductName} exposes a CSS variable that makes
 
 ```css
 :root {
-    --igc-elevation-factor: 0;
+    --ig-elevation-factor: 0;
 }
 ```
 
-The `--igc-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.
+The `--ig-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.
 
 ## API Members
 
