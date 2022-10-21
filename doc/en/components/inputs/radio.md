@@ -336,9 +336,9 @@ The `Radio` component exposes several CSS parts (`base`, `control`, and `label`)
 
 ```scss
 :root {
-    --igc-primary-h: 60deg;
-    --igc-primary-s: 100%;
-    --igc-primary-l: 25%;
+    --ig-primary-h: 60deg;
+    --ig-primary-s: 100%;
+    --ig-primary-l: 25%;
 }
 
 igc-radio::part(control) {
