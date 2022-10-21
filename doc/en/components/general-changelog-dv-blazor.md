@@ -2,16 +2,12 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend"]
+mentionedTypes: ["SeriesViewer", "XYChart", "Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
-
-> [!NOTE]
-> This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
-> For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 ## **{PackageVerChanges-22-2}**
 
@@ -36,8 +32,16 @@ These new chart improvements include:
   - GroupSorts
   - GroupSortDescriptions
 
+### {PackageGrids}
+
+* Changed `Column` to `DataGridColumn`
+* Changed `GridCellEventArgs` to `DataGridCellEventArgs`
+* Changed `GridSelectionMode` to `DataGridSelectionMode`
+* Changed `SummaryOperand` to `DataSourceSummaryOperand`
+
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+
+### {PackageCharts}
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -54,14 +58,71 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-<div class="divider--half"></div>
+### {PackageDockManager}
+
+* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
+
+### {PackageGrids}
+
+* New Feature Added:
+- [Row Paging](grids/data-grid-row-paging.md)
+
+Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### New Components
+
+* [Chip](inputs/chip.md)
+* [Circular Progress](inputs/circular-progress.md)
+* [Linear Progress](inputs/linear-progress.md)
+* [Drop Down](inputs/dropdown.md)
+* [Slider & Range Slider](inputs/slider.md)
+* [Snackbar](notifications/snackbar.md)
+* [Toast](notifications/toast.md)
+
+## **{PackageVerChanges-21-2.1}**
+
+> [!NOTE]
+> The following breaking changes were introduced
+
+### {PackageGrids}
+
+- Changed `ValueField` property from type string[] to string. 
+
+### {PackageInputs}
+
+- A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
+
+#### Date Picker 
+- Changed `ValueChanged` event to `SelectedValueChanged`.
+
+#### Multi-Column ComboBox
+- Changed `TextChanged` event to `TextValueChanged`.
+- Changed `ValueChanged` event to `SelectedValueChanged`.
 
 ## **{PackageVerChanges-21-2}**
 
-> [!Note]
-> Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
+> [!NOTE]
+> The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
+>
+> For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
 
-### {PackageCharts}
+### New Components
+
+* [Avatar](layouts/avatar.md)
+* [Badge](inputs/badge.md)
+* [Button & Icon Button](inputs/button.md)
+* [Card](layouts/card.md)
+* [Checkbox](inputs/checkbox.md)
+* [Form](inputs/form.md)
+* [Icon](layouts/icon.md)
+* [List](grids/list.md)
+* [Navigation Bar](menus/navbar.md)
+* [Navigation Drawer](menus/navigation-drawer.md)
+* [Radio & Radio Group](inputs/radio.md)
+* [Ripple](inputs/ripple.md)
+* [Switch](inputs/switch.md)
+
+### Chart and Map Improvements
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -94,10 +155,24 @@ Old brushes/outlines | New outline/brushes
 -------------------- | -------------------
 <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
 
-<div class="divider--half"></div>
+### {PackageGrids}
+
+* New Features Added:
+    - [Filter Row](grids/data-grid-column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
+    - [Cell Merging](grids/data-grid-cell-merging.md)
+* New API:
+    - Added `SelectionChanged` event. Used to detect changes on selection interactions
+     e.g. Multiple row selection.
+* Breaking Changes:
+    - Changed grid's SummaryScope property's type to SummaryScope from `DataSourceSummaryScope`
+    - Changed GroupHeaderDisplayMode property's type to GroupHeaderDisplayMode from `DataSourceSectionHeaderDisplayMode`
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### New Visual Designs
+
+#### Charts & Maps
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -148,7 +223,7 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps}
+#### Geographic Map
 
 > [!NOTE]
 > These features are CTP
@@ -158,73 +233,31 @@ for example:
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
-<div class="divider--half"></div>
+### {PackageGrids}
 
-## **{PackageVerChangedImports}**
+* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+* Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
+* Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
+* Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
+* Added `SelectAllRows` - method.
+* Added Row Range Selection - With `GridSelectionMode` property set to MultipleRow the following new functionality is now included:
+    - Click and drag to select rows
+    - Shift and click to select multiple rows.
+    - Shift and press the up/down arrow keys to select multiple rows.
+* Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
+* Added Column Summaries to Column Options Dialog.
 
-- Changed Import Statements
+### {PackageInputs}
 
-Import statements have been simplified to use just package names instead of full paths to API classes and enums.
+#### Date Picker
 
-> [!NOTE]
-> These breaking changes were introduce in these packages and components only:
-
-| Affected Packages | Affected Components |
-| ------------------|---------------------|
-| <a href="{PackageWebsite}{PackageExcel}/v/{PackageVerChangedImports}" target="_blank">{PackageExcel}</a> | [Excel Library](excel-library.md)  |
-| <a href="{PackageWebsite}{PackageSpreadsheet}/v/{PackageVerChangedImports}" target="_blank">{PackageSpreadsheet}</a> | [Spreadsheet](spreadsheet-overview.md) |
-| <a href="{PackageWebsite}{PackageMaps}/v/{PackageVerChangedImports}" target="_blank">{PackageMaps}</a> | [Geo Map](geo-map.md), [Treemap](charts/types/treemap-chart.md)  |
-| <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
-| <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
-| <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-
-- Code After Changes
-
-Now, you need to use just package names instead of full paths to API classes and enums.
-
-Please also note that the name of the Data Grid component and its corresponding modules have also changed.
-
-```ts
-// gauges:
-import { IgxLinearGauge } from "igniteui-angular-gauges";
-import { IgxLinearGaugeModule } from "igniteui-angular-gauges";
-import { IgxLinearGraphRange } from "igniteui-angular-gauges";
-import { IgxRadialGauge } from 'igniteui-angular-gauges}';
-import { IgxRadialGaugeModule } from 'igniteui-angular-gauges';
-import { IgxRadialGaugeRange } from 'igniteui-angular-gauges';
-import { SweepDirection } from 'igniteui-angular-core';
-// charts:
-import { IgxFinancialChartComponent } from "igniteui-angular-charts";
-import { IgxFinancialChartModule } from "igniteui-angular-charts";
-import { IgxDataChartComponent } from "igniteui-angular-charts";
-import { IgxDataChartCoreModule } from "igniteui-angular-charts";
-// maps:
-import { IgxGeographicMapComponent } from "igniteui-angular-maps";
-import { IgxGeographicMapModule } from "igniteui-angular-maps";
-```
-
-- Code Before Changes
-
-Before, you had to import using full paths to API classes and enums:
-
-```ts
-// gauges:
-import { IgxLinearGaugeComponent } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-component';
-import { IgxLinearGaugeModule } from 'igniteui-angular-gauges/ES5/igx-linear-gauge-module';
-import { IgxLinearGraphRange } from 'igniteui-angular-gauges/ES5/igx-linear-graph-range';
-
-import { IgxRadialGaugeComponent } from "igniteui-angular-gauges/ES5/igx-radial-gauge-component";
-import { IgxRadialGaugeModule } from "igniteui-angular-gauges/ES5/igx-radial-gauge-module";
-import { IgxRadialGaugeRange } from "igniteui-angular-gauges/ES5/igx-radial-gauge-range";
-import { SweepDirection } from "igniteui-angular-core/ES5/SweepDirection";
-
-// charts:
-import { IgxFinancialChartComponent } from "igniteui-angular-charts/ES5/igx-financial-chart-component";
-import { IgxFinancialChartModule } from "igniteui-angular-charts/ES5/igx-financial-chart-module";
-import { IgxDataChartComponent } from "igniteui-angular-charts/ES5/igx-data-chart-component";
-import { IgxDataChartCoreModule } from "igniteui-angular-charts/ES5/igx-data-chart-core-module";
-
-// maps:
-import { IgxGeographicMapComponent } from "igniteui-angular-maps/ES5/igx-geographic-map-component";
-import { IgxGeographicMapModule } from "igniteui-angular-maps/ES5/igx-geographic-map-module";
-```
+* `ShowTodayButton` - Toggles Today button visibility
+* `Label` - Adds a label above the date value
+* `Placeholder` property - adds custom text when no value is selected
+* `FormatString` - Customize input date string e.g. (`yyyy-MM-dd`)
+* `DateFormat` - Specifies whether to display selected dates as LongDate or ShortDate
+* `FirstDayOfWeek` - Specifies first day of week
+* `FirstWeekOfYear` - Specifies when to display first week of the year, e.g. (First Full Week, First Four day Week)
+* `ShowWeekNumbers` - Toggles Week number visibility
+* `MinDate` & `MaxDate` - Date limits, specifying a range of available selectable dates.
+* Added Accessibility
