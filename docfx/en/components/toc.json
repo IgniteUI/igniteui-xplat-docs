@@ -64,62 +64,93 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "How to",
-    "status": "NEW",
-    "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Blazor Excel Library",
-        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "How To Read & Write Excel Files To Reduce Server Load",
-        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "How To Customize Marker Display in Blazor Charts",
-        "href": "customize-marker-display-in-blazor-charts.md",
-        "status": ""
-      }
-    ]
+      "status": "NEW",
+      "items": [
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "Blazor Excel Library",
+          "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "How To Read & Write Excel Files To Reduce Server Load",
+          "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "name": "How To Customize Marker Display in Blazor Charts",
+          "href": "customize-marker-display-in-blazor-charts.md",
+          "status": ""
+        }
+      ]
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-blazor.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-react.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Changelog",
+    "href": "general-changelog-dv-wc.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "Changelog",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Styling & Themes",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Overview",
     "href": "themes/overview.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "Configuration",
+    "href": "themes/configuration.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "Palettes",
     "href": "themes/palettes.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Elevations",
     "href": "themes/elevations.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Typography",
     "href": "themes/typography.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Component Styles",
+    "href": "themes/component-themes.md",
     "status": "NEW"
   },
   {
@@ -219,38 +250,68 @@
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/lob-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
-      { 
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/lob-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/lob-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md", 
+        "href": "grids/lob-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Search",
+        "href": "grids/lob-grid/search.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/lob-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/lob-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/lob-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Search",
-        "href": "grids/lob-grid/search.md", 
+        "name": "Filtering",
+        "href": "grids/lob-grid/filtering.md", 
         "status": "NEW"
       },
       {
@@ -279,26 +340,56 @@
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/hierarchical-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md", 
+        "href": "grids/hierarchical-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/hierarchical-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/hierarchical-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/hierarchical-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/hierarchical-grid/filtering.md", 
         "status": "NEW"
       },
       {
@@ -325,6 +416,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
@@ -353,37 +450,67 @@
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md", 
+        "href": "grids/tree-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Search",
+        "href": "grids/tree-grid/search.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/tree-grid/cell-editing.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/tree-grid/display-density.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/tree-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Search",
-        "href": "grids/tree-grid/search.md", 
+        "name": "Filtering",
+        "href": "grids/tree-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -562,6 +689,12 @@
     "name": "Tree",
     "href": "grids/tree.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["React", "WebComponents", "Angular"],
+    "name": "Theming",
+    "status": "NEW",
+    "href": "grids/theming.md"
   },
   {
     "exclude": ["Blazor"],
