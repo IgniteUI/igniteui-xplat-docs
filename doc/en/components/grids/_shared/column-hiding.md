@@ -43,16 +43,16 @@ Let's start by creating our {ComponentTitle} and binding it to our data. We will
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
-    <IgbGridColumn Field="ID" Sortable=true Hidden=true></IgbGridColumn>
-    <IgbGridColumn Field="ContactName" Sortable=true Hidden=true></IgbGridColumn>
-    <IgbGridColumn Field="ContactTitle" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="City"  Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="CompanyName" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="Fax" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="Address" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="PostalCode" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="Country" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="Phone" Sortable=true></IgbGridColumn>
+    <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
+    <IgbColumn Field="ContactName" Sortable=true Hidden=true></IgbColumn>
+    <IgbColumn Field="ContactTitle" Sortable=true></IgbColumn>
+    <IgbColumn Field="City"  Sortable=true></IgbColumn>
+    <IgbColumn Field="CompanyName" Sortable=true></IgbColumn>
+    <IgbColumn Field="Fax" Sortable=true></IgbColumn>
+    <IgbColumn Field="Address" Sortable=true></IgbColumn>
+    <IgbColumn Field="PostalCode" Sortable=true></IgbColumn>
+    <IgbColumn Field="Country" Sortable=true></IgbColumn>
+    <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
 
