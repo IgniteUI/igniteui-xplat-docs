@@ -64,7 +64,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "操作方法",
       "status": "NEW",
       "items": [
@@ -113,32 +113,44 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "スタイル設定およびとテーマ",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "概要",
     "href": "themes/overview.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "構成",
+    "href": "themes/configuration.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "パレット",
     "href": "themes/palettes.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "エレベーション",
     "href": "themes/elevations.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "タイポグラフィ",
     "href": "themes/typography.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "コンポーネントのスタイル",
+    "href": "themes/component-themes.md",
     "status": "NEW"
   },
   {
@@ -238,44 +250,44 @@
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/lob-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
-      { 
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/lob-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/lob-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md", 
+        "href": "grids/lob-grid/row-actions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Search",
-        "href": "grids/lob-grid/search.md", 
+        "href": "grids/lob-grid/search.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
-        "href": "grids/lob-grid/cell-editing.md", 
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
+        "href": "grids/lob-grid/cell-editing.md",
         "status": "NEW"
       },
       {
@@ -294,6 +306,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/lob-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -316,31 +334,31 @@
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/hierarchical-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md", 
+        "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
         "href": "grids/hierarchical-grid/cell-editing.md", 
         "status": "NEW"
       },
@@ -360,6 +378,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/hierarchical-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -408,42 +432,42 @@
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
       },
-      {  
+      {
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
         "status": "NEW"
       },
-      {  
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Selection",
         "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md", 
+        "href": "grids/tree-grid/row-actions.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Search",
-        "href": "grids/tree-grid/search.md", 
+        "href": "grids/tree-grid/search.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Row Actions",
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Editing",
         "href": "grids/tree-grid/cell-editing.md", 
         "status": "NEW"
       },
@@ -463,6 +487,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Filtering",
+        "href": "grids/tree-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -641,6 +671,12 @@
     "name": "ツリー",
     "href": "grids/tree.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["React", "WebComponents", "Angular"],
+    "name": "テーマ設定",
+    "status": "NEW",
+    "href": "grids/theming.md"
   },
   {
     "exclude": ["Blazor"],

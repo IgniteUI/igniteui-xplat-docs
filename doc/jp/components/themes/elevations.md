@@ -20,7 +20,7 @@ _language: ja
 | ----------------------------------------------- | ----------------------- | ------------------ |
 | Button                                          | 0                       | --ig-elevation-0  |
 | Elevated Card                                   | 2                       | --ig-elevation-2  |
-| Toast、Snackbar                                 | 10                      | --ig-elevation-10 |
+| Toast, Snackbar                                 | 10                      | --ig-elevation-10 |
 | Navdrawer                                       | 16                      | --ig-elevation-16 |
 
 **CSS 変数**列からわかるように、すべてのエレベーションは `--ig-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
