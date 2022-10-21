@@ -15,40 +15,14 @@ In {Platform} {ComponentTitle}, data sorting is enabled on a per-column level, m
 
 ## {Platform} {ComponentTitle} Sorting Overview Example
 
-<!-- ComponentStart: Grid -->
-
-<code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting-sample"
-           github-src="{ComponentSample}/sorting-sample" >
-</code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
 Additionally there is a custom contextmenu added for sorting using **{ComponentSelector}**'s `ContextMenu` Output.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting"
-           github-src="{ComponentSample}/sorting" >
+           github-src="{ComponentSample}/sorting">
 </code-view>
 
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-Additionally there is a custom contextmenu added for sorting using **{ComponentSelector}**'s `ContextMenu` Output.
-
-<code-view style="height:510px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting"
-           github-src="{ComponentSample}/sorting" >
-
-</code-view>
-<!-- ComponentEnd: HierarchicalGrid -->
 This is done via the `Sortable` input. With the {ComponentTitle} sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
 
 
@@ -307,38 +281,11 @@ Add Styling section for Blazor
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:550px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting-styling"
            github-src="{ComponentSample}/sorting-styling" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting-styling"
-           github-src="{ComponentSample}/sorting-styling" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sorting-styling"
-           github-src="{ComponentSample}/sorting-styling" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
