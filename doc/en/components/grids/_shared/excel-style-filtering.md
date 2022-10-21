@@ -12,37 +12,11 @@ The grid Excel filtering provides an Excel like filtering UI for any Angular Mat
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
            github-src="{ComponentSample}/excel-style-filtering-sample-1" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
-           github-src="{ComponentSample}/excel-style-filtering-sample-1" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
-           github-src="{ComponentSample}/excel-style-filtering-sample-1" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ## Usage
 
@@ -201,39 +175,11 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
            github-src="{ComponentSample}/excel-style-filtering-sample-2" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
-           github-src="{ComponentSample}/excel-style-filtering-sample-2" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
-           github-src="{ComponentSample}/excel-style-filtering-sample-2" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## Templates
 TODO: check when decide how to support directives
@@ -379,37 +325,11 @@ You could also re-template the Excel style filtering icon in the column header u
 Templating header icon
 ```
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
            github-src="{ComponentSample}/excel-style-filtering-sample-3" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
-           github-src="{ComponentSample}/excel-style-filtering-sample-3" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
-           github-src="{ComponentSample}/excel-style-filtering-sample-3" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-header`
@@ -421,7 +341,6 @@ Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-clear-filters`
 - `Excel-style-conditional-filter`
 - `Excel-style-search`
-
 
 ## Unique Column Values Strategy
 
@@ -445,38 +364,11 @@ In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`.
 
 The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values:
 
-
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
            github-src="{ComponentSample}/formatted-filtering-strategy" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
-           github-src="{ComponentSample}/formatted-filtering-strategy" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
-           github-src="{ComponentSample}/formatted-filtering-strategy" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 >[!NOTE]
 >The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter.
@@ -500,38 +392,11 @@ As you see at the demos above the default appearance of the Excel Style filterin
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
            github-src="{ComponentSample}/external-excel-style-filtering" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
-           github-src="{ComponentSample}/external-excel-style-filtering" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering"
-           github-src="{ComponentSample}/excel-style-filtering" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ### Usage
 
@@ -615,38 +480,11 @@ However, elements that go outside of the grid (e.g. Excel Style filter) will con
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-outlet"
            github-src="{ComponentSample}/external-outlet" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-outlet"
-           github-src="{ComponentSample}/external-outlet" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-outlet"
-           github-src="{ComponentSample}/external-outlet" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## Styling
 
@@ -956,41 +794,14 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:950px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
            github-src="{ComponentSample}/excel-style-filtering-style" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:950px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
-           github-src="{ComponentSample}/excel-style-filtering-style" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:950px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
-           github-src="{ComponentSample}/excel-style-filtering-style" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
-
 
 ## API References
 
