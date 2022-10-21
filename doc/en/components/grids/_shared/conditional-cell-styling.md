@@ -69,39 +69,12 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
-<code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-rowClasses-sample"
-           github-src="{ComponentSample}/grid-rowClasses-sample" >
-</code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-classes"
-           github-src="{ComponentSample}/classes" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 <code-view style="height:600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-classes"
            github-src="{ComponentSample}/row-classes" >
            
 </code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
 
 ### Using rowStyles
 {ComponentName} now expose the `RowStyles` property which allows conditional styling of the data rows. Similar to `RowClasses` it accepts an object literal where the keys are style properties and the values are expressions for evaluation. Also, you can apply regular styling (without any conditions).
@@ -223,38 +196,11 @@ Add hgrid markup
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-rowStyles-sample"
            github-src="{ComponentSample}/rowStyles-sample" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-styles-sample"
-           github-src="{ComponentSample}/styles-sample" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-styles"
-           github-src="{ComponentSample}/row-styles" >
-           
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## {ComponentTitle} Conditional Cell Styling
 ## Overview
@@ -435,33 +381,11 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
-<code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-styling"
-           github-src="{ComponentSample}/cell-styling" >
-</code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
 <code-view style="height:600px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-conditional-cell-style"
            github-src="{ComponentSample}/conditional-cell-style" >
 </code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<!-- TODO -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 - By using the `Column` input `CellStyles` which accepts an object literal where the keys are style properties and the values are expressions for evaluation.
 
@@ -594,32 +518,11 @@ Add similar handling
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-cellStyling"
            github-src="{ComponentSample}/cell-cellStyling" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-cellStyling"
-           github-src="{ComponentSample}/cell-cellStyling" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<!-- TODO -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ## Known issues and limitations
 
