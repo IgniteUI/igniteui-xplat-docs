@@ -41,11 +41,11 @@ Let's start by creating our grid and binding it to our data. We will also add so
 
 ```razor
 <IgbGrid @ref=grid Width="100%" Height="480px" AllowFiltering=true AutoGenerate=false Data=marketData DisplayDensity="DisplayDensity.Compact">
-    <IgbGridColumn Field="IndustrySector" DataType="GridColumnDataType.String1" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="IndustryGroup" DataType="GridColumnDataType.String1" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="SectorType" DataType="GridColumnDataType.String1" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="KRD" DataType="GridColumnDataType.Number" Sortable=true></IgbGridColumn>
-    <IgbGridColumn Field="MarketNotion" DataType="GridColumnDataType.Number" Sortable=true></IgbGridColumn>
+    <IgbColumn Field="IndustrySector" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="IndustryGroup" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="SectorType" DataType="GridColumnDataType.String" Sortable=true></IgbColumn>
+    <IgbColumn Field="KRD" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
+    <IgbColumn Field="MarketNotion" DataType="GridColumnDataType.Number" Sortable=true></IgbColumn>
 </IgbGrid>
 
 @code {
