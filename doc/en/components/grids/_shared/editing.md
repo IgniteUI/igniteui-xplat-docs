@@ -32,7 +32,7 @@ In the {ComponentTitle} if you set RowEditable property to true, and editable pr
 
 ### Editing Templates
 
- If you want to use a data type specific *edit templates*, you should specify the column DataType` property. So let's now see what are the default templates for each type:
+ If you want to use a data type specific *edit templates*, you should specify the column DataType property. So let's now see what are the default templates for each type:
 
  - For `string` data type, default template is using `Input`.
  - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
@@ -51,14 +51,14 @@ The grid exposes a wide array of events that provide greater control over the ed
 
  | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
  | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------- |
- | `RowEditEnter`  | If `RowEditing` is enabled, fires when a row enters edit mode                                                                                             | `IgbGridEditEventArgs`     | **true**    |
- | `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`)                                                                                             | `IgbGridEditEventArgs`     | **true**    |
- | `CellEdit`      | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing `Enter`)                                                     | `IgbGridEditEventArgs`     | **true**    |
- | `CellEditDone`  | If value is changed, fires **after** a cell has been edited and cell's value is **committed**                                                             | `IgbGridEditDoneEventArgs` | **false**   |
- | `CellEditExit`  | Fires when a cell **exits edit mode**                                                                                                                     | `IgbGridEditDoneEventArgs` | **false**   |
- | `RowEdit`       | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `IgbGridEditEventArgs`     | **true**    |
- | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `IgbGridEditDoneEventArgs` | **false**   |
- | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `IgbGridEditDoneEventArgs` | **false**   |
+ | `RowEditEnter`  | If `RowEditing` is enabled, fires when a row enters edit mode                                                                                             | `GridEditEventArgs`     | **true**    |
+ | `CellEditEnter` | Fires when a cell **enters edit mode** (after `RowEditEnter`)                                                                                             | `GridEditEventArgs`     | **true**    |
+ | `CellEdit`      | If value is changed, fires just **before** a cell's value is **committed** (e.g. by pressing `Enter`)                                                     | `GridEditEventArgs`     | **true**    |
+ | `CellEditDone`  | If value is changed, fires **after** a cell has been edited and cell's value is **committed**                                                             | `GridEditDoneEventArgs` | **false**   |
+ | `CellEditExit`  | Fires when a cell **exits edit mode**                                                                                                                     | `GridEditDoneEventArgs` | **false**   |
+ | `RowEdit`       | If `RowEditing` is enabled, fires just before a row in edit mode's value is **committed** (e.g. by clicking the `Done` button on the Row Editing Overlay) | `GridEditEventArgs`     | **true**    |
+ | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `GridEditDoneEventArgs` | **false**   |
+ | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `GridEditDoneEventArgs` | **false**   |
 
 ### Event cancelation
  - `RowEditEnter` - Neither Row nor Cell will enter edit mode.
@@ -67,37 +67,12 @@ The grid exposes a wide array of events that provide greater control over the ed
  - `RowEdit` - Committing cell is possible, but not the whole row. The row will stay in edit mode and the row transaction will be considered open. Hitting **Done** does not commit or close the row. **Cancel** button closes the editing process and the transaction without committing the changes.
 
 The following sample demonstrates the editing execution sequence in action:
-<!-- ComponentStart: Grid -->
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-lifecycle"
            github-src="{ComponentSample}/editing-lifecycle" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-lifecycle"
-           github-src="{ComponentSample}/editing-lifecycle" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-lifecycle"
-           github-src="{ComponentSample}/editing-lifecycle" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ### Features integration
 While a cell/row is in edit mode, a user may interact with the grid in many ways. The following table specifies how a certain interaction affects the current editing:
