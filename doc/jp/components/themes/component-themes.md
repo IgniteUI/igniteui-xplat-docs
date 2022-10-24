@@ -8,7 +8,7 @@ _language: ja
 
 # {ProductName} のコンポーネント スタイルのカスタマイズ
 
-{ProductName} コンポーネントを使用すると、ユーザーは [CSS 変数](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)と [CSS パーツ](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)を公開することで、スタイル シートのさまざまな部分を変更できます。
+{ProductName} コンポーネントを使用すると、ユーザーは [CSS 変数](https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties)と [CSS パーツ](https://developer.mozilla.org/ja/docs/Web/CSS/::part)を公開することで、スタイル シートのさまざまな部分を変更できます。
 
 ## CSS パーツ
 
