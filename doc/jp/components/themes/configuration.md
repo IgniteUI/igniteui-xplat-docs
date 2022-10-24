@@ -1,25 +1,25 @@
 ---
-title: {Platform} Styling and Themes | {Platform} Theming | Theme Switching | Infragistics
-_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
-_keywords: {ProductName}, Infragistics, Themes, Styling
+title: {Platform} スタイリングとテーマ | {Platform} テーマ設定 | テーマの切り替え | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドによるストリーミング ファイナンシャルおよびビジネス チャートで、データの視覚化を向上させます。
+_keywords: {ProductName}, Infragistics, Themes, Styling, インフラジスティックス, テーマ, スタイル設定
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
 
-# Customizing Themes in {ProductName}
+# {ProductName} のテーマのカスタマイズ
 
-The themes in {ProductName} can be customized by altering various CSS variables. By overwriting those variables, you can customize the palettes, typography, elevations, roundness, size, and spacing.
+{ProductName} のテーマは、さまざまな CSS 変数を変更することでカスタマイズできます。これらの変数を上書きすることで、パレット、タイポグラフィ、エレベーション、丸み、サイズ、間隔をカスタマイズできます。
 
-## Overview
+## 概要
 
-We cover palettes, typography, and elevations in the following sections, while this one will cover options that affect component styles on a global level via single variable modifications.
+次のセクションでは、パレット、タイポグラフィ、およびエレベーションについて説明しますが、このセクションでは、単一の変数の変更によってグローバル レベルでコンポーネント のスタイルに影響を与えるオプションについて説明します。
 
 
-## Roundness
+## 丸み
 
-All components define some sort of roundness(border-radius). While some components provide attributes for setting the shape of the component, like the avatar and the badge, others, like the button, only define their border-radius internally as part of the theme. In those cases, you can play with the border-radius of those components by modifying the value of the `--ig-radius-factor` CSS variable. You can modify it globally in the `:root` scope, or you can modify it on component by component basis. The variable accepts a rational number value between 0 and 1. Setting the value to 0 effectively sets the border radius to 0. Setting the value to 1 sets the border radius to the predefined initial border radius. Any value between 0 and 1, like 0.5 for instance, will set the border radius to 50% of the default border radius defined in the stylesheet of the component.
+すべてのコンポーネントは、ある種の丸み (border-radius) を定義します。アバターやバッジなど、コンポーネントの形状を設定するための属性を提供するコンポーネントもあれば、ボタンなど、テーマの一部として border-radius を内部的に定義するだけのコンポーネントもあります。そのような場合、 `--ig-radius-factor` CSS 変数の値を変更することで、これらのコンポーネントの border-radius を操作できます。`:root` スコープでグローバルに変更することも、コンポーネントごとに変更することもできます。この変数は、0 から 1 の間の実数値を受け入れます。値を 0 に設定すると、境界半径が 0 に設定されます。値を 1 に設定すると、境界半径が定義済みの初期境界半径に設定されます。たとえば 0.5 のような 0 と 1 の間の任意の値は、コンポーネントのスタイル シートで定義されたデフォルトの境界半径の 50% に境界半径を設定します。
 
-Examples:
+例:
 
 ```css
 /* Set the border-radius for all components to 50% of their default value. */
@@ -35,9 +35,9 @@ igc-button {
 }
 ```
 
-## Elevation
+## エレベーション
 
-Similar to the global radius, some components define internal elevation(box-shadow). Making all components flat can be tedious if we go about doing so by overwriting the box-shadow for each one. You can modify the box-shadow behavior for all components by modifying the `--ig-elevation-factor` CSS variable. The variable accepts a rational number value between 0 and 1. Setting the value to 0 effectively sets the box-shadow of all components to none. Setting the value to 1 sets the elevation value to the predefined initial box-shadow values. Any value between 0 and 1, like 0.5 for instance, will set the box-shadow intensity to 50% of the original value defined in the stylesheet of the component.
+グローバル半径と同様に、一部のコンポーネントは内部エレベーション (box-shadow) を定義します。すべてのコンポーネントをフラットにするのは、各コンポーネントのボックス シャドウを上書きして行うと面倒な場合があります。`--ig-elevation-factor` CSS 変数を変更することで、すべてのコンポーネントの box-shadow の動作を変更できます。この変数は、0 から 1 の間の実数値を受け入れます。値を 0 に設定すると、すべてのコンポーネントの box-shadow が none に設定されます。値を 1 に設定すると、エレベーションの値が定義済みの box-shadow の初期値に設定されます。たとえば 0.5 のような 0 と 1 の間の値は、box-shadow の強度をコンポーネントのスタイルシートで定義された元の値の 50% に設定します。
 
 ```css
 /* Set the elevation for all components to 50% of their original box-shadow values. */
@@ -46,13 +46,13 @@ Similar to the global radius, some components define internal elevation(box-shad
 }
 ```
 
-## Size
+## サイズ
 
-Some components support variable sizing - `small`, `medium`, and `large` with a default size being set in the component stylesheet. You can modify the size of all components simultaneously or individually by utilizing the `--ig-size` CSS variable. Possible values are `var(--ig-size-small)`, `var(--ig-size-medium)`, or `var(--ig-size-large)`;
+一部のコンポーネントは可変サイズ (`small`、`medium`、`large`) をサポートしており、デフォルトのサイズはコンポーネント スタイルシートで設定されています。`--ig-size` CSS 変数を使用して、すべてのコンポーネントのサイズを同時にまたは個別に変更できます。可能な値は、`var(--ig-size-small)`、`var(--ig-size-medium)`、または `var(--ig-size-large)` です。
 
-To set a specific size for all components in your application define the `--ig-size` variable in the `:root` scope.
+アプリケーション内のすべてのコンポーネントに特定のサイズを設定するには、`:root` スコープで `--ig-size` 変数を定義します。
 
-Example:
+例:
 
 ```css
 :root {
@@ -60,7 +60,7 @@ Example:
 }
 ```
 
-Alternatively, if you want to target only a specific component, scope the variable to the component's tag selector.
+または、特定のコンポーネントのみをターゲットにする場合は、変数のスコープをコンポーネントのタグ セレクターに設定します。
 
 ```css
 igc-avatar {
@@ -68,15 +68,15 @@ igc-avatar {
 }
 ```
 
-## Spacing
+## 間隔
 
-Spacing refers to the internal component paddings and margins as set by the component theme. Spacing can be horizontal(inline) and vertical(block). We've made it easy to control how various elements are padded within a component, without explicitly overwriting all padding and margin values manually for each component. This is done by the `--ig-spacing` CSS variable. You can set its value to any positive rational number. The spacing will scale accordingly. The default value is 1, which represents the default horizontal/vertical padding/margin as set in the component stylesheet. Changing the value to 1.5 will scale all spacing by 1,5 times or 150%. Conversely, setting the value to 0 will bunch everything together and reduce all spacing to the equivalence of no padding/margin. Changing the spacing factor works in tandem with the size property and will scale accordingly.
+間隔とは、コンポーネントのテーマによって設定された内部コンポーネントのパディングとマージンを指します。間隔には、水平方向 (インライン) と垂直方向 (ブロック) があります。各コンポーネントのすべてのパディングとマージンの値を手動で明示的に上書きすることなく、コンポーネント内のさまざまな要素のパディングを簡単に制御できるようにしました。これは、 `--ig-spacing` 変数によって行われます。その値は、任意の正の実数に設定できます。間隔はそれに応じてスケーリングされます。デフォルト値は 1 で、コンポーネント スタイルシートで設定されているデフォルトの水平 / 垂直パディング / マージンを表します。値を 1.5 に変更すると、すべての間隔が 1.5 倍または 150% 拡大されます。逆に、値を 0 に設定すると、すべてがまとめられ、すべての間隔がパディング / マージンなしと同等に縮小されます。間隔係数の変更は、サイズ プロパティと連携して機能し、それに応じてスケーリングされます。
 
-Some components only allow you to alter their spacing in one direction(horizontally or vertically), while others let you specify separate spacing values in both directions.
+一部のコンポーネントでは、一方向 (水平または垂直) でのみ間隔を変更できますが、他のコンポーネントでは、両方向で個別の間隔値を指定できます。
 
-To alter the spacing for all components, you can overwrite its value in the `:root` scope.
+すべてのコンポーネントの間隔を変更するには、`:root` スコープでその値を上書きできます。
 
-Example:
+例:
 
 ```css
 /* Increase the spacing for all components to 150%. */
@@ -85,7 +85,7 @@ Example:
 }
 ```
 
-To change the spacing for a single component only, scope the variable to the component's tag selector.
+1 つのコンポーネントのみの間隔を変更するには、変数のスコープをコンポーネントのタグ セレクターに設定します。
 
 ```css
 /* Reduce the spacing for the drop-down elements to 50% of their original value. */
@@ -94,8 +94,8 @@ igc-dropdown {
 }
 ```
 
-As mentioned before, you can control the horizontal and vertical spacing individually for components that support it. This can be achieved by modifying the `--ig-spacing-inline`(horizontal) and `--ig-spacing-block`(vertical) variables. The principle is the same as with the `--ig-spacing` variable. Modifying the `--ig-spacing` variable only will change the spacing in both directions by the same amount.
+前述のように、水平方向と垂直方向の間隔をサポートするコンポーネントに対して個別に制御できます。これは、 `--ig-spacing-inline`(水平) および `--ig-spacing-block`(垂直) 変数を変更することで実現できます。原則は `--ig-spacing` 変数の場合と同じです。`--ig-spacing` 変数のみを変更すると、両方向の間隔が同じ量だけ変更されます。
 
- ## API Members
+ ## API メンバー
 
  - `ConfigureTheme`

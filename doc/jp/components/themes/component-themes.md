@@ -1,27 +1,27 @@
 ---
-title: {Platform} Styling and Themes | {Platform} Theming | Theme Switching | Infragistics
-_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
-_keywords: {ProductName}, Infragistics, Themes, Styling
+title: {Platform} スタイリングとテーマ | {Platform} テーマ設定 | テーマの切り替え | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドによるストリーミング ファイナンシャルおよびビジネス チャートで、データの視覚化を向上させます。
+_keywords: {ProductName}, Infragistics, Themes, Styling, インフラジスティックス, テーマ, スタイル設定
 mentionedTypes: ["ConfigureTheme"]
 _language: ja
 ---
 
-# Customizing Component Styles in {ProductName}
+# {ProductName} のコンポーネント スタイルのカスタマイズ
 
-The {ProductName} components allow users to modify various parts of their stylesheet by exposing [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) and [CSS parts](https://developer.mozilla.org/en-US/docs/Web/CSS/::part).
+{ProductName} コンポーネントを使用すると、ユーザーは [CSS 変数](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)と [CSS パーツ](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)を公開することで、スタイル シートのさまざまな部分を変更できます。
 
-## CSS Parts
+## CSS パーツ
 
-Apart from the methods for customizing the various parts of the component's theme, like colors, shadows, typography, roundness, size, and spacing mentioned in the previous sections of this documentation, you can get your hands dirty by overwriting specific sections of the stylesheet of each component by targeting specific parts of it. All components expose various CSS parts that allow you to add or override existing styles defined internally for the component.
+このドキュメントの前のセクションで説明したとおり、色、シャドウ、タイポグラフィ、丸み、サイズ、間隔など、コンポーネントのテーマのさまざまな部分をカスタマイズする方法とは別に、各コンポーネントの特定の部分をターゲットにすることによってスタイル シートの特定のセクションを上書きすることもできます。すべてのコンポーネントは、コンポーネント用に内部的に定義された既存のスタイルを追加またはオーバーライドできるさまざまな CSS パーツを公開します。
 
-What parts a component exposes can be found out in the API documentation for each component. If you are the exploratory type and want to have a more hands-on approach to coding, you can always find that out by using the 'inspector' interface of your browser of choice.
-For example, if you wanted to find what parts the avatar exposes, simply right-click on the component in your browser and click 'Inspect' (in Chrome). This will open up the web inspector and reveal the custom element markup in the elements explorer tab. You should see something similar to the screenshot below.
+コンポーネントが公開する部分は、各コンポーネントの API ドキュメントで確認できます。それとも、選択したブラウザーの「インスペクター」インターフェイスを使用していつでも見つけることができます。
+たとえば、アバターが公開しているパーツを見つけたい場合は、ブラウザーでコンポーネントを右クリックし、(Chrome の場合) [検証] をクリックします。これにより、Web インスペクターが開き、エレメント エクスプローラー タブにカスタム エレメント マークアップが表示されます。以下のスクリーンショットのようなものが表示されるはずです。
 
 <img class="responsive-img" src="../../images/avatar-markup.png" />
 
-You will notice that the `Avatar` exposes 4 parts - `base`, `icon`, `image`, and `initials` depending on the type of the avatar. Those parts allow you to overwrite styles defined within their scope.
+`Avatar` は、アバターのタイプに応じて、`base`、`icon`、`image`、`initials` の 4 つの部分を公開することに気付くでしょう。これらのパーツを使用すると、スコープ内で定義されたスタイルを上書きできます。
 
-So if you wanted to change the color of the initials to the primary color in your palette you can overwrite the color property in either `base` or `initials` like so:
+したがって、イニシャルの色をパレットの原色に変更したい場合は、次のように `base` または `initials` の色プロパティを上書きできます:
 
 ```css
 igc-avatar::part(base) {
@@ -29,11 +29,11 @@ igc-avatar::part(base) {
 }
 ```
 
-You can use the same approach to modify or add any property in the `base` part or any other part in any other component.
+同じアプローチを使用して、 `base` パーツまたは他のコンポーネントの他のパーツのプロパティを変更または追加できます。
 
-## CSS Variables
+## CSS 変数
 
-An alternative approach would be to modify the CSS variables responsible for various parts of the styling of the component. Conveniently, the avatar styles its initials using a variable from the existing palette. Upon closer inspection, we can see that the color variable is `--ig-gray-800`. Modifying the value of this variable in the scope of the avatar would also allow us to change the color of the initials.
+別のアプローチは、コンポーネントのスタイリングのさまざまな部分を担当する CSS 変数を変更することです。便利なことに、アバターは既存のパレットの変数を使用してイニシャルのスタイルを設定します。詳しく調べると、色変数が `--ig-gray-800` であることがわかります。アバターのスコープでこの変数の値を変更すると、イニシャルの色も変更できます。
 
 ```css
 igc-avatar {
@@ -41,13 +41,13 @@ igc-avatar {
 }
 ```
 
-Rewriting the value of the `--ig-gray-800` variable does the same as the previous example without explicitly overwriting the color property. This approach works, but could get a bit confusing to track where the color is coming from if you inspect the color property in isolation. Therefore, overwriting the color property in the base part is recomended.
+`--ig-gray-800` 変数の値を書き換えると、color プロパティを明示的に上書きすることなく、前の例と同じことが行われます。このアプローチは機能しますが、色のプロパティを単独で調べると、色がどこから来ているのかを追跡するのが少し混乱する可能性があります。そのため、base パーツの color プロパティを上書きすることをお勧めします。
 
 
-## Conclusion
+## まとめ
 
-Having learned about CSS parts and CSS variables and in combination with the other methods listed in the documentation, you should be able to tailor the look of all components to your liking.
+CSS パーツと CSS 変数について学び、ドキュメントに記載されている他の方法と組み合わせることで、すべてのコンポーネントの外観を好みに合わせて調整できるようになります。
 
-## API Members
+## API メンバー
 
  - `ConfigureTheme`
