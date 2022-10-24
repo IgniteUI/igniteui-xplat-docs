@@ -40,16 +40,16 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
              AutoGenerate=true
              Data=northwindEmployees
              RowEditable=true>
-        <IgbGridColumn Field="ID" Editable=false></IgbGridColumn>
-        <IgbGridColumn Field="ContactName"></IgbGridColumn>
-        <IgbGridColumn Field="ContactTitle"></IgbGridColumn>
-        <IgbGridColumn Field="City" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="CompanyName" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="Fax" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="Address" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="PostalCode" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="Country" Sortable=true></IgbGridColumn>
-        <IgbGridColumn Field="Phone" Sortable=true></IgbGridColumn>
+        <IgbColumn Field="ID" Editable=false></IgbColumn>
+        <IgbColumn Field="ContactName"></IgbColumn>
+        <IgbColumn Field="ContactTitle"></IgbColumn>
+        <IgbColumn Field="City" Sortable=true></IgbColumn>
+        <IgbColumn Field="CompanyName" Sortable=true></IgbColumn>
+        <IgbColumn Field="Fax" Sortable=true></IgbColumn>
+        <IgbColumn Field="Address" Sortable=true></IgbColumn>
+        <IgbColumn Field="PostalCode" Sortable=true></IgbColumn>
+        <IgbColumn Field="Country" Sortable=true></IgbColumn>
+        <IgbColumn Field="Phone" Sortable=true></IgbColumn>
         <IgbActionStrip>
             <IgbGridPinningActions></IgbGridPinningActions>
             <IgbGridEditingActions></IgbGridEditingActions>
@@ -162,7 +162,7 @@ Let's say that instead of an action strip you would like to show a pin icon in e
 This can be done by adding an extra column with a cell template containing the custom icon.
 
 ```razor
-<IgbGridColumn Width="70px" BodyTemplate=@bodyTemplate/>
+<IgbColumn Width="70px" BodyTemplate=@bodyTemplate/>
 
 @code {
     public RenderFragment<IgbCellTemplateContext> bodyTemplate = (context) =>
@@ -171,7 +171,8 @@ This can be done by adding an extra column with a cell template containing the c
         var grid = context.Cell.Grid;
         bool pinned = grid.GetRowByIndex(index).Pinned;
         var icon = pinned ? "lock" : "lock_open";
-        return @<IgbIcon Size="SizableComponentSize.Small" IconName="@icon" Collection="material" onclick='togglePinning(@index)' />;
+        string onPin = "togglePinning(" + index + ")";
+        return @<IgbIcon Size="SizableComponentSize.Small" IconName="@icon" Collection="material" onclick='@onPin' />;
     };
 }
 ```
