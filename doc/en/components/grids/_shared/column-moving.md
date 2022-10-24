@@ -31,7 +31,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```razor
     public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
     {
-        return @<igx-icon family="fas" name="fa-thumbtack" onclick="onClick()"></igx-icon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" onclick="onClick()"></IgbIcon>;
     };
 ```
 
@@ -72,11 +72,11 @@ grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
-    public IgbGridColumn Col1;
-    public IgbGridColumn Col2;
-    public async void HandleClick()
+    public IgbColumn Col1 { get; set; }
+    public IgbColumn Col2 { get; set; }
+    public void HandleClick()
     {
-        await Grid.MoveColumnAsync(Col1,Col2, DropPosition.AfterDropTarget);
+        this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
 
@@ -94,10 +94,10 @@ idColumn.move(3);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
-    public IgbGridColumn Col1;
-    public async void HandleClick()
+    public IgbGridColumn Col1 { get; set; };
+    public void HandleClick()
     {
-        await Col1.MoveAsync(3);
+        this.Col1.Move(3);
     }
 ```
 
@@ -139,11 +139,11 @@ public onColumnMovingEnd(event) {
 ```
 
 ```razor
-function onColumnMovingEnd(event) {
-    if (event.source.field === "Category" && event.target.field === "Change On Year(%)") {
-        event.cancel = true;
+igRegisterScript("onColumnMovingEnd", (event) => {
+    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
-}
+}, false);
 ```
 
 <!-- Angular -->
