@@ -88,8 +88,8 @@ public handleRowSelection(args) {
 
 ```razor
 function rowSelectionChangingHandler(args) {
-        if (args.added.length && args.added[0] === 3) {
-        args.cancel = true;
+        if (args.detail.added.length && args.added[0] === 3) {
+        args.detail.cancel = true;
     }
 }
 igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
@@ -264,7 +264,7 @@ public handleRowSelectionChange(args) {
 
 ```razor
 function rowSelectionChangingHandler(args) {
-    args.cancel = true; // this will cancel the row selection
+    args.detail.cancel = true; // this will cancel the row selection
 }
 
 igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
