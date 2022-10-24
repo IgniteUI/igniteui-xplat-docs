@@ -103,9 +103,9 @@ namespace: Infragistics.Controls.Charts
 ## **{PackageVerChanges-21-2}**
 
 > [!NOTE]
-> The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
+> **Igb** プレフィックスは {ProductName} のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
-> たとえば、 ``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
+> たとえば、``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
 
 ### 新しいコンポーネント
 
