@@ -4,6 +4,7 @@ _description: See how easy it is to select data in {ProductName} grid using vari
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} Selection Overview

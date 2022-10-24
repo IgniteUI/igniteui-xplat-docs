@@ -4,6 +4,7 @@ _description: Learn how to configure column selection with {ProductName} {Compon
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} Column Selection Overview

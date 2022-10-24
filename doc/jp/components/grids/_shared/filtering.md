@@ -4,6 +4,7 @@ _description: Start using angular filter to return specific data with {Platform}
 _keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} Filtering

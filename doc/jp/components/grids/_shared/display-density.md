@@ -4,6 +4,7 @@ _description: Learn how to apply display density capabilities to the {ComponentT
 _keywords:  material density, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} Display Density

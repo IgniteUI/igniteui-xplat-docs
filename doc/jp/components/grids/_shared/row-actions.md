@@ -4,6 +4,7 @@ _description: The {ComponentName} provides the ability to use ActionStrip and ut
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # Row Actions in {Platform} {ComponentTitle}

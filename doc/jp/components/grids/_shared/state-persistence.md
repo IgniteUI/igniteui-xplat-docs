@@ -4,6 +4,7 @@ _description: Easily save and restore the grid state, using our comprehensive Ig
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} State Persistence

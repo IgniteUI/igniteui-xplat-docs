@@ -4,6 +4,7 @@ _description: The {Platform} {ComponentTitle} Clipboard functionality provides f
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} Clipboard Overview

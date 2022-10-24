@@ -4,6 +4,7 @@ _description: Take advantage of the capability to show\hide smaller and concise 
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
