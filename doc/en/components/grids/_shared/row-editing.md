@@ -72,16 +72,16 @@ Define a {ComponentTitle} with bound data source and `RowEditable` set to true:
              AutoGenerate=false
              Data=northwindEmployees
              RowEditable=true>
-        <IgbGridColumn Field="ID" Editable=false></IgbGridColumn>
-        <IgbGridColumn Field="ContactName"></IgbGridColumn>
-        <IgbGridColumn Field="ContactTitle"></IgbGridColumn>
-        <IgbGridColumn Field="City"></IgbGridColumn>
-        <IgbGridColumn Field="CompanyName"></IgbGridColumn>
-        <IgbGridColumn Field="Fax"></IgbGridColumn>
-        <IgbGridColumn Field="Address"></IgbGridColumn>
-        <IgbGridColumn Field="PostalCode"></IgbGridColumn>
-        <IgbGridColumn Field="Country"></IgbGridColumn>
-        <IgbGridColumn Field="Phone"></IgbGridColumn>
+        <IgbColumn Field="ID" Editable=false></IgbColumn>
+        <IgbColumn Field="ContactName"></IgbColumn>
+        <IgbColumn Field="ContactTitle"></IgbColumn>
+        <IgbColumn Field="City"></IgbColumn>
+        <IgbColumn Field="CompanyName"></IgbColumn>
+        <IgbColumn Field="Fax"></IgbColumn>
+        <IgbColumn Field="Address"></IgbColumn>
+        <IgbColumn Field="PostalCode"></IgbColumn>
+        <IgbColumn Field="Country"></IgbColumn>
+        <IgbColumn Field="Phone"></IgbColumn>
     </{ComponentSelector}>
 
     @code {
