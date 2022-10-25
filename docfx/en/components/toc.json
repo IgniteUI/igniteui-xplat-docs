@@ -316,6 +316,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Editing",
+        "href": "grids/lob-grid/editing.md",
+        "status": "NEW"
+      },
+      {
         "name": "Excel Style Filtering",
         "href": "grids/lob-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -405,6 +410,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Editing",
+        "href": "grids/hierarchical-grid/editing.md",
+        "status": "NEW"
+      },
+      {
         "name": "Excel Style Filtering",
         "href": "grids/hierarchical-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -531,6 +541,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Editing",
+        "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
         "name": "Excel Style Filtering",
         "href": "grids/tree-grid/excel-style-filtering.md",
         "status": "NEW"
