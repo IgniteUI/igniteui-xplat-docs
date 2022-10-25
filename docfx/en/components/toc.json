@@ -313,6 +313,12 @@
         "name": "Filtering",
         "href": "grids/lob-grid/filtering.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/lob-grid/cell-selection.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -384,6 +390,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/hierarchical-grid/cell-selection.md", 
         "status": "NEW"
       }
     ]
@@ -493,6 +505,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/tree-grid/cell-selection.md", 
         "status": "NEW"
       }
     ]
