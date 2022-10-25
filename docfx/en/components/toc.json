@@ -457,7 +457,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
     "name": "Hierarchical Grid",
     "href": "grids/hierarchical-grid/overview.md",
     "status": "NEW",
@@ -657,7 +657,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
     "status": "NEW",
