@@ -13,8 +13,8 @@ Copy to clipboard operations are now available in the {ComponentTitle}. This fun
 
 <code-view style="height:635px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-clipboard-interactions"
-           github-src="{ComponentSample}/clipboard-interactions"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-clipboard-operations-sample"
+           github-src="{ComponentSample}/clipboard-operations-sample"
            alt="{Platform} {ComponentTitle} Clipboard Interactions Example">
 </code-view>
 
