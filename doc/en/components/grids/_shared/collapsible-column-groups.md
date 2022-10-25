@@ -145,10 +145,10 @@ You can define custom expand/collapse template and provide it to each of the col
 ```
 
 ```razor
-    private RenderFragment<IgbColumnTemplateContext> Template = (context) =>
+    public RenderFragment<IgbColumnTemplateContext> Template = (context) =>
     {
         string icon = context.Column.Expanded ? "remove" : "add";
-        return @<IgbIcon IconName="add" Collection="material"></IgbIcon>;
+        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
     };
 ```
 
