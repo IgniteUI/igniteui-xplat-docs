@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Toolbar
 
-The {ComponentTitle} in {ProductName} for {Platform} provides an [`GridToolbarComponent`]({environment:{Platform}ApiUrl}/classes/gridtoolbarcomponent.html) which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the {ComponentTitle} and it matches its horizontal size. The toolbar container can host predefined UI controls for the following {ComponentTitle}'s features:
+The {ComponentTitle} in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the {ComponentTitle} and it matches its horizontal size. The toolbar container can host predefined UI controls for the following {ComponentTitle}'s features:
 
  - Column Hiding
  - Column Pinning
@@ -74,7 +74,7 @@ The predefined `actions` and `title` UI components are added inside the `<igx-gr
 ```
 }
 
-> Note: As seen in the code snippet above, the predefined `actions` UI components are wrapped in the [`<igx-grid-toolbar-actions>` container]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html). This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> Note: As seen in the code snippet above, the predefined `actions` UI components are wrapped in the `<igx-grid-toolbar-actions>` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
 
 Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
 
@@ -149,7 +149,7 @@ Listed below are the main features of the toolbar with example code for each of 
 
 
 ### Title
-Setting a title for the toolbar in your grid is achieved by using the [IgxGridToolbarTitleDirective]({environment:{Platform}ApiUrl}/classes/igxgridtoolbartitledirective.html).
+Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
 Users can provide anything from simple text to more involved templates.
 ```html
 <igx-grid-toolbar>
@@ -158,7 +158,7 @@ Users can provide anything from simple text to more involved templates.
 ```
 
 ### Actions
-The toolbar exposes a [specific container]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html) where users can place actions/interactions in relation to the parent grid.
+The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 ```html
@@ -171,7 +171,7 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
-Each action now exposes a way to change the overlay settings of the actions dialog by using the [`overlaySettings`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html#overlaysettings) input, example:
+Each action now exposes a way to change the overlay settings of the actions dialog by using the `overlaySettings` input, example:
 
 ```html
 <igx-grid-toolbar-actions>
@@ -208,7 +208,7 @@ constructor() {
 The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
 
 ### Column pinning
-[Toolbar Pinning component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarpinningcomponent.html) provides the default UI for interacting with column pinning in the grid.
+`GridToolbarPinningComponent` provides the default UI for interacting with column pinning in the grid.
 The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component
 title, the placeholder for the component input and the height of the dropdown itself.
 
@@ -227,7 +227,7 @@ title, the placeholder for the component input and the height of the dropdown it
 
 
 ### Column hiding
-[Toolbar Hiding component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html) provides the default
+`GridToolbarHidingComponent` provides the default
 UI for interacting with column hiding. Exposes the same input properties for customizing the UI, such as the component
 title, the placeholder for the component input and the height of the dropdown itself.
 
@@ -262,8 +262,8 @@ title, the placeholder for the component input and the height of the dropdown it
 > belonging to their respective grid (the child grids will not be included in the exported data).
 }
 
-As with the rest of the toolbar actions, exporting is provided through a [Toolbar Exporter component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html) out of the box.
-The exporting component is using the respective service for the target data format ([Excel]({environment:{Platform}ApiUrl}/classes/igxexcelexporterservice.html) [CSV]({environment:{Platform}ApiUrl}/classes/igxcsvexporterservice.html)). That means if the respective service is not provided through the dependency injection chain, the component
+As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporterComponent` out of the box.
+The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component
 won't be able to export anything.
 If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable
 all export services for your application.
@@ -363,7 +363,7 @@ The following sample demonstrates how to customize the exported files:
 ## Exporting Indicator
 
 When using the default toolbar exporter component, whenever an export operation takes place the toolbar will show a progress indicator while the operation is in progress.
-Moreover, users can set the toolbar [showProgress]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarcomponent.html#showprogress) property and use for their own long running operations
+Moreover, users can set the toolbar [showProgress] property and use for their own long running operations
 or just as another way to signify an action taking place in the grid.
 The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button
 that simulates a long running operation in the grid:
@@ -457,7 +457,7 @@ $dark-grid-toolbar-theme: grid-toolbar-theme(
 );
 ```
 
-To theme the column actions menus of the toolbar, we have to change the theme of the [`column-actions-theme`]({environment:sassApiUrl}/index.html#function-igx-column-actionsr-theme) component.
+To theme the column actions menus of the toolbar, we have to change the theme of the `column-actions-theme` component.
 
 ```scss
 $dark-column-actions-theme: column-actions-theme(
@@ -542,21 +542,21 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* [`IgxGridToolbarActionsDirective`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaractionsdirective.html)
-* [`IgxGridToolbarAdvancedFilteringComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html)
-* [`IgxGridToolbarComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarcomponent.html)
-* [`IgxGridToolbarExporterComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html)
-* [`IgxGridToolbarHidingComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarhidingcomponent.html)
-* [`IgxGridToolbarPinningComponent`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarpinningcomponent.html)
-* [`IgxGridToolbarTitleDirective`]({environment:{Platform}ApiUrl}/classes/igxgridtoolbartitledirective.html)
+* `GridToolbarActionsDirective`
+* `GridToolbarAdvancedFilteringComponent`
+* `GridToolbarComponent`
+* `GridToolbarExporterComponent`
+* `GridToolbarHidingComponent`
+* `GridToolbarPinningComponent`
+* `GridToolbarTitleDirective`
 
 
-[`@@igxNameComponent`]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html) events:
-* [`toolbarExporting`]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html#toolbarExporting)
+* `{ComponentName}` Events:
+* `ToolbarExporting`
 
 Styles:
 
-* [`@@igxNameComponent Styles`]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `{ComponentName}` Styles
 
 ## Additional Resources
 

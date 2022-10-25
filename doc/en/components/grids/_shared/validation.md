@@ -636,9 +636,9 @@ public cellStyles = {
 
 ## API References
 
-* [IgxBaseTransactionService]({environment:{Platform}ApiUrl}/classes/igxbasetransactionservice.html)
-* [IgxGridComponent]({environment:{Platform}ApiUrl}/classes/igxgridcomponent.html)
-* [IgxColumnComponent]({environment:{Platform}ApiUrl}/classes/igxcolumncomponent.html)
+* `BaseTransactionService`
+* `GridComponent`
+* `ColumnComponent`
 
 
 ## Additional Resources

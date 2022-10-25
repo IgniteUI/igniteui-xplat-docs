@@ -9,7 +9,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
  Keyboard navigation in the {ComponentTitle} provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the {ComponentTitle} and allows to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
 
-The tabulations of the {ComponentTitle} has been reduced so that the navigation is compliant with W3C accesibility standards and convenient to use.
+The tabulations of the {ComponentTitle} has been reduced so that the navigation is compliant with W3C accessibility standards and convenient to use.
 
 Currently, the {ComponentTitle} introduces the following tab stops:
 * **GroupBy or Toolbar area** (if enabled);
@@ -121,19 +121,20 @@ Overriding the default behavior for a certain key or keys combination is one of 
 
 | API | Description | Arguments |
 |---------|-------------|-----------|
-| [`gridKeydown`]({environment:angularApiUrl}/classes/igxgridcomponent.html#gridKeydown) | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | [IGridKeydownEventArgs]({environment:angularApiUrl}/interfaces/igridkeydowneventargs.html) |
-| [`activeNodeChange`]({environment:angularApiUrl}/classes/igxgridcomponent.html#activenodechange) | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | [IActiveNodeChangeEventArgs]({environment:angularApiUrl}/interfaces/iactivenodechangeeventargs.html) |
-| [`navigateTo`]({environment:angularApiUrl}/classes/igxgridcomponent.html#navigateto) | Navigates to a position in the grid, based on provided `rowindex` and `visibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: GridKeydownTargetType, target: Object }` . Usage: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `rowindex`: number, `visibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
-| [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell)| returns [`ICellPosition`]({environment:angularApiUrl}/interfaces/icellposition.html) object, which defines the next cell by `rowIndex` and `visibleColumnIndex`. A callback function can be passed as a third parameter of [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell) method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
-| [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getPreviousCell)| returns [`ICellPosition`]({environment:angularApiUrl}/interfaces/icellposition.html) object, which defines the previous cell by `rowIndex` and `visibileColumnIndex`. A callback function can be passed as a third parameter of [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getPreviousCell) method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
+| `gridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `IGridKeydownEventArgs` |
+| `activeNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `IActiveNodeChangeEventArgs` |
+| `navigateTo` | Navigates to a position in the grid, based on provided `rowindex` and `visibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: GridKeydownTargetType, target: Object }` . Usage: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `rowindex`: number, `visibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
+| `getNextCell`| returns `ICellPosition` object, which defines the next cell by `rowIndex` and `visibleColumnIndex`. A callback function can be passed as a third parameter of `getNextCell` method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
+| `getPreviousCell` | returns `ICellPosition` object, which defines the previous cell by `rowIndex` and `visibleColumnIndex`. A callback function can be passed as a third parameter of `getPreviousCell` method. The callback function accepts `IgxColumnComponent` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`IgxColumnComponent`) => boolean |
 <br />
+
 <!-- ComponentStart: HierarchicalGrid -->
 >[!NOTE]
-> Both [`getNextCell`]({environment:angularApiUrl}/classes/igxgridcomponent.html#getnextcell) and [`getPreviousCell`]({environment:angularApiUrl}/classes/igxgridbasedirective.html#getpreviouscell) are
+> Both `getNextCell` and `getPreviousCell` are
 > available for the current level and cannot access cells from upper or lower level.
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the [`gridKeydown`]({environment:angularApiUrl}/classes/igxgridcomponent.html#gridKeydown) event:
+Let's try the API to demonstrate how to achieve common scenarios like user input validation and custom navigation. First we need to register an event handler for the `gridKeydown` event:
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -150,7 +151,7 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 </igx-hierarchical-grid>
 ```
 
-In order to add custom keyboard navigation to igxHierarchicalGrid child grids too, each child grid should subscribe to [`gridKeydown`]({environment:angularApiUrl}/classes/igxhierarchicalgridcomponent.html#gridKeydown) event. That's why in example above we have registered and event handler for for the [`gridCreated`]({environment:angularApiUrl}/classes/igxrowislandcomponent.html#gridCreated) event:
+In order to add custom keyboard navigation to igxHierarchicalGrid child grids too, each child grid should subscribe to `gridKeydown` event. That's why in example above we have registered and event handler for for the `gridCreated` event:
 
 ```typescript
 public childGridCreated(event: IGridCreatedEventArgs) {
@@ -177,7 +178,7 @@ public customKeydown(args: IGridKeydownEventArgs) {
     const type = args.targetType;
 
     if (type === 'dataCell' && target.inEditMode && evt.key.toLowerCase() === 'tab') {
-        // 1. USER INPUT VALIDATON ON TAB
+        // 1. USER INPUT VALIDATION ON TAB
     }
     if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
         // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
@@ -189,7 +190,7 @@ Based on the [IGridKeydownEventArgs]({environment:angularApiUrl}/interfaces/igri
 
 <!-- ComponentStart: Grid -->
 ```typescript
-    // 1. USER INPUT VALIDATON ON TAB
+    // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
         // alert the user that the input is invalid
         return;
