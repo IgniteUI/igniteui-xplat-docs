@@ -245,6 +245,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Group By",
         "href": "grids/lob-grid/groupby.md",
         "status": "NEW"
@@ -268,6 +269,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Collapsible Column Groups",
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -302,14 +304,14 @@
         "href": "grids/lob-grid/row-actions.md",
         "status": "NEW"
       },
-      { 
-        "exclude": ["Angular", "React", "WebComponents"], 
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Adding",
-        "href": "grids/lob-grid/row-adding.md", 
+        "href": "grids/lob-grid/row-adding.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Batch Editing",
         "href": "grids/lob-grid/batch-editing.md",
         "status": "NEW"
@@ -323,7 +325,7 @@
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Editing",
-        "href": "grids/lob-grid/cell-editing.md", 
+        "href": "grids/lob-grid/cell-editing.md",
         "status": "NEW"
       },
       {
@@ -357,20 +359,21 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sizing",
         "href": "grids/lob-grid/sizing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Filtering",
-        "href": "grids/lob-grid/filtering.md", 
+        "href": "grids/lob-grid/filtering.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
-        "href": "grids/lob-grid/virtualization.md", 
+        "href": "grids/lob-grid/virtualization.md",
         "status": "NEW"
       },
       {
@@ -380,24 +383,27 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Editing",
         "href": "grids/lob-grid/editing.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Excel Style Filtering",
         "href": "grids/lob-grid/excel-style-filtering.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/lob-grid/sorting.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Selection",
-        "href": "grids/lob-grid/cell-selection.md", 
+        "href": "grids/lob-grid/cell-selection.md",
         "status": "NEW"
       },
       {
@@ -419,6 +425,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Hiding",
         "href": "grids/lob-grid/column-hiding.md",
         "status": "NEW"
@@ -430,6 +437,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Selection",
         "href": "grids/lob-grid/row-selection.md",
         "status": "NEW"
@@ -441,9 +449,9 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Dragging",
-        "href": "grids/lob-grid/row-drag.md", 
+        "href": "grids/lob-grid/row-drag.md",
         "status": "NEW"
       }
     ]
@@ -505,7 +513,7 @@
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Editing",
-        "href": "grids/hierarchical-grid/cell-editing.md", 
+        "href": "grids/hierarchical-grid/cell-editing.md",
         "status": "NEW"
       },
       {
@@ -545,15 +553,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Filtering",
-        "href": "grids/hierarchical-grid/filtering.md", 
+        "href": "grids/hierarchical-grid/filtering.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
-        "href": "grids/hierarchical-grid/virtualization.md", 
+        "href": "grids/hierarchical-grid/virtualization.md",
         "status": "NEW"
       },
       {
@@ -569,6 +577,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Excel Style Filtering",
         "href": "grids/hierarchical-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -580,9 +589,9 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Selection",
-        "href": "grids/hierarchical-grid/cell-selection.md", 
+        "href": "grids/hierarchical-grid/cell-selection.md",
         "status": "NEW"
       },
       {
@@ -604,6 +613,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Hiding",
         "href": "grids/hierarchical-grid/column-hiding.md",
         "status": "NEW"
@@ -615,6 +625,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Selection",
         "href": "grids/hierarchical-grid/row-selection.md",
         "status": "NEW"
@@ -626,21 +637,21 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Batch Editing",
-        "href": "grids/hierarchical-grid/batch-editing.md", 
+        "href": "grids/hierarchical-grid/batch-editing.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Adding",
-        "href": "grids/hierarchical-grid/row-adding.md", 
+        "href": "grids/hierarchical-grid/row-adding.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Dragging",
-        "href": "grids/hierarchical-grid/row-drag.md", 
+        "href": "grids/hierarchical-grid/row-drag.md",
         "status": "NEW"
       }
     ]
@@ -696,6 +707,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/tree-grid/conditional-cell-styling.md",
         "status": "NEW"
@@ -743,13 +755,13 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Adding",
-        "href": "grids/tree-grid/row-adding.md", 
+        "href": "grids/tree-grid/row-adding.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Batch Editing",
         "href": "grids/tree-grid/batch-editing.md",
         "status": "NEW"
@@ -763,7 +775,7 @@
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Editing",
-        "href": "grids/tree-grid/cell-editing.md", 
+        "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
       },
       {
@@ -803,15 +815,15 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Filtering",
-        "href": "grids/tree-grid/filtering.md", 
+        "href": "grids/tree-grid/filtering.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
-        "href": "grids/tree-grid/virtualization.md", 
+        "href": "grids/tree-grid/virtualization.md",
         "status": "NEW"
       },
       {
@@ -821,19 +833,21 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Excel Style Filtering",
         "href": "grids/tree-grid/excel-style-filtering.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/tree-grid/sorting.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Cell Selection",
-        "href": "grids/tree-grid/cell-selection.md", 
+        "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
       },
       {
@@ -861,6 +875,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Selection",
         "href": "grids/tree-grid/row-selection.md",
         "status": "NEW"
@@ -872,9 +887,9 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"], 
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Dragging",
-        "href": "grids/tree-grid/row-drag.md", 
+        "href": "grids/tree-grid/row-drag.md",
         "status": "NEW"
       }
     ]
