@@ -17,7 +17,7 @@ Property **Editable** enables you to specify the following options:
 - **false** - the editing for the corresponding column will be disabled; /default value/
 - **true** - the editing for the corresponding column will be enabled;
 
->Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the @@{ComponentTitle}.
+>Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the {ComponentTitle}.
 
 Property **RowEditable** enables you to specify the following options:
 - **false** - the row editing in the corresponding grid will be disabled; /default value/
