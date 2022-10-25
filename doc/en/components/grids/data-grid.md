@@ -35,7 +35,7 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards, you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
@@ -49,15 +49,17 @@ npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-### Required Modules
+### Component Modules
 
 The `Grid` requires the following modules:
 
 <!-- Blazor -->
 
+Open the Program.cs
 ```razor
-IgbDataGridModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -91,10 +93,13 @@ ModuleManager.register(
 
 The optional `Grid` features, seen above, requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
-IgbDataGridToolbarModule.Register(IgniteUIBlazor);
-IgbSparklineModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbDataGridModule),
+    typeof(IgbDataGridToolbarModule),
+    typeof(IgbSparklineModule)
+);
 ```
 
 ```ts

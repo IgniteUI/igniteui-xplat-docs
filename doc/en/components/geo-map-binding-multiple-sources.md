@@ -104,8 +104,6 @@ public onMapReferenced(map: IgrGeographicMap) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();
         Coordinates = WorldConnections.GetGridlines();
@@ -290,7 +288,7 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries DataSource="Flights" ShapeMemberPath="Points"
@@ -311,8 +309,6 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         Airports = WorldConnections.GetAirports();
         Flights = WorldConnections.GetFlights();
         Coordinates = WorldConnections.GetGridlines();

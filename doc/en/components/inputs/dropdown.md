@@ -59,8 +59,9 @@ IgrDropdownModule.register();
 
 Before using the `Dropdown`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbDropdownModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 ```
 
 <!-- end: Blazor -->

@@ -61,8 +61,9 @@ IgrCheckboxModule.register();
 
 `Checkbox` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Checkbox` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:

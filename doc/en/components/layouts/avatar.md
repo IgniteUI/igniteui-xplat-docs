@@ -51,10 +51,10 @@ IgrAvatarModule.register();
 
 Before using the `Avatar`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbAvatarModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
 ```
-
 <!-- Blazor -->
 
 You will also need to link an additional CSS file to apply the styling to the `Avatar` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:

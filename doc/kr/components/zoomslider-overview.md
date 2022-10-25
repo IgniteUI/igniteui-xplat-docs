@@ -39,11 +39,12 @@ When installing the chart package, the core package must also be installed.
 - **npm install --save {PackageCharts}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 The `ZoomSlider` requires the following modules:
 
+Open the Program.cs
 ```razor
-ZoomSliderModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbZoomSliderModule));
 ```
 
 ```ts

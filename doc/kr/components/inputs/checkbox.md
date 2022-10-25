@@ -30,8 +30,9 @@ At its core, the checkbox component allows for a choice between selected/unselec
 
 To get started with the checkbox component, you will need to include its module, like so:
 
+Open the Program.cs
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 <!-- end:Blazor>

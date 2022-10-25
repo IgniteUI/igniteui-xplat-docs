@@ -43,12 +43,14 @@ npm install --save {PackageLayouts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The Multi-Column Combo Box requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
@@ -105,7 +107,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -153,7 +154,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -195,7 +195,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -235,7 +234,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -279,7 +277,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }

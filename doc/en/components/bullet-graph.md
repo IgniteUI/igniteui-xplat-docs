@@ -37,12 +37,13 @@ npm install --save {PackageGauges}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamBulletGraph` requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbBulletGraphModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
 <!-- Angular, React, WebComponents -->

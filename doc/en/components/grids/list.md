@@ -55,9 +55,11 @@ IgrListModule.register();
 
 Before using the `List`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbListModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
+
 
 <!-- Blazor -->
 

@@ -52,8 +52,9 @@ IgrSnackbarModule.register();
 
 Before using the `Snackbar`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbSnackbarModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbSnackbarModule));
 ```
 
 <!-- Blazor -->
@@ -84,15 +85,6 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <IgbButton onclick="snackbar.show()">Show Snackbar</IgbButton>
     <IgbSnackbar id="snackbar"> Snackbar Message </IgbSnackbar>
 </div>
-
-@code {
-
-    protected override void OnInitialized()
-    {
-        IgbSnackbarModule.Register(IgniteUIBlazor);
-        IgbButtonModule.Register(IgniteUIBlazor);
-    }
-}
 ```
 
 ```tsx

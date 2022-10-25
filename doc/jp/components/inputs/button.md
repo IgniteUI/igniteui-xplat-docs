@@ -58,8 +58,9 @@ IgrButtonModule.register();
 
 `Button` を使用する前に、次のように登録する必要があります。
 
+Open the Program.cs
 ```razor
-IgbButtonModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Button` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -272,9 +273,6 @@ public onRadioChange(e: any) {
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbRadioModule.Register(IgniteUIBlazor);
-        IgbRadioGroupModule.Register(IgniteUIBlazor);
     }
 
     public void OnSmallClick(EventArgs e)

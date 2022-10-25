@@ -38,13 +38,16 @@ npm install --save {PackageMaps}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamGeographicMap` requires the following modules, however the DataChartInteractivityModule is only required for mouse interactions, such as panning and zooming the map content.
 
+Open the Program.cs
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGeographicMapModule), 
+    typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts

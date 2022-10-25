@@ -120,7 +120,6 @@ public initData() {
     {
         base.OnInitialized();
 
-        IgbDataGridModule.Register(IgniteUIBlazor);
         GenerateData();
     }
 

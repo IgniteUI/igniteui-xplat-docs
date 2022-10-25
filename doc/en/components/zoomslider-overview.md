@@ -44,11 +44,18 @@ npm install --save {PackageCharts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 The `ZoomSlider` requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbZoomSliderModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbZoomSliderModule));
+```
+
+Open the Program.cs
+```razor
+builder.Services.AddIgniteUIBlazor(typeof(IgbZoomSliderModule));
 ```
 
 ```ts

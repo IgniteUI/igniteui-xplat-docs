@@ -39,8 +39,9 @@ Input コンポーネントの使用を開始するには、最初にそのモ�
 
 <!-- Blazor -->
 
+Open the Program.cs
 ```razor
-IgbInputModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:

@@ -33,12 +33,13 @@ When installing the gauge package, the core package must also be installed.
 - **npm install --save {PackageGauges}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamRadialGauge` requires the following modules:
 
+Open the Program.cs
 ```razor
-RadialGaugeModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts

@@ -55,8 +55,9 @@ IgrToastModule.register();
 
 `Toast` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbToastModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbToastModule));
 ```
 
 ```ts
@@ -91,8 +92,6 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -154,8 +153,6 @@ public onShowButtonClicked() {
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToggleToastButtonClick(MouseEventArgs args)

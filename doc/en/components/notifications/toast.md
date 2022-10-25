@@ -54,8 +54,9 @@ IgrToastModule.register();
 
 Before using the `Toast`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbToastModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbToastModule));
 ```
 
 ```ts
@@ -90,8 +91,6 @@ The simplest way to display the toast component is to use its `Show` method and 
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -153,8 +152,6 @@ By default, the toast component is hidden automatically after a period specified
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToggleToastButtonClick(MouseEventArgs args)

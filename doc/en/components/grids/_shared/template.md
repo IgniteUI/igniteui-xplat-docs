@@ -67,9 +67,11 @@ Register the `{ComponentModule}` as demonstrated in the following code snippet:
 
 <!-- EXAMPLE of Blazor code snippet with module variable -->
 <!-- Blazor -->
+Open the Program.cs
 ```razor
-{ComponentModule}.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof({ComponentModule}));
 ```
+
 <!-- end: Blazor -->
 
 <!-- EXAMPLE of React/WC code snippet with module variable that will be resolved to actual module, e.g. {ComponentModule} -> IgcPivotGridModule  -->

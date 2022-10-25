@@ -57,10 +57,14 @@ IgrRangeSliderModule.register();
 <!-- Blazor -->
 Before using the `Slider` and `RangeSlider`, you need to register them as follows:
 
+Open the Program.cs
 ```razor
-IgbSliderModule.Register(IgniteUIBlazor);
-IgbRangeSliderModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbSliderModule),
+  typeof(IgbRangeSliderModule)
+);
 ```
+
 <!-- end: Blazor -->
 
 The simplest way to start using the `Slider` and `RangeSlider` is as follows:

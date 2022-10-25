@@ -61,8 +61,9 @@ IgrSwitchModule.register();
 
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
+Open the Program.cs
 ```razor
-IgbSwitchModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Switch` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:

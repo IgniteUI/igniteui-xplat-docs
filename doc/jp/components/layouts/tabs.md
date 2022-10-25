@@ -31,8 +31,9 @@ npm install {PackageWebComponents}
 
 `Tabs` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbTabsModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbTabsModule));
 ```
 
 ```ts

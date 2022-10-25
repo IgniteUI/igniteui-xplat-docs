@@ -180,7 +180,7 @@ addSeriesWith(locations: any[], brush: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicSymbolSeries DataSource="Cities"
@@ -204,8 +204,6 @@ addSeriesWith(locations: any[], brush: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.Cities = WorldLocations.GetCities();
         this.Capitals = WorldLocations.GetCapitals();
     }
