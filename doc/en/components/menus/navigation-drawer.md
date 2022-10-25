@@ -54,9 +54,12 @@ IgrNavDrawerModule.register();
 
 Before using the `NavDrawer`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
 
 <!-- Blazor -->

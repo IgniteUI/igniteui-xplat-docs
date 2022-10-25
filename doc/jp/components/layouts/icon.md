@@ -39,8 +39,9 @@ defineComponents(IgcIconComponent);
 
 `Icon` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbIconModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbIconModule));
 ```
 
 <!-- React -->

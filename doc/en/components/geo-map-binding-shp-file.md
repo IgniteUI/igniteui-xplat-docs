@@ -232,7 +232,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
@@ -247,8 +247,6 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",

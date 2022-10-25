@@ -70,10 +70,14 @@ IgrTreeModule.register();
 ```
 <!-- end: Blazor -->
 
+Open the Program.cs
 ```razor
-IgbTreeModule.Register(IgniteUIBlazor);
-IgbTreeItemModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbTreeModule),
+  typeof(IgbTreeItemModule)
+);
 ```
+
 
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
 

@@ -52,8 +52,9 @@ IgrAvatarModule.register();
 
 `Avatar` を使用する前に、次のように登録する必要があります。
 
+Open the Program.cs
 ```razor
-IgbAvatarModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
 ```
 
 <!-- Blazor -->

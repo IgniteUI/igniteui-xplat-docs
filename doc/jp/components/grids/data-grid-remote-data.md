@@ -38,8 +38,9 @@ _language: ja
 
 `Grid` を作成するには、以下のモジュールが必要です。
 
+Open the Program.cs
 ```razor
-IgbDataGridModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 
 ```ts

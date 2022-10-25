@@ -58,9 +58,11 @@ IgrLinearProgressModule.register();
 <!-- Blazor -->
 `LinearProgress` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbLinearProgressModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 ```
+
 また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor

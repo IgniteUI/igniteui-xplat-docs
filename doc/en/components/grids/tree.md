@@ -69,9 +69,12 @@ You will also need to link an additional CSS file to apply the styling to the `T
 ```
 <!-- end: Blazor -->
 
+Open the Program.cs
 ```razor
-IgbTreeModule.Register(IgniteUIBlazor);
-IgbTreeItemModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeModule), 
+    typeof(IgbTreeItemModule)
+);
 ```
 
 The simplest way to start using the `Tree` is as follows:

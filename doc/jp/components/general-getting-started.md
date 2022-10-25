@@ -219,9 +219,12 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
+Open the Program.cs
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbGeographicMapModule),
+  typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts

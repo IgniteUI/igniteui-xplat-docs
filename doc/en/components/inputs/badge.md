@@ -59,8 +59,9 @@ IgrBadgeModule.register();
 
 Before using the `Badge`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbBadgeModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Badge` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:

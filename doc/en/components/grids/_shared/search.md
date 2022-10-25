@@ -343,15 +343,19 @@ To do this, let's go and grab the `Input`, `Icon`, `IconButton` and the `Chip` m
 <!-- end: Blazor -->
 
 ```razor
+
+// eg. Program.cs register the following:
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGridModule), 
+    typeof(IgbInputModule),
+    typeof(IgbIconButtonModule),
+    typeof(IgbIconModule)
+);
+
 @code {
     protected override void OnInitialized()
     {
         base.OnInitialized();
-
-        IgbGridModule.Register(IgniteUIBlazor);
-        IgbInputModule.Register(IgniteUIBlazor);
-        IgbIconButtonModule.Register(IgniteUIBlazor);
-        IgbIconModule.Register(IgniteUIBlazor);
 
         this.marketData = MarketData.GetData();
     }

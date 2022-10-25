@@ -205,7 +205,7 @@ onDataLoaded(jsonData: any[]) {
 ```razor
 @using System.Net.Http.Json
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -223,8 +223,6 @@ onDataLoaded(jsonData: any[]) {
 
     protected override async Task OnInitializedAsync()
     {
-        GeographicMapModule.Register(IgniteUIBlazor);
-
         var url = "https://static.infragistics.com/xplatform/data/WorldCities.json";
         var http = new HttpClient();
         this.DataSource = await http.GetFromJsonAsync<WorldPlaceJson[]>(url);

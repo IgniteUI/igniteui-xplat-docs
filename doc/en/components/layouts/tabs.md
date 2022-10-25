@@ -30,8 +30,9 @@ npm install {PackageWebComponents}
 
 Before using the `Tabs`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbTabsModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbTabsModule));
 ```
 
 ```ts

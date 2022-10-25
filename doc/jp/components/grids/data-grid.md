@@ -36,7 +36,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
@@ -56,8 +56,9 @@ npm install --save {PackageInputs}
 
 <!-- Blazor -->
 
+Open the Program.cs
 ```razor
-IgbDataGridModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 <!-- end: Blazor -->
 
@@ -92,10 +93,13 @@ ModuleManager.register(
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
+Open the Program.cs
 ```razor
-IgbGridColumnOptionsModule.Register(IgniteUIBlazor);
-IgbDataGridToolbarModule.Register(IgniteUIBlazor);
-IgbSparklineModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbGridColumnOptionsModule),
+  typeof(IgbDataGridToolbarModule),
+  typeof(IgbSparklineModule)
+);
 ```
 
 ```ts

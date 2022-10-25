@@ -262,7 +262,7 @@ addSeriesWith(locations: any[])
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicProportionalSymbolSeries DataSource="WorldCities"
@@ -284,8 +284,6 @@ addSeriesWith(locations: any[])
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.WorldCities = WorldLocations.GetAll();
 
         this.SeriesSizeScale = new SizeScale()

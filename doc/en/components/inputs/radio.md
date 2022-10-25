@@ -60,9 +60,12 @@ IgrRadioGroupModule.register();
 
 Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
 
+Open the Program.cs
 ```razor
-IgbRadioModule.Register(IgniteUIBlazor);
-IgbRadioGroupModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbRadioModule),
+  typeof(IgbRadioGroupModule)
+);
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Radio` and the `RadioGroup` components. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:

@@ -32,14 +32,14 @@ npm install --save {PackageGauges}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamLinearGauge` requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbLinearGaugeModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
 ```
-
 
 ```ts
 // app.module.ts

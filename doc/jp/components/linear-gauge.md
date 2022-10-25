@@ -37,10 +37,10 @@ npm install --save {PackageGauges}
 
 `XamLinearGauge` を作成するには、以下のモジュールが必要です。
 
+Open the Program.cs
 ```razor
-IgbLinearGaugeModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
 ```
-
 
 ```ts
 // app.module.ts

@@ -29,7 +29,7 @@ npm install --save {PackageCore}
 npm install --save {PackageExcel}
 </pre>
 
-## Required Modules
+## Component Modules
 
 The {Platform} excel library requires the following modules:
 

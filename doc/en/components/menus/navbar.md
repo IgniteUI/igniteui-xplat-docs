@@ -33,8 +33,9 @@ npm install {PackageWebComponents}
 
 Before using the `Navbar`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbNavbarModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbNavbarModule));
 ```
 
 ```ts

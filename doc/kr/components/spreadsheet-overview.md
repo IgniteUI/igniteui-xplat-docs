@@ -29,13 +29,16 @@ When installing the spreadsheet package, the core and excel package must also be
 - **npm install --save {PackageSpreadsheet}**
 
 
-## Required Modules
+## Component Modules
 
 The `Spreadsheet` requires the following modules:
 
+Open the Program.cs
 ```razor
-ExcelModule.Register(IgniteUIBlazor);
-SpreadsheetModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbExcelModule),
+  typeof(IgbSpreadsheetModule)
+);
 ```
 
 ```ts

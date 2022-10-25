@@ -57,8 +57,9 @@ IgrCardModule.register();
 
 Before using the `Card`, you need to register it as follows:
 
+Open the Program.cs
 ```razor
-IgbCardModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
 ```
 
 <!-- Blazor -->

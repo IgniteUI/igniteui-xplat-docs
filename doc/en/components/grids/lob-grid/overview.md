@@ -53,14 +53,15 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards, you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
-### Required Modules
+### Component Modules
 
+Open the Program.cs
 ```razor
-{ComponentModule}.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof({ComponentModule}));
 ```
 
 ### Usage

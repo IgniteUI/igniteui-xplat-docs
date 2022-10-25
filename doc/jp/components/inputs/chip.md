@@ -60,8 +60,9 @@ IgrChipModule.register();
 
 `Chip` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbChipModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -85,7 +86,6 @@ IgbChipModule.Register(IgniteUIBlazor);
 
     protected override void OnInitialized()
     {
-        IgbChipModule.Register(IgniteUIBlazor);
     }
 }
 ```

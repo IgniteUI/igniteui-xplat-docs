@@ -33,12 +33,13 @@ In addition to the core and {Platform} data grid packages you will also have to 
 
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `Grid` requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbDataGridModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 
 ```ts

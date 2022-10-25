@@ -61,13 +61,16 @@ npm install --save {PackageSpreadsheet}
 </pre>
 
 
-## Required Modules
+## Component Modules
 
 The `Spreadsheet` requires the following modules:
 
+Open the Program.cs
 ```razor
-IgbExcelModule.Register(IgniteUIBlazor);
-IgbSpreadsheetModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbExcelModule), 
+    typeof(IgbSpreadsheetModule)
+);
 ```
 
 ```ts

@@ -292,7 +292,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
@@ -304,8 +304,6 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",

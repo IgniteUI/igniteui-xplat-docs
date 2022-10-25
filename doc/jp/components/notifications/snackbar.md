@@ -53,8 +53,9 @@ IgrSnackbarModule.register();
 
 `Snackbar` を使用する前に、次のように登録する必要があります:
 
+Open the Program.cs
 ```razor
-IgbSnackbarModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbSnackbarModule));
 ```
 
 <!-- Blazor -->
@@ -90,8 +91,6 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
 
     protected override void OnInitialized()
     {
-        IgbSnackbarModule.Register(IgniteUIBlazor);
-        IgbButtonModule.Register(IgniteUIBlazor);
     }
 }
 ```

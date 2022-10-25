@@ -80,7 +80,6 @@ this.geoMap.backgroundContent = mapImagery;
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
         this.OSMImagery = new IgbOpenStreetMapImagery();
     }
 }
