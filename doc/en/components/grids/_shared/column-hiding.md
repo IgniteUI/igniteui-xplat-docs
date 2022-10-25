@@ -128,6 +128,8 @@ By using the `Title` property, we will set the title that is displayed inside th
 </div>
 ```
 
+<!-- Angular -->
+
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 By using the `ColumnsAreaMaxHeight` property of the `GridToolbarHiding`, we can set the maximum height of the area that contains the column actions. This way if we have a lot of actions and not all of them can fit in the container, a scrollbar will appear, which will allow us to scroll to any action we want.
@@ -155,6 +157,8 @@ public ngAfterViewInit() {
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 In order to use the expanded set of functionalities for the column hiding UI, we can use the `ColumnActions`'s `ColumnsAreaMaxHeight` property. This way we can use it according to our application's requirements.
+
+<!-- end: Angular -->
 
 You can see the result of the code from above at the beginning of this article in the {Platform} Column Hiding Example section.
 
