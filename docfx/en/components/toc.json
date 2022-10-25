@@ -246,6 +246,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/lob-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -355,12 +360,22 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/lob-grid/paging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Column Hiding",
         "href": "grids/lob-grid/column-hiding.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/lob-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
         "name": "Row Selection",
         "href": "grids/lob-grid/row-selection.md",
         "status": "NEW"
@@ -381,6 +396,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/hierarchical-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -478,12 +498,22 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/hierarchical-grid/paging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Column Hiding",
         "href": "grids/hierarchical-grid/column-hiding.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/hierarchical-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
         "name": "Row Selection",
         "href": "grids/hierarchical-grid/row-selection.md",
         "status": "NEW"
@@ -530,12 +560,22 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/tree-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Conditional Styling",
         "href": "grids/tree-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/tree-grid/paging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -645,6 +685,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/tree-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
         "name": "Row Selection",
         "href": "grids/tree-grid/row-selection.md",
         "status": "NEW"
