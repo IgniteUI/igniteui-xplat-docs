@@ -13,8 +13,8 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 <code-view style="height:600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-collapsible-groups"
-           github-src="{ComponentSample}/collapsible-groups"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-collapsible-columnGroups"
+           github-src="{ComponentSample}/grid-collapsible-columnGroups"
            alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
 </code-view>
 
@@ -72,18 +72,18 @@ So let's see the markup below:
 ```
 
 ```razor
- <IgbGridColumnGroup Header="Customer Information" Collapsible="true">
+ <IgbColumnGroup Header="Customer Information" Collapsible="true">
     <!--The column below will be visible when its parent is collapsed-->
-    <IgbGridColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbGridColumn>
+    <IgbColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbColumn>
         <!--The three columns below will be visible when its parent is expanded-->
-        <IgbGridColumn Field="CustomerID" Header="Customer ID" VisibleWhenCollapsed="false"></IgbGridColumn>
-        <IgbGridColumn Field="FirstName" Header="First Name" VisibleWhenCollapsed="false"></IgbGridColumn>
-        <IgbGridColumn Field="LastName" Header="Last Name" VisibleWhenCollapsed="false"></IgbGridColumn>
-        <IgbGridColumnGroup Header="Customer Address">
-            <IgbGridColumn Field="Country" Header="Country" Sortable="true"></IgbGridColumn>
-            <IgbGridColumn Field="City" Header="City" Sortable="true"></IgbGridColumn>
-        </IgbGridColumnGroup>
- </IgbGridColumnGroup>
+        <IgbColumn Field="CustomerID" Header="Customer ID" VisibleWhenCollapsed="false"></IgbColumn>
+        <IgbColumn Field="FirstName" Header="First Name" VisibleWhenCollapsed="false"></IgbColumn>
+        <IgbColumn Field="LastName" Header="Last Name" VisibleWhenCollapsed="false"></IgbColumn>
+        <IgbColumnGroup Header="Customer Address">
+            <IgbColumn Field="Country" Header="Country" Sortable="true"></IgbColumn>
+            <IgbColumn Field="City" Header="City" Sortable="true"></IgbColumn>
+        </IgbColumnGroup>
+ </IgbColumnGroup>
 ```
 
 ```html
@@ -124,6 +124,7 @@ Default collapse indicator for the {ComponentName} is the following:
 
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
 
+<!-- Angular -->
 
 ### Using Property
 
@@ -144,10 +145,13 @@ You can define custom expand/collapse template and provide it to each of the col
 ```
 
 ```razor
-TO-DO CollapsibleIndicatorTemplate SNIPPET
+    public RenderFragment<IgbColumnTemplateContext> Template = (context) =>
+    {
+        string icon = context.Column.Expanded ? "remove" : "add";
+        return @<IgbIcon IconName="@icon" Collection="material"></IgbIcon>;
+    };
 ```
 
-<!-- Angular -->
 ### Using igxCollapsibleIndicator Directive
 
 Another way to achieve this behavior is to use the igxCollapsibleIndicator directive as shown in the example below:

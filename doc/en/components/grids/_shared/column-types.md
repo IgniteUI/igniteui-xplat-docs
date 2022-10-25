@@ -46,7 +46,7 @@ public formatOptions = this.options;
 ```
 
 ```razor
-<IgbGridColumn Field="Sales" DataType="GridColumnDataType.Number" PipeArgs=formatOptions></IgbGridColumn>
+<IgbColumn Field="Sales" DataType="GridColumnDataType.Number" PipeArgs=formatOptions></IgbColumn>
 
 @code {
     private IgbColumnPipeArgs formatOptions = new IgbColumnPipeArgs() { DigitsInfo = "1.4-4" };
@@ -76,7 +76,7 @@ public formatOptions = this.options;
 ```
 
 ```razor
-<IgbGridColumn Field="Date" DataType="GridColumnDataType.Date" PipeArgs=formatDateOptions></IgbGridColumn>
+<IgbColumn Field="Date" DataType="GridColumnDataType.Date" PipeArgs=formatDateOptions></IgbColumn>
 
 @code {
     private IgbColumnPipeArgs formatDateOptions = new IgbColumnPipeArgs()
@@ -161,7 +161,7 @@ The default template is using material icons for visualization of boolean values
 ```
 
 ```razor
-<IgbGridColumn DataType="GridColumnDataType.Boolean1"></IgbGridColumn>
+<IgbColumn DataType="GridColumnDataType.Boolean"></IgbColumn>
 ```
 
 ### Currency
@@ -218,7 +218,7 @@ public formatOptions = this.options;
 ```
 
 ```razor
-<IgbGridColumn Field="UnitsInStock" DataType="GridColumnDataType.Currency" PipeArgs=formatOptions></IgbGridColumn>
+<IgbColumn Field="UnitsInStock" DataType="GridColumnDataType.Currency" PipeArgs=formatOptions></IgbColumn>
 
 @code {
     private IgbColumnPipeArgs formatOptions = new IgbColumnPipeArgs()
@@ -271,7 +271,7 @@ public formatPercentOptions = this.options;
 ```
 
 ```razor
-<IgbGridColumn Field="UnitsInStock" DataType="GridColumnDataType.Percent" PipeArgs=formatPercentOptions></IgbGridColumn>
+<IgbColumn Field="UnitsInStock" DataType="GridColumnDataType.Percent" PipeArgs=formatPercentOptions></IgbColumn>
 
 @code {
     private IgbColumnPipeArgs formatPercentOptions = new IgbColumnPipeArgs()
