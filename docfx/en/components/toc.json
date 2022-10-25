@@ -320,6 +320,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Virtualization and performance",
+        "href": "grids/lob-grid/virtualization.md", 
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/lob-grid/conditional-cell-styling.md",
@@ -461,6 +467,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/hierarchical-grid/filtering.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Virtualization and performance",
+        "href": "grids/hierarchical-grid/virtualization.md", 
         "status": "NEW"
       },
       {
@@ -653,6 +665,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Virtualization and performance",
+        "href": "grids/tree-grid/virtualization.md", 
         "status": "NEW"
       },
       {
