@@ -246,6 +246,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/lob-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/lob-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -319,6 +324,73 @@
         "name": "Virtualization and performance",
         "href": "grids/lob-grid/virtualization.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Conditional Styling",
+        "href": "grids/lob-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Editing",
+        "href": "grids/lob-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/lob-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/lob-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/lob-grid/cell-selection.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/lob-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/lob-grid/column-moving.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/lob-grid/paging.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Column Hiding",
+        "href": "grids/lob-grid/column-hiding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/lob-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Row Selection",
+        "href": "grids/lob-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Editing",
+        "href": "grids/lob-grid/row-editing.md",
+        "status": "NEW"
       }
     ]
   },
@@ -336,6 +408,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/hierarchical-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -397,6 +474,73 @@
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Conditional Styling",
+        "href": "grids/hierarchical-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Editing",
+        "href": "grids/hierarchical-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/hierarchical-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/hierarchical-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/hierarchical-grid/cell-selection.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/hierarchical-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/hierarchical-grid/column-moving.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/hierarchical-grid/paging.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Column Hiding",
+        "href": "grids/hierarchical-grid/column-hiding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/hierarchical-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Row Selection",
+        "href": "grids/hierarchical-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Editing",
+        "href": "grids/hierarchical-grid/row-editing.md",
+        "status": "NEW"
       }
     ]
   },
@@ -440,6 +584,22 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/tree-grid/multi-row-layout.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Conditional Styling",
+        "href": "grids/tree-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Paging",
+        "href": "grids/tree-grid/paging.md",
+        "status": "NEW"
+      },
+      {
         "name": "Collapsible Column Groups",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -511,6 +671,63 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Editing",
+        "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/tree-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/tree-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/tree-grid/cell-selection.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/tree-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/tree-grid/column-moving.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Hiding",
+        "href": "grids/tree-grid/column-hiding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Remote Data Operations",
+        "href": "grids/tree-grid/remote-data-operations.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Row Selection",
+        "href": "grids/tree-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Editing",
+        "href": "grids/tree-grid/row-editing.md",
         "status": "NEW"
       }
     ]
