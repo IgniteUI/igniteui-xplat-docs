@@ -328,6 +328,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Resizing",
+        "href": "grids/lob-grid/column-resizing.md",
+        "status": "NEW"
+      },
+      {
         "name": "Sizing",
         "href": "grids/lob-grid/sizing.md",
         "status": "NEW"
@@ -486,6 +491,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Resizing",
+        "href": "grids/hierarchical-grid/column-resizing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sizing",
         "href": "grids/hierarchical-grid/sizing.md",
         "status": "NEW"
@@ -509,6 +520,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW"
@@ -519,6 +531,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/hierarchical-grid/sorting.md",
         "status": "NEW"
@@ -689,6 +702,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Resizing",
+        "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
