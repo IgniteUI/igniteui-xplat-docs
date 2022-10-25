@@ -36,11 +36,11 @@ _language: ja
 
 ### フォント ファミリの変更
 
-すべてのコンポーネントのフォント ファミリを変更するには、`--igc-font-family` CSS 変数を上書きするだけです。
+すべてのコンポーネントのフォント ファミリを変更するには、`--ig-font-family` CSS 変数を上書きするだけです。
 
 ```css
 :root {
-  --igc-font-family: 'Helvetica Neue';
+  --ig-font-family: 'Helvetica Neue';
 }
 ```
 
@@ -51,9 +51,9 @@ _language: ja
 
 ```css
 :root {
-  --igc-button-font-size: 22px;
-  --igc-button-line-height: 26px;
-  --igc-button-text-transform: lowercase;
+  --ig-button-font-size: 22px;
+  --ig-button-line-height: 26px;
+  --ig-button-text-transform: lowercase;
 }
 ```
 
