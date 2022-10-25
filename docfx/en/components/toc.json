@@ -480,7 +480,7 @@
         "href": "grids/hierarchical-grid/multi-row-layout.md",
         "status": "NEW"
       },
-      {{
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
