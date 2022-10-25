@@ -115,6 +115,7 @@ function rowPinningHandler(event) {
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
+<!-- Angular -->
 
 ## Pinning Position
 
@@ -221,6 +222,7 @@ igRegisterScript("togglePinning", togglePinning, false);
             alt="{Platform} {ComponentName} Row Pinning Extra Column Example">
 </code-view>
 
+<!-- end: Angular -->
 
 <!-- ComponentStart: Grid -->
 
