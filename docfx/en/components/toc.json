@@ -240,6 +240,12 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Group By",
+        "href": "grids/lob-grid/groupby.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
