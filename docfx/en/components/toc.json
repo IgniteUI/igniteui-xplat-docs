@@ -340,6 +340,12 @@
         "name": "Cell Selection",
         "href": "grids/lob-grid/cell-selection.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/lob-grid/row-pinning.md",
+        "status": "NEW"
       }
     ]
   },
@@ -438,6 +444,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Cell Selection",
         "href": "grids/hierarchical-grid/cell-selection.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/hierarchical-grid/row-pinning.md",
         "status": "NEW"
       }
     ]
@@ -575,6 +587,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Cell Selection",
         "href": "grids/tree-grid/cell-selection.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/tree-grid/row-pinning.md",
         "status": "NEW"
       }
     ]
