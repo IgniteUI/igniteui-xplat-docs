@@ -439,6 +439,12 @@
         "name": "Row Editing",
         "href": "grids/lob-grid/row-editing.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Dragging",
+        "href": "grids/lob-grid/row-drag.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -629,6 +635,12 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Row Adding",
         "href": "grids/hierarchical-grid/row-adding.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Dragging",
+        "href": "grids/hierarchical-grid/row-drag.md", 
         "status": "NEW"
       }
     ]
@@ -857,6 +869,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Editing",
         "href": "grids/tree-grid/row-editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Dragging",
+        "href": "grids/tree-grid/row-drag.md", 
         "status": "NEW"
       }
     ]
