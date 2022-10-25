@@ -434,7 +434,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
-<!-- Angular -->
+<!-- end: Angular -->
 
 ## API References
 
