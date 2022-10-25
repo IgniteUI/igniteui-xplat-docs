@@ -101,7 +101,7 @@ This will automatically install packages for {ProductName}, along with all of th
 
 ## Importing Modules
 
-First we have to import the Component Modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
+First we have to import the required modules of the components we want to use. We will go ahead and do this for the [**GeographicMap**](geo-map.md) component.
 
 Open the Program.cs
 ```razor
