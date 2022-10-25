@@ -1,5 +1,5 @@
 ---
-title:  Excel Style Filtering in {Platform} {ComponentTitle}- {ProductName}
+title:  Excel Style Filtering in {Platform} {ComponentTitle} - {ProductName}
 _description: Learn how to configure Excel filtering in {Platform} {ComponentTitle}. You can enable/disable various options and customize the Excel style filter menu the way you want.
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -20,7 +20,7 @@ The grid Excel filtering provides an Excel like filtering UI for any Angular Mat
 
 ## Usage
 
-To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter`.
+To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
 <!-- Angular -->
 ```html
@@ -40,7 +40,7 @@ In order to open the filter menu for a particular column, the {Platform} filter 
 
 If no filter is applied, all the items in the list will be selected. They can be filtered from the input above the list. In order to filter the data, you can select/deselect the items in the list and either click the Apply button, or press <kbd>Enter</kbd>. The filtering applied through the list items creates filter expressions with `equals` operator and the logic operator between the expressions is `OR`.
 
-If you type something in the search box and apply the filter, only the items that match the search criteria will be selected. If you want to add items to the currently filtered ones, however, you should select the option `Add current selection to filter`.
+If you type something in the search box and apply the filter, only the items that match the search criteria will be selected. If you want to add items to the currently filtered ones, however, you should select the option **Add current selection to filter**.
 
 If you want to clear the filter, you can check the `Select All` option and then click the Apply button.
 
