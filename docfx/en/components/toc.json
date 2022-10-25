@@ -257,6 +257,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/lob-grid/advanced-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Row Layout",
         "href": "grids/lob-grid/multi-row-layout.md",
         "status": "NEW"
@@ -438,11 +444,18 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/hierarchical-grid/advanced-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Row Layout",
         "href": "grids/hierarchical-grid/multi-row-layout.md",
         "status": "NEW"
       },
-      {
+      {{
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Collapsible Column Groups",
         "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
@@ -636,6 +649,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Advanced Filtering",
+        "href": "grids/tree-grid/advanced-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Row Layout",
         "href": "grids/tree-grid/multi-row-layout.md",
         "status": "NEW"
@@ -652,6 +671,7 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Collapsible Column Groups",
         "href": "grids/tree-grid/collapsible-column-groups.md",
         "status": "NEW"
