@@ -64,6 +64,31 @@
     "status": ""
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "操作方法",
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Blazor Excel ライブラリ",
+        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "サーバーの負荷を軽減するために Excel ファイルを読み書きする方法",
+        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "Blazor チャートでマーカー表示をカスタマイズする方法",
+        "href": "customize-marker-display-in-blazor-charts.md",
+        "status": ""
+      }
+    ]
+  },
+  {
     "name": "変更ログ",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
@@ -178,15 +203,31 @@
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
-    "name": "データ グリッド",
+    "name": "グリッド",
     "href": "grids/lob-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "複数列ヘッダー",
+        "href": "grids/lob-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "階層グリッド",
     "href": "grids/hierarchical-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "複数列ヘッダー",
+        "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
@@ -196,7 +237,7 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Pivot Grid Shared Topic",
+        "name": "ピボット グリッドの共有トピック",
         "href": "grids/pivot-grid/template.md",
         "status": "NEW"
       }
@@ -206,7 +247,15 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "ツリー グリッド",
     "href": "grids/tree-grid/overview.md",
-    "status": "NEW"
+    "status": "NEW",
+    "items": [
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "複数列ヘッダー",
+        "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      }
+    ]
   },
   {
     "exclude": ["Angular"],
@@ -1013,6 +1062,12 @@
      "name": "トースト {ReleaseStatus_WebsInputs}",
      "href": "notifications/toast.md"
   },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "ダイアログ {ReleaseStatus_WebsInputs}",
+    "href": "notifications/dialog.md",
+    "status": "NEW"
+ },
   {
     "exclude": ["Angular"],
     "name": "スケジュール",

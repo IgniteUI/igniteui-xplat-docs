@@ -18,12 +18,12 @@ _language: ja
 
 | コンポーネント                                       | デフォルトのエレベーション レベル | CSS 変数       |
 | ----------------------------------------------- | ----------------------- | ------------------ |
-| Button                                          | 0                       | --igc-elevation-0  |
-| Elevated Card                                   | 2                       | --igc-elevation-2  |
-| Toast、Snackbar                                 | 10                      | --igc-elevation-10 |
-| Navdrawer                                       | 16                      | --igc-elevation-16 |
+| Button                                          | 0                       | --ig-elevation-0  |
+| Elevated Card                                   | 2                       | --ig-elevation-2  |
+| Toast、Snackbar                                 | 10                      | --ig-elevation-10 |
+| Navdrawer                                       | 16                      | --ig-elevation-16 |
 
-**CSS 変数**列からわかるように、すべてのエレベーションは `--igc-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
+**CSS 変数**列からわかるように、すべてのエレベーションは `--ig-elevation-[level]` の形式で定義されています。前述のように、エレベーション レベル番号は 0 から 24 (両端を含む) になります。
 
 ## 使用方法
 
@@ -31,7 +31,7 @@ _language: ja
 
 ```css
 .custom-element {
-  box-shadow: var(--igc-elevation-6);
+  box-shadow: var(--ig-elevation-6);
 }
 ```
 
@@ -39,7 +39,7 @@ _language: ja
 
 ```css
 igc-navbar {
-  box-shadow: var(--igc-elevation-8);
+  box-shadow: var(--ig-elevation-8);
 }
 ```
 
@@ -51,8 +51,8 @@ igc-navbar {
 
 ```css
 :root {
-    --igc-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
-    --igc-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
+    --ig-elevation-1: 0 2px 6px 0 rgba(0, 0, 0, .18);
+    --ig-elevation-2: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
@@ -64,11 +64,11 @@ igc-navbar {
 ```css
 igc-snackbar,
 igc-toast {
-    --igc-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
+    --ig-elevation-10: 0 3px 9px 0 rgba(0, 0, 0, .24);
 }
 ```
 
-これにより、トーストとスナックバーのシャドウが `--igc-elevation-10` に割り当てられた値に設定されます。
+これにより、トーストとスナックバーのシャドウが `--ig-elevation-10` に割り当てられた値に設定されます。
 
 ## エレベーション係数の使用
 
@@ -76,11 +76,11 @@ igc-toast {
 
 ```css
 :root {
-    --igc-elevation-factor: 0;
+    --ig-elevation-factor: 0;
 }
 ```
 
-`--igc-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。
+`--ig-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。
 
 ## API メンバー
 
