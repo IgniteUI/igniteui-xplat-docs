@@ -267,11 +267,13 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Clipboard Interactions",
         "href": "grids/lob-grid/clipboard-interactions.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Types",
         "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
@@ -322,6 +324,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/lob-grid/sizing.md",
         "status": "NEW"
       },
       {
@@ -429,11 +437,13 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Types",
         "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/hierarchical-grid/selection.md",
         "status": "NEW"
@@ -472,6 +482,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/hierarchical-grid/sizing.md",
         "status": "NEW"
       },
       {
@@ -616,16 +632,19 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Clipboard Interactions",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/tree-grid/selection.md",
         "status": "NEW"
@@ -670,6 +689,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/tree-grid/sizing.md",
         "status": "NEW"
       },
       {
