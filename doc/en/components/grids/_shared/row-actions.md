@@ -105,7 +105,7 @@ These components expose templates giving flexibility for customization. For inst
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-action-strip"
            github-src="{ComponentSample}/action-strip"
-           alt="{Platform} {ComponentName} Action Strip Example" >
+           alt="{Platform} {ComponentTitle} Action Strip Example" >
 </code-view>
 
 >Note: The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.

@@ -17,9 +17,9 @@ mentionedTypes: ['Grid']
         <div class="tabbar-wrapper">
             <div class="tab-content">
                 <img class="b-lazy responsive-img"
-                    src="../../../images/general/landing-grid-page.png" 
-                    data-src="../../../images/general/landing-grid-page.png" 
-                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w" 
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
                     alt="Grid"
                     title="Grid">
                 </div>
@@ -34,7 +34,8 @@ Boston Marathon 2021 – In this grid example, you can see how users can do both
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:lobDemosBaseUrl}"
-           iframe-src="{environment:lobDemosBaseUrl}/grid/grid" alt="grid example">
+           iframe-src="{environment:lobDemosBaseUrl}/grid/grid"
+           alt="grid example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -423,7 +424,7 @@ After implementing the service we will inject it in our component's constructor 
 // my.component.ts
 
 @Component({
-    
+
 })
 export class MyComponent implements OnInit {
 
@@ -494,7 +495,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 An alternative way to bind complex data, or to visualize composite data (from more than one column) in the **IgxGrid** is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
-    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` 
+    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
 
 and interpolate it those in the template.
 
@@ -504,7 +505,7 @@ and interpolate it those in the template.
         <div>
             <div>
                 {{ cell.value }}
-                {{ cell.row.data['name'] }}  
+                {{ cell.row.data['name'] }}
                 {{ cell.row.data['weight']['molecular'] }}
             </div>
         </div>

@@ -24,11 +24,11 @@ The sample below demonstrates the three types of {ComponentTitle}'s **row select
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<code-view style="height:700px" 
+<code-view style="height:700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-selection"
            github-src="{ComponentSample}/row-selection"
-           alt="{Platform} {ComponentName} Row Selection Example">
+           alt="{Platform} {ComponentTitle} Row Selection Example">
 </code-view>
 
 
@@ -37,7 +37,7 @@ The sample below demonstrates the three types of {ComponentTitle}'s **row select
 In order to setup row selection in the `{ComponentSelector}`, you just need to set the **rowSelection** property. This property accepts **GridSelectionMode** enumeration. **GridSelectionMode** exposes the following modes:
 
 - **none**
-- **single** 
+- **single**
 - **multiple**
 
 <!-- ComponentStart: TreeGrid -->
@@ -74,7 +74,7 @@ public handleRowSelection(args) {
 ```
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.Single
@@ -108,7 +108,7 @@ To enable multiple row selection in the `{ComponentSelector}` just set the `RowS
 ```
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
@@ -133,7 +133,7 @@ To enable cascade row selection in the `{ComponentSelector}` just set the `RowSe
 ```
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.MultipleCascade
@@ -170,9 +170,9 @@ In this mode a parent's selection state entirely depends on the selection state 
 The code snippet below can be used to select one or multiple rows simultaneously (via `PrimaryKey`).Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
 
 ```html
-<{ComponentSelector} #grid  [data]="remote | async" 
-[primaryKey]="'ProductID'" 
-[rowSelection]="'multiple' 
+<{ComponentSelector} #grid  [data]="remote | async"
+[primaryKey]="'ProductID'"
+[rowSelection]="'multiple'
 [autoGenerate]="true">
 </{ComponentSelector}>
 
@@ -180,7 +180,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
 ```
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
@@ -198,9 +198,9 @@ This will add the rows which correspond to the data entries with IDs 1, 2 and 5 
 If you need to deselect rows programmatically, you can use the `DeselectRows` method.
 
 ```html
-<{ComponentSelector} #grid  [data]="remote | async" 
-[primaryKey]="'ProductID'" 
-[rowSelection]="'multiple' 
+<{ComponentSelector} #grid  [data]="remote | async"
+[primaryKey]="'ProductID'"
+[rowSelection]="'multiple'
 [autoGenerate]="true">
 </{ComponentSelector}>
 
@@ -209,7 +209,7 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
 
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
@@ -250,7 +250,7 @@ public handleRowSelectionChange(args) {
 ```
 
 ```razor
-    <{ComponentSelector} Width="100%" 
+    <{ComponentSelector} Width="100%"
              Id="grid"
              Height="100%"
              RowSelection=GridSelectionMode.Multiple
@@ -336,7 +336,7 @@ The `selected` property shows whether the current row is selected or not while t
 ```html
 <ng-template igxRowSelector let-rowContext>
     {{ rowContext.index }}
-    <igx-checkbox 
+    <igx-checkbox
         [checked]="rowContext.selected"
         [readonly]="true"
     ></igx-checkbox>
@@ -360,7 +360,7 @@ The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the
 
 <!-- end: Angular -->
 
-### Header template 
+### Header template
 
 ```razor
 TODO
@@ -412,7 +412,7 @@ This demo shows the usage of custom header and row selectors. The latter uses `r
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-numbering"
            github-src="{ComponentSample}/selection-template-numbering"
-           alt="{Platform} {ComponentName} Selection Template Numbering Example">
+           alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
 </code-view>
 
 <!-- ComponentStart: Grid -->
@@ -420,10 +420,10 @@ This demo shows the usage of custom header and row selectors. The latter uses `r
 ### Excel Style Row Selectors Demo
 This demo uses custom templates to resemble Excel-like header and row selectors.
 
-<code-view style="height:550px" 
+<code-view style="height:550px"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-excel"
             github-src="{ComponentSample}/selection-template-excel"
-            alt="{Platform} {ComponentName} Selection Template Excel Example">
+            alt="{Platform} {ComponentTitle} Selection Template Excel Example">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -435,7 +435,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-conditional-row-selectors"
            github-src="{ComponentSample}/conditional-row-selectors"
-           alt="{Platform} {ComponentName} Conditional Row Selectors Example">
+           alt="{Platform} {ComponentTitle} Conditional Row Selectors Example">
 </code-view>
 
 ## API References

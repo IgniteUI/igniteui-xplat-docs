@@ -11,11 +11,11 @@ The {Platform} {ComponentTitle} supports multi-column headers which allow you to
 
 ## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers"
            github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentName} Multi-Column Headers Overview Example">
+           alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
 </code-view>
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
@@ -105,7 +105,7 @@ TO-DO GRID CODE SNIPPET
             <igx-column field="ID" dataType="number" [resizable]="true" [filterable]="false"></igx-column>
             <igx-column field="Title" dataType="string" [sortable]="true" [resizable]="true"></igx-column>
             <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
-        </igx-column-group>            
+        </igx-column-group>
     </igx-column-group>
 </igx-tree-grid>
 ```
@@ -187,7 +187,7 @@ TO-DO TREEGRID CODE SNIPPET
             <igx-column field="ContactName" sortable="true" resizable="true"></igx-column>
             <igx-column field="ContactTitle" sortable="true" resizable="true"></igx-column>
         </igx-column-group>
-    </igx-column-group>    
+    </igx-column-group>
 </igx-hierarchical-grid>
 ```
 
@@ -207,7 +207,7 @@ The `ng-template` is provided with the column group object as a context.
 <igx-column-group header="General Information">
     <ng-template igxHeader let-columnGroup>
         {{ columnGroup.header | uppercase }}
-    </ng-template>    
+    </ng-template>
 </igx-column-group>
 ```
 
@@ -222,9 +222,9 @@ If you want to re-use a single template for several column groups, you could set
     {{ columnGroup.header | uppercase }}
 </ng-template>
 
-<igx-column-group header="General Information" [headerTemplate]="columnGroupHeaderTemplate">    
+<igx-column-group header="General Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
-<igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">    
+<igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
 ```
 
@@ -247,11 +247,11 @@ TO-DO CODE SNIPPET
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-header-template"
            github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentName} Multi Column Header Template Sample">
+           alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
 
 ## Styling
@@ -260,7 +260,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 
 ```scss
 @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 Following the simplest approach, we create a new theme that extends the [`igx-grid-theme`]({environment:sassApiUrl}/index.html#function-igx-grid-theme) and accepts the `$header-background`, `$header-text-color`, `$header-border-width`, `$header-border-style` and `$header-border-color` parameters.
 
@@ -273,7 +273,7 @@ $custom-theme: igx-grid-theme(
     $header-border-color: rgba(0, 0, 0, 0.08)
 );
 ```
-The last step is to **include** the component mixins: 
+The last step is to **include** the component mixins:
 
 ```scss
 @include igx-grid($custom-theme);
@@ -322,7 +322,7 @@ $custom-theme: igx-grid-theme(
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [schemas](../themes/schemas.md). A schema is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - `_light-grid`:  
+Extend one of the two predefined schemas, that are provided for every component, in this case - `_light-grid`:
 
 ```scss
 // Extending the light grid schema
@@ -341,7 +341,7 @@ In order to apply our custom schema we have to **extend** one of the globals `li
 
 ```scss
 Extending the global light-schema
-$my-custom-schema: extend($light-schema, 
+$my-custom-schema: extend($light-schema,
     (
         igx-grid: $custom-grid-schema
     )
@@ -358,11 +358,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:500px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:500px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
            github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentName} Multi Column Headers Styling Sample">
+           alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample">
 </code-view>
 
 ## Known Issues and Limitations

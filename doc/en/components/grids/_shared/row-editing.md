@@ -8,17 +8,17 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Row Editing
 
-The {ComponentTitle} provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified. 
+The {ComponentTitle} provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 
 The following sample demonstrates how to enable row editing in the {ComponentTitle}. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
 
-<code-view style="height:550px" 
+<code-view style="height:550px"
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-editing"
             github-src="{ComponentSample}/row-editing"
-            alt="{Platform} {ComponentName} Editing Rows Example">
+            alt="{Platform} {ComponentTitle} Editing Rows Example">
 </code-view>
 
 > [!NOTE]
@@ -218,7 +218,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 ## Styling
 
-Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter the Row Editing overlay. 
+Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter the Row Editing overlay.
 The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
     - [`igx-banner`](banner.md) in order to render its contents
     - [`igx-button`](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
@@ -236,7 +236,7 @@ The first thing we need to do is import the `themes/index` file - this gives us 
 
 // IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
-``` 
+```
 
 Once we've imported the themes file, we can create custom themes.
 
@@ -248,7 +248,7 @@ We can now define a custom [`banner theme`]({environment:sassApiUrl}/index.html#
     $my-light-gray: #e3e3e3;
     $my-banner-palette: $purple-palette;
 
-    $banner-theme: banner-theme( 
+    $banner-theme: banner-theme(
         $banner-background: $my-light-gray,
         $banner-message-color: color($my-banner-palette, "secondary", 600)
     );
@@ -261,7 +261,7 @@ Here we are using `my-banner-palette` in conjunction with `igx-color` (exposed b
 All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the `igx-banner mixin`:
 
 ```scss
-@include banner($banner-theme); 
+@include banner($banner-theme);
 ```
 
 This will apply our custom banner theme to the Row Editing overlay. However, since we defined these in the global styles file, these styles will also apply to **all** banners in our application.
@@ -330,11 +330,11 @@ We scope our `@include` statement in `.custom-buttons` so that it is only applie
 
 After styling the banner and buttons, we also define a custom style for [the cell in edit mode](cell-editing.md#styling). The result of all the combined styles can be seen below:
 
-<code-view style="height:560px" 
+<code-view style="height:560px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-editing-style"
            github-src="{ComponentSample}/row-editing-style"
-           alt="{Platform} {ComponentName} Row Editing Styling Example">
+           alt="{Platform} {ComponentTitle} Row Editing Styling Example">
 </code-view>
 
 >[!NOTE]

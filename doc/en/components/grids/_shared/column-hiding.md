@@ -174,7 +174,7 @@ Let's say we want to manually define our `ColumnActionsComponent`, add the `Colu
 ...
 import {
     ...
-    IgxColumnActionsModule 
+    IgxColumnActionsModule
 } from 'igniteui-{Platform}';
 
 @NgModule({
@@ -266,12 +266,12 @@ Let's create a couple of nicely designed radio buttons for our options! We just 
 ...
 import {
     ...
-    IgxRadioModule    
+    IgxRadioModule
 } from 'igniteui-{Platform}';
 
 @NgModule({
     ...
-    imports: [..., IgxRadioModule],    
+    imports: [..., IgxRadioModule],
 })
 export class AppModule {}
 ```
@@ -316,7 +316,7 @@ If all went well, this is how our column hiding UI component should look like:
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-column-hiding"
            github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentName} Custom Column Hiding Example" >
+           alt="{Platform} {ComponentTitle} Custom Column Hiding Example" >
 </code-view>
 
 
@@ -330,7 +330,7 @@ To get started with styling the column actions component, we need to import the 
 
 // IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
-``` 
+```
 
 By using the simplest approach, we create a new theme that extends the `column-actions-theme` and accepts the `$title-color` and the `$background-color` parameters.
 
@@ -349,7 +349,7 @@ $custom-button: button-theme($flat-text-color: gold, $disabled-color: black);
 
 In this example we only changed the text-color of the flat buttons and the button disabled color, but the `button-theme` provides way more parameters to control the button style.
 
-The last step is to **include** the component mixins, each with its respective theme: 
+The last step is to **include** the component mixins, each with its respective theme:
 
 ```scss
 @include column-actions($custom-column-actions-theme);
@@ -388,7 +388,7 @@ $blue-color: steelblue;
 $custom-palette: palette($primary: $blue-color, $secondary: $yellow-color);
 ```
 
-And then with `igx-color` we can easily retrieve color from the palette. 
+And then with `igx-color` we can easily retrieve color from the palette.
 
 ```scss
 $custom-column-actions-theme: column-actions-theme(
@@ -425,7 +425,7 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 );
 // Extending the dark button schema
 $custom-button-schema: extend($_dark-button,
-    (           
+    (
         flat-text-color:(
            color:("secondary", 500)
         ),
@@ -462,11 +462,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:600px" 
+<code-view style="height:600px"
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-hiding-style"
             github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentName} Column Hiding Styling Example">
+            alt="{Platform} {ComponentTitle} Column Hiding Styling Example">
 </code-view>
 
 <!-- end: Angular -->

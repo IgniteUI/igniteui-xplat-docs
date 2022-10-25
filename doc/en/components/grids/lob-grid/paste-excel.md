@@ -23,9 +23,10 @@ On the top there is a dropdown button with 2 options:
 The new data after the paste is decorated in Italic.
 
 
-<code-view style="height: 570px;" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-paste" alt="{Platform} Paste from Excel Example">
+<code-view style="height: 570px;"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grid/grid-paste"
+           alt="{Platform} Paste from Excel Example">
 </code-view>
 
 <div class="divider"></div>

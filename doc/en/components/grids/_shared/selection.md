@@ -13,10 +13,10 @@ With {ProductName} {ComponentTitle} you can easily select data by using variety 
 
 The sample below demonstrates three types of **cell selection** behaviors in {ComponentTitle}. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<code-view style="height:650px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:650px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
-           alt="{Platform} {ComponentName}  Selection Example">
+           alt="{Platform} {ComponentTitle}  Selection Example">
 </code-view>
 
 ## {Platform} {ComponentTitle} Selection Options
@@ -167,8 +167,8 @@ TO DO
  The result is:
 
 
-<code-view style="height:600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:600px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-contextmenu-sample" >
 </code-view>
 

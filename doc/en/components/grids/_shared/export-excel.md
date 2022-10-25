@@ -19,7 +19,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:demosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1" alt="Blazor Excel Exporter Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           alt="{Platform} {ComponentTitle} Excel Exporter Example">
 </code-view>
 
 
@@ -92,7 +93,8 @@ To export grouped data you just need to group the {Component} by one or more col
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:demosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1" alt="{Platform} Grouped Data Excel Exporter Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -108,7 +110,7 @@ It is now possible to export {Component} with defined [multi-column headers](mul
            data-demos-base-url="{environment:demosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers-export"
-           alt="{Platform} Multi-Column Headers Export">
+           alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
 </code-view>
 
 ## Export Grid with Frozen Column Headers

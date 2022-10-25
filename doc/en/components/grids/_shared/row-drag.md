@@ -16,7 +16,7 @@ In Ignite UI for {Platform} {ComponentTitle}, **RowDrag** is initialized on the 
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag-base"
            github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentName} Row Drag Example" >
+           alt="{Platform} {ComponentTitle} Row Drag Example" >
 </code-view>
 
 ## Configuration
@@ -207,7 +207,7 @@ The drag ghost can be templated on every grid level, making it possible to have 
 <{ComponentSelector}>
     <ng-template igxRowDragGhost>
         <div>
-            <igx-icon fontSet="material">arrow_right_alt</igx-icon> 
+            <igx-icon fontSet="material">arrow_right_alt</igx-icon>
         </div>
     </ng-template>
     <igx-row-island>
@@ -223,7 +223,7 @@ The drag ghost can be templated on every grid level, making it possible to have 
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-drag"
            github-src="{ComponentSample}/multi-row-drag"
-           alt="{Platform} {ComponentName} Multi Row Drag">
+           alt="{Platform} {ComponentTitle} Multi Row Drag">
 </code-view>
 
 ### Templating the drag icon
@@ -283,7 +283,7 @@ The result of the configuration can be seem below:
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag-to-grid"
            github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentName} Row Drag">
+           alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
 
 
@@ -295,7 +295,7 @@ The result of the configuration can be seem below:
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag"
            github-src="{ComponentSample}/row-drag"
-           alt="{Platform} {ComponentName} Row Drag">
+           alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -311,11 +311,11 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag"
            github-src="{ComponentSample}/row-drag"
-           alt="{Platform} {ComponentName} Row Drag">
+           alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
 
 
-> [!NOTE] 
+> [!NOTE]
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 <!-- ComponentEnd: Grid -->
 
@@ -520,7 +520,7 @@ Holding onto the drag icon will allow you to move a row anywhere in the grid:
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-reorder"
            github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentName} Row Reorder">
+           alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -531,7 +531,7 @@ Notice that we also have row selection enabled and we preserve the selection whe
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-row-reordering"
            github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentName} Row Reorder">
+           alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
@@ -770,7 +770,7 @@ Following is the example of both scenarios described above - showing a drop indi
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-drop-indicator"
            github-src="{ComponentSample}/drop-indicator"
-           alt="{Platform} {ComponentName} Drop Indicator">
+           alt="{Platform} {ComponentTitle} Drop Indicator">
 </code-view>
 
 <!-- ComponentEnd: Grid -->

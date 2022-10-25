@@ -11,11 +11,11 @@ The Ignite UI for {Platform} {ComponentTitle} supports remote data operations su
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-filtering"
            github-src="{ComponentSample}/remote-filtering"
-           alt="{Platform} {ComponentName} Remote Data Operations Overview Example">
+           alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
 By default, the {ComponentTitle} uses its own logic for performing data operations.
@@ -55,7 +55,7 @@ public processData(reset) {
     }
 
     this._prevRequest = this._remoteService.getData(this.grid.virtualizationState,
-        this.grid.sortingExpressions[0], reset, () => {        
+        this.grid.sortingExpressions[0], reset, () => {
         this.cdr.detectChanges();
     });
 }
@@ -72,11 +72,11 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 ### Remote Virtualization Demo
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sample-4"
            github-src="{ComponentSample}/sample-4"
-           alt="{Platform} {ComponentName} Remote Data Operations Overview Example">
+           alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
 ## Infinite Scroll
@@ -138,11 +138,11 @@ BLAZOR CODE SNIPPET HERE
 
 ### Infinite Scroll Demo
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sample-5"
            github-src="{ComponentSample}/sample-5"
-           alt="{Platform} {ComponentName} Remote Data Operations Infinite Scroll Example">
+           alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example">
 </code-view>
 
 ## Remote Sorting/Filtering
@@ -189,7 +189,7 @@ When remote sorting and filtering are provided, usually we do not need the built
 <igx-grid #grid [data]="remoteData | async" [height]="'500px'" [width]="'100%'" [autoGenerate]='false'
         [filterStrategy]="noopFilterStrategy"
         [sortStrategy]="noopSortStrategy"
-        [allowFiltering]="true">    
+        [allowFiltering]="true">
 </igx-grid>
 ```
 
@@ -324,18 +324,18 @@ BLAZOR CODE SNIPPET HERE
 
 #### Unique Column Values Strategy Demo
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-load-on-demand"
            github-src="{ComponentSample}/excel-style-filtering-load-on-demand"
-           alt="{Platform} {ComponentName} Remote Data Operations Unique Column Values Strategy Example">
+           alt="{Platform} {ComponentTitle} Remote Data Operations Unique Column Values Strategy Example">
 </code-view>
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [primaryKey]="'Artist'" [data]="data" [filterMode]="'excelStyleFilter'"
-                       [uniqueColumnValuesStrategy]="singersColumnValuesStrategy">    
+                       [uniqueColumnValuesStrategy]="singersColumnValuesStrategy">
     <igx-row-island [primaryKey]="'Album'" [allowFiltering]="true" [filterMode]="'excelStyleFilter'"
-                    [uniqueColumnValuesStrategy]="albumsColumnValuesStrategy">        
+                    [uniqueColumnValuesStrategy]="albumsColumnValuesStrategy">
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
@@ -366,7 +366,7 @@ BLAZOR CODE SNIPPET HERE
 In order to provide a custom loading template for the excel style filtering, we can use the `ExcelStyleLoading` directive:
 
 ```html
-<igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">    
+<igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
         Loading ...
     </ng-template>
@@ -374,7 +374,7 @@ In order to provide a custom loading template for the excel style filtering, we 
 ```
 
 ```html
-<igx-tree-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">    
+<igx-tree-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
         Loading ...
     </ng-template>
@@ -382,7 +382,7 @@ In order to provide a custom loading template for the excel style filtering, we 
 ```
 
 ```html
-<igx-hierarchical-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">    
+<igx-hierarchical-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
         Loading ...
     </ng-template>
@@ -570,8 +570,8 @@ If you want to use the default paging template, you need to set the Paginator's 
 ```html
 <igx-grid #grid1 [data]="data | async" [isLoading]="isLoading" [pagingMode]="mode">
     <igx-column field="ID"></igx-column>
-    
-    <igx-paginator [(page)]="page" [(perPage)]="perPage"  [totalRecords]="totalCount" 
+
+    <igx-paginator [(page)]="page" [(perPage)]="perPage"  [totalRecords]="totalCount"
         (pagingDone)="paginate($event.current)">
     </igx-paginator>
 </igx-grid>
@@ -580,8 +580,8 @@ If you want to use the default paging template, you need to set the Paginator's 
 ```html
 <igx-tree-grid #treeGrid [data]="data | async" childDataKey="Content" [pagingMode]="mode">
     <igx-column field="Name"></igx-column>
-    
-    <igx-paginator [(page)]="page" [(perPage)]="perPage" [totalRecords]="totalCount" 
+
+    <igx-paginator [(page)]="page" [(perPage)]="perPage" [totalRecords]="totalCount"
         (pagingDone)="paginate($event.current)">
     </igx-paginator>
 </igx-tree-grid>
@@ -590,8 +590,8 @@ If you want to use the default paging template, you need to set the Paginator's 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [primaryKey]="'CustomerID'" [pagingMode]="mode">
     <igx-column field="CustomerID"></igx-column>
-    
-    <igx-paginator [(page)]="page" [(perPage)]="perPage" [totalRecords]="totalCount" 
+
+    <igx-paginator [(page)]="page" [(perPage)]="perPage" [totalRecords]="totalCount"
         (pagingDone)="paginate($event.current)" (perPageChange)="getFirstPage()">
     </igx-paginator>
 </igx-hierarchical-grid>
@@ -638,11 +638,11 @@ public paginate(page: number) {
 BLAZOR CODE SNIPPET HERE
 ```
 
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:620px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-default-template"
            github-src="{ComponentSample}/remote-paging-default-template"
-           alt="{Platform} {ComponentName} Remote Paging Default Template Example">
+           alt="{Platform} {ComponentTitle} Remote Paging Default Template Example">
 </code-view>
 
 ### Remote Paging with Custom Paginator Content
@@ -652,7 +652,7 @@ When we define a custom paginator content we need to define the content in a way
 ```html
 <igx-paginator #paginator
     [totalRecords]="totalCount"
-    [(page)]="page" 
+    [(page)]="page"
     [(perPage)]="perPage"
     [selectOptions]="selectOptions"
     [displayDensity]="grid1.displayDensity"
@@ -765,12 +765,12 @@ public mode = GridPagingMode.Remote;
 ```
 
 ```html
-<igx-hierarchical-grid #hierarchicalGrid [data]="data | async" [primaryKey]="'CustomerID'" 
+<igx-hierarchical-grid #hierarchicalGrid [data]="data | async" [primaryKey]="'CustomerID'"
     [height]="'550px'" [width]="'100%'" [pagingMode]="mode"></igx-hierarchical-grid>
 ```
 
 ```html
-<igx-tree-grid #treeGrid [data]="data | async" childDataKey="Content" 
+<igx-tree-grid #treeGrid [data]="data | async" childDataKey="Content"
         expansionDepth="0" width="100%" height="540px" [pagingMode]="mode"></igx-tree-grid>
 ```
 
@@ -794,11 +794,11 @@ BLAZOR CODE SNIPPET HERE
 
 After all the changes above, the following result will be achieved.
 
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:620px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-sample"
            github-src="{ComponentSample}/remote-paging-sample"
-           alt="{Platform} {ComponentName} Remote Paging Custom Template Example">
+           alt="{Platform} {ComponentTitle} Remote Paging Custom Template Example">
 </code-view>
 
 <!-- ComponentStart: Grid -->
@@ -806,11 +806,11 @@ After all the changes above, the following result will be achieved.
 
 In some cases you may want to define your own paging behavior and this is when we can take advantage of the Paging template and add our custom logic along with it. We are going to extend the Remote Paging example in order to demonstrate this:
 
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:620px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-remote-paging-sample"
            github-src="{ComponentSample}/custom-remote-paging-sample"
-           alt="{Platform} {ComponentName} Remote Paging Custom Paging Example">
+           alt="{Platform} {ComponentTitle} Remote Paging Custom Paging Example">
 </code-view>
 
 Below you will find the methods that we've defined in order to implement our own `next` and `previous` page actions.
@@ -919,11 +919,11 @@ As you can see in the **paginate** method, custom pagination logic is performed,
 
 #### Remote Paging with Batch Editing Demo
 
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:620px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
            github-src="{ComponentSample}/remote-paging-batch-editing"
-           alt="{Platform} {ComponentName} Remote Paging Batch Editing Example">
+           alt="{Platform} {ComponentTitle} Remote Paging Batch Editing Example">
 </code-view>
 
 <!-- ComponentEnd: Grid -->

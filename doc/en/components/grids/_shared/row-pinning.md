@@ -15,7 +15,7 @@ One or multiple rows can be pinned to the top or bottom of the {Platform} UI Gri
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning"
            github-src="{ComponentSample}/row-pinning"
-           alt="{Platform} {ComponentName} Row Pinning Example">
+           alt="{Platform} {ComponentTitle} Row Pinning Example">
 </code-view>
 
 ## Row Pinning UI
@@ -98,7 +98,7 @@ public rowPinning(event) {
 ```
 
 ```razor
-<{ComponentSelector} Width="100%" 
+<{ComponentSelector} Width="100%"
              Id="grid"
              RowPinningScript='rowPinningHandler'
              Height="100%"
@@ -208,7 +208,7 @@ public togglePinning(row: IgxGridRow, event) {
 ```razor
 function togglePinning(rowIndex) {
     const row = grid1.getRowByIndex(0).pinned;
-    row.pinned = !row.pinned;    
+    row.pinned = !row.pinned;
 }
 igRegisterScript("togglePinning", togglePinning, false);
 ```
@@ -219,7 +219,7 @@ igRegisterScript("togglePinning", togglePinning, false);
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
             github-src="{ComponentSample}/row-pinning-extra-column"
-            alt="{Platform} {ComponentName} Row Pinning Extra Column Example">
+            alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example">
 </code-view>
 
 <!-- end: Angular -->
@@ -280,7 +280,7 @@ This would allow reordering the rows and moving them between the pinned and unpi
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-drag"
             github-src="{ComponentSample}/row-pinning-drag"
-            alt="{Platform} {ComponentName} Row Pinning Drag Example">
+            alt="{Platform} {ComponentTitle} Row Pinning Drag Example">
 </code-view>
 
 <!-- end: Angular -->
@@ -317,7 +317,7 @@ To begin the customization of the row pinning feature, you need to import the `i
 
 // IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
-``` 
+```
 
 ### Defining a Theme
 
@@ -334,7 +334,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-### Using CSS variables 
+### Using CSS variables
 
 The last step is to pass the custom grid theme:
 
@@ -344,7 +344,7 @@ The last step is to pass the custom grid theme:
 
 ### Using mixins
 
-In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables. 
+In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
 
 If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
 
@@ -363,7 +363,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-styling"
             github-src="{ComponentSample}/row-pinning-styling"
-            alt="{Platform} {ComponentName} Row Pinning Styling Example">
+            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
 >[!NOTE]

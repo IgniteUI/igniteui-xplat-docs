@@ -12,9 +12,10 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-resizing" alt="{Platform} {ComponentTitle} Column Resizing Example">
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-resizing"
+           alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
 **Column resizing** is also enabled per-column level, meaning that the **{ComponentSelector}** can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `ColumnComponent`.
@@ -343,9 +344,10 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 When the column is first initialized in the view it resolves its width to the size of the longest visible cell or header. Note that cells that are outside of the visible rows are not included.
 This approach is more performance optimized than auto-sizing post initialization and is recommended especially in cases where you need to auto-size a large number of columns.
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-columnAutoResizing-sample" alt="{Platform} {ComponentTitle} Column Resizing Example">
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-columnAutoResizing-sample"
+           alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
 ## Styling
@@ -358,7 +360,7 @@ To get started with the styling of the {ComponentTitle} column resize line, we n
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 The simplest approach to achieve this is to create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts many parameters as well as the `$resize-line-color` parameter.
 
@@ -391,7 +393,7 @@ $secondary-color: #BDBDBD;
 $custom-theme-palette: palette($primary: $primary-color, $secondary: $secondary-color);
 ```
 
-And then, with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color), we can easily retrieve the color from the palette. 
+And then, with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color), we can easily retrieve the color from the palette.
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -443,8 +445,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-resize-line-styling" >
 </code-view>
 

@@ -22,7 +22,8 @@ or just any other custom content. The toolbar and the predefined UI components s
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-toolbar-sample-1" alt="{Platform} Toolbar Grid Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-toolbar-sample-1"
+           alt="{Platform} {ComponentTitle} Toolbar Example">
 </code-view>
 
 

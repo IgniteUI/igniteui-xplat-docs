@@ -29,7 +29,8 @@ The following sample demonstrates how to use the prebuilt `required`, `email` an
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-validator-service" alt="{Platform} {ComponentTitle} Validation Basic Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-validator-service"
+           alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
 ### Configure via reactive forms
@@ -172,7 +173,8 @@ The below example demonstrates the above-mentioned customization options.
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-validator-service-extended" alt="{Platform} {ComponentTitle} Custom Validation Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-validator-service-extended"
+           alt="{Platform} {ComponentTitle} Custom Validation Example">
 </code-view>
 
 ### Cross-field validation
@@ -406,7 +408,8 @@ The below sample demonstrates cross-field validation in a Hierarchical Grid for 
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-cross-field-validation" alt="{Platform} {ComponentTitle} Cross-field Validation Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-cross-field-validation"
+           alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
 <!-- ComponentEnd:HierarchicalGrid -->

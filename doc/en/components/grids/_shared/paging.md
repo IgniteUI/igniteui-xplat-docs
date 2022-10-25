@@ -13,11 +13,11 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 The following example represents {ComponentTitle} pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the {ComponentTitle} pages via "Go to last page" and "Go to first page" buttons.
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-sample"
            github-src="{ComponentSample}/paging-sample"
-           alt="{Platform} {ComponentName} Pagination Example">
+           alt="{Platform} {ComponentTitle} Pagination Example">
 </code-view>
 
 Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our {ComponentTitle} to enable paging:
@@ -154,11 +154,11 @@ TO-DO TREEGRID CODE SNIPPET
 Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, when defining a paginator component inside the igx-row-island tags, always make sure to use the IgxPaginator directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
 
 ```html
-<igx-hierarchical-grid>    
-    <igx-row-island>        
-        <igx-grid-toolbar *igxPaginator>           
+<igx-hierarchical-grid>
+    <igx-row-island>
+        <igx-grid-toolbar *igxPaginator>
         </igx-grid-toolbar>
-    </igx-row-island>    
+    </igx-row-island>
 </igx-hierarchical-grid>
 ```
 
@@ -169,11 +169,11 @@ TO-DO H-GRID CODE SNIPPET
 
 ### Paginator Component Demo
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-reusable-paginator"
            github-src="{ComponentSample}/reusable-paginator"
-           alt="{Platform} {ComponentName} Reusable Paginator Example">
+           alt="{Platform} {ComponentTitle} Reusable Paginator Example">
 </code-view>
 
 <div class="divider--half"></div>
@@ -199,7 +199,7 @@ To get started with styling the paginator, we need to import the `index` file, w
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 Following the simplest approach, we create a new theme that extends the `PaginatorTheme` and accepts the `$text-color`, `$background-color` and the `$border-color` parameters.
 
@@ -361,11 +361,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Pagination Style Example
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-style"
            github-src="{ComponentSample}/paging-style"
-           alt="{Platform} {ComponentName} Paging Style Example">
+           alt="{Platform} {ComponentTitle} Paging Style Example">
 </code-view>
 
 <div class="divider--half"></div>

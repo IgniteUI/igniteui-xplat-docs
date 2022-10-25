@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} Virtualization and Performance - Ignite UI for {Platform}
-_description: The Ignite UI for {Platform} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free! 
+_description: The Ignite UI for {Platform} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform}
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
@@ -14,9 +14,10 @@ In Ignite UI for {Platform}, the `Grid` control now utilizes the [`igxForOf`]({e
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-sample-2" alt="{Platform} {ComponentName} Virtualization and Performance Example">
+<code-view style="height:550px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grid/grid-sample-2"
+           alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
 </code-view>
 
 <div class="divider--half"></div>

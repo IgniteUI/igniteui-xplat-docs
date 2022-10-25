@@ -37,11 +37,11 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
-<code-view style="height:650px" 
+<code-view style="height:650px"
             data-demos-base-url="{environment:demosBaseUrl}"
             iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-moving"
             github-src="{ComponentSample}/column-moving"
-            alt="{Platform} {ComponentName} Column Moving Overview Example">
+            alt="{Platform} {ComponentTitle} Column Moving Overview Example">
 </code-view>
 
 ## Overview
@@ -57,7 +57,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ## API
-In addition to the drag and drop functionality, the Column Moving feature also provides  API methods to allow moving a column/reordering columns programmatically: 
+In addition to the drag and drop functionality, the Column Moving feature also provides  API methods to allow moving a column/reordering columns programmatically:
 
 <!-- Angular -->
 
@@ -107,11 +107,11 @@ idColumn.move(3);
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
-Note that when using the API, only the ColumnMovingEnd event will be emitted, if the operation was successful. Also note that in comparison to the drag and drop functionality, using the API does not require setting the `Moving` property to true. 
+Note that when using the API, only the ColumnMovingEnd event will be emitted, if the operation was successful. Also note that in comparison to the drag and drop functionality, using the API does not require setting the `Moving` property to true.
 
 ## Events
 
-There are several events related to the column moving to provide a means for tapping into the columns' drag and drop operations. These are `ColumnMovingStart`, `ColumnMoving` and `ColumnMovingEnd`. 
+There are several events related to the column moving to provide a means for tapping into the columns' drag and drop operations. These are `ColumnMovingStart`, `ColumnMoving` and `ColumnMovingEnd`.
 You can subscribe to the `ColumnMovingEnd` event of the {ComponentSelector} to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the Category after the Change On Year(%) column.
 
 ```html
@@ -161,7 +161,7 @@ To get started with styling the {ComponentTitle} column moving headers, we need 
 
 // IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
-``` 
+```
 
 Following the simplest approach, we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the `$ghost-header-background`, `$ghost-header-text-color` and the `$ghost-header-icon-color` parameters.
 
@@ -265,7 +265,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-moving-styled"
            github-src="{ComponentSample}/moving-styled"
-           alt="{Platform} {ComponentName} Grid Moving Styled Example"
+           alt="{Platform} {ComponentTitle} Grid Moving Styled Example"
             >
 </code-view>
 
@@ -275,7 +275,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 <!-- end: Angular -->
 
 ## API References
- 
+
 * `Column`
 * `{ComponentName}`
 

@@ -31,7 +31,7 @@ The following sample demonstrates a scenario, where the {ComponentTitle} has `Ba
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-batch-editing"
            github-src="{ComponentSample}/-batch-editing"
-           alt="{Platform} {ComponentName} Batch Editing and Transactions Example" >
+           alt="{Platform} {ComponentTitle} Batch Editing and Transactions Example" >
 </code-view>
 
 > [!NOTE]
@@ -237,7 +237,7 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE] 
+> [!NOTE]
 > The transactions API won't handle end of edit and you'd need to do it by yourself. Otherwise, `{ComponentTitle}` would stay in edit mode. One way to do that is by calling `EndEdit` in the respective method.
 
 <!-- ComponentStart: TreeGrid -->
@@ -258,7 +258,7 @@ Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are 
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/remote-paging-batch-editing"
            github-src="{ComponentSample}/remote-paging-batch-editing"
-           alt="{Platform} {ComponentName} Remote Paging and Batch Editing Example" >
+           alt="{Platform} {ComponentTitle} Remote Paging and Batch Editing Example" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->

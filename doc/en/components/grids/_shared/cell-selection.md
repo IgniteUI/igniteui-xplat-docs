@@ -16,11 +16,11 @@ But let's dive deeper in each of these options.
 ## {Platform} Cell Selection Example
 The sample below demonstrates the three types of {ComponentTitle}'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<code-view style="height:750px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:750px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
            github-src="{ComponentSample}/cell-selection"
-           alt="{Platform} {ComponentName} Cell Selection Example">
+           alt="{Platform} {ComponentTitle} Cell Selection Example">
 </code-view>
 
 ## Selection types
@@ -41,11 +41,11 @@ How to select cells:
 <!-- ComponentStart: Grid, TreeGrid -->
 #### Demo
 
-<code-view style="height:700px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:700px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-cell-selection"
            github-src="{ComponentSample}/multi-cell-selection"
-           alt="{Platform} {ComponentName} Multi Cell Selection Example">
+           alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
 </code-view>
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -189,7 +189,7 @@ To get started with styling the selection, we need to import the `index` file, w
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 ### Define colors
 
@@ -236,8 +236,8 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
 With the custom theme applied, the selected grid cells are highlighted with our selected colors:
 
 ### Demo
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:620px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
            github-src="{ComponentSample}/multi-cell-selection-style"
            alt="{Platform} {ComponentTitle} Multi Cell Selection Example">

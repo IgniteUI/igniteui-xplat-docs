@@ -11,11 +11,11 @@ Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. Th
 
 ## {Platform} Multi-row Layout Example
 
-<code-view style="height:755px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:755px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout"
            github-src="{ComponentSample}/multi-row-layout"
-           alt="{Platform} {ComponentName} Multi Row Layout Overview Example">
+           alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example">
 </code-view>
 
 The declaration of Multi-row Layout is achieved through `ColumnLayout` component. Each `ColumnLayout` component should be considered as a block, containing one or multiple `Column` components. Some of the grid features work on block level (those are listed in the "Feature Integration" section below). For example the virtualization will use the block to determine the virtual chunks, so for better performance split the columns into more `ColumnLayout` blocks if the layout allows it. There should be no columns outside of those blocks and no usage of `ColumnGroup` when configuring a multi-row layout. Multi-row Layout is implemented on top of the [grid layout](https://www.w3.org/TR/css-grid-1/) specification and should conform to its requirements.
@@ -70,7 +70,7 @@ Due to the completly different rendering approach of Multi-row Layout, some of t
 
 The following features are currently **not** supported:
 
-- Column Moving 
+- Column Moving
 - Multi-column Headers
 - Export to Excel
 - Summaries
@@ -90,8 +90,8 @@ The following features are currently **not** supported:
 * <kbd>Arrow Up</kbd> or <kbd>Arrow Down</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
 * <kbd>Ctrl</kbd> + Arrow Up</kbd> or <kbd>Ctrl</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
 * <kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>End</kbd> - Navigate to the first row and focus first cell or navigate to the last row and focus the last cell.
-	
-	
+
+
 > [!Note]
 > Navigation through cells which span on multiple rows or columns is done with accordance to the starting navigation cell and will allow returning to the starting cell using the key for the opposite direction. The same approach is used when navigating through group rows.
 
@@ -110,11 +110,11 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 ### Demo
 
 
-<code-view style="height:605px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:605px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-mrl-custom-navigation"
            github-src="{ComponentSample}/mrl-custom-navigation"
-           alt="{Platform} {ComponentName} Multi Row Layout Navigation Example">
+           alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
 
 ### Layout Configurator
@@ -131,18 +131,18 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 
 By default we have set the same columns as our previous sample, but it can be cleared and configured to match your desired configuration.
 
-<code-view style="height:500px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:500px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
            github-src="{ComponentSample}/multi-row-layout-configuration"
-           alt="{Platform} {ComponentName} Multi Row Layout Configuration Example">
+           alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
 </code-view>
 
 ## Styling
 
-The `{ComponentTitle}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid. 
+The `{ComponentTitle}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
-In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.     
+In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
 
 ### Importing global theme
 
@@ -153,11 +153,11 @@ To begin the customization of the Multi-row Layout feature, you need to import t
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 ### Defining custom theme
 
-Next, create a new theme, that extends the `GridTheme` and accepts the parameters, required to customize the feature layout as desired.   
+Next, create a new theme, that extends the `GridTheme` and accepts the parameters, required to customize the feature layout as desired.
 
 ```scss
 $custom-theme: grid-theme(
@@ -170,13 +170,13 @@ $custom-theme: grid-theme(
     $sorted-header-icon-color: #ffcd0f,
     $sortable-header-icon-hover-color: #e9bd0d
 );
-```    
+```
 
 ### Defining a custom color palette
 
 In the approach, that was described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `Palette` and `Color` functions.
 
-`Palette` generates a color palette, based on provided primary and secondary colors.  
+`Palette` generates a color palette, based on provided primary and secondary colors.
 
  ```scss
 $black-color: #494949;
@@ -186,7 +186,7 @@ $custom-palette: palette(
   $primary: $black-color,
   $secondary: $yellow-color
 );
-```   
+```
 
 After a custom palette has been generated, the `Color` function can be used to obtain different varieties of the primary and the secondary colors.
 
@@ -207,7 +207,7 @@ $custom-theme: grid-theme(
 
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.   
+Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
 
 ```scss
 $custom-grid-schema: extend($_light-grid,(
@@ -218,14 +218,14 @@ $custom-grid-schema: extend($_light-grid,(
     header-background: (igx-color:('primary', 500)),
     header-text-color: (igx-contrast-color:('primary', 500)),
     sorted-header-icon-color: (igx-color:('secondary', 500)),
-    sortable-header-icon-hover-color: (igx-color:('secondary', 600)) 
+    sortable-header-icon-hover-color: (igx-color:('secondary', 600))
 ));
-```   
+```
 
-In order for the custom schema to be applied, either `Light`, or `Dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.   
+In order for the custom schema to be applied, either `Light`, or `Dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
 
 ```scss
-$my-custom-schema: extend($light-schema, ( 
+$my-custom-schema: extend($light-schema, (
     igx-grid: $custom-grid-schema
 ));
  $custom-theme: grid-theme(
@@ -236,7 +236,7 @@ $my-custom-schema: extend($light-schema, (
 
 ### Applying the custom theme
 
-The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:  
+The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
 
 ```scss
 @include grid($custom-theme);
@@ -251,7 +251,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
  >[!NOTE]
  >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component: 
+ >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
 :host {
@@ -261,13 +261,13 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 }
 ```
 
-### Demo 
+### Demo
 
-<code-view style="height:755px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:755px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
            github-src="{ComponentSample}/multi-row-layout-styling"
-           alt="{Platform} {ComponentName} Multi Row Layout Styling Example">
+           alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example">
 </code-view>
 
 >[!NOTE]

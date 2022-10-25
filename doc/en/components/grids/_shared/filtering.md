@@ -17,7 +17,7 @@ The sample below demonstrates {ComponentTitle}'s **Quick filtering** user experi
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering"
            github-src="{ComponentSample}/filtering"
-           alt="{Platform} {ComponentName} Filtering Example">
+           alt="{Platform} {ComponentTitle} Filtering Example">
 </code-view>
 
 ## Setup
@@ -79,7 +79,7 @@ While some filtering conditions have been applied to a column, and the filter ro
 
 There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The {ComponentTitle} currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
 
-Filtering feature is enabled for the {ComponentTitle} component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**. 
+Filtering feature is enabled for the {ComponentTitle} component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 ```html
@@ -323,7 +323,7 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-filtering"
            github-src="{ComponentSample}/custom-filtering"
-           alt="{Platform} {ComponentName} Custom Filtering Example">
+           alt="{Platform} {ComponentTitle} Custom Filtering Example">
 </code-view>
 
 
@@ -334,11 +334,11 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering-template"
            github-src="{ComponentSample}/filtering-template"
-           alt="{Platform} {ComponentName} Filtering Template Example">
+           alt="{Platform} {ComponentTitle} Filtering Template Example">
 </code-view>
 
 <!-- ComponentStart: TreeGrid -->
-   
+
 ## Matching Records Only Filtering Strategy
 By default, after a filtering is applied, the Tree Grid component displays the records matching the criterion that have been set and their parents in a grayed-out fashion to provide additional context. However, in some cases, you may want to display only the records matching particular filtering condition without any trace for their parents. This can be achieved by using the `TreeGridMatchingRecordsOnlyFilteringStrategy`:
 
@@ -366,7 +366,7 @@ To get started with styling the filtering row, we need to import the `index` fil
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 Following the simplest approach, we create a new theme that extends the `grid-theme` and accepts the `$filtering-row-text-color`, `$filtering-row-background`, `$filtering-header-text-color` and the `$filtering-header-background` parameters.
 
@@ -448,7 +448,7 @@ $black-color: #292826;
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
 
-And then with `igx-color` we can easily retrieve color from the palette. 
+And then with `igx-color` we can easily retrieve color from the palette.
 
 ```scss
 $custom-grid: grid-theme(
@@ -480,7 +480,7 @@ $dark-button: button-theme(
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [Schemas](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - `light-grid`, `light-input-group` and `light-button` schemas: 
+Extend one of the two predefined schemas, that are provided for every component, in this case - `light-grid`, `light-input-group` and `light-button` schemas:
 
 ```scss
 // Extending the light grid schema
@@ -575,7 +575,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering-style"
            github-src="{ComponentSample}/filtering-style"
-           alt="{Platform} {ComponentName} Filtering Style Example">
+           alt="{Platform} {ComponentTitle} Filtering Style Example">
 </code-view>
 
 >[!NOTE]
@@ -585,7 +585,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Known Limitations
 
-> [!NOTE] 
+> [!NOTE]
 > Some browsers such as Firefox fail to parse regional specific decimal separators by considering them grouping separators, thus resulting in them being invalid. When inputting such values for a numeric column filter value, only the valid part of the number will be applied to the filtering expression. For further information, refer to the Firefox [issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1199665).
 
 <!-- Angular -->

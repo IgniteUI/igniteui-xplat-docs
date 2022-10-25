@@ -13,9 +13,10 @@ A Group By behavior in an {Platform} Material table or UI grid creates grouped d
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
 
 
-<code-view style="height:605px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby" alt="{Platform} Grid Group By Example">
+<code-view style="height:605px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby"
+           alt="{Platform} {ComponentTitle} Group By Example">
 </code-view>
 
 
@@ -177,9 +178,10 @@ Groups that span multiple pages are split between them. The group row is visible
 ### {Platform} group by with paging example
 
 
-<code-view style="height:605px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-paging" alt="{Platform} grid group by with paging example">
+<code-view style="height:605px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-paging"
+           alt="{Platform} {ComponentTitle} group by with paging example">
 </code-view>
 
 
@@ -215,9 +217,10 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 ### {Platform} custom group by example
 
 
-<code-view style="height:605px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-custom" alt="{Platform} custom group by example">
+<code-view style="height:605px"
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-custom"
+           alt="{Platform} {ComponentTitle} custom group by example">
 </code-view>
 
 
@@ -300,7 +303,7 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 
 ## Styling
 
-The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid. 
+The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Group By styling.
 
@@ -313,7 +316,7 @@ To begin the customization of the Group By feature, you need to import the `inde
 
 // IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
-``` 
+```
 
 ### Defining custom theme
 
@@ -349,8 +352,8 @@ $custom-chips-theme: chip-theme(
 
 ### Defining a custom color palette
 
-In the approach that we described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `palette` and `color` functions.   
-`palette` generates a color palette, based on provided primary and secondary colors.  
+In the approach that we described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `palette` and `color` functions.
+`palette` generates a color palette, based on provided primary and secondary colors.
 
 ```scss
 $black-color: #292826;
@@ -361,8 +364,8 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
-After a custom palette has been generated, the `color` function can be used to obtain different varieties of the primary and the secondary colors. 
-  
+After a custom palette has been generated, the `color` function can be used to obtain different varieties of the primary and the secondary colors.
+
 ```scss
 $custom-theme: grid-theme(
     $group-row-background: color($custom-palette, "primary", 300),
@@ -384,8 +387,8 @@ $custom-chips-theme: chip-theme(
 );
 ```
 ### Defining custom schemas
-You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme. 
-Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.   
+You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
+Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     group-row-background: (-color:('secondary', 100)),
@@ -399,9 +402,9 @@ $custom-grid-schema: extend($_light-grid,(
     expand-icon-hover-color: (-color:('primary', 400))
 ));
 ```
-In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.   
+In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
 ```scss
-$my-custom-schema: extend($light-schema, ( 
+$my-custom-schema: extend($light-schema, (
     -grid: $custom-grid-schema
 ));
 
@@ -439,11 +442,11 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 }
 ```
 
-### Demo   
+### Demo
 
 
-<code-view style="height:570px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:570px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-styling" >
 </code-view>
 
@@ -485,4 +488,4 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 Our community is active and always welcoming to new ideas.
 
 * [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} 
+* [Ignite UI for {Platform}

@@ -14,16 +14,17 @@ The Advanced filtering provides a dialog which allows the creation of groups wit
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
-<code-view style="height:530px" 
+<code-view style="height:530px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1" alt="{Platform} {ComponentTitle} Advanced Filtering Example"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
+           alt="{Platform} {ComponentTitle} Advanced Filtering Example"
            github-src="{ComponentSample}/excel-style-filtering-sample-1" >
 </code-view>
 
 
 ## Interaction
 
-In order to open the advanced filtering dialog, the **Advanced Filtering** button in the grid toolbar should be clicked. If no advanced filter is applied, you should start with creating a group of filtering conditions linked with `AND` or `OR`. After that, you can add filtering conditions or sub-groups. 
+In order to open the advanced filtering dialog, the **Advanced Filtering** button in the grid toolbar should be clicked. If no advanced filter is applied, you should start with creating a group of filtering conditions linked with `AND` or `OR`. After that, you can add filtering conditions or sub-groups.
 
 In order to add a filtering condition, you have to select any of the `Filterable` columns, an operand based on the column `DataType` and a value if the operand is not unary. Once the condition is committed, a chip with the condition information appears. By hovering or clicking the chip, you have the options to modify it or add another condition or group right after it.
 
@@ -73,7 +74,7 @@ ngAfterViewInit(): void {
         ignoreCase: true
     });
     tree.filteringOperands.push(subTree);
-    
+
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
 }
 ```
@@ -90,8 +91,8 @@ As you see the demo above the Advanced filtering dialog is hosted in an overlay 
 
 ### Demo
 
-<code-view style="height:750px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:750px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-advanced-filtering"
            github-src="{ComponentSample}/external-advanced-filtering" >
 </code-view>
@@ -120,7 +121,7 @@ To get started with styling the Advanced Filtering dialog, we need to import the
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 The advanced filtering dialog takes its background color from the grid's theme, using the **filtering-row-background** parameter. In order to change the background we need to create a custom theme:
 
@@ -258,7 +259,7 @@ $yellow-color: #FFCD0F;
 $black-color: #292826;
 $dark-palette: palette($primary: $yellow-color, $secondary: $black-color);
 ```
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette. 
+And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $custom-grid: grid-theme(
@@ -406,8 +407,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- ComponentStart: Grid -->
 
-<code-view style="height:530px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:530px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/grid/grid-advanced-filtering-style" >
 </code-view>
 
@@ -415,8 +416,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- ComponentStart: TreeGrid -->
 
-<code-view style="height:510px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:510px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-advanced-filtering-style" >
 </code-view>
 
@@ -424,8 +425,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-<code-view style="height:630px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
+<code-view style="height:630px"
+           data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-advanced-filtering-style" >
 </code-view>
 
