@@ -157,11 +157,11 @@ export class {ComponentName}RowEditSampleComponent {
 
 ## Keyboard Navigation
 
-- `Enter` and `F2` enters row edit mode
+- <kbd>Enter</kbd> and <kbd>F2</kbd> enters row edit mode
 
-- `Esc` exits row edit mode and doesn't submit any of the cell changes, made while the row was in edit mode.
+- <kbd>Esc</kbd> exits row edit mode and doesn't submit any of the cell changes, made while the row was in edit mode.
 
-- `Tab` move focus from one editable cell in the row to the next and from the right-most editable cell to the CANCEL and DONE buttons. Navigation from DONE button goes to the left-most editable cell within the currently edited row.
+- <kbd>Tab</kbd> move focus from one editable cell in the row to the next and from the right-most editable cell to the CANCEL and DONE buttons. Navigation from DONE button goes to the left-most editable cell within the currently edited row.
 
 
 ## Feature Integration
