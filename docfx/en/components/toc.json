@@ -316,6 +316,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Conditional Styling",
+        "href": "grids/lob-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
         "name": "Editing",
         "href": "grids/lob-grid/editing.md",
         "status": "NEW"
@@ -410,6 +415,11 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Conditional Styling",
+        "href": "grids/hierarchical-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
         "name": "Editing",
         "href": "grids/hierarchical-grid/editing.md",
         "status": "NEW"
@@ -468,6 +478,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Conditional Styling",
+        "href": "grids/tree-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
