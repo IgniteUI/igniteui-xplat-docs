@@ -180,21 +180,7 @@
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "データ グリッド",
     "href": "grids/lob-grid/overview.md",
-    "status": "NEW",
-    "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "",
-        "href": "grids/lob-grid/groupby.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "",
-        "href": "grids/lob-grid/multi-column-headers.md",
-        "status": "NEW"
-      }
-    ]
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
