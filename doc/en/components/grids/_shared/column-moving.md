@@ -57,7 +57,9 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ## API
-In addition to the drag and drop functionality, the Column Moving feature also provides two API methods to allow moving a column/reordering columns programmatically: 
+In addition to the drag and drop functionality, the Column Moving feature also provides  API methods to allow moving a column/reordering columns programmatically: 
+
+<!-- Angular -->
 
 `MoveColumn` - Moves a column before or after another column (a target). The first parameter is the column to be moved, and the second parameter is the target column. Also accepts an optional third parameter `Position` (representing a `DropPosition` value), which determines whether to place the column before or after the target column.
 
@@ -79,6 +81,8 @@ grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
         this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
+
+<!-- end: Angular -->
 
 `Move` - Moves a column to a specified visible index. If the passed index parameter is invalid (is negative, or exceeds the number of columns), or if the column is not allowed to move to this index (if inside another group), no operation is performed.
 
