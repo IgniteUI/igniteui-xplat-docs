@@ -319,6 +319,27 @@
         "name": "Conditional Styling",
         "href": "grids/lob-grid/conditional-cell-styling.md",
         "status": "NEW"
+      },
+      {
+        "name": "Editing",
+        "href": "grids/lob-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/lob-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/lob-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/lob-grid/cell-selection.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -396,6 +417,27 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Editing",
+        "href": "grids/hierarchical-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/hierarchical-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/hierarchical-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/hierarchical-grid/cell-selection.md", 
         "status": "NEW"
       }
     ]
@@ -511,6 +553,28 @@
         "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Filtering",
         "href": "grids/tree-grid/filtering.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Editing",
+        "href": "grids/tree-grid/editing.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Excel Style Filtering",
+        "href": "grids/tree-grid/excel-style-filtering.md",
+        "status": "NEW"
+      },
+      {
+        "name": "Sorting",
+        "href": "grids/tree-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Cell Selection",
+        "href": "grids/tree-grid/cell-selection.md", 
         "status": "NEW"
       }
     ]
