@@ -1,8 +1,8 @@
 ---
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
-_keywords: grid
-mentionedTypes: ['Data-Grid']
+_keywords: {Platform}, {ProductName}, getting started, grid
+mentionedTypes: ['Grid']
 ---
 
 # {Platform} Grid Overview and Configuration
@@ -108,7 +108,7 @@ Let's turn the `autoGenerate` property off and define the columns collection in 
 
 Each of the columns of the grid can be templated separately. The column expects `ng-template` Angular grid module directives.
 
-It also expose `additionalTemplateContext input that can be used for custom properties and any type of data context that you want to pass to the column itself:
+It also expose `additionalTemplateContext input` that can be used for custom properties and any type of data context that you want to pass to the column itself:
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -127,13 +127,11 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 `Header` targets the column header providing as a context the column object itself.
 
 ```html
-...
 <igx-column field="Name">
     <ng-template igxHeader let-column>
         {{ column.field | uppercase }}
     </ng-template>
 </igx-column>
-...
 ```
 
 >[!NOTE]
@@ -156,13 +154,11 @@ As you can see, we are adding **draggable** attribute set to *false*.
 `Cell` applies the provided template to all cells in the column. The context object provided in the template consists of the cell value provided implicitly and the cell object itself. It can be used to define a template where the cells can grow according to their content, as in the below example.
 
 ```html
-...
 <igx-column field="Name">
     <ng-template igxCell let-value>
         {{ value | titlecase }}
     </ng-template>
 </igx-column>
-...
 ```
 
 In the snippet above we "take" a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
@@ -406,14 +402,11 @@ Make sure to import both the `HttpClientModule` and our service in the applicati
 // app.module.ts
 
 import { HttpClientModule } from '@angular/common/http';
-...
 import { NorthwindService } from './northwind.service';
 
 @NgModule({
     imports: [
-        ...
         HttpClientModule
-        ...
     ],
     providers: [
         NorthwindService
@@ -430,7 +423,7 @@ After implementing the service we will inject it in our component's constructor 
 // my.component.ts
 
 @Component({
-    ...
+    
 })
 export class MyComponent implements OnInit {
 
@@ -451,7 +444,6 @@ and in the template of the component:
     <igx-grid [data]="records">
         <igx-column field="ProductId"></igx-column>
         <!-- rest of the column definitions -->
-        ...
     </igx-grid>
 ```
 
@@ -477,7 +469,6 @@ interface AminoAcid {
         molecular: string;
         residue: string;
     }
-    ...
 }
 ```
 For example, in order to display the weights of a given amino acid in the grid the following snippet will suffice
