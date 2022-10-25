@@ -67,7 +67,7 @@ this.grid.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
-grid.getRowByIndex(3).pinned = true;
+this.Grid.PinRow("ALFKI", 0);
 ```
 
 You may also use the {ComponentTitle}'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
@@ -78,8 +78,8 @@ this.grid.unpinRow('ALFKI');
 ```
 
 ```razor
-grid.pinRow('ALFKI');
-grid.unpinRow('ALFKI');
+this.Grid.PinRow("ALFKI", 0);
+this.Grid.UnpinRow("ALFKI");
 ```
 
 Note that the row ID is the primary key value, defined by the `PrimaryKey` of the grid, or the record instance itself. Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the row is already in the desired state.
