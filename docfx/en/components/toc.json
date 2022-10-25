@@ -346,6 +346,12 @@
         "name": "Row Pinning",
         "href": "grids/lob-grid/row-pinning.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/lob-grid/column-moving.md",
+        "status": "NEW"
       }
     ]
   },
@@ -450,6 +456,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Pinning",
         "href": "grids/hierarchical-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/hierarchical-grid/column-moving.md",
         "status": "NEW"
       }
     ]
@@ -593,6 +605,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Pinning",
         "href": "grids/tree-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/tree-grid/column-moving.md",
         "status": "NEW"
       }
     ]
