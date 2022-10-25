@@ -240,6 +240,11 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Master Detail",
+        "href": "grids/lob-grid/master-detail.md",
+        "status": "NEW"
+      },
+      {
         "name": "Group By",
         "href": "grids/lob-grid/groupby.md",
         "status": "NEW"
