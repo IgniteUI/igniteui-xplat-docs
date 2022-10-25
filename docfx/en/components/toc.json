@@ -304,6 +304,12 @@
       },
       { 
         "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/lob-grid/row-adding.md", 
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
         "name": "Batch Editing",
         "href": "grids/lob-grid/batch-editing.md",
         "status": "NEW"
@@ -618,6 +624,12 @@
         "name": "Batch Editing",
         "href": "grids/hierarchical-grid/batch-editing.md", 
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/hierarchical-grid/row-adding.md", 
+        "status": "NEW"
       }
     ]
   },
@@ -716,6 +728,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Actions",
         "href": "grids/tree-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"], 
+        "name": "Row Adding",
+        "href": "grids/tree-grid/row-adding.md", 
         "status": "NEW"
       },
       {
