@@ -12,38 +12,11 @@ The {Platform} UI {ComponentTitle} in {ProductName} has a **summaries** feature 
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:650px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary"
            github-src="{ComponentSample}/summary" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:750px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary"
-           github-src="{ComponentSample}/summary" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary"
-           github-src="{ComponentSample}/summary" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 > [!NOTE]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
@@ -174,7 +147,7 @@ public disableSummary() {
     {
         object[] disabledSummaries = { "EmployeeID" };
         this.grid.DisableSummariesAsync(disabledSummaries);
-    } 
+    }
 }
 ```
 
@@ -393,41 +366,14 @@ class MySummary extends IgxNumberSummaryOperand {
 <!-- end: Angular -->
 
 ```razor
-Add blazor snippet for Mysummary
+Add blazor snippet for my summary
 ```
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:650px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-allData-summaries"
            github-src="{ComponentSample}/allData-summaries" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-allData-summaries"
-           github-src="{ComponentSample}/allData-summaries" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-allData-summaries"
-           github-src="{ComponentSample}/allData-summaries" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
@@ -453,38 +399,11 @@ When a default summary is defined, the height of the summary area is calculated 
 > Column summary template could be defined through API by setting the column SummaryTemplate property to the required TemplateRef.
 
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:650px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-template"
            github-src="{ComponentSample}/summary-template" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-template"
-           github-src="{ComponentSample}/summary-template" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-template"
-           github-src="{ComponentSample}/summary-template" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
@@ -511,37 +430,11 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 Add custom summary formatter snippets for blazor
 ```
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:650px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-formatter"
            github-src="{ComponentSample}/summary-formatter" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-formatter"
-           github-src="{ComponentSample}/summary-formatter" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-formatter"
-           github-src="{ComponentSample}/summary-formatter" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 
@@ -595,8 +488,6 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 > [!NOTE]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the {ComponentTitle}.
 
-
-
 <code-view style="height:720px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary2"
@@ -626,7 +517,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 Following the simplest approach, we create a new theme that extends the [`grid-summary-theme`]({environment:sassApiUrl}/index.html#function-grid-summary-theme) and accepts the `$background-color`, `$focus-background-color`, `$label-color`, `$result-color`, `$pinned-border-width`, `$pinned-border-style` and `$pinned-border-color` parameters.
 
@@ -731,37 +622,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Add razor styling section
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:710px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-groupby-summary-styling"
            github-src="{ComponentSample}/groupby-summary-styling" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:710px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-styling"
-           github-src="{ComponentSample}/summary-styling" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:710px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-styling"
-           github-src="{ComponentSample}/summary-styling" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 
 ## API References
@@ -785,11 +650,11 @@ Add razor styling section
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-  
+
 <!-- ComponentStart: Grid -->
 
 * [Selection-based Aggregates](selection-based-aggregates.md)
-  
+
 <!-- ComponentEnd: Grid -->
 
 Our community is active and always welcoming to new ideas.

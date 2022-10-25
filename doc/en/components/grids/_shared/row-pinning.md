@@ -360,10 +360,10 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 ### Demo
 
 <code-view style="height:540px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-styling"
-            github-src="{ComponentSample}/row-pinning-styling"
-            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
+           data-demos-base-url="{environment:demosBaseUrl}"
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-styling"
+           github-src="{ComponentSample}/row-pinning-styling"
+           alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
 >[!NOTE]

@@ -421,9 +421,9 @@ This demo shows the usage of custom header and row selectors. The latter uses `r
 This demo uses custom templates to resemble Excel-like header and row selectors.
 
 <code-view style="height:550px"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-excel"
-            github-src="{ComponentSample}/selection-template-excel"
-            alt="{Platform} {ComponentTitle} Selection Template Excel Example">
+           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-excel"
+           github-src="{ComponentSample}/selection-template-excel"
+           alt="{Platform} {ComponentTitle} Selection Template Excel Example">
 </code-view>
 
 <!-- ComponentEnd: Grid -->

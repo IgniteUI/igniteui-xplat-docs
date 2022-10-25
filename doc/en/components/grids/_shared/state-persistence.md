@@ -30,7 +30,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
     * Columns order
     * Column properties defined by the [`IColumnState`]({environment:angularApiUrl}/interfaces/icolumnstate.html) interface.
     * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
-  
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -51,7 +51,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
     * Columns order
     * Column properties defined by the [`IColumnState`]({environment:angularApiUrl}/interfaces/icolumnstate.html) interface.
     * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
-  
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: PivotGrid -->
@@ -66,7 +66,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
     * Pivot Configuration properties defined by the [`IPivotConfiguration`]({environment:angularApiUrl}/interfaces/ipivotconfiguration.html) interface.
     * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
     * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
-  
+
 <!-- ComponentEnd: PivotGrid -->
 
 
@@ -165,7 +165,7 @@ Add blazor snippet for working with the sessionStorage
 `GridState` will not persist columns templates, column formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. Let's show how to do this for templated columns:
 
 1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
-   
+
 <!-- ComponentStart: Grid -->
 <!-- Angular -->
 ```html
@@ -357,48 +357,11 @@ setState snippet
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: Grid -->
-
 <code-view style="height:763px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-state"
            github-src="{ComponentSample}/state" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:1010px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-state"
-           github-src="{ComponentSample}/state" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:715px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-state"
-           github-src="{ComponentSample}/state" >
-
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: PivotGrid -->
-
-<code-view style="height:820px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-state-persistence"
-           github-src="{ComponentSample}/state-persistence" >
-
-</code-view>
-
-<!-- ComponentEnd: PivotGrid -->
 
 
 <!-- ComponentStart: PivotGrid -->
