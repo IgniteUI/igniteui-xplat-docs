@@ -14,7 +14,7 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 <code-view style="height:600px" 
            data-demos-base-url="{environment:demosBaseUrl}" 
            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-collapsible-columnGroups"
-           github-src="{ComponentSample}/collapsible-groups"
+           github-src="{ComponentSample}/grid-collapsible-columnGroups"
            alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
 </code-view>
 
