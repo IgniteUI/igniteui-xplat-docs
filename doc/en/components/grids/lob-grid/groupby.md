@@ -14,8 +14,8 @@ This example presents the grouping capabilities of a large amount of data. Dragg
 
 
 <code-view style="height:605px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-groupby"
            alt="{Platform} {ComponentTitle} Group By Example">
 </code-view>
 
@@ -179,8 +179,8 @@ Groups that span multiple pages are split between them. The group row is visible
 
 
 <code-view style="height:605px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-paging"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-groupby-paging"
            alt="{Platform} {ComponentTitle} group by with paging example">
 </code-view>
 
@@ -218,8 +218,8 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 
 
 <code-view style="height:605px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-custom"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-groupby-custom"
            alt="{Platform} {ComponentTitle} custom group by example">
 </code-view>
 
@@ -446,8 +446,8 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 
 <code-view style="height:570px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-groupby-styling" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-groupby-styling" >
 </code-view>
 
 >[!NOTE]

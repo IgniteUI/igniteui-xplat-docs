@@ -30,9 +30,9 @@ The sample below demonstrates the three types of {ComponentTitle}'s **column sel
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-selection"
+<code-view style="height:570px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection"
            alt="{Platform} Column Selection Example">
 </code-view>
 
@@ -63,9 +63,9 @@ The default selection mode is `none`. If set to `single` or `multiple` all of th
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-group-selection" >
+<code-view style="height:570px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-group-selection" >
 </code-view>
 
 ## Keyboard Combinations
@@ -93,7 +93,7 @@ Before diving into the styling options, the core module and all component mixins
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 ```razor
 TO DO
@@ -147,7 +147,7 @@ TO DO
 - **$row-selected-background** - sets the background of the selected fraction.
 - **$row-selected-text-color** - sets the text color of the selected fraction
 - **$row-selected-hover-background** - sets the color of the hovered cell or bunch of cells.
-- **$header-selected-text-color** - sets the text color of the selected column header 
+- **$header-selected-text-color** - sets the text color of the selected column header
 - **$header-selected-background** - sets the background color of the selected column header.
 
 
@@ -186,9 +186,9 @@ TO DO
 
 ### Demo
 
-<code-view style="height:570px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-selection-styles" >
+<code-view style="height:570px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles" >
 </code-view>
 
 >[!NOTE]

@@ -12,8 +12,8 @@ The Ignite UI for {Platform} {ComponentTitle} supports remote data operations su
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering"
            github-src="{ComponentSample}/remote-filtering"
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
@@ -73,8 +73,8 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 ### Remote Virtualization Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sample-4"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sample-4"
            github-src="{ComponentSample}/sample-4"
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
@@ -139,8 +139,8 @@ BLAZOR CODE SNIPPET HERE
 ### Infinite Scroll Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-sample-5"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sample-5"
            github-src="{ComponentSample}/sample-5"
            alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example">
 </code-view>
@@ -325,8 +325,8 @@ BLAZOR CODE SNIPPET HERE
 #### Unique Column Values Strategy Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-load-on-demand"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-load-on-demand"
            github-src="{ComponentSample}/excel-style-filtering-load-on-demand"
            alt="{Platform} {ComponentTitle} Remote Data Operations Unique Column Values Strategy Example">
 </code-view>
@@ -639,8 +639,8 @@ BLAZOR CODE SNIPPET HERE
 ```
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-default-template"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-default-template"
            github-src="{ComponentSample}/remote-paging-default-template"
            alt="{Platform} {ComponentTitle} Remote Paging Default Template Example">
 </code-view>
@@ -795,8 +795,8 @@ BLAZOR CODE SNIPPET HERE
 After all the changes above, the following result will be achieved.
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-sample"
            github-src="{ComponentSample}/remote-paging-sample"
            alt="{Platform} {ComponentTitle} Remote Paging Custom Template Example">
 </code-view>
@@ -807,8 +807,8 @@ After all the changes above, the following result will be achieved.
 In some cases you may want to define your own paging behavior and this is when we can take advantage of the Paging template and add our custom logic along with it. We are going to extend the Remote Paging example in order to demonstrate this:
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-remote-paging-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-remote-paging-sample"
            github-src="{ComponentSample}/custom-remote-paging-sample"
            alt="{Platform} {ComponentTitle} Remote Paging Custom Paging Example">
 </code-view>
@@ -920,8 +920,8 @@ As you can see in the **paginate** method, custom pagination logic is performed,
 #### Remote Paging with Batch Editing Demo
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
            github-src="{ComponentSample}/remote-paging-batch-editing"
            alt="{Platform} {ComponentTitle} Remote Paging Batch Editing Example">
 </code-view>

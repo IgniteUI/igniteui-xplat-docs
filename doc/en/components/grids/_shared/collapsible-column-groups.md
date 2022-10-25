@@ -11,9 +11,9 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
-<code-view style="height:600px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-collapsible-columnGroups"
+<code-view style="height:600px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-collapsible-columnGroups"
            github-src="{ComponentSample}/grid-collapsible-columnGroups"
            alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
 </code-view>
@@ -178,7 +178,7 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 ## API References
 
-* `{ComponentName}` 
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources

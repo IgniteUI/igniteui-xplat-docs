@@ -15,8 +15,8 @@ The {ComponentTitle} provides a convenient way to perform data manipulations thr
 The following sample demonstrates how to enable row editing in the {ComponentTitle}. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
 
 <code-view style="height:550px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-editing"
+            data-demos-base-url="{environment:dvDemosBaseUrl}"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing"
             github-src="{ComponentSample}/row-editing"
             alt="{Platform} {ComponentTitle} Editing Rows Example">
 </code-view>
@@ -331,8 +331,8 @@ We scope our `@include` statement in `.custom-buttons` so that it is only applie
 After styling the banner and buttons, we also define a custom style for [the cell in edit mode](cell-editing.md#styling). The result of all the combined styles can be seen below:
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-editing-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-style"
            github-src="{ComponentSample}/row-editing-style"
            alt="{Platform} {ComponentTitle} Row Editing Styling Example">
 </code-view>

@@ -12,8 +12,8 @@ Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. Th
 ## {Platform} Multi-row Layout Example
 
 <code-view style="height:755px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout"
            github-src="{ComponentSample}/multi-row-layout"
            alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example">
 </code-view>
@@ -111,8 +111,8 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 
 
 <code-view style="height:605px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-mrl-custom-navigation"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-mrl-custom-navigation"
            github-src="{ComponentSample}/mrl-custom-navigation"
            alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
@@ -132,8 +132,8 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 By default we have set the same columns as our previous sample, but it can be cleared and configured to match your desired configuration.
 
 <code-view style="height:500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
            github-src="{ComponentSample}/multi-row-layout-configuration"
            alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
 </code-view>
@@ -264,8 +264,8 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 ### Demo
 
 <code-view style="height:755px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
            github-src="{ComponentSample}/multi-row-layout-styling"
            alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example">
 </code-view>

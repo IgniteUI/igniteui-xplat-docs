@@ -19,8 +19,8 @@ The {ComponentTitle} provides a convenient way to perform data manipulations thr
 # {Platform} {ComponentTitle} Row Adding Example
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-add-row"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-add-row"
            github-src="{ComponentSample}/add-row"
            alt="{Platform} {ComponentTitle} Row Adding Example">
 </code-view>

@@ -13,8 +13,8 @@ The grid Excel filtering provides an Excel like filtering UI for any Angular Mat
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
            github-src="{ComponentSample}/excel-style-filtering-sample-1" >
 </code-view>
 
@@ -176,8 +176,8 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
            github-src="{ComponentSample}/excel-style-filtering-sample-2" >
 </code-view>
 
@@ -213,7 +213,7 @@ The following code demonstrates how to define a custom Excel style filter menu u
             <igx-excel-style-search></igx-excel-style-search>
         </igx-excel-style-filter-operations>
     </igx-grid-excel-style-filtering>
-    
+
 </igx-grid>
 ```
 <!-- end: Angular -->
@@ -265,7 +265,7 @@ Add razor snipets
 ```html
 <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false" [allowFiltering]='true' filterMode="excelStyleFilter"
     [height]="'650px'" [width]="'100%'" [rowHeight]="'65px'" #hierarchicalGrid>
-    
+
     <igx-grid-excel-style-filtering [minHeight]="'380px'" [maxHeight]="'500px'">
         <igx-excel-style-column-operations>
             <igx-excel-style-header
@@ -326,8 +326,8 @@ Templating header icon
 ```
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
            github-src="{ComponentSample}/excel-style-filtering-sample-3" >
 </code-view>
 
@@ -365,8 +365,8 @@ In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`.
 The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values:
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
            github-src="{ComponentSample}/formatted-filtering-strategy" >
 </code-view>
 
@@ -379,8 +379,8 @@ The following sample demonstrates how to format the numeric values of a column a
 By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-tree-filter-view"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-tree-filter-view"
            github-src="{ComponentSample}/tree-filter-view" >
 </code-view>
 
@@ -393,8 +393,8 @@ As you see at the demos above the default appearance of the Excel Style filterin
 ### Demo
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
            github-src="{ComponentSample}/external-excel-style-filtering" >
 </code-view>
 
@@ -481,8 +481,8 @@ However, elements that go outside of the grid (e.g. Excel Style filter) will con
 ### Demo
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-outlet"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-outlet"
            github-src="{ComponentSample}/external-outlet" >
 </code-view>
 
@@ -497,7 +497,7 @@ To get started with styling the Excel Style Filtering dialog, we need to import 
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 The excel style filtering dialog takes its background color from the grid's theme, using the `filtering-row-background` parameter. In order to change the background we need to create a custom theme:
 
@@ -795,8 +795,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:950px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
            github-src="{ComponentSample}/excel-style-filtering-style" >
 </code-view>
 

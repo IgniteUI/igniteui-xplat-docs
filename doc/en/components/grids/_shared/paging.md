@@ -14,8 +14,8 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 The following example represents {ComponentTitle} pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the {ComponentTitle} pages via "Go to last page" and "Go to first page" buttons.
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-sample"
            github-src="{ComponentSample}/paging-sample"
            alt="{Platform} {ComponentTitle} Pagination Example">
 </code-view>
@@ -170,8 +170,8 @@ TO-DO H-GRID CODE SNIPPET
 ### Paginator Component Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-reusable-paginator"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-reusable-paginator"
            github-src="{ComponentSample}/reusable-paginator"
            alt="{Platform} {ComponentTitle} Reusable Paginator Example">
 </code-view>
@@ -362,8 +362,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ### Pagination Style Example
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-style"
            github-src="{ComponentSample}/paging-style"
            alt="{Platform} {ComponentTitle} Paging Style Example">
 </code-view>

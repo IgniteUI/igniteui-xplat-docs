@@ -16,7 +16,7 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid-finjs"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
            alt="Angular Live-data Update Example">
 </code-view>
 
@@ -66,7 +66,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid-finjs-dock-manager/grid-finjs-dock-manager"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
            alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
 </code-view>
 
@@ -95,7 +95,7 @@ Based on the specified frequency a total of 30 new updates will be received by t
 
 By using the Action panel on the left, you can manage the frequency of the data feed and the volume of the requested data. All grids use the same data source. Feel free to use the other action elements to *stop the data feed*, change the *application theme* or add *dynamically a DockSlot container* with a igxGrid.
 
-We use the 'updateparameters' method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
+We use the `updateParameters` method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
 
 ```razor
 this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll)

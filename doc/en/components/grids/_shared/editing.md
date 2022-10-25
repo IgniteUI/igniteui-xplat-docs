@@ -38,10 +38,10 @@ In the {ComponentTitle} if you set RowEditable property to true, and editable pr
  - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
  - For `date` data type, default template is using `DatePicker`
  - For `dateTime` data type, default template is using `DateTimeEditor`. This editor will give you a mask directions for the input elements part of the DateTime object.
- - For `time` -  data type, default template is using `TimePicker`. 
+ - For `time` -  data type, default template is using `TimePicker`.
  - For `boolean` data type, default template is using `Checkbox`.
- - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings. 
- - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents. 
+ - For `currency` data type, default template is using `InputGroup` with prefix/suffix configuration based on application or grid locale settings.
+ - For `percent` data type, default template is using `InputGroup` with suffix element that shows a preview of the edited value in percents.
  - For custom templates you can see [Cell Editing topic](cell-editing.md#cell-editing-templates)
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
@@ -69,8 +69,8 @@ The grid exposes a wide array of events that provide greater control over the ed
 The following sample demonstrates the editing execution sequence in action:
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-lifecycle"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-lifecycle"
            github-src="{ComponentSample}/editing-lifecycle" >
 </code-view>
 
@@ -106,7 +106,7 @@ public onSorting(event: ISortingEventArgs) {
 <IgbGrid
     Id="grid"
     SortingScript="SortingHandler"
-    RowEditable="true">        
+    RowEditable="true">
 </IgbGrid>
 
 function SortingHandler() {
@@ -118,7 +118,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 ## API References
 
 * `GridCell`
-  
+
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 * `GridRow`

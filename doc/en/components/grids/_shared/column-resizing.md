@@ -13,8 +13,8 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-resizing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
@@ -345,8 +345,8 @@ When the column is first initialized in the view it resolves its width to the si
 This approach is more performance optimized than auto-sizing post initialization and is recommended especially in cases where you need to auto-size a large number of columns.
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-columnAutoResizing-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-columnAutoResizing-sample"
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
@@ -446,8 +446,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-resize-line-styling" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-resize-line-styling" >
 </code-view>
 
 >[!NOTE]

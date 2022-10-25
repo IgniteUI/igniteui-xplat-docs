@@ -33,8 +33,8 @@ Boston Marathon 2021 – In this grid example, you can see how users can do both
 [Circular Progress Indicator](../../inputs/circular-progress.md) component, and [Icons](../../layouts/icon.md). The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:lobDemosBaseUrl}"
-           iframe-src="{environment:lobDemosBaseUrl}/grid/grid"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid"
            alt="grid example">
 </code-view>
 
@@ -487,8 +487,8 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 
 <code-view style="height:460px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-nested-data-binding-2" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding-2" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -591,8 +591,8 @@ And the result from this configuration is:
 
 
 <code-view style="height:460px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-nested-data-binding" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -670,8 +670,8 @@ And the result is:
 
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-composite-data-binding" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-composite-data-binding" >
 </code-view>
 
 <div class="divider--half"></div>

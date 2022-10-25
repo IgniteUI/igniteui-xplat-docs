@@ -11,9 +11,9 @@ Copy to clipboard operations are now available in the {ComponentTitle}. This fun
 
 ## {Platform} {ComponentTitle} Clipboard Example
 
-<code-view style="height:635px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-clipboard-operations-sample"
+<code-view style="height:635px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-clipboard-operations-sample"
            github-src="{ComponentSample}/clipboard-operations-sample"
            alt="{Platform} {ComponentTitle} Clipboard Interactions Example">
 </code-view>
@@ -33,8 +33,8 @@ Copy behavior is working with the default interaction defined by the browser and
 
 ## Limitations
 - Both the **cut** and **copy** events are not natively supported in Internet Explorer. The exception is the
-**paste** event (IE 11) which is emitted but does not expose the `clipboardData` property in the event. 
-> [!NOTE] 
+**paste** event (IE 11) which is emitted but does not expose the `clipboardData` property in the event.
+> [!NOTE]
 > In order to `copy` cells in IE 11, you can use the keyboard selection. Hold the **shift key** in order to make a multi-cell selection, press **Ctrl + C** in order to copy.
 
 - The copy behavior is disabled while the grid is in edit mode.
@@ -50,7 +50,7 @@ We expose `ClipboardOptions` property, which handles the following options:
 - `CopyFormatters` Apply any existing column formatters to the copied data.
 - `Separator` The string separator to use the for formatting the data in the clipboard. Default is `/t`
 
-> [!NOTE] 
+> [!NOTE]
 > Excel can automatically detect text that is separated by tabs (tab-delimited `/t`) and properly paste the data into separate columns. When the paste format doesn't work, and everything you paste appears in a single column, then Excel's delimiter is set to another character, or your text is using spaces instead of tabs.
 
 - `GridCopy` Emitted when a copy operation is executed. Fired only if copy behavior is enabled through the `ClipboardOptions`

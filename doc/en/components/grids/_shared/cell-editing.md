@@ -12,9 +12,9 @@ Ignite UI for {Platform} {ComponentTitle} provides a great data manipulation cap
 
 ## {Platform} {ComponentTitle} cell editing and edit templates Example
 
-<code-view style="height:950px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing"
+<code-view style="height:950px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing"
            github-src="{ComponentSample}/editing"
            alt="{Platform} {ComponentTitle} cell editing and edit templates Example">
 </code-view>
@@ -153,9 +153,9 @@ If you want to provide a custom template which will be applied when a cell is in
 ```
 This code is used in the sample below which implements an [`SelectComponent`](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
-<code-view style="height:625px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-select"
+<code-view style="height:625px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-select"
            github-src="{ComponentSample}/select"
            alt="{Platform} {ComponentTitle} Select Example">
 </code-view>
@@ -243,9 +243,9 @@ Please check the full sample for further reference:
 
 ##### {Platform} Grid Excel Style Editing Sample
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-excel-style"
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
            github-src="{ComponentSample}/editing-excel-style"
            alt="{Platform} {ComponentTitle} Excel Style Editing Example">
 </code-view>
@@ -477,9 +477,9 @@ Here, we are validating two columns. If the user tries to change an artist's **D
 
 The result of the above validation being applied to our `{ComponentSelector}` can be seen in the below demo:
 
-<code-view style="height:650px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-events"
+<code-view style="height:650px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
            github-src="{ComponentSample}/editing-events"
            alt="{Platform} {ComponentTitle} Editing Event Example">
 </code-view>
@@ -500,7 +500,7 @@ In order to use the [Ignite UI Theming Library](../themes/sass/component-themes.
 
 // IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 Now we can make use of all of the functions exposed by the Ignite UI for {Platform} theme engine.
 
 ### Defining a palette
@@ -561,9 +561,9 @@ This way, due to {Platform}'s [`ViewEncapsulation`](https://angular.io/api/core/
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [`igx-input-group`](../input-group.md#styling), [`igx-datepicker`](../date-picker.md#styling) & [`igx-checkbox`](../checkbox.md#styling)
 
-<code-view style="height:950px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-editing-style"
+<code-view style="height:950px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
            github-src="{ComponentSample}/editing-style"
            alt="{Platform} {ComponentTitle} Editing Style Example">
 </code-view>

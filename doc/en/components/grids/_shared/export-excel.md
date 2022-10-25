@@ -17,9 +17,9 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 
 <code-view style="height: 800px;"
-           data-demos-base-url="{environment:demosBaseUrl}"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
            alt="{Platform} {ComponentTitle} Excel Exporter Example">
 </code-view>
 
@@ -91,9 +91,9 @@ To export grouped data you just need to group the {Component} by one or more col
 
 
 <code-view style="height: 800px;"
-           data-demos-base-url="{environment:demosBaseUrl}"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
            alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
 </code-view>
 
@@ -107,9 +107,9 @@ It is now possible to export {Component} with defined [multi-column headers](mul
 > The exported {Component} will not be formatted as a table, since Excel tables do not support multiple row headers.
 
 <code-view style="height: 800px;"
-           data-demos-base-url="{environment:demosBaseUrl}"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers-export"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
            alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
 </code-view>
 
@@ -186,7 +186,7 @@ The Excel Exporter service has a few more APIs to explore, which are listed belo
 
 Additional components that were used:
 
-* [{ComponentTitle}Component API]({environment:demosBaseUrl}/classes/{ComponentTitle}.md)
+* [{ComponentTitle}Component API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
 * [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## Additional Resources

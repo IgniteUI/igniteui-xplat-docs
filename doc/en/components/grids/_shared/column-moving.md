@@ -38,8 +38,8 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
 <code-view style="height:650px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-moving"
+            data-demos-base-url="{environment:dvDemosBaseUrl}"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving"
             github-src="{ComponentSample}/column-moving"
             alt="{Platform} {ComponentTitle} Column Moving Overview Example">
 </code-view>
@@ -262,8 +262,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-moving-styled"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-moving-styled"
            github-src="{ComponentSample}/moving-styled"
            alt="{Platform} {ComponentTitle} Grid Moving Styled Example"
             >

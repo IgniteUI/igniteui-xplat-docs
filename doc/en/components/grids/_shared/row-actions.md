@@ -102,8 +102,8 @@ These components expose templates giving flexibility for customization. For inst
 }
 ```
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-action-strip"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
            github-src="{ComponentSample}/action-strip"
            alt="{Platform} {ComponentTitle} Action Strip Example" >
 </code-view>

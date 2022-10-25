@@ -13,8 +13,8 @@ The {Platform} UI {ComponentTitle} in {ProductName} has a **summaries** feature 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary"
            github-src="{ComponentSample}/summary" >
 </code-view>
 
@@ -370,8 +370,8 @@ Add blazor snippet for my summary
 ```
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-allData-summaries"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-allData-summaries"
            github-src="{ComponentSample}/allData-summaries" >
 </code-view>
 
@@ -400,8 +400,8 @@ When a default summary is defined, the height of the summary area is calculated 
 
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-template"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary-template"
            github-src="{ComponentSample}/summary-template" >
 </code-view>
 
@@ -431,8 +431,8 @@ Add custom summary formatter snippets for blazor
 ```
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary-formatter"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary-formatter"
            github-src="{ComponentSample}/summary-formatter" >
 </code-view>
 
@@ -460,8 +460,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 ### Demo
 
 <code-view style="height:650px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-groupby-summary"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary"
            github-src="{ComponentSample}/groupby-summary" >
 </code-view>
 
@@ -489,8 +489,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the {ComponentTitle}.
 
 <code-view style="height:720px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-summary2"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary2"
            github-src="{ComponentSample}/summary2" >
 </code-view>
 
@@ -623,8 +623,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 Add razor styling section
 
 <code-view style="height:710px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-groupby-summary-styling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-styling"
            github-src="{ComponentSample}/groupby-summary-styling" >
 </code-view>
 

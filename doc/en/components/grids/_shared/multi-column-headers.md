@@ -12,8 +12,8 @@ The {Platform} {ComponentTitle} supports multi-column headers which allow you to
 ## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers"
            github-src="{ComponentSample}/multi-column-headers"
            alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
 </code-view>
@@ -248,8 +248,8 @@ TO-DO CODE SNIPPET
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-header-template"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-header-template"
            github-src="{ComponentSample}/multi-column-header-template"
            alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
@@ -359,8 +359,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
            github-src="{ComponentSample}/multi-column-headers-styling"
            alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample">
 </code-view>

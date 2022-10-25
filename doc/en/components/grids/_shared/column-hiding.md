@@ -15,8 +15,8 @@ The Material UI Grid has a built-in column hiding UI, which can be used through 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-hiding"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding"
            github-src="{ComponentSample}/column-hiding"
            alt="{Platform} {ComponentTitle} Column Hiding Example">
 </code-view>
@@ -313,8 +313,8 @@ We can easily prevent the user from being able to hide columns through the colum
 If all went well, this is how our column hiding UI component should look like:
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-column-hiding"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
            github-src="{ComponentSample}/custom-column-hiding"
            alt="{Platform} {ComponentTitle} Custom Column Hiding Example" >
 </code-view>
@@ -463,8 +463,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:600px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-hiding-style"
+            data-demos-base-url="{environment:dvDemosBaseUrl}"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
             github-src="{ComponentSample}/column-hiding-style"
             alt="{Platform} {ComponentTitle} Column Hiding Styling Example">
 </code-view>

@@ -110,8 +110,8 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 
 
 <code-view style="height:470px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}{ComponentSample}-grid-keyboardnav-guide" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-keyboardnav-guide" >
 </code-view>
 
 
@@ -210,8 +210,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 
 <code-view style="height:400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-custom-keyboard-navigation" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-custom-keyboard-navigation" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -238,8 +238,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 
 <code-view style="height:520px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-custom-kb-navigation" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-custom-kb-navigation" >
 </code-view>
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -265,8 +265,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 <code-view style="height:520px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-keyboard-navigation" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation" >
 </code-view>
 
 <!-- ComponentEnd : TreeGrid -->

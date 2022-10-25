@@ -25,8 +25,8 @@ The sample below demonstrates the three types of {ComponentTitle}'s **row select
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection"
            github-src="{ComponentSample}/row-selection"
            alt="{Platform} {ComponentTitle} Row Selection Example">
 </code-view>
@@ -409,8 +409,8 @@ The `headContext.selectAll()` and `headContext.deselectAll()` methods are expose
 This demo shows the usage of custom header and row selectors. The latter uses `rowContext.index` to display row numbers and an `Checkbox` bound to `rowContext.selected`.
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-numbering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-numbering"
            github-src="{ComponentSample}/selection-template-numbering"
            alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
 </code-view>
@@ -421,7 +421,7 @@ This demo shows the usage of custom header and row selectors. The latter uses `r
 This demo uses custom templates to resemble Excel-like header and row selectors.
 
 <code-view style="height:550px"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-selection-template-excel"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-excel"
            github-src="{ComponentSample}/selection-template-excel"
            alt="{Platform} {ComponentTitle} Selection Template Excel Example">
 </code-view>
@@ -432,8 +432,8 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-conditional-row-selectors"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-row-selectors"
            github-src="{ComponentSample}/conditional-row-selectors"
            alt="{Platform} {ComponentTitle} Conditional Row Selectors Example">
 </code-view>

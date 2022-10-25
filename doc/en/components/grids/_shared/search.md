@@ -15,8 +15,8 @@ sharedComponents: ["Grid", "TreeGrid"]
 The following example represents {ComponentTitle} with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-search-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-search-sample"
            alt="{Platform} {ComponentTitle} Search Example">
 </code-view>
 

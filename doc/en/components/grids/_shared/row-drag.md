@@ -13,8 +13,8 @@ In Ignite UI for {Platform} {ComponentTitle}, **RowDrag** is initialized on the 
 ## {Platform} {ComponentTitle} Row Drag Example
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag-base"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
            github-src="{ComponentSample}/row-drag-base"
            alt="{Platform} {ComponentTitle} Row Drag Example" >
 </code-view>
@@ -220,8 +220,8 @@ The drag ghost can be templated on every grid level, making it possible to have 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-row-drag"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-drag"
            github-src="{ComponentSample}/multi-row-drag"
            alt="{Platform} {ComponentTitle} Multi Row Drag">
 </code-view>
@@ -280,8 +280,8 @@ The result of the configuration can be seem below:
 <!-- ComponentStart: Grid -->
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag-to-grid"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
            github-src="{ComponentSample}/row-drag-to-grid"
            alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
@@ -292,8 +292,8 @@ The result of the configuration can be seem below:
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag"
            github-src="{ComponentSample}/row-drag"
            alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
@@ -308,8 +308,8 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-drag"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag"
            github-src="{ComponentSample}/row-drag"
            alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
@@ -517,8 +517,8 @@ With these few easy steps, you've configured a grid that allows reordering rows 
 Holding onto the drag icon will allow you to move a row anywhere in the grid:
 
 <code-view style="height:830px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-reorder"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
            github-src="{ComponentSample}/row-reorder"
            alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>
@@ -528,8 +528,8 @@ Holding onto the drag icon will allow you to move a row anywhere in the grid:
 Notice that we also have row selection enabled and we preserve the selection when dropping the dragged row.
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-row-reordering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-row-reordering"
            github-src="{ComponentSample}/row-reorder"
            alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>
@@ -767,8 +767,8 @@ class MyGridScrollComponent {
 Following is the example of both scenarios described above - showing a drop indicator and scrolling the viewport when border's edge is reached.
 
 <code-view style="height:830px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-drop-indicator"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-drop-indicator"
            github-src="{ComponentSample}/drop-indicator"
            alt="{Platform} {ComponentTitle} Drop Indicator">
 </code-view>

@@ -12,8 +12,8 @@ One or multiple rows can be pinned to the top or bottom of the {Platform} UI Gri
 ## {Platform} {ComponentTitle} Row Pinning Example
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning"
            github-src="{ComponentSample}/row-pinning"
            alt="{Platform} {ComponentTitle} Row Pinning Example">
 </code-view>
@@ -216,8 +216,8 @@ igRegisterScript("togglePinning", togglePinning, false);
 #### Demo
 
 <code-view style="height:600px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
+            data-demos-base-url="{environment:dvDemosBaseUrl}"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
             github-src="{ComponentSample}/row-pinning-extra-column"
             alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example">
 </code-view>
@@ -277,8 +277,8 @@ This would allow reordering the rows and moving them between the pinned and unpi
 #### Demo
 
 <code-view style="height:510px"
-            data-demos-base-url="{environment:demosBaseUrl}"
-            iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-drag"
+            data-demos-base-url="{environment:dvDemosBaseUrl}"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-drag"
             github-src="{ComponentSample}/row-pinning-drag"
             alt="{Platform} {ComponentTitle} Row Pinning Drag Example">
 </code-view>
@@ -360,8 +360,8 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 ### Demo
 
 <code-view style="height:540px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-pinning-styling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-styling"
            github-src="{ComponentSample}/row-pinning-styling"
            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>

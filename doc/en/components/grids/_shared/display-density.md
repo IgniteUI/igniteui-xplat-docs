@@ -11,9 +11,9 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 ## {Platform} {ComponentTitle} Display Density Example
 
-<code-view style="height:620px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-display-density"
+<code-view style="height:620px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-display-density"
            github-src="{ComponentSample}/display-density"
            alt="{Platform} {ComponentTitle} Display Density Example">
 </code-view>
@@ -158,7 +158,7 @@ Now we can add the markup.
 <!-- end: Angular -->
 
 ```razor
-<div class="density-chooser"> 
+<div class="density-chooser">
     <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCompactClick">COMPACT</IgbButton>
     <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCosyClick">COSY</IgbButton>
     <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onComfortableClick">COMFORTABLE</IgbButton>
@@ -318,7 +318,7 @@ Please keep in mind the following:
 And now we can extend our sample and add `RowHeight` property to the {ComponentTitle}:
 
  ```html
- <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%" 
+ <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%"
  height="550px" [allowFiltering]="true">
  </{ComponentSelector}>
  ```
@@ -350,7 +350,7 @@ And now we can extend our sample and add `RowHeight` property to the {ComponentT
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-  
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 * [Searching](search.md)

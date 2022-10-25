@@ -14,8 +14,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 The sample below demonstrates {ComponentTitle}'s **Quick filtering** user experience.
 
 <code-view style="height:500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering"
            github-src="{ComponentSample}/filtering"
            alt="{Platform} {ComponentTitle} Filtering Example">
 </code-view>
@@ -320,8 +320,8 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 ```
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-custom-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-filtering"
            github-src="{ComponentSample}/custom-filtering"
            alt="{Platform} {ComponentTitle} Custom Filtering Example">
 </code-view>
@@ -331,8 +331,8 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 You can add a template marked with `FilterCellTemplate` in order to retemplate the filter cell. In the sample below, an input is added for the string columns and `DatePicker` for the date column. When the user types or selects a value, a filter with contains operator for string columns and equals operator for date columns, is applied using grid's public API.
 
 <code-view style="height:500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering-template"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-template"
            github-src="{ComponentSample}/filtering-template"
            alt="{Platform} {ComponentTitle} Filtering Template Example">
 </code-view>
@@ -572,8 +572,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-filtering-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-style"
            github-src="{ComponentSample}/filtering-style"
            alt="{Platform} {ComponentTitle} Filtering Style Example">
 </code-view>

@@ -28,8 +28,8 @@ To validate that a column input would be set and the value is going to be format
 The following sample demonstrates how to use the prebuilt `required`, `email` and `min` validator directives in a {ComponentTitle}.
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-validator-service"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-validator-service"
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
@@ -172,8 +172,8 @@ public cellEdit(evt) {
 The below example demonstrates the above-mentioned customization options.
 
 <code-view style="height:570px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-validator-service-extended"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-validator-service-extended"
            alt="{Platform} {ComponentTitle} Custom Validation Example">
 </code-view>
 
@@ -300,8 +300,8 @@ public stateMessage(cell: IgxGridCell) {
 The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -407,8 +407,8 @@ Errors and the detailed messages can be determined based on the row and cell's v
 The below sample demonstrates cross-field validation in a Hierarchical Grid for both the root and child data.
 
 <code-view style="height:530px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-cross-field-validation"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validation"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -514,8 +514,8 @@ public stateMessage(cell: IgxGridCell) {
 The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:570px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -631,8 +631,8 @@ public cellStyles = {
 ### Demo
 
 <code-view style="height:560px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-validation-style" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-validation-style" >
 </code-view>
 
 

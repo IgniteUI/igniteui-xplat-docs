@@ -70,10 +70,10 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 ### Demo
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-row-classes"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-classes"
            github-src="{ComponentSample}/row-classes" >
-           
+
 </code-view>
 
 ### Using rowStyles
@@ -183,7 +183,7 @@ Add hgrid styles
 <igx-hierarchical-grid  #hierarchicalGrid [data]="localdata" [autoGenerate]="false"
         [height]="'580px'" [width]="'100%'" [rowStyles]="rowStyles">
         <igx-row-island [key]="'Albums'" [autoGenerate]="false" [rowStyles]="childRowStyles">
-        </igx-row-island>  
+        </igx-row-island>
 </igx-hierarchical-grid>
 ```
 <!-- end: Angular -->
@@ -197,8 +197,8 @@ Add hgrid markup
 ### Demo
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-rowStyles-sample"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-rowStyles-sample"
            github-src="{ComponentSample}/rowStyles-sample" >
 </code-view>
 
@@ -382,8 +382,8 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 ### Demo
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-conditional-cell-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style"
            github-src="{ComponentSample}/conditional-cell-style" >
 </code-view>
 
@@ -519,8 +519,8 @@ Add similar handling
 ### Demo
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-cellStyling"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-cellStyling"
            github-src="{ComponentSample}/cell-cellStyling" >
 </code-view>
 

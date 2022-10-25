@@ -17,8 +17,8 @@ But let's dive deeper in each of these options.
 The sample below demonstrates the three types of {ComponentTitle}'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
 <code-view style="height:750px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-cell-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection"
            github-src="{ComponentSample}/cell-selection"
            alt="{Platform} {ComponentTitle} Cell Selection Example">
 </code-view>
@@ -42,8 +42,8 @@ How to select cells:
 #### Demo
 
 <code-view style="height:700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-cell-selection"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection"
            github-src="{ComponentSample}/multi-cell-selection"
            alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
 </code-view>
@@ -237,8 +237,8 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ### Demo
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
            github-src="{ComponentSample}/multi-cell-selection-style"
            alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
 </code-view>

@@ -15,8 +15,8 @@ The Advanced filtering provides a dialog which allows the creation of groups wit
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
 <code-view style="height:530px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
            alt="{Platform} {ComponentTitle} Advanced Filtering Example"
            github-src="{ComponentSample}/excel-style-filtering-sample-1" >
 </code-view>
@@ -92,8 +92,8 @@ As you see the demo above the Advanced filtering dialog is hosted in an overlay 
 ### Demo
 
 <code-view style="height:750px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-external-advanced-filtering"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-advanced-filtering"
            github-src="{ComponentSample}/external-advanced-filtering" >
 </code-view>
 
@@ -405,32 +405,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<!-- ComponentStart: Grid -->
 
 <code-view style="height:530px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/grid/grid-advanced-filtering-style" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-advanced-filtering-style" >
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-<code-view style="height:510px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/tree-grid/treegrid-advanced-filtering-style" >
-</code-view>
-
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-
-<code-view style="height:630px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/hierarchical-grid/hierarchical-grid-advanced-filtering-style" >
-</code-view>
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.

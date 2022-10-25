@@ -358,8 +358,8 @@ setState snippet
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <code-view style="height:763px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-state"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-state"
            github-src="{ComponentSample}/state" >
 </code-view>
 
@@ -422,8 +422,8 @@ Add snippet for blazor for restore state
 ```
 
 <code-view style="height:580px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-noop-persistence"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-noop-persistence"
            github-src="{ComponentSample}/noop-persistence" >
 
 </code-view>

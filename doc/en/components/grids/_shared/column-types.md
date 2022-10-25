@@ -15,9 +15,9 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ## {Platform} {ComponentTitle} Column Types Example
 
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-column-data-types" >
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -135,8 +135,8 @@ public timeFormats = [
 #### Cell editing
 When it comes to cell editing based on the column type a different editor will appear:
 - dateTime - `DateTimeEditor` will be used. This editor will give you a mask directions for the input elements part of the DateTime object.
-- date - `DatePicker` will be used. 
-- time - `TimePicker` will be used. 
+- date - `DatePicker` will be used.
+- time - `TimePicker` will be used.
 
 #### Filtering
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:

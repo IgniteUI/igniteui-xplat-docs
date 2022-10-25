@@ -28,8 +28,8 @@ Below is a detailed example of how is Batch Editing enabled for the {ComponentTi
 The following sample demonstrates a scenario, where the {ComponentTitle} has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
 
 <code-view style="height:680px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-batch-editing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-batch-editing"
            github-src="{ComponentSample}/-batch-editing"
            alt="{Platform} {ComponentTitle} Batch Editing and Transactions Example" >
 </code-view>
@@ -255,8 +255,8 @@ Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are 
 [Check out the full demo configuration](remote-data-operations.md#remote-paging-with-batch-editing)
 
 <code-view style="height:620px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/remote-paging-batch-editing"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
            github-src="{ComponentSample}/remote-paging-batch-editing"
            alt="{Platform} {ComponentTitle} Remote Paging and Batch Editing Example" >
 </code-view>
