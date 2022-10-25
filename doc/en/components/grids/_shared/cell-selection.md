@@ -32,7 +32,7 @@ This is the default cell selection mode in both parent and child grids. Please k
 How to select cells:
 - By **Mouse drag** - Rectangular data selection of cells would be performed.
 - By <kbd>Ctrl</kbd> key press + **Mouse drag** - Multiple range selections would be performed. Any other existing cell selection will be persisted.
-- Instant multi-cell selection by using <kbd>Shift</kbd> key. Select single cell and select another single cell by holding the <kbd>Shift</kbd> key. Cell range between the two cells will be selected. Keep in mind that if another second cell is selected while holding <kbd>Shift</kbd> key` the cell selection range will be updated based on the first selected cell position (starting point).
+- Instant multi-cell selection by using <kbd>Shift</kbd> key. Select single cell and select another single cell by holding the <kbd>Shift</kbd> key. Cell range between the two cells will be selected. Keep in mind that if another second cell is selected while holding <kbd>Shift</kbd> key the cell selection range will be updated based on the first selected cell position (starting point).
 - Keyboard multi-cell selection by using the <kbd>Arrow</kbd> keys while holding <kbd>Shift</kbd> key. Multi-cell selection range will be created based on the focused cell.
 - Keyboard multi-cell selection by using the <kbd>Ctrl</kbd> + <kbd>Arrow</kbd> keys and <kbd>Ctrl</kbd> + <kbd>Home</kbd>/<kbd>End</kbd> while holding <kbd>Shift</kbd> key. Multi-cell selection range will be created based on the focused cell.
 - Clicking with the **Left Mouse** key while holding <kbd>Ctrl</kbd> key will add single cell ranges into the selected cells collection.
@@ -59,7 +59,6 @@ When you set the `CellSelection` to **single**, this allows you to have only one
 ### {ComponentTitle} None selection
 If you want to disable cell selection you can just set `CellSelection` to **none** property. In this mode when you click over the cell or try to navigate with keyboard, the cell is **not selected**, only the **activation style** is applied and it is going to be lost when you scroll or click over other element on the page. The only way for you to define selection is by using the API methods that are described below.
 
-@@if (igxName !== 'IgxHierarchicalGrid') {
 ## Keyboard navigation interactions
 
 ### While Shift key is pressed
