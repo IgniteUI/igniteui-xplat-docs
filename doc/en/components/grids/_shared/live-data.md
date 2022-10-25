@@ -113,7 +113,9 @@ By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFac
 Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
 
 ## API References
-* [{ComponentTitle}]({environment:angularApiUrl}/classes/igxgridcomponent.html)
+* `{ComponentName}`
+* `IgxGridCell`
+* `BaseTransactionService`
 
 ## Additional Resources
 
@@ -126,36 +128,6 @@ Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build y
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
-Our community is active and always welcoming to new ideas.
-
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-
-
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/treegrid-finjs"
-           alt="{Platform} {ComponentTitle} Live-data Update Example">
-</code-view>
-
-
-## API References
-
-* [IgxTreeGridComponent]({environment:angularApiUrl}/classes/igxtreegridcomponent.html)
-* [IgxGridCell]({environment:angularApiUrl}/classes/igxgridcell.html)
-* [IgxTreeGridRow]({environment:angularApiUrl}/classes/igxtreegridrow.html)
-* [IgxGridComponent]({environment:angularApiUrl}/classes/igxgridcomponent.html)
-* [IgxGridComponent Styles]({environment:sassApiUrl}/#function-grid-theme)
-* [IgxGridCell]({environment:angularApiUrl}/classes/igxgridcell.html)
-* [IgxBaseTransactionService]({environment:angularApiUrl}/classes/igxbasetransactionservice.html)
-
-
-## Additional Resources
-
-* [Data Grid](../grid/grid.md)
-* [Row Editing](row-editing.md)
-
 
 Our community is active and always welcoming to new ideas.
 
