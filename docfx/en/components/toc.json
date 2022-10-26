@@ -342,12 +342,6 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/lob-grid/state-persistence.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Pining",
         "href": "grids/lob-grid/column-pinning.md",
         "status": "NEW"
@@ -530,12 +524,6 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/hierarchical-grid/state-persistence.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Pining",
         "href": "grids/hierarchical-grid/column-pinning.md",
         "status": "NEW"
@@ -673,12 +661,6 @@
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
         "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/pivot-grid/state-persistence.md",
-        "status": "NEW"
       }
     ]
   },
@@ -788,12 +770,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
         "href": "grids/tree-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       },
       {
