@@ -129,6 +129,8 @@ public disableSummary() {
 ```
 <!-- end: Angular -->
 
+<!-- TODO: EnableSummariesAsync not working so please add it to the code snippet when it got fixed. -->
+
 ```razor
  <IgbGrid @ref=grid Id="grid" AutoGenerate="false">
         <IgbColumn Field="EmployeeID" DataType="GridColumnDataType.Number" HasSummary="true"></IgbColumn>
@@ -138,15 +140,10 @@ public disableSummary() {
 </IgbGrid>
 
 @code {
-    public void EnableSummary()
-    {
-        @*this.grid.EnableSummariesAsync not working*@
-    }
-
-    public void EnableSummary()
+    public async void DisableSummaries()
     {
         object[] disabledSummaries = { "EmployeeID" };
-        this.grid.DisableSummariesAsync(disabledSummaries);
+        await this.grid.DisableSummariesAsync(disabledSummaries);
     }
 }
 ```
@@ -193,7 +190,10 @@ Add blazor snippet for hgrid
 
 
 ## Custom {ComponentTitle} Summaries
-If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. In order to achieve this you have to override one of the base classes `SummaryOperand`, `NumberSummaryOperand` or `DateSummaryOperand` according to the column data type and your needs. This way you can redefine the existing function or you can add new functions. `SummaryOperand` class provides the default implementation only for the `Count` method. `NumberSummaryOperand` extends `SummaryOperand` and provides implementation for the `Min`, `Max`, `Sum` and `Average`. `DateSummaryOperand` extends `SummaryOperand` and additionally gives you `Earliest` and `Latest`.
+
+<!-- TODO: Remove comments tag of this paragraph and add custom summary when working -->
+
+<!-- If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. In order to achieve this you have to override one of the base classes `SummaryOperand`, `NumberSummaryOperand` or `DateSummaryOperand` according to the column data type and your needs. This way you can redefine the existing function or you can add new functions. `SummaryOperand` class provides the default implementation only for the `Count` method. `NumberSummaryOperand` extends `SummaryOperand` and provides implementation for the `Min`, `Max`, `Sum` and `Average`. `DateSummaryOperand` extends `SummaryOperand` and additionally gives you `Earliest` and `Latest`. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
 <!-- Angular -->
@@ -218,9 +218,9 @@ class MySummary extends IgxNumberSummaryOperand {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add blazor snippet
-```
+``` -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -250,14 +250,14 @@ class MySummary extends IgxNumberSummaryOperand {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add blazor snippet for hgrid
-```
+``` -->
 <!-- ComponentEnd: HierarchicalGrid -->
 
-As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
+<!-- As seen in the examples, the base classes expose the `Operate` method, so you can choose to get all default summaries and modify the result, or calculate entirely new summary results.
 
-The method returns a list of `SummaryResult`.
+The method returns a list of `SummaryResult`. -->
 
 <!-- Angular -->
 ```typescript
@@ -269,7 +269,7 @@ interface IgxSummaryResult {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add IgxSummaryResult snippet here
 ```
 
@@ -277,10 +277,10 @@ and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
 > [!NOTE]
-> In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty.
+> In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
-And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below.
+<!-- And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below. -->
 <!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
@@ -302,16 +302,16 @@ export class GridComponent implements OnInit {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add blazor snippet
-```
+``` -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-And now let's add our custom summary to the column `GramyNominations`. We will achieve that by setting the `Summaries` property to the class we create below.
+<!-- And now let's add our custom summary to the column `GramyNominations`. We will achieve that by setting the `Summaries` property to the class we create below. -->
 
 <!-- Angular -->
 ```html
@@ -337,18 +337,18 @@ export class HGridSummarySampleComponent implements OnInit {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add blazor snippet for hgrid
-```
+``` -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-### Custom summaries, which access all data
+<!-- ### Custom summaries, which access all data
  Now you can access all {ComponentTitle} data inside the custom column summary. Two additional optional parameters are introduced in the SummaryOperand `Operate` method.
 As you can see in the code snippet below the operate method has the following three parameters:
 - columnData - gives you an array that contains the values only for the current column
 - allGridData - gives you the whole grid data source
-- fieldName - current column field
+- fieldName - current column field -->
 
 <!-- Angular -->
 ```typescript
@@ -365,7 +365,7 @@ class MySummary extends IgxNumberSummaryOperand {
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add blazor snippet for my summary
 ```
 
@@ -373,7 +373,7 @@ Add blazor snippet for my summary
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-allData-summaries"
            github-src="{ComponentSample}/allData-summaries" >
-</code-view>
+</code-view> -->
 
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
@@ -390,13 +390,25 @@ Add blazor snippet for my summary
 <!-- end: Angular -->
 
 ```razor
-Add blazor template for templatable summary
+<IgbColumn HasSummary="true" SummaryTemplateScript="SummaryTemplate">
+</IgbColumn>
+
+igRegisterScript("SummaryTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div>
+    <span> ${ctx.$implicit[0].label} - ${ctx.$implicit[0].summaryResult} </span>
+</div>`
+}, false);
 ```
 
 When a default summary is defined, the height of the summary area is calculated by design depending on the column with the largest number of summaries and the display density of the grid. Use the `SummaryRowHeight` input property to override the default value. As an argument it expects a number value, and setting a falsy value will trigger the default sizing behavior of the grid footer.
 
+<!-- Angular -->
+
 > [!NOTE]
 > Column summary template could be defined through API by setting the column SummaryTemplate property to the required TemplateRef.
+
+<!-- end: Angular -->
 
 
 <code-view style="height:650px"
@@ -405,8 +417,9 @@ When a default summary is defined, the height of the summary area is calculated 
            github-src="{ComponentSample}/summary-template" >
 </code-view>
 
-## Formatting summaries
-By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
+<!-- TODO: Uncomment Formatting summaries section when a summary formatter is exposed on the column -->
+<!-- ## Formatting summaries
+By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property. -->
 
 <!-- Angular -->
 ```typescript
@@ -426,15 +439,15 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```
 <!-- end: Angular -->
 
-```razor
+<!-- ```razor
 Add custom summary formatter snippets for blazor
-```
+``` -->
 
-<code-view style="height:650px"
+<!-- <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary-formatter"
            github-src="{ComponentSample}/summary-formatter" >
-</code-view>
+</code-view> -->
 
 <!-- ComponentStart: Grid -->
 
@@ -508,8 +521,8 @@ The summary rows can be navigated with the following keyboard interactions:
 - <kbd>CTRL</kbd> + <kbd>LEFT</kbd> or <kbd>HOME</kbd> - navigates to the leftmost cell
 - <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell
 
-## Styling
 <!-- Angular -->
+## Styling
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
@@ -618,9 +631,6 @@ $custom-theme: grid-summary-theme(
 ```
 
 Don't forget to include the themes in the same way as it was demonstrated above.
-<!-- end: Angular -->
-
-Add razor styling section
 
 <code-view style="height:710px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -628,6 +638,7 @@ Add razor styling section
            github-src="{ComponentSample}/groupby-summary-styling" >
 </code-view>
 
+<!-- end: Angular -->
 
 ## API References
 
