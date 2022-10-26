@@ -63,7 +63,7 @@ _language: ja
                     );
   --ig-primary-100: hsla(
                       var(--ig-primary-h),
-                      calc(var(--ig-primary-s) / 1.25),
+                      calc(var(--ig-primary-s) * 0.8),
                       calc(var(--ig-primary-l) * 1.66),
                       var(--ig-primary-a)
                     );
@@ -105,7 +105,7 @@ _language: ja
 ```css
 /* The HSLA representation of darkorange (#ff6e00) */
 :root {
-  --ig-primary-600: 25.9deg, 100%, 50%, 1;
+  --ig-primary-600: 25.9deg, 100%, 50%;
 }
 ```
 
@@ -114,10 +114,10 @@ _language: ja
 ```css
 :root {
   /* The HSLA representation of orange (#ffa500) */
-  --ig-primary-500: 38.8deg, 100%, 50%, 1;
+  --ig-primary-500: 38.8deg, 100%, 50%;
 
   /* The HSLA representation of blue (#0080ff) */
-  --ig-primary-600: 210deg, 100%, 50%, 1;
+  --ig-primary-600: 210deg, 100%, 50%;
 }
 ```
 
@@ -131,16 +131,16 @@ _language: ja
 
 ```css
 :root {
-  --ig-primary-50: 305deg, 35%, 93%, 1;
-  --ig-primary-100: 304deg, 37%, 82%, 1;
-  --ig-primary-200: 303deg, 38%, 70%, 1;
-  --ig-primary-300: 303deg, 38%, 58%, 1;
-  --ig-primary-400: 303deg, 38%, 50%, 1;
-  --ig-primary-500: 302deg, 51%, 41%, 1;
-  --ig-primary-600: 298deg, 51%, 39%, 1;
-  --ig-primary-700: 293deg, 55%, 36%, 1;
-  --ig-primary-800: 289deg, 56%, 33%, 1;
-  --ig-primary-900: 279deg, 60%, 28%, 1;
+  --ig-primary-50: 305deg, 35%, 93%;
+  --ig-primary-100: 304deg, 37%, 82%;
+  --ig-primary-200: 303deg, 38%, 70%;
+  --ig-primary-300: 303deg, 38%, 58%;
+  --ig-primary-400: 303deg, 38%, 50%;
+  --ig-primary-500: 302deg, 51%, 41%;
+  --ig-primary-600: 298deg, 51%, 39%;
+  --ig-primary-700: 293deg, 55%, 36%;
+  --ig-primary-800: 289deg, 56%, 33%;
+  --ig-primary-900: 279deg, 60%, 28%;
 }
 ```
 
@@ -178,7 +178,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 ```css
 :root {
   /* surface is set to a shade of white */
-  --ig-surface-500: 210deg, 17%, 98%, 1;
+  --ig-surface-500: 210deg, 17%, 98%;
 
   /* gray variants */
   --ig-gray-h: 210deg;
@@ -203,13 +203,12 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 ```css
 :root {
   /* surface is set to a dark shade of gray */
-  --ig-surface-500: 210deg, 11%, 15%, 1;
+  --ig-surface-500: 210deg, 11%, 15%;
 
   /* gray variants */
   --ig-gray-h: 210deg;
   --ig-gray-s: 11%;
   --ig-gray-l: 71%;
-  --ig-gray-a: 1;
 
   --ig-gray-50: var(--ig-gray-h), var(--ig-gray-s), 13%;
   --ig-gray-100: var(--ig-gray-h), var(--ig-gray-s), 26%;
@@ -232,10 +231,10 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 ```css
 :root {
-  --ig-info-500: 190deg, 90%, 50%, 1;
-  --ig-success-500: 152deg, 69%, 31%, 1;
-  --ig-warn-500: 45deg, 100%, 51%, 1;
-  --ig-error-500: 354deg, 70%, 54%, 1;
+  --ig-info-500: 190deg, 90%, 50%;
+  --ig-success-500: 152deg, 69%, 31%;
+  --ig-warn-500: 45deg, 100%, 51%;
+  --ig-error-500: 354deg, 70%, 54%;
 }
 ```
 
