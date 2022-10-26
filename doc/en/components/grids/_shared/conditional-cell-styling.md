@@ -7,23 +7,23 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Conditional Styling
-If you need to provide any custom styling in the {ComponentName} component, you can do it on either row or cell level.
+
+If you need to provide any custom styling in the `{ComponentName}` component, you can do it on either row or cell level.
 
 ## {ComponentTitle} Conditional Row Styling
 
-The {ComponentName} component in Ignite UI for Angular provides two ways to **conditional styling of rows** based on custom rules.
+The `{ComponentName}` component in Ignite UI for {Platform} provides two ways to **conditional styling of rows** based on custom rules.
 
-- By setting `RowClasses` input on the {ComponentName} component;
-- By setting `RowStyles` input on the {ComponentName} component;
+- By setting `RowClasses` input on the `{ComponentName}` component;
+- By setting `RowStyles` input on the `{ComponentName}` component;
 
 Further in this topic we will cover both of them in more details.
 
-### Using rowClasses
-You can conditionally style the {ComponentName} rows by setting the `RowClasses` input and define custom rules.
+### Using Row Classes
 
+You can conditionally style the `{ComponentName}` rows by setting the `RowClasses` input and define custom rules.
 
 ```html
-<!-- sample.component.html -->
 <{ComponentSelector} #grid [data]="data" [height]="'600px'" [width]="'100%'" [rowClasses]="rowClasses">
 </{ComponentSelector}>
 ```
@@ -36,8 +36,6 @@ The `RowClasses` input accepts an object literal, containing key-value pairs, wh
 
 <!-- Angular -->
 ```typescript
-// sample.component.ts
-
 public rowClasses = {
     activeRow: this.activeRowCondition
 };
@@ -66,7 +64,6 @@ Add snippet
 Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
-
 ### Demo
 
 <code-view style="height:600px"
@@ -76,8 +73,9 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 
 </code-view>
 
-### Using rowStyles
-{ComponentName} now expose the `RowStyles` property which allows conditional styling of the data rows. Similar to `RowClasses` it accepts an object literal where the keys are style properties and the values are expressions for evaluation. Also, you can apply regular styling (without any conditions).
+### Using Row Styles
+
+The `{ComponentName}` control exposes the `RowStyles` property which allows conditional styling of the data rows. Similar to `RowClasses` it accepts an object literal where the keys are style properties and the values are expressions for evaluation. Also, you can apply regular styling (without any conditions).
 
 > The callback signature for both `RowStyles` and `RowClasses` is:
 
@@ -94,7 +92,6 @@ Let's define our styles:
 <!-- ComponentStart: Grid -->
 
 ```typescript
-// component.ts
 public rowStyles = {
     background: (row: RowType) => (+row.data['Change'] < 0  && +row.data['Change On Year(%)'] < 0) ? '#FF000088' : '#00000000',
     border: (row: RowType) => (+row.data['Change'] < 0  && +row.data['Change On Year(%)'] < 0) ? '2px solid' : '1px solid',
@@ -106,26 +103,20 @@ public rowStyles = {
 add styles
 ```
 
-<!-- Angular -->
 ```html
-<!-- sample.component.html -->
 <igx-grid #grid1 [data]="data | async" [height]="'500px'" width="100%"
         [autoGenerate]="false" [allowFiltering]="true" [rowStyles]="rowStyles">
 </igx-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add grid sample
 ```
-
 <!-- ComponentEnd: Grid -->
-
 
 <!-- ComponentStart: TreeGrid -->
 
 ```typescript
-// component.ts
 public background = (row: RowType) => row.data.data['Title'] === 'CEO' ? '#6c757d' :
     row.data.data['Title'].includes('President') ? '#adb5bd' : row.data.data['Title'].includes('Director') ?  '#ced4da' :
     row.data.data['Title'].includes('Manager') ? '#dee2e6' :
@@ -163,7 +154,6 @@ Add treegrid markup
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```typescript
-// component.ts
 public rowStyles = {
     background:(row: RowType) => row.data['HasGrammyAward'] ? '#eeddd3' : '#f0efeb',
     'border-left': (row: RowType) => row.data['HasGrammyAward'] ? '2px solid #dda15e' : null
@@ -178,7 +168,6 @@ public childRowStyles = {
 Add Hierarchical styles
 ```
 
-<!-- Angular -->
 ```html
 <igx-hierarchical-grid  #hierarchicalGrid [data]="localdata" [autoGenerate]="false"
         [height]="'580px'" [width]="'100%'" [rowStyles]="rowStyles">
@@ -186,7 +175,6 @@ Add Hierarchical styles
         </igx-row-island>
 </igx-hierarchical-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add Hierarchical markup
@@ -203,13 +191,14 @@ Add Hierarchical markup
 </code-view>
 
 ## {ComponentTitle} Conditional Cell Styling
+
 ## Overview
-The {ComponentName} component in {ProductName} provides two ways to **conditional styling of cells** based on custom rules.
+
+The `{ComponentName}` component in {ProductName} provides two ways to **conditional styling of cells** based on custom rules.
 
 - By setting the `Column` input `CellClasses` to an object literal containing key-value pairs. The key is the name of the CSS class, while the value is either a callback function that returns a boolean, or boolean value. The result is a convenient material styling of the cell.
 
 ```ts
-// component.ts file
 public beatsPerMinuteClasses = {
     downFont: this.downFontCondition,
     upFont: this.upFontCondition
@@ -240,14 +229,14 @@ cellclasses example
 <!-- end: Angular -->
 
 
-### Using cellClasses
-You can conditionally style the {ComponentName} cells by setting the `Column` `CellClasses` input and define custom rules.
+### Using Cell Classes
+
+You can conditionally style the `{ComponentName}` cells by setting the `Column` `CellClasses` input and define custom rules.
 
 <!-- ComponentStart: Grid -->
 
 <!-- Angular -->
 ```html
-<!-- sample.component.html -->
 <igx-column field="BeatsPerMinute" dataType="number" [cellClasses]="beatsPerMinuteClasses"></igx-column>
 ```
 <!-- end: Angular -->
@@ -262,7 +251,6 @@ example
 
 <!-- Angular -->
 ```html
-<!-- sample.component.html -->
 <igx-column field="UnitPrice" header="Unit Price" [dataType]="'number'" [cellClasses] = "priceClasses">
     <ng-template igxCell let-cell="cell" let-val>
         <span *ngIf="cell.row.data.UnitPrice == 0">-</span>
@@ -290,8 +278,6 @@ The `CellClasses` input accepts an object literal, containing key-value pairs, w
 <!-- ComponentStart: Grid -->
 
 ```typescript
-
-// sample.component.ts
 
 private upFontCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 95;
@@ -332,8 +318,6 @@ add example
 <!-- ComponentStart: TreeGrid -->
 
 ```typescript
-// sample.component.ts
-
 private upPriceCondition = (rowData: any, columnKey: any): boolean => {
     return rowData[columnKey] > 25;
 }
@@ -353,8 +337,6 @@ Add treegrid example
 ```
 
 ```scss
-// sample.component.scss
-
 ::ng-deep {
     .upPrice {
         color: red;
@@ -411,8 +393,9 @@ cellstyles example
 callback signature for blazor
 ```
 
-### Using cellStyles
-Columns now expose the `CellStyles` property which allows conditional styling of the column cells. Similar to `cellClasses` it accepts an object literal where the keys are style properties and the values are expressions for evaluation. Also, you can apply regular styling with ease (without any conditions).
+### Using Cell Styles
+
+Columns expose the `CellStyles` property which allows conditional styling of the column cells. Similar to `CellClasses` it accepts an object literal where the keys are style properties and the values are expressions for evaluation. Also, you can apply regular styling with ease (without any conditions).
 
 In the [sample above](#demo) we've created:
 - Two different styles that will be applied based on the column index.
@@ -422,7 +405,6 @@ In the [sample above](#demo) we've created:
 Let's define our styles:
 
 ```typescript
-// component.ts
 public oddColStyles = {
     background: 'linear-gradient(to right, #b993d6, #8ca6db)',
     color: (rowData, coljey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
@@ -441,10 +423,9 @@ define styles for blazor
 ```
 
 <!-- Angular -->
-On `ngOnInit` we will add the `cellStyles` configuration for each column of the predefined `columns` collection, which is used to create the {ComponentName} columns dynamically.
+On `ngOnInit` we will add the `CellStyles` configuration for each column of the predefined `Columns` collection, which is used to create the `{ComponentName}` columns dynamically.
 
 ```ts
-// component.ts
 public ngOnInit() {
     this.data = athletesData;
     this.columns = [
@@ -472,7 +453,6 @@ public updateCSS(css: string) {
 ```
 
 ```html
-// component.html
 <igx-grid
     #grid1 [data]="data"
     primaryKey="ID"
@@ -524,9 +504,10 @@ Add similar handling
            github-src="{ComponentSample}/cell-cellStyling" >
 </code-view>
 
-## Known issues and limitations
+## Known Issues and Limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
+
 A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a `spread operator` ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
 
 ```ts
@@ -554,16 +535,16 @@ editDone(evt) {
 ```razor
 Logic for that
 ```
+
 ## API References
 
-
-* `ColumnComponent`
+* `Column`
 * `{ComponentTitle}`
 
 ## Additional Resources
 
 
-* [Grid overview](overview.md)
+* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)

@@ -1,7 +1,7 @@
 ---
 title: Advanced Filtering in {Platform} {ComponentTitle}- {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
-_keywords: advanced filter, {Platform}, {ProductName}, Infragistics
+_keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -10,7 +10,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} Material table like the {ComponentTitle}.
+The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} Material table like the `{ComponentTitle}`.
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
@@ -79,15 +79,15 @@ ngAfterViewInit(): void {
 }
 ```
 
-In case you don't want to show the {ComponentTitle} toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
+In case you don't want to show the `{ComponentTitle}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
 >[!NOTE]
->You can enable both the **quickFilter**/**excelStyleFilter** and the advanced filtering user interfaces in the {ComponentTitle}. Both filtering user interfaces will work independently of one another. The final filtered result in the {ComponentTitle} is the intersection between the results of the two filters.
+>You can enable both the **quickFilter**/**excelStyleFilter** and the advanced filtering user interfaces in the `{ComponentTitle}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentTitle}` is the intersection between the results of the two filters.
 
 
-## External Advanced filtering
+## External Advanced Filtering
 
-As you see the demo above the Advanced filtering dialog is hosted in an overlay on top of the {ComponentTitle}. When the setup in the dialog is ready, the apply or close actions would hide that dialog. There is a way to make that dialog stay always visible - be used as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the {ComponentTitle}.
+As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentTitle}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentTitle}`.
 
 ### Demo
 
@@ -99,7 +99,7 @@ As you see the demo above the Advanced filtering dialog is hosted in an overlay 
 
 ### Usage
 
-It's super easy to configure the advanced filtering to work outside of the {ComponentTitle}. All you need to do is to create the dialog and set its [`Grid`]({environment:angularApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html#grid) property:
+It's super easy to configure the advanced filtering to work outside of the `{ComponentTitle}`. All you need to do is to create the dialog and set its **grid** property:
 
 ```html
 <igx-advanced-filtering-dialog [grid]="grid1">
@@ -112,6 +112,7 @@ It's super easy to configure the advanced filtering to work outside of the {Comp
 ```
 
 <!-- Angular -->
+
 ## Styling
 
 To get started with styling the Advanced Filtering dialog, we need to import the **index** file, where all the theme functions and component mixins live:
@@ -248,7 +249,7 @@ igx-advanced-filtering-dialog {
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
@@ -418,13 +419,12 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 
-* `IgxColumnComponent`
-* `{ComponentName}`
-* [{ComponentName} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* `Column`
+* `{ComponentTitle}`
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)

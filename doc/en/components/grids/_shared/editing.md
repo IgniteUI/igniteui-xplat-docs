@@ -8,31 +8,40 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Editing
 
-{ProductName} {ComponentTitle} component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and [Batch Editing](batch-editing.md). The {ComponentTitle} gives you a powerful public API which allows you to customize the way these operations are performed. Additionally, **Cell editing** exposes several default editors based on the column data type, that could be easily customized via [CellEditor directive](cell-editing.md#cell-editing-templates) or [Row directives](row-editing.md#customizing-row-editing-overlay).
+The {ProductName} `{ComponentTitle}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and [Batch Editing](batch-editing.md). The `{ComponentTitle}` gives you a powerful public API which allows you to customize the way these operations are performed.
+
+<!-- Angular -->
+
+Additionally, **Cell editing** exposes several default editors based on the column data type, that could be easily customized via [CellEditor directive](cell-editing.md#cell-editing-templates) or [Row directives](row-editing.md#customizing-row-editing-overlay).
+
+<!-- end: Angular -->
 
 ## Setup
-In order to specify which edit mode should be enabled, the {ComponentTitle} exposes the following boolean properties - `Editable` and `RowEditable`.
 
-Property **Editable** enables you to specify the following options:
-- **false** - the editing for the corresponding column will be disabled; /default value/
-- **true** - the editing for the corresponding column will be enabled;
+In order to specify which edit mode should be enabled, the `{ComponentTitle}` exposes the following boolean properties - `Editable` and `RowEditable`.
 
->Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the {ComponentTitle}.
+The `Editable` property enables you to specify the following options:
 
-Property **RowEditable** enables you to specify the following options:
-- **false** - the row editing in the corresponding grid will be disabled; /default value/
-- **true** - the row editing in the corresponding grid will be enabled;
+- **false** - the editing for the corresponding column will be disabled. This is the default value.
+- **true** - the editing for the corresponding column will be enabled.
 
-In the {ComponentTitle} if you set RowEditable property to true, and editable property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
+>Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the `{ComponentTitle}`.
 
-**Batch editing** in the grid can be enabled for both **cell editing** and **row editing** modes. In order to set up batch editing it is necessary to provide to the grid a  *TransactionService*.
-- *Cell and Batch Editing* - in this scenario every singe modification of each cell is preserved separately and undo/ redo operations are available on cell level;
-- *Row and Batch Editing* - in this scenario the modifications are preserved on row level so undo/ redo operations will not be working for each cell that is modified but for the bunch of cell from each row.
+The `RowEditable` property enables you to specify the following options:
 
+- **false** - the row editing in the corresponding grid will be disabled. This is the default value.
+- **true** - the row editing in the corresponding grid will be enabled.
+
+In the `{ComponentTitle}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
+
+[Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**.
+
+- **Cell and Batch Editing** - in this scenario every singe modification of each cell is preserved separately and undo/ redo operations are available on cell level;
+- **Row and Batch Editing** - in this scenario the modifications are preserved on row level so undo/ redo operations will not be working for each cell that is modified but for the bunch of cell from each row.
 
 ### Editing Templates
 
- If you want to use a data type specific *edit templates*, you should specify the column DataType property. So let's now see what are the default templates for each type:
+ If you want to use a data type specific *edit templates*, you should specify the column's `DataType` property. So let's now see what are the default templates for each type:
 
  - For `string` data type, default template is using `Input`.
  - For `number` data type, default template is using `Input` type="number", so if you try to update cell to a value which can not be parsed to a number your change is going to be discarded, and the value in the cell will be set to 0.
@@ -46,7 +55,8 @@ In the {ComponentTitle} if you set RowEditable property to true, and editable pr
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
-### Event arguments and sequence
+### Event Arguments and Sequence
+
 The grid exposes a wide array of events that provide greater control over the editing experience. These events are fired during the [**Row Editing**](row-editing.md) and [**Cell Editing**](cell-editing.md) lifecycle - when starting, committing or canceling the editing action.
 
  | Event           | Description                                                                                                                                               | Arguments                  | Cancellable |
@@ -60,10 +70,11 @@ The grid exposes a wide array of events that provide greater control over the ed
  | `RowEditDone`   | If `RowEditing` is enabled, fires **after** a row has been edited and new row's value has been **committed**.                                             | `GridEditDoneEventArgs` | **false**   |
  | `RowEditExit`   | If `RowEditing` is enabled, fires when a row **exits edit mode**                                                                                          | `GridEditDoneEventArgs` | **false**   |
 
-### Event cancelation
- - `RowEditEnter` - Neither Row nor Cell will enter edit mode.
+### Event Cancelation
+
+ - `RowEditEnter` - Neither `Row` nor `Cell` will enter edit mode.
  - `CellEditEnter` - Prevents entering cell edit. If `RowEditable` is enabled, row edit will be triggered, although cell edit will remain forbidden.
- - `CellEdit` - Allowed Cell/Row edit, hitting **Done** button or **Enter** won't commit the value or row transaction. Cell editing and Row editing won't be closed until **Cancel** button is clicked.
+ - `CellEdit` - Allowed `Cell` and/or `Row` edit, hitting **Done** button or **Enter** won't commit the value or row transaction. Cell editing and Row editing won't be closed until **Cancel** button is clicked.
  - `RowEdit` - Committing cell is possible, but not the whole row. The row will stay in edit mode and the row transaction will be considered open. Hitting **Done** does not commit or close the row. **Cancel** button closes the editing process and the transaction without committing the changes.
 
 The following sample demonstrates the editing execution sequence in action:
@@ -88,7 +99,6 @@ As seen from the table, all interactions, except resizing a column, will end the
 
 Example how to commit new values, if user tries to sort the column while a cell/row is in edit mode:
 
-<!-- Angular -->
 ```html
 <igx-grid #grid [data]="localData" [primaryKey]="'ProductID'" (sorting)="onSorting($event)">
 </igx-grid>
@@ -100,7 +110,6 @@ public onSorting(event: ISortingEventArgs) {
     // (event.owner as IgxGridComponent).endEdit(true);
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 <IgbGrid
@@ -109,6 +118,7 @@ public onSorting(event: ISortingEventArgs) {
     RowEditable="true">
 </IgbGrid>
 
+//In JavaScript
 function SortingHandler() {
     grid.endEdit(true);
 }
@@ -140,7 +150,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 ## Additional Resources
 
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
