@@ -243,76 +243,6 @@
         "name": "複数列ヘッダー",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Collapsible Column Groups",
-        "href": "grids/lob-grid/collapsible-column-groups.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Clipboard Interactions",
-        "href": "grids/lob-grid/clipboard-interactions.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Column Types",
-        "href": "grids/lob-grid/column-types.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/lob-grid/selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Selection",
-        "href": "grids/lob-grid/column-selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Search",
-        "href": "grids/lob-grid/search.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Editing",
-        "href": "grids/lob-grid/cell-editing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/lob-grid/display-density.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/lob-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/lob-grid/state-persistence.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Filtering",
-        "href": "grids/lob-grid/filtering.md", 
-        "status": "NEW"
       }
     ]
   },
@@ -326,64 +256,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Collapsible Column Groups",
-        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Column Types",
-        "href": "grids/hierarchical-grid/column-types.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Selection",
-        "href": "grids/hierarchical-grid/selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Selection",
-        "href": "grids/hierarchical-grid/column-selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Editing",
-        "href": "grids/hierarchical-grid/cell-editing.md", 
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/hierarchical-grid/display-density.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/hierarchical-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/hierarchical-grid/state-persistence.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Filtering",
-        "href": "grids/hierarchical-grid/filtering.md", 
         "status": "NEW"
       }
     ]
@@ -399,18 +271,6 @@
         "name": "ピボット グリッドの共有トピック",
         "href": "grids/pivot-grid/template.md",
         "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/pivot-grid/selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/pivot-grid/state-persistence.md",
-        "status": "NEW"
       }
     ]
   },
@@ -424,75 +284,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Collapsible Column Groups",
-        "href": "grids/tree-grid/collapsible-column-groups.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Clipboard Interactions",
-        "href": "grids/tree-grid/clipboard-interactions.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Column Types",
-        "href": "grids/tree-grid/column-types.md",
-        "status": "NEW"
-      },
-      {
-        "name": "Selection",
-        "href": "grids/tree-grid/selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Selection",
-        "href": "grids/tree-grid/column-selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Search",
-        "href": "grids/tree-grid/search.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Editing",
-        "href": "grids/tree-grid/cell-editing.md", 
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/tree-grid/display-density.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/tree-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/tree-grid/state-persistence.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"], 
-        "name": "Filtering",
-        "href": "grids/tree-grid/filtering.md", 
         "status": "NEW"
       }
     ]
