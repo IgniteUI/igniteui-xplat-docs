@@ -489,7 +489,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-2" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -593,7 +593,7 @@ And the result from this configuration is:
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-1" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -672,7 +672,7 @@ And the result is:
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-composite-data-binding" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-composite-data" >
 </code-view>
 
 <div class="divider--half"></div>

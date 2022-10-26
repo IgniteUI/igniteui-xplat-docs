@@ -22,7 +22,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-toolbar-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
            alt="{Platform} {ComponentTitle} Toolbar Example">
 </code-view>
 
@@ -145,7 +145,7 @@ Listed below are the main features of the toolbar with example code for each of 
 
 <code-view style="height:630px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-toolbar-sample-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2" >
 </code-view>
 
 
@@ -357,7 +357,7 @@ The following sample demonstrates how to customize the exported files:
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-toolbar-sample-3" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3" >
 </code-view>
 
 
@@ -419,7 +419,7 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-toolbar-sample-4" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4" >
 </code-view>
 
 
@@ -533,7 +533,7 @@ The last step is to **include** the newly created themes.
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-toolbar-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style" >
 </code-view>
 
 

@@ -434,7 +434,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 <code-view style="height:506px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-pinning-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style" >
 </code-view>
 
 >[!NOTE]

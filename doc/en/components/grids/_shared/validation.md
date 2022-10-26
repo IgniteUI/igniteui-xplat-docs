@@ -29,7 +29,7 @@ The following sample demonstrates how to use the prebuilt `required`, `email` an
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-validator-service"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
@@ -301,7 +301,7 @@ The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -408,7 +408,7 @@ The below sample demonstrates cross-field validation in a Hierarchical Grid for 
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validation"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -515,7 +515,7 @@ The below sample demonstrates the cross-field validation in action.
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-cross-field-validator-service"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 

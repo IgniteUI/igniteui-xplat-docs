@@ -175,7 +175,7 @@ public childRowStyles = {
 ```
 
 ```razor
-Add hgrid styles
+Add Hierarchical styles
 ```
 
 <!-- Angular -->
@@ -189,7 +189,7 @@ Add hgrid styles
 <!-- end: Angular -->
 
 ```razor
-Add hgrid markup
+Add Hierarchical markup
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -383,8 +383,8 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style"
-           github-src="{ComponentSample}/conditional-cell-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-1"
+           github-src="{ComponentSample}/conditional-cell-style-1" >
 </code-view>
 
 - By using the `Column` input `CellStyles` which accepts an object literal where the keys are style properties and the values are expressions for evaluation.

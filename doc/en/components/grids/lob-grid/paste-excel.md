@@ -25,7 +25,7 @@ The new data after the paste is decorated in Italic.
 
 <code-view style="height: 570px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-paste"
+           iframe-src="{environment:dvDemosBaseUrl}/grid/data-paste-options"
            alt="{Platform} Paste from Excel Example">
 </code-view>
 

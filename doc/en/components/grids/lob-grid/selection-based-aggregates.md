@@ -43,15 +43,14 @@ Change the selection to see summaries of the currently selected range.
 
 <code-view style="height: 560px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-selection-custom-summaries" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/custom-summaries-selection" >
 </code-view>
 
 
 ## API References
 
-* GridComponent API]({environment:{Platform}ApiUrl}/classes/gridcomponent.html)
-* GridCell API
-* GridComponent Styles
+* `GridComponent`
+* `GridCell`
 
 ## Additional Resources
 <div class="divider--half"></div>

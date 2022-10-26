@@ -13,7 +13,7 @@ The {Platform} {ComponentTitle} supports multi-column headers which allow you to
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-overview"
            github-src="{ComponentSample}/multi-column-headers"
            alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
 </code-view>
