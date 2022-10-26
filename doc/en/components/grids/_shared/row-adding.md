@@ -19,10 +19,10 @@ The {ComponentTitle} provides a convenient way to perform data manipulations thr
 # {Platform} {ComponentTitle} Row Adding Example
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-add-row"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-add-row"
            github-src="{ComponentSample}/add-row"
-           alt="{Platform} {ComponentName} Row Adding Example">
+           alt="{Platform} {ComponentTitle} Row Adding Example">
 </code-view>
 
 ## Row Adding Usage
@@ -51,7 +51,7 @@ Then define a {ComponentTitle} with bound data source, `RowEditable` set to true
     <igx-column field="UnitsInStock" header="UnitsInStock" dataType="number"></igx-column>
     <igx-column field="OrderDate" dataType="date"></igx-column>
     <igx-column field="Discontinued" header="Discontinued" dataType="boolean"></igx-column>
-    
+
     <igx-action-strip #actionstrip>
         <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
     </igx-action-strip>
@@ -169,7 +169,7 @@ The `beginAddRowByIndex` method works similarly but the row to use as context is
 this.treeGrid.beginAddRowByIndex(10, true);   // Spawns the add row UI to add a child for the row at index 10
 this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the first record
 ```
-<!-- ComponentEnd: TreeGrid --> 
+<!-- ComponentEnd: TreeGrid -->
 
 ## Positioning
 
@@ -189,10 +189,10 @@ After a new row is added through the row adding UI, its position and/or visibili
 
 - <kbd>ALT</kbd> + <kbd>+</kbd> - Enters edit mode for adding a row
 
-<!-- ComponentStart: TreeGrid --> 
+<!-- ComponentStart: TreeGrid -->
 - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> - Enters edit mode for adding a child
 
-<!-- ComponentEnd: TreeGrid --> 
+<!-- ComponentEnd: TreeGrid -->
 - <kbd>ESC</kbd> exits row adding mode without submitting any changes
 
 - <kbd>TAB</kbd> move focus from one editable cell in the row to the next and from the right-most editable cell to the CANCEL and DONE buttons. Navigation from DONE button goes to the left-most editable cell within the currently edited row.
