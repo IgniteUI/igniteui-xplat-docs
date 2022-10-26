@@ -9,23 +9,28 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 # {Platform} {ComponentTitle} Batch Editing and Transactions
 
 <!-- ComponentStart: Grid -->
-The Batch Editing feature of the {ComponentName} is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+
+The Batch Editing feature of the `{ComponentTitle}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-The Batch Editing feature of the {ComponentName} is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `igxHierarchicalTransactionService` and details how it is implemented.
+
+The Batch Editing feature of the `{ComponentTitle}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-In order to use the `HierarchicalTransactionService` with `{ComponentTitle}`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `IgxHierarchicalTransactionServiceFactory`.
+In order to use the `HierarchicalTransactionService` with `{ComponentTitle}`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `HierarchicalTransactionServiceFactory`.
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Below is a detailed example of how is Batch Editing enabled for the {ComponentTitle} component.
+Below is a detailed example of how is Batch Editing enabled for the `{ComponentTitle}` component.
 
 ## {Platform} {ComponentTitle} Batch Editing and Transactions Example
 
-The following sample demonstrates a scenario, where the {ComponentTitle} has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
+The following sample demonstrates a scenario, where the `{ComponentTitle}` has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
 
 <code-view style="height:680px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -51,11 +56,18 @@ You need to enable `BatchEditing` from your {ComponentTitle}:
 </{ComponentSelector}>
 ```
 
-This will ensure a proper instance of `Transaction` service is provided for the {ComponentSelector}. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory).
+This will ensure a proper instance of `Transaction` service is provided for the `{ComponentTitle}`. The proper `TransactionService` is provided through a `TransactionFactory`.
+
+<!-- Angular -->
+
+You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory).
+
+<!-- end: Angular -->
 
 After batch editing is enabled, define a `{ComponentTitle}` with bound data source and `RowEditable` set to true and bind:
 
 <!-- ComponentStart: Grid -->
+
 ```html
 <igx-grid #grid [batchEditing]="true" [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px"
     [rowEditable]="true">
@@ -66,6 +78,7 @@ After batch editing is enabled, define a `{ComponentTitle}` with bound data sour
 <button igxButton [disabled]="grid.transactions.getAggregatedChanges(false).length < 1"
     (click)="openCommitDialog(dialogGrid)">Commit</button>
 ```
+
 ```razor
 <IgbGrid @ref="grid" BatchEditing="true" Data=data PrimaryKey=primaryKey Width="100%" Height="500px"
     RowEditable="true">
@@ -96,7 +109,9 @@ After batch editing is enabled, define a `{ComponentTitle}` with bound data sour
 }
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
+
 ```html
 <igx-tree-grid #treeGrid [batchEditing]="true" [data]="data" primaryKey="employeeID" foreignKey="PID"
     width ="100%" height ="500px" rowEditable=true>
@@ -107,6 +122,7 @@ After batch editing is enabled, define a `{ComponentTitle}` with bound data sour
 <button igxButton [disabled]="treeGrid.transactions.getAggregatedChanges(false).length < 1"
     (click)="openCommitDialog()">Commit</button>
 ```
+
 ```razor
 <IgbTreeGrid @ref="grid" BatchEditing="true" Data=data PrimaryKey=primaryKey ForeignKey="PID" Width="100%" Height="500px"
     RowEditable="true">
@@ -136,8 +152,11 @@ After batch editing is enabled, define a `{ComponentTitle}` with bound data sour
     }
 }
 ```
+
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
+
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [batchEditing]="true" [data]="data" [primaryKey]="'Artist'"
     [height]="'580px'" [width]="'100%'" [rowEditable]="true" >
@@ -156,9 +175,11 @@ After batch editing is enabled, define a `{ComponentTitle}` with bound data sour
     </div>
 </div>
 ```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
+
 The following code demonstrates the usage of the `TransactionService` API - undo, redo, commit.
 
 ```typescript
@@ -184,8 +205,11 @@ export class GridBatchEditingSampleComponent {
 }
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
+
 The following code demonstrates the usage of the `HierarchicalTransactionService` API - undo, redo, commit.
+
 ```typescript
 export class TreeGridBatchEditingSampleComponent {
     @ViewChild('treeGrid', { read: IgxTreeGridComponent }) public treeGrid: IgxTreeGridComponent;
@@ -209,6 +233,7 @@ export class TreeGridBatchEditingSampleComponent {
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 The following code demonstrates the usage of the `TransactionService` API - undo, redo, commit.
 
@@ -263,23 +288,26 @@ Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are 
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
+
 ## API References
 
 <!-- ComponentStart: Grid -->
 * `Transactions`
 * `TransactionService`
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 * `HierarchicalTransactionService`
 * `RowEditable`
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 * `HierarchicalTransactionServiceFactory`
 <!-- ComponentEnd: HierarchicalGrid -->
 
 ## Additional Resources
 
-* [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
+* [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
 * [{ComponentTitle} Overview](overview.md)
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)

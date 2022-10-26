@@ -7,7 +7,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Column Pinning
-A column or multiple columns can be pinned to the left or right side of the {Platform} UI {ComponentTitle}. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the {ComponentTitle}. The Material UI Grid has a built-in column pinning UI, which can be used through the {ComponentTitle}'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning API.
+
+A column or multiple columns can be pinned to the left or right side of the {Platform} UI `{ComponentTitle}`. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentTitle}`. The {ProductName} `{ComponentTitle}` has a built-in column pinning UI, which can be used through the `{ComponentTitle}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
 
@@ -19,10 +20,9 @@ A column or multiple columns can be pinned to the left or right side of the {Pla
 
 ## Column Pinning API
 
-Column pinning is controlled through the `Pinned` input of the `ColumnComponent`. Pinned columns are rendered on the left side of the {ComponentTitle} by default and stay fixed through horizontal scrolling of the unpinned columns in the {ComponentTitle} body.
+Column pinning is controlled through the `Pinned` property of the `Column`. Pinned columns are rendered on the left side of the `{ComponentTitle}` by default and stay fixed through horizontal scrolling of the unpinned columns in the `{ComponentTitle}` body.
 
 <!-- ComponentStart: Grid -->
-
 ```html
 <igx-grid #grid1 [data]="data | async" [width]="700px" [autoGenerate]="false" (columnInit)="initColumns($event)"
     (selected)="selectCell($event)">
@@ -41,10 +41,9 @@ Column pinning is controlled through the `Pinned` input of the `ColumnComponent`
     <IgbColumn Field="TrackProgress"></IgbColumn>
 </IgbGrid>
 ```
-
 <!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
 
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid #treeGrid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="false">
     <igx-column [field]="Name" [pinned]="true"></igx-column>
@@ -52,10 +51,9 @@ Column pinning is controlled through the `Pinned` input of the `ColumnComponent`
     <igx-column [field]="ID"></igx-column>
 </igx-tree-grid>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false"
         [height]="'600px'" [width]="'800px'" #hierarchicalGrid>
@@ -63,13 +61,11 @@ Column pinning is controlled through the `Pinned` input of the `ColumnComponent`
     <igx-column [field]="Debut" [width]="200px"></igx-column>
 </igx-hierarchical-grid>
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You may also use the {ComponentTitle}'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
+You may also use the `{ComponentTitle}`'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
 
 <!-- ComponentStart: Grid -->
-
 ```typescript
 this.grid.pinColumn('AthleteNumber');
 this.grid.unpinColumn('Name');
@@ -81,33 +77,28 @@ this.grid.unpinColumn('Name');
     grid.UnpinColumn("Name", 0);
 }
 ```
-
 <!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
 
+<!-- ComponentStart: TreeGrid -->
 ```typescript
 this.treeGrid.pinColumn('Title');
 this.treeGrid.unpinColumn('Name');
 ```
-
 <!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 this.hierarchicalGrid.pinColumn('Artist');
 this.hierarchicalGrid.unpinColumn('Debut');
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the column is already in the desired state.
 
 A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPin` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
-<!-- ComponentStart: Grid -->
-
 ```html
-<igx-grid #grid1 [data]="data | async" [autoGenerate]="true" (columnPin)="columnPinning($event)"></igx-grid>
+<{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
 ```
 
 ```typescript
@@ -119,7 +110,7 @@ public columnPinning(event) {
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true ColumnPin="onColumnPin"></IgbGrid>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPin="onColumnPin"/>
 
 @code {
     private void onColumnPin(IgbPinColumnCancellableEventArgs args)
@@ -132,71 +123,18 @@ public columnPinning(event) {
 }
 ```
 
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igx-tree-grid #treeGrid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true" (columnPin)="columnPinning($event)"></igx-tree-grid>
-```
-
-```typescript
-public columnPinning(event) {
-    if (event.column.field === 'Name') {
-        event.insertAtIndex = 0;
-    }
-}
-```
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false"
-        [height]="'600px'" [width]="'800px'"
-        (columnPin)="columnPinning($event)" #hierarchicalGrid>
-</igx-hierarchical-grid>
-```
-
-```typescript
-public columnPinning(event) {
-    if (event.column.field === 'Artist') {
-        event.insertAtIndex = 0;
-    }
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 ## Pinning Position
 
 You can change the column pinning position via the `Pinning` configuration option. It allows you to set the columns position to either Start or End.
 When set to End the columns are rendered at the end of the grid, after the unpinned columns. Unpinned columns can be scrolled horizontally, while the pinned columns remain fixed on the right.
 
-<!-- ComponentStart: Grid -->
-
 ```html
-<igx-grid [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></igx-grid>
+<{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></igx-grid>
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
 ```
-
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igx-tree-grid #grid1 [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></igx-tree-grid>
-```
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid #grid1 [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></igx-hierarchical-grid>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
@@ -224,10 +162,10 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 You can define your custom UI and change the pin state of the columns via the related API.
 
 Let's say that instead of a toolbar you would like to define pin icons in the column headers that the end user can click to change the particular column's pin state.
+
 This can be done by creating a header template for the column with a custom icon.
 
 <!-- ComponentStart: Grid -->
-
 ```html
 <igx-grid #grid1 [data]="data" [width]="'100%'" [height]="'500px'">
     <igx-column #col *ngFor="let c of columns" [field]="c.field" [header]="c.header" [width]="c.width" [pinned]='c.pinned'
@@ -241,10 +179,9 @@ This can be done by creating a header template for the column with a custom icon
     </igx-column>
 </igx-grid>
 ```
-
 <!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
 
+<!-- ComponentStart: TreeGrid -->
 ```html
 <ng-template igxHeader let-column #pinTemplate>
     <div class="title-inner">
@@ -270,10 +207,9 @@ This can be done by creating a header template for the column with a custom icon
     </igx-tree-grid>
 </div>
 ```
-
 <!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <ng-template igxHeader let-column #pinTemplate>
     <div class="title-inner">
@@ -300,7 +236,6 @@ This can be done by creating a header template for the column with a custom icon
     </igx-row-island>
 </igx-hierarchical-grid>
 ```
-
 <!-- ComponentEnd: HierarchicalGrid -->
 
 On click of the custom icon the pin state of the related column can be changed using the column's API methods.
@@ -322,7 +257,7 @@ public toggleColumn(col: IgxColumnComponent) {
 
 ## Pinning Limitations
 
-*   Setting column widths in percentage (%) explicitly makes the {ComponentTitle} body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the {ComponentTitle}.
+*   Setting column widths in percentage (%) explicitly makes the `{ComponentTitle}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentTitle}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->
@@ -448,7 +383,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * `ColumnComponent`
 
 ## Additional Resources
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
