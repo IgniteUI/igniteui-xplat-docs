@@ -16,8 +16,8 @@ The sample below demonstrates `{ComponentTitle}`'s **Quick filtering** user expe
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering"
-           github-src="{ComponentSample}/filtering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-options"
+           github-src="{ComponentSample}/filtering-options"
            alt="{Platform} {ComponentTitle} Filtering Example">
 </code-view>
 
