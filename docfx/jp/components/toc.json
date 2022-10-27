@@ -64,62 +64,93 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "操作方法",
-    "status": "NEW",
-    "items": [
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Blazor Excel ライブラリ",
-        "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "サーバーの負荷を軽減するために Excel ファイルを読み書きする方法",
-        "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Blazor チャートでマーカー表示をカスタマイズする方法",
-        "href": "customize-marker-display-in-blazor-charts.md",
-        "status": ""
-      }
-    ]
+      "status": "NEW",
+      "items": [
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "Blazor Excel ライブラリ",
+          "href": "blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents"],
+          "name": "サーバーの負荷を軽減するために Excel ファイルを読み書きする方法",
+          "href": "blazor-webassembly-how-to-read-and-write-excel-files-to-reduce-server-load.md",
+          "status": ""
+        },
+        {
+          "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+          "name": "Blazor チャートでマーカー表示をカスタマイズする方法",
+          "href": "customize-marker-display-in-blazor-charts.md",
+          "status": ""
+        }
+      ]
   },
   {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-blazor.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-react.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "変更ログ",
+    "href": "general-changelog-dv-wc.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Blazor", "React", "WebComponents"],
     "name": "変更ログ",
     "href": "general-changelog-dv.md",
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "スタイル設定およびとテーマ",
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "概要",
     "href": "themes/overview.md",
-    "status": ""
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
+    "name": "構成",
+    "href": "themes/configuration.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
     "name": "パレット",
     "href": "themes/palettes.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "エレベーション",
     "href": "themes/elevations.md",
-    "status": "NEW"
+    "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "タイポグラフィ",
     "href": "themes/typography.md",
+    "status": "UPDATED"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "コンポーネントのスタイル",
+    "href": "themes/component-themes.md",
     "status": "NEW"
   },
   {
@@ -135,17 +166,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "アバター {ReleaseStatus_WebsInputs}",
+    "name": "アバター",
     "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "カード {ReleaseStatus_WebsInputs}",
+    "name": "カード",
     "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
+    "name": "ドック マネージャー",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -188,12 +219,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
+    "name": "ナビゲーション バー",
     "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
+    "name": "ナビゲーション ドロワー",
     "href": "menus/navigation-drawer.md"
   },
   {
@@ -212,6 +243,12 @@
         "name": "複数列ヘッダー",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
+        "status": "NEW"
       }
     ]
   },
@@ -225,6 +262,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -253,6 +296,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -423,7 +472,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "リスト {ReleaseStatus_WebsList}",
+    "name": "リスト",
     "href": "grids/list.md"
   },
   {
@@ -431,6 +480,12 @@
     "name": "ツリー",
     "href": "grids/tree.md",
     "status": "NEW"
+  },
+  {
+    "exclude": ["React", "WebComponents", "Angular"],
+    "name": "テーマ設定",
+    "status": "NEW",
+    "href": "grids/theming.md"
   },
   {
     "exclude": ["Blazor"],
@@ -938,17 +993,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "バッジ {ReleaseStatus_WebsInputs}",
+    "name": "バッジ",
     "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ボタン {ReleaseStatus_WebsInputs}",
+    "name": "ボタン",
     "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "チェックボックス {ReleaseStatus_WebsInputs}",
+    "name": "チェックボックス",
     "href": "inputs/checkbox.md"
   },
   {
@@ -958,27 +1013,27 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "チップ {ReleaseStatus_WebsInputs}",
+    "name": "チップ",
     "href": "inputs/chip.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ドロップダウン {ReleaseStatus_WebsInputs}",
+    "name": "ドロップダウン",
     "href": "inputs/dropdown.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "フォーム {ReleaseStatus_WebsInputs}",
+    "name": "フォーム",
     "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "アイコン {ReleaseStatus_WebsInputs}",
+    "name": "アイコン",
     "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
+    "name": "アイコン ボタン",
     "href": "inputs/icon-button.md"
   },
   {
@@ -994,37 +1049,37 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "入力 {ReleaseStatus_WebsInputs}",
+    "name": "入力",
     "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "マスク入力 {ReleaseStatus_WebsInputs}",
+    "name": "マスク入力",
     "href": "inputs/mask-input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "日時入力 {ReleaseStatus_WebsInputs}",
+    "name": "日時入力",
     "href": "inputs/date-time-input.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
+    "name": "ラジオ & ラジオ グループ",
     "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "選択 {ReleaseStatus_WebsInputs}",
+    "name": "選択",
     "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "評価 {ReleaseStatus_WebsInputs}",
+    "name": "評価",
     "href": "inputs/rating.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "スイッチ {ReleaseStatus_WebsInputs}",
+    "name": "スイッチ",
     "href": "inputs/switch.md"
   },
   {
@@ -1033,12 +1088,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "リップル {ReleaseStatus_WebsInputs}",
+    "name": "リップル",
     "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "スライダー & 範囲スライダー {ReleaseStatus_WebsInputs}",
+    "name": "スライダー & 範囲スライダー",
     "href": "inputs/slider.md"
   },
   {
@@ -1054,17 +1109,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "スナックバー {ReleaseStatus_WebsInputs}",
+    "name": "スナックバー",
     "href": "notifications/snackbar.md"
   },
   {
      "exclude": ["Angular"],
-     "name": "トースト {ReleaseStatus_WebsInputs}",
+     "name": "トースト",
      "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "ダイアログ {ReleaseStatus_WebsInputs}",
+    "name": "ダイアログ",
     "href": "notifications/dialog.md",
     "status": "NEW"
  },

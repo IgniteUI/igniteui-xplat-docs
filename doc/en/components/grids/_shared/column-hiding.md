@@ -7,22 +7,25 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Column Hiding
+
 <!-- Angular -->
-{ProductName} {ComponentTitle} provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
+{ProductName} `{ComponentTitle}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
 <!-- end: Angular -->
-The Material UI Grid has a built-in column hiding UI, which can be used through the {ComponentTitle}'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
+
+The Ignite UI for {Platform} `{ComponentTitle}` has a built-in column hiding UI, which can be used through the `{ComponentTitle}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding"
-           github-src="{ComponentSample}/column-hiding"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
+           github-src="{ComponentSample}/column-hiding-toolbar"
            alt="{Platform} {ComponentTitle} Column Hiding Example">
 </code-view>
 
 ## {ComponentTitle} Setup
-Let's start by creating our {ComponentTitle} and binding it to our data. We will also enable both filtering and sorting for the columns.
+
+Let's start by creating our `{ComponentTitle}` and binding it to our data. We will also enable both filtering and sorting for the columns.
 
 ```html
 <{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
@@ -39,8 +42,6 @@ Let's start by creating our {ComponentTitle} and binding it to our data. We will
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
     <IgbColumn Field="ID" Sortable=true Hidden=true></IgbColumn>
@@ -56,16 +57,13 @@ Let's start by creating our {ComponentTitle} and binding it to our data. We will
 </{ComponentSelector}>
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
 ## Toolbar's Column Hiding UI
 
-The built-in Column Hiding UI is placed inside an `DropDown` in the {ComponentTitle}'s toolbar. We can show/hide the Column Hiding UI by using this exact dropdown.
-For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the {ComponentTitle}. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
+The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentTitle}`'s toolbar. We can show/hide the Column Hiding UI by using this exact dropdown.
+
+For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentTitle}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
         <igx-grid-toolbar>
@@ -77,8 +75,6 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
     </{ComponentSelector}>
 </div>
 ```
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 <div class="grid__wrapper">
@@ -93,14 +89,11 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
+The `{ComponentTitle}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
-The {ComponentTitle} provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
         <igx-grid-toolbar>
@@ -112,8 +105,6 @@ By using the `Title` property, we will set the title that is displayed inside th
     </{ComponentSelector}>
 </div>
 ```
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 <div class="grid__wrapper">
@@ -130,19 +121,13 @@ By using the `Title` property, we will set the title that is displayed inside th
 
 <!-- Angular -->
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
 By using the `ColumnsAreaMaxHeight` property of the `GridToolbarHiding`, we can set the maximum height of the area that contains the column actions. This way if we have a lot of actions and not all of them can fit in the container, a scrollbar will appear, which will allow us to scroll to any action we want.
 
 ```typescript
-// columnHiding.component.ts
-
 public ngAfterViewInit() {
     this.hidingActionRef.columnsAreaMaxHeight = "200px";
 }
 ```
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
 @code {
@@ -153,8 +138,6 @@ public ngAfterViewInit() {
     }
 }
 ```
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 In order to use the expanded set of functionalities for the column hiding UI, we can use the `ColumnActions`'s `ColumnsAreaMaxHeight` property. This way we can use it according to our application's requirements.
 
@@ -177,18 +160,15 @@ import {
     IgxColumnActionsModule
 } from 'igniteui-{Platform}';
 
-@NgModule({
-    ...
-    imports: [..., IgxColumnActionsModule],
+@NgModule({    
+    imports: [IgxColumnActionsModule],
 })
 export class AppModule {}
 ```
 
-Now let's create our `ColumnActionsComponent`. In our application, we will place it next to the grid (which is not the case with the toolbar's column hiding UI, where the component is inside a dropdown by design). We will also set the `Columns` property of the component to the columns of our {ComponentTitle} and include some custom styles to make our application look even better!
+Now let's create our `ColumnActionsComponent`. In our application, we will place it next to the grid (which is not the case with the toolbar's column hiding UI, where the component is inside a dropdown by design). We will also set the `Columns` property of the component to the columns of our `{ComponentTitle}` and include some custom styles to make our application look even better!
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="columnHidingContainer">
     <igx-column-actions igxColumnHiding #columnHidingUI [columns]="grid.columns">
     </igx-column-actions>
@@ -200,8 +180,6 @@ Now let's create our `ColumnActionsComponent`. In our application, we will place
 ```
 
 ```css
-/* columnHiding.component.css */
-
 .grid__wrapper {
     margin: 15px;
     display: flex;
@@ -242,8 +220,6 @@ Now let's create our `ColumnActionsComponent`. In our application, we will place
 A couple more things we can do in order to enrich the user experience of our column hiding component is to set the `Title` and the `FilterColumnsPrompt` properties. The `Title` is displayed on the top and the `FilterColumnsPrompt` is the prompt text that is displayed in the filter input of our column hiding UI.
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="columnHidingContainer">
     <igx-column-actions igxColumnHiding #columnHidingUI [columns]="grid.columns"
                        title="Column Hiding" filterColumnsPrompt="Type here to search">
@@ -251,7 +227,7 @@ A couple more things we can do in order to enrich the user experience of our col
 </div>
 ```
 
-### Add column display order options
+### Add Column Display Order Options
 
 We can also allow the user to choose the display order of the columns in the column hiding UI. For this purpose we will use the `ColumnDisplayOrder` property, which is an enumeration type property and has the following options:
 
@@ -261,17 +237,12 @@ We can also allow the user to choose the display order of the columns in the col
 Let's create a couple of nicely designed radio buttons for our options! We just have to go ahead and get the [**IgxRadio**](../radio-button.md) module.
 
 ```typescript
-// app.module.ts
-
-...
-import {
-    ...
+import {    
     IgxRadioModule
 } from 'igniteui-{Platform}';
 
-@NgModule({
-    ...
-    imports: [..., IgxRadioModule],
+@NgModule({    
+    imports: [IgxRadioModule]
 })
 export class AppModule {}
 ```
@@ -279,8 +250,6 @@ export class AppModule {}
 Now all we have to do is bind the `Checked` property of both radio buttons respectively with different conditions and handle their click events.
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="columnHidingContainer">
     <div class="columnsOrderOptionsContainer">
         <igx-radio [checked]="columnHidingUI.columnDisplayOrder === 'Alphabetical'"
@@ -299,13 +268,10 @@ Now all we have to do is bind the `Checked` property of both radio buttons respe
 We can easily prevent the user from being able to hide columns through the column hiding UI by simply setting their `DisableHiding` property to true.
 
 ```html
-<!--columnHiding.component.html-->
-
 <div class="gridContainer">
     <{ComponentSelector}>
         <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        ...
+        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>        
     </{ComponentSelector}>
 </div>
 ```
@@ -318,8 +284,6 @@ If all went well, this is how our column hiding UI component should look like:
            github-src="{ComponentSample}/custom-column-hiding"
            alt="{Platform} {ComponentTitle} Custom Column Hiding Example" >
 </code-view>
-
-
 
 ## Styling
 
@@ -375,7 +339,7 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the `igx-palette` and `igx-color` functions.
 
@@ -474,10 +438,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 <!-- Angular -->
-In this article we learned how to use the built-in column hiding UI in the {ComponentTitle}'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentTitle}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
 <!-- end: Angular -->
+
 <!-- Blazor -->
-In this article we learned how to use the built-in column hiding UI in the {ComponentTitle}'s toolbar.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentTitle}`'s toolbar.
 <!-- end: Blazor -->
 
 The column hiding UI has a few more APIs to explore, which are listed below.
@@ -514,7 +479,7 @@ Styles:
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)

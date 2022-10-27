@@ -8,19 +8,20 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {ComponentTitle} Column Reordering & Moving
 
-The {ComponentTitle} component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with Multi-column Headers. Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
+The `{ComponentTitle}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
 
 > [!NOTE]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
 
 > [!NOTE]
 > If a column header is templated and the Column Moving is enabled or the corresponding column is groupable, then the templated elements need to have the **draggable** attribute set to **false**!
+
 <!-- Angular -->
 This allows to attach handlers for any event emitted by the element, otherwise the event is consumed by the `igxDrag` directive.
 <!-- end: Angular -->
 
 > [!NOTE]
-> If the pinned area exceeds its maximum allowed width (80% of the total {ComponentTitle} width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
+> If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentTitle}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
 
 ```html
 <ng-template igxHeader>
@@ -39,14 +40,14 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 <code-view style="height:650px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving"
-            github-src="{ComponentSample}/column-moving"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-options"
+            github-src="{ComponentSample}/column-moving-options"
             alt="{Platform} {ComponentTitle} Column Moving Overview Example">
 </code-view>
 
 ## Overview
 
-**Column moving** feature is enabled on a per-grid level, meaning that the {ComponentName} could have either movable or immovable columns. This is done via the `Moving` input of the {ComponentSelector}.
+**Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentTitle}`.
 
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
@@ -57,7 +58,8 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```
 
 ## API
-In addition to the drag and drop functionality, the Column Moving feature also provides  API methods to allow moving a column/reordering columns programmatically:
+
+In addition to the drag and drop functionality, the Column Moving feature also provides API methods to allow moving a column/reordering columns programmatically:
 
 <!-- Angular -->
 
@@ -107,12 +109,13 @@ idColumn.move(3);
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
-Note that when using the API, only the ColumnMovingEnd event will be emitted, if the operation was successful. Also note that in comparison to the drag and drop functionality, using the API does not require setting the `Moving` property to true.
+Note that when using the column moving feature, the `ColumnMovingEnd` event will be emitted if the operation was successful. Also note that in comparison to the drag and drop functionality, using the column moving feature does not require setting the `Moving` property to true.
 
 ## Events
 
 There are several events related to the column moving to provide a means for tapping into the columns' drag and drop operations. These are `ColumnMovingStart`, `ColumnMoving` and `ColumnMovingEnd`.
-You can subscribe to the `ColumnMovingEnd` event of the {ComponentSelector} to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the Category after the Change On Year(%) column.
+
+You can subscribe to the `ColumnMovingEnd` event of the `{ComponentTitle}` to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the **Category** column after the **Change On Year(%)** column in the following code snippet.
 
 ```html
 <{ComponentSelector} #dataGrid [data]="data" [autoGenerate]="false" [moving]="true" (columnMovingEnd)="onColumnMovingEnd($event)">
@@ -130,15 +133,14 @@ public onColumnMovingEnd(event) {
 ```
 
 ```razor
-    <{ComponentSelector} ShowGroupArea="true" @ref='Grid'  Width="100%"  Height="100%"
-             AllowFiltering=true 
-             FilterMode="FilterMode.ExcelStyleFilter"  
+    <{ComponentSelector} ShowGroupArea="true" @ref='Grid' Width="100%" Height="100%"
+             AllowFiltering=true
+             FilterMode="FilterMode.ExcelStyleFilter"
              AutoGenerate=true
              Data=northwindEmployees
              DisplayDensity="DisplayDensity.Compact"
              Moving="true"
-             ColumnMovingEndScript='onColumnMovingEnd'
-    >
+             ColumnMovingEndScript='onColumnMovingEnd'>
     </{ComponentSelector}>
 ```
 
@@ -154,7 +156,7 @@ igRegisterScript("onColumnMovingEnd", (event) => {
 
 ## Styling
 
-To get started with styling the {ComponentTitle} column moving headers, we need to import the `index` file, where all the theme functions and component mixins live:
+To get started with styling the `{ComponentTitle}` column moving headers, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -191,7 +193,7 @@ The last step is to **include** the component mixins with its respective theme:
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
@@ -282,7 +284,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ## Additional Resources
 
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

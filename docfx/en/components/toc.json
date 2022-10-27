@@ -166,17 +166,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Avatar {ReleaseStatus_WebsInputs}",
+    "name": "Avatar",
     "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Card {ReleaseStatus_WebsInputs}",
+    "name": "Card",
     "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Dock Manager {ReleaseStatus_DockManager}",
+    "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -219,12 +219,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Navbar {ReleaseStatus_WebsMenus}",
+    "name": "Navbar",
     "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
+    "name": "Navigation Drawer",
     "href": "menus/navigation-drawer.md"
   },
   {
@@ -240,38 +240,26 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Master Detail",
-        "href": "grids/lob-grid/master-detail.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Group By",
-        "href": "grids/lob-grid/groupby.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Column Headers",
-        "href": "grids/lob-grid/multi-column-headers.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/lob-grid/advanced-filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Row Layout",
-        "href": "grids/lob-grid/multi-row-layout.md",
+        "name": "Batch Editing",
+        "href": "grids/lob-grid/batch-editing.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Collapsible Column Groups",
-        "href": "grids/lob-grid/collapsible-column-groups.md",
+        "name": "Cell Editing",
+        "href": "grids/lob-grid/cell-editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Cell Selection",
+        "href": "grids/lob-grid/cell-selection.md",
         "status": "NEW"
       },
       {
@@ -282,8 +270,20 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Types",
-        "href": "grids/lob-grid/column-types.md",
+        "name": "Collapsible Column Groups",
+        "href": "grids/lob-grid/collapsible-column-groups.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Hiding",
+        "href": "grids/lob-grid/column-hiding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/lob-grid/column-moving.md",
         "status": "NEW"
       },
       {
@@ -300,80 +300,20 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/lob-grid/row-actions.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Adding",
-        "href": "grids/lob-grid/row-adding.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/lob-grid/batch-editing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Search",
-        "href": "grids/lob-grid/search.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Editing",
-        "href": "grids/lob-grid/cell-editing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/lob-grid/display-density.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/lob-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Pining",
-        "href": "grids/lob-grid/column-pinning.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Resizing",
-        "href": "grids/lob-grid/column-resizing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sizing",
-        "href": "grids/lob-grid/sizing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Filtering",
-        "href": "grids/lob-grid/filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Virtualization and performance",
-        "href": "grids/lob-grid/virtualization.md",
+        "name": "Column Types",
+        "href": "grids/lob-grid/column-types.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/lob-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/lob-grid/display-density.md",
         "status": "NEW"
       },
       {
@@ -390,26 +330,32 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sorting",
-        "href": "grids/lob-grid/sorting.md",
+        "name": "Filtering",
+        "href": "grids/lob-grid/filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Selection",
-        "href": "grids/lob-grid/cell-selection.md",
+        "name": "Group By",
+        "href": "grids/lob-grid/groupby.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Pinning",
-        "href": "grids/lob-grid/row-pinning.md",
+        "name": "Master Detail",
+        "href": "grids/lob-grid/master-detail.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Moving",
-        "href": "grids/lob-grid/column-moving.md",
+        "name": "Multi-Column Headers",
+        "href": "grids/lob-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Multi-Row Layout",
+        "href": "grids/lob-grid/multi-row-layout.md",
         "status": "NEW"
       },
       {
@@ -420,20 +366,26 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Hiding",
-        "href": "grids/lob-grid/column-hiding.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Remote Data Operations",
         "href": "grids/lob-grid/remote-data-operations.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Selection",
-        "href": "grids/lob-grid/row-selection.md",
+        "name": "Row Actions",
+        "href": "grids/lob-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Adding",
+        "href": "grids/lob-grid/row-adding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Dragging",
+        "href": "grids/lob-grid/row-drag.md",
         "status": "NEW"
       },
       {
@@ -444,8 +396,62 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Dragging",
-        "href": "grids/lob-grid/row-drag.md",
+        "name": "Row Pinning",
+        "href": "grids/lob-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Selection",
+        "href": "grids/lob-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Search",
+        "href": "grids/lob-grid/search.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/lob-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/lob-grid/sizing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sorting",
+        "href": "grids/lob-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/lob-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Virtualization and performance",
+        "href": "grids/lob-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -458,50 +464,14 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Column Headers",
-        "href": "grids/hierarchical-grid/multi-column-headers.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/hierarchical-grid/advanced-filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Row Layout",
-        "href": "grids/hierarchical-grid/multi-row-layout.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Collapsible Column Groups",
-        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Types",
-        "href": "grids/hierarchical-grid/column-types.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/hierarchical-grid/selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Selection",
-        "href": "grids/hierarchical-grid/column-selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md",
+        "name": "Batch Editing",
+        "href": "grids/hierarchical-grid/batch-editing.md",
         "status": "NEW"
       },
       {
@@ -512,20 +482,32 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/hierarchical-grid/display-density.md",
+        "name": "Cell Selection",
+        "href": "grids/hierarchical-grid/cell-selection.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/hierarchical-grid/summaries.md",
+        "name": "Collapsible Column Groups",
+        "href": "grids/hierarchical-grid/collapsible-column-groups.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Pining",
-        "href": "grids/hierarchical-grid/column-pinning.md",
+        "name": "Selection",
+        "href": "grids/hierarchical-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Moving",
+        "href": "grids/hierarchical-grid/column-moving.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
       },
       {
@@ -536,26 +518,26 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sizing",
-        "href": "grids/hierarchical-grid/sizing.md",
+        "name": "Column Selection",
+        "href": "grids/hierarchical-grid/column-selection.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Filtering",
-        "href": "grids/hierarchical-grid/filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Virtualization and performance",
-        "href": "grids/hierarchical-grid/virtualization.md",
+        "name": "Column Types",
+        "href": "grids/hierarchical-grid/column-types.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Conditional Styling",
         "href": "grids/hierarchical-grid/conditional-cell-styling.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Display Density",
+        "href": "grids/hierarchical-grid/display-density.md",
         "status": "NEW"
       },
       {
@@ -572,26 +554,20 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sorting",
-        "href": "grids/hierarchical-grid/sorting.md",
+        "name": "Filtering",
+        "href": "grids/hierarchical-grid/filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Selection",
-        "href": "grids/hierarchical-grid/cell-selection.md",
+        "name": "Multi-Column Headers",
+        "href": "grids/hierarchical-grid/multi-column-headers.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Pinning",
-        "href": "grids/hierarchical-grid/row-pinning.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Moving",
-        "href": "grids/hierarchical-grid/column-moving.md",
+        "name": "Multi-Row Layout",
+        "href": "grids/hierarchical-grid/multi-row-layout.md",
         "status": "NEW"
       },
       {
@@ -602,32 +578,14 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Hiding",
-        "href": "grids/hierarchical-grid/column-hiding.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Remote Data Operations",
         "href": "grids/hierarchical-grid/remote-data-operations.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Selection",
-        "href": "grids/hierarchical-grid/row-selection.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Editing",
-        "href": "grids/hierarchical-grid/row-editing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/hierarchical-grid/batch-editing.md",
+        "name": "Row Actions",
+        "href": "grids/hierarchical-grid/row-actions.md",
         "status": "NEW"
       },
       {
@@ -640,6 +598,66 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Row Dragging",
         "href": "grids/hierarchical-grid/row-drag.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Editing",
+        "href": "grids/hierarchical-grid/row-editing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Pinning",
+        "href": "grids/hierarchical-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Selection",
+        "href": "grids/hierarchical-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/hierarchical-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/hierarchical-grid/sizing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sorting",
+        "href": "grids/hierarchical-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/hierarchical-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Virtualization and performance",
+        "href": "grids/hierarchical-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -672,32 +690,26 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Column Headers",
-        "href": "grids/tree-grid/multi-column-headers.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/tree-grid/advanced-filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Multi-Row Layout",
-        "href": "grids/tree-grid/multi-row-layout.md",
+        "name": "Batch Editing",
+        "href": "grids/tree-grid/batch-editing.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Conditional Styling",
-        "href": "grids/tree-grid/conditional-cell-styling.md",
+        "name": "Cell Editing",
+        "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Paging",
-        "href": "grids/tree-grid/paging.md",
+        "name": "Clipboard Interactions",
+        "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
       {
@@ -720,26 +732,26 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/tree-grid/selection.md",
+        "name": "Conditional Styling",
+        "href": "grids/tree-grid/conditional-cell-styling.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Selection",
-        "href": "grids/tree-grid/column-selection.md",
+        "name": "Cell Selection",
+        "href": "grids/tree-grid/cell-selection.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/tree-grid/row-actions.md",
+        "name": "Column Hiding",
+        "href": "grids/tree-grid/column-hiding.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Adding",
-        "href": "grids/tree-grid/row-adding.md",
+        "name": "Column Moving",
+        "href": "grids/tree-grid/column-moving.md",
         "status": "NEW"
       },
       {
@@ -750,56 +762,20 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Search",
-        "href": "grids/tree-grid/search.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Editing",
-        "href": "grids/tree-grid/cell-editing.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Display Density",
-        "href": "grids/tree-grid/display-density.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Summaries",
-        "href": "grids/tree-grid/summaries.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Pining",
-        "href": "grids/tree-grid/column-pinning.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sizing",
-        "href": "grids/tree-grid/sizing.md",
+        "name": "Column Selection",
+        "href": "grids/tree-grid/column-selection.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Filtering",
-        "href": "grids/tree-grid/filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Virtualization and performance",
-        "href": "grids/tree-grid/virtualization.md",
+        "name": "Display Density",
+        "href": "grids/tree-grid/display-density.md",
         "status": "NEW"
       },
       {
@@ -816,32 +792,26 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Sorting",
-        "href": "grids/tree-grid/sorting.md",
+        "name": "Filtering",
+        "href": "grids/tree-grid/filtering.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Cell Selection",
-        "href": "grids/tree-grid/cell-selection.md",
+        "name": "Multi-Column Headers",
+        "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Pinning",
-        "href": "grids/tree-grid/row-pinning.md",
+        "name": "Multi-Row Layout",
+        "href": "grids/tree-grid/multi-row-layout.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Moving",
-        "href": "grids/tree-grid/column-moving.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Column Hiding",
-        "href": "grids/tree-grid/column-hiding.md",
+        "name": "Paging",
+        "href": "grids/tree-grid/paging.md",
         "status": "NEW"
       },
       {
@@ -852,8 +822,20 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Selection",
-        "href": "grids/tree-grid/row-selection.md",
+        "name": "Row Actions",
+        "href": "grids/tree-grid/row-actions.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Adding",
+        "href": "grids/tree-grid/row-adding.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Dragging",
+        "href": "grids/tree-grid/row-drag.md",
         "status": "NEW"
       },
       {
@@ -864,8 +846,62 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Dragging",
-        "href": "grids/tree-grid/row-drag.md",
+        "name": "Row Pinning",
+        "href": "grids/tree-grid/row-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Row Selection",
+        "href": "grids/tree-grid/row-selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Search",
+        "href": "grids/tree-grid/search.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Selection",
+        "href": "grids/tree-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sizing",
+        "href": "grids/tree-grid/sizing.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Sorting",
+        "href": "grids/tree-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Summaries",
+        "href": "grids/tree-grid/summaries.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Virtualization and performance",
+        "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -1036,7 +1072,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "List {ReleaseStatus_WebsList}",
+    "name": "List",
     "href": "grids/list.md"
   },
   {
@@ -1557,17 +1593,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Badge {ReleaseStatus_WebsInputs}",
+    "name": "Badge",
     "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Button {ReleaseStatus_WebsInputs}",
+    "name": "Button",
     "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Checkbox {ReleaseStatus_WebsInputs}",
+    "name": "Checkbox",
     "href": "inputs/checkbox.md"
   },
   {
@@ -1577,27 +1613,27 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Chip {ReleaseStatus_WebsInputs}",
+    "name": "Chip",
     "href": "inputs/chip.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Dropdown {ReleaseStatus_WebsInputs}",
+    "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Form {ReleaseStatus_WebsInputs}",
+    "name": "Form",
     "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Icon {ReleaseStatus_WebsInputs}",
+    "name": "Icon",
     "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Icon Button {ReleaseStatus_WebsInputs}",
+    "name": "Icon Button",
     "href": "inputs/icon-button.md"
   },
   {
@@ -1613,37 +1649,37 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Input {ReleaseStatus_WebsInputs}",
+    "name": "Input",
     "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Mask Input {ReleaseStatus_WebsInputs}",
+    "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Date Time Input {ReleaseStatus_WebsInputs}",
+    "name": "Date Time Input",
     "href": "inputs/date-time-input.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
+    "name": "Radio & Radio Group",
     "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Select {ReleaseStatus_WebsInputs}",
+    "name": "Select",
     "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "name": "Rating",
     "href": "inputs/rating.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Switch {ReleaseStatus_WebsInputs}",
+    "name": "Switch",
     "href": "inputs/switch.md"
   },
   {
@@ -1652,12 +1688,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Ripple {ReleaseStatus_WebsInputs}",
+    "name": "Ripple",
     "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
+    "name": "Slider & Range Slider",
     "href": "inputs/slider.md"
   },
   {
@@ -1673,17 +1709,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Snackbar {ReleaseStatus_WebsInputs}",
+    "name": "Snackbar",
     "href": "notifications/snackbar.md"
   },
   {
      "exclude": ["Angular"],
-     "name": "Toast {ReleaseStatus_WebsInputs}",
+     "name": "Toast",
      "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Dialog {ReleaseStatus_WebsInputs}",
+    "name": "Dialog",
     "href": "notifications/dialog.md",
     "status": "NEW"
  },

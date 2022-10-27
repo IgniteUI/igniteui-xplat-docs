@@ -7,38 +7,39 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Filtering
-{Platform} {ComponentTitle} component provides three different filtering types - Quick filtering, [Excel style filtering](excel-style-filtering.md) and [Advanced filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The Material UI grid component in {Platform} provides angular filter capabilities and extensive filtering API through the Data Container to which the {ComponentTitle} is bound.
+
+The {Platform} `{ComponentTitle}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentTitle}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentTitle}` is bound.
 
 ## {Platform} {ComponentTitle} Filtering Example
 
-The sample below demonstrates {ComponentTitle}'s **Quick filtering** user experience.
+The sample below demonstrates `{ComponentTitle}`'s **Quick filtering** user experience.
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering"
-           github-src="{ComponentSample}/filtering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-options"
+           github-src="{ComponentSample}/filtering-options"
            alt="{Platform} {ComponentTitle} Filtering Example">
 </code-view>
 
 ## Setup
-In order to specify if filtering is enabled and which filtering mode should be used, the {ComponentTitle} exposes the following boolean properties - `AllowFiltering`, `AllowAdvancedFiltering`, `FilterMode` and `Filterable`.
+
+In order to specify if filtering is enabled and which filtering mode should be used, the `{ComponentTitle}` exposes the following properties - `AllowFiltering`, `AllowAdvancedFiltering`, `FilterMode` and `Filterable`.
 
 Property `AllowFiltering` enables you to specify the following options:
-- **false** - the filtering for the corresponding grid will be disabled; /default value/
-- **true** - the filtering for the corresponding grid will be enabled;
+- **false** - the filtering for the corresponding grid will be disabled. This is the default value.
+- **true** - the filtering for the corresponding grid will be enabled.
 
 Property `AllowAdvancedFiltering` enables you to specify the following options:
-- **false** - the advanced filtering for the corresponding grid will be disabled; /default value/
-- **true** - the advanced filtering for the corresponding grid will be enabled;
+- **false** - the advanced filtering for the corresponding grid will be disabled. This is the default value.
+- **true** - the advanced filtering for the corresponding grid will be enabled.
 
 Property `FilterMode` enables you to specify the following options:
-- **QuickFilter** - a simplistic filtering UI; /default value/
-- **ExcelStyleFilter** - an Excel-like filtering UI;
+- **QuickFilter** - a simplistic filtering UI. This is the default value.
+- **ExcelStyleFilter** - an Excel-like filtering UI.
 
 Property `Filterable` enables you to specify the following options:
-- **true** - the filtering for the corresponding column will be enabled; /default value/
-- **false** - the filtering for the corresponding column will be disabled;
-
+- **true** - the filtering for the corresponding column will be enabled. This is the default value.
+- **false** - the filtering for the corresponding column will be disabled.
 
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" [allowFiltering]="true">
@@ -62,12 +63,11 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true>
-</IgbGrid>
+<IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
 
 >[!NOTE]
->You can enable both the `QuickFilter`/`ExcelStyleFilter` and the advanced filtering user interfaces in the {ComponentTitle}. Both filtering user interfaces will work independently of one another. The final filtered result in the {ComponentTitle} is the intersection between the results of the two filters.
+>You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentTitle}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentTitle}` is the intersection between the results of the two filters.
 
 ## Interaction
 
@@ -77,26 +77,28 @@ While some filtering conditions have been applied to a column, and the filter ro
 
 ## Usage
 
-There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The {ComponentTitle} currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
+There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The `{ComponentTitle}` currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
 
-Filtering feature is enabled for the {ComponentTitle} component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
+The filtering feature is enabled for the `{ComponentTitle}` component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 ```html
-<@@igSelector [data]="data" [autoGenerate]="false" [allowFiltering]="true">
+<{ComponentSelector} [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" dataType="string"></igx-column>
     <igx-column field="Price" dataType="number"></igx-column>
     <igx-column field="Discontinued" [dataType]="'boolean'" [filterable]="false">
-</@@igSelector>
+</{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, TreeGrid -->
 
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="localdata" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="Artist" [filterable]="true"></igx-column>
     <igx-column field="Photo" [filterable]="false"></igx-column>
 </igx-hierarchical-grid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
@@ -106,9 +108,9 @@ Filtering feature is enabled for the {ComponentTitle} component by setting the `
 ```
 
 > [!NOTE]
-> If values of type *string* are used by a column of data type *date*, the {ComponentTitle} won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
+> If values of type *string* are used by a column of data type *date*, the `{ComponentTitle}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
 
-You can filter any column or a combination of columns through the {ComponentTitle} API. The {ComponentTitle} exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
+You can filter any column or a combination of columns through the `{ComponentTitle}` API. The `{ComponentTitle}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
 *   `Filter` - filter a single column or a combination of columns.
 
@@ -129,7 +131,7 @@ this.@@igObjectRef.filter('ProductName', 'myproduct', IgxStringFilteringOperand.
 The only required parameters are the column field key and the filtering term. Both the condition and the case sensitivity will be inferred from the column properties if not provided. In the case of multiple filtering, the method accepts an array of filtering expressions.
 
 > [!NOTE]
-> The filtering operation **DOES NOT** change the underlying data source of the {ComponentTitle}.
+> The filtering operation **DOES NOT** change the underlying data source of the `{ComponentTitle}`.
 
 ```typescript
 // Multi column filtering
@@ -178,7 +180,7 @@ this.@@igObjectRef.clearFilter();
 
 ## Initial filtered state
 
-To set the initial filtering state of the {ComponentTitle}, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
+To set the initial filtering state of the `{ComponentTitle}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
 
 ```typescript
 constructor(private cdr: ChangeDetectorRef) { }
@@ -202,7 +204,7 @@ public ngAfterViewInit() {
 
 ### Filtering logic
 
-The `FilteringLogic` property of the {ComponentTitle} controls how filtering multiple columns will resolve in the {ComponentTitle}. You can change it at any time through the {ComponentTitle} API, or through the {ComponentTitle} input property.
+The `FilteringLogic` property of the `{ComponentTitle}` controls how filtering multiple columns will resolve in the `{ComponentTitle}`. You can change it at any time through the `{ComponentTitle}` API, or through the `{ComponentTitle}` input property.
 
 ```typescript
 import { FilteringLogic } from 'igniteui-angular';
@@ -217,10 +219,11 @@ When set to `OR`, a row will be returned when either the 'ProductName' cell valu
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ## Remote Filtering
 
-The {ComponentTitle} supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+The `{ComponentTitle}` supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 ## Custom Filtering Operands
+
 You can customize the filtering menu by adding, removing or modifying the filtering operands. By default, the filtering menu contains certain operands based on the column’s data type (`BooleanFilteringOperand`, `DateFilteringOperand`, `NumberFilteringOperand` and `StringFilteringOperand`). You can extend these classes or their base class `FilteringOperand` to change the filtering menu items’ behavior.
 
 In the sample below, inspect the “Product Name” and “Discontinued” columns filters menus. For the “Discontinued” column filter, we have limited the number of operands to All, True and False. For the “Product Name” column filter – we have modified the Contains and Does Not Contain operands logic to perform case sensitive search and added also Empty and Not Empty operands.
@@ -293,7 +296,7 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 ```html
 <!-- grid-custom-filtering.component.html -->
 
-<@@igSelector [data]="data" [autoGenerate]="false" [allowFiltering]="true">
+<{ComponentSelector} [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" header="Product Name" [dataType]="'string'" [filters]="caseSensitiveFilteringOperand"></igx-column>
     <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'" [filters]="booleanFilteringOperand">
         <ng-template igxCell let-cell="cell" let-val>
@@ -301,7 +304,7 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
             <img *ngIf="!val" src="assets/images/grid/expired.png" title="Discontinued" alt="Discontinued" />
         </ng-template>
     </igx-column>
-</@@igSelector>
+</{ComponentSelector}>
 ```
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -327,7 +330,8 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 </code-view>
 
 
-## Re-templating filter cell
+## Re-templating Filter Cell
+
 You can add a template marked with `FilterCellTemplate` in order to retemplate the filter cell. In the sample below, an input is added for the string columns and `DatePicker` for the date column. When the user types or selects a value, a filter with contains operator for string columns and equals operator for date columns, is applied using grid's public API.
 
 <code-view style="height:500px"
@@ -340,7 +344,8 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
 <!-- ComponentStart: TreeGrid -->
 
 ## Matching Records Only Filtering Strategy
-By default, after a filtering is applied, the Tree Grid component displays the records matching the criterion that have been set and their parents in a grayed-out fashion to provide additional context. However, in some cases, you may want to display only the records matching particular filtering condition without any trace for their parents. This can be achieved by using the `TreeGridMatchingRecordsOnlyFilteringStrategy`:
+
+By default, after a filtering is applied, the `{ComponentName}` component displays the records matching the criterion that have been set and their parents in a grayed-out fashion to provide additional context. However, in some cases, you may want to display only the records matching particular filtering condition without any trace for their parents. This can be achieved by using the `TreeGridMatchingRecordsOnlyFilteringStrategy`:
 
 ```html
 <igx-tree-grid [data]="data" [allowFiltering]="true" [filterStrategy]="matchingRecordsOnlyStrategy">
@@ -610,11 +615,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 * `{ComponentName}`
-* `ColumnComponent`
+* `Column`
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)

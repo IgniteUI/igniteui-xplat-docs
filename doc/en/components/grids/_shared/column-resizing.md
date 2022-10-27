@@ -18,7 +18,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
-**Column resizing** is also enabled per-column level, meaning that the **{ComponentSelector}** can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `ColumnComponent`.
+**Column resizing** is also enabled per-column level, meaning that the `{ComponentTitle}` can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `Column`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -31,6 +31,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 ```
 
 <!-- ComponentEnd: Grid, TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -43,7 +44,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You can subscribe to the `ColumnResized` event of the `{ComponentSelector}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `ColumnComponent` object, are exposed through the event arguments.
+You can subscribe to the `ColumnResized` event of the `{ComponentName}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `Column` object, are exposed through the event arguments.
 
 <!-- ComponentStart: Grid -->
 
@@ -79,6 +80,7 @@ public onResize(event) {
 ```
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -101,15 +103,16 @@ TO DO!
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-  <igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
+<igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
-        <igx-column field="Artist" [resizable]="true"></igx-column>
-        ...
+    <igx-column field="Artist" [resizable]="true"></igx-column>        
 </igx-hierarchical-grid>
 ```
+
 ```typescript
 public onResize(event) {
     this.col = event.column;
@@ -126,7 +129,7 @@ TO DO!
 
 ## Resizing Columns in Pixels/Percentages
 
-Depending on the user scenario, the column width may be defined in pixels, percentages or a mix of both. All these scenarios are supported by the Column Resizing feature. By default if a column does not have width set, it fits the available space with width set in pixels.
+Depending on the user scenario, the column width may be defined in pixels, percentages or a mix of both. All these scenarios are supported by the **Column Resizing** feature. By default if a column does not have width set, it fits the available space with width set in pixels.
 
 This means that the following configuration is possible:
 
@@ -149,6 +152,7 @@ This means that the following configuration is possible:
 ```
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -164,6 +168,7 @@ TO DO!
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -171,8 +176,7 @@ TO DO!
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
         <igx-column field="Artist" [resizable]="true" [width]="'10%'"></igx-column>
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>
-        <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
-        ...
+        <igx-column field="GrammyAwards" [resizable]="true"></igx-column>        
 </igx-hierarchical-grid>
 ```
 
@@ -195,9 +199,7 @@ When resizing columns with width in percentages, the horizontal amount of the mo
 
 ## Restrict Column Resizing
 
-You can also configure the minimum and maximum allowable column widths. This is done via the `MinWidth` and `MaxWidth` inputs of the `ColumnComponent`. In this case the resize indicator drag operation is restricted to notify the user that the column cannot be resized outside the boundaries defined by `MinWidth` and `MaxWidth`.
-
-<!-- ComponentStart: Grid, TreeGrid -->
+You can also configure the minimum and maximum allowable column widths. This is done via the `MinWidth` and `MaxWidth` inputs of the `Column`. In this case the resize indicator drag operation is restricted to notify the user that the column cannot be resized outside the boundaries defined by `MinWidth` and `MaxWidth`.
 
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
@@ -208,25 +210,9 @@ You can also configure the minimum and maximum allowable column widths. This is 
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
-<!-- ComponentEnd: Grid, TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-column [field]="'Artist'" width="100px" [resizable]="true"
-            [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
-```
-
-```razor
-<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 Mixing the minimum and maximum column width value types (pixels or percentages) is allowed. If the values set for minimum and maximum are set to percentages, the respective column size will be limited to those exact sizes similar to pixels.
 
 This means the following configurations are possible:
-
-<!-- ComponentStart: Grid, TreeGrid -->
 
 ```html
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
@@ -237,23 +223,7 @@ This means the following configurations are possible:
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
 ```
 
-<!-- ComponentEnd: Grid, TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-column [field]="'Artist'" width="10%" [resizable]="true"
-            [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
-```
-
-```razor
-<IgbColumn Field="Artist" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 or
-
-<!-- ComponentStart: Grid, TreeGrid -->
 
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
@@ -264,27 +234,11 @@ or
 <IgbColumn Field="ID" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbColumn>
 ```
 
-<!-- ComponentEnd: Grid, TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-column [field]="'Artist'" width="100px" [resizable]="true"
-            [minWidth]="'60px'" [maxWidth]="'15%'"></igx-column>
-```
-
-```razor
-<IgbColumn Field="Artist" Resizable=true Width="100px" MinWidth="5%" MaxWidth="15%"></IgbColumn>
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 ## Auto-Size Columns on Double Click
 
 Each column can be **auto sized** by double clicking the right side of the header - the column will be sized to the longest currently visible cell value, including the header itself. This behavior is enabled by default, no additional configuration is needed. However, the column will not be auto-sized in case `MaxWidth` is set on that column and the new width exceeds that `MaxWidth` value. In this case the column will be sized according to preset `MaxWidth` value.
 
-You can also auto-size a column dynamically using the exposed `Autosize` method on `ColumnComponent`.
-
-<!-- ComponentStart: Grid, TreeGrid -->
+You can also auto-size a column dynamically using the exposed `Autosize` method on `Column`.
 
 ```typescript
 @ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
@@ -305,36 +259,12 @@ column.autosize();
 }
 ```
 
-<!-- ComponentEnd: Grid, TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```typescript
-@ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
-
-let column = this.@@igObjectRef.columnList.filter(c => c.field === 'Artist')[0];
-column.autosize();
-```
-
-```razor
-@code {
-    private {ComponentName} gridRef;
-
-    protected void OnInitialize()
-    {
-        IgbColumn column = gridRef.Columns.Where((col) => { return col.Field == "Artist"; }).FirstOrDefault();
-        column.Autosize(false);
-    }
-}
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 ## Auto-Size Columns on Initialization
 
 Each column can be set to auto-size on initialization by setting `Width` to 'auto':
 
 ```html
-<igx-column width='auto'>...
+<igx-column width='auto'>
 ```
 
 ```razor
@@ -342,6 +272,7 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 ```
 
 When the column is first initialized in the view it resolves its width to the size of the longest visible cell or header. Note that cells that are outside of the visible rows are not included.
+
 This approach is more performance optimized than auto-sizing post initialization and is recommended especially in cases where you need to auto-size a large number of columns.
 
 <code-view style="height:550px"
@@ -350,10 +281,11 @@ This approach is more performance optimized than auto-sizing post initialization
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
-## Styling
-To get started with the styling of the {ComponentTitle} column resize line, we need to import the index file, where all the theme functions and component mixins live:
-
 <!-- Angular -->
+
+## Styling
+
+To get started with the styling of the `{ComponentTitle}` column resize line, we need to import the index file, where all the theme functions and component mixins live:
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -457,12 +389,12 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ## API References
 
-* `ColumnComponent`
+* `Column`
 * `{ComponentName}`
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

@@ -10,13 +10,14 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Virtualization and Performance
 
-In Ignite UI for {Platform}, the `Grid` control now utilizes the [`igxForOf`]({environment:infragisticsBaseUrl}/classes/igxforofdirective.html) directive and virtualizes its content both vertically and horizontally.
+In Ignite UI for {Platform}, the `Grid` control now utilizes the `igxForOf` directive and virtualizes its content both vertically and horizontally.
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-virtualization"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-virtualization"
+           github-src="{ComponentSample}/data-performance-virtualization"
            alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
 </code-view>
 
@@ -24,7 +25,7 @@ In Ignite UI for {Platform}, the `Grid` control now utilizes the [`igxForOf`]({e
 
 ## Enabling Virtualization
 
-By utilizing the [`igxForOf`]({environment:infragisticsBaseUrl}/classes/igxforofdirective.html) directive the {ComponentTitle} now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. `Grid`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally. However, it is also possible to explicitly set the `Grid`'s `Width` and/or `Height` to `null` which means that the related dimension will be determined by the total size of the items inside. No scrollbar will then be shown and all items will be rendered along the respective dimension (columns if `Width` is `null` and rows if `Height` is `null`).
+By utilizing the `igxForOf` directive the {ComponentTitle} now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. `Grid`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally. However, it is also possible to explicitly set the `Grid`'s `Width` and/or `Height` to `null` which means that the related dimension will be determined by the total size of the items inside. No scrollbar will then be shown and all items will be rendered along the respective dimension (columns if `Width` is `null` and rows if `Height` is `null`).
 
 The size of the data chunks is determined by:
 
@@ -49,8 +50,6 @@ The {ComponentTitle} supports remote virtualization, which is demonstrated in th
 
 Without information about the sizes of the container and the items before rendering them setting the width or height of a scrollbar or determining which of the items should be in the view when you scroll to a random location in the {ComponentTitle} is erroneous. Any assumptions on what the actual dimensions might be could lead to unnatural behavior of the scrollbar and ultimately suboptimal experience for the end-user. This is why setting the related dimensions is enforced in order for virtualization to take effect.
 
-<div class="divider--half"></div>
-
 ## API References
 * `Grid`
 * `ColumnComponent`
@@ -58,7 +57,7 @@ Without information about the sizes of the container and the items before render
 ## Additional Resources
 <div class="divider--half"></div>
 
-* [{ComponentTitle} overview]({ComponentTitle}.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

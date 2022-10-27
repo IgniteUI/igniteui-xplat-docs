@@ -8,7 +8,9 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Cell Editing
 
-Ignite UI for {Platform} {ComponentTitle} provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the {ComponentTitle} is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**. In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
+Ignite UI for {Platform} `{ComponentTitle}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentTitle}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+
+In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
 ## {Platform} {ComponentTitle} cell editing and edit templates Example
 
@@ -20,12 +22,11 @@ Ignite UI for {Platform} {ComponentTitle} provides a great data manipulation cap
 </code-view>
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - `Select`(../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [`Select`](../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
 
 ### Editing through UI
-
 
 You can enter edit mode for specific cell, when an editable cell is focused in one of the following ways:
  - on double click;
@@ -41,15 +42,15 @@ You can exit edit mode and **commit** the changes in one of the following ways:
  - on key press <kbd>Enter</kbd>;
  - on key press <kbd>F2</kbd>;
  - on key press <kbd>Tab</kbd>;
- - on single click to another cell - when you click on another cell in the {ComponentTitle}, your changes will be submitted.
+ - on single click to another cell - when you click on another cell in the `{ComponentTitle}`, your changes will be submitted.
  - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
 > [!NOTE]
-> The cell remains in edit mode when you scroll vertically or horizontally or click outside the {ComponentTitle}. This is valid for both cell editing and row editing.
+> The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentTitle}`. This is valid for both cell editing and row editing.
 
 ### Editing through API
 
-You can also modify the cell value through the {ComponentName} API but only if primary key is defined:
+You can also modify the cell value through the `{ComponentName}` API but only if primary key is defined:
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -57,29 +58,33 @@ public updateCell() {
     this.grid1.updateCell(newValue, rowID, 'ReorderLevel');
 }
 ```
+
 ```razor
-    This.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
+this.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 public updateCell() {
     this.treeGrid.updateCell(newValue, rowID, 'Age');
 }
-
 ```
+
 ```razor
-    This.treeGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
+this.treeGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 public updateCell() {
     this.hierarchicalGrid.updateCell(newValue, rowID, 'Age');
 }
 ```
+
 ```razor
-    This.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
+this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -94,6 +99,7 @@ public updateCell() {
     cell.update(70);
 }
 ```
+
 ```razor
 private UpdateCell() {
     IgbCell cell = this.grid1.GetCellByColumn(rowIndex, "ReorderLevel");
@@ -101,6 +107,7 @@ private UpdateCell() {
 }
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 public updateCell() {
@@ -110,6 +117,7 @@ public updateCell() {
     cell.update(9999);
 }
 ```
+
 ```razor
 private UpdateCell() {
     IgbCell cell = this.treeGrid.GetCellByColumn(rowIndex, "Age");
@@ -117,6 +125,7 @@ private UpdateCell() {
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 public updateCell() {
@@ -126,6 +135,7 @@ public updateCell() {
     cell.update(70);
 }
 ```
+
 ```razor
 private UpdateCell() {
     IgbCell cell = this.hierarchicalGrid.GetCellByColumn(rowIndex, "ReorderLevel");
@@ -137,6 +147,8 @@ private UpdateCell() {
 ### Cell Editing Templates
 
 You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
+
+<!-- Angular -->
 
 If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
 
@@ -151,6 +163,7 @@ If you want to provide a custom template which will be applied when a cell is in
     </ng-template>
 </igx-column>
 ```
+
 This code is used in the sample below which implements an [`SelectComponent`](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
 <code-view style="height:625px"
@@ -159,6 +172,8 @@ This code is used in the sample below which implements an [`SelectComponent`](..
            github-src="{ComponentSample}/select"
            alt="{Platform} {ComponentTitle} Select Example">
 </code-view>
+
+<!-- end: Angular -->
 
 > [!NOTE]
 > Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the [transaction state](batch-editing.md) (if transactions are enabled).
@@ -170,8 +185,11 @@ This code is used in the sample below which implements an [`SelectComponent`](..
 > [!NOTE]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), [`Combo`](../combo.md), etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
+<!-- Angular -->
 
 For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration).
+
+<!-- end: Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -180,7 +198,7 @@ For more information on how to configure columns and their templates, you can se
 
 Using Excel Style Editing allows the user to navigate trough the cells just as he would using the Excel, and ever so quickly edit them.
 
-Implementing this custom functionality can be done by utilizing the events of the grid. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
+Implementing this custom functionality can be done by utilizing the events of the `{ComponentTitle}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
 
 * Constant edit mode
 
@@ -224,6 +242,7 @@ if (key == 13) {
     });
 }
 ```
+
 Key parts of finding the next eligible index would be:
 
 ```typescript
@@ -267,7 +286,7 @@ The `{ComponentTitle}` provides a straightforward API for basic CRUD operations.
 
 ### Adding a new record
 
-The {ComponentTitle} component exposes the `AddRow` method which will add the provided data to the data source itself.
+The `{ComponentTitle}` component exposes the `AddRow` method which will add the provided data to the data source itself.
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -277,6 +296,7 @@ const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 public addNewChildRow() {
@@ -288,6 +308,7 @@ public addNewChildRow() {
 }
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 public addRow() {
@@ -301,7 +322,7 @@ public addRow() {
 
 ### Updating data in the {ComponentTitle}
 
-Updating data in the {ComponentTitle} is achieved through `UpdateRow` and `UpdateCell` methods but **only if primary key for the grid is defined**. You can also directly update a cell and/or a row value through their respective **update** methods.
+Updating data in the {ComponentTitle} is achieved through `UpdateRow` and `UpdateCell` methods but **only if the PrimaryKey for the grid is defined**. You can also directly update a cell and/or a row value through their respective **update** methods.
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -319,6 +340,7 @@ const row = this.grid.getRowByKey(rowID);
 row.update(newData);
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 // Updating the whole row
@@ -335,6 +357,7 @@ const row = this.treeGrid.getRowByKey(rowID);
 row.update(newData);
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 // Updating the whole row
@@ -354,7 +377,7 @@ row.update(newData);
 
 ### Deleting data from the {ComponentTitle}
 
-Please keep in mind that `DeleteRow` method will remove the specified row only if primary key is defined.
+Please keep in mind that `DeleteRow` method will remove the specified row only if a `PrimaryKey` is defined.
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -365,6 +388,7 @@ const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 // Delete row through Tree Grid API
@@ -374,6 +398,7 @@ const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 // Delete row through Grid API
@@ -383,25 +408,29 @@ const row = this.hierarchicalGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-These can be wired to user interactions, not necessarily related to the {ComponentSelector} for example, a button click:
+
+These can be wired to user interactions, not necessarily related to the `{ComponentTitle}` for example, a button click:
+
 ```html
 <button igxButton igxRipple (click)="deleteRow($event)">Delete Row</button>
 ```
 
-### Cell validation on edit event
-Using the {ComponentTitle}'s editing events we can alter how the user interacts with the {ComponentTitle}.
+### Cell Validation on Edit Event
+
+Using the `{ComponentTitle}`'s editing events, we can alter how the user interacts with the `{ComponentTitle}`.
+
 In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event:
+
 ```typescript
 event.cancel = true
 ```
+
 We'll also display a custom error message using [`Toast`](../toast.md).
 
 The first thing we need to is bind to the grid's event:
 
 ```html
-<{ComponentSelector} (cellEdit)="handleCellEdit($event)"
-...>
-...
+<{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
 
@@ -425,8 +454,10 @@ export class MyGridEventsComponent {
     }
 }
 ```
+
 If the value entered in a cell under the **Ordered** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```typescript
 export class MyTreeGridEventsComponent {
@@ -448,8 +479,10 @@ export class MyTreeGridEventsComponent {
     }
 }
 ```
+
 Here, we are validating two columns. If the user tries to set an invalid value for an employee's **Age** (below 18) or their **Hire Date** (a future date), the editing will be cancelled (the value will not be submitted) and a toast with an error message will be displayed.
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 ```typescript
 export class MyHGridEventsComponent {
@@ -475,7 +508,7 @@ export class MyHGridEventsComponent {
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
 <!-- ComponentEnd: HierarchicalGrid -->
 
-The result of the above validation being applied to our `{ComponentSelector}` can be seen in the below demo:
+The result of the above validation being applied to our `{ComponentTitle}` can be seen in the below demo:
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -485,6 +518,7 @@ The result of the above validation being applied to our `{ComponentSelector}` ca
 </code-view>
 
 <!-- Angular -->
+
 ## Styling
 
 The {ComponentName} allows for its cells to be styled through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
@@ -493,7 +527,7 @@ In the below steps, we are going to go over how you can style the grid's cell in
 
 In order to use the [Ignite UI Theming Library](../themes/sass/component-themes.md), we must first import the theme `index` file in our global styles:
 
-### Importing style library
+### Importing Style Library
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -503,7 +537,7 @@ In order to use the [Ignite UI Theming Library](../themes/sass/component-themes.
 ```
 Now we can make use of all of the functions exposed by the Ignite UI for {Platform} theme engine.
 
-### Defining a palette
+### Defining a Palette
 
 After we've properly imported the index file, we create a custom palette that we can use. Let's define two colors that we like and use them to build a palette with [`igx-palette`](../themes/palettes.md):
 
@@ -514,7 +548,7 @@ $blue: #4567bb;
 $color-palette: palette($primary: $white, $secondary: $blue);
 ```
 
-### Defining themes
+### Defining Themes
 
 We can now define the theme using our palette. The cells are styled by the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our {ComponentName}:
 
@@ -527,7 +561,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-### Applying the theme
+### Applying the Theme
 
 The easiest way to apply our theme is with a `sass` `@include` statement in the global styles file:
 
@@ -537,7 +571,7 @@ The easiest way to apply our theme is with a `sass` `@include` statement in the 
 
 This way, the theme will apply to **all** grids in our application. If we wish to apply this custom styling only to a specific component, we need to scope the theme.
 
-### Scoped component theme
+### Scoped Component Theme
 
 In order for the custom theme to affect only our specific component, we can move all of the styles we just defined from the global styles file to our custom component's style file (including the [import](#importing-style-library) of the `index` file).
 
@@ -570,12 +604,12 @@ In addition to the steps above, we can also style the controls that are used for
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from **Change Theme**.
-<!-- End: Angular -->
+
+<!-- end: Angular -->
 
 ## API References
 
 * `GridCell`
-* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 * `GridRow`
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -584,17 +618,11 @@ In addition to the steps above, we can also style the controls that are used for
 <!-- ComponentEnd: TreeGrid -->
 * `InputDirective`
 * `DatePickerComponent`
-* [IgxDatePickerComponent Styles]({environment:sassApiUrl}/index.html#function-igx-date-picker-theme)
-* `CheckboxComponent`
-* [IgxCheckboxComponent Styles]({environment:sassApiUrl}/index.html#function-checkbox-theme)
-* `IgxOverlay`
-* [IgxOverlay Styles]({environment:sassApiUrl}/index.html#function-overlay-theme)
-
 
 ## Additional Resources
 
-* [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} overview](overview.md)
+* [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

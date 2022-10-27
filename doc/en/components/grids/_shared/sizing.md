@@ -248,14 +248,10 @@ The difference is that for the child grid, when `height` is set to percentages, 
 
 * `{ComponentName}`
 <!-- ComponentStart: Grid, HierarchicalGrid, PivotGrid -->
-
 * `GridRow`
-
 <!-- ComponentEnd: Grid, HierarchicalGrid, PivotGrid -->
 <!-- ComponentStart: TreeGrid -->
-
 * `TreeGridRow`
-
 <!-- ComponentEnd: TreeGrid -->
 
 ## Additional Resources

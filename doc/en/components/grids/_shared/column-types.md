@@ -8,12 +8,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Column Types Overview
 
-{ProductName} {ComponentTitle} provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+{ProductName} `{ComponentTitle}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid -->
 
 ## {Platform} {ComponentTitle} Column Types Example
-
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,13 +22,19 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <!-- ComponentEnd: Grid -->
 
 ## {Platform} {ComponentTitle} Default Template
-If you want to enable a data type-specific template, you should set the column `DataType` input otherwise the column will be treated as a string column since that is the default value for column dataType. Let's see what are the default templates for each type.
+
+If you want to enable a data type-specific template, you should set the column `DataType` input, otherwise the column will be treated as a string column since that is the default value for column `DataType`.
+
+The following describes the default templates for each `DataType`:
 
 ### String
+
 This column `DataType` is not changing the appearance or format of the cell value.
 
 ### Number
+
 If the `DataType` is set to *number*, the cell value will be formatted based on application or grid's `Locale` settings, as well as when `PipeArgs` property is specified. Then the number format will be changed based on them, for example it might change the:
+
  - Number of digits after the decimal point
  - Decimal separator with `,` or `.`
 
@@ -54,10 +59,10 @@ public formatOptions = this.options;
 ```
 
 ### DateTime, Date and Time
-The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom [`date format`](https://angular.io/api/common/DatePipe#pre-defined-format-options) or [`timezone`](https://angular.io/api/common/DatePipe#parameters):
- - **format** - The default value for formatting the date is 'mediumDate'. Other available options are 'short', 'long', 'shortDate', 'fullDate', 'longTime', 'fulLTime' and etc. This is a full list of all available [pre-defined format options](https://angular.io/api/common/DatePipe#pre-defined-format-options).
- - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
+The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom date format or timezone:
+ - **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
+ - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
 ```ts
 public formatDateOptions = {
@@ -106,7 +111,7 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The {ComponentTitle} accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../lob-grid/overview.md#custom-display-format).
+The `{ComponentTitle}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../lob-grid/overview.md#custom-display-format).
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
@@ -132,25 +137,29 @@ public timeFormats = [
 }
 ```
 
-#### Cell editing
+#### Cell Editing
+
 When it comes to cell editing based on the column type a different editor will appear:
-- dateTime - `DateTimeEditor` will be used. This editor will give you a mask directions for the input elements part of the DateTime object.
-- date - `DatePicker` will be used.
-- time - `TimePicker` will be used.
+- `DateTime` - `DateTimeEditor` will be used. This editor will give you a mask directions for the input elements part of the `DateTime` object.
+- `Date` - `DatePicker` will be used.
+- `Time` - `TimePicker` will be used.
 
 #### Filtering
+
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:
-- dateTime and date - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
-- time - At, Not At, Before, After, At or Before, At or After, Empty, Not Empty, Null, Not Null;
+- `DateTime and Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
+- `Time` - At, Not At, Before, After, At or Before, At or After, Empty, Not Empty, Null, Not Null;
 
 #### Summaries
+
 The available Summary operands will be **Count**, **Earliest** (date/time) and **Latest** (date/time).
 
 #### Sorting
 
-Time type column sorts based on the time portion of the object, ms will be disregarded.
-Date type column sorts based on the date portion, disregards the time portion.
-DateTime column sorts based on the full date
+- `Time`: Column sorts based on the time portion of the object, ms will be disregarded.
+- `Date`: Column sorts based on the date portion, disregards the time portion.
+- `DateTime`: Column sorts based on the full date.
+
 ### Boolean
 
 The default template is using material icons for visualization of boolean values - 'clear' icon for *false* values and 'check' icon for *true* values. As for the editing template, it is using `Checkbox` component.
@@ -169,6 +178,7 @@ The default template is using material icons for visualization of boolean values
 #### Default template
 
 <!-- Angular -->
+
 The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
 
 *By using LOCALE_ID*
@@ -185,7 +195,9 @@ import { LOCALE_ID } from '@angular/core';
 <!-- end: Angular -->
 
 <!-- Blazor -->
+
 The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided {ComponentTitle} `Locale`.
+
 <!-- end: Blazor -->
 
 *By using Grid's locale*
@@ -290,11 +302,11 @@ public formatPercentOptions = this.options;
 
 > Note: When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
 
-## Default editing template
+## Default Editing Template
 
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
 
-## Custom editing template and formatter
+## Custom Editing Template and Formatter
 
 Custom template and column formatter definition will always take precedence over the column data type set:
 
@@ -312,7 +324,7 @@ Custom template and column formatter definition will always take precedence over
 </igx-grid>
 ```
 
-### Column formatter
+### Column Formatter
 
 ```ts
  // Through column formatter property
@@ -338,14 +350,16 @@ TO DO!
 
 ## API References
 
-* GridCell
-* Column `PipeArgs`
-* {ComponentTitle} `Locale`
-* Column `DataType`
+* `GridCell`
+* `Column`
+* `PipeArgs`
+* `{ComponentTitle}`
+* `Locale`
+* `DataType`
 
 ## Additional Resources
 
 * For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
-* [{ComponentTitle} overview topic](overview.md)
-* [Editing topic](editing.md)
-* [Summaries topic](summaries.md)
+* [{ComponentTitle} Overview](overview.md)
+* [Editing](editing.md)
+* [Summaries](summaries.md)
