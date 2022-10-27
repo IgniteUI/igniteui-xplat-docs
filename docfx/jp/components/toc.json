@@ -166,17 +166,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "アバター {ReleaseStatus_WebsInputs}",
+    "name": "アバター",
     "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "カード {ReleaseStatus_WebsInputs}",
+    "name": "カード",
     "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ドック マネージャー {ReleaseStatus_DockManager}",
+    "name": "ドック マネージャー",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -219,12 +219,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "ナビゲーション バー {ReleaseStatus_WebsMenus}",
+    "name": "ナビゲーション バー",
     "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ナビゲーション ドロワー {ReleaseStatus_WebsMenus}",
+    "name": "ナビゲーション ドロワー",
     "href": "menus/navigation-drawer.md"
   },
   {
@@ -472,7 +472,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "リスト {ReleaseStatus_WebsList}",
+    "name": "リスト",
     "href": "grids/list.md"
   },
   {
@@ -993,17 +993,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "バッジ {ReleaseStatus_WebsInputs}",
+    "name": "バッジ",
     "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ボタン {ReleaseStatus_WebsInputs}",
+    "name": "ボタン",
     "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "チェックボックス {ReleaseStatus_WebsInputs}",
+    "name": "チェックボックス",
     "href": "inputs/checkbox.md"
   },
   {
@@ -1013,27 +1013,27 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "チップ {ReleaseStatus_WebsInputs}",
+    "name": "チップ",
     "href": "inputs/chip.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ドロップダウン {ReleaseStatus_WebsInputs}",
+    "name": "ドロップダウン",
     "href": "inputs/dropdown.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "フォーム {ReleaseStatus_WebsInputs}",
+    "name": "フォーム",
     "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "アイコン {ReleaseStatus_WebsInputs}",
+    "name": "アイコン",
     "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "アイコン ボタン {ReleaseStatus_WebsInputs}",
+    "name": "アイコン ボタン",
     "href": "inputs/icon-button.md"
   },
   {
@@ -1049,37 +1049,37 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "入力 {ReleaseStatus_WebsInputs}",
+    "name": "入力",
     "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "マスク入力 {ReleaseStatus_WebsInputs}",
+    "name": "マスク入力",
     "href": "inputs/mask-input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "日時入力 {ReleaseStatus_WebsInputs}",
+    "name": "日時入力",
     "href": "inputs/date-time-input.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "ラジオ & ラジオ グループ {ReleaseStatus_WebsInputs}",
+    "name": "ラジオ & ラジオ グループ",
     "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "選択 {ReleaseStatus_WebsInputs}",
+    "name": "選択",
     "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "評価 {ReleaseStatus_WebsInputs}",
+    "name": "評価",
     "href": "inputs/rating.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "スイッチ {ReleaseStatus_WebsInputs}",
+    "name": "スイッチ",
     "href": "inputs/switch.md"
   },
   {
@@ -1088,12 +1088,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "リップル {ReleaseStatus_WebsInputs}",
+    "name": "リップル",
     "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "スライダー & 範囲スライダー {ReleaseStatus_WebsInputs}",
+    "name": "スライダー & 範囲スライダー",
     "href": "inputs/slider.md"
   },
   {
@@ -1109,17 +1109,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "スナックバー {ReleaseStatus_WebsInputs}",
+    "name": "スナックバー",
     "href": "notifications/snackbar.md"
   },
   {
      "exclude": ["Angular"],
-     "name": "トースト {ReleaseStatus_WebsInputs}",
+     "name": "トースト",
      "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "ダイアログ {ReleaseStatus_WebsInputs}",
+    "name": "ダイアログ",
     "href": "notifications/dialog.md",
     "status": "NEW"
  },
