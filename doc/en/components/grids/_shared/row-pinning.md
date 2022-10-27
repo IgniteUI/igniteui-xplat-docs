@@ -13,8 +13,8 @@ One or multiple rows can be pinned to the top or bottom of the {Platform} UI Gri
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning"
-           github-src="{ComponentSample}/row-pinning"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-options"
+           github-src="{ComponentSample}/row-pinning-options"
            alt="{Platform} {ComponentTitle} Row Pinning Example">
 </code-view>
 

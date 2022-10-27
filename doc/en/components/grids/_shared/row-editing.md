@@ -16,8 +16,8 @@ The following sample demonstrates how to enable row editing in the {ComponentTit
 
 <code-view style="height:550px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing"
-            github-src="{ComponentSample}/row-editing"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-options"
+            github-src="{ComponentSample}/row-editing-options"
             alt="{Platform} {ComponentTitle} Editing Rows Example">
 </code-view>
 

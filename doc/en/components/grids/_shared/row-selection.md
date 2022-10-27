@@ -26,8 +26,8 @@ The sample below demonstrates the three types of {ComponentTitle}'s **row select
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection"
-           github-src="{ComponentSample}/row-selection"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-mode"
+           github-src="{ComponentSample}/row-selection-mode"
            alt="{Platform} {ComponentTitle} Row Selection Example">
 </code-view>
 

@@ -40,8 +40,8 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 <code-view style="height:650px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving"
-            github-src="{ComponentSample}/column-moving"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-options"
+            github-src="{ComponentSample}/column-moving-options"
             alt="{Platform} {ComponentTitle} Column Moving Overview Example">
 </code-view>
 
