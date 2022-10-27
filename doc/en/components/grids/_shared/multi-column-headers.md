@@ -7,7 +7,7 @@ _keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, 
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
 
-The {Platform} {ComponentTitle} supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
+The {Platform} `{ComponentTitle}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
 
 ## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
 
@@ -20,7 +20,6 @@ The {Platform} {ComponentTitle} supports multi-column headers which allow you to
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
 
-<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" [allowFiltering]="true">
     <igx-column-group header="Contact Information">
@@ -34,9 +33,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```razor
 TO-DO GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID">
     <igx-column-group header="Contact Information">
@@ -50,9 +47,7 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO TREEGRID CODE SNIPPET
 ```
-<!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
@@ -74,11 +69,9 @@ TO-DO TREEGRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
 For achieving `n-th` level of nested headers, the declaration above should be followed. So by nesting `ColumnGroup` leads to the desired result.
 
-<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group header="General Information">
@@ -94,9 +87,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```razor
 TO-DO GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group [pinned]="false" header="General Information">
@@ -113,9 +104,7 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO TREEGRID CODE SNIPPET
 ```
-<!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
@@ -132,9 +121,6 @@ TO-DO TREEGRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
 > [!NOTE]
@@ -142,8 +128,6 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 > Moving between `columns` and `column groups` is allowed only when they are at the same level in the hierarchy and both are in the same `group`. <br />
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
 
-
-<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
@@ -158,9 +142,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 ```razor
 TO-DO GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group header="Contact Information">
@@ -175,9 +157,7 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO TREEGRID CODE SNIPPET
 ```
-<!-- ComponentEnd: TreeGrid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
     <igx-column field="CustomerID" sortable="true" resizable="true"></igx-column>
@@ -194,9 +174,6 @@ TO-DO TREEGRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
 
 ## Multi-column Header Template
 
@@ -254,6 +231,8 @@ The following sample demonstrates how to implement collapsible column groups usi
            alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
 
+<!-- Angular -->
+
 ## Styling
 
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
@@ -290,7 +269,7 @@ The last step is to **include** the component mixins:
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the `igx-palette` and `igx-color`functions.
 
@@ -369,9 +348,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 - Using Grid with multi-column headers on IE11 requires the explicit import of the array polyfill in polyfill.ts of the angular application.
 
-    ```typescript
-    import 'core-js/es7/array';
-    ```
+```typescript
+import 'core-js/es7/array';
+```
+
+<!-- end: Angular -->
 
 ## API References
 
@@ -380,7 +361,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-* [Grid overview](grid.md)
+* [Grid Overview](grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -392,12 +373,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-<!-- Angular -->
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-<!-- end: Angular -->
-
-<!-- Blazor -->
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-<!-- end: Blazor -->
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

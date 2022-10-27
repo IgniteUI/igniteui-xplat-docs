@@ -7,7 +7,7 @@ _keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {
 
 # {Platform} {ComponentTitle} Remote Data Operations
 
-The Ignite UI for {Platform} {ComponentTitle} supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the {ComponentTitle}.
+The Ignite UI for {Platform} `{ComponentTitle}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentTitle}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
@@ -18,8 +18,9 @@ The Ignite UI for {Platform} {ComponentTitle} supports remote data operations su
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
-By default, the {ComponentTitle} uses its own logic for performing data operations.
-You can perform these tasks remotely and feed the resulting data to the {ComponentTitle} by taking advantage of certain inputs and events, which are exposed by the {ComponentTitle}.
+By default, the `{ComponentTitle}` uses its own logic for performing data operations.
+
+You can perform these tasks remotely and feed the resulting data to the `{ComponentTitle}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentTitle}`.
 
 <!-- ComponentStart: Grid -->
 
@@ -153,9 +154,7 @@ We will also take advantage of the **rxjs** `debounceTime` function, which emits
 
 ```typescript
 const DEBOUNCE_TIME = 300;
-...
-public ngAfterViewInit() {
-    ...
+public ngAfterViewInit() {    
     this.grid.dataPreLoad.pipe(
         debounceTime(DEBOUNCE_TIME),
         takeUntil(this.destroy$)
@@ -221,9 +220,7 @@ We will also take advantage of the **rxjs** `debounceTime` function, which emits
 
 ```typescript
 const DEBOUNCE_TIME = 300;
-...
-public ngAfterViewInit() {
-    ...
+public ngAfterViewInit() {    
     this.treeGrid.filteringExpressionsTreeChange.pipe(
         debounceTime(DEBOUNCE_TIME),
         takeUntil(this.destroy$)
@@ -240,8 +237,6 @@ BLAZOR CODE SNIPPET HERE
 When remote filtering is provided, usually we do not need the built-in filtering of the Tree Grid. We can disable it by setting the `FilterStrategy` input of the Tree Grid to the `NoopFilteringStrategy` instance.
 
 ```html
-<!-- tree-grid-remote-filtering-sample.html -->
-
 <igx-tree-grid #treeGrid [data]="remoteData | async" primaryKey="ID" foreignKey="ParentID"
                [autoGenerate]="false"
                [filterStrategy]="noopFilterStrategy"
@@ -253,8 +248,6 @@ When remote filtering is provided, usually we do not need the built-in filtering
 ```
 
 ```typescript
-// tree-grid-remote-filtering-sample.ts
-
 public noopFilterStrategy = NoopFilteringStrategy.instance();
 
 public processData() {
@@ -285,13 +278,13 @@ You can see the result of the code from above at the beginning of this article i
 
 ## Unique Column Values Strategy
 
-The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. The {ComponentTitle} generates these values based on its data source by default. In case of remote filtering, the grid data does not contain all the data from the server. In order to provide the unique values manually and load them on demand, we can take advantage of the {ComponentTitle}'s `UniqueColumnValuesStrategy` input. This input is actually a method that provides three arguments:
+The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. The `{ComponentTitle}` generates these values based on its data source by default. In case of remote filtering, the grid data does not contain all the data from the server. In order to provide the unique values manually and load them on demand, we can take advantage of the `{ComponentTitle}`'s `UniqueColumnValuesStrategy` input. This input is actually a method that provides three arguments:
 
-- **column**  - The respective column instance.
-- **filteringExpressionsTree** - The filtering expressions tree, which is reduced based on the respective column.
-- **done** - Callback that should be called with the newly generated column values when they are retrieved from the server.
+- `Column`  - The respective column instance.
+- `FilteringExpressionsTree` - The filtering expressions tree, which is reduced based on the respective column.
+- `Done` - Callback that should be called with the newly generated column values when they are retrieved from the server.
 
-The developer can manually generate the necessary unique column values based on the information, that is provided by the **column** and the **filteringExpressionsTree** arguments and then invoke the **done** callback.
+The developer can manually generate the necessary unique column values based on the information, that is provided by the `Column` and the `FilteringExpressionsTree` arguments and then invoke the `Done` callback.
 
 > [!NOTE]
 > When the `UniqueColumnValuesStrategy` input is provided, the default unique values generating process in the excel style filtering will not be used.
@@ -299,13 +292,11 @@ The developer can manually generate the necessary unique column values based on 
 
 ```html
 <igx-grid #grid1 [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
-    ...
 </igx-grid>
 ```
 
 ```html
 <igx-tree-grid #treeGrid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
-    ...
 </igx-tree-grid>
 ```
 
@@ -368,7 +359,7 @@ In order to provide a custom loading template for the excel style filtering, we 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
-        Loading ...
+        Loading...
     </ng-template>
 </igx-grid>
 ```
@@ -376,7 +367,7 @@ In order to provide a custom loading template for the excel style filtering, we 
 ```html
 <igx-tree-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
-        Loading ...
+        Loading...
     </ng-template>
 </igx-tree-grid>
 ```
@@ -384,7 +375,7 @@ In order to provide a custom loading template for the excel style filtering, we 
 ```html
 <igx-hierarchical-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
     <ng-template igxExcelStyleLoading>
-        Loading ...
+        Loading...
     </ng-template>
 </igx-hierarchical-grid>
 ```
@@ -547,7 +538,7 @@ BLAZOR CODE SNIPPET HERE
 In this sample we will demonstrate how to display a certain number of root records per page no matter how many child records they have. In order to cancel the built-in Tree Grid paging algorithm, which displays a certain number of records no matter their level (root or child), we have to set the `PerPage` property to `Number.MAX_SAFE_INTEGER`.
 
 ```html
-<igx-tree-grid #treeGrid ...>
+<igx-tree-grid #treeGrid>
         <igx-paginator [perPage]="maxPerPage">
         </igx-paginator>
 ```
@@ -565,7 +556,7 @@ Now we can choose between setting-up our own custom paging template or using the
 
 ### Remote paging with default template
 
-If you want to use the default paging template, you need to set the Paginator's `TotalRecords` property, only then the grid will be able to calculate the total page number based on total remote records. When performing a remote pagination the Paginator will pass to the Grid only the data for the current page, so the grid will not try to paginate the provided data source. That's why we should set Grid's `PagingMode` property to `GridPagingMode.remote`. Also it is necessary to either subscribe to `PagingDone` or `PerPageChange` events in order to fetch the data from your remote service, it depends on the use case which event will be used.
+If you want to use the default paging template, you need to set the Paginator's `TotalRecords` property, only then the grid will be able to calculate the total page number based on total remote records. When performing a remote pagination the Paginator will pass to the Grid only the data for the current page, so the grid will not try to paginate the provided data source. That's why we should set Grid's `PagingMode` property to `GridPagingMode.Remote`. Also it is necessary to either subscribe to `PagingDone` or `PerPageChange` events in order to fetch the data from your remote service, it depends on the use case which event will be used.
 
 ```html
 <igx-grid #grid1 [data]="data | async" [isLoading]="isLoading" [pagingMode]="mode">
@@ -802,7 +793,7 @@ After all the changes above, the following result will be achieved.
 </code-view>
 
 <!-- ComponentStart: Grid -->
-### Remote Paging with custom paginator
+### Remote Paging with Custom Paginator
 
 In some cases you may want to define your own paging behavior and this is when we can take advantage of the Paging template and add our custom logic along with it. We are going to extend the Remote Paging example in order to demonstrate this:
 
@@ -868,7 +859,7 @@ BLAZOR CODE SNIPPET HERE
 <!-- ComponentStart: Grid -->
 ### Remote Paging with Batch editing
 
-With the examples so far we clarified how to set up the @@igxName with remote data. Now, let's focus on enabling batch editing for the grid by following the [Batch Editing topic/guide](batch-editing.md).
+With the examples so far we clarified how to set up the `{ComponentName}` with remote data. Now, let's focus on enabling batch editing for the grid by following the [Batch Editing topic/guide](batch-editing.md).
 
 Before continuing with the sample it is good to clarify the current use case. When pagination is done on the server, the grid contains the data only for the current page and if we add new rows the newly added rows (with Batch Editing) will be concatenated with the current data that the grid contains. Therefore, if the server returns no data for a given page, grid's data source will be consisted only from the newly added rows, which the grid will paginate based on the defined pagination settings (page, perPage).
 
@@ -915,7 +906,7 @@ public paginate(page: number) {
 BLAZOR CODE SNIPPET HERE
 ```
 
-As you can see in the **paginate** method, custom pagination logic is performed, based on the `TotalPagesOnServer` value.
+As you can see in the `Paginate` method, custom pagination logic is performed, based on the `TotalPagesOnServer` value.
 
 #### Remote Paging with Batch Editing Demo
 
@@ -932,10 +923,10 @@ As you can see in the **paginate** method, custom pagination logic is performed,
 
 - When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
-    * Row Selection
-    * Row Expand/collapse
-    * Row Editing
-    * Row Pinning
+* Row Selection
+* Row Expand/collapse
+* Row Editing
+* Row Pinning
 
 ## API References
 
@@ -956,12 +947,5 @@ As you can see in the **paginate** method, custom pagination logic is performed,
 
 Our community is active and always welcoming to new ideas.
 
-<!-- Angular -->
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-<!-- end: Angular -->
-
-<!-- Blazor -->
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-<!-- end: Blazor -->
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

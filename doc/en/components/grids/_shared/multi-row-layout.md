@@ -79,13 +79,13 @@ The following features are currently **not** supported:
 
 `{ComponentTitle}` with Multi-Row Layouts provides build-in keyboard navigation.
 
-### Horizontal nagivation
+### Horizontal Navigation
 
 * <kbd>Arrow Left</kbd> or <kbd>Arrow Right</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>Arrow Left</kbd> and <kbd>Arrow Right</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
 * <kbd>Ctrl</kbd> + <kbd>Arrow Left</kbd> (<kbd>HOME</kbd>) or <kbd>Ctrl</kbd> + <kbd>Arrow Right</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
 
 
-### Vertical nagivation
+### Vertical Navigation
 
 * <kbd>Arrow Up</kbd> or <kbd>Arrow Down</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
 * <kbd>Ctrl</kbd> + Arrow Up</kbd> or <kbd>Ctrl</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
@@ -127,7 +127,12 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 * Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
 * Set columns in the preview by dragging a column chip in the place your will want it to be.
 * Add/Remove new columns by using the `Add Column` chip.
+
+<!-- Angular -->
+
 * Get template output of the whole configuration ready to by placed inside an `{ComponentTitle}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
+
+<!-- end: Angular -->
 
 By default we have set the same columns as our previous sample, but it can be cleared and configured to match your desired configuration.
 
@@ -138,13 +143,15 @@ By default we have set the same columns as our previous sample, but it can be cl
            alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
 </code-view>
 
+<!-- Angular -->
+
 ## Styling
 
 The `{ComponentTitle}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
 
-### Importing global theme
+### Importing Global Theme
 
 To begin the customization of the Multi-row Layout feature, you need to import the `Index` file, where all styling functions and mixins are located.
 
@@ -155,7 +162,7 @@ To begin the customization of the Multi-row Layout feature, you need to import t
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-### Defining custom theme
+### Defining Custom Theme
 
 Next, create a new theme, that extends the `GridTheme` and accepts the parameters, required to customize the feature layout as desired.
 
@@ -172,7 +179,7 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Defining a custom color palette
+### Defining a Custom Color Palette
 
 In the approach, that was described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `Palette` and `Color` functions.
 
@@ -203,7 +210,7 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Defining custom schemas
+### Defining Custom Schemas
 
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 
@@ -234,7 +241,7 @@ $my-custom-schema: extend($light-schema, (
 );
 ```
 
-### Applying the custom theme
+### Applying the Custom Theme
 
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
 
@@ -242,7 +249,7 @@ The easiest way to apply your theme is with a `sass` `@include` statement in the
 @include grid($custom-theme);
 ```
 
-### Scoped component theme
+### Scoped Component Theme
 
 In order for the custom theme do affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
 
@@ -273,11 +280,12 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
+<!-- end: Angular -->
 
 ## API References
 
 * `{ComponentTitle}`
-* `ColumnLayoutComponent`
+* `ColumnLayout`
 * `Column`
 
 ## Additional Resources
@@ -290,12 +298,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 Our community is active and always welcoming to new ideas.
 
-<!-- Angular -->
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-<!-- end: Angular -->
-
-<!-- Blazor -->
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-<!-- end: Blazor -->
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
