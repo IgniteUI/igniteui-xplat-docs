@@ -20,8 +20,8 @@ The {ComponentTitle} provides a convenient way to perform data manipulations thr
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-add-row"
-           github-src="{ComponentSample}/add-row"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-adding"
+           github-src="{ComponentSample}/row-adding"
            alt="{Platform} {ComponentTitle} Row Adding Example">
 </code-view>
 
