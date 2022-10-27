@@ -18,8 +18,8 @@ The Ignite UI for {Platform} `{ComponentTitle}` has a built-in column hiding UI,
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding"
-           github-src="{ComponentSample}/column-hiding"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
+           github-src="{ComponentSample}/column-hiding-toolbar"
            alt="{Platform} {ComponentTitle} Column Hiding Example">
 </code-view>
 

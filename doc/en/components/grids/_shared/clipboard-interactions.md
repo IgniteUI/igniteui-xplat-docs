@@ -14,8 +14,8 @@ Copy to clipboard operations are now available in the `{ComponentTitle}`. This f
 
 <code-view style="height:635px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-clipboard-operations-sample"
-           github-src="{ComponentSample}/clipboard-operations-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-clipboard-operations"
+           github-src="{ComponentSample}/clipboard-operations"
            alt="{Platform} {ComponentTitle} Clipboard Interactions Example">
 </code-view>
 
