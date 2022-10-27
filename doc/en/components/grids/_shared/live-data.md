@@ -14,35 +14,27 @@ The {ComponentTitle} component is able to handle thousands of updates per second
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
 Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show `Category Prices per Region` data for the selected rows and the `Chart` column button will show the same for the current row.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
-           alt="Angular Live-data Update Example">
-</code-view>
-
 
 ## Data binding and updates
 
 A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
 
-```html
-<igx-grid #grid [data]="data"></igx-grid>
+```Razor
+<IgbDataGrid data="data"><IgbDataGrid>
 ```
 
 ```typescript
-public ngOnInit() {
     this.localService.getData(this.volume);
     this.volumeSlider.onValueChange.subscribe(x => this.localService.getData(this.volume);
     this.localService.records.subscribe(x => { this.data = x; });
-}
 ```
 
-Angular pipes are used internally to update the grid view. A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding), because the Angular pure pipe will not detect a change in a nested property. To resolve the situation, provide a new object reference for the data object containing the property. Example:
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
-```html
-<igx-grid #grid [data]="data">
-    <igx-column field="price.usd"></igx-column>
-</igx-grid>
+```Razor
+<IgbDataGrid data="data">
+    <IgbTextColumn field="price.usd"/>
+</IgbDataGrid>
 ```
 
 ```typescript
@@ -59,22 +51,11 @@ private updateData(data: IRecord[]) {
 ## Templates
 Updating the view works the same way for columns with a default template and for columns with a custom template. However, it is recommended to keep custom templates relatively simple. As number of elements in the template grows, negative performance impact rises as well.
 
-## Live-data feed with Dock Manager and igxGrid Components
-
-The purpose of this demo is to showcase a financial screen board with Real-time data stream using a [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) hub back-end.
-As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
-
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
-           alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
-</code-view>
-
 ### Start the hub connection
 
 The signal-r.service handles the connectivity and updates of the exposed manageable parameters *frequency*, *volume* and *live-update state toggle* (Start/Stop).
 
-```razor
+```ts
 this.hubConnection = new signalR.HubConnectionBuilder()
         .configureLogging(signalR.LogLevel.Trace)
         .withUrl('https://www.infragistics.com/angular-apis/webapi/streamHub')
@@ -97,7 +78,7 @@ By using the Action panel on the left, you can manage the frequency of the data 
 
 We use the `updateParameters` method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
 
-```razor
+```ts
 this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll)
     .then(() => console.log('requestLiveData', volume))
     .catch(err => {
@@ -114,7 +95,7 @@ Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build y
 
 ## API References
 * `{ComponentName}`
-* `IgxGridCell`
+* `Cell`
 * `BaseTransactionService`
 
 ## Additional Resources

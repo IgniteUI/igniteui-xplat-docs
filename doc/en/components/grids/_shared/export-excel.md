@@ -13,66 +13,21 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
   The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
 </p>
 
-## {Platform} Excel Exporter Example
-
-
-<code-view style="height: 800px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
-           alt="{Platform} {ComponentTitle} Excel Exporter Example">
-</code-view>
-
-
-
 ## Exporting {Component}'s Data
 
 To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
 
-```razor
-// app.module.ts
+```ts
 import { ExcelExporterService } from 'igniteui-{Platform}';
 
-@NgModule({
-  providers: [ ExcelExporterService ]
-})
-
-export class AppModule {}
 ```
-
-> [!Note]
-> In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
-
-> [!NOTE]
-> The Excel Exporter service has a peer dependency on the JSZip library. The JSZip library should be installed when using the Excel Exporter.
-
 To initiate an export process you may use the handler of a button in your component's template.
 
-```html
-<{ComponentTitle} #{ComponentTitle} [data]="localData" [autoGenerate]="true"></{ComponentTitle}>
+```Razor
+<{ComponentTitle} #{ComponentTitle} data="localData" ></{ComponentTitle}>
 <button (click)="exportButtonHandler()">Export {ComponentTitle} to Excel</button>
 ```
-
-You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
-
-Here is the code which will execute the export process in the component's razor file:
-
-```razor
-// component.ts
-import { ExcelExporterService, ExcelExporterOptions } from 'igniteui-{Platform}';
-import { {Component} } from 'igniteui-{Platform}';
-
-@ViewChild('{ComponentTitle}') public {ComponentTitle}: {ComponentTitle}Component;
-
-constructor(private excelExportService: ExcelExporterService) {
-}
-
-public exportButtonHandler() {
-  this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
-}
-```
-
-If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format.
+You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the 
 
 ## Export All Data
 
@@ -83,21 +38,6 @@ public exportButtonHandler() {
   this.excelExportService.exportData(this.localData, new ExcelExporterOptions('ExportedDataFile'));
 }
 ```
-
-<!-- ComponentStart: Grid -->
-## Export Grouped Data
-
-To export grouped data you just need to group the {Component} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format grouped by the selected column. Example:
-
-
-<code-view style="height: 800px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
-           alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
-</code-view>
-
-<!-- ComponentEnd: Grid -->
 
 ## Export Multi Column Headers Grid
 
@@ -131,9 +71,7 @@ In the above examples the Excel Exporter service was exporting all available dat
 
 The following example will exclude a column from the export if its header is "Age" and if its index is 1:
 
-```razor
-// component.ts
-
+```ts
 this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventArgs) => {
   if (args.header == 'Age' && args.columnIndex == 1) {
       args.cancel = true;
@@ -173,7 +111,7 @@ When you are exporting data from the {Component} component, the export process t
 npm install --save setimmediate
 ```
 
-```razor
+```ts
 import 'setimmediate';
 ```
 
