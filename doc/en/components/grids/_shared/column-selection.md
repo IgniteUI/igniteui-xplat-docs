@@ -85,6 +85,7 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 
 More information regarding the API manipulations could be found in the [`API References`](#api-references) section.
 
+<!-- Angular -->
 ## Styling
 Before diving into the styling options, the core module and all component mixins need to be imported.
 
@@ -93,10 +94,6 @@ Before diving into the styling options, the core module and all component mixins
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-```
-
-```razor
-TO DO
 ```
 
 >[!NOTE]
@@ -119,10 +116,6 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-```razor
-TO DO
-```
-
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
@@ -135,10 +128,6 @@ $custom-grid-theme: grid-theme(
     $header-selected-text-color: #ECAA53,
     $header-selected-background: #011627
 );
-```
-
-```razor
-TO DO
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -158,14 +147,8 @@ The last step is to include the custom `{ComponentSelector}` theme.
 @include css-vars($custom-grid-theme)
 ```
 
-```razor
-TO DO
-```
-
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
-
-<!-- Angular -->
 
 >[!NOTE]
 >If the component is using the [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
@@ -178,12 +161,6 @@ In order to style components for Internet Explorer 11, we have to use a differen
 }
 ```
 
-<!-- end: Angular -->
-
-```razor
-TO DO
-```
-
 ### Demo
 
 <code-view style="height:570px"
@@ -193,6 +170,8 @@ TO DO
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
+
+<!-- end: Angular -->
 
 ## <a name="api-references"></a>API References
 

@@ -294,11 +294,10 @@ public formatPercentOptions = this.options;
 
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
 
+<!-- Angular -->
 ## Custom editing template and formatter
 
 Custom template and column formatter definition will always take precedence over the column data type set:
-
-<!-- Angular -->
 
 ### Custom Template
 
@@ -329,12 +328,7 @@ public init(column: IgxColumnComponent) {
             return;
 }
 ```
-
 <!-- end: Angular -->
-
-```razor
-TO DO!
-```
 
 ## API References
 

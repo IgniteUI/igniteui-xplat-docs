@@ -96,10 +96,6 @@ public onResize(event) {
 }
 ```
 
-```razor
-TO DO!
-```
-
 <!-- ComponentEnd: TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -116,10 +112,6 @@ public onResize(event) {
     this.pWidth = event.prevWidth;
     this.nWidth = event.newWidth;
 }
-```
-
-```razor
-TO DO!
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -159,10 +151,6 @@ This means that the following configuration is possible:
 </igx-tree-grid>
 ```
 
-```razor
-TO DO!
-```
-
 <!-- ComponentEnd: TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -174,10 +162,6 @@ TO DO!
         <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
         ...
 </igx-hierarchical-grid>
-```
-
-```razor
-TO DO!
 ```
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -350,10 +334,9 @@ This approach is more performance optimized than auto-sizing post initialization
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
+<!-- Angular -->
 ## Styling
 To get started with the styling of the {ComponentTitle} column resize line, we need to import the index file, where all the theme functions and component mixins live:
-
-<!-- Angular -->
 
 ```scss
 @use "igniteui-angular/theming" as *;

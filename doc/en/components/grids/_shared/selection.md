@@ -59,6 +59,7 @@ The `Selectable` property enables you to specify the following options for each 
 
 > Go to [Column selection topic](column-selection.md) for more information.
 
+<!-- Angular -->
 <!-- ComponentStart: Grid -->
 
 ## {Platform} {ComponentTitle} Context Menu
@@ -100,10 +101,6 @@ public rightClick(eventArgs: any) {
 }
 ```
 
-```razor
-TO DO
-```
-
 The context menu will have the following functions:
 - Copy the selected cell's *value*
 - Copy the selected cell's *dataRow*
@@ -131,10 +128,6 @@ public copySelectedCells(event) {
 }
 ```
 
-```razor
-TO DO
-```
-
 The {ComponentName} will fetch the copied data and will paste it in a container element.
 
 The template we are going to use to combine the grid with the context menu:
@@ -159,10 +152,6 @@ The template we are going to use to combine the grid with the context menu:
 </div>
 ```
 
-```razor
-TO DO
-```
-
  Select multiple cells and press the `right mouse` button. The context menu will appear and after selecting `Copy cells data` the selected data will appear in the right empty box.
  The result is:
 
@@ -173,6 +162,7 @@ TO DO
 </code-view>
 
 <!-- ComponentEnd: Grid -->
+<!-- end: Angular -->
 
 ## Known Issues and Limitations
 
