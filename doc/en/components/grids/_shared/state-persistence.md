@@ -359,8 +359,8 @@ setState snippet
 
 <code-view style="height:763px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-state"
-           github-src="{ComponentSample}/state" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-state"
+           github-src="{ComponentSample}/data-persistence-state" >
 </code-view>
 
 
@@ -423,8 +423,8 @@ Add snippet for blazor for restore state
 
 <code-view style="height:580px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-noop-persistence"
-           github-src="{ComponentSample}/noop-persistence" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-noop"
+           github-src="{ComponentSample}/data-persistence-noop" >
 
 </code-view>
 

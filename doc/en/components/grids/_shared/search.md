@@ -16,7 +16,7 @@ The following example represents {ComponentTitle} with search input box that all
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-search-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
            alt="{Platform} {ComponentTitle} Search Example">
 </code-view>
 
@@ -347,7 +347,7 @@ To do this, let's go and grab the `Input`, `Icon`, `IconButton` and the `Chip` m
 
 // eg. Program.cs register the following:
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGridModule), 
+    typeof(IgbGridModule),
     typeof(IgbInputModule),
     typeof(IgbIconButtonModule),
     typeof(IgbIconModule)

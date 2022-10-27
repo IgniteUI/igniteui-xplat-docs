@@ -13,8 +13,8 @@ The Ignite UI for {Platform} {ComponentTitle} supports remote data operations su
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering"
-           github-src="{ComponentSample}/remote-filtering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering-data"
+           github-src="{ComponentSample}/remote-filtering-data"
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
@@ -74,8 +74,8 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sample-4"
-           github-src="{ComponentSample}/sample-4"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-operations"
+           github-src="{ComponentSample}/data-performance-operations"
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
@@ -140,8 +140,8 @@ BLAZOR CODE SNIPPET HERE
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sample-5"
-           github-src="{ComponentSample}/sample-5"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-infinite-scroll"
+           github-src="{ComponentSample}/data-performance-infinite-scroll"
            alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example">
 </code-view>
 
@@ -640,8 +640,8 @@ BLAZOR CODE SNIPPET HERE
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-default-template"
-           github-src="{ComponentSample}/remote-paging-default-template"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-template"
+           github-src="{ComponentSample}/remote-paging-template"
            alt="{Platform} {ComponentTitle} Remote Paging Default Template Example">
 </code-view>
 
@@ -796,8 +796,8 @@ After all the changes above, the following result will be achieved.
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-sample"
-           github-src="{ComponentSample}/remote-paging-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-data"
+           github-src="{ComponentSample}/remote-paging-data"
            alt="{Platform} {ComponentTitle} Remote Paging Custom Template Example">
 </code-view>
 
@@ -808,8 +808,8 @@ In some cases you may want to define your own paging behavior and this is when w
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-remote-paging-sample"
-           github-src="{ComponentSample}/custom-remote-paging-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-custom"
+           github-src="{ComponentSample}/remote-paging-custom"
            alt="{Platform} {ComponentTitle} Remote Paging Custom Paging Example">
 </code-view>
 

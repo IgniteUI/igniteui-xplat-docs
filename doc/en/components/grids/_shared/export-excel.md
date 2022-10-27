@@ -19,7 +19,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
            alt="{Platform} {ComponentTitle} Excel Exporter Example">
 </code-view>
 
@@ -93,7 +93,7 @@ To export grouped data you just need to group the {Component} by one or more col
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-export-excel-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
            alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
 </code-view>
 

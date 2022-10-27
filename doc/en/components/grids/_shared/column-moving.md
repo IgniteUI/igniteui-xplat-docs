@@ -265,10 +265,9 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-moving-styled"
-           github-src="{ComponentSample}/moving-styled"
-           alt="{Platform} {ComponentTitle} Grid Moving Styled Example"
-            >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-styles"
+           github-src="{ComponentSample}/column-moving-styles"
+           alt="{Platform} {ComponentTitle} Grid Moving Styled Example">
 </code-view>
 
 >[!NOTE]

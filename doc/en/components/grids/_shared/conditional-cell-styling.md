@@ -186,8 +186,8 @@ Add Hierarchical markup
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-rowStyles-sample"
-           github-src="{ComponentSample}/rowStyles-sample" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-styles"
+           github-src="{ComponentSample}/row-styles" >
 </code-view>
 
 ## {ComponentTitle} Conditional Cell Styling
@@ -500,8 +500,8 @@ Add similar handling
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-cellStyling"
-           github-src="{ComponentSample}/cell-cellStyling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-2"
+           github-src="{ComponentSample}/conditional-cell-style-2" >
 </code-view>
 
 ## Known Issues and Limitations

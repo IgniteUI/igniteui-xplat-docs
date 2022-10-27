@@ -19,8 +19,8 @@ Additionally there is a custom contextmenu added for sorting using **{ComponentS
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting"
-           github-src="{ComponentSample}/sorting">
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-options"
+           github-src="{ComponentSample}/column-sorting-options">
 </code-view>
 
 This is done via the `Sortable` input. With the {ComponentTitle} sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
@@ -45,8 +45,8 @@ The **{ComponentName}** provides a solution for this problem by indicating the i
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting-indicators"
-           github-src="{ComponentSample}/sorting-indicators" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-indicators"
+           github-src="{ComponentSample}/column-sorting-indicators" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -283,8 +283,8 @@ Add Styling section for Blazor
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting-styling"
-           github-src="{ComponentSample}/sorting-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-style"
+           github-src="{ComponentSample}/column-sorting-style" >
 </code-view>
 
 >[!NOTE]

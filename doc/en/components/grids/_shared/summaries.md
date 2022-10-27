@@ -14,8 +14,8 @@ The {Platform} UI {ComponentTitle} in {ProductName} has a **summaries** feature 
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary"
-           github-src="{ComponentSample}/summary" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
+           github-src="{ComponentSample}/data-summary-options" >
 </code-view>
 
 > [!NOTE]
@@ -371,8 +371,8 @@ Add blazor snippet for my summary
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-allData-summaries"
-           github-src="{ComponentSample}/allData-summaries" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
+           github-src="{ComponentSample}/data-summary-options" >
 </code-view>
 
 ### Summary Template
@@ -401,8 +401,8 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary-template"
-           github-src="{ComponentSample}/summary-template" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-template"
+           github-src="{ComponentSample}/data-summary-template" >
 </code-view>
 
 ## Formatting summaries
@@ -432,8 +432,8 @@ Add custom summary formatter snippets for blazor
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary-formatter"
-           github-src="{ComponentSample}/summary-formatter" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
+           github-src="{ComponentSample}/data-summary-formatter" >
 </code-view>
 
 <!-- ComponentStart: Grid -->
@@ -461,8 +461,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary"
-           github-src="{ComponentSample}/groupby-summary" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-options"
+           github-src="{ComponentSample}/groupby-summary-options" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -490,8 +490,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 <code-view style="height:720px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-summary2"
-           github-src="{ComponentSample}/summary2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-children"
+           github-src="{ComponentSample}/data-summary-children" >
 </code-view>
 
 <!-- ComponentEnd: TreeGrid -->

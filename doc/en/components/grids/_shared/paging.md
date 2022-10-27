@@ -15,8 +15,8 @@ The following example represents {ComponentTitle} pagination and exposes the opt
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-sample"
-           github-src="{ComponentSample}/paging-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
+           github-src="{ComponentSample}/row-paging-basic"
            alt="{Platform} {ComponentTitle} Pagination Example">
 </code-view>
 
@@ -171,8 +171,8 @@ TO-DO H-GRID CODE SNIPPET
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-reusable-paginator"
-           github-src="{ComponentSample}/reusable-paginator"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
+           github-src="{ComponentSample}/row-paging-options"
            alt="{Platform} {ComponentTitle} Reusable Paginator Example">
 </code-view>
 
@@ -363,8 +363,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-style"
-           github-src="{ComponentSample}/paging-style"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
+           github-src="{ComponentSample}/row-paging-style"
            alt="{Platform} {ComponentTitle} Paging Style Example">
 </code-view>
 

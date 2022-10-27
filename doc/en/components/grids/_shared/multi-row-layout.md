@@ -13,8 +13,8 @@ Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. Th
 
 <code-view style="height:755px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout"
-           github-src="{ComponentSample}/multi-row-layout"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-options"
+           github-src="{ComponentSample}/multi-row-layout-options"
            alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example">
 </code-view>
 
@@ -112,8 +112,8 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-mrl-custom-navigation"
-           github-src="{ComponentSample}/mrl-custom-navigation"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-mrl-navigation"
+           github-src="{ComponentSample}/custom-mrl-navigation"
            alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
 

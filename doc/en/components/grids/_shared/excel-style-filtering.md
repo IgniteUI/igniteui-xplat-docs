@@ -172,7 +172,7 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
 
 ## Templates
 
-TODO: check when decide how to support directives
+<!-- TODO: check when decide how to support directives -->
 
 If you want to further customize the Excel style filter menu without disabling the column features you could use custom templates. The Excel Style filter menu provides two directives for templating:
 - `IgxExcelStyleColumnOperationsTemplateDirective` - re-templates the area with all column operations like sorting, pinning, etc.
@@ -344,8 +344,8 @@ The following sample demonstrates how to format the numeric values of a column a
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
-           github-src="{ComponentSample}/formatted-filtering-strategy" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
+           github-src="{ComponentSample}/filtering-strategy" >
 </code-view>
 
 >[!NOTE]

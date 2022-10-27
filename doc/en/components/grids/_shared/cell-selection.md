@@ -22,8 +22,8 @@ The sample below demonstrates the three types of `{ComponentTitle}`'s **cell sel
 
 <code-view style="height:750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection"
-           github-src="{ComponentSample}/cell-selection"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
+           github-src="{ComponentSample}/cell-selection-mode"
            alt="{Platform} {ComponentTitle} Cell Selection Example">
 </code-view>
 
@@ -49,8 +49,8 @@ How to select cells:
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection"
-           github-src="{ComponentSample}/multi-cell-selection"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"
+           github-src="{ComponentSample}/multi-cell-selection-mode"
            alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
 </code-view>
 

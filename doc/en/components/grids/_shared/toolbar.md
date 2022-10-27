@@ -372,7 +372,7 @@ that simulates a long running operation in the grid:
 
 <code-view style="height: 370px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-exporting-visualization" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator" >
 </code-view>
 
 
