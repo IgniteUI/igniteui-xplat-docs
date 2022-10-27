@@ -16,7 +16,7 @@ The following example represents {ComponentTitle} with search input box that all
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-search-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
            alt="{Platform} {ComponentTitle} Search Example">
 </code-view>
 
