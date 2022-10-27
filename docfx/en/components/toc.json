@@ -453,6 +453,12 @@
         "name": "Virtualization and performance",
         "href": "grids/lob-grid/virtualization.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
+        "status": "NEW"
       }
     ]
   },
@@ -652,6 +658,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -890,6 +902,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
