@@ -243,6 +243,12 @@
         "name": "複数列ヘッダー",
         "href": "grids/lob-grid/multi-column-headers.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
+        "status": "NEW"
       }
     ]
   },
@@ -256,6 +262,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/hierarchical-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -284,6 +296,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
         "href": "grids/tree-grid/multi-column-headers.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
