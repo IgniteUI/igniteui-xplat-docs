@@ -91,25 +91,7 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
-### Select Range
-
-`SelectRange` - Select a range of cells with the API. `RowStart` and `RowEnd` should use row indexes and `ColumnStart` and `ColumnEnd` could use column index or column data field value.
-
-```typescript
-const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
-this.grid1.selectRange(range);
-
-const range = { rowStart: 0, rowEnd: 2, columnStart: 'Name', columnEnd: 'ParentID' };
-this.grid1.selectRange(range);
-```
-
-> [!NOTE]
-> Select range is additive operation. It will not clear your previous selection.
-
-### Clear Cell Selection
-
-`ClearCellSelection` will clear the current cell selection.
-
+<!-- Angular -->
 ### Get Selected Data
 
 `GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
@@ -170,7 +152,7 @@ expectedData = [
 > [!NOTE]
 > `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
-
+<!-- end: Angular -->
 
 ## Features Integration
 
