@@ -16,9 +16,9 @@ The Advanced filtering provides a dialog which allows the creation of groups wit
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
            alt="{Platform} {ComponentTitle} Advanced Filtering Example"
-           github-src="{ComponentSample}/advanced-filtering-sample">
+           github-src="{ComponentSample}/advanced-filtering-options">
 </code-view>
 
 
