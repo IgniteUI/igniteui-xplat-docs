@@ -110,8 +110,8 @@ import { {ComponentName}Component } from 'igniteui-{Platform}';
 
 @Component({
     selector: 'app-grid-row-edit',
-    styleUrls: [`grid-row-editing-sample.component.css`],
-    templateUrl: 'grid-row-editing-sample.component.html'
+    styleUrls: [`app-grid-row-edit.component.css`],
+    templateUrl: 'app-grid-row-edit.component.html'
 })
 export class {ComponentName}RowEditSampleComponent {
     @ViewChild('gridRowEdit', { read: {ComponentName}Component }) public gridRowEdit: {ComponentName}Component;

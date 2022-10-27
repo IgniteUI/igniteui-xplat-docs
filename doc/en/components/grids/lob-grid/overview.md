@@ -1,7 +1,7 @@
 ---
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
-_keywords: {Platform}, {ProductName}, getting started, grid
+_keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Grid']
 ---
 
@@ -41,12 +41,13 @@ Boston Marathon 2021 – In this grid example, you can see how users can do both
 <div class="divider--half"></div>
 
 ## Getting Started with Ignite UI for {Platform} Grid
-### Dependencies
 
+### Dependencies
 
 To get started with the {Platform} grid, first you need to install the Ignite UI for {Platform} package.
 
 <!-- Blazor -->
+
 Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Getting Started](..\general-getting-started.md)
 - [Adding Nuget Package](..\general-nuget-feed.md)
@@ -54,15 +55,15 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards, you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-
 </pre>
+
 <!-- end: Blazor -->
 
 ### Component Modules
 
 Open the Program.cs
 ```razor
-builder.Services.AddIgniteUIBlazor(typeof({ComponentModule}));
+builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
 
 ### Usage
@@ -73,25 +74,27 @@ Now that we have the grid package imported, let’s get started with the basic c
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
 ```
 
-The **id** property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
+The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
 
 The `AutoGenerate` property tells the grid to auto generate the grid's `ColumnComponent` based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
 ## Bootstrap Grid Definition
-<p>Ignite UI for {Platform} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The Ignite UI for {Platform} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The Ignite UI for {Platform} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize. </p>
+
+Ignite UI for {Platform} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The Ignite UI for {Platform} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The Ignite UI for {Platform} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
 
 ## Editable Grid
-<p>Each operation for grid editing includes Batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.</p>
+
+Each operation for grid editing includes batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.
 
 Following this topic you will learn more about [cell template](grid.md#cell-template) and [cell editing template](grid.md#cell-editing-template) and editing.
 
 ## Grid Column Configuration
 
-`ColumnComponent` is used to define the grid's `columns` collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
+`Column` is used to define the grid's `Columns` collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
 
 ### Defining Columns
 
-Let's turn the `autoGenerate` property off and define the columns collection in the markup:
+Let's turn the `AutoGenerate` property off and define the columns collection in the markup:
 
 ```html
 <igx-grid #grid1 [data]="data | async" [autoGenerate]="false" (columnInit)="initColumns($event)"
@@ -107,6 +110,8 @@ Let's turn the `autoGenerate` property off and define the columns collection in 
     </igx-paginator>
 </igx-grid>
 ```
+
+<!-- Angular -->
 
 Each of the columns of the grid can be templated separately. The column expects `ng-template` Angular grid module directives.
 
@@ -124,6 +129,8 @@ It also expose `additionalTemplateContext input` that can be used for custom pro
 public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1'};
 ```
 
+<!-- end: Angular -->
+
 ### Header Template
 
 `Header` targets the column header providing as a context the column object itself.
@@ -137,7 +144,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 ```
 
 >[!NOTE]
->Whenever a header template is used along with grouping/moving functionality the *column header area* becomes **draggable** and you cannot access the custom elements part of the header template until you mark them as **not draggable**. Example below.
+>Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
 <igx-column #col field="ProductName" header="Product Name"
@@ -149,7 +156,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
     </ng-template>
 </igx-column>
 ```
-As you can see, we are adding **draggable** attribute set to *false*.
+As you can see, we are adding `Draggable` attribute set to false.
 
 ### Cell Template
 
@@ -163,7 +170,7 @@ As you can see, we are adding **draggable** attribute set to *false*.
 </igx-column>
 ```
 
-In the snippet above we "take" a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
+In the snippet above we take a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
 
 ```html
 <igx-grid #grid [data]="data">
@@ -182,19 +189,27 @@ In the snippet above we "take" a reference to the implicitly provided cell value
 <igx-grid>
 ```
 
+<!-- Angular -->
+
 When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](../_shared/cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](../_shared/summaries.md), [selection](../_shared/selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
+
+<!-- end: Angular -->
 
 > [!NOTE]
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
+<!-- Angular -->
+
 If the data in a cell is bound with `[(ngModel)]` and the value change is not handled, the new value will **not** be properly updated in the Angular grid's underlying data source. When dealing with cell editing with a custom template, it is strongly advised to use the cell's **cell editing template**.
 
-When properly implemented, the cell editing template also ensures that the cell's `editValue` will correctly pass through the grid [editing event cycle](editing.md#event-arguments-and-sequence).
+<!-- end: Angular -->
+
+When properly implemented, the cell editing template also ensures that the cell's `EditValue` will correctly pass through the grid [editing event cycle](editing.md#event-arguments-and-sequence).
 
 ### Cell Editing Template
 
 The column also accepts one last template that will be used when a cell is in edit mode. As with the other column templates, the provided context object is again the cell value and the cell object itself. Of course in order to make the edit-mode template accessible to end users, you need
-to set the `editable` property of the `ColumnComponent` to `true`.
+to set the `Editable` property of the `Column` to true.
 
 ```html
 <igx-column dataType="number" editable="true" field="Price">
@@ -207,11 +222,11 @@ to set the `editable` property of the `ColumnComponent` to `true`.
 </igx-column>
 ```
 
-Make sure to check the API for the `IgxGridCell` in order to get accustomed with the provided properties you can use in your templates.
+Make sure to check the API for the `GridCell` in order to get accustomed with the provided properties you can use in your templates.
 
 ### Column Template API
 
-Each of the column templates can be changed programmatically at any point through the `IgxColumnComponent` object itself. For example in the code below, we have declared two templates for our user data. In our TypeScript code we'll get references to the templates themselves and then based on some condition we will render the appropriate template for the column in our application.
+Each of the column templates can be changed programmatically at any point through the `Column` object itself. For example in the code below, we have declared two templates for our user data. In our TypeScript code we'll get references to the templates themselves and then based on some condition we will render the appropriate template for the column in our application.
 
 ```html
 <igx-grid>
@@ -243,7 +258,7 @@ const column = this.grid.getColumnByName("User");
 column.bodyTemplate = this.smallView;
 ```
 
-Column properties can also be set in code in the `columnInit` event which is emitted when the columns are initialized in the grid.
+Column properties can also be set in code in the `ColumnInit` event which is emitted when the columns are initialized in the grid.
 
 ```typescript
 public initColumns(column: IgxGridColumn) {
@@ -261,11 +276,11 @@ The code above will make the **ProductName** column sortable and editable and wi
 
 There are optional parameters for formatting:
 
-- `format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to `'MMM d, y'`
-- `timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
-- `digitsInfo` - decimal representation objects. Default to `'1.0-3'`
+- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to `'MMM d, y'`
+- `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
+- `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
 
-To allow customizing the display format by these parameters, the `pipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `pipeArgs` is set. Example:
+To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
 
 ```typescript
 const pipeArgs: IColumnPipeArgs = {
@@ -279,13 +294,13 @@ const pipeArgs: IColumnPipeArgs = {
 <igx-column field="UnitPrice" dataType="number" [pipeArgs]="pipeArgs"></igx-column>
 ```
 
-The `OrderDate` column will respect only the `format` and `timezone` properties, while the `UnitPrice` will only respect the `digitsInfo`.
+The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
 
 All available column data types could be found in the official [Column types topic](../_shared/column-types.md#default-template).
 
 ## Grid Data Structure
 
-The `GridComponent` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -343,9 +358,13 @@ import { of } from 'rxjs/observable/of';
 import { catchError, map } from 'rxjs/operators';
 ```
 
-We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every Angular service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
+We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every {Platform} service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
+
+<!-- Angular -->
 
 **Note**: Before Angular 5 the `HttpClient` was located in `@angular/http` and was named `Http`.
+
+<!-- end: Angular -->
 
 Since we will receive a JSON response containing an array of records, we may as well help ourselves by specifing what kind of data we're expecting to be returned in the observable by defining an interface with the correct shape. Type checking is always recommended and can save you some headaches down the road.
 
@@ -367,7 +386,7 @@ export interface NorthwindRecord {
 }
 ```
 
-The service itself is pretty simple consisting of one method: `fetchData` that will return an `Observable<NorthwindRecord[]>`. In cases when the request fails for any reason (server unavailable, network error, etc), the `HttpClient` will return an error. We'll leverage the `catchError` operator which intercepts an _Observable_ that failed and passes the error to an error handler. Our error handler will log the error and return a safe value.
+The service itself is pretty simple consisting of one method: `FetchData` that will return an `Observable<NorthwindRecord[]>`. In cases when the request fails for any reason (server unavailable, network error, etc), the `HttpClient` will return an error. We'll leverage the `CatchError` operator which intercepts an Observable that failed and passes the error to an error handler. Our error handler will log the error and return a safe value.
 
 ```typescript
 // northwind.service.ts
@@ -417,7 +436,11 @@ import { NorthwindService } from './northwind.service';
 export class AppModule {}
 ```
 
+<!-- Angular -->
+
 After implementing the service we will inject it in our component's constructor and use it to retrieve the data. The `ngOnInit` lifecycle hook is a good place to dispatch the initial request.
+
+<!-- end: Angular -->
 
 **Note**: In the code below, you may wonder why are we setting the _records_ property to an empty array before subscribing to the service. The Http request is asynchronous, and until it completes, the _records_ property will be _undefined_ which will result in an error when the grid tries to bind to it. You should either initialize it with a default value or use a `BehaviorSubject`.
 
@@ -453,7 +476,7 @@ and in the template of the component:
 
 ## Complex Data Binding
 
-`GridComponent` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
+The `Grid` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
 
 Take a look at the following data model:
 ```typescript
@@ -474,10 +497,12 @@ interface AminoAcid {
 }
 ```
 For example, in order to display the weights of a given amino acid in the grid the following snippet will suffice
+
 ```html
 <igx-column field="weight.molecular"></igx-column>
 <igx-column field="weight.residue"></igx-column>
 ```
+
 Refer to the sample below for additional information. This type of binding supports all
 the default functionality that you would expect from the grid.
 That is all sorting and filtering operations work out of the box without any additional
@@ -489,12 +514,12 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-2" >
 </code-view>
 
 <div class="divider--half"></div>
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the **IgxGrid** is to use a custom body template for the column. Generally, one can:
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
 
@@ -553,13 +578,11 @@ export const EMPLOYEE_DATA = [
         ID: 1,
         Name: "John Winchester",
         Title: "Development Manager"
-    },
-...
+    }
 ```
 The custom template for the column, that will render the nested data:
 
 ```html
-...
  <igx-column field="Employees" header="Employees" [cellClasses]="{ expand: true }" width="40%">
         <ng-template #nestedDataTemp igxCell let-people let-cell="cell">
             <div class="employees-container">
@@ -585,7 +608,6 @@ The custom template for the column, that will render the nested data:
             </div>
         </ng-template>
  </igx-column>
-...
 ```
 
 And the result from this configuration is:
@@ -593,18 +615,19 @@ And the result from this configuration is:
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-nested-data-binding" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-1" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ### Working with Flat data
 
-The flat data binding approach is similar to the one that we already described above, but instead of **cell value** we are going to use the `data` property of the `GridRow`.
+The flat data binding approach is similar to the one that we already described above, but instead of **cell value** we are going to use the `Data` property of the `GridRow`.
 
-Since the Angular grid is a component for **rendering**, **manipulating** and **preserving** data records, having access to **every data record** gives you the opportunity to customize the approach of handling it. The `data` property provides you this opportunity.
+Since the {Platform} grid is a component for **rendering**, **manipulating** and **preserving** data records, having access to **every data record** gives you the opportunity to customize the approach of handling it. The `data` property provides you this opportunity.
 
 Below is the data that we are going to use:
+
 ```typescript
 export const DATA: any[] = [
     {
@@ -619,67 +642,68 @@ export const DATA: any[] = [
         Phone: "030-0074321",
         PostalCode: "12209",
         Region: null
-    },
-...
+    }
 ```
+
 The custom template:
 
 ```html
-...
 <igx-column field="Address" header="Address" width="25%" editable="true">
-                <ng-template #compositeTemp igxCell let-cell="cell">
-                    <div class="address-container">
-                    // In the Address column combine the Country, City and PostCode values of the corresponding data record
-                        <span><strong>Country:</strong> {{cell.row.data.Country}}</span>
-                        <br/>
-                        <span><strong>City:</strong> {{cell.row.data.City}}</span>
-                        <br/>
-                        <span><strong>Postal Code:</strong> {{cell.row.data.PostalCode}}</span>
-                    </div>
-                </ng-template>
-...
+    <ng-template #compositeTemp igxCell let-cell="cell">
+        <div class="address-container">
+        // In the Address column combine the Country, City and PostCode values of the corresponding data record
+            <span><strong>Country:</strong> {{cell.row.data.Country}}</span>
+            <br/>
+            <span><strong>City:</strong> {{cell.row.data.City}}</span>
+            <br/>
+            <span><strong>Postal Code:</strong> {{cell.row.data.PostalCode}}</span>
+        </div>
+    </ng-template>
+</igx-column>
 ```
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
 
 ```html
-...
-                 <ng-template  igxCellEditor let-cell="cell">
-                        <div class="address-container">
-                        <span>
-                            <strong>Country:</strong> {{cell.row.data.Country}}
-                            <igx-input-group width="100%">
-                                    <input igxInput [(ngModel)]="cell.row.data.Country" />
-                            </igx-input-group>
-                        </span>
-                            <br/>
-                            <span><strong>City:</strong> {{cell.row.data.City}}</span>
-                            <igx-input-group width="100%">
-                                    <input igxInput [(ngModel)]="cell.row.data.City" />
-                            </igx-input-group>
-                            <br/>
-                            <span><strong>Postal Code:</strong> {{cell.row.data.PostalCode}}</span>
-                            <igx-input-group width="100%">
-                                    <input igxInput [(ngModel)]="cell.row.data.PostalCode" />
-                            </igx-input-group>
-                            <br/>
-                        </div>
-                </ng-template>
+<igx-column>
+    <ng-template  igxCellEditor let-cell="cell">
+            <div class="address-container">
+            <span>
+                <strong>Country:</strong> {{cell.row.data.Country}}
+                <igx-input-group width="100%">
+                        <input igxInput [(ngModel)]="cell.row.data.Country" />
+                </igx-input-group>
+            </span>
+                <br/>
+                <span><strong>City:</strong> {{cell.row.data.City}}</span>
+                <igx-input-group width="100%">
+                        <input igxInput [(ngModel)]="cell.row.data.City" />
+                </igx-input-group>
+                <br/>
+                <span><strong>Postal Code:</strong> {{cell.row.data.PostalCode}}</span>
+                <igx-input-group width="100%">
+                        <input igxInput [(ngModel)]="cell.row.data.PostalCode" />
+                </igx-input-group>
+                <br/>
+            </div>
+    </ng-template>
 </igx-column>
-...
 ```
-And the result is:
 
+And the result is:
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid-composite-data-binding" >
+           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-composite-data" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Keyboard Navigation
-Grid's keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+
+The `Grid`'s keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+
 Check out these resources for more information:
+
  - [Grid Keyboard Navigation](../_shared/keyboard-navigation.md)
  - [TreeGrid Keyboard Navigation](../tree-grid/keyboard-navigation.md)
  - [Hierarchical Grid Keyboard Navigation](../hierarchical-grid/keyboard-navigation.md)
@@ -693,9 +717,12 @@ Achieving a state persistence framework is easier than ever by using the new bui
 
 See the [Grid Sizing](../_shared/sizing.md) topic.
 
+
+<!-- Angular -->
+
 ## Performance (Experimental)
 
-The `IgxGridComponent`'s design allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to `true` in the `bootstrapModule` method:
+The `Grid`'s design allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -708,6 +735,8 @@ platformBrowserDynamic()
 
 >[!NOTE]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
+
+<!-- end: Angular -->
 
 ## Known Limitations
 
@@ -724,11 +753,12 @@ platformBrowserDynamic()
 <div class="divider--half"></div>
 
 ## API References
-* `GridComponent`
-* `GridComponent Styles`
-* `ColumnComponent`
+* `Grid`
+* `Column`
 * `GridRow`
 * `GridCell`
+
+<!-- Angular -->
 
 ## Theming Dependencies
 * `Icon Theme`
@@ -743,16 +773,15 @@ platformBrowserDynamic()
 * `Badge Theme`
 
 ## Tutorial video
-Learn more about creating an Angular data grid in our short tutorial video:
+
+Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
-## Tutorial video
-Learn more about creating an Angular data grid in our short tutorial video:
-
-> [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
+<!-- end: Angular -->
 
 ## Additional Resources
+
 <div class="divider--half"></div>
 
 * [Grid Sizing](../_shared/sizing.md)
@@ -766,10 +795,11 @@ Learn more about creating an Angular data grid in our short tutorial video:
 * [Column Resizing](../_shared/column-resizing.md)
 * [Selection](../_shared/selection.md)
 * [Column Data Types](../_shared/column-types.md#default-template)
-* [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
+* [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
 
 <div class="divider--half"></div>
+
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

@@ -7,28 +7,30 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Column Selection Overview
-The Column selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich `API` that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
+
+The Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
-The sample below demonstrates the three types of {ComponentTitle}'s **column selection** behavior. Use the _column selection_ dropdown below to enable each of the available selection modes.
+The sample below demonstrates the three types of `{ComponentTitle}`'s **column selection** behavior. Use the column selection dropdown below to enable each of the available selection modes.
 
 <!-- ComponentStart: Grid -->
 
 *_Contact Title_, _City_ and _Address_ columns are with disabled column selection.
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 *_Unit Price_ and _Discontinued_ are with disabled column selection.
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 *_Photo_ and _Debut_ are with disabled column selection.
 
 <!-- ComponentEnd: HierarchicalGrid -->
-
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -41,7 +43,8 @@ The sample below demonstrates the three types of {ComponentTitle}'s **column sel
 The column selection feature can be enabled through the `ColumnSelection` input, which takes `GridSelectionMode` values.
 
 ## Interactions
-The default selection mode is `none`. If set to `single` or `multiple` all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
+
+The default selection mode is `None`. If set to `Single` or `Multiple`, all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
 > [!NOTE]
 > [`Multi-column Headers`](multi-column-headers.md) don't reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
@@ -77,7 +80,8 @@ There are two scenarios for keyboard navigation of the **Column Selection** feat
 - Multi-column selection - holding <kbd>ctrl</kbd> + <kbd>click</kbd> on every **selectable** header cell.
 - Range column selection - holding <kbd>shift</kbd> + <kbd>click</kbd> selects all **selectable** columns in between.
 
-## API manipulations
+## API Manipulations
+
 The **API** provides some additional capabilities when it comes to the **non-visible** columns such that, every **hidden** column could be marked as `Selected` by setting the corresponding **setter**.
 
 > [!NOTE]
@@ -85,7 +89,10 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 
 More information regarding the API manipulations could be found in the [`API References`](#api-references) section.
 
+<!-- Angular -->
+
 ## Styling
+
 Before diving into the styling options, the core module and all component mixins need to be imported.
 
 ```scss
@@ -102,7 +109,8 @@ TO DO
 >[!NOTE]
 >Please note that [`row selection`](row-selection.md) and [`column selection`](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
 
-With that being said, let's move on and change the **selection** and **hover** styles.<br/>
+With that being said, let's move on and change the **selection** and **hover** styles. <br/>
+
 Following the simplest approach, let's define our custom **theme**.
 
 <!-- ComponentStart: TreeGrid -->
@@ -165,8 +173,6 @@ TO DO
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
-<!-- Angular -->
-
 >[!NOTE]
 >If the component is using the [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
 
@@ -177,8 +183,6 @@ In order to style components for Internet Explorer 11, we have to use a differen
     }
 }
 ```
-
-<!-- end: Angular -->
 
 ```razor
 TO DO
@@ -194,13 +198,15 @@ TO DO
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
-## <a name="api-references"></a>API References
+<!-- end: Angular -->
+
+## API References
 
 The column selection UI has a few more APIs to explore, which are listed below.
 
-* {ComponentName}
-* `ColumnComponent`
-* `ColumnGroupComponent`
+* `{ComponentName}`
+* `Column`
+* `ColumnGroup`
 
 `{ComponentName}` properties:
 * `ColumnSelection`
@@ -210,11 +216,11 @@ The column selection UI has a few more APIs to explore, which are listed below.
 * `SelectAllColumns`
 * `DeselectAllColumns`
 
-`ColumnComponent` properties:
+`Column` properties:
 * `Selectable`
 * `Selected`
 
-`ColumnGroupComponent` properties:
+`ColumnGroup` properties:
 * `Selectable`
 * `Selected`
 
@@ -223,9 +229,9 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Selection](selection.md)
-* [Cell selection](cell-selection.md)
+* [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

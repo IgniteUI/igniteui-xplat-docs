@@ -529,7 +529,7 @@ Notice that we also have row selection enabled and we preserve the selection whe
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-row-reordering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reordering"
            github-src="{ComponentSample}/row-reorder"
            alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>

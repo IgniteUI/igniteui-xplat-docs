@@ -30,7 +30,7 @@ The following sample demonstrates how to use the prebuilt `required`, `email` an
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-validator-service"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
@@ -289,6 +289,7 @@ Errors and the detailed messages can be determined based on the row and cell's v
         return messages;
     }
 ```
+
 <!-- ComponentEnd:HierarchicalGrid -->
 
 <!-- ComponentStart:TreeGrid -->

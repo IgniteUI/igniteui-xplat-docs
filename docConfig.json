@@ -382,7 +382,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
-            { "name": "{GridName}",                   "value": "bGrid"},
+            { "name": "{GridName}",                   "value": "IgbGrid"},
             { "name": "{GridModule}",                 "value": "IgbGridModule"},
             { "name": "{GridSelector}",               "value": "IgbGrid"},
             { "name": "{GridPackage}",                "value": "igniteui-blazor-grids"},

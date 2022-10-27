@@ -16,7 +16,7 @@ In Ignite UI for {Platform}, the `Grid` control now utilizes the [`igxForOf`]({e
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-sample-2"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-virtualization"
            alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
 </code-view>
 

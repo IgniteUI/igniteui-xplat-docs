@@ -51,8 +51,8 @@ Below is a detailed example of how is Batch Editing enabled for the `{ComponentN
 <!-- EXAMPLE of embedding sample with ComponentSample path variable -->
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering"
-           github-src="{ComponentSample}/advanced-filtering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
+           github-src="{ComponentSample}/advanced-filtering-options"
            alt="{Platform} {ComponentTitle} Advanced Filtering Example">
 </code-view>
 

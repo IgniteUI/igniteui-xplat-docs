@@ -7,14 +7,18 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} Cell Selection
-The selection feature enables rich data select capabilities in the Material UI based {ComponentTitle}. Variety of events and single select actions are available thanks to the powerful API and easy to use methods. The {ComponentTitle} now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can *select only one cell within the grid* or to *select multiple cells in the grid*, which is provided as default option.
+
+The selection feature enables rich data select capabilities in the Ignite UI for {Platform} `{ComponentTitle}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentTitle}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
+
 <!-- ComponentStart: HierarchicalGrid -->
-In the Hierarchical Grid you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
+In the `{ComponentTitle}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
 <!-- ComponentEnd: HierarchicalGrid -->
-But let's dive deeper in each of these options.
+
+Let's dive deeper into each of these options.
 
 ## {Platform} Cell Selection Example
-The sample below demonstrates the three types of {ComponentTitle}'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
+
+The sample below demonstrates the three types of `{ComponentTitle}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
 <code-view style="height:750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,12 +27,14 @@ The sample below demonstrates the three types of {ComponentTitle}'s **cell selec
            alt="{Platform} {ComponentTitle} Cell Selection Example">
 </code-view>
 
-## Selection types
-### {ComponentTitle} Multiple-cell Selection
+## Selection Types
+
+### {ComponentTitle} Multiple-Cell Selection
 
 <!-- ComponentStart: HierarchicalGrid -->
-This is the default cell selection mode in both parent and child grids. Please keep in mind that you can make cell selection one grid at a time, you can not make cross grid range selection or to have a selected cells in multiple grids. Each key combination related to range selection and mouse drag functionality can be used only in the same grid.
+This is the default cell selection mode in both parent and child grids. Please keep in mind that you can make cell selection one grid at a time, and you can not make cross grid range selection or to have a selected cells in multiple grids. Each key combination related to range selection and mouse drag functionality can be used only in the same grid.
 <!-- ComponentEnd: HierarchicalGrid -->
+
 How to select cells:
 - By **Mouse drag** - Rectangular data selection of cells would be performed.
 - By <kbd>Ctrl</kbd> key press + **Mouse drag** - Multiple range selections would be performed. Any other existing cell selection will be persisted.
@@ -56,18 +62,21 @@ When you set the `CellSelection` to **single**, this allows you to have only one
 
 > When single cell is selected `Selected` event is emitted, no matter if the **selection mode** is **single** or **multiple**. In multi-cell selection mode when you select a range of cells `RangeSelected` event is emitted.
 
-### {ComponentTitle} None selection
-If you want to disable cell selection you can just set `CellSelection` to **none** property. In this mode when you click over the cell or try to navigate with keyboard, the cell is **not selected**, only the **activation style** is applied and it is going to be lost when you scroll or click over other element on the page. The only way for you to define selection is by using the API methods that are described below.
+### {ComponentTitle} None Selection
 
-## Keyboard navigation interactions
+If you want to disable cell selection you can just set `CellSelection` to **none**. In this mode when you click over the cell or try to navigate with keyboard, the cell is **not selected**, only the **activation style** is applied and it is going to be lost when you scroll or click over other element on the page. The only way for you to define selection is by using the API methods that are described below.
 
-### While Shift key is pressed
+## Keyboard Navigation Interactions
+
+### While Shift Key is Pressed
+
 - <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> to add above cell to the current selection.
 - <kbd>Shift</kbd> + <kbd>Arrow Down</kbd> to add below cell to the current selection.
 - <kbd>Shift</kbd> + <kbd>Arrow Left</kbd> to add left cell to the current selection.
 - <kbd>Shift</kbd> + <kbd>Arrow Right</kbd> to add right cell to the current selection.
 
-### While Ctrl + Shift keys are pressed
+### While Ctrl + Shift Keys are Pressed
+
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow Up</kbd> to select all cells above the focused cell in the column.
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow Down</kbd> to select all cells below the focused cell in the column.
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrow Left</kbd> to select all cells till the start of the row.
@@ -78,10 +87,11 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 > [!NOTE]
 > Continuous scroll is possible only within Grid's body.
 
-## Api usage
+## Api Usage
+
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
-### Select range
+### Select Range
 
 `SelectRange` - Select a range of cells with the API. `RowStart` and `RowEnd` should use row indexes and `ColumnStart` and `ColumnEnd` could use column index or column data field value.
 
@@ -91,17 +101,16 @@ this.grid1.selectRange(range);
 
 const range = { rowStart: 0, rowEnd: 2, columnStart: 'Name', columnEnd: 'ParentID' };
 this.grid1.selectRange(range);
-
 ```
 
 > [!NOTE]
 > Select range is additive operation. It will not clear your previous selection.
 
-### Clear cell selection
+### Clear Cell Selection
 
 `ClearCellSelection` will clear the current cell selection.
 
-### Get selected data
+### Get Selected Data
 
 `GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
 
@@ -159,11 +168,12 @@ expectedData = [
 ```
 
 > [!NOTE]
-> `SelectedCells` will DO return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
+> `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
 
 
-## Features integration
+## Features Integration
+
 The multi-cell selection is index based (DOM elements selection).
 
 - `Sorting` - When sorting is performed selection will not be cleared. It will leave currently selected cells the same while sorting ascending or descending.
@@ -175,12 +185,13 @@ The multi-cell selection is index based (DOM elements selection).
 - `Group by` - On column grouping selected cells will not be cleared.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
+
 <!-- Angular -->
 ## Styling Guidelines
 
 The theme engine exposes properties that allows us to style the **range of selected cells**.
 
-### Import theme
+### Import Theme
 
 To get started with styling the selection, we need to import the `index` file, where all the theme functions and component mixins live:
 
@@ -191,7 +202,7 @@ To get started with styling the selection, we need to import the `index` file, w
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-### Define colors
+### Define Colors
 
 Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
 ```scss
@@ -200,7 +211,7 @@ Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl
     $border-yellow: #f2c43c;
 ```
 
-### Create custom theme
+### Create Custom Theme
 
 Next we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) passing our `text-color`, `background-color` and `border-yellow` variables as `$cell-selected-text-color`, `$cell-selected-background` and `$cell-active-border-color`, respectively:
 
@@ -212,7 +223,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-### Apply theme
+### Apply Theme
 
 Afterwards, all we need to do is include the mixin in our component's style (could also be in the app styles), so that our @@igSelector uses the newly created theme instead of the default one:
 
@@ -250,20 +261,21 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## API References
 
-* `ComponentTitle`
+* `{ComponentTitle}`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* `IgxGridRow` API
+* `GridRow`
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
+
 <!-- ComponentStart: TreeGrid -->
-* `IgxTreeGridRow` API
+* `TreeGridRow`
 <!-- ComponentEnd: TreeGrid -->
-* `IgxGridCell` API
+* `GridCell`
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Selection](selection.md)
-* [Row selection](row-selection.md)
+* [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Summaries](summaries.md)

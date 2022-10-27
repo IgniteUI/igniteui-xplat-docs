@@ -12,9 +12,6 @@ The {ComponentTitle} in {ProductName} for {Platform} provides an `GridToolbarCom
 
  - Column Pinning
 
-
-or just any other custom content. The toolbar and the predefined UI components support {Platform} events and expose API for developers.
-
 The predefined `actions` and `title` UI components are added inside the `<igx-grid-toolbar>` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
 ```Razor
@@ -42,7 +39,6 @@ As shown above, it can be configured to provide default components for controlli
 advanced filtering and exporting data from the grid.
 These features can be enabled independently from each other by following a pattern similar to the card component of
 the {ProductName} for {Platform} suite.
-
 
 ### Title
 Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
@@ -124,7 +120,6 @@ import { IgxExcelExporterService, IgxCsvExporterService } from 'igniteui-{Platfo
 })
 export class AppModule { ... }
 ```
-
 ## Custom Content
 
 Here is a sample snippet:

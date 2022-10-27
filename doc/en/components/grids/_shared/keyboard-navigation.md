@@ -111,7 +111,7 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 
 <code-view style="height:470px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-keyboardnav-guide" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
 </code-view>
 
 
@@ -211,7 +211,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-custom-keyboard-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -239,7 +239,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-custom-kb-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-kb-navigation" >
 </code-view>
 
 <!-- ComponentEnd: HierarchicalGrid -->
