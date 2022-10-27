@@ -29,7 +29,8 @@ You can conditionally style the {ComponentName} rows by setting the `RowClasses`
 ```
 
 ```razor
-ADD razor rowclasess
+<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowClassesScript="RowClassesHandler" @ref="grid">
+</IgbGrid>
 ```
 
 The `RowClasses` input accepts an object literal, containing key-value pairs, where the key is the name of the CSS class, while the value is either a callback function that returns a boolean, or boolean value.
@@ -59,7 +60,18 @@ public activeRowCondition = (row: RowType) => this.grid?.navigation.activeNode?.
 
 
 ```razor
-Add snippet
+igRegisterScript("RowClassesHandler", () => {
+    return {
+        activeRow: (row) => row.index === 0
+    };
+}, true);
+```
+
+```css
+.activeRow {
+    border: 2px solid #fc81b8;
+    border-left: 3px solid #e41c77;
+}
 ```
 
 <!-- Angular -->
@@ -86,7 +98,7 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 ```
 
 ```razor
-Add callback signature
+(row) => boolean
 ```
 
 Let's define our styles:
@@ -103,7 +115,13 @@ public rowStyles = {
 ```
 
 ```razor
-add styles
+igRegisterScript("RowStylesHandler", () => {
+    return {
+        background: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000088' : '#00000000',
+        border: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '2px solid' : '1px solid',
+        'border-color': (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000099' : '#E9E9E9'
+    };
+}, true);
 ```
 
 <!-- Angular -->
@@ -116,7 +134,8 @@ add styles
 <!-- end: Angular -->
 
 ```razor
-Add grid sample
+<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="RowStylesHandler" @ref="grid">
+</IgbGrid>
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -208,38 +227,6 @@ The {ComponentName} component in {ProductName} provides two ways to **conditiona
 
 - By setting the `Column` input `CellClasses` to an object literal containing key-value pairs. The key is the name of the CSS class, while the value is either a callback function that returns a boolean, or boolean value. The result is a convenient material styling of the cell.
 
-```ts
-// component.ts file
-public beatsPerMinuteClasses = {
-    downFont: this.downFontCondition,
-    upFont: this.upFontCondition
-};
-
-
-
-private downFontCondition = (rowData: any, columnKey: any): boolean => {
-    return rowData[columnKey] <= 95;
-}
-```
-
-```razor
-cellclasses example
-```
-
-<!-- Angular -->
-```scss
-// component.scss file
-.upFont {
-    color: red;
-}
-
-.downFont {
-    color: green;
-}
-```
-<!-- end: Angular -->
-
-
 ### Using cellClasses
 You can conditionally style the {ComponentName} cells by setting the `Column` `CellClasses` input and define custom rules.
 
@@ -253,7 +240,7 @@ You can conditionally style the {ComponentName} cells by setting the `Column` `C
 <!-- end: Angular -->
 
 ```razor
-example
+<IgbColumn Field="BeatsPerMinute" CellClassesScript="CellClassesHandler">
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -308,7 +295,12 @@ public beatsPerMinuteClasses = {
 ```
 
 ```razor
-add example
+igRegisterScript("CellClassesHandler", () => {
+    return {
+        downFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] <= 95,
+        upFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] > 95
+    };
+}, true);
 ```
 
 <!-- Angular -->
@@ -326,6 +318,16 @@ add example
 }
 ```
 <!-- end: Angular -->
+
+```css
+.upFont {
+    color: green;
+}
+
+.downFont {
+    color: red;
+}
+```
 
 <!-- ComponentEnd: Grid -->
 
@@ -389,18 +391,6 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 
 - By using the `Column` input `CellStyles` which accepts an object literal where the keys are style properties and the values are expressions for evaluation.
 
-```ts
-public styles = {
-    'background': 'linear-gradient(180deg, #dd4c4c 0%, firebrick 100%)',
-    'text-shadow': '1px 1px 2px rgba(25,25,25,.25)',
-    'animation': '0.25s ease-in-out forwards alternate popin'
-};
-```
-
-```razor
-cellstyles example
-```
-
 > The callback signature for both `cellStyles` and `cellClasses` is now changed to:
 
 ```ts
@@ -408,7 +398,7 @@ cellstyles example
 ```
 
 ```razor
-callback signature for blazor
+(rowData, columnKey, cellValue, rowIndex) => boolean
 ```
 
 ### Using cellStyles
@@ -437,7 +427,21 @@ public evenColStyles = {
 ```
 
 ```razor
-define styles for blazor
+igRegisterScript("OddColStyles", () => {
+    return {
+        background: 'linear-gradient(to right, #b993d6, #8ca6db)',
+        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
+        animation: '0.75s popin'
+    };
+}, true);
+
+igRegisterScript("EvenColStyles", () => {
+    return {
+        background: 'linear-gradient(to right, #8ca6db, #b993d6)',
+        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
+        animation: '0.75s popin'
+    };
+}, true);
 ```
 
 <!-- Angular -->
@@ -512,8 +516,34 @@ Define a `popin` animation
 <!-- end: Angular -->
 
 <!-- Blazor -->
-Add similar to ngOnInit
-Add similar handling
+```razor
+<IgbColumn Field="ID" CellStylesScript="EvenColStyles">
+</IgbColumn>
+<IgbColumn Field="CompanyName" CellStylesScript="OddColStyles">
+</IgbColumn>
+```
+Define a `popin` animanion:
+
+```css
+@keyframes popin {
+    0% {
+        opacity: 0.1;
+        transform: scale(.75, .75);
+        filter: blur(3px) invert(1);
+    }
+
+    50% {
+        opacity: .5;
+        filter: blur(1px);
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+        filter: none;
+    }
+}
+```
 <!-- end: Blazor -->
 
 ### Demo
@@ -523,6 +553,8 @@ Add similar handling
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-cellStyling"
            github-src="{ComponentSample}/cell-cellStyling" >
 </code-view>
+
+<!-- Angular -->
 
 ## Known issues and limitations
 
@@ -541,7 +573,6 @@ editDone(evt) {
 }
 
 ```
-<!-- Angular -->
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
@@ -551,9 +582,6 @@ editDone(evt) {
 ```
 <!-- end: Angular -->
 
-```razor
-Logic for that
-```
 ## API References
 
 
