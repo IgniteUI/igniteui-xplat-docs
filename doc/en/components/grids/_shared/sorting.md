@@ -33,7 +33,7 @@ This is done via the `Sortable` input. With the {ComponentTitle} sorting, you ca
 <!-- end: Angular -->
 
 ```razor
-<IgbGridColumn Field="Title" Sortable="true"></IgbGridColumn>
+<IgbColumn Field="Title" Sortable="true"></IgbColumn>
 ```
 
 ## Sorting Indicators
