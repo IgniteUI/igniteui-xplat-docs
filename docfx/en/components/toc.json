@@ -786,6 +786,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
@@ -884,12 +890,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/tree-grid/virtualization.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Keyboard navigation",
-        "href": "grids/tree-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]

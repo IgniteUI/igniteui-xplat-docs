@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Toolbar
 
-The {ComponentTitle} in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the {ComponentTitle} and it matches its horizontal size. The toolbar container can host predefined UI controls for the following {ComponentTitle}'s features:
+The `{ComponentTitle}` in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentTitle}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentTitle}`'s features:
 
  - Column Hiding
  - Column Pinning
@@ -27,9 +27,9 @@ or just any other custom content. The toolbar and the predefined UI components s
 </code-view>
 
 
-The predefined `actions` and `title` UI components are added inside the `<igx-grid-toolbar>` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
+The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
-@@if (igxName === 'IgxGrid') {
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" [autoGenerate]="true">
     <igx-grid-toolbar>
@@ -43,8 +43,9 @@ The predefined `actions` and `title` UI components are added inside the `<igx-gr
     </igx-grid-toolbar>
 </igx-grid>
 ```
-}
-@@if (igxName === 'IgxTreeGrid') {
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
     <igx-grid-toolbar>
@@ -58,8 +59,9 @@ The predefined `actions` and `title` UI components are added inside the `<igx-gr
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="data">
     <igx-grid-toolbar>
@@ -73,43 +75,45 @@ The predefined `actions` and `title` UI components are added inside the `<igx-gr
     </igx-grid-toolbar>
 </igx-hierarchical-grid>
 ```
-}
+<!-- ComponentEnd: HierarchicalGrid -->
 
-> Note: As seen in the code snippet above, the predefined `actions` UI components are wrapped in the `<igx-grid-toolbar-actions>` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> Note: As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
 
 Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
 
-@@if (igxName === 'IgxGrid') {
+<!-- ComponentStart: Grid -->
 ```html
 <igx-grid [data]="data" [autoGenerate]="true">
     <igx-grid-toolbar>
     </igx-grid-toolbar>
 </igx-grid>
 ```
-}
-@@if (igxName === 'IgxTreeGrid') {
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true">
     <igx-grid-toolbar>
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
-}
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid [data]="data">
     <igx-grid-toolbar>
     </igx-grid-toolbar>
 </igx-hierarchical-grid>
 ```
-}
+<!-- ComponentEnd: HierarchicalGrid -->
 
-For a comprehensive look over each of the default UI components, continue reading the **Features** section
-below.
+For a comprehensive look over each of the default UI components, continue reading the **Features** section below.
 
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentStart: HierarchicalGrid -->
 
-## Toolbar with child grids
+## Toolbar with Child Grids
+
 Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, there is a caveat when
 using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure
 to use the IgxGridToolbar directive on the toolbar itself and pass the provided grid instance as an input property to the toolbar itself.
@@ -130,18 +134,18 @@ This will make sure you always have the correct grid instance in the scope of yo
     ...
 </igx-hierarchical-grid>
 ```
+<!-- ComponentEnd: HierarchicalGrid -->
 
-}
 
 ## Features
 
 The toolbar is great at separating logic/interactions which affects the grid as a whole.
-As shown above, it can be configured to provide default components for controlling, column hiding, column pinning,
-advanced filtering and exporting data from the grid.
-These features can be enabled independently from each other by following a pattern similar to the card component of
-the {ProductName} for {Platform} suite.
-Listed below are the main features of the toolbar with example code for each of them.
 
+As shown above, it can be configured to provide default components for controlling, column hiding, column pinning, advanced filtering and exporting data from the grid.
+
+These features can be enabled independently from each other by following a pattern similar to the card component of the Ignite UI for {Platform} suite.
+
+Listed below are the main features of the toolbar with example code for each of them.
 
 <code-view style="height:630px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -150,8 +154,11 @@ Listed below are the main features of the toolbar with example code for each of 
 
 
 ### Title
+
 Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
+
 Users can provide anything from simple text to more involved templates.
+
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-title>Grid toolbar title</igx-grid-toolbar-title>
@@ -159,9 +166,11 @@ Users can provide anything from simple text to more involved templates.
 ```
 
 ### Actions
+
 The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
+
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -172,7 +181,7 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
-Each action now exposes a way to change the overlay settings of the actions dialog by using the `overlaySettings` input, example:
+Each action now exposes a way to change the overlay settings of the actions dialog by using the `OverlaySettings` input. For example:
 
 ```html
 <igx-grid-toolbar-actions>
@@ -208,10 +217,11 @@ constructor() {
 
 The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
 
-### Column pinning
-`GridToolbarPinningComponent` provides the default UI for interacting with column pinning in the grid.
-The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component
-title, the placeholder for the component input and the height of the dropdown itself.
+### Column Pinning
+
+The `GridToolbarPinning` component provides the default UI for interacting with column pinning in the grid.
+
+The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component title, the placeholder for the component input and the height of the dropdown itself.
 
 ```html
 <igx-grid-toolbar>
@@ -227,9 +237,9 @@ title, the placeholder for the component input and the height of the dropdown it
 ```
 
 
-### Column hiding
-`GridToolbarHidingComponent` provides the default
-UI for interacting with column hiding. Exposes the same input properties for customizing the UI, such as the component
+### Column Hiding
+
+The `GridToolbarHiding` provides the default UI for interacting with column hiding. Exposes the same input properties for customizing the UI, such as the component
 title, the placeholder for the component input and the height of the dropdown itself.
 
 ```html
@@ -245,8 +255,10 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
-### Advanced filtering
-[Toolbar Advanced Filtering component]({environment:{Platform}ApiUrl}/classes/igxgridtoolbaradvancedfilteringcomponent.html) provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
+### Advanced Filtering
+
+Toolbar Advanced Filtering component provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
+
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
@@ -255,19 +267,21 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
-### Data exporting
+### Data Exporting
 
-@@if (igxName === 'IgxHierarchicalGrid') {
+<!-- ComponentStart: HierarchicalGrid -->
+
 > [!NOTE]
-> When exporting the Hierarchical Grid or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
+> When exporting the `{ComponentTitle}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
 > belonging to their respective grid (the child grids will not be included in the exported data).
-}
 
-As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporterComponent` out of the box.
-The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component
-won't be able to export anything.
-If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable
-all export services for your application.
+<!-- ComponentEnd: HierarchicalGrid -->
+
+As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporter` out of the box.
+
+The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component won't be able to export anything.
+
+If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable all export services for your application.
 
 ```typescript
 // app.module.ts
@@ -285,8 +299,8 @@ export class AppModule { ... }
 > In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
 
 The toolbar exporter component exposes several input properties for customizing both the UI and the exporting experience.
-These range from changing the display text, to enabling/disabling options in the dropdown to customizing the name of the
-generated file. For full reference, consult the [API documentation]({environment:{Platform}ApiUrl}/classes/igxgridtoolbarexportercomponent.html) for the toolbar exporter component.
+
+These range from changing the display text, to enabling/disabling options in the dropdown to customizing the name of the generated file. For full reference, consult the API documentation for the `ToolbarExporter`.
 
 Here is a snippet showing some of the options which can be customized through the {Platform} template:
 
@@ -311,7 +325,7 @@ Here is a snippet showing some of the options which can be customized through th
 
 @@if (igxName !== 'IgxHierarchicalGrid') {
 
-In addition to changing the exported filename, the user can further configure the exporter options by waiting for the [toolbarExporting]({environment:{Platform}ApiUrl}/classes/@@igTypeDoc.html#toolbarExporting) event and customizing the options entry in the event properties.
+In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
 > [!NOTE]
 > By default when exporting to CSV the exporter exports using a comma separator and uses a '.csv' extension for the output file.
@@ -321,7 +335,7 @@ In addition to changing the exported filename, the user can further configure th
 The following code snippet demonstrates subscribing to the toolbar exporting event and configuring the exporter options:
 
 ```html
-<@@igSelector (toolbarExporting)="configureExport($event)" ></@@igSelector>
+<{ComponentSelector} (toolbarExporting)="configureExport($event)" ></{ComponentSelector}>
 ```
 
 ```typescript
@@ -364,10 +378,10 @@ The following sample demonstrates how to customize the exported files:
 ## Exporting Indicator
 
 When using the default toolbar exporter component, whenever an export operation takes place the toolbar will show a progress indicator while the operation is in progress.
-Moreover, users can set the toolbar [showProgress] property and use for their own long running operations
-or just as another way to signify an action taking place in the grid.
-The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button
-that simulates a long running operation in the grid:
+
+Moreover, users can set the toolbar `ShowProgress` property and use for their own long running operations or just as another way to signify an action taking place in the grid.
+
+The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button that simulates a long running operation in the grid:
 
 
 <code-view style="height: 370px;"
@@ -379,23 +393,16 @@ that simulates a long running operation in the grid:
 ## Custom Content
 
 > [!NOTE]
-> This replaces the old toolbar template directive. If you are migrating from a version before v11 our migrations will handle
-> the moving of the template content. However, we do not handle the bindings in the template, so make sure to double check the modified
-> template files after the migration completes.
+> This replaces the old toolbar template directive. If you are migrating from a version before v11 our migrations will handle the moving of the template content. However, we do not handle the bindings in the template, so make sure to double check the modified template files after the migration completes.
 
-If the actions part of the toolbar component is not sufficient for a particular use case, the toolbar itself has a general content projection where
-users can provide additional UI. If the user needs the respective grid instance for API calls or bindings, they can create a template reference variable.
-
+If the actions part of the toolbar component is not sufficient for a particular use case, the toolbar itself has a general content projection where users can provide additional UI. If the user needs the respective grid instance for API calls or bindings, they can create a template reference variable.
 
 Here is a sample snippet:
 
 ```html
-<@@igSelector #gridRef ...>
-
-    ...
+<{ComponentSelector} #gridRef>
     <igx-grid-toolbar>
         <igx-grid-toolbar-title>{{ titleBinding }}</igx-grid-toolbar-title>
-
         <!--
             Everything between the toolbar tags except the default toolbar components/directives
             will be projected as custom content.
@@ -405,23 +412,20 @@ Here is a sample snippet:
             Clear Sort
         </button>
 
-        <igx-grid-toolbar-actions>
-            ...
+        <igx-grid-toolbar-actions>            
         </igx-grid-toolbar-actions>
     </igx-grid-toolbar>
-
-</@@igSelector>
+</{ComponentSelector}>
 ```
 
-
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
-
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4" >
 </code-view>
 
+<!-- Angular -->
 
 ## Styling
 
@@ -539,6 +543,8 @@ The last step is to **include** the newly created themes.
 
 <div class="divider"></div>
 
+<!-- end: Angular -->
+
 ## API References
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
@@ -555,13 +561,18 @@ The Grid Toolbar service has a few more APIs to explore, which are listed below.
 * `{ComponentName}` Events:
 * `ToolbarExporting`
 
+<!-- Angular -->
+
 Styles:
 
 * `{ComponentName}` Styles
 
+<!-- end: Angular -->
+
 ## Additional Resources
 
 <div class="divider--half"></div>
+
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
