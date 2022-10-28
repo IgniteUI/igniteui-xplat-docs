@@ -15,7 +15,9 @@ In {Platform} {ComponentTitle}, data sorting is enabled on a per-column level, m
 
 ## {Platform} {ComponentTitle} Sorting Overview Example
 
+<!-- ComponentStart: HierarchicalGrid -->
 Additionally there is a custom contextmenu added for sorting using **{ComponentSelector}**'s `ContextMenu` Output.
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -72,7 +74,19 @@ this.grid.sort([
 
 ```razor
 @code {
-Currently not working
+    this.grid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "CompanyName",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Country",
+                Dir = SortingDirection.Asc
+            }
+        });
 }
 ```
 
@@ -126,12 +140,15 @@ public ngOnInit() {
 @code {
     protected override void OnAfterRender(bool first)
     {
-        this.grid.SortingExpressions = new IgbSortingExpression[]{
-            new IgbSortingExpression()
-            {
-                FieldName = "Title",
-                Dir = SortingDirection.Asc
-            }};
+        if (first)
+        {
+            this.grid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Title",
+                    Dir = SortingDirection.Asc
+                }};
+        }
     }
 }
 ```
@@ -146,9 +163,10 @@ The {ComponentTitle} supports remote sorting, which is demonstrated in the [{Com
 
 <!-- ComponentEnd: Grid -->
 
-## Sorting Indicators Templates
+<!-- TODO -- Uncomment the section below and Add sorting indicators templates when they are added in Blazor-->
+<!-- ## Sorting Indicators Templates
 
-The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none):
+The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none): -->
 
 <!-- Angular -->
 - `IgxSortHeaderIconDirective` – re-templates the sorting icon when no sorting is applied.
@@ -176,11 +194,10 @@ The sorting indicator icon in the column header can be customized using a templa
 ```
 <!-- end: Angular -->
 
-Add snippets for templating sorting icons
+<!-- Angular -->
 
 ## Styling
 
-<!-- Angular -->
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
@@ -275,10 +292,6 @@ $custom-theme: grid-theme(
 
 Don't forget to include the themes in the same way as it was demonstrated above.
 
-<!-- end: Angular -->
-
-Add Styling section for Blazor
-
 ### Demo
 
 <code-view style="height:550px"
@@ -290,8 +303,9 @@ Add Styling section for Blazor
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
+<!-- end: Angular -->
 ## API References
-* `ISortingExpression`
+* `SortingExpression`
 
 ## Additional Resources
 

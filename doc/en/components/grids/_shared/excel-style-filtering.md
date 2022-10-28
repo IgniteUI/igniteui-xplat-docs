@@ -70,11 +70,11 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
              AllowFiltering="true"
              FilterMode="FilterMode.ExcelStyleFilter"
              AutoGenerate="false">
-        <IgbColumn Field="EmployeeID" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="FirstName" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="LastName" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="Title" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
-        <IgbColumn Field="BirthDate" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="ProductName" Sortable="true"></IgbColumn>
+        <IgbColumn Field="UnitPrice" Sortable="true" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="QuantityPerUnit" Sortable="false" DisablePinning="true" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="OrderDate" Sortable="true" DisablePinning="false" DisableHiding="true"></IgbColumn>
+        <IgbColumn Field="Discontinued" Sortable="true"></IgbColumn>
     </IgbGrid>
 ```
 
@@ -170,9 +170,9 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
            github-src="{ComponentSample}/excel-style-filtering-sample-2" >
 </code-view>
 
-## Templates
-
-<!-- TODO: check when decide how to support directives -->
+<!-- TODO -- there is still no excel style filtering components. Uncomment the below section once they exist. -->
+<!-- ## Templates
+TODO: check when decide how to support directives
 
 If you want to further customize the Excel style filter menu without disabling the column features you could use custom templates. The Excel Style filter menu provides two directives for templating:
 - `IgxExcelStyleColumnOperationsTemplateDirective` - re-templates the area with all column operations like sorting, pinning, etc.
@@ -180,7 +180,7 @@ If you want to further customize the Excel style filter menu without disabling t
 
 You could either re-template only one of those areas or both of them. You could put any custom content inside those directives or you could use any of our built-in Excel style filtering components.
 
-The following code demonstrates how to define a custom Excel style filter menu using the `excel-style-header`, `excel-style-sorting` and `excel-style-search` components.
+The following code demonstrates how to define a custom Excel style filter menu using the `excel-style-header`, `excel-style-sorting` and `excel-style-search` components. -->
 
 <!-- ComponentStart: Grid -->
 
@@ -205,10 +205,13 @@ The following code demonstrates how to define a custom Excel style filter menu u
 
 </igx-grid>
 ```
+<!-- end: Angular -->
 
-```razor
+
+
+<!-- ```razor
 Add razor snipets
-```
+``` -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -236,9 +239,9 @@ Add razor snipets
 </igx-tree-grid>
 ```
 
-```razor
+<!-- ```razor
 Add razor snipets
-```
+``` -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -283,13 +286,14 @@ Add razor snipets
 </igx-hierarchical-grid>
 ```
 
-```razor
+<!-- ```razor
 Add razor snipets
-```
+``` -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive:
+
+<!-- You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive: -->
 
 ```html
 <{ComponentSelector}>
@@ -299,7 +303,7 @@ You could also re-template the Excel style filtering icon in the column header u
 </{ComponentSelector}>
 ```
 
-```razor
+<!-- ```razor
 Templating header icon
 ```
 
@@ -318,41 +322,42 @@ Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-selecting`
 - `Excel-style-clear-filters`
 - `Excel-style-conditional-filter`
-- `Excel-style-search`
+- `Excel-style-search` -->
 
 ## Unique Column Values Strategy
 
 The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. These values can be provided manually and loaded on demand, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md#unique-column-values-strategy) topic.
 
-## Formatted Values Filtering Strategy
+<!-- TODO -- uncomment below section when we can define a filtering strategy on the grid. -->
+<!-- ## Formatted Values Filtering Strategy
 
-By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values.
+By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values. -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-In order to do that you can use the `FormattedValuesFilteringStrategy`.
+<!-- In order to do that you can use the `FormattedValuesFilteringStrategy`. -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`.
+<!-- In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`. -->
 
 <!-- ComponentEnd: TreeGrid -->
 
-The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values:
+<!-- The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values: -->
 
-<code-view style="height:620px"
+<!-- <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
            github-src="{ComponentSample}/filtering-strategy" >
 </code-view>
 
 >[!NOTE]
->The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter.
+>The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
 
 <!-- ComponentStart: TreeGrid -->
-## Tree Filter View
+<!-- ## Tree Filter View
 
 By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
@@ -360,11 +365,12 @@ By default, the Excel Style Filtering dialog displays the items in a list view. 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-tree-filter-view"
            github-src="{ComponentSample}/tree-filter-view" >
-</code-view>
+</code-view> -->
 
 <!-- ComponentEnd: TreeGrid -->
 
-## External Excel Style Filtering
+<!-- TODO -- No excel style filtering component -->
+<!-- ## External Excel Style filtering
 
 As you see at the demos above the default appearance of the Excel Style filtering dialog is inside the `{ComponentTitle}`. So this dialog is only visible when configuring the filters. There is a way to make that dialog stay always visible - it can be used outside of the grid as a standalone component. In the demo below, the Excel style filtering is declared separately of the `{ComponentTitle}`.
 
@@ -378,7 +384,8 @@ As you see at the demos above the default appearance of the Excel Style filterin
 
 ### Usage
 
-In order to configure the Excel style filtering component, you should set its **Column** property to one of the `{ComponentTitle}`'s columns. In the sample above, we have bound the `Column` property to the value of a `Select` component that displays the `{ComponentTitle}`'s columns.
+In order to configure the Excel style filtering component, you should set its `Column` property to one of the {ComponentTitle}'s columns. In the sample above, we have bound the `Column` property to the value of an SelectComponent that displays the {ComponentTitle}'s columns. -->
+
 
 <!-- ComponentStart: Grid -->
 
@@ -394,9 +401,9 @@ In order to configure the Excel style filtering component, you should set its **
 </igx-grid-excel-style-filtering>
 ```
 
-```razor
+<!-- ```razor
 add snippet for blazor
-```
+``` -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -414,9 +421,9 @@ add snippet for blazor
 </igx-grid-excel-style-filtering>
 ```
 
-```razor
+<!-- ```razor
 Add snippet for blazor
-```
+``` -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -434,16 +441,16 @@ Add snippet for blazor
 </igx-grid-excel-style-filtering>
 ```
 
-```razor
+<!-- ```razor
 Add snippet for blazor
-```
+``` -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-## External Outlet
+<!-- TODO -- uncomment below when there is igxOverlayOutlet -->
+<!-- ## External Outlet
 
-The `{ComponentTitle}`'s [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) creates separate stacking context for each grid in the DOM. This ensures that all descendant elements of the grid will render as intended, without overlapping one another.
-
+The {ComponentTitle}'s [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) creates separate stacking context for each grid in the DOM. This ensures that all descendant elements of the grid will render as intended, without overlapping one another.
 However, elements that go outside of the grid (e.g. Excel Style filter) will conflict with outside elements with the same `z-index` (e.g. having two grids one under another) resulting in false rendering. The solution for this issue is to set the `Outlet` property to an external outlet directive which allows the overlay elements to always appear on top.
 
 ### Demo
@@ -452,7 +459,7 @@ However, elements that go outside of the grid (e.g. Excel Style filter) will con
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-outlet"
            github-src="{ComponentSample}/external-outlet" >
-</code-view>
+</code-view> -->
 
 <!-- Angular -->
 
@@ -770,7 +777,6 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
 <!-- end: Angular -->
-
 ## API References
 
 * `Column`
