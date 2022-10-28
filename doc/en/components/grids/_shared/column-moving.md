@@ -100,7 +100,7 @@ idColumn.move(3);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
-    public IgbGridColumn Col1 { get; set; };
+    public IgbColumn Col1 { get; set; };
     public void HandleClick()
     {
         this.Col1.Move(3);
