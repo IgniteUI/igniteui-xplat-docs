@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Editing
 
-The {ProductName} `{ComponentTitle}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and [Batch Editing](batch-editing.md). The `{ComponentTitle}` gives you a powerful public API which allows you to customize the way these operations are performed.
+The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and [Batch Editing](batch-editing.md). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
 
 <!-- Angular -->
 
@@ -18,21 +18,21 @@ Additionally, **Cell editing** exposes several default editors based on the colu
 
 ## Setup
 
-In order to specify which edit mode should be enabled, the `{ComponentTitle}` exposes the following boolean properties - `Editable` and `RowEditable`.
+In order to specify which edit mode should be enabled, the `{ComponentName}` exposes the following boolean properties - `Editable` and `RowEditable`.
 
 The `Editable` property enables you to specify the following options:
 
 - **false** - the editing for the corresponding column will be disabled. This is the default value.
 - **true** - the editing for the corresponding column will be enabled.
 
->Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the `{ComponentTitle}`.
+>Keep in mind that if the column is not editable, you can still modify its value through the public API exposed by the `{ComponentName}`.
 
 The `RowEditable` property enables you to specify the following options:
 
 - **false** - the row editing in the corresponding grid will be disabled. This is the default value.
 - **true** - the row editing in the corresponding grid will be enabled.
 
-In the `{ComponentTitle}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
+In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
 
 [Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**.
 

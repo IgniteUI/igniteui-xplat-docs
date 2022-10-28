@@ -21,7 +21,7 @@ The **{ComponentName}** design is based on [Material Design Guidelines](https://
 
 ## Usage
 
-As you can see in the demo above, the `{ComponentTitle}` provides three density options:  **compact**, **cosy** and **comfortable**. The code snippet below shows how to set `DisplayDensity`:
+As you can see in the demo above, the `{ComponentName}` provides three density options:  **compact**, **cosy** and **comfortable**. The code snippet below shows how to set `DisplayDensity`:
 
 ```html
 <{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
@@ -45,8 +45,8 @@ this.grid.displayDensity = 'cosy';
 }
 ```
 
-And now let's see in details how each option reflects on the `{ComponentTitle}` component. When you switch between different density options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
- - **comfortable** - this is the default `{ComponentTitle}` display density with the lowest intense and row height equal to `50px`. Left and Right paddings are `24px`; Minimal column `Width` is `80px`;
+And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different density options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
+ - **comfortable** - this is the default `{ComponentName}` display density with the lowest intense and row height equal to `50px`. Left and Right paddings are `24px`; Minimal column `Width` is `80px`;
  - **cosy** - this is the middle intense density with `40px` row height. Left and Right paddings are `16px`; Minimal column `Width` is `64px`;
  - **compact** - this is the density with highest intense and `32px` row height. Left and Right paddings are `12px`; Minimal column `Width` is `56px`;
 
@@ -298,13 +298,13 @@ public selectDensity(event) {
 }
 ```
 
-Another option that `{ComponentTitle}` provides for you, in order to be able to change the height of the rows in the `{ComponentTitle}`, is the property `RowHeight`. So let's see in action how this property affects the `{ComponentTitle}` layout along with the `DisplayDensity`.
+Another option that `{ComponentName}` provides for you, in order to be able to change the height of the rows in the `{ComponentName}`, is the property `RowHeight`. So let's see in action how this property affects the `{ComponentName}` layout along with the `DisplayDensity`.
 
 Please keep in mind the following:
  - `DisplayDensity` options will have no impact on row height **if there is `RowHeight` specified**.
  - `DisplayDensity` will **affect all of the rest elements in the {ComponentTitle}**, as it has been described above.
 
-We can now extend our sample and add `RowHeight` property to the `{ComponentTitle}`:
+We can now extend our sample and add `RowHeight` property to the `{ComponentName}`:
 
  ```html
  <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%"
@@ -324,7 +324,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentTitl
 
 ## API References
 
-* `{ComponentTitle}`
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources

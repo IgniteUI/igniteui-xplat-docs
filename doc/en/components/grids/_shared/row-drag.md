@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # Row Dragging in {Platform} {ComponentTitle}
 
-In Ignite UI for {Platform} `{ComponentTitle}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
+In Ignite UI for {Platform} `{ComponentName}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
 
 ## {Platform} {ComponentTitle} Row Drag Example
 
@@ -21,7 +21,7 @@ In Ignite UI for {Platform} `{ComponentTitle}`, row dragging is initialized on t
 
 ## Configuration
 
-In order to enable row-dragging for your `{ComponentTitle}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
+In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
 
 ```html
 <{ComponentSelector} [rowDraggable]="true">
@@ -35,7 +35,7 @@ In order to enable row-dragging for your `{ComponentTitle}`, all you need to do 
 
 Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
-Below, you can find a walkthrough on how to configure an `{ComponentTitle}` to support row dragging and how to properly handle the drop event.
+Below, you can find a walkthrough on how to configure an `{ComponentName}` to support row dragging and how to properly handle the drop event.
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
@@ -211,7 +211,7 @@ The drag ghost can be templated using the `RowDragGhost` directive, applied to a
 </{ComponentSelector}>
 ```
 
-The result of the configuration can be seem below in a `{ComponentTitle}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
+The result of the configuration can be seem below in a `{ComponentName}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
 
 #### Example Demo
 
@@ -814,7 +814,7 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 * `RowDraggable`
 * `RowDragStart`
 * `RowDragEnd`
-* `{ComponentTitle}`
+* `{ComponentName}`
 
 ## Additional Resources
 

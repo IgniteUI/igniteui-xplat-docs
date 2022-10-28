@@ -77,7 +77,7 @@ The following features are currently **not** supported:
 
 ## Keyboard Navigation
 
-`{ComponentTitle}` with Multi-Row Layouts provides build-in keyboard navigation.
+`{ComponentName}` with Multi-Row Layouts provides build-in keyboard navigation.
 
 ### Horizontal Navigation
 
@@ -130,7 +130,7 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 
 <!-- Angular -->
 
-* Get template output of the whole configuration ready to by placed inside an `{ComponentTitle}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
+* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
 
 <!-- end: Angular -->
 
@@ -147,7 +147,7 @@ By default we have set the same columns as our previous sample, but it can be cl
 
 ## Styling
 
-The `{ComponentTitle}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The `{ComponentName}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
 
@@ -284,7 +284,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 ## API References
 
-* `{ComponentTitle}`
+* `{ComponentName}`
 * `ColumnLayout`
 * `Column`
 

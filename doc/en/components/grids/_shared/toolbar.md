@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Toolbar
 
-The `{ComponentTitle}` in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentTitle}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentTitle}`'s features:
+The `{ComponentName}` in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
 
  - Column Hiding
  - Column Pinning
@@ -272,7 +272,7 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 <!-- ComponentStart: HierarchicalGrid -->
 
 > [!NOTE]
-> When exporting the `{ComponentTitle}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
+> When exporting the `{ComponentName}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
 > belonging to their respective grid (the child grids will not be included in the exported data).
 
 <!-- ComponentEnd: HierarchicalGrid -->

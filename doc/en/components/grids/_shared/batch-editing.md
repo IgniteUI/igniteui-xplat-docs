@@ -10,27 +10,27 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <!-- ComponentStart: Grid -->
 
-The Batch Editing feature of the `{ComponentTitle}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-The Batch Editing feature of the `{ComponentTitle}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
 
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-In order to use the `HierarchicalTransactionService` with `{ComponentTitle}`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `HierarchicalTransactionServiceFactory`.
+In order to use the `HierarchicalTransactionService` with `{ComponentName}`, but have it accumulating separate transaction logs for each island, a service factory should be provided instead. One is exported and ready for use as `HierarchicalTransactionServiceFactory`.
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-Below is a detailed example of how is Batch Editing enabled for the `{ComponentTitle}` component.
+Below is a detailed example of how is Batch Editing enabled for the `{ComponentName}` component.
 
 ## {Platform} {ComponentTitle} Batch Editing and Transactions Example
 
-The following sample demonstrates a scenario, where the `{ComponentTitle}` has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
+The following sample demonstrates a scenario, where the `{ComponentName}` has `BatchEditing` enabled and has row editing enabled. The latter will ensure that transaction will be added after the entire row edit is confirmed.
 
 <code-view style="height:680px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -56,7 +56,7 @@ You need to enable `BatchEditing` from your {ComponentTitle}:
 </{ComponentSelector}>
 ```
 
-This will ensure a proper instance of `Transaction` service is provided for the `{ComponentTitle}`. The proper `TransactionService` is provided through a `TransactionFactory`.
+This will ensure a proper instance of `Transaction` service is provided for the `{ComponentName}`. The proper `TransactionService` is provided through a `TransactionFactory`.
 
 <!-- Angular -->
 
@@ -64,7 +64,7 @@ You can learn more about this internal implementation in the [transactions topic
 
 <!-- end: Angular -->
 
-After batch editing is enabled, define a `{ComponentTitle}` with bound data source and `RowEditable` set to true and bind:
+After batch editing is enabled, define a `{ComponentName}` with bound data source and `RowEditable` set to true and bind:
 
 <!-- ComponentStart: Grid -->
 
@@ -263,14 +263,14 @@ export class HierarchicalGridBatchEditingSampleComponent {
 <!-- ComponentEnd: HierarchicalGrid -->
 
 > [!NOTE]
-> The transactions API won't handle end of edit and you'd need to do it by yourself. Otherwise, `{ComponentTitle}` would stay in edit mode. One way to do that is by calling `EndEdit` in the respective method.
+> The transactions API won't handle end of edit and you'd need to do it by yourself. Otherwise, `{ComponentName}` would stay in edit mode. One way to do that is by calling `EndEdit` in the respective method.
 
 <!-- ComponentStart: TreeGrid -->
-Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are using a hierarchical data, the children will be deleted when deleting their parent. If you are using a flat data, you may set the desired behavior using the `CascadeOnDelete` property of `{ComponentTitle}`. This property indicates whether the child records should be deleted when their parent gets deleted (by default, it is set to **true**).
+Deleting a parent node in `{ComponentName}` has some peculiarities. If you are using a hierarchical data, the children will be deleted when deleting their parent. If you are using a flat data, you may set the desired behavior using the `CascadeOnDelete` property of `{ComponentName}`. This property indicates whether the child records should be deleted when their parent gets deleted (by default, it is set to **true**).
 <!-- ComponentEnd: TreeGrid -->
 
 > [!NOTE]
-> Disabling `RowEditable` property will modify `{ComponentTitle}` to create transactions on cell change and will not expose row editing overlay in the UI.
+> Disabling `RowEditable` property will modify `{ComponentName}` to create transactions on cell change and will not expose row editing overlay in the UI.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->

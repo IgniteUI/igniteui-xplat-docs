@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Cell Editing
 
-Ignite UI for {Platform} `{ComponentTitle}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentTitle}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+Ignite UI for {Platform} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
@@ -42,11 +42,11 @@ You can exit edit mode and **commit** the changes in one of the following ways:
  - on key press <kbd>Enter</kbd>;
  - on key press <kbd>F2</kbd>;
  - on key press <kbd>Tab</kbd>;
- - on single click to another cell - when you click on another cell in the `{ComponentTitle}`, your changes will be submitted.
+ - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
  - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
 > [!NOTE]
-> The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentTitle}`. This is valid for both cell editing and row editing.
+> The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.
 
 ### Editing through API
 
@@ -198,7 +198,7 @@ For more information on how to configure columns and their templates, you can se
 
 Using Excel Style Editing allows the user to navigate trough the cells just as he would using the Excel, and ever so quickly edit them.
 
-Implementing this custom functionality can be done by utilizing the events of the `{ComponentTitle}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
+Implementing this custom functionality can be done by utilizing the events of the `{ComponentName}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
 
 * Constant edit mode
 
@@ -282,11 +282,11 @@ Main benefits of the above approach include:
 > [!NOTE]
 > Please keep in mind that when you perform some **CRUD operation** all of the applied pipes like **filtering**, **sorting** and **grouping** will be re-applied and your view will be automatically updated.
 
-The `{ComponentTitle}` provides a straightforward API for basic CRUD operations.
+The `{ComponentName}` provides a straightforward API for basic CRUD operations.
 
 ### Adding a new record
 
-The `{ComponentTitle}` component exposes the `AddRow` method which will add the provided data to the data source itself.
+The `{ComponentName}` component exposes the `AddRow` method which will add the provided data to the data source itself.
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -409,7 +409,7 @@ row.delete();
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-These can be wired to user interactions, not necessarily related to the `{ComponentTitle}` for example, a button click:
+These can be wired to user interactions, not necessarily related to the `{ComponentName}` for example, a button click:
 
 ```html
 <button igxButton igxRipple (click)="deleteRow($event)">Delete Row</button>
@@ -417,7 +417,7 @@ These can be wired to user interactions, not necessarily related to the `{Compon
 
 ### Cell Validation on Edit Event
 
-Using the `{ComponentTitle}`'s editing events, we can alter how the user interacts with the `{ComponentTitle}`.
+Using the `{ComponentName}`'s editing events, we can alter how the user interacts with the `{ComponentName}`.
 
 In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event:
 
@@ -508,7 +508,7 @@ export class MyHGridEventsComponent {
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
 <!-- ComponentEnd: HierarchicalGrid -->
 
-The result of the above validation being applied to our `{ComponentTitle}` can be seen in the below demo:
+The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

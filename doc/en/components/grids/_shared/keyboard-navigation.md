@@ -7,11 +7,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Keyboard Navigation
 
- Keyboard navigation in the `{ComponentTitle}` provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentTitle}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
+ Keyboard navigation in the `{ComponentName}` provides a rich variety of keyboard interactions for the user. It enhances the accessibility of the `{ComponentName}` and allows the user to navigate through any type of elements inside (cell, row, column header, toolbar, footer, etc.). This functionality is enabled by default, and the developer has the option to override any of the default behaviors in an easy way.
 
-The tabulations of the `{ComponentTitle}` has been reduced so that the navigation is compliant with W3C accessibility standards and convenient to use.
+The tabulations of the `{ComponentName}` has been reduced so that the navigation is compliant with W3C accessibility standards and convenient to use.
 
-Currently, the `{ComponentTitle}` introduces the following tab stops:
+Currently, the `{ComponentName}` introduces the following tab stops:
 
 * **GroupBy or Toolbar area** (if enabled).
 * **{ComponentTitle} header**.
@@ -20,17 +20,17 @@ Currently, the `{ComponentTitle}` introduces the following tab stops:
 * **{ComponentTitle} paginator** (if enabled).
 
 >[!NOTE]
-> Due to this change, navigating between the cells with <kbd>tab</kbd> and <kbd>Shift + Tab</kbd> is no longer supported in the `{ComponentTitle}`.
+> Due to this change, navigating between the cells with <kbd>tab</kbd> and <kbd>Shift + Tab</kbd> is no longer supported in the `{ComponentName}`.
 > Pressing the <kbd>Tab</kbd> key now goes through the tab stops in the following order: **GroupBy** / **Toolbar** -> **Headers** -> **Body** -> **Summaries** -> **Footer / Paginator**.
 
 >[!NOTE]
-> Exposing any **focusable** element into the `{ComponentTitle}` body via template may introduce **side effects** in the keyboard navigation, since the default
+> Exposing any **focusable** element into the `{ComponentName}` body via template may introduce **side effects** in the keyboard navigation, since the default
 > browser behavior is not prevented. It is the developer's responsibility to prevent or modify it appropriately.
 
 ## Header Navigation
 
-A full *keyboard navigation* support in the `{ComponentTitle}` header is now introduced. Column headers can be easily traversed with the arrow keys. Additionally, there are a number of key combinations that trigger actions on the columns like **filtering**, **sorting**, **grouping** and etc.
-When the `{ComponentTitle}` header container is focused, the following key combinations are available:
+A full *keyboard navigation* support in the `{ComponentName}` header is now introduced. Column headers can be easily traversed with the arrow keys. Additionally, there are a number of key combinations that trigger actions on the columns like **filtering**, **sorting**, **grouping** and etc.
+When the `{ComponentName}` header container is focused, the following key combinations are available:
 
 ### Key Combinations
 
@@ -56,7 +56,7 @@ When the `{ComponentTitle}` header container is focused, the following key combi
 
 ## Body navigation
 
-When the `{ComponentTitle}` body is focused, the following key combinations are available:
+When the `{ComponentName}` body is focused, the following key combinations are available:
 
 ### Key Combination
 
@@ -165,7 +165,7 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 </igx-hierarchical-grid>
 ```
 
-In order to add custom keyboard navigation to `{ComponentTitle}` child grids too, each child grid should subscribe to `GridKeydown` event. That's why in example above we have registered and event handler for for the `GridCreated` event:
+In order to add custom keyboard navigation to `{ComponentName}` child grids too, each child grid should subscribe to `GridKeydown` event. That's why in example above we have registered and event handler for for the `GridCreated` event:
 
 ```typescript
 public childGridCreated(event: IGridCreatedEventArgs) {

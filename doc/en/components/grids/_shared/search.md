@@ -8,11 +8,11 @@ sharedComponents: ["Grid", "TreeGrid"]
 
 # {Platform} {ComponentTitle} Search Filter
 
-The {Platform} `{ComponentTitle}` search enables the process of finding values in the collection of data. We make it easier to setup this functionality and it can be implemented with search input box, buttons, keyboard navigation and other useful features for an even better user experience. While browsers natively provide content search functionality, most of the time the `{ComponentTitle}` virtualizes its columns and rows that are out of view. In these cases, the native grid search is unable to search data in the virtualized cells, since they are not part of the DOM. We have extended the {ProductName} Material table-based grid with a **search API** that allows you to search through the **virtualized content** of the `{ComponentTitle}`.
+The {Platform} `{ComponentName}` search enables the process of finding values in the collection of data. We make it easier to setup this functionality and it can be implemented with search input box, buttons, keyboard navigation and other useful features for an even better user experience. While browsers natively provide content search functionality, most of the time the `{ComponentName}` virtualizes its columns and rows that are out of view. In these cases, the native grid search is unable to search data in the virtualized cells, since they are not part of the DOM. We have extended the {ProductName} Material table-based grid with a **search API** that allows you to search through the **virtualized content** of the `{ComponentName}`.
 
 ## {Platform} Search Example
 
-The following example represents `{ComponentTitle}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
+The following example represents `{ComponentName}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -96,7 +96,7 @@ TODO TREEGRID SNIPPET
 }
 ```
 
-Great, and now let's prepare for the search API of our `{ComponentTitle}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
+Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
 
 ```typescript
 public searchText: string = '';
@@ -113,11 +113,11 @@ public bool exactMatch = false;
 ### {Platform} Search Box Input
 
 <!-- Angular -->
-Now let's create our search input! By binding our `SearchText` as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentTitle}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+Now let's create our search input! By binding our `SearchText` as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
 <!-- end: Angular -->
 
 <!-- Blazor -->
-Now let's create our search input! By binding our `SearchText` to the `Value` property to our newly created input and subscribe to the `ValueChanging` event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentTitle}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+Now let's create our search input! By binding our `SearchText` to the `Value` property to our newly created input and subscribe to the `ValueChanging` event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
 <!-- end: Blazor -->
 
 Both the `FindNext` and the `FindPrev` methods have three arguments:
@@ -128,7 +128,7 @@ Both the `FindNext` and the `FindPrev` methods have three arguments:
 
 When searching by an exact match, the search API will highlight as results only the cell values that match entirely the `SearchText` by taking the case sensitivity into account as well. For example the strings '_software_' and '_Software_' are an exact match with a disregard for the case sensitivity.
 
-The methods from above return a **number** value (the number of times the `{ComponentTitle}` contains the given string).
+The methods from above return a **number** value (the number of times the `{ComponentName}` contains the given string).
 
 ```html
 <!--searchgrid.component.html-->
@@ -303,7 +303,7 @@ Now let's allow the user to choose whether the search should be case sensitive a
 
 ### Persistence
 
-What if we would like to filter and sort our `{ComponentTitle}` or even to add and remove records? After such operations, the highlights of our current search automatically update and persist over any text that matches the `SearchText`! Furthermore, the search will work with paging and will persist the highlights through changes of the `{ComponentTitle}`'s `PerPage` property.
+What if we would like to filter and sort our `{ComponentName}` or even to add and remove records? After such operations, the highlights of our current search automatically update and persist over any text that matches the `SearchText`! Furthermore, the search will work with paging and will persist the highlights through changes of the `{ComponentName}`'s `PerPage` property.
 
 ### Adding icons
 
@@ -360,7 +360,7 @@ Finally, let's update our template with the new components!
 
 <!-- Angular -->
 
-We will wrap all of our components inside an [InputGroup](../input-group.md). On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentTitle}`'s `ClearSearch` method to clear the highlights.
+We will wrap all of our components inside an [InputGroup](../input-group.md). On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
 
 <!-- end: Angular -->
 
@@ -389,7 +389,7 @@ public clearSearch() {
 
 <!-- Blazor -->
 
-We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentTitle}`'s `ClearSearch` method to clear the highlights.
+We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
 
 <!-- end: Blazor -->
 
@@ -522,7 +522,7 @@ On the right in our input group, let's create three separate containers with the
 
 ## API References
 
-In this article we implemented our own search bar for the `{ComponentTitle}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
+In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
 -   `FindNext`

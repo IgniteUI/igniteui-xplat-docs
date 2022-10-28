@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} UI `{ComponentTitle}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentTitle}`.
+The {Platform} UI `{ComponentName}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -21,7 +21,7 @@ The {Platform} UI `{ComponentTitle}` in {ProductName} has a **summaries** featur
 > [!NOTE]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
 
-`{ComponentTitle}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentTitle}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
+`{ComponentName}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentName}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
 
 
 For `string` and `boolean` `DataType`, the following function is available:
@@ -42,7 +42,7 @@ For `date` data type, the following functions are available:
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
-`{ComponentTitle}` summaries are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentTitle}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
+`{ComponentName}` summaries are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentName}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
 
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -95,7 +95,7 @@ Add blazor snippet for hgrid
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentTitle}`.
+The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentName}`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -431,7 +431,7 @@ Add custom summary formatter snippets for blazor
 
 ## Summaries with Group By
 
-When you have grouped by columns, the `{ComponentTitle}` allows you to change the summary position and calculation mode using the `SummaryCalculationMode` and `SummaryPosition` properties. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the group row that refers to is collapsed.
+When you have grouped by columns, the `{ComponentName}` allows you to change the summary position and calculation mode using the `SummaryCalculationMode` and `SummaryPosition` properties. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the group row that refers to is collapsed.
 
 The available values of the `SummaryCalculationMode` property are:
 
@@ -448,7 +448,7 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 
 > [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentTitle}`.
+> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
 ### Demo
 
@@ -464,7 +464,7 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 ## Child Summaries
 
-The `{ComponentTitle}` supports separate summaries for the root nodes and for each nested child node level. Which summaries are shown is configurable using the `SummaryCalculationMode` property. The child level summaries can be shown before or after the child nodes using the `SummaryPosition` property. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the parent node that refers to is collapsed.
+The `{ComponentName}` supports separate summaries for the root nodes and for each nested child node level. Which summaries are shown is configurable using the `SummaryCalculationMode` property. The child level summaries can be shown before or after the child nodes using the `SummaryPosition` property. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the parent node that refers to is collapsed.
 
 
 The available values of the `SummaryCalculationMode` property are:
@@ -481,7 +481,7 @@ The available values of the `SummaryPosition` property are:
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 
 > [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentTitle}`.
+> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
 <code-view style="height:720px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

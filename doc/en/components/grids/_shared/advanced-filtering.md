@@ -10,7 +10,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} table like the `{ComponentTitle}`.
+The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} table like the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
@@ -79,15 +79,15 @@ ngAfterViewInit(): void {
 }
 ```
 
-In case you don't want to show the `{ComponentTitle}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
+In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
 >[!NOTE]
->You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentTitle}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentTitle}` is the intersection between the results of the two filters.
+>You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 <!-- Angular -->
 ## External Advanced Filtering
 
-As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentTitle}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentTitle}`.
+As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentName}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentName}`.
 
 ### Demo
 
@@ -99,7 +99,7 @@ As you see in the demo above, the advanced filtering dialog is hosted in an over
 
 ### Usage
 
-It's super easy to configure the advanced filtering to work outside of the `{ComponentTitle}`. All you need to do is to create the dialog and set its **grid** property:
+It's super easy to configure the advanced filtering to work outside of the `{ComponentName}`. All you need to do is to create the dialog and set its **grid** property:
 
 ```html
 <igx-advanced-filtering-dialog [grid]="grid1">
@@ -420,7 +420,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 * `Column`
-* `{ComponentTitle}`
+* `{ComponentName}`
 
 ## Additional Resources
 

@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Clipboard Overview
 
-Copy to clipboard operations are now available in the `{ComponentTitle}`. This functionality provides a fast, easy and customizable way to copy data of the {Platform} {ComponentName} through the current multi cell data select. System Clipboard behavior gives the user ability to copy data from the `{ComponentTitle}` into Excel or other external programs.
+Copy to clipboard operations are now available in the `{ComponentName}`. This functionality provides a fast, easy and customizable way to copy data of the {Platform} {ComponentName} through the current multi cell data select. System Clipboard behavior gives the user ability to copy data from the `{ComponentName}` into Excel or other external programs.
 
 ## {Platform} {ComponentTitle} Clipboard Example
 

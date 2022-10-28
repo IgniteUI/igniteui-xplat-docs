@@ -7,11 +7,11 @@ _keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName},
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentTitle}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentTitle}` supports template for custom pages.
+Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentName}` supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 
-The following example represents `{ComponentTitle}` pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the `{ComponentTitle}` pages via "Go to last page" and "Go to first page" buttons.
+The following example represents `{ComponentName}` pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the `{ComponentName}` pages via "Go to last page" and "Go to first page" buttons.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,7 +22,7 @@ The following example represents `{ComponentTitle}` pagination and exposes the o
 
 <!-- Angular -->
 
-Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our `{ComponentTitle}` to enable paging:
+Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our `{ComponentName}` to enable paging:
 
 <!-- end: Angular -->
 
@@ -143,7 +143,7 @@ TO-DO TREEGRID CODE SNIPPET
 <!-- ComponentStart: HierarchicalGrid -->
 ### Paginator Configuration within Child Grids
 
-Due to certain limitations in how the child grids of an `{ComponentTitle}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
+Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
 
 ```html
 <igx-hierarchical-grid>
@@ -172,7 +172,7 @@ TO-DO H-GRID CODE SNIPPET
 
 ## Remote Paging
 
-Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentTitle}` construction and data subscription. For more detailed information, check the [`Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
+Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentName}` construction and data subscription. For more detailed information, check the [`Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
 
 <!-- ComponentStart: Grid -->
 

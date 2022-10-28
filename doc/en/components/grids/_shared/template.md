@@ -115,9 +115,9 @@ Then, all you need to do is enable `BatchEditing` property:
 
 ## {Platform} {ComponentTitle} Transaction
 
-This will ensure a proper instance of `Transaction` service is provided for the `{ComponentTitle}`. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the `TransactionFactory` class.
+This will ensure a proper instance of `Transaction` service is provided for the `{ComponentName}`. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the `TransactionFactory` class.
 
-After batch editing is enabled, define a `{ComponentTitle}` with bound data source and `RowEditable` set to true and bind:
+After batch editing is enabled, define a `{ComponentName}` with bound data source and `RowEditable` set to true and bind:
 
 <!-- EXAMPLE of a code snippet that applies only to Grid component  -->
 <!-- ComponentStart: Grid -->

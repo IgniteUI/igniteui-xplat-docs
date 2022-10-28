@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentTitle}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The `{ComponentName}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
 
 ## Usage
 
@@ -27,11 +27,11 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 The predefined actions UI components are:
 
-- `GridEditingActions` - includes functionality and UI specifically designed for the `{ComponentTitle}` editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the `{ComponentTitle}`.
+- `GridEditingActions` - includes functionality and UI specifically designed for the `{ComponentName}` editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the `{ComponentName}`.
 
-- `GridPinningActions` - includes functionality and UI specifically designed for the `{ComponentTitle}` row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
+- `GridPinningActions` - includes functionality and UI specifically designed for the `{ComponentName}` row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
 
-They are added inside the `{ComponentTitle}` and this is all needed to have an `ActionStrip` providing default interactions.
+They are added inside the `{ComponentName}` and this is all needed to have an `ActionStrip` providing default interactions.
 
 ```html
 <{ComponentSelector} [data]="data" [rowEditable]="true" [primaryKey]="'ID'">
@@ -59,7 +59,7 @@ They are added inside the `{ComponentTitle}` and this is all needed to have an `
     </{ComponentSelector}>
 ```
 
->Note: When `ActionStripComponent` is a child component of the `{ComponentTitle}`, hovering a row will automatically show the UI.
+>Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
 ## Custom Implementation
 

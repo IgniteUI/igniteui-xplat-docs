@@ -8,17 +8,17 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} Cell Selection
 
-The selection feature enables rich data select capabilities in the Ignite UI for {Platform} `{ComponentTitle}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentTitle}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
+The selection feature enables rich data select capabilities in the Ignite UI for {Platform} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
 
 <!-- ComponentStart: HierarchicalGrid -->
-In the `{ComponentTitle}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
+In the `{ComponentName}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Let's dive deeper into each of these options.
 
 ## {Platform} Cell Selection Example
 
-The sample below demonstrates the three types of `{ComponentTitle}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
+The sample below demonstrates the three types of `{ComponentName}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
 <code-view style="height:750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -243,7 +243,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## API References
 
-* `{ComponentTitle}`
+* `{ComponentName}`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 * `GridRow`
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
