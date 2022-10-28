@@ -429,7 +429,7 @@
         "name": "Sorting",
         "href": "grids/lob-grid/sorting.md",
         "status": "NEW"
-      }
+      },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
@@ -623,7 +623,7 @@
         "name": "Sorting",
         "href": "grids/hierarchical-grid/sorting.md",
         "status": "NEW"
-      }
+      },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
