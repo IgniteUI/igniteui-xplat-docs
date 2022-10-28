@@ -8,9 +8,10 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} State Persistence
 
-Тhe GridState directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+Тhe `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 
 ## Supported Features
+
 `GridState` directive supports saving and restoring the state of the following features:
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -28,7 +29,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 * `Columns`
     * **NEW**: Multi column headers are now supported out of the box
     * Columns order
-    * Column properties defined by the [`IColumnState`]({environment:angularApiUrl}/interfaces/icolumnstate.html) interface.
+    * Column properties defined by the `IColumnState` interface.
     * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
@@ -49,7 +50,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 * `Columns`
     * **NEW**: Multi column headers are now supported out of the box
     * Columns order
-    * Column properties defined by the [`IColumnState`]({environment:angularApiUrl}/interfaces/icolumnstate.html) interface.
+    * Column properties defined by the `IColumnState` interface.
     * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -63,13 +64,11 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 * `Column Selection`
 * `Expansion`
 * `Pivot Configuration`
-    * Pivot Configuration properties defined by the [`IPivotConfiguration`]({environment:angularApiUrl}/interfaces/ipivotconfiguration.html) interface.
+    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
     * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
     * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
 
 <!-- ComponentEnd: PivotGrid -->
-
-
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -79,8 +78,10 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 ## Usage
 
-`GetState` - This method returns the grid state in a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc). The method accepts first optional parameter `Serialize`, which determines whether `GetState` will return an `IGridState` object or a serialized JSON string.
+The `GetState` method returns the grid state in a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc). The method accepts first optional parameter `Serialize`, which determines whether `GetState` will return an `IGridState` object or a serialized JSON string.
+
 The developer may choose to get only the state for a certain feature/features, by passing in the feature name, or an array with feature names as a second argument.
+
 ```typescript
 // get all features` state in a serialized JSON string
 const gridState = state.getState();
@@ -107,28 +108,24 @@ state.setState(sortingFilteringStates)
 SetState blazor snippet
 ```
 
-`Options` - The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for it.
+The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for it.
 
 ```typescript
 public options =  { cellSelection: false; sorting: false; }
 ```
 
-<!-- Angular -->
 ```html
 <{ComponentSelector} [igxGridState]="options">
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add options snippet blazor
 ```
 
-The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `sessionStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
+The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `SessionStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
 
-<!-- Angular -->
 ```typescript
-// app.component.ts
 @ViewChild(IgxGridStateDirective, { static: true })
 public state!: IgxGridStateDirective;
 
@@ -152,7 +149,6 @@ public restoreGridState() {
     this.state.setState(state);
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for working with the sessionStorage
@@ -167,7 +163,6 @@ Add blazor snippet for working with the sessionStorage
 1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
 
 <!-- ComponentStart: Grid -->
-<!-- Angular -->
 ```html
 <igx-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -177,7 +172,6 @@ Add blazor snippet for working with the sessionStorage
     </igx-column>
 </igx-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add snippet for grid
@@ -187,7 +181,6 @@ Add snippet for grid
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-<!-- Angular -->
 ```html
 <igx-hierarchical-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -197,7 +190,6 @@ Add snippet for grid
     </igx-column>
 </igx-hierarchical-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add snippet for grid
@@ -207,7 +199,6 @@ Add snippet for grid
 
 <!-- ComponentStart: TreeGrid -->
 
-<!-- Angular -->
 ```html
 <igx-tree-grid id="grid" #grid igxGridState (columnInit)="onColumnInit($event)">
     <igx-column [field]="'IsActive'" header="IsActive">
@@ -217,7 +208,6 @@ Add snippet for grid
     </igx-column>
 </igx-tree-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add sample
@@ -225,10 +215,9 @@ Add sample
 
 <!-- ComponentEnd: TreeGrid  -->
 
-1. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `bodyTemplate` property:
+1. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
 
 
-<!-- Angular -->
 ```typescript
 @ViewChild('activeTemplate', { static: true }) public activeTemplate: TemplateRef<any>;
 public onColumnInit(column: IgxColumnComponent) {
@@ -239,7 +228,6 @@ public onColumnInit(column: IgxColumnComponent) {
     }
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor handler for bodyTemplate
@@ -251,17 +239,16 @@ Add blazor handler for bodyTemplate
 <!-- ComponentStart: PivotGrid -->
 
 ## Restoring Pivot Configuration
+
 `GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [`limitations`](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 
-<!-- Angular -->
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfig" [igxGridState]="options"
     (valueInit)='onValueInit($event)' (dimensionInit)='onDimensionInit($event)'>
 </igx-pivot-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 blazor snippet
@@ -271,7 +258,6 @@ blazor snippet
 
 * In the `ValueInit` event handler set all custom aggregators, formatters and styles:
 
-<!-- Angular -->
 ```typescript
 public onValueInit(value: IPivotValue) {
     // Needed only for custom aggregators, formatter or styles.
@@ -297,14 +283,13 @@ public onValueInit(value: IPivotValue) {
     }
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor handling for valueInit
 ```
 
 * In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
-<!-- Angular -->
+
 ```typescript
 public onDimensionInit(dim: IPivotDimension) {
     switch (dim.memberName) {
@@ -323,7 +308,6 @@ public onDimensionInit(dim: IPivotDimension) {
     }
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor handling for dimensionInit
@@ -333,21 +317,21 @@ Add blazor handling for dimensionInit
 
 
 <!-- ComponentStart: HierarchicalGrid -->
+
 ## Restoring Child Grids
 Saving / Restoring state for the child grids is controlled by the `RowIslands` property and is enabled by default. `GridState` will use the same options for saving/restoring features both for the root grid and all child grids down the hierarchy. For example, if we pass the following options:
 
-<!-- Angular -->
 ``` html
 <!-- public options = {selection: false, sorting: false, rowIslands: true} -->
 <igx-grid [igxGridState]="options"></igx-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Blazor snippet
 ```
 
 Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
+
 ```typescript
 this.state.setState(state, ['filtering', 'rowIslands']);
 ```
@@ -367,13 +351,13 @@ setState snippet
 <!-- ComponentStart: PivotGrid -->
 
 ## Restoring Pivot Strategies
-`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](pivot-grid-custom.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
+
+`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](pivot-grid-custom.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
 
 > `StateParsed` is only emitted when we are using `SetState` with string argument.
 
 * Set custom sorting strategy and custom pivot column and row dimension strategies:
 
-<!-- Angular -->
 ```html
 <igx-pivot-grid #grid [data]="data" [pivotConfiguration]="pivotConfigHierarchy" [defaultExpandState]='true'
     [igxGridState]="options" [sortStrategy]="customStrategy" [showPivotConfigurationUI]='false' [superCompactMode]="true" [height]="'500px'">
@@ -395,15 +379,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     filters: [...]
 };
 ```
-<!-- end: Angular -->
 
 ```razor
 Add snippet for blazor
 ```
 
-* Restoring the state from the `sessionStorage` and applying the custom strategies looks like the following:
+* Restoring the state from the `SessionStorage` and applying the custom strategies looks like the following:
 
-<!-- Angular -->
 ```typescript
 public restoreState() {
     const state = window.sessionStorage.getItem('grid-state');
@@ -415,7 +397,6 @@ public restoreState() {
     this.state.setState(state as string);
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add snippet for blazor for restore state
@@ -431,9 +412,11 @@ Add snippet for blazor for restore state
 <!-- ComponentEnd: PivotGrid -->
 
 ## Limitations
+
 <!-- ComponentStart: HierarchicalGrid -->
 
-* When restoring all grid features at once (using `setState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+* When restoring all grid features at once (using `SetState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+
 ```typescript
 state.setState(gridState);
 state.setState(gridState.columns);
@@ -466,11 +449,12 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Selection](selection.md)
+
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart: PivotGrid -->
@@ -478,4 +462,5 @@ state.setState(gridState.columnSelection);
 * [{ComponentTitle} overview](overview.md)
 * [Pivot Grid Remote Operations](pivot-grid-custom.md)
 * [Pivot Grid Features](pivot-grid-features.md)
+
 <!-- ComponentEnd: PivotGrid -->

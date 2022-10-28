@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} UI {ComponentTitle} in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the {ComponentTitle}.
+The {Platform} UI `{ComponentTitle}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentTitle}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -21,32 +21,32 @@ The {Platform} UI {ComponentTitle} in {ProductName} has a **summaries** feature 
 > [!NOTE]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
 
-**{ComponentTitle} summaries** can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. {ComponentTitle} summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
+`{ComponentTitle}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentTitle}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
 
 
 For `string` and `boolean` `DataType`, the following function is available:
- - count
+ - Count
 
 For `number`, `currency` and `percent` data types, the following functions are available:
- - count
- - min
- - max
- - average
- - sum
+
+ - Count
+ - Min
+ - Max
+ - Average
+ - Sum
 
 For `date` data type, the following functions are available:
- - count
- - earliest
- - latest
+ - Count
+ - Earliest
+ - Latest
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
-**{ComponentTitle} summaries** are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentSelector}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
+`{ComponentTitle}` summaries are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentTitle}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
 
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -57,8 +57,6 @@ All available column data types could be found in the official [Column types top
     </igx-column>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
 
 ```razor
 <IgbGrid>
@@ -74,7 +72,6 @@ All available column data types could be found in the official [Column types top
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-<!-- Angular -->
 ```html
 <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false">
     <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -90,7 +87,6 @@ All available column data types could be found in the official [Column types top
     <igx-column field="Grammy Awards" [hasSummary]='true' [dataType]="'number'"></igx-column>
 </igx-hierarchical-grid>
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
@@ -99,11 +95,10 @@ Add blazor snippet for hgrid
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the **{ComponentSelector}**.
+The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentTitle}`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -116,6 +111,7 @@ The other way to enable/disable summaries for a specific column or a list of col
 <button (click)="enableSummary()">Enable Summary</button>
 <button (click)="disableSummary()">Disable Summary </button>
 ```
+
 ```typescript
 public enableSummary() {
     this.grid.enableSummaries([
@@ -127,7 +123,6 @@ public disableSummary() {
     this.grid.disableSummaries('ProductName');
 }
 ```
-<!-- end: Angular -->
 
 <!-- TODO: EnableSummariesAsync not working so please add it to the code snippet when it got fixed. -->
 
@@ -152,7 +147,7 @@ public disableSummary() {
 
 
 <!-- ComponentStart: HierarchicalGrid -->
-<!-- Angular -->
+
 ```html
 <{ComponentSelector} #hierarchicalGrid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
   <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -181,7 +176,6 @@ public disableSummary() {
     this.hierarchicalGrid.disableSummaries('Photo');
 }
 ```
-<!-- end: Angular -->
 
 ```razor
 Add blazor snippet for hgrid
@@ -196,7 +190,6 @@ Add blazor snippet for hgrid
 <!-- If these functions do not fulfill your requirements you can provide a custom summary for the specific columns. In order to achieve this you have to override one of the base classes `SummaryOperand`, `NumberSummaryOperand` or `DateSummaryOperand` according to the column data type and your needs. This way you can redefine the existing function or you can add new functions. `SummaryOperand` class provides the default implementation only for the `Count` method. `NumberSummaryOperand` extends `SummaryOperand` and provides implementation for the `Min`, `Max`, `Sum` and `Average`. `DateSummaryOperand` extends `SummaryOperand` and additionally gives you `Earliest` and `Latest`. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
-<!-- Angular -->
 ```typescript
 import { IgxSummaryResult, IgxSummaryOperand, IgxNumberSummaryOperand, IgxDateSummaryOperand } from 'igniteui-angular';
 
@@ -216,7 +209,6 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add blazor snippet
@@ -227,7 +219,6 @@ Add blazor snippet
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-<!-- Angular -->
 ```typescript
 import { IgxRowIslandComponent, IgxHierarchicalGridComponent, IgxNumberSummaryOperand, IgxSummaryResult } from 'igniteui-angular';
 
@@ -248,7 +239,6 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add blazor snippet for hgrid
@@ -259,7 +249,6 @@ Add blazor snippet for hgrid
 
 The method returns a list of `SummaryResult`. -->
 
-<!-- Angular -->
 ```typescript
 interface IgxSummaryResult {
     key: string;
@@ -267,10 +256,9 @@ interface IgxSummaryResult {
     summaryResult: any;
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
-Add IgxSummaryResult snippet here
+Add SummaryResult snippet here
 ```
 
 and take optional parameters for calculating the summaries.
@@ -281,7 +269,6 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
 
 <!-- ComponentStart: Grid, TreeGrid -->
 <!-- And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below. -->
-<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" width="200px"  [sortable]="true">
@@ -300,7 +287,6 @@ export class GridComponent implements OnInit {
     mySummary = MySummary;
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add blazor snippet
@@ -313,7 +299,6 @@ Add blazor snippet
 
 <!-- And now let's add our custom summary to the column `GramyNominations`. We will achieve that by setting the `Summaries` property to the class we create below. -->
 
-<!-- Angular -->
 ```html
  <igx-hierarchical-grid class="hgrid" [data]="localdata" [autoGenerate]="false">
     <igx-column field="Artist" [hasSummary]='true'></igx-column>
@@ -335,7 +320,6 @@ export class HGridSummarySampleComponent implements OnInit {
     mySummary = MySummary;
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add blazor snippet for hgrid
@@ -350,7 +334,6 @@ As you can see in the code snippet below the operate method has the following th
 - allGridData - gives you the whole grid data source
 - fieldName - current column field -->
 
-<!-- Angular -->
 ```typescript
 class MySummary extends IgxNumberSummaryOperand {
     constructor() {
@@ -363,11 +346,10 @@ class MySummary extends IgxNumberSummaryOperand {
     }
 }
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add blazor snippet for my summary
-```
+```--> 
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -378,7 +360,6 @@ Add blazor snippet for my summary
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
 
-<!-- Angular -->
 ```html
 <igx-column [hasSummary]="true">
     <ng-template igxSummary let-summaryResults>
@@ -387,7 +368,6 @@ Add blazor snippet for my summary
     </ng-template>
 </igx-column>
 ```
-<!-- end: Angular -->
 
 ```razor
 <IgbColumn HasSummary="true" SummaryTemplateScript="SummaryTemplate">
@@ -406,7 +386,7 @@ When a default summary is defined, the height of the summary area is calculated 
 <!-- Angular -->
 
 > [!NOTE]
-> Column summary template could be defined through API by setting the column SummaryTemplate property to the required TemplateRef.
+> Column summary template could be defined through API by setting the column `SummaryTemplate` property to the required TemplateRef.
 
 <!-- end: Angular -->
 
@@ -421,7 +401,6 @@ When a default summary is defined, the height of the summary area is calculated 
 <!-- ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property. -->
 
-<!-- Angular -->
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
     const result = summary.summaryResult;
@@ -437,7 +416,6 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```html
 <igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
 ```
-<!-- end: Angular -->
 
 <!-- ```razor
 Add custom summary formatter snippets for blazor
@@ -453,22 +431,24 @@ Add custom summary formatter snippets for blazor
 
 ## Summaries with Group By
 
-When you have grouped by columns, the {ComponentTitle} allows you to change the summary position and calculation mode using the `SummaryCalculationMode` and `SummaryPosition` properties. Along with these two properties the {ComponentName} exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the group row that refers to is collapsed.
+When you have grouped by columns, the `{ComponentTitle}` allows you to change the summary position and calculation mode using the `SummaryCalculationMode` and `SummaryPosition` properties. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the group row that refers to is collapsed.
 
 The available values of the `SummaryCalculationMode` property are:
- - rootLevelOnly - Summaries are calculated only for the root level.
- - childLevelsOnly - Summaries are calculated only for the child levels.
- - rootAndChildLevels - Summaries are calculated for both root and child levels. This is the default value.
+
+ - `RootLevelOnly` - Summaries are calculated only for the root level.
+ - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+ - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
- - top - The summary row appears before the group by row children.
- - bottom - The summary row appears after the group by row children. This is the default value.
+
+ - `Top` - The summary row appears before the group by row children.
+ - `Bottom` - The summary row appears after the group by row children. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
 
 
 > [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the {ComponentTitle}.
+> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentTitle}`.
 
 ### Demo
 
@@ -484,22 +464,24 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 ## Child Summaries
 
-The {ComponentTitle} supports separate summaries for the root nodes and for each nested child node level. Which summaries are shown is configurable using the `SummaryCalculationMode` property. The child level summaries can be shown before or after the child nodes using the `SummaryPosition` property. Along with these two properties the @@igxName exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the parent node that refers to is collapsed.
+The `{ComponentTitle}` supports separate summaries for the root nodes and for each nested child node level. Which summaries are shown is configurable using the `SummaryCalculationMode` property. The child level summaries can be shown before or after the child nodes using the `SummaryPosition` property. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the parent node that refers to is collapsed.
 
 
 The available values of the `SummaryCalculationMode` property are:
- - rootLevelOnly - Summaries are calculated only for the root level nodes.
- - childLevelsOnly - Summaries are calculated only for the child levels.
- - rootAndChildLevels - Summaries are calculated for both root and child levels. This is the default value.
+
+ - `RootLevelOnly` - Summaries are calculated only for the root level nodes.
+ - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
+ - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
 
 The available values of the `SummaryPosition` property are:
- - top - The summary row appears before the list of child rows.
- - bottom - The summary row appears after the list of child rows. This is the default value.
+
+ - `Top` - The summary row appears before the list of child rows.
+ - `Bottom` - The summary row appears after the list of child rows. This is the default value.
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 
 > [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the {ComponentTitle}.
+> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentTitle}`.
 
 <code-view style="height:720px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -514,15 +496,16 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 The summary rows can be navigated with the following keyboard interactions:
 
-- <kbd>UP</kbd> - navigates one cell up
-- <kbd>DOWN</kbd> - navigates one cell down
-- <kbd>LEFT</kbd> - navigates one cell left
-- <kbd>RIGHT</kbd> - navigates one cell right
-- <kbd>CTRL</kbd> + <kbd>LEFT</kbd> or <kbd>HOME</kbd> - navigates to the leftmost cell
-- <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell
+- <kbd>UP</kbd> - navigates one cell up.
+- <kbd>DOWN</kbd> - navigates one cell down.
+- <kbd>LEFT</kbd> - navigates one cell left.
+- <kbd>RIGHT</kbd> - navigates one cell right.
+- <kbd>CTRL</kbd> + <kbd>LEFT</kbd> or <kbd>HOME</kbd> - navigates to the leftmost cell.
+- <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell.
 
 <!-- Angular -->
 ## Styling
+
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
@@ -562,7 +545,7 @@ The last step is to **include** the component mixins:
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
@@ -651,7 +634,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## Additional Resources
 
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
