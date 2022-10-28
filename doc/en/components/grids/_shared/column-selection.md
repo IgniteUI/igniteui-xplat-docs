@@ -12,7 +12,7 @@ The Column Selection feature provides an easy way to select an entire column wit
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
-The sample below demonstrates the three types of `{ComponentTitle}`'s **column selection** behavior. Use the column selection dropdown below to enable each of the available selection modes.
+The sample below demonstrates the three types of `{ComponentName}`'s **column selection** behavior. Use the column selection dropdown below to enable each of the available selection modes.
 
 <!-- ComponentStart: Grid -->
 

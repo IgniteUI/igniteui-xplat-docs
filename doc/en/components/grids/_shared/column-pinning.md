@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Column Pinning
 
-A column or multiple columns can be pinned to the left or right side of the {Platform} UI `{ComponentTitle}`. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentTitle}`. The {ProductName} `{ComponentTitle}` has a built-in column pinning UI, which can be used through the `{ComponentTitle}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
+A column or multiple columns can be pinned to the left or right side of the {Platform} UI `{ComponentName}`. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentName}`. The {ProductName} `{ComponentName}` has a built-in column pinning UI, which can be used through the `{ComponentName}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
 
@@ -20,7 +20,7 @@ A column or multiple columns can be pinned to the left or right side of the {Pla
 
 ## Column Pinning API
 
-Column pinning is controlled through the `Pinned` property of the `Column`. Pinned columns are rendered on the left side of the `{ComponentTitle}` by default and stay fixed through horizontal scrolling of the unpinned columns in the `{ComponentTitle}` body.
+Column pinning is controlled through the `Pinned` property of the `Column`. Pinned columns are rendered on the left side of the `{ComponentName}` by default and stay fixed through horizontal scrolling of the unpinned columns in the `{ComponentName}` body.
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -63,7 +63,7 @@ Column pinning is controlled through the `Pinned` property of the `Column`. Pinn
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-You may also use the `{ComponentTitle}`'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
+You may also use the `{ComponentName}`'s `PinColumn` or `UnpinColumn` methods of the `{ComponentName}` to pin or unpin columns by their field name:
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -257,7 +257,7 @@ public toggleColumn(col: IgxColumnComponent) {
 
 ## Pinning Limitations
 
-*   Setting column widths in percentage (%) explicitly makes the `{ComponentTitle}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentTitle}`.
+*   Setting column widths in percentage (%) explicitly makes the `{ComponentName}` body and header content to be misaligned when there are pinned columns. For column pinning to function correctly the column widths should be in pixels (px) or auto-assigned by the `{ComponentName}`.
 
 <!-- Angular -->
 <!-- ComponentStart: Grid -->

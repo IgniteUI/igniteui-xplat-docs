@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # Excel Filtering in {Platform} {ComponentTitle}
 
-The grid Excel filtering provides an Excel like filtering UI for any {Platform} `{ComponentTitle}`.
+The grid Excel filtering provides an Excel like filtering UI for any {Platform} `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
@@ -372,7 +372,7 @@ By default, the Excel Style Filtering dialog displays the items in a list view. 
 <!-- TODO -- No excel style filtering component -->
 <!-- ## External Excel Style filtering
 
-As you see at the demos above the default appearance of the Excel Style filtering dialog is inside the `{ComponentTitle}`. So this dialog is only visible when configuring the filters. There is a way to make that dialog stay always visible - it can be used outside of the grid as a standalone component. In the demo below, the Excel style filtering is declared separately of the `{ComponentTitle}`.
+As you see at the demos above the default appearance of the Excel Style filtering dialog is inside the `{ComponentName}`. So this dialog is only visible when configuring the filters. There is a way to make that dialog stay always visible - it can be used outside of the grid as a standalone component. In the demo below, the Excel style filtering is declared separately of the `{ComponentName}`.
 
 ### Demo
 

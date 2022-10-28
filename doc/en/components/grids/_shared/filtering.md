@@ -8,11 +8,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Filtering
 
-The {Platform} `{ComponentTitle}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentTitle}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentTitle}` is bound.
+The {Platform} `{ComponentName}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentName}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentName}` is bound.
 
 ## {Platform} {ComponentTitle} Filtering Example
 
-The sample below demonstrates `{ComponentTitle}`'s **Quick filtering** user experience.
+The sample below demonstrates `{ComponentName}`'s **Quick filtering** user experience.
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -23,7 +23,7 @@ The sample below demonstrates `{ComponentTitle}`'s **Quick filtering** user expe
 
 ## Setup
 
-In order to specify if filtering is enabled and which filtering mode should be used, the `{ComponentTitle}` exposes the following properties - `AllowFiltering`, `AllowAdvancedFiltering`, `FilterMode` and `Filterable`.
+In order to specify if filtering is enabled and which filtering mode should be used, the `{ComponentName}` exposes the following properties - `AllowFiltering`, `AllowAdvancedFiltering`, `FilterMode` and `Filterable`.
 
 Property `AllowFiltering` enables you to specify the following options:
 - **false** - the filtering for the corresponding grid will be disabled. This is the default value.
@@ -67,7 +67,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 ```
 
 >[!NOTE]
->You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentTitle}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentTitle}` is the intersection between the results of the two filters.
+>You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 ## Interaction
 
@@ -77,9 +77,9 @@ While some filtering conditions have been applied to a column, and the filter ro
 
 ## Usage
 
-There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The `{ComponentTitle}` currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
+There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The `{ComponentName}` currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
 
-The filtering feature is enabled for the `{ComponentTitle}` component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
+The filtering feature is enabled for the `{ComponentName}` component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 ```html
@@ -108,9 +108,9 @@ The filtering feature is enabled for the `{ComponentTitle}` component by setting
 ```
 
 > [!NOTE]
-> If values of type *string* are used by a column of data type *date*, the `{ComponentTitle}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
+> If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
 
-You can filter any column or a combination of columns through the `{ComponentTitle}` API. The `{ComponentTitle}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
+You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
 *   `Filter` - filter a single column or a combination of columns.
 
@@ -131,7 +131,7 @@ this.@@igObjectRef.filter('ProductName', 'myproduct', IgxStringFilteringOperand.
 The only required parameters are the column field key and the filtering term. Both the condition and the case sensitivity will be inferred from the column properties if not provided. In the case of multiple filtering, the method accepts an array of filtering expressions.
 
 > [!NOTE]
-> The filtering operation **DOES NOT** change the underlying data source of the `{ComponentTitle}`.
+> The filtering operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
 ```typescript
 // Multi column filtering
@@ -180,7 +180,7 @@ this.@@igObjectRef.clearFilter();
 
 ## Initial filtered state
 
-To set the initial filtering state of the `{ComponentTitle}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
+To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
 
 ```typescript
 constructor(private cdr: ChangeDetectorRef) { }
@@ -204,7 +204,7 @@ public ngAfterViewInit() {
 
 ### Filtering logic
 
-The `FilteringLogic` property of the `{ComponentTitle}` controls how filtering multiple columns will resolve in the `{ComponentTitle}`. You can change it at any time through the `{ComponentTitle}` API, or through the `{ComponentTitle}` input property.
+The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
 
 ```typescript
 import { FilteringLogic } from 'igniteui-angular';
@@ -219,7 +219,7 @@ When set to `OR`, a row will be returned when either the 'ProductName' cell valu
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ## Remote Filtering
 
-The `{ComponentTitle}` supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+The `{ComponentName}` supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 ## Custom Filtering Operands

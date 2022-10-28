@@ -7,7 +7,7 @@ mentionedTypes: [{ComponentApiMembers}]
 
 # {Platform} {ComponentTitle} Editing and Validation
 
-The `{ComponentTitle}`'s editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
+The `{ComponentName}`'s editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
 
 ## Configuration
 
@@ -29,7 +29,7 @@ To validate that a column input would be set and the value is going to be format
 <igx-column [field]="email" [header]="User E-mail" required email></igx-column>
 ```
 
-The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentTitle}`.
+The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentName}`.
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -411,7 +411,7 @@ Errors and the detailed messages can be determined based on the row and cell's v
     }
 ```
 
-The below sample demonstrates cross-field validation in a `{ComponentTitle}` for both the root and child data.
+The below sample demonstrates cross-field validation in a `{ComponentName}` for both the root and child data.
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -648,7 +648,7 @@ public cellStyles = {
 ## API References
 
 * `BaseTransactionService`
-* `{ComponentTitle}`
+* `{ComponentName}`
 * `Column`
 
 

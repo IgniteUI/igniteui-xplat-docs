@@ -9,10 +9,10 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 # {Platform} {ComponentTitle} Column Hiding
 
 <!-- Angular -->
-{ProductName} `{ComponentTitle}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
+{ProductName} `{ComponentName}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
 <!-- end: Angular -->
 
-The Ignite UI for {Platform} `{ComponentTitle}` has a built-in column hiding UI, which can be used through the `{ComponentTitle}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
+The Ignite UI for {Platform} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
@@ -25,7 +25,7 @@ The Ignite UI for {Platform} `{ComponentTitle}` has a built-in column hiding UI,
 
 ## {ComponentTitle} Setup
 
-Let's start by creating our `{ComponentTitle}` and binding it to our data. We will also enable both filtering and sorting for the columns.
+Let's start by creating our `{ComponentName}` and binding it to our data. We will also enable both filtering and sorting for the columns.
 
 ```html
 <{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
@@ -59,9 +59,9 @@ Let's start by creating our `{ComponentTitle}` and binding it to our data. We wi
 
 ## Toolbar's Column Hiding UI
 
-The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentTitle}`'s toolbar. We can show/hide the Column Hiding UI by using this exact dropdown.
+The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentName}`'s toolbar. We can show/hide the Column Hiding UI by using this exact dropdown.
 
-For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentTitle}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
+For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentName}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
 
 ```html
 <div class="grid__wrapper">
@@ -89,7 +89,7 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
-The `{ComponentTitle}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
+The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
 
@@ -166,7 +166,7 @@ import {
 export class AppModule {}
 ```
 
-Now let's create our `ColumnActionsComponent`. In our application, we will place it next to the grid (which is not the case with the toolbar's column hiding UI, where the component is inside a dropdown by design). We will also set the `Columns` property of the component to the columns of our `{ComponentTitle}` and include some custom styles to make our application look even better!
+Now let's create our `ColumnActionsComponent`. In our application, we will place it next to the grid (which is not the case with the toolbar's column hiding UI, where the component is inside a dropdown by design). We will also set the `Columns` property of the component to the columns of our `{ComponentName}` and include some custom styles to make our application look even better!
 
 ```html
 <div class="columnHidingContainer">
@@ -438,11 +438,11 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 <!-- Angular -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentTitle}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
 <!-- end: Angular -->
 
 <!-- Blazor -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentTitle}`'s toolbar.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar.
 <!-- end: Blazor -->
 
 The column hiding UI has a few more APIs to explore, which are listed below.

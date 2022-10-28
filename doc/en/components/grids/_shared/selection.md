@@ -8,11 +8,11 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Selection Overview
 
-With the {ProductName} `{ComponentTitle}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
+With the {ProductName} `{ComponentName}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
 
 ## {Platform} {ComponentTitle} Selection Example
 
-The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentTitle}`. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
+The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentName}`. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,14 +22,14 @@ The sample below demonstrates three types of **cell selection** behaviors in the
 
 ## {Platform} {ComponentTitle} Selection Options
 
-The {ProductName} `{ComponentTitle}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentTitle}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
+The {ProductName} `{ComponentName}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentName}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
 
 ### {Platform} {ComponentTitle} Row Selection
 
 Property `RowSelection` enables you to specify the following options:
 
-- `None` - Row selection would be disabled for the `{ComponentTitle}`.
-- `Single` - Selection of only one row within the `{ComponentTitle}` would be available.
+- `None` - Row selection would be disabled for the `{ComponentName}`.
+- `Single` - Selection of only one row within the `{ComponentName}` would be available.
 - `Multiple` - Multi-row selection would be available by using the row selectors, with a key combination like <kbd>ctrl</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused.
 
 <!-- ComponentStart: TreeGrid -->
@@ -44,9 +44,9 @@ Property `RowSelection` enables you to specify the following options:
 
 Property `CellSelection` enables you to specify the following options:
 
-- `None` - Cell selection would be disabled for the `{ComponentTitle}`.
-- `Single` - Selection of only one cell within the `{ComponentTitle}` would be available.
-- `Multiple` - Currently, this is the default state of the selection in the `{ComponentTitle}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
+- `None` - Cell selection would be disabled for the `{ComponentName}`.
+- `Single` - Selection of only one cell within the `{ComponentName}` would be available.
+- `Multiple` - Currently, this is the default state of the selection in the `{ComponentName}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
 
 > Go to [Cell selection topic](cell-selection.md) for more information.
 
@@ -184,7 +184,7 @@ TO DO
 
 <!-- Angular -->
 
-- Using the `{ComponentTitle}` with Selection enabled on IE11 requires the explicit import of the array polyfill in polyfill.ts of the {Platform} application. IE11 is no longer supported as of version 13.0.0.
+- Using the `{ComponentName}` with Selection enabled on IE11 requires the explicit import of the array polyfill in polyfill.ts of the {Platform} application. IE11 is no longer supported as of version 13.0.0.
 
 ```typescript
 import 'core-js/es7/array';

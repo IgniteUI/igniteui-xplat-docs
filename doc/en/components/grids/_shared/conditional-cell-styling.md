@@ -566,7 +566,7 @@ editDone(evt) {
 ## API References
 
 * `Column`
-* `{ComponentTitle}`
+* `{ComponentName}`
 
 ## Additional Resources
 

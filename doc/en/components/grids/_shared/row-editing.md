@@ -8,11 +8,11 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Row Editing
 
-The `{ComponentTitle}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
+The `{ComponentName}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
 
 ## {Platform} {ComponentTitle} Row Editing Example
 
-The following sample demonstrates how to enable row editing in the `{ComponentTitle}`. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
+The following sample demonstrates how to enable row editing in the `{ComponentName}`. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
 
 <code-view style="height:550px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -43,7 +43,7 @@ export class AppModule {}
 
 <!-- end: Angular -->
 
-Define a `{ComponentTitle}` with bound data source and `RowEditable` set to true:
+Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
@@ -97,7 +97,7 @@ Define a `{ComponentTitle}` with bound data source and `RowEditable` set to true
 > Setting primary key is mandatory for row editing operations.
 
 > [!NOTE]
-> It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentTitle}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
+> It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
 
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
@@ -122,7 +122,7 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!NOTE]
-> The `{ComponentTitle}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
+> The `{ComponentName}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
 
 ## Positioning
 
@@ -142,13 +142,13 @@ export class {ComponentName}RowEditSampleComponent {
 
 - If row is in edit mode, then clicking a cell from another row will finish the current row edit and will submit new row changes (the same behavior clicking "Done" button). If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
 
-- If row is in edit mode and `{ComponentTitle}` is scrolled so that row goes outside the visible area, the latter will be still in edit mode. When `{ComponentTitle}` is scrolled, so that the row is visible again, the row will be still in edit mode. When clicked outside the `{ComponentTitle}`, the cell will also stay in edit mode.
+- If row is in edit mode and `{ComponentName}` is scrolled so that row goes outside the visible area, the latter will be still in edit mode. When `{ComponentName}` is scrolled, so that the row is visible again, the row will be still in edit mode. When clicked outside the `{ComponentName}`, the cell will also stay in edit mode.
 
 - When perform *sorting*, *filtering*, *searching* and *hiding* operations, will revert all current changes in the row and row will exit edit mode.
 
 - When perform *paging*, *resizing*, *pinning* and *moving* operations, will exit edit mode and will submit latest value.
 
-- Each modified cell gets edited style until row edit is finished. This is the behavior, when `{ComponentTitle}` is not provided with transactions. When transactions are available - then cell edit style is applied until all the changes are committed.
+- Each modified cell gets edited style until row edit is finished. This is the behavior, when `{ComponentName}` is not provided with transactions. When transactions are available - then cell edit style is applied until all the changes are committed.
 
 
 ## Keyboard Navigation
@@ -264,7 +264,7 @@ This will apply our custom banner theme to the Row Editing overlay. However, sin
 
 ### Component Styles
 
-Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [`theme/index` import](#import-theme)) in the component containing our `{ComponentTitle}`.
+Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [`theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
 
 >[!NOTE]
 >If the component is using an [`Emulated`](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.

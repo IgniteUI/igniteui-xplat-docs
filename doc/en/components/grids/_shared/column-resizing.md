@@ -18,7 +18,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
-**Column resizing** is also enabled per-column level, meaning that the `{ComponentTitle}` can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `Column`.
+**Column resizing** is also enabled per-column level, meaning that the `{ComponentName}` can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `Column`.
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -285,7 +285,7 @@ This approach is more performance optimized than auto-sizing post initialization
 
 ## Styling
 
-To get started with the styling of the `{ComponentTitle}` column resize line, we need to import the index file, where all the theme functions and component mixins live:
+To get started with the styling of the `{ComponentName}` column resize line, we need to import the index file, where all the theme functions and component mixins live:
 
 ```scss
 @use "igniteui-angular/theming" as *;

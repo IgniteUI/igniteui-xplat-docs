@@ -10,13 +10,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The `{ComponentTitle}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
+The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-The `{ComponentTitle}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> to spawn the UI for adding a child for the selected row.
+The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> to spawn the UI for adding a child for the selected row.
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -46,7 +46,7 @@ export class AppModule {}
 ```
 <!-- end: Angular -->
 
-Then define a `{ComponentTitle}` with bound data source, `RowEditable` set to true and an `ActionStrip` component with editing actions enabled. The `AddRow` input controls the visibility of the button that spawns the row adding UI.
+Then define a `{ComponentName}` with bound data source, `RowEditable` set to true and an `ActionStrip` component with editing actions enabled. The `AddRow` input controls the visibility of the button that spawns the row adding UI.
 
 ```html
 <igx-grid [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
@@ -140,11 +140,11 @@ Then define a `{ComponentTitle}` with bound data source, `RowEditable` set to tr
 
 <!-- ComponentEnd: TreeGrid -->
 
-The internal `BaseTransactionService` is automatically provided for `{ComponentTitle}`. It holds pending cell changes until the row state is submitted or cancelled.
+The internal `BaseTransactionService` is automatically provided for `{ComponentName}`. It holds pending cell changes until the row state is submitted or cancelled.
 
 ## Start Row Adding Programmatically
 
-`{ComponentTitle}` allows to programmatically spawn the add row UI by using two different public methods. One that accepts a row ID for specifying the row under which the UI should spawn and another that works by index. You can use these methods to spawn the UI anywhere within the current data view. Changing the page or specifying a row that is e.g. filtered out is not supported.
+`{ComponentName}` allows to programmatically spawn the add row UI by using two different public methods. One that accepts a row ID for specifying the row under which the UI should spawn and another that works by index. You can use these methods to spawn the UI anywhere within the current data view. Changing the page or specifying a row that is e.g. filtered out is not supported.
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
@@ -186,7 +186,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 
 - The default position of row add UI is below the row that the end user clicked the add row button for.
 
-- The `{ComponentTitle}` scrolls to fully display the add row UI automatically.
+- The `{ComponentName}` scrolls to fully display the add row UI automatically.
 
 - The overlay for the add row UI maintains its position during scrolling.
 
@@ -194,7 +194,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 
 The add row UI has the same behavior as the row editing one as they are designed to provide a consistent editing experience to end users. Please, refer to the [{ComponentTitle} Row Editing](row-editing.md) topic for more information.
 
-After a new row is added through the row adding UI, its position and/or visibility is determined by the sorting, filtering and grouping state of the `{ComponentTitle}`. In a `{ComponentTitle}` that does not have any of these states applied, it appears as the last record. A snackbar is briefly displayed containing a button the end user may use to scroll the `{ComponentTitle}` to its position if it is not in view.
+After a new row is added through the row adding UI, its position and/or visibility is determined by the sorting, filtering and grouping state of the `{ComponentName}`. In a `{ComponentName}` that does not have any of these states applied, it appears as the last record. A snackbar is briefly displayed containing a button the end user may use to scroll the `{ComponentName}` to its position if it is not in view.
 
 ## Keyboard Navigation
 
@@ -211,13 +211,13 @@ After a new row is added through the row adding UI, its position and/or visibili
 
 ## Feature Integration
 
-- Any row adding operation will stop if the data view of the `{ComponentTitle}` gets modified. Any changes made by the end user are submitted. Operations that change the data view include but are not limited to sorting, grouping, filtering, paging, etc.
+- Any row adding operation will stop if the data view of the `{ComponentName}` gets modified. Any changes made by the end user are submitted. Operations that change the data view include but are not limited to sorting, grouping, filtering, paging, etc.
 
 - Summaries are updated after the row add operation finishes. The same is valid for the other data view dependant features such as sorting, filtering, etc.
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-- When spawning the UI for the `{ComponentTitle}`, any child layout currently expanded for a row that the end user clicks the add row button for is collapsed.
+- When spawning the UI for the `{ComponentName}`, any child layout currently expanded for a row that the end user clicks the add row button for is collapsed.
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -250,13 +250,13 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 ## Remote Scenarios
 
-In most remote data scenarios the Primary Key assignment happens on the create server request. In this case the added records on the client will not have the final primary key value until saved on the server's data base. In that case the recommended way to handle this update in the `{ComponentTitle}` is as follows:
+In most remote data scenarios the Primary Key assignment happens on the create server request. In this case the added records on the client will not have the final primary key value until saved on the server's data base. In that case the recommended way to handle this update in the `{ComponentName}` is as follows:
 
-- If the `{ComponentTitle}` does not use transactions.
+- If the `{ComponentName}` does not use transactions.
 
     Once the create request is successfully completed and returns the added record data, you can replace that record's id in the local data record instance.
 
-- If the `{ComponentTitle}` uses transactions.
+- If the `{ComponentName}` uses transactions.
 
     Once the create request or batch update request is successfully completed and returns the added record instances (with their db generated ids), the related ADD transactions should be cleared from the transaction log using the `Clear` API method. This is necessary because the local transaction will have a generated id field, which may differ than the one created in the data base, so they should be cleared. You can then add the record(s) passed in the response to the local data instance.
 

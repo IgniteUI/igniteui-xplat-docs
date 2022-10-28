@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Row Pinning
 
-One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentTitle}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentTitle}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
@@ -61,7 +61,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 
 ## Row Pinning API
 
-Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentTitle}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentTitle}` body.
+Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentName}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentName}` body.
 
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
@@ -71,7 +71,7 @@ this.grid.getRowByIndex(0).pinned = true;
 this.Grid.PinRow("ALFKI", 0);
 ```
 
-You may also use the `{ComponentTitle}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
+You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
 
 ```typescript
 this.grid.pinRow('ALFKI');

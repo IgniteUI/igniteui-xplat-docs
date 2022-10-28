@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Sorting
 
-In {Platform} `{ComponentTitle}`, data sorting is enabled on a per-column level, meaning that the `{ComponentTitle}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
+In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
 > Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
@@ -16,7 +16,7 @@ In {Platform} `{ComponentTitle}`, data sorting is enabled on a per-column level,
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-Additionally there is a custom contextmenu added for sorting using `{ComponentTitle}`'s `ContextMenu` Output.
+Additionally there is a custom contextmenu added for sorting using `{ComponentName}`'s `ContextMenu` Output.
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -26,7 +26,7 @@ Additionally there is a custom contextmenu added for sorting using `{ComponentTi
            github-src="{ComponentSample}/column-sorting-options">
 </code-view>
 
-This is done via the `Sortable` input. With the `{ComponentTitle}` sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
+This is done via the `Sortable` input. With the `{ComponentName}` sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
 
 ```html
 <igx-column field="ProductName" header="Product Name" [dataType]="'string'" sortable="true"></igx-column>
@@ -54,7 +54,7 @@ The `{ComponentName}` provides a solution for this problem by indicating the ind
 
 ## Sorting through the API
 
-You can sort any column or a combination of columns through the `{ComponentTitle}` API using the `{ComponentTitle}` `Sort` method:
+You can sort any column or a combination of columns through the `{ComponentName}` API using the `{ComponentName}` `Sort` method:
 
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
@@ -111,14 +111,14 @@ this.grid.clearSort();
 ```
 
 > [!NOTE]
-> The `SortStrategy` of the `{ComponentTitle}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
+> The `SortStrategy` of the `{ComponentName}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
 
 > [!NOTE]
-> The sorting operation **DOES NOT** change the underlying data source of the `{ComponentTitle}`.
+> The sorting operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
 ## Initial Sorting State
 
-It is possible to set the initial sorting state of the `{ComponentTitle}` by passing an array of sorting expressions to the `SortingExpressions` property of the `{ComponentTitle}`.
+It is possible to set the initial sorting state of the `{ComponentName}` by passing an array of sorting expressions to the `SortingExpressions` property of the `{ComponentName}`.
 
 <!-- Angular -->
 ```typescript
@@ -149,12 +149,12 @@ public ngOnInit() {
 ```
 
 > [!NOTE]
-> If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentTitle}` won't parse them to `Date` objects and using `{ComponentTitle}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
+> If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
 ## Remote Sorting
 
-The `{ComponentTitle}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 
 <!-- ComponentEnd: Grid -->
 

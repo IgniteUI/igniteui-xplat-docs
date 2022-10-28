@@ -7,7 +7,7 @@ _keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {
 
 # {Platform} {ComponentTitle} Remote Data Operations
 
-The Ignite UI for {Platform} `{ComponentTitle}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentTitle}`.
+The Ignite UI for {Platform} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
@@ -18,9 +18,9 @@ The Ignite UI for {Platform} `{ComponentTitle}` supports remote data operations 
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
-By default, the `{ComponentTitle}` uses its own logic for performing data operations.
+By default, the `{ComponentName}` uses its own logic for performing data operations.
 
-You can perform these tasks remotely and feed the resulting data to the `{ComponentTitle}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentTitle}`.
+You can perform these tasks remotely and feed the resulting data to the `{ComponentName}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentName}`.
 
 <!-- ComponentStart: Grid -->
 
@@ -278,7 +278,7 @@ You can see the result of the code from above at the beginning of this article i
 
 ## Unique Column Values Strategy
 
-The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. The `{ComponentTitle}` generates these values based on its data source by default. In case of remote filtering, the grid data does not contain all the data from the server. In order to provide the unique values manually and load them on demand, we can take advantage of the `{ComponentTitle}`'s `UniqueColumnValuesStrategy` input. This input is actually a method that provides three arguments:
+The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. The `{ComponentName}` generates these values based on its data source by default. In case of remote filtering, the grid data does not contain all the data from the server. In order to provide the unique values manually and load them on demand, we can take advantage of the `{ComponentName}`'s `UniqueColumnValuesStrategy` input. This input is actually a method that provides three arguments:
 
 - `Column`  - The respective column instance.
 - `FilteringExpressionsTree` - The filtering expressions tree, which is reduced based on the respective column.
@@ -471,7 +471,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-After declaring the service, we need to create a component, which will be responsible for the `{ComponentTitle}` construction and data subscription.
+After declaring the service, we need to create a component, which will be responsible for the `{ComponentName}` construction and data subscription.
 
 <!-- ComponentStart: Grid -->
 ```typescript
