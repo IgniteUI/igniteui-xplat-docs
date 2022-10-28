@@ -282,8 +282,14 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/lob-grid/selection.md",
+        "name": "Column Pinning",
+        "href": "grids/lob-grid/column-pinning.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Column Resizing",
+        "href": "grids/lob-grid/column-resizing.md",
         "status": "NEW"
       },
       {
@@ -423,13 +429,7 @@
         "name": "Sorting",
         "href": "grids/lob-grid/sorting.md",
         "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/lob-grid/state-persistence.md",
-        "status": "NEW"
-      },
+      }
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
@@ -482,8 +482,8 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Selection",
-        "href": "grids/hierarchical-grid/selection.md",
+        "name": "Column Hiding",
+        "href": "grids/hierarchical-grid/column-hiding.md",
         "status": "NEW"
       },
       {
@@ -494,8 +494,8 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Row Actions",
-        "href": "grids/hierarchical-grid/row-actions.md",
+        "name": "Column Pinning",
+        "href": "grids/hierarchical-grid/column-pinning.md",
         "status": "NEW"
       },
       {
@@ -623,13 +623,7 @@
         "name": "Sorting",
         "href": "grids/hierarchical-grid/sorting.md",
         "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/hierarchical-grid/state-persistence.md",
-        "status": "NEW"
-      },
+      }
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
@@ -702,12 +696,6 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Clipboard Interactions",
-        "href": "grids/tree-grid/clipboard-interactions.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
@@ -738,8 +726,8 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/tree-grid/batch-editing.md",
+        "name": "Column Pinning",
+        "href": "grids/tree-grid/column-pinning.md",
         "status": "NEW"
       },
       {
@@ -860,12 +848,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/tree-grid/sorting.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "State Persistence",
-        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       },
       {
