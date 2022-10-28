@@ -34,7 +34,7 @@ The sample below demonstrates the three types of `{ComponentTitle}`'s **column s
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
            alt="{Platform} Column Selection Example">
 </code-view>
 
@@ -68,7 +68,7 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-group-selection" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group" >
 </code-view>
 
 ## Keyboard Combinations

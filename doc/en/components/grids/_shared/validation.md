@@ -174,7 +174,7 @@ The below example demonstrates the above-mentioned customization options.
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-validator-service-extended"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-extended"
            alt="{Platform} {ComponentTitle} Custom Validation Example">
 </code-view>
 
@@ -633,7 +633,7 @@ public cellStyles = {
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-validation-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style" >
 </code-view>
 
 

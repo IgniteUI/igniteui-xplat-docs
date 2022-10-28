@@ -15,7 +15,7 @@ This example presents the grouping capabilities of a large amount of data. Dragg
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/groupby-expressions"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
            alt="{Platform} {ComponentTitle} Group By Example">
 </code-view>
 
@@ -180,7 +180,7 @@ Groups that span multiple pages are split between them. The group row is visible
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/groupby-paging"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
            alt="{Platform} {ComponentTitle} group by with paging example">
 </code-view>
 
@@ -219,7 +219,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/groupby-custom"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom"
            alt="{Platform} {ComponentTitle} custom group by example">
 </code-view>
 
@@ -447,7 +447,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/groupby-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling" >
 </code-view>
 
 >[!NOTE]

@@ -9,6 +9,7 @@ sharedComponents: ["Grid", "TreeGrid"]
 
 The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
 
+<!-- Angular -->
 ## {Platform} Live-data Update Example
 
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
@@ -19,6 +20,7 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
            alt="Angular Live-data Update Example">
 </code-view>
+<!-- end: Angular -->
 
 
 ## Data binding and updates
@@ -59,6 +61,7 @@ private updateData(data: IRecord[]) {
 ## Templates
 Updating the view works the same way for columns with a default template and for columns with a custom template. However, it is recommended to keep custom templates relatively simple. As number of elements in the template grows, negative performance impact rises as well.
 
+<!-- Angular -->
 ## Live-data feed with Dock Manager and igxGrid Components
 
 The purpose of this demo is to showcase a financial screen board with Real-time data stream using a [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) hub back-end.
@@ -69,6 +72,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
            alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
 </code-view>
+<!-- end: Angular -->
 
 ### Start the hub connection
 

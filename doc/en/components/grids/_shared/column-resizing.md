@@ -109,7 +109,7 @@ TO DO!
 ```html
 <igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
-    <igx-column field="Artist" [resizable]="true"></igx-column>        
+    <igx-column field="Artist" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
 ```
 
@@ -176,7 +176,7 @@ TO DO!
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
         <igx-column field="Artist" [resizable]="true" [width]="'10%'"></igx-column>
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>
-        <igx-column field="GrammyAwards" [resizable]="true"></igx-column>        
+        <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
 ```
 
@@ -277,7 +277,7 @@ This approach is more performance optimized than auto-sizing post initialization
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-columnAutoResizing-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
@@ -379,7 +379,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-resize-line-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling" >
 </code-view>
 
 >[!NOTE]

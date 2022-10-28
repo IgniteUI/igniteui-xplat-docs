@@ -27,18 +27,21 @@ mentionedTypes: ['Grid']
     </article>
 </div>
 
+
 ## {Platform} Grid Example
 
-Boston Marathon 2021 – In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating that includes our [Sparkline](../../charts/types/sparkline-chart.md) component,
-[Circular Progress Indicator](../../inputs/circular-progress.md) component, and [Icons](../../layouts/icon.md). The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
+
+In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/grid"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
            alt="grid example">
 </code-view>
 
 <div class="divider--half"></div>
+
+
 
 ## Getting Started with Ignite UI for {Platform} Grid
 
@@ -514,7 +517,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -615,7 +618,7 @@ And the result from this configuration is:
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-nested-data-1" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -693,7 +696,7 @@ And the result is:
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grid/binding-composite-data" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
 </code-view>
 
 <div class="divider--half"></div>

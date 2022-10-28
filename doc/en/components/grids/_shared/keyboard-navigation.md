@@ -239,7 +239,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-kb-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigatio" >
 </code-view>
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -266,7 +266,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
 </code-view>
 
 <!-- ComponentEnd : TreeGrid -->

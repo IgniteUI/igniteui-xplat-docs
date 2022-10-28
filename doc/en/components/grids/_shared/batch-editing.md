@@ -34,8 +34,8 @@ The following sample demonstrates a scenario, where the `{ComponentTitle}` has `
 
 <code-view style="height:680px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-batch-editing"
-           github-src="{ComponentSample}/-batch-editing"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-actions"
+           github-src="{ComponentSample}/data-batch-editing-actions"
            alt="{Platform} {ComponentTitle} Batch Editing and Transactions Example" >
 </code-view>
 
@@ -281,8 +281,8 @@ Deleting a parent node in `{ComponentTitle}` has some peculiarities. If you are 
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
-           github-src="{ComponentSample}/remote-paging-batch-editing"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-remote"
+           github-src="{ComponentSample}/data-batch-editing-remote"
            alt="{Platform} {ComponentTitle} Remote Paging and Batch Editing Example" >
 </code-view>
 

@@ -16,8 +16,8 @@ In addition, you can define your own custom templates for update-data actions an
 
 <code-view style="height:950px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing"
-           github-src="{ComponentSample}/editing"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
+           github-src="{ComponentSample}/editing-columns"
            alt="{Platform} {ComponentTitle} cell editing and edit templates Example">
 </code-view>
 
@@ -168,8 +168,8 @@ This code is used in the sample below which implements an [`SelectComponent`](..
 
 <code-view style="height:625px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-select"
-           github-src="{ComponentSample}/select"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
+           github-src="{ComponentSample}/cell-selection-style"
            alt="{Platform} {ComponentTitle} Select Example">
 </code-view>
 

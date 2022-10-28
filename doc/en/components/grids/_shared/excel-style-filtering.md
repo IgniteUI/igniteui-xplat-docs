@@ -349,8 +349,8 @@ By default, the {ComponentTitle} component filters the data based on the origina
 
 <!-- <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-formatted-filtering-strategy"
-           github-src="{ComponentSample}/formatted-filtering-strategy" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
+           github-src="{ComponentSample}/filtering-strategy" >
 </code-view>
 
 >[!NOTE]

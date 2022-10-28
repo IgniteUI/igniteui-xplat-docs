@@ -221,8 +221,8 @@ The drag ghost can be templated on every grid level, making it possible to have 
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-drag"
-           github-src="{ComponentSample}/multi-row-drag"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
+           github-src="{ComponentSample}/multi-row-dragging"
            alt="{Platform} {ComponentTitle} Multi Row Drag">
 </code-view>
 
@@ -277,7 +277,6 @@ The result of the configuration can be seem below:
 <!-- ComponentEnd: Grid -->
 
 #### Example Demo
-<!-- ComponentStart: Grid -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -287,17 +286,6 @@ The result of the configuration can be seem below:
 </code-view>
 
 
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: TreeGrid, HierarchicalGrid -->
-
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag"
-           github-src="{ComponentSample}/row-drag"
-           alt="{Platform} {ComponentTitle} Row Drag">
-</code-view>
-<!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 ## Application Demo
 <!-- ComponentStart: Grid -->
@@ -309,8 +297,8 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag"
-           github-src="{ComponentSample}/row-drag"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
+           github-src="{ComponentSample}/row-dragging"
            alt="{Platform} {ComponentTitle} Row Drag">
 </code-view>
 
@@ -513,28 +501,21 @@ export class HGridRowReorderComponent {
 <!-- ComponentEnd: HierarchicalGrid -->
 
 With these few easy steps, you've configured a grid that allows reordering rows via drag/drop! You can see the above code in action in the following demo.
+
 <!-- ComponentStart: Grid -->
 Holding onto the drag icon will allow you to move a row anywhere in the grid:
+<!-- ComponentEnd: Grid -->
 
-<code-view style="height:830px"
+<!-- ComponentStart: TreeGrid, HierarchicalGrid -->
+Notice that we also have row selection enabled and we preserve the selection when dropping the dragged row.
+<!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
+
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
            github-src="{ComponentSample}/row-reorder"
            alt="{Platform} {ComponentTitle} Row Reorder">
 </code-view>
-
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid, HierarchicalGrid -->
-Notice that we also have row selection enabled and we preserve the selection when dropping the dragged row.
-
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reordering"
-           github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} Row Reorder">
-</code-view>
-
-<!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 ### Improving UX in row drag scenarios
@@ -768,8 +749,8 @@ Following is the example of both scenarios described above - showing a drop indi
 
 <code-view style="height:830px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-drop-indicator"
-           github-src="{ComponentSample}/drop-indicator"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
+           github-src="{ComponentSample}/row-drop-indicator"
            alt="{Platform} {ComponentTitle} Drop Indicator">
 </code-view>
 

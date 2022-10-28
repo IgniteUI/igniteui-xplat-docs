@@ -361,8 +361,8 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 
 <code-view style="height:540px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-styling"
-           github-src="{ComponentSample}/row-pinning-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"
+           github-src="{ComponentSample}/row-pinning-style"
            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
