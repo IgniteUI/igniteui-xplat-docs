@@ -431,6 +431,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "State Persistence",
+        "href": "grids/lob-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
         "href": "grids/lob-grid/summaries.md",
@@ -625,6 +631,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "State Persistence",
+        "href": "grids/hierarchical-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Summaries",
         "href": "grids/hierarchical-grid/summaries.md",
@@ -660,6 +672,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "State Persistence",
+        "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
       }
     ]
@@ -848,6 +866,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Sorting",
         "href": "grids/tree-grid/sorting.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "name": "State Persistence",
+        "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
       },
       {
