@@ -187,7 +187,12 @@ The `RowChangesCount` property is exposed and it holds the count of the changed 
  ```
 
  ```razor
- TODO
+igRegisterScript("RowEditTextTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div>
+   Changes: ${ctx.$implicit}
+</div>`;
+}, false);
  ```
 
 ### Customizing Buttons
@@ -204,7 +209,14 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
  ```
 
  ```razor
- TODO
+ igRegisterScript("RowEditActionsTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.endRowEdit = ctx.$implicit;
+    return html`<div>
+  	<button onclick="endRowEdit(false)">Cancel</button>
+	<button onclick="endRowEdit(true)">Apply</button>
+</div>`;
+}, false);
  ```
 
 <!-- Angular -->
