@@ -397,9 +397,8 @@ When a default summary is defined, the height of the summary area is calculated 
            github-src="{ComponentSample}/data-summary-template" >
 </code-view>
 
-<!-- TODO: Uncomment Formatting summaries section when a summary formatter is exposed on the column -->
-<!-- ## Formatting summaries
-By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property. -->
+## Formatting summaries
+By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
 
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
@@ -417,15 +416,21 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 <igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
 ```
 
-<!-- ```razor
-Add custom summary formatter snippets for blazor
-``` -->
+<!-- TODO -- update blazor snippet when the sample is ready -->
 
-<!-- <code-view style="height:650px"
+```razor
+<IgbColumn HasSummary="true" SummaryFormatterScript="SummaryFormatter"/>
+
+igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
+    return summary.summaryResult + " tokens";
+}, false);
+```
+
+<code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
            github-src="{ComponentSample}/data-summary-formatter" >
-</code-view> -->
+</code-view>
 
 <!-- ComponentStart: Grid -->
 
