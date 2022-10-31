@@ -158,10 +158,15 @@ The `{ComponentName}` supports remote sorting, which is demonstrated in the [{Co
 
 <!-- ComponentEnd: Grid -->
 
-<!-- TODO -- Uncomment the section below and Add sorting indicators templates when they are added in Blazor-->
-<!-- ## Sorting Indicators Templates
+## Sorting Indicators Templates
 
-The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none): -->
+The sorting indicator icon in the column header can be customized using a template. The following properties are available for templating the sorting indicator for any sorting state (ascending, descending, none):
+
+<!-- Angular -->
+
+The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none):
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 - `IgxSortHeaderIconDirective` – re-templates the sorting icon when no sorting is applied.
@@ -171,6 +176,21 @@ The sorting indicator icon in the column header can be customized using a templa
     <igx-icon>unfold_more</igx-icon>
 </ng-template>
 ```
+<!-- end: Angular -->
+- `SortHeaderIconTemplate` – re-templates the sorting icon when no sorting is applied.
+
+```razor
+<IgbGrid SortHeaderIconTemplate="SortDefaultTemplate">
+
+@code {
+    public RenderFragment<IgbGridHeaderTemplateContext> SortDefaultTemplate = (ctx) =>
+    {
+        return @<IgbIcon Size="SizableComponentSize.Small" IconName="unfold_more" Collection="material"></IgbIcon>;
+    };
+}
+```
+
+<!-- Angular -->
 
 - `IgxSortAscendingHeaderIconDirective` – re-templates the sorting icon when the column is sorted in ascending order.
 
@@ -180,6 +200,23 @@ The sorting indicator icon in the column header can be customized using a templa
 </ng-template>
 ```
 
+<!-- end: Angular -->
+
+- `SortAscendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in ascending order.
+
+```razor
+<IgbGrid SortAscendingHeaderIconTemplate="SortAscendingTemplate">
+
+@code {
+    public RenderFragment<IgbGridHeaderTemplateContext> SortAscendingTemplate = (ctx) =>
+    {
+        return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_less" Collection="material"></IgbIcon>;
+    };
+}
+```
+
+<!-- Angular -->
+
 - `IgxSortDescendningHeaderIconDirective` – re-templates the sorting icon when the column is sorted in descending order.
 
 ```html
@@ -187,7 +224,22 @@ The sorting indicator icon in the column header can be customized using a templa
     <igx-icon>expand_more</igx-icon>
 </ng-template>
 ```
+
 <!-- end: Angular -->
+
+- `SortDescendingHeaderIconTemplate` – re-templates the sorting icon when the column is sorted in descending order.
+
+
+```razor
+<IgbGrid SortDescendingHeaderIconTemplate="SortDescendingTemplate">
+
+@code {
+    public RenderFragment<IgbGridHeaderTemplateContext> SortDescendingTemplate = (ctx) =>
+    {
+        return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_more" Collection="material"></IgbIcon>;
+    };
+}
+```
 
 <!-- Angular -->
 
