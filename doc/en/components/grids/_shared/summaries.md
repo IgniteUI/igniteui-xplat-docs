@@ -422,7 +422,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 <IgbColumn HasSummary="true" SummaryFormatterScript="SummaryFormatter"/>
 
 igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
-    return summary.summaryResult + " tokens";
+    return summary.summaryResult + " rows";
 }, false);
 ```
 
