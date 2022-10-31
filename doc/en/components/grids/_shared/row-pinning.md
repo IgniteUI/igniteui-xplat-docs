@@ -7,14 +7,15 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Row Pinning
-One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the {ComponentTitle} vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of {ComponentTitle}. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+
+One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning"
-           github-src="{ComponentSample}/row-pinning"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-options"
+           github-src="{ComponentSample}/row-pinning-options"
            alt="{Platform} {ComponentTitle} Row Pinning Example">
 </code-view>
 
@@ -60,7 +61,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 
 ## Row Pinning API
 
-Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the {ComponentTitle} by default and stay fixed through vertical scrolling of the unpinned rows in the {ComponentTitle} body.
+Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentName}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentName}` body.
 
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
@@ -70,7 +71,7 @@ this.grid.getRowByIndex(0).pinned = true;
 this.Grid.PinRow("ALFKI", 0);
 ```
 
-You may also use the {ComponentTitle}'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
+You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
 
 ```typescript
 this.grid.pinRow('ALFKI');
@@ -228,7 +229,7 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 <!-- Angular -->
 
-### Via row drag
+### Via Row Drag
 
 Let's say that you want to be able to directly drag and drop a row between the pinned and unpinned rows to change its pin state.
 This can be achieved by enabling the row drag feature and pinning/unpinning the rows via the API on drop.
@@ -334,7 +335,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-### Using CSS variables
+### Using CSS Variables
 
 The last step is to pass the custom grid theme:
 
@@ -342,7 +343,7 @@ The last step is to pass the custom grid theme:
 @include css-vars($custom-grid-theme);
 ```
 
-### Using mixins
+### Using Mixins
 
 In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
 
@@ -361,8 +362,8 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 
 <code-view style="height:540px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-styling"
-           github-src="{ComponentSample}/row-pinning-styling"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"
+           github-src="{ComponentSample}/row-pinning-style"
            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
@@ -379,7 +380,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 ## Additional Resources
 
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

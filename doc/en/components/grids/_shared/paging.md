@@ -7,22 +7,25 @@ _keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName},
 
 # {Platform} {ComponentTitle} Pagination Overview
 
-Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. {ComponentTitle} pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the {ComponentTitle} supports template for custom pages.
+Pagination is used to split a large set of data into a sequence of pages that have similar content. {Platform} table pagination improves user experience and data interaction. `{ComponentName}` pagination is configurable via a separate component projected in the grid tree by defining a `Paginator` tag, similar to adding of a column. As in any {Platform} table, the pagination in the `{ComponentName}` supports template for custom pages.
 
 ## {Platform} {ComponentTitle} Pagination Example
 
-The following example represents {ComponentTitle} pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the {ComponentTitle} pages via "Go to last page" and "Go to first page" buttons.
+The following example represents `{ComponentName}` pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the `{ComponentName}` pages via "Go to last page" and "Go to first page" buttons.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-sample"
-           github-src="{ComponentSample}/paging-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
+           github-src="{ComponentSample}/row-paging-basic"
            alt="{Platform} {ComponentTitle} Pagination Example">
 </code-view>
 
-Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our {ComponentTitle} to enable paging:
+<!-- Angular -->
 
-<!-- ComponentStart: Grid -->
+Adding a [Paginator](../paginator.md) component will control whether the feature is present, you can enable/disable it by using a simple `*ngIf` with a toggle property. The `perPage` input controls the visible records per page. Let's update our `{ComponentName}` to enable paging:
+
+<!-- end: Angular -->
+
 ```html
 <igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
@@ -33,9 +36,7 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 ```razor
 TO-DO GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
@@ -46,9 +47,7 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
@@ -59,7 +58,6 @@ TO-DO H-GRID CODE SNIPPET
 ```razor
 TO-DO TREEGRID CODE SNIPPET
 ```
-<!-- ComponentEnd: TreeGrid -->
 
 ```html
 <igx-paginator #paginator [totalRecords]="20">
@@ -96,7 +94,6 @@ Integration between Paging and Group By is described in the [Group By](groupby.m
 
 The `Paginator` component is used along with the `{ComponentName}` component in the example below, but you can use it with any other component in case paging functionality is needed.
 
-<!-- ComponentStart: Grid -->
 ```html
 <igx-grid #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
@@ -108,9 +105,7 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 ```razor
 TO-DO GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
 ```html
 <igx-hierarchical-grid>
     <igx-column *ngFor="let c of hColumns" [field]="c.field">
@@ -132,9 +127,7 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid -->
 ```html
 <igx-tree-grid #treeGrid [data]="data">
     <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
@@ -146,12 +139,11 @@ TO-DO H-GRID CODE SNIPPET
 ```razor
 TO-DO TREEGRID CODE SNIPPET
 ```
-<!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 ### Paginator Configuration within Child Grids
 
-Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, when defining a paginator component inside the igx-row-island tags, always make sure to use the IgxPaginator directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
+Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
 
 ```html
 <igx-hierarchical-grid>
@@ -171,8 +163,8 @@ TO-DO H-GRID CODE SNIPPET
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-reusable-paginator"
-           github-src="{ComponentSample}/reusable-paginator"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
+           github-src="{ComponentSample}/row-paging-options"
            alt="{Platform} {ComponentTitle} Reusable Paginator Example">
 </code-view>
 
@@ -180,7 +172,7 @@ TO-DO H-GRID CODE SNIPPET
 
 ## Remote Paging
 
-Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the Grid construction and data subscription. For more detailed information, check the [`@@igComponent Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
+Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentName}` construction and data subscription. For more detailed information, check the [`Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
 
 <!-- ComponentStart: Grid -->
 
@@ -190,7 +182,9 @@ In some cases you may want to define your own paging behavior and this is when w
 
 <!-- ComponentEnd: Grid -->
 
-## Pagination Styling in Angular
+<!-- Angular -->
+
+## Pagination Styling in {Platform}
 
 To get started with styling the paginator, we need to import the `index` file, where all the theme functions and component mixins live:
 
@@ -363,12 +357,14 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-paging-style"
-           github-src="{ComponentSample}/paging-style"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
+           github-src="{ComponentSample}/row-paging-style"
            alt="{Platform} {ComponentTitle} Paging Style Example">
 </code-view>
 
 <div class="divider--half"></div>
+
+<!-- end: Angular -->
 
 ## API References
 * `{ComponentName}`
@@ -388,12 +384,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-<!-- Angular -->
-* [Ignite UI for Angular **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub**](https://github.com/IgniteUI/igniteui-angular)
-<!-- end: Angular -->
-
-<!-- Blazor -->
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-<!-- end: Blazor -->
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

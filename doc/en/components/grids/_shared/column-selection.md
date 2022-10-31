@@ -12,7 +12,7 @@ The Column Selection feature provides an easy way to select an entire column wit
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
-The sample below demonstrates the three types of `{ComponentTitle}`'s **column selection** behavior. Use the column selection dropdown below to enable each of the available selection modes.
+The sample below demonstrates the three types of `{ComponentName}`'s **column selection** behavior. Use the column selection dropdown below to enable each of the available selection modes.
 
 <!-- ComponentStart: Grid -->
 
@@ -34,7 +34,7 @@ The sample below demonstrates the three types of `{ComponentTitle}`'s **column s
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
            alt="{Platform} Column Selection Example">
 </code-view>
 
@@ -68,7 +68,7 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-group-selection" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group" >
 </code-view>
 
 ## Keyboard Combinations

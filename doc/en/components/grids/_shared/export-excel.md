@@ -13,6 +13,15 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
   The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
 </p>
 
+## {Platform} Excel Exporter Example
+
+<code-view style="height: 800px;"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           explicit-editor="stackblitz"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           alt="{Platform} {ComponentTitle} Excel Exporter Example">
+</code-view>
+
 ## Exporting {Component}'s Data
 
 To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
@@ -38,6 +47,21 @@ public exportButtonHandler() {
   this.excelExportService.exportData(this.localData, new ExcelExporterOptions('ExportedDataFile'));
 }
 ```
+
+<!-- ComponentStart: Grid -->
+## Export Grouped Data
+
+To export grouped data you just need to group the {Component} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format grouped by the selected column. Example:
+
+
+<code-view style="height: 800px;"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           explicit-editor="stackblitz"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
+</code-view>
+
+<!-- ComponentEnd: Grid -->
 
 ## Export Multi Column Headers Grid
 

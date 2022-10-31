@@ -133,7 +133,7 @@ to
 [Transaction Service class hierarchy](../transaction-classes.md)
 ```
 
-- Replace `@@igComponent` with `{ComponentTitle}` variable.
+- Replace `@@igComponent` with `{ComponentName}` variable.
 
 - Replace `ignite ui for angular` with `{ProductName}` variable.
 

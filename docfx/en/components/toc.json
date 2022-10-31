@@ -166,17 +166,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Avatar {ReleaseStatus_WebsInputs}",
+    "name": "Avatar",
     "href": "layouts/avatar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Card {ReleaseStatus_WebsInputs}",
+    "name": "Card",
     "href": "layouts/card.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Dock Manager {ReleaseStatus_DockManager}",
+    "name": "Dock Manager",
     "href": "layouts/dock-manager.md",
     "status": "",
     "items": [
@@ -219,12 +219,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Navbar {ReleaseStatus_WebsMenus}",
+    "name": "Navbar",
     "href": "menus/navbar.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Navigation Drawer {ReleaseStatus_WebsMenus}",
+    "name": "Navigation Drawer",
     "href": "menus/navigation-drawer.md"
   },
   {
@@ -242,12 +242,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/lob-grid/advanced-filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/lob-grid/batch-editing.md",
         "status": "NEW"
       },
       {
@@ -437,7 +431,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/lob-grid/state-persistence.md",
         "status": "NEW"
@@ -453,6 +447,12 @@
         "name": "Virtualization and performance",
         "href": "grids/lob-grid/virtualization.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
+        "status": "NEW"
       }
     ]
   },
@@ -466,12 +466,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/hierarchical-grid/advanced-filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/hierarchical-grid/batch-editing.md",
         "status": "NEW"
       },
       {
@@ -637,7 +631,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/hierarchical-grid/state-persistence.md",
         "status": "NEW"
@@ -652,6 +646,12 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/hierarchical-grid/virtualization.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/hierarchical-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
@@ -675,7 +675,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
@@ -692,12 +692,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Advanced Filtering",
         "href": "grids/tree-grid/advanced-filtering.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Batch Editing",
-        "href": "grids/tree-grid/batch-editing.md",
         "status": "NEW"
       },
       {
@@ -792,6 +786,12 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/tree-grid/keyboard-navigation.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
         "name": "Multi-Column Headers",
         "href": "grids/tree-grid/multi-column-headers.md",
         "status": "NEW"
@@ -875,7 +875,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
@@ -1060,7 +1060,7 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "List {ReleaseStatus_WebsList}",
+    "name": "List",
     "href": "grids/list.md"
   },
   {
@@ -1581,17 +1581,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Badge {ReleaseStatus_WebsInputs}",
+    "name": "Badge",
     "href": "inputs/badge.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Button {ReleaseStatus_WebsInputs}",
+    "name": "Button",
     "href": "inputs/button.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Checkbox {ReleaseStatus_WebsInputs}",
+    "name": "Checkbox",
     "href": "inputs/checkbox.md"
   },
   {
@@ -1601,27 +1601,27 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Chip {ReleaseStatus_WebsInputs}",
+    "name": "Chip",
     "href": "inputs/chip.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Dropdown {ReleaseStatus_WebsInputs}",
+    "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Form {ReleaseStatus_WebsInputs}",
+    "name": "Form",
     "href": "inputs/form.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Icon {ReleaseStatus_WebsInputs}",
+    "name": "Icon",
     "href": "layouts/icon.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Icon Button {ReleaseStatus_WebsInputs}",
+    "name": "Icon Button",
     "href": "inputs/icon-button.md"
   },
   {
@@ -1637,37 +1637,37 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Input {ReleaseStatus_WebsInputs}",
+    "name": "Input",
     "href": "inputs/input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Mask Input {ReleaseStatus_WebsInputs}",
+    "name": "Mask Input",
     "href": "inputs/mask-input.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Date Time Input {ReleaseStatus_WebsInputs}",
+    "name": "Date Time Input",
     "href": "inputs/date-time-input.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Radio & Radio Group {ReleaseStatus_WebsInputs}",
+    "name": "Radio & Radio Group",
     "href": "inputs/radio.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Select {ReleaseStatus_WebsInputs}",
+    "name": "Select",
     "href": "inputs/select.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Rating {ReleaseStatus_WebsInputs}",
+    "name": "Rating",
     "href": "inputs/rating.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Switch {ReleaseStatus_WebsInputs}",
+    "name": "Switch",
     "href": "inputs/switch.md"
   },
   {
@@ -1676,12 +1676,12 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Ripple {ReleaseStatus_WebsInputs}",
+    "name": "Ripple",
     "href": "inputs/ripple.md"
   },
   {
     "exclude": ["Angular"],
-    "name": "Slider & Range Slider {ReleaseStatus_WebsInputs}",
+    "name": "Slider & Range Slider",
     "href": "inputs/slider.md"
   },
   {
@@ -1697,17 +1697,17 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Snackbar {ReleaseStatus_WebsInputs}",
+    "name": "Snackbar",
     "href": "notifications/snackbar.md"
   },
   {
      "exclude": ["Angular"],
-     "name": "Toast {ReleaseStatus_WebsInputs}",
+     "name": "Toast",
      "href": "notifications/toast.md"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Dialog {ReleaseStatus_WebsInputs}",
+    "name": "Dialog",
     "href": "notifications/dialog.md",
     "status": "NEW"
  },

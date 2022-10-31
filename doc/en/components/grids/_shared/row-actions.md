@@ -8,9 +8,10 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The {ComponentTitle} component in Ignite UI for {Platform} provides the ability to use [ActionStrip](../action-strip.md) and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The `{ComponentName}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
 
 ## Usage
+
 <!-- Angular -->
 The first step is to import the **IgxActionStripModule** in our **app.module.ts** file:
 
@@ -23,12 +24,14 @@ import { IgxActionStripModule } from 'igniteui-angular';
 })
 ```
 <!-- end: Angular -->
+
 The predefined actions UI components are:
-- `GridEditingActionsComponent` - includes functionality and UI specifically designed for the {ComponentTitle} editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the {ComponentTitle}.
 
-- `GridPinningActionsComponent` - includes functionality and UI specifically designed for the {ComponentTitle} row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
+- `GridEditingActions` - includes functionality and UI specifically designed for the `{ComponentName}` editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the `{ComponentName}`.
 
-They are added inside the {ComponentSelector} and this is all needed to have an Action Strip providing default interactions.
+- `GridPinningActions` - includes functionality and UI specifically designed for the `{ComponentName}` row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
+
+They are added inside the `{ComponentName}` and this is all needed to have an `ActionStrip` providing default interactions.
 
 ```html
 <{ComponentSelector} [data]="data" [rowEditable]="true" [primaryKey]="'ID'">
@@ -41,6 +44,7 @@ They are added inside the {ComponentSelector} and this is all needed to have an 
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+
 ```razor
     <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
         @foreach (var c in columns)
@@ -48,16 +52,16 @@ They are added inside the {ComponentSelector} and this is all needed to have an 
             <IgbColumn Field="@c.Field">
             </IgbColumn>
         }
-        <IgbActionStrip #actionstrip>
+        <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
             <IgbGridEditingActions></IgbGridEditingActions>
         </IgbActionStrip>
     </{ComponentSelector}>
 ```
 
->Note: When `ActionStripComponent` is a child component of the {ComponentTitle}, hovering a row will automatically show the UI.
+>Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
-## Custom implementation
+## Custom Implementation
 
 These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
 
@@ -74,33 +78,26 @@ These components expose templates giving flexibility for customization. For inst
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+
 ```razor
 <div class="grid__wrapper">
     <{ComponentSelector} Data=northwindEmployees>
-        <IgbActionStrip #actionstrip>
+        <IgbActionStrip @ref=actionstrip>
             <IgbGridPinningActions></IgbGridPinningActions>
-            <IgbButton Title="Edit" @onclick="StartEdit(actionstrip.context)">
+            <IgbButton Title="Edit" @onclick="StartEdit(actionstrip.Context)">
                 <IgbIcon>edit</IgbIcon>
             </IgbButton>
-            @if (!IsDeleted(actionstrip.context))
+            @if (!IsDeleted(actionstrip.Context))
             {
-                <IgbButton Title="Delete" @onclick='actionstrip.context.delete()'>
+                <IgbButton Title="Delete" @onclick='Delete(actionstrip.Context)'>
                     <IgbIcon>delete</IgbIcon>
                 </IgbButton>
             }
         </IgbActionStrip>
     </{ComponentSelector}>
 </div>
-@code {
-    public void StartEdit() {
-
-    }
-
-    public void IsDeleted() {
-
-    }
-}
 ```
+
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
@@ -108,19 +105,29 @@ These components expose templates giving flexibility for customization. For inst
            alt="{Platform} {ComponentTitle} Action Strip Example" >
 </code-view>
 
+<!-- Angular -->
+
 >Note: The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
+
+<!-- end: Angular -->
 
 ## API References
 
 For more detailed information regarding the Action Strip API, refer to the following links:
+
 * `ActionStripComponent`
 
 Additional components and/or directives that can be used within the Action Strip:
 
+<!-- Angular -->
+
 * `GridActionsBaseDirective`
+* `DividerDirective`
+
+<!-- end: Angular -->
+
 * `GridPinningActionsComponent`
 * `GridEditingActionsComponent`
-* `DividerDirective`
 
 Our community is active and always welcoming to new ideas.
 

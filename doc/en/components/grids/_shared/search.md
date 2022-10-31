@@ -8,15 +8,15 @@ sharedComponents: ["Grid", "TreeGrid"]
 
 # {Platform} {ComponentTitle} Search Filter
 
-{Platform} {ComponentTitle} search enables the process of finding values in the collection of data. We make it easier to setup this functionality and it can be implemented with search input box, buttons, keyboard navigation and other useful features for an even better user experience. While browsers natively provide content search functionality, most of the time the {ComponentTitle} virtualizes its columns and rows that are out of view. In these cases, the native grid search is unable to search data in the virtualized cells, since they are not part of the DOM. We have extended the {ProductName} Material table-based grid with a **search API** that allows you to search through the **virtualized content** of the {ComponentTitle}.
+The {Platform} `{ComponentName}` search enables the process of finding values in the collection of data. We make it easier to setup this functionality and it can be implemented with search input box, buttons, keyboard navigation and other useful features for an even better user experience. While browsers natively provide content search functionality, most of the time the `{ComponentName}` virtualizes its columns and rows that are out of view. In these cases, the native grid search is unable to search data in the virtualized cells, since they are not part of the DOM. We have extended the {ProductName} Material table-based grid with a **search API** that allows you to search through the **virtualized content** of the `{ComponentName}`.
 
 ## {Platform} Search Example
 
-The following example represents {ComponentTitle} with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
+The following example represents `{ComponentName}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-search-sample"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
            alt="{Platform} {ComponentTitle} Search Example">
 </code-view>
 
@@ -24,12 +24,11 @@ The following example represents {ComponentTitle} with search input box that all
 ## {Platform} Search Usage
 
 ### {ComponentTitle} Setup
+
 Let's start by creating our grid and binding it to our data. We will also add some custom styles for the components we will be using!
 
 <!-- ComponentStart: Grid -->
 ```html
-<!--searchgrid.component.html-->
-
 <igx-grid #grid1 id="grid1" [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column [field]="'IndustrySector'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'IndustryGroup'" dataType="string" [sortable]="true"></igx-column>
@@ -58,10 +57,9 @@ Let's start by creating our grid and binding it to our data. We will also add so
 }
 ```
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 ```html
-<!--searchgrid.component.html-->
-
 <igx-tree-grid #treeGrid1 [data]="data" [autoGenerate]="false" primaryKey="ID" foreignKey="ParentID" [allowFiltering]="true">
     <igx-column [field]="'Name'" dataType="string" [sortable]="true"></igx-column>
     <igx-column [field]="'ID'" dataType="number" [sortable]="true"></igx-column>
@@ -71,13 +69,12 @@ Let's start by creating our grid and binding it to our data. We will also add so
 </igx-tree-grid>
 ```
 
-<!-- TODO razor-->
-
+```razor
+TODO TREEGRID SNIPPET
+```
 <!-- ComponentEnd: TreeGrid -->
 
 ```css
-/* searchgrid.component.css */
-
 .grid__wrapper {
     margin: 15px;
 }
@@ -99,11 +96,9 @@ Let's start by creating our grid and binding it to our data. We will also add so
 }
 ```
 
-Great, and now let's prepare for the search API of our {ComponentTitle}! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
+Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
 
 ```typescript
-// searchgrid.component.ts
-
 public searchText: string = '';
 public caseSensitive: boolean = false;
 public exactMatch: boolean = false;
@@ -118,20 +113,22 @@ public bool exactMatch = false;
 ### {Platform} Search Box Input
 
 <!-- Angular -->
-Now let's create our search input! By binding our **searchText** as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single **searchText** modification by the user. This will allow us to use the {ComponentTitle}'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the **searchText** and scroll to the next/previous one (depending on which method we have invoked).
+Now let's create our search input! By binding our `SearchText` as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
 <!-- end: Angular -->
+
 <!-- Blazor -->
-Now let's create our search input! By binding our **searchText** to the `Value` property to our newly created input and subscribe to the `ValueChanging` event, we can detect every single **searchText** modification by the user. This will allow us to use the {ComponentTitle}'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the **searchText** and scroll to the next/previous one (depending on which method we have invoked).
+Now let's create our search input! By binding our `SearchText` to the `Value` property to our newly created input and subscribe to the `ValueChanging` event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
 <!-- end: Blazor -->
 
 Both the `FindNext` and the `FindPrev` methods have three arguments:
-- `text`: **string** (the text we are searching for)
-- (optional) `caseSensitive`: **boolean** (should the search be case sensitive or not, default value is false)
-- (optional) `exactMatch`: **boolean** (should the search be by an exact match or not, default value is false)
 
-When searching by an exact match, the search API will highlight as results only the cell values that match entirely the **searchText** by taking the case sensitivity into account as well. For example the strings '_software_' and '_Software_' are an exact match with a disregard for the case sensitivity.
+- `Text`: **string** (the text we are searching for)
+- (optional) `CaseSensitive`: **boolean** (should the search be case sensitive or not, default value is false)
+- (optional) `ExactMatch`: **boolean** (should the search be by an exact match or not, default value is false)
 
-The methods from above return a **number** value (the number of times the {ComponentTitle} contains the given string).
+When searching by an exact match, the search API will highlight as results only the cell values that match entirely the `SearchText` by taking the case sensitivity into account as well. For example the strings '_software_' and '_Software_' are an exact match with a disregard for the case sensitivity.
+
+The methods from above return a **number** value (the number of times the `{ComponentName}` contains the given string).
 
 ```html
 <!--searchgrid.component.html-->
@@ -146,14 +143,13 @@ The methods from above return a **number** value (the number of times the {Compo
 <!-- Angular -->
 
 ### Display Results Count
-Let's also display the position of the current occurrence, along with the total results count! We can do this by using the grid's `lastSearchInfo` property. This property is automatically updated when using the **find** methods.
 
-- The `@@igObjectRef.lastSearchInfo.matchInfoCache.length` value will give us the total results count.
-- The `@@igObjectRef.lastSearchInfo.activeMatchIndex` value will give us the index position of the current occurrence (match).
+Let's also display the position of the current occurrence, along with the total results count! We can do this by using the grid's `LastSearchInfo` property. This property is automatically updated when using the **find** methods.
+
+- The grid's `LastSearchInfo.MatchInfoCache.Length` value will give us the total results count.
+- The grid's `LastSearchInfo.ActiveMatchIndex` value will give us the index position of the current occurrence (match).
 
 ```html
-<!--searchgrid.component.html-->
-
 <div class="resultsText" *ngIf="@@igObjectRef.lastSearchInfo">
     <span *ngIf="@@igObjectRef.lastSearchInfo.matchInfoCache.length > 0">
         {{ @@igObjectRef.lastSearchInfo.activeMatchIndex + 1 }} of {{ @@igObjectRef.lastSearchInfo.matchInfoCache.length }} results
@@ -177,8 +173,6 @@ Let's also display the position of the current occurrence, along with the total 
 In order to freely search and navigate among our search results, let's create a couple of buttons by invoking the `FindNext` and the `FindPrev` methods inside the buttons' respective click event handlers.
 
 ```html
-<!--searchgrid.component.html-->
-
 <div class="searchButtons">
     <input type="button" value="Previous" (click)="@@igObjectRef.findPrev(searchText, caseSensitive, exactMatch)" />
     <input type="button" value="Next" (click)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)" />
@@ -209,19 +203,17 @@ In order to freely search and navigate among our search results, let's create a 
 ### Add Keyboard Search
 
 <!-- Angular -->
-We can also allow the users to navigate the results by using the keyboard's arrow keys and the Enter key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the preventDefault() method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
+
+We can also allow the users to navigate the results by using the keyboard's arrow keys and the <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the `PreventDefault` method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
+
 <!-- end: Angular -->
 
 ```html
-<!--searchgrid.component.html-->
-
 <input #search1 id="search1" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)"
        (keydown)="searchKeyDown($event)" />
 ```
 
 ```typescript
-// searchgrid.component.ts
-
 public searchKeyDown(ev) {
     if (ev.key === 'Enter') {
         ev.preventDefault();
@@ -234,7 +226,9 @@ public searchKeyDown(ev) {
 ```
 
 <!-- Blazor -->
+
 We can also allow the users to navigate the results by using the keyboard's <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search and invoke the `FindNext`/`FindPrev` methods depending on if the user has pressed <kbd>Shift</kbd> as well or not.
+
 <!-- end: Blazor -->
 
 ```razor
@@ -255,12 +249,12 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
 ### Case Sensitive and Exact Match
 
 <!-- Angular -->
-Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple checkbox inputs by binding our **caseSensitive** and **exactMatch** properties to the inputs' **checked** properties respectively and handle their **change** events by toggling our properties and invoking the `FindNext` method.
+
+Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple checkbox inputs by binding our `CaseSensitive` and `ExactMatch` properties to the inputs' `Checked` properties respectively and handle their `Change` events by toggling our properties and invoking the `FindNext` method.
+
 <!-- end: Angular -->
 
 ```html
-<!--searchgrid.component.html-->
-
 <span>Case sensitive</span>
 <input type="checkbox" [checked]="caseSensitive" (change)="updateSearch()">
 
@@ -269,8 +263,6 @@ Now let's allow the user to choose whether the search should be case sensitive a
 ```
 
 ```typescript
-// searchgrid.component.ts
-
 public updateSearch() {
     this.caseSensitive = !this.caseSensitive;
     this.@@igObjectRef.findNext(this.searchText, this.caseSensitive, this.exactMatch);
@@ -283,7 +275,9 @@ public updateExactSearch() {
 ```
 
 <!-- Blazor -->
+
 Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple selectable `Chips` and bind to the `SelectedChanged` event to determine when the user interacts with them.
+
 <!-- end: Blazor -->
 
 ```razor
@@ -309,20 +303,19 @@ Now let's allow the user to choose whether the search should be case sensitive a
 
 ### Persistence
 
-What if we would like to filter and sort our {ComponentTitle} or even to add and remove records? After such operations, the highlights of our current search automatically update and persist over any text that matches the **searchText**! Furthermore, the search will work with paging and will persist the highlights through changes of the {ComponentTitle}'s `PerPage` property.
+What if we would like to filter and sort our `{ComponentName}` or even to add and remove records? After such operations, the highlights of our current search automatically update and persist over any text that matches the `SearchText`! Furthermore, the search will work with paging and will persist the highlights through changes of the `{ComponentName}`'s `PerPage` property.
 
 ### Adding icons
 
 By using some of our other components, we can create an enriched user interface and improve the overall design of our entire search bar! We can have a nice search or delete icon on the left of the search input, a couple of chips for our search options and some material design icons combined with nice ripple styled buttons for our navigation on the right. We can wrap these components inside an input group for a more refined design.
 
 <!-- Angular -->
+
 To do this, let's go and grab the [**InputGroup**](../input-group.md), [**Icon**](../icon.md),  [**Ripple**](../ripple.md), [**Button**](../button.md) and the [**Chip**](../chip.md) modules.
+
 <!-- end: Angular -->
 
 ```typescript
-// app.module.ts
-
-...
 import {
     @@igxNameModule,
     IgxInputGroupModule,
@@ -332,22 +325,22 @@ import {
     IgxChipsModule
 } from 'igniteui-angular';
 
-@NgModule({
-    ...
-    imports: [..., IgxInputGroupModule, IgxIconModule, IgxRippleModule, IgxButtonModule, IgxChipsModule],
+@NgModule({    
+    imports: [IgxInputGroupModule, IgxIconModule, IgxRippleModule, IgxButtonModule, IgxChipsModule],
 })
 export class AppModule {}
 ```
 
 <!-- Blazor -->
+
 To do this, let's go and grab the `Input`, `Icon`, `IconButton` and the `Chip` modules.
+
 <!-- end: Blazor -->
 
 ```razor
-
 // eg. Program.cs register the following:
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGridModule), 
+    typeof(IgbGridModule),
     typeof(IgbInputModule),
     typeof(IgbIconButtonModule),
     typeof(IgbIconModule)
@@ -366,12 +359,12 @@ builder.Services.AddIgniteUIBlazor(
 Finally, let's update our template with the new components!
 
 <!-- Angular -->
-We will wrap all of our components inside an [**IgxInputGroup**](../input-group.md). On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our **searchText** and invoke the {ComponentTitle}'s `ClearSearch` method to clear the highlights.
+
+We will wrap all of our components inside an [InputGroup](../input-group.md). On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+
 <!-- end: Angular -->
 
 ```html
-<!--searchgrid.component.html-->
-
 <igx-input-group type="search" class="offset">
     <igx-prefix>
         <igx-icon *ngIf="searchText.length == 0">search</igx-icon>
@@ -388,8 +381,6 @@ We will wrap all of our components inside an [**IgxInputGroup**](../input-group.
 ```
 
 ```typescript
-// searchgrid.component.ts
-
 public clearSearch() {
     this.searchText = '';
     this.@@igObjectRef.clearSearch();
@@ -397,7 +388,9 @@ public clearSearch() {
 ```
 
 <!-- Blazor -->
-We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our **searchText** and invoke the {ComponentTitle}'s `ClearSearch` method to clear the highlights.
+
+We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+
 <!-- end: Blazor -->
 
 ```razor
@@ -467,8 +460,6 @@ On the right in our input group, let's create three separate containers with the
 - For displaying the search results.
 
 ```html
-<!--searchgrid.component.html-->
-
 <igx-suffix *ngIf="searchText.length > 0">
     <div class="resultsText" *ngIf="@@igObjectRef.lastSearchInfo">
         <span *ngIf="@@igObjectRef.lastSearchInfo.matchInfoCache.length > 0">
@@ -489,30 +480,25 @@ On the right in our input group, let's create three separate containers with the
 <!-- end: Blazor -->
 
 <!-- Angular -->
-- For displaying a couple of chips that toggle the **caseSensitive** and the **exactMatch** properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler - **updateSearch** or **updateExactSearch** depending on which chip has been clicked.
+
+- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler - `UpdateSearch` or `UpdateExactSearch` depending on which chip has been clicked.
 
 ```html
-<!--searchgrid.component.html-->
-
-    ...
-    <div class="chips">
-        <igx-chips-area>
-            <igx-chip (click)="updateSearch()" [color]="caseSensitive? 'lightgrey' : 'rgba(0, 0, 0, .04)'">
-                <span>Case Sensitive</span>
-            </igx-chip>
-            <igx-chip (click)="updateExactSearch()" [color]="exactMatch? 'lightgrey' : 'rgba(0, 0, 0, .04)'">
-                <span>Exact Match</span>
-            </igx-chip>
-        </igx-chips-area>
-    </div>
-    ...
+<div class="chips">
+    <igx-chips-area>
+        <igx-chip (click)="updateSearch()" [color]="caseSensitive? 'lightgrey' : 'rgba(0, 0, 0, .04)'">
+            <span>Case Sensitive</span>
+        </igx-chip>
+        <igx-chip (click)="updateExactSearch()" [color]="exactMatch? 'lightgrey' : 'rgba(0, 0, 0, .04)'">
+            <span>Exact Match</span>
+        </igx-chip>
+    </igx-chips-area>
+</div>    
 ```
 
 - For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
 
 ```html
-<!--searchgrid.component.html-->
-
 <igx-suffix>
     <div class="searchButtons">
         <button igxButton="icon" igxRipple igxRippleCentered="true" (click)="@@igObjectRef.findPrev(searchText, caseSensitive, exactMatch)">
@@ -536,7 +522,7 @@ On the right in our input group, let's create three separate containers with the
 
 ## API References
 
-In this article we implemented our own search bar for the {ComponentTitle} with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for Angular components like icons, chips and inputs. The search API is listed below.
+In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
 -   `FindNext`
@@ -544,30 +530,32 @@ In this article we implemented our own search bar for the {ComponentTitle} with 
 -   `ClearSearch`
 -   `RefreshSearch`
 
-`ColumnComponent` properties:
+`Column` properties:
 -   `Searchable`
 
 Additional components and/or directives with relative APIs that were used:
 
 <!-- Angular -->
 
-* `InputGroupComponent`
+* `InputGroup`
 * `RippleDirective`
 * `ButtonDirective`
 
 <!-- end: Angular -->
-* `IconComponent`
-* `ChipComponent`
+
+* `Icon`
+* `Chip`
+
 <!-- Blazor -->
 
-* `InputComponent`
-* `IconButtonComponent`
+* `Input`
+* `IconButton`
 
 <!-- end: Blazor -->
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)

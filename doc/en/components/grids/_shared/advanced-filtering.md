@@ -10,27 +10,27 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Advanced Filtering
 
-The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} Material table like the `{ComponentTitle}`.
+The Advanced filtering provides a dialog which allows the creation of groups with filtering conditions across all columns for any {Platform} table like the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
            alt="{Platform} {ComponentTitle} Advanced Filtering Example"
-           github-src="{ComponentSample}/excel-style-filtering-sample-1" >
+           github-src="{ComponentSample}/advanced-filtering-options">
 </code-view>
 
 
 ## Interaction
 
-In order to open the advanced filtering dialog, the **Advanced Filtering** button in the grid toolbar should be clicked. If no advanced filter is applied, you should start with creating a group of filtering conditions linked with `AND` or `OR`. After that, you can add filtering conditions or sub-groups.
+In order to open the advanced filtering dialog, the **Advanced Filtering** button in the grid toolbar should be clicked. If no advanced filter is applied, you should start with creating a group of filtering conditions linked with **AND** or **OR**. After that, you can add filtering conditions or sub-groups.
 
 In order to add a filtering condition, you have to select any of the `Filterable` columns, an operand based on the column `DataType` and a value if the operand is not unary. Once the condition is committed, a chip with the condition information appears. By hovering or clicking the chip, you have the options to modify it or add another condition or group right after it.
 
 If you select more than one filtering condition chip, a context menu appears with options to create a group or delete the filters. If you choose to create a group with the selected conditions, the newly created group will appear where the topmost selected condition was placed.
 
-In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition `AND` or `OR`. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
+In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition `**AND** or **OR**. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
 
 In order to filter the data once you are ready with creating the filtering conditions and groups, you should click the **Apply** button. If you have modified the advanced filter, but you don't want to preserve the changes, you should click the **Cancel** button. You could also clear the advanced filter by clicking the **Clear Filter** button.
 
@@ -79,15 +79,15 @@ ngAfterViewInit(): void {
 }
 ```
 
-In case you don't want to show the `{ComponentTitle}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
+In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
 >[!NOTE]
->You can enable both the **quickFilter**/**excelStyleFilter** and the advanced filtering user interfaces in the `{ComponentTitle}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentTitle}` is the intersection between the results of the two filters.
+>You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
-
+<!-- Angular -->
 ## External Advanced Filtering
 
-As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentTitle}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentTitle}`.
+As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentName}`. When the setup in the dialog is ready, the apply or close actions will hide that dialog. There is a way to make that dialog remain visible, and that is to use it as a standalone component. In the demo below, the advanced filtering dialog is declared separately of the `{ComponentName}`.
 
 ### Demo
 
@@ -99,7 +99,7 @@ As you see in the demo above, the advanced filtering dialog is hosted in an over
 
 ### Usage
 
-It's super easy to configure the advanced filtering to work outside of the `{ComponentTitle}`. All you need to do is to create the dialog and set its **grid** property:
+It's super easy to configure the advanced filtering to work outside of the `{ComponentName}`. All you need to do is to create the dialog and set its **grid** property:
 
 ```html
 <igx-advanced-filtering-dialog [grid]="grid1">
@@ -420,7 +420,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 * `Column`
-* `{ComponentTitle}`
+* `{ComponentName}`
 
 ## Additional Resources
 

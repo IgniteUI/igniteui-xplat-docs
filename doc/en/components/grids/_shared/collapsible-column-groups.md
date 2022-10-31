@@ -20,7 +20,7 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## Setup
 
-To get started with the `{ComponentTitle}` and the **Collapsible multi-column headers** feature, first you need to install Ignite UI for {Platform} by typing the following command:
+To get started with the `{ComponentName}` and the **Collapsible multi-column headers** feature, first you need to install Ignite UI for {Platform} by typing the following command:
 
 <!-- Angular -->
 ```cmd
@@ -99,11 +99,11 @@ The initial state of the column group which is specified as collapsible is `Expa
 
 ## Expand/Collapse Indicator Template
 
-Default expand indicator for the `{ComponentTitle}` is the following:
+Default expand indicator for the `{ComponentName}` is the following:
 
  <img class="responsive-img" src="../../../images/general/expand_indicator.png" style="width: 450px; height: 130px"/>
 
-Default collapse indicator for the `{ComponentTitle}` is the following:
+Default collapse indicator for the `{ComponentName}` is the following:
 
 <img class="responsive-img" src="../../../images/general/collapsed_indicator.png" style="width: 400px; height: 130px"/>
 
@@ -161,7 +161,7 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 ## API References
 
-* `{ComponentTitle}`
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources

@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Column Types Overview
 
-{ProductName} `{ComponentTitle}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+{ProductName} `{ComponentName}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
 
 <!-- ComponentStart: Grid -->
 
@@ -111,7 +111,7 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The `{ComponentTitle}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../lob-grid/overview.md#custom-display-format).
+The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../lob-grid/overview.md#custom-display-format).
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
@@ -353,7 +353,7 @@ TO DO!
 * `GridCell`
 * `Column`
 * `PipeArgs`
-* `{ComponentTitle}`
+* `{ComponentName}`
 * `Locale`
 * `DataType`
 

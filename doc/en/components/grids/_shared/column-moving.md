@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {ComponentTitle} Column Reordering & Moving
 
-The `{ComponentTitle}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
+The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
 
 > [!NOTE]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
@@ -21,7 +21,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 <!-- end: Angular -->
 
 > [!NOTE]
-> If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentTitle}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
+> If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentName}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
 
 ```html
 <ng-template igxHeader>
@@ -40,14 +40,14 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 <code-view style="height:650px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving"
-            github-src="{ComponentSample}/column-moving"
+            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-options"
+            github-src="{ComponentSample}/column-moving-options"
             alt="{Platform} {ComponentTitle} Column Moving Overview Example">
 </code-view>
 
 ## Overview
 
-**Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentTitle}`.
+**Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentName}`.
 
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
@@ -100,7 +100,7 @@ idColumn.move(3);
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ```razor
-    public IgbGridColumn Col1 { get; set; };
+    public IgbColumn Col1 { get; set; };
     public void HandleClick()
     {
         this.Col1.Move(3);
@@ -115,7 +115,7 @@ Note that when using the column moving feature, the `ColumnMovingEnd` event will
 
 There are several events related to the column moving to provide a means for tapping into the columns' drag and drop operations. These are `ColumnMovingStart`, `ColumnMoving` and `ColumnMovingEnd`.
 
-You can subscribe to the `ColumnMovingEnd` event of the `{ComponentTitle}` to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the **Category** column after the **Change On Year(%)** column in the following code snippet.
+You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the **Category** column after the **Change On Year(%)** column in the following code snippet.
 
 ```html
 <{ComponentSelector} #dataGrid [data]="data" [autoGenerate]="false" [moving]="true" (columnMovingEnd)="onColumnMovingEnd($event)">
@@ -156,7 +156,7 @@ igRegisterScript("onColumnMovingEnd", (event) => {
 
 ## Styling
 
-To get started with styling the `{ComponentTitle}` column moving headers, we need to import the `index` file, where all the theme functions and component mixins live:
+To get started with styling the `{ComponentName}` column moving headers, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -265,10 +265,9 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-moving-styled"
-           github-src="{ComponentSample}/moving-styled"
-           alt="{Platform} {ComponentTitle} Grid Moving Styled Example"
-            >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-styles"
+           github-src="{ComponentSample}/column-moving-styles"
+           alt="{Platform} {ComponentTitle} Grid Moving Styled Example">
 </code-view>
 
 >[!NOTE]

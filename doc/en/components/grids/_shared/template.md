@@ -29,12 +29,12 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 <!-- EXAMPLE of build flagging content for single component: -->
 <!-- ComponentStart: PivotGrid -->
-The Batch Editing feature of the {ComponentName} is {ComponentName} based on the `HierarchicalTransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- EXAMPLE of build flagging content for multiple components: -->
 <!-- ComponentStart: PivotGrid, HierarchicalGrid -->
-The Batch Editing feature of the {ComponentName} is based on the `TransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [Transaction Service class hierarchy](transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
 <!-- ComponentEnd: PivotGrid, HierarchicalGrid -->
 
 <!-- EXAMPLE of build flagging content for single components: -->
@@ -115,9 +115,9 @@ Then, all you need to do is enable `BatchEditing` property:
 
 ## {Platform} {ComponentTitle} Transaction
 
-This will ensure a proper instance of `Transaction` service is provided for the {ComponentSelector}. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the `TransactionFactory` class.
+This will ensure a proper instance of `Transaction` service is provided for the `{ComponentName}`. The proper `TransactionService` is provided through a `TransactionFactory`. You can learn more about this internal implementation in the `TransactionFactory` class.
 
-After batch editing is enabled, define a {ComponentSelector} with bound data source and `RowEditable` set to true and bind:
+After batch editing is enabled, define a `{ComponentName}` with bound data source and `RowEditable` set to true and bind:
 
 <!-- EXAMPLE of a code snippet that applies only to Grid component  -->
 <!-- ComponentStart: Grid -->

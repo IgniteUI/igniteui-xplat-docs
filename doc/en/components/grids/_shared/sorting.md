@@ -8,54 +8,54 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Sorting
 
-In {Platform} {ComponentTitle}, data sorting is enabled on a per-column level, meaning that the **{ComponentSelector}** can have a mix of sortable and non-sortable columns. Performing angular sort actions enables you to change the display order of the records based on specified criteria.
-
+In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
 > Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 ## {Platform} {ComponentTitle} Sorting Overview Example
 
-Additionally there is a custom contextmenu added for sorting using **{ComponentSelector}**'s `ContextMenu` Output.
+<!-- ComponentStart: HierarchicalGrid -->
+
+Additionally there is a custom contextmenu added for sorting using `{ComponentName}`'s `ContextMenu` Output.
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting"
-           github-src="{ComponentSample}/sorting">
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-options"
+           github-src="{ComponentSample}/column-sorting-options">
 </code-view>
 
-This is done via the `Sortable` input. With the {ComponentTitle} sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
+This is done via the `Sortable` input. With the `{ComponentName}` sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
 
-
-<!-- Angular -->
 ```html
 <igx-column field="ProductName" header="Product Name" [dataType]="'string'" sortable="true"></igx-column>
 ```
-<!-- end: Angular -->
 
 ```razor
-<IgbGridColumn Field="Title" Sortable="true"></IgbGridColumn>
+<IgbColumn Field="Title" Sortable="true"></IgbColumn>
 ```
 
 ## Sorting Indicators
+
 Having a certain amount of sorted columns could be really confusing if there is no indication of the sorted order.
 
-The **{ComponentName}** provides a solution for this problem by indicating the index of each sorted column.
+The `{ComponentName}` provides a solution for this problem by indicating the index of each sorted column.
 
 <!-- ComponentStart: Grid -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting-indicators"
-           github-src="{ComponentSample}/sorting-indicators" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-indicators"
+           github-src="{ComponentSample}/column-sorting-indicators" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
 
 ## Sorting through the API
 
-You can sort any column or a combination of columns through the {ComponentTitle} API using the {ComponentTitle} `Sort` method:
+You can sort any column or a combination of columns through the `{ComponentName}` API using the `{ComponentName}` `Sort` method:
 
-<!-- Angular -->
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
 
@@ -68,11 +68,22 @@ this.grid.sort([
     { fieldName: 'Price', dir: SortingDirection.Desc }
 ]);
 ```
-<!-- end: Angular -->
 
 ```razor
 @code {
-Currently not working
+    this.grid.SortAsync(new IgbSortingExpression[]
+        {
+            new IgbSortingExpression
+            {
+                FieldName = "CompanyName",
+                Dir = SortingDirection.Asc
+            },
+            new IgbSortingExpression
+            {
+                FieldName = "Country",
+                Dir = SortingDirection.Asc
+            }
+        });
 }
 ```
 
@@ -81,7 +92,6 @@ Currently not working
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
 
-<!-- Angular -->
 ```typescript
 // Removes the sorting state from the ProductName column
 this.grid.clearSort('ProductName');
@@ -89,7 +99,6 @@ this.grid.clearSort('ProductName');
 // Removes the sorting state from every column in the {ComponentTitle}
 this.grid.clearSort();
 ```
-<!-- end: Angular -->
 
 ```razor
 @code {
@@ -102,14 +111,14 @@ this.grid.clearSort();
 ```
 
 > [!NOTE]
-> The `SortStrategy` of the **{ComponentTitle}** is of different type compared to the `SortStrategy` of the **Column**, since they work in different scopes and expose different parameters.
+> The `SortStrategy` of the `{ComponentName}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
 
 > [!NOTE]
-> The sorting operation **DOES NOT** change the underlying data source of the {ComponentTitle}.
+> The sorting operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
-## Initial sorting state
+## Initial Sorting State
 
-It is possible to set the initial sorting state of the {ComponentTitle} by passing an array of sorting expressions to the `SortingExpressions` property of the {ComponentTitle}.
+It is possible to set the initial sorting state of the `{ComponentName}` by passing an array of sorting expressions to the `SortingExpressions` property of the `{ComponentName}`.
 
 <!-- Angular -->
 ```typescript
@@ -126,29 +135,33 @@ public ngOnInit() {
 @code {
     protected override void OnAfterRender(bool first)
     {
-        this.grid.SortingExpressions = new IgbSortingExpression[]{
-            new IgbSortingExpression()
-            {
-                FieldName = "Title",
-                Dir = SortingDirection.Asc
-            }};
+        if (first)
+        {
+            this.grid.SortingExpressions = new IgbSortingExpression[]{
+                new IgbSortingExpression()
+                {
+                    FieldName = "Title",
+                    Dir = SortingDirection.Asc
+                }};
+        }
     }
 }
 ```
 
 > [!NOTE]
-> If values of type `string` are used by a column of `DataType` `Date`, the {ComponentTitle} won't parse them to `Date` objects and using {ComponentTitle} `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
+> If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
 ## Remote Sorting
 
-The {ComponentTitle} supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 
 <!-- ComponentEnd: Grid -->
 
-## Sorting Indicators Templates
+<!-- TODO -- Uncomment the section below and Add sorting indicators templates when they are added in Blazor-->
+<!-- ## Sorting Indicators Templates
 
-The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none):
+The sorting indicator icon in the column header can be customized using a template. The following directives are available for templating the sorting indicator for any sorting state (ascending, descending, none): -->
 
 <!-- Angular -->
 - `IgxSortHeaderIconDirective` – re-templates the sorting icon when no sorting is applied.
@@ -176,11 +189,10 @@ The sorting indicator icon in the column header can be customized using a templa
 ```
 <!-- end: Angular -->
 
-Add snippets for templating sorting icons
+<!-- Angular -->
 
 ## Styling
 
-<!-- Angular -->
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
 
 ```scss
@@ -215,7 +227,7 @@ The last step is to **include** the component mixins:
 }
 ```
 
-### Defining a color palette
+### Defining a Color Palette
 
 Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
@@ -275,27 +287,26 @@ $custom-theme: grid-theme(
 
 Don't forget to include the themes in the same way as it was demonstrated above.
 
-<!-- end: Angular -->
-
-Add Styling section for Blazor
-
 ### Demo
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-sorting-styling"
-           github-src="{ComponentSample}/sorting-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-style"
+           github-src="{ComponentSample}/column-sorting-style" >
 </code-view>
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
+<!-- end: Angular -->
+
 ## API References
-* `ISortingExpression`
+
+* `SortingExpression`
 
 ## Additional Resources
 
-* [{ComponentTitle} overview](overview.md)
+* [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
