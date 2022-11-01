@@ -67,8 +67,9 @@ Register the `{ComponentModule}` as demonstrated in the following code snippet:
 
 <!-- EXAMPLE of Blazor code snippet with module variable -->
 <!-- Blazor -->
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof({ComponentModule}));
 ```
 

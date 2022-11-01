@@ -38,8 +38,10 @@ To get started with the Input component, you first need to register its module.
 
 <!-- Blazor -->
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 ```
 

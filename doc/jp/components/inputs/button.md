@@ -58,7 +58,7 @@ IgrButtonModule.register();
 
 `Button` を使用する前に、次のように登録する必要があります。
 
-Open the Program.cs
+
 ```razor
 builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 ```

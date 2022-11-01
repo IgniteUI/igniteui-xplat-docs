@@ -37,8 +37,9 @@ In addition to the core and {Platform} data grid packages you will also have to 
 
 The `Grid` requires the following modules:
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 

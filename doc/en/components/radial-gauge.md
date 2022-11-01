@@ -49,8 +49,10 @@ Afterwards you may start implementing the control by adding the following namesp
 
 The `XamRadialGauge` requires the following modules:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 

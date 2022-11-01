@@ -55,8 +55,9 @@ The `Grid` requires the following modules:
 
 <!-- Blazor -->
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 
@@ -93,8 +94,9 @@ ModuleManager.register(
 
 The optional `Grid` features, seen above, requires the following modules:
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
     typeof(IgbDataGridModule),
     typeof(IgbDataGridToolbarModule),

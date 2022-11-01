@@ -61,8 +61,10 @@ IgrSwitchModule.register();
 
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 

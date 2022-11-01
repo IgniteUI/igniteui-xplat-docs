@@ -39,8 +39,10 @@ Input コンポーネントの使用を開始するには、最初にそのモ�
 
 <!-- Blazor -->
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 ```
 

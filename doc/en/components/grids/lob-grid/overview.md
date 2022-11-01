@@ -64,8 +64,9 @@ Afterwards, you may start implementing the control by adding the following names
 
 ### Component Modules
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
 

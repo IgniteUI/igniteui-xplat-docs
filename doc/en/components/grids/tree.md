@@ -69,10 +69,11 @@ You will also need to link an additional CSS file to apply the styling to the `T
 ```
 <!-- end: Blazor -->
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbTreeModule), 
+    typeof(IgbTreeModule),
     typeof(IgbTreeItemModule)
 );
 ```

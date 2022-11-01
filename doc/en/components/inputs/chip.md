@@ -59,8 +59,9 @@ IgrChipModule.register();
 
 Before using the `Chip`, you need to register it as follows:
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 ```
 

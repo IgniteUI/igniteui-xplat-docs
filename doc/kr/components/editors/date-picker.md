@@ -33,8 +33,10 @@ npm install --save {PackageInputs}
 
 The Date Picker component requires the following modules to be registered:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
 ```
 

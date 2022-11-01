@@ -60,8 +60,10 @@ IgrRadioGroupModule.register();
 
 Before using the `Radio` and the `RadioGroup`, you need to register them as follows:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
   typeof(IgbRadioModule),
   typeof(IgbRadioGroupModule)
