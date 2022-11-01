@@ -61,10 +61,19 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
 ```
 
 ```razor
-<div class="density-chooser">
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCompactClick">COMPACT</IgbButton>
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCosyClick">COSY</IgbButton>
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onComfortableClick">COMFORTABLE</IgbButton>
+<div class="options vertical">
+    <IgbPropertyEditorPanel
+    DescriptionType="WebGrid"
+    IsHorizontal="true"
+    IsWrappingEnabled="true"
+    Name="PropertyEditor"
+    @ref="propertyEditor">
+        <IgbPropertyEditorPropertyDescription
+        PropertyPath="DisplayDensity"
+        Name="DisplayDensityEditor"
+        @ref="displayDensityEditor">
+        </IgbPropertyEditorPropertyDescription>
+    </IgbPropertyEditorPanel>
 </div>
 ```
 
@@ -153,19 +162,178 @@ Now we can add the markup.
 ```
 
 ```razor
-<div class="density-chooser">
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCompactClick">COMPACT</IgbButton>
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onCosyClick">COSY</IgbButton>
-    <IgbButton Variant="@ButtonVariant.Outlined" @onclick="onComfortableClick">COMFORTABLE</IgbButton>
+<div class="container vertical">
+    <div class="options vertical">
+        <IgbPropertyEditorPanel
+        DescriptionType="WebGrid"
+        IsHorizontal="true"
+        IsWrappingEnabled="true"
+        Name="PropertyEditor"
+        @ref="propertyEditor">
+            <IgbPropertyEditorPropertyDescription
+            PropertyPath="DisplayDensity"
+            Name="DisplayDensityEditor"
+            @ref="displayDensityEditor">
+            </IgbPropertyEditorPropertyDescription>
+        </IgbPropertyEditorPanel>
+    </div>
+
+    <div class="container vertical fill">
+        <IgbGrid
+        AutoGenerate="false"
+        Data="InvoicesData"
+        AllowFiltering="true"
+        Name="grid"
+        @ref="grid">
+            <IgbColumn
+            Field="CustomerName"
+            Header="Customer Name"
+            Sortable="true"
+            HasSummary="true"
+            DataType="GridColumnDataType.String">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Country"
+            Header="Country"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="City"
+            Header="City"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Address"
+            Header="Address"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="PostalCode"
+            Header="Postal Code"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Salesperson"
+            Header="Sales Person"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ShipperName"
+            Header="Shipper Name"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="OrderDate"
+            Header="Order Date"
+            DataType="GridColumnDataType.Date"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ProductID"
+            Header="ID"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ProductName"
+            Header="Name"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="UnitPrice"
+            Header="Unit Price"
+            DataType="GridColumnDataType.Number"
+            Sortable="true"
+            HasSummary="true"
+            Filterable="false">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Quantity"
+            Header="Quantity"
+            DataType="GridColumnDataType.Number"
+            Sortable="true"
+            HasSummary="true"
+            Filterable="false">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Discontinued"
+            Header="Discontinued"
+            DataType="GridColumnDataType.Boolean"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="Discontinued"
+            Header="Discontinued"
+            DataType="GridColumnDataType.Boolean"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ShipName"
+            Header="Name"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ShipCountry"
+            Header="Country"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ShipCity"
+            Header="City"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+            <IgbColumn
+            Field="ShipPostalCode"
+            Header="Postal Code"
+            DataType="GridColumnDataType.String"
+            Sortable="true"
+            HasSummary="true">
+            </IgbColumn>
+
+        </IgbGrid>
+    </div>
 </div>
-
-
-<IgbGrid Width="100%" Height="100%"
-            @ref=grid
-            AutoGenerate=true
-            Data=northwindEmployees
-            DisplayDensity=@density>
-</IgbGrid>
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -281,20 +449,23 @@ public selectDensity(event) {
 
 ```razor
 @code {
-    private DisplayDensity density = DisplayDensity.Comfortable;
+    private Action BindElements { get; set; }
 
-    public void onCompactClick(EventArgs e)
+    protected override void OnAfterRender(bool firstRender)
     {
-        this.density = DisplayDensity.Compact;
+        var propertyEditor = this.propertyEditor;
+        var displayDensityEditor = this.displayDensityEditor;
+        var grid = this.grid;
+
+        this.BindElements = () => {
+            propertyEditor.Target = this.grid;
+        };
+        this.BindElements();
     }
-    public void onCosyClick(EventArgs e)
-    {
-        this.density = DisplayDensity.Cosy;
-    }
-    public void onComfortableClick(EventArgs e)
-    {
-        this.density = DisplayDensity.Comfortable;
-    }
+
+    private IgbPropertyEditorPanel propertyEditor;
+    private IgbPropertyEditorPropertyDescription displayDensityEditor;
+    private IgbGrid grid;
 }
 ```
 
