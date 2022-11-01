@@ -1295,6 +1295,11 @@
           "href": "charts/features/chart-annotations.md"          
         },
         {
+          "name": "Chart Data Aggregations",
+          "href": "charts/features/chart-data-aggregations.md",
+          "status": "NEW"
+        },
+        {
           "name": "Chart Data Legend",
           "href": "charts/features/chart-data-legend.md"        
         },
