@@ -112,8 +112,8 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-mrl-navigation"
-           github-src="{ComponentSample}/custom-mrl-navigation"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-mrl-navigation"
+           github-src="{ComponentSample}/keyboard-mrl-navigation"
            alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
 
@@ -134,7 +134,11 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 
 <!-- end: Angular -->
 
+<!-- Angular -->
+
 By default we have set the same columns as our previous sample, but it can be cleared and configured to match your desired configuration.
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -142,6 +146,8 @@ By default we have set the same columns as our previous sample, but it can be cl
            github-src="{ComponentSample}/multi-row-layout-configuration"
            alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 

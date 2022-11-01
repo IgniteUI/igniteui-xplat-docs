@@ -36,7 +36,7 @@ To get started import the `{ComponentName}Module` in the **app.module.ts** file:
 import { {ComponentName}Module } from 'igniteui-{Platform}';
 
 @NgModule({
-    imports: [{ComponentName}Module],    
+    imports: [{ComponentName}Module],
 })
 export class AppModule {}
 ```
@@ -335,6 +335,8 @@ We scope our `@include` statement in `.custom-buttons` so that it is only applie
 ### Demo
 
 After styling the banner and buttons, we also define a custom style for [the cell in edit mode](cell-editing.md#styling). The result of all the combined styles can be seen below:
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

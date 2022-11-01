@@ -300,6 +300,7 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 }
 ```
 
+<!-- Angular -->
 
 ## Styling
 
@@ -442,8 +443,10 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 }
 ```
 
+
 ### Demo
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -452,6 +455,8 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
+
+<!-- end: Angular -->
 
 
 ## Known Limitations

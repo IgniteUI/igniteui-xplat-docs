@@ -507,6 +507,8 @@ For example, in order to display the weights of a given amino acid in the grid t
 <igx-column field="weight.residue"></igx-column>
 ```
 
+<!-- Angular -->
+
 Refer to the sample below for additional information. This type of binding supports all
 the default functionality that you would expect from the grid.
 That is all sorting and filtering operations work out of the box without any additional
@@ -515,11 +517,14 @@ configuration. Same goes for grouping and editing operations with or without tra
 >[!WARNING]
 >The grids **do not** support this kind of binding for `primary key`, `foreign key` and `child key` properties where applicable.
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
 </code-view>
+
+<!-- end: Angular -->
 
 <div class="divider--half"></div>
 

@@ -76,7 +76,10 @@ igRegisterScript("RowClassesHandler", () => {
 Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
+<!-- Angular -->
 ### Demo
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -84,6 +87,8 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
            github-src="{ComponentSample}/row-classes" >
 
 </code-view>
+
+<!-- end: Angular -->
 
 ### Using Row Styles
 

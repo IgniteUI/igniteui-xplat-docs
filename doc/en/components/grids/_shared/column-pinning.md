@@ -366,6 +366,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 ```
 ### Demo
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:506px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -323,7 +323,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel Style Filtering",
         "href": "grids/lob-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -341,7 +341,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Master Detail",
         "href": "grids/lob-grid/master-detail.md",
         "status": "NEW"
@@ -365,7 +365,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/lob-grid/remote-data-operations.md",
         "status": "NEW"
@@ -541,7 +541,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel Style Filtering",
         "href": "grids/hierarchical-grid/excel-style-filtering.md",
         "status": "NEW"

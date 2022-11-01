@@ -263,6 +263,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-styles"

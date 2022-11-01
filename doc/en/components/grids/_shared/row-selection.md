@@ -34,7 +34,7 @@ The sample below demonstrates the three types of `{ComponentName}`'s **row selec
 
 
 ## Setup
-In order to setup row selection in the `{ComponentName}`, you just need to set the `RowSelection` property. This property accepts `GridSelectionMode` enumeration. 
+In order to setup row selection in the `{ComponentName}`, you just need to set the `RowSelection` property. This property accepts `GridSelectionMode` enumeration.
 
 `GridSelectionMode` exposes the following modes:
 
@@ -431,22 +431,27 @@ This demo shows the usage of custom header and row selectors. The latter uses `R
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-numbering"
-           github-src="{ComponentSample}/selection-template-numbering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
+           github-src="{ComponentSample}/row-selection-template-numbers"
            alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
 </code-view>
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ### Excel Style Row Selectors Demo
 
 This demo uses custom templates to resemble Excel-like header and row selectors.
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:550px"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-excel"
-           github-src="{ComponentSample}/selection-template-excel"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
+           github-src="{ComponentSample}/row-selection-template-excel"
            alt="{Platform} {ComponentTitle} Selection Template Excel Example">
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
