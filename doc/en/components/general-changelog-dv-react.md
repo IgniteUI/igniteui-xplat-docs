@@ -15,10 +15,16 @@ Added significant improvements to default behaviors, and refined the Category Ch
 
 These new chart improvements include: 
 
-* Automatic responsive layouts for horizontal label rotation based on browser / screen size. 
-* Automatic crosshair, animations and Y-Axis labels and label formatting. 
+* Responsive layouts for horizontal label rotation based on browser / screen size. 
 * Enhanced rendering for rounded labels on all platforms. 
-* New API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
+* Added marker properties to StackedFragmentSeries.
+* Added `ShouldPanOnMaximumZoom` property.
+* New Category Axis Properties:
+    - ZoomMaximumCategoryRange
+    - ZoomMaximumItemSpan
+    - ZoomToCategoryRange
+    - ZoomToItemSpan
+* New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
   - InitialSortDescriptions 
   - InitialSorts
   - SortDescriptions
@@ -31,6 +37,9 @@ These new chart improvements include:
   - InitialGroupSortDescriptions
   - GroupSorts
   - GroupSortDescriptions
+
+> [!Note]
+[Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ### {PackageGrids}
 
