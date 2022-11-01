@@ -47,6 +47,8 @@ How to select cells:
 <!-- ComponentStart: Grid, TreeGrid -->
 #### Demo
 
+<!-- TODO sample does not load any data in Blazor -->
+
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"

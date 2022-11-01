@@ -406,6 +406,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

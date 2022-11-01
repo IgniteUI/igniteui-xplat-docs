@@ -375,6 +375,8 @@ The following sample demonstrates how to customize the exported files:
 </code-view>
 
 
+<!-- Angular -->
+
 ## Exporting Indicator
 
 When using the default toolbar exporter component, whenever an export operation takes place the toolbar will show a progress indicator while the operation is in progress.
@@ -383,12 +385,14 @@ Moreover, users can set the toolbar `ShowProgress` property and use for their ow
 
 The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button that simulates a long running operation in the grid:
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height: 370px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator" >
 </code-view>
 
+<!-- end: Angular -->
 
 ## Custom Content
 
@@ -412,7 +416,7 @@ Here is a sample snippet:
             Clear Sort
         </button>
 
-        <igx-grid-toolbar-actions>            
+        <igx-grid-toolbar-actions>
         </igx-grid-toolbar-actions>
     </igx-grid-toolbar>
 </{ComponentSelector}>
@@ -534,6 +538,7 @@ The last step is to **include** the newly created themes.
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
