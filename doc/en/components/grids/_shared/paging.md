@@ -170,6 +170,8 @@ TO-DO H-GRID CODE SNIPPET
 
 <div class="divider--half"></div>
 
+<!-- Angular -->
+
 ## Remote Paging
 
 Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentName}` construction and data subscription. For more detailed information, check the [`Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
@@ -181,6 +183,7 @@ Remote paging can be achieved by declaring a service, responsible for data fetch
 In some cases you may want to define your own paging behavior and this is when we can take advantage of the `PaginatorContent` and add our custom logic along with it. [This section](remote-data-operations.md#remote-paging-with-custom-igx-paginator-content) explains how we are going to extend the Remote Paging example in order to demonstrate this.
 
 <!-- ComponentEnd: Grid -->
+<!-- end: Angular -->
 
 <!-- Angular -->
 

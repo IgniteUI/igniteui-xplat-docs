@@ -216,11 +216,13 @@ The default value of `AND` returns only the rows that match all the currently ap
 
 When set to `OR`, a row will be returned when either the 'ProductName' cell value contains 'myproduct' or the 'Price' cell value is greater than 55.
 
+<!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 ## Remote Filtering
 
 The `{ComponentName}` supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
 <!-- ComponentEnd: Grid, TreeGrid -->
+<!-- end: Angular -->
 
 ## Custom Filtering Operands
 
