@@ -1303,6 +1303,11 @@
           "status": "UPDATED"
         },
         {
+          "name": "Chart Data Aggregations",
+          "href": "charts/features/chart-data-aggregations.md",
+          "status": "NEW"
+        },
+        {
           "name": "Chart Data Legend",
           "href": "charts/features/chart-data-legend.md",
           "status": "NEW"
