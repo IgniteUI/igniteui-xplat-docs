@@ -86,10 +86,6 @@ Additional API methods for controlling the expansion states are also exposed:
 | Details template will not be exported to Excel.| As the details template can contain any type of content we cannot export it to excel out of the box.|
 | The search feature will not hightlight elements from the details template. | |
 
-
-
-<div class="divider--half"></div>
-
 ## API References
 * `GridComponent`
 * `GridComponent Styles`

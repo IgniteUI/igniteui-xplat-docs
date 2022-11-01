@@ -520,9 +520,7 @@ configuration. Same goes for grouping and editing operations with or without tra
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
 </code-view>
 
-<div class="divider--half"></div>
-
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{ComponentName}` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
 
@@ -621,8 +619,6 @@ And the result from this configuration is:
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
 </code-view>
 
-<div class="divider--half"></div>
-
 ### Working with Flat data
 
 The flat data binding approach is similar to the one that we already described above, but instead of **cell value** we are going to use the `Data` property of the `GridRow`.
@@ -699,8 +695,6 @@ And the result is:
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
 </code-view>
 
-<div class="divider--half"></div>
-
 ## Keyboard Navigation
 
 The `Grid`'s keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
@@ -753,8 +747,6 @@ platformBrowserDynamic()
 | Columns have a minimum allowed column width. Depending on the `displayDensity` option, they are as follows: <br/>"compact": 56px <br/> "cosy": 64px <br/> "comfortable ": 80px | If width less than the minimum allowed is set it will not affect the rendered elements. They will render with the minimum allowed width for the corresponding `displayDensity`. This may lead to an unexpected behavior with horizontal virtualization and is therefore not supported.
 | Row height is not affected by the height of cells that are not currently rendered in view. | Because of virtualization a column with a custom template (that changes the cell height) that is not in the view will not affect the row height. The row height will be affected only while the related column is scrolled in the view.
 
-<div class="divider--half"></div>
-
 ## API References
 * `Grid`
 * `Column`
@@ -785,8 +777,6 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 ## Additional Resources
 
-<div class="divider--half"></div>
-
 * [Grid Sizing](../_shared/sizing.md)
 * [Virtualization and Performance](../_shared/virtualization.md)
 * [Paging](../_shared/paging.md)
@@ -799,8 +789,6 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 * [Selection](../_shared/selection.md)
 * [Column Data Types](../_shared/column-types.md#default-template)
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
-
-<div class="divider--half"></div>
 
 Our community is active and always welcoming to new ideas.
 

@@ -26,6 +26,8 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 
 <!-- end: Angular -->
 
+<!-- ComponentStart: Grid -->
+
 ```html
 <igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
@@ -34,8 +36,27 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 ```
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<IgbGrid @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+    <IgbPaginator PerPage="10"></IgbPaginator>
+</IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+    <igx-paginator [perPage]="10">
+    </igx-paginator>
+</igx-tree-grid>
+```
+
+```razor
+TO-DO TREEGRID CODE SNIPPET
+```
+
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
@@ -48,16 +69,7 @@ TO-DO GRID CODE SNIPPET
 TO-DO H-GRID CODE SNIPPET
 ```
 
-```html
-<igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ```html
 <igx-paginator #paginator [totalRecords]="20">
@@ -94,6 +106,8 @@ Integration between Paging and Group By is described in the [Group By](groupby.m
 
 The `Paginator` component is used along with the `{ComponentName}` component in the example below, but you can use it with any other component in case paging functionality is needed.
 
+<!-- ComponentStart: Grid -->
+
 ```html
 <igx-grid #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
@@ -103,8 +117,29 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 ```
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<IgbGrid @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+    </IgbPaginator>
+</IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<igx-tree-grid #treeGrid [data]="data">
+    <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
+            [selectOptions]="selectOptions" [displayDensity]="treeGrid.displayDensity">
+    </igx-paginator>
+</igx-tree-grid>
+```
+
+```razor
+TO-DO TREEGRID CODE SNIPPET
+```
+
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```html
 <igx-hierarchical-grid>
@@ -128,19 +163,6 @@ TO-DO GRID CODE SNIPPET
 TO-DO H-GRID CODE SNIPPET
 ```
 
-```html
-<igx-tree-grid #treeGrid [data]="data">
-    <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="treeGrid.displayDensity">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-
-<!-- ComponentStart: HierarchicalGrid -->
 ### Paginator Configuration within Child Grids
 
 Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:

@@ -301,21 +301,19 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## Additional Resources
 
-<div class="divider--half"></div>
-
 <!-- ComponentStart: TreeGrid -->
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
+* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)
+* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
+* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)
+* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
+* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)
+* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)
 <!-- ComponentEnd: Grid -->
 
 * [{ComponentTitle} Overview](overview.md)
@@ -327,8 +325,6 @@ Use the demo below to try out the custom scenarios that we just implemented:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
-<div class="divider--half"></div>
 
 Our community is active and always welcoming to new ideas.
 

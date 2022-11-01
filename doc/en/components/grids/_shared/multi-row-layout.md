@@ -50,12 +50,30 @@ The `Column` component exposes four `Input` properties to determine the location
 ```
 
 ```razor
-BLAZOR CODE SNIPPET
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" RowEnd="3" ColStart="1" Field="ID"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" ColEnd="3" Field="CompanyName"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" ColEnd="2" Field="ContactName"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="2" ColEnd="3" Field="ContactTitle"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" ColEnd="3" Field="Country"></IgbColumn>
+    <IgbColumn RowStart="1" ColStart="3" ColEnd="5" Field="Region"></IgbColumn>
+    <IgbColumn RowStart="1" ColStart="5" ColEnd="7" Field="PostalCode"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" ColEnd="4" Field="City"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="4" ColEnd="7" Field="Address"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" Field="Phone"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" Field="Fax"></IgbColumn>
+</IgbColumnLayout>
 ```
 
 The result of the above configuration can be seen on the screenshot below:
 
-<img src="../../images/multi-row-layout-1.png" style="width: 100%"/>
+<img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
 
 > [!Note]
 > `RowStart` and `ColStart` properties must be set for each `Column` into a `ColumnLayout`. The `ColumnLayout` component is not verifying if the layout is correct and not throwing errors or warnings about that. The developers must make sure that the declaration of their layout is correct and complete, otherwise they may end up in broken layout with misalignments, overlaps and browser inconsistencies.
@@ -119,7 +137,7 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 
 ### Layout Configurator
 
-Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the igxGrid when applied. You can do the following interactions with it:
+Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
 
 * Set number of rows for the whole configuration. All layouts must have the same amount of rows.
 * Add/Remove column layouts by clicking the `Add Layout` chip or reordering them by dragging a layout chip left/right.
