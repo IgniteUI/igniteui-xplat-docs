@@ -232,7 +232,7 @@
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["React"],
+    "exclude": ["Angular", "React"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids-header.md"
