@@ -1,7 +1,7 @@
 ---
 title: {Platform} Grids & Tables | Fastest {Platform} UI Grid | Infragistics
 _description: Looking for fast {Platform} grids and tables? Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
-_keywords: {Platform} data grid, Infragistics, Infragistics.com
+_keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics  
 ---
 <style>
 
