@@ -235,19 +235,19 @@
   {
     "exclude": ["Angular", "React", "WebComponents"],
     "name": "グリッド",
-    "href": "grids/lob-grid/overview.md",
+    "href": "grids/grid/overview.md",
     "status": "NEW",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "複数列ヘッダー",
-        "href": "grids/lob-grid/multi-column-headers.md",
+        "href": "grids/grid/multi-column-headers.md",
         "status": "NEW"
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Keyboard navigation",
-        "href": "grids/lob-grid/keyboard-navigation.md",
+        "href": "grids/grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]

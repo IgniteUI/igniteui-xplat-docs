@@ -1,6 +1,6 @@
 {
     "NOTE": "these entries are mapping {IgComponent} to variables defined in docConfig.json file",
-    "Grid" :             { "name": "Grid", "output": "lob-grid", "selectors": ["IgbGrid", "igx-grid", "igc-grid", "igr-grid"], "types": ["IgbGrid", "IgxGridComponent", "IgcGridComponent", "IgrGrid"] },
+    "Grid" :             { "name": "Grid", "output": "grid", "selectors": ["IgbGrid", "igx-grid", "igc-grid", "igr-grid"], "types": ["IgbGrid", "IgxGridComponent", "IgcGridComponent", "IgrGrid"] },
     "TreeGrid" :         { "name": "TreeGrid", "output": "tree-grid", "selectors": ["IgbTreeGrid", "igx-tree-grid", "igc-tree-grid", "igr-tree-grid"], "types": ["IgbTreeGrid", "IgxTreeGridComponent", "IgcTreeGridComponent", "IgrTreeGrid"] },
     "PivotGrid" :        { "name": "PivotGrid","output": "pivot-grid", "selectors": ["IgbPivotGrid", "igx-pivot-grid", "igc-pivot-grid", "igr-pivot-grid"], "types": ["IgbPivotGrid", "IgxPivotGridComponent", "IgcPivotGridComponent", "IgrPivotGrid"] },
     "HierarchicalGrid" : { "name": "HierarchicalGrid", "output": "hierarchical-grid", "selectors": ["IgbHierarchicalGrid", "igx-hierarchical-grid", "igc-hierarchical-grid", "igr-hierarchical-grid"], "types": ["IgbHierarchicalGrid", "IgxHierarchicalGridComponent", "IgcHierarchicalGridComponent", "IgrHierarchicalGrid"] }
