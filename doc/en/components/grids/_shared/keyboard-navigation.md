@@ -315,21 +315,6 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## Additional Resources
 
-<!-- ComponentStart: TreeGrid -->
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: Grid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)
-<!-- ComponentEnd: Grid -->
-
 * [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
