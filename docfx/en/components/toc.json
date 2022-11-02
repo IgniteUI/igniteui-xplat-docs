@@ -159,7 +159,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": "NEW"
@@ -205,7 +205,7 @@
     "href": "layouts/expansion-panel.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
     "status": "NEW"
@@ -1659,6 +1659,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Select",
+    "status": "NEW",
     "href": "inputs/select.md"
   },
   {
