@@ -38,9 +38,13 @@ In most cases, letting the grid apply its default behavior by leaving dimensions
 
 Explicitly setting column widths in percentages (%) will, in most cases, create a grid that is not virtualized horizontally as it will not have a horizontal scrollbar.
 
+<!-- Angular -->
+
 ## Remote Virtualization
 
 The `{ComponentName}` supports remote virtualization, which is demonstrated in the [`Remote Data Operations`](remote-data-operations.md) topic.
+
+<!-- end: Angular -->
 
 ## Virtualization Limitations
 

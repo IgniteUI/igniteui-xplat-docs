@@ -339,6 +339,12 @@
         "status": "NEW"
       },
       {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Keyboard navigation",
+        "href": "grids/lob-grid/keyboard-navigation.md",
+        "status": "NEW"
+      },
+      {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Master Detail",
         "href": "grids/lob-grid/master-detail.md",
@@ -444,12 +450,6 @@
         "exclude": ["Angular", "React", "WebComponents"],
         "name": "Virtualization and performance",
         "href": "grids/lob-grid/virtualization.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Keyboard navigation",
-        "href": "grids/lob-grid/keyboard-navigation.md",
         "status": "NEW"
       }
     ]
