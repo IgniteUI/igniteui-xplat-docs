@@ -231,7 +231,7 @@
     "href": "grids/grids.md"
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular", "React"],
     "name": "Grid",
     "href": "grids/grid/overview.md",
     "status": "NEW",
