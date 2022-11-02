@@ -37,6 +37,8 @@ The following sample demonstrates how to use the prebuilt `Required`, `Email` an
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
+<!-- Angular -->
+
 ### Configure via Reactive Forms
 
 We expose the `FormGroup` that will be used for validation when editing starts on a row/cell via a `formGroupCreated` event. You can modify it by adding your own validators for the related fields:
@@ -60,7 +62,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-```razor
+```ts
     public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const orderDateRecord = formGroup.get('OrderDate');
@@ -75,7 +77,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
-```razor
+```ts
    public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const hireDateRecord = formGroup.get('HireDate');
@@ -83,8 +85,6 @@ We expose the `FormGroup` that will be used for validation when editing starts o
     }
 ```
 <!-- ComponentEnd: TreeGrid -->
-
-<!-- Angular -->
 
 You can decide to write your own validator function, or use one of the [built-in {Platform} validator functions](https://{Platform}.io/guide/form-validation#built-in-validator-functions).
 
@@ -113,13 +113,15 @@ Validation will be triggered in the following scenarios:
 
 > Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
 
+<!-- Angular -->
+
 ## {Platform} {ComponentTitle} Validation Customization Options
 
 ### Set a custom validator
 
 You can define your own validation directive to use on a `Column` in the template.
 
-```razor
+```ts
 @Directive({
     selector: '[phoneFormat]',
     providers: [{ provide: NG_VALIDATORS, useExisting: PhoneFormatDirective, multi: true }]
@@ -167,7 +169,7 @@ Both events' arguments have a `Valid` property and can be canceled accordingly.
 <{ComponentInstance} (cellEdit)='cellEdit($event)'>
 ```
 
-```razor
+```ts
 public cellEdit(evt) {
   if (!evt.valid) {
     evt.cancel = true;
@@ -319,7 +321,7 @@ The below sample demonstrates the cross-field validation in action.
 
 Cross-field validators can be added to the formGroup on the `FormGroupCreated` event. In them multiple fields can be compared for validity.
 
-```razor
+```ts
   public formCreateCustomerHandler(event: IGridFormGroupCreatedEventArgs) {
         const formGroup = event.formGroup;
         formGroup.addValidators(this.addressValidator());
@@ -382,7 +384,7 @@ The multi-field errors can then be displayed in a separate pinned column.
 
 Errors and the detailed messages can be determined based on the row and cell's validity.
 
-```razor
+```ts
     public isRowValid(cell: IgxGridCell) {
         const hasErrors = !!cell.row.validation.errors || cell.row.cells.some(x => !!x.validation.errors);
         return !hasErrors;
@@ -427,7 +429,7 @@ The below sample demonstrates a cross-field validation between different field o
 
 The next lines of code show the cross-field validator function, which contains comparisons described above and sets the related errors.
 
-```razor
+```ts
 private rowValidator(): ValidatorFn {
     return (formGroup: FormGroup): ValidationErrors | null => {
         let returnObject = {};
@@ -526,8 +528,6 @@ The below sample demonstrates the cross-field validation in action.
 
 <!-- ComponentEnd:TreeGrid -->
 
-<!-- Angular -->
-
 ## Styling
 
 Using the [Ignite UI for {Platform} Theme Library](../themes/index.md), we can alter the default validation styles while editing.
@@ -568,7 +568,7 @@ Changing the default error template allows setting custom classes and styles:
 
 Rows and cells provide API for the developers to know if a row or cell is invalid and what kind of errors are active.
 <!-- ComponentStart:Grid -->
-```razor
+```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };
@@ -587,7 +587,7 @@ public cellStyles = {
 <!-- ComponentEnd:Grid -->
 
 <!-- ComponentStart:HierarchicalGrid -->
-```razor
+```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };

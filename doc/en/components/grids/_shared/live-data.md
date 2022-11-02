@@ -20,31 +20,39 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
            alt="Angular Live-data Update Example">
 </code-view>
+
 <!-- end: Angular -->
-
-
 ## Data binding and updates
 
 A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
 
-```html
-<igx-grid #grid [data]="data"></igx-grid>
+```Razor
+<IgbDataGrid data="data"><IgbDataGrid>
 ```
 
+```html
+<{ComponentSelector} [data]="data"></{ComponentSelector}>
+```
+
+
 ```typescript
-public ngOnInit() {
     this.localService.getData(this.volume);
     this.volumeSlider.onValueChange.subscribe(x => this.localService.getData(this.volume);
     this.localService.records.subscribe(x => { this.data = x; });
-}
 ```
 
-Angular pipes are used internally to update the grid view. A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding), because the Angular pure pipe will not detect a change in a nested property. To resolve the situation, provide a new object reference for the data object containing the property. Example:
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+
+```Razor
+<IgbDataGrid data="data">
+    <IgbTextColumn field="price.usd"/>
+</IgbDataGrid>
+```
 
 ```html
-<igx-grid #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-column field="price.usd"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```typescript
@@ -63,10 +71,8 @@ Updating the view works the same way for columns with a default template and for
 
 <!-- Angular -->
 ## Live-data feed with Dock Manager and igxGrid Components
-
 The purpose of this demo is to showcase a financial screen board with Real-time data stream using a [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) hub back-end.
 As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
-
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
@@ -78,7 +84,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
 
 The signal-r.service handles the connectivity and updates of the exposed manageable parameters *frequency*, *volume* and *live-update state toggle* (Start/Stop).
 
-```razor
+```ts
 this.hubConnection = new signalR.HubConnectionBuilder()
         .configureLogging(signalR.LogLevel.Trace)
         .withUrl('https://www.infragistics.com/angular-apis/webapi/streamHub')
@@ -101,7 +107,7 @@ By using the Action panel on the left, you can manage the frequency of the data 
 
 We use the `updateParameters` method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
 
-```razor
+```ts
 this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll)
     .then(() => console.log('requestLiveData', volume))
     .catch(err => {
@@ -118,7 +124,7 @@ Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build y
 
 ## API References
 * `{ComponentName}`
-* `IgxGridCell`
+* `Cell`
 * `BaseTransactionService`
 
 ## Additional Resources
