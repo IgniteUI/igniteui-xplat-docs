@@ -9,7 +9,7 @@ _keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, 
 
 The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
 
-## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
+## {Platform} {ComponentTitle} Multi-Column Headers Example
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -31,6 +31,8 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </igx-column-group>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: Grid -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -55,6 +57,8 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </{ComponentSelector}>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
     <IgbColumnGroup Header="Contact Information">
@@ -66,6 +70,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -88,7 +93,8 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 
 ```razor
 TO-DO H-GRID CODE SNIPPET
-```
+``` 
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 For achieving `n-th` level of nested headers, the declaration above should be followed. So by nesting `ColumnGroup` leads to the desired result.
@@ -106,6 +112,8 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </igx-column-group>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: Grid -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -134,6 +142,8 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </igx-column-group>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: TreeGrid -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -164,6 +174,8 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </igx-hierarchical-grid>
 ```
 
+<!-- ComponentStart: HierarchicalGrid -->
+
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
@@ -189,6 +201,8 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 
+<!-- ComponentStart: Grid -->
+
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
     <IgbColumnGroup Header="General Information" Pinned=true>
@@ -213,6 +227,8 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
     <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+
+<!-- ComponentStart: TreeGrid -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -240,6 +256,8 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
     </igx-column-group>
 </igx-hierarchical-grid>
 ```
+
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```razor
 TO-DO H-GRID CODE SNIPPET
@@ -292,6 +310,8 @@ The expression is provided with the column group object as a context.
 }
 ```
 
+<!-- Angular -->
+
 > [!NOTE]
 > If a header is retemplated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
@@ -324,7 +344,6 @@ The following sample demonstrates how to implement collapsible column groups usi
            alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
 
-<!-- Angular -->
 
 ## Styling
 
