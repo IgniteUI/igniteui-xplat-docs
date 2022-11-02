@@ -62,6 +62,16 @@ Afterwards, you may start implementing the control by adding the following names
 
 <!-- end: Blazor -->
 
+<!-- Angular, React, WebComponents -->
+When installing the {Platform} grid package, the core package must also be installed.
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npm install --save {PackageCore}
+npm install --save {PackageGrids}
+npm install --save {PackageInputs}
+</pre>
+<!-- end: Angular, React, WebComponents -->
+
 ### Component Modules
 
 ```razor
@@ -69,6 +79,18 @@ Afterwards, you may start implementing the control by adding the following names
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
+<!-- WebComponents -->
+
+```ts
+import { ModuleManager } from 'igniteui-webcomponents-core';
+import { IgcGridModule } from 'igniteui-webcomponents-grids';
+import { IgcGridComponent } from 'igniteui-webcomponents-core';
+
+ModuleManager.register(
+    IgcGridModule
+);
+```
+<!-- end: WebComponents -->
 
 ### Usage
 
@@ -76,6 +98,15 @@ Now that we have the grid package imported, let’s get started with the basic c
 
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
+```
+```html
+<igc-grid id="grid1" [data]="localData" auto-generate="true"></igc-grid>
+```
+```ts
+constructor() {
+    let grid1 = (document.getElementById("grid1") as IgcGridComponent);
+    grid1.data = data;
+}
 ```
 
 The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
@@ -114,6 +145,34 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
     </igx-paginator>
 </igx-grid>
 ```
+```html
+<igc-grid id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="Name" sortable="true" header=" "></igc-column>
+    <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false">
+    </igc-column>
+    <igc-paginator per-page="6">
+    </igc-paginator>
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var trackProgress = this.trackProgress = document.getElementById('trackProgress') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.columnInit = this.gridColumnInit;
+        grid1.selected = this.gridSelected;
+        trackProgress.bodyTemplate = this.trackProgressCellTemplate;
+    }
+    this._bind();
+}
+
+public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}" ></igc-linear-bar>`;
+}
+```
 
 <!-- Angular -->
 
@@ -146,6 +205,30 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="name" field="Name">
+</igc-column>
+```
+```ts
+constructor() {
+    var name = this.name = document.getElementById('name') as IgcColumnComponent;
+
+    this._bind = () => {
+        name.headerTemplate = this.nameHeaderTemplate;
+    }
+    this._bind();
+}
+
+public nameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.formattUppercase(ctx.cell.value)}
+    `;
+}
+
+public formattUppercase(value: string) {
+    return value.toUpperCase();
+}
+```
 
 >[!NOTE]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
@@ -160,6 +243,29 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
+
+    this._bind = () => {
+        productName.headerTemplate = this.productNameHeaderTemplate;
+    }
+    this._bind();
+}
+public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="text">${ctx.cell.column.field}</div>
+        <igx-icon click="${toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igx-icon>
+    `;
+}
+
+public toggleSummary(column: IgxColumnComponent) {
+}
+```
 As you can see, we are adding `Draggable` attribute set to false.
 
 ### Cell Template
@@ -172,6 +278,29 @@ As you can see, we are adding `Draggable` attribute set to false.
         {{ value | titlecase }}
     </ng-template>
 </igx-column>
+```
+```html
+<igc-column id="name" field="Name">
+</igc-column>
+```
+```ts
+constructor() {
+    var name = this.name = document.getElementById('name') as IgcColumnComponent;
+
+    this._bind = () => {
+        name.bodyTemplate = this.nameCellTemplate;
+    }
+    this._bind();
+}
+
+public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.formatTitlecase(ctx.cell.value)}
+    `;
+}
+
+public formatTitlecase(value: string) {;
+}
 ```
 
 In the snippet above we take a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
@@ -191,6 +320,49 @@ In the snippet above we take a reference to the implicitly provided cell value. 
         </ng-template>
     </igx-column>
 <igx-grid>
+```
+```html
+<igc-grid id="grid" auto-generate="false">
+    <igc-column id="name" field="Name" data-type="string">
+    </igc-column>
+    <igc-column id="subscribtion" field="Subscribtion" data-type="boolean">
+    </igc-column>
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var name = this.name = document.getElementById('name') as IgcColumnComponent;
+    var subscribtion = this.subscribtion = document.getElementById('subscribtion') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        name.bodyTemplate = this.nameCellTemplate;
+        subscribtion.bodyTemplate = this.subscribtionCellTemplate;
+    }
+    this._bind();
+}
+
+public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitlecase(ctx.cell.value)}</span>    
+    `;
+}
+
+public subscribtionCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />   
+    `;
+}
+
+public updateValue(value: boolean){
+}
+
+public deleteRow(rowId: number){
+}
+
+public formatTitlecase(value: string) {;
+}
 ```
 
 <!-- Angular -->
@@ -225,6 +397,32 @@ to set the `Editable` property of the `Column` to true.
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="price" field="Price" data-type="number" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var price = this.price = document.getElementById('price') as IgcColumnComponent;
+
+    this._bind = () => {
+        price.inlineEditorTemplateRef = this.priceCellTemplate;
+    }
+    this._bind();
+}
+
+public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <label>
+            Enter the new price tag
+        </label>
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />    
+    `;
+}
+
+public updateValue(value: number){
+}
+```
 
 Make sure to check the API for the `GridCell` in order to get accustomed with the provided properties you can use in your templates.
 
@@ -246,7 +444,7 @@ Each of the column templates can be changed programmatically at any point throug
     <div class="user-details-small">{{ val }}</div>
 </ng-template>
 ```
-
+<!-- Angular -->
 ```typescript
 @ViewChild("normalView", { read: TemplateRef })
 public normalView: TemplateRef<any>;
@@ -261,12 +459,46 @@ const column = this.grid.getColumnByName("User");
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = this.smallView;
 ```
+<!-- end: Angular -->
+```html
+<igc-grid>
+    <!-- Column declarations -->
+</igc-grid>
+```
+```ts
+var user = this.user = document.getElementById('user') as IgcColumnComponent;
+// Return the appropriate template based on some conditiion.
+// For example saved user settings, viewport size, etc.
+user.bodyTemplate = this.smallView;
+
+public normalViewTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="user-details">${ ctx.cell.value }</div>
+        <user-details-component></user-details-component>    
+    `;
+}
+
+public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="user-details-small">${ ctx.cell.value }</div>   
+    `;
+}
+```
 
 Column properties can also be set in code in the `ColumnInit` event which is emitted when the columns are initialized in the grid.
 
 ```typescript
 public initColumns(column: IgxGridColumn) {
     const column: IgxColumnComponent = column;
+    if (column.field === 'ProductName') {
+        column.sortable = true;
+        column.editable = true;
+    }
+}
+```
+```ts
+public initColumns(column: IgcGridColumn) {
+    const column: IgcGridComponent = column;
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
@@ -285,7 +517,7 @@ There are optional parameters for formatting:
 - `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
 
 To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
-
+<!-- Angular -->
 ```typescript
 const pipeArgs: IColumnPipeArgs = {
      format: 'longDate',
@@ -293,9 +525,36 @@ const pipeArgs: IColumnPipeArgs = {
      digitsInfo: '1.1-2'
 }
 ```
+<!-- end: Angular -->
 ```html
 <igx-column field="OrderDate" dataType="date" [pipeArgs]="pipeArgs"></igx-column>
 <igx-column field="UnitPrice" dataType="number" [pipeArgs]="pipeArgs"></igx-column>
+```
+```ts
+private _columnPipeArgs: any | null = null;
+    public get columnPipeArgs(): any {
+        if (this._columnPipeArgs == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.format = "longDate";
+            columnPipeArgs.timezone = "UTC";
+            columnPipeArgs.digitsInfo = "1.2-2"
+            this._columnPipeArgs = columnPipeArgs;
+        }
+        return this._columnPipeArgs;
+    }
+
+constructor() {
+    var orderDate = this.orderDate = document.getElementById('OrderDate') as IgcColumnComponent;
+
+    this._bind = () => {
+        orderDate.pipeArgs = this.columnPipeArgs;
+    }
+    this._bind();
+}
+```
+```html
+<igc-column id="OrderDate" field="OrderDate" data-type="date"></igc-column>
 ```
 
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
@@ -352,6 +611,7 @@ Before going any further with the grid we want to change the grid to bind to rem
 
 Let's implement our service in a separate file
 
+<!-- Angular -->
 ```typescript
 // northwind.service.ts
 
@@ -361,6 +621,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map } from 'rxjs/operators';
 ```
+<!-- end: Angular -->
 
 We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every {Platform} service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
 
@@ -392,6 +653,7 @@ export interface NorthwindRecord {
 
 The service itself is pretty simple consisting of one method: `FetchData` that will return an `Observable<NorthwindRecord[]>`. In cases when the request fails for any reason (server unavailable, network error, etc), the `HttpClient` will return an error. We'll leverage the `CatchError` operator which intercepts an Observable that failed and passes the error to an error handler. Our error handler will log the error and return a safe value.
 
+<!-- Angular -->
 ```typescript
 // northwind.service.ts
 
@@ -420,9 +682,11 @@ export class NorthwindService {
     }
 }
 ```
+<!-- end: Angular -->
 
 Make sure to import both the `HttpClientModule` and our service in the application module and register the service as a provider.
 
+<!-- Angular -->
 ```typescript
 // app.module.ts
 
@@ -439,6 +703,7 @@ import { NorthwindService } from './northwind.service';
 })
 export class AppModule {}
 ```
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -448,6 +713,7 @@ After implementing the service we will inject it in our component's constructor 
 
 **Note**: In the code below, you may wonder why are we setting the _records_ property to an empty array before subscribing to the service. The Http request is asynchronous, and until it completes, the _records_ property will be _undefined_ which will result in an error when the grid tries to bind to it. You should either initialize it with a default value or use a `BehaviorSubject`.
 
+<!-- Angular -->
 ```typescript
 // my.component.ts
 
@@ -466,6 +732,7 @@ export class MyComponent implements OnInit {
     }
 }
 ```
+<!-- end: Angular -->
 
 and in the template of the component:
 
@@ -506,6 +773,10 @@ For example, in order to display the weights of a given amino acid in the grid t
 <igx-column field="weight.molecular"></igx-column>
 <igx-column field="weight.residue"></igx-column>
 ```
+```html
+<igc-column field="weight.molecular"></igc-column>
+<igc-column field="weight.residue"></igc-column>
+```
 
 <!-- Angular -->
 
@@ -544,6 +815,39 @@ and interpolate it those in the template.
         </div>
     </ng-template>
 </igx-column>
+```
+```html
+<igc-column id="abbreviationLong" field="abbreviation.long">
+</igc-column>
+```
+```ts
+constructor() {
+    var abbreviationLong = this.abbreviationLong = document.getElementById('abbreviationLong') as IgcColumnComponent;
+
+    this._bind = () => {
+        abbreviationLong.bodyTemplate = this.abbreviationLongCellTemplate;
+    }
+    this._bind();
+}
+
+public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div>
+            <div>
+                ${ ctx.cell.value }
+                ${ this.getName(ctx.cell.id) }
+                ${ this.getWeight(ctx.cell.id) }
+            </div>
+        </div>
+    `;
+}
+
+public getName(rowId: number){
+    //row.data['name']
+}
+public getWeight(rowId: number){
+    //row.data['weight']['molecular'] 
+}
 ```
 
 Below is the data that we are going to use:
@@ -616,6 +920,55 @@ The custom template for the column, that will render the nested data:
         </ng-template>
  </igx-column>
 ```
+```html
+<igc-column id="Employees" field="Employees" header="Employees" width="40%">
+</igc-column>
+```
+```ts
+constructor() {
+    var employees = this.employees = document.getElementById('Employees') as IgcColumnComponent;
+
+    this._bind = () => {
+        employees.bodyTemplate = this.employeesCellTemplate;
+    }
+    this._bind();
+}
+
+public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="employees-container">
+            <igc-expansion-panel >
+                <igc-expansion-panel-header iconPosition="right">
+                    <igc-expansion-panel-description>
+                        ${this.getName(ctx.cell.id)}
+                    </igc-expansion-panel-description>
+                </igc-expansion-panel-header>
+                <igc-expansion-panel-body>
+                    <div class="description">
+                        <igc-input-group keydown="${this.stop()}" display-density="compact">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" value="${this.getTitle(ctx.cell.id)}" style="text-overflow: ellipsis;" />
+                        </igc-input-group>
+                        <igc-input-group keydown="${this.stop()}" display-density="compact" style="width: 15%;">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" value="${this.getAge(ctx.cell.id)}" />
+                        </igc-input-group>
+                    </div>
+                </igc-expansion-panel-body>
+            </igc-expansion-panel>
+        </div>
+    `;
+}
+
+public stop() {
+}
+public getName(rowId: number) {
+}
+public getTitle(rowId: number) {
+}
+public getAge(rowId: number) {
+}
+```
 
 And the result from this configuration is:
 
@@ -666,6 +1019,41 @@ The custom template:
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="Address" field="Address" header="Address" width="25%" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var address = this.address = document.getElementById('Address') as IgcColumnComponent;
+
+    this._bind = () => {
+        address.bodyTemplate = this.addressCellTemplate;
+    }
+    this._bind();
+}
+
+public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="address-container">
+        // In the Address column combine the Country, City and PostCode values of the corresponding data record
+            <span><strong>Country:</strong> ${this.getName(ctx.cell.id)}</span>
+            <br/>
+            <span><strong>City:</strong> ${this.getCity(ctx.cell.id)}</span>
+            <br/>
+            <span><strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}</span>
+        </div>
+    `;
+}
+
+public getCountry(rowId: number){
+}
+public getCity(rowId: number){
+}
+public getPostalCode(rowId: number){
+}
+```
+
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
 
 ```html
@@ -692,6 +1080,53 @@ Keep in mind that with the above defined template you will not be able to make e
             </div>
     </ng-template>
 </igx-column>
+```
+```html
+<igc-column id="Address" field="Address" data-type="number" width="25%" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var address = this.address = document.getElementById('Address') as IgcColumnComponent;
+
+    this._bind = () => {
+        address.inlineEditorTemplateRef = this.addressEditCellTemplate;
+    }
+    this._bind();
+}
+
+public addressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <div class="address-container">
+            <span>
+                <strong>Country:</strong> ${this.getName(ctx.cell.id)}
+                <igc-input-group width="100%">
+                        <input onchange="${this.updateCountry(ctx.cell.id)}" />
+                </igc-input-group>
+            </span>
+            <br/>
+            <span>
+                <strong>City:</strong> ${this.getCity(ctx.cell.id)}</span>
+                <igxc-input-group width="100%">
+                        <input onchange="${this.updateCity(ctx.cell.id)}" />
+                </igc-input-group>
+            <br/>
+            <span>
+                <strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}</span>
+                <igc-input-group width="100%">
+                        <input onchange="${this.updatePostalCode(ctx.cell.id)}" />
+                </igc-input-group>
+            <br/>
+        </div>
+    `;
+}
+
+public updateCountry(rowId: number){
+}
+public updateCity(rowId: number){
+}
+public updatePostalCode(rowId: number){
+}
 ```
 
 And the result is:
