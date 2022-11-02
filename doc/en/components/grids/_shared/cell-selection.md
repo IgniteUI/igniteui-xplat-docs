@@ -247,11 +247,14 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 * `{ComponentName}`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
+* `GridRow`
+
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
+
 * `TreeGridRow`
+
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
 

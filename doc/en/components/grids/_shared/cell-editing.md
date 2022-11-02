@@ -425,7 +425,7 @@ In this example, we'll validate a cell based on the data entered in it by bindin
 event.cancel = true
 ```
 
-We'll also display a custom error message using [`Toast`](../toast.md).
+We'll also display a custom error message using [Toast](../../notifications/toast.md) .
 
 The first thing we need to is bind to the grid's event:
 
@@ -609,13 +609,17 @@ In addition to the steps above, we can also style the controls that are used for
 
 ## API References
 
-* `GridCell`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
+
 * `GridRow`
+
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
+
 * `TreeGridRow`
+
 <!-- ComponentEnd: TreeGrid -->
+* `GridCell`
 * `InputDirective`
 * `DatePickerComponent`
 
