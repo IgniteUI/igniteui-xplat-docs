@@ -159,7 +159,7 @@
     "header": true
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Accordion",
     "href": "layouts/accordion.md",
     "status": "NEW"
@@ -205,7 +205,7 @@
     "href": "layouts/expansion-panel.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
     "status": "NEW"
@@ -226,12 +226,19 @@
     "href": "menus/navigation-drawer.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
   },
   {
     "exclude": ["Angular", "React"],
+    "name": "Grids & Lists",
+    "header": true,
+    "href": "grids/grids-header.md"
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
     "name": "Grid",
     "href": "grids/grid/overview.md",
     "status": "NEW",
@@ -1652,6 +1659,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Select",
+    "status": "NEW",
     "href": "inputs/select.md"
   },
   {

@@ -29,7 +29,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
 
-```razor
+```ts
 // app.module.ts
 import { ExcelExporterService } from 'igniteui-{Platform}';
 
@@ -53,11 +53,16 @@ To initiate an export process you may use the handler of a button in your compon
 <button (click)="exportButtonHandler()">Export {ComponentTitle} to Excel</button>
 ```
 
+```Razor
+<IgbDataGrid data="localData"/>
+<button click="exportButtonHandler()">Export to Excel</button>
+```
+
 You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
 
-Here is the code which will execute the export process in the component's razor file:
+Here is the code which will execute the export process in the component's file:
 
-```razor
+```ts
 // component.ts
 import { ExcelExporterService, ExcelExporterOptions } from 'igniteui-{Platform}';
 import { {Component} } from 'igniteui-{Platform}';
@@ -117,7 +122,7 @@ It is now possible to export {Component} with defined [multi-column headers](mul
 
 By default Excel Exporter service exports the grid with scrollable (unfrozen) column headers. There are scenarios in which you may want to freeze all headers on top of the exported excel file so they always stay in view as the user scrolls through the records. To achieve this you could set the `ExporterOption` `FreezeHeaders` to `true`.
 
-```razor
+```ts
 public exportButtonHandler() {
     const exporterOptions = new ExcelExporterOptions('ExportedDataFile');
     exporterOptions.freezeHeaders = true;
@@ -131,7 +136,7 @@ In the above examples the Excel Exporter service was exporting all available dat
 
 The following example will exclude a column from the export if its header is "Age" and if its index is 1:
 
-```razor
+```ts
 // component.ts
 
 this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventArgs) => {
@@ -173,7 +178,7 @@ When you are exporting data from the {Component} component, the export process t
 npm install --save setimmediate
 ```
 
-```razor
+```ts
 import 'setimmediate';
 ```
 

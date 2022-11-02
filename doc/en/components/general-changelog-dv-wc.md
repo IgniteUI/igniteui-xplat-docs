@@ -14,6 +14,13 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 ## **{PackageVerChanges-22-2}**
 
+### New Components
+
+* [Grid](grids/grid/overview.md)
+* [TreeGrid](grids/tree-grid/overview.md)
+
+### {PackageCharts}
+
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
 
 These new chart improvements include: 

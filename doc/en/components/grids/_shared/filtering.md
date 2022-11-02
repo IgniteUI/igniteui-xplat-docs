@@ -335,11 +335,12 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
            alt="{Platform} {ComponentTitle} Custom Filtering Example">
 </code-view>
 
-<!-- end: Angular -->
 
 ## Re-templating Filter Cell
 
 You can add a template marked with `FilterCellTemplate` in order to retemplate the filter cell. In the sample below, an input is added for the string columns and `DatePicker` for the date column. When the user types or selects a value, a filter with contains operator for string columns and equals operator for date columns, is applied using grid's public API.
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -347,6 +348,8 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
            github-src="{ComponentSample}/filtering-template"
            alt="{Platform} {ComponentTitle} Filtering Template Example">
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentStart: TreeGrid -->
 

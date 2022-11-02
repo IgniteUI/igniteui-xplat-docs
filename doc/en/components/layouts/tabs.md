@@ -21,11 +21,13 @@ The {ProductName} Tabs organizes and switches between similar data sets. The tab
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 Before using the `Tabs`, you need to register it as follows:
@@ -69,15 +71,15 @@ Simple `Tabs` declaration is done as follows:
 
 ### Selection
 
-The `Tabs` emits `igcChange` event when the user selects an item either by key press or click. The `select` method allows you to select a tab by specifying its panel as string value.
+The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying its panel as string value.
 
 If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
+The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `Activation` property. Setting it to `Manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
 
 ### Disabled Tab
 
-A tab is disabled by setting the `disabled` attribute:
+A tab is disabled by setting the `Disabled` attribute:
 
 ```html
 <igc-tab panel="first" disabled>Tab 1</igc-tab>
@@ -89,12 +91,12 @@ A tab is disabled by setting the `disabled` attribute:
 
 ### Alignment
 
-The `alignment` property controls how tabs are positioned. It accepts the following values:
+The `Alignment` property controls how tabs are positioned. It accepts the following values:
 
-- `start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
-- `center`: the width of the tab depends on the content and occupies the tabs container's center.
-- `end`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
-- `justify`: all tabs are equal in width and fully fit the tabs container.
+- `Start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
+- `Center`: the width of the tab depends on the content and occupies the tabs container's center.
+- `End`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
+- `Justify`: all tabs are equal in width and fully fit the tabs container.
 
 If the space is not enough to fit all tabs, scroll buttons are displayed.
 
@@ -120,11 +122,11 @@ Scroll buttons are shown when the available space is not enough to render all ta
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to end if on first tab.  |
-| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to start if on last tab. |
+| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
+| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
 | <kbd>Home</kbd> | Selects the first tab. |
 | <kbd>End</kbd> | Selects the last tab. |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `activation` is `manual` |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `Activation` is `Manual` |
 
 ### Prefix / Suffix
 
@@ -170,8 +172,6 @@ igc-tab::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
 ## API Reference
 
 * `Tabs`
@@ -179,24 +179,12 @@ igc-tab::part(base) {
 * `TabPanel`
 
 Additional components and/or directives that were used:
+
 * `Icon`
 * `IconButton`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
-
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} Examples on **GitHub**](https://github.com/IgniteUI/igniteui-{Platform}-examples)
