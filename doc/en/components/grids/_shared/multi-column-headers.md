@@ -32,8 +32,6 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid -->
-
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
     <IgbColumnGroup Header="Contact Information">
@@ -45,6 +43,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -56,8 +55,6 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </igx-column-group>
 </{ComponentSelector}>
 ```
-
-<!-- ComponentStart: TreeGrid -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -93,7 +90,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 
 ```razor
 TO-DO H-GRID CODE SNIPPET
-``` 
+```
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -113,8 +110,6 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid -->
-
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
     <IgbColumnGroup Header="General Information">
@@ -128,6 +123,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -143,8 +139,6 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: TreeGrid -->
-
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
     <IgbColumnGroup Header="General Information">
@@ -159,6 +153,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -173,8 +168,6 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </igx-column-group>
 </igx-hierarchical-grid>
 ```
-
-<!-- ComponentStart: HierarchicalGrid -->
 
 ```razor
 TO-DO H-GRID CODE SNIPPET
@@ -201,8 +194,6 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: Grid -->
-
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
     <IgbColumnGroup Header="General Information" Pinned=true>
@@ -215,6 +206,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 ```
 
 <!-- ComponentEnd: Grid -->
+
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -228,8 +220,6 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 
-<!-- ComponentStart: TreeGrid -->
-
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
     <IgbColumnGroup Header="General Information">
@@ -242,6 +232,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -256,8 +247,6 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
     </igx-column-group>
 </igx-hierarchical-grid>
 ```
-
-<!-- ComponentStart: HierarchicalGrid -->
 
 ```razor
 TO-DO H-GRID CODE SNIPPET
@@ -313,7 +302,7 @@ The expression is provided with the column group object as a context.
 <!-- Angular -->
 
 > [!NOTE]
-> If a header is retemplated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
+> If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
 ```html
 <ng-template igxHeader>
@@ -328,7 +317,7 @@ The expression is provided with the column group object as a context.
         {
             { "draggable", "false" }
         };
-        
+
     public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
         return @<IgbIcon AdditionalAttributes="DraggableAttributes"  @onclick="onClick"/>;
     };
@@ -383,7 +372,7 @@ The last step is to **include** the component mixins:
 
 ### Defining a Color Palette
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the `igx-palette` and `igx-color`functions.
+Instead of hard-coding the color values like we just did, we can achieve greater flexibility in terms of colors by using the `igx-palette` and `igx-color`functions.
 
 `igx-palette` generates a color palette based on the primary and secondary colors that are passed:
 
