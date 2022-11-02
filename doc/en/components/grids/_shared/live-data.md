@@ -9,6 +9,7 @@ sharedComponents: ["Grid", "TreeGrid"]
 
 The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
 
+<!-- Angular -->
 ## {Platform} Live-data Update Example
 
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
@@ -20,7 +21,7 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
            alt="Angular Live-data Update Example">
 </code-view>
 
-
+<!-- end: Angular -->
 ## Data binding and updates
 
 A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
@@ -30,7 +31,7 @@ A service provides data to the component when the page loads, and when the slide
 ```
 
 ```html
-<{ComponentInstance} [data]="data"></{ComponentInstance}>
+<{ComponentSelector} [data]="data"></{ComponentSelector}>
 ```
 
 
@@ -49,9 +50,9 @@ A change in the data field value or a change in the data object/data collection 
 ```
 
 ```html
-<{ComponentInstance} #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-column field="price.usd"></igx-column>
-</{ComponentInstance}>
+</{ComponentSelector}>
 ```
 
 ```typescript
@@ -67,6 +68,17 @@ private updateData(data: IRecord[]) {
 
 ## Templates
 Updating the view works the same way for columns with a default template and for columns with a custom template. However, it is recommended to keep custom templates relatively simple. As number of elements in the template grows, negative performance impact rises as well.
+
+<!-- Angular -->
+## Live-data feed with Dock Manager and igxGrid Components
+The purpose of this demo is to showcase a financial screen board with Real-time data stream using a [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) hub back-end.
+As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
+<code-view style="height:700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
+           alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
+</code-view>
+<!-- end: Angular -->
 
 ### Start the hub connection
 
