@@ -1,7 +1,7 @@
 ---
 title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
-_keywords: angular tree grid, igniteui for angular, infragistics
+_keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
 ---
 
 # {Platform} Tree Grid Overview and Configuration
@@ -10,7 +10,7 @@ _keywords: angular tree grid, igniteui for angular, infragistics
 
 ## {Platform} Tree Grid Example
 
-In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component. In addition, you can see an example of custom pagination with [Pagination](../_shared/paging.md).
+In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component.  
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
