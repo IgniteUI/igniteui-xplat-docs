@@ -135,6 +135,8 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
            alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
 
+<!-- Angular -->
+
 ### Layout Configurator
 
 Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
@@ -145,8 +147,6 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 * Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
 * Set columns in the preview by dragging a column chip in the place your will want it to be.
 * Add/Remove new columns by using the `Add Column` chip.
-
-<!-- Angular -->
 
 * Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
 

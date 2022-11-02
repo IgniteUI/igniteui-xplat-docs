@@ -11,6 +11,13 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2}**
 
+### New Components
+
+* [Grid](grids/grid/overview.md)
+* [TreeGrid](grids/tree-grid/overview.md)
+
+### {PackageCharts}
+
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
 
 These new chart improvements include: 
