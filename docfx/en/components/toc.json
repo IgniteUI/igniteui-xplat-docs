@@ -226,9 +226,16 @@
     "href": "menus/navigation-drawer.md"
   },
   {
+    "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Grids & Lists",
+    "header": true,
+    "href": "grids/grids-header.md"
   },
   {
     "exclude": ["Angular", "React", "WebComponents"],
