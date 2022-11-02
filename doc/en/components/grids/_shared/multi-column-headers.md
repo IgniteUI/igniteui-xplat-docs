@@ -344,7 +344,6 @@ The following sample demonstrates how to implement collapsible column groups usi
            alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
 </code-view>
 
-<!-- Angular -->
 
 ## Styling
 
