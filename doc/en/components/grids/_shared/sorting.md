@@ -10,7 +10,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
+<!-- Angular -->
+
 > Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+
+<!-- end: Angular -->
 
 ## {Platform} {ComponentTitle} Sorting Overview Example
 

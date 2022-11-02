@@ -1,7 +1,7 @@
 ---
-title: {Platform} {ComponentTitle} Group By | Group by multiple fields | Infragistics
+title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, group by, Infragistics
+_keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 ---
 
@@ -62,7 +62,11 @@ During runtime the expressions are gettable and settable from the `groupingExpre
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
 
+<!-- Angular -->
+
 > Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+
+<!-- end: Angular -->
 
 ### Expand/Collapse API
 

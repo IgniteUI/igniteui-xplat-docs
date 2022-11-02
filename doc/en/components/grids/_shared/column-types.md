@@ -25,7 +25,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 If you want to enable a data type-specific template, you should set the column `DataType` input, otherwise the column will be treated as a string column since that is the default value for column `DataType`.
 
-The following describes the default templates for each `DataType`:
+The following sections describe the default templates for each `DataType`.
 
 ### String
 

@@ -9,7 +9,7 @@ _keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, 
 
 The {Platform} `{ComponentName}` supports multi-column headers which allow you to group columns by placing them under a common multi-header. Each multi-column headers group could be a representation of combinations between other groups or columns within the Material UI grid.
 
-## {Platform} {ComponentTitle} Grid Multi-Column Headers Example
+## {Platform} {ComponentTitle} Multi-Column Headers Example
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -30,9 +30,19 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </igx-grid>
 ```
 
+<!-- ComponentStart: Grid -->
+
 ```razor
-TO-DO GRID CODE SNIPPET
+<IgbGrid Data=@Data AllowFiltering=true>
+    <IgbColumnGroup Header="Contact Information"> 
+        <IgbColumn Sortable=true Resizable=true Field="Phone" />
+        <IgbColumn Sortable=true Resizable=true Field="Fax" />
+        <IgbColumn Sortable=true Resizable=true Field="PostalCode" />
+    </IgbColumnGroup>
+</IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID">
@@ -44,9 +54,19 @@ TO-DO GRID CODE SNIPPET
 </igx-tree-grid>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
 ```razor
-TO-DO TREEGRID CODE SNIPPET
+<IgbTreeGrid Data=@Data PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumnGroup Header="Contact Information"> 
+        <IgbColumn Field=field DataType=@GridColumnDataType.String Sortable=true Resizable=true />
+        <IgbColumn Field=field DataType=@GridColumnDataType.String Sortable=true Resizable=true  />
+        <IgbColumn Field=field DataType=@GridColumnDataType.String Sortable=true Resizable=true  />
+    </IgbColumnGroup>
+</IgbTreeGrid>
 ```
+
+<!-- ComponentEnd: TreeGrid -->
 
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [moving]="true" [allowFiltering]="true">
@@ -66,9 +86,13 @@ TO-DO TREEGRID CODE SNIPPET
 </igx-hierarchical-grid>
 ```
 
+<!-- ComponentStart: HierarchicalGrid -->
+
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 For achieving `n-th` level of nested headers, the declaration above should be followed. So by nesting `ColumnGroup` leads to the desired result.
 
@@ -84,9 +108,21 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </igx-grid>
 ```
 
+<!-- ComponentStart: Grid -->
+
 ```razor
-TO-DO GRID CODE SNIPPET
+<IgbGrid Data=@Data AllowFiltering=true>
+    <IgbColumnGroup Pinned=false Header="General Information">
+        <IgbColumn  Movable=true Sortable=true Resizable=true Field="CompanyName"/>
+        <IgbColumnGroup Movable=true Header="Person Details">
+            <IgbColumn Movable=true Pinned=false Sortable=true Resizable=true Field="ContactName"/>
+            <IgbColumn Movable=true Sortable=true Resizable=true Field="ContactTitle"  />                
+        </IgbColumnGroup>            
+    </IgbColumnGroup>
+</IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
@@ -101,9 +137,22 @@ TO-DO GRID CODE SNIPPET
 </igx-tree-grid>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
 ```razor
-TO-DO TREEGRID CODE SNIPPET
+<IgbTreeGrid Data=@Data PrimaryKey="ID" ForeignKey="ParentID" Moving=true>
+    <IgbColumnGroup Pinned=false Header="General Information">
+        <IgbColumn Field="HireDate" DataType=@GridColumnDataType.Date Sortable=true Resizable=true />
+        <IgbColumnGroup Header="Person Details">
+            <IgbColumn Field="ID" DataType=@GridColumnDataType.Number Resizable=true Filterable=false/>
+            <IgbColumn Field="Title" DataType=@GridColumnDataType.String Sortable=true Resizable=true  />
+            <IgbColumn Field="Age" DataType=@GridColumnDataType.Number Sortable=true Resizable=true  />
+        </IgbColumnGroup>            
+    </IgbColumnGroup>
+</IgbTreeGrid>
 ```
+
+<!-- ComponentEnd: TreeGrid -->
 
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
@@ -118,9 +167,13 @@ TO-DO TREEGRID CODE SNIPPET
 </igx-hierarchical-grid>
 ```
 
+<!-- ComponentStart: HierarchicalGrid -->
+
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
 > [!NOTE]
@@ -139,9 +192,20 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </igx-grid>
 ```
 
+<!-- ComponentStart: Grid -->
+
 ```razor
-TO-DO GRID CODE SNIPPET
+<IgbGrid Data=@Data AllowFiltering=true>
+    <IgbColumnGroup Movable=true Pinned=true Header="General Information">
+        <IgbColumn Movable=true Sortable=true Resizable=true Field="CompanyName"/>
+    </IgbColumnGroup>
+    <IgbColumn Sortable=true Resizable=true Field="Phone" />
+    <IgbColumn Sortable=true Resizable=true Field="Fax" />
+    <IgbColumn Sortable=true Resizable=true Field="PostalCode" />
+</IgbGrid>
 ```
+
+<!-- ComponentEnd: Grid -->
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
@@ -154,9 +218,20 @@ TO-DO GRID CODE SNIPPET
 </igx-tree-grid>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
 ```razor
-TO-DO TREEGRID CODE SNIPPET
+<IgbTreeGrid Data=@Data PrimaryKey="ID" ForeignKey="ParentID" Moving=true>
+    <IgbColumnGroup Header="Contact Information">
+        <IgbColumn  Field="Phone" DataType=@GridColumnDataType.String Sortable=true Resizable=true/>
+    </IgbColumnGroup>
+    <IgbColumn Field="Name" DataType=@GridColumnDataType.String Sortable=true Resizable=true />
+    <IgbColumn Field="Title" DataType=@GridColumnDataType.String Sortable=true Resizable=true />
+    <IgbColumn Field="Age" DataType=@GridColumnDataType.Number Sortable=true Resizable=true />
+</IgbTreeGrid>
 ```
+
+<!-- ComponentEnd: TreeGrid -->
 
 ```html
 <igx-hierarchical-grid [data]="localdata" displayDensity="compact" [allowFiltering]="true" [moving]="true">
@@ -171,9 +246,13 @@ TO-DO TREEGRID CODE SNIPPET
 </igx-hierarchical-grid>
 ```
 
+<!-- ComponentStart: HierarchicalGrid -->
+
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 ## Multi-column Header Template
 
@@ -189,7 +268,17 @@ The `ng-template` is provided with the column group object as a context.
 ```
 
 ```razor
-TO-DO CODE SNIPPET
+<IgbColumnGroup Header="General Information" HeaderTemplateScript="HeaderTemplate" />
+
+//In JavaScript
+igRegisterScript("HeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var iconName = columnGroupStates.get(ctx.column.header) ? 'expand_more' : 'expand_less';
+    return html`<div>
+    <igc-icon name="${iconName}" collection="material" onclick='toggleColumnGroup("${ctx.column.header}")' ></igc-icon>
+    <span>${ctx.column.header}</span>
+</div>`;
+}, false);
 ```
 
 If you want to re-use a single template for several column groups, you could set the `headerTemplate` property of the column group like this:
@@ -206,8 +295,21 @@ If you want to re-use a single template for several column groups, you could set
 ```
 
 ```razor
-TO-DO CODE SNIPPET
+<IgbColumnGroup Header="General Information" HeaderTemplateScript="HeaderTemplate" />
+<IgbColumnGroup Header="Address Information" HeaderTemplateScript="HeaderTemplate" /> 
+
+//In JavaScript
+igRegisterScript("HeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var iconName = columnGroupStates.get(ctx.column.header) ? 'expand_more' : 'expand_less';
+    return html`<div>
+    <igc-icon name="${iconName}" collection="material" onclick='toggleColumnGroup("${ctx.column.header}")' ></igc-icon>
+    <span>${ctx.column.header}</span>
+</div>`;
+}, false);
 ```
+
+<!-- Angular -->
 
 > [!NOTE]
 > If a header is retemplated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
@@ -218,9 +320,7 @@ TO-DO CODE SNIPPET
 </ng-template>
 ```
 
-```razor
-TO-DO CODE SNIPPET
-```
+<!-- end: Angular -->
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
