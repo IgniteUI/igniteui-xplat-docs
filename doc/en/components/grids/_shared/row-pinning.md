@@ -360,6 +360,8 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:540px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"

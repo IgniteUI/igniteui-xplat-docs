@@ -34,7 +34,7 @@ The sample below demonstrates the three types of `{ComponentName}`'s **row selec
 
 
 ## Setup
-In order to setup row selection in the `{ComponentName}`, you just need to set the `RowSelection` property. This property accepts `GridSelectionMode` enumeration. 
+In order to setup row selection in the `{ComponentName}`, you just need to set the `RowSelection` property. This property accepts `GridSelectionMode` enumeration.
 
 `GridSelectionMode` exposes the following modes:
 
@@ -330,7 +330,20 @@ By default, the `{ComponentName}` **handles all row selection interactions** on 
 #### Row Template
 
 ```razor
-TODO
+igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    if (ctx.$implicit.selected) {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+    <span> ${ctx.$implicit.index}</span>
+<igc-checkbox checked></igc-checkbox>
+</div>`;
+    } else {
+        return html`<div style="justify-content: space-evenly;display: flex;width: 70px;">
+    <span> ${ctx.$implicit.index}</span>
+<igc-checkbox></igc-checkbox>
+</div>`;
+    }
+}, false);
 ```
 
 <!-- Angular -->
@@ -368,7 +381,12 @@ The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the
 ### Header Template
 
 ```razor
-TODO
+igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div style="width: 70px;height: 60px;display: flex;">
+    <img src="https://www.infragistics.com/angular-demos-lob/assets/images/card/avatars/igLogo.png">
+</div>`;
+}, false);
 ```
 
 <!-- Angular -->
@@ -413,22 +431,27 @@ This demo shows the usage of custom header and row selectors. The latter uses `R
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-numbering"
-           github-src="{ComponentSample}/selection-template-numbering"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
+           github-src="{ComponentSample}/row-selection-template-numbers"
            alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
 </code-view>
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ### Excel Style Row Selectors Demo
 
 This demo uses custom templates to resemble Excel-like header and row selectors.
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:550px"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-selection-template-excel"
-           github-src="{ComponentSample}/selection-template-excel"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
+           github-src="{ComponentSample}/row-selection-template-excel"
            alt="{Platform} {ComponentTitle} Selection Template Excel Example">
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 

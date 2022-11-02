@@ -11,6 +11,8 @@ The Ignite UI for {Platform} `{ComponentName}` supports remote data operations s
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering-data"
@@ -21,6 +23,8 @@ The Ignite UI for {Platform} `{ComponentName}` supports remote data operations s
 By default, the `{ComponentName}` uses its own logic for performing data operations.
 
 You can perform these tasks remotely and feed the resulting data to the `{ComponentName}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentName}`.
+
+<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -71,7 +75,13 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
 >[!NOTE]
 >The first `ChunkSize` will always be 0 and should be determined by you based on the specific application scenario.
 
+<!-- end: Angular -->
+
+<!-- Angular -->
+
 ### Remote Virtualization Demo
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -80,9 +90,13 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
            alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
 </code-view>
 
+<!-- end: Angular -->
+
+<!-- Angular -->
+
 ## Infinite Scroll
 
- A popular design for scenarios requiring fetching data by chunks from an end-point is the so-called infinite scroll. For data grids, it is characterised by continuous increase of the loaded data triggered by the end-user scrolling all the way to the bottom. The next paragraphs explain how you can use the available API to easily achieve infinite scrolling in `{ComponentName}`.
+ A popular design for scenarios requiring fetching data by chunks from an end-point is the so-called infinite scroll. For data grids, it is characterized by continuous increase of the loaded data triggered by the end-user scrolling all the way to the bottom. The next paragraphs explain how you can use the available API to easily achieve infinite scrolling in `{ComponentName}`.
 
 To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
 
@@ -137,7 +151,13 @@ public handlePreLoad() {
 BLAZOR CODE SNIPPET HERE
 ```
 
+<!-- end: Angular -->
+
+<!-- Angular -->
+
 ### Infinite Scroll Demo
+
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -145,6 +165,8 @@ BLAZOR CODE SNIPPET HERE
            github-src="{ComponentSample}/data-performance-infinite-scroll"
            alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example">
 </code-view>
+
+<!-- end: Angular -->
 
 ## Remote Sorting/Filtering
 
@@ -154,7 +176,7 @@ We will also take advantage of the **rxjs** `debounceTime` function, which emits
 
 ```typescript
 const DEBOUNCE_TIME = 300;
-public ngAfterViewInit() {    
+public ngAfterViewInit() {
     this.grid.dataPreLoad.pipe(
         debounceTime(DEBOUNCE_TIME),
         takeUntil(this.destroy$)
@@ -220,7 +242,7 @@ We will also take advantage of the **rxjs** `debounceTime` function, which emits
 
 ```typescript
 const DEBOUNCE_TIME = 300;
-public ngAfterViewInit() {    
+public ngAfterViewInit() {
     this.treeGrid.filteringExpressionsTreeChange.pipe(
         debounceTime(DEBOUNCE_TIME),
         takeUntil(this.destroy$)

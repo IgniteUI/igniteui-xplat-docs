@@ -56,8 +56,10 @@ IgrCalendarModule.register();
 
 Before using the `Calendar`, you need to register it as follows:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbCalendarModule));
 ```
 

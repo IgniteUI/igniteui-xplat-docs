@@ -37,8 +37,10 @@ When installing the gauge package, the core package must also be installed.
 
 The `XamLinearGauge` requires the following modules:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
 ```
 

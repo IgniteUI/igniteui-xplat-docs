@@ -121,7 +121,7 @@
     "exclude": ["Angular", "React"],
     "name": "Overview",
     "href": "themes/overview.md",
-    "status": "UPDATED"
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
@@ -133,19 +133,19 @@
     "exclude": ["Angular", "React"],
     "name": "Palettes",
     "href": "themes/palettes.md",
-    "status": "UPDATED"
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Elevations",
     "href": "themes/elevations.md",
-    "status": "UPDATED"
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
     "name": "Typography",
     "href": "themes/typography.md",
-    "status": "UPDATED"
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
@@ -195,16 +195,14 @@
       {
         "exclude": ["Angular", "Blazor", "React"],
         "name": "Desktop Integration",
-        "href": "layouts/dock-manager-electron.md",
-        "status": "NEW"
+        "href": "layouts/dock-manager-electron.md"        
       }
     ]
   },
   {
     "exclude":  ["Angular", "Blazor"],
     "name": "Expansion Panel",
-    "href": "layouts/expansion-panel.md",
-    "status": "NEW"
+    "href": "layouts/expansion-panel.md"    
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -323,7 +321,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel Style Filtering",
         "href": "grids/lob-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -341,7 +339,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Master Detail",
         "href": "grids/lob-grid/master-detail.md",
         "status": "NEW"
@@ -365,7 +363,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/lob-grid/remote-data-operations.md",
         "status": "NEW"
@@ -541,7 +539,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Excel Style Filtering",
         "href": "grids/hierarchical-grid/excel-style-filtering.md",
         "status": "NEW"
@@ -897,8 +895,7 @@
   {
     "exclude": ["Angular"],
     "name": "Table / Grid",
-    "href": "grids/data-grid.md",
-    "status": "UPDATED",
+    "href": "grids/data-grid.md",    
     "items": [
       {
         "name": "Accessibility Compliance",
@@ -917,8 +914,7 @@
       },
       {
         "name": "Localization",
-        "href": "grids/data-grid-localization.md",
-        "status": "NEW"
+        "href": "grids/data-grid-localization.md"        
       },
       {
         "exclude": ["Blazor"],
@@ -1048,8 +1044,7 @@
       },
       {
         "name": "Row Paging",
-        "href": "grids/data-grid-row-paging.md",
-        "status": "NEW"
+        "href": "grids/data-grid-row-paging.md"        
       },
       {
         "name": "Row Pinning",
@@ -1066,8 +1061,7 @@
   {
     "exclude": ["Angular"],
     "name": "Tree",
-    "href": "grids/tree.md",
-    "status": "NEW"
+    "href": "grids/tree.md"    
   },
   {
     "exclude": ["React", "WebComponents", "Angular"],
@@ -1289,8 +1283,7 @@
         },
         {
           "name": "Axis Options",
-          "href": "charts/features/chart-axis-options.md",
-          "status": "UPDATED"
+          "href": "charts/features/chart-axis-options.md"          
         },
         {
           "name": "Chart Animations",
@@ -1299,18 +1292,20 @@
         },
         {
           "name": "Chart Annotations",
-          "href": "charts/features/chart-annotations.md",
-          "status": "UPDATED"
+          "href": "charts/features/chart-annotations.md"          
+        },
+        {
+          "name": "Chart Data Aggregations",
+          "href": "charts/features/chart-data-aggregations.md",
+          "status": "NEW"
         },
         {
           "name": "Chart Data Legend",
-          "href": "charts/features/chart-data-legend.md",
-          "status": "NEW"
+          "href": "charts/features/chart-data-legend.md"        
         },
         {
           "name": "Chart Data Tooltip",
-          "href": "charts/features/chart-data-tooltip.md",
-          "status": "NEW"
+          "href": "charts/features/chart-data-tooltip.md"          
         },
         {
           "name": "Chart Highlighting",
@@ -1324,8 +1319,7 @@
         },
         {
           "name": "Chart Navigation",
-          "href": "charts/features/chart-navigation.md",
-          "status": "UPDATED"
+          "href": "charts/features/chart-navigation.md"          
         },
         {
           "name": "Chart Overlays",

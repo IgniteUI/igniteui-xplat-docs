@@ -172,6 +172,8 @@ TO DO
 
  The result is:
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu" >

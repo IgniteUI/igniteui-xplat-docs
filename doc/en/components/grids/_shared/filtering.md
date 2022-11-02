@@ -322,6 +322,10 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 </igx-hierarchical-grid>
 ```
 
+<!-- Angular -->
+
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-filtering"
@@ -329,6 +333,7 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
            alt="{Platform} {ComponentTitle} Custom Filtering Example">
 </code-view>
 
+<!-- end: Angular -->
 
 ## Re-templating Filter Cell
 

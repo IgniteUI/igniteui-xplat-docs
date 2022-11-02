@@ -29,8 +29,10 @@ The {ProductName} Badge is a component used in conjunction with avatars, navigat
 
 To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 

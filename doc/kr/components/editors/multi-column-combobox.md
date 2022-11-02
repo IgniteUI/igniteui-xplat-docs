@@ -33,8 +33,10 @@ npm install --save {PackageInputs}
 
 The Multi-Column Combo Box requires the following modules:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbMultiColumnComboBoxModule));
 ```
 

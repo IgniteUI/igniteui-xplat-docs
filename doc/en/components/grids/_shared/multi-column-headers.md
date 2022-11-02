@@ -430,6 +430,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"

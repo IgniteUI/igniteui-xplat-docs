@@ -70,8 +70,10 @@ IgrTreeModule.register();
 ```
 <!-- end: Blazor -->
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
   typeof(IgbTreeModule),
   typeof(IgbTreeItemModule)

@@ -190,6 +190,8 @@ TO DO
 
 ### Demo
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles" >

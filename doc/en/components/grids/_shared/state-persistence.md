@@ -341,6 +341,8 @@ setState snippet
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:763px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-state"

@@ -37,16 +37,19 @@ After having the data types grouped accordingly, you can proceed to the aggregat
 After that, you'd have to put the aggregated data in the same array, which would be returned to the template.
 For the visualization of the data, you might want to use the `<-grid-footer>`, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
 
+<!-- Angular -->
 
 ### Demo
 Change the selection to see summaries of the currently selected range.
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height: 560px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-summary-custom-selection" >
 </code-view>
 
+<!-- end: Angular -->
 
 ## API References
 

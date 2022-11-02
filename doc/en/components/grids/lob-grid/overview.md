@@ -64,8 +64,9 @@ Afterwards, you may start implementing the control by adding the following names
 
 ### Component Modules
 
-Open the Program.cs
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
 
@@ -506,6 +507,8 @@ For example, in order to display the weights of a given amino acid in the grid t
 <igx-column field="weight.residue"></igx-column>
 ```
 
+<!-- Angular -->
+
 Refer to the sample below for additional information. This type of binding supports all
 the default functionality that you would expect from the grid.
 That is all sorting and filtering operations work out of the box without any additional
@@ -514,13 +517,16 @@ configuration. Same goes for grouping and editing operations with or without tra
 >[!WARNING]
 >The grids **do not** support this kind of binding for `primary key`, `foreign key` and `child key` properties where applicable.
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
 </code-view>
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{ComponentName}` is to use a custom body template for the column. Generally, one can:
+<!-- end: Angular -->
+
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
 

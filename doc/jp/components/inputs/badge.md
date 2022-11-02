@@ -60,8 +60,10 @@ IgrBadgeModule.register();
 
 `Badge` を使用する前に、次のように登録する必要があります。
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 

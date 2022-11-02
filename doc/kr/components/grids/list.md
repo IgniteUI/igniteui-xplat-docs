@@ -37,8 +37,10 @@ npm install {PackageWebComponents}
 
 Before using the `List`, you need and register it as follows:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
 

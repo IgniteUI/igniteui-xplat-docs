@@ -43,8 +43,10 @@ npm install --save {PackageGauges}
 
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 

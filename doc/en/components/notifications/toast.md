@@ -54,8 +54,10 @@ IgrToastModule.register();
 
 Before using the `Toast`, you need to register it as follows:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbToastModule));
 ```
 

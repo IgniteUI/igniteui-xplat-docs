@@ -33,8 +33,10 @@ When installing the spreadsheet package, the core and excel package must also be
 
 The `Spreadsheet` requires the following modules:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
   typeof(IgbExcelModule),
   typeof(IgbSpreadsheetModule)

@@ -39,10 +39,12 @@ To use the geographic map component, you need to first install these packages:
 
 The `XamGeographicMap` requires the following modules:
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
-    typeof(IgbGeographicMapModule), 
+    typeof(IgbGeographicMapModule),
     typeof(IgbDataChartInteractivityModule)
 );
 ```

@@ -331,6 +331,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Pagination Style Example
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"

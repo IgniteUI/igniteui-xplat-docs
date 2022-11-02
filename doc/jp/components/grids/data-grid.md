@@ -56,8 +56,10 @@ npm install --save {PackageInputs}
 
 <!-- Blazor -->
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
 <!-- end: Blazor -->
@@ -93,8 +95,10 @@ ModuleManager.register(
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(
   typeof(IgbGridColumnOptionsModule),
   typeof(IgbDataGridToolbarModule),

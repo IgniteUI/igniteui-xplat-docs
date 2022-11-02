@@ -117,16 +117,20 @@ When the `{ComponentName}` body is focused, the following key combinations are a
  - <kbd>Space</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
  <!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
+
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
 ## Demo
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:470px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
 </code-view>
 
+<!-- end: Angular -->
 
 ## Custom Keyboard Navigation
 
@@ -242,7 +246,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
     grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
         (obj) => { obj.target.nativeElement.focus(); });
 ```
-> Note: Please refer to the sample code for full implementation details.
+
+<!-- Angular -->
 
 Use the demo below to try out the custom scenarios that we just implemented:
 - Double click or press <kbd>F2</kbd> key on a cell in the `Grammy Nominations` column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
@@ -250,10 +255,14 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 #### Demo
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigatio" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -270,16 +279,21 @@ Use the demo below to try out the custom scenarios that we just implemented:
     grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
         (obj) => { obj.target.nativeElement.focus(); });
 ```
-> Note: Please refer to the sample code for full implementation details.
+
+<!-- Angular -->
 
 Use the demo below to try out the custom scenarios that we just implemented:
 - Double click or press <kbd>F2</kbd> key on a cell in the `Age` column, change the value to `16` and press <kbd>tab</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd : TreeGrid -->
 

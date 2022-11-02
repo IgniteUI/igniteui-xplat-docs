@@ -317,7 +317,10 @@ The result of the configuration can be seem below:
 
 <!-- end: Angular -->
 
+
 ## Application Demo
+
+<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -327,6 +330,7 @@ The following demo demonstrates how to use row drag event information to change 
 .
 Try to drag moons from the grid and drop them to their corresponding planets. Row drag ghost background is dynamically changed, depending on the hovered planet. If you succeed then the row in the grid will be selected and dragging will be disabled for it. Clicking planets will give you useful information.
 
+<!-- NOTE this sample is differed -->
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -340,6 +344,8 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 
 <!-- ComponentEnd: Grid -->
+
+<!-- end: Angular -->
 
 ### Row Reordering Demo
 
@@ -722,6 +728,8 @@ private changeHighlightedElement(newElement: HTMLElement) {
 }
 ```
 
+<!-- Angular -->
+
 #### Scrolling the Grid on Row Drag
 
 A very useful scenario is being able to scroll the grid when the dragged row reaches its' top or bottom border. This allows reordering rows outside of the current viewport when the number of rows in the grid requires a scrollbar.
@@ -794,12 +802,16 @@ class MyGridScrollComponent {
 
 Following is the example of both scenarios described above - showing a drop indicator and scrolling the viewport when border's edge is reached.
 
+<!-- NOTE this sample is differed -->
+
 <code-view style="height:830px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
            github-src="{ComponentSample}/row-drop-indicator"
            alt="{Platform} {ComponentTitle} Drop Indicator">
 </code-view>
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

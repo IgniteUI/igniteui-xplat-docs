@@ -36,8 +36,10 @@ npm install --save {PackageLayouts}
 日付選択コンポーネントを使用するには、以下のモジュールを登録する必要があります。
 
 
-Open the Program.cs
+
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
 ```
 
