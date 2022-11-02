@@ -70,6 +70,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 ```
 
 <!-- ComponentEnd: TreeGrid -->
+
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -90,12 +91,9 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </igx-hierarchical-grid>
 ```
 
-<!-- ComponentStart: HierarchicalGrid -->
-
 ```razor
 TO-DO H-GRID CODE SNIPPET
-```
-<!-- ComponentEnd: HierarchicalGrid -->
+``` 
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
