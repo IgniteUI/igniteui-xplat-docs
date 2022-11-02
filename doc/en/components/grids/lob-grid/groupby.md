@@ -95,7 +95,7 @@ As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly 
 
 Groups can be created expanded (***default***) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
 
-### Select/Deselect all rows in a group API
+### Select/Deselect All Rows in a Group API
 
 Selecting/Deselecting all rows in a group is available through the `SelectRowsInGroup` and `DeselectRowsInGroup` API methods.
 
@@ -174,12 +174,12 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
 </-grid>
 ```
 
-## {Platform} Grid Group By with Paging
+## {Platform} Grid Group By With Paging
 
 Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process. Any expand or collapse operation forces Paging to recalculate the page count and adjust the page index if necessary.
 Groups that span multiple pages are split between them. The group row is visible only on the page it starts on and is not repeated on subsequent pages. Summary information for group rows is calculated based on the whole group and is unaffected by Paging.
 
-### {Platform} group by with paging example
+### {Platform} Group By With Paging Example
 
 
 <code-view style="height:605px"
@@ -189,7 +189,7 @@ Groups that span multiple pages are split between them. The group row is visible
 </code-view>
 
 
-## Group By with Summaries
+## Group By With Summaries
 
 Integration between Group By and Summaries is described in the [Summaries](summaries.md#summaries-with-group-by) topic.
 
@@ -218,7 +218,7 @@ Grid allows defining custom grouping per column or per grouping expression, whic
 
 The sample below demonstrates custom grouping by `Date`, where the date values are sorted and grouped by Day, Week, Month or Year based on user-selected grouping mode.
 
-### {Platform} custom group by example
+### {Platform} Custom Group By Example
 
 
 <code-view style="height:605px"
@@ -305,14 +305,13 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 ```
 
 <!-- Angular -->
-
 ## Styling
 
 The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Group By styling.
 
-### Importing global theme
+### Importing Global Theme
 
 To begin the customization of the Group By feature, you need to import the `index` file, where all styling functions and mixins are located.
 
@@ -323,7 +322,7 @@ To begin the customization of the Group By feature, you need to import the `inde
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-### Defining custom theme
+### Defining Custom Theme
 
 Next, create a new theme, that extends the `grid-theme` and accepts the parameters, required to customize the Group By as desired. You also need to extend the `chip-theme`, because it's used in the Group By feature.
 
@@ -355,7 +354,7 @@ $custom-chips-theme: chip-theme(
 );
 ```
 
-### Defining a custom color palette
+### Defining a Custom Color Palette
 
 In the approach that we described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `palette` and `color` functions.
 `palette` generates a color palette, based on provided primary and secondary colors.
@@ -391,7 +390,7 @@ $custom-chips-theme: chip-theme(
     $hover-text-color:contrast-color($custom-palette, "primary", 600)
 );
 ```
-### Defining custom schemas
+### Defining Custom Schemas
 You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
 Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
 ```scss
@@ -419,7 +418,7 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Applying the custom theme
+### Applying the Custom Theme
 
 The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
 ```scss
@@ -427,7 +426,7 @@ The easiest way to apply your theme is with a `sass` `@include` statement in the
 @include chip($custom-chips-theme);
 ```
 
-### Scoped component theme
+### Scoped Component Theme
 
 In order for the custom theme to affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
 
@@ -460,8 +459,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 >[!NOTE]
 >The sample will not be affected by the selected global theme from `Change Theme`.
 
-<!-- end: Angular -->
-
+<!-- end:Angular -->
 
 ## Known Limitations
 
@@ -481,7 +479,6 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 * `ChipComponent Styles`
 
 ## Additional Resources
-<div class="divider--half"></div>
 
 * [Grid overview](grid.md)
 * [Virtualization and Performance](virtualization.md)
@@ -493,8 +490,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
-<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
 * [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform}
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

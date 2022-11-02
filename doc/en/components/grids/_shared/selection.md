@@ -192,14 +192,14 @@ TO DO
 import 'core-js/es7/array';
 ```
 
-<!-- end: Angular -->
-
 When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
 
 - Row Selection
 - Row Expand/collapse
 - Row Editing
 - Row Pinning
+
+<!-- end: Angular -->
 
 ## API References
 

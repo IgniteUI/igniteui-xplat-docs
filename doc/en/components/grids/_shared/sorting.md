@@ -156,9 +156,12 @@ public ngOnInit() {
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
 ## Remote Sorting
 
 The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 

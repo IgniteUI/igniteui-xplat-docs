@@ -151,8 +151,10 @@ In this mode a parent's selection state entirely depends on the selection state 
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
+<!-- Angular -->
 * In order to have proper row selection and cell selection, while `{ComponentName}` has remote virtualization, a `PrimaryKey` should be provided.
 * When the `{ComponentName}` has remote virtualization, then clicking the header checkbox will select/deselect all records that are currently in the grid. When new data is loaded in the `{ComponentName}` on demand, newly added rows will not be selected and it is a limitation, so you should handle that behavior by yourself and you can select these rows by using the provided API methods.
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 

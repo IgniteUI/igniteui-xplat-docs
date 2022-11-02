@@ -246,14 +246,14 @@ public toggleColumn(col: IgxColumnComponent) {
 }
 ```
 
-<!-- end: Angular -->
-
 ### Demo
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options" >
 </code-view>
+
+<!-- end: Angular -->
 
 ## Pinning Limitations
 

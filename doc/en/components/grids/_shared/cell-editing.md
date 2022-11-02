@@ -609,13 +609,17 @@ In addition to the steps above, we can also style the controls that are used for
 
 ## API References
 
-* `GridCell`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
+
 * `GridRow`
+
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
+
 * `TreeGridRow`
+
 <!-- ComponentEnd: TreeGrid -->
+* `GridCell`
 * `InputDirective`
 * `DatePickerComponent`
 

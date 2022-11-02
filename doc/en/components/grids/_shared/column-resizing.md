@@ -49,10 +49,10 @@ You can subscribe to the `ColumnResized` event of the `{ComponentName}` to imple
 <!-- ComponentStart: Grid -->
 
 ```html
-<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```typescript
@@ -64,10 +64,10 @@ public onResize(event) {
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
     <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
     <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     private void onResize(IgbColumnResizeEventArgs args)
@@ -80,14 +80,13 @@ public onResize(event) {
 ```
 
 <!-- ComponentEnd: Grid -->
-
 <!-- ComponentStart: TreeGrid -->
 
 ```html
-<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
-</igx-tree-grid>
+</{ComponentSelector}>
 ```
 
 ```typescript
@@ -99,11 +98,22 @@ public onResize(event) {
 ```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Title" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="HireDate" Resizable=true Width="100px"></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    private void onResize(IgbColumnResizeEventArgs args)
+    {
+        IgbColumnType col = args.Detail.Column;
+        string pWidth = args.Detail.PrevWidth;
+        string nWidth = args.Detail.NewWidth;
+    }
+}
 ```
 
 <!-- ComponentEnd: TreeGrid -->
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -136,43 +146,45 @@ This means that the following configuration is possible:
 <!-- ComponentStart: Grid -->
 
 ```html
-<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="10%" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" [resizable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
     <IgbColumn Field="ID" Resizable=true Width="10%"></IgbColumn>
     <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
     <IgbColumn Field="ContactTitle" Resizable=true></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: Grid -->
-
 <!-- ComponentStart: TreeGrid -->
 
 ```html
-<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'10%'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'Age'" dataType="number" [resizable]="true"></igx-column>
-</igx-tree-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Title" Resizable=true Width="10%"></IgbColumn>
+    <IgbColumn Field="HireDate" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="Age" Resizable=true></IgbColumn>
+</{ComponentSelector}>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-  <igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
+<igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
         <igx-column field="Artist" [resizable]="true" [width]="'10%'"></igx-column>
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>

@@ -248,6 +248,8 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 > [!NOTE]
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
 
+<!-- Angular -->
+
 ## Remote Scenarios
 
 In most remote data scenarios the Primary Key assignment happens on the create server request. In this case the added records on the client will not have the final primary key value until saved on the server's data base. In that case the recommended way to handle this update in the `{ComponentName}` is as follows:
@@ -261,6 +263,8 @@ In most remote data scenarios the Primary Key assignment happens on the create s
     Once the create request or batch update request is successfully completed and returns the added record instances (with their db generated ids), the related ADD transactions should be cleared from the transaction log using the `Clear` API method. This is necessary because the local transaction will have a generated id field, which may differ than the one created in the data base, so they should be cleared. You can then add the record(s) passed in the response to the local data instance.
 
 This will ensure that the remotely generated ids are always reflected in the local data, and subsequent update/delete operations target the correct record ids.
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
