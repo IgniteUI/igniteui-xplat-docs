@@ -26,50 +26,19 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 
 <!-- end: Angular -->
 
-<!-- ComponentStart: Grid -->
-
 ```html
-<igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
     <IgbPaginator PerPage="10"></IgbPaginator>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-
-<!-- ComponentEnd: TreeGrid -->
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid #hierarchicalGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-hierarchical-grid>
-```
-
-```razor
-TO-DO H-GRID CODE SNIPPET
-```
-
-<!-- ComponentEnd: HierarchicalGrid -->
 
 ```html
 <igx-paginator #paginator [totalRecords]="20">
@@ -106,39 +75,24 @@ Integration between Paging and Group By is described in the [Group By](groupby.m
 
 The `Paginator` component is used along with the `{ComponentName}` component in the example below, but you can use it with any other component in case paging functionality is needed.
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
 
 ```html
-<igx-grid #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
             [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
 
 ```razor
-<IgbGrid @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
     <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
     </IgbPaginator>
-</IgbGrid>
+</{ComponentSelector}>
 ```
 
-<!-- ComponentEnd: Grid -->
-<!-- ComponentStart: TreeGrid -->
-
-```html
-<igx-tree-grid #treeGrid [data]="data">
-    <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="treeGrid.displayDensity">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-
-<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
