@@ -894,6 +894,16 @@
   },
   {
     "exclude": ["Angular"],
+    "name": "List",
+    "href": "grids/list.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Tree",
+    "href": "grids/tree.md"
+  },
+  {
+    "exclude": ["Angular"],
     "name": "Table / Grid",
     "href": "grids/data-grid.md",
     "items": [
@@ -1052,16 +1062,6 @@
         "status": ""
       }
     ]
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "List",
-    "href": "grids/list.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Tree",
-    "href": "grids/tree.md"
   },
   {
     "exclude": ["React", "WebComponents", "Angular"],
