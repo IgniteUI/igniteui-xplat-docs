@@ -2,6 +2,8 @@
 title: {Platform} Grids & Tables | Fastest {Platform} UI Grid | Infragistics
 _description: Looking for fast {Platform} grids and tables? Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics  
+mentionedTypes: ["Grid"]
+
 ---
 <style>
 
@@ -195,7 +197,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
     <img class="b-lazy b-loaded" style="margin: 0 auto; max-width: 175px;" title="Ignite UI logo" src="https://static.infragistics.com/marketing/Website/products/ignite-ui-landing/ignite-ui-logo.svg" alt="Ignite UI Logo for developer web applications">
 </div>
 
-# The Fastest {Platform} Data Grid
+# The Fastest {Platform} Grid
 
 
 Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI components, including the world’s fastest virtualized {Platform} data grid.
@@ -207,20 +209,20 @@ In this {Platform} grid example, you can see how users can customize their _data
 
 <div class="divider--half"></div>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="icon-sample-1-iframe" seamless="" width="100%" height="100%" frameborder="0" src="{environment:crmDemoBaseUrl}/" onload="onSampleIframeContentLoaded(this);" alt="{Platform} grid example">
-    </iframe>
-</div>
-<p style="margin: 0;padding-top: 0.5rem">Like this sample? Get access to our complete {Platform} toolkit and start building your own apps in minutes. <a class="no-external-icon mchNoDecorate trackCTA" target="_blank" href="https://www.infragistics.com/products/ignite-ui-{Platform}/download" data-xd-ga-action="Download" data-xd-ga-label="Ignite UI for {Platform}">Download it for free.</a></p>
+<code-view style="height:700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           alt="grid example">
+</code-view>
 
 <div class="divider--half"></div>
 
-## What is a {Platform} Data Grid?
+## What is a {Platform} Grid?
 
 The {Platform} data grid is a component used to display tabular data in a series of rows and columns. Data grids, also known as tables, are well known in the desktop world with popular software such as Microsoft Excel. While grids have been available on desktop platforms for a long time, they have recently become part of web app UIs, such as {Platform} UI. Modern grids can be complex and may include a range of functionalities, including data binding, editing, Excel-like filtering, custom sorting, grouping, row reordering, row and column freezing, row aggregation, and exporting to Excel, CSV, and pdf formats.
 
 
-## Why Use a {Platform} Data Grid?
+## Why Use a {Platform} Grid?
 
 {Platform} data grids are essential in use cases where lots of data must be stored and sorted through quickly. This can include industries such as financial or insurance that use high-volume, high-velocity data frequently.  Often the success of these companies is dependent on the functionality and performance of these data grids. When stock decisions need to be made in microseconds, for example, it’s imperative that the data grid performs with no lag time or flicker.
 
@@ -230,7 +232,7 @@ The {Platform} data grid is a component used to display tabular data in a series
 
 The Ignite UI for {Platform} Data Grid is not just for high-volume and real-time data. It is a feature-rich {Platform} grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
 
-This example demonstrates a few of the data grid’s key features:
+Here are a few of the data grid’s key features:
 
 <div class="divider--half"></div>
 
@@ -251,14 +253,6 @@ This example demonstrates a few of the data grid’s key features:
 
 <!-- <li>Column templates like [**Sparkline Column**](charts/types/sparkline-chart.md) and Image Column</li> -->
 </ul>
-
-<div class="divider"></div>
-<div class="divider"></div>
-
-<div class="sample-container loading" style="height: 520px">
-    <iframe seamless width="100%" height="100%" frameborder="0" src="{environment:lobDemosBaseUrl}/grid-finjs/grid-finjs-partial" onload="onSampleIframeContentLoaded(this);">
-    </iframe>
-</div>
 
 <div class="divider--half"></div>
 
@@ -306,7 +300,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     </div>
 </div>
 
-### Keyboard Navigation & Row/Cell Selection in the {Platform} Grid
+### Keyboard Navigation & Row/Cell Selection
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of keyboard navigation functionality" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-keyboard-navigation-1100.gif?v=201808021304" alt="Animation of keyboard navigation functionality within {Platform} Data Grid"></div>
@@ -327,7 +321,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     </div>
 </div>
 
-### Column Grouping, Pinning, Summaries, & Moving in the {Platform} Grid
+### Column Grouping, Pinning, Summaries
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column grouping, pinning and summary features enabled" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-summaries-1100.jpg?v=201808021304" alt="Grid of data with column grouping, pinning and summary features enabled for {Platform} Data Grid component"></div>
@@ -337,7 +331,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     </div>
 </div>
 
-### Multi-Column Headers in the {Platform} Grid
+### Multi-Column Headers
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with Multi-Column Headers feature enabled" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-multi-column-headers-1100.jpg?v=201808021304" alt="Grid of data with Multi-Column Headers feature enabled on the {Platform} Data Grid component"></div>
@@ -349,7 +343,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 
 <!-- Angular -->
 
-### Theming, Styling, & Templating in the {Platform} Grid
+### Theming, Styling, & Templating
 
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of different grids design showing the themeing and templating capabilities" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Animation of different grids design showing the themeing and templating capabilities of the Angular Data Grid"></div>
