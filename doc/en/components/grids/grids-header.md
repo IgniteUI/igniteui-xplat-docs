@@ -207,11 +207,11 @@ In this {Platform} grid example, you can see how users can customize their _data
 
 <div class="divider--half"></div>
 
-<div class="sample-container loading" style="height: 435px">
-    <iframe id="icon-sample-1-iframe" seamless="" width="100%" height="100%" frameborder="0" src="{environment:crmDemoBaseUrl}/" onload="onSampleIframeContentLoaded(this);" alt="{Platform} grid example">
-    </iframe>
-</div>
-<p style="margin: 0;padding-top: 0.5rem">Like this sample? Get access to our complete {Platform} toolkit and start building your own apps in minutes. <a class="no-external-icon mchNoDecorate trackCTA" target="_blank" href="https://www.infragistics.com/products/ignite-ui-{Platform}/download" data-xd-ga-action="Download" data-xd-ga-label="Ignite UI for {Platform}">Download it for free.</a></p>
+<code-view style="height:700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           alt="grid example">
+</code-view>
 
 <div class="divider--half"></div>
 
@@ -230,7 +230,7 @@ The {Platform} data grid is a component used to display tabular data in a series
 
 The Ignite UI for {Platform} Data Grid is not just for high-volume and real-time data. It is a feature-rich {Platform} grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
 
-This example demonstrates a few of the data grid’s key features:
+Here are a few of the data grid’s key features:
 
 <div class="divider--half"></div>
 
@@ -251,14 +251,6 @@ This example demonstrates a few of the data grid’s key features:
 
 <!-- <li>Column templates like [**Sparkline Column**](charts/types/sparkline-chart.md) and Image Column</li> -->
 </ul>
-
-<div class="divider"></div>
-<div class="divider"></div>
-
-<div class="sample-container loading" style="height: 520px">
-    <iframe seamless width="100%" height="100%" frameborder="0" src="{environment:lobDemosBaseUrl}/grid-finjs/grid-finjs-partial" onload="onSampleIframeContentLoaded(this);">
-    </iframe>
-</div>
 
 <div class="divider--half"></div>
 
