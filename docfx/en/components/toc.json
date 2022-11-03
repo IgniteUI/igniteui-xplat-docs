@@ -1731,7 +1731,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Other Components",
+    "name": "Deprecated Components",
     "header": true
   },
   {
