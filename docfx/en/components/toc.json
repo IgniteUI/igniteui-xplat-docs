@@ -688,7 +688,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular", "React"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
     "status": "NEW",
