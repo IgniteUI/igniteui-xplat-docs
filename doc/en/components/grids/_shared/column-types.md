@@ -197,7 +197,7 @@ Alternatively, you can do this in a more "Blazor" way by providing a template in
 <IgbColumn Field="ImageSource" BodyTemplate="ImageCellTemplate" />
 
 @code {
-    public RenderFragment<IgbCellTemplateContext> Template = (ctx) => {
+    public RenderFragment<IgbCellTemplateContext> ImageCellTemplate = (ctx) => {
         return @<img src=@ctx.Cell.Value style="height: 30px; width: 60px"/>;
     };
 }
