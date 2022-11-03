@@ -29,9 +29,16 @@ To get started with the {Platform} tree grid, first you need to install the Igni
 
 <!-- Blazor -->
 
-Please refer to these topics on adding the IgniteUI.Blazor package.
+Please refer to these topics on adding the IgniteUI.Blazor package:
+
 - [Getting Started](..\general-getting-started.md)
 - [Adding Nuget Package](..\general-nuget-feed.md)
+
+You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the tree grid:
+
+```html
+<link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
+```
 
 Afterwards, you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
