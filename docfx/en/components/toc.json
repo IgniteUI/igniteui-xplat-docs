@@ -1731,163 +1731,190 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Legacy",
+    "name": "Other Components",
     "header": true
   },
   {
+    "exclude": ["Angular", "React"],
     "name": "Table / Grid",
     "href": "grids/data-grid.md",
     "items": [
       {
+        "exclude": ["Angular", "React"],
         "name": "Accessibility Compliance",
         "href": "grids/data-grid-accessibility.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Binding Live Data",
         "href": "grids/data-grid-live-data.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Binding Local Data",
         "href": "grids/data-grid-local-data.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Localization",
         "href": "grids/data-grid-localization.md"
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Binding Comparison Data",
         "href": "grids/data-grid-type-comparison-table.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Binding Heatmap Data",
         "href": "grids/data-grid-type-heatmap-table.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Binding Matrix Data",
         "href": "grids/data-grid-type-matrix-table.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Binding Periodic Data",
         "href": "grids/data-grid-type-periodic-table.md",
         "status": ""
       },
       {
-        "exclude": ["Blazor"],
+        "exclude": ["Angular", "React", "Blazor"],
         "name": "Binding Virtual Data",
         "href": "grids/data-grid-remote-data.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Cell Activation",
         "href": "grids/data-grid-cell-activation.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Grid Editing",
         "href": "grids/data-grid-cell-editing.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Cell Merging",
         "href": "grids/data-grid-cell-merging.md"
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Cell Selection",
         "href": "grids/data-grid-cell-selection.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Animations",
         "href": "grids/data-grid-column-animation.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Filtering",
         "href": "grids/data-grid-column-filtering.md"
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Moving",
         "href": "grids/data-grid-column-moving.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Chooser",
         "href": "grids/data-grid-column-chooser.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Options",
         "href": "grids/data-grid-column-options.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Pinning",
         "href": "grids/data-grid-column-pinning.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Resizing",
         "href": "grids/data-grid-column-resizing.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Sorting",
         "href": "grids/data-grid-column-sorting.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Sparkline",
         "href": "grids/data-grid-type-sparkline-table.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Summaries",
         "href": "grids/data-grid-column-summaries.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Column Types",
         "href": "grids/data-grid-column-types.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "High Performance",
         "href": "grids/data-grid-performance.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Horizontal Scrolling",
         "href": "grids/data-grid-horizontal-scrolling.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Load & Save Grid Layout",
         "href": "grids/data-grid-load-save-layout.md"
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Row Grouping",
         "href": "grids/data-grid-row-grouping.md"
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Row Highlighting",
         "href": "grids/data-grid-row-highlighting.md",
         "status": ""
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Row Paging",
         "href": "grids/data-grid-row-paging.md"
       },
       {
+        "exclude": ["Angular", "React"],
         "name": "Row Pinning",
         "href": "grids/data-grid-row-pinning.md",
         "status": ""
