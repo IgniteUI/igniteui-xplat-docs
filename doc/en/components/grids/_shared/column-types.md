@@ -173,6 +173,38 @@ The default template is using material icons for visualization of boolean values
 <IgbColumn DataType="GridColumnDataType.Boolean"></IgbColumn>
 ```
 
+<!-- Blazor -->
+
+### Image
+
+While there does not exist a built-in template for an image column in the `{ComponentName}` at this time, this can be simply implemented by providing a `BodyTemplateScript` to one of your `Column`s. This property points at a JavaScript function that can be defined like so:
+
+```razor
+<IgbColumn Field="ImageSource" BodyTemplateScript="ImageCellTemplate" />
+
+//In JavaScript
+igRegisterScript("ImageCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div>
+        <img src="${ctx.cell.value}"/>
+    </div>`;
+}, false);
+```
+
+Alternatively, you can do this in a more "Blazor" way by providing a template in your .razor file to the `BodyTemplate` property of the `Column`. Please note though, that this will not be as performant as using the JavaScript `BodyTemplateScript` mentioned above. The code to do this in .razor can be found below:
+
+```razor
+<IgbColumn Field="ImageSource" BodyTemplate="ImageCellTemplate" />
+
+@code {
+    public RenderFragment<IgbCellTemplateContext> ImageCellTemplate = (ctx) => {
+        return @<img src=@ctx.Cell.Value style="height: 30px; width: 60px"/>;
+    };
+}
+```
+
+<!-- end: Blazor -->
+
 ### Currency
 
 #### Default template
