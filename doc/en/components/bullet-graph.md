@@ -47,7 +47,6 @@ The `XamBulletGraph` requires the following modules:
 builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
@@ -69,11 +68,9 @@ IgrBulletGraphModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
 import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
+import { ModuleManager } from 'igniteui-webcomponents-core';
 
 // register the modules
 ModuleManager.register(
@@ -81,6 +78,7 @@ ModuleManager.register(
     IgcBulletGraphModule
 );
 ```
+
 
 <div class="divider--half"></div>
 
