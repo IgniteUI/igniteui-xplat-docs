@@ -52,7 +52,7 @@ After implementing the number of daily earthquake occurrences for the last 7 day
 
 ### Adding NuGet Package
 
-In order to use the Blazor excel library, you need to add the following @using statement:
+In order to use the Blazor excel library, you need to install **IgniteUI.Blazor.Documents.Excel** package from NuGet and add the following namespace to your application:
 
 ```razor
 @using Infragistics.Documents.Excel
