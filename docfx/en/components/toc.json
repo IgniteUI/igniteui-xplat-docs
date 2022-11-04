@@ -200,9 +200,10 @@
     ]
   },
   {
-    "exclude":  ["Angular", "Blazor"],
+    "exclude":  ["Angular"],
     "name": "Expansion Panel",
-    "href": "layouts/expansion-panel.md"
+    "href": "layouts/expansion-panel.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
