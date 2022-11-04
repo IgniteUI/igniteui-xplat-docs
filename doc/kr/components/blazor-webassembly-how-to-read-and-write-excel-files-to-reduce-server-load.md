@@ -28,7 +28,7 @@ Topics to be covered:
 
 ## Blazor in a Nutshell: Understanding WebAssembly and Blazor Server
 
-In short, [Blazor](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) is an open source, cross-platform UI framework developed by Microsoft. It is used for building single-page web apps with .NET and C# instead of JavaScript. There are two ways to host web applications: [Blazor Server and Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly).
+In short, [Blazor](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) is an open source UI framework developed by Microsoft. It is used for building single-page web apps with .NET and C# instead of JavaScript. There are two ways to host web applications: [Blazor Server and Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly).
 
 Blazor WebAssembly, also known as WASM, is a standard developed by the [W3C](https://www.computerhope.com/jargon/w/w3c.htm) for creating software that runs in the web browser. It is compiled software that runs at near-native speeds on your CPU.
 
