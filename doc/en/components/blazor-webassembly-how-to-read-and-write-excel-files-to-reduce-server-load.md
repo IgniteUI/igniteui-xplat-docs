@@ -202,7 +202,7 @@ First, in the Blazor WebAssembly project file (.csproj), arrange the <BlazorWe
 
 ### Load the assembly using LazyAssemblyLoader
 
-Next, implement the assembly specified as "lazy loading" so that it will be loaded automatically when there’s a need for it. To load the assembly, inject the service of the class that comes standard with Blazor WebAssembly LazyAssemblyLoader from the DI container and call its LoadAssembliesAsync() [asynchronous method](https://www.infragistics.com/community/blogs/b/infragistics/posts/angular-async-await).
+Next, implement the assembly specified as "lazy loading" so that it will be loaded automatically when there’s a need for it. To load the assembly, inject the service of the class that comes standard with Blazor WebAssembly LazyAssemblyLoader from the DI container and call its LoadAssembliesAsync().
 
 
 In this sample application, the assembly file of the Infragistics Blazor Excel library is loaded when the download button of the Excel file is clicked.
