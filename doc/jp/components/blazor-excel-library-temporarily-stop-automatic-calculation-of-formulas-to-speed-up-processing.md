@@ -83,7 +83,7 @@ Infragistics Blazor Excel Engine を使用することで、以下が可能に�
 具体的には、Workbook オブジェクトの SuspendCalculations() メソッドと ResumeCalculations() メソッドをそれぞれ呼び出します (下記コード例)。
 
 ```razor
-@ using Infragistics.Documents.Excel
+@using Infragistics.Documents.Excel
 ...
 var workbook = Workbook.Load(...);
 

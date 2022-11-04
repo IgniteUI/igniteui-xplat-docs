@@ -8,9 +8,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Column Pinning
 
-A column or multiple columns can be pinned to the left or right side of the {Platform} UI `{ComponentName}`. **Column Pinning** in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentName}`. The {ProductName} `{ComponentName}` has a built-in column pinning UI, which can be used through the `{ComponentName}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
+Column Pinning in {ProductName} allows the end users to lock column in a particular column order, this will allow them to see it while horizontally scrolling the `{ComponentName}`. The {Platform} {ComponentTitle} has a built-in column pinning UI, which can be used through the `{ComponentName}`'s toolbar to change the pin state of the columns. In addition, you can define a custom UI and change the pin state of the columns via the Column Pinning feature.
 
 ## {Platform} {ComponentTitle} Column Pinning Example
+
+This example demonstrates how you can pin a column or multiple columns to the left or right side of the `{ComponentName}`.
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

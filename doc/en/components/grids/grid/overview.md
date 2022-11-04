@@ -31,7 +31,7 @@ mentionedTypes: ['Grid']
 ## {Platform} Grid Example
 
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
+In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](paging.md).
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -352,13 +352,13 @@ constructor() {
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitlecase(ctx.cell.value)}</span>    
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
 public subscribtionCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />   
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
     `;
 }
 
@@ -368,13 +368,13 @@ public updateValue(value: boolean){
 public deleteRow(rowId: number){
 }
 
-public formatTitlecase(value: string) {;
+public formatTitleCase(value: string) {;
 }
 ```
 
 <!-- Angular -->
 
-When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](../_shared/cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](../_shared/summaries.md), [selection](../_shared/selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
+When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](summaries.md), [selection](selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
 
 <!-- end: Angular -->
 
@@ -423,7 +423,7 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />    
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
     `;
 }
 
@@ -481,13 +481,13 @@ user.bodyTemplate = this.smallView;
 public normalViewTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="user-details">${ ctx.cell.value }</div>
-        <user-details-component></user-details-component>    
+        <user-details-component></user-details-component>
     `;
 }
 
 public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <div class="user-details-small">${ ctx.cell.value }</div>   
+        <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
 ```
@@ -566,7 +566,7 @@ constructor() {
 
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
 
-All available column data types could be found in the official [Column types topic](../_shared/column-types.md#default-template).
+All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
 ## Grid Data Structure
 
@@ -853,7 +853,7 @@ public getName(rowId: number){
     //row.data['name']
 }
 public getWeight(rowId: number){
-    //row.data['weight']['molecular'] 
+    //row.data['weight']['molecular']
 }
 ```
 
@@ -1149,18 +1149,18 @@ The `Grid`'s keyboard navigation provides a rich variety of keyboard interaction
 
 Check out these resources for more information:
 
- - [Grid Keyboard Navigation](../_shared/keyboard-navigation.md)
+ - [Grid Keyboard Navigation](keyboard-navigation.md)
  - [TreeGrid Keyboard Navigation](../tree-grid/keyboard-navigation.md)
  - [Hierarchical Grid Keyboard Navigation](../hierarchical-grid/keyboard-navigation.md)
  - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
 ## State Persistence
 
-Achieving a state persistence framework is easier than ever by using the new built-in [`GridState`](../_shared/state-persistence.md) directive.
+Achieving a state persistence framework is easier than ever by using the new built-in [`GridState`](state-persistence.md) directive.
 
 ## Sizing
 
-See the [Grid Sizing](../_shared/sizing.md) topic.
+See the [Grid Sizing](sizing.md) topic.
 
 
 <!-- Angular -->
@@ -1225,17 +1225,17 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 ## Additional Resources
 
-* [Grid Sizing](../_shared/sizing.md)
-* [Virtualization and Performance](../_shared/virtualization.md)
-* [Paging](../_shared/paging.md)
-* [Filtering](../_shared/filtering.md)
-* [Sorting](../_shared/sorting.md)
-* [Summaries](../_shared/summaries.md)
-* [Column Moving](../_shared/column-moving.md)
-* [Column Pinning](../_shared/column-pinning.md)
-* [Column Resizing](../_shared/column-resizing.md)
-* [Selection](../_shared/selection.md)
-* [Column Data Types](../_shared/column-types.md#default-template)
+* [Grid Sizing](sizing.md)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+* [Column Data Types](column-types.md#default-template)
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
 
 Our community is active and always welcoming to new ideas.

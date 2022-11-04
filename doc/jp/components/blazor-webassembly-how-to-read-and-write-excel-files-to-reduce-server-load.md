@@ -58,8 +58,8 @@ Infragistics Blazor Excel ライブラリの利用には、NuGet パッケージ
 
 ```razor
 @* _Imports.razor *@
-@ using System.Net.Http
-@ using Infragistics.Documents.Excel @* 👈 この行を追加 *@
+@using System.Net.Http
+@using Infragistics.Documents.Excel @* 👈 この行を追加 *@
 ```
 
 ### JavaScript ファイルへの参照の追加
@@ -111,7 +111,7 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
     ...
     // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
-    // </summary>  
+    // </summary>
     private async Task OnClickedDownloadAsync()
     {
         // ⚠️注意 - Blazor WebAssembly 上で Excel ライブラリを使うには、Workbook.InProcessRuntime 静的プロパティの初期設定が必要です。
@@ -192,7 +192,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
   <!-- 遅延読み込みさせたいアセンブリファイル (.dll) のファイル名を、
          BlazorWebAssemblyLazyLoad 要素で指定します。 -->
   <ItemGroup>
-    <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Core.dll" /> 
+    <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Core.dll" />
     <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Excel.dll" />
   </ItemGroup>
   ...
@@ -206,15 +206,15 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 今回のサンプルアプリケーションでは、Excel ファイルのダウンロードボタンがクリックされたときに、Infragistics Blazor Excel ライブラリのアセンブリファイルを読み込むようにします。下記はその抜粋です。
 
 ```razor
-@ using Microsoft.AspNetCore.Components.WebAssembly.Services
+@using Microsoft.AspNetCore.Components.WebAssembly.Services
 ...
 @inject LazyAssemblyLoader AssemblyLoader
 @code {
-    ... 
-    // <summary>  
+    ...
+    // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
-    // </summary>  
-    private async Task OnClickedDownloadAsync() 
+    // </summary>
+    private async Task OnClickedDownloadAsync()
     {
         // プロジェクトファイル (IgbExcelDemo.Client.csproj) にて遅延読み込みを指定しておいた
         // アセンブリファイル (.dll) を、ここで AssemblyLoader を使って読み込みます。
@@ -222,7 +222,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
         await this.AssemblyLoader.LoadAssembliesAsync(new []
         {
             "IgniteUI.Blazor.Documents.Core.dll",
-            "IgniteUI.Blazor.Documents.Excel.dll" 
+            "IgniteUI.Blazor.Documents.Excel.dll"
         });
     ...
 ```
@@ -233,35 +233,35 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 <img src="../images/general/lazy-loading-of-assembly.png" />
 
-しかし実際にダウンロードボタンをクリックすると、「System.IO.FileNotFoundException: Could not load file or assembly」例外が発生してしまいます。 
+しかし実際にダウンロードボタンをクリックすると、「System.IO.FileNotFoundException: Could not load file or assembly」例外が発生してしまいます。
 
 これは遅延読み込みを行なっているのと同じメソッドのスコープ内でその遅延読み込みされるアセンブリ内に存在する型を参照していると、まだそのアセンブリが読み込まれていないのに、そのメソッドのスコープ内の型を解決しようとして、この例外となってしまいます。この問題を回避するには、遅延読み込みされるアセンブリ内に存在している型 (このサンプル アプリケーションの例ですと、Workbook クラスなど) を参照している処理を、別の独立したメソッドに切り出し、そのメソッドを呼び出すようにします。下記はその抜粋です。
 
 ```razor
 ...
 @code {
-    ... 
-    // <summary>  
+    ...
+    // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
-    // </summary>  
-    private async Task OnClickedDownloadAsync() 
+    // </summary>
+    private async Task OnClickedDownloadAsync()
     {
         ...
         await this .AssemblyLoader.LoadAssembliesAsync(new []
         {
-            "IgniteUI.Blazor.Documents.Core.dll", 
+            "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
         });
 
         // アセンブリの遅延読み込みを行なってから、その遅延読み込みされるアセンブリ内の機能を使うメソッドを呼び出します。
         // (アセンブリの遅延読み込みを行なうメソッド内で直接、遅延読み込みしたアセンブリ内の機能を参照していると、
         //  System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
-        await this.DownloadAsExcelAsync(); 
+        await this.DownloadAsExcelAsync();
     }
 
-    // <summary>  
+    // <summary>
     // アセンブリの遅延読み込みを有効にするために、Excel ライブラリを使用するコードを独立したメソッドに切り出します。
-    // </summary>  
+    // </summary>
     private async ValueTask DownloadAsExcelAsync()
     {
         // このメソッド内で Workbook クラスを使った Excel ファイルの読み書きを行ないます
@@ -277,5 +277,5 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 * 数式の自動計算を一時停止する。
 * AOT（Ahead-Of-Time）コンパイルを使用する。
-* サーバーサイドで実行する。 
+* サーバーサイドで実行する。
 * "アセンブリの遅延読み込み" を指定する。

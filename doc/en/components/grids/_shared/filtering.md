@@ -50,7 +50,7 @@ Property `Filterable` enables you to specify the following options:
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
-    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String1"></IgbColumn>
+    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
 </IgbGrid>
 ```
@@ -102,7 +102,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
-    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String1"></IgbColumn>
+    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
 </IgbGrid>
 ```

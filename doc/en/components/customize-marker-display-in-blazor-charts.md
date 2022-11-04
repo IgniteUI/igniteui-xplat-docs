@@ -37,8 +37,8 @@ The Volume property value of the Blazor Chart will be used as the size of the 
 
 ```razor
 public record SampleDataType (
-    string Name, 
-    double XValue, 
+    string Name,
+    double XValue,
     double YValue,
     double Volume, // Set Shape 👈this property to the size of the marker,
     System.Drawing.Color // Shape 👈Refer to this property as the fill color
@@ -49,20 +49,20 @@ Using the above SampleDataType record type, prepare the sample data accordingly 
 
 ```razor
 // In the @code block in the sample Razor component (.razor)
-public IEnumerable <SampleDataType> DataSource { get ; } = new SampleDataType []  
+public IEnumerable <SampleDataType> DataSource { get ; } = new SampleDataType []
 {
-    new ( Name: "item1" , XValue: 0 , YValue: 2 , Volume: 5.7 , Color: System. Drawing . Color . Fuchsia ),
-    new ( Name: "item2" , XValue: 2 , YValue: 5 , Volume: 3.6 , Color: System. Drawing . Color . MediumOrchid ),
-    new ( Name: "item3" , XValue: 3 , YValue: 1 , Volume: 2.3 , Color: System. Drawing . Color . DarkViolet ),
-    new ( Name: "item4" , XValue: 4 , YValue: 6 , Volume: 8.5 , Color: System. Drawing . Color . SlateBlue ),
-    new ( Name: "item5" , XValue: 6 , YValue: 3 , Volume: 4.2 , Color: System. Drawing . Color . RoyalBlue ),
+    new ( Name: "item1" , XValue: 0 , YValue: 2 , Volume: 5.7 , Color: System.Drawing.Color.Fuchsia ),
+    new ( Name: "item2" , XValue: 2 , YValue: 5 , Volume: 3.6 , Color: System.Drawing.Color.MediumOrchid ),
+    new ( Name: "item3" , XValue: 3 , YValue: 1 , Volume: 2.3 , Color: System.Drawing.Color.DarkViolet ),
+    new ( Name: "item4" , XValue: 4 , YValue: 6 , Volume: 8.5 , Color: System.Drawing.Color.SlateBlue ),
+    new ( Name: "item5" , XValue: 6 , YValue: 3 , Volume: 4.2 , Color: System.Drawing.Color.RoyalBlue ),
 };
 ```
 
 Then, bind the sample data to the IgbScatterSeries data source, provided in the separately prepared IgbDataChart.
 
 ```razor
-@ * In the markup in the sample Razor component (.razor) * @
+@* In the markup in the sample Razor component (.razor) *@
 
 <IgbDataChart Height = "320px" Width = "320px">
     <IgbNumericXAxis Name = "xAxis" MinimumValue = "0" MaximumValue = "7"/>
@@ -111,12 +111,12 @@ function customMarkerTemplateFunc () {
            // In this example, based on the Volume property value of the data to draw
            // 3 times that radius (so the diameter is 2 times that) Circle as a marker
            // Width and height are calculated and set for drawing.
-           const item = measureInfo. data . item ;
-           const size = item. Volume * 3 * 2 ;
-           measureInfo. width = size;
-           easureInfo. height = size;
+           const item = measureInfo.data.item;
+           const size = item.Volume * 3 * 2;
+           measureInfo.width = size;
+           measureInfo.height = size;
        }
-   } 
+   }
 }
 
 ...
@@ -124,10 +124,10 @@ function customMarkerTemplateFunc () {
 
 ## Implementing a render Method for the Marker's Custom Rendering Object
 
-Next, we continue by implementing the render method. This method is called from the Ignite UI side every time a marker needs to be rendered. 
-During that time, the JavaScript-side representation of the data to be rendered will be included in the .data.item field of the argument object when this render method is called (similarly to the measure method). 
+Next, we continue by implementing the render method. This method is called from the Ignite UI side every time a marker needs to be rendered.
+During that time, the JavaScript-side representation of the data to be rendered will be included in the .data.item field of the argument object when this render method is called (similarly to the measure method).
 
-Therefore, when calling the render method, the data to be drawn can be referenced as a marker drawing parameter via its JavaScript-side representation. 
+Therefore, when calling the render method, the data to be drawn can be referenced as a marker drawing parameter via its JavaScript-side representation.
 You will see that the method draws a marker on the 2D context object of the HTML Canvas element passed via that argument.
 
 ```razor
@@ -135,7 +135,7 @@ You will see that the method draws a marker on the 2D context object of the HTML
 
 function customMarkerTemplateFunc () {
     return {
-        ... 
+        ...
         render: function ( renderInfo ) {
             // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
             // Take this out
@@ -146,14 +146,14 @@ function customMarkerTemplateFunc () {
             // For the marker fill color, use the Color property value of the data to be drawn.
             // (By the way, the default marker fill color is
             // stored in renderInfo.data.actualItemBrush.fill)
-            const color = renderInfo.data.item .Color; 
+            const color = renderInfo.data.item .Color;
             // Draw a marker against the 2D context of the HTML Canvas element
             // (Draw a perfect circle marker with the size calculated by the measure method)
-            const ctx = renderInfo.context ; 
-            ctx.beginPath(); 
-            ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`; 
-            ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
-            ctx.fill(); 
+            const ctx = renderInfo.context ;
+            ctx.beginPath();
+            ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`;
+            ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180);
+            ctx.fill();
         }
     }
 }
@@ -190,7 +190,7 @@ The above JavaScript program is loaded into the browser. However, in order to av
 (function () {
     function customMarkerTemplateFunc ( ) {
         ...
-    } 
+    }
     igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
 }) ();
 ```
@@ -204,10 +204,10 @@ Mind the arrangement order of the script elements in order to ensure it will be 
 <script src="_content / IgniteUI.Blazor / app.bundle.js"> </script>
 
 <!-After JavaScript in Ignite UI for Blazor,
-Load a custom drawing JavaScript program for marker display-> 
+Load a custom drawing JavaScript program for marker display->
 
-<script src="customMarkerTemplateFunc.js"></script>  
-... 
+<script src="customMarkerTemplateFunc.js"></script>
+...
 ```
 
 ## Specifying the “Script Name” in the Series Parameters
@@ -218,12 +218,12 @@ There is a string parameter called MarkerTemplateScript, where you specify the s
 
 ```razor
 @* In the markup in the sample Razor component (.razor) *@
-<IgbDataChart Height = "320px" Width = "320px">  
-    ... 
+<IgbDataChart Height = "320px" Width = "320px">
+    ...
     <IgbScatterSeries ...
     ...
     MarkerTemplateScript = "customMarkerTemplateFunc"/>
-</IgbDataChart> 
+</IgbDataChart>
 ```
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.
 
@@ -233,6 +233,6 @@ The scatter plot is now displayed with markers of size and fill color according 
 
 We find Blazor a great choice for .NET developers who want to build high-end web applications, manage data visualizations, and improve the default look and feel of Data Charts without dealing with the complexity of popular [frameworks like Angular](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-vs-angular).
 
-Doing this, however, takes more than just tweaking colors, margins, and paddings. Knowing that it’s critical to have a data visualization toolset that can handle voluminous, real-time data loads, while simultaneously providing beautiful and interactive experience, we invested efforts and time in improving all data visualization capabilities and data charts in Ignite UI for Blazor in [the latest Ultimate 22.1 Product Release](https://www.infragistics.com/community/blogs/b/jason_beres/posts/product-release-whats-new-in-infragistics-ultimate-22-1). 
+Doing this, however, takes more than just tweaking colors, margins, and paddings. Knowing that it’s critical to have a data visualization toolset that can handle voluminous, real-time data loads, while simultaneously providing beautiful and interactive experience, we invested efforts and time in improving all data visualization capabilities and data charts in Ignite UI for Blazor in [the latest Ultimate 22.1 Product Release](https://www.infragistics.com/community/blogs/b/jason_beres/posts/product-release-whats-new-in-infragistics-ultimate-22-1).
 
-Some of the most recent add-ons to Ignite UI for Blazor include: Auto-Label Rotation, Style Events, Properties for Label Gaps, Positioning in Callout Layers, Highlighting Series Modes, Horizontal & Vertical Scrollbars, Margin Angle Modes and [Blazor grids](https://www.youtube.com/watch?v=1dWR_N4teDs) and components such as Data Legend and Data Tooltip. 
+Some of the most recent add-ons to Ignite UI for Blazor include: Auto-Label Rotation, Style Events, Properties for Label Gaps, Positioning in Callout Layers, Highlighting Series Modes, Horizontal & Vertical Scrollbars, Margin Angle Modes and [Blazor grids](https://www.youtube.com/watch?v=1dWR_N4teDs) and components such as Data Legend and Data Tooltip.
