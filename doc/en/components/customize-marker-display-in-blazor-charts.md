@@ -135,7 +135,7 @@ You will see that the method draws a marker on the 2D context object of the HTML
 
 function customMarkerTemplateFunc () {
     return {
-        ...
+        // ...
         render: function ( renderInfo ) {
             // Since the renderInfo passed as an argument is packed with coordinate-related information for drawing,
             // Take this out
@@ -189,7 +189,7 @@ The above JavaScript program is loaded into the browser. However, in order to av
 
 (function () {
     function customMarkerTemplateFunc ( ) {
-        ...
+        // ...
     }
     igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
 }) ();
@@ -219,10 +219,9 @@ There is a string parameter called MarkerTemplateScript, where you specify the s
 ```razor
 @* In the markup in the sample Razor component (.razor) *@
 <IgbDataChart Height = "320px" Width = "320px">
-    ...
-    <IgbScatterSeries ...
-    ...
-    MarkerTemplateScript = "customMarkerTemplateFunc"/>
+    @*...*@
+    <IgbScatterSeries MarkerTemplateScript = "customMarkerTemplateFunc"/>
+    @*...*@
 </IgbDataChart>
 ```
 The scatter plot is now displayed with markers of size and fill color according to the properties of the bound item.

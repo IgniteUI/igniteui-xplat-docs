@@ -325,7 +325,7 @@ import {
     IgxChipsModule
 } from 'igniteui-angular';
 
-@NgModule({    
+@NgModule({
     imports: [IgxInputGroupModule, IgxIconModule, IgxRippleModule, IgxButtonModule, IgxChipsModule],
 })
 export class AppModule {}
@@ -375,7 +375,7 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
         (keydown)="searchKeyDown($event)" />
 
     <igx-suffix *ngIf="searchText.length > 0">
-        ...
+
     </igx-suffix>
 </igx-input-group>
 ```
@@ -493,7 +493,7 @@ On the right in our input group, let's create three separate containers with the
             <span>Exact Match</span>
         </igx-chip>
     </igx-chips-area>
-</div>    
+</div>
 ```
 
 - For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.

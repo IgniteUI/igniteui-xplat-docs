@@ -92,12 +92,12 @@ This can be done by using the following code:
 @inject IJSRuntime JSRuntime
 ...
 @code {
-    ...
+    // ...
     // ⚠️ Note-To use the Excel library on Blazor WebAssembly,
     // you need to initialize the Workbook.InProcessRuntime static property.
     if (Workbook.InProcessRuntime == null )
     Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
-    ...
+    // ...
 ```
 
 ### Reading and Writing Excel Files Using the Workbook Class
@@ -112,9 +112,9 @@ Note that the download triggering process on Blazor applications used an MIT-lic
 ...
 @code
 {
-    ...
+    // ...
     private IEnumerable <EarthquakeCountParDay>? _EarthquakeCountParDays;
-    ...
+
     // <summary>
     // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel file and downloaded.
     // </summary>
@@ -144,7 +144,7 @@ Note that the download triggering process on Blazor applications used an MIT-lic
         workBook.Save (memStream);
         await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application / octet-stream" ,memStream.ToArray());
     }
-    ...
+    // ...
 ```
 
 As you can see, the entire processing of the Excel file is performed on the Web browser and nothing happens on the Web server side.  Therefore, even if several clients execute the Excel file generation at the same time, the load on the Web server side will not increase rapidly.
@@ -188,15 +188,15 @@ That’s why we suggest using the "delayed loading of assembly" technique (in 
 First, in the Blazor WebAssembly project file (.csproj), arrange the <BlazorWebAssemblyLazyLoad> elements inside the <ItemGroup> elements and list the names of the assembly files (.dll) that you want to lazy load.
 
 ```razor
-<!-Blazor WebAssembly project file (.csproj)->
+<!- Blazor WebAssembly project file (.csproj) ->
 <Project Sdk = "Microsoft.NET.Sdk.BlazorWebAssembly" >
-  ...
+  <!-...->
   <!-Specify the file name of the assembly file (.dll) that you want to lazy load in the BlazorWebAssemblyLazyLoad element. ->
   <ItemGroup>
     <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Core.dll" />
     <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Excel.dll" />
   </ItemGroup>
-  ...
+  <!-...->
 </ Project>
 ```
 
@@ -212,7 +212,7 @@ In this sample application, the assembly file of the Infragistics Blazor Excel l
 ...
 @inject LazyAssemblyLoader AssemblyLoader
 @code {
-    ...
+    // ...
     // <summary>
     // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel    file and downloaded.
     // </summary>
@@ -225,7 +225,7 @@ In this sample application, the assembly file of the Infragistics Blazor Excel l
             "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
         });
-    ...
+    // ...
 ```
 
 ### Separate the processing of the lazy loaded assembly into another scope
@@ -241,13 +241,13 @@ This exception occurs when a method that references a type that exists in the as
 ```razor
 ...
 @code {
-    ...
+    // ...
     // <summary>
     // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel file and downloaded.
     // </summary>
     private async Task OnClickedDownloadAsync()
     {
-        ...
+        // ...
         await this .AssemblyLoader.LoadAssembliesAsync ( new [] )
         {
             "IgniteUI.Blazor.Documents.Core.dll",
@@ -265,7 +265,7 @@ This exception occurs when a method that references a type that exists in the as
     {
         // Read and write Excel files using the Workbook class in this method
     }
-    ...
+    // ...
 ```
 
 ## Summary and Key Article Takeaways

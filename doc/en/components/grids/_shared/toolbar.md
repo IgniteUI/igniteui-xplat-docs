@@ -121,7 +121,7 @@ This will make sure you always have the correct grid instance in the scope of yo
 
 ```html
 <igx-hierarchical-grid>
-    ...
+    <!--...-->
     <igx-row-island>
         <!--
             You can name the binding from igxGridToolbar however you want. Just make sure to use
@@ -131,7 +131,7 @@ This will make sure you always have the correct grid instance in the scope of yo
             <igx-grid-toolbar-title>Child toolbar {{ gridRef.parentIsland.level }}</igx-grid-toolbar-title>
         </igx-grid-toolbar>
     </igx-row-island>
-    ...
+    <!--...-->
 </igx-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -176,7 +176,7 @@ toolbar interaction components.
     <igx-grid-toolbar-actions>
         <button igxButton>Action</button>
         <igx-select></igx-select>
-        ...
+        <!--...-->
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
@@ -289,7 +289,7 @@ If you need a refresher on the DI in {Platform}, check the [official guide](http
 import { IgxExcelExporterService, IgxCsvExporterService } from 'igniteui-{Platform}';
 
 @NgModule({
-    ...
+    //...
     providers: [IgxExcelExporterService, IgxCsvExporterService ]
 })
 export class AppModule { ... }

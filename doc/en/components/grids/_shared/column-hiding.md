@@ -154,13 +154,13 @@ Let's say we want to manually define our `ColumnActionsComponent`, add the `Colu
 ```typescript
 // app.module.ts
 
-...
+//...
 import {
-    ...
+    //...
     IgxColumnActionsModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxColumnActionsModule],
 })
 export class AppModule {}
@@ -237,11 +237,11 @@ We can also allow the user to choose the display order of the columns in the col
 Let's create a couple of nicely designed radio buttons for our options! We just have to go ahead and get the [**IgxRadio**](../radio-button.md) module.
 
 ```typescript
-import {    
+import {
     IgxRadioModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxRadioModule]
 })
 export class AppModule {}
@@ -271,7 +271,7 @@ We can easily prevent the user from being able to hide columns through the colum
 <div class="gridContainer">
     <{ComponentSelector}>
         <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>        
+        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
     </{ComponentSelector}>
 </div>
 ```

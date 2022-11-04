@@ -457,7 +457,7 @@ The cross-field validator can be added to the `FormGroup` of the row from `FormG
 ```html
 <igx-tree-grid igxPreventDocumentScroll #treeGrid [batchEditing]="true" [data]="data" primaryKey="ID"
     foreignKey="ParentID" [width]="'100%'" [height]="'500px'" [rowEditable]="true" [pinning]="pinningConfig"
-    (formGroupCreated)="formCreateHandler($event)">    
+    (formGroupCreated)="formCreateHandler($event)">
 </igx-tree-grid>
 ```
 
@@ -608,9 +608,12 @@ public cellStyles = {
 ```html
 <igx-hierarchical-grid [rowStyles]="rowStyles">
     <igx-column field="Artist" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
-    ...
+    <!--...-->
     <igx-row-island [key]="'Albums'" [rowStyles]="rowStyles">
         <igx-column field="Album" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
+    </igx-row-island>
+    <!--...-->
+</igx-hierarchical-grid>
 ```
 
 <!-- ComponentEnd:HierarchicalGrid -->
