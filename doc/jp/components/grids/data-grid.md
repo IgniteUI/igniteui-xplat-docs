@@ -56,12 +56,12 @@ npm install --save {PackageInputs}
 
 <!-- Blazor -->
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -95,14 +95,13 @@ ModuleManager.register(
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbGridColumnOptionsModule),
-  typeof(IgbDataGridToolbarModule),
-  typeof(IgbSparklineModule)
+    typeof(IgbDataGridModule),
+    typeof(IgbDataGridToolbarModule),
+    typeof(IgbSparklineModule)
 );
 ```
 
