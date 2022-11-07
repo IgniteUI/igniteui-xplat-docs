@@ -29,7 +29,7 @@ _language: ja
 
 - [列の表示状態](data-grid-column-chooser.md)
 - [列のピン固定](data-grid-column-pinning.md)
-- [列移動](data-grid-column-moving.md)
+- [列の移動](data-grid-column-moving.md)
 - [列のサイズ変更](data-grid-column-resizing.md)
 - [行グループ](data-grid-row-grouping.md)
 - [列のソート](data-grid-column-sorting.md)

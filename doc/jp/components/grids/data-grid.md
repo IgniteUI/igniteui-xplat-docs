@@ -451,7 +451,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 - [列アニメーション](data-grid-column-animation.md)
 - [列の選択](data-grid-column-chooser.md)
 - [列フィルタリング](data-grid-column-filtering.md)
-- [列移動](data-grid-column-moving.md)
+- [列の移動](data-grid-column-moving.md)
 - [列のオプション](data-grid-column-options.md)
 - [列サイズの変更](data-grid-column-resizing.md)
 - [列の並ソート](data-grid-column-sorting.md)

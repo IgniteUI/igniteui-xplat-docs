@@ -902,7 +902,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列の非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列の集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
     <li>[ピン固定列](data-grid-column-pinning.md)</li>
@@ -930,7 +930,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列の非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列の集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
 </ul>
@@ -957,7 +957,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
 </ul>
