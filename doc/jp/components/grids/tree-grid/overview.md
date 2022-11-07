@@ -9,30 +9,30 @@ _language: ja
 
 {ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作できます。最小限のコードでデータをすばやくバインドするか、さまざまなイベントを使用してさまざまな動作をカスタマイズします。このコンポーネントは、データ選択、Excel スタイル フィルタリング、ソート、ページング、テンプレート、列移動などの豊富な機能を提供します。マテリアル テーブルをベースとした UI ツリー グリッドにより、表形式のデータの表示がさらに簡単できれいになりました。
 
-## {Platform} Tree Grid Example
+## {Platform} ツリー グリッドの例
 
-In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component.  
+この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、スパークライン コンポーネントを使用したセル テンプレートが含まれています。 
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
-           alt="grid example">
+           alt="グリッドの例">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Getting Started with Ignite UI for {Platform} Tree Grid
+## Ignite UI for {Platform} Tree Grid で作業を開始
 
-### Dependencies
+### 依存関係
 
-To get started with the {Platform} tree grid, first you need to install the Ignite UI for {Platform} package.
+{Platform} ツリー グリッドを初期化するには、Ignite UI for {Platform} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 
-Please refer to these topics on adding the IgniteUI.Blazor package:
+IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 
-- [Getting Started](..\general-getting-started.md)
-- [Adding Nuget Package](..\general-nuget-feed.md)
+- [作業の開始](..\general-getting-started.md)
+- [NuGet パッケージの追加](..\general-nuget-feed.md)
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the tree grid:
 
@@ -40,7 +40,7 @@ You also need to include the following CSS link in the index.html file of your a
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
-Afterwards, you may start implementing the control by adding the following namespaces:
+以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
 </pre>
@@ -55,37 +55,37 @@ Afterwards, you may start implementing the control by adding the following names
 builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 ```
 
-### Usage
+### 使用方法
 
 Now that we have the tree grid package imported, let’s get started with the basic configuration and bind to local data:
 
 The tree grid shares a lot of features with the grid, but it also adds the ability to display its data hierarchically.
-In order to achieve this, the tree grid provides us with a couple of ways to define the relations among our data objects - by using a child collection for every data object or by using primary and foreign keys for every data object.
+ツリー グリッドは、各データ オブジェクトの子コレクションまたは各データ オブジェクトにプライマリキーまたは外部キーを使用してデータ オブジェクト内の関係を定義できます。
 
-### Tree Cells
+### ツリー セル
 
-Regardless of which option is used for building the tree grid's hierarchy (child collection or primary and foreign keys), the tree grid's rows are constructed of two types of cells:
+ツリー グリッド階層の構築に使用するオプション (子コレクションまたは主キーまたは外部キー) にかかわらず、ツリー グリッドの行は 2 タイプのセルで構成されます。
 
-- `GridCell` - Ordinary cell that contains a value.
-- `GridCell` - Tree cell that contains a value, an expand/collapse indicator and an indentation div element, which is based on the level of the cell's row. The level of a row component can be accessed through the `level` property of its inner `treeRow`.
+- `GridCell` - 値を含む標準セル。
+- `GridCell` - セル行のレベルに基づいた値、インジケーターの展開/縮小、インデント div 要素を含むツリー セル。The level of a row component can be accessed through the `level` property of its inner `treeRow`.
 
 > [!NOTE]
-> Each row can have only one tree cell, but it can have multiple (or none) ordinary cells.
+> 各行にはツリー セルを 1 つのみ含むことができますが、標準セルは複数含むことが可能です。
 
-### Initial Expansion Depth
+### 初期展開時の深さ
 
-Initially the tree grid will expand all node levels and show them. This behavior can be configured using the `expansionDepth` property. By default its value is **Infinity** which means all node levels will be expanded. You may control the initial expansion depth by setting this property to a numeric value. For example **0** will show only root level nodes, **1** will show root level nodes and their child nodes and so on.
+初期時のツリーグリッドは、すべてのノード レベルを展開して表示します。この動作は `expansionDepth` プロパティを使用して構成できます。デフォルトの値は **Infinity** ですべてのノードが展開されます。初期時の展開の深さは、このプロパティを数値に設定して制御できます。たとえば、 **0** はルート レベルのノードのみを表示し、**1** はルートレベルと子ノードを表示します。
 
-### Child Collection
-When we are using the **child collection** option, every data object contains a child collection, that is populated with items of the same type as the parent data object. This way every record in our tree grid will have a direct reference to any of its children. In this case the `data` property of our tree grid that contains the original data source will be a hierarchically defined collection.
+### 子コレクション
+**child collection** オプションを使用して各データ オブジェクトは子コレクションを含み、親データ オブジェクトとして同じタイプの項目で生成します。これによりツリー グリッドの各レコードがその子への直接の参照を持つことができます。元のデータ ソースを含むツリー グリッドの `data` プロパティが階層が定義されたコレクションになります。
 
-In order for the tree grid to build the hierarchy, we will have to set its `childDataKey` property to the name of the child collection that is used in each of our data objects. In our case that will be the **Employees** collection.
-In addition, we will disable the automatic column generation and define them manually by matching them to the actual properties of our data objects. (The **Employees** collection will be automatically used for the hierarchy, so there is no need to include it in the columns' definitions.)
+In order for the tree grid to build the hierarchy, we will have to set its `childDataKey` property to the name of the child collection that is used in each of our data objects. このサンプルでは **Employees** コレクションです。
+更に自動列生成を無効にしてデータ オブジェクトの実際のプロパティとの一致を手動で定義します。**Employees** コレクションが階層で自動的に使用されるため、列定義に含める必要はありません。
 
 We will now enable the row selection and paging features of the tree grid by using the `rowSelection` and the `paging` properties.
-We will also enable the summaries feature on the first column and the filtering, sorting, editing, moving and resizing features for each of our columns.
+最初の列に集計機能、各列にはフィルタリング、並べ替え、編集、サイズ変更機能を有効にします。
 
 Finally, we will enable the toolbar of our tree grid, along with the column hiding, column pinning and exporting features by using the `GridToolbarComponent`, `GridToolbarHidingComponent`, `GridToolbarPinningComponent` and `GridToolbarExporterComponent` respectively.
 
-### Primary and Foreign keys
-When we are using the **primary and foreign keys** option, every data object contains a primary key and a foreign key. The primary key is the unique identifier of the current data object and the foreign key is the unique identifier of its parent. In this case the `data` property of our tree grid that contains the original data source will be a flat collection.
+### プライマリと外部キー
+**primary and foreign keys** オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。

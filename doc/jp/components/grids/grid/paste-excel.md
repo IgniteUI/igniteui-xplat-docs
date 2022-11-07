@@ -1,40 +1,40 @@
 ---
-title: {Platform} Excel Like {ComponentTitle} - Infragistics
+title: {Platform} Excel スタイルの {ComponentTitle} - インフラジスティックス
 _description: API を使用して最小限のコードで Excel からのデータ貼り付けや選択した {Platform} グリッド データを簡単にエクスポートできます。
 _keywords: export selected, igniteui for {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
 ---
 
-# {Platform} Grid Paste from Excel
+# {Platform} Grid Excel から貼り付け
 
-The Ignite UI for {Platform} `Grid` can read Excel data that is copied to the clipboard. In this section we will show you how to do this with some custom code.
+Ignite UI for {Platform} `Grid` は、クリップボードにコピーした Excel データを読み込むことができます。このトピックでは、カスタムコードを使用して実装する方法について説明します。
 
-## {Platform} Paste from Excel Example
+## {Platform} Excel から貼り付けの例
 
-This sample demonstrates how to implement pasting from Excel into the `Grid` Material UI table.
-To work with the sample open up any Excel spreadsheet, copy some rows, and paste it into the grid using the keyboard (Ctrl + V, Shift + Insert, Command + V).
+このサンプルでは、Excel から `Grid` の貼り付けを実装する方法を紹介します。
+サンプルは、Excel スプレッドシートを開いて行をコピーし、キーボード (Ctrl + V、Shift + Insert、Command + V) を使用してグリッドに貼り付けます。
 
-On the top there is a dropdown button with 2 options:
+上部に2 つのオプションとドロップダウン ボタンがあります。
 <ol>
-<li>"Paste data as new rows" – in this mode any data copied from Excel will be appended to the grid as new rows</li>
-<li>"Paste starting from active cell" – in this mode the data in the grid will be overwritten.</li>
+<li>新規行としてデータを貼り付け - このモードでは、Excel からコピーしたデータが新規行としてグリッドに追加されます。</li>
+<li>アクティブ セルから開始する貼り付け - このモードではグリッド データが上書きされます。</li>
 </ol>
 
-The new data after the paste is decorated in Italic.
+貼り付け後の新しいデータはイタリックで装飾されます。
 
 
 <code-view style="height: 570px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-paste-options"
-           alt="{Platform} Paste from Excel Example">
+           alt="{Platform} Excel から貼り付けの例">
 </code-view>
 
 <div class="divider"></div>
 
-## Usage
+## 使用方法
 
-You should add the `paste-handler` directive (you can find its code in the next section) to the `Grid` and handle its `onDataProcessed` event. The `onDataProcessed` event has one parameter that gives you access to the Excel data in the form of an array. For reference see the `addRecords` and `updateRecords` methods.
+`paste-handler` ディレクティブ (次のセクションにコードがあります) を `Grid` に追加して `onDataProcessed` イベントを処理する必要があります。`onDataProcessed` イベントに配列フォームの Excel データへアクセスを与えるパラメーターがあります。詳細については、`addRecords` と `updateRecords` メソッドを参照してください。
 
 ```html
 <-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
@@ -137,9 +137,9 @@ You should add the `paste-handler` directive (you can find its code in the next 
 ```
 <div class="divider"></div>
 
-## Paste Handler Directive
+## Paste Handler (貼り付けハンドラー) ディレクディブ
 
-This is the `paste-handler` implementation. The code creates a DOM `textarea` element which is used to receive the pasted data from the clipboard. When the data is pasted in the `textarea` the directive parses it into an array and then emits a custom event `onDataProcessed` passing the parsed data.
+`paste-handler` の実装です。クリップボードから張り付けたデータを受け取るために使用される DOM `textarea` 要素をコードで作成します。データを `textarea` に張り付ける際にディレクティブはそれを配列へ解析し、解析データを渡すカスタム イベント `onDataProcessed` を発生します。
 
 ```typescript
 import { Directive, EventEmitter, HostListener, Output} from "@{Platform}/core";
@@ -220,16 +220,16 @@ export class PasteHandler {
 
 ```
 
-## API References
+## API リファレンス
 * `GridComponent`
 
-## Additional Resources
+## その他のリソース
 <div class="divider--half"></div>
 
-* [Excel Exporter](export-excel.md) - Use the Excel Exporter service to export data to Excel from Grid. It also provides the option to only export the selected data from the Grid. The exporting functionality is encapsulated in the ExcelExporterService class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the ExcelExporterService's export method and pass the Grid component as first argument.
+* [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングや並べ替えなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
 
 <div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

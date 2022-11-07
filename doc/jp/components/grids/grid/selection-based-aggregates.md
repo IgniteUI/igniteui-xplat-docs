@@ -1,29 +1,29 @@
 ---
-title: {Platform} Grid Selection-Based Data Aggregation- Ignite UI for {Platform}
-_description: gnite UI を使用して選択したデータをグリッドに集計する方法を説明します。次のプロジェクトのために仮想化データと豊富な API でコンテンツを即時に集計します。
+title: {Platform} Grid の選択ベースのデータ集計 - Ignite UI for {Platform}
+_description: Ignite UI を使用して選択したデータをグリッドに集計する方法を説明します。次のプロジェクトのために仮想化データと豊富な API でコンテンツを即時に集計します。
 _keywords: Data aggregation, selection, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics {Platform}, infragistics, データ集計, 選択, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
 ---
 
-# {Platform} Grid Selection-Based Data Aggregation
+# {Platform} Grid の選択ベースのデータ集計
 
-With the sample, illustrated beyond, you may see how multiple selection is being used, alongside with custom summary functions, to display aggregates based on the selected values in the grid footer.
+以下のサンプルでは、グリッドのフッターで選択した値に基づいて、カスタム集計関数と共に集計を表示する際の複数選択の動作を確認できます。
 
-## Topic Overview
+## トピックの概要
 
-To achieve the selection-based aggregates functionality, you can use our `Grid Selection` feature, together with the `Grid Summaries`.
-The Summaries are allowing for customization of the basic Summary feature functionality through extending one of the base classess, `SummaryOperand`, `NumberSummaryOperand`.html) or `DateSummaryOperand`, depending on the column data type and your needs.
+選択に基づいた集計機能を実現するには、`グリッド選択`機能と`グリッド集計`を使用できます。
+集計では、列のデータ タイプとニーズに応じて、`SummaryOperand`、 `NumberSummaryOperand`.html、 `DateSummaryOperand` のいずれかの基本クラスを拡張することにより、基本的な集計機能をカスタマイズできます。
 
-## Selection
-To start working with the data in the selected grid range, you will have to subscribe to events that are notifying of changes in the grid selection. That can be done by subscribing to the `selected` event and to the `rangeSelected` event. You need to bind to both of them because the Selection feature differentiates between selecting a single cell and selecting a range of cells.
+## 選択
+選択したグリッド範囲のデータの操作を開始するには、グリッド選択の変更を通知するイベントにサブスクライブする必要があります。これは、`selected` イベントと `RangeSelection` イベントにサブスクライブすることで実行できます。選択機能では、単一のセル選択とセル範囲の選択が区別されるため、両方にバインドする必要があります。
 
-In the events subscription logic, you can extract the selected data using the grid's `getSelectedData`.html#getSelectedData) function and pass the selected data to the custom summary operand.
+イベント サブスクリプション ロジックでは、グリッド `getSelectedData`.html#getSelectedData 関数を使用して選択したデータを抽出し、選択したデータをカスタム集計オペランドに渡すことができます。
 
 
-## Summary
-Within the custom summary class, you'd have to be differentiating the types of data in the grid. For instance, in the scenario below, there are four different columns, whose type of data is suitable for custom summaries. These are the Unit Price, the Units in Stock, Discontinued status and the Order Date.
-The `operate` method of the derived class of the `SummaryOperand`, is where you will process the data, starting by casing it in different categories based on the data types:
+## 集計
+カスタム集計クラス内では、グリッドのデータ タイプを差別化する必要があります。たとえば、以下のシナリオでは、4 つの異なる列があり、それぞれのデータ タイプがカスタム集計に適しています。それらは、Unit Price、Units in Stock、 Discontinued status、Order Date です。
+`SummaryOperand` の派生クラスの `operate` メソッドでデータを処理します。データ タイプに基づいて、さまざまなカテゴリにデータを入れていきます。
 
 ```typescript
 const numberData = data.filter(rec => typeof rec === "number");
@@ -32,16 +32,16 @@ const dates = data.filter(rec => isDate(rec));
 ```
 
 > [!NOTE]
-> Bear in mind, that `isDate` is a custom function.
+> `isDate` はカスタム関数であることに注意してください。
 
-After having the data types grouped accordingly, you can proceed to the aggregation itself. For that reason, you could use the already exposed methods of the `NumberSummaryOperand` and `DateSummaryOperand`.
-After that, you'd have to put the aggregated data in the same array, which would be returned to the template.
-For the visualization of the data, you might want to use the `<-grid-footer>`, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
+データ タイプをグループ化した後、集計を開始できます。そのため、`NumberSummaryOperand` および `DateSummaryOperand` の既に公開されているメソッドを使用できます。
+その後、集計データを同じ配列に配置する必要があり、テンプレートに返されます。
+データを可視化には、`<-grid-footer>`を使用することができ、`custom-summaries` クラスと組み合わせて集計を表示します。
 
 <!-- Angular -->
 
-### Demo
-Change the selection to see summaries of the currently selected range.
+### デモ
+選択を変更して、現在選択されている範囲の概要を表示します。
 
 <!-- NOTE this sample is differed -->
 
@@ -52,25 +52,25 @@ Change the selection to see summaries of the currently selected range.
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `GridComponent`
 * `GridCell`
 
-## Additional Resources
+## その他のリソース
 <div class="divider--half"></div>
 
-* [Grid overview](grid.md)
-* [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
-* [Row Selection](row-selection.md)
-* [Cell Selection](cell-selection.md)
+* [Grid の概要](grid.md)
+* [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
+* [行選択](row-selection.md)
+* [セル選択](cell-selection.md)
 * [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
 * [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
-* [Summaries](summaries.md)
-* [Paging](paging.md)
+* [集計](summaries.md)
+* [ページング](paging.md)
 
 <div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

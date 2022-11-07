@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
+title: {Platform} Grid | 高速な $Platform$ テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Grid']
@@ -11,7 +11,7 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p> The {Platform} Grid is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel, CSV, and pdf formats and more. </p>
+            <p> {Platform} データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。</p>
         </div>
     </article>
     <article class="sample-column">
@@ -29,7 +29,7 @@ _language: ja
 </div>
 
 
-## {Platform} Grid Example
+## {Platform} Grid の例
 
 
 In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
@@ -37,25 +37,25 @@ In this grid example, you can see how users can do both basic and excel-style fi
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           alt="grid example">
+           alt="grid の例">
 </code-view>
 
 <div class="divider--half"></div>
 
 
 
-## Getting Started with Ignite UI for {Platform} Grid
+## Ignite UI for {Platform}  Grid で作業を開始
 
-### Dependencies
+### 依存関係
 
-To get started with the {Platform} grid, first you need to install the Ignite UI for {Platform} package.
+{Platform} グリッドを初期化するには、Ignite UI for {Platform} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 
-Please refer to these topics on adding the IgniteUI.Blazor package:
+IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 
-- [Getting Started](..\general-getting-started.md)
-- [Adding Nuget Package](..\general-nuget-feed.md)
+- [作業の開始](..\general-getting-started.md)
+- [NuGet パッケージの追加](..\general-nuget-feed.md)
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the grid:
 
@@ -63,7 +63,7 @@ You also need to include the following CSS link in the index.html file of your a
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
-Afterwards, you may start implementing the control by adding the following namespaces:
+以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
 </pre>
@@ -71,7 +71,7 @@ Afterwards, you may start implementing the control by adding the following names
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-When installing the {Platform} grid package, the core package must also be installed.
+{Platform} グリッドのパッケージをインストールするときに core パッケージもインストールする必要があります。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCore}
@@ -80,7 +80,7 @@ npm install --save {PackageInputs}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-### Component Modules
+### コンポーネント モジュール
 
 ```razor
 // in Program.cs file
@@ -100,7 +100,7 @@ ModuleManager.register(
 ```
 <!-- end: WebComponents -->
 
-### Usage
+### 使用方法
 
 Now that we have the grid package imported, let’s get started with the basic configuration and bind to local data:
 
@@ -117,27 +117,27 @@ constructor() {
 }
 ```
 
-The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
+`Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。**data** はグリッドをローカル データにバインドします。
 
-The `AutoGenerate` property tells the grid to auto generate the grid's `ColumnComponent` based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
+`AutoGenerate` プロパティはグリッドにデータ ソース フィールドに基づいてグリッドの `ColumnComponent` を自動生成します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
-## Bootstrap Grid Definition
+## Bootstrap グリッドの定義
 
-Ignite UI for {Platform} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The Ignite UI for {Platform} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The Ignite UI for {Platform} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
+Ignite UI for {Platform} には、Flex に基づくレイアウト システムのような強力なブートストラップ グリッドが含まれています。今日の最新のアプリケーションは、レスポンシブ Web デザインのアプローチに従うことが期待されています。つまり、デバイスのサイズに基づいて、または単にブラウザーのサイズを変更するだけで、HTML 要素のレイアウトを適切に調整できます。ブートストラップ グリッド レイアウトはこれまで最も使用されていたアプローチでしたが、CSS グリッドのような Flex に基づくレイアウト システムは、どのブラウザーでも機能するため、より一般的になりました。Ignite UI for {Platform} ディレクティブにより、コンテンツ / テキストの折り返し、両端揃え、配置など、垂直方向と水平方向のフローが可能になります。Ignite UI for {Platform} は、CSS を使用したレスポンシブ レイアウトをサポートし、サイズ変更時のグリッドの動作に究極の柔軟性を提供します。
 
-## Editable Grid
+## 編集可能なグリッド
 
-Each operation for grid editing includes batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.
+グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-Following this topic you will learn more about [cell template](grid.md#cell-template) and [cell editing template](grid.md#cell-editing-template) and editing.
+このトピックに続いて、[セル テンプレート](grid.md#cell-template)と[セル編集テンプレート](grid.md#cell-editing-template)および編集について詳しく学習します。
 
-## Grid Column Configuration
+## グリッドの列構成
 
 `Column` is used to define the grid's `Columns` collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
 
-### Defining Columns
+### 列の定義
 
-Let's turn the `AutoGenerate` property off and define the columns collection in the markup:
+`AutoGenerate` プロパティを無効にし、マークアップで列コレクションを定義します。
 
 ```html
 <igx-grid #grid1 [data]="data | async" [autoGenerate]="false" (columnInit)="initColumns($event)"
@@ -184,9 +184,9 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- Angular -->
 
-Each of the columns of the grid can be templated separately. The column expects `ng-template` Angular grid module directives.
+グリッドの各列は別のテンプレートを持つことができます。列に `ng-template` Angular グリッド モジュール ディレクティブが必要です。
 
-It also expose `additionalTemplateContext input` that can be used for custom properties and any type of data context that you want to pass to the column itself:
+また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext 入力`も公開します。
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -202,7 +202,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 
 <!-- end: Angular -->
 
-### Header Template
+### ヘッダー テンプレート
 
 `Header` targets the column header providing as a context the column object itself.
 
@@ -239,7 +239,7 @@ public formattUppercase(value: string) {
 ```
 
 >[!NOTE]
->Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
+>グループ化 / 移動機能と一緒にヘッダー テンプレートを使用すると、列ヘッダー領域はドラッグ可能になりヘッダー テンプレートのカスタム要素部分にドラッグ不可としてマークするまでアクセスできません。以下の例をご覧ください。
 
 ```html
 <igx-column #col field="ProductName" header="Product Name"
@@ -274,9 +274,9 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
-As you can see, we are adding `Draggable` attribute set to false.
+`Draggable` 属性を false に設定して追加しています。
 
-### Cell Template
+### セル テンプレート
 
 `Cell` applies the provided template to all cells in the column. The context object provided in the template consists of the cell value provided implicitly and the cell object itself. It can be used to define a template where the cells can grow according to their content, as in the below example.
 
@@ -311,7 +311,7 @@ public formatTitlecase(value: string) {;
 }
 ```
 
-In the snippet above we take a reference to the implicitly provided cell value. This is sufficient if you just want to present some data and maybe apply some custom styling or pipe transforms over the value of the cell. However even more useful is to take the `GridCell` instance itself as shown below:
+上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`GridCell` インスタンスを以下のように使用するとより効果的です。
 
 ```html
 <igx-grid #grid [data]="data">
@@ -375,25 +375,24 @@ public formatTitlecase(value: string) {;
 
 <!-- Angular -->
 
-When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](../_shared/cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](../_shared/summaries.md), [selection](../_shared/selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
+`ngModel` を使用して**セル テンプレート**を介してデータを変更する場合、適切な API メソッドを呼び出して、Angular グリッドの基になるデータ コレクションで値が正しく更新されることを確認する必要があります。上記のスニペットでは、`ngModelChange` 呼び出しはグリッドの[編集 API](../_shared/cell-editing.md#editing-through-api) を通過し、グリッドの編集パイプラインを通過し、[トランザクション](batch-editing.md) (該当する場合) を適切にトリガーし、[集計](../_shared/summaries.md)、[選択](../_shared/selection.md)などの処理を行います。ただし、この `ngModelChange` はユーザーが編集を完了したときだけでなく、セルが変更され、より多くの API  呼び出しが発生します。
 
 <!-- end: Angular -->
 
 > [!NOTE]
-> The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
+> グリッドは、数値、文字列、日付、およびブール列タイプのデフォルトの処理を公開します。例えば、ブール列タイプの場合に列はデフォルトで true/false の代わりに `check` または `close` アイコンを表示します。
 
 <!-- Angular -->
 
-If the data in a cell is bound with `[(ngModel)]` and the value change is not handled, the new value will **not** be properly updated in the Angular grid's underlying data source. When dealing with cell editing with a custom template, it is strongly advised to use the cell's **cell editing template**.
+セル内のデータが `[(ngModel)]` でバインドされていて、値の変更が処理されない場合、新しい値は Angular グリッドの基になるデータ ソースで適切に更**されません**。カスタム テンプレートを使用してセルの編集を行う場合は、セルの**セル編集テンプレート**を使用することを強くお勧めします。
 
 <!-- end: Angular -->
 
-When properly implemented, the cell editing template also ensures that the cell's `EditValue` will correctly pass through the grid [editing event cycle](editing.md#event-arguments-and-sequence).
+適切に実装されると、セル編集テンプレートは、セルの `EditValue` がグリッド[編集イベント サイクル](editing.md#event-arguments-and-sequence)を正しく渡します。
 
-### Cell Editing Template
+### セル編集テンプレート
 
-The column also accepts one last template that will be used when a cell is in edit mode. As with the other column templates, the provided context object is again the cell value and the cell object itself. Of course in order to make the edit-mode template accessible to end users, you need
-to set the `Editable` property of the `Column` to true.
+列は、セルが編集モードにある場合に使用されるテンプレートを使用します。その他の列テンプレートと同じように、提供されるコンテキスト オブジェクトはセル値およびセル オブジェクトです。編集モード テンプレートをユーザー アクセス可能にするには、`Column` の `Editable` プロパティを true に設定します。
 
 ```html
 <igx-column dataType="number" editable="true" field="Price">
@@ -432,11 +431,11 @@ public updateValue(value: number){
 }
 ```
 
-Make sure to check the API for the `GridCell` in order to get accustomed with the provided properties you can use in your templates.
+テンプレートで使用可能なプロパティの詳細については、`GridCell` の API を参照してください。
 
-### Column Template API
+### 列テンプレート API
 
-Each of the column templates can be changed programmatically at any point through the `Column` object itself. For example in the code below, we have declared two templates for our user data. In our TypeScript code we'll get references to the templates themselves and then based on some condition we will render the appropriate template for the column in our application.
+各列テンプレートが `Column` オブジェクトでコードによって変更可能です。以下のコード例で、ユーザー データの 2 つのテンプレートを宣言しました。TypeScript コードでテンプレートへの参照を取得し、条件に基づいてアプリケーションで列の適切なテンプレートを描画します。
 
 ```html
 <igx-grid>
@@ -493,7 +492,7 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-Column properties can also be set in code in the `ColumnInit` event which is emitted when the columns are initialized in the grid.
+列プロパティもグリッドで列が初期化されるときに発生される `ColumnInit` イベントのコードで設定できます。
 
 ```typescript
 public initColumns(column: IgxGridColumn) {
@@ -514,17 +513,17 @@ public initColumns(column: IgcGridColumn) {
 }
 ```
 
-The code above will make the **ProductName** column sortable and editable and will instantiate the corresponding features UI (like inputs for editing, etc.).
+上記のコードは **ProductName** 列のソートや編集機能を有効にし、対応する機能の UI (編集の入力など) をインスタンス化します。
 
-### Custom Display Format
+### カスタム表示形式
 
-There are optional parameters for formatting:
+書式設定のためのオプションのパラメーターがあります:
 
-- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to `'MMM d, y'`
-- `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
-- `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
+- `Format` - 表示される日付 / 時間部分を決定します。デフォルト `'mediumDate'` です (`'MMM d, y'`)。
+- `Timezone` - 日付のタイムゾーン オフセット。デフォルトでは、エンドユーザーのローカル システムのタイムゾーンを使用します。
+- `DigitsInfo` - 10 進表現オブジェクト。デフォルトの設定は `'1.0-3'` です。
 
-To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
+これらのパラメーターによって表示形式をカスタマイズできるようにするには、`PipeArgs` 入力公開します。`PipeArgs` が設定されている場合、列はそのデータ型の対応するプロパティのみに遵守します。例:
 <!-- Angular -->
 ```typescript
 const pipeArgs: IColumnPipeArgs = {
@@ -565,11 +564,11 @@ constructor() {
 <igc-column id="OrderDate" field="OrderDate" data-type="date"></igc-column>
 ```
 
-The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
+`OrderDate` 列は `Format` および `Timezone` プロパティのみに遵守しますが、`UnitPrice` は `DigitsInfo` のみに遵守します。
 
-All available column data types could be found in the official [Column types topic](../_shared/column-types.md#default-template).
+すべての利用可能な列データ型は、公式の[列タイプトピック](../_shared/column-types.md#default-template)にあります。
 
-## Grid Data Structure
+## グリッド データの構造
 
 The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
 
@@ -609,15 +608,15 @@ const POJO = [{
 
 ```
 >[!WARNING]
->**The key values must not contain arrays**.
+>**キー値に配列を含まないでください。**
 
->If you use `AutoGenerate` columns **the data keys must be identical.**
+>`AutoGenerate` 列を使用する場合、**データ キーが同一である必要があります**。
 
-## Grid Data Binding
+## グリッドのデータ バインディング
 
-Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications. A good practice is to separate all data fetching related logic in a separate data service, so we are going to create a service which will handle the fetching of data from the server.
+はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。すべてのデータ取得に関連するロジックを別のデータ サービスに分割することがベスト プラクティスであるため、サーバーからデータの取得を処理するサービスを作成します。
 
-Let's implement our service in a separate file
+サービスを別のファイルで実装します。
 
 <!-- Angular -->
 ```typescript
@@ -631,15 +630,15 @@ import { catchError, map } from 'rxjs/operators';
 ```
 <!-- end: Angular -->
 
-We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every {Platform} service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
+各 {Platform} サービス定義で[必須要素](https://angular.io/guide/dependency-injection)である `Injectable` デコレータをインポートします。`HttpClient` はバックエンド サービスに接続する機能を提供します。グリッド コンポーネントにサブスクライブする結果である `Observable` を返します。
 
 <!-- Angular -->
 
-**Note**: Before Angular 5 the `HttpClient` was located in `@angular/http` and was named `Http`.
+**注** Angular 5 の前では `HttpClient` が `@angular/http` にあり、名前は `Http` でした。
 
 <!-- end: Angular -->
 
-Since we will receive a JSON response containing an array of records, we may as well help ourselves by specifing what kind of data we're expecting to be returned in the observable by defining an interface with the correct shape. Type checking is always recommended and can save you some headaches down the road.
+レコードの配列を含む JSON レスポンスを受け取るため、監視可能な要素に返されるデータの型を指定するために適切なインターフェイスを定義します。タイプ チェックを行うことにより、後で発生する可能性のある問題を防止できます。
 
 ```typescript
 // northwind.service.ts
@@ -659,7 +658,7 @@ export interface NorthwindRecord {
 }
 ```
 
-The service itself is pretty simple consisting of one method: `FetchData` that will return an `Observable<NorthwindRecord[]>`. In cases when the request fails for any reason (server unavailable, network error, etc), the `HttpClient` will return an error. We'll leverage the `CatchError` operator which intercepts an Observable that failed and passes the error to an error handler. Our error handler will log the error and return a safe value.
+サービスは `Observable<NorthwindRecord[]>` を返す `fetchData` の単一のメソッドを含みます。要求が任意の理由 (サーバーが利用不可、ネットワーク エラーなど) により失敗した場合、`HttpClient` はエラーを返します。`CatchError` 演算子を使用して失敗した Observable を傍受してエラーをエラー ハンドラーへ渡します。エラー ハンドラーはエラーをログして値を返します。
 
 <!-- Angular -->
 ```typescript
@@ -692,7 +691,7 @@ export class NorthwindService {
 ```
 <!-- end: Angular -->
 
-Make sure to import both the `HttpClientModule` and our service in the application module and register the service as a provider.
+`HttpClientModule` および作成したサービスをアプリケーションのモジュールにインポートし、サービスをプロバイダーとして登録します。
 
 <!-- Angular -->
 ```typescript
@@ -715,11 +714,11 @@ export class AppModule {}
 
 <!-- Angular -->
 
-After implementing the service we will inject it in our component's constructor and use it to retrieve the data. The `ngOnInit` lifecycle hook is a good place to dispatch the initial request.
+サービスを実装した後、コンポーネントのコンストラクターにインジェクトしてデータを取得するために使用します。`ngOnInit` ライフサイクル フックに最初の要求を追加します。
 
 <!-- end: Angular -->
 
-**Note**: In the code below, you may wonder why are we setting the _records_ property to an empty array before subscribing to the service. The Http request is asynchronous, and until it completes, the _records_ property will be _undefined_ which will result in an error when the grid tries to bind to it. You should either initialize it with a default value or use a `BehaviorSubject`.
+**注: ** 以下のコードでは、サービスに加入する前に _records_ プロパティを空の配列に設定しています。Http 要求は非同期です。完了するまで _records_ プロパティは _undefined_ で、グリッドをプロパティにバインドするときにエラーが発生されます。デフォルト値に初期化するか、`BehaviorSubject` を使用します。
 
 <!-- Angular -->
 ```typescript
@@ -742,7 +741,7 @@ export class MyComponent implements OnInit {
 ```
 <!-- end: Angular -->
 
-and in the template of the component:
+コンポーネントのテンプレートのコード:
 
 ```html
     <igx-grid [data]="records">
@@ -751,13 +750,13 @@ and in the template of the component:
     </igx-grid>
 ```
 
-**Note**: The grid `AutoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `AutoGenerate` available, when binding to remote service, is on our roadmap for future versions.
+**注** リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
 
-## Complex Data Binding
+## 複雑なデータ バインディング
 
-The `Grid` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
+`Grid`は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
-Take a look at the following data model:
+次のデータ モデルを見てください。
 ```typescript
 interface AminoAcid {
     name: string;
@@ -775,7 +774,7 @@ interface AminoAcid {
     }
 }
 ```
-For example, in order to display the weights of a given amino acid in the grid the following snippet will suffice
+たとえば、グリッド内の特定のアミノ酸の重みを表示するには、次のスニペットで十分です。
 
 ```html
 <igx-column field="weight.molecular"></igx-column>
@@ -788,13 +787,11 @@ For example, in order to display the weights of a given amino acid in the grid t
 
 <!-- Angular -->
 
-Refer to the sample below for additional information. This type of binding supports all
-the default functionality that you would expect from the grid.
-That is all sorting and filtering operations work out of the box without any additional
-configuration. Same goes for grouping and editing operations with or without transactions as well as the ability to template the cells of the bound column.
+詳しくは、以下のサンプルを参照してください。このバインディングのタイプは、グリッドに期待されるすべてのデフォルト機能をサポートします。
+つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
 >[!WARNING]
->The grids **do not** support this kind of binding for `primary key`, `foreign key` and `child key` properties where applicable.
+>グリッドは、`primary key`、`foreign key`、および `child key` プロパティのこの種のバインディングをサポート**していません**。
 
 <!-- NOTE this sample is differed -->
 
@@ -805,11 +802,11 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- end: Angular -->
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
-    - use the `value` of the cell, that contains the nested data
-    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
+`Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
+    - ネストされたデータを含むセルの`値`を使用します。
+    - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
-and interpolate it those in the template.
+それをテンプレートに挿入します。
 
 ```html
 <igx-column field="abbreviation.long" header="Long">
@@ -858,7 +855,7 @@ public getWeight(rowId: number){
 }
 ```
 
-Below is the data that we are going to use:
+以下は使用するデータです。
 
 ```typescript
 export const EMPLOYEE_DATA = [
@@ -899,7 +896,7 @@ export const EMPLOYEE_DATA = [
         Title: "Development Manager"
     }
 ```
-The custom template for the column, that will render the nested data:
+ネスト データをレンダリングする列のカスタム テンプレート。
 
 ```html
  <igx-column field="Employees" header="Employees" [cellClasses]="{ expand: true }" width="40%">
@@ -978,7 +975,7 @@ public getAge(rowId: number) {
 }
 ```
 
-And the result from this configuration is:
+以下は、この設定の結果です。
 
 
 <code-view style="height:460px"
@@ -986,13 +983,13 @@ And the result from this configuration is:
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
 </code-view>
 
-### Working with Flat data
+### フラット データの操作
 
-The flat data binding approach is similar to the one that we already described above, but instead of **cell value** we are going to use the `Data` property of the `GridRow`.
+フラット データ バインディングのアプローチは既に説明したものと似ていますが、**セル値**の代わりに、`GridRow` の `Data` プロパティを使用します。
 
-Since the {Platform} grid is a component for **rendering**, **manipulating** and **preserving** data records, having access to **every data record** gives you the opportunity to customize the approach of handling it. The `data` property provides you this opportunity.
+{Platform} グリッドはデータ レコードを**レンダリング**、**操作**、**保存する**ためのコンポーネントのため、**すべてのデータ レコード**へアクセスすることで、それを処理する方法をカスタマイズすることができます。それには、`data` プロパティを使用します。
 
-Below is the data that we are going to use:
+以下は使用するデータです。
 
 ```typescript
 export const DATA: any[] = [
@@ -1011,7 +1008,7 @@ export const DATA: any[] = [
     }
 ```
 
-The custom template:
+カスタム テンプレート:
 
 ```html
 <igx-column field="Address" header="Address" width="25%" editable="true">
@@ -1062,7 +1059,7 @@ public getPostalCode(rowId: number){
 }
 ```
 
-Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
+上記で定義したテンプレートでは編集操作ができないため、エディター テンプレートが必要であることに注意してください。
 
 ```html
 <igx-column>
@@ -1137,38 +1134,38 @@ public updatePostalCode(rowId: number){
 }
 ```
 
-And the result is:
+以下は結果です。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
 </code-view>
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The `Grid`'s keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+`Grid` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
 
-Check out these resources for more information:
+詳細については、これらのリソースを参照してください。
 
- - [Grid Keyboard Navigation](../_shared/keyboard-navigation.md)
- - [TreeGrid Keyboard Navigation](../tree-grid/keyboard-navigation.md)
- - [Hierarchical Grid Keyboard Navigation](../hierarchical-grid/keyboard-navigation.md)
- - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
+ - [Grid キーボード ナビゲーション](../_shared/keyboard-navigation.md)
+ - [TreeGrid キーボード ナビゲーション](../tree-grid/keyboard-navigation.md)
+ - [Hierarchical Grid キーボード ナビゲーション](../hierarchical-grid/keyboard-navigation.md)
+ - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
-## State Persistence
+## 状態保持
 
-Achieving a state persistence framework is easier than ever by using the new built-in [`GridState`](../_shared/state-persistence.md) directive.
+新しい組み込み済みの [`GridState`](../_shared/state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
 
-## Sizing
+## サイズ変更
 
-See the [Grid Sizing](../_shared/sizing.md) topic.
+[Grid サイズ変更](../_shared/sizing.md) トピックを確認してください。
 
 
 <!-- Angular -->
 
-## Performance (Experimental)
+## パフォーマンス (試験中)
 
-The `Grid`'s design allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+`Grid` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **`20%`** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1177,26 +1174,26 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github](https://github.com/IgniteUI/igniteui-{Platform}/discussions) page.
+> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github](https://github.com/IgniteUI/igniteui-{Platform}/discussions) ページでお問い合わせください。
 
 >[!NOTE]
-> Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
+> 有効にすると、`IgxGridComponent` に関連しない Angular アプリケーションの他の部分に影響します。
 
 <!-- end: Angular -->
 
-## Known Limitations
+## 既知の問題と制限
 
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Column widths set in `percentage` and `px`|Currently we do not support mixing of column widths with `%` and `px`.|
-|When trying to filter a column of type `number`|If a value different than `number` is entered into the filtering input, `NaN` is returned due to an incorrect cast.|
-|Grid `width` does not depend on the column widths | The `width` of all columns does not determine the spanning of the grid itself. It is determined by the parent container dimensions or the defined grid's `width`.|
-|Grid nested in parent container | When grid's `width` is not set and it is placed in a parent container with defined dimensions, the grid spans to this container.|
-|Grid `OnPush` ChangeDetectionStrategy |The grid operates with `ChangeDetectionStrategy.OnPush` so whenever some customization appears make sure that the grid is notified about the changes that happens.|
-| Columns have a minimum allowed column width. Depending on the `displayDensity` option, they are as follows: <br/>"compact": 56px <br/> "cosy": 64px <br/> "comfortable ": 80px | If width less than the minimum allowed is set it will not affect the rendered elements. They will render with the minimum allowed width for the corresponding `displayDensity`. This may lead to an unexpected behavior with horizontal virtualization and is therefore not supported.
-| Row height is not affected by the height of cells that are not currently rendered in view. | Because of virtualization a column with a custom template (that changes the cell height) that is not in the view will not affect the row height. The row height will be affected only while the related column is scrolled in the view.
+|列幅は `percentage` および `px` で設定されます。|列に `%` と `px` を組み合わせて使用することはできません。|
+|`number` 型の列をフィルターする場合|フィルター入力に入力された値が `number` と異なる場合、キャストが正しくないため `NaN` が返されます。|
+|グリッドの `width` が列幅に依存しない | すべての列の `width` でグリッド自体のスパンは決定しません。親コンテナーのディメンションまたは定義したグリッドの `width` で決定されます。|
+|親コンテナーでネストされた Grid | グリッドの `width` を設定せずに定義済みのディメンションで親コンテナーに配置した場合、グリッドがコンテナーに合わせてスパンします。|
+|グリッドの `OnPush` ChangeDetectionStrategy | `ChangeDetectionStrategy.OnPush` を処理し、カスタム表示されたときにグリッドに発生した変更について通知します。|
+| 列には設定可能な最小幅があります。`displayDensity` オプションに基づき、<br/>"最小": 56px <br/> "小": 64px <br/> "標準 ": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`displayDensity` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
+| ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 
-## API References
+## API リファレンス
 * `Grid`
 * `Column`
 * `GridRow`
@@ -1204,7 +1201,7 @@ platformBrowserDynamic()
 
 <!-- Angular -->
 
-## Theming Dependencies
+## テーマの依存関係
 * `Icon Theme`
 * `InputGroup Theme`
 * `Chip Theme`
@@ -1216,30 +1213,30 @@ platformBrowserDynamic()
 * `SnackBar Theme`
 * `Badge Theme`
 
-## Tutorial video
+## チュートリアル ビデオ
 
-Learn more about creating a {Platform} `Grid` in our short tutorial video:
+{Platform} `Grid` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
 <!-- end: Angular -->
 
-## Additional Resources
+## その他のリソース
 
-* [Grid Sizing](../_shared/sizing.md)
-* [Virtualization and Performance](../_shared/virtualization.md)
-* [Paging](../_shared/paging.md)
-* [Filtering](../_shared/filtering.md)
-* [Sorting](../_shared/sorting.md)
-* [Summaries](../_shared/summaries.md)
-* [Column Moving](../_shared/column-moving.md)
-* [Column Pinning](../_shared/column-pinning.md)
-* [Column Resizing](../_shared/column-resizing.md)
-* [Selection](../_shared/selection.md)
-* [Column Data Types](../_shared/column-types.md#default-template)
-* [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+* [Grid サイズ変更](../_shared/sizing.md)
+* [仮想化とパフォーマンス](../_shared/virtualization.md)
+* [ページング](../_shared/paging.md)
+* [フィルタリング](../_shared/filtering.md)
+* [ソート](../_shared/sorting.md)
+* [集計](../_shared/summaries.md)
+* [列移動](../_shared/column-moving.md)
+* [列のピン固定](../_shared/column-pinning.md)
+* [列のサイズ変更](../_shared/column-resizing.md)
+* [選択](../_shared/selection.md)
+* [列のデータ型](../_shared/column-types.md#default-template)
+* [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
