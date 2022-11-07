@@ -176,7 +176,7 @@ TO-DO H-GRID CODE SNIPPET
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-すべての `ColumnGroup` は、[移動](column-moving.md)、[固定](column-pinning.md)、および[非表示](column-hiding.md)をサポートしています。
+すべての `ColumnGroup` は、[移動](column-moving.md)、[ピン固定](column-pinning.md)、および[非表示](column-hiding.md)をサポートしています。
 > [!NOTE]
 > 列セットと列グループがある場合、ピン固定は列の一番上の親レベルでのみ可能です。具体的には、ネストされた `column groups` または `columns` ごとのピン固定は許可されていません。 <br />
 > `columns` と `column groups` 間の移動は、それらが階層内の同じレベルにあり、両方が同じ `group` にある場合にのみ許可されます。 <br />

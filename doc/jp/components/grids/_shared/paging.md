@@ -64,7 +64,7 @@ _language: ja
 
 グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。
 
-ページングとグループ化の統合については、[グループ化](groupby.md#grid-group-by-with-paging)のトピックで説明しています。
+ページングとグループ化の統合については、[グループ化](groupby.md#grid-ページングでグループ化)のトピックで説明しています。
 
 <!-- ComponentEnd: Grid -->
 
@@ -147,13 +147,13 @@ TO-DO H-GRID CODE SNIPPET
 
 ## リモート ページング
 
-リモート ページングは、データ取得を担当するサービスと、`{ComponentName}` の構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`リモート データ操作`](remote-data-operations.md#remote-paging)トピックをご覧ください。
+リモート ページングは、データ取得を担当するサービスと、`{ComponentName}` の構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`リモート データ操作`](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
 
 <!-- ComponentStart: Grid -->
 
 ## カスタム テンプレートのリモート ページング
 
-独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#remote-paging-with-custom-igx-paginator-content)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
+独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#カスタム-igx-paginator-content-のリモート-ページング)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
 
 <!-- ComponentEnd: Grid -->
 
@@ -172,7 +172,7 @@ TO-DO H-GRID CODE SNIPPET
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-最も簡単な方法は、`PaginatorTheme` を拡張する新しいテーマを作成し、`$text-color`、`$background-color`、`$border-radius` パラメーターを受け取る方法です。
+最も簡単な方法は、`PaginatorTheme` を拡張する新しいテーマを作成し、`$text-color`、`$background-color`、`$border-color` パラメーターを受け取る方法です。
 
 ```scss
 $dark-paginator: paginator-theme(

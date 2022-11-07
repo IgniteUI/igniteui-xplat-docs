@@ -1,33 +1,34 @@
 ---
-title: {Platform} {Component} Export to Excel - {ProductName} for {Platform}
+title: {Platform} {Component} Excel へのエクスポート - {ProductName} for {Platform}
 _description: {ProductName} Excel Exporter を使用すると、クライアント Excel の機能をより便利でシンプルにできます。この形式では、フィルタリングやソートなどの機能が使用できます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
-# {Platform} {Component} Export to Excel Service
+# {Platform} {Component} Excel へのエクスポート サービス
 
 
 <p class="highlight">
-  The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
+  Excel Exporter サービスは {Component} のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
 </p>
 
-## {Platform} Excel Exporter Example
+## {Platform} Excel Exporter の例
 
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           alt="{Platform} {ComponentTitle} Excel Exporter Example">
+           alt="{Platform} {ComponentTitle} Excel Exporter の例">
 </code-view>
 
 
 
-## Exporting {Component}'s Data
+## {Component} のデータのエクスポート
 
-To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
+IgniteUI Excel Exporter を使用するには、`ExcelExporterService` を app.module.ts ファイルにインポートし、`providers` 配列にサービスを追加します。
 
 ```ts
 // app.module.ts
@@ -41,12 +42,12 @@ export class AppModule {}
 ```
 
 > [!Note]
-> In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
+> v12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
 
 > [!NOTE]
-> The Excel Exporter service has a peer dependency on the JSZip library. The JSZip library should be installed when using the Excel Exporter.
+> Excel Exporter サービスは JSZip にピア依存関係があります。JSZip ライブラリは Excel Exporter の使用時にインストールしてください。
 
-To initiate an export process you may use the handler of a button in your component's template.
+エクスポート処理の開始は、コンポーネントのテンプレートでボタンのハンドラーを使用します。
 
 ```html
 <{ComponentTitle} #{ComponentTitle} [data]="localData" [autoGenerate]="true"></{ComponentTitle}>
@@ -58,9 +59,9 @@ To initiate an export process you may use the handler of a button in your compon
 <button click="exportButtonHandler()">Export to Excel</button>
 ```
 
-You may access the exporter service by defining an argument of type `ExcelExporterService` in the component's constructor and the {Platform} framework will provide an instance of the service. To export some data in MS Excel format you need to invoke the exporter service's `Export` method and pass the {ComponentTitle} component as first argument.
+エクスポーター サービスへのアクセスは、コンポーネントのコンストラクターで `ExcelExporterService` 型の引数を定義し、{Platform} フレームワークはサービスのインスタンスを提供します。データを MS Excel 形式でエクスポートするには、エクスポーター サービスの `Export` メソッドを呼び出して {ComponentTitle} コンポーネントを最初の引数として渡します。
 
-Here is the code which will execute the export process in the component's file:
+以下のコードはコンポーネントのファイルでエクスポート処理を実行します。
 
 ```ts
 // component.ts
@@ -77,11 +78,11 @@ public exportButtonHandler() {
 }
 ```
 
-If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format.
+上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の {Component}  コンポーネントのデータを含みます。
 
-## Export All Data
+## すべてのデータのエクスポート
 
-There are some cases when you might be using remote operations like *Paging* and the Grid won't have access to all of its data. In these cases, we recommend using the [Excel Export Service](../exporter-excel.md) and pass the whole data collection, if available. Example:
+**ページング**などのリモート操作を使用している場合に、Grid がすべてのデータにアクセスできない場合があります。このような場合、[Excel Export サービス](../exporter-excel.md)を使用してデータ コレクション全体を渡すことをお勧めします。例:
 
 ```ts
 public exportButtonHandler() {
@@ -90,37 +91,37 @@ public exportButtonHandler() {
 ```
 
 <!-- ComponentStart: Grid -->
-## Export Grouped Data
+## グループ化されたデータのエクスポート
 
-To export grouped data you just need to group the {Component} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format grouped by the selected column. Example:
+グループ化されたデータをエクスポートするには、{Component} を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の {Component} コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
+           alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
 
-## Export Multi Column Headers Grid
+## 複数列ヘッダー グリッドのエクスポート
 
-It is now possible to export {Component} with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the {Component}. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
+定義された[複数列ヘッダー](multi-column-headers.md)を使用して {Component} をエクスポートできるようになりました。すべてのヘッダーは、{Component} に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を `true` に設定できます。
 
 > [!NOTE]
-> The exported {Component} will not be formatted as a table, since Excel tables do not support multiple row headers.
+> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた {Component} はテーブルとしてフォーマットされません。
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
-           alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
+           alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例">
 </code-view>
 
-## Export Grid with Frozen Column Headers
+## 固定された列ヘッダーを使用してグリッドをエクスポートする
 
-By default Excel Exporter service exports the grid with scrollable (unfrozen) column headers. There are scenarios in which you may want to freeze all headers on top of the exported excel file so they always stay in view as the user scrolls through the records. To achieve this you could set the `ExporterOption` `FreezeHeaders` to `true`.
+デフォルトでは、Excel エクスポーター サービスは、スクロール可能な (固定されていない) 列ヘッダーを使用してグリッドをエクスポートします。エクスポートされた Excel ファイルの上にあるすべてのヘッダーを固定して、ユーザーがレコードをスクロールしても常に表示されたままにするシナリオがあります。これを実現するには、`ExporterOption` `FreezeHeaders` を `true` に設定します。
 
 ```ts
 public exportButtonHandler() {
@@ -130,11 +131,11 @@ public exportButtonHandler() {
 }
 ```
 
-## Customizing the Exported Content
+## エクスポートするコンテンツのカスタマイズ
 
-In the above examples the Excel Exporter service was exporting all available data. There are situations in which you may want to skip exporting a row or even an entire column. To achieve this you may hook to the `columnExporting` and/or `rowExporting` events which are fired respectively for each column and/or each row and cancel the respective event by setting the event argument object's `cancel` property to `true`.
+上記の例では、Excel Exporter サービスで利用可能なデータをすべてエクスポートしました。行または列全体のエクスポートをしない方が良い場合があります。実装は、各列で発生される `columnExporting` または各行で発生される `rowExporting` イベントを処理し、イベント引数オブジェクトの `cancel` プロパティを `true` に設定して各イベントをキャンセルします。
 
-The following example will exclude a column from the export if its header is "Age" and if its index is 1:
+以下の例では、ヘッダーが 「Age」 で、インデックスが 1 の場合、エクスポートから列を除外します。
 
 ```ts
 // component.ts
@@ -147,32 +148,33 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-When you are exporting data from the {Component} component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the {Component}. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
-## Known Limitations
+{Component} コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて {Component} で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
+
+## 既知の問題と制限
 
 <!-- ComponentStart: Grid -->
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
+|ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Hierarchy levels|The excel exporter service can create up to 8 levels of hierarchy.|
-|Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
+|階層レベル|Excel エクスポーター サービスは、最大 8 レベルの階層を作成できます。|
+|ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Hierarchy levels|The excel exporter service can create up to 8 levels of hierarchy.|
-|Max worksheet size|The maximum worksheet size supported by Excel is 1,048,576 rows by 16,384 columns.|
-|Exporting pinned columns|In the exported Excel file, the pinned columns will not be frozen but will be displayed in the same order as they appear in the grid.|
+|階層レベル|Excel エクスポーター サービスは、最大 8 レベルの階層を作成できます。|
+|ワークシートの最大サイズ|Excel でサポートされているワークシートの最大サイズは、1,048,576 行 x 16,384 列です。|
+|ピン固定列された列のエクスポート|エクスポートされた Excel ファイルでは、ピン固定列は固定されませんが、グリッドに表示されるのと同じ順序で表示されます。|
 <!-- ComponentEnd: HierarchicalGrid -->
 
 > [!NOTE]
-> Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [`setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
+> [JSZip](https://www.npmjs.com/package/jszip) のライブラリの[問題](https://github.com/Stuk/jszip/issues/617)が原因で、大きな Excel ファイルのエクスポートが遅延する場合があります。問題が解決するまで、Excel エクスポーターの速度を上げるために、アプリケーションに [`setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) をインポートできます。
 
 ```cmd
 npm install --save setimmediate
@@ -182,21 +184,21 @@ npm install --save setimmediate
 import 'setimmediate';
 ```
 
-## API References
+## API リファレンス
 
-The Excel Exporter service has a few more APIs to explore, which are listed below.
+以下は、その他の Excel Exporter サービスの API です。
 
 * `ExcelExporterService`
 * `ExcelExporterOptions`
 
-Additional components that were used:
+使用したその他のコンポーネント:
 
-* [{ComponentTitle}Component API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} コンポーネント API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
+* [{ComponentTitle} コンポーネント スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
-## Additional Resources
+## その他のリソース
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

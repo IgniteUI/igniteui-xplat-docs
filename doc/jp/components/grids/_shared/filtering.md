@@ -1,45 +1,46 @@
 ---
-title: Filtering in {Platform} {ComponentTitle} - {ProductName}
+title: {Platform} {ComponentTitle} のフィルタリング - {ProductName}
 _description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。 データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
 _keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
-# {Platform} {ComponentTitle} Filtering
+# {Platform} {ComponentTitle} フィルタリング
 
-The {Platform} `{ComponentName}` component provides three different filtering types - Quick filtering, [Excel Style Filtering](excel-style-filtering.md) and [Advanced Filtering](advanced-filtering.md) which enable you to display only the records that meet specified criteria. The `{ComponentName}` component in {Platform} provides filtering capabilities and extensive filtering API through the data container to which the `{ComponentName}` is bound.
+{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}`コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
 
-## {Platform} {ComponentTitle} Filtering Example
+## {Platform} {ComponentTitle} フィルタリングの例
 
-The sample below demonstrates `{ComponentName}`'s **Quick filtering** user experience.
+以下のサンプルは、`{ComponentName}` の**クイック フィルタリング** ユーザー エクスペリエンスを示しています。
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-options"
            github-src="{ComponentSample}/filtering-options"
-           alt="{Platform} {ComponentTitle} Filtering Example">
+           alt="{Platform} {ComponentTitle} フィルタリングの例">
 </code-view>
 
-## Setup
+## 設定
 
-In order to specify if filtering is enabled and which filtering mode should be used, the `{ComponentName}` exposes the following properties - `AllowFiltering`, `AllowAdvancedFiltering`, `FilterMode` and `Filterable`.
+フィルタリングが有効かどうか、およびどのフィルタリング モードを使用するかを指定するために、{ComponentName} は次のブール プロパティを公開します - `AllowFiltering`、`AllowAdvancedFiltering`、`FilterMode` と `Filterable`。
 
-Property `AllowFiltering` enables you to specify the following options:
-- **false** - the filtering for the corresponding grid will be disabled. This is the default value.
-- **true** - the filtering for the corresponding grid will be enabled.
+以下のオプションは、プロパティ `AllowFiltering` で指定できます。
+- **false** - 対応するグリッドのフィルタリングが無効になります 。これがデフォルト値です。
+- **true** - 対応するグリッドのフィルタリングが有効になります。
 
-Property `AllowAdvancedFiltering` enables you to specify the following options:
-- **false** - the advanced filtering for the corresponding grid will be disabled. This is the default value.
-- **true** - the advanced filtering for the corresponding grid will be enabled.
+以下のオプションは、プロパティ `AllowAdvancedFiltering` で指定できます。
+- **false** - 対応するグリッドの高度なフィルタリングが無効になります。これがデフォルト値です。
+- **true** - 対応するグリッドの高度なフィルタリングが有効になります。
 
-Property `FilterMode` enables you to specify the following options:
-- **QuickFilter** - a simplistic filtering UI. This is the default value.
-- **ExcelStyleFilter** - an Excel-like filtering UI.
+以下のオプションは、プロパティ `FilterMode` で指定できます。
+- **QuickFilter** - 簡易なフィルタリング UI 。これがデフォルト値です。
+- **ExcelStyleFilter** - Excel のようなフィルタリング UI。
 
-Property `Filterable` enables you to specify the following options:
-- **true** - the filtering for the corresponding column will be enabled. This is the default value.
-- **false** - the filtering for the corresponding column will be disabled.
+以下のオプションは、プロパティ `Filterable` で指定できます。
+- **true** - 対応する列のフィルタリングが有効になります。これがデフォルト値です。
+- **false** - 対応する列のフィルタリングが無効になります 。
 
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" [allowFiltering]="true">
@@ -50,12 +51,12 @@ Property `Filterable` enables you to specify the following options:
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
-    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String1"></IgbColumn>
+    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
 </IgbGrid>
 ```
 
-To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
+[高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
 ```html
 <{ComponentSelector}  [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
@@ -67,19 +68,19 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 ```
 
 >[!NOTE]
->You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
+>`{ComponentName}` で `QuickFilter` または `ExcelStyleFilter` と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
-## Interaction
+## インタラクション
 
-In order to open the filter row for a particular column, the 'Filter' chip below its header should be clicked. To add conditions you should choose filter operand using the dropdown on the left of the input and enter value. For *number* and *date* columns 'Equals' is selected by default, for *string* - 'Contains' and for *boolean* - 'All'. Pressing 'Enter' confirms the condition and you are now able to add another one. There is a dropdown, between 'condition' chips, which determines the logical operator between them, 'AND' is selected by default. To remove a condition you can click the 'X' button of the chip, and to edit it you should select the chip and the input will be populated with the chip's data. While filter row is opened you can click on any filterable column's header in order to select it and to be able to add filter conditions for it.
+特定の列のフィルター行を開くには、ヘッダー下のフィルター チップをクリックします。状態を追加するために入力の左側のドロップダウンを使用してフィルター オペランドを選択し、値を入力します。*number* と *date* 列には、Equals がデフォルトで選択されます。*string* には 'Contains'、*boolean* には 'All' が選択されます。'Enter' を押して条件を確定して他の条件を追加できます。条件チップの間にドロップダウンがあり、それらの間の論理演算子を決定します。'AND' がデフォルトで選択されます。条件の削除はチップの X ボタンをクリックします。編集はチップを選択、入力はチップのデータで生成されます。フィルター行が開いているときにフィルター可能な列のヘッダーをクリックして選択し、フィルター条件を追加できます。
 
-While some filtering conditions have been applied to a column, and the filter row is closed, you can either remove the conditions by clicking the chip's close button, or you can open the filter row by selecting any of the chips. When there is not enough space to show all the conditions, a filter icon is shown with a badge that indicates how many more conditions there are. It can also be clicked in order to open the filter row.
+列に適用したフィルターがある場合、フィルター行が閉じられるとチップの閉じるボタンをクリックした条件の削除やいずれかのチップを選択してフィルター行を開くことができます。すべての条件を表示するための十分なスペースがない場合、条件数を示すバッジ付きのフィルター アイコンが表示されます。フィルター行を開くためにクリックできます。
 
-## Usage
+## 使用方法
 
-There's a default filtering strategy provided out of the box, as well as all the standard filtering conditions, which the developer can replace with their own implementation. In addition, we've provided a way to easily plug in your own custom filtering conditions. The `{ComponentName}` currently provides not only a simplistic filtering UI, but also more complex filtering options. Depending on the set `DataType` of the column, the correct set of **filtering operations** is loaded inside the filter UI dropdown. Additionally, you can set the `IgnoreCase` and the initial `Condition` properties.
+デフォルトの定義済みフィルタリングおよび標準のフィルタリング条件があり、カスタム実装で置き換えることも可能です。また、カスタム フィルタリング条件を追加することもできます。`{ComponentName}` には、簡易なフィルター UI と詳細なフィルター オプションがあります。列で設定された `DataType` に基づいて、適切な**フィルタリング処理**のセットがフィルター UI ドロップダウンに読み込まれます。また、`IgnoreCase` と最初の `Condition` プロパティを設定できます。
 
-The filtering feature is enabled for the `{ComponentName}` component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
+フィルタリング機能は、`AllowFiltering` 入力を **true** に設定すると `{ComponentName}` コンポーネントで有効になります。デフォルトの `FilterMode` は `QuickFilter` でランタイムでは**変更できません**。特定の列でこの機能を無効にするには、`Filterable` 入力を **false** に設定します。
 
 <!-- ComponentStart: Grid, TreeGrid -->
 ```html
@@ -102,24 +103,24 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
-    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String1"></IgbColumn>
+    <IgbColumn Field="ProductName" DataType="GridColumnDataType.String"></IgbColumn>
     <IgbColumn Field="Price" DataType="GridColumnDataType.Number" Filterable=false></IgbColumn>
 </IgbGrid>
 ```
 
 > [!NOTE]
-> If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
+> *string* 型の値が *date* データ型の列で使用される場合、`{ComponentName}` は値を *date* オブジェクトに解析しないためフィルター条件は使用できません。*string* オブジェクトを使用する場合、値を *date* オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
-You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
+列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
 
-*   `Filter` - filter a single column or a combination of columns.
+*   `Filter` - 単一の列または複数の列をフィルターします。
 
-There are five filtering operand classes exposed:
-   - `FilteringOperand`: this is a base filtering operand, which can be inherited when defining custom filtering conditions.
-   - `BooleanFilteringOperand` defines all default filtering conditions for *boolean* type.
-   - `NumberFilteringOperand` defines all default filtering conditions for *numeric* type.
-   - `StringFilteringOperand` defines all default filtering conditions for *string* type.
-   - `DateFilteringOperand` defines all default filtering conditions for *date* type.
+以下の 5 つのフィルタリング オペランド クラスが公開されます。
+   - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
+   - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
+   - `NumberFilteringOperand`  は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
+   - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
+   - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
 
 ```typescript
 // Single column filtering
@@ -128,10 +129,10 @@ There are five filtering operand classes exposed:
 this.@@igObjectRef.filter('ProductName', 'myproduct', IgxStringFilteringOperand.instance().condition('contains'), true);
 ```
 
-The only required parameters are the column field key and the filtering term. Both the condition and the case sensitivity will be inferred from the column properties if not provided. In the case of multiple filtering, the method accepts an array of filtering expressions.
+必要なパラメーターは列フィールド キーとフィルター用語のみです。条件および大文字と小文字の区別を設定しない場合、列プロパティで推測されます。フィルターが複数ある場合、このメソッドはフィルター式の配列を受け取ります。
 
 > [!NOTE]
-> The filtering operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
+> フィルタリング操作で `{ComponentName}` にバインドされているデータ ソースは**変更されません**。
 
 ```typescript
 // Multi column filtering
@@ -160,7 +161,7 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
-* `FilterGlobal` - clears all existing filters and applies the new filtering condition to all {ComponentTitle}'s columns.
+* `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
 
 ```typescript
 // Filter all cells for a value which contains `myproduct`
@@ -168,7 +169,7 @@ this.@@igObjectRef.filteringLogic = FilteringLogic.Or;
 this.@@igObjectRef.filterGlobal('myproduct', IgxStringFilteringOperand.instance().condition('contains'), false);
 ```
 
-* `ClearFilter` - removes any applied filtering from the target column. If called with no arguments it will clear the filtering of all columns.
+* `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
 
 ```typescript
 // Remove the filtering state from the ProductName column
@@ -178,9 +179,9 @@ this.@@igObjectRef.clearFilter('ProductName');
 this.@@igObjectRef.clearFilter();
 ```
 
-## Initial filtered state
+## 初期のフィルター状態
 
-To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
+`{ComponentName}` の初期フィルタリング状態の設定は、`{ComponentName}` `FilteringExpressionsTree` プロパティを `FilteringExpressionsTree` の配列に設定して各列をフィルターします。
 
 ```typescript
 constructor(private cdr: ChangeDetectorRef) { }
@@ -202,9 +203,9 @@ public ngAfterViewInit() {
 }
 ```
 
-### Filtering logic
+### フィルター ロジック
 
-The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
+`{ComponentName}` コントロールの `FilteringLogic` プロパティは `{ComponentName}` で複数の列のフィルターが解決する方法を制御します。`{ComponentName}` API または `{ComponentName}` の入力プロパティによって変更できます。
 
 ```typescript
 import { FilteringLogic } from 'igniteui-angular';
@@ -212,25 +213,25 @@ import { FilteringLogic } from 'igniteui-angular';
 this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 ```
 
-The default value of `AND` returns only the rows that match all the currently applied filtering expressions. Following the example above, a row will be returned when both the 'ProductName' cell value contains 'myproduct' and the 'Price' cell value is greater than 55.
+`AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」 セル値が 「myproduct」 を含み、「Price」 セル値が 55 より大きい場合に行が返されます。
 
-When set to `OR`, a row will be returned when either the 'ProductName' cell value contains 'myproduct' or the 'Price' cell value is greater than 55.
+`OR` に設定される場合、「ProductName」 セル値が 「myproduct」 を含むか、「Price」 セル値が 55 より大きい場合に行が返されます。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-## Remote Filtering
+## リモート フィルタリング
 
-The `{ComponentName}` supports remote filtering, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+`{ComponentName}` はリモート フィルタリングをサポートします。詳細については、[{ComponentTitle} リモート データの操作](remote-data-operations.md)をご確認ください。
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
-## Custom Filtering Operands
+## カスタム フィルタリング オペランド
 
-You can customize the filtering menu by adding, removing or modifying the filtering operands. By default, the filtering menu contains certain operands based on the column’s data type (`BooleanFilteringOperand`, `DateFilteringOperand`, `NumberFilteringOperand` and `StringFilteringOperand`). You can extend these classes or their base class `FilteringOperand` to change the filtering menu items’ behavior.
+フィルタリング メニューは、フィルタリング オペランド削除または変更してカスタマイズします。デフォルトでフィルタリング メニューは列のデータ型 (`BooleanFilteringOperand`、`DateFilteringOperand`, `NumberFilteringOperand`、`StringFilteringOperand`) に基づいて特定のオペランドを含みます。これらのクラスまたは基本クラス `FilteringOperand` を拡張してフィルタリング メニュー項目の動作を変更できます。
 
-In the sample below, inspect the “Product Name” and “Discontinued” columns filters menus. For the “Discontinued” column filter, we have limited the number of operands to All, True and False. For the “Product Name” column filter – we have modified the Contains and Does Not Contain operands logic to perform case sensitive search and added also Empty and Not Empty operands.
+以下のサンプルの 「Product Name」 と 「Discontinued」 列フィルタリング メニューを確認してください。「Discontinued」 列フィルターでは、オペランドの数が All に制限されています。「Product Name」 列フィルター - Contains および Does Not Contain オペランド ロジックを変更して大文字と小文字を区別した検索を実行し、Empty と Not Empty を追加します。
 
-To do that, extend the `StringFilteringOperand` and `BooleanFilteringOperand`, modify the operations and their logic, and set the column `filters` input to the new operands.
+これにより、`StringFilteringOperand` と `BooleanFilteringOperand` を拡張し、オペランドとロジックを変更して列 `filters` 入力を新しいオペランドに設定します。
 
 ```typescript
 // grid-custom-filtering.component.ts
@@ -332,13 +333,13 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-filtering"
            github-src="{ComponentSample}/custom-filtering"
-           alt="{Platform} {ComponentTitle} Custom Filtering Example">
+           alt="{Platform} {ComponentTitle} カスタム フィルタリングの例">
 </code-view>
 
 
-## Re-templating Filter Cell
+## フィルター セルの再テンプレート化
 
-You can add a template marked with `FilterCellTemplate` in order to retemplate the filter cell. In the sample below, an input is added for the string columns and `DatePicker` for the date column. When the user types or selects a value, a filter with contains operator for string columns and equals operator for date columns, is applied using grid's public API.
+フィルター セルを再テンプレート化するために、`FilterCellTemplate` とマークされたテンプレートを追加することができます。以下のサンプルでは、​​文字列カラムへの入力と日付列に `DatePicker` が追加されています。ユーザーが値を入力または選択すると、文字列カラムには contains 演算子、日付列には equals 演算子を使用したフィルターが、グリッドのパブリック API を使用して適用されます。
 
 <!-- NOTE this sample is differed -->
 
@@ -346,16 +347,16 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-template"
            github-src="{ComponentSample}/filtering-template"
-           alt="{Platform} {ComponentTitle} Filtering Template Example">
+           alt="{Platform} {ComponentTitle} フィルタリング テンプレートの例">
 </code-view>
 
 <!-- end: Angular -->
 
 <!-- ComponentStart: TreeGrid -->
 
-## Matching Records Only Filtering Strategy
+## マッチング レコードのみのフィルタリング方式
 
-By default, after a filtering is applied, the `{ComponentName}` component displays the records matching the criterion that have been set and their parents in a grayed-out fashion to provide additional context. However, in some cases, you may want to display only the records matching particular filtering condition without any trace for their parents. This can be achieved by using the `TreeGridMatchingRecordsOnlyFilteringStrategy`:
+デフォルトでは、フィルタリングが適用された後、`{ComponentName}` コンポーネントは、設定された基準に一致するレコードとその親をグレー表示されて、追加のコンテキストを提供します。ただし、場合によっては、親のトレースなしで、特定のフィルタリング条件に一致するレコードのみを表示したいことがあります。これは、`TreeGridMatchingRecordsOnlyFilteringStrategy` を使用して実現できます。
 
 ```html
 <igx-tree-grid [data]="data" [allowFiltering]="true" [filterStrategy]="matchingRecordsOnlyStrategy">
@@ -372,9 +373,9 @@ public matchingRecordsOnlyStrategy = new TreeGridMatchingRecordsOnlyFilteringStr
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-To get started with styling the filtering row, we need to import the `index` file, where all the theme functions and component mixins live:
+フィルター行のスタイル設定は、すべてのテーマ関数とコンポーネント mixin が存在する `index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -383,7 +384,7 @@ To get started with styling the filtering row, we need to import the `index` fil
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the `grid-theme` and accepts the `$filtering-row-text-color`, `$filtering-row-background`, `$filtering-header-text-color` and the `$filtering-header-background` parameters.
+最も簡単な方法は、`grid-theme` を拡張する新しいテーマを作成し、`$filtering-row-text-color`、`$filtering-row-background`、`$filtering-header-text-color` および `$filtering-header-background` パラメーターを受け取る方法です。
 
 ```scss
 $custom-grid: grid-theme(
@@ -394,7 +395,7 @@ $custom-grid: grid-theme(
 );
 ```
 
-As seen, the `grid-theme` only controls colors for the filtering row and the respective column header that is being filtered. We obviously have a lot more components inside the filtering row, such as an input group, chips, buttons and others. In order to style them, we need to create a separate theme for each one, so let's create a new input group theme and a new button theme:
+以下のように、`grid-theme` は、フィルタリング行とフィルタリングされているそれぞれの列ヘッダーの色のみを制御します。入力グループ、チップ、ボタンなど、フィルタリング行内には明らかに多くのコンポーネントがあります。スタイルの設定は、それぞれに個別のテーマを作成する必要があるため、新しい入力グループのテーマと新しいボタンのテーマを作成します。
 
 ```scss
 $dark-input-group: input-group-theme(
@@ -412,9 +413,9 @@ $dark-button: button-theme(
 );
 ```
 
-In this example we only changed some of the parameters for the input group and the button, but the `input-group-theme` and the `button-theme` provide way more parameters to control their respective styling.
+この例では、Input Group と Button のパラメーターの一部のみを変更しましたが、`input-group-theme` と `button-theme` は、それぞれのスタイルを制御するためのより多くのパラメーターを提供します。
 
-The last step is to **include** the component mixins, each with its respective theme. We will also set the color property for the input's placeholder.
+最後のステップは、それぞれのテーマを持つコンポーネント ミックスインを**含める**ことです。また、入力のプレース ホルダーの色プロパティを設定します。
 
 ```scss
 @include grid($custom-grid);
@@ -429,10 +430,10 @@ The last step is to **include** the component mixins, each with its respective t
 ```
 
 >[!NOTE]
->We scope the **igx-button** and the **igx-input-group** mixins within `.igx-grid__filtering-row`, so that only the filtering row buttons and its input group would be styled. Otherwise other buttons and input groups in the grid would be affected too.
+>`.igx-grid__filtering-row` 内で **igx-button** および **igx-input-group** mixin をスコープし、行フィルター ボタンとその入力グループのみのスタイルを設定します。そうでない場合は、グリッド内の他のボタンと入力グループも影響を受けます。
 
  >[!NOTE]
- >If the component is using an `Emulated` ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >コンポーネントが `Emulated` ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {
@@ -450,9 +451,9 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
-### Defining a color palette
+### カラーパレットの定義
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the `igx-palette` and `igx-color` functions.
+上記のように色の値をハードコーディングする代わりに、`igx-palette` および `igx-color` 関数を使用することによって色に関してより高い柔軟性を持つことができます。
 
 `igx-palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
 
@@ -463,7 +464,7 @@ $black-color: #292826;
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
 
-And then with `igx-color` we can easily retrieve color from the palette.
+また `igx-color` を使用してパレットから簡単に色を取り出すことができます。
 
 ```scss
 $custom-grid: grid-theme(
@@ -489,13 +490,13 @@ $dark-button: button-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
-### Using Schemas
+### スキーマの使用
 
-Going further with the theming engine, you can build a robust and flexible structure that benefits from [Schemas](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
+テーマ エンジンを使用して[スキーマ](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - `light-grid`, `light-input-group` and `light-button` schemas:
+すべてのコンポーネントに提供されている定義済みスキーマ (この場合は (`light-grid`、`light-input-group` および `light-button` スキーマ) の 1 つを拡張します。
 
 ```scss
 // Extending the light grid schema
@@ -553,7 +554,7 @@ $custom-button-schema: extend($_light-button,
 );
 ```
 
-In order to apply our custom schemas we have to **extend** one of the globals (`light` or `dark`), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+カスタム スキーマを適用するには、グローバル (`light` または `dark`) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global light-schema
@@ -582,65 +583,65 @@ $custom-input-group: input-group-theme(
 );
 ```
 
-Don't forget to include the themes in the same way as it was demonstrated above.
+上記と同じ方法でテーマを含める必要があることに注意してください。
 
-### Demo
+### デモ
 
 <code-view style="height:500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-style"
            github-src="{ComponentSample}/filtering-style"
-           alt="{Platform} {ComponentTitle} Filtering Style Example">
+           alt="{Platform} {ComponentTitle} フィルタリング スタイルの例">
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 
-## Known Limitations
+## 既知の問題と制限
 
 > [!NOTE]
-> Some browsers such as Firefox fail to parse regional specific decimal separators by considering them grouping separators, thus resulting in them being invalid. When inputting such values for a numeric column filter value, only the valid part of the number will be applied to the filtering expression. For further information, refer to the Firefox [issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1199665).
+> Firefox などの一部のブラウザーは、地域固有の小数点区切り文字をグループ化区切りと見なすため解析できず、無効になります。数値列フィルター値にそのような値を入力すると、数値の有効な部分のみがフィルター式に適用されます。詳細については、Firefox [問題](https://bugzilla.mozilla.org/show_bug.cgi?id=1199665)を参照してください。
 
 <!-- Angular -->
 <!-- ComponentStart: Grid, TreeGrid -->
 
-### Breaking Changes in 6.1.0
-* {ComponentName} `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
-* `filter_multiple` method is removed. Use `Filter` method and `FilteringExpressionsTree` property instead.
-* The `Filter` method has new signature. It now accepts the following parameters:
-  * `Name` - the name of the column to be filtered.
-  * `Value` - the value to be used for filtering.
-  * `ConditionOrExpressionTree` (optional) - this parameter accepts object of type `FilteringOperation` or `FilteringExpressionsTree`. If only simple filtering is needed, a filtering operation could be passed as an argument. In case of advanced filtering, an expressions tree containing complex filtering logic could be passed as an argument.
-  * `IgnoreCase` (optional) - whether the filtering is case sensitive or not.
-* `FilteringDone` event now have only one parameter of type `FilteringExpressionsTree` which contains the filtering state of the filtered column.
-* filtering operands: `FilteringExpression` condition property is no longer a direct reference to a filtering condition method, instead it's a reference to an `FilteringOperation`.
-* `ColumnComponent` now exposes a `Filters` property, which takes an `FilteringOperand` class reference.
-* Custom filters can be provided to the {ComponentTitle} columns by populating the `Operations` property of the `FilteringOperand` with operations of `FilteringOperation` type.
+### 6.1.0 Volume 0 の重大な変更
+* {ComponentName} `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
+* `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
+* `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
+  * `Name` - フィルターする列の名前。
+  * `Value` - フィルタリングに使用する値。
+  * `ConditionOrExpressionTree` (オプション) - このパラメーターは、`FilteringOperation` または `FilteringExpressionsTree` 型のオブジェクトを受け付けます。簡単なフィルタリングが必要な場合、フィルタリング処理を引数として渡すことができます。高度なフィルタリングの場合、複雑なフィルタリング ロジックを含む式ツリーが引数として渡すことができます。
+  * `IgnoreCase` (オプション) - フィルタリングで大文字と小文字を区別するかどうか。
+* `FilteringDone` イベントは、フィルター列のフィルタリング状態を含む型 `FilteringExpressionsTree` の 1 パラメーターのみになりました。
+* フィルター オペランド: `FilteringExpression` 条件プロパティは、フィルタリング状態メソッドに直接参照せずに `FilteringOperation` を参照するようになりました。
+* `ColumnComponent` は、`Filters` プロパティを公開し、`FilteringOperand` クラス参照を取得します。
+* カスタム フィルターは、`FilteringOperation` 型の処理で `FilteringOperand` の `Operations` プロパティを生成して {ComponentTitle} の列で使用できます。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `{ComponentName}`
 * `Column`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName}  **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
 

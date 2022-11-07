@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列タイプの概要
 
-{ProductName} `{ComponentName}` provides a default handling of *number*, *string*, *date*, *boolean*, *currency* and *percent* column data types, based on which the appearance of the default and editing templates will be present.
+{ProductName} `{ComponentName}` は、デフォルトおよび編集テンプレートの外観に基づいて、number (数値)、string (文字列)、date (日付)、boolean (ブール値)、currency (通貨) および percent (パーセント) 列のデータ型のデフォルト処理を提供します。
 
 <!-- ComponentStart: Grid -->
 
@@ -26,7 +26,7 @@ _language: ja
 
 データ型固有のテンプレートを有効にする場合、列の `DataType` 入力を設定する必要があります。設定しない場合、列は文字列の列として処理されます (これは列 `DataType` のデフォルト値であるためです)。
 
-The following sections describe the default templates for each `DataType`.
+次に、各 `DataType` のデフォルト テンプレートについて説明します。
 
 ### 文字列
 
@@ -176,9 +176,9 @@ public timeFormats = [
 
 <!-- Blazor -->
 
-### Image
+### 画像
 
-While there does not exist a built-in template for an image column in the `{ComponentName}` at this time, this can be simply implemented by providing a `BodyTemplateScript` to one of your `Column`s. This property points at a JavaScript function that can be defined like so:
+現時点では `{ComponentName}` の画像列の組み込みテンプレートは存在しませんが、これは `BodyTemplateScript` を `Column` の 1 つに提供することで簡単に実装できます。 このプロパティは、次のように定義できる JavaScript 関数を指します。
 
 ```razor
 <IgbColumn Field="ImageSource" BodyTemplateScript="ImageCellTemplate" />
@@ -192,7 +192,7 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 }, false);
 ```
 
-Alternatively, you can do this in a more "Blazor" way by providing a template in your .razor file to the `BodyTemplate` property of the `Column`. Please note though, that this will not be as performant as using the JavaScript `BodyTemplateScript` mentioned above. The code to do this in .razor can be found below:
+または、.razor ファイルのテンプレートを `Column` の `BodyTemplate` プロパティに指定することで、より Blazor のような方法でこれを行うことができます。ただし、これは上記の JavaScript `BodyTemplateScript` を使用するほどパフォーマンスが高くないことに注意してください。.razor でこれを行うコードは次のとおりです。
 
 ```razor
 <IgbColumn Field="ImageSource" BodyTemplate="ImageCellTemplate" />
@@ -233,7 +233,7 @@ import { LOCALE_ID } from '@angular/core';
 
 <!-- end: Blazor -->
 
-*グリッドの locale を使用する場合:*
+グリッドの locale を使用する場合:
 ```html
 <{ComponentSelector} [locale]="'fr-FR'" [data]="data">
 </{ComponentSelector}>
@@ -283,7 +283,7 @@ public formatOptions = this.options;
 
 *display - デフォルトの en-US ロケールの場合、USD コードは省略記号 $ または記号 US$ で表すことができます。
 
-セルの値を編集すると、*通貨記号*がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#cell-editing-templates)を参照してください。
+セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
 
 > 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
@@ -333,7 +333,7 @@ public formatPercentOptions = this.options;
 }
 ```
 
-> 注: 上/下矢印キーを使用する場合、値は digitsInfo-minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
 
@@ -391,7 +391,7 @@ TO DO!
 
 ## その他のリソース
 
-* カスタム テンプレートについては、[セル編集トピック](cell-editing.md#cell-editing-templates)を参照してください。
+* カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
 * [{ComponentTitle} 概要](overview.md)
 * [編集](editing.md)
 * [集計](summaries.md)

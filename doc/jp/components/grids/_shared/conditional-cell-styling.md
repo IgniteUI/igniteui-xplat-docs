@@ -15,7 +15,7 @@ _language: ja
 
 Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、カスタム ルールに基づいて**行の条件付きスタイル設定**を作成する次の 2 つの方法を提供します:
 
-- `{ComponentName}` コンポーネントで `RowClasses`  入力を設定する方法。
+- `{ComponentName}` コンポーネントで `RowClasses` 入力を設定する方法。
 - `{ComponentName}` コンポーネントで `RowStyles` 入力を設定する方法。
 
 さらにこのトピックでは、両方について詳しく説明します。

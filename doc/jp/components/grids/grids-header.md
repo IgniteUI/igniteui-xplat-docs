@@ -1,7 +1,7 @@
 ---
-title: {Platform} Grids & Tables | Fastest {Platform} UI Grid | Infragistics
-_description: Looking for fast {Platform} grids and tables? Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
-_keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics
+title: {Platform} グリッド & テーブル | 最速の {Platform} UI グリッド | インフラジスティックス
+_description: 高速な {Platform} グリッドとテーブルをお探しですか? Ignite UI for {Platform} は、{Platform} ネイティブでマテリアル ベースの UI データ グリッドとテーブルの完全なライブラリを提供します。詳しい情報をご覧ください。
+_keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics, {Platform} データ グリッド, テーブル, グリッド, インフラジスティックス
 mentionedTypes: ["Grid"]
 _language: ja
 
@@ -296,7 +296,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">インライン {Platform} グリッド編集<a class="anchorjs-link" href="#インライン-{Platform}-グリッド編集" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>We provide you default [cell templates for editable columns](grid/grid.md#cell-editing-template) which are based on the data type of the column. You can define your own custom templates for editable columns and override default behavior for committing and discarding changes in the cell value.</p>
+        <p>列のデータ型に基づくデフォルトの[編集可能な列のセル テンプレート](grid/grid.md#セル編集テンプレート)を提供します。編集可能な列にカスタム テンプレートを定義し、セル値のコミットや変更の破棄でデフォルト動作をオーバーライドできます。</p>
     </div>
 </div>
 

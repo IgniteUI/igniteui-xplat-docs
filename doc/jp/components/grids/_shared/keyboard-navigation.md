@@ -17,7 +17,7 @@ _language: ja
 * **グループ化またはツールバーの領域** (有効な場合)
 * **{ComponentTitle} ヘッダー**
 * **{ComponentTitle} 本体**
-* **列集計** (有効な場合)
+* **列の集計** (有効な場合)
 * **{ComponentTitle} ページネーター** (有効な場合)
 
 >[!NOTE]
@@ -30,7 +30,7 @@ _language: ja
 
 ## ヘッダー ナビゲーション
 
-`{ComponentName}`  ヘッダーの*キーボード ナビゲーション*が完全にサポートされるようになりました。列ヘッダーは矢印キーで簡単にトラバースできます。さらに、**フィルタリング**、**ソート**、**グループ化**などの列操作をトリガーするキーの組み合わせがいくつかあります。
+`{ComponentName}` ヘッダーの**キーボード ナビゲーション**が完全にサポートされるようになりました。列ヘッダーは矢印キーで簡単にトラバースできます。さらに、**フィルタリング**、**ソート**、**グループ化**などの列操作をトリガーするキーの組み合わせがいくつかあります。
 `{ComponentName}` ヘッダー コンテナーがフォーカスされている場合、以下のキー組み合わせを使用できます。
 
 ### キーの組み合わせ
@@ -115,7 +115,7 @@ _language: ja
  <!-- ComponentStart: Grid -->
  - <kbd>Alt + 左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - マスター/詳細行で詳細ビューを縮小します。
  - <kbd>Alt + 右矢印</kbd> または<kbd>Alt + 下矢印</kbd> - マスター/詳細行で詳細ビューを展開します。
- - Space - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
+ - <kbd>Space</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
  <!-- ComponentEnd: Grid -->
 
 <!-- Angular -->
@@ -138,13 +138,13 @@ _language: ja
 特定のキーまたはキーの組み合わせのデフォルトの動作をオーバーライドすることができるは、**キーボード ナビゲーション**機能の利点の 1 つです。たとえば、<kbd>Enter</kbd> キーまたは <kbd>Tab</kbd> キーを押して次のセルまたは下のセルへ移動します。</kbd> </kbd> この以外のナビゲーションシナリオでも、**Keyboard Navigation** API で簡単に実現できます。
 
 
-| API | Description | Arguments |
+| API | 説明 | 引数 |
 |---------|-------------|-----------|
-| `GridKeydown` | An event that is emitted when any of key press/combinations described above is performed. Can be canceled. For any other key press/combination, use the default `onkeydown` event. | `IGridKeydownEventArgs` |
-| `ActiveNodeChange` | An event that is emitted when the active node is changed. You can use it to determine the Active focus position (header, tbody etc.), column index, row index or nested level. | `IActiveNodeChangeEventArgs` |
-| `NavigateTo` | Navigates to a position in the grid, based on provided `Rowindex` and `VisibleColumnIndex`. It can also execute a custom logic over the target element, through a callback function that accepts param of type `{ targetType: GridKeydownTargetType, target: Object }` . Usage: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `RowIndex`: number, `VisibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
-| `GetNextCell`| returns `ICellPosition` object, which defines the next cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetNextCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `currentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
-| `GetPreviousCell` | returns `ICellPosition` object, which defines the previous cell by `RowIndex` and `VisibleColumnIndex`. A callback function can be passed as a third parameter of `GetPreviousCell` method. The callback function accepts `Column` as a param and returns a `boolean` value indication if a given criteria is met: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `CurrentRowIndex`: number, `CurrentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
+| `GridKeydown` | 上記のキー押下やキー押下の組み合わせのいずれかが実行されたときに発生されるイベント。キャンセルできます。その他のキーの押下/組み合わせには、デフォルトの `onkeydown` イベントを使用します。 | `IGridKeydownEventArgs` |
+| `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `IActiveNodeChangeEventArgs` |
+| `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。`{ targetType: GridKeydownTargetType, target: Object }` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `RowIndex`: number, `VisibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
+| `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `CurrentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
+| `GetPreviousCell`| `RowIndex` と ` VsibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `CurrentRowIndex`: number, `CurrentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -205,7 +205,7 @@ public customKeydown(args: IGridKeydownEventArgs) {
 }
 ```
 
-`IGridKeydownEventArgs` 値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。</kbd> ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。</kbd> 
+`IGridKeydownEventArgs` 値に基づいて、独自のロジックを提供する 2つ のケースを識別しました (上記を参照)。API のメソッドを使用して、目的の処理を実行しましょう。ユーザーが編集モードでセル上で <kbd>Tab</kbd> キーを押している場合、入力の検証を実行します。 ユーザーがセル上で <kbd>Enter</kbd> キーを押すと、次の行のセルへフォーカスを移動します。
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -300,9 +300,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 ## 既知の問題と制限
 
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-| Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled.|
+| スクロール可能な親コンテナーを使用してグリッド内を移動します。 | グリッドがスクロール可能な親コンテナー内に配置され、ユーザーが表示されていないグリッドのセルへ移動した場合、親コンテナーはスクロールされません。|
 
 ## API リファレンス
 
