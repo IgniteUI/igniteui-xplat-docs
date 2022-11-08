@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Virtualization and Performance - Ignite UI for {Platform}
+title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - Ignite UI for {Platform}
 _description: Ignite UI for {Platform} の仮想化ディレクティブは、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform} {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
@@ -9,70 +9,70 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Virtualization and Performance
+# {Platform} {ComponentTitle} 仮想化とパフォーマンス
 
-In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `igxForOf` directive and virtualizes its content both vertically and horizontally.
+Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf` ディレクティブを使用し、水平および垂直方向にコンテンツを仮想化します。
 
-## {Platform} {ComponentTitle} Virtualization and Performance Example
+## {Platform} {ComponentTitle} 仮想化とパフォーマンスの例
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-virtualization"
            github-src="{ComponentSample}/data-performance-virtualization"
-           alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
+           alt="{Platform} {ComponentTitle} 仮想化とパフォーマンスの例">
 </code-view>
 
-## Enabling Virtualization
+## 仮想化の有効化
 
-By utilizing the `ForOf` directive the `{ComponentName}` now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. The `{ComponentName}`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally. 
+`ForOf` ディレクティブは、ビューポートに表示されているデータのみを描画し、ユーザーがスクロール時に表示データを切り替えた際に `{ComponentName}` が DOM 描画およびメモリ使用を最適化します。`{ComponentName}` の `Width` および `Height` のデフォルト値は `100%` です。コンテンツが利用可能なスペースにフィットせず、垂直方向または水平方向にスクロールバーが必要な場合に仮想化が有効になります。 
 
-However, it is also possible to explicitly set the `{ComponentName}`'s `Width` and/or `Height` to `null` which means that the related dimension will be determined by the total size of the items inside. No scrollbar will then be shown and all items will be rendered along the respective dimension (columns if `Width` is `null` and rows if `Height` is `null`).
+ただし、`{ComponentName}` の `Width` または `Height` を明示的に `null` 値に設定できます。つまり、関連するディメンションが項目の合計サイズに基づいて決定されます。スクロールバーが表示されず、すべての項目が相対するディメンション (`Width` が `null` 値の場合は列で、`Height` が `null` 値の場合は行) に描画されます。
 
-The size of the data chunks is determined by:
+データのサイズは以下によって決定されます。
 
-*   The row height for the vertical (row) virtualization. This is determined by the `RowHeight` option and is 50(px) by default.
-*   The individual column widths in pixels for the horizontal (column) virtualization. They can be determined by either setting explicit width for each column component or setting the `{ComponentName}`'s `ColumnWidth` option, which will be applied to all columns that don't have explicit width set.
+*   垂直 (行) 仮想化の行の高さ。`RowHeight` オプションで決定されますがデフォルトは 50(px) です。
+*   水平 (列) 仮想化の列幅 (ピクセル単位)。各列コンポーネントで明示的に幅を設定、または明示的に幅が設定されないすべての列に適用する `{ComponentName}` の `ColumnWidth` オプションを設定できます。
 
-In most cases, letting the grid apply its default behavior by leaving dimensions unset will produce the desired layout. For column widths it is determined by the column count, the columns with set width, and the calculated width of the `{ComponentName}`'s container. The grid will try to fit all columns inside the available space as long as the width it attempts to assign is not under 136(px). In such cases, columns with unassigned width will receive the minimum width of 136(px) and a horizontal scrollbar will be shown. The grid will be horizontally virtualized.
+ディメンションを設定せずにグリッドでデフォルト動作を適用する場合、ほとんどの場合は望ましいレイアウトになります。列幅は列カウント、幅が設定された列、および `{ComponentName}` コンテナの計算幅に基づいて決定されます。グリッドは、割り当てる幅が 136px 未満になる以外はすべての列を利用可能なスペースに合わせようとします。その場合、割り当てられない幅を持つ列は 136px の最小幅に設定され、水平方向スクロールバーが表示されます。グリッドは水平方向に仮想化されます。
 
-Explicitly setting column widths in percentages (%) will, in most cases, create a grid that is not virtualized horizontally as it will not have a horizontal scrollbar.
+列幅をパーセンテージ (%) で明示的に設定する場合、ほとんどの場合に水平スクロールバーがない水平方向に仮想化されないグリッドを作成します。
 
 <!-- Angular -->
 
-## Remote Virtualization
+## リモート仮想化
 
-The `{ComponentName}` supports remote virtualization, which is demonstrated in the [`Remote Data Operations`](remote-data-operations.md) topic.
+`{ComponentName}` はリモート仮想化をサポートします。詳細については、[`リモート データ操`](remote-data-operations.md)作で説明されています。
 
 <!-- end: Angular -->
 
-## Virtualization Limitations
+## 仮想化の制限
 
-*   On Mac OS horizontal scrollbar is not visible when "Show scrollbars only when scrolling" system option is set to true (which is the default value). This is because the `{ComponentName}`’s row container has an overflow set to hidden. Change the option to "Always" and the scrollbar will appear.
+*   Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを "Always"に変更するとスクロールが表示されます。
 
 ## FAQ
 
-### Why is having dimensions in the {ComponentTitle} is necessary for virtualization to work?
+### 仮想化がで {ComponentTitle} でディメンションを設定する必要があるのはなぜですか?
 
-Without information about the sizes of the container and the items before rendering them setting the width or height of a scrollbar or determining which of the items should be in the view when you scroll to a random location in the `{ComponentName}` is erroneous. Any assumptions on what the actual dimensions might be could lead to unnatural behavior of the scrollbar and ultimately suboptimal experience for the end-user. This is why setting the related dimensions is enforced in order for virtualization to take effect.
+描画する前にコンテナーおよび項目のサイズの情報がない場合に `{ComponentName}` でランダムな位置にスクロールすると、スクロールバーの幅や高さの設定、表示項目の決定で誤りが発生します。ディメンションの推測がスクロールバーの誤操作となり、ユーザー エクスペリエンスを低下させます。そのため、仮想化を有効にするには、関連ディメンションを設定する必要があります。
 
-## API References
+## API リファレンス
 
 * `Grid`
 * `Column`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName}  **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

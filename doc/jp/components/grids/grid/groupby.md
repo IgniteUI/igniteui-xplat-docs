@@ -1,29 +1,29 @@
 ---
-title: {Platform} Grid Group By | Group by multiple fields | Infragistics
+title: {Platform} Grid グループ化 | 複数のフィールドでグループ化 | インフラジスティックス
 _description: グループを設定して {Platform} Material テーブルにデータ レコードを視覚化し、グループ化されたデータを個別の列グループに視覚化できます。
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics, グリッド, グループ化, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
 ---
 
-# {Platform} Grid Group By
+# {Platform} Grid グループ化
 
-A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in `Grid` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
+{Platform} Material テーブルまたは UI グリッドの Group by 動作は、列の値に基づいてグループ化されたデータ行を作成します。`Grid` の Group By では、グループを階層構造で視覚化できます。グループデータ行は展開または縮小でき、グループの順序は UI または API で変更できます。行選択を有効にすると、GroupBy 行セレクターがグループ行の一番左の領域に描画されます。`RowSelection` プロパティが単一に設定されている場合、チェックボックスは無効になり、選択が行われるグループの表示としてのみ機能します。`RowSelection` プロパティが複数に設定されている場合、Group By 行セレクターをクリックすると、このグループに属するすべてのレコードが選択されます。
 
-## {Platform} Grid Group By Example
-This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
+## {Platform} Grid グループ化の例
+この例は、大量のデータのグループ化が可能であることを示しています。列ヘッダーを一番上 (グループ化領域) にドラッグすると、ユーザーは選択した列のデータを階層構造で表示できます。さらに列ヘッダーを一番上にドラッグすることで、複数のフィールドでグループ化できます。これらのグループ化オプションは、ユーザーが多数の行と列を持つテーブルがあり、はるかに高速で視覚的に受け入れられる方法でデータを表示ようとする場合に役立ちます。
 
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
-           alt="{Platform} {ComponentTitle} Group By Example">
+           alt="{Platform} {ComponentTitle} グループ化の例">
 </code-view>
 
 
-## Initial Grouping State
+## 初期のグループ化状態
 
-It is possible to define initial grouping of the grid by assigning an array of expressions to the `GroupingExpressions` property of the grid.
+グリッドの `GroupingExpressions` プロパティに式の配列を割り当てることによって、グリッドの初期グループ化を定義することができます。
 
 ```typescript
 public ngOnInit() {
@@ -34,13 +34,13 @@ public ngOnInit() {
 }
 ```
 
-Grouping expressions implement the `ISortingExpression` interface.
+グループ式は、`ISortingExpression` インターフェイスを実装します。
 
 ## Group By API
 
-### Grouping API
+### グループ化 API
 
-Grouping is available through the UI and through a robust API exposed by the grid component. Developers can allow end-users to group the grid data by certain columns, by setting each column's `Groupable` property to `true`.
+グループ化は、UI およびグリッド コンポーネントで公開された API で実行できます。各列の `Groupable` プロパティを `true` に設定してエンドユーザーは特定の列でグリッド データをグループ化できます。
 
 ```html
 <-grid [data]="data">
@@ -57,7 +57,7 @@ public ngOnInit() {
 }
 ```
 
-During runtime the expressions are gettable and settable from the `groupingExpressions` property. If you need to add or change an existing expression you may also use the `GroupBy` method with either a single or an array of `ISortingExpression`.
+ランタイムの式は `groupingExpressions` プロパティの取得または設定できます。既存の式を追加または変更する必要がある場合、`ISortingExpression` の単一または配列の `GroupBy` メソッドを使用してください。
 
 ```typescript
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
@@ -65,13 +65,13 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> 注: これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、gropuing を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
 
 <!-- end: Angular -->
 
-### Expand/Collapse API
+### 展開 / 縮小 API
 
-In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
+グループ式の他にグループ行の展開も制御できます。`Grid` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。グループ行は、作成されたフィールド名とグループ化の各レベルを表す値に基づいて識別されます。以下は展開状態のインターフェイスのシグネチャです。
 
 ```typescript
 export interface IGroupByKey {
@@ -85,7 +85,7 @@ export interface IGroupByExpandState {
 }
 ```
 
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
+`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。`Grid` はグループ レコード インスタンスでトグルするメソッドを公開します。
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
@@ -94,13 +94,13 @@ As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly 
     groupRow.expanded = false;
 ```
 
-Groups can be created expanded (***default***) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
+グループは展開済み (**デフォルト**) または縮小済みに作成でき、展開状態は一般的にデフォルト動作の反対の状態のみ含みます。グループを作成して展開するかどうか、または `GroupsExpanded` プロパティを介すかどうかを制御できます。
 
-### Select/Deselect All Rows in a Group API
+### グループですべての行を選択 / 選択解除 API
 
-Selecting/Deselecting all rows in a group is available through the `SelectRowsInGroup` and `DeselectRowsInGroup` API methods.
+グループ内のすべての行の選択/選択解除は、`SelectRowsInGroup` および `DeselectRowsInGroup` API メソッドを介して利用できます。
 
-The code snippet below can be used to select all rows within a group using the group record instance `SelectRowsInGroup` method. Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
+以下のコードスニペットは、グループ レコード `SelectRowsInGroup` メソッドを使用してグループ内のすべての行を選択するために使用できます。さらに、このメソッドの2番目のパラメーターはブールプロパティです。それを使用して、前の行の選択をクリアするかどうかを選択できます。以前の選択はデフォルトで保存されます。
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
@@ -108,7 +108,7 @@ The code snippet below can be used to select all rows within a group using the g
     grid.selectRowsInGroup(groupRow);
 ```
 
-If you need to deselect all rows within a group programmatically, you can use the `DeselectRowsInGroup` method.
+プログラムでグループ内のすべての行の選択を解除する必要がある場合は、`DeselectRowsInGroup` メソッドを使用できます。
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
@@ -116,11 +116,11 @@ If you need to deselect all rows within a group programmatically, you can use th
     grid.deselectRowsInGroup(groupRow);
 ```
 
-## Templating
+## テンプレート
 
-### Group Row Templates
+### グループ行テンプレート
 
-The group row except for the expand/collapse UI is fully templatable. By default it renders a grouping icon and displays the field name and value it represents. The grouping record template is rendered against has the following signature:
+展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。デフォルトでグループ アイコンを描画し、フィールド名と値を表示します。テンプレートが描画されるレコードのグループ化には、以下のシグネチャがあります:
 
 ```typescript
 export interface IGroupByRecord {
@@ -133,7 +133,7 @@ export interface IGroupByRecord {
 }
 ```
 
-As an example, the following template would make the group rows summary more verbose:
+たとえば、以下のテンプレートはグループ行集計でより詳細な情報を表示します。
 
 ```html
 <ng-template GroupByRow let-groupRow>
@@ -141,11 +141,11 @@ As an example, the following template would make the group rows summary more ver
 </ng-template>
 ```
 
-### Group Row Selector Templates
+### グループ行セレクター テンプレート
 
-As mentioned above the group row except for the expand/collapse UI is fully templatable. To create a custom Group By row selector template within the Grid, declare an `<ng-template>` with `GroupByRowSelector` directive. From the template, you can access the implicitly provided context variable, with properties that give you information about the Group By row's state.
+上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。グリッド内にカスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-The `SelectedCount` property shows how many of the group records are currently selected while `TotalCount` shows how many records belong to the group.
+`SelectedCount` プロパティは、現在選択されているグループ レコードの数を示し、`TotalCount` はグループに属するレコードの数を示します。
 
 ```html
 <ng-template GroupByRowSelector let-groupByRowContext>
@@ -153,7 +153,7 @@ The `SelectedCount` property shows how many of the group records are currently s
 </ng-template>
 ```
 
-The `GroupRow` property returns a reference to the group row.
+`GroupRow` プロパティは、グループ行への参照を返します。
 
 ```html
 <ng-template GroupByRowSelector let-groupByRowContext>
@@ -161,7 +161,7 @@ The `GroupRow` property returns a reference to the group row.
 </ng-template>
 ```
 
-The `SelectedCount` and `TotalCount` properties can be used to determine if the Group By row selector should be checked or indeterminate (partially selected).
+`SelectedCount` と `TotalCount` プロパティを使用して、Group By 行セレクターをチェックするか不確定にする (部分的に選択する) かを決定できます。
 
 ```html
 <-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
@@ -175,62 +175,62 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
 </-grid>
 ```
 
-## {Platform} Grid Group By With Paging
+## {Platform} Grid ページングによるグループ化
 
-Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process. Any expand or collapse operation forces Paging to recalculate the page count and adjust the page index if necessary.
-Groups that span multiple pages are split between them. The group row is visible only on the page it starts on and is not repeated on subsequent pages. Summary information for group rows is calculated based on the whole group and is unaffected by Paging.
+グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。展開または折りたたみ操作を行うと、ページングでページ数が再計算され、必要に応じてページ インデックスが調整されます。
+複数のページにまたがるグループは、ページ間で分割されます。グループ行は、開始ページでのみ表示され、後続のページでは繰り返されません。グループ行の要約情報はグループ全体に基づいて計算され、ページングの影響を受けません。
 
-### {Platform} Group By With Paging Example
+### {Platform} ページングによるグループ化の例
 
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
-           alt="{Platform} {ComponentTitle} group by with paging example">
+           alt="{Platform} {ComponentTitle} ページングによるグループ化の例">
 </code-view>
 
 
-## Group By With Summaries
+## 集計でグループ化
 
-Integration between Group By and Summaries is described in the [Summaries](summaries.md#summaries-with-group-by) topic.
+グループ化と要約の統合については、[集計](summaries.md#summaries-with-group-by)トピックで説明しています。
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The grouping UI supports the following keyboard interactions:
+グループ UI は、以下のキーボード インタラクションをサポートします。
 
-- For group rows (focus should be on the row or the expand/collapse cell)
-   - <kbd>ALT</kbd> + <kbd>RIGHT</kbd> - Expands the group
-   - <kbd>ALT</kbd> + <kbd>LEFT</kbd> - Collapses the group
-   - <kbd>SPACE</kbd> - selects all rows in the group, if <kbd>rowSelection</kbd> property is set to multiple
+- グループ行 (行または展開/縮小セルにフォーカス)
+   - <kbd>ALT</kbd> +  <kbd>右矢印</kbd> - グループを展開します。
+   - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
+   - <kbd>SPACE</kbd> - rowSelection プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
 
-- For group `Chip` components in the group by area (focus should be on the chip)
-   - <kbd>SHIFT</kbd> + <kbd>LEFT</kbd> - moves the focused chip left, changing the grouping order, if possible
-   - <kbd>SHIFT</kbd> + <kbd>RIGHT</kbd> - moves the focused chip right, changing the grouping order, if possible
-   - <kbd>SPACE</kbd> - changes the sorting direction
-   - <kbd>DELETE</kbd> - ungroups the field
-   - The seperate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
+- グループ領域の `Chip` コンポーネントのグループ化 (チップにフォーカス)
+   - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
+   - <kbd>SHIFT</kbd> + <kbd>右矢印</kbd> - フォーカスしたチップの右へ移動し、可能な場合はグループ順序を変更します。
+   - <kbd>SPACE</kbd> - ソートの方向を変更します。
+   - <kbd>DELETE</kbd> - フィールドのグループ解除。
+   - チップの別の要素をフォーカスでき <kbd>ENTER</kbd> キーでインタラクティブに操作できます。
 
-## {Platform} Grid Custom Group By
+## {Platform} Grid カスタムグループ化
 
-Grid allows defining custom grouping per column or per grouping expression, which provides grouping based on a custom condition. This is useful when you need to group by complex objects or for other application specific scenarios.
+グリッドでは、列ごとまたはグループ化式ごとにカスタム グループを定義できます。これにより、カスタム条件に基づいてグループ化が提供されます。これは、複雑なオブジェクトごとにグループ化する必要がある場合、または他のアプリケーション固有のシナリオで役立ちます。
 
 > [!NOTE]
-> In order to implement custom grouping the data first needs to be sorted appropriately. Due to this you may also need to apply a custom sorting strategy that extends the base `DefaultSortingStrategy`. After the data is sorted the custom groups can be determined by specifying a `GroupingComparer` for the column or for the specific grouping expression.
+> カスタム グループ化を実装するには、まずデータを適切にソートする必要があります。このため、ベース `DefaultSortingStrategy` を拡張するカスタムのソート ストラテジを適用する必要がある場合もあります。データがソートされた後、列または特定のグループ化式に `GroupingComparer` を指定することにより、カスタム グループを決定できます。
 
-The sample below demonstrates custom grouping by `Date`, where the date values are sorted and grouped by Day, Week, Month or Year based on user-selected grouping mode.
+以下のサンプルは、`Date` によるカスタム グループ化を示しています。日付の値は、ユーザーが選択したグループ化モードに基づいて、日、週、月、または年でソートされおよびグループ化されています。
 
-### {Platform} Custom Group By Example
+### {Platform} カスタム グループ化の例
 
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom"
-           alt="{Platform} {ComponentTitle} custom group by example">
+           alt="{Platform} {ComponentTitle} カスタム グループ化の例">
 </code-view>
 
 
-The sample defines custom sorting strategies for the different date conditions.
-Each custom strategy extends the base `DefaultSortingStrategy` and defines the `CompareValues` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
+このサンプルでは、さまざまな日付条件のカスタム並べ替えストラテジを定義しています。
+各カスタム ストラテジ、ベースの `DefaultSortingStrategy` を拡張し、`CompareValues` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
 
 ```typescript
 class BaseSortingStrategy extends DefaultSortingStrategy {
@@ -288,7 +288,7 @@ class WeekSortingStrategy extends BaseSortingStrategy {
 }
 ```
 
-A `GroupingComparer` function is defined for the grouping expressions, which determines the items belonging to the same group based on the selected grouping mode. Values in the sorted data for which this function returns 0 are marked as part of the same group.
+`GroupingComparer` 関数がグループ化式に対して定義され、選択されたグループ化モードに基づいて同じグループに属するアイテムを決定します。この関数が 0 を返すソートされた値は、同じグループの一部としてマークされます。
 
 ```typescript
  groupingComparer: (a, b) => {
@@ -306,15 +306,15 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 ```
 
 <!-- Angular -->
-## Styling
+## スタイル設定
 
-The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
+[Ignite UI for {Platform} Theme ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
-In the below steps, we are going through the steps of customizing the grid's Group By styling.
+以下の手順では、グリッドの Group By スタイルをカスタマイズする手順を実行しています。
 
-### Importing Global Theme
+### グローバル テーマのインポート
 
-To begin the customization of the Group By feature, you need to import the `index` file, where all styling functions and mixins are located.
+グループ化機能のカスタマイズは、すべてのスタイリング機能とミックスインが配置されている `index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -323,9 +323,9 @@ To begin the customization of the Group By feature, you need to import the `inde
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-### Defining Custom Theme
+### カスタム テーマの定義
 
-Next, create a new theme, that extends the `grid-theme` and accepts the parameters, required to customize the Group By as desired. You also need to extend the `chip-theme`, because it's used in the Group By feature.
+次に、`grid-theme` を拡張し、必要に応じてピン固定をカスタマイズするために必要なパラメーターを受け入れる新しいテーマを作成します。Group By 機能で使用されるため、`chip-theme` を拡張する必要もあります。
 
 ```scss
 
@@ -355,9 +355,9 @@ $custom-chips-theme: chip-theme(
 );
 ```
 
-### Defining a Custom Color Palette
+### カスタム カラー パレットの定義
 
-In the approach that we described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `palette` and `color` functions.
+上記で説明したアプローチでは、色の値がハード コーディングされていました。または、`palette` および `color` 関数を使用して、柔軟性を高めることができます。
 `palette` generates a color palette, based on provided primary and secondary colors.
 
 ```scss
@@ -369,7 +369,7 @@ $custom-palette: palette(
   $secondary: $yellow-color
 );
 ```
-After a custom palette has been generated, the `color` function can be used to obtain different varieties of the primary and the secondary colors.
+カスタム パレットが生成された後、`color` 関数を使用して、さまざまな種類の原色と二次色を取得できます。
 
 ```scss
 $custom-theme: grid-theme(
@@ -391,9 +391,9 @@ $custom-chips-theme: chip-theme(
     $hover-text-color:contrast-color($custom-palette, "primary", 600)
 );
 ```
-### Defining Custom Schemas
-You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
-Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+### カスタム スキーマの定義
+[**schema**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**schema** はテーマを作成させるための方法です。
+すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 ```scss
 $custom-grid-schema: extend($_light-grid,(
     group-row-background: (-color:('secondary', 100)),
@@ -407,7 +407,7 @@ $custom-grid-schema: extend($_light-grid,(
     expand-icon-hover-color: (-color:('primary', 400))
 ));
 ```
-In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+カスタム スキーマを適用するには、`light` グローバルまたは `dark` グローバルを拡張する必要があります。プロセス全体が実際にコンポーネントにカスタム スキーマを提供し、その後、それぞれのコンポーネントテーマに追加します。
 ```scss
 $my-custom-schema: extend($light-schema, (
     -grid: $custom-grid-schema
@@ -419,24 +419,24 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Applying the Custom Theme
+### カスタム テーマの適用
 
-The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
+テーマを適用する最も簡単な方法は、グローバル スタイル ファイルに `sass` `@include` ステートメントを使用することです。
 ```scss
 @include grid($custom-theme);
 @include chip($custom-chips-theme);
 ```
 
-### Scoped Component Theme
+### スコープ コンポーネント テーマ
 
-In order for the custom theme to affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
+カスタム テーマが特定のコンポーネントのみに影響するように、定義したすべてのスタイルをグローバル スタイル ファイルからカスタム コンポーネントのスタイルファイルに移動できます (`index` ファイルのインポートを含む)。
 
-This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
+このように、{Platform} の [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
 :host {
@@ -448,7 +448,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 ```
 
 
-### Demo
+### デモ
 
 <!-- NOTE this sample is differed -->
 
@@ -458,40 +458,40 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
 
 <!-- end:Angular -->
 
-## Known Limitations
+## 既知の問題と制限
 
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Maximum amount of grouped columns is 10. | If more than 10 columns are grouped an error is thrown.
+|グループ列の最大値は 10 です。 | 10 列以上の場合はエラーがスローされます。
 
-## API References
+## API リファレン
 
 * {ComponentTitle}
 * `GroupByRow`
-* `GridComponent Styles`
+* `GridComponent スタイル`
 * `ISortingExpression`
 * `ColumnComponent`
 * `IGroupByExpandState`
 * `ChipComponent`
 * `ChipComponent Styles`
 
-## Additional Resources
+## その他のリソース
 
-* [Grid overview](grid.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Summaries](summaries.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [Grid の概要](grid.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [列移動](column-moving.md)
+* [集計](summaries.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

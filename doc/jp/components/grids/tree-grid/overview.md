@@ -34,7 +34,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [作業の開始](..\general-getting-started.md)
 - [NuGet パッケージの追加](..\general-nuget-feed.md)
 
-You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the tree grid:
+また、ツリー グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
 ```html
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
@@ -57,9 +57,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 
 ### 使用方法
 
-Now that we have the tree grid package imported, let’s get started with the basic configuration and bind to local data:
+ツリー グリッド パッケージをインポートしたので、基本的な構成と、ローカル データへのバインドから始めていきましょう。
 
-The tree grid shares a lot of features with the grid, but it also adds the ability to display its data hierarchically.
+ツリー グリッドはグリッドと多くの機能を共有していますが、データを階層的に表示する機能も追加されています。
 ツリー グリッドは、各データ オブジェクトの子コレクションまたは各データ オブジェクトにプライマリキーまたは外部キーを使用してデータ オブジェクト内の関係を定義できます。
 
 ### ツリー セル
@@ -67,7 +67,7 @@ The tree grid shares a lot of features with the grid, but it also adds the abili
 ツリー グリッド階層の構築に使用するオプション (子コレクションまたは主キーまたは外部キー) にかかわらず、ツリー グリッドの行は 2 タイプのセルで構成されます。
 
 - `GridCell` - 値を含む標準セル。
-- `GridCell` - セル行のレベルに基づいた値、インジケーターの展開/縮小、インデント div 要素を含むツリー セル。The level of a row component can be accessed through the `level` property of its inner `treeRow`.
+- `GridCell` - セル行のレベルに基づいた値、インジケーターの展開/縮小、インデント div 要素を含むツリー セル。行コンポーネントのレベルは、その内部の `treeRow` の `level` プロパティを通じてアクセスできます。
 
 > [!NOTE]
 > 各行にはツリー セルを 1 つのみ含むことができますが、標準セルは複数含むことが可能です。
@@ -79,13 +79,13 @@ The tree grid shares a lot of features with the grid, but it also adds the abili
 ### 子コレクション
 **child collection** オプションを使用して各データ オブジェクトは子コレクションを含み、親データ オブジェクトとして同じタイプの項目で生成します。これによりツリー グリッドの各レコードがその子への直接の参照を持つことができます。元のデータ ソースを含むツリー グリッドの `data` プロパティが階層が定義されたコレクションになります。
 
-In order for the tree grid to build the hierarchy, we will have to set its `childDataKey` property to the name of the child collection that is used in each of our data objects. このサンプルでは **Employees** コレクションです。
+ツリー グリッドで階層を構築するには、その `childDataKey` プロパティに、各データ オブジェクトで使用される子コレクションの名前を設定する必要があります。このサンプルでは **Employees** コレクションです。
 更に自動列生成を無効にしてデータ オブジェクトの実際のプロパティとの一致を手動で定義します。**Employees** コレクションが階層で自動的に使用されるため、列定義に含める必要はありません。
 
-We will now enable the row selection and paging features of the tree grid by using the `rowSelection` and the `paging` properties.
+`rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にします。
 最初の列に集計機能、各列にはフィルタリング、並べ替え、編集、サイズ変更機能を有効にします。
 
-Finally, we will enable the toolbar of our tree grid, along with the column hiding, column pinning and exporting features by using the `GridToolbarComponent`, `GridToolbarHidingComponent`, `GridToolbarPinningComponent` and `GridToolbarExporterComponent` respectively.
+最後に、`GridToolbarComponent`、`GridToolbarHidingComponent`、`GridToolbarPinningComponent`、`GridToolbarExporterComponent` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
 
 ### プライマリと外部キー
 **primary and foreign keys** オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。

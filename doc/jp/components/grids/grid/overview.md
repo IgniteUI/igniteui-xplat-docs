@@ -32,7 +32,7 @@ _language: ja
 ## {Platform} Grid の例
 
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](../_shared/paging.md).
+このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、カスタム ページングと、[改ページ](../_shared/paging.md)のページごとの使用部分も含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -57,7 +57,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [作業の開始](..\general-getting-started.md)
 - [NuGet パッケージの追加](..\general-nuget-feed.md)
 
-You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the grid:
+また、 グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
 ```html
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
@@ -102,7 +102,7 @@ ModuleManager.register(
 
 ### 使用方法
 
-Now that we have the grid package imported, let’s get started with the basic configuration and bind to local data:
+グリッド パッケージをインポートしたので、基本的な構成と、ローカル データへのバインドから始めていきましょう。
 
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
@@ -133,7 +133,7 @@ Ignite UI for {Platform} には、Flex に基づくレイアウト システム�
 
 ## グリッドの列構成
 
-`Column` is used to define the grid's `Columns` collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
+`Column` は、グリッドの `Columns` コレクションを定義し、**ソート**や**フィルタリング**などの列ごとの機能を有効にするために使用されます。セル、ヘッダー、およびフッター テンプレートも利用できます。
 
 ### 列の定義
 
@@ -204,7 +204,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 
 ### ヘッダー テンプレート
 
-`Header` targets the column header providing as a context the column object itself.
+`Header` は、列オブジェクト自体をコンテキストとして提供する列ヘッダーをターゲットにします。
 
 ```html
 <igx-column field="Name">
@@ -278,7 +278,7 @@ public toggleSummary(column: IgxColumnComponent) {
 
 ### セル テンプレート
 
-`Cell` applies the provided template to all cells in the column. The context object provided in the template consists of the cell value provided implicitly and the cell object itself. It can be used to define a template where the cells can grow according to their content, as in the below example.
+`Cell` は提供したテンプレートを列内のすべてのセルに適用します。テンプレートで提供されるコンテキスト オブジェクトは暗示的に提供されたセル値およびセル オブジェクトです。以下のようにセルがコンテンツに応じて拡張するテンプレートを定義するために使用できます。
 
 ```html
 <igx-column field="Name">
@@ -570,7 +570,7 @@ constructor() {
 
 ## グリッド データの構造
 
-The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+`Grid` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
 
 ```typescript
 const OBJECT_ARRAY = [{

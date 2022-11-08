@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Summaries - {ProductName}
+title: {Platform} {ComponentTitle} 集計 - {ProductName}
 _description: 列のグループ フッターで {Platform} {ComponentTitle} 集計を構成し、オプションを使用して {ProductName} Material テーブルにカスタム {Platform} テンプレートを設定します。
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics, {Platform} {ComponentTitle} 集計, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,11 +7,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Summaries
+# {Platform} {ComponentTitle} 集計
 
-The {Platform} UI `{ComponentName}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
+{ProductName} の {Platform} UI `{ComponentName}` には、グループ フッターとして列レベルで**集計**できる機能があります。{Platform} グリッド集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
 
-## {Platform} {ComponentTitle} Summaries Overview Example
+## {Platform} {ComponentTitle} 集計概要の例
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,15 +20,15 @@ The {Platform} UI `{ComponentName}` in {ProductName} has a **summaries** feature
 </code-view>
 
 > [!NOTE]
-> The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
+> 列の集計は列**値すべての関数**ですが、フィルタリングが適用された場合、列の集計**はフィルターされた結果値の関数になります**。
 
-`{ComponentName}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentName}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
+`{ComponentName}` 集計を列ごとに有効にして必要な列のみアクティブ化できます。`{ComponentName}` 集計は、列のデータ型に基づいてデフォルト集計の定義済みセットを提供します。
 
 
-For `string` and `boolean` `DataType`, the following function is available:
+`string` および `boolean` `DataType`の場合、以下の関数が利用できます:
  - Count
 
-For `number`, `currency` and `percent` data types, the following functions are available:
+`number`、`currency`、および `percent` データ型の場合、以下の関数を使用できます。
 
  - Count
  - Min
@@ -36,14 +36,14 @@ For `number`, `currency` and `percent` data types, the following functions are a
  - Average
  - Sum
 
-For `date` data type, the following functions are available:
+`date` データ型の場合、以下の関数が利用できます:
  - Count
  - Earliest
  - Latest
 
-All available column data types could be found in the official [Column types topic](column-types.md#default-template).
+すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#default-template)にあります。
 
-`{ComponentName}` summaries are enabled per-column by setting `HasSummary` property to **true**. It is also important to keep in mind that the summaries for each column are resolved according to the column data type. In the `{ComponentName}` the default column data type is `string`, so if you want `number` or `date` specific summaries you should specify the `DataType` property as `number` or `date`. Note that the summary values will be displayed localized, according to the grid `Locale` and column `PipeArgs`.
+`HasSummary` プロパティを **true** に設定すると `{ComponentName}` 集計が列レベルで有効になります。各列の集計は列のデータ型に基づいて解決されます。`{ComponentName}` のデフォルトの列データ型は `string` のため、`number` または `date` 固有の集計を適用するには、`DataType` プロパティを `number` または `date` に設定します。集計値は、グリッドの `Locale` および列 `PipeArgs` に従ってローカライズされて表示されます。
 
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -96,7 +96,7 @@ Add blazor snippet for hgrid
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-The other way to enable/disable summaries for a specific column or a list of columns is to use the public method `EnableSummaries`/`DisableSummaries` of the `{ComponentName}`.
+特定の列や列のリストを有効または無効にする他の方法として `{ComponentName}` のパブリック メソッド `EnableSummaries`/`DisableSummaries` を使用する方法があります。
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
@@ -184,7 +184,7 @@ Add blazor snippet for hgrid
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-## Custom {ComponentTitle} Summaries
+## カスタム {ComponentTitle} 集計
 
 <!-- TODO: Remove comments tag of this paragraph and add custom summary when working -->
 
@@ -358,8 +358,8 @@ Add blazor snippet for my summary
            github-src="{ComponentSample}/data-summary-options" >
 </code-view>
 
-### Summary Template
-`Summary` targets the column summary providing as a context the column summary results.
+### 集計テンプレート
+`Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
 
 ```html
 <igx-column [hasSummary]="true">
@@ -382,12 +382,12 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 }, false);
 ```
 
-When a default summary is defined, the height of the summary area is calculated by design depending on the column with the largest number of summaries and the display density of the grid. Use the `SummaryRowHeight` input property to override the default value. As an argument it expects a number value, and setting a falsy value will trigger the default sizing behavior of the grid footer.
+デフォルトの集計が定義されている場合、集計領域の高さは、集計の数が最も多い列とグリッドの表示密度に応じてデザインにより計算されます。`SummaryRowHeight` 入力プロパティを使用して、デフォルト値をオーバーライドします。引数として数値が必要であり、falsy の値を設定すると、グリッド フッターのデフォルトのサイズ設定動作がトリガーされます。
 
 <!-- Angular -->
 
 > [!NOTE]
-> Column summary template could be defined through API by setting the column `SummaryTemplate` property to the required TemplateRef.
+> 列の集計テンプレートは、列 `SummaryTemplate` プロパティを必要な TemplateRef に設定することにより、API を介して定義できます。
 
 <!-- end: Angular -->
 
@@ -398,8 +398,8 @@ When a default summary is defined, the height of the summary area is calculated 
            github-src="{ComponentSample}/data-summary-template" >
 </code-view>
 
-## Formatting summaries
-By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
+## 集計のフォーマット
+デフォルトでは、組み込みの集計オペランドによって生成される集計結果は、グリッド `Locale` および列 `PipeArgs` に従ってローカライズおよびフォーマットされます。カスタム オペランドを使用する場合、 `Locale` と `PipeArgs` は適用されません。集計結果のデフォルトの外観を変更する場合は、`SummaryFormatter` プロパティを使用してフォーマットできます。
 
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
@@ -435,28 +435,28 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 <!-- ComponentStart: Grid -->
 
-## Summaries with Group By
+## グループの集計
 
-When you have grouped by columns, the `{ComponentName}` allows you to change the summary position and calculation mode using the `SummaryCalculationMode` and `SummaryPosition` properties. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the group row that refers to is collapsed.
+列のグループがある場合、`{ComponentName}` は `SummaryCalculationMode` と `SummaryPosition` を使用して集計配置の変更やモードの計算をします。これら 2 つのプロパティに加えて、`{ComponentName}` は、参照するグループ行が縮小されたときに集計行が表示されたままであるかどうかを決定できる `ShowSummaryOnCollapse` プロパティを公開します。
 
-The available values of the `SummaryCalculationMode` property are:
+以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+ - `RootLevelOnly` - ルート レベルのみ集計が計算されます。
+ - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+ - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
-The available values of the `SummaryPosition` property are:
+以下は使用できる `summaryCalculationMode` プロパティの値です。
 
- - `Top` - The summary row appears before the group by row children.
- - `Bottom` - The summary row appears after the group by row children. This is the default value.
+ - `Top` - 集計行はグループ列の子の前に表示されます。
+ - `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
 
-The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
+`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが  **true**  に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
 
-> [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
+> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
+> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
-### Demo
+### デモ
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -468,26 +468,26 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 <!-- ComponentStart: TreeGrid -->
 
-## Child Summaries
+## 子集計
 
-The `{ComponentName}` supports separate summaries for the root nodes and for each nested child node level. Which summaries are shown is configurable using the `SummaryCalculationMode` property. The child level summaries can be shown before or after the child nodes using the `SummaryPosition` property. Along with these two properties the `{ComponentName}` exposes and `ShowSummaryOnCollapse` property which allows you to determine whether the summary row stays visible when the parent node that refers to is collapsed.
+`{ComponentName}` はルート ノードの集計と各ネストされた子ノード レベルの区別をサポートします。集計は `SummaryCalculationMode` プロパティを使用して設定できます。子レベル集計は、`SummaryPosition` を使用して子ノードの前または後に表示できます。これら 2 つのプロパティに加えて、`{ComponentName}` は、参照するグループ行が縮小されたときに集計行が表示されたままであるかどうかを決定できる `ShowSummaryOnCollapse` プロパティを公開します。
 
 
-The available values of the `SummaryCalculationMode` property are:
+以下は使用できる `SummaryCalculationMode` プロパティの値です:
 
- - `RootLevelOnly` - Summaries are calculated only for the root level nodes.
- - `ChildLevelsOnly` - Summaries are calculated only for the child levels.
- - `RootAndChildLevels` - Summaries are calculated for both root and child levels. This is the default value.
+ - `RootLevelOnly` - ルート レベルのノードのみ集計が計算されます。
+ - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
+ - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
-The available values of the `SummaryPosition` property are:
+以下は使用できる `summaryCalculationMode` プロパティの値です。
 
- - `Top` - The summary row appears before the list of child rows.
- - `Bottom` - The summary row appears after the list of child rows. This is the default value.
+ - `Top` - 集計行は子行のリストの前に表示されます。
+ - `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。
 
-The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
+`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
 
-> [!NOTE]
-> The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
+> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
+> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
 <code-view style="height:720px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -498,21 +498,21 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 <!-- ComponentEnd: TreeGrid -->
 
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The summary rows can be navigated with the following keyboard interactions:
+集計行は、以下のキーボード操作でナビゲーションできます。
 
-- <kbd>UP</kbd> - navigates one cell up.
-- <kbd>DOWN</kbd> - navigates one cell down.
-- <kbd>LEFT</kbd> - navigates one cell left.
-- <kbd>RIGHT</kbd> - navigates one cell right.
-- <kbd>CTRL</kbd> + <kbd>LEFT</kbd> or <kbd>HOME</kbd> - navigates to the leftmost cell.
-- <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell.
+- <kbd>上矢印</kbd> - 1 つ上のセルへ移動。
+- <kbd>下矢印</kbd> - 1 つ下のセルへ移動。
+- <kbd>左矢印</kbd> - 1 つ左のセルへ移動。
+- <kbd>右矢印</kbd> - 1 つ右のセルへ移動。
+- <kbd>CTRL</kbd> + <kbd>左矢印</kbd> または <kbd>HOME</kbd> - 左端のセルへ移動。
+- <kbd>CTRL</kbd> + <kbd>右矢印</kbd> または <kbd>END</kbd> - 右端のセルへ移動。
 
 <!-- Angular -->
-## Styling
+## スタイル設定
 
-To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
+並べ替え動作のスタイル設定は、すべてのテーマ関数とコンポーネント mixins が存在する `index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -521,7 +521,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the [`grid-summary-theme`]({environment:sassApiUrl}/index.html#function-grid-summary-theme) and accepts the `$background-color`, `$focus-background-color`, `$label-color`, `$result-color`, `$pinned-border-width`, `$pinned-border-style` and `$pinned-border-color` parameters.
+最も簡単な方法は、[`grid-summary-theme`]({environment:sassApiUrl}/index.html#function-grid-summary-theme) を拡張する新しいテーマを作成し、`$background-color`、`$focus-background-color`、`$label-color`、`$result-color`、`$pinned-border-width`、`$pinned-border-style`、および `$pinned-border-color` パラメーターを受け取る方法です。
 
 ```scss
 $custom-theme: grid-summary-theme(
@@ -534,14 +534,14 @@ $custom-theme: grid-summary-theme(
     $pinned-border-color: #e41c77
 );
 ```
-The last step is to **include** the component mixins:
+最後にそれぞれのテーマを持つコンポーネント mixins を**含めます**。
 
 ```scss
 @include grid-summary($custom-theme);
 ```
 
 >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
  ```scss
 :host {
@@ -551,9 +551,9 @@ The last step is to **include** the component mixins:
 }
 ```
 
-### Defining a Color Palette
+### カラー パレットの定義
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+上記のように色の値をハードコーディングする代わりに、[`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) および [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによって色に関してより高い柔軟性を持つことができます。
 
 `igx-palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
 
@@ -564,7 +564,7 @@ $green-color: #00ff2d;
 $my-custom-palette: palette($primary: $blue-color, $secondary: $green-color);
 ```
 
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
+また [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単に色を取り出すことができます。
 
 ```scss
 $custom-theme: grid-summary-theme(
@@ -579,13 +579,13 @@ $custom-theme: grid-summary-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/palettes.md) topic for detailed guidance on how to use them.
+>`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[`パレット`](../themes/palettes.md)のトピックを参照してください。
 
-### Using Schemas
+### スキーマの使用
 
-Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
+テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - [`_light-grid-summary`]({environment:sassApiUrl}/index.html#variable-_light-grid-summary):
+すべてのコンポーネントに提供されている 2 つの定義済みスキーマ (ここでは [`_light-grid-summary`]({environment:sassApiUrl}/index.html#variable-_light-grid-summary) の 1 つを拡張します。
 
 ```scss
 // Extending the light grid summary schema
@@ -602,7 +602,7 @@ $my-summary-schema: extend($_light-grid-summary,
 );
 ```
 
-In order to apply our custom schema we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+カスタム スキーマを適用するには、グローバル [`light`]({environment:sassApiUrl}/index.html#variable-light-schema) または [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema) の 1 つを**拡張**する必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global light-schema
@@ -619,7 +619,7 @@ $custom-theme: grid-summary-theme(
 );
 ```
 
-Don't forget to include the themes in the same way as it was demonstrated above.
+上記と同じ方法でテーマを含める必要があることに注意してください。
 
 <code-view style="height:710px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -629,7 +629,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `SummaryOperand`
 * `NumberSummaryOperand`
@@ -637,27 +637,27 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * `ColumnGroup`
 * `Column`
 
-## Additional Resources
+## その他のリソース
 
 
-* [{ComponentTitle} Overview](overview.md)
-* [Column Data Types](column-types.md#default-template)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [列のデータ型](column-types.md#default-template)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [列移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
 <!-- ComponentStart: Grid -->
 
-* [Selection-based Aggregates](selection-based-aggregates.md)
+* [選択に基づいた集計](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

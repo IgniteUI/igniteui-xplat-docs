@@ -7,28 +7,28 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Toolbar
+# {Platform} {ComponentTitle} ツールバー
 
-The `{ComponentName}` in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
+{ProductName} for {Platform} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbarComponent` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
 
- - Column Hiding
- - Column Pinning
- - Excel Exporting
- - Advanced Filtering
+ - 列の非表示
+ - 列のピン固定
+ - Excel エクスポート
+ - 高度なフィルタリング
 
-or just any other custom content. The toolbar and the predefined UI components support {Platform} events and expose API for developers.
+または他のカスタム コンテンツもホストできます。ツールバーと事前定義された UI コンポーネントは、{Platform} イベントをサポートし、開発者向けに API を公開します。
 
-## {Platform} Toolbar Grid Example
+## {Platform} ツール バー グリッドの例
 
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} Toolbar Example">
+           alt="{Platform} {ComponentTitle} ツール バーの例">
 </code-view>
 
 
-The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
+事前定義された `Actions` および `Title` UI コンポーネントが  `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -78,9 +78,9 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> Note: As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> 注: 上記のコード スニペットに示されているように、事前定義された `Actions` UI コンポーネントは `GridToolbarActions` にラップされています。このように、ツールバーのタイトルはツールバーの左側に配置され、アクションはツールバーの右側に配置されます。
 
-Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
+これらの UI はそれぞれ独立して追加することも、まったく追加しないこともできます。このようにして、ツールバー コンテナは空になります。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -109,16 +109,16 @@ Of course, each of these UIs can be added independently of each other, or may no
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-For a comprehensive look over each of the default UI components, continue reading the **Features** section below.
+デフォルトの各 UI コンポーネントの詳細については、以下の**機能**セクションを読み続けてください。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-## Toolbar with Child Grids
+## 子グリッド付きのツールバー
 
-Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, there is a caveat when
-using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure
-to use the IgxGridToolbar directive on the toolbar itself and pass the provided grid instance as an input property to the toolbar itself.
-This will make sure you always have the correct grid instance in the scope of your template:
+IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動作には特定の制限があるため、子グリッドのスコープでツールバーを使用する場合は注意が必要です。
+`igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ずツールバー自体で IgxGridToolbar ディレクティブを使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
+
+これにより、テンプレートのスコープ内に常に正しいグリッド インスタンスが含まれるようになります。
 
 ```html
 <igx-hierarchical-grid>
@@ -138,15 +138,15 @@ This will make sure you always have the correct grid instance in the scope of yo
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-## Features
+## 機能
 
-The toolbar is great at separating logic/interactions which affects the grid as a whole.
+ツールバーは、グリッド全体に影響を与えるロジック/インタラクションを分離するのに最適です。
 
-As shown above, it can be configured to provide default components for controlling, column hiding, column pinning, advanced filtering and exporting data from the grid.
+上記のように、制御、列の非表示、列のピン固定、高度なフィルタリング、およびグリッドからのデータのエクスポートのためのデフォルトのコンポーネントを提供するように構成できます。
 
-These features can be enabled independently from each other by following a pattern similar to the card component of the Ignite UI for {Platform} suite.
+これらの機能は、Ignite UI for {Platform} のカード コンポーネントと同様のパターンに従うことで、互いに独立して有効にできます。
 
-Listed below are the main features of the toolbar with example code for each of them.
+以下にリストされているのは、ツールバーの主な機能と、それぞれのサンプル コードです。
 
 <code-view style="height:630px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -154,11 +154,11 @@ Listed below are the main features of the toolbar with example code for each of 
 </code-view>
 
 
-### Title
+### Title (タイトル)
 
-Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
+グリッドのツールバーのタイトルを設定するには、`GridToolbarTitleDirective` を使用します。
 
-Users can provide anything from simple text to more involved templates.
+ユーザーは、単純なテキストからより複雑なテンプレートまで、どんなものでも提供できます。
 
 ```html
 <igx-grid-toolbar>
@@ -166,11 +166,10 @@ Users can provide anything from simple text to more involved templates.
 </igx-grid-toolbar>
 ```
 
-### Actions
+### 操作
 
-The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
-As with the title portion of the toolbar, users can provide anything inside that template part, including the default
-toolbar interaction components.
+`GridToolbarTitleDirective` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
+ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
 ```html
 <igx-grid-toolbar>
@@ -182,7 +181,7 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
-Each action now exposes a way to change the overlay settings of the actions dialog by using the `OverlaySettings` input. For example:
+各アクションは、`OverlaySettings` 入力を使用して、アクション ダイアログのオーバーレイ設定を変更する方法を公開するようになりました。例:
 
 ```html
 <igx-grid-toolbar-actions>
@@ -216,13 +215,13 @@ constructor() {
 }
 ```
 
-The default overlaySettings are using *ConnectedPositionStrategy* with *Absolute* scroll strategy, *modal* set to false, with enabled *close on escape* and *close on outside click* interactions.
+デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* )外側のクリックで閉じる) インタラクションが有効になっています。
 
-### Column Pinning
+### 列のピン固定
 
-The `GridToolbarPinning` component provides the default UI for interacting with column pinning in the grid.
+`GridToolbarPinning` は、グリッド内の列のピン固定を操作するためのデフォルトの UI を提供します。
 
-The component is setup to work out of the box with the parent grid containing the toolbar as well as several input properties for customizing the UI, such as the component title, the placeholder for the component input and the height of the dropdown itself.
+コンポーネントは、ツールバーを含む親グリッドと、コンポーネントのタイトル、コンポーネント入力のプレースホルダー、ドロップダウン自体の高さなど、UI をカスタマイズするためのいくつかの入力プロパティを使用して、そのまま動作します。
 
 ```html
 <igx-grid-toolbar>
@@ -238,10 +237,9 @@ The component is setup to work out of the box with the parent grid containing th
 ```
 
 
-### Column Hiding
+### 列の非表示
 
-The `GridToolbarHiding` provides the default UI for interacting with column hiding. Exposes the same input properties for customizing the UI, such as the component
-title, the placeholder for the component input and the height of the dropdown itself.
+`GridToolbarHiding` は、列非表示を操作するためのデフォルトの UI を提供します。コンポーネントのタイトル、コンポーネント入力のプレースホルダー、ドロップダウン自体の高さなど、UI をカスタマイズするための同じ入力プロパティを公開します。
 
 ```html
 <igx-grid-toolbar>
@@ -256,9 +254,9 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
-### Advanced Filtering
+### 高度なフィルタリング
 
-Toolbar Advanced Filtering component provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
+ツールバーの高度なフィルタリング コンポーネントは、高度なフィルタリング機能のデフォルトの UI を提供します。コンポーネントは、ボタンのデフォルトのテキストを変更する方法を公開します。
 
 ```html
 <igx-grid-toolbar>
@@ -268,21 +266,20 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 </igx-grid-toolbar>
 ```
 
-### Data Exporting
+### データのエクスポート
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 > [!NOTE]
-> When exporting the `{ComponentName}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
-> belonging to their respective grid (the child grids will not be included in the exported data).
+> `{ComponentName}` または階層下の子グリッドのいずれかをエクスポートすると、エクスポートされるデータは、それぞれのグリッドに属する行のフラット コレクションになります (子グリッドはエクスポートされたデータに含まれません)。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-As with the rest of the toolbar actions, exporting is provided through a `GridToolbarExporter` out of the box.
+残りのツールバー操作と同様に、エクスポートは、すぐに使用できる `GridToolbarExporter` を介して提供されます。
 
-The exporting component is using the respective service for the target data format `ExcelExporterService` and `CSVExporterService`. That means if the respective service is not provided through the dependency injection chain, the component won't be able to export anything.
+エクスポート コンポーネントは、ターゲット データ形式 (`ExcelExporterService` および `CSVExporterService`) のそれぞれのサービスを使用しています。つまり、それぞれのサービスが依存関係挿入チェーンを通じて提供されない場合、コンポーネントは何もエクスポートできません。
 
-If you need a refresher on the DI in {Platform}, check the [official guide](https://{Platform}.io/guide/dependency-injection). Here is a sample snippet showing how to enable all export services for your application.
+{Platform} の DI の復習が必要な場合は、[公式ガイド](https://{Platform}.io/guide/dependency-injection)をご覧ください。これは、アプリケーションのすべてのエクスポート サービスを有効にする方法を示すサンプル スニペットです。
 
 ```typescript
 // app.module.ts
@@ -297,13 +294,13 @@ export class AppModule { ... }
 ```
 
 > [!Note]
-> In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
+> v 12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
 
-The toolbar exporter component exposes several input properties for customizing both the UI and the exporting experience.
+ツールバー エクスポーター コンポーネントは、UI とエクスポート エクスペリエンスの両方をカスタマイズするためのいくつかの入力プロパティを公開します。
 
-These range from changing the display text, to enabling/disabling options in the dropdown to customizing the name of the generated file. For full reference, consult the API documentation for the `ToolbarExporter`.
+これらは、表示テキストの変更から、ドロップダウンのオプションの有効化/無効化、生成されたファイルの名前のカスタマイズまで多岐にわたります。完全なリファレンスについては、`ToolbarExporter` の API ヘルプを参照してください。
 
-Here is a snippet showing some of the options which can be customized through the {Platform} template:
+これは、{Platform} テンプレートを介してカスタマイズできるいくつかのオプションを示すスニペットです。
 
 ```html
 <igx-grid-toolbar>
@@ -326,14 +323,14 @@ Here is a snippet showing some of the options which can be customized through th
 
 @@if (igxName !== 'IgxHierarchicalGrid') {
 
-In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
+エクスポートされたファイル名を変更することに加えて、ユーザーは `ToolbarExporting` イベントを待機し、イベント プロパティのオプション エントリをカスタマイズすることで、エクスポーター オプションをさらに構成できます。
 
 > [!NOTE]
-> By default when exporting to CSV the exporter exports using a comma separator and uses a '.csv' extension for the output file.
-> You can customize these exporting parameters by subscribing to events of the exporter or changing the values of the exporter options fields.
-> You can also cancel the export process by setting the cancel field of the event args to true.
+> デフォルトで CSV にエクスポートした際にエクスポーターがカンマ区切りセパレーターを使用してエクスポートし、出力ファイルに .csv 拡張しを使用します。
+> エクスポーターのイベントにサブスクライブまたはエクスポーター オプション フィールドの値を変更して、エクスポート パラメーターをカスタマイズできます。
+> またイベント引数のキャンセル フィールドを true に設定してエクスポートをキャンセルすることもできます。
 
-The following code snippet demonstrates subscribing to the toolbar exporting event and configuring the exporter options:
+次のコード スニペットは、ツールバーのエクスポート イベントのサブスクライブとエクスポーター オプションの構成を示しています。
 
 ```html
 <{ComponentSelector} (toolbarExporting)="configureExport($event)" ></{ComponentSelector}>
@@ -367,7 +364,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 ```
 }
 
-The following sample demonstrates how to customize the exported files:
+以下のサンプルは、エクスポート ファイルをカスタマイズする方法を示します。
 
 
 <code-view style="height:420px"
@@ -378,13 +375,13 @@ The following sample demonstrates how to customize the exported files:
 
 <!-- Angular -->
 
-## Exporting Indicator
+## エクスポート インジケーター
 
-When using the default toolbar exporter component, whenever an export operation takes place the toolbar will show a progress indicator while the operation is in progress.
+デフォルトのツールバー エクスポーター コンポーネントを使用する場合、エクスポート操作が行われると、操作の進行中にツールバーに進行状況インジケーターが表示されます。
 
-Moreover, users can set the toolbar `ShowProgress` property and use for their own long running operations or just as another way to signify an action taking place in the grid.
+さらに、ユーザーはツールバーの `ShowProgress` プロパティを設定して、自分の長時間実行操作に使用するか、グリッドで実行されている操作を示す別の方法として使用できます。
 
-The sample belows uses has significant amount of data, in order to increase the time needed for data export so the progressbar can be seen. Additionally it has another button that simulates a long running operation in the grid:
+以下のサンプルでは、プログレス バーが表示されるようにデータのエクスポートに必要な時間を増やすために、大量のデータを使用しています。さらに、グリッドで長時間実行される操作をシミュレートする別のボタンがあります。
 
 <!-- NOTE this sample is differed -->
 
@@ -395,14 +392,14 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 <!-- end: Angular -->
 
-## Custom Content
+## カスタム コンテンツ
 
 > [!NOTE]
-> This replaces the old toolbar template directive. If you are migrating from a version before v11 our migrations will handle the moving of the template content. However, we do not handle the bindings in the template, so make sure to double check the modified template files after the migration completes.
+> これは、古いツールバー テンプレート ディレクティブを置き換えます。v11 より前のバージョンから移行する場合は、マイグレーションによってテンプレート コンテンツの移動が処理されます。ただし、テンプレート内のバインディングは処理しないため、マイグレーションの完了後に、変更されたテンプレート ファイルを再確認してください。
 
-If the actions part of the toolbar component is not sufficient for a particular use case, the toolbar itself has a general content projection where users can provide additional UI. If the user needs the respective grid instance for API calls or bindings, they can create a template reference variable.
+ツールバー コンポーネントのアクション部分が特定のユース ケースに十分でない場合、ツールバー自体には、ユーザーが追加の UI を提供できる一般的なコンテンツ プロジェクションがあります。ユーザーが API 呼び出しまたはバインディングにそれぞれのグリッド インスタンスを必要とする場合は、テンプレート参照変数を作成できます。
 
-Here is a sample snippet:
+サンプル スニペットは次のとおりです。
 
 ```html
 <{ComponentSelector} #gridRef>
@@ -423,7 +420,7 @@ Here is a sample snippet:
 </{ComponentSelector}>
 ```
 
-The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
+以下のサンプルは、列ヘッダーをクリックして並べ替えセットをクリアするためのボタンをツールバーに追加する方法です。
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -432,9 +429,9 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-To get started with styling the toolbar, we need to import the index file, where all the theme functions and component mixins live:
+ツールバーのスタイル設定を始めるには、すべてのテーマ関数とコンポーネント mixins が存在する index ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -443,7 +440,7 @@ To get started with styling the toolbar, we need to import the index file, where
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-First, let's create a new palette.
+まず、新しいパレットを作成します。
 
 ```scss
 $my-dark-palette: palette(
@@ -456,7 +453,7 @@ $my-dark-palette: palette(
 $my-dark-color: color($my-dark-palette, 'surface');
 ```
 
-Now, create a new theme that extends the [`grid-toolbar-theme`]({environment:sassApiUrl}/index.html#function-grid-toolbar-theme) and modify the `$background-color` and the `$title-text-color` parameters.
+[`grid-toolbar-theme`]({environment:sassApiUrl}/index.html#function-grid-toolbar-theme) を拡張する新しいテーマを作成し、`$background-color` と `$title-text-color` パラメーターを変更します。
 
 ```scss
 $dark-grid-toolbar-theme: grid-toolbar-theme(
@@ -467,7 +464,7 @@ $dark-grid-toolbar-theme: grid-toolbar-theme(
 );
 ```
 
-To theme the column actions menus of the toolbar, we have to change the theme of the `column-actions-theme` component.
+ツールバーの列操作メニューにテーマを設定するには、`column-actions-theme` コンポーネントのテーマを変更する必要があります。
 
 ```scss
 $dark-column-actions-theme: column-actions-theme(
@@ -477,7 +474,7 @@ $dark-column-actions-theme: column-actions-theme(
 );
 ```
 
-Since the column actions are using other components - igx-button, igx-checkbox, and igx-input-group, we need to change their themes to match our new toolbar theme.
+列操作は他のコンポーネント (igx-button、igx-checkbox、および igx-input-group) を使用しているため、新しいツールバー テーマに一致するようにテーマを変更する必要があります。
 
 ```scss
 $dark-button-theme: button-theme(
@@ -497,7 +494,7 @@ $dark-input-group-theme: input-group-theme(
 );
 ```
 
-The last step is to **include** the newly created themes.
+最後にコンポーネントのテーマを**含めます**。
 
 ```scss
 :host {
@@ -510,7 +507,7 @@ The last step is to **include** the newly created themes.
 ```
 
 >[!NOTE]
->If `$legacy-support` is set to `false(default)`, include the component css variables like that:
+>`$legacy-support` が `false (デフォルト)` に設定されている場合、css 変数 を以下のように含めます。
 
 ```scss
 :host {
@@ -523,7 +520,7 @@ The last step is to **include** the newly created themes.
 ```
 
 >[!NOTE]
->If the component is using an [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+>コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
 ```scss
 :host {
@@ -537,7 +534,7 @@ The last step is to **include** the newly created themes.
 }
 ```
 
-### Demo
+### デモ
 
 <!-- NOTE this sample is differed -->
 
@@ -551,9 +548,9 @@ The last step is to **include** the newly created themes.
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
-The Grid Toolbar service has a few more APIs to explore, which are listed below.
+以下は、Grid Toolbar サービスのその他の API です。
 
 * `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
@@ -564,22 +561,22 @@ The Grid Toolbar service has a few more APIs to explore, which are listed below.
 * `GridToolbarTitleDirective`
 
 
-* `{ComponentName}` Events:
+* `{ComponentName}` イベント:
 * `ToolbarExporting`
 
 <!-- Angular -->
 
-Styles:
+スタイル:
 
-* `{ComponentName}` Styles
+* `{ComponentName}` スタイル
 
 <!-- end: Angular -->
 
-## Additional Resources
+## その他のリソース
 
 <div class="divider--half"></div>
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
