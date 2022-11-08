@@ -223,7 +223,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
            alt="{Platform} {ComponentTitle} custom group by example">
 </code-view>
 
