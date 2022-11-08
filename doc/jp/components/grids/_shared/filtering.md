@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} のフィルタリング - {ProductName}
-_description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。 データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
+_description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
 _keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]

@@ -1,5 +1,5 @@
 ---
-title: Row Adding in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} 行の追加 - インフラジスティックス
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,33 +7,33 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Row Adding
+# {Platform} {ComponentTitle} 行の追加
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI.
+`{ComponentName}` はインライン行追加や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。グリッドのテンプレートで編集アクションが有効になっている `ActionStrip` コンポーネントを追加し、行にホバーして提供されたボタンを使用するか、<kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を生成します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline row adding and a powerful API for {Platform} CRUD operations. Add an `ActionStrip` component with editing actions enabled in the grid's template, hover a row and use the provided button, press <kbd>ALT</kbd> + <kbd>+</kbd> to spawn the row adding UI or <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> to spawn the UI for adding a child for the selected row.
+`{ComponentName}` はインライン行追加や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。グリッドのテンプレートで編集アクションが有効になっている `ActionStrip` コンポーネントを追加し、ホバーして提供されたボタンを使用するか、<kbd>ALT</kbd> + <kbd>+</kbd> を押して、行追加 UI を生成するか、<kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> を押して、選択した行に子を追加するための UI を生成します。
 
 <!-- ComponentEnd: TreeGrid -->
 
-# {Platform} {ComponentTitle} Row Adding Example
+# {Platform} {ComponentTitle} 行の追加の例
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-adding"
            github-src="{ComponentSample}/row-adding"
-           alt="{Platform} {ComponentTitle} Row Adding Example">
+           alt="{Platform} {ComponentTitle} 行の追加の例">
 </code-view>
 
-## Row Adding Usage
+## 行追加の使用
 
 <!-- Angular -->
-To get started import the `{ComponentModule}` in the **app.module.ts** file:
+`{ComponentModule}` を **app.module.ts** ファイルにインポートします。
 
 ```typescript
 import { {ComponentModule} } from 'igniteui-angular';
@@ -47,7 +47,7 @@ export class AppModule {}
 ```
 <!-- end: Angular -->
 
-Then define a `{ComponentName}` with bound data source, `RowEditable` set to true and an `ActionStrip` component with editing actions enabled. The `AddRow` input controls the visibility of the button that spawns the row adding UI.
+次に、バインドしたデータ ソースに `{ComponentName}` を定義をして `RowEditable` を true に設定し、編集アクションを有効にした `ActionStrip` コンポーネントを定義します。`AddRow` 入力は、行追加 UI を生成するボタンの表示状態を制御します。
 
 ```html
 <igx-grid [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
@@ -122,41 +122,41 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 ```
 
 > [!NOTE]
-> Setting primary key is mandatory for row adding operations.
+> プライマリ キーは行追加操作で必須です。
 
 > [!NOTE]
-> Every column excluding the primary key one is editable in the row adding UI by default. If you want to disable editing for a specific column, then you have to set the `Editable` column's input to `false`.
+> プライマリ キーを除くすべての列は、デフォルトで行追加 UI で編集可能です。特定の列の編集を無効にする場合、`Editable` 列の入力を `false` に設定します。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 > [!NOTE]
-> The `GridEditingActions` input controlling the visibility of the add row button may use the action strip context (which is of type `RowType` to fine tune which records the button shows for.
+> [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType` を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
 > [!NOTE]
-> The `GridEditingActions` inputs controlling the visibility of the add row and add child buttons may use the action strip context (which is of type `RowType` to fine tune which records the buttons show for.
+> [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType`) を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: TreeGrid -->
 
-The internal `BaseTransactionService` is automatically provided for `{ComponentName}`. It holds pending cell changes until the row state is submitted or cancelled.
+内部の `BaseTransactionService` は `{ComponentName}` に自動的に提供されます。行の状態が送信またはキャンセルされるまで、保留中のセルの変更を保持します。
 
-## Start Row Adding Programmatically
+## プログラムで行の追加を開始
 
-`{ComponentName}` allows to programmatically spawn the add row UI by using two different public methods. One that accepts a row ID for specifying the row under which the UI should spawn and another that works by index. You can use these methods to spawn the UI anywhere within the current data view. Changing the page or specifying a row that is e.g. filtered out is not supported.
+`{ComponentName}` を使用すると、2 つの異なるパブリック メソッドを使用して、プログラムで行追加 UI を生成できます。1 つは UI が生成される行を指定するための行 ID を受け入れ、もう 1 つはインデックスによって機能します。これらのメソッドを使用して、現在のデータ ビュー内の任意の場所に UI を生成できます。ページの変更や、たとえばフィルターで除外された行の指定はサポートされていません。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-Using `BeginAddRowById` requires you to specify the row to use as context for the operation by its `RowID` (PK). The method then functions as though the end-user clicked on the add row action strip button for the specified row, spawning the UI under it. You can also make the UI spawn as the very first row in the grid by passing `null` for the first parameter.
+`BeginAddRowById` を使用するには、`RowID` (PK) によって操作のコンテキストとして使用する行を指定する必要があります。このメソッドは、エンドユーザーが指定された行の [行の追加] アクション ストリップ ボタンをクリックしたかのように機能し、その下に UI を生成します。最初のパラメーターに `null` を渡すことで、UI をグリッドの最初の行としてス生成させることもできます。
 
 ```typescript
 this.grid.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with PK 'ALFKI'
 this.grid.beginAddRowById(null);     // Spawns the add row UI as the first record
 ```
 
-The `beginAddRowByIndex` method works similarly but requires you to specify the index at which the UI should spawn. Allowed values range between 0 and the size of the data view - 1.
+`beginAddRowByIndex` メソッドも同様に機能しますが、UI が生成されるインデックスを指定する必要があります。許可される値の範囲は、0 からデータ ビューのサイズ -1 までです。
 
 ```typescript
 this.grid.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
@@ -167,14 +167,14 @@ this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 
 <!-- ComponentStart: TreeGrid --> 
 
-Using `BeginAddRowById` requires you to specify the row to use as context for the operation by its `RowID` (PK). The method then functions as though the end-user clicked on the add row action strip button for the specified row, spawning the UI under it. The second parameter controls if the row is added as a child to the context row or as a sibling. You can also make the UI spawn as the very first row in the grid by passing `null` for the first parameter.
+`BeginAddRowById` を使用するには、`RowID` (PK) によって操作のコンテキストとして使用する行を指定する必要があります。このメソッドは、エンドユーザーが指定された行の [行の追加] アクション ストリップ ボタンをクリックしたかのように機能し、その下に UI を生成します。2 番目のパラメーターは、行を子としてコンテキスト行に追加するか、兄弟として追加するかを制御します。最初のパラメーターに `null` を渡すことで、UI をグリッドの最初の行としてス生成させることもできます。
 
 ```typescript
 this.treeGrid.beginAddRowById('ALFKI', true);   // Spawns the add row UI to add a child for the row with PK 'ALFKI'
 this.treeGrid.beginAddRowById(null);            // Spawns the add row UI as the first record
 ```
 
-The `BeginAddRowByIndex` method works similarly but the row to use as context is specified by index.
+`BeginAddRowByIndex` メソッドも同様に機能しますが、コンテキストとして使用する行はインデックスによって指定されます。
 
 ```typescript
 this.treeGrid.beginAddRowByIndex(10, true);   // Spawns the add row UI to add a child for the row at index 10
@@ -183,50 +183,50 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 
 <!-- ComponentEnd: TreeGrid -->
 
-## Positioning
+## 位置
 
-- The default position of row add UI is below the row that the end user clicked the add row button for.
+- 行追加 UI のデフォルト位置は、エンド ユーザーが [行の追加] ボタンをクリックした行の下にあります。
 
-- The `{ComponentName}` scrolls to fully display the add row UI automatically.
+- `{ComponentName}` がスクロールして、行追加 UI が自動的に完全に表示されます。
 
-- The overlay for the add row UI maintains its position during scrolling.
+- 行追加 UI のオーバーレイは、スクロール中もその位置を維持します。
 
-## Behavior
+## 動作
 
-The add row UI has the same behavior as the row editing one as they are designed to provide a consistent editing experience to end users. Please, refer to the [{ComponentTitle} Row Editing](row-editing.md) topic for more information.
+行追加 UI は、エンド ユーザーに整合性のある編集エクスペリエンスを提供するように設計されているため、行編集 UI と同じ動作をします。詳細については、[{ComponentTitle} 行の編集](row-editing.md)のトピックを参照してください。
 
-After a new row is added through the row adding UI, its position and/or visibility is determined by the sorting, filtering and grouping state of the `{ComponentName}`. In a `{ComponentName}` that does not have any of these states applied, it appears as the last record. A snackbar is briefly displayed containing a button the end user may use to scroll the `{ComponentName}` to its position if it is not in view.
+行追加 UI を介して新しい行が追加された後、その位置や表示状態は、`{ComponentName}` のソート、フィルタリングおよびグループ化の状態によって決定されます。これらの状態のいずれも適用されていない `{ComponentName}` では、最後のレコードとして表示されます。スナックバーが短時間表示され、`{ComponentName}` が表示されていない場合にはエンド ユーザーがコントロールの位置までスクロールするためのボタンが含まれています。
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-- <kbd>ALT</kbd> + <kbd>+</kbd> - Enters edit mode for adding a row
+- <kbd>ALT</kbd> + <kbd>+</kbd> - 行を追加するために編集モードに入ります。
 
 <!-- ComponentStart: TreeGrid -->
 
-- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> - Enters edit mode for adding a child
+- <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>+</kbd> - 子を追加するために編集モードに入ります。
 
 <!-- ComponentEnd: TreeGrid -->
-- <kbd>ESC</kbd> exits row adding mode without submitting any changes
+- <kbd>ESC</kbd> は変更を送信せずに行追加モードを終了します。
 
-- <kbd>TAB</kbd> move focus from one editable cell in the row to the next and from the right-most editable cell to the CANCEL and DONE buttons. Navigation from DONE button goes to the left-most editable cell within the currently edited row.
+- <kbd>TAB</kbd> -  行の編集可能なセルから次のセルへフォーカスを移動、右端の編集可能なセルから [キャンセル] と [完了] ボタンへ移動します。[完了] ボタンからのナビゲーションは現在の編集行内で編集可能なセルへ移動します。
 
-## Feature Integration
+## 機能の統合
 
-- Any row adding operation will stop if the data view of the `{ComponentName}` gets modified. Any changes made by the end user are submitted. Operations that change the data view include but are not limited to sorting, grouping, filtering, paging, etc.
+- `{ComponentName}` のデータ ビューが変更されると、行追加の操作は停止します。エンド ユーザーが行った変更はすべて送信されます。データ ビューを変更する操作には、ソート、グループ化、フィルタリング、ページングなどが含まれますが、これらに限定されません。
 
-- Summaries are updated after the row add operation finishes. The same is valid for the other data view dependant features such as sorting, filtering, etc.
+- 行追加の操作が終了すると、集計が更新されます。同じことが、ソート、フィルタリングなど、他のデータ ビューに依存する機能にも当てはまります。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-- When spawning the UI for the `{ComponentName}`, any child layout currently expanded for a row that the end user clicks the add row button for is collapsed.
+- `{ComponentName}` の UI を生成すると、エンド ユーザーが [行の追加] ボタンをクリックした行に対して現在展開されている子レイアウトはすべて縮小されます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-## Customizing Row Adding Overlay
+## 行追加オーバーレイのカスタマイズ
 
-### Customizing Text
+### テキストのカスタマイズ
 
-Customizing the text of the row adding overlay is possible using the `RowAddTextDirective`.
+行追加オーバーレイのテキストのカスタマイズは、`RowAddTextDirective` を使用して可能です。
 
 ```html
 <ng-template igxRowAddText>
@@ -234,11 +234,11 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 </ng-template>
 ```
 
-### Customizing Buttons
+### ボタンのカスタマイズ
 
-Customizing the buttons of the row editing overlay is possible using the `RowEditActionsDirective`.
+`RowEditActionsDirective` を使用して行編集オーバーレイのボタンのカスタマイズが可能です。
 
-If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
+キーボード ナビゲーションにボタンを含める場合、各ボタンに `RowEditTabStopDirective` が必要です。
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
@@ -247,39 +247,39 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 </ng-template>
 ```
 > [!NOTE]
-> Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
+> `RowEditActions` ディレクティブを使用すると、オーバーレイ ボタンの編集と追加の両方の編集アクションが変更されます。
 
 <!-- Angular -->
 
-## Remote Scenarios
+## リモート シナリオ
 
-In most remote data scenarios the Primary Key assignment happens on the create server request. In this case the added records on the client will not have the final primary key value until saved on the server's data base. In that case the recommended way to handle this update in the `{ComponentName}` is as follows:
+ほとんどのリモート データ シナリオでは、主キーの割り当てはサーバーの作成要求で発生します。この場合、クライアントに追加されたレコードは、サーバーのデータベースに保存されるまで最終的な主キー値を持ちません。`{ComponentName}` でこの更新を処理する推奨される方法は以下のとおりです。
 
-- If the `{ComponentName}` does not use transactions.
+- `{ComponentName}` がトランザクションを使用しない場合。
 
-    Once the create request is successfully completed and returns the added record data, you can replace that record's id in the local data record instance.
+    作成要求が正常に完了し、追加されたレコード データを返すと、ローカル データ レコード インスタンスでそのレコードの ID を置き換えることができます。
 
-- If the `{ComponentName}` uses transactions.
+- `{ComponentName}` がトランザクションを使用する場合。
 
-    Once the create request or batch update request is successfully completed and returns the added record instances (with their db generated ids), the related ADD transactions should be cleared from the transaction log using the `Clear` API method. This is necessary because the local transaction will have a generated id field, which may differ than the one created in the data base, so they should be cleared. You can then add the record(s) passed in the response to the local data instance.
+    作成要求または一括更新要求が正常に完了し、追加されたレコード インスタンス (db で生成された ID) を返すと、`Clear` API メソッド を使用して関連する ADD トランザクションをトランザクション ログからクリアする必要があります。ローカル トランザクションに生成された id フィールドがあり、データベースで作成された id フィールドと異なる場合があるため、クリアする必要があります。返却されたレコードをローカル データ インスタンスに追加できます。
 
-This will ensure that the remotely generated ids are always reflected in the local data, and subsequent update/delete operations target the correct record ids.
+これにより、リモートで生成された ID がローカル データに常に反映され、以降の更新/削除操作で正しいレコード ID がターゲットになります。
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-The row adding UI comprises the buttons in the `ActionStrip` editing actions, the editing editors and overlay, as well as the snackbar which allows end users to scroll to the newly added row. To style these components you may refer to these comprehensive guides in their respective topics:
+行追加 UI は `ActionStrip` 編集操作のボタン、編集エディター、オーバーレイ、エンドユーザーが新しく追加された行にスクロールできるスナックバーが構成されます。これらのコンポーネントのスタイル設定には、それぞれのトピックのガイドを参照してください。
 
-- [{ComponentTitle} Row Editing](row-editing.md#スタイル設定)
+- [{ComponentTitle} 行の編集](row-editing.md#スタイル設定)
 - [Snackbar](../snackbar.md#スタイル設定)
 - [ActionStrip](../action-strip.md#スタイル設定)
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `RowEditable`
 * `RowEditEnter`
@@ -290,13 +290,13 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 * `PrimaryKey`
 * `{ComponentName}`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+* [{ComponentTitle} 概要](overview.md)
+* [{ComponentTitle} 編集](editing.md)
+* [{ComponentTitle} トランザクション](batch-editing.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

@@ -1,16 +1,16 @@
 ---
-title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、Ignite UI for {Platform} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページネーション, リモート データ, インフラジスティックス
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Remote Data Operations
+# {Platform} {ComponentTitle} のリモート データ操作
 
-The Ignite UI for {Platform} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+Ignite UI for {Platform} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
-## {Platform} {ComponentTitle} Remote Data Operations Overview Example
+## {Platform} {ComponentTitle} リモート データ操作概要の例
 
 <!-- NOTE this sample is differed -->
 
@@ -18,22 +18,22 @@ The Ignite UI for {Platform} `{ComponentName}` supports remote data operations s
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering-data"
            github-src="{ComponentSample}/remote-filtering-data"
-           alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
+           alt="{Platform} {ComponentTitle} リモート データ操作概要の例">
 </code-view>
 
-By default, the `{ComponentName}` uses its own logic for performing data operations.
+デフォルトで、`{ComponentName}` は独自のロジックを使用してデータ操作を実行します。
 
-You can perform these tasks remotely and feed the resulting data to the `{ComponentName}` by taking advantage of certain inputs and events, which are exposed by the `{ComponentName}`.
+これらのタスクをリモートで実行し、`{ComponentName}`で公開される特定の入力とイベントを使用して `{ComponentName}` に結果のデータを供給できます。
 
 <!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
-## Remote Virtualization
+## リモート仮想化
 
-The `{ComponentName}` supports the scenario in which the data chunks are requested from a remote service, exposing the behavior implemented in the `ForOf` directive it uses internally.
+`{ComponentName}` は、データ チャンクがリモート サービスから要求されるシナリオをサポートし、内部で使用される `ForOf` ディレクティブで実装された動作を公開します。
 
-To utilize this feature, you need to subscribe to the `DataPreLoad` output so that you make the appropriate request based on the arguments received, as well as set the public `{ComponentName}` property `TotalItemCount` with the respective information coming from the service.
+この機能を使用するには、取得した引数に基づいて適切な要求を実行するために `DataPreLoad` 出力にサブスクライブし、サービスから送信される相対する情報とパブリック `{ComponentName}` の `TotalItemCount` プロパティを設定する必要があります。
 
 ```html
 <igx-grid #grid [data]="remoteData | async" [autoGenerate]="false"
@@ -71,16 +71,16 @@ public processData(reset) {
 BLAZOR CODE SNIPPET HERE
 ```
 
-When requesting data, you need to utilize the `IForOfState` interface, which provides the `StartIndex` and `ChunkSize` properties.
+データを要求する際に `StartIndex` および `ChunkSize` プロパティを提供する `IForOfState` インターフェイスを使用できます。
 
 >[!NOTE]
->The first `ChunkSize` will always be 0 and should be determined by you based on the specific application scenario.
+>最初の `ChunkSize` は常に 0 で、特定のアプリケーション シナリオに基づいて設定する必要があります。
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-### Remote Virtualization Demo
+### リモートの仮想化デモ
 
 <!-- NOTE this sample is differed -->
 
@@ -88,20 +88,20 @@ When requesting data, you need to utilize the `IForOfState` interface, which pro
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-operations"
            github-src="{ComponentSample}/data-performance-operations"
-           alt="{Platform} {ComponentTitle} Remote Data Operations Overview Example">
+           alt="{Platform} {ComponentTitle} リモート データ操作概要の例">
 </code-view>
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-## Infinite Scroll
+## 無限スクロール
 
- A popular design for scenarios requiring fetching data by chunks from an end-point is the so-called infinite scroll. For data grids, it is characterized by continuous increase of the loaded data triggered by the end-user scrolling all the way to the bottom. The next paragraphs explain how you can use the available API to easily achieve infinite scrolling in `{ComponentName}`.
+ エンドポイントからデータを分割して取得するシナリオの一般的なデザインは、無限スクロールです。データ グリッドの場合、エンドユーザーが一番下までスクロールすることによってトリガーされたロードデータが連続的に増加します。次の段落では、使用可能な API を使用して `{ComponentName}` で無限スクロールを簡単に実現する方法について説明します。
 
-To implement infinite scroll, you have to fetch the data in chunks. The data that is already fetched should be stored locally and you have to determine the length of a chunk and how many chunks there are. You also have to keep a track of the last visible data row index in the grid. In this way, using the `StartIndex` and `ChunkSize` properties, you can determine if the user scrolls up and you have to show them already fetched data or scrolls down and you have to fetch more data from the end-point.
+無限スクロールを実装するには、データを分割してフェッチする必要があります。すでにフェッチされたデータはローカルに保存し、チャンクの長さおよび数を決定する必要があります。また、グリッドで最後に表示されるデータ行インデックスを追跡する必要があります。このように、`StartIndex` と `ChunkSize` プロパティを使用して、ユーザーが上にスクロールして既にフェッチしたデータを表示するか、下にスクロールしてエンドポイントからさらにデータをフェッチする必要があるかを決定できます。
 
-The first thing to do is use the `ngAfterViewInit` lifecycle hook to fetch the first chunk of the data. Setting the `TotalItemCount` property is important, as it allows the grid to size its scrollbar correctly.
+最初に、データの最初のチャンクをフェッチするために `ngAfterViewInit` ライフサイクル フックを使用します。`TotalItemCount` プロパティはグリッドがスクロールバーのサイズを正しく設定できるために重要です。
 
 ```typescript
 public ngAfterViewInit() {
@@ -121,7 +121,7 @@ public ngAfterViewInit() {
 BLAZOR CODE SNIPPET HERE
 ```
 
-Additionally, you have to subscribe to the `DataPreLoad` output, so that you can provide the data needed by the grid when it tries to display a different chunk, rather than the currently loaded one. In the event handler, you have to determine whether to fetch new data or return data, that's already cached locally.
+さらに、`DataPreLoad` 出力にサブスクライブする必要があります。これにより、グリッドが現在ロードされているものではなく、異なるチャンクを表示しようとするときに必要なデータを提供できます。イベント ハンドラーで、ローカルに既にキャッシュされている新しいデータをフェッチするか、データを返すかを決定する必要があります。
 
 ```typescript
 public handlePreLoad() {
@@ -156,7 +156,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- Angular -->
 
-### Infinite Scroll Demo
+### 無限スクロールのデモ
 
 <!-- NOTE this sample is differed -->
 
@@ -164,16 +164,16 @@ BLAZOR CODE SNIPPET HERE
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-infinite-scroll"
            github-src="{ComponentSample}/data-performance-infinite-scroll"
-           alt="{Platform} {ComponentTitle} Remote Data Operations Infinite Scroll Example">
+           alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例">
 </code-view>
 
 <!-- end: Angular -->
 
-## Remote Sorting/Filtering
+## リモート ソート/フィルタリング
 
-To provide remote sorting and filtering, you need to subscribe to the `DataPreLoad`, `SortingExpressionsChange` and `FilteringExpressionsTreeChange` outputs, so that you make the appropriate request based on the arguments received, as well as set the public `{ComponentName}` property `TotalItemCount` with the respective information coming from the service.
+リモート ソートおよびフィルタリングは、`DataPreLoad`、`SortingExpressionsChange`、および `FilteringExpressionsTreeChange` 出力にサブスクライブし、パブリック `{ComponentName}` プロパティの `TotalItemCount` をサービスから送信される個々の情報とともに設定し、受け取った引数に基づいて適切な要求を作成します。
 
-We will also take advantage of the **rxjs** `debounceTime` function, which emits a value from the source Observable only after a particular time span has passed without another source emission. This way the remote operation will be triggered only when the specified amount of time has passed without the user interrupting it.
+また、**rxjs** `debounceTime` 関数を使用します。この関数は、特定の期間の経過後、別のソースが出力されない場合にのみ、Observable のソースから値を出力します。この方法では、ユーザーが中断することなく指定された時間が経過した場合にのみ、リモート操作がトリガーされます。
 
 ```typescript
 const DEBOUNCE_TIME = 300;
@@ -205,7 +205,7 @@ public ngAfterViewInit() {
 BLAZOR CODE SNIPPET HERE
 ```
 
-When remote sorting and filtering are provided, usually we do not need the built-in sorting and filtering of the grid. We can disable them by setting the `SortStrategy` and the `FilterStrategy` inputs of the grid to the `NoopSortingStrategy` and the `NoopFilteringStrategy` respective instances.
+リモート ソートとフィルタリングが提供される場合、グリッドの組み込みのソートとフィルタリングは必要ありません。グリッドの `SortStrategy` および `FilterStrategy` 入力をそれぞれのインスタンスの `NoopSortingStrategy` および `NoopFilteringStrategy` に設定して、無効にできます。
 
 ```html
 <igx-grid #grid [data]="remoteData | async" [height]="'500px'" [width]="'100%'" [autoGenerate]='false'
@@ -225,21 +225,21 @@ BLAZOR CODE SNIPPET HERE
 ```
 
 >[!NOTE]
->When remote data is requested, the filtering operation is case-sensitive.
+>リモー トデータが要求された場合、フィルタリング操作が大文字と小文字を区別します。
 
-### Remote Sorting/Filtering Demo
+### リモート ソート/フィルタリングのデモ
 
-You can see the result of the code from above at the beginning of this article in the Demo section.
+このトピックのはじめにあるコードの結果は、デモで確認できます。
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-### Remote Filtering
+### リモート フィルタリング
 
-To provide remote filtering, you need to subscribe to the `FilteringExpressionsTreeChange` output so that you make the appropriate request based on the arguments received. Let's use a flat collection as a data source for our Tree Grid by providing a `PrimaryKey` and a `ForeignKey`.
+リモート フィルタリングを提供するには、受け取った引数に基づいて適切な要求を行うように `FilteringExpressionsTreeChange` 出力にサブスクライブする必要があります。`PrimaryKey` と `ForeignKey` を提供して、Tree Grid のデータソースとしてフラット コレクションを使用します。
 
-We will also take advantage of the **rxjs** `debounceTime` function, which emits a value from the source Observable only after a particular time span has passed without another source emission. This way the remote operation will be triggered only when the specified amount of time has passed without the user interrupting it.
+また、**rxjs** `debounceTime` 関数を使用します。この関数は、特定の期間の経過後、別のソースが出力されない場合にのみ、Observable のソースから値を出力します。この方法では、ユーザーが中断することなく指定された時間が経過した場合にのみ、リモート操作がトリガーされます。
 
 ```typescript
 const DEBOUNCE_TIME = 300;
@@ -257,7 +257,7 @@ public ngAfterViewInit() {
 BLAZOR CODE SNIPPET HERE
 ```
 
-When remote filtering is provided, usually we do not need the built-in filtering of the Tree Grid. We can disable it by setting the `FilterStrategy` input of the Tree Grid to the `NoopFilteringStrategy` instance.
+リモート フィルタリングが提供される場合、ツリー グリッドの組み込みのフィルタリングは必要ありません。ツリー グリッドの `FilterStrategy` 入力を `NoopFilteringStrategy` インスタンスに設定して、無効にできます。
 
 ```html
 <igx-tree-grid #treeGrid [data]="remoteData | async" primaryKey="ID" foreignKey="ParentID"
@@ -288,29 +288,30 @@ public processData() {
 BLAZOR CODE SNIPPET HERE
 ```
 
-The remote filtering will have to be performed over the flat collection directly. We will also have to include all the parents for any record that matches the filtering condition regardless of whether or not the parents match the filtering (we do this to keep the hierarchy intact). The result can be seen below:
+リモート フィルタリングは、フラット コレクションで直接実行する必要があります。また、親がフィルターに一致するかどうかにかかわらず、フィルター条件に一致するすべてのレコードにすべての親を含める必要があります (階層をそのままにするためにこれを行います)。結果は以下で確認できます。
 
 >[!NOTE]
->When remote data is requested, the filtering operation is case-sensitive.
+>リモー トデータが要求された場合、フィルタリング操作が大文字と小文字を区別します。
 
-### Remote Filtering Demo
+### リモート フィルタリングのデモ
 
-You can see the result of the code from above at the beginning of this article in the Demo section.
+このトピックのはじめにあるコードの結果は、デモで確認できます。
 
 <!-- ComponentEnd: TreeGrid -->
 
-## Unique Column Values Strategy
+## 一意の列値ストラテジ
 
-The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. The `{ComponentName}` generates these values based on its data source by default. In case of remote filtering, the grid data does not contain all the data from the server. In order to provide the unique values manually and load them on demand, we can take advantage of the `{ComponentName}`'s `UniqueColumnValuesStrategy` input. This input is actually a method that provides three arguments:
+Excel スタイル フィルタリング ダイアログ内のリスト項目は、それぞれの列の一意の値を表します。`{ComponentName}` は、デフォルトでデータソースに基づいてこれらの値を生成します。リモート フィルタリングの場合、グリッドのデータにはサーバーからのすべてのデータが含まれていません。これらの一意の値を手動で提供し、オンデマンドで読み込むために、`{ComponentName}` の `UniqueColumnValuesStrategy` 入力を利用できます。この入力は、実際には 3 つの引数を提供するメソッドです。
 
-- `Column`  - The respective column instance.
-- `FilteringExpressionsTree` - The filtering expressions tree, which is reduced based on the respective column.
-- `Done` - Callback that should be called with the newly generated column values when they are retrieved from the server.
+- `Column`  - それぞれの列インスタンス。
+- `FilteringExpressionsTree` - フィルタリング式ツリー。各列に基づいて削減されます。
+- `Done` - 
+サーバーから取得されたときに、新しく生成された列値で呼び出されるコールバック。
 
-The developer can manually generate the necessary unique column values based on the information, that is provided by the `Column` and the `FilteringExpressionsTree` arguments and then invoke the `Done` callback.
+開発者は、`Column` と `FilteringExpressionsTree` 引数によって提供される情報に基づいて、必要な一意の列値を手動で生成し、`Done` コールバックを呼び出すことができます。
 
 > [!NOTE]
-> When the `UniqueColumnValuesStrategy` input is provided, the default unique values generating process in the excel style filtering will not be used.
+> `UniqueColumnValuesStrategy` 入力が提供される場合、Excel スタイル フィルタリングでプロセスを生成するデフォルトの一意の値は使用されません。
 
 
 ```html
@@ -336,13 +337,13 @@ public columnValuesStrategy = (column: IgxColumnComponent,
 BLAZOR CODE SNIPPET HERE
 ```
 
-#### Unique Column Values Strategy Demo
+#### 一意の列値ストラテジーのデモ
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-load-on-demand"
            github-src="{ComponentSample}/excel-style-filtering-load-on-demand"
-           alt="{Platform} {ComponentTitle} Remote Data Operations Unique Column Values Strategy Example">
+           alt="{Platform} {ComponentTitle} リモート データ操作の一意の列値ストラテジー例">
 </code-view>
 
 ```html
@@ -377,7 +378,7 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
-In order to provide a custom loading template for the excel style filtering, we can use the `ExcelStyleLoading` directive:
+Excel スタイル フィルタリングのカスタム ロード テンプレートを提供するには、`ExcelStyleLoading` ディレクティブを使用できます。
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -409,11 +410,11 @@ BLAZOR CODE SNIPPET HERE
 
 <div class="divider--half"></div>
 
-## Remote Paging
+## リモート ページング
 
 <!-- ComponentStart: Grid -->
 
-The paging feature can operate with remote data. In order to demonstrate this let's first declare our service that will be responsible for data fetching. We will need the count of all data items in order to calculate the page count. This logic will be added to our service.
+ページング機能はリモート データで処理することもできます。はじめにデータ フェッチングを行うサービスを宣言します。ページ カウントを計算するためすべてのデータ項目のカウントをが必要なため、ロジックをサービスに追加する必要があります。
 
 ```typescript
 @Injectable()
@@ -454,7 +455,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-The paging feature can operate with remote data. In order to demonstrate this let's first declare our service that will be responsible for data fetching. We will need the count of all data items in order to calculate the page count. This logic will be added to our service.
+ページング機能はリモート データで処理することもできます。はじめにデータ フェッチングを行うサービスを宣言します。ページ カウントを計算するためすべてのデータ項目のカウントをが必要なため、ロジックをサービスに追加する必要があります。
 
 ```typescript
 @Injectable()
@@ -494,7 +495,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-After declaring the service, we need to create a component, which will be responsible for the `{ComponentName}` construction and data subscription.
+サービスを宣言した後にコンポーネントを作成する必要があり、`{ComponentName}` コンストラクションとデータ サブスクリプションを処理します。
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -558,7 +559,7 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- ComponentStart: TreeGrid -->
 
-In this sample we will demonstrate how to display a certain number of root records per page no matter how many child records they have. In order to cancel the built-in Tree Grid paging algorithm, which displays a certain number of records no matter their level (root or child), we have to set the `PerPage` property to `Number.MAX_SAFE_INTEGER`.
+このサンプルでは、​​子レコードがいくつあっても、ページごとに一定数のルート レコードを表示する方法を示します。レベル (ルートまたは子) に関係なく一定数のレコードを表示するビルトインの Tree Grid ページング アルゴリズムをキャンセルするには、`PerPage` プロパティを `Number.MAX_SAFE_INTEGER` に設定してください。
 
 ```html
 <igx-tree-grid #treeGrid>
@@ -575,11 +576,11 @@ BLAZOR CODE SNIPPET HERE
 ```
 <!-- ComponentEnd: TreeGrid -->
 
-Now we can choose between setting-up our own custom paging template or using the default one that the `Paginator` provides. Let's first take a look what is necessary to set-up remote paging by using the default paging template.
+これで、独自のカスタム ページング テンプレートを設定するか、`Paginator` が提供するデフォルトのテンプレートを使用するかを選択できます。まず、デフォルトのページング テンプレートを使用してリモート ページングを設定するために必要なものを見てみましょう。
 
-### Remote paging with default template
+### デフォルト テンプレートのリモート ページング
 
-If you want to use the default paging template, you need to set the Paginator's `TotalRecords` property, only then the grid will be able to calculate the total page number based on total remote records. When performing a remote pagination the Paginator will pass to the Grid only the data for the current page, so the grid will not try to paginate the provided data source. That's why we should set Grid's `PagingMode` property to `GridPagingMode.Remote`. Also it is necessary to either subscribe to `PagingDone` or `PerPageChange` events in order to fetch the data from your remote service, it depends on the use case which event will be used.
+デフォルトのページング テンプレートを使用する場合、`TotalRecords` プロパティを設定する必要があります。それにより、グリッドはリモートの合計レコード数に基づいて合計ページ番号を計算できます。リモートページネーターを実行する場合、グリッドに現在のページのデータのみを渡すため、グリッドは提供されたデータソースのページネーションを試行しません。そのため、`PagingMode` プロパティを `GridPagingMode.Remote` に設定する必要があります。リモート サービスからデータをフェッチするために `PagingDone` または `PerPageChange` イベントにサブスクライブする必要があります。イベントが使用されるユース ケースによって異なります。
 
 ```html
 <igx-grid #grid1 [data]="data | async" [isLoading]="isLoading" [pagingMode]="mode">
@@ -656,12 +657,12 @@ BLAZOR CODE SNIPPET HERE
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-template"
            github-src="{ComponentSample}/remote-paging-template"
-           alt="{Platform} {ComponentTitle} Remote Paging Default Template Example">
+           alt="{Platform} {ComponentTitle} リモート ページングのテンプレート テンプレートの例">
 </code-view>
 
-### Remote Paging with Custom Paginator Content
+### カスタム ページネーター コンテンツのリモート ページング
 
-When we define a custom paginator content we need to define the content in a way to get the data only for the requested page and to pass the correct **skip** and **top** parameters to the remote service according to the selected page and items `PerPage`. We are going to use the `Paginator` in order to ease our example configuration, along with the `PageSizeSelectorComponent` and `PageNavigationComponent` that were introduced - `PageSize` will add the per page dropdown and label and `PageNav` will add the navigation action buttons and labels.
+カスタム ページネータ コンテンツを定義するときは、要求されたページのデータのみを取得するようにコンテンツを定義し、選択したページと `PerPage` 項目に応じて正しい **skip** および **top** パラメーターをリモート サービスに渡す必要があります。導入された `PageSizeSelectorComponent` と `PageNavigationComponent` とともに、設定例を簡単にするために `Paginator` を使用します。`PageSize` はページごとのドロップダウンとラベルを追加し、`PageNav` はナビゲーション アクション ボタンとラベルを追加します。
 
 ```html
 <igx-paginator #paginator
@@ -767,7 +768,7 @@ BLAZOR CODE SNIPPET HERE
 <!-- ComponentEnd: TreeGrid -->
 
 >[!NOTE]
-> In order for the Remote Paging to be configured properly a `GridPagingMode.Remote` should be set:
+> リモート ページングを適切に構成するには、`GridPagingMode.Remote` を設定する必要があります。
 
 
 ```typescript
@@ -792,7 +793,7 @@ public mode = GridPagingMode.Remote;
 BLAZOR CODE SNIPPET HERE
 ```
 
-The last step will be to declare the paginator content based on your requirements.
+最後の手順は、要件に基づいてページネータのコンテンツを宣言することです。
 
 ```html
 <igx-paginator-content>
@@ -806,28 +807,28 @@ The last step will be to declare the paginator content based on your requirement
 BLAZOR CODE SNIPPET HERE
 ```
 
-After all the changes above, the following result will be achieved.
+上記すべての設定を完了すると以下のような結果になります。
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-data"
            github-src="{ComponentSample}/remote-paging-data"
-           alt="{Platform} {ComponentTitle} Remote Paging Custom Template Example">
+           alt="{Platform} {ComponentTitle} リモート ページングのカスタム テンプレートの例">
 </code-view>
 
 <!-- ComponentStart: Grid -->
-### Remote Paging with Custom Paginator
+### カスタム ページネーターのリモート ページング
 
-In some cases you may want to define your own paging behavior and this is when we can take advantage of the Paging template and add our custom logic along with it. We are going to extend the Remote Paging example in order to demonstrate this:
+独自のページング動作を定義するために、ページング テンプレートを使用してカスタム ロジックを追加できます。上記を実証するために、リモート ページングの例を拡張します。
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-custom"
            github-src="{ComponentSample}/remote-paging-custom"
-           alt="{Platform} {ComponentTitle} Remote Paging Custom Paging Example">
+           alt="{Platform} {ComponentTitle} リモート ページングのカスタム ページングの例">
 </code-view>
 
-Below you will find the methods that we've defined in order to implement our own `next` and `previous` page actions.
+以下に、独自の `[次]` および `[前]` のページ操作を実装するために定義したメソッドを示します。
 
 ```typescript
 @ViewChild('grid1', { static: true }) public grid1: IgxGridComponent;
@@ -880,11 +881,11 @@ BLAZOR CODE SNIPPET HERE
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: Grid -->
-### Remote Paging with Batch editing
+### 一括編集のリモート ページング
 
-With the examples so far we clarified how to set up the `{ComponentName}` with remote data. Now, let's focus on enabling batch editing for the grid by following the [Batch Editing topic/guide](batch-editing.md).
+これまでの例で、リモート データで `{ComponentName}` を設定する方法を説明しました。次に、[一括編集のトピック](batch-editing.md)に従ってグリッドのバッチ編集を有効にします。
 
-Before continuing with the sample it is good to clarify the current use case. When pagination is done on the server, the grid contains the data only for the current page and if we add new rows the newly added rows (with Batch Editing) will be concatenated with the current data that the grid contains. Therefore, if the server returns no data for a given page, grid's data source will be consisted only from the newly added rows, which the grid will paginate based on the defined pagination settings (page, perPage).
+サンプルを続行する前に、現在のユースケースを明確します。ページネーションを実行すると、グリッドには現在のページのデータのみが含まれます。新しい行を追加すると、(一括編集により) 新しく追加された行はグリッドに含まれる現在のデータと連結されます。したがって、サーバーが指定されたページのデータを返さない場合、グリッドのデータソースは新しく追加された行のみで構成され、グリッドは定義されたページ設定 (page, perPage) に基づいてページを作成します。
 
 ```typescript
 public ngOnInit() {
@@ -901,9 +902,9 @@ public ngOnInit() {
 BLAZOR CODE SNIPPET HERE
 ```
 
-In order to handle this use case properly, we need to implement some custom logic.
+このユースケースを適切に処理するには、カスタム ロジックを実装する必要があります。
 
-First, we have to know the total number of records that are on the server. Given that, we calculate the total number of data pages on the server, and based on its value, we will implement the custom pagination logic.
+最初に、サーバー上にあるレコードの総数を知る必要があります。サーバーのデータ ページの総数を計算し、その値に基づいてカスタム ページネーション ロジックを実装します。
 
 ```typescript
 public paginate(page: number) {
@@ -929,46 +930,46 @@ public paginate(page: number) {
 BLAZOR CODE SNIPPET HERE
 ```
 
-As you can see in the `Paginate` method, custom pagination logic is performed, based on the `TotalPagesOnServer` value.
+`Paginate` メソッドで示されるように、`TotalPagesOnServer` 値に基づいてカスタム ページネーション ロジックが実行されます。
 
-#### Remote Paging with Batch Editing Demo
+#### 一括編集のリモート ページング デモ
 
 <code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
            github-src="{ComponentSample}/remote-paging-batch-editing"
-           alt="{Platform} {ComponentTitle} Remote Paging Batch Editing Example">
+           alt="{Platform} {ComponentTitle} リモート ページングの一括編集の例" >
 </code-view>
 
 <!-- ComponentEnd: Grid -->
 
-## Known Issues and Limitations
+## 既知の問題と制限
 
-- When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
+- グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合)、データ要求が完了すると、行は次の状態を失います:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+* 行の選択
+* 行の展開/縮小
+* 行の編集
+* 行のピン固定
 
-## API References
+## API リファレンス
 
 * `Paginator`
 * `{ComponentName}`
 
-## Additional Resources
+## その他のリソース
 
-* [Paging](paging.md)
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [ページング](paging.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

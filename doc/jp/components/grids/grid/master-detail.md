@@ -26,24 +26,24 @@ _language: ja
 マスター / 詳細モードで表示するように `Grid` を設定するには、`GridDetail` ディレクティブでマークされたグリッド内のテンプレートを指定する必要があります。
 
 ```html
- <-grid ... >
+ <{ComponentSelector} >
          <ng-template GridDetail let-dataItem>
               <!-- Custom detail template content here -->
         </ng-template>
-    </-grid>
+    </{ComponentSelector}>
 ```
 
 テンプレートのコンテキストはマスター レコード データであるため、マスター レコードの値を詳細テンプレートに表示できます。例:
 
 ```html
-    <-grid ... >
+    <{ComponentSelector} >
          <ng-template GridDetail let-dataItem>
             <div *ngIf="dataItem.Category">
                 <header>{{dataItem.Category.CategoryName}}</header>
                 <span>{{dataItem.Category.Description}}</span>
             </div>
         </ng-template>
-    </-grid>
+    </{ComponentSelector}>
 ```
 
 
@@ -52,9 +52,9 @@ _language: ja
 展開状態は、`Grid` の `ExpansionStates` 入力で制御できます。状態はキーと値のペア [行識別子、展開状態] に保存されます。このプロパティは、展開状態を取得/設定し、双方向バインディングをサポートします。
 
 ```html
-  <-grid [(expansionStates)]='expansionState' >
-    ...
-  </-grid>
+  <{ComponentSelector} [(expansionStates)]='expansionState' >
+    <!--...-->
+  </{ComponentSelector}>
 ```
 
 展開状態を制御するための追加の API メソッドも公開されています。
@@ -74,7 +74,7 @@ _language: ja
     - `Shift + Tab` - 前の行にフォーカスします。
 
 - エキスパンダーのデータ行にフォーカスがある場合:
-    - `Alt + 右矢印` - 行を展開します。
+    - `Alt + 右矢印/下矢印` - 行を展開します。
     - `Alt + 左矢印/下矢印` - 行を縮小します。
 
 ## 既知の問題と制限

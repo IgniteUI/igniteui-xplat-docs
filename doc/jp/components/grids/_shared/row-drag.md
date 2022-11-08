@@ -1,5 +1,5 @@
 ---
-title: Row Dragging in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} の行ドラッグ - インフラジスティックス
 _description: {Platform} {ComponentTitle} の行ドラッグは、マウスで行をすばやくドラッグして再配置します。プロジェクトで行ドラッグを構成する方法を説明します。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,22 +7,22 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# Row Dragging in {Platform} {ComponentTitle}
+# {Platform} {ComponentTitle} の行ドラッグ
 
-In Ignite UI for {Platform} `{ComponentName}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
+Ignite UI for {Platform} `{ComponentName}` では、行ドラッグがルート `{ComponentSelector}` コンポーネントで初期化されて、`RowDraggable` 入力で設定できます。行ドラッグを有効にすると、ユーザーは行ドラッグ ハンドルを使用して行のドラッグを開始できます。
 
-## {Platform} {ComponentTitle} Row Drag Example
+## {Platform} {ComponentTitle} 行ドラッグの例
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
            github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentTitle} Row Drag Example" >
+           alt="{Platform} {ComponentTitle} 行ドラッグの例">
 </code-view>
 
-## Configuration
+## 構成
 
-In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
+`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。
 
 ```html
 <{ComponentSelector} [rowDraggable]="true">
@@ -34,30 +34,30 @@ In order to enable row-dragging for your `{ComponentName}`, all you need to do i
 </{ComponentSelector}>
 ```
 
-Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
+ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
 
-Below, you can find a walkthrough on how to configure an `{ComponentName}` to support row dragging and how to properly handle the drop event.
+以下は、行ドラッグをサポートするための `{ComponentName}` の設定方法と、ドロップイベントの適切な処理方法についてのチュートリアルです。
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-In this example, we'll handle dragging a row from a grid to a designated area and, when dropping it, removing it from the grid.
+この例では、グリッドから指定された領域に行をドラッグし、ドロップするとグリッドから削除します。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 
-In this example, we'll handle dragging a row from one grid to another, removing it from the first data source and adding it to the second.
+この例では、あるグリッドから別のグリッドに行をドラッグし、それを最初のデータソースから削除し、それを 2 番目のデータソースに追加します。
 
 <!-- ComponentEnd: Grid -->
 
 <!-- Angular -->
 
-### Drop Areas
+### ドロップエリア
 
-Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-*dropping*.
-We can define where we want our rows to be dropped using the [`Drop` directive](../drag-drop.md).
+行ドラッグを簡単に有効にできました。次は行ドロップを処理する方法を設定する必要があります。
+[`Drop` ディレクティブ](../drag-drop.md)を使用して、行をドロップする場所を定義できます。
 
-First we need to import the `DragDropModule` in our app module:
+はじめに、アプリ モジュールに `DragDropModule` をインポートする必要があります。
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
@@ -67,7 +67,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 })
 ```
 
-Then, in our template, we define a drop-area using the directive's selector:
+次にテンプレートでディレクティブのセレクターを使ってドロップ エリアを定義します。
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
@@ -83,14 +83,14 @@ Then, in our template, we define a drop-area using the directive's selector:
 
 <!-- ComponentStart: Grid -->
 
-In this case, our drop-area will be a whole second grid where we'll drop the rows.
+この場合、ドロップ領域は行をドロップする 2 番目のグリッドになります。
 ```html
 <igx-grid #targetGrid igxDrop [data]="data2" [autoGenerate]="false" [emptyGridTemplate]="dragHereTemplate"
     (enter)="onEnterAllowed($event)" (leave)="onLeaveAllowed($event)" (dropped)="onDropAllowed($event)" [primaryKey]="'ID'">
 </igx-grid>
 ```
 
-Since the grid will initially be empty, we also define a template that will be more meaningful to the user:
+グリッドは最初空のため、ユーザーにとってより意味のあるテンプレートを定義します。
 
 ```html
 <ng-template #dragHereTemplate>
@@ -100,9 +100,9 @@ Since the grid will initially be empty, we also define a template that will be m
 
 <!-- ComponentEnd: Grid -->
 
-You may enable animation when a row is dropped on a non-droppable area using the `Animation` parameter of the `RowDragEnd` event. If set to true, the dragged row will animate back to its' original position when dropped over a non-droppable area.
+`RowDragEnd` イベントの `Animation` パラメーターを使用して、ドロップできない領域に行がドロップされたときにアニメーションを有効にできます。true に設定されている場合、ドラッグされた行は、ドロップできない領域の上にドロップされると元の位置に戻ります。
 
-You may enable animation like this:
+以下はアニメーションを有効にする方法です。
 
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -114,11 +114,11 @@ export class {ComponentName}RowDragComponent {
 }
 ```
 
-### Drop Area Event Handlers
+### ドロップ エリア イベント ハンドラー
 
-Once we've defined our drop-area in the template, we have to declare our handlers for the `IgxDrop`'s `Enter`, `Leave` and `Dropped` events in our component's **.ts** file.
+テンプレートでドロップ領域を定義したら、コンポーネントの **.ts** ファイルで `IgxDrop` の `Enter`、`Leave` および `Dropped` イベントを宣言する必要があります。
 
-First, let's take a look at our `Enter` and `Leave` handlers. In those methods, we just want to change the icon of the drag's *ghost* so we can indicate to the user that they are above an area that allows them to drop the row:
+はじめに、`Enter` と `Leave` ハンドラーを見てみましょう。これらのメソッドでは、ドラッグの *ghost* のアイコンを変更して、行をドロップできる領域の上にあることをユーザーに示すことができます。
 
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -140,8 +140,8 @@ export class {ComponentName}RowDragComponent {
     }
 }
 ```
-The **changeGhostIcon** **private** method just changes the icon inside of the drag ghost. The logic in the method finds the element that contains the icon (using the **igx-grid__drag-indicator** class that is applied to the drag-indicator container), changing the element's inner text to the passed one.
-The icons themselves are from the [**material** font set](https://material.io/tools/icons/) and are defined in a separate **enum**:
+**changeGhostIcon** **private** メソッドは、ドラッグ ゴースト内のアイコンを変更するだけです。メソッドのロジックは、アイコンを含む要素を検索し (ドラッグインジケーターコンテナに適用される **igx-grid__drag-indicator** クラスを使用)、要素の内部テキストを渡されたものに変更します。
+アイコン自体は [**material** フォント セット](https://material.io/tools/icons/)からのもので、別の列挙型で定義されています。
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 ```typescript
 enum DragIcon {
@@ -159,7 +159,7 @@ enum DragIcon {
 ```
 <!-- ComponentEnd: Grid -->
 
-Next, we have to define what should happen when the user actually *drops* the row inside of the drop-area.
+次に、ユーザーが実際にドロップ領域内に行をドロップしたときに何が起こるかを定義する必要があります。
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 ```typescript
 export class {ComponentName}RowDragComponent {
@@ -172,7 +172,7 @@ export class {ComponentName}RowDragComponent {
 }
 ```
 
-Once the row is dropped, we just call the row's `Delete` method
+行が削除されたら、行の `Delete` メソッドを呼び出すだけです。
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
@@ -188,19 +188,19 @@ export class {ComponentName}RowDragComponent {
 }
 ```
 
-We define a reference to each of our grids via the **ViewChild** decorator and the handle the drop as follows:
-- add a row to the `TargetGrid` that contains the data of the row being dropped
-- remove the dragged row from the `SourceGrid`
+次のように **ViewChild** デコレータを介して各グリッドへの参照を定義し、ドロップを次のように処理します。
+- 削除される行のデータを含む行を `TargetGrid` に追加します。
+- `SourceGrid` からドラッグした行を削除します
 
 <!-- ComponentEnd: Grid -->
 
 > [!NOTE]
-> When using row data from the event arguments (**args.dragData.data**) or any other row property, note that the entire row is passed in the arguments as a reference, which means that you must clone the data you need, if you want to distinguish it from the one in the source grid.
+> イベント引数 (**args.dragData.data**) または他の行プロパティからの行データを使用する場合、行全体が参照として引数に渡されることに注意してください。つまり、ソースグリッドのデータと区別する必要がある場合は、必要なデータを複製する必要があります。
 
 
-### Templating the Drag Ghost
+### ドラッグ ゴーストのテンプレート化
 
-The drag ghost can be templated using the `RowDragGhost` directive, applied to a `<ng-template>` inside of the `{ComponentSelector}`'s body:
+ドラッグ ゴーストは、`{ComponentSelector}` の本体内の `<ng-template>` に適用される `RowDragGhost` ディレクティブを使用してテンプレート化できます。
 
 ```html
 <{ComponentSelector}>
@@ -212,13 +212,13 @@ The drag ghost can be templated using the `RowDragGhost` directive, applied to a
 </{ComponentSelector}>
 ```
 
-The result of the configuration can be seem below in a `{ComponentName}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
+以下は、行ドラッグと複数選択を有効にした `{ComponentName}` で確認できる設定の結果です。以下のデモでは、現在ドラッグされている行の数を示します。
 
-#### Example Demo
+#### デモ
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-The drag ghost can be templated on every grid level, making it possible to have multiple ghost templates or to only provide a template for a single row island.
+ドラッグ ゴーストは各グリッド レベルでテンプレート化できます。複数のゴース トテンプレートを作成できて、または単一の行アイランドにのみテンプレートを提供できます。
 
 ```html
 <{ComponentSelector}>
@@ -240,14 +240,14 @@ The drag ghost can be templated on every grid level, making it possible to have 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
            github-src="{ComponentSample}/multi-row-dragging"
-           alt="{Platform} {ComponentTitle} Multi Row Drag">
+           alt="{Platform} {ComponentTitle} 複数行のドラッグ">
 </code-view>
 
-### Templating the Drag Icon
+### ドラッグ アイコンのテンプレート化
 
-The drag handle icon can be templated using the grid's `DragIndicatorIconTemplate`. In the example we're building, let's change the icon from the default one (**drag_indicator**) to **drag_handle**.
+ドラッグ ハンドル アイコンは、グリッドの `DragIndicatorIconTemplate` を使用してテンプレート化できます。作成している例で、アイコンをデフォルトのもの (**drag_indicator**) から **drag_handle** に変更します。
 
-To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
+そのためには、`DragIndicatorIcon` を使用して `{ComponentSelector}` の本体内にテンプレートを渡すことができます。
 
 ```html
 <{ComponentSelector}>
@@ -257,7 +257,7 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
 </{ComponentSelector}>
 ```
 
-Once we've set the new icon template, we also need to adjust the **DEFAULT** icon in our **DragIcon enum**, so it's properly change by the `ChangeIcon` method:
+新しいアイコン テンプレートの設定後、**DragIcon enum** の **DEFAULT** アイコンも調整する必要があるため、`ChangeIcon` メソッドによって適切に変更されます。
 
 ```typescript
 enum DragIcon {
@@ -268,9 +268,9 @@ enum DragIcon {
 
 <!-- Angular -->
 
-### Styling the Drop Area
+### ドロップ領域のスタイル設定
 
-Once our drop handlers are properly configured, all that's left is to style our drop area a bit:
+ドロップ ハンドラが正しく設定されたら、あとはドロップ領域をスタイル設定します。
 
 ```css
 .drop-area {
@@ -295,41 +295,41 @@ Once our drop handlers are properly configured, all that's left is to style our 
 }
 ```
 
-The result can be seen in the demo below:
+結果は以下のデモで確認できます。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
 <!-- ComponentStart: Grid -->
 
-Once our drop handlers are properly configured, we're good to go!
+ドロップ ハンドラが正しく設定されたら、準備完了です。
 
-The result of the configuration can be seem below:
+以下は、設定の結果です。
 
 <!-- ComponentEnd: Grid -->
 
-#### Example Demo
+#### デモ
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
            github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentTitle} Row Drag">
+           alt="{Platform} {ComponentTitle} 行のドラッグ">
 </code-view>
 
 <!-- end: Angular -->
 
 
-## Application Demo
+## アプリケーション デモ
 
 <!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
-### Using Row Drag Events
+### 行ドラッグ イベントの使用
 
-The following demo demonstrates how to use row drag event information to change both states of a custom component, where the row is dropped, and the source grid itself
+以下のデモは、行ドラッグ イベント情報を使用して、行がドロップされたカスタム コンポーネントとソース グリッド自体の両方の状態を変更する方法を示しています。
 .
-Try to drag moons from the grid and drop them to their corresponding planets. Row drag ghost background is dynamically changed, depending on the hovered planet. If you succeed then the row in the grid will be selected and dragging will be disabled for it. Clicking planets will give you useful information.
+グリッドから月をドラッグして、それらを対応する惑星にドロップしてみてください。行ドラッグ ゴーストの背景は、ホバーされた惑星に応じて動的に変更されます。成功するとグリッド内の行が選択され、ドラッグは無効になります。惑星をクリックすると役に立つ情報が得られます。
 
 <!-- NOTE this sample is differed -->
 
@@ -337,22 +337,22 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
            github-src="{ComponentSample}/row-dragging"
-           alt="{Platform} {ComponentTitle} Row Drag">
+           alt="{Platform} {ComponentTitle} 行のドラッグ">
 </code-view>
 
 
 > [!NOTE]
-> The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
+> 上記のデモで使用されている行ドラッグ ゴーストに適用されるクラスは ::ng-deep 修飾子を使用しています。これは、行ドラッグが内部グリッド機能であり、CSS カプセル化のためにアプリケーション レベルでアクセスできないためです。
 
 <!-- ComponentEnd: Grid -->
 
 <!-- end: Angular -->
 
-### Row Reordering Demo
+### 行の並べ替えデモ
 
-With the help of the grid's row drag events and the `Drop` directive, you can create a grid that allows you to reorder rows by dragging them.
+グリッドの行ドラッグ イベントと `Drop` ディレクティブを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
 
-Since all of the actions will be happening _inside_ of the grid's body, that's where you have to attach the `Drop` directive:
+すべてのアクションはグリッド本体の**内側**で発生するため、ここで `Drop` ディレクティブをアタッチする必要があります:
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
@@ -372,29 +372,29 @@ Since all of the actions will be happening _inside_ of the grid's body, that's w
 ```
 
 > [!NOTE]
-> Make sure that there is a `PrimaryKey` specified for the grid! The logic needs an unique identifier for the rows so they can be properly reordered.
+> グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
-Once `RowDraggable` is enabled and a drop zone has been defined, you need to implement a simple handler for the drop event. When a row is dragged, check the following:
+`RowDraggable` が有効になり、ドロップ エリアが定義されたら、ドロップ イベントの単純なハンドラーを実装する必要があります。行をドラッグするときは、以下を確認してください:
 
 <!-- ComponentStart: Grid -->
 
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
+  - 行はグリッド内にドロップされましたか?
+  - そうであれば、ドラッグされた行が_他の_どの行にドロップされましたか?
+  - ターゲット行が見つかれば、`Data` 配列内のレコードの位置を入れ替えます。
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-  - Is the row expanded? If so, collapse it.
-  - Was the row dropped inside of the grid?
-  - If so, on which _other_ row was the dragged row dropped?
-  - Once you've found the _target_ row, swap the records' places in the `Data` array
-  - Was the row initially selected? If so, mark it as selected.
+  - 行が展開されていますか? そうであれば、行を縮小します。
+  - 行はグリッド内にドロップされましたか?
+  - そうであれば、ドラッグされた行が**他の**どの行にドロップされましたか?
+  - **ターゲット**行が見つかれば、`Data` 配列内のレコードの位置を入れ替えます。
+  - 行は最初に選択されてましたか? そうであれば、選択済みとしてマークします。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
-Below, you can see this implemented:
+以下では、上記の実装を示します。
 
 <!-- ComponentStart: Grid -->
 
@@ -550,17 +550,17 @@ export class HGridRowReorderComponent {
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-With these few easy steps, you've configured a grid that allows reordering rows via drag/drop! You can see the above code in action in the following demo.
+これらの簡単な手順で、ドラッグ/ドロップで行を並べ替えることができるグリッドを構成しました! 次のデモで、上記コードの動作を確認できます。
 
 <!-- ComponentStart: Grid -->
 
-Holding onto the drag icon will allow you to move a row anywhere in the grid:
+ドラッグ アイコンを押下しながら、グリッド内で好きな場所に行を移動できます。
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
 
-Notice that we also have row selection enabled and we preserve the selection when dropping the dragged row.
+行の選択も有効で、ドラッグした行をドロップしても選択が保持されます。
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
@@ -568,22 +568,22 @@ Notice that we also have row selection enabled and we preserve the selection whe
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
            github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} Row Reorder">
+           alt="{Platform} {ComponentTitle} 行の並べ替え">
 </code-view>
 
 <!-- ComponentStart: Grid -->
 
-### Improving UX in Row Drag Scenarios
+### 行ドラッグ シナリオでの UX の改善
 
-Being able to obtain the row index which is currently below the cursor provides you with the opportunity to build rich custom functionalities and to improve the UX of your application. For example, you can change the drag ghost or display a drop indicator, based on the position of the dragged row over the grid. Another useful behavior that you can achieve that way is to scroll the grid up or down while dragging a row, when reaching the border of the grid.
+現在カーソルの下にある行インデックスを取得できることで、豊富なカスタム機能を構築し、アプリケーションの UX を向上させる機会が得られます。たとえば、グリッド上のドラッグされた行の位置に基づいて、ドラッグ ゴーストを変更したり、ドロップ インジケーターを表示したりできます。この方法で実現できるもう 1 つの便利な動作は、グリッドの境界に達したときに、行をドラッグしながらグリッドを上下にスクロールすることです。
 
-Below you can find example snippets of a couple of custom implementations you can achieve by knowing the row's position.
+以下に、行の位置を知ることで実現できるいくつかのカスタム実装のスニペットの例を示します。
 
-#### Changing the Drag Ghost based on Cursor Position
+#### カーソル位置に基づいてドラッグ ゴーストを変更する
 
-In the snippets below you see how you can change the text inside the drag ghost to display the name of the hovered row.
+以下のスニペットでは、ドラッグ ゴースト内のテキストを変更して、ホバーされた行の名前を表示する方法を示しています。
 
-First, you specify a template which you'd like to use for the drag ghost. The `DropName` property will dynamically change, getting the name of the row over which the cursor is hovering:
+まず、ドラッグ ゴーストに使用するテンプレートを指定します。`DropName` プロパティは動的に変化し、カーソルが置かれている行の名前を取得します。
 
 ```html
 <ng-template igxRowDragGhost>
@@ -593,7 +593,7 @@ First, you specify a template which you'd like to use for the drag ghost. The `D
 </ng-template>
 ```
 
-Then, define a method that returns the instance of the row you're over (similar to the one used in the [row reordering demo](#row-reordering-demo)):
+次に、終了した行のインスタンスを返すメソッド[行の並べ替えデモ](#行の並べ替えデモ)で使用されているものと同様) を定義します。
 
 ```typescript
 class MyRowGhostComponent {
@@ -610,9 +610,9 @@ class MyRowGhostComponent {
 }
 ```
 
-Finally, we create a method that will be used to handle the `DragMove` event (emitted for the dragged row). The method will change the value of the property used in the `RowDragGhost` template and force a rerender.
+最後に、`DragMove` イベント (ドラッグされた行に対して発行) を処理するために使用されるメソッドを作成します。このメソッドは、`RowDragGhost` テンプレートで使用されているプロパティの値を変更し、強制的に再描画します。
 
-We want to subscribe to the `DragMove` event only of the specific row we're dragging and unsub from it (to prevent memory leaks) each time a row is dropped.
+ドラッグしている特定の行の `DragMove` イベントのみをサブスクライブし、行がドロップされるたびに (メモリ リークを防ぐために) サブスクライブを解除します。
 
 ```typescript
 class MyRowGhostComponent {
@@ -659,14 +659,14 @@ class MyRowGhostComponent {
 
 ```
 
-#### Displaying a Drop Indicator based on Cursor Position
+#### カーソル位置に基づいたドロップ インジケーターの表示
 
-In the demo in the next section you see how you can display an indicator of where the dragged row would be dropped. You can customize this indicator as you like - it may be a placeholder row, placed at the position where the dragged row would be dropped, a border style indicating if the dragged row would be dropped above or below the currently hovered row, etc.
+次のセクションのデモでは、ドラッグされた行がドロップされる場所のインジケーターを表示する方法を確認します。このインジケーターは好きなようにカスタマイズできます - ドラッグされた行がドロップされる位置に配置されたプレースホルダー行、ドラッグされた行が現在ホバーされている行の上または下にドロップされるかどうかを示す境界線スタイルなどです。
 
-In order to track the position of the cursor, we bind to the `DragMove` event of the `DragDirective` when we start dragging a row.
+カーソルの位置を追跡するために、行のドラッグを開始するときに `DragDirective` の `DragMove` イベントにバインドします。
 
 > [!NOTE]
-> Make sure that there is a `PrimaryKey` specified for the grid! The logic needs an unique identifier for the rows so they can be properly reordered
+> グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
 ```typescript
 public ngAfterViewInit() {
@@ -731,11 +731,11 @@ private changeHighlightedElement(newElement: HTMLElement) {
 
 <!-- Angular -->
 
-#### Scrolling the Grid on Row Drag
+#### 行ドラッグでグリッドをスクロールする
 
-A very useful scenario is being able to scroll the grid when the dragged row reaches its' top or bottom border. This allows reordering rows outside of the current viewport when the number of rows in the grid requires a scrollbar.
+非常に便利なシナリオは、ドラッグされた行がその上部または下部の境界に達したときにグリッドをスクロールできることです。これにより、グリッド内の行数にスクロールバーが必要な場合に、現在のビューポートの外側で行を並べ替えることができます。
 
-Below you see an example of the two methods we use to check if we have reached the edge of the viewport and to scroll it if needed. The `IsGridScrolledToEdge` accepts one parameter - the direction we'd like to scroll the grid (1 for "Down", -1 for "Up") and returns **true** if we've reach the final row in that direction. The `ScrollGrid` method will attempt to scroll the grid in a direction (1 or -1), doing nothing if the grid is already at that edge.
+以下に、ビューポートの端に到達したかどうかを確認し、必要に応じてスクロールするために使用する 2 つの方法の例を示します。`IsGridScrolledToEdge` は、グリッドをスクロールする方向 (「下」 の場合は 1、「上」 の場合は -1) の 1 つのパラメーターを受け入れ、その方向の最後の行に到達した場合は **true** を返します。`ScrollGrid` メソッドは、グリッドをある方向 (1 または -1) にスクロールしようとしますが、グリッドがすでにその端にある場合は何もしません。
 
 ```typescript
 class MyGridScrollComponent {
@@ -764,9 +764,9 @@ class MyGridScrollComponent {
 }
 ```
 
-We'll still be subscribing to the `DragMove` event of the specific row in the way we did in the previous example. Since `DragMove` is fired only when the cursor actually moves, we want to have a nice and simple way to auto-scroll the grid when the row is at one of the edges, but the user **does not** move the mouse. We'll an additional method which will setup an `Interval`, auto-scrolling the grid every **500ms**.
+前の例で行ったように、特定の行の `DragMove` イベントをサブスクライブします。`DragMove` はカーソルが実際に移動したときにのみ起動されるため、行が端の 1 つにあるときにグリッドを自動スクロールするための便利で簡単な方法が必要ですが、ユーザーはマウスを**移動しません**。**500ms** ごとにグリッドを自動スクロールする `Interval` を設定するメソッドを追加します。
 
-We create and subscribe to the `Interval` when the pointer reaches the grid's edge and we **unsubscribe** from that `Interval` every time the mouse moves or the row is dropped (regardless of cursor position).
+ポインタがグリッドの端に達したときに `Interval` を作成してサブスクライブし、マウスが移動したり行がドロップされたりするたびに (カーソル位置に関係なく)、その `Interval` から**サブスクライブを解除します**。
 
 ```typescript
 class MyGridScrollComponent {
@@ -801,7 +801,7 @@ class MyGridScrollComponent {
 }
 ```
 
-Following is the example of both scenarios described above - showing a drop indicator and scrolling the viewport when border's edge is reached.
+以下では、上記の両方のシナリオの例です。ドロップ インジケーターを表示し、境界線の端に到達したときにビューポートをスクロールします。
 
 <!-- NOTE this sample is differed -->
 
@@ -809,7 +809,7 @@ Following is the example of both scenarios described above - showing a drop indi
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
            github-src="{ComponentSample}/row-drop-indicator"
-           alt="{Platform} {ComponentTitle} Drop Indicator">
+           alt="{Platform} {ComponentTitle} ドロップ インジケーター">
 </code-view>
 
 <!-- end: Angular -->
@@ -818,22 +818,22 @@ Following is the example of both scenarios described above - showing a drop indi
 <!-- end: Angular -->
 
 
-## Limitations
+## 制限
 
-Currently, there are no known limitations for the `RowDraggable` directive.
+現在、`RowDraggable` ディレクティブに既知の制限はありません。
 
-## API References
+## API リファレンス
 
 * `RowDraggable`
 * `RowDragStart`
 * `RowDragEnd`
 * `{ComponentName}`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
+* [{ComponentTitle} 概要](overview.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

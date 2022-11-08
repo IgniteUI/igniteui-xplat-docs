@@ -178,7 +178,7 @@ public timeFormats = [
 
 ### 画像
 
-現時点では `{ComponentName}` の画像列の組み込みテンプレートは存在しませんが、これは `BodyTemplateScript` を `Column` の 1 つに提供することで簡単に実装できます。 このプロパティは、次のように定義できる JavaScript 関数を指します。
+現時点では `{ComponentName}` の画像列の組み込みテンプレートは存在しませんが、これは `BodyTemplateScript` を `Column` の 1 つに提供することで簡単に実装できます。このプロパティは、次のように定義できる JavaScript 関数を指します。
 
 ```razor
 <IgbColumn Field="ImageSource" BodyTemplateScript="ImageCellTemplate" />

@@ -36,8 +36,7 @@ _language: ja
 
 ## 制限
 
-- カットとコピーの両方のイベントは、Internet Explorer では本来サポートされていません。 The exception is the
-**paste** event (IE 11) which is emitted but does not expose the `ClipboardData` property in the event.
+- カットとコピーの両方のイベントは、Internet Explorer では本来サポートされていません。**paste** イベント (IE 11) は発生されますが、イベントの `ClipboardData` プロパティを公開しません。
 > [!NOTE]
 > IE 11のセルを**コピー**するためには、キーボード選択を使用できます。複数セルを選択するには **Shift キー** を押しながらコピーするには **Ctrl + C** を押します。
 

@@ -9,9 +9,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列ピン固定
 
-単一または複数の列を {Platform} UI `{ComponentName}` の左側または右側にピン固定できます。{ProductName} の**列ピン固定**は、ユーザーが特定の列順序で列をロックすることを可能にし、`{ComponentName}` での水平スクロール時にロックされた列が常に表示されます。{ProductName} `{ComponentName}` には組み込みの列ピン固定 UI があり、`{ComponentName}` のツールバーで列の表示状態を変更できます。その他、カスタム UI を定義し、Column Pinning 機能を介して列のピン固定状態を変更できます。
+{ProductName} の**列ピン固定**は、ユーザーが特定の列順序で列をロックすることを可能にし、`{ComponentName}` での水平スクロール時にロックされた列が常に表示されます。{Platform} {ComponentTitle} には組み込みの列ピン固定 UI があり、`{ComponentName}` のツールバーで列の表示状態を変更できます。その他、カスタム UI を定義し、Column Pinning 機能を介して列のピン固定状態を変更できます。
 
 ## {Platform} {ComponentTitle} 列ピン固定の例
+
+以下の例は、1 つまたは複数の列を `{ComponentName}` の左側または右側にピン固定する方法を示しています。
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

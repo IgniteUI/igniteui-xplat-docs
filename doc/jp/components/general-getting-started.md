@@ -221,11 +221,9 @@ yarn add {PackageSpreadsheet} {PackageCore}
 
 
 ```razor
-// in Program.cs file
-
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbGeographicMapModule),
-  typeof(IgbDataChartInteractivityModule)
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
 );
 ```
 
@@ -349,7 +347,6 @@ var app = builder.Build();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -376,7 +373,6 @@ public void ConfigureServices(IServiceCollection services)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

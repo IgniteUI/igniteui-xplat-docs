@@ -1,5 +1,5 @@
 ---
-title: Editing Rows in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} 行の編集 - インフラジスティックス
 _description: {Platform} {ComponentTitle}で行編集を有効にし、CRUD 操作のための強力な API が必要な場合、{ProductName} {ComponentTitle} 行編集コンポーネントをお試しください。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,29 +7,29 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Row Editing
+# {Platform} {ComponentTitle} 行の編集
 
-The `{ComponentName}` provides a convenient way to perform data manipulations through inline editing and a powerful API for {Platform} CRUD operations. Click on a row and press **Enter key** or simply double click with the mouse on the row that needs to be modified.
+`{ComponentName}` はインライン編集や {Platform} CRUD 操作のための強力な API を通して便利なデータ操作方法を提供します。行をクリックして **Enter キー**を押すか、変更する行をダブルクリックします。
 
-## {Platform} {ComponentTitle} Row Editing Example
+## {Platform} {ComponentTitle} 行編集の例
 
-The following sample demonstrates how to enable row editing in the `{ComponentName}`. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
+以下の手順では、`{ComponentName}` で行編集を有効にする方法を示します。セル値を変更してから同じ行の他のセルをクリックまたはナビゲーションした場合も **[完了]** ボタンを使用して確定するまで行値を更新しません。または **[キャンセル]** ボタンを使用して破棄します。
 
 <code-view style="height:550px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
             iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-options"
             github-src="{ComponentSample}/row-editing-options"
-            alt="{Platform} {ComponentTitle} Editing Rows Example">
+            alt="{Platform} {ComponentTitle} 行編集の例">
 </code-view>
 
 > [!NOTE]
-> When a row is in edit mode, then clicking on a cell on another row will act like the Done button is pressed - submit all the changes of the previous row. If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
+> 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
 
-## Row Editing Usage
+## 行編集の使用
 
 <!-- Angular -->
 
-To get started import the `{ComponentName}Module` in the **app.module.ts** file:
+`{ComponentName}Module` を **app.module.ts** ファイルにインポートします。
 
 ```typescript
 // app.module.ts
@@ -44,7 +44,7 @@ export class AppModule {}
 
 <!-- end: Angular -->
 
-Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
+次に `{ComponentName}` をバインドしたデータソースで定義し、`RowEditable` を true に設定してバインドします。
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
@@ -95,10 +95,10 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 > [!NOTE]
-> Setting primary key is mandatory for row editing operations.
+> プライマリキーは行編集操作で必須です。
 
 > [!NOTE]
-> It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
+> 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を `false` に設定します。
 
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
@@ -123,63 +123,63 @@ export class {ComponentName}RowEditSampleComponent {
 
 
 > [!NOTE]
-> The `{ComponentName}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
+> `{ComponentName}` は、保留中のセル変更を保持するプロバイダー `BaseTransactionService` を行ステートをサブミットまたはキャンセルするまで内部使用します。
 
-## Positioning
+## 位置
 
-- Default position of the overlay will be below the row that is in edit mode
+- オーバーレイのデフォルトの位置は編集モードで行の下にあります。
 
-- If there is no space below the row then overlay will appear above the row.
+- 行の下にスペースがない場合、オーバーレイが行の上に表示されます。
 
-- Once shown - top or bottom, overlay will maintain this position during scrolling, until the overlay is closed.
+- 一番上または下に表示されると、オーバーレイは閉じられるまでスクロール時にこの位置を保持します。
 
-## Behavior
+## 動作
 
-- If row is in edit mode, then editing will continue, if a cell from the same row is clicked.
+- 行が編集モードの場合、編集が継続します。同じ行のセルがクリックされたかどうか。
 
-- Clicking "Done" button will finish row editing and will submit changes either to the data source, or to a transaction if available. In addition row will exit edit mode.
+- [完了] ボタンをクリックすると行編集を完了し、変更をデータソースまたはトランザクションへサブミットします。更に行が編集モードを完了します。
 
-- Clicking "Cancel" button will revert all current changes in the row and row will exit edit mode.
+- [キャンセル] ボタンがをクリックすると現在の行のすべての変更を元に戻し、行編集モードを終了します。
 
-- If row is in edit mode, then clicking a cell from another row will finish the current row edit and will submit new row changes (the same behavior clicking "Done" button). If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
+- 行が編集モードにある場合、他の行のセルをクリックすると現在の行編集を終了し、行の新規の変更をサブミット ([完了] ボタンをクリックした場合と同じ) します。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
 
-- If row is in edit mode and `{ComponentName}` is scrolled so that row goes outside the visible area, the latter will be still in edit mode. When `{ComponentName}` is scrolled, so that the row is visible again, the row will be still in edit mode. When clicked outside the `{ComponentName}`, the cell will also stay in edit mode.
+- 行が編集モードの時にグリッドがスクロールされると行が表示領域外になりますが、`{ComponentName}` は編集モードのままです。`{ComponentName}` をスクロールすると編集行は再度表示されますが編集行が編集モードのままになります。`{ComponentName}` 以外をクリックしたときにセルも編集モードに残ります。
 
-- When perform *sorting*, *filtering*, *searching* and *hiding* operations, will revert all current changes in the row and row will exit edit mode.
+- **ソート**、**フィルタリング**、**検索**、および**非表示**操作を実行すると、現在の行のすべての変更が元に戻され、行の編集モードを終了します。
 
-- When perform *paging*, *resizing*, *pinning* and *moving* operations, will exit edit mode and will submit latest value.
+- **ページング**、**サイズ変更**、**ピン固定**、**移動**操作を実行すると、編集モードを終了して最新の値を送信します。
 
-- Each modified cell gets edited style until row edit is finished. This is the behavior, when `{ComponentName}` is not provided with transactions. When transactions are available - then cell edit style is applied until all the changes are committed.
-
-
-## Keyboard Navigation
-
-- <kbd>Enter</kbd> and <kbd>F2</kbd> enters row edit mode
-
-- <kbd>Esc</kbd> exits row edit mode and doesn't submit any of the cell changes, made while the row was in edit mode.
-
-- <kbd>Tab</kbd> move focus from one editable cell in the row to the next and from the right-most editable cell to the CANCEL and DONE buttons. Navigation from DONE button goes to the left-most editable cell within the currently edited row.
+- 編集した各セルは行編集が終了するまで変更スタイルを取得します。`{ComponentName}` がトランザクションで提供されない場合の動作です。トランザクションが有効な場合、すべての変更がコミットされるまでセル編集スタイルが適用されます。
 
 
-## Feature Integration
+## キーボード ナビゲーション
 
-- Any data changing operation will terminate row editing operations and will submit current row changes. This will include operations like sorting, changing grouping and filtering criteria, paging, etc.
+- <kbd>Enter</kbd> と <kbd>F2</kbd> で行編集モードに入ります
 
-- Summaries will be updated after row edit is finished. Same is valid for the other features like sorting, filtering, etc.
+- <kbd>Esc</kbd> で行編集モードを終了し、行の編集モード時に変更されたいずれのセルの変更もサブミットしません
+
+- <kbd>Tab</kbd> - 行の編集可能なセルから次のセルへフォーカスを移動、右端の編集可能なセルから [キャンセル] と [完了] ボタンへ移動します。[完了] ボタンからのナビゲーションは現在の編集行内で編集可能なセルへ移動します。
+
+
+## 機能の統合
+
+- すべてのデータ変更操作は行変更操作を終了し、現在の行の変更をサブミットします。ソート、グループの変更、フィルタリング条件、ページングなどが含まれます。
+
+- 行編集が終了した後に集計が更新されます。同様に並べ替えやフィルタリングなどの他の機能が有効になります。
 
 <!-- ComponentStart: Grid -->
 
-- Expanding and collapsing grouped rows will not terminate editing for the current row.
+- グループ行の展開と縮小は現在の行の編集を終了しません。
 
 <!-- ComponentEnd: Grid -->
 
-## Customizing Row Editing Overlay
+## 行編集オーバーレイのカスタマイズ
 
-### Customizing Text
+### テキストのカスタマイズ
 
-Customizing the text of the row editing overlay is possible using via templating.
+テンプレート化を使用した行編集オーバーレイのテキストのカスタマイズが可能です。
 
-The `RowChangesCount` property is exposed and it holds the count of the changed cells.
+`RowChangesCount` プロパティが公開されて変更されたセルのカウントを保持します。
 
 ```html
 <ng-template igxRowEditText let-rowChangesCount>
@@ -196,11 +196,11 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 }, false);
  ```
 
-### Customizing Buttons
+### ボタンのカスタマイズ
 
-Customizing the buttons of the row editing overlay also possible via templating.
+テンプレート化を使用した行編集オーバーレイのボタンのカスタマイズも可能です。
 
-If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
+キーボード ナビゲーションにボタンを含める場合、各ボタンに `RowEditTabStopDirective` が必要です。
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
@@ -222,23 +222,23 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter the Row Editing overlay.
+[{ProductName} テーマ ライブラリ](themes/index.md)を使用して、行編集オーバーレイを大幅に変更できます。
 
-The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
+行編集オーバーレイは複合要素です。UI は、他の 2 つのコンポーネントで構成されています。
 
-    - [`igx-banner`](banner.md) in order to render its contents
-    - [`igx-button`](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
+    - コンテンツをレンダリングするための [`igx-banner`](banner.md)
+    - [`igx-button`](button.md) はデフォルトのテンプレートでレンダリングされます (`[完了]` ボタンと `[キャンセル]` ボタンの場合)。
 
-In the below example, we will make use of those two components' styling options, ([button styling](button.md#スタイル設定) & [banner-styling](../banner.md#スタイル設定)), to customize the experience of our `{ComponentName}`'s Row Editing.
+以下の例では、これら 2 つのコンポーネントのスタイル設定オプション ([ボタン スタイル](button.md#スタイル設定) & [バナー スタイル](../banner.md#スタイル設定)) を使用して、`{ComponentName}` の行編集のエクスペリエンスをカスタマイズします。
 
-We will also style the current cell's editor and background to make it more distinct. You can learn more about cell styling [here](cell-editing.md#スタイル設定).
+次に、現在のセルのエディターと背景をより明確にするためにスタイルを設定します。セル スタイリングの詳細については、[こちら](cell-editing.md#スタイル設定)をご覧ください。
 
-### Import Theme
+### テーマのインポート
 
-The easiest way to style the Row Editing banner is to define styles in our `app`'s global style file (typically `styles.scss`).
-The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the {ProductName} Sass framework:
+行編集バナーのスタイルを設定する最も簡単な方法は、`app` のグローバル スタイル ファイル (通常 `styles.scss`) でスタイルを定義することです。
+はじめに `themes/index` ファイルをインポートすることにより、{ProductName} Sass フレームワークの強力なツールへアクセスできるようになります。
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -247,11 +247,11 @@ The first thing we need to do is import the `themes/index` file - this gives us 
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-Once we've imported the themes file, we can create custom themes.
+テーマ ファイルをインポートしたら、カスタム テーマを作成できます。
 
-#### Define the Theme
+#### テーマの定義
 
-We can now define a custom [`banner theme`]({environment:sassApiUrl}/index.html#function-banner-theme) that will affect our Row Editing background and make use of one of the predefined palettes namely `$purple-palette` :
+行編集の背景にカスタムの [`banner theme`]({environment:sassApiUrl}/index.html#function-banner-theme) を定義して、定義済みのパレットの 1 つである `$purple-palette` を使用することができます。
 
 ```scss
     $my-light-gray: #e3e3e3;
@@ -263,25 +263,25 @@ We can now define a custom [`banner theme`]({environment:sassApiUrl}/index.html#
     );
 ```
 
-Here we are using `my-banner-palette` in conjunction with `igx-color` (exposed by the theme library) for generating our colors.
+ここでは、色を生成するために `my-banner-palette` を `igx-color` (テーマ ライブラリによって公開) と共に使用しています。
 
-### Include the Theme
+### テーマを含む
 
-All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the `igx-banner mixin`:
+次に Sass `@include` ステートメントを使用してテーマを適用します。新しく定義された `$banner-theme` を `igx-banner mixin` で渡します。
 
 ```scss
 @include banner($banner-theme);
 ```
 
-This will apply our custom banner theme to the Row Editing overlay. However, since we defined these in the global styles file, these styles will also apply to **all** banners in our application.
+これにより、カスタム バナー テーマが行編集オーバーレイに適用されます。ただし、グローバル スタイル ファイルで定義したため、これらのスタイルはアプリケーションの**すべて**のバナーにも適用されます。
 
-### Component Styles
+### コンポーネント スタイル
 
-Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [`theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
+行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([`テーマ/インデックス`インポート](#テーマのインポート)を含む) を定義できます。
 
 >[!NOTE]
->If the component is using an [`Emulated`](themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
->We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+>コンポーネントが [`Emulated`](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+>ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
 // custom.component.scss
@@ -293,11 +293,11 @@ Since the Row Editing overlay makes use of a lot of other components' themes, st
 }
 ```
 
-With the above syntax, our custom banner theme properly applies to the grid's Row Editing overlay.
+上記の構文で、カスタム バナー テーマはグリッドの行編集オーバーレイに適切に適用されます。
 
-### Custom Templates
+### カスタム テンプレート
 
-To further customize our Row Editing overlay, we can pass a custom template so we can style the `Done` and `Cancel` buttons separately:
+行編集オーバーレイをさらにカスタマイズするには、`[完了]` ボタンと `[キャンセル]` ボタンを別々にスタイル設定できるようにカスタム テンプレートを渡します。
 
 ```html
 <!-- in component.html -->
@@ -315,7 +315,7 @@ To further customize our Row Editing overlay, we can pass a custom template so w
 </{ComponentSelector}>
 ```
 
-After we've defined our custom buttons, we can make use of the [`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling [here](../button.md#スタイル設定). We can create a custom theme for our `Done` and `Cancel`:
+カスタム ボタンを定義した後は、[`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
 
 ```scss
 // custom.component.scss
@@ -331,11 +331,11 @@ $button-theme: button-theme(
   }
 ```
 
-We scope our `@include` statement in `.custom-buttons` so that it is only applied to the `Done`and `Cancel` buttons.
+`@include` ステートメントを `.custom-buttons` でスコープ設定して、`[完了]` ボタンと`[キャンセル]` ボタンにのみ適用されるようにします。
 
-### Demo
+### デモ
 
-After styling the banner and buttons, we also define a custom style for [the cell in edit mode](cell-editing.md#スタイル設定). The result of all the combined styles can be seen below:
+バナーとボタンのスタイルを設定後、[編集モードのセル](cell-editing.md#スタイル設定)のカスタム スタイルも定義します。以下は、すべてのスタイルを組み合わせた結果です。
 
 <!-- NOTE this sample is differed -->
 
@@ -343,24 +343,24 @@ After styling the banner and buttons, we also define a custom style for [the cel
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-style"
            github-src="{ComponentSample}/row-editing-style"
-           alt="{Platform} {ComponentTitle} Row Editing Styling Example">
+           alt="{Platform} {ComponentTitle} 行編集のスタイル設定の例">
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
 
-## Known Issues and Limitations
+## 既知の問題と制限
 
-- When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
+- グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
 
-* Row Selection
-* Row Expand/collapse
-* Row Editing
-* Row Pinning
+* 行の選択
+* 行の展開/縮小
+* 行の編集
+* 行のピン固定
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `RowEditable`
 * `RowEditEnter`
@@ -372,16 +372,16 @@ After styling the banner and buttons, we also define a custom style for [the cel
 * `PrimaryKey`
 * `{ComponentName}`
 
-## Additional Resources
+## その他のリソース
 
 <!-- Angular -->
-* [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
+* [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
 <!-- end: Angular -->
-* [{ComponentTitle} Overview](overview.md)
-* [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+* [{ComponentTitle} 概要](overview.md)
+* [{ComponentTitle} 編集](editing.md)
+* [{ComponentTitle} トランザクション](batch-editing.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

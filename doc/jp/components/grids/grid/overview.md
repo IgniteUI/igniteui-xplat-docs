@@ -57,7 +57,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [作業の開始](..\general-getting-started.md)
 - [NuGet パッケージの追加](..\general-nuget-feed.md)
 
-また、 グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
+また、グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
 ```html
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />

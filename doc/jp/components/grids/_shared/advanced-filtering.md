@@ -138,27 +138,27 @@ $custom-grid: grid-theme(
 ```scss
 $custom-button: button-theme(
     $disabled-color: gray,
-    ...
+
 );
 
 $custom-button-group: button-group-theme(
     $item-background:  #292826,
-    ...
+
 );
 
 $custom-input-group: input-group-theme(
     $box-background: #4a4a4a,
-    ...
+
 );
 
 $custom-chip: chip-theme(
     $background: #FFCD0F,
-    ...
+
 );
 
 $custom-drop-down: drop-down-theme(
     $background-color: #292826,
-    ...
+
 );
 ```
 
@@ -270,27 +270,27 @@ $custom-grid: grid-theme(
 
 $custom-button: button-theme(
     $disabled-color: color($dark-palette, "secondary", 100),
-    ...
+
 );
 
 $custom-button-group: button-group-theme(
     $item-background: color($dark-palette, "secondary", 400),
-    ...
+
 );
 
 $custom-input-group: input-group-theme(
     $box-background: color($dark-palette, "secondary", 200),
-    ...
+
 );
 
 $custom-chip: chip-theme(
     $background: color($dark-palette, "primary", 400),
-    ...
+
 );
 
 $custom-drop-down: drop-down-theme(
     $background-color: color($dark-palette, "secondary", 400),
-    ...
+
 );
 ```
 
@@ -319,7 +319,7 @@ $custom-button-schema: extend($_light-button,
         disabled-color:(
            color: ("secondary", 100)
         ),
-        ...
+
     )
 );
 
@@ -328,7 +328,7 @@ $custom-button-group-schema: extend($_light-button-group,
         item-background:(
            color: ("secondary", 400)
         ),
-        ...
+
     )
 );
 
@@ -337,7 +337,7 @@ $custom-input-group-schema: extend($_light-input-group,
         box-background:(
            color: ("secondary", 200)
         ),
-        ...
+
     )
 );
 
@@ -346,7 +346,7 @@ $custom-chip-schema: extend($_light-chip,
         background:(
            color: ("primary", 400)
         ),
-        ...
+
     )
 );
 
@@ -355,7 +355,7 @@ $custom-drop-down-schema: extend($_light-drop-down,
         background-color:(
            color: ("secondary", 400)
         ),
-        ...
+
     )
 );
 ```

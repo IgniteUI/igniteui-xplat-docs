@@ -1,31 +1,31 @@
 ---
-title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジスティックス
 _description: Ignite UI for {Platform} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Multi-row Layout
+# {Platform} {ComponentTitle} の複数行レイアウト
 
-Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. The feature allows splitting a single data record into multiple visible rows.
+複数行レイアウトは、`{ComponentName}` のレンダリング機能を拡張します。この機能により、単一のデータレコードを複数の表示行に分割することができます。
 
-## {Platform} Multi-row Layout Example
+## {Platform} {ComponentTitle} 複数行レイアウトの例
 
 <code-view style="height:755px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-options"
            github-src="{ComponentSample}/multi-row-layout-options"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example">
+           alt="{Platform} {ComponentTitle} 複数行レイアウト概要の例">
 </code-view>
 
-The declaration of Multi-row Layout is achieved through `ColumnLayout` component. Each `ColumnLayout` component should be considered as a block, containing one or multiple `Column` components. Some of the grid features work on block level (those are listed in the "Feature Integration" section below). For example the virtualization will use the block to determine the virtual chunks, so for better performance split the columns into more `ColumnLayout` blocks if the layout allows it. There should be no columns outside of those blocks and no usage of `ColumnGroup` when configuring a multi-row layout. Multi-row Layout is implemented on top of the [grid layout](https://www.w3.org/TR/css-grid-1/) specification and should conform to its requirements.
+複数行レイアウトの宣言は、`ColumnLayout` コンポーネントによって実現されます。各 `ColumnLayout` コンポーネントは、単一または複数の `Column` コンポーネントを含むブロックと見なします。一部のグリッド機能はブロック レベルで機能します (下記の「機能の統合」セクション参照)。たとえば、仮想化ではブロックを使用して仮想チャンクを決定します。そのため、レイアウトで許容される場合は、パフォーマンスを向上させるために列を更に `ColumnLayout` ブロックに分割します。複数行のレイアウトを設定するときは、これらのブロックの外側に列がなく、`ColumnGroup` を使用しないでください。複数行のレイアウトは、[グリッド レイアウト](https://www.w3.org/TR/css-grid-1/)仕様上に実装されており、その要件に準拠する必要があります。
 
-The `Column` component exposes four `Input` properties to determine the location and span of each cell:
-* `ColStart` - column index from which the field is starting. This property is **mandatory**.
-* `RowStart` - row index from which the field is starting. This property is **mandatory**.
-* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to `colStart + 1`.
-* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to `rowStart + 1`.
+`Column` は各セルの位置と範囲を決めるために 4 つの `Input` プロパティを公開します。
+* `ColStart` - フィールドの開始位置となる列インデックス。このプロパティは**必須**です。
+* `RowStart` - フィールドの開始位置となる行インデックス。このプロパティは**必須**です。
+* `ColEnd` - 現在のフィールドが終了する位置の列インデックス。colStart と colEnd の間の列数によって、そのフィールドまでの列の幅が決まります。このプロパティは**オプション**です。設定されていない場合、デフォルトは `colStart + 1` になります。
+* `RowEnd` - 現在のフィールドが終了する行インデックス。rowStart と rowEnd の間の行数によって、そのフィールドにまたがる行数が決まります。このプロパティは**オプション**です。設定されていない場合は、デフォルトで `rowStart + 1` に設定されます。
 
 
 ```html
@@ -72,90 +72,89 @@ The `Column` component exposes four `Input` properties to determine the location
 </IgbColumnLayout>
 ```
 
-The result of the above configuration can be seen on the screenshot below:
+上記の設定の結果は、以下のスクリーンショットで確認できます。
 
 <img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
 
 > [!Note]
-> `RowStart` and `ColStart` properties must be set for each `Column` into a `ColumnLayout`. The `ColumnLayout` component is not verifying if the layout is correct and not throwing errors or warnings about that. The developers must make sure that the declaration of their layout is correct and complete, otherwise they may end up in broken layout with misalignments, overlaps and browser inconsistencies.
+> `RowStart` と `ColStart` プロパティは、`ColumnLayout` 内の各 `Column` に設定する必要があります。`ColumnLayout` コンポーネントはレイアウトが正しいかどうかを検証しておらず、それについてエラーや警告をスローしません。開発者は、レイアウトの宣言が正しく、完全であることを確認し、誤った配置、オーバーラップ、ブラウザーでの不整合、レイアウトの崩れなどを回避する必要があります。
 
-## Feature Integration
+## 機能の統合
 
-Due to the completly different rendering approach of Multi-row Layout, some of the column features will work only on `ColumnLayout` component. Such features are Column Pinning and Column Hiding. Othes like - Sorting and Grouping will work in the same way - on the `Column` component.
+複数行レイアウトのレンダリング方法は全く異なるため、列ピン固定や列非表示など一部の列機能は `ColumnLayout` コンポーネントでのみ機能します。その他の機能ソートとグループ化などは、`Column` コンポーネントで同じように機能します。
 
-- Filtering - only Excel Style Filtering is supported. Setting `FilterMode` explicitly to `FilterMode.quickFilter` has no effect.
-- Paging - works on records, not visual rows.
-- Group By - `HideGroupedColumns` option has no effect in Multi-row Layout. The grouped columns are always visible.
+- フィルタリング - Excel スタイルのフィルタリングのみがサポートされています。`FilterMode` を `FilterMode.quickFilter` に明示的に設定しても効果はありません。
+- ページング - 表示行ではなくレコードで機能します。
+- グループ化 - `HideGroupedColumns` オプションは、複数行レイアウトでは効果がありません。グループ化された列は常に表示されます。
 
-The following features are currently **not** supported:
+以下の機能は現在**サポートされません**。
 
-- Column Moving
-- Multi-column Headers
-- Export to Excel
-- Summaries
+- 列の移動
+- 複数列ヘッダー
+- Excel へのエクスポート
+- 集計
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-`{ComponentName}` with Multi-Row Layouts provides build-in keyboard navigation.
+複数行レイアウトを持つ `{ComponentName}` は、ビルトインのキーボード ナビゲーションを提供します。
 
-### Horizontal Navigation
+### 水平ナビゲーション
 
-* <kbd>Arrow Left</kbd> or <kbd>Arrow Right</kbd> - move to the adjacent cell on the left/right within the current row unaffected by the column layouts that are defined. If the current cell spans on more than one row, <kbd>Arrow Left</kbd> and <kbd>Arrow Right</kbd> should navigate to the first cell on the left and right with the same `rowStart`, unless you have navigated to some other adjacent cell before. The navigation stores the starting navigation cell and navigates to the cells with the same `rowStart` if possible.
-* <kbd>Ctrl</kbd> + <kbd>Arrow Left</kbd> (<kbd>HOME</kbd>) or <kbd>Ctrl</kbd> + <kbd>Arrow Right</kbd> (<kbd>END</kbd>) - navigate to the start or end of the row and select the cell with accordance to the starting navigation cell.
-
-
-### Vertical Navigation
-
-* <kbd>Arrow Up</kbd> or <kbd>Arrow Down</kbd> - move to the cell above/below in relation to a starting position and is unaffected by the rows. If the current cell spans on more than one column the next active cell will be selected with accordance to the starting navigation cell.
-* <kbd>Ctrl</kbd> + Arrow Up</kbd> or <kbd>Ctrl</kbd> + <kbd>Down</kbd> - Navigate and apply focus on the same column on the first or on the last row.
-* <kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>End</kbd> - Navigate to the first row and focus first cell or navigate to the last row and focus the last cell.
+* <Kbd>左矢印</kbd>または<kbd>右矢印</kbd>は、現在行内の左右に隣接するセルに移動します。定義されている列レイアウトの影響を受けません。現在のセルが複数の行にまたがる場合は、他の隣接するセルへ移動した場合を除き、<kbd>左矢印</kbd>と<kbd>右矢印</kbd>は、同じ `rowStart` で左右の最初のセルに移動します。ナビゲーションはナビゲーション開始セルを格納し、可能であれば同じ `rowStart` を持つセルに移動します。
+* <kbd>Ctrl</kbd> + <kbd>左矢印</kbd> (<kbd>HOME</kbd>) または <kbd>Ctrl</kbd> + <kbd>右矢印</kbd> (<kbd>END</kbd>) - 行の先頭または末尾に移動し、ナビゲーション開始セルに従ってセルを選択します。
 
 
-> [!Note]
-> Navigation through cells which span on multiple rows or columns is done with accordance to the starting navigation cell and will allow returning to the starting cell using the key for the opposite direction. The same approach is used when navigating through group rows.
+### 垂直ナビゲーション
+* <kbd>上矢印</kbd> または <kbd>下矢印</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
+* <kbd>Ctrl</kbd> + 上矢印</kbd>または<kbd>Ctrl</kbd> + <kbd>Down</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。 
+* <kbd>Ctrl</kbd> + <kbd>Home</kbd> または <kbd>Ctrl</kbd> + <kbd>End</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。
+
 
 > [!Note]
-> Selection and multi cell selection are working on layout, meaning that when a cell is active, its layout will be selected. Also all features of multiple selection like drag selection are applicable and will work per layout not per cell.
+> 複数の行または列にわたるセルを介したナビゲーションは、ナビゲーション開始セルに従って行われ、反対方向のキーを使用して開始セルに戻ることができます。グループ行を移動するときにも同じ方法が使用されます。
 
-### Custom Keyboard Navigation
+> [!Note]
+> 選択と複数セル選択はレイアウトで使用できます。つまり、セルがアクティブになると、そのレイアウトが選択されます。ドラッグ選択などの複数選択のすべての機能も適用可能であり、セルごとではなくレイアウトごとに機能します。
 
-The grid allows customizing the default navigation behavior when a certain key is pressed. Actions like `going to the next cell` or `cell below` could be handled easily with the powerful keyboard navigation API:
+### カスタム キーボード ナビゲーション
 
-- `GridKeydown` is exposed. The event will emit `IGridKeydownEventArgs`. This event is available only through the keyboard key combinations mentioned above, for all other key actions you can use `KeyDown` event.
-- `NavigateTo` - this method allows you to navigate to a position based on provided `RowIndex` and `VisibleColumnIndex`
+グリッドでは、特定のキーが押されたときのデフォルトのナビゲーション動作をカスタマイズできます。`隣りのセル`または`下のセルへ移動するような操作`は、キーボード ナビゲーション API を使用して簡単に処理できます。
 
-The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <kbd>Shift</kbd> + <kbd>Enter</kbd> keys, similar to the behavior observed in Excel.
+- `GridKeydown` が公開されています。イベントは `IGridKeydownEventArgs` を発生します。このイベントは、キーボードで上記のキー組み合わせを介してのみ使用できます。他のすべてのキー操作では、`KeyDown` イベントを使用できます。
+- `NavigateTo` - このメソッドを使用すると、提供された `RowIndex` と `VisibleColumnIndex` に基づいて位置に移動できます。
 
-### Demo
+以下のデモでは、Excel と同じように、<kbd>Enter</kbd> と <kbd>Shift</kbd> + <kbd>Enter</kbd> キーを使って追加のナビゲーションを使用します。
+
+### デモ
 
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-mrl-navigation"
            github-src="{ComponentSample}/keyboard-mrl-navigation"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
+           alt="{Platform} {ComponentTitle} 複数行レイアウト ナビゲーションの例">
 </code-view>
 
 <!-- Angular -->
 
-### Layout Configurator
+### レイアウトの構成
 
-Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
+列レイアウトを構成するときに、適切な `ColStart` および `ColEnd`、または `RowStart` および `RowEnd` を計算して設定するのが難しい場合があります。特に 1 つのレイアウトに多数の列がある場合などですが、適用時のプレビューを簡単に確認するためにコンフィギュレーターを使用できます。以下の操作が可能です。
 
-* Set number of rows for the whole configuration. All layouts must have the same amount of rows.
-* Add/Remove column layouts by clicking the `Add Layout` chip or reordering them by dragging a layout chip left/right.
-* Set specific settings for each layout as number of columns and how wide they will be. The setting refer to the currently selected layout.
-* Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
-* Set columns in the preview by dragging a column chip in the place your will want it to be.
-* Add/Remove new columns by using the `Add Column` chip.
+* 設定全体の行数を設定します。すべてのレイアウトは同じ行数である必要があります。
+* `[レイアウトの追加]` チップをクリックするか、レイアウトチップを左右にドラッグしてソートします。
+* 各レイアウトに特定の設定を列数と幅に合わせて設定します。設定は現在選択されているレイアウトを参照します。
+* レイアウト プレビューで列セルのサイズを変更して、より多くの列/行にまたがるようにしたり、`[削除] `ボタンを使用して列セルを消去したりできます。
+* プレビューで列チップをドラッグして列を設定します。
+* `[列の追加]` チップを使用して新しい列を追加/削除します。
 
-* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
+* [`NgForOf`](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-By default we have set the same columns as our previous sample, but it can be cleared and configured to match your desired configuration.
+デフォルトでは、前のサンプルと同じ列を設定していますが、目的の設定に合わせて消去して設定することもできます。
 
 <!-- NOTE this sample is differed -->
 
@@ -163,22 +162,22 @@ By default we have set the same columns as our previous sample, but it can be cl
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
            github-src="{ComponentSample}/multi-row-layout-configuration"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
+           alt="{Platform} {ComponentTitle} 複数行レイアウト構成の例">
 </code-view>
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-The `{ComponentName}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
+`{ComponentName}` を使用すると、[Ignite UI for Angular テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。 
 
-In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
+以下は、グリッドの複数行レイアウト スタイルをカスタマイズする手順です。
 
-### Importing Global Theme
+### グローバル テーマのインポート
 
-To begin the customization of the Multi-row Layout feature, you need to import the `Index` file, where all styling functions and mixins are located.
+複数行レイアウト機能のカスタマイズは、すべてのスタイリング機能とミックスインが配置されている `Index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-angular/theming" as *;
@@ -187,9 +186,9 @@ To begin the customization of the Multi-row Layout feature, you need to import t
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-### Defining Custom Theme
+### カスタム テーマの定義
 
-Next, create a new theme, that extends the `GridTheme` and accepts the parameters, required to customize the feature layout as desired.
+次に、`GridTheme` を拡張し、必要に応じて機能レイアウトをカスタマイズするために必要なパラメーターを受け取る新しいテーマを作成します。
 
 ```scss
 $custom-theme: grid-theme(
@@ -204,11 +203,11 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Defining a Custom Color Palette
+### カスタム カラー パレットの定義
 
-In the approach, that was described above, the color values were hardcoded. Alternatively, you can achieve greater flexibility, using the `Palette` and `Color` functions.
+上記で説明したアプローチでは、色の値がハード コーディングされていました。または `Palette` および `Color` 関数を使用して、柔軟性を高めることができます。 
 
-`Palette` generates a color palette, based on provided primary and secondary colors.
+`Palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
  ```scss
 $black-color: #494949;
@@ -220,7 +219,7 @@ $custom-palette: palette(
 );
 ```
 
-After a custom palette has been generated, the `Color` function can be used to obtain different varieties of the primary and the secondary colors.
+カスタム パレットが生成された後、`Color` 関数を使用して、さまざまな種類の原色と二次色を取得できます。
 
 ```scss
 $custom-theme: grid-theme(
@@ -235,11 +234,11 @@ $custom-theme: grid-theme(
 );
 ```
 
-### Defining Custom Schemas
+### カスタム スキーマの定義
 
-You can go even further and build flexible structure that has all the benefits of a [**schema**](../themes/sass/schemas.md). The **schema** is the recipe of a theme.
+[**スキーマ**](../themes/sass/schemas.md)のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 
-Extend one of the two predefined schemas, that are provided for every component. In our case, we would use `$_light_grid`.
+すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 
 ```scss
 $custom-grid-schema: extend($_light-grid,(
@@ -254,7 +253,7 @@ $custom-grid-schema: extend($_light-grid,(
 ));
 ```
 
-In order for the custom schema to be applied, either `Light`, or `Dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
+カスタム スキーマを適用するには、`Light` グローバルまたは `Dark` グローバルを拡張する必要があります。プロセス全体が実際にコンポーネントにカスタム スキーマを提供し、その後、それぞれのコンポーネントテーマに追加します。
 
 ```scss
 $my-custom-schema: extend($light-schema, (
@@ -266,24 +265,24 @@ $my-custom-schema: extend($light-schema, (
 );
 ```
 
-### Applying the Custom Theme
+### カスタム テーマの適用
 
-The easiest way to apply your theme is with a `sass` `@include` statement in the global styles file:
+テーマを適用する最も簡単な方法は、グローバル スタイル ファイルに `sass` `@include` ステートメントを使用することです。
 
 ```scss
 @include grid($custom-theme);
 ```
 
-### Scoped Component Theme
+### スコープ コンポーネント テーマ
 
-In order for the custom theme do affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
+カスタム テーマが特定のコンポーネントのみに影響するように、定義したすべてのスタイルをグローバル スタイル ファイルからカスタム コンポーネントのスタイルファイルに移動できます (`index` ファイルのインポートを含む)。
 
-This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
+このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
- >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
+ >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
 :host {
@@ -293,35 +292,35 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 }
 ```
 
-### Demo
+### デモ
 
 <code-view style="height:755px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
            github-src="{ComponentSample}/multi-row-layout-styling"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example">
+           alt="{Platform} {ComponentTitle} 複数行レイアウトのスタイル設定の例">
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `{ComponentName}`
 * `ColumnLayout`
 * `Column`
 
-## Additional Resources
+## その他のリソース
 
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [ソート](sorting.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

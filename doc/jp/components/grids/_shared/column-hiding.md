@@ -155,13 +155,13 @@ public ngAfterViewInit() {
 ```typescript
 // app.module.ts
 
-...
+//...
 import {
-    ...
+    //...
     IgxColumnActionsModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxColumnActionsModule],
 })
 export class AppModule {}
@@ -238,11 +238,11 @@ export class AppModule {}
 このオプションにラジオ ボタンを追加します。[**IgxRadio**](../radio-button.md) モジュールを追加します。
 
 ```typescript
-import {    
+import {
     IgxRadioModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxRadioModule]
 })
 export class AppModule {}
@@ -272,7 +272,7 @@ export class AppModule {}
 <div class="gridContainer">
     <{ComponentSelector}>
         <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>        
+        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
     </{ComponentSelector}>
 </div>
 ```
@@ -474,7 +474,7 @@ $custom-button: button-theme(
 
 <!-- Angular -->
 スタイル:
-* `{ComponentName} コンポーネント`
+* `{ComponentName}Component`
 * `Radio`
 <!-- end: Angular -->
 

@@ -1,5 +1,5 @@
 ---
-title:  Row actions in {Platform} {ComponentTitle} - Infragistics
+title:  {Platform} {ComponentTitle} の行操作 - インフラジスティックス
 _description: {ComponentName} は、ActionStrip を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,14 +7,14 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# Row Actions in {Platform} {ComponentTitle}
+# {Platform} {ComponentTitle} の行操作
 
-The `{ComponentName}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、`ActionStrip` を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。アクション ストリップ コンポーネントは、これらの操作用に事前定義された UI コントロールをホストできます。
 
-## Usage
+## 使用方法
 
 <!-- Angular -->
-The first step is to import the **IgxActionStripModule** in our **app.module.ts** file:
+最初の手順は、**app.module.ts** ファイルに **IgxActionStripModule** をインポートすることです。
 
 ```typescript
 // app.module.ts
@@ -26,13 +26,13 @@ import { IgxActionStripModule } from 'igniteui-angular';
 ```
 <!-- end: Angular -->
 
-The predefined actions UI components are:
+事前定義された操作 (actions) UI コンポーネントは次のとおりです:
 
-- `GridEditingActions` - includes functionality and UI specifically designed for the `{ComponentName}` editing. It allows you to quickly toggle edit mode for cells or rows, depending on the `RowEditable` option and row deletion of the `{ComponentName}`.
+- `GridEditingActions` - `{ComponentName}` 編集専用に設計された機能と UI を含みます。`RowEditable` オプションと `{ComponentName}` の行削除に応じて、セルまたは行の編集モードをすばやく切り替えることができます。
 
-- `GridPinningActions` - includes functionality and UI specifically designed for the `{ComponentName}` row pinning. It allows you to quickly pin rows and navigate between pinned rows and their disabled counterparts.
+- `GridPinningActions` - `{ComponentName}` ピン固定専用に設計された機能と UI を含みます。行をすばやくピン固定し、ピン固定された行とその無効な行の間を移動できます。
 
-They are added inside the `{ComponentName}` and this is all needed to have an `ActionStrip` providing default interactions.
+これらは `{ComponentName}` 内に追加され、デフォルトのインタラクションを提供する `ActionStrip` プを持つために必要です。
 
 ```html
 <{ComponentSelector} [data]="data" [rowEditable]="true" [primaryKey]="'ID'">
@@ -60,11 +60,11 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
     </{ComponentSelector}>
 ```
 
->Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
+>注: `ActionStripComponent` が `{ComponentName}` の子コンポーネントの場合、行をホバーすると UI が自動的に表示されます。
 
-## Custom Implementation
+## カスタムの実装
 
-These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
+これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStripComponent` を使用する場合、`igx-icon` でボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStripComponent` に挿入します。
 
 ```html
 <{ComponentSelector}>
@@ -103,22 +103,22 @@ These components expose templates giving flexibility for customization. For inst
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
            github-src="{ComponentSample}/action-strip"
-           alt="{Platform} {ComponentTitle} Action Strip Example" >
+           alt="{Platform} {ComponentTitle} アクション ストリップの例">
 </code-view>
 
 <!-- Angular -->
 
->Note: The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
+>注: 事前定義された操作は `GridActionsBaseDirective` を継承します。カスタム グリッド アクション コンポーネントを作成する場合、`GridActionsBaseDirective` も継承する必要があります。
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
-For more detailed information regarding the Action Strip API, refer to the following links:
+アクション ストリップの API に関する詳細な情報は、以下のリンクのトピックを参照してください。
 
 * `ActionStripComponent`
 
-Additional components and/or directives that can be used within the Action Strip:
+アクション ストリップで使用できるその他のコンポーネントとディレクティブ:
 
 <!-- Angular -->
 
@@ -130,7 +130,7 @@ Additional components and/or directives that can be used within the Action Strip
 * `GridPinningActionsComponent`
 * `GridEditingActionsComponent`
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
