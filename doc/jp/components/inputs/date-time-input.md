@@ -228,7 +228,7 @@ input.spinDelta = spinDelta;
 
 ## スタイル設定
 
-`DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#styling)を参照してください。
+`DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
 
 <!-- WebComponents -->
 

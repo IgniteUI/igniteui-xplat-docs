@@ -70,16 +70,14 @@ IgrTreeModule.register();
 ```
 <!-- end: Blazor -->
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbTreeModule),
-  typeof(IgbTreeItemModule)
+    typeof(IgbTreeModule),
+    typeof(IgbTreeItemModule)
 );
 ```
-
 
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
 
