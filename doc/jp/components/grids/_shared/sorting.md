@@ -277,7 +277,7 @@ $custom-theme: grid-theme(
 ```
 
 >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+ >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
 :host {
@@ -371,7 +371,7 @@ $custom-theme: grid-theme(
 * [ページング](paging.md)
 * [ソート](sorting.md)
 * [集計](summaries.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)

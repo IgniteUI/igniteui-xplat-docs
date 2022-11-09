@@ -123,9 +123,9 @@ public bool exactMatch = false;
 
 `FindNext` と `FindPrev` メソッドの両方に 3 つの引数があります。
 
-- - `text`: **string** (検索テキスト)
-- - (オプション) `caseSensitive`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
-- - (オプション) `exactMatch`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
+- `Text`: **string** (検索テキスト)
+- (オプション) `CaseSensitive`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
+- (オプション) `ExactMatch`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
 
 完全一致で検索した場合、検索 API は `SearchText` と完全一致 (大文字小文字の区別を含む) するセル値のみ結果として強調表示します。たとえば、文字列 'software' と 'Software' は大文字小文字を区別しない場合は完全一致となります。
 
@@ -205,7 +205,7 @@ public bool exactMatch = false;
 
 <!-- Angular -->
 
-ユーザーは矢印キーと <kbd>Enter キーで結果を移動できます。</kbd> `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
+ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。 `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- end: Angular -->
 
@@ -228,7 +228,7 @@ public searchKeyDown(ev) {
 
 <!-- Blazor -->
 
-ユーザーは<kbd>Enter キーで結果を移動できます。</kbd> これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。</kbd>
+ユーザーは<kbd>Enter</kbd> キーで結果を移動できます。 これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift</kbd> キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。
 
 <!-- end: Blazor -->
 
@@ -564,7 +564,7 @@ public clearSearch() {
 * [ページング](paging.md)
 * [ソート](sorting.md)
 * [集計](summaries.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)

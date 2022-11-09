@@ -226,7 +226,7 @@ export class PasteHandler {
 ## その他のリソース
 <div class="divider--half"></div>
 
-* [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングや並べ替えなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
+* [Excel エクスポーター](export-excel.md) - Excel エクスポーター サービスを使用して、グリッドから Excel にデータをエクスポートします。選択したデータのみをグリッドからエクスポートするオプションもあります。エクスポート機能は、ExcelExporterService クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式はフィルタリングやソートなどの機能が使用でき、ExcelExporterService の export メソッドを呼び出して最初の引数として グリッド コンポーネントを渡します。
 
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。

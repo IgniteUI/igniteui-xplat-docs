@@ -512,7 +512,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 <!-- Angular -->
 ## スタイル設定
 
-並べ替え動作のスタイル設定は、すべてのテーマ関数とコンポーネント mixins が存在する `index` ファイルをインポートする必要があります。
+ソート動作のスタイル設定は、すべてのテーマ関数とコンポーネント mixins が存在する `index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-angular/theming" as *;

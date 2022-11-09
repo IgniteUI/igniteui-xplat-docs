@@ -229,7 +229,7 @@ export interface IGroupByRecord {
 </code-view>
 
 
-このサンプルでは、さまざまな日付条件のカスタム並べ替えストラテジを定義しています。
+このサンプルでは、さまざまな日付条件のカスタム ソートストラテジを定義しています。
 各カスタム ストラテジ、ベースの `DefaultSortingStrategy` を拡張し、`CompareValues` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
 
 ```typescript

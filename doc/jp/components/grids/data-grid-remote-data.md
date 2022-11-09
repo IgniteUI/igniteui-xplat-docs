@@ -6,17 +6,17 @@ mentionedTypes: ['Grid']
 namespace: Infragistics.Controls
 _language: ja
 ---
-# {Platform} グリッド仮想データのバインド
+# {Platform} グリッド仮想データのバインディン
 
 {ProductName} Data Table / Data Grid は、1 行のコードでリモート データ ソースへのデータ バインドをサポートします。{Platform} データ テーブルの仮想データ ソースを使用すると、リモート URI と返される Odata エンティティで {Platform} グリッドを設定するだけで、残りの作業は {Platform} グリッドが行います。
 
-## {Platform} グリッド仮想データのバインドの例
+## {Platform} グリッド仮想データのバインディンの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           alt="{Platform} グリッド仮想データのバインドの例"
+           alt="{Platform} グリッド仮想データのバインディンの例"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>
 

@@ -31,7 +31,7 @@ _language: ja
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
-    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#restoring-columns)セクションを参照してください。
+    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -43,7 +43,7 @@ _language: ja
 * `フィルタリング`
 * `高度なフィルタリング`
 * `ページング`
-* `セル選択`
+* `セルの選択`
 * `行の選択`
 * `列の選択`
 * `行のピン固定`
@@ -52,7 +52,7 @@ _language: ja
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
-    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#restoring-columns)セクションを参照してください。
+    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#列の復元)セクションを参照してください。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -60,20 +60,20 @@ _language: ja
 
 * `ソート`
 * `フィルタリング`
-* `セル選択`
+* `セルの選択`
 * `行の選択`
 * `列の選択`
 * `展開`
 * `ピボット構成`
     * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
-    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#restoring-pivot-configuration)」セクションを参照してください。
-    * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#restoring-pivot-strategies)」セクションを参照してください。
+    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
+    * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。
 
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-> `GridState` ディレクティブはテンプレートを処理しません。列テンプレートの復元方法については、「[列の復元](state-persistence.md#restoring-columns)」セクションを参照してください。
+> `GridState` ディレクティブはテンプレートを処理しません。列テンプレートの復元方法については、「[列の復元](state-persistence.md#列の復元)」セクションを参照してください。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -159,7 +159,7 @@ Add blazor snippet for working with the sessionStorage
 
 ## 列の復元
 
-`GridState` はデフォルトで列テンプレート、列フォーマッタなどを保持しません (制限を[参照](state-persistence.md#limitations)))。これらの復元は、アプリケーション レベルのコードで実現できます。テンプレート化された列でこれを行う方法を示します。
+`GridState` はデフォルトで列テンプレート、列フォーマッタなどを保持しません ([制限](state-persistence.md#制限)を参照))。これらの復元は、アプリケーション レベルのコードで実現できます。テンプレート化された列でこれを行う方法を示します。
 
 1. テンプレート参照変数 (以下の例では `#activeTemplate`) を定義し、`ColumnInit` イベントにイベント ハンドラーを割り当てます。
 
@@ -241,7 +241,7 @@ Add blazor handler for bodyTemplate
 
 ## ピボット構成の復元
 
-`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません (制限を[参照](state-persistence.md#limitations))。これらの復元は、アプリケーション レベルのコードで実現できます。{ComponentName} は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。Let's show how to do this:
+`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。{ComponentName} は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
 
 * `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 
@@ -355,7 +355,7 @@ setState snippet
 
 ## ピボット ストラテジの復元
 
-`GridState` は、デフォルトで は ([制限](state-persistence.md#limitations)を参照) リモート ピボット操作もカスタム ディメンション ストラテジも保持しません (詳細については、[Pivot Grid リモート操作](pivot-grid-custom.md)のサンプルを参照してください)。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
+`GridState` は、デフォルトで は ([制限](state-persistence.md#制限)を参照) リモート ピボット操作もカスタム ディメンション ストラテジも保持しません (詳細については、[Pivot Grid リモート操作](pivot-grid-custom.md)のサンプルを参照してください)。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
 
 > `StateParsed` は、文字列引数で `SetState` を使用している場合にのみ発行します。
 

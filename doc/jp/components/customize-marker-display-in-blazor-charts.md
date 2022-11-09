@@ -33,8 +33,8 @@ mentionedTypes: []
 
 ```razor
 public record SampleDataType(
-    string Name, 
-    double XValue, 
+    string Name,
+    double XValue,
     double YValue,
     double Volume, // 👈 このプロパティをマーカーの大きさに、
     System.Drawing.Color Color // 👈 このプロパティを塗りつぶし色として参照
@@ -137,7 +137,7 @@ function customMarkerTemplateFunc() {
 
 function customMarkerTemplateFunc() {
     return {
-        ... 
+        ...
         render: function(renderInfo) {
             // 引数に渡された renderInfo に描画のための座標関係の情報がつまっているので、
             // これを取り出しておく
@@ -153,9 +153,9 @@ function customMarkerTemplateFunc() {
             // (measure メソッドで算定した大きさで、真円のマーカーを描画)
             const ctx = renderInfo.context;
             ctx.beginPath();
-            ctx.fillStyle = `rgba (${color.R}, ${color.G}, ${color.B}, ${color.A})`; 
-            ctx.ellipse(cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180); 
-            ctx.fill(); 
+            ctx.fillStyle = `rgba (${color.R}, ${color.G}, ${color.B}, ${color.A})`;
+            ctx.ellipse(cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180);
+            ctx.fill();
         }
     }
 }
@@ -208,7 +208,7 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 <!-- Ignite UI for Blazor の JavaScript よりあとで、
      マーカー表示のカスタム描画の JavaScript プログラムを読み込み --> 
 
-<script src="customMarkerTemplateFunc.js"></script>  
+<script src="customMarkerTemplateFunc.js"></script>
 ... 
 ```
 
@@ -220,12 +220,12 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 ```razor
 @* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
-<IgbDataChart Height="320px" Width="320px">  
+<IgbDataChart Height="320px" Width="320px">
     ... 
     <IgbScatterSeries ...
         ...
         MarkerTemplateScript="customMarkerTemplateFunc"/>
-</IgbDataChart> 
+</IgbDataChart>
 ```
 これで、バインドした項目のプロパティに応じた大きさと塗りつぶし色のマーカーで、散布図が表示されるようになりました。
 

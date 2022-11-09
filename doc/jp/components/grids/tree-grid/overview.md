@@ -83,7 +83,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 更に自動列生成を無効にしてデータ オブジェクトの実際のプロパティとの一致を手動で定義します。**Employees** コレクションが階層で自動的に使用されるため、列定義に含める必要はありません。
 
 `rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にします。
-最初の列に集計機能、各列にはフィルタリング、並べ替え、編集、サイズ変更機能を有効にします。
+最初の列に集計機能、各列にはフィルタリング、ソート、編集、サイズ変更機能を有効にします。
 
 最後に、`GridToolbarComponent`、`GridToolbarHidingComponent`、`GridToolbarPinningComponent`、`GridToolbarExporterComponent` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
 

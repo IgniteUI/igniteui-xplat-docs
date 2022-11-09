@@ -11,7 +11,7 @@ _language: ja
 
 `{ComponentName}` はサイズ変更する方法が多数あり、ユーザーのさまざまな状況に対応できます。方法は簡単なものから複雑なものまでさまざまです。それぞれを取り上げて、より詳しく説明します。パーセンテージを使用する場合など、いくつかの違いがあるため、`Width` と `Height` は別々に設定します。
 
-`{ComponentName}` の境界線とパディングのサイズに関しては、幅/高さのサイズ計算、または[ボーダー ボックス](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)のサイジングとも呼ばれます。すべてのシナリオに適用されます。
+`{ComponentName}` の境界線とパディングのサイズに関しては、幅/高さのサイズ計算、または[ボーダー ボックス](https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing)のサイジングとも呼ばれます。すべてのシナリオに適用されます。
 
 > [!Note]
 > ユーザーがボーダー ボックスのサイズ変更をオーバーライドした場合に正しい `{ComponentName}` になるかどうかは保証できません。
@@ -55,7 +55,7 @@ _language: ja
 
 <img src="../../../images/grid_sizing/width-cols-scrollbar-v2.jpg" style="width: 80%"/>
 
-* グリッドに親要素が場合は、スクロールバーをレンダリングするかどうかは親のスタイルに依存します。グリッド自体に関連する他のすべてはまだ保持されます。親要素の幅がグリッドの幅よりも小さく、オーバーフロースタイルが`オート` または `スクロール`に設定されている場合、スクロールバーはネイティブにレンダリングされます。たとえば、親の `width` が `1000px` に設定されていて、`{ComponentName}` `width` がまだ `1200px` である場合、以下の図のようになります。
+* グリッドに親要素が場合は、スクロールバーをレンダリングするかどうかは親のスタイルに依存します。グリッド自体に関連する他のすべてはまだ保持されます。親要素の幅がグリッドの幅よりも小さく、オーバーフロースタイルが `auto` または `scroll` に設定されている場合、スクロールバーはネイティブにレンダリングされます。たとえば、親の `width` が `1000px` に設定されていて、`{ComponentName}` `width` がまだ `1200px` である場合、以下の図のようになります。
 
 <img src="../../../images/grid_sizing/width-cols-scroll-parent-noscroll-v2.jpg" style="width: 80%"/>
 <img src="../../../images/grid_sizing/width-cols-scroll-parent-scroll-v2.jpg" style="width: 80%"/>
@@ -97,7 +97,7 @@ _language: ja
 
 <img src="../../../images/grid_sizing/height-null-24rows-v2.jpg" style="width: 80%"/>
 
-* 親要素に定義された `Height` がある場合、グリッドに影響は受けずにすべての行を描画します。親の `Height` が `650px` であると仮定します。`overflow` が `auto` または`scroll` に設定されている場合、グリッドは影響を受けずに垂直スクロールバーがレンダリングされます。
+* 親要素に定義された `Height` がある場合、グリッドに影響は受けずにすべての行を描画します。親の `Height` が `650px` であると仮定します。`overflow` が `auto` または `scroll` に設定されている場合、グリッドは影響を受けずに垂直スクロールバーがレンダリングされます。
 
 <img src="../../../images/grid_sizing/height-null-24rows-parent-noscroll-v2.jpg" style="width: 80%"/>
 <img src="../../../images/grid_sizing/height-null-24rows-parent-scroll-v2.jpg" style="width: 80%"/>
