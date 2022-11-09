@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Search Filter - {ProductName}
+title: {Platform} {ComponentTitle} 検索フィルター - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,26 +7,26 @@ sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Search Filter
+# {Platform} {ComponentTitle} 検索フィルター
 
-The {Platform} `{ComponentName}` search enables the process of finding values in the collection of data. We make it easier to setup this functionality and it can be implemented with search input box, buttons, keyboard navigation and other useful features for an even better user experience. While browsers natively provide content search functionality, most of the time the `{ComponentName}` virtualizes its columns and rows that are out of view. In these cases, the native grid search is unable to search data in the virtualized cells, since they are not part of the DOM. We have extended the {ProductName} Material table-based grid with a **search API** that allows you to search through the **virtualized content** of the `{ComponentName}`.
+{Platform} `{ComponentName}` により、データのコレクション内の値を見つけるプロセスが可能になります。この機能のセットアップが簡単になり、検索入力ボックス、ボタン、キーボード ナビゲーション、その他の便利な機能を使用して実装できるため、ユーザー エクスペリエンスがさらに向上します。ブラウザーにはネイティブなコンテンツ検索機能がありますが、ほとんどの場合で `{ComponentName}` は表示範囲外の行列を仮想化します。そのため、ネイティブ グリッド検索は DOM の一部でないため仮想化セルでデータを検索できません。`{ComponentName}` では、{ProductName} Material テーブル ベースのグリッドの拡張により、**検索 API** を使用した**仮想コンテンツ**の検索が可能です。
 
-## {Platform} Search Example
+## {Platform} 検索の例
 
-The following example represents `{ComponentName}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
+次の例は、すべての列と行を検索できる検索入力ボックスと、各列の特定のフィルタリング オプションを備えた `{ComponentName}` を表しています。
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
-           alt="{Platform} {ComponentTitle} Search Example">
+           alt="{Platform} {ComponentTitle} 検索の例">
 </code-view>
 
 
-## {Platform} Search Usage
+## {Platform} 検索の使用
 
-### {ComponentTitle} Setup
+### {ComponentTitle} のセットアップ
 
-Let's start by creating our grid and binding it to our data. We will also add some custom styles for the components we will be using!
+グリッドを作成してからデータをバインドします。コンポーネントにカスタム スタイルも追加しました。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -97,7 +97,7 @@ TODO TREEGRID SNIPPET
 }
 ```
 
-Great, and now let's prepare for the search API of our `{ComponentName}`! We can create a few properties, which can be used for storing the currently searched text and whether the search is case sensitive and/or by an exact match.
+`{ComponentName}` の検索 API を使用します。検索したテキストの保存、また大文字小文字の区別や完全一致 (またはそのいずれか) に使用するプロパティを作成できます。
 
 ```typescript
 public searchText: string = '';
@@ -111,25 +111,25 @@ public bool caseSensitive = false;
 public bool exactMatch = false;
 ```
 
-### {Platform} Search Box Input
+### {Platform} 検索ボックス入力
 
 <!-- Angular -->
-Now let's create our search input! By binding our `SearchText` as ngModel to our newly created input and subscribe to the ngModelChange event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+検索入力を作成します。`SearchText` を ngModel として新しく作成した入力へバインドして ngModelChange イベントにサブスクライブします。ユーザーによる各 `SearchText` のすべての変更を検出できます。これによって `{ComponentName}` の `FindNext` と `FindPrev` メソッドを使用して `SearchText` のすべての出現を強調し、次へまたは前 (呼び出すメソッドに基づいて) へスクロールできます。
 <!-- end: Angular -->
 
 <!-- Blazor -->
-Now let's create our search input! By binding our `SearchText` to the `Value` property to our newly created input and subscribe to the `ValueChanging` event, we can detect every single `SearchText` modification by the user. This will allow us to use the `{ComponentName}`'s `FindNext` and `FindPrev` methods to highlight all the occurrences of the `SearchText` and scroll to the next/previous one (depending on which method we have invoked).
+検索入力を作成します。新しく作成した入力の `Value` プロパティに `SearchText` をバインドし、`ValueChanging` イベントをサブスクライブすることで、ユーザーによるすべての `SearchText` の変更を検出できます。これによって `{ComponentName}` の `FindNext` と `FindPrev` メソッドを使用して `SearchText` のすべての出現を強調し、次へまたは前 (呼び出すメソッドに基づいて) へスクロールできます。
 <!-- end: Blazor -->
 
-Both the `FindNext` and the `FindPrev` methods have three arguments:
+`FindNext` と `FindPrev` メソッドの両方に 3 つの引数があります。
 
-- `Text`: **string** (the text we are searching for)
-- (optional) `CaseSensitive`: **boolean** (should the search be case sensitive or not, default value is false)
-- (optional) `ExactMatch`: **boolean** (should the search be by an exact match or not, default value is false)
+- - `text`: **string** (検索テキスト)
+- - (オプション) `caseSensitive`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
+- - (オプション) `exactMatch`: **boolean** (検索で完全一致するかどうか、デフォルト値は false)。
 
-When searching by an exact match, the search API will highlight as results only the cell values that match entirely the `SearchText` by taking the case sensitivity into account as well. For example the strings '_software_' and '_Software_' are an exact match with a disregard for the case sensitivity.
+完全一致で検索した場合、検索 API は `SearchText` と完全一致 (大文字小文字の区別を含む) するセル値のみ結果として強調表示します。たとえば、文字列 'software' と 'Software' は大文字小文字を区別しない場合は完全一致となります。
 
-The methods from above return a **number** value (the number of times the `{ComponentName}` contains the given string).
+上記のメソッドは **number** 値を返します (`{ComponentName}` で指定した文字列が含まれる回数)。
 
 ```html
 <!--searchgrid.component.html-->
@@ -143,12 +143,12 @@ The methods from above return a **number** value (the number of times the `{Comp
 
 <!-- Angular -->
 
-### Display Results Count
+### 検索結果の個数を表示
 
-Let's also display the position of the current occurrence, along with the total results count! We can do this by using the grid's `LastSearchInfo` property. This property is automatically updated when using the **find** methods.
+検索で見つかった現在の場所と総個数を示します。グリッドの `LastSearchInfo` プロパティを使用します。このプロパティは、**find** メソッド使用時に自動的に更新されます。
 
-- The grid's `LastSearchInfo.MatchInfoCache.Length` value will give us the total results count.
-- The grid's `LastSearchInfo.ActiveMatchIndex` value will give us the index position of the current occurrence (match).
+- グリッドの `LastSearchInfo.MatchInfoCache.Length` 値は検索で見つかった個数です。
+- グリッドの `LastSearchInfo.ActiveMatchIndex` 値は、現在の一致 (出現) のインデックス位置です。
 
 ```html
 <div class="resultsText" *ngIf="@@igObjectRef.lastSearchInfo">
@@ -169,9 +169,9 @@ Let's also display the position of the current occurrence, along with the total 
 
 <!-- end: Blazor -->
 
-### Add Search Buttons
+### 検索ボタンの追加
 
-In order to freely search and navigate among our search results, let's create a couple of buttons by invoking the `FindNext` and the `FindPrev` methods inside the buttons' respective click event handlers.
+ボタンの各クリック イベント ハンドラー内で `FindNext` と `FindPrev` メソッドを呼び出して検索や検索結果をナビゲーションするためのボタンを作成します。
 
 ```html
 <div class="searchButtons">
@@ -201,11 +201,11 @@ In order to freely search and navigate among our search results, let's create a 
 }
 ```
 
-### Add Keyboard Search
+### キーボード検索の追加
 
 <!-- Angular -->
 
-We can also allow the users to navigate the results by using the keyboard's arrow keys and the <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search input by preventing the default caret movement of the input with the `PreventDefault` method and invoke the `FindNext`/`FindPrev` methods depending on which key the user has pressed.
+ユーザーは矢印キーと <kbd>Enter キーで結果を移動できます。</kbd> `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- end: Angular -->
 
@@ -228,7 +228,7 @@ public searchKeyDown(ev) {
 
 <!-- Blazor -->
 
-We can also allow the users to navigate the results by using the keyboard's <kbd>Enter</kbd> key. In order to achieve this, we can handle the **keydown** event of our search and invoke the `FindNext`/`FindPrev` methods depending on if the user has pressed <kbd>Shift</kbd> as well or not.
+ユーザーは<kbd>Enter キーで結果を移動できます。</kbd> これを実現するために、検索の **keydown** イベントを処理し、ユーザーが <kbd>Shift キーを押したかどうかに応じて `FindNext`/`FindPrev` メソッドを呼び出すことができます。</kbd>
 
 <!-- end: Blazor -->
 
@@ -247,11 +247,11 @@ We can also allow the users to navigate the results by using the keyboard's <kbd
 }
 ```
 
-### Case Sensitive and Exact Match
+### 大文字と小文字の区別と完全一致
 
 <!-- Angular -->
 
-Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple checkbox inputs by binding our `CaseSensitive` and `ExactMatch` properties to the inputs' `Checked` properties respectively and handle their `Change` events by toggling our properties and invoking the `FindNext` method.
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、`CaseSensitive` プロパティと `ExactMatch` プロパティを入力の `Checked` プロパティにそれぞれバインドすることで単純なチェックボックス入力を使用し、プロパティを切り替えて `FindNext` メソッドを呼び出すことで `Change` イベントを処理できます。
 
 <!-- end: Angular -->
 
@@ -277,7 +277,7 @@ public updateExactSearch() {
 
 <!-- Blazor -->
 
-Now let's allow the user to choose whether the search should be case sensitive and/or by an exact match. For this purpose we can use simple selectable `Chips` and bind to the `SelectedChanged` event to determine when the user interacts with them.
+次に完全一致の検索で大文字と小文字を区別するかどうかをユーザーが選択できるようにします。この目的のために、単純な選択可能な `Chips` を使用し、`SelectedChanged` イベントにバインドして、ユーザーがいつチップを操作したかを判断できます。
 
 <!-- end: Blazor -->
 
@@ -302,17 +302,17 @@ Now let's allow the user to choose whether the search should be case sensitive a
 }
 ```
 
-### Persistence
+### 保持
 
-What if we would like to filter and sort our `{ComponentName}` or even to add and remove records? After such operations, the highlights of our current search automatically update and persist over any text that matches the `SearchText`! Furthermore, the search will work with paging and will persist the highlights through changes of the `{ComponentName}`'s `PerPage` property.
+`{ComponentName}` のフィルターやソート、レコードの追加や削除をする場合を想定します。そのような処理の後、現在の検索が自動的に更新されて `SearchText` に一致するテキストが保持されます。更に検索がページングで動作し、`{ComponentName}` の `PerPage` プロパティの変更時も強調表示が保持されます。
 
-### Adding icons
+### アイコンの追加
 
-By using some of our other components, we can create an enriched user interface and improve the overall design of our entire search bar! We can have a nice search or delete icon on the left of the search input, a couple of chips for our search options and some material design icons combined with nice ripple styled buttons for our navigation on the right. We can wrap these components inside an input group for a more refined design.
+その他のコンポーネントを使用するためにユーザー インターフェイスを作成し、検索バー全体のデザインを向上します。検索入力の左側に検索または削除アイコン、検索オプションのチップ、右側にはマテリアル デザイン アイコンと Ripple スタイルのボタンを組み合わせたナビゲーションを表示できます。入力グループ内のコンポーネントをラップしてより洗練されたデザインにすることができます。
 
 <!-- Angular -->
 
-To do this, let's go and grab the [**InputGroup**](../input-group.md), [**Icon**](../icon.md),  [**Ripple**](../ripple.md), [**Button**](../button.md) and the [**Chip**](../chip.md) modules.
+[**InputGroup**](../input-group.md)、[**Icon**](../icon.md)、[**Ripple**](../ripple.md)、[**Button**](../button.md)、[**Chip**](../chip.md) のモジュールを使用します。
 
 <!-- end: Angular -->
 
@@ -334,7 +334,7 @@ export class AppModule {}
 
 <!-- Blazor -->
 
-To do this, let's go and grab the `Input`, `Icon`, `IconButton` and the `Chip` modules.
+`Input`、`Icon`、`IconButton`、`Chip` のモジュールを使用します。
 
 <!-- end: Blazor -->
 
@@ -357,11 +357,11 @@ builder.Services.AddIgniteUIBlazor(
 }
 ```
 
-Finally, let's update our template with the new components!
+テンプレートを新しいコンポーネントで更新します。
 
 <!-- Angular -->
 
-We will wrap all of our components inside an [InputGroup](../input-group.md). On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+[InputGroup](../input-group.md) 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
 
 <!-- end: Angular -->
 
@@ -390,7 +390,7 @@ public clearSearch() {
 
 <!-- Blazor -->
 
-We will wrap all of our components inside an `Input`. On the left we will toggle between a search and a delete/clear icon (depending on whether the search input is empty or not). In the center, we will position the input itself. In addition, whenever the delete icon is clicked, we will update our `SearchText` and invoke the `{ComponentName}`'s `ClearSearch` method to clear the highlights.
+`Input` 内のすべてのコンポーネントをラップします。左側で検索と 削除/クリア アイコンを切り替えます (検索入力が空かどうかに基づきます)。中央に入力を配置します。更に削除アイコンがクリックされたときに `SearchText` を更新し、`{ComponentName}` の `ClearSearch` メソッドを呼び出して強調表示をクリアします。
 
 <!-- end: Blazor -->
 
@@ -454,11 +454,11 @@ We will wrap all of our components inside an `Input`. On the left we will toggle
 }
 ```
 
-On the right in our input group, let's create three separate containers with the following purposes:
+右側の入力グループに以下の目的で別のコンテナーを作成します。
 
 <!-- Angular -->
 
-- For displaying the search results.
+- 検索結果の表示
 
 ```html
 <igx-suffix *ngIf="searchText.length > 0">
@@ -482,7 +482,7 @@ On the right in our input group, let's create three separate containers with the
 
 <!-- Angular -->
 
-- For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler - `UpdateSearch` or `UpdateExactSearch` depending on which chip has been clicked.
+- 以下は `CaseSensitive` と `ExactMatch` を切り替えるチップを表示する方法です。プロパティに基づいて色が変わる 2 つのチップでチェックボックスを 置き換えます。チップをクリックすると、どちらのチップがクリックされたかによって各ハンドラー `UpdateSearch` または `UpdateExactSearch` を呼び出します。
 
 ```html
 <div class="chips">
@@ -497,7 +497,7 @@ On the right in our input group, let's create three separate containers with the
 </div>
 ```
 
-- For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
+- 検索ナビゲーション ボタンは、マテリアルアイコンを使用して入力を Ripple スタイルボタンにします。click イベントのハンドラーはそのままで `FindNext`/`FindPrev` メソッドを呼び出します。
 
 ```html
 <igx-suffix>
@@ -513,30 +513,30 @@ On the right in our input group, let's create three separate containers with the
 ```
 <!-- end: Angular -->
 
-## Known Limitations
+## 既知の問題と制限
 
-|Limitation|Description|
+|制限|説明|
 |--- |--- |
-|Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
+|テンプレートを使用したセル内の検索|検索機能の強調表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、強調表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
 <!-- Angular -->
-|Remote Virtualization| The search will not work properly when using remote virtualization|
+|リモート仮想化| リモート仮想化の使用時に検索が正しく動作しない問題。|
 <!-- end: Angular -->
-|Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
+|セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、強調表示はされません。 |
 
-## API References
+## API リファレンス
 
-In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
+このトピックでは、`{ComponentName}` にカスタム検索バーを実装し、更に検索結果を移動する際の機能を追加しました。アイコン、チップ、入力などその他の Ignite UI for {Platform} も使用しています。以下は検索 API です。
 
-`{ComponentName}` methods:
+`{ComponentName}` メソッド:
 -   `FindNext`
 -   `FindPrev`
 -   `ClearSearch`
 -   `RefreshSearch`
 
-`Column` properties:
+`Column` プロパティ:
 -   `Searchable`
 
-Additional components and/or directives with relative APIs that were used:
+その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
 <!-- Angular -->
 
@@ -556,20 +556,20 @@ Additional components and/or directives with relative APIs that were used:
 
 <!-- end: Blazor -->
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [Virtualization and Performance](virtualization.md)
-* [Filtering](filtering.md)
-* [Paging](paging.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [フィルタリング](filtering.md)
+* [ページング](paging.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

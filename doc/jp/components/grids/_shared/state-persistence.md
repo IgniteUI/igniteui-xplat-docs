@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} State Persistence - {ProductName}
+title: {Platform} {ComponentTitle} 状態保持 - {ProductName}
 _description: 包括的な Ignite UI for {Platform} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の永続化, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,81 +7,81 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} State Persistence
+# {Platform} {ComponentTitle} 状態保持
 
-Тhe `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+`GridState` ディレクティブによって開発者がグリッドの状態を簡単に保存および復元できます。`GridState` ディレクティブがグリッドに適用されると、`GetState` および `SetState` メソッドが公開され、開発者はこれを使用して、あらゆるシナリオで状態の永続化を実現できます。
 
-## Supported Features
+## サポートされる機能
 
-`GridState` directive supports saving and restoring the state of the following features:
+`GridState` ディレクティブは、以下の機能の状態の保存および復元をサポートします。
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
-    * **NEW**: Multi column headers are now supported out of the box
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+* `ソート`
+* `フィルタリング`
+* `高度なフィルタリング`
+* `ページング`
+* `セルの選択`
+* `行の選択`
+* `列の選択`
+* `行のピン固定`
+* `展開`
+* `グループ化`
+* `複数の列`
+    * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
+    * 列の順序
+    * `IColumnState` インターフェイスによって定義される列プロパティ。
+    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#restoring-columns)セクションを参照してください。
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* `RowIslands`
-    * saving/restoring features for all child grids down the hierarchy
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
-* `Expansion`
-* `Columns`
-    * **NEW**: Multi column headers are now supported out of the box
-    * Columns order
-    * Column properties defined by the `IColumnState` interface.
-    * Columns templates and functions are restored using application level code, see [Restoring Column](state-persistence.md#restoring-columns) section.
+* `行アイランド`
+    * 階層のすべての子グリッドの保存/復元機能
+* `ソート`
+* `フィルタリング`
+* `高度なフィルタリング`
+* `ページング`
+* `セル選択`
+* `行の選択`
+* `列の選択`
+* `行のピン固定`
+* `展開`
+* `複数の列`
+    * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
+    * 列の順序
+    * `IColumnState` インターフェイスによって定義される列プロパティ。
+    * 列テンプレートおよび関数はアプリケーション レベルのコードを使用して復元されます。[列の復元](state-persistence.md#restoring-columns)セクションを参照してください。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- ComponentStart: PivotGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Expansion`
-* `Pivot Configuration`
-    * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
-    * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
-    * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
+* `ソート`
+* `フィルタリング`
+* `セル選択`
+* `行の選択`
+* `列の選択`
+* `展開`
+* `ピボット構成`
+    * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
+    * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#restoring-pivot-configuration)」セクションを参照してください。
+    * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#restoring-pivot-strategies)」セクションを参照してください。
 
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-> The `GridState` directive does not take care of templates. Go to [Restoring Column](state-persistence.md#restoring-columns) section to see how to restore column templates.
+> `GridState` ディレクティブはテンプレートを処理しません。列テンプレートの復元方法については、「[列の復元](state-persistence.md#restoring-columns)」セクションを参照してください。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
-## Usage
+## 使用方法
 
-The `GetState` method returns the grid state in a serialized JSON string, so developers can just take it and save it on any data storage (database, cloud, browser localStorage, etc). The method accepts first optional parameter `Serialize`, which determines whether `GetState` will return an `IGridState` object or a serialized JSON string.
+`GetState` - このメソッドは、シリアル化された JSON 文字列でグリッド状態を返します。これは、開発者がそれを取得して任意のデータストレージ (データベース、クラウド、ブラウザーの localStorage など) に保存できます。このメソッドは最初のオプションのパラメーター `Serialize` を受け取り、`GetState` が `IGridState` オブジェクトを返すか、シリアル化された JSON 文字列を返すかを決定します。
 
-The developer may choose to get only the state for a certain feature/features, by passing in the feature name, or an array with feature names as a second argument.
+開発者は、機能名、または機能名を 2 番目の引数として持つ配列を渡すことにより、特定の機能の状態のみを取得することを選択できます。
 
 ```typescript
 // get all features` state in a serialized JSON string
@@ -98,7 +98,7 @@ const sortingFilteringStates: IGridState = state.getState(false, ['sorting', 'fi
 GetState blazor snippet
 ```
 
-`SetState` - The `SetState` method accepts the serialized JSON string or `IGridState` object as argument and will restore the state of each feature found in the object/JSON string.
+`SetState` - `SetState` メソッドは、シリアル化されたJSON文字列または `IGridState` オブジェクトを引数として受け入れ、オブジェクト/JSON 文字列で見つかった各機能の状態を復元します。
 
 ```typescript
 state.setState(gridState);
@@ -109,7 +109,7 @@ state.setState(sortingFilteringStates)
 SetState blazor snippet
 ```
 
-The `Options` object implements the `IGridStateOptions` interface, i.e. for every key, which is the name of a certain feature, there is the boolean value indicating if this feature state will be tracked. `GetState` method will not put the state of these features in the returned value and `SetState` method will not restore state for it.
+`Options` オブジェクトは、`IGridStateOptions` インターフェースを実装します。特定の機能の名前であるキーには、この機能の状態を追跡するかどうかを示すブール値があります。`GetState` メソッドはこれらの機能の状態を戻り値に入れず、`SetState` メソッドはその状態を復元しません。
 
 ```typescript
 public options =  { cellSelection: false; sorting: false; }
@@ -124,7 +124,7 @@ public options =  { cellSelection: false; sorting: false; }
 Add options snippet blazor
 ```
 
-The simple to use single-point API's allows to achieve a full state persistence functionality in just a few lines of code. **Copy paste the code from below** - it will save the grid state in the browser `SessionStorage` object every time the user leaves the current page. Whenever the user returns to main page, the grid state will be restored. No more need to configure those complex advanced filtering and sorting expressions every time to get the data you want - do it once and have the code from below do the rest for your users:
+これらのシンプルなシングル ポイント API を使用すると、わずか数行のコードで完全な状態維持機能を実現できます。**下からコードをコピーして貼り付けます** - ユーザーが現在のページを離れるたびに、ブラウザーの `SessionStorage` オブジェクトにグリッドの状態が保存されます。ユーザーがメイン ページに戻るときに、グリッドの状態が復元されます。必要なデータを取得するために、複雑で高度なフィルタリングやソートの式を毎回設定する必要はなくなりました。一度実行して、以下のコードでユーザーに代わって処理してください。
 
 ```typescript
 @ViewChild(IgxGridStateDirective, { static: true })
@@ -157,11 +157,11 @@ Add blazor snippet for working with the sessionStorage
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-## Restoring columns
+## 列の復元
 
-`GridState` will not persist columns templates, column formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. Let's show how to do this for templated columns:
+`GridState` はデフォルトで列テンプレート、列フォーマッタなどを保持しません (制限を[参照](state-persistence.md#limitations)))。これらの復元は、アプリケーション レベルのコードで実現できます。テンプレート化された列でこれを行う方法を示します。
 
-1. Define a template reference variable (in the example below it is `#activeTemplate`) and assign an event handler for the `ColumnInit` event:
+1. テンプレート参照変数 (以下の例では `#activeTemplate`) を定義し、`ColumnInit` イベントにイベント ハンドラーを割り当てます。
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -216,7 +216,7 @@ Add sample
 
 <!-- ComponentEnd: TreeGrid  -->
 
-1. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
+1. @ViewChild または @ViewChildren デコレータを使用して、コンポーネントのテンプレート ビューをクエリします。`ColumnInit` イベント ハンドラーで、テンプレートを列の `BodyTemplate` プロパティに割り当てます。
 
 
 ```typescript
@@ -239,11 +239,11 @@ Add blazor handler for bodyTemplate
 
 <!-- ComponentStart: PivotGrid -->
 
-## Restoring Pivot Configuration
+## ピボット構成の復元
 
-`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [`limitations`](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
+`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません (制限を[参照](state-persistence.md#limitations))。これらの復元は、アプリケーション レベルのコードで実現できます。{ComponentName} は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。Let's show how to do this:
 
-* Assign event handlers for the `DimensionInit` and `ValueInit` events:
+* `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfig" [igxGridState]="options"
@@ -255,9 +255,9 @@ Add blazor handler for bodyTemplate
 blazor snippet
 ```
 
-> The `DimensionInit` and `ValueInit` events are emitted for each value and dimension defined in the `PivotConfiguration` property.
+> `DimensionInit` および `ValueInit` イベントは、`PivotConfiguration` プロパティで定義された値とディメンションごとに発行されます。
 
-* In the `ValueInit` event handler set all custom aggregators, formatters and styles:
+* `ValueInit` イベント ハンドラーで、すべてのカスタム集計、フォーマッター、およびスタイルを設定します。
 
 ```typescript
 public onValueInit(value: IPivotValue) {
@@ -289,7 +289,7 @@ public onValueInit(value: IPivotValue) {
 Add blazor handling for valueInit
 ```
 
-* In the `DimensionInit` event handler set all custom `MemberFunction` implementations:
+* `DimensionInit` イベント ハンドラーで、すべてのカスタム `MemberFunction` 実装を設定します。
 
 ```typescript
 public onDimensionInit(dim: IPivotDimension) {
@@ -319,8 +319,8 @@ Add blazor handling for dimensionInit
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-## Restoring Child Grids
-Saving / Restoring state for the child grids is controlled by the `RowIslands` property and is enabled by default. `GridState` will use the same options for saving/restoring features both for the root grid and all child grids down the hierarchy. For example, if we pass the following options:
+## 子グリッドの復元
+子グリッドの状態の保存/復元は、`RowIslands` プロパティによって制御され、デフォルトで有効に設定されています。`GridState` は、ルート グリッドと階層のすべての子グリッドの両方の機能を保存/復元するために同じオプションを使用します。たとえば、以下のオプションを渡す場合:
 
 ``` html
 <!-- public options = {selection: false, sorting: false, rowIslands: true} -->
@@ -331,7 +331,7 @@ Saving / Restoring state for the child grids is controlled by the `RowIslands` p
 Blazor snippet
 ```
 
-Then the `GetState` API will return the state for all grids (root grid and child grids) features excluding `Selection` and `Sorting`. If later on the developer wants to restore only the `Filtering` state for all grids, use:
+`GetState` API は、`Selection` と `Sorting` を除くすべてのグリッド (ルート グリッドと子グリッド) 機能の状態を返します。開発者が後ですべてのグリッドの `Filtering` 状態のみを復元するには、以下を使用します。
 
 ```typescript
 this.state.setState(state, ['filtering', 'rowIslands']);
@@ -353,13 +353,13 @@ setState snippet
 
 <!-- ComponentStart: PivotGrid -->
 
-## Restoring Pivot Strategies
+## ピボット ストラテジの復元
 
-`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](pivot-grid-custom.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
+`GridState` は、デフォルトで は ([制限](state-persistence.md#limitations)を参照) リモート ピボット操作もカスタム ディメンション ストラテジも保持しません (詳細については、[Pivot Grid リモート操作](pivot-grid-custom.md)のサンプルを参照してください)。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
 
-> `StateParsed` is only emitted when we are using `SetState` with string argument.
+> `StateParsed` は、文字列引数で `SetState` を使用している場合にのみ発行します。
 
-* Set custom sorting strategy and custom pivot column and row dimension strategies:
+* カスタム ソート方法およびカスタム ピボット列/行ディメンション ストラテジを設定します。
 
 ```html
 <igx-pivot-grid #grid [data]="data" [pivotConfiguration]="pivotConfigHierarchy" [defaultExpandState]='true'
@@ -387,7 +387,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 Add snippet for blazor
 ```
 
-* Restoring the state from the `SessionStorage` and applying the custom strategies looks like the following:
+* `SessionStorage` から状態を復元し、カスタム ストラテジを適用します。
 
 ```typescript
 public restoreState() {
@@ -414,11 +414,11 @@ Add snippet for blazor for restore state
 
 <!-- ComponentEnd: PivotGrid -->
 
-## Limitations
+## 制限
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* When restoring all grid features at once (using `SetState` API with no parameters), then column properties for the root grid might be resetted to default. If this happens, restore the columns or column selection feature separately after that:
+* パラメーターなしで `SetState` API を使用してすべてのグリッド機能を一度に復元する場合、ルート グリッドの列プロパティがデフォルトにリセットされる場合があります。その場合は、後で列または列の選択機能を復元してください。
 
 ```typescript
 state.setState(gridState);
@@ -429,41 +429,40 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the columns `Formatter`, `Filters`, `Summaries`, `SortStrategy`, `CellClasses`, `CellStyles`, `HeaderTemplate` and `BodyTemplate` properties.
+* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() が関数をサポートしないため、`GridState` ディレクティブは、columns `Formatter`、`Filters`、`Summaries`、`SortStrategy`、`CellClasses`、`CellStyles`、`HeaderTemplate` および `BodyTemplate` プロパティを無視します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 
 <!-- ComponentStart: PivotGrid -->
 
-* `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions,
- `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
+* `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
 
 <!-- ComponentEnd: PivotGrid -->
 
 
-## API References
+## API リファレンス
 
 * `{ComponentName}`
 * `GridStateDirective`
 
 
-## Additional Resources
+## その他のリソース
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* [{ComponentTitle} Overview](overview.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [選択](selection.md)
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 <!-- ComponentStart: PivotGrid -->
 
-* [{ComponentTitle} overview](overview.md)
-* [Pivot Grid Remote Operations](pivot-grid-custom.md)
-* [Pivot Grid Features](pivot-grid-features.md)
+* [{ComponentTitle} 概要](overview.md)
+* [ピボット グリッドのリモート操作](pivot-grid-custom.md)
+* [ピボット グリッド機能](pivot-grid-features.md)
 
 <!-- ComponentEnd: PivotGrid -->

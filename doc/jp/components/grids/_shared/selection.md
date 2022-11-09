@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Selection - {ProductName}
+title: {Platform} {ComponentTitle} 選択 - {ProductName}
 _description: {ProductName} グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,72 +7,72 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Selection Overview
+# {Platform} {ComponentTitle} 選択の概要
 
-With the {ProductName} `{ComponentName}` you can easily select data by using variety of events, rich API or with simple mouse interactions like single select.
+{ProductName} `{ComponentName}` グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
 
-## {Platform} {ComponentTitle} Selection Example
+## {Platform} {ComponentTitle} 選択の例
 
-The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentName}`. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
+以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           alt="{Platform} {ComponentTitle}  Selection Example">
+           alt="{Platform} {ComponentTitle}  選択の例">
 </code-view>
 
-## {Platform} {ComponentTitle} Selection Options
+## {Platform} {ComponentTitle} 選択のオプション
 
-The {ProductName} `{ComponentName}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentName}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
+{ProductName} `{ComponentName}` コンポーネントは、[行選択](row-selection.md)、[セル選択](cell-selection.md)、[列選択](column-selection.md)の 3 つの選択モードを提供します。デフォルトでは、`{ComponentName}` で**複数セル選択**モードのみが有効になっています。選択モードの変更または有効化は、`RowSelection`、`CellSelection` または `Selectable` プロパティを使用します。
 
-### {Platform} {ComponentTitle} Row Selection
+### {Platform} {ComponentTitle} 行選択
 
-Property `RowSelection` enables you to specify the following options:
+プロパティ `RowSelection` を使用すると、次のオプションを指定できます。
 
-- `None` - Row selection would be disabled for the `{ComponentName}`.
-- `Single` - Selection of only one row within the `{ComponentName}` would be available.
-- `Multiple` - Multi-row selection would be available by using the row selectors, with a key combination like <kbd>ctrl</kbd> + <kbd>click</kbd>, or by pressing the <kbd>space key</kbd> once a cell is focused.
+- `None` - `{ComponentName}` の行選択が無効になります。
+- `Single` - `{ComponentName}` 内の 1 行のみの選択が利用可能になります。
+- `Multiple` - 複数行の選択は、<kbd>ctrl</kbd> + <kbd>click</kbd>、<kbd>space キー</kbd>を押して行セレクターを使用することにより、複数行の選択が可能になります。
 
 <!-- ComponentStart: TreeGrid -->
 
-- `MultipleCascade` -  This is a mode for cascading selection, resulting in the selection of all children in the tree below the record that the user selects with user interaction. In this mode a parent's selection state entirely depends on the selection state of its children.
+- `MultipleCascade` -  これはカスケード選択のモードであり、ユーザーがユーザーの操作で選択したレコードの下のツリー内のすべての子が選択されます。このモードでは、親の選択状態はその子の選択状態に完全に依存します。
 
 <!-- ComponentEnd: TreeGrid -->
 
-> Go to [Row selection topic](row-selection.md) for more information.
+> 詳細については、[行選択トピック](row-selection.md)を参照してください。
 
-### {Platform} {ComponentTitle} Cell Selection
+### {Platform} {ComponentTitle} セル選択
 
-Property `CellSelection` enables you to specify the following options:
+以下のオプションは、プロパティ `CellSelection` で指定できます。
 
-- `None` - Cell selection would be disabled for the `{ComponentName}`.
-- `Single` - Selection of only one cell within the `{ComponentName}` would be available.
-- `Multiple` - Currently, this is the default state of the selection in the `{ComponentName}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
+- `None` - `{ComponentName}` のセル選択が無効になります。
+- `Single` - `{ComponentName}` 内の 1 セルのみの選択が利用可能になります。
+- Multiple` - `{ComponentName}` の選択のデフォルト状態です。Multi - セルの選択は、マウスの左ボタンを連続してクリックした後、マウスをセル上にドラッグすることで利用できます。
 
-> Go to [Cell selection topic](cell-selection.md) for more information.
+> 詳細については、[セル選択トピック](cell-selection.md)を参照してください。
 
-### {Platform} {ComponentTitle} Column Selection
+### {Platform} {ComponentTitle} 列選択
 
-The `Selectable` property enables you to specify the following options for each `Column`. The corresponding column selection will be enabled or disabled if this property is set to true or false, respectively.
+`Selectable` プロパティを使用して、`Column` ごとに以下のオプションを指定できます。このプロパティが true または false に設定されている場合、対応する列の選択がそれぞれ有効または無効になります。
 
-This leads to the following three variations:
+以下の 3 つのバリエーションがあります。
 
-- `Single selection` - <kbd>mouse click</kbd> over the column cell.
-- `Multi column selection` - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
-- `Range column selection` - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
+- `Single selection` (（単一選択) - 列セルを<kbd>マウス クリック</kbd>します。
+- `Multi column selection` (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリック</kbd>します。
+- `Range column selection` (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
-> Go to [Column selection topic](column-selection.md) for more information.
+> 詳細については、[列選択トピック](column-selection.md)を参照してください。
 
 <!-- ComponentStart: Grid -->
 <!-- Angular -->
 
-## {Platform} {ComponentTitle} Context Menu
+## {Platform} {ComponentTitle} コンテキスト メニュー
 
-Using the `ContextMenu` event you can add a custom context menu to facilitate your work with `{ComponentName}`. With a **right click** on the grid's body, the event emits the cell on which it is triggered. The **context menu** will operate with the emitted cell.
+`ContextMenu` イベントは、カスタム コンテキスト メニューを追加して、`{ComponentName}` での作業をアシストします。グリッドの本体を**右クリック**すると、イベントはトリガーされたセルを放出します。**コンテキスト メニュー**は、放出されたセルで動作します。
 
-If there is a **multi-cell selection**, we will put logic, which will check whether the selected cell is in the area of the multi-cell selection. If it is, we will also emit the values of the selected cells.
+**複数セルの選択**がある場合、選択したセルが複数セルの選択領域にあるかどうかをチェックするロジックを配置します。その場合、選択したセルの値も出力します。
 
-Basically the main function will look like this:
+基本的に、メイン関数は次のようになります。
 
 ```typescript
 public rightClick(eventArgs: any) {
@@ -109,11 +109,11 @@ public rightClick(eventArgs: any) {
 TO DO
 ```
 
-The context menu will have the following functions:
+以下はコンテキストメニューの機能です。
 
-- Copy the selected cell's *value*.
-- Copy the selected cell's *dataRow*.
-- If the selected cell is within a **multi-cell selection range**, copy all the *selected data*.
+- - 選択したセルの値のコピー。
+- 選択したセルの *dataRow* のコピー。
+- 選択したセルが**複数セルの選択範囲**内にある場合、選択したすべてのデータをコピーします。
 
 ```typescript
 //contextmenu.component.ts
@@ -141,9 +141,9 @@ public copySelectedCells(event) {
 TO DO
 ```
 
-The `{ComponentName}` will fetch the copied data and will paste it in a container element.
+`{ComponentName}` はコピーされたデータを取得し、コンテナ要素に貼り付けます。
 
-The template we are going to use to combine the grid with the context menu:
+グリッドとコンテキスト メニューを組み合わせるために使用するテンプレート:
 ```html
 <div class="wrapper">
     <div class="grid__wrapper" (window:click)="disableContextMenu()">
@@ -169,9 +169,9 @@ The template we are going to use to combine the grid with the context menu:
 TO DO
 ```
 
- Select multiple cells and press the `right mouse` button. The context menu will appear and after selecting `Copy cells data` the selected data will appear in the right empty box.
+ 複数のセルを選択し、`マウスの右`ボタンを押します。コンテキストメニューが表示され、`セルデータのコピー`を選択すると、選択したデータが右側の空のボックスに表示されます。
 
- The result is:
+ 結果:
 
 <!-- NOTE this sample is differed -->
 
@@ -183,26 +183,26 @@ TO DO
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-## Known Issues and Limitations
+## 既知の問題と制限
 
 <!-- Angular -->
 
-- Using the `{ComponentName}` with Selection enabled on IE11 requires the explicit import of the array polyfill in polyfill.ts of the {Platform} application. IE11 is no longer supported as of version 13.0.0.
+- IE11 で選択を有効にした `{ComponentName}` コンポーネントを使用するには、{Platform} の polyfill.ts に配列ポリフィルを明示的にインポートする必要があります。IE11 は、バージョン 13.0.0 でサポートされなくなりました。
 
 ```typescript
 import 'core-js/es7/array';
 ```
 
-When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
+グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
 
-- Row Selection
-- Row Expand/collapse
-- Row Editing
-- Row Pinning
+- 行の選択
+- 行の展開 / 縮小
+- 行の編集
+- 行のピン固定
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 
 * `{ComponentName}`
 
@@ -220,19 +220,19 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 * `GridCell`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [Row Selection](row-selection.md)
-* [Cell Selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Virtualization and Performance](virtualization.md)
+* [{ComponentTitle} 概要](overview.md)
+* [行の選択](row-selection.md)
+* [セルの選択](cell-selection.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列移動](column-moving.md)
+* [仮想化とパフォーマンス](virtualization.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
