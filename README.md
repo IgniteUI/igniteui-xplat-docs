@@ -1,3 +1,10 @@
+
+<div style="display: flex; flex-flow: row; font-family: 'Titillium Web'">
+    <img style="border-radius: 0.25rem" alt="ignite-ui" src="./doc/en/images/readme/ig-banner.png"/>>
+</div>
+
+# X-Platform Docs for Ignite UI Components
+
 ## Introduction
 
 The goal here is to provide cross platform long form doc for Angular, Blazor, React, and WebComponents using DocFX.
