@@ -65,7 +65,7 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> 注: これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、gropuing を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
+> 注: これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、grouping を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
 
 <!-- end: Angular -->
 
@@ -199,9 +199,9 @@ export interface IGroupByRecord {
 グループ UI は、以下のキーボード インタラクションをサポートします。
 
 - グループ行 (行または展開/縮小セルにフォーカス)
-   - <kbd>ALT</kbd> +  <kbd>右矢印</kbd> - グループを展開します。
+   - <kbd>ALT</kbd> + <kbd>右矢印</kbd> - グループを展開します。
    - <kbd>ALT</kbd> + <kbd>左矢印</kbd> - グループを縮小します。
-   - <kbd>SPACE</kbd> - rowSelection プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
+   - <kbd>SPACE</kbd> - <kbd>rowSelection</kbd> プロパティが multiple に設定されている場合、グループ内のすべての行を選択します。
 
 - グループ領域の `Chip` コンポーネントのグループ化 (チップにフォーカス)
    - <kbd>SHIFT</kbd> + <kbd>左矢印</kbd> - フォーカスしたチップの左へ移動し、可能な場合はグループ順序を変更します。
@@ -224,7 +224,7 @@ export interface IGroupByRecord {
 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom"
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
            alt="{Platform} {ComponentTitle} カスタム グループ化の例">
 </code-view>
 
@@ -308,7 +308,7 @@ class WeekSortingStrategy extends BaseSortingStrategy {
 <!-- Angular -->
 ## スタイル設定
 
-[Ignite UI for {Platform} Theme ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+[Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下の手順では、グリッドの Group By スタイルをカスタマイズする手順を実行しています。
 
@@ -392,7 +392,7 @@ $custom-chips-theme: chip-theme(
 );
 ```
 ### カスタム スキーマの定義
-[**schema**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**schema** はテーマを作成させるための方法です。
+[**スキーマ**](../themes/sass/schemas.md) のすべての利点を備えた柔軟な構造を構築できます。**スキーマ**はテーマを作成させるための方法です。
 すべてのコンポーネントに提供される 2 つの事前定義されたスキーマのいずれかを拡張します。この場合、`$_light_grid` を使用します。
 ```scss
 $custom-grid-schema: extend($_light-grid,(
@@ -477,7 +477,7 @@ $custom-theme: grid-theme(
 * `ColumnComponent`
 * `IGroupByExpandState`
 * `ChipComponent`
-* `ChipComponent Styles`
+* `ChipComponent スタイル`
 
 ## その他のリソース
 
@@ -486,7 +486,7 @@ $custom-theme: grid-theme(
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [集計](summaries.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)

@@ -1,5 +1,5 @@
 ---
-title: Row Selection in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} の行選択 - インフラジスティックス
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,21 +7,21 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Row Selection
+# {Platform} {ComponentTitle} 行の選択
 
-With row selection in {ProductName}, there is row selector column that precedes all other columns within the row. When a user clicks on the row selector, the row will either become selected or deselected, enabling the user to select multiple rows of data.
+{ProductName} の行選択では、行内の他のすべての列に先行する行セレクター列があります。行選択ボックスをクリックすると、行の選択や選択解除、複数行にわたるデータの選択が可能になります。
 
-## {Platform} Row Selection Example
+## {Platform} 行選択の例
 
 <!-- ComponentStart: TreeGrid -->
 
-The sample below demonstrates the four types of `{ComponentName}`'s **row selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box. Use the switch button to _hide_ or _show_ the row selector checkbox.
+以下のサンプルは、`{ComponentName}` の 4 種類の**行選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。スイッチ ボタンを使用して、行セレクター チェックボックスを非表示または表示します。
 
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-The sample below demonstrates the three types of `{ComponentName}`'s **row selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box. Use the switch button to _hide_ or _show_ the row selector checkbox.
+以下のサンプルは、`{ComponentName}` の 3 種類の**行選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。スイッチ ボタンを使用して、行セレクター チェックボックスを非表示または表示します。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
@@ -29,19 +29,19 @@ The sample below demonstrates the three types of `{ComponentName}`'s **row selec
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-mode"
            github-src="{ComponentSample}/row-selection-mode"
-           alt="{Platform} {ComponentTitle} Row Selection Example">
+           alt="{Platform} {ComponentTitle} 行選択の例">
 </code-view>
 
 
 
-## Setup
-In order to setup row selection in the `{ComponentName}`, you just need to set the `RowSelection` property. This property accepts `GridSelectionMode` enumeration.
+## 設定
+`{ComponentName}`で項目の選択を設定するには、その `RowSelection` プロパティを設定する必要があります。このプロパティは、`GridSelectionMode` 列挙を受け取ります。
 
-`GridSelectionMode` exposes the following modes:
+`GridSelectionMode` は以下のモードを公開します。
 
-- **None**
-- **Single**
-- **Multiple**
+- **None (なし)**
+- **Single (単一)**
+- **Multiple (複数)**
 
 <!-- ComponentStart: TreeGrid -->
 
@@ -49,15 +49,15 @@ In order to setup row selection in the `{ComponentName}`, you just need to set t
 
 <!-- ComponentEnd: TreeGrid -->
 
-Below we will take a look at each of them in more detail.
+以下で、それぞれについて詳しく説明します。
 
-### None Selection
+### None 選択
 
-In the `{ComponentName}` by default row selection is disabled (`RowSelection` is None). So you can **not** select or deselect a row through interaction with the `{ComponentName}` UI, the only way to complete these actions is to use the provided API methods.
+`{ComponentName}` では、デフォルトで行選択が無効になります。(`RowSelection` は None です。)したがって、`{ComponentName}`UI とのインタラクションを通じて行を選択または選択解除することは**できません**が、選択/選択解除する唯一の方法は、提供された API メソッドを使用することです。
 
-### Single Selection
+### 単一選択
 
-Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the *space* key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected `RowSelectionChanging` event is emitted.
+単一行の選択は、`RowSelection` プロパティ を `Single` に設定することのみで簡単に設定できるようになりました。これにより、**グリッド内の 1 行のみを選択できます**。行のセルにフォーカスするときにセルをクリックするかスペース キーを押すと行を選択できます。もちろん、行セレクターフィールドをクリックして行を選択できます。行が選択または選択解除されると、`RowSelectionChanging` イベントが生成されます。
 
 ```html
 <{ComponentSelector} [data]="remote | async" [rowSelection]="'single'" [autoGenerate]="true"
@@ -96,9 +96,9 @@ function rowSelectionChangingHandler(args) {
 igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
 ```
 
-### Multiple Selection
+### 複数選択
 
-To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the *space* key when a cell is focused. If you have selected one row and click on another while holding the *shift* key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you *click* while holding the *ctrl* key, the row will be toggled and the previous selection will be preserved.
+`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `Multiple` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用して複数行を選択できます。選択はスクロール、ページング、および並べ替えとフィルター、などのデータ操作で保持されます。行を選択するには、セルをクリックするか、セルにフォーカスがあるときにスペース キーを押します。1 つの行を選択し、*Shift* キーを押しながら別の行をクリックすると、行の範囲全体が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。*Ctrl* キーを押しながらクリックすると、行が切り替わり、前の選択が保持されます。
 
 ```html
 <{ComponentSelector} [data]="remote | async" [primaryKey]="'ProductID'" [rowSelection]="'multiple'"
@@ -121,9 +121,9 @@ To enable multiple row selection in the `{ComponentName}` just set the `RowSelec
 
 <!-- ComponentStart: TreeGrid -->
 
-### Cascade Selection
+### カスケード選択
 
-To enable cascade row selection in the `{ComponentName}` just set the `RowSelection` property to `MultipleCascade`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows which would select all children in the tree below. The selection persists through scrolling, paging, and data operations, such as sorting and filtering. The row can also be selected by clicking on a cell or by pressing the *space* key when a cell is focused. If you have selected one row and *click* on another while holding the *shift* key, the selection of a parent record will select all of its children even if they are not in the selected range. In this selection mode, when you *click* on a single row, the previously selected rows will be deselected. If you *click* while holding the *ctrl* key, the row and its children will be toggled and the previous selection will be preserved.
+`{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `MultipleCascade` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用すると、ユーザーは複数の行を選択して、下のツリーのすべての子を選択できます。選択は、スクロール、ページング、および並べ替えやフィルタリングなどのデータ操作を通じて保持されます。行は、セルをクリックするか、セルがフォーカスされているときにスペース キーを押すことによっても選択できます。1 つの行を選択し、*Shift* キーを押しながら別の行をクリックすると、親レコードの選択を通じて選択した範囲内にない場合でも、そのすべての子が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。*Ctrl* キーを押しながらクリックすると、行とその子が切り替えられ、前の選択が保持されます。
 
 ```html
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
@@ -144,31 +144,31 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
     </{ComponentSelector}>
 ```
 
-In this mode a parent's selection state entirely depends on the selection state of its children. When a parent has some selected and some deselected children, its checkbox is in an indeterminate state.
+このモードでは、親の選択状態はその子の選択状態に完全に依存します。親に選択された子と選択解除された子がある場合、そのチェックボックスは不確定な状態になります。
 
 <!-- ComponentEnd: TreeGrid -->
 
-**Notes**
+**注**
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
 <!-- Angular -->
-* In order to have proper row selection and cell selection, while `{ComponentName}` has remote virtualization, a `PrimaryKey` should be provided.
-* When the `{ComponentName}` has remote virtualization, then clicking the header checkbox will select/deselect all records that are currently in the grid. When new data is loaded in the `{ComponentName}` on demand, newly added rows will not be selected and it is a limitation, so you should handle that behavior by yourself and you can select these rows by using the provided API methods.
+* 行選択およびセル選択を正しく実行するには、`{ComponentName}` にリモート仮想化がある場合、`PrimaryKey` を設定します。
+* `{ComponentName}` でリモート仮想化を使用した場合、ヘッダーのチェックボックスをクリックすると、現在グリッドにあるすべてのレコードが選択/選択解除されます。新しいデータがオンデマンドで `{ComponentName}` にロードされると、新、しく追加された行は選択されない制限があるため、これらの行を選択するには API メソッドを使用して動作を処理する必要があります。
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-* Row selection will trigger `RowSelectionChanging` event. This event gives you information about the *new selection*, *old selection*, the rows that have been *added* and *removed* from the old selection. Also the event is *cancellable*, so this allows you to prevent selection.
-* When row selection is enabled row selectors are displayed, but if you don't want to show them, you can set `HideRowSelectors` to **true**.
-* When you switch between row selection modes at runtime, this will clear the previous row selection state.
+* 行を選択すると、`RowSelectionChanging` イベントがトリガーされます。このイベントは、新しい選択、古い選択、古い選択に対して追加および削除された行に関する情報を提供します。また、イベントはキャンセル可能であるため、選択を防ぐことができます。
+* 行選択が有効になっている場合、行セレクターが表示されますが、表示しない場合は、`HideRowSelectors` を **true** に設定できます。
+* 行選択モードのランタイムを切り替えると、優先行選択状態がクリアされます。
 
 
-## API usage
+## API の使用
 
-### Select Rows Programmatically
+### コードで行を選択
 
-The code snippet below can be used to select one or multiple rows simultaneously (via `PrimaryKey`). Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
+以下は、単一または複数の行を同時に選択できるコード例です (`PrimaryKey` を介して)。さらに、このメソッドの 2 番目のパラメーターは boolean プロパティです。それを使用して、前の行の選択をクリアするかどうかを選択できます。以前の選択はデフォルトで保存されます。
 
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
@@ -193,11 +193,11 @@ The code snippet below can be used to select one or multiple rows simultaneously
     <IgbButton onclick='grid.selectRows([1,2,5], true)'>Select</IgbButton>
 ```
 
-This will add the rows which correspond to the data entries with IDs 1, 2 and 5 to the `{ComponentName}` selection.
+1、2、および 5 の ID を持つデータ エントリに対応する行を `{ComponentName}` の選択に追加します。
 
-### Deselect Rows
+### 行選択の解除
 
-If you need to deselect rows programmatically, you can use the `DeselectRows` method.
+プログラムで行を選択解除する必要がある場合は、`DeselectRows` メソッドを使用できます。
 
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
@@ -222,19 +222,19 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
     <IgbButton onclick='grid.deselectRows([1,2,5], true)'>Select</IgbButton>
 ```
 
-### Row Selection Event
+### 行選択イベント
 
-When there is some change in the row selection `RowSelectionChanging` event is emitted. `RowSelectionChanging` exposes the following arguments:
-- `OldSelection`  - array of row IDs that contains the previous state of the row selection.
-- `NewSelection` - array of row IDs that match the new state of the row selection.
-- `Added` - array of row IDs that are currently added to the selection.
-- `Removed` - array of row IDs that are currently removed according old selection state.
-- `Event` - the original event that triggered row selection change.
-- `Cancel` -  allows you the prevent the row selection change.
+行選択に何らかの変更があると、`RowSelectionChanging` イベントが発生します。`RowSelectionChanging` は次の引数を公開します。
+- `OldSelection` - 行選択の前の状態を含む行 ID の配列。
+- `NewSelection` - 行選択の新しい状態に一致する行 ID の列。
+- `Added` - 現在選択に追加されている行 ID の配列。
+- `Removed` - 古い選択状態に従って現在削除されている行 ID の配列。
+- `Event` - 行選択の変更をトリガーする元のイベント。
+- `Cancel` - 行選択の変更を防ぐことができます。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-- `Owner` - if the event is triggered from a child grid, this will give you a reference to the component, from which the event is emitted.
+- `Owner` - イベントが子グリッドからトリガーされる場合、これにより、イベントの発行元であるコンポーネントへの参照が提供されます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -273,19 +273,19 @@ function rowSelectionChangingHandler(args) {
 igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, false);
 ```
 
-### Select All Rows
+### すべての行の選択
 
-Another useful API method that `{ComponentName}` provides is `SelectAll`. By default this method will select all data rows, but if filtering is applied, it will select only the rows that match the filter criteria. If you call the method with *false* parameter, `SelectAll(false)` will always select all data in the grid, even if filtering is applied.
+`{ComponentName}` が提供するもう 1 つの便利な API メソッドが `SelectAll` です。このメソッドはデフォルトですべてのデータ行を選択しますが、フィルタリングが適用される場合、フィルター条件に一致する行のみが選択されます。ただし、*false* パラメーターを指定してメソッドを呼び出すと、`SelectAll(false)` は、フィルターが適用されているかどうかに関係なく、常にグリッド内のすべてのデータを選択します。
 
-> **Note** Keep in mind that `SelectAll()` will not select the rows that are deleted.
+> **注:** `SelectAll()`  は削除された行を選択しないことに注意してください。
 
-### Deselect All Rows
+### 全行の選択解除
 
-`{ComponentName}` provides a `DeselectAll` method, which by default will deselect all data rows, but if filtering is applied will deselect only the rows that match the filter criteria. If you call the method with *false* parameter, `DeselectAll(false)` will always clear all row selection state even if filtering is applied.
+`{ComponentName}` は、デフォルトですべてのデータ行の選択を解除する `DeselectAll` メソッドを提供しますが、フィルタリングが適用される場合、フィルター条件に一致する行のみを選択解除します。ただし、*false* パラメーターを指定してメソッドを呼び出すと、`DeselectAll(false)` は、フィルターが適用されているかどうかに関係なく、常にグリッド内のすべてのデータをクリアします。
 
-### How to get Selected Rows
+### 選択した行を取得する方法
 
-If you need to see which rows are currently selected, you can get their row IDs with the `SelectedRows` getter.
+現在選択されている行を確認する必要がある場合は、`SelectedRows` ゲッターを使用して行 ID を取得できます。
 
 ```typescript
 public getSelectedRows() {
@@ -293,7 +293,7 @@ public getSelectedRows() {
 }
 ```
 
-Additionally, assigning row IDs to `SelectedRows` will allow you to change the grid's selection state.
+さらに、`SelectedRows` に行 ID を割り当てると、グリッドの選択状態を変更できます。
 
 ```typescript
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
@@ -324,13 +324,13 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 }
 ```
 
-### Row Selector Templates
+### 行セレクターのテンプレート
 
-You can template header and row selectors in the `{ComponentName}` and also access their contexts which provide useful functionality for different scenarios.
+`{ComponentName}` でヘッダーおよび行セレクターをテンプレート化し、さまざまなシナリオに役立つ機能を提供するコンテキストにアクセスすることもできます。
 
-By default, the `{ComponentName}` **handles all row selection interactions** on the row selector's parent container or on the row itself, leaving just the state visualization for the template. Overriding the base functionality should generally be done using the [`RowSelectionChanging` event](#row-selection-event). In case you implement a custom template with a `Click` handler which overrides the base functionality, you should stop the event's propagation to preserve the correct row state.
+デフォルトでは、`{ComponentName}` は、行セレクターの親コンテナまたは行自体の**すべての行選択操作を処理し**、テンプレートの状態の可視化のみになります。基本機能のオーバーライドは通常、[`RowSelectionChanging` イベント](#行選択イベント)を使用して実行する必要があります。基本機能をオーバーライドする `Click` ハンドラーを使用してカスタムテンプレートを実装する場合、イベントの伝播を停止して、正しい行の状態を保持する必要があります。
 
-#### Row Template
+#### 行テンプレート
 
 ```razor
 igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
@@ -351,9 +351,9 @@ igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
 
 <!-- Angular -->
 
-To create a custom row selector template,  within the `{ComponentSelector}`, declare an `<ng-template>` with `igxRowSelector` directive. From the template you can access the implicitly provided context variable, with properties that give you information about the row's state.
+カスタム行セレクター テンプレートを作成するには、`{ComponentSelector}` 内で `igxRowSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-The `selected` property shows whether the current row is selected or not while the `index` property can be used to access the row index.
+`selected` プロパティは、現在の行が選択されているかどうかを示しますが、`index` プロパティを使用して行インデックスにアクセスできます。
 ```html
 <ng-template igxRowSelector let-rowContext>
     {{ rowContext.index }}
@@ -364,24 +364,24 @@ The `selected` property shows whether the current row is selected or not while t
 </ng-template>
 ```
 
-The `rowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
+`rowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
 ```
-In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [`Row Numbering Demo`](#row-numbering-demo).
+上の例では、`igx-checkbox`  を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[`行番号のデモ`](#行の番号付けデモ)で実際にこれをご覧ください。
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 > [!NOTE]
-The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle the current row, especially in a child grid, when you implement a click handler that overrides the base functionality.
+`rowContext.select()` および `rowContext.deselect()` メソッドは、`{ComponentSelector}` のテンプレート コンテキストで公開されます。基本機能をオーバーライドするクリック ハンドラーを実装した場合、特に子グリッドで現在の行を簡単に切り替えることができます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Angular -->
 
-### Header Template
+### ヘッダー テンプレート
 
 ```razor
 igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
@@ -394,9 +394,9 @@ igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
 
 <!-- Angular -->
 
-To create a custom header selector template, within the `{ComponentName}`, declare an `<ng-template>` with `igxHeadSelector` directive. From the template you can access the implicitly provided context variable, with properties that give you information about the header's state.
+カスタム行ヘッダー テンプレートを作成するには、`{ComponentName}` 内で `igxHeadSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、ヘッダーの状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
 
-The `SelectedCount` property shows you how many rows are currently selected while `totalCount` shows you how many rows there are in the `{ComponentName}` in total.
+`SelectedCount` プロパティは現在選択されている行数を示し、`totalCount` は `{ComponentName}` に合計の行数を示します。
 
 ```html
 <ng-template igxHeadSelector let-headContext>
@@ -404,7 +404,7 @@ The `SelectedCount` property shows you how many rows are currently selected whil
 </ng-template>
 ```
 
-The `SelectedCount` and `TotalCount` properties can be used to determine if the head selector should be checked or indeterminate (partially selected).
+`SelectedCount` および `TotalCount` プロパティを使用して、ヘッド セレクターをチェックするか、不確定にする（部分的に選択する）かを決定できます。
 
 ```html
 <{ComponentSelector} [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
@@ -419,78 +419,78 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-Each hierarchy level in an `{ComponentSelector}` can have its own row and header templating.
+`{ComponentSelector}` の各階層レベルには、独自の行とヘッダーのテンプレートを設定できます。
 
 > [!NOTE]
-The `headContext.selectAll()` and `headContext.deselectAll()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle all rows, especially in a child grid, when you implement a click handler that overrides the base functionality.
+`headContext.selectAll()` および `headContext.deselectAll()` メソッドは、`{ComponentSelector}` のテンプレート コンテキストで公開されます。基本機能をオーバーライドするクリック ハンドラーを実装した場合、特に子グリッドで現在の行を簡単に切り替えることができます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 <!-- end: Angular -->
 
-### Row Numbering Demo
+### 行の番号付けデモ
 
-This demo shows the usage of custom header and row selectors. The latter uses `RowContext.Index` to display row numbers and an `Checkbox` bound to `RowContext.Selected`.
+このデモでは、カスタム ヘッダーと行セレクターの使用方法を示します。後者は、`RowContext.Index` を使用して行番号と、`RowContext.Selected` にバインドされた `Checkbox` を表示します。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
            github-src="{ComponentSample}/row-selection-template-numbers"
-           alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
+           alt="{Platform} {ComponentTitle} 選択テンプレートの番号付けの例">
 </code-view>
 
 <!-- ComponentStart: Grid -->
 
 <!-- Angular -->
-### Excel Style Row Selectors Demo
+### Excel スタイル行セレクターのデモ
 
-This demo uses custom templates to resemble Excel-like header and row selectors.
+このデモは、カスタム テンプレートを使用して Excel ライクなヘッダーおよび行セレクターを示します。
 
 <!-- NOTE this sample is differed -->
 
 <code-view style="height:550px"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
            github-src="{ComponentSample}/row-selection-template-excel"
-           alt="{Platform} {ComponentTitle} Selection Template Excel Example">
+           alt="{Platform} {ComponentTitle} 選択テンプレート Excel の例">
 </code-view>
 
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
-### Conditional Selection Demo
+### 条件付き選択のデモ
 
-This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
+このデモでは、`RowSelectionChanging` イベントと、選択できない行のチェックボックスが無効になっているカスタム テンプレートを使用して、一部の行が選択されないようにします。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-row-selectors"
            github-src="{ComponentSample}/conditional-row-selectors"
-           alt="{Platform} {ComponentTitle} Conditional Row Selectors Example">
+           alt="{Platform} {ComponentTitle} 条件行セレクターの例">
 </code-view>
 
-## API References
+## API リファレンス
 
 * `{ComponentName}`
 * `{ComponentName}Row`
 * `{ComponentName}Cell`
 
-## Additional Resources
+## その他のリソース
 
-* [{ComponentTitle} Overview](overview.md)
-* [Selection](selection.md)
-* [Cell selection](cell-selection.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Pinning](column-pinning.md)
-* [Column Resizing](column-resizing.md)
-* [Virtualization and Performance](virtualization.md)
+* [{ComponentTitle} 概要](overview.md)
+* [選択](selection.md)
+* [セル選択](cell-selection.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [仮想化とパフォーマンス](virtualization.md)
 
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid | 高速な $Platform$ テーブルの構築 | インフラジスティックス
+title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Grid']
@@ -32,7 +32,7 @@ _language: ja
 ## {Platform} Grid の例
 
 
-このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、カスタム ページングと、[改ページ](../_shared/paging.md)のページごとの使用部分も含まれています。
+このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、カスタム ページングと、[ページネーション](paging.md)のページごとの使用部分も含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -44,7 +44,7 @@ _language: ja
 
 
 
-## Ignite UI for {Platform}  Grid で作業を開始
+## Ignite UI for {Platform} Grid で作業を開始
 
 ### 依存関係
 
@@ -129,7 +129,7 @@ Ignite UI for {Platform} には、Flex に基づくレイアウト システム�
 
 グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-このトピックに続いて、[セル テンプレート](grid.md#cell-template)と[セル編集テンプレート](grid.md#cell-editing-template)および編集について詳しく学習します。
+このトピックに続いて、[セル テンプレート](grid.md#セル-テンプレート)と[セル編集テンプレート](grid.md#セル編集テンプレート)および編集について詳しく学習します。
 
 ## グリッドの列構成
 
@@ -353,13 +353,13 @@ constructor() {
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitlecase(ctx.cell.value)}</span>    
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
 public subscribtionCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />   
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
     `;
 }
 
@@ -369,13 +369,13 @@ public updateValue(value: boolean){
 public deleteRow(rowId: number){
 }
 
-public formatTitlecase(value: string) {;
+public formatTitleCase(value: string) {;
 }
 ```
 
 <!-- Angular -->
 
-`ngModel` を使用して**セル テンプレート**を介してデータを変更する場合、適切な API メソッドを呼び出して、Angular グリッドの基になるデータ コレクションで値が正しく更新されることを確認する必要があります。上記のスニペットでは、`ngModelChange` 呼び出しはグリッドの[編集 API](../_shared/cell-editing.md#editing-through-api) を通過し、グリッドの編集パイプラインを通過し、[トランザクション](batch-editing.md) (該当する場合) を適切にトリガーし、[集計](../_shared/summaries.md)、[選択](../_shared/selection.md)などの処理を行います。ただし、この `ngModelChange` はユーザーが編集を完了したときだけでなく、セルが変更され、より多くの API  呼び出しが発生します。
+`ngModel` を使用して**セル テンプレート**を介してデータを変更する場合、適切な API メソッドを呼び出して、Angular グリッドの基になるデータ コレクションで値が正しく更新されることを確認する必要があります。上記のスニペットでは、`ngModelChange` 呼び出しはグリッドの[編集 API](cell-editing.md#api-を介した編集) を通過し、グリッドの編集パイプラインを通過し、[トランザクション](batch-editing.md) (該当する場合) を適切にトリガーし、[集計](summaries.md)、[選択](selection.md)などの処理を行います。ただし、この `ngModelChange` はユーザーが編集を完了したときだけでなく、セルが変更され、より多くの API  呼び出しが発生します。
 
 <!-- end: Angular -->
 
@@ -388,7 +388,7 @@ public formatTitlecase(value: string) {;
 
 <!-- end: Angular -->
 
-適切に実装されると、セル編集テンプレートは、セルの `EditValue` がグリッド[編集イベント サイクル](editing.md#event-arguments-and-sequence)を正しく渡します。
+適切に実装されると、セル編集テンプレートは、セルの `EditValue` がグリッド[編集イベント サイクル](editing.md#イベントの引数とシーケンス)を正しく渡します。
 
 ### セル編集テンプレート
 
@@ -423,7 +423,7 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />    
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
     `;
 }
 
@@ -481,13 +481,13 @@ user.bodyTemplate = this.smallView;
 public normalViewTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="user-details">${ ctx.cell.value }</div>
-        <user-details-component></user-details-component>    
+        <user-details-component></user-details-component>
     `;
 }
 
 public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <div class="user-details-small">${ ctx.cell.value }</div>   
+        <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
 ```
@@ -566,7 +566,7 @@ constructor() {
 
 `OrderDate` 列は `Format` および `Timezone` プロパティのみに遵守しますが、`UnitPrice` は `DigitsInfo` のみに遵守します。
 
-すべての利用可能な列データ型は、公式の[列タイプトピック](../_shared/column-types.md#default-template)にあります。
+すべての利用可能な列データ型は、公式の[列タイプ トピック](column-types.md#デフォルトのテンプレート)にあります。
 
 ## グリッド データの構造
 
@@ -718,7 +718,7 @@ export class AppModule {}
 
 <!-- end: Angular -->
 
-**注: ** 以下のコードでは、サービスに加入する前に _records_ プロパティを空の配列に設定しています。Http 要求は非同期です。完了するまで _records_ プロパティは _undefined_ で、グリッドをプロパティにバインドするときにエラーが発生されます。デフォルト値に初期化するか、`BehaviorSubject` を使用します。
+**注:** 以下のコードでは、サービスに加入する前に _records_ プロパティを空の配列に設定しています。Http 要求は非同期です。完了するまで _records_ プロパティは _undefined_ で、グリッドをプロパティにバインドするときにエラーが発生されます。デフォルト値に初期化するか、`BehaviorSubject` を使用します。
 
 <!-- Angular -->
 ```typescript
@@ -750,11 +750,11 @@ export class MyComponent implements OnInit {
     </igx-grid>
 ```
 
-**注** リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
+**注**: リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
 
 ## 複雑なデータ バインディング
 
-`Grid`は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
 次のデータ モデルを見てください。
 ```typescript
@@ -803,7 +803,7 @@ interface AminoAcid {
 <!-- end: Angular -->
 
 `Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
-    - ネストされたデータを含むセルの`値`を使用します。
+    - ネストされたデータを含むセルの `value` を使用します。
     - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
 それをテンプレートに挿入します。
@@ -851,7 +851,7 @@ public getName(rowId: number){
     //row.data['name']
 }
 public getWeight(rowId: number){
-    //row.data['weight']['molecular'] 
+    //row.data['weight']['molecular']
 }
 ```
 
@@ -1147,18 +1147,18 @@ public updatePostalCode(rowId: number){
 
 詳細については、これらのリソースを参照してください。
 
- - [Grid キーボード ナビゲーション](../_shared/keyboard-navigation.md)
+ - [Grid キーボード ナビゲーション](keyboard-navigation.md)
  - [TreeGrid キーボード ナビゲーション](../tree-grid/keyboard-navigation.md)
  - [Hierarchical Grid キーボード ナビゲーション](../hierarchical-grid/keyboard-navigation.md)
  - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
 ## 状態保持
 
-新しい組み込み済みの [`GridState`](../_shared/state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+新しい組み込み済みの [`GridState`](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
 
 ## サイズ変更
 
-[Grid サイズ変更](../_shared/sizing.md) トピックを確認してください。
+[Grid サイズ変更](sizing.md) トピックを確認してください。
 
 
 <!-- Angular -->
@@ -1190,7 +1190,7 @@ platformBrowserDynamic()
 |グリッドの `width` が列幅に依存しない | すべての列の `width` でグリッド自体のスパンは決定しません。親コンテナーのディメンションまたは定義したグリッドの `width` で決定されます。|
 |親コンテナーでネストされた Grid | グリッドの `width` を設定せずに定義済みのディメンションで親コンテナーに配置した場合、グリッドがコンテナーに合わせてスパンします。|
 |グリッドの `OnPush` ChangeDetectionStrategy | `ChangeDetectionStrategy.OnPush` を処理し、カスタム表示されたときにグリッドに発生した変更について通知します。|
-| 列には設定可能な最小幅があります。`displayDensity` オプションに基づき、<br/>"最小": 56px <br/> "小": 64px <br/> "標準 ": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`displayDensity` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
+| 列には設定可能な最小幅があります。`displayDensity` オプションに基づき、<br/>"compact": 56px <br/> "cosy": 64px <br/> "comfortable": 80px があります。 | 許容される最小幅未満に設定した場合、描画される要素に影響はありません。`displayDensity` に対応する許容される最小幅で描画します。水平方向の仮想化は予期しない動作を招く場合があるためサポートしていません。
 | ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 
 ## API リファレンス
@@ -1223,17 +1223,17 @@ platformBrowserDynamic()
 
 ## その他のリソース
 
-* [Grid サイズ変更](../_shared/sizing.md)
-* [仮想化とパフォーマンス](../_shared/virtualization.md)
-* [ページング](../_shared/paging.md)
-* [フィルタリング](../_shared/filtering.md)
-* [ソート](../_shared/sorting.md)
-* [集計](../_shared/summaries.md)
-* [列移動](../_shared/column-moving.md)
-* [列のピン固定](../_shared/column-pinning.md)
-* [列のサイズ変更](../_shared/column-resizing.md)
-* [選択](../_shared/selection.md)
-* [列のデータ型](../_shared/column-types.md#default-template)
+* [Grid サイズ変更](sizing.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+* [列のデータ型](column-types.md#default-template)
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。

@@ -646,7 +646,7 @@ $custom-theme: grid-summary-theme(
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)

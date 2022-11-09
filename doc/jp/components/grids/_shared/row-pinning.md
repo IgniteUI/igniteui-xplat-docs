@@ -1,5 +1,5 @@
 ---
-title: Row Pinning in {Platform} {ComponentTitle} - Infragistics
+title: {Platform} {ComponentTitle} 行のピン固定 - インフラジスティックス
 _description: {Platform} の行ピン固定機能を使用して、豊富で使いやすい API で行をロックします。ユーザーが特定の順序で行をピン固定または特別な領域に複製することを許可します。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,22 +7,22 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {ComponentTitle} Row Pinning
+# {Platform} {ComponentTitle} 行のピン固定
 
-One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+単一または複数の行を {Platform} UI グリッドの上側または下側にピン固定できます。{ProductName} の**行ピン固定**を使用すると、エンドユーザーは特定の順序で行をピン固定し、`{ComponentName}` を垂直にスクロールしても常に表示される特別な領域に行を複製できます。Material UI Grid には組み込みの行ピン固定 UI が含まれており、`{ComponentName}` のコンテキストで `ActionStrip` コンポーネントを初期化することで有効になります。その他、カスタム UI を定義し、行のピン固定 API を介して行のピン固定状態を変更できます。
 
-## {Platform} {ComponentTitle} Row Pinning Example
+## {Platform} {ComponentTitle} 行ピン固定の例
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-options"
            github-src="{ComponentSample}/row-pinning-options"
-           alt="{Platform} {ComponentTitle} Row Pinning Example">
+           alt="{Platform} {ComponentTitle} 行ピン固定の例">
 </code-view>
 
-## Row Pinning UI
+## 行のピン固定 UI
 
-The built-in row pinning UI is enabled by adding an `ActionStrip` component with the `GridPinningActions` component. The action strip is automatically shown when hovering a row and will display a pin or unpin button icon based on the state of the row it is shown for. An additional action allowing to scroll the copy of the pinned row into view is shown for each pinned row as well.
+組み込みの行ピン固定 UI は、`GridPinningActions` コンポーネントと `ActionStrip` コンポーネントを追加することで有効になります。アクション ストリップは、行にカーソルを合わせると自動的に表示され、表示されている行の状態に基づいてピン固定またはピン固定解除ボタンのアイコンが表示されます。ピン固定された行のコピーをビューにスクロールする追加のアクションがピン固定された行ごとに表示されます。
 
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false">
@@ -60,9 +60,9 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 ```
 
 
-## Row Pinning API
+## 行のピン固定 API
 
-Row pinning is controlled through the `Pinned` input of the `Row`. Pinned rows are rendered at the top of the `{ComponentName}` by default and stay fixed through vertical scrolling of the unpinned rows in the `{ComponentName}` body.
+行のピン固定は `Row` の `Pinned` 入力によって制御されます。デフォルトでピン固定行は `{ComponentName}` の上側に固定して描画され、`{ComponentName}` 本体のピン固定されていない行は垂直スクロールされます。
 
 ```typescript
 this.grid.getRowByIndex(0).pinned = true;
@@ -72,7 +72,7 @@ this.grid.getRowByIndex(0).pinned = true;
 this.Grid.PinRow("ALFKI", 0);
 ```
 
-You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
+`{ComponentName}` の `PinRow` または `UnpinRow` メソッドを使用して ID によって行をピン固定またはピン固定解除できます。
 
 ```typescript
 this.grid.pinRow('ALFKI');
@@ -84,9 +84,9 @@ this.Grid.PinRow("ALFKI", 0);
 this.Grid.UnpinRow("ALFKI");
 ```
 
-Note that the row ID is the primary key value, defined by the `PrimaryKey` of the grid, or the record instance itself. Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the row is already in the desired state.
+注: 行の ID は、グリッドの `PrimaryKey` またはレコード インスタンス自体によって定義される主キー値です。両方のメソッドは操作に成功したかどうかを示すブール値を返します。よくある失敗の原因に行がすでにその状態になっていることがあります。
 
-A row is pinned below the last pinned row. Changing the order of the pinned rows can be done by subscribing to the `RowPinning` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
+行は、最後にピンされた行の下にピン固定されます。ピン固定行の順序を変更するには、`RowPinning` イベントでイベント引数の `InsertAtIndex` プロパティを適切な位置インデックスに変更します。
 
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="true" (rowPinning)="rowPinning($event)">
@@ -119,10 +119,10 @@ igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
 <!-- Angular -->
 
-## Pinning Position
+## ピン固定の位置
 
-You can change the row pinning position via the `Pinning` configuration option. It allows you to set the pin area position to either Top or Bottom.
-When set to Bottom pinned rows are rendered at the bottom of the grid, after the unpinned rows. Unpinned rows can be scrolled vertically, while the pinned rows remain fixed at the bottom.
+`Pinning` 設定オプションを使用して、行のピン固定の位置を変更できます。ピン固定の位置を Top または Bottom のいずれかに設定できます。
+[Bottom] に設定すると、行がピン固定されていない行の後に、グリッドの一番下にレンダリングされます。ピン固定されていない行は垂直にスクロールできますが、ピン固定された行は下側に固定されます。
 
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
@@ -155,14 +155,14 @@ public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
     }
 ```
 
-## Custom Row Pinning UI
+## カスタム行ピン固定 UI
 
-You can define your custom UI and change the pin state of the rows via the related API.
+カスタム UI を定義し、関連する API を介して行のピン状態を変更できます。
 
-### Via extra column with icon
+### アイコン付きの追加の列による
 
-Let's say that instead of an action strip you would like to show a pin icon in every row allowing the end-user to click and change a particular row's pin state.
-This can be done by adding an extra column with a cell template containing the custom icon.
+アクション ストリップの代わりに、すべての行にピンのアイコンを表示し、エンドユーザーが特定の行のピン状態をクリックして変更できます。
+カスタム アイコンを含むセル テンプレートの列を追加することで実行できます。
 
 ```razor
 <IgbColumn Width="70px" BodyTemplate=@bodyTemplate/>
@@ -194,7 +194,7 @@ This can be done by adding an extra column with a cell template containing the c
 </{ComponentSelector}>
 ```
 
-On click of the custom icon the pin state of the related row can be changed using the row's API methods.
+カスタムアイコンをクリックすると、関連する行のピン状態は、行の API メソッドを使用して変更できます。
 
 ```typescript
 public togglePinning(row: IgxGridRow, event) {
@@ -215,13 +215,13 @@ function togglePinning(rowIndex) {
 igRegisterScript("togglePinning", togglePinning, false);
 ```
 
-#### Demo
+#### デモ
 
 <code-view style="height:600px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
             iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
             github-src="{ComponentSample}/row-pinning-extra-column"
-            alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example">
+            alt="{Platform} {ComponentTitle} 行ピン固定の追加の列の例">
 </code-view>
 
 <!-- end: Angular -->
@@ -230,12 +230,12 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 <!-- Angular -->
 
-### Via Row Drag
+### 行のドラッグによる
 
-Let's say that you want to be able to directly drag and drop a row between the pinned and unpinned rows to change its pin state.
-This can be achieved by enabling the row drag feature and pinning/unpinning the rows via the API on drop.
+ピン状態を変更するために、ピン固定された行とピン固定されていない行の間に直接行をドラッグアンドドロップできるようにするとします。
+これは、行のドラッグ機能を有効にし、ドロップの際に API で行をピン固定/ピン固定解除することで実現できます。
 
-First, the grid should be marked as a drop area using the `igxDrop` directive and the row drag functionality should be enabled via the `rowDraggable` option.
+最初に、`igxDrop` ディレクティブによってグリッドをドロップ領域としてマークし、`rowDraggable` オプションで行のドラッグ機能を有効にします。
 
 ```html
 <igx-grid [data]="data" [autoGenerate]="true" [rowDraggable]="true"
@@ -243,7 +243,7 @@ First, the grid should be marked as a drop area using the `igxDrop` directive an
 </igx-grid>
 ```
 
-Then the `dropped` event can be used to handle the reorder and pin/unpin logic.
+次に、`dropped` イベントを使用して並べ替えとピン固定/ピン固定解除のロジックを処理できます。
 
 ```typescript
 public onDropAllowed(args) {
@@ -274,49 +274,49 @@ public onDropAllowed(args) {
 }
 ```
 
-This would allow reordering the rows and moving them between the pinned and unpinned row collections.
+これにより、行を並べ替えたり、ピン固定とピン固定解除の行コレクション間で移動できるようになります。
 
-#### Demo
+#### デモ
 
 <code-view style="height:510px"
             data-demos-base-url="{environment:dvDemosBaseUrl}"
             iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-drag"
             github-src="{ComponentSample}/row-pinning-drag"
-            alt="{Platform} {ComponentTitle} Row Pinning Drag Example">
+            alt="{Platform} {ComponentTitle} 行ピン固定ドラッグの例">
 </code-view>
 
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
-## Row Pinning Limitations
+## 行ピン固定の制限
 
-* Only records that exist in the data source can be pinned.
-* The row pinning state is not exported to excel. The grid is exported as if no row pinning is applied.
-* The copies of pinned rows in the scrollable area of the grid are an integral part of how other grid features achieve their functionality in the presence of pinned rows and therefore their creation cannot be disabled nor can they be removed.
-* As Row Selection works entirely with row Ids, selecting pinned rows selects their copies as well (and vice versa). Additionally, range selection (e.g. using Shift + click) within the pinned area works the same way as selecting a range of rows within the scrollable area. The resulting selection includes all rows in between even if they are not currently pinned. Getting the selected rows through the API only returns a single instance of each selected record.
+* データソースに存在するレコードのみをピン固定できます。
+* 行のピン固定状態は Excel にエクスポートされません。グリッドは行のピン固定が適用されずにエクスポートされます。
+* グリッドのスクロール可能領域におけるピン固定行のコピーは、ピン固定行が存在する状態で他のグリッド機能が動作するのに不可欠な役割を果たします。そのため、その生成を無効化または削除することはできません。
+* 行選択 は 行 ID のみで動作するため、ピン固定行を選択するとそのコピーも選択されます (逆も同様)。さらに、ピン固定領域での範囲選択 (Shift + クリックにより) は、スクロール可能な領域で行を範囲選択する場合と同じように機能します。結果として、間にある行はピン固定されていなくてもすべて選択されます。API を 介して選択した行を取得すると、選択した各レコードの単一のインスタンスのみを返します。
 
 <!-- Angular -->
-* Because of how pinned rows are stored internally so that they may appear both in the pinned and unpinned areas of the grid, row pinning is not supported when records in the grid are fetched from a remote endpoint on demand (remote virtualization).
-* When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
-    * Row Selection
-    * Row Expand/collapse
-    * Row Editing
-    * Row Pinning
+* ピン固定行が内部でグリッドのピン固定領域と非固定領域の両方に存在するよう保存される仕様上、グリッド内のレコードがオンデマンドでリモート エンドポイントから取得される場合 (リモート仮想化)、行のピン固定はサポートされません。
+* グリッドに `PrimaryKey` が設定されておらず、リモート データ シナリオが有効になっている場合 (ページング、ソート、フィルタリング、スクロール時に、グリッドに表示されるデータを取得するためのリモート サーバーへのリクエストがトリガーされる場合）、データ要求が完了すると、行は次の状態を失います:
+    * 行の選択
+    * 行の展開/縮小
+    * 行の編集
+    * 行のピン固定
 
 <!-- end: Angular -->
 
 <!-- Angular -->
 
-## Styling
+## スタイル設定
 
-The {ComponentName} allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
+{ComponentName} を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。{ComponentTitle} の [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、{ComponentTitle} のすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
-Below, we are going through the steps of customizing the {ComponentTitle}'s row pinning styling.
+以下では、{ComponentTitle} の行ピン固定スタイルをカスタマイズする手順を示します。
 
-### Importing the Styling Library
+### スタイル ライブラリのインポート
 
-To begin the customization of the row pinning feature, you need to import the `index` file, where all styling functions and mixins are located.
+行のピン固定機能のカスタマイズは、すべてのスタイリング機能とミックスインが配置されている `index` ファイルをインポートする必要があります。
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
@@ -325,9 +325,9 @@ To begin the customization of the row pinning feature, you need to import the `i
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-### Defining a Theme
+### テーマの定義
 
-Next, create a new theme, that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the row pinning feature as desired.
+次に、[`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、必要に応じて行のピン固定をカスタマイズするために必要なパラメーターを受け入れる新しいテーマを作成します。
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -340,19 +340,19 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
-### Using CSS Variables
+### CSS 変数の使用
 
-The last step is to pass the custom grid theme:
+最後にカスタム グリッド テーマを設定します。
 
 ```scss
 @include css-vars($custom-grid-theme);
 ```
 
-### Using Mixins
+### Mixin の使用
 
-In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
+Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
-If the component is using an [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
+コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。ただし、カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
 
 ```scss
 :host {
@@ -363,7 +363,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#表
 }
 ```
 
-### Demo
+### デモ
 
 <!-- NOTE this sample is differed -->
 
@@ -371,34 +371,34 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#表
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"
            github-src="{ComponentSample}/row-pinning-style"
-           alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
+           alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例">
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 
-## API References
+## API リファレンス
 * `{ComponentName}`
 * `{ComponentName}Row`
 * `RowType`
 
-## Additional Resources
+## その他のリソース
 
 
-* [{ComponentTitle} Overview](overview.md)
-* [Virtualization and Performance](virtualization.md)
-* [Paging](paging.md)
-* [Filtering](filtering.md)
-* [Sorting](sorting.md)
-* [Summaries](summaries.md)
-* [Column Moving](column-moving.md)
-* [Column Resizing](column-resizing.md)
-* [Selection](selection.md)
+* [{ComponentTitle} 概要](overview.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
 
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

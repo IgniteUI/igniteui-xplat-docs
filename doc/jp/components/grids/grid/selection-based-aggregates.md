@@ -16,9 +16,9 @@ _language: ja
 集計では、列のデータ タイプとニーズに応じて、`SummaryOperand`、`NumberSummaryOperand`.html、`DateSummaryOperand` のいずれかの基本クラスを拡張することにより、基本的な集計機能をカスタマイズできます。
 
 ## 選択
-選択したグリッド範囲のデータの操作を開始するには、グリッド選択の変更を通知するイベントにサブスクライブする必要があります。これは、`selected` イベントと `RangeSelection` イベントにサブスクライブすることで実行できます。選択機能では、単一のセル選択とセル範囲の選択が区別されるため、両方にバインドする必要があります。
+選択したグリッド範囲のデータの操作を開始するには、グリッド選択の変更を通知するイベントにサブスクライブする必要があります。これは、`selected` イベントと `rangeSelected` イベントにサブスクライブすることで実行できます。選択機能では、単一のセル選択とセル範囲の選択が区別されるため、両方にバインドする必要があります。
 
-イベント サブスクリプション ロジックでは、グリッド `getSelectedData`.html#getSelectedData 関数を使用して選択したデータを抽出し、選択したデータをカスタム集計オペランドに渡すことができます。
+イベント サブスクリプション ロジックでは、グリッド `getSelectedData`.html#getSelectedData) 関数を使用して選択したデータを抽出し、選択したデータをカスタム集計オペランドに渡すことができます。
 
 
 ## 集計
@@ -62,8 +62,8 @@ const dates = data.filter(rec => isDate(rec));
 
 * [Grid の概要](grid.md)
 * [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
-* [行選択](row-selection.md)
-* [セル選択](cell-selection.md)
+* [行の選択](row-selection.md)
+* [セルの選択](cell-selection.md)
 * [NumberSummaryOperand]({environment:{Platform}ApiUrl}/classes/numbersummaryoperand.html)
 * [DateSummaryOperand]({environment:{Platform}ApiUrl}/classes/datesummaryoperand.html)
 * [集計](summaries.md)

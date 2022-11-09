@@ -88,4 +88,4 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 最後に、`GridToolbarComponent`、`GridToolbarHidingComponent`、`GridToolbarPinningComponent`、`GridToolbarExporterComponent` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
 
 ### プライマリと外部キー
-**primary and foreign keys** オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。
+**プライマリと外部キー**オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。

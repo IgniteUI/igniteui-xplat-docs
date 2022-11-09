@@ -402,7 +402,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
     <li>[列のサイズ変更](grid/column-resizing.md)</li>
     <li>[列の非表示](grid/column-hiding.md)</li>
     <!-- <li>[リモート データのロードオンデマンド](grid/virtualization.md#リモート仮想化)</li> -->
-    <!-- <li>[セル テンプレート](grid/grid.md#cell-template)</li>
+    <!-- <li>[セル テンプレート](grid/grid.md#セル-テンプレート)</li>
     <li>[ARIA/a11y サポート](interactivity/accessibility-compliance.md)</li> -->
 </ul>
 </div>

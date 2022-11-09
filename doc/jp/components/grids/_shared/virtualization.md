@@ -67,7 +67,7 @@ Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
 * [集計](summaries.md)
-* [列移動](column-moving.md)
+* [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
