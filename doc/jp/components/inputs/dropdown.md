@@ -66,6 +66,7 @@ IgrDropdownModule.register();
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 ```
+
 <!-- end: Blazor -->
 
 `Dropdown` の使用を開始する最も簡単な方法は次のとおりです:

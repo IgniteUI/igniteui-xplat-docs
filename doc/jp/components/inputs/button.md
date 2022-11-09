@@ -60,6 +60,8 @@ IgrButtonModule.register();
 
 
 ```razor
+// in Program.cs file
+
 builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 ```
 

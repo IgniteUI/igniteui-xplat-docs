@@ -1,10 +1,10 @@
 ---
-title: {Platform} {ComponentTitle} での一括編集とトランザクション - インフラジスティックス
-_description: {Platform} {ComponentTitle} を使用して、{ComponentTitle} 一括編集で基になるデータに影響を与えずにデータ操作を実行します。デモと例をご覧ください!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, $ProductName$, インフラジスティックス
-_language: ja
+title: での一括編集とトランザクション - インフラジスティックス
+_description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
+_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+_language: ja
 ---
 
 <!-- NOTE DO NOT change this file because it is used as a template  -->
@@ -20,23 +20,27 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 <!-- EXAMPLE of razor code snippet that is automatically filtered for Blazor -->
 
 ```razor
+<IgbGrid></IgbGrid>
+```
+
+```razor
 <{ComponentSelector} data="data" >
 </{ComponentSelector}>
 ```
 
-<!-- EXAMPLE of build flagging content for single components: -->
+<!-- EXAMPLE of build flagging content for single component: -->
 <!-- ComponentStart: PivotGrid -->
-{ComponentName} の一括編集機能は、`HierarchicalTransactionService` に基づく {ComponentName} です。[Transaction Service クラス階層](transaction-classes.md)のトピックに従って、`HierarchicalTransactionService` の概要と実装方法の詳細を確認してください。
+`{ComponentName}` の一括編集機能は、`HierarchicalTransactionService` に基づいています。[トランザクション サービス クラス階層](transaction-classes.md)トピックに従って、`HierarchicalTransactionService` の概要と実装方法の詳細を確認してください。
 <!-- ComponentEnd: PivotGrid -->
 
 <!-- EXAMPLE of build flagging content for multiple components: -->
 <!-- ComponentStart: PivotGrid, HierarchicalGrid -->
-{ComponentName} の一括編集機能は、`TransactionService` に基づいています。[Transaction Service クラス階層](transaction-classes.md)のトピックに従って、`TransactionService` の概要と実装方法の詳細を確認してください。
+`{ComponentName}` の一括編集機能は、`TransactionService` に基づいています。[トランザクション サービス クラス階層](transaction-classes.md)トピックに従って、`TransactionService` の概要と実装方法の詳細を確認してください。
 <!-- ComponentEnd: PivotGrid, HierarchicalGrid -->
 
 <!-- EXAMPLE of build flagging content for single components: -->
 <!-- ComponentStart: HierarchicalGrid -->
-HierarchicalTransactionService を使用した場合も各アイランドに個別のトランザクション ログを累積させるには、代わりにサービス ファクトリが必要です。エクスポートされると `HierarchicalTransactionServiceFactory` として利用できます。
+`HierarchicalTransactionService` を使用した場合も各アイランドに個別のトランザクション ログを累積させるには、代わりにサービス ファクトリが必要です。エクスポートされると `HierarchicalTransactionServiceFactory` として利用できます。
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -47,10 +51,10 @@ HierarchicalTransactionService を使用した場合も各アイランドに個�
 
 <!-- EXAMPLE of embedding sample with ComponentSample path variable -->
 <code-view style="height:510px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-advanced-filtering"
-           github-src="{ComponentSample}/advanced-filtering"
-           alt="{Platform} {ComponentName} 高度なフィルタリングの例">
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
+           github-src="{ComponentSample}/advanced-filtering-options"
+           alt="{Platform} {ComponentTitle} 高度なフィルタリングの例">
 </code-view>
 
 
@@ -64,12 +68,12 @@ HierarchicalTransactionService を使用した場合も各アイランドに個�
 
 <!-- EXAMPLE of Blazor code snippet with module variable -->
 <!-- Blazor -->
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof({ComponentModule}));
 ```
+
 <!-- end: Blazor -->
 
 <!-- EXAMPLE of React/WC code snippet with module variable that will be resolved to actual module, e.g. {ComponentModule} -> IgcPivotGridModule  -->
@@ -113,9 +117,9 @@ export class AppModule {}
 
 ## {Platform} {ComponentTitle} のトランザクション
 
-これにより、`Transaction` サービスの適切なインスタンスが {ComponentSelector} に提供されます。適切な `TransactionService` は `TransactionFactory` を通じて提供されます。この内部実装の詳細については、`TransactionFactory` クラスを参照してください。
+これにより、`Transaction` サービスの適切なインスタンスが `{ComponentName}` に提供されます。適切な `TransactionService` は `TransactionFactory` を通じて提供されます。この内部実装の詳細については、`TransactionFactory` クラスを参照してください。
 
-一括編集を有効にした後、バインドされたデータ ソースと `RowEditable` を true に設定して {ComponentSelector} を定義し、バインドします:
+一括編集を有効にした後、バインドされたデータ ソースと `RowEditable` を true に設定して `{ComponentName}` を定義し、バインドします:
 
 <!-- EXAMPLE of a code snippet that applies only to Grid component  -->
 <!-- ComponentStart: Grid -->
@@ -132,6 +136,13 @@ export class AppModule {}
 ```
 <!-- ComponentEnd: Grid -->
 
+<!-- ComponentStart: Grid -->
+```razor
+<IgbGrid batchEditing="true" data="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
+
+</IgbGrid>
+```
+<!-- ComponentEnd: Grid -->
 
 <!-- EXAMPLE of a code snippet that applies only to TreeGrid  -->
 <!-- ComponentStart: TreeGrid -->

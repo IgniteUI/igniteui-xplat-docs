@@ -79,7 +79,7 @@ worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ## ヘッダーの構成
 列ヘッダーと行ヘッダーは、列と行を視覚的に特定するために使用します。また、現在選択されているセルやセル領域を強調表示する場合にも使用します。
 
-列と行のヘッダーは、ワークシートの `DisplayOptions`  の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
+列と行のヘッダーは、ワークシートの `DisplayOptions` の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
@@ -286,7 +286,7 @@ worksheet.Protect();
 ## ワークシートの条件付き書式設定
 `Worksheet` の条件付き書式を設定するには、ワークシートの `ConditionalFormats` コレクションで公開される多数の Add メソッドを使用できます。この Add メソッドの最初のパラメーターは条件付き書式に適用する Worksheet の `string` 領域です。
 
-Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell`  要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
+Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell` 要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
 
 ワークシート セルの可視化の動作が異なるため、`CellFormat` プロパティがない条件付き書式もあります。この条件付き書式は `DataBarConditionalFormat`、`ColorScaleConditionalFormat`、`IconSetConditionalFormat` です。
 

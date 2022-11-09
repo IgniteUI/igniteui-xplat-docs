@@ -1,7 +1,7 @@
 ---
-title: $Platform$ Excel ライブラリ | 数式の自動計算を一時的に停止して処理速度を上げる | インフラジスティックス
+title: {Platform} Excel ライブラリ | 数式の自動計算を一時的に停止して処理速度を上げる | インフラジスティックス
 _description: Infragistics Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる
-_keywords: $Platform$ excel ライブラリ, 計算, 処理の高速化, $ProductName$, インフラジスティックス
+_keywords: {Platform} excel ライブラリ, 計算, 処理の高速化, $ProductName$, インフラジスティックス
 _language: ja
 mentionedTypes: []
 ---
