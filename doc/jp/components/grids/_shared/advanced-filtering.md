@@ -1,12 +1,11 @@
 ---
-title: {Platform} {ComponentTitle} の高度なフィルタリング - {ProductName}
+title: {Platform} {ComponentTitle} for {ProductName} の高度なフィルタリング
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
-}
 
 
 # {Platform} {ComponentTitle} 高度なフィルタリング
@@ -88,7 +87,7 @@ ngAfterViewInit(): void {
 <!-- Angular -->
 ## 外部の高度なフィルタリング
 
-As you see in the demo above, the advanced filtering dialog is hosted in an overlay on top of the `{ComponentName}`. ダイアログのセットアップの準備ができたときに、適用または閉じる操作によってダイアログが非表示になります。ダイアログはスタンドアロン コンポーネントとして使用した場合、常に表示になります。以下のデモでは、高度なフィルタリングダイアログが `{ComponentName}` とは別に宣言されます。
+上記デモで示されるように、高度なフィルタリング ダイアログは、`{ComponentName}` の上にあるオーバーレイでホストされます。ダイアログのセットアップの準備ができたときに、適用または閉じる操作によってダイアログが非表示になります。ダイアログはスタンドアロン コンポーネントとして使用した場合、常に表示になります。以下のデモでは、高度なフィルタリングダイアログが `{ComponentName}` とは別に宣言されます。
 
 ### デモ
 
@@ -100,7 +99,7 @@ As you see in the demo above, the advanced filtering dialog is hosted in an over
 
 ### 使用方法
 
-It's super easy to configure the advanced filtering to work outside of the `{ComponentName}`. ダイアログを作成して、その **grid** プロパティを設定するだけです。
+`{ComponentName}` の外部で動作するように高度なフィルタリングを構成する方法は簡単です。ダイアログを作成して、その **grid** プロパティを設定するだけです。
 
 ```html
 <igx-advanced-filtering-dialog [grid]="grid1">
@@ -415,7 +414,7 @@ $custom-drop-down: drop-down-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 

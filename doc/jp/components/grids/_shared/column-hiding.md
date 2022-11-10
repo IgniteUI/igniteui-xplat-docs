@@ -10,7 +10,7 @@ _language: ja
 # {Platform} {ComponentTitle} の列非表示
 
 <!-- Angular -->
-{ProductName} `{ComponentName}` は、`ColumnHidingDirective` のある `ColumnActionsComponent` を提供し、ユーザーが **UI** を介して、または {Platform} コンポーネントを使用して列の非表示を実行できるようにします。
+{ProductName} `{ComponentName}` は、`ColumnHidingDirective` のある `ColumnActionsComponent` を提供し、ユーザーが UI を介して、または {Platform} コンポーネントを使用して列の非表示を実行できるようにします。
 <!-- end: Angular -->
 
 Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI があり、これを `{ComponentName}` のツールバーから使用して列の表示状態を変更できます。更に別のコンポーネントとして列非表示 UI を定義してページの必要な場所に配置できます。
@@ -283,7 +283,7 @@ export class AppModule {}
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
            github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} カスタム列非表示の例">
+           alt="{Platform} {ComponentTitle} カスタム列非表示の例" >
 </code-view>
 
 ## スタイル設定

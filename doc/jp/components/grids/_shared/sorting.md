@@ -123,7 +123,7 @@ this.grid.clearSort();
 
 ## 初期のソート状態
 
-`{ComponentName}` でソート状態を初期設定するには、ソート``式の配列を `{ComponentName}` の `SortingExpressions` プロパティに渡します。
+`{ComponentName}` でソート状態を初期設定するには、ソート式の配列を `{ComponentName}` の `SortingExpressions` プロパティに渡します。
 
 <!-- Angular -->
 ```typescript
@@ -356,7 +356,7 @@ $custom-theme: grid-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 

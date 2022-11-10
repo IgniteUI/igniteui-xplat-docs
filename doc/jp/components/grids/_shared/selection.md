@@ -31,7 +31,7 @@ _language: ja
 
 - `None` - `{ComponentName}` の行選択が無効になります。
 - `Single` - `{ComponentName}` 内の 1 行のみの選択が利用可能になります。
-- `Multiple` - 複数行の選択は、<kbd>Ctrl</kbd> + <kbd>クリック</kbd>、<kbd>Space キー</kbd>を押して行セレクターを使用することにより、複数行の選択が可能になります。
+- `Multiple` - 複数行の選択は、<kbd>Ctrl</kbd> + <kbd>クリック</kbd>、<kbd>Space キー</kbd> を押して行セレクターを使用することにより、複数行の選択が可能になります。
 
 <!-- ComponentStart: TreeGrid -->
 
@@ -57,8 +57,8 @@ _language: ja
 
 以下の 3 つのバリエーションがあります。
 
-- `Single selection` (単一選択) - 列セルを<kbd>マウス クリック</kbd>します。
-- `Multi column selection` (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリック</kbd>します。
+- `Single selection` (単一選択) - 列セルを<kbd>マウス クリックします</kbd>。
+- `Multi column selection` (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
 - `Range column selection` (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
 > 詳細については、[列選択トピック](column-selection.md)を参照してください。
@@ -111,7 +111,7 @@ TO DO
 
 以下はコンテキストメニューの機能です。
 
-- 選択したセルの値のコピー。
+- 選択したセルの *value* のコピー。
 - 選択したセルの *dataRow* のコピー。
 - 選択したセルが**複数セルの選択範囲**内にある場合、選択したすべてのデータをコピーします。
 

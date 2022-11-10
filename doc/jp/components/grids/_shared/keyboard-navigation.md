@@ -103,7 +103,7 @@ _language: ja
  <!-- ComponentStart: TreeGrid -->
   現在のノードを縮小します。
  <!-- ComponentEnd: TreeGrid -->
- - <kbd>Alt + 右矢印</kbd> または<kbd>Alt + 下矢印</kbd> -  <!-- ComponentStart: Grid -->
+ - <kbd>Alt + 右矢印</kbd> または <kbd>Alt + 下矢印</kbd> -  <!-- ComponentStart: Grid -->
   グループ行はグループを展開します。
  <!-- ComponentEnd: Grid -->
  <!-- ComponentStart: HierarchicalGrid -->
@@ -114,7 +114,7 @@ _language: ja
  <!-- ComponentEnd: TreeGrid -->
  <!-- ComponentStart: Grid -->
  - <kbd>Alt + 左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - マスター/詳細行で詳細ビューを縮小します。
- - <kbd>Alt + 右矢印</kbd> または<kbd>Alt + 下矢印</kbd> - マスター/詳細行で詳細ビューを展開します。
+ - <kbd>Alt + 右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - マスター/詳細行で詳細ビューを展開します。
  - <kbd>Space</kbd> - グループ行上 - `RowSelection` プロパティが複数に設定されている場合、グループ内のすべての行を選択します。
  <!-- ComponentEnd: Grid -->
 
@@ -306,11 +306,11 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 ## API リファレンス
 
-* [{ComponentTitle} コンポーネント API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
 
 <!-- Angular -->
 
-* [{ComponentTitle} コンポーネント スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 

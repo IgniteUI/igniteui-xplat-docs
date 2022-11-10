@@ -1,5 +1,5 @@
 ---
-title:  {Platform} {ComponentTitle} の Excel スタイル フィルタリング - {ProductName}
+title: {Platform} {ComponentTitle} for {ProductName} の Excel スタイル フィルタリング
 _description: {Platform} {ComponentTitle} で Excel フィルタリングを構成する方法を説明します。さまざまなオプションを有効/無効にし、Excel スタイル フィルター メニューを自由にカスタマイズできます。
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel のようなフィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -775,7 +775,7 @@ $custom-drop-down: drop-down-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 ## API リファレンス

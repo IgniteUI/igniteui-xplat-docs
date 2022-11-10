@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} ページング - インフラジスティックス
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページネーション, インフラジスティックス
+_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページング, インフラジスティックス
 _language: ja
 ---
 
@@ -227,7 +227,7 @@ $dark-button: button-theme(
 
 上記のように色の値をハードコーディングする代わりに、`Palette` および `Color` 関数を使用することによって色に関してより高い柔軟性を持つことができます。
 
-`Palette` generates a color palette based on the primary and secondary colors that are passed:
+`Palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
 
 ```scss
 $yellow-color: #F9D342;

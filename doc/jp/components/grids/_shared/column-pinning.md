@@ -377,7 +377,7 @@ $custom-theme: grid-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

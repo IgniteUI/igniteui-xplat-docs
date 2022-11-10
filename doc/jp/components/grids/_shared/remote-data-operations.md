@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、Ignite UI for {Platform} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページネーション, リモート データ, インフラジスティックス
+_keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページング, リモート データ, インフラジスティックス
 _language: ja
 ---
 
@@ -828,7 +828,7 @@ BLAZOR CODE SNIPPET HERE
            alt="{Platform} {ComponentTitle} リモート ページングのカスタム ページングの例">
 </code-view>
 
-以下に、独自の `[次]` および `[前]` のページ操作を実装するために定義したメソッドを示します。
+以下に、独自の `next` および `previous` のページ操作を実装するために定義したメソッドを示します。
 
 ```typescript
 @ViewChild('grid1', { static: true }) public grid1: IgxGridComponent;

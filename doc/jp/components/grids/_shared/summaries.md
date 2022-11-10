@@ -41,7 +41,7 @@ _language: ja
  - Earliest
  - Latest
 
-すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#default-template)にあります。
+すべての利用可能な列データ型は、公式の[列タイプトピック](column-types.md#デフォルトのテンプレート)にあります。
 
 `HasSummary` プロパティを **true** に設定すると `{ComponentName}` 集計が列レベルで有効になります。各列の集計は列のデータ型に基づいて解決されます。`{ComponentName}` のデフォルトの列データ型は `string` のため、`number` または `date` 固有の集計を適用するには、`DataType` プロパティを `number` または `date` に設定します。集計値は、グリッドの `Locale` および列 `PipeArgs` に従ってローカライズされて表示されます。
 
@@ -445,12 +445,12 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
  - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
  - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
-以下は使用できる `summaryCalculationMode` プロパティの値です。
+以下は使用できる `SummaryPosition` プロパティの値です。
 
  - `Top` - 集計行はグループ列の子の前に表示されます。
  - `Bottom` - 集計行はグループ列の子の後に表示されます。これがデフォルト値です。
 
-`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが  **true**  に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
+`ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
 
 > [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
@@ -479,7 +479,7 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
  - `ChildLevelsOnly` - 子レベルのみ集計が計算されます。
  - `RootAndChildLevels` - ルートと子レベルの両方の集計が計算されます。これがデフォルト値です。
 
-以下は使用できる `summaryCalculationMode` プロパティの値です。
+以下は使用できる `SummaryPosition` プロパティの値です。
 
  - `Top` - 集計行は子行のリストの前に表示されます。
  - `Bottom` - 集計行は子行のリストの後に表示されます。これがデフォルト値です。

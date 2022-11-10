@@ -17,17 +17,17 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `ソート`
-* `フィルタリング`
-* `高度なフィルタリング`
-* `ページング`
-* `セルの選択`
-* `行の選択`
-* `列の選択`
-* `行のピン固定`
-* `展開`
-* `グループ化`
-* `複数の列`
+* `Sorting`
+* `Filtering`
+* `Advanced Filtering`
+* `Paging`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `RowPinning`
+* `Expansion`
+* `GroupBy`
+* `Columns`
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
@@ -37,18 +37,18 @@ _language: ja
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-* `行アイランド`
+* `RowIslands`
     * 階層のすべての子グリッドの保存/復元機能
-* `ソート`
-* `フィルタリング`
-* `高度なフィルタリング`
-* `ページング`
-* `セルの選択`
-* `行の選択`
-* `列の選択`
-* `行のピン固定`
-* `展開`
-* `複数の列`
+* `Sorting`
+* `Filtering`
+* `AdvancedFiltering`
+* `Paging`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `RowPinning`
+* `Expansion`
+* `Columns`
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
@@ -58,13 +58,13 @@ _language: ja
 
 <!-- ComponentStart: PivotGrid -->
 
-* `ソート`
-* `フィルタリング`
-* `セルの選択`
-* `行の選択`
-* `列の選択`
-* `展開`
-* `ピボット構成`
+* `Sorting`
+* `Filtering`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `Expansion`
+* `PivotConfiguration`
     * `IPivotConfiguration` インターフェイスによって定義されるピボット構成プロパティ。
     * ピボットのディメンションと値の関数は、アプリケーションレベルのコードを使用して復元されます。「[ピボット構成の復元](state-persistence.md#ピボット構成の復元)」セクションを参照してください。
     * ピボットの行と列のストラテジもアプリケーション レベルのコードを使用して復元されます。「[ピボットのストラテジの復元](state-persistence.md#ピボットのストラテジの復元)」セクションを参照してください。

@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} の条件付きセルのスタイル設定 - {ProductName}
+title: {Platform} {ComponentTitle} for {ProductName} の条件付きセルのスタイル設定
 _description: ユーザーが異なるセルをすばやく識別できるようにします。さまざまなセルのスタイル設定を定義します。{Platform} {ComponentTitle} の条件付きセル スタイル設定を使用してセルを目立たせます。
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics, 条件付きスタイル設定, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -379,7 +379,7 @@ Add hierarchical grid example
 
 - `Column` 入力を使用して、キーがスタイル プロパティであり、値が評価用の式であるオブジェクト リテラルを受け取る `CellStyles`。
 
-> `CellStyles` と `CellClasses` の両方のコールバック シグネチャが次のように変更されました。
+> `cellStyles` と `cellClasses` の両方のコールバック シグネチャが次のように変更されました。
 
 ```ts
 (rowData: any, columnKey: string, cellValue: any, rowIndex: number) => boolean

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - Ignite UI for {Platform}
 _description: Ignite UI for {Platform} の仮想化ディレクティブは、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
-_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform} {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
+_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentTitle}, 'Virtualization']
@@ -47,7 +47,7 @@ Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf
 
 ## 仮想化の制限
 
-*   Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを "Always"に変更するとスクロールが表示されます。
+*   Mac OS で 「Show scrollbars only when scrolling」システム オプションを true (デフォルト値) に設定した場合、水平スクロールバーが表示されません。これは、`{ComponentName}` の行コンテナーで、overflow が hidden に設定されているためです。オプションを「Always」に変更するとスクロールが表示されます。
 
 ## FAQ
 
