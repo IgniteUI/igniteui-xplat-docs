@@ -306,11 +306,11 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 ## API リファレンス
 
-* [{ComponentTitle} コンポーネント API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
 
 <!-- Angular -->
 
-* [{ComponentTitle}Component スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 

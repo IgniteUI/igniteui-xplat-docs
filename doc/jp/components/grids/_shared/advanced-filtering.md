@@ -1,12 +1,11 @@
 ---
-title: {Platform} {ComponentTitle} の高度なフィルタリング - {ProductName}
+title: {Platform} {ComponentTitle} for {ProductName} の高度なフィルタリング
 _description: {Platform} {ComponentTitle} でデータの高度なフィルターを設定する方法。グリッドの高度なフィルタリングがより使いやすくなりました。
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
-}
 
 
 # {Platform} {ComponentTitle} 高度なフィルタリング
@@ -415,7 +414,7 @@ $custom-drop-down: drop-down-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 

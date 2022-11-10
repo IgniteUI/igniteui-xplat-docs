@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} のフィルタリング - {ProductName}
+title: {Platform} {ComponentTitle} for {ProductName} のフィルタリング
 _description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
 _keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -595,7 +595,7 @@ $custom-input-group: input-group-theme(
 </code-view>
 
 >[!NOTE]
->サンプルは、`テーマの変更`で選択したグローバル テーマの影響を受けません。
+>サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 

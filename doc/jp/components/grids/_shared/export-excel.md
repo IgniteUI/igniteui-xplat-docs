@@ -193,8 +193,8 @@ import 'setimmediate';
 
 使用したその他のコンポーネント:
 
-* [{ComponentTitle}Component API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle}Component スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
+* [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## その他のリソース
 

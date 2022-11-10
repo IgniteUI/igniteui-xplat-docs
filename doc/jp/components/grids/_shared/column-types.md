@@ -1,5 +1,5 @@
 ---
-title: {Platform} 列のデータ タイプ - {ProductName}
+title: {Platform} for {ProductName} 列のデータ タイプ
 _description: いくつかの定義済みの列データ型 - number、string、date、boolean、currency、percent 列 - から選択して {Platform} のセルおよび編集テンプレートを処理します。
 _keywords: Column Data Type, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
 mentionedTypes: [{ComponentApiMembers}]
@@ -148,7 +148,7 @@ public timeFormats = [
 #### フィルタリング
 
 クイック フィルタリング/Excel スタイル フィルタリングに関しては、上記と同じエディターが使用されます。これらは、各タイプが公開する次のフィルタリング オペランドです。
-- `DateTime` and `Date` - Equals、Does Not Equal、Before、After、Today、Yesterday、This Month、Last Month、Next Month、This Year、Last Year、Next Year、Empty、Not Empty、Null、Not Null;
+- `DateTime` および `Date` - Equals、Does Not Equal、Before、After、Today、Yesterday、This Month、Last Month、Next Month、This Year、Last Year、Next Year、Empty、Not Empty、Null、Not Null;
 - `Time` - At、Not At、Before、After、At or Before、At or After、Empty、Not Empty、Null、Not Null;
 
 #### 集計
