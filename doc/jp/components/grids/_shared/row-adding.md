@@ -125,7 +125,7 @@ export class AppModule {}
 > プライマリ キーは行追加操作で必須です。
 
 > [!NOTE]
-> プライマリ キーを除くすべての列は、デフォルトで行追加 UI で編集可能です。特定の列の編集を無効にする場合、`Editable` 列の入力を `false` に設定します。
+> プライマリ キーを除くすべての列は、デフォルトで行追加 UI で編集可能です。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 

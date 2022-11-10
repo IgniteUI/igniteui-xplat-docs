@@ -98,7 +98,7 @@ export class AppModule {}
 > プライマリキーは行編集操作で必須です。
 
 > [!NOTE]
-> 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を `false` に設定します。
+> 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
