@@ -374,7 +374,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 

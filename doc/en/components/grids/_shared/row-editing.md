@@ -346,7 +346,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 ## Known Issues and Limitations
 

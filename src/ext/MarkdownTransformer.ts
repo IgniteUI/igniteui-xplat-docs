@@ -196,7 +196,7 @@ function transformCodeRefs(options: any) {
         }
         if (memberHasCharSpace && !memberHasCharDot) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
-           // transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
+            transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
 
         // if (memberName.includes("Igc", 0)) {

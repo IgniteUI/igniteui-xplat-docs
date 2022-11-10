@@ -376,7 +376,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

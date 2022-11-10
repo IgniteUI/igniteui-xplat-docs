@@ -302,7 +302,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 

@@ -239,7 +239,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->
 

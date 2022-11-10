@@ -87,7 +87,7 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 > [!NOTE]
 > The above statement also applies to the `ColumnGroupComponent`, except that when the `Selected` property is changed it changes the state of its descendants.
 
-More information regarding the API manipulations could be found in the [`API References`](#api-references) section.
+More information regarding the API manipulations could be found in the [API References](#api-references) section.
 
 <!-- Angular -->
 
@@ -198,7 +198,7 @@ TO DO
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
