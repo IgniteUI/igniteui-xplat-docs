@@ -277,7 +277,7 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 `{ComponentName}` が提供するもう 1 つの便利な API メソッドが `SelectAll` です。このメソッドはデフォルトですべてのデータ行を選択しますが、フィルタリングが適用される場合、フィルター条件に一致する行のみが選択されます。ただし、*false* パラメーターを指定してメソッドを呼び出すと、`SelectAll(false)` は、フィルターが適用されているかどうかに関係なく、常にグリッド内のすべてのデータを選択します。
 
-> **注:** `SelectAll()`  は削除された行を選択しないことに注意してください。
+> **注:** `SelectAll()` は削除された行を選択しないことに注意してください。
 
 ### 全行の選択解除
 

@@ -27,7 +27,7 @@ _language: ja
 フィルタリングが有効かどうか、およびどのフィルタリング モードを使用するかを指定するために、{ComponentName} は次のブール プロパティを公開します - `AllowFiltering`、`AllowAdvancedFiltering`、`FilterMode` と `Filterable`。
 
 以下のオプションは、プロパティ `AllowFiltering` で指定できます。
-- **false** - 対応するグリッドのフィルタリングが無効になります 。これがデフォルト値です。
+- **false** - 対応するグリッドのフィルタリングが無効になります。これがデフォルト値です。
 - **true** - 対応するグリッドのフィルタリングが有効になります。
 
 以下のオプションは、プロパティ `AllowAdvancedFiltering` で指定できます。
@@ -35,12 +35,12 @@ _language: ja
 - **true** - 対応するグリッドの高度なフィルタリングが有効になります。
 
 以下のオプションは、プロパティ `FilterMode` で指定できます。
-- **QuickFilter** - 簡易なフィルタリング UI 。これがデフォルト値です。
+- **QuickFilter** - 簡易なフィルタリング UI。これがデフォルト値です。
 - **ExcelStyleFilter** - Excel のようなフィルタリング UI。
 
 以下のオプションは、プロパティ `Filterable` で指定できます。
 - **true** - 対応する列のフィルタリングが有効になります。これがデフォルト値です。
-- **false** - 対応する列のフィルタリングが無効になります 。
+- **false** - 対応する列のフィルタリングが無効になります。
 
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" [allowFiltering]="true">

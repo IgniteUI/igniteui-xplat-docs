@@ -1,7 +1,7 @@
 ---
 title: {Platform} Grid 表示密度 - {ProductName}
 _description: {ComponentTitle} コンポーネントに表示密度機能を適用する方法を説明します。{ProductName} のコンパクト ビュー オプションのセットを使用できます。
-_keywords:  material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
+_keywords: material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja

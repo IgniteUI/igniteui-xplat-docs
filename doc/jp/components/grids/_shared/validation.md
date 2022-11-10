@@ -112,7 +112,7 @@ _language: ja
 - `UpdateRow`、`UpdateCell` などの API を使用してセル / 行を更新する場合 。
 - トランザクション サービスの一括編集および `Undo`/`Redo` API を使用する場合。
 
-> 注: ユーザー入力または編集 API で編集されていないレコードに対しては、検証はトリガーされません。セルの視覚的なインジケーターは、ユーザー操作または検証サービスの `markAsTouched` API を介して入力がタッチ済みと見なされる場合のみ表示されます。
+> 注: ユーザー入力または編集 API で編集されていないレコードに対しては、検証はトリガーされません。セルの視覚的なインジケーターは、ユーザー操作または検証サービスの `MarkAsTouched` API を介して入力がタッチ済みと見なされる場合のみ表示されます。
 
 <!-- Angular -->
 
@@ -320,7 +320,7 @@ public stateMessage(cell: IgxGridCell) {
 
 <!-- ComponentStart:HierarchicalGrid -->
 
-クロス フィールド検証は、`formGroupCreated` イベントで formGroup に追加できます。その中で複数のフィールドの有効状態を比較できます。
+クロス フィールド検証は、`FormGroupCreated` イベントで formGroup に追加できます。その中で複数のフィールドの有効状態を比較できます。
 
 ```ts
   public formCreateCustomerHandler(event: IGridFormGroupCreatedEventArgs) {
@@ -458,7 +458,7 @@ private rowValidator(): ValidatorFn {
 ```html
 <igx-tree-grid igxPreventDocumentScroll #treeGrid [batchEditing]="true" [data]="data" primaryKey="ID"
     foreignKey="ParentID" [width]="'100%'" [height]="'500px'" [rowEditable]="true" [pinning]="pinningConfig"
-    (formGroupCreated)="formCreateHandler($event)">    
+    (formGroupCreated)="formCreateHandler($event)">
 </igx-tree-grid>
 ```
 
@@ -609,9 +609,12 @@ public cellStyles = {
 ```html
 <igx-hierarchical-grid [rowStyles]="rowStyles">
     <igx-column field="Artist" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
-    ...
+    <!--...-->
     <igx-row-island [key]="'Albums'" [rowStyles]="rowStyles">
         <igx-column field="Album" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
+    </igx-row-island>
+    <!--...-->
+</igx-hierarchical-grid>
 ```
 
 <!-- ComponentEnd:HierarchicalGrid -->

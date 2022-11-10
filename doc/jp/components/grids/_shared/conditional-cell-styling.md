@@ -379,7 +379,7 @@ Add hierarchical grid example
 
 - `Column` 入力を使用して、キーがスタイル プロパティであり、値が評価用の式であるオブジェクト リテラルを受け取る `CellStyles`。
 
-> `CellStyles` と `CellClasses` の両方のコールバック シグネチャが次のように変更されました。
+> `cellStyles` と `cellClasses` の両方のコールバック シグネチャが次のように変更されました。
 
 ```ts
 (rowData: any, columnKey: string, cellValue: any, rowIndex: number) => boolean

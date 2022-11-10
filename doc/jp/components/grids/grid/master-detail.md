@@ -1,29 +1,29 @@
 ---
-title: {Platform} {ComponentTitle} マスター / 詳細 Grid - インフラジスティックス
-_description: Ignite UI {Platform} Grid を使用して行データの展開可能な詳細ビュー テンプレートを定義します。マスター - 詳細スタイル データを階層構造で表示する場合に便利です。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, master detail, Infragistics, マスター詳細, インフラジスティックス
+title: {Platform} {ComponentTitle} マスターと詳細 Grid - インフラジスティックス
+_description: Ignite UI {Platform} Grid を使用して行データの展開可能な詳細ビュー テンプレートを定義します。マスターと詳細スタイル データを階層構造で表示する場合に便利です。
+_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, master detail, Infragistics, マスターと詳細, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
 ---
 
-# {Platform} マスター / 詳細 Grid
+# {Platform} マスターと詳細 Grid
 
 `Grid` コンポーネントは、コンテンツを展開/縮小することで特定の行の追加の詳細を表示する詳細テンプレートの指定をサポートします。指定した場合、各レコードはマスターとして機能し、展開すると、現在のレコードのコンテキスト データを含むカスタマイズ可能な詳細テンプレートが表示されます。
 
-このモードは、マスター / 詳細スタイル データを階層構造で表示する必要がある場合に役立ちます。
+このモードは、マスターと詳細スタイル データを階層構造で表示する必要がある場合に役立ちます。
 
-## {Platform} Grid マスター / 詳細の例
+## {Platform} Grid マスターと詳細の例
 
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-grid-master-detail"
-           alt="{Platform} {ComponentTitle} マスター / 詳細の例">
+           alt="{Platform} {ComponentTitle} マスターと詳細の例">
 </code-view>
 
 ## 構成
 
-マスター / 詳細モードで表示するように `Grid` を設定するには、`GridDetail` ディレクティブでマークされたグリッド内のテンプレートを指定する必要があります。
+マスターと詳細モードで表示するように `Grid` を設定するには、`GridDetail` ディレクティブでマークされたグリッド内のテンプレートを指定する必要があります。
 
 ```html
  <{ComponentSelector} >

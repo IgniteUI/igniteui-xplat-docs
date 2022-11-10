@@ -37,7 +37,7 @@ _language: ja
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-actions"
            github-src="{ComponentSample}/data-batch-editing-actions"
-           alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例">
+           alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例" >
 </code-view>
 
 > [!NOTE]
@@ -61,7 +61,7 @@ _language: ja
 
 <!-- Angular -->
 
-この内部実装の詳細については、[トランザクション トピック](../transaction-classes.md#transaction-factory)を参照してください。
+この内部実装の詳細については、[トランザクション トピック](../transaction-classes.md#トランザクション-ファクトリ)を参照してください。
 
 <!-- end: Angular -->
 
@@ -267,7 +267,7 @@ export class HierarchicalGridBatchEditingSampleComponent {
 > トランザクション API は編集の終了を処理しないので、自分で行う必要があります。そうしないと、`{ComponentName}` は編集モードのままになります。これを行う 1 つの方法は、それぞれのメソッドで `EndEdit` を呼び出すことです。
 
 <!-- ComponentStart: TreeGrid -->
-`{ComponentName}` 内の親ノードの削除にはいくつかの特徴があります。階層データを使用している場合、親を削除すると子も削除されます。フラットデータを使用している場合、`{ComponentName}` の `CascadeOnDelete` プロパティを使用して必要な動作を設定できます。このプロパティは、親が削除されたときに子レコードを削除するかどうかを示します (デフォルトでは true に設定されています)。
+`{ComponentName}` 内の親ノードの削除にはいくつかの特徴があります。階層データを使用している場合、親を削除すると子も削除されます。フラットデータを使用している場合、`{ComponentName}` の `CascadeOnDelete` プロパティを使用して必要な動作を設定できます。このプロパティは、親が削除されたときに子レコードを削除するかどうかを示します (デフォルトでは **true** に設定されています)。
 <!-- ComponentEnd: TreeGrid -->
 
 > [!NOTE]

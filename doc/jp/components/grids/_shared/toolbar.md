@@ -122,7 +122,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ```html
 <igx-hierarchical-grid>
-    ...
+    <!--...-->
     <igx-row-island>
         <!--
             You can name the binding from igxGridToolbar however you want. Just make sure to use
@@ -132,7 +132,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
             <igx-grid-toolbar-title>Child toolbar {{ gridRef.parentIsland.level }}</igx-grid-toolbar-title>
         </igx-grid-toolbar>
     </igx-row-island>
-    ...
+    <!--...-->
 </igx-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -176,7 +176,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
     <igx-grid-toolbar-actions>
         <button igxButton>Action</button>
         <igx-select></igx-select>
-        ...
+        <!--...-->
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
 ```
@@ -287,14 +287,14 @@ constructor() {
 import { IgxExcelExporterService, IgxCsvExporterService } from 'igniteui-{Platform}';
 
 @NgModule({
-    ...
+    //...
     providers: [IgxExcelExporterService, IgxCsvExporterService ]
 })
 export class AppModule { ... }
 ```
 
 > [!Note]
-> v 12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
+> v12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
 
 ツールバー エクスポーター コンポーネントは、UI とエクスポート エクスペリエンスの両方をカスタマイズするためのいくつかの入力プロパティを公開します。
 
@@ -520,7 +520,7 @@ $dark-input-group-theme: input-group-theme(
 ```
 
 >[!NOTE]
->コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+>コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {

@@ -104,7 +104,7 @@ Ignite UI for {Platform} については、[はじめに](../../general-getting-
 
  <img class="responsive-img" src="../../../images/general/expand_indicator.png" style="width: 450px; height: 130px"/>
 
-Default collapse indicator for the `{ComponentName}` is the following:
+`{ComponentName}` のデフォルトの縮小インジケーターは次のとおりです。
 
 <img class="responsive-img" src="../../../images/general/collapsed_indicator.png" style="width: 400px; height: 130px"/>
 
