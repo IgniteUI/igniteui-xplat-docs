@@ -264,7 +264,7 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents"],
-        "name": "Clipboard Interactions",
+        "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md",
         "status": "NEW"
       },
@@ -708,7 +708,7 @@
       },
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Clipboard Interactions",
+        "name": "クリップボードの操作",
         "href": "grids/tree-grid/clipboard-interactions.md",
         "status": "NEW"
       },
