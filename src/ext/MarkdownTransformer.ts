@@ -196,7 +196,7 @@ function transformCodeRefs(options: any) {
         }
         if (memberHasCharSpace && !memberHasCharDot) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
-            transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
+           // transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
 
         // if (memberName.includes("Igc", 0)) {
@@ -325,10 +325,20 @@ function transformCodeRefs(options: any) {
     }
 }
 
-function getFrontMatterTypes(options: any) {
+function getFrontMatterTypes(options: any, filePath: string) {
+
     function getTypes(node: any) {
-        let ym = jsyaml.load(node.value);
+        // console.log("getFrontMatterTypes=" + filePath);
+
+        let ym: any = null; // = jsyaml.load(node.value);
+        try {
+            ym = jsyaml.load(node.value);
+        } catch (error) {
+            throw new Error(filePath + '\n' + error.message + "\n" + "Failed parsing:\n" + node.value + "\n")
+        }
+        // console.log("setFrontMatterTypes=" + filePath);
         if (ym.mentionedTypes) {
+            // console.log("mentionedTypes=" + ym.mentionedTypes);
             let mt = ym.mentionedTypes;
             let arr: string[] = [];
             if (typeof mt == "string") {
@@ -365,6 +375,7 @@ function getFrontMatterTypes(options: any) {
             }
         }
         if (ym.namespace) {
+            // console.log("namespace=" + ym.namespace);
             options.namespace = ym.namespace;
             if (options.mappings) {
                 options.mappings.namespace = options.namespace;
@@ -372,6 +383,7 @@ function getFrontMatterTypes(options: any) {
         }
 
         if (ym.sharedComponents) {
+            // console.log("sharedComponents=" + ym.sharedComponents);
             options.sharedComponents = ym.sharedComponents;
         }
     }
@@ -448,26 +460,49 @@ function transformDocLinks(options: any) {
     }
 }
 
-function transformDocPlaceholders(options: any) {
+function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
+
+    // removeMetaVars is true when extracting metadata on first time paring topic
+    // removeMetaVars is false when transforming the whole topic
+
     function transformText(node: any) {
         // console.log("transformDocPlaceholders");
         // console.log(node);
         if (node.value) {
-            node.value = replaceVariables(node.value, options);
+            node.value = replaceVariables(node.value, options, removeMetaVars);
             //console.log('transformText ' + node.value);
         }
 
         if (node.url) {
-            node.url = replaceVariables(node.url, options);
+            node.url = replaceVariables(node.url, options, removeMetaVars);
             //console.log('transformText ' + node.url);
         }
     }
 
-    function replaceVariables(nodeValue: string, options: any) {
-        let docs = options.docs;
+    function replaceVariables(nodeValue: string, options: any, removeMetaVars: boolean) {
 
+        // removeMetaVars is true when extracting metadata on first time paring topic
+        // removeMetaVars is false when transforming the whole topic
+
+        if (removeMetaVars && nodeValue.indexOf("title:") >= 0) {
+            // console.log('replaceVariables onlyMeta=' + removeMetaVars + "");
+            // console.log('--- replaceVariables \n' + nodeValue);
+
+            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}"];
+            for (const v of variables) {
+                var r = new RegExp(v, "gm");
+                nodeValue = nodeValue.replace(r, "");
+            }
+
+            nodeValue = nodeValue.replace(new RegExp("  ", "gm"), " ");
+            nodeValue = nodeValue.replace(new RegExp(", ,", "gm"), "");
+            nodeValue = nodeValue.replace(new RegExp(": , ", "gm"), ": ");
+            // console.log('+++ replaceVariables \n' + nodeValue + "\n");
+            return nodeValue;
+        }
 
         if (options.componentName) {
+
             if (docsComponents[options.componentName]) {
                 let value = docsComponents[options.componentName];
                 let name = "{Component";
@@ -475,6 +510,8 @@ function transformDocPlaceholders(options: any) {
                 nodeValue = nodeValue.replace(r, "{" + value.name);
             }
         }
+
+        let docs = options.docs;
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
                 let variable = docs.replacements[i];
@@ -1310,6 +1347,7 @@ export class MarkdownTransformer {
                 options.platformSpinalPrefix = "Igb";
         }
 
+        // initial parsing of metadata from topics to get 'sharedComponents' array
         remark().data('settings', {
             commonmark: false,
             footnotes: true,
@@ -1317,8 +1355,8 @@ export class MarkdownTransformer {
         })
         .use(parse)
         .use(frontmatter, ['yaml', 'toml'])
-        .use(transformDocPlaceholders, options)
-        .use(getFrontMatterTypes, options)
+        .use(transformDocPlaceholders, options, true) // removing vars in metadata
+        .use(getFrontMatterTypes, options, filePath)
         .process(fileContent, function(err: any, vfile: any) {
             if (err) {
                 callback(err, null);
@@ -1349,6 +1387,7 @@ export class MarkdownTransformer {
                 console.log("- " + filePath);
             }
 
+            // actual parsing/transforming of metadata and topic's content
             remark().data('settings', {
                 commonmark: false,
                 footnotes: true,
@@ -1356,8 +1395,8 @@ export class MarkdownTransformer {
             })
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
-            .use(transformDocPlaceholders, options)
-            .use(getFrontMatterTypes, options)
+            .use(transformDocPlaceholders, options, false) // keeping vars in metadata
+            .use(getFrontMatterTypes, options, filePath)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)
             .use(omitPlatformSpecificSections, options)
@@ -1813,7 +1852,7 @@ export class MarkdownTransformer {
             excludedFiles = [];
 
         // console.log('generateTOC for "' + platform + '"  platform from');
-        console.log(">> TOC generating from: " + jsonPath + ' for "' + platform); // + '" and isFirstRelease=' + isFirstRelease);
+        console.log(">> TOC generating from: " + jsonPath + ' for ' + platform); // + '" and isFirstRelease=' + isFirstRelease);
 
         let jsonFile = fs.readFileSync(jsonPath);
         let jsonContent = jsonFile.toString();
