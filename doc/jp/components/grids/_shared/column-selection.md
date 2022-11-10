@@ -48,7 +48,7 @@ _language: ja
 デフォルトの選択モードは `None` です。`Single` または `Multiple` に設定されると、すべての列は `Selectable` になります。列を選択するには、列をクリックして `Selected` としてマークします。列が選択不可な場合、ホバー時に選択スタイルはヘッダーに適用されません。
 
 > [!NOTE]
-> [`複数列ヘッダー`](multi-column-headers.md)は `Selectable` 入力に反映されません。その子の 1 つ以上で選択動作が有効な場合、`ColumnGroupComponent` は `Selectable` です。さらに、すべての `Selectable` 子孫が `Selected` である場合、コンポーネントは `Selected` としてマークされます。
+> [複数列ヘッダー](multi-column-headers.md)は `Selectable` 入力に反映されません。その子の 1 つ以上で選択動作が有効な場合、`ColumnGroupComponent` は `Selectable` です。さらに、すべての `Selectable` 子孫が `Selected` である場合、コンポーネントは `Selected` としてマークされます。
 
 <!-- ComponentStart: Grid -->
 
@@ -88,7 +88,7 @@ _language: ja
 > [!NOTE]
 > 上記は `ColumnGroupComponent` にも適用されますが、`Selected` プロパティを変更する場合、その子孫の状態を変更します。
 
-API 操作の詳細については、[`API リファレンス`](#api-リファレンス) セクションを参照してください。
+API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
 
 <!-- Angular -->
 
@@ -108,7 +108,7 @@ TO DO
 ```
 
 >[!NOTE]
->[`行選択`](row-selection.md)と[`列選択`](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
+>[行選択](row-selection.md)と[列選択](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
 
 **選択**と**ホバー**のスタイル設定を変更します。 <br/>
 
@@ -152,7 +152,7 @@ TO DO
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-[`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) はいくつかのパラメーターを受け入れますが、選択したすべての列の外観を変更するのは以下の 5 つです。
+[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) はいくつかのパラメーターを受け入れますが、選択したすべての列の外観を変更するのは以下の 5 つです。
 - **$row-selected-background** - 選択した部分の背景を設定します。
 - **$row-selected-text-color** - 選択した部分のテキスト色を設定します。
 - **$row-selected-hover-background** - ホバーされたセルまたは複数のセルの色を設定します。
@@ -175,7 +175,7 @@ TO DO
 Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
 >[!NOTE]
->コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
+>コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
 
 ```scss
 :host {

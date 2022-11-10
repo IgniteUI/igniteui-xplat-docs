@@ -33,7 +33,7 @@ alt="{Platform} ドック マネージャー デスクトップ統合"/>
 
 ### ドラッグ アンド ドロップ
 
-ブラウザー/アプリケーション ウィンドウの外側でのペインのドラッグをサポートするために、ブラウザー内のフローティング ペインを作成する組み込みのドラッグアンドドロップを、[HTML ドラッグアンドドロップ API](https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API) に基づくカスタム実装に置き換えました。ヘッダー要素が DOM に接続されたときに発生する [`paneHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) イベントと [`tabHeaderConnected`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) イベントにサブスクライブしました。ヘッダー要素が接続されると、組み込みの [`dragService`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) をリセットし、`dragstart` および `dragend` イベント リスナーをアタッチします。
+ブラウザー/アプリケーション ウィンドウの外側でのペインのドラッグをサポートするために、ブラウザー内のフローティング ペインを作成する組み込みのドラッグアンドドロップを、[HTML ドラッグアンドドロップ API](https://developer.mozilla.org/ja/docs/Web/API/HTML_Drag_and_Drop_API) に基づくカスタム実装に置き換えました。ヘッダー要素が DOM に接続されたときに発生する [paneHeaderConnected](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) イベントと [tabHeaderConnected](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) イベントにサブスクライブしました。ヘッダー要素が接続されると、組み込みの [dragService](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) をリセットし、`dragstart` および `dragend` イベント リスナーをアタッチします。
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
@@ -53,7 +53,7 @@ dockManager.addEventListener('paneHeaderConnected', paneHeaderConnected);
 ```
 
 
-`panelHeaderDragStart` 関数で、ドック マネージャー コンポーネントの [`draggedPane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#draggedpane) プロパティを設定し、ドラッグ操作が開始されたことを通知します。
+`panelHeaderDragStart` 関数で、ドック マネージャー コンポーネントの [draggedPane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#draggedpane) プロパティを設定し、ドラッグ操作が開始されたことを通知します。
 
 ```ts
 const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
@@ -63,7 +63,7 @@ const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
 }
 ```
 
-`document` 要素の `dragover` と `drop` イベントにサブスクライブしました。`dragover` リスナーでは、[`dropPosition`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#dropposition) プロパティを設定することにより、マウスがその上にドラッグされたことをドック マネージャーに通知します。これにより、ドック マネージャーはドッキング インジケーターを表示します。
+`document` 要素の `dragover` と `drop` イベントにサブスクライブしました。`dragover` リスナーでは、[dropPosition](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#dropposition) プロパティを設定することにより、マウスがその上にドラッグされたことをドック マネージャーに通知します。これにより、ドック マネージャーはドッキング インジケーターを表示します。
 
 ```ts
 const handleDocumentDragOver = (event: DragEvent) => {
@@ -94,7 +94,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-ペイン ヘッダーがドキュメント内にドロップされると、[`dropPane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) メソッドが呼び出され、ドラッグされたペインがドロップされたことをドック マネージャーに通知します。ペインがドッキング インジケーターにドロップされた場合、メソッドは **true** を返します。ペインがドラッグ元と同じウィンドウにドロップされた場合、ペインは自動的に新しい位置にドッキングされます。ただし、別のウィンドウにドロップされた場合は、`droppedInAnotherWindow` 関数を呼び出します。この関数は、最初にソースのドック マネージャーからペインを削除してから、新しいペインに追加します。
+ペイン ヘッダーがドキュメント内にドロップされると、[dropPane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) メソッドが呼び出され、ドラッグされたペインがドロップされたことをドック マネージャーに通知します。ペインがドッキング インジケーターにドロップされた場合、メソッドは **true** を返します。ペインがドラッグ元と同じウィンドウにドロップされた場合、ペインは自動的に新しい位置にドッキングされます。ただし、別のウィンドウにドロップされた場合は、`droppedInAnotherWindow` 関数を呼び出します。この関数は、最初にソースのドック マネージャーからペインを削除してから、新しいペインに追加します。
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -121,7 +121,7 @@ await dockManager.removePane(draggedPane);
 dockManager.layout = { ...dockManager.layout };
 ```
 
-次に、ペインのコンテンツ要素を新しいウィンドウに移動する必要があります。この目的のために、[`document.adoptNode()`](https://developer.mozilla.org/ja/docs/Web/API/Document/adoptNode) メソッドを使用します。これにより、コンテンツ要素ノードを新しいドキュメントに転送し、最後に、新しいドック マネージャー コンポーネントの子として追加できます。
+次に、ペインのコンテンツ要素を新しいウィンドウに移動する必要があります。この目的のために、[document.adoptNode()](https://developer.mozilla.org/ja/docs/Web/API/Document/adoptNode) メソッドを使用します。これにより、コンテンツ要素ノードを新しいドキュメントに転送し、最後に、新しいドック マネージャー コンポーネントの子として追加できます。
 
 ```ts
 const contentElement = dockManager.querySelector('[slot=' + draggedPane.contentId + ']');
@@ -133,7 +133,7 @@ newDockManager.appendChild(adoptedNode);
 
 ### ウィンドウ管理
 
-ネイティブの [`window.open()`](https://developer.mozilla.org/ja-JP/docs/Web/API/Window/open) メソッドを使用して、レンダラー プロセスで新しいウィンドウを開きます。**index.ts** に `BrowserWindow` を作成するときに、`nativeWindowOpen` オプションを **true** に設定します。これにより、子 `Window` オブジェクトとその `document` に直接アクセスできます。この Electron [トピック](https://www.electronjs.org/docs/api/window-open)で、レンダラー プロセスからウィンドウを開く方法について詳しく読むことができます。`nativeWindowOpen` オプションはまだ実験段階であることに注意してください。
+ネイティブの [window.open()](https://developer.mozilla.org/ja-JP/docs/Web/API/Window/open) メソッドを使用して、レンダラー プロセスで新しいウィンドウを開きます。**index.ts** に `BrowserWindow` を作成するときに、`nativeWindowOpen` オプションを **true** に設定します。これにより、子 `Window` オブジェクトとその `document` に直接アクセスできます。この Electron [トピック](https://www.electronjs.org/docs/api/window-open)で、レンダラー プロセスからウィンドウを開く方法について詳しく読むことができます。`nativeWindowOpen` オプションはまだ実験段階であることに注意してください。
 
 ```ts
 mainWindow = new BrowserWindow({
@@ -152,6 +152,6 @@ mainWindow = new BrowserWindow({
  ## API メンバー
 
  - `BrowserWindow`
- - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
+ - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
  - `IDockManagerWindow`
  - `Window`

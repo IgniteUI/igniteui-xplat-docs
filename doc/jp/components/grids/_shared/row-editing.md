@@ -107,7 +107,7 @@ import { {ComponentName} } from 'igniteui-{Platform}';
 
 @Component({
     selector: 'app-grid-row-edit',
-    styleUrls: [`app-grid-row-edit.component.css`],
+    styleUrls: [app-grid-row-edit.component.css],
     templateUrl: 'app-grid-row-edit.component.html'
 })
 export class {ComponentName}RowEditSampleComponent {
@@ -228,8 +228,8 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
 行編集オーバーレイは複合要素です。UI は、他の 2 つのコンポーネントで構成されています。
 
-    - コンテンツをレンダリングするための [`igx-banner`](banner.md)
-    - [`igx-button`](button.md) はデフォルトのテンプレートでレンダリングされます (`[完了]` ボタンと `[キャンセル]` ボタンの場合)。
+    - コンテンツをレンダリングするための [igx-banner](banner.md)
+    - [igx-button](button.md) はデフォルトのテンプレートでレンダリングされます (`[完了]` ボタンと `[キャンセル]` ボタンの場合)。
 
 以下の例では、これら 2 つのコンポーネントのスタイル設定オプション ([ボタン スタイル](button.md#スタイル設定) & [バナー スタイル](../banner.md#スタイル設定)) を使用して、`{ComponentName}` の行編集のエクスペリエンスをカスタマイズします。
 
@@ -251,7 +251,7 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
 #### テーマの定義
 
-行編集の背景にカスタムの [`banner theme`]({environment:sassApiUrl}/index.html#function-banner-theme) を定義して、定義済みのパレットの 1 つである `$purple-palette` を使用することができます。
+行編集の背景にカスタムの [banner theme]({environment:sassApiUrl}/index.html#function-banner-theme) を定義して、定義済みのパレットの 1 つである `$purple-palette` を使用することができます。
 
 ```scss
     $my-light-gray: #e3e3e3;
@@ -277,10 +277,10 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
 ### コンポーネント スタイル
 
-行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([`テーマ/インデックス`インポート](#テーマのインポート)を含む) を定義できます。
+行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([テーマ/インデックス`インポート](#テーマのインポート)を含む) を定義できます。
 
 >[!NOTE]
->コンポーネントが [`Emulated`](themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+>コンポーネントが [Emulated](themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
@@ -315,7 +315,7 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 </{ComponentSelector}>
 ```
 
-カスタム ボタンを定義した後は、[`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
+カスタム ボタンを定義した後は、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
 
 ```scss
 // custom.component.scss

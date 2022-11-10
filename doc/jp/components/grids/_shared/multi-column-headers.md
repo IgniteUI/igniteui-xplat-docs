@@ -178,8 +178,8 @@ TO-DO H-GRID CODE SNIPPET
 
 すべての `ColumnGroup` は、[移動](column-moving.md)、[ピン固定](column-pinning.md)、および[非表示](column-hiding.md)をサポートしています。
 > [!NOTE]
-> 列セットと列グループがある場合、ピン固定は列の一番上の親レベルでのみ可能です。具体的には、ネストされた `column groups` または `columns` ごとのピン固定は許可されていません。 <br />
-> `columns` と `column groups` 間の移動は、それらが階層内の同じレベルにあり、両方が同じ `group` にある場合にのみ許可されます。 <br />
+> 列セットと列グループがある場合、ピン固定は列の一番上の親レベルでのみ可能です。具体的には、ネストされた column groups または columns ごとのピン固定は許可されていません。 <br />
+> columns と column groups 間の移動は、それらが階層内の同じレベルにあり、両方が同じ `group` にある場合にのみ許可されます。 <br />
 > `columns/column-groups` が現在の `group` によってラップされていない場合 (**一番上のレベル** `columns` の場合)、表示されている列全体の間で移動が許可されます。
 
 <!-- ComponentStart: Grid -->
@@ -343,7 +343,7 @@ TO-DO H-GRID CODE SNIPPET
 @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-最も単純なアプローチに従って、[`igx-grid-theme`]({environment:sassApiUrl}/index.html#function-igx-grid-theme) を拡張し、`$header-background`、`$header-text-color`、`$header-border-width`、`$header-border-style`、および `$header-border-color` パラメーターを受け入れる新しいテーマを作成します。
+最も単純なアプローチに従って、[igx-grid-theme]({environment:sassApiUrl}/index.html#function-igx-grid-theme) を拡張し、`$header-background`、`$header-text-color`、`$header-border-width`、`$header-border-style`、および `$header-border-color` パラメーターを受け入れる新しいテーマを作成します。
 
 ```scss
 $custom-theme: igx-grid-theme(

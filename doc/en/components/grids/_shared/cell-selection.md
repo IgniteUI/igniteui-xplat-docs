@@ -188,7 +188,7 @@ To get started with styling the selection, we need to import the `index` file, w
 
 ### Define Colors
 
-Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
+Once done, we can make use of the [igx-contrast-color]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
 ```scss
     $text-color:contrast-color($default-palette, 'primary', 900);
     $background-color: color($default-palette, "primary", 900);
@@ -197,7 +197,7 @@ Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl
 
 ### Create Custom Theme
 
-Next we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) passing our `text-color`, `background-color` and `border-yellow` variables as `$cell-selected-text-color`, `$cell-selected-background` and `$cell-active-border-color`, respectively:
+Next we create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) passing our `text-color`, `background-color` and `border-yellow` variables as `$cell-selected-text-color`, `$cell-selected-background` and `$cell-active-border-color`, respectively:
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -216,7 +216,7 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
 ```
 
  >[!NOTE]
- >If the component is using an [`Emulated ViewEncapsulation`](../themes/sass/component-themes.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
+ >If the component is using an [Emulated ViewEncapsulation](../themes/sass/component-themes.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
  > We scope the style under `:host` selector so as not to affect any other grids we might have in our application.
 
  ```scss

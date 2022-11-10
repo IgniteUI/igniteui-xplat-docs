@@ -72,7 +72,7 @@ The Form component raises the following events:
 - igcSubmit - Raised when the form is submitted
 - igcReset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the `Submit`] event:
+Here is an example showing how to add an event listener for the `Submit] event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -99,7 +99,7 @@ For more detailed information regarding the form's API, refer to the following l
 
 Additional components and/or directives that were used:
 - `Button`
-- `Checkbox`]
+- `Checkbox]
 * `Input`
 * `Radio`
 * `Switch`

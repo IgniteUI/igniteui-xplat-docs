@@ -28,7 +28,7 @@ To get started with the Calendar component, first you need to install {ProductNa
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
+The next step is to import the `Calendar` and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';

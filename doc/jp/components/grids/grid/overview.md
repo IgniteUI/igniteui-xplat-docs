@@ -1154,7 +1154,7 @@ public updatePostalCode(rowId: number){
 
 ## 状態保持
 
-新しい組み込み済みの [`GridState`](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+新しい組み込み済みの [GridState](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
 
 ## サイズ変更
 

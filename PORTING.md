@@ -105,7 +105,7 @@ NOTE that reference path should be using name of gird folder (e.g. `pivot-grid`)
 - Remove URLs in API links because they will be auto-generated:
 
 ```
-[`HierarchicalTransactionService`]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
+[HierarchicalTransactionService]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
 ```
 
 to
@@ -126,7 +126,7 @@ to
 - Remove backticks from topic links:
 
 ```md
-[`Transaction Service class hierarchy`](../transaction-classes.md)
+[Transaction Service class hierarchy](../transaction-classes.md)
 ```
 
 ```md

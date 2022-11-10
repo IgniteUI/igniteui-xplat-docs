@@ -23,7 +23,7 @@ Ignite UI for {Platform} `{ComponentName}` コンポーネントは、{Platform}
 </code-view>
 
 > [!NOTE]
->任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([`Select`](../select.md)、`Combo` など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+>任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([Select](../select.md)、`Combo` など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 ## セルの編集
 
@@ -165,7 +165,7 @@ private UpdateCell() {
 </igx-column>
 ```
 
-このコードは、`Race`、`Class`、および `Alignment` 列のセルに [`SelectComponent`](../select.md) を実装する以下のサンプルで使用されています。
+このコードは、`Race`、`Class`、および `Alignment` 列のセルに [SelectComponent](../select.md) を実装する以下のサンプルで使用されています。
 
 <code-view style="height:625px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -184,7 +184,7 @@ private UpdateCell() {
 > `CellEditor` セル編集テンプレート ディレクティブは、編集モードでの列のセルの表示方法を処理し、編集されたセルの編集値を制御します。
 
 > [!NOTE]
->任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([Select](../select.md)、[`Combo`](../combo.md) など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+>任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([Select](../select.md)、[Combo](../combo.md) など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 <!-- Angular -->
 
@@ -540,7 +540,7 @@ export class MyHGridEventsComponent {
 
 ### パレットの定義
 
-インデックス ファイルをインポート後、カスタム パレットを作成します。好きな 2 つの色を定義し、それらを使用して [`igx-palette`](../themes/palettes.md) でパレットを作成しましょう。
+インデックス ファイルをインポート後、カスタム パレットを作成します。好きな 2 つの色を定義し、それらを使用して [igx-palette](../themes/palettes.md) でパレットを作成しましょう。
 
 ```scss
 $white: #fff;
@@ -551,7 +551,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### テーマの定義
 
-これで、パレットを使用してテーマを定義できます。セルは [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して {ComponentName} のテーマを生成できます。
+これで、パレットを使用してテーマを定義できます。セルは [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して {ComponentName} のテーマを生成できます。
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -576,10 +576,10 @@ $custom-grid-theme: grid-theme(
 
 カスタム テーマが特定のコンポーネントのみに影響するように、定義したすべてのスタイルをグローバル スタイル ファイルからカスタム コンポーネントのスタイル ファイルに移動できます (`index` ファイルの[インポート](#スタイル-ライブラリのインポート)を含む)。
 
-このように、{Platform} の [`ViewEncapsulation`](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
+このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
@@ -594,7 +594,7 @@ $custom-grid-theme: grid-theme(
 
 ### デモのスタイル設定
 
-上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([`igx-input-group`](../input-group.md#スタイル設定)、[`igx-datepicker`](../date-picker.md#スタイル設定) および [`igx-checkbox`](../checkbox.md#スタイル設定))。
+上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
 
 <code-view style="height:950px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

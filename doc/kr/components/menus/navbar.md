@@ -31,7 +31,7 @@ npm install {PackageWebComponents}
 
 ## Usage
 
-To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';

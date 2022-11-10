@@ -212,7 +212,7 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 
 <!-- Angular -->
 
-デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。通貨記号の位置と数値の書式設定は、提供された Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) または {ComponentTitle} の `Locale` に基づいています。
+デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。通貨記号の位置と数値の書式設定は、提供された Application [LOCALE_ID](https://angular.io/api/core/LOCALE_ID) または {ComponentTitle} の `Locale` に基づいています。
 
 *LOCALE_ID を使用する場合:*
 ```ts

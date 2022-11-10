@@ -1156,7 +1156,7 @@ Check out these resources for more information:
 
 ## State Persistence
 
-Achieving a state persistence framework is easier than ever by using the new built-in [`GridState`](state-persistence.md) directive.
+Achieving a state persistence framework is easier than ever by using the new built-in [GridState](state-persistence.md) directive.
 
 ## Sizing
 

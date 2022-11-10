@@ -27,7 +27,7 @@ To get started with the `NavDrawer`, first you need to install {ProductName} by 
 npm install {PackageComponents}
 ```
 
-Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';

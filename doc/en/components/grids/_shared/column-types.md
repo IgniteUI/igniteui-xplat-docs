@@ -211,7 +211,7 @@ Alternatively, you can do this in a more "Blazor" way by providing a template in
 
 <!-- Angular -->
 
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
+The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [LOCALE_ID](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
 
 *By using LOCALE_ID*
 ```ts
