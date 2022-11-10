@@ -147,7 +147,7 @@ When it comes to cell editing based on the column type a different editor will a
 #### Filtering
 
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:
-- `DateTime and Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
+- `DateTime` and `Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
 - `Time` - At, Not At, Before, After, At or Before, At or After, Empty, Not Empty, Null, Not Null;
 
 #### Summaries

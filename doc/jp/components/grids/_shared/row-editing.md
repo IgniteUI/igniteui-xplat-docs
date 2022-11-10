@@ -267,7 +267,7 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 
 ### テーマを含む
 
-次に Sass `@include` ステートメントを使用してテーマを適用します。新しく定義された `$banner-theme` を `igx-banner mixin` で渡します。
+次に Sass `@include` ステートメントを使用してテーマを適用します。新しく定義された `$banner-theme` を **igx-banner mixin** で渡します。
 
 ```scss
 @include banner($banner-theme);

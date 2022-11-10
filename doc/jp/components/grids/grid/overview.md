@@ -1202,16 +1202,16 @@ platformBrowserDynamic()
 <!-- Angular -->
 
 ## テーマの依存関係
-* `Icon Theme`
-* `InputGroup Theme`
-* `Chip Theme`
-* `Ripple Theme`
-* `Button Theme`
-* `Overlay Theme`
-* `DropDown Theme`
-* `Calendar Theme`
-* `SnackBar Theme`
-* `Badge Theme`
+* **Icon Theme**
+* **InputGroup Theme**
+* **Chip Theme**
+* **Ripple Theme**
+* **Button Theme**
+* **Overlay Theme**
+* **DropDown Theme**
+* **Calendar Theme**
+* **SnackBar Theme**
+* **Badge Theme**
 
 ## チュートリアル ビデオ
 

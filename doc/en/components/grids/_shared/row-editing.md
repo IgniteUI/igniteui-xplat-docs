@@ -266,7 +266,7 @@ Here we are using `my-banner-palette` in conjunction with `igx-color` (exposed b
 
 ### Include the Theme
 
-All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the `igx-banner mixin`:
+All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the **igx-banner mixin**:
 
 ```scss
 @include banner($banner-theme);

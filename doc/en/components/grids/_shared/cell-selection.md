@@ -166,7 +166,7 @@ The multi-cell selection is index based (DOM elements selection).
 - `Resizing` - On column resizing selected cells will not be cleared.
 - `Hiding` - It will not clear the selected cells. If column is hidden, the cells from the next visible column will be selected.
 - `Pinning` - Selected cell will not be cleared. Same as hiding
-- `Group by` - On column grouping selected cells will not be cleared.
+- `GroupBy` - On column grouping selected cells will not be cleared.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 

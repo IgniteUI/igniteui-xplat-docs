@@ -1204,16 +1204,16 @@ platformBrowserDynamic()
 <!-- Angular -->
 
 ## Theming Dependencies
-* `Icon Theme`
-* `InputGroup Theme`
-* `Chip Theme`
-* `Ripple Theme`
-* `Button Theme`
-* `Overlay Theme`
-* `DropDown Theme`
-* `Calendar Theme`
-* `SnackBar Theme`
-* `Badge Theme`
+* **Icon Theme**
+* **InputGroup Theme**
+* **Chip Theme**
+* **Ripple Theme**
+* **Button Theme**
+* **Overlay Theme**
+* **DropDown Theme**
+* **Calendar Theme**
+* **SnackBar Theme**
+* **Badge Theme**
 
 ## Tutorial video
 
