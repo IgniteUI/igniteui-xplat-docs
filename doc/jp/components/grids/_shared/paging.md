@@ -147,7 +147,7 @@ TO-DO H-GRID CODE SNIPPET
 
 ## リモート ページング
 
-リモート ページングは、データ取得を担当するサービスと、`{ComponentName}` の構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`リモート データ操作`](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
+リモート ページングは、データ取得を担当するサービスと、`{ComponentName}` の構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[リモート データ操作](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
 
 <!-- ComponentStart: Grid -->
 
@@ -210,7 +210,7 @@ $dark-button: button-theme(
 >`Button` ミックスインを `.igx-paginator__pager` 内でスコープして、ページネーター ボタンのみにスタイルが設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {
@@ -258,7 +258,7 @@ $dark-button: button-theme(
 ```
 
 >[!NOTE]
->`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[`パレット`](../themes/sass/palettes.md)のトピックを参照してください。
+>`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
 

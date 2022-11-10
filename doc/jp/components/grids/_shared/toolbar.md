@@ -1,6 +1,6 @@
 ---
-title: {Platform} {Component} {ComponentTitle} - {ProductName} for {Platform}
-_description: 重要な UI 操作には {Platform} {Component} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
+title: {Platform} {ComponentTitle} for {ProductName}
+_description: 重要な UI 操作には {Platform} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
@@ -453,7 +453,7 @@ $my-dark-palette: palette(
 $my-dark-color: color($my-dark-palette, 'surface');
 ```
 
-[`grid-toolbar-theme`]({environment:sassApiUrl}/index.html#function-grid-toolbar-theme) を拡張する新しいテーマを作成し、`$background-color` と `$title-text-color` パラメーターを変更します。
+[grid-toolbar-theme]({environment:sassApiUrl}/index.html#function-grid-toolbar-theme) を拡張する新しいテーマを作成し、`$background-color` と `$title-text-color` パラメーターを変更します。
 
 ```scss
 $dark-grid-toolbar-theme: grid-toolbar-theme(
@@ -520,7 +520,7 @@ $dark-input-group-theme: input-group-theme(
 ```
 
 >[!NOTE]
->コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
+>コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
 ```scss
 :host {

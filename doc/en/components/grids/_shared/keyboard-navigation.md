@@ -250,7 +250,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 <!-- Angular -->
 
 Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the `Grammy Nominations` column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
+- Double click or press <kbd>F2</kbd> key on a cell in the **Grammy Nominations** column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 #### Demo
@@ -305,11 +305,11 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## API References
 
-* [{ComponentTitle} Component API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
 
 <!-- Angular -->
 
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 

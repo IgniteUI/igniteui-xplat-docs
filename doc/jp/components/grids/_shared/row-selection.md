@@ -328,7 +328,7 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 
 `{ComponentName}` でヘッダーおよび行セレクターをテンプレート化し、さまざまなシナリオに役立つ機能を提供するコンテキストにアクセスすることもできます。
 
-デフォルトでは、`{ComponentName}` は、行セレクターの親コンテナまたは行自体の**すべての行選択操作を処理し**、テンプレートの状態の可視化のみになります。基本機能のオーバーライドは通常、[`RowSelectionChanging` イベント](#行選択イベント)を使用して実行する必要があります。基本機能をオーバーライドする `Click` ハンドラーを使用してカスタムテンプレートを実装する場合、イベントの伝播を停止して、正しい行の状態を保持する必要があります。
+デフォルトでは、`{ComponentName}` は、行セレクターの親コンテナまたは行自体の**すべての行選択操作を処理し**、テンプレートの状態の可視化のみになります。基本機能のオーバーライドは通常、[RowSelectionChanging` イベント](#行選択イベント)を使用して実行する必要があります。基本機能をオーバーライドする `Click` ハンドラーを使用してカスタムテンプレートを実装する場合、イベントの伝播を停止して、正しい行の状態を保持する必要があります。
 
 #### 行テンプレート
 
@@ -370,7 +370,7 @@ igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
 ```
-上の例では、`igx-checkbox`  を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[`行番号のデモ`](#行の番号付けデモ)で実際にこれをご覧ください。
+上の例では、`igx-checkbox`  を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
 
 <!-- ComponentStart: HierarchicalGrid -->
 

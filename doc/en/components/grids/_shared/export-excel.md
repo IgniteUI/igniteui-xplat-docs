@@ -1,16 +1,16 @@
 ---
-title: {Platform} {Component} Export to Excel - {ProductName} for {Platform}
+title: {Platform} {ComponentTitle} Export to Excel - {ProductName} for {Platform}
 _description: With {ProductName} Excel Exporter you can make client Excel functionality more convenient & simpler. This format allows features like filtering, sorting, etc.
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
-# {Platform} {Component} Export to Excel Service
+# {Platform} {ComponentTitle} Export to Excel Service
 
 
 <p class="highlight">
-  The Excel Exporter service can export data to excel from the {Component}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
+  The Excel Exporter service can export data to excel from the {ComponentTitle}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
 </p>
 
 ## {Platform} Excel Exporter Example
@@ -25,7 +25,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 
 
-## Exporting {Component}'s Data
+## Exporting {ComponentTitle} Data
 
 To start using the IgniteUI Excel Exporter first import the `ExcelExporterService` in the app.module.ts file and add the service to the `providers` array:
 
@@ -65,19 +65,19 @@ Here is the code which will execute the export process in the component's file:
 ```ts
 // component.ts
 import { ExcelExporterService, ExcelExporterOptions } from 'igniteui-{Platform}';
-import { {Component} } from 'igniteui-{Platform}';
+import { {ComponentName} } from 'igniteui-{Platform}';
 
-@ViewChild('{ComponentTitle}') public {ComponentTitle}: {ComponentTitle}Component;
+@ViewChild('{ComponentName}') public {ComponentName}: {ComponentName};
 
 constructor(private excelExportService: ExcelExporterService) {
 }
 
 public exportButtonHandler() {
-  this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
+  this.excelExportService.export(this.{ComponentName}, new ExcelExporterOptions('ExportedDataFile'));
 }
 ```
 
-If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format.
+If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {ComponentName} component in MS Excel format.
 
 ## Export All Data
 
@@ -92,7 +92,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## Export Grouped Data
 
-To export grouped data you just need to group the {Component} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {Component} component in MS Excel format grouped by the selected column. Example:
+To export grouped data you just need to group the {ComponentName} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {ComponentName} component in MS Excel format grouped by the selected column. Example:
 
 
 <code-view style="height: 800px;"
@@ -106,10 +106,10 @@ To export grouped data you just need to group the {Component} by one or more col
 
 ## Export Multi Column Headers Grid
 
-It is now possible to export {Component} with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the {Component}. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
+It is now possible to export {ComponentName} with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the {ComponentName}. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
 
 > [!NOTE]
-> The exported {Component} will not be formatted as a table, since Excel tables do not support multiple row headers.
+> The exported {ComponentName} will not be formatted as a table, since Excel tables do not support multiple row headers.
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -147,7 +147,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-When you are exporting data from the {Component} component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the {Component}. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
+When you are exporting data from the {ComponentName} component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the {ComponentName}. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
 ## Known Limitations
 
 <!-- ComponentStart: Grid -->
@@ -172,7 +172,7 @@ When you are exporting data from the {Component} component, the export process t
 <!-- ComponentEnd: HierarchicalGrid -->
 
 > [!NOTE]
-> Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [`setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
+> Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
 
 ```cmd
 npm install --save setimmediate
@@ -191,8 +191,8 @@ The Excel Exporter service has a few more APIs to explore, which are listed belo
 
 Additional components that were used:
 
-* [{ComponentTitle}Component API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} API]({environment:dvDemosBaseUrl}/classes/{ComponentTitle}.md)
+* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 ## Additional Resources
 

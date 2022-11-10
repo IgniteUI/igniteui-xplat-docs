@@ -148,7 +148,7 @@ public timeFormats = [
 #### フィルタリング
 
 クイック フィルタリング/Excel スタイル フィルタリングに関しては、上記と同じエディターが使用されます。これらは、各タイプが公開する次のフィルタリング オペランドです。
-- `DateTime and Date` - Equals、Does Not Equal、Before、After、Today、Yesterday、This Month、Last Month、Next Month、This Year、Last Year、Next Year、Empty、Not Empty、Null、Not Null;
+- `DateTime` and `Date` - Equals、Does Not Equal、Before、After、Today、Yesterday、This Month、Last Month、Next Month、This Year、Last Year、Next Year、Empty、Not Empty、Null、Not Null;
 - `Time` - At、Not At、Before、After、At or Before、At or After、Empty、Not Empty、Null、Not Null;
 
 #### 集計
@@ -212,7 +212,7 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 
 <!-- Angular -->
 
-デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。通貨記号の位置と数値の書式設定は、提供された Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) または {ComponentTitle} の `Locale` に基づいています。
+デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。通貨記号の位置と数値の書式設定は、提供された Application [LOCALE_ID](https://angular.io/api/core/LOCALE_ID) または {ComponentTitle} の `Locale` に基づいています。
 
 *LOCALE_ID を使用する場合:*
 ```ts

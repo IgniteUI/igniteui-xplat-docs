@@ -166,7 +166,7 @@ igRegisterScript("onColumnMovingEnd", (event) => {
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-最も簡単な方法は、[`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張する新しいテーマを作成し、`$ghost-header-background`、`$ghost-header-text-color`、および `$ghost-header-icon-color` パラメーターを受け取る方法です。
+最も簡単な方法は、[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張する新しいテーマを作成し、`$ghost-header-background`、`$ghost-header-text-color`、および `$ghost-header-icon-color` パラメーターを受け取る方法です。
 
 ```scss
 // Define dark theme for the column moving
@@ -220,7 +220,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 
 > [!NOTE]
-> Color および Palette は、カラーを生成および取得するための重要な機能です。使い方の詳細については[`パレット`](/components/themes/palettes.html)のトピックを参照してください。
+> Color および Palette は、カラーを生成および取得するための重要な機能です。使い方の詳細については[パレット](/components/themes/palettes.html)のトピックを参照してください。
 
 ### スキーマの使用
 

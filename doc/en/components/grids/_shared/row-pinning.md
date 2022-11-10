@@ -326,7 +326,7 @@ To begin the customization of the row pinning feature, you need to import the `i
 
 ### Defining a Theme
 
-Next, create a new theme, that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the row pinning feature as desired.
+Next, create a new theme, that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the row pinning feature as desired.
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -351,7 +351,7 @@ The last step is to pass the custom grid theme:
 
 In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
 
-If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
+If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
 
 ```scss
 :host {
@@ -374,7 +374,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 

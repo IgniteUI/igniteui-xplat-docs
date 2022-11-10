@@ -1,5 +1,5 @@
 ---
-title: Column Data Types in {Platform} - {ProductName}
+title: Column Data Types in {Platform} for {ProductName}
 _description: Handle cell and editing templates in {Platform} by choosing from several predefined column data types - number, string, date, boolean, currency and percent column.
 _keywords: Column Data Type , {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -147,7 +147,7 @@ When it comes to cell editing based on the column type a different editor will a
 #### Filtering
 
 The same editors listed above will be used when it comes to Quick Filtering/Excel-style Filtering. These are the following filtering operands that each type exposes:
-- `DateTime and Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
+- `DateTime` and `Date` - Equals, Does Not Equal, Before, After, Today, Yesterday, This Month, Last Month, Next Month, This Year, Last Year, Next Year, Empty, Not Empty, Null, Not Null;
 - `Time` - At, Not At, Before, After, At or Before, At or After, Empty, Not Empty, Null, Not Null;
 
 #### Summaries
@@ -211,7 +211,7 @@ Alternatively, you can do this in a more "Blazor" way by providing a template in
 
 <!-- Angular -->
 
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [`LOCALE_ID`](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
+The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided Application [LOCALE_ID](https://angular.io/api/core/LOCALE_ID) or {ComponentTitle} `Locale`.
 
 *By using LOCALE_ID*
 ```ts

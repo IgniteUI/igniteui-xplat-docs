@@ -109,8 +109,8 @@ With `prefix` and `suffix` slots of the `Button` component, we can add different
 
 ## Type
 
-The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
-In the case when the button component uses an actual [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
+The button component will change its internal structure from a [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [<a>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
+In the case when the button component uses an actual [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
 
 - `submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values

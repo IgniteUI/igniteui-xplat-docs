@@ -55,7 +55,7 @@ You will also need to link an additional CSS file to apply the styling to the `I
 
 <!-- WebComponents -->
 
-To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Input` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';

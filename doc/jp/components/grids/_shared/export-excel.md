@@ -1,5 +1,5 @@
 ---
-title: {Platform} {Component} Excel へのエクスポート - {ProductName} for {Platform}
+title: {Platform} {ComponentTitle} Excel へのエクスポート - {ProductName} for {Platform}
 _description: {ProductName} Excel Exporter を使用すると、クライアント Excel の機能をより便利でシンプルにできます。この形式では、フィルタリングやソートなどの機能が使用できます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -7,11 +7,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
-# {Platform} {Component} Excel へのエクスポート サービス
+# {Platform} {ComponentTitle} Excel へのエクスポート サービス
 
 
 <p class="highlight">
-  Excel Exporter サービスは {Component} のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
+  Excel Exporter サービスは {ComponentTitle} のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
 </p>
 
 ## {Platform} Excel Exporter の例
@@ -26,7 +26,7 @@ _language: ja
 
 
 
-## {Component} のデータのエクスポート
+## {ComponentTitle} のデータのエクスポート
 
 IgniteUI Excel Exporter を使用するには、`ExcelExporterService` を app.module.ts ファイルにインポートし、`providers` 配列にサービスを追加します。
 
@@ -66,19 +66,19 @@ export class AppModule {}
 ```ts
 // component.ts
 import { ExcelExporterService, ExcelExporterOptions } from 'igniteui-{Platform}';
-import { {Component} } from 'igniteui-{Platform}';
+import { {ComponentName} } from 'igniteui-{Platform}';
 
-@ViewChild('{ComponentTitle}') public {ComponentTitle}: {ComponentTitle}Component;
+@ViewChild('{ComponentName}') public {ComponentName}: {ComponentName};
 
 constructor(private excelExportService: ExcelExporterService) {
 }
 
 public exportButtonHandler() {
-  this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
+  this.excelExportService.export(this.{ComponentName}, new ExcelExporterOptions('ExportedDataFile'));
 }
 ```
 
-上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の {Component}  コンポーネントのデータを含みます。
+上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の {ComponentName}  コンポーネントのデータを含みます。
 
 ## すべてのデータのエクスポート
 
@@ -93,7 +93,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## グループ化されたデータのエクスポート
 
-グループ化されたデータをエクスポートするには、{Component} を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の {Component} コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
+グループ化されたデータをエクスポートするには、{ComponentName} を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の {ComponentName} コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
 <code-view style="height: 800px;"
@@ -107,10 +107,10 @@ public exportButtonHandler() {
 
 ## 複数列ヘッダー グリッドのエクスポート
 
-定義された[複数列ヘッダー](multi-column-headers.md)を使用して {Component} をエクスポートできるようになりました。すべてのヘッダーは、{Component} に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
+定義された[複数列ヘッダー](multi-column-headers.md)を使用して {ComponentName} をエクスポートできるようになりました。すべてのヘッダーは、{ComponentName} に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
 
 > [!NOTE]
-> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた {Component} はテーブルとしてフォーマットされません。
+> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた {ComponentName} はテーブルとしてフォーマットされません。
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -148,7 +148,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-{Component} コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて {Component} で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
+{ComponentName} コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて {ComponentName} で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
 
 ## 既知の問題と制限
 
@@ -174,7 +174,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 <!-- ComponentEnd: HierarchicalGrid -->
 
 > [!NOTE]
-> [JSZip](https://www.npmjs.com/package/jszip) のライブラリの[問題](https://github.com/Stuk/jszip/issues/617)が原因で、大きな Excel ファイルのエクスポートが遅延する場合があります。問題が解決するまで、Excel エクスポーターの速度を上げるために、アプリケーションに [`setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) をインポートできます。
+> [JSZip](https://www.npmjs.com/package/jszip) のライブラリの[問題](https://github.com/Stuk/jszip/issues/617)が原因で、大きな Excel ファイルのエクスポートが遅延する場合があります。問題が解決するまで、Excel エクスポーターの速度を上げるために、アプリケーションに [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) をインポートできます。
 
 ```cmd
 npm install --save setimmediate

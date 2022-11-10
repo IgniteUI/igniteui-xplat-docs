@@ -177,8 +177,8 @@ TO-DO H-GRID CODE SNIPPET
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
 > [!NOTE]
-> When there is a set of columns and column groups, pinning works only for top level column parents. More specifically pinning per nested `column groups` or `columns` is not allowed. <br />
-> Moving between `columns` and `column groups` is allowed only when they are at the same level in the hierarchy and both are in the same `group`. <br />
+> When there is a set of columns and column groups, pinning works only for top level column parents. More specifically pinning per nested column groups or columns is not allowed. <br />
+> Moving between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same `group`. <br />
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
 
 <!-- ComponentStart: Grid -->
@@ -342,7 +342,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the [`igx-grid-theme`]({environment:sassApiUrl}/index.html#function-igx-grid-theme) and accepts the `$header-background`, `$header-text-color`, `$header-border-width`, `$header-border-style` and `$header-border-color` parameters.
+Following the simplest approach, we create a new theme that extends the [igx-grid-theme]({environment:sassApiUrl}/index.html#function-igx-grid-theme) and accepts the `$header-background`, `$header-text-color`, `$header-border-width`, `$header-border-style` and `$header-border-color` parameters.
 
 ```scss
 $custom-theme: igx-grid-theme(

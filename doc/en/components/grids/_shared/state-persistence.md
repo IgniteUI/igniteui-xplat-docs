@@ -20,10 +20,10 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 * `Filtering`
 * `Advanced Filtering`
 * `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `RowPinning`
 * `Expansion`
 * `GroupBy`
 * `Columns`
@@ -40,12 +40,12 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
     * saving/restoring features for all child grids down the hierarchy
 * `Sorting`
 * `Filtering`
-* `Advanced Filtering`
+* `AdvancedFiltering`
 * `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `RowPinning`
 * `Expansion`
 * `Columns`
     * **NEW**: Multi column headers are now supported out of the box
@@ -59,11 +59,11 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 * `Sorting`
 * `Filtering`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
 * `Expansion`
-* `Pivot Configuration`
+* `PivotConfiguration`
     * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
     * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
     * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
@@ -240,7 +240,7 @@ Add blazor handler for bodyTemplate
 
 ## Restoring Pivot Configuration
 
-`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [`limitations`](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
+`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 

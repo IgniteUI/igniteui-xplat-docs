@@ -369,7 +369,7 @@ $custom-button: button-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes`](themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes](themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
@@ -473,7 +473,7 @@ Additional components and/or directives with relative APIs that were used:
 
 <!-- Angular -->
 Styles:
-* `{ComponentName}Component`
+* `{ComponentName}`
 * `Radio`
 <!-- end: Angular -->
 

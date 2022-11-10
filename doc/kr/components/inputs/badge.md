@@ -46,7 +46,7 @@ To get started with the badge web component, first you need to install {ProductN
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';

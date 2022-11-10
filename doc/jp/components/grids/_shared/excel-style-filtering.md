@@ -519,7 +519,7 @@ $custom-drop-down: drop-down-theme(
 );
 ```
 
-この例では、リストされたコンポーネントのパラメーターの一部のみを変更しましたが、[`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme)、[`checkbox-theme`]({environment:sassApiUrl}/index.html#function-checkbox-theme)、[`drop-down-theme`]({environment:sassApiUrl}/index.html#function-drop-down-theme)、[`input-group-theme`]({environment:sassApiUrl}/index.html#function-input-group-theme)、および [`list-theme`]({environment:sassApiUrl}/index.html#function-list-theme) テーマは、それぞれのスタイルを制御するためのより多くのパラメーターを提供します。
+この例では、リストされたコンポーネントのパラメーターの一部のみを変更しましたが、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme)、[checkbox-theme]({environment:sassApiUrl}/index.html#function-checkbox-theme)、[drop-down-theme]({environment:sassApiUrl}/index.html#function-drop-down-theme)、[input-group-theme]({environment:sassApiUrl}/index.html#function-input-group-theme)、および [list-theme]({environment:sassApiUrl}/index.html#function-list-theme) テーマは、それぞれのスタイルを制御するためのより多くのパラメーターを提供します。
 
 最後のステップは、それぞれのテーマを持つコンポーネント mixin を**含める**ことです。また、入力のプレース ホルダーの色プロパティを設定します。
 
@@ -541,7 +541,7 @@ $custom-drop-down: drop-down-theme(
 >`.igx-excel-filter` と `.igx-excel-filter__secondary` 内のほとんどのコンポーネントのミックスインをスコープするため、これらのカスタムテーマは、Excel スタイル フィルタリング ダイアログとそのすべてのサブダイアログにネストされたコンポーネントのみに影響します。そうでない場合、他のボタン、チェックボックス、入力グループ、およびリストも影響を受けます。
 
 >[!NOTE]
->コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
+>コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {
@@ -563,7 +563,7 @@ $custom-drop-down: drop-down-theme(
 
 ### カラー パレットの定義
 
-上記のように色の値をハードコーディングする代わりに、[`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) および [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによって色に関してより高い柔軟性を持つことができます。
+上記のように色の値をハードコーディングする代わりに、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによって色に関してより高い柔軟性を持つことができます。
 
 `igx-palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
 
@@ -573,7 +573,7 @@ $black-color: #292826;
 
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
-また [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単に色を取り出すことができます。
+また [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単に色を取り出すことができます。
 
 ```scss
 $custom-grid: grid-theme(
@@ -614,13 +614,13 @@ $custom-drop-down:drop-down-theme(
 ```
 
 >[!NOTE]
->`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[`パレット`](../themes/sass/palettes.md)のトピックを参照してください。
+>`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
 
 テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネント (この場合は[`light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid)、[`light-input-group`]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[`light-button`]({environment:sassApiUrl}/index.html#variable-_light-button)、[`light-list`]({environment:sassApiUrl}/index.html#variable-_light-list)、[`light-checkbox`]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[`light-drop-down`]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
+すべてのコンポーネント (この場合は[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid)、[light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group)、[light-button]({environment:sassApiUrl}/index.html#variable-_light-button)、[light-list]({environment:sassApiUrl}/index.html#variable-_light-list)、[light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox)、[light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down)) に提供される 2 つの定義済みスキーマのいずれかを拡張します。
 
 ```scss
 $custom-grid-schema: extend($_light-grid,
@@ -721,7 +721,7 @@ $custom-drop-down-schema: extend($_light-drop-down,
 );
 ```
 
-カスタム スキーマを適用するには、グローバル ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) または [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 $custom-light-schema: extend($light-schema,(

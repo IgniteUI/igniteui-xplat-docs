@@ -32,7 +32,7 @@ To get started with the switch web component, first you need to install the {Pro
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Switch` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Switch` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";

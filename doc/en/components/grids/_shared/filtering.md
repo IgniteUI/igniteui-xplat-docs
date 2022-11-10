@@ -1,5 +1,5 @@
 ---
-title: Filtering in {Platform} {ComponentTitle} - {ProductName}
+title: Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
 _keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -594,7 +594,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 

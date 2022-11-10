@@ -28,15 +28,15 @@ The following sample demonstrates how to enable row editing in the `{ComponentNa
 
 <!-- Angular -->
 
-To get started import the `{ComponentName}Module` in the **app.module.ts** file:
+To get started import the `{ComponentModule}` in the **app.module.ts** file:
 
 ```typescript
 // app.module.ts
 
-import { {ComponentName}Module } from 'igniteui-{Platform}';
+import { {ComponentModule} } from 'igniteui-{Platform}';
 
 @NgModule({
-    imports: [{ComponentName}Module],
+    imports: [{ComponentModule}],
 })
 export class AppModule {}
 ```
@@ -102,15 +102,15 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
 import { data } from './data';
-import { {ComponentName}Component } from 'igniteui-{Platform}';
+import { {ComponentName} } from 'igniteui-{Platform}';
 
 @Component({
     selector: 'app-grid-row-edit',
-    styleUrls: [`app-grid-row-edit.component.css`],
+    styleUrls: [app-grid-row-edit.component.css],
     templateUrl: 'app-grid-row-edit.component.html'
 })
 export class {ComponentName}RowEditSampleComponent {
-    @ViewChild('gridRowEdit', { read: {ComponentName}Component }) public gridRowEdit: {ComponentName}Component;
+    @ViewChild('gridRowEdit', { read: {ComponentName} }) public gridRowEdit: {ComponentName};
 
     public data: any[];
 
@@ -227,8 +227,8 @@ Using the [{ProductName} Theme Library](themes/index.md), we can greatly alter t
 
 The Row Editing overlay is a composite element - its UI is comprised of a couple of other components:
 
-    - [`igx-banner`](banner.md) in order to render its contents
-    - [`igx-button`](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
+    - [igx-banner](banner.md) in order to render its contents
+    - [igx-button](button.md)s are rendered in the default template (for the `Done` and `Cancel` buttons).
 
 In the below example, we will make use of those two components' styling options, ([button styling](button.md#styling) & [banner-styling](../banner.md#styling)), to customize the experience of our `{ComponentName}`'s Row Editing.
 
@@ -250,7 +250,7 @@ Once we've imported the themes file, we can create custom themes.
 
 #### Define the Theme
 
-We can now define a custom [`banner theme`]({environment:sassApiUrl}/index.html#function-banner-theme) that will affect our Row Editing background and make use of one of the predefined palettes namely `$purple-palette` :
+We can now define a custom [banner theme]({environment:sassApiUrl}/index.html#function-banner-theme) that will affect our Row Editing background and make use of one of the predefined palettes namely `$purple-palette` :
 
 ```scss
     $my-light-gray: #e3e3e3;
@@ -266,7 +266,7 @@ Here we are using `my-banner-palette` in conjunction with `igx-color` (exposed b
 
 ### Include the Theme
 
-All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the `igx-banner mixin`:
+All we have to do now is apply the theme with a Sass `@include` statement. We pass our newly defined `$banner-theme` through the **igx-banner mixin**:
 
 ```scss
 @include banner($banner-theme);
@@ -276,10 +276,10 @@ This will apply our custom banner theme to the Row Editing overlay. However, sin
 
 ### Component Styles
 
-Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [`theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
+Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
 
 >[!NOTE]
->If the component is using an [`Emulated`](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+>If the component is using an [Emulated](themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
 >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 
 ```scss
@@ -314,7 +314,7 @@ To further customize our Row Editing overlay, we can pass a custom template so w
 </{ComponentSelector}>
 ```
 
-After we've defined our custom buttons, we can make use of the [`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling [here](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
+After we've defined our custom buttons, we can make use of the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme) to style them. You can learn more about `igx-button` styling [here](../button.md#styling). We can create a custom theme for our `Done` and `Cancel`:
 
 ```scss
 // custom.component.scss
@@ -346,7 +346,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 ## Known Issues and Limitations
 

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} のライブ データ更新 - {ProductName} for {Platform}
-_description: {ProductName} for {Platform} {Component Name} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
-_keywords: {Platform} {ComponentTitle}, {Platform} {Component} updates, {Platform} live data, infragistics, {Component} 更新, ライブ データ, インフラジスティックス
+_description: {ProductName} for {Platform} {ComponentTitle} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
+_keywords: {Platform} {ComponentTitle}, {Platform} {ComponentName} updates, {Platform} live data, infragistics, {ComponentName} 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
 ---
@@ -14,7 +14,7 @@ _language: ja
 ## {Platform} ライブ データ更新の例
 
 以下のサンプルは、すべてのレコードが 1 秒間に複数回更新される場合の {ComponentTitle} のパフォーマンスを示しています。UI コントロールを使用して、読み込むレコードの数と更新の頻度を選択します。
-同じデータを[折れ線チャート](../charts/types/line-chart.md)に入力して、Ignite UI for Angular の強力なチャート作成機能を体験してください。`Chart` ボタンには、選択した行の `Category Prices per Region` データが表示され、`Chart` 列ボタンには現在の行の同じデータが表示されます。
+同じデータを[折れ線チャート](../charts/types/line-chart.md)に入力して、Ignite UI for Angular の強力なチャート作成機能を体験してください。`Chart` ボタンには、選択した行の Category Prices per Region データが表示され、`Chart` 列ボタンには現在の行の同じデータが表示されます。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

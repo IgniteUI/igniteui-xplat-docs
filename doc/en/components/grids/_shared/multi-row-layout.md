@@ -118,7 +118,7 @@ The following features are currently **not** supported:
 
 ### Custom Keyboard Navigation
 
-The grid allows customizing the default navigation behavior when a certain key is pressed. Actions like `going to the next cell` or `cell below` could be handled easily with the powerful keyboard navigation API:
+The grid allows customizing the default navigation behavior when a certain key is pressed. Actions like **going to the next cell** or **cell below** could be handled easily with the powerful keyboard navigation API:
 
 - `GridKeydown` is exposed. The event will emit `IGridKeydownEventArgs`. This event is available only through the keyboard key combinations mentioned above, for all other key actions you can use `KeyDown` event.
 - `NavigateTo` - this method allows you to navigate to a position based on provided `RowIndex` and `VisibleColumnIndex`
@@ -148,7 +148,7 @@ Sometimes when configuring a column layout it might be a challenge to calculate 
 * Set columns in the preview by dragging a column chip in the place your will want it to be.
 * Add/Remove new columns by using the `Add Column` chip.
 
-* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
+* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [NgForOf](https://angular.io/api/common/NgForOf) for example.
 
 <!-- end: Angular -->
 
@@ -280,7 +280,7 @@ In order for the custom theme do affect only specific component, you can move al
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
@@ -302,7 +302,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 

@@ -1,5 +1,5 @@
 ---
-title: Conditional Cell Styling in {Platform} {ComponentTitle} - {ProductName}
+title: Conditional Cell Styling in {Platform} {ComponentTitle} for {ProductName}
 _description: Let users identify different cells quickly. Define a variety of cell styles. Use the conditional cell styling in {Platform} {ComponentTitle} to make cells stand out.
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]

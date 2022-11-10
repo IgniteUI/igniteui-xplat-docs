@@ -24,7 +24,7 @@ Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf
 
 ## 仮想化の有効化
 
-`ForOf` ディレクティブは、ビューポートに表示されているデータのみを描画し、ユーザーがスクロール時に表示データを切り替えた際に `{ComponentName}` が DOM 描画およびメモリ使用を最適化します。`{ComponentName}` の `Width` および `Height` のデフォルト値は `100%` です。コンテンツが利用可能なスペースにフィットせず、垂直方向または水平方向にスクロールバーが必要な場合に仮想化が有効になります。 
+`ForOf` ディレクティブは、ビューポートに表示されているデータのみを描画し、ユーザーがスクロール時に表示データを切り替えた際に `{ComponentName}` が DOM 描画およびメモリ使用を最適化します。`{ComponentName}` の `Width` および `Height` のデフォルト値は `100%` です。コンテンツが利用可能なスペースにフィットせず、垂直方向または水平方向にスクロールバーが必要な場合に仮想化が有効になります。
 
 ただし、`{ComponentName}` の `Width` または `Height` を明示的に `null` 値に設定できます。つまり、関連するディメンションが項目の合計サイズに基づいて決定されます。スクロールバーが表示されず、すべての項目が相対するディメンション (`Width` が `null` 値の場合は列で、`Height` が `null` 値の場合は行) に描画されます。
 
@@ -41,7 +41,7 @@ Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf
 
 ## リモート仮想化
 
-`{ComponentName}` はリモート仮想化をサポートします。詳細については、[`リモート データ操`](remote-data-operations.md)作で説明されています。
+`{ComponentName}` はリモート仮想化をサポートします。詳細については、[リモート データ操](remote-data-operations.md)作で説明されています。
 
 <!-- end: Angular -->
 

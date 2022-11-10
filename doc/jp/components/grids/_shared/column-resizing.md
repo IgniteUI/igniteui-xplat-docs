@@ -307,7 +307,7 @@ column.autosize();
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-最も簡単な方法は、[`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、
+最も簡単な方法は、[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、
 `$resize-line-color` パラメーター以外にも多くのパラメータを受け入れます。
 
 ``` scss
@@ -317,7 +317,7 @@ $custom-grid-theme: grid-theme(
 
 ```
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 
 ```scss
 :host {
@@ -328,7 +328,7 @@ $custom-grid-theme: grid-theme(
 ```
 
 ### カラー パレットの定義
-カラーの値をハードコーディングする代わりに、[`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) および [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによってカラーに関してより高い柔軟性を持つことができます。
+カラーの値をハードコーディングする代わりに、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによってカラーに関してより高い柔軟性を持つことができます。
 
 `Igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
@@ -339,7 +339,7 @@ $secondary-color: #BDBDBD;
 $custom-theme-palette: palette($primary: $primary-color, $secondary: $secondary-color);
 ```
 
-また [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単にカラーを取り出すことができます。
+また [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) を使用してパレットから簡単にカラーを取り出すことができます。
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -349,12 +349,12 @@ $custom-grid-theme: grid-theme(
 ```
 
 >[!NOTE]
->`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[`パレット`](../themes/sass/palettes.md)のトピックを参照してください。
+>`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
 テーマ エンジンを使用して [**スキーマ**](../themes/sass/schemas.md)の利点を活用でき、堅牢で柔軟な構造を構築できます。**スキーマ**はテーマを使用する方法です。
 
-すべてのコンポーネントに提供されている定義済みのスキーマを拡張します。この場合は、[`light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid) スキーマです。
+すべてのコンポーネントに提供されている定義済みのスキーマを拡張します。この場合は、[light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid) スキーマです。
 
 ```scss
 // Extending the light grid schema
@@ -373,7 +373,7 @@ $light-grid-schema: extend($_light-grid,
 );
 ```
 
-カスタム スキーマを適用するには、グローバル ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) または [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-light-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global light-schema

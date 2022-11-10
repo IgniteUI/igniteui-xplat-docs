@@ -1,7 +1,7 @@
 ---
-title: Live Data updates in {Platform} {ComponentTitle} - {ProductName} for {Platform}
-_description: Check out how the {ProductName} for {Platform} {Component Name} can handle thousands of updates per second, while staying responsive for user interactions.
-_keywords: {Platform} {ComponentTitle}, {Platform} {Component} updates, {Platform} live data, infragistics
+title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
+_description: Check out how the {ProductName} for {Platform} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
+_keywords: {Platform} {ComponentTitle}, {Platform} {ComponentName} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
 ---
 
@@ -13,7 +13,7 @@ The {ComponentTitle} component is able to handle thousands of updates per second
 ## {Platform} Live-data Update Example
 
 The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
-Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show `Category Prices per Region` data for the selected rows and the `Chart` column button will show the same for the current row.
+Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show Category Prices per Region data for the selected rows and the `Chart` column button will show the same for the current row.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

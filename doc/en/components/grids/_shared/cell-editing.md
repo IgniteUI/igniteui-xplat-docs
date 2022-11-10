@@ -22,7 +22,7 @@ In addition, you can define your own custom templates for update-data actions an
 </code-view>
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [`Select`](../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
 
@@ -164,7 +164,7 @@ If you want to provide a custom template which will be applied when a cell is in
 </igx-column>
 ```
 
-This code is used in the sample below which implements an [`SelectComponent`](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
+This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
 <code-view style="height:625px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -183,7 +183,7 @@ This code is used in the sample below which implements an [`SelectComponent`](..
 > The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), [`Combo`](../combo.md), etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), [Combo](../combo.md), etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- Angular -->
 
@@ -539,7 +539,7 @@ Now we can make use of all of the functions exposed by the Ignite UI for {Platfo
 
 ### Defining a Palette
 
-After we've properly imported the index file, we create a custom palette that we can use. Let's define two colors that we like and use them to build a palette with [`igx-palette`](../themes/palettes.md):
+After we've properly imported the index file, we create a custom palette that we can use. Let's define two colors that we like and use them to build a palette with [igx-palette](../themes/palettes.md):
 
 ```scss
 $white: #fff;
@@ -550,7 +550,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### Defining Themes
 
-We can now define the theme using our palette. The cells are styled by the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our {ComponentName}:
+We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our {ComponentName}:
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -575,10 +575,10 @@ This way, the theme will apply to **all** grids in our application. If we wish t
 
 In order for the custom theme to affect only our specific component, we can move all of the styles we just defined from the global styles file to our custom component's style file (including the [import](#importing-style-library) of the `index` file).
 
-This way, due to {Platform}'s [`ViewEncapsulation`](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
+This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
 
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
  >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 
@@ -593,7 +593,7 @@ This way, due to {Platform}'s [`ViewEncapsulation`](https://angular.io/api/core/
 
 ### Styling Demo
 
-In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [`igx-input-group`](../input-group.md#styling), [`igx-datepicker`](../date-picker.md#styling) & [`igx-checkbox`](../checkbox.md#styling)
+In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
 <code-view style="height:950px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

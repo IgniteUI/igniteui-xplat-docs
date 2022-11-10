@@ -148,7 +148,7 @@ _language: ja
 * プレビューで列チップをドラッグして列を設定します。
 * `[列の追加]` チップを使用して新しい列を追加/削除します。
 
-* [`NgForOf`](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
+* [NgForOf](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
 
 <!-- end: Angular -->
 
@@ -171,7 +171,7 @@ _language: ja
 
 ## スタイル設定
 
-`{ComponentName}` を使用すると、[Ignite UI for Angular テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。 
+`{ComponentName}` を使用すると、[Ignite UI for Angular テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下は、グリッドの複数行レイアウト スタイルをカスタマイズする手順です。
 
@@ -205,7 +205,7 @@ $custom-theme: grid-theme(
 
 ### カスタム カラー パレットの定義
 
-上記で説明したアプローチでは、色の値がハード コーディングされていました。または `Palette` および `Color` 関数を使用して、柔軟性を高めることができます。 
+上記で説明したアプローチでは、色の値がハード コーディングされていました。または `Palette` および `Color` 関数を使用して、柔軟性を高めることができます。
 
 `Palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
@@ -280,7 +280,7 @@ $my-custom-schema: extend($light-schema, (
 このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 

@@ -327,7 +327,7 @@ public mySelectedRows = [1, 2, 3]; // an array of row IDs
 
 You can template header and row selectors in the `{ComponentName}` and also access their contexts which provide useful functionality for different scenarios.
 
-By default, the `{ComponentName}` **handles all row selection interactions** on the row selector's parent container or on the row itself, leaving just the state visualization for the template. Overriding the base functionality should generally be done using the [`RowSelectionChanging` event](#row-selection-event). In case you implement a custom template with a `Click` handler which overrides the base functionality, you should stop the event's propagation to preserve the correct row state.
+By default, the `{ComponentName}` **handles all row selection interactions** on the row selector's parent container or on the row itself, leaving just the state visualization for the template. Overriding the base functionality should generally be done using the [RowSelectionChanging` event](#row-selection-event). In case you implement a custom template with a `Click` handler which overrides the base functionality, you should stop the event's propagation to preserve the correct row state.
 
 #### Row Template
 
@@ -369,7 +369,7 @@ The `rowID` property can be used to get a reference of an `{ComponentSelector}` 
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
 ```
-In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [`Row Numbering Demo`](#row-numbering-demo).
+In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
 <!-- ComponentStart: HierarchicalGrid -->
 
