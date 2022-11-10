@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} のライブ データ更新 - {ProductName} for {Platform}
-_description: {ProductName} for {Platform} {Component Name} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
-_keywords: {Platform} {ComponentTitle}, {Platform} {Component} updates, {Platform} live data, infragistics, {Component} 更新, ライブ データ, インフラジスティックス
+_description: {ProductName} for {Platform} {ComponentTitle} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
+_keywords: {Platform} {ComponentTitle}, {Platform} {ComponentName} updates, {Platform} live data, infragistics, {ComponentName} 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
 ---

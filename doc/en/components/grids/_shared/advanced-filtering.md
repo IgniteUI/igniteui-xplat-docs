@@ -1,11 +1,10 @@
 ---
-title: Advanced Filtering in {Platform} {ComponentTitle}- {ProductName}
+title: Advanced Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
-}
 
 
 # {Platform} {ComponentTitle} Advanced Filtering

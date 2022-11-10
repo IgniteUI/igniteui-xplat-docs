@@ -1,5 +1,5 @@
 ---
-title:  Excel Style Filtering in {Platform} {ComponentTitle} - {ProductName}
+title:  Excel Style Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Learn how to configure Excel filtering in {Platform} {ComponentTitle}. You can enable/disable various options and customize the Excel style filter menu the way you want.
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]

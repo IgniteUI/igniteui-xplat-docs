@@ -473,7 +473,7 @@ Additional components and/or directives with relative APIs that were used:
 
 <!-- Angular -->
 Styles:
-* `{ComponentName}Component`
+* `{ComponentName}`
 * `Radio`
 <!-- end: Angular -->
 

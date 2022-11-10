@@ -28,15 +28,15 @@ The following sample demonstrates how to enable row editing in the `{ComponentNa
 
 <!-- Angular -->
 
-To get started import the `{ComponentName}Module` in the **app.module.ts** file:
+To get started import the `{ComponentModule}` in the **app.module.ts** file:
 
 ```typescript
 // app.module.ts
 
-import { {ComponentName}Module } from 'igniteui-{Platform}';
+import { {ComponentModule} } from 'igniteui-{Platform}';
 
 @NgModule({
-    imports: [{ComponentName}Module],
+    imports: [{ComponentModule}],
 })
 export class AppModule {}
 ```
@@ -102,7 +102,7 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
 import { data } from './data';
-import { {ComponentName}Component } from 'igniteui-{Platform}';
+import { {ComponentName} } from 'igniteui-{Platform}';
 
 @Component({
     selector: 'app-grid-row-edit',
@@ -110,7 +110,7 @@ import { {ComponentName}Component } from 'igniteui-{Platform}';
     templateUrl: 'app-grid-row-edit.component.html'
 })
 export class {ComponentName}RowEditSampleComponent {
-    @ViewChild('gridRowEdit', { read: {ComponentName}Component }) public gridRowEdit: {ComponentName}Component;
+    @ViewChild('gridRowEdit', { read: {ComponentName} }) public gridRowEdit: {ComponentName};
 
     public data: any[];
 

@@ -305,11 +305,11 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## API References
 
-* [{ComponentTitle} Component API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
 
 <!-- Angular -->
 
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 

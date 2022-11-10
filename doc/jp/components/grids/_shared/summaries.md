@@ -350,7 +350,7 @@ class MySummary extends IgxNumberSummaryOperand {
 
 <!-- ```razor
 Add blazor snippet for my summary
-```--> 
+```-->
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

@@ -1,6 +1,6 @@
 ---
-title: {Platform} {Component} {ComponentTitle} - {ProductName} for {Platform}
-_description: 重要な UI 操作には {Platform} {Component} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
+title: {Platform} {ComponentTitle} for {ProductName}
+_description: 重要な UI 操作には {Platform} {ComponentTitle} を使用します。列の非表示、ピン固定、Excel エクスポートなど、グリッドの機能にさまざまな UI コントロールをホストします。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]

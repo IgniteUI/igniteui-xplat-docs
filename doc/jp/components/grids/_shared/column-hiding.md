@@ -474,7 +474,7 @@ $custom-button: button-theme(
 
 <!-- Angular -->
 スタイル:
-* `{ComponentName}Component`
+* `{ComponentName}`
 * `Radio`
 <!-- end: Angular -->
 

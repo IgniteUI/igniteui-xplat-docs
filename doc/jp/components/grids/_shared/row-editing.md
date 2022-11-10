@@ -29,15 +29,15 @@ _language: ja
 
 <!-- Angular -->
 
-`{ComponentName}Module` を **app.module.ts** ファイルにインポートします。
+`{ComponentModule}` を **app.module.ts** ファイルにインポートします。
 
 ```typescript
 // app.module.ts
 
-import { {ComponentName}Module } from 'igniteui-{Platform}';
+import { {ComponentModule} } from 'igniteui-{Platform}';
 
 @NgModule({
-    imports: [{ComponentName}Module],
+    imports: [{ComponentModule}],
 })
 export class AppModule {}
 ```
@@ -103,7 +103,7 @@ export class AppModule {}
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
 import { data } from './data';
-import { {ComponentName}Component } from 'igniteui-{Platform}';
+import { {ComponentName} } from 'igniteui-{Platform}';
 
 @Component({
     selector: 'app-grid-row-edit',
@@ -111,7 +111,7 @@ import { {ComponentName}Component } from 'igniteui-{Platform}';
     templateUrl: 'app-grid-row-edit.component.html'
 })
 export class {ComponentName}RowEditSampleComponent {
-    @ViewChild('gridRowEdit', { read: {ComponentName}Component }) public gridRowEdit: {ComponentName}Component;
+    @ViewChild('gridRowEdit', { read: {ComponentName} }) public gridRowEdit: {ComponentName};
 
     public data: any[];
 
