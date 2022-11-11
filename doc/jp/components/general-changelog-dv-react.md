@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
-$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
+{ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
 ## **{PackageVerChanges-22-2}**
 
