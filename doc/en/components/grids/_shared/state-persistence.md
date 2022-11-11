@@ -154,6 +154,30 @@ public restoreGridState() {
 Add blazor snippet for working with the sessionStorage
 ```
 
+```typescript
+private state: IgcGridStateDirective;
+
+constructor() {
+    this.router.events.pipe(take(1)).subscribe((event: NavigationStart) => {
+        this.saveGridState();
+    });
+}
+
+connectedCallback() {
+    this.restoreGridState();
+}
+
+public saveGridState() {
+    const state = this.state.getState() as string;
+    window.sessionStorage.setItem('grid1-state', state);
+}
+
+public restoreGridState() {
+    const state = window.sessionStorage.getItem('grid1-state');
+    this.state.setState(state);
+}
+```
+
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ## Restoring columns
@@ -177,6 +201,30 @@ Add blazor snippet for working with the sessionStorage
 Add snippet for grid
 ```
 
+```html
+<igc-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
+```
+
 <!-- ComponentEnd: Grid  -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -193,6 +241,30 @@ Add snippet for grid
 
 ```razor
 Add snippet for grid
+```
+
+```html
+<igc-hierarchical-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
 ```
 
 <!-- ComponentEnd: HierarchicalGrid  -->
@@ -213,6 +285,30 @@ Add snippet for grid
 Add sample
 ```
 
+```html
+<igc-tree-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
+```
+
 <!-- ComponentEnd: TreeGrid  -->
 
 1. Query the template view in the component using @ViewChild or @ViewChildren decorator. In the `ColumnInit` event handler, assign the template to the column `BodyTemplate` property:
@@ -231,6 +327,16 @@ public onColumnInit(column: IgxColumnComponent) {
 
 ```razor
 Add blazor handler for bodyTemplate
+```
+
+```typescript
+public onColumnInit(column: IgcColumnComponent) {
+    if (column.field === 'IsActive') {
+        column.bodyTemplate = this.activeTemplate;
+        column.summaries = MySummary;
+        column.filters = IgcNumberFilteringOperand.instance();
+    }
+}
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->

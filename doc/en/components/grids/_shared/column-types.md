@@ -58,6 +58,33 @@ public formatOptions = this.options;
 }
 ```
 
+```html
+<igc-column id="column" data-type="Number">
+</igc-column>
+```
+
+```ts
+private _formatOptions: any | null = null;
+    public get formatOptions(): any {
+        if (this._formatOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "1.4-4";
+            this._formatOptions = columnPipeArgs;
+        }
+        return this._formatOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatOptions;
+    }
+    this._bind();
+}
+```
+
 ### DateTime, Date and Time
 
 The appearance of the date portions will be set (e.g. day, month, year) based on `Locale` format or `PipeArgs` input. The pipe arguments can be used to specify a custom date format or timezone:
@@ -92,6 +119,35 @@ public formatOptions = this.options;
         /** A timezone offset (such as '+0430'), or a standard UTC/GMT or continental US timezone abbreviation. */
         Timezone = "GMT"
     };
+}
+```
+
+```html
+<igc-column id="column" data-type="Date">
+</igc-column>
+```
+
+```ts
+private _formatDateOptions: any | null = null;
+    public get formatDateOptions(): any {
+        if (this._formatDateOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "1.4-4";
+            columnPipeArgs.format: 'longDate';
+            columnPipeArgs.timezone: 'GMT';
+            this._formatDateOptions = columnPipeArgs;
+        }
+        return this._formatDateOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatDateOptions;
+    }
+    this._bind();
 }
 ```
 
@@ -173,6 +229,11 @@ The default template is using material icons for visualization of boolean values
 <IgbColumn DataType="GridColumnDataType.Boolean"></IgbColumn>
 ```
 
+```html
+<igc-column data-type="Boolean">
+</igc-column>
+```
+
 <!-- Blazor -->
 
 ### Image
@@ -233,15 +294,24 @@ The default template will show a numeric value with currency symbol that would b
 <!-- end: Blazor -->
 
 *By using Grid's locale*
+<!-- Angular -->
 ```html
 <{ComponentSelector} [locale]="'fr-FR'" [data]="data">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Locale="'fr-FR'" Data=data>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} locale="'fr-FR'">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
 
@@ -271,6 +341,36 @@ public formatOptions = this.options;
         CurrencyCode = "USD",
         Display = "symbol-narrow"
     };
+}
+```
+
+```html
+<igc-column id="column" field="UnitsInStock"
+    data-type="Currency">
+</igc-column>
+```
+
+```ts
+private _formatOptions: any | null = null;
+    public get formatOptions(): any {
+        if (this._formatOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "3.4-4";
+            columnPipeArgs.currencyCode = "USD";
+            columnPipeArgs.display = "symbol-narrow";
+            this._formatOptions = columnPipeArgs;
+        }
+        return this._formatOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatOptions;
+    }
+    this._bind();
 }
 ```
 
@@ -332,6 +432,34 @@ public formatPercentOptions = this.options;
 }
 ```
 
+```html
+<igc-column id="column" field="UnitsInStock"
+    data-type="Percent">
+</igc-column>
+```
+
+```ts
+private _formatPercentOptions: any | null = null;
+    public get formatPercentOptions(): any {
+        if (this._formatPercentOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "2.2-3";
+            this._formatPercentOptions = columnPipeArgs;
+        }
+        return this._formatPercentOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatPercentOptions;
+    }
+    this._bind();
+}
+```
+
 > Note: When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
 
 ## Default Editing Template
@@ -374,6 +502,51 @@ public init(column: IgxColumnComponent) {
 ```
 
 <!-- end: Angular -->
+
+```html
+<igc-grid id="grid1" auto-generate="false">
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" [pipeArgs]="formatOptions" editable="true">
+        <ng-template igxCellEditor let-value>
+            {{ value | currency:'USD':'symbol':'1.0-0'}}
+        </ng-template>
+    </igc-column>
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        unitsInStock.pipeArgs = this.formatOptions;
+        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
+
+    }
+    this._bind();
+}
+
+ // Through column formatter property
+public formatCurrency(value: number) {
+    return `Dollar sign ${value.toFixed(0)}`;
+}
+
+public init(column: IgcColumnComponent) {
+    switch (column.field) {
+        case 'UnitsInStock':
+            column.formatter = this.formatCurrency;
+            break;
+        default:
+            return;
+}
+
+public editCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`${ this.formatCurrency(ctx.cell.value)}`;
+}
+
+public formatCurrency(value: number) {
+
+}
+```
 
 <!-- ```razor
 TO DO!

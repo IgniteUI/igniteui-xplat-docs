@@ -58,11 +58,32 @@ In the `{ComponentName}` by default row selection is disabled (`RowSelection` is
 
 Single row selection can now be easily set up, the only thing you need to do, is to set `RowSelection` to `Single` property. This gives you the opportunity to **select only one row within a grid**. You can select a row by clicking on a cell or pressing the *space* key when you focus on a cell of the row, and of course you can select a row by clicking on the row selector field. When row is selected or deselected `RowSelectionChanging` event is emitted.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="remote | async" [rowSelection]="'single'" [autoGenerate]="true"
           (rowSelectionChanging)="handleRowSelection($event)" [allowFiltering]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" row-selection="Single" auto-generate="true"
+        allow-filtering="true">
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.rowSelectionChanging = this.handleRowSelection;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public handleRowSelection(args) {
@@ -99,11 +120,21 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 To enable multiple row selection in the `{ComponentName}` just set the `RowSelection` property to `Multiple`. This will enable a row selector field on each row and in the `{ComponentName}` header. The row selector allows users to select multiple rows, with the selection persisting through scrolling, paging, and data operations, such as sorting and filtering. The row also can be selected by clicking on a cell or by pressing the *space* key when a cell is focused. If you have selected one row and click on another while holding the *shift* key, this will select the whole range of rows. In this selection mode, when you click on a single row, the previous selected rows will be deselected. If you *click* while holding the *ctrl* key, the row will be toggled and the previous selection will be preserved.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="remote | async" [primaryKey]="'ProductID'" [rowSelection]="'multiple'"
         (rowSelectionChanging)="handleRowSelection($event)" [allowFiltering]="true" [autoGenerate]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" row-selection="Multiple"
+        allow-filtering="true" auto-generate="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -128,6 +159,12 @@ To enable cascade row selection in the `{ComponentName}` just set the `RowSelect
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
         [rowSelection]="'multipleCascade'" [allowFiltering]="true" (rowSelectionChanging)="handleRowSelection($event)">
 </igx-tree-grid>
+```
+
+```html
+<igc-tree-grid id="grid" primaryKey="ID" foreign-key="ParentID" auto-generate="true"
+        row-selection="MultipleCascade" allow-filtering="true">
+</igc-tree-grid>
 ```
 
 ```razor
@@ -169,6 +206,7 @@ In this mode a parent's selection state entirely depends on the selection state 
 
 The code snippet below can be used to select one or multiple rows simultaneously (via `PrimaryKey`). Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
 [primaryKey]="'ProductID'"
@@ -178,6 +216,7 @@ The code snippet below can be used to select one or multiple rows simultaneously
 
 <button (click)="grid.selectRows([1,2,5], true)">Select 1,2 and 5</button>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -192,12 +231,30 @@ The code snippet below can be used to select one or multiple rows simultaneously
     <IgbButton onclick='grid.selectRows([1,2,5], true)'>Select</IgbButton>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid"
+primary-key="ProductID"
+row-selection="Multiple"
+auto-generate="true">
+</{ComponentSelector}>
+
+<button onClick="onClick">Select 1,2 and 5</button>
+```
+```ts
+public onClick() {
+    this.grid.selectRows([1,2,5], true);
+}
+```
+<!-- end: WebComponents -->
+
 This will add the rows which correspond to the data entries with IDs 1, 2 and 5 to the `{ComponentName}` selection.
 
 ### Deselect Rows
 
 If you need to deselect rows programmatically, you can use the `DeselectRows` method.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
 [primaryKey]="'ProductID'"
@@ -207,6 +264,7 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
 
 <button (click)="grid.deselectRows([1,2,5], true)">Select 1,2 and 5</button>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -220,6 +278,23 @@ If you need to deselect rows programmatically, you can use the `DeselectRows` me
     </{ComponentSelector}>
     <IgbButton onclick='grid.deselectRows([1,2,5], true)'>Select</IgbButton>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid"
+primary-key="ProductID"
+row-selection="Multiple"
+auto-generate="true">
+</{ComponentSelector}>
+
+<button onClick="onClick">DeSelect</button>
+```
+```ts
+public onClick() {
+    this.grid.deselectRows([1,2,5], true);
+}
+```
+<!-- end: WebComponents -->
 
 ### Row Selection Event
 
@@ -237,9 +312,23 @@ When there is some change in the row selection `RowSelectionChanging` event is e
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} (rowSelectionChanging)="handleRowSelectionChange($event)">
 </{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.rowSelectionChanging = this.handleRowSelectionChange;
+    }
+    this._bind();
+}
 ```
 
 ```typescript
@@ -298,12 +387,26 @@ Additionally, assigning row IDs to `SelectedRows` will allow you to change the g
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" [autoGenerate]="false" [selectedRows]="mySelectedRows" [data]="data">
     <igx-column [field]="'ProductID'"></igx-column>
     <igx-column [field]="'ProductName'"></igx-column>
     <igx-column [field]="'UnitsInStock'"></igx-column>
 </{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.selectedRows = this.mySelectedRows;
+    }
+    this._bind();
+}
 ```
 
 ```razor
@@ -362,12 +465,30 @@ The `selected` property shows whether the current row is selected or not while t
     ></igx-checkbox>
 </ng-template>
 ```
+```ts
+public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
+    return html`
+        ${ctx.index }
+        <igc-checkbox
+            checked="${ctx.selected}"
+            readonly="true"
+        ></igc-checkbox>
+    `;
+}
+```
 
 The `rowID` property can be used to get a reference of an `{ComponentSelector}` row. This is useful when you implement a `click` handler on the row selector element.
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
+```
+```ts
+public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
+    return html`
+        <igc-checkbox click="${this.onSelectorClick($event, ctx.key)}"></igc-checkbox>
+    `;
+}
 ```
 In the above example we are using an `igx-checkbox` and we bind `rowContext.selected` to its `checked` property. See this in action in our [Row Numbering Demo](#row-numbering-demo).
 
@@ -402,6 +523,13 @@ The `SelectedCount` property shows you how many rows are currently selected whil
     {{ headContext.selectedCount }} / {{ headContext.totalCount  }}
 </ng-template>
 ```
+```ts
+public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
+    return html`
+        ${ ctx.selectedCount } / ${ ctx.totalCount  }
+    `;
+}
+```
 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the head selector should be checked or indeterminate (partially selected).
 
@@ -414,6 +542,26 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
         </igx-checkbox>
     </ng-template>
 </{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.headSelectorTemplate = this.headSelectorTemplate;
+    }
+    this._bind();
+}
+
+public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
+    return html`
+        <igc-checkbox
+            checked="${ ctx.selectedCount > 0 && ctx.selectedCount === ctx.totalCount}"
+            indeterminate="${ctx.selectedCount > 0 && ctx.selectedCount !== ctx.totalCount}">
+        </igc-checkbox>
+    `;
+}
 ```
 
 <!-- ComponentStart: HierarchicalGrid -->

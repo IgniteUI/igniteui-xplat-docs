@@ -104,8 +104,32 @@ Example how to commit new values, if user tries to sort the column while a cell/
 </igx-grid>
 ```
 
+```html
+<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.sorting = this.onSorting;
+    }
+    this._bind();
+
+}
+```
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
+    this.grid.endEdit(true);
+    // (event.owner as IgxGridComponent).endEdit(true);
+}
+```
+```typescript
+public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
     // (event.owner as IgxGridComponent).endEdit(true);
 }

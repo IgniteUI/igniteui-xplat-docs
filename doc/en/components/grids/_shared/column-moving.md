@@ -36,6 +36,14 @@ This allows to attach handlers for any event emitted by the element, otherwise t
     };
 ```
 
+```ts
+public headerTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>   
+    `;
+}
+```
+
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
 <code-view style="height:650px"
@@ -49,13 +57,21 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 **Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentName}`.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Moving=true></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## API
 
@@ -117,12 +133,34 @@ There are several events related to the column moving to provide a means for tap
 
 You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the **Category** column after the **Change On Year(%)** column in the following code snippet.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #dataGrid [data]="data" [autoGenerate]="false" [moving]="true" (columnMovingEnd)="onColumnMovingEnd($event)">
     <igx-column [field]="'Category'"></igx-column>
     <igx-column [field]="'Change On Year(%)'" [dataType]="'number'" ></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
+    <igx-column field="Category"></igx-column>
+    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+</{ComponentSelector}>
+```
+```typescript
+constructor() {
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        dataGrid.data = this.data;
+        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onColumnMovingEnd(event) {

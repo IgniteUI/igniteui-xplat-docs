@@ -44,6 +44,7 @@ export class AppModule {}
 <!-- end: Angular -->
 
 Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
@@ -58,6 +59,40 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
     <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
+    <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
+    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
+    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
+        <ng-template igcCellEditor let-cell="cell">
+            <input name="units" [(ngModel)]="cell.value" style="color: black" />
+        </ng-template>
+    </igc-column>
+    <igc-column field="OrderDate" data-type="Date"></igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
+    }
+    this._bind();
+}
+
+public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<input name="units" value="${ctx.cell.value}" style="color: black" />`;
+}
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -99,6 +134,7 @@ Define a `{ComponentName}` with bound data source and `RowEditable` set to true:
 > [!NOTE]
 > It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
 
+<!-- Angular -->
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
 import { data } from './data';
@@ -119,6 +155,7 @@ export class {ComponentName}RowEditSampleComponent {
     }
 }
 ```
+<!-- end: Angular -->
 
 
 > [!NOTE]
@@ -195,6 +232,12 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 }, false);
  ```
 
+ ```ts
+public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
+    return html`Changes: ${ctx.rowChangesCount}`;
+}
+```
+
 ### Customizing Buttons
 
 Customizing the buttons of the row editing overlay also possible via templating.
@@ -218,6 +261,15 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 </div>`;
 }, false);
  ```
+
+ ```ts
+public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`
+        <button onClick="${this.endRowEdit(false)}">Cancel</button>
+	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+    `;
+}
+```
 
 <!-- Angular -->
 

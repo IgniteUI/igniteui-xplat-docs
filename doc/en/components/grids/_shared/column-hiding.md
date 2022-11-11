@@ -27,6 +27,7 @@ The Ignite UI for {Platform} `{ComponentName}` has a built-in column hiding UI, 
 
 Let's start by creating our `{ComponentName}` and binding it to our data. We will also enable both filtering and sorting for the columns.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
@@ -41,6 +42,7 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
@@ -56,6 +58,22 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
+    <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
+    <igc-column field="City" data-type="String" sortable="true"></igc-column>
+    <igc-column field="CompanyName" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Fax" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Address" data-type="String" sortable="true"></igc-column>
+    <igc-column field="PostalCode" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Country" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Phone" data-type="String" sortable="true"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Toolbar's Column Hiding UI
 
@@ -63,6 +81,7 @@ The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentN
 
 For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentName}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -75,6 +94,7 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -89,10 +109,26 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
+
 The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -105,6 +141,7 @@ By using the `Title` property, we will set the title that is displayed inside th
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -118,6 +155,20 @@ By using the `Title` property, we will set the title that is displayed inside th
     </{ComponentSelector}>
 </div>
 ```
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -136,6 +187,16 @@ public ngAfterViewInit() {
     {
         HidingAction.ColumnsAreaMaxHeight = "200px";
     }
+}
+```
+
+```typescript
+constructor() {
+    var hidingAction = this.hidingAction = document.getElementById('hidingAction') as IgcGridToolbarHidingComponent;
+}
+
+connectedCallback() {
+    this.hidingAction.columnsAreaMaxHeight = "200px";
 }
 ```
 
@@ -275,6 +336,17 @@ We can easily prevent the user from being able to hide columns through the colum
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- WebComponents -->
+```html
+<div class="gridContainer">
+    <{ComponentSelector}>
+        <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>        
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 If all went well, this is how our column hiding UI component should look like:
 

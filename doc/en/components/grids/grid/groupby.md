@@ -24,6 +24,7 @@ This example presents the grouping capabilities of a large amount of data. Dragg
 
 It is possible to define initial grouping of the grid by assigning an array of expressions to the `GroupingExpressions` property of the grid.
 
+<!-- Angular -->
 ```typescript
 public ngOnInit() {
     grid.groupingExpressions = [
@@ -32,6 +33,18 @@ public ngOnInit() {
     ];
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+connectedCallback() {
+    grid.groupingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Desc },
+        { fieldName: 'Released', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
 
 Grouping expressions implement the `ISortingExpression` interface.
 
@@ -48,8 +61,19 @@ Grouping is available through the UI and through a robust API exposed by the gri
 </-grid>
 ```
 
+<!-- Angular -->
 ```typescript
 public ngOnInit() {
+    grid.columns.forEach((column) => {
+        column.groupable = true;
+    });
+}
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+connectedCallback() {
     grid.columns.forEach((column) => {
         column.groupable = true;
     });
@@ -140,6 +164,12 @@ As an example, the following template would make the group rows summary more ver
 </ng-template>
 ```
 
+```ts
+public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
+    return html`<span>Total items with value: ${ ctx.value } are ${ ctx.records.length }</span>`;
+}
+```
+
 ### Group Row Selector Templates
 
 As mentioned above the group row except for the expand/collapse UI is fully templatable. To create a custom Group By row selector template within the Grid, declare an `<ng-template>` with `GroupByRowSelector` directive. From the template, you can access the implicitly provided context variable, with properties that give you information about the Group By row's state.
@@ -152,12 +182,28 @@ The `SelectedCount` property shows how many of the group records are currently s
 </ng-template>
 ```
 
+```ts
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
+    return html`
+        ${ ctx.selectedCount } / ${ ctx.totalCount  }
+    `;
+}
+```
+
 The `GroupRow` property returns a reference to the group row.
 
 ```html
 <ng-template GroupByRowSelector let-groupByRowContext>
     <div (click)="handleGroupByRowSelectorClick($event, groupByRowContext.groupRow)">Handle groupRow</div>
 </ng-template>
+```
+
+```ts
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
+    return html`
+        <div onClick="${ handleGroupByRowSelectorClick($event, groupByRowContext.groupRow) }">Handle groupRow</div>
+    `;
+}
 ```
 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the Group By row selector should be checked or indeterminate (partially selected).

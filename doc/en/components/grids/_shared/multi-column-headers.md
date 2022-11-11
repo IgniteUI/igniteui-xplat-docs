@@ -22,6 +22,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [allowFiltering]="true">
     <igx-column-group header="Contact Information">
@@ -31,6 +32,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -42,10 +44,22 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} allow-filtering="true">
+    <igc-column-group header="Contact Information">
+        <igc-column sortable="true" resizable="true" field="Phone"></igc-column>
+        <igc-column sortable="true" resizable="true" field="Fax"></igc-column>
+        <igc-column sortable="true" resizable="true" field="PostalCode"></igc-column>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID">
     <igx-column-group header="Contact Information">
@@ -55,6 +69,7 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -65,6 +80,18 @@ The declaration of multi-column headers is achieved by wrapping a set of columns
     </IgbColumnGroup>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <igc-column-group header="Contact Information">
+        <igc-column field="Phone" data-type="String" sortable="true" resizable="true"></igc-column>
+        <igc-column field="Fax" data-type="String" sortable="true" resizable="true"></igc-column>
+        <igc-column field="PostalCode" data-type="String" sortable="true" resizable="true"></igc-column>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -97,7 +124,7 @@ TO-DO H-GRID CODE SNIPPET
 For achieving `n-th` level of nested headers, the declaration above should be followed. So by nesting `ColumnGroup` leads to the desired result.
 
 <!-- ComponentStart: Grid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group header="General Information">
@@ -109,6 +136,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -122,10 +150,23 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} height="600px" allow-filtering="true">
+    <igc-column-group header="General Information">
+        <igc-column movable="true" sortable="true" resizable="true" field="CompanyName"></igc-column>
+        <igc-column-group movable="true" header="Person Details">
+            <igc-column movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></igc-column>
+            <igc-column movable="true" sortable="true" resizable="true" field="ContactTitle"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group [pinned]="false" header="General Information">
@@ -138,6 +179,7 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -151,6 +193,21 @@ For achieving `n-th` level of nested headers, the declaration above should be fo
     </IgbColumnGroup>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primary-key="ID" foreign-key="ParentID" moving="true">
+    <igc-column-group pinned="false" header="General Information">
+        <igc-column field="HireDate" data-type="date" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ID" data-type="number" resizable="true" filterable="false"></igc-column>
+            <igc-column field="Title" data-type="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Age" data-type="number" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -182,7 +239,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
 
 <!-- ComponentStart: Grid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
@@ -193,6 +250,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
     <igx-column sortable="true" resizable="true" field="PostalCode"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -205,10 +263,22 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} height="600px" allow-filtering="true">
+    <igc-column-group  movable="true" pinned="true" header="General Information">
+        <igc-column movable="true" sortable="true" resizable="true" field="CompanyName"></igc-column>
+    </igc-column-group>
+    <igc-column sortable="true" resizable="true" field="Phone"></igc-column>
+    <igc-column sortable="true" resizable="true" field="Fax"></igc-column>
+    <igc-column sortable="true" resizable="true" field="PostalCode"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group header="Contact Information">
@@ -219,6 +289,7 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
     <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -231,6 +302,18 @@ Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinnin
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primary-key="ID" foreign-key="ParentID" moving="true">
+    <igc-column-group header="Contact Information">
+        <igc-column field="Phone" data-type="String" sortable="true" resizable="true"></igc-column>
+    </igc-column-group>
+    <igc-column field="Name" data-type="String" sortable="true" resizable="true"></igc-column>
+    <igc-column field="Title" data-type="String" sortable="true" resizable="true"></igc-column>
+    <igc-column field="Age" data-type="Number" sortable="true" resizable="true"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -268,6 +351,28 @@ The `ng-template` is provided with the column group object as a context.
 </igx-column-group>
 ```
 
+```html
+<igc-column-group id="General" header="General Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('General') as IgcColumnComponent;
+
+    this._bind = () => {
+        general.headerTemplate = this.generalHeaderTemplate;
+    }
+    this._bind();
+}
+
+public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.toUppercase(ctx.cell.column.header)}
+    `;
+}
+```
+
 If you want to re-use a single template for several column groups, you could set the `headerTemplate` property of the column group like this:
 
 ```html
@@ -279,6 +384,32 @@ If you want to re-use a single template for several column groups, you could set
 </igx-column-group>
 <igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
+```
+
+```html
+<igc-column-group id="General" header="General Information">
+</igc-column-group>
+<igc-column-group id="Address" header="Address Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('General') as IgcColumnComponent;
+    var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
+
+    this._bind = () => {
+        general.headerTemplate = this.columnGroupHeaderTemplate;
+        addresss.headerTemplate = this.columnGroupHeaderTemplate;
+    }
+    this._bind();
+}
+
+public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.toUppercase(ctx.cell.column.header)}
+    `;
+}
 ```
 <!-- end: Angular -->
 
@@ -321,6 +452,14 @@ The expression is provided with the column group object as a context.
     public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
         return @<IgbIcon AdditionalAttributes="DraggableAttributes"  @onclick="onClick"/>;
     };
+}
+```
+
+```ts
+public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+    `;
 }
 ```
 

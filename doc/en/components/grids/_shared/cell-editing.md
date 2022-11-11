@@ -163,6 +163,27 @@ If you want to provide a custom template which will be applied when a cell is in
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="class" field="class" header="Class" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var class = this.class = document.getElementById('class') as IgcColumnComponent;
+
+    this._bind = () => {
+        class.inlineEditorTemplateRef = this.classEditTemplate;
+    }
+    this._bind();
+}
+
+public classEditTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-select class="cell-select" value="${ctx.cell.value}" >
+        </igc-select>
+    `;
+}
+```
 
 This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
@@ -433,7 +454,42 @@ The first thing we need to is bind to the grid's event:
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+<!-- ComponentStart: Grid -->
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
+    this._bind = () => {
+        grid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+    var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **HandleCellEdit** definition, we need to make sure that we check for our specific column before taking any action:
 
 <!-- ComponentStart: Grid -->

@@ -43,6 +43,20 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
     </igx-grid-toolbar>
 </igx-grid>
 ```
+
+```html
+<igc-grid id="grid" auto-generate="true">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-title>Grid Toolbar</igc-grid-toolbar-title>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-advanced-filtering><igc-grid-toolbar-advanced-filtering>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-pinning></igc-grid-toolbar-pinning>
+            <igc-grid-toolbar-exporter></igc-grid-toolbar-exporter>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-grid>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -58,6 +72,19 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
         </igx-grid-toolbar-actions>
     </igx-grid-toolbar>
 </igx-tree-grid>
+```
+```html
+<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" auto-generate="true">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-title>Tree Grid Toolbar</igc-grid-toolbar-title>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-advanced-filtering><igc-grid-toolbar-advanced-filtering>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-pinning></igc-grid-toolbar-pinning>
+            <igc-grid-toolbar-exporter></igc-grid-toolbar-exporter>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -75,6 +102,19 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
     </igx-grid-toolbar>
 </igx-hierarchical-grid>
 ```
+```html
+<igc-hierarchical-grid id="hGrid">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-title>Hierarchical Grid Toolbar</igc-grid-toolbar-title>
+        <igc-grid-toolbar-actions>
+            <igc-grid-toolbar-advanced-filtering><igc-grid-toolbar-advanced-filtering>
+            <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            <igc-grid-toolbar-pinning></igc-grid-toolbar-pinning>
+            <igc-grid-toolbar-exporter></igc-grid-toolbar-exporter>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</igc-hierarchical-grid>
+```
 <!-- ComponentEnd: HierarchicalGrid -->
 
 > Note: As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
@@ -88,6 +128,12 @@ Of course, each of these UIs can be added independently of each other, or may no
     </igx-grid-toolbar>
 </igx-grid>
 ```
+```html
+<igc-grid auto-generate="true">
+    <igc-grid-toolbar>
+    </igc-grid-toolbar>
+</igc-grid>
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -97,6 +143,12 @@ Of course, each of these UIs can be added independently of each other, or may no
     </igx-grid-toolbar>
 </igx-tree-grid>
 ```
+```html
+<igc-tree-grid primary-key="ID" foreign-key="ParentID" auto-generate="true">
+    <igc-grid-toolbar>
+    </igc-grid-toolbar>
+</igc-tree-grid>
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -105,6 +157,12 @@ Of course, each of these UIs can be added independently of each other, or may no
     <igx-grid-toolbar>
     </igx-grid-toolbar>
 </igx-hierarchical-grid>
+```
+```html
+<igc-hierarchical-grid>
+    <igc-grid-toolbar>
+    </igc-grid-toolbar>
+</igc-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -165,6 +223,12 @@ Users can provide anything from simple text to more involved templates.
 </igx-grid-toolbar>
 ```
 
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-title>Grid toolbar title</igc-grid-toolbar-title>
+</igc-grid-toolbar>
+```
+
 ### Actions
 
 The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
@@ -181,6 +245,14 @@ toolbar interaction components.
 </igx-grid-toolbar>
 ```
 
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-actions>
+        ...
+    </igc-grid-toolbar-actions>
+</igc-grid-toolbar>
+```
+
 Each action now exposes a way to change the overlay settings of the actions dialog by using the `OverlaySettings` input. For example:
 
 ```html
@@ -188,6 +260,26 @@ Each action now exposes a way to change the overlay settings of the actions dial
     <igx-grid-toolbar-pinning [overlaySettings]="overlaySettingsScaleCenter"></igx-grid-toolbar-pinning>
     <igx-grid-toolbar-hiding [overlaySettings]="overlaySettingsAuto"></igx-grid-toolbar-hiding>
 </igx-grid-toolbar-actions>
+```
+
+```html
+<igc-grid-toolbar-actions>
+    <igc-grid-toolbar-pinning id="pinTool"></ig-grid-toolbar-pinning>
+    <igc-grid-toolbar-hiding id="hideTool"></igc-grid-toolbar-hiding>
+</igc-grid-toolbar-actions>
+```
+
+```ts
+constructor() {
+    var pinTool = this.pinTool = document.getElementById('pinTool') as IgcGridToolbarPinningComponent;
+    var hideTool = this.hideTool = document.getElementById('hideTool') as IgcGridToolbarHidingComponent;
+
+    this._bind = () => {
+        pinTool.overlaySettings = this.overlaySettingsScaleCenter;
+        hideTool.overlaySettings = this.overlaySettingsAuto;
+    }
+    this._bind();
+}
 ```
 
 ```ts
@@ -236,6 +328,18 @@ The component is setup to work out of the box with the parent grid containing th
 </igx-grid-toolbar>
 ```
 
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-actions>
+        <igc-grid-toolbar-pinning
+            title="Grid pinned columns"
+            prompt="Filter column collection"
+            column-list-height="400px">
+        </igc-grid-toolbar-pinning>
+    </igc-grid-toolbar-actions>
+</igc-grid-toolbar>
+```
+
 
 ### Column Hiding
 
@@ -255,6 +359,18 @@ title, the placeholder for the component input and the height of the dropdown it
 </igx-grid-toolbar>
 ```
 
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-actions>
+        <igc-grid-toolbar-hiding
+            title="Grid column hiding"
+            prompt="Filter column collection"
+            column-list-height="400px">
+        </igc-grid-toolbar-hiding>
+    </igc-grid-toolbar-actions>
+</igc-grid-toolbar>
+```
+
 ### Advanced Filtering
 
 Toolbar Advanced Filtering component provides the default UI for the Advanced Filtering feature. The component exposes a way to change the default text of the button.
@@ -265,6 +381,14 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
         <igx-grid-toolbar-advanced-filtering>Custom text for the toggle button</igx-grid-toolbar-advanced-filtering>
     </igx-grid-toolbar-actions>
 </igx-grid-toolbar>
+```
+
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-actions>
+        <igc-grid-toolbar-advanced-filtering>Custom text for the toggle button</igc-grid-toolbar-advanced-filtering>
+    </igc-grid-toolbar-actions>
+</igc-grid-toolbar>
 ```
 
 ### Data Exporting
@@ -323,6 +447,24 @@ Here is a snippet showing some of the options which can be customized through th
 </igx-grid-toolbar>
 ```
 
+```html
+<igc-grid-toolbar>
+    <igc-grid-toolbar-actions>
+        <igc-grid-toolbar-exporter
+            <!-- If active, enables the csv export entry in the dropdown UI -->
+            export-csv="true"
+            <!-- If active, enables the excel export entry in the dropdown UI -->
+            export-excel="true"
+            <!-- The name of the generated export file without the file extension -->
+            filename="exported_data">
+            <!-- Custom text for the exporter button -->
+            excel-text="Custom text for the excel export entry"
+            csv-text="Custom text for the CSV export entry"
+        </igc-grid-toolbar-exporter>
+    </igxc-grid-toolbar-actions>
+</igc-grid-toolbar>
+```
+
 @@if (igxName !== 'IgxHierarchicalGrid') {
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
@@ -334,9 +476,27 @@ In addition to changing the exported filename, the user can further configure th
 
 The following code snippet demonstrates subscribing to the toolbar exporting event and configuring the exporter options:
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} (toolbarExporting)="configureExport($event)" ></{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="toolbarExporter"></{ComponentSelector}>
+```
+```ts
+constructor() {
+    var toolbarExporter = this.toolbarExporter = document.getElementById('toolbarExporter') as IgcGridToolbarExporterComponent;
+
+    this._bind = () => {
+        toolbarExporter.toolbarExporting = this.configureExport;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 configureExport(args: IGridToolbarExportEventArgs) {
@@ -358,6 +518,33 @@ configureExport(args: IGridToolbarExportEventArgs) {
                             columnArgs.header === 'Country';
         }
         @@if (igxName === 'IgxTreeGrid') {
+        // Don't export image field
+        columnArgs.cancel = columnArgs.header === 'Name';
+        }
+    });
+}
+```
+
+```typescript
+configureExport(args: IGridToolbarExportEventArgs) {
+    const options: IgcExporterOptionsBase = args.options;
+
+    options.fileName = `Report_${new Date().toDateString()}`;
+
+    if (options instanceof IgcExcelExporterOptions) {
+        options.columnWidth = 10;
+    } else {
+        options.fileType = CsvFileTypes.TSV;
+        options.valueDelimiter = '\t';
+    }
+
+    args.exporter.columnExporting.subscribe((columnArgs: IColumnExportingEventArgs) => {
+        if (igcName === 'IgcGrid') {
+        // Don't export image fields
+        columnArgs.cancel = columnArgs.header === 'Athlete' ||
+                            columnArgs.header === 'Country';
+        }
+        if (igcName === 'IgcTreeGrid') {
         // Don't export image field
         columnArgs.cancel = columnArgs.header === 'Name';
         }
@@ -403,6 +590,7 @@ If the actions part of the toolbar component is not sufficient for a particular 
 
 Here is a sample snippet:
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #gridRef>
     <igx-grid-toolbar>
@@ -421,6 +609,19 @@ Here is a sample snippet:
     </igx-grid-toolbar>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-grid-toolbar>
+        <igc-grid-toolbar-title>title</igx-grid-toolbar-title>
+        <igc-grid-toolbar-actions>
+        </igc-grid-toolbar-actions>
+    </igc-grid-toolbar>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
 

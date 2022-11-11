@@ -30,6 +30,10 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
 ```
 
+```html
+<igc-column field="ID" width="100px" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -42,18 +46,45 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <IgbColumn Field="Artist" Resizable=true></IgbColumn>
 ```
 
+```html
+<igc-column field="Artist" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 You can subscribe to the `ColumnResized` event of the `{ComponentName}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `Column` object, are exposed through the event arguments.
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false">
+    <igc-column field="ID" width="100px" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -82,12 +113,35 @@ public onResize(event) {
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end:Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID">
+    <igc-column field="Title" width="100px" resizable="true" width="100px"></igc-column>
+    <igc-column field="HireDate" width="100px" resizable="true" width="100px"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.data = this.data;
+        treeGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -123,6 +177,25 @@ public onResize(event) {
 </igx-hierarchical-grid>
 ```
 
+```html
+<igc-hierarchical-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID"
+    height="600px" width="100%">
+    <igc-column field="Artist" resizable="true"></igc-column>
+</igc-hierarchical-grid>
+```
+
+```ts
+constructor() {
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hierarchicalGrid.data = this.data;
+        hierarchicalGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+
 ```typescript
 public onResize(event) {
     this.col = event.column;
@@ -146,11 +219,11 @@ This means that the following configuration is possible:
 <!-- ComponentStart: Grid -->
 
 ```html
-<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="10%" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-grid>
 ```
 
 ```razor
@@ -161,15 +234,23 @@ This means that the following configuration is possible:
 </{ComponentSelector}>
 ```
 
+```html
+<igc-grid id="grid" auto-generate="false">
+    <igc-column field="ID" width="10%" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+    <igc-column field="ContactTitle" resizable="true"></igc-column>
+</igc-grid>
+```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 
 ```html
-<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'10%'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'Age'" dataType="number" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-tree-grid>
 ```
 
 ```razor
@@ -178,6 +259,14 @@ This means that the following configuration is possible:
     <IgbColumn Field="HireDate" Resizable=true Width="100px"></IgbColumn>
     <IgbColumn Field="Age" Resizable=true></IgbColumn>
 </{ComponentSelector}>
+```
+
+```html
+<igc-tree-grid id="data" primary-key="ID" foreign-key="ParentID" auto-generate="false">
+    <igc-column field="Title" resizable="true" width="10%"></igc-column>
+    <igc-column field="HireDate" resizable="true" width="100px"></igc-column>
+    <igc-column field="Age" data-type="Number" resizable="true"></igc-column>
+</igc-tree-grid>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -190,6 +279,15 @@ This means that the following configuration is possible:
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>
         <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
+        height="600px" width="100%">
+        <igc-column field="Artist" resizable="true" width="10%"></igc-column>
+        <igc-column field="GrammyNominations" resizable="true" width="100px"></igc-column>
+        <igc-column field="GrammyAwards" resizable="true"></igc-column>
+</igc-hierarchical-grid>
 ```
 
 ```razor
@@ -217,6 +315,10 @@ You can also configure the minimum and maximum allowable column widths. This is 
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -230,6 +332,10 @@ This means the following configurations are possible:
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="10%" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -240,6 +346,10 @@ or
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
+```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="5%" max-width="15%"></igc-column>
 ```
 
 ```razor
@@ -252,11 +362,24 @@ Each column can be **auto sized** by double clicking the right side of the heade
 
 You can also auto-size a column dynamically using the exposed `Autosize` method on `Column`.
 
+<!-- Angular -->
 ```typescript
 @ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
 
 let column = this.@@igObjectRef.columnList.filter(c => c.field === 'ID')[0];
 column.autosize();
+```
+<!-- end: Angular -->
+
+```typescript
+constructor() {
+    var id = this.id = document.getElementById('ID') as IgcColumnComponent;
+
+    this._bind = () => {
+        id.autoize();
+    }
+    this._bind();
+}
 ```
 
 ```razor
@@ -277,6 +400,10 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 
 ```html
 <igx-column width='auto'>
+```
+
+```html
+<igc-column width='auto'>
 ```
 
 ```razor

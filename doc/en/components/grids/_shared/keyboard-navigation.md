@@ -158,6 +158,22 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 ```html
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
+```html
+<igc-grid id="grid1" primary-key="ProductID">
+</igc-grid
+```
+```ts
+constructor() {
+        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+        this._bind = () => {
+            grid.data = this.data
+            grid.gridKeydown = this.customKeydown
+        }
+        this._bind();
+
+    }
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
