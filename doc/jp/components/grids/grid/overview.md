@@ -6,7 +6,7 @@ mentionedTypes: ['Grid']
 _language: ja
 ---
 
-# {Platform} Grid Overview and Configuration
+# {Platform} Grid 概要と構成
 
 <div class="sample-content">
     <article class="sample-column">
@@ -54,8 +54,8 @@ _language: ja
 
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 
-- [作業の開始](..\general-getting-started.md)
-- [NuGet パッケージの追加](..\general-nuget-feed.md)
+- [作業の開始](..\..\general-getting-started.md)
+- [NuGet パッケージの追加](..\..\general-nuget-feed.md)
 
 また、グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
@@ -129,7 +129,7 @@ Ignite UI for {Platform} には、Flex に基づくレイアウト システム�
 
 グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-このトピックに続いて、[セル テンプレート](grid.md#セル-テンプレート)と[セル編集テンプレート](grid.md#セル編集テンプレート)および編集について詳しく学習します。
+このトピックに続いて、[セル テンプレート](#セル-テンプレート)と[セル編集テンプレート](#セル編集テンプレート)および編集について詳しく学習します。
 
 ## グリッドの列構成
 
@@ -1158,7 +1158,7 @@ public updatePostalCode(rowId: number){
 
 ## サイズ変更
 
-[Grid サイズ変更](sizing.md) トピックを確認してください。
+[Grid サイズ変更](sizing.md)トピックを確認してください。
 
 
 <!-- Angular -->

@@ -48,7 +48,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 <!-- end: Blazor -->
 
-### Component Modules
+### コンポーネント モジュール
 
 ```razor
 // in Program.cs file

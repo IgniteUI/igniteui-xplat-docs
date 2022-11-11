@@ -206,7 +206,7 @@ Ignite UI for {Platform} は、世界最速の仮想化された {Platform} デ�
 
 ## {Platform} Grid の例
 
-この {Platform} グリッドの例では、データの検索とフィルタリング、列のソート、サイズ変更、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、水平および垂直スクロールなど、グリッドに組み込まれているさまざまな機能を利用してユーザーがデータ ビューをカスタマイズする方法を確認できます。Linear Progress Bar Indicator やスパークラインなどのコンポーネントを含むセル テンプレートの例を提供しました。その他の機能については、[こちら](#list-features)をご覧ください。
+この {Platform} グリッドの例では、データの検索とフィルタリング、列のソート、サイズ変更、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、水平および垂直スクロールなど、グリッドに組み込まれているさまざまな機能を利用してユーザーがデータ ビューをカスタマイズする方法を確認できます。Linear Progress Bar Indicator やスパークラインなどのコンポーネントを含むセル テンプレートの例を提供しました。その他の機能については、[こちら](#features-list)をご覧ください。
 <div class="divider--half"></div>
 
 <code-view style="height:700px"
@@ -296,7 +296,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">インライン {Platform} グリッド編集<a class="anchorjs-link" href="#インライン-{Platform}-グリッド編集" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>列のデータ型に基づくデフォルトの[編集可能な列のセル テンプレート](grid/grid.md#セル編集テンプレート)を提供します。編集可能な列にカスタム テンプレートを定義し、セル値のコミットや変更の破棄でデフォルト動作をオーバーライドできます。</p>
+        <p>列のデータ型に基づくデフォルトの[編集可能な列のセル テンプレート](grid/overview.md#セル編集テンプレート)を提供します。編集可能な列にカスタム テンプレートを定義し、セル値のコミットや変更の破棄でデフォルト動作をオーバーライドできます。</p>
     </div>
 </div>
 
@@ -449,7 +449,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 <div class="divider--half"></div>
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a> </li>
-            <li>{Platform} [ドキュメント](general/getting-started.md)を読み、{Platform} サンプルを試してください。</li>
+            <li>{Platform} [ドキュメント](../../components/general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
             <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2bAngular">{Platform} ブログをご覧ください。</a> </li>
             <li><a class="no-external-icon" href="https://www.infragistics.com/ignite-ui-angular/grid-table">サポート ケースの送信</a></li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a></li>
