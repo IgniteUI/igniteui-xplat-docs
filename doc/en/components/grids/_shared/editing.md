@@ -151,7 +151,9 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 
 * [{ComponentTitle} Overview](overview.md)
+<!-- Angular -->
 * [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)

@@ -307,7 +307,9 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 ## Additional Resources
 
+<!-- Angular -->
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 * [{ComponentTitle} Overview](overview.md)
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
@@ -315,5 +317,5 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
