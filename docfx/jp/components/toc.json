@@ -1713,7 +1713,7 @@
     "name": "ダイアログ",
     "href": "notifications/dialog.md",
     "status": "NEW"
- },
+  },
   {
     "exclude": ["Angular"],
     "name": "スケジュール",
