@@ -343,5 +343,5 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

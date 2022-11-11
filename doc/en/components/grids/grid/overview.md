@@ -1176,7 +1176,7 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github](https://github.com/IgniteUI/igniteui-{Platform}/discussions) page.
+> This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen}/discussions) page.
 
 >[!NOTE]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
@@ -1236,9 +1236,11 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Column Data Types](column-types.md#default-template)
+<!-- Angular -->
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
