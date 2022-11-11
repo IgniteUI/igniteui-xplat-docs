@@ -120,6 +120,74 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 </igx-hierarchical-grid>
 ```
 
+```html
+<igc-grid id="grid" primary-key="ProductID" auto-generate="false" row-editable="true">
+    <igc-column field="ProductID" header="Product ID" data-type="Number"></igc-column>
+    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
+    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
+    <igc-column field="UnitsInStock" header="UnitsInStock" data-type="Number"></igc-column>
+    <igc-column field="OrderDate" data-type="Date"></igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-grid>
+```
+
+```html
+<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
+    <igc-column field="Name" data-type="String"></igc-column>
+    <igc-column field="Title" data-type="String"></igc-column>
+    <igc-column field="HireDate" data-type="Date"></igc-column>
+    <igc-column field="OnPTO" data-type="Boolean" width="130px">
+    </igc-column>
+    <igc-column field="Age" data-type="Number"></igc-column>
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true">
+        </igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-tree-grid>
+```
+
+```html
+<igc-hierarchical-grid id="hGrid"
+    auto-generate="false" primary-key="Debut" row-editable="true">
+    <igc-column field="Artist" data-type="String"></igc-column>
+    <igc-column field="HasGrammyAward" header="Has Grammy Award?" data-type="Boolean'">
+    </igc-column>
+    <igc-column field="Debut" data-type="Number"></igc-column>
+    <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="Number"></igc-column>
+    <igc-column field="GrammyAwards" header="Grammy Awards" data-type="Number"></igc-column>
+
+    <igc-action-strip id="actionstrip1">
+        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+
+    <igc-row-island key="Albums" auto-generate="false" primary-key="USBillboard200" row-editable="true">
+        <igc-column field="Album" [data-type]="String"></igc-column>
+        <igc-column field="LaunchDate" header="Launch Date" data-type="Date"></igc-column>
+        <igc-column field="BillboardReview" header="Billboard Review" data-type="Number"></igc-column>
+        <igc-column field="USBillboard200" header="US Billboard 200" data-type="Number"></igc-column>
+        <igc-row-island key="Songs" auto-generate="false" primary-key="Number" row-editable="true">
+            <igc-column field="Number" header="No." data-type="Number"></igc-column>
+            <igc-column field="Title" data-type="String"></igc-column>
+            <igc-column field="Released" data-type="Date"></igc-column>
+            <igc-column field="Genre" data-type="String"></igc-column>
+
+            <igc-action-strip id="actionstrip3">
+                <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+            </igc-action-strip>
+
+        </igc-row-island>
+
+        <igc-action-strip id="actionstrip2">
+            <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+        </igc-action-strip>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
 > [!NOTE]
 > Setting primary key is mandatory for row adding operations.
 
@@ -233,6 +301,12 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 </ng-template>
 ```
 
+```ts
+public addRowTextTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`Adding Row`;
+}
+```
+
 ### Customizing Buttons
 
 Customizing the buttons of the row editing overlay is possible using the `RowEditActionsDirective`.
@@ -244,6 +318,15 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
+```
+
+```ts
+public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`
+        <button onClick="${this.endRowEdit(false)}">Cancel</button>
+	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+    `;
+}
 ```
 > [!NOTE]
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.

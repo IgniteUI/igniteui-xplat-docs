@@ -41,12 +41,14 @@ Property `Filterable` enables you to specify the following options:
 - **true** - the filtering for the corresponding column will be enabled. This is the default value.
 - **false** - the filtering for the corresponding column will be disabled.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" dataType="string"></igx-column>
-    <igx-column field="Price" [dataType]="'number'" [filterable]="false">
+    <igx-column field="Price" [dataType]="'number'" [filterable]="false"></igx-column>
 <{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
@@ -55,16 +57,34 @@ Property `Filterable` enables you to specify the following options:
 </IgbGrid>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="ProductName" data-type="String"></igc-column>
+    <igc-column field="Price" data-type="Number" filterable="false"></igc-column>
+<{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 To enable the [Advanced filtering](advanced-filtering.md) however, you need to set the `AllowAdvancedFiltering` input property to **true**.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}  [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}  data="data" auto-generate="true" allow-advanced-filtering="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 >[!NOTE]
 >You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
@@ -82,13 +102,24 @@ There's a default filtering strategy provided out of the box, as well as all the
 The filtering feature is enabled for the `{ComponentName}` component by setting the `AllowFiltering` input to **true**. The default `FilterMode` is `QuickFilter` and it **cannot** be changed run time. To disable this feature for a certain column – set the `Filterable` input to **false**.
 
 <!-- ComponentStart: Grid, TreeGrid -->
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" dataType="string"></igx-column>
     <igx-column field="Price" dataType="number"></igx-column>
-    <igx-column field="Discontinued" [dataType]="'boolean'" [filterable]="false">
+    <igx-column field="Discontinued" [dataType]="'boolean'" [filterable]="false"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="false" allow-filtering="true">
+    <igc-column field="ProductName" data-type="String"></igc-column>
+    <igc-column field="Price" datdata-typeaType="Number"></igc-column>
+    <igc-column field="Discontinued" data-type="Boolean" filterable="false"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -97,6 +128,12 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
     <igx-column field="Artist" [filterable]="true"></igx-column>
     <igx-column field="Photo" [filterable]="false"></igx-column>
 </igx-hierarchical-grid>
+```
+```html
+<igc-hierarchical-grid auto-generate="false" allow-filtering="true">
+    <igc-column field="Artist" filterable="true"></igc-column>
+    <igc-column field="Photo" filterable="false"></igc-column>
+</igc-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -126,6 +163,13 @@ There are five filtering operand classes exposed:
 
 // Filter the `ProductName` column for values which `contains` the `myproduct` substring, ignoring case
 this.@@igObjectRef.filter('ProductName', 'myproduct', IgxStringFilteringOperand.instance().condition('contains'), true);
+```
+
+```typescript
+// Single column filtering
+
+// Filter the `ProductName` column for values which `contains` the `myproduct` substring, ignoring case
+this.grid.filter('ProductName', 'myproduct', IgcStringFilteringOperand.instance().condition('contains'), true);
 ```
 
 The only required parameters are the column field key and the filtering term. Both the condition and the case sensitivity will be inferred from the column properties if not provided. In the case of multiple filtering, the method accepts an array of filtering expressions.
@@ -160,6 +204,33 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
+```typescript
+// Multi column filtering
+
+const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
+const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+const productExpression = {
+    condition: IgcStringFilteringOperand.instance().condition('contains'),
+    fieldName: 'ProductName',
+    ignoreCase: true,
+    searchVal: 'ch'
+};
+productFilteringExpressionsTree.filteringOperands.push(productExpression);
+gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+const priceFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'Price');
+const priceExpression = {
+    condition: IgcNumberFilteringOperand.instance().condition('greaterThan'),
+    fieldName: 'UnitPrice',
+    ignoreCase: true,
+    searchVal: 20
+};
+priceFilteringExpressionsTree.filteringOperands.push(priceExpression);
+gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTree);
+
+this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
+```
+
 * `FilterGlobal` - clears all existing filters and applies the new filtering condition to all {ComponentTitle}'s columns.
 
 ```typescript
@@ -167,9 +238,15 @@ this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 this.@@igObjectRef.filteringLogic = FilteringLogic.Or;
 this.@@igObjectRef.filterGlobal('myproduct', IgxStringFilteringOperand.instance().condition('contains'), false);
 ```
+```typescript
+// Filter all cells for a value which contains `myproduct`
+this.grid.filteringLogic = FilteringLogic.Or;
+this.grid.filterGlobal('myproduct', IgcStringFilteringOperand.instance().condition('contains'), false);
+```
 
 * `ClearFilter` - removes any applied filtering from the target column. If called with no arguments it will clear the filtering of all columns.
 
+<!-- Angular -->
 ```typescript
 // Remove the filtering state from the ProductName column
 this.@@igObjectRef.clearFilter('ProductName');
@@ -177,6 +254,17 @@ this.@@igObjectRef.clearFilter('ProductName');
 // Clears the filtering state from all columns
 this.@@igObjectRef.clearFilter();
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+// Remove the filtering state from the ProductName column
+this.grid.clearFilter('ProductName');
+
+// Clears the filtering state from all columns
+this.grid.clearFilter();
+```
+<!-- end: WebComponents -->
 
 ## Initial filtered state
 
@@ -202,15 +290,43 @@ public ngAfterViewInit() {
 }
 ```
 
+```typescript
+constructor() { 
+    const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
+    const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+    const productExpression = {
+        condition: IgcStringFilteringOperand.instance().condition('contains'),
+        fieldName: 'ProductName',
+        ignoreCase: true,
+        searchVal: 'c'
+    };
+    productFilteringExpressionsTree.filteringOperands.push(productExpression);
+    gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+    this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
+    this.cdr.detectChanges();
+}
+```
+
 ### Filtering logic
 
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
 
+<!-- Angular -->
 ```typescript
 import { FilteringLogic } from 'igniteui-angular';
 
 this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+import { FilteringLogic } from 'igniteui-webcomponents-grids';
+
+this.grid.filteringLogic = FilteringLogic.OR;
+```
+<!-- end: WebComponents -->
 
 The default value of `AND` returns only the rows that match all the currently applied filtering expressions. Following the example above, a row will be returned when both the 'ProductName' cell value contains 'myproduct' and the 'Price' cell value is greater than 55.
 
@@ -294,7 +410,70 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 }
 ```
 
+```typescript
+// grid-custom-filtering.component.ts
+
+export class GridCustomFilteringComponent {
+    public caseSensitiveFilteringOperand = CaseSensitiveFilteringOperand.instance();
+    public booleanFilteringOperand = BooleanFilteringOperand.instance();
+}
+
+export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
+    private constructor() {
+        super();
+        const customOperations = [
+            {
+                iconName: 'contains',
+                isUnary: false,
+                logic: (target: string, searchVal: string, ignoreCase?: boolean) => {
+                    ignoreCase = false;
+                    const search = IgcStringFilteringOperand.applyIgnoreCase(searchVal, ignoreCase);
+                    target = IgcStringFilteringOperand.applyIgnoreCase(target, ignoreCase);
+                    return target.indexOf(search) !== -1;
+                },
+                name: 'Contains (case sensitive)'
+            },
+            {
+                iconName: 'does_not_contain',
+                isUnary: false,
+                logic: (target: string, searchVal: string, ignoreCase?: boolean) => {
+                    ignoreCase = false;
+                    const search = IgcStringFilteringOperand.applyIgnoreCase(searchVal, ignoreCase);
+                    target = IgcStringFilteringOperand.applyIgnoreCase(target, ignoreCase);
+                    return target.indexOf(search) === -1;
+                },
+                name: 'Does Not Contain (case sensitive)'
+            }
+        ];
+
+        const emptyOperators = [
+            // 'Empty'
+            this.operations[6],
+            // 'Not Empty'
+            this.operations[7]
+        ];
+
+        this.operations = customOperations.concat(emptyOperators);
+    }
+}
+
+export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
+    private constructor() {
+        super();
+        this.operations = [
+            // 'All'
+            this.operations[0],
+            // 'TRUE'
+            this.operations[1],
+            // 'FALSE'
+            this.operations[2]
+        ];
+    }
+}
+```
+
 <!-- ComponentStart: Grid, TreeGrid -->
+<!-- Angular -->
 ```html
 <!-- grid-custom-filtering.component.html -->
 
@@ -308,6 +487,29 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```html
+<!-- grid-custom-filtering.component.html -->
+
+<{ComponentSelector} auto-generate="false" allow-filtering="true">
+    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="String"></igc-column>
+    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+
+    this._bind = () => {
+        productName.bodyTemplate = this.caseSensitiveFilteringOperand;
+        discontinued.bodyTemplate = this.booleanFilteringOperand;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 ```html
@@ -322,6 +524,27 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
         </ng-template>
     </igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<!-- grid-custom-filtering.component.html -->
+
+<igc-hierarchical-grid auto-generate="false" allow-filtering="true">
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
+</igc-hierarchical-grid> 
+```
+```ts
+constructor() {
+    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+
+    this._bind = () => {
+        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
+        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
+    }
+    this._bind();
+}
 ```
 
 <!-- Angular -->

@@ -22,14 +22,23 @@ The grid Excel filtering provides an Excel like filtering UI for any {Platform} 
 
 To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowFiltering]="true" [filterMode]="'excelStyleFilter'" >
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" />
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Interactions
 
@@ -78,6 +87,21 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
     </IgbGrid>
 ```
 
+```html
+<igc-grid id="grid1" auto-generate="false" height="650px" width="100%" moving="true" allow-filtering="true" filter-mode="ExcelStyleFilter">
+    <igc-column field="ProductName" header="Product Name" sortable="true" data-type="String">
+    </igc-column>
+    <igc-column field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    </igc-column>
+    <igc-column field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    </igc-column>
+    <igc-column field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    </igc-column>
+</igc-grid>
+```
+
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
 
 <!-- ComponentEnd: Grid -->
@@ -111,6 +135,22 @@ In the sample below **Product Name** and **Discontinued** columns have all four 
 
 ```razor
 Add tree grid snippet
+```
+
+```html
+<igc-tree-grid id="treegrid1" auto-generate="false" height="480px" width="100%" moving="true" allow-filtering="true"
+    primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
+    <igc-column field="ID" header="Product ID" data-type="String">
+    </igc-column>
+    <igc-column field="Name" header="Product Name" sortable="true" data-type="'string'">
+    </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" data-type="Number" sortable="false" disable-pinning="true" disable-hiding="true">
+    </igc-column>
+    <igc-column field="AddedDate" header="Added Date" data-type="Date" sortable="false">
+    </igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean" sortable="true">
+    </igc-column>
+</igc-tree-grid>
 ```
 
 In the sample below 'Product Name' and 'Discontinued' columns have all three features enabled, 'Unit Price' have all three disabled, 'Added Date' has only pinning and hiding.
@@ -160,6 +200,38 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
 Add blazor snippets here
 ```
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-gGenerate="false" moving="true" allow-filtering='true' filter-mode="ExcelStyleFilter"
+    height="650px" width="100%" rowHeight="65px" id="hierarchicalGrid">
+    <igc-column field="Artist" filterable='true' sortable="true"></igc-column>
+    <igc-column field="Photo" filterable='false'>
+    </igc-column>
+    <igc-column field="Debut" filterable='true' disable-pinning="true" disable-hiding="true"></igc-column>
+    <igc-column field="Grammy Nominations" filterable='true' date-type="Number" sortable="false"></igc-column>
+    <igc-column field="Grammy Awards" filterable='true' date-type="Number"></igc-column>
+
+    <igc-row-island key="Albums" auto-gGenerate="false" allow-filtering='true' filter-mode="ExcelStyleFilter">
+        <igc-column field="Album" filterable='true'></igc-column>
+        <igc-column field="Launch Date" filterable='true' date-type="Date"></igc-column>
+        <igc-column field="Billboard Review" filterable='true' date-type="Number"></igc-column>
+        <igc-column field="US Billboard 200" filterable='true' date-type="Number"></igc-column>
+    <igc-row-island key="Songs" auto-generate="false" >
+            <igc-column field="No."></igc-column>
+            <igc-column field="Title"></igc-column>
+            <igc-column field="Released"></igc-column>
+            <igc-column field="Genre"></igc-column>
+    </igc-row-island>
+    </igc-row-island>
+
+    <igc-row-island key="Tours" auto-generate="false">
+        <igc-column field="Tour"></igc-column>
+        <igc-column field="Started on"></igc-column>
+        <igc-column field="Location"></igc-column>
+        <igc-column field="Headliner"></igc-column>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
 In the sample below 'Artist' column have all three features enabled, 'Debut' have all three disabled, 'Grammy Nominations' has only pinning and hiding.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -205,13 +277,32 @@ The following code demonstrates how to define a custom Excel style filter menu u
 
 </igx-grid>
 ```
-<!-- end: Angular -->
-
-
 
 <!-- ```razor
 Add razor snipets
 ``` -->
+
+```html
+<igc-grid id="grid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" filter-mode="ExcelStyleFilter">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+
+</igc-grid>
+```
 
 <!-- ComponentEnd: Grid -->
 
@@ -242,6 +333,29 @@ Add razor snipets
 <!-- ```razor
 Add razor snipets
 ``` -->
+
+```html
+<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" 
+    primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+
+</igc-tree-grid>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -290,11 +404,51 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter"
+    height="650px" width="100%" row-height="65px" id="hierarchicalGrid">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+    <igc-row-island key="Albums" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter">
+        <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+            <igc-excel-style-column-operations>
+                <igc-excel-style-header
+                    show-pinning="true"
+                    show-hiding="true"
+                >
+                </igc-excel-style-header>
+
+                <igc-excel-style-sorting></igc-excel-style-sorting>
+            </igc-excel-style-column-operations>
+
+            <igc-excel-style-filter-operations>
+                <igc-excel-style-search></igc-excel-style-search>
+            </igc-excel-style-filter-operations>
+        </igc-grid-excel-style-filtering>
+
+</igc-hierarchical-grid>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
 <!-- You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive: -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <ng-template igxExcelStyleHeaderIcon>
@@ -302,9 +456,17 @@ Add razor snipets
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 <!-- ```razor
 Templating header icon
+``` -->
+
+```ts
+
+public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igx-icon>filter_alt</igx-icon>`;
+}
 ```
 
 <code-view style="height:620px"
@@ -404,6 +566,15 @@ In order to configure the Excel style filtering component, you should set its `C
 <!-- ```razor
 add snippet for blazor
 ``` -->
+
+```html
+<igc-select id="gridColums" value="ProductID">
+   <label>Columns:</label>
+</igc-select>
+
+<igc-grid-excel-style-filtering>
+</igc-grid-excel-style-filtering>
+```
 
 <!-- ComponentEnd: Grid -->
 

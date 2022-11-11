@@ -104,15 +104,24 @@ Then, all you need to do is enable `BatchEditing` property:
 
 <!-- EXAMPLE of shared code snippet with selector variable that will be resolved, e.g. {ComponentSelector} -> igb-pivot-grid  -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} data="data" batchEditing="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} data="data" batchEditing="true">
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} data="data" batch-editing="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## {Platform} {ComponentTitle} Transaction
 
@@ -132,6 +141,47 @@ After batch editing is enabled, define a `{ComponentName}` with bound data sourc
 <button igxButton [disabled]="!grid.transactions.canRedo" (click)="redo()">Redo</button>
 <button igxButton [disabled]="grid.transactions.getAggregatedChanges(false).length < 1"
     (click)="openCommitDialog(dialogGrid)">Commit</button>
+```
+
+```html
+<igc-grid id="grid" batch-editing="true" primary-key="ProductID" width="100%" height="500px"
+    row-editable="true">
+</igc-grid>
+
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<button id="commit">Commit</button>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var undo = this.undo = document.getElementById('undo') as HTMLButtonElement;
+    var redo = this.redo = document.getElementById('redo') as HTMLButtonElement;
+    var commit = this.commit = document.getElementById('commit') as HTMLButtonElement;
+}
+
+this._bind = () => {
+    grid.data = this.data;
+    undo.addEventListener('click', this.OnUndoClick);
+    redo.addEventListener('click', this.OnRedoClick);
+    commit.addEventListener('click', this.OnCommitClick);
+}
+this._bind();
+
+private OnCommitClick() {
+    if (this.grid.transactions.getAggregatedChanges(false).length > 0)
+        this.grid.transactions.commit(this.data);
+}
+
+private OnUndoClick() {
+    if (this.grid.transactions.canUndo)
+        this.grid.transactions.undo();
+}
+
+private OnRedoClick() {
+    if (this.grid.transactions.canRedo)
+        this.grid.transactions.redo();
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -156,6 +206,47 @@ After batch editing is enabled, define a `{ComponentName}` with bound data sourc
 <button igxButton [disabled]="treeGrid.transactions.getAggregatedChanges(false).length < 1"
     (click)="openCommitDialog()">Commit</button>
 
+```
+
+```html
+<igc-tree-grid id="treeGrid" batch-editing="true" primary-key="ProductID" width="100%" height="500px"
+    row-editable="true">
+</igc-tree-grid>
+
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<button id="commit">Commit</button>
+```
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+    var undo = this.undo = document.getElementById('undo') as HTMLButtonElement;
+    var redo = this.redo = document.getElementById('redo') as HTMLButtonElement;
+    var commit = this.commit = document.getElementById('commit') as HTMLButtonElement;
+}
+
+this._bind = () => {
+    treeGrid.data = this.data;
+    undo.addEventListener('click', this.OnUndoClick);
+    redo.addEventListener('click', this.OnRedoClick);
+    commit.addEventListener('click', this.OnCommitClick);
+}
+this._bind();
+
+private OnCommitClick() {
+    if (this.treeGrid.transactions.getAggregatedChanges(false).length > 0)
+        this.treeGrid.transactions.commit(this.data);
+}
+
+private OnUndoClick() {
+    if (this.treeGrid.transactions.canUndo)
+        this.treeGrid.transactions.undo();
+}
+
+private OnRedoClick() {
+    if (this.treeGrid.transactions.canRedo)
+        this.treeGrid.transactions.redo();
+}
 ```
 <!-- ComponentEnd: TreeGrid -->
 

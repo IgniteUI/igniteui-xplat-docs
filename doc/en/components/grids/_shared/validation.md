@@ -29,6 +29,10 @@ To validate that a column input would be set and the value is going to be format
 <igx-column [field]="email" [header]="User E-mail" required email></igx-column>
 ```
 
+```html
+<igc-column field="email" header="User E-mail" required="true" email="true"></igx-column>
+```
+
 The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentName}`.
 
 <code-view style="height:600px"

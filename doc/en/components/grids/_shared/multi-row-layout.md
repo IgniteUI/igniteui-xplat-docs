@@ -71,6 +71,28 @@ The `Column` component exposes four `Input` properties to determine the location
 </IgbColumnLayout>
 ```
 
+```html
+<igc-column-layout>
+	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+	<igc-column row-start="1" [col-start="1" col-end="3" field="CompanyName"></igc-column>
+	<igc-column row-start="2" [col-start="1" col-end="2" field="ContactName"></igc-column>
+	<igc-column row-start="2" [col-start="2" col-end="3" field="ContactTitle"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
+	<igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
+	<igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
+	<igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
+	<igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+    <igc-column row-start="1" col-start="1" field="Phone"></igc-column>
+    <igc-column row-start="2" col-start="1" field="Fax"></igc-column>
+</igc-column-layout>
+```
+
 The result of the above configuration can be seen on the screenshot below:
 
 <img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>

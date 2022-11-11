@@ -37,16 +37,34 @@ In order to filter the data once you are ready with creating the filtering condi
 
 To enable the advanced filtering, the `AllowAdvancedFiltering` input property should be set to **true**.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
     <igx-grid-toolbar></igx-grid-toolbar>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    let grid = (document.getElementById("grid") as IgcGridComponent);
+    this._bind = () => {
+            grid.data = this.data
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
@@ -75,6 +93,33 @@ ngAfterViewInit(): void {
     tree.filteringOperands.push(subTree);
 
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
+}
+```
+```typescript
+connectedCallback(): void {
+    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ID',
+        condition: IgcStringFilteringOperand.instance().condition('contains'),
+        searchVal: 'a',
+        ignoreCase: true
+    });
+    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ContactTitle',
+        condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'CompanyName',
+        condition: IgcStringFilteringOperand.instance().condition('startsWith'),
+        searchVal: 'c',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+
+    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
 }
 ```
 
@@ -110,6 +155,12 @@ It's super easy to configure the advanced filtering to work outside of the `{Com
 </IgbAdvancedFilteringDialog>
 ```
 
+```html
+<igc-advanced-filtering-dialog grid="grid1">
+</igc-advanced-filtering-dialog>
+```
+
+<!-- end: Angular -->
 <!-- Angular -->
 
 ## Styling

@@ -23,15 +23,24 @@ In Ignite UI for {Platform} `{ComponentName}`, row dragging is initialized on th
 
 In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [rowDraggable]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} RowDraggable="true">
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} row-draggable="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
@@ -66,6 +75,14 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 })
 ```
 
+```typescript
+import { IgcDragDropModule } from 'igniteui-webcomponents';
+...
+ModuleManager.register(
+    IgcDragDropModule
+);
+```
+
 Then, in our template, we define a drop-area using the directive's selector:
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
@@ -87,6 +104,29 @@ In this case, our drop-area will be a whole second grid where we'll drop the row
 <igx-grid #targetGrid igxDrop [data]="data2" [autoGenerate]="false" [emptyGridTemplate]="dragHereTemplate"
     (enter)="onEnterAllowed($event)" (leave)="onLeaveAllowed($event)" (dropped)="onDropAllowed($event)" [primaryKey]="'ID'">
 </igx-grid>
+```
+
+```html
+<igc-grid id="targetGrid" auto-generate="false" primary-key="ID">
+</igc-grid>
+```
+```ts
+constructor() {
+    var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        targetGrid.data = this.data;
+        targetGrid.emptyGridTemplate = this.dragHereTemplate;
+        targetGrid.enter = this.onEnterAllowed;
+        targetGrid.leave = this.onLeaveAllowed;
+        targetGrid.dropped = this.onDropAllowed;
+    }
+    this._bind();
+}
+
+public dragHereTemplate = (ctx: IgcGridEmptyTemplateContext) => {
+    return html`Drop a row to add it to the grid`;
+}
 ```
 
 Since the grid will initially be empty, we also define a template that will be more meaningful to the user:
@@ -187,6 +227,20 @@ export class {ComponentName}RowDragComponent {
 }
 ```
 
+```typescript
+export class {ComponentName}RowDragComponent {
+    constructor() {
+        var sourceGrid = this.sourceGrid = document.getElementById('sourceGrid') as IgcGridComponent;
+        var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;
+    }
+
+    public onDropAllowed(args) {
+        this.targetGrid.addRow(args.dragData.data);
+        this.sourceGrid.deleteRow(args.dragData.key);
+    }
+}
+```
+
 We define a reference to each of our grids via the **ViewChild** decorator and the handle the drop as follows:
 - add a row to the `TargetGrid` that contains the data of the row being dropped
 - remove the dragged row from the `SourceGrid`
@@ -209,6 +263,21 @@ The drag ghost can be templated using the `RowDragGhost` directive, applied to a
         </div>
     </ng-template>
 </{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.rowDragGhost = this.rowDragGhostTemplate;
+    }
+    this._bind();
+}
+
+public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
+    return html`<igc-icon fontSet="material">arrow_right_alt</igc-icon>`;
+}
 ```
 
 The result of the configuration can be seem below in a `{ComponentName}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
@@ -254,6 +323,21 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
         <igx-icon>drag_handle</igx-icon>
     </ng-template>
 </{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
+    }
+    this._bind();
+}
+
+public dragIndicatorIconTemplate = (ctx: IgcDragIndicatorIconContext) => {
+    return html`<igc-icon>drag_handle</igc-icon>`;
+}
 ```
 
 Once we've set the new icon template, we also need to adjust the **DEFAULT** icon in our **DragIcon enum**, so it's properly change by the `ChangeIcon` method:
@@ -356,6 +440,22 @@ Since all of the actions will be happening _inside_ of the grid's body, that's w
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
 </igx-grid>
+```
+
+```html
+<igc-grid id="grid" row-draggable="true" primary-key="ID">
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.dropped = this.onDropAllowed;
+    }
+    this._bind();
+}
 ```
 
 ```html
@@ -592,11 +692,32 @@ First, you specify a template which you'd like to use for the drag ghost. The `D
 </ng-template>
 ```
 
+```ts
+public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
+    return html`dropName`;
+}
+```
+
 Then, define a method that returns the instance of the row you're over (similar to the one used in the [row reordering demo](#row-reordering-demo)):
 
 ```typescript
 class MyRowGhostComponent {
     private getRowDataAtPoint(rowList: IgxGridRowComponent[], cursorPosition: Point): any {
+        for (const row of rowList) {
+            const rowRect = row.nativeElement.getBoundingClientRect();
+            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+                return this.data.find((r) => r.rowID === row.rowID);
+            }
+        }
+        return null;
+    }
+}
+```
+
+```typescript
+class MyRowGhostComponent {
+    private getRowDataAtPoint(rowList: IgcGridRowComponent[], cursorPosition: Point): any {
         for (const row of rowList) {
             const rowRect = row.nativeElement.getBoundingClientRect();
             if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&

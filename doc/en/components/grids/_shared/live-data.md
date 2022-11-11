@@ -30,9 +30,17 @@ A service provides data to the component when the page loads, and when the slide
 <IgbDataGrid data="data"><IgbDataGrid>
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 
 ```typescript
@@ -49,11 +57,21 @@ A change in the data field value or a change in the data object/data collection 
 </IgbDataGrid>
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data">
     <igx-column field="price.usd"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-column field="price.usd"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```typescript
 private updateData(data: IRecord[]) {

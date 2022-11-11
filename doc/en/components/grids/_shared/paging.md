@@ -26,20 +26,30 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
     <IgbPaginator PerPage="10"></IgbPaginator>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+    <igc-paginator per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
-
+<!-- Angular -->
 ```html
 <igx-paginator #paginator [totalRecords]="20">
     <igx-paginator-content>
@@ -57,6 +67,7 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
     </igx-paginator-content>
 </igx-paginator>
 ```
+<!-- end: Angular -->
 
 <!-- ComponentStart: Grid -->
 ## Paging with Group By
@@ -73,6 +84,7 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
@@ -80,6 +92,7 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
     </igx-paginator>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
@@ -87,6 +100,31 @@ The `Paginator` component is used along with the `{ComponentName}` component in 
     </IgbPaginator>
 </{ComponentSelector}>
 ```
+
+<!-- Angular -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-paginator id="paginator" per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        paginator.page = grid.page;
+        paginator.totalRecords = grid.totalRecords;
+        paginator.selectOption = selectOptions;
+        paginator.displayDensity = grid.displayDensity;
+    }
+    this._bind();
+}
+```
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->

@@ -40,6 +40,10 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 <IgbColumn Field="Title" Sortable="true"></IgbColumn>
 ```
 
+```html
+<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+```
+
 ## Sorting Indicators
 
 Having a certain amount of sorted columns could be really confusing if there is no indication of the sorted order.
@@ -60,9 +64,19 @@ The `{ComponentName}` provides a solution for this problem by indicating the ind
 
 You can sort any column or a combination of columns through the `{ComponentName}` API using the `{ComponentName}` `Sort` method:
 
+<!-- Angular -->
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
+```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+```typescript
+import { SortingDirection } from 'igniteui-webcomponents-grids';
+```
+<!-- end: WebComponents -->
+
+```typescript
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -152,6 +166,17 @@ public ngOnInit() {
 }
 ```
 
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.grid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
 > [!NOTE]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
@@ -194,6 +219,12 @@ The sorting indicator icon in the column header can be customized using a templa
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="unfold_more" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
 }
 ```
 
@@ -245,6 +276,12 @@ The sorting indicator icon in the column header can be customized using a templa
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_more" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="expand_more></igc-icon>`;
 }
 ```
 

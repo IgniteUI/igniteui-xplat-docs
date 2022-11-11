@@ -23,6 +23,7 @@ One or multiple rows can be pinned to the top or bottom of the {Platform} UI Gri
 
 The built-in row pinning UI is enabled by adding an `ActionStrip` component with the `GridPinningActions` component. The action strip is automatically shown when hovering a row and will display a pin or unpin button icon based on the state of the row it is shown for. An additional action allowing to scroll the copy of the pinned row into view is shown for each pinned row as well.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false">
     <igx-column *ngFor="let c of columns" [field]="c.field" [header]="c.field">
@@ -33,6 +34,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"  
@@ -57,7 +59,18 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
         </IgbActionStrip>
     </{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="false">
+    <igc-column field="field" header="field">
+    </igc-column>
+    <igc-action-strip #actionStrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Row Pinning API
 
@@ -87,10 +100,30 @@ Note that the row ID is the primary key value, defined by the `PrimaryKey` of th
 
 A row is pinned below the last pinned row. Changing the order of the pinned rows can be done by subscribing to the `RowPinning` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="true" (rowPinning)="rowPinning($event)">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="true">
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.rowPinning = this.rowPinning;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public rowPinning(event) {
@@ -126,6 +159,15 @@ When set to Bottom pinned rows are rendered at the bottom of the grid, after the
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
+    </igc-pinning-config rows="Bottom">
+    </igc-pinning-config>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
@@ -192,6 +234,40 @@ This can be done by adding an extra column with a cell template containing the c
     </igx-column>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key]="ID" auto-generate="false">
+    <igc-column id="column" width="70px">
+        <ng-template igxCell let-cell="cell" let-val>
+            <igx-icon class="pin-icon" (mousedown)="togglePinning(cell.row, $event)">
+                {{cell.row.pinned ? 'lock' : 'lock_open'}}
+            </igx-icon>
+        </ng-template>
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        column.bodyTemplate = this.cellPinCellTemplate;
+    }
+    this._bind();
+}
+
+public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+    <igc-icon class="pin-icon" mousedown="${this.togglePinning(ctx.cell.row, $event)}">
+        ${ctx.cell.row.pinned ? 'lock' : 'lock_open'}
+    </igc-icon>
+            `;
+}
+```
+<!-- end: WebComponents -->
 
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
