@@ -662,13 +662,25 @@ public cellStyles = {
 ## Additional Resources
 
 <!-- Angular -->
+
 * [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [{ComponentTitle} Overview](overview.md)
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [{ComponentTitle} Editing](editing.md)
+* [{ComponentTitle} Row Editing](row-editing.md)
+* [{ComponentTitle} Row Adding](row-adding.md)
+* [{ComponentTitle} Transactions](batch-editing.md)
+
+<!-- end: Blazor -->
 
 <div class="divider--half"></div>
 

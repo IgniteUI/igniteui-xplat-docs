@@ -173,11 +173,10 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 ## Additional Resources
 
+<!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
-<!-- Angular -->
 * [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -189,7 +188,26 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [Selection](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-
 * [Searching](search.md)
-
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [Column Data Types](column-types.md#default-template)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+<!-- ComponentStart: HierarchicalGrid -->
+* [Searching](search.md)
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Blazor -->

@@ -435,12 +435,24 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 ## Additional Resources
 
 <!-- Angular -->
+
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [{ComponentTitle} Overview](overview.md)
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [{ComponentTitle} Editing](editing.md)
+* [{ComponentTitle} Row Editing](row-editing.md)
+* [{ComponentTitle} Row Adding](row-adding.md)
+
+<!-- end: Blazor -->
+
 
 Our community is active and always welcoming to new ideas.
 
