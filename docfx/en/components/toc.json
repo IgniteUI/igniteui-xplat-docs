@@ -1597,9 +1597,14 @@
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React"],
     "name": "Circular Progress",
     "href": "inputs/circular-progress.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Linear Progress",
+    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],
@@ -1607,7 +1612,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React"],
     "name": "Dropdown",
     "href": "inputs/dropdown.md"
   },
@@ -1625,11 +1630,6 @@
     "exclude": ["Angular"],
     "name": "Icon Button",
     "href": "inputs/icon-button.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Linear Progress",
-    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],
