@@ -135,7 +135,17 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the column is already in the desired state.
 
+<!-- Angular, React, WebComponents -->
+
 A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPin` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
+
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPinnedScript` event and providing a JavaScript function for changing the `InsertAtIndex` property of the event arguments to the desired position index.
+
+<!-- end: Blazor -->
 
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
@@ -150,18 +160,21 @@ public columnPinning(event) {
 ```
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true ColumnPin="onColumnPin"/>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPinnedScript="onColumnPin"/>
 
-@code {
-    private void onColumnPin(IgbPinColumnCancellableEventArgs args)
-    {
-        if (args.Detail.Column.Field == "Name")
-        {
-            args.InsertAtIndex = 0;
-        }
+
+//In JavaScript
+function onColumnPinned(e) {
+    if (e.detail.column.field == "Country") {
+        e.detail.insertAtIndex = 0;
     }
 }
+
+igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
+
+
+
 
 ## Pinning Position
 

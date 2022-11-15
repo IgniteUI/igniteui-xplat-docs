@@ -58,14 +58,15 @@ Please refer to these topics on adding the IgniteUI.Blazor package:
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the grid:
 
-```html
+```razor
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
 Afterwards, you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+
+```razor
 @using IgniteUI.Blazor.Controls
-</pre>
+```
 
 <!-- end: Blazor -->
 
@@ -77,7 +78,22 @@ npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 </pre>
+
+<!-- WebComponents -->
+
+You also need to include the following imports to include the grid and the necessary styles for the grid:
+
+```html
+import 'igniteui-webcomponents-grids/grids/combined';
+import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
+```
+
+<!-- end: WebComponents -->
+
 <!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, Blazor -->
 
 ### Component Modules
 
@@ -86,29 +102,22 @@ npm install --save {PackageInputs}
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
-<!-- WebComponents -->
 
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcGridModule } from 'igniteui-webcomponents-grids';
-import { IgcGridComponent } from 'igniteui-webcomponents-core';
+<!-- end: Angular, React, Blazor -->
 
-ModuleManager.register(
-    IgcGridModule
-);
-```
-<!-- end: WebComponents -->
 
 ### Usage
 
-Now that we have the grid package imported, let’s get started with the basic configuration and bind to local data:
+Now that we have the grid packages imported, let’s get started with the basic configuration and bind to local data:
 
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
 ```
+
 ```html
-<igc-grid id="grid1" [data]="localData" auto-generate="true"></igc-grid>
+<igc-grid id="grid1" auto-generate="true"></igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid1 = (document.getElementById("grid1") as IgcGridComponent);
@@ -1225,6 +1234,8 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 ## Additional Resources
 
+<!-- Angular -->
+
 * [Grid Sizing](sizing.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -1236,9 +1247,25 @@ Learn more about creating a {Platform} `Grid` in our short tutorial video:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Column Data Types](column-types.md#default-template)
-<!-- Angular -->
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
+
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [Grid Sizing](sizing.md)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+* [Column Data Types](column-types.md#default-template)
+
+<!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
