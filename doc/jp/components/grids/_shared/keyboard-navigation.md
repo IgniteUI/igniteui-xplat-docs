@@ -159,6 +159,22 @@ API を使用して、ユーザー入力の検証やカスタム ナビゲーシ
 ```html
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
+```html
+<igc-grid id="grid1" primary-key="ProductID">
+</igc-grid
+```
+```ts
+constructor() {
+        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+        this._bind = () => {
+            grid.data = this.data
+            grid.gridKeydown = this.customKeydown
+        }
+        this._bind();
+
+    }
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -328,5 +344,5 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

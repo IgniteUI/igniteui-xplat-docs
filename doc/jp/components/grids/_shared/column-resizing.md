@@ -31,6 +31,10 @@ _language: ja
 <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
 ```
 
+```html
+<igc-column field="ID" width="100px" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -43,18 +47,45 @@ _language: ja
 <IgbColumn Field="Artist" Resizable=true></IgbColumn>
 ```
 
+```html
+<igc-column field="Artist" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 `{ComponentName}` の `ColumnResized` イベントを処理し、列がサイズ変更されたときにカスタム ロジックを実装できます。以前の列幅、新しい列幅、および `Column` オブジェクトがイベント引数で公開されます。
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false">
+    <igc-column field="ID" width="100px" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -83,12 +114,35 @@ public onResize(event) {
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end:Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID">
+    <igc-column field="Title" width="100px" resizable="true" width="100px"></igc-column>
+    <igc-column field="HireDate" width="100px" resizable="true" width="100px"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.data = this.data;
+        treeGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -122,6 +176,25 @@ public onResize(event) {
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
     <igx-column field="Artist" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID"
+    height="600px" width="100%">
+    <igc-column field="Artist" resizable="true"></igc-column>
+</igc-hierarchical-grid>
+```
+
+```ts
+constructor() {
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hierarchicalGrid.data = this.data;
+        hierarchicalGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
 ```
 
 ```typescript
@@ -162,6 +235,14 @@ TO DO!
 </{ComponentSelector}>
 ```
 
+```html
+<igc-grid id="grid" auto-generate="false">
+    <igc-column field="ID" width="10%" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+    <igc-column field="ContactTitle" resizable="true"></igc-column>
+</igc-grid>
+```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 
@@ -181,6 +262,14 @@ TO DO!
 </{ComponentSelector}>
 ```
 
+```html
+<igc-tree-grid id="data" primary-key="ID" foreign-key="ParentID" auto-generate="false">
+    <igc-column field="Title" resizable="true" width="10%"></igc-column>
+    <igc-column field="HireDate" resizable="true" width="100px"></igc-column>
+    <igc-column field="Age" data-type="Number" resizable="true"></igc-column>
+</igc-tree-grid>
+```
+
 <!-- ComponentEnd: TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
 
@@ -191,6 +280,15 @@ TO DO!
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>
         <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
+        height="600px" width="100%">
+        <igc-column field="Artist" resizable="true" width="10%"></igc-column>
+        <igc-column field="GrammyNominations" resizable="true" width="100px"></igc-column>
+        <igc-column field="GrammyAwards" resizable="true"></igc-column>
+</igc-hierarchical-grid>
 ```
 
 ```razor
@@ -218,6 +316,10 @@ TO DO!
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -231,6 +333,10 @@ TO DO!
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="10%" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -241,6 +347,10 @@ TO DO!
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
+```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="5%" max-width="15%"></igc-column>
 ```
 
 ```razor
@@ -253,11 +363,24 @@ TO DO!
 
 また、`Column` の `Autosize` メソッドで列を動的に自動でサイズ変更できます。
 
+<!-- Angular -->
 ```typescript
 @ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
 
 let column = this.@@igObjectRef.columnList.filter(c => c.field === 'ID')[0];
 column.autosize();
+```
+<!-- end: Angular -->
+
+```typescript
+constructor() {
+    var id = this.id = document.getElementById('ID') as IgcColumnComponent;
+
+    this._bind = () => {
+        id.autoize();
+    }
+    this._bind();
+}
 ```
 
 ```razor
@@ -278,6 +401,10 @@ column.autosize();
 
 ```html
 <igx-column width='auto'>
+```
+
+```html
+<igc-column width='auto'>
 ```
 
 ```razor
@@ -420,5 +547,5 @@ $custom-grid-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -41,6 +41,10 @@ _language: ja
 <IgbColumn Field="Title" Sortable="true"></IgbColumn>
 ```
 
+```html
+<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+```
+
 ## ソート インジケーター
 
 ソートされた列数が一定数以上ある場合、ソート順の指定がないと混乱する可能性があります。
@@ -61,9 +65,19 @@ _language: ja
 
 `{ComponentName}` `Sort` メソッドを使用し、列または複数の列を `{ComponentName}` API でソートできます。
 
+<!-- Angular -->
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
+```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+```typescript
+import { SortingDirection } from 'igniteui-webcomponents-grids';
+```
+<!-- end: WebComponents -->
+
+```typescript
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -153,6 +167,17 @@ public ngOnInit() {
 }
 ```
 
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.grid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
 > [!NOTE]
 > `string` 型の値が `DataType` `Date` の列で使用される場合、`{ComponentName}` が値を `Date` オブジェクトに解析しないため `{ComponentName}` `Sorting` が正しく動作しません。`string` オブジェクトを使用する場合、値を `Date` オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
@@ -195,6 +220,12 @@ public ngOnInit() {
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="unfold_more" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
 }
 ```
 
@@ -246,6 +277,12 @@ public ngOnInit() {
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="expand_more" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="expand_more></igc-icon>`;
 }
 ```
 
@@ -379,5 +416,5 @@ $custom-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

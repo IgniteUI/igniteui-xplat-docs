@@ -30,6 +30,10 @@ _language: ja
 <igx-column [field]="email" [header]="User E-mail" required email></igx-column>
 ```
 
+```html
+<igc-column field="email" header="User E-mail" required="true" email="true"></igx-column>
+```
+
 以下のサンプルは、`{ComponentName}` に組み込み済みの `Required`、`Email` および `Min` 検証ディレクティブを使用する方法を示しています。
 
 <code-view style="height:600px"
@@ -671,5 +675,5 @@ public cellStyles = {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

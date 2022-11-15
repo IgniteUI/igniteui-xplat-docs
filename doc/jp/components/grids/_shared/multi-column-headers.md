@@ -23,6 +23,7 @@ _language: ja
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [allowFiltering]="true">
     <igx-column-group header="Contact Information">
@@ -32,6 +33,7 @@ _language: ja
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -43,10 +45,22 @@ _language: ja
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} allow-filtering="true">
+    <igc-column-group header="Contact Information">
+        <igc-column sortable="true" resizable="true" field="Phone"></igc-column>
+        <igc-column sortable="true" resizable="true" field="Fax"></igc-column>
+        <igc-column sortable="true" resizable="true" field="PostalCode"></igc-column>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID">
     <igx-column-group header="Contact Information">
@@ -56,6 +70,7 @@ _language: ja
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -66,6 +81,18 @@ _language: ja
     </IgbColumnGroup>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primaryKey="ID" foreignKey="ParentID">
+    <igc-column-group header="Contact Information">
+        <igc-column field="Phone" data-type="String" sortable="true" resizable="true"></igc-column>
+        <igc-column field="Fax" data-type="String" sortable="true" resizable="true"></igc-column>
+        <igc-column field="PostalCode" data-type="String" sortable="true" resizable="true"></igc-column>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -98,7 +125,7 @@ TO-DO H-GRID CODE SNIPPET
 ネストしたヘッダーの `n-th` レベルは、上記の宣言に従います。したがって、`ColumnGroup` をネストすることで、望ましい結果が得られます。
 
 <!-- ComponentStart: Grid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group header="General Information">
@@ -110,6 +137,7 @@ TO-DO H-GRID CODE SNIPPET
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -123,10 +151,23 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} height="600px" allow-filtering="true">
+    <igc-column-group header="General Information">
+        <igc-column movable="true" sortable="true" resizable="true" field="CompanyName"></igc-column>
+        <igc-column-group movable="true" header="Person Details">
+            <igc-column movable="true" pinned="false" sortable="true" resizable="true" field="ContactName"></igc-column>
+            <igc-column movable="true" sortable="true" resizable="true" field="ContactTitle"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group [pinned]="false" header="General Information">
@@ -139,6 +180,7 @@ TO-DO H-GRID CODE SNIPPET
     </igx-column-group>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -152,6 +194,21 @@ TO-DO H-GRID CODE SNIPPET
     </IgbColumnGroup>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primary-key="ID" foreign-key="ParentID" moving="true">
+    <igc-column-group pinned="false" header="General Information">
+        <igc-column field="HireDate" data-type="date" sortable="true" resizable="true"></igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ID" data-type="number" resizable="true" filterable="false"></igc-column>
+            <igc-column field="Title" data-type="string" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Age" data-type="number" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -183,7 +240,7 @@ TO-DO H-GRID CODE SNIPPET
 > `columns/column-groups` が現在の `group` によってラップされていない場合 (**一番上のレベル** `columns` の場合)、表示されている列全体の間で移動が許可されます。
 
 <!-- ComponentStart: Grid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" height="600px" [allowFiltering]="true">
     <igx-column-group  [movable]="true" [pinned]="true" header="General Information">
@@ -194,6 +251,7 @@ TO-DO H-GRID CODE SNIPPET
     <igx-column sortable="true" resizable="true" field="PostalCode"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true>
@@ -206,10 +264,22 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} height="600px" allow-filtering="true">
+    <igc-column-group  movable="true" pinned="true" header="General Information">
+        <igc-column movable="true" sortable="true" resizable="true" field="CompanyName"></igc-column>
+    </igc-column-group>
+    <igc-column sortable="true" resizable="true" field="Phone"></igc-column>
+    <igc-column sortable="true" resizable="true" field="Fax"></igc-column>
+    <igc-column sortable="true" resizable="true" field="PostalCode"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" [moving]="true">
     <igx-column-group header="Contact Information">
@@ -220,6 +290,7 @@ TO-DO H-GRID CODE SNIPPET
     <igx-column field="Age" dataType="number" [sortable]="true" [resizable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=data AllowFiltering=true PrimaryKey="ID" ForeignKey="ParentID">
@@ -232,6 +303,18 @@ TO-DO H-GRID CODE SNIPPET
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} primary-key="ID" foreign-key="ParentID" moving="true">
+    <igc-column-group header="Contact Information">
+        <igc-column field="Phone" data-type="String" sortable="true" resizable="true"></igc-column>
+    </igc-column-group>
+    <igc-column field="Name" data-type="String" sortable="true" resizable="true"></igc-column>
+    <igc-column field="Title" data-type="String" sortable="true" resizable="true"></igc-column>
+    <igc-column field="Age" data-type="Number" sortable="true" resizable="true"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -269,6 +352,28 @@ TO-DO H-GRID CODE SNIPPET
 </igx-column-group>
 ```
 
+```html
+<igc-column-group id="General" header="General Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('General') as IgcColumnComponent;
+
+    this._bind = () => {
+        general.headerTemplate = this.generalHeaderTemplate;
+    }
+    this._bind();
+}
+
+public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.toUppercase(ctx.cell.column.header)}
+    `;
+}
+```
+
 複数の列グループに対して 1 つのテンプレートを再利用する場合は、列グループの `headerTemplate` プロパティを次のように設定できます:
 
 ```html
@@ -280,6 +385,32 @@ TO-DO H-GRID CODE SNIPPET
 </igx-column-group>
 <igx-column-group header="Address Information" [headerTemplate]="columnGroupHeaderTemplate">
 </igx-column-group>
+```
+
+```html
+<igc-column-group id="General" header="General Information">
+</igc-column-group>
+<igc-column-group id="Address" header="Address Information">
+</igc-column-group>
+```
+
+```ts
+constructor() {
+    var general = this.general = document.getElementById('General') as IgcColumnComponent;
+    var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
+
+    this._bind = () => {
+        general.headerTemplate = this.columnGroupHeaderTemplate;
+        addresss.headerTemplate = this.columnGroupHeaderTemplate;
+    }
+    this._bind();
+}
+
+public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${this.toUppercase(ctx.cell.column.header)}
+    `;
+}
 ```
 <!-- end: Angular -->
 
@@ -322,6 +453,14 @@ TO-DO H-GRID CODE SNIPPET
     public RenderFragment<IgbColumnTemplateContext> Template = (ctx) => {
         return @<IgbIcon AdditionalAttributes="DraggableAttributes"  @onclick="onClick"/>;
     };
+}
+```
+
+```ts
+public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+    `;
 }
 ```
 
@@ -477,5 +616,5 @@ import 'core-js/es7/array';
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -105,8 +105,32 @@ _language: ja
 </igx-grid>
 ```
 
+```html
+<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.sorting = this.onSorting;
+    }
+    this._bind();
+
+}
+```
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
+    this.grid.endEdit(true);
+    // (event.owner as IgxGridComponent).endEdit(true);
+}
+```
+```typescript
+public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
     // (event.owner as IgxGridComponent).endEdit(true);
 }
@@ -152,7 +176,9 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 
 * [{ComponentTitle} 概要](overview.md)
+<!-- Angular -->
 * [CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 * [列のデータ型](column-types.md#default-template)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)

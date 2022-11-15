@@ -42,12 +42,14 @@ _language: ja
 - **true** - 対応する列のフィルタリングが有効になります。これがデフォルト値です。
 - **false** - 対応する列のフィルタリングが無効になります。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" dataType="string"></igx-column>
-    <igx-column field="Price" [dataType]="'number'" [filterable]="false">
+    <igx-column field="Price" [dataType]="'number'" [filterable]="false"></igx-column>
 <{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid Data=data AutoGenerate=false AllowFiltering=true>
@@ -56,16 +58,33 @@ _language: ja
 </IgbGrid>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="ProductName" data-type="String"></igc-column>
+    <igc-column field="Price" data-type="Number" filterable="false"></igc-column>
+<{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
 ```html
 <{ComponentSelector}  [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid Data=data AutoGenerate=true AllowAdvancedFiltering=true />
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}  data="data" auto-generate="true" allow-advanced-filtering="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 >[!NOTE]
 >`{ComponentName}` で `QuickFilter` または `ExcelStyleFilter` と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
@@ -83,13 +102,24 @@ _language: ja
 フィルタリング機能は、`AllowFiltering` 入力を **true** に設定すると `{ComponentName}` コンポーネントで有効になります。デフォルトの `FilterMode` は `QuickFilter` でランタイムでは**変更できません**。特定の列でこの機能を無効にするには、`Filterable` 入力を **false** に設定します。
 
 <!-- ComponentStart: Grid, TreeGrid -->
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false" [allowFiltering]="true">
     <igx-column field="ProductName" dataType="string"></igx-column>
     <igx-column field="Price" dataType="number"></igx-column>
-    <igx-column field="Discontinued" [dataType]="'boolean'" [filterable]="false">
+    <igx-column field="Discontinued" [dataType]="'boolean'" [filterable]="false"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="false" allow-filtering="true">
+    <igc-column field="ProductName" data-type="String"></igc-column>
+    <igc-column field="Price" datdata-typeaType="Number"></igc-column>
+    <igc-column field="Discontinued" data-type="Boolean" filterable="false"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -98,6 +128,12 @@ _language: ja
     <igx-column field="Artist" [filterable]="true"></igx-column>
     <igx-column field="Photo" [filterable]="false"></igx-column>
 </igx-hierarchical-grid>
+```
+```html
+<igc-hierarchical-grid auto-generate="false" allow-filtering="true">
+    <igc-column field="Artist" filterable="true"></igc-column>
+    <igc-column field="Photo" filterable="false"></igc-column>
+</igc-hierarchical-grid>
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
@@ -127,6 +163,13 @@ _language: ja
 
 // Filter the `ProductName` column for values which `contains` the `myproduct` substring, ignoring case
 this.@@igObjectRef.filter('ProductName', 'myproduct', IgxStringFilteringOperand.instance().condition('contains'), true);
+```
+
+```typescript
+// Single column filtering
+
+// Filter the `ProductName` column for values which `contains` the `myproduct` substring, ignoring case
+this.grid.filter('ProductName', 'myproduct', IgcStringFilteringOperand.instance().condition('contains'), true);
 ```
 
 必要なパラメーターは列フィールド キーとフィルター用語のみです。条件および大文字と小文字の区別を設定しない場合、列プロパティで推測されます。フィルターが複数ある場合、このメソッドはフィルター式の配列を受け取ります。
@@ -161,6 +204,33 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
+```typescript
+// Multi column filtering
+
+const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
+const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+const productExpression = {
+    condition: IgcStringFilteringOperand.instance().condition('contains'),
+    fieldName: 'ProductName',
+    ignoreCase: true,
+    searchVal: 'ch'
+};
+productFilteringExpressionsTree.filteringOperands.push(productExpression);
+gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+const priceFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'Price');
+const priceExpression = {
+    condition: IgcNumberFilteringOperand.instance().condition('greaterThan'),
+    fieldName: 'UnitPrice',
+    ignoreCase: true,
+    searchVal: 20
+};
+priceFilteringExpressionsTree.filteringOperands.push(priceExpression);
+gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTree);
+
+this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
+```
+
 * `FilterGlobal` - 既存フィルターをクリアして新しいフィルター条件をすべての {ComponentTitle} 列に適用します。
 
 ```typescript
@@ -168,9 +238,15 @@ this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 this.@@igObjectRef.filteringLogic = FilteringLogic.Or;
 this.@@igObjectRef.filterGlobal('myproduct', IgxStringFilteringOperand.instance().condition('contains'), false);
 ```
+```typescript
+// Filter all cells for a value which contains `myproduct`
+this.grid.filteringLogic = FilteringLogic.Or;
+this.grid.filterGlobal('myproduct', IgcStringFilteringOperand.instance().condition('contains'), false);
+```
 
 * `ClearFilter` - 対象列から適用されたフィルターを削除します。引数がない場合、すべての列のフィルターをクリアします。
 
+<!-- Angular -->
 ```typescript
 // Remove the filtering state from the ProductName column
 this.@@igObjectRef.clearFilter('ProductName');
@@ -178,6 +254,17 @@ this.@@igObjectRef.clearFilter('ProductName');
 // Clears the filtering state from all columns
 this.@@igObjectRef.clearFilter();
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+// Remove the filtering state from the ProductName column
+this.grid.clearFilter('ProductName');
+
+// Clears the filtering state from all columns
+this.grid.clearFilter();
+```
+<!-- end: WebComponents -->
 
 ## 初期のフィルター状態
 
@@ -203,15 +290,43 @@ public ngAfterViewInit() {
 }
 ```
 
+```typescript
+constructor() { 
+    const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
+    const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
+    const productExpression = {
+        condition: IgcStringFilteringOperand.instance().condition('contains'),
+        fieldName: 'ProductName',
+        ignoreCase: true,
+        searchVal: 'c'
+    };
+    productFilteringExpressionsTree.filteringOperands.push(productExpression);
+    gridFilteringExpressionsTree.filteringOperands.push(productFilteringExpressionsTree);
+
+    this.grid.filteringExpressionsTree = gridFilteringExpressionsTree;
+    this.cdr.detectChanges();
+}
+```
+
 ### フィルター ロジック
 
 `{ComponentName}` コントロールの `FilteringLogic` プロパティは `{ComponentName}` で複数の列のフィルターが解決する方法を制御します。`{ComponentName}` API または `{ComponentName}` の入力プロパティによって変更できます。
 
+<!-- Angular -->
 ```typescript
 import { FilteringLogic } from 'igniteui-angular';
 
 this.@@igObjectRef.filteringLogic = FilteringLogic.OR;
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+import { FilteringLogic } from 'igniteui-webcomponents-grids';
+
+this.grid.filteringLogic = FilteringLogic.OR;
+```
+<!-- end: WebComponents -->
 
 `AND` のデフォルト値は現在適用されているすべてのフィルター式と一致する行のみを返します。上記の例は、「ProductName」 セル値が 「myproduct」 を含み、「Price」 セル値が 55 より大きい場合に行が返されます。
 
@@ -295,7 +410,70 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 }
 ```
 
+```typescript
+// grid-custom-filtering.component.ts
+
+export class GridCustomFilteringComponent {
+    public caseSensitiveFilteringOperand = CaseSensitiveFilteringOperand.instance();
+    public booleanFilteringOperand = BooleanFilteringOperand.instance();
+}
+
+export class CaseSensitiveFilteringOperand extends IgxStringFilteringOperand {
+    private constructor() {
+        super();
+        const customOperations = [
+            {
+                iconName: 'contains',
+                isUnary: false,
+                logic: (target: string, searchVal: string, ignoreCase?: boolean) => {
+                    ignoreCase = false;
+                    const search = IgcStringFilteringOperand.applyIgnoreCase(searchVal, ignoreCase);
+                    target = IgcStringFilteringOperand.applyIgnoreCase(target, ignoreCase);
+                    return target.indexOf(search) !== -1;
+                },
+                name: 'Contains (case sensitive)'
+            },
+            {
+                iconName: 'does_not_contain',
+                isUnary: false,
+                logic: (target: string, searchVal: string, ignoreCase?: boolean) => {
+                    ignoreCase = false;
+                    const search = IgcStringFilteringOperand.applyIgnoreCase(searchVal, ignoreCase);
+                    target = IgcStringFilteringOperand.applyIgnoreCase(target, ignoreCase);
+                    return target.indexOf(search) === -1;
+                },
+                name: 'Does Not Contain (case sensitive)'
+            }
+        ];
+
+        const emptyOperators = [
+            // 'Empty'
+            this.operations[6],
+            // 'Not Empty'
+            this.operations[7]
+        ];
+
+        this.operations = customOperations.concat(emptyOperators);
+    }
+}
+
+export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
+    private constructor() {
+        super();
+        this.operations = [
+            // 'All'
+            this.operations[0],
+            // 'TRUE'
+            this.operations[1],
+            // 'FALSE'
+            this.operations[2]
+        ];
+    }
+}
+```
+
 <!-- ComponentStart: Grid, TreeGrid -->
+<!-- Angular -->
 ```html
 <!-- grid-custom-filtering.component.html -->
 
@@ -309,6 +487,29 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+<!-- WebComponents -->
+```html
+<!-- grid-custom-filtering.component.html -->
+
+<{ComponentSelector} auto-generate="false" allow-filtering="true">
+    <igc-column id="ProductName" field="ProductName" header="Product Name" data-type="String"></igc-column>
+    <igc-column id="Discontinued" field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var productName = this.productName = document.getElementById('ProductName') as IgcColumnComponent;
+    var discontinued = this.discontinued = document.getElementById('Discontinued') as IgcColumnComponent;
+
+    this._bind = () => {
+        productName.bodyTemplate = this.caseSensitiveFilteringOperand;
+        discontinued.bodyTemplate = this.booleanFilteringOperand;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 ```html
@@ -323,6 +524,27 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
         </ng-template>
     </igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<!-- grid-custom-filtering.component.html -->
+
+<igc-hierarchical-grid auto-generate="false" allow-filtering="true">
+    <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
+    <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
+</igc-hierarchical-grid> 
+```
+```ts
+constructor() {
+    var artist = this.artist = document.getElementById('Artist') as IgcColumnComponent;
+    var hasGrammyAward = this.hasGrammyAward = document.getElementById('HasGrammyAward') as IgcColumnComponent;
+
+    this._bind = () => {
+        artist.bodyTemplate = this.caseSensitiveFilteringOperand;
+        hasGrammyAward.bodyTemplate = this.booleanFilteringOperand;
+    }
+    this._bind();
+}
 ```
 
 <!-- Angular -->
@@ -642,6 +864,6 @@ $custom-input-group: input-group-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName}  **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
 

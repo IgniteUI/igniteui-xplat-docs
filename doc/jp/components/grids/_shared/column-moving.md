@@ -37,6 +37,14 @@ _language: ja
     };
 ```
 
+```ts
+public headerTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>   
+    `;
+}
+```
+
 ## {Platform} {ComponentTitle} 列移動概要の例
 
 <code-view style="height:650px"
@@ -57,6 +65,12 @@ _language: ja
 ```razor
 <{ComponentSelector} Moving=true></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## API
 
@@ -118,12 +132,34 @@ idColumn.move(3);
 
 `{ComponentName}` の `ColumnMovingEnd`  イベントを処理し、列が新しい位置にドロップされたときにカスタム ロジックを実装できます。たとえば、以下のスニペットでは、**Change On Year(%)** 列の後に **Category** のドロップをキャンセルできます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #dataGrid [data]="data" [autoGenerate]="false" [moving]="true" (columnMovingEnd)="onColumnMovingEnd($event)">
     <igx-column [field]="'Category'"></igx-column>
     <igx-column [field]="'Change On Year(%)'" [dataType]="'number'" ></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
+    <igx-column field="Category"></igx-column>
+    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+</{ComponentSelector}>
+```
+```typescript
+constructor() {
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        dataGrid.data = this.data;
+        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onColumnMovingEnd(event) {
@@ -301,5 +337,5 @@ $dark-grid-column-moving-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

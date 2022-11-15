@@ -38,16 +38,34 @@ _language: ja
 
 高度なフィルタリングを有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
     <igx-grid-toolbar></igx-grid-toolbar>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    let grid = (document.getElementById("grid") as IgcGridComponent);
+    this._bind = () => {
+            grid.data = this.data
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
 
@@ -76,6 +94,33 @@ ngAfterViewInit(): void {
     tree.filteringOperands.push(subTree);
 
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
+}
+```
+```typescript
+connectedCallback(): void {
+    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ID',
+        condition: IgcStringFilteringOperand.instance().condition('contains'),
+        searchVal: 'a',
+        ignoreCase: true
+    });
+    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ContactTitle',
+        condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'CompanyName',
+        condition: IgcStringFilteringOperand.instance().condition('startsWith'),
+        searchVal: 'c',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+
+    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
 }
 ```
 
@@ -111,6 +156,12 @@ ngAfterViewInit(): void {
 </IgbAdvancedFilteringDialog>
 ```
 
+```html
+<igc-advanced-filtering-dialog grid="grid1">
+</igc-advanced-filtering-dialog>
+```
+
+<!-- end: Angular -->
 <!-- Angular -->
 
 ## スタイル設定
@@ -439,5 +490,5 @@ $custom-drop-down: drop-down-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLower})

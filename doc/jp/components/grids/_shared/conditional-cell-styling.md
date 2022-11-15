@@ -34,6 +34,24 @@ Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、カス
 </IgbGrid>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" height="600px" width="100%">
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.rowClasses = this.rowClasses;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
+
 `RowClasses` 入力は、キーと値のペアを含むオブジェクト リテラルを受け取ります。キーは CSS クラスの名前です。値はブール値を返すコールバック関数またはブール値です。
 
 <!-- Angular -->
@@ -64,6 +82,14 @@ igRegisterScript("RowClassesHandler", () => {
         activeRow: (row) => row.index === 0
     };
 }, true);
+```
+
+```ts
+public rowClasses(args: any) {
+    return {
+            activeRow: (row) => row.index === 0
+        };
+}
 ```
 
 ```css
@@ -137,6 +163,23 @@ igRegisterScript("RowStylesHandler", () => {
 <IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="RowStylesHandler" @ref="grid">
 </IgbGrid>
 ```
+
+```html
+<igc-grid id="grid1" height="500px" width="100%"
+        auto-generate="false" allow-filtering="true">
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.rowStyles = this.rowStyles;
+    }
+    this._bind();
+}
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -167,6 +210,21 @@ Add treegrid styles
 <igx-tree-grid #treeGrid [data]="data" [moving]="true" primaryKey="ID" foreignKey="ParentID"
         width="100%" height="550px" [rowStyles]="rowStyles">
 </igx-tree-grid>
+```
+```html
+<igc-tree-grid id="treeGrid" moving="true" primary-key="ID" foreign-key="ParentID"
+        width="100%" height="550px">
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.rowStyles = this.rowStyles;
+    }
+    this._bind();
+}
 ```
 <!-- end: Angular -->
 
@@ -204,6 +262,26 @@ Add Hierarchical styles
 ```razor
 Add Hierarchical markup
 ```
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" auto-generate="false"
+        height="580px" width="100%">
+        <igc-row-island id="rowIsland1" key="Albums" auto-generate="false" >
+        </igc-row-island>>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
+    var rowIsland1 = this.rowIsland1 = document.getElementById('rowIsland1') as IgcRowIslandComponent;
+
+    this._bind = () => {
+        hierarchicalGrid.rowStyles = this.rowStyles;
+        rowIsland1.rowStyles = this.childRowStyles;
+    }
+    this._bind();
+}
+```
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -232,6 +310,19 @@ Add Hierarchical markup
 ```html
 <igx-column field="BeatsPerMinute" dataType="number" [cellClasses]="beatsPerMinuteClasses"></igx-column>
 ```
+```html
+<igc-column id="beatsPerMin" field="BeatsPerMinute" data-type="Number"></igc-column>
+```
+```ts
+constructor() {
+    var beatsPerMin = this.beatsPerMin = document.getElementById('beatsPerMin') as IgcColumnComponent;
+
+    this._bind = () => {
+        beatsPerMin.cellClasses = this.beatsPerMinuteClasses;
+    }
+    this._bind();
+}
+```
 <!-- end: Angular -->
 
 ```razor
@@ -250,6 +341,28 @@ Add Hierarchical markup
         <span *ngIf="cell.row.data.UnitPrice != 0">${{val}}</span>
     </ng-template>
 </igx-column>
+```
+```html
+<igc-column id="UnitPrice" field="UnitPrice" header="Unit Price"  data-type="Number"></igc-column>
+```
+```ts
+constructor() {
+    var UnitPrice = this.UnitPrice = document.getElementById('UnitPrice') as IgcColumnComponent;
+
+    this._bind = () => {
+        UnitPrice.cellClasses = this.priceClasses;
+        UnitPrice.bodyTemplate = this.unitPriceTemplate;
+    }
+    this._bind();
+}
+public unitPriceTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        ${if (ctx.cell.value == 0)}
+        <span>-</span>
+        ${if (ctx.cell.value != 0)}
+        <span>${ctx.cell.value}</span>
+    `;
+}
 ```
 <!-- end: Angular -->
 
@@ -293,6 +406,15 @@ igRegisterScript("CellClassesHandler", () => {
         upFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] > 95
     };
 }, true);
+```
+
+```ts
+public cellClasses(args: any) {
+    return {
+            downFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] <= 95,
+            upFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] > 95
+        };
+}
 ```
 
 <!-- Angular -->
@@ -432,6 +554,23 @@ igRegisterScript("EvenColStyles", () => {
 }, true);
 ```
 
+```ts
+public OddColStyles(args: any) {
+    return {
+            background: 'linear-gradient(to right, #b993d6, #8ca6db)',
+            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
+            animation: '0.75s popin'
+        };
+}
+public EvenColStyles(args: any) {
+    return {
+            background: 'linear-gradient(to right, #8ca6db, #b993d6)',
+            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
+            animation: '0.75s popin'
+        };
+}
+```
+
 <!-- Angular -->
 `ngOnInit` で、`{ComponentName}` 列を動的に作成するために使用される事前定義 `Columns` コレクションの各列に `CellStyles` 構成を追加します。
 
@@ -508,6 +647,32 @@ public updateCSS(css: string) {
 <IgbColumn Field="CompanyName" CellStylesScript="OddColStyles">
 </IgbColumn>
 ```
+
+```html
+<igc-grid id="grid1"
+    primary-key="ID"
+    width="80%"
+    height="300px">
+    <igc-column id="field"
+        field="field"
+        header="field"
+        cellStyles="c.cellStyles">
+    </igc-column>
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
+    var field = this.field = document.getElementById('field') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        field.cellClasses = this.cellStyles;
+    }
+    this._bind();
+}
+```
+
 `popin` アニメーションの定義:
 
 ```css
@@ -569,6 +734,31 @@ editDone(evt) {
 ```
 <!-- end: Angular -->
 
+```html
+<igx-grid id="grid1" height="500px" width="100%" >
+  <igx-column id="Col1" field="Col1" data-type="Number"></igx-column>
+  <igx-column id="Col2" field="Col2" data-type="Number" editable="true"></igx-column>
+  <igx-column id="Col3" field="Col3" header="Col3" data-type="String"></igx-column>
+</igx-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
+    var Col1 = this.Col1 = document.getElementById('Col1') as IgcColumnComponent;
+    var Col2 = this.Col2 = document.getElementById('Col2') as IgcColumnComponent;
+    var Col3 = this.Col3 = document.getElementById('Col3') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.onCellEdit = this.editDone;
+        Col1.cellClasses = this.backgroundClasses;
+        Col2.cellClasses = this.backgroundClasses;
+        Col3.cellClasses = this.backgroundClasses;
+    }
+    this._bind();
+}
+```
+
 ## API リファレンス
 
 * `Column`
@@ -597,5 +787,5 @@ editDone(evt) {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -164,6 +164,27 @@ private UpdateCell() {
     </ng-template>
 </igx-column>
 ```
+```html
+<igc-column id="class" field="class" header="Class" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var class = this.class = document.getElementById('class') as IgcColumnComponent;
+
+    this._bind = () => {
+        class.inlineEditorTemplateRef = this.classEditTemplate;
+    }
+    this._bind();
+}
+
+public classEditTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-select class="cell-select" value="${ctx.cell.value}" >
+        </igc-select>
+    `;
+}
+```
 
 このコードは、`Race`、`Class`、および `Alignment` 列のセルに [SelectComponent](../select.md) を実装する以下のサンプルで使用されています。
 
@@ -434,7 +455,42 @@ event.cancel = true
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+<!-- ComponentStart: Grid -->
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
+    this._bind = () => {
+        grid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+    var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
 `CellEdit` は、セルの**値**がコミットされる直前に発生します。**HandleCellEdit** の定義では、アクションを実行する前に特定の列を確認する必要があります。
 
 <!-- ComponentStart: Grid -->
@@ -626,7 +682,9 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
+<!-- Angular -->
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 * [{ComponentTitle} 概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)

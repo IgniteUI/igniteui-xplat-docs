@@ -34,6 +34,7 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 これらは `{ComponentName}` 内に追加され、デフォルトのインタラクションを提供する `ActionStrip` プを持つために必要です。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [rowEditable]="true" [primaryKey]="'ID'">
     <igx-column *ngFor="let c of columns" [field]="c.field">
@@ -45,6 +46,7 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
@@ -60,12 +62,27 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" row-editable="true" primary-key="ID">
+    <igc-column field="field">
+    </igc-column>
+
+    <igc-action-strip id="actionStrip">
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 >注: `ActionStripComponent` が `{ComponentName}` の子コンポーネントの場合、行をホバーすると UI が自動的に表示されます。
 
 ## カスタムの実装
 
 これらのコンポーネントは、カスタマイズのための柔軟性を提供するテンプレートを公開します。たとえば、**delete**、**edit** などの行アクションがある Gmail シナリオで `ActionStripComponent` を使用する場合、`igx-icon` でボタン コンポーネントを作成します。そして、クリック イベントを追加し、`ActionStripComponent` に挿入します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -79,6 +96,7 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -98,6 +116,17 @@ import { IgxActionStripModule } from 'igniteui-angular';
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}>
+    <igc-action-strip #actionstrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions edit-row="true" delete-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -132,5 +161,5 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

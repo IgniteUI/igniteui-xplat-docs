@@ -57,6 +57,18 @@ _language: ja
     }
 }
 ```
+
+```html
+<igc-grid id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="IndustrySector" data-type="String" sortable="true"></igc-column>
+    <igc-column field="IndustryGroup" data-type="String" sortable="true"></igc-column>
+    <igc-column field="SectorType" data-type="String" sortable="true"></igc-column>
+    <igc-column field="KRD" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="MarketNotion" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="Date" data-type="Date" sortable="true"></igc-column>
+</igc-grid>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -72,6 +84,16 @@ _language: ja
 
 ```razor
 TODO TREEGRID SNIPPET
+```
+
+```html
+<igc-tree-grid id="treeGrid1" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true">
+    <igc-column field="Name" data-type="String" sortable="true"></igc-column>
+    <igc-column field="ID" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="Title" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Age" dataTdata-typeype="Number" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="Date" sortable="true"></igc-column>
+</igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -131,15 +153,42 @@ public bool exactMatch = false;
 
 上記のメソッドは **number** 値を返します (`{ComponentName}` で指定した文字列が含まれる回数)。
 
+<!-- Angular -->
 ```html
 <!--searchgrid.component.html-->
 
 <input #search1 id="search1" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)" />
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbInput ValueChanging="valueChanging" Value="@searchText" />
 ```
+
+<!-- WebComponents -->
+```html
+<!--searchgrid.component.html-->
+
+<input id="search1" placeholder="Search" />
+```
+```ts
+constructor() {
+    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
+
+    this._bind = () => {
+        search1.addEventListener('change', searchValue);
+    }
+    this._bind();
+}
+public searchValue(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -201,6 +250,39 @@ public bool exactMatch = false;
 }
 ```
 
+<!-- WebComponents -->
+```html
+<div class="searchButtons">
+    <input id="prevBtn" type="button" value="Previous"/>
+    <input id="nextBtn" type="button" value="Next"/>
+</div>
+```
+```ts
+constructor() {
+    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
+    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+
+    this._bind = () => {
+        prevBtn.addEventListener('change', findPrev);
+        nextBtn.addEventListener('change', findPrev);
+    }
+    this._bind();
+}
+public findPrev(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findPrev(searchText, caseSensitive, exactMatch)
+}
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+<!-- end: WebComponents -->
+
 ### キーボード検索の追加
 
 <!-- Angular -->
@@ -209,6 +291,7 @@ public bool exactMatch = false;
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
 <input #search1 id="search1" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)"
        (keydown)="searchKeyDown($event)" />
@@ -225,6 +308,42 @@ public searchKeyDown(ev) {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<input id="search1" placeholder="Search" />
+```
+
+```typescript
+constructor() {
+    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
+
+    this._bind = () => {
+        search1.addEventListener('keydown', searchKeyDown);
+        search1.addEventListener('change', findNext);
+    }
+    this._bind();
+}
+
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+
+public searchKeyDown(ev) {
+    if (ev.key === 'Enter') {
+        ev.preventDefault();
+        this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+    } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
+        ev.preventDefault();
+        this.grid.findPrev(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -255,6 +374,7 @@ public searchKeyDown(ev) {
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
 <span>Case sensitive</span>
 <input type="checkbox" [checked]="caseSensitive" (change)="updateSearch()">
@@ -274,6 +394,42 @@ public updateExactSearch() {
     this.@@igObjectRef.findNext(this.searchText, this.caseSensitive, this.exactMatch);
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<span>Case sensitive</span>
+<input id="case" type="checkbox">
+
+<span>Exact match</span>
+<input id="exact" type="checkbox">
+```
+
+```typescript
+constructor() {
+    var case = this.case = document.getElementById('case') as HtmlInputElement;
+    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
+
+    this._bind = () => {
+        case.checked = this.caseSensitive;
+        exact.checked = this.exactMatch;
+        case.addEventListener('change', updateSearch);
+        exact.addEventListener('change', updateExactSearch);
+    }
+    this._bind();
+}
+
+public updateSearch() {
+    this.caseSensitive = !this.caseSensitive;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+
+public updateExactSearch() {
+    this.exactMatch = !this.exactMatch;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -332,6 +488,25 @@ import {
 export class AppModule {}
 ```
 
+```typescript
+import {
+    igcXNameModule,
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
+    IgcXChipsModule
+} from 'igniteui-webcomponents-inputs';
+
+ModuleManager.register(
+    IgcXInputGroupModule, 
+    IgcXIconModule, 
+    IgcXRippleModule, 
+    IgcXButtonModule, 
+    IgcXChipsModule
+);
+```
+
 <!-- Blazor -->
 
 `Input`、`Icon`、`IconButton`、`Chip` のモジュールを使用します。
@@ -381,12 +556,37 @@ builder.Services.AddIgniteUIBlazor(
 </igx-input-group>
 ```
 
+```html
+<igc-input-group type="search" class="offset">
+    <igc-prefix>
+        <igc-icon>search</igx-icon>
+        <igc-icon>clear</igx-icon>
+    </igc-prefix>
+
+    <input id="search1" placeholder="Search" />
+
+    <igc-suffix>
+        ...
+    </igc-suffix>
+</igc-input-group>
+```
+<!-- Angular -->
 ```typescript
 public clearSearch() {
     this.searchText = '';
     this.@@igObjectRef.clearSearch();
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public clearSearch() {
+    this.searchText = '';
+    this.grid.clearSearch();
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -480,6 +680,29 @@ public clearSearch() {
 
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
+```html
+<igc-suffix >
+    <div class="resultsText">
+        <span id="results">
+        </span>
+    </div>
+</igc-suffix>
+```
+```typescript
+public showResults() {
+    if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {
+        var index = this.grid.lastSearchInfo.activeMatchIndex + 1 ;
+        var length = this.grid.lastSearchInfo.matchInfoCache.length;
+        document.getElementById('results').innerHTML = index +'of' + length + 'results';
+    }
+    else if (this.grid.lastSearchInfo.matchInfoCache.length == 0)  {
+        document.getElementById('results').innerHTML = 'No results';
+    }
+}
+```
+<!-- end: WebComponents -->
+
 <!-- Angular -->
 
 - 以下は `CaseSensitive` と `ExactMatch` を切り替えるチップを表示する方法です。プロパティに基づいて色が変わる 2 つのチップでチェックボックスを 置き換えます。チップをクリックすると、どちらのチップがクリックされたかによって各ハンドラー `UpdateSearch` または `UpdateExactSearch` を呼び出します。
@@ -513,15 +736,102 @@ public clearSearch() {
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+```html
+<div class="chips">
+    <igc-chips-area>
+        <igc-chip id="case">
+            <span>Case Sensitive</span>
+        </igc-chip>
+        <igc-chip id="exact">
+            <span>Exact Match</span>
+        </igc-chip>
+    </igc-chips-area>
+</div>  
+```
+
+```typescript
+constructor() {
+    var case = this.case = document.getElementById('case') as HtmlInputElement;
+    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
+
+    this._bind = () => {
+        case.checked = this.caseSensitive;
+        exact.checked = this.exactMatch;
+        case.addEventListener('change', updateSearch);
+        exact.addEventListener('change', updateExactSearch);
+    }
+    this._bind();
+}
+
+public updateSearch() {
+    this.caseSensitive = !this.caseSensitive;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+
+public updateExactSearch() {
+    this.exactMatch = !this.exactMatch;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+```
+
+```html
+<igc-suffix>
+    <div class="searchButtons">
+        <button id="prevBtn">
+            <igc-icon fontSet="material">navigate_before</igx-icon>
+        </button>
+        <button id="nextBtn">
+            <igc-icon fontSet="material">navigate_next</igx-icon>
+        </button>
+    </div>
+</igc-suffix>
+```
+```ts
+constructor() {
+    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
+    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+
+    this._bind = () => {
+        prevBtn.addEventListener('change', findPrev);
+        nextBtn.addEventListener('change', findPrev);
+    }
+    this._bind();
+}
+public findPrev(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findPrev(searchText, caseSensitive, exactMatch)
+}
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+<!-- end: WebComponents -->
+
 ## 既知の問題と制限
+<!-- Angular -->
 
 |制限|説明|
 |--- |--- |
 |テンプレートを使用したセル内の検索|検索機能の強調表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、強調表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
-<!-- Angular -->
 |リモート仮想化| リモート仮想化の使用時に検索が正しく動作しない問題。|
-<!-- end: Angular -->
 |セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、強調表示はされません。 |
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+|制限|説明|
+|--- |--- |
+|テンプレートを使用したセル内の検索|検索機能の強調表示が、デフォルトのセルテンプレートに対してのみ機能する問題。カスタム セル テンプレートを含む列がある場合、強調表示が機能しないため、列フォーマッタなどの代替アプローチを使用するか、`Searchable` (検索可能な) プロパティを false に設定します。|
+|セル テキストが切れる問題| セル内のテキストが長すぎるために検索テキストが省略記号によって切れている場合も、セルまでスクロールして一致カウントに含まれますが、強調表示はされません。 |
+
+<!-- end: Blazor -->
 
 ## API リファレンス
 
@@ -571,5 +881,5 @@ public clearSearch() {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

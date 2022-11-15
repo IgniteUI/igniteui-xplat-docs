@@ -31,9 +31,17 @@ _language: ja
 <IgbDataGrid data="data"><IgbDataGrid>
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 
 ```typescript
@@ -50,11 +58,21 @@ _language: ja
 </IgbDataGrid>
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data">
     <igx-column field="price.usd"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-column field="price.usd"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```typescript
 private updateData(data: IRecord[]) {
