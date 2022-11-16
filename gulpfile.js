@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.1/'
+var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.2/'
 
 var mt = null; // MarkdownTransformer
 var ml = null; // MappingLoader

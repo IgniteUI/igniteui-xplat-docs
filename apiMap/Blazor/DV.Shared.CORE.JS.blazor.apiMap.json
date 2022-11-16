@@ -138,6 +138,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowUnits"}],"originalName":"AllowUnits"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"AllowLabels"}],"originalName":"AllowLabels"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MemberPath"}],"originalName":"MemberPath"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MemberLabel"}],"originalName":"MemberLabel"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MemberSymbol"}],"originalName":"MemberSymbol"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"MemberUnit"}],"originalName":"MemberUnit"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendSummaryColumn",
@@ -164,14 +165,12 @@
   { "originalName":"ICommandAvailabilityListener",
     "names":[{"platform":"Blazor","fileName":"ICommandAvailabilityListener.cs","mappedName":"ICommandAvailabilityListener"}],"members":[],"originalNamespace":"Infragistics.Controls.Toolbar"},
   { "originalName":"ToolCommand",
-    "names":[{"platform":"Blazor","fileName":"ToolCommand.cs","mappedName":"ToolCommand"}],
+    "names":[{"platform":"Blazor","fileName":"ToolCommand.cs","mappedName":"IgbToolCommand"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"},
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"commandId"}],"originalName":"CommandId"},
-    { "names":[{"platform":"Blazor","mappedType":"ToolCommandArgument[]","mappedName":"argumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"CommandId"}],"originalName":"CommandId"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbToolCommandArgumentCollection","mappedName":"ArgumentsList"}],"originalName":"ArgumentsList"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
   { "originalName":"ToolCommandArgument",
-    "names":[{"platform":"Blazor","fileName":"ToolCommandArgument.cs","mappedName":"ToolCommandArgument"}],
+    "names":[{"platform":"Blazor","fileName":"ToolCommandArgument.cs","mappedName":"IgbToolCommandArgument"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"argumentName"}],"originalName":"ArgumentName"},
-    { "names":[{"platform":"Blazor","mappedType":"any","mappedName":"value"}],"originalName":"Value"},
-    { "names":[{"platform":"Blazor","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"}]}
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"ArgumentName"}],"originalName":"ArgumentName"},
+    { "names":[{"platform":"Blazor","mappedType":"object","mappedName":"Value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Toolbar"}]}

@@ -1,4 +1,4 @@
-{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts","igr-slider-label-module.ts","igr-input-base-module.ts","igr-chip-module.ts","igr-circular-gradient-module.ts","igr-circular-progress-module.ts","igr-linear-progress-module.ts","igr-progress-base-module.ts","igr-rating-module.ts","igr-rating-symbol-module.ts","igr-snackbar-module.ts","igr-toast-module.ts","igr-dropdown-group-module.ts","igr-dropdown-header-module.ts","igr-dropdown-item-module.ts","igr-dropdown-module.ts","igr-dock-manager-module.ts","igr-expansion-panel-module.ts","igr-mask-input-module.ts","igr-tree-item-module.ts","igr-tree-module.ts","igr-accordion-module.ts","igr-date-time-input-module.ts","igr-mask-input-base-module.ts","igr-tab-module.ts","igr-tab-panel-module.ts","igr-tabs-module.ts"],
+{"extraFiles":["igr-avatar-module.ts","igr-badge-module.ts","igr-button-base-module.ts","igr-button-module.ts","igr-icon-module.ts","igr-radio-group-module.ts","igr-radio-module.ts","igr-card-module.ts","igr-checkbox-base-module.ts","igr-checkbox-module.ts","igr-input-module.ts","igr-list-header-module.ts","igr-list-item-module.ts","igr-list-module.ts","igr-navbar-module.ts","igr-ripple-module.ts","igr-switch-module.ts","igr-form-module.ts","igr-icon-button-module.ts","igr-nav-drawer-header-item-module.ts","igr-nav-drawer-item-module.ts","igr-nav-drawer-module.ts","igr-card-actions-module.ts","igr-card-content-module.ts","igr-card-header-module.ts","igr-card-media-module.ts","igr-calendar-base-module.ts","igr-calendar-module.ts","igr-range-slider-module.ts","igr-slider-base-module.ts","igr-slider-module.ts","igr-slider-label-module.ts","igr-input-base-module.ts","igr-chip-module.ts","igr-circular-gradient-module.ts","igr-circular-progress-module.ts","igr-linear-progress-module.ts","igr-progress-base-module.ts","igr-rating-module.ts","igr-rating-symbol-module.ts","igr-snackbar-module.ts","igr-toast-module.ts","igr-dropdown-group-module.ts","igr-dropdown-header-module.ts","igr-dropdown-item-module.ts","igr-dropdown-module.ts","igr-dock-manager-module.ts","igr-expansion-panel-module.ts","igr-mask-input-module.ts","igr-tree-item-module.ts","igr-tree-module.ts","igr-date-time-input-module.ts","igr-mask-input-base-module.ts","igr-tab-module.ts","igr-tab-panel-module.ts","igr-tabs-module.ts","igr-accordion-module.ts"],
   "types":[
   { "originalName":"DockManagerLayout",
     "names":[{"platform":"React","fileName":"igr-dock-manager-layout.ts","dynamicModuleName":"igr-dock-manager-layout-dynamic-module.ts","moduleName":"igr-dock-manager-layout-module.ts","mappedName":"IgrDockManagerLayout"}],
@@ -16,12 +16,23 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"hours"}],"originalName":"Hours"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"minutes"}],"originalName":"Minutes"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"seconds"}],"originalName":"Seconds"}],"originalNamespace":"Infragistics.Controls"},
-  { "originalName":"Accordion",
-    "names":[{"platform":"React","fileName":"igr-accordion.ts","mappedName":"IgrAccordion"}],
+  { "originalName":"CalendarResourceStrings",
+    "names":[{"platform":"React","fileName":"igr-calendar-resource-strings.ts","mappedName":"IgrCalendarResourceStrings"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"singleExpand"}],"originalName":"SingleExpand"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideAll"}],"originalName":"HideAll"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"showAll"}],"originalName":"ShowAll"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectMonth"}],"originalName":"SelectMonth"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectYear"}],"originalName":"SelectYear"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectDate"}],"originalName":"SelectDate"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectRange"}],"originalName":"SelectRange"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectedDate"}],"originalName":"SelectedDate"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"startDate"}],"originalName":"StartDate"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"endDate"}],"originalName":"EndDate"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousMonth"}],"originalName":"PreviousMonth"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextMonth"}],"originalName":"NextMonth"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousYear"}],"originalName":"PreviousYear"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextYear"}],"originalName":"NextYear"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousYears"}],"originalName":"PreviousYears"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextYears"}],"originalName":"NextYears"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"weekLabel"}],"originalName":"WeekLabel"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"DateTimeInput",
     "names":[{"platform":"React","fileName":"igr-date-time-input.ts","mappedName":"IgrDateTimeInput"}],
     "members":[
@@ -100,7 +111,6 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"value"}],"originalName":"Value"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"mask"}],"originalName":"Mask"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"setRangeText1"}],"originalName":"SetRangeText"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"reportValidity"}],"originalName":"ReportValidity"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"checkValidity"}],"originalName":"CheckValidity"}],"originalBaseTypeName":"MaskInputBase","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
   { "originalName":"Tree",
@@ -108,7 +118,7 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"singleBranchExpand"}],"originalName":"SingleBranchExpand"},
     { "names":[{"platform":"React","mappedType":"TreeSelection","mappedName":"selection"}],"originalName":"Selection"},
-    { "names":[{"platform":"React","mappedType":"TreeDir","mappedName":"dir"}],"originalName":"Dir"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"dir"}],"originalName":"Dir"},
     { "names":[{"platform":"React","mappedType":"SizableComponentSize","mappedName":"size"}],"originalName":"Size"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"connectedCallback"}],"originalName":"ConnectedCallback"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"expandToItem"}],"originalName":"ExpandToItem"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
@@ -570,23 +580,6 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"weekday"}],"originalName":"Weekday"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"month"}],"originalName":"Month"}],"originalNamespace":"Infragistics.Controls"},
-  { "originalName":"CalendarResourceStrings",
-    "names":[{"platform":"React","fileName":"igr-calendar-resource-strings.ts","mappedName":"IgrCalendarResourceStrings"}],
-    "members":[
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectMonth"}],"originalName":"SelectMonth"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectYear"}],"originalName":"SelectYear"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectDate"}],"originalName":"SelectDate"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectRange"}],"originalName":"SelectRange"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"selectedDate"}],"originalName":"SelectedDate"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"startDate"}],"originalName":"StartDate"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"endDate"}],"originalName":"EndDate"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousMonth"}],"originalName":"PreviousMonth"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextMonth"}],"originalName":"NextMonth"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousYear"}],"originalName":"PreviousYear"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextYear"}],"originalName":"NextYear"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"previousYears"}],"originalName":"PreviousYears"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"nextYears"}],"originalName":"NextYears"},
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"weekLabel"}],"originalName":"WeekLabel"}],"originalNamespace":"Infragistics.Controls"},
   { "originalName":"CalendarBase",
     "names":[{"platform":"React","fileName":"igr-calendar-base.ts","mappedName":"IgrCalendarBase"}],
     "members":[
@@ -766,4 +759,10 @@
   { "originalName":"RadioGroup",
     "names":[{"platform":"React","fileName":"igr-radio-group.ts","mappedName":"IgrRadioGroup"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"RadioGroupAlignment","mappedName":"alignment"}],"originalName":"Alignment"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"}]}
+    { "names":[{"platform":"React","mappedType":"RadioGroupAlignment","mappedName":"alignment"}],"originalName":"Alignment"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"},
+  { "originalName":"Accordion",
+    "names":[{"platform":"React","fileName":"igr-accordion.ts","mappedName":"IgrAccordion"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"singleExpand"}],"originalName":"SingleExpand"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"hideAll"}],"originalName":"HideAll"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"showAll"}],"originalName":"ShowAll"}],"originalBaseTypeName":"BaseElement","originalBaseTypeNamespace":"Infragistics.Controls","originalNamespace":"Infragistics.Controls"}]}

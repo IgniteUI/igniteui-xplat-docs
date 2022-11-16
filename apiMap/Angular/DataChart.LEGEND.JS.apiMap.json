@@ -180,6 +180,7 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"valueOriginal"}],"originalName":"ValueOriginal"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueMemberLabel"}],"originalName":"ValueMemberLabel"},
     { "names":[{"platform":"Angular","mappedType":"DataAbbreviationMode","mappedName":"valueAbbreviation"}],"originalName":"ValueAbbreviation"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelText"}],"originalName":"LabelText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},
