@@ -31,8 +31,8 @@ To get started with the {Platform} tree grid, first you need to install the Igni
 
 Please refer to these topics on adding the IgniteUI.Blazor package:
 
-- [Getting Started](..\general-getting-started.md)
-- [Adding Nuget Package](..\general-nuget-feed.md)
+- [Getting Started](../../general-getting-started-blazor-client.md)
+- [Adding Nuget Package](../../general-nuget-feed.md)
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the tree grid:
 

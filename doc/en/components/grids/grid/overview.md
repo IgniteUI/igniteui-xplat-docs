@@ -2,7 +2,7 @@
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
-mentionedTypes: ['Grid']
+mentionedTypes: ['{ComponentApiMembers}']
 ---
 
 # {Platform} Grid Overview and Configuration
@@ -53,8 +53,8 @@ To get started with the {Platform} grid, first you need to install the Ignite UI
 
 Please refer to these topics on adding the IgniteUI.Blazor package:
 
-- [Getting Started](..\general-getting-started.md)
-- [Adding Nuget Package](..\general-nuget-feed.md)
+- [Getting Started](../../general-getting-started-blazor-client.md)
+- [Adding Nuget Package](../../general-nuget-feed.md)
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the grid:
 
@@ -137,7 +137,7 @@ Ignite UI for {Platform} includes a powerful bootstrap grid like flex-based layo
 
 Each operation for grid editing includes batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.
 
-Following this topic you will learn more about [cell template](grid.md#cell-template) and [cell editing template](grid.md#cell-editing-template) and editing.
+Following this topic you will learn more about [cell template](overview.md#cell-template) and [cell editing template](overview.md#cell-editing-template) and editing.
 
 ## Grid Column Configuration
 
@@ -579,7 +579,7 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `{GridName}` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -637,11 +637,8 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map } from 'rxjs/operators';
 ```
-<!-- end: Angular -->
 
 We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every {Platform} service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
-
-<!-- Angular -->
 
 **Note**: Before Angular 5 the `HttpClient` was located in `@angular/http` and was named `Http`.
 
@@ -763,7 +760,7 @@ and in the template of the component:
 
 ## Complex Data Binding
 
-The `Grid` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
+The `{GridName}` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
 
 Take a look at the following data model:
 ```typescript
@@ -813,7 +810,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- end: Angular -->
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{GridName}` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
 
@@ -1154,7 +1151,9 @@ And the result is:
 
 ## Keyboard Navigation
 
-The `Grid`'s keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+The `{GridName}`'s keyboard navigation provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+
+<!-- Angular -->
 
 Check out these resources for more information:
 
@@ -1163,9 +1162,15 @@ Check out these resources for more information:
  - [Hierarchical Grid Keyboard Navigation](../hierarchical-grid/keyboard-navigation.md)
  - [Blog post](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
+ <!-- end: Angular -->
+
+<!-- Angular -->
+
 ## State Persistence
 
 Achieving a state persistence framework is easier than ever by using the new built-in [GridState](state-persistence.md) directive.
+
+<!-- end: Angular -->
 
 ## Sizing
 
@@ -1176,7 +1181,7 @@ See the [Grid Sizing](sizing.md) topic.
 
 ## Performance (Experimental)
 
-The `Grid`'s design allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+The `{GridName}`'s design allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1205,8 +1210,9 @@ platformBrowserDynamic()
 | Row height is not affected by the height of cells that are not currently rendered in view. | Because of virtualization a column with a custom template (that changes the cell height) that is not in the view will not affect the row height. The row height will be affected only while the related column is scrolled in the view.
 
 ## API References
-* `Grid`
-* `Column`
+
+* `{GridName}`
+* `IgbColumn`
 * `GridRow`
 * `GridCell`
 
@@ -1226,7 +1232,7 @@ platformBrowserDynamic()
 
 ## Tutorial video
 
-Learn more about creating a {Platform} `Grid` in our short tutorial video:
+Learn more about creating a {Platform} `{GridName}` in our short tutorial video:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 

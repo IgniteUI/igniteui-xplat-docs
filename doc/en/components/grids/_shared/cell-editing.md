@@ -22,7 +22,7 @@ In addition, you can define your own custom templates for update-data actions an
 </code-view>
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
 
@@ -197,14 +197,14 @@ This code is used in the sample below which implements an [SelectComponent](../s
 <!-- end: Angular -->
 
 > [!NOTE]
-> Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the [transaction state](batch-editing.md) (if transactions are enabled).
+> Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
 
 > [!NOTE]
 > The cell template `Cell` controls how a column's cells are shown when outside of edit mode.
 > The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), [Combo](../combo.md), etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- Angular -->
 
@@ -446,7 +446,7 @@ In this example, we'll validate a cell based on the data entered in it by bindin
 event.cancel = true
 ```
 
-We'll also display a custom error message using [Toast](../notifications/toast.md).
+We'll also display a custom error message using [Toast](../../notifications/toast.md).
 
 The first thing we need to is bind to the grid's event:
 

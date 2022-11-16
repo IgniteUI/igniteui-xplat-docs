@@ -47,7 +47,7 @@ The column selection feature can be enabled through the `ColumnSelection` input,
 The default selection mode is `None`. If set to `Single` or `Multiple`, all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
 > [!NOTE]
-> [Multi-column Headers](multi-column-headers.md) don't reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
+> The [Multi Column Headers](multi-column-headers.md) feature does not reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
 
 <!-- ComponentStart: Grid -->
 

@@ -859,6 +859,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
+<!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
 * [Column Data Types](column-types.md#default-template)
@@ -876,6 +877,23 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Selection-based Aggregates](selection-based-aggregates.md)
 
 <!-- ComponentEnd: Grid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [Column Data Types](column-types.md#default-template)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+<!-- end: Blazor -->
 
 Our community is active and always welcoming to new ideas.
 
