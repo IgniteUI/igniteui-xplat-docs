@@ -301,10 +301,12 @@ yarn build-production --lang=kr --plat=Blazor
 Follow this section to update API mapping files in the `apiMap` folder:
 
 - open, get latest, and build Translator solution: <br>
-**$/NetAdvantage/DEV/XPlatform/2022.1/Source/Translator/Translator_NoRoslyn.sln**
+**$/NetAdvantage/DEV/XPlatform/LATEST_VERSION/Source/Translator/Translator_NoRoslyn.sln**
 
 - open, get latest, and build jQuery solution in `Debug` mode: <br>
-**$/NetAdvantage/DEV/XPlatform/2022.1/Source/jQuery/Infragistics.jQuery.sln**
+**$/NetAdvantage/DEV/XPlatform/LATEST_VERSION/Source/jQuery/Infragistics.jQuery.sln**
+
+where "LATEST_VERSION" is latest branch version, e.g. 2022.2
 
 - create a new branch from `vnext` branch
 
