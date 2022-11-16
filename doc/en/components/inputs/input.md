@@ -25,7 +25,7 @@ The {ProductName} Input is a component where the user can enter data.
 
 <!-- Blazor -->
 
-<code-view style="height: 120px"
+<code-view style="height: 225px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
            alt="{Platform} Input Example"
