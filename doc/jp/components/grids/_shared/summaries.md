@@ -48,6 +48,7 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -58,6 +59,7 @@ _language: ja
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid>
@@ -67,6 +69,19 @@ _language: ja
         <IgbColumn Field="Title" HasSummary="true"></IgbColumn>
 </IgbGrid>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px"  sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -93,6 +108,17 @@ _language: ja
 Add blazor snippet for hgrid
 ```
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-generate="false">
+    <igc-column field="Artist" has-sSummary='true'></igc-column>
+    <igc-column field="Photo">
+    </igc-column>
+    <igc-column field="Debut" has-summary='true'></igc-column>
+    <igc-column field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+</igc-hierarchical-grid>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -100,6 +126,7 @@ Add blazor snippet for hgrid
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -112,6 +139,36 @@ Add blazor snippet for hgrid
 <button (click)="enableSummary()">Enable Summary</button>
 <button (click)="disableSummary()">Disable Summary </button>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="false">
+    </igc-column>
+</{ComponentSelector}>
+<button id="enableBtn">Enable Summary</button>
+<button id="disableBtn">Disable Summary </button>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
+    var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
+
+    this._bind = () => {
+        grid.data = this.data;
+        enableBtn.addEventListener("click", this.enableSummary);
+        disableBtn.addEventListener("click", this.disableSummary);
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public enableSummary() {
@@ -211,6 +268,26 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
+
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    operate(data?: any[]): IgcSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'Test',
+            summaryResult: data.filter(rec => rec > 10 && rec < 30).length
+        });
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet
 ``` -->
@@ -241,6 +318,27 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+import { IgcRowIslandComponent, IgcHierarchicalGridComponent, IgcNumberSummaryOperand, IgcSummaryResult } from 'igniteui-webcomponents-grids';
+
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    public operate(data?: any[]): IgcSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'More than 5',
+            summaryResult: data.filter((rec) => rec > 5).length
+        });
+
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet for hgrid
 ``` -->
@@ -252,6 +350,14 @@ The method returns a list of `SummaryResult`. -->
 
 ```typescript
 interface IgxSummaryResult {
+    key: string;
+    label: string;
+    summaryResult: any;
+}
+```
+
+```typescript
+interface IgcSummaryResult {
     key: string;
     label: string;
     summaryResult: any;
@@ -270,6 +376,7 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
 
 <!-- ComponentStart: Grid, TreeGrid -->
 <!-- And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below. -->
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" width="200px"  [sortable]="true">
@@ -282,6 +389,34 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" dataType="'number'" has-summary="true" sortable="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        unitsInStock.summaries = this.mySummary;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 export class GridComponent implements OnInit {
@@ -316,6 +451,31 @@ Add blazor snippet
 </igx-hierarchical-grid>
 ```
 
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid id="hgrid" class="hgrid" auto-generate="false">
+    <igc-column field="Artist" has-summary='true'></igc-column>
+    <igc-column field="Photo">
+    </igc-column>
+    <igc-column field="Debut" has-summary='true'></igc-column>
+    <igc-column id="grammyNom" field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var hgrid = this.hgrid = document.getElementById('hgrid') as IgcHierarchicalGridComponent;
+    var grammyNom = this.grammyNom = document.getElementById('grammyNom') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grammyNom.summaries = this.mySummary;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
+
 ```typescript
 export class HGridSummarySampleComponent implements OnInit {
     mySummary = MySummary;
@@ -348,6 +508,19 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+    operate(columnData: any[], allGridData = [], fieldName?): IgcSummaryResult[] {
+        const result = super.operate(allData.map(r => r[fieldName]));
+        result.push({ key: 'test', label: 'Total Discontinued', summaryResult: allData.filter((rec) => rec.Discontinued).length });
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet for my summary
 ```-->
@@ -368,6 +541,28 @@ Add blazor snippet for my summary
         <span>{{ summaryResults[0].label }} - {{ summaryResults[0].summaryResult }}</span>
     </ng-template>
 </igx-column>
+```
+
+```html
+<igc-column id="column" has-summary="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryTemplate = this.summaryTemplate;
+    }
+    this._bind();
+}
+
+public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
+    return html`
+        <span> My custom summary template</span>
+        <span>${ ctx.label } - ${ ctx.summaryResult }</span>
+    `;
+}
 ```
 
 ```razor
@@ -413,8 +608,34 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 }
 ```
 
+```typescript
+public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
+    const result = summary.summaryResult;
+    if(summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
+        && result !== null && result !== undefined) {
+        const pipe = new DatePipe('en-US');
+        return pipe.transform(result,'MMM YYYY');
+    }
+    return result;
+}
+```
+
 ```html
 <igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
+```
+
+```html
+<igc-column id="column" [summaryFormatter]="dateSummaryFormat"></igx-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryFormatter = this.dateSummaryFormat;
+    }
+    this._bind();
+}
 ```
 
 <!-- TODO -- update blazor snippet when the sample is ready -->
@@ -659,5 +880,5 @@ $custom-theme: grid-summary-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

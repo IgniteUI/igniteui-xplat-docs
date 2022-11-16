@@ -25,6 +25,7 @@ _language: ja
 
 グリッドの `GroupingExpressions` プロパティに式の配列を割り当てることによって、グリッドの初期グループ化を定義することができます。
 
+<!-- Angular -->
 ```typescript
 public ngOnInit() {
     grid.groupingExpressions = [
@@ -33,6 +34,19 @@ public ngOnInit() {
     ];
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+connectedCallback() {
+    grid.groupingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Desc },
+        { fieldName: 'Released', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
 
 グループ式は、`ISortingExpression` インターフェイスを実装します。
 
@@ -49,8 +63,19 @@ public ngOnInit() {
 </-grid>
 ```
 
+<!-- Angular -->
 ```typescript
 public ngOnInit() {
+    grid.columns.forEach((column) => {
+        column.groupable = true;
+    });
+}
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+connectedCallback() {
     grid.columns.forEach((column) => {
         column.groupable = true;
     });
@@ -141,6 +166,12 @@ export interface IGroupByRecord {
 </ng-template>
 ```
 
+```ts
+public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
+    return html`<span>Total items with value: ${ ctx.value } are ${ ctx.records.length }</span>`;
+}
+```
+
 ### グループ行セレクター テンプレート
 
 上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。グリッド内にカスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
@@ -153,12 +184,28 @@ export interface IGroupByRecord {
 </ng-template>
 ```
 
+```ts
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
+    return html`
+        ${ ctx.selectedCount } / ${ ctx.totalCount  }
+    `;
+}
+```
+
 `GroupRow` プロパティは、グループ行への参照を返します。
 
 ```html
 <ng-template GroupByRowSelector let-groupByRowContext>
     <div (click)="handleGroupByRowSelectorClick($event, groupByRowContext.groupRow)">Handle groupRow</div>
 </ng-template>
+```
+
+```ts
+public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
+    return html`
+        <div onClick="${ handleGroupByRowSelectorClick($event, groupByRowContext.groupRow) }">Handle groupRow</div>
+    `;
+}
 ```
 
 `SelectedCount` と `TotalCount` プロパティを使用して、Group By 行セレクターをチェックするか不確定にする (部分的に選択する) かを決定できます。
@@ -493,5 +540,5 @@ $custom-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

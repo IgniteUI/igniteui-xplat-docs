@@ -24,15 +24,24 @@ Ignite UI for {Platform} `{ComponentName}` では、行ドラッグがルート 
 
 `{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [rowDraggable]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} RowDraggable="true">
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} row-draggable="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
 
@@ -67,6 +76,14 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 })
 ```
 
+```typescript
+import { IgcDragDropModule } from 'igniteui-webcomponents';
+...
+ModuleManager.register(
+    IgcDragDropModule
+);
+```
+
 次にテンプレートでディレクティブのセレクターを使ってドロップ エリアを定義します。
 
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
@@ -88,6 +105,29 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 <igx-grid #targetGrid igxDrop [data]="data2" [autoGenerate]="false" [emptyGridTemplate]="dragHereTemplate"
     (enter)="onEnterAllowed($event)" (leave)="onLeaveAllowed($event)" (dropped)="onDropAllowed($event)" [primaryKey]="'ID'">
 </igx-grid>
+```
+
+```html
+<igc-grid id="targetGrid" auto-generate="false" primary-key="ID">
+</igc-grid>
+```
+```ts
+constructor() {
+    var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        targetGrid.data = this.data;
+        targetGrid.emptyGridTemplate = this.dragHereTemplate;
+        targetGrid.enter = this.onEnterAllowed;
+        targetGrid.leave = this.onLeaveAllowed;
+        targetGrid.dropped = this.onDropAllowed;
+    }
+    this._bind();
+}
+
+public dragHereTemplate = (ctx: IgcGridEmptyTemplateContext) => {
+    return html`Drop a row to add it to the grid`;
+}
 ```
 
 グリッドは最初空のため、ユーザーにとってより意味のあるテンプレートを定義します。
@@ -188,6 +228,20 @@ export class {ComponentName}RowDragComponent {
 }
 ```
 
+```typescript
+export class {ComponentName}RowDragComponent {
+    constructor() {
+        var sourceGrid = this.sourceGrid = document.getElementById('sourceGrid') as IgcGridComponent;
+        var targetGrid = this.targetGrid = document.getElementById('targetGrid') as IgcGridComponent;
+    }
+
+    public onDropAllowed(args) {
+        this.targetGrid.addRow(args.dragData.data);
+        this.sourceGrid.deleteRow(args.dragData.key);
+    }
+}
+```
+
 次のように **ViewChild** デコレータを介して各グリッドへの参照を定義し、ドロップを次のように処理します。
 - 削除される行のデータを含む行を `TargetGrid` に追加します。
 - `SourceGrid` からドラッグした行を削除します
@@ -210,6 +264,21 @@ export class {ComponentName}RowDragComponent {
         </div>
     </ng-template>
 </{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.rowDragGhost = this.rowDragGhostTemplate;
+    }
+    this._bind();
+}
+
+public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
+    return html`<igc-icon fontSet="material">arrow_right_alt</igc-icon>`;
+}
 ```
 
 以下は、行ドラッグと複数選択を有効にした `{ComponentName}` で確認できる設定の結果です。以下のデモでは、現在ドラッグされている行の数を示します。
@@ -255,6 +324,21 @@ export class {ComponentName}RowDragComponent {
         <igx-icon>drag_handle</igx-icon>
     </ng-template>
 </{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.dragIndicatorIcon = this.dragIndicatorIconTemplate;
+    }
+    this._bind();
+}
+
+public dragIndicatorIconTemplate = (ctx: IgcDragIndicatorIconContext) => {
+    return html`<igc-icon>drag_handle</igc-icon>`;
+}
 ```
 
 新しいアイコン テンプレートの設定後、**DragIcon enum** の **DEFAULT** アイコンも調整する必要があるため、`ChangeIcon` メソッドによって適切に変更されます。
@@ -357,6 +441,22 @@ enum DragIcon {
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
 </igx-grid>
+```
+
+```html
+<igc-grid id="grid" row-draggable="true" primary-key="ID">
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.dropped = this.onDropAllowed;
+    }
+    this._bind();
+}
 ```
 
 ```html
@@ -593,11 +693,32 @@ export class HGridRowReorderComponent {
 </ng-template>
 ```
 
+```ts
+public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
+    return html`dropName`;
+}
+```
+
 次に、終了した行のインスタンスを返すメソッド[行の並べ替えデモ](#行の並べ替えデモ)で使用されているものと同様) を定義します。
 
 ```typescript
 class MyRowGhostComponent {
     private getRowDataAtPoint(rowList: IgxGridRowComponent[], cursorPosition: Point): any {
+        for (const row of rowList) {
+            const rowRect = row.nativeElement.getBoundingClientRect();
+            if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
+                cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
+                return this.data.find((r) => r.rowID === row.rowID);
+            }
+        }
+        return null;
+    }
+}
+```
+
+```typescript
+class MyRowGhostComponent {
+    private getRowDataAtPoint(rowList: IgcGridRowComponent[], cursorPosition: Point): any {
         for (const row of rowList) {
             const rowRect = row.nativeElement.getBoundingClientRect();
             if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
@@ -835,5 +956,5 @@ class MyGridScrollComponent {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -59,11 +59,32 @@ _language: ja
 
 単一行の選択は、`RowSelection` プロパティ を `Single` に設定することのみで簡単に設定できるようになりました。これにより、**グリッド内の 1 行のみを選択できます**。行のセルにフォーカスするときにセルをクリックするかスペース キーを押すと行を選択できます。もちろん、行セレクターフィールドをクリックして行を選択できます。行が選択または選択解除されると、`RowSelectionChanging` イベントが生成されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="remote | async" [rowSelection]="'single'" [autoGenerate]="true"
           (rowSelectionChanging)="handleRowSelection($event)" [allowFiltering]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" row-selection="Single" auto-generate="true"
+        allow-filtering="true">
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.rowSelectionChanging = this.handleRowSelection;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public handleRowSelection(args) {
@@ -100,11 +121,21 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 `{ComponentName}` で複数の項目を選択できるようにするには、`RowSelection` プロパティを `Multiple` に設定するだけです。これにより、各行および `{ComponentName}` ヘッダーで行セレクター フィールドが有効になります。行セレクターを使用して複数行を選択できます。選択はスクロール、ページング、およびソートとフィルター、などのデータ操作で保持されます。行を選択するには、セルをクリックするか、セルにフォーカスがあるときにスペース キーを押します。1 つの行を選択し、*Shift* キーを押しながら別の行をクリックすると、行の範囲全体が選択されます。この選択モードでは、単一の行をクリックすると、前に選択した行が選択解除されます。*Ctrl* キーを押しながらクリックすると、行が切り替わり、前の選択が保持されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="remote | async" [primaryKey]="'ProductID'" [rowSelection]="'multiple'"
         (rowSelectionChanging)="handleRowSelection($event)" [allowFiltering]="true" [autoGenerate]="true">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" row-selection="Multiple"
+        allow-filtering="true" auto-generate="true">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -129,6 +160,12 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 <igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" [autoGenerate]="true"
         [rowSelection]="'multipleCascade'" [allowFiltering]="true" (rowSelectionChanging)="handleRowSelection($event)">
 </igx-tree-grid>
+```
+
+```html
+<igc-tree-grid id="grid" primaryKey="ID" foreign-key="ParentID" auto-generate="true"
+        row-selection="MultipleCascade" allow-filtering="true">
+</igc-tree-grid>
 ```
 
 ```razor
@@ -170,6 +207,7 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 以下は、単一または複数の行を同時に選択できるコード例です (`PrimaryKey` を介して)。さらに、このメソッドの 2 番目のパラメーターは boolean プロパティです。それを使用して、前の行の選択をクリアするかどうかを選択できます。以前の選択はデフォルトで保存されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
 [primaryKey]="'ProductID'"
@@ -179,6 +217,7 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 <button (click)="grid.selectRows([1,2,5], true)">Select 1,2 and 5</button>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -193,12 +232,30 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
     <IgbButton onclick='grid.selectRows([1,2,5], true)'>Select</IgbButton>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid"
+primary-key="ProductID"
+row-selection="Multiple"
+auto-generate="true">
+</{ComponentSelector}>
+
+<button onClick="onClick">Select 1,2 and 5</button>
+```
+```ts
+public onClick() {
+    this.grid.selectRows([1,2,5], true);
+}
+```
+<!-- end: WebComponents -->
+
 1、2、および 5 の ID を持つデータ エントリに対応する行を `{ComponentName}` の選択に追加します。
 
 ### 行選択の解除
 
 プログラムで行を選択解除する必要がある場合は、`DeselectRows` メソッドを使用できます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid  [data]="remote | async"
 [primaryKey]="'ProductID'"
@@ -208,6 +265,7 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 <button (click)="grid.deselectRows([1,2,5], true)">Select 1,2 and 5</button>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"
@@ -221,6 +279,23 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
     </{ComponentSelector}>
     <IgbButton onclick='grid.deselectRows([1,2,5], true)'>Select</IgbButton>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid"
+primary-key="ProductID"
+row-selection="Multiple"
+auto-generate="true">
+</{ComponentSelector}>
+
+<button onClick="onClick">DeSelect</button>
+```
+```ts
+public onClick() {
+    this.grid.deselectRows([1,2,5], true);
+}
+```
+<!-- end: WebComponents -->
 
 ### 行選択イベント
 
@@ -238,9 +313,23 @@ igRegisterScript("rowSelectionChangingHandler", rowSelectionChangingHandler, fal
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} (rowSelectionChanging)="handleRowSelectionChange($event)">
 </{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.rowSelectionChanging = this.handleRowSelectionChange;
+    }
+    this._bind();
+}
 ```
 
 ```typescript
@@ -299,12 +388,26 @@ public getSelectedRows() {
 public mySelectedRows = [1, 2, 3]; // an array of row IDs
 ```
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} primaryKey="ProductID" rowSelection="multiple" [autoGenerate]="false" [selectedRows]="mySelectedRows" [data]="data">
     <igx-column [field]="'ProductID'"></igx-column>
     <igx-column [field]="'ProductName'"></igx-column>
     <igx-column [field]="'UnitsInStock'"></igx-column>
 </{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid.selectedRows = this.mySelectedRows;
+    }
+    this._bind();
+}
 ```
 
 ```razor
@@ -363,12 +466,30 @@ igRegisterScript("WebGridRowSelectorTemplate", (ctx) => {
     ></igx-checkbox>
 </ng-template>
 ```
+```ts
+public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
+    return html`
+        ${ctx.index }
+        <igc-checkbox
+            checked="${ctx.selected}"
+            readonly="true"
+        ></igc-checkbox>
+    `;
+}
+```
 
 `rowID` プロパティを使用して、`{ComponentSelector}` 行の参照を取得できます。行セレクター要素に `click` ハンドラーを実装する場合に便利です。
 ```html
 <ng-template igxRowSelector let-rowContext>
     <igx-checkbox (click)="onSelectorClick($event, rowContext.key)"></igx-checkbox>
 </ng-template>
+```
+```ts
+public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
+    return html`
+        <igc-checkbox click="${this.onSelectorClick($event, ctx.key)}"></igc-checkbox>
+    `;
+}
 ```
 上の例では、`igx-checkbox`  を使用しており、`rowContext.selected` をその `checked` プロパティにバインドしています。[行番号のデモ](#行の番号付けデモ)で実際にこれをご覧ください。
 
@@ -403,6 +524,13 @@ igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
     {{ headContext.selectedCount }} / {{ headContext.totalCount  }}
 </ng-template>
 ```
+```ts
+public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
+    return html`
+        ${ ctx.selectedCount } / ${ ctx.totalCount  }
+    `;
+}
+```
 
 `SelectedCount` および `TotalCount` プロパティを使用して、ヘッド セレクターをチェックするか、不確定にする（部分的に選択する）かを決定できます。
 
@@ -415,6 +543,26 @@ igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
         </igx-checkbox>
     </ng-template>
 </{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.headSelectorTemplate = this.headSelectorTemplate;
+    }
+    this._bind();
+}
+
+public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
+    return html`
+        <igc-checkbox
+            checked="${ ctx.selectedCount > 0 && ctx.selectedCount === ctx.totalCount}"
+            indeterminate="${ctx.selectedCount > 0 && ctx.selectedCount !== ctx.totalCount}">
+        </igc-checkbox>
+    `;
+}
 ```
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -492,5 +640,5 @@ igRegisterScript("WebGridHeaderRowSelectorTemplate", (ctx) => {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

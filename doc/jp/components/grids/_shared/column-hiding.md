@@ -28,6 +28,7 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
 
 `{ComponentName}` を作成してからデータをバインドします。列でフィルタリングとソートも有効にします。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
@@ -42,6 +43,7 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
     <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
@@ -57,6 +59,22 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
     <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
+    <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
+    <igc-column field="City" data-type="String" sortable="true"></igc-column>
+    <igc-column field="CompanyName" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Fax" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Address" data-type="String" sortable="true"></igc-column>
+    <igc-column field="PostalCode" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Country" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Phone" data-type="String" sortable="true"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## ツールバーの列非表示 UI
 
@@ -76,6 +94,7 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -90,10 +109,26 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
 </div>
 ```
 
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
+
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
 
 `Title` プロパティを使用して、ツールバーのドロップダウン ボタンに表示されるタイトルを設定します。
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -106,6 +141,7 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -119,6 +155,20 @@ Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI が
     </{ComponentSelector}>
 </div>
 ```
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -137,6 +187,16 @@ public ngAfterViewInit() {
     {
         HidingAction.ColumnsAreaMaxHeight = "200px";
     }
+}
+```
+
+```typescript
+constructor() {
+    var hidingAction = this.hidingAction = document.getElementById('hidingAction') as IgcGridToolbarHidingComponent;
+}
+
+connectedCallback() {
+    this.hidingAction.columnsAreaMaxHeight = "200px";
 }
 ```
 
@@ -276,6 +336,17 @@ export class AppModule {}
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- WebComponents -->
+```html
+<div class="gridContainer">
+    <{ComponentSelector}>
+        <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>        
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 列非表示 UI コンポーネントは以下のようになります。
 
@@ -492,5 +563,5 @@ $custom-button: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

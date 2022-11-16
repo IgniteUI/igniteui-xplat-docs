@@ -24,6 +24,7 @@ _language: ja
 
 組み込みの行ピン固定 UI は、`GridPinningActions` コンポーネントと `ActionStrip` コンポーネントを追加することで有効になります。アクション ストリップは、行にカーソルを合わせると自動的に表示され、表示されている行の状態に基づいてピン固定またはピン固定解除ボタンのアイコンが表示されます。ピン固定された行のコピーをビューにスクロールする追加のアクションがピン固定された行ごとに表示されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false">
     <igx-column *ngFor="let c of columns" [field]="c.field" [header]="c.field">
@@ -34,6 +35,7 @@ _language: ja
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"  
@@ -58,7 +60,18 @@ _language: ja
         </IgbActionStrip>
     </{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="false">
+    <igc-column field="field" header="field">
+    </igc-column>
+    <igc-action-strip #actionStrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## 行のピン固定 API
 
@@ -88,10 +101,30 @@ this.Grid.UnpinRow("ALFKI");
 
 行は、最後にピンされた行の下にピン固定されます。ピン固定行の順序を変更するには、`RowPinning` イベントでイベント引数の `InsertAtIndex` プロパティを適切な位置インデックスに変更します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="true" (rowPinning)="rowPinning($event)">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="true">
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.rowPinning = this.rowPinning;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public rowPinning(event) {
@@ -127,6 +160,15 @@ Bottom に設定すると、行がピン固定されていない行の後に、�
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
+    </igc-pinning-config rows="Bottom">
+    </igc-pinning-config>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
@@ -193,6 +235,40 @@ public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
     </igx-column>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key]="ID" auto-generate="false">
+    <igc-column id="column" width="70px">
+        <ng-template igxCell let-cell="cell" let-val>
+            <igx-icon class="pin-icon" (mousedown)="togglePinning(cell.row, $event)">
+                {{cell.row.pinned ? 'lock' : 'lock_open'}}
+            </igx-icon>
+        </ng-template>
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        column.bodyTemplate = this.cellPinCellTemplate;
+    }
+    this._bind();
+}
+
+public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+    <igc-icon class="pin-icon" mousedown="${this.togglePinning(ctx.cell.row, $event)}">
+        ${ctx.cell.row.pinned ? 'lock' : 'lock_open'}
+    </igc-icon>
+            `;
+}
+```
+<!-- end: WebComponents -->
 
 カスタムアイコンをクリックすると、関連する行のピン状態は、行の API メソッドを使用して変更できます。
 
@@ -400,5 +476,5 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

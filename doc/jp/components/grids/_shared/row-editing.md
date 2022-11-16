@@ -45,6 +45,7 @@ export class AppModule {}
 <!-- end: Angular -->
 
 次に `{ComponentName}` をバインドしたデータソースで定義し、`RowEditable` を true に設定してバインドします。
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" width="100%" height="500px" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" editable="false"></igx-column>
@@ -59,6 +60,40 @@ export class AppModule {}
     <igx-column field="Discontinued" header="Discontinued" [dataType]="'boolean'"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" width="100%" height="500px" row-editable="true">
+    <igc-column field="ProductID" header="Product ID" editable="false"></igc-column>
+    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
+    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" header="UnitsInStock" data-type="Number">
+        <ng-template igcCellEditor let-cell="cell">
+            <input name="units" [(ngModel)]="cell.value" style="color: black" />
+        </ng-template>
+    </igc-column>
+    <igc-column field="OrderDate" data-type="Date"></igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        unitsInStock.bodyTemplate = this.unitsInStockCellTemplate;
+    }
+    this._bind();
+}
+
+public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<input name="units" value="${ctx.cell.value}" style="color: black" />`;
+}
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
@@ -100,6 +135,7 @@ export class AppModule {}
 > [!NOTE]
 > 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
+<!-- Angular -->
 ```typescript
 import { Component, ViewChild } from '@{Platform}/core';
 import { data } from './data';
@@ -120,6 +156,7 @@ export class {ComponentName}RowEditSampleComponent {
     }
 }
 ```
+<!-- end: Angular -->
 
 
 > [!NOTE]
@@ -196,6 +233,12 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 }, false);
  ```
 
+ ```ts
+public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
+    return html`Changes: ${ctx.rowChangesCount}`;
+}
+```
+
 ### ボタンのカスタマイズ
 
 テンプレート化を使用した行編集オーバーレイのボタンのカスタマイズも可能です。
@@ -219,6 +262,15 @@ igRegisterScript("RowEditTextTemplate", (ctx) => {
 </div>`;
 }, false);
  ```
+
+ ```ts
+public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`
+        <button onClick="${this.endRowEdit(false)}">Cancel</button>
+	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+    `;
+}
+```
 
 <!-- Angular -->
 
@@ -383,5 +435,5 @@ $button-theme: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

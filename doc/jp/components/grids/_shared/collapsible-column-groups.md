@@ -89,6 +89,25 @@ Ignite UI for {Platform} については、[はじめに](../../general-getting-
  </IgbColumnGroup>
 ```
 
+```html
+<igc-column-group header="Customer Information" collapsible="true"> <!-- Initially the column groups will be expanded--->
+    <!--The column below will be visible when its parent is collapsed-->
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igc-column>
+    <!--The three columns below will be visible when its parent is expanded-->
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igc-column>
+    <igc-column field="FirstName" header="First Name" data-type="String" visible-when-collapsed="false">
+    </igc-column>
+    <igc-column field="LastName" header="Last Name" data-type="String" visible-when-collapsed="false">
+    </igc-column>
+    <igc-column-group header="Customer Address"> <!--This column visibility will not be changed based on parent expand/collapsed state-->
+        <igc-column field="Country" header="Country" data-type="String" sortable="true">
+        </igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true">
+        </igc-column>
+    </igc-column-group>
+</igc-column-group>
+```
+
 すべての子列に 3 つの状態があります。
 -	親の展開状態に関係なく、常に表示できます。
 -	親が縮小されているときに表示できます。
@@ -136,6 +155,35 @@ Ignite UI for {Platform} については、[はじめに](../../general-getting-
     };
 ```
 
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        info.collapsibleIndicatorTemplateRef = this.indTemplate;
+        address.collapsibleIndicatorTemplateRef = this.indTemplate;
+    }
+    this._bind();
+}
+
+public indTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
+    `;
+}
+```
+
 ### igxCollapsibleIndicator ディレクティブの使用
 
 この動作を実現する別の方法は、以下の例に示すように igxCollapsibleIndicator ディレクティブを使用することです。
@@ -152,6 +200,35 @@ Ignite UI for {Platform} については、[はじめに](../../general-getting-
         <igx-column field="City" header="City" [dataType]="'string'" [sortable]="true" [visibleWhenCollapsed]="false"></igx-column>
     </igx-column-group>
 </igx-column-group>
+```
+
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="string" visible-when-collapsed="true"></igx-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="string" visible-when-collapsed="false"></igx-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="string" sortable="true" visible-when-collapsed="true"></igx-column>
+        <igc-column field="City" header="City" data-type="string" sortable="true" visible-when-collapsed="false"></igx-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        info.collapsibleIndicatorTemplateRef = this.indTemplate;
+        address.collapsibleIndicatorTemplateRef = this.indTemplate;
+    }
+    this._bind();
+}
+
+public indTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
+    `;
+}
 ```
 <!-- end: Angular -->
 
@@ -179,5 +256,5 @@ Ignite UI for {Platform} については、[はじめに](../../general-getting-
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

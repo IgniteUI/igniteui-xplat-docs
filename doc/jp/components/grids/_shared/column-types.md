@@ -59,6 +59,33 @@ public formatOptions = this.options;
 }
 ```
 
+```html
+<igc-column id="column" data-type="Number">
+</igc-column>
+```
+
+```ts
+private _formatOptions: any | null = null;
+    public get formatOptions(): any {
+        if (this._formatOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "1.4-4";
+            this._formatOptions = columnPipeArgs;
+        }
+        return this._formatOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatOptions;
+    }
+    this._bind();
+}
+```
+
 ### DateTime、Date and Time (日付と時刻)
 
 日付部分の外観は、`Locale` の形式または `PipeArgs` 入力に基づいて設定されます (例: 日、月、年)。Pipe 引数はカスタム日付書式またはタイムゾーンを指定するために使用できます。
@@ -93,6 +120,35 @@ public formatOptions = this.options;
         /** A timezone offset (such as '+0430'), or a standard UTC/GMT or continental US timezone abbreviation. */
         Timezone = "GMT"
     };
+}
+```
+
+```html
+<igc-column id="column" data-type="Date">
+</igc-column>
+```
+
+```ts
+private _formatDateOptions: any | null = null;
+    public get formatDateOptions(): any {
+        if (this._formatDateOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "1.4-4";
+            columnPipeArgs.format: 'longDate';
+            columnPipeArgs.timezone: 'GMT';
+            this._formatDateOptions = columnPipeArgs;
+        }
+        return this._formatDateOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatDateOptions;
+    }
+    this._bind();
 }
 ```
 
@@ -174,6 +230,11 @@ public timeFormats = [
 <IgbColumn DataType="GridColumnDataType.Boolean"></IgbColumn>
 ```
 
+```html
+<igc-column data-type="Boolean">
+</igc-column>
+```
+
 <!-- Blazor -->
 
 ### 画像
@@ -244,6 +305,13 @@ import { LOCALE_ID } from '@angular/core';
 </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} locale="'fr-FR'">
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 `PipeArgs` 入力を使用することにより、エンドユーザーは**小数点**、*currencyCode* および *display* によって数値書式をカスタマイズできます。
 
 ```ts
@@ -272,6 +340,36 @@ public formatOptions = this.options;
         CurrencyCode = "USD",
         Display = "symbol-narrow"
     };
+}
+```
+
+```html
+<igc-column id="column" field="UnitsInStock"
+    data-type="Currency">
+</igc-column>
+```
+
+```ts
+private _formatOptions: any | null = null;
+    public get formatOptions(): any {
+        if (this._formatOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "3.4-4";
+            columnPipeArgs.currencyCode = "USD";
+            columnPipeArgs.display = "symbol-narrow";
+            this._formatOptions = columnPipeArgs;
+        }
+        return this._formatOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatOptions;
+    }
+    this._bind();
 }
 ```
 
@@ -333,6 +431,34 @@ public formatPercentOptions = this.options;
 }
 ```
 
+```html
+<igc-column id="column" field="UnitsInStock"
+    data-type="Percent">
+</igc-column>
+```
+
+```ts
+private _formatPercentOptions: any | null = null;
+    public get formatPercentOptions(): any {
+        if (this._formatPercentOptions == null)
+        {
+            var columnPipeArgs: any = {};
+            columnPipeArgs.digitsInfo = "2.2-3";
+            this._formatPercentOptions = columnPipeArgs;
+        }
+        return this._formatPercentOptions;
+    }
+
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.pipeArgs = this.formatPercentOptions;
+    }
+    this._bind();
+}
+```
+
 > 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
@@ -375,6 +501,51 @@ public init(column: IgxColumnComponent) {
 ```
 
 <!-- end: Angular -->
+
+```html
+<igc-grid id="grid1" auto-generate="false">
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" [pipeArgs]="formatOptions" editable="true">
+        <ng-template igxCellEditor let-value>
+            {{ value | currency:'USD':'symbol':'1.0-0'}}
+        </ng-template>
+    </igc-column>
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        unitsInStock.pipeArgs = this.formatOptions;
+        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
+
+    }
+    this._bind();
+}
+
+ // Through column formatter property
+public formatCurrency(value: number) {
+    return `Dollar sign ${value.toFixed(0)}`;
+}
+
+public init(column: IgcColumnComponent) {
+    switch (column.field) {
+        case 'UnitsInStock':
+            column.formatter = this.formatCurrency;
+            break;
+        default:
+            return;
+}
+
+public editCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`${ this.formatCurrency(ctx.cell.value)}`;
+}
+
+public formatCurrency(value: number) {
+
+}
+```
 
 <!-- ```razor
 TO DO!

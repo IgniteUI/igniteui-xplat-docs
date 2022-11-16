@@ -1174,7 +1174,7 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github](https://github.com/IgniteUI/igniteui-{Platform}/discussions) ページでお問い合わせください。
+> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen}/discussions) ページでお問い合わせください。
 
 >[!NOTE]
 > 有効にすると、`IgxGridComponent` に関連しない Angular アプリケーションの他の部分に影響します。
@@ -1234,9 +1234,11 @@ platformBrowserDynamic()
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
 * [列のデータ型](column-types.md#default-template)
+<!-- Angular -->
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+<!-- end: Angular -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
+* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
