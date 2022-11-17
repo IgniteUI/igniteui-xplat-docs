@@ -55,7 +55,7 @@
             { "name": "{GridSelector}",               "value": "igx-grid"},
             { "name": "{GridPackage}",                "value": "igniteui-angular-grids"},
             { "name": "{GridSample}",                 "value": "grids/grid"},
-            { "name": "{GridApiMembers}",             "value": "\"Grid\", \"GridCell\", \"GridRow\", \"Column\""},
+            { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
             { "name": "{TreeGridName}",               "value": "IgxTreeGrid"},
@@ -63,7 +63,7 @@
             { "name": "{TreeGridSelector}",           "value": "igx-tree-grid"},
             { "name": "{TreeGridPackage}",            "value": "igniteui-angular-grids"},
             { "name": "{TreeGridSample}",             "value": "grids/tree-grid"},
-            { "name": "{TreeGridApiMembers}",         "value": "\"TreeGrid\", \"GridCell\", \"TreeGridRow\", \"Column\""},
+            { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
             { "name": "{PivotGridName}",              "value": "IgxPivotGrid"},
@@ -71,7 +71,7 @@
             { "name": "{PivotGridSelector}",          "value": "igx-pivot-grid"},
             { "name": "{PivotGridPackage}",           "value": "igniteui-angular-grids"},
             { "name": "{PivotGridSample}",            "value": "grids/pivot-grid"},
-            { "name": "{PivotGridApiMembers}",        "value": "\"PivotGrid\""},
+            { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
             { "name": "{HierarchicalGridName}",       "value": "IgxHierarchicalGrid"},
@@ -79,7 +79,7 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igx-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-angular-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"HierarchicalGrid\", \"GridCell\", \"HierarchicalGridRow\", \"Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
 
         ],
         "samplesBrowsers" : {
@@ -153,7 +153,7 @@
             { "name": "{GridSelector}",               "value": "igr-grid"},
             { "name": "{GridPackage}",                "value": "igniteui-react-grids"},
             { "name": "{GridSample}",                 "value": "grids/grid"},
-            { "name": "{GridApiMembers}",             "value": "\"Grid\", \"GridCell\", \"GridRow\", \"Column\""},
+            { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
             { "name": "{TreeGridName}",               "value": "IgrTreeGrid"},
@@ -161,7 +161,7 @@
             { "name": "{TreeGridSelector}",           "value": "igr-tree-grid"},
             { "name": "{TreeGridPackage}",            "value": "igniteui-react-grids"},
             { "name": "{TreeGridSample}",             "value": "grids/tree-grid"},
-            { "name": "{TreeGridApiMembers}",         "value": "\"TreeGrid\", \"GridCell\", \"TreeGridRow\", \"Column\""},
+            { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
             { "name": "{PivotGridName}",              "value": "IgrPivotGrid"},
@@ -169,7 +169,7 @@
             { "name": "{PivotGridSelector}",          "value": "igr-pivot-grid"},
             { "name": "{PivotGridPackage}",           "value": "igniteui-react-grids"},
             { "name": "{PivotGridSample}",            "value": "grids/pivot-grid"},
-            { "name": "{PivotGridApiMembers}",        "value": "\"PivotGrid\""},
+            { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
             { "name": "{HierarchicalGridName}",       "value": "IgrHierarchicalGrid"},
@@ -177,7 +177,8 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igr-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-react-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"HierarchicalGrid\", \"GridCell\", \"HierarchicalGridRow\", \"Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -252,7 +253,7 @@
             { "name": "{GridSelector}",               "value": "igc-grid"},
             { "name": "{GridPackage}",                "value": "igniteui-webcomponents-grids"},
             { "name": "{GridSample}",                 "value": "grids/grid"},
-            { "name": "{GridApiMembers}",             "value": "\"Grid\", \"GridCell\", \"GridRow\", \"Column\""},
+            { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
             { "name": "{TreeGridName}",               "value": "IgcTreeGrid"},
@@ -260,7 +261,7 @@
             { "name": "{TreeGridSelector}",           "value": "igc-tree-grid"},
             { "name": "{TreeGridPackage}",            "value": "igniteui-webcomponents-grids"},
             { "name": "{TreeGridSample}",             "value": "grids/tree-grid"},
-            { "name": "{TreeGridApiMembers}",         "value": "\"TreeGrid\", \"GridCell\", \"TreeGridRow\", \"Column\""},
+            { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
             { "name": "{PivotGridName}",              "value": "IgcPivotGrid"},
@@ -268,7 +269,7 @@
             { "name": "{PivotGridSelector}",          "value": "igc-pivot-grid"},
             { "name": "{PivotGridPackage}",           "value": "igniteui-webcomponents-grids"},
             { "name": "{PivotGridSample}",            "value": "grids/pivot-grid"},
-            { "name": "{PivotGridApiMembers}",        "value": "\"PivotGrid\""},
+            { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
             { "name": "{HierarchicalGridName}",       "value": "IgcHierarchicalGrid"},
@@ -276,7 +277,8 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igc-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-webcomponents-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"HierarchicalGrid\", \"GridCell\", \"HierarchicalGridRow\", \"Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -391,7 +393,7 @@
             { "name": "{GridSelector}",               "value": "IgbGrid"},
             { "name": "{GridPackage}",                "value": "igniteui-blazor-grids"},
             { "name": "{GridSample}",                 "value": "grids/grid"},
-            { "name": "{GridApiMembers}",             "value": "\"Grid\", \"GridCell\", \"GridRow\", \"Column\""},
+            { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
             { "name": "{TreeGridName}",               "value": "TreeGrid"},
@@ -399,7 +401,7 @@
             { "name": "{TreeGridSelector}",           "value": "IgbTreeGrid"},
             { "name": "{TreeGridPackage}",            "value": "igniteui-blazor-grids"},
             { "name": "{TreeGridSample}",             "value": "grids/tree-grid"},
-            { "name": "{TreeGridApiMembers}",         "value": "\"TreeGrid\", \"GridCell\", \"TreeGridRow\", \"Column\""},
+            { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
             { "name": "{PivotGridName}",              "value": "PivotGrid"},
@@ -407,7 +409,7 @@
             { "name": "{PivotGridSelector}",          "value": "IgbPivotGrid"},
             { "name": "{PivotGridPackage}",           "value": "igniteui-blazor-grids"},
             { "name": "{PivotGridSample}",            "value": "grids/pivot-grid"},
-            { "name": "{PivotGridApiMembers}",        "value": "\"PivotGrid\""},
+            { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
             { "name": "{HierarchicalGridName}",       "value": "HierarchicalGrid"},
@@ -415,7 +417,8 @@
             { "name": "{HierarchicalGridSelector}",   "value": "IgbHierarchicalGrid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-blazor-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"HierarchicalGrid\", \"GridCell\", \"HierarchicalGridRow\", \"Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+
         ],
         "samplesBrowsers" : {
             "development": "https://localhost:44317/blazor-client",

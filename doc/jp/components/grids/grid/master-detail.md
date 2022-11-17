@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} マスターと詳細 Grid - インフラジスティックス
 _description: Ignite UI {Platform} Grid を使用して行データの展開可能な詳細ビュー テンプレートを定義します。マスターと詳細スタイル データを階層構造で表示する場合に便利です。
 _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, master detail, Infragistics, マスターと詳細, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 

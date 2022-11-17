@@ -2,7 +2,7 @@
 title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} Grid Group By

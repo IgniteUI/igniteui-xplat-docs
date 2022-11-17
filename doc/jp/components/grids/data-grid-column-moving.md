@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | 列移動 | インフラジスティックス
 _description: インフラジスティックスの {ProductName} データ グリッドは列の移動をサポートし、列の表示方法を柔軟に選択できます。詳細については、{ProductName} テーブル サンプルを参照してください。
 _keywords: {Platform} Table, Data Grid, column moving, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列移動, インフラジスティックス
-mentionedTypes: ['Grid', 'ColumnMovingMode', 'ColumnMovingAnimationMode']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnMovingMode', 'Infragistics.Controls.Grid.Implementation.ColumnMovingAnimationMode']
 namespace: Infragistics.Controls
 _language: ja
 ---

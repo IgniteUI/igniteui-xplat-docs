@@ -2,7 +2,7 @@
 title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 

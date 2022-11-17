@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | 行のピン固定 | インフラジスティックス
 _description: インフラジスティックスの {Platform} グリッド コンポーネントの行ピン固定機能を使用し、豊富で使いやすい API によって、行変更の順序をロックします。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のピン固定, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---

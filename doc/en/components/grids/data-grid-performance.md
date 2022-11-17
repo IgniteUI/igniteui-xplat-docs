@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Performance | Infragistics
 _description: Use the Infragistics' {Platform} table for high performance data scenarios. Scroll through an unlimited number of rows and columns with full virtualization. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, performance, {ProductName}, Infragistics, data binding
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

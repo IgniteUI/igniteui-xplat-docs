@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Localization | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid which supports localization. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

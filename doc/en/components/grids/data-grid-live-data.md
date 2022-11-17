@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Data Animation | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} table to handle thousands of updates per seconds while remaining responsive. View {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, live data updates, {ProductName}, Infragistics, data binding
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

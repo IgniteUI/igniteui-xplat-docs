@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | 比較表 | データ バインディング | インフラジスティックス
 _description: Infragistics のグリッド コンポーネントを使用して比較データにバインドします。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, column template, comparison data, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, 比較データ, データ バインディング, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---

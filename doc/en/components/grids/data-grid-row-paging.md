@@ -2,7 +2,7 @@
 title: {Platform} grid/table pagination – {ProductName} 
 _description: View Infragistics' {Platform} grid component's Pager, which was designed to take in an array of data and output portions of that data as a page.
 _keywords: {Platform} Table, Data Grid, row, paging, {ProductName}, Infragistics
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 
