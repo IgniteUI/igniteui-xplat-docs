@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Virtualization and Performance
 
-In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `igxForOf` directive and virtualizes its content both vertically and horizontally.
+In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `ForOf` directive and virtualizes its content both vertically and horizontally.
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
@@ -56,7 +56,7 @@ Without information about the sizes of the container and the items before render
 
 ## API References
 
-* `Grid`
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources

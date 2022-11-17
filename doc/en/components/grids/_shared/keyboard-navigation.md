@@ -319,12 +319,11 @@ Use the demo below to try out the custom scenarios that we just implemented:
 |--- |--- |
 | Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled.|
 
+<!-- Angular -->
+
 ## API References
 
 * [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-
-<!-- Angular -->
-
 * [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
