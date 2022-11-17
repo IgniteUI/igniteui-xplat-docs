@@ -12,6 +12,10 @@ variables:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 steps:
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '16.x'
 
 - script: echo '$(Build.BuildNumber)'
 
