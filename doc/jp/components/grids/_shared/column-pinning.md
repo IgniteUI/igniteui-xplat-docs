@@ -136,7 +136,17 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 両方のメソッドは操作に成功したかどうかを示すブール値を返します。よくある失敗の原因に列がすでにその状態になっていることがあります。
 
+<!-- Angular, React, WebComponents -->
+
 列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPin` イベントでイベント引数の `InsertAtIndex` プロパティを適切な位置インデックスに変更します。
+
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPinnedScript` イベントをサブスクライブし、イベント引数の `InsertAtIndex` プロパティを目的の位置インデックスに変更するための JavaScript 関数を提供します。
+
+<!-- end: Blazor -->
 
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
@@ -151,18 +161,21 @@ public columnPinning(event) {
 ```
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true ColumnPin="onColumnPin"/>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPinnedScript="onColumnPin"/>
 
-@code {
-    private void onColumnPin(IgbPinColumnCancellableEventArgs args)
-    {
-        if (args.Detail.Column.Field == "Name")
-        {
-            args.InsertAtIndex = 0;
-        }
+
+//In JavaScript
+function onColumnPinned(e) {
+    if (e.detail.column.field == "Country") {
+        e.detail.insertAtIndex = 0;
     }
 }
+
+igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
+
+
+
 
 ## ピン固定の位置
 

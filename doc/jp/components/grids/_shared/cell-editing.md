@@ -683,8 +683,9 @@ $custom-grid-theme: grid-theme(
 ## その他のリソース
 
 <!-- Angular -->
+
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
+
 * [{ComponentTitle} 概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -697,3 +698,22 @@ $custom-grid-theme: grid-theme(
 <!-- ComponentStart:  HierarchicalGrid -->
 * [検索](search.md)
 <!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+<!-- ComponentStart:  HierarchicalGrid -->
+* [検索](search.md)
+<!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Blazor -->

@@ -862,7 +862,7 @@ $custom-theme: grid-summary-theme(
 
 
 * [{ComponentTitle} 概要](overview.md)
-* [列のデータ型](column-types.md#default-template)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
