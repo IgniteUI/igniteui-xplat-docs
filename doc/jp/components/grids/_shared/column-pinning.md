@@ -144,7 +144,7 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 <!-- Blazor -->
 
-A column is pinned to the right of the rightmost pinned column. Changing the order of the pinned columns can be done by subscribing to the `ColumnPinnedScript` event and providing a JavaScript function for changing the `InsertAtIndex` property of the event arguments to the desired position index.
+列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPinnedScript` イベントをサブスクライブし、イベント引数の `InsertAtIndex` プロパティを目的の位置インデックスに変更するための JavaScript 関数を提供します。
 
 <!-- end: Blazor -->
 
