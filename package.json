@@ -61,7 +61,7 @@
     "gulp": "^4.0.2",
     "gulp-exec": "^4.0.0",
     "gulp-flatten": "^0.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-yaml": "^2.0.4",
     "igniteui-docfx-template": "3.3.2",
     "js-yaml": "^3.12.0",
