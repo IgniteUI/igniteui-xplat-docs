@@ -9,7 +9,12 @@ trigger:
 variables:
   BGNuget.IgniteUI: '\\igbgsofsmb2.infragistics.local\Builds\NuGet\IgniteUI'
 
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
 steps:
+
+- script: echo '$(Build.BuildNumber)'
+
 - task: DeleteFiles@1
   displayName: 'Delete files from $(Build.SourcesDirectory)'
   inputs:
