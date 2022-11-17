@@ -174,12 +174,11 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 ## その他のリソース
 
+<!-- Angular -->
 
 * [{ComponentTitle} 概要](overview.md)
-<!-- Angular -->
 * [CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
-* [列のデータ型](column-types.md#default-template)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -190,7 +189,26 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [選択](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-
 * [検索](search.md)
-
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+
+<!-- ComponentStart: HierarchicalGrid -->
+* [検索](search.md)
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Blazor -->

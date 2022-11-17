@@ -1597,9 +1597,14 @@
     "href": "inputs/checkbox.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React"],
     "name": "円形プログレス",
     "href": "inputs/circular-progress.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "リニア プログレス",
+    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],
@@ -1607,7 +1612,7 @@
     "href": "inputs/chip.md"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular", "React"],
     "name": "ドロップダウン",
     "href": "inputs/dropdown.md"
   },
@@ -1625,11 +1630,6 @@
     "exclude": ["Angular"],
     "name": "アイコン ボタン",
     "href": "inputs/icon-button.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "リニア プログレス",
-    "href": "inputs/linear-progress.md"
   },
   {
     "exclude": ["Angular"],

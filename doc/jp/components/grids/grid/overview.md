@@ -59,14 +59,15 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 また、グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
-```html
+```razor
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
 以下の名前空間を追加してコントロールの実装を開始できます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+
+```razor
 @using IgniteUI.Blazor.Controls
-</pre>
+```
 
 <!-- end: Blazor -->
 
@@ -78,7 +79,22 @@ npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 </pre>
+
+<!-- WebComponents -->
+
+You also need to include the following imports to include the grid and the necessary styles for the grid:
+
+```html
+import 'igniteui-webcomponents-grids/grids/combined';
+import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
+```
+
+<!-- end: WebComponents -->
+
 <!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, Blazor -->
 
 ### コンポーネント モジュール
 
@@ -87,18 +103,9 @@ npm install --save {PackageInputs}
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
-<!-- WebComponents -->
 
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcGridModule } from 'igniteui-webcomponents-grids';
-import { IgcGridComponent } from 'igniteui-webcomponents-core';
+<!-- end: Angular, React, Blazor -->
 
-ModuleManager.register(
-    IgcGridModule
-);
-```
-<!-- end: WebComponents -->
 
 ### 使用方法
 
@@ -107,9 +114,11 @@ ModuleManager.register(
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
 ```
+
 ```html
-<igc-grid id="grid1" [data]="localData" auto-generate="true"></igc-grid>
+<igc-grid id="grid1" auto-generate="true"></igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid1 = (document.getElementById("grid1") as IgcGridComponent);
@@ -1222,6 +1231,7 @@ platformBrowserDynamic()
 <!-- end: Angular -->
 
 ## その他のリソース
+<!-- Angular -->
 
 * [Grid サイズ変更](sizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -1233,10 +1243,26 @@ platformBrowserDynamic()
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-* [列のデータ型](column-types.md#default-template)
-<!-- Angular -->
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [Grid サイズ変更](sizing.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+
+<!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
