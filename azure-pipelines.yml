@@ -6,14 +6,6 @@ trigger:
 - vnext
 - master
 
-#Your build pipeline references a secret variable named ‘octoToken’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘BuildVersion’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘BuildVersion’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references a secret variable named ‘octoToken’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘BuildVersion’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘BuildVersion’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references an undefined variable named ‘BuildVersion’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
-#Your build pipeline references a secret variable named ‘octoToken’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
 variables:
   BGNuget.IgniteUI: '\\igbgsofsmb2.infragistics.local\Builds\NuGet\IgniteUI'
 
@@ -25,6 +17,17 @@ steps:
     Contents: |
      node_modules
      *.nupkg
+
+- task: RegexReplace@3
+  displayName: 'replace environment in doc/docfx'
+  inputs:
+    InputSearchPattern: |
+      doc\**\*.*
+      docfx\**\*.*
+    FindRegex: 'environment:dvDemosBaseUrl'
+    ReplaceRegex: 'environment:demosBaseUrl'
+    UseUTF8: true
+    UseRAW: true
 
 - task: Npm@1
   displayName: 'npm cache clean'
@@ -44,13 +47,20 @@ steps:
     customCommand: ci
 
 - task: Npm@1
-  displayName: 'npm build staging EN'
+  displayName: 'npm build WebComponents'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
-    customCommand: 'run build-staging -- --lang=en'
-  condition: ne(variables['Build.SourceBranchName'], 'master')
+    customCommand: 'run buildWebComponents'
+
+- task: Npm@1
+  displayName: 'npm build staging WebComponents EN'
+  inputs:
+    command: custom
+    workingDir: '$(Build.SourcesDirectory)'
+    verbose: false
+    customCommand: 'run build-staging -- --plat=WebComponents --lang=en'
 
 - task: DeleteFiles@1
   displayName: 'Delete files from $(Build.SourcesDirectory)\node_modules'
@@ -59,10 +69,10 @@ steps:
     Contents: '**'
 
 - task: NuGetCommand@2
-  displayName: 'NuGet pack Staging EN'
+  displayName: 'NuGet pack WebComponents Staging EN'
   inputs:
     command: pack
-    packagesToPack: '$(Build.SourcesDirectory)\IgniteUIDocFX.nuspec'
+    packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
     versioningScheme: byBuildNumber
     buildProperties: 'langFolder=en;lang=Staging'
   condition: ne(variables['Build.SourceBranchName'], 'master')
@@ -83,13 +93,12 @@ steps:
     customCommand: ci
 
 - task: Npm@1
-  displayName: 'npm build prod EN'
+  displayName: 'npm build production WebComponents EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
-    customCommand: 'run build-production -- --lang=en'
-  condition: eq(variables['Build.SourceBranchName'], 'master')
+    customCommand: 'run build-production -- --plat=WebComponents --lang=en'
 
 - task: DeleteFiles@1
   displayName: 'Delete files from $(Build.SourcesDirectory)\node_modules'
@@ -128,16 +137,19 @@ steps:
   workingDirectory: '$(Build.SourcesDirectory)'
   displayName: 'PowerShell Script'
 
-- script: '"$(OctoExe)" create-release --project=IgniteUIDocFXStaging --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXStaging:$(BuildVersion) --deployto=Staging --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
+- script: '"$(OctoExe)" create-release --project=WebComponentsDocFXStaging --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXStaging:$(BuildVersion) --deployto=Staging --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
   displayName: 'Deploy to Staging EN'
+  enabled: false
   condition: ne(variables['Build.SourceBranchName'], 'master')
 
-- script: '"$(OctoExe)" create-release --project=IgniteUIDocFXProduction --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXProduction:$(BuildVersion) --deployto=Production --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
+- script: '"$(OctoExe)" create-release --project=WebComponentsFXProduction --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXProduction:$(BuildVersion) --deployto=Production --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
   displayName: 'Deploy to Production EN'
+  enabled: false
   condition: and(eq(variables['Build.SourceBranchName'], 'master'), contains(variables['build.reason'], 'CI'))
 
 - task: PowerShell@2
   displayName: 'Retry the octopus deployment Production'
+  enabled: false
   inputs:
     targetType: filePath
     filePath: './"\\igbgsofsmb1\Departments\ES\Powershell Scripts\OctopusCheckRelease.ps1"'
