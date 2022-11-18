@@ -346,7 +346,7 @@ public onColumnInit(column: IgcColumnComponent) {
 
 ## Restoring Pivot Configuration
 
-`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
+`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `{ComponentName}` exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 

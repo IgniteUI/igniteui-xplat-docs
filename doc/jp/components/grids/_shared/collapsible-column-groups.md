@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の縮小可能な列グループ - インフラジスティックス
 _description: {Platform} {ComponentTitle} の縮小可能な列グループを使用して、より小さく簡潔なデータのセットを表示/非表示にする機能を利用します。今すぐお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja

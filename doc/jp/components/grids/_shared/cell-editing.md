@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} でのセル編集 - インフラジスティックス
 _description: {ComponentTitle} はセル内編集を使用しています。デフォルトのセル編集テンプレートがありますが、データ更新操作のカスタム テンプレートを定義することもできます。今すぐお試しください。
-_keywords: data manipulation, excel editing, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
+_keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -578,7 +578,7 @@ export class MyHGridEventsComponent {
 
 ## スタイル設定
 
-{ComponentName} で [Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
+`{ComponentName}` で [Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
 
 以下の手順では、編集モードでグリッドのセルのスタイルを設定する方法と、それらのスタイルの範囲を設定する方法について説明します。
 
@@ -607,7 +607,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### テーマの定義
 
-これで、パレットを使用してテーマを定義できます。セルは [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して {ComponentName} のテーマを生成できます。
+これで、パレットを使用してテーマを定義できます。セルは [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して `{ComponentName}` のテーマを生成できます。
 
 ```scss
 $custom-grid-theme: grid-theme(

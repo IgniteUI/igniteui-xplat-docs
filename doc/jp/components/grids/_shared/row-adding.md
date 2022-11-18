@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 行の追加 - インフラジスティックス
 _description: {Platform} を使用して、定義済みの行追加機能の使用およびカスタマイズする方法を学びます。直感的なグリッド行の追加と CRUD 機能を利用できます。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -233,7 +233,7 @@ this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid --> 
+<!-- ComponentStart: TreeGrid -->
 
 `BeginAddRowById` を使用するには、`RowID` (PK) によって操作のコンテキストとして使用する行を指定する必要があります。このメソッドは、エンドユーザーが指定された行の [行の追加] アクション ストリップ ボタンをクリックしたかのように機能し、その下に UI を生成します。2 番目のパラメーターは、行を子としてコンテキスト行に追加するか、兄弟として追加するかを制御します。最初のパラメーターに `null` を渡すことで、UI をグリッドの最初の行としてス生成させることもできます。
 

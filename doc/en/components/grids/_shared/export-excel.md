@@ -77,7 +77,7 @@ public exportButtonHandler() {
 }
 ```
 
-If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {ComponentName} component in MS Excel format.
+If all went well, you should see the {ComponentTitle} component and a button under it. When pressing the button, it will trigger the export process and the browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format.
 
 ## Export All Data
 
@@ -92,7 +92,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## Export Grouped Data
 
-To export grouped data you just need to group the {ComponentName} by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the {ComponentName} component in MS Excel format grouped by the selected column. Example:
+To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. Example:
 
 
 <code-view style="height: 800px;"
@@ -106,10 +106,10 @@ To export grouped data you just need to group the {ComponentName} by one or more
 
 ## Export Multi Column Headers Grid
 
-It is now possible to export {ComponentName} with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the {ComponentName}. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
+It is now possible to export `{ComponentName}` with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the `{ComponentName}`. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
 
 > [!NOTE]
-> The exported {ComponentName} will not be formatted as a table, since Excel tables do not support multiple row headers.
+> The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -147,7 +147,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-When you are exporting data from the {ComponentName} component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the {ComponentName}. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
+When you are exporting data from the `{ComponentName}` component, the export process takes in account features like row filtering and column hiding and exports only the data visible in the `{ComponentName}`. You can configure the exporter service to include filtered rows or hidden columns by setting properties on the `ExcelExporterOptions` object.
 ## Known Limitations
 
 <!-- ComponentStart: Grid -->

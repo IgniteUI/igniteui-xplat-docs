@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 行のピン固定 - インフラジスティックス
 _description: {Platform} の行ピン固定機能を使用して、豊富で使いやすい API で行をロックします。ユーザーが特定の順序で行をピン固定または特別な領域に複製することを許可します。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -386,7 +386,7 @@ public onDropAllowed(args) {
 
 ## スタイル設定
 
-{ComponentName} を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。{ComponentTitle} の [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、{ComponentTitle} のすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。{ComponentTitle} の [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、{ComponentTitle} のすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下では、{ComponentTitle} の行ピン固定スタイルをカスタマイズする手順を示します。
 

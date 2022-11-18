@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Paging - Infragistics
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview

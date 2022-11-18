@@ -1,7 +1,7 @@
 ---
 title: {Platform} Excel スタイルの {ComponentTitle} - インフラジスティックス
 _description: API を使用して最小限のコードで Excel からのデータ貼り付けや選択した {Platform} グリッド データを簡単にエクスポートできます。
-_keywords: export selected, igniteui for {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
+_keywords: export selected, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---

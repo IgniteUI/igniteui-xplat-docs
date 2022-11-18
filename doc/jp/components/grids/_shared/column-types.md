@@ -1,7 +1,7 @@
 ---
 title: {Platform} for {ProductName} 列のデータ タイプ
 _description: いくつかの定義済みの列データ型 - number、string、date、boolean、currency、percent 列 - から選択して {Platform} のセルおよび編集テンプレートを処理します。
-_keywords: Column Data Type, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
+_keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja

@@ -1,7 +1,7 @@
 ---
 title: Row Pinning in {Platform} {ComponentTitle} - Infragistics
 _description: Use the {Platform} Row pinning feature to lock rows with a rich and easy to use API. Let users pin rows in a particular order or duplicate them in a special area.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -385,7 +385,7 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 ## Styling
 
-The {ComponentName} allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
 
 Below, we are going through the steps of customizing the {ComponentTitle}'s row pinning styling.
 

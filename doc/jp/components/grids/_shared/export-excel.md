@@ -78,7 +78,7 @@ public exportButtonHandler() {
 }
 ```
 
-上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の {ComponentName}  コンポーネントのデータを含みます。
+上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の `{ComponentName}`  コンポーネントのデータを含みます。
 
 ## すべてのデータのエクスポート
 
@@ -93,7 +93,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## グループ化されたデータのエクスポート
 
-グループ化されたデータをエクスポートするには、{ComponentName} を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の {ComponentName} コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
+グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
 <code-view style="height: 800px;"
@@ -107,10 +107,10 @@ public exportButtonHandler() {
 
 ## 複数列ヘッダー グリッドのエクスポート
 
-定義された[複数列ヘッダー](multi-column-headers.md)を使用して {ComponentName} をエクスポートできるようになりました。すべてのヘッダーは、{ComponentName} に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
+定義された[複数列ヘッダー](multi-column-headers.md)を使用して `{ComponentName}` をエクスポートできるようになりました。すべてのヘッダーは、`{ComponentName}` に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
 
 > [!NOTE]
-> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた {ComponentName} はテーブルとしてフォーマットされません。
+> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -148,7 +148,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-{ComponentName} コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて {ComponentName} で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
+`{ComponentName}` コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて `{ComponentName}` で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
 
 ## 既知の問題と制限
 

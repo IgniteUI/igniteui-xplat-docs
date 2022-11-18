@@ -347,7 +347,7 @@ public onColumnInit(column: IgcColumnComponent) {
 
 ## ピボット構成の復元
 
-`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。{ComponentName} は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
+`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。`{ComponentName}` は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
 
 * `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 

@@ -1,7 +1,7 @@
 ---
 title: Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Start using angular filter to return specific data with {Platform} {ComponentTitle}. Check the advanced filtering options, including data-type Excel-style filtering.
-_keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -291,7 +291,7 @@ public ngAfterViewInit() {
 ```
 
 ```typescript
-constructor() { 
+constructor() {
     const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
     const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
     const productExpression = {
@@ -532,7 +532,7 @@ constructor() {
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
     <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
     <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
-</igc-hierarchical-grid> 
+</igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
@@ -830,7 +830,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- ComponentStart: Grid, TreeGrid -->
 
 ### Breaking Changes in 6.1.0
-* {ComponentName} `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
+* `{ComponentName}` `filteringExpressions` property is removed. Use `FilteringExpressionsTree` instead.
 * `filter_multiple` method is removed. Use `Filter` method and `FilteringExpressionsTree` property instead.
 * The `Filter` method has new signature. It now accepts the following parameters:
   * `Name` - the name of the column to be filtered.

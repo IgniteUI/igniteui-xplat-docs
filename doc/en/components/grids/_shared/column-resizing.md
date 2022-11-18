@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Column Resizing - {ProductName}
 _description: Start using {Platform} {ComponentTitle} Column Resizing in order to change the grid column width in an instant. {Platform} drag resizing has never been so easy. Try for free!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---

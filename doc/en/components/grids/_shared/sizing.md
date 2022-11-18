@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Sizing - {ProductName}
 _description: Understand how the {Platform} {ComponentTitle} sizing works and learn how to use the width and height in order to accommodate the different scenarios that users can have.
-_keywords: Sizing , {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Sizing , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -222,7 +222,7 @@ When columns have set `Width` in percentages, their size is calculated relativel
 
 ## {Platform} {ComponentTitle} Child Sizing
 
-Because the `{ComponentName}` usually contains children, they can also have their `Width` and `Height` specified, in order to accommodate different scenarios. Since the children are defined using `RowIsland` template, this means that all children in the same level and island will have the same `Width` and `Height` property applied to them. 
+Because the `{ComponentName}` usually contains children, they can also have their `Width` and `Height` specified, in order to accommodate different scenarios. Since the children are defined using `RowIsland` template, this means that all children in the same level and island will have the same `Width` and `Height` property applied to them.
 
 ### Width
 

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の列非表示 - インフラジスティックス
 _description: ユーザーが Ignite Material UI テーブルの UI で列の表示状態を変更できるようにする列非表示機能の使用方法。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -342,7 +342,7 @@ export class AppModule {}
 <div class="gridContainer">
     <{ComponentSelector}>
         <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>        
+        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
     </{ComponentSelector}>
 </div>
 ```

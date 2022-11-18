@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 列選択 - インフラジスティックス
 _description: {ProductName} {ComponentTitle} で列選択を構成する方法を説明します。これにより、グリッドのインタラクションがより簡単かつ高速になります。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス, 列選択
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列選択
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja

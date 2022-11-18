@@ -2,7 +2,7 @@
 title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
 _description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with Ignite UI for {Platform}.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Remote Data Operations

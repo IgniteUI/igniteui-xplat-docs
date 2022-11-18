@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} サイズ変更 - {ProductName}
 _description: {Platform} {ComponentTitle} のサイズ設定がどのように機能するかを理解し、ユーザーが遭遇するさまざまな状況に対応するために幅と高さを使用する方法を学びます。
-_keywords: sizing, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, サイズ設定, インフラジスティックス
+_keywords: sizing, {Platform}, {ComponentKeywords}, {ProductName}, サイズ設定, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -223,7 +223,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 子サイズの変更
 
-通常、`{ComponentName}` には子が含まれているため、さまざまなシナリオに対応するために、`Width` と `Height` を指定することもできます。子は `RowIsland` テンプレートを使用して定義されるため、これは、同じレベルおよびアイランドのすべての子に同じ `Width` と `Height` プロパティが適用されることを意味します。 
+通常、`{ComponentName}` には子が含まれているため、さまざまなシナリオに対応するために、`Width` と `Height` を指定することもできます。子は `RowIsland` テンプレートを使用して定義されるため、これは、同じレベルおよびアイランドのすべての子に同じ `Width` と `Height` プロパティが適用されることを意味します。
 
 ### 幅
 

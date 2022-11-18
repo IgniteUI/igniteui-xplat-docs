@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 検索フィルター - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
@@ -499,10 +499,10 @@ import {
 } from 'igniteui-webcomponents-inputs';
 
 ModuleManager.register(
-    IgcXInputGroupModule, 
-    IgcXIconModule, 
-    IgcXRippleModule, 
-    IgcXButtonModule, 
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
     IgcXChipsModule
 );
 ```
@@ -747,7 +747,7 @@ public showResults() {
             <span>Exact Match</span>
         </igc-chip>
     </igc-chips-area>
-</div>  
+</div>
 ```
 
 ```typescript

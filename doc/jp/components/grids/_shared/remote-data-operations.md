@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、Ignite UI for {Platform} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, ページング, リモート データ, インフラジスティックス
+_keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
 _language: ja
 ---
 
@@ -305,7 +305,7 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 - `Column`  - それぞれの列インスタンス。
 - `FilteringExpressionsTree` - フィルタリング式ツリー。各列に基づいて削減されます。
-- `Done` - 
+- `Done` -
 サーバーから取得されたときに、新しく生成された列値で呼び出されるコールバック。
 
 開発者は、`Column` と `FilteringExpressionsTree` 引数によって提供される情報に基づいて、必要な一意の列値を手動で生成し、`Done` コールバックを呼び出すことができます。

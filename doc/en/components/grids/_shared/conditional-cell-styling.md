@@ -303,7 +303,7 @@ The `{ComponentName}` component in {ProductName} provides two ways to **conditio
 - By setting the `Column` input `CellClasses` to an object literal containing key-value pairs. The key is the name of the CSS class, while the value is either a callback function that returns a boolean, or boolean value. The result is a convenient material styling of the cell.
 
 ### Using Cell Classes
-You can conditionally style the {ComponentName} cells by setting the `Column` `CellClasses` input and define custom rules.
+You can conditionally style the `{ComponentName}` cells by setting the `Column` `CellClasses` input and define custom rules.
 
 <!-- ComponentStart: Grid -->
 

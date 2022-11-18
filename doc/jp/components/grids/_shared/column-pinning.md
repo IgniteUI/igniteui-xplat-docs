@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 列のピン固定 - {ProductName}
 _description: アプリの開発時に {ProductName} のピン固定機能を使用して、豊富な API で簡単に列をロックまたは列の順序を変更できます。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -297,7 +297,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -382,7 +382,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -466,7 +466,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -503,7 +503,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## スタイル設定
 
-{ComponentName} を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。[テーマ]({environment:sassApiUrl}/index.html#function-grid-theme) は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。[テーマ]({environment:sassApiUrl}/index.html#function-grid-theme) は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下の手順では、グリッドのピン固定スタイルをカスタマイズする手順を実行しています。
 

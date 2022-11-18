@@ -1,7 +1,7 @@
 ---
 title: Column Hiding in {Platform} {ComponentTitle} - Infragistics
 _description: Learn how to use the Column Hiding feature that allows users to change the visible state of the columns directly through the UI of the Ignite Material UI table.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -342,7 +342,7 @@ We can easily prevent the user from being able to hide columns through the colum
 <div class="gridContainer">
     <{ComponentSelector}>
         <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
-        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>        
+        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
     </{ComponentSelector}>
 </div>
 ```

@@ -1,7 +1,7 @@
 ---
 title: Cell Editing in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentTitle} is using in-cell editing. It has a default cell editing template, but it also lets you define your own custom templates for update-data action. Try it now!
-_keywords: data manipulation, excel editing, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -577,7 +577,7 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 ## Styling
 
-The {ComponentName} allows for its cells to be styled through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
+The `{ComponentName}` allows for its cells to be styled through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
 
 In the below steps, we are going to go over how you can style the grid's cell in edit mode and how you can scope those styles.
 
@@ -606,7 +606,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### Defining Themes
 
-We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our {ComponentName}:
+We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our `{ComponentName}`:
 
 ```scss
 $custom-grid-theme: grid-theme(

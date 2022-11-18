@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Column Pinning - {ProductName}
 _description: Want to use the Pinning feature of the {ProductName} when you develop your next app? Easily lock column or change column order with rich API.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -296,7 +296,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -381,7 +381,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -465,7 +465,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -502,7 +502,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## Styling
 
-The {ComponentName} allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Pinning styling.
 

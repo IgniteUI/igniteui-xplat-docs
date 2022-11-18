@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} での一括編集とトランザクション - インフラジスティックス
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集と {Platform} CRUD を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
-_keywords: crud, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja

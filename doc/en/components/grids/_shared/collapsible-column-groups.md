@@ -1,7 +1,7 @@
 ---
 title: Collapsible Column Groups in {Platform} {ComponentTitle} - Infragistics
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---

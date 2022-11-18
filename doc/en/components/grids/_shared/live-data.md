@@ -1,7 +1,7 @@
 ---
 title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
 _description: Check out how the {ProductName} for {Platform} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
-_keywords: {Platform} {ComponentTitle}, {Platform} {ComponentName} updates, {Platform} live data, infragistics
+_keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
 ---
 

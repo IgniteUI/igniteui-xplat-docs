@@ -302,7 +302,7 @@ constructor() {
 - `Column` 入力 `CellClasses` をキーと値のペアを含むオブジェクト リテラルに設定します。キーは CSS クラスの名前です。値はブール値を返すコールバック関数またはブール値です。その結果、セルのマテリアル スタイル設定が簡単にできます。
 
 ### CellClasses の使用
-`Column` `CellClasses` 入力を設定してカスタム条件を定義することにより、{ComponentName} の条件付きセルのスタイルを設定できます。
+`Column` `CellClasses` 入力を設定してカスタム条件を定義することにより、`{ComponentName}` の条件付きセルのスタイルを設定できます。
 
 <!-- ComponentStart: Grid -->
 

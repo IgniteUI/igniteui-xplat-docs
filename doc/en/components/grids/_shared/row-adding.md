@@ -1,7 +1,7 @@
 ---
 title: Row Adding in {Platform} {ComponentTitle} - Infragistics
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -232,7 +232,7 @@ this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid --> 
+<!-- ComponentStart: TreeGrid -->
 
 Using `BeginAddRowById` requires you to specify the row to use as context for the operation by its `RowID` (PK). The method then functions as though the end-user clicked on the add row action strip button for the specified row, spawning the UI under it. The second parameter controls if the row is added as a child to the context row or as a sibling. You can also make the UI spawn as the very first row in the grid by passing `null` for the first parameter.
 
