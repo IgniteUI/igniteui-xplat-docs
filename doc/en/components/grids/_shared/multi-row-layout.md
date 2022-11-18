@@ -23,8 +23,8 @@ The declaration of Multi-row Layout is achieved through `ColumnLayout` component
 The `Column` component exposes four `Input` properties to determine the location and span of each cell:
 * `ColStart` - column index from which the field is starting. This property is **mandatory**.
 * `RowStart` - row index from which the field is starting. This property is **mandatory**.
-* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to `colStart + 1`.
-* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to `rowStart + 1`.
+* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to **colStart + 1**.
+* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to **rowStart + 1**.
 
 
 ```html
@@ -164,11 +164,11 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
 
 * Set number of rows for the whole configuration. All layouts must have the same amount of rows.
-* Add/Remove column layouts by clicking the `Add Layout` chip or reordering them by dragging a layout chip left/right.
+* Add/Remove column layouts by clicking the **Add Layout** chip or reordering them by dragging a layout chip left/right.
 * Set specific settings for each layout as number of columns and how wide they will be. The setting refer to the currently selected layout.
 * Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
 * Set columns in the preview by dragging a column chip in the place your will want it to be.
-* Add/Remove new columns by using the `Add Column` chip.
+* Add/Remove new columns by using the **Add Column** chip.
 
 * Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [NgForOf](https://angular.io/api/common/NgForOf) for example.
 

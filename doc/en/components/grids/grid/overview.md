@@ -183,7 +183,7 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 Each of the columns of the grid can be templated separately. The column expects `ng-template` Angular grid module directives.
 
-It also expose `additionalTemplateContext input` that can be used for custom properties and any type of data context that you want to pass to the column itself:
+It also expose `additionalTemplateContext` input that can be used for custom properties and any type of data context that you want to pass to the column itself:
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -517,7 +517,7 @@ The code above will make the **ProductName** column sortable and editable and wi
 
 There are optional parameters for formatting:
 
-- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to `'MMM d, y'`
+- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
 - `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
 - `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
 
@@ -788,7 +788,7 @@ That is all sorting and filtering operations work out of the box without any add
 configuration. Same goes for grouping and editing operations with or without transactions as well as the ability to template the cells of the bound column.
 
 >[!WARNING]
->The grids **do not** support this kind of binding for `primary key`, `foreign key` and `child key` properties where applicable.
+>The grids **do not** support this kind of binding for `PrimaryKey`, `ForeignKey` and `ChildKey` properties where applicable.
 
 <!-- NOTE this sample is differed -->
 

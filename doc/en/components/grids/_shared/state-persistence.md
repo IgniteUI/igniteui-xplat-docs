@@ -16,17 +16,17 @@ The `GridState` directive allows developers to easily save and restore the grid 
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **Advanced Filtering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **GroupBy**
+* **Columns**
     * **NEW**: Multi column headers are now supported out of the box
     * Columns order
     * Column properties defined by the `IColumnState` interface.

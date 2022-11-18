@@ -518,7 +518,7 @@ Columns expose the `CellStyles` property which allows conditional styling of the
 
 In the [sample above](#demo) we've created:
 - Two different styles that will be applied based on the column index.
-- You will also change the `text color` based on even/odd rows.
+- You will also change the **text color** based on even/odd rows.
 
 
 Let's define our styles:
@@ -712,7 +712,7 @@ Define a `popin` animanion:
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
-A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a `spread operator` ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
+A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a **spread operator** ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
 
 ```ts
 public backgroundClasses = {

@@ -17,17 +17,17 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **Advanced Filtering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **GroupBy**
+* **Columns**
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。

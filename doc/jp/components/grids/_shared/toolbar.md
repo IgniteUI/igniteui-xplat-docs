@@ -708,7 +708,7 @@ $dark-input-group-theme: input-group-theme(
 ```
 
 >[!NOTE]
->`$legacy-support` が `false (デフォルト)` に設定されている場合、css 変数 を以下のように含めます。
+>`$legacy-support` が `false(default)` に設定されている場合、css 変数 を以下のように含めます。
 
 ```scss
 :host {

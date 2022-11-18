@@ -186,7 +186,7 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 グリッドの各列は別のテンプレートを持つことができます。列に `ng-template` Angular グリッド モジュール ディレクティブが必要です。
 
-また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext 入力`も公開します。
+また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext` 入力 も公開します。
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -519,7 +519,7 @@ public initColumns(column: IgcGridColumn) {
 
 書式設定のためのオプションのパラメーターがあります:
 
-- `Format` - 表示される日付 / 時間部分を決定します。デフォルト `'mediumDate'` です (`'MMM d, y'`)。
+- `Format` - 表示される日付 / 時間部分を決定します。デフォルト `'mediumDate'` です (**'MMM d, y'**)。
 - `Timezone` - 日付のタイムゾーン オフセット。デフォルトでは、エンドユーザーのローカル システムのタイムゾーンを使用します。
 - `DigitsInfo` - 10 進表現オブジェクト。デフォルトの設定は `'1.0-3'` です。
 
@@ -791,7 +791,7 @@ interface AminoAcid {
 つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
 >[!WARNING]
->グリッドは、`primary key`、`foreign key`、および `child key` プロパティのこの種のバインディングをサポート**していません**。
+>グリッドは、`PrimaryKey`、`ForeignKey`、および `ChildKey` プロパティのこの種のバインディングをサポート**していません**。
 
 <!-- NOTE this sample is differed -->
 
