@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} State Persistence
 
-Тhe `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+The `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 
 ## Supported Features
 

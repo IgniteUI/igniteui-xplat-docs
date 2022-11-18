@@ -8,10 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Export to Excel Service
 
-
-<p class="highlight">
-  The Excel Exporter service can export data to excel from the {ComponentTitle}. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `ExcelExporterService`'s `Export` method and pass the {ComponentTitle} component as first argument to export grid easily.
-</p>
+The Excel Exporter service can export data to excel from the `{ComponentName}`. The data export functionality is encapsulated in the `ExcelExporterService` class and the data is exported in MS Excel table format. This format allows features like filtering, sorting, etc. To do this you need to invoke the `Export` method of `ExcelExporterService` and pass the {ComponentTitle} component as first argument to export grid easily.
 
 ## {Platform} Excel Exporter Example
 

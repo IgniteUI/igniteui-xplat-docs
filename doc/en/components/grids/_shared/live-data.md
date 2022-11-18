@@ -7,7 +7,7 @@ sharedComponents: ["Grid", "TreeGrid"]
 
 # {Platform} {ComponentTitle} Live Data Updates
 
-The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
+The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
 
 <!-- Angular -->
 ## {Platform} Live-data Update Example

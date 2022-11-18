@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Display Density
 
-The **{ComponentName}** design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
+The `{ComponentName}` design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
 
 ## {Platform} {ComponentTitle} Display Density Example
 
