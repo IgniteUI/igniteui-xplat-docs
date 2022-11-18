@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Cell Editing
 
-Ignite UI for {Platform} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+{ProductName} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
@@ -577,7 +577,7 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 ## Styling
 
-The `{ComponentName}` allows for its cells to be styled through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
+The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
 
 In the below steps, we are going to go over how you can style the grid's cell in edit mode and how you can scope those styles.
 
@@ -588,10 +588,10 @@ In order to use the [Ignite UI Theming Library](../themes/sass/component-themes.
 ```scss
 @use "igniteui-angular/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
-Now we can make use of all of the functions exposed by the Ignite UI for {Platform} theme engine.
+Now we can make use of all of the functions exposed by the {ProductName} theme engine.
 
 ### Defining a Palette
 

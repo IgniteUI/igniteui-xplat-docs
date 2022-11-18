@@ -13,7 +13,7 @@ _language: ja
 {ProductName} `{ComponentName}` は、`ColumnHidingDirective` のある `ColumnActionsComponent` を提供し、ユーザーが UI を介して、または {Platform} コンポーネントを使用して列の非表示を実行できるようにします。
 <!-- end: Angular -->
 
-Ignite UI for {Platform} `{ComponentName}` には組み込み列非表示 UI があり、これを `{ComponentName}` のツールバーから使用して列の表示状態を変更できます。更に別のコンポーネントとして列非表示 UI を定義してページの必要な場所に配置できます。
+{ProductName} `{ComponentName}` には組み込み列非表示 UI があり、これを `{ComponentName}` のツールバーから使用して列の表示状態を変更できます。更に別のコンポーネントとして列非表示 UI を定義してページの必要な場所に配置できます。
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
@@ -364,7 +364,7 @@ export class AppModule {}
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -510,7 +510,7 @@ $custom-button: button-theme(
 ## API リファレンス
 
 <!-- Angular -->
-このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の Ignite UI for {Platform} コンポーネントも使用しています。
+このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
 <!-- end: Angular -->
 
 <!-- Blazor -->
@@ -563,5 +563,5 @@ $custom-button: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

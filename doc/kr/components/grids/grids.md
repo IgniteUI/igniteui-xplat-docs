@@ -1016,7 +1016,7 @@ There are multiple options to get access to our award-winning support at Infragi
         <ul>
             <li>Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/{ProductSpinal}-help">Support</a> home page</li>
             <li>Read the {Platform} [Documentation](..\general-getting-started.md) and experiment with {Platform} Samples</li>
-            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite UI for {Platform}"> {Platform} Blogs</a> to stay up to date</li>
+            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/{ProductName}"> {Platform} Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity"> Support Case</a> after signing into your account</li>
             <li>Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
         </ul>
@@ -1067,7 +1067,7 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics {ProductName} Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">Ignite UI for {Platform} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
+        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">{ProductName} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
         </div>
     </div>
     <div class="faqs-accordion-content">
@@ -1114,7 +1114,7 @@ If you are developing applications on multiple platforms, consider our complete 
         <div class="faqs-accordion h4">Can I purchase the Infragistics {ProductName} Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">Ignite UI for {Platform} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
+        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">{ProductName} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, React, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
         </div>
     </div>
     <div class="faqs-accordion-content">

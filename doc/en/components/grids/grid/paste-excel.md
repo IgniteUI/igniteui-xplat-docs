@@ -7,7 +7,7 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 
 # {Platform} Grid Paste from Excel
 
-The Ignite UI for {Platform} `Grid` can read Excel data that is copied to the clipboard. In this section we will show you how to do this with some custom code.
+The {ProductName} `Grid` can read Excel data that is copied to the clipboard. In this section we will show you how to do this with some custom code.
 
 ## {Platform} Paste from Excel Example
 
@@ -230,5 +230,5 @@ export class PasteHandler {
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

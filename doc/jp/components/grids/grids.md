@@ -1016,7 +1016,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/{ProductSpinal}-help">{Platform} サポート ホーム ページ</a>をご覧ください。</li>
             <li>{Platform} [ドキュメント](..\general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite UI for {Platform}">{Platform} ブログをご覧ください。</a> </li>
+            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/{ProductName}">{Platform} ブログをご覧ください。</a> </li>
             <li>アカウントにサインインした後、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity">サポート ケースを送信します。</a> </li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションをお試しください。</a></li>
         </ul>

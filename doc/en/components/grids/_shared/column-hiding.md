@@ -12,7 +12,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 {ProductName} `{ComponentName}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
 <!-- end: Angular -->
 
-The Ignite UI for {Platform} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
+The {ProductName} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
@@ -364,7 +364,7 @@ To get started with styling the column actions component, we need to import the 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -510,7 +510,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 <!-- Angular -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional {ProductName} component - the [**IgxRadio**](../radio-button.md) button.
 <!-- end: Angular -->
 
 <!-- Blazor -->
@@ -563,5 +563,5 @@ Styles:
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

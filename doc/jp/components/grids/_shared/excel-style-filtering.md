@@ -336,7 +336,7 @@ Add razor snipets
 ``` -->
 
 ```html
-<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" 
+<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true"
     primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
 
     <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
@@ -969,5 +969,5 @@ $custom-drop-down: drop-down-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

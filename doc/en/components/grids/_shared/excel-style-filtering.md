@@ -335,7 +335,7 @@ Add razor snipets
 ``` -->
 
 ```html
-<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" 
+<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true"
     primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
 
     <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
@@ -968,5 +968,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

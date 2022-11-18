@@ -43,11 +43,11 @@ In this grid example, you can see how users can do both basic and excel-style fi
 
 
 
-## Getting Started with Ignite UI for {Platform} Grid
+## Getting Started with {ProductName} Grid
 
 ### Dependencies
 
-To get started with the {Platform} grid, first you need to install the Ignite UI for {Platform} package.
+To get started with the {Platform} grid, first you need to install the {ProductName} package.
 
 <!-- Blazor -->
 
@@ -131,7 +131,7 @@ The `AutoGenerate` property tells the grid to auto generate the grid's `Column` 
 
 ## Bootstrap Grid Definition
 
-Ignite UI for {Platform} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The Ignite UI for {Platform} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The Ignite UI for {Platform} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
+{ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
 
 ## Editable Grid
 
@@ -1275,5 +1275,5 @@ Learn more about creating a {Platform} `{GridName}` in our short tutorial video:
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

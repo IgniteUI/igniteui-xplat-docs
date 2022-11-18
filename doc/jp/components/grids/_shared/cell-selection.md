@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} セルの選択
 
-選択機能により、Ignite UI for {Platform} `{ComponentName}` で豊富なデータ選択機能が有効になります。強力な API と使いやすいメソッドのおかげで、さまざまなイベントと単一の選択アクションを利用できます。`{ComponentName}` は、セル選択の 3 つのモードをサポートしています。`CellSelection` プロパティを変更することで、それらを簡単に切り替えることができます。セルの選択を無効にするか、グリッド内の 1 つのセルのみを選択するか、グリッド内の複数のセルを選択することができます。これはデフォルトのオプションとして提供されています。
+選択機能により、{ProductName} `{ComponentName}` で豊富なデータ選択機能が有効になります。強力な API と使いやすいメソッドのおかげで、さまざまなイベントと単一の選択アクションを利用できます。`{ComponentName}` は、セル選択の 3 つのモードをサポートしています。`CellSelection` プロパティを変更することで、それらを簡単に切り替えることができます。セルの選択を無効にするか、グリッド内の 1 つのセルのみを選択するか、グリッド内の複数のセルを選択することができます。これはデフォルトのオプションとして提供されています。
 
 <!-- ComponentStart: HierarchicalGrid -->
 `{ComponentName}` では、グリッド レベルでセル選択モードを指定できます。たとえば、親グリッドではマルチセル選択を有効にできますが、子グリッドではセル選択モードを単一または無効にすることができます。
@@ -274,5 +274,5 @@ $custom-grid-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

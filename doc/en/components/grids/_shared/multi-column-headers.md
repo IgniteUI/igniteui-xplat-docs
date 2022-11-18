@@ -1,6 +1,6 @@
 ---
 title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
-_description: Start grouping column headers by placing them under a common hierarchical header with the help of Ignite UI for {Platform} grid and combine them into multi headers.
+_description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
@@ -615,5 +615,5 @@ import 'core-js/es7/array';
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

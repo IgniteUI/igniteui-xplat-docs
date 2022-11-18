@@ -201,7 +201,7 @@ The toolbar is great at separating logic/interactions which affects the grid as 
 
 As shown above, it can be configured to provide default components for controlling, column hiding, column pinning, advanced filtering and exporting data from the grid.
 
-These features can be enabled independently from each other by following a pattern similar to the card component of the Ignite UI for {Platform} suite.
+These features can be enabled independently from each other by following a pattern similar to the card component of the {ProductName} suite.
 
 Listed below are the main features of the toolbar with example code for each of them.
 

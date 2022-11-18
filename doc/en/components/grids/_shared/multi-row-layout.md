@@ -1,6 +1,6 @@
 ---
 title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
-_description: Position and size columns in a more powerful way, using the multi-row layout functionality in the Ignite UI for {Platform} Data Grid. Check out examples and demos!
+_description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
@@ -193,7 +193,7 @@ By default we have set the same columns as our previous sample, but it can be cl
 
 ## Styling
 
-The `{ComponentName}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
 
@@ -344,5 +344,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

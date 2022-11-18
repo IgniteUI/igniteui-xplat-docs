@@ -20,7 +20,7 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## Setup
 
-To get started with the `{ComponentName}` and the **Collapsible multi-column headers** feature, first you need to install Ignite UI for {Platform} by typing the following command:
+To get started with the `{ComponentName}` and the **Collapsible multi-column headers** feature, first you need to install {ProductName} by typing the following command:
 
 <!-- Angular -->
 ```cmd
@@ -40,7 +40,7 @@ npm install @webcomponents/custom-elements
 ```
 <!-- end: WebComponents -->
 
-For a complete introduction to the Ignite UI for {Platform}, read the [getting started](../..\general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [getting started](../..\general-getting-started.md) topic.
 
 Also, we strongly suggest that you take a brief look at [multi-column headers](multi-column-headers.md) topic, to see more detailed information on how to setup the column groups in your grid.
 
@@ -255,5 +255,5 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

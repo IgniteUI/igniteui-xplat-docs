@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジスティックス
-_description: Ignite UI for {Platform} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
+_description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
 _language: ja
@@ -344,5 +344,5 @@ $my-custom-schema: extend($light-schema, (
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

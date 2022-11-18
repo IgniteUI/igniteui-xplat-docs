@@ -835,7 +835,7 @@ public findNext(e) {
 
 ## API References
 
-In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
+In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional {ProductName} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
 -   `FindNext`

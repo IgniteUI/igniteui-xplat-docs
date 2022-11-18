@@ -13,7 +13,7 @@ _language: ja
 
 ## {ComponentTitle} 条件付き行のスタイル設定
 
-Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、カスタム ルールに基づいて**行の条件付きスタイル設定**を作成する次の 2 つの方法を提供します:
+{ProductName} の `{ComponentName}` コンポーネントは、カスタム ルールに基づいて**行の条件付きスタイル設定**を作成する次の 2 つの方法を提供します:
 
 - `{ComponentName}` コンポーネントで `RowClasses` 入力を設定する方法。
 - `{ComponentName}` コンポーネントで `RowStyles` 入力を設定する方法。
@@ -787,5 +787,5 @@ constructor() {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -1,5 +1,5 @@
 ---
-title: {Platform} Grid Selection-Based Data Aggregation- Ignite UI for {Platform}
+title: {Platform} Grid Selection-Based Data Aggregation- {ProductName}
 _description: Learn how to aggregate selected data in a grid with Ignite UI. Get instant content aggregations in the virtualized data and rich API for your next project.
 _keywords: Data aggregation, selection, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics {Platform}, infragistics
 mentionedTypes: ['Infragistics.Controls.Grid']
@@ -71,5 +71,5 @@ Change the selection to see summaries of the currently selected range.
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

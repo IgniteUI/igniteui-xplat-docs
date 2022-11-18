@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} Cell Selection
 
-The selection feature enables rich data select capabilities in the Ignite UI for {Platform} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
+The selection feature enables rich data select capabilities in the {ProductName} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
 
 <!-- ComponentStart: HierarchicalGrid -->
 In the `{ComponentName}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
@@ -273,5 +273,5 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

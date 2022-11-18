@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} のリモート データ操作 - インフラジスティックス
-_description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、Ignite UI for {Platform} のサーバーからデータをロードします。
+_description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
 _language: ja
@@ -8,7 +8,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} のリモート データ操作
 
-Ignite UI for {Platform} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
+{ProductName} `{ComponentName}` は、リモート仮想化、リモート ソート、リモート フィルタリングなどのリモート データ操作をサポートします。これにより、開発者はこれらのタスクをサーバー上で実行し、生成されたデータを取得して `{ComponentName}` に表示できます。
 
 ## {Platform} {ComponentTitle} リモート データ操作概要の例
 
@@ -971,5 +971,5 @@ BLAZOR CODE SNIPPET HERE
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

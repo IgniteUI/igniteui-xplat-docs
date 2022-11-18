@@ -12,7 +12,7 @@ If you need to provide any custom styling in the `{ComponentName}` component, yo
 
 ## {ComponentTitle} Conditional Row Styling
 
-The `{ComponentName}` component in Ignite UI for {Platform} provides two ways to **conditional styling of rows** based on custom rules.
+The `{ComponentName}` component in {ProductName} provides two ways to **conditional styling of rows** based on custom rules.
 
 - By setting `RowClasses` input on the `{ComponentName}` component;
 - By setting `RowStyles` input on the `{ComponentName}` component;
@@ -787,5 +787,5 @@ constructor() {
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

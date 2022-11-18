@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} セル編集
 
-Ignite UI for {Platform} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
+{ProductName} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
 
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
@@ -578,7 +578,7 @@ export class MyHGridEventsComponent {
 
 ## スタイル設定
 
-`{ComponentName}` で [Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
+`{ComponentName}` で [{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
 
 以下の手順では、編集モードでグリッドのセルのスタイルを設定する方法と、それらのスタイルの範囲を設定する方法について説明します。
 
@@ -589,10 +589,10 @@ export class MyHGridEventsComponent {
 ```scss
 @use "igniteui-angular/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
-以上で Ignite UI for {Platform} テーマ エンジンによって公開されているすべての機能を使用できます。
+以上で {ProductName} テーマ エンジンによって公開されているすべての機能を使用できます。
 
 ### パレットの定義
 

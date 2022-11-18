@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} ツリー グリッドの例
 
-この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、スパークライン コンポーネントを使用したセル テンプレートが含まれています。 
+この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、スパークライン コンポーネントを使用したセル テンプレートが含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,11 +22,11 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## Ignite UI for {Platform} Tree Grid で作業を開始
+## {ProductName} Tree Grid で作業を開始
 
 ### 依存関係
 
-{Platform} ツリー グリッドを初期化するには、Ignite UI for {Platform} パッケージをインストールする必要があります。
+{Platform} ツリー グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 

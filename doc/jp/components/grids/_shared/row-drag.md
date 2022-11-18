@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行ドラッグ
 
-Ignite UI for {Platform} `{ComponentName}` では、行ドラッグがルート `{ComponentSelector}` コンポーネントで初期化されて、`RowDraggable` 入力で設定できます。行ドラッグを有効にすると、ユーザーは行ドラッグ ハンドルを使用して行のドラッグを開始できます。
+{ProductName} `{ComponentName}` では、行ドラッグがルート `{ComponentSelector}` コンポーネントで初期化されて、`RowDraggable` 入力で設定できます。行ドラッグを有効にすると、ユーザーは行ドラッグ ハンドルを使用して行のドラッグを開始できます。
 
 ## {Platform} {ComponentTitle} 行ドラッグの例
 
@@ -956,5 +956,5 @@ class MyGridScrollComponent {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

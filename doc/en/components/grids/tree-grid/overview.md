@@ -11,7 +11,7 @@ mentionedTypes: ['TreeGrid']
 
 ## {Platform} Tree Grid Example
 
-In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component.  
+In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -21,11 +21,11 @@ In this example, you can see how users can manipulate hierarchical or flat data.
 
 <div class="divider--half"></div>
 
-## Getting Started with Ignite UI for {Platform} Tree Grid
+## Getting Started with {ProductName} Tree Grid
 
 ### Dependencies
 
-To get started with the {Platform} tree grid, first you need to install the Ignite UI for {Platform} package.
+To get started with the {Platform} tree grid, first you need to install the {ProductName} package.
 
 <!-- Blazor -->
 

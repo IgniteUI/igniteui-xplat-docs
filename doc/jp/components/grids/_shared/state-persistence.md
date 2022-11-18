@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} 状態保持 - {ProductName}
-_description: 包括的な Ignite UI for {Platform} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
+_description: 包括的な {ProductName} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の永続化, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]

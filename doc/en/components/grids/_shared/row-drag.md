@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # Row Dragging in {Platform} {ComponentTitle}
 
-In Ignite UI for {Platform} `{ComponentName}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
+In {ProductName} `{ComponentName}`, row dragging is initialized on the root `{ComponentSelector}` component and is configurable via the `RowDraggable` input. Enabling row dragging provides users with a row drag-handle with which they can initiate dragging of a row.
 
 ## {Platform} {ComponentTitle} Row Drag Example
 
@@ -955,5 +955,5 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -355,7 +355,7 @@ class WeekSortingStrategy extends BaseSortingStrategy {
 <!-- Angular -->
 ## スタイル設定
 
-[Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。theme は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下の手順では、グリッドの Group By スタイルをカスタマイズする手順を実行しています。
 
@@ -366,7 +366,7 @@ class WeekSortingStrategy extends BaseSortingStrategy {
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -540,5 +540,5 @@ $custom-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

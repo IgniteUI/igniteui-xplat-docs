@@ -353,7 +353,7 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 <!-- Angular -->
 ## Styling
 
-The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The Grid allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Group By styling.
 
@@ -364,7 +364,7 @@ To begin the customization of the Group By feature, you need to import the `inde
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -538,5 +538,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

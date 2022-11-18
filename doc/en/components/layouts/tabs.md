@@ -186,5 +186,5 @@ Additional components and/or directives that were used:
 
 ## Additional Resources
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} Examples on **GitHub**](https://github.com/IgniteUI/igniteui-{Platform}-examples)
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} Examples on **GitHub**](https://github.com/IgniteUI/igniteui-{Platform}-examples)

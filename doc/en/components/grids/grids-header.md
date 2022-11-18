@@ -1,7 +1,7 @@
 ---
 title: {Platform} Grids & Tables | Fastest {Platform} UI Grid | Infragistics
-_description: Looking for fast {Platform} grids and tables? Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
-_keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics  
+_description: Looking for fast {Platform} grids and tables? {ProductName} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
+_keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics
 mentionedTypes: ["Grid"]
 
 ---
@@ -200,7 +200,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 # The Fastest {Platform} Grid
 
 
-Ignite UI for {Platform} provides a complete library of {Platform}-native, Material-based UI components, including the world’s fastest virtualized {Platform} data grid.
+{ProductName} provides a complete library of {Platform}-native, Material-based UI components, including the world’s fastest virtualized {Platform} data grid.
 
 
 ## {Platform} Grid Example
@@ -230,7 +230,7 @@ The {Platform} data grid is a component used to display tabular data in a series
 
 <div class="divider--half"></div>
 
-The Ignite UI for {Platform} Data Grid is not just for high-volume and real-time data. It is a feature-rich {Platform} grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
+The {ProductName} Data Grid is not just for high-volume and real-time data. It is a feature-rich {Platform} grid that gives you capabilities that you would never be able to accomplish with so little code on your own.
 
 Here are a few of the data grid’s key features:
 
@@ -317,7 +317,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon representation for ARIA support" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-aria-support-1100.jpg?v=201808021304" alt="Icon representation for ARIA support on the Angular Data Grid Component"></div>
     <div class="feature__details">
         <span class="h3 features__heading">{Platform} Grid Accessibility & ARIA Support<a class="anchorjs-link" href="#angular-grid-accessibility--aria-support" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>Each of our {Platform} components in Ignite UI for {Platform} has been implemented according to the latest accessibility guidelines and specifications. Our {Platform} components have been tested using OS or Browser provided accessibility technology – screen readers. Our team ensures not only that the guidelines are implemented, but also that the actual content delivered to visually impaired or blind people is actually consumable and user-friendly for them. The Ignite UI for {Platform} data grid is fully accessible with a11y Keyboard accessibility, ARIA, and accessible color palette. <a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">Learn more</a>.</p>
+        <p>Each of our {Platform} components in {ProductName} has been implemented according to the latest accessibility guidelines and specifications. Our {Platform} components have been tested using OS or Browser provided accessibility technology – screen readers. Our team ensures not only that the guidelines are implemented, but also that the actual content delivered to visually impaired or blind people is actually consumable and user-friendly for them. The {ProductName} data grid is fully accessible with a11y Keyboard accessibility, ARIA, and accessible color palette. <a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">Learn more</a>.</p>
     </div>
 </div>
 
@@ -349,7 +349,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of different grids design showing the themeing and templating capabilities" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Animation of different grids design showing the themeing and templating capabilities of the Angular Data Grid"></div>
     <div class="feature__details">
         <span class="h3 features__heading">Theming, Styling, & Templating in the {Platform} Grid<a class="anchorjs-link" href="#theming-styling--templating-in-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>With Ignite UI for {Platform} you can customize cell appearance with CSS or re-template any cell with ng-template to give any cell render appearance. With full support for Material Design, you can customize your branded experience with our simple-to-use theming engine.</p>
+        <p>With {ProductName} you can customize cell appearance with CSS or re-template any cell with ng-template to give any cell render appearance. With full support for Material Design, you can customize your branded experience with our simple-to-use theming engine.</p>
     </div>
 </div>
 
@@ -364,7 +364,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 </div>
     <div class="feature__details" id="list-features">
         <span class="h3 features__heading">Excel Library for the {Platform} Grid<a class="anchorjs-link" href="#excel-library-for-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>Full support for exporting data grids to XLXS, XLS, TSV or CSV. The Ignite UI for {Platform} [Excel library](excel-library.md) includes 300+ formulas, Table support, Conditional Formatting, Chart creation and more – all without needing Microsoft Excel on the client machine.</p>
+        <p>Full support for exporting data grids to XLXS, XLS, TSV or CSV. The {ProductName} [Excel library](excel-library.md) includes 300+ formulas, Table support, Conditional Formatting, Chart creation and more – all without needing Microsoft Excel on the client machine.</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -427,7 +427,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div id="support-section-wrapper">
     <div class="support-section">
     <div >
-        <h2>Ignite UI for {Platform} Supported Browsers</h2>
+        <h2>{ProductName} Supported Browsers</h2>
     </div>
 <div class="divider--half"></div>
    The {Platform} Data Grid is supported on all modern web browsers, including:
@@ -442,7 +442,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     </div>
     <div class="support-section" style="padding-left: 4rem;">
     <div >
-            <h2>Ignite UI for {Platform} Support Options</h2>
+            <h2>{ProductName} Support Options</h2>
     </div>
 <div class="divider--half"></div>
 There are multiple options to get access to our award-winning support at Infragistics for the {Platform} product.
@@ -450,7 +450,7 @@ There are multiple options to get access to our award-winning support at Infragi
         <ul>
             <li>Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">Support</a> home page</li>
             <li>Read the {Platform} [Documentation](general/getting-started.md) and experiment with {Platform} Samples</li>
-            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite UI for Angular"> {Platform} Blogs</a> to stay up to date</li>
+            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/{ProductName}"> {Platform} Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table"> Support Case</a></li>
             <li>Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
         </ul>
@@ -459,10 +459,10 @@ There are multiple options to get access to our award-winning support at Infragi
 
 <div class="divider--half"></div>
 
-## Ignite UI for {Platform} Trial License and Commercial
+## {ProductName} Trial License and Commercial
 
 <div class="divider--half"></div>
-<p>Ignite UI for {Platform} is a commercially licensed product available via a subscription model. You can try the Ignite UI for {Platform} product for free when you <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/free-downloads">register for a 30-day trial</a>. When you are done with your Trial Period, you can <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">purchase a license </a> from our web site or by calling <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/about-us/contact-us">sales in your region</a>.</p>
+<p>{ProductName} is a commercially licensed product available via a subscription model. You can try the {ProductName} product for free when you <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/free-downloads">register for a 30-day trial</a>. When you are done with your Trial Period, you can <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">purchase a license </a> from our web site or by calling <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/about-us/contact-us">sales in your region</a>.</p>
 
 <div class="divider--half"></div>
 
@@ -470,7 +470,7 @@ There are multiple options to get access to our award-winning support at Infragi
 
 <div id="faqs-accordion-wrapper" class="resizable-content">
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">Why should I choose the Infragistics Ignite UI for {Platform} Data Grid?</div>
+        <div class="faqs-accordion h4">Why should I choose the Infragistics {ProductName} Data Grid?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
             <ul>
@@ -486,7 +486,7 @@ There are multiple options to get access to our award-winning support at Infragi
         </div>
     </div>
     <div class="faqs-accordion-content">
-    <div class="faqs-accordion h4">What is the Pricing for the Infragistics Ignite UI for {Platform} Data Grid?</div>
+    <div class="faqs-accordion h4">What is the Pricing for the Infragistics {ProductName} Data Grid?</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
     Our {Platform} components are included as a part of our Ignite UI bundle. A single developer license starts at $1,295 USD for a one-year subscription, including one year of standard support and updates. We also offer discounts for multi-year licenses. Please refer to our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">Pricing page</a> for more information on pricing.
@@ -496,15 +496,15 @@ There are multiple options to get access to our award-winning support at Infragi
     </div>
     </div>
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">Can I purchase the Infragistics Ignite UI for {Platform} Data Grid control separately?</div>
+        <div class="faqs-accordion h4">Can I purchase the Infragistics {ProductName} Data Grid control separately?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-{Platform}">Ignite UI for {Platform} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
+        No, you cannot purchase the {Platform} Data Grid separately. It is part of a the <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-{Platform}">{ProductName} product</a>, which includes dozens of UI controls and components, plus over 60 charts, including {Platform} Financial Charting. If you are interested in other modern web platforms like Angular, ASP.NET MVC, Web Components or ASP.NET Blazor, check out our <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI product bundle</a>, which gives you every web platform for only $100 more on your subscription. That is hundreds of controls, components, and data visualizations for a very low price.
         <div class="divider--half"></div>
         </div>
     </div>
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">How do I Install {Platform} and the Infragistics Ignite UI for {Platform} Data Grid control?</div>
+        <div class="faqs-accordion h4">How do I Install {Platform} and the Infragistics {ProductName} Data Grid control?</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
         To get started with the {Platform} Data Grid, follow the steps in the [getting started guide](../general-getting-started.md). We also maintain a library of <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">sample applications</a>, which are designed to not only inspire but are best practices guides for {Platform} development.
