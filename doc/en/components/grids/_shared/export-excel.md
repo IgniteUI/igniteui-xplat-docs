@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Export to Excel - {ProductName} for {Platform}
+title: {Platform} {ComponentTitle} Export to Excel - {ProductName}
 _description: With {ProductName} Excel Exporter you can make client Excel functionality more convenient & simpler. This format allows features like filtering, sorting, etc.
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]

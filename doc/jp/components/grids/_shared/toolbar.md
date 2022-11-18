@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ツールバー
 
-{ProductName} for {Platform} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbarComponent` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
+{ProductName} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbarComponent` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
 
  - 列の非表示
  - 列のピン固定
@@ -637,7 +637,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to {ProductName} for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -779,5 +779,5 @@ $dark-input-group-theme: input-group-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
