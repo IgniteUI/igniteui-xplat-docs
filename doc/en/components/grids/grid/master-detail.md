@@ -87,10 +87,10 @@ Additional API methods for controlling the expansion states are also exposed:
 | The search feature will not highlight elements from the details template. | |
 
 ## API References
-* `GridComponent`
-* `GridComponent Styles`
-* `ColumnComponent`
+
+* `{GridName}`
+* `Column`
 * `GridRow`
+* `GridCell`
 * `TreeGridRow`
 * `HierarchicalGridRow`
-* `GridCell`

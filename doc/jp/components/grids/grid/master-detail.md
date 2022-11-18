@@ -88,8 +88,8 @@ _language: ja
 | 検索機能は、詳細テンプレートの要素を強調表示しません。 | |
 
 ## API リファレンス
-* `GridComponent`
-* `GridComponent スタイル`
+
+* `{GridName}`
 * `ColumnComponent`
 * `GridRow`
 * `TreeGridRow`

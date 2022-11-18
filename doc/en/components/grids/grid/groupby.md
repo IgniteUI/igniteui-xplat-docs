@@ -517,12 +517,10 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 * `{GridName}`
 * `GroupByRow`
-* `GridComponent Styles`
 * `ISortingExpression`
-* `ColumnComponent`
+* `Column`
 * `IGroupByExpandState`
-* `ChipComponent`
-* `ChipComponent Styles`
+* `Chip`
 
 ## Additional Resources
 

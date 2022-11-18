@@ -517,14 +517,12 @@ $custom-theme: grid-theme(
 
 ## API リファレン
 
-* {ComponentTitle}
+* `{GridName}`
 * `GroupByRow`
-* `GridComponent スタイル`
 * `ISortingExpression`
-* `ColumnComponent`
+* `Column`
 * `IGroupByExpandState`
-* `ChipComponent`
-* `ChipComponent スタイル`
+* `Chip`
 
 ## その他のリソース
 
