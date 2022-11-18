@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 表示密度
 
-**{ComponentName}** デザインは[マテリアル デザイン ガイドライン](https://material.io/design)に基づきます。現在、cosy、comfortable、compact ビューで表示するための定義済みの[密度](https://material.io/design/layout/applying-density.html)オプションを提供しています。マテリアル UI テーブル/マテリアル UI グリッドに適切な密度を選択することで、量の多いコンテンツを操作する際のユーザー エクスペリエンスを飛躍的に向上させることができます。
+{Platform} `{ComponentName}` デザインは[マテリアル デザイン ガイドライン](https://material.io/design)に基づきます。現在、cosy、comfortable、compact ビューで表示するための定義済みの[密度](https://material.io/design/layout/applying-density.html)オプションを提供しています。マテリアル UI テーブル/マテリアル UI グリッドに適切な密度を選択することで、量の多いコンテンツを操作する際のユーザー エクスペリエンスを飛躍的に向上させることができます。
 
 ## {Platform} {ComponentTitle} 表示密度の例
 
