@@ -50,6 +50,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
+            { "name": "{GridKeywords}",               "value": "Grid, IgxGrid"},
             { "name": "{GridName}",                   "value": "IgxGrid"},
             { "name": "{GridModule}",                 "value": "IgxGridModule"},
             { "name": "{GridSelector}",               "value": "igx-grid"},
@@ -58,6 +59,7 @@
             { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
+            { "name": "{TreeGridKeywords}",           "value": "Tree Grid, IgxTreeGrid"},
             { "name": "{TreeGridName}",               "value": "IgxTreeGrid"},
             { "name": "{TreeGridModule}",             "value": "IgxTreeGridModule"},
             { "name": "{TreeGridSelector}",           "value": "igx-tree-grid"},
@@ -66,6 +68,7 @@
             { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
+            { "name": "{PivotGridKeywords}",          "value": "Pivot Grid, IgxPivotGrid"},
             { "name": "{PivotGridName}",              "value": "IgxPivotGrid"},
             { "name": "{PivotGridModule}",            "value": "IgxPivotGridModule"},
             { "name": "{PivotGridSelector}",          "value": "igx-pivot-grid"},
@@ -74,6 +77,7 @@
             { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
+            { "name": "{HierarchicalGridKeywords}",   "value": "Hierarchical Grid, IgxHierarchicalGrid"},
             { "name": "{HierarchicalGridName}",       "value": "IgxHierarchicalGrid"},
             { "name": "{HierarchicalGridModule}",     "value": "IgxHierarchicalGridModule"},
             { "name": "{HierarchicalGridSelector}",   "value": "igx-hierarchical-grid"},
@@ -148,6 +152,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
+            { "name": "{GridKeywords}",               "value": "Grid, IgrGrid"},
             { "name": "{GridName}",                   "value": "IgrGrid"},
             { "name": "{GridModule}",                 "value": "IgrGridModule"},
             { "name": "{GridSelector}",               "value": "igr-grid"},
@@ -156,6 +161,7 @@
             { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
+            { "name": "{TreeGridKeywords}",           "value": "Tree Grid, IgrTreeGrid"},
             { "name": "{TreeGridName}",               "value": "IgrTreeGrid"},
             { "name": "{TreeGridModule}",             "value": "IgrTreeGridModule"},
             { "name": "{TreeGridSelector}",           "value": "igr-tree-grid"},
@@ -164,6 +170,7 @@
             { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
+            { "name": "{PivotGridKeywords}",          "value": "Pivot Grid, IgrPivotGrid"},
             { "name": "{PivotGridName}",              "value": "IgrPivotGrid"},
             { "name": "{PivotGridModule}",            "value": "IgrPivotGridModule"},
             { "name": "{PivotGridSelector}",          "value": "igr-pivot-grid"},
@@ -172,6 +179,7 @@
             { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
+            { "name": "{HierarchicalGridKeywords}",   "value": "Hierarchical Grid, IgrHierarchicalGrid"},
             { "name": "{HierarchicalGridName}",       "value": "IgrHierarchicalGrid"},
             { "name": "{HierarchicalGridModule}",     "value": "IgrHierarchicalGridModule"},
             { "name": "{HierarchicalGridSelector}",   "value": "igr-hierarchical-grid"},
@@ -248,6 +256,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
+            { "name": "{GridKeywords}",               "value": "Grid, IgcGrid"},
             { "name": "{GridName}",                   "value": "IgcGrid"},
             { "name": "{GridModule}",                 "value": "IgcGridModule"},
             { "name": "{GridSelector}",               "value": "igc-grid"},
@@ -256,6 +265,7 @@
             { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
+            { "name": "{TreeGridKeywords}",           "value": "Tree Grid, IgcTreeGrid"},
             { "name": "{TreeGridName}",               "value": "IgcTreeGrid"},
             { "name": "{TreeGridModule}",             "value": "IgcTreeGridModule"},
             { "name": "{TreeGridSelector}",           "value": "igc-tree-grid"},
@@ -264,6 +274,7 @@
             { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
+            { "name": "{PivotGridKeywords}",          "value": "Pivot Grid, IgcPivotGrid"},
             { "name": "{PivotGridName}",              "value": "IgcPivotGrid"},
             { "name": "{PivotGridModule}",            "value": "IgcPivotGridModule"},
             { "name": "{PivotGridSelector}",          "value": "igc-pivot-grid"},
@@ -272,6 +283,7 @@
             { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
+            { "name": "{HierarchicalGridKeywords}",   "value": "Hierarchical Grid, IgcHierarchicalGrid"},
             { "name": "{HierarchicalGridName}",       "value": "IgcHierarchicalGrid"},
             { "name": "{HierarchicalGridModule}",     "value": "IgcHierarchicalGridModule"},
             { "name": "{HierarchicalGridSelector}",   "value": "igc-hierarchical-grid"},
@@ -388,6 +400,7 @@
             { "note": "{ComponentName}  -> {PivotGridName}  -> 'IgbPivotGrid' in /pivot-grid/*.md "},
 
             { "name": "{GridTitle}",                  "value": "Grid"},
+            { "name": "{GridKeywords}",               "value": "Grid, IgbGrid"},
             { "name": "{GridName}",                   "value": "IgbGrid"},
             { "name": "{GridModule}",                 "value": "IgbGridModule"},
             { "name": "{GridSelector}",               "value": "IgbGrid"},
@@ -396,6 +409,7 @@
             { "name": "{GridApiMembers}",             "value": "\"Infragistics.Controls.Grid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.GridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{TreeGridTitle}",              "value": "Tree Grid"},
+            { "name": "{TreeGridKeywords}",           "value": "Tree Grid, IgbTreeGrid"},
             { "name": "{TreeGridName}",               "value": "TreeGrid"},
             { "name": "{TreeGridModule}",             "value": "IgbTreeGridModule"},
             { "name": "{TreeGridSelector}",           "value": "IgbTreeGrid"},
@@ -404,6 +418,7 @@
             { "name": "{TreeGridApiMembers}",         "value": "\"Infragistics.Controls.TreeGrid\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.TreeGridRow\", \"Infragistics.Controls.Column\""},
 
             { "name": "{PivotGridTitle}",             "value": "Pivot Grid"},
+            { "name": "{PivotGridKeywords}",          "value": "Pivot Grid, IgbPivotGrid"},
             { "name": "{PivotGridName}",              "value": "PivotGrid"},
             { "name": "{PivotGridModule}",            "value": "IgbPivotGridModule"},
             { "name": "{PivotGridSelector}",          "value": "IgbPivotGrid"},
@@ -412,6 +427,7 @@
             { "name": "{PivotGridApiMembers}",        "value": "\"Infragistics.Controls.PivotGrid\""},
 
             { "name": "{HierarchicalGridTitle}",      "value": "Hierarchical Grid"},
+            { "name": "{HierarchicalGridKeywords}",   "value": "Hierarchical Grid, IgbHierarchicalGrid"},
             { "name": "{HierarchicalGridName}",       "value": "HierarchicalGrid"},
             { "name": "{HierarchicalGridModule}",     "value": "IgbHierarchicalGridModule"},
             { "name": "{HierarchicalGridSelector}",   "value": "IgbHierarchicalGrid"},
