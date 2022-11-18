@@ -495,8 +495,9 @@ function buildPlatform(cb) {
 
         // uncomment to force building specific set of topics
         // let sources = [
-        //   'doc/en/components/grids/pivot-grid/overview.md',
-        //   'doc/en/components/grids/_shared/template.md',
+        //   'doc/en/components/grids/grid/overview.md',
+        //   'doc/en/components/grids/_shared/editing.md',
+        //   'doc/en/components/grids/data-grid.md',
         // //   'doc/en/**/*.md',
         // //   'doc/jp/**/*.md',
         // //   'doc/kr/**/*.md',

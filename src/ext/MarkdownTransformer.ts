@@ -469,17 +469,17 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
         // console.log("transformDocPlaceholders");
         // console.log(node);
         if (node.value) {
-            node.value = replaceVariables(node.value, options, removeMetaVars);
+            node.value = replaceVariables(node.value, node.type, options, removeMetaVars);
             //console.log('transformText ' + node.value);
         }
 
         if (node.url) {
-            node.url = replaceVariables(node.url, options, removeMetaVars);
+            node.url = replaceVariables(node.url, node.type, options, removeMetaVars);
             //console.log('transformText ' + node.url);
         }
     }
 
-    function replaceVariables(nodeValue: string, options: any, removeMetaVars: boolean) {
+    function replaceVariables(nodeValue: string, nodeType: string, options: any, removeMetaVars: boolean) {
 
         // removeMetaVars is true when extracting metadata on first time paring topic
         // removeMetaVars is false when transforming the whole topic
@@ -488,15 +488,18 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
             // console.log('replaceVariables onlyMeta=' + removeMetaVars + "");
             // console.log('--- replaceVariables \n' + nodeValue);
 
-            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}"];
+            // removing variables in metadata so we can extract a list of shared components without parting errors
+            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
             for (const v of variables) {
                 var r = new RegExp(v, "gm");
                 nodeValue = nodeValue.replace(r, "");
             }
-
+            // cleanup of metadata
             nodeValue = nodeValue.replace(new RegExp("  ", "gm"), " ");
             nodeValue = nodeValue.replace(new RegExp(", ,", "gm"), "");
             nodeValue = nodeValue.replace(new RegExp(": , ", "gm"), ": ");
+            nodeValue = nodeValue.replace(new RegExp(":  , ", "gm"), ": ");
+
             // console.log('+++ replaceVariables \n' + nodeValue + "\n");
             return nodeValue;
         }
@@ -515,11 +518,22 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
         if (docs.replacements) {
             for (let i = 0; i < docs.replacements.length; i++) {
                 let variable = docs.replacements[i];
-                if (variable.name && variable.value) {
+                if (variable.name && variable.value) { // && nodeValue.indexOf(variable.name) >= 0) {
                     let name = variable.name;
                     let r = new RegExp(name, "gm");
                     nodeValue = nodeValue.replace(r, variable.value);
                 }
+            }
+        }
+
+        if (!removeMetaVars) {
+            // console.log('>> replaceVariables ' + variable.name + ' >> ' + variable.value);
+            if (nodeType === 'inlineCode') {
+                // API links expect no platform prefix in order to map and generate URLs
+                nodeValue = nodeValue.replace("Igb", "");
+                nodeValue = nodeValue.replace("Igc", "");
+                nodeValue = nodeValue.replace("Igr", "");
+                nodeValue = nodeValue.replace("Igx", "");
             }
         }
 
