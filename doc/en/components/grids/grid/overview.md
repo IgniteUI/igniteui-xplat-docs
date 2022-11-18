@@ -7,29 +7,18 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 
 # {Platform} Grid Overview and Configuration
 
+The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel, CSV, and pdf formats and more.
+
 <div class="sample-content">
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <p> The {Platform} Grid is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel, CSV, and pdf formats and more. </p>
-        </div>
-    </article>
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <div class="tab-content">
-                <img class="b-lazy responsive-img"
-                    src="../../../images/general/landing-grid-page.png"
-                    data-src="../../../images/general/landing-grid-page.png"
-                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
-                </div>
-        </div>
-    </article>
+    <img class="b-lazy responsive-img"
+        src="../../../images/general/landing-grid-page.png"
+        data-src="../../../images/general/landing-grid-page.png"
+        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+        alt="Grid"
+        title="Grid">
 </div>
 
-
 ## {Platform} Grid Example
-
 
 In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](paging.md).
 

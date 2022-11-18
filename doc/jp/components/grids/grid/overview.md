@@ -6,26 +6,17 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
+ {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。
+
 # {Platform} Grid 概要と構成
 
 <div class="sample-content">
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <p> {Platform} データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。</p>
-        </div>
-    </article>
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <div class="tab-content">
-                <img class="b-lazy responsive-img"
-                    src="../../../images/general/landing-grid-page.png"
-                    data-src="../../../images/general/landing-grid-page.png"
-                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
-                </div>
-        </div>
-    </article>
+    <img class="b-lazy responsive-img"
+        src="../../../images/general/landing-grid-page.png"
+        data-src="../../../images/general/landing-grid-page.png"
+        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+        alt="Grid"
+        title="Grid">
 </div>
 
 
