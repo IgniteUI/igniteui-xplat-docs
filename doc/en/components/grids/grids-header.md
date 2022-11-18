@@ -450,7 +450,7 @@ There are multiple options to get access to our award-winning support at Infragi
         <ul>
             <li>Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">Support</a> home page</li>
             <li>Read the {Platform} [Documentation](general/getting-started.md) and experiment with {Platform} Samples</li>
-            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/{ProductName}"> {Platform} Blogs</a> to stay up to date</li>
+            <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}"> {Platform} Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table"> Support Case</a></li>
             <li>Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>
         </ul>

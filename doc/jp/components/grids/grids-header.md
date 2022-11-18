@@ -450,7 +450,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a> </li>
             <li>{Platform} [ドキュメント](../../components/general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/{ProductName}">{Platform} ブログをご覧ください。</a> </li>
+            <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
             <li><a class="no-external-icon" href="https://www.infragistics.com/ignite-ui-angular/grid-table">サポート ケースの送信</a></li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a></li>
         </ul>
