@@ -37,6 +37,7 @@ steps:
     ReplaceRegex: 'environment:demosBaseUrl'
     UseUTF8: true
     UseRAW: true
+  enabled: false
 
 - task: Npm@1
   displayName: 'npm cache clean'
