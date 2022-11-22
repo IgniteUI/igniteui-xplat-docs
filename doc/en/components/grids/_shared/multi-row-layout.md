@@ -1,8 +1,8 @@
 ---
 title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
-_description: Position and size columns in a more powerful way, using the multi-row layout functionality in the Ignite UI for {Platform} Data Grid. Check out examples and demos!
+_description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Multi-Row Layout, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Multi-row Layout
@@ -23,8 +23,8 @@ The declaration of Multi-row Layout is achieved through `ColumnLayout` component
 The `Column` component exposes four `Input` properties to determine the location and span of each cell:
 * `ColStart` - column index from which the field is starting. This property is **mandatory**.
 * `RowStart` - row index from which the field is starting. This property is **mandatory**.
-* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to `colStart + 1`.
-* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to `rowStart + 1`.
+* `ColEnd` - column index where the current field should end. The amount of columns between colStart and colEnd will determine the amount of spanning columns to that field. This property is **optional**. If not set defaults to **colStart + 1**.
+* `RowEnd` - row index where the current field should end. The amount of rows between rowStart and rowEnd will determine the amount of spanning rows to that field. This property is **optional**. If not set defaults to **rowStart + 1**.
 
 
 ```html
@@ -50,12 +50,52 @@ The `Column` component exposes four `Input` properties to determine the location
 ```
 
 ```razor
-BLAZOR CODE SNIPPET
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" RowEnd="3" ColStart="1" Field="ID"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" ColEnd="3" Field="CompanyName"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" ColEnd="2" Field="ContactName"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="2" ColEnd="3" Field="ContactTitle"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" ColEnd="3" Field="Country"></IgbColumn>
+    <IgbColumn RowStart="1" ColStart="3" ColEnd="5" Field="Region"></IgbColumn>
+    <IgbColumn RowStart="1" ColStart="5" ColEnd="7" Field="PostalCode"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" ColEnd="4" Field="City"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="4" ColEnd="7" Field="Address"></IgbColumn>
+</IgbColumnLayout>
+<IgbColumnLayout>
+    <IgbColumn RowStart="1" ColStart="1" Field="Phone"></IgbColumn>
+    <IgbColumn RowStart="2" ColStart="1" Field="Fax"></IgbColumn>
+</IgbColumnLayout>
+```
+
+```html
+<igc-column-layout>
+	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+	<igc-column row-start="1" [col-start="1" col-end="3" field="CompanyName"></igc-column>
+	<igc-column row-start="2" [col-start="1" col-end="2" field="ContactName"></igc-column>
+	<igc-column row-start="2" [col-start="2" col-end="3" field="ContactTitle"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
+	<igc-column row-start="1" col-start="3" col-end="5" field="Region"></igc-column>
+	<igc-column row-start="1" col-start="5" col-end="7" field="PostalCode"></igc-column>
+	<igc-column row-start="2" col-start="1" col-end="4" field="City"></igc-column>
+	<igc-column row-start="2" col-start="4" col-end="7" field="Address"></igc-column>
+</igc-column-layout>
+<igc-column-layout>
+    <igc-column row-start="1" col-start="1" field="Phone"></igc-column>
+    <igc-column row-start="2" col-start="1" field="Fax"></igc-column>
+</igc-column-layout>
 ```
 
 The result of the above configuration can be seen on the screenshot below:
 
-<img src="../../images/multi-row-layout-1.png" style="width: 100%"/>
+<img src="../../../images/multi-row-layout-1.png" style="width: 100%"/>
 
 > [!Note]
 > `RowStart` and `ColStart` properties must be set for each `Column` into a `ColumnLayout`. The `ColumnLayout` component is not verifying if the layout is correct and not throwing errors or warnings about that. The developers must make sure that the declaration of their layout is correct and complete, otherwise they may end up in broken layout with misalignments, overlaps and browser inconsistencies.
@@ -100,7 +140,7 @@ The following features are currently **not** supported:
 
 ### Custom Keyboard Navigation
 
-The grid allows customizing the default navigation behavior when a certain key is pressed. Actions like `going to the next cell` or `cell below` could be handled easily with the powerful keyboard navigation API:
+The grid allows customizing the default navigation behavior when a certain key is pressed. Actions like **going to the next cell** or **cell below** could be handled easily with the powerful keyboard navigation API:
 
 - `GridKeydown` is exposed. The event will emit `IGridKeydownEventArgs`. This event is available only through the keyboard key combinations mentioned above, for all other key actions you can use `KeyDown` event.
 - `NavigateTo` - this method allows you to navigate to a position based on provided `RowIndex` and `VisibleColumnIndex`
@@ -117,20 +157,20 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
            alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
 </code-view>
 
+<!-- Angular -->
+
 ### Layout Configurator
 
-Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the igxGrid when applied. You can do the following interactions with it:
+Sometimes when configuring a column layout it might be a challenge to calculate and set the proper `ColStart` and `ColEnd` or `RowStart` and `RowEnd`. Especially when there are a lot of columns in a single layout. That is why we have created a small configurator, so you can easily do that and have a similar preview of how it would look inside the `{ComponentName}` when applied. You can do the following interactions with it:
 
 * Set number of rows for the whole configuration. All layouts must have the same amount of rows.
-* Add/Remove column layouts by clicking the `Add Layout` chip or reordering them by dragging a layout chip left/right.
+* Add/Remove column layouts by clicking the **Add Layout** chip or reordering them by dragging a layout chip left/right.
 * Set specific settings for each layout as number of columns and how wide they will be. The setting refer to the currently selected layout.
 * Resize column cells in the layout preview so they can span more columns/rows or clear them using the `Delete` button.
 * Set columns in the preview by dragging a column chip in the place your will want it to be.
-* Add/Remove new columns by using the `Add Column` chip.
+* Add/Remove new columns by using the **Add Column** chip.
 
-<!-- Angular -->
-
-* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [`NgForOf`](https://angular.io/api/common/NgForOf) for example.
+* Get template output of the whole configuration ready to by placed inside an `{ComponentName}` or the JSON representation that can also be used and parsed in your template using [NgForOf](https://angular.io/api/common/NgForOf) for example.
 
 <!-- end: Angular -->
 
@@ -153,7 +193,7 @@ By default we have set the same columns as our previous sample, but it can be cl
 
 ## Styling
 
-The `{ComponentName}` allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The grid's `Theme` exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Multi-row Layout styling.
 
@@ -262,7 +302,7 @@ In order for the custom theme do affect only specific component, you can move al
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
@@ -284,7 +324,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -304,5 +344,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

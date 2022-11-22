@@ -33,7 +33,7 @@ The [docComponents.json](docComponents.json) file contains mapping from a shared
 
 ```json
 {
-    "Grid" :             { "name": "Grid", "output": "\\lob-grid\\" },
+    "Grid" :             { "name": "Grid", "output": "\\grid\\" },
     "TreeGrid" :         { "name": "TreeGrid", "output": "\\tree-grid\\" },
     "PivotGrid" :        { "name": "PivotGrid","output": "\\pivot-grid\\" },
     "HierarchicalGrid" : { "name": "HierarchicalGrid", "output": "\\hierarchical-grid\\" }
@@ -52,7 +52,7 @@ In shared topics, these variables are mapped from {Component*} and auto-replaced
 Also, it defines `output` path folder used when generating topics from shared topics, e.g.
 
 ```
-/_shared/template.md -> /lob-grid/template.md
+/_shared/template.md -> /grid/template.md
 /_shared/template.md -> /tree-grid/template.md
 /_shared/template.md -> /pivot-grid/template.md
 /_shared/template.md -> /hierarchical-grid/template.md
@@ -105,7 +105,7 @@ NOTE that reference path should be using name of gird folder (e.g. `pivot-grid`)
 - Remove URLs in API links because they will be auto-generated:
 
 ```
-[`HierarchicalTransactionService`]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
+[HierarchicalTransactionService]({environment:angularApiUrl}/classes/igxhierarchicaltransactionservice.html)
 ```
 
 to
@@ -126,7 +126,7 @@ to
 - Remove backticks from topic links:
 
 ```md
-[`Transaction Service class hierarchy`](../transaction-classes.md)
+[Transaction Service class hierarchy](../transaction-classes.md)
 ```
 
 ```md
@@ -184,7 +184,7 @@ This paragraph is about grids components.
 
 
 ```md
- 
+
 <igx-tree-grid [data]="data" >
 </igx-tree-grid>
 
@@ -194,7 +194,7 @@ instead of:
 
 ```md
 <!-- ComponentStart: TreeGrid -->
- 
+
 <igx-tree-grid [data]="data" >
 </igx-tree-grid>
 

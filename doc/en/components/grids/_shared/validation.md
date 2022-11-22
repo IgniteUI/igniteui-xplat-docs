@@ -1,13 +1,13 @@
 ---
 title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform} validation, ignite ui for {Platform}, infragistics,
+_keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
 ---
 
 # {Platform} {ComponentTitle} Editing and Validation
 
-The `{ComponentName}`'s editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
+The `{ComponentName}` provides editing that has a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
 
 ## Configuration
 
@@ -29,6 +29,10 @@ To validate that a column input would be set and the value is going to be format
 <igx-column [field]="email" [header]="User E-mail" required email></igx-column>
 ```
 
+```html
+<igc-column field="email" header="User E-mail" required="true" email="true"></igx-column>
+```
+
 The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentName}`.
 
 <code-view style="height:600px"
@@ -36,6 +40,8 @@ The following sample demonstrates how to use the prebuilt `Required`, `Email` an
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
+
+<!-- Angular -->
 
 ### Configure via Reactive Forms
 
@@ -60,7 +66,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-```razor
+```ts
     public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const orderDateRecord = formGroup.get('OrderDate');
@@ -75,7 +81,7 @@ We expose the `FormGroup` that will be used for validation when editing starts o
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
-```razor
+```ts
    public formCreateHandler(args: IGridFormGroupCreatedEventArgs) {
         const formGroup = args.formGroup;
         const hireDateRecord = formGroup.get('HireDate');
@@ -83,8 +89,6 @@ We expose the `FormGroup` that will be used for validation when editing starts o
     }
 ```
 <!-- ComponentEnd: TreeGrid -->
-
-<!-- Angular -->
 
 You can decide to write your own validator function, or use one of the [built-in {Platform} validator functions](https://{Platform}.io/guide/form-validation#built-in-validator-functions).
 
@@ -113,13 +117,15 @@ Validation will be triggered in the following scenarios:
 
 > Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
 
+<!-- Angular -->
+
 ## {Platform} {ComponentTitle} Validation Customization Options
 
 ### Set a custom validator
 
 You can define your own validation directive to use on a `Column` in the template.
 
-```razor
+```ts
 @Directive({
     selector: '[phoneFormat]',
     providers: [{ provide: NG_VALIDATORS, useExisting: PhoneFormatDirective, multi: true }]
@@ -167,7 +173,7 @@ Both events' arguments have a `Valid` property and can be canceled accordingly.
 <{ComponentInstance} (cellEdit)='cellEdit($event)'>
 ```
 
-```razor
+```ts
 public cellEdit(evt) {
   if (!evt.valid) {
     evt.cancel = true;
@@ -319,7 +325,7 @@ The below sample demonstrates the cross-field validation in action.
 
 Cross-field validators can be added to the formGroup on the `FormGroupCreated` event. In them multiple fields can be compared for validity.
 
-```razor
+```ts
   public formCreateCustomerHandler(event: IGridFormGroupCreatedEventArgs) {
         const formGroup = event.formGroup;
         formGroup.addValidators(this.addressValidator());
@@ -382,7 +388,7 @@ The multi-field errors can then be displayed in a separate pinned column.
 
 Errors and the detailed messages can be determined based on the row and cell's validity.
 
-```razor
+```ts
     public isRowValid(cell: IgxGridCell) {
         const hasErrors = !!cell.row.validation.errors || cell.row.cells.some(x => !!x.validation.errors);
         return !hasErrors;
@@ -427,7 +433,7 @@ The below sample demonstrates a cross-field validation between different field o
 
 The next lines of code show the cross-field validator function, which contains comparisons described above and sets the related errors.
 
-```razor
+```ts
 private rowValidator(): ValidatorFn {
     return (formGroup: FormGroup): ValidationErrors | null => {
         let returnObject = {};
@@ -455,7 +461,7 @@ The cross-field validator can be added to the `FormGroup` of the row from `FormG
 ```html
 <igx-tree-grid igxPreventDocumentScroll #treeGrid [batchEditing]="true" [data]="data" primaryKey="ID"
     foreignKey="ParentID" [width]="'100%'" [height]="'500px'" [rowEditable]="true" [pinning]="pinningConfig"
-    (formGroupCreated)="formCreateHandler($event)">    
+    (formGroupCreated)="formCreateHandler($event)">
 </igx-tree-grid>
 ```
 
@@ -526,11 +532,9 @@ The below sample demonstrates the cross-field validation in action.
 
 <!-- ComponentEnd:TreeGrid -->
 
-<!-- Angular -->
-
 ## Styling
 
-Using the [Ignite UI for {Platform} Theme Library](../themes/index.md), we can alter the default validation styles while editing.
+Using the [{ProductName} Theme Library](../themes/index.md), we can alter the default validation styles while editing.
 
 In the example below, we will make use of the exposed template for validation message, which pops out in a tooltip and overriding the error color to modify the default looks of the validation.
 We will also style the background of the invalid rows to make them more distinct.
@@ -538,12 +542,12 @@ We will also style the background of the invalid rows to make them more distinct
 ### Import theme
 
 The easiest way to style and access css variables is to define styles in our `app`'s global style file (typically `styles.scss`).
-The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the Ignite UI for {Platform} Sass framework:
+The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the {ProductName} Sass framework:
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -568,7 +572,7 @@ Changing the default error template allows setting custom classes and styles:
 
 Rows and cells provide API for the developers to know if a row or cell is invalid and what kind of errors are active.
 <!-- ComponentStart:Grid -->
-```razor
+```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };
@@ -587,7 +591,7 @@ public cellStyles = {
 <!-- ComponentEnd:Grid -->
 
 <!-- ComponentStart:HierarchicalGrid -->
-```razor
+```ts
 public rowStyles = {
     background: (row: RowType) => row.validation.status === 'INVALID' ? '#FF000033' : '#00000000'
 };
@@ -608,9 +612,12 @@ public cellStyles = {
 ```html
 <igx-hierarchical-grid [rowStyles]="rowStyles">
     <igx-column field="Artist" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
-    ...
+    <!--...-->
     <igx-row-island [key]="'Albums'" [rowStyles]="rowStyles">
         <igx-column field="Album" [editable]="true" [dataType]="'string'" required [cellClasses]="cellStyles">
+    </igx-row-island>
+    <!--...-->
+</igx-hierarchical-grid>
 ```
 
 <!-- ComponentEnd:HierarchicalGrid -->
@@ -655,17 +662,29 @@ public cellStyles = {
 ## Additional Resources
 
 <!-- Angular -->
+
 * [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [{ComponentTitle} Overview](overview.md)
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [{ComponentTitle} Editing](editing.md)
+* [{ComponentTitle} Row Editing](row-editing.md)
+* [{ComponentTitle} Row Adding](row-adding.md)
+* [{ComponentTitle} Transactions](batch-editing.md)
+
+<!-- end: Blazor -->
+
 <div class="divider--half"></div>
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

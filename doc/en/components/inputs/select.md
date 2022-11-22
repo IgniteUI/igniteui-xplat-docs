@@ -6,6 +6,7 @@ mentionedTypes: ['Select']
 ---
 
 # {Platform} Select
+
 The {ProductName} Select component allows a single selection from a list of items, placed in a dropdown. This form control offers a quick items list navigation, including selection, based on a single or multiple characters match.
 
 ## {Platform} Select Example
@@ -21,6 +22,7 @@ The {ProductName} Select component allows a single selection from a list of item
 ## Usage
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -42,10 +44,28 @@ defineComponents(IgcSelectComponent);
 
 <!-- end: WebComponents -->
 
+<!-- Blazor -->
+
+Before using the `Select` component, you need to register it together with its additional components:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Select` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
 > [!NOTE]
 > Please note that the select header and group components are not mandatory unless you want to use them.
 
-To start using the component add the `igc-select` along with a list of `igc-select-item`'s to choose from:
+To start using the component add the `Select` along with a list of `SelectItem`'s to choose from:
 
 ```html
 <igc-select>
@@ -58,11 +78,11 @@ To start using the component add the `igc-select` along with a list of `igc-sele
 
 ### Select
 
-The `igc-select` component can be used inside an `igc-form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
+The `Select` component can be used inside an `Form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
 
 ### Item
 
-The `igc-select-item` component allows the users to declaratively specify a list of options to be used by the `igc-select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `igc-select-item`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
+The `SelectItem` component allows the users to declaratively specify a list of options to be used by the `Select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `SelectItem`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -84,7 +104,7 @@ You can use the `SelectHeader` to provide a header for a group of items.
 
 ### Group
 
-Multiple `igc-select-item`s can be placed between the opening and closing brackets of an `igc-select-group` component so that users can visually group them together. The `igc-select-group` can be labelled via its `label` slot and disabled via its `Disabled` property.
+Multiple `SelectItem`s can be placed between the opening and closing brackets of an `SelectGroup` component so that users can visually group them together. The `SelectGroup` can be labelled via its `label` slot and disabled via its `Disabled` property.
 
 > [!NOTE]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
@@ -98,7 +118,7 @@ Multiple `igc-select-item`s can be placed between the opening and closing bracke
 
 ## Validation
 
-In addition, the `igc-select` supports most of the `igc-input` properties, such as `required`, `disabled`, `autofocus`, etc. The component also exposes a method bound to its validation:
+In addition, the `Select` supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, etc. The component also exposes a method bound to its validation:
 
 - reportValidity() - checks for validity and focuses the component if invalid.
 
@@ -106,8 +126,8 @@ In addition, the `igc-select` supports most of the `igc-input` properties, such 
 
 When the select is focused and the list of options is **not visible**:
 
-- Open the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
-- Close the `igc-select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
+- Open the `Select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or by clicking on the <kbd>Space</kbd> or the <kbd>Enter</kbd> key.
+- Close the `Select` using the <kbd>ALT + Up/Down Arrow</kbd> combination or any of the <kbd>Enter</kbd>, <kbd>Space</kbd>, <kbd>Esc</kbd> or `Tab` keys.
 - Using the <kbd>Up/Left Arrow</kbd> keys will select the previous item in the list.
 - Using the <kbd>Down/Right Arrow</kbd> keys will select the next item in the list.
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will select the first or last item in the list.
@@ -121,13 +141,14 @@ When the select is focused and the list of options is **visible**:
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or last item in the list.
 
 > [!NOTE]
-> The `igc-select` component supports only **single** selection of items.
+> The `Select` component supports only **single** selection of items.
 
 <!-- WebComponents -->
 
 ## Styling
 
-You can change the appearance of the {ProductName} Select component and its items, by using the exposed CSS parts listed below:
+You can change the appearance of the {ProductName} `Select` component and its items, by using the exposed CSS parts listed below:
+
 ### CSS Parts
 
 **Select Component**
@@ -154,7 +175,7 @@ Part name | Description
 
 Part name | Description
 ---------|------------
-`label` | A label wrapper that renders content above the select group items.
+`Label` | A label wrapper that renders content above the select group items.
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -174,9 +195,5 @@ Part name | Description
 
 ## Additional Resources
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

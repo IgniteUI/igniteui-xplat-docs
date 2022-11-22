@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
-$ProductName$ の各バージョンのすべての重要な変更は、このページに記載されています。
+{ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
 ## **{PackageVerChanges-22-2}**
 
@@ -16,10 +16,15 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 
 これらの新しいチャートの改善点は次のとおりです: 
 
-* ブラウザー / 画面サイズに基づいた水平ラベル回転の自動レスポンシブ レイアウト。 
-* 自動十字線、アニメーション、Y 軸ラベル、およびラベルの書式設定。 
-* すべてのプラットフォームでの丸型ラベルの描画が強化されました。 
-* カテゴリの文字列と数値をグループ化、ソート、集計するための新しい API により、チャート データを事前に集計または計算する必要がなくなります。
+* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。 
+* StackedFragmentSeries にマーカー プロパティを追加しました。
+* `ShouldPanOnMaximumZoom` プロパティを追加しました。
+* 新しいカテゴリ軸プロパティ:
+    - ZoomMaximumCategoryRange
+    - ZoomMaximumItemSpan
+    - ZoomToCategoryRange
+    - ZoomToItemSpan
+* カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
   - InitialSortDescriptions 
   - InitialSorts
   - SortDescriptions
@@ -32,6 +37,9 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
   - InitialGroupSortDescriptions
   - GroupSorts
   - GroupSortDescriptions
+
+> [!Note]
+`IncludedProperties` | `ExcludedProperties` を使用している場合、[チャート集計](charts/features/chart-data-aggregations.md)は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
 ### {PackageGrids}
 
@@ -47,13 +55,13 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
 * 積層シリーズのアニメーションとトランジションインのサポートが追加されました。`IsTransitionInEnabled` プロパティを true に設定すると、アニメーションを有効にできます。そこから、`TransitionInDuration` プロパティを設定してアニメーションが完了するまでの時間を決定し、`TransitionInMode` でアニメーションのタイプを決定できます。
 * 追加された `AssigningCategoryStyle` イベントは、`DataChart` のすべてのシリーズで利用できるようになりました。このイベントは、背景色の `Fill` や強調表示など、シリーズ項目の外観を条件付きで構成する場合に処理されます。
-* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。 デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
+* CalloutLayer の新しい `AllowedPositions` 列挙体。チャート内のどこにコールアウトを配置するかを制限するために使用されます。デフォルトでは、コールアウトは最適な場所に配置されますが、これは `TopLeft`、`TopRight`、`BottomLeft`、または `BottomRight` を強制するために使用されます。
 * 注釈レイヤーに追加された新しいコーナー半径プロパティ。各コールアウトのコーナーを丸めるために使用されます。コーナー半径がデフォルトで追加されていることに注意してください。
     - CalloutLayer の `CalloutCornerRadius`
     - FinalValueLayer の `AxisAnnotationBackgroundCornerRadius`
     - CrosshairLayer の `XAxisAnnotationBackgroundCornerRadius` と `YAxisAnnotationBackgroundCornerRadius`
 * さまざまな方法でスクロールバーを有効にするための新しい `HorizontalViewScrollbarMode` および `VerticalViewScrollbarMode` 列挙体。`IsVerticalZoomEnabled` または `IsHorizontalZoomEnabled` と組み合わせると、チャートをナビゲートするための軸に沿ったスクロールバーを、常設またはフェードインおよびフェードアウトすることができます。
-* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。 数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
+* 新しい `FavorLabellingScaleEnd` は、軸がスケールの最後にラベルを表示することを優先するかどうかを決定します。数値軸 (`NumericXAxis`、`NumericYAxis`、`PercentChangeAxis` など) とのみ互換性があります。
 * 新しい `IsSplineShapePartOfRange` は、軸に要求された軸範囲にスプライン形状を含めるかどうかを決定します。
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
 * 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
@@ -63,7 +71,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * 新規機能:
 - [行のページング](grids/data-grid-row-paging.md)
 
-改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
 ## **{PackageVerChanges-21-2.1}**
 
@@ -104,7 +112,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
 * `FinancialChart` にデフォルトで最終値の注釈を追加しました。
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました：
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました: 
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
@@ -146,7 +154,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
 ## **{PackageVerChanges-21-1}**
 ### {PackageCharts}
 
-このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。 例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
+このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
 * 棒/縦棒/ウォーターフォール シリーズを、角丸ではなく角が四角になるように変更しました。
 * heat min プロパティの 散布高密度シリーズの色を <span style="color:#8a5bb1">#8a5bb1</span> から <span style="color:#000000">#000000</span> に変更しました。
@@ -161,7 +169,7 @@ $ProductName$ の各バージョンのすべての重要な変更は、このペ
     - series.`MarkerOutlineMode` - マーカーのアウトラインが塗りブラシの色に依存するように、'MatchMarkerBrush' に設定できます。
 * 新シリーズ  プロパティ:
     - series.`OutlineMode` - シリーズ アウトラインの表示を切り替えるように設定できます。データ チャートの場合、プロパティはシリーズ上にあることに注意してください。
-* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。 その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
+* チャートがデフォルトのズーム レベルにあるときにビューポートに導入されるブリード オーバー領域を定義する新しいチャート プロパティを追加しました。一般的な使用例では、軸と最初/最後のデータ ポイントの間にスペースを提供します。以下にリストされている `ComputedPlotAreaMarginMode` は、マーカーが有効になっているときに自動的にマージンを設定することに注意してください。その他は、厚さを表す `Double` を指定するように設計されており、PlotAreaMarginLeft などがチャートの 4 辺すべてにスペースを調整します。
     - chart.`PlotAreaMarginLeft`
     - chart.`PlotAreaMarginTop`
     - chart.`PlotAreaMarginRight`

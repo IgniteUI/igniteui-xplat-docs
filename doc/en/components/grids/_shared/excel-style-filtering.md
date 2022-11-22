@@ -1,5 +1,5 @@
 ---
-title:  Excel Style Filtering in {Platform} {ComponentTitle} - {ProductName}
+title:  Excel Style Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Learn how to configure Excel filtering in {Platform} {ComponentTitle}. You can enable/disable various options and customize the Excel style filter menu the way you want.
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
@@ -22,14 +22,23 @@ The grid Excel filtering provides an Excel like filtering UI for any {Platform} 
 
 To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowFiltering]="true" [filterMode]="'excelStyleFilter'" >
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid AllowFiltering="true" FilterMode="FilterMode.ExcelStyleFilter" />
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="true" allow-filtering="true" filter-mode="ExcelStyleFilter" >
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Interactions
 
@@ -39,7 +48,7 @@ If no filter is applied, all the items in the list will be selected. They can be
 
 If you type something in the search box and apply the filter, only the items that match the search criteria will be selected. If you want to add items to the currently filtered ones, however, you should select the option **Add current selection to filter**.
 
-If you want to clear the filter, you can check the `Select All` option and then click the Apply button.
+If you want to clear the filter, you can check the **Select All** option and then click the Apply button.
 
 To apply a filter with different expressions, you can click the **Text filter**, which will open a sub menu with all available filter operators for the particular column. Selecting one of them will open the custom filter dialog, where you can add as many expressions as you want with different filter and logic operators. There is also a clear button, which can clear the filter.
 
@@ -78,6 +87,21 @@ Sorting, pinning and hiding features can be removed from the filter menu using t
     </IgbGrid>
 ```
 
+```html
+<igc-grid id="grid1" auto-generate="false" height="650px" width="100%" moving="true" allow-filtering="true" filter-mode="ExcelStyleFilter">
+    <igc-column field="ProductName" header="Product Name" sortable="true" data-type="String">
+    </igc-column>
+    <igc-column field="QuantityPerUnit" header="Quantity Per Unit" sortable="false" disable-pinning="true" disable-hiding="true" data-type="String">
+    </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" disable-pinning="true" disable-hiding="true" sortable="true" data-type="Number">
+    </igc-column>
+    <igc-column field="OrderDate" header="Order Date" sortable="false"  data-type="Date">
+    </igc-column>
+    <igc-column field="Discontinued" header="Discontinued" sortable="true" data-type="Boolean">
+    </igc-column>
+</igc-grid>
+```
+
 In the sample below **Product Name** and **Discontinued** columns have all four features enabled, **Quantity Per Unit** have all three disabled, **Unit Price** has only sorting and **Order Date** has only pinning and hiding and all are `Selectable`.
 
 <!-- ComponentEnd: Grid -->
@@ -111,6 +135,22 @@ In the sample below **Product Name** and **Discontinued** columns have all four 
 
 ```razor
 Add tree grid snippet
+```
+
+```html
+<igc-tree-grid id="treegrid1" auto-generate="false" height="480px" width="100%" moving="true" allow-filtering="true"
+    primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
+    <igc-column field="ID" header="Product ID" data-type="String">
+    </igc-column>
+    <igc-column field="Name" header="Product Name" sortable="true" data-type="'string'">
+    </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" data-type="Number" sortable="false" disable-pinning="true" disable-hiding="true">
+    </igc-column>
+    <igc-column field="AddedDate" header="Added Date" data-type="Date" sortable="false">
+    </igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean" sortable="true">
+    </igc-column>
+</igc-tree-grid>
 ```
 
 In the sample below 'Product Name' and 'Discontinued' columns have all three features enabled, 'Unit Price' have all three disabled, 'Added Date' has only pinning and hiding.
@@ -160,6 +200,38 @@ In the sample below 'Product Name' and 'Discontinued' columns have all three fea
 Add blazor snippets here
 ```
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-gGenerate="false" moving="true" allow-filtering='true' filter-mode="ExcelStyleFilter"
+    height="650px" width="100%" rowHeight="65px" id="hierarchicalGrid">
+    <igc-column field="Artist" filterable='true' sortable="true"></igc-column>
+    <igc-column field="Photo" filterable='false'>
+    </igc-column>
+    <igc-column field="Debut" filterable='true' disable-pinning="true" disable-hiding="true"></igc-column>
+    <igc-column field="Grammy Nominations" filterable='true' date-type="Number" sortable="false"></igc-column>
+    <igc-column field="Grammy Awards" filterable='true' date-type="Number"></igc-column>
+
+    <igc-row-island key="Albums" auto-gGenerate="false" allow-filtering='true' filter-mode="ExcelStyleFilter">
+        <igc-column field="Album" filterable='true'></igc-column>
+        <igc-column field="Launch Date" filterable='true' date-type="Date"></igc-column>
+        <igc-column field="Billboard Review" filterable='true' date-type="Number"></igc-column>
+        <igc-column field="US Billboard 200" filterable='true' date-type="Number"></igc-column>
+    <igc-row-island key="Songs" auto-generate="false" >
+            <igc-column field="No."></igc-column>
+            <igc-column field="Title"></igc-column>
+            <igc-column field="Released"></igc-column>
+            <igc-column field="Genre"></igc-column>
+    </igc-row-island>
+    </igc-row-island>
+
+    <igc-row-island key="Tours" auto-generate="false">
+        <igc-column field="Tour"></igc-column>
+        <igc-column field="Started on"></igc-column>
+        <igc-column field="Location"></igc-column>
+        <igc-column field="Headliner"></igc-column>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
 In the sample below 'Artist' column have all three features enabled, 'Debut' have all three disabled, 'Grammy Nominations' has only pinning and hiding.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -205,13 +277,32 @@ The following code demonstrates how to define a custom Excel style filter menu u
 
 </igx-grid>
 ```
-<!-- end: Angular -->
-
-
 
 <!-- ```razor
 Add razor snipets
 ``` -->
+
+```html
+<igc-grid id="grid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" filter-mode="ExcelStyleFilter">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+
+</igc-grid>
+```
 
 <!-- ComponentEnd: Grid -->
 
@@ -242,6 +333,29 @@ Add razor snipets
 <!-- ```razor
 Add razor snipets
 ``` -->
+
+```html
+<igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true"
+    primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+
+</igc-tree-grid>
+```
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -290,11 +404,51 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter"
+    height="650px" width="100%" row-height="65px" id="hierarchicalGrid">
+
+    <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+        <igc-excel-style-column-operations>
+            <igc-excel-style-header
+                show-pinning="true"
+                show-hiding="true"
+            >
+            </igc-excel-style-header>
+
+            <igc-excel-style-sorting></igc-excel-style-sorting>
+        </igc-excel-style-column-operations>
+
+        <igc-excel-style-filter-operations>
+            <igc-excel-style-search></igc-excel-style-search>
+        </igc-excel-style-filter-operations>
+    </igc-grid-excel-style-filtering>
+    <igc-row-island key="Albums" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter">
+        <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
+            <igc-excel-style-column-operations>
+                <igc-excel-style-header
+                    show-pinning="true"
+                    show-hiding="true"
+                >
+                </igc-excel-style-header>
+
+                <igc-excel-style-sorting></igc-excel-style-sorting>
+            </igc-excel-style-column-operations>
+
+            <igc-excel-style-filter-operations>
+                <igc-excel-style-search></igc-excel-style-search>
+            </igc-excel-style-filter-operations>
+        </igc-grid-excel-style-filtering>
+
+</igc-hierarchical-grid>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
 <!-- You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive: -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <ng-template igxExcelStyleHeaderIcon>
@@ -302,9 +456,17 @@ Add razor snipets
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 <!-- ```razor
 Templating header icon
+``` -->
+
+```ts
+
+public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igx-icon>filter_alt</igx-icon>`;
+}
 ```
 
 <code-view style="height:620px"
@@ -404,6 +566,15 @@ In order to configure the Excel style filtering component, you should set its `C
 <!-- ```razor
 add snippet for blazor
 ``` -->
+
+```html
+<igc-select id="gridColums" value="ProductID">
+   <label>Columns:</label>
+</igc-select>
+
+<igc-grid-excel-style-filtering>
+</igc-grid-excel-style-filtering>
+```
 
 <!-- ComponentEnd: Grid -->
 
@@ -518,7 +689,7 @@ $custom-drop-down: drop-down-theme(
 );
 ```
 
-In this example we only changed some of the parameters for the listed components, but the [`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme), [`checkbox-theme`]({environment:sassApiUrl}/index.html#function-checkbox-theme), [`drop-down-theme`]({environment:sassApiUrl}/index.html#function-drop-down-theme), [`input-group-theme`]({environment:sassApiUrl}/index.html#function-input-group-theme), [`list-theme`]({environment:sassApiUrl}/index.html#function-list-theme) themes provide way more parameters to control their respective styling.
+In this example we only changed some of the parameters for the listed components, but the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme), [checkbox-theme]({environment:sassApiUrl}/index.html#function-checkbox-theme), [drop-down-theme]({environment:sassApiUrl}/index.html#function-drop-down-theme), [input-group-theme]({environment:sassApiUrl}/index.html#function-input-group-theme), [list-theme]({environment:sassApiUrl}/index.html#function-list-theme) themes provide way more parameters to control their respective styling.
 
 The last step is to **include** the component mixins, each with its respective theme. We will also set the color property for the input's placeholder.
 
@@ -540,7 +711,7 @@ The last step is to **include** the component mixins, each with its respective t
 >We scope most of the components' mixins within `.igx-excel-filter` and `.igx-excel-filter__secondary`, so that these custom themes will affect only components nested in the excel style filtering dialog and all of its sub-dialogs. Otherwise other buttons, checkboxes, input-groups and lists would be affected too.
 
 >[!NOTE]
->If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+>If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -562,7 +733,7 @@ The last step is to **include** the component mixins, each with its respective t
 
 ### Defining a Color Palette
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
 `igx-palette` generates a color palette based on the primary and secondary colors that are passed:
 
@@ -572,7 +743,7 @@ $black-color: #292826;
 
 $dark-palette: palette($primary: $black-color, $secondary: $yellow-color);
 ```
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
+And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $custom-grid: grid-theme(
@@ -613,13 +784,13 @@ $custom-drop-down:drop-down-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - [`light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid), [`light-input-group`]({environment:sassApiUrl}/index.html#variable-_light-input-group), [`light-button`]({environment:sassApiUrl}/index.html#variable-_light-button), [`light-list`]({environment:sassApiUrl}/index.html#variable-_light-list), [`light-checkbox`]({environment:sassApiUrl}/index.html#variable-_light-checkbox) and [`light-drop-down`]({environment:sassApiUrl}/index.html#variable-_light-drop-down) schemas:
+Extend one of the two predefined schemas, that are provided for every component, in this case - [light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid), [light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group), [light-button]({environment:sassApiUrl}/index.html#variable-_light-button), [light-list]({environment:sassApiUrl}/index.html#variable-_light-list), [light-checkbox]({environment:sassApiUrl}/index.html#variable-_light-checkbox) and [light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down) schemas:
 
 ```scss
 $custom-grid-schema: extend($_light-grid,
@@ -720,7 +891,7 @@ $custom-drop-down-schema: extend($_light-drop-down,
 );
 ```
 
-In order to apply our custom schemas we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+In order to apply our custom schemas we have to **extend** one of the globals ([light]({environment:sassApiUrl}/index.html#variable-light-schema) or [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
 
 ```scss
 $custom-light-schema: extend($light-schema,(
@@ -774,7 +945,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 ## API References
@@ -797,5 +968,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

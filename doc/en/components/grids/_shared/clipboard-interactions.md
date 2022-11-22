@@ -1,14 +1,14 @@
 ---
 title: Clipboard Interactions in {Platform} {ComponentTitle} - Infragistics
 _description: The {Platform} {ComponentTitle} Clipboard functionality provides fast, easy and customizable way to copy, paste and export data to Excel or other programs. Try it now!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Clipboard Overview
 
-Copy to clipboard operations are now available in the `{ComponentName}`. This functionality provides a fast, easy and customizable way to copy data of the {Platform} {ComponentName} through the current multi cell data select. System Clipboard behavior gives the user ability to copy data from the `{ComponentName}` into Excel or other external programs.
+Copy to clipboard operations are now available in the `{ComponentName}`. This functionality provides a fast, easy and customizable way to copy data of the {Platform} `{ComponentName}` through the current multi cell data select. System Clipboard behavior gives the user ability to copy data from the `{ComponentName}` into Excel or other external programs.
 
 ## {Platform} {ComponentTitle} Clipboard Example
 
@@ -79,5 +79,5 @@ We expose `ClipboardOptions` property, which handles the following options:
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

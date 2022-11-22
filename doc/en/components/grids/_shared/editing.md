@@ -6,9 +6,12 @@ mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
+test1 `{ComponentName}`
+test2 {ComponentName}
+
 # {Platform} {ComponentTitle} Editing
 
-The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and [Batch Editing](batch-editing.md). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
+The {ProductName} `{ComponentName}` component provides an easy way to perform data manipulation operations like creating, updating, and deleting records. The data manipulation phases are: [Cell Editing](cell-editing.md), [Row Editing](row-editing.md), and Batch Editing (Coming Soon). The `{ComponentName}` gives you a powerful public API which allows you to customize the way these operations are performed.
 
 <!-- Angular -->
 
@@ -104,8 +107,32 @@ Example how to commit new values, if user tries to sort the column while a cell/
 </igx-grid>
 ```
 
+```html
+<igc-grid id="grid" primary-key="ProductID" (sorting)="onSorting($event)">
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.sorting = this.onSorting;
+    }
+    this._bind();
+
+}
+```
+
 ```typescript
 public onSorting(event: ISortingEventArgs) {
+    this.grid.endEdit(true);
+    // (event.owner as IgxGridComponent).endEdit(true);
+}
+```
+```typescript
+public onSorting(event: IgcSortingEventArgs) {
     this.grid.endEdit(true);
     // (event.owner as IgxGridComponent).endEdit(true);
 }
@@ -149,6 +176,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 ## Additional Resources
 
+<!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
 * [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
@@ -163,7 +191,26 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * [Selection](selection.md)
 
 <!-- ComponentStart: HierarchicalGrid -->
-
 * [Searching](search.md)
-
 <!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [Column Data Types](column-types.md#default-template)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+<!-- ComponentStart: HierarchicalGrid -->
+* [Searching](search.md)
+<!-- ComponentEnd: HierarchicalGrid -->
+
+<!-- end: Blazor -->

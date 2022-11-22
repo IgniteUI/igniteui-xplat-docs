@@ -10,7 +10,11 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, meaning that the `{ComponentName}` can have a mix of sortable and non-sortable columns. Performing {Platform} sort actions enables you to change the display order of the records based on specified criteria.
 
+<!-- Angular -->
+
 > Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+
+<!-- end: Angular -->
 
 ## {Platform} {ComponentTitle} Sorting Overview Example
 
@@ -36,6 +40,10 @@ This is done via the `Sortable` input. With the `{ComponentName}` sorting, you c
 <IgbColumn Field="Title" Sortable="true"></IgbColumn>
 ```
 
+```html
+<igc-column field="ProductName" header="Product Name" data-type="String" sortable="true"></igc-column>
+```
+
 ## Sorting Indicators
 
 Having a certain amount of sorted columns could be really confusing if there is no indication of the sorted order.
@@ -56,9 +64,19 @@ The `{ComponentName}` provides a solution for this problem by indicating the ind
 
 You can sort any column or a combination of columns through the `{ComponentName}` API using the `{ComponentName}` `Sort` method:
 
+<!-- Angular -->
 ```typescript
 import { SortingDirection } from 'igniteui-angular';
+```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
+```typescript
+import { SortingDirection } from 'igniteui-webcomponents-grids';
+```
+<!-- end: WebComponents -->
+
+```typescript
 // Perform a case insensitive ascending sort on the ProductName column.
 this.grid.sort({ fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true });
 
@@ -148,13 +166,27 @@ public ngOnInit() {
 }
 ```
 
+<!-- WebComponents -->
+```typescript
+public connectedCallback() {
+    this.grid.sortingExpressions = [
+        { fieldName: 'ProductName', dir: SortingDirection.Asc, ignoreCase: true },
+        { fieldName: 'Price', dir: SortingDirection.Desc }
+    ];
+}
+```
+<!-- end: WebComponents -->
+
 > [!NOTE]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
+<!-- Angular -->
 ## Remote Sorting
 
 The `{ComponentName}` supports remote sorting, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md) topic.
+
+<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -187,6 +219,12 @@ The sorting indicator icon in the column header can be customized using a templa
     {
         return @<IgbIcon Size="SizableComponentSize.Small" IconName="unfold_more" Collection="material"></IgbIcon>;
     };
+}
+```
+
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="unfold_more></igc-icon>`;
 }
 ```
 
@@ -241,6 +279,12 @@ The sorting indicator icon in the column header can be customized using a templa
 }
 ```
 
+```ts
+public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
+    return html`<igc-icon icon-name="expand_more></igc-icon>`;
+}
+```
+
 <!-- Angular -->
 
 ## Styling
@@ -254,7 +298,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the `$sorted-header-icon-color` and `sortable-header-icon-hover-color` parameters.
+Following the simplest approach, we create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the `$sorted-header-icon-color` and `sortable-header-icon-hover-color` parameters.
 
 ```scss
 $custom-theme: grid-theme(
@@ -269,7 +313,7 @@ The last step is to **include** the component mixins:
 ```
 
 >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
 :host {
@@ -281,7 +325,7 @@ The last step is to **include** the component mixins:
 
 ### Defining a Color Palette
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
 `igx-palette` generates a color palette based on the primary and secondary colors that are passed:
 
@@ -292,7 +336,7 @@ $orange-color: #ffb06a;
 $custom-palette: palette($primary: $black-color, $secondary: $orange-color);
 ```
 
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
+And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $custom-theme: grid-theme(
@@ -302,13 +346,13 @@ $custom-theme: grid-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - [`_light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid):
+Extend one of the two predefined schemas, that are provided for every component, in this case - [_light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid):
 
 ```scss
 // Extending the light grid schema
@@ -320,7 +364,7 @@ $custom-grid-schema: extend($_light-grid,
 );
 ```
 
-In order to apply our custom schema we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+In order to apply our custom schema we have to **extend** one of the globals ([light]({environment:sassApiUrl}/index.html#variable-light-schema) or [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
 
 ```scss
 // Extending the global light-schema
@@ -348,7 +392,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -371,5 +415,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

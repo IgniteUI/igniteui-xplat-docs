@@ -1,6 +1,6 @@
 ---
-title: {Platform} Spreadsheet コンポーネント – Ignite UI for {Platform}
-_description: Ignite UI for {Platform} Spreadsheet を使用して、柔軟なレイアウト、簡単なカスタマイズ オプション、Excel のような便利なインターフェイスを利用できます。表データを好きなように管理できます。
+title: {Platform} Spreadsheet コンポーネント – {ProductName}
+_description: {ProductName} Spreadsheet を使用して、柔軟なレイアウト、簡単なカスタマイズ オプション、Excel のような便利なインターフェイスを利用できます。表データを好きなように管理できます。
 _keywords: Excel Spreadsheet, {ProductName}, Infragistics, Excel スプレッドシート, インフラジスティックス
 _language: ja
 mentionedTypes: ['Spreadsheet']

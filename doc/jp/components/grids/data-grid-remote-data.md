@@ -2,21 +2,21 @@
 title: {Platform} データ グリッド | リモート データ | インフラジスティックス
 _description: インフラジスティックスの {Platform} グリッド コンポーネントの仮想データ ソースを使用してリモート データをバインドします。{ProductName} テーブル チュートリアルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
-# {Platform} グリッド仮想データのバインド
+# {Platform} グリッド仮想データのバインディン
 
 {ProductName} Data Table / Data Grid は、1 行のコードでリモート データ ソースへのデータ バインドをサポートします。{Platform} データ テーブルの仮想データ ソースを使用すると、リモート URI と返される Odata エンティティで {Platform} グリッドを設定するだけで、残りの作業は {Platform} グリッドが行います。
 
-## {Platform} グリッド仮想データのバインドの例
+## {Platform} グリッド仮想データのバインディンの例
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           alt="{Platform} グリッド仮想データのバインドの例"
+           alt="{Platform} グリッド仮想データのバインディンの例"
            github-src="grids/data-grid/binding-remote-data">
 </code-view>
 
@@ -37,7 +37,6 @@ _language: ja
 ## モジュールの要件
 
 `Grid` を作成するには、以下のモジュールが必要です。
-
 
 ```razor
 // in Program.cs file

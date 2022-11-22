@@ -22,7 +22,7 @@ The {ProductName} Ripple component creates an animation in response to a touch o
 
 ## Usage
 
-To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Ripple Web Component we need to import the `Ripple` in our typescript file and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRippleComponent } from "igniteui-webcomponents";

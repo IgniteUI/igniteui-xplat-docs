@@ -14,7 +14,7 @@ But we’ve identified a way to help you speed up processing by using our [Blazo
 How?
 
 By temporarily disabling the automatic calculation of formulas.
-In this quick how-to article, we will show you how exactly to do it and will cover the following questions: 
+In this quick how-to article, we will show you how exactly to do it and will cover the following questions:
 * What is Blazor Excel Library in Ignite UI
 * What are Blazor Workbooks in Ignite UI
 * Speeding Up Processing in Blazor Excel Library
@@ -84,15 +84,15 @@ How exactly does this suspension of the automatic formula calculation work? When
 Call the SuspendCalculations () and ResumeCalculations () methods of the Workbook object.
 
 ```razor
-@ using Infragistics. Documents . Excel
+@using Infragistics.Documents.Excel
 ...
-var workbook = Workbook. Load ( ... );
+var workbook = Workbook.Load ( ... );
 
 // Calling SuspendCalculations () will stop the automatic calculation of formulas.
-workbook. SuspendCalculations (); 
+workbook. SuspendCalculations ();
 
 // ... Here is where you read, write, etc. the cells contained in this Workbook...
-// Call ResumeCalculations ()to resume the automatic formula calculation. 
+// Call ResumeCalculations ()to resume the automatic formula calculation.
 
 workbook. ResumeCalculations ();
 ```

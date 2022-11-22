@@ -1,7 +1,7 @@
 ---
 title: Collapsible Column Groups in {Platform} {ComponentTitle} - Infragistics
 _description: Take advantage of the capability to show\hide smaller and concise set of data with the use of collapsible column groups in our {Platform} {ComponentTitle}. Try it now!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -20,7 +20,7 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## Setup
 
-To get started with the `{ComponentName}` and the **Collapsible multi-column headers** feature, first you need to install Ignite UI for {Platform} by typing the following command:
+To get started with the `{ComponentName}` and the **Collapsible multi-column headers** feature, first you need to install {ProductName} by typing the following command:
 
 <!-- Angular -->
 ```cmd
@@ -40,7 +40,7 @@ npm install @webcomponents/custom-elements
 ```
 <!-- end: WebComponents -->
 
-For a complete introduction to the Ignite UI for {Platform}, read the [getting started](../..\general-getting-started.md) topic.
+For a complete introduction to the {ProductName}, read the [getting started](../..\general-getting-started.md) topic.
 
 Also, we strongly suggest that you take a brief look at [multi-column headers](multi-column-headers.md) topic, to see more detailed information on how to setup the column groups in your grid.
 
@@ -86,6 +86,25 @@ Let's see the markup below:
             <IgbColumn Field="City" Header="City" Sortable="true"></IgbColumn>
         </IgbColumnGroup>
  </IgbColumnGroup>
+```
+
+```html
+<igc-column-group header="Customer Information" collapsible="true"> <!-- Initially the column groups will be expanded--->
+    <!--The column below will be visible when its parent is collapsed-->
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igc-column>
+    <!--The three columns below will be visible when its parent is expanded-->
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igc-column>
+    <igc-column field="FirstName" header="First Name" data-type="String" visible-when-collapsed="false">
+    </igc-column>
+    <igc-column field="LastName" header="Last Name" data-type="String" visible-when-collapsed="false">
+    </igc-column>
+    <igc-column-group header="Customer Address"> <!--This column visibility will not be changed based on parent expand/collapsed state-->
+        <igc-column field="Country" header="Country" data-type="String" sortable="true">
+        </igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true">
+        </igc-column>
+    </igc-column-group>
+</igc-column-group>
 ```
 
 To summarize, every child column has three states:
@@ -135,6 +154,35 @@ You can define custom expand/collapse template and provide it to each of the col
     };
 ```
 
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="String" visible-when-collapsed="true"></igx-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="String" visible-when-collapsed="false"></igx-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" visible-when-collapsed="true"></igx-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" visible-when-collapsed="false"></igx-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        info.collapsibleIndicatorTemplateRef = this.indTemplate;
+        address.collapsibleIndicatorTemplateRef = this.indTemplate;
+    }
+    this._bind();
+}
+
+public indTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
+    `;
+}
+```
+
 ### Using igxCollapsibleIndicator Directive
 
 Another way to achieve this behavior is to use the igxCollapsibleIndicator directive as shown in the example below:
@@ -151,6 +199,35 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
         <igx-column field="City" header="City" [dataType]="'string'" [sortable]="true" [visibleWhenCollapsed]="false"></igx-column>
     </igx-column-group>
 </igx-column-group>
+```
+
+```html
+<igc-column-group id="info" header="Customer Information" collapsible="true">
+    <igc-column field="CustomerName" header="Fullname" data-type="string" visible-when-collapsed="true"></igx-column>
+    <igc-column field="CustomerID" header="Customer ID" data-type="string" visible-when-collapsed="false"></igx-column>
+    <igc-column-group id="address" header="Customer Address" collapsible="true">
+        <igc-column field="Country" header="Country" data-type="string" sortable="true" visible-when-collapsed="true"></igx-column>
+        <igc-column field="City" header="City" data-type="string" sortable="true" visible-when-collapsed="false"></igx-column>
+    </igc-column-group>
+</igc-column-group>
+```
+```ts
+constructor() {
+    var info = this.info = document.getElementById('info') as IgcColumnGroupComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        info.collapsibleIndicatorTemplateRef = this.indTemplate;
+        address.collapsibleIndicatorTemplateRef = this.indTemplate;
+    }
+    this._bind();
+}
+
+public indTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" >${ctx.cell.column.expanded ? 'remove' : 'add'} </igc-icon>
+    `;
+}
 ```
 <!-- end: Angular -->
 
@@ -178,5 +255,5 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

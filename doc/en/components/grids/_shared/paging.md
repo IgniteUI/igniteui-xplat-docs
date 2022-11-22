@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Paging - Infragistics
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview
@@ -26,39 +26,30 @@ Adding a [Paginator](../paginator.md) component will control whether the feature
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
-<igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+    <IgbPaginator PerPage="10"></IgbPaginator>
+</{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
 ```html
-<igx-hierarchical-grid #hierarchicalGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-hierarchical-grid>
+<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+    <igc-paginator per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
 
-```razor
-TO-DO H-GRID CODE SNIPPET
-```
-
-```html
-<igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-
+<!-- Angular -->
 ```html
 <igx-paginator #paginator [totalRecords]="20">
     <igx-paginator-content>
@@ -76,10 +67,7 @@ TO-DO TREEGRID CODE SNIPPET
     </igx-paginator-content>
 </igx-paginator>
 ```
-
-```razor
-TO-DO CODE SNIPPET
-```
+<!-- end: Angular -->
 
 <!-- ComponentStart: Grid -->
 ## Paging with Group By
@@ -94,17 +82,52 @@ Integration between Paging and Group By is described in the [Group By](groupby.m
 
 The `Paginator` component is used along with the `{ComponentName}` component in the example below, but you can use it with any other component in case paging functionality is needed.
 
+<!-- ComponentStart: Grid, TreeGrid -->
+
+<!-- Angular -->
 ```html
-<igx-grid #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
             [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+    </IgbPaginator>
+</{ComponentSelector}>
 ```
+
+<!-- Angular -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-paginator id="paginator" per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        paginator.page = grid.page;
+        paginator.totalRecords = grid.totalRecords;
+        paginator.selectOption = selectOptions;
+        paginator.displayDensity = grid.displayDensity;
+    }
+    this._bind();
+}
+```
+<!-- end: Angular -->
+
+<!-- ComponentEnd: Grid, TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
 
 ```html
 <igx-hierarchical-grid>
@@ -128,19 +151,6 @@ TO-DO GRID CODE SNIPPET
 TO-DO H-GRID CODE SNIPPET
 ```
 
-```html
-<igx-tree-grid #treeGrid [data]="data">
-    <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="treeGrid.displayDensity">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-
-<!-- ComponentStart: HierarchicalGrid -->
 ### Paginator Configuration within Child Grids
 
 Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
@@ -170,9 +180,11 @@ TO-DO H-GRID CODE SNIPPET
 
 <div class="divider--half"></div>
 
+<!-- Angular -->
+
 ## Remote Paging
 
-Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentName}` construction and data subscription. For more detailed information, check the [`Remote Data Operations`](remote-data-operations.md#remote-paging) topic.
+Remote paging can be achieved by declaring a service, responsible for data fetching and a component, which will be responsible for the `{ComponentName}` construction and data subscription. For more detailed information, check the [Remote Data Operations](remote-data-operations.md#remote-paging) topic.
 
 <!-- ComponentStart: Grid -->
 
@@ -181,6 +193,8 @@ Remote paging can be achieved by declaring a service, responsible for data fetch
 In some cases you may want to define your own paging behavior and this is when we can take advantage of the `PaginatorContent` and add our custom logic along with it. [This section](remote-data-operations.md#remote-paging-with-custom-igx-paginator-content) explains how we are going to extend the Remote Paging example in order to demonstrate this.
 
 <!-- ComponentEnd: Grid -->
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -233,7 +247,7 @@ The last step is to **include** the component mixins, each with its respective t
 >We scope the `Button` mixin within `.igx-paginator__pager`, so that only the paginator buttons would be styled. Otherwise other buttons in the grid would be affected too.
 
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -281,7 +295,7 @@ $dark-button: button-theme(
 ```
 
 >[!NOTE]
->The `Color` and `Palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `Color` and `Palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
@@ -386,5 +400,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

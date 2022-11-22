@@ -3,7 +3,7 @@ title: 반응형 데이터 그리드 | 테이블 제어 | {ProductName} | 열 �
 _description: {ProductName} Table / Grid 구성 요소는 그리드 도메인의 복잡성을 관리 가능한 API로 단순화하여 사용자가 데이터 컬렉션을 바인딩 할 수 있도록합니다.
 _keywords: grid, table, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Infragistics.Controls.Grid.Implementation.Column']
 ---
 
 # {Platform} 열 데이터 유형

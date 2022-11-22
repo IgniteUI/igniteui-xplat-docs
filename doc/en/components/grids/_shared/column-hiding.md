@@ -1,7 +1,7 @@
 ---
 title: Column Hiding in {Platform} {ComponentTitle} - Infragistics
 _description: Learn how to use the Column Hiding feature that allows users to change the visible state of the columns directly through the UI of the Ignite Material UI table.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -12,7 +12,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 {ProductName} `{ComponentName}` provides an `ColumnActionsComponent` with an `ColumnHidingDirective` which allows users to perform column hiding directly through the user interface or by using the {Platform} component.
 <!-- end: Angular -->
 
-The Ignite UI for {Platform} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
+The {ProductName} `{ComponentName}` has a built-in column hiding UI, which can be used through the `{ComponentName}`'s toolbar to change the visible state of the columns. In addition, developers can always define the column hiding UI as a separate component and place it anywhere they want on the page.
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
@@ -27,6 +27,7 @@ The Ignite UI for {Platform} `{ComponentName}` has a built-in column hiding UI, 
 
 Let's start by creating our `{ComponentName}` and binding it to our data. We will also enable both filtering and sorting for the columns.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid id="grid" [data]="data" [autoGenerate]="false" width="100%" height="560px" columnWidth="200px" [allowFiltering]="true">
     <igx-column [field]="'ID'" dataType="string" [sortable]="true" [hidden]="true"></igx-column>
@@ -41,6 +42,7 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <igx-column [field]="'Phone'" dataType="string" [sortable]="true"></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Data=northwindEmployees AutoGenerate=false Width="100%"  Height="100%" ColumnWidth="200px" AllowFiltering=true>
@@ -56,6 +58,22 @@ Let's start by creating our `{ComponentName}` and binding it to our data. We wil
     <IgbColumn Field="Phone" Sortable=true></IgbColumn>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" width="100%" height="560px" column-width="200px" allow-filtering="true">
+    <igc-column field="ID" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactName" data-type="String" sortable="true" hidden="true"></igc-column>
+    <igc-column field="ContactTitle" data-type="String" sortable="true"></igc-column>
+    <igc-column field="City" data-type="String" sortable="true"></igc-column>
+    <igc-column field="CompanyName" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Fax" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Address" data-type="String" sortable="true"></igc-column>
+    <igc-column field="PostalCode" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Country" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Phone" data-type="String" sortable="true"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Toolbar's Column Hiding UI
 
@@ -63,6 +81,7 @@ The built-in Column Hiding UI is placed inside an `DropDown` in the `{ComponentN
 
 For this purpose all we have to do is set both the `GridToolbarActions` and the `GridToolbarHiding` inside of the `{ComponentName}`. We will also add a title to our toolbar by using the `GridToolbarTitle` and a custom style for our {ComponentTitle}'s wrapper.
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -75,6 +94,7 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -89,10 +109,26 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
+
 The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
 
 By using the `Title` property, we will set the title that is displayed inside the dropdown button in the toolbar.
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -105,6 +141,7 @@ By using the `Title` property, we will set the title that is displayed inside th
     </{ComponentSelector}>
 </div>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -118,6 +155,20 @@ By using the `Title` property, we will set the title that is displayed inside th
     </{ComponentSelector}>
 </div>
 ```
+<!-- WebComponents -->
+```html
+<div class="grid__wrapper">
+    <{ComponentSelector} id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -139,6 +190,16 @@ public ngAfterViewInit() {
 }
 ```
 
+```typescript
+constructor() {
+    var hidingAction = this.hidingAction = document.getElementById('hidingAction') as IgcGridToolbarHidingComponent;
+}
+
+connectedCallback() {
+    this.hidingAction.columnsAreaMaxHeight = "200px";
+}
+```
+
 In order to use the expanded set of functionalities for the column hiding UI, we can use the `ColumnActions`'s `ColumnsAreaMaxHeight` property. This way we can use it according to our application's requirements.
 
 <!-- end: Angular -->
@@ -154,13 +215,13 @@ Let's say we want to manually define our `ColumnActionsComponent`, add the `Colu
 ```typescript
 // app.module.ts
 
-...
+//...
 import {
-    ...
+    //...
     IgxColumnActionsModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxColumnActionsModule],
 })
 export class AppModule {}
@@ -237,11 +298,11 @@ We can also allow the user to choose the display order of the columns in the col
 Let's create a couple of nicely designed radio buttons for our options! We just have to go ahead and get the [**IgxRadio**](../radio-button.md) module.
 
 ```typescript
-import {    
+import {
     IgxRadioModule
 } from 'igniteui-{Platform}';
 
-@NgModule({    
+@NgModule({
     imports: [IgxRadioModule]
 })
 export class AppModule {}
@@ -271,10 +332,21 @@ We can easily prevent the user from being able to hide columns through the colum
 <div class="gridContainer">
     <{ComponentSelector}>
         <igx-column [field]="'ContactName'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
-        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>        
+        <igx-column [field]="'ContactTitle'" dataType="string" [sortable]="true" [disableHiding]="true"></igx-column>
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- WebComponents -->
+```html
+<div class="gridContainer">
+    <{ComponentSelector}>
+        <igc-column field="ContactName" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+        <igc-column field="ContactTitle" data-type="String" sortable="true" disable-hiding="true"></igc-column>
+    </{ComponentSelector}>
+</div>
+```
+<!-- end: WebComponents -->
 
 If all went well, this is how our column hiding UI component should look like:
 
@@ -292,7 +364,7 @@ To get started with styling the column actions component, we need to import the 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -369,7 +441,7 @@ $custom-button: button-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes`](themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes](themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
@@ -438,7 +510,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 ## API References
 
 <!-- Angular -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional Ignite UI for {Platform} component - the [**IgxRadio**](../radio-button.md) button.
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional {ProductName} component - the [**IgxRadio**](../radio-button.md) button.
 <!-- end: Angular -->
 
 <!-- Blazor -->
@@ -473,7 +545,7 @@ Additional components and/or directives with relative APIs that were used:
 
 <!-- Angular -->
 Styles:
-* `{ComponentName}Component`
+* `{ComponentName}`
 * `Radio`
 <!-- end: Angular -->
 
@@ -491,5 +563,5 @@ Styles:
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

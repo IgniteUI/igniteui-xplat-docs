@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} UI `{ComponentName}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
+The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -47,6 +47,7 @@ All available column data types could be found in the official [Column types top
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)">
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -57,6 +58,7 @@ All available column data types could be found in the official [Column types top
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid>
@@ -66,6 +68,19 @@ All available column data types could be found in the official [Column types top
         <IgbColumn Field="Title" HasSummary="true"></IgbColumn>
 </IgbGrid>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px"  sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -92,6 +107,17 @@ All available column data types could be found in the official [Column types top
 Add blazor snippet for hgrid
 ```
 
+```html
+<igc-hierarchical-grid class="hgrid" auto-generate="false">
+    <igc-column field="Artist" has-sSummary='true'></igc-column>
+    <igc-column field="Photo">
+    </igc-column>
+    <igc-column field="Debut" has-summary='true'></igc-column>
+    <igc-column field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+</igc-hierarchical-grid>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
@@ -99,6 +125,7 @@ The other way to enable/disable summaries for a specific column or a list of col
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" header="Product ID" width="200px"  [sortable]="true">
@@ -111,6 +138,36 @@ The other way to enable/disable summaries for a specific column or a list of col
 <button (click)="enableSummary()">Enable Summary</button>
 <button (click)="disableSummary()">Disable Summary </button>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" header="Product ID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="false">
+    </igc-column>
+</{ComponentSelector}>
+<button id="enableBtn">Enable Summary</button>
+<button id="disableBtn">Disable Summary </button>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var enableBtn = this.enableBtn = document.getElementById('enableBtn') as HTMLButtonElement;
+    var disableBtn = this.disableBtn = document.getElementById('disableBtn') as HTMLButtonElement;
+
+    this._bind = () => {
+        grid.data = this.data;
+        enableBtn.addEventListener("click", this.enableSummary);
+        disableBtn.addEventListener("click", this.disableSummary);
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public enableSummary() {
@@ -210,6 +267,26 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+import { IgcSummaryResult, IgcSummaryOperand, IgcNumberSummaryOperand, IgcDateSummaryOperand } from 'igniteui-webcomponents-grids';
+
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    operate(data?: any[]): IgcSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'Test',
+            summaryResult: data.filter(rec => rec > 10 && rec < 30).length
+        });
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet
 ``` -->
@@ -240,6 +317,27 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+import { IgcRowIslandComponent, IgcHierarchicalGridComponent, IgcNumberSummaryOperand, IgcSummaryResult } from 'igniteui-webcomponents-grids';
+
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+
+    public operate(data?: any[]): IgcSummaryResult[] {
+        const result = super.operate(data);
+        result.push({
+            key: 'test',
+            label: 'More than 5',
+            summaryResult: data.filter((rec) => rec > 5).length
+        });
+
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet for hgrid
 ``` -->
@@ -251,6 +349,14 @@ The method returns a list of `SummaryResult`. -->
 
 ```typescript
 interface IgxSummaryResult {
+    key: string;
+    label: string;
+    summaryResult: any;
+}
+```
+
+```typescript
+interface IgcSummaryResult {
     key: string;
     label: string;
     summaryResult: any;
@@ -269,6 +375,7 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
 
 <!-- ComponentStart: Grid, TreeGrid -->
 <!-- And now let's add our custom summary to the column `UnitsInStock`. We will achieve that by setting the Summaries` property to the class we create below. -->
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="false" height="800px" width="800px" (columnInit)="initColumn($event)" >
     <igx-column field="ProductID" width="200px"  [sortable]="true">
@@ -281,6 +388,34 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
     </igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="false" height="800px" width="800px">
+    <igc-column field="ProductID" width="200px" sortable="true">
+    </igc-column>
+    <igc-column field="ProductName" width="200px" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" dataType="'number'" has-summary="true" sortable="true">
+    </igc-column>
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+    var unitsInStock = this.unitsInStock = document.getElementById('unitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        unitsInStock.summaries = this.mySummary;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 export class GridComponent implements OnInit {
@@ -315,6 +450,31 @@ Add blazor snippet
 </igx-hierarchical-grid>
 ```
 
+<!-- WebComponents -->
+```html
+<igc-hierarchical-grid id="hgrid" class="hgrid" auto-generate="false">
+    <igc-column field="Artist" has-summary='true'></igc-column>
+    <igc-column field="Photo">
+    </igc-column>
+    <igc-column field="Debut" has-summary='true'></igc-column>
+    <igc-column id="grammyNom" field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var hgrid = this.hgrid = document.getElementById('hgrid') as IgcHierarchicalGridComponent;
+    var grammyNom = this.grammyNom = document.getElementById('grammyNom') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grammyNom.summaries = this.mySummary;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
+
 ```typescript
 export class HGridSummarySampleComponent implements OnInit {
     mySummary = MySummary;
@@ -347,9 +507,22 @@ class MySummary extends IgxNumberSummaryOperand {
 }
 ```
 
+```typescript
+class MySummary extends IgcNumberSummaryOperand {
+    constructor() {
+        super();
+    }
+    operate(columnData: any[], allGridData = [], fieldName?): IgcSummaryResult[] {
+        const result = super.operate(allData.map(r => r[fieldName]));
+        result.push({ key: 'test', label: 'Total Discontinued', summaryResult: allData.filter((rec) => rec.Discontinued).length });
+        return result;
+    }
+}
+```
+
 <!-- ```razor
 Add blazor snippet for my summary
-```--> 
+```-->
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -367,6 +540,28 @@ Add blazor snippet for my summary
         <span>{{ summaryResults[0].label }} - {{ summaryResults[0].summaryResult }}</span>
     </ng-template>
 </igx-column>
+```
+
+```html
+<igc-column id="column" has-summary="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryTemplate = this.summaryTemplate;
+    }
+    this._bind();
+}
+
+public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
+    return html`
+        <span> My custom summary template</span>
+        <span>${ ctx.label } - ${ ctx.summaryResult }</span>
+    `;
+}
 ```
 
 ```razor
@@ -412,8 +607,34 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 }
 ```
 
+```typescript
+public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
+    const result = summary.summaryResult;
+    if(summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
+        && result !== null && result !== undefined) {
+        const pipe = new DatePipe('en-US');
+        return pipe.transform(result,'MMM YYYY');
+    }
+    return result;
+}
+```
+
 ```html
 <igx-column [summaryFormatter]="dateSummaryFormat"></igx-column>
+```
+
+```html
+<igc-column id="column" [summaryFormatter]="dateSummaryFormat"></igx-column>
+```
+```ts
+constructor() {
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        column.summaryFormatter = this.dateSummaryFormat;
+    }
+    this._bind();
+}
 ```
 
 <!-- TODO -- update blazor snippet when the sample is ready -->
@@ -520,7 +741,7 @@ To get started with styling the sorting behavior, we need to import the `index` 
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the [`grid-summary-theme`]({environment:sassApiUrl}/index.html#function-grid-summary-theme) and accepts the `$background-color`, `$focus-background-color`, `$label-color`, `$result-color`, `$pinned-border-width`, `$pinned-border-style` and `$pinned-border-color` parameters.
+Following the simplest approach, we create a new theme that extends the [grid-summary-theme]({environment:sassApiUrl}/index.html#function-grid-summary-theme) and accepts the `$background-color`, `$focus-background-color`, `$label-color`, `$result-color`, `$pinned-border-width`, `$pinned-border-style` and `$pinned-border-color` parameters.
 
 ```scss
 $custom-theme: grid-summary-theme(
@@ -540,7 +761,7 @@ The last step is to **include** the component mixins:
 ```
 
 >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
 :host {
@@ -552,7 +773,7 @@ The last step is to **include** the component mixins:
 
 ### Defining a Color Palette
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
 `igx-palette` generates a color palette based on the primary and secondary colors that are passed:
 
@@ -563,7 +784,7 @@ $green-color: #00ff2d;
 $my-custom-palette: palette($primary: $blue-color, $secondary: $green-color);
 ```
 
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
+And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $custom-theme: grid-summary-theme(
@@ -578,13 +799,13 @@ $custom-theme: grid-summary-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - [`_light-grid-summary`]({environment:sassApiUrl}/index.html#variable-_light-grid-summary):
+Extend one of the two predefined schemas, that are provided for every component, in this case - [_light-grid-summary]({environment:sassApiUrl}/index.html#variable-_light-grid-summary):
 
 ```scss
 // Extending the light grid summary schema
@@ -601,7 +822,7 @@ $my-summary-schema: extend($_light-grid-summary,
 );
 ```
 
-In order to apply our custom schema we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+In order to apply our custom schema we have to **extend** one of the globals ([light]({environment:sassApiUrl}/index.html#variable-light-schema) or [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
 
 ```scss
 // Extending the global light-schema
@@ -638,6 +859,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
+<!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
 * [Column Data Types](column-types.md#default-template)
@@ -656,7 +878,24 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- ComponentEnd: Grid -->
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [Column Data Types](column-types.md#default-template)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+<!-- end: Blazor -->
+
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

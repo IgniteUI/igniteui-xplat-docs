@@ -1,7 +1,7 @@
 ---
 title: Column Reordering & Moving in {Platform} {ComponentTitle} - Infragistics
 _description: Set custom column order & enable columns reordering via drag/drop mouse or touch gestures, or by using the {Platform} Column Moving API. Try {ProductName}!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -36,6 +36,14 @@ This allows to attach handlers for any event emitted by the element, otherwise t
     };
 ```
 
+```ts
+public headerTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
+    `;
+}
+```
+
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
 <code-view style="height:650px"
@@ -49,13 +57,21 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 
 **Column moving** feature is enabled on a per-grid level, meaning that the `{ComponentName}` could have either movable or immovable columns. This is done via the `Moving` input of the `{ComponentName}`.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Moving=true></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} moving="true"></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## API
 
@@ -117,12 +133,34 @@ There are several events related to the column moving to provide a means for tap
 
 You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to implement some custom logic when a column is dropped to a new position. For example, you can cancel dropping the **Category** column after the **Change On Year(%)** column in the following code snippet.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #dataGrid [data]="data" [autoGenerate]="false" [moving]="true" (columnMovingEnd)="onColumnMovingEnd($event)">
     <igx-column [field]="'Category'"></igx-column>
     <igx-column [field]="'Change On Year(%)'" [dataType]="'number'" ></igx-column>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
+    <igx-column field="Category"></igx-column>
+    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+</{ComponentSelector}>
+```
+```typescript
+constructor() {
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        dataGrid.data = this.data;
+        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onColumnMovingEnd(event) {
@@ -165,7 +203,7 @@ To get started with styling the `{ComponentName}` column moving headers, we need
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
-Following the simplest approach, we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the `$ghost-header-background`, `$ghost-header-text-color` and the `$ghost-header-icon-color` parameters.
+Following the simplest approach, we create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the `$ghost-header-background`, `$ghost-header-text-color` and the `$ghost-header-icon-color` parameters.
 
 ```scss
 // Define dark theme for the column moving
@@ -219,7 +257,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 
 > [!NOTE]
-> Thecolor andpalette are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](/components/themes/palettes.html) topic for detailed guidance on how to use them.
+> Thecolor andpalette are powerful functions for generating and retrieving colors. Please refer to [Palettes](/components/themes/palettes.html) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
@@ -273,7 +311,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -300,5 +338,5 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

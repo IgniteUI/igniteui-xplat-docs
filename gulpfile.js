@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.1/'
+var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.2/'
 
 var mt = null; // MarkdownTransformer
 var ml = null; // MappingLoader
@@ -94,47 +94,6 @@ function readMappings() {
     });
 }
 
-// function buildSharedFiles(cb) {
-//     console.log("buildSharedFiles");
-//     ensureEnvironment();
-
-//     let sharedTopics = [];
-
-//     let source = [
-//         // "doc/en/**/general-getting-started.md",
-//         "doc/en/**/_shared/*.md",
-//         "doc/jp/**/_shared/*.md",
-//         "doc/kr/**/_shared/*.md"];
-//     gulp.src(source)
-//     // .pipe(getSharedTopics)
-//     .pipe(es.map(function(file, fileCallback) {
-//         // finding all shared topics
-//         var fileContent = file.contents.toString();
-//         if (fileContent.indexOf("sharedComponents") > 0) {
-//             var info = { contents: fileContent, path: file.path };
-//             sharedTopics.push(info);
-//         }
-//         fileCallback(null, file);
-//     })
-//     .on("end", () => {
-//         // console.log("buildSharedFiles " + sharedTopics.length);
-//         // generating topics from shared topics
-//         var generatedFiles = [];
-//         for (const file of sharedTopics) {
-
-//             var files = transformer.transformSharedFile(file.contents, file.path,
-//                 docsComponents, docsConfig[PLAT]);
-//             generatedFiles.push(...files);
-//         }
-//         // console.log("transformSharedFiles ");
-//         // console.log(generatedFiles);
-//         transformer.updateGitIgnore(generatedFiles);
-
-//         cb();
-//     }));
-// }
-// exports.buildSharedFiles = buildSharedFiles;
-
 function transformFiles() {
     ensureEnvironment();
 
@@ -180,8 +139,7 @@ function transformStaticFiles(platformName) {
     return es.map(function(file, cb) {
 
       var fileContent = file.contents.toString();
-    //   var typeName = path.basename(path.dirname(file.path))
-
+      // var typeName = path.basename(path.dirname(file.path))
       var replacements = docsConfig[platformName].replacements;
       //console.log(typeName);
       for (var i = 0; i < replacements.length; i++) {
@@ -427,7 +385,7 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/general-nuget-feed.md');
     // excludedTopics.push('doc/**/general-installing-blazor.md');
     // excludedTopics.push('doc/**/grids/grids.md');
-    // excludedTopics.push('doc/**/grids/lob-grid/*.md');
+    // excludedTopics.push('doc/**/grids/grid/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
@@ -537,8 +495,9 @@ function buildPlatform(cb) {
 
         // uncomment to force building specific set of topics
         // let sources = [
-        //   'doc/en/components/grids/pivot-grid/overview.md',
-        //   'doc/en/components/grids/_shared/template.md',
+        //   'doc/en/components/grids/grid/overview.md',
+        //   'doc/en/components/grids/_shared/editing.md',
+        //   'doc/en/components/grids/data-grid.md',
         // //   'doc/en/**/*.md',
         // //   'doc/jp/**/*.md',
         // //   'doc/kr/**/*.md',

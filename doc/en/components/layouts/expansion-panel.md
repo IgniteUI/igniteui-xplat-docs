@@ -131,7 +131,7 @@ We can do this by binding to the `Opened` and `Closed` events:
 <div class="divider--half"></div>
 
 ## Component Customization
-The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
+The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [input](../inputs/input.md), charts and even other expansion panels!
 
 The `ExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 

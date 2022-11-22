@@ -1,6 +1,6 @@
 ---
 title: Blazor Webassembly | Blazor Excel Library | Infragistics
-_description: Infragistics Blazor Webassembly - How to read & write excel files to reduce serverload
+_description: Infragistics Blazor Webassembly - How to read & write excel files to reduce server load
 _keywords: Blazor Webassembly, excel library, read and write excel files, {ProductName}, Infragistics
 mentionedTypes: []
 ---
@@ -11,7 +11,7 @@ The [Infragistics Blazor Excel Library](https://www.infragistics.com/products/ig
 
 When you use the Infragistics Blazor Excel library on your [Blazor WebAssembly application](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started-blazor-client), it allows you to generate and download Excel-formatted files (.xlsx) on your web browser with ease. Generating an Excel file this way ensures the load of the Excel generation process is not concentrated on the web server side. Instead, the processing happens on the web browser.
 
-This article will guide you through the easiest ways to implement Blazor Excel library and will demonstrate how it all works by creating a sample application. 
+This article will guide you through the easiest ways to implement Blazor Excel library and will demonstrate how it all works by creating a sample application.
 
 Topics to be covered:
 * What is Blazor?
@@ -27,7 +27,7 @@ Topics to be covered:
 
 ## Blazor in a Nutshell: Understanding WebAssembly and Blazor Server
 
-In short, [Blazor](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) is an open source, cross-platform UI framework developed by Microsoft. It is used for building single-page web apps with .NET and C# instead of JavaScript. There are two ways to host web applications: [Blazor Server and Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly).
+In short, [Blazor](https://www.infragistics.com/products/ignite-ui-blazor/blazor/components/general-getting-started) is an open source UI framework developed by Microsoft. It is used for building single-page web apps with .NET and C# instead of JavaScript. There are two ways to host web applications: [Blazor Server and Blazor WebAssembly](https://www.infragistics.com/community/blogs/b/jason_beres/posts/blazor-server-vs-blazor-webassembly).
 
 Blazor WebAssembly, also known as WASM, is a standard developed by the [W3C](https://www.computerhope.com/jargon/w/w3c.htm) for creating software that runs in the web browser. It is compiled software that runs at near-native speeds on your CPU.
 
@@ -46,13 +46,13 @@ The source code of this sample application is published on [this GitHub reposito
 Due to the Cross-Origin Resource Sharing (CORS), we use the Blazor WebAssembly project hosted on the ASP.NET Core server to acquire the whole data, instead of the standalone Blazor WebAssembly project.
 
 However, as mentioned at the beginning, the Excel file generation is completed and processed in the web browser. The ASP.NET Core server side is only required to obtain and process the JMA disaster prevention information XML and provide the data in JSON format to the Blazor WebAssembly program running on the web browser.
-Also, there is no need to generate a completely new Excel file in the code - simply place an Excel file (.xlsx) on the web server. It will be used as a "template" with a bar chart configured in advance. Then, use the HttpClient on the Blazor WebAssembly app and fill each cell in the Excel file with the date and number of earthquakes. 
+Also, there is no need to generate a completely new Excel file in the code - simply place an Excel file (.xlsx) on the web server. It will be used as a "template" with a bar chart configured in advance. Then, use the HttpClient on the Blazor WebAssembly app and fill each cell in the Excel file with the date and number of earthquakes.
 
 After implementing the number of daily earthquake occurrences for the last 7 days, all the data will be displayed in the Ignite UI for Blazor grid. Next, follow the steps below to proceed with the Excel file generation.
 
 ### Adding NuGet Package
 
-In order to use the Blazor excel library, you need to add the following @using statement:
+In order to use the Blazor excel library, you need to install **IgniteUI.Blazor.Documents.Excel** package from NuGet and add the following namespace to your application:
 
 ```razor
 @using Infragistics.Documents.Excel
@@ -63,9 +63,9 @@ If you are using Visual Studio, you can add the NuGet "IgniteUI.Blazor.Documents
 To simplify the namespace description in the code described later, we will open the Infragistics.Documents.Excel namespace of the Infragistics Blazor Excel library in _Imports.razor in advance.
 
 ```razor
-@ * _Imports.razor * @
-@ using System.Net.Http
-@ using Infragistics.Documents.Excel @ * 👈 Add this line * @
+@* _Imports.razor *@
+@using System.Net.Http
+@using Infragistics.Documents.Excel @* 👈 Add this line *@
 ```
 
 ### Adding a Reference to a JavaScript File
@@ -92,12 +92,12 @@ This can be done by using the following code:
 @inject IJSRuntime JSRuntime
 ...
 @code {
-    ...
+    // ...
     // ⚠️ Note-To use the Excel library on Blazor WebAssembly,
     // you need to initialize the Workbook.InProcessRuntime static property.
     if (Workbook.InProcessRuntime == null )
     Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
-    ...
+    // ...
 ```
 
 ### Reading and Writing Excel Files Using the Workbook Class
@@ -112,12 +112,12 @@ Note that the download triggering process on Blazor applications used an MIT-lic
 ...
 @code
 {
-    ...
+    // ...
     private IEnumerable <EarthquakeCountParDay>? _EarthquakeCountParDays;
-    ...
+
     // <summary>
     // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel file and downloaded.
-    // </summary>  
+    // </summary>
     private async Task OnClickedDownloadAsync()
     {
         // ⚠️ Note-To use the Excel library on Blazor WebAssembly, you need to initialize the Workbook.InProcessRuntime static property.
@@ -144,7 +144,7 @@ Note that the download triggering process on Blazor applications used an MIT-lic
         workBook.Save (memStream);
         await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application / octet-stream" ,memStream.ToArray());
     }
-    ...
+    // ...
 ```
 
 As you can see, the entire processing of the Excel file is performed on the Web browser and nothing happens on the Web server side.  Therefore, even if several clients execute the Excel file generation at the same time, the load on the Web server side will not increase rapidly.
@@ -169,7 +169,7 @@ Starting with .NET 6, you can use a technique called "Ahead-Of-Time (AOT) compil
 
 ### Tips and Tricks #3 - Run on the server side
 
-Unlike Blazor WebAssembly, where .NET code is processed sequentially in an interpreted manner, the Infragistics Blazor Excel library runs on a Blazor Server or ASP.NET Core server at CPU-native speed with the Just-in-time (JIT) compiler. This ensures a significant improvement in the processing speed. 
+Unlike Blazor WebAssembly, where .NET code is processed sequentially in an interpreted manner, the Infragistics Blazor Excel library runs on a Blazor Server or ASP.NET Core server at CPU-native speed with the Just-in-time (JIT) compiler. This ensures a significant improvement in the processing speed.
 
 Of course, you can rewrite the entire application from Blazor WebAssembly to Blazor Server, or you can do it by replacing only the Excel file generation processing part with the Web API of the ASP.NET Core server, while keeping the Blazor WebAssembly application as is.
 
@@ -188,44 +188,44 @@ That’s why we suggest using the "delayed loading of assembly" technique (in 
 First, in the Blazor WebAssembly project file (.csproj), arrange the <BlazorWebAssemblyLazyLoad> elements inside the <ItemGroup> elements and list the names of the assembly files (.dll) that you want to lazy load.
 
 ```razor
-<!-Blazor WebAssembly project file (.csproj)->
+<!- Blazor WebAssembly project file (.csproj) ->
 <Project Sdk = "Microsoft.NET.Sdk.BlazorWebAssembly" >
-  ...
-  <!-Specify the file name of the assembly file (.dll) that you want to lazy load in the BlazorWebAssemblyLazyLoad element. ->  
+  <!-...->
+  <!-Specify the file name of the assembly file (.dll) that you want to lazy load in the BlazorWebAssemblyLazyLoad element. ->
   <ItemGroup>
-    <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Core.dll" /> 
+    <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Core.dll" />
     <BlazorWebAssemblyLazyLoad Include = "IgniteUI.Blazor.Documents.Excel.dll" />
   </ItemGroup>
-  ...
+  <!-...->
 </ Project>
 ```
 
 ### Load the assembly using LazyAssemblyLoader
 
-Next, implement the assembly specified as "lazy loading" so that it will be loaded automatically when there’s a need for it. To load the assembly, inject the service of the class that comes standard with Blazor WebAssembly LazyAssemblyLoader from the DI container and call its LoadAssembliesAsync() [asynchronous method](https://www.infragistics.com/community/blogs/b/infragistics/posts/angular-async-await).
+Next, implement the assembly specified as "lazy loading" so that it will be loaded automatically when there’s a need for it. To load the assembly, inject the service of the class that comes standard with Blazor WebAssembly LazyAssemblyLoader from the DI container and call its LoadAssembliesAsync().
 
 
 In this sample application, the assembly file of the Infragistics Blazor Excel library is loaded when the download button of the Excel file is clicked.
 
 ```razor
-@ using Microsoft.AspNetCore.Components.WebAssembly.Services
+@using Microsoft.AspNetCore.Components.WebAssembly.Services
 ...
 @inject LazyAssemblyLoader AssemblyLoader
 @code {
-    ... 
-    // <summary>  
-    // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel    file and downloaded.  
-    // </summary>  
-    private async Task OnClickedDownloadAsync() 
+    // ...
+    // <summary>
+    // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel    file and downloaded.
+    // </summary>
+    private async Task OnClickedDownloadAsync()
     {
-        // The assembly file (.dll) for which lazy loading was specified in the project file (IgbExcelDemo.Client.csproj) is now loaded using AssemblyLoader.  
-        // (Supplement: It's okay to call it over and over again, only .dlls that haven't been loaded yet will be loaded)  
+        // The assembly file (.dll) for which lazy loading was specified in the project file (IgbExcelDemo.Client.csproj) is now loaded using AssemblyLoader.
+        // (Supplement: It's okay to call it over and over again, only .dlls that haven't been loaded yet will be loaded)
         await this.AssemblyLoader.LoadAssembliesAsync(new [])
         {
             "IgniteUI.Blazor.Documents.Core.dll",
-            "IgniteUI.Blazor.Documents.Excel.dll" 
+            "IgniteUI.Blazor.Documents.Excel.dll"
         });
-    ...
+    // ...
 ```
 
 ### Separate the processing of the lazy loaded assembly into another scope
@@ -241,31 +241,31 @@ This exception occurs when a method that references a type that exists in the as
 ```razor
 ...
 @code {
-    ... 
-    // <summary>  
+    // ...
+    // <summary>
     // Called when the [Download] button is clicked, the data of the number of earthquake occurrences per day in the last week is stored in an Excel file and downloaded.
-    // </summary>  
-    private async Task OnClickedDownloadAsync() 
+    // </summary>
+    private async Task OnClickedDownloadAsync()
     {
-        ...
-        await this .AssemblyLoader.LoadAssembliesAsync ( new [] ) 
+        // ...
+        await this .AssemblyLoader.LoadAssembliesAsync ( new [] )
         {
-            "IgniteUI.Blazor.Documents.Core.dll", 
+            "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
         });
         // Lazy load the assembly, then call the method that uses the features in the lazy loaded assembly.
         // (If you refer to a function in a lazy-loaded assembly directly in a method that lazy-loads an assembly,
         // System.IO.FileNotFoundException: Could not load file or assembly exception will occur.)
-        Await this.DownloadAsExcelAsync(); 
+        Await this.DownloadAsExcelAsync();
     }
-    // <summary>  
+    // <summary>
     // Cut out the code that uses the Excel library into a separate method to enable lazy loading of the assembly.
-    // </summary>  
+    // </summary>
     private async ValueTask DownloadAsExcelAsync ()
     {
         // Read and write Excel files using the Workbook class in this method
     }
-    ...
+    // ...
 ```
 
 ## Summary and Key Article Takeaways

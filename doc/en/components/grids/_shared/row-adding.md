@@ -1,7 +1,7 @@
 ---
 title: Row Adding in {Platform} {ComponentTitle} - Infragistics
 _description: Learn how to use and customize the built-in row adding functionality with {Platform} and utilize intuitive grid row adding and CRUD capabilities.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -120,6 +120,74 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 </igx-hierarchical-grid>
 ```
 
+```html
+<igc-grid id="grid" primary-key="ProductID" auto-generate="false" row-editable="true">
+    <igc-column field="ProductID" header="Product ID" data-type="Number"></igc-column>
+    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
+    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
+    <igc-column field="UnitsInStock" header="UnitsInStock" data-type="Number"></igc-column>
+    <igc-column field="OrderDate" data-type="Date"></igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-grid>
+```
+
+```html
+<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
+    <igc-column field="Name" data-type="String"></igc-column>
+    <igc-column field="Title" data-type="String"></igc-column>
+    <igc-column field="HireDate" data-type="Date"></igc-column>
+    <igc-column field="OnPTO" data-type="Boolean" width="130px">
+    </igc-column>
+    <igc-column field="Age" data-type="Number"></igc-column>
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true">
+        </igc-grid-editing-actions>
+    </igc-action-strip>
+</igc-tree-grid>
+```
+
+```html
+<igc-hierarchical-grid id="hGrid"
+    auto-generate="false" primary-key="Debut" row-editable="true">
+    <igc-column field="Artist" data-type="String"></igc-column>
+    <igc-column field="HasGrammyAward" header="Has Grammy Award?" data-type="Boolean'">
+    </igc-column>
+    <igc-column field="Debut" data-type="Number"></igc-column>
+    <igc-column field="GrammyNominations" header="Grammy Nominations" data-type="Number"></igc-column>
+    <igc-column field="GrammyAwards" header="Grammy Awards" data-type="Number"></igc-column>
+
+    <igc-action-strip id="actionstrip1">
+        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+
+    <igc-row-island key="Albums" auto-generate="false" primary-key="USBillboard200" row-editable="true">
+        <igc-column field="Album" [data-type]="String"></igc-column>
+        <igc-column field="LaunchDate" header="Launch Date" data-type="Date"></igc-column>
+        <igc-column field="BillboardReview" header="Billboard Review" data-type="Number"></igc-column>
+        <igc-column field="USBillboard200" header="US Billboard 200" data-type="Number"></igc-column>
+        <igc-row-island key="Songs" auto-generate="false" primary-key="Number" row-editable="true">
+            <igc-column field="Number" header="No." data-type="Number"></igc-column>
+            <igc-column field="Title" data-type="String"></igc-column>
+            <igc-column field="Released" data-type="Date"></igc-column>
+            <igc-column field="Genre" data-type="String"></igc-column>
+
+            <igc-action-strip id="actionstrip3">
+                <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+            </igc-action-strip>
+
+        </igc-row-island>
+
+        <igc-action-strip id="actionstrip2">
+            <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+        </igc-action-strip>
+    </igc-row-island>
+</igc-hierarchical-grid>
+```
+
 > [!NOTE]
 > Setting primary key is mandatory for row adding operations.
 
@@ -164,7 +232,7 @@ this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid --> 
+<!-- ComponentStart: TreeGrid -->
 
 Using `BeginAddRowById` requires you to specify the row to use as context for the operation by its `RowID` (PK). The method then functions as though the end-user clicked on the add row action strip button for the specified row, spawning the UI under it. The second parameter controls if the row is added as a child to the context row or as a sibling. You can also make the UI spawn as the very first row in the grid by passing `null` for the first parameter.
 
@@ -233,6 +301,12 @@ Customizing the text of the row adding overlay is possible using the `RowAddText
 </ng-template>
 ```
 
+```ts
+public addRowTextTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`Adding Row`;
+}
+```
+
 ### Customizing Buttons
 
 Customizing the buttons of the row editing overlay is possible using the `RowEditActionsDirective`.
@@ -245,8 +319,19 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
+
+```ts
+public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+    return html`
+        <button onClick="${this.endRowEdit(false)}">Cancel</button>
+	    <button onClick="${this.endRowEdit(true)}">Apply</button>
+    `;
+}
+```
 > [!NOTE]
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
+
+<!-- Angular -->
 
 ## Remote Scenarios
 
@@ -261,6 +346,8 @@ In most remote data scenarios the Primary Key assignment happens on the create s
     Once the create request or batch update request is successfully completed and returns the added record instances (with their db generated ids), the related ADD transactions should be cleared from the transaction log using the `Clear` API method. This is necessary because the local transaction will have a generated id field, which may differ than the one created in the data base, so they should be cleared. You can then add the record(s) passed in the response to the local data instance.
 
 This will ensure that the remotely generated ids are always reflected in the local data, and subsequent update/delete operations target the correct record ids.
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -293,5 +380,5 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

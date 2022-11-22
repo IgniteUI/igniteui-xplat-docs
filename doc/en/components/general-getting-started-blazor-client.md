@@ -58,7 +58,6 @@ await builder.Build().RunAsync();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -86,7 +85,6 @@ public static async Task Main(string[] args)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

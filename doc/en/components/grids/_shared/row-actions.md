@@ -1,14 +1,14 @@
 ---
 title:  Row actions in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentName} provides the ability to use ActionStrip and utilize CRUD for row/cell components and row pinning.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentName}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The `{ComponentName}` component in {ProductName} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
 
 ## Usage
 
@@ -33,6 +33,7 @@ The predefined actions UI components are:
 
 They are added inside the `{ComponentName}` and this is all needed to have an `ActionStrip` providing default interactions.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [rowEditable]="true" [primaryKey]="'ID'">
     <igx-column *ngFor="let c of columns" [field]="c.field">
@@ -44,6 +45,7 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Data=northwindEmployees RowEditable="True" PrimaryKey="ID">
@@ -59,12 +61,27 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
     </{ComponentSelector}>
 ```
 
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" row-editable="true" primary-key="ID">
+    <igc-column field="field">
+    </igc-column>
+
+    <igc-action-strip id="actionStrip">
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
 >Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
 ## Custom Implementation
 
 These components expose templates giving flexibility for customization. For instance, if we would like to use the `ActionStripComponent` for a Gmail scenario with row actions such as **delete**, **edit** and etc. You can simply create button component with icon, add click event to it and insert it into the `ActionStripComponent`.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <igx-action-strip #actionstrip>
@@ -78,6 +95,7 @@ These components expose templates giving flexibility for customization. For inst
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <div class="grid__wrapper">
@@ -97,6 +115,17 @@ These components expose templates giving flexibility for customization. For inst
     </{ComponentSelector}>
 </div>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}>
+    <igc-action-strip #actionstrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions edit-row="true" delete-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -131,5 +160,5 @@ Additional components and/or directives that can be used within the Action Strip
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

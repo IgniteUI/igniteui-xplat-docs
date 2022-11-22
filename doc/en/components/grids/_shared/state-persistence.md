@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} State Persistence
 
-Тhe `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+The `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 
 ## Supported Features
 
@@ -16,17 +16,17 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **Advanced Filtering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **GroupBy**
+* **Columns**
     * **NEW**: Multi column headers are now supported out of the box
     * Columns order
     * Column properties defined by the `IColumnState` interface.
@@ -40,12 +40,12 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
     * saving/restoring features for all child grids down the hierarchy
 * `Sorting`
 * `Filtering`
-* `Advanced Filtering`
+* `AdvancedFiltering`
 * `Paging`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
-* `Row Pinning`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
+* `RowPinning`
 * `Expansion`
 * `Columns`
     * **NEW**: Multi column headers are now supported out of the box
@@ -59,11 +59,11 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 * `Sorting`
 * `Filtering`
-* `Cell Selection`
-* `Row Selection`
-* `Column Selection`
+* `CellSelection`
+* `RowSelection`
+* `ColumnSelection`
 * `Expansion`
-* `Pivot Configuration`
+* `PivotConfiguration`
     * Pivot Configuration properties defined by the `IPivotConfiguration` interface.
     * Pivot Dimension and Value functions are restored using application level code, see [Restoring Pivot Configuration](state-persistence.md#restoring-pivot-configuration) section.
     * Pivot Row and Column strategies are also restored using application level code, see [Restoring Pivot Strategies](state-persistence.md#restoring-pivot-strategies) section.
@@ -154,6 +154,30 @@ public restoreGridState() {
 Add blazor snippet for working with the sessionStorage
 ```
 
+```typescript
+private state: IgcGridStateDirective;
+
+constructor() {
+    this.router.events.pipe(take(1)).subscribe((event: NavigationStart) => {
+        this.saveGridState();
+    });
+}
+
+connectedCallback() {
+    this.restoreGridState();
+}
+
+public saveGridState() {
+    const state = this.state.getState() as string;
+    window.sessionStorage.setItem('grid1-state', state);
+}
+
+public restoreGridState() {
+    const state = window.sessionStorage.getItem('grid1-state');
+    this.state.setState(state);
+}
+```
+
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
 ## Restoring columns
@@ -177,6 +201,30 @@ Add blazor snippet for working with the sessionStorage
 Add snippet for grid
 ```
 
+```html
+<igc-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
+```
+
 <!-- ComponentEnd: Grid  -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -195,6 +243,30 @@ Add snippet for grid
 Add snippet for grid
 ```
 
+```html
+<igc-hierarchical-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
+```
+
 <!-- ComponentEnd: HierarchicalGrid  -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -211,6 +283,30 @@ Add snippet for grid
 
 ```razor
 Add sample
+```
+
+```html
+<igc-tree-grid id="grid">
+    <igc-column id="isActive" field="IsActive" header="IsActive">
+    </igc-column>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgctreeGridComponent;
+    var isActive = this.isActive = document.getElementById('isActive') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        grid.columnInit = this.gridColumnInit;
+        isActive.bodyTemplate = this.activeTemplate;
+    }
+    this._bind();
+}
+
+public activeTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<igc-checkbox checked="${ctx.cell.value}"></igc-checkbox>`;
+}
 ```
 
 <!-- ComponentEnd: TreeGrid  -->
@@ -233,6 +329,16 @@ public onColumnInit(column: IgxColumnComponent) {
 Add blazor handler for bodyTemplate
 ```
 
+```typescript
+public onColumnInit(column: IgcColumnComponent) {
+    if (column.field === 'IsActive') {
+        column.bodyTemplate = this.activeTemplate;
+        column.summaries = MySummary;
+        column.filters = IgcNumberFilteringOperand.instance();
+    }
+}
+```
+
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 
@@ -240,7 +346,7 @@ Add blazor handler for bodyTemplate
 
 ## Restoring Pivot Configuration
 
-`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [`limitations`](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
+`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `{ComponentName}` exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 

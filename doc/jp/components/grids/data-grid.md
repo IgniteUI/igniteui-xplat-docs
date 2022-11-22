@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド コンポーネント | リアルタイム {Platform} テーブル | インフラジスティックス
 _description: インフラジスティックスの {Platform} グリッド コンポーネントは、高速でリアルタイムの React データ グリッドを作成します。{ProductName} を使用したデータの表示方法について説明します。
 _keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 概要, データ バインディング, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -56,12 +56,12 @@ npm install --save {PackageInputs}
 
 <!-- Blazor -->
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbDataGridModule));
 ```
+
 <!-- end: Blazor -->
 
 <!-- React -->
@@ -95,14 +95,13 @@ ModuleManager.register(
 
 上記のオプションの `Grid` 機能を使用するには、以下のモジュールが必要です。
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbGridColumnOptionsModule),
-  typeof(IgbDataGridToolbarModule),
-  typeof(IgbSparklineModule)
+    typeof(IgbDataGridModule),
+    typeof(IgbDataGridToolbarModule),
+    typeof(IgbSparklineModule)
 );
 ```
 
@@ -451,7 +450,7 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 - [列アニメーション](data-grid-column-animation.md)
 - [列の選択](data-grid-column-chooser.md)
 - [列フィルタリング](data-grid-column-filtering.md)
-- [列移動](data-grid-column-moving.md)
+- [列の移動](data-grid-column-moving.md)
 - [列のオプション](data-grid-column-options.md)
 - [列サイズの変更](data-grid-column-resizing.md)
 - [列の並ソート](data-grid-column-sorting.md)

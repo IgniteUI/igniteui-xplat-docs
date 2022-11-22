@@ -1,11 +1,10 @@
 ---
-title: Advanced Filtering in {Platform} {ComponentTitle}- {ProductName}
+title: Advanced Filtering in {Platform} {ComponentTitle} for {ProductName}
 _description: Learn how to configure advanced filter of data with the {Platform} {ComponentTitle}. The grid advanced filtering is more convenient and engaging than ever.
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
-}
 
 
 # {Platform} {ComponentTitle} Advanced Filtering
@@ -38,16 +37,34 @@ In order to filter the data once you are ready with creating the filtering condi
 
 To enable the advanced filtering, the `AllowAdvancedFiltering` input property should be set to **true**.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
     <igx-grid-toolbar></igx-grid-toolbar>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 ```razor
 <{ComponentSelector} Data=data AutoGenerate="true" AllowAdvancedFiltering="true">
     <IgbGridToolbar></IgbGridToolbar>
 </{ComponentSelector}>
 ```
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="true" allow-advanced-filtering="true">
+    <igc-grid-toolbar></igc-grid-toolbar>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    let grid = (document.getElementById("grid") as IgcGridComponent);
+    this._bind = () => {
+            grid.data = this.data
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
@@ -76,6 +93,33 @@ ngAfterViewInit(): void {
     tree.filteringOperands.push(subTree);
 
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
+}
+```
+```typescript
+connectedCallback(): void {
+    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    tree.filteringOperands.push({
+        fieldName: 'ID',
+        condition: IgcStringFilteringOperand.instance().condition('contains'),
+        searchVal: 'a',
+        ignoreCase: true
+    });
+    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    subTree.filteringOperands.push({
+        fieldName: 'ContactTitle',
+        condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
+        searchVal: 'b',
+        ignoreCase: true
+    });
+    subTree.filteringOperands.push({
+        fieldName: 'CompanyName',
+        condition: IgcStringFilteringOperand.instance().condition('startsWith'),
+        searchVal: 'c',
+        ignoreCase: true
+    });
+    tree.filteringOperands.push(subTree);
+
+    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
 }
 ```
 
@@ -111,6 +155,12 @@ It's super easy to configure the advanced filtering to work outside of the `{Com
 </IgbAdvancedFilteringDialog>
 ```
 
+```html
+<igc-advanced-filtering-dialog grid="grid1">
+</igc-advanced-filtering-dialog>
+```
+
+<!-- end: Angular -->
 <!-- Angular -->
 
 ## Styling
@@ -137,31 +187,31 @@ Since we have other components inside the advanced filtering dialog, such as but
 ```scss
 $custom-button: button-theme(
     $disabled-color: gray,
-    ...
+
 );
 
 $custom-button-group: button-group-theme(
     $item-background:  #292826,
-    ...
+
 );
 
 $custom-input-group: input-group-theme(
     $box-background: #4a4a4a,
-    ...
+
 );
 
 $custom-chip: chip-theme(
     $background: #FFCD0F,
-    ...
+
 );
 
 $custom-drop-down: drop-down-theme(
     $background-color: #292826,
-    ...
+
 );
 ```
 
-In this example we only changed some of the parameters for the listed components, but the [`button-theme`]({environment:sassApiUrl}/index.html#function-button-theme), [`button-group-theme`]({environment:sassApiUrl}/index.html#function-button-group-theme), [`chip-theme`]({environment:sassApiUrl}/index.html#function-chip-theme), [`drop-down-theme`]({environment:sassApiUrl}/index.html#function-drop-down-theme), [`input-group-theme`]({environment:sassApiUrl}/index.html#function-input-group-theme) themes provide way more parameters to control their respective styling.
+In this example we only changed some of the parameters for the listed components, but the [button-theme]({environment:sassApiUrl}/index.html#function-button-theme), [button-group-theme]({environment:sassApiUrl}/index.html#function-button-group-theme), [chip-theme]({environment:sassApiUrl}/index.html#function-chip-theme), [drop-down-theme]({environment:sassApiUrl}/index.html#function-drop-down-theme), [input-group-theme]({environment:sassApiUrl}/index.html#function-input-group-theme) themes provide way more parameters to control their respective styling.
 
 The last step is to **include** the component mixins, each with its respective theme. We will also add some styles for other elements inside the advanced filtering dialog.
 
@@ -206,7 +256,7 @@ igx-advanced-filtering-dialog {
 >We scope most of the components' mixins within `igx-advanced-filtering-dialog`, so that these custom themes will affect only components nested in the advanced filtering dialog. Otherwise, other buttons, chips, inputs and dropdowns in the application would be affected too.
 
 >[!NOTE]
->If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+>If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -251,7 +301,7 @@ igx-advanced-filtering-dialog {
 
 ### Defining a Color Palette
 
-Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+Instead of hardcoding the color values like we just did, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
 `igx-palette` generates a color palette based on the primary and secondary colors that are passed:
 
@@ -260,7 +310,7 @@ $yellow-color: #FFCD0F;
 $black-color: #292826;
 $dark-palette: palette($primary: $yellow-color, $secondary: $black-color);
 ```
-And then with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
+And then with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) we can easily retrieve color from the palette.
 
 ```scss
 $custom-grid: grid-theme(
@@ -269,38 +319,38 @@ $custom-grid: grid-theme(
 
 $custom-button: button-theme(
     $disabled-color: color($dark-palette, "secondary", 100),
-    ...
+
 );
 
 $custom-button-group: button-group-theme(
     $item-background: color($dark-palette, "secondary", 400),
-    ...
+
 );
 
 $custom-input-group: input-group-theme(
     $box-background: color($dark-palette, "secondary", 200),
-    ...
+
 );
 
 $custom-chip: chip-theme(
     $background: color($dark-palette, "primary", 400),
-    ...
+
 );
 
 $custom-drop-down: drop-down-theme(
     $background-color: color($dark-palette, "secondary", 400),
-    ...
+
 );
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [`Palettes`](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend one of the two predefined schemas, that are provided for every component, in this case - [`light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid), [`light-button`]({environment:sassApiUrl}/index.html#variable-_light-button), [`light-button-group`]({environment:sassApiUrl}/index.html#variable-_light-button-group), [`light-chip`]({environment:sassApiUrl}/index.html#variable-_light-chip), [`light-input-group`]({environment:sassApiUrl}/index.html#variable-_light-input-group) and [`light-drop-down`]({environment:sassApiUrl}/index.html#variable-_light-drop-down) schemas:
+Extend one of the two predefined schemas, that are provided for every component, in this case - [light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid), [light-button]({environment:sassApiUrl}/index.html#variable-_light-button), [light-button-group]({environment:sassApiUrl}/index.html#variable-_light-button-group), [light-chip]({environment:sassApiUrl}/index.html#variable-_light-chip), [light-input-group]({environment:sassApiUrl}/index.html#variable-_light-input-group) and [light-drop-down]({environment:sassApiUrl}/index.html#variable-_light-drop-down) schemas:
 
 ```scss
 $grid-dark-palette: palette($primary: #11bd7b, $secondary: #e32057, $info: $black-color);
@@ -318,7 +368,7 @@ $custom-button-schema: extend($_light-button,
         disabled-color:(
            color: ("secondary", 100)
         ),
-        ...
+
     )
 );
 
@@ -327,7 +377,7 @@ $custom-button-group-schema: extend($_light-button-group,
         item-background:(
            color: ("secondary", 400)
         ),
-        ...
+
     )
 );
 
@@ -336,7 +386,7 @@ $custom-input-group-schema: extend($_light-input-group,
         box-background:(
            color: ("secondary", 200)
         ),
-        ...
+
     )
 );
 
@@ -345,7 +395,7 @@ $custom-chip-schema: extend($_light-chip,
         background:(
            color: ("primary", 400)
         ),
-        ...
+
     )
 );
 
@@ -354,12 +404,12 @@ $custom-drop-down-schema: extend($_light-drop-down,
         background-color:(
            color: ("secondary", 400)
         ),
-        ...
+
     )
 );
 ```
 
-In order to apply our custom schemas we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
+In order to apply our custom schemas we have to **extend** one of the globals ([light]({environment:sassApiUrl}/index.html#variable-light-schema) or [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component themes:
 
 ```scss
 $custom-light-schema: extend($light-schema,(
@@ -414,7 +464,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -439,5 +489,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLower})

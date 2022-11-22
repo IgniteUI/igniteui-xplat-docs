@@ -158,6 +158,22 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 ```html
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
+```html
+<igc-grid id="grid1" primary-key="ProductID">
+</igc-grid
+```
+```ts
+constructor() {
+        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+        this._bind = () => {
+            grid.data = this.data
+            grid.gridKeydown = this.customKeydown
+        }
+        this._bind();
+
+    }
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -250,7 +266,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 <!-- Angular -->
 
 Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the `Grammy Nominations` column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
+- Double click or press <kbd>F2</kbd> key on a cell in the **Grammy Nominations** column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 #### Demo
@@ -303,34 +319,16 @@ Use the demo below to try out the custom scenarios that we just implemented:
 |--- |--- |
 | Navigating inside а grid with scrollable parent container. | If the grid is positioned inside a scrollable parent container and the user navigates to a grid cell that is out of view, parent container will not be scrolled.|
 
-## API References
-
-* [{ComponentTitle} Component API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-
 <!-- Angular -->
 
-* [{ComponentTitle}Component Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
+## API References
+
+* [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
+* [{ComponentTitle} Styles]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
 
 ## Additional Resources
-
-<div class="divider--half"></div>
-
-<!-- ComponentStart: TreeGrid -->
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
-* [Grid Keyboard Navigation](../grid/keyboard-navigation.md)}
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: Grid -->
-* [Hierarchical Grid Keyboard Navigation](../hierarchicalgrid/keyboard-navigation.md)}
-* [Tree Grid Keyboard Navigation](../treegrid/keyboard-navigation.md)}
-<!-- ComponentEnd: Grid -->
 
 * [{ComponentTitle} Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
@@ -342,9 +340,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
-<div class="divider--half"></div>
-
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

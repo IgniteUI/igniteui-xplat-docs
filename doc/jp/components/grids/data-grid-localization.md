@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | ローカリゼーション | インフラジスティックス
 _description: ローカリゼーションをサポートするインフラジスティックスの {ProductName} データ テーブルとグリッドを試しましょう。{ProductName} テーブルのチュートリアルをご覧ください。
 _keywords: {Platform} テーブル、データ グリッド、セル アクセシビリティ、{ProductName}、インフラジスティック
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---

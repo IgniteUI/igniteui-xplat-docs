@@ -63,7 +63,7 @@ input.value = date;
 時刻のみの文字列は通常、`ECMA` 仕様では定義されていませんが、時刻のみのソリューションを必要とするシナリオにディレクティブを統合できるようにするために、24 時間形式 (`HH:mm:ss`) をサポートしています。12 時間形式はサポートされていません。
 
 ##### 完全な ISO 文字列
-完全な ISO 文字列がバインドされている場合、ディレクティブは、[`Date.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
+完全な ISO 文字列がバインドされている場合、ディレクティブは、[Date.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#date_time_string_format) に必要なすべての要素が提供されている場合にのみそれを解析します。
 
 `InvalidDate` を含むすべての falsy の値は、`null` として解析されます。不完全な日付のみ、時間のみ、または完全な `ISO` 文字列は、`InvalidDate` として解析されます。
 
@@ -87,7 +87,7 @@ input.value = date;
 
 `DateTimeInput` は、さまざまな表示形式と入力形式をサポートしています。
 
-[`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`displayFormat` が指定されていない場合、コンポーネントは `inputFormat` をそのまま使用します。
+[Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) を使用して、`long` と `short`、`medium` と `full` などの事前定義された書式オプションをサポートできるようにします。さらに、`dd-MM-yy` などのサポートされている文字から構築されたカスタム文字列を受け入れることもできます。また、`displayFormat` が指定されていない場合、コンポーネントは `inputFormat` をそのまま使用します。
 
 ### 入力書式
 次の表は、コンポーネントの `inputFormat` でサポートされている形式を示しています。
@@ -228,7 +228,7 @@ input.spinDelta = spinDelta;
 
 ## スタイル設定
 
-`DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#styling)を参照してください。
+`DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
 
 <!-- WebComponents -->
 

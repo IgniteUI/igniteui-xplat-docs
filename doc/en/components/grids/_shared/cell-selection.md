@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} Cell Selection
 
-The selection feature enables rich data select capabilities in the Ignite UI for {Platform} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
+The selection feature enables rich data select capabilities in the {ProductName} `{ComponentName}`. A variety of events and single select actions are available thanks to the powerful API and easy to use methods. The `{ComponentName}` now supports three modes for cell selection, and you can easily switch between them by changing `CellSelection` property. You can disable cell selection, you can select only one cell within the grid or to select multiple cells in the grid, which is provided as default option.
 
 <!-- ComponentStart: HierarchicalGrid -->
 In the `{ComponentName}` you can specify the cell selection mode on grid level. So for example in the parent grid multi-cell selection can be enabled, but in child grids cell selection mode can be single or disabled.
@@ -166,7 +166,7 @@ The multi-cell selection is index based (DOM elements selection).
 - `Resizing` - On column resizing selected cells will not be cleared.
 - `Hiding` - It will not clear the selected cells. If column is hidden, the cells from the next visible column will be selected.
 - `Pinning` - Selected cell will not be cleared. Same as hiding
-- `Group by` - On column grouping selected cells will not be cleared.
+- `GroupBy` - On column grouping selected cells will not be cleared.
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -188,7 +188,7 @@ To get started with styling the selection, we need to import the `index` file, w
 
 ### Define Colors
 
-Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
+Once done, we can make use of the [igx-contrast-color]({environment:sassApiUrl}/index.html#function-igx-contrast-color) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions. With them, we define the colors we would like to use for our selection range:
 ```scss
     $text-color:contrast-color($default-palette, 'primary', 900);
     $background-color: color($default-palette, "primary", 900);
@@ -197,7 +197,7 @@ Once done, we can make use of the [`igx-contrast-color`]({environment:sassApiUrl
 
 ### Create Custom Theme
 
-Next we create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) passing our `text-color`, `background-color` and `border-yellow` variables as `$cell-selected-text-color`, `$cell-selected-background` and `$cell-active-border-color`, respectively:
+Next we create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) passing our `text-color`, `background-color` and `border-yellow` variables as `$cell-selected-text-color`, `$cell-selected-background` and `$cell-active-border-color`, respectively:
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -216,7 +216,7 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
 ```
 
  >[!NOTE]
- >If the component is using an [`Emulated ViewEncapsulation`](../themes/sass/component-themes.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
+ >If the component is using an [Emulated ViewEncapsulation](../themes/sass/component-themes.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
  > We scope the style under `:host` selector so as not to affect any other grids we might have in our application.
 
  ```scss
@@ -239,7 +239,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->
 
@@ -247,11 +247,14 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 * `{ComponentName}`
 <!-- ComponentStart: Grid, HierarchicalGrid -->
-* `GridRow`
-<!-- ComponentEnd: Grid, HierarchicalGrid -->
 
+* `GridRow`
+
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
 <!-- ComponentStart: TreeGrid -->
+
 * `TreeGridRow`
+
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
 
@@ -270,5 +273,5 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

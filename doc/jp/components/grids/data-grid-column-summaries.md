@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | 列集計 | インフラジスティックス
 _description: Infragistics のグリッド コンポーネントの列集計機能を使用して、件数、最大値、最小値などの集計データを表示します。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, column, summaries, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, 集計, インフラジスティックス
-mentionedTypes: ['Grid', 'SummaryScope', 'GroupSummaryDisplayMode']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.SummaryScope', 'Infragistics.Controls.Grid.Implementation.GroupSummaryDisplayMode']
 namespace: Infragistics.Controls
 _language: ja
 ---

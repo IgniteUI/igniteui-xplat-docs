@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Column Options | Infragistics
 _description: See how Infragistics' {ProductName} Data Grid supports the ability to pin, move, filter, and sort columns individually through a drop down UI from each column header. Check out {ProductName} table's column option!
 _keywords: {Platform} Table, Data Grid, column options, {ProductName}, Infragistics
-mentionedTypes: ['Grid', 'HeaderClickAction', 'IsColumnOptionsEnabled', 'IsFilteringEnabled', 'Column']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.HeaderClickAction', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

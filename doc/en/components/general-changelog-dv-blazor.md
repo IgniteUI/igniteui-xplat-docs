@@ -2,7 +2,7 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
@@ -11,12 +11,19 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2}**
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
+### New Components
 
-These new chart improvements include: 
+* [Grid](grids/grid/overview.md)
+* [TreeGrid](grids/tree-grid/overview.md)
 
-* Responsive layouts for horizontal label rotation based on browser / screen size. 
-* Enhanced rendering for rounded labels on all platforms. 
+### {PackageCharts}
+
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
+
+These new chart improvements include:
+
+* Responsive layouts for horizontal label rotation based on browser / screen size.
+* Enhanced rendering for rounded labels on all platforms.
 * Added marker properties to StackedFragmentSeries.
 * Added `ShouldPanOnMaximumZoom` property.
 * New Category Axis Properties:
@@ -25,7 +32,7 @@ These new chart improvements include:
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -95,13 +102,13 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-- Changed `ValueField` property from type string[] to string. 
+- Changed `ValueField` property from type string[] to string.
 
 ### {PackageInputs}
 
 - A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
-#### Date Picker 
+#### Date Picker
 - Changed `ValueChanged` event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox

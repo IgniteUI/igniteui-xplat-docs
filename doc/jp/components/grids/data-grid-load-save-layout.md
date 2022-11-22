@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | リアルタイム データ グリッドとテーブル | 読み込みと保存 | インフラジスティックス
 _description: ユーザーが作成したレイアウトの読み込みと保存をサポートするインフラジスティックスの {ProductName} データ テーブルとグリッドをお試しください。
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -29,7 +29,7 @@ _language: ja
 
 - [列の表示状態](data-grid-column-chooser.md)
 - [列のピン固定](data-grid-column-pinning.md)
-- [列移動](data-grid-column-moving.md)
+- [列の移動](data-grid-column-moving.md)
 - [列のサイズ変更](data-grid-column-resizing.md)
 - [行グループ](data-grid-row-grouping.md)
 - [列のソート](data-grid-column-sorting.md)

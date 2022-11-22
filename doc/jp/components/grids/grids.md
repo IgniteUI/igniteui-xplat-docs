@@ -176,7 +176,7 @@ div#faqs-accordion-wrapper {
 
 <!-- React -->
 
-Angular データ グリッド/データ テーブルは、一連の行と列で表データを表示するために使用されるコンポーネントです。テーブルとも呼ばれるデータ グリッドは、Microsoft Excel などの一般的なソフトウェアでデスクトップの世界でよく知られています。グリッドはデスクトップ プラットフォームで長い間利用されてきますが、最近 {Platform} UI などの Web アプリ UI の一部になりました。最新のグリッドは複雑で、データ バインディング、編集、Excel のようなフィルタリング、カスタム並べ替え、グループ化、行の並べ替え、行と列の固定、行の集計、Excel、CSV、PDF 形式のエクスポートなど、さまざまな機能および機能が含まれる場合があります。
+Angular データ グリッド/データ テーブルは、一連の行と列で表データを表示するために使用されるコンポーネントです。テーブルとも呼ばれるデータ グリッドは、Microsoft Excel などの一般的なソフトウェアでデスクトップの世界でよく知られています。グリッドはデスクトップ プラットフォームで長い間利用されてきますが、最近 {Platform} UI などの Web アプリ UI の一部になりました。最新のグリッドは複雑で、データ バインディング、編集、Excel のようなフィルタリング、カスタム ソート、グループ化、行の並べ替え、行と列の固定、行の集計、Excel、CSV、PDF 形式のエクスポートなど、さまざまな機能および機能が含まれる場合があります。
 
 <!--end: React -->
 
@@ -902,7 +902,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列の非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列の集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
     <li>[ピン固定列](data-grid-column-pinning.md)</li>
@@ -930,7 +930,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列の非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列の集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
 </ul>
@@ -957,7 +957,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
     <li>[セル テンプレート](data-grid-column-types.md#template-column)</li>
     <li>[列フィルタリング](data-grid-column-filtering.md)</li>
     <li>[列非表示](data-grid-column-chooser.md)</li>
-    <li>[列移動](data-grid-column-moving.md)</li>
+    <li>[列の移動](data-grid-column-moving.md)</li>
     <li>[列集計](data-grid-column-summaries.md)</li>
     <li>[カスタム ツールバー](data-grid-column-chooser.md#toolbars-column-chooser-ui)</li>
 </ul>
@@ -1016,7 +1016,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/{ProductSpinal}-help">{Platform} サポート ホーム ページ</a>をご覧ください。</li>
             <li>{Platform} [ドキュメント](..\general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite UI for {Platform}">{Platform} ブログをご覧ください。</a> </li>
+            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
             <li>アカウントにサインインした後、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity">サポート ケースを送信します。</a> </li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションをお試しください。</a></li>
         </ul>

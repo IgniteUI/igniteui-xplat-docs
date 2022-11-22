@@ -2,66 +2,55 @@
 title: {Platform} {ComponentTitle} ページング - インフラジスティックス
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, ページング, インフラジスティックス
+_keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
 _language: ja
 ---
 
 # {Platform} {ComponentTitle} ページネーションの概要
 
-改ページは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。{Platform} テーブルのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。{ComponentTitle} ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、{ComponentTitle} のページネーションはカスタム ページのテンプレートをサポートしています。
+ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。{Platform} テーブルのページネーションにより、ユーザー エクスペリエンスとデータ操作が向上します。`{ComponentName}` ページネーションは、列の追加と同様に、`Paginator` タグを定義することにより、グリッド ツリーに投影された別のコンポーネントを介して構成できます。他の {Platform} テーブルと同様に、`{ComponentName}` のページネーションはカスタム ページのテンプレートをサポートしています。
 
 ## {Platform} {ComponentTitle} ページネーションの例
 
-次の例は {ComponentTitle} のページネーションを表し、ページごとの項目のオプションの使用法とページングを有効にする方法を公開します。ユーザーは、[最後のページに移動] ボタンと [最初のページに移動] ボタンを使用して {ComponentTitle} ページをすばやく移動することもできます。
+次の例は `{ComponentName}` のページネーションを表し、ページごとの項目のオプションの使用法とページングを有効にする方法を公開します。ユーザーは、[最後のページに移動] ボタンと [最初のページに移動] ボタンを使用して `{ComponentName}` ページをすばやく移動することもできます。
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-sample"
-           github-src="{ComponentSample}/paging-sample"
-           alt="{Platform} {ComponentName} ページネーションの例">
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
+           github-src="{ComponentSample}/row-paging-basic"
+           alt="{Platform} {ComponentTitle} ページネーションの例">
 </code-view>
 
-[Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。{ComponentTitle} を更新して、ページングを有効にしましょう:
+<!-- Angular -->
 
-<!-- ComponentStart: Grid -->
+[Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう:
+
+<!-- end: Angular -->
+
+<!-- Angular -->
 ```html
-<igx-grid #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
+<{ComponentSelector} #grid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
     <igx-paginator [perPage]="10">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<{ComponentSelector} @ref=grid Width="100%" Height="500px" Data=marketData DisplayDensity="DisplayDensity.Cosy">
+    <IgbPaginator PerPage="10"></IgbPaginator>
+</{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
+<!-- WebComponents -->
 ```html
-<igx-hierarchical-grid #hierarchicalGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-hierarchical-grid>
+<{ComponentSelector} id="grid" height="500px" width="100%" display-density="Cosy">
+    <igc-paginator per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
 
-```razor
-TO-DO H-GRID CODE SNIPPET
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #treeGrid [data]="data" [height]="'500px'" [width]="'100%'" [displayDensity]="'cosy'">
-    <igx-paginator [perPage]="10">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-<!-- ComponentEnd: TreeGrid -->
-
+<!-- Angular -->
 ```html
 <igx-paginator #paginator [totalRecords]="20">
     <igx-paginator-content>
@@ -79,17 +68,14 @@ TO-DO TREEGRID CODE SNIPPET
     </igx-paginator-content>
 </igx-paginator>
 ```
-
-```razor
-TO-DO CODE SNIPPET
-```
+<!-- end: Angular -->
 
 <!-- ComponentStart: Grid -->
 ## グループ化によるページング
 
 グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。
 
-ページングとグループ化の統合については、[グループ化](groupby.md#grid-group-by-with-paging)のトピックで説明しています。
+ページングとグループ化の統合については、[グループ化](groupby.md#grid-ページングでグループ化)のトピックで説明しています。
 
 <!-- ComponentEnd: Grid -->
 
@@ -97,21 +83,53 @@ TO-DO CODE SNIPPET
 
 以下の例では、`Paginator` コンポーネントを `{ComponentName}` コンポーネントと一緒に使用していますが、ページング機能が必要な場合は、他のコンポーネントと一緒に使用できます。
 
-<!-- ComponentStart: Grid -->
+<!-- ComponentStart: Grid, TreeGrid -->
+
+<!-- Angular -->
 ```html
-<igx-grid #grid [data]="data">
+<{ComponentSelector} #grid [data]="data">
     <igx-paginator #paginator [(page)]="grid.page" [totalRecords]="grid.totalRecords" [(perPage)]="10"
             [selectOptions]="selectOptions" [displayDensity]="grid.displayDensity">
     </igx-paginator>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
-TO-DO GRID CODE SNIPPET
+<{ComponentSelector} @ref=grid Data=marketData DisplayDensity="DisplayDensity.Compact">
+    <IgbPaginator Page="grid.Page" TotalRecords="grid.TotalRecords" PerPage="10" DisplayDensity="grid.DisplayDensity">
+    </IgbPaginator>
+</{ComponentSelector}>
 ```
-<!-- ComponentEnd: Grid -->
 
+<!-- Angular -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-paginator id="paginator" per-page="10">
+    </igc-paginator>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var paginator = this.paginator = document.getElementById('paginator') as IgcPaginatorComponent;
+
+    this._bind = () => {
+        grid.data = this.data;
+        paginator.page = grid.page;
+        paginator.totalRecords = grid.totalRecords;
+        paginator.selectOption = selectOptions;
+        paginator.displayDensity = grid.displayDensity;
+    }
+    this._bind();
+}
+```
+<!-- end: Angular -->
+
+<!-- ComponentEnd: Grid, TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
+
 ```html
 <igx-hierarchical-grid>
     <igx-column *ngFor="let c of hColumns" [field]="c.field">
@@ -133,33 +151,17 @@ TO-DO GRID CODE SNIPPET
 ```razor
 TO-DO H-GRID CODE SNIPPET
 ```
-<!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #treeGrid [data]="data">
-    <igx-paginator #paginator [(page)]="treeGrid.page" [totalRecords]="treeGrid.length" [(perPage)]="10"
-            [selectOptions]="selectOptions" [displayDensity]="treeGrid.displayDensity">
-    </igx-paginator>
-</igx-tree-grid>
-```
-
-```razor
-TO-DO TREEGRID CODE SNIPPET
-```
-<!-- ComponentEnd: TreeGrid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
 ### 子グリッド内のページネーター設定
 
-IgxHierarchicalGrid の子グリッドの実装方法および DI スコープの動作には一定の制限があるため、igx-row-island タグ内でページネーターコンポーネントを定義する場合、ページネーター自体で IgxPaginator ディレクティブを必ず使用してください。これにより、子グリッドが参照として正しいページネーター インスタンスを持つようになります。
+`{ComponentName}` の子グリッドの実装方法および DI スコープの動作には一定の制限があるため、`RowIsland` タグ内でページネーターコンポーネントを定義する場合、ページネーター自体で `Paginator` ディレクティブを必ず使用してください。これにより、子グリッドが参照として正しいページネーター インスタンスを持つようになります。
 
 ```html
-<igx-hierarchical-grid>    
-    <igx-row-island>        
-        <igx-grid-toolbar *igxPaginator>           
+<igx-hierarchical-grid>
+    <igx-row-island>
+        <igx-grid-toolbar *igxPaginator>
         </igx-grid-toolbar>
-    </igx-row-island>    
+    </igx-row-island>
 </igx-hierarchical-grid>
 ```
 
@@ -170,28 +172,34 @@ TO-DO H-GRID CODE SNIPPET
 
 ### ページネーター コンポーネントのデモ
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-reusable-paginator"
-           github-src="{ComponentSample}/reusable-paginator"
-           alt="{Platform} {ComponentName} 再利用可能なページネーターの例">
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
+           github-src="{ComponentSample}/row-paging-options"
+           alt="{Platform} {ComponentTitle} 再利用可能なページネーターの例">
 </code-view>
 
 <div class="divider--half"></div>
 
+<!-- Angular -->
+
 ## リモート ページング
 
-リモート ページングは、データ取得を担当するサービスと、グリッドの構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[`@@igComponent リモート データ操作`](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
+リモート ページングは、データ取得を担当するサービスと、`{ComponentName}` の構築とデータ サブスクリプションを担当するコンポーネントを宣言することで実現できます。詳細については、[リモート データ操作](remote-data-operations.md#リモート-ページング)トピックをご覧ください。
 
 <!-- ComponentStart: Grid -->
 
 ## カスタム テンプレートのリモート ページング
 
-独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#カスタム-igx-paginator-content-のリモート-ページングt)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
+独自のページング動作を定義するために、`PaginatorContent` を使用してカスタム ロジックを追加できます。[このセクション](remote-data-operations.md#カスタム-igx-paginator-content-のリモート-ページング)では、上記を実証するために、リモート ページングの例を拡張する方法を説明します。
 
 <!-- ComponentEnd: Grid -->
 
-## Angular の各ページ スタイリング
+<!-- end: Angular -->
+
+<!-- Angular -->
+
+## {Platform} の各ページ スタイリング
 
 ページネーターのスタイル設定は、すべてのテーマ関数とコンポーネント ミックスインが存在する `index` ファイルをインポートする必要があります。
 
@@ -200,7 +208,7 @@ TO-DO H-GRID CODE SNIPPET
 
 // IMPORTANT: Prior to Ignite UI for Angular version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
-``` 
+```
 
 最も簡単な方法は、`PaginatorTheme` を拡張する新しいテーマを作成し、`$text-color`、`$background-color`、`$border-color` パラメーターを受け取る方法です。
 
@@ -240,7 +248,7 @@ $dark-button: button-theme(
 >`Button` ミックスインを `.igx-paginator__pager` 内でスコープして、ページネーター ボタンのみにスタイルが設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
  >[!NOTE]
- >コンポーネントが [`Emulated`](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+ >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {
@@ -257,7 +265,7 @@ $dark-button: button-theme(
 
 上記のように色の値をハードコーディングする代わりに、`Palette` および `Color` 関数を使用することによって色に関してより高い柔軟性を持つことができます。
 
-`Palette` 渡されたプライマリ カラーとセカンダリ カラーに基づいてカラー パレットを生成します。
+`Palette` は渡された一次色と二次色に基づいてカラーパレットを生成します。
 
 ```scss
 $yellow-color: #F9D342;
@@ -288,7 +296,7 @@ $dark-button: button-theme(
 ```
 
 >[!NOTE]
->`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[`パレット`](../themes/sass/palettes.md)のトピックを参照してください。
+>`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
 
@@ -362,14 +370,18 @@ $dark-button: button-theme(
 
 ### ページネーション スタイルの例
 
-<code-view style="height:550px" 
-           data-demos-base-url="{environment:demosBaseUrl}" 
-           iframe-src="{environment:demosBaseUrl}/{ComponentSample}-paging-style"
-           github-src="{ComponentSample}/paging-style"
-           alt="{Platform} {ComponentName} ページングのスタイル設定の例">
+<!-- NOTE this sample is differed -->
+
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
+           github-src="{ComponentSample}/row-paging-style"
+           alt="{Platform} {ComponentTitle} ページング スタイルの例">
 </code-view>
 
 <div class="divider--half"></div>
+
+<!-- end: Angular -->
 
 ## API リファレンス
 * `{ComponentName}`
@@ -389,12 +401,5 @@ $dark-button: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-<!-- Angular -->
-* [Ignite UI for Angular **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-angular)
-* [Ignite UI for Angular **GitHub** (英語)](https://github.com/IgniteUI/igniteui-angular)
-<!-- end: Angular -->
-
-<!-- Blazor -->
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-<!-- end: Blazor -->
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

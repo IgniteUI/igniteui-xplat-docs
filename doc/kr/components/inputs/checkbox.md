@@ -47,7 +47,7 @@ To get started with the checkbox web component, first you need to install the {P
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";

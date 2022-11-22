@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Display Density
 
-The **{ComponentName}** design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
+The `{ComponentName}` design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
 
 ## {Platform} {ComponentTitle} Display Density Example
 
@@ -23,15 +23,24 @@ The **{ComponentName}** design is based on [Material Design Guidelines](https://
 
 As you can see in the demo above, the `{ComponentName}` provides three density options:  **compact**, **cosy** and **comfortable**. The code snippet below shows how to set `DisplayDensity`:
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} DisplayDensity="DisplayDensity.Cosy" Data=northwindEmployees @ref=grid>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" display-density="Cosy" >
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 or
 
@@ -74,6 +83,23 @@ Let's now continue with our sample and see in action how the `DisplayDensity` is
         @ref="displayDensityEditor">
         </IgbPropertyEditorPropertyDescription>
     </IgbPropertyEditorPanel>
+</div>
+```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="propertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
 </div>
 ```
 
@@ -335,6 +361,94 @@ Now we can add the markup.
     </div>
 </div>
 ```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="PropertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+<igc-grid id="grid" width="100%" height="550px" allow-filtering="true">
+    <igc-column-group  header="Customer Information">
+    <igc-column field="CustomerName" header="Customer Name" data-type="String" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column-group  header="Customer Address">
+        <igc-column field="Country" header="Country" data-type="String" sortable="true" has-summary="true">
+        </igc-column>
+        <igc-column field="City" header="City" data-type="String" sortable="true" has-summary="true">
+        </igc-column>
+        <igc-column field="Address" header="Address" data-type="String" sortable="true" has-summary="true">
+        </igc-column>
+        <igc-column field="PostalCode" header="Postal Code" data-type="String" sortable="true" has-summary="true">
+        </igc-column>
+    </igc-column-group>
+    </igc-column-group>
+    <igc-column field="Salesperson" header="Sales Person" data-type="String" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="ShipperName" header="Shipper Name"  data-type="String" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column field="OrderDate" header="Order Date"  data-type="Date" sortable="true" has-summary="true">
+    </igc-column>
+    <igc-column-group  header="Product Details">
+        <igc-column field="ProductID" header="ID" data-type="String" sortable="true" has-summary="true" filterable="false">
+        </igc-column>
+        <igc-column field="ProductName" header="Name" data-type="String" sortable="true" has-summary="true" filterable="false">
+        </igc-column>
+        <igc-column field="UnitPrice" header="Unit Price" data-type="Number" sortable="true" has-summary="true" filterable="false">
+        </igc-column>
+        <igc-column field="Quantity" header="Quantity" data-type="Number" sortable="true" has-summary="true" filterable="false">
+        </igc-column>
+        <igc-column field="Discontinued" header="Discontinued" data-type="Boolean" sortable="true" has-summary="true" >
+        </igc-column>
+    </igc-column-group>
+    <igc-column-group  header="Shipping Information">
+        <igc-column field="ShipName" header="Name" data-type="String" sortable="true" has-summary="true" >
+        </igc-column>
+        <igc-column-group  header="Shipping Address">
+            <igc-column field="ShipCountry" header="Country" data-type="String" sortable="true" has-summary="true" >
+            </igc-column>
+            <igc-column field="ShipCity" header="City" data-type="String" sortable="true" has-summary="true" >
+            </igc-column>
+            <igc-column field="ShipPostalCode" header="Postal Code" data-type="String" sortable="true" has-summary="true" >
+            </igc-column>
+        </igc-column-group>
+    </igx-column-group>
+</igx-grid>
+```
+```ts
+constructor() {
+    var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        propertyEditor.componentRenderer = this.renderer;
+        propertyEditor.target = this.grid;
+        grid.data = this.data;
+    }
+    this._bind();
+
+}
+
+private _componentRenderer: ComponentRenderer = null;
+    public get renderer(): ComponentRenderer {
+        if (this._componentRenderer == null) {
+            this._componentRenderer = new ComponentRenderer();
+            var context = this._componentRenderer.context;
+            PropertyEditorPanelDescriptionModule.register(context);
+            WebGridDescriptionModule.register(context);
+        }
+        return this._componentRenderer;
+    }
+```
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -388,6 +502,84 @@ Now we can add the markup.
 
 ```razor
 ```
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="PropertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+<igc-tree-grid id="grid" primary-key="ID" foreign-key="ParentID" width="100%"
+    height="550px" allow-filtering="true">
+    <igc-column field="Name" data-type="String" sortable="true" has-summary="true" width="200px"></igc-column>
+    <igc-column-group pinned="false" header="General Information">
+        <igc-column field="HireDate" data-type="Date" sortable="true" has-summary="true">
+        </igc-column>
+        <igc-column-group header="Person Details">
+            <igc-column field="ID" data-type="Number" filterable="false"></igc-column>
+            <igc-column field="Title" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="Age" data-type="Number" sortable="true" has-summary="true" filterable="false"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+    <igc-column-group header="Address Information">
+        <igc-column-group header="Location">
+            <igc-column field="Country" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="City" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="Address" data-type="String" sortable="true" has-summary="true"></igc-column>
+        </igc-column-group>
+        <igc-column-group header="Contact Information">
+            <igc-column field="Phone" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="Fax" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="PostalCode" data-type="String" sortable="true" has-summary="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+    <igc-column-group header="Address Information">
+        <igc-column-group header="Location">
+            <igc-column field="Country" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="City" data-type="String" sortable="true" has-summary="true"></igc-column>
+            <igc-column field="Address" data-type="String" sortable="true" has-summary="true"></igc-column>
+        </igc-column-group>
+        <igc-column-group header="Contact Information">
+            <igc-column field="Phone" data-type="String" sortable="true" resizable="true"></igc-column>
+            <igc-column field="Fax" data-type="String" sortable="true" resizable="true"></igc-column>
+            <igc-column field="PostalCode" data-type="String" sortable="true" resizable="true"></igc-column>
+        </igc-column-group>
+    </igc-column-group>
+</igc-tree-grid>
+```
+```ts
+constructor() {
+    var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
+    var grid = this.grid = document.getElementById('grid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        propertyEditor.componentRenderer = this.renderer;
+        propertyEditor.target = this.grid;
+        grid.data = this.data;
+    }
+    this._bind();
+
+}
+
+private _componentRenderer: ComponentRenderer = null;
+    public get renderer(): ComponentRenderer {
+        if (this._componentRenderer == null) {
+            this._componentRenderer = new ComponentRenderer();
+            var context = this._componentRenderer.context;
+            PropertyEditorPanelDescriptionModule.register(context);
+            WebGridDescriptionModule.register(context);
+        }
+        return this._componentRenderer;
+    }
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -434,10 +626,87 @@ Now we can add the markup.
 
 ```razor
 ```
+
+```html
+<div class="density-chooser">
+    <igc-property-editor-panel
+    description-type="WebGrid"
+    is-horizontal="true"
+    is-wrapping-enabled="true"
+    name="PropertyEditor"
+    id="PropertyEditor">
+        <igc-property-editor-property-description
+        property-path="DisplayDensity"
+        name="DisplayDensityEditor"
+        id="displayDensityEditor">
+        </igc-property-editor-property-description>
+    </igc-property-editor-panel>
+</div>
+<igc-hierarchical-grid id="grid" height="600px" width="100%" allow-filtering="true">
+    <igc-column field="CustomerID"></igc-column>
+    <igc-column field="CompanyName"></igc-column>
+    <igc-column field="ContactName"></igc-column>
+    <igc-column field="ContactTitle"></igc-column>
+    <igc-column field="Address"></igc-column>
+    <igc-column field="City"></igc-column>
+    <igc-column field="PostalCode"></igc-column>
+    <igc-column field="Country"></igc-column>
+    <igc-column field="Phone"></igc-column>
+    <igc-column field="Fax"></igc-column>
+
+    <igc-row-island key="Orders" auto-generate="false" >
+            <igc-column field="OrderID"></igc-column>
+            <igc-column field="EmployeeID"></igc-column>
+            <igc-column field="OrderDate"></igc-column>
+            <igc-column field="RequiredDate"></igc-column>
+            <igc-column field="ShippedDate"></igc-column>
+            <igc-column field="ShipVia"></igc-column>
+            <igc-column field="Freight"></igc-column>
+            <igc-column field="ShipName"></igc-column>
+            <igc-column field="ShipAddress"></igc-column>
+            <igc-column field="ShipCity"></igc-column>
+            <igc-column field="ShipPostalCode"></igc-column>
+            <igc-column field="ShipCountry"></igc-column>
+        <igc-row-island key="OrderDetails" auto-generate="false">
+                <igc-column field="ProductID"></igc-column>
+                <igc-column field="UnitPrice"></igc-column>
+                <igc-column field="Quantity"></igc-column>
+                <igc-column field="Discount"></igc-column>
+        </igc-row-island>
+    </igc-row-island>
+
+</igc-hierarchical-grid>
+```
+```ts
+constructor() {
+    var propertyEditor = this.propertyEditor = document.getElementById('PropertyEditor') as IgcPropertyEditorPanelComponent;
+    var grid = this.grid = document.getElementById('grid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        propertyEditor.componentRenderer = this.renderer;
+        propertyEditor.target = this.grid;
+        grid.data = this.data;
+    }
+    this._bind();
+
+}
+
+private _componentRenderer: ComponentRenderer = null;
+    public get renderer(): ComponentRenderer {
+        if (this._componentRenderer == null) {
+            this._componentRenderer = new ComponentRenderer();
+            var context = this._componentRenderer.context;
+            PropertyEditorPanelDescriptionModule.register(context);
+            WebGridDescriptionModule.register(context);
+        }
+        return this._componentRenderer;
+    }
+```
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Finally, let's provide the necessary logic in order to actually apply the density:
 
+<!-- Angular -->
 ```typescript
 @ViewChild('grid', { read: {ComponentName} })
 public grid: {ComponentName};
@@ -446,6 +715,7 @@ public selectDensity(event) {
     this.density = this.displayDensities[event.index].label;
 }
 ```
+<!-- end: Angular -->
 
 ```razor
 @code {
@@ -477,11 +747,13 @@ Please keep in mind the following:
 
 We can now extend our sample and add `RowHeight` property to the `{ComponentName}`:
 
+<!-- Angular -->
  ```html
  <{ComponentSelector} #grid [data]="data" [displayDensity]="density" [rowHeight]="'80px'" width="100%"
  height="550px" [allowFiltering]="true">
  </{ComponentSelector}>
  ```
+ <!-- end: Angular -->
 
  ```razor
  <{ComponentSelector} Width="100%" Height="100%"
@@ -492,6 +764,14 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
              DisplayDensity=@density>
 </{ComponentSelector}>
  ```
+
+ <!-- WebComponents -->
+ ```html
+ <{ComponentSelector} id="grid" display-density="Cosy" row-height="80px" width="100%"
+ height="550px" allow-filtering="true">
+ </{ComponentSelector}>
+ ```
+ <!-- end: WebComponents -->
 
 ## API References
 
@@ -520,5 +800,5 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

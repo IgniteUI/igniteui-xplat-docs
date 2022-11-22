@@ -1,7 +1,7 @@
 ---
-title: {Platform} {ComponentTitle} Virtualization and Performance - Ignite UI for {Platform}
-_description: The Ignite UI for {Platform} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
-_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform}
+title: {Platform} {ComponentTitle} Virtualization and Performance - {ProductName}
+_description: The {ProductName} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
+_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentTitle}, 'Virtualization']
@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Virtualization and Performance
 
-In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `igxForOf` directive and virtualizes its content both vertically and horizontally.
+In {ProductName}, the `{ComponentName}` control now utilizes the `ForOf` directive and virtualizes its content both vertically and horizontally.
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
@@ -21,11 +21,9 @@ In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `igx
            alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
 </code-view>
 
-<div class="divider--half"></div>
-
 ## Enabling Virtualization
 
-By utilizing the `igxForOf` directive the `{ComponentName}` now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. The `{ComponentName}`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally. 
+By utilizing the `ForOf` directive the `{ComponentName}` now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. The `{ComponentName}`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally.
 
 However, it is also possible to explicitly set the `{ComponentName}`'s `Width` and/or `Height` to `null` which means that the related dimension will be determined by the total size of the items inside. No scrollbar will then be shown and all items will be rendered along the respective dimension (columns if `Width` is `null` and rows if `Height` is `null`).
 
@@ -38,9 +36,13 @@ In most cases, letting the grid apply its default behavior by leaving dimensions
 
 Explicitly setting column widths in percentages (%) will, in most cases, create a grid that is not virtualized horizontally as it will not have a horizontal scrollbar.
 
+<!-- Angular -->
+
 ## Remote Virtualization
 
-The `{ComponentName}` supports remote virtualization, which is demonstrated in the [`Remote Data Operations`](remote-data-operations.md) topic.
+The `{ComponentName}` supports remote virtualization, which is demonstrated in the [Remote Data Operations](remote-data-operations.md) topic.
+
+<!-- end: Angular -->
 
 ## Virtualization Limitations
 
@@ -54,12 +56,10 @@ Without information about the sizes of the container and the items before render
 
 ## API References
 
-* `Grid`
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources
-
-<div class="divider--half"></div>
 
 * [{ComponentTitle} Overview](overview.md)
 * [Paging](paging.md)
@@ -71,9 +71,7 @@ Without information about the sizes of the container and the items before render
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 
-<div class="divider--half"></div>
-
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

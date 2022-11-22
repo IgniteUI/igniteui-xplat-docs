@@ -1,6 +1,6 @@
 ---
 title: {Platform} Input | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
 mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
@@ -26,7 +26,7 @@ _language: ja
 
 <!-- Blazor -->
 
-<code-view style="height: 120px"
+<code-view style="height: 225px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
            alt="{Platform} Input の例"
@@ -56,7 +56,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに `Input` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';

@@ -1,14 +1,14 @@
 ---
 title: Row Pinning in {Platform} {ComponentTitle} - Infragistics
 _description: Use the {Platform} Row pinning feature to lock rows with a rich and easy to use API. Let users pin rows in a particular order or duplicate them in a special area.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Row Pinning
 
-One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+In the {Platform} `{ComponentName}`, you can pin one or multiple rows to the top or bottom of grid. **Row Pinning** allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
@@ -23,6 +23,7 @@ One or multiple rows can be pinned to the top or bottom of the {Platform} UI Gri
 
 The built-in row pinning UI is enabled by adding an `ActionStrip` component with the `GridPinningActions` component. The action strip is automatically shown when hovering a row and will display a pin or unpin button icon based on the state of the row it is shown for. An additional action allowing to scroll the copy of the pinned row into view is shown for each pinned row as well.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="false">
     <igx-column *ngFor="let c of columns" [field]="c.field" [header]="c.field">
@@ -33,6 +34,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
     </igx-action-strip>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
     <{ComponentSelector} Width="100%"  
@@ -57,7 +59,18 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
         </IgbActionStrip>
     </{ComponentSelector}>
 ```
-
+<!-- WebComponents -->
+```html
+<{ComponentSelector} auto-generate="false">
+    <igc-column field="field" header="field">
+    </igc-column>
+    <igc-action-strip #actionStrip>
+        <igc-grid-pinning-actions></igc-grid-pinning-actions>
+        <igc-grid-editing-actions></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ## Row Pinning API
 
@@ -87,10 +100,30 @@ Note that the row ID is the primary key value, defined by the `PrimaryKey` of th
 
 A row is pinned below the last pinned row. Changing the order of the pinned rows can be done by subscribing to the `RowPinning` event and changing the `InsertAtIndex` property of the event arguments to the desired position index.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid1 [data]="data" [autoGenerate]="true" (rowPinning)="rowPinning($event)">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid1" auto-generate="true">
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.rowPinning = this.rowPinning;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public rowPinning(event) {
@@ -126,6 +159,15 @@ When set to Bottom pinned rows are rendered at the bottom of the grid, after the
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
+    </igc-pinning-config rows="Bottom">
+    </igc-pinning-config>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
@@ -192,6 +234,40 @@ This can be done by adding an extra column with a cell template containing the c
     </igx-column>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key]="ID" auto-generate="false">
+    <igc-column id="column" width="70px">
+        <ng-template igxCell let-cell="cell" let-val>
+            <igx-icon class="pin-icon" (mousedown)="togglePinning(cell.row, $event)">
+                {{cell.row.pinned ? 'lock' : 'lock_open'}}
+            </igx-icon>
+        </ng-template>
+    </igc-column>
+</{ComponentSelector}>
+```
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var column = this.column = document.getElementById('column') as IgcColumnComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        column.bodyTemplate = this.cellPinCellTemplate;
+    }
+    this._bind();
+}
+
+public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+    <igc-icon class="pin-icon" mousedown="${this.togglePinning(ctx.cell.row, $event)}">
+        ${ctx.cell.row.pinned ? 'lock' : 'lock_open'}
+    </igc-icon>
+            `;
+}
+```
+<!-- end: WebComponents -->
 
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
@@ -292,20 +368,24 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 * Only records that exist in the data source can be pinned.
 * The row pinning state is not exported to excel. The grid is exported as if no row pinning is applied.
-* Because of how pinned rows are stored internally so that they may appear both in the pinned and unpinned areas of the grid, row pinning is not supported when records in the grid are fetched from a remote endpoint on demand (remote virtualization).
 * The copies of pinned rows in the scrollable area of the grid are an integral part of how other grid features achieve their functionality in the presence of pinned rows and therefore their creation cannot be disabled nor can they be removed.
-* As Row Selection works entirely with row Ids, selecting pinned rows selects their copies as well (and vise versa). Additionally, range selection (e.g. using Shift + click) within the pinned area works the same way as selecting a range of rows within the scrollable area. The resulting selection includes all rows in between even if they are not currently pinned. Getting the selected rows through the API only returns a single instance of each selected record.
+* As Row Selection works entirely with row Ids, selecting pinned rows selects their copies as well (and vice versa). Additionally, range selection (e.g. using Shift + click) within the pinned area works the same way as selecting a range of rows within the scrollable area. The resulting selection includes all rows in between even if they are not currently pinned. Getting the selected rows through the API only returns a single instance of each selected record.
+
+<!-- Angular -->
+* Because of how pinned rows are stored internally so that they may appear both in the pinned and unpinned areas of the grid, row pinning is not supported when records in the grid are fetched from a remote endpoint on demand (remote virtualization).
 * When the grid has no `PrimaryKey` set and remote data scenarios are enabled (when paging, sorting, filtering, scrolling trigger requests to a remote server to retrieve the data to be displayed in the grid), a row will lose the following state after a data request completes:
     * Row Selection
     * Row Expand/collapse
     * Row Editing
     * Row Pinning
 
+<!-- end: Angular -->
+
 <!-- Angular -->
 
 ## Styling
 
-The {ComponentName} allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
 
 Below, we are going through the steps of customizing the {ComponentTitle}'s row pinning styling.
 
@@ -322,7 +402,7 @@ To begin the customization of the row pinning feature, you need to import the `i
 
 ### Defining a Theme
 
-Next, create a new theme, that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the row pinning feature as desired.
+Next, create a new theme, that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts the parameters, required to customize the row pinning feature as desired.
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -347,7 +427,7 @@ The last step is to pass the custom grid theme:
 
 In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
 
-If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
+If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
 
 ```scss
 :host {
@@ -370,7 +450,7 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -395,5 +475,5 @@ If the component is using an [`Emulated`](../themes/sass/component-themes.md#vie
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

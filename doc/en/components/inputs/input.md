@@ -1,6 +1,6 @@
 ---
 title: {Platform} Input | Data Visualization Tools | Infragistics
-_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with Ignite UI for {Platform}!
+_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with {ProductName}!
 _keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['Input', 'Icon', 'Radio']
 ---
@@ -25,7 +25,7 @@ The {ProductName} Input is a component where the user can enter data.
 
 <!-- Blazor -->
 
-<code-view style="height: 120px"
+<code-view style="height: 225px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
            alt="{Platform} Input Example"
@@ -55,7 +55,7 @@ You will also need to link an additional CSS file to apply the styling to the `I
 
 <!-- WebComponents -->
 
-To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Input` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';

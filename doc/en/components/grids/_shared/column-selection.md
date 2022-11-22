@@ -1,14 +1,14 @@
 ---
 title: {Platform} {ComponentTitle} Column Selection - Infragistics
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, column selection
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-The Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
+In the `{ComponentName}`, Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
@@ -47,7 +47,7 @@ The column selection feature can be enabled through the `ColumnSelection` input,
 The default selection mode is `None`. If set to `Single` or `Multiple`, all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
 > [!NOTE]
-> [`Multi-column Headers`](multi-column-headers.md) don't reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
+> The [Multi Column Headers](multi-column-headers.md) feature does not reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
 
 <!-- ComponentStart: Grid -->
 
@@ -87,7 +87,7 @@ The **API** provides some additional capabilities when it comes to the **non-vis
 > [!NOTE]
 > The above statement also applies to the `ColumnGroupComponent`, except that when the `Selected` property is changed it changes the state of its descendants.
 
-More information regarding the API manipulations could be found in the [`API References`](#api-references) section.
+More information regarding the API manipulations could be found in the [API References](#api-references) section.
 
 <!-- Angular -->
 
@@ -107,7 +107,7 @@ TO DO
 ```
 
 >[!NOTE]
->Please note that [`row selection`](row-selection.md) and [`column selection`](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
+>Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
 
@@ -151,7 +151,7 @@ TO DO
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-[`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) accepts several parameters but those are the five responsible for changing the appearance of all selected columns:
+[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) accepts several parameters but those are the five responsible for changing the appearance of all selected columns:
 - **$row-selected-background** - sets the background of the selected fraction.
 - **$row-selected-text-color** - sets the text color of the selected fraction
 - **$row-selected-hover-background** - sets the color of the hovered cell or bunch of cells.
@@ -174,7 +174,7 @@ TO DO
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
 >[!NOTE]
->If the component is using the [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
+>If the component is using the [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
 
 ```scss
 :host {
@@ -198,7 +198,7 @@ TO DO
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -245,5 +245,5 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

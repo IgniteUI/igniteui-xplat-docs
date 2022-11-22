@@ -346,7 +346,6 @@ var app = builder.Build();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -373,7 +372,6 @@ public void ConfigureServices(IServiceCollection services)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

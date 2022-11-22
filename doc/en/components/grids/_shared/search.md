@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Search Filter - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 ---
@@ -56,6 +56,18 @@ Let's start by creating our grid and binding it to our data. We will also add so
     }
 }
 ```
+
+```html
+<igc-grid id="grid1" auto-generate="false" allow-filtering="true">
+    <igc-column field="IndustrySector" data-type="String" sortable="true"></igc-column>
+    <igc-column field="IndustryGroup" data-type="String" sortable="true"></igc-column>
+    <igc-column field="SectorType" data-type="String" sortable="true"></igc-column>
+    <igc-column field="KRD" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="MarketNotion" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="Date" data-type="Date" sortable="true"></igc-column>
+</igc-grid>
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -71,6 +83,16 @@ Let's start by creating our grid and binding it to our data. We will also add so
 
 ```razor
 TODO TREEGRID SNIPPET
+```
+
+```html
+<igc-tree-grid id="treeGrid1" auto-generate="false" primary-key="ID" foreign-key="ParentID" allow-filtering="true">
+    <igc-column field="Name" data-type="String" sortable="true"></igc-column>
+    <igc-column field="ID" data-type="Number" sortable="true"></igc-column>
+    <igc-column field="Title" data-type="String" sortable="true"></igc-column>
+    <igc-column field="Age" dataTdata-typeype="Number" sortable="true"></igc-column>
+    <igc-column field="HireDate" data-type="Date" sortable="true"></igc-column>
+</igc-tree-grid>
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -130,15 +152,42 @@ When searching by an exact match, the search API will highlight as results only 
 
 The methods from above return a **number** value (the number of times the `{ComponentName}` contains the given string).
 
+<!-- Angular -->
 ```html
 <!--searchgrid.component.html-->
 
 <input #search1 id="search1" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)" />
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbInput ValueChanging="valueChanging" Value="@searchText" />
 ```
+
+<!-- WebComponents -->
+```html
+<!--searchgrid.component.html-->
+
+<input id="search1" placeholder="Search" />
+```
+```ts
+constructor() {
+    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
+
+    this._bind = () => {
+        search1.addEventListener('change', searchValue);
+    }
+    this._bind();
+}
+public searchValue(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
@@ -200,6 +249,39 @@ In order to freely search and navigate among our search results, let's create a 
 }
 ```
 
+<!-- WebComponents -->
+```html
+<div class="searchButtons">
+    <input id="prevBtn" type="button" value="Previous"/>
+    <input id="nextBtn" type="button" value="Next"/>
+</div>
+```
+```ts
+constructor() {
+    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
+    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+
+    this._bind = () => {
+        prevBtn.addEventListener('change', findPrev);
+        nextBtn.addEventListener('change', findPrev);
+    }
+    this._bind();
+}
+public findPrev(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findPrev(searchText, caseSensitive, exactMatch)
+}
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+<!-- end: WebComponents -->
+
 ### Add Keyboard Search
 
 <!-- Angular -->
@@ -208,6 +290,7 @@ We can also allow the users to navigate the results by using the keyboard's arro
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
 <input #search1 id="search1" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="@@igObjectRef.findNext(searchText, caseSensitive, exactMatch)"
        (keydown)="searchKeyDown($event)" />
@@ -224,6 +307,42 @@ public searchKeyDown(ev) {
     }
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<input id="search1" placeholder="Search" />
+```
+
+```typescript
+constructor() {
+    var search1 = this.search1 = document.getElementById('search1') as HtmlInputElement;
+
+    this._bind = () => {
+        search1.addEventListener('keydown', searchKeyDown);
+        search1.addEventListener('change', findNext);
+    }
+    this._bind();
+}
+
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+
+public searchKeyDown(ev) {
+    if (ev.key === 'Enter') {
+        ev.preventDefault();
+        this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+    } else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') {
+        ev.preventDefault();
+        this.grid.findPrev(this.searchText, this.caseSensitive, this.exactMatch);
+    }
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -254,6 +373,7 @@ Now let's allow the user to choose whether the search should be case sensitive a
 
 <!-- end: Angular -->
 
+<!-- Angular -->
 ```html
 <span>Case sensitive</span>
 <input type="checkbox" [checked]="caseSensitive" (change)="updateSearch()">
@@ -273,6 +393,42 @@ public updateExactSearch() {
     this.@@igObjectRef.findNext(this.searchText, this.caseSensitive, this.exactMatch);
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<span>Case sensitive</span>
+<input id="case" type="checkbox">
+
+<span>Exact match</span>
+<input id="exact" type="checkbox">
+```
+
+```typescript
+constructor() {
+    var case = this.case = document.getElementById('case') as HtmlInputElement;
+    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
+
+    this._bind = () => {
+        case.checked = this.caseSensitive;
+        exact.checked = this.exactMatch;
+        case.addEventListener('change', updateSearch);
+        exact.addEventListener('change', updateExactSearch);
+    }
+    this._bind();
+}
+
+public updateSearch() {
+    this.caseSensitive = !this.caseSensitive;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+
+public updateExactSearch() {
+    this.exactMatch = !this.exactMatch;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -325,10 +481,29 @@ import {
     IgxChipsModule
 } from 'igniteui-angular';
 
-@NgModule({    
+@NgModule({
     imports: [IgxInputGroupModule, IgxIconModule, IgxRippleModule, IgxButtonModule, IgxChipsModule],
 })
 export class AppModule {}
+```
+
+```typescript
+import {
+    igcXNameModule,
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
+    IgcXChipsModule
+} from 'igniteui-webcomponents-inputs';
+
+ModuleManager.register(
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
+    IgcXChipsModule
+);
 ```
 
 <!-- Blazor -->
@@ -375,17 +550,42 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
         (keydown)="searchKeyDown($event)" />
 
     <igx-suffix *ngIf="searchText.length > 0">
-        ...
+
     </igx-suffix>
 </igx-input-group>
 ```
 
+```html
+<igc-input-group type="search" class="offset">
+    <igc-prefix>
+        <igc-icon>search</igx-icon>
+        <igc-icon>clear</igx-icon>
+    </igc-prefix>
+
+    <input id="search1" placeholder="Search" />
+
+    <igc-suffix>
+        ...
+    </igc-suffix>
+</igc-input-group>
+```
+<!-- Angular -->
 ```typescript
 public clearSearch() {
     this.searchText = '';
     this.@@igObjectRef.clearSearch();
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public clearSearch() {
+    this.searchText = '';
+    this.grid.clearSearch();
+}
+```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
@@ -479,6 +679,29 @@ On the right in our input group, let's create three separate containers with the
 
 <!-- end: Blazor -->
 
+<!-- WebComponents -->
+```html
+<igc-suffix >
+    <div class="resultsText">
+        <span id="results">
+        </span>
+    </div>
+</igc-suffix>
+```
+```typescript
+public showResults() {
+    if (this.grid.lastSearchInfo.matchInfoCache.length > 0)  {
+        var index = this.grid.lastSearchInfo.activeMatchIndex + 1 ;
+        var length = this.grid.lastSearchInfo.matchInfoCache.length;
+        document.getElementById('results').innerHTML = index +'of' + length + 'results';
+    }
+    else if (this.grid.lastSearchInfo.matchInfoCache.length == 0)  {
+        document.getElementById('results').innerHTML = 'No results';
+    }
+}
+```
+<!-- end: WebComponents -->
+
 <!-- Angular -->
 
 - For displaying a couple of chips that toggle the `CaseSensitive` and the `ExactMatch` properties. We have replaced the checkboxes with two stylish chips that change color based on these properties. Whenever a chip is clicked, we invoke its respective handler - `UpdateSearch` or `UpdateExactSearch` depending on which chip has been clicked.
@@ -493,7 +716,7 @@ On the right in our input group, let's create three separate containers with the
             <span>Exact Match</span>
         </igx-chip>
     </igx-chips-area>
-</div>    
+</div>
 ```
 
 - For the search navigation buttons, we have transformed our inputs into ripple styled buttons with material icons. The handlers for the click events remain the same - invoking the `FindNext`/`FindPrev` methods.
@@ -512,7 +735,86 @@ On the right in our input group, let's create three separate containers with the
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+```html
+<div class="chips">
+    <igc-chips-area>
+        <igc-chip id="case">
+            <span>Case Sensitive</span>
+        </igc-chip>
+        <igc-chip id="exact">
+            <span>Exact Match</span>
+        </igc-chip>
+    </igc-chips-area>
+</div>
+```
+
+```typescript
+constructor() {
+    var case = this.case = document.getElementById('case') as HtmlInputElement;
+    var exact = this.exact = document.getElementById('exact') as HtmlInputElement;
+
+    this._bind = () => {
+        case.checked = this.caseSensitive;
+        exact.checked = this.exactMatch;
+        case.addEventListener('change', updateSearch);
+        exact.addEventListener('change', updateExactSearch);
+    }
+    this._bind();
+}
+
+public updateSearch() {
+    this.caseSensitive = !this.caseSensitive;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+
+public updateExactSearch() {
+    this.exactMatch = !this.exactMatch;
+    this.grid.findNext(this.searchText, this.caseSensitive, this.exactMatch);
+}
+```
+
+```html
+<igc-suffix>
+    <div class="searchButtons">
+        <button id="prevBtn">
+            <igc-icon fontSet="material">navigate_before</igx-icon>
+        </button>
+        <button id="nextBtn">
+            <igc-icon fontSet="material">navigate_next</igx-icon>
+        </button>
+    </div>
+</igc-suffix>
+```
+```ts
+constructor() {
+    var prevBtn = this.prevBtn = document.getElementById('prevBtn') as HtmlInputElement;
+    var nextBtn = this.nextBtn = document.getElementById('nextBtn') as HtmlInputElement;
+
+    this._bind = () => {
+        prevBtn.addEventListener('change', findPrev);
+        nextBtn.addEventListener('change', findPrev);
+    }
+    this._bind();
+}
+public findPrev(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findPrev(searchText, caseSensitive, exactMatch)
+}
+public findNext(e) {
+    var searchText = e.target.value;
+    var caseSensitive = false;
+    var exactMatch = false;
+    grid.findNext(searchText, caseSensitive, exactMatch)
+}
+```
+<!-- end: WebComponents -->
+
 ## Known Limitations
+
+<!-- Angular -->
 
 |Limitation|Description|
 |--- |--- |
@@ -520,9 +822,20 @@ On the right in our input group, let's create three separate containers with the
 |Remote Virtualization| The search will not work properly when using remote virtualization|
 |Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+|Limitation|Description|
+|--- |--- |
+|Searching in cells with a template|The search functionality highlights work only for the default cell templates. If you have a column with custom cell template, the highlights will not work so you should either use alternative approaches, such as a column formatter, or set the `Searchable` property on the column to false.|
+|Cells with cut off text| When the text in the cell is too large to fit and the text we are looking for is cut off by the ellipsis, we will still scroll to the cell and include it in the match count, but nothing will be highlighted |
+
+<!-- end: Blazor -->
+
 ## API References
 
-In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
+In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional {ProductName} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
 -   `FindNext`
@@ -568,5 +881,5 @@ Additional components and/or directives with relative APIs that were used:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -1,14 +1,14 @@
 ---
 title: {Platform} {ComponentTitle} Column Resizing - {ProductName}
 _description: Start using {Platform} {ComponentTitle} Column Resizing in order to change the grid column width in an instant. {Platform} drag resizing has never been so easy. Try for free!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
 
-With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. The new grid column width is applied once the drag operation has ended.
+With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. In the `{ComponentName}`, new column width is applied once the drag operation has ended.
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
@@ -30,6 +30,10 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
 ```
 
+```html
+<igc-column field="ID" width="100px" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: Grid, TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -42,18 +46,45 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <IgbColumn Field="Artist" Resizable=true></IgbColumn>
 ```
 
+```html
+<igc-column field="Artist" resizable="true"></igc-column>
+```
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 You can subscribe to the `ColumnResized` event of the `{ComponentName}` to implement some custom logic when a column is resized. Both, previous and new column widths, as well as the `Column` object, are exposed through the event arguments.
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
 ```html
-<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
-</igx-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" auto-generate="false">
+    <igc-column field="ID" width="100px" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid1.data = this.data;
+        grid1.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -64,10 +95,10 @@ public onResize(event) {
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
     <IgbColumn Field="ID" Resizable=true Width="100px"></IgbColumn>
     <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
 
 @code {
     private void onResize(IgbColumnResizeEventArgs args)
@@ -80,15 +111,37 @@ public onResize(event) {
 ```
 
 <!-- ComponentEnd: Grid -->
-
 <!-- ComponentStart: TreeGrid -->
 
+<!-- Angular -->
 ```html
-<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
-</igx-tree-grid>
+</{ComponentSelector}>
 ```
+<!-- end:Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID">
+    <igc-column field="Title" width="100px" resizable="true" width="100px"></igc-column>
+    <igc-column field="HireDate" width="100px" resizable="true" width="100px"></igc-column>
+</{ComponentSelector}>
+```
+
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.data = this.data;
+        treeGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
+```
+<!-- end: WebComponents -->
 
 ```typescript
 public onResize(event) {
@@ -99,11 +152,22 @@ public onResize(event) {
 ```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Title" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="HireDate" Resizable=true Width="100px"></IgbColumn>
+</{ComponentSelector}>
+
+@code {
+    private void onResize(IgbColumnResizeEventArgs args)
+    {
+        IgbColumnType col = args.Detail.Column;
+        string pWidth = args.Detail.PrevWidth;
+        string nWidth = args.Detail.NewWidth;
+    }
+}
 ```
 
 <!-- ComponentEnd: TreeGrid -->
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
@@ -111,6 +175,25 @@ TO DO!
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
     <igx-column field="Artist" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid id="treeGrid" auto-generate="false" primary-key="ID" foreign-key="ParentID"
+    height="600px" width="100%">
+    <igc-column field="Artist" resizable="true"></igc-column>
+</igc-hierarchical-grid>
+```
+
+```ts
+constructor() {
+    var hierarchicalGrid = this.hierarchicalGrid = document.getElementById('hierarchicalGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hierarchicalGrid.data = this.data;
+        hierarchicalGrid.columnResized = this.onResize;
+    }
+    this._bind();
+}
 ```
 
 ```typescript
@@ -144,15 +227,22 @@ This means that the following configuration is possible:
 ```
 
 ```razor
-<IgbGrid Data=data AutoGenerate=false ColumnResized="onResize">
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize">
     <IgbColumn Field="ID" Resizable=true Width="10%"></IgbColumn>
     <IgbColumn Field="CompanyName" Resizable=true Width="100px"></IgbColumn>
     <IgbColumn Field="ContactTitle" Resizable=true></IgbColumn>
-</IgbGrid>
+</{ComponentSelector}>
+```
+
+```html
+<igc-grid id="grid" auto-generate="false">
+    <igc-column field="ID" width="10%" resizable="true"></igc-column>
+    <igc-column field="CompanyName" width="100px" resizable="true"></igc-column>
+    <igc-column field="ContactTitle" resizable="true"></igc-column>
+</igc-grid>
 ```
 
 <!-- ComponentEnd: Grid -->
-
 <!-- ComponentStart: TreeGrid -->
 
 ```html
@@ -164,20 +254,40 @@ This means that the following configuration is possible:
 ```
 
 ```razor
-TO DO!
+<{ComponentSelector} Data=data AutoGenerate=false ColumnResized="onResize" PrimaryKey="ID" ForeignKey="ParentID">
+    <IgbColumn Field="Title" Resizable=true Width="10%"></IgbColumn>
+    <IgbColumn Field="HireDate" Resizable=true Width="100px"></IgbColumn>
+    <IgbColumn Field="Age" Resizable=true></IgbColumn>
+</{ComponentSelector}>
+```
+
+```html
+<igc-tree-grid id="data" primary-key="ID" foreign-key="ParentID" auto-generate="false">
+    <igc-column field="Title" resizable="true" width="10%"></igc-column>
+    <igc-column field="HireDate" resizable="true" width="100px"></igc-column>
+    <igc-column field="Age" data-type="Number" resizable="true"></igc-column>
+</igc-tree-grid>
 ```
 
 <!-- ComponentEnd: TreeGrid -->
-
 <!-- ComponentStart: HierarchicalGrid -->
 
 ```html
-  <igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
+<igx-hierarchical-grid class="hgrid" [data]="localdata" (columnResized)="onResize($event)" [autoGenerate]="false"
         [height]="'600px'" [width]="'100%'" #hierarchicalGrid>
         <igx-column field="Artist" [resizable]="true" [width]="'10%'"></igx-column>
         <igx-column field="GrammyNominations" [resizable]="true" [width]="'100px'"></igx-column>
         <igx-column field="GrammyAwards" [resizable]="true"></igx-column>
 </igx-hierarchical-grid>
+```
+
+```html
+<igc-hierarchical-grid id="hierarchicalGrid" class="hgrid" auto-generate="false"
+        height="600px" width="100%">
+        <igc-column field="Artist" resizable="true" width="10%"></igc-column>
+        <igc-column field="GrammyNominations" resizable="true" width="100px"></igc-column>
+        <igc-column field="GrammyAwards" resizable="true"></igc-column>
+</igc-hierarchical-grid>
 ```
 
 ```razor
@@ -205,6 +315,10 @@ You can also configure the minimum and maximum allowable column widths. This is 
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="100px" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -218,6 +332,10 @@ This means the following configurations are possible:
 <igx-column [field]="'ID'" width="10%" [resizable]="true"
             [minWidth]="'60px'" [maxWidth]="'230px'"></igx-column>
 ```
+```html
+<igc-column field="ID" width="10%" resizable="true"
+            min-width="60px" max-width="230px"></igc-column>
+```
 
 ```razor
 <IgbColumn Field="ContactTitle" Resizable=true Width="10%" MinWidth="60px" MaxWidth="230px"></IgbColumn>
@@ -228,6 +346,10 @@ or
 ```html
 <igx-column [field]="'ID'" width="100px" [resizable]="true"
             [minWidth]="'5%'" [maxWidth]="'15%'"></igx-column>
+```
+```html
+<igc-column field="ID" width="100px" resizable="true"
+            min-width="5%" max-width="15%"></igc-column>
 ```
 
 ```razor
@@ -240,11 +362,24 @@ Each column can be **auto sized** by double clicking the right side of the heade
 
 You can also auto-size a column dynamically using the exposed `Autosize` method on `Column`.
 
+<!-- Angular -->
 ```typescript
 @ViewChild('@@igObjectRef') @@igObjectRef: {ComponentName};
 
 let column = this.@@igObjectRef.columnList.filter(c => c.field === 'ID')[0];
 column.autosize();
+```
+<!-- end: Angular -->
+
+```typescript
+constructor() {
+    var id = this.id = document.getElementById('ID') as IgcColumnComponent;
+
+    this._bind = () => {
+        id.autoize();
+    }
+    this._bind();
+}
 ```
 
 ```razor
@@ -265,6 +400,10 @@ Each column can be set to auto-size on initialization by setting `Width` to 'aut
 
 ```html
 <igx-column width='auto'>
+```
+
+```html
+<igc-column width='auto'>
 ```
 
 ```razor
@@ -294,7 +433,7 @@ To get started with the styling of the `{ComponentName}` column resize line, we 
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-The simplest approach to achieve this is to create a new theme that extends the [`grid-theme`]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts many parameters as well as the `$resize-line-color` parameter.
+The simplest approach to achieve this is to create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts many parameters as well as the `$resize-line-color` parameter.
 
 ``` scss
 $custom-grid-theme: grid-theme(
@@ -303,7 +442,7 @@ $custom-grid-theme: grid-theme(
 
 ```
  >[!NOTE]
- >If the component is using an [`Emulated`](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
+ >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
 
 ```scss
 :host {
@@ -314,7 +453,7 @@ $custom-grid-theme: grid-theme(
 ```
 
 ### Defining a Color Palette
-Instead of hard-coding the color values, we can achieve greater flexibility in terms of colors by using the [`igx-palette`]({environment:sassApiUrl}/index.html#function-igx-palette) and [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color) functions.
+Instead of hard-coding the color values, we can achieve greater flexibility in terms of colors by using the [igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) and [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) functions.
 
 `igx-palette` generates a color palette based on the specified primary and secondary color:
 
@@ -325,7 +464,7 @@ $secondary-color: #BDBDBD;
 $custom-theme-palette: palette($primary: $primary-color, $secondary: $secondary-color);
 ```
 
-And then, with [`igx-color`]({environment:sassApiUrl}/index.html#function-igx-color), we can easily retrieve the color from the palette.
+And then, with [igx-color]({environment:sassApiUrl}/index.html#function-igx-color), we can easily retrieve the color from the palette.
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -335,12 +474,12 @@ $custom-grid-theme: grid-theme(
 ```
 
 >[!NOTE]
->The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please, refer to [`Palettes`](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
+>The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please, refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
 Going further with the theming engine, you can build a robust and flexible structure that benefits from [**schemas**](../themes/sass/schemas.md). A **schema** is a recipe of a theme.
 
-Extend the predefined schema provided for every component, in this case - [`light-grid`]({environment:sassApiUrl}/index.html#variable-_light-grid) schema:
+Extend the predefined schema provided for every component, in this case - [light-grid]({environment:sassApiUrl}/index.html#variable-_light-grid) schema:
 
 ```scss
 // Extending the light grid schema
@@ -359,7 +498,7 @@ $light-grid-schema: extend($_light-grid,
 );
 ```
 
-In order to apply our custom schema, we have to **extend** one of the globals ([`light`]({environment:sassApiUrl}/index.html#variable-light-schema) or [`dark`]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component theme:
+In order to apply our custom schema, we have to **extend** one of the globals ([light]({environment:sassApiUrl}/index.html#variable-light-schema) or [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)), which is basically pointing out the components with a custom schema, and after that add it to the respective component theme:
 
 ```scss
 // Extending the global light-schema
@@ -383,7 +522,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 </code-view>
 
 >[!NOTE]
->The sample will not be affected by the selected global theme from `Change Theme`.
+>The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
@@ -406,5 +545,5 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
