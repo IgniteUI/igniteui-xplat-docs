@@ -1069,7 +1069,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI 製品バンドル</a>の一部です。Ignite UI 製品バンドルは、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
+        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">{ProductName} 製品</a>の一部です。{ProductName} 製品は、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
         </div>
     </div>
     <div class="faqs-accordion-content">
@@ -1118,7 +1118,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">Ignite UI 製品バンドル</a>の一部です。Ignite UI 製品バンドルは、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
+        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">{ProductName} 製品</a>の一部です。{ProductName} 製品は、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
         </div>
     </div>
     <div class="faqs-accordion-content">

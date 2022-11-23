@@ -6,9 +6,9 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
- {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。
-
 # {Platform} Grid 概要と構成
+
+ {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。
 
 <div class="sample-content">
     <img class="b-lazy responsive-img"
@@ -19,9 +19,7 @@ _language: ja
         title="Grid">
 </div>
 
-
 ## {Platform} Grid の例
-
 
 このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、カスタム ページングと、[ページネーション](paging.md)のページごとの使用部分も含まれています。
 
@@ -119,7 +117,7 @@ constructor() {
 
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。**data** はグリッドをローカル データにバインドします。
 
-`AutoGenerate` プロパティはグリッドにデータ ソース フィールドに基づいてグリッドの `ColumnComponent` を自動生成します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
+`AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
 ## Bootstrap グリッドの定義
 
@@ -129,7 +127,7 @@ constructor() {
 
 グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-このトピックに続いて、[セル テンプレート](#セル-テンプレート)と[セル編集テンプレート](#セル編集テンプレート)および編集について詳しく学習します。
+このトピックに続いて、[セル テンプレート](overview.md#セル-テンプレート)と[セル編集テンプレート](overview.md#セル編集テンプレート)および編集について詳しく学習します。
 
 ## グリッドの列構成
 
@@ -186,7 +184,7 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 グリッドの各列は別のテンプレートを持つことができます。列に `ng-template` Angular グリッド モジュール ディレクティブが必要です。
 
-また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext` 入力 も公開します。
+また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext` 入力も公開します。
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -570,7 +568,7 @@ constructor() {
 
 ## グリッド データの構造
 
-`Grid` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
+`{GridName}` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -628,11 +626,8 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map } from 'rxjs/operators';
 ```
-<!-- end: Angular -->
 
 各 {Platform} サービス定義で[必須要素](https://angular.io/guide/dependency-injection)である `Injectable` デコレータをインポートします。`HttpClient` はバックエンド サービスに接続する機能を提供します。グリッド コンポーネントにサブスクライブする結果である `Observable` を返します。
-
-<!-- Angular -->
 
 **注** Angular 5 の前では `HttpClient` が `@angular/http` にあり、名前は `Http` でした。
 
@@ -754,7 +749,7 @@ export class MyComponent implements OnInit {
 
 ## 複雑なデータ バインディング
 
-`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+`{GridName}` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
 次のデータ モデルを見てください。
 ```typescript
@@ -802,7 +797,7 @@ interface AminoAcid {
 
 <!-- end: Angular -->
 
-`Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
+`{GridName}` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
     - ネストされたデータを含むセルの `value` を使用します。
     - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
@@ -1143,7 +1138,9 @@ public updatePostalCode(rowId: number){
 
 ## キーボード ナビゲーション
 
-`Grid` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+`{GridName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+
+<!-- Angular -->
 
 詳細については、これらのリソースを参照してください。
 
@@ -1152,9 +1149,15 @@ public updatePostalCode(rowId: number){
  - [Hierarchical Grid キーボード ナビゲーション](../hierarchical-grid/keyboard-navigation.md)
  - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
+ <!-- end: Angular -->
+
+<!-- Angular -->
+
 ## 状態保持
 
 新しい組み込み済みの [GridState](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+
+<!-- end: Angular -->
 
 ## サイズ変更
 
@@ -1165,7 +1168,7 @@ public updatePostalCode(rowId: number){
 
 ## パフォーマンス (試験中)
 
-`Grid` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **`20%`** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
+`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **`20%`** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1194,8 +1197,9 @@ platformBrowserDynamic()
 | ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 
 ## API リファレンス
-* `Grid`
-* `Column`
+
+* `{GridName}`
+* `IgbColumn`
 * `GridRow`
 * `GridCell`
 
@@ -1215,7 +1219,7 @@ platformBrowserDynamic()
 
 ## チュートリアル ビデオ
 
-{Platform} `Grid` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
+{Platform} `{GridName}` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
