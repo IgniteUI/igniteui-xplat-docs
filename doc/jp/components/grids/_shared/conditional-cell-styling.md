@@ -24,10 +24,12 @@ _language: ja
 
 `{ComponentName}` 行の条件付きスタイル設定は、`RowClasses` 入力を設定してカスタム条件を定義するころによりスタイル設定できます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [height]="'600px'" [width]="'100%'" [rowClasses]="rowClasses">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowClassesScript="RowClassesHandler" @ref="grid">
