@@ -1,25 +1,25 @@
 ---
-title: Build a Blazor Hybrid App with .NET MAUI - Ignite UI for Blazor 
-_description: This article provides a step-step instruction on how to create a blazor hybrid app with .Net Maui using Ignite UI for Blazor. Try it Now!
+title: .NET MAUI を使用して Blazor Hybrid アプリを構築する - Ignite UI for Blazor 
+_description: この記事では、Ignite UI for Blazor を使用して、.NET MAUI で Blazor Hybrid アプリを作成する方法の手順を説明します。今すぐお試しください。
 _keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
 ---
-# Getting Started: Build a Blazor Hybrid App with .NET MAUI
+# 作業の開始: .NET MAUI を使用して Blazor Hybrid アプリを構築する
 
 このトピックでは、Visual Studio 2022 プレビューを使用して Ignite UI for Blazor で .NET MAUI Blazor アプリケーションを作成するための手順を説明します。
 
 > [!NOTE]
 > .NET Multi-platform App UI (.NET MAUI) は現在プレビュー中です。このコンテンツは、リリース前に大幅に変更される可能性のあるプレリリース製品に関連しています。インフラジスティックスは、ここに提供される情報に関して、明示または黙示を問わず、いかなる保証も致しません。
 
-### What is Blazor Hybrid?
+### Blazor Hybrid とは
 
-Blazor hybrid is something between Blazor Server and Blazor Web Assembly. It simplifies the development, the code, and the processes as it brings together the capabilities of desktop and mobile native client frameworks. This technology lets you apply your C# and .NET skills when creating native client applications. 
+Blazor Hybrid は、Blazor Server と Blazor Web Assembly の間のようなものです。デスクトップとモバイルのネイティブ クライアント フレームワークの機能を統合することで、開発、コード、およびプロセスが簡素化されます。このテクノロジを使用すると、ネイティブ クライアント アプリケーションを作成するときに C# および .NET のスキルを適用できます。
 
-But in order to be able to use it for your apps, you need .NET MAUI. 
+ただし、アプリで使用できるようにするには、.NET MAUI が必要です。
 
-### What is .NET MAUI?
+### .NET MAUI とは
 
-.NET MAUI (.NET Multi-platform App UI) is an open-source, cross-platform framework for building native desktop and mobile apps from a single shared code-base. With it, you can more easily develop Blazor applications that run on different devices and operating systems, including Android, iOS, macOS, and Windows using C# and XAML. 
+.NET MAUI (.NET Multi-platform App UI) は、単一の共有コードベースからネイティブ デスクトップおよびモバイル アプリを構築するための、オープンソースのクロス プラットフォーム フレームワークです。これにより、C# と XAML を使用して、Android、iOS、macOS、Windows など、さまざまなデバイスやオペレーティング システムで実行される Blazor アプリケーションをより簡単に開発できます。 
 
 
 ## 前提条件
@@ -29,7 +29,7 @@ But in order to be able to use it for your apps, you need .NET MAUI.
     - .NET によるモバイル開発
     - ASP.NET と Web 開発
 
-## Create and Run a Blazor Hybrid App with .Net Maui and Ignite UI for Blazor 
+## .NET MAUI と Ignite UI for Blazor を使用して Blazor Hybrid アプリを作成して実行する
 
 以下の手順では、新しい .NET MAUI Blazor プロジェクトを作成する方法について説明します。Ignite UI for Blazor を既存のアプリケーションに追加する場合は、[**Ignite UI for Blazor パッケージをインストール**](#ignite-ui-for-blazor-のインストール) セクションに移動します。
 
