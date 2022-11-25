@@ -20,7 +20,7 @@ The {Platform} `{GridName}` is used as a feature-rich control for displaying dat
 
 ## {Platform} Grid Example
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the [Pagination](paging.md).
+In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the Pagination.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -264,7 +264,7 @@ constructor() {
 public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="text">${ctx.cell.column.field}</div>
-        <igx-icon click="${toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igx-icon>
+        <igc-icon click="${toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igc-icon>
     `;
 }
 
@@ -610,13 +610,13 @@ const POJO = [{
 
 >If you use `AutoGenerate` columns **the data keys must be identical.**
 
+<!-- Angular -->
 ## Grid Data Binding
 
 Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications. A good practice is to separate all data fetching related logic in a separate data service, so we are going to create a service which will handle the fetching of data from the server.
 
 Let's implement our service in a separate file
 
-<!-- Angular -->
 ```typescript
 // northwind.service.ts
 
@@ -630,8 +630,6 @@ import { catchError, map } from 'rxjs/operators';
 We're importing the `Injectable` decorator which is an [essential ingredient](https://angular.io/guide/dependency-injection) in every {Platform} service definition. The `HttpClient` will provide us with the functionality to communicate with backend services. It returns an `Observable` of some result to which we will subscribe in our grid component.
 
 **Note**: Before Angular 5 the `HttpClient` was located in `@angular/http` and was named `Http`.
-
-<!-- end: Angular -->
 
 Since we will receive a JSON response containing an array of records, we may as well help ourselves by specifing what kind of data we're expecting to be returned in the observable by defining an interface with the correct shape. Type checking is always recommended and can save you some headaches down the road.
 
@@ -655,7 +653,6 @@ export interface NorthwindRecord {
 
 The service itself is pretty simple consisting of one method: `FetchData` that will return an `Observable<NorthwindRecord[]>`. In cases when the request fails for any reason (server unavailable, network error, etc), the `HttpClient` will return an error. We'll leverage the `CatchError` operator which intercepts an Observable that failed and passes the error to an error handler. Our error handler will log the error and return a safe value.
 
-<!-- Angular -->
 ```typescript
 // northwind.service.ts
 
@@ -684,11 +681,9 @@ export class NorthwindService {
     }
 }
 ```
-<!-- end: Angular -->
 
 Make sure to import both the `HttpClientModule` and our service in the application module and register the service as a provider.
 
-<!-- Angular -->
 ```typescript
 // app.module.ts
 
@@ -705,17 +700,11 @@ import { NorthwindService } from './northwind.service';
 })
 export class AppModule {}
 ```
-<!-- end: Angular -->
-
-<!-- Angular -->
 
 After implementing the service we will inject it in our component's constructor and use it to retrieve the data. The `ngOnInit` lifecycle hook is a good place to dispatch the initial request.
 
-<!-- end: Angular -->
-
 **Note**: In the code below, you may wonder why are we setting the _records_ property to an empty array before subscribing to the service. The Http request is asynchronous, and until it completes, the _records_ property will be _undefined_ which will result in an error when the grid tries to bind to it. You should either initialize it with a default value or use a `BehaviorSubject`.
 
-<!-- Angular -->
 ```typescript
 // my.component.ts
 
@@ -734,7 +723,6 @@ export class MyComponent implements OnInit {
     }
 }
 ```
-<!-- end: Angular -->
 
 and in the template of the component:
 
@@ -747,6 +735,7 @@ and in the template of the component:
 
 **Note**: The grid `AutoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `AutoGenerate` available, when binding to remote service, is on our roadmap for future versions.
 
+<!-- end: Angular -->
 ## Complex Data Binding
 
 The `{GridName}` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
