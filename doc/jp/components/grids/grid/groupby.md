@@ -8,7 +8,7 @@ _language: ja
 
 # {Platform} Grid グループ化
 
-{Platform} Material テーブルまたは UI グリッドの Group by 動作は、列の値に基づいてグループ化されたデータ行を作成します。`Grid` の Group By では、グループを階層構造で視覚化できます。グループデータ行は展開または縮小でき、グループの順序は UI または API で変更できます。行選択を有効にすると、GroupBy 行セレクターがグループ行の一番左の領域に描画されます。`RowSelection` プロパティが単一に設定されている場合、チェックボックスは無効になり、選択が行われるグループの表示としてのみ機能します。`RowSelection` プロパティが複数に設定されている場合、Group By 行セレクターをクリックすると、このグループに属するすべてのレコードが選択されます。
+{Platform} Material テーブルまたは UI グリッドの Group by 動作は、列の値に基づいてグループ化されたデータ行を作成します。`{GridName}` の Group By では、グループを階層構造で視覚化できます。グループデータ行は展開または縮小でき、グループの順序は UI または API で変更できます。行選択を有効にすると、GroupBy 行セレクターがグループ行の一番左の領域に描画されます。`RowSelection` プロパティが単一に設定されている場合、チェックボックスは無効になり、選択が行われるグループの表示としてのみ機能します。`RowSelection` プロパティが複数に設定されている場合、Group By 行セレクターをクリックすると、このグループに属するすべてのレコードが選択されます。
 
 ## {Platform} Grid グループ化の例
 この例は、大量のデータのグループ化が可能であることを示しています。列ヘッダーを一番上 (グループ化領域) にドラッグすると、ユーザーは選択した列のデータを階層構造で表示できます。さらに列ヘッダーを一番上にドラッグすることで、複数のフィールドでグループ化できます。これらのグループ化オプションは、ユーザーが多数の行と列を持つテーブルがあり、はるかに高速で視覚的に受け入れられる方法でデータを表示ようとする場合に役立ちます。
@@ -96,7 +96,7 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 ### 展開 / 縮小 API
 
-グループ式の他にグループ行の展開も制御できます。`Grid` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。グループ行は、作成されたフィールド名とグループ化の各レベルを表す値に基づいて識別されます。以下は展開状態のインターフェイスのシグネチャです。
+グループ式の他にグループ行の展開も制御できます。`{GridName}` コンポーネント `GroupingExpansionState` の別のプロパティに保存されます。グループ行は、作成されたフィールド名とグループ化の各レベルを表す値に基づいて識別されます。以下は展開状態のインターフェイスのシグネチャです。
 
 ```typescript
 export interface IGroupByKey {
@@ -110,7 +110,7 @@ export interface IGroupByExpandState {
 }
 ```
 
-`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。`Grid` はグループ レコード インスタンスでトグルするメソッドを公開します。
+`GroupingExpressions` で `IGroupByExpandState` のリストを直接 `GroupingExpansionState` に設定すると展開が変更されます。`{GridName}` はグループ レコード インスタンスでトグルするメソッドを公開します。
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
