@@ -150,7 +150,7 @@
   {
     "exclude": ["Angular", "React"],
     "name": "コンポーネントのスタイル",
-    "href": "themes/component-themes.md",
+    "href": "themes/styles.md",
     "status": "NEW"
   },
   {

@@ -193,7 +193,7 @@ _language: ja
 
 ## スタイル設定
 
-`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/styles.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下は、グリッドの複数行レイアウト スタイルをカスタマイズする手順です。
 
@@ -302,7 +302,7 @@ $my-custom-schema: extend($light-schema, (
 このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
