@@ -30,8 +30,92 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 
 <!-- WebComponents -->
 
+This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
+
+[Ignite UI for Web Components](https://www.infragistics.com/products/ignite-ui-web-components) is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
+
+All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+
+## Ignite UI Web Components Example
+The sample below provides an overview on the web components and shows how utilizing them can help you create a well structured app. It represents a sample travel blog that includes an app header with the user's avatar, side navigation and main content area.
+
+<code-view style="height: 800px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
+           alt="{Platform} Overview Example"
+           github-src="layouts/getting-started/overview">
+</code-view>
+
+# Configuration
+
+## Install IgniteUI CLI
+
+To create an application from scratch and configure it to use the Ignite UI Web Components you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
+
+```bash
+npm install -g igniteui-cli
+```
+
+If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
+
+```bash
+ig
+```
+
+Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
+Additionally, you can read more about the Ignite UI CLI [here](#general-cli-overview) 
+
+## Install Polyfills
+
+Run this command to install the web component polyfills:
+
+```bash
+npm install @webcomponents/custom-elements
+```
+
+Them import the web component polyfills into index.js:
+
+```ts
+import '@webcomponents/custom-elements/custom-elements.min';
+import '@webcomponents/custom-elements/src/native-shim.js';
+```
+
+## Install Ignite UI for Web Components
+In order to use the Ignite UI Web Components in your application you should install the `igniteui-webcomponents` package:
+
+```
+npm install igniteui-webcomponents
+```
+
+Next you will need to import the components that you want to use in your `index.ts` file. You could import one or more components using the `defineComponents` function like this:
+
+```ts
+import { defineComponents, IgcAvatarComponent, IgcBadgeComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcAvatarComponent, IgcBadgeComponent);
+```
+
+You could also import all of the components using the `defineAllComponents` function:
+
+```ts
+import { defineAllComponents } from 'igniteui-webcomponents';
+
+defineAllComponents();
+```
+
+> [!Note] 
+> Importing all of the components will increase the bundle size of your application. That's why we recommend you to import only the components that you are actually using.
+
+After the components are imported you can use them in your html:
+
+```html
+<igc-avatar initials="AZ"></igc-avatar>
+<igc-badge></igc-badge>
+```
+
 This topic provides step-by-step instructions for creating Web Components applications with Ignite UI for Web Components
 
+# Install Charts and Map Web Component packages
 ## Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
