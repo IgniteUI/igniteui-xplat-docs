@@ -66,6 +66,25 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 <!-- end: Angular, WebComponents -->
 
+<!--Blazor-->
+
+```razor
+
+    var pivotConfiguration1 = new IgbPivotConfiguration();
+    var pivotDimension1 = new IgbPivotDimension();
+    pivotDimension1.MemberName = "Product";
+    pivotDimension1.Filter = new IgbFilteringExpressionsTree()
+                    {
+                        FieldName = "Product",
+                        FilteringOperands = new IgbFilteringExpressionsTreeOrFilteringExpression() {
+                            Name = "Tea"
+                    }
+                };
+```
+
+<!--end: Blazor -->
+
+
 ## Dimensions Sorting
 
 Dimension values in the `rows` or `columns` can be sorted via the related chip or the API. This functionality is embedded and enabled by default.
@@ -88,6 +107,18 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 }
 ```
 <!-- end: Angular, WebComponents -->
+
+<!-- Blazor -->
+```razor
+
+    var pivotConfiguration1 = new IgbPivotConfiguration();
+    var pivotDimension1 = new IgbPivotDimension();
+    pivotDimension1.MemberName = "Product";
+    pivotDimension1.SortDirection = SortingDirection.Desc;
+
+```
+
+<!-- end:Blazor -->
 ## Dimensions Resizing
 
 Row dimensions can be resized similarly to column resizing - via a resizing indicator that can be found on the right edge of the cells.
@@ -109,6 +140,19 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 }
 ```
 <!-- end: Angular, WebComponents -->
+
+<!-- Blazor -->
+```razor
+
+    var pivotConfiguration1 = new IgbPivotConfiguration();
+    var pivotDimension1 = new IgbPivotDimension();
+    pivotDimension1.MemberName = "Product";
+    pivotDimension1.Enabled = true;
+    pivotDimension1.Width = "400px";
+
+```
+
+<!-- end:Blazor -->
 ## Dimensions Selection
 
 The {PivotGridTitle} supports single selection which is enabled just like in the base grid. For example:
@@ -149,7 +193,7 @@ Chips from these areas can not be moved to the `values` area and chips from the 
 
 ## API References
 * [{PivotGridName}Component](overview.md)
-* `IgxPivotDataSelectorComponent`
+* `PivotDataSelectorComponent`
 
 
 ## Additional Resources
