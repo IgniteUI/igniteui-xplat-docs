@@ -206,6 +206,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular","Blazor", "React"],
+    "name": "Stepper",
+    "href": "layouts/stepper.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
