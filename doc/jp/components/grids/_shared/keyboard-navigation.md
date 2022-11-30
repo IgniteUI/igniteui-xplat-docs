@@ -320,12 +320,11 @@ public customKeydown(args: IGridKeydownEventArgs) {
 |--- |--- |
 | スクロール可能な親コンテナーを使用してグリッド内を移動します。 | グリッドがスクロール可能な親コンテナー内に配置され、ユーザーが表示されていないグリッドのセルへ移動した場合、親コンテナーはスクロールされません。|
 
+<!-- Angular -->
+
 ## API リファレンス
 
 * [{ComponentTitle} API]({environment:angularApiUrl}/classes/@@igTypeDoc.html)
-
-<!-- Angular -->
-
 * [{ComponentTitle} スタイル]({environment:sassApiUrl}/index.html#function-grid-theme)
 
 <!-- end: Angular -->
