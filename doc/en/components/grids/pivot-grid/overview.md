@@ -11,10 +11,10 @@ _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}
 
 ## What is {Platform} Pivot Grid? 
 
-The {Platform} Pivot Grid component presents data in a pivot table and helps performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
+The {Platform} {PivotGridName} presents data in a pivot table and helps performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
 
-The `PivotGridComponent` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
-The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `PivotGridComponent` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
+The `{PivotGridName}` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
+The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `{PivotGridName}` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
 
 ## {Platform} Pivot Grid example
 
@@ -28,7 +28,7 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 ## Getting started with {Platform} Pivot Grid
 
-The {Platform} Pivot Grid Component can be configured via the `PivotConfiguration` property.
+The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` property.
 
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfigHierarchy">
@@ -243,7 +243,7 @@ Resulting in the following view, which groups the Product Categories unique colu
 | Merging the dimension members is case sensitive| The pivot grid creates groups and merges the same (case sensitive) values. But the dimensions provide `MemberFunction` and this can be changed there, the result of the `MemberFunction` are compared and used as display value.|
 
 ## API References
-* `PivotGridComponent`
+* `{PivotGridName}`
 * `PivotDataSelectorComponent`
 
 
