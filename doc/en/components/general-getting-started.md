@@ -2,10 +2,11 @@
 title: Getting Started | {ProductName} | Infragistics
 _description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
 _keywords: {ProductName}, Infragistics, Getting Started
+mentionedTypes: ['Avatar']
 ---
-# Getting Started With {ProductName}
 
 <!-- React -->
+# Getting Started With {ProductName}
 
 This topic provides step-by-step instructions for creating React applications with Ignite UI for React
 
@@ -29,12 +30,34 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 <!-- end: React -->
 
 <!-- WebComponents -->
+# {ProductName} Packages Overview
 
-This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
+{ProductName} is a complete set of Material-based UI widgets, components, Sketch UI kits and supporting directives for WebComponents. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
 
-[Ignite UI for Web Components](https://www.infragistics.com/products/ignite-ui-web-components) is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
+## Charts & Graphs
+{ProductName} Charts & Graphs is a library that lets you visualize any type of data through its 65+ types of series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+
+## Gauges
+{ProductName} Gauges provides a radial and a linear gauge components used to illustrate data in an easy and intuitive way.
+The radial gauge has a variety of customization options in order to create a predefined shape and scale.
+The linear gauge provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels.
+
+{ProductName} Gauges also includes a `Bullet Graph` component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simpl bar charts.
+
+## Maps
+{ProductName} Maps brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+
+## Grids & Inputs
+{ProductName} Grid is a grid component that allows you to bind and display data with little configuration. It also provides features such as filtering, sorting, grouping, pinning and more.
+
+## IgniteUI Web Components
+{ProductName} is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
 
 All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+
+# Getting Started With {ProductName}
+
+This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
 
 ## Ignite UI Web Components Example
 The sample below provides an overview on the web components and shows how utilizing them can help you create a well structured app. It represents a sample travel blog that includes an app header with the user's avatar, side navigation and main content area.
@@ -52,18 +75,18 @@ The sample below provides an overview on the web components and shows how utiliz
 
 To create an application from scratch and configure it to use the Ignite UI Web Components you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
 
-```bash
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install -g igniteui-cli
-```
+</pre>
 
 If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
 
-```bash
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig
-```
+</pre>
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](#general-cli-overview) 
+Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
 
 ## Install Polyfills
 
@@ -73,7 +96,7 @@ Run this command to install the web component polyfills:
 npm install @webcomponents/custom-elements
 ```
 
-Them import the web component polyfills into index.js:
+Then import the web component polyfills into index.js:
 
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
@@ -112,8 +135,6 @@ After the components are imported you can use them in your html:
 <igc-avatar initials="AZ"></igc-avatar>
 <igc-badge></igc-badge>
 ```
-
-This topic provides step-by-step instructions for creating Web Components applications with Ignite UI for Web Components
 
 # Install Charts and Map Web Component packages
 ## Step 1 - Create the Web Component Project
@@ -271,6 +292,7 @@ npm run build
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+# Getting Started With {ProductName}
 
 ## Updating Existing App
 
@@ -376,6 +398,7 @@ The final result should look something like this screenshot:
 <!-- end: Angular, React -->
 
 <!-- Blazor -->
+# Getting Started With {ProductName}
 
 This topic provides step-by-step instructions for creating Blazor Server applications with Ignite UI for Blazor using Visual Studio.
 
