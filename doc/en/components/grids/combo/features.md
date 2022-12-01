@@ -2,7 +2,7 @@
 title: {Platform} Combo Component – {ProductName}
 _description: {ProductName} Combo Component Features
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Combo Component Features
-mentionedTypes: ['Combo']
+mentionedTypes: ['Combo', 'ComboList', 'ComboItem']
 ---
 
 # {Platform} Combo Features
@@ -19,7 +19,7 @@ The following demo demonstrates some of the combobox features that are enabled/d
            github-src="grids/combo/features">
 </code-view>
 
-In our sample we are going to use the `igc-switch` component so we have to register it together with the combo:
+In our sample we are going to use the `Switch` component so we have to register it together with the combo:
 
 ```ts
 import {
@@ -65,7 +65,7 @@ constructor() {
 }
 ```
 
-Note that grouping is enabled/disabled by setting the `groupKey` property to a corresponding data source entity or setting it to an empty string: 
+Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source entity or setting it to an empty string: 
 
 ```ts
 let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
@@ -78,9 +78,9 @@ switchGroup.addEventListener('igcChange', () => {
 
 ### Filtering
 
-By default, filtering in the combobox is enabled. It can be disabled by setting the `disable-filtering` property.
+By default, filtering in the combobox is enabled. It can be disabled by setting the `DisableFiltering` property.
 
-Filtering options can be further enhanced by enabling the search case sensitivity. The case-sensitive icon can be turned on using the `case-sensitive-icon` property so that end-users can control the case sensitivity.
+Filtering options can be further enhanced by enabling the search case sensitivity. The case-sensitive icon can be turned on using the `CaseSensitiveIcon` property so that end-users can control the case sensitivity.
 
 ```html
 <igc-combo disable-filtering case-sensitive-icon></igc-combo>
@@ -88,9 +88,9 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 #### Filtering Options
 
-The {ProductName} Combo component exposes one more filtering property that allows passing configuration of both `filterKey` and `caseSensitive` options. The `filterKey` indicates whether the `displayKey` property should be used for filtering the list of options. The `caseSensitive` shows if the filtering should be case sensitive or not.
+The {ProductName} Combo component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates whether the `DisplayKey` property should be used for filtering the list of options. The `CaseSensitive` shows if the filtering should be case sensitive or not.
 
-The following code snippet shows how to filter the cities from our data source by their country instead of their name. We are also making the filtering case sensitive no matter whether the `case-sensitive-icon` is enabled or not:
+The following code snippet shows how to filter the cities from our data source by their country instead of their name. We are also making the filtering case sensitive no matter whether the `CaseSensitiveIcon` is enabled or not:
 
 ```ts
 public customOpts = {
@@ -105,14 +105,14 @@ constructor() {
 
 ### Grouping
 
-Defining a combobox's `group-key` option will group the items, according to the provided key:
+Defining a combobox's `GroupKey` option will group the items, according to the provided key:
 
 ```html
 <igc-combo group-key="region"></igc-combo>
 ```
 
 > [!Note]
-> You can use the `group-key` property only if your data source is comprised of type Object[].
+> You can use the `GroupKey` property only if your data source is comprised of type Object[].
 
 #### Sorting Direction
 
@@ -124,7 +124,7 @@ The combo component also exposes an option for setting whether groups should be 
 
 ### Label 
 
-The combobox label can be set easily using the `label` property:
+The combobox label can be set easily using the `Label` property:
 
 ```html
 <igc-combo label="Cities"></igc-combo>
@@ -148,7 +148,7 @@ If you want your combo to be automatically focused on page load you can use the 
 
 ### Search Input Focus
 
-The combo search input is focused by default. To disable this feature and move the focus to the list of options use the `autofocus-list` property as shown below: 
+The combo search input is focused by default. To disable this feature and move the focus to the list of options use the `AutofocusList` property as shown below: 
 
 ```html
 <igc-combo autofocus-list></igc-combo>
@@ -156,7 +156,7 @@ The combo search input is focused by default. To disable this feature and move t
 
 ### Disable ComboBox
 
-You can disable a combobox using the `disabled` property:
+You can disable a combobox using the `Disabled` property:
 
 ```html
 <igc-combo disabled></igc-combo>

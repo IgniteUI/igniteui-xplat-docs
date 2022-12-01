@@ -57,9 +57,7 @@ Except for custom templates, the {ProductName} Combo component exposes several s
 You can modify the header part using the `header` slot:
 
 ```html
-<header style="text-align: center" slot="header">
-    This is a custom header
-</header>
+<header style="text-align: center" slot="header">This is a custom header</header>
 ```
 
 ### Footer
@@ -67,9 +65,7 @@ You can modify the header part using the `header` slot:
 You can modify the footer part using the `footer` slot:
 
 ```html
-<footer style="text-align: center" slot="footer">
-    This is a custom footer
-</footer>
+<footer style="text-align: center" slot="footer">This is a custom footer</footer>
 ```
 
 ### Empty List 

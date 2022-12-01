@@ -76,9 +76,9 @@ In our case, we want the combobox to display the `name` of each city and the com
 
 The combobox component exposes API that allows getting and manipulating the current selection state of the control.
 
-Except for selecting combo items from the list options manually, users can select items programmatically. One way to do this is via the combo `select()` method. You can pass an array of items that should be selected or an empty array if you want to select all of the options in the combobox list.
+Except for selecting combo items from the list options manually, users can select items programmatically. One way to do this is via the combo `select` method. You can pass an array of items that should be selected or an empty array if you want to select all of the options in the combobox list.
 
-The reversed action is also available using the combo `deselect()` method. In this case, if an empty array is passed, all of the options in the combobox list will be deselected.
+The reversed action is also available using the combo `deselect` method. In this case, if an empty array is passed, all of the options in the combobox list will be deselected.
 
 ### Validation
 
@@ -119,7 +119,7 @@ Part name | Description
 `toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
 `helper-text` | A helper-text wrapper that renders content below the target input.
 `filter-input` | The encapsulated igc-input that holds the filter value.
-`list-wrapper` | A wrapper that holds the filter-input and the `igc-combo-list` component.
+`list-wrapper` | A wrapper that holds the filter-input and the `ComboList` component.
 
 **Combo Item Component**
 
