@@ -108,31 +108,22 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 
 ### CSS Parts
 
-**Combo Component**
-
 Part name | Description
 ---------|------------
 `target` | The encapsulated igc-input that holds the list of selected options.
-`prefix`  | A prefix wrapper that renders content before the target input.
-`suffix` | A suffix wrapper that renders content after the target input.
 `clear-icon` | A clear-icon wrapper that renders content inside the suffix wrapper.
 `toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
 `helper-text` | A helper-text wrapper that renders content below the target input.
-`filter-input` | The encapsulated igc-input that holds the filter value.
-`list-wrapper` | A wrapper that holds the filter-input and the `ComboList` component.
-
-**Combo Item Component**
-
-Part name | Description
----------|------------
-`content` | The main wrapper that holds the text content of an item.
-`prefix`  | A prefix wrapper that renders content before the main wrapper.
-
-**Combo List Component**
-
-Part name | Description
----------|------------
+`list-wrapper` | A list- wrapper that holds the filter-input and the `ComboList` component.
+`filter-input` | A wrapper that holds the igc-input used for filtering.
+`search-input` | The encapsulated igc-input that holds the filter value.
+`case-icon`   | A case-icon wrapper that renders content inside the suffix of the filter-input.
+`empty` | A wrapper that holds the content of the empty list.
+`group-header` | A wrapper that holds the text content of the group headers.
 `list` | A wrapper that holds the list of combo options.
+`item` | An item-wrapper that holds the content of the combo items.
+`selected` | A wrapper that holds the content of the combo selected items.
+`active` | A wrapper that holds the content of the combo active items.
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
