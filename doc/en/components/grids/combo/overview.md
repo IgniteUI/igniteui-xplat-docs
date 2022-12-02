@@ -63,22 +63,43 @@ constructor() {
 
 Since the combobox is bound to an array of complex data (i.e. objects), we need to specify a property that the control will use to handle the selected items. The component exposes the following properties:
 
- - `displayKey` - *Optional,* ***required*** *for object arrays* - Determines which column in the data source is used as the display value. If no value is specified for `displayKey`, the combobox will use the specified `valueKey` (if any).
+ - `DisplayKey` - *Optional,* ***required*** *for object arrays* - Determines which column in the data source is used as the display value. If no value is specified for `DisplayKey`, the combobox will use the specified `ValueKey` (if any).
 
- - `valueKey` - *Optional,* ***recommended*** *for object arrays* - Determines which column in the data source is used as the value. If `valueKey` is omitted, the combobox value will use references to the data entries.
+ - `ValueKey` - *Optional,* ***recommended*** *for object arrays* - Determines which property of the data source will be stored for the combo's selection. If `ValueKey` is omitted, the combobox value will use references to the data entries.
 
-In our case, we want the combobox to display the `name` of each city and the combobox value to store the `id` of each city. Therefore, we are providing these properties to the combobox's `displayKey` and `valueKey`.
+In our case, we want the combobox to display the `name` of each city and the combobox value to store the `id` of each city. Therefore, we are providing these properties to the combobox's `DisplayKey` and `ValueKey`.
 
 > [!Note]
-> When the data source is comprised of a simple type (e.g. `string[]`, `number[]`), **do not** specify a `valueKey` and `displayKey`.
+> When the data source is comprised of a simple type (e.g. `string[]`, `number[]`), **do not** specify a `ValueKey` and `DisplayKey`.
 
 ### Selection API
 
 The combobox component exposes API that allows getting and manipulating the current selection state of the control.
 
-Except for selecting combo items from the list options manually, users can select items programmatically. One way to do this is via the combo `select` method. You can pass an array of items that should be selected or an empty array if you want to select all of the options in the combobox list.
+Except for selecting combo items from the list options manually, users can select items programmatically. One way to do this is via the combo `select` method. You can pass an array of items that should be selected or an empty array if you want to select all of the options in the combobox list. When you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select:
+
+```ts
+public selectCities() {
+    this.combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
+}
+```
+
+Otherwise, if the `ValueKey` is omitted, you will have to list the desired items as objects like shown below:
+
+```ts
+public selectCities() {
+    this.combo.select([this.cities[1], this.cities[5]]);
+}
+```
 
 The reversed action is also available using the combo `deselect` method. In this case, if an empty array is passed, all of the options in the combobox list will be deselected.
+
+<code-view style="height: 380px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
+           alt="{Platform} Combo Selection Example"
+           github-src="grids/combo/selection">
+</code-view>
 
 ### Validation
 
@@ -110,20 +131,23 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 
 Part name | Description
 ---------|------------
-`target` | The encapsulated igc-input that holds the list of selected options.
-`clear-icon` | A clear-icon wrapper that renders content inside the suffix wrapper.
-`toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
-`helper-text` | A helper-text wrapper that renders content below the target input.
-`list-wrapper` | A list- wrapper that holds the filter-input and the `ComboList` component.
+`input` | The main input field.
+`clear-icon` | The clear icon wrapper.
+`toggle-icon` | The toggle icon wrapper.
+`helper-text` | The helper text wrapper.
+`list-wrapper` | The list of options wrapper.
 `filter-input` | A wrapper that holds the igc-input used for filtering.
-`search-input` | The encapsulated igc-input that holds the filter value.
+`search-input` | The search input field.
 `case-icon`   | A case-icon wrapper that renders content inside the suffix of the filter-input.
-`empty` | A wrapper that holds the content of the empty list.
-`group-header` | A wrapper that holds the text content of the group headers.
-`list` | A wrapper that holds the list of combo options.
-`item` | An item-wrapper that holds the content of the combo items.
-`selected` | A wrapper that holds the content of the combo selected items.
-`active` | A wrapper that holds the content of the combo active items.
+`empty` | The container holding the empty content.
+`group-header` | Represents each header in the list of options.
+`list` | The list of options box.
+`item` | Represents each item in the list of options.
+`selected` | Appended to the item parts list when the item is selected.
+`active` | Appended to the item parts list when the item is active.
+`checkbox` | Represents each checkbox of each list item.
+`checkbox-indicator` | Represents the checkbox indicator of each list item.
+`checked` | Appended to checkbox parts list when checkbox is checked.
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
