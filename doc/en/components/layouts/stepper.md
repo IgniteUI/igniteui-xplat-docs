@@ -44,7 +44,7 @@ defineComponents(IgcStepperComponent);
 Now you can start with a basic configuration of the `Stepper` and its steps.
 
 ## Usage
-The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `invalid`, `active`, `optional`, `disabled` and `completed` properties, which give you the ability to configure the step states according to your business requirement.
+The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `invalid`, `active`, `optional`, `disabled` and `complete` properties, which give you the ability to configure the step states according to your business requirement.
 
 ### Declaring a Stepper
 Steps can be declared using one of the following approaches.
@@ -123,7 +123,7 @@ The sample below demonstrates how stepper orientation and titles position could 
 - **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
 - **disabled** - Determines whether the step is interactable. By default, the disabled attribute of a step is set to *false*.
 - **optional** - By default, the optional attribute of a step is set to *false*. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
-- **completed** - By default, the completed attribute of a step returns *false*. The user, however, can override this default completed behavior by setting the completed attribute as needed. When step is marked as completed not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
+- **complete** - By default, the complete attribute of a step returns *false*. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
 
 The `Stepper` gives you the opportunity to set validation logic for each step through the `invalid` property. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its defaut value is *false*.
 
