@@ -91,7 +91,7 @@ For each step the user has the ability to configure indicator, title and subtitl
     </igc-step>
 </igc-stepper>
 ```
-<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../images/stepper/stepper-step.png"  data-src="../images/stepper/stepper-step.png" />
+<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### Changing the Stepper Orientation
 You can customize the stepper orientation through the exposed `orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
@@ -101,7 +101,7 @@ You can customize the stepper orientation through the exposed `orientation` prop
 *horizontal* is the default value for the `Stepper` orientation property.
 When the stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` contentTop boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
-<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../images/stepper/stepper-contentTop.png" data-src="../images/stepper/stepper-contentTop.png"/>
+<img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
 **Vertical Stepper Orientation**
 
@@ -111,9 +111,9 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 <code-view style="height: 528px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-label-position-and-orientation-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-title-position-and-orientation-example"
            alt="{Platform} Stepper Orientation Example"
-           github-src="layouts/stepper/label-position-and-orientation-example">
+           github-src="layouts/stepper/title-position-and-orientation-example">
 </code-view>
 
 <div class="divider--half"></div>
