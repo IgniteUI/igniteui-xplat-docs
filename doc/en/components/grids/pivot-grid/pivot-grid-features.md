@@ -1,7 +1,8 @@
 ---
-title: {Platform} {PivotGridTitle} Features | Pivot Tables | Infragistics
-_description: Create fast, responsive {Platform} {PivotGridTitle}s and tables with {ProductName}. Perform complex data analysis via pivot data.
-_keywords: {Platform} {PivotGridTitle}, {Platform} material pivot table, {ProductName}, {PivotGridTitle} features, pivot features
+title: {Platform} {ComponentTitle} Features | Pivot Tables | Infragistics
+_description: Create fast, responsive {Platform} {ComponentTitle}s and tables with {ProductName}. Perform complex data analysis via pivot data.
+_keywords: {Platform} {ComponentTitle}, {Platform} material pivot table, {ProductName}, {ComponentTitle} features, pivot features
+mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} {PivotGridTitle} Features
@@ -23,6 +24,7 @@ The {PivotGridTitle} component has additional features and functionalities relat
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/pivot-grid-features" alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
 </code-view>
 
+<!-- Angular -->
 ## Dimensions Filtering
 
 All dimensions (filters, rows, columns) can be filtered via the chip UI or the API. This functionality is embedded and enabled by default.
@@ -35,10 +37,8 @@ The filtering UI can be opened via the dimension chips filter icon and allows ex
 >[!NOTE]
 >If there is not enough space for all of the filtering chips, the {PivotGridTitle} will show the ones that were cut off into a dropdown. End-users can access and manipulate them there.
 
-Dimensions can also be filtered initially via the dimension configuration in `pivotConfiguration` with the dimension's `filter` property.
+Dimensions can also be filtered initially via the dimension configuration in `PivotConfiguration` with the dimension's `filter` property.
 It can be set to a new `FilteringExpressionsTree` with the related filter condition, for example:
-
-<!-- Angular, WebComponents  -->
 
 ```typescript
 public filterExpTree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -64,26 +64,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 }
 
 ```
-<!-- end: Angular, WebComponents -->
-
-<!--Blazor-->
-
-```razor
-
-    var pivotConfiguration1 = new IgbPivotConfiguration();
-    var pivotDimension1 = new IgbPivotDimension();
-    pivotDimension1.MemberName = "Product";
-    pivotDimension1.Filter = new IgbFilteringExpressionsTree()
-                    {
-                        FieldName = "Product",
-                        FilteringOperands = new IgbFilteringExpressionsTreeOrFilteringExpression() {
-                            Name = "Tea"
-                    }
-                };
-```
-
-<!--end: Blazor -->
-
+<!-- end: Angular -->
 
 ## Dimensions Sorting
 
@@ -110,21 +91,22 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 <!-- Blazor -->
 ```razor
-
-    var pivotConfiguration1 = new IgbPivotConfiguration();
-    var pivotDimension1 = new IgbPivotDimension();
-    pivotDimension1.MemberName = "Product";
-    pivotDimension1.SortDirection = SortingDirection.Desc;
-
+    var pivotConfiguration = new IgbPivotConfiguration();
+    var rowDimension = new IgbPivotDimension() {
+        MemberName = "SellerName",
+        Enabled = true,
+        SortDirection = SortingDirection.Asc
+    };
+    pivotConfiguration.Rows.Add(rowDimension);
 ```
 
 <!-- end:Blazor -->
 ## Dimensions Resizing
 
 Row dimensions can be resized similarly to column resizing - via a resizing indicator that can be found on the right edge of the cells.
-They can also be auto-sized by double clicking the resize indicator, or by using the related API - `autoSizeRowDimension`.
+They can also be auto-sized by double clicking the resize indicator, or by using the related API - `AutoSizeRowDimension`.
 
-A different size can also be set initially with the `width` property available in the dimension definition:
+A different size can also be set initially with the `Width` property available in the dimension definition:
 
 <!-- Angular, WebComponents  -->
 
@@ -143,13 +125,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 <!-- Blazor -->
 ```razor
-
-    var pivotConfiguration1 = new IgbPivotConfiguration();
-    var pivotDimension1 = new IgbPivotDimension();
-    pivotDimension1.MemberName = "Product";
-    pivotDimension1.Enabled = true;
-    pivotDimension1.Width = "400px";
-
+    var pivotConfiguration = new IgbPivotConfiguration();
+    var rowDimension = new IgbPivotDimension() {
+        MemberName = "SellerName",
+        Enabled = true,
+        Width = "400px"
+    };
+    pivotConfiguration.Rows.Add(rowDimension);
 ```
 
 <!-- end:Blazor -->
@@ -162,13 +144,26 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 </{PivotGridSelector}>
 ```
 
+```razor
+<{PivotGridSelector} PivotConfiguration="PivotConfiguration"
+        Data="PivotSalesData"
+        Name="grid"
+        RowSelection=GridSelectionMode.Single
+        @ref="grid">
+</{PivotGridSelector}>
+```
+
 In case there are multiple row or column dimensions which would create groups that span multiple rows/columns, selection is applied to all cells that belong to the selected group.
 
 ## Super Compact Mode
-The `{PivotGridName}` component provides a `superCompactMode` `@Input`. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `displayDensity` option for the {PivotGridTitle}. Enabling `superCompactMode` also sets the `displayDensity` input to `compact` for each child component(like `IgxChip`) that does not have the `superCompactMode` option.
+The `{PivotGridName}` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
 
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>
+```
+
+```razor
+<{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
 ```
 
 ## Additional Summary Column
@@ -179,7 +174,7 @@ When a `column` dimension defines a hierarchy, the {PivotGridTitle} will render 
 
 ### Keyboard Navigation
 
-Keyboard navigation in `{PivotGridName}` works similarly to the one in `IgxGrid`. The {PivotGridTitle} is split into three areas - `rows`, `columns`, `values`. The areas for `rows` and `columns` are considered headers for the purposes of navigation while the area for `values` is the body.
+Keyboard navigation in `{PivotGridSelector}` works similarly to the one in `{GridSelector}`. The {PivotGridTitle} is split into three areas - `rows`, `columns`, `values`. The areas for `rows` and `columns` are considered headers for the purposes of navigation while the area for `values` is the body.
 The keyboard arrows allow navigating the active element within the current area only.
 
 ### Dimensions Drag & Drop
@@ -192,16 +187,14 @@ Chips from these areas can not be moved to the `values` area and chips from the 
 >The chips from the {PivotGridTitle} can not be moved to the Pivot Data Selector and items from the Pivot Data Selector can not be moved to the {PivotGridTitle}.
 
 ## API References
-* [{PivotGridName}Component](overview.md)
-* `PivotDataSelectorComponent`
+* `PivotGrid`
+* `PivotDataSelector`
 
 
 ## Additional Resources
-<div class="divider--half"></div>
-* [{Platform} {PivotGridTitle} Overview](pivot-grid.md)
+* [{Platform} {PivotGridTitle} Overview](overview.md)
 * [{Platform} {PivotGridTitle} Custom Aggregations](pivot-grid-custom.md)
 
-<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
