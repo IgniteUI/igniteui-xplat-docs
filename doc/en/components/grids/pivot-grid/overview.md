@@ -2,6 +2,7 @@
 title: {Platform} Pivot Grid & Table – {ProductName}
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
+mentionedTypes: ['Infragistics.Controls.PivotGrid']
 ---
 
 # {Platform} Pivot Grid Overview
@@ -36,7 +37,8 @@ The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` pr
 ```
 
 ```razor
-<IgbPivotGrid Data="forecasts" PivotConfiguration="pivotConfigHierarchy"></IgbPivotGrid>
+<IgbPivotGrid PivotConfiguration="PivotConfiguration" Data="PivotData">
+</IgbPivotGrid>
 ```
 
 It is defined by three main dimensions: **rows**, **columns** and **values**. The **rows** and **columns** define the grouped structure that is displayed in the rows and columns of the grid. The **values** define the aggregation fields and the aggregation that will be used to calculate and display the related values of the groups.
@@ -45,7 +47,10 @@ A filter can also be defined via the **filters** configuration property. It can 
 
 ### Dimensions configuration
 
-Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**, or a `MemberFunction` that extracts a value from the record in case of complex objects or other custom scenarios.
+Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**.
+<!-- Angular -->
+Or a `MemberFunction` that extracts a value from the record in case of complex objects or other custom scenarios.
+<!-- Angular -->
 
 Multiple sibling dimensions can be defined, which creates a more complex nested group in the related row or column dimension area.
 
@@ -63,7 +68,19 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
                 enabled: true
             }
     }
+```
 
+```razor
+@code {
+    var pivotConfiguration = new IgbPivotConfiguration();
+    pivotConfiguration.Rows.Add(new IgbPivotDimension()
+        {
+            MemberName = "Product",
+            Enabled = true,
+            Name = "pivotDimension1",
+            ChildLevel = new IgbPivotDimension() { MemberName = "Country", Enabled = true, Name = "pivotDimension2" }
+        });
+}
 ```
 In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the pivot grid.
 
@@ -88,6 +105,18 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 }
 ```
 
+```razor
+@code {
+    IgbPivotDateDimension dateDim = new IgbPivotDateDimension();
+    dateDim.InBaseDimension = new IgbPivotDimension()
+        {
+            MemberName = "Date",
+            Enabled = true
+        };
+    _config.Rows.Add(dateDim);
+}
+```
+
 It also allows for further customization via the second option parameter in order to enable or disable a particular part of the hierarchy, for example:
 
 ```typescript
@@ -98,6 +127,25 @@ It also allows for further customization via the second option parameter in orde
     fullDate: true,
     quarters: false
 });
+```
+
+```razor
+@code {
+    IgbPivotDateDimension dateDim = new IgbPivotDateDimension();
+    dateDim.InBaseDimension = new IgbPivotDimension()
+        {
+            MemberName = "Date",
+            Enabled = true
+        };
+    dateDim.InOptions = new IgbPivotDateDimensionOptions()
+        {
+            Years = true,
+            Months = true,
+            FullDate = true,
+            Quarters = true
+        };
+    _config.Rows.Add(dateDim);
+}
 ```
 
 
@@ -155,6 +203,24 @@ public static totalMax: PivotAggregation = (members, data: any) => {
     return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.max(a,b));
 };
 ```
+
+```razor
+@code {
+    IgbPivotConfiguration pivotConfiguration1 = new IgbPivotConfiguration();
+    IgbPivotValue pivotValue = new IgbPivotValue()
+        {
+            Member = "Sales",
+            Name = "pivotValue1",
+            DisplayName = "Amount of Sales",
+            Enabled = true,
+            Aggregate = new IgbPivotAggregator() { Key = "sum", AggregatorName = PivotAggregationType.SUM, Label = "Sum of Sales" }
+        };
+    pivotValue.AggregateList.Add(new IgbPivotAggregator() { Key = "sum", AggregatorName = PivotAggregationType.SUM, Label = "Sum of Sales" });
+    pivotValue.AggregateList.Add(new IgbPivotAggregator() { Key = "min", AggregatorName = PivotAggregationType.MIN, Label = "Minimum of Sales" });
+    pivotValue.AggregateList.Add(new IgbPivotAggregator() { Key = "max", AggregatorName = PivotAggregationType.MAX, Label = "Maximum of Sales" });
+    pivotConfiguration1.Values.Add(pivotValue);
+```
+
 The pivot value also provides a `DisplayName` property. It can be used to display a custom name for this value in the column header.
 
 ### Enable property
@@ -199,6 +265,30 @@ Let's take a look at a basic pivot configuration:
     };
 ```
 
+```razor
+    IgbPivotConfiguration pivotConfiguration = new IgbPivotConfiguration();
+    pivotConfiguration.Rows.Add(new IgbPivotDimension()
+        {
+            MemberName = "Product",
+            Enabled = true,
+            Name = "pivotDimension1"
+        });
+    pivotConfiguration.Columns.Add(new IgbPivotDimension()
+        {
+            MemberName = "Country",
+            Enabled = true,
+            Name = "pivotDimension2"
+        });
+    pivotConfiguration.Values.Add(new IgbPivotValue()
+        {
+            Member = "UnitsSold",
+            Name = "pivotValue1",
+            Enabled = true,
+            Aggregate = new IgbPivotAggregator() { Key = "sum", AggregatorName = PivotAggregationType.SUM, Label = "Sum" }
+        });
+}
+```
+
 This configuration defines 1 row, 1 column and 1 aggregation that sums the values of each dimension groups.
 The members match fields available in the provided data source:
 
@@ -220,7 +310,27 @@ public data = [
     },
     //...
 ];
+```
 
+```
+public PivotSalesData()
+{
+    this.Add(new PivotSalesDataItem()
+    {
+        Country = @"UK",
+        Product = @"Vermont",
+        UnitsSold = @"501",
+        ManufacturingPrice = 15,
+        SalePrice = 23,
+        GrossSales = 26440,
+        Discounts = double.NaN,
+        Sales = 26440,
+        COGS = 16185,
+        Profit = 11255,
+        Date = @"1/1/20",
+        MonthName = @"January",
+        Year = @"2020"
+    });
 ```
 
 
