@@ -139,10 +139,19 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 The {PivotGridTitle} supports single selection which is enabled just like in the base grid. For example:
 
+<!-- Angular -->
 ```html
 <{PivotGridSelector} #grid1 [rowSelection]="'single'" [data]="data" [pivotConfiguration]="pivotConfigHierarchy">
 </{PivotGridSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents  -->
+```html
+<{PivotGridSelector} id="grid" row-selection="single">
+</{PivotGridSelector}>
+```
+<!-- end: WebComponents -->
 
 ```razor
 <{PivotGridSelector} PivotConfiguration="PivotConfiguration"
@@ -158,9 +167,19 @@ In case there are multiple row or column dimensions which would create groups th
 ## Super Compact Mode
 The `{PivotGridName}` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
 
+
+
+<!-- Angular -->
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents  -->
+```html
+<{PivotGridSelector} super-compact-mode="true"></{PivotGridSelector}>
+```
+<!-- end: WebComponents -->
 
 ```razor
 <{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
