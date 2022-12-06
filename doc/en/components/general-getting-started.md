@@ -52,7 +52,7 @@ The linear gauge provides a simple view of a value compared against a scale and 
 ## IgniteUI Web Components
 {ProductName} is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
 
-All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
 
 # Getting Started With {ProductName}
 
