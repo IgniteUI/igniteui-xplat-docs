@@ -31,7 +31,7 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 <!-- WebComponents -->
 # {ProductName} Packages Overview
 
-{ProductName} is a complete set of Material-based UI widgets, components, Sketch UI kits and supporting directives for WebComponents. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
+{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
 
 ## Charts & Graphs
 {ProductName} Charts & Graphs is a library that lets you visualize any type of data through its 65+ types of series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
