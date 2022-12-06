@@ -685,6 +685,12 @@
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Remote Data Operations",
+        "href": "grids/pivot-grid/pivot-grid-custom.md",
+        "status": "NEW"
       }
     ]
   },
