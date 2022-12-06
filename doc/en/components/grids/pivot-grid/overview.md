@@ -17,7 +17,7 @@ The {Platform} {PivotGridName} presents data in a pivot table and helps perf
 The `{PivotGridName}` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
 The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `{PivotGridName}` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
 
-## {Platform} Pivot Grid example
+## {Platform} Pivot Grid Example
 
 The following is an {Platform} Pivot Grid example in combination with the {Platform} Pivot Data Selector Component. This way you can have more flexible runtime configuration options.
 
@@ -27,14 +27,23 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 
-## Getting started with {Platform} Pivot Grid
+## Getting Started With {Platform} Pivot Grid
 
 The {Platform} {PivotGridName} can be configured via the `PivotConfiguration` property.
 
+<!--Angular -->
 ```html
 <igx-pivot-grid #grid1 [data]="data" [pivotConfiguration]="pivotConfigHierarchy">
 </igx-pivot-grid>
 ```
+<!-- end: Angular -->
+
+<!--WebComponents -->
+```html
+<igc-pivot-grid #grid1 data="data" pivot-configuration="pivotConfigHierarchy">
+</igc-pivot-grid>
+```
+<!-- end: WebComponents -->
 
 ```razor
 <IgbPivotGrid PivotConfiguration="PivotConfiguration" Data="PivotData">
@@ -45,7 +54,7 @@ It is defined by three main dimensions: **rows**, **columns** and **values**. Th
 
 A filter can also be defined via the **filters** configuration property. It can be used for fields that you do not want to add as a dimension or a value but would like to filter their related member values via the UI.
 
-### Dimensions configuration
+### Dimensions Configuration
 
 Each basic dimension configuration requires a `MemberName` that matches a field from the provided **data**.
 <!-- Angular -->
@@ -82,11 +91,11 @@ A dimension can also describe an expandable hierarchy via the `ChildLevel` prope
         });
 }
 ```
-In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the pivot grid.
+In this case the dimension renders an expander in the related section of the grid (row or column) and allows the children to be expanded or collapsed as part of the hierarchy. By default the row dimensions are initially expanded. This behavior can be controlled with the `DefaultExpandState` property of the Pivot Grid.
 
-### Predefined dimensions
+### Predefined Dimensions
 
-As part of the pivot grid some additional predefined dimensions are exposed for easier configuration:
+As part of the Pivot Grid some additional predefined dimensions are exposed for easier configuration:
 - `PivotDateDimension`
     Can be used for date fields. Describes the following hierarchy by default:
     - All Periods
@@ -97,6 +106,7 @@ As part of the pivot grid some additional predefined dimensions are exposed for 
 
 It can be set for rows or columns, for example:
 
+<!-- Angular -->
 ```typescript
 public pivotConfigHierarchy: IPivotConfiguration = {
     rows: [
@@ -104,6 +114,17 @@ public pivotConfigHierarchy: IPivotConfiguration = {
     ]
 }
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public pivotConfigHierarchy: IgcPivotConfiguration = {
+    rows: [
+        new IgcPivotDateDimension({ memberName: 'Date', enabled: true });
+    ]
+}
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -119,6 +140,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 It also allows for further customization via the second option parameter in order to enable or disable a particular part of the hierarchy, for example:
 
+<!-- Angular -->
 ```typescript
  new IgxPivotDateDimension({ memberName: 'Date', enabled: true }, {
     total: true,
@@ -128,6 +150,19 @@ It also allows for further customization via the second option parameter in orde
     quarters: false
 });
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+ new IgcPivotDateDimension({ memberName: 'Date', enabled: true }, {
+    total: true,
+    years: true,
+    months: true,
+    fullDate: true,
+    quarters: false
+});
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -149,7 +184,7 @@ It also allows for further customization via the second option parameter in orde
 ```
 
 
-### Values configuration
+### Values Configuration
 
 A value configuration requires a **member** that matches a field from the provided **data**, or it can define a custom **aggregator** function for more complex custom scenarios. Out of the box, there are 4 predefined aggregations that can be used depending on the data type of the data field:
 
@@ -164,6 +199,7 @@ A value configuration requires a **member** that matches a field from the provid
 
 The current aggregation function can be changed at runtime using the value chip's drop-down. By default, it displays a list of available aggregations based on the field's data type. A custom list of aggregations can also be set via the `AggregateList` property, for example:
 
+<!-- Angular -->
 ```typescript
 public pivotConfigHierarchy: IPivotConfiguration = {
     values: [
@@ -203,6 +239,49 @@ public static totalMax: PivotAggregation = (members, data: any) => {
     return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.max(a,b));
 };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+public pivotConfigHierarchy: IgcPivotConfiguration = {
+    values: [
+        {
+            member: 'AmountOfSale',
+            displayName: 'Amount of Sale',
+            aggregate: {
+                key: 'SUM',
+                aggregator: IgxTotalSaleAggregate.totalSale,
+                label: 'Sum of Sale'
+            },
+            aggregateList: [{
+                key: 'SUM',
+                aggregator: IgxTotalSaleAggregate.totalSale,
+                label: 'Sum of Sale'
+            }, {
+                key: 'MIN',
+                aggregator: IgxTotalSaleAggregate.totalMin,
+                label: 'Minimum of Sale'
+            }, {
+                key: 'MAX',
+                aggregator: IgxTotalSaleAggregate.totalMax,
+                label: 'Maximum of Sale'
+            }]
+        }
+    ]
+}
+
+public static totalSale: PivotAggregation = (members, data: any) =>
+    data.reduce((accumulator, value) => accumulator + value.UnitPrice * value.UnitsSold, 0);
+
+public static totalMin: PivotAggregation = (members, data: any) => {
+    return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.min(a, b));
+};
+
+public static totalMax: PivotAggregation = (members, data: any) => {
+    return data.map(x => x.UnitPrice * x.UnitsSold).reduce((a, b) => Math.max(a,b));
+};
+```
+<!-- end: WebComponents -->
 
 ```razor
 @code {
@@ -223,15 +302,16 @@ public static totalMax: PivotAggregation = (members, data: any) => {
 
 The pivot value also provides a `DisplayName` property. It can be used to display a custom name for this value in the column header.
 
-### Enable property
+### Enable Property
 
-`IPivotConfiguration` is the interface that describes the current state of the `PivotGrid` component. With it the developer can declare fields of the data as **rows**, **columns**, **filters** or **values**. The configuration allows enabling or disabling each of these elements separately. Only enabled elements are included in the current state of the pivot grid. The `PivotDataSelector` component utilizes the same configuration and shows a list of all elements - enabled and disabled. For each of them there is a checkbox in the appropriate state. End-users can easily tweak the pivot state by toggling the different elements using these checkboxes.
-The `Enable` property controls if a given `IPivotDimension` or `IPivotValue` is active and takes part in the pivot view rendered by the pivot grid.
+`PivotConfiguration` is the interface that describes the current state of the `PivotGrid` component. With it the developer can declare fields of the data as **rows**, **columns**, **filters** or **values**. The configuration allows enabling or disabling each of these elements separately. Only enabled elements are included in the current state of the Pivot Grid. The `PivotDataSelector` component utilizes the same configuration and shows a list of all elements - enabled and disabled. For each of them there is a checkbox in the appropriate state. End-users can easily tweak the pivot state by toggling the different elements using these checkboxes.
+The `Enable` property controls if a given `PivotDimension` or `PivotValue` is active and takes part in the pivot view rendered by the Pivot Grid.
 
-### Full configuration example
+### Full Configuration Example
 
 Let's take a look at a basic pivot configuration:
 
+<!-- Angular -->
 ```typescript
       public pivotConfigHierarchy: IPivotConfiguration = {
         columns: [
@@ -264,6 +344,42 @@ Let's take a look at a basic pivot configuration:
         ]
     };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```typescript
+      public pivotConfigHierarchy: IgcPivotConfiguration = {
+        columns: [
+            {
+
+                memberName: 'Product',
+                memberFunction: (data) => data.Product.Name,
+                enabled: true
+            }
+
+        ],
+        rows: [
+            {
+                memberName: 'Seller',
+                memberFunction: (data) => data.Seller.Name,
+                enabled: true,
+            }
+        ],
+        values: [
+            {
+                member: 'NumberOfUnits',
+                aggregate: {
+                    aggregator: IgxPivotNumericAggregate.sum,
+                    key: 'sum',
+                    label: 'Sum'
+                },
+                enabled: true
+
+            }
+        ]
+    };
+```
+<!-- end: WebComponents -->
 
 ```razor
     IgbPivotConfiguration pivotConfiguration = new IgbPivotConfiguration();
@@ -350,7 +466,9 @@ Resulting in the following view, which groups the Product Categories unique colu
 | Setting columns declaratively is not supported. | The Pivot grid generates its columns based on the `Columns` configuration, so setting them declaratively, like in the base grid, is not supported. Such columns are disregarded. |
 | Setting duplicate `MemberName` or `Member` property values for dimensions/values. | `MemberName`/`Member` should be unique for each dimension/value. Duplication may result in loss of data from the final result. |
 | Row Selection is only supported in **Single** mode. | Multiple selection is currently not supported. |
-| Merging the dimension members is case sensitive| The pivot grid creates groups and merges the same (case sensitive) values. But the dimensions provide `MemberFunction` and this can be changed there, the result of the `MemberFunction` are compared and used as display value.|
+<!--Angular -->
+| Merging the dimension members is case sensitive| The Pivot Grid creates groups and merges the same (case sensitive) values. But the dimensions provide `MemberFunction` and this can be changed there, the result of the `MemberFunction` are compared and used as display value.|
+<!-- end: Angular -->
 
 ## API References
 * `{PivotGridName}`
@@ -358,11 +476,10 @@ Resulting in the following view, which groups the Product Categories unique colu
 
 
 ## Additional Resources
-<div class="divider--half"></div>
+
 * [{Platform} Pivot Grid Features](pivot-grid-features.md)
 * [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md)
 
-<div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
