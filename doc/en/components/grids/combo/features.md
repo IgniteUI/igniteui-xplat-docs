@@ -21,6 +21,7 @@ The following demo demonstrates some of the combobox features that are enabled/d
 
 In our sample we are going to use the `Switch` component so we have to register it together with the combo:
 
+<!-- WebComponents -->
 ```ts
 import {
     defineComponents,
@@ -35,6 +36,22 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcComboComponent, IgcComboItemComponent, IgcInputComponent, IgcIconComponent, IgcSwitchComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 Then, we will add event listeners to all switch components so that we can control the combo features by toggling the switches:
 
@@ -86,6 +103,10 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 <igc-combo disable-filtering case-sensitive-icon></igc-combo>
 ```
 
+```razor
+<IgbCombo DisableFiltering="true" CaseSensitiveIcon="true" />
+```
+
 #### Filtering Options
 
 The {ProductName} Combo component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates whether the `DisplayKey` property should be used for filtering the list of options. The `CaseSensitive` shows if the filtering should be case sensitive or not.
@@ -111,6 +132,10 @@ Defining a combobox's `GroupKey` option will group the items, according to the p
 <igc-combo group-key="region"></igc-combo>
 ```
 
+```razor
+<IgbCombo GroupKey="region" />
+```
+
 > [!Note]
 > You can use the `GroupKey` property only if your data source is comprised of type Object[].
 
@@ -122,12 +147,20 @@ The combo component also exposes an option for setting whether groups should be 
 <igc-combo group-sorting="desc"></igc-combo>
 ```
 
+```razor
+<IgbCombo GroupSorting="desc" />
+```
+
 ### Label 
 
 The combobox label can be set easily using the `Label` property:
 
 ```html
 <igc-combo label="Cities"></igc-combo>
+```
+
+```razor
+<IgbCombo Label="Cities" />
 ```
 
 ### Placeholder
@@ -138,12 +171,20 @@ A placeholder text can be specified for both the combo component input and the s
 <igc-combo placeholder="Pick a city" placeholder-search="Search for a city"></igc-combo>
 ```
 
+```razor
+<IgbCombo Placeholder="Pick a city" PlaceholderSearch="Search for a city" />
+```
+
 ### Autofocus
 
 If you want your combo to be automatically focused on page load you can use the following code:
 
 ```html
 <igc-combo autofocus></igc-combo>
+```
+
+```razor
+<IgbCombo Autofocus="true" />
 ```
 
 ### Search Input Focus
@@ -154,6 +195,10 @@ The combo search input is focused by default. To disable this feature and move t
 <igc-combo autofocus-list></igc-combo>
 ```
 
+```razor
+<IgbCombo AutofocusList="true" />
+```
+
 ### Disable ComboBox
 
 You can disable a combobox using the `Disabled` property:
@@ -162,6 +207,11 @@ You can disable a combobox using the `Disabled` property:
 <igc-combo disabled></igc-combo>
 ```
 
+```razor
+<IgbCombo Disabled="true" />
+```
+
+<!-- WebComponents -->
 ## API Reference
 
 * `Combo`
@@ -169,7 +219,19 @@ You can disable a combobox using the `Disabled` property:
 * `ComboHeader`
 * `ComboList`
 
+<!-- end: WebComponents -->
 ## Additional Resources
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

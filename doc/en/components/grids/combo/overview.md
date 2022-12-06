@@ -22,6 +22,7 @@ The {ProductName} Combo component provides a list of options from which users ca
 
 ## Usage
 
+<!-- WebComponents -->
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
@@ -43,6 +44,20 @@ import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcComboComponent, IgcComboItemComponent, IgcInputComponent, IgcIconComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+To get started with the `IgbCombo` component, first we need to register its module as follows:
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
+```
+
+<!-- end: Blazor -->
 
 Then, we will bound an array of objects to the combo data source used for building the list of options:
 
@@ -57,6 +72,10 @@ constructor() {
 
 ```html
 <igc-combo id="combo" display-key="name" value-key="id"></igc-combo>
+```
+
+```razor
+<IgbCombo Id="combo" DisplayKey="name" ValueKey="id" />
 ```
 
 ### Data value and display properties
@@ -103,7 +122,7 @@ The reversed action is also available using the combo `deselect` method. In this
 
 ### Validation
 
-In addition, the {ProductName} Combo component supports most of the `Input` properties, such as `required`, `disabled`, `autofocus`, `invalid`, etc. The component also exposes two methods bound to its validation:
+In addition, the {ProductName} Combo component supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, `Invalid`, etc. The component also exposes two methods bound to its validation:
 
 - checkValidity() - checks for validity and focuses the component if it doesn't satisfy the validation constraints.
 - reportValidity() - checks for validity and returns true if the component satisfies the validation constraints.
@@ -156,6 +175,7 @@ Part name | Description
            github-src="grids/combo/styling">
 </code-view>
 
+<!-- WebComponents -->
 ## API Reference
 
 * `Combo`
@@ -163,7 +183,19 @@ Part name | Description
 * `ComboHeader`
 * `ComboList`
 
+<!-- end: WebComponents -->
 ## Additional Resources
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->

@@ -92,6 +92,7 @@ The clear icon can be changed via the `clear-icon` slot:
 <igc-icon name="clear" slot="clear-icon"></igc-icon>
 ```
 
+<!-- WebComponents -->
 ## API Reference
 
 * `Combo`
@@ -99,7 +100,20 @@ The clear icon can be changed via the `clear-icon` slot:
 * `ComboHeader`
 * `ComboList`
 
+<!-- end: WebComponents -->
+
 ## Additional Resources
+
+<!-- Blazor -->
+
+* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
 
 * [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+
+<!-- end: WebComponents -->
