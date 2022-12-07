@@ -32,6 +32,8 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
       <span><b>${item.name}</b> [${item.id}]</span>
   `;
 };
+
+combo.itemTempate = itemTemplate;
 ```
 
 ### Group Header Template 
@@ -44,50 +46,56 @@ import { ComboItemTemplate } from 'igniteui-webcomponents';
 const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
   return html`<div>Country of ${item.country}</div>`;
 };
+
+combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
 
 ## Slots
-
 Other than custom templates, the {ProductName} Combo component exposes several slots that allow users to pass custom content to different combo parts.
 
-### Header
-
-You can modify the content of the header part using the `header` slot:
-
-```html
-<header style="text-align: center" slot="header">This is a custom header</header>
-```
-
-### Footer
-
-You can modify the content of the footer part using the `footer` slot:
+### Header Slot
+To render a custom header above the list of options pass content to the `header` slot:
 
 ```html
-<footer style="text-align: center" slot="footer">This is a custom footer</footer>
+<igc-combo>
+  <div slot="header">Custom header content</div>
+</igc-combo>
 ```
 
-### Empty List 
-
-To change the content of what is rendered when the list is empty, you can use the `empty` slot:
+### Footer Slot
+To render a custom footer below the list of options pass content to the `footer` slot:
 
 ```html
-<span slot="empty">¯\_(ツ)_/¯</span>
+<igc-combo>
+  <div slot="footer">Custom footer content</div>
+</igc-combo>
 ```
 
-### Toggle Icon 
+### Empty List Slot
+To render a custom content when the filtering operation returns no result, use the `empty` slot:
 
+```html
+<igc-combo>
+  <div slot="empty">¯\_(ツ)_/¯</div>
+</igc-combo>
+```
+
+### Toggle Icon Slot
 The toggle icon in the combo input can also be modified via the `toggle-icon` slot:
 
 ```html
-<igc-icon name="down" slot="toggle-icon"></igc-icon>
+<igc-combo>
+  <igc-icon name="down" slot="toggle-icon"></igc-icon>
+</igc-combo>
 ```
 
-### Clear Icon 
-
+### Clear Icon Slot
 The clear icon can be changed via the `clear-icon` slot:
 
 ```html
-<igc-icon name="clear" slot="clear-icon"></igc-icon>
+<igc-combo>
+  <igc-icon name="clear" slot="clear-icon"></igc-icon>
+</igc-combo>
 ```
 
 <!-- WebComponents -->
