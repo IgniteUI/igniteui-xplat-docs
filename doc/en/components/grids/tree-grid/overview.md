@@ -36,18 +36,19 @@ Please refer to these topics on adding the IgniteUI.Blazor package:
 
 You also need to include the following CSS link in the index.html file of your application to provide the necessary styles to the tree grid:
 
-```html
+```razor
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
 Afterwards, you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+
+```razor
 @using IgniteUI.Blazor.Controls
-</pre>
+```
 
 <!-- end: Blazor -->
 
-<!-- WebComponents -->
+<!-- Angular, React, WebComponents -->
 
 When installing the {Platform} tree grid package, the core package must also be installed.
 
@@ -57,15 +58,18 @@ npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 </pre>
 
+<!-- WebComponents -->
+
 You also need to include the following imports to include the tree grid and the necessary styles:
 
-```ts
+```typescript
 import 'igniteui-webcomponents-grids/grids/combined';
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
-import { IgcTreeGridComponent } from 'igniteui-webcomponents-grids/grids';
 ```
 
 <!-- end: WebComponents -->
+
+<!-- end: Angular, React, WebComponents -->
 
 <!-- Angular, React, Blazor -->
 ### Component Modules
@@ -74,6 +78,22 @@ import { IgcTreeGridComponent } from 'igniteui-webcomponents-grids/grids';
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
+```
+
+```typescript
+// app.module.ts
+
+import { IgxTreeGridModule } from 'igniteui-angular';
+// import { IgxTreeGridModule } from '@infragistics/igniteui-angular'; for licensed package
+
+@NgModule({
+    imports: [
+        ...
+        IgxTreeGridModule,
+        ...
+    ]
+})
+export class AppModule {}
 ```
 
 <!-- end: Angular, React, Blazor -->
@@ -100,7 +120,7 @@ Initially the tree grid will expand all node levels and show them. This behavior
 ### Child Collection
 When we are using the **child collection** option, every data object contains a child collection, that is populated with items of the same type as the parent data object. This way every record in our tree grid will have a direct reference to any of its children. In this case the `data` property of our tree grid that contains the original data source will be a hierarchically defined collection.
 
-```ts
+```typescript
 const EMPLOYEE_DATA = [
     {
         Name: "Johnathan Winchester",
@@ -142,7 +162,7 @@ When we are using the **primary and foreign keys** option, every data object con
 
 <!-- Angular, WebComponents -->
 
-```ts
+```typescript
 const data = [
     { ID: 1, ParentID: -1, Name: "Casey Houston", JobTitle: "Vice President", Age: 32 },
     { ID: 2, ParentID: 1, Name: "Gilberto Todd", JobTitle: "Director", Age: 41 },

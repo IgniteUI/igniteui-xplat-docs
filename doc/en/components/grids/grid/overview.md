@@ -72,10 +72,9 @@ npm install --save {PackageInputs}
 
 You also need to include the following imports to include the grid and the necessary styles for the grid:
 
-```ts
+```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
-import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
 ```
 
 <!-- end: WebComponents -->
@@ -92,10 +91,26 @@ import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
 
+```typescript
+// app.module.ts
+
+import { IgxGridModule } from 'igniteui-angular';
+// import { IgxGridModule } from '@infragistics/igniteui-angular'; for licensed package
+
+@NgModule({
+    imports: [
+        ...
+        IgxGridModule,
+        ...
+    ]
+})
+export class AppModule {}
+```
+
 <!-- end: Angular, React, Blazor -->
 
 
-### Usage
+## Usage
 
 Now that we have the grid packages imported, let’s get started with the basic configuration and bind to local data:
 
@@ -107,7 +122,7 @@ Now that we have the grid packages imported, let’s get started with the basic 
 <igc-grid id="grid1" auto-generate="true"></igc-grid>
 ```
 
-```ts
+```typescript
 constructor() {
     let grid1 = document.getElementById("grid1") as IgcGridComponent;
     grid1.data = data;
@@ -122,7 +137,7 @@ The `AutoGenerate` property tells the grid to auto generate the grid's `Column` 
 
 {ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
 
-## Editable Grid
+## Editable Grid {Platform}
 
 Each operation for grid editing includes batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.
 
@@ -158,7 +173,7 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
     <igc-paginator per-page="6"></igc-paginator>
 </igc-grid>
 ```
-```ts
+```typescript
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
     var trackProgress = this.trackProgress = document.getElementById('trackProgress') as IgcColumnComponent;
@@ -190,7 +205,7 @@ It also expose `additionalTemplateContext` input that can be used for custom pro
 </igx-column>
 ```
 
-```ts
+```typescript
 public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1'};
 ```
 
@@ -212,7 +227,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 <igc-column id="name" field="Name"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
 
@@ -250,7 +265,7 @@ public formattUppercase(value: string) {
 ```html
 <igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
 ```
-```ts
+```typescript
 constructor() {
     var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
 
@@ -289,7 +304,7 @@ As you can see, we are adding `Draggable` attribute set to false.
 <igc-column id="name" field="Name"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
 
@@ -336,7 +351,7 @@ In the snippet above we take a reference to the implicitly provided cell value. 
 </igc-grid>
 ```
 
-```ts
+```typescript
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
@@ -408,7 +423,7 @@ to set the `Editable` property of the `Column` to true.
 ```html
 <igc-column id="price" field="Price" data-type="number" editable="true"></igc-column>
 ```
-```ts
+```typescript
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
 
@@ -473,7 +488,7 @@ column.bodyTemplate = this.smallView;
     <!-- Column declarations -->
 </igc-grid>
 ```
-```ts
+```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some conditiion.
 // For example saved user settings, viewport size, etc.
@@ -503,7 +518,7 @@ public initColumns(column: IgxGridColumn) {
     }
 }
 ```
-```ts
+```typescript
 public initColumns(column: IgcGridColumn) {
     const column: IgcGridComponent = column;
     if (column.field === 'ProductName') {
@@ -539,11 +554,11 @@ const pipeArgs: IColumnPipeArgs = {
 <igx-column field="UnitPrice" dataType="number" [pipeArgs]="pipeArgs"></igx-column>
 ```
 
+```typescript
 ```html
 <igc-column id="orderDate" field="OrderDate" data-type="date"></igc-column>
 ```
 
-```ts
 private _columnPipeArgs: any | null = null;
     public get columnPipeArgs(): any {
         if (this._columnPipeArgs == null)
@@ -818,7 +833,7 @@ and interpolate it those in the template.
 <igc-column id="abbreviationLong" field="abbreviation.long"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var abbreviationLong = this.abbreviationLong = document.getElementById('abbreviationLong') as IgcColumnComponent;
 
@@ -925,7 +940,7 @@ The custom template for the column, that will render the nested data:
 <igc-column id="employees" field="Employees" header="Employees" width="40%"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var employees = this.employees = document.getElementById('employees') as IgcColumnComponent;
 
@@ -1030,7 +1045,7 @@ The custom template:
 <igc-column id="address" field="Address" header="Address" width="25%" editable="true"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var address = this.address = document.getElementById('address') as IgcColumnComponent;
 
@@ -1096,7 +1111,7 @@ Keep in mind that with the above defined template you will not be able to make e
 <igc-column id="address" field="Address" data-type="number" width="25%" editable="true"></igc-column>
 ```
 
-```ts
+```typescript
 constructor() {
     var address = this.address = document.getElementById('address') as IgcColumnComponent;
 
