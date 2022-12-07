@@ -61,7 +61,7 @@ You also need to include the following imports to include the tree grid and the 
 
 ```ts
 import 'igniteui-webcomponents-grids/grids/combined';
-import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 import { IgcTreeGridComponent } from 'igniteui-webcomponents-grids/grids';
 ```
 

@@ -72,9 +72,9 @@ npm install --save {PackageInputs}
 
 You also need to include the following imports to include the grid and the necessary styles for the grid:
 
-```html
-import 'igniteui-webcomponents-grids/grids/combined';
-import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+```ts
+import 'igniteui-webcomponents-grids/grids/combined.js';
+import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
 ```
 
@@ -109,7 +109,7 @@ Now that we have the grid packages imported, let’s get started with the basic 
 
 ```ts
 constructor() {
-    let grid1 = (document.getElementById("grid1") as IgcGridComponent);
+    let grid1 = document.getElementById("grid1") as IgcGridComponent;
     grid1.data = data;
 }
 ```
@@ -154,10 +154,8 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
-    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false">
-    </igc-column>
-    <igc-paginator per-page="6">
-    </igc-paginator>
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
+    <igc-paginator per-page="6"></igc-paginator>
 </igc-grid>
 ```
 ```ts
@@ -167,15 +165,14 @@ constructor() {
 
     this._bind = () => {
         grid1.data = this.data;
-        grid1.columnInit = this.gridColumnInit;
-        grid1.selected = this.gridSelected;
         trackProgress.bodyTemplate = this.trackProgressCellTemplate;
     }
+
     this._bind();
 }
 
 public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}" ></igc-linear-bar>`;
+    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}"></igc-linear-bar>`;
 }
 ```
 
@@ -210,10 +207,11 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
     </ng-template>
 </igx-column>
 ```
+
 ```html
-<igc-column id="name" field="Name">
-</igc-column>
+<igc-column id="name" field="Name"></igc-column>
 ```
+
 ```ts
 constructor() {
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
@@ -221,12 +219,13 @@ constructor() {
     this._bind = () => {
         name.headerTemplate = this.nameHeaderTemplate;
     }
+
     this._bind();
 }
 
-public nameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public nameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
-        ${this.formattUppercase(ctx.cell.value)}
+        ${this.formattUppercase(ctx.column.field)}
     `;
 }
 
@@ -249,8 +248,7 @@ public formattUppercase(value: string) {
 </igx-column>
 ```
 ```html
-<igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true">
-</igc-column>
+<igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
 ```
 ```ts
 constructor() {
@@ -259,8 +257,10 @@ constructor() {
     this._bind = () => {
         productName.headerTemplate = this.productNameHeaderTemplate;
     }
+
     this._bind();
 }
+
 public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="text">${ctx.cell.column.field}</div>
@@ -284,10 +284,11 @@ As you can see, we are adding `Draggable` attribute set to false.
     </ng-template>
 </igx-column>
 ```
+
 ```html
-<igc-column id="name" field="Name">
-</igc-column>
+<igc-column id="name" field="Name"></igc-column>
 ```
+
 ```ts
 constructor() {
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
@@ -295,16 +296,17 @@ constructor() {
     this._bind = () => {
         name.bodyTemplate = this.nameCellTemplate;
     }
+
     this._bind();
 }
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        ${this.formatTitlecase(ctx.cell.value)}
+        ${this.formatTitleCase(ctx.cell.value)}
     `;
 }
 
-public formatTitlecase(value: string) {;
+public formatTitleCase(value: string) {
 }
 ```
 
@@ -326,25 +328,26 @@ In the snippet above we take a reference to the implicitly provided cell value. 
     </igx-column>
 <igx-grid>
 ```
+
 ```html
 <igc-grid id="grid" auto-generate="false">
-    <igc-column id="name" field="Name" data-type="string">
-    </igc-column>
-    <igc-column id="subscribtion" field="Subscribtion" data-type="boolean">
-    </igc-column>
+    <igc-column id="name" field="Name" data-type="string"></igc-column>
+    <igc-column id="subscription" field="Subscription" data-type="boolean"></igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var name = this.name = document.getElementById('name') as IgcColumnComponent;
-    var subscribtion = this.subscribtion = document.getElementById('subscribtion') as IgcColumnComponent;
+    var subscription = this.subscription = document.getElementById('subscription') as IgcColumnComponent;
 
     this._bind = () => {
         grid.data = this.data;
         name.bodyTemplate = this.nameCellTemplate;
-        subscribtion.bodyTemplate = this.subscribtionCellTemplate;
+        subscription.bodyTemplate = this.subscriptionCellTemplate;
     }
+
     this._bind();
 }
 
@@ -354,19 +357,19 @@ public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public subscribtionCellTemplate = (ctx: IgcCellTemplateContext) => {
+public subscriptionCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
     `;
 }
 
-public updateValue(value: boolean){
+public updateValue(value: boolean) {
 }
 
-public deleteRow(rowId: number){
+public deleteRow(rowId: number) {
 }
 
-public formatTitleCase(value: string) {;
+public formatTitleCase(value: string) {
 }
 ```
 
@@ -403,16 +406,16 @@ to set the `Editable` property of the `Column` to true.
 </igx-column>
 ```
 ```html
-<igc-column id="price" field="Price" data-type="number" editable="true">
-</igc-column>
+<igc-column id="price" field="Price" data-type="number" editable="true"></igc-column>
 ```
 ```ts
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
 
     this._bind = () => {
-        price.inlineEditorTemplateRef = this.priceCellTemplate;
+        price.inlineEditorTemplate = this.priceCellTemplate;
     }
+
     this._bind();
 }
 
@@ -425,7 +428,7 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public updateValue(value: number){
+public updateValue(value: number) {
 }
 ```
 
@@ -494,7 +497,6 @@ Column properties can also be set in code in the `ColumnInit` event which is emi
 
 ```typescript
 public initColumns(column: IgxGridColumn) {
-    const column: IgxColumnComponent = column;
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
@@ -531,10 +533,16 @@ const pipeArgs: IColumnPipeArgs = {
 }
 ```
 <!-- end: Angular -->
+
 ```html
 <igx-column field="OrderDate" dataType="date" [pipeArgs]="pipeArgs"></igx-column>
 <igx-column field="UnitPrice" dataType="number" [pipeArgs]="pipeArgs"></igx-column>
 ```
+
+```html
+<igc-column id="orderDate" field="OrderDate" data-type="date"></igc-column>
+```
+
 ```ts
 private _columnPipeArgs: any | null = null;
     public get columnPipeArgs(): any {
@@ -550,16 +558,14 @@ private _columnPipeArgs: any | null = null;
     }
 
 constructor() {
-    var orderDate = this.orderDate = document.getElementById('OrderDate') as IgcColumnComponent;
+    var orderDate = this.orderDate = document.getElementById('orderDate') as IgcColumnComponent;
 
     this._bind = () => {
         orderDate.pipeArgs = this.columnPipeArgs;
     }
+
     this._bind();
 }
-```
-```html
-<igc-column id="OrderDate" field="OrderDate" data-type="date"></igc-column>
 ```
 
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
@@ -668,7 +674,7 @@ export class NorthwindService {
             .pipe(
                 map(response => response['value']),
                 catchError(
-                    this.errorHandler('Error loading northwind data', [])
+                    this.errorHandler('Error loading Northwind data', [])
                 )
             );
     }
@@ -807,10 +813,11 @@ and interpolate it those in the template.
     </ng-template>
 </igx-column>
 ```
+
 ```html
-<igc-column id="abbreviationLong" field="abbreviation.long">
-</igc-column>
+<igc-column id="abbreviationLong" field="abbreviation.long"></igc-column>
 ```
+
 ```ts
 constructor() {
     var abbreviationLong = this.abbreviationLong = document.getElementById('abbreviationLong') as IgcColumnComponent;
@@ -818,6 +825,7 @@ constructor() {
     this._bind = () => {
         abbreviationLong.bodyTemplate = this.abbreviationLongCellTemplate;
     }
+
     this._bind();
 }
 
@@ -881,6 +889,7 @@ export const EMPLOYEE_DATA = [
         Name: "John Winchester",
         Title: "Development Manager"
     }
+]
 ```
 The custom template for the column, that will render the nested data:
 
@@ -911,17 +920,19 @@ The custom template for the column, that will render the nested data:
         </ng-template>
  </igx-column>
 ```
+
 ```html
-<igc-column id="Employees" field="Employees" header="Employees" width="40%">
-</igc-column>
+<igc-column id="employees" field="Employees" header="Employees" width="40%"></igc-column>
 ```
+
 ```ts
 constructor() {
-    var employees = this.employees = document.getElementById('Employees') as IgcColumnComponent;
+    var employees = this.employees = document.getElementById('employees') as IgcColumnComponent;
 
     this._bind = () => {
-        employees.bodyTemplate = this.employeesCellTemplate;
+        employees.bodyTemplate = this.addressCellTemplate;
     }
+
     this._bind();
 }
 
@@ -931,18 +942,18 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
             <igc-expansion-panel >
                 <igc-expansion-panel-header iconPosition="right">
                     <igc-expansion-panel-description>
-                        ${this.getName(ctx.cell.id)}
+                        ${this.getName(ctx.cell.id.rowIndex)}
                     </igc-expansion-panel-description>
                 </igc-expansion-panel-header>
                 <igc-expansion-panel-body>
                     <div class="description">
                         <igc-input-group keydown="${this.stop()}" display-density="compact">
                             <label for="title">Title</label>
-                            <input type="text" name="title" value="${this.getTitle(ctx.cell.id)}" style="text-overflow: ellipsis;" />
+                            <input type="text" name="title" value="${this.getTitle(ctx.cell.id.rowIndex)}" style="text-overflow: ellipsis;" />
                         </igc-input-group>
                         <igc-input-group keydown="${this.stop()}" display-density="compact" style="width: 15%;">
                             <label for="age">Age</label>
-                            <input type="number" name="age" value="${this.getAge(ctx.cell.id)}" />
+                            <input type="number" name="age" value="${this.getAge(ctx.cell.id.rowIndex)}" />
                         </igc-input-group>
                     </div>
                 </igc-expansion-panel-body>
@@ -953,10 +964,13 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 public stop() {
 }
+
 public getName(rowId: number) {
 }
+
 public getTitle(rowId: number) {
 }
+
 public getAge(rowId: number) {
 }
 ```
@@ -992,6 +1006,7 @@ export const DATA: any[] = [
         PostalCode: "12209",
         Region: null
     }
+]
 ```
 
 The custom template:
@@ -1000,7 +1015,7 @@ The custom template:
 <igx-column field="Address" header="Address" width="25%" editable="true">
     <ng-template #compositeTemp igxCell let-cell="cell">
         <div class="address-container">
-        // In the Address column combine the Country, City and PostCode values of the corresponding data record
+        <!-- In the Address column combine the Country, City and PostCode values of the corresponding data record -->
             <span><strong>Country:</strong> {{cell.row.data.Country}}</span>
             <br/>
             <span><strong>City:</strong> {{cell.row.data.City}}</span>
@@ -1010,38 +1025,42 @@ The custom template:
     </ng-template>
 </igx-column>
 ```
+
 ```html
-<igc-column id="Address" field="Address" header="Address" width="25%" editable="true">
-</igc-column>
+<igc-column id="address" field="Address" header="Address" width="25%" editable="true"></igc-column>
 ```
+
 ```ts
 constructor() {
-    var address = this.address = document.getElementById('Address') as IgcColumnComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnComponent;
 
     this._bind = () => {
         address.bodyTemplate = this.addressCellTemplate;
     }
+
     this._bind();
 }
 
 public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="address-container">
-        // In the Address column combine the Country, City and PostCode values of the corresponding data record
-            <span><strong>Country:</strong> ${this.getName(ctx.cell.id)}</span>
+        <!-- In the Address column combine the Country, City and PostCode values of the corresponding data record -->
+            <span><strong>Country:</strong> ${this.getName(ctx.cell.id.rowIndex)}</span>
             <br/>
-            <span><strong>City:</strong> ${this.getCity(ctx.cell.id)}</span>
+            <span><strong>City:</strong> ${this.getCity(ctx.cell.id.rowIndex)}</span>
             <br/>
-            <span><strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}</span>
+            <span><strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id.rowIndex)}</span>
         </div>
     `;
 }
 
-public getCountry(rowId: number){
+public getCountry(rowId: number) {
 }
-public getCity(rowId: number){
+
+public getCity(rowId: number) {
 }
-public getPostalCode(rowId: number){
+
+public getPostalCode(rowId: number) {
 }
 ```
 
@@ -1072,17 +1091,19 @@ Keep in mind that with the above defined template you will not be able to make e
     </ng-template>
 </igx-column>
 ```
+
 ```html
-<igc-column id="Address" field="Address" data-type="number" width="25%" editable="true">
-</igc-column>
+<igc-column id="address" field="Address" data-type="number" width="25%" editable="true"></igc-column>
 ```
+
 ```ts
 constructor() {
-    var address = this.address = document.getElementById('Address') as IgcColumnComponent;
+    var address = this.address = document.getElementById('address') as IgcColumnComponent;
 
     this._bind = () => {
-        address.inlineEditorTemplateRef = this.addressEditCellTemplate;
+        address.inlineEditorTemplate = this.addressEditCellTemplate;
     }
+
     this._bind();
 }
 
@@ -1097,26 +1118,30 @@ public addressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
             </span>
             <br/>
             <span>
-                <strong>City:</strong> ${this.getCity(ctx.cell.id)}</span>
-                <igxc-input-group width="100%">
+                <strong>City:</strong> ${this.getCity(ctx.cell.id)}
+                <igc-input-group width="100%">
                         <input onchange="${this.updateCity(ctx.cell.id)}" />
                 </igc-input-group>
+            </span>
             <br/>
             <span>
-                <strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}</span>
+                <strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}
                 <igc-input-group width="100%">
                         <input onchange="${this.updatePostalCode(ctx.cell.id)}" />
                 </igc-input-group>
+            </span>
             <br/>
         </div>
     `;
 }
 
-public updateCountry(rowId: number){
+public updateCountry(rowId: number) {
 }
-public updateCity(rowId: number){
+
+public updateCity(rowId: number) {
 }
-public updatePostalCode(rowId: number){
+
+public updatePostalCode(rowId: number) {
 }
 ```
 
