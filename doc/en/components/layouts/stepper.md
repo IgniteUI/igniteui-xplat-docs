@@ -52,10 +52,10 @@ Steps can be declared using one of the following approaches.
 
 ```html
 <igc-stepper>
-     ${stepsData.map((step) => html`
+    ${stepsData.map((step) => html`
     <igc-step .disabled=${step.disabled}>
         <div slot="indicator">
-			<igc-icon .iconName=${step.indicator}></i>
+			<igc-icon .iconName=${step.indicator}></igc-icon>
         </div>
 
         <p slot="title">${step.title}</p>	
@@ -76,7 +76,10 @@ Steps can be declared using one of the following approaches.
     </igc-step>
 </igc-stepper>
 ```
-For each step the user has the ability to configure indicator, title and subtitle using the `indicator`, `title`and `sub-title` slots as follows: 
+For each step the user has the ability to configure indicator, title and subtitle using the `indicator`, `title` and `subtitle` slots as follows: 
+
+> [!NOTE]
+> The `default` `Step` slot renders the content of the step.
 
 ```html
 <igc-stepper>
@@ -99,7 +102,7 @@ You can customize the stepper orientation through the exposed `orientation` prop
 **Horizontal Stepper Orientation**
 
 *horizontal* is the default value for the `Stepper` orientation property.
-When the stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` contentTop boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
+When the stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `contentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
@@ -119,13 +122,12 @@ The sample below demonstrates how stepper orientation and titles position could 
 <div class="divider--half"></div>
 
 ### Step States 
-`Stepper` supports four steps states and each of them apply different styles by default:
+`Stepper` supports five steps states and each of them apply different styles by default:
 - **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
 - **disabled** - Determines whether the step is interactable. By default, the disabled attribute of a step is set to *false*.
+- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its defaut value is *false*.
 - **optional** - By default, the optional attribute of a step is set to *false*. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
 - **complete** - By default, the complete attribute of a step returns *false*. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
-
-The `Stepper` gives you the opportunity to set validation logic for each step through the `invalid` property. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its defaut value is *false*.
 
 ### Linear Stepper
 
@@ -158,7 +160,7 @@ The following example demonstrates how to configure a linear stepper:
 - **reset** – resets the stepper to its initial state.
 
 > [!NOTE]
-> The reset method would not clear the step`s content. This should be done manually.
+> The reset method would reset the stepper to its initial state, i.e. activates the first step. It would not clear the step`s content. This should be done manually.
 
 ### Customizing the Steps
 
@@ -175,14 +177,15 @@ If titles and subtitles are defined, with this setup both indicators and titles 
 
 The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
 The user can configure the title position using the `titlePosition` property. It takes the following values:
+- undefined *(default value)*
 - end
 - start
 - bottom
 - top
 
-When the `Stepper` is horizontally orientated, the title position default value is *bottom*.
+When the `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed *below* the indicators.
 
-When the orientation is set to vertical layout the title position by default is *end*.
+When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed *after* the indicators.
 
 > [!NOTE]
 > **titlePosition** property is applicable **only** when the stepper stepType property is set to *full*.
@@ -227,10 +230,10 @@ The `Stepper` navigation is compliant with [W3 accessability standards](https://
  - <kbd>Arrow Left</kbd> - moves the focus to the header of the previous accessible step in both orientations
  - <kbd>Arrow Right</kbd> - moves the focus to the header of the next accessible step in both orientations
  - <kbd>Home</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
- - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the igx-stepper
+ - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the stepper
  - <kbd>Enter / Space</kbd> - activates the currently focused step
  
- ## Styling
+## Styling
 
 You can change the appearance of the `Step`s, by using some of the exposed CSS parts listed below:
 
