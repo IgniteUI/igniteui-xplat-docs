@@ -10,7 +10,7 @@ mentionedTypes: ['Combo', 'ComboList', 'ComboItem']
 The {ProductName} Combo component exposes several features such as filtering and grouping.
 
 ## Combo Features Example
-The following demo demonstrates some of the combobox features that are enabled/disabled at runtime:
+The following demo shows some `Combo` features that are enabled/disabled at runtime:
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -19,22 +19,14 @@ The following demo demonstrates some of the combobox features that are enabled/d
            github-src="grids/combo/features">
 </code-view>
 
-In our sample we are going to use the `Switch` component so we have to register it together with the combo:
+In our sample we are going to use the `Switch` component, so we have to register it together with the combo:
 
 <!-- WebComponents -->
 ```ts
-import {
-    defineComponents,
-    IgcComboComponent,
-    IgcComboItemComponent, 
-    IgcInputComponent, 
-    IgcIconComponent,
-    IgcSwitchComponent
-}
-from 'igniteui-webcomponents';
+import { defineComponents, IgcComboComponent, IgcSwitchComponent } from 'igniteui-webcomponents';
 import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
-defineComponents(IgcComboComponent, IgcComboItemComponent, IgcInputComponent, IgcIconComponent, IgcSwitchComponent);
+defineComponents(IgcComboComponent, IgcSwitchComponent);
 ```
 <!-- end: WebComponents -->
 
@@ -42,7 +34,7 @@ defineComponents(IgcComboComponent, IgcComboItemComponent, IgcInputComponent, Ig
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -56,38 +48,32 @@ You will also need to link an additional CSS file to apply the styling to the `S
 Then, we will add event listeners to all switch components so that we can control the combo features by toggling the switches:
 
 ```ts
-constructor() {
-    this.combo = document.getElementById('combo') as IgcComboComponent<object>;
+let combo = document.getElementById('combo') as IgcComboComponent<City>;
 
-    let switchIcon = document.getElementById('caseSensitive') as IgcSwitchComponent;
-    switchIcon.addEventListener('igcChange', () => {
-        this.combo.caseSensitiveIcon = switchIcon.checked ? true : false
-    });
+let switchIcon = document.getElementById('caseSensitive') as IgcSwitchComponent;
+let switchFilter = document.getElementById('filtering') as IgcSwitchComponent;
+let switchDisable = document.getElementById('disabled') as IgcSwitchComponent;
 
-    let switchFilter = document.getElementById('filtering') as IgcSwitchComponent;
-    switchFilter.addEventListener('igcChange', () => {
-        if (switchFilter.checked === true) {
-            this.combo.disableFiltering = true;
-            switchIcon.disabled = true;
-        } else {
-            this.combo.disableFiltering = false;
-            switchIcon.disabled = false;
-        }
-    });
-    
-    let switchDisable = document.getElementById('disabled') as IgcSwitchComponent;
-    switchDisable.addEventListener('igcChange', () => {
-        this.combo.disabled = switchDisable.checked ? true : false
-    });
-}
+switchIcon.addEventListener("igcChange", () => {
+    combo.caseSensitiveIcon = switchIcon.checked;
+});
+
+switchFilter.addEventListener("igcChange", () => {
+    combo.disableFiltering = switchIcon.disabled = switchFilter.checked;
+});
+
+switchDisable.addEventListener("igcChange", () => {
+    combo.disabled = switchDisable.checked;
+});
 ```
 
-Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source entity or setting it to an empty string: 
+Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field: 
 
 ```ts
 let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
-switchGroup.addEventListener('igcChange', () => {
-    this.combo.groupKey = switchGroup.checked ? 'country' : ''
+
+switchGroup.addEventListener("igcChange", () => {
+    this.combo.groupKey = switchGroup.checked ? "country" : undefined;
 });
 ```
 
@@ -95,7 +81,7 @@ switchGroup.addEventListener('igcChange', () => {
 
 ### Filtering
 
-By default, filtering in the combobox is enabled. It can be disabled by setting the `DisableFiltering` property.
+By default, filtering in the combo is enabled. It can be disabled by setting the `DisableFiltering` property.
 
 Filtering options can be further enhanced by enabling the search case sensitivity. The case-sensitive icon can be turned on using the `CaseSensitiveIcon` property so that end-users can control the case sensitivity.
 
@@ -109,24 +95,22 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 #### Filtering Options
 
-The {ProductName} Combo component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates whether the `DisplayKey` property should be used for filtering the list of options. The `CaseSensitive` shows if the filtering should be case sensitive or not.
+The {ProductName} `Combo` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
 
-The following code snippet shows how to filter the cities from our data source by their country instead of their name. We are also making the filtering case sensitive no matter whether the `CaseSensitiveIcon` is enabled or not:
+The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
 
 ```ts
-public customOpts = {
+const options = {
     filterKey: 'country',
     caseSensitive: true
 };
 
-constructor() {
-    this.combo.filteringOptions = this.options;
-}
+combo.filteringOptions = options;
 ```
 
 ### Grouping
 
-Defining a combobox's `GroupKey` option will group the items, according to the provided key:
+Defining a `GroupKey` option will group the items, according to the provided key:
 
 ```html
 <igc-combo group-key="region"></igc-combo>
@@ -137,11 +121,11 @@ Defining a combobox's `GroupKey` option will group the items, according to the p
 ```
 
 > [!Note]
-> You can use the `GroupKey` property only if your data source is comprised of type Object[].
+> The `GroupKey` property will only have effect if your data source consists of complex objects.
 
 #### Sorting Direction
 
-The combo component also exposes an option for setting whether groups should be sorted in ascending or descending order. By default the sorting order is ascending:
+The combo component also exposes an option for setting whether groups should be sorted in ascending or descending order. By default, the sorting order is ascending:
 
 ```html
 <igc-combo group-sorting="desc"></igc-combo>
@@ -153,7 +137,7 @@ The combo component also exposes an option for setting whether groups should be 
 
 ### Label 
 
-The combobox label can be set easily using the `Label` property:
+The `Combo` label can be set easily using the `Label` property:
 
 ```html
 <igc-combo label="Cities"></igc-combo>
@@ -199,9 +183,21 @@ The combo search input is focused by default. To disable this feature and move t
 <IgbCombo AutofocusList="true" />
 ```
 
-### Disable ComboBox
+### Required 
 
-You can disable a combobox using the `Disabled` property:
+The combo can be marked as required by setting the required property.
+
+```html
+<igc-combo required></igc-combo>
+```
+
+```razor
+<IgbCombo Required="true" />
+```
+
+### Disable Combo
+
+You can disable the combo using the `Disabled` property:
 
 ```html
 <igc-combo disabled></igc-combo>

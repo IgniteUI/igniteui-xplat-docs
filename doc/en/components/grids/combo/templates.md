@@ -7,7 +7,7 @@ mentionedTypes: ['Combo']
 
 # {Platform} Combo Templates
 
-The {ProductName} Combo component allows defining custom templates for different areas such as items, header items, empty list and icons.
+The {ProductName} Combo component allows defining custom templates for different areas such as items, group headers, empty list, and icons.
 
 ## Combo Templates Example
 
@@ -25,12 +25,12 @@ The {ProductName} Combo component allows defining custom templates for different
 The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
 ```ts
-protected itemTemplate = (item: City) => {
-    return html`
-        <div>
-            <b>${item.name}</b>, <span>${item.country}</span>
-        </div>
-    `;
+import { ComboItemTemplate } from 'igniteui-webcomponents';
+
+const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
+  return html`
+      <span><b>${item.name}</b> [${item.id}]</span>
+  `;
 };
 ```
 
@@ -39,22 +39,20 @@ protected itemTemplate = (item: City) => {
 The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
 ```ts
-protected groupHeaderTemplate = (item: City) => {
-    return html`
-        <div>
-            <span>Custom Header for ${item.country}</span>
-        </div>
-    `;
-}
+import { ComboItemTemplate } from 'igniteui-webcomponents';
+
+const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
+  return html`<div>Country of ${item.country}</div>`;
+};
 ```
 
 ## Slots
 
-Except for custom templates, the {ProductName} Combo component exposes several slots that allow users to pass custom content to different combo parts.
+Other than custom templates, the {ProductName} Combo component exposes several slots that allow users to pass custom content to different combo parts.
 
 ### Header
 
-You can modify the header part using the `header` slot:
+You can modify the content of the header part using the `header` slot:
 
 ```html
 <header style="text-align: center" slot="header">This is a custom header</header>
@@ -62,7 +60,7 @@ You can modify the header part using the `header` slot:
 
 ### Footer
 
-You can modify the footer part using the `footer` slot:
+You can modify the content of the footer part using the `footer` slot:
 
 ```html
 <footer style="text-align: center" slot="footer">This is a custom footer</footer>
@@ -70,10 +68,10 @@ You can modify the footer part using the `footer` slot:
 
 ### Empty List 
 
-To change the empty list content, you can use the `empty` slot:
+To change the content of what is rendered when the list is empty, you can use the `empty` slot:
 
 ```html
-<span slot="empty">This is a custom empty list</span>
+<span slot="empty">¯\_(ツ)_/¯</span>
 ```
 
 ### Toggle Icon 
