@@ -1,7 +1,8 @@
 ---
-title: Build a Blazor Hybrid App with .NET MAUI - Ignite UI for Blazor 
+title: Build a Blazor Hybrid App with .NET MAUI - Ignite UI for Blazor
 _description: This article provides a step-step instruction on how to create a blazor hybrid app with .Net Maui using Ignite UI for Blazor. Try it Now!
 _keywords: {ProductName}, Infragistics, Getting Started
+mentionedTypes: []
 ---
 # Getting Started: Build a Blazor Hybrid App with .NET MAUI
 
@@ -12,13 +13,13 @@ This topic provides step-by-step instructions for creating .NET MAUI Blazor appl
 
 ### What is Blazor Hybrid?
 
-Blazor hybrid is something between Blazor Server and Blazor Web Assembly. It simplifies the development, the code, and the processes as it brings together the capabilities of desktop and mobile native client frameworks. This technology lets you apply your C# and .NET skills when creating native client applications. 
+Blazor hybrid is something between Blazor Server and Blazor Web Assembly. It simplifies the development, the code, and the processes as it brings together the capabilities of desktop and mobile native client frameworks. This technology lets you apply your C# and .NET skills when creating native client applications.
 
-But in order to be able to use it for your apps, you need .NET MAUI. 
+But in order to be able to use it for your apps, you need .NET MAUI.
 
 ### What is .NET MAUI?
 
-.NET MAUI (.NET Multi-platform App UI) is an open-source, cross-platform framework for building native desktop and mobile apps from a single shared code-base. With it, you can more easily develop Blazor applications that run on different devices and operating systems, including Android, iOS, macOS, and Windows using C# and XAML. 
+.NET MAUI (.NET Multi-platform App UI) is an open-source, cross-platform framework for building native desktop and mobile apps from a single shared code-base. With it, you can more easily develop Blazor applications that run on different devices and operating systems, including Android, iOS, macOS, and Windows using C# and XAML.
 
 
 ## Prerequisites
@@ -28,7 +29,7 @@ But in order to be able to use it for your apps, you need .NET MAUI.
     - Mobile development with .NET
     - ASP.NET and Web Development
 
-## Create and Run a Blazor Hybrid App with .Net Maui and Ignite UI for Blazor 
+## Create and Run a Blazor Hybrid App with .Net Maui and Ignite UI for Blazor
 
 The steps below describe how to create a new .NET MAUI Blazor project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 

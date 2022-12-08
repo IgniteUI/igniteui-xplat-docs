@@ -2,6 +2,7 @@
 title: Getting Started | {ProductName} | Infragistics
 _description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
 _keywords: {ProductName}, Infragistics, Getting Started
+mentionedTypes: ['XamBulletGraph']
 ---
 
 <!-- React -->
@@ -41,7 +42,7 @@ Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-t
 The radial gauge has a variety of customization options in order to create a predefined shape and scale.
 The linear gauge provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels.
 
-{ProductName} Gauges also includes a `Bullet Graph` component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simpl bar charts.
+{ProductName} Gauges also includes a `XamBulletGraph` component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simple bar charts.
 
 ## Maps
 {ProductName} Maps brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
@@ -125,7 +126,7 @@ import { defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
 
-> [!Note] 
+> [!Note]
 > Importing all of the components will increase the bundle size of your application. That's why we recommend you to import only the components that you are actually using.
 
 After the components are imported you can use them in your html:
