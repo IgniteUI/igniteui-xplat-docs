@@ -131,7 +131,7 @@ constructor() {
 
 The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
 
-The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
+The `autoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
 ## Bootstrap Grid Definition
 
@@ -149,7 +149,7 @@ Following this topic you will learn more about [cell template](overview.md#cell-
 
 ### Defining Columns
 
-Let's turn the `AutoGenerate` property off and define the columns collection in the markup:
+Let's turn the `autoGenerate` property off and define the columns collection in the markup:
 
 ```html
 <igx-grid #grid1 [data]="data | async" [autoGenerate]="false" (columnInit)="initColumns($event)"
@@ -213,7 +213,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 
 ### Header Template
 
-`Header` targets the column header providing as a context the column object itself.
+The header template can be set to modify the column headers. The snippets below show you how to format the header text to upper case.
 
 ```html
 <igx-column field="Name">
@@ -286,11 +286,11 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
-As you can see, we are adding `Draggable` attribute set to false.
+As you can see, we are adding `draggable` attribute set to false.
 
 ### Cell Template
 
-`Cell` applies the provided template to all cells in the column. The context object provided in the template consists of the cell value provided implicitly and the cell object itself. It can be used to define a template where the cells can grow according to their content, as in the below example.
+When cell template is set it changes all the cells in the column. The context object provided in the template consists of the cell value provided implicitly and the cell object itself. It can be used to define a template where the cells' text could be formatted e.g. as title case.
 
 ```html
 <igx-column field="Name">
@@ -408,7 +408,7 @@ When properly implemented, the cell editing template also ensures that the cell'
 ### Cell Editing Template
 
 The column also accepts one last template that will be used when a cell is in edit mode. As with the other column templates, the provided context object is again the cell value and the cell object itself. Of course in order to make the edit-mode template accessible to end users, you need
-to set the `Editable` property of the `Column` to true.
+to set the `editable` property of the column to true.
 
 ```html
 <igx-column dataType="number" editable="true" field="Price">
@@ -629,7 +629,7 @@ const POJO = [{
 >[!WARNING]
 >**The key values must not contain arrays**.
 
->If you use `AutoGenerate` columns **the data keys must be identical.**
+>If you use `autoGenerate` columns **the data keys must be identical.**
 
 <!-- Angular -->
 ## Grid Data Binding
@@ -754,7 +754,7 @@ and in the template of the component:
     </igx-grid>
 ```
 
-**Note**: The grid `AutoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `AutoGenerate` available, when binding to remote service, is on our roadmap for future versions.
+**Note**: The grid `autoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `autoGenerate` available, when binding to remote service, is on our roadmap for future versions.
 
 <!-- end: Angular -->
 ## Complex Data Binding
@@ -1190,9 +1190,10 @@ Achieving a state persistence framework is easier than ever by using the new bui
 
 <!-- end: Angular -->
 
-## Sizing
+<!-- The sizing topic is still not available thus the Sizing section is commented out. -->
+<!-- ## Sizing
 
-See the [Grid Sizing](sizing.md) topic.
+See the [Grid Sizing](sizing.md) topic. -->
 
 
 <!-- Angular -->

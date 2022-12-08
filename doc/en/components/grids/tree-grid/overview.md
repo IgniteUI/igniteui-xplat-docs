@@ -208,10 +208,10 @@ The indentation of the **tree cells** persists across other tree grid features l
 In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
 
 ```typescript
-<igc-tree-grid class="ig-typography tree-grid">
+<igc-tree-grid class="tree-grid">
 ```
 
-Then to set the `--header-background` and `--header-text-color` for that class:
+Then set the `--header-background` and `--header-text-color` CSS properties for that class:
 
 ```css
 .tree-grid {
