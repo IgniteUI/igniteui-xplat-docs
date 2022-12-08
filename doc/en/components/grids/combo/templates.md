@@ -1,15 +1,15 @@
 ---
-title: {Platform} Combo Component Templates – {ProductName}
-_description: {ProductName} Combo component templates
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Combo Component Templates
+title: {Platform} ComboBox Component Templates – {ProductName}
+_description: {ProductName} ComboBox component templates
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Templates
 mentionedTypes: ['Combo']
 ---
 
-# {Platform} Combo Templates
+# {Platform} ComboBox Templates
 
-The {ProductName} Combo component allows defining custom templates for different areas such as items, group headers, empty list, and icons.
+The {ProductName} ComboBox component allows defining custom templates for different areas such as items, group headers, empty list, and icons.
 
-## Combo Templates Example
+## ComboBox Templates Example
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -51,7 +51,7 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
 
 ## Slots
-Other than custom templates, the {ProductName} Combo component exposes several slots that allow users to pass custom content to different combo parts.
+Other than custom templates, the {ProductName} ComboBox component exposes several slots that allow users to pass custom content to different combo parts.
 
 ### Header Slot
 To render a custom header above the list of options pass content to the `header` slot:
