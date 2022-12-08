@@ -24,7 +24,7 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 <code-view style="height: 870px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-overview"
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 
