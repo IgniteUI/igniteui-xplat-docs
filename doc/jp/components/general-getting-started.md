@@ -30,87 +30,87 @@ yarn create react-app my-app-name --typescript
 <!-- end: React -->
 
 <!-- WebComponents -->
-# {ProductName} Packages Overview
+# {ProductName} パッケージの概要
 
-{ProductName} is a complete set of UI widgets, components, UI kits for design tools and supporting services for Web Components. Designed to enable developers to build the most modern, high-performance HTML5 & JavaScript apps for modern desktop browsers, mobile experiences and progressive web apps (PWA’s) targeting the browsers web components APIs.
+{ProductName} は、UI ウィジェット、コンポーネント、デザイン ツール用の UI キット、および Web コンポーネント用のサポート サービスの完全なセットです。開発者が、最新のデスクトップ ブラウザー、モバイル エクスペリエンス、およびブラウザーの Web コンポーネント API をターゲットとするプログレッシブ Web アプリ (PWA) 向けの最新の高性能 HTML5 および JavaScript アプリを構築できるように設計されています。
 
-## Charts & Graphs
-{ProductName} Charts & Graphs is a library that lets you visualize any type of data through its 65+ types of series and combinations into stunning and interactive charts and dashboards. Built for speed and beauty, designed to work on every modern browser and with complete touch and interactivity, you can quickly build responsive visuals on any device.
+## チャートおよびグラフ
+{ProductName} チャートおよびグラフは、65 種類以上のシリーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
 
-## Gauges
-{ProductName} Gauges provides a radial and a linear gauge components used to illustrate data in an easy and intuitive way.
-The radial gauge has a variety of customization options in order to create a predefined shape and scale.
-The linear gauge provides a simple view of a value compared against a scale and one or more ranges. It supports one scale, one set of tick marks and one set of labels.
+## ゲージ
+{ProductName} ゲージは、簡単かつ直感的な方法でデータを示すために使用されるラジアル ゲージ コンポーネントとリニア ゲージ コンポーネントを提供します。
+ラジアル ゲージには、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。
+リニア ゲージは、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。
 
-{ProductName} Gauges also includes a `Bullet Graph` component that lets you create data visualizations, replacing meters and gauges that are used on dashboards with simpl bar charts.
+{ProductName} ゲージには、ダッシュボードで使用されているメーターとゲージを単純な棒チャートに置き換えて、データの視覚化を作成できる `Bullet Graph` コンポーネントも含まれています。
 
-## Maps
-{ProductName} Maps brings the ability to visualize geographic data in your application. It can render data sets consisting of many geographic locations in shapes of markers, lines, polygons, or even interactive bitmaps. It allows you to overlay multiple map layers with geographic data, mark specific geographic locations and display information using custom markers and colors.
+## マップ
+{ProductName} マップは、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
 
-## Grids & Inputs
-{ProductName} Grid is a grid component that allows you to bind and display data with little configuration. It also provides features such as filtering, sorting, grouping, pinning and more.
+## グリッドと入力
+{ProductName} グリッドは、わずかな設定でデータをバインドおよび表示できるグリッド コンポーネントです。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
 
-## IgniteUI Web Components
-{ProductName} is a complete library of UI components, giving you the ability to build modern web applications using encapsulation and the concept of reusable components in a dependency-free approach. See the [Storybook Here](https://igniteui.github.io/igniteui-webcomponents)!
+## IgniteUI Web コンポーネント
+{ProductName} は UI コンポーネントの完全なライブラリであり、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築する機能を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧ください!
 
-All components are based on the [Indigo.Design Design System](https://www.infragistics.com/products/appbuilder/ui-toolkit), are fully supported by [App Builder](https://appbuilder.indigo.design/) and are backed by ready-to-use UI kits for Sketch, Adobe XD and Figma.
+すべてのコンポーネントは [Indigo.Design デザイン システム](https://jp.infragistics.com/products/appbuilder/ui-toolkit)に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
 
-# Getting Started With {ProductName}
+# {ProductName} を使用した作業の開始
 
-This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
+このトピックでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
 
-## Ignite UI Web Components Example
-The sample below provides an overview on the web components and shows how utilizing them can help you create a well structured app. It represents a sample travel blog that includes an app header with the user's avatar, side navigation and main content area.
+## Ignite UI Web Components の例
+以下のサンプルは、Web Components の概要を示し、それらを利用することで適切に構造化されたアプリを作成する方法を示しています。これは、ユーザーのアバター、サイド ナビゲーション、およびメイン コンテンツ領域を含むアプリ ヘッダーを含む旅行ブログのサンプルです。
 
 <code-view style="height: 800px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
-           alt="{Platform} Overview Example"
+           alt="{Platform} 概要の例"
            github-src="layouts/getting-started/overview">
 </code-view>
 
-# Configuration
+# 構成
 
-## Install IgniteUI CLI
+## IgniteUI CLI をインストールする
 
-To create an application from scratch and configure it to use the Ignite UI Web Components you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
+アプリケーションを最初から作成し、Ignite UI Web Components を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install -g igniteui-cli
 </pre>
 
-If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
+使用可能なオプションをガイド付きで体験したい場合は、新しいアプリケーションの作成とセットアップに役立つ手順モードを初期化できます。ガイドを開始するには、`ig` コマンドを実行するだけです。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig
 </pre>
 
-Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
-Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
+次に、フレームワークとして Web Components を選択し、`Base` プロジェクト テンプレートを選択し、特定のコンポーネント / ビューを追加するか、`Complete & Run` を選択します。
+さらに、Ignite UI CLI の詳細については[こちら](general-cli-overview.md)を参照してください。
 
-## Install Polyfills
+## ポリフィルをインストールする
 
-Run this command to install the web component polyfills:
+次のコマンドを実行して、Web コンポーネントのポリフィルをインストールします。
 
 ```bash
 npm install @webcomponents/custom-elements
 ```
 
-Then import the web component polyfills into index.js:
+次に、Web コンポーネントのポリフィルを index.js にインポートします。
 
 ```ts
 import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## Install Ignite UI for Web Components
-In order to use the Ignite UI Web Components in your application you should install the `igniteui-webcomponents` package:
+## Ignite UI for Web Components のインストール
+アプリケーションで Ignite UI Web Components を使用するには、`igniteui-webcomponents` パッケージをインストールする必要があります。
 
 ```
 npm install igniteui-webcomponents
 ```
 
-Next you will need to import the components that you want to use in your `index.ts` file. You could import one or more components using the `defineComponents` function like this:
+次に、`index.ts` ファイルで使用するコンポーネントをインポートする必要があります。次のように `defineComponents` 関数を使用して 1 つ以上のコンポーネントをインポートできます:
 
 ```ts
 import { defineComponents, IgcAvatarComponent, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -118,7 +118,7 @@ import { defineComponents, IgcAvatarComponent, IgcBadgeComponent } from 'igniteu
 defineComponents(IgcAvatarComponent, IgcBadgeComponent);
 ```
 
-You could also import all of the components using the `defineAllComponents` function:
+`defineAllComponents` 関数を使用して、すべてのコンポーネントをインポートすることもできます。
 
 ```ts
 import { defineAllComponents } from 'igniteui-webcomponents';
@@ -127,16 +127,16 @@ defineAllComponents();
 ```
 
 > [!Note] 
-> Importing all of the components will increase the bundle size of your application. That's why we recommend you to import only the components that you are actually using.
+> すべてのコンポーネントをインポートすると、アプリケーションのバンドル サイズが大きくなります。そのため、実際に使用しているコンポーネントのみをインポートすることをお勧めします。
 
-After the components are imported you can use them in your html:
+コンポーネントをインポートしたら、html で使用できます。
 
 ```html
 <igc-avatar initials="AZ"></igc-avatar>
 <igc-badge></igc-badge>
 ```
 
-# Install Charts and Map Web Component packages
+# Charts および Map Web コンポーネント パッケージをインストールする
 ## 手順 1 - Web コンポーネント プロジェクトの作成
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
