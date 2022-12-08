@@ -52,21 +52,32 @@ Afterwards, you may start implementing the control by adding the following names
 
 When installing the {Platform} tree grid package, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
-</pre>
+```
 
 <!-- WebComponents -->
 
-You also need to include the following imports to include the tree grid and the necessary styles:
+You also need to include the following import to use the tree grid:
 
 ```typescript
-import 'igniteui-webcomponents-grids/grids/combined';
+import 'igniteui-webcomponents-grids/grids/combined.js';
+```
+
+The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../themes/overview.md) and based on your project configuration to import it:
+
+```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
+Or to link it:
+```typescript
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+```
+
+For more details on how to customize the appearance of the tree grid, you may have a look at the [styling](overview.md#web-components-tree-grid-styling) section.
 <!-- end: WebComponents -->
 
 <!-- end: Angular, React, WebComponents -->
@@ -190,6 +201,25 @@ The indentation of the **tree cells** persists across other tree grid features l
 - The column that ends up with a `visibleIndex` of 0 after operations like column pinning, column hiding and column moving becomes the tree column.
 - Exported Excel worksheets reflect the hierarchy by grouping the records as they are grouped in the tree grid itself. All records expanded states would also be persisted and reflected.
 - When exporting to CSV, levels and expanded states are ignored and all data is exported as flat.
+
+<!-- WebComponents -->
+## {Platform} Tree Grid Styling
+
+In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
+
+```typescript
+<igc-tree-grid class="ig-typography tree-grid">
+```
+
+Then to set the `--header-background` and `--header-text-color` for that class:
+
+```css
+.tree-grid {
+    --header-background: #494949;
+    --header-text-color: #FFF;
+}
+```
+<!-- end: WebComponents -->
 
 ## Additional Resources
 
