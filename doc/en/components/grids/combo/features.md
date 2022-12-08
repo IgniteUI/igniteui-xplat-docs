@@ -1,16 +1,16 @@
 ---
-title: {Platform} Combo Component – {ProductName}
-_description: {ProductName} Combo Component Features
+title: {Platform} Combobox Component – {ProductName}
+_description: {ProductName} Combobox Component Features
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Combo Component Features
 mentionedTypes: ['Combo', 'ComboList', 'ComboItem']
 ---
 
-# {Platform} Combo Features
+# {Platform} Combobox Features
 
-The {ProductName} Combo component exposes several features such as filtering and grouping.
+The {ProductName} Combobox component exposes several features such as filtering and grouping.
 
-## Combo Features Example
-The following demo shows some `Combo` features that are enabled/disabled at runtime:
+## Combobox Features Example
+The following demo shows some `Combobox` features that are enabled/disabled at runtime:
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -81,7 +81,7 @@ switchGroup.addEventListener("igcChange", () => {
 
 ### Filtering
 
-By default, filtering in the combo is enabled. It can be disabled by setting the `DisableFiltering` property.
+By default, filtering in the Combobox is enabled. It can be disabled by setting the `DisableFiltering` property.
 
 Filtering options can be further enhanced by enabling the search case sensitivity. The case-sensitive icon can be turned on using the `CaseSensitiveIcon` property so that end-users can control the case sensitivity.
 
@@ -95,7 +95,7 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 
 #### Filtering Options
 
-The {ProductName} `Combo` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
+The {ProductName} `Combobox` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
 
 The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
 
@@ -125,7 +125,7 @@ Defining a `GroupKey` option will group the items, according to the provided key
 
 #### Sorting Direction
 
-The combo component also exposes an option for setting whether groups should be sorted in ascending or descending order. By default, the sorting order is ascending:
+The Combobox component also exposes an option for setting whether groups should be sorted in ascending or descending order. By default, the sorting order is ascending:
 
 ```html
 <igc-combo group-sorting="desc"></igc-combo>
@@ -149,7 +149,7 @@ The `Combo` label can be set easily using the `Label` property:
 
 ### Placeholder
 
-A placeholder text can be specified for both the combo component input and the search input placed inside the dropdown menu: 
+A placeholder text can be specified for both the Combobox component input and the search input placed inside the dropdown menu: 
 
 ```html
 <igc-combo placeholder="Pick a city" placeholder-search="Search for a city"></igc-combo>
@@ -161,7 +161,7 @@ A placeholder text can be specified for both the combo component input and the s
 
 ### Autofocus
 
-If you want your combo to be automatically focused on page load you can use the following code:
+If you want your Combobox to be automatically focused on page load you can use the following code:
 
 ```html
 <igc-combo autofocus></igc-combo>
@@ -185,7 +185,7 @@ The combo search input is focused by default. To disable this feature and move t
 
 ### Required 
 
-The combo can be marked as required by setting the required property.
+The Combobox can be marked as required by setting the required property.
 
 ```html
 <igc-combo required></igc-combo>
@@ -195,9 +195,9 @@ The combo can be marked as required by setting the required property.
 <IgbCombo Required="true" />
 ```
 
-### Disable Combo
+### Disable Combobox
 
-You can disable the combo using the `Disabled` property:
+You can disable the Combobox using the `Disabled` property:
 
 ```html
 <igc-combo disabled></igc-combo>
