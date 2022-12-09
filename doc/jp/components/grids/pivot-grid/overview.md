@@ -190,7 +190,7 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 
 - `PivotNumericAggregate` - 数値フィールド用。
     次の集計関数が含まれています: `SUM`、`AVG`、`MIN`、`MAX`、`COUNT`。
-- `PivotDateAggregate` - `IgxPivotDateAggregate - 日付フィールド用。
+- `PivotDateAggregate` - 日付フィールド用。
     次の集計関数が含まれています: `LATEST`、`EARLIEST`、`COUNT`。
 - `PivotTimeAggregate` - 時間フィールド用。
     次の集計関数が含まれています: `LATEST`、`EARLIEST`、`COUNT`。
