@@ -87,12 +87,19 @@ steps:
     buildProperties: 'langFolder=en;lang=Staging;plat=WebComponents'
   condition: ne(variables['Build.SourceBranchName'], 'master')
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourceDirectory)/*.nupkg'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(BGNuget.IgniteUI)'
   inputs:
     SourceFolder: '$(Build.ArtifactStagingDirectory)'
     Contents: '*.nupkg'
     TargetFolder: '$(BGNuget.IgniteUI)'
+  enabled: false
 
 - task: Npm@1
   displayName: 'npm ci'
@@ -101,6 +108,7 @@ steps:
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
     customCommand: ci
+  enabled: false
 
 - task: Npm@1
   displayName: 'npm build production WebComponents EN'
@@ -109,18 +117,21 @@ steps:
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
     customCommand: 'run build-production -- --plat=WebComponents --lang=en'
+  enabled: false
 
 - task: DeleteFiles@1
   displayName: 'Delete files from $(Build.SourcesDirectory)\node_modules'
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)\node_modules'
     Contents: '**'
+  enabled: false
 
 - task: DeleteFiles@1
   displayName: 'Delete files from $(Build.ArtifactStagingDirectory)'
   inputs:
     SourceFolder: '$(Build.ArtifactStagingDirectory)'
     Contents: '*.nupkg'
+  enabled: false
 
 - task: NuGetCommand@2
   displayName: 'NuGet pack Production EN'
@@ -130,6 +141,7 @@ steps:
     versioningScheme: byBuildNumber
     buildProperties: 'langFolder=en;lang=Production'
   condition: eq(variables['Build.SourceBranchName'], 'master')
+  enabled: false
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(BGNuget.IgniteUI)'
@@ -137,6 +149,7 @@ steps:
     SourceFolder: '$(Build.ArtifactStagingDirectory)'
     Contents: '*.nupkg'
     TargetFolder: '$(BGNuget.IgniteUI)'
+  enabled: false
 
 - powershell: |
    # You can write your powershell scripts inline here. 
@@ -146,6 +159,7 @@ steps:
    Write-Host "##vso[task.setvariable variable=BuildVersion]$version"
   workingDirectory: '$(Build.SourcesDirectory)'
   displayName: 'PowerShell Script'
+  enabled: false
 
 - script: '"$(OctoExe)" create-release --project=WebComponentsDocFXStaging --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXStaging:$(BuildVersion) --deployto=Staging --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
   displayName: 'Deploy to Staging EN'
