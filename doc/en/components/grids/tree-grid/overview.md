@@ -66,7 +66,7 @@ You also need to include the following import to use the tree grid:
 import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 
-The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../themes/overview.md) and based on your project configuration to import it:
+The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
@@ -77,7 +77,7 @@ Or to link it:
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-For more details on how to customize the appearance of the tree grid, you may have a look at the [styling](overview.md#web-components-tree-grid-styling) section.
+For more details on how to customize the appearance of the tree grid, you may have a look at the [styling](overview.md#web-components-tree-grid-styling-configuration) section.
 <!-- end: WebComponents -->
 
 <!-- end: Angular, React, WebComponents -->
@@ -203,7 +203,7 @@ The indentation of the **tree cells** persists across other tree grid features l
 - When exporting to CSV, levels and expanded states are ignored and all data is exported as flat.
 
 <!-- WebComponents -->
-## {Platform} Tree Grid Styling
+## {Platform} Tree Grid Styling Configuration
 
 In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
 

@@ -56,26 +56,37 @@ Afterwards, you may start implementing the control by adding the following names
 ```razor
 @using IgniteUI.Blazor.Controls
 ```
-
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
 When installing the {Platform} grid package, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
-</pre>
+```
 
 <!-- WebComponents -->
 
-You also need to include the following imports to include the grid and the necessary styles for the grid:
+You also need to include the following import to use the grid:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
+```
+
+The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
+
+```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
+
+Or to link it:
+```typescript
+<link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
+```
+
+For more details on how to customize the appearance of the grid, you may have a look at the [styling](overview.md#web-components-grid-styling-configuration) section.
 
 <!-- end: WebComponents -->
 
@@ -534,11 +545,11 @@ The code above will make the **ProductName** column sortable and editable and wi
 
 There are optional parameters for formatting:
 
-- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
-- `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
-- `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
+- `format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
+- `timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
+- `digitsInfo` - decimal representation objects. Default to `'1.0-3'`
 
-To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
+To allow customizing the display format by these parameters, the `pipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `pipeArgs` is set. Example:
 <!-- Angular -->
 ```typescript
 const pipeArgs: IColumnPipeArgs = {
@@ -554,11 +565,11 @@ const pipeArgs: IColumnPipeArgs = {
 <igx-column field="UnitPrice" dataType="number" [pipeArgs]="pipeArgs"></igx-column>
 ```
 
-```typescript
 ```html
 <igc-column id="orderDate" field="OrderDate" data-type="date"></igc-column>
 ```
 
+```typescript
 private _columnPipeArgs: any | null = null;
     public get columnPipeArgs(): any {
         if (this._columnPipeArgs == null)
@@ -583,7 +594,7 @@ constructor() {
 }
 ```
 
-The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
+The `OrderDate` column will respect only the `format` and `timezone` properties, while the `UnitPrice` will only respect the `digitsInfo`.
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
@@ -631,10 +642,40 @@ const POJO = [{
 
 >If you use `autoGenerate` columns **the data keys must be identical.**
 
-<!-- Angular -->
+
+<!-- Angular, WebComponents -->
 ## Grid Data Binding
 
-Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications. A good practice is to separate all data fetching related logic in a separate data service, so we are going to create a service which will handle the fetching of data from the server.
+Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications. 
+
+<!-- WebComponents -->
+You can do this by fetching the data from a given url receiving a JSON response and assigning it to the `northwindEmployees` property that will be used as the grid's data source:
+
+```typescript
+public fetchData(url: string): void {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.onDataLoaded(data));
+}
+public onDataLoaded(jsonData: any[]) {
+    this.northwindEmployees = jsonData;
+  }
+  
+@property()
+private northwindEmployees?: any[];
+```
+
+And then you can bind the grid to that data:
+
+```html
+<igc-grid id="grid1" .data="${this.northwindEmployees}">
+```
+
+<!-- end:WebComponents -->
+
+<!-- Angular -->
+
+A good practice is to separate all data fetching related logic in a separate data service, so we are going to create a service which will handle the fetching of data from the server.
 
 Let's implement our service in a separate file
 
@@ -652,7 +693,7 @@ We're importing the `Injectable` decorator which is an [essential ingredient](ht
 
 **Note**: Before Angular 5 the `HttpClient` was located in `@angular/http` and was named `Http`.
 
-Since we will receive a JSON response containing an array of records, we may as well help ourselves by specifing what kind of data we're expecting to be returned in the observable by defining an interface with the correct shape. Type checking is always recommended and can save you some headaches down the road.
+Since we will receive a JSON response containing an array of records, we may as well help ourselves by specifying what kind of data we're expecting to be returned in the observable by defining an interface with the correct shape. Type checking is always recommended and can save you some headaches down the road.
 
 ```typescript
 // northwind.service.ts
@@ -753,13 +794,15 @@ and in the template of the component:
         <!-- rest of the column definitions -->
     </igx-grid>
 ```
+<!-- end: Angular -->
 
 **Note**: The grid `autoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `autoGenerate` available, when binding to remote service, is on our roadmap for future versions.
 
-<!-- end: Angular -->
+
+<!-- end: Angular, WebComponents -->
 ## Complex Data Binding
 
-The `{GridName}` supports binding to complex objects (inluding nesting deeper than one level) through a "path" of properties in the data record.
+The `{GridName}` supports binding to complex objects (including nesting deeper than one level) through a "path" of properties in the data record.
 
 Take a look at the following data model:
 ```typescript
@@ -811,9 +854,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{GridName}` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
-    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]`
-
-and interpolate it those in the template.
+    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` and interpolate those in the template.
 
 ```html
 <igx-column field="abbreviation.long" header="Long">
@@ -864,7 +905,7 @@ public getWeight(rowId: number){
 }
 ```
 
-Below is the data that we are going to use:
+Here is an example on how body template is used to display complex data. Below is the data that we are going to use:
 
 ```typescript
 export const EMPLOYEE_DATA = [
@@ -1214,6 +1255,46 @@ platformBrowserDynamic()
 >[!NOTE]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
 
+<!-- end: Angular -->
+
+## {Platform} Grid Styling Configuration
+> [!NOTE]
+> The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
+
+<!-- WebComponents -->
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+
+```typescript
+<igc-grid class="grid">
+```
+
+Then set the `--header-background` and `--header-text-color` CSS properties for that class:
+
+```css
+.grid {
+    --header-background: #494949;
+    --header-text-color: #FFF;
+}
+```
+<!-- end: WebComponents -->
+
+<!--  Angular -->
+In [**Angular**](https://angular.io/) most of the styles are prefixed implicitly thanks to the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin.
+
+For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment `/* autoprefixer grid:on */`.
+
+To facilitate your work, apply the comment in the `src/styles.scss` file.
+
+ ```scss
+// src/styles.scss
+@use "igniteui-angular/theming" as *;
+
+// IMPORTANT: Prior to Ignite UI for Angular version 13 use:
+// @import '~igniteui-angular/lib/core/styles/themes/index';
+@include core();
+/* autoprefixer grid:on */
+@include theme($default-palette);
+ ```
 <!-- end: Angular -->
 
 ## Known Limitations
