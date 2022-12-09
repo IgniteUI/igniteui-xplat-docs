@@ -129,7 +129,7 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 ```razor
 @code {
     IgbPivotDateDimension dateDim = new IgbPivotDateDimension();
-    dateDim.InBaseDimension = new IgbPivotDimension()
+    dateDim.BaseDimension = new IgbPivotDimension()
         {
             MemberName = "Date",
             Enabled = true
@@ -167,12 +167,12 @@ It also allows for further customization via the second option parameter in orde
 ```razor
 @code {
     IgbPivotDateDimension dateDim = new IgbPivotDateDimension();
-    dateDim.InBaseDimension = new IgbPivotDimension()
+    dateDim.BaseDimension = new IgbPivotDimension()
         {
             MemberName = "Date",
             Enabled = true
         };
-    dateDim.InOptions = new IgbPivotDateDimensionOptions()
+    dateDim.Options = new IgbPivotDateDimensionOptions()
         {
             Years = true,
             Months = true,
