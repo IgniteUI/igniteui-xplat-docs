@@ -84,7 +84,7 @@ steps:
     command: pack
     packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
     versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;lang=Staging'
+    buildProperties: 'langFolder=en;lang=Staging;plat=WebComponents'
   condition: ne(variables['Build.SourceBranchName'], 'master')
 
 - task: CopyFiles@2
