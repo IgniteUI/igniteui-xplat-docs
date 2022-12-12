@@ -39,6 +39,7 @@
             { "name": "{PackageVerChanges-21-2}",   "value": "13.1.0"},
             { "name": "{PackageVerChanges-22-1}",   "value": "13.2.0"},
             { "name": "{PackageVerChanges-22-2}",   "value": "14.2.0"},
+            { "name": "{PackageVerChanges-22-2.1}",   "value": "15.0.0"},
             { "name": "{PackageAngularComponents}",     "value": "igniteui-angular"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/browser"},
@@ -142,6 +143,7 @@
             { "name": "{PackageVerChanges-21-2.1}", "value": "16.15.1"},
             { "name": "{PackageVerChanges-22-1}",   "value": "16.16.0"},
             { "name": "{PackageVerChanges-22-2}",   "value": "18.1.0"},
+            { "name": "{PackageVerChanges-22-2.1}",   "value": "18.1.2"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/browser"},
 
@@ -245,6 +247,7 @@
             { "name": "{PackageVerChanges-21-2.1}", "value": "1.4.2"},
             { "name": "{PackageVerChanges-22-1}",   "value": "3.2.1"},
             { "name": "{PackageVerChanges-22-2}",   "value": "4.0.0"},
+            { "name": "{PackageVerChanges-22-2.1}",   "value": "4.0.4"},
             { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/browser"},
@@ -389,6 +392,7 @@
             { "name": "{PackageVerChanges-21-2.1}", "value": "21.2.52"},
             { "name": "{PackageVerChanges-22-1}",   "value": "22.1.41"},
             { "name": "{PackageVerChanges-22-2}",   "value": "22.1.76"},
+            { "name": "{PackageVerChanges-22-2.50}",   "value": "22.2.50"},
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},
