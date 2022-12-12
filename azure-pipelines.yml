@@ -7,6 +7,10 @@ trigger:
     include:
     - vnext
     - master
+pr:
+  branches:
+    exclude:
+    - '*'  # must quote since "*" is a YAML reserved character; we want a string
 
 variables:
   BGNuget.IgniteUI: '\\igbgsofsmb2.infragistics.local\Builds\NuGet\IgniteUI'
