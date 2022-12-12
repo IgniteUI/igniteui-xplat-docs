@@ -3,8 +3,10 @@ pool:
   demands: npm
 
 trigger:
-- vnext
-- master
+  branches:
+    include:
+    - vnext
+    - master
 
 variables:
   BGNuget.IgniteUI: '\\igbgsofsmb2.infragistics.local\Builds\NuGet\IgniteUI'
