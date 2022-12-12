@@ -7,7 +7,7 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 
 # {Platform} Grid Overview and Configuration
 
-The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel, CSV, and pdf formats and more.
+The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.
 
 <div class="sample-content">
     <img class="b-lazy responsive-img"
@@ -20,7 +20,7 @@ The {Platform} `{GridName}` is used as a feature-rich control for displaying dat
 
 ## {Platform} Grid Example
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as using of grid summaries and cell templating. The demo also includes custom paging and per page usage part of the Pagination.
+In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as the use of grid summaries and cell templating. The demo also includes paging set to display 10 items per page.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -29,8 +29,6 @@ In this grid example, you can see how users can do both basic and excel-style fi
 </code-view>
 
 <div class="divider--half"></div>
-
-
 
 ## Getting Started with {ProductName} Grid
 
@@ -59,12 +57,13 @@ Afterwards, you may start implementing the control by adding the following names
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
-When installing the {Platform} grid package, the core package must also be installed.
+When installing the {Platform} grid package, the core, inputs and layout packages must also be installed.
 
 ```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
+npm install --save {PackageLayouts}
 ```
 
 <!-- WebComponents -->
@@ -125,6 +124,10 @@ export class AppModule {}
 
 Now that we have the grid packages imported, let’s get started with the basic configuration and bind to local data:
 
+```razor
+<IgbGrid Id="grid1" Data="data" AutoGenerate="true"></IgbGrid>
+```
+
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
 ```
@@ -140,7 +143,7 @@ constructor() {
 }
 ```
 
-The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while **data** binds the grid, in this case to local data.
+The `id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.
 
 The `autoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
@@ -148,7 +151,7 @@ The `autoGenerate` property tells the grid to auto generate the grid's `Column` 
 
 {ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
 
-## Editable Grid {Platform}
+## Editable {Platform} Grid
 
 Each operation for grid editing includes batch operations, meaning the API gives you the option to group edits into a single server call, or you can perform grid edit / update operations as they occur with grid interactions. Along with a great developer experience as an editable grid with CRUD operations, the grid includes Excel-like keyboard navigation. Common default grid navigation is included, plus the option to override any navigation option to meet the needs of your customers. An editable grid in with a great navigation scheme is critical to any modern line of business application, with the Ignite UI grid we make it easy.
 
