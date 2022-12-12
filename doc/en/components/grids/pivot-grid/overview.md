@@ -454,8 +454,8 @@ Resulting in the following view, which groups the Product Categories unique colu
 
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-basic"
-           alt="{Platform} Pivot Grid Basic Example">
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
+           alt="{Platform} Pivot Grid Basic Features Example">
 </code-view>
 
 
