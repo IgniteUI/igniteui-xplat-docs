@@ -12,6 +12,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 > [!NOTE]
 Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
+## **{PackageVerChanges-22-2.1}**
+* [Grid](grids/pivot-grid/overview.md)
+
 ## **{PackageVerChanges-22-2}**
 
 ### New Components
