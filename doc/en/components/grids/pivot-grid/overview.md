@@ -10,7 +10,7 @@ mentionedTypes: ['Infragistics.Controls.PivotGrid']
 {ProductName} Pivot Grids are used for summing up and representing voluminous multidimensional data in a cross-tabular format. The data summery can be easily and quickly sorted, grouped, or filtered. Such data can include sums, averages, and other statistics. End-users are enabled to modify the pivot table layout through drag-and-drop operations, according to their needs.
 
 
-## What is {Platform} Pivot Grid? 
+## What is {Platform} Pivot Grid?
 
 The {Platform} {PivotGridName} presents data in a pivot table and helps performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
 
@@ -424,7 +424,6 @@ public data = [
         Value: '94.2652032683907',
         NumberOfUnits: '282'
     },
-    //...
 ];
 ```
 
@@ -464,21 +463,23 @@ Resulting in the following view, which groups the Product Categories unique colu
 |Limitation|Description|
 |--- |--- |
 | Setting columns declaratively is not supported. | The Pivot grid generates its columns based on the `Columns` configuration, so setting them declaratively, like in the base grid, is not supported. Such columns are disregarded. |
-| Setting duplicate `MemberName` or `Member` property values for dimensions/values. | `MemberName`/`Member` should be unique for each dimension/value. Duplication may result in loss of data from the final result. |
+| Setting duplicate `MemberName` or `Member` property values for dimensions/values. | These properties should be unique for each dimension/value. Duplication may result in loss of data from the final result. |
 | Row Selection is only supported in **Single** mode. | Multiple selection is currently not supported. |
 <!--Angular -->
 | Merging the dimension members is case sensitive| The Pivot Grid creates groups and merges the same (case sensitive) values. But the dimensions provide `MemberFunction` and this can be changed there, the result of the `MemberFunction` are compared and used as display value.|
 <!-- end: Angular -->
 
 ## API References
+
 * `{PivotGridName}`
 * `PivotDataSelectorComponent`
 
 
-## Additional Resources
+<!-- ## Additional Resources -->
 
-* [{Platform} Pivot Grid Features](pivot-grid-features.md)
-* [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md)
+<!-- TODO write these topics: -->
+<!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
+<!-- * [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md) -->
 
 Our community is active and always welcoming to new ideas.
 
