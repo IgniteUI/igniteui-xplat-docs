@@ -21,10 +21,11 @@ steps:
     versionSpec: '16.x'
 
 variables:
+- name: buildType
   ${{ if eq( variables['Build.SourceBranchName'], 'master' ) }}: 
-    buildType: production
+    value: production
   ${{ if ne( variables['Build.SourceBranchName'], 'master' ) }}: 
-    buildType: staging
+    value: staging
 
 - script: echo '$(Build.BuildNumber)'
 - script: echo '$(buildType)'
