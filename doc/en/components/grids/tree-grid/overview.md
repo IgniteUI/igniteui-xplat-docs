@@ -11,7 +11,7 @@ mentionedTypes: ['TreeGrid']
 
 ## {Platform} Tree Grid Example
 
-In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv, and cell templating that uses our Sparkline component.
+In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
