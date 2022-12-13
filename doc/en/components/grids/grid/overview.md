@@ -1246,7 +1246,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `{GridName}` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **`20%`** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `{GridName}` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()

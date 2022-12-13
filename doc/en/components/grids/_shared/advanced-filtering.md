@@ -29,7 +29,7 @@ In order to add a filtering condition, you have to select any of the `Filterable
 
 If you select more than one filtering condition chip, a context menu appears with options to create a group or delete the filters. If you choose to create a group with the selected conditions, the newly created group will appear where the topmost selected condition was placed.
 
-In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition `**AND** or **OR**. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
+In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition **AND** or **OR**. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
 
 In order to filter the data once you are ready with creating the filtering conditions and groups, you should click the **Apply** button. If you have modified the advanced filter, but you don't want to preserve the changes, you should click the **Cancel** button. You could also clear the advanced filter by clicking the **Clear Filter** button.
 
