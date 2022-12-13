@@ -13,6 +13,12 @@ namespace: Infragistics.Controls.Charts
 > [!NOTE]
 (*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
 
+## **{PackageVerChanges-22-2.1}**
+
+### 新しいコンポーネント
+
+* [ピボット グリッド](grids/pivot-grid/overview.md)
+
 ## **{PackageVerChanges-22-2}**
 
 ### 新しいコンポーネント

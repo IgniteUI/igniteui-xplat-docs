@@ -424,7 +424,6 @@ public data = [
         Value: '94.2652032683907',
         NumberOfUnits: '282'
     },
-    //...
 ];
 ```
 
@@ -454,7 +453,7 @@ public PivotSalesData()
 
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-basic"
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
            alt="{Platform} ピボット グリッドの例">
 </code-view>
 
@@ -464,7 +463,7 @@ public PivotSalesData()
 |制限|説明|
 |--- |--- |
 | 列を宣言的に設定することはサポートされていません。 | ピボット グリッドは `Columns` (列) の構成に基づいて列を生成するため、ベース グリッドのように宣言的に設定することはサポートされていません。このような列は無視されます。 |
-| ディメンション / 値に重複した `MemberName` または `Member` プロパティ値を設定します。 | `MemberName`/`Member` は、各ディメンション / 値に対して一意である必要があります。複製すると、最終結果からデータが失われる可能性があります。 |
+| ディメンション / 値に重複した `MemberName` または `Member` プロパティ値を設定します。 | これらのプロパティは、各ディメンション / 値に対して一意である必要があります。複製すると、最終結果からデータが失われる可能性があります。 |
 | 行選択は、**Single** (単一) モードでのみサポートされます。 | 現在、複数選択はサポートされていません。 |
 <!--Angular -->
 | ディメンション メンバーのマージでは大文字と小文字が区別されます。| ピボット グリッドはグループを作成し、同じ (大文字と小文字を区別する) 値をマージします。ただし、ディメンションは `MemberFunction` を提供し、これはそこで変更できます。`MemberFunction` の結果が比較され、表示値として使用されます。|
@@ -475,10 +474,10 @@ public PivotSalesData()
 * `PivotDataSelectorComponent`
 
 
-## その他のリソース
+<!-- ## その他のリソース
 
 * [{Platform} ピボット グリッドの機能](pivot-grid-features.md)
-* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md)
+* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

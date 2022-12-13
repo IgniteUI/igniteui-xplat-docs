@@ -663,7 +663,7 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents"],
+    "exclude": ["Angular", "React"],
     "name": "ピボット グリッド",
     "href": "grids/pivot-grid/overview.md",
     "status": "NEW",

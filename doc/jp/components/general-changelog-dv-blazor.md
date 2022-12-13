@@ -10,6 +10,13 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-22-2.50}**
+
+### 新しいコンポーネント
+
+* [ピボット グリッド](grids/pivot-grid/overview.md)
+* .NET 7.0
+
 ## **{PackageVerChanges-22-2}**
 
 ### 新しいコンポーネント
