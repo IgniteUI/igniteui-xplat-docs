@@ -145,7 +145,7 @@ constructor() {
 
 The `id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.
 
-The `autoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
+The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
 ## Bootstrap Grid Definition
 
@@ -163,7 +163,7 @@ Following this topic you will learn more about [cell template](overview.md#cell-
 
 ### Defining Columns
 
-Let's turn the `autoGenerate` property off and define the columns collection in the markup:
+Let's turn the `AutoGenerate` property off and define the columns collection in the markup:
 
 ```html
 <igx-grid #grid1 [data]="data | async" [autoGenerate]="false" (columnInit)="initColumns($event)"
@@ -300,7 +300,7 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
-As you can see, we are adding `draggable` attribute set to false.
+As you can see, we are adding `Draggable` attribute set to false.
 
 ### Cell Template
 
@@ -422,7 +422,7 @@ When properly implemented, the cell editing template also ensures that the cell'
 ### Cell Editing Template
 
 The column also accepts one last template that will be used when a cell is in edit mode. As with the other column templates, the provided context object is again the cell value and the cell object itself. Of course in order to make the edit-mode template accessible to end users, you need
-to set the `editable` property of the column to true.
+to set the `Editable` property of the column to true.
 
 ```html
 <igx-column dataType="number" editable="true" field="Price">
@@ -548,11 +548,11 @@ The code above will make the **ProductName** column sortable and editable and wi
 
 There are optional parameters for formatting:
 
-- `format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
-- `timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
-- `digitsInfo` - decimal representation objects. Default to `'1.0-3'`
+- `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
+- `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
+- `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
 
-To allow customizing the display format by these parameters, the `pipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `pipeArgs` is set. Example:
+To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
 <!-- Angular -->
 ```typescript
 const pipeArgs: IColumnPipeArgs = {
@@ -597,7 +597,7 @@ constructor() {
 }
 ```
 
-The `OrderDate` column will respect only the `format` and `timezone` properties, while the `UnitPrice` will only respect the `digitsInfo`.
+The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
 
@@ -643,13 +643,13 @@ const POJO = [{
 >[!WARNING]
 >**The key values must not contain arrays**.
 
->If you use `autoGenerate` columns **the data keys must be identical.**
+>If you use `AutoGenerate` columns **the data keys must be identical.**
 
 
 <!-- Angular, WebComponents -->
 ## Grid Data Binding
 
-Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications. 
+Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
 
 <!-- WebComponents -->
 You can do this by fetching the data from a given url receiving a JSON response and assigning it to the `northwindEmployees` property that will be used as the grid's data source:
@@ -663,7 +663,7 @@ public fetchData(url: string): void {
 public onDataLoaded(jsonData: any[]) {
     this.northwindEmployees = jsonData;
   }
-  
+
 @property()
 private northwindEmployees?: any[];
 ```
@@ -799,7 +799,7 @@ and in the template of the component:
 ```
 <!-- end: Angular -->
 
-**Note**: The grid `autoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `autoGenerate` available, when binding to remote service, is on our roadmap for future versions.
+**Note**: The grid `AutoGenerate` property is best to be avoided when binding to remote data for now. It assumes that the data is available in order to inspect it and generate the appropriate columns. This is usually not the case until the remote service responds, and the grid will throw an error. Making `AutoGenerate` available, when binding to remote service, is on our roadmap for future versions.
 
 
 <!-- end: Angular, WebComponents -->
