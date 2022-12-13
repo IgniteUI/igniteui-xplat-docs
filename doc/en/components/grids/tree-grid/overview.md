@@ -114,6 +114,42 @@ export class AppModule {}
 The tree grid shares a lot of features with the grid, but it also adds the ability to display its data hierarchically.
 In order to achieve this, the tree grid provides us with a couple of ways to define the relations among our data objects - by using a [child collection](overview.md#child-collection) for every data object or by using [primary and foreign keys](overview.md#primary-and-foreign-keys) for every data object.
 
+```razor
+ <IgbTreeGrid
+    AutoGenerate="false"
+    ChildDataKey="Employees"
+    Data="EmployeesNestedData"
+    Name="treeGrid"
+    @ref="treeGrid">
+        <IgbColumn Field="Name" DataType="GridColumnDataType.String"></IgbColumn>
+        <IgbColumn Field="HireDate" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbColumn Field="Age" DataType="GridColumnDataType.Number"> </IgbColumn>
+</IgbTreeGrid>
+```
+
+```html
+<igc-tree-grid auto-generate="false" id="treeGrid" name="treeGrid">
+    <igc-column field="name" header="Name" data-type="String"></igc-column>
+    <igc-column field="hireDate" header="Hire Date" data-type="Date"></igc-column>
+    <igc-column field="age" header="Age" data-type="Number"></igc-column>
+</igc-tree-grid>
+```
+
+```ts
+    private _bind: () => void;
+
+    constructor() {
+        var treeGrid = (this.treeGrid = document.getElementById('treeGrid') as any) as IgcTreeGridComponent;
+        this._bind = () => {
+            treeGrid.childDataKey = "Employees";
+            treeGrid.data = this.employeesNestedData;
+        }
+        this._bind();
+    }
+```
+
+
+
 ### Tree Cells
 
 Regardless of which option is used for building the tree grid's hierarchy (child collection or primary and foreign keys), the tree grid's rows are constructed of two types of cells:
