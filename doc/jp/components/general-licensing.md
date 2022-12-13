@@ -3,6 +3,7 @@ title: {Platform} ライセンス | ドック マネージャー | {ProductName}
 _description: インフラジスティックスの {ProductName} ライセンス npm フィードの使用方法について説明します。
 _keywords: npm package license,  {ProductName} license feed,  licensing, npm パッケージのライセンス, {Platform} ライセンス フィード, ライセンス
 _language: ja
+mentionedTypes: []
 ---
 
 # {ProductName} 使用許諾契約

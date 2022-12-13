@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列選択の概要
 
-列選択機能は、シングルク リックで列全体を選択する簡単な方法を提供します。特定の列の重要性を強調するために、ヘッダー セルとその下のすべてにフォーカスします。この機能は豊富な API を備えて選択状態の操作、選択した部分からのデータ抽出、データ分析操作、可視化が可能になります。
+`{ComponentName}` の列選択機能は、シングルク リックで列全体を選択する簡単な方法を提供します。特定の列の重要性を強調するために、ヘッダー セルとその下のすべてにフォーカスします。この機能は豊富な API を備えて選択状態の操作、選択した部分からのデータ抽出、データ分析操作、可視化が可能になります。
 
 ## {Platform} {ComponentTitle} 列選択の例
 
@@ -48,7 +48,7 @@ _language: ja
 デフォルトの選択モードは `None` です。`Single` または `Multiple` に設定されると、すべての列は `Selectable` になります。列を選択するには、列をクリックして `Selected` としてマークします。列が選択不可な場合、ホバー時に選択スタイルはヘッダーに適用されません。
 
 > [!NOTE]
-> [複数列ヘッダー](multi-column-headers.md)は `Selectable` 入力に反映されません。その子の 1 つ以上で選択動作が有効な場合、`ColumnGroupComponent` は `Selectable` です。さらに、すべての `Selectable` 子孫が `Selected` である場合、コンポーネントは `Selected` としてマークされます。
+> [複数列ヘッダー](multi-column-headers.md)機能は `Selectable` 入力に反映されません。その子の 1 つ以上で選択動作が有効な場合、`ColumnGroupComponent` は `Selectable` です。さらに、すべての `Selectable` 子孫が `Selected` である場合、コンポーネントは `Selected` としてマークされます。
 
 <!-- ComponentStart: Grid -->
 
@@ -175,7 +175,7 @@ TO DO
 Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
 >[!NOTE]
->コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
+>コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
 
 ```scss
 :host {

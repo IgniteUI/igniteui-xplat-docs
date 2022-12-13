@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 列のサイズ変更の概要
 
-グリッド列のサイズ変更遅延では、{Platform} ドラッグ操作の実行中にサイズ変更インジケーターが一時的に表示されます。ドラッグ操作が完了すると、新しいグリッド列幅が適用されます。
+グリッド列のサイズ変更遅延では、{Platform} ドラッグ操作の実行中にサイズ変更インジケーターが一時的に表示されます。`{ComponentName}` では、ドラッグ操作が完了すると、新しいグリッド列幅が適用されます。
 
 ## {Platform} {ComponentTitle} 列のサイズ変更の例
 
@@ -444,7 +444,7 @@ $custom-grid-theme: grid-theme(
 
 ```
  >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 
 ```scss
 :host {
