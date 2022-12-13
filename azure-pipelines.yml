@@ -12,9 +12,6 @@ pr:
     exclude:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 
-variables:
-  BGNuget.IgniteUI: '\\igbgsofsmb2.infragistics.local\Builds\NuGet\IgniteUI'
-
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 steps:
@@ -23,15 +20,14 @@ steps:
     versionSource: 'spec'
     versionSpec: '16.x'
 
-- script: echo '$(Build.BuildNumber)'
+variables:
+  ${{ if eq( variables['Build.SourceBranchName'], 'master' ) }}: 
+    buildType: production
+  ${{ if ne( variables['Build.SourceBranchName'], 'master' ) }}: 
+    buildType: staging
 
-- task: DeleteFiles@1
-  displayName: 'Delete files from $(Build.SourcesDirectory)'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: |
-     node_modules
-     *.nupkg
+- script: echo '$(Build.BuildNumber)'
+- script: echo '$(buildType)'
 
 - task: RegexReplace@3
   displayName: 'replace environment in doc/docfx'
@@ -63,126 +59,23 @@ steps:
     customCommand: ci
 
 - task: Npm@1
-  displayName: 'npm build WebComponents'
+  displayName: 'npm build WebComponents EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
-    customCommand: 'run buildWebComponents'
-
-- task: Npm@1
-  displayName: 'npm build staging WebComponents EN'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run build-staging -- --plat=WebComponents --lang=en'
-
-- task: DeleteFiles@1
-  displayName: 'Delete files from $(Build.SourcesDirectory)\node_modules'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)\node_modules'
-    Contents: '**'
+    customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
 - task: NuGetCommand@2
-  displayName: 'NuGet pack WebComponents Staging EN'
+  displayName: 'NuGet pack WebComponents EN'
   inputs:
     command: pack
     packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
     versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;lang=Staging;plat=WebComponents'
-  condition: ne(variables['Build.SourceBranchName'], 'master')
+    buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(BGNuget.IgniteUI)'
-  inputs:
-    SourceFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: '*.nupkg'
-    TargetFolder: '$(BGNuget.IgniteUI)'
-  enabled: false
-
-- task: Npm@1
-  displayName: 'npm ci'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: ci
-  enabled: false
-
-- task: Npm@1
-  displayName: 'npm build production WebComponents EN'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run build-production -- --plat=WebComponents --lang=en'
-  enabled: false
-
-- task: DeleteFiles@1
-  displayName: 'Delete files from $(Build.SourcesDirectory)\node_modules'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)\node_modules'
-    Contents: '**'
-  enabled: false
-
-- task: DeleteFiles@1
-  displayName: 'Delete files from $(Build.ArtifactStagingDirectory)'
-  inputs:
-    SourceFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: '*.nupkg'
-  enabled: false
-
-- task: NuGetCommand@2
-  displayName: 'NuGet pack Production EN'
-  inputs:
-    command: pack
-    packagesToPack: '$(Build.SourcesDirectory)\IgniteUIDocFX.nuspec'
-    versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;lang=Production'
-  condition: eq(variables['Build.SourceBranchName'], 'master')
-  enabled: false
-
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(BGNuget.IgniteUI)'
-  inputs:
-    SourceFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: '*.nupkg'
-    TargetFolder: '$(BGNuget.IgniteUI)'
-  enabled: false
-
-- powershell: |
-   # You can write your powershell scripts inline here. 
-   # You can also pass predefined and custom variables to this scripts using arguments
-   
-   $version=("$(build.buildnumber)").split('_')[1]
-   Write-Host "##vso[task.setvariable variable=BuildVersion]$version"
-  workingDirectory: '$(Build.SourcesDirectory)'
-  displayName: 'PowerShell Script'
-  enabled: false
-
-- script: '"$(OctoExe)" create-release --project=WebComponentsDocFXStaging --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXStaging:$(BuildVersion) --deployto=Staging --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
-  displayName: 'Deploy to Staging EN'
-  enabled: false
-  condition: ne(variables['Build.SourceBranchName'], 'master')
-
-- script: '"$(OctoExe)" create-release --project=WebComponentsFXProduction --server=http://octopus.infragistics.local/api --apiKey=$(octoToken) --version=$(BuildVersion) --package=IgniteUIDocFXProduction:$(BuildVersion) --deployto=Production --deploymenttimeout=00:20:00 --force=true --waitfordeployment'
-  displayName: 'Deploy to Production EN'
-  enabled: false
-  condition: and(eq(variables['Build.SourceBranchName'], 'master'), contains(variables['build.reason'], 'CI'))
-
-- task: PowerShell@2
-  displayName: 'Retry the octopus deployment Production'
-  enabled: false
-  inputs:
-    targetType: filePath
-    filePath: './"\\igbgsofsmb1\Departments\ES\Powershell Scripts\OctopusCheckRelease.ps1"'
-    arguments: '$(BuildVersion) "$(OctoExe)" $(octoToken) IgniteUIDocFXProduction Production'
-  condition: failed()
-
