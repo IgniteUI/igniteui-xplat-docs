@@ -21,12 +21,12 @@ steps:
     versionSpec: '16.x'
 
 variables:
-  ${{ if eq( variables['Build.SourceBranchName'], 'master' ) }}: 
-    buildType: production
-  ${{ else }}: 
-    buildType: staging
+  buildType: staging
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    buildType: 'production'
 
 - script: echo '$(Build.BuildNumber)'
+
 - script: echo '$(buildType)'
 
 - task: RegexReplace@3
