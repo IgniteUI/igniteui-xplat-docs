@@ -1072,7 +1072,7 @@
     ]
   },
   {
-    "exclude": ["React", "WebComponents", "Angular"],
+    "exclude": ["React", "Angular"],
     "name": "Theming",
     "status": "NEW",
     "href": "grids/theming.md"
