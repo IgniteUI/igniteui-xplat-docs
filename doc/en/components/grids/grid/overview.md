@@ -1042,7 +1042,7 @@ And the result from this configuration is:
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
 </code-view>
 
-### Working with Flat data
+### Working with Flat Data Overview
 
 The flat data binding approach is similar to the one that we already described above, but instead of **cell value** we are going to use the `Data` property of the `GridRow`.
 
@@ -1204,7 +1204,9 @@ public updatePostalCode(rowId: number) {
 }
 ```
 
-And the result is:
+### Working with Flat Data Example
+
+Using code snippets from previous section will result in the following example of `{GridName}`
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
