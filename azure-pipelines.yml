@@ -61,7 +61,7 @@ steps:
     customCommand: ci
 
 - task: Npm@1
-  displayName: 'npm build WebComponents EN'
+  displayName: 'Build WebComponents EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
@@ -69,7 +69,7 @@ steps:
     customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
 - task: NuGetCommand@2
-  displayName: 'NuGet pack WebComponents EN'
+  displayName: 'Package WebComponents EN'
   inputs:
     command: pack
     packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
@@ -77,7 +77,7 @@ steps:
     buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
 
 - task: Npm@1
-  displayName: 'npm build Blazor EN'
+  displayName: 'Build Blazor EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
@@ -85,7 +85,7 @@ steps:
     customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
 
 - task: NuGetCommand@2
-  displayName: 'NuGet pack Blazor EN'
+  displayName: 'Package Blazor EN'
   inputs:
     command: pack
     packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
@@ -93,7 +93,7 @@ steps:
     buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
 
 - task: Npm@1
-  displayName: 'npm build React EN'
+  displayName: 'Build React EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
@@ -101,7 +101,7 @@ steps:
     customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
 
 - task: NuGetCommand@2
-  displayName: 'NuGet pack React EN'
+  displayName: 'Package React EN'
   inputs:
     command: pack
     packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
@@ -109,6 +109,7 @@ steps:
     buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
 - task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
