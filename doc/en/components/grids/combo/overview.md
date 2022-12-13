@@ -7,9 +7,9 @@ mentionedTypes: ['Combo']
 
 # {Platform} ComboBox Overview
 
-{Platform} ComboBox is a lightweight editor that enables users to easily select, filter, and group different predefined options in a provided list. The component also supports options for {Platform} ComboBox Keyboard navigation, templates to customize how the items, header, and footer are displayed, and allow users to write custom values.
+{Platform} ComboBox is a lightweight editor that enables users to easily select, filter, and group different predefined options in a provided list. The component also supports options for {Platform} ComboBox Keyboard navigation, templates to customize how the items, header, and footer are displayed.
 
-The {ProductName} Combobox component provides a list of options from which users can make a selection. It displays all options in a virtualized list of items, meaning the ComboBox can simultaneously show thousands of records, where one or more options can be selected. Additionally, the component features case-sensitive filtering, grouping, complex data binding, custom templates and more.
+The {ProductName} Combobox component provides a list of options from which users can make a selection. It displays all options in a virtualized list of items, meaning the ComboBox can simultaneously show thousands of records, where one or more options can be selected. Additionally, the component features case-sensitive filtering, grouping, complex data binding and more.
 
 ## {Platform} ComboBox Example
 
