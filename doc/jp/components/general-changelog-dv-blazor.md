@@ -31,6 +31,7 @@ namespace: Infragistics.Controls.Charts
 これらの新しいチャートの改善点は次のとおりです:
 
 * ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
+* すべてのプラットフォームでの丸型ラベルの描画が強化されました。
 * StackedFragmentSeries にマーカー プロパティを追加しました。
 * `ShouldPanOnMaximumZoom` プロパティを追加しました。
 * 新しいカテゴリ軸プロパティ:
@@ -39,7 +40,7 @@ namespace: Infragistics.Controls.Charts
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups

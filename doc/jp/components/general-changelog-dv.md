@@ -15,7 +15,7 @@ namespace: Infragistics.Controls.Charts
 > {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
 ## **{PackageVerChanges-22-2.1}**
-* Angular 15 サポート。
+* Angular 15 のサポート。
 
 ## **{PackageVerChanges-22-2}**
 
@@ -23,7 +23,8 @@ namespace: Infragistics.Controls.Charts
 
 これらの新しいチャートの改善点は次のとおりです: 
 
-* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。 
+* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
+* すべてのプラットフォームでの丸型ラベルの描画が強化されました。
 * StackedFragmentSeries にマーカー プロパティを追加しました。
 * `ShouldPanOnMaximumZoom` プロパティを追加しました。
 * 新しいカテゴリ軸プロパティ:
