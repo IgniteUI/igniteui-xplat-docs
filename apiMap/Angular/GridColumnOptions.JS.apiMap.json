@@ -63,7 +63,7 @@
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"actualBaseTheme"}],"originalName":"ActualBaseTheme"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"buttonDensity"}],"originalName":"ButtonDensity"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"actualButtonDensity"}],"originalName":"ActualButtonDensity"},
-    { "names":[{"platform":"Angular","mappedType":"IgxColumnComponent","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"Angular","mappedType":"IgxDataGridColumnComponent","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"actualDensity"}],"originalName":"ActualDensity"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},

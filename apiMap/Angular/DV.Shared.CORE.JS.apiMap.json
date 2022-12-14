@@ -396,6 +396,7 @@
     { "names":[{"platform":"Angular","mappedType":"ToolActionType","mappedName":"Radio"}],"originalName":"Radio"},
     { "names":[{"platform":"Angular","mappedType":"ToolActionType","mappedName":"Separator"}],"originalName":"Separator"},
     { "names":[{"platform":"Angular","mappedType":"ToolActionType","mappedName":"IconMenu"}],"originalName":"IconMenu"},
+    { "names":[{"platform":"Angular","mappedType":"ToolActionType","mappedName":"Button"}],"originalName":"Button"},
     { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
   { "originalName":"ToolCommand",
     "names":[{"platform":"Angular","fileName":"ToolCommand.ts","mappedName":"ToolCommand"}],
