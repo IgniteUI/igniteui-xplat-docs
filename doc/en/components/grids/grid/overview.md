@@ -179,30 +179,33 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
     </igx-paginator>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
-    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
-    <igc-paginator per-page="6"></igc-paginator>
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>    
 </igc-grid>
 ```
+
 ```typescript
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-    var trackProgress = this.trackProgress = document.getElementById('trackProgress') as IgcColumnComponent;
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;   
 
     this._bind = () => {
-        grid1.data = this.data;
-        trackProgress.bodyTemplate = this.trackProgressCellTemplate;
+        grid1.data = this.data;        
     }
 
     this._bind();
 }
+```
 
-public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}"></igc-linear-bar>`;
-}
+```razor
+<IgbGrid AutoGenerate=false AllowFiltering=true>
+    <IgbColumn Field="Name" Sortable=true />
+    <IgbColumn Field="AthleteNumber" Sortable=true Header="Athlete Number" Filterable=false/>
+    <IgbColumn Field="TrackProgress" Header="Track Progress" Filterable=false />
+</IgbGrid>
 ```
 
 <!-- Angular -->
@@ -254,11 +257,28 @@ constructor() {
 
 public nameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
-        ${this.formattUppercase(ctx.column.field)}
+        ${this.formatUppercase(ctx.column.field)}
     `;
 }
 
-public formattUppercase(value: string) {
+public formatUppercase(value: string) {
+    return value.toUpperCase();
+}
+```
+
+```razor
+<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" /> 
+
+//In JavaScript:
+igRegisterScript("UpperCaseTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;
+
+    return html`${this.formatUppercase(ctx.column.field)}`;
+
+}, false)
+
+function formatUppercase(value) {
     return value.toUpperCase();
 }
 ```
@@ -276,9 +296,11 @@ public formattUppercase(value: string) {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
@@ -300,6 +322,22 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
+
+```razor
+<IgbColumn Field="ProductName" Header="Product Name" Groupable=true HasSummary=true HeaderTemplateScript="ProductNameHeaderTemplate" />
+
+//In JavaScript:
+igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;    
+
+    return html`
+        <div class="text">${ctx.cell.column.field}</div>
+        <igc-icon [attr.draggable]="false">functions</igc-icon>
+    `;
+}, false)
+```
+
 As you can see, we are adding `Draggable` attribute set to false.
 
 ### Cell Template
@@ -336,6 +374,21 @@ public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public formatTitleCase(value: string) {
+}
+```
+
+```razor
+<IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`${this.formatTitleCase(ctx.cell.value)}`;
+}, false);
+
+function formatTitleCase(value) {
+    return value;
 }
 ```
 
@@ -402,6 +455,37 @@ public formatTitleCase(value: string) {
 }
 ```
 
+```razor
+<IgbGrid AutoGenerate=false>
+    <IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate" />
+    <IgbColumn Field="Subscription" BodyTemplateScript="SubscriptionCellTemplate" />
+</IgbGrid>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+    `;
+}, false);
+
+igRegisterScript("SubscriptionCellTemplate", (ctx) => {    
+    var html = window.igTemplating.html;
+    return html`
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
+    `;
+}, false);
+
+function updateValue(value) {
+}
+
+function deleteRow(rowId) {
+}
+
+function formatTitleCase(value) {
+}
+```
+
 <!-- Angular -->
 
 When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](summaries.md), [selection](selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
@@ -434,9 +518,11 @@ to set the `Editable` property of the column to true.
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="price" field="Price" data-type="number" editable="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
@@ -458,6 +544,25 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public updateValue(value: number) {
+}
+```
+
+```razor
+<IgbColumn Field="Price" Editable=true DataType="GridColumnDataType.Number" InlineEditorTemplateScript="PriceCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("PriceCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`
+        <label>
+            Enter the new price tag
+        </label>
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+    `;
+}, false);
+
+function updateValue(value) {
 }
 ```
 
@@ -504,7 +609,7 @@ column.bodyTemplate = this.smallView;
 ```
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 user.bodyTemplate = this.smallView;
 
@@ -520,6 +625,37 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
+```
+
+```razor
+
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;
+        // Return the appropriate template based on some condition.
+        // For example saved user settings, viewport size, etc.
+        column.BodyTemplateScript = "NormalViewTemplate";
+    }
+}
+
+//In JavaScript:
+igRegisterScript("NormalViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details">${ctx.cell.value}</div>
+        <user-details-component></user-details-component>
+    `;
+}, false);
+
+igRegisterScript("SmallViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details-small" style="color: blue">${ctx.cell.value}</div>
+    `;
+}, false);
 ```
 
 Column properties can also be set in code in the `ColumnInit` event which is emitted when the columns are initialized in the grid.
@@ -538,6 +674,21 @@ public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
+    }
+}
+```
+
+```razor
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;        
+        if(column.Field == "ProductName"){
+            column.Sortable = true;
+            column.Editable = true;
+        }
     }
 }
 ```
@@ -597,9 +748,21 @@ constructor() {
 }
 ```
 
+```razor
+<IgbColumn Field="OrderDate"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+
+<IgbColumn Field="UnitPrice"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+```
+
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
+
+<!-- Angular, WebComponents -->
 
 ## Grid Data Structure
 
@@ -645,6 +808,7 @@ const POJO = [{
 
 >If you use `AutoGenerate` columns **the data keys must be identical.**
 
+<!-- end: Angular, WebComponents -->
 
 <!-- Angular, WebComponents -->
 ## Grid Data Binding
@@ -825,15 +989,43 @@ interface AminoAcid {
     }
 }
 ```
+
+```razor
+public class AminoAcid
+{
+    public string Name { get; set; }
+    public AminoAbbreviation Abbreviation { get; set; }
+    public AminoWeight Weight { get; set; }
+}
+
+public class AminoAbbreviation
+{
+    public string Short { get; set; }
+    public string Long { get; set; }
+}
+
+public class AminoWeight
+{
+    public double Molecular { get; set; }
+    public double Residue { get; set; }
+}
+```
+
 For example, in order to display the weights of a given amino acid in the grid the following snippet will suffice
 
 ```html
 <igx-column field="weight.molecular"></igx-column>
 <igx-column field="weight.residue"></igx-column>
 ```
+
 ```html
 <igc-column field="weight.molecular"></igc-column>
 <igc-column field="weight.residue"></igc-column>
+```
+
+```razor
+<IgbColumn Field="Weight.Molecular" />
+<IgbColumn Field="Weight.Residue" />
 ```
 
 <!-- Angular -->
@@ -905,6 +1097,32 @@ public getName(rowId: number){
 }
 public getWeight(rowId: number){
     //row.data['weight']['molecular']
+}
+```
+
+```razor
+<IgbColumn Field="Abbreviation.Long" BodyTemplateScript="AbbreviationLongCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div>
+            <div>
+                ${ctx.cell.value}
+                ${this.GetName(ctx.cell)}
+                ${this.GetWeight(ctx.cell)}
+            </div>
+        </div>
+    `;
+}, false);
+
+function GetName(value) {
+    
+}
+
+function GetWeight(value) {
+
 }
 ```
 
