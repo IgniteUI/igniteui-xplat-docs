@@ -1,5 +1,5 @@
 ---
-title: {Platform} Stepper Component - {Product Name}
+title: {Platform} Stepper Component - {ProductName}
 _description: {Platform} Stepper component is used to visualize content as a process and to show its progress by dividing the content into logical steps. Try it for FREE.
 _keywords: {Platform} Stepper, {ProductName}, Infragistics
 mentionedTypes: ['Stepper']
@@ -10,7 +10,7 @@ The {Platform} Stepper Component provides a wizard-like workflow and is used for
 
 ## {Platform} Stepper Example
 
-The following {Product Name} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps. 
+The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps. 
 
 <code-view style="height: 725px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -55,7 +55,7 @@ Steps can be declared using one of the following approaches.
     ${stepsData.map((step) => html`
     <igc-step .disabled=${step.disabled}>
         <div slot="indicator">
-			<igc-icon .iconName=${step.indicator}></igc-icon>
+            <igc-icon .iconName=${step.indicator}></igc-icon>
         </div>
 
         <p slot="title">${step.title}</p>	
