@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Dialog | Infragistics
-_description: With $ProductName$ Dialog component, developers can easily integrate a dialog window centered on top of app content.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Dialog components
+title: {Platform} Dialog | Infragistics
+_description: With {ProductName} Dialog component, developers can easily integrate a dialog window centered on top of app content.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Dialog components
 mentionedTypes: ['Dialog']
 ---
 
-# $Platform$ Dialog
+# {Platform} Dialog
 
-The $ProductName$ Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog. 
+The {ProductName} Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog. 
 
-## $ProductName$ Dialog Example
+## {ProductName} Dialog Example
 
 This sample demonstrates how to create a Dialog component.
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="$Platform$ Dialog Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="{Platform} Dialog Example"
            github-src="notifications/dialog/overview">
 </code-view>
 
@@ -24,7 +24,7 @@ This sample demonstrates how to create a Dialog component.
 ### Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -63,7 +63,7 @@ Use the `closeOnOutsideClick` property to configure if the dialog should be clos
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="$Platform$ Dialog Closing Variations"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="{Platform} Dialog Closing Variations"
            github-src="notifications/dialog/closing-variations">
 </code-view>
 
@@ -73,7 +73,7 @@ Form elements can close a Dialog if they have the attribute `method="dialog"`. S
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="$Platform$ Dialog Form Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="{Platform} Dialog Form Example"
            github-src="notifications/dialog/form">
 </code-view>
 
@@ -96,7 +96,7 @@ igc-dialog::part(footer) {
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="$Platform$ Dialog Styling Example"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="{Platform} Dialog Styling Example"
            github-src="notifications/dialog/styling">
 </code-view>
 
