@@ -22,6 +22,8 @@
     "names":[{"platform":"React","fileName":"igr-on-popup-event-args.ts","mappedName":"IgrOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"OnClosedEventArgs",
     "names":[{"platform":"React","fileName":"igr-on-closed-event-args.ts","mappedName":"IgrOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionButton",
+    "names":[{"platform":"React","fileName":"igr-tool-action-button.ts","dynamicModuleName":"igr-tool-action-button-dynamic-module.ts","moduleName":"igr-tool-action-button-module.ts","mappedName":"IgrToolActionButton"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionLabel",
     "names":[{"platform":"React","fileName":"igr-tool-action-label.ts","dynamicModuleName":"igr-tool-action-label-dynamic-module.ts","moduleName":"igr-tool-action-label-module.ts","mappedName":"IgrToolActionLabel"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionRadio",
