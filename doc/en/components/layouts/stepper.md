@@ -14,7 +14,7 @@ The following {ProductName} Stepper Example below shows the component in action.
 
 <code-view style="height: 725px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
            alt="{Platform} Stepper Example"
            github-src="layouts/stepper/overview">
 </code-view>
@@ -114,9 +114,9 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 <code-view style="height: 528px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-title-position-and-orientation-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
            alt="{Platform} Stepper Orientation Example"
-           github-src="layouts/stepper/title-position-and-orientation-example">
+           github-src="layouts/stepper/orientation">
 </code-view>
 
 <div class="divider--half"></div>
@@ -144,9 +144,9 @@ The following example demonstrates how to configure a linear stepper:
 
 <code-view style="height: 430px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
            alt="{Platform} Linear Stepper Example"
-           github-src="layouts/stepper/linear-example">
+           github-src="layouts/stepper/linear">
 </code-view>
 
 <div class="divider--half"></div>
@@ -209,7 +209,7 @@ The sample below demonstrates all exposed step types and how they could be chang
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
            alt="{Platform} Step Types Example"
            github-src="layouts/stepper/steptypes">
 </code-view>
