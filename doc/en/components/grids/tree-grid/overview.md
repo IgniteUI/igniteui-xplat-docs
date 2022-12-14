@@ -202,7 +202,7 @@ In addition, we can disable the automatic column generation and define them manu
 We can now enable the row selection and paging features of the tree grid by using the `rowSelection` and the `paging` properties.
 We can also enable the summaries, the filtering, sorting, editing, moving and resizing features for each of our columns.
 
-Finally, we can enable the toolbar of our tree grid, along with the column hiding, column pinning and exporting features by using the `GridToolbarComponent`, `GridToolbarHidingComponent`, `GridToolbarPinningComponent` and `GridToolbarExporterComponent` respectively.
+Finally, we can enable the toolbar of our tree grid, along with the column hiding, column pinning and exporting features by using the `GridToolbar`, `GridToolbarHiding`, `GridToolbarPinning` and `GridToolbarExporter` respectively.
 
 ### Primary and Foreign keys
 When we are using the **primary and foreign keys** option, every data object contains a primary key and a foreign key. The primary key is the unique identifier of the current data object and the foreign key is the unique identifier of its parent. In this case the `data` property of our tree grid that contains the original data source will be a flat collection.
@@ -256,6 +256,14 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 }
 ```
 <!-- end: WebComponents -->
+
+
+## API References
+
+* `{TreeGridName}`
+* `Column`
+* `GridToolbar`
+* `TreeGridRecord`
 
 ## Additional Resources
 

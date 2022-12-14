@@ -143,7 +143,7 @@ constructor() {
 }
 ```
 
-The `id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.
+The `Id` property is a string value and is the unique identifier of the grid which will be auto-generated if not provided, while `data` binds the grid, in this case to local data.
 
 The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
@@ -159,7 +159,7 @@ Following this topic you will learn more about [cell template](overview.md#cell-
 
 ## Grid Column Configuration
 
-`Column` is used to define the grid's `Columns` collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
+`Column` is used to define the grid's columns collection and to enable features per column like **sorting** and **filtering**. Cell, header, and footer templates are also available.
 
 ### Defining Columns
 
@@ -209,7 +209,7 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 Each of the columns of the grid can be templated separately. The column expects `ng-template` Angular grid module directives.
 
-It also expose `additionalTemplateContext` input that can be used for custom properties and any type of data context that you want to pass to the column itself:
+It also expose `AdditionalTemplateContext` input that can be used for custom properties and any type of data context that you want to pass to the column itself:
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -254,11 +254,11 @@ constructor() {
 
 public nameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
-        ${this.formattUppercase(ctx.column.field)}
+        ${this.formatUppercase(ctx.column.field)}
     `;
 }
 
-public formattUppercase(value: string) {
+public formatUppercase(value: string) {
     return value.toUpperCase();
 }
 ```
@@ -550,7 +550,7 @@ There are optional parameters for formatting:
 
 - `Format` - determines what date/time parts are displayed, defaults to `'mediumDate'`, equivalent to **'MMM d, y'**
 - `Timezone` - the timezone offset for dates. By default uses the end-user's local system timezone
-- `DigitsInfo` - decimal representation objects. Default to `'1.0-3'`
+- `DigitsInfo` - decimal representation objects. Default to **1.0-3**
 
 To allow customizing the display format by these parameters, the `PipeArgs` input is exposed. A column will respect only the corresponding properties for its data type, if `PipeArgs` is set. Example:
 <!-- Angular -->
@@ -1317,9 +1317,12 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 ## API References
 
 * `{GridName}`
-* `IgbColumn`
+* `Column`
+* `Cell`
+* `CellTemplateContext`
 * `GridRow`
-* `GridCell`
+* `GridToolbar`
+* `Paginator`
 
 <!-- Angular -->
 

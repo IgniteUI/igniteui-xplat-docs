@@ -473,8 +473,10 @@ Using above code will result in the following example which groups the Product C
 ## API References
 
 * `{PivotGridName}`
-* `PivotDataSelectorComponent`
-
+* `PivotConfiguration`
+* `PivotDataSelector`
+* `PivotDateDimension`
+* `Column`
 
 <!-- ## Additional Resources -->
 
