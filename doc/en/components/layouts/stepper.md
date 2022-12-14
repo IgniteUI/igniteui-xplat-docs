@@ -44,7 +44,7 @@ defineComponents(IgcStepperComponent);
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
 ## How To Use {Platform} Stepper
-The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `invalid`, `active`, `optional`, `disabled` and `complete` properties, which give you the ability to configure the step states according to your business requirement.
+The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Invalid`, `Active`, `Optional`, `Disabled` and `Complete` properties, which give you the ability to configure the step states according to your business requirement.
 
 ### Declaring a {Platform} Stepper
 Steps can be declared using one of the following approaches.
@@ -76,10 +76,10 @@ Steps can be declared using one of the following approaches.
     </igc-step>
 </igc-stepper>
 ```
-For each step the user has the ability to configure indicator, title and subtitle using the `indicator`, `title` and `subtitle` slots as follows: 
+For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows: 
 
 > [!NOTE]
-> The `default` `Step` slot renders the content of the step.
+> The `Default` `Step` slot renders the content of the step.
 
 ```html
 <igc-stepper>
@@ -97,18 +97,18 @@ For each step the user has the ability to configure indicator, title and subtitl
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
 ### Changing the {Platform} Stepper Orientation
-You can customize the stepper orientation through the exposed `orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
+You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
 
 **Horizontal {Platform} Stepper Orientation**
 
 *horizontal* is the default value for the `Stepper` orientation property.
-When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `contentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
+When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
 **Vertical {Platform} Stepper Orientation**
 
-You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `orientation` property to *vertical*.
+You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to *vertical*.
 
 The sample below demonstrates how stepper orientation and titles position could be changed runtime. 
 
@@ -131,7 +131,7 @@ The sample below demonstrates how stepper orientation and titles position could 
 
 ### Linear {Platform} Stepper
 
-The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
+The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
 
 When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one. 
 
@@ -166,7 +166,7 @@ The following example demonstrates how to configure a linear stepper:
 
 The {ProductName} Stepper gives you the ability to configure different options for titles, indicators and more.
 
-This could be achieved through the `stepType` property of the `Stepper`. It takes the following values:
+This could be achieved through the `StepType` property of the `Stepper`. It takes the following values:
 - Full *(default value)*
 - Indicator
 - Title
@@ -176,7 +176,7 @@ This could be achieved through the `stepType` property of the `Stepper`. It take
 If titles and subtitles are defined, with this setup both indicators and titles would be rendered.
 
 The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
-The user can configure the title position using the `titlePosition` property. It takes the following values:
+The user can configure the title position using the `TitlePosition` property. It takes the following values:
 - undefined *(default value)*
 - end
 - start
