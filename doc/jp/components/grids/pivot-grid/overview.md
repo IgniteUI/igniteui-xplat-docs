@@ -470,8 +470,12 @@ public PivotSalesData()
 <!-- end: Angular -->
 
 ## API リファレンス
+
 * `{PivotGridName}`
-* `PivotDataSelectorComponent`
+* `PivotConfiguration`
+* `PivotDataSelector`
+* `PivotDateDimension`
+* `Column`
 
 
 <!-- ## その他のリソース

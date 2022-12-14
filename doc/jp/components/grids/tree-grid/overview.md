@@ -86,7 +86,14 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 `rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にします。
 最初の列に集計機能、各列にはフィルタリング、ソート、編集、サイズ変更機能を有効にします。
 
-最後に、`GridToolbarComponent`、`GridToolbarHidingComponent`、`GridToolbarPinningComponent`、`GridToolbarExporterComponent` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
+最後に、`GridToolbar`、`GridToolbarHiding`、`GridToolbarPinning`、`GridToolbarExporter` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
+
+## API References
+
+* `{TreeGridName}`
+* `Column`
+* `GridToolbar`
+* `TreeGridRecord`
 
 ### プライマリと外部キー
 **プライマリと外部キー**オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。

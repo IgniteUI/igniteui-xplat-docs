@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} ツールバー
 
-{ProductName} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbarComponent` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
+{ProductName} の `{ComponentName}` は、**UI** 操作のコンテナとなる `GridToolbar` 機能をサポートします。{Platform} ツールバーは {Platform} コンポーネントの一番上、つまり `{ComponentName}` にあり、水平方向のサイズと一致します。ツールバー コンテナは、次の `{ComponentName}` の機能、またはその他のカスタム コンテンツ用に事前定義された UI コントロールをホストできます:
 
  - 列の非表示
  - 列のピン固定
@@ -755,10 +755,10 @@ $dark-input-group-theme: input-group-theme(
 
 * `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
-* `GridToolbarComponent`
-* `GridToolbarExporterComponent`
-* `GridToolbarHidingComponent`
-* `GridToolbarPinningComponent`
+* `GridToolbar`
+* `GridToolbarExporter`
+* `GridToolbarHiding`
+* `GridToolbarPinning`
 * `GridToolbarTitleDirective`
 
 
