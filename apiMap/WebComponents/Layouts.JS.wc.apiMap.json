@@ -22,6 +22,8 @@
     "names":[{"platform":"WebComponents","fileName":"igc-on-popup-event-args.ts","mappedName":"IgcOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"OnClosedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-on-closed-event-args.ts","mappedName":"IgcOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionButton",
+    "names":[{"platform":"WebComponents","fileName":"igc-tool-action-button-component.ts","dynamicModuleName":"igc-tool-action-button-dynamic-module.ts","moduleName":"igc-tool-action-button-module.ts","mappedName":"IgcToolActionButtonComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionLabel",
     "names":[{"platform":"WebComponents","fileName":"igc-tool-action-label-component.ts","dynamicModuleName":"igc-tool-action-label-dynamic-module.ts","moduleName":"igc-tool-action-label-module.ts","mappedName":"IgcToolActionLabelComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionRadio",

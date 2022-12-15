@@ -13,7 +13,7 @@ _language: ja
 
 ## {ComponentTitle} 条件付き行のスタイル設定
 
-Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、カスタム ルールに基づいて**行の条件付きスタイル設定**を作成する次の 2 つの方法を提供します:
+{ProductName} の `{ComponentName}` コンポーネントは、カスタム ルールに基づいて**行の条件付きスタイル設定**を作成する次の 2 つの方法を提供します:
 
 - `{ComponentName}` コンポーネントで `RowClasses` 入力を設定する方法。
 - `{ComponentName}` コンポーネントで `RowStyles` 入力を設定する方法。
@@ -24,10 +24,12 @@ Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、カス
 
 `{ComponentName}` 行の条件付きスタイル設定は、`RowClasses` 入力を設定してカスタム条件を定義するころによりスタイル設定できます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [height]="'600px'" [width]="'100%'" [rowClasses]="rowClasses">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowClassesScript="RowClassesHandler" @ref="grid">
@@ -302,7 +304,7 @@ constructor() {
 - `Column` 入力 `CellClasses` をキーと値のペアを含むオブジェクト リテラルに設定します。キーは CSS クラスの名前です。値はブール値を返すコールバック関数またはブール値です。その結果、セルのマテリアル スタイル設定が簡単にできます。
 
 ### CellClasses の使用
-`Column` `CellClasses` 入力を設定してカスタム条件を定義することにより、{ComponentName} の条件付きセルのスタイルを設定できます。
+`Column` `CellClasses` 入力を設定してカスタム条件を定義することにより、`{ComponentName}` の条件付きセルのスタイルを設定できます。
 
 <!-- ComponentStart: Grid -->
 
@@ -517,7 +519,7 @@ Add hierarchical grid example
 
 [上記のサンプル](#デモ)で作成した項目:
 - 列インデックスに基づいて適用される 2 つの異なるスタイル。
-- また、偶数/奇数行に基づいて`テキストの色`を変更します。
+- また、偶数/奇数行に基づいて**テキストの色**を変更します。
 
 
 次にスタイルを定義します。
@@ -711,7 +713,7 @@ constructor() {
 
 - 他の列に同じ条件でバインドされたセルがある場合に、そのうち 1 つのセルが更新された際に条件が満たされている場合も、他のセルが新しい値に基づいて更新されない問題。
 
-残りのセルに変更を適用するには、パイプ チェックを実行する必要があります。以下の例は、`OnCellEdit` イベントで`スプレッド演算` ... を使用してチェックを実行する方法を示します。これにより、元のオブジェクトが新しいインスタンスでコピーされ、パイプのみ発生します。
+残りのセルに変更を適用するには、パイプ チェックを実行する必要があります。以下の例は、`OnCellEdit` イベントで**スプレッド演算** ... を使用してチェックを実行する方法を示します。これにより、元のオブジェクトが新しいインスタンスでコピーされ、パイプのみ発生します。
 
 ```ts
 public backgroundClasses = {
@@ -787,5 +789,5 @@ constructor() {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

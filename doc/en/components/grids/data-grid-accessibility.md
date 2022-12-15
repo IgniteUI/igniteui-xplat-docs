@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Real-Time Data Grid and Tables | Accessibility Compliance | Infragistics
 _description: Use Infragistics' {ProductName} Data Table & Grid to support accessibility feature that will enable screen readers to read "speak" keyboard navigation interactions through the cells and columns of the grid. View {ProductName} table tutorials!
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

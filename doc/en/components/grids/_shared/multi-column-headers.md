@@ -1,8 +1,8 @@
 ---
 title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
-_description: Start grouping column headers by placing them under a common hierarchical header with the help of Ignite UI for {Platform} grid and combine them into multi headers.
+_description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Multi-Column Headers, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
@@ -499,7 +499,7 @@ The last step is to **include** the component mixins:
 ```
 
 >[!NOTE]
- >If the component is using an [Emulated](../themes/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
 :host {
@@ -615,5 +615,5 @@ import 'core-js/es7/array';
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

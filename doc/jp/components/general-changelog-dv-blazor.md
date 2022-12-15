@@ -3,12 +3,19 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
+
+## **{PackageVerChanges-22-2.50}**
+
+### 新しいコンポーネント
+
+* [ピボット グリッド](grids/pivot-grid/overview.md)
+* .NET 7.0
 
 ## **{PackageVerChanges-22-2}**
 
@@ -19,11 +26,12 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageCharts}
 
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。  
+デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
-これらの新しいチャートの改善点は次のとおりです: 
+これらの新しいチャートの改善点は次のとおりです:
 
-* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。 
+* ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
+* すべてのプラットフォームでの丸型ラベルの描画が強化されました。
 * StackedFragmentSeries にマーカー プロパティを追加しました。
 * `ShouldPanOnMaximumZoom` プロパティを追加しました。
 * 新しいカテゴリ軸プロパティ:
@@ -32,7 +40,7 @@ namespace: Infragistics.Controls.Charts
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -102,13 +110,13 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids}
 
-- `ValueField` プロパティを string[] 型から string に変更しました。 
+- `ValueField` プロパティを string[] 型から string に変更しました。
 
 ### {PackageInputs}
 
 - 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
-#### Date Picker 
+#### Date Picker
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
 
 #### 複数列コンボボックス

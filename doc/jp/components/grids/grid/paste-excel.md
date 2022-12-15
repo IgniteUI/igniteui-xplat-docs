@@ -1,14 +1,14 @@
 ---
 title: {Platform} Excel スタイルの {ComponentTitle} - インフラジスティックス
 _description: API を使用して最小限のコードで Excel からのデータ貼り付けや選択した {Platform} グリッド データを簡単にエクスポートできます。
-_keywords: export selected, igniteui for {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+_keywords: export selected, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 選択のエクスポート, インフラジスティックス
+mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
 # {Platform} Grid Excel から貼り付け
 
-Ignite UI for {Platform} `Grid` は、クリップボードにコピーした Excel データを読み込むことができます。このトピックでは、カスタムコードを使用して実装する方法について説明します。
+{ProductName} `Grid` は、クリップボードにコピーした Excel データを読み込むことができます。このトピックでは、カスタムコードを使用して実装する方法について説明します。
 
 ## {Platform} Excel から貼り付けの例
 
@@ -231,5 +231,5 @@ export class PasteHandler {
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

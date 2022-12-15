@@ -1,6 +1,6 @@
 ---
 title: {Platform} Input | Data Visualization Tools | Infragistics
-_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with Ignite UI for {Platform}!
+_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with {ProductName}!
 _keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['Input', 'Icon', 'Radio']
 ---

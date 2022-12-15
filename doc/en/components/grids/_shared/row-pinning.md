@@ -1,14 +1,14 @@
 ---
 title: Row Pinning in {Platform} {ComponentTitle} - Infragistics
 _description: Use the {Platform} Row pinning feature to lock rows with a rich and easy to use API. Let users pin rows in a particular order or duplicate them in a special area.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Row Pinning
 
-One or multiple rows can be pinned to the top or bottom of the {Platform} UI Grid. **Row Pinning** in {ProductName} allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
+In the {Platform} `{ComponentName}`, you can pin one or multiple rows to the top or bottom of grid. **Row Pinning** allows end-users to pin rows in a particular order, duplicating them in a special area that is always visible even when they scroll the `{ComponentName}` vertically. The Material UI Grid has a built-in row pinning UI, which is enabled by initializing an `ActionStrip` component in the context of `{ComponentName}`. In addition, you can define custom UI and change the pin state of the rows via the Row Pinning API.
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
@@ -385,7 +385,7 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 ## Styling
 
-The {ComponentName} allows styling through the [{ProductName} Theme Library](../themes/sass/component-themes.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
+The `{ComponentName}` allows styling through the [{ProductName} Theme Library](../themes/styles.md). The {ComponentTitle}'s [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide variety of properties, which allow the customization of all the features of the {ComponentTitle}.
 
 Below, we are going through the steps of customizing the {ComponentTitle}'s row pinning styling.
 
@@ -427,7 +427,7 @@ The last step is to pass the custom grid theme:
 
 In order to style components for Internet Explorer 11, you have to use different approach, since it doesn't support CSS variables.
 
-If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
+If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. However, in order to prevent the custom theme to leak to other components, be sure to include the `:host` selector before `::ng-deep`:
 
 ```scss
 :host {

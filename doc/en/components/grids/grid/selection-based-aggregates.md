@@ -1,8 +1,8 @@
 ---
-title: {Platform} Grid Selection-Based Data Aggregation- Ignite UI for {Platform}
+title: {Platform} Grid Selection-Based Data Aggregation- {ProductName}
 _description: Learn how to aggregate selected data in a grid with Ignite UI. Get instant content aggregations in the virtualized data and rich API for your next project.
-_keywords: Data aggregation, selection, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics {Platform}, infragistics
-mentionedTypes: [{ComponentApiMembers}]
+_keywords: Data aggregation, selection, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics {Platform}, infragistics
+mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} Grid Selection-Based Data Aggregation
@@ -35,7 +35,7 @@ const dates = data.filter(rec => isDate(rec));
 
 After having the data types grouped accordingly, you can proceed to the aggregation itself. For that reason, you could use the already exposed methods of the `NumberSummaryOperand` and `DateSummaryOperand`.
 After that, you'd have to put the aggregated data in the same array, which would be returned to the template.
-For the visualization of the data, you might want to use the `<-grid-footer>`, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
+For the visualization of the data, you might want to use the grid footer, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
 
 <!-- Angular -->
 
@@ -71,5 +71,5 @@ Change the selection to see summaries of the currently selected range.
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

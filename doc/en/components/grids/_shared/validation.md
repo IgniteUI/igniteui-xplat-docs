@@ -1,13 +1,13 @@
 ---
 title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform} validation, ignite ui for {Platform}, infragistics,
+_keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
 ---
 
 # {Platform} {ComponentTitle} Editing and Validation
 
-The `{ComponentName}`'s editing exposes a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
+The `{ComponentName}` provides editing that has a built-in validation mechanism of user input when editing cells/rows. It extends the form validation functionality to allow easier integration with a well known functionality. When the state of the editor changes, visual indicators are applied to the edited cell.
 
 ## Configuration
 
@@ -534,7 +534,7 @@ The below sample demonstrates the cross-field validation in action.
 
 ## Styling
 
-Using the [Ignite UI for {Platform} Theme Library](../themes/index.md), we can alter the default validation styles while editing.
+Using the [{ProductName} Theme Library](../themes/index.md), we can alter the default validation styles while editing.
 
 In the example below, we will make use of the exposed template for validation message, which pops out in a tooltip and overriding the error color to modify the default looks of the validation.
 We will also style the background of the invalid rows to make them more distinct.
@@ -542,12 +542,12 @@ We will also style the background of the invalid rows to make them more distinct
 ### Import theme
 
 The easiest way to style and access css variables is to define styles in our `app`'s global style file (typically `styles.scss`).
-The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the Ignite UI for {Platform} Sass framework:
+The first thing we need to do is import the `themes/index` file - this gives us access to all the powerful tools of the {ProductName} Sass framework:
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -686,5 +686,5 @@ public cellStyles = {
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

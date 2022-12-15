@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Toolbar
 
-The `{ComponentName}` in {ProductName} for {Platform} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
+The `{ComponentName}` in {ProductName} provides an `GridToolbar` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
 
  - Column Hiding
  - Column Pinning
@@ -201,7 +201,7 @@ The toolbar is great at separating logic/interactions which affects the grid as 
 
 As shown above, it can be configured to provide default components for controlling, column hiding, column pinning, advanced filtering and exporting data from the grid.
 
-These features can be enabled independently from each other by following a pattern similar to the card component of the Ignite UI for {Platform} suite.
+These features can be enabled independently from each other by following a pattern similar to the card component of the {ProductName} suite.
 
 Listed below are the main features of the toolbar with example code for each of them.
 
@@ -639,7 +639,7 @@ To get started with styling the toolbar, we need to import the index file, where
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to {ProductName} for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -723,7 +723,7 @@ The last step is to **include** the newly created themes.
 ```
 
 >[!NOTE]
->If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+>If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -757,10 +757,10 @@ The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
 * `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
-* `GridToolbarComponent`
-* `GridToolbarExporterComponent`
-* `GridToolbarHidingComponent`
-* `GridToolbarPinningComponent`
+* `GridToolbar`
+* `GridToolbarExporter`
+* `GridToolbarHiding`
+* `GridToolbarPinning`
 * `GridToolbarTitleDirective`
 
 
@@ -781,5 +781,5 @@ Styles:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

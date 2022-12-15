@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の縮小可能な列グループ - インフラジスティックス
 _description: {Platform} {ComponentTitle} の縮小可能な列グループを使用して、より小さく簡潔なデータのセットを表示/非表示にする機能を利用します。今すぐお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -21,7 +21,7 @@ _language: ja
 
 ## 設定
 
-`{ComponentName}` および**縮小可能な複数列ヘッダー**を使用するには、まず以下のコマンドを入力して、Ignite UI for {Platform} をインストールする必要があります。
+`{ComponentName}` および**縮小可能な複数列ヘッダー**を使用するには、まず以下のコマンドを入力して、{ProductName} をインストールする必要があります。
 
 <!-- Angular -->
 ```cmd
@@ -41,7 +41,7 @@ npm install @webcomponents/custom-elements
 ```
 <!-- end: WebComponents -->
 
-Ignite UI for {Platform} については、[はじめに](../../general-getting-started.md) トピックををご覧ください。
+{ProductName} については、[はじめに](../../general-getting-started.md) トピックををご覧ください。
 
 そのため、[複数列ヘッダー](multi-column-headers.md)のトピックを簡単に確認することを強くお勧めします。グリッドで列グループを設定する方法の詳細情報を参照してください。
 
@@ -256,5 +256,5 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

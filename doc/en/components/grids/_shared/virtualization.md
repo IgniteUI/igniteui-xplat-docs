@@ -1,7 +1,7 @@
 ---
-title: {Platform} {ComponentTitle} Virtualization and Performance - Ignite UI for {Platform}
-_description: The Ignite UI for {Platform} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
-_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform}
+title: {Platform} {ComponentTitle} Virtualization and Performance - {ProductName}
+_description: The {ProductName} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
+_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentTitle}, 'Virtualization']
@@ -10,7 +10,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Virtualization and Performance
 
-In Ignite UI for {Platform}, the `{ComponentName}` control now utilizes the `igxForOf` directive and virtualizes its content both vertically and horizontally.
+In {ProductName}, the `{ComponentName}` control now utilizes the `ForOf` directive and virtualizes its content both vertically and horizontally.
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
@@ -56,7 +56,7 @@ Without information about the sizes of the container and the items before render
 
 ## API References
 
-* `Grid`
+* `{ComponentName}`
 * `Column`
 
 ## Additional Resources

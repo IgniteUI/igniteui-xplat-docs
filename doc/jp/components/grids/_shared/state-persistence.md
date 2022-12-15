@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} 状態保持 - {ProductName}
-_description: 包括的な Ignite UI for {Platform} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
+_description: 包括的な {ProductName} のツールセットを使用して、グリッドの状態を簡単に保存および復元できます。列の復元、使用方法、デモをご覧ください。
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の永続化, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
@@ -17,17 +17,17 @@ _language: ja
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **Advanced Filtering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **GroupBy**
+* **Columns**
     * **新規**: 複数列ヘッダーが標準でサポートされるようになりました。
     * 列の順序
     * `IColumnState` インターフェイスによって定義される列プロパティ。
@@ -347,7 +347,7 @@ public onColumnInit(column: IgcColumnComponent) {
 
 ## ピボット構成の復元
 
-`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。{ComponentName} は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
+`GridState` は、デフォルトではピボット ディメンション関数、値フォーマッターなどを保持しません ([制限](state-persistence.md#制限)を参照)。これらの復元は、アプリケーション レベルのコードで実現できます。`{ComponentName}` は、構成に含まれるカスタム関数を戻すために使用できる 2 つのイベント (`DimensionInit` と `ValueInit`) を公開します。以下はその方法です。
 
 * `DimensionInit` および `ValueInit` イベントのイベント ハンドラーを割り当てます。
 

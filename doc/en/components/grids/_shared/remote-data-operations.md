@@ -1,13 +1,13 @@
 ---
 title: Remote Data Operations in {Platform} {ComponentTitle} - Infragistics
-_description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with Ignite UI for {Platform}.
+_description: Start using Angular remote data operations like remote filtering, remote sorting, and remote scrolling to load data from a server with {ProductName}.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Remote Data, Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Remote Data Operations
 
-The Ignite UI for {Platform} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
+The {ProductName} `{ComponentName}` supports remote data operations such as remote virtualization, remote sorting, remote filtering and others. This allows the developer to perform these tasks on a server, retrieve the data that is produced and display it in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Remote Data Operations Overview Example
 
@@ -969,5 +969,5 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

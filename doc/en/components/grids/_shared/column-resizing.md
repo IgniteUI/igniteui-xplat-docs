@@ -1,14 +1,14 @@
 ---
 title: {Platform} {ComponentTitle} Column Resizing - {ProductName}
 _description: Start using {Platform} {ComponentTitle} Column Resizing in order to change the grid column width in an instant. {Platform} drag resizing has never been so easy. Try for free!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
 
-With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. The new grid column width is applied once the drag operation has ended.
+With deferred grid column resizing, the user will see a temporary resize indicator while the {Platform} drag resizing operation is in effect. In the `{ComponentName}`, new column width is applied once the drag operation has ended.
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
@@ -442,7 +442,7 @@ $custom-grid-theme: grid-theme(
 
 ```
  >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
 
 ```scss
 :host {

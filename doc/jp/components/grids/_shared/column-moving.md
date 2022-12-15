@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の列の並べ替えと移動 - インフラジスティックス
 _description: カスタム列順序を設定し、マウスのドラッグ/ドロップまたはタッチジェスチャ、または {Platform} Column Moving API を使用して列の並べ替えを有効にします。{ProductName} を今すぐお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -40,7 +40,7 @@ _language: ja
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>   
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
     `;
 }
 ```

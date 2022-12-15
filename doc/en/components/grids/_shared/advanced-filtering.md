@@ -29,7 +29,7 @@ In order to add a filtering condition, you have to select any of the `Filterable
 
 If you select more than one filtering condition chip, a context menu appears with options to create a group or delete the filters. If you choose to create a group with the selected conditions, the newly created group will appear where the topmost selected condition was placed.
 
-In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition `**AND** or **OR**. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
+In order to select a group, you can also click on its vertical line, which is colored based on the the linking condition **AND** or **OR**. If a single group is selected, you get a context menu with options to change its filtering logic, ungroup or delete it.
 
 In order to filter the data once you are ready with creating the filtering conditions and groups, you should click the **Apply** button. If you have modified the advanced filter, but you don't want to preserve the changes, you should click the **Cancel** button. You could also clear the advanced filter by clicking the **Clear Filter** button.
 
@@ -256,7 +256,7 @@ igx-advanced-filtering-dialog {
 >We scope most of the components' mixins within `igx-advanced-filtering-dialog`, so that these custom themes will affect only components nested in the advanced filtering dialog. Otherwise, other buttons, chips, inputs and dropdowns in the application would be affected too.
 
 >[!NOTE]
->If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+>If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -489,5 +489,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLower})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLower})

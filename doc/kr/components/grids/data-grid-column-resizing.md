@@ -3,7 +3,7 @@ title: {Platform} Data Grid | Table Controls | {ProductName} | Column Types | In
 _description: The {ProductName} Table / Grid component simplifies the complexities of the grid domain into manageable API so that a user can bind a collection of data.
 _keywords: grid, table, {ProductName}, Infragistics
 _language: kr
-mentionedTypes: ['CellInfo', 'TemplateCellInfo', 'Column', 'XamDataGrid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Infragistics.Controls.Grid.Implementation.Column']
 ---
 
 # {Platform} Column Resizing

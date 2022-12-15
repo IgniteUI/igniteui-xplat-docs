@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} State Persistence
 
-Тhe `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the grid, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
+The `GridState` directive allows developers to easily save and restore the grid state. When the `GridState` directive is applied on the {Platform} `{ComponentName}`, it exposes the `GetState` and `SetState` methods that developers can use to achieve state persistence in any scenario.
 
 ## Supported Features
 
@@ -16,17 +16,17 @@ sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 
 <!-- ComponentStart: Grid, TreeGrid -->
 
-* `Sorting`
-* `Filtering`
-* `Advanced Filtering`
-* `Paging`
-* `CellSelection`
-* `RowSelection`
-* `ColumnSelection`
-* `RowPinning`
-* `Expansion`
-* `GroupBy`
-* `Columns`
+* **Sorting**
+* **Filtering**
+* **Advanced Filtering**
+* **Paging**
+* **CellSelection**
+* **RowSelection**
+* **ColumnSelection**
+* **RowPinning**
+* **Expansion**
+* **GroupBy**
+* **Columns**
     * **NEW**: Multi column headers are now supported out of the box
     * Columns order
     * Column properties defined by the `IColumnState` interface.
@@ -346,7 +346,7 @@ public onColumnInit(column: IgcColumnComponent) {
 
 ## Restoring Pivot Configuration
 
-`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The {ComponentName} exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
+`GridState` will not persist pivot dimension functions, value formatters, etc. by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `{ComponentName}` exposes two events which can be used to set back any custom functions you have in the configuration: `DimensionInit` and `ValueInit`. Let's show how to do this:
 
 * Assign event handlers for the `DimensionInit` and `ValueInit` events:
 

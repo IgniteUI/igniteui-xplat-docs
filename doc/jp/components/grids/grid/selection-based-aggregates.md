@@ -1,8 +1,8 @@
 ---
-title: {Platform} Grid の選択ベースのデータ集計 - Ignite UI for {Platform}
+title: {Platform} Grid の選択ベースのデータ集計 - {ProductName}
 _description: Ignite UI を使用して選択したデータをグリッドに集計する方法を説明します。次のプロジェクトのために仮想化データと豊富な API でコンテンツを即時に集計します。
-_keywords: Data aggregation, selection, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics {Platform}, infragistics, データ集計, 選択, インフラジスティックス
-mentionedTypes: [{ComponentApiMembers}]
+_keywords: Data aggregation, selection, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics {Platform}, infragistics, データ集計, 選択, インフラジスティックス
+mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
@@ -72,5 +72,5 @@ const dates = data.filter(rec => isDate(rec));
 <div class="divider--half"></div>
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

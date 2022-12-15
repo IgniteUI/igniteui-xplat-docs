@@ -1,14 +1,14 @@
 ---
 title: {Platform} {ComponentTitle} Column Selection - Infragistics
 _description: Learn how to configure column selection with {ProductName} {ComponentTitle}. This makes grid interactions much easier and faster than ever.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, column selection
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Column Selection Overview
 
-The Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
+In the `{ComponentName}`, Column Selection feature provides an easy way to select an entire column with a single click. It emphasizes the importance of a particular column by focusing the header cell(s) and everything below. The feature comes with a rich API that allows for manipulation of the selection state, data extraction from the selected fractions and data analysis operations and visualizations.
 
 ## {Platform} {ComponentTitle} Column Selection Example
 
@@ -47,7 +47,7 @@ The column selection feature can be enabled through the `ColumnSelection` input,
 The default selection mode is `None`. If set to `Single` or `Multiple`, all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
 > [!NOTE]
-> [Multi-column Headers](multi-column-headers.md) don't reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
+> The [Multi Column Headers](multi-column-headers.md) feature does not reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
 
 <!-- ComponentStart: Grid -->
 
@@ -174,7 +174,7 @@ TO DO
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
 >[!NOTE]
->If the component is using the [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
+>If the component is using the [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
 
 ```scss
 :host {

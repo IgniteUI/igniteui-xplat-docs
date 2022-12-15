@@ -1,14 +1,14 @@
 ---
 title:  Row actions in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentName} provides the ability to use ActionStrip and utilize CRUD for row/cell components and row pinning.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # Row Actions in {Platform} {ComponentTitle}
 
-The `{ComponentName}` component in Ignite UI for {Platform} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
+The `{ComponentName}` component in {ProductName} provides the ability to use an `ActionStrip` and utilize CRUD for row/cell components and row pinning. The Action Strip component can host predefined UI controls for these operations.
 
 ## Usage
 
@@ -160,5 +160,5 @@ Additional components and/or directives that can be used within the Action Strip
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

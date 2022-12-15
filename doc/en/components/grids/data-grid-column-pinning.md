@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Column Pinning | Infragistics
 _description: See how Infragistics' {ProductName} grid component supports the ability to pin columns and gives you the flexibility over how you wish to position your columns. View {ProductName} table demos for more information!
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics
-mentionedTypes: ['Grid', 'PinnedPositions', 'PinColumn', 'Pinned', 'ColumnPinning', 'DataGridToolbar', 'Column']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.PinnedPositions', 'Infragistics.Controls.Grid.Implementation.PinColumn', 'Infragistics.Controls.Grid.Implementation.ColumnPinning', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

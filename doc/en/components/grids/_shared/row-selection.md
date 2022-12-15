@@ -1,14 +1,14 @@
 ---
 title: Row Selection in {Platform} {ComponentTitle} - Infragistics
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Row Selection
 
-With row selection in {ProductName}, there is row selector column that precedes all other columns within the row. When a user clicks on the row selector, the row will either become selected or deselected, enabling the user to select multiple rows of data.
+With row selection in {Platform} `{ComponentName}`, there is row selector column that precedes all other columns within the row. When a user clicks on the row selector, the row will either become selected or deselected, enabling the user to select multiple rows of data.
 
 ## {Platform} Row Selection Example
 
@@ -430,7 +430,7 @@ constructor() {
 
 You can template header and row selectors in the `{ComponentName}` and also access their contexts which provide useful functionality for different scenarios.
 
-By default, the `{ComponentName}` **handles all row selection interactions** on the row selector's parent container or on the row itself, leaving just the state visualization for the template. Overriding the base functionality should generally be done using the [RowSelectionChanging` event](#row-selection-event). In case you implement a custom template with a `Click` handler which overrides the base functionality, you should stop the event's propagation to preserve the correct row state.
+By default, the `{ComponentName}` **handles all row selection interactions** on the row selector's parent container or on the row itself, leaving just the state visualization for the template. Overriding the base functionality should generally be done using the [RowSelectionChanging event](#row-selection-event). In case you implement a custom template with a `Click` handler which overrides the base functionality, you should stop the event's propagation to preserve the correct row state.
 
 #### Row Template
 

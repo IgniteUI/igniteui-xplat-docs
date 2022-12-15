@@ -2,12 +2,12 @@
 title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
+mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} Grid Group By
 
-A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in `Grid` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
+A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in the `{GridName}` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
 
 ## {Platform} Grid Group By Example
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
@@ -55,10 +55,10 @@ Grouping expressions implement the `ISortingExpression` interface.
 Grouping is available through the UI and through a robust API exposed by the grid component. Developers can allow end-users to group the grid data by certain columns, by setting each column's `Groupable` property to `true`.
 
 ```html
-<-grid [data]="data">
-    <-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
-    </-column>
-</-grid>
+<igx-grid [data]="data">
+    <igc-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
+    </igc-column>
+</igx-grid>
 ```
 
 <!-- Angular -->
@@ -94,7 +94,7 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 ### Expand/Collapse API
 
-In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
+In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `{GridName}` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
 
 ```typescript
 export interface IGroupByKey {
@@ -108,7 +108,7 @@ export interface IGroupByExpandState {
 }
 ```
 
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
+As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `{GridName}` exposes a method that toggles a group by the group record instance.
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
@@ -209,15 +209,15 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the Group By row selector should be checked or indeterminate (partially selected).
 
 ```html
-<-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
+<igx-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <!-- ... -->
     <ng-template GroupByRowSelector let-context>
-        <-checkbox
+        <igc-checkbox
             [checked]=" context.selectedCount > 0 && context.selectedCount === context.totalCount"
             [indeterminate]="context.selectedCount > 0 && context.selectedCount !== context.totalCount">
-        </-checkbox>
+        </igc-checkbox>
     </ng-template>
-</-grid>
+</igx-grid>
 ```
 
 ## {Platform} Grid Group By With Paging
@@ -353,7 +353,7 @@ A `GroupingComparer` function is defined for the grouping expressions, which det
 <!-- Angular -->
 ## Styling
 
-The Grid allows styling through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
+The Grid allows styling through the [{ProductName} Theme Library](../themes/styles.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
 In the below steps, we are going through the steps of customizing the grid's Group By styling.
 
@@ -364,7 +364,7 @@ To begin the customization of the Group By feature, you need to import the `inde
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -479,7 +479,7 @@ In order for the custom theme to affect only specific component, you can move al
 This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
  >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
@@ -515,14 +515,12 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## API References
 
-* {ComponentTitle}
+* `{GridName}`
 * `GroupByRow`
-* `GridComponent Styles`
 * `ISortingExpression`
-* `ColumnComponent`
+* `Column`
 * `IGroupByExpandState`
-* `ChipComponent`
-* `ChipComponent Styles`
+* `Chip`
 
 ## Additional Resources
 
@@ -538,5 +536,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

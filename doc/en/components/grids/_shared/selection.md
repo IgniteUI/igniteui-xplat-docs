@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Selection - {ProductName}
 _description: See how easy it is to select data in {ProductName} grid using variety of events, rich API or with simple mouse interactions like single select.
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 ---
@@ -56,9 +56,9 @@ The `Selectable` property enables you to specify the following options for each 
 
 This leads to the following three variations:
 
-- `Single selection` - <kbd>mouse click</kbd> over the column cell.
-- `Multi column selection` - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
-- `Range column selection` - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
+- Single selection - <kbd>mouse click</kbd> over the column cell.
+- Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
+- Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
 > Go to [Column selection topic](column-selection.md) for more information.
 
@@ -168,7 +168,7 @@ The template we are going to use to combine the grid with the context menu:
 TO DO
 ```
 
- Select multiple cells and press the `right mouse` button. The context menu will appear and after selecting `Copy cells data` the selected data will appear in the right empty box.
+ Select multiple cells and press the right mouse button. The context menu will appear and after selecting **Copy cells data** the selected data will appear in the right empty box.
 
  The result is:
 

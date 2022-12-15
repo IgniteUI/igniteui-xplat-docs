@@ -1,7 +1,7 @@
 ---
-title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - Ignite UI for {Platform}
-_description: Ignite UI for {Platform} の仮想化ディレクティブは、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
-_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, ignite ui for {Platform}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
+title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - {ProductName}
+_description: {ProductName} の仮想化ディレクティブは、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
+_keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentTitle}, 'Virtualization']
@@ -11,7 +11,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 仮想化とパフォーマンス
 
-Ignite UI for {Platform} の `{ComponentName}` コントロールは、`igxForOf` ディレクティブを使用し、水平および垂直方向にコンテンツを仮想化します。
+{ProductName} の `{ComponentName}` コントロールは、`igxForOf` ディレクティブを使用し、水平および垂直方向にコンテンツを仮想化します。
 
 ## {Platform} {ComponentTitle} 仮想化とパフォーマンスの例
 

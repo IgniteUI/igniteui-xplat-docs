@@ -1,5 +1,5 @@
 ---
-title: {Platform} {ComponentTitle} Excel へのエクスポート - {ProductName} for {Platform}
+title: {Platform} {ComponentTitle} Excel へのエクスポート - {ProductName}
 _description: {ProductName} Excel Exporter を使用すると、クライアント Excel の機能をより便利でシンプルにできます。この形式では、フィルタリングやソートなどの機能が使用できます。
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
@@ -9,10 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} Excel へのエクスポート サービス
 
-
-<p class="highlight">
-  Excel Exporter サービスは {ComponentTitle} のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
-</p>
+Excel Exporter サービスは `{ComponentTitle}` のデータを MS Excel へエクスポートできます。エクスポート機能は、`ExcelExporterService` クラスでカプセル化され、MS Excel テーブル形式でデータをエクスポートします。この形式ではフィルタリングやソートなどの機能が使用でき、`ExcelExporterService` の `Export` メソッドを呼び出して最初の引数として {ComponentTitle} コンポーネントを渡し、グリッドを簡単にエクスポートします。
 
 ## {Platform} Excel Exporter の例
 
@@ -78,7 +75,7 @@ public exportButtonHandler() {
 }
 ```
 
-上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の {ComponentName}  コンポーネントのデータを含みます。
+上記をすべて行うと、{ComponentTitle} コンポーネントとその下にボタンを確認できます。ボタンを押すととエクスポート処理をトリガーし、ブラウザーで 「ExportedDataFile.xlsx」 ファイルをダウンロードします。このファイルは MS Excel 形式の `{ComponentName}`  コンポーネントのデータを含みます。
 
 ## すべてのデータのエクスポート
 
@@ -93,7 +90,7 @@ public exportButtonHandler() {
 <!-- ComponentStart: Grid -->
 ## グループ化されたデータのエクスポート
 
-グループ化されたデータをエクスポートするには、{ComponentName} を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の {ComponentName} コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
+グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
 <code-view style="height: 800px;"
@@ -107,10 +104,10 @@ public exportButtonHandler() {
 
 ## 複数列ヘッダー グリッドのエクスポート
 
-定義された[複数列ヘッダー](multi-column-headers.md)を使用して {ComponentName} をエクスポートできるようになりました。すべてのヘッダーは、{ComponentName} に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
+定義された[複数列ヘッダー](multi-column-headers.md)を使用して `{ComponentName}` をエクスポートできるようになりました。すべてのヘッダーは、`{ComponentName}` に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
 
 > [!NOTE]
-> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた {ComponentName} はテーブルとしてフォーマットされません。
+> Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
 <code-view style="height: 800px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -148,7 +145,7 @@ this.excelExportService.columnExporting.subscribe((args: IColumnExportingEventAr
 this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('ExportedDataFile'));
 ```
 
-{ComponentName} コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて {ComponentName} で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
+`{ComponentName}` コンポーネントのデータ エクスポートでは、行フィルタリングおよび列の非表示などの機能に応じて `{ComponentName}` で表示されるデータのみをエクスポートします。`ExcelExporterOptions` オブジェクトのプロパティを設定し、エクスポーター サービスを構成してフィルターした行または非表示の列を含むことができます。
 
 ## 既知の問題と制限
 
@@ -200,5 +197,5 @@ import 'setimmediate';
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

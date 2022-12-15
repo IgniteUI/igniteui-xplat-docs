@@ -1,7 +1,7 @@
 ---
 title: Column Reordering & Moving in {Platform} {ComponentTitle} - Infragistics
 _description: Set custom column order & enable columns reordering via drag/drop mouse or touch gestures, or by using the {Platform} Column Moving API. Try {ProductName}!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
@@ -39,7 +39,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```ts
 public headerTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>   
+        <igc-icon draggable="false" click="${this.onClick()}"></igc-icon>
     `;
 }
 ```

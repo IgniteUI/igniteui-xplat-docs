@@ -1,7 +1,7 @@
 ---
 title: Column Data Types in {Platform} for {ProductName}
 _description: Handle cell and editing templates in {Platform} by choosing from several predefined column data types - number, string, date, boolean, currency and percent column.
-_keywords: Column Data Type , {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---

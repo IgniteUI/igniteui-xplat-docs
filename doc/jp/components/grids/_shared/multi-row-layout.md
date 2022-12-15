@@ -1,8 +1,8 @@
 ---
 title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジスティックス
-_description: Ignite UI for {Platform} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
+_description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Multi-Row Layout, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
+_keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
 _language: ja
 ---
 
@@ -24,8 +24,8 @@ _language: ja
 `Column` は各セルの位置と範囲を決めるために 4 つの `Input` プロパティを公開します。
 * `ColStart` - フィールドの開始位置となる列インデックス。このプロパティは**必須**です。
 * `RowStart` - フィールドの開始位置となる行インデックス。このプロパティは**必須**です。
-* `ColEnd` - 現在のフィールドが終了する位置の列インデックス。colStart と colEnd の間の列数によって、そのフィールドまでの列の幅が決まります。このプロパティは**オプション**です。設定されていない場合、デフォルトは `colStart + 1` になります。
-* `RowEnd` - 現在のフィールドが終了する行インデックス。rowStart と rowEnd の間の行数によって、そのフィールドにまたがる行数が決まります。このプロパティは**オプション**です。設定されていない場合は、デフォルトで `rowStart + 1` に設定されます。
+* `ColEnd` - 現在のフィールドが終了する位置の列インデックス。colStart と colEnd の間の列数によって、そのフィールドまでの列の幅が決まります。このプロパティは**オプション**です。設定されていない場合、デフォルトは **colStart + 1** になります。
+* `RowEnd` - 現在のフィールドが終了する行インデックス。rowStart と rowEnd の間の行数によって、そのフィールドにまたがる行数が決まります。このプロパティは**オプション**です。設定されていない場合は、デフォルトで **rowStart + 1** に設定されます。
 
 
 ```html
@@ -164,11 +164,11 @@ _language: ja
 列レイアウトを構成するときに、適切な `ColStart` および `ColEnd`、または `RowStart` および `RowEnd` を計算して設定するのが難しい場合があります。特に 1 つのレイアウトに多数の列がある場合などですが、適用時のプレビューを簡単に確認するためにコンフィギュレーターを使用できます。以下の操作が可能です。
 
 * 設定全体の行数を設定します。すべてのレイアウトは同じ行数である必要があります。
-* `[レイアウトの追加]` チップをクリックするか、レイアウトチップを左右にドラッグしてソートします。
+* **[レイアウトの追加]** チップをクリックするか、レイアウトチップを左右にドラッグしてソートします。
 * 各レイアウトに特定の設定を列数と幅に合わせて設定します。設定は現在選択されているレイアウトを参照します。
 * レイアウト プレビューで列セルのサイズを変更して、より多くの列/行にまたがるようにしたり、`[削除]` ボタンを使用して列セルを消去したりできます。
 * プレビューで列チップをドラッグして列を設定します。
-* `[列の追加]` チップを使用して新しい列を追加/削除します。
+* **[列の追加]** チップを使用して新しい列を追加/削除します。
 
 * [NgForOf](https://angular.io/api/common/NgForOf) を使用してテンプレート内で使用および解析できる JSON 表現または igxGrid 内に配置できるように構成全体のテンプレート出力を取得します。
 
@@ -193,7 +193,7 @@ _language: ja
 
 ## スタイル設定
 
-`{ComponentName}` を使用すると、[Ignite UI for Angular テーマ ライブラリ](../themes/sass/component-themes.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/styles.md)でスタイルを設定できます。`Theme` は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下は、グリッドの複数行レイアウト スタイルをカスタマイズする手順です。
 
@@ -302,7 +302,7 @@ $my-custom-schema: extend($light-schema, (
 このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
@@ -344,5 +344,5 @@ $my-custom-schema: extend($light-schema, (
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

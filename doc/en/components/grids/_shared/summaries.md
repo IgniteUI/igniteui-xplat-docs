@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} UI `{ComponentName}` in {ProductName} has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
+The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -761,7 +761,7 @@ The last step is to **include** the component mixins:
 ```
 
 >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
 :host {
@@ -859,6 +859,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
+<!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
 * [Column Data Types](column-types.md#default-template)
@@ -877,7 +878,24 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- ComponentEnd: Grid -->
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} Overview](overview.md)
+* [Column Data Types](column-types.md#default-template)
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+<!-- end: Blazor -->
+
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

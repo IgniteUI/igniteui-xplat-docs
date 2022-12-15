@@ -1,13 +1,13 @@
 ---
 title: {Platform} Excel Like {ComponentTitle} - Infragistics
-_description: Configure the {Platform} Grid to paste data from excel, by using rich and performant API with less code, and use the rich API do export selected grid data easily.
-_keywords: export selected, igniteui for {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
-mentionedTypes: [{ComponentApiMembers}]
+_description: Configure the {Platform} Grid to paste data from excel, by using rich and performance API with less code, and use the rich API do export selected grid data easily.
+_keywords: export selected, igniteui for {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} Grid Paste from Excel
 
-The Ignite UI for {Platform} `Grid` can read Excel data that is copied to the clipboard. In this section we will show you how to do this with some custom code.
+The {ProductName} `Grid` can read Excel data that is copied to the clipboard. In this section we will show you how to do this with some custom code.
 
 ## {Platform} Paste from Excel Example
 
@@ -36,12 +36,12 @@ The new data after the paste is decorated in Italic.
 You should add the `paste-handler` directive (you can find its code in the next section) to the `Grid` and handle its `onDataProcessed` event. The `onDataProcessed` event has one parameter that gives you access to the Excel data in the form of an array. For reference see the `addRecords` and `updateRecords` methods.
 
 ```html
-<-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
-    <-column [field]="'Name'"></-column>
-    <-column [field]="'Title'"></-column>
-    <-column [field]="'Phone'"></-column>
-    <-column [field]="'Country'"></-column>
-</-grid>
+<igc-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
+    <igc-column [field]="'Name'"></igc-column>
+    <igc-column [field]="'Title'"></igc-column>
+    <igc-column [field]="'Phone'"></igc-column>
+    <igc-column [field]="'Country'"></igc-column>
+</igc-grid>
 ```
 
 ```typescript
@@ -230,5 +230,5 @@ export class PasteHandler {
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

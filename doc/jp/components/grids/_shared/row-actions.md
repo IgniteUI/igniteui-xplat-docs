@@ -1,7 +1,7 @@
 ---
 title:  {Platform} {ComponentTitle} の行操作 - インフラジスティックス
 _description: {ComponentName} は、ActionStrip を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の行操作
 
-Ignite UI for {Platform} の `{ComponentName}` コンポーネントは、`ActionStrip` を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。アクション ストリップ コンポーネントは、これらの操作用に事前定義された UI コントロールをホストできます。
+{ProductName} の `{ComponentName}` コンポーネントは、`ActionStrip` を使用し、行/セルコンポーネントおよび行のピン固定に CRUD を使用する機能を提供します。アクション ストリップ コンポーネントは、これらの操作用に事前定義された UI コントロールをホストできます。
 
 ## 使用方法
 
@@ -161,5 +161,5 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

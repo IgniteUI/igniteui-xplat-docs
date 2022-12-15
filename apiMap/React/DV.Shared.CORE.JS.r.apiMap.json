@@ -396,6 +396,7 @@
     { "names":[{"platform":"React","mappedType":"ToolActionType","mappedName":"Radio"}],"originalName":"Radio"},
     { "names":[{"platform":"React","mappedType":"ToolActionType","mappedName":"Separator"}],"originalName":"Separator"},
     { "names":[{"platform":"React","mappedType":"ToolActionType","mappedName":"IconMenu"}],"originalName":"IconMenu"},
+    { "names":[{"platform":"React","mappedType":"ToolActionType","mappedName":"Button"}],"originalName":"Button"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Toolbar"},
   { "originalName":"ToolCommand",
     "names":[{"platform":"React","fileName":"ToolCommand.ts","mappedName":"ToolCommand"}],

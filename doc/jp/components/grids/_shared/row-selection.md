@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} の行選択 - インフラジスティックス
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行の選択
 
-{ProductName} の行選択では、行内の他のすべての列に先行する行セレクター列があります。行選択ボックスをクリックすると、行の選択や選択解除、複数行にわたるデータの選択が可能になります。
+{Platform} `{ComponentName}` の行選択では、行内の他のすべての列に先行する行セレクター列があります。行選択ボックスをクリックすると、行の選択や選択解除、複数行にわたるデータの選択が可能になります。
 
 ## {Platform} 行選択の例
 

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 検索フィルター - {ProductName}
 _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を使用して、基になるデータに影響を与えずにデータ操作を実行します。デモと例をお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
@@ -499,10 +499,10 @@ import {
 } from 'igniteui-webcomponents-inputs';
 
 ModuleManager.register(
-    IgcXInputGroupModule, 
-    IgcXIconModule, 
-    IgcXRippleModule, 
-    IgcXButtonModule, 
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
     IgcXChipsModule
 );
 ```
@@ -747,7 +747,7 @@ public showResults() {
             <span>Exact Match</span>
         </igc-chip>
     </igc-chips-area>
-</div>  
+</div>
 ```
 
 ```typescript
@@ -835,7 +835,7 @@ public findNext(e) {
 
 ## API リファレンス
 
-このトピックでは、`{ComponentName}` にカスタム検索バーを実装し、更に検索結果を移動する際の機能を追加しました。アイコン、チップ、入力などその他の Ignite UI for {Platform} も使用しています。以下は検索 API です。
+このトピックでは、`{ComponentName}` にカスタム検索バーを実装し、更に検索結果を移動する際の機能を追加しました。アイコン、チップ、入力などその他の {ProductName} も使用しています。以下は検索 API です。
 
 `{ComponentName}` メソッド:
 -   `FindNext`

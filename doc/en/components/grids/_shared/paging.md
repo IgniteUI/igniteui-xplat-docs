@@ -2,7 +2,7 @@
 title: {Platform} {ComponentTitle} Paging - Infragistics
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_keywords: Paging, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview
@@ -247,7 +247,7 @@ The last step is to **include** the component mixins, each with its respective t
 >We scope the `Button` mixin within `.igx-paginator__pager`, so that only the paginator buttons would be styled. Otherwise other buttons in the grid would be affected too.
 
  >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
 :host {
@@ -400,5 +400,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

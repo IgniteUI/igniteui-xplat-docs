@@ -1016,7 +1016,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/{ProductSpinal}-help">{Platform} サポート ホーム ページ</a>をご覧ください。</li>
             <li>{Platform} [ドキュメント](..\general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite UI for {Platform}">{Platform} ブログをご覧ください。</a> </li>
+            <li>最新の情報は、<a class="no-external-icon" href="http://infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
             <li>アカウントにサインインした後、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/my-account/support-activity">サポート ケースを送信します。</a> </li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションをお試しください。</a></li>
         </ul>
@@ -1069,7 +1069,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI 製品バンドル</a>の一部です。Ignite UI 製品バンドルは、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
+        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">{ProductName} 製品</a>の一部です。{ProductName} 製品は、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
         </div>
     </div>
     <div class="faqs-accordion-content">
@@ -1118,7 +1118,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
-        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">Ignite UI 製品バンドル</a>の一部です。Ignite UI 製品バンドルは、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
+        {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}">{ProductName} 製品</a>の一部です。{ProductName} 製品は、Angular、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
         </div>
     </div>
     <div class="faqs-accordion-content">

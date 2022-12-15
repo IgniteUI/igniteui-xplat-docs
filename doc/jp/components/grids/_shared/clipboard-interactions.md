@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} のクリップボードの操作 - インフラジスティックス
 _description: {Platform} {ComponentTitle} のクリップボード機能は、データを Excel、その他のプログラムにコピー、貼り付け、エクスポートするための高速で簡単、カスタマイズ可能な方法を提供します。今すぐお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} クリップボードの概要
 
-クリップボードへのコピー操作が `{ComponentName}` で可能になりました。この機能は、現在の複数セル データ選択を通して {Platform} {ComponentName} のデータをすばやくコピーするための簡単でカスタマイズ可能な方法を提供します。システム クリップボードの動作により、ユーザーは `{ComponentName}` から Excel または他の外部プログラムにデータをコピーできます。
+クリップボードへのコピー操作が `{ComponentName}` で可能になりました。この機能は、現在の複数セル データ選択を通して {Platform} `{ComponentName}` のデータをすばやくコピーするための簡単でカスタマイズ可能な方法を提供します。システム クリップボードの動作により、ユーザーは `{ComponentName}` から Excel または他の外部プログラムにデータをコピーできます。
 
 ## {Platform} {ComponentTitle} クリップボードの例
 
@@ -78,5 +78,5 @@ _language: ja
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

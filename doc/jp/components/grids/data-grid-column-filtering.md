@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | フィルタリング | インフラジスティックス
 _description: インフラジスティックスの {ProductName} グリッド コンポーネントを使用して表現的なソート条件を実行し、データを簡単に返します。詳細については、{ProductName} テーブルのサンプルを参照してください。
 _keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, フィルタリング, フィルター式, フィルター オペランド, インフラジスティックス
-mentionedTypes: ['Grid', 'FilterExpressions']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.FilterExpressions']
 namespace: Infragistics.Controls
 _language: ja
 ---

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 列のピン固定 - {ProductName}
 _description: アプリの開発時に {ProductName} のピン固定機能を使用して、豊富な API で簡単に列をロックまたは列の順序を変更できます。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -136,7 +136,17 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 両方のメソッドは操作に成功したかどうかを示すブール値を返します。よくある失敗の原因に列がすでにその状態になっていることがあります。
 
+<!-- Angular, React, WebComponents -->
+
 列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPin` イベントでイベント引数の `InsertAtIndex` プロパティを適切な位置インデックスに変更します。
+
+<!-- end: Angular, React, WebComponents -->
+
+<!-- Blazor -->
+
+列をピン固定すると、一番右に配置されたピン固定列の右にピン固定されます。ピン固定列の順序を変更するには、`ColumnPinnedScript` イベントをサブスクライブし、イベント引数の `InsertAtIndex` プロパティを目的の位置インデックスに変更するための JavaScript 関数を提供します。
+
+<!-- end: Blazor -->
 
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
@@ -151,18 +161,21 @@ public columnPinning(event) {
 ```
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true ColumnPin="onColumnPin"/>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPinnedScript="onColumnPin"/>
 
-@code {
-    private void onColumnPin(IgbPinColumnCancellableEventArgs args)
-    {
-        if (args.Detail.Column.Field == "Name")
-        {
-            args.InsertAtIndex = 0;
-        }
+
+//In JavaScript
+function onColumnPinned(e) {
+    if (e.detail.column.field == "Country") {
+        e.detail.insertAtIndex = 0;
     }
 }
+
+igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
+
+
+
 
 ## ピン固定の位置
 
@@ -284,7 +297,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -369,7 +382,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -453,7 +466,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="title-inner">
             <span style="float:left">${ctx.cell.column.header}</span>
             <igc-icon class="pin-icon" fontSet="fas" name="fa-thumbtack" click="${toggleColumn(ctx.cell.column)}"></igx-icon>
-        </div>   
+        </div>
     `;
 }
 ```
@@ -490,7 +503,7 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ## スタイル設定
 
-{ComponentName} を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。[テーマ]({environment:sassApiUrl}/index.html#function-grid-theme) は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/styles.md)を介してスタイルを設定できます。[テーマ]({environment:sassApiUrl}/index.html#function-grid-theme) は、グリッドのすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下の手順では、グリッドのピン固定スタイルをカスタマイズする手順を実行しています。
 
@@ -579,7 +592,7 @@ $custom-theme: grid-theme(
 
 このように、Angular の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
  >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 

@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} Search Filter - {ProductName}
 _description: Perform data manipulation without affecting the underlying data with {ComponentTitle} Batch Editing, using {Platform} {ComponentTitle}. See demos & examples!
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
 ---
@@ -498,10 +498,10 @@ import {
 } from 'igniteui-webcomponents-inputs';
 
 ModuleManager.register(
-    IgcXInputGroupModule, 
-    IgcXIconModule, 
-    IgcXRippleModule, 
-    IgcXButtonModule, 
+    IgcXInputGroupModule,
+    IgcXIconModule,
+    IgcXRippleModule,
+    IgcXButtonModule,
     IgcXChipsModule
 );
 ```
@@ -746,7 +746,7 @@ public showResults() {
             <span>Exact Match</span>
         </igc-chip>
     </igc-chips-area>
-</div>  
+</div>
 ```
 
 ```typescript
@@ -835,7 +835,7 @@ public findNext(e) {
 
 ## API References
 
-In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional Ignite UI for {Platform} components like icons, chips and inputs. The search API is listed below.
+In this article we implemented our own search bar for the `{ComponentName}` with some additional functionality when it comes to navigating between the search results. We also used some additional {ProductName} components like icons, chips and inputs. The search API is listed below.
 
 `{ComponentName}` methods:
 -   `FindNext`

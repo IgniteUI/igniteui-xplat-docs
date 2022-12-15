@@ -8,11 +8,11 @@ _language: ja
 
 # {Platform} ツリー グリッドの概要と構成
 
-{ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作できます。最小限のコードでデータをすばやくバインドするか、さまざまなイベントを使用してさまざまな動作をカスタマイズします。このコンポーネントは、データ選択、Excel スタイル フィルタリング、ソート、ページング、テンプレート、列移動などの豊富な機能を提供します。マテリアル テーブルをベースとした UI ツリー グリッドにより、表形式のデータの表示がさらに簡単できれいになりました。
+{ProductName} `TreeGrid` は、階層データまたはフラット データを簡単に表示および操作できます。最小限のコードでデータをすばやくバインドするか、さまざまなイベントを使用してさまざまな動作をカスタマイズします。このコンポーネントは、データ選択、Excel スタイル フィルタリング、ソート、ページング、テンプレート、列移動などの豊富な機能を提供します。マテリアル テーブルをベースとした UI ツリー グリッドにより、表形式のデータの表示がさらに簡単できれいになりました。
 
 ## {Platform} ツリー グリッドの例
 
-この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、スパークライン コンポーネントを使用したセル テンプレートが含まれています。 
+この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポート、スパークライン コンポーネントを使用したセル テンプレートが含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,18 +22,18 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## Ignite UI for {Platform} Tree Grid で作業を開始
+## {ProductName} Tree Grid で作業を開始
 
 ### 依存関係
 
-{Platform} ツリー グリッドを初期化するには、Ignite UI for {Platform} パッケージをインストールする必要があります。
+{Platform} ツリー グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 
-- [作業の開始](..\general-getting-started.md)
-- [NuGet パッケージの追加](..\general-nuget-feed.md)
+- [作業の開始](../../general-getting-started-blazor-client.md)
+- [NuGet パッケージの追加](../../general-nuget-feed.md)
 
 また、ツリー グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
@@ -86,7 +86,14 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbTreeGridModule));
 `rowSelection` および `paging` プロパティを使用して、ツリー グリッドの行選択およびページング機能を有効にします。
 最初の列に集計機能、各列にはフィルタリング、ソート、編集、サイズ変更機能を有効にします。
 
-最後に、`GridToolbarComponent`、`GridToolbarHidingComponent`、`GridToolbarPinningComponent`、`GridToolbarExporterComponent` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
+最後に、`GridToolbar`、`GridToolbarHiding`、`GridToolbarPinning`、`GridToolbarExporter` をそれぞれ使用して、列の非表示、列のピン固定、エクスポート機能、およびツリー グリッドのツールバーを有効にします。
+
+## API References
+
+* `{TreeGridName}`
+* `Column`
+* `GridToolbar`
+* `TreeGridRecord`
 
 ### プライマリと外部キー
 **プライマリと外部キー**オプションを使用した際に各データ オブジェクトはプライマリキーと外部キーを含みます。プライマリキーは現在のデータ オブジェクトの一意識別子、外部キーは親の一意識別子です。元のデータ ソースを含むツリー グリッドの `data` プロパティがフラット コレクションになります。

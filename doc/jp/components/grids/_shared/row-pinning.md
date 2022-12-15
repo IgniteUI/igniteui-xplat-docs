@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 行のピン固定 - インフラジスティックス
 _description: {Platform} の行ピン固定機能を使用して、豊富で使いやすい API で行をロックします。ユーザーが特定の順序で行をピン固定または特別な領域に複製することを許可します。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 行のピン固定
 
-単一または複数の行を {Platform} UI グリッドの上側または下側にピン固定できます。{ProductName} の**行ピン固定**を使用すると、エンドユーザーは特定の順序で行をピン固定し、`{ComponentName}` を垂直にスクロールしても常に表示される特別な領域に行を複製できます。Material UI Grid には組み込みの行ピン固定 UI が含まれており、`{ComponentName}` のコンテキストで `ActionStrip` コンポーネントを初期化することで有効になります。その他、カスタム UI を定義し、行のピン固定 API を介して行のピン固定状態を変更できます。
+{Platform} `{ComponentName}` では、単一または複数の行をグリッドの上側または下側にピン固定できます。**行ピン固定**を使用すると、エンドユーザーは特定の順序で行をピン固定し、`{ComponentName}` を垂直にスクロールしても常に表示される特別な領域に行を複製できます。Material UI Grid には組み込みの行ピン固定 UI が含まれており、`{ComponentName}` のコンテキストで `ActionStrip` コンポーネントを初期化することで有効になります。その他、カスタム UI を定義し、行のピン固定 API を介して行のピン固定状態を変更できます。
 
 ## {Platform} {ComponentTitle} 行ピン固定の例
 
@@ -386,7 +386,7 @@ public onDropAllowed(args) {
 
 ## スタイル設定
 
-{ComponentName} を使用すると、[{ProductName} テーマ ライブラリ](../themes/sass/component-themes.md)を介してスタイルを設定できます。{ComponentTitle} の [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、{ComponentTitle} のすべての機能をカスタマイズできるさまざまなプロパティを公開します。
+`{ComponentName}` を使用すると、[{ProductName} テーマ ライブラリ](../themes/styles.md)を介してスタイルを設定できます。{ComponentTitle} の [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、{ComponentTitle} のすべての機能をカスタマイズできるさまざまなプロパティを公開します。
 
 以下では、{ComponentTitle} の行ピン固定スタイルをカスタマイズする手順を示します。
 
@@ -428,7 +428,7 @@ $custom-grid-theme: grid-theme(
 
 Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
-コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。ただし、カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
+コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。ただし、カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
 
 ```scss
 :host {

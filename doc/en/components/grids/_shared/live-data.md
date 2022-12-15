@@ -1,13 +1,13 @@
 ---
 title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
-_description: Check out how the {ProductName} for {Platform} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
-_keywords: {Platform} {ComponentTitle}, {Platform} {ComponentName} updates, {Platform} live data, infragistics
+_description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
+_keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
 ---
 
 # {Platform} {ComponentTitle} Live Data Updates
 
-The {ComponentTitle} component is able to handle thousands of updates per second, while staying responsive for user interactions.
+The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
 
 <!-- Angular -->
 ## {Platform} Live-data Update Example

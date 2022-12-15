@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} でのセル編集 - インフラジスティックス
 _description: {ComponentTitle} はセル内編集を使用しています。デフォルトのセル編集テンプレートがありますが、データ更新操作のカスタム テンプレートを定義することもできます。今すぐお試しください。
-_keywords: data manipulation, excel editing, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
+_keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} セル編集
 
-Ignite UI for {Platform} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
+{ProductName} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
 
 さらに、データ更新アクション用の独自のカスタム テンプレートを定義したり、変更をコミット/破棄したりするためのデフォルトの動作をオーバーライドすることもできます。
 
@@ -23,7 +23,7 @@ Ignite UI for {Platform} `{ComponentName}` コンポーネントは、{Platform}
 </code-view>
 
 > [!NOTE]
->任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([Select](../../inputs/select.md)、`Combo` など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+>任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 ## セルの編集
 
@@ -198,14 +198,14 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- end: Angular -->
 
 > [!NOTE]
-> 編集モードでセルの `EditValue` に加えられた変更は、終了時に適切な[編集イベント](editing.md#イベントの引数とシーケンス)をトリガーし、[トランザクション状態](batch-editing.md)に適用されます (トランザクションが有効な場合)。
+> 編集モードでセルの `EditValue` に加えられた変更は、終了時に適切な[編集イベント](editing.md#イベントの引数とシーケンス)をトリガーし、トランザクションが有効な場合はトランザクション状態に適用されます。
 
 > [!NOTE]
 > セルテンプレート `Cell` は、編集モード外での列のセルの表示方法を制御します。
 > `CellEditor` セル編集テンプレート ディレクティブは、編集モードでの列のセルの表示方法を処理し、編集されたセルの編集値を制御します。
 
 > [!NOTE]
->任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネント ([Select](../../inputs/select.md)、Combo など) ではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+>任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 <!-- Angular -->
 
@@ -578,21 +578,21 @@ export class MyHGridEventsComponent {
 
 ## スタイル設定
 
-{ComponentName} で [Ignite UI for {Platform} テーマ ライブラリ](../themes/sass/component-themes.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
+`{ComponentName}` で [{ProductName} テーマ ライブラリ](../themes/styles.md) を使用してセルのスタイルを設定できます。グリッドの [theme]({environment:sassApiUrl}/index.html#function-grid-theme) は、ユーザーがグリッドのさまざまな側面をスタイル設定できる広範なプロパティを公開します。
 
 以下の手順では、編集モードでグリッドのセルのスタイルを設定する方法と、それらのスタイルの範囲を設定する方法について説明します。
 
-[Ignite UI Theming ライブラリ](../themes/sass/component-themes.md)を使用するには、まずグローバル スタイルでテーマ `index` ファイルをインポートする必要があります。
+[Ignite UI Theming ライブラリ](../themes/styles.md)を使用するには、まずグローバル スタイルでテーマ `index` ファイルをインポートする必要があります。
 
 ### スタイル ライブラリのインポート
 
 ```scss
 @use "igniteui-angular/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
-以上で Ignite UI for {Platform} テーマ エンジンによって公開されているすべての機能を使用できます。
+以上で {ProductName} テーマ エンジンによって公開されているすべての機能を使用できます。
 
 ### パレットの定義
 
@@ -607,7 +607,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### テーマの定義
 
-これで、パレットを使用してテーマを定義できます。セルは [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して {ComponentName} のテーマを生成できます。
+これで、パレットを使用してテーマを定義できます。セルは [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) によってスタイル設定されているため、それを使用して `{ComponentName}` のテーマを生成できます。
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -635,7 +635,7 @@ $custom-grid-theme: grid-theme(
 このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
  >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  >[!NOTE]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
@@ -683,8 +683,9 @@ $custom-grid-theme: grid-theme(
 ## その他のリソース
 
 <!-- Angular -->
+
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
+
 * [{ComponentTitle} 概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -697,3 +698,22 @@ $custom-grid-theme: grid-theme(
 <!-- ComponentStart:  HierarchicalGrid -->
 * [検索](search.md)
 <!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+<!-- ComponentStart:  HierarchicalGrid -->
+* [検索](search.md)
+<!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Blazor -->

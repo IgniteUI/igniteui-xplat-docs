@@ -1,6 +1,6 @@
 ---
 title: {Platform} グリッド & テーブル | 最速の {Platform} UI グリッド | インフラジスティックス
-_description: 高速な {Platform} グリッドとテーブルをお探しですか? Ignite UI for {Platform} は、{Platform} ネイティブでマテリアル ベースの UI データ グリッドとテーブルの完全なライブラリを提供します。詳しい情報をご覧ください。
+_description: 高速な {Platform} グリッドとテーブルをお探しですか? {ProductName} は、{Platform} ネイティブでマテリアル ベースの UI データ グリッドとテーブルの完全なライブラリを提供します。詳しい情報をご覧ください。
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics, {Platform} データ グリッド, テーブル, グリッド, インフラジスティックス
 mentionedTypes: ["Grid"]
 _language: ja
@@ -201,7 +201,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 # 高速 {Platform} データ グリッド
 
 
-Ignite UI for {Platform} は、世界最速の仮想化された {Platform} データ グリッドを含む、{Platform} ネイティブのマテリアル ベースの UI コンポーネントの完全なライブラリを提供します。
+{ProductName} は、世界最速の仮想化された {Platform} データ グリッドを含む、{Platform} ネイティブのマテリアル ベースの UI コンポーネントの完全なライブラリを提供します。
 
 
 ## {Platform} Grid の例
@@ -217,7 +217,7 @@ Ignite UI for {Platform} は、世界最速の仮想化された {Platform} デ�
 
 <div class="divider--half"></div>
 
-## {Platform} Grid の概要 
+## {Platform} Grid の概要
 
 {Platform} データ グリッドは、一連の行と列で表データを表示するために使用されるコンポーネントです。テーブルとも呼ばれるデータ グリッドは、Microsoft Excel などの一般的なソフトウェアでデスクトップの世界でよく知られています。グリッドはデスクトップ プラットフォームで長い間利用されてきますが、最近 {Platform} UI などの Web ア プリ UI の一部になりました。最新のグリッドは複雑で、データ バインディング、編集、Excel のようなフィルタリング、カスタム ソート、グループ化、行の並べ替え、行と列の固定、行の集計、Excel、CSV、PDF 形式のエクスポートなど、さまざまな機能が含まれる場合があります。
 
@@ -230,7 +230,7 @@ Ignite UI for {Platform} は、世界最速の仮想化された {Platform} デ�
 
 <div class="divider--half"></div>
 
-Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイム データのみにとどまるものではありません。これは機能豊富な {Platform} グリッドであり、ごくわずかなコードだけでは実現できない機能を提供します。
+{ProductName} のデータ グリッドは、大量のリアルタイム データのみにとどまるものではありません。これは機能豊富な {Platform} グリッドであり、ごくわずかなコードだけでは実現できない機能を提供します。
 
 以下は、データ グリッドの主な機能のいくつかを示しています:
 
@@ -317,7 +317,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="ARIA サポートのアイコン表示" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-aria-support-1100.jpg?v=201808021304" alt="Angular Data Grid コンポーネントの ARIA サポートのアイコン表示"></div>
     <div class="feature__details">
         <span class="h3 features__heading">{Platform} グリッドのアクセシビリティと ARIA のサポート<a class="anchorjs-link" href="#angular-グリッドのアクセシビリティと-aria-のサポート" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>Ignite UI for {Platform} の各 {Platform} コンポーネントは、最新のアクセシビリティ ガイドラインと仕様に従って実装されています。当社の {Platform} コンポーネントは、OS またはブラウザーが提供するアクセシビリティ技術 (読み上げソフトウェア) を使用してテストされています。当社のチームは、ガイドラインが実装されていることを確認するだけでなく、視覚障害者に配信される実際のコンテンツが消費可能でユーザー フレンドリーであることを保証します。Ignite UI for {Platform} データ グリッドは キーボード アクセシビリティ、ARIA、明瞭なカラー パレットを提供します。詳しくについては、<a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">こちら</a>をご覧ください。</p>
+        <p>{ProductName} の各 {Platform} コンポーネントは、最新のアクセシビリティ ガイドラインと仕様に従って実装されています。当社の {Platform} コンポーネントは、OS またはブラウザーが提供するアクセシビリティ技術 (読み上げソフトウェア) を使用してテストされています。当社のチームは、ガイドラインが実装されていることを確認するだけでなく、視覚障害者に配信される実際のコンテンツが消費可能でユーザー フレンドリーであることを保証します。{ProductName} データ グリッドは キーボード アクセシビリティ、ARIA、明瞭なカラー パレットを提供します。詳しくについては、<a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">こちら</a>をご覧ください。</p>
     </div>
 </div>
 
@@ -349,7 +349,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="テーマ設定およびテンプレート化機能を示すさまざまなグリッド デザインのアニメーション" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Angular Data Grid のテーマ設定およびテンプレート化機能を示すさまざまなグリッド デザインのアニメーション"></div>
     <div class="feature__details">
         <span class="h3 features__heading">{Platform} Grid のテーマ設定、スタイル設定、テンプレート化<a class="anchorjs-link" href="#angular-grid-のテーマ設定スタイル設定テンプレート化" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>Ignite UI for {Platform} では、CSS や ng-template の再テンプレート化でセルの外観をカスタマイズできます。マテリアル デザインを完全にサポートし、使いやすいテーマ エンジンでブランド化されたインターフェイスをカスタマイズできます。</p>
+        <p>{ProductName} では、CSS や ng-template の再テンプレート化でセルの外観をカスタマイズできます。マテリアル デザインを完全にサポートし、使いやすいテーマ エンジンでブランド化されたインターフェイスをカスタマイズできます。</p>
     </div>
 </div>
 
@@ -364,7 +364,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
 </div>
     <div class="feature__details" id="list-features">
         <span class="h3 features__heading">{Platform} Grid の Excel ライブラリ<a class="anchorjs-link" href="angular-grid-の-excel-ライブラリ" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>データ グリッドの XLXS、XLS、TSV、または CSV のエクスポートを完全にサポートします。Ignite UI for {Platform} [Excel ライブラリ](excel-library.md)には、クライアント マシンで Microsoft Excel を必要としない 300 以上の数式、テーブルサポート、条件付き書式、チャートの作成などが含まれます。</p>
+        <p>データ グリッドの XLXS、XLS、TSV、または CSV のエクスポートを完全にサポートします。{ProductName} [Excel ライブラリ](excel-library.md)には、クライアント マシンで Microsoft Excel を必要としない 300 以上の数式、テーブルサポート、条件付き書式、チャートの作成などが含まれます。</p>
     </div>
 </div>
 <div class="divider--half"></div>
@@ -427,7 +427,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
 <div id="support-section-wrapper">
     <div class="support-section">
     <div >
-        <h2>Ignite UI for {Platform} でサポートされているブラウザー</h2>
+        <h2>{ProductName} でサポートされているブラウザー</h2>
     </div>
 <div class="divider--half"></div>
    {Platform} Data Grid は、すべての最新の Web ブラウザーでサポートされます。
@@ -442,7 +442,7 @@ Ignite UI for {Platform} のデータ グリッドは、大量のリアルタイ
     </div>
     <div class="support-section" style="padding-left: 4rem;">
     <div >
-            <h2>Ignite UI for {Platform} サポート オプション</h2>
+            <h2>{ProductName} サポート オプション</h2>
     </div>
 <div class="divider--half"></div>
 Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセスするための複数のオプションがあります。
@@ -450,7 +450,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a> </li>
             <li>{Platform} [ドキュメント](../../components/general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
-            <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2bAngular">{Platform} ブログをご覧ください。</a> </li>
+            <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
             <li><a class="no-external-icon" href="https://www.infragistics.com/ignite-ui-angular/grid-table">サポート ケースの送信</a></li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a></li>
         </ul>
@@ -459,10 +459,10 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 
 <div class="divider--half"></div>
 
-## Ignite UI for {Platform} 試用ライセンスおよび商用
+## {ProductName} 試用ライセンスおよび商用
 
 <div class="divider--half"></div>
-<p>Ignite UI for {Platform} は、サブスクリプション モデルで利用可能な商用ライセンス製品です。Ignite UI for {Platform} 製品は、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/free-downloads">30 日間トライアル版を無料でお試しいただけます。</a>試用期間が終了したら、弊社 Web サイトから<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">ライセンスを購入する</a>か、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/about-us/contact-us">お住まいの地域の営業担当者にお問い合わせください</a>。</p>
+<p>{ProductName} は、サブスクリプション モデルで利用可能な商用ライセンス製品です。{ProductName} 製品は、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/free-downloads">30 日間トライアル版を無料でお試しいただけます。</a>試用期間が終了したら、弊社 Web サイトから<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">ライセンスを購入する</a>か、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/about-us/contact-us">お住まいの地域の営業担当者にお問い合わせください</a>。</p>
 
 <div class="divider--half"></div>
 
@@ -470,7 +470,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 
 <div id="faqs-accordion-wrapper" class="resizable-content">
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">Infragistics Ignite UI for {Platform} Data Grid を選択する理由とはなんですか？</div>
+        <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid を選択する理由とはなんですか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
             <ul>
@@ -486,17 +486,17 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         </div>
     </div>
     <div class="faqs-accordion-content">
-    <div class="faqs-accordion h4">Infragistics Ignite UI for {Platform} Data Grid の価格について教えてください。</div>
+    <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid の価格について教えてください。</div>
     <div class="divider--half"></div>
     <div class="faqs-accordion-panel">
-    {Platform} コンポーネントは、Ignite UI バンドルの一部として含まれています。価格の詳細については、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">価格ページ</a>を参照してください。 
+    {Platform} コンポーネントは、Ignite UI バンドルの一部として含まれています。価格の詳細については、<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/how-to-buy/product-pricing">価格ページ</a>を参照してください。
     <div class="divider--half"></div>
     複数のプラットフォームでアプリケーションを開発する場合、WPF や Windows Forms などのデスクトップ プラットフォーム、{Platform}、Web コンポーネント、ASP.NET MVC、ASP.NET Core のすべての最新 Web ツールセットを含む完全なアプリ開発パッケージ Infragistics Ultimate を検討してください。
     <div class="divider--half"></div>
     </div>
     </div>
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">Infragistics Ignite UI for {Platform} Data Grid コントロールを個別に購入できますか？</div>
+        <div class="faqs-accordion h4">Infragistics {ProductName} Data Grid コントロールを個別に購入できますか？</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
         {Platform} Data Grid を個別に購入することはできません。これは <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui">Ignite UI 製品バンドル</a>の一部です。Ignite UI 製品バンドルは、{Platform}、ASP.NET MVC、Web コンポーネント、ASP.NET Blazor などのすべての Web プラットフォームに対して、何百ものコントロール、コンポーネント、およびデータの視覚化を提供します。
@@ -504,7 +504,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
         </div>
     </div>
     <div class="faqs-accordion-content">
-        <div class="faqs-accordion h4">{Platform} と Infragistics Ignite UI for {Platform} Data Grid コントロールのインストール方法を教えてください。</div>
+        <div class="faqs-accordion h4">{Platform} と Infragistics {ProductName} Data Grid コントロールのインストール方法を教えてください。</div>
         <div class="divider--half"></div>
         <div class="faqs-accordion-panel">
         {Platform} Data Grid の使用を開始するには、[作業の開始ガイド](../general-getting-started.md)の手順を実行してください。<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">サンプル アプリケーション</a>のライブラリも用意しています。サンプル ライブラリは、{Platform} 開発のベスト プラクティス ガイドです。

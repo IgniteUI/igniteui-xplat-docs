@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 表示密度
 
-**{ComponentName}** デザインは[マテリアル デザイン ガイドライン](https://material.io/design)に基づきます。現在、cosy、comfortable、compact ビューで表示するための定義済みの[密度](https://material.io/design/layout/applying-density.html)オプションを提供しています。マテリアル UI テーブル/マテリアル UI グリッドに適切な密度を選択することで、量の多いコンテンツを操作する際のユーザー エクスペリエンスを飛躍的に向上させることができます。
+{Platform} `{ComponentName}` デザインは[マテリアル デザイン ガイドライン](https://material.io/design)に基づきます。現在、cosy、comfortable、compact ビューで表示するための定義済みの[密度](https://material.io/design/layout/applying-density.html)オプションを提供しています。マテリアル UI テーブル/マテリアル UI グリッドに適切な密度を選択することで、量の多いコンテンツを操作する際のユーザー エクスペリエンスを飛躍的に向上させることができます。
 
 ## {Platform} {ComponentTitle} 表示密度の例
 
@@ -734,7 +734,7 @@ public selectDensity(event) {
 `{ComponentName}` の行の高さを変更するその他のオプションに `RowHeight` プロパティがあります。このプロパティと `DisplayDensity` プションが `{ComponentName}` レイアウトにどのように動作に影響するかを以下で確認できます。
 
 以下を確認してください。
- - **`RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
+ - `RowHeight` を指定した場合**、`DisplayDensity` オプションは行の高さに影響しません。
  - `DisplayDensity` は、上記の理由により**残りすべての {ComponentTitle} 要素に影響します**。
 
 サンプル機能を拡張して `RowHeight` プロパティを `{ComponentName}` に追加します。
@@ -792,5 +792,5 @@ public selectDensity(event) {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

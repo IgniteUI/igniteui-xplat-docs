@@ -2,7 +2,7 @@
 title: {Platform} データ グリッド | マトリックス データ | データ バインディング | インフラジスティックス
 _description: インフラジスティックスのグリッド コンポーネントのテンプレート列を使用してマトリックス テーブルを作成します。{ProductName} テーブルのサンプルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, column template, matrix table, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, マトリックス テーブル, データ バインディング, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 _language: ja
 ---

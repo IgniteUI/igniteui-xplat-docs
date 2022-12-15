@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Row Pinning |  Infragistics
 _description: Use Infragistics' {Platform} grid component's row pinning feature in order to lock row change row order with a rich and easy to use API. Check out {ProductName} table demos!
 _keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
 

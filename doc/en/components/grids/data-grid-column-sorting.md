@@ -2,7 +2,7 @@
 title: {Platform} Data Grid | Column Sorting | Infragistics
 _description: Use Infragistics' {Platform} grid component's sorting feature to configure a mix of sortable and non-sortable columns, with rich API and data sorting. View {ProductName} tutorials!
 _keywords: {Platform} Table, Data Grid, column, sorting, row, {ProductName}, Infragistics
-mentionedTypes: ['Grid', 'HeaderClickAction']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.HeaderClickAction']
 namespace: Infragistics.Controls
 ---
 

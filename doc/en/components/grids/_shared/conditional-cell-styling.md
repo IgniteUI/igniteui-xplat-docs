@@ -12,7 +12,7 @@ If you need to provide any custom styling in the `{ComponentName}` component, yo
 
 ## {ComponentTitle} Conditional Row Styling
 
-The `{ComponentName}` component in Ignite UI for {Platform} provides two ways to **conditional styling of rows** based on custom rules.
+The `{ComponentName}` component in {ProductName} provides two ways to **conditional styling of rows** based on custom rules.
 
 - By setting `RowClasses` input on the `{ComponentName}` component;
 - By setting `RowStyles` input on the `{ComponentName}` component;
@@ -303,7 +303,7 @@ The `{ComponentName}` component in {ProductName} provides two ways to **conditio
 - By setting the `Column` input `CellClasses` to an object literal containing key-value pairs. The key is the name of the CSS class, while the value is either a callback function that returns a boolean, or boolean value. The result is a convenient material styling of the cell.
 
 ### Using Cell Classes
-You can conditionally style the {ComponentName} cells by setting the `Column` `CellClasses` input and define custom rules.
+You can conditionally style the `{ComponentName}` cells by setting the `Column` `CellClasses` input and define custom rules.
 
 <!-- ComponentStart: Grid -->
 
@@ -518,7 +518,7 @@ Columns expose the `CellStyles` property which allows conditional styling of the
 
 In the [sample above](#demo) we've created:
 - Two different styles that will be applied based on the column index.
-- You will also change the `text color` based on even/odd rows.
+- You will also change the **text color** based on even/odd rows.
 
 
 Let's define our styles:
@@ -712,7 +712,7 @@ Define a `popin` animanion:
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
-A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a `spread operator` ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
+A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a **spread operator** ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
 
 ```ts
 public backgroundClasses = {
@@ -787,5 +787,5 @@ constructor() {
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

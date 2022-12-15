@@ -1,14 +1,14 @@
 ---
 title: Cell Editing in {Platform} {ComponentTitle} - Infragistics
 _description: The {ComponentTitle} is using in-cell editing. It has a default cell editing template, but it also lets you define your own custom templates for update-data action. Try it now!
-_keywords: data manipulation, excel editing, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics
+_keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 ---
 
 # {Platform} {ComponentTitle} Cell Editing
 
-Ignite UI for {Platform} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+{ProductName} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
@@ -22,7 +22,7 @@ In addition, you can define your own custom templates for update-data actions an
 </code-view>
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), `Combo`, etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
 
@@ -197,14 +197,14 @@ This code is used in the sample below which implements an [SelectComponent](../s
 <!-- end: Angular -->
 
 > [!NOTE]
-> Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the [transaction state](batch-editing.md) (if transactions are enabled).
+> Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
 
 > [!NOTE]
 > The cell template `Cell` controls how a column's cells are shown when outside of edit mode.
 > The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
 
 > [!NOTE]
->By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added - [Select](../select.md), [Combo](../combo.md), etc. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- Angular -->
 
@@ -446,7 +446,7 @@ In this example, we'll validate a cell based on the data entered in it by bindin
 event.cancel = true
 ```
 
-We'll also display a custom error message using [Toast](../notifications/toast.md).
+We'll also display a custom error message using [Toast](../../notifications/toast.md).
 
 The first thing we need to is bind to the grid's event:
 
@@ -577,21 +577,21 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 ## Styling
 
-The {ComponentName} allows for its cells to be styled through the [Ignite UI for {Platform} Theme Library](../themes/sass/component-themes.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
+The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
 
 In the below steps, we are going to go over how you can style the grid's cell in edit mode and how you can scope those styles.
 
-In order to use the [Ignite UI Theming Library](../themes/sass/component-themes.md), we must first import the theme `index` file in our global styles:
+In order to use the [Ignite UI Theming Library](../themes/styles.md), we must first import the theme `index` file in our global styles:
 
 ### Importing Style Library
 
 ```scss
 @use "igniteui-angular/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
-Now we can make use of all of the functions exposed by the Ignite UI for {Platform} theme engine.
+Now we can make use of all of the functions exposed by the {ProductName} theme engine.
 
 ### Defining a Palette
 
@@ -606,7 +606,7 @@ $color-palette: palette($primary: $white, $secondary: $blue);
 
 ### Defining Themes
 
-We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our {ComponentName}:
+We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our `{ComponentName}`:
 
 ```scss
 $custom-grid-theme: grid-theme(
@@ -634,7 +634,7 @@ In order for the custom theme to affect only our specific component, we can move
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
 
  >[!NOTE]
- >If the component is using an [Emulated](../themes/sass/component-themes.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
  >[!NOTE]
  >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 

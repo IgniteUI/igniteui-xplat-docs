@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 行の編集 - インフラジスティックス
 _description: {Platform} {ComponentTitle}で行編集を有効にし、CRUD 操作のための強力な API が必要な場合、{ProductName} {ComponentTitle} 行編集コンポーネントをお試しください。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
@@ -332,7 +332,7 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([theme/index インポート](#テーマのインポート)を含む) を定義できます。
 
 >[!NOTE]
->コンポーネントが [Emulated](themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
+>コンポーネントが [Emulated](themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
@@ -427,11 +427,21 @@ $button-theme: button-theme(
 ## その他のリソース
 
 <!-- Angular -->
+
 * [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [{ComponentTitle} 概要](overview.md)
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [{ComponentTitle} 編集](editing.md)
+* [{ComponentTitle} トランザクション](batch-editing.md)
+
+<!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

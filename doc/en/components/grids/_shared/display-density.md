@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Display Density
 
-The **{ComponentName}** design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
+The `{ComponentName}` design is based on [Material Design Guidelines](https://material.io/design). We currently provide an option to choose between predefined set of display [density](https://material.io/design/layout/applying-density.html) options that will bring a cosy, comfortable or compact view respectively. By selecting the right density for your Material UI table / Material UI grid you can significantly improve the user experience when interacting with large amounts of content.
 
 ## {Platform} {ComponentTitle} Display Density Example
 
@@ -51,7 +51,7 @@ this.grid.displayDensity = 'cosy';
 ```razor
 @code {
     this.grid.DisplayDensity = DisplayDensity.Cosy;
-} 
+}
 ```
 
 And now let's see in details how each option reflects on the `{ComponentName}` component. When you switch between different density options the height of each `{ComponentName}` element and the corresponding paddings will be changed. Also if you want to apply custom column `Width`, please consider the fact that it must be bigger than the sum of left and right padding.
@@ -800,5 +800,5 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 Our community is active and always welcoming to new ideas.
 
-* [Ignite UI for {Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

@@ -1,14 +1,14 @@
 ---
 title: {Platform} {ComponentTitle} での編集と検証 - インフラジスティックス
 _description: グリッドでユーザーの入力を検証し、{Platform} {ComponentTitle} の使用中に有効かどうかを通知します。デモと例をお試しください。
-_keywords: {Platform} validation, ignite ui for {Platform}, infragistics, {Platform} 検証, インフラジスティックス
+_keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
 ---
 
 # {Platform} {ComponentTitle} 編集と検証
 
-`{ComponentName}` の編集は、セル/行の編集時のユーザー入力の組み込み検証メカニズムを公開します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、視覚的なインジケーターが編集されたセルに適用されます。
+`{ComponentName}` は、セル / 行の編集時にユーザー入力の検証メカニズムが組み込まれた編集機能を提供します。これはフォームの検証機能を拡張し、既知の機能と簡単に統合できるようにします。エディターの状態が変更されると、視覚的なインジケーターが編集されたセルに適用されます。
 
 ## 構成
 
@@ -535,7 +535,7 @@ public stateMessage(cell: IgxGridCell) {
 
 ## スタイル設定
 
-[Ignite UI for {Platform} テーマ ライブラリ](../themes/index.md)を使用して、編集時のデフォルトの検証スタイルを変更できます。
+[{ProductName} テーマ ライブラリ](../themes/index.md)を使用して、編集時のデフォルトの検証スタイルを変更できます。
 
 以下の例では、検証メッセージの公開されたテンプレートを使用します。ツールチップをポップアウトし、および、検証のデフォルトの外観を変更するためにエラー時の色をオーバーライドします。
 また、無効な行をより明確にするために背景のスタイルを設定します。
@@ -543,12 +543,12 @@ public stateMessage(cell: IgxGridCell) {
 ### テーマのインポート
 
 スタイルを設定し、css 変数にアクセスする最も簡単な方法は、`app` のグローバル スタイル ファイル (通常 は `styles.scss` です) でスタイルを定義することです。
-はじめに `themes/index` ファイルをインポートすることにより、Ignite UI for {Platform} Sass フレームワークの強力なツールへアクセスできるようになります。
+はじめに `themes/index` ファイルをインポートすることにより、{ProductName} Sass フレームワークの強力なツールへアクセスできるようになります。
 
 ```scss
 @use "igniteui-{Platform}/theming" as *;
 
-// IMPORTANT: Prior to Ignite UI for {Platform} version 13 use:
+// IMPORTANT: Prior to {ProductName} version 13 use:
 // @import '~igniteui-{Platform}/lib/core/styles/themes/index';
 ```
 
@@ -663,17 +663,29 @@ public cellStyles = {
 ## その他のリソース
 
 <!-- Angular -->
+
 * [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-<!-- end: Angular -->
 * [{ComponentTitle} 概要](overview.md)
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [{ComponentTitle} 編集](editing.md)
+* [{ComponentTitle} 行の編集](row-editing.md)
+* [{ComponentTitle} 行の追加](row-adding.md)
+* [{ComponentTitle} トランザクション](batch-editing.md)
+
+<!-- end: Blazor -->
+
 <div class="divider--half"></div>
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

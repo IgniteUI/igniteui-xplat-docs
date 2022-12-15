@@ -2,35 +2,24 @@
 title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
-mentionedTypes: ['Grid']
+mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
 # {Platform} Grid 概要と構成
 
+ {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。
+
 <div class="sample-content">
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <p> {Platform} データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel、CSV、PDF 形式へのエクスポートなどの一連の機能が搭載されています。</p>
-        </div>
-    </article>
-    <article class="sample-column">
-        <div class="tabbar-wrapper">
-            <div class="tab-content">
-                <img class="b-lazy responsive-img"
-                    src="../../../images/general/landing-grid-page.png"
-                    data-src="../../../images/general/landing-grid-page.png"
-                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
-                </div>
-        </div>
-    </article>
+    <img class="b-lazy responsive-img"
+        src="../../../images/general/landing-grid-page.png"
+        data-src="../../../images/general/landing-grid-page.png"
+        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+        alt="Grid"
+        title="Grid">
 </div>
 
-
 ## {Platform} Grid の例
-
 
 このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、カスタム ページングと、[ページネーション](paging.md)のページごとの使用部分も含まれています。
 
@@ -44,11 +33,11 @@ _language: ja
 
 
 
-## Ignite UI for {Platform} Grid で作業を開始
+## {ProductName} Grid で作業を開始
 
 ### 依存関係
 
-{Platform} グリッドを初期化するには、Ignite UI for {Platform} パッケージをインストールする必要があります。
+{Platform} グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 
@@ -59,14 +48,15 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 また、グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
-```html
+```razor
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
 以下の名前空間を追加してコントロールの実装を開始できます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+
+```razor
 @using IgniteUI.Blazor.Controls
-</pre>
+```
 
 <!-- end: Blazor -->
 
@@ -78,7 +68,22 @@ npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 </pre>
+
+<!-- WebComponents -->
+
+You also need to include the following imports to include the grid and the necessary styles for the grid:
+
+```html
+import 'igniteui-webcomponents-grids/grids/combined';
+import "igniteui-webcomponents-grids/grids/themes/light/bootstrap.css";
+import { IgcGridComponent } from 'igniteui-webcomponents-grids/grids';
+```
+
+<!-- end: WebComponents -->
+
 <!-- end: Angular, React, WebComponents -->
+
+<!-- Angular, React, Blazor -->
 
 ### コンポーネント モジュール
 
@@ -87,18 +92,9 @@ npm install --save {PackageInputs}
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbGridModule));
 ```
-<!-- WebComponents -->
 
-```ts
-import { ModuleManager } from 'igniteui-webcomponents-core';
-import { IgcGridModule } from 'igniteui-webcomponents-grids';
-import { IgcGridComponent } from 'igniteui-webcomponents-core';
+<!-- end: Angular, React, Blazor -->
 
-ModuleManager.register(
-    IgcGridModule
-);
-```
-<!-- end: WebComponents -->
 
 ### 使用方法
 
@@ -107,9 +103,11 @@ ModuleManager.register(
 ```html
 <igx-grid #grid1 id="grid1" [data]="localData" [autoGenerate]="true"></igx-grid>
 ```
+
 ```html
-<igc-grid id="grid1" [data]="localData" auto-generate="true"></igc-grid>
+<igc-grid id="grid1" auto-generate="true"></igc-grid>
 ```
+
 ```ts
 constructor() {
     let grid1 = (document.getElementById("grid1") as IgcGridComponent);
@@ -119,17 +117,17 @@ constructor() {
 
 `Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。**data** はグリッドをローカル データにバインドします。
 
-`AutoGenerate` プロパティはグリッドにデータ ソース フィールドに基づいてグリッドの `ColumnComponent` を自動生成します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
+`AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
 ## Bootstrap グリッドの定義
 
-Ignite UI for {Platform} には、Flex に基づくレイアウト システムのような強力なブートストラップ グリッドが含まれています。今日の最新のアプリケーションは、レスポンシブ Web デザインのアプローチに従うことが期待されています。つまり、デバイスのサイズに基づいて、または単にブラウザーのサイズを変更するだけで、HTML 要素のレイアウトを適切に調整できます。ブートストラップ グリッド レイアウトはこれまで最も使用されていたアプローチでしたが、CSS グリッドのような Flex に基づくレイアウト システムは、どのブラウザーでも機能するため、より一般的になりました。Ignite UI for {Platform} ディレクティブにより、コンテンツ / テキストの折り返し、両端揃え、配置など、垂直方向と水平方向のフローが可能になります。Ignite UI for {Platform} は、CSS を使用したレスポンシブ レイアウトをサポートし、サイズ変更時のグリッドの動作に究極の柔軟性を提供します。
+{ProductName} には、Flex に基づくレイアウト システムのような強力なブートストラップ グリッドが含まれています。今日の最新のアプリケーションは、レスポンシブ Web デザインのアプローチに従うことが期待されています。つまり、デバイスのサイズに基づいて、または単にブラウザーのサイズを変更するだけで、HTML 要素のレイアウトを適切に調整できます。ブートストラップ グリッド レイアウトはこれまで最も使用されていたアプローチでしたが、CSS グリッドのような Flex に基づくレイアウト システムは、どのブラウザーでも機能するため、より一般的になりました。{ProductName} ディレクティブにより、コンテンツ / テキストの折り返し、両端揃え、配置など、垂直方向と水平方向のフローが可能になります。{ProductName} は、CSS を使用したレスポンシブ レイアウトをサポートし、サイズ変更時のグリッドの動作に究極の柔軟性を提供します。
 
 ## 編集可能なグリッド
 
 グリッド編集の各操作にはバッチ操作が含まれます。つまり、API には、編集を単一のサーバー呼び出しにグループ化するオプションがあります。または、グリッドの操作を使用して、グリッドの編集を実行したり、発生した操作を更新したりできます。CRUD 操作を備えた編集グリッドとしての優れた開発者エクスペリエンスに加えて、Angular グリッドには Excel のようなキーボード ナビゲーションが含まれます。一般的なデフォルトのグリッド ナビゲーションに加えて、お客様のニーズを満たすためにナビゲーション オプションを上書きするオプションが含まれています。優れたナビゲーション スキームを備えた編集可能なグリッドは、最新の業務アプリケーションにとって重要であり、Ignite UI グリッドを使用すると簡単になります。
 
-このトピックに続いて、[セル テンプレート](#セル-テンプレート)と[セル編集テンプレート](#セル編集テンプレート)および編集について詳しく学習します。
+このトピックに続いて、[セル テンプレート](overview.md#セル-テンプレート)と[セル編集テンプレート](overview.md#セル編集テンプレート)および編集について詳しく学習します。
 
 ## グリッドの列構成
 
@@ -186,7 +184,7 @@ public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 グリッドの各列は別のテンプレートを持つことができます。列に `ng-template` Angular グリッド モジュール ディレクティブが必要です。
 
-また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext 入力`も公開します。
+また、カスタム プロパティや列自体に渡す任意のタイプのデータ コンテキストに使用できる `additionalTemplateContext` 入力も公開します。
 
 ```html
 <igx-column [additionalTemplateContext]="contextObject">
@@ -229,11 +227,11 @@ constructor() {
 
 public nameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        ${this.formattUppercase(ctx.cell.value)}
+        ${this.formatUppercase(ctx.cell.value)}
     `;
 }
 
-public formattUppercase(value: string) {
+public formatUppercase(value: string) {
     return value.toUpperCase();
 }
 ```
@@ -311,7 +309,7 @@ public formatTitlecase(value: string) {;
 }
 ```
 
-上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`GridCell` インスタンスを以下のように使用するとより効果的です。
+上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`Cell` インスタンスを以下のように使用するとより効果的です。
 
 ```html
 <igx-grid #grid [data]="data">
@@ -431,7 +429,7 @@ public updateValue(value: number){
 }
 ```
 
-テンプレートで使用可能なプロパティの詳細については、`GridCell` の API を参照してください。
+テンプレートで使用可能なプロパティの詳細については、`Cell` の API を参照してください。
 
 ### 列テンプレート API
 
@@ -519,7 +517,7 @@ public initColumns(column: IgcGridColumn) {
 
 書式設定のためのオプションのパラメーターがあります:
 
-- `Format` - 表示される日付 / 時間部分を決定します。デフォルト `'mediumDate'` です (`'MMM d, y'`)。
+- `Format` - 表示される日付 / 時間部分を決定します。デフォルト `'mediumDate'` です (**'MMM d, y'**)。
 - `Timezone` - 日付のタイムゾーン オフセット。デフォルトでは、エンドユーザーのローカル システムのタイムゾーンを使用します。
 - `DigitsInfo` - 10 進表現オブジェクト。デフォルトの設定は `'1.0-3'` です。
 
@@ -570,7 +568,7 @@ constructor() {
 
 ## グリッド データの構造
 
-`Grid` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
+`{GridName}` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -628,11 +626,8 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map } from 'rxjs/operators';
 ```
-<!-- end: Angular -->
 
 各 {Platform} サービス定義で[必須要素](https://angular.io/guide/dependency-injection)である `Injectable` デコレータをインポートします。`HttpClient` はバックエンド サービスに接続する機能を提供します。グリッド コンポーネントにサブスクライブする結果である `Observable` を返します。
-
-<!-- Angular -->
 
 **注** Angular 5 の前では `HttpClient` が `@angular/http` にあり、名前は `Http` でした。
 
@@ -754,7 +749,7 @@ export class MyComponent implements OnInit {
 
 ## 複雑なデータ バインディング
 
-`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+`{GridName}` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
 次のデータ モデルを見てください。
 ```typescript
@@ -791,7 +786,7 @@ interface AminoAcid {
 つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
 >[!WARNING]
->グリッドは、`primary key`、`foreign key`、および `child key` プロパティのこの種のバインディングをサポート**していません**。
+>グリッドは、`PrimaryKey`、`ForeignKey`、および `ChildKey` プロパティのこの種のバインディングをサポート**していません**。
 
 <!-- NOTE this sample is differed -->
 
@@ -802,7 +797,7 @@ interface AminoAcid {
 
 <!-- end: Angular -->
 
-`Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
+`{GridName}` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
     - ネストされたデータを含むセルの `value` を使用します。
     - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
@@ -1143,7 +1138,9 @@ public updatePostalCode(rowId: number){
 
 ## キーボード ナビゲーション
 
-`Grid` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+`{GridName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+
+<!-- Angular -->
 
 詳細については、これらのリソースを参照してください。
 
@@ -1152,9 +1149,15 @@ public updatePostalCode(rowId: number){
  - [Hierarchical Grid キーボード ナビゲーション](../hierarchical-grid/keyboard-navigation.md)
  - [ブログ (英語)](https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility) - Improving Usability, Accessibility and ARIA Compliance with Grid keyboard navigation
 
+ <!-- end: Angular -->
+
+<!-- Angular -->
+
 ## 状態保持
 
 新しい組み込み済みの [GridState](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+
+<!-- end: Angular -->
 
 ## サイズ変更
 
@@ -1165,7 +1168,7 @@ public updatePostalCode(rowId: number){
 
 ## パフォーマンス (試験中)
 
-`Grid` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **`20%`** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
+`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1194,10 +1197,14 @@ platformBrowserDynamic()
 | ビューに描画されていないセル高さは行の高さに影響しません。 | 仮想化のため、セルの高さを変更するビューにないカスタム テンプレートの列は行の高さに影響しません。関連する列がビューにスクロールされるときのみ行の高さに影響します。
 
 ## API リファレンス
-* `Grid`
+
+* `{GridName}`
 * `Column`
+* `Cell`
+* `CellTemplateContext`
 * `GridRow`
-* `GridCell`
+* `GridToolbar`
+* `Paginator`
 
 <!-- Angular -->
 
@@ -1215,13 +1222,14 @@ platformBrowserDynamic()
 
 ## チュートリアル ビデオ
 
-{Platform} `Grid` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
+{Platform} `{GridName}` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
 <!-- end: Angular -->
 
 ## その他のリソース
+<!-- Angular -->
 
 * [Grid サイズ変更](sizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -1233,12 +1241,28 @@ platformBrowserDynamic()
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-* [列のデータ型](column-types.md#default-template)
-<!-- Angular -->
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
+
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [Grid サイズ変更](sizing.md)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [集計](summaries.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+
+<!-- end: Blazor -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

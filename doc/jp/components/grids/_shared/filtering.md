@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} for {ProductName} のフィルタリング
 _description: Angular フィルターを使用して、{Platform} {ComponentTitle} で特定のデータを返します。データ型の Excel スタイル フィルタリングを含む高度なフィルタリング オプションをお試しください。
-_keywords: filter, {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, フィルター, インフラジスティックス
+_keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
@@ -291,7 +291,7 @@ public ngAfterViewInit() {
 ```
 
 ```typescript
-constructor() { 
+constructor() {
     const gridFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And);
     const productFilteringExpressionsTree = new FilteringExpressionsTree(FilteringLogic.And, 'ProductName');
     const productExpression = {
@@ -532,7 +532,7 @@ constructor() {
 <igc-hierarchical-grid auto-generate="false" allow-filtering="true">
     <igc-column id="Artist" field="Artist" filterable='true' data-type="String" [filters]="caseSensitiveFilteringOperand"></igc-column>
     <igc-column id="HasGrammyAward" field="HasGrammyAward" filterable='true' data-type="Boolean" [filters]="booleanFilteringOperand"></igc-column>
-</igc-hierarchical-grid> 
+</igc-hierarchical-grid>
 ```
 ```ts
 constructor() {
@@ -830,7 +830,7 @@ $custom-input-group: input-group-theme(
 <!-- ComponentStart: Grid, TreeGrid -->
 
 ### 6.1.0 Volume 0 の重大な変更
-* {ComponentName} `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
+* `{ComponentName}` `filteringExpressions` プロパティは削除されます。代わりに `FilteringExpressionsTree` を使用してください。
 * `filter_multiple` メソッドは削除されました。`Filter` メソッドおよび `FilteringExpressionsTree` プロパティを代わりに使用してください。
 * `Filter` メソッドに新しいシグネチャがあります。以下のパラメーターを受け付けます。
   * `Name` - フィルターする列の名前。

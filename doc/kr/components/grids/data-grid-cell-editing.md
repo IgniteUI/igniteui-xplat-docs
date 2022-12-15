@@ -3,7 +3,7 @@ title: {Platform} Data Grid | Cell and Row Editing with Batch Updating | Infragi
 _description: Use Infragistics' {Platform} grid component which supports the cell and row editing feature that can also be configured to batch update all cells of the grid at any given moment. Learn how {ProductName} can help you better display your data!
 _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics
 _language: kr
-mentionedTypes: ['Grid', 'EditModeType', 'TransactionType']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Infragistics.Controls.Grid.Implementation.Column']
 ---
 # {Platform} Grid Editing
 

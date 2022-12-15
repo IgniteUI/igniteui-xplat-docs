@@ -1,7 +1,7 @@
 ---
 title: {Platform} {ComponentTitle} 選択 - {ProductName}
 _description: {ProductName} グリッドでデータを選択は、さまざまなイベント、豊富な API、単一選択のような単純なマウス操作を使用して簡単に行うことができます。
-_keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragistics, インフラジスティックス
+_keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
@@ -57,9 +57,9 @@ _language: ja
 
 以下の 3 つのバリエーションがあります。
 
-- `Single selection` (単一選択) - 列セルを<kbd>マウス クリックします</kbd>。
-- `Multi column selection` (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
-- `Range column selection` (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
+- Single selection (単一選択) - 列セルを<kbd>マウス クリックします</kbd>。
+- Multi column selection (複数列の選択) - <kbd>Ctrl</kbd> キーを押しながら列セルを<kbd>マウス クリックします</kbd>。
+- Range column selection (列の範囲選択) - <kbd>Shift</kbd> キーを押しながら + <kbd>マウス クリック</kbd>、その間のすべての列が選択されます。
 
 > 詳細については、[列選択トピック](column-selection.md)を参照してください。
 
@@ -169,7 +169,7 @@ TO DO
 TO DO
 ```
 
- 複数のセルを選択し、`マウスの右`ボタンを押します。コンテキストメニューが表示され、`セル データのコピー`を選択すると、選択したデータが右側の空のボックスに表示されます。
+ 複数のセルを選択し、マウスの右ボタンを押します。コンテキストメニューが表示され、**セル データのコピー** を選択すると、選択したデータが右側の空のボックスに表示されます。
 
  結果:
 

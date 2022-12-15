@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 集計
 
-{ProductName} の {Platform} UI `{ComponentName}` には、グループ フッターとして列レベルで**集計**できる機能があります。{Platform} グリッド集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
+{Platform} `{ComponentName}` には、グループ フッターとして列レベルで**集計**できる機能があります。{Platform} グリッド集計は、列内のデータ タイプに応じて、あるいは `{ComponentName}` にカスタム テンプレートを実装することによって、定義済みのデフォルト集計項目を使用して別のコンテナの列情報を表示できます。
 
 ## {Platform} {ComponentTitle} 集計概要の例
 
@@ -762,7 +762,7 @@ $custom-theme: grid-summary-theme(
 ```
 
 >[!NOTE]
- >コンポーネントが [Emulated](../themes/sass/component-themes.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+ >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
  ```scss
 :host {
@@ -860,9 +860,10 @@ $custom-theme: grid-summary-theme(
 
 ## その他のリソース
 
+<!-- Angular -->
 
 * [{ComponentTitle} 概要](overview.md)
-* [列のデータ型](column-types.md#default-template)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -878,7 +879,24 @@ $custom-theme: grid-summary-theme(
 
 <!-- ComponentEnd: Grid -->
 
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+* [{ComponentTitle} 概要](overview.md)
+* [列のデータ型](column-types.md#デフォルトのテンプレート)
+* [仮想化とパフォーマンス](virtualization.md)
+* [ページング](paging.md)
+* [フィルタリング](filtering.md)
+* [ソート](sorting.md)
+* [列の移動](column-moving.md)
+* [列のピン固定](column-pinning.md)
+* [列のサイズ変更](column-resizing.md)
+* [選択](selection.md)
+
+<!-- end: Blazor -->
+
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [Ignite UI for {Platform} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [Ignite UI for {Platform} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
