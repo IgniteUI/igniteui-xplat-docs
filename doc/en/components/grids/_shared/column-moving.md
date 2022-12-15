@@ -144,9 +144,9 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
-    <igx-column field="Category"></igx-column>
-    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
+    <igc-column field="Category"></igx-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
 </{ComponentSelector}>
 ```
 ```typescript
