@@ -26,24 +26,24 @@ _language: ja
 マスターと詳細モードで表示するように `Grid` を設定するには、`GridDetail` ディレクティブでマークされたグリッド内のテンプレートを指定する必要があります。
 
 ```html
- <{ComponentSelector} >
+<{ComponentSelector}>
          <ng-template GridDetail let-dataItem>
               <!-- Custom detail template content here -->
         </ng-template>
-    </{ComponentSelector}>
+</{ComponentSelector}>
 ```
 
 テンプレートのコンテキストはマスター レコード データであるため、マスター レコードの値を詳細テンプレートに表示できます。例:
 
 ```html
-    <{ComponentSelector} >
+<{ComponentSelector}>
          <ng-template GridDetail let-dataItem>
             <div *ngIf="dataItem.Category">
                 <header>{{dataItem.Category.CategoryName}}</header>
                 <span>{{dataItem.Category.Description}}</span>
             </div>
         </ng-template>
-    </{ComponentSelector}>
+</{ComponentSelector}>
 ```
 
 
@@ -83,15 +83,15 @@ _language: ja
 |既知の制限| 説明|
 | --- | --- |
 | カスタム詳細テンプレート内のタブ ナビゲーションは、次のフォーカスされた要素が表示ビュー ポート以外にある場合、マスター グリッドのスクロール位置を更新しない場合があります。| カスタム詳細テンプレート内のタブ ナビゲーションは、ブラウザーに残されています。 |
-| `<-column>` 定義を含む詳細ビュー内のグリッドをテンプレート化する際に親グリッドもそれらの列をレンダリングします。 | これは、ネストされたグリッドで autoGenerate=true を使用して回避できます。これらの列の要素を変更する必要がある場合、`ColumnInit` イベントを使用できます。|
+| `<igc-column>` 定義を含む詳細ビュー内のグリッドをテンプレート化する際に親グリッドもそれらの列をレンダリングします。 | これは、ネストされたグリッドで autoGenerate=true を使用して回避できます。これらの列の要素を変更する必要がある場合、`ColumnInit` イベントを使用できます。|
 | 詳細テンプレートは Excel にエクスポートされません。| 詳細テンプレートにはあらゆる種類のコンテンツが含まれているため、Excel にエクスポートすることはできません。|
 | 検索機能は、詳細テンプレートの要素を強調表示しません。 | |
 
 ## API リファレンス
 
 * `{GridName}`
-* `ColumnComponent`
+* `Column`
 * `GridRow`
+* `GridCell`
 * `TreeGridRow`
 * `HierarchicalGridRow`
-* `GridCell`

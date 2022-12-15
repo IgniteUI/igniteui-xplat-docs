@@ -206,6 +206,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular","Blazor", "React"],
+    "name": "ステッパー",
+    "href": "layouts/stepper.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "タブ",
     "href": "layouts/tabs.md",
@@ -901,6 +907,22 @@
     ]
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "コンボ",
+    "status": "NEW",
+    "href": "grids/combo/overview.md",
+    "items": [
+      {
+        "name": "機能",
+        "href": "grids/combo/features.md"
+      },
+      {
+        "name": "テンプレート",
+        "href": "grids/combo/templates.md"
+      }
+    ]
+  },
+  {
     "exclude": ["Angular"],
     "name": "リスト",
     "href": "grids/list.md"
@@ -1072,7 +1094,7 @@
     ]
   },
   {
-    "exclude": ["React", "WebComponents", "Angular"],
+    "exclude": ["React", "Angular"],
     "name": "テーマ設定",
     "status": "NEW",
     "href": "grids/theming.md"

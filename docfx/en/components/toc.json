@@ -908,7 +908,7 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Combo",
+    "name": "Combo Box",
     "status": "NEW",
     "href": "grids/combo/overview.md",
     "items": [
