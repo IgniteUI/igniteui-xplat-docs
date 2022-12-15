@@ -227,11 +227,11 @@ constructor() {
 
 public nameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        ${this.formattUppercase(ctx.cell.value)}
+        ${this.formatUppercase(ctx.cell.value)}
     `;
 }
 
-public formattUppercase(value: string) {
+public formatUppercase(value: string) {
     return value.toUpperCase();
 }
 ```
@@ -309,7 +309,7 @@ public formatTitlecase(value: string) {;
 }
 ```
 
-上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`GridCell` インスタンスを以下のように使用するとより効果的です。
+上記のスニペットで暗示的に提供されたセル値への参照を取得します。データを表示し、セルの値にカスタム スタイル設定およびパイプ変換を適用する場合に使用します。ただし、`Cell` インスタンスを以下のように使用するとより効果的です。
 
 ```html
 <igx-grid #grid [data]="data">
@@ -429,7 +429,7 @@ public updateValue(value: number){
 }
 ```
 
-テンプレートで使用可能なプロパティの詳細については、`GridCell` の API を参照してください。
+テンプレートで使用可能なプロパティの詳細については、`Cell` の API を参照してください。
 
 ### 列テンプレート API
 
@@ -1168,7 +1168,7 @@ public updatePostalCode(rowId: number){
 
 ## パフォーマンス (試験中)
 
-`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **`20%`** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
+`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1199,9 +1199,12 @@ platformBrowserDynamic()
 ## API リファレンス
 
 * `{GridName}`
-* `IgbColumn`
+* `Column`
+* `Cell`
+* `CellTemplateContext`
 * `GridRow`
-* `GridCell`
+* `GridToolbar`
+* `Paginator`
 
 <!-- Angular -->
 

@@ -206,6 +206,12 @@
     "status": "NEW"
   },
   {
+    "exclude": ["Angular","Blazor", "React"],
+    "name": "Stepper",
+    "href": "layouts/stepper.md",
+    "status": "NEW"
+  },
+  {
     "exclude": ["Angular", "React"],
     "name": "Tabs",
     "href": "layouts/tabs.md",
@@ -663,19 +669,19 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+    "exclude": ["Angular", "React" ],
     "name": "Pivot Grid",
     "href": "grids/pivot-grid/overview.md",
     "status": "NEW",
     "items": [
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Pivot Grid Shared Topic",
         "href": "grids/pivot-grid/template.md",
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
         "status": "NEW"
@@ -907,6 +913,22 @@
     ]
   },
   {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Combo",
+    "status": "NEW",
+    "href": "grids/combo/overview.md",
+    "items": [
+      {
+        "name": "Features",
+        "href": "grids/combo/features.md"
+      },
+      {
+        "name": "Templates",
+        "href": "grids/combo/templates.md"
+      }
+    ]
+  },
+  {
     "exclude": ["Angular"],
     "name": "List",
     "href": "grids/list.md"
@@ -1078,7 +1100,7 @@
     ]
   },
   {
-    "exclude": ["React", "WebComponents", "Angular"],
+    "exclude": ["React", "Angular"],
     "name": "Theming",
     "status": "NEW",
     "href": "grids/theming.md"

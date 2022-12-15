@@ -22,6 +22,8 @@
     "names":[{"platform":"Angular","fileName":"igx-on-popup-event-args.ts","mappedName":"IgxOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"OnClosedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-on-closed-event-args.ts","mappedName":"IgxOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionButton",
+    "names":[{"platform":"Angular","fileName":"igx-tool-action-button-component.ts","dynamicModuleName":"igx-tool-action-button-dynamic-module.ts","moduleName":"igx-tool-action-button-module.ts","mappedName":"IgxToolActionButtonComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionLabel",
     "names":[{"platform":"Angular","fileName":"igx-tool-action-label-component.ts","dynamicModuleName":"igx-tool-action-label-dynamic-module.ts","moduleName":"igx-tool-action-label-module.ts","mappedName":"IgxToolActionLabelComponent"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionRadio",

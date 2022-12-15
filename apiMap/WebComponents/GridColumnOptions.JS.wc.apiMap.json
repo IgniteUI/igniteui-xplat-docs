@@ -63,7 +63,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"actualBaseTheme"}],"originalName":"ActualBaseTheme"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"buttonDensity"}],"originalName":"ButtonDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualButtonDensity"}],"originalName":"ActualButtonDensity"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcColumnComponent","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcDataGridColumnComponent","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualDensity"}],"originalName":"ActualDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},

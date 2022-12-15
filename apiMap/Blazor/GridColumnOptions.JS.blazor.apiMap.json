@@ -54,7 +54,7 @@
     { "names":[{"platform":"Blazor","mappedType":"BaseControlTheme","mappedName":"ActualBaseTheme"}],"originalName":"ActualBaseTheme"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ButtonDensity"}],"originalName":"ButtonDensity"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualButtonDensity"}],"originalName":"ActualButtonDensity"},
-    { "names":[{"platform":"Blazor","mappedType":"IgbColumn","mappedName":"Column"}],"originalName":"Column"},
+    { "names":[{"platform":"Blazor","mappedType":"IgbDataGridColumn","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"Density"}],"originalName":"Density"},
     { "names":[{"platform":"Blazor","mappedType":"ControlDisplayDensity","mappedName":"ActualDensity"}],"originalName":"ActualDensity"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},
