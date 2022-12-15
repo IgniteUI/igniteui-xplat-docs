@@ -1,7 +1,3 @@
-pool:
-  name: BuildAgentOnPrem
-  demands: npm
-
 trigger:
   branches:
     include:
@@ -14,109 +10,117 @@ pr:
 
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
-variables:
-  buildType: staging
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    buildType: 'production'
+stages:
+- stage: Build
+  jobs:
+  - job: BuildDocs
+    pool:
+      name: BuildAgentOnPrem
+      demands: npm
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSource: 'spec'
-    versionSpec: '16.x'
+    variables:
+      buildType: staging
+      ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+        buildType: 'production'
 
-- script: echo '$(Build.BuildNumber)'
-  displayName: 'Display Build Number'
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSource: 'spec'
+        versionSpec: '16.x'
 
-- script: echo '$(buildType)'
-  displayName: 'Display Build Type'
+    - script: echo '$(Build.BuildNumber)'
+      displayName: 'Display Build Number'
 
-- task: RegexReplace@3
-  displayName: 'replace environment in doc/docfx'
-  inputs:
-    InputSearchPattern: |
-      doc\**\*.*
-      docfx\**\*.*
-    FindRegex: 'environment:dvDemosBaseUrl'
-    ReplaceRegex: 'environment:demosBaseUrl'
-    UseUTF8: true
-    UseRAW: true
-  enabled: false
+    - script: echo '$(buildType)'
+      displayName: 'Display Build Type'
 
-- task: Npm@1
-  displayName: 'npm cache clean'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'cache clean --force'
-  continueOnError: true
+    - task: RegexReplace@3
+      displayName: 'replace environment in doc/docfx'
+      inputs:
+        InputSearchPattern: |
+          doc\**\*.*
+          docfx\**\*.*
+        FindRegex: 'environment:dvDemosBaseUrl'
+        ReplaceRegex: 'environment:demosBaseUrl'
+        UseUTF8: true
+        UseRAW: true
+      enabled: false
 
-- task: Npm@1
-  displayName: 'npm ci'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: ci
-- task: Npm@1
-  displayName: 'Build WebComponents'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run buildWebComponents'
-- task: Npm@1
-  displayName: 'Build WebComponents $(buildType) EN'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
+    - task: Npm@1
+      displayName: 'npm cache clean'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'cache clean --force'
+      continueOnError: true
 
-- task: NuGetCommand@2
-  displayName: 'Package WebComponents EN'
-  inputs:
-    command: pack
-    packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
-    versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
+    - task: Npm@1
+      displayName: 'npm ci'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: ci
+    - task: Npm@1
+      displayName: 'Build WebComponents'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run buildWebComponents'
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) EN'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
-- task: Npm@1
-  displayName: 'Build Blazor EN'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
+    - task: NuGetCommand@2
+      displayName: 'Package WebComponents EN'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
 
-- task: NuGetCommand@2
-  displayName: 'Package Blazor EN'
-  inputs:
-    command: pack
-    packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
-    versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
+    - task: Npm@1
+      displayName: 'Build Blazor EN'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
 
-- task: Npm@1
-  displayName: 'Build React EN'
-  inputs:
-    command: custom
-    workingDir: '$(Build.SourcesDirectory)'
-    verbose: false
-    customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
+    - task: NuGetCommand@2
+      displayName: 'Package Blazor EN'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
 
-- task: NuGetCommand@2
-  displayName: 'Package React EN'
-  inputs:
-    command: pack
-    packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
-    versioningScheme: byBuildNumber
-    buildProperties: 'langFolder=en;type=$(buildType);plat=React'
+    - task: Npm@1
+      displayName: 'Build React EN'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifacts'
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    - task: NuGetCommand@2
+      displayName: 'Package React EN'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=en;type=$(buildType);plat=React'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifacts'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
