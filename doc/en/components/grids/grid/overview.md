@@ -1168,6 +1168,75 @@ export const EMPLOYEE_DATA = [
     }
 ]
 ```
+
+```razor
+public class EmployeesNestedData : List<EmployeesNestedDataItem>
+{
+    public EmployeesNestedData()
+    {
+        this.Add(new EmployeesNestedDataItem()
+        {            
+            Age = 55,
+            Employees = new List<EmployeesNestedDataItem_EmployeesItem>()
+            {
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 43,
+                    Salary = 70000,
+                    Productivity = 80,
+                    City = @"Hamburg",
+                    Country = @"Germany",
+                    Phone = @"609-444-555",
+                    HireDate = @"2011, 6, 3",
+                    ID = 3,
+                    Name = @"Michael Burke",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 29,
+                    Salary = 60000,
+                    Productivity = 80,
+                    City = @"Munich",
+                    Country = @"Germany",
+                    Phone = @"609-333-444",
+                    HireDate = @"2009, 6, 19",
+                    ID = 2,
+                    Name = @"Thomas Anderson",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 31,
+                    Salary = 90000,
+                    Productivity = 80,
+                    City = @"Warasw",
+                    Country = @"Poland",
+                    Phone = @"609-222-205",
+                    HireDate = @"2014, 8, 18",
+                    ID = 11,
+                    Name = @"Monica Reyes",
+                    Title = @"Software Development Team Lead"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 35,
+                    Salary = 70000,
+                    Productivity = 70,
+                    City = @"Koln",
+                    Country = @"Germany",
+                    Phone = @"609-502-525",
+                    HireDate = @"2015, 9, 17",
+                    ID = 6,
+                    Name = @"Roland Mendel",
+                    Title = @"Senior Software Developer"
+                }}            
+            });
+        }
+    }
+}
+```
+
 The custom template for the column, that will render the nested data:
 
 ```html
@@ -1252,6 +1321,40 @@ public getAge(rowId: number) {
 }
 ```
 
+```razor
+<IgbColumn Header="Employees" Field="Employees" BodyTemplateScript="WebGridNestedDataCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+    const people = ctx.cell.value;
+    if (people != null) {
+        if (people.length === 0) return html``;
+        const person = people[0];
+        return html`
+    <igc-expansion-panel>
+        <h3 slot="title">
+        ${person.Name}
+        </h3>
+        <div class="description">
+            <div>
+                <label for="title">Title</label>
+                <input id='Title' type="text" name="title" value="${person.Title}" style="text-overflow: ellipsis;" />
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input id='Age' type="text" name="title" value="${person.Age}" style="text-overflow: ellipsis;" />
+            </div>
+        </div>
+    </igc-expansion-panel>
+        `;
+    }
+}, false);
+```
+
 And the result from this configuration is:
 
 
@@ -1284,6 +1387,29 @@ export const DATA: any[] = [
         Region: null
     }
 ]
+```
+
+```razor
+public class CustomersData : List<CustomersDataItem>
+{
+    public CustomersData()
+    {
+        this.Add(new CustomersDataItem()
+        {
+            ID = "ALFKI",
+            CompanyName = "Alfreds Futterkiste",
+            ContactName = "Maria Anders",
+            ContactTitle = "Sales Representative",
+            Address = "Obere Str. 57",
+            City = "Berlin",
+            Region = "East",
+            PostalCode = "12209",
+            Country = "Germany",
+            Phone = "030-0074321",
+            Fax = "030-0076545"
+        });
+    }
+}
 ```
 
 The custom template:
@@ -1339,6 +1465,30 @@ public getCity(rowId: number) {
 
 public getPostalCode(rowId: number) {
 }
+```
+
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"
+           BodyTemplateScript="AddressCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div class="address-container">
+    <div class="country-city">
+        <span><strong>Country:</strong> ${ctx.cell.row.data.Country}</span>
+        <br>
+        <span><strong>City:</strong> ${ctx.cell.row.data.City}</span>
+    </div>
+    <div class="phone-pscode">
+        <span><strong>Postal Code:</strong> ${ctx.cell.row.data.PostalCode}</span>
+        <br>
+        <span><strong>Phone:</strong> ${ctx.cell.row.data.Phone}</span>
+    </div>
+    <br />
+</div>`;
+}, false);    
 ```
 
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
@@ -1420,6 +1570,38 @@ public updateCity(rowId: number) {
 
 public updatePostalCode(rowId: number) {
 }
+```
+
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"           
+           InlineEditorTemplateScript="AddressEditCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressEditCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+
+    return html`<div class="address-container--edit">
+    <div>
+        <span><strong>Country:</strong></span>
+        <input id='Country' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Country}"></input>
+        <br>
+        <span><strong>City:</strong></span>
+        <input id='City' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.City}"></input>
+    </div>
+    <div>
+        <span><strong>Postal Code:</strong></span>
+        <input id='PostalCode' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.PostalCode}"></input>
+        <br>
+        <span><strong>Selected:</strong></span>
+        <input id='Phone' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Phone}"></input>
+    </div>
+    <br>
+</div>`;
+}, false);
 ```
 
 ### Working with Flat Data Example
