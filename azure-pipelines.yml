@@ -59,9 +59,15 @@ steps:
     workingDir: '$(Build.SourcesDirectory)'
     verbose: false
     customCommand: ci
-
 - task: Npm@1
-  displayName: 'Build WebComponents EN'
+  displayName: 'Build WebComponents'
+  inputs:
+    command: custom
+    workingDir: '$(Build.SourcesDirectory)'
+    verbose: false
+    customCommand: 'run buildWebComponents'
+- task: Npm@1
+  displayName: 'Build WebComponents $(buildType) EN'
   inputs:
     command: custom
     workingDir: '$(Build.SourcesDirectory)'
