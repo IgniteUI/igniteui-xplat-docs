@@ -41,8 +41,8 @@ _language: ja
 
 IgniteUI.Blazor パッケージの追加については、以下のトピックを参照してください。
 
-- [作業の開始](..\..\general-getting-started.md)
-- [NuGet パッケージの追加](..\..\general-nuget-feed.md)
+- [作業の開始](../../general-getting-started-blazor-client.md)
+- [NuGet パッケージの追加](../../general-nuget-feed.md)
 
 また、グリッドに必要なスタイルを提供するために、アプリケーションの index.html ファイルに次の CSS リンクを含める必要があります:
 
@@ -144,7 +144,7 @@ constructor() {
 }
 ```
 
-`id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。
+`Id` プロパティは文字列値で、設定されない場合に自動生成生成されるグリッドの一意識別子です。`data` はグリッドをローカル データにバインドします。
 
 `AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
@@ -645,6 +645,7 @@ const POJO = [{
 
 >`AutoGenerate` 列を使用する場合、**データ キーが同一である必要があります**。
 
+
 <!-- Angular, WebComponents -->
 ## グリッドのデータ バインディング
 
@@ -715,7 +716,7 @@ export interface NorthwindRecord {
 }
 ```
 
-サービスは `Observable<NorthwindRecord[]>` を返す `fetchData` の単一のメソッドを含みます。要求が任意の理由 (サーバーが利用不可、ネットワーク エラーなど) により失敗した場合、`HttpClient` はエラーを返します。`CatchError` 演算子を使用して失敗した Observable を傍受してエラーをエラー ハンドラーへ渡します。エラー ハンドラーはエラーをログして値を返します。
+サービスは `Observable<NorthwindRecord[]>` を返す `FetchData` の単一のメソッドを含みます。要求が任意の理由 (サーバーが利用不可、ネットワーク エラーなど) により失敗した場合、`HttpClient` はエラーを返します。`CatchError` 演算子を使用して失敗した Observable を傍受してエラーをエラー ハンドラーへ渡します。エラー ハンドラーはエラーをログして値を返します。
 
 ```typescript
 // northwind.service.ts

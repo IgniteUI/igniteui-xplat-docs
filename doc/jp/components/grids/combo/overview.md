@@ -1,17 +1,18 @@
 ---
-title: {Platform} ComboBox コンポーネント - {ProductName}
+title: {Platform} コンボボックス コンポーネント - {ProductName}
 _description: {Platform} Combo コンポーネントは、基本的な HTML 入力、選択、フィルタリング、およびカスタム ドロップダウン リストの機能を組み合わせた強力な入力を提供します。無料でお試しください。
-_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ComboBox コンポーネント
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネント
 mentionedTypes: ['Combo']
+_language: ja
 ---
 
-# {Platform} ComboBox の概要
+# {Platform} コンボボックスの概要
 
-{Platform} ComboBox は、ユーザーが提供されたリストでさまざまな定義済みオプションを簡単に選択、フィルタリング、およびグループ化できるようにする軽量のエディターです。このコンポーネントは、{Platform} ComboBox キーボード ナビゲーションのオプション、項目、ヘッダー、およびフッターの表示方法をカスタマイズするためのテンプレートもサポートしています。
+{Platform} コンボボックスは、ユーザーが提供されたリストでさまざまな定義済みオプションを簡単に選択、フィルタリング、およびグループ化できるようにする軽量のエディターです。このコンポーネントは、{Platform} コンボボックス キーボード ナビゲーションのオプション、項目、ヘッダー、およびフッターの表示方法をカスタマイズするためのテンプレートもサポートしています。
 
-{ProductName} Combobox コンポーネントは、ユーザーが選択できるオプションのリストを提供します。仮想化された項目のリストにすべてのオプションが表示されます。つまり、ComboBox は、1 つ以上のオプションを選択できる数千のレコードを同時に表示できます。さらに、このコンポーネントには、大文字と小文字を区別するフィルタリング、グループ化、複雑なデータ バインディングなどの機能があります。
+{ProductName} コンボボックス コンポーネントは、ユーザーが選択できるオプションのリストを提供します。仮想化された項目のリストにすべてのオプションが表示されます。つまり、コンボボックスは、1 つ以上のオプションを選択できる数千のレコードを同時に表示できます。さらに、このコンポーネントには、大文字と小文字を区別するフィルタリング、グループ化、複雑なデータ バインディングなどの機能があります。
 
-## {Platform} ComboBox の例
+## {Platform} コンボボックスの例
 
 <code-view style="height:320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -22,7 +23,7 @@ mentionedTypes: ['Combo']
 
 <div class="divider--half"></div>
 
-## Ignite UI {Palform} ComboBox コンポーネントを使用した作業の開始
+## Ignite UI {Palform} コンボボックス コンポーネントを使用した作業の開始
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
@@ -105,7 +106,7 @@ export class Sample {
 この例では、コンボに各都市の `name` 名前を表示し、`id` フィールドを使用して項目を選択するようにします。したがって、これらのプロパティをコンボの `DisplayKey` と `ValueKey` にそれぞれ提供します。
 
 > [!Note]
-> データ ソースがプリミティブ型 (`文字列`、`数値`など) で構成されている場合は、`ValueKey` と `DisplayKey` を**指定しないでください**。
+> データ ソースがプリミティブ型 (`strings`、`numbers`など) で構成されている場合は、`ValueKey` と `DisplayKey` を**指定しないでください**。
 
 ### 選択 API
 
@@ -153,12 +154,12 @@ combo.deselect([cities[1], cities[5]]);
 
 コンボ コンポーネントがフォーカスされていて、オプションのリストが**表示されていない**場合:
 
-- <kbd>下矢印/Alt + 下矢印</kbd>キーを使用してオプションのリストを開きます。
+- <kbd>下矢印/Alt + 下矢印</kbd> キーを使用してオプションのリストを開きます。
 
 コンボ コンポーネントがフォーカスされ、オプションのリストが表示されている場合:
 
-- <kbd>下矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
-- <kbd>上矢印</kbd>キーを使用すると、リスト内の前の項目がアクティブになります。最初の項目がすでにアクティブな場合、入力にフォーカスします。
+- <kbd>下矢印</kbd> キーを使用すると、リスト内の次の項目がアクティブになります。
+- <kbd>上矢印</kbd> キーを使用すると、リスト内の前の項目がアクティブになります。最初の項目がすでにアクティブな場合、入力にフォーカスします。
 - <kbd>Home</kbd> または <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 - <kbd>Space</kbd> キーを使用すると、アクティブな項目が選択されます。
 - <kbd>Enter</kbd> キーを使用すると、アクティブな項目が選択され、オプションのリストが閉じます。
@@ -216,13 +217,13 @@ combo.deselect([cities[1], cities[5]]);
 <!-- Blazor -->
 
 * [Ignite UI for Blazor **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub (英語)**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
 * [Ignite UI for Web Components **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub (英語)**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
