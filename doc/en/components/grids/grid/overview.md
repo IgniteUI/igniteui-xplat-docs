@@ -30,7 +30,7 @@ In this grid example, you can see how users can do both basic and excel-style fi
 
 <div class="divider--half"></div>
 
-## Getting Started with {ProductName} Grid
+## Getting Started with {Platform} Grid
 
 ### Dependencies
 
@@ -492,7 +492,7 @@ public smallView: TemplateRef<any>;
 ....
 
 const column = this.grid.getColumnByName("User");
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = this.smallView;
 ```
@@ -504,7 +504,7 @@ column.bodyTemplate = this.smallView;
 ```
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 user.bodyTemplate = this.smallView;
 
@@ -1262,7 +1262,7 @@ platformBrowserDynamic()
 
 <!-- end: Angular -->
 
-## {Platform} Grid Styling Configuration
+## Styling {Platform} Grid
 > [!NOTE]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
@@ -1327,6 +1327,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 <!-- Angular -->
 
 ## Theming Dependencies
+
 * **Icon Theme**
 * **InputGroup Theme**
 * **Chip Theme**
