@@ -15,7 +15,7 @@ _language: ja
 
 <code-view style="height: 725px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
            alt="{Platform} ステッパーの例"
            github-src="layouts/stepper/overview">
 </code-view>
@@ -115,9 +115,9 @@ defineComponents(IgcStepperComponent);
 
 <code-view style="height: 528px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-title-position-and-orientation-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
            alt="{Platform} ステッパー方向の例"
-           github-src="layouts/stepper/title-position-and-orientation-example">
+           github-src="layouts/stepper/orientation">
 </code-view>
 
 <div class="divider--half"></div>
@@ -145,9 +145,9 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 <code-view style="height: 430px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
            alt="{Platform} リニア ステッパーの例"
-           github-src="layouts/stepper/linear-example">
+           github-src="layouts/stepper/linear">
 </code-view>
 
 <div class="divider--half"></div>
@@ -210,7 +210,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes-example"
+           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
            alt="{Platform} ステップ タイプの例"
            github-src="layouts/stepper/steptypes">
 </code-view>
