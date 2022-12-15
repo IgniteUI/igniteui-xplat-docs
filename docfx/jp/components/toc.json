@@ -207,7 +207,7 @@
   },
   {
     "exclude": ["Angular","Blazor", "React"],
-    "name": "Stepper",
+    "name": "ステッパー",
     "href": "layouts/stepper.md",
     "status": "NEW"
   },
@@ -908,16 +908,16 @@
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
-    "name": "Combo",
+    "name": "コンボ",
     "status": "NEW",
     "href": "grids/combo/overview.md",
     "items": [
       {
-        "name": "Features",
+        "name": "機能",
         "href": "grids/combo/features.md"
       },
       {
-        "name": "Templates",
+        "name": "テンプレート",
         "href": "grids/combo/templates.md"
       }
     ]

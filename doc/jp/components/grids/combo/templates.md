@@ -1,28 +1,29 @@
 ---
-title: {Platform} ComboBox Component Templates – {ProductName}
-_description: {ProductName} ComboBox component templates
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Templates
+title: {Platform} コンボボックス コンポーネントのテンプレート – {ProductName}
+_description: {ProductName} コンボボックス コンポーネントのテンプレート
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Templates, {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントのテンプレート
 mentionedTypes: ['Combo']
+_language: ja
 ---
 
-# {Platform} ComboBox Templates
+# {Platform} コンボボックスのテンプレート
 
-The {ProductName} ComboBox component allows defining custom templates for different areas such as items, group headers, empty list, and icons.
+{ProductName} コンボボックス コンポーネントを使用すると、項目、グループ ヘッダー、空のリスト、アイコンなど、さまざまな領域のカスタム テンプレートを定義できます。
 
-## ComboBox Templates Example
+## コンボボックス テンプレートの例
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/combo-templates"
-           alt="{Platform} Combo Templates"
+           alt="{Platform} コンボ テンプレート"
            github-src="grids/combo/templates">
 </code-view>
 
-## Template Types
+## テンプレート タイプ
 
-### Item Template 
+### Item Template (項目テンプレート) 
 
-The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
+`itemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
 
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
@@ -36,9 +37,9 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 combo.itemTempate = itemTemplate;
 ```
 
-### Group Header Template 
+### Group Header Template (グループ ヘッダー テンプレート) 
 
-The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
+`groupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
 
 ```ts
 import { ComboItemTemplate } from 'igniteui-webcomponents';
@@ -50,11 +51,11 @@ const groupHeaderTemplate: ComboItemTemplate<City> = ({ item }) => {
 combo.groupHeaderTemplate = groupHeaderTemplate;
 ```
 
-## Slots
-Other than custom templates, the {ProductName} ComboBox component exposes several slots that allow users to pass custom content to different combo parts.
+## スロット
+カスタム テンプレート以外に、{ProductName} コンボボックス コンポーネントは、ユーザーがカスタム コンテンツをさまざまなコンボ パーツに渡すことを可能にするいくつかのスロットを公開します。
 
-### Header Slot
-To render a custom header above the list of options pass content to the `header` slot:
+### ヘッダー スロット
+オプションのリストの上にカスタム ヘッダーをレンダリングするには、コンテンツを `header` スロットに渡します。
 
 ```html
 <igc-combo>
@@ -62,8 +63,8 @@ To render a custom header above the list of options pass content to the `header`
 </igc-combo>
 ```
 
-### Footer Slot
-To render a custom footer below the list of options pass content to the `footer` slot:
+### フッター スロット
+オプションのリストの下にカスタム フッターをレンダリングするには、コンテンツを `footer` スロットに渡します。
 
 ```html
 <igc-combo>
@@ -71,8 +72,8 @@ To render a custom footer below the list of options pass content to the `footer`
 </igc-combo>
 ```
 
-### Empty List Slot
-To render a custom content when the filtering operation returns no result, use the `empty` slot:
+### 空のリスト スロット
+フィルタリング操作で結果が返されない場合にカスタム コンテンツをレンダリングするには、`empty` スロットを使用します。
 
 ```html
 <igc-combo>
@@ -80,8 +81,8 @@ To render a custom content when the filtering operation returns no result, use t
 </igc-combo>
 ```
 
-### Toggle Icon Slot
-The toggle icon in the combo input can also be modified via the `toggle-icon` slot:
+### トグル アイコン スロット
+コンボ入力のトグル アイコンは、`toggle-icon` スロットを介して変更することもできます。
 
 ```html
 <igc-combo>
@@ -89,8 +90,8 @@ The toggle icon in the combo input can also be modified via the `toggle-icon` sl
 </igc-combo>
 ```
 
-### Clear Icon Slot
-The clear icon can be changed via the `clear-icon` slot:
+### クリア アイコン スロット
+クリア アイコンは、`clear-icon` スロットを介して変更できます。
 
 ```html
 <igc-combo>
@@ -99,7 +100,7 @@ The clear icon can be changed via the `clear-icon` slot:
 ```
 
 <!-- WebComponents -->
-## API Reference
+## API リファレンス
 
 * `Combo`
 * `ComboItem`
@@ -108,18 +109,18 @@ The clear icon can be changed via the `clear-icon` slot:
 
 <!-- end: WebComponents -->
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

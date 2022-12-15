@@ -1,25 +1,26 @@
 ---
-title: {Platform} ComboBox Component – {ProductName}
-_description: {ProductName} ComboBox Component Features
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Features
+title: {Platform} コンボボックス コンポーネント – {ProductName}
+_description: {ProductName} コンボボックス コンポーネントの機能
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox Component Features, {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} コンボボックス コンポーネントの機能
 mentionedTypes: ['Combo', 'ComboList', 'ComboItem']
+_language: ja
 ---
 
-# {Platform} ComboBox Features
+# {Platform} コンボボックスの機能
 
-The {ProductName} ComboBox component exposes several features such as filtering and grouping.
+{ProductName} コンボボックス コンポーネントは、フィルタリングやグループ化などのいくつかの機能を公開しています。
 
-## Combobox Features Example
-The following demo shows some `ComboBox` features that are enabled/disabled at runtime:
+## コンボボックス機能の例
+以下のデモは、ランタイムで有効または無効にできるいくつかの `ComboBox` 機能を示しています。
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/combo-features"
-           alt="{Platform} Combo Features"
+           alt="{Platform} コンボ機能"
            github-src="grids/combo/features">
 </code-view>
 
-In our sample we are going to use the `Switch` component, so we have to register it together with the combo:
+このサンプルでは、`Switch` コンポーネントを使用するため、コンボと一緒に登録する必要があります。
 
 <!-- WebComponents -->
 ```ts
@@ -37,7 +38,7 @@ defineComponents(IgcComboComponent, IgcSwitchComponent);
 builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+また、追加の CSS ファイルをリンクして、スタイルを `Switch` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -45,7 +46,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
-Then, we will add event listeners to all switch components so that we can control the combo features by toggling the switches:
+次に、スイッチを切り替えてコンボ機能を制御できるように、すべてのスイッチ コンポーネントにイベント リスナーを追加します。
 
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
@@ -67,7 +68,7 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
-Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field: 
+グループ化は、`GroupKey` プロパティを対応するデータ ソース フィールドに設定することで有効/無効になることに注意してください。 
 
 ```ts
 let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
@@ -77,13 +78,13 @@ switchGroup.addEventListener("igcChange", () => {
 });
 ```
 
-## Features
+## 機能
 
-### Filtering
+### フィルタリング
 
-By default, filtering in the ComboBox is enabled. It can be disabled by setting the `DisableFiltering` property.
+コンボボックスのフィルタリングがデフォルトで有効になります。無効にするには、`DisableFiltering` プロパティを設定します。
 
-Filtering options can be further enhanced by enabling the search case sensitivity. The case-sensitive icon can be turned on using the `CaseSensitiveIcon` property so that end-users can control the case sensitivity.
+フィルタリング オプションは、検索の大文字と小文字の区別を有効にすることでさらに拡張できます。`CaseSensitiveIcon` プロパティを使用して大文字と小文字を区別するアイコンをオンにすると、エンド ユーザーは大文字と小文字の区別を制御できます。
 
 ```html
 <igc-combo disable-filtering case-sensitive-icon></igc-combo>
@@ -93,11 +94,11 @@ Filtering options can be further enhanced by enabling the search case sensitivit
 <IgbCombo DisableFiltering="true" CaseSensitiveIcon="true" />
 ```
 
-#### Filtering Options
+#### フィルタリング オプション
 
-The {ProductName} `ComboBox` component exposes one more filtering property that allows passing configuration of both `FilterKey` and `CaseSensitive` options. The `FilterKey` indicates which data source field should be used for filtering the list of options. The `CaseSensitive` option indicates if the filtering should be case-sensitive or not.
+{ProductName} `ComboBox` コンポーネントは、`FilterKey` オプションと `CaseSensitive` オプションの両方の構成を渡すことができるフィルター プロパティをもう 1 つ公開しています。`FilterKey` は、オプションのリストをフィルタリングするためにどのデータ ソース フィールドを使用する必要があるかを示します。`CaseSensitive` オプションは、フィルタリングで大文字と小文字を区別するかどうかを示します。
 
-The following code snippet shows how to filter the cities from our data source by country instead of name. We are also making the filtering case-sensitive by default:
+次のコード スニペットは、名前ではなく国でデータ ソースから都市をフィルター処理する方法を示しています。また、デフォルトで大文字と小文字を区別するフィルタリングを行います。
 
 ```ts
 const options = {
@@ -108,9 +109,9 @@ const options = {
 combo.filteringOptions = options;
 ```
 
-### Grouping
+### グループ化
 
-Defining a `GroupKey` option will group the items, according to the provided key:
+`GroupKey` オプションを定義すると、キーに基づいて項目をグループ化します。
 
 ```html
 <igc-combo group-key="region"></igc-combo>
@@ -121,11 +122,11 @@ Defining a `GroupKey` option will group the items, according to the provided key
 ```
 
 > [!Note]
-> The `GroupKey` property will only have effect if your data source consists of complex objects.
+> `GroupKey` プロパティは、データ ソースが複雑なオブジェクトで構成されている場合にのみ有効です。
 
-#### Sorting Direction
+#### ソートの方向
 
-The ComboBox component also exposes an option for setting whether groups should be sorted in ascending or descending order. By default, the sorting order is ascending:
+コンボボックス コンポーネントは、グループを昇順または降順でソートするかどうかを設定するオプションも公開します。デフォルトでは、ソート順序は、昇順に設定されています。
 
 ```html
 <igc-combo group-sorting="desc"></igc-combo>
@@ -135,9 +136,9 @@ The ComboBox component also exposes an option for setting whether groups should 
 <IgbCombo GroupSorting="desc" />
 ```
 
-### Label 
+### ラベル 
 
-The `Combo` label can be set easily using the `Label` property:
+`Combo` ラベルは、`Label` プロパティを使用して簡単に設定できます。
 
 ```html
 <igc-combo label="Cities"></igc-combo>
@@ -147,9 +148,9 @@ The `Combo` label can be set easily using the `Label` property:
 <IgbCombo Label="Cities" />
 ```
 
-### Placeholder
+### プレースホルダー
 
-A placeholder text can be specified for both the ComboBox component input and the search input placed inside the dropdown menu: 
+コンボボックス コンポーネント入力とドロップダウン メニュー内に配置された検索入力の両方に、プレースホルダー テキストを指定できます。 
 
 ```html
 <igc-combo placeholder="Pick a city" placeholder-search="Search for a city"></igc-combo>
@@ -159,9 +160,9 @@ A placeholder text can be specified for both the ComboBox component input and th
 <IgbCombo Placeholder="Pick a city" PlaceholderSearch="Search for a city" />
 ```
 
-### Autofocus
+### オートフォーカス
 
-If you want your ComboBox to be automatically focused on page load you can use the following code:
+コンボボックスをページの読み込みに自動的にフォーカスさせたい場合は、次のコードを使用できます。
 
 ```html
 <igc-combo autofocus></igc-combo>
@@ -171,9 +172,9 @@ If you want your ComboBox to be automatically focused on page load you can use t
 <IgbCombo Autofocus="true" />
 ```
 
-### Search Input Focus
+### 検索入力のフォーカス
 
-The ComboBox search input is focused by default. To disable this feature and move the focus to the list of options use the `AutofocusList` property as shown below: 
+コンボボックスの検索入力はデフォルトでフォーカスされています。この機能を無効にしてフォーカスをオプションのリストに移動するには、以下に示すように `AutofocusList` プロパティを使用します。 
 
 ```html
 <igc-combo autofocus-list></igc-combo>
@@ -183,9 +184,9 @@ The ComboBox search input is focused by default. To disable this feature and mov
 <IgbCombo AutofocusList="true" />
 ```
 
-### Required 
+### 必須 
 
-The ComboBox can be marked as required by setting the required property.
+required プロパティを設定することで、コンボボックスを必須としてマークできます。
 
 ```html
 <igc-combo required></igc-combo>
@@ -195,9 +196,9 @@ The ComboBox can be marked as required by setting the required property.
 <IgbCombo Required="true" />
 ```
 
-### Disable ComboBox
+### コンボボックスを無効にする
 
-You can disable the ComboBox using the `Disabled` property:
+`Disabled` プロパティを使用してコンボボックスを無効にできます。
 
 ```html
 <igc-combo disabled></igc-combo>
@@ -208,7 +209,7 @@ You can disable the ComboBox using the `Disabled` property:
 ```
 
 <!-- WebComponents -->
-## API Reference
+## API リファレンス
 
 * `Combo`
 * `ComboItem`
@@ -216,18 +217,18 @@ You can disable the ComboBox using the `Disabled` property:
 * `ComboList`
 
 <!-- end: WebComponents -->
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

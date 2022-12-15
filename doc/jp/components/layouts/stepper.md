@@ -1,37 +1,38 @@
 ---
-title: {Platform} Stepper Component - {ProductName}
-_description: {Platform} Stepper component is used to visualize content as a process and to show its progress by dividing the content into logical steps. Try it for FREE.
-_keywords: {Platform} Stepper, {ProductName}, Infragistics
+title: {Platform} ステッパー コンポーネント - {ProductName}
+_description: {Platform} ステッパー コンポーネントを使用してコンテンツをプロセスとして可視化し、コンテンツを論理的なステップに分割して進行状況を表示します。無料でお試しください。
+_keywords: {Platform} Stepper, {ProductName}, Infragistics, {Platform} ステッパー
 mentionedTypes: ['Stepper']
+_language: ja
 ---
 
-# {Platform} Stepper Overview
-The {Platform} Stepper Component provides a wizard-like workflow and is used for showing progress through numbered steps. It enables developers to divide a lengthy content into a sequence of logical steps, helping end-users more easily navigate the entire process. The {Platform} Stepper is displayed as a vertical or a horizontal line. The {Platform} Stepper has multiple features like step validation, styling, orientation and keyboard navigation. 
+# {Platform} ステッパーの概要
+{Platform} ステッパー コンポーネントは、ウィザードのようなワークフローを提供し、番号付きのステップの進行状況を示すために使用されます。これにより、開発者は長いコンテンツを一連の論理的なステップに分割できるため、エンド ユーザーはプロセス全体をより簡単にナビゲートできます。{Platform} ステッパーは、垂直または水平な線で表示されます。{Platform} ステッパーには、ステップの検証、スタイル設定、向き、キーボード ナビゲーションなどの複数の機能があります。 
 
-## {Platform} Stepper Example
+## {Platform} ステッパーの例
 
-The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps. 
+次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。 
 
 <code-view style="height: 725px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview-example"
-           alt="{Platform} Stepper Example"
+           alt="{Platform} ステッパーの例"
            github-src="layouts/stepper/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Getting Started with {Platform} Stepper
+## {Platform} ステッパーを使用した作業の開始
 
 <!-- WebComponents -->
 
-First, you need to install the {ProductName} by running the following command:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 
-Before using the `Stepper`, you need to register it as follows:
+`Stepper` を使用する前に、次のように登録する必要があります:
 
 ```ts
 import { defineComponents, IgcStepperComponent } from 'igniteui-webcomponents';
@@ -41,14 +42,14 @@ defineComponents(IgcStepperComponent);
 
 <!-- end: WebComponents -->
 
-Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
+これで、{Platform} `Stepper` とそのパネルの基本構成から始めることができます。
 
-## How To Use {Platform} Stepper
-The `Step` is the representation of every step that belongs to the `Stepper`. Steps provide `Invalid`, `Active`, `Optional`, `Disabled` and `Complete` properties, which give you the ability to configure the step states according to your business requirement.
+## {Platform} ステッパーの使用方法
+`Step` は、`Stepper` に属するすべてのステップの表現です。ステップは `Invalid`、`Active`、`Optional`、`Disabled`、`Complete` プロパティを提供し、ビジネス要件に応じてステップの状態を構成できます。
 
-### Declaring a {Platform} Stepper
-Steps can be declared using one of the following approaches.
-- Iterating through a data set
+### {Platform} ステッパーの宣言
+ステップは、以下の方法のいずれかを使用して宣言できます。
+- データセットの繰り返し
 
 ```html
 <igc-stepper>
@@ -64,7 +65,7 @@ Steps can be declared using one of the following approaches.
 </igc-stepper>
 ```
 
-- Creating static steps
+- 静的ステップの作成
 
 ```html
 <igc-stepper>
@@ -76,10 +77,10 @@ Steps can be declared using one of the following approaches.
     </igc-step>
 </igc-stepper>
 ```
-For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows: 
+各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。 
 
 > [!NOTE]
-> The `Default` `Step` slot renders the content of the step.
+> `Default` の `Step` スロットは、ステップのコンテンツを描画します。
 
 ```html
 <igc-stepper>
@@ -96,169 +97,169 @@ For each step the user has the ability to configure indicator, title and subtitl
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
-### Changing the {Platform} Stepper Orientation
-You can customize the stepper orientation through the exposed `Orientation` property. It could be set to **horizontal** *(default value)* or **vertical**.
+### {Platform} ステッパーの向きの変更
+公開された `Orientation` プロパティでステッパーの向きをカスタマイズできます。**horizontal** (デフォルト値) また **vertical** に設定できます。
 
-**Horizontal {Platform} Stepper Orientation**
+**水平方向の {Platform} ステッパー**
 
-*horizontal* is the default value for the `Stepper` orientation property.
-When the {Platform} stepper is horizontally orientated you have the opportunity to determine whether the steps’ content would be displayed above or below the steps’ headers. This could be achieved by setting the `Stepper` `ContentTop` boolean property, which default value is *false*. In case it is enabled the steps’ content would be displayed above the steps’ headers.
+`Stepper` の orientation プロパティのデフォルト値は *horizontal* です。
+{Platform} ステッパーが水平方向の場合、ステップのコンテンツをステップのヘッダーの上または下に表示するかどうかを決定できます。これは、`Stepper` の `ContentTop` ブール型プロパティを設定することで実現できます。デフォルト値は *false* です。有効な場合、ステップのコンテンツはステップのヘッダーの上に表示されます。
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 800px"  src="../../images/stepper/stepper-contentTop.png"/>
 
-**Vertical {Platform} Stepper Orientation**
+**垂直方向の {Platform} ステッパー**
 
-You can easily switch from the horizontal to vertical layout. In order to change the default orientation you should set the `Orientation` property to *vertical*.
+水平レイアウトから垂直レイアウトに簡単に切り替えることができます。デフォルトの方向を変更するには、`Orientation` プロパティを *vertical* に設定します。
 
-The sample below demonstrates how stepper orientation and titles position could be changed runtime. 
+以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。 
 
 <code-view style="height: 528px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/stepper-title-position-and-orientation-example"
-           alt="{Platform} Stepper Orientation Example"
+           alt="{Platform} ステッパー方向の例"
            github-src="layouts/stepper/title-position-and-orientation-example">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Step States 
-{Platform} `Stepper` supports five steps states and each of them apply different styles by default:
-- **active** - Determines whether the step is the currently displayed. By design, if the user does not explicitly set some step’s active attribute to *true*, the initial active step would be the first non-disabled step.
-- **disabled** - Determines whether the step is interactable. By default, the disabled attribute of a step is set to *false*.
-- **invalid** - Determines whether the step is valid. Based on its value it is decided whether the user will have the ability to move forward in linear stepper mode. Its defaut value is *false*.
-- **optional** - By default, the optional attribute of a step is set to *false*. If validity of a step in linear stepper is not required, then the optional attribute can be enabled in order to be able to move forward independently from the step validity.
-- **complete** - By default, the complete attribute of a step returns *false*. The user, however, can override this default complete behavior by setting the complete attribute as needed. When step is marked as complete not only that the style of the step header is changed by default, but also the style of the progress line between the completed step and the next one.
+### ステップ状態 
+{Platform} `Stepper` は 5 つのステップ状態をサポートし、それぞれがデフォルトで異なるスタイルを適用します。
+- **active** - ステップが現在表示されているかどうかを決定します。設計上、ユーザーが明示的にステップの active 属性を *true* に設定しない場合、最初の有効なステップがアクティブになります。
+- **disabled** - ステップが操作可能かどうかを決定します。デフォルトでは、ステップの disabled 属性は *false* に設定されています。
+- **invalid** - ステップが有効かどうかを決定します。その値に基づいて、ユーザーがリニア ステッパー モードで前に進むことができるかどうかが決定されます。デフォルト値は *false* です。
+- **optional** - デフォルトで、ステップの optional 属性は *false* に設定されます。リニア ステッパーのステップの有効性が必要ない場合、オプションの属性を有効にして、ステップの有効性とは関係なく前進できます。
+- **complete** - デフォルトでは、ステップの complete 属性は *false* を返します。ユーザーは、complete 属性を必要に応じて設定することにより、このデフォルトの complete 動作をオーバーライドできます。ステップが complete (完了済み) としてマークされると、ステップ ヘッダーのスタイルがデフォルトで変更されるだけでなく、完了したステップと次のステップの間の進捗線のスタイルも変更されます。
 
-### Linear {Platform} Stepper
+### リニア {Platform} ステッパー
 
-The {Platform} `Stepper` gives you the opportunity to set its steps flow using the `Linear` property. By default, linear is set to *false* and the user is enabled to select any non-disabled step in the `Stepper`.
+{Platform} `Stepper` は、`Linear` プロパティを使用してステップ フローを設定できます。デフォルトで、linear は *false* に設定され、ユーザーは `Stepper` で無効にされていないステップを選択できます。
 
-When the linear property is set to *true*, the stepper will require the current non-optional step to be valid before proceeding to the next one. 
+linear プロパティが *true* に設定されている場合、ステッパーは次のステップに進む前に現在のオプションではないステップを有効にする必要があります。 
 
-If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one. 
+現在のオプションではないステップが有効でない場合、現在のステップを検証するまで次のステップに進むことができません。 
 
 > [!NOTE]
-> Optional steps validity is not taken into account in order to move forward.
+> オプションのステップの有効性は考慮されません。
 
-The following example demonstrates how to configure a linear stepper:
+以下の例は、リニア ステッパーを構成する方法を示しています。
 
 <code-view style="height: 430px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear-example"
-           alt="{Platform} Linear Stepper Example"
+           alt="{Platform} リニア ステッパーの例"
            github-src="layouts/stepper/linear-example">
 </code-view>
 
 <div class="divider--half"></div>
 
-### Step Interactions
+### ステップ操作
 
-`Stepper` provides the following API methods for step interactions:
-- **navigateTo** – activates the step by given index.
-- **next** - activates the next non-disabled step.
-- **prev** – activates the previous non-disabled step.
-- **reset** – resets the stepper to its initial state.
+`Stepper` は、ステップ操作に以下の API メソッドを提供します。
+- **navigateTo** – 指定したインデックスでステップをアクティブ化します。
+- **next** - 次の無効化されていないステップをアクティブ化します。
+- **prev** – 前の無効化されていないステップをアクティブ化します。
+- **reset** – ステッパーを初期状態にリセットします。
 
 > [!NOTE]
-> The reset method would reset the stepper to its initial state, i.e. activates the first step. It would not clear the step`s content. This should be done manually.
+> reset メソッドは、ステッパーを初期状態にリセットします。つまり、最初のステップをアクティブにします。reset メソッドはステップの内容をクリアしません。これは手動で行う必要があります。
 
-### Customizing the Steps
+### ステップのカスタマイズ
 
-The {ProductName} Stepper gives you the ability to configure different options for titles, indicators and more.
+{ProductName} ステッパーでは、タイトル、インジケーターなどのさまざまなオプションを構成できます。
 
-This could be achieved through the `StepType` property of the `Stepper`. It takes the following values:
-- Full *(default value)*
-- Indicator
-- Title
+これは、`Stepper` の `StepType` プロパティで実現できます。プロパティは以下の値を含みます:
+- Full (フル、デフォルト値)
+- Indicator (インジケーター)
+- Title (タイトル)
 
-**Full**
+**Full (フル)**
 
-If titles and subtitles are defined, with this setup both indicators and titles would be rendered.
+タイトルとサブタイトルが定義されている場合、この設定ではインジケーターとタイトルの両方が描画されます。
 
-The user would also have the ability to define the position of the title for the steps, so it could be placed before, after, above or below the step indicator.
-The user can configure the title position using the `TitlePosition` property. It takes the following values:
-- undefined *(default value)*
+また、ユーザーはステップのタイトルの位置を定義できるため、ステップ インジケーターの前、後、上、または下に配置できます。
+ユーザーは `TitlePosition` プロパティを使用してタイトル位置を構成できます。プロパティは以下の値を含みます:
+- undefined (デフォルト値)
 - end
 - start
 - bottom
 - top
 
-When the {Platform} `Stepper` is horizontally orientated and the title position **is not defined**, the titles would be displayed *below* the indicators.
+{Platform} `Stepper` が水平方向で、タイトルの位置が**定義されていない**場合、タイトルはインジケーターの**下**に表示されます。
 
-When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed *after* the indicators.
-
-> [!NOTE]
-> **titlePosition** property is applicable **only** when the stepper stepType property is set to *full*.
-
-**Indicator**
-
-If you want to display only indicators for the steps, set the stepType option to *indicator*.
-
-The step indicator supports any content, however with the restriction that its size would be always **24 pixels**. Having this in mind, we recommend using `Icon` or `Avatar` as step indicators.
-
-**Title**
-
-If you want to display only titles for the steps, set the stepType option to *title*.
-
-In this way if subtitles are defined, they will also be rendered below the step title.
+向きが垂直に設定され、タイトルの位置が**定義されていない**場合、タイトルはインジケーターの**後**に表示されます。
 
 > [!NOTE]
-> This container could be re-templated as per your requirement without any size restrictions. For example, you could add an indicator with size greater than 24 pixels inside it.
+> **titlePosition** プロパティは、ステッパーの StepType プロパティが *full* に設定されている場合に**のみ**適用できます。
 
-The sample below demonstrates all exposed step types and how they could be changed:
+**Indicator (インジケーター)**
+
+ステップのインジケーターのみを表示する場合は、stepType オプションを *indicator* に設定します。
+
+ステップ インジケーターはすべてのコンテンツをサポートしますが、サイズが常に **24 ピクセル**になるという制限があります。この点に注意して、ステップ インジケーターとして `Icon` または `Avatar` を使用することをお勧めします。
+
+**Title (タイトル)**
+
+ステップのタイトルのみを表示する場合は、stepType オプションを *title* に設定します。
+
+このように、サブタイトルが定義されている場合、それらもステップ タイトルの下に描画されます。
+
+> [!NOTE]
+> このコンテナーは、サイズ制限なしで要件に応じて再テンプレート化できます。たとえば、サイズが 24 ピクセルより大きいインジケーターを中に追加できます。
+
+以下のサンプルは公開されたすべてのステップ タイプと変更方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes-example"
-           alt="{Platform} Step Types Example"
+           alt="{Platform} ステップ タイプの例"
            github-src="layouts/stepper/steptypes">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The {ProductName} Stepper provides a rich variety of keyboard interactions to the end-user. This functionality is enabled by default and allows end-users to easily navigate through the steps. 
-The {Platform} `Stepper` navigation is compliant with [W3 accessability standards](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and convenient to use.
+{ProductName} ステッパーは、さまざまなキーボード操作をエンドユーザーに提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にステップを移動できます。 
+{Platform} `Stepper` ナビゲーションは [W3 アクセシビリティ標準](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/)に準拠しており、便利に使用できます。
 
-**Key Combinations**
+**キーの組み合わせ**
 
- - <kbd>Tab</kbd> - moves the focus to the next tabbable element
- - <kbd>Shift + Tab</kbd> - moves the focus to the previous tabbable element
- - <kbd>Arrow Down</kbd> - moves the focus to the header of the next accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Up</kbd> - moves the focus to the header of the previous accessible step when the stepper is **vertically orientated**
- - <kbd>Arrow Left</kbd> - moves the focus to the header of the previous accessible step in both orientations
- - <kbd>Arrow Right</kbd> - moves the focus to the header of the next accessible step in both orientations
- - <kbd>Home</kbd> - moves the focus to the header of the FIRST enabled step in the stepper
- - <kbd>End</kbd> - moves the focus to the header of the LAST enabled step in the stepper
- - <kbd>Enter / Space</kbd> - activates the currently focused step
+ - <kbd>Tab</kbd> - 次の移動可能な要素にフォーカスを移動します。
+ - <kbd>Shift + Tab</kbd> - 前移動可能な要素にフォーカスを移動します。
+ - <kbd>下矢印</kbd> - ステッパーが**垂直方向**の場合、次のアクセス可能なステップのヘッダーにフォーカスを移動します。
+ - <kbd>上矢印</kbd> - ステッパーが**垂直方向**の場合、前のアクセス可能なステップのヘッダーにフォーカスを移動します。
+ - <kbd>左矢印</kbd> - 両方の方向で前のアクセス可能なステップのヘッダーにフォーカスを移動します。
+ - <kbd>右矢印</kbd> - 両方の方向で次にアクセス可能なステップのヘッダーにフォーカスを移動します。
+ - <kbd>Home</kbd> - ステッパーの最初の有効なステップのヘッダーにフォーカスを移動します。
+ - <kbd>End</kbd> - ステッパーの最後の有効なステップのヘッダーにフォーカスを移動します。
+ - <kbd>Enter / Space</kbd> - 現在フォーカスされているステップをアクティブ化します。
  
-## Styling
+## スタイル設定
 
-You can change the appearance of the `Step`s, by using some of the exposed CSS parts listed below:
+以下にリストされている公開された CSS パーツのいくつかを使用して、`Step` の外観を変更できます:
 
-Part name | Description
+部分名 | 説明
 ---------|------------
-`header-container` | Wrapper of the step's header and its separators.
-`disabled` | Indicates a disabled state. Applies to header-container.
-`complete-start` | Indicates a complete state of the current step. Applies to header-container.
-`complete-end` | Indicates a complete state of the previous step. Applies to header-container.
-`optional` | Indicates an optional state. Applies to header-container.
-`invalid` | Indicates an invalid state. Applies to header-container.
-`top` | Indicates that the title should be above the indicator. Applies to header-container.
-`bottom` | Indicates that the title should be below the indicator. Applies to header-container.
-`start` | Indicates that the title should be before the indicator. Applies to header-container.
-`end` | Indicates that the title should be after the indicator. Applies to header-container.
-`header` | Wrapper of the step's indicator and text.
-`indicator` | The indicator of the step.
-`text` | Wrapper of the step's title and subtitle.
-`empty` | Indicates that no title and subtitle has been provided to the step. Applies to text.
-`title` | The title of the step.
-`subtitle` | The subtitle of the step.
-`body` | Wrapper of the step's content.
-`content` | The steps content.
+`header-container` | ステップのヘッダーとそのセパレーターのラッパー。
+`disabled` | 使用不可な状態を示します。ヘッダー コンテナーに適用されます。
+`complete-start` | 現在のステップの完了状態を示します。ヘッダー コンテナーに適用されます。
+`complete-end` | 前のステップの完了状態を示します。ヘッダー コンテナーに適用されます。
+`optional` | オプションの状態を示します。ヘッダー コンテナーに適用されます。
+`invalid` | オプションの状態を示します。ヘッダー コンテナーに適用されます。
+`top` | タイトルがインジケーターの上にあることを示します。ヘッダー コンテナーに適用されます。
+`bottom` | タイトルがインジケーターの下にあることを示します。ヘッダー コンテナーに適用されます。
+`start` | タイトルがインジケーターの前にあることを示します。ヘッダー コンテナーに適用されます。
+`end` | タイトルがインジケーターの後にあることを示します。ヘッダー コンテナーに適用されます。
+`header` | ステップのインジケーターとテキストのラッパー。
+`indicator` | Tステップのインジケーター。
+`text` | ステップのタイトルとサブタイトルのラッパー。
+`empty` | ステップにタイトルとサブタイトルが提供されていないことを示します。テキストに適用されます。
+`title` | ステップのタイトル。
+`subtitle` | ステップのサブタイトル。
+`body` | ステップのコンテンツのラッパー。
+`content` | ステップのコンテンツ。
 
-Using these CSS parts we can customize thе appearance of the `Stepper` component like this:
+これらの CSS パーツを使用して、次のように `Stepper` コンポーネントの外観をカスタマイズできます:
 
 ```css
 igc-step::part(title) {
@@ -272,7 +273,7 @@ igc-step::part(subtitle) {
 
 <!-- WebComponents -->
 
-## API References
+## API リファレンス
 
 * `Stepper`
 * `Step`
@@ -283,25 +284,25 @@ igc-step::part(subtitle) {
 
 <div class="divider--half"></div>
 
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- React -->
 
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
+* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
+* [**GitHub** の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
 
 <!-- end: React -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
