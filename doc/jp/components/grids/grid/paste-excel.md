@@ -37,12 +37,12 @@ _language: ja
 `paste-handler` ディレクティブ (次のセクションにコードがあります) を `Grid` に追加して `onDataProcessed` イベントを処理する必要があります。`onDataProcessed` イベントに配列フォームの Excel データへアクセスを与えるパラメーターがあります。詳細については、`addRecords` と `updateRecords` メソッドを参照してください。
 
 ```html
-<-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
-    <-column [field]="'Name'"></-column>
-    <-column [field]="'Title'"></-column>
-    <-column [field]="'Phone'"></-column>
-    <-column [field]="'Country'"></-column>
-</-grid>
+<igc-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
+    <igc-column [field]="'Name'"></igc-column>
+    <igc-column [field]="'Title'"></igc-column>
+    <igc-column [field]="'Phone'"></igc-column>
+    <igc-column [field]="'Country'"></igc-column>
+</igc-grid>
 ```
 
 ```typescript
