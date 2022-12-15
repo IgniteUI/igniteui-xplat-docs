@@ -41,7 +41,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 <link href="_content/IgniteUI.Blazor/themes/grid/light/bootstrap.css" rel="stylesheet" />
 ```
 
-Afterwards, you may start implementing the control by adding the following namespaces:
+以下の名前空間を追加してコントロールの実装を開始できます。
 
 ```razor
 @using IgniteUI.Blazor.Controls
@@ -51,7 +51,7 @@ Afterwards, you may start implementing the control by adding the following names
 
 <!-- Angular, React, WebComponents -->
 
-When installing the {Platform} tree grid package, the core package must also be installed.
+{Platform} ツリーグリッドのパッケージをインストールするときは、core パッケージもインストールする必要があります。
 
 ```cmd
 npm install --save {PackageCore}
@@ -61,24 +61,24 @@ npm install --save {PackageInputs}
 
 <!-- WebComponents -->
 
-You also need to include the following import to use the tree grid:
+ツリーグリッドを使用するには、次のインポートも含める必要があります:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 
-The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
+対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
-Or to link it:
+またはそれをリンクするには:
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-For more details on how to customize the appearance of the tree grid, you may have a look at the [styling](overview.md#web-components-tree-grid-styling-configuration) section.
+ツリー グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](overview.md#web-components-ツリー-グリッド-スタイルの構成)セクションを参照してください。
 <!-- end: WebComponents -->
 
 <!-- end: Angular, React, WebComponents -->
@@ -225,30 +225,30 @@ const data = [
 ];
 ```
 
-In the sample data above, all records have an ID, a ParentID and some additional properties like Name, JobTitle and Age. As mentioned previously, the ID of the records must be unique as it will be our `primaryKey`. The ParentID contains the ID of the parent node and could be set as a `foreignKey`. If a row has a ParentID that does not match any row in the tree grid, then that means this row is a root row.
+上記サンプル データはすべてのレコードに ID (ParentID と Name, JobTitle、Age.などの追加のプロパティ) があります。前述のように、レコードの ID は一意である必要があります。これが `primaryKey` になります。ParentID には親ノードの ID が含まれており、 `foreignKey` として設定できます。行にツリーグリッドのいずれの行にも一致しない ParentID がある場合、行がルート行であることを意味します。
 
 <!-- end: Angular, WebComponents -->
 
-## Persistence and Integration
+## パーシステンスとインテグレーション
 
-The indentation of the **tree cells** persists across other tree grid features like filtering, sorting and paging.
+**ツリー セル**のインデントは、フィルタリング、ソート、ページングなど他のツリーグリッド全体の機能で永続化されます。
 
-- When **sorting** is applied on a column, the data rows get sorted by levels. This means that the root level rows will be sorted independently from their respective children. Their respective children collections will each be sorted independently as well and so on.
-- The first column (the one that has a `visibleIndex` of 0) is always the tree column.
-- The column that ends up with a `visibleIndex` of 0 after operations like column pinning, column hiding and column moving becomes the tree column.
-- Exported Excel worksheets reflect the hierarchy by grouping the records as they are grouped in the tree grid itself. All records expanded states would also be persisted and reflected.
-- When exporting to CSV, levels and expanded states are ignored and all data is exported as flat.
+- **ソート**が列に適用された際にデータ行がレベルごとにソートされます。ルートレベルの行はそれぞれの子に関係なく個々に並べ替えられます。各子コレクションは個々に並べ替えられます。
+- 最初の列 (`visibleIndex` が 0 の列) は常にツリー列です。
+- 列のピン固定、列の非表示、列の移動などの処理後に`visibleIndex` が 0 になる列はツリー列になります。
+- エクスポートした Excel ワークシートは、ツリー グリッドでグループ化されるときにレコードをグループ化して階層に反映できます。すべてのレコードを展開した状態が保持および反映されます。
+- CSV レベルにエクスポートする際に展開した状態は無視されてすべてのデータがフラットでエクスポートされます。
 
 <!-- WebComponents -->
-## {Platform} Tree Grid Styling Configuration
+## {Platform} ツリー グリッド スタイル設定の構成
 
-In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、ツリー グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は最初にツリー グリッドのクラスを設定する必要があります:
 
 ```typescript
 <igc-tree-grid class="tree-grid">
 ```
 
-Then set the `--header-background` and `--header-text-color` CSS properties for that class:
+次に、そのクラスの `--header-background` および `--header-text-color` CSS プロパティを設定します:
 
 ```css
 .tree-grid {
@@ -259,16 +259,16 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 <!-- end: WebComponents -->
 
 
-## API References
+## API リファレンス
 
 * `{TreeGridName}`
 * `Column`
 * `GridToolbar`
 * `TreeGridRecord`
 
-## Additional Resources
+## その他のリソース
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
 * [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

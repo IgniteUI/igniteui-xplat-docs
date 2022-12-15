@@ -21,7 +21,7 @@ _language: ja
 
 ## {Platform} Grid の例
 
-このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。The demo also includes paging set to display 10 items per page.
+このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -69,24 +69,24 @@ npm install --save {PackageLayouts}
 
 <!-- WebComponents -->
 
-You also need to include the following import to use the grid:
+グリッドを使用するには、次のインポートも含める必要があります。
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/combined.js';
 ```
 
-The corresponding styles should also be referenced. You can choose light or dark option for one of the [themes](../../themes/overview.md) and based on your project configuration to import it:
+対応するスタイルも参照する必要があります。[テーマ](../../themes/overview.md)の 1 つにライトモードのオプションまたはダークモードのオプションを選択し、プロジェクト構成に基づいてインポートできます:
 
 ```typescript
 import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 ```
 
-Or to link it:
+またはそれをリンクするには:
 ```typescript
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-For more details on how to customize the appearance of the grid, you may have a look at the [styling](overview.md#web-components-grid-styling-configuration) section.
+グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](overview.md#web-components-グリッド-スタイルの構成)セクションを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -228,7 +228,7 @@ public contextObject = { firstProperty: 'testValue', secondProperty: 'testValue1
 
 ### ヘッダー テンプレート
 
-The header template can be set to modify the column headers. The snippets below show you how to format the header text to upper case.
+ヘッダー テンプレートを設定して、列ヘッダーを変更できます。以下のスニペットは、ヘッダー テキストを大文字に書式設定する方法を示しています。
 
 ```html
 <igx-column field="Name">
@@ -305,7 +305,7 @@ public toggleSummary(column: IgxColumnComponent) {
 
 ### セル テンプレート
 
-When cell template is set it changes all the cells in the column.テンプレートで提供されるコンテキスト オブジェクトは暗示的に提供されたセル値およびセル オブジェクトです。It can be used to define a template where the cells' text could be formatted e.g. as title case.
+セル テンプレートを設定すると、列内のすべてのセルが変更されます。テンプレートで提供されるコンテキスト オブジェクトは暗示的に提供されたセル値およびセル オブジェクトです。セルのテキストを書式設定できるテンプレートを定義するために使用できます。たとえば、タイトル ケースなどです。
 
 ```html
 <igx-column field="Name">
@@ -651,7 +651,7 @@ const POJO = [{
 はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。
 
 <!-- WebComponents -->
-You can do this by fetching the data from a given url receiving a JSON response and assigning it to the `northwindEmployees` property that will be used as the grid's data source:
+これを行うには、JSON 応答を受信する特定の URL からデータを取得し、それをグリッドのデータ ソースとして使用される `northwindEmployees` プロパティに割り当てます。
 
 ```typescript
 public fetchData(url: string): void {
@@ -667,7 +667,7 @@ public onDataLoaded(jsonData: any[]) {
 private northwindEmployees?: any[];
 ```
 
-And then you can bind the grid to that data:
+次に、グリッドをそのデータにバインドできます:
 
 ```html
 <igc-grid id="grid1" .data="${this.northwindEmployees}">
@@ -906,7 +906,7 @@ public getWeight(rowId: number){
 }
 ```
 
-Here is an example on how body template is used to display complex data. Below is the data that we are going to use:
+本文テンプレートを使用して複雑なデータを表示する方法の例を次に示します。以下は使用するデータです。
 
 ```typescript
 export const EMPLOYEE_DATA = [
@@ -1204,7 +1204,7 @@ public updatePostalCode(rowId: number) {
 
 ### フラット データの操作の例
 
-Using code snippets from previous section will result in the following example of `{GridName}`
+前のセクションのコード スニペットを使用すると、次の `{GridName}` の例になります。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -1260,18 +1260,18 @@ platformBrowserDynamic()
 
 <!-- end: Angular -->
 
-## {Platform} Grid Styling Configuration
+## {Platform} Grid スタイル設定の構成
 > [!NOTE]
-> The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
+> グリッドは **css グリッド レイアウト**を使用しますが、これは**プレフィックスなしでは IE ではサポートされていません**。その結果、適切に描画されません。
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```typescript
 <igc-grid class="grid">
 ```
 
-Then set the `--header-background` and `--header-text-color` CSS properties for that class:
+次に、そのクラスの `--header-background` および `--header-text-color` CSS プロパティを設定します:
 
 ```css
 .grid {
@@ -1282,11 +1282,11 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 <!-- end: WebComponents -->
 
 <!--  Angular -->
-In [**Angular**](https://angular.io/) most of the styles are prefixed implicitly thanks to the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin.
+[**Angular**](https://angular.io/) では、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) プラグインのおかげで、ほとんどのスタイルに暗黙的にプレフィックスが付けられます。
 
-For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment `/* autoprefixer grid:on */`.
+ただし、**グリッド レイアウト**にプレフィックスを付けるには、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) **グリッド プロパティ** を `/* autoprefixer grid:on */` コメントで有効にする必要があります。
 
-To facilitate your work, apply the comment in the `src/styles.scss` file.
+作業を容易にするために、`src/styles.scss` ファイルにコメントを適用してください。
 
  ```scss
 // src/styles.scss

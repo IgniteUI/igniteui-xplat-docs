@@ -1,37 +1,37 @@
 ---
-title: {Platform} Combobox Component – {ProductName}
-_description: {Platform} Combo component provides a powerful input, combining features of the basic HTML input, select, filtering and custom drop-down lists. Try it for FREE
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox component
+title: {Platform} ComboBox コンポーネント - {ProductName}
+_description: {Platform} Combo コンポーネントは、基本的な HTML 入力、選択、フィルタリング、およびカスタム ドロップダウン リストの機能を組み合わせた強力な入力を提供します。無料でお試しください。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ComboBox コンポーネント
 mentionedTypes: ['Combo']
 ---
 
-# {Platform} ComboBox Overview
+# {Platform} ComboBox の概要
 
-{Platform} ComboBox is a lightweight editor that enables users to easily select, filter, and group different predefined options in a provided list. The component also supports options for {Platform} ComboBox Keyboard navigation, templates to customize how the items, header, and footer are displayed.
+{Platform} ComboBox は、ユーザーが提供されたリストでさまざまな定義済みオプションを簡単に選択、フィルタリング、およびグループ化できるようにする軽量のエディターです。このコンポーネントは、{Platform} ComboBox キーボード ナビゲーションのオプション、項目、ヘッダー、およびフッターの表示方法をカスタマイズするためのテンプレートもサポートしています。
 
-The {ProductName} Combobox component provides a list of options from which users can make a selection. It displays all options in a virtualized list of items, meaning the ComboBox can simultaneously show thousands of records, where one or more options can be selected. Additionally, the component features case-sensitive filtering, grouping, complex data binding and more.
+{ProductName} Combobox コンポーネントは、ユーザーが選択できるオプションのリストを提供します。仮想化された項目のリストにすべてのオプションが表示されます。つまり、ComboBox は、1 つ以上のオプションを選択できる数千のレコードを同時に表示できます。さらに、このコンポーネントには、大文字と小文字を区別するフィルタリング、グループ化、複雑なデータ バインディングなどの機能があります。
 
-## {Platform} ComboBox Example
+## {Platform} ComboBox の例
 
 <code-view style="height:320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/combo-overview"
-           alt="{Platform} Combo Example"
+           alt="{Platform} Combo の例"
            github-src="grids/combo/overview">
 </code-view>
 
 <div class="divider--half"></div>
 
-## Getting Started With Ignite UI {Paltform} ComboBox Component
+## Ignite UI {Palform} ComboBox コンポーネントを使用した作業の開始
 
 <!-- WebComponents -->
-First, you need to install the {ProductName} by running the following command:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 
-Before using the `ComboBox` component, you need to register it together with its additional components:
+`ComboBox` コンポーネントを使用する前に、追加のコンポーネントとともに登録する必要があります:
 
 ```ts
 import { defineComponents, IgcComboComponent }
@@ -44,7 +44,7 @@ defineComponents(IgcComboComponent);
 
 <!-- Blazor -->
 
-To get started with the `IgbCombo` component, first we need to register its module as follows:
+`IgbCombo` コンポーネントの使用を開始するには、最初にそのモジュールを登録する必要があります。
 
 
 ```razor
@@ -53,7 +53,7 @@ To get started with the `IgbCombo` component, first we need to register its modu
 builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
 ```
 
-You will also need to link an additional CSS file to apply the styling to the `Combo` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+スタイルを `Combo` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります。
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -61,9 +61,9 @@ You will also need to link an additional CSS file to apply the styling to the `C
 <!-- end: Blazor -->
 
 >[!WARNING]
-> The `Combo` component doesn't work with the standard `<form>` element. Use `Form` instead.
+> `Combo` コンポーネントは標準の `<form>` 要素では機能しません。代わりに `Form` を使用してください。
 
-Then, we will bind an array of objects to the combo data source used for building the list of options.
+次に、オプションのリストを構築するコンボ データ ソースに、オブジェクトの配列をバインドします。
 
 ```ts
 interface City {
@@ -95,39 +95,39 @@ export class Sample {
 <IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Cities" />
 ```
 
-### Data value and display properties
+### データ値と表示プロパティ
 
-Since the combo is bound to a list of complex data (i.e. objects), we need to specify a property that the control will use to handle the selected items. The component exposes the following properties:
+コンボは複雑なデータ (オブジェクト) の配列にバインドされているため、選択した項目を処理するために使用するプロパティを指定する必要があります。コンポーネントは以下のプロパティを公開します:
 
- - `DisplayKey` - *Optional,* ***required*** *for object arrays* - Determines which field in the data source is used as the display value. If no value is specified for `DisplayKey`, the combo will use the specified `ValueKey` (if any).
- - `ValueKey` - *Optional,* ***recommended*** *for object arrays* - Determines which field of the data source will be used to make selections. If `ValueKey` is omitted, the selection API will use object references to select items.
+ - `DisplayKey` - オプション、**オブジェクト配列の場合は必須** - データ ソースのどのフィールドを表示値として使用するかを決定します。`DisplayKey` に値が指定されていない場合、コンボは指定された `ValueKey` (存在する場合) を使用します。
+ - `ValueKey` - オプション、**オブジェクト配列の場合に推奨** - データ ソースのどのフィールドを使用して選択を行うかを決定します。`ValueKey` を省略した場合、選択 API はオブジェクト参照を使用して項目を選択します。
 
-In our case, we want the combo to display the `name` of each city and use the `id` field for item selection. Therefore, we provide these properties to the combo's `DisplayKey` and `ValueKey` respectively.
+この例では、コンボに各都市の `name` 名前を表示し、`id` フィールドを使用して項目を選択するようにします。したがって、これらのプロパティをコンボの `DisplayKey` と `ValueKey` にそれぞれ提供します。
 
 > [!Note]
-> When the data source consists of a primitive types (e.g. `strings`, `numbers`, etc.), **do not** specify a `ValueKey` and `DisplayKey`.
+> データ ソースがプリミティブ型 (`文字列`、`数値`など) で構成されている場合は、`ValueKey` と `DisplayKey` を**指定しないでください**。
 
-### Selection API
+### 選択 API
 
-The combo component exposes APIs that allow you to change the currently selected items.
+コンボ コンポーネントは、現在選択されている項目を変更できる API を公開します。
 
-Besides selecting items from the list of options by user interaction, you can select items programmatically. This is done via the `select` and `deselect` methods. You can pass an array of items to both methods. If the methods are called with no arguments all items will be selected/deselected depending on which method is called. If you have specified a `ValueKey` for your combo component, then you should pass the value keys of the items you would like to select/deselect:
+ユーザーの操作によってオプションのリストから項目を選択する以外に、プログラムで項目を選択することもできます。これは、`select` および `deselect` メソッドを介して行われます。項目の配列をこれらのメソッドに渡すことができます。メソッドが引数なしで呼び出された場合、呼び出されたメソッドに応じて、すべての項目が選択 / 選択解除されます。コンボ コンポーネントに `ValueKey` を指定した場合は、選択 / 選択解除する項目の値キーを渡す必要があります。
 
-#### Select/deselect some items:
+#### 一部の項目を選択 / 選択解除:
 ```ts
 // Select/deselect items by their IDs as valueKey is set to 'id'
 combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
 
-#### Select/deselect all items:
+#### すべての項目を選択 / 選択解除:
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
 ```
 
-If the `ValueKey` property is omitted, you will have to list the items you wish to select/deselect as objects references:
+`ValueKey` プロパティを省略した場合は、オブジェクト参照として選択 / 選択解除する項目を列挙する必要があります。
 
 ```ts
 // Select/deselect values by object references when no valueKey is provided
@@ -138,72 +138,72 @@ combo.deselect([cities[1], cities[5]]);
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
-           alt="{Platform} Combo Selection Example"
+           alt="{Platform} Combo 選択の例"
            github-src="grids/combo/selection">
 </code-view>
 
-### Validation
+### 検証
 
-The {ProductName} Combo component supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, `Invalid`, etc. The component also exposes two methods bound to its validation:
+{ProductName} Combo コンポーネントは、`Required`、`Disabled`、`Autofocus`、`Invalid` など、ほとんどの入力プロパティをサポートしています。このコンポーネントは、その検証にバインドされた 2 つのメソッドも公開しています。
 
-- reportValidity() - checks for validity and returns true if the component satisfies the validation constraints.
-- checkValidity() - a wrapper around reportValidity to comply with the native input API.
+- reportValidity() - 有効性をチェックし、コンポーネントが検証の制約を満たしている場合は true を返します。
+- checkValidity() - ネイティブ入力 API に準拠するための reportValidity のラッパー。
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-When the combo component is focused and the list of options is **not visible**:
+コンボ コンポーネントがフォーカスされていて、オプションのリストが**表示されていない**場合:
 
-- Open the list of options using <kbd>Down/Alt + Down</kbd> keys.
+- <kbd>下矢印/Alt + 下矢印</kbd>キーを使用してオプションのリストを開きます。
 
-When the combo component is focused and the list of options is **visible**:
+コンボ コンポーネントがフォーカスされ、オプションのリストが表示されている場合:
 
-- Using the <kbd>Down</kbd> key will activate the next item in the list.
-- Using the <kbd>Up</kbd> key will activate the previous item in the list. If the first item is already active it will focus the input.
-- Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or the last item in the list.
-- Using the <kbd>Space</kbd> key will select the active item.
-- Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
-- Using the <kbd>Esc</kbd> or <kbd>Tab/Shift + Tab</kbd> keys will close the list of options.
+- <kbd>下矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
+- <kbd>上矢印</kbd>キーを使用すると、リスト内の前の項目がアクティブになります。最初の項目がすでにアクティブな場合、入力にフォーカスします。
+- <kbd>Home</kbd> または <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
+- <kbd>Space</kbd> キーを使用すると、アクティブな項目が選択されます。
+- <kbd>Enter</kbd> キーを使用すると、アクティブな項目が選択され、オプションのリストが閉じます。
+- <kbd>Esc</kbd> または <kbd>Tab/Shift + Tab</kbd> キーを使用すると、オプションのリストが閉じます。
 
-## Combo Styling
+## コンボのスタイル設定
 
-You can change the appearance of the {ProductName} `Combo` component and its items, by using the exposed CSS parts listed below:
+{ProductName} `Combo` コンポーネントとその項目の外観は、以下に示す公開 CSS パーツを使用して変更できます。
 
-### CSS Parts
+### CSS パーツ
 
-| Part name            | Description                                                                     |
+| パーツ名            | 説明                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| `label`              | The encapsulated text label.                                                    |
-| `input`              | The main input field.                                                           |
-| `native-input`       | The native input of the main input field.                                       |
-| `prefix`             | The prefix wrapper.                                                             |
-| `suffix`             | The suffix wrapper.                                                             |
-| `toggle-icon`        | The toggle icon wrapper.                                                        |
-| `clear-icon`         | The clear icon wrapper.                                                         |
-| `case-icon`          | A case-icon wrapper that renders content inside the suffix of the filter-input. |
-| `helper-text`        | The helper text wrapper.                                                        |
-| `search-input`       | The search input field.                                                         |
-| `list-wrapper`       | The list of options wrapper.                                                    |
-| `list`               | The list of options box.                                                        |
-| `item`               | Represents each item in the list of options.                                    |
-| `group-header`       | Represents each header in the list of options.                                  |
-| `active`             | Appended to the item parts list when the item is active.                        |
-| `selected`           | Appended to the item parts list when the item is selected.                      |
-| `checkbox`           | Represents each checkbox of each list item.                                     |
-| `checkbox-indicator` | Represents the checkbox indicator of each list item.                            |
-| `checked`            | Appended to checkbox parts list when checkbox is checked.                       |
-| `header`             | The container holding the header content.                                       |
-| `footer`             | The container holding the footer content.                                       |
-| `empty`              | The container holding the empty content.                                        |
+| `label`              | カプセル化されたテキスト ラベル。                                                    |
+| `input`              | メイン入力フィールド。                                                           |
+| `native-input`       | メイン入力フィールドのネイティブ入力。                                       |
+| `prefix`             | プレフィックス ラッパー。                                                             |
+| `suffix`             | サフィックス ラッパー。                                                             |
+| `toggle-icon`        | トグル アイコン ラッパー。                                                       |
+| `clear-icon`         | クリア アイコン ラッパー。                                                         |
+| `case-icon`          | フィルター入力のサフィックス内のコンテンツを描画するケース アイコン ラッパー。 |
+| `helper-text`        | ヘルパー テキスト ラッパー。                                                       |
+| `search-input`       | 検索入力フィールド。                                                         |
+| `list-wrapper`       | オプション ラッパーのリスト。                                                    |
+| `list`               | オプションボックスのリスト。                                                       |
+| `item`               | オプションのリスト内の各項目を表します。                                   |
+| `group-header`       | オプションのリストの各ヘッダーを表します。                                  |
+| `active`             | 項目がアクティブな場合に、項目パーツ リストに追加されます。                        |
+| `selected`           | 項目が選択されている場合に、項目パーツ リストに追加されます。                     |
+| `checkbox`           | 各リスト項目の各チェックボックスを表します。                                    |
+| `checkbox-indicator` | 各リスト項目のチェックボックス インジケーターを表します。                            |
+| `checked`            | チェックボックスがチェックされている場合に、チェックボックス パーツ リストに追加されます。                      |
+| `header`             | ヘッダー コンテンツを保持するコンテナー。                                       |
+| `footer`             | フッター コンテンツを保持するコンテナー。                                      |
+| `empty`              | 空のコンテンツを保持するコンテナ。                                       |
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/combo-styling"
-           alt="{Platform} Combo Styling Example"
+           alt="{Platform} Combo スタイル設定の例"
            github-src="grids/combo/styling">
 </code-view>
 
 <!-- WebComponents -->
-## API Reference
+## API リファレンス
 
 * `Combo`
 * `ComboItem`
@@ -211,18 +211,18 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 * `ComboList`
 
 <!-- end: WebComponents -->
-## Additional Resources
+## その他のリソース
 
 <!-- Blazor -->
 
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
+* [Ignite UI for Blazor **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
+* [Ignite UI for Blazor Examples on **GitHub (英語)**](https://github.com/IgniteUI/igniteui-blazor-examples)
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [Ignite UI for Web Components **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [Ignite UI for Web Components **GitHub (英語)**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->
