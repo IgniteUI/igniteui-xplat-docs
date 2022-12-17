@@ -147,9 +147,33 @@ A column is pinned to the right of the rightmost pinned column. Changing the ord
 
 <!-- end: Blazor -->
 
+<!-- Angular -->
+
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+constructor() {
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        dataGrid.data = this.data;
+        datagrid.columnPin = this.columnPinning;
+    }
+    this._bind();
+}
+```
+
+<!-- end: WebComponents -->
 
 ```typescript
 public columnPinning(event) {

@@ -1,22 +1,22 @@
 ---
-title: $Platform$ Dialog | インフラジスティックス
-_description: $ProductName$ Dialog コンポーネントを使用すると、開発者はアプリ コンテンツの上にダイアログ ウィンドウを簡単に統合できます。
-_keywords: $ProductName$, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, $Platform$, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ ダイアログ コンポーネント
+title: {Platform} Dialog | インフラジスティックス
+_description: {ProductName} Dialog コンポーネントを使用すると、開発者はアプリ コンテンツの上にダイアログ ウィンドウを簡単に統合できます。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ダイアログ コンポーネント
 _language: ja
 mentionedTypes: ['Dialog']
 ---
 
-# $Platform$ (ダイアログ)
+# {Platform} (ダイアログ)
 
-$ProductName$ Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。 
+{ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。 
 
-## $ProductName$ Dialog の例
+## {ProductName} Dialog の例
 
 このサンプルでは、Dialog コンポーネントを作成する方法を示します。
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="$Platform$ Dialog の例"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="{Platform} Dialog の例"
            github-src="notifications/dialog/overview">
 </code-view>
 
@@ -25,7 +25,7 @@ $ProductName$ Dialog コンポーネントは、情報を表示したり、ユ�
 ### 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -64,7 +64,7 @@ Dialog のタイトルを設定するには、`title` プロパティを使用�
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="$Platform$ Dialog Closing のバリエーション"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="{Platform} Dialog Closing のバリエーション"
            github-src="notifications/dialog/closing-variations">
 </code-view>
 
@@ -74,7 +74,7 @@ Dialog のタイトルを設定するには、`title` プロパティを使用�
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="$Platform$ Dialog Form の例"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="{Platform} Dialog Form の例"
            github-src="notifications/dialog/form">
 </code-view>
 
@@ -97,7 +97,7 @@ igc-dialog::part(footer) {
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="$Platform$ Dialog スタイル設定の例"
+           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="{Platform} Dialog スタイル設定の例"
            github-src="notifications/dialog/styling">
 </code-view>
 

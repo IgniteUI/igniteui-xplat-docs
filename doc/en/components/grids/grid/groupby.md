@@ -55,10 +55,10 @@ Grouping expressions implement the `ISortingExpression` interface.
 Grouping is available through the UI and through a robust API exposed by the grid component. Developers can allow end-users to group the grid data by certain columns, by setting each column's `Groupable` property to `true`.
 
 ```html
-<-grid [data]="data">
-    <-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
-    </-column>
-</-grid>
+<igx-grid [data]="data">
+    <igc-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
+    </igc-column>
+</igx-grid>
 ```
 
 <!-- Angular -->
@@ -209,15 +209,15 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the Group By row selector should be checked or indeterminate (partially selected).
 
 ```html
-<-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
+<igx-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <!-- ... -->
     <ng-template GroupByRowSelector let-context>
-        <-checkbox
+        <igc-checkbox
             [checked]=" context.selectedCount > 0 && context.selectedCount === context.totalCount"
             [indeterminate]="context.selectedCount > 0 && context.selectedCount !== context.totalCount">
-        </-checkbox>
+        </igc-checkbox>
     </ng-template>
-</-grid>
+</igx-grid>
 ```
 
 ## {Platform} Grid Group By With Paging

@@ -307,7 +307,7 @@ public static totalMax: PivotAggregation = (members, data: any) => {
 `PivotConfiguration` は、`PivotGrid` コンポーネントの現在の状態を記述するインターフェースです。これを使用すると、開発者はデータのフィールドを **rows**、**columns**、**filters** または **values** (行、列、フィルター、値) として宣言できます。この構成では、これらの各要素を個別に有効または無効にすることができます。ピボット グリッドの現在の状態には、有効な要素のみが含まれます。`PivotDataSelector` コンポーネントは同じ構成を利用し、すべての有効と無効の要素のリストを表示します。それぞれについて、適切な状態のチェックボックスがあります。エンドユーザーは、これらのチェックボックスを使用してさまざまな要素を切り替えることにより、ピボット状態を簡単に調整できます。
 `Enable` プロパティは、特定の `PivotDimension` または `PivotValue` がアクティブであり、ピボット グリッドによって描画されるピボット ビューに参加するかどうかを制御します。
 
-### 完全な構成の例
+### 完全な構成のコード
 
 基本的なピボット構成を見てみましょう:
 
@@ -424,7 +424,6 @@ public data = [
         Value: '94.2652032683907',
         NumberOfUnits: '282'
     },
-    //...
 ];
 ```
 
@@ -449,12 +448,13 @@ public PivotSalesData()
     });
 ```
 
+### 完全な構成の例
 
-次のビューは、Product (製品) カテゴリの一意の列をグループ化し、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数の関連する集計を表示します。
+上記のコードを使用すると、Product (製品) カテゴリの一意の列、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数に関連する集計を表示する次の例が得られます。
 
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-basic"
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
            alt="{Platform} ピボット グリッドの例">
 </code-view>
 
@@ -464,21 +464,24 @@ public PivotSalesData()
 |制限|説明|
 |--- |--- |
 | 列を宣言的に設定することはサポートされていません。 | ピボット グリッドは `Columns` (列) の構成に基づいて列を生成するため、ベース グリッドのように宣言的に設定することはサポートされていません。このような列は無視されます。 |
-| ディメンション / 値に重複した `MemberName` または `Member` プロパティ値を設定します。 | `MemberName`/`Member` は、各ディメンション / 値に対して一意である必要があります。複製すると、最終結果からデータが失われる可能性があります。 |
+| ディメンション / 値に重複した `MemberName` または `Member` プロパティ値を設定します。 | これらのプロパティは、各ディメンション / 値に対して一意である必要があります。複製すると、最終結果からデータが失われる可能性があります。 |
 | 行選択は、**Single** (単一) モードでのみサポートされます。 | 現在、複数選択はサポートされていません。 |
 <!--Angular -->
 | ディメンション メンバーのマージでは大文字と小文字が区別されます。| ピボット グリッドはグループを作成し、同じ (大文字と小文字を区別する) 値をマージします。ただし、ディメンションは `MemberFunction` を提供し、これはそこで変更できます。`MemberFunction` の結果が比較され、表示値として使用されます。|
 <!-- end: Angular -->
 
 ## API リファレンス
+
 * `{PivotGridName}`
-* `PivotDataSelectorComponent`
+* `PivotConfiguration`
+* `PivotDataSelector`
+* `PivotDateDimension`
+* `Column`
 
-
-## その他のリソース
+<!-- ## その他のリソース
 
 * [{Platform} ピボット グリッドの機能](pivot-grid-features.md)
-* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md)
+* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

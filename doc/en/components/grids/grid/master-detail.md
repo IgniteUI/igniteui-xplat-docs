@@ -25,24 +25,24 @@ This mode is useful when you need to display master-detail style data in a hiera
 To configure the `Grid` to display in master-detail mode you need to specify a template inside the grid, marked with the `GridDetail` directive:
 
 ```html
- <{ComponentSelector} >
+<{ComponentSelector}>
          <ng-template GridDetail let-dataItem>
               <!-- Custom detail template content here -->
         </ng-template>
-    </{ComponentSelector}>
+</{ComponentSelector}>
 ```
 
 Context of the template is the master record data, so that values from the master record can be displayed in the detail template. For example:
 
 ```html
-    <{ComponentSelector} >
+<{ComponentSelector}>
          <ng-template GridDetail let-dataItem>
             <div *ngIf="dataItem.Category">
                 <header>{{dataItem.Category.CategoryName}}</header>
                 <span>{{dataItem.Category.Description}}</span>
             </div>
         </ng-template>
-    </{ComponentSelector}>
+</{ComponentSelector}>
 ```
 
 
@@ -82,7 +82,7 @@ Additional API methods for controlling the expansion states are also exposed:
 |Known Limitations| Description|
 | --- | --- |
 | Tab navigation inside the custom detail template may not update the master grid scroll position in case the next focused element is outside the visible view port.| Tab navigation inside the custom detail template is left up to the browser. |
-| When templating a grid inside the details view that has a `<-column>` definitions, the parent grid will also render those columns.| This can be avoided using autoGenerate=true for the nested grid. In case some aspect of those columns need to be modified the `ColumnInit` event can be used. |
+| When templating a grid inside the details view that has a `<igc-column>` definitions, the parent grid will also render those columns.| This can be avoided using autoGenerate=true for the nested grid. In case some aspect of those columns need to be modified the `ColumnInit` event can be used. |
 | Details template will not be exported to Excel.| As the details template can contain any type of content we cannot export it to excel out of the box.|
 | The search feature will not highlight elements from the details template. | |
 

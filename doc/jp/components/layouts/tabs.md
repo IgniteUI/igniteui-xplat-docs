@@ -197,7 +197,7 @@ igc-tab::part(base) {
 
 <!-- WebComponents -->
 
-* [{ProductName} **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
+* [{ProductName} **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
 * [{ProductName} **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
 
 <!-- end: WebComponents -->

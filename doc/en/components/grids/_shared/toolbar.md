@@ -8,7 +8,7 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 # {Platform} {ComponentTitle} Toolbar
 
-The `{ComponentName}` in {ProductName} provides an `GridToolbarComponent` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
+The `{ComponentName}` in {ProductName} provides an `GridToolbar` which is essentially a container for **UI** operations. The {Platform} toolbar is located at the top of the {Platform} component, i.e the `{ComponentName}` and it matches its horizontal size. The toolbar container can host predefined UI controls for the following `{ComponentName}`'s features:
 
  - Column Hiding
  - Column Pinning
@@ -757,10 +757,10 @@ The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
 * `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
-* `GridToolbarComponent`
-* `GridToolbarExporterComponent`
-* `GridToolbarHidingComponent`
-* `GridToolbarPinningComponent`
+* `GridToolbar`
+* `GridToolbarExporter`
+* `GridToolbarHiding`
+* `GridToolbarPinning`
 * `GridToolbarTitleDirective`
 
 

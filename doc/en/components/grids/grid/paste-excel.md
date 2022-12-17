@@ -36,12 +36,12 @@ The new data after the paste is decorated in Italic.
 You should add the `paste-handler` directive (you can find its code in the next section) to the `Grid` and handle its `onDataProcessed` event. The `onDataProcessed` event has one parameter that gives you access to the Excel data in the form of an array. For reference see the `addRecords` and `updateRecords` methods.
 
 ```html
-<-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
-    <-column [field]="'Name'"></-column>
-    <-column [field]="'Title'"></-column>
-    <-column [field]="'Phone'"></-column>
-    <-column [field]="'Country'"></-column>
-</-grid>
+<igc-grid #grid1 [data]="data" [width]="'100%'" [height]="'505px'" [autoGenerate]="false" paste-handler (onDataProcessed)="dataPasted($event)" [primaryKey]="'ID'">
+    <igc-column [field]="'Name'"></igc-column>
+    <igc-column [field]="'Title'"></igc-column>
+    <igc-column [field]="'Phone'"></igc-column>
+    <igc-column [field]="'Country'"></igc-column>
+</igc-grid>
 ```
 
 ```typescript
