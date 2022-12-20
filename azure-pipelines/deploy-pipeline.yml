@@ -3,6 +3,7 @@ trigger:
     include:
     - vnext
     - master
+
 pr:
   branches:
     exclude:
@@ -13,14 +14,12 @@ name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 stages:
 - stage: Build
   jobs:
-  - job: BuildDocs
-    pool:
-      name: BuildAgentOnPrem
-      demands: npm
+  - deployment: DeployWeb
+    displayName: deploy Web App
+    strategy: 
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "Hello world"
+          #- task: KubernetesManifest@0
 
-    variables:
-      buildType: staging
-      ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-        buildType: 'production'
-
-    steps:
