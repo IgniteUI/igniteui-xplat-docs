@@ -316,6 +316,13 @@ The `{ComponentName}` component exposes the `AddRow` method which will add the p
 const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.GridRef.AddRow(record);
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->

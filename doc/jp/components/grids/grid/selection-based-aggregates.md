@@ -36,7 +36,7 @@ const dates = data.filter(rec => isDate(rec));
 
 データ タイプをグループ化した後、集計を開始できます。そのため、`NumberSummaryOperand` および `DateSummaryOperand` の既に公開されているメソッドを使用できます。
 その後、集計データを同じ配列に配置する必要があり、テンプレートに返されます。
-データを可視化には、`<-grid-footer>`を使用することができ、`custom-summaries` クラスと組み合わせて集計を表示します。
+データを可視化には、グリッド フッターを使用することができ、`custom-summaries` クラスと組み合わせて集計を表示します。
 
 <!-- Angular -->
 

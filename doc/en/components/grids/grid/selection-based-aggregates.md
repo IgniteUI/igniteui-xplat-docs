@@ -35,7 +35,7 @@ const dates = data.filter(rec => isDate(rec));
 
 After having the data types grouped accordingly, you can proceed to the aggregation itself. For that reason, you could use the already exposed methods of the `NumberSummaryOperand` and `DateSummaryOperand`.
 After that, you'd have to put the aggregated data in the same array, which would be returned to the template.
-For the visualization of the data, you might want to use the `<-grid-footer>`, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
+For the visualization of the data, you might want to use the grid footer, which in a combination with the `custom-summaries` class will give the natural look of the Summary.
 
 <!-- Angular -->
 

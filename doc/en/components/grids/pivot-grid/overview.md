@@ -307,7 +307,7 @@ The pivot value also provides a `DisplayName` property. It can be used to displa
 `PivotConfiguration` is the interface that describes the current state of the `PivotGrid` component. With it the developer can declare fields of the data as **rows**, **columns**, **filters** or **values**. The configuration allows enabling or disabling each of these elements separately. Only enabled elements are included in the current state of the Pivot Grid. The `PivotDataSelector` component utilizes the same configuration and shows a list of all elements - enabled and disabled. For each of them there is a checkbox in the appropriate state. End-users can easily tweak the pivot state by toggling the different elements using these checkboxes.
 The `Enable` property controls if a given `PivotDimension` or `PivotValue` is active and takes part in the pivot view rendered by the Pivot Grid.
 
-### Full Configuration Example
+### Full Configuration Code
 
 Let's take a look at a basic pivot configuration:
 
@@ -448,8 +448,9 @@ public PivotSalesData()
     });
 ```
 
+### Full Configuration Example
 
-Resulting in the following view, which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
+Using above code will result in the following example which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
 
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -472,8 +473,10 @@ Resulting in the following view, which groups the Product Categories unique colu
 ## API References
 
 * `{PivotGridName}`
-* `PivotDataSelectorComponent`
-
+* `PivotConfiguration`
+* `PivotDataSelector`
+* `PivotDateDimension`
+* `Column`
 
 <!-- ## Additional Resources -->
 

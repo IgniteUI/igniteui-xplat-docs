@@ -7,6 +7,8 @@
     "names":[{"platform":"Blazor","fileName":"OnPopupEventArgs.cs","mappedName":"IgbOnPopupEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"OnClosedEventArgs",
     "names":[{"platform":"Blazor","fileName":"OnClosedEventArgs.cs","mappedName":"IgbOnClosedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
+  { "originalName":"ToolActionButton",
+    "names":[{"platform":"Blazor","fileName":"ToolActionButton.cs","mappedName":"IgbToolActionButton"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionLabel",
     "names":[{"platform":"Blazor","fileName":"ToolActionLabel.cs","mappedName":"IgbToolActionLabel"}],"members":[],"originalBaseTypeName":"ToolAction","originalBaseTypeNamespace":"Infragistics.Controls.Layouts.Implementation","originalNamespace":"Infragistics.Controls.Layouts.Implementation"},
   { "originalName":"ToolActionRadio",
