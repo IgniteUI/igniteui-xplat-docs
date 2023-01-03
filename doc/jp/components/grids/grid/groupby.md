@@ -47,7 +47,6 @@ connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
-
 グループ式は、`ISortingExpression` インターフェイスを実装します。
 
 ## Group By API
@@ -57,10 +56,10 @@ connectedCallback() {
 グループ化は、UI およびグリッド コンポーネントで公開された API で実行できます。各列の `Groupable` プロパティを **true** に設定してエンドユーザーは特定の列でグリッド データをグループ化できます。
 
 ```html
-<-grid [data]="data">
-    <-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
-    </-column>
-</-grid>
+<igx-grid [data]="data">
+    <igc-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
+    </igc-column>
+</igx-grid>
 ```
 
 <!-- Angular -->
@@ -211,15 +210,15 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 `SelectedCount` と `TotalCount` プロパティを使用して、Group By 行セレクターをチェックするか不確定にする (部分的に選択する) かを決定できます。
 
 ```html
-<-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
+<igx-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <!-- ... -->
     <ng-template GroupByRowSelector let-context>
-        <-checkbox
+        <igc-checkbox
             [checked]=" context.selectedCount > 0 && context.selectedCount === context.totalCount"
             [indeterminate]="context.selectedCount > 0 && context.selectedCount !== context.totalCount">
-        </-checkbox>
+        </igc-checkbox>
     </ng-template>
-</-grid>
+</igx-grid>
 ```
 
 ## {Platform} Grid ページングによるグループ化

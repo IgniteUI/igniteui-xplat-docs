@@ -38,12 +38,16 @@ If the `DataType` is set to *number*, the cell value will be formatted based on 
  - Number of digits after the decimal point
  - Decimal separator with `,` or `.`
 
+<!-- Angular -->
+
 ```ts
 public options = {
   digitsInfo: '1.4-4',
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column [pipeArgs]="formatOptions" [dataType]="'number'">
@@ -91,6 +95,8 @@ The appearance of the date portions will be set (e.g. day, month, year) based on
  - **format** - The default value for formatting the date is `'mediumDate'`. Other available options are `'short'`, `'long'`, `'shortDate'`, `'fullDate'`, `'longTime'`, `'fullTime'` and etc.
  - **timezone** - The user's local system timezone is the default value. The timezone offset or standard GMT/UTC or continental US timezone abbreviation can also be passed. Different timezone examples which will display the corresponding time of the location anywhere in the world:
 
+<!-- Angular -->
+
 ```ts
 public formatDateOptions = {
     /** The date/time components that a date column will display, using predefined options or a custom format string. */
@@ -101,6 +107,8 @@ public formatDateOptions = {
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column [pipeArgs]="formatDateOptions" [dataType]="'date'">
@@ -315,6 +323,8 @@ The default template will show a numeric value with currency symbol that would b
 
 By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
 
+<!-- Angular -->
+
 ```ts
 public options = {
   digitsInfo: '3.4-4',
@@ -323,6 +333,8 @@ public options = {
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column field="UnitsInStock"
@@ -393,6 +405,8 @@ Default template is showing the percent equivalent of the underlying numeric val
 
 When it comes to cell editing, the value will be the same as the data source value - the display factor is '1'. Upon editing of the cell a preview of the percent value will be shown as a suffix element.For example, while editing '0.0547' the preview element will show '5.47%'.
 
+<!-- Angular -->
+
 ```ts
 public options = {
     /**
@@ -406,6 +420,8 @@ public options = {
 };
 public formatPercentOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column field="UnitsInStock"
@@ -505,10 +521,7 @@ public init(column: IgxColumnComponent) {
 
 ```html
 <igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" [pipeArgs]="formatOptions" editable="true">
-        <ng-template igxCellEditor let-value>
-            {{ value | currency:'USD':'symbol':'1.0-0'}}
-        </ng-template>
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">        
     </igc-column>
 </igc-grid>
 ```
@@ -520,7 +533,6 @@ constructor() {
     this._bind = () => {
         unitsInStock.pipeArgs = this.formatOptions;
         unitsInStock.inlineEditorTemplate = this.editCellTemplate;
-
     }
     this._bind();
 }

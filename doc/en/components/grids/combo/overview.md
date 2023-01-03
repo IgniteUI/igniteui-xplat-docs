@@ -1,15 +1,15 @@
 ---
-title: {Platform} Combobox Component – {ProductName}
+title: {Platform} ComboBox Component – {ProductName}
 _description: {Platform} Combo component provides a powerful input, combining features of the basic HTML input, select, filtering and custom drop-down lists. Try it for FREE
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox component
-mentionedTypes: ['Combo']
+mentionedTypes: ['Combo', 'ComboItem', 'ComboHeader', 'ComboList']
 ---
 
 # {Platform} ComboBox Overview
 
-{Platform} ComboBox is a lightweight editor that enables users to easily select, filter, and group different predefined options in a provided list. The component also supports options for {Platform} ComboBox Keyboard navigation, templates to customize how the items, header, and footer are displayed.
+{Platform} ComboBox is a lightweight editor that enables users to easily select, filter, and group different predefined options in a provided list. The component also supports options for {Platform} ComboBox keyboard navigation, templates to customize how the items, header, and footer are displayed.
 
-The {ProductName} Combobox component provides a list of options from which users can make a selection. It displays all options in a virtualized list of items, meaning the ComboBox can simultaneously show thousands of records, where one or more options can be selected. Additionally, the component features case-sensitive filtering, grouping, complex data binding and more.
+The {ProductName} ComboBox component provides a list of options from which users can make a selection. It displays all options in a virtualized list of items, meaning the ComboBox can simultaneously show thousands of records, where one or more options can be selected. Additionally, the component features case-sensitive filtering, grouping, complex data binding and more.
 
 ## {Platform} ComboBox Example
 
@@ -22,7 +22,7 @@ The {ProductName} Combobox component provides a list of options from which users
 
 <div class="divider--half"></div>
 
-## Getting Started With Ignite UI {Paltform} ComboBox Component
+## Getting Started with {Platform} ComboBox
 
 <!-- WebComponents -->
 First, you need to install the {ProductName} by running the following command:
@@ -164,7 +164,7 @@ When the combo component is focused and the list of options is **visible**:
 - Using the <kbd>Enter</kbd> key will select the active item and close the list of options.
 - Using the <kbd>Esc</kbd> or <kbd>Tab/Shift + Tab</kbd> keys will close the list of options.
 
-## Combo Styling
+## Styling {Platform} ComboBox
 
 You can change the appearance of the {ProductName} `Combo` component and its items, by using the exposed CSS parts listed below:
 
@@ -202,7 +202,6 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
            github-src="grids/combo/styling">
 </code-view>
 
-<!-- WebComponents -->
 ## API Reference
 
 * `Combo`
@@ -210,7 +209,6 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 * `ComboHeader`
 * `ComboList`
 
-<!-- end: WebComponents -->
 ## Additional Resources
 
 <!-- Blazor -->

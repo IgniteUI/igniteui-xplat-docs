@@ -307,7 +307,7 @@ public static totalMax: PivotAggregation = (members, data: any) => {
 `PivotConfiguration` は、`PivotGrid` コンポーネントの現在の状態を記述するインターフェースです。これを使用すると、開発者はデータのフィールドを **rows**、**columns**、**filters** または **values** (行、列、フィルター、値) として宣言できます。この構成では、これらの各要素を個別に有効または無効にすることができます。ピボット グリッドの現在の状態には、有効な要素のみが含まれます。`PivotDataSelector` コンポーネントは同じ構成を利用し、すべての有効と無効の要素のリストを表示します。それぞれについて、適切な状態のチェックボックスがあります。エンドユーザーは、これらのチェックボックスを使用してさまざまな要素を切り替えることにより、ピボット状態を簡単に調整できます。
 `Enable` プロパティは、特定の `PivotDimension` または `PivotValue` がアクティブであり、ピボット グリッドによって描画されるピボット ビューに参加するかどうかを制御します。
 
-### 完全な構成の例
+### 完全な構成のコード
 
 基本的なピボット構成を見てみましょう:
 
@@ -448,8 +448,9 @@ public PivotSalesData()
     });
 ```
 
+### 完全な構成の例
 
-次のビューは、Product (製品) カテゴリの一意の列をグループ化し、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数の関連する集計を表示します。
+上記のコードを使用すると、Product (製品) カテゴリの一意の列、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数に関連する集計を表示する次の例が得られます。
 
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -476,7 +477,6 @@ public PivotSalesData()
 * `PivotDataSelector`
 * `PivotDateDimension`
 * `Column`
-
 
 <!-- ## その他のリソース
 
