@@ -317,6 +317,13 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.GridRef.AddRow(record);
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
