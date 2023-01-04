@@ -481,7 +481,7 @@ public PivotSalesData()
 <!-- ## その他のリソース
 
 * [{Platform} ピボット グリッドの機能](features.md)
-* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md) -->
+* [{Platform} ピボット グリッド カスタム集計](remote-operations.md) -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

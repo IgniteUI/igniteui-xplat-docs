@@ -213,7 +213,7 @@ Chips from these areas can not be moved to the `values` area and chips from the 
 
 ## Additional Resources
 * [{Platform} {PivotGridTitle} Overview](overview.md)
-* [{Platform} {PivotGridTitle} Custom Aggregations](pivot-grid-custom.md)
+* [{Platform} {PivotGridTitle} Custom Aggregations](remote-operations.md)
 
 Our community is active and always welcoming to new ideas.
 

@@ -691,6 +691,12 @@
         "name": "Features",
         "href": "grids/pivot-grid/features.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "Remote Operations",
+        "href": "grids/pivot-grid/remote-operations.md",
+        "status": "NEW"
       }
     ]
   },

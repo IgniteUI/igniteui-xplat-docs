@@ -482,7 +482,7 @@ Using above code will result in the following example which groups the Product C
 
 <!-- TODO write these topics: -->
 <!-- * [{Platform} Pivot Grid Features](features.md) -->
-<!-- * [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md) -->
+<!-- * [{Platform} Pivot Grid Custom Aggregations](remote-operations.md) -->
 
 Our community is active and always welcoming to new ideas.
 
