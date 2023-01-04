@@ -384,8 +384,10 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/general-changelog-dv.md');
     // excludedTopics.push('doc/**/general-nuget-feed.md');
     // excludedTopics.push('doc/**/general-installing-blazor.md');
+    // excludedTopics.push('doc/**/general-changelog*.md');
     // excludedTopics.push('doc/**/grids/grids.md');
     // excludedTopics.push('doc/**/grids/grid/*.md');
+    // excludedTopics.push('doc/**/grids/grid/_shared/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');

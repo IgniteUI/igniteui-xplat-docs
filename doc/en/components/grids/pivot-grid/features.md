@@ -1,13 +1,13 @@
 ---
-title: {Platform} {ComponentTitle} Features | Pivot Tables | Infragistics
-_description: Create fast, responsive {Platform} {ComponentTitle}s and tables with {ProductName}. Perform complex data analysis via pivot data.
-_keywords: {Platform} {ComponentTitle}, {Platform} material pivot table, {ProductName}, {ComponentTitle} features, pivot features
+title: {Platform} {PivotGridTitle} Features | Pivot Tables | Infragistics
+_description: Create fast, responsive {Platform} {PivotGridTitle} and tables with {ProductName} and perform complex data analysis via pivot data.
+_keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features
 mentionedTypes: ['Infragistics.Controls.Grid']
 ---
 
 # {Platform} {PivotGridTitle} Features
 
-The pivot and flat grid component classes inherit from a common base and thus share some functionality and features.
+The pivot and flat grid components inherit from a common base and thus share some functionality and features.
 
 >[!NOTE]
 >Some features do not have meaningful behavior in the context of a pivot table and therefore cannot be enabled for `{PivotGridName}`. These include:
@@ -19,9 +19,10 @@ The pivot and flat grid component classes inherit from a common base and thus sh
 
 The {PivotGridTitle} component has additional features and functionalities related to its dimensions as described below.
 
-<code-view style="height: 870px" 
-           data-demos-base-url="{environment:dvDemosBaseUrl}" 
-           iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/pivot-grid-features" alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
+<code-view style="height: 870px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
+           alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
 </code-view>
 
 <!-- Angular -->
