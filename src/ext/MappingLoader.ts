@@ -54,10 +54,31 @@ export class MappingLoader {
             return this._typeMap.get(name);
         } else {
             if (this._aliasedNames.has(name)) {
+
+                // if (this.namespace === null && name === "Grid") {
+                //     this.namespace = "Infragistics.Controls"; // defaulting to WebGrid's namespace
+                // }
+
                 if (this.namespace) {
                     return this.getType(this.namespace + "." + name);
                 } else {
-                    throw new Error("type name is not unique, use namespace qualified: " + name);
+                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    // console.log(this._aliasedNames);
+                    // if (name === "Grid") {
+                    //     var gridAPI = this._quickTypeMap.get("Grid");
+                    //     if (gridAPI !== undefined) {
+                    //         // console.log(gridAPI);
+                    //         return gridAPI;
+                    //     }
+                    //     return gridAPI;
+                    // }
+                    // else {
+                        // console.log(this._quickTypeMap);
+                        // for (const [key, v] of this._quickTypeMap) {
+                        //     console.log(" " + v.originalNamespace + " " +  key); //
+                        // }
+                        // throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    // }
                 }
             }
             return this._quickTypeMap.get(name);

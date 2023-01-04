@@ -224,16 +224,16 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
-    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>    
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
 </igc-grid>
 ```
 
 ```typescript
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;   
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
 
     this._bind = () => {
-        grid1.data = this.data;        
+        grid1.data = this.data;
     }
 
     this._bind();
@@ -307,7 +307,7 @@ public formatUppercase(value: string) {
 ```
 
 ```razor
-<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" /> 
+<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" />
 
 //In JavaScript:
 igRegisterScript("UpperCaseTemplate", (ctx) => {
@@ -369,7 +369,7 @@ public toggleSummary(column: IgxColumnComponent) {
 //In JavaScript:
 igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
 
-    var html = window.igTemplating.html;    
+    var html = window.igTemplating.html;
 
     return html`
         <div class="text">${ctx.cell.column.field}</div>
@@ -509,7 +509,7 @@ igRegisterScript("NameCellTemplate", (ctx) => {
     `;
 }, false);
 
-igRegisterScript("SubscriptionCellTemplate", (ctx) => {    
+igRegisterScript("SubscriptionCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`
         <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
@@ -724,7 +724,7 @@ public initColumns(column: IgcGridColumn) {
 @code {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
-        IgbColumn column = args.Detail;        
+        IgbColumn column = args.Detail;
         if(column.Field == "ProductName"){
             column.Sortable = true;
             column.Editable = true;
@@ -1158,7 +1158,7 @@ igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
 }, false);
 
 function GetName(value) {
-    
+
 }
 
 function GetWeight(value) {
@@ -1215,7 +1215,7 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
     public EmployeesNestedData()
     {
         this.Add(new EmployeesNestedDataItem()
-        {            
+        {
             Age = 55,
             Employees = new List<EmployeesNestedDataItem_EmployeesItem>()
             {
@@ -1270,7 +1270,7 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
                     ID = 6,
                     Name = @"Roland Mendel",
                     Title = @"Senior Software Developer"
-                }}            
+                }}
             });
         }
     }
@@ -1528,7 +1528,7 @@ igRegisterScript("AddressCellTemplate", (ctx) => {
     </div>
     <br />
 </div>`;
-}, false);    
+}, false);
 ```
 
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
@@ -1614,7 +1614,7 @@ public updatePostalCode(rowId: number) {
 
 ```razor
 <IgbColumn Header="Address" Field="Address"
-           Editable="true"           
+           Editable="true"
            InlineEditorTemplateScript="AddressEditCellTemplate" />
 
 //In JavaScript:
