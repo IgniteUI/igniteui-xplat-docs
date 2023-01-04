@@ -55,9 +55,9 @@ export class MappingLoader {
         } else {
             if (this._aliasedNames.has(name)) {
 
-                // if (this.namespace === null && name === "Grid") {
-                //     this.namespace = "Infragistics.Controls"; // defaulting to WebGrid's namespace
-                // }
+                if (this.namespace === null && name === "Grid") {
+                    this.namespace = "Infragistics.Controls"; // defaulting to WebGrid's namespace
+                }
 
                 if (this.namespace) {
                     return this.getType(this.namespace + "." + name);
