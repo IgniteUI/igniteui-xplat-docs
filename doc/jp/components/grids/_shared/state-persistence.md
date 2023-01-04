@@ -461,7 +461,7 @@ setState snippet
 
 ## ピボット ストラテジの復元
 
-`GridState` は、デフォルトで は ([制限](state-persistence.md#制限)を参照) リモート ピボット操作もカスタム ディメンション ストラテジも保持しません (詳細については、[Pivot Grid リモート操作](pivot-grid-custom.md)のサンプルを参照してください)。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
+`GridState` は、デフォルトで は ([制限](state-persistence.md#制限)を参照) リモート ピボット操作もカスタム ディメンション ストラテジも保持しません (詳細については、[Pivot Grid リモート操作](remote-operations.md)のサンプルを参照してください)。これらの復元は、アプリケーション レベルのコードで実現できます。`GridState` は、`StateParsed` と呼ばれるイベントを公開します。このイベントはグリッド状態が適用される前に追加で変更するために使用できます。以下はその方法です。
 
 > `StateParsed` は、文字列引数で `SetState` を使用している場合にのみ発行します。
 
@@ -569,6 +569,6 @@ state.setState(gridState.columnSelection);
 
 * [{ComponentTitle} 概要](overview.md)
 * [ピボット グリッド機能](features.md)
-<!-- * [ピボット グリッドのリモート操作](pivot-grid-custom.md) -->
+<!-- * [ピボット グリッドのリモート操作](remote-operations.md) -->
 
 <!-- ComponentEnd: PivotGrid -->

@@ -694,8 +694,8 @@
       },
       {
         "exclude": ["Angular", "React", "Blazor"],
-        "name": "Remote Data Operations",
-        "href": "grids/pivot-grid/pivot-grid-custom.md",
+        "name": "Remote Operations",
+        "href": "grids/pivot-grid/remote-operations.md",
         "status": "NEW"
       }
     ]
