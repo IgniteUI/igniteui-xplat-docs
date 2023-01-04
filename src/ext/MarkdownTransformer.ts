@@ -489,11 +489,16 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
             // console.log('--- replaceVariables \n' + nodeValue);
 
             // removing variables in metadata so we can extract a list of shared components without parting errors
-            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
-            for (const v of variables) {
-                var r = new RegExp(v, "gm");
-                nodeValue = nodeValue.replace(r, "");
-            }
+            // var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
+            // for (const v of variables) {
+            //     var r = new RegExp(v, "gm");
+            //     nodeValue = nodeValue.replace(r, "");
+            // }
+
+            // removing all variables in metadata so we can extract a list of shared components without parting errors
+            var r = new RegExp("\{[a-zA-Z]*\}", "gm");
+            nodeValue = nodeValue.replace(r, "");
+
             // cleanup of metadata
             nodeValue = nodeValue.replace(new RegExp("  ", "gm"), " ");
             nodeValue = nodeValue.replace(new RegExp(", ,", "gm"), "");
@@ -1410,6 +1415,7 @@ export class MarkdownTransformer {
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
             .use(transformDocPlaceholders, options, false) // keeping vars in metadata
+            // .use(transformDocPlaceholders, options, true) // removing vars in metadata
             .use(getFrontMatterTypes, options, filePath)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)

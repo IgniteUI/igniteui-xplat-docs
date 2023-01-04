@@ -376,7 +376,7 @@ constructor() {
     var id = this.id = document.getElementById('ID') as IgcColumnComponent;
 
     this._bind = () => {
-        id.autoize();
+        id.autosize();
     }
     this._bind();
 }

@@ -414,9 +414,17 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- end: Angular -->
 
 <!-- Blazor -->
+
 Each of the column groups of the grid can be templated separately. The column group expects `RenderFragment` for the `HeaderTemplate` property.
 The expression is provided with the column group object as a context.
+
 <!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+Each of the column groups of the grid can be templated separately. The following code snippet demonstrates how to use the `HeaderTemplate` of a column group:
+
+<!-- end: WebComponents -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -428,6 +436,30 @@ The expression is provided with the column group object as a context.
         return @<span>@value</span>;
     };
 }
+```
+
+```html
+<igc-column-group id="addressInfoGroup" header="Address Information"></igc-column-group>
+```
+
+```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        grid.data = this.customersData
+        columnGroup.headerTemplate = this.headerTemplate;
+    }
+    this._bind();
+}
+
+public headerTemplate = (ctx: IgcColumnTemplateContext) => {
+    const column = (ctx as any).column;
+    return html`<div>
+             <span style="float:left">${column.header.toUpperCase()}</span>                     
+            </div>`;
+};
 ```
 
 <!-- Angular -->

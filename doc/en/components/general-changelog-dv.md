@@ -13,6 +13,9 @@ All notable changes for each version of {ProductName} are documented on this pag
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
+## **{PackageVerChanges-22-2.1}**
+* Angular 15 support.
+
 ## **{PackageVerChanges-22-2}**
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  

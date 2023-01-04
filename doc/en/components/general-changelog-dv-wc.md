@@ -12,6 +12,14 @@ All notable changes for each version of {ProductName} are documented on this pag
 > [!NOTE]
 Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
 
+## **{PackageVerChanges-22-2.1}**
+
+### New Components
+
+* [Combo](grids/combo/overview.md)
+* [Pivot Grid](grids/pivot-grid/overview.md)
+* [Stepper]](layouts/stepper.md)
+
 ## **{PackageVerChanges-22-2}**
 
 ### New Components
@@ -21,12 +29,12 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 ### {PackageCharts}
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
-These new chart improvements include: 
+These new chart improvements include:
 
-* Responsive layouts for horizontal label rotation based on browser / screen size. 
-* Enhanced rendering for rounded labels on all platforms. 
+* Responsive layouts for horizontal label rotation based on browser / screen size.
+* Enhanced rendering for rounded labels on all platforms.
 * Added marker properties to StackedFragmentSeries.
 * Added `ShouldPanOnMaximumZoom` property.
 * New Category Axis Properties:
@@ -35,7 +43,7 @@ These new chart improvements include:
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -59,7 +67,7 @@ These new chart improvements include:
 * Changed `SummaryOperand` to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -74,7 +82,7 @@ These new chart improvements include:
 * New `FavorLabellingScaleEnd`, determines whether the axis should favor emitting a label at the end of the scale. Only compatible with numeric axes (e.g. `NumericXAxis`, `NumericYAxis`, `PercentChangeAxis`).
 * New `IsSplineShapePartOfRange` determines whether to include the spline shape in the axis range requested of the axis.
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
-* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category. 
+* New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
 ### {PackageGrids}
 
@@ -95,16 +103,16 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 <div class="divider--half"></div>
 
-## **2.0.0** 
+## **2.0.0**
 ### (*) {PackageComponents}
 #### New Components & Themes
 
 * Added [Slider](inputs/slider.md)
 * Added [Range Slider](inputs/slider.md)
 * Added Dark Theme which change structure of previous themes from:
-`igniteui-webcomponents/themes/bootstrap.css` 
+`igniteui-webcomponents/themes/bootstrap.css`
 to:
-`igniteui-webcomponents/themes/light/bootstrap.css` for light theme 
+`igniteui-webcomponents/themes/light/bootstrap.css` for light theme
 `igniteui-webcomponents/themes/dark/bootstrap.css`  for Dark theme
 
 #### Major changes
@@ -124,17 +132,17 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 ### {PackageGrids}
 
-#### Data Grid 
+#### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
 
 > [!NOTE]
 > The following breaking changes were introduced
 
-- Changed `ValueField` property from type string[] to string. 
+- Changed `ValueField` property from type string[] to string.
 
 ### {PackageInputs}
 
-#### Date Picker 
+#### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox
@@ -170,7 +178,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts} 
+### {PackageCharts}
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 

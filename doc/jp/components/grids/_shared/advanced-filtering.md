@@ -69,6 +69,8 @@ constructor() {
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
 
+<!-- Angular -->
+
 ```typescript
 ngAfterViewInit(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -96,6 +98,9 @@ ngAfterViewInit(): void {
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
 }
 ```
+
+<!-- end: Angular -->
+
 ```typescript
 connectedCallback(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
