@@ -73,7 +73,7 @@ _language: ja
 
 <img src="../../../images/grid_sizing/width-percent-parent-100p-v2.jpg" style="width: 80%"/>
 
-* `Width` が `1000px` ピクセルの親要素があり、グリッドの幅が `150%` に設定されている場合、計算されるグリッドの `Width` は `1500px` になります。この場合、グリッドは引き続き完全に表示されますが、`overflow: auto` を設定すると、親がスクロールバーを表示します。
+* `Width` が `1000px` ピクセルの親要素があり、グリッドの幅が `150%` に設定されている場合、計算されるグリッドの `Width` は `1500px` になります。この場合、グリッドは引き続き完全に表示されますが、```overflow: auto``` を設定すると、親がスクロールバーを表示します。
 
 <img src="../../../images/grid_sizing/width-percent-150p-parent-noscroll-v2.jpg" style="width: 80%"/>
 <img src="../../../images/grid_sizing/width-percent-150p-parent-scroll-v2.jpg" style="width: 80%"/>

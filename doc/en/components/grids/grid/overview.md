@@ -1726,7 +1726,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 <!--  Angular -->
 In [**Angular**](https://angular.io/) most of the styles are prefixed implicitly thanks to the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin.
 
-For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment `/* autoprefixer grid:on */`.
+For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment ```autoprefixer grid:on```.
 
 To facilitate your work, apply the comment in the `src/styles.scss` file.
 
