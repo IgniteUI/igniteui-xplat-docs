@@ -127,6 +127,6 @@ stages:
 
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Pipeline.Workspace)\$(Build.ArtifactStagingDirectory)'
+        targetPath: '$(Build.ArtifactStagingDirectory)'
         artifact: 'XPlatDocs'
         publishLocation: 'pipeline'
