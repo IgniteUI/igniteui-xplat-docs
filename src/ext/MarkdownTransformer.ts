@@ -190,11 +190,13 @@ function transformCodeRefs(options: any) {
 
         let memberHasCharDot = memberName.includes(".", 0);
         let memberHasCharSpace = memberName.includes(" ");
+        let memberHasInlineCode = memberName.includes("=") || memberName.includes(":") || memberName.includes("&") || memberName.includes("{");
 
         if (memberName == "") {
             transformWarning("found empty API member");
         }
-        if (memberHasCharSpace && !memberHasCharDot) {
+
+        if (memberHasCharSpace && !memberHasCharDot && !memberHasInlineCode) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
             transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
