@@ -182,7 +182,7 @@ constructor() {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
 * [{ProductName} **GitHub** (英語)](https://github.com/IgniteUI/igniteui-{Platform}-examples)
 
 ## API メンバー

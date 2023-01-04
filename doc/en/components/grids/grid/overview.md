@@ -2,20 +2,56 @@
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 ---
+
+<style>
+    .sample-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sample-column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 25%;
+        align-content: flex-start;
+        min-width: 280px;
+    }
+
+    .tabbar-wrapper {
+        width: inherit;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .tabbar-wrapper > p {
+        padding-right: 20px
+    }
+</style>
 
 # {Platform} Grid Overview and Configuration
 
-The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.
-
 <div class="sample-content">
-    <img class="b-lazy responsive-img"
-        src="../../../images/general/landing-grid-page.png"
-        data-src="../../../images/general/landing-grid-page.png"
-        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-        alt="Grid"
-        title="Grid">
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <p>The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+        </div>
+    </article>
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <div class="tab-content">
+                <img class="b-lazy responsive-img"
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+                    alt="Grid"
+                    title="Grid">
+            </div>
+        </div>
+    </article>
 </div>
 
 ## {Platform} Grid Example
@@ -30,7 +66,7 @@ In this grid example, you can see how users can do both basic and excel-style fi
 
 <div class="divider--half"></div>
 
-## Getting Started with {ProductName} Grid
+## Getting Started with {Platform} Grid
 
 ### Dependencies
 
@@ -147,9 +183,13 @@ The `Id` property is a string value and is the unique identifier of the grid whi
 
 The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
+<!-- Angular -->
+
 ## Bootstrap Grid Definition
 
 {ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
+
+<!-- end: Angular -->
 
 ## Editable {Platform} Grid
 
@@ -179,30 +219,33 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
     </igx-paginator>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
-    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
-    <igc-paginator per-page="6"></igc-paginator>
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>    
 </igc-grid>
 ```
+
 ```typescript
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-    var trackProgress = this.trackProgress = document.getElementById('trackProgress') as IgcColumnComponent;
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;   
 
     this._bind = () => {
-        grid1.data = this.data;
-        trackProgress.bodyTemplate = this.trackProgressCellTemplate;
+        grid1.data = this.data;        
     }
 
     this._bind();
 }
+```
 
-public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}"></igc-linear-bar>`;
-}
+```razor
+<IgbGrid AutoGenerate=false AllowFiltering=true>
+    <IgbColumn Field="Name" Sortable=true />
+    <IgbColumn Field="AthleteNumber" Sortable=true Header="Athlete Number" Filterable=false/>
+    <IgbColumn Field="TrackProgress" Header="Track Progress" Filterable=false />
+</IgbGrid>
 ```
 
 <!-- Angular -->
@@ -263,6 +306,23 @@ public formatUppercase(value: string) {
 }
 ```
 
+```razor
+<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" /> 
+
+//In JavaScript:
+igRegisterScript("UpperCaseTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;
+
+    return html`${this.formatUppercase(ctx.column.field)}`;
+
+}, false)
+
+function formatUppercase(value) {
+    return value.toUpperCase();
+}
+```
+
 >[!NOTE]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
@@ -276,9 +336,11 @@ public formatUppercase(value: string) {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
@@ -300,6 +362,22 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
+
+```razor
+<IgbColumn Field="ProductName" Header="Product Name" Groupable=true HasSummary=true HeaderTemplateScript="ProductNameHeaderTemplate" />
+
+//In JavaScript:
+igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;    
+
+    return html`
+        <div class="text">${ctx.cell.column.field}</div>
+        <igc-icon [attr.draggable]="false">functions</igc-icon>
+    `;
+}, false)
+```
+
 As you can see, we are adding `Draggable` attribute set to false.
 
 ### Cell Template
@@ -336,6 +414,21 @@ public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public formatTitleCase(value: string) {
+}
+```
+
+```razor
+<IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`${this.formatTitleCase(ctx.cell.value)}`;
+}, false);
+
+function formatTitleCase(value) {
+    return value;
 }
 ```
 
@@ -402,6 +495,37 @@ public formatTitleCase(value: string) {
 }
 ```
 
+```razor
+<IgbGrid AutoGenerate=false>
+    <IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate" />
+    <IgbColumn Field="Subscription" BodyTemplateScript="SubscriptionCellTemplate" />
+</IgbGrid>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+    `;
+}, false);
+
+igRegisterScript("SubscriptionCellTemplate", (ctx) => {    
+    var html = window.igTemplating.html;
+    return html`
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
+    `;
+}, false);
+
+function updateValue(value) {
+}
+
+function deleteRow(rowId) {
+}
+
+function formatTitleCase(value) {
+}
+```
+
 <!-- Angular -->
 
 When changing data through the **cell template** using `ngModel`, you need to call the appropriate API methods to make sure the value is correctly updated in the Angular grid's underlying data collection. In the snippet above, the `ngModelChange` call passes through the grid's [editing API](cell-editing.md#editing-through-api) and goes through the grid's editing pipeline, properly triggering [transactions](batch-editing.md)(if applicable) and handling of [summaries](summaries.md), [selection](selection.md), etc. However, this `ngModelChange` will fire every time the value of the cell changes, not just when the user is done editing, resulting in a lot more API calls.
@@ -434,9 +558,11 @@ to set the `Editable` property of the column to true.
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="price" field="Price" data-type="number" editable="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
@@ -458,6 +584,25 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public updateValue(value: number) {
+}
+```
+
+```razor
+<IgbColumn Field="Price" Editable=true DataType="GridColumnDataType.Number" InlineEditorTemplateScript="PriceCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("PriceCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`
+        <label>
+            Enter the new price tag
+        </label>
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+    `;
+}, false);
+
+function updateValue(value) {
 }
 ```
 
@@ -492,7 +637,7 @@ public smallView: TemplateRef<any>;
 ....
 
 const column = this.grid.getColumnByName("User");
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = this.smallView;
 ```
@@ -504,7 +649,7 @@ column.bodyTemplate = this.smallView;
 ```
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 user.bodyTemplate = this.smallView;
 
@@ -520,6 +665,37 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
+```
+
+```razor
+
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;
+        // Return the appropriate template based on some condition.
+        // For example saved user settings, viewport size, etc.
+        column.BodyTemplateScript = "NormalViewTemplate";
+    }
+}
+
+//In JavaScript:
+igRegisterScript("NormalViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details">${ctx.cell.value}</div>
+        <user-details-component></user-details-component>
+    `;
+}, false);
+
+igRegisterScript("SmallViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details-small" style="color: blue">${ctx.cell.value}</div>
+    `;
+}, false);
 ```
 
 Column properties can also be set in code in the `ColumnInit` event which is emitted when the columns are initialized in the grid.
@@ -538,6 +714,21 @@ public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
+    }
+}
+```
+
+```razor
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;        
+        if(column.Field == "ProductName"){
+            column.Sortable = true;
+            column.Editable = true;
+        }
     }
 }
 ```
@@ -597,9 +788,21 @@ constructor() {
 }
 ```
 
+```razor
+<IgbColumn Field="OrderDate"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+
+<IgbColumn Field="UnitPrice"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+```
+
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
 
 All available column data types could be found in the official [Column types topic](column-types.md#default-template).
+
+<!-- Angular, WebComponents -->
 
 ## Grid Data Structure
 
@@ -645,6 +848,7 @@ const POJO = [{
 
 >If you use `AutoGenerate` columns **the data keys must be identical.**
 
+<!-- end: Angular, WebComponents -->
 
 <!-- Angular, WebComponents -->
 ## Grid Data Binding
@@ -825,15 +1029,43 @@ interface AminoAcid {
     }
 }
 ```
+
+```razor
+public class AminoAcid
+{
+    public string Name { get; set; }
+    public AminoAbbreviation Abbreviation { get; set; }
+    public AminoWeight Weight { get; set; }
+}
+
+public class AminoAbbreviation
+{
+    public string Short { get; set; }
+    public string Long { get; set; }
+}
+
+public class AminoWeight
+{
+    public double Molecular { get; set; }
+    public double Residue { get; set; }
+}
+```
+
 For example, in order to display the weights of a given amino acid in the grid the following snippet will suffice
 
 ```html
 <igx-column field="weight.molecular"></igx-column>
 <igx-column field="weight.residue"></igx-column>
 ```
+
 ```html
 <igc-column field="weight.molecular"></igc-column>
 <igc-column field="weight.residue"></igc-column>
+```
+
+```razor
+<IgbColumn Field="Weight.Molecular" />
+<IgbColumn Field="Weight.Residue" />
 ```
 
 <!-- Angular -->
@@ -908,6 +1140,32 @@ public getWeight(rowId: number){
 }
 ```
 
+```razor
+<IgbColumn Field="Abbreviation.Long" BodyTemplateScript="AbbreviationLongCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div>
+            <div>
+                ${ctx.cell.value}
+                ${this.GetName(ctx.cell)}
+                ${this.GetWeight(ctx.cell)}
+            </div>
+        </div>
+    `;
+}, false);
+
+function GetName(value) {
+    
+}
+
+function GetWeight(value) {
+
+}
+```
+
 Here is an example on how body template is used to display complex data. Below is the data that we are going to use:
 
 ```typescript
@@ -950,6 +1208,75 @@ export const EMPLOYEE_DATA = [
     }
 ]
 ```
+
+```razor
+public class EmployeesNestedData : List<EmployeesNestedDataItem>
+{
+    public EmployeesNestedData()
+    {
+        this.Add(new EmployeesNestedDataItem()
+        {            
+            Age = 55,
+            Employees = new List<EmployeesNestedDataItem_EmployeesItem>()
+            {
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 43,
+                    Salary = 70000,
+                    Productivity = 80,
+                    City = @"Hamburg",
+                    Country = @"Germany",
+                    Phone = @"609-444-555",
+                    HireDate = @"2011, 6, 3",
+                    ID = 3,
+                    Name = @"Michael Burke",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 29,
+                    Salary = 60000,
+                    Productivity = 80,
+                    City = @"Munich",
+                    Country = @"Germany",
+                    Phone = @"609-333-444",
+                    HireDate = @"2009, 6, 19",
+                    ID = 2,
+                    Name = @"Thomas Anderson",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 31,
+                    Salary = 90000,
+                    Productivity = 80,
+                    City = @"Warasw",
+                    Country = @"Poland",
+                    Phone = @"609-222-205",
+                    HireDate = @"2014, 8, 18",
+                    ID = 11,
+                    Name = @"Monica Reyes",
+                    Title = @"Software Development Team Lead"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 35,
+                    Salary = 70000,
+                    Productivity = 70,
+                    City = @"Koln",
+                    Country = @"Germany",
+                    Phone = @"609-502-525",
+                    HireDate = @"2015, 9, 17",
+                    ID = 6,
+                    Name = @"Roland Mendel",
+                    Title = @"Senior Software Developer"
+                }}            
+            });
+        }
+    }
+}
+```
+
 The custom template for the column, that will render the nested data:
 
 ```html
@@ -1034,6 +1361,40 @@ public getAge(rowId: number) {
 }
 ```
 
+```razor
+<IgbColumn Header="Employees" Field="Employees" BodyTemplateScript="WebGridNestedDataCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+    const people = ctx.cell.value;
+    if (people != null) {
+        if (people.length === 0) return html``;
+        const person = people[0];
+        return html`
+    <igc-expansion-panel>
+        <h3 slot="title">
+        ${person.Name}
+        </h3>
+        <div class="description">
+            <div>
+                <label for="title">Title</label>
+                <input id='Title' type="text" name="title" value="${person.Title}" style="text-overflow: ellipsis;" />
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input id='Age' type="text" name="title" value="${person.Age}" style="text-overflow: ellipsis;" />
+            </div>
+        </div>
+    </igc-expansion-panel>
+        `;
+    }
+}, false);
+```
+
 And the result from this configuration is:
 
 
@@ -1066,6 +1427,29 @@ export const DATA: any[] = [
         Region: null
     }
 ]
+```
+
+```razor
+public class CustomersData : List<CustomersDataItem>
+{
+    public CustomersData()
+    {
+        this.Add(new CustomersDataItem()
+        {
+            ID = "ALFKI",
+            CompanyName = "Alfreds Futterkiste",
+            ContactName = "Maria Anders",
+            ContactTitle = "Sales Representative",
+            Address = "Obere Str. 57",
+            City = "Berlin",
+            Region = "East",
+            PostalCode = "12209",
+            Country = "Germany",
+            Phone = "030-0074321",
+            Fax = "030-0076545"
+        });
+    }
+}
 ```
 
 The custom template:
@@ -1121,6 +1505,30 @@ public getCity(rowId: number) {
 
 public getPostalCode(rowId: number) {
 }
+```
+
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"
+           BodyTemplateScript="AddressCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div class="address-container">
+    <div class="country-city">
+        <span><strong>Country:</strong> ${ctx.cell.row.data.Country}</span>
+        <br>
+        <span><strong>City:</strong> ${ctx.cell.row.data.City}</span>
+    </div>
+    <div class="phone-pscode">
+        <span><strong>Postal Code:</strong> ${ctx.cell.row.data.PostalCode}</span>
+        <br>
+        <span><strong>Phone:</strong> ${ctx.cell.row.data.Phone}</span>
+    </div>
+    <br />
+</div>`;
+}, false);    
 ```
 
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
@@ -1204,6 +1612,38 @@ public updatePostalCode(rowId: number) {
 }
 ```
 
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"           
+           InlineEditorTemplateScript="AddressEditCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressEditCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+
+    return html`<div class="address-container--edit">
+    <div>
+        <span><strong>Country:</strong></span>
+        <input id='Country' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Country}"></input>
+        <br>
+        <span><strong>City:</strong></span>
+        <input id='City' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.City}"></input>
+    </div>
+    <div>
+        <span><strong>Postal Code:</strong></span>
+        <input id='PostalCode' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.PostalCode}"></input>
+        <br>
+        <span><strong>Selected:</strong></span>
+        <input id='Phone' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Phone}"></input>
+    </div>
+    <br>
+</div>`;
+}, false);
+```
+
 ### Working with Flat Data Example
 
 Using code snippets from previous section will result in the following example of `{GridName}`
@@ -1262,7 +1702,7 @@ platformBrowserDynamic()
 
 <!-- end: Angular -->
 
-## {Platform} Grid Styling Configuration
+## Styling {Platform} Grid
 > [!NOTE]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
@@ -1327,6 +1767,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 <!-- Angular -->
 
 ## Theming Dependencies
+
 * **Icon Theme**
 * **InputGroup Theme**
 * **Chip Theme**

@@ -102,7 +102,6 @@ _language: ja
 </{ComponentSelector}>
 ```
 
-<!-- Angular -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-paginator id="paginator" per-page="10">
@@ -125,7 +124,6 @@ constructor() {
     this._bind();
 }
 ```
-<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->

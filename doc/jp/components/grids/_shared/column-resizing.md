@@ -220,11 +220,11 @@ TO DO!
 <!-- ComponentStart: Grid -->
 
 ```html
-<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="10%" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-grid>
 ```
 
 ```razor
@@ -247,11 +247,11 @@ TO DO!
 <!-- ComponentStart: TreeGrid -->
 
 ```html
-<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'10%'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'Age'" dataType="number" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-tree-grid>
 ```
 
 ```razor
@@ -377,7 +377,7 @@ constructor() {
     var id = this.id = document.getElementById('ID') as IgcColumnComponent;
 
     this._bind = () => {
-        id.autoize();
+        id.autosize();
     }
     this._bind();
 }

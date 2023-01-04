@@ -39,12 +39,16 @@ _language: ja
  - 小数点後の桁数。
  - `,` または `.` の少数桁の区切り文字
 
+<!-- Angular -->
+
 ```ts
 public options = {
   digitsInfo: '1.4-4',
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column [pipeArgs]="formatOptions" [dataType]="'number'">
@@ -92,6 +96,8 @@ constructor() {
  - **format** - 日付の書式設定のデフォルト値は `'mediumDate'` です。その他の利用可能なオプション `'short'`、`'long'`、`'shortDate'`、`'fullDate'`、`'longTime'`、`'fullTime'` などです。
  - **timezone** - ユーザーのローカル システム タイムゾーンがデフォルト値です。タイムゾーン オフセットまたは標準の UTC/GMT または米国本土のタイムゾーンの略語も渡すことができます。世界の任意の場所の対応する時間を表示するさまざまなタイムゾーンの例:
 
+<!-- Angular -->
+
 ```ts
 public formatDateOptions = {
     /** The date/time components that a date column will display, using predefined options or a custom format string. */
@@ -102,6 +108,8 @@ public formatDateOptions = {
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column [pipeArgs]="formatDateOptions" [dataType]="'date'">
@@ -295,10 +303,12 @@ import { LOCALE_ID } from '@angular/core';
 <!-- end: Blazor -->
 
 グリッドの locale を使用する場合:
+<!-- Angular -->
 ```html
 <{ComponentSelector} [locale]="'fr-FR'" [data]="data">
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Locale="'fr-FR'" Data=data>
@@ -314,6 +324,8 @@ import { LOCALE_ID } from '@angular/core';
 
 `PipeArgs` 入力を使用することにより、エンドユーザーは**小数点**、*currencyCode* および *display* によって数値書式をカスタマイズできます。
 
+<!-- Angular -->
+
 ```ts
 public options = {
   digitsInfo: '3.4-4',
@@ -322,6 +334,8 @@ public options = {
 };
 public formatOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column field="UnitsInStock"
@@ -392,6 +406,8 @@ constructor() {
 
 セル編集の場合、値はデータ ソース値と同じになります。表示ファクタは '1' です。セルを編集すると、パーセント値のプレビューがサフィックス要素として表示されます。たとえば、'0.0547' の編集中にプレビュー要素に '5.47%' が表示されます。
 
+<!-- Angular -->
+
 ```ts
 public options = {
     /**
@@ -405,6 +421,8 @@ public options = {
 };
 public formatPercentOptions = this.options;
 ```
+
+<!-- end: Angular -->
 
 ```html
 <igx-column field="UnitsInStock"
@@ -504,10 +522,7 @@ public init(column: IgxColumnComponent) {
 
 ```html
 <igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" [pipeArgs]="formatOptions" editable="true">
-        <ng-template igxCellEditor let-value>
-            {{ value | currency:'USD':'symbol':'1.0-0'}}
-        </ng-template>
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">        
     </igc-column>
 </igc-grid>
 ```
@@ -519,7 +534,6 @@ constructor() {
     this._bind = () => {
         unitsInStock.pipeArgs = this.formatOptions;
         unitsInStock.inlineEditorTemplate = this.editCellTemplate;
-
     }
     this._bind();
 }

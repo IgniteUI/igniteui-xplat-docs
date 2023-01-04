@@ -68,6 +68,8 @@ constructor() {
 
 The advanced filtering generates a `FilteringExpressionsTree` which is stored in the `AdvancedFilteringExpressionsTree` input property. You could use the `AdvancedFilteringExpressionsTree` property to set an initial state of the advanced filtering.
 
+<!-- Angular -->
+
 ```typescript
 ngAfterViewInit(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -95,6 +97,9 @@ ngAfterViewInit(): void {
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
 }
 ```
+
+<!-- end: Angular -->
+
 ```typescript
 connectedCallback(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
