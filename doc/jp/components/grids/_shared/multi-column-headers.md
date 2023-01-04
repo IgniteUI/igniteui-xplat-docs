@@ -415,9 +415,17 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 <!-- end: Angular -->
 
 <!-- Blazor -->
+
 グリッドの各列グループは個別のテンプレートを持つことができます。列グループは、`HeaderTemplate` プロパティの `RenderFragment` を想定しています。
 式は、列グループ オブジェクトと共にコンテキストとして提供されています。
+
 <!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+グリッドの各列グループは個別のテンプレートを持つことができます。次のコード スニペットは、列グループの `HeaderTemplate` の使用方法を示しています:
+
+<!-- end: WebComponents -->
 
 ```razor
 <IgbColumnGroup Header="Address Information" HeaderTemplate="Template">
@@ -429,6 +437,30 @@ public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         return @<span>@value</span>;
     };
 }
+```
+
+```html
+<igc-column-group id="addressInfoGroup" header="Address Information"></igc-column-group>
+```
+
+```typescript
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
+
+    this._bind = () => {
+        grid.data = this.customersData
+        columnGroup.headerTemplate = this.headerTemplate;
+    }
+    this._bind();
+}
+
+public headerTemplate = (ctx: IgcColumnTemplateContext) => {
+    const column = (ctx as any).column;
+    return html`<div>
+             <span style="float:left">${column.header.toUpperCase()}</span>                     
+            </div>`;
+};
 ```
 
 <!-- Angular -->

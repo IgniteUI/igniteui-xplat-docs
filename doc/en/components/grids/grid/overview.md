@@ -2,20 +2,56 @@
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 ---
+
+<style>
+    .sample-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sample-column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 25%;
+        align-content: flex-start;
+        min-width: 280px;
+    }
+
+    .tabbar-wrapper {
+        width: inherit;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .tabbar-wrapper > p {
+        padding-right: 20px
+    }
+</style>
 
 # {Platform} Grid Overview and Configuration
 
-The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.
-
 <div class="sample-content">
-    <img class="b-lazy responsive-img"
-        src="../../../images/general/landing-grid-page.png"
-        data-src="../../../images/general/landing-grid-page.png"
-        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-        alt="Grid"
-        title="Grid">
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <p>The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+        </div>
+    </article>
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <div class="tab-content">
+                <img class="b-lazy responsive-img"
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+                    alt="Grid"
+                    title="Grid">
+            </div>
+        </div>
+    </article>
 </div>
 
 ## {Platform} Grid Example
@@ -147,9 +183,13 @@ The `Id` property is a string value and is the unique identifier of the grid whi
 
 The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
+<!-- Angular -->
+
 ## Bootstrap Grid Definition
 
 {ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
+
+<!-- end: Angular -->
 
 ## Editable {Platform} Grid
 
