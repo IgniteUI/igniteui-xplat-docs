@@ -676,12 +676,6 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "ピボット グリッドの共有トピック",
-        "href": "grids/pivot-grid/template.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "選択",
         "href": "grids/pivot-grid/selection.md",
         "status": "NEW"

@@ -676,12 +676,6 @@
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
-        "name": "Pivot Grid Shared Topic",
-        "href": "grids/pivot-grid/template.md",
-        "status": "NEW"
-      },
-      {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Selection",
         "href": "grids/pivot-grid/selection.md",
         "status": "NEW"
@@ -690,6 +684,12 @@
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "State Persistence",
         "href": "grids/pivot-grid/state-persistence.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "Features",
+        "href": "grids/pivot-grid/features.md",
         "status": "NEW"
       }
     ]

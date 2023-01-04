@@ -568,7 +568,7 @@ state.setState(gridState.columnSelection);
 <!-- ComponentStart: PivotGrid -->
 
 * [{ComponentTitle} overview](overview.md)
-* [Pivot Grid Remote Operations](pivot-grid-custom.md)
-* [Pivot Grid Features](pivot-grid-features.md)
+* [Pivot Grid Features](features.md)
+<!-- * [Pivot Grid Remote Operations](pivot-grid-custom.md) -->
 
 <!-- ComponentEnd: PivotGrid -->
