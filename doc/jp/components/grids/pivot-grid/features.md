@@ -1,46 +1,46 @@
 ---
-title: {Platform} {PivotGridTitle} Features | Pivot Tables | Infragistics
-_description: Create fast, responsive {Platform} {PivotGridTitle} and tables with {ProductName} and perform complex data analysis via pivot data.
-_keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features
+title: {Platform} {PivotGridTitle} 機能 | ピボット テーブル | インフラジスティックス
+_description: {ProductName} を使用して、高速で応答性の高い {Platform} {PivotGridTitle} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
+_keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
 mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
 ---
 
-# {Platform} {PivotGridTitle} Features
+# {Platform} {PivotGridTitle} 機能
 
-The pivot and flat grid components inherit from a common base and thus share some functionality and features.
+ピボットおよびフラット グリッド コンポーネントは、共通ベースを継承しているため、いくつかの機能を共有しています。
 
 >[!NOTE]
->Some features do not have meaningful behavior in the context of a pivot table and therefore cannot be enabled for `{PivotGridName}`. These include:
-> - CRUD operations
-> - Grouping
-> - Row/Column Pinning
-> - Summaries
-> - Paging
+>一部の機能は、ピボット テーブルのコンテキストで意味のある動作をしないため `{PivotGridName}`で有効にできません。以下が含まれます。
+> - CRUD 操作
+> - グループ化
+> - 行 / 列のピン固定
+> - 集計
+> - ページング
 
-The {PivotGridTitle} component has additional features and functionalities related to its dimensions as described below.
+{PivotGridTitle} コンポーネントには、以下で説明するように、そのディメンションに関連する追加の機能があります。
 
 <code-view style="height: 870px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
-           alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
+           alt="ピボット セレクターを使用した {Platform} {PivotGridTitle} の例">
 </code-view>
 
 <!-- Angular -->
-## Dimensions Filtering
+## ディメンション フィルタリング
 
-All dimensions (filters, rows, columns) can be filtered via the chip UI or the API. This functionality is embedded and enabled by default.
-
->[!NOTE]
->You can use the filtering dimension to filter out data values which are not a part of the pivot view.
-
-The filtering UI can be opened via the dimension chips filter icon and allows excel-style filtering of the unique dimension values.
+すべてのディメンション (フィルター、行、列) は、チップ UI または API を介してフィルター処理できます。この機能は埋め込まれており、デフォルトで有効になっています。
 
 >[!NOTE]
->If there is not enough space for all of the filtering chips, the {PivotGridTitle} will show the ones that were cut off into a dropdown. End-users can access and manipulate them there.
+>フィルタリング ディメンションを使用して、ピボット ビューの一部ではないデータ値を除外できます。
 
-Dimensions can also be filtered initially via the dimension configuration in `PivotConfiguration` with the dimension's `filter` property.
-It can be set to a new `FilteringExpressionsTree` with the related filter condition, for example:
+フィルタリング UI は、ディメンション チップ フィルターア イコンを介して開くことができ、一意のディメンション値の Excel スタイルのフィルタリングを可能にします。
+
+>[!NOTE]
+>すべてのフィルタリング チップに十分なスペースがない場合、{PivotGridTitle} には、ドロップダウンに切り取られたものが表示されます。エンドユーザーはそこでアクセスして操作できます。
+
+ディメンションは、ディメンションの `filter` プロパティを使用して `PivotConfiguration` のディメンション構成を介して最初にフィルター処理することもできます。
+これは、関連するフィルター条件を使用して新しい `FilteringExpressionsTree` に設定できます。例えば:
 
 ```typescript
 public filterExpTree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -68,13 +68,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 <!-- end: Angular -->
 
-## Dimensions Sorting
+## ディメンションのソート
 
-Dimension values in the `rows` or `columns` can be sorted via the related chip or the API. This functionality is embedded and enabled by default.
+`rows` (行) または `columns` (列) のディメンション値は、関連するチップまたは API を介して並べ替えることができます。この機能は埋め込まれており、デフォルトで有効になっています。
 
-The dimension is sorted on click of the related chip and as a result the dimension values are sorted in ascending/descending order.
+関連するチップをクリックするとディメンションが並べ替えられ、その結果、ディメンション値が昇順/降順で並べ替えられます。
 
-Sorting can also be applied initially via the `sortDirection` property of the dimension definition.
+並べ替えは、ディメンション定義の `sortDirection` プロパティを介して最初に適用することもできます。
 
 <!-- Angular, WebComponents  -->
 
@@ -103,12 +103,12 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
-## Dimensions Resizing
+## ディメンションのサイズ変更
 
-Row dimensions can be resized similarly to column resizing - via a resizing indicator that can be found on the right edge of the cells.
-They can also be auto-sized by double clicking the resize indicator, or by using the related API - `AutoSizeRowDimension`.
+行のサイズは、列のサイズ変更と同様に、セルの右端にあるサイズ変更インジケーターを介してサイズ変更できます。
+サイズ変更インジケーターをダブル クリックするか、関連する API (`AutoSizeRowDimension`) を使用して、自動サイズ設定することもできます。
 
-A different size can also be set initially with the `Width` property available in the dimension definition:
+ディメンション定義で使用可能な `Width` プロパティを使用して、最初に別のサイズを設定することもできます。
 
 <!-- Angular, WebComponents  -->
 
@@ -137,9 +137,9 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 ```
 
 <!-- end:Blazor -->
-## Dimensions Selection
+## ディメンションの選択
 
-The {PivotGridTitle} supports single selection which is enabled just like in the base grid. For example:
+{PivotGridTitle} は、ベース グリッドと同じように有効になる単一選択をサポートします。例:
 
 <!-- Angular -->
 ```html
@@ -164,10 +164,10 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 </{PivotGridSelector}>
 ```
 
-In case there are multiple row or column dimensions which would create groups that span multiple rows/columns, selection is applied to all cells that belong to the selected group.
+複数の行 / 列にまたがるグループを作成する複数の行または列のディメンションがある場合、選択は、選択されたグループに属するすべてのセルに適用されます。
 
-## Super Compact Mode
-The `{PivotGridName}` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
+## スーパー コンパクト モード
+`{PivotGridName}` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `DisplayDensity` オプションを無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `DisplayDensity` 入力が `Compact` (コンパクト) に設定されます。
 
 
 
@@ -187,36 +187,36 @@ The `{PivotGridName}` component provides a `SuperCompactMode` input. It is suita
 <{PivotGridSelector} SuperCompactMode=true></{PivotGridSelector}>
 ```
 
-## Additional Summary Column
+## 追加の集計列
 
-When a `column` dimension defines a hierarchy, the {PivotGridTitle} will render additional summary/total column, which accumulates the aggregations of all of the columns inside the group. When the group is collapsed only the summary column will remain. And when the group is expanded the additional summary column appears at the end of the group.
+`column` ディメンションが階層を定義すると、{PivotGridTitle} は追加の集計 / 合計列を描画し、グループ内のすべての列の集計を蓄積します。グループが縮小されている場合、集計列のみが残ります。また、グループを展開すると、グループの最後に追加の集計列が表示されます。
 
-## Interactions
+## インタラクション
 
-### Keyboard Navigation
+### キーボード ナビゲーション
 
-Keyboard navigation in `{PivotGridSelector}` works similarly to the one in `{GridSelector}`. The {PivotGridTitle} is split into three areas - `rows`, `columns`, `values`. The areas for `rows` and `columns` are considered headers for the purposes of navigation while the area for `values` is the body.
-The keyboard arrows allow navigating the active element within the current area only.
+`{PivotGridSelector}` のキーボード ナビゲーションは、`{GridSelector}` キーボード ナビゲーションと同様に機能します。{PivotGridTitle} は、`rows`、`columns`、`values` の 3 つの領域に分割されます。`rows` と `columns` の領域はナビゲーションの目的でヘッダーと見なされ、`values` の領域は本文です。
+キーボードの矢印を使用すると、現在の領域内でのみアクティブな要素をナビゲートできます。
 
-### Dimensions Drag & Drop
-The dimensions are represented by chips, which can be dragged & dropped.
-All chips can change their order within their area by drag & drop.
-The chips from `rows`, `column`, `filter`(dimension chips) can be moved from any of those areas to any other and at any place.
-Chips from these areas can not be moved to the `values` area and chips from the `values` area can not be moved to any of the dimension areas.
+### ディメンションのドラッグアンドドロップ
+ディメンションはチップで表現され、ドラッグアンドドロップが可能です。
+すべてのチップは、ドラッグアンドドロップでエリア内の順序を変更できます。
+`rows`、`column`、`filter`  (ディメンション チップ) のチップは、これらの領域のいずれかから他の任意の場所に移動できます。
+これらの領域のチップは `values` 領域に移動できず、`values` 領域のチップはどのディメンション領域にも移動できません。
 
 >[!NOTE]
->The chips from the {PivotGridTitle} can not be moved to the Pivot Data Selector and items from the Pivot Data Selector can not be moved to the {PivotGridTitle}.
+>{PivotGridTitle} のチップをピボット データ セレクターに移動したり、ピボット データ セレクターの項目を {PivotGridTitle} に移動したりすることはできません。
 
-## API References
+## API リファレンス
 * `PivotGrid`
 * `PivotDataSelector`
 
 
-## Additional Resources
-* [{Platform} {PivotGridTitle} Overview](overview.md)
-* [{Platform} {PivotGridTitle} Custom Aggregations](remote-operations.md)
+## その他のリソース
+* [{Platform} {PivotGridTitle} 概要](overview.md)
+* [{Platform} {PivotGridTitle} カスタム集計](remote-operations.md)
 
-Our community is active and always welcoming to new ideas.
+コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})
