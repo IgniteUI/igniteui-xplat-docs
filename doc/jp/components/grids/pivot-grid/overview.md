@@ -23,7 +23,7 @@ _language: ja
 
 <code-view style="height: 870px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
            alt="{Platform} ピボット セレクターを使用したピボット グリッドの例">
 </code-view>
 

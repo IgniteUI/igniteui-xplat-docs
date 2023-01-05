@@ -2,21 +2,57 @@
 title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 _language: ja
 ---
 
+<style>
+    .sample-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sample-column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 25%;
+        align-content: flex-start;
+        min-width: 280px;
+    }
+
+    .tabbar-wrapper {
+        width: inherit;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .tabbar-wrapper > p {
+        padding-right: 20px
+    }
+</style>
+
 # {Platform} Grid 概要と構成
 
- {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。
-
 <div class="sample-content">
-    <img class="b-lazy responsive-img"
-        src="../../../images/general/landing-grid-page.png"
-        data-src="../../../images/general/landing-grid-page.png"
-        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-        alt="Grid"
-        title="Grid">
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <p> {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。</p>
+        </div>
+    </article>
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <div class="tab-content">
+                <img class="b-lazy responsive-img"
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+                    alt="Grid"
+                    title="Grid">
+            </div>
+        </div>
+    </article>
 </div>
 
 ## {Platform} Grid の例
@@ -148,9 +184,13 @@ constructor() {
 
 `AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
+<!-- Angular -->
+
 ## Bootstrap グリッドの定義
 
 {ProductName} には、Flex に基づくレイアウト システムのような強力なブートストラップ グリッドが含まれています。今日の最新のアプリケーションは、レスポンシブ Web デザインのアプローチに従うことが期待されています。つまり、デバイスのサイズに基づいて、または単にブラウザーのサイズを変更するだけで、HTML 要素のレイアウトを適切に調整できます。ブートストラップ グリッド レイアウトはこれまで最も使用されていたアプローチでしたが、CSS グリッドのような Flex に基づくレイアウト システムは、どのブラウザーでも機能するため、より一般的になりました。{ProductName} ディレクティブにより、コンテンツ / テキストの折り返し、両端揃え、配置など、垂直方向と水平方向のフローが可能になります。{ProductName} は、CSS を使用したレスポンシブ レイアウトをサポートし、サイズ変更時のグリッドの動作に究極の柔軟性を提供します。
+
+<!-- end: Angular -->
 
 ## 編集可能な {Platform} グリッド
 
@@ -597,7 +637,7 @@ public smallView: TemplateRef<any>;
 ....
 
 const column = this.grid.getColumnByName("User");
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = this.smallView;
 ```
@@ -609,7 +649,7 @@ column.bodyTemplate = this.smallView;
 ```
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 user.bodyTemplate = this.smallView;
 

@@ -685,6 +685,18 @@
         "name": "状態の保持",
         "href": "grids/pivot-grid/state-persistence.md",
         "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "WebComponents"],
+        "name": "機能",
+        "href": "grids/pivot-grid/features.md",
+        "status": "NEW"
+      },
+      {
+        "exclude": ["Angular", "React", "Blazor"],
+        "name": "リモート操作",
+        "href": "grids/pivot-grid/remote-operations.md",
+        "status": "NEW"
       }
     ]
   },
