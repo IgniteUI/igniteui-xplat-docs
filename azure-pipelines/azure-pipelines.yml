@@ -99,8 +99,8 @@ stages:
     - task: PublishPipelineArtifact@1
       displayName: 'Publish WebComponents EN - zip'
       inputs:
-        targetPath: $(System.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_staging.zip
-        artifactName: WebApp
+        targetPath: $(System.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_en_staging.zip
+        artifactName: WebComponents_en_staging
 
     - task: Npm@1
       displayName: 'Build Blazor EN'
