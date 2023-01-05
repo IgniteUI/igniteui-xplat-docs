@@ -28,7 +28,7 @@ The following example demonstrates how to create Pyramid Chart using `BarSeries`
 - [Composite Chart](composite-chart.md)
 <!-- - [Gantt Chart](gantt-chart.md) -->
 
-## API Members
+## API References
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`

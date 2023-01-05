@@ -361,7 +361,7 @@ igc-radio::part(control) {
 <div class="divider--half"></div>
 
 
- ## API Members
+## API References
 
  - `Form`
  - `RadioGroup`

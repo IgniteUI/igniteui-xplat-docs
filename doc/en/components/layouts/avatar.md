@@ -216,7 +216,7 @@ igc-avatar::part(base) {
 <div class="divider--half"></div>
 
 
- ## API Members
+## API References
 
  - `Avatar`
 

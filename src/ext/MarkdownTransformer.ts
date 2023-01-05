@@ -1776,7 +1776,7 @@ export class MarkdownTransformer {
 
         if (newApiContent.trim() !== '') {
             if (orgApiContent === '') {
-                newApiContent = '\n' + '## API Members \n' + newApiContent;
+                newApiContent = '\n' + '## API References \n' + newApiContent;
                 fileContent += newApiContent;
             } else {
                 fileContent = fileContent.replace(orgApiContent, newApiContent);
@@ -2179,7 +2179,7 @@ class MarkdownSection {
 
     public withMetadata() { return this.content.indexOf('---') === 0; }
     public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
-    public withApiList() { return this.content.indexOf('## API Members') === 0; }
+    public withApiList() { return this.content.indexOf('## API References') === 0; }
     public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
 
     public withParagraphs() {

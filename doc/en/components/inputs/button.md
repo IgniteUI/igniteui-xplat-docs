@@ -367,7 +367,7 @@ Additional Web Components that were used:
 
 <!-- end: WebComponents -->
 
-## API Members
+## API References
 
  - `ButtonBase`
  - `Button`

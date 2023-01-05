@@ -538,7 +538,7 @@ In this article we covered a lot of ground with the card component. We created a
 <div class="divider"></div>
 
 
- ## API Members
+## API References
 
  - `Avatar`
  - `Button`

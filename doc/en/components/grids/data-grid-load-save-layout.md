@@ -34,7 +34,7 @@ The grid supports saving the following features:
 - [Column Filtering](data-grid-column-filtering.md)
 - [Row Grouping](data-grid-row-grouping.md)
 
- ## API Members
+## API References
 
  - `Grid`
  - `LoadLayout`

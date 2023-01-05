@@ -147,7 +147,7 @@ If all went well, you should see the following in your browser:
 <div class="divider"></div>
 
 
- ## API Members
+## API References
 
  - `End`
  - `Icon`

@@ -132,7 +132,7 @@ The Form component exposes the following methods:
 <div class="divider"></div>
 
 
- ## API Members
+## API References
 
  - `Button`
  - `Checkbox`

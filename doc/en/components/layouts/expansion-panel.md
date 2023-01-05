@@ -174,7 +174,7 @@ The {ProductName} Expansion Panel component exposes several CSS parts (`header`,
 <div class="divider"></div>
 
 
- ## API Members
+## API References
 
  - `ExpansionPanel`
 

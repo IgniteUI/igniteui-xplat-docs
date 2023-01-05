@@ -304,6 +304,6 @@ export default class WorldConnections {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

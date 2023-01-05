@@ -464,6 +464,6 @@ Learn more about creating a Blazor data grid in our short tutorial video:
 <!-- - [Row Paging](data-grid-row-paging.md) -->
 <!-- end: React -->
 
- ## API Members
+## API References
 
  - `Grid`

@@ -106,7 +106,7 @@ igc-dialog::part(footer) {
 
 <div class="divider--half"></div>
 
-## API Members
+## API References
 
 - `closeOnEscape`
 - `closeOnOutsideClick`

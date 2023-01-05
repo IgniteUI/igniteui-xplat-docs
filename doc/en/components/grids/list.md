@@ -492,7 +492,7 @@ Additional components that were used:
 
 <div class="divider--half"></div>
 
-## API Members
+## API References
 
  - `Avatar`
  - `Button`

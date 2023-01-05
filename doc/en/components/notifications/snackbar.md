@@ -155,7 +155,7 @@ igc-snackbar::part(base) {
 <div class="divider--half"></div>
 
 
- ## API Members
+## API References
 
  - `ActionText`
  - `DisplayTime`

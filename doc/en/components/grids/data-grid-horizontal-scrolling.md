@@ -96,6 +96,6 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 </IgbDataGrid>
 ```
 
- ## API Members
+## API References
 
  - `Grid`

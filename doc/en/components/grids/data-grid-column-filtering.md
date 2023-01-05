@@ -62,7 +62,7 @@ Since the operands are applied to the column they can be added in several ways, 
 
 <div class="divider--half"></div>
 
- ## API Members
+## API References
 
  - `DisplayName`
  - `FilterExpressions`

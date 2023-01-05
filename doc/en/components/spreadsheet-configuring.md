@@ -250,7 +250,7 @@ The following code snippets show how to configure the spreadsheet's zoom level:
 this.spreadsheet.zoomLevel = 200;
 ```
 
-## API Members
+## API References
 
  - `ActiveCell`
  - `ActiveSelection`

@@ -45,7 +45,7 @@ var chart = sheet.Shapes.AddChart(Documents.Excel.Charts.ChartType.ColumnCluster
 chart.SetSourceData("A2:M6", true);
 ```
 
- ## API Members
+## API References
 
  - `AddChart`
  - `Area`

@@ -78,7 +78,7 @@ grid1.dataSource = data;
     ColumnMovingSeparatorWidth="5" />
 ```
 
- ## API Members
+## API References
 
  - `ColumnMovingAnimationMode`
  - `ColumnMovingMode`

@@ -253,7 +253,7 @@ igc-toast {
 <div class="divider--half"></div>
 
 
- ## API Members
+## API References
 
  - `Calendar`
  - `DisplayTime`

@@ -346,7 +346,7 @@ public onDataLoaded(csvData: string) {
 }
 ```
 
-## API Members
+## API References
 
  - `HeatTileGenerator`
  - `HeatTileGenerator`

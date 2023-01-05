@@ -87,7 +87,7 @@ function zoomOut(): void {
 }
 ```
 
- ## API Members
+## API References
 
  - `ExecuteAction`
  - `SpreadsheetAction`

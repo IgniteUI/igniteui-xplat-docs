@@ -231,7 +231,7 @@ Additional components and/or directives that were used:
 
 <div class="divider"></div>
 
- ## API Members
+## API References
 
  - `Button`
  - `Calendar`

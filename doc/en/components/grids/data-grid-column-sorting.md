@@ -123,7 +123,7 @@ grid1.sortDescriptions.add(colSortDesc);
 }
 ```
 
- ## API Members
+## API References
 
  - `HeaderClickAction`
  - `SortByMultipleColumnsTriState`

@@ -258,7 +258,7 @@ igc-switch::part(thumb) {
 <div class="divider--half"></div>
 
 
- ## API Members
+## API References
 
  - `Form`
  - `LabelPosition`

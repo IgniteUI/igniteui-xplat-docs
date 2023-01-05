@@ -181,7 +181,7 @@ igc-input::part(suffix){
 <div class="divider"></div>
 
 
-## API Members
+## API References
 
  - `Icon`
  - `Input`

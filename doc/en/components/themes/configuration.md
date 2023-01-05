@@ -95,6 +95,6 @@ igc-dropdown {
 
 As mentioned before, you can control the horizontal and vertical spacing individually for components that support it. This can be achieved by modifying the `--ig-spacing-inline`(horizontal) and `--ig-spacing-block`(vertical) variables. The principle is the same as with the `--ig-spacing` variable. Modifying the `--ig-spacing` variable only will change the spacing in both directions by the same amount.
 
- ## API Members
+## API References
 
  - `ConfigureTheme`

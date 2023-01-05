@@ -242,7 +242,7 @@ igc-chip::part(suffix) {
 
 <div class="divider--half"></div>
 
-## API Members
+## API References
 
  - `Chip`
 

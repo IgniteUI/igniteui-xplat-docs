@@ -117,7 +117,7 @@ The following demonstrates how to implement cell accessibility in the  {Platform
 </div>
 ```
 
- ## API Members
+## API References
 
  - `Grid`
  - `UseAccessibility`

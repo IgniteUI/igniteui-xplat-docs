@@ -57,7 +57,7 @@ When users interact with the Grid like sorting and grouping, and you have enable
 - applyGroups
 - applyFilters
 
- ## API Members
+## API References
 
  - `Grid`
  - `IsPagerVisible`

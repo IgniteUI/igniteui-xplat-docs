@@ -213,7 +213,7 @@ The following sample demonstrates how to style the track fill and thumb parts:
 
 
 
- ## API Members
+## API References
  - `HidePrimaryLabels`
  - `HideSecondaryLabels`
  - `HideTooltip`

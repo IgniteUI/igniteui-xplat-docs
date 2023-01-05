@@ -265,7 +265,7 @@ igc-icon {
 
 
 
- ## API Members
+## API References
 
  - `Icon`
  - `RegisterIcon`

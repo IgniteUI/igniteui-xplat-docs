@@ -190,7 +190,7 @@ igc-icon-button::part(icon) {
            github-src="inputs/icon-button/styling">
 </code-view>
 
- ## API Members
+## API References
 
  - `ButtonBase`
  - `Button`

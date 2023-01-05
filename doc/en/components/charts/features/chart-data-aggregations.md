@@ -8,11 +8,11 @@ namespace: Infragistics.Controls.Charts
 
 # {Platform} Data Aggregations
 
-In the {ProductName} `CategoryChart` control Data Aggregations feature allows you to group data in the chart by unique values on the `XAxis` and then sort those groups. You may then apply summaries which will be reflected by the range of the `YAxis` and will be displayed in the tooltip when hovering the series. 
+In the {ProductName} `CategoryChart` control Data Aggregations feature allows you to group data in the chart by unique values on the `XAxis` and then sort those groups. You may then apply summaries which will be reflected by the range of the `YAxis` and will be displayed in the tooltip when hovering the series.
 
 # {Platform} Data Aggregations Example
 
-The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and applies a summary and sort based on the Sales Sum. 
+The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and applies a summary and sort based on the Sales Sum.
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -46,7 +46,7 @@ The following example depicts a [Column Chart](../types/column-chart.md) that gr
 </igc-category-chart>
 ```
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

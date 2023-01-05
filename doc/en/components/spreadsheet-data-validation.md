@@ -136,6 +136,6 @@ this.spreadsheet.workbook.worksheets(0).rows(7).cells(1).value = checkOutDate.to
 this.spreadsheet.workbook.worksheets(0).rows(7).cells(0).value = "Check Out Date";
 ```
 
- ## API Members
+## API References
 
  - `Spreadsheet`

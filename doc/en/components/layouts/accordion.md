@@ -179,7 +179,7 @@ The Accordion navigation is compliant with W3C accessibility standards and conve
 
 <div class="divider"></div>
 
-## API Members
+## API References
 
 - `Accordion`
 - `ExpansionPanel`

@@ -74,7 +74,7 @@ The following demonstrates the implementation of each of the column animations d
     ColumnShowingAnimationMode="ColumnShowingAnimationMode.SlideFromBottomAndFadeIn" />
 ```
 
- ## API Members
+## API References
 
  - `ColumnAddingAnimationMode`
  - `ColumnExchangingAnimationMode`

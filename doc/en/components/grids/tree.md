@@ -332,7 +332,7 @@ igc-tree-item::part(active selected) {
 <div class="divider--half"></div>
 
 
-## API Members
+## API References
 
  - `TreeItem`
  - `Tree`

@@ -116,7 +116,7 @@ igc-ripple {
 
 
 
- ## API Members
+## API References
 
  - `Button`
  - `Ripple`

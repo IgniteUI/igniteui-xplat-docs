@@ -605,6 +605,6 @@ The Dock Manager exposes [resourceStrings]({environment:infragisticsBaseUrl}/pro
 
 <!-- end: WebComponents -->
 
- ## API Members
+## API References
 
  - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

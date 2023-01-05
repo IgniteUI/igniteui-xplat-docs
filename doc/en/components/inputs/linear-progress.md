@@ -204,7 +204,7 @@ The following table lists all CSS parts exposed by the Linear Progress:
 <div class="divider"></div>
 
 
-## API Members
+## API References
 
  - `Button`
  - `Calendar`

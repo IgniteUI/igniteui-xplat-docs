@@ -482,7 +482,7 @@ igc-nav-drawer-header-item {
 </code-view>
 
 
- ## API Members
+## API References
 
  - `Button`
  - `Icon`
