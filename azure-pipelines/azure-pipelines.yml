@@ -95,7 +95,7 @@ stages:
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
-  - job: Build WebComponents
+  - job: BuildWebComponents
     dependsOn: Prepare
     variables:
       platform: WebComponents
