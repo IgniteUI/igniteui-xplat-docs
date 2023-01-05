@@ -93,7 +93,7 @@ stages:
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
         includeRootFolder: false
         archiveType: 'zip'
-        archiveFile: '$(Build.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_staging.zip'  #XplatDocFX_React_staging.2022.12.13.2
+        archiveFile: $(Build.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_staging.zip  #XplatDocFX_React_staging.2022.12.13.2
         replaceExistingArchive: true
 
     - task: PublishPipelineArtifact@1
