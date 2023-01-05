@@ -22,8 +22,7 @@ stages:
     name: BuildAgentOnPrem
     demands: npm
   jobs:
-  - job: BuildDocs
-
+  - job: Prepare
     steps:
     - task: NodeTool@0
       inputs:
@@ -31,6 +30,7 @@ stages:
         versionSpec: '16.x'
     - script: echo '$(Build.BuildNumber)'
       displayName: 'Display Build Number'
+
     - script: echo '$(buildType)'
       displayName: 'Display Build Type'
 
@@ -95,11 +95,12 @@ stages:
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
-  - job: 
-    displayName: 'Build WebComponents - EN'
+  - job: Build WebComponents
+    dependsOn: Prepare
     variables:
       platform: WebComponents
       language: en
+    displayName: 'Build $(platform) - $(language)'
     steps:
     - task: Npm@1
       displayName: 'Build $(platform)'
