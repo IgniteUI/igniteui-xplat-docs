@@ -15,6 +15,7 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
+           github-src="{ComponentSample}/column-resizing"
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
@@ -417,6 +418,7 @@ This approach is more performance optimized than auto-sizing post initialization
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
+           github-src="{ComponentSample}/column-auto-sizing"
            alt="{Platform} {ComponentTitle} Column Resizing Example">
 </code-view>
 
@@ -517,8 +519,9 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
+           github-src="{ComponentSample}/column-resize-styling">
 </code-view>
 
 >[!NOTE]

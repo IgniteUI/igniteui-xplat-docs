@@ -18,6 +18,7 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
+           github-src="{ComponentSample}/grid-finjs"
            alt="Angular Live-data Update Example">
 </code-view>
 
@@ -94,6 +95,7 @@ As you can see the igxGrid component handles with ease the high-frequency update
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
+           github-src="{ComponentSample}/grid-finjs-dock-manager"
            alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
 </code-view>
 <!-- end: Angular -->

@@ -23,6 +23,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
+           github-src="{ComponentSample}/toolbar-sample-1"
            alt="{Platform} {ComponentTitle} Toolbar Example">
 </code-view>
 
@@ -207,7 +208,8 @@ Listed below are the main features of the toolbar with example code for each of 
 
 <code-view style="height:630px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
+           github-src="{ComponentSample}/toolbar-sample-2">
 </code-view>
 
 
@@ -558,7 +560,8 @@ The following sample demonstrates how to customize the exported files:
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
+           github-src="{ComponentSample}/toolbar-sample-3">
 </code-view>
 
 
@@ -576,7 +579,8 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 <code-view style="height: 370px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
+           github-src="{ComponentSample}/data-exporting-indicator">
 </code-view>
 
 <!-- end: Angular -->
@@ -627,7 +631,8 @@ The following sample demonstrates how to add an additional button to the toolbar
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
+           github-src="{ComponentSample}/toolbar-sample-4">
 </code-view>
 
 <!-- Angular -->
@@ -743,7 +748,8 @@ The last step is to **include** the newly created themes.
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
+           github-src="{ComponentSample}/toolbar-style">
 </code-view>
 
 

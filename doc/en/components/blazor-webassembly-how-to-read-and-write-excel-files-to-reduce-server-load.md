@@ -161,7 +161,7 @@ In terms of Blazor WebAssembly applications where .NET code is processed in an i
 
 ### Tips and Tricks #1 - Pause the automatic calculation of formulas
 
-Тhe Infragistics Blazor Excel library lets you pause the automatic calculation of formulas in order to improve the processing speed when browsing or rewriting cells in an Excel file on a Blazor WebAssembly application. For more information, please refer to the INFRAGISTICS Knowledge Base (link below).
+Тhe Infragistics Blazor Excel library lets you pause the automatic calculation of formulas in order to improve the processing speed when browsing or rewriting cells in an Excel file on a Blazor WebAssembly application. For more information, please refer to [this documentation topic](blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md).
 
 ### Tips and Tricks #2 - Use Ahead-Of-Time (AOT) compilation
 
