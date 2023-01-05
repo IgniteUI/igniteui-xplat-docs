@@ -10,28 +10,27 @@ pr:
 
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
+variables:
+  component: 'XPlatDocFX'
+  buildType: $(buildType)
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    buildType: 'production'
+
 stages:
 - stage: Build
+  pool:
+    name: BuildAgentOnPrem
+    demands: npm
   jobs:
   - job: BuildDocs
-    pool:
-      name: BuildAgentOnPrem
-      demands: npm
-
-    variables:
-      buildType: staging
-      ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-        buildType: 'production'
 
     steps:
     - task: NodeTool@0
       inputs:
         versionSource: 'spec'
         versionSpec: '16.x'
-
     - script: echo '$(Build.BuildNumber)'
       displayName: 'Display Build Number'
-
     - script: echo '$(buildType)'
       displayName: 'Display Build Type'
 
@@ -63,44 +62,6 @@ stages:
         workingDir: '$(Build.SourcesDirectory)'
         verbose: false
         customCommand: ci
-    - task: Npm@1
-      displayName: 'Build WebComponents'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run buildWebComponents'
-    - task: Npm@1
-      displayName: 'Build WebComponents $(buildType) EN'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
-
-    - task: NuGetCommand@2
-      displayName: 'Package WebComponents EN'
-      inputs:
-        command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
-        versioningScheme: byBuildNumber
-        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
-
-    - task: ArchiveFiles@2
-      displayName: 'Package WebComponents EN - zip'
-      inputs:
-        # dist\$plat$\$langFolder$\_site
-        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
-        includeRootFolder: false
-        archiveType: 'zip'
-        archiveFile: XPlatDocFX_WebComponents_en_staging.zip  #XplatDocFX_React_staging.2022.12.13.2
-        replaceExistingArchive: true
-
-    - task: PublishPipelineArtifact@1
-      displayName: 'Publish WebComponents EN - zip'
-      inputs:
-        targetPath: $(System.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_en_staging.zip
-        artifactName: WebComponents_en_staging
 
     - task: Npm@1
       displayName: 'Build Blazor EN'
@@ -114,7 +75,7 @@ stages:
       displayName: 'Package Blazor EN'
       inputs:
         command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
+        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
 
@@ -130,19 +91,64 @@ stages:
       displayName: 'Package React EN'
       inputs:
         command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\XplatDocFX.nuspec'
+        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
+  - job: 
+    displayName: 'Build WebComponents - EN'
+    variables:
+      platform: WebComponents
+      language: en
+    steps:
+    - task: Npm@1
+      displayName: 'Build $(platform)'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build$(platform)'
+    - task: Npm@1
+      displayName: 'Build $(platform) $(buildType) $(language)'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=$(platform) --lang=$(language)'
+    - task: NuGetCommand@2
+      displayName: 'Package $(platform) $(language)'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=$(language);type=$(buildType);plat=$(platform)'
+    - task: ArchiveFiles@2
+      displayName: 'Package $(platform) $(language) - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/$(platform)/$(language)/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: zips/$(component)_$(platform)_$(language)_$(buildType).zip
+        replaceExistingArchive: true
+  - job: 
+    displayName: 'Publish NuGet artifacts'
+    steps:
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifacts'
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        PathtoPublish: '$(Build.Artifact$(buildType)Directory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
 
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Build.ArtifactStagingDirectory)'
+        targetPath: '$(Build.Artifact$(buildType)Directory)'
         artifact: 'XPlatDocs'
         publishLocation: 'pipeline'
+
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish $(platform) $(language) - zip'
+      inputs:
+        targetPath: $(System.DefaultWorkingDirectory)/zips
+        artifactName: $(component)
