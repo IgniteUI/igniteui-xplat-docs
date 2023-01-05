@@ -179,12 +179,12 @@ The Accordion navigation is compliant with W3C accessibility standards and conve
 
 <div class="divider"></div>
 
-## Additional Resources
-
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} Examples on **GitHub**](https://github.com/IgniteUI/igniteui-{Platform}-examples)
-
 ## API Members
 
 - `Accordion`
 - `ExpansionPanel`
+
+## Additional Resources
+
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

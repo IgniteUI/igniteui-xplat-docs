@@ -228,19 +228,13 @@ igc-nav-drawer-header-item {
 * `NavDrawer`
 * `NavDrawerItem`
 * `NavDrawerHeaderItem`
-
-Additional Web Components that were used:
-
 * `Icon`
 * `Button`
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-Our community is active and always welcoming to new ideas.
-
-* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

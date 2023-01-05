@@ -143,47 +143,17 @@ If all went well, you should see the following in your browser:
            github-src="menus/nav-bar/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the navbar's API, refer to the following links:
-* `Navbar`
-
-Additional components and/or directives that were used:
-* `Icon`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## Additional Resources
-
-Our community is active and always welcoming to new ideas.
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
 
  ## API Members
 
  - `End`
  - `Icon`
  - `Navbar`
+
+## Additional Resources
+
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
