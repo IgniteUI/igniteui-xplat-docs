@@ -86,6 +86,22 @@ stages:
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
 
+    - task: ArchiveFiles@2
+      displayName: 'Package WebComponents EN - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_staging.zip'  #XplatDocFX_React_staging.2022.12.13.2
+        replaceExistingArchive: true
+
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish WebComponents EN - zip'
+      inputs:
+        targetPath: $(System.DefaultWorkingDirectory)/XPlatDocFX_WebComponents_staging.zip
+        artifactName: WebApp
+
     - task: Npm@1
       displayName: 'Build Blazor EN'
       inputs:
