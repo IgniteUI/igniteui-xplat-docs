@@ -93,7 +93,7 @@ The following table summarized properties of the `BingMapsMapImagery` class:
 |`SubDomains`|`SubDomainsCollection`|Represents an image collection of URI sub domains|
 |`TilePath`|string|Represents a property that sets the map tile image URI, this is the actual location of the Bing Maps|
 
- ## API Members
+## API References
 
  - `BingMapsImageryStyle`
  - `BingMapsMapImagery`

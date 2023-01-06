@@ -2,7 +2,7 @@
 title: {Platform} Grids & Tables | Fastest {Platform} UI Grid | Infragistics
 _description: Looking for fast {Platform} grids and tables? {ProductName} provides a complete library of {Platform}-native, Material-based UI data grids and tables. Find more.
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics
-mentionedTypes: ["Grid"]
+mentionedTypes: ["Infragistics.Controls.Grid"]
 
 ---
 <style>

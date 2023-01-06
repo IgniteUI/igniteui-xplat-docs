@@ -281,7 +281,7 @@ connectedCallback() {
 }
 ```
 
-## API Members
+## API References
 
  - `Button`
  - `ColumnChooserText`

@@ -336,7 +336,7 @@ createContourSeries(data: any[])
 }
 ```
 
- ## API Members
+## API References
 
  - `FillScale`
  - `GeographicContourLineSeries`

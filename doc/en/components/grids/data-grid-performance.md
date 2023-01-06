@@ -35,6 +35,6 @@ This sample demonstrates this performance by binding thousands of financial reco
 - [Row Grouping](data-grid-row-grouping.md)
 
 
- ## API Members
+## API References
 
  - `Grid`

@@ -23,7 +23,7 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 <code-view style="height: 870px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 
@@ -481,8 +481,8 @@ Using above code will result in the following example which groups the Product C
 <!-- ## Additional Resources -->
 
 <!-- TODO write these topics: -->
-<!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
-<!-- * [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md) -->
+<!-- * [{Platform} Pivot Grid Features](features.md) -->
+<!-- * [{Platform} Pivot Grid Custom Aggregations](remote-operations.md) -->
 
 Our community is active and always welcoming to new ideas.
 

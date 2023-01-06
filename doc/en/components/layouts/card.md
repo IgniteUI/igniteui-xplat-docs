@@ -534,54 +534,11 @@ igc-icon-button+igc-icon-button {
 ### Summary
 In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional {Platform} inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the card's API, refer to the following links:
-* `Card`
-* `CardHeader`
-* `CardContent`
-* `CardMedia`
-* `CardActions`
-
-
-Additional components and/or directives that were used:
-
-* `Avatar`
-* `Icon`
-* `Button`
-* `IconButton`
-* `Ripple`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `Avatar`
  - `Button`
@@ -592,3 +549,8 @@ Additional components and/or directives that were used:
  - `Card`
  - `IconButton`
  - `Icon`
+
+## Additional Resources
+
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

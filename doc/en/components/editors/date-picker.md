@@ -138,7 +138,7 @@ The following example demonstrates how combine multiple `DatePicker` controls.
 
 <div class="divider--half"></div>
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

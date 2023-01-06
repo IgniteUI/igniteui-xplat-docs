@@ -953,7 +953,7 @@ You can find more information about other types of gauges in these topics:
 - [Bullet Graph](bullet-graph.md)
 - [Linear Gauge](Linear-gauge.md)
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

@@ -237,6 +237,6 @@ So far we've covered the `primary`, `secondary`, `gray`, and `surface` color var
 }
 ```
 
- ## API Members
+## API References
 
  - `Palettes`

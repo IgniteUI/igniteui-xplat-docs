@@ -2,6 +2,8 @@
 title: {Platform} Grid theming | Real-Time {Platform} Tables | The Lightweight {Platform} Web Components table | Infragistics
 _description: .
 _keywords: {Platform} data grid, infragistics, data grids theming, theming, {ProductName}, table
+mentionedTypes: ['Infragistics.Controls.Grid']
+namespace: Infragistics.Controls
 ---
 
 # Theme {Platform} Data Grid

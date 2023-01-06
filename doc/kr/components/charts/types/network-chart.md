@@ -42,7 +42,7 @@ This example shows how to create Network Scatter Chart using `ScatterSeries` (fo
 - [Scatter Chart](scatter-chart.md)
 - [Shape Chart](shape-chart.md)
 
-## API Members
+## API References
 - `CategoryYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

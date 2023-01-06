@@ -104,7 +104,7 @@ The following topics provide additional information related to this topic.
 
  * [Binding Shape Files](geo-map-binding-shp-file.md)
 
-## API Members
+## API References
 
  - `XamGeographicMap`
  - `GeographicPolylineSeries`

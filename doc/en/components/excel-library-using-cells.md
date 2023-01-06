@@ -431,7 +431,7 @@ var worksheet = workbook.Worksheets.Add("Sheet1");
 var cellText = worksheet.Rows[0].Cells[0].GetText();
 ```
 
-## API Members
+## API References
 
  - `Add`
  - `CellFillLinearGradient`

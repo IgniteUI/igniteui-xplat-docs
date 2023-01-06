@@ -55,7 +55,7 @@ The following example demonstrates how to selected or deselected all rows in the
 
 <div class="divider--half"></div>
 
- ## API Members
+## API References
 
  - `ModifierBased`
  - `MultipleCell`

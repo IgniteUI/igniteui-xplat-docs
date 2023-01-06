@@ -192,20 +192,14 @@ igc-radio::part(control checked) {
            github-src="inputs/radio/styling">
 </code-view>
 
-## Additional Resources
-
-<div class="divider--half"></div>
-
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 ## API Reference
 
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

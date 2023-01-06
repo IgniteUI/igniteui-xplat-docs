@@ -60,7 +60,7 @@ public paste(): void {
 }
 ```
 
- ## API Members
+## API References
 
  - `SpreadsheetAction`
  - `Spreadsheet`

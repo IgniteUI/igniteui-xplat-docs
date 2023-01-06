@@ -2,7 +2,7 @@
 title: {Platform} ZoomSlider | Data Visualization Tools | Navigation | Zooming | DataChart | Data Binding | Infragistics
 _description: Use Infragistics' {Platform} zoom slider control to easily display a subset of data with two handles representing minimum and maximum values. Improve your data visualization with {ProductName} zoom slider!
 _keywords: zoom slider, {ProductName}, Infragistics, data chart
-mentionedTypes: ['ZoomSlider, XamDataChart']
+mentionedTypes: ['ZoomSlider', 'XamDataChart']
 ---
 
 # {Platform} Zoom Slider Overview
@@ -115,7 +115,7 @@ The following code demonstrates how to setup the ZoomSlider.
 
 You can find more information about charts in [Chart Features](charts/chart-features.md) topic.
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

@@ -20,7 +20,7 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 ## Template Types
 
-### Item Template 
+### Item Template
 
 The `itemTemplate` is a custom template that if defined should be used when rendering items in the list of options.
 
@@ -36,7 +36,7 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 combo.itemTempate = itemTemplate;
 ```
 
-### Group Header Template 
+### Group Header Template
 
 The `groupHeaderTemplate` is a custom template that if defined should be used when rendering group headers in the list of options.
 
@@ -110,16 +110,5 @@ The clear icon can be changed via the `clear-icon` slot:
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
