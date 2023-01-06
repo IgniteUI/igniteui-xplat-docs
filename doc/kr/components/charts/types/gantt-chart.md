@@ -30,7 +30,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
 - [Shape Chart](shape-chart.md)
 
-## API Members
+## API References
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`

@@ -302,7 +302,7 @@ addSeriesWith(locations: any[])
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicProportionalSymbolSeries`
  - `ItemsSource`

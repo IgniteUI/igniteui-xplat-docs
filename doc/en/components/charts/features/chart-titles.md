@@ -21,7 +21,7 @@ The title and subtitle feature of the chart control allows you to add informatio
 
 <div class="divider--half"></div>
 
-## API Members
+## API References
 
 When adding a title or subtitle to the chart control, the content of the chart automatically resizes allowing for the title and subtitle information.
 

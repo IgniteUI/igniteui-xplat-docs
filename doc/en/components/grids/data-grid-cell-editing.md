@@ -318,7 +318,7 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 }
 ```
 
-## API Members
+## API References
 
  - `CellBatch`
  - `EditModeClickAction`

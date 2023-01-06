@@ -81,6 +81,6 @@ In addition to elevation levels, {ProductName} exposes a CSS variable that makes
 
 The `--ig-elevation-factor` can also be set to a decimal value or a value bigger than 1. The bigger the value, the larger the shadow will be.
 
-## API Members
+## API References
 
  - `Elevations`

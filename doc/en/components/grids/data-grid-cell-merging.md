@@ -38,7 +38,7 @@ Cell merging can be evaluated based on whether the data is formatted or not usin
 
 <div class="divider--half"></div>
 
- ## API Members
+## API References
 
  - `FormattedText`
  - `MergedCellEvaluationCriteria`

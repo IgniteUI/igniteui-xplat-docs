@@ -58,6 +58,6 @@ To change any of the type style properties, we need to overwrite the correspondi
 
 Keep in mind that this will update the global button typography styles. If you want to apply these changes to a specific button, you can make use of a class selector.
 
- ## API Members
+## API References
 
  - `Typography`

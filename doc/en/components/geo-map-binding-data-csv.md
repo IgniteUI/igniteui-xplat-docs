@@ -305,7 +305,7 @@ onDataLoaded(csvData: string) {
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicHighDensityScatterSeries`
  - `DataSource`

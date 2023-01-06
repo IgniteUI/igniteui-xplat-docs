@@ -356,7 +356,7 @@ function verifyApiSections(cb) {
 
             if (apiLinks.length > 0) {
                 apiLinks.sort();
-                console.log('missing API Section: ' + filePath + "\n ## API Members \n\n - " + apiLinks.join("\n - "));
+                console.log('missing API Section: ' + filePath + "\n## API References \n\n - " + apiLinks.join("\n - "));
             }
 
         }

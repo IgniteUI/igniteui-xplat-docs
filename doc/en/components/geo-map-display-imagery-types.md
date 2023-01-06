@@ -47,7 +47,7 @@ This code example explicitly sets `BackgroundContent` of the map component to th
  TODO - ADD CODE SNIPPET
 ```
 
- ## API Members
+## API References
 
  - `BackgroundContent`
  - `GeographicMapImagery`

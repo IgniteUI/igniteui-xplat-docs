@@ -140,6 +140,6 @@ Use trendlines to identify a trend or find patterns in your data. There are many
 
 <div class="divider--half"></div>
 
- ## API Members
+## API References
 
  - `Grid`

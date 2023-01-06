@@ -207,15 +207,13 @@ Chips from these areas can not be moved to the `values` area and chips from the 
 >The chips from the {PivotGridTitle} can not be moved to the Pivot Data Selector and items from the Pivot Data Selector can not be moved to the {PivotGridTitle}.
 
 ## API References
+
 * `PivotGrid`
 * `PivotDataSelector`
 
 
 ## Additional Resources
-* [{Platform} {PivotGridTitle} Overview](overview.md)
-* [{Platform} {PivotGridTitle} Custom Aggregations](remote-operations.md)
 
-Our community is active and always welcoming to new ideas.
+* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})

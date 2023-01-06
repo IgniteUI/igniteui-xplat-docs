@@ -79,6 +79,6 @@ grid1.pinnedItems.add(data[4]);
 ```
 
 
- ## API Members
+## API References
 
  - `Grid`
