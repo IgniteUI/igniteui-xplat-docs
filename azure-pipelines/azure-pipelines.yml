@@ -35,7 +35,6 @@ stages:
       displayName: 'Display Build Type'
 
     - task: RegexReplace@3
-      clean: 
       displayName: 'replace environment in doc/docfx'
       inputs:
         InputSearchPattern: |
