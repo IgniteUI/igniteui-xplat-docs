@@ -22,7 +22,7 @@ stages:
     name: BuildAgentOnPrem
     demands: npm
   jobs:
-  - job: Prepare
+  - job: BuildDocs
     steps:
     - task: NodeTool@0
       inputs:
@@ -35,6 +35,7 @@ stages:
       displayName: 'Display Build Type'
 
     - task: RegexReplace@3
+      clean: 
       displayName: 'replace environment in doc/docfx'
       inputs:
         InputSearchPattern: |
@@ -64,6 +65,40 @@ stages:
         customCommand: ci
 
     - task: Npm@1
+      displayName: 'Build WebComponents'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run buildWebComponents'
+
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) en'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
+
+    - task: NuGetCommand@2
+      displayName: 'Package WebComponents en'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package WebComponents en - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
+        replaceExistingArchive: true
+
+    - task: Npm@1
       displayName: 'Build Blazor EN'
       inputs:
         command: custom
@@ -78,6 +113,16 @@ stages:
         packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package Blazor en - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_en_$(buildType).zip
+        replaceExistingArchive: true
 
     - task: Npm@1
       displayName: 'Build React EN'
@@ -95,63 +140,24 @@ stages:
         versioningScheme: byBuildNumber
         buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
-  - job: BuildWebComponents
-    dependsOn: Prepare
-    variables:
-      platform: WebComponents
-      language: en
-    displayName: 'Build $(platform) - $(language)'
-    steps:
-    - task: Npm@1
-      displayName: 'Build $(platform)'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build$(platform)'
-    - task: Npm@1
-      displayName: 'Build $(platform) $(buildType) $(language)'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build-$(buildType) -- --plat=$(platform) --lang=$(language)'
-    - task: NuGetCommand@2
-      displayName: 'Package $(platform) $(language)'
-      inputs:
-        command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-        versioningScheme: byBuildNumber
-        buildProperties: 'langFolder=$(language);type=$(buildType);plat=$(platform)'
     - task: ArchiveFiles@2
-      displayName: 'Package $(platform) $(language) - zip'
+      displayName: 'Package React en - zip'
       inputs:
         # dist\$plat$\$langFolder$\_site
-        rootFolderOrFile: $(Build.SourcesDirectory)/dist/$(platform)/$(language)/_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/en/_site
         includeRootFolder: false
         archiveType: 'zip'
-        archiveFile: zips/$(component)_$(platform)_$(language)_$(buildType).zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
         replaceExistingArchive: true
-  - job: Publish
-    dependsOn:
-    - BuildWebComponents
-    displayName: 'Publish NuGet artifacts'
-    steps:
+
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifacts'
       inputs:
-        PathtoPublish: '$(Build.Artifact$(buildType)Directory)'
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
-        publishLocation: 'Container'
 
     - task: PublishPipelineArtifact@1
+      displayName: 'Publish pipeline artifacts'
       inputs:
-        targetPath: '$(Build.Artifact$(buildType)Directory)'
-        artifact: 'XPlatDocs'
-        publishLocation: 'pipeline'
-
-    - task: PublishPipelineArtifact@1
-      displayName: 'Publish $(platform) $(language) - zip'
-      inputs:
-        targetPath: $(System.DefaultWorkingDirectory)/zips
-        artifactName: $(component)
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: '$(component)'
