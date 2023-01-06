@@ -38,6 +38,7 @@ The following sample demonstrates how to use the prebuilt `Required`, `Email` an
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
+           github-src="{ComponentSample}/data-validator-service"
            alt="{Platform} {ComponentTitle} Validation Basic Example">
 </code-view>
 
@@ -188,6 +189,7 @@ The below example demonstrates the above-mentioned customization options.
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-extended"
+           github-src="{ComponentSample}/data-validator-service-extended"
            alt="{Platform} {ComponentTitle} Custom Validation Example">
 </code-view>
 
@@ -315,6 +317,7 @@ The below sample demonstrates the cross-field validation in action.
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
+           github-src="{ComponentSample}/data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -422,6 +425,7 @@ The below sample demonstrates cross-field validation in a `{ComponentName}` for 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
+           github-src="{ComponentSample}/data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -527,6 +531,7 @@ The below sample demonstrates the cross-field validation in action.
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
+           github-src="{ComponentSample}/data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} Cross-field Validation Example">
 </code-view>
 
@@ -647,7 +652,8 @@ public cellStyles = {
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style"
+           github-src="{ComponentSample}/data-validation-style">
 </code-view>
 
 <!-- end: Angular -->

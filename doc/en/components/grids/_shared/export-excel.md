@@ -17,6 +17,7 @@ The Excel Exporter service can export data to excel from the `{ComponentName}`. 
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} Excel Exporter Example">
 </code-view>
 
@@ -96,6 +97,7 @@ To export grouped data you just need to group the `{ComponentName}` by one or mo
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
 </code-view>
 
@@ -112,6 +114,7 @@ It is now possible to export `{ComponentName}` with defined [multi-column header
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
+           github-src="{ComponentSample}/multi-column-headers-export"
            alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
 </code-view>
 
