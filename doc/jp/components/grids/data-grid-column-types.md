@@ -341,7 +341,7 @@ function onUpdatingAddressColumn(grid, args) {
 igRegisterScript("onUpdatingAddressColumn", onUpdatingAddressColumn, false);
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
  - `CellInfo`

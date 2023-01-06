@@ -61,7 +61,7 @@ public paste(): void {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `SpreadsheetAction`
  - `Spreadsheet`

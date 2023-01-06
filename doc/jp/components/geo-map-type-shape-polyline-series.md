@@ -303,7 +303,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

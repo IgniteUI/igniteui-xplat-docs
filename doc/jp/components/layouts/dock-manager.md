@@ -606,6 +606,6 @@ addResourceStrings('fr', dockManagerStringsFr);
 
 <!-- end: WebComponents -->
 
-## API メンバー
+## API リファレンス
 
  - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

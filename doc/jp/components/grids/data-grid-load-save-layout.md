@@ -35,7 +35,7 @@ _language: ja
 - [列のソート](data-grid-column-sorting.md)
 - [列フィルタリング](data-grid-column-filtering.md)
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
  - `LoadLayout`

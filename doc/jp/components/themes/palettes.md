@@ -238,6 +238,6 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Palettes`

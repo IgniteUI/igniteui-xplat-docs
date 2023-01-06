@@ -39,7 +39,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## API メンバー
+## API リファレンス
 
  - `FormattedText`
  - `MergedCellEvaluationCriteria`

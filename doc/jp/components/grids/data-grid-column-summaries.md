@@ -331,7 +331,7 @@ class CustomDomestic extends SummaryCalculator
 <!--end: Angular, React, WebComponents -->
 
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
  - `GroupSummaryDisplayMode`

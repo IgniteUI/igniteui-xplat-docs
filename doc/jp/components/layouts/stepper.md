@@ -59,7 +59,7 @@ defineComponents(IgcStepperComponent);
             <igc-icon .iconName=${step.indicator}></igc-icon>
         </div>
 
-        <p slot="title">${step.title}</p>	
+        <p slot="title">${step.title}</p>
     </igc-step>
     `
 </igc-stepper>
@@ -69,10 +69,10 @@ defineComponents(IgcStepperComponent);
 
 ```html
 <igc-stepper>
-    <igc-step> 
+    <igc-step>
        <p slot="title">Step 1</p>
     </igc-step>
-    <igc-step> 
+    <igc-step>
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
@@ -271,8 +271,6 @@ igc-step::part(subtitle) {
 }
 ```
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
 * `Stepper`
@@ -280,29 +278,10 @@ igc-step::part(subtitle) {
 * `Avatar`
 * `Icon`
 
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
+
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

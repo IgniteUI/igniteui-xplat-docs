@@ -223,19 +223,12 @@ IgrRatingModule.register();
            github-src="inputs/rating/styling">
 </code-view>
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

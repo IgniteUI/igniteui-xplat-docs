@@ -154,7 +154,7 @@ _language: ja
 - [スプライン チャート](spline-chart.md)
 - [積層型チャート](stacked-chart.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明されている API メンバーのリストです。
 

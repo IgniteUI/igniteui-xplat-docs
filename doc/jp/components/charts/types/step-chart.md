@@ -59,7 +59,7 @@ _language: ja
 - [折れ線チャート](line-chart.md)
 - [チャート マーカー](../features/chart-markers.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明されている API メンバーのリストです。
 

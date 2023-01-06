@@ -89,7 +89,7 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 - [軸オプション](chart-axis-options.md)
 
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

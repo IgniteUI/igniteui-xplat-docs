@@ -21,6 +21,6 @@ _language: ja
            github-src="grids/data-grid/binding-live-data">
 </code-view>
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

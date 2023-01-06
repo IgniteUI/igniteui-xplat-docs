@@ -943,7 +943,7 @@ ModuleManager.register(
 - [ブレット グラフ](bullet-graph.md)
 - [ラジアル ゲージ](radial-gauge.md)
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

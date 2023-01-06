@@ -67,6 +67,7 @@ builder.Services.AddIgniteUIBlazor(
   typeof(IgbRangeSliderModule)
 );
 ```
+
 <!-- end: Blazor -->
 
 `Slider` と `RangeSlider` の使用を開始する最も簡単な方法は次のとおりです:
@@ -211,38 +212,9 @@ builder.Services.AddIgniteUIBlazor(
            github-src="inputs/slider/styling">
 </code-view>
 
-<!-- WebComponents -->
+
 
 ## API リファレンス
-
-* `Slider`
-* `RangeSlider`
-
-<!-- end: WebComponents -->
-
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
-
  - `HidePrimaryLabels`
  - `HideSecondaryLabels`
  - `HideTooltip`
@@ -256,3 +228,8 @@ builder.Services.AddIgniteUIBlazor(
  - `UpperBound`
  - `ValueFormatOptions`
  - `ValueFormat`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

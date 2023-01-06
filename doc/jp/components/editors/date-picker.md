@@ -140,7 +140,7 @@ ModuleManager.register(IgcDatePickerModule);
 
 <div class="divider--half"></div>
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです:
 

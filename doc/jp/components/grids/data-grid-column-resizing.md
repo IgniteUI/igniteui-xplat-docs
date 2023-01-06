@@ -103,7 +103,7 @@ grid1.dataSource = data;
 </IgbDataGrid>
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ColumnResizingAnimationMode`
  - `ColumnResizingMode`

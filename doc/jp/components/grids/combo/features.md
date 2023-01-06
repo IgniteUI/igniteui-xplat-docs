@@ -68,7 +68,7 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
-グループ化は、`GroupKey` プロパティを対応するデータ ソース フィールドに設定することで有効/無効になることに注意してください。 
+グループ化は、`GroupKey` プロパティを対応するデータ ソース フィールドに設定することで有効/無効になることに注意してください。
 
 ```ts
 let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
@@ -136,7 +136,7 @@ combo.filteringOptions = options;
 <IgbCombo GroupSorting="desc" />
 ```
 
-### ラベル 
+### ラベル
 
 `Combo` ラベルは、`Label` プロパティを使用して簡単に設定できます。
 
@@ -150,7 +150,7 @@ combo.filteringOptions = options;
 
 ### プレースホルダー
 
-コンボボックス コンポーネント入力とドロップダウン メニュー内に配置された検索入力の両方に、プレースホルダー テキストを指定できます。 
+コンボボックス コンポーネント入力とドロップダウン メニュー内に配置された検索入力の両方に、プレースホルダー テキストを指定できます。
 
 ```html
 <igc-combo placeholder="Pick a city" placeholder-search="Search for a city"></igc-combo>
@@ -174,7 +174,7 @@ combo.filteringOptions = options;
 
 ### 検索入力のフォーカス
 
-コンボボックスの検索入力はデフォルトでフォーカスされています。この機能を無効にしてフォーカスをオプションのリストに移動するには、以下に示すように `AutofocusList` プロパティを使用します。 
+コンボボックスの検索入力はデフォルトでフォーカスされています。この機能を無効にしてフォーカスをオプションのリストに移動するには、以下に示すように `AutofocusList` プロパティを使用します。
 
 ```html
 <igc-combo autofocus-list></igc-combo>
@@ -184,7 +184,7 @@ combo.filteringOptions = options;
 <IgbCombo AutofocusList="true" />
 ```
 
-### 必須 
+### 必須
 
 required プロパティを設定することで、コンボボックスを必須としてマークできます。
 
@@ -219,16 +219,5 @@ required プロパティを設定することで、コンボボックスを必�
 <!-- end: WebComponents -->
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

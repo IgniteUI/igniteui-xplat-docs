@@ -104,7 +104,7 @@ _language: ja
 - [軸レイアウト](chart-axis-layouts.md)
 - [軸オプション](chart-axis-options.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明されている API メンバーのリストです。
 

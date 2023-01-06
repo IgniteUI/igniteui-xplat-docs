@@ -48,7 +48,7 @@ _language: ja
  TODO - ADD CODE SNIPPET
 ```
 
-## API メンバー
+## API リファレンス
 
  - `BackgroundContent`
  - `GeographicMapImagery`

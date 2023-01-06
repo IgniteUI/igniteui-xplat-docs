@@ -313,7 +313,7 @@ var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Document
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
 
-## API メンバー
+## API リファレンス
 
  - `CellFormat`
  - `ColorScaleConditionalFormat`

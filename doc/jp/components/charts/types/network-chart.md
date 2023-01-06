@@ -43,7 +43,7 @@ _language: ja
 - [散布図](scatter-chart.md)
 - [シェープ チャート](shape-chart.md)
 
-## API メンバー
+## API リファレンス
 - `CategoryYAxis`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

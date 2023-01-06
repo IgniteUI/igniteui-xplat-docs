@@ -216,7 +216,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 >
 <!-- -->
 
-## API メンバー
+## API リファレンス
 
  - `Load`
  - `WorkbookInProcessRuntime`

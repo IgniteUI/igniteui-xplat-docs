@@ -75,7 +75,7 @@ _language: ja
     ColumnShowingAnimationMode="ColumnShowingAnimationMode.SlideFromBottomAndFadeIn" />
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ColumnAddingAnimationMode`
  - `ColumnExchangingAnimationMode`

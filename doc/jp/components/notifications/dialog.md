@@ -8,7 +8,7 @@ mentionedTypes: ['Dialog']
 
 # {Platform} (ダイアログ)
 
-{ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。 
+{ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。
 
 ## {ProductName} Dialog の例
 
@@ -107,12 +107,7 @@ igc-dialog::part(footer) {
 
 <div class="divider--half"></div>
 
-## その他のリソース
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-## API メンバー
+## API リファレンス
 
 - `closeOnEscape`
 - `closeOnOutsideClick`
@@ -121,3 +116,8 @@ igc-dialog::part(footer) {
 - `open`
 - `title`
 - `Dialog`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

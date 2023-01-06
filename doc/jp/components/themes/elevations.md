@@ -82,6 +82,6 @@ igc-toast {
 
 `--ig-elevation-factor` は、10 進値または 1 より大きい値に設定することもできます。値が大きいほど、シャドウが大きくなります。
 
-## API メンバー
+## API リファレンス
 
  - `Elevations`

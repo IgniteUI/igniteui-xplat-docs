@@ -94,7 +94,7 @@ geoMap.backgroundContent = tileSource;
 |`SubDomains`|`SubDomainsCollection`|URI サブ ドメインの画像コレクションを表します。|
 |`TilePath`|文字列|マップ タイル画像 URI を設定するプロパティを表します。これは Bing Maps の実際の位置です。|
 
-## API メンバー
+## API リファレンス
 
  - `BingMapsImageryStyle`
  - `BingMapsMapImagery`

@@ -208,15 +208,13 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 >{PivotGridTitle} のチップをピボット データ セレクターに移動したり、ピボット データ セレクターの項目を {PivotGridTitle} に移動したりすることはできません。
 
 ## API リファレンス
+
 * `PivotGrid`
 * `PivotDataSelector`
 
 
 ## その他のリソース
-* [{Platform} {PivotGridTitle} 概要](overview.md)
-* [{Platform} {PivotGridTitle} カスタム集計](remote-operations.md)
 
-コミュニティに参加して新しいアイデアをご提案ください。
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{Platform})

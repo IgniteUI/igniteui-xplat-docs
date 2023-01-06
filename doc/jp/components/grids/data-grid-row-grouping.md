@@ -192,7 +192,7 @@ public connectedCallback() {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
  - `GroupDescriptions`

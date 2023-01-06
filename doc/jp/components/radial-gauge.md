@@ -954,7 +954,7 @@ IgrRadialGaugeModule.register();
 - [ブレット グラフ](bullet-graph.md)
 - [リニア ゲージ](linear-gauge.md)
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

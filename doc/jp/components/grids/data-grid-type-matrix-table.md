@@ -21,6 +21,6 @@ _language: ja
            github-src="grids/data-grid/type-matrix-table">
 </code-view>
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
