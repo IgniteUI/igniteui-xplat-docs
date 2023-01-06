@@ -149,11 +149,11 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
         replaceExistingArchive: true
 
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifacts'
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
+#    - task: PublishBuildArtifacts@1
+#      displayName: 'Publish Artifacts'
+#      inputs:
+#        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+#        ArtifactName: 'drop'
 
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
