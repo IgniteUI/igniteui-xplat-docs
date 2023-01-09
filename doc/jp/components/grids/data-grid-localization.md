@@ -153,7 +153,7 @@ _language: ja
 - NoMatches
 <!-- end: React, WebComponents -->
 
-## API メンバー
+## API リファレンス
 
  - `ActualDataSource`
  - `SetCustomizedStringAsync`

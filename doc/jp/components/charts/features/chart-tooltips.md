@@ -73,7 +73,7 @@ _language: ja
 - [チャート注釈](chart-annotations.md)
 - [チャート マーカー](chart-markers.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

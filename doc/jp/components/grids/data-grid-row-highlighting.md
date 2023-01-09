@@ -58,7 +58,7 @@ _language: ja
     RowHoverBackground="#bfbfff" />
 ```
 
-## API メンバー
+## API リファレンス
 
  - `IsRowHoverEnabled`
  - `RowHoverBackground`

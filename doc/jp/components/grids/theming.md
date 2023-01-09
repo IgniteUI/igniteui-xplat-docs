@@ -2,6 +2,8 @@
 title: {Platform} グリッドのテーマ | リアル タイム {Platform} テーブル | 軽量 {Platform} Web Components のテーブル | インフラジスティックス
 _description: .
 _keywords: {Platform} data grid, infragistics, data grids theming, theming, {ProductName}, table, {Platform} データ グリッド, インフラジスティックス, データ グリッド テーマ, テーマ, テーブル
+mentionedTypes: ['Infragistics.Controls.Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

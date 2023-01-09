@@ -46,7 +46,7 @@ _language: ja
 - <b>Ctrl + Home</b>: グリッド内の左上のセルに移動します。
 - <b>Ctrl + End</b>: グリッド内の右下のセルに移動します。
 
-## API メンバー
+## API リファレンス
 
  - `ActivationMode`
  - `Cell`

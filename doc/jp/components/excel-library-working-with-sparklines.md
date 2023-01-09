@@ -48,6 +48,6 @@ sheet1.SparklineGroups.Add(SparklineType.Line, "Sparklines!A1:A1", "Data!A2:A11"
 sheet1.SparklineGroups.Add(SparklineType.Column, "Sparklines!B1:B1", "Data!A2:A11");
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Workbook`

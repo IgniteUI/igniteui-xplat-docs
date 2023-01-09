@@ -946,7 +946,7 @@ MaximumValue="55" TargetValue="43">
 - [リニア ゲージ](linear-gauge.md)
 - [ラジアル ゲージ](radial-gauge.md)
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

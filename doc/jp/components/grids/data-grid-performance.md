@@ -35,6 +35,6 @@ _language: ja
 - [行のグループ化](data-grid-row-grouping.md)
 
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

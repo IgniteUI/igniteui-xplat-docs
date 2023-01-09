@@ -149,7 +149,7 @@ mainWindow = new BrowserWindow({
 
 完全なソース コードについては、[リポジトリ](https://github.com/IgniteUI/dock-manager-electron-app)のクローンを作成してください。
 
- ## API メンバー
+## API リファレンス
 
  - `BrowserWindow`
  - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

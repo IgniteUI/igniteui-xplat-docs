@@ -30,7 +30,7 @@ _language: ja
 - [折れ線チャート](line-chart.md)
 - [積層型チャート](stacked-chart.md)
 
-## API メンバー
+## API リファレンス
 - `CategoryXAxis`
 - `ColumnSeries`
 - `LineSeries`

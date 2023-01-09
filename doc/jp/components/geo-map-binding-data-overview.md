@@ -20,7 +20,7 @@ _language: ja
 - [複数ソースのバインド](geo-map-binding-multiple-sources.md)
 
 
-## API メンバー
+## API リファレンス
 
 - `GeographicMap`
 - `DataSource`

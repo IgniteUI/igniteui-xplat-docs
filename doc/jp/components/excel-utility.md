@@ -334,7 +334,7 @@ export class ExcelUtility {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `WorkbookFormat`
  - `WorkbookSaveOptions`

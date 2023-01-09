@@ -97,6 +97,6 @@ _language: ja
 </IgbDataGrid>
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

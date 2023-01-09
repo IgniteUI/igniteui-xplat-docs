@@ -105,7 +105,7 @@ mentionedTypes: ['XamGeographicMap']
 
  * [シェープファイルのバインディング](geo-map-binding-shp-file.md)
 
-## API メンバー
+## API リファレンス
 
  - `XamGeographicMap`
  - `GeographicPolylineSeries`

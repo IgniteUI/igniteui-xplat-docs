@@ -7,6 +7,7 @@ _language: ja
 ---
 
 # {Platform} Select (選択)
+
 選択コンポーネントは、ドロップダウンに配置された項目のリストからの単一選択できます。このフォーム コントロールは、1 つまたは複数の文字の一致に基づく選択を含む、項目リストの迅速なナビゲーションを提供します。
 
 ## {Platform} 選択の例
@@ -42,6 +43,24 @@ defineComponents(IgcSelectComponent);
 ```
 
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+`Select` コンポーネントを使用する前に、追加のコンポーネントとともに登録する必要があります:
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
+```
+
+スタイルを `Select` コンポーネントに適用するには、追加の CSS ファイルをリンクする必要もあります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 > [!NOTE]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
@@ -127,6 +146,7 @@ defineComponents(IgcSelectComponent);
 ## スタイル設定
 
 以下に示す公開された CSS パーツを使用して、{ProductName} 選択コンポーネントとその項目の外観を変更できます。
+
 ### CSS パーツ
 
 **Select コンポーネント**
@@ -162,6 +182,9 @@ defineComponents(IgcSelectComponent);
            github-src="inputs/select/styling">
 </code-view>
 
+<!-- end: WebComponents -->
+
+
 ## API リファレンス
 
 * `Select`
@@ -169,13 +192,8 @@ defineComponents(IgcSelectComponent);
 * `SelectHeader`
 * `SelectGroup`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
+* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})

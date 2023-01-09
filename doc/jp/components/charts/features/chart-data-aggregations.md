@@ -9,11 +9,11 @@ _language: ja
 
 # {Platform} データ集計
 
-{ProductName} `CategoryChart` コントロールのデータ集計機能を使用すると、チャート内のデータを `XAxis` の一意の値でグループ化し、それらのグループをソートすることができます。次に、`YAxis` の範囲に反映され、シリーズにカーソルを合わせるとツールチップに表示される集計を適用できます。 
+{ProductName} `CategoryChart` コントロールのデータ集計機能を使用すると、チャート内のデータを `XAxis` の一意の値でグループ化し、それらのグループをソートすることができます。次に、`YAxis` の範囲に反映され、シリーズにカーソルを合わせるとツールチップに表示される集計を適用できます。
 
 # {Platform} データ集計の例
 
-次の例は、`XAxis` の Country メンバーでグループ化し、Sales Sum に基づいて集計と並べ替えを適用する[縦棒チャート](../types/column-chart.md)を示しています。 
+次の例は、`XAxis` の Country メンバーでグループ化し、Sales Sum に基づいて集計と並べ替えを適用する[縦棒チャート](../types/column-chart.md)を示しています。
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -47,7 +47,7 @@ _language: ja
 </igc-category-chart>
 ```
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

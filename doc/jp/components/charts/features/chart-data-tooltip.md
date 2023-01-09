@@ -129,7 +129,7 @@ _language: ja
            github-src="charts/financial-chart/data-tooltip-formatting-currency">
 </code-view>
 
-## API メンバー
+## API リファレンス
 
  - `DataToolTipExcludedColumns`
  - `DataToolTipGroupedPositionModeX`

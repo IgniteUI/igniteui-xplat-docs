@@ -114,7 +114,7 @@ IgcZoomSliderModule.register();
 
 チャートの詳細については、[グラフの機能](charts/chart-features.md)トピックを参照してください。
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

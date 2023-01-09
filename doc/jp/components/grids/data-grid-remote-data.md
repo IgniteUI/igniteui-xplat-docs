@@ -108,6 +108,6 @@ let grid1 = (document.getElementById("grid") as IgcDataGridComponent);
 grid1.dataSource = vds;
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

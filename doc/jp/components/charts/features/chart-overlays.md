@@ -49,7 +49,7 @@ _language: ja
 - [折れ線チャート](../types/line-chart.md)
 - [株価チャート](../types/stock-chart.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

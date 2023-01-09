@@ -96,6 +96,6 @@ igc-dropdown {
 
 前述のように、水平方向と垂直方向の間隔をサポートするコンポーネントに対して個別に制御できます。これは、`--ig-spacing-inline` (水平) および `--ig-spacing-block` (垂直) 変数を変更することで実現できます。原則は `--ig-spacing` 変数の場合と同じです。`--ig-spacing` 変数のみを変更すると、両方向の間隔が同じ量だけ変更されます。
 
- ## API メンバー
+## API リファレンス
 
  - `ConfigureTheme`
