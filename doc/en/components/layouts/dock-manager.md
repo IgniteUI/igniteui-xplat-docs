@@ -53,7 +53,7 @@ Once the Dock Manager is imported, you can add it on the page:
 > [!NOTE]
 > Since the Dock Manager component uses ShadowDOM and slots it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
 
-The Dock Manager has a [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) property, which describes the layout of the panes. To start defining a layout, you should set the [rootPane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#rootpane) property and add child panes. Here is how you can define a layout with a single content pane:
+The Dock Manager has a [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) property, which describes the layout of the panes. To start defining a layout, you should set the [rootPane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#rootPane) property and add child panes. Here is how you can define a layout with a single content pane:
 
 ```ts
 import { IgcDockManagerPaneType, IgcSplitPaneOrientation, IgcDockManagerComponent } from 'igniteui-dockmanager';
@@ -76,7 +76,7 @@ this.dockManager.layout = {
 };
 ```
 
-To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [contentId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to **100%** for predictable response when the end-user is resizing panes.
+To load the content of the panes, the Dock Manager uses [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot). The [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute of the content element should match the [contentId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentId) of the content pane in the layout configuration. It is highly recommended to set width and height of the content elements to **100%** for predictable response when the end-user is resizing panes.
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -101,7 +101,7 @@ The end-user can perform the following actions to customize the layout at runtim
 * Dock a floating pane
 * Maximize a pane
 
-All of these are reflected in the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) property of the Dock Manager.
+All of these are reflected in the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) property of the Dock Manager.
 
 ### Content Pane
 
@@ -115,7 +115,7 @@ const contentPane: IgcContentPane = {
 }
 ```
 
-The [header]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) property is used to provide a text header for the content pane. This text is rendered at several places: the top content pane header, the tab header if the pane is in a tab group and the unpinned header if the pane is unpinned. You can provide a custom slot content for each of these places respectively using the [headerId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#headerid), [tabHeaderId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#tabheaderid) and [unpinnedHeaderId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedheaderid) properties. If any of these properties is not set, the [header]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) text is used. Here is how to provide a tab header slot content:
+The [header]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) property is used to provide a text header for the content pane. This text is rendered at several places: the top content pane header, the tab header if the pane is in a tab group and the unpinned header if the pane is unpinned. You can provide a custom slot content for each of these places respectively using the [headerId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#headerId), [tabHeaderId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#tabHeaderId) and [unpinnedHeaderId]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedHeaderId) properties. If any of these properties is not set, the [header]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) text is used. Here is how to provide a tab header slot content:
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -133,7 +133,7 @@ const contentPane: IgcContentPane = {
 }
 ```
 
-When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its [isPinned]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) property to **false**.
+When a pane is unpinned, it appears as a tab header at one of the edges of the Dock Manager. If the end-user selects it, its content appears over the docked pinned panes. To unpin a content pane, set its [isPinned]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#isPinned) property to **false**.
 
 ```ts
 const contentPane = {
@@ -144,17 +144,17 @@ const contentPane = {
 }
 ```
 
-The [isPinned]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) property affects only content panes that are docked outside a document host. Also, content panes hosted in a floating pane cannot be unpinned.
+The [isPinned]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#isPinned) property affects only content panes that are docked outside a document host. Also, content panes hosted in a floating pane cannot be unpinned.
 
-By default, the unpin destination for a content pane is calculated automatically based on the location of the pane relative to the document host. When more than one document host is defined, the nearest one in the parent hierarchy of the unpinned content pane will be used. If there is no document host defined, the default location is used - [left]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcunpinnedlocation.html#left). It is also possible to set the desired destination of the unpinned pane by using the [unpinnedLocation]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedlocation) property.
+By default, the unpin destination for a content pane is calculated automatically based on the location of the pane relative to the document host. When more than one document host is defined, the nearest one in the parent hierarchy of the unpinned content pane will be used. If there is no document host defined, the default location is used - [left]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcunpinnedlocation.html#left). It is also possible to set the desired destination of the unpinned pane by using the [unpinnedLocation]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedLocation) property.
 
-You can configure which end-user operations are allowed for a content pane using its [allowClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose), [allowPinning]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning), [allowDocking]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) and [allowFloating]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) properties.
+You can configure which end-user operations are allowed for a content pane using its [allowClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowClose), [allowPinning]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowPinning), [allowDocking]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowDocking) and [allowFloating]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowFloating) properties.
 
-When defining a content pane, you can set the [documentOnly]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#documentonly) property to true so the pane can be docked only in a document host.
+When defining a content pane, you can set the [documentOnly]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#documentOnly) property to true so the pane can be docked only in a document host.
 
 To restrict the user interaction with the content pane and its content, you can set the [disabled]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#disabled) property to true. This will prevent all user interactions with the pane unless it is a single floating pane. The latter could be moved, maximized or closed (according to the pane's settings for maximizing and closing), so the user can have a look at the elements under it but will not be able to interact with its content.
 
-By default, when you close a pane it gets removed from the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object you can use the [hidden]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) property of the content pane. Setting the property to **true** will hide it from the UI, but it will remain in the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) object. In order to override the default close behavior you can subscribe to the [paneClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event like this:
+By default, when you close a pane it gets removed from the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) object. However, in some cases you would want to temporary hide the pane and show it later again. In order to do that without changing the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) object you can use the [hidden]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) property of the content pane. Setting the property to **true** will hide it from the UI, but it will remain in the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) object. In order to override the default close behavior you can subscribe to the [paneClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneClose) event like this:
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => {
@@ -190,7 +190,7 @@ const splitPane: IgcSplitPane = {
 
 The split pane may contain child panes of all pane types including other split panes.
 
-By default, if the split pane is empty it is not displayed. Yet if you would like to change that behavior you can set its [allowEmpty]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#allowempty) property to true and the split pane will be presented in the UI even when there is no panes inside it.
+By default, if the split pane is empty it is not displayed. Yet if you would like to change that behavior you can set its [allowEmpty]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#allowEmpty) property to true and the split pane will be presented in the UI even when there is no panes inside it.
 
 ### Tab Group Pane
 
@@ -218,7 +218,7 @@ If there is not enough space to display all tab headers, the tab group shows **M
 
 The tabs also can be reordered without being detached from the tab group in which they are located. You can click on a tab of your choice and drag it left or right to the position you want it to be. If you drag the selected tab outside of the tabs area it will be detached into a floating pane.
 
-In case you would like the tab group pane to be displayed in the UI when it has no tabs, you can set the [allowEmpty]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#allowempty) property to true.
+In case you would like the tab group pane to be displayed in the UI when it has no tabs, you can set the [allowEmpty]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#allowEmpty) property to true.
 
 ### Document Host
 
@@ -253,7 +253,7 @@ const docHost: IgcDocumentHost = {
 
 ### Floating Pane
 
-The floating pane is a split pane rendered above all other ones in a floating window. The floating pane definitions are stored in the [floatingPanes]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) property of the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout). Here is how to add a floating pane with a single content pane inside:
+The floating pane is a split pane rendered above all other ones in a floating window. The floating pane definitions are stored in the [floatingPanes]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingPanes) property of the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout). Here is how to add a floating pane with a single content pane inside:
 
 ```ts
 const layout: IgcDockManagerLayout = {
@@ -280,14 +280,14 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-The [floatingLocation]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation), [floatingWidth]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) and [floatingHeight]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [floatingPanes]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) array.
+The [floatingLocation]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingLocation), [floatingWidth]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingWidth) and [floatingHeight]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingHeight) properties represent absolute dimensions in pixels. Please note that these properties are applied only for the split panes in the [floatingPanes]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingPanes) array.
 
-With the [floatingResizable]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) and
-[allowFloatingPanesResize]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) you can set whether resizing floating panes is allowed. The `allowFloatingPanesResize` is an **IgcDockManagerComponent** property, so if the value is set to **false** none of the floating panes can be resized. The `floatingResizable` property can be applied separately on each split pane in the `floatingPanes` array and if the property value is not set, it defaults to the value of the `allowFloatingPanesResize` property. If the `floatingResizable` property is set for a specific pane, its value takes precedence over the `allowFloatingPanesResize` property value.
+With the [floatingResizable]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingResizable) and
+[allowFloatingPanesResize]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#allowFloatingPanesResize) you can set whether resizing floating panes is allowed. The `allowFloatingPanesResize` is an **IgcDockManagerComponent** property, so if the value is set to **false** none of the floating panes can be resized. The `floatingResizable` property can be applied separately on each split pane in the `floatingPanes` array and if the property value is not set, it defaults to the value of the `allowFloatingPanesResize` property. If the `floatingResizable` property is set for a specific pane, its value takes precedence over the `allowFloatingPanesResize` property value.
 
 ### Active Pane
 
-The Dock Manager component highlights the content pane which contains the focus and exposes it in its [activePane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) property. You can programmatically change the active pane by setting the property. You can also listen for changes of the [activePane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) property by subscribing to the [activePaneChanged]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#activepanechanged) event:
+The Dock Manager component highlights the content pane which contains the focus and exposes it in its [activePane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#activePane) property. You can programmatically change the active pane by setting the property. You can also listen for changes of the [activePane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#activePane) property by subscribing to the [activePaneChanged]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#activePaneChanged) event:
 
 ```ts
 this.dockManager.addEventListener('activePaneChanged', ev => {
@@ -298,7 +298,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### Save/Load Layout
 
-To restore or persist a layout, you simply have to get/set the value of the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) property. Here is how to save the layout as a stringified JSON:
+To restore or persist a layout, you simply have to get/set the value of the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) property. Here is how to save the layout as a stringified JSON:
 
 ```ts
 private savedLayout: string;
@@ -322,7 +322,7 @@ this.dockManager.layout = { ...layout };
 
 ### Adding Panes At Runtime
 
-Contents and panes can be added to the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) at runtime. In the example below, you can see how you can add content, document and floating panes.
+Contents and panes can be added to the [layout]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#layout) at runtime. In the example below, you can see how you can add content, document and floating panes.
 
 
 <code-view style="height: 700px"
@@ -343,7 +343,7 @@ The Dock Manager component raises events when specific end-user interactions are
 <div class="divider--half"></div>
 
  <!-- WebComponents, React, Angular -->
- Here is how to add an event listener for the [paneClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) event:
+ Here is how to add an event listener for the [paneClose]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneClose) event:
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
@@ -456,6 +456,8 @@ Below you can find a list containing the slot names for all of the buttons as we
 Slot name | Description
 ----------|------------
 `closeButton` | The close buttons.
+`paneHeaderCloseButton` | The close buttons of the pane headers.
+`tabHeaderCloseButton` | The close buttons of the tab headers.
 `moreTabsButton` | The more tabs buttons.
 `moreOptionsButton` | The more options buttons.
 `maximizeButton` | The maximize buttons.
@@ -544,7 +546,11 @@ Part name | Description
 `splitter-ghost`| The ghost element of the splitter component.
 `unpinned-pane-header` | The unpinned pane header component.
 `tab-header` | The tab header component.
-`selected` | Indicates a selected state. Applies to `tab-header`.
+`tab-header-more-options-button` | The more options button in the tab header.
+`tab-header-close-button` | The close button in the tab header.
+`selected` | Indicates a selected state. Applies to `tab-header` and `tab-header-close-button`.
+`hovered` | Indicates a hovered state. Applies to `tab-header-close-button`.
+`header-title` | The text title of the tab header.
 `tab-strip-area` | The tab strip area containing the tab headers.
 `tab-strip-actions` | The tab strip area containing the tab actions.
 `top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
@@ -565,14 +571,14 @@ Part name | Description
 `pane-header-minimize-button` | The minimize button in the pane header.
 `pane-header-pin-button` | The pin button in the pane header.
 `pane-header-unpin-button` | The unpin button in the pane header.
-`tab-header-more-options-button` | The more options button in the tab header.
-`tab-header-close-button` | The close button in the tab header.
 `tabs-maximize-button` | The tabs maximize button.
 `tabs-minimize-button` | The tabs minimize button.
 `tabs-more-button` | The more tabs button.
 `context-menu-unpin-button` | The unpin button in the context menu.
 `context-menu-close-button` | The close button in the context menu.
 `splitter-handle` | The splitter handle.
+`horizontal` | Indicates a horizontal position. Applies to `splitter-handle`.
+`vertical` | Indicates a vertical position. Applies to `splitter-handle`.
 
 ### Themes
 
@@ -588,7 +594,7 @@ The Dock Manager comes with a light and a dark theme. The light theme is the def
 
 ## Localization
 
-The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by searching for a [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on any of its parents. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English(`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen). The Dock Manager provides built-in localized strings for the following languages: [English(`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen), [Japanese(`jp`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsjp), [Korean(`ko`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsko) and [Spanish(`es`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringses). In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addresourcestrings) method:
+The Dock Manager component supports localizing the strings used in the context menus, tooltips and aria attributes. By default, the Dock Manager detects the language of the page by searching for a [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute on any of its parents. If the [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is not set or is set to a value which the Dock Manager does not support, the default language used is [English(`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN). The Dock Manager provides built-in localized strings for the following languages: [English(`en`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN), [Japanese(`jp`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP), [Korean(`ko`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO) and [Spanish(`es`)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES). In order to provide resource strings for any other language use the [addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) method:
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -601,7 +607,7 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 addResourceStrings('fr', dockManagerStringsFr);
 ```
 
-The Dock Manager exposes [resourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) property which allows you to modify the strings. If you set the [resourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) property, the Dock Manager will use your strings no matter what [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
+The Dock Manager exposes [resourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#resourceStrings) property which allows you to modify the strings. If you set the [resourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html#resourceStrings) property, the Dock Manager will use your strings no matter what [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) attribute is set.
 
 <!-- end: WebComponents -->
 
