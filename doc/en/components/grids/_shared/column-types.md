@@ -16,7 +16,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
+           github-src="{ComponentSample}/column-data-types">
 </code-view>
 
 <!-- ComponentEnd: Grid -->

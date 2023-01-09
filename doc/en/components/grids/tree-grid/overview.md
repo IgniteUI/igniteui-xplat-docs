@@ -16,6 +16,7 @@ In this example, you can see how users can manipulate hierarchical or flat data.
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
+           github-src="{TreeGridSample}/overview"
            alt="grid example">
 </code-view>
 

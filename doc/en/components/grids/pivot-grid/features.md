@@ -22,6 +22,7 @@ The {PivotGridTitle} component has additional features and functionalities relat
 <code-view style="height: 870px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
+           github-src="{PivotGridSample}/features"
            alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
 </code-view>
 

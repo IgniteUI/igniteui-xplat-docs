@@ -32,6 +32,7 @@ The following example show how to handle scenarios, where the data is already ag
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-remote"
+           github-src="{PivotGridSample}/remote"
            alt="{Platform} Pivot Grid Custom Predefined Aggregations Example">
 </code-view>
 

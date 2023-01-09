@@ -17,6 +17,7 @@ The sample below demonstrates three types of **cell selection** behaviors in the
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
+           github-src="{ComponentSample}/cell-selection-mode"
            alt="{Platform} {ComponentTitle}  Selection Example">
 </code-view>
 
@@ -175,8 +176,9 @@ TO DO
 <!-- NOTE this sample is differed -->
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
+           github-src="{ComponentSample}/custom-context-menu">
 </code-view>
 
 <!-- ComponentEnd: Grid -->

@@ -17,6 +17,7 @@ This mode is useful when you need to display master-detail style data in a hiera
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-grid-master-detail"
+           github-src="{GridSample}/grid-master-detail"
            alt="{Platform} {ComponentTitle} Master-Detail Example">
 </code-view>
 

@@ -61,6 +61,7 @@ In this grid example, you can see how users can do both basic and excel-style fi
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid example">
 </code-view>
 
@@ -1082,7 +1083,8 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
+           github-src="{GridSample}/binding-nested-data-2">
 </code-view>
 
 <!-- end: Angular -->
@@ -1400,7 +1402,8 @@ And the result from this configuration is:
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
+           github-src="{GridSample}/binding-nested-data-1">
 </code-view>
 
 ### Working with Flat Data Overview
@@ -1650,7 +1653,8 @@ Using code snippets from previous section will result in the following example o
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
+           github-src="{GridSample}/binding-composite-data">
 </code-view>
 
 ## Keyboard Navigation
