@@ -79,6 +79,14 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) jp'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=jp'
+
 #    - task: NuGetCommand@2
 #      displayName: 'Package WebComponents en'
 #      inputs:
@@ -97,6 +105,16 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
         replaceExistingArchive: true
 
+    - task: ArchiveFiles@2
+      displayName: 'Package WebComponents jp - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/jp/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_jp_$(buildType).zip
+        replaceExistingArchive: true
+
     - task: Npm@1
       displayName: 'Build Blazor EN'
       inputs:
@@ -104,6 +122,14 @@ stages:
         workingDir: '$(Build.SourcesDirectory)'
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
+
+    - task: Npm@1
+      displayName: 'Build Blazor JP'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=jp'
 
 #    - task: NuGetCommand@2
 #      displayName: 'Package Blazor EN'
@@ -123,6 +149,16 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_en_$(buildType).zip
         replaceExistingArchive: true
 
+    - task: ArchiveFiles@2
+      displayName: 'Package Blazor jp - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/jp/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_jp_$(buildType).zip
+        replaceExistingArchive: true
+
     - task: Npm@1
       displayName: 'Build React EN'
       inputs:
@@ -130,6 +166,14 @@ stages:
         workingDir: '$(Build.SourcesDirectory)'
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
+
+    - task: Npm@1
+      displayName: 'Build React JP'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
 
 #    - task: NuGetCommand@2
 #      displayName: 'Package React EN'
@@ -147,6 +191,16 @@ stages:
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
+        replaceExistingArchive: true
+
+    - task: ArchiveFiles@2
+      displayName: 'Package React jp - zip'
+      inputs:
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/jp/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
         replaceExistingArchive: true
 
 #    - task: PublishBuildArtifacts@1
