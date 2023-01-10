@@ -128,7 +128,8 @@ _language: ja
 
 <code-view style="height:470px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
+           github-src="{ComponentSample}/keyboard-navigation-guide">
 </code-view>
 
 <!-- end: Angular -->
@@ -246,7 +247,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
+           github-src="{ComponentSample}/keyboard-custom-navigation">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -276,7 +278,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
+           github-src="{ComponentSample}/keyboard-custom-navigation">
 </code-view>
 
 <!-- end: Angular -->
@@ -307,7 +310,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
+           github-src="{ComponentSample}/keyboard-navigation-guide">
 </code-view>
 
 <!-- end: Angular -->

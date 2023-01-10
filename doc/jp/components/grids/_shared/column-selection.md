@@ -36,6 +36,7 @@ _language: ja
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
+           github-src="{ComponentSample}/column-selection-mode"
            alt="{Platform} 列選択の例">
 </code-view>
 
@@ -69,7 +70,8 @@ _language: ja
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
+           github-src="{ComponentSample}/column-selection-group">
 </code-view>
 
 ## キーボードの組み合わせ
@@ -195,7 +197,8 @@ TO DO
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
+           github-src="{ComponentSample}/column-selection-styles">
 </code-view>
 
 >[!NOTE]

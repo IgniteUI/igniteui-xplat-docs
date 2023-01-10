@@ -18,6 +18,7 @@ Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエ
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} Excel Exporter の例">
 </code-view>
 
@@ -97,6 +98,7 @@ public exportButtonHandler() {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例">
 </code-view>
 
@@ -113,6 +115,7 @@ public exportButtonHandler() {
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
+           github-src="{ComponentSample}/multi-column-headers-export"
            alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例">
 </code-view>
 

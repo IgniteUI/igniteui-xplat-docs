@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
+           github-src="{ComponentSample}/data-searching"
            alt="{Platform} {ComponentTitle} 検索の例">
 </code-view>
 

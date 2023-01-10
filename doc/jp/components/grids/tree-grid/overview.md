@@ -17,6 +17,7 @@ _language: ja
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
+           github-src="{TreeGridSample}/overview"
            alt="グリッドの例">
 </code-view>
 

@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options"
            alt="{Platform} {ComponentTitle} 列ピン固定の例">
 </code-view>
 
@@ -240,8 +241,9 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ### デモ
 
 <code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
+           github-src="{ComponentSample}/column-pinning-right-side">
 </code-view>
 
 <!-- Angular -->
@@ -513,7 +515,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options">
 </code-view>
 
 <!-- end: Angular -->
@@ -633,7 +636,8 @@ $custom-theme: grid-theme(
 
 <code-view style="height:506px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
+           github-src="{ComponentSample}/column-pinning-styles">
 </code-view>
 
 >[!NOTE]
