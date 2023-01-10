@@ -497,7 +497,7 @@ constructor() {
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **HandleCellEdit** definition, we need to make sure that we check for our specific column before taking any action:
+The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **CellEdit** definition, we need to make sure that we check for our specific column before taking any action:
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -518,7 +518,7 @@ export class MyGridEventsComponent {
 }
 ```
 
-If the value entered in a cell under the **Ordered** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
