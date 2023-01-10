@@ -318,7 +318,7 @@ igc-tree-item::part(active selected) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API References
 
@@ -327,18 +327,7 @@ igc-tree-item::part(active selected) {
 * `CircularProgress`
 * `Icon`
 
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
-
-## API References
-
- - `TreeItem`
- - `Tree`
-
-
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

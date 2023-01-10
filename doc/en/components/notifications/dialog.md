@@ -100,9 +100,6 @@ igc-dialog::part(footer) {
            github-src="notifications/dialog/styling">
 </code-view>
 
-## API Reference
-
-* `Dialog`
 
 <div class="divider--half"></div>
 
@@ -118,5 +115,5 @@ igc-dialog::part(footer) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

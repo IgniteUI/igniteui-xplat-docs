@@ -471,24 +471,8 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API References
 
 In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
-
-* `List`
-* `ListHeader`
-* `ListItem`
-
-Additional components that were used:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
@@ -504,5 +488,5 @@ Additional components that were used:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

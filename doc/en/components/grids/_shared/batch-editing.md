@@ -456,5 +456,5 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName}  **GitHub**]({GithubLink})

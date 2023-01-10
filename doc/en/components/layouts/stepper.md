@@ -270,6 +270,8 @@ igc-step::part(subtitle) {
 }
 ```
 
+<div class="divider--half"></div>
+
 ## API References
 
 * `Stepper`
@@ -277,10 +279,8 @@ igc-step::part(subtitle) {
 * `Avatar`
 * `Icon`
 
-<div class="divider--half"></div>
-
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

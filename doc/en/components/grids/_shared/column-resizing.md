@@ -519,7 +519,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ### Demo
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
            github-src="{ComponentSample}/column-resize-styling">
 </code-view>
@@ -548,5 +548,5 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

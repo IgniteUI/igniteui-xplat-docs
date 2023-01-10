@@ -330,7 +330,7 @@ function verifyApiSections(cb) {
     .pipe(es.map(function(file, fileCallback) {
         var filePath = file.dirname + "\\" + file.basename
         var fileContent = file.contents.toString();
-        var fileHasAPI = fileContent.indexOf(" API Members") > 0;
+        var fileHasAPI = fileContent.indexOf("API References") > 0;
         if (!fileHasAPI) {
             let apiLinks = [];
             let words = fileContent.split(' ');

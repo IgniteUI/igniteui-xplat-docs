@@ -240,7 +240,7 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ### Demo
 
 <code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
            github-src="{ComponentSample}/column-pinning-right-side">
 </code-view>
@@ -662,5 +662,5 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

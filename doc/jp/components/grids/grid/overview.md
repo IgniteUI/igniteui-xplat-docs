@@ -38,7 +38,7 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p> {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。</p>
+            <p> {Platform} `Grid` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。</p>
         </div>
     </article>
     <article class="sample-column">
@@ -807,7 +807,7 @@ constructor() {
 
 ## グリッド データの構造
 
-`{GridName}` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
+`Grid` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -1009,7 +1009,7 @@ export class MyComponent implements OnInit {
 <!-- end: Angular, WebComponents -->
 ## 複雑なデータ バインディング
 
-`{GridName}` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
 次のデータ モデルを見てください。
 ```typescript
@@ -1086,7 +1086,7 @@ public class AminoWeight
 
 <!-- end: Angular -->
 
-`{GridName}` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
+`Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
     - ネストされたデータを含むセルの `value` を使用します。
     - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
@@ -1648,7 +1648,7 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ### フラット データの操作の例
 
-前のセクションのコード スニペットを使用すると、次の `{GridName}` の例になります。
+前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -1658,7 +1658,7 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ## キーボード ナビゲーション
 
-`{GridName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+`Grid` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
 
 <!-- Angular -->
 
@@ -1689,7 +1689,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## パフォーマンス (試験中)
 
-`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
+`Grid` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1698,7 +1698,7 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen}/discussions) ページでお問い合わせください。
+> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github]({GithubLink}/discussions) ページでお問い合わせください。
 
 >[!NOTE]
 > 有効にすると、`IgxGridComponent` に関連しない Angular アプリケーションの他の部分に影響します。
@@ -1759,7 +1759,7 @@ platformBrowserDynamic()
 
 ## API リファレンス
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `Cell`
 * `CellTemplateContext`
@@ -1783,7 +1783,7 @@ platformBrowserDynamic()
 
 ## チュートリアル ビデオ
 
-{Platform} `{GridName}` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
+{Platform} `Grid` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
@@ -1826,5 +1826,5 @@ platformBrowserDynamic()
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

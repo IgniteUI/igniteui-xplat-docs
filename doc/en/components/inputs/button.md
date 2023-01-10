@@ -354,19 +354,6 @@ igc-button::part(base) {
            github-src="inputs/button/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API Reference
-
-* `Button`
-
-Additional Web Components that were used:
-
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 ## API References
 
  - `ButtonBase`
@@ -380,5 +367,5 @@ Additional Web Components that were used:
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

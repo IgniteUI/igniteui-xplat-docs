@@ -176,7 +176,7 @@ TO DO
 <!-- NOTE this sample is differed -->
 
 <code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
            github-src="{ComponentSample}/custom-context-menu">
 </code-view>
@@ -235,5 +235,5 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

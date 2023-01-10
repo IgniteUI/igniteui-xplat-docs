@@ -79,3 +79,15 @@ The following is a list of API members mentioned in the above sections:
 - `ToolTipType`
 - `CategoryChart`
 - `XamDataChart`
+
+
+The `CategoryChart` and `FinancialChart` components share the following API properties:
+
+- `ToolTipType`
+
+In the `XamDataChart` component, you can use the following API components and properties:
+
+- `DataToolTipLayer`
+- `ItemToolTipLayer`
+- `CategoryToolTipLayer`
+- `ShowDefaultToolTip`

@@ -236,10 +236,6 @@ igc-chip::part(suffix) {
 </code-view>
 
 
-## API Reference
-
-* `Chip`
-
 <div class="divider--half"></div>
 
 ## API References
@@ -249,5 +245,5 @@ igc-chip::part(suffix) {
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

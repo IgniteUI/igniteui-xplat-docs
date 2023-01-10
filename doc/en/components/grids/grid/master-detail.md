@@ -89,7 +89,7 @@ Additional API methods for controlling the expansion states are also exposed:
 
 ## API References
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `GridRow`
 * `GridCell`
