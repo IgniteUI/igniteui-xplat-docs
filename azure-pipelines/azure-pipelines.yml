@@ -79,22 +79,6 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
-    - task: Npm@1
-      displayName: 'Build WebComponents $(buildType) jp'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=jp'
-
-#    - task: NuGetCommand@2
-#      displayName: 'Package WebComponents en'
-#      inputs:
-#        command: pack
-#        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-#        versioningScheme: byBuildNumber
-#        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
-
     - task: ArchiveFiles@2
       displayName: 'Package WebComponents en - zip'
       inputs:
@@ -104,6 +88,14 @@ stages:
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
         replaceExistingArchive: true
+
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) jp'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package WebComponents jp - zip'
@@ -123,14 +115,6 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
 
-    - task: Npm@1
-      displayName: 'Build Blazor JP'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=jp'
-
 #    - task: NuGetCommand@2
 #      displayName: 'Package Blazor EN'
 #      inputs:
@@ -148,6 +132,14 @@ stages:
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_en_$(buildType).zip
         replaceExistingArchive: true
+
+    - task: Npm@1
+      displayName: 'Build Blazor JP'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package Blazor jp - zip'
@@ -167,14 +159,6 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
 
-    - task: Npm@1
-      displayName: 'Build React JP'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
-
 #    - task: NuGetCommand@2
 #      displayName: 'Package React EN'
 #      inputs:
@@ -192,6 +176,14 @@ stages:
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
         replaceExistingArchive: true
+
+    - task: Npm@1
+      displayName: 'Build React JP'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: false
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package React jp - zip'
