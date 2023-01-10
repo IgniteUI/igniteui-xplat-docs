@@ -24,6 +24,7 @@ _language: ja
 <code-view style="height: 870px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
+           github-src="{PivotGridSample}/pivot-grid-data-selector"
            alt="{Platform} ピボット セレクターを使用したピボット グリッドの例">
 </code-view>
 
@@ -455,6 +456,7 @@ public PivotSalesData()
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
+           github-src="{PivotGridSample}/features"
            alt="{Platform} ピボット グリッドの例">
 </code-view>
 

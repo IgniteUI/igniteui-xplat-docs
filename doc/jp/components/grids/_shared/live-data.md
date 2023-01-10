@@ -19,6 +19,7 @@ _language: ja
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
+           github-src="{ComponentSample}/grid-finjs"
            alt="Angular ライブ データ更新の例">
 </code-view>
 
@@ -95,6 +96,7 @@ igxGrid コンポーネントは、サーバーからの高頻度の更新を簡
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
+           github-src="{ComponentSample}/grid-finjs-dock-manager"
            alt="{Platform} {ComponentTitle} サービスを使用したライブ データ更新の例">
 </code-view>
 <!-- end: Angular -->

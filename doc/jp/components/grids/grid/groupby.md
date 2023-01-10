@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
+           github-src="{GridSample}/groupby-expressions"
            alt="{Platform} {ComponentTitle} グループ化の例">
 </code-view>
 
@@ -233,6 +234,7 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
+           github-src="{GridSample}/groupby-paging"
            alt="{Platform} {ComponentTitle} ページングによるグループ化の例">
 </code-view>
 
@@ -272,6 +274,7 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
+           github-src="{GridSample}/groupby-custom-coming-soon"
            alt="{Platform} {ComponentTitle} カスタム グループ化の例">
 </code-view>
 
@@ -501,7 +504,8 @@ $custom-theme: grid-theme(
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling"
+           github-src="{GridSample}/groupby-styling">
 </code-view>
 
 >[!NOTE]

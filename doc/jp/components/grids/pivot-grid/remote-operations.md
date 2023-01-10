@@ -33,6 +33,7 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-remote"
+           github-src="{PivotGridSample}/remote"
            alt="{Platform} ピボット グリッドのカスタム定義済み集計の例">
 </code-view>
 

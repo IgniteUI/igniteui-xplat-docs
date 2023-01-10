@@ -27,6 +27,7 @@ _language: ja
 <code-view style="height: 570px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-paste-options"
+           github-src="{GridSample}/data-paste-options"
            alt="{Platform} Excel から貼り付けの例">
 </code-view>
 

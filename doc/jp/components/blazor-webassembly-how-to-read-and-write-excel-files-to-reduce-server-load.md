@@ -157,7 +157,7 @@ Excel ファイルの処理には、下記項目の状況によっては、か�
 
 ### 方法その 1 - 数式の自動計算を一時停止する
 
-Blazor WebAssembly アプリケーション上で Excel ファイル中のセル参照や書き換えにとても時間がかかってしまう場合、もしかすると、数式の自動計算・再計算に負荷がかかっているかもしれません。そのような場合、Infragistics Blazor Excel ライブラリでは、数式の自動計算を一時停止できますので、そうすることで処理速度の改善が見込まれます。詳しくは [Blazor Excel ライブラリ – 数式の自動計算を一時的に停止して処理速度を上げる](https://jp.infragistics.com/products/ignite-ui-blazor/blazor/components/blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing)を参照ください。
+Blazor WebAssembly アプリケーション上で Excel ファイル中のセル参照や書き換えにとても時間がかかってしまう場合、もしかすると、数式の自動計算・再計算に負荷がかかっているかもしれません。そのような場合、Infragistics Blazor Excel ライブラリでは、数式の自動計算を一時停止できますので、そうすることで処理速度の改善が見込まれます。詳しくは[このドキュメント トピック](blazor-excel-library-temporarily-stop-automatic-calculation-of-formulas-to-speed-up-processing.md)を参照してください。
 
 ### 方法その 2 - Ahead-Of-Time (AOT) コンパイルを使う
 

@@ -16,6 +16,7 @@ _language: ja
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
+           github-src="{ComponentSample}/column-resizing"
            alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
 </code-view>
 
@@ -418,6 +419,7 @@ constructor() {
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
+           github-src="{ComponentSample}/column-auto-sizing"
            alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
 </code-view>
 
@@ -519,8 +521,9 @@ $custom-grid-theme: grid-theme(
 ### デモ
 
 <code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling" >
+           data-demos-base-url="{environment:dvDemosBaseUrl}"           
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
+           github-src="{ComponentSample}/column-resize-styling">
 </code-view>
 
 >[!NOTE]

@@ -62,6 +62,7 @@ _language: ja
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid の例">
 </code-view>
 
@@ -1079,7 +1080,8 @@ public class AminoWeight
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
+           github-src="{GridSample}/binding-nested-data-2">
 </code-view>
 
 <!-- end: Angular -->
@@ -1399,7 +1401,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
+           github-src="{GridSample}/binding-nested-data-1">
 </code-view>
 
 ### フラット データの操作の概要
@@ -1649,7 +1652,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
+           github-src="{GridSample}/binding-composite-data">
 </code-view>
 
 ## キーボード ナビゲーション

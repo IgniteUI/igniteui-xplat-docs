@@ -23,6 +23,7 @@ _language: ja
 <code-view style="height: 870px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
+           github-src="{PivotGridSample}/features"
            alt="ピボット セレクターを使用した {Platform} {PivotGridTitle} の例">
 </code-view>
 
