@@ -43,6 +43,8 @@
             { "name": "{PackageAngularComponents}",     "value": "igniteui-angular"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-angular"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-angular"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -146,6 +148,8 @@
             { "name": "{PackageVerChanges-22-2.1}",   "value": "18.1.2"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-react"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-react"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -251,6 +255,8 @@
             { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-webcomponents"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -396,6 +402,8 @@
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-blazor"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
