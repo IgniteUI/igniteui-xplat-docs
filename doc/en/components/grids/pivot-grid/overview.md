@@ -486,7 +486,11 @@ Using above code will result in the following example which groups the Product C
 <!-- * [{Platform} Pivot Grid Features](features.md) -->
 <!-- * [{Platform} Pivot Grid Custom Aggregations](remote-operations.md) -->
 
+## Additional Resources
+
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
 * [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+
+
