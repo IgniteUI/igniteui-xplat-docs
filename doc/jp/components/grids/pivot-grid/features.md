@@ -11,7 +11,7 @@ _language: ja
 ピボットおよびフラット グリッド コンポーネントは、共通ベースを継承しているため、いくつかの機能を共有しています。
 
 >[!NOTE]
->一部の機能は、ピボット テーブルのコンテキストで意味のある動作をしないため `{PivotGridName}`で有効にできません。以下が含まれます。
+>一部の機能は、ピボット テーブルのコンテキストで意味のある動作をしないため `PivotGrid`で有効にできません。以下が含まれます。
 > - CRUD 操作
 > - グループ化
 > - 行 / 列のピン固定
@@ -168,7 +168,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 複数の行 / 列にまたがるグループを作成する複数の行または列のディメンションがある場合、選択は、選択されたグループに属するすべてのセルに適用されます。
 
 ## スーパー コンパクト モード
-`{PivotGridName}` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `DisplayDensity` オプションを無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `DisplayDensity` 入力が `Compact` (コンパクト) に設定されます。
+`PivotGrid` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `DisplayDensity` オプションを無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `DisplayDensity` 入力が `Compact` (コンパクト) に設定されます。
 
 
 

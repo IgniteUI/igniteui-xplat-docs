@@ -10,7 +10,7 @@ mentionedTypes: ['Infragistics.Controls.Grid']
 The pivot and flat grid components inherit from a common base and thus share some functionality and features.
 
 >[!NOTE]
->Some features do not have meaningful behavior in the context of a pivot table and therefore cannot be enabled for `{PivotGridName}`. These include:
+>Some features do not have meaningful behavior in the context of a pivot table and therefore cannot be enabled for `PivotGrid`. These include:
 > - CRUD operations
 > - Grouping
 > - Row/Column Pinning
@@ -167,7 +167,7 @@ The {PivotGridTitle} supports single selection which is enabled just like in the
 In case there are multiple row or column dimensions which would create groups that span multiple rows/columns, selection is applied to all cells that belong to the selected group.
 
 ## Super Compact Mode
-The `{PivotGridName}` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
+The `PivotGrid` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
 
 
 

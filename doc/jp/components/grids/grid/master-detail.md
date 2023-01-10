@@ -90,7 +90,7 @@ _language: ja
 
 ## API リファレンス
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `GridRow`
 * `GridCell`

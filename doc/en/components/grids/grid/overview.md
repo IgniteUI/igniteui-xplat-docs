@@ -37,7 +37,7 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+            <p>The {Platform} `Grid` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
         </div>
     </article>
     <article class="sample-column">
@@ -807,7 +807,7 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `{GridName}` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -1010,7 +1010,7 @@ and in the template of the component:
 <!-- end: Angular, WebComponents -->
 ## Complex Data Binding
 
-The `{GridName}` supports binding to complex objects (including nesting deeper than one level) through a "path" of properties in the data record.
+The `Grid` supports binding to complex objects (including nesting deeper than one level) through a "path" of properties in the data record.
 
 Take a look at the following data model:
 ```typescript
@@ -1089,7 +1089,7 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- end: Angular -->
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{GridName}` is to use a custom body template for the column. Generally, one can:
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` and interpolate those in the template.
 
@@ -1649,7 +1649,7 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ### Working with Flat Data Example
 
-Using code snippets from previous section will result in the following example of `{GridName}`
+Using code snippets from previous section will result in the following example of `Grid`
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -1659,7 +1659,7 @@ Using code snippets from previous section will result in the following example o
 
 ## Keyboard Navigation
 
-Keyboard navigation of the `{GridName}` provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+Keyboard navigation of the `Grid` provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
 
 <!-- Angular -->
 
@@ -1690,7 +1690,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `{GridName}` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1760,7 +1760,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 
 ## API References
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `Cell`
 * `CellTemplateContext`
@@ -1785,7 +1785,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 
 ## Tutorial video
 
-Learn more about creating a {Platform} `{GridName}` in our short tutorial video:
+Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
