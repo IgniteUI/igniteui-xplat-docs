@@ -550,7 +550,6 @@ igc-dockmanager::part(content-pane) {
 `tab-header-more-options-button` | タブ ヘッダーのその他のオプション ボタン。
 `tab-header-close-button` | タブ ヘッダーの閉じるボタン。
 `selected` | 選択状態を示します。`tab-header` および `tab-header-close-button` に適用されます。
-`tab-header-close-button`.
 `hovered` | ホバー状態を示します。`tab-header-close-button` に適用されます。
 `header-title` | タブ ヘッダーのテキスト タイトル。
 `tab-strip-area` | タブ ヘッダーを含むタブ ストリップ領域。
