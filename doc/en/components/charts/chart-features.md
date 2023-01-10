@@ -2,7 +2,7 @@
 title: {Platform} Chart Features | Data Visualization | Infragistics
 _description: Infragistics' {Platform} Chart Features
 _keywords: {Platform} Charts, Features, Infragistics
-mentionedTypes: []
+mentionedTypes: ["FinancialChart", "CategoryChart", "XamDataChart"]
 ---
 # {Platform} Chart Features
 
@@ -142,4 +142,7 @@ Use trendlines to identify a trend or find patterns in your data. There are many
 
 ## API References
 
- - `Grid`
+ - `CategoryChart`
+ - `XamDataChart`
+ - `FinancialChart`
+

@@ -34,9 +34,16 @@ You can find more information about related chart features in these topics:
 
 ## API References
 
-The following is a list of API members mentioned in the above sections:
+The `CategoryChart` and `FinancialChart` components share the following API properties:
 
-- `CategoryChart`
-- `XamDataChart`
-- `FinancialChart`
-- `TrendlineType`
+- `TrendLineBrushes`
+- `TrendLinePeriod`
+- `TrendLineThickness`
+- `TrendLineType`
+
+In the `XamDataChart` component, most types of series have the following API properties:
+
+- `TrendLineBrush`
+- `TrendLinePeriod`
+- `TrendLineThickness`
+- `TrendLineType`
