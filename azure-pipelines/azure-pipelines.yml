@@ -63,13 +63,13 @@ stages:
         verbose: false
         customCommand: ci
 
-    - task: Npm@1
-      displayName: 'Build WebComponents'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
-        customCommand: 'run buildWebComponents'
+#    - task: Npm@1
+#      displayName: 'Build WebComponents'
+#      inputs:
+#        command: custom
+#        workingDir: '$(Build.SourcesDirectory)'
+#        verbose: false
+#        customCommand: 'run buildWebComponents'
 
     - task: Npm@1
       displayName: 'Build WebComponents $(buildType) en'
@@ -79,13 +79,13 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
-    - task: NuGetCommand@2
-      displayName: 'Package WebComponents en'
-      inputs:
-        command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-        versioningScheme: byBuildNumber
-        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
+#    - task: NuGetCommand@2
+#      displayName: 'Package WebComponents en'
+#      inputs:
+#        command: pack
+#        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+#        versioningScheme: byBuildNumber
+#        buildProperties: 'langFolder=en;type=$(buildType);plat=WebComponents'
 
     - task: ArchiveFiles@2
       displayName: 'Package WebComponents en - zip'
@@ -105,13 +105,13 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
 
-    - task: NuGetCommand@2
-      displayName: 'Package Blazor EN'
-      inputs:
-        command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-        versioningScheme: byBuildNumber
-        buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
+#    - task: NuGetCommand@2
+#      displayName: 'Package Blazor EN'
+#      inputs:
+#        command: pack
+#        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+#        versioningScheme: byBuildNumber
+#        buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
 
     - task: ArchiveFiles@2
       displayName: 'Package Blazor en - zip'
@@ -131,13 +131,13 @@ stages:
         verbose: false
         customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
 
-    - task: NuGetCommand@2
-      displayName: 'Package React EN'
-      inputs:
-        command: pack
-        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-        versioningScheme: byBuildNumber
-        buildProperties: 'langFolder=en;type=$(buildType);plat=React'
+#    - task: NuGetCommand@2
+#      displayName: 'Package React EN'
+#      inputs:
+#        command: pack
+#        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+#        versioningScheme: byBuildNumber
+#        buildProperties: 'langFolder=en;type=$(buildType);plat=React'
 
     - task: ArchiveFiles@2
       displayName: 'Package React en - zip'
