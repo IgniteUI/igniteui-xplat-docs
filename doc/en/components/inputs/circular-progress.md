@@ -216,18 +216,6 @@ The following table lists all CSS parts exposed by the Circular Progress:
 | info               | The progress indicator info state.        |
 | success            | The progress indicator success state.     |
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the Circular Progress Indicator's API, refer to the following links:
-* `CircularProgress`
-
-Additional components and/or directives that were used:
-* `CircularGradient`
-* `Button`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 

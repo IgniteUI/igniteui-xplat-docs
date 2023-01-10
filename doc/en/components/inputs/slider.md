@@ -211,9 +211,8 @@ The following sample demonstrates how to style the track fill and thumb parts:
            github-src="inputs/slider/styling">
 </code-view>
 
-
-
 ## API References
+
  - `HidePrimaryLabels`
  - `HideSecondaryLabels`
  - `HideTooltip`

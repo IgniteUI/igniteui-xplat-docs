@@ -270,14 +270,14 @@ igc-step::part(subtitle) {
 }
 ```
 
+<div class="divider--half"></div>
+
 ## API References
 
 * `Stepper`
 * `Step`
 * `Avatar`
 * `Icon`
-
-<div class="divider--half"></div>
 
 
 ## Additional Resources

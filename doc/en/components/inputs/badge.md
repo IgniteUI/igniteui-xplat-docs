@@ -161,13 +161,6 @@ igc-badge::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
-## API Reference
-
-* `Badge`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 

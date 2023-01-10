@@ -229,22 +229,11 @@ Try it in the example below:
 
 The `DateTimeInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
 
-<!-- WebComponents -->
-
 ## API References
 
-* `Input`
-* `MaskInput`
-
-Additional Web Components that were used:
-
-* `Icon`
-
-<!-- end: WebComponents -->
-
-
-## API References
-
+ - `Input`
+ - `MaskInput`
+ - `Icon`
  - `DateParts`
  - `DateTimeInput`
 

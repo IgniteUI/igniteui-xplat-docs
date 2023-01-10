@@ -318,7 +318,7 @@ igc-tree-item::part(active selected) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API References
 
@@ -326,17 +326,6 @@ igc-tree-item::part(active selected) {
 * `TreeItem`
 * `CircularProgress`
 * `Icon`
-
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
-
-## API References
-
- - `TreeItem`
- - `Tree`
-
 
 ## Additional Resources
 

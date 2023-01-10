@@ -508,7 +508,6 @@ The following sample demonstrates the above CSS configuration:
            github-src="scheduling/calendar/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API References
 

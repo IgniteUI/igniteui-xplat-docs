@@ -290,13 +290,7 @@ igc-checkbox::part(indicator checked) {
 }
 ```
 
-<!-- WebComponents -->
 
-## API Reference
-
-* `Checkbox`
-
-<!-- end: WebComponents -->
 
 ## API References
 

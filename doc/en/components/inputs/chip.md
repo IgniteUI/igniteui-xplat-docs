@@ -236,10 +236,6 @@ igc-chip::part(suffix) {
 </code-view>
 
 
-## API Reference
-
-* `Chip`
-
 <div class="divider--half"></div>
 
 ## API References
