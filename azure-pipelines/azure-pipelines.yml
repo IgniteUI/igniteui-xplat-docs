@@ -4,9 +4,9 @@ trigger:
     - vnext
     - master
   paths:
-  exclude:
-  - jp/*
-  - kr/*
+    exclude:
+    - jp/*
+    - kr/*
 pr:
   branches:
     exclude:
