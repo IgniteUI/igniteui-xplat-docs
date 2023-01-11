@@ -37,7 +37,9 @@ The `RowEditable` property enables you to specify the following options:
 
 In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
 
-[Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**.
+<!-- 
+[Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**. 
+-->
 
 - **Cell and Batch Editing** - in this scenario every singe modification of each cell is preserved separately and undo/ redo operations are available on cell level;
 - **Row and Batch Editing** - in this scenario the modifications are preserved on row level so undo/ redo operations will not be working for each cell that is modified but for the bunch of cell from each row.
@@ -179,7 +181,6 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- Angular -->
 
 * [{ComponentTitle} Overview](overview.md)
-* [Build CRUD operations](../general/how-to/how-to-perform-crud.md)
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
