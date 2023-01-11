@@ -3,6 +3,10 @@ trigger:
     include:
     - vnext
     - master
+  paths:
+  exclude:
+  - jp/*
+  - kr/*
 pr:
   branches:
     exclude:
