@@ -12,6 +12,12 @@ pr:
     exclude:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 
+parameters:
+- name: isVerbose
+  displayName: 'Get verbose output from steps - where configurable'
+  type: boolean
+  default: false
+
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
@@ -55,7 +61,7 @@ stages:
       inputs:
         command: custom
         workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
+        verbose: ${{ parameters.isVerbose }}
         customCommand: 'cache clean --force'
       continueOnError: true
 
@@ -64,7 +70,7 @@ stages:
       inputs:
         command: custom
         workingDir: '$(Build.SourcesDirectory)'
-        verbose: false
+        verbose: ${{ parameters.isVerbose }}
         customCommand: ci
 
 #    - task: Npm@1
@@ -72,40 +78,40 @@ stages:
 #      inputs:
 #        command: custom
 #        workingDir: '$(Build.SourcesDirectory)'
-#        verbose: true
+#        verbose: ${{ parameters.isVerbose }}
 #        customCommand: 'run buildWebComponents'
 
-#    - task: Npm@1
-#      displayName: 'Build WebComponents $(buildType) en'
-#      inputs:
-#        command: custom
-#        workingDir: '$(Build.SourcesDirectory)'
-#        verbose: true
-#        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) en'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
 
-#    - task: ArchiveFiles@2
-#      displayName: 'Package WebComponents en - zip'
-#      inputs:
-#        verbose: true
-#        # dist\$plat$\$langFolder$\_site
-#        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
-#        includeRootFolder: false
-#        archiveType: 'zip'
-#        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
-#        replaceExistingArchive: true
+    - task: ArchiveFiles@2
+      displayName: 'Package WebComponents en - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
+        replaceExistingArchive: true
 
     - task: Npm@1
       displayName: 'Build WebComponents $(buildType) jp'
       inputs:
         command: custom
         workingDir: '$(Build.SourcesDirectory)'
-        verbose: true
+        verbose: ${{ parameters.isVerbose }}
         customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package WebComponents jp - zip'
       inputs:
-        verbose: true
+        verbose: ${{ parameters.isVerbose }}
         # dist\$plat$\$langFolder$\_site
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/jp/_site
         includeRootFolder: false
@@ -113,13 +119,13 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_jp_$(buildType).zip
         replaceExistingArchive: true
 
-#    - task: Npm@1
-#      displayName: 'Build Blazor EN'
-#      inputs:
-#        command: custom
-#        workingDir: '$(Build.SourcesDirectory)'
-#        verbose: true
-#        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
+    - task: Npm@1
+      displayName: 'Build Blazor EN'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=en'
 
 #    - task: NuGetCommand@2
 #      displayName: 'Package Blazor EN'
@@ -129,29 +135,28 @@ stages:
 #        versioningScheme: byBuildNumber
 #        buildProperties: 'langFolder=en;type=$(buildType);plat=Blazor'
 
-#    - task: ArchiveFiles@2
-#      displayName: 'Package Blazor en - zip'
-#      inputs:
-#        verbose: true
-#        # dist\$plat$\$langFolder$\_site
-#        rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/en/_site
-#        includeRootFolder: false
-#        archiveType: 'zip'
-#        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_en_$(buildType).zip
-#        replaceExistingArchive: true
+    - task: ArchiveFiles@2
+      displayName: 'Package Blazor en - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_en_$(buildType).zip
+        replaceExistingArchive: true
 
     - task: Npm@1
       displayName: 'Build Blazor JP'
       inputs:
         command: custom
         workingDir: '$(Build.SourcesDirectory)'
-        verbose: true
+        verbose: ${{ parameters.isVerbose }}
         customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package Blazor jp - zip'
       inputs:
-        verbose: true
+        verbose: ${{ parameters.isVerbose }}
         # dist\$plat$\$langFolder$\_site
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/jp/_site
         includeRootFolder: false
@@ -160,52 +165,48 @@ stages:
         replaceExistingArchive: true
 
     - task: Npm@1
+      displayName: 'Build React EN'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
+
+    - task: NuGetCommand@2
+      displayName: 'Package React EN'
+      inputs:
+        command: pack
+        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
+        versioningScheme: byBuildNumber
+        buildProperties: 'langFolder=en;type=$(buildType);plat=React'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package React en - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/en/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
+        replaceExistingArchive: true
+
+    - task: Npm@1
       displayName: 'Build React JP'
       inputs:
         command: custom
         workingDir: '$(Build.SourcesDirectory)'
-        verbose: true
+        verbose: ${{ parameters.isVerbose }}
         customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
 
     - task: ArchiveFiles@2
       displayName: 'Package React jp - zip'
       inputs:
-        verbose: true
-        # dist\$plat$\$langFolder$\_site
+        verbose: ${{ parameters.isVerbose }}
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/jp/_site
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
         replaceExistingArchive: true
-
-#    - task: Npm@1
-#      displayName: 'Build React EN'
-#      inputs:
-#        command: custom
-#        workingDir: '$(Build.SourcesDirectory)'
-#        verbose: true
-#        customCommand: 'run build-$(buildType) -- --plat=React --lang=en'
-
-#    - task: NuGetCommand@2
-#      displayName: 'Package React EN'
-#      inputs:
-#        command: pack
-#        packagesToPack: '$(Build.SourcesDirectory)\$(component).nuspec'
-#        versioningScheme: byBuildNumber
-#        buildProperties: 'langFolder=en;type=$(buildType);plat=React'
-
-#    - task: ArchiveFiles@2
-#      displayName: 'Package React en - zip'
-#      inputs:
-#        verbose: true
-#        # dist\$plat$\$langFolder$\_site
-#        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/en/_site
-#        includeRootFolder: false
-#        archiveType: 'zip'
-#        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
-#        replaceExistingArchive: true
-
-
 
 #    - task: PublishBuildArtifacts@1
 #      displayName: 'Publish Artifacts'
