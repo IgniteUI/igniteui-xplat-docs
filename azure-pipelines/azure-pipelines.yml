@@ -160,6 +160,24 @@ stages:
         replaceExistingArchive: true
 
     - task: Npm@1
+      displayName: 'Build React JP'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: true
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package React jp - zip'
+      inputs:
+        verbose: true
+        # dist\$plat$\$langFolder$\_site
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/jp/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
+        replaceExistingArchive: true
+    - task: Npm@1
       displayName: 'Build React EN'
       inputs:
         command: custom
@@ -186,24 +204,7 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_en_$(buildType).zip
         replaceExistingArchive: true
 
-    - task: Npm@1
-      displayName: 'Build React JP'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: true
-        customCommand: 'run build-$(buildType) -- --plat=React --lang=jp'
 
-    - task: ArchiveFiles@2
-      displayName: 'Package React jp - zip'
-      inputs:
-        verbose: true
-        # dist\$plat$\$langFolder$\_site
-        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/jp/_site
-        includeRootFolder: false
-        archiveType: 'zip'
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
-        replaceExistingArchive: true
 
 #    - task: PublishBuildArtifacts@1
 #      displayName: 'Publish Artifacts'
