@@ -1,0 +1,68 @@
+parameters:
+  - name: isVerbose
+    default: false
+  - name: buildType
+  - name: component
+  - name: platform
+  - name: language
+
+jobs:
+- job: BuildDocs
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSource: 'spec'
+      versionSpec: '16.x'
+  - script: echo '$(Build.BuildNumber)'
+    displayName: 'Display Build Number'
+
+  - script: echo '$(buildType)'
+    displayName: 'Display Build Type'
+
+  - task: RegexReplace@3
+    displayName: 'replace environment in doc/docfx'
+    inputs:
+      InputSearchPattern: |
+        doc\**\*.*
+        docfx\**\*.*
+      FindRegex: 'environment:dvDemosBaseUrl'
+      ReplaceRegex: 'environment:demosBaseUrl'
+      UseUTF8: true
+      UseRAW: true
+    enabled: false
+
+  - task: Npm@1
+    displayName: 'npm cache clean'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'cache clean --force'
+    continueOnError: true
+
+  - task: Npm@1
+    displayName: 'npm ci'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: ci
+
+  - task: Npm@1
+    displayName: 'Build WebComponents $(buildType) en'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
+
+  - task: ArchiveFiles@2
+    displayName: 'Package WebComponents en - zip'
+    inputs:
+      verbose: ${{ parameters.isVerbose }}
+      # dist\$plat$\$langFolder$\_site
+      rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
+      replaceExistingArchive: true
