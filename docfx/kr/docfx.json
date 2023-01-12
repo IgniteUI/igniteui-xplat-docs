@@ -22,7 +22,7 @@
             }
         ],
         "resource": [{
-            "files": ["images/**"],
+            "files": ["images/**", "web.config"],
             "exclude": ["obj/**", "_site/**"]
         }],
         "overwrite": [{
