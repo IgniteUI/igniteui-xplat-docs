@@ -101,9 +101,6 @@ igc-dialog::part(footer) {
            github-src="notifications/dialog/styling">
 </code-view>
 
-## API リファレンス
-
-* `Dialog`
 
 <div class="divider--half"></div>
 

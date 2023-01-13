@@ -485,7 +485,11 @@ public PivotSalesData()
 * [{Platform} ピボット グリッドの機能](features.md)
 * [{Platform} ピボット グリッド カスタム集計](remote-operations.md) -->
 
+## その他のリソース
+
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})
 * [{ProductName} **GitHub (英語)**]({GithubLink})
+
+

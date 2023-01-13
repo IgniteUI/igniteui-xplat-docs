@@ -230,22 +230,11 @@ input.spinDelta = spinDelta;
 
 `DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
-* `Input`
-* `MaskInput`
-
-使用したその他の WEB コンポーネント:
-
-* `Icon`
-
-<!-- end: WebComponents -->
-
-
-## API リファレンス
-
+ - `Input`
+ - `MaskInput`
+ - `Icon`
  - `DateParts`
  - `DateTimeInput`
 

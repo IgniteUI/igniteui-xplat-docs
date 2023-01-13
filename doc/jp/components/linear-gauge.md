@@ -936,16 +936,16 @@ ModuleManager.register(
 ```
 <div class="divider--half"></div>
 
-## その他のリソース
-
-その他のゲージ タイプの詳細については、以下のトピックを参照してください。
-
-- [ブレット グラフ](bullet-graph.md)
-- [ラジアル ゲージ](radial-gauge.md)
-
 ## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 
 - `XamLinearGauge`
 - `XamLinearGraphRange`
+
+## その他のリソース
+
+その他のゲージ タイプの詳細については、以下のトピックを参照してください。
+
+- [ブレット グラフ](bullet-graph.md)
+- [ラジアル ゲージ](radial-gauge.md)
