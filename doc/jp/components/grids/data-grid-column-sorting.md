@@ -124,7 +124,7 @@ grid1.sortDescriptions.add(colSortDesc);
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `HeaderClickAction`
  - `SortByMultipleColumnsTriState`

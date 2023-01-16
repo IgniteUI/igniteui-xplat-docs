@@ -2,6 +2,7 @@
 title: {Platform} Charts & Graphs Library | {ProductName}
 _description: {ProductName} Charts & Graphs is an extensive library of data visualizations that enable stunning, interactive charts for your web and mobile apps. Try for FREE.
 _keywords: {Platform} Charts, Chart, Infragistics
+mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart"]
 ---
 # {Platform} Charts & Graphs Overview
 
@@ -329,3 +330,12 @@ If you are considering any other {Platform} Charts on the market, here are a few
 - We offer the world’s first, and only, end-to-end comprehensive design to code platform for UX Designers, Visual Designers, and Developers that will generate pixel-perfect Angular controls from Sketch designs. With Indigo.Design, everything you craft in Sketch from our Indigo Design System matches to our Ignite UI for Angular controls.
 <!-- end: Angular -->
 
+
+## API References
+
+All types of chart types mentioned in this topic are implemented in these API components:
+
+ - `CategoryChart`
+ - `XamDataChart`
+ - `FinancialChart`
+ - `Treemap`

@@ -98,7 +98,7 @@ _language: ja
 - [スプライン チャート](spline-chart.md)
 - [シェープ チャート](shape-chart.md)
 
-## API メンバー
+## API リファレンス
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 

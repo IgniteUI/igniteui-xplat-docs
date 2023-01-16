@@ -390,7 +390,7 @@ connectedCallback() {
 }
 ```
 
- ## API Members
+## API References
 
  - `Button`
  - `DataGridToolbar`

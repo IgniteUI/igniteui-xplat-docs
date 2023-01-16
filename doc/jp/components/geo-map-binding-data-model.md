@@ -404,7 +404,7 @@ createPolylineSeries(flight: any)
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ColorMemberPath`
  - `GeographicContourLineSeries`

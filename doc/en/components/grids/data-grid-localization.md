@@ -152,7 +152,7 @@ This is the full list of strings to localize the grid.
 - NoMatches
 <!-- end: React, WebComponents -->
 
- ## API Members
+## API References
 
  - `ActualDataSource`
  - `SetCustomizedStringAsync`

@@ -118,7 +118,7 @@ ARIA 属性
 </div>
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Grid`
  - `UseAccessibility`

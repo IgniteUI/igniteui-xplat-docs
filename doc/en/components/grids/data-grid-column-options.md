@@ -94,7 +94,7 @@ this.grid.headerClickAction = HeaderClickAction.SortByOneColumnOnly;
 </IgbDataGrid>
 ```
 
-## API Members
+## API References
 
  - `HeaderClickAction`
  - `IsColumnOptionsEnabled`

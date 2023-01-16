@@ -190,11 +190,13 @@ function transformCodeRefs(options: any) {
 
         let memberHasCharDot = memberName.includes(".", 0);
         let memberHasCharSpace = memberName.includes(" ");
+        let memberHasInlineCode = memberName.includes("=") || memberName.includes(":") || memberName.includes("&") || memberName.includes("{");
 
         if (memberName == "") {
             transformWarning("found empty API member");
         }
-        if (memberHasCharSpace && !memberHasCharDot) {
+
+        if (memberHasCharSpace && !memberHasCharDot && !memberHasInlineCode) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
             transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
@@ -489,11 +491,16 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
             // console.log('--- replaceVariables \n' + nodeValue);
 
             // removing variables in metadata so we can extract a list of shared components without parting errors
-            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
-            for (const v of variables) {
-                var r = new RegExp(v, "gm");
-                nodeValue = nodeValue.replace(r, "");
-            }
+            // var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
+            // for (const v of variables) {
+            //     var r = new RegExp(v, "gm");
+            //     nodeValue = nodeValue.replace(r, "");
+            // }
+
+            // removing all variables in metadata so we can extract a list of shared components without parting errors
+            var r = new RegExp("\{[a-zA-Z]*\}", "gm");
+            nodeValue = nodeValue.replace(r, "");
+
             // cleanup of metadata
             nodeValue = nodeValue.replace(new RegExp("  ", "gm"), " ");
             nodeValue = nodeValue.replace(new RegExp(", ,", "gm"), "");
@@ -1410,6 +1417,7 @@ export class MarkdownTransformer {
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
             .use(transformDocPlaceholders, options, false) // keeping vars in metadata
+            // .use(transformDocPlaceholders, options, true) // removing vars in metadata
             .use(getFrontMatterTypes, options, filePath)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)
@@ -1768,7 +1776,7 @@ export class MarkdownTransformer {
 
         if (newApiContent.trim() !== '') {
             if (orgApiContent === '') {
-                newApiContent = '\n' + '## API Members \n' + newApiContent;
+                newApiContent = '\n' + '## API References \n' + newApiContent;
                 fileContent += newApiContent;
             } else {
                 fileContent = fileContent.replace(orgApiContent, newApiContent);
@@ -2171,7 +2179,7 @@ class MarkdownSection {
 
     public withMetadata() { return this.content.indexOf('---') === 0; }
     public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
-    public withApiList() { return this.content.indexOf('## API Members') === 0; }
+    public withApiList() { return this.content.indexOf('## API References') === 0; }
     public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
 
     public withParagraphs() {

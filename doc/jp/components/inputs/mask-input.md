@@ -116,33 +116,17 @@ IgcMaskInput は、特定のマスクが適用されたときにフォームに�
 - マスクされた入力は、常に**テキスト**型の入力であるため、_type_ 属性を公開しません。
 - 元に戻す / やり直しの動作は現在サポートされていません。
 
-<!-- WebComponents -->
 
 ## API リファレンス
 
 * `Input`
 * `MaskInput`
-
-使用したその他の WEB コンポーネント:
-
 * `Icon`
 * `Radio`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
 
-### その他のリソース
+## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

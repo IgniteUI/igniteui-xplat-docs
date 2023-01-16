@@ -115,33 +115,17 @@ The `MaskInput` component derives from the `Input` component, so it exposes all 
 - The masked input does not expose a _type_ attribute since it is always an input of type **text**.
 - Undo/redo behavior is currently unsupported.
 
-<!-- WebComponents -->
 
 ## API References
 
 * `Input`
 * `MaskInput`
-
-Additional Web Components that were used:
-
 * `Icon`
 * `Radio`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
 
-### Additional Resources
+## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

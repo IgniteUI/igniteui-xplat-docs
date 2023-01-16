@@ -6,10 +6,7 @@ mentionedTypes: []
 ---
 # Getting Started: Build a Blazor Hybrid App with .NET MAUI
 
-This topic provides step-by-step instructions for creating .NET MAUI Blazor applications with Ignite UI for Blazor using Visual Studio 2022 Preview.
-
-> [!NOTE]
-> .NET Multi-platform App UI (.NET MAUI) is currently in preview. This content relates to a pre-release product that may be substantially modified before it's released. Infragistics makes no warranties, express or implied, with respect to the information provided here.
+This topic provides step-by-step instructions for creating .NET MAUI Blazor applications with Ignite UI for Blazor using Visual Studio 2022.
 
 ### What is Blazor Hybrid?
 
@@ -24,8 +21,8 @@ But in order to be able to use it for your apps, you need .NET MAUI.
 
 ## Prerequisites
 
-* .NET SDK 6.0.101 or above
-* Visual Studio 2022 Preview 17.1 or above, with the following workloads:
+* .NET SDK 7 or above
+* Visual Studio 2022 17.4 or above, with the following workloads:
     - Mobile development with .NET
     - ASP.NET and Web Development
 
@@ -33,7 +30,7 @@ But in order to be able to use it for your apps, you need .NET MAUI.
 
 The steps below describe how to create a new .NET MAUI Blazor project. If you want to add Ignite UI for Blazor to an existing application, go to the [**Install Ignite UI for Blazor Package**](#install-ignite-ui-for-blazor) section.
 
-Start Visual Studio 2022 Preview and click **Create a new project** on the start page, select the **.NET MAUI Blazor App (Preview)** template, and click **Next**.
+Start Visual Studio 2022 and click **Create a new project** on the start page, select the **.NET MAUI Blazor App** template, and click **Next**.
 
 <img src="../images/general/new-blazor-project-maui.jpg" />
 

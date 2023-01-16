@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
+           github-src="{ComponentSample}/cell-selection-mode"
            alt="{Platform} {ComponentTitle}  選択の例">
 </code-view>
 
@@ -177,7 +178,8 @@ TO DO
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
+           github-src="{ComponentSample}/custom-context-menu">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -234,5 +236,5 @@ import 'core-js/es7/array';
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -251,7 +251,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 this.spreadsheet.zoomLevel = 200;
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ActiveCell`
  - `ActiveSelection`

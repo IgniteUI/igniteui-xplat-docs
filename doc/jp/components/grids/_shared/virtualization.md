@@ -4,7 +4,7 @@ _description: {ProductName} の仮想化ディレクティブは、大規模な�
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-mentionedTypes: [{ComponentTitle}, 'Virtualization']
+mentionedTypes: [{ComponentApiMembers}, 'Virtualization']
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -74,5 +74,5 @@ _language: ja
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName}  **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName}  **GitHub (英語)**]({GithubLink})

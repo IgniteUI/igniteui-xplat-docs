@@ -45,7 +45,7 @@ After setting the `ActivationMode` property of the grid to `Cell`, this will ena
 - <b>Ctrl + Home</b>: Move to the top-left cell in the grid.
 - <b>Ctrl + End</b>: Move to the bottom-right cell in the grid.
 
- ## API Members
+## API References
 
  - `ActivationMode`
  - `Cell`

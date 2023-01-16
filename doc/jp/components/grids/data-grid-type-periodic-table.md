@@ -21,6 +21,6 @@ _language: ja
            github-src="grids/data-grid/type-periodic-table">
 </code-view>
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

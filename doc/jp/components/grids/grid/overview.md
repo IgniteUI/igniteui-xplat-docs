@@ -2,21 +2,57 @@
 title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 _language: ja
 ---
 
+<style>
+    .sample-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sample-column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 25%;
+        align-content: flex-start;
+        min-width: 280px;
+    }
+
+    .tabbar-wrapper {
+        width: inherit;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .tabbar-wrapper > p {
+        padding-right: 20px
+    }
+</style>
+
 # {Platform} Grid 概要と構成
 
- {Platform} `{GridName}` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。
-
 <div class="sample-content">
-    <img class="b-lazy responsive-img"
-        src="../../../images/general/landing-grid-page.png"
-        data-src="../../../images/general/landing-grid-page.png"
-        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-        alt="Grid"
-        title="Grid">
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <p> {Platform} `Grid` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。</p>
+        </div>
+    </article>
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <div class="tab-content">
+                <img class="b-lazy responsive-img"
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+                    alt="Grid"
+                    title="Grid">
+            </div>
+        </div>
+    </article>
 </div>
 
 ## {Platform} Grid の例
@@ -26,6 +62,7 @@ _language: ja
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid の例">
 </code-view>
 
@@ -148,9 +185,13 @@ constructor() {
 
 `AutoGenerate` プロパティは、データ ソース フィールドに基づいてグリッドの `Column` コンポーネントを自動生成するようにグリッドに指示します。列の適切なデータ型の決定を試みます。それ以外の場合、開発者は列およびデータ ソース フィールドへのマッピングを明示的に定義する必要があります。
 
+<!-- Angular -->
+
 ## Bootstrap グリッドの定義
 
 {ProductName} には、Flex に基づくレイアウト システムのような強力なブートストラップ グリッドが含まれています。今日の最新のアプリケーションは、レスポンシブ Web デザインのアプローチに従うことが期待されています。つまり、デバイスのサイズに基づいて、または単にブラウザーのサイズを変更するだけで、HTML 要素のレイアウトを適切に調整できます。ブートストラップ グリッド レイアウトはこれまで最も使用されていたアプローチでしたが、CSS グリッドのような Flex に基づくレイアウト システムは、どのブラウザーでも機能するため、より一般的になりました。{ProductName} ディレクティブにより、コンテンツ / テキストの折り返し、両端揃え、配置など、垂直方向と水平方向のフローが可能になります。{ProductName} は、CSS を使用したレスポンシブ レイアウトをサポートし、サイズ変更時のグリッドの動作に究極の柔軟性を提供します。
+
+<!-- end: Angular -->
 
 ## 編集可能な {Platform} グリッド
 
@@ -180,30 +221,33 @@ constructor() {
     </igx-paginator>
 </igx-grid>
 ```
+
 ```html
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
     <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
-    <igc-paginator per-page="6"></igc-paginator>
 </igc-grid>
 ```
+
 ```typescript
 constructor() {
     var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-    var trackProgress = this.trackProgress = document.getElementById('trackProgress') as IgcColumnComponent;
 
     this._bind = () => {
         grid1.data = this.data;
-        trackProgress.bodyTemplate = this.trackProgressCellTemplate;
     }
 
     this._bind();
 }
+```
 
-public trackProgressCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`<igc-linear-bar stripped="false" max="100" value="${ctx.cell.value}"></igc-linear-bar>`;
-}
+```razor
+<IgbGrid AutoGenerate=false AllowFiltering=true>
+    <IgbColumn Field="Name" Sortable=true />
+    <IgbColumn Field="AthleteNumber" Sortable=true Header="Athlete Number" Filterable=false/>
+    <IgbColumn Field="TrackProgress" Header="Track Progress" Filterable=false />
+</IgbGrid>
 ```
 
 <!-- Angular -->
@@ -264,6 +308,23 @@ public formatUppercase(value: string) {
 }
 ```
 
+```razor
+<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" />
+
+//In JavaScript:
+igRegisterScript("UpperCaseTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;
+
+    return html`${this.formatUppercase(ctx.column.field)}`;
+
+}, false)
+
+function formatUppercase(value) {
+    return value.toUpperCase();
+}
+```
+
 >[!NOTE]
 >グループ化 / 移動機能と一緒にヘッダー テンプレートを使用すると、列ヘッダー領域はドラッグ可能になりヘッダー テンプレートのカスタム要素部分にドラッグ不可としてマークするまでアクセスできません。以下の例をご覧ください。
 
@@ -277,9 +338,11 @@ public formatUppercase(value: string) {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="productName" field="ProductName" header="Product Name" groupable="true" has-summary="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var productName = this.productName = document.getElementById('productName') as IgcColumnComponent;
@@ -301,6 +364,22 @@ public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 public toggleSummary(column: IgxColumnComponent) {
 }
 ```
+
+```razor
+<IgbColumn Field="ProductName" Header="Product Name" Groupable=true HasSummary=true HeaderTemplateScript="ProductNameHeaderTemplate" />
+
+//In JavaScript:
+igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
+
+    var html = window.igTemplating.html;
+
+    return html`
+        <div class="text">${ctx.cell.column.field}</div>
+        <igc-icon [attr.draggable]="false">functions</igc-icon>
+    `;
+}, false)
+```
+
 `Draggable` 属性を false に設定して追加しています。
 
 ### セル テンプレート
@@ -337,6 +416,21 @@ public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public formatTitleCase(value: string) {
+}
+```
+
+```razor
+<IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`${this.formatTitleCase(ctx.cell.value)}`;
+}, false);
+
+function formatTitleCase(value) {
+    return value;
 }
 ```
 
@@ -403,6 +497,37 @@ public formatTitleCase(value: string) {
 }
 ```
 
+```razor
+<IgbGrid AutoGenerate=false>
+    <IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate" />
+    <IgbColumn Field="Subscription" BodyTemplateScript="SubscriptionCellTemplate" />
+</IgbGrid>
+
+//In JavaScript:
+igRegisterScript("NameCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+    `;
+}, false);
+
+igRegisterScript("SubscriptionCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
+    `;
+}, false);
+
+function updateValue(value) {
+}
+
+function deleteRow(rowId) {
+}
+
+function formatTitleCase(value) {
+}
+```
+
 <!-- Angular -->
 
 `ngModel` を使用して**セル テンプレート**を介してデータを変更する場合、適切な API メソッドを呼び出して、Angular グリッドの基になるデータ コレクションで値が正しく更新されることを確認する必要があります。上記のスニペットでは、`ngModelChange` 呼び出しはグリッドの[編集 API](cell-editing.md#api-を介した編集) を通過し、グリッドの編集パイプラインを通過し、[トランザクション](batch-editing.md) (該当する場合) を適切にトリガーし、[集計](summaries.md)、[選択](selection.md)などの処理を行います。ただし、この `ngModelChange` はユーザーが編集を完了したときだけでなく、セルが変更され、より多くの API  呼び出しが発生します。
@@ -434,9 +559,11 @@ public formatTitleCase(value: string) {
     </ng-template>
 </igx-column>
 ```
+
 ```html
 <igc-column id="price" field="Price" data-type="number" editable="true"></igc-column>
 ```
+
 ```typescript
 constructor() {
     var price = this.price = document.getElementById('price') as IgcColumnComponent;
@@ -458,6 +585,25 @@ public priceCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public updateValue(value: number) {
+}
+```
+
+```razor
+<IgbColumn Field="Price" Editable=true DataType="GridColumnDataType.Number" InlineEditorTemplateScript="PriceCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("PriceCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+
+    return html`
+        <label>
+            Enter the new price tag
+        </label>
+        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+    `;
+}, false);
+
+function updateValue(value) {
 }
 ```
 
@@ -492,7 +638,7 @@ public smallView: TemplateRef<any>;
 ....
 
 const column = this.grid.getColumnByName("User");
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 column.bodyTemplate = this.smallView;
 ```
@@ -504,7 +650,7 @@ column.bodyTemplate = this.smallView;
 ```
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
-// Return the appropriate template based on some conditiion.
+// Return the appropriate template based on some condition.
 // For example saved user settings, viewport size, etc.
 user.bodyTemplate = this.smallView;
 
@@ -520,6 +666,37 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
         <div class="user-details-small">${ ctx.cell.value }</div>
     `;
 }
+```
+
+```razor
+
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;
+        // Return the appropriate template based on some condition.
+        // For example saved user settings, viewport size, etc.
+        column.BodyTemplateScript = "NormalViewTemplate";
+    }
+}
+
+//In JavaScript:
+igRegisterScript("NormalViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details">${ctx.cell.value}</div>
+        <user-details-component></user-details-component>
+    `;
+}, false);
+
+igRegisterScript("SmallViewTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div class="user-details-small" style="color: blue">${ctx.cell.value}</div>
+    `;
+}, false);
 ```
 
 列プロパティもグリッドで列が初期化されるときに発生される `ColumnInit` イベントのコードで設定できます。
@@ -538,6 +715,21 @@ public initColumns(column: IgcGridColumn) {
     if (column.field === 'ProductName') {
         column.sortable = true;
         column.editable = true;
+    }
+}
+```
+
+```razor
+<IgbGrid ColumnInit=OnColumnInit />
+
+@code {
+    public void OnColumnInit(IgbColumnComponentEventArgs args)
+    {
+        IgbColumn column = args.Detail;
+        if(column.Field == "ProductName"){
+            column.Sortable = true;
+            column.Editable = true;
+        }
     }
 }
 ```
@@ -597,13 +789,25 @@ constructor() {
 }
 ```
 
+```razor
+<IgbColumn Field="OrderDate"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+
+<IgbColumn Field="UnitPrice"
+           DataType=GridColumnDataType.Date
+           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+```
+
 `OrderDate` 列は `Format` および `Timezone` プロパティのみに遵守しますが、`UnitPrice` は `DigitsInfo` のみに遵守します。
 
 すべての利用可能な列データ型は、公式の[列タイプ トピック](column-types.md#デフォルトのテンプレート)にあります。
 
+<!-- Angular, WebComponents -->
+
 ## グリッド データの構造
 
-`{GridName}` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
+`Grid` は**フラット データ**とネストされた **POJO (Plain old Java objects)** を処理します。描画に固有のデータ構造はフォームにあります。
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -645,6 +849,7 @@ const POJO = [{
 
 >`AutoGenerate` 列を使用する場合、**データ キーが同一である必要があります**。
 
+<!-- end: Angular, WebComponents -->
 
 <!-- Angular, WebComponents -->
 ## グリッドのデータ バインディング
@@ -804,7 +1009,7 @@ export class MyComponent implements OnInit {
 <!-- end: Angular, WebComponents -->
 ## 複雑なデータ バインディング
 
-`{GridName}` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
+`Grid` は、データ レコード内のプロパティのパスを介した複合オブジェクト (1 レベルより深いネストを含む) へのバインドをサポートします。
 
 次のデータ モデルを見てください。
 ```typescript
@@ -824,15 +1029,43 @@ interface AminoAcid {
     }
 }
 ```
+
+```razor
+public class AminoAcid
+{
+    public string Name { get; set; }
+    public AminoAbbreviation Abbreviation { get; set; }
+    public AminoWeight Weight { get; set; }
+}
+
+public class AminoAbbreviation
+{
+    public string Short { get; set; }
+    public string Long { get; set; }
+}
+
+public class AminoWeight
+{
+    public double Molecular { get; set; }
+    public double Residue { get; set; }
+}
+```
+
 たとえば、グリッド内の特定のアミノ酸の重みを表示するには、次のスニペットで十分です。
 
 ```html
 <igx-column field="weight.molecular"></igx-column>
 <igx-column field="weight.residue"></igx-column>
 ```
+
 ```html
 <igc-column field="weight.molecular"></igc-column>
 <igc-column field="weight.residue"></igc-column>
+```
+
+```razor
+<IgbColumn Field="Weight.Molecular" />
+<IgbColumn Field="Weight.Residue" />
 ```
 
 <!-- Angular -->
@@ -847,12 +1080,13 @@ interface AminoAcid {
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
+           github-src="{GridSample}/binding-nested-data-2">
 </code-view>
 
 <!-- end: Angular -->
 
-`{GridName}` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
+`Grid` で複雑なデータをバインドまたは複合データ (複数の列から) を可視化する別の方法は、列にカスタム ボディ テンプレートを使用することです。通常、以下のことができます。
     - ネストされたデータを含むセルの `value` を使用します。
     - `row.data` にアクセスするためにテンプレートの `cell` オブジェクトを使用します。それから、セルから任意の値 (`cell.row.data[field]` や `cell.row.data[field][nestedField]` など) を取得します。
 
@@ -907,6 +1141,32 @@ public getWeight(rowId: number){
 }
 ```
 
+```razor
+<IgbColumn Field="Abbreviation.Long" BodyTemplateScript="AbbreviationLongCellTemplate"/>
+
+//In JavaScript:
+igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`
+        <div>
+            <div>
+                ${ctx.cell.value}
+                ${this.GetName(ctx.cell)}
+                ${this.GetWeight(ctx.cell)}
+            </div>
+        </div>
+    `;
+}, false);
+
+function GetName(value) {
+
+}
+
+function GetWeight(value) {
+
+}
+```
+
 本文テンプレートを使用して複雑なデータを表示する方法の例を次に示します。以下は使用するデータです。
 
 ```typescript
@@ -949,6 +1209,75 @@ export const EMPLOYEE_DATA = [
     }
 ]
 ```
+
+```razor
+public class EmployeesNestedData : List<EmployeesNestedDataItem>
+{
+    public EmployeesNestedData()
+    {
+        this.Add(new EmployeesNestedDataItem()
+        {
+            Age = 55,
+            Employees = new List<EmployeesNestedDataItem_EmployeesItem>()
+            {
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 43,
+                    Salary = 70000,
+                    Productivity = 80,
+                    City = @"Hamburg",
+                    Country = @"Germany",
+                    Phone = @"609-444-555",
+                    HireDate = @"2011, 6, 3",
+                    ID = 3,
+                    Name = @"Michael Burke",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 29,
+                    Salary = 60000,
+                    Productivity = 80,
+                    City = @"Munich",
+                    Country = @"Germany",
+                    Phone = @"609-333-444",
+                    HireDate = @"2009, 6, 19",
+                    ID = 2,
+                    Name = @"Thomas Anderson",
+                    Title = @"Senior Software Developer"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 31,
+                    Salary = 90000,
+                    Productivity = 80,
+                    City = @"Warasw",
+                    Country = @"Poland",
+                    Phone = @"609-222-205",
+                    HireDate = @"2014, 8, 18",
+                    ID = 11,
+                    Name = @"Monica Reyes",
+                    Title = @"Software Development Team Lead"
+                },
+                new EmployeesNestedDataItem_EmployeesItem()
+                {
+                    Age = 35,
+                    Salary = 70000,
+                    Productivity = 70,
+                    City = @"Koln",
+                    Country = @"Germany",
+                    Phone = @"609-502-525",
+                    HireDate = @"2015, 9, 17",
+                    ID = 6,
+                    Name = @"Roland Mendel",
+                    Title = @"Senior Software Developer"
+                }}
+            });
+        }
+    }
+}
+```
+
 ネスト データをレンダリングする列のカスタム テンプレート。
 
 ```html
@@ -1033,12 +1362,47 @@ public getAge(rowId: number) {
 }
 ```
 
+```razor
+<IgbColumn Header="Employees" Field="Employees" BodyTemplateScript="WebGridNestedDataCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+    const people = ctx.cell.value;
+    if (people != null) {
+        if (people.length === 0) return html``;
+        const person = people[0];
+        return html`
+    <igc-expansion-panel>
+        <h3 slot="title">
+        ${person.Name}
+        </h3>
+        <div class="description">
+            <div>
+                <label for="title">Title</label>
+                <input id='Title' type="text" name="title" value="${person.Title}" style="text-overflow: ellipsis;" />
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input id='Age' type="text" name="title" value="${person.Age}" style="text-overflow: ellipsis;" />
+            </div>
+        </div>
+    </igc-expansion-panel>
+        `;
+    }
+}, false);
+```
+
 以下は、この設定の結果です。
 
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
+           github-src="{GridSample}/binding-nested-data-1">
 </code-view>
 
 ### フラット データの操作の概要
@@ -1065,6 +1429,29 @@ export const DATA: any[] = [
         Region: null
     }
 ]
+```
+
+```razor
+public class CustomersData : List<CustomersDataItem>
+{
+    public CustomersData()
+    {
+        this.Add(new CustomersDataItem()
+        {
+            ID = "ALFKI",
+            CompanyName = "Alfreds Futterkiste",
+            ContactName = "Maria Anders",
+            ContactTitle = "Sales Representative",
+            Address = "Obere Str. 57",
+            City = "Berlin",
+            Region = "East",
+            PostalCode = "12209",
+            Country = "Germany",
+            Phone = "030-0074321",
+            Fax = "030-0076545"
+        });
+    }
+}
 ```
 
 カスタム テンプレート:
@@ -1120,6 +1507,30 @@ public getCity(rowId: number) {
 
 public getPostalCode(rowId: number) {
 }
+```
+
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"
+           BodyTemplateScript="AddressCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    return html`<div class="address-container">
+    <div class="country-city">
+        <span><strong>Country:</strong> ${ctx.cell.row.data.Country}</span>
+        <br>
+        <span><strong>City:</strong> ${ctx.cell.row.data.City}</span>
+    </div>
+    <div class="phone-pscode">
+        <span><strong>Postal Code:</strong> ${ctx.cell.row.data.PostalCode}</span>
+        <br>
+        <span><strong>Phone:</strong> ${ctx.cell.row.data.Phone}</span>
+    </div>
+    <br />
+</div>`;
+}, false);
 ```
 
 上記で定義したテンプレートでは編集操作ができないため、エディター テンプレートが必要であることに注意してください。
@@ -1203,18 +1614,51 @@ public updatePostalCode(rowId: number) {
 }
 ```
 
+```razor
+<IgbColumn Header="Address" Field="Address"
+           Editable="true"
+           InlineEditorTemplateScript="AddressEditCellTemplate" />
+
+//In JavaScript:
+igRegisterScript("AddressEditCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.keyUpHandler = function () {
+        ctx.cell.row.data[window.event.target.id] = window.event.target.value;
+    }
+
+    return html`<div class="address-container--edit">
+    <div>
+        <span><strong>Country:</strong></span>
+        <input id='Country' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Country}"></input>
+        <br>
+        <span><strong>City:</strong></span>
+        <input id='City' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.City}"></input>
+    </div>
+    <div>
+        <span><strong>Postal Code:</strong></span>
+        <input id='PostalCode' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.PostalCode}"></input>
+        <br>
+        <span><strong>Selected:</strong></span>
+        <input id='Phone' onkeyup='keyUpHandler()' value="${ctx.cell.row.data.Phone}"></input>
+    </div>
+    <br>
+</div>`;
+}, false);
+```
+
 ### フラット データの操作の例
 
-前のセクションのコード スニペットを使用すると、次の `{GridName}` の例になります。
+前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
+           github-src="{GridSample}/binding-composite-data">
 </code-view>
 
 ## キーボード ナビゲーション
 
-`{GridName}` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
+`Grid` のキーボード ナビゲーションは、さまざまなキーボード操作をユーザーに提供します。アクセシビリティが向上し、内部の要素 (セル、行、列ヘッダー、ツールバー、フッターなど) を直感的にナビゲートできます。
 
 <!-- Angular -->
 
@@ -1245,7 +1689,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## パフォーマンス (試験中)
 
-`{GridName}` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
+`Grid` のデザインでは、Angular で導入されたイベント結合機能を利用できます。この機能は、インタラクションとレスポンシブの点で **20%** のパフォーマンスを向上します。この機能は、`bootstrapModule` メソッドで `ngZoneEventCoalescing` と `ngZoneRunCoalescing` プロパティを **true** に設定するだけでアプリケーション レベルで有効にできます。
 
 ```typescript
 platformBrowserDynamic()
@@ -1254,7 +1698,7 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen}/discussions) ページでお問い合わせください。
+> これは `IgxGridComponent` の試験中の機能です。これは、グリッドで予期しない動作が発生する可能性があることを意味します。このような動作が発生した場合は、[Github]({GithubLink}/discussions) ページでお問い合わせください。
 
 >[!NOTE]
 > 有効にすると、`IgxGridComponent` に関連しない Angular アプリケーションの他の部分に影響します。
@@ -1285,7 +1729,7 @@ platformBrowserDynamic()
 <!--  Angular -->
 [**Angular**](https://angular.io/) では、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) プラグインのおかげで、ほとんどのスタイルに暗黙的にプレフィックスが付けられます。
 
-ただし、**グリッド レイアウト**にプレフィックスを付けるには、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) **グリッド プロパティ** を `/* autoprefixer grid:on */` コメントで有効にする必要があります。
+ただし、**グリッド レイアウト**にプレフィックスを付けるには、[Autoprefixer](https://www.npmjs.com/package/autoprefixer) **グリッド プロパティ** を ```autoprefixer grid:on``` コメントで有効にする必要があります。
 
 作業を容易にするために、`src/styles.scss` ファイルにコメントを適用してください。
 
@@ -1315,7 +1759,7 @@ platformBrowserDynamic()
 
 ## API リファレンス
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `Cell`
 * `CellTemplateContext`
@@ -1339,7 +1783,7 @@ platformBrowserDynamic()
 
 ## チュートリアル ビデオ
 
-{Platform} `{GridName}` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
+{Platform} `Grid` の作成について詳しくは、このビデオ チュートリアルをご覧ください:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
@@ -1382,5 +1826,5 @@ platformBrowserDynamic()
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -411,6 +411,6 @@ export default class WorldUtils {
     }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `XamGeographicMap`

@@ -69,6 +69,8 @@ constructor() {
 
 高度なフィルタリングは、`AdvancedFilteringExpressionsTree` 入力プロパティに保存される `FilteringExpressionsTree` を生成します。`AdvancedFilteringExpressionsTree` プロパティを使用して、高度なフィルタリングの初期状態を設定できます。
 
+<!-- Angular -->
+
 ```typescript
 ngAfterViewInit(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -96,6 +98,9 @@ ngAfterViewInit(): void {
     this.@@igObjectRef.advancedFilteringExpressionsTree = tree;
 }
 ```
+
+<!-- end: Angular -->
+
 ```typescript
 connectedCallback(): void {
     const tree = new FilteringExpressionsTree(FilteringLogic.And);
@@ -461,7 +466,8 @@ $custom-drop-down: drop-down-theme(
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
+           github-src="{ComponentSample}/advanced-filtering-style">
 </code-view>
 
 >[!NOTE]
@@ -490,5 +496,5 @@ $custom-drop-down: drop-down-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLower})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

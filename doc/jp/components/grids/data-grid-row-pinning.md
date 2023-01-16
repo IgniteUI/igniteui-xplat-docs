@@ -80,6 +80,6 @@ grid1.pinnedItems.add(data[4]);
 ```
 
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

@@ -939,16 +939,17 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
+
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [リニア ゲージ](linear-gauge.md)
 - [ラジアル ゲージ](radial-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

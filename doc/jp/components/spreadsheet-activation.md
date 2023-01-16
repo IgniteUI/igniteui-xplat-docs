@@ -39,7 +39,7 @@ this.spreadsheet.activeWorksheet = this.spreadsheet.workbook.worksheets(1);
 this.spreadsheet.activeCell = new SpreadsheetCell("C5");
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ActiveCell`
  - `ActivePane`

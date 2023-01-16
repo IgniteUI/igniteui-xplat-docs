@@ -465,6 +465,6 @@ Blazor データ グリッドの作成について詳しくは、このチュー
 <!-- - [行のページング](data-grid-row-paging.md) -->
 <!-- end: React -->
 
-## API メンバー
+## API リファレンス
 
  - `Grid`

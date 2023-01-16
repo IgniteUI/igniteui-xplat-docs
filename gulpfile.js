@@ -330,7 +330,7 @@ function verifyApiSections(cb) {
     .pipe(es.map(function(file, fileCallback) {
         var filePath = file.dirname + "\\" + file.basename
         var fileContent = file.contents.toString();
-        var fileHasAPI = fileContent.indexOf(" API Members") > 0;
+        var fileHasAPI = fileContent.indexOf("API References") > 0;
         if (!fileHasAPI) {
             let apiLinks = [];
             let words = fileContent.split(' ');
@@ -356,7 +356,7 @@ function verifyApiSections(cb) {
 
             if (apiLinks.length > 0) {
                 apiLinks.sort();
-                console.log('missing API Section: ' + filePath + "\n ## API Members \n\n - " + apiLinks.join("\n - "));
+                console.log('missing API Section: ' + filePath + "\n## API References \n\n - " + apiLinks.join("\n - "));
             }
 
         }
@@ -379,13 +379,20 @@ function buildTOC(cb) {
     let excludedTopics = [];
     excludedTopics.push('doc/**/obsolete*.md');
     // uncomment these lines to build docs without topics:
+    // excludedTopics.push('doc/**/general*.md');
     // excludedTopics.push('doc/**/general-getting-started.md');
     // excludedTopics.push('doc/**/general-getting-started-*.md');
     // excludedTopics.push('doc/**/general-changelog-dv.md');
+    // excludedTopics.push('doc/**/general-changelog*.md');
     // excludedTopics.push('doc/**/general-nuget-feed.md');
     // excludedTopics.push('doc/**/general-installing-blazor.md');
-    // excludedTopics.push('doc/**/grids/grids.md');
+    // excludedTopics.push('doc/**/general-cli*.md');
+    // excludedTopics.push('doc/**/grids/**/*.md');
     // excludedTopics.push('doc/**/grids/grid/*.md');
+    // excludedTopics.push('doc/**/grids/_shared/*.md');
+    // excludedTopics.push('doc/**/grids/theming.md');
+    // excludedTopics.push('doc/**/grids/grids-header.md');
+    // excludedTopics.push('doc/**/grids/combo/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
@@ -406,6 +413,7 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/scheduling/*.md');
     // excludedTopics.push('doc/**/notifications/*.md');
     // excludedTopics.push('doc/**/themes/*.md');
+    // excludedTopics.push('doc/**/zoomslider-overview.md');
     // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
@@ -416,7 +424,9 @@ function buildTOC(cb) {
         var filePath = file.path.split('\\').join('/');
         var fileLocal = 'doc/' + filePath.split('/doc/')[1];
         // log(fileLocal);
-        excludedFiles.push(fileLocal);
+        if (excludedFiles.indexOf(fileLocal) < 0) {
+            excludedFiles.push(fileLocal);
+        }
         fileCallback(null, file);
     }))
     .on("end", () => {
@@ -439,7 +449,7 @@ function buildTOC(cb) {
         //     log("topics included in toc: " + topic);
         // }
 
-        includedTopics = ['doc/**/*.md'];
+        includedTopics = []; // ['doc/**/*.md'];
         gulp.src(['doc/**/*.md'])
         .pipe(es.map(function(topicFile, topicCallback) {
             var filePath = topicFile.path.split('\\').join('/');
@@ -450,9 +460,14 @@ function buildTOC(cb) {
                     includedInTOC = true;
                 }
             }
-            // excluding topics that are not in TOC but always including shared topics
-            if (!includedInTOC && filePath.indexOf("/_shared/") < 0) {
-                includedTopics.push('!' + fileLocal);
+
+            var isExcludedFile = excludedFiles.indexOf(fileLocal) > 0;
+            var isSharedFile = filePath.indexOf("/_shared/") > 0;
+            // skip topics that are explicitly excluded and include topics that are in TOC or shared topics
+            if (!isExcludedFile) {
+                if (includedInTOC || isSharedFile) {
+                    includedTopics.push(fileLocal);
+                }
             }
 
             topicCallback(null, topicFile);

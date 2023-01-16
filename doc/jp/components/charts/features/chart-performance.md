@@ -601,7 +601,7 @@ this.LineSeries.Resolution = 10;
 - [チャート オーバーレイ](chart-overlays.md)
 - [チャート トレンドライン](chart-trendlines.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

@@ -58,9 +58,11 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 **列移動**機能は各列レベルで有効にできます。つまり、`{ComponentName}` に移動可能な列または移動不可の列の両方を含むことができます。`{ComponentName}` の `Moving` 入力によって制御されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Moving=true></{ComponentSelector}>
@@ -143,9 +145,9 @@ idColumn.move(3);
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
-    <igx-column field="Category"></igx-column>
-    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
+    <igc-column field="Category"></igx-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
 </{ComponentSelector}>
 ```
 ```typescript
@@ -337,5 +339,5 @@ $dark-grid-column-moving-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

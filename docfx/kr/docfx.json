@@ -41,7 +41,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "web.config"
         ],
         "exclude": [
           "obj/**",

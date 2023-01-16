@@ -2,20 +2,56 @@
 title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
 _description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 ---
+
+<style>
+    .sample-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sample-column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 25%;
+        align-content: flex-start;
+        min-width: 280px;
+    }
+
+    .tabbar-wrapper {
+        width: inherit;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .tabbar-wrapper > p {
+        padding-right: 20px
+    }
+</style>
 
 # {Platform} Grid Overview and Configuration
 
-The {Platform} `{GridName}` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.
-
 <div class="sample-content">
-    <img class="b-lazy responsive-img"
-        src="../../../images/general/landing-grid-page.png"
-        data-src="../../../images/general/landing-grid-page.png"
-        data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
-        alt="Grid"
-        title="Grid">
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <p>The {Platform} `Grid` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+        </div>
+    </article>
+    <article class="sample-column">
+        <div class="tabbar-wrapper">
+            <div class="tab-content">
+                <img class="b-lazy responsive-img"
+                    src="../../../images/general/landing-grid-page.png"
+                    data-src="../../../images/general/landing-grid-page.png"
+                    data-srcset="../../../images/general/landing-grid-page.png 480w, ../../../images/general/landing-grid-page.png 768w, ../../../images/general/landing-grid-page.png 1100w"
+                    alt="Grid"
+                    title="Grid">
+            </div>
+        </div>
+    </article>
 </div>
 
 ## {Platform} Grid Example
@@ -25,6 +61,7 @@ In this grid example, you can see how users can do both basic and excel-style fi
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid example">
 </code-view>
 
@@ -147,9 +184,13 @@ The `Id` property is a string value and is the unique identifier of the grid whi
 
 The `AutoGenerate` property tells the grid to auto generate the grid's `Column` components based on the data source fields. It will also try to deduce the appropriate data type for the column if possible. Otherwise, the developer needs to explicitly define the columns and the mapping to the data source fields.
 
+<!-- Angular -->
+
 ## Bootstrap Grid Definition
 
 {ProductName} includes a powerful bootstrap grid like flex-based layout system. Any modern application today is expected to follow a responsive web design approach, meaning it can gracefully adjust layout of HTML elements based on the device size, or from simply resizing the browser. A bootstrap grid layout was the most used approach in the past, but a flex-based layout system like CSS grid has become more popular, as it works in any browser. The {ProductName} Layout Directive allows vertical and horizontal flow, including content / text wrapping, justification, and alignment. The {ProductName} grid supports a responsive layout using CSS, giving you the ultimate flexibility in how the grid behaves on resize.
+
+<!-- end: Angular -->
 
 ## Editable {Platform} Grid
 
@@ -184,16 +225,16 @@ Let's turn the `AutoGenerate` property off and define the columns collection in 
 <igc-grid id="grid1" auto-generate="false" allow-filtering="true">
     <igc-column field="Name" sortable="true" header=" "></igc-column>
     <igc-column field="AthleteNumber" sortable="true" header="Athlete number" filterable="false"></igc-column>
-    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>    
+    <igc-column id="trackProgress" field="TrackProgress" header="Track progress" filterable="false"></igc-column>
 </igc-grid>
 ```
 
 ```typescript
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;   
+    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
 
     this._bind = () => {
-        grid1.data = this.data;        
+        grid1.data = this.data;
     }
 
     this._bind();
@@ -267,7 +308,7 @@ public formatUppercase(value: string) {
 ```
 
 ```razor
-<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" /> 
+<IgbColumn Field="Name" HeaderTemplateScript="UpperCaseTemplate" />
 
 //In JavaScript:
 igRegisterScript("UpperCaseTemplate", (ctx) => {
@@ -329,7 +370,7 @@ public toggleSummary(column: IgxColumnComponent) {
 //In JavaScript:
 igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
 
-    var html = window.igTemplating.html;    
+    var html = window.igTemplating.html;
 
     return html`
         <div class="text">${ctx.cell.column.field}</div>
@@ -469,7 +510,7 @@ igRegisterScript("NameCellTemplate", (ctx) => {
     `;
 }, false);
 
-igRegisterScript("SubscriptionCellTemplate", (ctx) => {    
+igRegisterScript("SubscriptionCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
     return html`
         <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
@@ -684,7 +725,7 @@ public initColumns(column: IgcGridColumn) {
 @code {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
-        IgbColumn column = args.Detail;        
+        IgbColumn column = args.Detail;
         if(column.Field == "ProductName"){
             column.Sortable = true;
             column.Editable = true;
@@ -766,7 +807,7 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `{GridName}` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
@@ -969,7 +1010,7 @@ and in the template of the component:
 <!-- end: Angular, WebComponents -->
 ## Complex Data Binding
 
-The `{GridName}` supports binding to complex objects (including nesting deeper than one level) through a "path" of properties in the data record.
+The `Grid` supports binding to complex objects (including nesting deeper than one level) through a "path" of properties in the data record.
 
 Take a look at the following data model:
 ```typescript
@@ -1042,12 +1083,13 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
+           github-src="{GridSample}/binding-nested-data-2">
 </code-view>
 
 <!-- end: Angular -->
 
-An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `{GridName}` is to use a custom body template for the column. Generally, one can:
+An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
     - use the `value` of the cell, that contains the nested data
     - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` and interpolate those in the template.
 
@@ -1118,7 +1160,7 @@ igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
 }, false);
 
 function GetName(value) {
-    
+
 }
 
 function GetWeight(value) {
@@ -1175,7 +1217,7 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
     public EmployeesNestedData()
     {
         this.Add(new EmployeesNestedDataItem()
-        {            
+        {
             Age = 55,
             Employees = new List<EmployeesNestedDataItem_EmployeesItem>()
             {
@@ -1230,7 +1272,7 @@ public class EmployeesNestedData : List<EmployeesNestedDataItem>
                     ID = 6,
                     Name = @"Roland Mendel",
                     Title = @"Senior Software Developer"
-                }}            
+                }}
             });
         }
     }
@@ -1360,7 +1402,8 @@ And the result from this configuration is:
 
 <code-view style="height:460px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
+           github-src="{GridSample}/binding-nested-data-1">
 </code-view>
 
 ### Working with Flat Data Overview
@@ -1488,7 +1531,7 @@ igRegisterScript("AddressCellTemplate", (ctx) => {
     </div>
     <br />
 </div>`;
-}, false);    
+}, false);
 ```
 
 Keep in mind that with the above defined template you will not be able to make editing operations, so we need an editor template.
@@ -1574,7 +1617,7 @@ public updatePostalCode(rowId: number) {
 
 ```razor
 <IgbColumn Header="Address" Field="Address"
-           Editable="true"           
+           Editable="true"
            InlineEditorTemplateScript="AddressEditCellTemplate" />
 
 //In JavaScript:
@@ -1606,16 +1649,17 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ### Working with Flat Data Example
 
-Using code snippets from previous section will result in the following example of `{GridName}`
+Using code snippets from previous section will result in the following example of `Grid`
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
+           github-src="{GridSample}/binding-composite-data">
 </code-view>
 
 ## Keyboard Navigation
 
-Keyboard navigation of the `{GridName}` provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
+Keyboard navigation of the `Grid` provides a rich variety of keyboard interactions for the user. It enhances accessibility and allows intuitive navigation through any type of elements inside (cell, row, column header, toolbar, footer, etc.).
 
 <!-- Angular -->
 
@@ -1646,7 +1690,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `{GridName}` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1655,7 +1699,7 @@ platformBrowserDynamic()
 ```
 
 >[!NOTE]
-> This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen}/discussions) page.
+> This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github]({GithubLink}/discussions) page.
 
 >[!NOTE]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
@@ -1686,7 +1730,7 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 <!--  Angular -->
 In [**Angular**](https://angular.io/) most of the styles are prefixed implicitly thanks to the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin.
 
-For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment `/* autoprefixer grid:on */`.
+For prefixing **grid layouts** however, you need to enable the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) **grid property** with the comment ```autoprefixer grid:on```.
 
 To facilitate your work, apply the comment in the `src/styles.scss` file.
 
@@ -1716,7 +1760,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 
 ## API References
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `Cell`
 * `CellTemplateContext`
@@ -1741,7 +1785,7 @@ To facilitate your work, apply the comment in the `src/styles.scss` file.
 
 ## Tutorial video
 
-Learn more about creating a {Platform} `{GridName}` in our short tutorial video:
+Learn more about creating a {Platform} `Grid` in our short tutorial video:
 
 > [!Video https://www.youtube.com/embed/Xv_fQVQ8fmM]
 
@@ -1784,5 +1828,5 @@ Learn more about creating a {Platform} `{GridName}` in our short tutorial video:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

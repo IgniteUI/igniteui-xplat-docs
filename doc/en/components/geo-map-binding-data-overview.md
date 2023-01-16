@@ -19,7 +19,7 @@ The following section list some of data source that you can bind in the geograph
 - [Binding Multiple Sources](geo-map-binding-multiple-sources.md)
 
 
- ## API Members
+## API References
 
 - `GeographicMap`
 - `DataSource`

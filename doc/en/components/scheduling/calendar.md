@@ -508,48 +508,23 @@ The following sample demonstrates the above CSS configuration:
            github-src="scheduling/calendar/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API References
 
 * `Calendar`
 * `Radio`
 * `RadioGroup`
-
-<!-- end: WebComponents -->
+* `ActiveDate`
+* `ActiveView`
+* `After`
+* `Before`
+* `Between`
+* `Change`
+* `DateRangeDescriptor`
+* `DateRangeType`
+* `DateRange`
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
-
- - `ActiveDate`
- - `ActiveView`
- - `After`
- - `Before`
- - `Between`
- - `Calendar`
- - `Change`
- - `DateRangeDescriptor`
- - `DateRangeType`
- - `DateRange`
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

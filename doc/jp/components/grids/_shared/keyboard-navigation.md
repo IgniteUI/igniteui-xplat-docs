@@ -128,7 +128,8 @@ _language: ja
 
 <code-view style="height:470px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
+           github-src="{ComponentSample}/keyboard-navigation-guide">
 </code-view>
 
 <!-- end: Angular -->
@@ -142,9 +143,9 @@ _language: ja
 |---------|-------------|-----------|
 | `GridKeydown` | 上記のキー押下やキー押下の組み合わせのいずれかが実行されたときに発生されるイベント。キャンセルできます。その他のキーの押下/組み合わせには、デフォルトの `onkeydown` イベントを使用します。 | `IGridKeydownEventArgs` |
 | `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `IActiveNodeChangeEventArgs` |
-| `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。`{ targetType: GridKeydownTargetType, target: Object }` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />*grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });* | `RowIndex`: number, `VisibleColumnIndex`: number, `callback`: (`{ targetType: GridKeydownTargetType, target: Object }`) => {} |
-| `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />*const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);* | `CurrentRowIndex`: number, `currentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
-| `GetPreviousCell`| `RowIndex` と ` VsibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />*const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);* | `CurrentRowIndex`: number, `CurrentVisibleColumnIndex`: number, `callback`: (`Column`) => boolean |
+| `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。```{ targetType: GridKeydownTargetType, target: Object }``` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }) => {}``` |
+| `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
+| `GetPreviousCell`| `RowIndex` と ` VsibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -246,7 +247,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
+           github-src="{ComponentSample}/keyboard-custom-navigation">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -276,7 +278,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
+           github-src="{ComponentSample}/keyboard-custom-navigation">
 </code-view>
 
 <!-- end: Angular -->
@@ -307,7 +310,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <code-view style="height:520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
+           github-src="{ComponentSample}/keyboard-navigation-guide">
 </code-view>
 
 <!-- end: Angular -->
@@ -343,5 +347,5 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

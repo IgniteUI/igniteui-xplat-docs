@@ -229,41 +229,16 @@ Try it in the example below:
 
 The `DateTimeInput` component derives from the `Input` component, so it exposes all available CSS parts. See [Input Styling](input.md#styling) for reference.
 
-<!-- WebComponents -->
-
 ## API References
 
-* `Input`
-* `MaskInput`
+ - `Input`
+ - `MaskInput`
+ - `Icon`
+ - `DateParts`
+ - `DateTimeInput`
 
-Additional Web Components that were used:
-
-* `Icon`
-
-<!-- end: WebComponents -->
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
- ## API Members
-
- - `DateParts`
- - `DateTimeInput`
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

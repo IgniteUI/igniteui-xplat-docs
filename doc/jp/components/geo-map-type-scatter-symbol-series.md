@@ -210,7 +210,7 @@ addSeriesWith(locations: any[], brush: string)
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicSymbolSeries`
  - `ItemsSource`

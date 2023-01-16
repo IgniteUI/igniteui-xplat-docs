@@ -88,13 +88,6 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
     <IgbButton onclick="snackbar.show()">Show Snackbar</IgbButton>
     <IgbSnackbar id="snackbar"> Snackbar Message </IgbSnackbar>
 </div>
-
-@code {
-
-    protected override void OnInitialized()
-    {
-    }
-}
 ```
 
 ```tsx
@@ -155,43 +148,23 @@ igc-snackbar::part(base) {
 <code-view style="height: 230px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="{Platform} Sanckbar スタイル設定の例"
+           alt="{Platform} SnackBar スタイル設定の例"
            github-src="notifications/snackbar/styling">
 </code-view>
 
-## API リファレンス
-
-* `Snackbar`
 
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `ActionText`
  - `DisplayTime`
  - `KeepOpen`
  - `Show`
  - `Snackbar`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

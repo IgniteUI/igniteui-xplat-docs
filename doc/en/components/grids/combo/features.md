@@ -67,7 +67,7 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
-Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field: 
+Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field:
 
 ```ts
 let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
@@ -135,7 +135,7 @@ The ComboBox component also exposes an option for setting whether groups should 
 <IgbCombo GroupSorting="desc" />
 ```
 
-### Label 
+### Label
 
 The `Combo` label can be set easily using the `Label` property:
 
@@ -149,7 +149,7 @@ The `Combo` label can be set easily using the `Label` property:
 
 ### Placeholder
 
-A placeholder text can be specified for both the ComboBox component input and the search input placed inside the dropdown menu: 
+A placeholder text can be specified for both the ComboBox component input and the search input placed inside the dropdown menu:
 
 ```html
 <igc-combo placeholder="Pick a city" placeholder-search="Search for a city"></igc-combo>
@@ -173,7 +173,7 @@ If you want your ComboBox to be automatically focused on page load you can use t
 
 ### Search Input Focus
 
-The ComboBox search input is focused by default. To disable this feature and move the focus to the list of options use the `AutofocusList` property as shown below: 
+The ComboBox search input is focused by default. To disable this feature and move the focus to the list of options use the `AutofocusList` property as shown below:
 
 ```html
 <igc-combo autofocus-list></igc-combo>
@@ -183,7 +183,7 @@ The ComboBox search input is focused by default. To disable this feature and mov
 <IgbCombo AutofocusList="true" />
 ```
 
-### Required 
+### Required
 
 The ComboBox can be marked as required by setting the required property.
 
@@ -218,16 +218,5 @@ You can disable the ComboBox using the `Disabled` property:
 <!-- end: WebComponents -->
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

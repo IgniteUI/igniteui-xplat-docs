@@ -148,7 +148,7 @@ In this application we have implemented an `IDockManagerWindow` type which could
 
 For the full source code please clone the [repository](https://github.com/IgniteUI/dock-manager-electron-app).
 
- ## API Members
+## API References
 
  - `BrowserWindow`
  - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)

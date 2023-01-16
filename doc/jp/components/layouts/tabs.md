@@ -27,6 +27,7 @@ _language: ja
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 `Tabs` を使用する前に、次のように登録する必要があります:
@@ -171,33 +172,17 @@ igc-tab::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
 * `Tabs`
 * `Tab`
 * `TabPanel`
-
-使用したその他のコンポーネントとディレクティブ:
 * `Icon`
 * `IconButton`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [{ProductName} **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [{ProductName} **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

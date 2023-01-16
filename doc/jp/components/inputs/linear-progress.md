@@ -201,44 +201,17 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
 | bottom-start  | 進行状況ラベルの配置。 |
 | bottom-end    | 進行状況ラベルの配置。 |
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-Linear Progress Indicator の API の詳細については、次のリンクを参照してください:
-* `LinearProgress`
-
-使用したその他のコンポーネントとディレクティブ:
-* `Button`
-
-<!-- end: WebComponents -->
-
 <div class="divider"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Button`
  - `Calendar`
  - `LinearProgress`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

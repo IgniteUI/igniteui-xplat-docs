@@ -460,7 +460,7 @@ setState snippet
 
 ## Restoring Pivot Strategies
 
-`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](pivot-grid-custom.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
+`GridState` will not persist neither remote pivot operations nor custom dimension strategies (For further information see [Pivot Grid Remote Operations](remote-operations.md) sample) by default (see [limitations](state-persistence.md#limitations)). Restoring any of these can be achieved with code on application level. The `GridState` exposes an event called `StateParsed` which can be used to additionally modify the grid state before it gets applied. Let's show how to do this:
 
 > `StateParsed` is only emitted when we are using `SetState` with string argument.
 
@@ -568,7 +568,7 @@ state.setState(gridState.columnSelection);
 <!-- ComponentStart: PivotGrid -->
 
 * [{ComponentTitle} overview](overview.md)
-* [Pivot Grid Remote Operations](pivot-grid-custom.md)
-* [Pivot Grid Features](pivot-grid-features.md)
+* [Pivot Grid Features](features.md)
+<!-- * [Pivot Grid Remote Operations](remote-operations.md) -->
 
 <!-- ComponentEnd: PivotGrid -->

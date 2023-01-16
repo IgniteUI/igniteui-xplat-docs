@@ -230,41 +230,16 @@ input.spinDelta = spinDelta;
 
 `DateTimeInput` コンポーネントは `Input` コンポーネントから派生しているため、使用可能なすべての CSS パーツを公開します。参考のために[入力スタイル設定](input.md#スタイル設定)を参照してください。
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
-* `Input`
-* `MaskInput`
+ - `Input`
+ - `MaskInput`
+ - `Icon`
+ - `DateParts`
+ - `DateTimeInput`
 
-使用したその他の WEB コンポーネント:
-
-* `Icon`
-
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
-
- - `DateParts`
- - `DateTimeInput`
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

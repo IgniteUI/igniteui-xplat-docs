@@ -341,7 +341,7 @@ createAreaSeries(data: any[]) {
 }
 ```
 
- ## API Members
+## API References
 
  - `ColorMemberPath`
  - `ColorScale`

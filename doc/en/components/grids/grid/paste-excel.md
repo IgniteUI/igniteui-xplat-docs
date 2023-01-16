@@ -26,6 +26,7 @@ The new data after the paste is decorated in Italic.
 <code-view style="height: 570px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-paste-options"
+           github-src="{GridSample}/data-paste-options"
            alt="{Platform} Paste from Excel Example">
 </code-view>
 
@@ -230,5 +231,5 @@ export class PasteHandler {
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

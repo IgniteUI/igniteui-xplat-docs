@@ -184,6 +184,9 @@ Part name | Description
            github-src="inputs/select/styling">
 </code-view>
 
+<!-- end: WebComponents -->
+
+
 ## API Reference
 
 * `Select`
@@ -191,9 +194,8 @@ Part name | Description
 * `SelectHeader`
 * `SelectGroup`
 
-<!-- end: WebComponents -->
 
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{Platform})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

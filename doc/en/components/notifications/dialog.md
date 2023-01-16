@@ -7,7 +7,7 @@ mentionedTypes: ['Dialog']
 
 # {Platform} Dialog
 
-The {ProductName} Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog. 
+The {ProductName} Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog.
 
 ## {ProductName} Dialog Example
 
@@ -100,18 +100,10 @@ igc-dialog::part(footer) {
            github-src="notifications/dialog/styling">
 </code-view>
 
-## API Reference
-
-* `Dialog`
 
 <div class="divider--half"></div>
 
-## Additional Resources
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-## API Members
+## API References
 
 - `closeOnEscape`
 - `closeOnOutsideClick`
@@ -120,3 +112,8 @@ igc-dialog::part(footer) {
 - `open`
 - `title`
 - `Dialog`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

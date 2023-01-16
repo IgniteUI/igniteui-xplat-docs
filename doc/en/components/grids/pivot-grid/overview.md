@@ -14,8 +14,8 @@ mentionedTypes: ['Infragistics.Controls.PivotGrid']
 
 The {Platform} {PivotGridName} presents data in a pivot table and helps performing complex analysis on the supplied data set. This sophisticated Pivot Grid control is used for organizing, summarizing, and filtering large volumes of data which is later displayed in a cross-table format. Key features of an {Platform} Pivot Grid are row dimensions, column dimensions, aggregations, and filters.
 
-The `{PivotGridName}` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
-The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `{PivotGridName}` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
+The `PivotGrid` gives the ability to users to configure and display their data in a multi-dimensional pivot table structure.
+The rows and columns represent distinct data groups, and the data cell values represent aggregations. This allows complex data analysis based on a simple flat data set. The `PivotGrid` is a feature-rich pivot table that provides easy configuration of the different dimensions and values as well as additional data operations on them like filtering and sorting.
 
 ## {Platform} Pivot Grid Example
 
@@ -23,7 +23,8 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 <code-view style="height: 870px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
+           github-src="{PivotGridSample}/pivot-grid-data-selector"
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 
@@ -455,6 +456,7 @@ Using above code will result in the following example which groups the Product C
 <code-view style="height: 530px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
+           github-src="{PivotGridSample}/features"
            alt="{Platform} Pivot Grid Basic Features Example">
 </code-view>
 
@@ -472,8 +474,8 @@ Using above code will result in the following example which groups the Product C
 
 ## API References
 
-* `{PivotGridName}`
 * `PivotConfiguration`
+* `PivotGrid`
 * `PivotDataSelector`
 * `PivotDateDimension`
 * `Column`
@@ -481,10 +483,14 @@ Using above code will result in the following example which groups the Product C
 <!-- ## Additional Resources -->
 
 <!-- TODO write these topics: -->
-<!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
-<!-- * [{Platform} Pivot Grid Custom Aggregations](pivot-grid-custom.md) -->
+<!-- * [{Platform} Pivot Grid Features](features.md) -->
+<!-- * [{Platform} Pivot Grid Custom Aggregations](remote-operations.md) -->
+
+## Additional Resources
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
+
+

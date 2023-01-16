@@ -29,7 +29,7 @@ _language: ja
 - [複合チャート](composite-chart.md)
 <!-- - [ガント チャート](gantt-chart.md) -->
 
-## API メンバー
+## API リファレンス
 - `BarSeries`
 - `CategoryYAxis`
 - `NumericXAxis`

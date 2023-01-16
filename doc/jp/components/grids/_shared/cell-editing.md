@@ -317,6 +317,13 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 const record = this.getNewRecord();
 this.grid.addRow(record);
 ```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.GridRef.AddRow(record);
+```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -491,7 +498,7 @@ constructor() {
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-`CellEdit` は、セルの**値**がコミットされる直前に発生します。**HandleCellEdit** の定義では、アクションを実行する前に特定の列を確認する必要があります。
+`CellEdit` は、セルの**値**がコミットされる直前に発生します。**CellEdit** の定義では、アクションを実行する前に特定の列を確認する必要があります。
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -512,7 +519,7 @@ export class MyGridEventsComponent {
 }
 ```
 
-**Ordered (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、エラー メッセージ付きのトーストが表示されます。
+**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、エラー メッセージ付きのトーストが表示されます。
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
