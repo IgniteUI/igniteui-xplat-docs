@@ -356,19 +356,6 @@ igc-button::part(base) {
            github-src="inputs/button/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-* `Button`
-
-使用したその他の Web Components:
-
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 ## API リファレンス
 
  - `ButtonBase`

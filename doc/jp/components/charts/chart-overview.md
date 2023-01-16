@@ -2,6 +2,7 @@
 title: {Platform} チャートとグラフ ライブラリー | {ProductName}
 _description: {ProductName} チャートおよびグラフは、データ視覚化の広範なライブラリであり、Web アプリやモバイル アプリの魅力的でインタラクティブなチャートを実現します。無料でお試しください。
 _keywords: {Platform} Charts, Chart, Infragistics, {Platform} チャート, チャート, インフラジスティックス
+mentionedTypes: ["DomainChart", "FinancialChart", "CategoryChart", "XamDataChart"]
 _language: ja
 ---
 # {Platform} チャートとグラフの概要
@@ -331,3 +332,12 @@ alt="{Platform} チャート マーカー、ツールチップ、およびテン
 - Sketch デザインからピクセル パーフェクトな Angular コントロールを生成する、UX デザイナー、ビジュアル デザイナー、開発者向けのコード プラットフォームに、世界初で唯一のエンドツーエンドの包括的なデザインを提供します。Indigo.Design を使用すると、Indigo Design System から Sketch で作成するすべてのものが Ignite UI for Angular コントロールと一致します。
 <!-- end: Angular -->
 
+
+## API リファレンス
+
+このトピックで言及されているすべてのチャート タイプは、次の API コンポーネントに実装されています:
+
+ - `CategoryChart`
+ - `XamDataChart`
+ - `FinancialChart`
+ - `Treemap`
