@@ -34,6 +34,7 @@ stages:
   jobs:
   - template: templates/job-template.yml
     parameters:
+      jobName: BuildDocs - WebComponents EN
       buildType: $(buildType)
       component: $(component)
       platform: WebComponents
@@ -41,12 +42,13 @@ stages:
 
   - template: templates/job-template.yml
     parameters:
+      jobName: BuildDocs - WebComponents JP
       buildType: $(buildType)
       component: $(component)
       platform: WebComponents
       language: jp
 
-  - job: BuildDocs
+  - job: Publish
     steps:
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
