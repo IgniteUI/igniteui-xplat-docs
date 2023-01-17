@@ -34,25 +34,22 @@ stages:
   jobs:
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs_WebComponents_EN
+      jobName: WebComponents_EN
       buildType: $(buildType)
-      component: $(component)
       platform: WebComponents
       language: en
 
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs_React_EN
+      jobName: React_EN
       buildType: $(buildType)
-      component: $(component)
       platform: React
       language: en
 
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs_Blazor_EN
+      jobName: Blazor_EN
       buildType: $(buildType)
-      component: $(component)
       platform: Blazor
       language: en
 
