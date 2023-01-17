@@ -66,3 +66,9 @@ jobs:
       archiveType: 'zip'
       archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
       replaceExistingArchive: true
+
+    - task: PublishPipelineArtifact@1
+      displayName: 'Publish pipeline artifacts'
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: '$(component)'
