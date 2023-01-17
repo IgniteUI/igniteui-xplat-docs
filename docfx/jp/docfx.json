@@ -13,10 +13,13 @@
     "build": {
         "content": [
             {
+                "files": ["api/**.yml", "api/index.md"]
+            },
+            {
                 "files": [
                     "components/**.md",
                     "components/**/toc.yml",
-					"components/themes/**.md",
+                    "components/themes/**.md",
                     "toc.yml",
                     "*.md"
                 ],
@@ -25,7 +28,7 @@
         ],
         "resource": [
             {
-                "files": ["images/**"],
+                "files": ["images/**", "web.config"],
                 "exclude": ["obj/**", "_site/**"]
             }
         ],

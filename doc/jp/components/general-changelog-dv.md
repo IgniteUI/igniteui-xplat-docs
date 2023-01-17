@@ -19,9 +19,9 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2}**
 
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。 
+デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
-これらの新しいチャートの改善点は次のとおりです: 
+これらの新しいチャートの改善点は次のとおりです:
 
 * ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
 * すべてのプラットフォームでの丸型ラベルの描画が強化されました。
@@ -33,7 +33,7 @@ namespace: Infragistics.Controls.Charts
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -47,7 +47,7 @@ namespace: Infragistics.Controls.Charts
   - GroupSortDescriptions
 
 > [!Note]
-`IncludedProperties` | `ExcludedProperties` を使用している場合、[チャート集計](charts/features/chart-data-aggregations.md)は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
+`IncludedProperties` | `ExcludedProperties` を使用している場合、チャートの[集計](charts/features/chart-data-aggregations.md)は機能しません。これらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
 ## **{PackageVerChanges-22-1}**
 ### {PackageCharts}

@@ -509,7 +509,6 @@ igc-calendar::part(year-inner current selected) {
            github-src="scheduling/calendar/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API リファレンス
 

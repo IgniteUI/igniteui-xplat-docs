@@ -212,9 +212,8 @@ builder.Services.AddIgniteUIBlazor(
            github-src="inputs/slider/styling">
 </code-view>
 
-
-
 ## API リファレンス
+
  - `HidePrimaryLabels`
  - `HideSecondaryLabels`
  - `HideTooltip`

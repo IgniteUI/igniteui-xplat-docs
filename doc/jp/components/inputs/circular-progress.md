@@ -218,18 +218,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 | info               | 進行状況インジケーターの info の状態。       |
 | success            | 進行状況インジケーターの success 状態。  |
 
-<!-- WebComponents -->
 
-## API リファレンス
-
-Circular Progress Indicator の API の詳細については、次のリンクを参照してください:
-* `CircularProgress`
-
-使用したその他のコンポーネントとディレクティブ:
-* `CircularGradient`
-* `Button`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
