@@ -42,16 +42,24 @@ stages:
 
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs_WebComponents_JP
+      jobName: BuildDocs_React_EN
       buildType: $(buildType)
       component: $(component)
-      platform: WebComponents
-      language: jp
+      platform: React
+      language: en
 
-  - job: Publish
-    steps:
-    - task: PublishPipelineArtifact@1
-      displayName: 'Publish pipeline artifacts'
-      inputs:
-        targetPath: '$(Build.ArtifactStagingDirectory)'
-        artifact: '$(component)'
+  - template: templates/job-template.yml
+    parameters:
+      jobName: BuildDocs_Blazor_EN
+      buildType: $(buildType)
+      component: $(component)
+      platform: Blazor
+      language: en
+
+#  - job: Publish
+#    steps:
+#    - task: PublishPipelineArtifact@1
+#      displayName: 'Publish pipeline artifacts'
+#      inputs:
+#        targetPath: '$(Build.ArtifactStagingDirectory)'
+#        artifact: '$(component)'
