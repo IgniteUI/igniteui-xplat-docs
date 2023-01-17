@@ -188,6 +188,11 @@ function transformCodeRefs(options: any) {
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
 
+        let memberHasCustomCSS = memberName.indexOf("--") == 0;
+        if (memberHasCustomCSS) {
+            return; // skip trying to generate API link for custom CSS properties
+        }
+
         let memberHasCharDot = memberName.includes(".", 0);
         let memberHasCharSpace = memberName.includes(" ");
         let memberHasInlineCode = memberName.includes("=") || memberName.includes(":") || memberName.includes("&") || memberName.includes("{");
