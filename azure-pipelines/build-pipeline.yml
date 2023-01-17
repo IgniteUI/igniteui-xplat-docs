@@ -46,7 +46,7 @@ stages:
       platform: WebComponents
       language: jp
 
-  - job: BuildDocs
+  - job: Publish
     steps:
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
