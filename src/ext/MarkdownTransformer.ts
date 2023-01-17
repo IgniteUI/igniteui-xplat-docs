@@ -303,22 +303,111 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
-                if (link.url.indexOf("dockmanager") > 0) {
-                    // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
-                    // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
-                    // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
-                    // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
-                    console.log("getApiLink " + link.url);
-                    let platform = getPlatformName(options.platform);
-                    if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                let platform = getPlatformName(options.platform);
+                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+
+                    var dockEnums = [
+                        "DockManagerPaneType",
+                        "DockingIndicatorPosition",
+                        "PaneDragActionType",
+                        "ResizerLocation",
+                        "SplitPaneOrientation",
+                        // "UnpinnedLocation",
+                    ];
+                    var dockInterfaces = [
+                        "ActivePaneEvent",
+                        "ContentPane",
+                        "DockManagerEventMap",
+                        "DockManagerLayout",
+                        "DockManagerPoint",
+                        "DockManagerResourceStrings",
+                        "DockPaneAction",
+                        "DockingIndicator",
+                        "DocumentHost",
+                        "FloatPaneAction",
+                        "FloatingPaneResizeEvent",
+                        "FloatingPaneResizeMoveEvent",
+                        "MoveFloatingPaneAction",
+                        "MoveTabAction",
+                        "PaneCloseEvent",
+                        "PaneDragEndEvent",
+                        "PaneDragOverEvent",
+                        "PaneDragStartEvent",
+                        "PaneHeaderConnectionEvent",
+                        "PaneHeaderElement",
+                        "PanePinnedEvent",
+                        "SplitPane",
+                        "SplitterResizeEvent",
+                        "TabGroupPane",
+                        "TabHeaderConnectionEvent",
+                    ];
+                    var isDockInterface = false;
+                    for (const name of dockInterfaces) {
+                        if (link.url.indexOf(name.toLowerCase()) > 0) {
+                            isDockInterface = true;
+                            break;
+                        }
+                    }
+                    var isDockEnum = false;
+                    for (const name of dockEnums) {
+                        if (link.url.indexOf(name.toLowerCase()) > 0) {
+                            isDockEnum = true;
+                            break;
+                        }
+                    }
+                    var isDockClass = false;
+                    if (link.url.indexOf("DockManager".toLowerCase()) > 0) {
+                        isDockClass = true;
+                    }
+
+                    if (isDockClass || isDockEnum || isDockInterface) {
+                        // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
+                        // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                        // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                        // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
+
                         link.url = link.url.replace("ignite-ui-angular/api/docs",        "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("ignite-ui-react/api/docs",          "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("ignite-ui-web-components/api/docs", "ignite-ui/dock-manager/docs");
                         link.url = link.url.replace("igr", "igc");
                         link.url = link.url.replace("igx", "igc");
-                        console.log("getApiLink " + link.url);
+
+                        // console.log("getApiLink " + link.url);
+                        if (link.url.indexOf("component.html") < 0 && isDockClass) {
+                            link.url = link.url.replace(".html", "component.html");
+                            if (link.children && link.children[0] && link.children[0].value) {
+                                // ensure classes use WC prefix
+                                link.children[0].value = link.children[0].value.replace("Igr", "Igc");
+                                link.children[0].value = link.children[0].value.replace("Igx", "Igc");
+                                // ensure classes end with "Component"
+                                if (link.children[0].value.indexOf("Component") < 0) {
+                                    link.children[0].value += "Component";
+                                }
+                            }
+                        }
+
+                        if (isDockEnum) {
+                            link.url = link.url.replace("/classes/", "/enums/");
+                            link.url = link.url.replace("component.html", ".html");
+                        }
+                        if (isDockInterface) {
+                            link.url = link.url.replace("/classes/", "/interfaces/");
+                            link.url = link.url.replace("component.html", ".html");
+                            if (link.children && link.children[0] && link.children[0].value) {
+                                link.children[0].value = link.children[0].value.replace("Component", "");
+                            }
+                        }
                     }
                 }
+
+                // if (link.url.indexOf("components/api/docs/") > 0){
+                //     console.log("getApiLink " + link.url);
+                // }
+
                 // overriding api root for components specified in docsConfig.json
                 if (apiDocOverrideComponents !== undefined) {
                     //console.log("getApiLink replace apiDocOverride " + link.url);
