@@ -34,7 +34,7 @@ stages:
   jobs:
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs - WebComponents EN
+      jobName: BuildDocs_WebComponents_EN
       buildType: $(buildType)
       component: $(component)
       platform: WebComponents
@@ -42,7 +42,7 @@ stages:
 
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs - WebComponents JP
+      jobName: BuildDocs_WebComponents_JP
       buildType: $(buildType)
       component: $(component)
       platform: WebComponents
