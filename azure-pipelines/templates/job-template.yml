@@ -1,13 +1,14 @@
 parameters:
-  - name: isVerbose
-    default: false
+  - name: jobTemplate
   - name: buildType
   - name: component
   - name: platform
   - name: language
+  - name: isVerbose
+    default: false
 
 jobs:
-- job: BuildDocs
+- job: ${{ parameters.jobName }}
   steps:
   - task: NodeTool@0
     inputs:
@@ -16,7 +17,7 @@ jobs:
   - script: echo '$(Build.BuildNumber)'
     displayName: 'Display Build Number'
 
-  - script: echo '$(buildType)'
+  - script: echo '${{ parameters.buildType }}'
     displayName: 'Display Build Type'
 
   - task: RegexReplace@3
@@ -49,20 +50,19 @@ jobs:
       customCommand: ci
 
   - task: Npm@1
-    displayName: 'Build WebComponents $(buildType) en'
+    displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
     inputs:
       command: custom
       workingDir: '$(Build.SourcesDirectory)'
       verbose: ${{ parameters.isVerbose }}
-      customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=en'
+      customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
 
   - task: ArchiveFiles@2
-    displayName: 'Package WebComponents en - zip'
+    displayName: 'Package ${{ parameters.platform }} ${{ parameters.language }} - zip'
     inputs:
       verbose: ${{ parameters.isVerbose }}
-      # dist\$plat$\$langFolder$\_site
-      rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
+      rootFolderOrFile: $(Build.SourcesDirectory)/dist/${{ parameters.platform }}/${{ parameters.language }}/_site
       includeRootFolder: false
       archiveType: 'zip'
-      archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_en_$(buildType).zip
+      archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
       replaceExistingArchive: true
