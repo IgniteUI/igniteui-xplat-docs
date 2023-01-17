@@ -42,11 +42,19 @@ stages:
 
   - template: templates/job-template.yml
     parameters:
-      jobName: BuildDocs_WebComponents_JP
+      jobName: BuildDocs_React_EN
       buildType: $(buildType)
       component: $(component)
-      platform: WebComponents
-      language: jp
+      platform: React
+      language: en
+
+  - template: templates/job-template.yml
+    parameters:
+      jobName: BuildDocs_Blazor_EN
+      buildType: $(buildType)
+      component: $(component)
+      platform: Blazor
+      language: en
 
 #  - job: Publish
 #    steps:
