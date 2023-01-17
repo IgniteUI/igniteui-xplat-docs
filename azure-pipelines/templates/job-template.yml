@@ -1,5 +1,5 @@
 parameters:
-  - name: jobTemplate
+  - name: jobName
   - name: buildType
   - name: component
   - name: platform
