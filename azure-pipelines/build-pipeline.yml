@@ -48,10 +48,10 @@ stages:
       platform: WebComponents
       language: jp
 
-  - job: Publish
-    steps:
-    - task: PublishPipelineArtifact@1
-      displayName: 'Publish pipeline artifacts'
-      inputs:
-        targetPath: '$(Build.ArtifactStagingDirectory)'
-        artifact: '$(component)'
+#  - job: Publish
+#    steps:
+#    - task: PublishPipelineArtifact@1
+#      displayName: 'Publish pipeline artifacts'
+#      inputs:
+#        targetPath: '$(Build.ArtifactStagingDirectory)'
+#        artifact: '$(component)'
