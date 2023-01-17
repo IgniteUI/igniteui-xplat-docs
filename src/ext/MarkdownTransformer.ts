@@ -303,6 +303,22 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
+                if (link.url.indexOf("dockmanager") > 0) {
+                    // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
+                    // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                    // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                    // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                    console.log("getApiLink " + link.url);
+                    let platform = getPlatformName(options.platform);
+                    if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+                        link.url = link.url.replace("ignite-ui-angular/api/docs",        "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-react/api/docs",          "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-web-components/api/docs", "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("igr", "igc");
+                        link.url = link.url.replace("igx", "igc");
+                        console.log("getApiLink " + link.url);
+                    }
+                }
                 // overriding api root for components specified in docsConfig.json
                 if (apiDocOverrideComponents !== undefined) {
                     //console.log("getApiLink replace apiDocOverride " + link.url);
