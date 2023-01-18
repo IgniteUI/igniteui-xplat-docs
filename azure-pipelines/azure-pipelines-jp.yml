@@ -85,7 +85,6 @@ stages:
       displayName: 'Package WebComponents jp - zip'
       inputs:
         verbose: ${{ parameters.isVerbose }}
-        # dist\$plat$\$langFolder$\_site
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/jp/_site
         includeRootFolder: false
         archiveType: 'zip'
@@ -104,7 +103,6 @@ stages:
       displayName: 'Package Blazor jp - zip'
       inputs:
         verbose: ${{ parameters.isVerbose }}
-        # dist\$plat$\$langFolder$\_site
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/jp/_site
         includeRootFolder: false
         archiveType: 'zip'
@@ -128,12 +126,6 @@ stages:
         archiveType: 'zip'
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
         replaceExistingArchive: true
-
-#    - task: PublishBuildArtifacts@1
-#      displayName: 'Publish Artifacts'
-#      inputs:
-#        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-#        ArtifactName: 'drop'
 
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
