@@ -52,11 +52,3 @@ stages:
       buildType: $(buildType)
       platform: Blazor
       language: en
-
-#  - job: Publish
-#    steps:
-#    - task: PublishPipelineArtifact@1
-#      displayName: 'Publish pipeline artifacts'
-#      inputs:
-#        targetPath: '$(Build.ArtifactStagingDirectory)'
-#        artifact: '$(component)'
