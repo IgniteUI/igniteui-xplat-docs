@@ -72,3 +72,15 @@ The keyboard navigation should behave the same as with a non-simplified ComboBox
 ## Other Features
 
 All other features will behave the same as in a non-simplified ComboBox component.
+
+## API Reference
+
+* `Combo`
+* `ComboItem`
+* `ComboHeader`
+* `ComboList`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
