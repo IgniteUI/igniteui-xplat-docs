@@ -73,14 +73,6 @@ stages:
         verbose: ${{ parameters.isVerbose }}
         customCommand: ci
 
-#    - task: Npm@1
-#      displayName: 'Build WebComponents'
-#      inputs:
-#        command: custom
-#        workingDir: '$(Build.SourcesDirectory)'
-#        verbose: ${{ parameters.isVerbose }}
-#        customCommand: 'run buildWebComponents'
-
     - task: Npm@1
       displayName: 'Build WebComponents $(buildType) en'
       inputs:
@@ -93,7 +85,6 @@ stages:
       displayName: 'Package WebComponents en - zip'
       inputs:
         verbose: ${{ parameters.isVerbose }}
-        # dist\$plat$\$langFolder$\_site
         rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/en/_site
         includeRootFolder: false
         archiveType: 'zip'
