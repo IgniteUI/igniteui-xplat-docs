@@ -12,7 +12,7 @@ Infragistics {Platform} Dock Manager は、ペインでアプリケーション�
 
 ## {Platform} ドック マネージャーの例
 
-この例は、{Platform} ドック マネージャのほとんどの機能とドッキング オプションを示しています。
+この例は、アプリケーションで使用できる `DockManager` のほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -469,6 +469,48 @@ igc-dockmanager::part(pane-header-maximize-button) {
 `splitterHandle` | スプリッターのハンドル。
 
 各スロットの対応するパーツは、このページの**スタイル設定**セクションの **CSS パーツ**にあります。
+
+### CSS 変数
+
+The following table describes all CSS variables used for styling the dock-manager component:
+
+| CSS 変数         | 説明                                                                     |
+| -------------------- | ------------------------------------------------------------------------------- |
+| `--igc-background-color`               | The background color of the header inside the pane navigator component. |
+| `--igc-accent-color`                   | The background color of the buttons inside the pane header actions part on focus. |
+| `--igc-active-color`                   | The text and box-shadow color used for the components in active state. |
+| `--igc-border-color`                   | The border bottom color of the pane header component. |
+| `--igc-font-family`                    | The font-family of the dock-manager component. |
+| `--igc-dock-background`                | The background color of the dock-manager, tab and floating-pane components. |
+| `--igc-dock-text`                      | The text color of the dock-manager and the floating pane components. |
+| `--igc-pane-header-background`         | The background color of the pane header component. |
+| `--igc-pane-header-text`               | The text color of the pane header component. |
+| `--igc-pane-content-background`        | The background color of the content inside the dock-manager and the tab panel components. |
+| `--igc-pane-content-text`              | The text color of the content inside the dock-manager and the tab panel components. |
+| `--igc-tab-text`                       | The text color of the tab header component. |
+| `--igc-tab-background`                 | The background color of the tab header component. |
+| `--igc-tab-border-color`               | The border color of the tab header component. |
+| `--igc-tab-text-active`                | The text color of the selected tab header component. |
+| `--igc-tab-background-active`          | The background color of the selected tab header component. |
+| `--igc-tab-border-color-active`        | The border color of the selected tab header component. |
+| `--igc-pinned-header-background`       | The background color of the unpinned pane header component. |
+| `--igc-pinned-header-text`             | The text color of the unpinned pane header component. |
+| `--igc-splitter-background`            | The background color of the splitter component. |
+| `--igc-splitter-handle`                | The background color of the splitter handle. |
+| `--igc-button-text`                    | The color of the buttons inside the pane header actions part. |
+| `--igc-flyout-shadow-color`            | The box-shadow color of the content pane component. |
+| `--igc-joystick-background`            | The background color of the joystick and the root docking indicator components. |
+| `--igc-joystick-border-color`          | The border color of the joystick and the root docking indicator components. |
+| `--igc-joystick-icon-color`            | The icon color of the joystick and the root docking indicator components. |
+| `--igc-joystick-background-active`     | The hover background color of the joystick and the root docking indicator components. |
+| `--igc-joystick-icon-color-active`     | The hover icon color of the joystick and the root docking indicator components. |
+| `--igc-floating-pane-border-color`     | The border color of the floating panes. |
+| `--igc-context-menu-background`        | The background color of the context menu items. |
+| `--igc-context-menu-background-active` | The background color of the context menu items on hover and focus. |
+| `--igc-context-menu-color`             | The text color of the context menu items. |
+| `--igc-context-menu-color-active`      | The text color of the context menu items on hover and focus. |
+| `--igc-drop-shadow-background`         | The background color of the drop shadow. |
+| `--igc-disabled-color`                 | The text color of the components in disabled state. |
 
 ## キーボード ナビゲーション
 

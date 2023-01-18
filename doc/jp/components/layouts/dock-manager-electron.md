@@ -54,7 +54,7 @@ dockManager.addEventListener('paneHeaderConnected', paneHeaderConnected);
 ```
 
 
-`PanelHeaderDragStart` 関数で、ドック マネージャー コンポーネントの `DraggedPane` プロパティを設定し、ドラッグ操作が開始されたことを通知します。
+`PaneHeaderDragStart` 関数で、ドック マネージャー コンポーネントの `DraggedPane` プロパティを設定し、ドラッグ操作が開始されたことを通知します。
 
 ```ts
 const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
@@ -80,7 +80,7 @@ document.addEventListener('dragover', handleDocumentDragOver);
 document.addEventListener('drop', handleDocumentDrop);
 ```
 
-`PanelHeaderDragEnd` 関数では、ペインがブラウザー/アプリケーション ウィンドウの外にドロップされたかどうかを検出し、`droppedOutOfWindow` 関数を呼び出します。
+`PaneHeaderDragEnd` 関数では、ペインがブラウザー/アプリケーション ウィンドウの外にドロップされたかどうかを検出し、`droppedOutOfWindow` 関数を呼び出します。
 
 ```ts
 const paneHeaderDragEnd = async (event: DragEvent) => {
