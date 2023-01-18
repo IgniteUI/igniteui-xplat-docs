@@ -43,6 +43,7 @@ stages:
     - script: echo '$(buildType)'
       displayName: 'Display Build Type'
 
+    #TODO: Can be put into the docFX transformation thingies
     - task: RegexReplace@3
       displayName: 'replace environment in doc/docfx'
       inputs:
