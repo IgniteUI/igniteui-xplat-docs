@@ -21,6 +21,7 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
+  component: 'XPlatDocFX'
   buildType: 'staging'
   ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
     buildType: 'production'
@@ -31,28 +32,24 @@ stages:
     name: BuildAgentOnPrem
     demands: npm
   jobs:
-  - job: BuildDocs
-    steps:
-  - template: templates/build-steps-template.yml
+  - template: templates/build-jobs-template.yml
     parameters:
+      jobName: WebComponents_JP
       buildType: $(buildType)
       platform: WebComponents
-      language: en
+      language: jp
 
-  - template: templates/build-steps-template.yml
+  - template: templates/build-jobs-template.yml
     parameters:
-      buildType: $(buildType)
-      platform: Blazor
-      language: en
-
-  - template: templates/build-steps-template.yml
-    parameters:
+      jobName: React_JP
       buildType: $(buildType)
       platform: React
-      language: en
+      language: jp
 
-  - task: PublishPipelineArtifact@1
-    displayName: 'Publish pipeline artifacts'
-    inputs:
-      targetPath: '$(Build.ArtifactStagingDirectory)'
-      artifact: 'XPlatDocFX'
+  - template: templates/build-jobs-template.yml
+    parameters:
+      jobName: Blazor_JP
+      buildType: $(buildType)
+      platform: Blazor
+      language: jp
+

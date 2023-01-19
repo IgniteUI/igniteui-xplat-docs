@@ -32,24 +32,23 @@ stages:
     name: BuildAgentOnPrem
     demands: npm
   jobs:
-  - template: templates/job-template.yml
+  - template: templates/build-jobs-template.yml
     parameters:
-      jobName: WebComponents_JP
+      jobName: WebComponents_EN
       buildType: $(buildType)
       platform: WebComponents
-      language: jp
+      language: en
 
-  - template: templates/job-template.yml
+  - template: templates/build-jobs-template.yml
     parameters:
-      jobName: React_JP
+      jobName: React_EN
       buildType: $(buildType)
       platform: React
-      language: jp
+      language: en
 
-  - template: templates/job-template.yml
+  - template: templates/build-jobs-template.yml
     parameters:
-      jobName: Blazor_JP
+      jobName: Blazor_EN
       buildType: $(buildType)
       platform: Blazor
-      language: jp
-
+      language: en
