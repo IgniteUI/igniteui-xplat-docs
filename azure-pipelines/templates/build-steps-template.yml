@@ -5,50 +5,50 @@ parameters:
   - name: isVerbose
     default: false
 
-  steps:
-    - task: NodeTool@0
-      inputs:
-        versionSource: 'spec'
-        versionSpec: '16.x'
-    - script: echo '$(Build.BuildNumber)'
-      displayName: 'Display Build Number'
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSource: 'spec'
+      versionSpec: '16.x'
+  - script: echo '$(Build.BuildNumber)'
+    displayName: 'Display Build Number'
 
-    - script: echo '${{ parameters.buildType }}'
-      displayName: 'Display Build Type'
+  - script: echo '${{ parameters.buildType }}'
+    displayName: 'Display Build Type'
 
-    - task: RegexReplace@3
-      displayName: 'replace environment in doc/docfx'
-      inputs:
-        InputSearchPattern: |
-          doc\**\*.*
-          docfx\**\*.*
-        FindRegex: 'environment:dvDemosBaseUrl'
-        ReplaceRegex: 'environment:demosBaseUrl'
-        UseUTF8: true
-        UseRAW: true
-      enabled: false
+  - task: RegexReplace@3
+    displayName: 'replace environment in doc/docfx'
+    inputs:
+      InputSearchPattern: |
+        doc\**\*.*
+        docfx\**\*.*
+      FindRegex: 'environment:dvDemosBaseUrl'
+      ReplaceRegex: 'environment:demosBaseUrl'
+      UseUTF8: true
+      UseRAW: true
+    enabled: false
 
-    - task: Npm@1
-      displayName: 'npm cache clean'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: ${{ parameters.isVerbose }}
-        customCommand: 'cache clean --force'
-      continueOnError: true
+  - task: Npm@1
+    displayName: 'npm cache clean'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'cache clean --force'
+    continueOnError: true
 
-    - task: Npm@1
-      displayName: 'npm ci'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: ${{ parameters.isVerbose }}
-        customCommand: ci
+  - task: Npm@1
+    displayName: 'npm ci'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: ci
 
-    - task: Npm@1
-      displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
-      inputs:
-        command: custom
-        workingDir: '$(Build.SourcesDirectory)'
-        verbose: ${{ parameters.isVerbose }}
-        customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+  - task: Npm@1
+    displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
+    inputs:
+      command: custom
+      workingDir: '$(Build.SourcesDirectory)'
+      verbose: ${{ parameters.isVerbose }}
+      customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
