@@ -472,45 +472,45 @@ igc-dockmanager::part(pane-header-maximize-button) {
 
 ### CSS 変数
 
-The following table describes all CSS variables used for styling the dock-manager component:
+次の表では、ドック マネージャー コンポーネントのスタイル設定に使用されるすべての CSS 変数について説明します。
 
 | CSS 変数         | 説明                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| `--igc-background-color`               | The background color of the header inside the pane navigator component. |
-| `--igc-accent-color`                   | The background color of the buttons inside the pane header actions part on focus. |
-| `--igc-active-color`                   | The text and box-shadow color used for the components in active state. |
-| `--igc-border-color`                   | The border bottom color of the pane header component. |
-| `--igc-font-family`                    | The font-family of the dock-manager component. |
-| `--igc-dock-background`                | The background color of the dock-manager, tab and floating-pane components. |
-| `--igc-dock-text`                      | The text color of the dock-manager and the floating pane components. |
-| `--igc-pane-header-background`         | The background color of the pane header component. |
-| `--igc-pane-header-text`               | The text color of the pane header component. |
-| `--igc-pane-content-background`        | The background color of the content inside the dock-manager and the tab panel components. |
-| `--igc-pane-content-text`              | The text color of the content inside the dock-manager and the tab panel components. |
-| `--igc-tab-text`                       | The text color of the tab header component. |
-| `--igc-tab-background`                 | The background color of the tab header component. |
-| `--igc-tab-border-color`               | The border color of the tab header component. |
-| `--igc-tab-text-active`                | The text color of the selected tab header component. |
-| `--igc-tab-background-active`          | The background color of the selected tab header component. |
-| `--igc-tab-border-color-active`        | The border color of the selected tab header component. |
-| `--igc-pinned-header-background`       | The background color of the unpinned pane header component. |
-| `--igc-pinned-header-text`             | The text color of the unpinned pane header component. |
-| `--igc-splitter-background`            | The background color of the splitter component. |
-| `--igc-splitter-handle`                | The background color of the splitter handle. |
-| `--igc-button-text`                    | The color of the buttons inside the pane header actions part. |
-| `--igc-flyout-shadow-color`            | The box-shadow color of the content pane component. |
-| `--igc-joystick-background`            | The background color of the joystick and the root docking indicator components. |
-| `--igc-joystick-border-color`          | The border color of the joystick and the root docking indicator components. |
-| `--igc-joystick-icon-color`            | The icon color of the joystick and the root docking indicator components. |
-| `--igc-joystick-background-active`     | The hover background color of the joystick and the root docking indicator components. |
-| `--igc-joystick-icon-color-active`     | The hover icon color of the joystick and the root docking indicator components. |
-| `--igc-floating-pane-border-color`     | The border color of the floating panes. |
-| `--igc-context-menu-background`        | The background color of the context menu items. |
-| `--igc-context-menu-background-active` | The background color of the context menu items on hover and focus. |
-| `--igc-context-menu-color`             | The text color of the context menu items. |
-| `--igc-context-menu-color-active`      | The text color of the context menu items on hover and focus. |
-| `--igc-drop-shadow-background`         | The background color of the drop shadow. |
-| `--igc-disabled-color`                 | The text color of the components in disabled state. |
+| `--igc-background-color`               | ペイン ナビゲーター コンポーネント内のヘッダーの背景色。 |
+| `--igc-accent-color`                   | フォーカスされているペイン ヘッダー アクション パーツ内のボタンの背景色。 |
+| `--igc-active-color`                   | アクティブな状態のコンポーネントに使用されるテキストとボックス シャドウの色。 |
+| `--igc-border-color`                   | ペイン ヘッダー コンポーネントのボーダー下線の色。 |
+| `--igc-font-family`                    | ドック マネージャー コンポーネントの font-family。 |
+| `--igc-dock-background`                | ドック マネージャー、タブ、およびフローティング ペイン コンポーネントの背景色。 |
+| `--igc-dock-text`                      | ドック マネージャーおよびフローティング ペイン コンポーネントのテキストの色。 |
+| `--igc-pane-header-background`         | ペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pane-header-text`               | ペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-pane-content-background`        | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツの背景色。 |
+| `--igc-pane-content-text`              | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツのテキストの色。 |
+| `--igc-tab-text`                       | タブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background`                 | タブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color`               | タブ ヘッダー コンポーネントの境界線の色。 |
+| `--igc-tab-text-active`                | 選択したタブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background-active`          | 選択したタブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color-active`        | 選択したタブ ヘッダー コンポーネントのボーダーの色。 |
+| `--igc-pinned-header-background`       | ピン固定されていないペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pinned-header-text`             | ピン固定されていないペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-splitter-background`            | スプリッター コンポーネントの背景色。|
+| `--igc-splitter-handle`                | スプリッター ハンドルの背景色。 |
+| `--igc-button-text`                    | ペイン ヘッダー アクション パーツ内のボタンの色。 |
+| `--igc-flyout-shadow-color`            | コンテンツ ペイン コンポーネントのボックス シャドウの色。 |
+| `--igc-joystick-background`            | ジョイスティックとルート ドッキング インジケーター コンポーネントの背景色。 |
+| `--igc-joystick-border-color`          | ジョイスティックとルート ドッキング インジケーター コンポーネントのボーダーの色。 |
+| `--igc-joystick-icon-color`            | ジョイスティックとルート ドッキング インジケーター コンポーネントのアイコンの色。 |
+| `--igc-joystick-background-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー背景色。 |
+| `--igc-joystick-icon-color-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー アイコンの色。 |
+| `--igc-floating-pane-border-color`     | フローティング ペインのボーダーの色。 |
+| `--igc-context-menu-background`        | コンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-background-active` | ホバーおよびフォーカス時のコンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-color`             | コンテキスト メニュー項目のテキストの色。 |
+| `--igc-context-menu-color-active`      | ホバーおよびフォーカス時のコンテキスト メニュー項目のテキストの色。 |
+| `--igc-drop-shadow-background`         | ドロップ シャドウの背景色。 |
+| `--igc-disabled-color`                 | 無効状態のコンポーネントのテキストの色。 |
 
 ## キーボード ナビゲーション
 
