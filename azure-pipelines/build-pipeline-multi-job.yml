@@ -12,6 +12,13 @@ pr:
     exclude:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 
+schedules:
+- cron: "*/30 * * * *"
+  displayName: 'Stability verification schedule'
+  branches:
+    include:
+    - azure-pipelines
+
 parameters:
 - name: isVerbose
   displayName: 'Get verbose output from steps - where configurable'
