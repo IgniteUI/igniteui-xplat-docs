@@ -135,6 +135,59 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_jp_$(buildType).zip
         replaceExistingArchive: true
 
+    - task: Npm@1
+      displayName: 'Build WebComponents $(buildType) kr'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=WebComponents --lang=kr'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package WebComponents kr - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/WebComponents/kr/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_WebComponents_kr_$(buildType).zip
+        replaceExistingArchive: true
+
+    - task: Npm@1
+      displayName: 'Build Blazor kr'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=Blazor --lang=kr'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package Blazor kr - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/Blazor/kr/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_Blazor_kr_$(buildType).zip
+        replaceExistingArchive: true
+
+    - task: Npm@1
+      displayName: 'Build React kr'
+      inputs:
+        command: custom
+        workingDir: '$(Build.SourcesDirectory)'
+        verbose: ${{ parameters.isVerbose }}
+        customCommand: 'run build-$(buildType) -- --plat=React --lang=kr'
+
+    - task: ArchiveFiles@2
+      displayName: 'Package React kr - zip'
+      inputs:
+        verbose: ${{ parameters.isVerbose }}
+        rootFolderOrFile: $(Build.SourcesDirectory)/dist/React/kr/_site
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(component)_React_kr_$(buildType).zip
+
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
       inputs:

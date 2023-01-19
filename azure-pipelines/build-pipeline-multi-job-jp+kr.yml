@@ -53,3 +53,24 @@ stages:
       platform: Blazor
       language: jp
 
+  - template: templates/build-jobs-template.yml
+    parameters:
+      jobName: WebComponents_KR
+      buildType: $(buildType)
+      platform: WebComponents
+      language: kr
+
+  - template: templates/build-jobs-template.yml
+    parameters:
+      jobName: React_KR
+      buildType: $(buildType)
+      platform: React
+      language: kr
+
+  - template: templates/build-jobs-template.yml
+    parameters:
+      jobName: Blazor_KR
+      buildType: $(buildType)
+      platform: Blazor
+      language: kr
+
