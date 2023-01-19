@@ -1509,13 +1509,13 @@ export class MarkdownTransformer {
             if (currRun.componentName != null) {
                 (options as any).componentName = currRun.componentName;
 
-                console.log("- " + filePath + " for " + currRun.componentName);
+                // console.log("- transforming " + filePath + " for " + currRun.componentName);
 
                 if (docsComponents[currRun.componentName] !== undefined) {
                     componentOutput = docsComponents[currRun.componentName].output;
                 }
             } else {
-                console.log("- " + filePath);
+                // console.log("- transforming " + filePath);
             }
 
             // actual parsing/transforming of metadata and topic's content
