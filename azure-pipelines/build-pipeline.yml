@@ -41,25 +41,63 @@ stages:
   jobs:
   - job: BuildDocs
     steps:
-    - template: templates/build-steps-template.yml
-      parameters:
-        buildType: $(buildType)
-        platform: WebComponents
-        language: en
+      - task: NodeTool@0
+        inputs:
+          versionSource: 'spec'
+          versionSpec: '16.x'
+      - script: echo '$(Build.BuildNumber)'
+        displayName: 'Display Build Number'
 
-    - template: templates/build-steps-template.yml
-      parameters:
-        buildType: $(buildType)
-        platform: Blazor
-        language: en
+      - script: echo '${{ parameters.buildType }}'
+        displayName: 'Display Build Type'
 
-    - template: templates/build-steps-template.yml
-      parameters:
-        buildType: $(buildType)
-        platform: React
-        language: en
+      - task: RegexReplace@3
+        displayName: 'replace environment in doc/docfx'
+        inputs:
+          InputSearchPattern: |
+            doc\**\*.*
+            docfx\**\*.*
+          FindRegex: 'environment:dvDemosBaseUrl'
+          ReplaceRegex: 'environment:demosBaseUrl'
+          UseUTF8: true
+          UseRAW: true
+        enabled: false
 
-    - task: PublishPipelineArtifact@1
+        #  - task: Npm@1
+        #    displayName: 'npm cache clean'
+        #    inputs:
+        #      command: custom
+        #      workingDir: '$(Build.SourcesDirectory)'
+        #      verbose: ${{ parameters.isVerbose }}
+        #      customCommand: 'cache clean --force'
+        #    continueOnError: false
+
+      - task: Npm@1
+        displayName: 'npm ci'
+        inputs:
+          command: custom
+          workingDir: '$(Build.SourcesDirectory)'
+          verbose: ${{ parameters.isVerbose }}
+          customCommand: ci
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: WebComponents
+          language: en
+
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Blazor
+          language: en
+
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: React
+          language: en
+
+      - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
       inputs:
         targetPath: '$(Build.ArtifactStagingDirectory)'
