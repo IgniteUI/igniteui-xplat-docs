@@ -28,14 +28,14 @@ steps:
       UseRAW: true
     enabled: false
 
-  - task: Npm@1
-    displayName: 'npm cache clean'
-    inputs:
-      command: custom
-      workingDir: '$(Build.SourcesDirectory)'
-      verbose: ${{ parameters.isVerbose }}
-      customCommand: 'cache clean --force'
-    continueOnError: true
+#  - task: Npm@1
+#    displayName: 'npm cache clean'
+#    inputs:
+#      command: custom
+#      workingDir: '$(Build.SourcesDirectory)'
+#      verbose: ${{ parameters.isVerbose }}
+#      customCommand: 'cache clean --force'
+#    continueOnError: false
 
   - task: Npm@1
     displayName: 'npm ci'
