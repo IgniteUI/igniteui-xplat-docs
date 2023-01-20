@@ -15,6 +15,7 @@ pr:
 schedules:
 - cron: "*/30 * * * *"
   displayName: 'Stability verification schedule'
+  always: true
   branches:
     include:
     - azure-pipelines
