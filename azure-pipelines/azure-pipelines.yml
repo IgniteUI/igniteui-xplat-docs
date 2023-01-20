@@ -18,6 +18,7 @@ schedules:
   branches:
     include:
     - azure-pipelines
+  always: true
 
 parameters:
 - name: isVerbose
