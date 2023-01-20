@@ -45,11 +45,6 @@ stages:
         inputs:
           versionSource: 'spec'
           versionSpec: '16.x'
-      - script: echo '$(Build.BuildNumber)'
-        displayName: 'Display Build Number'
-
-      - script: echo '${{ parameters.buildType }}'
-        displayName: 'Display Build Type'
 
       - task: RegexReplace@3
         displayName: 'replace environment in doc/docfx'
