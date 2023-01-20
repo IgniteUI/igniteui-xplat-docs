@@ -5,6 +5,14 @@ _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistic
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Grid Binding Virtual Data
 
 The {ProductName} Data Table / Data Grid supports data binding to remote datasources with one line of code.  With the {Platform} data table’s Virtual Data Source, you simply configure the {Platform} grid with your remote URI and which OData Entity you’d like returned, and the {Platform} grid does the rest of the work for you.

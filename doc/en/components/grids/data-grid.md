@@ -5,6 +5,14 @@ _keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, I
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md), and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Data Grid Overview
 
 The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.  The {Platform} tables are optimized for live, streaming data, with the ability to handle unlimited data set size in number of rows or columns.
