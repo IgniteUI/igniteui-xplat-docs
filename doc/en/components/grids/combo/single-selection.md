@@ -11,7 +11,7 @@ The {Platform} `ComboBox` supports single-selection mode and quick filtering of 
 
 ## {Platform} Single Selectoin Example
 
-To enable single-selection and quick filtering, set the `single-select` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
+To enable single-selection and quick filtering, set the `SingleSelect` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
 
 ```html
 <igc-combo single-select></igc-combo>
@@ -28,7 +28,7 @@ To enable single-selection and quick filtering, set the `single-select` property
 
 ## Selection API
 
-The selection API for a ComboBox with the `single-select` property applied mostly remains the same, however, there are some important differences compared to ComboBoxes that don't have this property set.
+The selection API for a ComboBox with the `SingleSelect` property applied mostly remains the same, however, there are some important differences compared to ComboBoxes that don't have this property set.
 
 The main difference is that only one item can be selected at any time. For example, if you have specified a `ValueKey` for your combo component, passing more than one item to the `Select`/`Deselect` methods will have no effect. This also has means that any previously selected items will automatically get deselected upon making a new selection.
 
@@ -52,15 +52,15 @@ combo.deselect('BG01');
 
 ## Disabled features
 
-Naturally, some configuration options will have no effect in a simplfied ComboBox.
+Naturally, some configuration options will have no effect in a single selection ComboBox.
 
 ### Placeholder
 
-Assigning a value to the `placeholder-search` property will yield no result since the filtering input that usually is placed above the list of options will not be present in a single selection ComboBox.
+Assigning a value to the `PlaceholderSearch` property will yield no result since the filtering input that usually is placed above the list of options will not be present in a single selection ComboBox.
 
 ### Autofocusing the list of options
 
-Setting the `autofocus-list` option on a single selection ComboBox will also have no effect.
+Setting the `AutofocusList` option on a single selection ComboBox will also have no effect.
 
 ## Keyboard Navigation
 
