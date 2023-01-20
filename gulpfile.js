@@ -105,7 +105,7 @@ function transformFiles() {
       var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
-      // console.log("- " + file.path);
+      console.log("- transforming " + file.path);
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
@@ -418,6 +418,13 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
 
+    let platformName = PLAT;
+    if (platformName === "Angular") {
+        // excluding grids and shared topics from angular builds
+        excludedTopics.push('doc/**/grids/**/*.md');
+        excludedTopics.push('doc/**/grids/_shared/*.md');
+    }
+
     let excludedFiles = [];
     gulp.src(excludedTopics)
     .pipe(es.map(function(file, fileCallback) {
@@ -517,12 +524,6 @@ function buildPlatform(cb) {
         // //   'doc/jp/**/*.md',
         // //   'doc/kr/**/*.md',
         // ];
-
-        if (platformName === "Angular") {
-            // excluding grids and shared topics from angular builds
-            sources.push('!doc/**/grids/**/*.md');
-            sources.push('!doc/**/grids/_shared/*.md');
-        }
 
         gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
