@@ -5,6 +5,14 @@ _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, bat
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.EditModeType', 'Infragistics.Controls.Grid.Implementation.TransactionType']
 namespace: Infragistics.Controls
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Grid Editing
 
 The {ProductName} Data Table / Data Grid supports cell and row editing with batch updating. Note, this is currently limited to non-templated columns.
