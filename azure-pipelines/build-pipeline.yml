@@ -98,7 +98,7 @@ stages:
           language: en
 
       - task: PublishPipelineArtifact@1
-      displayName: 'Publish pipeline artifacts'
-      inputs:
-        targetPath: '$(Build.ArtifactStagingDirectory)'
-        artifact: 'XPlatDocFX'
+        displayName: 'Publish pipeline artifacts'
+        inputs:
+          targetPath: '$(Build.ArtifactStagingDirectory)'
+          artifact: 'XPlatDocFX'
