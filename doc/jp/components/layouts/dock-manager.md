@@ -12,7 +12,7 @@ Infragistics {Platform} Dock Manager は、ペインでアプリケーション�
 
 ## {Platform} ドック マネージャーの例
 
-この例は、{Platform} ドック マネージャのほとんどの機能とドッキング オプションを示しています。
+この例は、アプリケーションで使用できる `DockManager` のほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -469,6 +469,48 @@ igc-dockmanager::part(pane-header-maximize-button) {
 `splitterHandle` | スプリッターのハンドル。
 
 各スロットの対応するパーツは、このページの**スタイル設定**セクションの **CSS パーツ**にあります。
+
+### CSS 変数
+
+次の表では、ドック マネージャー コンポーネントのスタイル設定に使用されるすべての CSS 変数について説明します。
+
+| CSS 変数         | 説明                                                                     |
+| -------------------- | ------------------------------------------------------------------------------- |
+| `--igc-background-color`               | ペイン ナビゲーター コンポーネント内のヘッダーの背景色。 |
+| `--igc-accent-color`                   | フォーカスされているペイン ヘッダー アクション パーツ内のボタンの背景色。 |
+| `--igc-active-color`                   | アクティブな状態のコンポーネントに使用されるテキストとボックス シャドウの色。 |
+| `--igc-border-color`                   | ペイン ヘッダー コンポーネントのボーダー下線の色。 |
+| `--igc-font-family`                    | ドック マネージャー コンポーネントの font-family。 |
+| `--igc-dock-background`                | ドック マネージャー、タブ、およびフローティング ペイン コンポーネントの背景色。 |
+| `--igc-dock-text`                      | ドック マネージャーおよびフローティング ペイン コンポーネントのテキストの色。 |
+| `--igc-pane-header-background`         | ペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pane-header-text`               | ペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-pane-content-background`        | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツの背景色。 |
+| `--igc-pane-content-text`              | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツのテキストの色。 |
+| `--igc-tab-text`                       | タブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background`                 | タブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color`               | タブ ヘッダー コンポーネントの境界線の色。 |
+| `--igc-tab-text-active`                | 選択したタブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background-active`          | 選択したタブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color-active`        | 選択したタブ ヘッダー コンポーネントのボーダーの色。 |
+| `--igc-pinned-header-background`       | ピン固定されていないペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pinned-header-text`             | ピン固定されていないペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-splitter-background`            | スプリッター コンポーネントの背景色。|
+| `--igc-splitter-handle`                | スプリッター ハンドルの背景色。 |
+| `--igc-button-text`                    | ペイン ヘッダー アクション パーツ内のボタンの色。 |
+| `--igc-flyout-shadow-color`            | コンテンツ ペイン コンポーネントのボックス シャドウの色。 |
+| `--igc-joystick-background`            | ジョイスティックとルート ドッキング インジケーター コンポーネントの背景色。 |
+| `--igc-joystick-border-color`          | ジョイスティックとルート ドッキング インジケーター コンポーネントのボーダーの色。 |
+| `--igc-joystick-icon-color`            | ジョイスティックとルート ドッキング インジケーター コンポーネントのアイコンの色。 |
+| `--igc-joystick-background-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー背景色。 |
+| `--igc-joystick-icon-color-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー アイコンの色。 |
+| `--igc-floating-pane-border-color`     | フローティング ペインのボーダーの色。 |
+| `--igc-context-menu-background`        | コンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-background-active` | ホバーおよびフォーカス時のコンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-color`             | コンテキスト メニュー項目のテキストの色。 |
+| `--igc-context-menu-color-active`      | ホバーおよびフォーカス時のコンテキスト メニュー項目のテキストの色。 |
+| `--igc-drop-shadow-background`         | ドロップ シャドウの背景色。 |
+| `--igc-disabled-color`                 | 無効状態のコンポーネントのテキストの色。 |
 
 ## キーボード ナビゲーション
 
