@@ -52,3 +52,13 @@ steps:
       workingDir: '$(Build.SourcesDirectory)'
       verbose: ${{ parameters.isVerbose }}
       customCommand: 'run build-${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+
+  - task: ArchiveFiles@2
+    displayName: 'Package ${{ parameters.platform }} ${{ parameters.language }} - zip'
+    inputs:
+      verbose: ${{ parameters.isVerbose }}
+      rootFolderOrFile: $(Build.SourcesDirectory)/dist/${{ parameters.platform }}/${{ parameters.language }}/_site
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: $(Build.ArtifactStagingDirectory)/${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
+      replaceExistingArchive: true
