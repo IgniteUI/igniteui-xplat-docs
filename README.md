@@ -221,7 +221,7 @@ yarn start --plat=Blazor
 For internal use only:
     npm run startBlazorStaging
     (Note staging samples only )
-```   -->
+``` -->
 
 ```cmd
 yarn startWC
