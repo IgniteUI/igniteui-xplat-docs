@@ -5,8 +5,7 @@ trigger:
     - master
   paths:
     exclude:
-    - jp/*
-    - kr/*
+    - en/*
 pr:
   branches:
     exclude:
