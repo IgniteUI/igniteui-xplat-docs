@@ -13,7 +13,7 @@ The Excel Exporter service can export data to excel from the `{ComponentName}`. 
 ## {Platform} Excel Exporter Example
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
@@ -93,7 +93,7 @@ public exportButtonHandler() {
 To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. Example:
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
@@ -110,7 +110,7 @@ It is now possible to export `{ComponentName}` with defined [multi-column header
 > [!NOTE]
 > The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"

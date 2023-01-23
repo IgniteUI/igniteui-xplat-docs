@@ -19,7 +19,7 @@ The pivot and flat grid components inherit from a common base and thus share som
 
 The {PivotGridTitle} component has additional features and functionalities related to its dimensions as described below.
 
-<code-view style="height: 870px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
            github-src="{PivotGridSample}/features"
