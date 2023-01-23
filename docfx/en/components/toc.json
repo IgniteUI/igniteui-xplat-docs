@@ -928,6 +928,7 @@
       },
       {
         "name": "Single Selection",
+        "status": "NEW",
         "href": "grids/combo/single-selection.md"
       }
     ]
