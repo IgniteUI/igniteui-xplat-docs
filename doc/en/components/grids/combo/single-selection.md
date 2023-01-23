@@ -30,7 +30,7 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 
 The selection API for a ComboBox with the `SingleSelect` property applied mostly remains the same, however, there are some important differences compared to ComboBoxes that don't have this property set.
 
-The main difference is that only one item can be selected at any time. For example, if you have specified a `ValueKey` for your combo component, passing more than one item to the `Select`/`Deselect` methods will have no effect. This also has means that any previously selected items will automatically get deselected upon making a new selection.
+The main difference is that only one item can be selected at any time. For example, if you have specified a `ValueKey` for your combo component, passing more than one item to the `Select`/`Deselect` methods will have no effect. This also means that any previously selected items will automatically get deselected upon making a new selection.
 
 Here's how to select/deselect an item programatically in a single selection combo.
 
