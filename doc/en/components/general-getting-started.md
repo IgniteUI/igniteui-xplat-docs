@@ -62,7 +62,7 @@ This topic provides step-by-step instructions for creating Web Components applic
 ## Ignite UI Web Components Example
 The sample below provides an overview on the web components and shows how utilizing them can help you create a well structured app. It represents a sample travel blog that includes an app header with the user's avatar, side navigation and main content area.
 
-<code-view style="height: 800px"
+<code-view style="height: 750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
            alt="{Platform} Overview Example"
