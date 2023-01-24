@@ -1,17 +1,22 @@
 ---
-title: {Platform} Dropdown コンポーネント | {ProductName}
-_description: インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示します。今すぐ {ProductName} のドロップダウン コンポーネントの使用を開始しましょう。
+title: {Platform} Dropdown List コンポーネント | {ProductName}
+_description: {Platform} Dropdown List コンポーネントを使用すると、インタラクティブ機能を追加し、アプリ内の項目のスクロール可能なリストにスタイル設定オプションを表示できます。今すぐをお試しください。
 _keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} ドロップダウン コンポーネント, インフラジスティックス
 mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
 _language: ja
 ---
 
-# {Platform} Dropdown (ドロップダウン) の概要
+# {Platform} Dropdown List (ドロップダウン リスト) コンポーネントの概要
 
+Feature-rich, the {Platform} Dropdown list offers out-of-the-box filtering, accessibility, preselected values, flexible data binding, grouping, UI customization, and more. What this component practically does is to effectively and easily replace HTML select tags, enabling users to quickly choose a non-editable value from a predefined set of several options. 
 
-{Platform} ドロップダウンは、事前定義された値の切り替え可能なリストを表示し、ユーザーがクリックするだけで単一のオプション項目を簡単に選択できるようにするコンポーネントです。ドロップダウン メニューとして機能するようにすばやく構成することも、データをグループ化することでより有用な視覚情報を提供するために使用することもできます。グループ化を使用すると、フラット データと階層データの両方を使用できます。
+The Ignite UI for {Platform} Dropdown component displays an toggle list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a {Platform} dropdown menu or you can simply use it to deliver more useful visual information by grouping data. Also, with grouping you can use both flat and hierarchical data.
+
+With our component, you get all the functions and customization options you need for your project – styling customizations, {Platform} Dropdown placement options, templates and ability to change what and how is displayed in the header, footer, body, list, etc. 
 
 ## {Platform} Dropdown の例
+
+The following {Platform} Dropdown List example demonstrates the use of simple interactive {Platform} Dropdown menu in action with three basic options to choose from. See how it works.
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -20,7 +25,7 @@ _language: ja
            github-src="inputs/dropdown/overview">
 </code-view>
 
-## 使用方法
+## {ProductName} で Dropdown List を使用する方法
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
@@ -82,7 +87,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### Target (ターゲット)
 
-ドロップダウン リストは、ターゲットに対して相対的に配置されます。`target` スロットを使用すると、クリック時に `open` プロパティを切り替える組み込みコンポーネントを提供できます。場合によっては、外部ターゲットを使用するか、別のイベントを使用してドロップダウンの開始を切り替えることができます。これは、ターゲットをパラメーターとして提供できる `Show`、`Hide`、および `Toggle` メソッドを使用して実現できます。デフォルトでは、ドロップダウン リストは CSS の `absolute` 位置を使用します。ターゲット要素が固定コンテナー内にあるが、ドロップダウンがそうではない場合、ドロップダウンの `PositionStrategy` を `fixed` に設定する必要があります。ドロップダウン リストは、その内容に基づいて自動的にサイズ変更されます。リストの幅をターゲットと同じにする場合は、`SameWidth` プロパティを **true** に設定する必要があります。
+{Platform} ドロップダウン リストは、ターゲットに対して相対的に配置されます。`target` スロットを使用すると、クリック時に `open` プロパティを切り替える組み込みコンポーネントを提供できます。場合によっては、外部ターゲットを使用するか、別のイベントを使用してドロップダウンの開始を切り替えることができます。これは、ターゲットをパラメーターとして提供できる `Show`、`Hide`、および `Toggle` メソッドを使用して実現できます。デフォルトでは、ドロップダウン リストは CSS の `absolute` 位置を使用します。ターゲット要素が固定コンテナー内にあるが、ドロップダウンがそうではない場合、{Platform} ドロップダウンの `PositionStrategy` を `fixed` に設定する必要があります。ドロップダウン リストは、その内容に基づいて自動的にサイズ変更されます。リストの幅をターゲットと同じにする場合は、`SameWidth` プロパティを **true** に設定する必要があります。
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -93,7 +98,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### 位置
 
-ドロップダウンの優先配置は、`Placement` プロパティを使用して設定できます。ドロップダウンのデフォルトの配置は `bottom-start` です。`Flip` プロパティは、指定された配置でドロップダウンを表示するのに十分なスペースがない場合に配置を反転するかどうかを決定します。ドロップダウン リストからそのターゲットまでの距離は、`Distance` プロパティを使用して指定できます。
+{Platform} ドロップダウンの優先配置は、`Placement` プロパティを使用して設定できます。ドロップダウンのデフォルトの配置は `bottom-start` です。`Flip` プロパティは、指定された配置でドロップダウンを表示するのに十分なスペースがない場合に配置を反転するかどうかを決定します。{Platform} ドロップダウン リストからそのターゲットまでの距離は、`Distance` プロパティを使用して指定できます。
 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -130,7 +135,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### Group (グループ)
 
-ドロップダウン項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。
+{Platform} ドロップダウンの項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。See it in action in this {Platform} Dropdown List example:
 
 <code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

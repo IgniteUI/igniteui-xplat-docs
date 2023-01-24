@@ -7,6 +7,13 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} 行のグループ化
 
 {ProductName} Data Table / Data Grid は、行を「固定ヘッダー」行グループにまとめることができます。これ機能は Microsoft Outlook の Group By 機能に似ています。独自の基準に基づいてデータを視覚的にグループ化する簡単な方法です。

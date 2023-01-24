@@ -1,18 +1,20 @@
 ---
-title: {Platform} Toast | インフラジスティックス
-_description: {ProductName} Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
+title: {Platform} Toast Notifications | {ProductName}
+_description: {ProductName} Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。今すぐお試しください。
 _keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Toast コンポーネント
 mentionedTypes: ['Toast']
 _language: ja
 ---
 
-# {Platform} Toast (トースト)
+# {Platform} Toast (トースト) の概要
 
-{ProductName} Toast コンポーネントは、主にシステム メッセージ、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。
+The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.
 
-## {ProductName} Toast の例
+The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others.
 
-このサンプルは、`Toast` コンポーネントの作成方法を示しています:
+## {Platform} Toast の例
+
+Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button.
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -22,7 +24,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-### 使用方法
+### {ProductName} のToast Notification (トースト通知) の使用方法
 
 <!-- WebComponents -->
 
@@ -42,7 +44,7 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、`Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{Platform} `Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrToastModule, IgrToast } from 'igniteui-react';
@@ -53,7 +55,7 @@ IgrToastModule.register();
 
 <!-- end: React -->
 
-`Toast` を使用する前に、次のように登録する必要があります:
+{Platform} `Toast` を使用する前に、次のように登録する必要があります:
 
 
 ```razor
@@ -233,7 +235,7 @@ public onDisplayTimeButtonClicked() {
 
 ## スタイル設定
 
-タグ セレクターを直接使用して、Toast のスタイルを設定できます:
+You can style the {Platform} `Toast` notifications directly using its tag selector:
 
 ```css
 igc-toast {

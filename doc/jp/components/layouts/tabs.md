@@ -1,16 +1,20 @@
 ---
-title: {Platform} Tabs | レイアウト コントロール | インフラジスティックス
-_description: 同様のデータ セットを切り替えるには、インフラジスティックスの {Platform} タブ コンポーネントを使用します。
+title: {Platform} Tabs コントロール | レイアウト コントロール | {ProductName}
+_description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets.今すぐお試しください。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 _language: ja
 ---
 
-# {Platform} Tabs (タブ)
+# {Platform} Tabs (タブ) の概要
+
+The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more.
 
 {ProductName} タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
 
 ## {Platform} タブの例
+
+The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -19,7 +23,7 @@ _language: ja
            github-src="layouts/tabs/overview">
 </code-view>
 
-## 使用方法
+## {ProductName} でタブを使用する方法
 
 <!-- WebComponents -->
 まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
@@ -91,12 +95,12 @@ defineComponents(IgcTabsComponent);
 
 ### 配置
 
-`alignment` プロパティは、タブの配置方法を制御します。プロパティは以下の値を含みます:
+`Alignment` プロパティは、{Platform} タブの配置方法を制御します。プロパティは以下の値を含みます:
 
-- `start` (デフォルト): タブの幅はコンテンツ (ラベル、アイコン、両方) に依存し、すべてのタブのパディングは等しくなります。最初のタブは、タブ コンテナーの左側に配置されます。
-- `center`: タブの幅はコンテンツによって異なり、タブ コンテナーの中心を占めます。
-- `end`: タブの幅はコンテンツによって異なり、すべてのタブのパディングは同じです。最後のタブは、タブ コンテナーの右側に配置されます。
-- `justify`: すべてのタブは幅が等しく、タブ コンテナーに完全に収まります。
+- `Start` (デフォルト): タブの幅はコンテンツ (ラベル、アイコン、両方) に依存し、すべてのタブのパディングは等しくなります。最初のタブは、タブ コンテナーの左側に配置されます。
+- `Center`: タブの幅はコンテンツによって異なり、タブ コンテナーの中心を占めます。
+- `End`: タブの幅はコンテンツによって異なり、すべてのタブのパディングは同じです。最後のタブは、タブ コンテナーの右側に配置されます。
+- `Justify`: すべてのタブは幅が等しく、タブ コンテナーに完全に収まります。
 
 スペースがすべてのタブに収まらない場合は、スクロール ボタンが表示されます。
 
@@ -109,7 +113,7 @@ defineComponents(IgcTabsComponent);
 
 ### スクローリング
 
-スクロール ボタンは、利用可能なスペースがすべてのタブを描画するのに十分でない場合に表示されます。最初のタブが表示されている場合、スクロール開始ボタンは無効になります。最後のタブが表示されている場合、スクロール終了ボタンは無効になります。スクロール ボタンの 1 つを押すと、その方向のタブが完全に表示されるようにタブがスクロールされます。または、既に表示されている場合は、その方向の前 / 次のタブが表示されます。
+スクロール ボタンは、利用可能なスペースがすべての {Platform} タブを描画するのに十分でない場合に表示されます。最初のタブが表示されている場合、スクロール開始ボタンは無効になります。最後のタブが表示されている場合、スクロール終了ボタンは無効になります。スクロール ボタンの 1 つを押すと、その方向のタブが完全に表示されるようにタブがスクロールされます。または、既に表示されている場合は、その方向の前 / 次のタブが表示されます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
