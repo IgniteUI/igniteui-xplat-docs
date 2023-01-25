@@ -6,8 +6,8 @@ trigger:
     - azure-pipelines
   paths:
     exclude:
-    - jp/*
-    - kr/*
+    - '**/jp/*'
+    - '**/kr/*''
 pr:
   branches:
     exclude:
