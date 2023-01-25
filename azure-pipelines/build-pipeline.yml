@@ -7,7 +7,7 @@ trigger:
   paths:
     exclude:
     - '**/jp/*'
-    - '**/kr/*''
+    - '**/kr/*'
 pr:
   branches:
     exclude:
