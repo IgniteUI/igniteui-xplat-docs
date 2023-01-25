@@ -135,7 +135,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 ### Group (グループ)
 
-{Platform} ドロップダウンの項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。See it in action in this {Platform} Dropdown List example:
+{Platform} ドロップダウンの項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。この {Platform} ドロップダウン リストの例で実際の動作をご覧ください。
 
 <code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
