@@ -1,6 +1,6 @@
 ---
 title: {Platform} Calendar コンポーネント - {ProductName}
-_description: With {Platform} Calendar Component, users can create intuitive calendars for applications to display date information using three different selection modes. 今すぐお試しください。
+_description: {Platform} Calendar (カレンダー) コンポーネントを使用すると、ユーザーはアプリケーション用の直感的なカレンダーを作成し、3 つの異なる選択モードを使用して日付情報を表示できます。今すぐお試しください。
 _keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 _language: ja
@@ -8,13 +8,13 @@ _language: ja
 
 # {Platform} Calendar (カレンダー) の概要
 
-The {ProductName} Calendar component is lightweight and easy to configure. It is used for showing dates and weekdays. It is also the best way for providing monthly or yearly views to end-users. The {ProductName} Calendar control lets you restrict the minimum and maximum date ranges that people can navigate through. 
+{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。 
 
-The Ignite UI for {ProductName} Calendar provides an easy and intuitive way for displaying date information. It packs different features like single or multiple date selection modes, highlight and select date range, keyboard navigation, enabling week numbers, size and spacing options, and more.
+Ignite UI for {ProductName} Calendar は、日付情報を表示するための簡単で直感的な方法を提供します。単一または複数の日付選択モード、日付範囲の強表示と選択、キーボード ナビゲーション、週番号の有効化、サイズと間隔のオプションなど、さまざまな機能がパックされています。
 
 ## {Platform} Calendar の例
 
-The following {Platform} `Calendar` component example shows a basic calendar with a single day selection mode. See how it works or inspect the code behind.
+次の {Platform} `Calendar` コンポーネントの例は、1 日選択モードの基本的なカレンダーを示しています。それがどのように機能するかを確認するか、コード ビハインドを調べます。
 
 <div class="divider--half"></div>
 

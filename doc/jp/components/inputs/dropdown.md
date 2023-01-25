@@ -8,15 +8,15 @@ _language: ja
 
 # {Platform} Dropdown List (ドロップダウン リスト) コンポーネントの概要
 
-Feature-rich, the {Platform} Dropdown list offers out-of-the-box filtering, accessibility, preselected values, flexible data binding, grouping, UI customization, and more. What this component practically does is to effectively and easily replace HTML select tags, enabling users to quickly choose a non-editable value from a predefined set of several options. 
+機能豊富な {Platform} ドロップダウン リストは、すぐに使用できるフィルタリング、アクセシビリティ、事前選択された値、柔軟なデータ バインディング、グループ化、UI カスタマイズなどを提供します。このコンポーネントが実際に行うことは、HTML 選択タグを効果的かつ簡単に置き換えることであり、ユーザーは事前定義されたいくつかのオプションのセットから編集不可能な値をすばやく選択できます。 
 
-The Ignite UI for {Platform} Dropdown component displays an toggle list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a {Platform} dropdown menu or you can simply use it to deliver more useful visual information by grouping data. Also, with grouping you can use both flat and hierarchical data.
+Ignite UI for {Platform} ドロップダウン コンポーネントは、事前定義された値のトグル リストを表示し、ユーザーが 1 つのオプション項目をクリックして簡単に選択できるようにします。{Platform} ドロップダウン メニューとして機能するようにすばやく構成することも、データをグループ化してより有用な視覚情報を提供するために使用することもできます。また、グループ化を使用すると、フラット データと階層データの両方を使用できます。
 
-With our component, you get all the functions and customization options you need for your project – styling customizations, {Platform} Dropdown placement options, templates and ability to change what and how is displayed in the header, footer, body, list, etc. 
+当社のコンポーネントを使用すると、プロジェクトに必要なすべての機能とカスタマイズ オプション (スタイルのカスタマイズ、{Platform} ドロップダウン配置オプション、テンプレート、およびヘッダー、フッター、本文、リストなどに表示されるものと方法を変更する機能) を取得できます。 
 
 ## {Platform} Dropdown の例
 
-The following {Platform} Dropdown List example demonstrates the use of simple interactive {Platform} Dropdown menu in action with three basic options to choose from. See how it works.
+次の {Platform} ドロップダウン リストの例は、3 つの基本的なオプションから選択できる単純なインタラクティブな {Platform} ドロップダウン メニューを実際に使用する方法を示しています。この {Platform} ドロップダウン リストの例で実際の動作をご覧ください。
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

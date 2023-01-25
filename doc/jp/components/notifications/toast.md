@@ -8,13 +8,13 @@ _language: ja
 
 # {Platform} Toast (トースト) の概要
 
-The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.
+{Platform} Toast (トースト) は、変更されたレコードの状態をエンド ユーザーに通知するメッセージ コンテンツを表示するために使用される超軽量で小さなポップアップ コンポーネントです。{Platform} トースト通知を画面の下部またはその他の指定された領域に簡単に配置して表示できます。または、シンプルで簡単な方法でそれらを却下することもできます。
 
-The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others.
+{Platform} Toast コンポーネントは、主にシステム メッセージング、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。このコントロールには、アニメーション効果、トースト コンポーネントが表示される時間を構成するための表示時間プロパティ、スタイル設定などのさまざまな機能があります。
 
 ## {Platform} Toast の例
 
-Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button.
+以下の単純な Ignite UI for {Platform} Toast の例を見てください。ボタンをクリックすると、アニメーションの通知メッセージがポップアップ表示されます。
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -235,7 +235,7 @@ public onDisplayTimeButtonClicked() {
 
 ## スタイル設定
 
-You can style the {Platform} `Toast` notifications directly using its tag selector:
+タグ セレクターを使用して {Platform} `Toast` 通知を直接スタイル設定できます。
 
 ```css
 igc-toast {

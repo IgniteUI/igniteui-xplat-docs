@@ -1,6 +1,6 @@
 ---
 title: {Platform} Tabs コントロール | レイアウト コントロール | {ProductName}
-_description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets.今すぐお試しください。
+_description: {Platform} タブ コンポーネントを使用すると、ユーザーはタブを上部に配置して、同様のデータ セットを切り替えることができます。今すぐお試しください。
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} タブ コンポーネント, インフラジスティックス
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 _language: ja
@@ -8,13 +8,14 @@ _language: ja
 
 # {Platform} Tabs (タブ) の概要
 
-The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more.
+{Platform} タブは軽量で使いやすいコンポーネントで、対応するコンテンツをタブ形式または通常は水平に配置されたタブのコレクションで整理します。
+{Platform} タブを使用すると、エンドユーザーは簡単にクリックしてさまざまなビューを表示できます。タブの向き、テンプレート、組み込みのヘッダー スタイル、アニメーション、スクロール ボタンなど、いくつかの機能とカスタマイズ オプションがあります。
 
 {ProductName} タブは、同様のデータ セットを整理して切り替えます。タブは、データ コンテンツの上部に配置されます。タブが選択されると、対応する ID を持つパネルが表示されます。このコンポーネントは、定義されたタブのみ (パネルなし) で使用できます。
 
 ## {Platform} タブの例
 
-The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
+以下の {Platform} タブの例では、3 つの異なるタブが 1 行に並んで表示されているため、それぞれをすばやく簡単に移動できます。
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
