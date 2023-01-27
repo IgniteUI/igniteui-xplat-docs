@@ -3,7 +3,6 @@ trigger:
     include:
     - vnext
     - master
-    - azure-pipelines
   paths:
     exclude:
     - '**/jp/*'
