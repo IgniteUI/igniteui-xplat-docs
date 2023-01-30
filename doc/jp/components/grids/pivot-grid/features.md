@@ -20,7 +20,7 @@ _language: ja
 
 {PivotGridTitle} コンポーネントには、以下で説明するように、そのディメンションに関連する追加の機能があります。
 
-<code-view style="height: 870px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
            github-src="{PivotGridSample}/features"

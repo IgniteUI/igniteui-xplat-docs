@@ -6,6 +6,14 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 namespace: Infragistics.Controls
 _language: ja
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} グリッド仮想データのバインディン
 
 {ProductName} Data Table / Data Grid は、1 行のコードでリモート データ ソースへのデータ バインドをサポートします。{Platform} データ テーブルの仮想データ ソースを使用すると、リモート URI と返される Odata エンティティで {Platform} グリッドを設定するだけで、残りの作業は {Platform} グリッドが行います。

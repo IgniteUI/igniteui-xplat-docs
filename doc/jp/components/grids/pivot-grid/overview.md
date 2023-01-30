@@ -21,7 +21,7 @@ _language: ja
 
 以下は、{Platform} ピボット データ セレクター コンポーネントと組み合わせた {Platform} ピボット グリッドの例です。このようにして、より柔軟なランタイム構成オプションを使用できます。
 
-<code-view style="height: 870px"
+<code-view style="height: 750px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
            github-src="{PivotGridSample}/pivot-grid-data-selector"
@@ -453,7 +453,7 @@ public PivotSalesData()
 
 上記のコードを使用すると、Product (製品) カテゴリの一意の列、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数に関連する集計を表示する次の例が得られます。
 
-<code-view style="height: 530px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
            github-src="{PivotGridSample}/features"

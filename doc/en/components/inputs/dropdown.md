@@ -1,16 +1,21 @@
 ---
-title: {Platform} Dropdown Component | {ProductName}
-_description: Add interactivity and see styling options to a scrollable list of items in your app. Get started using the Dropdown Component in {ProductName} now.
+title: {Platform} Dropdown List Component | {ProductName}
+_description: With {Platform} Dropdown List component you can add interactivity and see styling options to a scrollable list of items in your app. Try it now.  {Platform} now.
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Dropdown Component, Infragistics
 mentionedTypes: ['Dropdown', 'DropdownItem', 'DropdownHeader', 'DropdownGroup']
 ---
 
-# {Platform} Dropdown Overview
+# {Platform} Dropdown List Component - Overview
 
+Feature-rich, the {Platform} Dropdown list offers out-of-the-box filtering, accessibility, preselected values, flexible data binding, grouping, UI customization, and more. What this component practically does is to effectively and easily replace HTML select tags, enabling users to quickly choose a non-editable value from a predefined set of several options. 
 
-The {Platform} Dropdown is a component, which displays a toggleable list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a dropdown menu or you can simply use it to deliver more useful visual information by grouping data. With grouping you can use both flat and hierarchical data.
+The Ignite UI for {Platform} Dropdown component displays an toggle list of predefined values and allows users to easily select a single option item with a click. It can be quickly configured to act as a {Platform} dropdown menu or you can simply use it to deliver more useful visual information by grouping data. Also, with grouping you can use both flat and hierarchical data. 
+
+With our component, you get all the functions and customization options you need for your project – styling customizations, {Platform} Dropdown placement options, templates and ability to change what and how is displayed in the header, footer, body, list, etc. 
 
 ## {Platform} Dropdown Example
+
+The following {Platform} Dropdown List example demonstrates the use of simple interactive {Platform} Dropdown menu in action with three basic options to choose from. See how it works.
 
 <code-view style="height: 220px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -19,7 +24,7 @@ The {Platform} Dropdown is a component, which displays a toggleable list of pred
            github-src="inputs/dropdown/overview">
 </code-view>
 
-## Usage
+## How to use the Dropdown List with {ProductName}
 
 <!-- WebComponents -->
 First, you need to install the {ProductName} by running the following command:
@@ -81,7 +86,7 @@ The simplest way to start using the `Dropdown` is as follows:
 
 ### Target
 
-The Dropdown list is positioned relatively to its target. The `target` slot allows you to provide a built-in component which toggles the `open` property on click. In some cases you would want to use an external target or use another event to toggle the opening of the Dropdown. You can achieve this using the `Show`, `Hide` and `Toggle` methods which allow you to provide the target as a parameter. By default, the Dropdown list uses `absolute` CSS position. You will need to set the `PositionStrategy` of the Dropdown to `fixed` when the target element is inside a fixed container, but the Dropdown is not. The Dropdown list is automatically sized based on its content, if you want the list to have the same width as the target, you should set the `SameWidth` property to `true`.
+The {Platform} Dropdown list is positioned relatively to its target. The `target` slot allows you to provide a built-in component which toggles the `open` property on click. In some cases you would want to use an external target or use another event to toggle the opening of the Dropdown. You can achieve this using the `Show`, `Hide` and `Toggle` methods which allow you to provide the target as a parameter. By default, the Dropdown list uses `absolute` CSS position. You will need to set the `PositionStrategy` of the {Platform} Dropdown to `fixed` when the target element is inside a fixed container, but the Dropdown is not. The Dropdown list is automatically sized based on its content, if you want the list to have the same width as the target, you should set the `SameWidth` property to `true`.
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -92,7 +97,7 @@ The Dropdown list is positioned relatively to its target. The `target` slot allo
 
 ### Position
 
-The preferred placement of the Dropdown can be set using the `Placement` property. The default placement of the Dropdown is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Dropdown at the specified placement. The distance from the Dropdown list to its target can be specified using the `Distance` property.
+The preferred placement of the {Platform} Dropdown can be set using the `Placement` property. The default placement of the Dropdown is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Dropdown at the specified placement. The distance from the {Platform} Dropdown list to its target can be specified using the `Distance` property.
 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -129,7 +134,7 @@ You could use the `DropdownHeader` to provide a header for a group of items.
 
 ### Group
 
-The Dropdown items can also be grouped using the `DropdownGroup`, making it easier for users to differentiate separate categories.
+The {Platform} Dropdown's items can also be grouped using the `DropdownGroup`, making it easier for users to differentiate separate categories. See it in action in this {Platform} Dropdown List example:
 
 <code-view style="height: 420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
