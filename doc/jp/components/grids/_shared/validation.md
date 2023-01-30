@@ -671,7 +671,7 @@ public cellStyles = {
 <!-- Angular -->
 
 * [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
@@ -681,7 +681,7 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)

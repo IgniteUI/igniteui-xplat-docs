@@ -61,7 +61,7 @@ Without information about the sizes of the container and the items before render
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

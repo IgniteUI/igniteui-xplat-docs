@@ -481,7 +481,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)

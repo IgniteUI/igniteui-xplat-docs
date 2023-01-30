@@ -21,7 +21,7 @@ namespace: Infragistics.Controls.Charts
 
 ### 新しいコンポーネント
 
-* [Grid](grids/grid/overview.md)
+* [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
@@ -89,7 +89,7 @@ namespace: Infragistics.Controls.Charts
 ### {PackageGrids}
 
 * 新規機能:
-- [行のページング](grids/data-grid-row-paging.md)
+- [行のページング](grids/data-grid/row-paging.md)
 
 ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
@@ -157,7 +157,7 @@ namespace: Infragistics.Controls.Charts
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
 * `FinancialChart` にデフォルトで最終値の注釈を追加しました。
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました: 
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
@@ -182,10 +182,10 @@ namespace: Infragistics.Controls.Charts
 ### {PackageGrids}
 
 * 新規機能:
-    - [フィルター行](grids/data-grid-column-filtering.md)
-    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid-load-save-layout.md)
-    - [列をグループ化するための GroupBy 領域](grids/data-grid-row-grouping.md)
-    - [セルの結合](grids/data-grid-cell-merging.md)
+    - [フィルター行](grids/data-grid/column-filtering.md)
+    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+    - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+    - [セルの結合](grids/data-grid/cell-merging.md)
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
 * 重大な変更:

@@ -23,7 +23,7 @@ _language: ja
 
 <!-- Angular -->
 
-[Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう:
+<!-- [Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう: -->
 
 <!-- end: Angular -->
 
@@ -387,7 +387,7 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
-* [ページネーター](../paginator.md)
+<!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)

@@ -551,7 +551,7 @@ $custom-button: button-theme(
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ページング](paging.md)

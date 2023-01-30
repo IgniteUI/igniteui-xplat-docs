@@ -254,7 +254,7 @@ The difference is that for the child grid, when `Height` is set to percentages, 
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 
 Our community is active and always welcoming to new ideas.

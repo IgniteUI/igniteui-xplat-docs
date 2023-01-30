@@ -462,7 +462,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 ## Additional Resources
 
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

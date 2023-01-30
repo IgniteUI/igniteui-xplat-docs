@@ -235,7 +235,7 @@ TO DO
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)

@@ -11,12 +11,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2}**
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
-These new chart improvements include: 
+These new chart improvements include:
 
-* Responsive layouts for horizontal label rotation based on browser / screen size. 
-* Enhanced rendering for rounded labels on all platforms. 
+* Responsive layouts for horizontal label rotation based on browser / screen size.
+* Enhanced rendering for rounded labels on all platforms.
 * Added marker properties to StackedFragmentSeries.
 * Added `ShouldPanOnMaximumZoom` property.
 * New Category Axis Properties:
@@ -25,7 +25,7 @@ These new chart improvements include:
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -49,7 +49,7 @@ These new chart improvements include:
 * Changed `SummaryOperand` to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -69,7 +69,7 @@ These new chart improvements include:
 ### {PackageGrids}
 
 * New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+- [Row Paging](grids/data-grid/row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
@@ -77,17 +77,17 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ### {PackageGrids}
 
-#### Data Grid 
+#### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
 
 > [!NOTE]
 > The following breaking changes were introduced
 
-- Changed `ValueField` property from type string[] to string. 
+- Changed `ValueField` property from type string[] to string.
 
 ### {PackageInputs}
 
-#### Date Picker 
+#### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
 
 #### Multi-Column ComboBox
@@ -101,7 +101,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts} 
+### {PackageCharts}
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -139,10 +139,10 @@ Old brushes/outlines | New outline/brushes
 ### {PackageGrids}
 
 * New Features Added:
-    - [Filter Row](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
-    - [Cell Merging](grids/data-grid-cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
@@ -317,7 +317,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid.md) |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [Data Grid](grids/data-grid/overview.md) |
 
 - Code After Changes
 

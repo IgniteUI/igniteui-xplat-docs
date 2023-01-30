@@ -255,7 +255,7 @@ _language: ja
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。

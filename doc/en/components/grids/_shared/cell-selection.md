@@ -260,7 +260,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)

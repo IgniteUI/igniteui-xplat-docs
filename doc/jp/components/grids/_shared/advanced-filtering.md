@@ -482,7 +482,7 @@ $custom-drop-down: drop-down-theme(
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [フィルタリング](filtering.md)
 * [Excel スタイル フィルタリング](excel-style-filtering.md)
 * [仮想化とパフォーマンス](virtualization.md)

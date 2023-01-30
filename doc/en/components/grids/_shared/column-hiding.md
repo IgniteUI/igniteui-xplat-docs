@@ -551,7 +551,7 @@ Styles:
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
