@@ -472,24 +472,8 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
 
 この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の {ProductName} コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
-
-* `List`
-* `ListHeader`
-* `ListItem`
-
-使用したその他のコンポーネント:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 

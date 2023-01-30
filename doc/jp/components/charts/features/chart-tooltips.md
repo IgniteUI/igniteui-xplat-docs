@@ -80,3 +80,15 @@ _language: ja
 - `ToolTipType`
 - `CategoryChart`
 - `XamDataChart`
+
+
+`CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
+
+- `ToolTipType`
+
+`XamDataChart` コンポーネントでは、以下の API コンポーネントおよびプロパティを使用できます:
+
+- `DataToolTipLayer`
+- `ItemToolTipLayer`
+- `CategoryToolTipLayer`
+- `ShowDefaultToolTip`

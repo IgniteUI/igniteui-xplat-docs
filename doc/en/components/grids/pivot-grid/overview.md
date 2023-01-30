@@ -21,7 +21,7 @@ The rows and columns represent distinct data groups, and the data cell values re
 
 The following is an {Platform} Pivot Grid example in combination with the {Platform} Pivot Data Selector Component. This way you can have more flexible runtime configuration options.
 
-<code-view style="height: 870px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
            github-src="{PivotGridSample}/pivot-grid-data-selector"
@@ -453,7 +453,7 @@ public PivotSalesData()
 
 Using above code will result in the following example which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
 
-<code-view style="height: 530px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
            github-src="{PivotGridSample}/features"

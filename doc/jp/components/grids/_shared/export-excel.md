@@ -14,7 +14,7 @@ Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエ
 ## {Platform} Excel Exporter の例
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
@@ -94,7 +94,7 @@ public exportButtonHandler() {
 グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
@@ -111,7 +111,7 @@ public exportButtonHandler() {
 > [!NOTE]
 > Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"

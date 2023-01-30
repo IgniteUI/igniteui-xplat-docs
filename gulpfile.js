@@ -105,7 +105,7 @@ function transformFiles() {
       var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
-      // console.log("- " + file.path);
+      console.log("- transforming " + file.path);
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
@@ -418,6 +418,13 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
 
+    let platformName = PLAT;
+    if (platformName === "Angular") {
+        // excluding grids and shared topics from angular builds
+        excludedTopics.push('doc/**/grids/**/*.md');
+        excludedTopics.push('doc/**/grids/_shared/*.md');
+    }
+
     let excludedFiles = [];
     gulp.src(excludedTopics)
     .pipe(es.map(function(file, fileCallback) {
@@ -517,12 +524,6 @@ function buildPlatform(cb) {
         // //   'doc/jp/**/*.md',
         // //   'doc/kr/**/*.md',
         // ];
-
-        if (platformName === "Angular") {
-            // excluding grids and shared topics from angular builds
-            sources.push('!doc/**/grids/**/*.md');
-            sources.push('!doc/**/grids/_shared/*.md');
-        }
 
         gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
@@ -819,7 +820,7 @@ function generateRedirects(cb) {
     console.log(">>");
     console.log(">> Now, do the following steps:");
     console.log(">> - copy Angular and XPLAT rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
-    console.log(">> - copy all rules from ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
+    console.log(">> - copy all rules from  ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
     cb();
 }
 exports.generateRedirects = generateRedirects

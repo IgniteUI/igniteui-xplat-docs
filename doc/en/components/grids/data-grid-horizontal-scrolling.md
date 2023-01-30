@@ -6,6 +6,13 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 namespace: Infragistics.Controls
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Horizontal Scrolling
 
 The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enabled by setting the total width of the columns greater than the width of the {Platform} data grid.

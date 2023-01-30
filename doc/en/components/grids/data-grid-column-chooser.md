@@ -6,6 +6,13 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 namespace: Infragistics.Controls
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Grid Column Chooser Overview
 
 The {ProductName} Data Grid supports the ability show and hide columns with the UI through the `DataGridToolbar` component or by the `ColumnChooser` component that provides flexibility to place it anywhere on the page. The `IsHidden` property on the columns can also be used to quickly hide or show a single column programmatically for manual column generation, and the value of `IsHidden` will reflect in the `ColumnChooser` component. Each approach can be used interchangeably to change the visible state of the columns.

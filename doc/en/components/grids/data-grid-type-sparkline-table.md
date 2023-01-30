@@ -6,6 +6,13 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 namespace: Infragistics.Controls
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Column Sparkline
 
 The {ProductName} Data Table / Data Grid supports a Template Column which provides you to a way to embed other components such as {ProductName} sparkline component. Refer to the [Column Types](data-grid-column-types.md) topic for other types of columns supported in the `Grid` component.

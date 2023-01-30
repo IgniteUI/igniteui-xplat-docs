@@ -12,13 +12,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
-## {Platform} {ComponentTitle} cell editing and edit templates Example
+## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
            github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} cell editing and edit templates Example">
+           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
 </code-view>
 
 > [!NOTE]
@@ -658,7 +658,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
            github-src="{ComponentSample}/editing-style"

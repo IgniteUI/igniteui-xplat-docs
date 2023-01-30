@@ -35,7 +35,9 @@ _language: ja
 
 `{ComponentName}` で `RowEditable` プロパティを true に設定し、`Editable` プロパティがどの列にも明示的に定義されていない場合、編集は*主キー*以外のすべての列で有効になります。
 
-グリッドの[一括編集](batch-editing.md)は、[セル編集](cell-editing.md)モードと[行編集](row-editing.md)モードの両方で有効にできます。一括編集を設定するには、グリッドに **TransactionService** を提供する必要があります。
+<!-- 
+グリッドの[一括編集](batch-editing.md)は、[セル編集](cell-editing.md)モードと[行編集](row-editing.md)モードの両方で有効にできます。一括編集を設定するには、グリッドに **TransactionService** を提供する必要があります。 
+-->
 
 - **セルおよび一括編集** - このシナリオでは、各セルの変更は個別に保持され、元に戻す/やり直し操作はセル レベルで使用できます。
 - **行および一括編集** - このシナリオでは、変更は行レベルで保持されるため、元に戻す/やり直し操作は変更された各セルではなく、各行のセル全体に対して動作します。
@@ -177,7 +179,6 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 <!-- Angular -->
 
 * [{ComponentTitle} 概要](overview.md)
-* [CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
