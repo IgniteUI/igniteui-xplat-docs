@@ -557,7 +557,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -567,7 +567,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [ピボット グリッド機能](features.md)
 <!-- * [ピボット グリッドのリモート操作](remote-operations.md) -->
 

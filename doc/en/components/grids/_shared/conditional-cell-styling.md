@@ -767,7 +767,6 @@ constructor() {
 ## Additional Resources
 
 
-* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)

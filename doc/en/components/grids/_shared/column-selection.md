@@ -234,7 +234,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Selection](selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)

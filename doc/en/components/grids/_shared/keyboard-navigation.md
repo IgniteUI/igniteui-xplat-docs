@@ -334,7 +334,7 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

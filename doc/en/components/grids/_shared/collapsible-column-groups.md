@@ -243,7 +243,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

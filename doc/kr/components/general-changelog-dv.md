@@ -124,10 +124,10 @@ Old brushes/outlines | New outline/brushes
 ### DataGrid
 
 * New Features Added:
-    - [Filter Row](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
-    - [Cell Merging](grids/data-grid-cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
@@ -328,7 +328,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-| <!-- Blazor, React, WebComponents --> <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> <!-- end: Blazor, React, WebComponents --> | <!-- Blazor, React, WebComponents --> [Data Grid](grids/data-grid.md) <!-- end: Blazor, React, WebComponents --> |
+| <!-- Blazor, React, WebComponents --> <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> <!-- end: Blazor, React, WebComponents --> | <!-- Blazor, React, WebComponents --> [Data Grid](grids/data-grid/overview.md) <!-- end: Blazor, React, WebComponents --> |
 
 - Code After Changes
 

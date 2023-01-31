@@ -862,7 +862,7 @@ $custom-theme: grid-summary-theme(
 
 <!-- Angular -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -883,7 +883,7 @@ $custom-theme: grid-summary-theme(
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)

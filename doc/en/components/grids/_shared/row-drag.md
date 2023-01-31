@@ -951,7 +951,7 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 
 Our community is active and always welcoming to new ideas.
 

@@ -374,7 +374,7 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
 

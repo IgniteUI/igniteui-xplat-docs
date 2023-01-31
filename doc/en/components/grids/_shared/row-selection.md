@@ -624,7 +624,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Selection](selection.md)
 * [Cell selection](cell-selection.md)
 * [Paging](paging.md)

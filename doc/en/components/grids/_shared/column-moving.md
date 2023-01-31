@@ -323,7 +323,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 ## Additional Resources
 
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

@@ -428,7 +428,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
 <!-- Angular -->
 
 * [Build CRUD operations with igxGrid](/general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
 
@@ -436,7 +436,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
 
