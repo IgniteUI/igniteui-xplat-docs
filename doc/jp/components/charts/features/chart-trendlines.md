@@ -33,11 +33,18 @@ _language: ja
 - [チャート注釈](chart-annotations.md)
 - [チャート強調表示](chart-highlighting.md)
 
-## API メンバー
+## API リファレンス
 
-以下は、上記のセクションで説明した API メンバーのリストです。
+`CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
 
-- `CategoryChart`
-- `XamDataChart`
-- `FinancialChart`
-- `TrendlineType`
+- `TrendLineBrushes`
+- `TrendLinePeriod`
+- `TrendLineThickness`
+- `TrendLineType`
+
+`XamDataChart` コンポーネントでは、シリーズのほとんどのタイプに次の API プロパティがあります:
+
+- `TrendLineBrush`
+- `TrendLinePeriod`
+- `TrendLineThickness`
+- `TrendLineType`

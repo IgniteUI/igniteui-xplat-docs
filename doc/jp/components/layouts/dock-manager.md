@@ -3,15 +3,16 @@ title: {Platform} ドック マネージャー | レイアウト コントロー
 _description: インフラジスティックスの {Platform} ドック マネージャー コンポーネントを使用して、ペインでレイアウトを管理し、ペインのピン固定、サイズ変更、移動、非表示をカスタマイズします。{ProductName} ドック マネージャー チュートリアルを是非お試しください!
 _keywords: dock manager, layout, {ProductName}, Infragistics, ドック マネージャー, レイアウト, インフラジスティックス
 _language: ja
-mentionedTypes: ['DockManager']
+mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
+
 # {Platform} ドック マネージャーの概要
 
 Infragistics {Platform} Dock Manager は、ペインでアプリケーションのレイアウトを管理する方法を提供します。エンド ユーザーはペインをピン固定、サイズ変更、移動、最大化、非表示にすることでカスタマイズできます。
 
 ## {Platform} ドック マネージャーの例
 
-この例は、{Platform} ドック マネージャのほとんどの機能とドッキング オプションを示しています。
+この例は、アプリケーションで使用できる `DockManager` のほとんどの機能とドッキング オプションを示しています。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -54,7 +55,7 @@ defineCustomElements();
 > [!NOTE]
 > ドック マネージャー コンポーネントは ShadowDOM とスロットを使用するため、Internet Explorer 11 および Edge 18 以前 (Chromium 以外のバージョン) などの古いブラウザーではサポートされません。
 
-ドック マネージャーにはペインのレイアウトを説明する [`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティがあります。レイアウトの定義するには、[`rootPane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#rootpane) プロパティを設定し、子ペインを追加します。以下は、単一のコンテンツ ペインでレイアウトを定義する方法です。
+ドック マネージャーにはペインのレイアウトを説明する `Layout` プロパティがあります。レイアウトの定義するには、`RootPane` プロパティを設定し、子ペインを追加します。以下は、単一のコンテンツ ペインでレイアウトを定義する方法です。
 
 ```ts
 import { IgcDockManagerPaneType, IgcSplitPaneOrientation, IgcDockManagerComponent } from 'igniteui-dockmanager';
@@ -77,7 +78,7 @@ this.dockManager.layout = {
 };
 ```
 
-ペインのコンテンツをロードするために、ドック マネージャーは[スロット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/slot)を使用します。コンテンツ要素の [`slot`](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Global_attributes/slot) 属性はレイアウト構成のコンテンツ ペインの [`contentId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#contentid) と一致する必要があります。エンドユーザーがペインのサイズを変更する場合は、予測可能な応答のために、コンテンツ要素の幅と高さを **100%** に設定することを強くお勧めします。
+ペインのコンテンツをロードするために、ドック マネージャーは[スロット](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/slot)を使用します。コンテンツ要素の [slot](https://developer.mozilla.org/ja-JP/docs/Web/HTML/Global_attributes/slot) 属性はレイアウト構成のコンテンツ ペインの `ContentId` と一致する必要があります。エンドユーザーがペインのサイズを変更する場合は、予測可能な応答のために、コンテンツ要素の幅と高さを **100%** に設定することを強くお勧めします。
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -85,13 +86,13 @@ this.dockManager.layout = {
 </igc-dockmanager>
 ```
 
-ドック マネージャーは複数の[ペイン タイプ](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcdockmanagerpanetype.html)を定義します。
-* [Content pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html)
-* [Split pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html)
-* [Tab group pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html)
-* [Document host](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html)
+ドック マネージャーは複数の pane types を定義します。
+* `ContentPane`
+* `SplitPane`
+* `TabGroupPane`
+* `DocumentHost`
 
-各タイプのペインには [`size`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#size) プロパティがあります。親の方向に応じて、サイズはペインの幅または高さに影響します。ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。サイズが 200 と 100 に設定された 2 つの兄弟ペインがある場合、最初のペインは 2 番目のペインのサイズの 2 倍になります。親の絶対サイズが 900px の場合、それぞれ 600px と 300px にサイズ設定されます。
+各タイプのペインには `Size` プロパティがあります。親の方向に応じて、サイズはペインの幅または高さに影響します。ペインのサイズはその兄弟ペインのサイズに相対し、デフォルトは 100 です。サイズが 200 と 100 に設定された 2 つの兄弟ペインがある場合、最初のペインは 2 番目のペインのサイズの 2 倍になります。親の絶対サイズが 900px の場合、それぞれ 600px と 300px にサイズ設定されます。
 
 エンドユーザーは、ランタイムにレイアウトをカスタマイズするために以下のアクションを実行できます。
 * ペインをピン設定 / ピン解除します。
@@ -102,11 +103,11 @@ this.dockManager.layout = {
 * フローティング ペインをドックします。
 * ペインを最大化します。
 
-これらはすべてドック マネージャーの [`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティに反映されます。
+これらはすべてドック マネージャーの `Layout` プロパティに反映されます。
 
 ### コンテンツ ペイン
 
-[Content pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html) ヘッダーとコンテンツを含むペインを表します。スプリットされたペインまたはタブ グループ ペイン内でホストできます。以下はコンテンツ ペインの定義方法です。
+`ContentPane` ヘッダーとコンテンツを含むペインを表します。スプリットされたペインまたはタブ グループ ペイン内でホストできます。以下はコンテンツ ペインの定義方法です。
 
 ```ts
 const contentPane: IgcContentPane = {
@@ -116,7 +117,7 @@ const contentPane: IgcContentPane = {
 }
 ```
 
-[`header`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) プロパティはコンテンツ ペインのテキスト ヘッダーを提供するために使用されます。このテキストは複数の場所で描画されます。トップコンテンツペインヘッダー、ペインがタブグループにある場合はタブヘッダー、ペインが固定解除されている場合は固定解除ヘッダーです。[`headerId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#headerid)、[`tabHeaderId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#tabheaderid) および [`unpinnedHeaderId`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedheaderid) プロパティを使用してそれぞれこれらの場所にカスタム スロット コンテンツを提供できます。これらのプロパティのいずれかが設定されていない場合、[`header`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#header) テキストが使用されます。以下は、タブ ヘッダー スロット コンテンツを提供する方法です。
+`Header` プロパティはコンテンツ ペインのテキスト ヘッダーを提供するために使用されます。このテキストは複数の場所で描画されます。トップコンテンツペインヘッダー、ペインがタブグループにある場合はタブヘッダー、ペインが固定解除されている場合は固定解除ヘッダーです。`HeaderId`、`TabHeaderId` および `UnpinnedHeaderId` プロパティを使用してそれぞれこれらの場所にカスタム スロット コンテンツを提供できます。これらのプロパティのいずれかが設定されていない場合、`Header` テキストが使用されます。以下は、タブ ヘッダー スロット コンテンツを提供する方法です。
 
 ```html
 <igc-dockmanager id="dockManager">
@@ -134,7 +135,7 @@ const contentPane: IgcContentPane = {
 }
 ```
 
-ペインのピン固定が解除されると、ドック マネージャーのいずれかの端にタブ ヘッダーとして表示されます。エンドユーザーに選択されると、そのコンテンツはドッキングされたピン固定ペインの上に表示されます。コンテンツ ペインのピン固定を解除するには、[`isPinned`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) プロパティを **false** に設定します。
+ペインのピン固定が解除されると、ドック マネージャーのいずれかの端にタブ ヘッダーとして表示されます。エンドユーザーに選択されると、そのコンテンツはドッキングされたピン固定ペインの上に表示されます。コンテンツ ペインのピン固定を解除するには、`IsPinned` プロパティを **false** に設定します。
 
 ```ts
 const contentPane = {
@@ -145,17 +146,17 @@ const contentPane = {
 }
 ```
 
-[`isPinned`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#ispinned) プロパティはドキュメント ホストの外部にドッキングされているコンテンツ ペインのみに影響します。また、フローティング ペインでホストされているコンテンツ ペインのピン固定を解除することはできません。
+`IsPinned` プロパティはドキュメント ホストの外部にドッキングされているコンテンツ ペインのみに影響します。また、フローティング ペインでホストされているコンテンツ ペインのピン固定を解除することはできません。
 
-デフォルトでは、コンテンツ ペインのピン固定解除先は、ドキュメント ホストに対するペインの相対的な位置に基づいて自動的に計算されます。複数のドキュメント ホストが定義されている場合、ピン固定されていないコンテンツ ペインの親階層で最も近いホストが使用されます。ドキュメント ホストが定義されていない場合、デフォルトの場所 [`left`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/enums/igcunpinnedlocation.html#left) が使用されます。[`unpinnedLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#unpinnedlocation) プロパティを使用してピン固定が解除されたペインの行き先を設定することも可能です。
+デフォルトでは、コンテンツ ペインのピン固定解除先は、ドキュメント ホストに対するペインの相対的な位置に基づいて自動的に計算されます。複数のドキュメント ホストが定義されている場合、ピン固定されていないコンテンツ ペインの親階層で最も近いホストが使用されます。ドキュメント ホストが定義されていない場合、デフォルトの場所 `Left` が使用されます。`UnpinnedLocation` プロパティを使用してピン固定が解除されたペインの行き先を設定することも可能です。
 
-[`allowClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowclose)、[`allowPinning`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowpinning)、[`allowDocking`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowdocking) および [`allowFloating`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#allowfloating) プロパティを使用して、コンテンツ ペインで許可されるエンドユーザー操作を設定できます。
+`AllowClose`、`AllowPinning`、`AllowDocking` および `AllowFloating` プロパティを使用して、コンテンツ ペインで許可されるエンドユーザー操作を設定できます。
 
-コンテンツ ペインを定義するときに、[`documentOnly`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#documentonly) プロパティを true に設定して、ペインをドキュメント ホストにのみドッキングできるようにすることができます。
+コンテンツ ペインを定義するときに、`DocumentOnly` プロパティを true に設定して、ペインをドキュメント ホストにのみドッキングできるようにすることができます。
 
-コンテンツ ペインとそのコンテンツに対するユーザーの操作を制限するには、[`disabled`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#disabled) プロパティを true に設定します。これにより、単一のフローティング ペインでない限り、すべてのユーザーがペインを操作できなくなります。後者は移動、最大化、または閉じることができるため (最大化および閉じるためのペインの設定に従って)、ユーザーはその下の要素を見ることができますが、そのコンテンツを操作することはできません。
+コンテンツ ペインとそのコンテンツに対するユーザーの操作を制限するには、`Disabled` プロパティを true に設定します。これにより、単一のフローティング ペインでない限り、すべてのユーザーがペインを操作できなくなります。後者は移動、最大化、または閉じることができるため (最大化および閉じるためのペインの設定に従って)、ユーザーはその下の要素を見ることができますが、そのコンテンツを操作することはできません。
 
-デフォルトでは、ペインを閉じると、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトから削除されます。ただし、場合によってはペインを一時的に非表示にして後で表示することもできます。[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトを変更せずにそれを行うには、コンテンツペインの [`hidden`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igccontentpane.html#hidden) プロパティを使用できます。プロパティを **true** に設定すると UI から非表示になりますが、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) オブジェクトに残ります。デフォルトの閉じる動作をオーバーライドするには、このように [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントにサブスクライブできます。
+デフォルトでは、ペインを閉じると、`Layout` オブジェクトから削除されます。ただし、場合によってはペインを一時的に非表示にして後で表示することもできます。`Layout` オブジェクトを変更せずにそれを行うには、コンテンツペインの `Hidden` プロパティを使用できます。プロパティを **true** に設定すると UI から非表示になりますが、`Layout` オブジェクトに残ります。デフォルトの閉じる動作をオーバーライドするには、このように `PaneClose` イベントにサブスクライブできます。
 
 
 ```ts
@@ -169,7 +170,7 @@ this.dockManager.addEventListener('paneClose', ev => {
 
 ### 分割ペイン
 
-[Split pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html) は、[`orientation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#orientation) プロパティに基づいてすべての子[`ペイン`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#panes) を水平または垂直に積み重ねるコンテナー ペインです。以下は、2 つの子コンテンツ ペインを持つ水平の分割ペインの定義方法です。
+`SplitPane` は、`Orientation` プロパティに基づいてすべての子 `Panes` を水平または垂直に積み重ねるコンテナー ペインです。以下は、2 つの子コンテンツ ペインを持つ水平の分割ペインの定義方法です。
 
 ```ts
 const splitPane: IgcSplitPane = {
@@ -192,11 +193,11 @@ const splitPane: IgcSplitPane = {
 
 分割ペインは、他のスプリットされたペインを含むすべてのペイン タイプの子ペインを含むことができます。
 
-デフォルトでは、分割ペインが空の場合は表示されません。ただし、その動作を変更したい場合は、[`allowEmpty`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#allowempty) プロパティを true に設定すると、内部にペインがない場合でも、分割ペインが UI に表示されます。
+デフォルトでは、分割ペインが空の場合は表示されません。ただし、その動作を変更したい場合は、`AllowEmpty` プロパティを true に設定すると、内部にペインがない場合でも、分割ペインが UI に表示されます。
 
 ### タブ グループ ペイン
 
-[Tab group pane](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html) は、その子コンテンツ [`ペイン`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#panes)をタブ コンポーネントのタブとして表示します。以下は、2 つのタブそれぞれにコンテンツ ペインを持つタブ グループ ペインの定義方法です。
+`TabGroupPane` は、その子コンテンツ `Panes` をタブ コンポーネントのタブとして表示します。以下は、2 つのタブそれぞれにコンテンツ ペインを持つタブ グループ ペインの定義方法です。
 
 ```ts
 const tabGroupPane: IgcTabGroupPane = {
@@ -220,11 +221,11 @@ const tabGroupPane: IgcTabGroupPane = {
 
 タブは、それらが配置されているタブ グループから切り離さずに並べ替えることもできます。タブをクリックして、希望の位置まで左または右にドラッグできます。選択したタブをタブ領域の外にドラッグすると、フローティング ペインにデタッチされます。
 
-タブがないときにタブ グループ ペインを UI に表示する場合は、[`allowEmpty`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igctabgrouppane.html#allowempty) プロパティを true に設定します。
+タブがないときにタブ グループ ペインを UI に表示する場合は、`AllowEmpty` プロパティを true に設定します。
 
 ### ドキュメント ホスト
 
-[Document host](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdocumenthost.html) コード編集やデザイン ビュー用の Visual Studio のタブと同様のドキュメント タブ領域です。以下は、2 つのドキュメント タブを持つドキュメント ホストを定義する方法です。
+`DocumentHost` コード編集やデザイン ビュー用の Visual Studio のタブと同様のドキュメント タブ領域です。以下は、2 つのドキュメント タブを持つドキュメント ホストを定義する方法です。
 
 ```ts
 const docHost: IgcDocumentHost = {
@@ -255,7 +256,7 @@ const docHost: IgcDocumentHost = {
 
 ### フローティング ペイン
 
-フローティング ペインは、フローティング ウィンドウで他のペインの上に描画される分割ペインです。フローティング ペインの定義は、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) の [`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) プロパティに保存されます。以下は、単一のコンテンツ ペインを含むフローティング ペインを追加する方法です。
+フローティング ペインは、フローティング ウィンドウで他のペインの上に描画される分割ペインです。フローティング ペインの定義は、`Layout` の `FloatingPanes` プロパティに保存されます。以下は、単一のコンテンツ ペインを含むフローティング ペインを追加する方法です。
 
 ```ts
 const layout: IgcDockManagerLayout = {
@@ -282,13 +283,13 @@ const layout: IgcDockManagerLayout = {
 };
 ```
 
-[`floatingLocation`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatinglocation)、[`floatingWidth`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingwidth) と [`floatingHeight`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingheight) プロパティは絶対寸法をピクセル単位で表します。これらのプロパティは、[`floatingPanes`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagerlayout.html#floatingpanes) 配列の分割ペインにのみ適用されることに注意してください。
+`FloatingLocation`、`FloatingWidth` と `FloatingHeight` プロパティは絶対寸法をピクセル単位で表します。これらのプロパティは、`FloatingPanes` 配列の分割ペインにのみ適用されることに注意してください。
 
-[`floatingResizable`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcsplitpane.html#floatingresizable) と [`allowFloatingPanesResize`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#allowfloatingpanesresize) を使用して、フローティング ペインのサイズ変更を許可するかどうかを設定できます。`allowFloatingPanesResize` は **IgcDockManagerComponent** プロパティであるため、値が **false** に設定されている場合、フローティング ペインのサイズを変更することはできません。`floatingResizable` プロパティは、`floatPanes` 配列の各分割ペインに個別に適用できます。プロパティ値が設定されていない場合、デフォルトで `allowFloatingPanesResize` プロパティの値になります。`floatingResizable` プロパティが特定のペインに設定されている場合、その値は `allowFloatingPanesResize` プロパティ値に優先されます。
+`FloatingResizable` と `AllowFloatingPanesResize` を使用して、フローティング ペインのサイズ変更を許可するかどうかを設定できます。`allowFloatingPanesResize` は **IgcDockManagerComponent** プロパティであるため、値が **false** に設定されている場合、フローティング ペインのサイズを変更することはできません。`floatingResizable` プロパティは、`floatPanes` 配列の各分割ペインに個別に適用できます。プロパティ値が設定されていない場合、デフォルトで `allowFloatingPanesResize` プロパティの値になります。`floatingResizable` プロパティが特定のペインに設定されている場合、その値は `allowFloatingPanesResize` プロパティ値に優先されます。
 
 ### アクティブ ペイン
 
-ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、[`activePane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。[`activePaneChanged`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#activepanechanged) イベントにサブスクライブして、[`activePane`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#activepane) プロパティの変更をリッスンすることもできます。
+ドック マネージャー コンポーネントは、フォーカスを含むコンテンツ ペインを強調表示し、`ActivePane` プロパティで公開します。プロパティを設定することによってアクティブ ペインをプログラムで変更できます。`ActivePaneChanged` イベントにサブスクライブして、`ActivePane` プロパティの変更をリッスンすることもできます。
 
 ```ts
 this.dockManager.addEventListener('activePaneChanged', ev => {
@@ -299,7 +300,7 @@ this.dockManager.addEventListener('activePaneChanged', ev => {
 
 ### レイアウトの保存／読み込み
 
-レイアウトを復元または永続化するには、[`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
+レイアウトを復元または永続化するには、`Layout` プロパティの値を取得または設定します。以下は、文字列化された JSON としてレイアウトを保存する方法です。
 
 ```ts
 private savedLayout: string;
@@ -323,7 +324,7 @@ this.dockManager.layout = { ...layout };
 
 ### 実行時にペインを追加する
 
-コンテンツとペインは、実行時に [`layout`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#layout) に追加できます。以下の例では、コンテンツ、ドキュメント、およびフローティング ペインを追加する方法を確認できます。
+コンテンツとペインは、実行時に `Layout` に追加できます。以下の例では、コンテンツ、ドキュメント、およびフローティング ペインを追加する方法を確認できます。
 
 
 <code-view style="height: 700px"
@@ -337,14 +338,14 @@ this.dockManager.layout = { ...layout };
 
 ### イベント
 
-ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
+ドック マネージャー コンポーネントは、ペインを閉じる、ピン固定、サイズ変更、ドラッグするなど、特定のエンドユーザーの操作が実行されるとイベントを発生させます。ドック マネージャーのイベントの完全なリストは、[こちら]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html)です。
 
 <!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
  <!-- WebComponents, React, Angular -->
- [`paneClose`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneclose) イベントのイベント リスナーを追加する方法は以下の通りです。
+ `PaneClose` イベントのイベント リスナーを追加する方法は以下の通りです。
 
 ```ts
 this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
@@ -457,6 +458,8 @@ igc-dockmanager::part(pane-header-maximize-button) {
 スロット名 | 説明
 ----------|------------
 `closeButton` | 閉じるボタン。
+`paneHeaderCloseButton` | ペイン ヘッダーの閉じるボタン。
+`tabHeaderCloseButton` | タブ ヘッダーの閉じるボタン。
 `moreTabsButton` | その他のタブボタン。
 `moreOptionsButton` | その他のオプションボタン。
 `maximizeButton` | 最大化ボタン。
@@ -466,6 +469,48 @@ igc-dockmanager::part(pane-header-maximize-button) {
 `splitterHandle` | スプリッターのハンドル。
 
 各スロットの対応するパーツは、このページの**スタイル設定**セクションの **CSS パーツ**にあります。
+
+### CSS 変数
+
+次の表では、ドック マネージャー コンポーネントのスタイル設定に使用されるすべての CSS 変数について説明します。
+
+| CSS 変数         | 説明                                                                     |
+| -------------------- | ------------------------------------------------------------------------------- |
+| `--igc-background-color`               | ペイン ナビゲーター コンポーネント内のヘッダーの背景色。 |
+| `--igc-accent-color`                   | フォーカスされているペイン ヘッダー アクション パーツ内のボタンの背景色。 |
+| `--igc-active-color`                   | アクティブな状態のコンポーネントに使用されるテキストとボックス シャドウの色。 |
+| `--igc-border-color`                   | ペイン ヘッダー コンポーネントのボーダー下線の色。 |
+| `--igc-font-family`                    | ドック マネージャー コンポーネントの font-family。 |
+| `--igc-dock-background`                | ドック マネージャー、タブ、およびフローティング ペイン コンポーネントの背景色。 |
+| `--igc-dock-text`                      | ドック マネージャーおよびフローティング ペイン コンポーネントのテキストの色。 |
+| `--igc-pane-header-background`         | ペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pane-header-text`               | ペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-pane-content-background`        | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツの背景色。 |
+| `--igc-pane-content-text`              | ドック マネージャーおよびタブ パネル コンポーネント内のコンテンツのテキストの色。 |
+| `--igc-tab-text`                       | タブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background`                 | タブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color`               | タブ ヘッダー コンポーネントの境界線の色。 |
+| `--igc-tab-text-active`                | 選択したタブ ヘッダー コンポーネントのテキストの色。 |
+| `--igc-tab-background-active`          | 選択したタブ ヘッダー コンポーネントの背景色。 |
+| `--igc-tab-border-color-active`        | 選択したタブ ヘッダー コンポーネントのボーダーの色。 |
+| `--igc-pinned-header-background`       | ピン固定されていないペイン ヘッダー コンポーネントの背景色。 |
+| `--igc-pinned-header-text`             | ピン固定されていないペイン ヘッダー コンポーネントのテキストの色。 |
+| `--igc-splitter-background`            | スプリッター コンポーネントの背景色。|
+| `--igc-splitter-handle`                | スプリッター ハンドルの背景色。 |
+| `--igc-button-text`                    | ペイン ヘッダー アクション パーツ内のボタンの色。 |
+| `--igc-flyout-shadow-color`            | コンテンツ ペイン コンポーネントのボックス シャドウの色。 |
+| `--igc-joystick-background`            | ジョイスティックとルート ドッキング インジケーター コンポーネントの背景色。 |
+| `--igc-joystick-border-color`          | ジョイスティックとルート ドッキング インジケーター コンポーネントのボーダーの色。 |
+| `--igc-joystick-icon-color`            | ジョイスティックとルート ドッキング インジケーター コンポーネントのアイコンの色。 |
+| `--igc-joystick-background-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー背景色。 |
+| `--igc-joystick-icon-color-active`     | ジョイスティックとルート ドッキング インジケーター コンポーネントのホバー アイコンの色。 |
+| `--igc-floating-pane-border-color`     | フローティング ペインのボーダーの色。 |
+| `--igc-context-menu-background`        | コンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-background-active` | ホバーおよびフォーカス時のコンテキスト メニュー項目の背景色。 |
+| `--igc-context-menu-color`             | コンテキスト メニュー項目のテキストの色。 |
+| `--igc-context-menu-color-active`      | ホバーおよびフォーカス時のコンテキスト メニュー項目のテキストの色。 |
+| `--igc-drop-shadow-background`         | ドロップ シャドウの背景色。 |
+| `--igc-disabled-color`                 | 無効状態のコンポーネントのテキストの色。 |
 
 ## キーボード ナビゲーション
 
@@ -503,7 +548,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 ### その他
  - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
-サンプル [`demo`](dock-manager.md#{Platform}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+サンプル [demo](dock-manager.md#{Platform}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 <!-- WebComponents -->
 
@@ -545,7 +590,11 @@ igc-dockmanager::part(content-pane) {
 `splitter-ghost`| スプリッター コンポーネントのゴースト要素。
 `unpinned-pane-header` | 固定されていないペイン ヘッダー コンポーネント。
 `tab-header` | タブ ヘッダー コンポーネント。
-`selected` | 選択状態を示します。`tab-header` に適用されます。
+`tab-header-more-options-button` | タブ ヘッダーのその他のオプション ボタン。
+`tab-header-close-button` | タブ ヘッダーの閉じるボタン。
+`selected` | 選択状態を示します。`tab-header` および `tab-header-close-button` に適用されます。
+`hovered` | ホバー状態を示します。`tab-header-close-button` に適用されます。
+`header-title` | タブ ヘッダーのテキスト タイトル。
 `tab-strip-area` | タブ ヘッダーを含むタブ ストリップ領域。
 `tab-strip-actions` | タブ アクションを含むタブ ストリップ領域。
 `top` | タブの上位置を示します。`tab-header`、`tab-strip-area`、`tab-strip-actions` に適用されます。
@@ -566,14 +615,14 @@ igc-dockmanager::part(content-pane) {
 `pane-header-minimize-button` | ペイン ヘッダーの最小化ボタン。
 `pane-header-pin-button` | ペイン ヘッダーのピン固定ボタン。
 `pane-header-unpin-button` | ペイン ヘッダーのピン固定解除ボタン。
-`tab-header-more-options-button` | タブ ヘッダーのその他のオプションボタン。
-`tab-header-close-button` | タブ ヘッダーの閉じるボタン。
 `tabs-maximize-button` | タブの最大化ボタン。
 `tabs-minimize-button` | タブの最小化ボタン。
 `tabs-more-button` | その他のタブ ボタン。
 `context-menu-unpin-button` | コンテキスト メニューのピン固定解除ボタン。
 `context-menu-close-button` | コンテキスト メニューの閉じるボタン。
 `splitter-handle` | スプリッターのハンドル。
+`horizontal` | 水平位置を示します。`splitter-handle` に適用されます。
+`vertical` | 垂直位置を示します。`splitter-handle` に適用されます。
 
 ## テーマ
 
@@ -589,7 +638,7 @@ igc-dockmanager::part(content-pane) {
 
 ## ローカライズ
 
-ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語 (`en`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen) です。ドック マネージャーは、[英語 (`en`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsen)、[日本語 (`jp`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsjp)、[韓国語 (`ko`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringsko)、[スペイン語 (`es`)](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#igcdockmanagerresourcestringses) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[`addResourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addresourcestrings) メソッドを使用します。
+ドック マネージャー コンポーネントは、コンテキスト メニュー、ツールチップ、および aria 属性で使用される文字列のローカライズをサポートします。デフォルトでは、ドック マネージャー はその親の [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性を検索してページの言語を検出します。[lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていないか、ドック マネージャーがサポートしない値に設定されている場合、デフォルトの言語は [英語  (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN) です。ドック マネージャーは、[英語  (en)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsEN)、[日本語  (jp)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsJP)、[韓国語  (ko)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsKO)、[スペイン語  (es)]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#IgcDockManagerResourceStringsES) の組み込みローカライズ文字列を提供します。その他の言語のリソース文字列を提供するには、[addResourceStrings]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/index.html#addResourceStrings) メソッドを使用します。
 
 ```ts
 import { addResourceStrings } from 'igniteui-dockmanager';
@@ -602,10 +651,15 @@ const dockManagerStringsFr: IgcDockManagerResourceStrings = {
 addResourceStrings('fr', dockManagerStringsFr);
 ```
 
-ドック マネージャーは、文字列を変更できる [`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを公開します。[`resourceStrings`](https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#resourcestrings) プロパティを設定すると、ドック マネージャーはどの [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
+ドック マネージャーは、文字列を変更できる `ResourceStrings` プロパティを公開します。`ResourceStrings` プロパティを設定すると、ドック マネージャーはどの [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) 属性が設定されていても文字列を使用します。
 
 <!-- end: WebComponents -->
 
-## API メンバー
+## API リファレンス
 
- - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
+ - `DockManager`
+ - `DocumentHost`
+ - `DockManagerLayout`
+ - `ContentPane`
+ - `SplitPane`
+ - `TabGroupPane`

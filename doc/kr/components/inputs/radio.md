@@ -28,7 +28,7 @@ To get started with the radio web component, first you need to install the {Prod
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Radio` and `RadioGroup` in the typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Radio` and `RadioGroup` in the typescript file and register them by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
@@ -192,20 +192,14 @@ igc-radio::part(control checked) {
            github-src="inputs/radio/styling">
 </code-view>
 
-## Additional Resources
-
-<div class="divider--half"></div>
-
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
 
 ## API Reference
 
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

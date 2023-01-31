@@ -37,8 +37,11 @@ npm install {PackageWebComponents}
 
 Before using the `List`, you need and register it as follows:
 
+
 ```razor
-IgbListModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
 
 ```ts
@@ -316,7 +319,7 @@ igc-list-item::part(subtitle) {
 }
 
 igc-list-item::part(end) {
-    --igc-secondary-500: 230,48%,47%;
+    --ig-secondary-500: 230,48%,47%;
 }
 ```
 
@@ -348,19 +351,9 @@ Additional components that were used:
 
 <div class="divider--half"></div>
 
+
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
 

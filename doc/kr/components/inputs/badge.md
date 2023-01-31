@@ -29,8 +29,11 @@ The {ProductName} Badge is a component used in conjunction with avatars, navigat
 
 To get started with the `IgbBadge` component, you first need to register the `IgbBadgeModule`.
 
+
 ```razor
-IgbBadgeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 ```
 
 <!-- end: Blazor -->
@@ -43,7 +46,7 @@ To get started with the badge web component, first you need to install {ProductN
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Badge` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcBadgeComponent } from 'igniteui-webcomponents';
@@ -129,9 +132,8 @@ igc-badge::part(base) {
 
 * `Badge`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

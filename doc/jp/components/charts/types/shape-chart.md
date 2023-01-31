@@ -48,7 +48,7 @@ _language: ja
 - [折れ線チャート](line-chart.md)
 - [散布チャート](scatter-chart.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明された API メンバーのリストです。
 

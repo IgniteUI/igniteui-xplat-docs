@@ -27,7 +27,7 @@ To get started with the `NavDrawer`, first you need to install {ProductName} by 
 npm install {PackageComponents}
 ```
 
-Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+Next, you need to import the `NavDrawer`, along with the `NavDrawerHeaderItem` and `NavDrawerItem` in your typescript file and register them by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
@@ -228,19 +228,13 @@ igc-nav-drawer-header-item {
 * `NavDrawer`
 * `NavDrawerItem`
 * `NavDrawerHeaderItem`
-
-Additional Web Components that were used:
-
 * `Icon`
 * `Button`
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-Our community is active and always welcoming to new ideas.
-
-* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-webcomponents)
-* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

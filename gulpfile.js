@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 const argv = require('yargs').argv;
 const fs = require('fs');
 
-var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.1/'
+var fileRoot = 'c:/work/NetAdvantage/DEV/XPlatform/2022.2/'
 
 var mt = null; // MarkdownTransformer
 var ml = null; // MappingLoader
@@ -94,47 +94,6 @@ function readMappings() {
     });
 }
 
-// function buildSharedFiles(cb) {
-//     console.log("buildSharedFiles");
-//     ensureEnvironment();
-
-//     let sharedTopics = [];
-
-//     let source = [
-//         // "doc/en/**/general-getting-started.md",
-//         "doc/en/**/_shared/*.md",
-//         "doc/jp/**/_shared/*.md",
-//         "doc/kr/**/_shared/*.md"];
-//     gulp.src(source)
-//     // .pipe(getSharedTopics)
-//     .pipe(es.map(function(file, fileCallback) {
-//         // finding all shared topics
-//         var fileContent = file.contents.toString();
-//         if (fileContent.indexOf("sharedComponents") > 0) {
-//             var info = { contents: fileContent, path: file.path };
-//             sharedTopics.push(info);
-//         }
-//         fileCallback(null, file);
-//     })
-//     .on("end", () => {
-//         // console.log("buildSharedFiles " + sharedTopics.length);
-//         // generating topics from shared topics
-//         var generatedFiles = [];
-//         for (const file of sharedTopics) {
-
-//             var files = transformer.transformSharedFile(file.contents, file.path,
-//                 docsComponents, docsConfig[PLAT]);
-//             generatedFiles.push(...files);
-//         }
-//         // console.log("transformSharedFiles ");
-//         // console.log(generatedFiles);
-//         transformer.updateGitIgnore(generatedFiles);
-
-//         cb();
-//     }));
-// }
-// exports.buildSharedFiles = buildSharedFiles;
-
 function transformFiles() {
     ensureEnvironment();
 
@@ -146,7 +105,7 @@ function transformFiles() {
       var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
-      // console.log("- " + file.path);
+      console.log("- transforming " + file.path);
 
       transformer.transformContent(typeName, fileContent, file.path,
       (err, results) => {
@@ -180,8 +139,7 @@ function transformStaticFiles(platformName) {
     return es.map(function(file, cb) {
 
       var fileContent = file.contents.toString();
-    //   var typeName = path.basename(path.dirname(file.path))
-
+      // var typeName = path.basename(path.dirname(file.path))
       var replacements = docsConfig[platformName].replacements;
       //console.log(typeName);
       for (var i = 0; i < replacements.length; i++) {
@@ -372,7 +330,7 @@ function verifyApiSections(cb) {
     .pipe(es.map(function(file, fileCallback) {
         var filePath = file.dirname + "\\" + file.basename
         var fileContent = file.contents.toString();
-        var fileHasAPI = fileContent.indexOf(" API Members") > 0;
+        var fileHasAPI = fileContent.indexOf("API References") > 0;
         if (!fileHasAPI) {
             let apiLinks = [];
             let words = fileContent.split(' ');
@@ -398,7 +356,7 @@ function verifyApiSections(cb) {
 
             if (apiLinks.length > 0) {
                 apiLinks.sort();
-                console.log('missing API Section: ' + filePath + "\n ## API Members \n\n - " + apiLinks.join("\n - "));
+                console.log('missing API Section: ' + filePath + "\n## API References \n\n - " + apiLinks.join("\n - "));
             }
 
         }
@@ -421,13 +379,20 @@ function buildTOC(cb) {
     let excludedTopics = [];
     excludedTopics.push('doc/**/obsolete*.md');
     // uncomment these lines to build docs without topics:
+    // excludedTopics.push('doc/**/general*.md');
     // excludedTopics.push('doc/**/general-getting-started.md');
     // excludedTopics.push('doc/**/general-getting-started-*.md');
     // excludedTopics.push('doc/**/general-changelog-dv.md');
+    // excludedTopics.push('doc/**/general-changelog*.md');
     // excludedTopics.push('doc/**/general-nuget-feed.md');
     // excludedTopics.push('doc/**/general-installing-blazor.md');
-    // excludedTopics.push('doc/**/grids/grids.md');
-    // excludedTopics.push('doc/**/grids/lob-grid/*.md');
+    // excludedTopics.push('doc/**/general-cli*.md');
+    // excludedTopics.push('doc/**/grids/**/*.md');
+    // excludedTopics.push('doc/**/grids/grid/*.md');
+    // excludedTopics.push('doc/**/grids/_shared/*.md');
+    // excludedTopics.push('doc/**/grids/theming.md');
+    // excludedTopics.push('doc/**/grids/grids-header.md');
+    // excludedTopics.push('doc/**/grids/combo/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
@@ -448,9 +413,17 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/scheduling/*.md');
     // excludedTopics.push('doc/**/notifications/*.md');
     // excludedTopics.push('doc/**/themes/*.md');
+    // excludedTopics.push('doc/**/zoomslider-overview.md');
     // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
+
+    let platformName = PLAT;
+    if (platformName === "Angular") {
+        // excluding grids and shared topics from angular builds
+        excludedTopics.push('doc/**/grids/**/*.md');
+        excludedTopics.push('doc/**/grids/_shared/*.md');
+    }
 
     let excludedFiles = [];
     gulp.src(excludedTopics)
@@ -458,7 +431,9 @@ function buildTOC(cb) {
         var filePath = file.path.split('\\').join('/');
         var fileLocal = 'doc/' + filePath.split('/doc/')[1];
         // log(fileLocal);
-        excludedFiles.push(fileLocal);
+        if (excludedFiles.indexOf(fileLocal) < 0) {
+            excludedFiles.push(fileLocal);
+        }
         fileCallback(null, file);
     }))
     .on("end", () => {
@@ -481,7 +456,7 @@ function buildTOC(cb) {
         //     log("topics included in toc: " + topic);
         // }
 
-        includedTopics = ['doc/**/*.md'];
+        includedTopics = []; // ['doc/**/*.md'];
         gulp.src(['doc/**/*.md'])
         .pipe(es.map(function(topicFile, topicCallback) {
             var filePath = topicFile.path.split('\\').join('/');
@@ -492,9 +467,14 @@ function buildTOC(cb) {
                     includedInTOC = true;
                 }
             }
-            // excluding topics that are not in TOC but always including shared topics
-            if (!includedInTOC && filePath.indexOf("/_shared/") < 0) {
-                includedTopics.push('!' + fileLocal);
+
+            var isExcludedFile = excludedFiles.indexOf(fileLocal) > 0;
+            var isSharedFile = filePath.indexOf("/_shared/") > 0;
+            // skip topics that are explicitly excluded and include topics that are in TOC or shared topics
+            if (!isExcludedFile) {
+                if (includedInTOC || isSharedFile) {
+                    includedTopics.push(fileLocal);
+                }
             }
 
             topicCallback(null, topicFile);
@@ -537,18 +517,13 @@ function buildPlatform(cb) {
 
         // uncomment to force building specific set of topics
         // let sources = [
-        //   'doc/en/components/grids/pivot-grid/overview.md',
-        //   'doc/en/components/grids/_shared/template.md',
+        //   'doc/en/components/grids/grid/overview.md',
+        //   'doc/en/components/grids/_shared/editing.md',
+        //   'doc/en/components/grids/data-grid.md',
         // //   'doc/en/**/*.md',
         // //   'doc/jp/**/*.md',
         // //   'doc/kr/**/*.md',
         // ];
-
-        if (platformName === "Angular") {
-            // excluding grids and shared topics from angular builds
-            sources.push('!doc/**/grids/**/*.md');
-            sources.push('!doc/**/grids/_shared/*.md');
-        }
 
         gulp.src(sources, { base: "./doc/" })
         .pipe(transformFiles())
@@ -845,7 +820,7 @@ function generateRedirects(cb) {
     console.log(">>");
     console.log(">> Now, do the following steps:");
     console.log(">> - copy Angular and XPLAT rules from ./web.config file to: https://github.com/IgniteUI/igniteui-docfx/blob/vNext/en/web.config");
-    console.log(">> - copy all rules from ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
+    console.log(">> - copy all rules from  ./web.UrlRewriting.config file to: https://infragistics.visualstudio.com/DefaultCollection/IS/_git/Web?path=%2FUmbraco%2FU7.3%2FInfragistics.Web.Umbraco.Extensions%2Fconfig%2FUrlRewriting.config");
     cb();
 }
 exports.generateRedirects = generateRedirects

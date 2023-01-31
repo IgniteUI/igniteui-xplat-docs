@@ -126,7 +126,7 @@ public class EsriStyle
 }
 ```
 
- ## API Members
+## API References
 
  - `ArcGISOnlineMapImagery`
  - `XamGeographicMap`

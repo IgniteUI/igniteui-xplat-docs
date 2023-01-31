@@ -10,7 +10,8 @@ _language: ja
 
 すべての {ProductName} チャートには、位置などの多くの軸レイアウト オプションを構成するオプションが含まれているほか、シリーズ間で軸を共有したり、同じチャートに複数の軸を含めることができます。これらの機能は、以下の例で示されています。
 
-> 注: 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
+> [!NOTE]
+> 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
 ## 軸位置の例
 
@@ -88,7 +89,7 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 - [軸オプション](chart-axis-options.md)
 
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

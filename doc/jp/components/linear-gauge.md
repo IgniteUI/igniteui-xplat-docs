@@ -37,10 +37,12 @@ npm install --save {PackageGauges}
 
 `XamLinearGauge` を作成するには、以下のモジュールが必要です。
 
-```razor
-IgbLinearGaugeModule.Register(IgniteUIBlazor);
-```
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
+```
 
 ```ts
 // app.module.ts
@@ -934,16 +936,16 @@ ModuleManager.register(
 ```
 <div class="divider--half"></div>
 
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamLinearGauge`
+- `XamLinearGraphRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [ブレット グラフ](bullet-graph.md)
 - [ラジアル ゲージ](radial-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamLinearGauge`
-- `XamLinearGraphRange`

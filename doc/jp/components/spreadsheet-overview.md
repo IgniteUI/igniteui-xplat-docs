@@ -1,6 +1,6 @@
 ---
-title: {Platform} Spreadsheet コンポーネント – Ignite UI for {Platform}
-_description: Ignite UI for {Platform} Spreadsheet を使用して、柔軟なレイアウト、簡単なカスタマイズ オプション、Excel のような便利なインターフェイスを利用できます。表データを好きなように管理できます。
+title: {Platform} Spreadsheet コンポーネント – {ProductName}
+_description: {ProductName} Spreadsheet を使用して、柔軟なレイアウト、簡単なカスタマイズ オプション、Excel のような便利なインターフェイスを利用できます。表データを好きなように管理できます。
 _keywords: Excel Spreadsheet, {ProductName}, Infragistics, Excel スプレッドシート, インフラジスティックス
 _language: ja
 mentionedTypes: ['Spreadsheet']
@@ -66,9 +66,14 @@ npm install --save {PackageSpreadsheet}
 
 `Spreadsheet` を作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbExcelModule.Register(IgniteUIBlazor);
-IgbSpreadsheetModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbExcelModule),
+  typeof(IgbSpreadsheetModule)
+);
 ```
 
 ```ts
@@ -178,7 +183,7 @@ ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
 
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Spreadsheet`
  - `Workbook`

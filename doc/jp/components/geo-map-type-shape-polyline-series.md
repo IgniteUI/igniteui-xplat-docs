@@ -24,7 +24,7 @@ _language: ja
 `GeographicPolylineSeries` は、`GeographicShapeSeries` とよく似ていますが、地理空間データがポリゴンではなくポリラインでレンダリングされる点が異なります。
 
 ## データ要件
-コントロール内の他の種類の地理的シリーズと同様に、`GeographicPolylineSeries`  には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、ShapeMemberPath プロパティにマップされます。`GeographicPolylineSeries` は、コントロールで多角形をプロットするために、このマップされたデータ列のポイントを使用します。
+コントロール内の他の種類の地理的シリーズと同様に、`GeographicPolylineSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、ShapeMemberPath プロパティにマップされます。`GeographicPolylineSeries` は、コントロールで多角形をプロットするために、このマップされたデータ列のポイントを使用します。
 
 ## コード スニペット
 以下のコードは、`ShapefileConverter` を使用してシェイプ ファイルからロードした都市の場所に `GeographicPolylineSeries` をバインドする方法を示します。
@@ -282,7 +282,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
@@ -294,8 +294,6 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
@@ -305,7 +303,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

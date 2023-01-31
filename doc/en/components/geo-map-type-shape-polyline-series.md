@@ -281,7 +281,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries Outline="Red" ShapefileDataSource="DataSource" />
@@ -293,8 +293,6 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/AmericanRoads.shp",
@@ -304,7 +302,7 @@ public addSeriesWith(shapeData: any[], shapeBrush: string) {
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

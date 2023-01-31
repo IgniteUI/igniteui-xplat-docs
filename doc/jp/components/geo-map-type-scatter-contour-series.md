@@ -303,7 +303,7 @@ createContourSeries(data: any[])
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicContourLineSeries LongitudeMemberPath="Lon"
@@ -321,8 +321,6 @@ createContourSeries(data: any[])
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
         brushes += "rgba(14, 194, 14, 0.5) ";  // semi-transparent green
@@ -339,7 +337,7 @@ createContourSeries(data: any[])
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `FillScale`
  - `GeographicContourLineSeries`

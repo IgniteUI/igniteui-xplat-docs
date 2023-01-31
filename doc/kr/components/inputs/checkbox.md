@@ -30,8 +30,11 @@ At its core, the checkbox component allows for a choice between selected/unselec
 
 To get started with the checkbox component, you will need to include its module, like so:
 
+
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 <!-- end:Blazor>
@@ -44,7 +47,7 @@ To get started with the checkbox web component, first you need to install the {P
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -282,9 +285,8 @@ igc-checkbox::part(indicator checked) {
 
 * `Checkbox`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

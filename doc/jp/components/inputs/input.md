@@ -1,6 +1,6 @@
 ---
 title: {Platform} Input | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。Ignite UI for {Platform} を使用してアプリケーションを改善します。
+_description: インフラジスティックスの {Platform} Input は、ユーザーがデータを入力できるコンポーネントです。{ProductName} を使用してアプリケーションを改善します。
 _keywords: {Platform} input, {ProductName}, Infragistics, {Platform} 入力, インフラジスティックス
 mentionedTypes: ['Input', 'Icon', 'Radio']
 _language: ja
@@ -26,7 +26,7 @@ _language: ja
 
 <!-- Blazor -->
 
-<code-view style="height: 120px"
+<code-view style="height: 225px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
            alt="{Platform} Input の例"
@@ -39,8 +39,11 @@ Input コンポーネントの使用を開始するには、最初にそのモ�
 
 <!-- Blazor -->
 
+
 ```razor
-IgbInputModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Input` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -53,7 +56,7 @@ IgbInputModule.Register(IgniteUIBlazor);
 
 <!-- WebComponents -->
 
-開始するには、typescript ファイルに `Input` をインポートし、次のように [`defineComponents()`](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
+開始するには、typescript ファイルに `Input` をインポートし、次のように [defineComponents()](https://www.infragistics.com/products/ignite-ui-web-components/docs/typescript/latest/index.html#defineComponents) 関数を呼び出してコンポーネントを登録する必要があります。
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
@@ -176,44 +179,17 @@ igc-input::part(suffix){
            github-src="inputs/input/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-Input API の詳細については、次のリンクを参照してください。
-* `Input`
-
-使用したその他のコンポーネントとディレクティブ:
-* `Icon`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 <div class="divider"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例（英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Icon`
  - `Input`
  - `Radio`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

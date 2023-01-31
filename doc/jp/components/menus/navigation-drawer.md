@@ -55,9 +55,14 @@ IgrNavDrawerModule.register();
 
 `NavDrawer` を使用する前に、次のように登録する必要があります。
 
+
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
 
 <!-- Blazor -->
@@ -75,7 +80,6 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
-
 
 ## Navigation Drawer 項目の追加
 
@@ -478,47 +482,8 @@ igc-nav-drawer-header-item {
            github-src="menus/nav-drawer/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API リファレンス
-
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-
-使用したその他の Web Components:
-
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
-
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
 
  - `Button`
  - `Icon`
@@ -528,3 +493,8 @@ igc-nav-drawer-header-item {
  - `Navbar`
  - `RadioGroup`
  - `Radio`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

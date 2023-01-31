@@ -73,10 +73,22 @@ _language: ja
 - [チャート注釈](chart-annotations.md)
 - [チャート マーカー](chart-markers.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `ToolTipType`
 - `CategoryChart`
 - `XamDataChart`
+
+
+`CategoryChart` コンポーネントと `FinancialChart` コンポーネントは、次の API プロパティを共有します:
+
+- `ToolTipType`
+
+`XamDataChart` コンポーネントでは、以下の API コンポーネントおよびプロパティを使用できます:
+
+- `DataToolTipLayer`
+- `ItemToolTipLayer`
+- `CategoryToolTipLayer`
+- `ShowDefaultToolTip`

@@ -43,6 +43,9 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
- ## API Members
+> [!NOTE]
+This only tells components to switch their internal styles to the desired theme, you should also switch the global theme file to one of the listed files above.
+
+## API References
 
  - `ConfigureTheme`

@@ -60,7 +60,9 @@ IgrChipModule.register();
 Before using the `Chip`, you need to register it as follows:
 
 ```razor
-IgbChipModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Chip` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -84,7 +86,6 @@ The simplest way to start using the `Chip` is as follows:
 
     protected override void OnInitialized()
     {
-        IgbChipModule.Register(IgniteUIBlazor);
     }
 }
 ```
@@ -235,33 +236,14 @@ igc-chip::part(suffix) {
 </code-view>
 
 
-## API Reference
-
-* `Chip`
-
 <div class="divider--half"></div>
+
+## API References
+
+ - `Chip`
+
 
 ## Additional Resources
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
- ## API Members
-
- - `Chip`
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

@@ -21,7 +21,7 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## Usage
 
-To get started we need to import the `Button` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Button` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
@@ -43,7 +43,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 
 ## Type
 
-The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
+The button component will change its internal structure from a [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [<a>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
 In the case when the button component uses an actual `button` element internally, we can specify its `Type` by setting the property to any of the following values:
 
 - `submit` - when we want to submit the form data
@@ -181,15 +181,11 @@ igc-button::part(base) {
 ## API Reference
 
 * `Button`
-
-Additional Web Components that were used:
-
 * `RadioGroup`
 * `Radio`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

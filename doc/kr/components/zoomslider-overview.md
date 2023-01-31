@@ -3,7 +3,7 @@ title: {Platform} ZoomSlider | Data Visualization Tools | Data Binding | Infragi
 _description: Use the ZoomSlider within the data chart to easily display a subset of data. It is displayed with two handles representing minimum and maximum values.
 _language: kr
 _keywords: zoom slider, {ProductName}, Infragistics, data chart
-mentionedTypes: ['ZoomSlider, XamDataChart']
+mentionedTypes: ['ZoomSlider', 'XamDataChart']
 ---
 
 # Zoom Slider
@@ -39,11 +39,14 @@ When installing the chart package, the core package must also be installed.
 - **npm install --save {PackageCharts}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 The `ZoomSlider` requires the following modules:
 
+
 ```razor
-ZoomSliderModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbZoomSliderModule));
 ```
 
 ```ts

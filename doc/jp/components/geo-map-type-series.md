@@ -26,6 +26,6 @@ _language: ja
 - [シェイプ ポリゴン シリーズの使用](geo-map-type-shape-polygon-series.md)
 - [シェイプ ポリライン シリーズの使用](geo-map-type-shape-polyline-series.md)
 
-## API メンバー
+## API リファレンス
 
  - `XamGeographicMap`

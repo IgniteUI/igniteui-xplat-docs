@@ -59,8 +59,11 @@ IgrCircularProgressModule.register();
 
 `CircularProgress` を使用する前に、次のように登録する必要があります:
 
+
 ```razor
-IgbCircularProgressModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -215,45 +218,19 @@ IgbCircularProgressModule.Register(IgniteUIBlazor);
 | info               | 進行状況インジケーターの info の状態。       |
 | success            | 進行状況インジケーターの success 状態。  |
 
-<!-- WebComponents -->
 
-## API リファレンス
-
-Circular Progress Indicator の API の詳細については、次のリンクを参照してください:
-* `CircularProgress`
-
-使用したその他のコンポーネントとディレクティブ:
-* `CircularGradient`
-* `Button`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Button`
  - `Calendar`
  - `CircularGradient`
  - `CircularProgress`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

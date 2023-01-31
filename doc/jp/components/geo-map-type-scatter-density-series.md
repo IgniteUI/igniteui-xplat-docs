@@ -229,7 +229,7 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -251,8 +251,6 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 
         string csv = await Http.GetStringAsync(url);
@@ -292,7 +290,7 @@ onDataLoaded(csvData: string) {
 ```
 
 
-## API メンバー
+## API リファレンス
 
  - `GeographicHighDensityScatterSeries`
  - `GeographicHighDensityScatterSeries`

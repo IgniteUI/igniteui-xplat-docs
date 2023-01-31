@@ -62,6 +62,6 @@ this.dockManager.layout = {
 </igc-dockmanager>
 ``` -->
 
- ## API Members
+## API References
 
- - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
+ - `DockManager`

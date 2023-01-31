@@ -98,7 +98,8 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
+> [!NOTE]
+> 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
 
 ## 単一選択
 {ProductName} 評価コンポーネントには、ユーザーがさまざまな評価値に対してさまざまなアイコン / 要素を提供できる単一選択モードがあります。この場合、アイコン / 要素の 1 つだけを選択して、ユーザーからのフィードバックを反映させることができます。
@@ -134,7 +135,8 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] `step` 属性は単一選択モードでは機能しないことに注意してください。
+> [!NOTE]
+> `step` 属性は単一選択モードでは機能しないことに注意してください。
 
 ## 空および選択済み
 {ProductName} 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
@@ -221,19 +223,12 @@ IgrRatingModule.register();
            github-src="inputs/rating/styling">
 </code-view>
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

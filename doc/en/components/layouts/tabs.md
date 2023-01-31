@@ -1,15 +1,19 @@
 ---
-title: {Platform} Tabs | Layout Controls | Infragistics
-_description: Use Infragistics' {Platform} tabs component to switch between similar data sets.
+title: {Platform} Tabs Control | Layout Controls | {ProductName}
+_description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets. Try it Now
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 ---
 
-# {Platform} Tabs
+# {Platform} Tabs Overview
+
+The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more. 
 
 The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
 
 ## {Platform} Tabs Example
+
+The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -18,20 +22,25 @@ The {ProductName} Tabs organizes and switches between similar data sets. The tab
            github-src="layouts/tabs/overview">
 </code-view>
 
-## Usage
+## How to use Tabs with {ProductName}
 
 <!-- WebComponents -->
+
 First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
 
 Before using the `Tabs`, you need to register it as follows:
 
+
 ```razor
-IgbTabsModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbTabsModule));
 ```
 
 ```ts
@@ -66,15 +75,15 @@ Simple `Tabs` declaration is done as follows:
 
 ### Selection
 
-The `Tabs` emits `igcChange` event when the user selects an item either by key press or click. The `select` method allows you to select a tab by specifying its panel as string value.
+The `Tabs` emits `Change` event when the user selects an item either by key press or click. The `Select` method allows you to select a tab by specifying its panel as string value.
 
 If the selected tab is not specified on initial load, the first tab that is not disabled will be selected.
 
-The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `activation` property. Setting it to `manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
+The default behavior, which selects a tab when the user is navigating with the arrow keys, could be modified by the `Activation` property. Setting it to `Manual` will focus the next/previous tab on arrow key press, but the tab will be selected only after pressing <kbd>Space</kbd> or <kbd>Enter</kbd>
 
 ### Disabled Tab
 
-A tab is disabled by setting the `disabled` attribute:
+A tab is disabled by setting the `Disabled` attribute:
 
 ```html
 <igc-tab panel="first" disabled>Tab 1</igc-tab>
@@ -86,12 +95,12 @@ A tab is disabled by setting the `disabled` attribute:
 
 ### Alignment
 
-The `alignment` property controls how tabs are positioned. It accepts the following values:
+The `Alignment` property controls how {Platform} tabs are positioned. It accepts the following values:
 
-- `start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
-- `center`: the width of the tab depends on the content and occupies the tabs container's center.
-- `end`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
-- `justify`: all tabs are equal in width and fully fit the tabs container.
+- `Start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
+- `Center`: the width of the tab depends on the content and occupies the tabs container's center.
+- `End`: the width of the tab depends on the content and all tabs have equal padding. Last tab is aligned to the tabs container's right side.
+- `Justify`: all tabs are equal in width and fully fit the tabs container.
 
 If the space is not enough to fit all tabs, scroll buttons are displayed.
 
@@ -104,7 +113,7 @@ If the space is not enough to fit all tabs, scroll buttons are displayed.
 
 ### Scrolling
 
-Scroll buttons are shown when the available space is not enough to render all tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
+Scroll buttons are shown when the available space is not enough to render all {Platform} tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -117,11 +126,11 @@ Scroll buttons are shown when the available space is not enough to render all ta
 
 |Keys|Description|
 |----|-----------|
-| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to end if on first tab.  |
-| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `activation` is set to `manual` only focuses the tab. Scrolls to start if on last tab. |
+| <kbd>&larr;</kbd> | Selects previous (next in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to end if on first tab.  |
+| <kbd>&rarr;</kbd> | Selects next (previous in Right-to-Left mode) tab. If `Activation` is set to `Manual` only focuses the tab. Scrolls to start if on last tab. |
 | <kbd>Home</kbd> | Selects the first tab. |
 | <kbd>End</kbd> | Selects the last tab. |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `activation` is `manual` |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Selects the focused tab when `Activation` is `Manual` |
 
 ### Prefix / Suffix
 
@@ -167,33 +176,17 @@ igc-tab::part(base) {
 }
 ```
 
-<!-- WebComponents -->
-
 ## API Reference
 
 * `Tabs`
 * `Tab`
 * `TabPanel`
-
-Additional components and/or directives that were used:
 * `Icon`
 * `IconButton`
 * `RadioGroup`
 
-<!-- end: WebComponents -->
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

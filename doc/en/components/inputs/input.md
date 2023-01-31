@@ -1,6 +1,6 @@
 ---
 title: {Platform} Input | Data Visualization Tools | Infragistics
-_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with Ignite UI for {Platform}!
+_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with {ProductName}!
 _keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['Input', 'Icon', 'Radio']
 ---
@@ -25,7 +25,7 @@ The {ProductName} Input is a component where the user can enter data.
 
 <!-- Blazor -->
 
-<code-view style="height: 120px"
+<code-view style="height: 225px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
            alt="{Platform} Input Example"
@@ -38,8 +38,11 @@ To get started with the Input component, you first need to register its module.
 
 <!-- Blazor -->
 
+
 ```razor
-IgbInputModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Input` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -52,7 +55,7 @@ You will also need to link an additional CSS file to apply the styling to the `I
 
 <!-- WebComponents -->
 
-To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Input` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
@@ -175,44 +178,17 @@ igc-input::part(suffix){
            github-src="inputs/input/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the Input's API, refer to the following links:
-* `Input`
-
-Additional components and/or directives that were used:
-* `Icon`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 <div class="divider"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API Members
+## API References
 
  - `Icon`
  - `Input`
  - `Radio`
+
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

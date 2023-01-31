@@ -43,9 +43,14 @@ npm install --save {PackageMaps}
 
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
 
+
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbGeographicMapModule),
+  typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts
@@ -165,7 +170,7 @@ ModuleManager.register(
 - [シェイプ ポリゴン シリーズの使用](geo-map-type-shape-polygon-series.md)
 - [シェイプ ポリライン シリーズの使用](geo-map-type-shape-polyline-series.md)
 
-## API メンバー
+## API リファレンス
 
 以下は上記のセクションで説明した API メンバーのリストです。
 

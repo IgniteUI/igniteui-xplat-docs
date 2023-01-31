@@ -56,7 +56,9 @@ IgrListModule.register();
 Before using the `List`, you need to register it as follows:
 
 ```razor
-IgbListModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
 
 <!-- Blazor -->
@@ -458,7 +460,7 @@ igc-list-item::part(subtitle) {
 }
 
 igc-list-item::part(end) {
-    --igc-secondary-500: 230,48%,47%;
+    --ig-secondary-500: 230,48%,47%;
 }
 ```
 
@@ -469,52 +471,12 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API References
 
 In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
-* `List`
-* `ListHeader`
-* `ListItem`
-
-Additional components that were used:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
 
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-
-## API Members
+## API References
 
  - `Avatar`
  - `Button`
@@ -523,3 +485,8 @@ Additional components that were used:
  - `ListHeader`
  - `ListItem`
  - `List`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

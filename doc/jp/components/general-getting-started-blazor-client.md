@@ -3,6 +3,7 @@ title: 作業の開始 | {ProductName} | インフラジスティックス
 _description: インフラジスティックスの {Platform} コンポーネントを使用して、アプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとストリーミング ファイナンシャルおよびビジネス チャートを使用して、データの視覚化を向上させます。
 _keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
+mentionedTypes: []
 ---
 # Ignite UI for Blazor WebAssembly で作業を開始
 
@@ -59,7 +60,6 @@ await builder.Build().RunAsync();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -87,7 +87,6 @@ public static async Task Main(string[] args)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

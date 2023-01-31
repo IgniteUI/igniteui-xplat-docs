@@ -31,7 +31,7 @@ _language: ja
 <!-- - [ピラミッド チャート](pyramid-chart.md) -->
 - [シェープ チャート](shape-chart.md)
 
-## API メンバー
+## API リファレンス
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`

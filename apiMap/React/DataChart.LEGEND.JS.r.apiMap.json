@@ -180,6 +180,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"valueOriginal"}],"originalName":"ValueOriginal"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"valueMemberLabel"}],"originalName":"ValueMemberLabel"},
     { "names":[{"platform":"React","mappedType":"DataAbbreviationMode","mappedName":"valueAbbreviation"}],"originalName":"ValueAbbreviation"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"labelText"}],"originalName":"LabelText"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"unitsText"}],"originalName":"UnitsText"},

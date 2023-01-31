@@ -1,6 +1,6 @@
 ---
-title: {Platform} Spreadsheet Component – Ignite UI for {Platform}
-_description: Get flexible layouts, easy customization options & convenient Excel-like interface with Ignite UI for {Platform} Spreadsheet. Manage tabular data the way you want!
+title: {Platform} Spreadsheet Component – {ProductName}
+_description: Get flexible layouts, easy customization options & convenient Excel-like interface with {ProductName} Spreadsheet. Manage tabular data the way you want!
 _keywords: Excel Spreadsheet, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
@@ -61,13 +61,18 @@ npm install --save {PackageSpreadsheet}
 </pre>
 
 
-## Required Modules
+## Component Modules
 
 The `Spreadsheet` requires the following modules:
 
+
 ```razor
-IgbExcelModule.Register(IgniteUIBlazor);
-IgbSpreadsheetModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbExcelModule),
+    typeof(IgbSpreadsheetModule)
+);
 ```
 
 ```ts
@@ -177,7 +182,7 @@ ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
 
 ```
 
-## API Members
+## API References
 
  - `Spreadsheet`
  - `Workbook`

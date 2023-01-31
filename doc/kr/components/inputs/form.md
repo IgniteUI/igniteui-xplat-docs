@@ -72,7 +72,7 @@ The Form component raises the following events:
 - igcSubmit - Raised when the form is submitted
 - igcReset - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the `Submit`] event:
+Here is an example showing how to add an event listener for the `Submit] event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -94,21 +94,14 @@ The Form component exposes the following methods:
 
 ## API References
 
-For more detailed information regarding the form's API, refer to the following links:
 * `Form`
-
-Additional components and/or directives that were used:
 - `Button`
-- `Checkbox`]
+- `Checkbox`
 * `Input`
 * `Radio`
 * `Switch`
 
-<div class="divider"></div>
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
-
-* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

@@ -1,6 +1,6 @@
 ---
-title: {Platform} Calendar | Calendar | インフラジスティックス
-_description: アプリケーションが日付情報を表示し、ユーザーが {ProductName} Calendar コンポーネントを使用して日付情報を入力するための直感的な Calendar を作成します。
+title: {Platform} Calendar コンポーネント - {ProductName}
+_description: {Platform} Calendar (カレンダー) コンポーネントを使用すると、ユーザーはアプリケーション用の直感的なカレンダーを作成し、3 つの異なる選択モードを使用して日付情報を表示できます。今すぐお試しください。
 _keywords: {Platform} Calendar, {Platform} カレンダー, {ProductName}, インフラジスティックス
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 _language: ja
@@ -8,12 +8,13 @@ _language: ja
 
 # {Platform} Calendar (カレンダー) の概要
 
-{ProductName} Calendar コンポーネントは、日付情報を表示するための簡単で直感的な方法を提供します。
+{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。 
 
+Ignite UI for {ProductName} Calendar は、日付情報を表示するための簡単で直感的な方法を提供します。単一または複数の日付選択モード、日付範囲の強表示と選択、キーボード ナビゲーション、週番号の有効化、サイズと間隔のオプションなど、さまざまな機能がパックされています。
 
 ## {Platform} Calendar の例
 
-このサンプルは、単一の日付を選択するオプションを使用して `Calendar` を作成する方法を示しています。
+次の {Platform} `Calendar` コンポーネントの例は、1 日選択モードの基本的なカレンダーを示しています。それがどのように機能するかを確認するか、コード ビハインドを調べます。
 
 <div class="divider--half"></div>
 
@@ -24,7 +25,7 @@ _language: ja
            github-src="scheduling/calendar/overview">
 </code-view>
 
-## 使用方法
+## {ProductNameShort} を使用して {Platform} で Calendar を作成する方法
 
 <!-- WebComponents -->
 
@@ -44,7 +45,7 @@ npm install {PackageWebComponents}
 npm install igniteui-react
 ```
 
-次に、以下のように、`Calendar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{ProductName} `Calendar` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrCalendarModule, IgrCalendar } from 'igniteui-react';
@@ -57,13 +58,16 @@ IgrCalendarModule.register();
 
 `Calendar` を使用する前に、次のように登録する必要があります。
 
+
 ```razor
-IgbCalendarModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCalendarModule));
 ```
 
 <!-- Blazor -->
 
-また、追加の CSS ファイルをリンクして、スタイルを `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+また、追加の CSS ファイルをリンクして、スタイルを {ProductName} `Calendar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
 
 ```razor
 <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
@@ -77,7 +81,7 @@ import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
 defineComponents(IgcCalendarComponent);
 ```
 
-`Calendar` の使用を開始する最も簡単な方法は次のとおりです。
+{ProductName} `Calendar` の使用を開始する最も簡単な方法は次のとおりです。
 
 ```html
 <igc-calendar></igc-calendar>
@@ -93,7 +97,7 @@ defineComponents(IgcCalendarComponent);
 
 ### 単一モード
 
-ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。デフォルトでは、`Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
+ユーザーは、単一選択、複数選択、または範囲選択の 3 つの異なる選択モードから選択できます。デフォルトでは、{ProductName} `Calendar` は単一選択モードを使用していますが、この例に示すように `Selection` プロパティを設定することで変更できます。
 
 ```html
 <igc-calendar selection="multiple"></igc-calendar>
@@ -140,19 +144,19 @@ defineComponents(IgcCalendarComponent);
 
 ### Active View と Date
 
-Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `ActiveView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`ActiveDate` プロパティを設定することで変更できます。`ActiveDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
+{ProductName} Calendar コンポーネントを使用すると、日、月、年の 3 つの異なるビューを切り替えることができます。コンポーネントの `ActiveView` プロパティは、現在のビューを反映します。デフォルトでは、Calendar は最初に読み込まれたときに現在の日付を表示します。これは、`ActiveDate` プロパティを設定することで変更できます。`ActiveDate` プロパティは、エンド ユーザーが現在表示している日付の変更も反映します。
 
 <!-- WebComponents -->
 
 ### ヘッダー オプション
 
-デフォルトでは、Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを **false** に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
+デフォルトでは、{ProductName} Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを **false** に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
 
 > [!NOTE]
-> `Selection` が複数に設定されている場合、Calendar ヘッダーが描画されないことに注意してください。
+> `Selection` が複数に設定されている場合、{ProductName} Calendar ヘッダーが描画されないことに注意してください。
 
 > [!NOTE]
-> Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
+> {ProductName} Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
 
 {ProductName} Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
 
@@ -177,7 +181,7 @@ Calendar コンポーネントを使用すると、日、月、年の 3 つの�
 
 ### ローカライズおよび書式設定
 
-カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。`Calendar` では、これらは `Locale`、`FormatOptions`、`WeekStart` のプロパティを介して制御およびカスタマイズされます。
+カレンダーにおいてローカライズおよび書式設定はとても重要な要素です。{ProductName} `Calendar` では、これらは `Locale`、`FormatOptions`、`WeekStart` のプロパティを介して制御およびカスタマイズされます。
 
 先に進んで、他のカスタマイズと一緒にそれらを試してみましょう。最初に設定する必要があるのは、週の開始日を制御する `WeekStart` です。デフォルトは `Sunday` なので、`Monday` に設定します。また、Calendar ビューで月と平日を書式設定するために使用されるオプションを指定する `FormatOptions` プロパティをカスタマイズします。最後に、ユーザーの場所の選択に基づいて、`Locale` プロパティを値に設定します:
 
@@ -506,48 +510,23 @@ igc-calendar::part(year-inner current selected) {
            github-src="scheduling/calendar/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API リファレンス
 
 * `Calendar`
 * `Radio`
 * `RadioGroup`
-
-<!-- end: WebComponents -->
+* `ActiveDate`
+* `ActiveView`
+* `After`
+* `Before`
+* `Between`
+* `Change`
+* `DateRangeDescriptor`
+* `DateRangeType`
+* `DateRange`
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
-
- - `ActiveDate`
- - `ActiveView`
- - `After`
- - `Before`
- - `Between`
- - `Calendar`
- - `Change`
- - `DateRangeDescriptor`
- - `DateRangeType`
- - `DateRange`
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

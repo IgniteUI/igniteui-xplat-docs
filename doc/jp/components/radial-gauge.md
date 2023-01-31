@@ -42,7 +42,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
@@ -50,8 +50,11 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 `XamRadialGauge` を作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbRadialGaugeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts
@@ -944,16 +947,16 @@ IgrRadialGaugeModule.register();
 </IgbRadialGauge>
 ```
 
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [ブレット グラフ](bullet-graph.md)
 - [リニア ゲージ](linear-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

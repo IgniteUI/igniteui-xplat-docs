@@ -1,0 +1,725 @@
+---
+title: Cell Editing in {Platform} {ComponentTitle} - Infragistics
+_description: The {ComponentTitle} is using in-cell editing. It has a default cell editing template, but it also lets you define your own custom templates for update-data action. Try it now!
+_keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+mentionedTypes: [{ComponentApiMembers}]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+---
+
+# {Platform} {ComponentTitle} Cell Editing
+
+{ProductName} `{ComponentName}` provides a great data manipulation capabilities and powerful API for {Platform} CRUD operations. By default the `{ComponentName}` is using **in cell** editing and different editors will be shown based on the column data type, thanks to the **default cell editing template**.
+
+In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
+
+## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
+
+<code-view style="height:700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
+           github-src="{ComponentSample}/editing-columns"
+           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
+</code-view>
+
+> [!NOTE]
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+## Cell Editing
+
+### Editing through UI
+
+You can enter edit mode for specific cell, when an editable cell is focused in one of the following ways:
+ - on double click;
+ - on single click - Single click will enter edit mode only if the previously selected cell was in edit mode and currently selected cell is editable. If the previously selected cell was not in edit mode, single click will select the cell without entering edit mode;
+ - on key press <kbd>Enter</kbd>;
+ - on key press <kbd>F2</kbd>;
+
+You can exit edit mode **without committing** the changes in one of the following ways:
+ - on key press <kbd>Escape</kbd>;
+ - when you perform *sorting*, *filtering*, *searching* and *hiding* operations;
+
+You can exit edit mode and **commit** the changes in one of the following ways:
+ - on key press <kbd>Enter</kbd>;
+ - on key press <kbd>F2</kbd>;
+ - on key press <kbd>Tab</kbd>;
+ - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
+ - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
+
+> [!NOTE]
+> The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.
+
+### Editing through API
+
+You can also modify the cell value through the `{ComponentName}` API but only if primary key is defined:
+
+<!-- ComponentStart: Grid -->
+```typescript
+public updateCell() {
+    this.grid1.updateCell(newValue, rowID, 'ReorderLevel');
+}
+```
+
+```razor
+this.grid.UpdateCell(newValue, rowID, 'ReorderLevel')
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+public updateCell() {
+    this.treeGrid.updateCell(newValue, rowID, 'Age');
+}
+```
+
+```razor
+this.treeGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+public updateCell() {
+    this.hierarchicalGrid.updateCell(newValue, rowID, 'Age');
+}
+```
+
+```razor
+this.hierarchicalGrid.UpdateCell(newValue, rowID, 'ReorderLevel')
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+Another way to update cell is directly through `Update` method of `GridCell`:
+
+<!-- ComponentStart: Grid -->
+```typescript
+public updateCell() {
+    const cell = this.grid1.getCellByColumn(rowIndex, 'ReorderLevel');
+    // You can also get cell by rowID if primary key is defined
+    // cell = this.grid1.getCellByKey(rowID, 'ReorderLevel');
+    cell.update(70);
+}
+```
+
+```razor
+private UpdateCell() {
+    IgbCell cell = this.grid1.GetCellByColumn(rowIndex, "ReorderLevel");
+    cell.Update(70);
+}
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+public updateCell() {
+    const cell = this.treeGrid.getCellByColumn(rowIndex, 'Age');
+    // You can also get cell by rowID if primary key is defined
+    // const cell = this.treeGrid.getCellByKey(rowID, 'Age');
+    cell.update(9999);
+}
+```
+
+```razor
+private UpdateCell() {
+    IgbCell cell = this.treeGrid.GetCellByColumn(rowIndex, "Age");
+    cell.Update(9999);
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+public updateCell() {
+    const cell = this.hierarchicalGrid.getCellByColumn(rowIndex, 'ReorderLevel');
+    // You can also get cell by rowID if primary key is defined
+    // cell = this.hierarchicalGrid.getCellByKey(rowID, 'ReorderLevel');
+    cell.update(70);
+}
+```
+
+```razor
+private UpdateCell() {
+    IgbCell cell = this.hierarchicalGrid.GetCellByColumn(rowIndex, "ReorderLevel");
+    cell.Update(70);
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### Cell Editing Templates
+
+You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
+
+<!-- Angular -->
+
+If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
+
+```html
+<igx-column field="class" header="Class" [editable]="true">
+    <ng-template igxCellEditor let-cell="cell" let-value>
+        <igx-select class="cell-select" [(ngModel)]="cell.editValue" [igxFocus]="true">
+            <igx-select-item *ngFor="let class of classes" [value]="class">
+                {{ class }}
+            </igx-select-item>
+        </igx-select>
+    </ng-template>
+</igx-column>
+```
+```html
+<igc-column id="class" field="class" header="Class" editable="true">
+</igc-column>
+```
+```ts
+constructor() {
+    var class = this.class = document.getElementById('class') as IgcColumnComponent;
+
+    this._bind = () => {
+        class.inlineEditorTemplateRef = this.classEditTemplate;
+    }
+    this._bind();
+}
+
+public classEditTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`
+        <igc-select class="cell-select" value="${ctx.cell.value}" >
+        </igc-select>
+    `;
+}
+```
+
+This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
+
+<code-view style="height:625px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
+           github-src="{ComponentSample}/cell-selection-style"
+           alt="{Platform} {ComponentTitle} Select Example">
+</code-view>
+
+<!-- end: Angular -->
+
+> [!NOTE]
+> Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
+
+> [!NOTE]
+> The cell template `Cell` controls how a column's cells are shown when outside of edit mode.
+> The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
+
+> [!NOTE]
+>By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- Angular -->
+
+<!-- For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration). -->
+
+<!-- end: Angular -->
+
+<!-- ComponentStart: Grid -->
+
+### {ComponentTitle} Excel Style Editing
+
+
+Using Excel Style Editing allows the user to navigate trough the cells just as he would using the Excel, and ever so quickly edit them.
+
+Implementing this custom functionality can be done by utilizing the events of the `{ComponentName}`. First we hook up to the grid's keydown events, and from there we can implement two functionalities:
+
+* Constant edit mode
+
+```typescript
+public keydownHandler(event) {
+  const key = event.keyCode;
+  const grid = this.grid;
+  const activeElem = grid.navigation.activeNode;
+
+  if(
+    (key >= 48 && key <= 57) ||
+    (key >= 65 && key <= 90) ||
+    (key >= 97 && key <= 122)){
+        // Number or Alphabet upper case or Alphabet lower case
+        const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
+        const cell = grid.getCellByColumn(activeElem.row, columnName);
+        if (cell && !grid.crudService.cellInEditMode) {
+            grid.crudService.enterEditMode(cell);
+            cell.editValue = event.key;
+        }
+    }
+}
+```
+
+* <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd> navigation
+
+```typescript
+if (key == 13) {
+    let thisRow = activeElem.row;
+    const column = activeElem.column;
+    const rowInfo = grid.dataView;
+
+    // to find the next eiligible cell, we will use a custom method that will check the next suitable index
+    let nextRow = this.getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
+
+    // and then we will navigate to it using the grid's built in method navigateTo
+    this.grid.navigateTo(nextRow, column, (obj) => {
+        obj.target.activate();
+        this.grid.clearCellSelection();
+        this.cdr.detectChanges();
+    });
+}
+```
+
+Key parts of finding the next eligible index would be:
+
+```typescript
+//first we check if the currently selected cell is the first or the last
+if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowIndex >= dataView.length - 1 && !previous)) {
+return currentRowIndex;
+}
+// in case using shift + enter combination, we look for the first suitable cell going up the field
+if(previous){
+return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
+}
+// or for the next one down the field
+return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
+```
+
+Please check the full sample for further reference:
+
+##### {Platform} Grid Excel Style Editing Sample
+
+<code-view style="height:550px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
+           github-src="{ComponentSample}/editing-excel-style"
+           alt="{Platform} {ComponentTitle} Excel Style Editing Example">
+</code-view>
+
+
+Main benefits of the above approach include:
+
+- Constant edit mode: typing while a cell is selected will immediately enter edit mode with the value typed, replacing the existing one
+- Any non-data rows are skipped when navigating with <kbd>Enter</kbd>/<kbd>Shift+Enter</kbd>. This allows users to quickly cycle through their values.
+
+<!-- ComponentEnd: Grid -->
+
+## CRUD operations
+
+> [!NOTE]
+> Please keep in mind that when you perform some **CRUD operation** all of the applied pipes like **filtering**, **sorting** and **grouping** will be re-applied and your view will be automatically updated.
+
+The `{ComponentName}` provides a straightforward API for basic CRUD operations.
+
+### Adding a new record
+
+The `{ComponentName}` component exposes the `AddRow` method which will add the provided data to the data source itself.
+
+<!-- ComponentStart: Grid -->
+```typescript
+// Adding a new record
+// Assuming we have a `getNewRecord` method returning the new row data.
+const record = this.getNewRecord();
+this.grid.addRow(record);
+```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.GridRef.AddRow(record);
+```
+
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+public addNewChildRow() {
+    // Adding a new record
+    // Assuming we have a `getNewRecord` method returning the new row data
+    // And specifying the parentRowID.
+    const record = this.getNewRecord();
+    this.treeGrid.addRow(record, 1);
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+public addRow() {
+    // Adding a new record
+    // Assuming we have a `getNewRecord` method returning the new row data
+    const record = this.getNewRecord();
+    this.hierarchicalGrid.addRow(record, 1);
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### Updating data in the {ComponentTitle}
+
+Updating data in the {ComponentTitle} is achieved through `UpdateRow` and `UpdateCell` methods but **only if the PrimaryKey for the grid is defined**. You can also directly update a cell and/or a row value through their respective **update** methods.
+
+<!-- ComponentStart: Grid -->
+```typescript
+// Updating the whole row
+this.grid.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+this.grid.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+this.selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = this.grid.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+// Updating the whole row
+this.treeGrid.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Tree Grid API
+this.treeGrid.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+this.selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = this.treeGrid.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+// Updating the whole row
+this.hierarchicalGrid.updateRow(newData, this.selectedCell.cellID.rowID);
+
+// Just a particular cell through the Grid API
+this.hierarchicalGrid.updateCell(newData, this.selectedCell.cellID.rowID, this.selectedCell.column.field);
+
+// Directly using the cell `update` method
+this.selectedCell.update(newData);
+
+// Directly using the row `update` method
+const row = this.hierarchicalGrid.getRowByKey(rowID);
+row.update(newData);
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+### Deleting data from the {ComponentTitle}
+
+Please keep in mind that `DeleteRow` method will remove the specified row only if a `PrimaryKey` is defined.
+
+<!-- ComponentStart: Grid -->
+```typescript
+// Delete row through Grid API
+this.grid.deleteRow(this.selectedCell.cellID.rowID);
+// Delete row through row object
+const row = this.grid.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+// Delete row through Tree Grid API
+this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
+// Delete row through row object
+const row = this.treeGrid.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+// Delete row through Grid API
+this.hierarchicalGrid.deleteRow(this.selectedCell.cellID.rowID);
+// Delete row through row object
+const row = this.hierarchicalGrid.getRowByIndex(rowIndex);
+row.delete();
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+
+These can be wired to user interactions, not necessarily related to the `{ComponentName}` for example, a button click:
+
+```html
+<button igxButton igxRipple (click)="deleteRow($event)">Delete Row</button>
+```
+
+### Cell Validation on Edit Event
+
+Using the `{ComponentName}`'s editing events, we can alter how the user interacts with the `{ComponentName}`.
+
+In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event:
+
+```typescript
+event.cancel = true
+```
+
+We'll also display a custom error message using [Toast](../../notifications/toast.md).
+
+The first thing we need to is bind to the grid's event:
+
+```html
+<{ComponentSelector} (cellEdit)="handleCellEdit($event)">
+</{ComponentSelector}>
+```
+<!-- ComponentStart: Grid -->
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+
+    this._bind = () => {
+        grid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: Grid -->
+<!-- ComponentStart: TreeGrid -->
+```ts
+constructor() {
+    var treeGrid = this.treeGrid = document.getElementById('treeGrid') as IgcTreeGridComponent;
+
+    this._bind = () => {
+        treeGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: TreeGrid -->
+<!-- ComponentStart: HierarchicalGrid -->
+```ts
+constructor() {
+    var hGrid = this.hGrid = document.getElementById('hGrid') as IgcHierarchicalGridComponent;
+
+    this._bind = () => {
+        hGrid.cellEdit = this.handleCellEdit;
+    }
+    this._bind();
+}
+```
+<!-- ComponentEnd: HierarchicalGrid -->
+The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **CellEdit** definition, we need to make sure that we check for our specific column before taking any action:
+
+<!-- ComponentStart: Grid -->
+```typescript
+export class MyGridEventsComponent {
+    public handleCellEdit(event: IGridEditEventArgs): void {
+        const column = event.column;
+        if (column.field === 'Ordered') {
+            const rowData = event.rowData;
+            if (!rowData) {
+                return;
+            }
+            if (event.newValue > rowData.UnitsInStock) {
+                event.cancel = true;
+                this.toast.open();
+            }
+        }
+    }
+}
+```
+
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+```typescript
+export class MyTreeGridEventsComponent {
+    public handleCellEdit(event: IGridEditEventArgs): void {
+        const column = event.column;
+        if (column.field === 'Age') {
+            if (event.newValue < 18) {
+                event.cancel = true;
+                this.toast.message = 'Employees must be at least 18 years old!';
+                this.toast.open();
+            }
+        } else if (column.field === 'HireDate') {
+            if (event.newValue > new Date().getTime()) {
+                event.cancel = true;
+                this.toast.message = 'The employee hire date must be in the past!';
+                this.toast.open();
+            }
+        }
+    }
+}
+```
+
+Here, we are validating two columns. If the user tries to set an invalid value for an employee's **Age** (below 18) or their **Hire Date** (a future date), the editing will be cancelled (the value will not be submitted) and a toast with an error message will be displayed.
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+```typescript
+export class MyHGridEventsComponent {
+    public handleCellEdit(event: IGridEditEventArgs) {
+        const today = new Date();
+        const column = event.column;
+        if (column.field === 'Debut') {
+            if (event.newValue > today.getFullYear()) {
+                this.toast.message = 'The debut date must be in the past!';
+                this.toast.open();
+                event.cancel = true;
+            }
+        } else if (column.field === 'LaunchDate') {
+            if (event.newValue > new Date()) {
+                this.toast.message = 'The launch date must be in the past!';
+                this.toast.open();
+                event.cancel = true;
+            }
+        }
+    }
+}
+```
+Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
+<!-- ComponentEnd: HierarchicalGrid -->
+
+The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
+
+<code-view style="height:650px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
+           github-src="{ComponentSample}/editing-events"
+           alt="{Platform} {ComponentTitle} Editing Event Example">
+</code-view>
+
+<!-- Angular -->
+
+## Styling
+
+The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
+
+In the below steps, we are going to go over how you can style the grid's cell in edit mode and how you can scope those styles.
+
+In order to use the [Ignite UI Theming Library](../themes/styles.md), we must first import the theme `index` file in our global styles:
+
+### Importing Style Library
+
+```scss
+@use "igniteui-angular/theming" as *;
+
+// IMPORTANT: Prior to {ProductName} version 13 use:
+// @import '~igniteui-angular/lib/core/styles/themes/index';
+```
+Now we can make use of all of the functions exposed by the {ProductName} theme engine.
+
+### Defining a Palette
+
+After we've properly imported the index file, we create a custom palette that we can use. Let's define two colors that we like and use them to build a palette with [igx-palette](../themes/palettes.md):
+
+```scss
+$white: #fff;
+$blue: #4567bb;
+
+$color-palette: palette($primary: $white, $secondary: $blue);
+```
+
+### Defining Themes
+
+We can now define the theme using our palette. The cells are styled by the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme), so we can use that to generate a theme for our `{ComponentName}`:
+
+```scss
+$custom-grid-theme: grid-theme(
+    $cell-editing-background: $blue,
+    $cell-edited-value-color: $white,
+    $cell-active-border-color: $white,
+    $edit-mode-color: color($color-palette, "secondary", 200)
+);
+```
+
+### Applying the Theme
+
+The easiest way to apply our theme is with a `sass` `@include` statement in the global styles file:
+
+```scss
+@include grid($custom-grid-theme);
+```
+
+This way, the theme will apply to **all** grids in our application. If we wish to apply this custom styling only to a specific component, we need to scope the theme.
+
+### Scoped Component Theme
+
+In order for the custom theme to affect only our specific component, we can move all of the styles we just defined from the global styles file to our custom component's style file (including the [import](#importing-style-library) of the `index` file).
+
+This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
+
+ >[!NOTE]
+ >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
+ >[!NOTE]
+ >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
+
+```scss
+:host {
+    ::ng-deep {
+            @include grid($custom-grid-theme);
+        }
+    }
+}
+```
+
+### Styling Demo
+
+In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
+
+<code-view style="height:700px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
+           github-src="{ComponentSample}/editing-style"
+           alt="{Platform} {ComponentTitle} Editing Style Example">
+</code-view>
+
+>[!NOTE]
+>The sample will not be affected by the selected global theme from **Change Theme**.
+
+<!-- end: Angular -->
+
+## API References
+
+<!-- ComponentStart: Grid, HierarchicalGrid -->
+
+* `GridRow`
+
+<!-- ComponentEnd: Grid, HierarchicalGrid -->
+<!-- ComponentStart: TreeGrid -->
+
+* `TreeGridRow`
+
+<!-- ComponentEnd: TreeGrid -->
+* `GridCell`
+* `InputDirective`
+* `DatePickerComponent`
+
+## Additional Resources
+
+<!-- Angular -->
+
+* [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
+
+
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+<!-- ComponentStart:  HierarchicalGrid -->
+* [Searching](search.md)
+<!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Angular -->
+
+<!-- Blazor -->
+
+
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+<!-- ComponentStart:  HierarchicalGrid -->
+* [Searching](search.md)
+<!-- ComponentEnd:  HierarchicalGrid -->
+
+<!-- end: Blazor -->

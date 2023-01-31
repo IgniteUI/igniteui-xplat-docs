@@ -308,7 +308,7 @@ createAreaSeries(data: any[]) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
@@ -326,8 +326,6 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
         brushes += "rgba(14, 194, 14, 0.5) ";  // semi-transparent green
@@ -344,7 +342,7 @@ createAreaSeries(data: any[]) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ColorMemberPath`
  - `ColorScale`

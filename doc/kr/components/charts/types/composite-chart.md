@@ -29,7 +29,7 @@ The following example demonstrates how to create Composite Chart using `ColumnSe
 - [Line Chart](line-chart.md)
 - [Stacked Chart](stacked-chart.md)
 
-## API Members
+## API References
 - `CategoryXAxis`
 - `ColumnSeries`
 - `LineSeries`

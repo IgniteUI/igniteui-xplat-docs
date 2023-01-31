@@ -1,6 +1,6 @@
 ---
 title: {Platform} コンボ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform} コンボ コンポーネントは、データを表示するのに最適なチャートを選択するのに役立ちます。Ignite UI for {Platform} でグラフと視覚化を改善します!
+_description: インフラジスティックスの {Platform} コンボ コンポーネントは、データを表示するのに最適なチャートを選択するのに役立ちます。{ProductName} でグラフと視覚化を改善します!
 _keywords: {Platform} combo, drop down, {ProductName}, Infragistics, {Platform} コンボ, ドロップダウン, インフラジスティックス
 mentionedTypes: []
 _language: ja
@@ -48,8 +48,9 @@ npm install --save {PackageLayouts}
 
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
@@ -106,7 +107,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -154,7 +154,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -196,7 +195,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -236,7 +234,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -280,13 +277,12 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `DataSource`
  - `Fields`

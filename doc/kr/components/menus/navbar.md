@@ -31,7 +31,7 @@ npm install {PackageWebComponents}
 
 ## Usage
 
-To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the `Navbar` component, first you need to import the component in our typescript file and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```typescript
 import { defineComponents, IgcNavbarComponent } from 'igniteui-webcomponents';
@@ -96,17 +96,13 @@ If all went well, you should see the following in your browser:
 
 ## API References
 
-For more detailed information regarding the navbar's API, refer to the following links:
 * `Navbar`
-
-Additional components and/or directives that were used:
 * `Icon`
 
 <div class="divider"></div>
 
-## Additional Resources
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
 
-* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

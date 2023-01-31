@@ -170,7 +170,7 @@ _language: ja
 - [縦棒チャート](column-chart.md)
 - [折れ線チャート](line-chart.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

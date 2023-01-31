@@ -61,9 +61,14 @@ IgrRadioGroupModule.register();
 
 `Radio` と `RadioGroup` を使用する前に、次のように登録する必要があります:
 
+
 ```razor
-IgbRadioModule.Register(IgniteUIBlazor);
-IgbRadioGroupModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbRadioModule),
+  typeof(IgbRadioGroupModule)
+);
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Radio` および `RadioGroup` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -337,9 +342,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 
 ```scss
 :root {
-    --igc-primary-h: 60deg;
-    --igc-primary-s: 100%;
-    --igc-primary-l: 25%;
+    --ig-primary-h: 60deg;
+    --ig-primary-s: 100%;
+    --ig-primary-l: 25%;
 }
 
 igc-radio::part(control) {
@@ -354,40 +359,17 @@ igc-radio::part(control) {
            github-src="inputs/radio/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Form`
  - `RadioGroup`
  - `Radio`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

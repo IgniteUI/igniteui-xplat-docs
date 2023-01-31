@@ -28,7 +28,7 @@ To get started with the Calendar component, first you need to install {ProductNa
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
+The next step is to import the `Calendar` and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -396,10 +396,8 @@ The following sample demonstrates the above CSS configuration:
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
-
-* [{Platform} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [{Platform} **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

@@ -43,11 +43,13 @@ npm install --save {PackageGauges}
 
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbBulletGraphModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
@@ -69,11 +71,9 @@ IgrBulletGraphModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
 import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
+import { ModuleManager } from 'igniteui-webcomponents-core';
 
 // register the modules
 ModuleManager.register(
@@ -81,6 +81,7 @@ ModuleManager.register(
     IgcBulletGraphModule
 );
 ```
+
 
 <div class="divider--half"></div>
 
@@ -938,16 +939,17 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
+
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [リニア ゲージ](linear-gauge.md)
 - [ラジアル ゲージ](radial-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

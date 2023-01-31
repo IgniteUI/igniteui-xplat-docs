@@ -41,16 +41,19 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
-## Required Modules
+## Component Modules
 
 The `XamRadialGauge` requires the following modules:
 
+
 ```razor
-IgbRadialGaugeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts
@@ -943,16 +946,16 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbRadialGauge>
 ```
 
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Bullet Graph](bullet-graph.md)
 - [Linear Gauge](Linear-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

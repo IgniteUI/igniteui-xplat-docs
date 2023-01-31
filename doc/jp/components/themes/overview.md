@@ -44,6 +44,9 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
-## API メンバー
+> [!NOTE]
+これは、内部スタイルを目的のテーマに切り替えるようにコンポーネントに指示するだけで、グローバル テーマ ファイルも上記のファイルのいずれかに切り替える必要があります。
+
+## API リファレンス
 
  - `ConfigureTheme`

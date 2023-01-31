@@ -71,8 +71,12 @@ IgrTreeModule.register();
 <!-- end: Blazor -->
 
 ```razor
-IgbTreeModule.Register(IgniteUIBlazor);
-IgbTreeItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeModule),
+    typeof(IgbTreeItemModule)
+);
 ```
 
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
@@ -315,7 +319,7 @@ igc-tree-item::part(active selected) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API リファレンス
 
@@ -324,33 +328,7 @@ igc-tree-item::part(active selected) {
 * `CircularProgress`
 * `Icon`
 
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ## その他のリソース
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor)
-
-<!-- end: Blazor>
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
-
- - `TreeItem`
- - `Tree`
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})
