@@ -328,6 +328,11 @@ var configurations: any[] = [
         { from: "data-grid.html$"                         , to: "grids/data-grid" }
       ]
     },
+    // testing local re-directs
+    { platforms: ["React", "Blazor", "WC"],
+      redirects: [
+        { from: "chart-test.html$", to: "charts/chart-overview" }
+    ]},
 ];
 
 // generates redirect rules for all platforms using above configuration arrays

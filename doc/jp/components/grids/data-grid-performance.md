@@ -6,6 +6,13 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} ライブ データの高パフォーマンス
 
 {ProductName} Data Table / Data Grid は、高パフォーマンスのライブ データ シナリオに最適化されています。速いロード時間、タイムラグのないスムーズなスクロール、または画面のちらつきにより、グリッドの列と行の完全仮想化を使用して、{Platform} データ グリッド アプリケーション内の行と列を無制限にスクロールできます。

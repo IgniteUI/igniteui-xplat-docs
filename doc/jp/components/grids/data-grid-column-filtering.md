@@ -7,6 +7,13 @@ namespace: Infragistics.Controls
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} グリッド フィルターの概要
 
 {ProductName} Data Table / Data Grid には、フィルター行と API の両方を使用した列フィルタリングが含まれており、フィルター処理される列のデータ型に基づいてソート条件を実行できます。

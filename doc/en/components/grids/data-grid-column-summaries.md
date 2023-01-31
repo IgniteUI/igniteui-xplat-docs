@@ -6,6 +6,13 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics
 namespace: Infragistics.Controls
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+Please note that this control has been deprecated and replaced with the [Grid](grid/overview.md) component, and as such, we recommend migrating to that control. This will not be receiving any new features, bug fixes will be deprioritized. For help or questions on migrating your codebase to the Data Grid, please contact support. 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Column Summaries
 
 The {ProductName} Data Table / Data Grid supports column summaries. In some cases, your end users may be overwhelmed by the amount of data displayed in the grid, and often may be looking for a summary of the data. Your end users may also want to derive additional information from the data of a specific column. Summaries help your end users achieve this, and you can enable them by setting the `SummaryScope` property.

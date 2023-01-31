@@ -7,6 +7,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} {ComponentTitle} セル編集
 
 {ProductName} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
@@ -15,7 +22,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
            github-src="{ComponentSample}/editing-columns"
@@ -659,7 +666,7 @@ $custom-grid-theme: grid-theme(
 
 上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
            github-src="{ComponentSample}/editing-style"
