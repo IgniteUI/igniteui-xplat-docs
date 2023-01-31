@@ -429,7 +429,7 @@ $button-theme: button-theme(
 <!-- Angular -->
 
 * [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 
@@ -437,7 +437,7 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 

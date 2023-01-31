@@ -140,7 +140,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) we are able to create DockSlot and Grid components on the fly.
 
 ### DockManager component
-Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
+Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
 
 ## API References
 * `{ComponentName}`

@@ -538,7 +538,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

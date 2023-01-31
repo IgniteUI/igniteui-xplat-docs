@@ -650,7 +650,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * `ColumnComponent`
 
 ## Additional Resources
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

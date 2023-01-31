@@ -335,7 +335,7 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)

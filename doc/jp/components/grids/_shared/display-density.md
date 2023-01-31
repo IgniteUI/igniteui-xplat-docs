@@ -772,7 +772,6 @@ public selectDensity(event) {
 
 ## その他のリソース
 
-* [Grid の概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)

@@ -12,9 +12,9 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2}**
 
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。  
+デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
-これらの新しいチャートの改善点は次のとおりです: 
+これらの新しいチャートの改善点は次のとおりです:
 
 * ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
 * すべてのプラットフォームでの丸型ラベルの描画が強化されました。
@@ -26,7 +26,7 @@ namespace: Infragistics.Controls.Charts
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -50,7 +50,7 @@ namespace: Infragistics.Controls.Charts
 * `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
@@ -70,7 +70,7 @@ namespace: Infragistics.Controls.Charts
 ### {PackageGrids}
 
 * 新規機能:
-- [行のページング](grids/data-grid-row-paging.md)
+- [行のページング](grids/data-grid/row-paging.md)
 
 ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
@@ -102,7 +102,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
 
-### {PackageCharts} 
+### {PackageCharts}
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
@@ -113,7 +113,7 @@ namespace: Infragistics.Controls.Charts
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
 * `FinancialChart` にデフォルトで最終値の注釈を追加しました。
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました: 
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
@@ -140,10 +140,10 @@ namespace: Infragistics.Controls.Charts
 ### {PackageGrids}
 
 * 新規機能:
-    - [フィルター行](grids/data-grid-column-filtering.md)
-    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid-load-save-layout.md)
-    - [列をグループ化するための GroupBy 領域](grids/data-grid-row-grouping.md)
-    - [セルの結合](grids/data-grid-cell-merging.md)
+    - [フィルター行](grids/data-grid/column-filtering.md)
+    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+    - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+    - [セルの結合](grids/data-grid/cell-merging.md)
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
 * 重大な変更:
@@ -316,7 +316,7 @@ Import ステートメントは、API クラスと列挙型へのフル パス�
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [ブレット グラフ](bullet-graph.md)、[リニア ゲージ](linear-gauge.md)、[ラジアル ゲージ](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| カテゴリ チャート、データ チャート、ドーナツ チャート、ファイナンシャル チャート、円チャート、[ズーム スライダー](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [データ グリッド](grids/data-grid.md) |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [データ グリッド](grids/data-grid/overview.md) |
 
 - 変更後のコード
 

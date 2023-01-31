@@ -20,7 +20,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### New Components
 
-* [Grid](grids/grid/overview.md)
+* [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
@@ -88,7 +88,7 @@ These new chart improvements include:
 ### {PackageGrids}
 
 * New Feature Added:
-- [Row Paging](grids/data-grid-row-paging.md)
+- [Row Paging](grids/data-grid/row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
 
@@ -181,10 +181,10 @@ Old brushes/outlines | New outline/brushes
 ### {PackageGrids}
 
 * New Features Added:
-    - [Filter Row](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
-    - [Cell Merging](grids/data-grid-cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.

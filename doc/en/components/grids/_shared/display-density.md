@@ -780,7 +780,6 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 ## Additional Resources
 
-* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)

@@ -223,7 +223,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)

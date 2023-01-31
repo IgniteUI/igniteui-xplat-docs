@@ -375,7 +375,7 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 

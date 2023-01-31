@@ -861,7 +861,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Angular -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -882,7 +882,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)

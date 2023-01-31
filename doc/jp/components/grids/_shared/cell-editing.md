@@ -10,7 +10,7 @@ _language: ja
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
 
 <!-- end: Blazor, WebComponents -->
 
@@ -216,7 +216,7 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- Angular -->
 
-列とそのテンプレートの構成方法の詳細については、[グリッド列構成](../grid/grid.md#angular-grid-列の構成)のドキュメントを参照してください。
+<!-- 列とそのテンプレートの構成方法の詳細については、[グリッド列構成](../grid/grid.md#angular-grid-列の構成)のドキュメントを参照してください。 -->
 
 <!-- end: Angular -->
 
@@ -700,7 +700,7 @@ $custom-grid-theme: grid-theme(
 
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -717,7 +717,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

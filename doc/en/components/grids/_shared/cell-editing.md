@@ -208,7 +208,7 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 <!-- Angular -->
 
-For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration).
+<!-- For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration). -->
 
 <!-- end: Angular -->
 
@@ -692,7 +692,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 * [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -709,7 +709,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

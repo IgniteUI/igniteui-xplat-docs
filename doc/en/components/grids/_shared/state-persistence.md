@@ -557,7 +557,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -567,7 +567,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
-* [{ComponentTitle} overview](overview.md)
+
 * [Pivot Grid Features](features.md)
 <!-- * [Pivot Grid Remote Operations](remote-operations.md) -->
 

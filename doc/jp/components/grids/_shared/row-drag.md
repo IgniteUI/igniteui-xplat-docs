@@ -952,7 +952,7 @@ class MyGridScrollComponent {
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

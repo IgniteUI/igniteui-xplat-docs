@@ -224,7 +224,7 @@ import 'core-js/es7/array';
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [行の選択](row-selection.md)
 * [セルの選択](cell-selection.md)
 * [ページング](paging.md)

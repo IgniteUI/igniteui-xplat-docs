@@ -66,7 +66,7 @@ _language: ja
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)

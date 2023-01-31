@@ -141,7 +141,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) を使用して、DockSlot および Grid コンポーネントをオンザフライで作成できます。
 
 ### DockManager コンポーネント
-[Dock Manager](../dock-manager.md) WebComponent を利用し、ドケットまたはフローティング パネルを使用して独自の Web ビューを作成します。新しいフローティング パネルを追加するには、右側のアクション ペインを開き、[フローティング ペインの追加] ボタンをクリックします。新しいペインを目的の場所にドラッグアンドドロップします。
+[Dock Manager](../../layouts/dock-manager.md) WebComponent を利用し、ドケットまたはフローティング パネルを使用して独自の Web ビューを作成します。新しいフローティング パネルを追加するには、右側のアクション ペインを開き、[フローティング ペインの追加] ボタンをクリックします。新しいペインを目的の場所にドラッグアンドドロップします。
 
 ## API リファレンス
 * `{ComponentName}`
