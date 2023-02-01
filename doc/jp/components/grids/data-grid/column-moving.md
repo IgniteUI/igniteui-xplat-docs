@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} データ グ�
 _keywords: {Platform} Table, Data Grid, column moving, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列移動, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnMovingMode', 'Infragistics.Controls.Grid.Implementation.ColumnMovingAnimationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnMoving}
 _language: ja
 ---
 

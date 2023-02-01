@@ -4,6 +4,7 @@ _description: Infragistics の {Platform} データ グリッドのセル結合�
 _keywords: {Platform} Table, Data Grid, cell merging, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セル結合, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.MergedCellMode', 'Infragistics.Controls.Grid.Implementation.MergedCellEvaluationCriteria']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

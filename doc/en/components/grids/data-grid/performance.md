@@ -4,6 +4,7 @@ _description: Use the Infragistics' {Platform} table for high performance data s
 _keywords: {Platform} Table, Data Grid, performance, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

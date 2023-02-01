@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's horizontal scrolling
 _keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

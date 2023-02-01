@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} データ テ�
 _keywords: {Platform} Table, Data Grid, column types, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列タイプ, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnTypes}
 _language: ja
 ---
 

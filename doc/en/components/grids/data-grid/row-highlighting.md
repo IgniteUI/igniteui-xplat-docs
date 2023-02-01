@@ -4,6 +4,7 @@ _description: Configuring the row highlight of the Infragistics' {Platform} data
 _keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

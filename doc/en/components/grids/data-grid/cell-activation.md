@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid to support the c
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.GridActivationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

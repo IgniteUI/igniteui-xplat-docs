@@ -3,6 +3,8 @@ title: {Platform} データ グリッド | パフォーマンス | インフラ�
 _description: インフラジスティックスの {Platform} テーブルは、高パフォーマンスのデータ シナリオに使用されています。完全仮想化を使用して、無限の数の行と列を無制限にスクロールできます。{ProductName} テーブル チュートリアルを是非お試しください!
 _keywords: {Platform} Table, Data Grid, performance, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, パフォーマンス, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
+namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

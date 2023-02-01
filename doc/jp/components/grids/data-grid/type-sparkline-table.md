@@ -4,6 +4,7 @@ _description: {ProductName} Data Table / Data Grid は、列スパークライ�
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列スパークライン, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Sparkline']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

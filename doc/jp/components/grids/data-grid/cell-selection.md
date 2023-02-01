@@ -4,6 +4,7 @@ _description: インフラジスティックスの {Platform} データ グリ�
 _keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セル選択, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.GridSelectionMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellSelection}
 _language: ja
 ---
 

@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} Data Grid supports the ability
 _keywords: {Platform} Table, Data Grid, column moving, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnMovingMode', 'Infragistics.Controls.Grid.Implementation.ColumnMovingAnimationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnMoving}
 ---
 
 <!-- Blazor, WebComponents -->

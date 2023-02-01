@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's row pinning feature 
 _keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridRowPinning}
 ---
 
 <!-- Blazor, WebComponents -->
