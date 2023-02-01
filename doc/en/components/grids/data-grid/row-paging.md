@@ -4,6 +4,7 @@ _description: View Infragistics' {Platform} grid component's Pager, which was de
 _keywords: {Platform} Table, Data Grid, row, paging, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridPaging}
 ---
 
 <!-- Blazor, WebComponents -->

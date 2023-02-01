@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid control to bind to an array of d
 _keywords: {Platform} Table, Data Grid, binding to data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

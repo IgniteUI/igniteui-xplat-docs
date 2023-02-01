@@ -4,6 +4,7 @@ _description: インフラジスティックスの {Platform} グリッド コ�
 _keywords: {Platform} Table, Data Grid, row grouping, groupby area,  {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のグループ化, groupby 領域,  インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridGroupBy}
 _language: ja
 ---
 

@@ -4,6 +4,7 @@ _description: Use the cell merging feature of the Infragistics' {Platform} data 
 _keywords: {Platform} Table, Data Grid, cell merging, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.MergedCellMode', 'Infragistics.Controls.Grid.Implementation.MergedCellEvaluationCriteria']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

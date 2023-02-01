@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} Data Grid supports the ability
 _keywords: {Platform} Table, Data Grid, column options, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.HeaderClickAction', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

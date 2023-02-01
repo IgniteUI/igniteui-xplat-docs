@@ -4,6 +4,7 @@ _description: Start using Infragistics' {Platform} grid component to resize colu
 _keywords: {Platform} Table, Data Grid, column resizing, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnResizingMode', 'Infragistics.Controls.Grid.Implementation.ColumnResizingAnimationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnResizing}
 ---
 
 <!-- Blazor, WebComponents -->

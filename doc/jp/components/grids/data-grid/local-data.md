@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コントロールを使用してデ�
 _keywords: {Platform} Table, Data Grid, binding to data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, データへのバインド, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

@@ -4,6 +4,7 @@ _description: データの配列を取り込み、そのデータの一部を �
 _keywords: {Platform} Table, Data Grid, row, paging, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のページング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridPaging}
 _language: ja
 ---
 

@@ -4,6 +4,7 @@ _description: マウスオーバーでインフラジスティックス {Platfor
 _keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行の強調表示, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
