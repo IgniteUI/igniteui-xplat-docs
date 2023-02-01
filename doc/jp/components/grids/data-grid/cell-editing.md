@@ -5,6 +5,7 @@ _language: ja
 _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics, {Platform} テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.EditModeType', 'Infragistics.Controls.Grid.Implementation.TransactionType']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellEditing}
 ---
 # {Platform} Grid 編集
 

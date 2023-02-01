@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} グリッド �
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列ピン固定, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.PinnedPositions', 'Infragistics.Controls.Grid.Implementation.PinColumn','Infragistics.Controls.Grid.Implementation.ColumnPinning', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnPinning}
 _language: ja
 ---
 

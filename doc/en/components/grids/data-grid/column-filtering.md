@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} grid component to perform expressi
 _keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.FilterExpressions']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridFiltering}
 ---
 
 <!-- Blazor, WebComponents -->

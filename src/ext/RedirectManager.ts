@@ -362,7 +362,14 @@ var configurations: any[] = [
         { from: "grids/data-grid-type-matrix-table",     to: "grids/data-grid/type-matrix-table" },
         { from: "grids/data-grid-type-periodic-table",   to: "grids/data-grid/type-periodic-table" },
         { from: "grids/data-grid-type-sparkline-table",  to: "grids/data-grid/type-sparkline-table" },
-    ]},
+      ]
+    },
+    // redirect for moved lob grid topic to parent folder in 23.1 release
+    { platforms: ["React", "Blazor", "WC"],
+      redirects: [
+        { from: "grids/grid/overview", to: "grids/data-grid" },
+      ]
+    },
 
     // testing local re-directs
     { platforms: ["React", "Blazor", "WC"],

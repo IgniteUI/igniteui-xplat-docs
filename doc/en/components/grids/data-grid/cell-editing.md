@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component which supports the cel
 _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.EditModeType', 'Infragistics.Controls.Grid.Implementation.TransactionType']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellEditing}
 ---
 
 <!-- Blazor, WebComponents -->

@@ -4,6 +4,7 @@ _description: Infragistics' {Platform} grid component helps you create a fast, r
 _keywords: {Platform} Table, Data Grid, overview, {ProductName}, data binding, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

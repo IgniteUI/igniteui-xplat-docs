@@ -4,6 +4,7 @@ _description: ローカリゼーションをサポートするインフラジス
 _keywords: {Platform} テーブル、データ グリッド、セル アクセシビリティ、{ProductName}、インフラジスティック
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

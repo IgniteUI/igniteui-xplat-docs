@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コンポーネントを使用して�
 _keywords: {Platform} Table, Data Grid, column template, comparison data, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, 比較データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

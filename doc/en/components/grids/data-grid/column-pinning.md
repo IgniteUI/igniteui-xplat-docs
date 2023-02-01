@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} grid component supports the ab
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.PinnedPositions', 'Infragistics.Controls.Grid.Implementation.PinColumn', 'Infragistics.Controls.Grid.Implementation.ColumnPinning', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnPinning}
 ---
 
 <!-- Blazor, WebComponents -->

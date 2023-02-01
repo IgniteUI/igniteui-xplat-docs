@@ -4,6 +4,7 @@ _description: インフラジスティックスのグリッド コンポーネ�
 _keywords: {Platform} Table, Data Grid, column template, matrix table, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, マトリックス テーブル, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

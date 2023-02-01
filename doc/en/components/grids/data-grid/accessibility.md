@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid to support acces
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
