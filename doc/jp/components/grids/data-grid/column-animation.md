@@ -4,6 +4,7 @@ _description: Infragistics {ProductName} データ テーブルとグリッド�
 _keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列アニメーション, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

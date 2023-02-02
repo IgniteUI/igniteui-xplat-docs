@@ -4,6 +4,7 @@ _description: Use cell and row selection of the Infragistics' {Platform} data gr
 _keywords: {Platform} Table, Data Grid, cell selection, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.GridSelectionMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellSelection}
 ---
 
 <!-- Blazor, WebComponents -->

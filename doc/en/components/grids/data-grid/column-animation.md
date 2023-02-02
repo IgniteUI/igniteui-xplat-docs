@@ -4,6 +4,7 @@ _description: Learn how to display column animations through events when moving 
 _keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
