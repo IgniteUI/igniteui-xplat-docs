@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's sorting feature to c
 _keywords: {Platform} Table, Data Grid, column, sorting, row, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.HeaderClickAction']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridSorting}
 ---
 
 <!-- Blazor, WebComponents -->

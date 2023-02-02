@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's Group Row feature to
 _keywords: {Platform} Table, Data Grid, row grouping, groupby area,  {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridGroupBy}
 ---
 
 <!-- Blazor, WebComponents -->

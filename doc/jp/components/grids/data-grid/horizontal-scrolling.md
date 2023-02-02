@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コンポーネントの水平方向�
 _keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, 水平, スクロール, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

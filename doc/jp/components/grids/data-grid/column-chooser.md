@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} グリッド �
 _keywords: {Platform} Table, Data Grid, column chooser, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列選択, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Button', 'Infragistics.Controls.Grid.Implementation.ColumnChooser', 'Infragistics.Controls.Grid.Implementation.ColumnHidingAnimationMode', 'Infragistics.Controls.Grid.Implementation.ColumnShowingAnimationMode',  'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 

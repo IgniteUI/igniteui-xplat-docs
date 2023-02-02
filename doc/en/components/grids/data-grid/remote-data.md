@@ -4,6 +4,7 @@ _description: Use the Infragistics {Platform} grid component's Virtual Data Sour
 _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

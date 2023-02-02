@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} table to handle thousands of updates 
 _keywords: {Platform} Table, Data Grid, live data updates, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->

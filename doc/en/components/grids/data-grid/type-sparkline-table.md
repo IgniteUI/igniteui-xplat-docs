@@ -4,6 +4,7 @@ _description: See how {ProductName} Data Table & Grid supports a template column
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Sparkline']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
