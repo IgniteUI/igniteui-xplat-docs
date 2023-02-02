@@ -1,6 +1,6 @@
 ---
-title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
-_description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
+title: {Platform} Data Grid Component (Data Table) - Infragistics 
+_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now! 
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 ---
@@ -37,7 +37,8 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {Platform} `Grid` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+            <p>The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid in our toolbox include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.</p>
+            <p>The {Platform} tables are optimized for live streaming data, with the ability to handle unlimited data set size in a number of rows or columns. </p>
         </div>
     </article>
     <article class="sample-column">
@@ -47,16 +48,16 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
                     src="../../images/general/landing-grid-page.png"
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
+                    alt="{Platform} Data Grid"
+                    title="{Platform} Data Grid">
             </div>
         </div>
     </article>
 </div>
 
-## {Platform} Grid Example
+## {Platform} Data Grid Example
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as the use of grid summaries and cell templating. The demo also includes paging set to display 10 items per page.
+In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -67,11 +68,11 @@ In this grid example, you can see how users can do both basic and excel-style fi
 
 <div class="divider--half"></div>
 
-## Getting Started with {Platform} Grid
+## Getting Started with {Platform} Data Grid
 
 ### Dependencies
 
-To get started with the {Platform} grid, first you need to install the {ProductName} package.
+To get started with the {Platform} Data Grid, first you need to install the {ProductName} package.
 
 <!-- Blazor -->
 
@@ -131,6 +132,8 @@ For more details on how to customize the appearance of the grid, you may have a 
 <!-- Angular, React, Blazor -->
 
 ### Component Modules
+
+The `DataGrid` requires the following modules: 
 
 ```razor
 // in Program.cs file
