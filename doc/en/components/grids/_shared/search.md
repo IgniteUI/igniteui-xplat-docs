@@ -17,6 +17,7 @@ The following example represents `{ComponentName}` with search input box that al
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
+           github-src="{ComponentSample}/data-searching"
            alt="{Platform} {ComponentTitle} Search Example">
 </code-view>
 
@@ -868,7 +869,7 @@ Additional components and/or directives with relative APIs that were used:
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -881,5 +882,5 @@ Additional components and/or directives with relative APIs that were used:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

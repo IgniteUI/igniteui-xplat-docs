@@ -15,15 +15,16 @@ _language: ja
 
 {Platform} {PivotGridName} は、ピボット テーブルにデータを表示し、提供されたデータ セットで複雑な分析を実行するのに役立ちます。この洗練されたピボット グリッド コントロールは、後でクロス集計形式で表示される大量のデータを整理、集計、およびフィルタリングするために使用されます。{Platform} ピボット グリッドの主な機能は、行のディメンション、列のディメンション、集計、およびフィルターです。
 
-`{PivotGridName}` を使用すると、ユーザーはデータを多次元のピボット テーブル構造で構成および表示できます。行と列は個別のデータ グループを表し、データ セルの値は集計を表します。これにより、単純なフラット データセットに基づく複雑なデータ分析が可能になります。`{PivotGridName}` は機能豊富なピボット テーブルで、さまざまなディメンションと値を簡単に構成できるだけでなく、フィルタリングやソートなどの追加のデータ操作も提供します。
+`PivotGrid` を使用すると、ユーザーはデータを多次元のピボット テーブル構造で構成および表示できます。行と列は個別のデータ グループを表し、データ セルの値は集計を表します。これにより、単純なフラット データセットに基づく複雑なデータ分析が可能になります。`PivotGrid` は機能豊富なピボット テーブルで、さまざまなディメンションと値を簡単に構成できるだけでなく、フィルタリングやソートなどの追加のデータ操作も提供します。
 
 ## {Platform} ピボット グリッドの例
 
 以下は、{Platform} ピボット データ セレクター コンポーネントと組み合わせた {Platform} ピボット グリッドの例です。このようにして、より柔軟なランタイム構成オプションを使用できます。
 
-<code-view style="height: 870px"
+<code-view style="height: 750px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
+           github-src="{PivotGridSample}/pivot-grid-data-selector"
            alt="{Platform} ピボット セレクターを使用したピボット グリッドの例">
 </code-view>
 
@@ -452,9 +453,10 @@ public PivotSalesData()
 
 上記のコードを使用すると、Product (製品) カテゴリの一意の列、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数に関連する集計を表示する次の例が得られます。
 
-<code-view style="height: 530px"
+<code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
            iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
+           github-src="{PivotGridSample}/features"
            alt="{Platform} ピボット グリッドの例">
 </code-view>
 
@@ -472,18 +474,22 @@ public PivotSalesData()
 
 ## API リファレンス
 
-* `{PivotGridName}`
 * `PivotConfiguration`
+* `PivotGrid`
 * `PivotDataSelector`
 * `PivotDateDimension`
 * `Column`
 
 <!-- ## その他のリソース
 
-* [{Platform} ピボット グリッドの機能](pivot-grid-features.md)
-* [{Platform} ピボット グリッド カスタム集計](pivot-grid-custom.md) -->
+* [{Platform} ピボット グリッドの機能](features.md)
+* [{Platform} ピボット グリッド カスタム集計](remote-operations.md) -->
+
+## その他のリソース
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})
+
+

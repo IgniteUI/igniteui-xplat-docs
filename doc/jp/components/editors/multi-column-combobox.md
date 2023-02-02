@@ -282,7 +282,7 @@ constructor() {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `DataSource`
  - `Fields`

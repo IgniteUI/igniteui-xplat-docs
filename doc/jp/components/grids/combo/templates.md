@@ -21,7 +21,7 @@ _language: ja
 
 ## テンプレート タイプ
 
-### Item Template (項目テンプレート) 
+### Item Template (項目テンプレート)
 
 `itemTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリスト内の項目を描画するときに使用する必要があります。
 
@@ -37,7 +37,7 @@ const itemTemplate: ComboItemTemplate<City> = ({ item }) => {
 combo.itemTempate = itemTemplate;
 ```
 
-### Group Header Template (グループ ヘッダー テンプレート) 
+### Group Header Template (グループ ヘッダー テンプレート)
 
 `groupHeaderTemplate` はカスタム テンプレートであり、定義されている場合は、オプションのリストでグループ ヘッダーを描画するときに使用する必要があります。
 
@@ -111,16 +111,5 @@ combo.groupHeaderTemplate = groupHeaderTemplate;
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

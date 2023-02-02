@@ -12,13 +12,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 In addition, you can define your own custom templates for update-data actions and to override the default behavior for committing and discarding any changes.
 
-## {Platform} {ComponentTitle} cell editing and edit templates Example
+## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
            github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} cell editing and edit templates Example">
+           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
 </code-view>
 
 > [!NOTE]
@@ -208,7 +208,7 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 <!-- Angular -->
 
-For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration).
+<!-- For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration). -->
 
 <!-- end: Angular -->
 
@@ -497,7 +497,7 @@ constructor() {
 }
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
-The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **HandleCellEdit** definition, we need to make sure that we check for our specific column before taking any action:
+The `CellEdit` emits whenever **any** cell's value is about to be committed. In our **CellEdit** definition, we need to make sure that we check for our specific column before taking any action:
 
 <!-- ComponentStart: Grid -->
 ```typescript
@@ -518,7 +518,7 @@ export class MyGridEventsComponent {
 }
 ```
 
-If the value entered in a cell under the **Ordered** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -658,7 +658,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
-<code-view style="height:950px"
+<code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
            github-src="{ComponentSample}/editing-style"
@@ -692,7 +692,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 * [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -709,7 +709,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

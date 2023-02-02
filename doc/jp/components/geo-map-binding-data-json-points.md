@@ -242,7 +242,7 @@ onDataLoaded(jsonData: any[]) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
 - `GeographicHighDensityScatterSeries`
 - `GeographicSymbolSeries`

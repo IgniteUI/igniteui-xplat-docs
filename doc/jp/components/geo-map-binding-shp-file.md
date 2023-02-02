@@ -257,7 +257,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Fields`
  - `GeographicPolylineSeries`

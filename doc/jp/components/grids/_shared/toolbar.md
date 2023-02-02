@@ -24,6 +24,7 @@ _language: ja
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
+           github-src="{ComponentSample}/toolbar-sample-1"
            alt="{Platform} {ComponentTitle} ツール バーの例">
 </code-view>
 
@@ -208,7 +209,8 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 <code-view style="height:630px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
+           github-src="{ComponentSample}/toolbar-sample-2">
 </code-view>
 
 
@@ -556,7 +558,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
+           github-src="{ComponentSample}/toolbar-sample-3">
 </code-view>
 
 
@@ -574,7 +577,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <code-view style="height: 370px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
+           github-src="{ComponentSample}/data-exporting-indicator">
 </code-view>
 
 <!-- end: Angular -->
@@ -625,7 +629,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <code-view style="height:420px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
+           github-src="{ComponentSample}/toolbar-sample-4">
 </code-view>
 
 <!-- Angular -->
@@ -741,7 +746,8 @@ $dark-input-group-theme: input-group-theme(
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
+           github-src="{ComponentSample}/toolbar-style">
 </code-view>
 
 
@@ -779,5 +785,5 @@ $dark-input-group-theme: input-group-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

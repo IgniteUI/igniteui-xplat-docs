@@ -7,6 +7,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {ComponentTitle} の列の並べ替えと移動
 
 {ProductName}  の `{ComponentName}` コンポーネントは、標準ドラッグ/ドロップのマウス/タッチによるジェスチャ、または列移動 API を使用した順序変更のための**列移動**機能を提供します。列の移動は、固定列と固定されていない列、および[複数列ヘッダー](multi-column-headers.md)の両方で機能します。列を固定領域に移動すると列が固定され、または逆に固定領域の外に列を移動すると、列の固定が解除されます。
@@ -58,9 +65,11 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 **列移動**機能は各列レベルで有効にできます。つまり、`{ComponentName}` に移動可能な列または移動不可の列の両方を含むことができます。`{ComponentName}` の `Moving` 入力によって制御されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [moving]="true"></{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
 ```razor
 <{ComponentSelector} Moving=true></{ComponentSelector}>
@@ -143,9 +152,9 @@ idColumn.move(3);
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true" (columnMovingEnd)="onColumnMovingEnd($event)">
-    <igx-column field="Category"></igx-column>
-    <igx-column field="Change On Year(%)" data-type="Number" ></igx-column>
+<{ComponentSelector} id="dataGrid" auto-generate="false" moving="true">
+    <igc-column field="Category"></igx-column>
+    <igc-column field="Change On Year(%)" data-type="Number" ></igx-column>
 </{ComponentSelector}>
 ```
 ```typescript
@@ -322,7 +331,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ## その他のリソース
 
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -337,5 +346,5 @@ $dark-grid-column-moving-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

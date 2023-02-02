@@ -780,7 +780,6 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 ## Additional Resources
 
-* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -800,5 +799,5 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

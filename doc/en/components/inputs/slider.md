@@ -211,38 +211,8 @@ The following sample demonstrates how to style the track fill and thumb parts:
            github-src="inputs/slider/styling">
 </code-view>
 
-<!-- WebComponents -->
+## API References
 
-## API Reference
-
-* `Slider`
-* `RangeSlider`
-
-<!-- end: WebComponents -->
-
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
- ## API Members
-  k`
  - `HidePrimaryLabels`
  - `HideSecondaryLabels`
  - `HideTooltip`
@@ -256,3 +226,8 @@ The following sample demonstrates how to style the track fill and thumb parts:
  - `UpperBound`
  - `ValueFormatOptions`
  - `ValueFormat`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

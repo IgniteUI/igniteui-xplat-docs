@@ -35,6 +35,7 @@ The sample below demonstrates the three types of `{ComponentName}`'s **column se
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
+           github-src="{ComponentSample}/column-selection-mode"
            alt="{Platform} Column Selection Example">
 </code-view>
 
@@ -68,7 +69,8 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
+           github-src="{ComponentSample}/column-selection-group">
 </code-view>
 
 ## Keyboard Combinations
@@ -194,7 +196,8 @@ TO DO
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
+           github-src="{ComponentSample}/column-selection-styles">
 </code-view>
 
 >[!NOTE]
@@ -231,7 +234,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Selection](selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
@@ -245,5 +248,5 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName}  **GitHub**]({GithubLink})

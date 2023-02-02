@@ -161,7 +161,7 @@ chart.calloutsYMemberPath = "value";
 chart.calloutsLabelMemberPath = "info";
 ```
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

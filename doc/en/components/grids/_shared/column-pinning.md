@@ -17,6 +17,7 @@ This example demonstrates how you can pin a column or multiple columns to the le
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options"
            alt="{Platform} {ComponentTitle} Column Pinning  Example">
 </code-view>
 
@@ -240,7 +241,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
+           github-src="{ComponentSample}/column-pinning-right-side">
 </code-view>
 
 <!-- Angular -->
@@ -512,7 +514,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options">
 </code-view>
 
 <!-- end: Angular -->
@@ -632,7 +635,8 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 <code-view style="height:506px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
+           github-src="{ComponentSample}/column-pinning-styles">
 </code-view>
 
 >[!NOTE]
@@ -646,7 +650,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * `ColumnComponent`
 
 ## Additional Resources
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -658,5 +662,5 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

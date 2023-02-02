@@ -260,7 +260,7 @@ export class ShapeComparison {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicShapeSeries`
  - `XamGeographicMap`

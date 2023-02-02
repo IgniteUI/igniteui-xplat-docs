@@ -222,19 +222,12 @@ The `Rating` component provides base, label, value-label, symbols, and symbol th
            github-src="inputs/rating/styling">
 </code-view>
 
-<!-- WebComponents -->
-
 ## API Reference
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## Additional Resources
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

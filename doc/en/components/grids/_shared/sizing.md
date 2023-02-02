@@ -72,7 +72,7 @@ When the `Width` of the `{ComponentName}` is set to percentages it will size the
 
 <img src="../../../images/grid_sizing/width-percent-parent-100p-v2.jpg" style="width: 80%"/>
 
-* If we have a parent element with `Width` of `1000px` and have the grid's `Width` set to `150%`, the calculated grid width will be `1500px`. In this case the grid will still render fully visible but if we set `overflow: auto` of the parent, that parent will render scrollbar on its own.
+* If we have a parent element with `Width` of `1000px` and have the grid's `Width` set to `150%`, the calculated grid width will be `1500px`. In this case the grid will still render fully visible but if we set ```overflow: auto``` of the parent, that parent will render scrollbar on its own.
 
 <img src="../../../images/grid_sizing/width-percent-150p-parent-noscroll-v2.jpg" style="width: 80%"/>
 <img src="../../../images/grid_sizing/width-percent-150p-parent-scroll-v2.jpg" style="width: 80%"/>
@@ -254,10 +254,10 @@ The difference is that for the child grid, when `Height` is set to percentages, 
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

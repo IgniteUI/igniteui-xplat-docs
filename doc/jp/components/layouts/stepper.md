@@ -7,11 +7,11 @@ _language: ja
 ---
 
 # {Platform} ステッパーの概要
-{Platform} ステッパー コンポーネントは、ウィザードのようなワークフローを提供し、番号付きのステップの進行状況を示すために使用されます。これにより、開発者は長いコンテンツを一連の論理的なステップに分割できるため、エンド ユーザーはプロセス全体をより簡単にナビゲートできます。{Platform} ステッパーは、垂直または水平な線で表示されます。{Platform} ステッパーには、ステップの検証、スタイル設定、向き、キーボード ナビゲーションなどの複数の機能があります。 
+{Platform} ステッパー コンポーネントは、ウィザードのようなワークフローを提供し、番号付きのステップの進行状況を示すために使用されます。これにより、開発者は長いコンテンツを一連の論理的なステップに分割できるため、エンド ユーザーはプロセス全体をより簡単にナビゲートできます。{Platform} ステッパーは、垂直または水平な線で表示されます。{Platform} ステッパーには、ステップの検証、スタイル設定、向き、キーボード ナビゲーションなどの複数の機能があります。
 
 ## {Platform} ステッパーの例
 
-次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。 
+次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
 
 <code-view style="height: 725px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -59,7 +59,7 @@ defineComponents(IgcStepperComponent);
             <igc-icon .iconName=${step.indicator}></igc-icon>
         </div>
 
-        <p slot="title">${step.title}</p>	
+        <p slot="title">${step.title}</p>
     </igc-step>
     `
 </igc-stepper>
@@ -69,15 +69,15 @@ defineComponents(IgcStepperComponent);
 
 ```html
 <igc-stepper>
-    <igc-step> 
+    <igc-step>
        <p slot="title">Step 1</p>
     </igc-step>
-    <igc-step> 
+    <igc-step>
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
 ```
-各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。 
+各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。
 
 > [!NOTE]
 > `Default` の `Step` スロットは、ステップのコンテンツを描画します。
@@ -111,7 +111,7 @@ defineComponents(IgcStepperComponent);
 
 水平レイアウトから垂直レイアウトに簡単に切り替えることができます。デフォルトの方向を変更するには、`Orientation` プロパティを *vertical* に設定します。
 
-以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。 
+以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。
 
 <code-view style="height: 528px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -122,7 +122,7 @@ defineComponents(IgcStepperComponent);
 
 <div class="divider--half"></div>
 
-### ステップ状態 
+### ステップ状態
 {Platform} `Stepper` は 5 つのステップ状態をサポートし、それぞれがデフォルトで異なるスタイルを適用します。
 - **active** - ステップが現在表示されているかどうかを決定します。設計上、ユーザーが明示的にステップの active 属性を *true* に設定しない場合、最初の有効なステップがアクティブになります。
 - **disabled** - ステップが操作可能かどうかを決定します。デフォルトでは、ステップの disabled 属性は *false* に設定されています。
@@ -134,9 +134,9 @@ defineComponents(IgcStepperComponent);
 
 {Platform} `Stepper` は、`Linear` プロパティを使用してステップ フローを設定できます。デフォルトで、linear は *false* に設定され、ユーザーは `Stepper` で無効にされていないステップを選択できます。
 
-linear プロパティが *true* に設定されている場合、ステッパーは次のステップに進む前に現在のオプションではないステップを有効にする必要があります。 
+linear プロパティが *true* に設定されている場合、ステッパーは次のステップに進む前に現在のオプションではないステップを有効にする必要があります。
 
-現在のオプションではないステップが有効でない場合、現在のステップを検証するまで次のステップに進むことができません。 
+現在のオプションではないステップが有効でない場合、現在のステップを検証するまで次のステップに進むことができません。
 
 > [!NOTE]
 > オプションのステップの有効性は考慮されません。
@@ -219,7 +219,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 ## キーボード ナビゲーション
 
-{ProductName} ステッパーは、さまざまなキーボード操作をエンドユーザーに提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にステップを移動できます。 
+{ProductName} ステッパーは、さまざまなキーボード操作をエンドユーザーに提供します。この機能はデフォルトで有効になっており、エンドユーザーは簡単にステップを移動できます。
 {Platform} `Stepper` ナビゲーションは [W3 アクセシビリティ標準](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/)に準拠しており、便利に使用できます。
 
 **キーの組み合わせ**
@@ -233,7 +233,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
  - <kbd>Home</kbd> - ステッパーの最初の有効なステップのヘッダーにフォーカスを移動します。
  - <kbd>End</kbd> - ステッパーの最後の有効なステップのヘッダーにフォーカスを移動します。
  - <kbd>Enter / Space</kbd> - 現在フォーカスされているステップをアクティブ化します。
- 
+
 ## スタイル設定
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`Step` の外観を変更できます:
@@ -271,7 +271,7 @@ igc-step::part(subtitle) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API リファレンス
 
@@ -280,29 +280,8 @@ igc-step::part(subtitle) {
 * `Avatar`
 * `Icon`
 
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

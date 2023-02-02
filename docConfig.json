@@ -43,6 +43,8 @@
             { "name": "{PackageAngularComponents}",     "value": "igniteui-angular"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-angular-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-angular"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-angular"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -146,6 +148,8 @@
             { "name": "{PackageVerChanges-22-2.1}",   "value": "18.1.2"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-react-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-react"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-react"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -187,8 +191,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igr-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-react-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": " ", "note": "do not remove spaces"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -251,6 +268,8 @@
             { "name": "{PackageWebComponents}",     "value": "igniteui-webcomponents"},
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-wc-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-webcomponents"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -292,8 +311,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igc-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-webcomponents-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": "grids/grid/cell-selection"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": "grids/grid/column-moving"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": "grids/grid/column-pinning"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": "grids/grid/column-resizing"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": "grids/grid/column-types"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": "grids/grid/filtering"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": "grids/grid/groupby"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": "grids/grid/paging"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": "grids/grid/row-pinning"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": "grids/grid/sorting"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": "grids/grid/summaries"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -396,6 +428,8 @@
 
             { "name": "{RepoSamples}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/samples"},
             { "name": "{RepoBrowser}",   "value": "https://github.com/IgniteUI/igniteui-blazor-examples/tree/master/browser"},
+            { "name": "{GithubLink}",    "value": "https://github.com/IgniteUI/igniteui-blazor"},
+            { "name": "{ForumsLink}",    "value": "https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor"},
 
             { "note": "in shared topics, these variables are mapped from {Component*} and auto-replaced with actual values, e.g."},
             { "note": "{ComponentTitle} -> {TreeGridTitle}  -> 'Tree Grid'    in /tree-grid/*.md "},
@@ -437,8 +471,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "IgbHierarchicalGrid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-blazor-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": "grids/grid/cell-selection"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": "grids/grid/column-moving"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": "grids/grid/column-pinning"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": "grids/grid/column-resizing"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": "grids/grid/column-types"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": "grids/grid/filtering"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": "grids/grid/groupby"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": "grids/grid/paging"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": "grids/grid/row-pinning"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": "grids/grid/sorting"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": "grids/grid/summaries"}
         ],
         "samplesBrowsers" : {
             "development": "https://localhost:44317/blazor-client",

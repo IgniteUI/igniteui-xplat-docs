@@ -30,6 +30,6 @@ TODO
 
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Workbook`

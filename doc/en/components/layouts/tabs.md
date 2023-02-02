@@ -1,15 +1,19 @@
 ---
-title: {Platform} Tabs | Layout Controls | Infragistics
-_description: Use Infragistics' {Platform} tabs component to switch between similar data sets.
+title: {Platform} Tabs Control | Layout Controls | {ProductName}
+_description: {Platform} Tabs component allows users to place tabs at the top and switch between similar data sets. Try it Now
 _keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Tabs Component, Infragistics
 mentionedTypes: ['Tabs', 'Tab', 'TabPanel', 'Icon', 'IconButton', 'RadioGroup']
 ---
 
-# {Platform} Tabs
+# {Platform} Tabs Overview
+
+The {Platform} Tabs is a lightweight and user-friendly component that organizes corresponding content in a tab format or a collection of tabs typically placed horizontally. The {Platform} Tab enables end-users to easily click through and display different views. There are several features and customization options like tab orientation, templating, built-in header styles, animation, scroll buttons, and more. 
 
 The {ProductName} Tabs organizes and switches between similar data sets. The tabs are placed at the top of the data content. When a tab is selected the panel with the corresponding id is displayed. The component could be used with only tabs defined (without any panels).
 
 ## {Platform} Tabs Example
+
+The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -18,7 +22,7 @@ The {ProductName} Tabs organizes and switches between similar data sets. The tab
            github-src="layouts/tabs/overview">
 </code-view>
 
-## Usage
+## How to use Tabs with {ProductName}
 
 <!-- WebComponents -->
 
@@ -91,7 +95,7 @@ A tab is disabled by setting the `Disabled` attribute:
 
 ### Alignment
 
-The `Alignment` property controls how tabs are positioned. It accepts the following values:
+The `Alignment` property controls how {Platform} tabs are positioned. It accepts the following values:
 
 - `Start` (default): the width of the tab depends on the content (label, icon, both) and all tabs have equal padding. First tab is aligned to the tabs container's left side.
 - `Center`: the width of the tab depends on the content and occupies the tabs container's center.
@@ -109,7 +113,7 @@ If the space is not enough to fit all tabs, scroll buttons are displayed.
 
 ### Scrolling
 
-Scroll buttons are shown when the available space is not enough to render all tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
+Scroll buttons are shown when the available space is not enough to render all {Platform} tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
 
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -177,14 +181,12 @@ igc-tab::part(base) {
 * `Tabs`
 * `Tab`
 * `TabPanel`
-
-Additional components and/or directives that were used:
-
 * `Icon`
 * `IconButton`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{Platform})
-* [{ProductName} Examples on **GitHub**](https://github.com/IgniteUI/igniteui-{Platform}-examples)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

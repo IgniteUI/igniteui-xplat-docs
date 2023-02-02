@@ -79,7 +79,7 @@ this.GeoMap.WindowScale = 0.5;
 |`ActualWindowPositionHorizontal`| number | マップ コントロールの左端からのナビゲーション ウィンドウのアンカー ポイントの現在の水平位置を示します。`ActualWindowRect` プロパティの Left に保存された値と等しくなります。 |
 |`ActualWindowPositionVertical`| number | マップコントロールの上端からのナビゲーションウィンドウのアンカーポイントの垂直位置を示します。`ActualWindowRect` プロパティの Top に保存された値と等しくなります。 |
 
-## API メンバー
+## API リファレンス
 
  - `ActualWindowRect`
  - `WindowRect`

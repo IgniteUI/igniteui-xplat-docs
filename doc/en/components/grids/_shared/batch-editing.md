@@ -10,13 +10,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <!-- ComponentStart: Grid -->
 
-The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+<!-- The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented. -->
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+<!-- The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented. -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -60,7 +60,7 @@ This will ensure a proper instance of `Transaction` service is provided for the 
 
 <!-- Angular -->
 
-You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory).
+<!-- You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory). -->
 
 <!-- end: Angular -->
 
@@ -437,7 +437,7 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 <!-- Angular -->
 
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
@@ -446,7 +446,7 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
@@ -456,5 +456,5 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName}  **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName}  **GitHub**]({GithubLink})

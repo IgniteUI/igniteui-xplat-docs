@@ -98,7 +98,7 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] 
+> [!NOTE]
 > 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
 
 ## 単一選択
@@ -135,10 +135,10 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE] 
+> [!NOTE]
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
 
-## 空および選択済み 
+## 空および選択済み
 {ProductName} 評価コンポーネントを使用すると、ユーザーは単一の評価値の空の状態と選択された状態に異なるアイコン / 要素を使用できます。シンボルを宣言するときは、たとえ同じであっても、スロットごとに 2 つのアイコン (空とフル) を提供することが必須です。次に例を示します。
 
 ```html
@@ -223,19 +223,12 @@ IgrRatingModule.register();
            github-src="inputs/rating/styling">
 </code-view>
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

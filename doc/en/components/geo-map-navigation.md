@@ -78,7 +78,7 @@ The following table summarizes properties that can be used in navigation of the 
 |`ActualWindowPositionHorizontal`| number | Indicates current horizontal position of the navigation window’s anchor point from the left edge of the map control. It is equivalent to value stored in the Left of the `ActualWindowRect` property. |
 |`ActualWindowPositionVertical`| number | Indicates vertical position of the navigation window’s anchor point from the top edge of the map control. It is equivalent to value stored in the Top of the `ActualWindowRect` property. |
 
- ## API Members
+## API References
 
  - `ActualWindowRect`
  - `WindowRect`

@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-grid-master-detail"
+           github-src="{GridSample}/grid-master-detail"
            alt="{Platform} {ComponentTitle} マスターと詳細の例">
 </code-view>
 
@@ -89,7 +90,7 @@ _language: ja
 
 ## API リファレンス
 
-* `{GridName}`
+* `Grid`
 * `Column`
 * `GridRow`
 * `GridCell`

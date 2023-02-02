@@ -18,6 +18,7 @@ _language: ja
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options"
            alt="{Platform} {ComponentTitle} 列ピン固定の例">
 </code-view>
 
@@ -148,9 +149,33 @@ this.hierarchicalGrid.unpinColumn('Debut');
 
 <!-- end: Blazor -->
 
+<!-- Angular -->
+
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" (columnPin)="columnPinning($event)"></{ComponentSelector}>
 ```
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+constructor() {
+    var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+
+    this._bind = () => {
+        dataGrid.data = this.data;
+        datagrid.columnPin = this.columnPinning;
+    }
+    this._bind();
+}
+```
+
+<!-- end: WebComponents -->
 
 ```typescript
 public columnPinning(event) {
@@ -217,7 +242,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
+           github-src="{ComponentSample}/column-pinning-right-side">
 </code-view>
 
 <!-- Angular -->
@@ -489,7 +515,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 <code-view style="height:510px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
+           github-src="{ComponentSample}/column-pinning-options">
 </code-view>
 
 <!-- end: Angular -->
@@ -609,7 +636,8 @@ $custom-theme: grid-theme(
 
 <code-view style="height:506px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
+           github-src="{ComponentSample}/column-pinning-styles">
 </code-view>
 
 >[!NOTE]
@@ -623,7 +651,7 @@ $custom-theme: grid-theme(
 * `ColumnComponent`
 
 ## その他のリソース
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -635,5 +663,5 @@ $custom-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -18,12 +18,12 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2}**
 
-Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.  
+Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
-These new chart improvements include: 
+These new chart improvements include:
 
-* Responsive layouts for horizontal label rotation based on browser / screen size. 
-* Enhanced rendering for rounded labels on all platforms. 
+* Responsive layouts for horizontal label rotation based on browser / screen size.
+* Enhanced rendering for rounded labels on all platforms.
 * Added marker properties to StackedFragmentSeries.
 * Added `ShouldPanOnMaximumZoom` property.
 * New Category Axis Properties:
@@ -32,7 +32,7 @@ These new chart improvements include:
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * New [Chart Aggregation](charts/features/chart-data-aggregations.md) API for Grouping, Sorting and Summarizing Category string and numeric values, eliminating the need to pre-aggregate or calculate chart data:
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -46,10 +46,10 @@ These new chart improvements include:
   - GroupSortDescriptions
 
 > [!Note]
-[Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
+The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties` because these properties are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.

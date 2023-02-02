@@ -1065,7 +1065,7 @@ export class MapBindingMultipleShapes extends SampleBase {
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

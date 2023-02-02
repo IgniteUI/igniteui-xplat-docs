@@ -472,52 +472,12 @@ igc-list-item::part(end) {
            github-src="grids/list/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
 
 この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の {ProductName} コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 
-* `List`
-* `ListHeader`
-* `ListItem`
-
-使用したその他のコンポーネント:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
 
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [{Platform} **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [{Platform} **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-
-## API メンバー
+## API リファレンス
 
  - `Avatar`
  - `Button`
@@ -526,3 +486,8 @@ igc-list-item::part(end) {
  - `ListHeader`
  - `ListItem`
  - `List`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

@@ -7,6 +7,13 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} セルの選択
 
 選択機能により、{ProductName} `{ComponentName}` で豊富なデータ選択機能が有効になります。強力な API と使いやすいメソッドのおかげで、さまざまなイベントと単一の選択アクションを利用できます。`{ComponentName}` は、セル選択の 3 つのモードをサポートしています。`CellSelection` プロパティを変更することで、それらを簡単に切り替えることができます。セルの選択を無効にするか、グリッド内の 1 つのセルのみを選択するか、グリッド内の複数のセルを選択することができます。これはデフォルトのオプションとして提供されています。
@@ -261,7 +268,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [選択](selection.md)
 * [行選択](row-selection.md)
 * [フィルタリング](filtering.md)
@@ -274,5 +281,5 @@ $custom-grid-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

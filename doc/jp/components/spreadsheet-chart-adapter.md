@@ -203,7 +203,7 @@ ExcelUtility.loadFromUrl(process.env.PUBLIC_URL + "/ExcelFiles/ChartData.xlsx").
 });
 ```
 
-## API メンバー
+## API リファレンス
 
  - `AddChart`
  - `ChartAdapter`

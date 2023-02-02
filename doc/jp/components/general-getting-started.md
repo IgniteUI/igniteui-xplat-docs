@@ -63,7 +63,7 @@ yarn create react-app my-app-name --typescript
 ## Ignite UI Web Components の例
 以下のサンプルは、Web Components の概要を示し、それらを利用することで適切に構造化されたアプリを作成する方法を示しています。これは、ユーザーのアバター、サイド ナビゲーション、およびメイン コンテンツ領域を含むアプリ ヘッダーを含む旅行ブログのサンプルです。
 
-<code-view style="height: 800px"
+<code-view style="height: 750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
            alt="{Platform} 概要の例"

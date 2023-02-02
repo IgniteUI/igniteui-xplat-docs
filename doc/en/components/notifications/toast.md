@@ -1,17 +1,19 @@
 ---
-title: {Platform} Toast | Infragistics
-_description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications.
+title: {Platform} Toast Notifications | {ProductName}
+_description: With {ProductName} Toast component, developers can easily integrate a brief, single-line message within mobile and desktop applications. Try it Now
 _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Toast components
 mentionedTypes: ['Toast']
 ---
 
-# {Platform} Toast
+# {Platform} Toast Overview
 
-The {ProductName} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user.
+The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.  
 
-## {ProductName} Toast Example
+The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others. 
 
-This sample demonstrates how to create `Toast` component.
+## {Platform} Toast Example
+
+Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button. 
 
 <code-view style="height: 230px"
            data-demos-base-url="{environment:demosBaseUrl}"
@@ -21,7 +23,7 @@ This sample demonstrates how to create `Toast` component.
 
 <div class="divider--half"></div>
 
-### Usage
+### How To Use {ProductName} Toast Notification
 
 <!-- WebComponents -->
 
@@ -41,7 +43,7 @@ First, you need to the install the corresponding {ProductName} npm package by ru
 npm install igniteui-react
 ```
 
-You will then need to import the `Toast`, its necessary CSS, and register its module, like so:
+You will then need to import the {Platform} `Toast`, its necessary CSS, and register its module, like so:
 
 ```tsx
 import { IgrToastModule, IgrToast } from 'igniteui-react';
@@ -52,7 +54,7 @@ IgrToastModule.register();
 
 <!-- end: React -->
 
-Before using the `Toast`, you need to register it as follows:
+Before using the {Platform} `Toast`, you need to register it as follows:
 
 
 ```razor
@@ -232,7 +234,7 @@ public onDisplayTimeButtonClicked() {
 
 ## Styling
 
-You can style the toast using it's directly its tag selector:
+You can style the {Platform} `Toast` notifications directly using its tag selector:
 
 ```css
 igc-toast {
@@ -249,39 +251,19 @@ igc-toast {
            github-src="notifications/toast/styling">
 </code-view>
 
-## API Reference
-
-* `Toast`
 
 <div class="divider--half"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `Calendar`
  - `DisplayTime`
  - `KeepOpen`
  - `Show`
  - `Toast`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

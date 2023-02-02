@@ -47,6 +47,6 @@ Rewriting the value of the `--ig-gray-800` variable does the same as the previou
 
 Having learned about CSS parts and CSS variables and in combination with the other methods listed in the documentation, you should be able to tailor the look of all components to your liking.
 
-## API Members
+## API References
 
  - `ConfigureTheme`

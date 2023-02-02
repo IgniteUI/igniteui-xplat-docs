@@ -3,11 +3,12 @@ title: {Platform} Grid Group By | Group by multiple fields | Infragistics
 _description: Configure group by that allows visualizing of data records in {Platform} Material table, visualize the grouped data in separate and convenient column group.
 _keywords: {Platform}, Grid, {ProductName}, group by, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Grid Group By
 
-A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in the `{GridName}` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
+A Group By behavior in an {Platform} Material table or UI grid creates grouped data rows based on the column values. The Group By in the `Grid` allows for visualizing the groups in a hierarchical structure. The grouped data rows can be expanded or collapsed and the order of grouping may be changed through the UI or API. When Row Selection is enabled, a Group By row selector is rendered in the left-most area of the group row. In case the `RowSelection` property is set to single, checkboxes are disabled and only serve as an indication for the group where selection is placed. If the `RowSelection` property is set to multiple, clicking over the Group By row selector selects all records belonging to this group.
 
 ## {Platform} Grid Group By Example
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
@@ -16,6 +17,7 @@ This example presents the grouping capabilities of a large amount of data. Dragg
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
+           github-src="{GridSample}/groupby-expressions"
            alt="{Platform} {ComponentTitle} Group By Example">
 </code-view>
 
@@ -88,13 +90,13 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
 ### Expand/Collapse API
 
-In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `{GridName}` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
+In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
 
 ```typescript
 export interface IGroupByKey {
@@ -108,7 +110,7 @@ export interface IGroupByExpandState {
 }
 ```
 
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `{GridName}` exposes a method that toggles a group by the group record instance.
+As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
 
 ```typescript
     const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
@@ -231,6 +233,7 @@ Groups that span multiple pages are split between them. The group row is visible
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
+           github-src="{GridSample}/groupby-paging"
            alt="{Platform} {ComponentTitle} group by with paging example">
 </code-view>
 
@@ -270,6 +273,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 <code-view style="height:605px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
+           github-src="{GridSample}/groupby-custom-coming-soon"
            alt="{Platform} {ComponentTitle} custom group by example">
 </code-view>
 
@@ -499,7 +503,8 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling"
+           github-src="{GridSample}/groupby-styling">
 </code-view>
 
 >[!NOTE]
@@ -515,7 +520,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## API References
 
-* `{GridName}`
+* `Grid`
 * `GroupByRow`
 * `ISortingExpression`
 * `Column`
@@ -536,5 +541,5 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

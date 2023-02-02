@@ -429,7 +429,7 @@ $button-theme: button-theme(
 <!-- Angular -->
 
 * [igxGrid で CRUD 操作を構築する](/general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 
@@ -437,7 +437,7 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
 
@@ -445,5 +445,5 @@ $button-theme: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

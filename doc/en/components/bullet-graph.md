@@ -936,16 +936,18 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbBulletGraph>
 ```
 
+
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Linear Gauge](Linear-gauge.md)
 - [Radial Gauge](radial-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

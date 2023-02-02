@@ -176,7 +176,7 @@ The following example demonstrates how to style the data chart as a timeline wit
 </code-view>
 <!-- end: Blazor -->
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

@@ -1290,6 +1290,6 @@ export default class WorldLocations {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

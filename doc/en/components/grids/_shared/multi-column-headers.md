@@ -457,7 +457,7 @@ constructor() {
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
     const column = (ctx as any).column;
     return html`<div>
-             <span style="float:left">${column.header.toUpperCase()}</span>                     
+             <span style="float:left">${column.header.toUpperCase()}</span>
             </div>`;
 };
 ```
@@ -647,5 +647,5 @@ import 'core-js/es7/array';
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

@@ -13,10 +13,11 @@ The Excel Exporter service can export data to excel from the `{ComponentName}`. 
 ## {Platform} Excel Exporter Example
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} Excel Exporter Example">
 </code-view>
 
@@ -92,10 +93,11 @@ public exportButtonHandler() {
 To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. Example:
 
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
+           github-src="{ComponentSample}/excel-exporting"
            alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
 </code-view>
 
@@ -108,10 +110,11 @@ It is now possible to export `{ComponentName}` with defined [multi-column header
 > [!NOTE]
 > The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
 
-<code-view style="height: 800px;"
+<code-view style="height: 750px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            explicit-editor="stackblitz"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
+           github-src="{ComponentSample}/multi-column-headers-export"
            alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
 </code-view>
 
@@ -195,5 +198,5 @@ Additional components that were used:
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

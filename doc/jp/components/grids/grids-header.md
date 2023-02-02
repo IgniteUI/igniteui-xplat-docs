@@ -2,7 +2,7 @@
 title: {Platform} グリッド & テーブル | 最速の {Platform} UI グリッド | インフラジスティックス
 _description: 高速な {Platform} グリッドとテーブルをお探しですか? {ProductName} は、{Platform} ネイティブでマテリアル ベースの UI データ グリッドとテーブルの完全なライブラリを提供します。詳しい情報をご覧ください。
 _keywords: {Platform} data grid, table, grids, {ProductName}, Infragistics, {Platform} データ グリッド, テーブル, グリッド, インフラジスティックス
-mentionedTypes: ["Grid"]
+mentionedTypes: ["Infragistics.Controls.Grid"]
 _language: ja
 
 ---
@@ -270,7 +270,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
     <p>Ignite UI {Platform} データ グリッドは、データの無制限の行と列を処理できると同時に、カスタム テンプレートとリアルタイムのデータ更新へのアクセスを提供します。簡単なテーマ設定とブランディングのための直感的な API を備えており、最小限のコードでデータにすばやくバインドできます。</p>
     <div class="divider--half"></div>
         <div style="text-align:center">
-            <a class="cta-btn no-external-icon ui-btn--sm" href="grid/grid.md">サンプルの表示</a>
+            <a class="cta-btn no-external-icon ui-btn--sm" href="data-grid.md">サンプルの表示</a>
         </div>
     </div>
     </div>
@@ -402,7 +402,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
     <li>[列のサイズ変更](grid/column-resizing.md)</li>
     <li>[列の非表示](grid/column-hiding.md)</li>
     <!-- <li>[リモート データのロードオンデマンド](grid/virtualization.md#リモート仮想化)</li> -->
-    <!-- <li>[セル テンプレート](grid/grid.md#セル-テンプレート)</li>
+    <!-- <li>[セル テンプレート](data-grid.md#セル-テンプレート)</li>
     <li>[ARIA/a11y サポート](interactivity/accessibility-compliance.md)</li> -->
 </ul>
 </div>
@@ -449,7 +449,7 @@ Infragistics の {Platform} 製品の受賞歴のあるサポートにアクセ�
 <div class="divider--half"></div>
         <ul>
             <li><a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">{Platform} サポート ホーム ページをご覧ください。</a> </li>
-            <li>{Platform} [ドキュメント](../../components/general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
+            <li>{Platform} [ドキュメント](../general-getting-started.md)を読み、{Platform} サンプルを試してください。</li>
             <li>最新の情報は、<a class="no-external-icon" href="https://www.infragistics.com/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}">{Platform} ブログをご覧ください。</a> </li>
             <li><a class="no-external-icon" href="https://www.infragistics.com/ignite-ui-angular/grid-table">サポート ケースの送信</a></li>
             <li>{Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">参照アプリケーションを試してください。</a></li>

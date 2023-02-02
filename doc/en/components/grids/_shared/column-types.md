@@ -16,7 +16,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
+           github-src="{ComponentSample}/column-data-types">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -175,7 +176,7 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../grid/overview.md#custom-display-format).
+The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../data-grid.md#custom-display-format).
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
@@ -521,7 +522,7 @@ public init(column: IgxColumnComponent) {
 
 ```html
 <igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">        
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
 </igc-grid>
 ```
@@ -576,6 +577,6 @@ TO DO!
 ## Additional Resources
 
 * For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
-* [{ComponentTitle} Overview](overview.md)
+
 * [Editing](editing.md)
 * [Summaries](summaries.md)

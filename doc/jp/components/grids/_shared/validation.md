@@ -39,6 +39,7 @@ _language: ja
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
+           github-src="{ComponentSample}/data-validator-service"
            alt="{Platform} {ComponentTitle} 検証の基本例">
 </code-view>
 
@@ -189,6 +190,7 @@ public cellEdit(evt) {
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-extended"
+           github-src="{ComponentSample}/data-validator-service-extended"
            alt="{Platform} {ComponentTitle} カスタム検証の例">
 </code-view>
 
@@ -316,6 +318,7 @@ public stateMessage(cell: IgxGridCell) {
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
+           github-src="{ComponentSample}/data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
 </code-view>
 
@@ -423,7 +426,8 @@ public stateMessage(cell: IgxGridCell) {
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} Cross-field Validation Example">
+           github-src="{ComponentSample}/data-validator-service-cross-field"
+           alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
 </code-view>
 
 <!-- ComponentEnd:HierarchicalGrid -->
@@ -528,6 +532,7 @@ public stateMessage(cell: IgxGridCell) {
 <code-view style="height:570px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
+           github-src="{ComponentSample}/data-validator-service-cross-field"
            alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
 </code-view>
 
@@ -648,7 +653,8 @@ public cellStyles = {
 
 <code-view style="height:560px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style"
+           github-src="{ComponentSample}/data-validation-style">
 </code-view>
 
 <!-- end: Angular -->
@@ -665,7 +671,7 @@ public cellStyles = {
 <!-- Angular -->
 
 * [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
@@ -675,7 +681,7 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
@@ -687,5 +693,5 @@ public cellStyles = {
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

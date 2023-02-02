@@ -203,7 +203,6 @@ combo.deselect([cities[1], cities[5]]);
            github-src="grids/combo/styling">
 </code-view>
 
-<!-- WebComponents -->
 ## API リファレンス
 
 * `Combo`
@@ -211,19 +210,7 @@ combo.deselect([cities[1], cities[5]]);
 * `ComboHeader`
 * `ComboList`
 
-<!-- end: WebComponents -->
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

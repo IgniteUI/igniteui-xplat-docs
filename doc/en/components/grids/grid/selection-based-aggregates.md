@@ -46,7 +46,8 @@ Change the selection to see summaries of the currently selected range.
 
 <code-view style="height: 560px;"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-summary-custom-selection" >
+           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-summary-custom-selection"
+           github-src="{GridSample}/data-summary-custom-selection">
 </code-view>
 
 <!-- end: Angular -->
@@ -71,5 +72,5 @@ Change the selection to see summaries of the currently selected range.
 <div class="divider--half"></div>
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

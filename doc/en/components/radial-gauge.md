@@ -946,16 +946,16 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbRadialGauge>
 ```
 
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Bullet Graph](bullet-graph.md)
 - [Linear Gauge](Linear-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

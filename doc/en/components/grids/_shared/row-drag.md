@@ -951,9 +951,9 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

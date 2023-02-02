@@ -186,13 +186,20 @@ function transformCodeRefs(options: any) {
         let apiTypeName: string | null = null;
         let isTypeName: boolean = false;
 
+        let memberHasCustomCSS = memberName.indexOf("--") == 0;
+        if (memberHasCustomCSS) {
+            return; // skip trying to generate API link for custom CSS properties
+        }
+
         let memberHasCharDot = memberName.includes(".", 0);
         let memberHasCharSpace = memberName.includes(" ");
+        let memberHasInlineCode = memberName.includes("=") || memberName.includes(":") || memberName.includes("&") || memberName.includes("{");
 
         if (memberName == "") {
             transformWarning("found empty API member");
         }
-        if (memberHasCharSpace && !memberHasCharDot) {
+
+        if (memberHasCharSpace && !memberHasCharDot && !memberHasInlineCode) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
             transformWarning("found a space in API member: `" + memberName + "` did you mean a topic link or API member: `" + correctedMember + "`");
         }
@@ -294,6 +301,111 @@ function transformCodeRefs(options: any) {
             }
 
             if (link) {
+                // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
+                // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                let platform = getPlatformName(options.platform);
+                if (platform === "Angular" || platform === "React" || platform === "WebComponents") {
+
+                    var dockEnums = [
+                        "DockManagerPaneType",
+                        "DockingIndicatorPosition",
+                        "PaneDragActionType",
+                        "ResizerLocation",
+                        "SplitPaneOrientation",
+                        // "UnpinnedLocation",
+                    ];
+                    var dockInterfaces = [
+                        "ActivePaneEvent",
+                        "ContentPane",
+                        "DockManagerEventMap",
+                        "DockManagerLayout",
+                        "DockManagerPoint",
+                        "DockManagerResourceStrings",
+                        "DockPaneAction",
+                        "DockingIndicator",
+                        "DocumentHost",
+                        "FloatPaneAction",
+                        "FloatingPaneResizeEvent",
+                        "FloatingPaneResizeMoveEvent",
+                        "MoveFloatingPaneAction",
+                        "MoveTabAction",
+                        "PaneCloseEvent",
+                        "PaneDragEndEvent",
+                        "PaneDragOverEvent",
+                        "PaneDragStartEvent",
+                        "PaneHeaderConnectionEvent",
+                        "PaneHeaderElement",
+                        "PanePinnedEvent",
+                        "SplitPane",
+                        "SplitterResizeEvent",
+                        "TabGroupPane",
+                        "TabHeaderConnectionEvent",
+                    ];
+                    var isDockInterface = false;
+                    for (const name of dockInterfaces) {
+                        if (link.url.indexOf(name.toLowerCase()) > 0) {
+                            isDockInterface = true;
+                            break;
+                        }
+                    }
+                    var isDockEnum = false;
+                    for (const name of dockEnums) {
+                        if (link.url.indexOf(name.toLowerCase()) > 0) {
+                            isDockEnum = true;
+                            break;
+                        }
+                    }
+                    var isDockClass = false;
+                    if (link.url.indexOf("DockManager".toLowerCase()) > 0) {
+                        isDockClass = true;
+                    }
+
+                    if (isDockClass || isDockEnum || isDockInterface) {
+                        // override Angular/React/WC Dock Manager to stand-alone API docs for Dock Manager
+                        // because API docs for Dock Manager are NOT in Angular/React/WC API docs, e.g.
+                        // WORKS - https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html
+                        // FAILS - https://staging.infragistics.com/products/ignite-ui-web-components/api/docs/typescript/latest/classes/igcdockmanagercomponent.html
+
+                        link.url = link.url.replace("ignite-ui-angular/api/docs",        "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-react/api/docs",          "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("ignite-ui-web-components/api/docs", "ignite-ui/dock-manager/docs");
+                        link.url = link.url.replace("igr", "igc");
+                        link.url = link.url.replace("igx", "igc");
+
+                        // console.log("getApiLink " + link.url);
+                        if (link.url.indexOf("component.html") < 0 && isDockClass) {
+                            link.url = link.url.replace(".html", "component.html");
+                            if (link.children && link.children[0] && link.children[0].value) {
+                                // ensure classes use WC prefix
+                                link.children[0].value = link.children[0].value.replace("Igr", "Igc");
+                                link.children[0].value = link.children[0].value.replace("Igx", "Igc");
+                                // ensure classes end with "Component"
+                                if (link.children[0].value.indexOf("Component") < 0) {
+                                    link.children[0].value += "Component";
+                                }
+                            }
+                        }
+
+                        if (isDockEnum) {
+                            link.url = link.url.replace("/classes/", "/enums/");
+                            link.url = link.url.replace("component.html", ".html");
+                        }
+                        if (isDockInterface) {
+                            link.url = link.url.replace("/classes/", "/interfaces/");
+                            link.url = link.url.replace("component.html", ".html");
+                            if (link.children && link.children[0] && link.children[0].value) {
+                                link.children[0].value = link.children[0].value.replace("Component", "");
+                            }
+                        }
+                    }
+                }
+
+                // if (link.url.indexOf("components/api/docs/") > 0){
+                //     console.log("getApiLink " + link.url);
+                // }
+
                 // overriding api root for components specified in docsConfig.json
                 if (apiDocOverrideComponents !== undefined) {
                     //console.log("getApiLink replace apiDocOverride " + link.url);
@@ -487,11 +599,16 @@ function transformDocPlaceholders(options: any, removeMetaVars: boolean) {
             // console.log('--- replaceVariables \n' + nodeValue);
 
             // removing variables in metadata so we can extract a list of shared components without parting errors
-            var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
-            for (const v of variables) {
-                var r = new RegExp(v, "gm");
-                nodeValue = nodeValue.replace(r, "");
-            }
+            // var variables = ["{Platform}", "{ProductName}", "{ComponentName}", "{ComponentTitle}", "{ComponentKeywords}"];
+            // for (const v of variables) {
+            //     var r = new RegExp(v, "gm");
+            //     nodeValue = nodeValue.replace(r, "");
+            // }
+
+            // removing all variables in metadata so we can extract a list of shared components without parting errors
+            var r = new RegExp("\{[a-zA-Z]*\}", "gm");
+            nodeValue = nodeValue.replace(r, "");
+
             // cleanup of metadata
             nodeValue = nodeValue.replace(new RegExp("  ", "gm"), " ");
             nodeValue = nodeValue.replace(new RegExp(", ,", "gm"), "");
@@ -1390,13 +1507,13 @@ export class MarkdownTransformer {
             if (currRun.componentName != null) {
                 (options as any).componentName = currRun.componentName;
 
-                console.log("- " + filePath + " for " + currRun.componentName);
+                // console.log("- transforming " + filePath + " for " + currRun.componentName);
 
                 if (docsComponents[currRun.componentName] !== undefined) {
                     componentOutput = docsComponents[currRun.componentName].output;
                 }
             } else {
-                console.log("- " + filePath);
+                // console.log("- transforming " + filePath);
             }
 
             // actual parsing/transforming of metadata and topic's content
@@ -1408,6 +1525,7 @@ export class MarkdownTransformer {
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
             .use(transformDocPlaceholders, options, false) // keeping vars in metadata
+            // .use(transformDocPlaceholders, options, true) // removing vars in metadata
             .use(getFrontMatterTypes, options, filePath)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)
@@ -1766,7 +1884,7 @@ export class MarkdownTransformer {
 
         if (newApiContent.trim() !== '') {
             if (orgApiContent === '') {
-                newApiContent = '\n' + '## API Members \n' + newApiContent;
+                newApiContent = '\n' + '## API References \n' + newApiContent;
                 fileContent += newApiContent;
             } else {
                 fileContent = fileContent.replace(orgApiContent, newApiContent);
@@ -2169,7 +2287,7 @@ class MarkdownSection {
 
     public withMetadata() { return this.content.indexOf('---') === 0; }
     public withTopicList() { return this.content.indexOf('## Additional Resources') === 0; }
-    public withApiList() { return this.content.indexOf('## API Members') === 0; }
+    public withApiList() { return this.content.indexOf('## API References') === 0; }
     public withCodeViewer() { return this.content.indexOf('<code-view') === 0; }
 
     public withParagraphs() {

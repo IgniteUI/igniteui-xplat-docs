@@ -92,7 +92,7 @@ _language: ja
 - [チャート ツールチップ](chart-tooltips.md)
 - [チャート トレンドライン](chart-trendlines.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

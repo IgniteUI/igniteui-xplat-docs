@@ -128,7 +128,7 @@ You can change the default decimal display of values within the **DataToolTip** 
            github-src="charts/financial-chart/data-tooltip-formatting-currency">
 </code-view>
 
- ## API Members
+## API References
 
  - `DataToolTipExcludedColumns`
  - `DataToolTipGroupedPositionModeX`

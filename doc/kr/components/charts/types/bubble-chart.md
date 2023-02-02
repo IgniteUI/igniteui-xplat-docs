@@ -67,7 +67,7 @@ In {Platform} Bubble Chart, you can customize shape of bubble markers using `Mar
 - [Shape Chart](shape-chart.md)
 
 
-## API Members
+## API References
 
 The following table lists API members mentioned in the above sections:
 

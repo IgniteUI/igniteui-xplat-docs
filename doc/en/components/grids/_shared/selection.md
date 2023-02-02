@@ -17,6 +17,7 @@ The sample below demonstrates three types of **cell selection** behaviors in the
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
+           github-src="{ComponentSample}/cell-selection-mode"
            alt="{Platform} {ComponentTitle}  Selection Example">
 </code-view>
 
@@ -176,7 +177,8 @@ TO DO
 
 <code-view style="height:600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
+           github-src="{ComponentSample}/custom-context-menu">
 </code-view>
 
 <!-- ComponentEnd: Grid -->
@@ -221,7 +223,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
@@ -233,5 +235,5 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

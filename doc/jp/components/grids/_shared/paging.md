@@ -23,7 +23,7 @@ _language: ja
 
 <!-- Angular -->
 
-[Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう:
+<!-- [Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう: -->
 
 <!-- end: Angular -->
 
@@ -102,7 +102,6 @@ _language: ja
 </{ComponentSelector}>
 ```
 
-<!-- Angular -->
 ```html
 <{ComponentSelector} id="grid">
     <igc-paginator id="paginator" per-page="10">
@@ -125,7 +124,6 @@ constructor() {
     this._bind();
 }
 ```
-<!-- end: Angular -->
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 <!-- ComponentStart: HierarchicalGrid -->
@@ -389,7 +387,7 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
-* [ページネーター](../paginator.md)
+<!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -401,5 +399,5 @@ $dark-button: button-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

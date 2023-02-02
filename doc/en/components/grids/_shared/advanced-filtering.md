@@ -465,7 +465,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <code-view style="height:530px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
+           github-src="{ComponentSample}/advanced-filtering-style">
 </code-view>
 
 >[!NOTE]
@@ -480,7 +481,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -494,5 +495,5 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 Our community is active and always welcoming to new ideas.
 
-* [{ProductName} **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub**](https://github.com/IgniteUI/igniteui-{PlatformLower})
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

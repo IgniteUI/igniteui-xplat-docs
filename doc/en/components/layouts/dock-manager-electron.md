@@ -2,8 +2,9 @@
 title: {Platform} Dock Manager | Desktop Integration | Infragistics
 _description: Use Infragistics' {Platform} dock manager component to manage the layout of multi-window Electron desktop application. Check out {ProductName} dock manager tutorials!
 _keywords: dock manager, layout, {ProductName}, Infragistics
-mentionedTypes: ['DockManager']
+mentionedTypes: ["DockManager", "DocumentHost", "DockManagerLayout", "DockManagerPaneType", "ContentPane", "SplitPane", "TabGroupPane", "PinnedLocation", "PaneHeaderElement"]
 ---
+
 # {Platform} Dock Manager Desktop Integration
 
 The Infragistics {Platform} Dock Manager component can be used in a multi-window [Electron](https://www.electronjs.org/) desktop application to manage the layout of each window, drag panes outside of a window in order to create a new window and drag/drop panes from one window to another. You could find a sample implementation of such application in the following repository https://github.com/IgniteUI/dock-manager-electron-app.
@@ -32,7 +33,7 @@ For the Dock Manager pane contents we have used **iframe** elements which host d
 
 ### Drag and drop
 
-In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the [paneHeaderConnected]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#paneheaderconnected) and [tabHeaderConnected]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagereventmap.html#tabheaderconnected) events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in [dragService]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcpaneheaderelement.html#dragservice) and attach `dragstart` and `dragend` event listeners.
+In order to support dragging panes outside the browser/application window we have replaced the built-in drag/drop which creates in-browser floating panes with a custom implementation based on the [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API). We have subscribed to the `PaneHeaderConnected` and `TabHeaderConnected` events which are fired when a header element is connected to the DOM. When a header element is connected we reset the built-in `DragService` and attach `DragStart` and `DragEnd` event listeners.
 
 ```ts
 const paneHeaderConnected = (event: CustomEvent<IgcPaneHeaderConnectionEventArgs>) => {
@@ -52,7 +53,7 @@ dockManager.addEventListener('paneHeaderConnected', paneHeaderConnected);
 ```
 
 
-In the `paneHeaderDragStart` function we set the [draggedPane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#draggedpane) property of the Dock Manager component which will notify it that a drag operation has been started.
+In the `PaneHeaderDragStart` function we set the `DraggedPane` property of the Dock Manager component which will notify it that a drag operation has been started.
 
 ```ts
 const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
@@ -62,7 +63,7 @@ const paneHeaderDragStart = async (pane: IgcContentPane, event: DragEvent) => {
 }
 ```
 
-We have subscribed to the `dragover` and `drop` events of the `document` element. In the `dragover` listener we notify the Dock Manager that the mouse is dragged over it by setting its [dropPosition]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#dropposition) property. This forces the Dock Manager to display its docking indicators.
+We have subscribed to the `DragOver` and `drop` events of the `document` element. In the `DragOver` listener we notify the Dock Manager that the mouse is dragged over it by setting its `DropPosition`) property. This forces the Dock Manager to display its docking indicators.
 
 ```ts
 const handleDocumentDragOver = (event: DragEvent) => {
@@ -93,7 +94,7 @@ const paneHeaderDragEnd = async (event: DragEvent) => {
 }
 ```
 
-When the pane header is dropped inside a document we call the [dropPane]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/interfaces/igcdockmanagercomponent.html#droppane) method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns **true**. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
+When the pane header is dropped inside a document we call the `DropPane` method which notifies the Dock Manager that the dragged pane was dropped. If the pane was dropped on a docking indicator the method returns **true**. If the pane was dropped in the same window it was dragged from, the pane will be docked to its new position automatically. However, if it was dropped in another window we call the `droppedInAnotherWindow` function which first removes the pane from the source Dock Manager and then adds it to the new one.
 
 ```ts
 const handleDocumentDrop = async (event: DragEvent) => {
@@ -112,7 +113,7 @@ const handleDocumentDrop = async (event: DragEvent) => {
 }
 ```
 
-When a pane is dropped out of its current window, we need to remove the `draggedPane` from its Dock Manager component and update the layout.
+When a pane is dropped out of its current window, we need to remove the `DraggedPane` from its Dock Manager component and update the layout.
 
 ```ts
 const draggedPane = dockManager.draggedPane as IgcContentPane;
@@ -148,9 +149,9 @@ In this application we have implemented an `IDockManagerWindow` type which could
 
 For the full source code please clone the [repository](https://github.com/IgniteUI/dock-manager-electron-app).
 
- ## API Members
+## API References
 
- - `BrowserWindow`
- - [DockManager]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
- - `IDockManagerWindow`
- - `Window`
+ - `DockManager`
+ - `DocumentHost`
+ - `DockManagerLayout`
+ - `ContentPane`

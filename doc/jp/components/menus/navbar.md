@@ -144,47 +144,17 @@ igc-navbar::part(end) {
            github-src="menus/nav-bar/styling">
 </code-view>
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-Navbar の API の詳細については、次のリンクを参照してください:
-* `Navbar`
-
-使用したその他のコンポーネントとディレクティブ:
-* `Icon`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
-## その他のリソース
 
-コミュニティに参加して新しいアイデアをご提案ください。
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `End`
  - `Icon`
  - `Navbar`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

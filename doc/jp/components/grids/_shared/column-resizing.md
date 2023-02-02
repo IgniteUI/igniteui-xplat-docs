@@ -16,6 +16,7 @@ _language: ja
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
+           github-src="{ComponentSample}/column-resizing"
            alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
 </code-view>
 
@@ -220,11 +221,11 @@ TO DO!
 <!-- ComponentStart: Grid -->
 
 ```html
-<{ComponentSelector} [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-grid [data]="data" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'ID'" width="10%" [resizable]="true"></igx-column>
     <igx-column [field]="'CompanyName'" width="100px" [resizable]="true"></igx-column>
     <igx-column [field]="'ContactTitle'" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-grid>
 ```
 
 ```razor
@@ -247,11 +248,11 @@ TO DO!
 <!-- ComponentStart: TreeGrid -->
 
 ```html
-<{ComponentSelector} [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
+<igx-tree-grid [data]="data" primaryKey="ID" foreignKey="ParentID" (columnResized)="onResize($event)" [autoGenerate]="false">
     <igx-column [field]="'Title'" [resizable]="true" [width]="'10%'"></igx-column>
     <igx-column [field]="'HireDate'" [resizable]="true" [width]="'100px'"></igx-column>
     <igx-column [field]="'Age'" dataType="number" [resizable]="true"></igx-column>
-</{ComponentSelector}>
+</igx-tree-grid>
 ```
 
 ```razor
@@ -377,7 +378,7 @@ constructor() {
     var id = this.id = document.getElementById('ID') as IgcColumnComponent;
 
     this._bind = () => {
-        id.autoize();
+        id.autosize();
     }
     this._bind();
 }
@@ -418,6 +419,7 @@ constructor() {
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
+           github-src="{ComponentSample}/column-auto-sizing"
            alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
 </code-view>
 
@@ -520,7 +522,8 @@ $custom-grid-theme: grid-theme(
 
 <code-view style="height:550px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
+           github-src="{ComponentSample}/column-resize-styling">
 </code-view>
 
 >[!NOTE]
@@ -535,7 +538,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -547,5 +550,5 @@ $custom-grid-theme: grid-theme(
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
-* [{ProductName} **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-{PlatformLower})
-* [{ProductName} **GitHub (英語)**](https://github.com/IgniteUI/igniteui-{PlatformLowerNoHyphen})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})
