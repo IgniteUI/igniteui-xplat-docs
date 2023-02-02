@@ -202,7 +202,13 @@ yarn install
 
 > NOTE: Do not use `npm` because you will not be able to run docs locally.
 
-You can host the DocFX locally with this command:
+You can host the DocFX locally with this command *npm* (PS in admin mode required):
+
+```cmd
+npm start
+```
+
+You can host the DocFX locally with this command *yarn*:
 
 ```cmd
 yarn start
