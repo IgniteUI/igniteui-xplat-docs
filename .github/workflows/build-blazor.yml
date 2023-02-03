@@ -32,3 +32,5 @@ jobs:
       run: npm ci
     - name: Build Blazor
       run: npm run buildBlazor
+    - name: Test Blazor
+      run: npm run test
