@@ -290,16 +290,16 @@ You can provide a custom slot content for the loading area using the `loadingInd
 
 You can change the appearance of the `TreeItem`s, by using some of the exposed CSS parts listed below:
 
-Part name | Description
----------|------------
-`wrapper` | The wrapper for the tree item.
-`selected`  | Indicates selected state. Applies to `wrapper`.
-`focused` | Indicates focused state. Applies to `wrapper`.
-`active` | Indicates an active state. Applies to `wrapper`.
-`indicator` | The expand indicator of the tree item.
-`label` | The tree item content.
-`text` | The tree item displayed text.
-`select` | The checkbox of the tree item when selection is enabled.
+| Part name | Description |
+| ---------|------------ |
+| `wrapper` | The wrapper for the tree item. |
+| `selected`  | Indicates selected state. Applies to `wrapper`. |
+| `focused` | Indicates focused state. Applies to `wrapper`. |
+| `active` | Indicates an active state. Applies to `wrapper`. |
+| `indicator` | The expand indicator of the tree item. |
+| `label` | The tree item content. |
+| `text` | The tree item displayed text. |
+| `select` | The checkbox of the tree item when selection is enabled. |
 
 Using these CSS parts we can customize thе appearance of the `Tree` component like this:
 

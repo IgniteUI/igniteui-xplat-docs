@@ -143,32 +143,32 @@ input.value = date;
 
 さらに、ユーザーは、次の表で説明されているサポートされている記号を使用して、displayFormat 文字列を作成できます。
 
-タイプ | 書式 | 説明 | 例 |
-|:---|:-------:|:-----------|:--------|
-日付 | `d` | 最小桁数 | 7, 17 |
-|| `dd` |ゼロ埋込み | 07, 17 |
-月 | `M` | 最小桁数 | 3, 10 |
-|| `MM` | ゼロ埋込み | 03, 10 |
-|| `MMM` | 省略 | Oct |
-|| `MMMM` | ワイド | October |
-|| `MMMMM` | 狭い | O |
-年 | `y` | 数値 | 2022
-|| `yy` | 2 桁 | 22
-|| `yyy` | 数値 | 2022
-|| `yyyy` | 数値  | 2022
-12 時間 | `h` | 最小桁数 | 1, 12
-|| `hh` | ゼロ埋込み | 01, 12
-24 時間 | `H` | 最小桁数 | 1, 23
-|| `HH` | ゼロ埋込み | 01, 23
-分 | `m` | 最小桁数 | 1, 59
-|| `mm` | ゼロ埋込み | 01, 59
-秒 | `s` | 最小桁数 | 1, 59
-|| `ss` | ゼロ埋込み | 01, 59
-期間 | `t` | 省略 | AM, PM
-|| `tt` | 省略 | AM, PM
-|| `ttt` | 短い | noon
-|| `tttt` | 長い | noon
-|| `ttttt` | 狭い | n
+| タイプ | 書式 | 説明 | 例 |
+|:---|-------:|:-----------|:--------|
+| Day | `d` | Minimum digits. | 7, 17 |
+|   | `dd` | Zero padded. | 07, 17 |
+| Month | `M` | Minimum digits. | 3, 10 |
+|   | `MM` | Zero padded. | 03, 10 |
+|   | `MMM` | Abbreviated | Oct |
+|   | `MMMM` | Wide | October |
+|   | `MMMMM` | Narrow | O |
+| Year | `y` | Numeric | 2022 |
+|   | `yy` | Two digit | 22
+|   | `yyy` | Numeric | 2022
+|   | `yyyy` |  Numeric  | 2022
+| Hour 1-12 | `h` | Minimum digits | 1, 12 |
+|   | `hh` | Zero padded | 01, 12
+| Hour 1-24 | `H` | Minimum digits | 1, 23 |
+|   | `HH` | Zero padded | 01, 23 |
+| Minute | `m` | Minimum digits | 1, 59 |
+|   | `mm` | Zero padded | 01, 59 |
+| Second |  `s` | Minimum digits | 1, 59 |
+|   | `ss` | Zero padded | 01, 59 |
+| Time Period | `t` | Abbreviated | AM, PM |
+|   | `tt` | Abbreviated | AM, PM |
+|   | `ttt` | Short | noon |
+|   | `tttt` | Long | noon |
+|   | `ttttt` | Narrow | n |
 
 > 注:
 多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。また、12 時間制を使用した場合にのみ効果があります。

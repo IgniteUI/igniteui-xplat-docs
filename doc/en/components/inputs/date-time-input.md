@@ -141,33 +141,34 @@ The date time input exposes predefined formats for displaying date/time in vario
 | `fullTime` | 12:00:00 AM Eastern European Summer Time |
 
 Furthermore, users can construct a displayFormat string using the supported symbols described in the following table.
+<br>
 
-Type | Format | Description | Example |
-|:---|:-------:|:-----------|:--------|
-Day of month | `d` | Minimum digits. | 7, 17 |
-|| `dd` | Zero padded. | 07, 17 |
-Month | `M` | Minimum digits. | 3, 10 |
-|| `MM` | Zero padded. | 03, 10 |
-|| `MMM` | Abbreviated | Oct |
-|| `MMMM` | Wide | October |
-|| `MMMMM` | Narrow | O |
-Year | `y` | Numeric | 2022
-|| `yy` | Two digit | 22
-|| `yyy` | Numeric | 2022
-|| `yyyy` | Numeric  | 2022
-Hour 1-12 | `h` | Minimum digits | 1, 12
-|| `hh` | Zero padded | 01, 12
-Hour 1-24 | `H` | Minimum digits | 1, 23
-|| `HH` | Zero padded | 01, 23
-Minute | `m` | Minimum digits | 1, 59
-|| `mm` | Zero padded | 01, 59
-Second | `s` | Minimum digits | 1, 59
-|| `ss` | Zero padded | 01, 59
-Time Period | `t` | Abbreviated | AM, PM
-|| `tt` | Abbreviated | AM, PM
-|| `ttt` | Short | noon
-|| `tttt` | Long | noon
-|| `ttttt` | Narrow | n
+| Type | Format | Description | Example |
+|:---|-------:|:-----------|:--------|
+| Day | `d` | Minimum digits. | 7, 17 |
+|   | `dd` | Zero padded. | 07, 17 |
+| Month | `M` | Minimum digits. | 3, 10 |
+|   | `MM` | Zero padded. | 03, 10 |
+|   | `MMM` | Abbreviated | Oct |
+|   | `MMMM` | Wide | October |
+|   | `MMMMM` | Narrow | O |
+| Year | `y` | Numeric | 2022 |
+|   | `yy` | Two digit | 22
+|   | `yyy` | Numeric | 2022
+|   | `yyyy` |  Numeric  | 2022
+| Hour 1-12 | `h` | Minimum digits | 1, 12 |
+|   | `hh` | Zero padded | 01, 12
+| Hour 1-24 | `H` | Minimum digits | 1, 23 |
+|   | `HH` | Zero padded | 01, 23 |
+| Minute | `m` | Minimum digits | 1, 59 |
+|   | `mm` | Zero padded | 01, 59 |
+| Second |  `s` | Minimum digits | 1, 59 |
+|   | `ss` | Zero padded | 01, 59 |
+| Time Period | `t` | Abbreviated | AM, PM |
+|   | `tt` | Abbreviated | AM, PM |
+|   | `ttt` | Short | noon |
+|   | `tttt` | Long | noon |
+|   | `ttttt` | Narrow | n |
 
 > Note:
 Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
