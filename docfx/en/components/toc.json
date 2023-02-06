@@ -131,14 +131,14 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Palettes",
-    "href": "themes/palettes.md",
+    "name": "Elevations",
+    "href": "themes/elevations.md",
     "status": "NEW"
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Elevations",
-    "href": "themes/elevations.md",
+    "name": "Palettes",
+    "href": "themes/palettes.md",
     "status": "NEW"
   },
   {
@@ -149,7 +149,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "Component Styles",
+    "name": "Styles",
     "href": "themes/styles.md",
     "status": "NEW"
   },
