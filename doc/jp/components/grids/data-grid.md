@@ -38,8 +38,8 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid in our toolbox include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.</p>
-            <p>The {Platform} tables are optimized for live streaming data, with the ability to handle unlimited data set size in a number of rows or columns. </p>
+            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行の固定、および移動可能な列が含まれます。</p>
+            <p>{Platform} テーブルは、ライブのストリーミング データ用に最適化されており、多数の行または列で無制限のデータ セット サイズを処理できます。</p>
         </div>
     </article>
     <article class="sample-column">
