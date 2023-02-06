@@ -1,6 +1,6 @@
 ---
-title: {Platform} Grid | 高速な {Platform} テーブルの構築 | インフラジスティックス
-_description: {ProductName} を使用して、超高速でレスポンシブな {Platform} グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
+title: {Platform} Data Grid コンポーネント (Data Table) - インフラジスティックス
+_description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 _language: ja
@@ -38,7 +38,8 @@ _language: ja
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p> {Platform} `Grid` データ グリッドは、データを表形式ですばやく簡単に表示するための機能豊富なコントロールとして使用されます。最新のグリッドは複雑で、通常、データの選択、Excel スタイルのフィルタリング、ソート、ページング、テンプレート化、列の移動、Excel および CSV 形式へのエクスポートなどの一連の機能が搭載されています。</p>
+            <p>{ProductName} Data Table / Data Grid は、コーディングや構成をほとんど行わずにデータをすばやくバインドして表示できる表形式の {Platform} グリッド コンポーネントです。ツールボックスの {Platform} データ グリッドの機能には、フィルタリング、ソート、テンプレート、行の選択、行のグループ化、行の固定、および移動可能な列が含まれます。</p>
+            <p>{Platform} テーブルは、ライブのストリーミング データ用に最適化されており、多数の行または列で無制限のデータ セット サイズを処理できます。</p>
         </div>
     </article>
     <article class="sample-column">
@@ -55,9 +56,9 @@ _language: ja
     </article>
 </div>
 
-## {Platform} Grid の例
+## {Platform} Data Grid の例
 
-このグリッドの例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
+この {ProductName} Grid の例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -68,11 +69,11 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## {ProductName} Grid で作業を開始
+## {ProductName} Data Grid で作業を開始
 
 ### 依存関係
 
-{Platform} グリッドを初期化するには、{ProductName} パッケージをインストールする必要があります。
+{Platform} Data Grid を初期化するには、{ProductName} パッケージをインストールする必要があります。
 
 <!-- Blazor -->
 
@@ -132,6 +133,8 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 <!-- Angular, React, Blazor -->
 
 ### コンポーネント モジュール
+
+`DataGrid` には以下のモジュールが必要です。
 
 ```razor
 // in Program.cs file

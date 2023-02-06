@@ -149,7 +149,7 @@
   },
   {
     "exclude": ["Angular", "React"],
-    "name": "コンポーネントのスタイル",
+    "name": "スタイル",
     "href": "themes/styles.md",
     "status": "NEW"
   },
