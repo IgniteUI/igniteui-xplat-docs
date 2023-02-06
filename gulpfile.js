@@ -910,49 +910,47 @@ function fixMarkdownTables(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    'doc/en/**/*.md',
-    // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/*.md',
     // 'doc/jp/**/*.md',
-    // 'doc/kr/**/*.md',
-    //'doc/kr/**/chart-legends.md',
-    // 'doc/en/**/zoomslider*.md',
+    'doc/kr/**/*.md',
     '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        console.log('verifying: ' + filePath);
+        console.log('  verifying: ' + filePath);
 
         var lines = fileContent.split("\n");
         for (let i = 0; i < lines.length; i++) {
             var line = lines[i].trim();
             if (line.indexOf("title:") < 0 &&
                 line.indexOf("> NOTE") < 0 &&
+                line.indexOf("if") !== 0 &&
+                line.indexOf("} else") !== 0 &&
+                line.indexOf("columnArgs") < 0 &&
+                line.indexOf("const ") !== 0 &&
+                line.indexOf("return ") !== 0 &&
+                line.indexOf("public ") !== 0 &&
+                line.indexOf("private ") !== 0 &&
+                line.indexOf("`IncludedProperties` | `ExcludedProperties`") < 0 &&
+                line.indexOf("let ") !== 0 &&
+                line.indexOf("(") !== 0 &&
+                line.indexOf("{") !== 0 &&
+                line.indexOf("<") !== 0 &&
+                line.indexOf("*") !== 0 &&
                 line.indexOf("|") !== 0 &&
+                line.indexOf("||") < 0 &&
                 line.indexOf("|") > 0) {
                 lines[i] = "| " + line + " |";
                 console.log(line);
             }
         }
-        fileContent = lines.join("\n");
-
-        // file.contents = Buffer.from(fileContent);
-        // var filePath = file.dirname + "\\" + file.basename
-        // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        // fileContent = lines.join("\n");
+        // fs.writeFileSync(filePath, fileContent);
         filesCount++;
-        fs.writeFileSync(filePath, fileContent);
-        // var result = transformer.verifyMetadata(fileContent, filePath);
-        // if (result.isValid) {
-        //     // console.log('verified:  ' + filePath);
-        //     // fileContent = result.fileContent;
-        //     //file.contents = Buffer.from(fileContent);
-        //     // auto-update topics with corrections if any
-        //     //fs.writeFileSync(filePath, fileContent);
-        // } else {
-        //     errorsCount++;
-        // }
+
+
         fileCallback(null, file);
     }))
     .on("end", () => {
