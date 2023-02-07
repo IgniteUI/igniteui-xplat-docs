@@ -206,10 +206,10 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type        | Control Name       | API Members
-------------------|--------------------|-----------------------
-Line              | `CategoryChart` | `ChartType` = `Line`
-Polar Line        | `XamDataChart`     | `PolarLineSeries`
-Radial Line       | `XamDataChart`     | `RadialLineSeries`
-Stacked Line      | `XamDataChart`     | `StackedLineSeries`
-Stacked 100% Line | `XamDataChart`     | `Stacked100LineSeries`
+| Chart Type        | Control Name       | API Members |
+| ------------------|--------------------|----------------------- |
+| Line              | `CategoryChart` | `ChartType` = `Line` |
+| Polar Line        | `XamDataChart`     | `PolarLineSeries` |
+| Radial Line       | `XamDataChart`     | `RadialLineSeries` |
+| Stacked Line      | `XamDataChart`     | `StackedLineSeries` |
+| Stacked 100% Line | `XamDataChart`     | `Stacked100LineSeries` |

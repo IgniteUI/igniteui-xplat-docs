@@ -31,21 +31,21 @@ _language: ja
 ### データ バインディング
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
-プロパティ|タイプ|概要
----|---|---
-`ItemsSource`|any|項目ソースを取得または設定します。
-`LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
-`LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
+| プロパティ|タイプ|概要 |
+| ---|---|--- |
+| `ItemsSource`|any|項目ソースを取得または設定します。 |
+| `LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。 |
+| `LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。 |
 
 ## 熱色スケール
 熱色スケールは、シリーズ内のカラー パターンを決定するオプションの機能です。以下の表は、カラー スケールを決定するために使用するプロパティをまとめたものです。
 
-プロパティ|タイプ|概要
----|---|---
-`HeatMinimum`|カラー スケールの最小端を表す double 値を定義します。
-`HeatMaximum`|カラー スケールの最大端を表す double 値を定義します。
-`HeatMinimumColor`|Color|カラー スケールの下端で使用するポイント密度カラーを定義します。
-`HeatMaximumColor`|Color|カラー スケールの上端で使用するポイント密度カラーを定義します。
+| プロパティ|タイプ|概要 |
+| ---|---|--- |
+| `HeatMinimum`|カラー スケールの最小端を表す double 値を定義します。 |
+| `HeatMaximum`|カラー スケールの最大端を表す double 値を定義します。 |
+| `HeatMinimumColor`|Color|カラー スケールの下端で使用するポイント密度カラーを定義します。 |
+| `HeatMaximumColor`|Color|カラー スケールの上端で使用するポイント密度カラーを定義します。 |
 
 ## コード例
 

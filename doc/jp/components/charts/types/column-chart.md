@@ -188,11 +188,11 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ          | コントロール名       | API メンバー
---------------------|--------------------|------------------------
-縦棒              | `CategoryChart` | `ChartType` = **Column**
-ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries`
-範囲縦棒        | `XamDataChart`     | `RangeColumnSeries`
-積層型縦棒      | `XamDataChart`     | `StackedColumnSeries`
-積層型 100% 縦棒 | `XamDataChart`     | `Stacked100ColumnSeries`
-ウォーターフォール           | `XamDataChart`     | `WaterfallSeries`
+| チャート タイプ          | コントロール名       | API メンバー |
+| --------------------|--------------------|------------------------ |
+| 縦棒              | `CategoryChart` | `ChartType` = **Column** |
+| ラジアル縦棒       | `XamDataChart`     | `RadialColumnSeries` |
+| 範囲縦棒        | `XamDataChart`     | `RangeColumnSeries` |
+| 積層型縦棒      | `XamDataChart`     | `StackedColumnSeries` |
+| 積層型 100% 縦棒 | `XamDataChart`     | `Stacked100ColumnSeries` |
+| ウォーターフォール           | `XamDataChart`     | `WaterfallSeries` |

@@ -115,8 +115,8 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ          | コントロール名       | API メンバー
---------------------|--------------------|--------------------------
-スプライン              | `CategoryChart` | `ChartType` = `Spline`
-積層型スプライン      | `XamDataChart`     | `StackedSplineSeries`
-積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries`
+| チャート タイプ          | コントロール名       | API メンバー |
+| --------------------|--------------------|-------------------------- |
+| スプライン              | `CategoryChart` | `ChartType` = `Spline` |
+| 積層型スプライン      | `XamDataChart`     | `StackedSplineSeries` |
+| 積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries` |

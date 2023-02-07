@@ -153,29 +153,29 @@ You can change the appearance of the {ProductName} `Select` component and its it
 
 **Select Component**
 
-Part name | Description
----------|------------
-`input` | The encapsulated igc-input.
-`label` | The encapsulated text label.
-`list` | A wrapper that holds the list of options.
-`prefix`  | A prefix wrapper that renders content before the input.
-`suffix` | A suffix wrapper that renders content after the input.
-`toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
-`helper-text` | A helper-text wrapper that renders content below the input.
+| Part name | Description |
+| ---------|------------ |
+| `input` | The encapsulated igc-input. |
+| `label` | The encapsulated text label. |
+| `list` | A wrapper that holds the list of options. |
+| `prefix`  | A prefix wrapper that renders content before the input. |
+| `suffix` | A suffix wrapper that renders content after the input. |
+| `toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper. |
+| `helper-text` | A helper-text wrapper that renders content below the input. |
 
 **Select Item Component**
 
-Part name | Description
----------|------------
-`content` | The main wrapper that holds the text content of an item.
-`prefix`  | A prefix wrapper that renders content before the main wrapper.
-`suffix` | A suffix wrapper that renders content after the main wrapper.
+| Part name | Description |
+| ---------|------------ |
+| `content` | The main wrapper that holds the text content of an item. |
+| `prefix`  | A prefix wrapper that renders content before the main wrapper. |
+| `suffix` | A suffix wrapper that renders content after the main wrapper. |
 
 **Select Group Component**
 
-Part name | Description
----------|------------
-`Label` | A label wrapper that renders content above the select group items.
+| Part name | Description |
+| ---------|------------ |
+| `Label` | A label wrapper that renders content above the select group items. |
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

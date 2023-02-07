@@ -197,8 +197,8 @@ _language: ja
 - `OthersCategoryType`
 - `SelectionMode`
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-円チャート      | `XamPieChart`     | `PieChart`
-ラジアル円チャート | `XamDataChart` | `RadialPieSeries`
+| チャート タイプ       | コントロール名   | API メンバー |
+| -----------------|----------------|------------ |
+| 円チャート      | `XamPieChart`     | `PieChart` |
+| ラジアル円チャート | `XamDataChart` | `RadialPieSeries` |
 

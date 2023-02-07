@@ -229,17 +229,17 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ               | コントロール名   | API メンバー
--------------------------|----------------|--------------------------------
-積層型エリア             | `XamDataChart` | `StackedAreaSeries`
-積層型棒              | `XamDataChart` | `StackedBarSeries`
-積層型縦棒           | `XamDataChart` | `StackedColumnSeries`
-積層型折れ線             | `XamDataChart` | `StackedLineSeries`
-積層型スプライン           | `XamDataChart` | `StackedSplineSeries`
-積層型スプライン エリア    | `XamDataChart` | `StackedSplineAreaSeries`
-積層型 100% エリア        | `XamDataChart` | `Stacked100AreaSeries`
-積層型 100% 棒         | `XamDataChart` | `Stacked100BarSeries`
-積層型 100% 縦棒      | `XamDataChart` | `Stacked100ColumnSeries`
-積層型 100% 折れ線        | `XamDataChart` | `Stacked100LineSeries`
-積層型 100% スプライン      | `XamDataChart` | `Stacked100SplineSeries`
-積層型 100% スプライン エリア | `XamDataChart` | `Stacked100SplineAreaSeries`
+| チャート タイプ               | コントロール名   | API メンバー |
+| -------------------------|----------------|-------------------------------- |
+| 積層型エリア             | `XamDataChart` | `StackedAreaSeries` |
+| 積層型棒              | `XamDataChart` | `StackedBarSeries` |
+| 積層型縦棒           | `XamDataChart` | `StackedColumnSeries` |
+| 積層型折れ線             | `XamDataChart` | `StackedLineSeries` |
+| 積層型スプライン           | `XamDataChart` | `StackedSplineSeries` |
+| 積層型スプライン エリア    | `XamDataChart` | `StackedSplineAreaSeries` |
+| 積層型 100% エリア        | `XamDataChart` | `Stacked100AreaSeries` |
+| 積層型 100% 棒         | `XamDataChart` | `Stacked100BarSeries` |
+| 積層型 100% 縦棒      | `XamDataChart` | `Stacked100ColumnSeries` |
+| 積層型 100% 折れ線        | `XamDataChart` | `Stacked100LineSeries` |
+| 積層型 100% スプライン      | `XamDataChart` | `Stacked100SplineSeries` |
+| 積層型 100% スプライン エリア | `XamDataChart` | `Stacked100SplineAreaSeries` |

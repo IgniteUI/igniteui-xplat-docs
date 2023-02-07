@@ -42,13 +42,13 @@ _language: ja
 
 ズーム操作とパン操作は、それぞれ `DragModifier` プロパティと `PanModifier` プロパティを設定し、修飾キーを使用して有効にすることもできます。これらのプロパティは以下の修飾キーに設定することができ、押すと対応する操作が実行されます。
 
-修飾値 | 対応するキー
----------------|------------------
-`Shift`        | <kbd>Shift</kbd>
-`Control`      | <kbd>Ctrl</kbd>
-`Windows`      | <kbd>Win</kbd>
-`Apple`        | <kbd>Apple</kbd>
-`None`         | なし
+| 修飾値 | 対応するキー |
+| ---------------|------------------ |
+| `Shift`        | <kbd>Shift</kbd> |
+| `Control`      | <kbd>Ctrl</kbd> |
+| `Windows`      | <kbd>Win</kbd> |
+| `Apple`        | <kbd>Apple</kbd> |
+| `None`         | なし |
 
 ## スクロールバーを使用したチャート ナビゲーション
 

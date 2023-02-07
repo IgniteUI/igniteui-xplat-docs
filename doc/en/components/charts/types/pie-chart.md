@@ -196,8 +196,8 @@ The following table lists API members mentioned in the above sections:
 - `OthersCategoryType`
 - `SelectionMode`
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Pie Chart      | `XamPieChart`     | `PieChart`
-Radial Pie Chart | `XamDataChart` | `RadialPieSeries`
+ |Chart Type       | Control Name   | API Members |
+ |-----------------|----------------|------------ |
+ |Pie Chart      | `XamPieChart`     | `PieChart` |
+ |Radial Pie Chart | `XamDataChart` | `RadialPieSeries` |
 
