@@ -60,7 +60,7 @@ Change the selection to see summaries of the currently selected range.
 ## Additional Resources
 <div class="divider--half"></div>
 
-* [Grid overview](grid.md)
+* [Grid overview](../data-grid.md)
 * [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)

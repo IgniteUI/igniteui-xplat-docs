@@ -61,7 +61,7 @@ const dates = data.filter(rec => isDate(rec));
 ## その他のリソース
 <div class="divider--half"></div>
 
-* [Grid の概要](grid.md)
+* [Grid の概要](../data-grid.md)
 * [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
 * [行の選択](row-selection.md)
 * [セルの選択](cell-selection.md)

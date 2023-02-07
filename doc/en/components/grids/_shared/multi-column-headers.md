@@ -635,7 +635,7 @@ import 'core-js/es7/array';
 
 ## Additional Resources
 
-* [Grid Overview](grid.md)
+* [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

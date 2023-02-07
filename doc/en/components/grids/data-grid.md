@@ -1714,7 +1714,7 @@ platformBrowserDynamic()
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">

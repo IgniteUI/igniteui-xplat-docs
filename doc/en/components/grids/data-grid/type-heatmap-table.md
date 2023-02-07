@@ -16,7 +16,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 # {Platform} Binding Heatmap Data
 
-The {ProductName} Data Table / Data Grid supports [template columns](data-grid-column-types.md#template-column) to create a heatmap.
+The {ProductName} Data Table / Data Grid supports [template columns](column-types.md#template-column) to create a heatmap.
 
 ## {Platform} Binding Heatmap Data Example
 

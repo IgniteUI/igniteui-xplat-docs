@@ -50,7 +50,7 @@ A service provides data to the component when the page loads, and when the slide
     this.localService.records.subscribe(x => { this.data = x; });
 ```
 
-A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```Razor
 <IgbDataGrid data="data">
