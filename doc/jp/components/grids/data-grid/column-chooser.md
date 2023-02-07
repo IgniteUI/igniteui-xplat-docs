@@ -37,7 +37,7 @@ _language: ja
 列選択 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。このため、ツールバーの `ColumnChooser` プロパティを true に設定します。
 ツールバーは `Button` を表示し、クリックすると列選択 UI を表示します。このボタンは、非表示列の合計も表示します。ツールバーが作成されていない場合、`ColumnChooser` プロパティを有効にしても効果はなく、ボタンを非表示にします。
 
-`DataGridToolbar` は、` toolbarTitle` プロパティを使用してツールバーにタイトルを追加、`ColumnChooserText` プロパティを設定して `Button` にテキストを配置、`ColumnChooserTitle` を設定して、タイトル ヘッダーを列選択 UI に追加などの追加プロパティを提供します。
+`DataGridToolbar` は、`ToolbarTitle` プロパティを使用してツールバーにタイトルを追加、`ColumnChooserText` プロパティを設定して `Button` にテキストを配置、`ColumnChooserTitle` を設定して、タイトル ヘッダーを列選択 UI に追加などの追加プロパティを提供します。
 
 列選択は、グリッドの `ColumnHidingAnimationMode` および `ColumnShowingAnimationMode` プロパティを設定することでアニメーションで構成できます。
 

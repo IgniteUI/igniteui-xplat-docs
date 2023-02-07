@@ -529,7 +529,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## Additional Resources
 
-* [Grid overview](grid.md)
+* [Grid overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

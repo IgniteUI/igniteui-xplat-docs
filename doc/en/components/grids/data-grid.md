@@ -1,6 +1,6 @@
 ---
-title: {Platform} Data Grid Component (Data Table) - Infragistics 
-_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now! 
+title: {Platform} Data Grid Component (Data Table) - Infragistics
+_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 ---
@@ -133,7 +133,7 @@ For more details on how to customize the appearance of the grid, you may have a 
 
 ### Component Modules
 
-The `DataGrid` requires the following modules: 
+The `DataGrid` requires the following modules:
 
 ```razor
 // in Program.cs file
@@ -1693,7 +1693,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1714,7 +1714,7 @@ platformBrowserDynamic()
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">

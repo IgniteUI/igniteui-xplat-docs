@@ -16,7 +16,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 # {Platform} Binding Comparison Data
 
-The {ProductName} Data Table / Data Grid supports [template columns](data-grid-column-types.md#template-column) to insert images.
+The {ProductName} Data Table / Data Grid supports [template columns](column-types.md#template-column) to insert images.
 
 ## {Platform} Binding Comparison Data Example
 
