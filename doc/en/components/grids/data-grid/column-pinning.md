@@ -270,7 +270,7 @@ onButtonUnPin () {
 
 The Column Pinning UI is accessible within the `DataGridToolbar` component separate from the grid. For this purpose all we have to do is set the toolbar's `columnPinning` property to true. The toolbar will then display a `Button`, when clicked, will display the column pinning UI. This button also displays the total of pinned-left columns. If the toolbar is not created, enabling the `columnPinning` property will have no effect and hide the button.
 
-The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `toolbarTitle` property, placing text in the `Button` by setting the `columnPinningText` property, and adding a title header to the column hiding UI by setting `columnPinningTitle`.
+The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `ToolbarTitle` property, placing text in the `Button` by setting the `columnPinningText` property, and adding a title header to the column hiding UI by setting `columnPinningTitle`.
 
 ## Demo
 

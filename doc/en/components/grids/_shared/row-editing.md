@@ -328,7 +328,7 @@ This will apply our custom banner theme to the Row Editing overlay. However, sin
 
 ### Component Styles
 
-Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
+Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [theme import](#import-theme)) in the component containing our `{ComponentName}`.
 
 >[!NOTE]
 >If the component is using an [Emulated](themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.

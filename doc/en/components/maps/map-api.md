@@ -12,7 +12,7 @@ The {Platform} `XamGeographicMap` has the following API members:
 
 | Map Properties | Series Classes |
 | ---------------|------------- |
-| - `Legend` <br> - `Zoomable`  <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `ResizeBehavior` <br> - `WorldRect` <br>  | - `GeographicScatterAreaSeries` <br> -  `GeographicContourLineSeries` <br> - `GeographicHighDensityScatterSeries` <br> - `GeographicPolylineSeries` <br> - `GeographicProportionalSymbolSeries ` <br> - ` GeographicShapeSeries` <br> - `GeographicSymbolSeries` <br> - ` GeographicTileSeries` <br> |
+| - `Legend` <br> - `Zoomable`  <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `ResizeBehavior` <br> - `WorldRect` <br>  | - `GeographicScatterAreaSeries` <br> -  `GeographicContourLineSeries` <br> - `GeographicHighDensityScatterSeries` <br> - `GeographicPolylineSeries` <br> - `GeographicProportionalSymbolSeries` <br> - `GeographicShapeSeries` <br> - `GeographicSymbolSeries` <br> - `GeographicTileSeries` <br> |
 
 
 
