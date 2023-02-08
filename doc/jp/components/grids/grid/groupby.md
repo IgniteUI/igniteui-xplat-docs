@@ -530,7 +530,7 @@ $custom-theme: grid-theme(
 
 ## その他のリソース
 
-* [Grid の概要](grid.md)
+* [Grid の概要](../data-grid.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

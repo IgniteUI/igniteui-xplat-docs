@@ -154,19 +154,19 @@ Simpler chart types such as [Line Chart](../types/line-chart.md) have faster per
 
 The following table lists chart types in order from the fastest performance to slower performance in each group of charts:
 
-Chart Group     | Chart Type
-----------------|---------------------------------
-Pie Charts       | - [Pie Chart](../types/pie-chart.md) <br> - [Donut Chart](../types/donut-chart.md) <br> - [Radial Pie Chart](../types/radial-chart.md#{Platform}-radial-pie-chart) <br>
-Line Charts      | - [Category Line Chart](../types/line-chart.md#{Platform}-line-chart-example) <br> - [Category Spline Chart](../types/spline-chart.md#{Platform}-spline-chart-example) <br> - [Step Line Chart](../types/step-chart.md#{Platform}-step-line-chart) <br> - [Radial Line Chart](../types/radial-chart.md#{Platform}-radial-line-chart) <br> - [Polar Line Chart](../types/polar-chart.md#{Platform}-polar-line-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#{Platform}-scatter-line-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#{Platform}-scatter-polyline-chart) (\*)  <br> - [Scatter Contour Chart](../types/scatter-chart.md#{Platform}-scatter-contour-chart) <br> - [Stacked Line Chart](../types/stacked-chart.md#{Platform}-stacked-line-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#{Platform}-stacked-100-line-chart) <br>
-Area Charts      | - [Category Area Chart](../types/area-chart.md#{Platform}-area-chart-example) <br> - [Step Area Chart](../types/step-chart.md#{Platform}-step-area-chart) <br> - [Range Area Chart](../types/area-chart.md#{Platform}-range-area-chart) <br> - [Radial Area Chart](../types/radial-chart.md#{Platform}-radial-area-chart) <br> - [Polar Area Chart](../types/polar-chart.md#{Platform}-polar-area-chart) <br> - [Scatter Polygon Chart](../types/shape-chart.md#{Platform}-scatter-polygon-chart) (\*) <br> - [Scatter Area Chart](../types/scatter-chart.md#{Platform}-scatter-area-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#{Platform}-stacked-area-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#{Platform}-stacked-100-area-chart) <br>
-Column Charts    | - [Column Chart](../types/column-chart.md#{Platform}-column-chart-example) <br> - [Bar Chart](../types/bar-chart.md#{Platform}-bar-chart-example) <br> - [Waterfall Chart](../types/column-chart.md#{Platform}-waterfall-chart) <br> - [Range Column Chart](../types/column-chart.md#{Platform}-range-column-chart) <br> - [Radial Column Chart](../types/radial-chart.md#{Platform}-radial-column-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#{Platform}-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#{Platform}-stacked-bar-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#{Platform}-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#{Platform}-stacked-100-bar-chart)
-Spline Charts    | - [Category Spline Chart](../types/spline-chart.md#{Platform}-spline-chart-example) <br> - [Polar Spline Chart](../types/polar-chart.md#{Platform}-polar-spline-chart) <br> - [Scatter Spline Chart](../types/scatter-chart.md#{Platform}-scatter-spline-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#{Platform}-stacked-spline-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#{Platform}-stacked-100-spline-chart) <br>
-Point Charts     | - [Category Point Chart](../types/point-chart.md) <br> - [Scatter HD Chart](../types/scatter-chart.md#{Platform}-scatter-high-density-chart)  <br> - [Scatter Marker Chart](../types/scatter-chart.md#{Platform}-scatter-marker-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Polar Marker Chart](../types/polar-chart.md#{Platform}-polar-Marker-chart) <br>
-Financial Charts | - [Stock Chart in Line Mode](../types/stock-chart.md) <br> - [Stock Chart in Column Mode](../types/stock-chart.md) <br> - [Stock Chart in Bar Mode](../types/stock-chart.md) <br> - [Stock Chart in Candle Mode](../types/stock-chart.md) <br> - [Stock Chart with Overlays](../types/stock-chart.md) <br> - [Stock Chart with Zoom Pane](../types/stock-chart.md) <br> - [Stock Chart with Volume Pane](../types/stock-chart.md#Volume-Pane) <br> - [Stock Chart with Indicator Pane](../types/stock-chart.md#Indicator-Pane) <br>
-Scatter Charts   | - [Scatter HD Chart](../types/scatter-chart.md#{Platform}-scatter-high-density-chart) <br> - [Scatter Marker Chart](../types/scatter-chart.md#{Platform}-scatter-marker-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#{Platform}-scatter-line-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Scatter Spline Chart](../types/scatter-chart.md#{Platform}-scatter-spline-chart) <br> - [Scatter Area Chart](../types/scatter-chart.md#{Platform}-scatter-area-chart) <br> - [Scatter Contour Chart](../types/scatter-chart.md#{Platform}-scatter-contour-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#{Platform}-scatter-polyline-chart) (\*) <br> - [Scatter Polygon Chart](../types/shape-chart.md#{Platform}-scatter-polygon-chart) (\*) <br>
-Radial Charts    | - [Radial Line Chart](../types/radial-chart.md#{Platform}-radial-line-chart) <br> - [Radial Area Chart](../types/radial-chart.md#{Platform}-radial-area-chart) <br> - [Radial Pie Chart](../types/radial-chart.md#{Platform}-radial-pie-chart) <br> - [Radial Column Chart](../types/radial-chart.md#{Platform}-radial-column-chart) <br>
-Polar Charts     | - [Polar Marker Chart](../types/polar-chart.md#{Platform}-polar-Marker-chart) <br> - [Polar Line Chart](../types/polar-chart.md#{Platform}-polar-line-chart) <br> - [Polar Area Chart](../types/polar-chart.md#{Platform}-polar-area-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#{Platform}-polar-spline-chart) <br> - [Polar Spline Area Chart](../types/polar-chart.md#{Platform}-polar-Spline-area-chart) <br>
-Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#{Platform}-stacked-line-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#{Platform}-stacked-area-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#{Platform}-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#{Platform}-stacked-bar-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#{Platform}-stacked-spline-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#{Platform}-stacked-100-line-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#{Platform}-stacked-100-area-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#{Platform}-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#{Platform}-stacked-100-bar-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#{Platform}-stacked-100-spline-chart) <br>
+| Chart Group     | Chart Type |
+| ----------------|--------------------------------- |
+| Pie Charts       | - [Pie Chart](../types/pie-chart.md) <br> - [Donut Chart](../types/donut-chart.md) <br> - [Radial Pie Chart](../types/radial-chart.md#{Platform}-radial-pie-chart) <br>
+| Line Charts      | - [Category Line Chart](../types/line-chart.md#{Platform}-line-chart-example) <br> - [Category Spline Chart](../types/spline-chart.md#{Platform}-spline-chart-example) <br> - [Step Line Chart](../types/step-chart.md#{Platform}-step-line-chart) <br> - [Radial Line Chart](../types/radial-chart.md#{Platform}-radial-line-chart) <br> - [Polar Line Chart](../types/polar-chart.md#{Platform}-polar-line-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#{Platform}-scatter-line-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#{Platform}-scatter-polyline-chart) (\*)  <br> - [Scatter Contour Chart](../types/scatter-chart.md#{Platform}-scatter-contour-chart) <br> - [Stacked Line Chart](../types/stacked-chart.md#{Platform}-stacked-line-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#{Platform}-stacked-100-line-chart) <br> |
+| Area Charts      | - [Category Area Chart](../types/area-chart.md#{Platform}-area-chart-example) <br> - [Step Area Chart](../types/step-chart.md#{Platform}-step-area-chart) <br> - [Range Area Chart](../types/area-chart.md#{Platform}-range-area-chart) <br> - [Radial Area Chart](../types/radial-chart.md#{Platform}-radial-area-chart) <br> - [Polar Area Chart](../types/polar-chart.md#{Platform}-polar-area-chart) <br> - [Scatter Polygon Chart](../types/shape-chart.md#{Platform}-scatter-polygon-chart) (\*) <br> - [Scatter Area Chart](../types/scatter-chart.md#{Platform}-scatter-area-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#{Platform}-stacked-area-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#{Platform}-stacked-100-area-chart) <br> |
+| Column Charts    | - [Column Chart](../types/column-chart.md#{Platform}-column-chart-example) <br> - [Bar Chart](../types/bar-chart.md#{Platform}-bar-chart-example) <br> - [Waterfall Chart](../types/column-chart.md#{Platform}-waterfall-chart) <br> - [Range Column Chart](../types/column-chart.md#{Platform}-range-column-chart) <br> - [Radial Column Chart](../types/radial-chart.md#{Platform}-radial-column-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#{Platform}-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#{Platform}-stacked-bar-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#{Platform}-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#{Platform}-stacked-100-bar-chart) |
+| Spline Charts    | - [Category Spline Chart](../types/spline-chart.md#{Platform}-spline-chart-example) <br> - [Polar Spline Chart](../types/polar-chart.md#{Platform}-polar-spline-chart) <br> - [Scatter Spline Chart](../types/scatter-chart.md#{Platform}-scatter-spline-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#{Platform}-stacked-spline-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#{Platform}-stacked-100-spline-chart) <br> |
+| Point Charts     | - [Category Point Chart](../types/point-chart.md) <br> - [Scatter HD Chart](../types/scatter-chart.md#{Platform}-scatter-high-density-chart)  <br> - [Scatter Marker Chart](../types/scatter-chart.md#{Platform}-scatter-marker-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Polar Marker Chart](../types/polar-chart.md#{Platform}-polar-Marker-chart) <br> |
+| Financial Charts | - [Stock Chart in Line Mode](../types/stock-chart.md) <br> - [Stock Chart in Column Mode](../types/stock-chart.md) <br> - [Stock Chart in Bar Mode](../types/stock-chart.md) <br> - [Stock Chart in Candle Mode](../types/stock-chart.md) <br> - [Stock Chart with Overlays](../types/stock-chart.md) <br> - [Stock Chart with Zoom Pane](../types/stock-chart.md) <br> - [Stock Chart with Volume Pane](../types/stock-chart.md#Volume-Pane) <br> - [Stock Chart with Indicator Pane](../types/stock-chart.md#Indicator-Pane) <br> |
+| Scatter Charts   | - [Scatter HD Chart](../types/scatter-chart.md#{Platform}-scatter-high-density-chart) <br> - [Scatter Marker Chart](../types/scatter-chart.md#{Platform}-scatter-marker-chart) <br> - [Scatter Line Chart](../types/scatter-chart.md#{Platform}-scatter-line-chart) <br> - [Scatter Bubble Chart](../types/bubble-chart.md) <br> - [Scatter Spline Chart](../types/scatter-chart.md#{Platform}-scatter-spline-chart) <br> - [Scatter Area Chart](../types/scatter-chart.md#{Platform}-scatter-area-chart) <br> - [Scatter Contour Chart](../types/scatter-chart.md#{Platform}-scatter-contour-chart) <br> - [Scatter Polyline Chart](../types/shape-chart.md#{Platform}-scatter-polyline-chart) (\*) <br> - [Scatter Polygon Chart](../types/shape-chart.md#{Platform}-scatter-polygon-chart) (\*) <br> |
+| Radial Charts    | - [Radial Line Chart](../types/radial-chart.md#{Platform}-radial-line-chart) <br> - [Radial Area Chart](../types/radial-chart.md#{Platform}-radial-area-chart) <br> - [Radial Pie Chart](../types/radial-chart.md#{Platform}-radial-pie-chart) <br> - [Radial Column Chart](../types/radial-chart.md#{Platform}-radial-column-chart) <br> |
+| Polar Charts     | - [Polar Marker Chart](../types/polar-chart.md#{Platform}-polar-Marker-chart) <br> - [Polar Line Chart](../types/polar-chart.md#{Platform}-polar-line-chart) <br> - [Polar Area Chart](../types/polar-chart.md#{Platform}-polar-area-chart) <br> - [Polar Spline Chart](../types/polar-chart.md#{Platform}-polar-spline-chart) <br> - [Polar Spline Area Chart](../types/polar-chart.md#{Platform}-polar-Spline-area-chart) <br> |
+| Stacked Charts   | - [Stacked Line Chart](../types/stacked-chart.md#{Platform}-stacked-line-chart) <br> - [Stacked Area Chart](../types/stacked-chart.md#{Platform}-stacked-area-chart) <br> - [Stacked Column Chart](../types/stacked-chart.md#{Platform}-stacked-column-chart) <br> - [Stacked Bar Chart](../types/stacked-chart.md#{Platform}-stacked-bar-chart) <br> - [Stacked Spline Chart](../types/stacked-chart.md#{Platform}-stacked-spline-chart) <br> - [Stacked 100% Line Chart](../types/stacked-chart.md#{Platform}-stacked-100-line-chart) <br> - [Stacked 100% Area Chart](../types/stacked-chart.md#{Platform}-stacked-100-area-chart) <br> - [Stacked 100% Column Chart](../types/stacked-chart.md#{Platform}-stacked-100-column-chart) <br> - [Stacked 100% Bar Chart](../types/stacked-chart.md#{Platform}-stacked-100-bar-chart) <br> - [Stacked 100% Spline Chart](../types/stacked-chart.md#{Platform}-stacked-100-spline-chart) <br> |
 
 
 \* Note that the [Scatter Polygon Chart](../types/shape-chart.md) and [Scatter Polyline Chart](../types/shape-chart.md) have better performance than rest of charts if you have a lot of data sources bound to the chart. For more info, see [Series Collection](#series-collection) section. Otherwise, other chart types are faster.
@@ -502,28 +502,28 @@ Enabling additional axis visuals (e.g. axis titles) or changing their default va
 
 For example, changing these properties on the `CategoryChart` or `FinancialChart` control:
 
-Axis Visual          | X-Axis Properties | Y-Axis Properties
----------------------|-------------------|-------------------
-All Axis Visual      | `XAxisInterval`<br>  `XAxisMinorInterval` | `YAxisInterval`<br>  `YAxisMinorInterval`
-Axis Tickmarks       | `XAxisTickStroke` <br>  `XAxisTickStrokeThickness`<br>  `XAxisTickLength`<br>  | `YAxisTickStroke` <br>  `YAxisTickStrokeThickness`<br>  `YAxisTickLength`<br>
-Axis Major Gridlines | `XAxisMajorStroke`<br>  `XAxisMajorStrokeThickness`<br>   | `YAxisMajorStroke`<br>  `YAxisMajorStrokeThickness`<br>
-Axis Minor Gridlines | `XAxisMinorStroke`<br>  `XAxisMinorStrokeThickness`<br>   | `YAxisMinorStroke`<br>  `YAxisMinorStrokeThickness`<br>
-Axis Main Line       | `XAxisStroke`<br>  `XAxisStrokeThickness`<br>   | `YAxisStroke`<br>  `YAxisStrokeThickness`<br>
-Axis Titles          | `XAxisTitle`<br>  `XAxisTitleAngle`<br>    | `YAxisTitle`<br>  `YAxisTitleAngle`<br>
-Axis Strips          | `XAxisStrip`<br>   | `YAxisStrip`<br>
+| Axis Visual          | X-Axis Properties | Y-Axis Properties |
+| ---------------------|-------------------|------------------- |
+| All Axis Visual      | `XAxisInterval`<br>  `XAxisMinorInterval` | `YAxisInterval`<br>  `YAxisMinorInterval` |
+| Axis Tickmarks       | `XAxisTickStroke` <br>  `XAxisTickStrokeThickness`<br>  `XAxisTickLength`<br>  | `YAxisTickStroke` <br>  `YAxisTickStrokeThickness`<br>  `YAxisTickLength`<br> |
+| Axis Major Gridlines | `XAxisMajorStroke`<br>  `XAxisMajorStrokeThickness`<br>   | `YAxisMajorStroke`<br>  `YAxisMajorStrokeThickness`<br> |
+| Axis Minor Gridlines | `XAxisMinorStroke`<br>  `XAxisMinorStrokeThickness`<br>   | `YAxisMinorStroke`<br>  `YAxisMinorStrokeThickness`<br> |
+| Axis Main Line       | `XAxisStroke`<br>  `XAxisStrokeThickness`<br>   | `YAxisStroke`<br>  `YAxisStrokeThickness`<br> |
+| Axis Titles          | `XAxisTitle`<br>  `XAxisTitleAngle`<br>    | `YAxisTitle`<br>  `YAxisTitleAngle`<br> |
+| Axis Strips          | `XAxisStrip`<br>   | `YAxisStrip`<br> |
 
 
 Or changing properties of an `Axis` in the `XamDataChart` control:
 
-Axis Visual          | Axis Properties
----------------------|-------------------
-All Axis Visuals     | `Interval`, `MinorInterval`
-Axis Tickmarks       | `TickStroke` , `TickStrokeThickness`, `TickLength`
-Axis Major Gridlines | `MajorStroke`, `MajorStrokeThickness`
-Axis Minor Gridlines | `MinorStroke`, `MinorStrokeThickness`
-Axis Main Line       | `Stroke`, `StrokeThickness`
-Axis Titles          | `Title`, `TitleAngle`
-Axis Strips          | `Strip`
+| Axis Visual          | Axis Properties |
+| ---------------------|------------------- |
+| All Axis Visuals     | `Interval`, `MinorInterval` |
+| Axis Tickmarks       | `TickStroke` , `TickStrokeThickness`, `TickLength` |
+| Axis Major Gridlines | `MajorStroke`, `MajorStrokeThickness` |
+| Axis Minor Gridlines | `MinorStroke`, `MinorStrokeThickness` |
+| Axis Main Line       | `Stroke`, `StrokeThickness` |
+| Axis Titles          | `Title`, `TitleAngle` |
+| Axis Strips          | `Strip` |
 
 ## Performance in Financial Chart
 
@@ -562,16 +562,16 @@ Adding too many axis to the `Axes` collection of the `XamDataChart` control will
 
 Also, adding a lot of series to the `Series` collection of the {Platform} `XamDataChart` control will add overhead to rendering because each series has its own rendering canvas. This is especially important if you have more than 10 series in the Data Chart. We recommend combining multiple data sources into flatten data source (see [Data Structure](#data-structure) section) and then using conditional styling feature of the following series:
 
-Slower Performance Scenario | Faster Scenario with Conditional Styling
-----------------------------|----------------------------------------
-10+ of `LineSeries`         | Single `ScatterLineSeries`
-20+ of `LineSeries`         | Single `ScatterPolylineSeries`
-10+ of `ScatterLineSeries`  | Single `ScatterPolylineSeries`
-10+ of `PointSeries`        | Single `ScatterSeries`
-20+ of `PointSeries`        | Single `HighDensityScatterSeries`
-20+ of `ScatterSeries`      | Single `HighDensityScatterSeries`
-10+ of `AreaSeries`         | Single `ScatterPolygonSeries`
-10+ of `ColumnSeries`       | Single `ScatterPolygonSeries`
+| Slower Performance Scenario | Faster Scenario with Conditional Styling |
+| ----------------------------|---------------------------------------- |
+| 10+ of `LineSeries`         | Single `ScatterLineSeries` |
+| 20+ of `LineSeries`         | Single `ScatterPolylineSeries` |
+| 10+ of `ScatterLineSeries`  | Single `ScatterPolylineSeries` |
+| 10+ of `PointSeries`        | Single `ScatterSeries` |
+| 20+ of `PointSeries`        | Single `HighDensityScatterSeries` |
+| 20+ of `ScatterSeries`      | Single `HighDensityScatterSeries` |
+| 10+ of `AreaSeries`         | Single `ScatterPolygonSeries` |
+| 10+ of `ColumnSeries`       | Single `ScatterPolygonSeries` |
 
 
 ## Additional Resources

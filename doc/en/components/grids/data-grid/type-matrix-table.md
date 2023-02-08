@@ -16,7 +16,7 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 # {Platform} Binding Matrix Data
 
-The {ProductName} Data Table / Data Grid supports [template columns](data-grid-column-types.md#template-column) to create a matrix table.
+The {ProductName} Data Table / Data Grid supports [template columns](column-types.md#template-column) to create a matrix table.
 
 ## {Platform} Binding Matrix Data Example
 

@@ -27,15 +27,15 @@ Similar to other types of scatter series in the map control, the `GeographicProp
 
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
-Property|Type|Description
----|---|---
-`ItemsSource`|any|Gets or sets the items source
-`LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
-`LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
-`RadiusMemberPath`|string|Sets the path to use to get the radius values for the series.
-`RadiusScale`|`Ig$SizeScale`|Gets or sets the radius scale property for the current bubble series.
-`MinimumValue`|any|Configure the minimum value for calculating value sub ranges.
-`MaximumValue`|any|Configure the maximum value for calculating value sub ranges.
+| Property|Type|Description |
+| ---|---|--- |
+| `ItemsSource`|any|Gets or sets the items source |
+| `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items |
+| `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items |
+| `RadiusMemberPath`|string|Sets the path to use to get the radius values for the series. |
+| `RadiusScale`|`Ig$SizeScale`|Gets or sets the radius scale property for the current bubble series. |
+| `MinimumValue`|any|Configure the minimum value for calculating value sub ranges. |
+| `MaximumValue`|any|Configure the maximum value for calculating value sub ranges. |
 
 ## Code Snippet
 

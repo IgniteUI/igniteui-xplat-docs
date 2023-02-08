@@ -35,7 +35,7 @@ The {ProductName} Data Grid supports the ability show and hide columns with the 
 
 The Column Chooser UI is accessible within the `DataGridToolbar` component separate from the grid. For this purpose all we have to do is set the toolbar's `ColumnChooser` property to true. The toolbar will then display a `Button`, when clicked, will display the column chooser UI. This button also displays the total of hidden columns. If the toolbar is not created, enabling the `ColumnChooser` property will have no effect and hide the button.
 
-The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `toolbarTitle` property, placing text in the `Button` by setting the `ColumnChooserText` property, and adding a title header to the column chooser UI by setting `ColumnChooserTitle`.
+The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `ToolbarTitle` property, placing text in the `Button` by setting the `ColumnChooserText` property, and adding a title header to the column chooser UI by setting `ColumnChooserTitle`.
 
 The Column Chooser can be configured with animations by setting the grid's `ColumnHidingAnimationMode` and `ColumnShowingAnimationMode` properties.
 

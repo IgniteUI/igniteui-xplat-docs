@@ -237,15 +237,15 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in above sections:
 
-Chart Type               | Control Name       | API Members
--------------------------|--------------------|-----------------------
-Area                     | `CategoryChart` | `ChartType` = `Area`
-Step Area                | `CategoryChart` | `ChartType` = `StepArea`
-Range Area               | `XamDataChart`     | `RangeAreaSeries`
-Radial Area              | `XamDataChart`     | `RadialAreaSeries`
-Polar Area               | `XamDataChart`     | `PolarAreaSeries`
-Polar Spline Area        | `XamDataChart`     | `PolarSplineAreaSeries`
-Stacked Area             | `XamDataChart`     | `StackedAreaSeries`
-Stacked Spline Area      | `XamDataChart`     | `StackedSplineAreaSeries`
-Stacked 100% Area        | `XamDataChart`     | `Stacked100AreaSeries`
-Stacked 100% Spline Area | `XamDataChart`     | `Stacked100SplineAreaSeries`
+| Chart Type               | Control Name       | API Members |
+| -------------------------|--------------------|----------------------- |
+| Area                     | `CategoryChart` | `ChartType` = `Area` |
+| Step Area                | `CategoryChart` | `ChartType` = `StepArea` |
+| Range Area               | `XamDataChart`     | `RangeAreaSeries` |
+| Radial Area              | `XamDataChart`     | `RadialAreaSeries` |
+| Polar Area               | `XamDataChart`     | `PolarAreaSeries` |
+| Polar Spline Area        | `XamDataChart`     | `PolarSplineAreaSeries` |
+| Stacked Area             | `XamDataChart`     | `StackedAreaSeries` |
+| Stacked Spline Area      | `XamDataChart`     | `StackedSplineAreaSeries` |
+| Stacked 100% Area        | `XamDataChart`     | `Stacked100AreaSeries` |
+| Stacked 100% Spline Area | `XamDataChart`     | `Stacked100SplineAreaSeries` |

@@ -115,8 +115,8 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type          | Control Name       | API Members
---------------------|--------------------|--------------------------
-Spline              | `CategoryChart` | `ChartType` = `Spline`
-Stacked Spline      | `XamDataChart`     | `StackedSplineSeries`
-Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries`
+| Chart Type          | Control Name       | API Members |
+| --------------------|--------------------|-------------------------- |
+| Spline              | `CategoryChart` | `ChartType` = `Spline` |
+| Stacked Spline      | `XamDataChart`     | `StackedSplineSeries` |
+| Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries` |

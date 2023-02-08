@@ -388,18 +388,23 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/general-installing-blazor.md');
     // excludedTopics.push('doc/**/general-cli*.md');
     // excludedTopics.push('doc/**/grids/**/*.md');
-    // excludedTopics.push('doc/**/grids/grid/*.md');
     // excludedTopics.push('doc/**/grids/_shared/*.md');
-    // excludedTopics.push('doc/**/grids/theming.md');
+    // excludedTopics.push('doc/**/grids/grid/*.md');
     // excludedTopics.push('doc/**/grids/grids-header.md');
+    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/data-grid/*.md');
     // excludedTopics.push('doc/**/grids/combo/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
-    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/theming.md');
     // excludedTopics.push('doc/**/grids/tree.md');
     // excludedTopics.push('doc/**/grids/list.md');
     // excludedTopics.push('doc/**/charts/**/*.md');
+    // excludedTopics.push('doc/**/charts/features/*.md');
+    // excludedTopics.push('doc/**/charts/types/*.md');
+    // excludedTopics.push('doc/**/charts/chart-features.md');
+    // excludedTopics.push('doc/**/charts/chart-overview.md');
     // excludedTopics.push('doc/**/editors/**/*.md');
     // excludedTopics.push('doc/**/inputs/**/*.md');
     // excludedTopics.push('doc/**/layouts/**/*.md');
@@ -417,6 +422,8 @@ function buildTOC(cb) {
     // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
+
+    log("excludedTopics: " + excludedTopics.length);
 
     let platformName = PLAT;
     if (platformName === "Angular") {
@@ -437,7 +444,7 @@ function buildTOC(cb) {
         fileCallback(null, file);
     }))
     .on("end", () => {
-        log("excludedTopics " + excludedFiles.length + " ... done ");
+        log("excludedFiles: " + excludedFiles.length);
 
         let platformName = PLAT;
         ensureEnvironment();
@@ -452,36 +459,56 @@ function buildTOC(cb) {
         tocTopics = tocTopics.concat(enTopics); // including EN topics
         tocTopics = tocTopics.concat(jpTopics); // including JP topics
         tocTopics = tocTopics.concat(krTopics); // including KR topics
+        tocTopics.sort();
+
+        log("tocTopics: " + tocTopics.length);
+        // fs.writeFileSync("file-toc.txt", "file-toc \n" + tocTopics.join("\n"));
         // for (const topic of tocTopics) {
-        //     log("topics included in toc: " + topic);
+        //     log("" + topic);
         // }
 
-        includedTopics = []; // ['doc/**/*.md'];
+        var sharedComponents = []; // "grid", "hierarchical-grid", "pivot-grid", "tree-grid"];
+        for (let component of Object.values(docsComponents)) {
+            if (component.output) {
+                sharedComponents.push(component.output);
+            }
+        }
+
+        includedTopics = [];
+        // processing all markdown files to check if they are included in TOC and are not part of excluded files
         gulp.src(['doc/**/*.md'])
         .pipe(es.map(function(topicFile, topicCallback) {
             var filePath = topicFile.path.split('\\').join('/');
             var fileLocal = 'doc/' + filePath.split('/doc/')[1];
-            var includedInTOC = false;
-            for (const topic of tocTopics) {
-                if (filePath.indexOf(topic) >= 0) {
-                    includedInTOC = true;
+
+            var isFileExcluded = excludedFiles.indexOf(fileLocal) >= 0;
+            var isFileShared = filePath.indexOf("/_shared/") > 0;
+            // check if file is included in TOC
+            var isFileIncludedInTOC = tocTopics.indexOf(fileLocal) >= 0;
+            if (!isFileIncludedInTOC && isFileShared) {
+                // check if resolved path of shared file is included in TOC
+                for (const component of sharedComponents) {
+                    var resolvedPath = fileLocal.replace("_shared", component);
+                    var resolvedInTOC = tocTopics.indexOf(resolvedPath) >= 0;
+                    if (resolvedInTOC) {
+                        isFileIncludedInTOC = true; break;
+                    }
                 }
             }
-
-            var isExcludedFile = excludedFiles.indexOf(fileLocal) > 0;
-            var isSharedFile = filePath.indexOf("/_shared/") > 0;
-            // skip topics that are explicitly excluded and include topics that are in TOC or shared topics
-            if (!isExcludedFile) {
-                if (includedInTOC || isSharedFile) {
-                    includedTopics.push(fileLocal);
-                }
+            // skip topics that are explicitly excluded and include only topics that are in TOC
+            if (!isFileExcluded && isFileIncludedInTOC) {
+                 includedTopics.push(fileLocal);
             }
-
             topicCallback(null, topicFile);
         }))
         .on("end", () => {
+
+            includedTopics.sort();
+            log("includedTopics: " + includedTopics.length);
+            // console.log(includedTopics);
+            // fs.writeFileSync("file-included.txt", "file-included \n" + includedTopics.join("\n"));
             // for (const topic of includedTopics) {
-            //     log("actual topic: " + topic);
+            //     log("" + topic);
             // }
             cb();
         })
@@ -620,11 +647,16 @@ function generateTocFor(platform, language, isFirstRelease, excludedFiles) {
     transformer.docsLanguage = language;
     let tocPath = './docfx/' + language + '/components/toc.json';
     let tocTopics = transformer.generateTOC(tocPath, platform, language, isFirstRelease, excludedFiles);
-    tocTopics.sort();
     for (let i = 0; i < tocTopics.length; i++) {
         tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
       //  console.log('>> generateTocFor "' + tocTopics[i] + '"');
     }
+    // filter out duplicates toc nodes
+    tocTopics = tocTopics.filter((c, index) => {
+        return tocTopics.indexOf(c) === index;
+    });
+
+    tocTopics.sort();
     return tocTopics;
 }
 
@@ -897,3 +929,73 @@ function verifyMarkdown(cb) {
     });
 }
 exports.verifyMarkdown = verifyMarkdown;
+
+
+function fixMarkdownTables(cb) {
+
+    console.log('fixMarkdownTables .md files ...');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    'doc/kr/**/*.md',
+    '!doc/**/obsolete/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        console.log('  verifying: ' + filePath);
+
+        var lines = fileContent.split("\n");
+        for (let i = 0; i < lines.length; i++) {
+            var line = lines[i].trim();
+            if (line.indexOf("title:") < 0 &&
+                line.indexOf("> NOTE") < 0 &&
+                line.indexOf("if") !== 0 &&
+                line.indexOf("} else") !== 0 &&
+                line.indexOf("columnArgs") < 0 &&
+                line.indexOf("const ") !== 0 &&
+                line.indexOf("return ") !== 0 &&
+                line.indexOf("public ") !== 0 &&
+                line.indexOf("private ") !== 0 &&
+                line.indexOf("`IncludedProperties` | `ExcludedProperties`") < 0 &&
+                line.indexOf("let ") !== 0 &&
+                line.indexOf("(") !== 0 &&
+                line.indexOf("{") !== 0 &&
+                line.indexOf("<") !== 0 &&
+                line.indexOf("*") !== 0 &&
+                line.indexOf("|") !== 0 &&
+                line.indexOf("||") < 0 &&
+                line.indexOf("|") > 0) {
+                lines[i] = "| " + line + " |";
+                console.log(line);
+            }
+        }
+        // fileContent = lines.join("\n");
+        // fs.writeFileSync(filePath, fileContent);
+        filesCount++;
+
+
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            console.log(msg);
+            if (cb) cb();
+        }
+        // if (cb) cb();
+    })
+    .on("error", (err) => {
+        console.log("Error in fixMarkdownTables()");
+        if (cb) cb(err);
+    });
+}
+exports.fixMarkdownTables = fixMarkdownTables;
