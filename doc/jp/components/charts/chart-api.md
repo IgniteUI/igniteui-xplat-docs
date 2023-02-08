@@ -72,12 +72,12 @@ _language: ja
 - `SummaryType`
 
 
-## Additional Resources
+## その他のリソース
 
-You can find more information about charts in these topics:
+チャートの詳細については、次のトピックを参照してください。
 
-- [Chart Overview](chart-overview.md)
-- [Chart Features](chart-features.md)
+- [チャート](chart-overview.md)
+- [チャート機能](chart-features.md)
 
 
 
