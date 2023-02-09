@@ -51,7 +51,8 @@ The zoom and pan operations can also be enabled by using modifier keys by settin
 
 ## Chart Navigation through Code
 
-> NOTE: Code navigation of the chart can only be used for the `XamDataChart` control.
+> [!Note]
+> Code navigation of the chart can only be used for the `XamDataChart` control.
 
 The {Platform} data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
 

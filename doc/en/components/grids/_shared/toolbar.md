@@ -118,7 +118,8 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> Note: As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> [!Note]
+> As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
 
 Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
 
@@ -397,7 +398,7 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > When exporting the `{ComponentName}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
 > belonging to their respective grid (the child grids will not be included in the exported data).
 
@@ -471,7 +472,7 @@ Here is a snippet showing some of the options which can be customized through th
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
-> [!NOTE]
+> [!Note]
 > By default when exporting to CSV the exporter exports using a comma separator and uses a '.csv' extension for the output file.
 > You can customize these exporting parameters by subscribing to events of the exporter or changing the values of the exporter options fields.
 > You can also cancel the export process by setting the cancel field of the event args to true.
@@ -587,7 +588,7 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 ## Custom Content
 
-> [!NOTE]
+> [!Note]
 > This replaces the old toolbar template directive. If you are migrating from a version before v11 our migrations will handle the moving of the template content. However, we do not handle the bindings in the template, so make sure to double check the modified template files after the migration completes.
 
 If the actions part of the toolbar component is not sufficient for a particular use case, the toolbar itself has a general content projection where users can provide additional UI. If the user needs the respective grid instance for API calls or bindings, they can create a template reference variable.
@@ -714,7 +715,7 @@ The last step is to **include** the newly created themes.
 }
 ```
 
->[!NOTE]
+> [!Note]
 >If `$legacy-support` is set to `false(default)`, include the component css variables like that:
 
 ```scss
@@ -727,7 +728,7 @@ The last step is to **include** the newly created themes.
 }
 ```
 
->[!NOTE]
+> [!Note]
 >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss

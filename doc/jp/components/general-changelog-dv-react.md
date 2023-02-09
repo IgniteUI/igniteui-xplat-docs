@@ -81,7 +81,7 @@ namespace: Infragistics.Controls.Charts
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
-> [!NOTE]
+> [!Note]
 > 以下の重大な変更が導入されました
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
@@ -206,7 +206,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
@@ -250,7 +250,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids}
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、グリッド パッケージで導入されました。
 
 - PropertyPath の名称変更
@@ -279,7 +279,7 @@ income.field = "Income";
 
 Data Grid コンポーネントおよび対応するモジュールの名前が 「LiveGrid」 から 「DataGrid」 に変更されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
@@ -305,7 +305,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 | 影響されるパッケージ | 影響されるコンポーネント |

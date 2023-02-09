@@ -327,7 +327,7 @@ function formatUppercase(value) {
 }
 ```
 
->[!NOTE]
+> [!Note]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
@@ -536,7 +536,7 @@ When changing data through the **cell template** using `ngModel`, you need to ca
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
 <!-- Angular -->
@@ -1701,16 +1701,16 @@ platformBrowserDynamic()
   .catch(err => console.error(err));
 ```
 
->[!NOTE]
+> [!Note]
 > This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github]({GithubLink}/discussions) page.
 
->[!NOTE]
+> [!Note]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
 
 <!-- end: Angular -->
 
 ## Styling {Platform} Grid
-> [!NOTE]
+> [!Note]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->

@@ -9,7 +9,7 @@ namespace: Infragistics.Controls.Charts
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-> [!NOTE]
+> [!Note]
 > This topic discusses changes only for components that are not included in the {PackageAngularComponents} package.
 > For changes specific to {PackageAngularComponents} components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
@@ -162,7 +162,7 @@ for example:
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)
@@ -178,7 +178,7 @@ for example:
 
 Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 | Affected Packages | Affected Components |

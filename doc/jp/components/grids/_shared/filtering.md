@@ -86,7 +86,7 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
->[!NOTE]
+> [!Note]
 >`{ComponentName}` で `QuickFilter` または `ExcelStyleFilter` と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
 ## インタラクション
@@ -144,7 +144,7 @@ _language: ja
 </IgbGrid>
 ```
 
-> [!NOTE]
+> [!Note]
 > *string* 型の値が *date* データ型の列で使用される場合、`{ComponentName}` は値を *date* オブジェクトに解析しないためフィルター条件は使用できません。*string* オブジェクトを使用する場合、値を *date* オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
 列または複数の列は `{ComponentName}` API でフィルターできます。`{ComponentName}` は、このタスクに複数のメソッドを公開します (`Filter`、`FilterGlobal`、`ClearFilter`.)。
@@ -174,7 +174,7 @@ this.grid.filter('ProductName', 'myproduct', IgcStringFilteringOperand.instance(
 
 必要なパラメーターは列フィールド キーとフィルター用語のみです。条件および大文字と小文字の区別を設定しない場合、列プロパティで推測されます。フィルターが複数ある場合、このメソッドはフィルター式の配列を受け取ります。
 
-> [!NOTE]
+> [!Note]
 > フィルタリング操作で `{ComponentName}` にバインドされているデータ ソースは**変更されません**。
 
 ```typescript
@@ -651,10 +651,10 @@ $dark-button: button-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >`.igx-grid__filtering-row` 内で **igx-button** および **igx-input-group** mixin をスコープし、行フィルター ボタンとその入力グループのみのスタイルを設定します。そうでない場合は、グリッド内の他のボタンと入力グループも影響を受けます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが `Emulated` ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
@@ -711,7 +711,7 @@ $dark-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -816,14 +816,14 @@ $custom-input-group: input-group-theme(
            alt="{Platform} {ComponentTitle} フィルタリング スタイルの例">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
 
 ## 既知の問題と制限
 
-> [!NOTE]
+> [!Note]
 > Firefox などの一部のブラウザーは、地域固有の小数点区切り文字をグループ化区切りと見なすため解析できず、無効になります。数値列フィルター値にそのような値を入力すると、数値の有効な部分のみがフィルター式に適用されます。詳細については、Firefox [問題](https://bugzilla.mozilla.org/show_bug.cgi?id=1199665)を参照してください。
 
 <!-- Angular -->

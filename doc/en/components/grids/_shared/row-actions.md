@@ -75,7 +75,8 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 ```
 <!-- end: WebComponents -->
 
->Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
+> [!Note]
+> When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
 ## Custom Implementation
 
@@ -136,7 +137,8 @@ These components expose templates giving flexibility for customization. For inst
 
 <!-- Angular -->
 
->Note: The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
+> [!Note]
+> The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
 
 <!-- end: Angular -->
 

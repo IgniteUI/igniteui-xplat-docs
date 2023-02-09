@@ -116,7 +116,8 @@ Validation will be triggered in the following scenarios:
 - When updating cells/rows via the API - `UpdateRow`, `UpdateCell`, etc.
 - When using batch editing and the `Undo`/`Redo` API of the transaction service.
 
-> Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
+> [!Note]
+> Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
 
 <!-- Angular -->
 

@@ -86,13 +86,13 @@ The following is a list of the supported versions of Excel.**
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > The Excel Library does not support the Excel Binary Workbook (.xlsb) format at this time.
 
 ## Load and Save Workbooks
 Now that the Excel Library module is imported, next step is to load a workbook.
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
@@ -109,7 +109,7 @@ ExcelUtility.save(workbook, "fileName");
 
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >

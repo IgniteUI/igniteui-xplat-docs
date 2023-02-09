@@ -106,7 +106,7 @@ this.grid.sort([
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > Sorting は、`DefaultSortingStrategy` アルゴリズムを使用して実行されます。`Column` または `ISortingExpression` は、代替アルゴリズムとして `ISortingStrategy` のカスタム実装を使用できます。たとえば複雑なテンプレート列や画像列にユーザー定義のソートを定義する必要がある場合に便利です。
 
 フィルター動作と同様に、ソート状態をクリアするには `ClearSort` メソッドを使用します。
@@ -129,10 +129,10 @@ this.grid.clearSort();
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > `{ComponentName}` の `SortStrategy` は `Column` の `SortStrategy` と比較して異なるタイプです。異なるスコープで機能し、異なるパラメーターを公開するためです。
 
-> [!NOTE]
+> [!Note]
 > ソート操作で `{ComponentName}` の基になるデータ ソースは**変更しません**。
 
 ## 初期のソート状態
@@ -178,7 +178,7 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
-> [!NOTE]
+> [!Note]
 > `string` 型の値が `DataType` `Date` の列で使用される場合、`{ComponentName}` が値を `Date` オブジェクトに解析しないため `{ComponentName}` `Sorting` が正しく動作しません。`string` オブジェクトを使用する場合、値を `Date` オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
 <!-- ComponentStart: Grid -->
@@ -313,7 +313,7 @@ $custom-theme: grid-theme(
  @include grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
@@ -346,7 +346,7 @@ $custom-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -392,7 +392,7 @@ $custom-theme: grid-theme(
            github-src="{ComponentSample}/column-sorting-style" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

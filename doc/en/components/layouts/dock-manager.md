@@ -51,7 +51,7 @@ Once the Dock Manager is imported, you can add it on the page:
 </igc-dockmanager>
 ```
 
-> [!NOTE]
+> [!Note]
 > Since the Dock Manager component uses ShadowDOM and slots it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
 
 The Dock Manager has a `Layout` property, which describes the layout of the panes. To start defining a layout, you should set the `RootPane` property and add child panes. Here is how you can define a layout with a single content pane:

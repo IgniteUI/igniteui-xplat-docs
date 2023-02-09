@@ -457,7 +457,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
            alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

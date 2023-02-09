@@ -184,7 +184,7 @@ builder.Services.AddIgniteUIBlazor(
 </IgrTree>
 ```
 
-> [!NOTE]
+> [!Note]
 > 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
 
 ### 項目のインタラクション

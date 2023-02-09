@@ -80,7 +80,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 #### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
 
-> [!NOTE]
+> [!Note]
 > The following breaking changes were introduced
 
 - Changed `ValueField` property from type string[] to string.
@@ -206,7 +206,7 @@ for example:
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)
@@ -251,7 +251,7 @@ for example:
 
 ### {PackageGrids}
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in the grid package.
 
 - Changed name of PropertyPath
@@ -280,7 +280,7 @@ income.field = "Income";
 
 The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 The new code for importing the grid and it's corresponding module is:
@@ -306,7 +306,7 @@ The data grid component requires the "inputs" package.
 
 Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 | Affected Packages | Affected Components |

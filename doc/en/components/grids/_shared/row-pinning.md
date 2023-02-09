@@ -449,7 +449,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

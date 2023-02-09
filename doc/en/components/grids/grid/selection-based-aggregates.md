@@ -30,7 +30,7 @@ const boolData = data.filter(rec => typeof rec === "boolean");
 const dates = data.filter(rec => isDate(rec));
 ```
 
-> [!NOTE]
+> [!Note]
 > Bear in mind, that `isDate` is a custom function.
 
 After having the data types grouped accordingly, you can proceed to the aggregation itself. For that reason, you could use the already exposed methods of the `NumberSummaryOperand` and `DateSummaryOperand`.

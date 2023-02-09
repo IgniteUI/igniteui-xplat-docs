@@ -52,7 +52,7 @@ defineCustomElements();
 </igc-dockmanager>
 ```
 
-> [!NOTE]
+> [!Note]
 > ドック マネージャー コンポーネントは ShadowDOM とスロットを使用するため、Internet Explorer 11 および Edge 18 以前 (Chromium 以外のバージョン) などの古いブラウザーではサポートされません。
 
 ドック マネージャーにはペインのレイアウトを説明する `Layout` プロパティがあります。レイアウトの定義するには、`RootPane` プロパティを設定し、子ペインを追加します。以下は、単一のコンテンツ ペインでレイアウトを定義する方法です。
