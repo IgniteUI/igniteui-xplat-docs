@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-> [!NOTE]
+> [!Note]
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
@@ -163,7 +163,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
@@ -179,7 +179,7 @@ namespace: Infragistics.Controls.Charts
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 | 影響されるパッケージ | 影響されるコンポーネント |

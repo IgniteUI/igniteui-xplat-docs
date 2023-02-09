@@ -19,11 +19,11 @@ Currently, the `{ComponentName}` introduces the following tab stops:
 * **Column summaries** (if enabled).
 * **{ComponentTitle} paginator** (if enabled).
 
->[!NOTE]
+> [!Note]
 > Due to this change, navigating between the cells with <kbd>tab</kbd> and <kbd>Shift + Tab</kbd> is no longer supported in the `{ComponentName}`.
 > Pressing the <kbd>Tab</kbd> key now goes through the tab stops in the following order: **GroupBy** / **Toolbar** -> **Headers** -> **Body** -> **Summaries** -> **Footer / Paginator**.
 
->[!NOTE]
+> [!Note]
 > Exposing any **focusable** element into the `{ComponentName}` body via template may introduce **side effects** in the keyboard navigation, since the default
 > browser behavior is not prevented. It is the developer's responsibility to prevent or modify it appropriately.
 
@@ -148,7 +148,7 @@ Overriding the default behavior for a certain key or keys combination is one of 
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
->[!NOTE]
+> [!Note]
 > Both `GetNextCell` and `GetPreviousCell` are
 > available for the current level and cannot access cells from upper or lower level.
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -235,7 +235,9 @@ Based on the `IGridKeydownEventArgs` values we identified two cases, where to pr
             obj.target.activate();
         });
 ```
-> Note: Please refer to the sample code for full implementation details.
+
+> [!Note]
+> Please refer to the sample code for full implementation details.
 
 Use the demo below to try out the custom scenarios that we just implemented:
 - Double click or press <kbd>F2</kbd> key on a cell in the **Order** column, change the value to **7** and press <kbd>Tab</kbd> key. Prompt message will be shown.

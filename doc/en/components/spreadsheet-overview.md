@@ -127,7 +127,7 @@ Now that the {Platform} spreadsheet module is imported, next is the basic config
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

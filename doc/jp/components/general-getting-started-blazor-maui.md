@@ -126,5 +126,5 @@ Windows 用の .NET MAUI Blazor アプリをビルドして実行します。
 
 <img src="../images/general/getting-started-blazor-card-windows.jpg" />
 
-> [!NOTE]
+> [!Note]
 > .NET MAUI を使用したクロス プラットフォーム アプリケーションの構築の詳細については、[Microsoft のドキュメント](https://docs.microsoft.com/ja-jp/dotnet/maui/get-started/first-app?pivots=devices-android)を参照してください。

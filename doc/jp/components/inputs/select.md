@@ -62,7 +62,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 <!-- end: Blazor -->
 
-> [!NOTE]
+> [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
 コンポーネントの使用を開始するには、選択する `igc-select-item` のリストとともに `igc-select` を追加します。
@@ -106,7 +106,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 複数の `igc-select-item` を `igc-select-group` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`igc-select-group` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
 
-> [!NOTE] 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
+> [!Note]
+> 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -139,7 +140,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 - <kbd>下 / 右矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
-> [!NOTE] `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
+> [!Note]
+> `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
 <!-- WebComponents -->
 

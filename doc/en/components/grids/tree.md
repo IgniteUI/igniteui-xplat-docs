@@ -183,7 +183,7 @@ In order to render a tree you do not necessarily need a data set - individual it
 </IgrTree>
 ```
 
-> [!NOTE]
+> [!Note]
 > You can provide a custom slot content for each `TreeItem`'s indentation, expansion and label area respectively using the provided `indentation`, `indicator` and `label` slots.
 
 ### Item Interactions

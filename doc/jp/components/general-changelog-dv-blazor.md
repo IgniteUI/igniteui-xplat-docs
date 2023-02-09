@@ -105,7 +105,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-21-2.1}**
 
-> [!NOTE]
+> [!Note]
 > 以下の重大な変更が導入されました
 
 ### {PackageGrids}
@@ -125,7 +125,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-21-2}**
 
-> [!NOTE]
+> [!Note]
 > **Igb** プレフィックスは {ProductName} のコンポーネントと各コンポーネント内のネスト要素に必要になりました。この API の変更は、Infragistics コントロールとサードパーティのコントロールの間の曖昧を回避するために必要でした。
 >
 > たとえば、``` <CategoryChart/> ``` の代わりに ``` <IgbCategoryChart/> ```
@@ -248,7 +248,7 @@ namespace: Infragistics.Controls.Charts
 
 #### 地理マップ
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。

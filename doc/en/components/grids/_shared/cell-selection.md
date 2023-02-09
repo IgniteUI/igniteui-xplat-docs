@@ -86,7 +86,7 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> to select all cells from the focused cell till the first-most cell in the grid
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> to select all cells from the focused cell till the last-most cell in the grid
 
-> [!NOTE]
+> [!Note]
 > Continuous scroll is possible only within Grid's body.
 
 ## Api Usage
@@ -151,7 +151,7 @@ expectedData = [
 ];
 ```
 
-> [!NOTE]
+> [!Note]
 > `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
 <!-- end: Angular -->
@@ -215,7 +215,7 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
     @include grid($custom-grid-theme);
 ```
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated ViewEncapsulation](../themes/styles.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
  > We scope the style under `:host` selector so as not to affect any other grids we might have in our application.
 
@@ -238,7 +238,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
            alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->

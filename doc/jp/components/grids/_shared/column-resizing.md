@@ -298,7 +298,7 @@ TO DO!
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
->[!NOTE]
+> [!Note]
 > ピクセルとパーセンテージで設定された場合で列のサイズ変更の動作は少々異なります。
 
 **ピクセル**
@@ -445,7 +445,7 @@ $custom-grid-theme: grid-theme(
 );
 
 ```
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 
 ```scss
@@ -477,7 +477,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -526,7 +526,7 @@ $custom-grid-theme: grid-theme(
            github-src="{ComponentSample}/column-resize-styling">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

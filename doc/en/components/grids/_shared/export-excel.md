@@ -41,7 +41,7 @@ export class AppModule {}
 > [!Note]
 > In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
 
-> [!NOTE]
+> [!Note]
 > The Excel Exporter service has a peer dependency on the JSZip library. The JSZip library should be installed when using the Excel Exporter.
 
 To initiate an export process you may use the handler of a button in your component's template.
@@ -107,7 +107,7 @@ To export grouped data you just need to group the `{ComponentName}` by one or mo
 
 It is now possible to export `{ComponentName}` with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the `{ComponentName}`. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
 
-> [!NOTE]
+> [!Note]
 > The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
 
 <code-view style="height: 750px;"
@@ -171,7 +171,7 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 |Exporting pinned columns|In the exported Excel file, the pinned columns will not be frozen but will be displayed in the same order as they appear in the grid.|
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
 
 ```cmd

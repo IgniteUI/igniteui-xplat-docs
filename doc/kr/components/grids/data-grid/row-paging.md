@@ -25,7 +25,7 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.
 
 위의 데모에서는 페이징이 {ProductName} 데이터 그리드에 내장되어 있지 않으므로 데이터 배열을 조합하여 그 데이터의 일부를 페이지로서 출력하도록 설계된 사용자 페이저 컴포넌트를 생성했습니다.  이 페이지 데이터는 {ProductName} 데이터 그리드에 제공되어 자동으로 새로운 데이터를 표시합니다.
 
-> [!NOTE]
+> [!Note]
 >
 > 페이저 컴포넌트의 소스 코드는 {ProductName} 다운로드에서 사용할 수 있습니다.
 

@@ -20,11 +20,11 @@ _language: ja
 * **列の集計** (有効な場合)
 * **{ComponentTitle} ページネーター** (有効な場合)
 
->[!NOTE]
+> [!Note]
 > この変更のため、<kbd>tab</kbd> と  <kbd>Shift + Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>Tab</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
->[!NOTE]
+> [!Note]
 > テンプレートによっ**フォーカス可能な**要素を `{ComponentName}` の本体に公開すると、ブラウザのデフォルトの動作が防止されていないため、**予期されない結果**が発生する可能性があります。
 > したがって、それを適切に**防止/変更する**のは開発者の責任です。
 
@@ -149,7 +149,7 @@ _language: ja
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
->[!NOTE]
+> [!Note]
 > `GetNextCell` および `GetPreviousCell` は現在のレベルで使用し、上位または下位レベルのセルにアクセスできません。
 >
 <!-- ComponentEnd: HierarchicalGrid -->

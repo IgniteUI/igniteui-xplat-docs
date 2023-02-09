@@ -7,9 +7,9 @@ mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 
 # {Platform} Calendar Overview
 
-The {ProductName} Calendar component is lightweight and easy to configure. It is used for showing dates and weekdays. It is also the best way for providing monthly or yearly views to end-users. The {ProductName} Calendar control lets you restrict the minimum and maximum date ranges that people can navigate through. 
+The {ProductName} Calendar component is lightweight and easy to configure. It is used for showing dates and weekdays. It is also the best way for providing monthly or yearly views to end-users. The {ProductName} Calendar control lets you restrict the minimum and maximum date ranges that people can navigate through.
 
-The Ignite UI for {ProductName} Calendar provides an easy and intuitive way for displaying date information. It packs different features like single or multiple date selection modes, highlight and select date range, keyboard navigation, enabling week numbers, size and spacing options, and more. 
+The Ignite UI for {ProductName} Calendar provides an easy and intuitive way for displaying date information. It packs different features like single or multiple date selection modes, highlight and select date range, keyboard navigation, enabling week numbers, size and spacing options, and more.
 
 ## {Platform} Calendar Example
 
@@ -24,7 +24,7 @@ The following {Platform} `Calendar` component example shows a basic calendar wit
            github-src="scheduling/calendar/overview">
 </code-view>
 
-## How To Create a Calendar in {Platform} with {ProductNameShort} 
+## How To Create a Calendar in {Platform} with {ProductNameShort}
 
 <!-- WebComponents -->
 
@@ -151,10 +151,10 @@ The {ProductName} Calendar component allows you to switch between three differen
 
 By default, the {ProductName} Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to **false**. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
 
-> [!NOTE]
+> [!Note]
 > Please note that the {ProductName} Calendar header is not rendered when the `Selection` is set to multiple.
 
-> [!NOTE]
+> [!Note]
 > Please note that the {ProductName} Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `HeaderOrientation` property corresponds to the `header-orientation` attribute.
 
 The {ProductName} Calendar component exposes a `title` slot which allows you to customize the title of the header.

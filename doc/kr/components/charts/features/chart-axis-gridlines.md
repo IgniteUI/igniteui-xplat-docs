@@ -10,7 +10,8 @@ mentionedTypes: ["CategoryChart"]
 
 All {ProductName} charts include built-in capability to modify appearance of axis lines as well as frequency of major/minor gridlines and tickmarks that are rendered on the X-Axis and Y-Axis.
 
-> NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
+> [!Note]
+> The following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
 Axis major gridlines are long lines that extend horizontally along the Y-Axis or vertically along the X-Axis from locations of axis labels, and they render through the plot area of the chart. Axis minor gridlines are lines that render between axis major gridlines.
 

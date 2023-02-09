@@ -104,7 +104,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ## **{PackageVerChanges-21-2.1}**
 
-> [!NOTE]
+> [!Note]
 > The following breaking changes were introduced
 
 ### {PackageGrids}
@@ -124,7 +124,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ## **{PackageVerChanges-21-2}**
 
-> [!NOTE]
+> [!Note]
 > The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
@@ -248,7 +248,7 @@ for example:
 
 #### Geographic Map
 
-> [!NOTE]
+> [!Note]
 > These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)

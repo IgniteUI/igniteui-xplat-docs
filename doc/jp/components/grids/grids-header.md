@@ -212,6 +212,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid example">
 </code-view>
 

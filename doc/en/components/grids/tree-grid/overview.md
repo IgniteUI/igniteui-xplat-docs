@@ -158,7 +158,7 @@ Regardless of which option is used for building the tree grid's hierarchy (child
 - `GridCell` - Ordinary cell that contains a value.
 - `TreeGridCell` - Tree cell that contains a value, an expand/collapse indicator and an indentation div element, which is based on the level of the cell's row. The level of a row component can be accessed through the `level` property of its inner `treeRow`.
 
-> [!NOTE]
+> [!Note]
 > Each row can have only one tree cell, but it can have multiple (or none) ordinary cells.
 
 ### Initial Expansion Depth

@@ -170,8 +170,8 @@ Furthermore, users can construct a displayFormat string using the supported symb
 |   | `tttt` | Long | noon |
 |   | `ttttt` | Narrow | n |
 
-> Note:
-Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
+> [!Note]
+> Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
 
 ## Min/max value
 

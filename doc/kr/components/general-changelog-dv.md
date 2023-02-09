@@ -12,7 +12,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
@@ -23,7 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 <!-- Blazor -->
 
-> [!NOTE]
+> [!Note]
 > The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
@@ -194,7 +194,7 @@ for example:
 
 ### Geographic Map
 
-> [!NOTE]
+> [!Note]
 > These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)
@@ -240,7 +240,7 @@ for example:
 <!-- React, WebComponents -->
 ## **{Platform} {PackageVerChangedFields}**
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in the grid package.
 
 ### Data Grid
@@ -284,7 +284,7 @@ income.field = "Income";
 
 The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 The new code for importing the grid and it's corresponding module is:
@@ -317,7 +317,7 @@ The data grid component requires the "inputs" package.
 
 Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 | Affected Packages | Affected Components |

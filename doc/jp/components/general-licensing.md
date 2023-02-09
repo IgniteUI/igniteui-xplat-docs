@@ -9,12 +9,12 @@ mentionedTypes: []
 # {ProductName} 使用許諾契約
 購入して使用する {ProductName} に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
->[!NOTE]
+> [!Note]
 > 2020 年第 2 四半期にライセンス条項とサブスクリプション モデルを更新しました。
 
 **商用製品**をビルドする場合、またはライセンスが[期限切れ](http://jp.infragistics.com/renewal)の場合は、[商用ライセンスを取得する](https://jp.infragistics.com/how-to-buy/product-pricing)必要があります。これにより、https://packages.infragistics.com/npm/js-licensed/  でホストされるプライベート npm フィードを開発に使用できます。ここには、{ProductName} パッケージの最新バージョンがあります。有効な商用ライセンスがある場合、{ProductName} の製品版をプライベート フィードによりアクセスできます。
 
->[!NOTE]
+> [!Note]
 > 現在、プライベート npm フィードで **igniteui-dockmanager** パッケージのみ使用できますが、今後は他の {ProductName} パッケージを追加する予定です。
 
 **市販されない製品**をビルドする場合は、[お気軽にお問い合わせください](https://jp.infragistics.com/about-us/contact-us)。適切なライセンスを提供します。
@@ -24,7 +24,7 @@ Npm は Node.js ランタイム環境で使用する一般的なデフォルト 
 
 Infragistics {ProductName} は npm パッケージで提供され、[いくつかの簡単な手順](./general-getting-started.md)でプロジェクトの依存関係として追加できます。この方法を選択する場合、npm を構成する必要はありません。このパッケージをインストールすると、製品の **{ProductName} トライアル版**の使用が開始されます。
 
->[!NOTE]
+> [!Note]
 > 現在、[igniteui-dockmanager](https://www.npmjs.com/package/igniteui-dockmanager) の npm パッケージのみにトライアル ウォーターマークがありますが、今後は他の {ProductName} パッケージにも追加する予定です。
 
 ## プライベート npm フィードを使用するための環境設定方法
@@ -33,7 +33,7 @@ Infragistics {ProductName} は npm パッケージで提供され、[いくつ�
 
 これにより公開用の npm レジストリおよびプライベート Infragistics レジストリからのパッケージを同時に使用できます。Infragistics アカウントにログインするユーザー名およびパスワードを入力する必要があります。Infragistics プロファイルに登録されるメールも入力してください。
 
->[!NOTE]
+> [!Note]
 >  **npm**  はユーザー名で **「@」** の使用を許可しません。ユーザー名が Infragistics アカウントのメール アドレスであるため、**「@」** 記号は既に含まれています。この制限を回避するには、**「@」** 記号の代わりに **「!!」** (2 つの感嘆符) を使用します。たとえば、ユーザー名が **username@example.com** の場合、**username!!example.com** と入力します。
 
 ### npm を使用してプライベート フィードにログインするには、adduser コマンドを実行し、ユーザー アカウントとパスワードを指定します。

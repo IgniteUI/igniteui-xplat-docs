@@ -12,7 +12,8 @@ In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, 
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> [!Note]
+> Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
@@ -105,7 +106,7 @@ this.grid.sort([
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > Sorting is performed using our `DefaultSortingStrategy` algorithm. Any `Column` or `ISortingExpression` can use a custom implementation of the `ISortingStrategy` as a substitute algorithm. This is useful when custom sorting needs to be defined for complex template columns, or image columns, for example.
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
@@ -128,10 +129,10 @@ this.grid.clearSort();
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > The `SortStrategy` of the `{ComponentName}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
 
-> [!NOTE]
+> [!Note]
 > The sorting operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
 ## Initial Sorting State
@@ -177,7 +178,7 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
-> [!NOTE]
+> [!Note]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
@@ -312,7 +313,7 @@ The last step is to **include** the component mixins:
  @include grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -345,7 +346,7 @@ $custom-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -391,7 +392,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            github-src="{ComponentSample}/column-sorting-style" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

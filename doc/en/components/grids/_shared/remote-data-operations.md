@@ -72,7 +72,7 @@ BLAZOR CODE SNIPPET HERE
 
 When requesting data, you need to utilize the `IForOfState` interface, which provides the `StartIndex` and `ChunkSize` properties.
 
->[!NOTE]
+> [!Note]
 >The first `ChunkSize` will always be 0 and should be determined by you based on the specific application scenario.
 
 <!-- end: Angular -->
@@ -223,7 +223,7 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 BLAZOR CODE SNIPPET HERE
 ```
 
->[!NOTE]
+> [!Note]
 >When remote data is requested, the filtering operation is case-sensitive.
 
 ### Remote Sorting/Filtering Demo
@@ -289,7 +289,7 @@ BLAZOR CODE SNIPPET HERE
 
 The remote filtering will have to be performed over the flat collection directly. We will also have to include all the parents for any record that matches the filtering condition regardless of whether or not the parents match the filtering (we do this to keep the hierarchy intact). The result can be seen below:
 
->[!NOTE]
+> [!Note]
 >When remote data is requested, the filtering operation is case-sensitive.
 
 ### Remote Filtering Demo
@@ -308,7 +308,7 @@ The list items inside the Excel Style Filtering dialog represent the unique valu
 
 The developer can manually generate the necessary unique column values based on the information, that is provided by the `Column` and the `FilteringExpressionsTree` arguments and then invoke the `Done` callback.
 
-> [!NOTE]
+> [!Note]
 > When the `UniqueColumnValuesStrategy` input is provided, the default unique values generating process in the excel style filtering will not be used.
 
 
@@ -765,7 +765,7 @@ BLAZOR CODE SNIPPET HERE
 ```
 <!-- ComponentEnd: TreeGrid -->
 
->[!NOTE]
+> [!Note]
 > In order for the Remote Paging to be configured properly a `GridPagingMode.Remote` should be set:
 
 

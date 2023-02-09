@@ -8,7 +8,7 @@ _language: ja
 
 # {Platform} Calendar (カレンダー) の概要
 
-{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。 
+{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。
 
 Ignite UI for {ProductName} Calendar は、日付情報を表示するための簡単で直感的な方法を提供します。単一または複数の日付選択モード、日付範囲の強表示と選択、キーボード ナビゲーション、週番号の有効化、サイズと間隔のオプションなど、さまざまな機能がパックされています。
 
@@ -152,10 +152,10 @@ defineComponents(IgcCalendarComponent);
 
 デフォルトでは、{ProductName} Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを **false** に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
 
-> [!NOTE]
+> [!Note]
 > `Selection` が複数に設定されている場合、{ProductName} Calendar ヘッダーが描画されないことに注意してください。
 
-> [!NOTE]
+> [!Note]
 > {ProductName} Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
 
 {ProductName} Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。

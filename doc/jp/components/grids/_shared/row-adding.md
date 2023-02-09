@@ -189,22 +189,22 @@ export class AppModule {}
 </igc-hierarchical-grid>
 ```
 
-> [!NOTE]
+> [!Note]
 > プライマリ キーは行追加操作で必須です。
 
-> [!NOTE]
+> [!Note]
 > プライマリ キーを除くすべての列は、デフォルトで行追加 UI で編集可能です。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType` を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > [行の追加] のボタンの表示状態を制御する `GridEditingActions` 入力は、アクション ストリップ コンテキスト (タイプ `RowType`) を使用して、ボタンが表示するレコードを調整できます。
 
 <!-- ComponentEnd: TreeGrid -->
@@ -329,7 +329,7 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     `;
 }
 ```
-> [!NOTE]
+> [!Note]
 > `RowEditActions` ディレクティブを使用すると、オーバーレイ ボタンの編集と追加の両方の編集アクションが変更されます。
 
 <!-- Angular -->
