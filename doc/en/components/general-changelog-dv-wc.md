@@ -18,7 +18,7 @@ Changes listed with (*) are separate and are related only in the **{PackageCompo
 
 * [Combo](grids/combo/overview.md)
 * [Pivot Grid](grids/pivot-grid/overview.md)
-* [Stepper]](layouts/stepper.md)
+* [Stepper](layouts/stepper.md)
 
 ## **{PackageVerChanges-22-2}**
 
