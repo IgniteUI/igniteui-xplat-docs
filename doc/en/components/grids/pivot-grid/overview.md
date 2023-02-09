@@ -23,8 +23,8 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 <code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
-           github-src="{PivotGridSample}/pivot-grid-data-selector"
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           github-src="{PivotGridSample}/data-selector"
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 
