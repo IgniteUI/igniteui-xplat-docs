@@ -132,7 +132,8 @@ constructor() {
 
 `HideAll` メソッドと `ShowAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanel` をプログラムでそれぞれ省略したり展開したりできます。
 
-> 注: `SingleExpand` プロパティが *true* に設定されている場合、`ShowAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
+> [!Note]
+> `SingleExpand` プロパティが *true* に設定されている場合、`ShowAll` メソッドを呼び出すと、フォーカスされたパネルのみが展開されます。
 
 ### {Platform} アコーディオンのカスタマイズの例
 

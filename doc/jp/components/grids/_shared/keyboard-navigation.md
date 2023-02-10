@@ -236,7 +236,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
             obj.target.activate();
         });
 ```
-> 注: 実装の詳細は、サンプルコードを参照してください。
+
+> [!Note]
+> 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
 - **Order** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
