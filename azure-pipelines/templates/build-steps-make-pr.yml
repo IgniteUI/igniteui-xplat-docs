@@ -24,11 +24,6 @@ steps:
 #      archiveFile: $(Build.ArtifactStagingDirectory)/${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
 #      replaceExistingArchive: true
 
-  - task: GitVersion@5
-    versionSpec: '5.x'
-    displayName: 'Clone and checkout the Branch to push changes in'
-    inputs:
-      updateAssemblyInfo: true
   - script: |
       git clone https://$(githubUser):$(githubToken)@github.com/ESShared/ignite-ui-docfx.git
       git remote add upstream https://github.com/IgniteUI/igniteui-docfx.git
@@ -39,7 +34,8 @@ steps:
       git checkout -b $(branchName)_$(Build.SourceBranchName)
       git pull origin $(branchName)_$(Build.SourceBranchName)
       git merge $(Build.SourceBranchName)
-
+    displayName: 'Clone and checkout the Branch to push changes in'
+    workingDirectory: $(System.DefaultWorkingDirectory)
 
   - task: CopyFiles@2
     displayName: 'Copy the build files to the Git repo'
@@ -47,15 +43,12 @@ steps:
       SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\$(languageToBuild)'
       TargetFolder: '$(Build.SourcesDirectory)\ignite-ui-docfx\$(languageToBuild)'
 
-  - task: GitVersion@5
-    versionSpec: '5.x'
-    displayName: 'Commit the changes and make a PR'
-    inputs:
-      updateAssemblyInfo: true
   - script: |
       git add -A
       git commit -m "Adding changes from build $(Build.BuildNumber)"
       git push --set-upstream origin $(branchName)_$(Build.SourceBranchName)
+    displayName: 'Commit the changes and make a PR'
+    workingDirectory: $(System.DefaultWorkingDirectory)
   
   - task: CreatePullRequest@1
     inputs:
