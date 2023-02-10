@@ -55,11 +55,11 @@ steps:
       git commit -m "Adding changes from build $(Build.BuildNumber)"
       git push --set-upstream origin $(branchName)_$(Build.SourceBranchName)
   
-  - task: GitHubPullRequest@0
-    displayName: 'Create a pull request to the Angular DocFX repo'
+  - task: CreatePullRequest@1
     inputs:
-      gitHubConnection: '$(githubToken)'
-      repositoryName: 'https://github.com/IgniteUI/igniteui-docfx.git'
+      repoType: 'GitHub'
+      githubEndpoint: 'ESShared'
+      githubRepository: 'IgniteUI/igniteui-docfx'
       sourceBranch: '$(branchName)'
       targetBranch: 'vNext'
       title: 'Changes from $(Build.DefinitionName)'
