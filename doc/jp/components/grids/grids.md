@@ -256,7 +256,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 
 <code-view style="height: 435px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid/type-marketing-table"  >
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-marketing-table"  >
 </code-view>
 
 <div class="divider--half"></div>
