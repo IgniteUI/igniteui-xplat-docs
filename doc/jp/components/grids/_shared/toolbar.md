@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infrag
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ツールバー
@@ -119,7 +120,8 @@ _language: ja
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> 注: 上記のコード スニペットに示されているように、事前定義された `Actions` UI コンポーネントは `GridToolbarActions` にラップされています。このように、ツールバーのタイトルはツールバーの左側に配置され、アクションはツールバーの右側に配置されます。
+> [!Note]
+> 上記のコード スニペットに示されているように、事前定義された `Actions` UI コンポーネントは `GridToolbarActions` にラップされています。このように、ツールバーのタイトルはツールバーの左側に配置され、アクションはツールバーの右側に配置されます。
 
 これらの UI はそれぞれ独立して追加することも、まったく追加しないこともできます。このようにして、ツールバー コンテナは空になります。
 

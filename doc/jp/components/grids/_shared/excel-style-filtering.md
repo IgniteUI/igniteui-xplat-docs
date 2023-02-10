@@ -5,6 +5,7 @@ _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel の
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング

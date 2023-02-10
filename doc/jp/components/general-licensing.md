@@ -97,7 +97,8 @@ npm を既に使用していて、{ProductName} ライセンスがある場合�
   alt="New Token Generated"
   title="Generate new token" />
 
-> 注: 各トークンは Base64 エンコードです。
+> [!Note]
+> 各トークンは Base64 エンコードです。
 
 * 以下を [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html) ファイルに追加します。
 

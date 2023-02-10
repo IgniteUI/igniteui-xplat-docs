@@ -3,6 +3,7 @@ title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Editing and Validation

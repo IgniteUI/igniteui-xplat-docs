@@ -4,6 +4,7 @@ _description: Start using {Platform} {ComponentTitle} Column Resizing in order t
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform}  {ComponentTitle} Column Resizing Overview

@@ -4,6 +4,7 @@ _description: Understand how the {Platform} {ComponentTitle} sizing works and le
 _keywords: Sizing , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Sizing

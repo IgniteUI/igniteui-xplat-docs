@@ -2,6 +2,7 @@
 title: {Platform} Hierarchical Data Grid | Material Table | {ProductName} | Infragistics
 _description: Learn how to use {ProductName} data grid, based on {Platform} Material Table and create a touch-responsive angular component with variety of angular events.
 _keywords: angular data grid, igniteui for angular, infragistics
+namespace: Infragistics.Controls
 ---
 
 # Hierarchical Data Grid Overview and Configuration
