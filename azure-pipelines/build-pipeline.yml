@@ -76,7 +76,7 @@ stages:
 #          platform: React
 #          language: en
 
-      - template: templates/build-steps-make-pr.tml
+      - template: templates/build-steps-make-pr.yml
         parameters:
           buildType: $(buildType)
           platform: Angular
