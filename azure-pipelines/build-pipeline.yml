@@ -21,6 +21,7 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
+  isTemplateEnabled: false
   buildType: 'staging'
   ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
     buildType: 'production'
@@ -59,21 +60,21 @@ stages:
           customCommand: ci
 
       - template: templates/build-steps-template.yml
-        enabled: false
+        condition: eq(variables.isTemplateEnabled, true)
         parameters:
           buildType: $(buildType)
           platform: WebComponents
           language: en
 
       - template: templates/build-steps-template.yml
-        enabled: false
+        condition: eq(variables.isTemplateEnabled, true)
         parameters:
           buildType: $(buildType)
           platform: Blazor
           language: en
 
       - template: templates/build-steps-template.yml
-        enabled: false
+        condition: eq(variables.isTemplateEnabled, true)
         parameters:
           buildType: $(buildType)
           platform: React
