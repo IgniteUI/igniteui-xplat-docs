@@ -5,6 +5,7 @@ _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics, {Platform} 
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ソート

@@ -5,6 +5,7 @@ _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データ
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 編集

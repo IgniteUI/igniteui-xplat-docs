@@ -4,6 +4,7 @@ _description: {ProductName} で {ComponentTitle} キーボード ナビゲーシ
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション

@@ -5,6 +5,7 @@ _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 列タイプの概要

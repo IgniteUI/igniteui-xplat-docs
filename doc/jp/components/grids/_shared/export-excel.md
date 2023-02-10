@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragi
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Excel へのエクスポート サービス
