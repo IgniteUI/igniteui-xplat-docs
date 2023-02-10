@@ -25,6 +25,7 @@ steps:
 #      replaceExistingArchive: true
 
   - task: GitVersion@5
+    versionSpec: '5.x'
     displayName: 'Clone and checkout the Branch to push changes in'
     inputs:
       updateAssemblyInfo: true
@@ -47,6 +48,7 @@ steps:
       TargetFolder: '$(Build.SourcesDirectory)\ignite-ui-docfx\$(languageToBuild)'
 
   - task: GitVersion@5
+    versionSpec: '5.x'
     displayName: 'Commit the changes and make a PR'
     inputs:
       updateAssemblyInfo: true
