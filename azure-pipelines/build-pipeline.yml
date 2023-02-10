@@ -74,9 +74,16 @@ stages:
           buildType: $(buildType)
           platform: React
           language: en
+      
+      - template: templates/build-steps-make-pr.tml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: en
 
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
         inputs:
           targetPath: '$(Build.ArtifactStagingDirectory)'
           artifact: 'XPlatDocFX'
+
