@@ -23,3 +23,43 @@ steps:
       archiveType: 'zip'
       archiveFile: $(Build.ArtifactStagingDirectory)/${{ parameters.platform }}_${{ parameters.language }}_${{ parameters.buildType }}.zip
       replaceExistingArchive: true
+
+  - task: GitVersion@5
+    displayName: 'Clone and checkout the Branch to push changes in'
+    inputs:
+      updateAssemblyInfo: true
+  - script: |
+      git clone https://$(githubUser):$(githubToken)@github.com/ESShared/ignite-ui-docfx.git
+      git remote add upstream https://github.com/IgniteUI/igniteui-docfx.git
+      git fetch upstream
+      git checkout --track origin/$(Build.SourceBranchName)
+      git merge upstream/$(Build.SourceBranchName)
+      git push origin
+      git checkout -b $(branchName)_$(Build.SourceBranchName)
+      git pull origin $(branchName)_$(Build.SourceBranchName)
+      git merge $(Build.SourceBranchName)
+
+
+  - task: CopyFiles@2
+    displayName: 'Copy the build files to the Git repo'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\$(languageToBuild)'
+      TargetFolder: '$(Build.SourcesDirectory)\ignite-ui-docfx\$(languageToBuild)'
+
+  - task: GitVersion@5
+    displayName: 'Commit the changes and make a PR'
+    inputs:
+      updateAssemblyInfo: true
+  - script: |
+      git add -A
+      git commit -m "Adding changes from build $(Build.BuildNumber)"
+      git push --set-upstream origin $(branchName)_$(Build.SourceBranchName)
+  
+  - task: GitHubPullRequest@0
+    displayName: 'Create a pull request to the Angular DocFX repo'
+    inputs:
+      gitHubConnection: '$(githubToken)'
+      repositoryName: 'https://github.com/IgniteUI/igniteui-docfx.git'
+      sourceBranch: '$(branchName)'
+      targetBranch: 'vNext'
+      title: 'Changes from $(Build.DefinitionName)'

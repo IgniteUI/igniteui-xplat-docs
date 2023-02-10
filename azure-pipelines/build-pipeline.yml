@@ -57,19 +57,23 @@ stages:
           workingDir: '$(Build.SourcesDirectory)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: ci
+
       - template: templates/build-steps-template.yml
+        enabled: false
         parameters:
           buildType: $(buildType)
           platform: WebComponents
           language: en
 
       - template: templates/build-steps-template.yml
+        enabled: false
         parameters:
           buildType: $(buildType)
           platform: Blazor
           language: en
 
       - template: templates/build-steps-template.yml
+        enabled: false
         parameters:
           buildType: $(buildType)
           platform: React
