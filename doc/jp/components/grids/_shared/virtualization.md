@@ -7,7 +7,6 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 _language: ja
-namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 仮想化とパフォーマンス
