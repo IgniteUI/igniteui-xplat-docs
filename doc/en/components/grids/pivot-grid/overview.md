@@ -3,6 +3,7 @@ title: {Platform} Pivot Grid & Table – {ProductName}
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.PivotGrid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Pivot Grid Overview
