@@ -134,9 +134,10 @@ Use the `variant` attribute to add a simple contained button in your component t
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
+</code-view>
 
 ### Outlined Button
 
@@ -154,9 +155,10 @@ All you have to do to create an `outlined` button is to change the value of the 
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+<code-view style="height: 80px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
+</code-view>
 
 ### Flat Button
 
@@ -174,9 +176,10 @@ Analogically, we can switch to `flat` variant.
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
+</code-view>
 
 ### Floating Action Button
 
@@ -194,9 +197,10 @@ We can create a floating action button by setting the `variant` property to `fab
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
+</code-view>
 
 ## Button Sizing
 
@@ -331,9 +335,10 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
+</code-view>
 
 ## Styling
 

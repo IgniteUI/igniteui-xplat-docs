@@ -999,3 +999,148 @@ function fixMarkdownTables(cb) {
     });
 }
 exports.fixMarkdownTables = fixMarkdownTables;
+
+function getSampleLocations(fileLines, filePath) {
+    var topicSamples = [];
+
+    var sample = undefined;
+    for (let i = 0; i < fileLines.length; i++) {
+        var line = fileLines[i];
+        // var cvStart = fileContent.indexOf("<code-view");
+        // var cvEnds  = fileContent.indexOf("</code-view>");
+
+        if (line.indexOf("<code-view") >= 0) {
+            sample = {};
+            sample.lineStart = i;
+            sample.lineEnd = -1;
+            sample.lines = [];
+            sample.lines.push(line);
+            sample.height = line.replace("<code-view", "").replace('style="height:', "");
+            sample.height = sample.height.split('"').join("");
+            sample.height = sample.height.split(':').join("");
+            sample.height = sample.height.split(' ').join("");
+            sample.height = sample.height.split('px').join("");
+        }
+        else if (line.indexOf("</code-view>") >= 0) {
+            if (sample === undefined ) {
+                throw new Error("Missing '</code-view>' in " + filePath + ":L" + i);
+            }
+            sample.lineEnd = i;
+            sample.lines.push(line);
+
+            if (sample.alt === undefined && sample.path) {
+                var parts = sample.path.split("/");
+                if (parts.length === 4) {
+                    sample.alt4 = "{Platform} " + parts[2] + " " +  parts[3];
+
+                } else if (parts.length === 3) {
+                    sample.alt3 = "{Platform} " + parts[1] + " " +  parts[2];
+
+                } else if (parts.length === 2) {
+                    sample.alt2 = "{Platform} " + parts[1];
+
+                } else {
+                    sample.altE = "{Platform} " + sample.path;
+                }
+
+                if (sample.alt3) {
+                    sample.alt3 = sample.alt3.replace("Sample}", "Title}");
+                    sample.alt3 = sample.alt3.split('-').join(" ");
+                    sample.alt3 = sample.alt3.split('/>').join("");
+                    sample.alt3 = sample.alt3.split('>').join("");
+                    sample.alt3 = sample.alt3.split('<').join("");
+                    sample.alt3 = sample.alt3.split('"').join("");
+                    sample.alt3 = sample.alt3.trim();
+                }
+            }
+
+            topicSamples.push(sample);
+            sample = undefined;
+
+        }
+        else if (sample) {
+            sample.lines.push(line);
+            if (line.indexOf("iframe-src=") >= 0) {
+                sample.path = line.replace("iframe-src=", "");
+                sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
+                sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
+                sample.path = sample.path.split('"').join("");
+                sample.path = sample.path.split(' ').join("");
+                sample.path = sample.path.trim();
+                sample.path = sample.path.replace('-', "/");
+            }
+
+            if (line.indexOf("alt=") >= 0) {
+                sample.alt = line.replace("alt=", "");
+                sample.alt = sample.alt.split('/>').join("");
+                sample.alt = sample.alt.split('>').join("");
+                sample.alt = sample.alt.split('<').join("");
+                sample.alt = sample.alt.split('"').join("");
+                sample.alt = sample.alt.trim();
+            }
+        }
+
+    }
+    return topicSamples;
+}
+
+function simplifySamples(cb) {
+
+    console.log('simplifySamples .md files ...');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/scheduling/calendar.md',
+    'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // console.log('  verifying: ' + filePath);
+
+        var lines = fileContent.split("\r\n");
+        var samples = getSampleLocations(lines, filePath);
+        // console.log(samples);
+
+        for (const sample of samples) {
+            // if (!sample.alt && !sample.alt2) {
+            //     console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
+            // }
+
+            if (sample.alt3) {
+                console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
+            }
+
+            // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
+            // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
+        }
+// ```json
+// { "height": "300", "sample": "scheduling/calendar/overview", "alt": "{Platform} Calendar Example" }
+// ```
+        // fs.writeFileSync(filePath, fileContent);
+        filesCount++;
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            console.log(msg);
+            if (cb) cb();
+        }
+        // if (cb) cb();
+    })
+    .on("error", (err) => {
+        console.log("Error in simplifySamples()");
+        if (cb) cb(err);
+    });
+}
+exports.simplifySamples = simplifySamples;
