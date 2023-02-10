@@ -4,6 +4,7 @@ _description: The {ComponentTitle} is using in-cell editing. It has a default ce
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Cell Editing

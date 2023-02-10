@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infrag
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ツールバー

@@ -5,6 +5,7 @@ _keywords: material density, {Platform}, {ProductName}, Infragistics, マテリ�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 表示密度

@@ -4,6 +4,7 @@ _description: Learn how to configure advanced filter of data with the {Platform}
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 

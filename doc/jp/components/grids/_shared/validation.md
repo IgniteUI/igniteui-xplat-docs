@@ -4,6 +4,7 @@ _description: グリッドでユーザーの入力を検証し、{Platform} {Com
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 編集と検証

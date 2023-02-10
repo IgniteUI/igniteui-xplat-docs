@@ -4,6 +4,7 @@ _description: With {ProductName} Excel Exporter you can make client Excel functi
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Export to Excel Service

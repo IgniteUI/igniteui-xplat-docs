@@ -3,6 +3,7 @@ title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
 _description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Multi-row Layout
