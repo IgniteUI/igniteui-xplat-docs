@@ -12,7 +12,7 @@ steps:
       command: custom
       workingDir: '$(Build.SourcesDirectory)'
       verbose: ${{ parameters.isVerbose }}
-      customCommand: 'run build${{ parameters.buildType }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
+      customCommand: 'run build${{ parameters.platform }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
 
   - task: ArchiveFiles@2
     displayName: 'Package ${{ parameters.platform }} ${{ parameters.language }} - zip'
