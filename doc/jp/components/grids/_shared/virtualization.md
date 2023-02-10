@@ -4,7 +4,7 @@ _description: {ProductName} の仮想化ディレクティブは、大規模な�
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-mentionedTypes: [{ComponentApiMembers}, 'Virtualization']
+mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 _language: ja
 ---
@@ -62,7 +62,7 @@ _language: ja
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)

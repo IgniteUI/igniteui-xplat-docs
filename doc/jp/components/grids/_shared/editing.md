@@ -5,6 +5,7 @@ _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データ
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 編集
@@ -35,8 +36,8 @@ _language: ja
 
 `{ComponentName}` で `RowEditable` プロパティを true に設定し、`Editable` プロパティがどの列にも明示的に定義されていない場合、編集は*主キー*以外のすべての列で有効になります。
 
-<!-- 
-グリッドの[一括編集](batch-editing.md)は、[セル編集](cell-editing.md)モードと[行編集](row-editing.md)モードの両方で有効にできます。一括編集を設定するには、グリッドに **TransactionService** を提供する必要があります。 
+<!--
+グリッドの[一括編集](batch-editing.md)は、[セル編集](cell-editing.md)モードと[行編集](row-editing.md)モードの両方で有効にできます。一括編集を設定するには、グリッドに **TransactionService** を提供する必要があります。
 -->
 
 - **セルおよび一括編集** - このシナリオでは、各セルの変更は個別に保持され、元に戻す/やり直し操作はセル レベルで使用できます。
@@ -178,7 +179,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 <!-- Angular -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -197,7 +198,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)

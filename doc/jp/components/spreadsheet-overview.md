@@ -128,7 +128,7 @@ ModuleManager.register(
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > 次のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 

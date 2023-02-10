@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "toc2Blazor": "tsc && gulp generateTocYML --plat=Blazor --lang=en",
-    "toc2Angular": "tsc && gulp generateTocYML --plat=Angular --lang=en",
-    "toc2React": "tsc && gulp generateTocYML --plat=React --lang=en",
-    "toc2WC": "tsc && gulp generateTocYML --plat=WebComponents --lang=en",
+    "tocBuildA": "tsc && gulp --lang=en buildTOC --plat=Angular",
+    "tocBuildB": "tsc && gulp --lang=en buildTOC --plat=Blazor",
+    "tocBuildR": "tsc && gulp --lang=en buildTOC --plat=React",
+    "tocBuildW": "tsc && gulp --lang=en buildTOC --plat=WebComponents",
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApiSection": "tsc && gulp updateApiSection",
     "verifyMarkdown": "tsc && gulp verifyMarkdown",
@@ -49,25 +49,31 @@
   "license": "ISC",
   "dependencies": {
     "es6-shim": "^0.35.3",
-    "gulp-autoprefixer": "^6.0.0",
-    "to-vfile": "^2.2.0",
-    "yargs": "^16.2.0"
+    "gulp-autoprefixer": "^8.0.0",
+    "to-vfile": "^7.2.3",
+    "yargs": "^17.6.0"
   },
   "devDependencies": {
-    "@types/node": "^9.4.6",
-    "browser-sync": "^2.26.14",
-    "del": "^3.0.0",
+    "@types/node": "^16.18.0",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
     "event-stream": "^4.0.1",
     "gulp": "^4.0.2",
-    "gulp-exec": "^4.0.0",
+    "gulp-exec": "^5.0.0",
     "gulp-flatten": "^0.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-yaml": "^2.0.4",
-    "igniteui-docfx-template": "3.3.5",
-    "js-yaml": "^3.12.0",
-    "remark": "^9.0.0",
-    "remark-frontmatter": "^1.3.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-file-include": "^2.1.1",
+    "gulp-replace": "^1.1.3",
+    "gulp-shell": "^0.7.1",
+    "igniteui-docfx-template": "3.3.2",
+    "js-yaml": "^4.1.0",
+    "remark": "^13.0.0",
+    "remark-frontmatter": "^3.0.0",
     "through2": "^4.0.2",
-    "typescript": "3.0.1"
+    "typescript": "4.8.4",
+    "unist-util-visit": "^2.0.3"
   }
 }

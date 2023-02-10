@@ -4,6 +4,7 @@ _description: Configure {Platform} {ComponentTitle} summaries in the group foote
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Summaries
@@ -18,7 +19,7 @@ The {Platform} `{ComponentName}` has a **summaries** feature that functions on a
            github-src="{ComponentSample}/data-summary-options" >
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
 
 `{ComponentName}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentName}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
@@ -370,7 +371,7 @@ Add SummaryResult snippet here
 and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
-> [!NOTE]
+> [!Note]
 > In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -580,7 +581,7 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > Column summary template could be defined through API by setting the column `SummaryTemplate` property to the required TemplateRef.
 
 <!-- end: Angular -->
@@ -673,7 +674,7 @@ The available values of the `SummaryPosition` property are:
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
 
 
-> [!NOTE]
+> [!Note]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
 ### Demo
@@ -706,7 +707,7 @@ The available values of the `SummaryPosition` property are:
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 
-> [!NOTE]
+> [!Note]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
 <code-view style="height:720px"
@@ -760,7 +761,7 @@ The last step is to **include** the component mixins:
 @include grid-summary($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -798,7 +799,7 @@ $custom-theme: grid-summary-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -861,7 +862,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Angular -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -882,7 +883,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)

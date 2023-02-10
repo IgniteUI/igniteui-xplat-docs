@@ -388,18 +388,23 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/general-installing-blazor.md');
     // excludedTopics.push('doc/**/general-cli*.md');
     // excludedTopics.push('doc/**/grids/**/*.md');
-    // excludedTopics.push('doc/**/grids/grid/*.md');
     // excludedTopics.push('doc/**/grids/_shared/*.md');
-    // excludedTopics.push('doc/**/grids/theming.md');
+    // excludedTopics.push('doc/**/grids/grid/*.md');
     // excludedTopics.push('doc/**/grids/grids-header.md');
+    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/data-grid/*.md');
     // excludedTopics.push('doc/**/grids/combo/*.md');
     // excludedTopics.push('doc/**/grids/pivot-grid/*.md');
     // excludedTopics.push('doc/**/grids/tree-grid/*.md');
     // excludedTopics.push('doc/**/grids/hierarchical-grid/*.md');
-    // excludedTopics.push('doc/**/grids/data-grid*.md');
+    // excludedTopics.push('doc/**/grids/theming.md');
     // excludedTopics.push('doc/**/grids/tree.md');
     // excludedTopics.push('doc/**/grids/list.md');
     // excludedTopics.push('doc/**/charts/**/*.md');
+    // excludedTopics.push('doc/**/charts/features/*.md');
+    // excludedTopics.push('doc/**/charts/types/*.md');
+    // excludedTopics.push('doc/**/charts/chart-features.md');
+    // excludedTopics.push('doc/**/charts/chart-overview.md');
     // excludedTopics.push('doc/**/editors/**/*.md');
     // excludedTopics.push('doc/**/inputs/**/*.md');
     // excludedTopics.push('doc/**/layouts/**/*.md');
@@ -417,6 +422,8 @@ function buildTOC(cb) {
     // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
+
+    log("excludedTopics: " + excludedTopics.length);
 
     let platformName = PLAT;
     if (platformName === "Angular") {
@@ -437,7 +444,7 @@ function buildTOC(cb) {
         fileCallback(null, file);
     }))
     .on("end", () => {
-        log("excludedTopics " + excludedFiles.length + " ... done ");
+        log("excludedFiles: " + excludedFiles.length);
 
         let platformName = PLAT;
         ensureEnvironment();
@@ -452,36 +459,56 @@ function buildTOC(cb) {
         tocTopics = tocTopics.concat(enTopics); // including EN topics
         tocTopics = tocTopics.concat(jpTopics); // including JP topics
         tocTopics = tocTopics.concat(krTopics); // including KR topics
+        tocTopics.sort();
+
+        log("tocTopics: " + tocTopics.length);
+        // fs.writeFileSync("file-toc.txt", "file-toc \n" + tocTopics.join("\n"));
         // for (const topic of tocTopics) {
-        //     log("topics included in toc: " + topic);
+        //     log("" + topic);
         // }
 
-        includedTopics = []; // ['doc/**/*.md'];
+        var sharedComponents = []; // "grid", "hierarchical-grid", "pivot-grid", "tree-grid"];
+        for (let component of Object.values(docsComponents)) {
+            if (component.output) {
+                sharedComponents.push(component.output);
+            }
+        }
+
+        includedTopics = [];
+        // processing all markdown files to check if they are included in TOC and are not part of excluded files
         gulp.src(['doc/**/*.md'])
         .pipe(es.map(function(topicFile, topicCallback) {
             var filePath = topicFile.path.split('\\').join('/');
             var fileLocal = 'doc/' + filePath.split('/doc/')[1];
-            var includedInTOC = false;
-            for (const topic of tocTopics) {
-                if (filePath.indexOf(topic) >= 0) {
-                    includedInTOC = true;
+
+            var isFileExcluded = excludedFiles.indexOf(fileLocal) >= 0;
+            var isFileShared = filePath.indexOf("/_shared/") > 0;
+            // check if file is included in TOC
+            var isFileIncludedInTOC = tocTopics.indexOf(fileLocal) >= 0;
+            if (!isFileIncludedInTOC && isFileShared) {
+                // check if resolved path of shared file is included in TOC
+                for (const component of sharedComponents) {
+                    var resolvedPath = fileLocal.replace("_shared", component);
+                    var resolvedInTOC = tocTopics.indexOf(resolvedPath) >= 0;
+                    if (resolvedInTOC) {
+                        isFileIncludedInTOC = true; break;
+                    }
                 }
             }
-
-            var isExcludedFile = excludedFiles.indexOf(fileLocal) > 0;
-            var isSharedFile = filePath.indexOf("/_shared/") > 0;
-            // skip topics that are explicitly excluded and include topics that are in TOC or shared topics
-            if (!isExcludedFile) {
-                if (includedInTOC || isSharedFile) {
-                    includedTopics.push(fileLocal);
-                }
+            // skip topics that are explicitly excluded and include only topics that are in TOC
+            if (!isFileExcluded && isFileIncludedInTOC) {
+                 includedTopics.push(fileLocal);
             }
-
             topicCallback(null, topicFile);
         }))
         .on("end", () => {
+
+            includedTopics.sort();
+            log("includedTopics: " + includedTopics.length);
+            // console.log(includedTopics);
+            // fs.writeFileSync("file-included.txt", "file-included \n" + includedTopics.join("\n"));
             // for (const topic of includedTopics) {
-            //     log("actual topic: " + topic);
+            //     log("" + topic);
             // }
             cb();
         })
@@ -620,11 +647,16 @@ function generateTocFor(platform, language, isFirstRelease, excludedFiles) {
     transformer.docsLanguage = language;
     let tocPath = './docfx/' + language + '/components/toc.json';
     let tocTopics = transformer.generateTOC(tocPath, platform, language, isFirstRelease, excludedFiles);
-    tocTopics.sort();
     for (let i = 0; i < tocTopics.length; i++) {
         tocTopics[i] = 'doc/' + language + '/components/' + tocTopics[i];
       //  console.log('>> generateTocFor "' + tocTopics[i] + '"');
     }
+    // filter out duplicates toc nodes
+    tocTopics = tocTopics.filter((c, index) => {
+        return tocTopics.indexOf(c) === index;
+    });
+
+    tocTopics.sort();
     return tocTopics;
 }
 
@@ -897,3 +929,218 @@ function verifyMarkdown(cb) {
     });
 }
 exports.verifyMarkdown = verifyMarkdown;
+
+
+function fixMarkdownTables(cb) {
+
+    console.log('fixMarkdownTables .md files ...');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    'doc/kr/**/*.md',
+    '!doc/**/obsolete/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        console.log('  verifying: ' + filePath);
+
+        var lines = fileContent.split("\n");
+        for (let i = 0; i < lines.length; i++) {
+            var line = lines[i].trim();
+            if (line.indexOf("title:") < 0 &&
+                line.indexOf("> NOTE") < 0 &&
+                line.indexOf("if") !== 0 &&
+                line.indexOf("} else") !== 0 &&
+                line.indexOf("columnArgs") < 0 &&
+                line.indexOf("const ") !== 0 &&
+                line.indexOf("return ") !== 0 &&
+                line.indexOf("public ") !== 0 &&
+                line.indexOf("private ") !== 0 &&
+                line.indexOf("`IncludedProperties` | `ExcludedProperties`") < 0 &&
+                line.indexOf("let ") !== 0 &&
+                line.indexOf("(") !== 0 &&
+                line.indexOf("{") !== 0 &&
+                line.indexOf("<") !== 0 &&
+                line.indexOf("*") !== 0 &&
+                line.indexOf("|") !== 0 &&
+                line.indexOf("||") < 0 &&
+                line.indexOf("|") > 0) {
+                lines[i] = "| " + line + " |";
+                console.log(line);
+            }
+        }
+        // fileContent = lines.join("\n");
+        // fs.writeFileSync(filePath, fileContent);
+        filesCount++;
+
+
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            console.log(msg);
+            if (cb) cb();
+        }
+        // if (cb) cb();
+    })
+    .on("error", (err) => {
+        console.log("Error in fixMarkdownTables()");
+        if (cb) cb(err);
+    });
+}
+exports.fixMarkdownTables = fixMarkdownTables;
+
+function getSampleLocations(fileLines, filePath) {
+    var topicSamples = [];
+
+    var sample = undefined;
+    for (let i = 0; i < fileLines.length; i++) {
+        var line = fileLines[i];
+        // var cvStart = fileContent.indexOf("<code-view");
+        // var cvEnds  = fileContent.indexOf("</code-view>");
+
+        if (line.indexOf("<code-view") >= 0) {
+            sample = {};
+            sample.lineStart = i;
+            sample.lineEnd = -1;
+            sample.lines = [];
+            sample.lines.push(line);
+            sample.height = line.replace("<code-view", "").replace('style="height:', "");
+            sample.height = sample.height.split('"').join("");
+            sample.height = sample.height.split(':').join("");
+            sample.height = sample.height.split(' ').join("");
+            sample.height = sample.height.split('px').join("");
+        }
+        else if (line.indexOf("</code-view>") >= 0) {
+            if (sample === undefined ) {
+                throw new Error("Missing '</code-view>' in " + filePath + ":L" + i);
+            }
+            sample.lineEnd = i;
+            sample.lines.push(line);
+
+            if (sample.alt === undefined && sample.path) {
+                var parts = sample.path.split("/");
+                if (parts.length === 4) {
+                    sample.alt4 = "{Platform} " + parts[2] + " " +  parts[3];
+
+                } else if (parts.length === 3) {
+                    sample.alt3 = "{Platform} " + parts[1] + " " +  parts[2];
+
+                } else if (parts.length === 2) {
+                    sample.alt2 = "{Platform} " + parts[1];
+
+                } else {
+                    sample.altE = "{Platform} " + sample.path;
+                }
+
+                if (sample.alt3) {
+                    sample.alt3 = sample.alt3.replace("Sample}", "Title}");
+                    sample.alt3 = sample.alt3.split('-').join(" ");
+                    sample.alt3 = sample.alt3.split('/>').join("");
+                    sample.alt3 = sample.alt3.split('>').join("");
+                    sample.alt3 = sample.alt3.split('<').join("");
+                    sample.alt3 = sample.alt3.split('"').join("");
+                    sample.alt3 = sample.alt3.trim();
+                }
+            }
+
+            topicSamples.push(sample);
+            sample = undefined;
+
+        }
+        else if (sample) {
+            sample.lines.push(line);
+            if (line.indexOf("iframe-src=") >= 0) {
+                sample.path = line.replace("iframe-src=", "");
+                sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
+                sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
+                sample.path = sample.path.split('"').join("");
+                sample.path = sample.path.split(' ').join("");
+                sample.path = sample.path.trim();
+                sample.path = sample.path.replace('-', "/");
+            }
+
+            if (line.indexOf("alt=") >= 0) {
+                sample.alt = line.replace("alt=", "");
+                sample.alt = sample.alt.split('/>').join("");
+                sample.alt = sample.alt.split('>').join("");
+                sample.alt = sample.alt.split('<').join("");
+                sample.alt = sample.alt.split('"').join("");
+                sample.alt = sample.alt.trim();
+            }
+        }
+
+    }
+    return topicSamples;
+}
+
+function simplifySamples(cb) {
+
+    console.log('simplifySamples .md files ...');
+
+    var filesCount = 0;
+    var errorsCount = 0;
+    gulp.src([
+    // 'doc/en/**/scheduling/calendar.md',
+    'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // console.log('  verifying: ' + filePath);
+
+        var lines = fileContent.split("\r\n");
+        var samples = getSampleLocations(lines, filePath);
+        // console.log(samples);
+
+        for (const sample of samples) {
+            // if (!sample.alt && !sample.alt2) {
+            //     console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
+            // }
+
+            if (sample.alt3) {
+                console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
+            }
+
+            // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
+            // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
+        }
+// ```json
+// { "height": "300", "sample": "scheduling/calendar/overview", "alt": "{Platform} Calendar Example" }
+// ```
+        // fs.writeFileSync(filePath, fileContent);
+        filesCount++;
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+
+        if (errorsCount > 0) {
+            var msg = "Correct above " + errorsCount + " errors in markdown files!";
+            if (cb) cb(new Error(msg)); else console.log(msg);
+            // if (cb) cb(msg); else console.log(msg);
+        } else {
+            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            console.log(msg);
+            if (cb) cb();
+        }
+        // if (cb) cb();
+    })
+    .on("error", (err) => {
+        console.log("Error in simplifySamples()");
+        if (cb) cb(err);
+    });
+}
+exports.simplifySamples = simplifySamples;

@@ -8,6 +8,9 @@
         "**/*.js": {"when": "$(basename).ts"},
         "**/*.js.map": true
     },
+    "files.associations" {
+        "**/azure-pipelines/*.yml": "azure-pipelines"
+    },
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {

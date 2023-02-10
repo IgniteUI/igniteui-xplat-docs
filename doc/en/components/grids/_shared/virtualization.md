@@ -4,7 +4,7 @@ _description: The {ProductName} Virtualization directive is the core mechanic be
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-mentionedTypes: [{ComponentApiMembers}, 'Virtualization']
+mentionedTypes: [{ComponentApiMembers}]
 namespace: Infragistics.Controls
 ---
 
@@ -61,7 +61,7 @@ Without information about the sizes of the container and the items before render
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

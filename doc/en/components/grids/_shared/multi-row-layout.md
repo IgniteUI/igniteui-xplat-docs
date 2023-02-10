@@ -3,6 +3,7 @@ title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
 _description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Multi-row Layout
@@ -301,9 +302,9 @@ In order for the custom theme do affect only specific component, you can move al
 
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
@@ -323,7 +324,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
            alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

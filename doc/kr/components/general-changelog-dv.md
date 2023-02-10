@@ -12,7 +12,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > For changes specific to Angular LOB components, please see [Ignite UI Angular Changes](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)
 
 <!-- end: Angular -->
@@ -23,7 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 <!-- Blazor -->
 
-> [!NOTE]
+> [!Note]
 > The **Igb** prefix is now required for the {ProductName} components and nested elements within each component. This API change was necessary to avoid ambiguity between Infragistics controls and 3rd party controls.
 >
 > For example, ``` <IgbCategoryChart/> ``` instead of ``` <CategoryChart/> ```
@@ -115,19 +115,19 @@ This release introduces a few improvements and simplifications to visual design 
 * Simplified shapes of series in chart's legend to display only circle, line, or square. This can be reverted by setting chart's `LegendItemBadgeMode` property to `MatchSeries` enum value
 * Changed color palette of series and markers displayed in all charts to improve accessibility
 
-Old brushes/outlines | New outline/brushes
--------------------- | -------------------
-<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+| Old brushes/outlines | New outline/brushes |
+| -------------------- | ------------------- |
+| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 <!-- Blazor, React, WebComponents -->
 
 ### DataGrid
 
 * New Features Added:
-    - [Filter Row](grids/data-grid-column-filtering.md)
-    - [Load/Save Layout Customizations](grids/data-grid-load-save-layout.md)
-    - [GroupBy Area for column grouping](grids/data-grid-row-grouping.md)
-    - [Cell Merging](grids/data-grid-cell-merging.md)
+    - [Filter Row](grids/data-grid/column-filtering.md)
+    - [Load/Save Layout Customizations](grids/data-grid/load-save-layout.md)
+    - [GroupBy Area for column grouping](grids/data-grid/row-grouping.md)
+    - [Cell Merging](grids/data-grid/cell-merging.md)
 * New API:
     - Added `SelectionChanged` event. Used to detect changes on selection interactions
      e.g. Multiple row selection.
@@ -176,9 +176,9 @@ This release introduces several new and improved visual design and configuration
 * Added support to automatically expanding the horizontal margins of the chart based on the initial labels displayed
 * Redesigned color palette of series and markers:
 
-Old brushes/outlines | New outline/brushes
--------------------- | -------------------
-<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+| Old brushes/outlines | New outline/brushes |
+| -------------------- | ------------------- |
+| <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 for example:
 
@@ -194,7 +194,7 @@ for example:
 
 ### Geographic Map
 
-> [!NOTE]
+> [!Note]
 > These features are CTP
 
 * Added support for wrap around display of the map (scroll infinitely horizontally)
@@ -208,7 +208,7 @@ for example:
 
 ### Data Grid
 
-* Added `EditOnKeyPress ` aka Excel-style Editing, instantly begin editing when typing.
+* Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
 * Added `EnterKeyBehaviors` property - aka Excel-style Navigation (Enter Behavior) – controls the behavior of the enter key, e.g. Options are (none, edit, move up, down, left, right)
 * Added `EnterKeyBehaviorAfterEdit` property - While in edit-mode, this property controls when enter is pressed, e.g. Options are (moves to the cell below, above, right, left)
@@ -240,7 +240,7 @@ for example:
 <!-- React, WebComponents -->
 ## **{Platform} {PackageVerChangedFields}**
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in the grid package.
 
 ### Data Grid
@@ -284,7 +284,7 @@ income.field = "Income";
 
 The data grid component and it's corresponding module's names have changed from "LiveGrid" to "DataGrid".
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 The new code for importing the grid and it's corresponding module is:
@@ -317,7 +317,7 @@ The data grid component requires the "inputs" package.
 
 Import statements have been simplified to use just package names instead of full paths to API classes and enums.
 
-> [!NOTE]
+> [!Note]
 > These breaking changes were introduce in these packages and components only:
 
 | Affected Packages | Affected Components |
@@ -328,7 +328,7 @@ Import statements have been simplified to use just package names instead of full
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [Bullet Graph](bullet-graph.md), [Linear Gauge](linear-gauge.md), [Radial Gauge](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| Category Chart, Data Chart, Donut Chart, Financial Chart], Pie Chart, [Zoom Slider](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | all classes and enums  |
-| <!-- Blazor, React, WebComponents --> <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> <!-- end: Blazor, React, WebComponents --> | <!-- Blazor, React, WebComponents --> [Data Grid](grids/data-grid.md) <!-- end: Blazor, React, WebComponents --> |
+| <!-- Blazor, React, WebComponents --> <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> <!-- end: Blazor, React, WebComponents --> | <!-- Blazor, React, WebComponents --> [Data Grid](grids/data-grid/overview.md) <!-- end: Blazor, React, WebComponents --> |
 
 - Code After Changes
 

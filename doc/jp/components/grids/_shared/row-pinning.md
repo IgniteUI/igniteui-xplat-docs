@@ -5,12 +5,13 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->
 
 > [!Note]
-このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。 
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
 
 <!-- end: Blazor, WebComponents -->
 
@@ -457,7 +458,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
            alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
@@ -470,7 +471,7 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 ## その他のリソース
 
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

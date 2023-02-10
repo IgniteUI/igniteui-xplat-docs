@@ -236,15 +236,15 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ               | コントロール名       | API メンバー
--------------------------|--------------------|-----------------------
-エリア                     | `CategoryChart` | `ChartType` = `Area`
-ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea`
-範囲エリア               | `XamDataChart`     | `RangeAreaSeries`
-ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries`
-極座標エリア               | `XamDataChart`     | `PolarAreaSeries`
-極座標スプライン エリア        | `XamDataChart`     | `PolarSplineAreaSeries`
-積層型エリア             | `XamDataChart`     | `StackedAreaSeries`
-積層型スプライン エリア      | `XamDataChart`     | `StackedSplineAreaSeries`
-積層型 100% エリア        | `XamDataChart`     | `Stacked100AreaSeries`
-積層型 100% スプライン エリア | `XamDataChart`     | `Stacked100SplineAreaSeries`
+| チャート タイプ               | コントロール名       | API メンバー |
+| -------------------------|--------------------|----------------------- |
+| エリア                     | `CategoryChart` | `ChartType` = `Area` |
+| ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea` |
+| 範囲エリア               | `XamDataChart`     | `RangeAreaSeries` |
+| ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries` |
+| 極座標エリア               | `XamDataChart`     | `PolarAreaSeries` |
+| 極座標スプライン エリア        | `XamDataChart`     | `PolarSplineAreaSeries` |
+| 積層型エリア             | `XamDataChart`     | `StackedAreaSeries` |
+| 積層型スプライン エリア      | `XamDataChart`     | `StackedSplineAreaSeries` |
+| 積層型 100% エリア        | `XamDataChart`     | `Stacked100AreaSeries` |
+| 積層型 100% スプライン エリア | `XamDataChart`     | `Stacked100SplineAreaSeries` |

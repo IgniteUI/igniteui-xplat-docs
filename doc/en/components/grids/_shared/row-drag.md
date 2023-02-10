@@ -4,6 +4,7 @@ _description: Row dragging in {Platform} {ComponentTitle} is used to quickly rea
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # Row Dragging in {Platform} {ComponentTitle}
@@ -247,7 +248,7 @@ We define a reference to each of our grids via the **ViewChild** decorator and t
 
 <!-- ComponentEnd: Grid -->
 
-> [!NOTE]
+> [!Note]
 > When using row data from the event arguments (**args.dragData.data**) or any other row property, note that the entire row is passed in the arguments as a reference, which means that you must clone the data you need, if you want to distinguish it from the one in the source grid.
 
 
@@ -424,7 +425,7 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 </code-view>
 
 
-> [!NOTE]
+> [!Note]
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 
 <!-- ComponentEnd: Grid -->
@@ -470,7 +471,7 @@ constructor() {
 </igx-hierarchical-grid>
 ```
 
-> [!NOTE]
+> [!Note]
 > Make sure that there is a `PrimaryKey` specified for the grid! The logic needs an unique identifier for the rows so they can be properly reordered.
 
 Once `RowDraggable` is enabled and a drop zone has been defined, you need to implement a simple handler for the drop event. When a row is dragged, check the following:
@@ -785,7 +786,7 @@ In the demo in the next section you see how you can display an indicator of wher
 
 In order to track the position of the cursor, we bind to the `DragMove` event of the `DragDirective` when we start dragging a row.
 
-> [!NOTE]
+> [!Note]
 > Make sure that there is a `PrimaryKey` specified for the grid! The logic needs an unique identifier for the rows so they can be properly reordered
 
 ```typescript
@@ -951,7 +952,7 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 
 Our community is active and always welcoming to new ideas.
 

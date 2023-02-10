@@ -212,6 +212,7 @@ In this {Platform} grid example, you can see how users can customize their _data
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid example">
 </code-view>
 
@@ -270,7 +271,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     <p>The Ignite UI {Platform} Data Grid can handle unlimited rows and columns of data, while providing access to custom templates and real-time data updates. Featuring an intuitive API for easy theming and branding, you can quickly bind to data with minimal code.</p>
     <div class="divider--half"></div>
         <div style="text-align:center">
-            <a class="cta-btn no-external-icon ui-btn--sm" href="grid/grid.md">view samples</a>
+            <a class="cta-btn no-external-icon ui-btn--sm" href="data-grid.md">view samples</a>
         </div>
     </div>
     </div>
@@ -296,7 +297,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     </div>
     <div class="feature__details">
         <span class="h3 features__heading">Inline {Platform} Grid Editing<a class="anchorjs-link" href="#inline-{Platform}-grid-editing" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
-        <p>We provide you default [cell templates for editable columns](grid/grid.md#cell-editing-template) which are based on the data type of the column. You can define your own custom templates for editable columns and override default behavior for committing and discarding changes in the cell value.</p>
+        <p>We provide you default [cell templates for editable columns](data-grid.md#cell-editing-template) which are based on the data type of the column. You can define your own custom templates for editable columns and override default behavior for committing and discarding changes in the cell value.</p>
     </div>
 </div>
 
@@ -402,7 +403,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     <li>[Resizable Columns](grid/column-resizing.md)</li>
     <li>[Column Hiding](grid/column-hiding.md)</li>
     <!-- <li>[Remote Data Load on Demand](grid/virtualization.md#remote-virtualization)</li> -->
-    <!-- <li>[Cell Templates](grid/grid.md#cell-template)</li>
+    <!-- <li>[Cell Templates](data-grid.md#cell-template)</li>
     <li>[ARIA/a11y Support](interactivity/accessibility-compliance.md)</li> -->
 </ul>
 </div>
@@ -449,7 +450,7 @@ There are multiple options to get access to our award-winning support at Infragi
 <div class="divider--half"></div>
         <ul>
             <li>Start at the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/support/ignite-ui-angular-help">Support</a> home page</li>
-            <li>Read the {Platform} [Documentation](general/getting-started.md) and experiment with {Platform} Samples</li>
+            <li>Read the {Platform} [Documentation](../general-getting-started.md) and experiment with {Platform} Samples</li>
             <li>Read the<a class="no-external-icon" href="{environment:infragisticsBaseUrl}/community/blogs/tags/Ignite%2bUI%2bfor%2b{Platform}"> {Platform} Blogs</a> to stay up to date</li>
             <li>Submit a <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/products/ignite-ui-angular/grid-table"> Support Case</a></li>
             <li>Learn from the {Platform} <a class="no-external-icon" href="{environment:infragisticsBaseUrl}/resources/sample-applications">Reference Applications</a></li>

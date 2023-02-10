@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 
@@ -244,7 +245,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

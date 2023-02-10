@@ -4,6 +4,7 @@ _description: Handle cell and editing templates in {Platform} by choosing from s
 _keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Types Overview
@@ -176,7 +177,7 @@ Available timezones:
 | India Standard Time       |‘UTC+4’                    |
 
 
-The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../grid/overview.md#custom-display-format).
+The `{ComponentName}` accepts date values of type *Date object*, *Number (milliseconds)*, *An ISO date-time string*. This section shows [how to configure a custom display format](../data-grid.md#custom-display-format).
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
@@ -477,7 +478,8 @@ constructor() {
 }
 ```
 
-> Note: When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
+> [!Note]
+> When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
 
 ## Default Editing Template
 
@@ -522,7 +524,7 @@ public init(column: IgxColumnComponent) {
 
 ```html
 <igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">        
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
 </igc-grid>
 ```
@@ -577,6 +579,6 @@ TO DO!
 ## Additional Resources
 
 * For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
-* [{ComponentTitle} Overview](overview.md)
+
 * [Editing](editing.md)
 * [Summaries](summaries.md)

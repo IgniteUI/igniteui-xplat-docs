@@ -4,6 +4,7 @@ _description: {ProductName} グリッドを使用して列ヘッダーを共通�
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 複数列ヘッダーの概要
@@ -234,7 +235,7 @@ TO-DO H-GRID CODE SNIPPET
 <!-- ComponentEnd: HierarchicalGrid -->
 
 すべての `ColumnGroup` は、[移動](column-moving.md)、[ピン固定](column-pinning.md)、および[非表示](column-hiding.md)をサポートしています。
-> [!NOTE]
+> [!Note]
 > 列セットと列グループがある場合、ピン固定は列の一番上の親レベルでのみ可能です。具体的には、ネストされた column groups または columns ごとのピン固定は許可されていません。 <br />
 > columns と column groups 間の移動は、それらが階層内の同じレベルにあり、両方が同じ `group` にある場合にのみ許可されます。 <br />
 > `columns/column-groups` が現在の `group` によってラップされていない場合 (**一番上のレベル** `columns` の場合)、表示されている列全体の間で移動が許可されます。
@@ -465,7 +466,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > ヘッダーが再テンプレート化され、対応する列グループが移動可能な場合は、テンプレート要素で **draggable** 属性を **false** に設定する必要があり、これにより適用されるイベントをすべて処理できます。
 
 ```html
@@ -531,7 +532,7 @@ $custom-theme: igx-grid-theme(
 @include igx-grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
@@ -567,7 +568,7 @@ $custom-theme: igx-grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/palette.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -636,7 +637,7 @@ import 'core-js/es7/array';
 
 ## その他のリソース
 
-* [Grid の概要](grid.md)
+* [Grid の概要](../data-grid.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

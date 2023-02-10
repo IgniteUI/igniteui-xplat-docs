@@ -3,6 +3,7 @@ title: {Platform} Pivot Grid & Table – {ProductName}
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.PivotGrid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Pivot Grid Overview
@@ -23,8 +24,8 @@ The following is an {Platform} Pivot Grid example in combination with the {Platf
 
 <code-view style="height: 700px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
-           github-src="{PivotGridSample}/pivot-grid-data-selector"
+           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
+           github-src="{PivotGridSample}/data-selector"
            alt="{Platform} Pivot Grid with Pivot Selector Example">
 </code-view>
 

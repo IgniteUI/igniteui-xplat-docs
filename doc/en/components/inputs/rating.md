@@ -97,7 +97,7 @@ The `Rating` component allows you to use custom symbols in place of the default 
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
 
 ## Single Selection
@@ -134,7 +134,7 @@ The {ProductName} Rating component has a single selection mode that allows users
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 Keep in mind that the `step` attribute doesn't work with single selection mode.
 
 ## Empty & Selected

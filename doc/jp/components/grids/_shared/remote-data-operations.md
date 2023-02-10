@@ -4,6 +4,7 @@ _description: リモート フィルタリング、リモートソート、リ�
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} のリモート データ操作
@@ -73,7 +74,7 @@ BLAZOR CODE SNIPPET HERE
 
 データを要求する際に `StartIndex` および `ChunkSize` プロパティを提供する `IForOfState` インターフェイスを使用できます。
 
->[!NOTE]
+> [!Note]
 >最初の `ChunkSize` は常に 0 で、特定のアプリケーション シナリオに基づいて設定する必要があります。
 
 <!-- end: Angular -->
@@ -224,7 +225,7 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 BLAZOR CODE SNIPPET HERE
 ```
 
->[!NOTE]
+> [!Note]
 >リモー トデータが要求された場合、フィルタリング操作が大文字と小文字を区別します。
 
 ### リモート ソート/フィルタリングのデモ
@@ -290,7 +291,7 @@ BLAZOR CODE SNIPPET HERE
 
 リモート フィルタリングは、フラット コレクションで直接実行する必要があります。また、親がフィルターに一致するかどうかにかかわらず、フィルター条件に一致するすべてのレコードにすべての親を含める必要があります (階層をそのままにするためにこれを行います)。結果は以下で確認できます。
 
->[!NOTE]
+> [!Note]
 >リモー トデータが要求された場合、フィルタリング操作が大文字と小文字を区別します。
 
 ### リモート フィルタリングのデモ
@@ -309,7 +310,7 @@ Excel スタイル フィルタリング ダイアログ内のリスト項目は
 
 開発者は、`Column` と `FilteringExpressionsTree` 引数によって提供される情報に基づいて、必要な一意の列値を手動で生成し、`Done` コールバックを呼び出すことができます。
 
-> [!NOTE]
+> [!Note]
 > `UniqueColumnValuesStrategy` 入力が提供される場合、Excel スタイル フィルタリングでプロセスを生成するデフォルトの一意の値は使用されません。
 
 
@@ -766,7 +767,7 @@ BLAZOR CODE SNIPPET HERE
 ```
 <!-- ComponentEnd: TreeGrid -->
 
->[!NOTE]
+> [!Note]
 > リモート ページングを適切に構成するには、`GridPagingMode.Remote` を設定する必要があります。
 
 

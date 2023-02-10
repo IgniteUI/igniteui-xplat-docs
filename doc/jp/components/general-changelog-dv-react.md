@@ -12,9 +12,9 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2}**
 
-デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。  
+デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
-これらの新しいチャートの改善点は次のとおりです: 
+これらの新しいチャートの改善点は次のとおりです:
 
 * ブラウザー / 画面サイズに基づいた水平ラベル回転のレスポンシブ レイアウト。
 * すべてのプラットフォームでの丸型ラベルの描画が強化されました。
@@ -26,7 +26,7 @@ namespace: Infragistics.Controls.Charts
     - ZoomToCategoryRange
     - ZoomToItemSpan
 * カテゴリの文字列と数値をグループ化、ソート、集計するための新しい[チャート集計](charts/features/chart-data-aggregations.md) API により、チャート データを事前に集計または計算する必要がなくなります。
-  - InitialSortDescriptions 
+  - InitialSortDescriptions
   - InitialSorts
   - SortDescriptions
   - InitialGroups
@@ -50,7 +50,7 @@ namespace: Infragistics.Controls.Charts
 * `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} 
+### {PackageCharts}
 
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
@@ -70,7 +70,7 @@ namespace: Infragistics.Controls.Charts
 ### {PackageGrids}
 
 * 新規機能:
-- [行のページング](grids/data-grid-row-paging.md)
+- [行のページング](grids/data-grid/row-paging.md)
 
 ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
 
@@ -81,7 +81,7 @@ namespace: Infragistics.Controls.Charts
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
-> [!NOTE]
+> [!Note]
 > 以下の重大な変更が導入されました
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
@@ -102,7 +102,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
 
-### {PackageCharts} 
+### {PackageCharts}
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
@@ -113,7 +113,7 @@ namespace: Infragistics.Controls.Charts
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線を追加しました。
 * `FinancialChart` と`CategoryChart` にデフォルトの十字線の注釈を追加しました。
 * `FinancialChart` にデフォルトで最終値の注釈を追加しました。
-* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました: 
+* カテゴリ チャートとファイナンシャル チャートに新しいプロパティを追加しました:
    - 十字線をカスタマイズするための `CrosshairsLineThickness` およびその他のプロパティ
    - 十字線の注釈をカスタマイズするための `CrosshairsAnnotationXAxisBackground` およびその他のプロパティ
    - 最終値の注釈をカスタマイズするための `FinalValueAnnotationsBackground` およびその他のプロパティ
@@ -131,19 +131,19 @@ namespace: Infragistics.Controls.Charts
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
 * アクセシビリティを向上させるために、すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました
 
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 <div class="divider--half"></div>
 
 ### {PackageGrids}
 
 * 新規機能:
-    - [フィルター行](grids/data-grid-column-filtering.md)
-    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid-load-save-layout.md)
-    - [列をグループ化するための GroupBy 領域](grids/data-grid-row-grouping.md)
-    - [セルの結合](grids/data-grid-cell-merging.md)
+    - [フィルター行](grids/data-grid/column-filtering.md)
+    - [レイアウトのカスタマイズ読み込み/保存](grids/data-grid/load-save-layout.md)
+    - [列をグループ化するための GroupBy 領域](grids/data-grid/row-grouping.md)
+    - [セルの結合](grids/data-grid/cell-merging.md)
 * 新規 API:
     - `SelectionChanged` イベントを追加しました。複数行の選択など、選択のインタラクションの変化を検出するために使用されます。
 * 重大な変更:
@@ -188,9 +188,9 @@ namespace: Infragistics.Controls.Charts
 * 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
 * シリーズとマーカーの再設計されたカラー パレット:
 
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 例:
 
@@ -206,7 +206,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
@@ -250,7 +250,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids}
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、グリッド パッケージで導入されました。
 
 - PropertyPath の名称変更
@@ -279,7 +279,7 @@ income.field = "Income";
 
 Data Grid コンポーネントおよび対応するモジュールの名前が 「LiveGrid」 から 「DataGrid」 に変更されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
@@ -305,7 +305,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 | 影響されるパッケージ | 影響されるコンポーネント |
@@ -316,7 +316,7 @@ Import ステートメントは、API クラスと列挙型へのフル パス�
 | <a href="{PackageWebsite}{PackageGauges}/v/{PackageVerChangedImports}" target="_blank">{PackageGauges}</a> |  [ブレット グラフ](bullet-graph.md)、[リニア ゲージ](linear-gauge.md)、[ラジアル ゲージ](radial-gauge.md)   |
 | <a href="{PackageWebsite}{PackageCharts}/v/{PackageVerChangedImports}" target="_blank">{PackageCharts}</a>| カテゴリ チャート、データ チャート、ドーナツ チャート、ファイナンシャル チャート、円チャート、[ズーム スライダー](zoomslider-overview.md)  |
 | <a href="{PackageWebsite}{PackageCore}/v/{PackageVerChangedImports}" target="_blank">{PackageCore}</a> | すべてのクラスと列挙型  |
-| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [データ グリッド](grids/data-grid.md) |
+| <a href="{PackageWebsite}{PackageGrids}/v/{PackageVerChangedImports}" target="_blank">{PackageGrids}</a> | [データ グリッド](grids/data-grid/overview.md) |
 
 - 変更後のコード
 

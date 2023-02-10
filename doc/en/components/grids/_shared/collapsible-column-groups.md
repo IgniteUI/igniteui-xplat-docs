@@ -4,6 +4,7 @@ _description: Take advantage of the capability to show\hide smaller and concise 
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 # {Platform} {ComponentTitle} Collapsible Column Groups Overview
 
@@ -243,7 +244,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

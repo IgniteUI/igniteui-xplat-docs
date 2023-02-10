@@ -5,6 +5,7 @@ _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 集計
@@ -19,7 +20,7 @@ _language: ja
            github-src="{ComponentSample}/data-summary-options" >
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > 列の集計は列**値すべての関数**ですが、フィルタリングが適用された場合、列の集計**はフィルターされた結果値の関数になります**。
 
 `{ComponentName}` 集計を列ごとに有効にして必要な列のみアクティブ化できます。`{ComponentName}` 集計は、列のデータ型に基づいてデフォルト集計の定義済みセットを提供します。
@@ -371,7 +372,7 @@ Add SummaryResult snippet here
 and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
-> [!NOTE]
+> [!Note]
 > In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -581,7 +582,7 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > 列の集計テンプレートは、列 `SummaryTemplate` プロパティを必要な TemplateRef に設定することにより、API を介して定義できます。
 
 <!-- end: Angular -->
@@ -674,8 +675,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
 
-> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
-> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
 ### デモ
 
@@ -707,8 +708,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
 
-> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
-> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
 <code-view style="height:720px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -761,7 +762,7 @@ $custom-theme: grid-summary-theme(
 @include grid-summary($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
  ```scss
@@ -799,7 +800,7 @@ $custom-theme: grid-summary-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -862,7 +863,7 @@ $custom-theme: grid-summary-theme(
 
 <!-- Angular -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -883,7 +884,7 @@ $custom-theme: grid-summary-theme(
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)

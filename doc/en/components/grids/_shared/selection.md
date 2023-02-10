@@ -4,6 +4,7 @@ _description: See how easy it is to select data in {ProductName} grid using vari
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Selection Overview
@@ -223,7 +224,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)

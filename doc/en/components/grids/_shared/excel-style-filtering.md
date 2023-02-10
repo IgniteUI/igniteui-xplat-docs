@@ -4,6 +4,7 @@ _description: Learn how to configure Excel filtering in {Platform} {ComponentTit
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # Excel Filtering in {Platform} {ComponentTitle}
@@ -515,7 +516,7 @@ By default, the {ComponentTitle} component filters the data based on the origina
            github-src="{ComponentSample}/filtering-strategy" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -707,10 +708,10 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
->[!NOTE]
+> [!Note]
 >We scope most of the components' mixins within `.igx-excel-filter` and `.igx-excel-filter__secondary`, so that these custom themes will affect only components nested in the excel style filtering dialog and all of its sub-dialogs. Otherwise other buttons, checkboxes, input-groups and lists would be affected too.
 
->[!NOTE]
+> [!Note]
 >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -783,7 +784,7 @@ $custom-drop-down:drop-down-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -944,7 +945,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            github-src="{ComponentSample}/excel-style-filtering-style" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
@@ -955,7 +956,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)

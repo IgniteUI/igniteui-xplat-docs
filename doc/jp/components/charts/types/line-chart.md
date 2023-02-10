@@ -207,10 +207,10 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ        | コントロール名       | API メンバー
-------------------|--------------------|-----------------------
-折れ線              | `CategoryChart` | `ChartType` = `Line`
-極座標折れ線        | `XamDataChart`     | `PolarLineSeries`
-ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries`
-積層型折れ線      | `XamDataChart`     | `StackedLineSeries`
-積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries`
+| チャート タイプ        | コントロール名       | API メンバー |
+| ------------------|--------------------|----------------------- |
+| 折れ線              | `CategoryChart` | `ChartType` = `Line` |
+| 極座標折れ線        | `XamDataChart`     | `PolarLineSeries` |
+| ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries` |
+| 積層型折れ線      | `XamDataChart`     | `StackedLineSeries` |
+| 積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries` |

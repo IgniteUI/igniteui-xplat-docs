@@ -4,6 +4,7 @@ _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応�
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} のライブ データ更新
@@ -51,7 +52,7 @@ _language: ja
     this.localService.records.subscribe(x => { this.data = x; });
 ```
 
-データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
+データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](../data-grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
 
 ```Razor
 <IgbDataGrid data="data">
@@ -141,7 +142,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) を使用して、DockSlot および Grid コンポーネントをオンザフライで作成できます。
 
 ### DockManager コンポーネント
-[Dock Manager](../dock-manager.md) WebComponent を利用し、ドケットまたはフローティング パネルを使用して独自の Web ビューを作成します。新しいフローティング パネルを追加するには、右側のアクション ペインを開き、[フローティング ペインの追加] ボタンをクリックします。新しいペインを目的の場所にドラッグアンドドロップします。
+[Dock Manager](../../layouts/dock-manager.md) WebComponent を利用し、ドケットまたはフローティング パネルを使用して独自の Web ビューを作成します。新しいフローティング パネルを追加するには、右側のアクション ペインを開き、[フローティング ペインの追加] ボタンをクリックします。新しいペインを目的の場所にドラッグアンドドロップします。
 
 ## API リファレンス
 * `{ComponentName}`

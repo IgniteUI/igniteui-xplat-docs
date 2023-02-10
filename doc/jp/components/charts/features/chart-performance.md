@@ -155,19 +155,19 @@ this.Chart.excludedProperties = [ "CHN",  "FRN", "GER" ];
 
 次の表に、チャートの各グループで、パフォーマンスが速いものから遅いものの順にチャートのタイプを示します。
 
-チャート グループ     | チャート タイプ
-----------------|---------------------------------
-円チャート       | - [円チャート](../types/pie-chart.md) <br> - [ドーナツ チャート](../types/donut-chart.md) <br> - [ラジアル円チャート](../types/radial-chart.md#{Platform}-ラジアル円チャート) <br>
-折れ線チャート      | - [カテゴリ折れ線チャート](../types/line-chart.md#{Platform}-カテゴリ折れ線チャート) <br> - [カテゴリ スプライン チャート](../types/spline-chart.md#{Platform}-カテゴリ-スプライン-チャート) <br> - [ステップ折れ線チャート](../types/step-chart.md#{Platform}-ステップ折れ線チャート) <br> - [ラジアル折れ線チャート](../types/radial-chart.md#{Platform}-ラジアル折れ線チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#{Platform}-極座標型折れ線チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#{Platform}-散布折れ線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#{Platform}-散布ポリライン-チャート) (\*)  <br> - [散布等高線チャート](../types/scatter-chart.md#{Platform}-散布等高線チャート) <br> - [積層型折れ線チャート](../types/stacked-chart.md#{Platform}-積層型折れ線チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#{Platform}-積層型-100-折れ線チャート) <br>
-エリア チャート      | - [カテゴリ エリア チャート](../types/area-chart.md#{Platform}-エリア-チャートの例) <br> - [ステップ エリア チャート](../types/step-chart.md#{Platform}-ステップ-エリア-チャート) <br> - [範囲エリア チャート](../types/area-chart.md#{Platform}-範囲エリア-チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#{Platform}-ラジアル-エリア-チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#{Platform}-極座標エリア-チャート) <br> - [散布ポリゴン チャート](../types/shape-chart.md#{Platform}-散布ポリゴン-チャート) (\*) <br> - [散布エリア チャート](../types/scatter-chart.md#{Platform}-散布エリア-チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#{Platform}-積層型エリア-チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#{Platform}-積層型-100-エリア-チャート) <br>
-縦棒チャート    | - [縦棒チャート](../types/column-chart.md#{Platform}-縦棒チャートの例) <br> - [棒チャート](../types/bar-chart.md#{Platform}-棒チャートの例) <br> - [ウォーターフォール チャート](../types/column-chart.md#{Platform}-ウォーターフォール-チャート) <br> - [範囲縦棒チャート](../types/column-chart.md#{Platform}-範囲縦棒チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#{Platform}-ラジアル縦棒チャート) <br> - [積層型縦棒チャート](../types/stacked-chart.md#{Platform}-積層型縦棒チャート) <br> - [積層型棒チャート](../types/stacked-chart.md#{Platform}-積層型棒チャート) <br> - [積層型 100% 縦棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-縦棒チャート) <br> - [積層型 100% 棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-棒チャート)
-スプライン チャート    | - [カテゴリ スプライン チャート](../types/spline-chart.md#{Platform}-スプライン-チャートの例) <br> - [極座標スプライン チャート](../types/polar-chart.md#{Platform}-極座標スプラインーチャート) <br> - [散布スプライン チャート](../types/scatter-chart.md#{Platform}-散布スプライン-チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#{Platform}-積層型スプライン-チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#{Platform}-積層型-100-スプライン-チャート) <br>
-ポイント チャート     | - [カテゴリ ポイント チャート](../types/point-chart.md) <br> - [散布高密度チャート](../types/scatter-chart.md#{Platform}-散布高密度チャート)  <br> - [散布マーカー チャート](../types/scatter-chart.md#{Platform}-散布マーカー-チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [極座標型マーカーチャート](../types/polar-chart.md#{Platform}-極座標型マーカー-チャート) <br>
-ファイナンシャル チャート | - [折れ線モードの株価チャート](../types/stock-chart.md) <br> - [縦棒モードの株価チャート](../types/stock-chart.md) <br> - [棒モードの株価チャート](../types/stock-chart.md) <br> - [ローソク足モードの株価チャート](../types/stock-chart.md) <br> - [オーバーレイ付き株価チャート](../types/stock-chart.md) <br> - [ズーム ペイン付き株価チャート](../types/stock-chart.md#ズーム-ペイン) <br> - [ボリューム ペイン付き株価チャート](../types/stock-chart.md#ボリューム-ペイン) <br> - [インジケーター ペイン付き株価チャート](../types/stock-chart.md#インジケーター-ペイン) <br>
-散布図   | - [散布高密度チャート](../types/scatter-chart.md#{Platform}-散布高密度チャート) <br> - [散布マーカー チャート](../types/scatter-chart.md#{Platform}-散布マーカー-チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#{Platform}-散布折れ線チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [散布スプライン チャート](../types/scatter-chart.md#{Platform}-散布スプライン-チャート) <br> - [散布エリア チャート](../types/scatter-chart.md#{Platform}-散布エリア-チャート) <br> - [散布等高線チャート](../types/scatter-chart.md#{Platform}-散布等高線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#{Platform}-散布ポリライン-チャート) (\*) <br> - [散布ポリゴン チャート](../types/shape-chart.md#{Platform}-散布ポリゴン-チャート) (\*) <br>
-ラジアル チャート    | - [ラジアル折れ線チャート](../types/radial-chart.md#{Platform}-ラジアル折れ線チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#{Platform}-ラジアル-エリア-チャート) <br> - [ラジアル円チャート](../types/radial-chart.md#{Platform}-ラジアル円チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#{Platform}-ラジアル縦棒チャート) <br>
-極座標チャート     | - [極座標型マーカー チャート](../types/polar-chart.md#{Platform}-極座標型マーカー-チャート) <br> - [極座標型折れ線チャート](../types/polar-chart.md#{Platform}-極座標型折れ線チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#{Platform}-極座標エリア-チャート) <br> - [極座標スプライン チャート](../types/polar-chart.md#{Platform}-極座標スプライン-チャート) <br> - [極座標スプライン エリア チャート](../types/polar-chart.md#{Platform}-極座標スプライン-エリア-チャート) <br>
-積層型チャート   | - [積層型折れ線チャート](../types/stacked-chart.md#{Platform}-積層型折れ線チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#{Platform}-積層型エリア-チャート) <br> - [積層型縦棒チャート](../types/stacked-chart.md#{Platform}-積層型縦棒チャート) <br> - [積層型棒チャート](../types/stacked-chart.md#{Platform}-積層型棒チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#{Platform}-積層型スプライン-チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#{Platform}-積層型-100-折れ線チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#{Platform}-積層型-100-エリア-チャート) <br> - [積層型 100% 縦棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-縦棒チャート) <br> - [積層型 100% 棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-棒チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#{Platform}-積層型-100-スプライン-チャート) <br>
+| チャート グループ     | チャート タイプ |
+| ----------------|--------------------------------- |
+| 円チャート       | - [円チャート](../types/pie-chart.md) <br> - [ドーナツ チャート](../types/donut-chart.md) <br> - [ラジアル円チャート](../types/radial-chart.md#{Platform}-ラジアル円チャート) <br> |
+| 折れ線チャート      | - [カテゴリ折れ線チャート](../types/line-chart.md#{Platform}-カテゴリ折れ線チャート) <br> - [カテゴリ スプライン チャート](../types/spline-chart.md#{Platform}-カテゴリ-スプライン-チャート) <br> - [ステップ折れ線チャート](../types/step-chart.md#{Platform}-ステップ折れ線チャート) <br> - [ラジアル折れ線チャート](../types/radial-chart.md#{Platform}-ラジアル折れ線チャート) <br> - [極座標折れ線チャート](../types/polar-chart.md#{Platform}-極座標型折れ線チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#{Platform}-散布折れ線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#{Platform}-散布ポリライン-チャート) (\*)  <br> - [散布等高線チャート](../types/scatter-chart.md#{Platform}-散布等高線チャート) <br> - [積層型折れ線チャート](../types/stacked-chart.md#{Platform}-積層型折れ線チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#{Platform}-積層型-100-折れ線チャート) <br> |
+| エリア チャート      | - [カテゴリ エリア チャート](../types/area-chart.md#{Platform}-エリア-チャートの例) <br> - [ステップ エリア チャート](../types/step-chart.md#{Platform}-ステップ-エリア-チャート) <br> - [範囲エリア チャート](../types/area-chart.md#{Platform}-範囲エリア-チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#{Platform}-ラジアル-エリア-チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#{Platform}-極座標エリア-チャート) <br> - [散布ポリゴン チャート](../types/shape-chart.md#{Platform}-散布ポリゴン-チャート) (\*) <br> - [散布エリア チャート](../types/scatter-chart.md#{Platform}-散布エリア-チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#{Platform}-積層型エリア-チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#{Platform}-積層型-100-エリア-チャート) <br> |
+| 縦棒チャート    | - [縦棒チャート](../types/column-chart.md#{Platform}-縦棒チャートの例) <br> - [棒チャート](../types/bar-chart.md#{Platform}-棒チャートの例) <br> - [ウォーターフォール チャート](../types/column-chart.md#{Platform}-ウォーターフォール-チャート) <br> - [範囲縦棒チャート](../types/column-chart.md#{Platform}-範囲縦棒チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#{Platform}-ラジアル縦棒チャート) <br> - [積層型縦棒チャート](../types/stacked-chart.md#{Platform}-積層型縦棒チャート) <br> - [積層型棒チャート](../types/stacked-chart.md#{Platform}-積層型棒チャート) <br> - [積層型 100% 縦棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-縦棒チャート) <br> - [積層型 100% 棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-棒チャート) |
+| スプライン チャート    | - [カテゴリ スプライン チャート](../types/spline-chart.md#{Platform}-スプライン-チャートの例) <br> - [極座標スプライン チャート](../types/polar-chart.md#{Platform}-極座標スプラインーチャート) <br> - [散布スプライン チャート](../types/scatter-chart.md#{Platform}-散布スプライン-チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#{Platform}-積層型スプライン-チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#{Platform}-積層型-100-スプライン-チャート) <br> |
+| ポイント チャート     | - [カテゴリ ポイント チャート](../types/point-chart.md) <br> - [散布高密度チャート](../types/scatter-chart.md#{Platform}-散布高密度チャート)  <br> - [散布マーカー チャート](../types/scatter-chart.md#{Platform}-散布マーカー-チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [極座標型マーカーチャート](../types/polar-chart.md#{Platform}-極座標型マーカー-チャート) <br> |
+| ファイナンシャル チャート | - [折れ線モードの株価チャート](../types/stock-chart.md) <br> - [縦棒モードの株価チャート](../types/stock-chart.md) <br> - [棒モードの株価チャート](../types/stock-chart.md) <br> - [ローソク足モードの株価チャート](../types/stock-chart.md) <br> - [オーバーレイ付き株価チャート](../types/stock-chart.md) <br> - [ズーム ペイン付き株価チャート](../types/stock-chart.md#ズーム-ペイン) <br> - [ボリューム ペイン付き株価チャート](../types/stock-chart.md#ボリューム-ペイン) <br> - [インジケーター ペイン付き株価チャート](../types/stock-chart.md#インジケーター-ペイン) <br> |
+| 散布図   | - [散布高密度チャート](../types/scatter-chart.md#{Platform}-散布高密度チャート) <br> - [散布マーカー チャート](../types/scatter-chart.md#{Platform}-散布マーカー-チャート) <br> - [散布折れ線チャート](../types/scatter-chart.md#{Platform}-散布折れ線チャート) <br> - [散布バブル チャート](../types/bubble-chart.md) <br> - [散布スプライン チャート](../types/scatter-chart.md#{Platform}-散布スプライン-チャート) <br> - [散布エリア チャート](../types/scatter-chart.md#{Platform}-散布エリア-チャート) <br> - [散布等高線チャート](../types/scatter-chart.md#{Platform}-散布等高線チャート) <br> - [散布ポリライン チャート](../types/shape-chart.md#{Platform}-散布ポリライン-チャート) (\*) <br> - [散布ポリゴン チャート](../types/shape-chart.md#{Platform}-散布ポリゴン-チャート) (\*) <br> |
+| ラジアル チャート    | - [ラジアル折れ線チャート](../types/radial-chart.md#{Platform}-ラジアル折れ線チャート) <br> - [ラジアル エリア チャート](../types/radial-chart.md#{Platform}-ラジアル-エリア-チャート) <br> - [ラジアル円チャート](../types/radial-chart.md#{Platform}-ラジアル円チャート) <br> - [ラジアル縦棒チャート](../types/radial-chart.md#{Platform}-ラジアル縦棒チャート) <br> |
+| 極座標チャート     | - [極座標型マーカー チャート](../types/polar-chart.md#{Platform}-極座標型マーカー-チャート) <br> - [極座標型折れ線チャート](../types/polar-chart.md#{Platform}-極座標型折れ線チャート) <br> - [極座標エリア チャート](../types/polar-chart.md#{Platform}-極座標エリア-チャート) <br> - [極座標スプライン チャート](../types/polar-chart.md#{Platform}-極座標スプライン-チャート) <br> - [極座標スプライン エリア チャート](../types/polar-chart.md#{Platform}-極座標スプライン-エリア-チャート) <br> |
+| 積層型チャート   | - [積層型折れ線チャート](../types/stacked-chart.md#{Platform}-積層型折れ線チャート) <br> - [積層型エリア チャート](../types/stacked-chart.md#{Platform}-積層型エリア-チャート) <br> - [積層型縦棒チャート](../types/stacked-chart.md#{Platform}-積層型縦棒チャート) <br> - [積層型棒チャート](../types/stacked-chart.md#{Platform}-積層型棒チャート) <br> - [積層型スプライン チャート](../types/stacked-chart.md#{Platform}-積層型スプライン-チャート) <br> - [積層型 100% 折れ線チャート](../types/stacked-chart.md#{Platform}-積層型-100-折れ線チャート) <br> - [積層型 100% エリア チャート](../types/stacked-chart.md#{Platform}-積層型-100-エリア-チャート) <br> - [積層型 100% 縦棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-縦棒チャート) <br> - [積層型 100% 棒チャート](../types/stacked-chart.md#{Platform}-積層型-100-棒チャート) <br> - [積層型 100% スプライン チャート](../types/stacked-chart.md#{Platform}-積層型-100-スプライン-チャート) <br> |
 
 
 \* チャートに多数のデータ ソースがバインドされている場合、[散布ポリゴン チャート](../types/shape-chart.md)と[散布ポリライン チャート](../types/shape-chart.md)のパフォーマンスは他のチャートよりも優れていることに注意してください。詳細については、[シリーズ コレクション](#シリーズ-コレクション)セクションを参照してください。それ以外の場合は、他のチャートのタイプの方が高速です。
@@ -249,7 +249,8 @@ this.LineSeries.Resolution = 10;
 
 データ ポイント間の時間間隔に基づくスペースが重要でない場合は、DateTime をサポートする x 軸の使用はお勧めしません。代わりに、順序/カテゴリ軸を使用する必要があります。これは、データを結合する方法がより効率的であるためです。また、順序/カテゴリ軸は、時間ベースの x 軸のようにデータのソートを実行しません。
 
-> 注: `CategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
+> [!Note]
+> `CategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
 
 このコード スニペットは、`FinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
 
@@ -289,6 +290,7 @@ this.LineSeries.Resolution = 10;
 
 デフォルトでは、{Platform} チャートは、データの範囲に基づいて `YAxisInterval` を自動的に計算します。したがって、軸のグリッド線と軸のラベルが多すぎないように、軸の間隔を特に小さい値に設定することは避けてください。また、多くの軸グリッド線または軸ラベルが必要ない場合は、`YAxisInterval` プロパティを自動的に計算された軸間隔よりも大きい値に増やすことを検討することをお勧めします。
 
+> [!Note]
 > チャートのパフォーマンスが低下するため、軸の副間隔を設定することはお勧めしません。
 
 このコード スニペットは、{Platform} チャートで軸の主間隔を設定する方法を示しています。
@@ -503,28 +505,28 @@ this.LineSeries.Resolution = 10;
 
 たとえば、`CategoryChart` または `FinancialChart` コントロールでこれらのプロパティを変更します。
 
-軸ビジュアル          | X 軸プロパティ | Y 軸プロパティ
----------------------|-------------------|-------------------
-すべての軸ビジュアル      | `XAxisInterval`<br>  `XAxisMinorInterval` | `YAxisInterval`<br>  `YAxisMinorInterval`
-軸目盛       | `XAxisTickStroke` <br>  `XAxisTickStrokeThickness`<br>  `XAxisTickLength`<br>  | `YAxisTickStroke` <br>  `YAxisTickStrokeThickness`<br>  `YAxisTickLength`<br>
-軸主グリッド線 | `XAxisMajorStroke`<br>  `XAxisMajorStrokeThickness`<br>   | `YAxisMajorStroke`<br>  `YAxisMajorStrokeThickness`<br>
-軸の副グリッド線 | `XAxisMinorStroke`<br>  `XAxisMinorStrokeThickness`<br>   | `YAxisMinorStroke`<br>  `YAxisMinorStrokeThickness`<br>
-軸主線       | `XAxisStroke`<br>  `XAxisStrokeThickness`<br>   | `YAxisStroke`<br>  `YAxisStrokeThickness`<br>
-軸タイトル          | `XAxisTitle`<br>  `XAxisTitleAngle`<br>    | `YAxisTitle`<br>  `YAxisTitleAngle`<br>
-軸ストリップ          | `XAxisStrip`<br>   | `YAxisStrip`<br>
+| 軸ビジュアル          | X 軸プロパティ | Y 軸プロパティ |
+| ---------------------|-------------------|------------------- |
+| すべての軸ビジュアル      | `XAxisInterval`<br>  `XAxisMinorInterval` | `YAxisInterval`<br>  `YAxisMinorInterval` |
+| 軸目盛       | `XAxisTickStroke` <br>  `XAxisTickStrokeThickness`<br>  `XAxisTickLength`<br>  | `YAxisTickStroke` <br>  `YAxisTickStrokeThickness`<br>  `YAxisTickLength`<br> |
+| 軸主グリッド線 | `XAxisMajorStroke`<br>  `XAxisMajorStrokeThickness`<br>   | `YAxisMajorStroke`<br>  `YAxisMajorStrokeThickness`<br> |
+| 軸の副グリッド線 | `XAxisMinorStroke`<br>  `XAxisMinorStrokeThickness`<br>   | `YAxisMinorStroke`<br>  `YAxisMinorStrokeThickness`<br> |
+| 軸主線       | `XAxisStroke`<br>  `XAxisStrokeThickness`<br>   | `YAxisStroke`<br>  `YAxisStrokeThickness`<br> |
+| 軸タイトル          | `XAxisTitle`<br>  `XAxisTitleAngle`<br>    | `YAxisTitle`<br>  `YAxisTitleAngle`<br> |
+| 軸ストリップ          | `XAxisStrip`<br>   | `YAxisStrip`<br> |
 
 
 または、`XamDataChart` コントロールの `Axis` のプロパティを変更します。
 
-軸ビジュアル          | 軸プロパティ
----------------------|-------------------
-すべての軸ビジュアル     | `Interval`、`MinorInterval`
-軸目盛       | `TickStroke` 、`TickStrokeThickness`、`TickLength`
-軸主グリッド線 | `MajorStroke`、`MajorStrokeThickness`
-軸の副グリッド線 | `MinorStroke`、`MinorStrokeThickness`
-軸主線       | `Stroke`、`StrokeThickness`
-軸タイトル          | `Title`、`TitleAngle`
-軸ストリップ         | `Strip`
+| 軸ビジュアル          | 軸プロパティ |
+| ---------------------|------------------- |
+| すべての軸ビジュアル     | `Interval`、`MinorInterval` |
+| 軸目盛       | `TickStroke` 、`TickStrokeThickness`、`TickLength` |
+| 軸主グリッド線 | `MajorStroke`、`MajorStrokeThickness` |
+| 軸の副グリッド線 | `MinorStroke`、`MinorStrokeThickness` |
+| 軸主線       | `Stroke`、`StrokeThickness` |
+| 軸タイトル          | `Title`、`TitleAngle` |
+| 軸ストリップ         | `Strip` |
 
 ## ファイナンシャル チャートのパフォーマンス
 
@@ -563,16 +565,16 @@ this.LineSeries.Resolution = 10;
 
 また、{Platform} `XamDataChart` コントロールの `Series` コレクションに多くのシリーズを追加すると、各シリーズに独自の描画キャンバスがあるため、描画にオーバーヘッドが追加されます。これは、データ チャートに 10 を超えるシリーズがある場合に特に重要です。複数のデータ ソースを組み合わせてフラット化したデータ ソースにし ([データ構造](#データ構造)セクションを参照)、次のシリーズの条件付き書式設定機能を使用することをお勧めします。
 
-パフォーマンスが低下するシナリオ | 条件付き書式設定を使用したより高速なシナリオ
-----------------------------|----------------------------------------
-`LineSeries` の 10 以上        | 単一の `ScatterLineSeries`
-`LineSeries` の 20 以上           | 単一の `ScatterPolylineSeries`
-`ScatterLineSeries` の 10 以上  | 単一の `ScatterPolylineSeries`
-`PointSeries` の 10 以上       | 単一の `ScatterSeries`
-`PointSeries` の 20 以上       | 単一の `HighDensityScatterSeries`
-`ScatterSeries` の 20 以上     | 単一の `HighDensityScatterSeries`
-`AreaSeries` の 10 以上        | 単一の `ScatterPolygonSeries`
-`ColumnSeries` の 10 以上      | 単一の `ScatterPolygonSeries`
+| パフォーマンスが低下するシナリオ | 条件付き書式設定を使用したより高速なシナリオ |
+| ----------------------------|---------------------------------------- |
+| `LineSeries` の 10 以上        | 単一の `ScatterLineSeries` |
+| `LineSeries` の 20 以上           | 単一の `ScatterPolylineSeries` |
+| `ScatterLineSeries` の 10 以上  | 単一の `ScatterPolylineSeries` |
+| `PointSeries` の 10 以上       | 単一の `ScatterSeries` |
+| `PointSeries` の 20 以上       | 単一の `HighDensityScatterSeries` |
+| `ScatterSeries` の 20 以上     | 単一の `HighDensityScatterSeries` |
+| `AreaSeries` の 10 以上        | 単一の `ScatterPolygonSeries` |
+| `ColumnSeries` の 10 以上      | 単一の `ScatterPolygonSeries` |
 
 
 ## その他のリソース

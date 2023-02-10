@@ -86,10 +86,10 @@ The Calendar component allows you to switch between three different views: days,
 
 By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to **false**. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
 
-> [!NOTE]
+> [!Note]
 > Please note that the Calendar header is not rendered when the selection is `multiple`.
 
-> [!NOTE]
+> [!Note]
 > Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `HeaderOrientation` property corresponds to the `header-orientation` attribute.
 
 The {ProductName} Calendar component exposes a `title` slot which allows you to customize the title of the header.

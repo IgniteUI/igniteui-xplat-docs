@@ -3,6 +3,7 @@ title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
 _description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Live Data Updates
@@ -50,7 +51,7 @@ A service provides data to the component when the page loads, and when the slide
     this.localService.records.subscribe(x => { this.data = x; });
 ```
 
-A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
 
 ```Razor
 <IgbDataGrid data="data">
@@ -140,7 +141,7 @@ this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll
 By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) we are able to create DockSlot and Grid components on the fly.
 
 ### DockManager component
-Take leverage of the [Dock Manager](../dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
+Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
 
 ## API References
 * `{ComponentName}`

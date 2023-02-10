@@ -4,6 +4,7 @@ _description: Let users identify different cells quickly. Define a variety of ce
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Conditional Styling
@@ -767,7 +768,6 @@ constructor() {
 ## Additional Resources
 
 
-* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)

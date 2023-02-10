@@ -4,6 +4,7 @@ _description: Easily save and restore the grid state, using our comprehensive Ig
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} State Persistence
@@ -557,7 +558,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -567,7 +568,7 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
-* [{ComponentTitle} overview](overview.md)
+
 * [Pivot Grid Features](features.md)
 <!-- * [Pivot Grid Remote Operations](remote-operations.md) -->
 

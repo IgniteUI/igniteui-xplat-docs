@@ -133,7 +133,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > Excel ライブラリ は Excel Binary Workbook (.xlsb) フォーマットを現時点ではサポートしていません。
 
 ## ワークブックの読み込みと保存
@@ -177,7 +177,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >

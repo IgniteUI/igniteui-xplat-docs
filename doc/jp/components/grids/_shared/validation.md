@@ -4,6 +4,7 @@ _description: グリッドでユーザーの入力を検証し、{Platform} {Com
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 編集と検証
@@ -117,7 +118,8 @@ _language: ja
 - `UpdateRow`、`UpdateCell` などの API を使用してセル / 行を更新する場合 。
 - トランザクション サービスの一括編集および `Undo`/`Redo` API を使用する場合。
 
-> 注: ユーザー入力または編集 API で編集されていないレコードに対しては、検証はトリガーされません。セルの視覚的なインジケーターは、ユーザー操作または検証サービスの `MarkAsTouched` API を介して入力がタッチ済みと見なされる場合のみ表示されます。
+> [!Note]
+> ユーザー入力または編集 API で編集されていないレコードに対しては、検証はトリガーされません。セルの視覚的なインジケーターは、ユーザー操作または検証サービスの `MarkAsTouched` API を介して入力がタッチ済みと見なされる場合のみ表示されます。
 
 <!-- Angular -->
 
@@ -671,7 +673,7 @@ public cellStyles = {
 <!-- Angular -->
 
 * [igxGrid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
@@ -681,7 +683,7 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)

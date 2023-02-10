@@ -3,6 +3,7 @@ title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Editing and Validation
@@ -116,7 +117,8 @@ Validation will be triggered in the following scenarios:
 - When updating cells/rows via the API - `UpdateRow`, `UpdateCell`, etc.
 - When using batch editing and the `Undo`/`Redo` API of the transaction service.
 
-> Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
+> [!Note]
+> Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
 
 <!-- Angular -->
 
@@ -670,7 +672,7 @@ public cellStyles = {
 <!-- Angular -->
 
 * [Build CRUD operations with igxGrid](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
@@ -680,7 +682,7 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)

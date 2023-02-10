@@ -4,6 +4,7 @@ _description: The {ComponentTitle} is using in-cell editing. It has a default ce
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Cell Editing
@@ -21,7 +22,7 @@ In addition, you can define your own custom templates for update-data actions an
            alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
@@ -45,7 +46,7 @@ You can exit edit mode and **commit** the changes in one of the following ways:
  - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
  - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
-> [!NOTE]
+> [!Note]
 > The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.
 
 ### Editing through API
@@ -196,19 +197,19 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
 
-> [!NOTE]
+> [!Note]
 > The cell template `Cell` controls how a column's cells are shown when outside of edit mode.
 > The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
 
-> [!NOTE]
+> [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- Angular -->
 
-For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration).
+<!-- For more information on how to configure columns and their templates, you can see the documentation for [Grid Columns configuration](../grid/grid.md#angular-grid-column-configuration). -->
 
 <!-- end: Angular -->
 
@@ -300,7 +301,7 @@ Main benefits of the above approach include:
 
 ## CRUD operations
 
-> [!NOTE]
+> [!Note]
 > Please keep in mind that when you perform some **CRUD operation** all of the applied pipes like **filtering**, **sorting** and **grouping** will be re-applied and your view will be automatically updated.
 
 The `{ComponentName}` provides a straightforward API for basic CRUD operations.
@@ -640,9 +641,9 @@ In order for the custom theme to affect only our specific component, we can move
 
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 
 ```scss
@@ -665,7 +666,7 @@ In addition to the steps above, we can also style the controls that are used for
            alt="{Platform} {ComponentTitle} Editing Style Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
@@ -692,7 +693,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 * [Build CRUD operations with the Grid](../general/how-to/how-to-perform-crud.md)
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -709,7 +710,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

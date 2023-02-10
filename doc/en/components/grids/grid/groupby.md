@@ -90,7 +90,8 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> [!Note]
+> Up until now, grouping/sorting worked in conjunction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
@@ -262,7 +263,7 @@ The grouping UI supports the following keyboard interactions:
 
 Grid allows defining custom grouping per column or per grouping expression, which provides grouping based on a custom condition. This is useful when you need to group by complex objects or for other application specific scenarios.
 
-> [!NOTE]
+> [!Note]
 > In order to implement custom grouping the data first needs to be sorted appropriately. Due to this you may also need to apply a custom sorting strategy that extends the base `DefaultSortingStrategy`. After the data is sorted the custom groups can be determined by specifying a `GroupingComparer` for the column or for the specific grouping expression.
 
 The sample below demonstrates custom grouping by `Date`, where the date values are sorted and grouped by Day, Week, Month or Year based on user-selected grouping mode.
@@ -482,9 +483,9 @@ In order for the custom theme to affect only specific component, you can move al
 
 This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
@@ -507,7 +508,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
            github-src="{GridSample}/groupby-styling">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->
@@ -529,7 +530,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## Additional Resources
 
-* [Grid overview](grid.md)
+* [Grid overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

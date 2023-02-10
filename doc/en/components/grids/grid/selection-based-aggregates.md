@@ -30,7 +30,7 @@ const boolData = data.filter(rec => typeof rec === "boolean");
 const dates = data.filter(rec => isDate(rec));
 ```
 
-> [!NOTE]
+> [!Note]
 > Bear in mind, that `isDate` is a custom function.
 
 After having the data types grouped accordingly, you can proceed to the aggregation itself. For that reason, you could use the already exposed methods of the `NumberSummaryOperand` and `DateSummaryOperand`.
@@ -60,7 +60,7 @@ Change the selection to see summaries of the currently selected range.
 ## Additional Resources
 <div class="divider--half"></div>
 
-* [Grid overview](grid.md)
+* [Grid overview](../data-grid.md)
 * [Selection Service]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)

@@ -4,6 +4,7 @@ _description: Learn how to use the Column Hiding feature that allows users to ch
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Hiding
@@ -394,10 +395,10 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
->[!NOTE]
+> [!Note]
 >We scope the **igx-button** mixin within `.igx-column-actions`, so that only the column hiding buttons would be styled. Otherwise other buttons in the grid would be affected too.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an `Emulated`ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -440,7 +441,7 @@ $custom-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes](themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -551,7 +552,7 @@ Styles:
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)

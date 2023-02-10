@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 行の選択
@@ -495,7 +496,7 @@ public rowSelectorTemplate = (ctx: IgcRowSelectorTemplateContext) => {
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 `rowContext.select()` および `rowContext.deselect()` メソッドは、`{ComponentSelector}` のテンプレート コンテキストで公開されます。基本機能をオーバーライドするクリック ハンドラーを実装した場合、特に子グリッドで現在の行を簡単に切り替えることができます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -569,7 +570,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 `{ComponentSelector}` の各階層レベルには、独自の行とヘッダーのテンプレートを設定できます。
 
-> [!NOTE]
+> [!Note]
 `headContext.selectAll()` および `headContext.deselectAll()` メソッドは、`{ComponentSelector}` のテンプレート コンテキストで公開されます。基本機能をオーバーライドするクリック ハンドラーを実装した場合、特に子グリッドで現在の行を簡単に切り替えることができます。
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -625,7 +626,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)

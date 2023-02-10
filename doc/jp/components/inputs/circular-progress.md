@@ -157,7 +157,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
            github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >{ProductName} `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
 
 ```tsx

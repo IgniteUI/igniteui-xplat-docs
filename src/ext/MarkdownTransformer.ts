@@ -1,7 +1,6 @@
-import { MappingLoader, APIPlatform, APIMapping } from './MappingLoader';
+import { MappingLoader, APIPlatform } from './MappingLoader';
 import { PlatformDetector, PlatformDetectorRule, FencedBlockInfo } from './PlatformDetector';
 import { JsonEx } from './JsonEx';
-import { inherits } from 'util';
 import { ComponentDetector } from './ComponentDetector';
 
 let remark = require(`remark`);
@@ -12,7 +11,6 @@ let visit = require('unist-util-visit');
 let jsyaml = require('js-yaml');
 let fs = require('fs');
 
-let docsConfig = require("../../docConfig.json");
 let docsComponents = require("../../docComponents.json");
 
 // this array defines blazor namespaces mapped to API members
@@ -987,6 +985,41 @@ function componentsEqual(components: string[], otherComponents: string[]): boole
     return true;
 }
 
+function transformSamples(options: any) {
+    function transformSection(node: any, index: number, parent: any) {
+
+        // {
+        //     type: 'html',
+        //     value: '<code-view style="height: 480px"\r\n' +
+        //       '        data-demos-base-url="https://localhost:44317/blazor-client"\r\n' +
+        //       '        iframe-src="https://localhost:44317/blazor-client/scheduling/calendar-overview"\r\n' +
+        //       '        alt="{Platform} Calendar Example"\r\n' +
+        //       '        github-src="scheduling/calendar/overview">',
+        //     position: {
+        //       start: { line: 24, column: 1, offset: 1385 },
+        //       end: { line: 28, column: 54, offset: 1682 }
+        //     }
+        //   }
+        if (node.lang === "json" && node.value.indexOf('"sample":') >= 0) {
+            // console.log(node);
+            var height = 100;
+            var str = '<code-view style="height: ' + height + 'px" \n';
+            str += '   alt="{Platform} Calendar Example" \n';
+            str += '   iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview" \n';
+            str += '   github-src="scheduling/calendar/overview" \n';
+            str += '</code-view> \n';
+            // node.value = str;
+            // node.lang = "text";
+        }
+        console.log(node);
+    }
+
+    return function (tree: any) {
+        visit(tree, 'html', transformSection)
+        // visit(tree, 'code', transformSection)
+    }
+}
+
 function omitPlatformSpecificSections(options: any) {
     function omitSections(node: any, index: number, parent: any) {
 
@@ -1526,6 +1559,7 @@ export class MarkdownTransformer {
             })
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
+            // .use(transformSamples, options)
             .use(transformDocPlaceholders, options, false) // keeping vars in metadata
             // .use(transformDocPlaceholders, options, true) // removing vars in metadata
             .use(getFrontMatterTypes, options, filePath)

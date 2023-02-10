@@ -42,13 +42,13 @@ Navigation in the {Platform} data chart can happen with either touch, the mouse 
 
 The zoom and pan operations can also be enabled by using modifier keys by setting the `DragModifier` and `PanModifier` properties, respectively. These properties can be set to the following modifier keys, and when pressed, the corresponding operation will be executed:
 
-Modifier Value | Corresponding Key
----------------|------------------
-`Shift`        | <kbd>Shift</kbd>
-`Control`      | <kbd>Ctrl</kbd>
-`Windows`      | <kbd>Win</kbd>
-`Apple`        | <kbd>Apple</kbd>
-`None`         | no keys
+| Modifier Value | Corresponding Key |
+| ---------------|------------------ |
+| `Shift`        | <kbd>Shift</kbd> |
+| `Control`      | <kbd>Ctrl</kbd> |
+| `Windows`      | <kbd>Win</kbd> |
+| `Apple`        | <kbd>Apple</kbd> |
+| `None`         | no keys |
 
 ## Chart Navigation with Scrollbars
 
@@ -74,7 +74,7 @@ The following example demonstrates enabling scrollbars.
 
 ## Chart Navigation through Code
 
-> [!NOTE]
+> [!Note]
 > Code navigation of the chart can only be used for the `XamDataChart` control.
 
 The {Platform} data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:

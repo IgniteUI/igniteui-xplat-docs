@@ -4,6 +4,7 @@ _description: Learn how to apply display density capabilities to the {ComponentT
 _keywords:  material density, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Display Density
@@ -59,7 +60,8 @@ And now let's see in details how each option reflects on the `{ComponentName}` c
  - **cosy** - this is the middle intense density with `40px` row height. Left and Right paddings are `16px`; Minimal column `Width` is `64px`;
  - **compact** - this is the density with highest intense and `32px` row height. Left and Right paddings are `12px`; Minimal column `Width` is `56px`;
 
->[!NOTE] Please keep in mind that currently you **can not** override any of the sizes.
+> [!Note]
+> Please keep in mind that currently you **can not** override any of the sizes.
 
 Let's now continue with our sample and see in action how the `DisplayDensity` is applied. Let's first add a button which will help us to switch between each density:
 
@@ -780,7 +782,6 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
 ## Additional Resources
 
-* [Grid Overview](overview.md)
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)

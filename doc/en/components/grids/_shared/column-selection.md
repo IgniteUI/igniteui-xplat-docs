@@ -4,6 +4,7 @@ _description: Learn how to configure column selection with {ProductName} {Compon
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, column selection
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Selection Overview
@@ -47,7 +48,7 @@ The column selection feature can be enabled through the `ColumnSelection` input,
 
 The default selection mode is `None`. If set to `Single` or `Multiple`, all of the presented columns will be `Selectable`. With that being said, in order to select a column, we just need to click on one, which will mark it as `Selected`. If the column is not selectable, no selection style will be applied on the header, while hovering.
 
-> [!NOTE]
+> [!Note]
 > The [Multi Column Headers](multi-column-headers.md) feature does not reflect on the `Selectable` input. The `ColumnGroupComponent` is `Selectable`, if at least one of its children has the selection behavior enabled. In addition, the component is marked as `Selected` if all of its `Selectable` descendants are `Selected`.
 
 <!-- ComponentStart: Grid -->
@@ -75,7 +76,7 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 
 ## Keyboard Combinations
 
-> [!NOTE]
+> [!Note]
 > The keyboard combinations are available only when the grid `ColumnSelection` input is set to `multiple`.
 
 There are two scenarios for keyboard navigation of the **Column Selection** feature:
@@ -86,7 +87,7 @@ There are two scenarios for keyboard navigation of the **Column Selection** feat
 
 The **API** provides some additional capabilities when it comes to the **non-visible** columns such that, every **hidden** column could be marked as `Selected` by setting the corresponding **setter**.
 
-> [!NOTE]
+> [!Note]
 > The above statement also applies to the `ColumnGroupComponent`, except that when the `Selected` property is changed it changes the state of its descendants.
 
 More information regarding the API manipulations could be found in the [API References](#api-references) section.
@@ -108,7 +109,7 @@ Before diving into the styling options, the core module and all component mixins
 TO DO
 ```
 
->[!NOTE]
+> [!Note]
 >Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
@@ -175,7 +176,7 @@ TO DO
 ### Overriding the Base Theme
 In order to style components for Internet Explorer 11, we have to use a different approach, since it doesn't support CSS variables.
 
->[!NOTE]
+> [!Note]
 >If the component is using the [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`. In order to prevent the custom theme from leaking into other components, be sure that you have included the `:host` selector before `::ng-deep`.
 
 ```scss
@@ -200,7 +201,7 @@ TO DO
            github-src="{ComponentSample}/column-selection-styles">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
@@ -234,7 +235,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Selection](selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)

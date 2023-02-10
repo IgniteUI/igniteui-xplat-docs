@@ -136,7 +136,7 @@ However, this doesn't look very clean, so its best to avoid this unless the prec
 If you have some platform specific notes/warnings/etc, do call them out with DocFX style notes:
 
 ```md
-> [!NOTE]
+> [!Note]
 > For Angular:
 > This is an angular specific note.
 ```
@@ -202,7 +202,13 @@ yarn install
 
 > NOTE: Do not use `npm` because you will not be able to run docs locally.
 
-You can host the DocFX locally with this command:
+You can host the DocFX locally with this command *npm* (PS in admin mode required):
+
+```cmd
+npm start
+```
+
+You can host the DocFX locally with this command *yarn*:
 
 ```cmd
 yarn start

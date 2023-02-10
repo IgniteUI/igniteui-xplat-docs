@@ -10,7 +10,7 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-> [!NOTE]
+> [!Note]
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
 > {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
 
@@ -103,9 +103,9 @@ namespace: Infragistics.Controls.Charts
 * チャートの凡例のシリーズの簡略化された図形で、円、線、または四角のみを表示します。これは、チャートの `LegendItemBadgeMode` プロパティを `MatchSeries` 列挙値に設定することで元に戻すことができます。
 * すべてのチャートに表示されるシリーズとマーカーのカラー パレットを変更しました。
 
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 <div class="divider--half"></div>
 
@@ -145,9 +145,9 @@ namespace: Infragistics.Controls.Charts
 * 表示された最初のラベルに基づいてチャートの水平マージンを自動的に拡張するサポートが追加されました。
 * シリーズとマーカーの再設計されたカラー パレット:
 
-古いのブラシ/アウトライン | 新のアウトライン/ブラシ
--------------------- | -------------------
-<span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br>
+| 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
+| -------------------- | ------------------- |
+| <span style="color:#7446B9">#7446B9</span> <br><span style="color:#9FB328">#9FB328</span> <br><span style="color:#F96232">#F96232</span> <br><span style="color:#2E9CA6">#2E9CA6</span> <br><span style="color:#DC3F76">#DC3F76</span> <br><span style="color:#FF9800">#FF9800</span> <br><span style="color:#3F51B5">#3F51B5</span> <br><span style="color:#439C47">#439C47</span> <br><span style="color:#795548">#795548</span> <br><span style="color:#9A9A9A">#9A9A9A</span> | <span style="color:#8bdc5c">#8bdc5c</span> <br><span style="color:#8b5bb1">#8b5bb1</span> <br><span style="color:#6db1ff">#6db1ff</span> <br><span style="color:#f8a15f">#f8a15f</span> <br><span style="color:#ee5879">#ee5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#f7d262">#f7d262</span> <br><span style="color:#8ce7d9">#8ce7d9</span> <br><span style="color:#e051a9">#e051a9</span> <br><span style="color:#a8a8b7">#a8a8b7</span> <br> |
 
 例:
 
@@ -163,7 +163,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
@@ -179,7 +179,7 @@ namespace: Infragistics.Controls.Charts
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 | 影響されるパッケージ | 影響されるコンポーネント |

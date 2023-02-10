@@ -5,6 +5,7 @@ _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 列タイプの概要
@@ -177,7 +178,7 @@ constructor() {
 | India Standard Time       |‘UTC+4’                    |
 
 
-`{ComponentName}` は、**Date オブジェクト**、**数値 (ミリ秒)** または **ISO 日付/時刻文字列**の日付値を受け取ります。このセクションは、[カスタム表示書式を構成する方法](../grid/overview.md#カスタム表示形式)を示します。
+`{ComponentName}` は、**Date オブジェクト**、**数値 (ミリ秒)** または **ISO 日付/時刻文字列**の日付値を受け取ります。このセクションは、[カスタム表示書式を構成する方法](../data-grid.md#カスタム表示形式)を示します。
 
 サンプルでは、特定の列タイプで使用可能な書式を紹介するために、さまざまな書式設定オプションを指定しています。たとえば、以下は日付オブジェクトの *time* 部分の書式設定オプションのサンプルです。
 
@@ -478,7 +479,8 @@ constructor() {
 }
 ```
 
-> 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> [!Note]
+> 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
 
@@ -523,7 +525,7 @@ public init(column: IgxColumnComponent) {
 
 ```html
 <igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">        
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
 </igc-grid>
 ```
@@ -578,6 +580,6 @@ TO DO!
 ## その他のリソース
 
 * カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
-* [{ComponentTitle} 概要](overview.md)
+
 * [編集](editing.md)
 * [集計](summaries.md)

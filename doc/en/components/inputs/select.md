@@ -62,7 +62,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
-> [!NOTE]
+> [!Note]
 > Please note that the select header and group components are not mandatory unless you want to use them.
 
 To start using the component add the `Select` along with a list of `SelectItem`'s to choose from:
@@ -106,7 +106,7 @@ You can use the `SelectHeader` to provide a header for a group of items.
 
 Multiple `SelectItem`s can be placed between the opening and closing brackets of an `SelectGroup` component so that users can visually group them together. The `SelectGroup` can be labelled via its `label` slot and disabled via its `Disabled` property.
 
-> [!NOTE]
+> [!Note]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
 
 <code-view style="height: 480px"
@@ -140,7 +140,7 @@ When the select is focused and the list of options is **visible**:
 - Using the <kbd>Down/Right Arrow</kbd> keys will activate the next item in the list.
 - Using the <kbd>Home</kbd> or <kbd>End</kbd> keys will activate the first or last item in the list.
 
-> [!NOTE]
+> [!Note]
 > The `Select` component supports only **single** selection of items.
 
 <!-- WebComponents -->
@@ -153,29 +153,29 @@ You can change the appearance of the {ProductName} `Select` component and its it
 
 **Select Component**
 
-Part name | Description
----------|------------
-`input` | The encapsulated igc-input.
-`label` | The encapsulated text label.
-`list` | A wrapper that holds the list of options.
-`prefix`  | A prefix wrapper that renders content before the input.
-`suffix` | A suffix wrapper that renders content after the input.
-`toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper.
-`helper-text` | A helper-text wrapper that renders content below the input.
+| Part name | Description |
+| ---------|------------ |
+| `input` | The encapsulated igc-input. |
+| `label` | The encapsulated text label. |
+| `list` | A wrapper that holds the list of options. |
+| `prefix`  | A prefix wrapper that renders content before the input. |
+| `suffix` | A suffix wrapper that renders content after the input. |
+| `toggle-icon` | A toggle-icon wrapper that renders content inside the suffix wrapper. |
+| `helper-text` | A helper-text wrapper that renders content below the input. |
 
 **Select Item Component**
 
-Part name | Description
----------|------------
-`content` | The main wrapper that holds the text content of an item.
-`prefix`  | A prefix wrapper that renders content before the main wrapper.
-`suffix` | A suffix wrapper that renders content after the main wrapper.
+| Part name | Description |
+| ---------|------------ |
+| `content` | The main wrapper that holds the text content of an item. |
+| `prefix`  | A prefix wrapper that renders content before the main wrapper. |
+| `suffix` | A suffix wrapper that renders content after the main wrapper. |
 
 **Select Group Component**
 
-Part name | Description
----------|------------
-`Label` | A label wrapper that renders content above the select group items.
+| Part name | Description |
+| ---------|------------ |
+| `Label` | A label wrapper that renders content above the select group items. |
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

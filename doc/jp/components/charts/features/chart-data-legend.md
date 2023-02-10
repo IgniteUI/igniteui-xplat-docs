@@ -47,15 +47,15 @@ _language: ja
 
 `IncludedColumns` プロパティと `ExcludedColumns` プロパティの値の設定は、シリーズのタイプとそれらがサポートするデータ列の数によって異なります。たとえば、`IncludedColumns` プロパティに **Open** および **Close** の文字列コレクションを設定すると、チャートがファイナンシャル シリーズをプロットしているときに、株価の始値と終値のみが表示されます。次の表に、データ シリーズの列をフィルタリングするために使用できるすべての列名を示します。
 
- シリーズのタイプ  | 列名
------------------|--------------
-カテゴリ シリーズ  | Value
-ラジアル シリーズ    | Value
-極座標シリーズ     | Radius, Angle
-バブル シリーズ    | X、Y、Radius
-散布シリーズ   | X、Y
-範囲シリーズ     | High、Low
-ファイナンシャル シリーズ | High、Low、Open、Close、Change、TypicalPrice、Volume
+| シリーズのタイプ  | 列名 |
+| -----------------|-------------- |
+| カテゴリ シリーズ  | Value |
+| ラジアル シリーズ    | Value |
+| 極座標シリーズ     | Radius, Angle |
+| バブル シリーズ    | X、Y、Radius |
+| 散布シリーズ   | X、Y |
+| 範囲シリーズ     | High、Low |
+| ファイナンシャル シリーズ | High、Low、Open、Close、Change、TypicalPrice、Volume |
 
 OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Change** (変更) は、ファイナンシャル シリーズによって自動的に計算されるため、データ ソースに含める必要はありません。
 
@@ -80,13 +80,13 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 プロパティ名が **MemberAsLegendLabel** および **MemberAsLegendUnit** で終わる、各シリーズのプロパティを使用して、**Label** および **Unit** 列に表示されるテキストをカスタマイズできます。次の表は、**Label** 列と **Unit** 列で可能なカスタマイズをいくつか示しています。
 
- シリーズのタイプ | シリーズのプロパティ
-------|----
-カテゴリ シリーズ | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M"
-ラジアル シリーズ | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM"
-極座標シリーズ | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°"
-範囲シリーズ | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K"
-ファイナンシャル シリーズ | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br>
+| シリーズのタイプ | シリーズのプロパティ |
+| ------|---- |
+| カテゴリ シリーズ | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M" |
+| ラジアル シリーズ | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM" |
+| 極座標シリーズ | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°" |
+| 範囲シリーズ | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" |
+| ファイナンシャル シリーズ | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br> |
 
 また、`XamDataLegend` の `UnitText` プロパティを使用して、すべての Unit 列に表示されるテキストを変更できます。
 

@@ -5,6 +5,7 @@ _keywords: material density, {Platform}, {ProductName}, Infragistics, マテリ�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 表示密度
@@ -51,7 +52,8 @@ this.grid.displayDensity = 'cosy';
  - **cosy** - 中密度で、行の高さは `40px` です。左と右のパディングが `16px` で最小列 `Width` は `64px` です。
  - **compact** - これは最高密度で行の高さは `32px` です。左と右のパディングが `12px` で最小列 `Width` は `56px` です。
 
->[!NOTE] 現在サイズは**オーバーライドできません**。
+> [!Note]
+> 現在サイズは**オーバーライドできません**。
 
 引き続きサンプルを使用して `DisplayDensity` の適用方法について説明します。最初に各密度を切り替えるボタンを追加します。
 
@@ -772,7 +774,6 @@ public selectDensity(event) {
 
 ## その他のリソース
 
-* [Grid の概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)

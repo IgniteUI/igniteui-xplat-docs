@@ -4,6 +4,7 @@ _description: The {Platform} {ComponentTitle} Clipboard functionality provides f
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Clipboard Overview
@@ -37,7 +38,7 @@ Copy behavior is working with the default interaction defined by the browser and
 
 - Both the **cut** and **copy** events are not natively supported in Internet Explorer. The exception is the
 **paste** event (IE 11) which is emitted but does not expose the `ClipboardData` property in the event.
-> [!NOTE]
+> [!Note]
 > In order to **copy** cells in IE 11, you can use the keyboard selection. Hold the **shift key** in order to make a multi-cell selection, press **Ctrl + C** in order to copy.
 
 - The copy behavior is disabled while the grid is in edit mode.
@@ -59,14 +60,14 @@ We expose `ClipboardOptions` property, which handles the following options:
 - `CopyFormatters` Apply any existing column formatters to the copied data.
 - `Separator` The string separator to use the for formatting the data in the clipboard. Default is `/t`
 
-> [!NOTE]
+> [!Note]
 > Excel can automatically detect text that is separated by tabs (tab-delimited `/t`) and properly paste the data into separate columns. When the paste format doesn't work, and everything you paste appears in a single column, then Excel's delimiter is set to another character, or your text is using spaces instead of tabs.
 
 - `GridCopy` Emitted when a copy operation is executed. Fired only if copy behavior is enabled through the `ClipboardOptions`.
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)

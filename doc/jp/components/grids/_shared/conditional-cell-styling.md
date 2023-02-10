@@ -5,6 +5,7 @@ _keywords: conditional styling, {Platform}, {ProductName}, Infragistics, 条件�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} の条件付きセルのスタイル設定
@@ -769,7 +770,6 @@ constructor() {
 ## その他のリソース
 
 
-* [Grid の概要](overview.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)

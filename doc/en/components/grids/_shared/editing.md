@@ -4,6 +4,7 @@ _description: Get a powerful public API and an easy way to perform data manipula
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 test1 `{ComponentName}`
@@ -37,8 +38,8 @@ The `RowEditable` property enables you to specify the following options:
 
 In the `{ComponentName}`, if you set `RowEditable` property to true, and the `Editable` property is not explicitly defined for any column, the editing will be enabled for all the columns except the *primary key*.
 
-<!-- 
-[Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**. 
+<!--
+[Batch editing](batch-editing.md) in the grid can be enabled for both [cell editing](cell-editing.md) and [row editing](row-editing.md) modes. In order to set up batch editing it is necessary to provide to the grid a  **TransactionService**.
 -->
 
 - **Cell and Batch Editing** - in this scenario every singe modification of each cell is preserved separately and undo/ redo operations are available on cell level;
@@ -180,7 +181,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 <!-- Angular -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -199,7 +200,7 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)

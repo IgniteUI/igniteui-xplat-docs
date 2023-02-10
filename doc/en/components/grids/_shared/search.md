@@ -4,6 +4,7 @@ _description: Perform data manipulation without affecting the underlying data wi
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Search Filter
@@ -869,7 +870,7 @@ Additional components and/or directives with relative APIs that were used:
 
 ## Additional Resources
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)

@@ -5,19 +5,20 @@ _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, �
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 一括編集とトランザクション
 
 <!-- ComponentStart: Grid -->
 
-`{ComponentName}` の一括編集機能は、`TransactionService` に基づいています。[**トランザクション サービス クラス階層**](../transaction-classes.md)トピックに従って、`TransactionService` の概要と実装方法の詳細を確認してください。
+<!-- `{ComponentName}` の一括編集機能は、`TransactionService` に基づいています。[**トランザクション サービス クラス階層**](../transaction-classes.md)トピックに従って、`TransactionService` の概要と実装方法の詳細を確認してください。 -->
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-`{ComponentName}` の一括編集機能は、`HierarchicalTransactionService` に基づいています。[**トランザクション サービス クラス階層**](../transaction-classes.md)トピックに従って、`HierarchicalTransactionService` の概要と実装方法の詳細を確認してください。
+<!-- `{ComponentName}` の一括編集機能は、`HierarchicalTransactionService` に基づいています。[**トランザクション サービス クラス階層**](../transaction-classes.md)トピックに従って、`HierarchicalTransactionService` の概要と実装方法の詳細を確認してください。 -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -40,7 +41,7 @@ _language: ja
            alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例" >
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > トランザクション ステートは、すべての更新、追加、削除された行、そして最後のステートで構成されます。
 
 ## 使用方法
@@ -61,7 +62,7 @@ _language: ja
 
 <!-- Angular -->
 
-この内部実装の詳細については、[トランザクション トピック](../transaction-classes.md#トランザクション-ファクトリ)を参照してください。
+<!-- この内部実装の詳細については、[トランザクション トピック](../transaction-classes.md#トランザクション-ファクトリ)を参照してください。 -->
 
 <!-- end: Angular -->
 
@@ -390,14 +391,14 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > トランザクション API は編集の終了を処理しないので、自分で行う必要があります。そうしないと、`{ComponentName}` は編集モードのままになります。これを行う 1 つの方法は、それぞれのメソッドで `EndEdit` を呼び出すことです。
 
 <!-- ComponentStart: TreeGrid -->
 `{ComponentName}` 内の親ノードの削除にはいくつかの特徴があります。階層データを使用している場合、親を削除すると子も削除されます。フラットデータを使用している場合、`{ComponentName}` の `CascadeOnDelete` プロパティを使用して必要な動作を設定できます。このプロパティは、親が削除されたときに子レコードを削除するかどうかを示します (デフォルトでは **true** に設定されています)。
 <!-- ComponentEnd: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > `RowEditable` プロパティを無効にすると `{ComponentName}` を変更してセル変更でトランザクションを作成し、UI で行編集オーバーレイを公開しません。
 
 <!-- Angular -->
@@ -438,7 +439,7 @@ export class HierarchicalGridBatchEditingSampleComponent {
 <!-- Angular -->
 
 * [Grid で CRUD 操作を構築する](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
@@ -447,7 +448,7 @@ export class HierarchicalGridBatchEditingSampleComponent {
 
 <!-- Blazor -->
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)

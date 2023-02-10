@@ -155,7 +155,7 @@ Customizing the progress bar in order to use a color gradient instead of a solid
            github-src="inputs/circular-progress-indicator/dynamic">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >For each `CircularGradient` defined as gradient slot of {ProductName} `CircularProgress` a [SVG stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) element would be created. The values passed as `color`, `offset` and `opacity` would be set as stop-color, offset and stop-opacity of the SVG element without further validations.
 
 ```tsx

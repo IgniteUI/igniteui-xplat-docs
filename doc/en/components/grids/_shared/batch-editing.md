@@ -4,19 +4,20 @@ _description: Perform data manipulation without affecting the underlying data wi
 _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Batch Editing and Transactions
 
 <!-- ComponentStart: Grid -->
 
-The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented.
+<!-- The Batch Editing feature of the `{ComponentName}` is based on the `TransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `TransactionService` and details how it is implemented. -->
 
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented.
+<!-- The Batch Editing feature of the `{ComponentName}` is based on the `HierarchicalTransactionService`. Follow the [**Transaction Service class hierarchy**](../transaction-classes.md) topic to see an overview of the `HierarchicalTransactionService` and details how it is implemented. -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -39,7 +40,7 @@ The following sample demonstrates a scenario, where the `{ComponentName}` has `B
            alt="{Platform} {ComponentTitle} Batch Editing and Transactions Example" >
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > Transaction state consists of all the updated, added and deleted rows, and their last states.
 
 ## Usage
@@ -60,7 +61,7 @@ This will ensure a proper instance of `Transaction` service is provided for the 
 
 <!-- Angular -->
 
-You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory).
+<!-- You can learn more about this internal implementation in the [transactions topic](../transaction-classes.md#transaction-factory). -->
 
 <!-- end: Angular -->
 
@@ -389,14 +390,14 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > The transactions API won't handle end of edit and you'd need to do it by yourself. Otherwise, `{ComponentName}` would stay in edit mode. One way to do that is by calling `EndEdit` in the respective method.
 
 <!-- ComponentStart: TreeGrid -->
 Deleting a parent node in `{ComponentName}` has some peculiarities. If you are using a hierarchical data, the children will be deleted when deleting their parent. If you are using a flat data, you may set the desired behavior using the `CascadeOnDelete` property of `{ComponentName}`. This property indicates whether the child records should be deleted when their parent gets deleted (by default, it is set to **true**).
 <!-- ComponentEnd: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > Disabling `RowEditable` property will modify `{ComponentName}` to create transactions on cell change and will not expose row editing overlay in the UI.
 
 <!-- Angular -->
@@ -437,7 +438,7 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 <!-- Angular -->
 
 * [Build CRUD operations with Grid](../general/how-to/how-to-perform-crud.md)
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
@@ -446,7 +447,7 @@ Deleting a parent node in `{ComponentName}` has some peculiarities. If you are u
 
 <!-- Blazor -->
 
-* [{ComponentTitle} Overview](overview.md)
+
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)

@@ -4,6 +4,7 @@ _description: {Platform} ページネーションを構成し、Ignite UI によ
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ページネーションの概要
@@ -23,7 +24,7 @@ _language: ja
 
 <!-- Angular -->
 
-[Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう:
+<!-- [Paginator](../paginator.md) コンポーネントを追加すると、機能が存在するかどうかが制御されます。単純な `*ngIf` とトグル プロパティを使用して有効 / 無効にできます。`perPage` 入力は、ページごとに表示されるレコードを制御します。`{ComponentName}` を更新して、ページングを有効にしましょう: -->
 
 <!-- end: Angular -->
 
@@ -242,10 +243,10 @@ $dark-button: button-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >`Button` ミックスインを `.igx-paginator__pager` 内でスコープして、ページネーター ボタンのみにスタイルが設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
@@ -293,7 +294,7 @@ $dark-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -387,7 +388,7 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
-* [ページネーター](../paginator.md)
+<!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)

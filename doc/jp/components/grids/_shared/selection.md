@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 選択の概要
@@ -224,7 +225,7 @@ import 'core-js/es7/array';
 
 ## その他のリソース
 
-* [{ComponentTitle} 概要](overview.md)
+
 * [行の選択](row-selection.md)
 * [セルの選択](cell-selection.md)
 * [ページング](paging.md)
