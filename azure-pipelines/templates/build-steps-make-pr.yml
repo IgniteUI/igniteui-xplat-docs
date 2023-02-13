@@ -40,6 +40,7 @@ steps:
     inputs:
       SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\${{ parameters.language }}'
       TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\${{ parameters.language }}'
+      OverWrite: true
 
   - script: |
       git add -A
