@@ -25,15 +25,13 @@ steps:
 #      replaceExistingArchive: true
 
   - script: |
-      git clone https://$(githubUser):$(githubToken)@github.com/ESShared/ignite-ui-docfx.git
-      git remote add upstream https://github.com/IgniteUI/igniteui-docfx.git
-      git fetch upstream
-      git checkout --track origin/$(Build.SourceBranchName)
-      git merge upstream/$(Build.SourceBranchName)
-      git push origin
-      git checkout -b $(branchName)_$(Build.SourceBranchName)
-      git pull origin $(branchName)_$(Build.SourceBranchName)
-      git merge $(Build.SourceBranchName)
+      git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/ignite-ui-docfx.git
+#      git checkout -b ESShared/XPlaform_EN_$(Build.SourceBranchName)
+#      git pull origin ESShared/XPlaform_EN_$(Build.SourceBranchName)
+#      git merge origin/$(Build.SourceBranchName)
+      git checkout -b ESShared/XPlaform_EN_$(Build.SourceBranchName)
+      git pull origin ESShared/XPlaform_EN_$(Build.SourceBranchName)
+      git merge origin/vnext
     displayName: 'Clone and checkout the Branch to push changes in'
     workingDirectory: $(System.DefaultWorkingDirectory)
 
@@ -46,7 +44,7 @@ steps:
   - script: |
       git add -A
       git commit -m "Adding changes from build $(Build.BuildNumber)"
-      git push --set-upstream origin $(branchName)_$(Build.SourceBranchName)
+      git push
     displayName: 'Commit the changes and make a PR'
     workingDirectory: $(System.DefaultWorkingDirectory)
   
@@ -55,6 +53,6 @@ steps:
       repoType: 'GitHub'
       githubEndpoint: 'ESShared'
       githubRepository: 'IgniteUI/igniteui-docfx'
-      sourceBranch: '$(branchName)'
+      sourceBranch: 'ESShared/XPlaform_EN_$(Build.SourceBranchName)'
       targetBranch: 'vNext'
       title: 'Changes from $(Build.DefinitionName)'
