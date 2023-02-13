@@ -27,19 +27,19 @@ steps:
   - script: |
       git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/igniteui-docfx.git
     displayName: 'Clone igniteui-docfx'
-    workingDirectory: $(System.DefaultWorkingDirectory)
+    workingDirectory: $(Build.SourcesDirectory)
 
   - script: |
       git fetch origin
       git checkout -b ESShared/XPlaform_EN_$(Build.BuildNumber) origin/vNext
     displayName: 'Checkout a new branch to push changes in'
-    workingDirectory: $(System.DefaultWorkingDirectory)\igniteui-docfx
+    workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
 
   - task: CopyFiles@2
     displayName: 'Copy the build files to the Git repo'
     inputs:
       SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\${{ parameters.language }}'
-      TargetFolder: '$(Build.SourcesDirectory)\ignite-ui-docfx\${{ parameters.language }}'
+      TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\${{ parameters.language }}'
 
   - script: |
       git add -A
