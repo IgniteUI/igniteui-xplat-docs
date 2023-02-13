@@ -26,9 +26,7 @@ steps:
 
   - script: |
       git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/ignite-ui-docfx.git
-#      git checkout -b ESShared/XPlaform_EN_$(Build.SourceBranchName)
-#      git pull origin ESShared/XPlaform_EN_$(Build.SourceBranchName)
-#      git merge origin/$(Build.SourceBranchName)
+
       git checkout -b ESShared/XPlaform_EN_$(Build.SourceBranchName)
       git pull origin ESShared/XPlaform_EN_$(Build.SourceBranchName)
       git merge origin/vnext
