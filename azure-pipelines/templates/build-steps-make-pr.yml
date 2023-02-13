@@ -25,8 +25,8 @@ steps:
 #      replaceExistingArchive: true
 
   - script: |
-      git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/ignite-ui-docfx.git
-      cd ignite-ui-docfx
+      git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/igniteui-docfx.git
+      cd igniteui-docfx
       git fetch origin
       git checkout -b ESShared/XPlaform_EN_$(Build.BuildNumber) origin/vNext
     displayName: 'Clone and checkout the Branch to push changes in'
