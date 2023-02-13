@@ -26,7 +26,7 @@ steps:
 
   - script: |
       git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/ignite-ui-docfx.git
-      git checkout -b ESShared/XPlaform_EN_$(Build.BuildNumber) origin/vnext
+      git checkout -b ESShared/XPlaform_EN_$(Build.BuildNumber) origin/vNext
     displayName: 'Clone and checkout the Branch to push changes in'
     workingDirectory: $(System.DefaultWorkingDirectory)
 
@@ -39,7 +39,7 @@ steps:
   - script: |
       git add -A
       git commit -m "Adding changes from build $(Build.BuildNumber)"
-      git push
+      git push -u origin ESShared/XPlaform_EN_$(Build.BuildNumber)
     displayName: 'Commit the changes and make a PR'
     workingDirectory: $(System.DefaultWorkingDirectory)
   
