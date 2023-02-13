@@ -26,10 +26,7 @@ steps:
 
   - script: |
       git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/ignite-ui-docfx.git
-
-      git checkout -b ESShared/XPlaform_EN_$(Build.SourceBranchName)
-      git pull origin ESShared/XPlaform_EN_$(Build.SourceBranchName)
-      git merge origin/vnext
+      git checkout -b ESShared/XPlaform_EN_$(Build.BuildNumber) origin/vnext
     displayName: 'Clone and checkout the Branch to push changes in'
     workingDirectory: $(System.DefaultWorkingDirectory)
 
@@ -51,6 +48,6 @@ steps:
       repoType: 'GitHub'
       githubEndpoint: 'ESShared'
       githubRepository: 'IgniteUI/igniteui-docfx'
-      sourceBranch: 'ESShared/XPlaform_EN_$(Build.SourceBranchName)'
+      sourceBranch: 'ESShared/XPlaform_EN_$(Build.BuildNumber)'
       targetBranch: 'vNext'
       title: 'Changes from $(Build.DefinitionName)'
