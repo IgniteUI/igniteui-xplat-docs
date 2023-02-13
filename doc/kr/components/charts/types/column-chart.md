@@ -189,11 +189,11 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type          | Control Name       | API Members
---------------------|--------------------|------------------------
-Column              | `CategoryChart` | `ChartType` = `Column`
-Radial Column       | `XamDataChart`     | `RadialColumnSeries`
-Range Column        | `XamDataChart`     | `RangeColumnSeries`
-Stacked Column      | `XamDataChart`     | `StackedColumnSeries`
-Stacked 100% Column | `XamDataChart`     | `Stacked100ColumnSeries`
-Waterfall           | `XamDataChart`     | `WaterfallSeries`
+| Chart Type          | Control Name       | API Members |
+| --------------------|--------------------|------------------------ |
+| Column              | `CategoryChart` | `ChartType` = `Column` |
+| Radial Column       | `XamDataChart`     | `RadialColumnSeries` |
+| Range Column        | `XamDataChart`     | `RangeColumnSeries` |
+| Stacked Column      | `XamDataChart`     | `StackedColumnSeries` |
+| Stacked 100% Column | `XamDataChart`     | `Stacked100ColumnSeries` |
+| Waterfall           | `XamDataChart`     | `WaterfallSeries` |

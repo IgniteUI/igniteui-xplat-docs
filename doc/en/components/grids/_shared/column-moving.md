@@ -4,23 +4,24 @@ _description: Set custom column order & enable columns reordering via drag/drop 
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {ComponentTitle} Column Reordering & Moving
 
 The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
 
-> [!NOTE]
+> [!Note]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
 
-> [!NOTE]
+> [!Note]
 > If a column header is templated and the Column Moving is enabled or the corresponding column is groupable, then the templated elements need to have the **draggable** attribute set to **false**!
 
 <!-- Angular -->
 This allows to attach handlers for any event emitted by the element, otherwise the event is consumed by the `igxDrag` directive.
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentName}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
 
 ```html
@@ -220,7 +221,7 @@ The last step is to **include** the component mixins with its respective theme:
 @include grid($dark-grid-column-moving-theme);
 ```
 
-> [!NOTE]
+> [!Note]
 > Depending on the component [**View Encapsulation**](/components/themes/sass/component-themes.html#view-encapsulation) strategy, it may be necessary to `penetrate` this encapsulation using `::ng-deep`
 
 ```scss
@@ -256,7 +257,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 
 
-> [!NOTE]
+> [!Note]
 > Thecolor andpalette are powerful functions for generating and retrieving colors. Please refer to [Palettes](/components/themes/palettes.html) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -310,7 +311,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
            alt="{Platform} {ComponentTitle} Grid Moving Styled Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

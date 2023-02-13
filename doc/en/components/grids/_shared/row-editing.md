@@ -4,6 +4,7 @@ _description: Want to enable row editing in {Platform} {ComponentTitle}? Need a 
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Row Editing
@@ -21,7 +22,7 @@ The following sample demonstrates how to enable row editing in the `{ComponentNa
             alt="{Platform} {ComponentTitle} Editing Rows Example">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > When a row is in edit mode, then clicking on a cell on another row will act like the Done button is pressed - submit all the changes of the previous row. If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
 
 ## Row Editing Usage
@@ -128,10 +129,10 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > Setting primary key is mandatory for row editing operations.
 
-> [!NOTE]
+> [!Note]
 > It's not needed to enable editing for individual columns. Using the `RowEditable` property in the `{ComponentName}`, will mean that all rows, with defined `Field` property, excluding primary one, will be editable. If you want to disable editing for specific column, then you set the `Editable` column's input to `false`.
 
 <!-- Angular -->
@@ -158,7 +159,7 @@ export class {ComponentName}RowEditSampleComponent {
 <!-- end: Angular -->
 
 
-> [!NOTE]
+> [!Note]
 > The `{ComponentName}` uses internally a provider `BaseTransactionService` that holds pending cell changes, until row state submitted or cancelled.
 
 ## Positioning
@@ -328,9 +329,9 @@ This will apply our custom banner theme to the Row Editing overlay. However, sin
 
 ### Component Styles
 
-Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [theme/index` import](#import-theme)) in the component containing our `{ComponentName}`.
+Since the Row Editing overlay makes use of a lot of other components' themes, styling it via the global styles can affect other parts of our application (e.g. banners, buttons, etc.). The best way to prevent that is to scope our banner theme. We can define our styles (including the [theme import](#import-theme)) in the component containing our `{ComponentName}`.
 
->[!NOTE]
+> [!Note]
 >If the component is using an [Emulated](themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
 >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 
@@ -397,7 +398,7 @@ After styling the banner and buttons, we also define a custom style for [the cel
            alt="{Platform} {ComponentTitle} Row Editing Styling Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 ## Known Issues and Limitations

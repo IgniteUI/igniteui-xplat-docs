@@ -4,6 +4,7 @@ _description: Learn how to use and customize the built-in row adding functionali
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Row Adding
@@ -188,22 +189,22 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 </igc-hierarchical-grid>
 ```
 
-> [!NOTE]
+> [!Note]
 > Setting primary key is mandatory for row adding operations.
 
-> [!NOTE]
+> [!Note]
 > Every column excluding the primary key one is editable in the row adding UI by default. If you want to disable editing for a specific column, then you have to set the `Editable` column's input to `false`.
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > The `GridEditingActions` input controlling the visibility of the add row button may use the action strip context (which is of type `RowType` to fine tune which records the button shows for.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > The `GridEditingActions` inputs controlling the visibility of the add row and add child buttons may use the action strip context (which is of type `RowType` to fine tune which records the buttons show for.
 
 <!-- ComponentEnd: TreeGrid -->
@@ -328,7 +329,7 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     `;
 }
 ```
-> [!NOTE]
+> [!Note]
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
 
 <!-- Angular -->

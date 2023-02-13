@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->
@@ -18,17 +19,17 @@ _language: ja
 
 {ProductName}  の `{ComponentName}` コンポーネントは、標準ドラッグ/ドロップのマウス/タッチによるジェスチャ、または列移動 API を使用した順序変更のための**列移動**機能を提供します。列の移動は、固定列と固定されていない列、および[複数列ヘッダー](multi-column-headers.md)の両方で機能します。列を固定領域に移動すると列が固定され、または逆に固定領域の外に列を移動すると、列の固定が解除されます。
 
-> [!NOTE]
+> [!Note]
 > 列と列グループ間の順序変更は、それらが階層の同じレベルにあり、両方が同じグループにある場合にのみ許可されます。列/列グループが最上位の列である場合、列/列グループ間を移動できます。
 
-> [!NOTE]
+> [!Note]
 > 列ヘッダーがテンプレート化され、対応する列がグループ化可能である場合、テンプレート化された要素は **draggable** 属性を **false** に設定する必要があります。
 
 <!-- Angular -->
 これにより、要素によって発行されたすべてのイベントのハンドラーをアタッチできます。それ以外の場合、イベントは `igxDrag` ディレクティブによって消費されます。
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > ピン固定領域が最大幅 (`{ComponentName}` 幅合計の 80 %) を超えた場合、ドロップ操作が禁止されていてピン固定ができないことをヒントの表示でエンドユーザーに通知します。つまり、ピン固定領域に列をドロップできません。
 
 ```html
@@ -228,7 +229,7 @@ $dark-grid-column-moving-theme: grid-theme(
 @include grid($dark-grid-column-moving-theme);
 ```
 
-> [!NOTE]
+> [!Note]
 > コンポーネントの [**View Encapsulation**](/components/themes/sass/component-themes.html#表示のカプセル化) ストラテジに基づいて、::ng-deep を使用してこのカプセル化を`解除する`必要があります。
 
 ```scss
@@ -264,7 +265,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 
 
-> [!NOTE]
+> [!Note]
 > Color および Palette は、カラーを生成および取得するための重要な機能です。使い方の詳細については[パレット](/components/themes/palettes.html)のトピックを参照してください。
 
 ### スキーマの使用
@@ -318,7 +319,7 @@ $dark-grid-column-moving-theme: grid-theme(
            alt="{Platform} {ComponentTitle} 列移動スタイル設定の例">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

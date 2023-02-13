@@ -4,6 +4,7 @@ _description: {ProductName} で {ComponentTitle} キーボード ナビゲーシ
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
@@ -20,11 +21,11 @@ _language: ja
 * **列の集計** (有効な場合)
 * **{ComponentTitle} ページネーター** (有効な場合)
 
->[!NOTE]
+> [!Note]
 > この変更のため、<kbd>tab</kbd> と  <kbd>Shift + Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>Tab</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
->[!NOTE]
+> [!Note]
 > テンプレートによっ**フォーカス可能な**要素を `{ComponentName}` の本体に公開すると、ブラウザのデフォルトの動作が防止されていないため、**予期されない結果**が発生する可能性があります。
 > したがって、それを適切に**防止/変更する**のは開発者の責任です。
 
@@ -145,11 +146,11 @@ _language: ja
 | `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `IActiveNodeChangeEventArgs` |
 | `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。```{ targetType: GridKeydownTargetType, target: Object }``` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }) => {}``` |
 | `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
-| `GetPreviousCell`| `RowIndex` と ` VsibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
+| `GetPreviousCell`| `RowIndex` と `VisibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
->[!NOTE]
+> [!Note]
 > `GetNextCell` および `GetPreviousCell` は現在のレベルで使用し、上位または下位レベルのセルにアクセスできません。
 >
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -236,7 +237,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
             obj.target.activate();
         });
 ```
-> 注: 実装の詳細は、サンプルコードを参照してください。
+
+> [!Note]
+> 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
 - **Order** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。

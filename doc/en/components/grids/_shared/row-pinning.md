@@ -4,6 +4,7 @@ _description: Use the {Platform} Row pinning feature to lock rows with a rich an
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Row Pinning
@@ -449,7 +450,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
            alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

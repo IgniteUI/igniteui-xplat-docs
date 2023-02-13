@@ -78,7 +78,7 @@ Steps can be declared using one of the following approaches.
 ```
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
-> [!NOTE]
+> [!Note]
 > The `Default` `Step` slot renders the content of the step.
 
 ```html
@@ -137,7 +137,7 @@ When the linear property is set to *true*, the stepper will require the current 
 
 If the current non-optional step is not valid you cannot go forward to the next step until you validate the current one.
 
-> [!NOTE]
+> [!Note]
 > Optional steps validity is not taken into account in order to move forward.
 
 The following example demonstrates how to configure a linear stepper:
@@ -159,7 +159,7 @@ The following example demonstrates how to configure a linear stepper:
 - **prev** – activates the previous non-disabled step.
 - **reset** – resets the stepper to its initial state.
 
-> [!NOTE]
+> [!Note]
 > The reset method would reset the stepper to its initial state, i.e. activates the first step. It would not clear the step`s content. This should be done manually.
 
 ### Customizing the Steps
@@ -187,7 +187,7 @@ When the {Platform} `Stepper` is horizontally orientated and the title position 
 
 When the orientation is set to vertical and the title position **is not defined**, the titles would be displayed *after* the indicators.
 
-> [!NOTE]
+> [!Note]
 > **titlePosition** property is applicable **only** when the stepper stepType property is set to *full*.
 
 **Indicator**
@@ -202,7 +202,7 @@ If you want to display only titles for the steps, set the stepType option to *ti
 
 In this way if subtitles are defined, they will also be rendered below the step title.
 
-> [!NOTE]
+> [!Note]
 > This container could be re-templated as per your requirement without any size restrictions. For example, you could add an indicator with size greater than 24 pixels inside it.
 
 The sample below demonstrates all exposed step types and how they could be changed:
@@ -237,26 +237,26 @@ The {Platform} `Stepper` navigation is compliant with [W3 accessability standard
 
 You can change the appearance of the `Step`s, by using some of the exposed CSS parts listed below:
 
-Part name | Description
----------|------------
-`header-container` | Wrapper of the step's header and its separators.
-`disabled` | Indicates a disabled state. Applies to header-container.
-`complete-start` | Indicates a complete state of the current step. Applies to header-container.
-`complete-end` | Indicates a complete state of the previous step. Applies to header-container.
-`optional` | Indicates an optional state. Applies to header-container.
-`invalid` | Indicates an invalid state. Applies to header-container.
-`top` | Indicates that the title should be above the indicator. Applies to header-container.
-`bottom` | Indicates that the title should be below the indicator. Applies to header-container.
-`start` | Indicates that the title should be before the indicator. Applies to header-container.
-`end` | Indicates that the title should be after the indicator. Applies to header-container.
-`header` | Wrapper of the step's indicator and text.
-`indicator` | The indicator of the step.
-`text` | Wrapper of the step's title and subtitle.
-`empty` | Indicates that no title and subtitle has been provided to the step. Applies to text.
-`title` | The title of the step.
-`subtitle` | The subtitle of the step.
-`body` | Wrapper of the step's content.
-`content` | The steps content.
+| Part name | Description |
+| ---------|------------ |
+| `header-container` | Wrapper of the step's header and its separators. |
+| `disabled` | Indicates a disabled state. Applies to header-container. |
+| `complete-start` | Indicates a complete state of the current step. Applies to header-container. |
+| `complete-end` | Indicates a complete state of the previous step. Applies to header-container. |
+| `optional` | Indicates an optional state. Applies to header-container. |
+| `invalid` | Indicates an invalid state. Applies to header-container. |
+| `top` | Indicates that the title should be above the indicator. Applies to header-container. |
+| `bottom` | Indicates that the title should be below the indicator. Applies to header-container. |
+| `start` | Indicates that the title should be before the indicator. Applies to header-container. |
+| `end` | Indicates that the title should be after the indicator. Applies to header-container. |
+| `header` | Wrapper of the step's indicator and text. |
+| `indicator` | The indicator of the step. |
+| `text` | Wrapper of the step's title and subtitle. |
+| `empty` | Indicates that no title and subtitle has been provided to the step. Applies to text. |
+| `title` | The title of the step. |
+| `subtitle` | The subtitle of the step. |
+| `body` | Wrapper of the step's content. |
+| `content` | The steps content. |
 
 Using these CSS parts we can customize thе appearance of the `Stepper` component like this:
 

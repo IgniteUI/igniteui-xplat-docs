@@ -46,15 +46,15 @@ The columns of the `XamDataLegend` include the series title, label, value of dat
 
 Setting values on the `IncludedColumns` and `ExcludedColumns` properties, depends on type of series and how many data columns they support. For example, you can set `IncludedColumns` property to a collection of **Open** and **Close** strings and the legend will show only open and close values for stock prices when the chart is plotting financial series. The following table lists all column names that can be use to filter columns in data legend.
 
- Type of Series  | Column Names
------------------|--------------
-Category Series  | Value
-Radial Series    | Value
-Polar Series     | Radius, Angle
-Bubble Series    | X, Y, Radius
-Scatter Series   | X, Y
-Range Series     | High, Low
-Financial Series | High, Low, Open, Close, Change, TypicalPrice, Volume
+|  Type of Series  | Column Names |
+| -----------------|-------------- |
+| Category Series  | Value |
+| Radial Series    | Value |
+| Polar Series     | Radius, Angle |
+| Bubble Series    | X, Y, Radius |
+| Scatter Series   | X, Y |
+| Range Series     | High, Low |
+| Financial Series | High, Low, Open, Close, Change, TypicalPrice, Volume |
 
 Where the **TypicalPrice** and percentage **Change** of OHLC prices are automatically calculated by financial series so you do not need to include them in your data sources.
 
@@ -79,13 +79,13 @@ The unit column displays an abbreviation symbol on the right side of value colum
 
 You can customize text displayed in the **Label** and **Unit** columns using  properties that end with **MemberAsLegendLabel** and **MemberAsLegendUnit**  on each series. The following table shows some possible customizations of the **Label** and **Unit** columns.
 
- Type of Series | Series Properties
-------|----
-Category Series | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M"
-Radial Series | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM"
-Polar Series | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°"
-Range Series | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K"
-Financial Series | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br>
+|  Type of Series | Series Properties |
+| ------|---- |
+| Category Series | ValueMemberAsLegendLabel="$" <br> ValueMemberAsLegendUnit="M" |
+| Radial Series | ValueMemberAsLegendLabel="Distance:" <br> ValueMemberAsLegendUnit="KM" |
+| Polar Series | RadiusMemberAsLegendLabel="Radius:" <br> RadiusMemberAsLegendUnit="KM" <br> AngleMemberAsLegendLabel="Angle:" <br> AngleMemberAsLegendUnit="°" |
+| Range Series | HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" |
+| Financial Series | OpenMemberAsLegendLabel="O:" <br> OpenMemberAsLegendUnit="K" <br> HighMemberAsLegendLabel="H:" <br> HighMemberAsLegendUnit="K" <br> LowMemberAsLegendLabel="L:" <br> LowMemberAsLegendUnit="K" <br> CloseMemberAsLegendLabel="C:" <br> CloseMemberAsLegendUnit="K" <br> |
 
 Also, you can use the `UnitText` property on the `XamDataLegend` to change text displayed in all Unit columns.
 

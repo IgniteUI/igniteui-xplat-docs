@@ -5,6 +5,7 @@ _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, �
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 一括編集とトランザクション
@@ -40,7 +41,7 @@ _language: ja
            alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例" >
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > トランザクション ステートは、すべての更新、追加、削除された行、そして最後のステートで構成されます。
 
 ## 使用方法
@@ -390,14 +391,14 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > トランザクション API は編集の終了を処理しないので、自分で行う必要があります。そうしないと、`{ComponentName}` は編集モードのままになります。これを行う 1 つの方法は、それぞれのメソッドで `EndEdit` を呼び出すことです。
 
 <!-- ComponentStart: TreeGrid -->
 `{ComponentName}` 内の親ノードの削除にはいくつかの特徴があります。階層データを使用している場合、親を削除すると子も削除されます。フラットデータを使用している場合、`{ComponentName}` の `CascadeOnDelete` プロパティを使用して必要な動作を設定できます。このプロパティは、親が削除されたときに子レコードを削除するかどうかを示します (デフォルトでは **true** に設定されています)。
 <!-- ComponentEnd: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > `RowEditable` プロパティを無効にすると `{ComponentName}` を変更してセル変更でトランザクションを作成し、UI で行編集オーバーレイを公開しません。
 
 <!-- Angular -->

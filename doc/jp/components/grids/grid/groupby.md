@@ -91,7 +91,8 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> 注: これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、grouping を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
+> [!Note]
+> これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、grouping を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
 
 <!-- end: Angular -->
 
@@ -263,7 +264,7 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 
 グリッドでは、列ごとまたはグループ化式ごとにカスタム グループを定義できます。これにより、カスタム条件に基づいてグループ化が提供されます。これは、複雑なオブジェクトごとにグループ化する必要がある場合、または他のアプリケーション固有のシナリオで役立ちます。
 
-> [!NOTE]
+> [!Note]
 > カスタム グループ化を実装するには、まずデータを適切にソートする必要があります。このため、ベース `DefaultSortingStrategy` を拡張するカスタムのソート ストラテジを適用する必要がある場合もあります。データがソートされた後、列または特定のグループ化式に `GroupingComparer` を指定することにより、カスタム グループを決定できます。
 
 以下のサンプルは、`Date` によるカスタム グループ化を示しています。日付の値は、ユーザーが選択したグループ化モードに基づいて、日、週、月、または年でソートされおよびグループ化されています。
@@ -483,9 +484,9 @@ $custom-theme: grid-theme(
 
 このように、{Platform} の [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
- >[!NOTE]
+ > [!Note]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
@@ -508,7 +509,7 @@ $custom-theme: grid-theme(
            github-src="{GridSample}/groupby-styling">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end:Angular -->
@@ -530,7 +531,7 @@ $custom-theme: grid-theme(
 
 ## その他のリソース
 
-* [Grid の概要](grid.md)
+* [Grid の概要](../data-grid.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

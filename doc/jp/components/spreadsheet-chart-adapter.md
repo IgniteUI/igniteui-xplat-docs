@@ -83,7 +83,7 @@ Spreadsheet ChartAdapter は、折れ線、エリア、縦棒、ドーナツを�
 
 ## 依存関係
 
-> [!NOTE]
+> [!Note]
 >
 > 以下のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 

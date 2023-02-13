@@ -212,6 +212,7 @@ In this {Platform} grid example, you can see how users can customize their _data
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
+           github-src="{GridSample}/overview"
            alt="grid example">
 </code-view>
 

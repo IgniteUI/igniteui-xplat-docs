@@ -5,6 +5,7 @@ _keywords: data select, igniteui for {Platform}, infragistics, データ選択, 
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->
@@ -94,7 +95,7 @@ _language: ja
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> - フォーカスされているセルからグリッド内の最初のセルまでのすべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> - フォーカスされているセルからグリッド内の最後のセルまでのすべてのセルを選択します。
 
-> [!NOTE]
+> [!Note]
 > 連続スクロールは、グリッド本体でのみ可能です。
 
 ## API の使用
@@ -159,7 +160,7 @@ expectedData = [
 ];
 ```
 
-> [!NOTE]
+> [!Note]
 > `SelectedCells` は、セルがグリッド ビュー ポートに表示されていない場合でも、正しい結果を返します。`GetSelectedData` も選択されたセル データを返します。
 > `GetSelectedRanges` は、キーボードとポインタの両方の操作からグリッドで現在選択されている範囲を返します。タイプは **GridSelectionRange[]** です。
 <!-- end: Angular -->
@@ -223,7 +224,7 @@ $custom-grid-theme: grid-theme(
     @include grid($custom-grid-theme);
 ```
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host `セレクターの下で範囲指定します。
 
@@ -246,7 +247,7 @@ $custom-grid-theme: grid-theme(
            alt="{Platform} {ComponentTitle} 複数セル選択の例">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end:Angular -->

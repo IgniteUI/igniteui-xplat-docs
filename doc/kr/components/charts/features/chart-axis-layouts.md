@@ -10,7 +10,8 @@ mentionedTypes: [ "CategoryChart", "XamDataChart" ]
 
 All {ProductName} charts include options to configure many axis layout options such as location, gap, and overlap as well as having the ability to share axes and have multiple axes in the same chart. These features are demonstrated in the examples given below.
 
-> NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
+> [!Note]
+> The following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
 ## Axis Gap Example
 

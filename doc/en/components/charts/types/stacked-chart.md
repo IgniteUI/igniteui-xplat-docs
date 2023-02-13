@@ -228,17 +228,17 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type               | Control Name   | API Members
--------------------------|----------------|--------------------------------
-Stacked Area             | `XamDataChart` | `StackedAreaSeries`
-Stacked Bar              | `XamDataChart` | `StackedBarSeries`
-Stacked Column           | `XamDataChart` | `StackedColumnSeries`
-Stacked Line             | `XamDataChart` | `StackedLineSeries`
-Stacked Spline           | `XamDataChart` | `StackedSplineSeries`
-Stacked Spline Area      | `XamDataChart` | `StackedSplineAreaSeries`
-Stacked 100% Area        | `XamDataChart` | `Stacked100AreaSeries`
-Stacked 100% Bar         | `XamDataChart` | `Stacked100BarSeries`
-Stacked 100% Column      | `XamDataChart` | `Stacked100ColumnSeries`
-Stacked 100% Line        | `XamDataChart` | `Stacked100LineSeries`
-Stacked 100% Spline      | `XamDataChart` | `Stacked100SplineSeries`
-Stacked 100% Spline Area | `XamDataChart` | `Stacked100SplineAreaSeries`
+| Chart Type               | Control Name   | API Members |
+| -------------------------|----------------|-------------------------------- |
+| Stacked Area             | `XamDataChart` | `StackedAreaSeries` |
+| Stacked Bar              | `XamDataChart` | `StackedBarSeries` |
+| Stacked Column           | `XamDataChart` | `StackedColumnSeries` |
+| Stacked Line             | `XamDataChart` | `StackedLineSeries` |
+| Stacked Spline           | `XamDataChart` | `StackedSplineSeries` |
+| Stacked Spline Area      | `XamDataChart` | `StackedSplineAreaSeries` |
+| Stacked 100% Area        | `XamDataChart` | `Stacked100AreaSeries` |
+| Stacked 100% Bar         | `XamDataChart` | `Stacked100BarSeries` |
+| Stacked 100% Column      | `XamDataChart` | `Stacked100ColumnSeries` |
+| Stacked 100% Line        | `XamDataChart` | `Stacked100LineSeries` |
+| Stacked 100% Spline      | `XamDataChart` | `Stacked100SplineSeries` |
+| Stacked 100% Spline Area | `XamDataChart` | `Stacked100SplineAreaSeries` |

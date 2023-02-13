@@ -3,6 +3,7 @@ title: {Platform} {ComponentTitle} Paging - Infragistics
 _description: Configure {Platform} pagination and create custom pages in the {Platform} table by Ignite UI, get data for the requested pages with variety of events.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Pagination Overview
@@ -241,10 +242,10 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
->[!NOTE]
+> [!Note]
 >We scope the `Button` mixin within `.igx-paginator__pager`, so that only the paginator buttons would be styled. Otherwise other buttons in the grid would be affected too.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -292,7 +293,7 @@ $dark-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `Color` and `Palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas

@@ -113,11 +113,11 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type                  | Control Name   | API Members
-----------------------------|----------------|------------------------
-Scatter Marker              | `XamDataChart` | `ScatterSeries`
-Scatter Line                | `XamDataChart` | `ScatterLineSeries`
-Scatter Spline              | `XamDataChart` | `ScatterSplineSeries`
-High Density Scatter        | `XamDataChart` | `HighDensityScatterSeries`
-Scatter Area                | `XamDataChart` | `ScatterAreaSeries`
-Scatter Contour             | `XamDataChart` | `ScatterContourSeries`
+| Chart Type                  | Control Name   | API Members |
+| ----------------------------|----------------|------------------------ |
+| Scatter Marker              | `XamDataChart` | `ScatterSeries` |
+| Scatter Line                | `XamDataChart` | `ScatterLineSeries` |
+| Scatter Spline              | `XamDataChart` | `ScatterSplineSeries` |
+| High Density Scatter        | `XamDataChart` | `HighDensityScatterSeries` |
+| Scatter Area                | `XamDataChart` | `ScatterAreaSeries` |
+| Scatter Contour             | `XamDataChart` | `ScatterContourSeries` |

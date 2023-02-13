@@ -5,6 +5,7 @@ _keywords: excel like filter, {Platform}, {ProductName}, Infragistics, excel の
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング
@@ -516,7 +517,7 @@ By default, the {ComponentTitle} component filters the data based on the origina
            github-src="{ComponentSample}/filtering-strategy" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -708,10 +709,10 @@ $custom-drop-down: drop-down-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >`.igx-excel-filter` と `.igx-excel-filter__secondary` 内のほとんどのコンポーネントのミックスインをスコープするため、これらのカスタムテーマは、Excel スタイル フィルタリング ダイアログとそのすべてのサブダイアログにネストされたコンポーネントのみに影響します。そうでない場合、他のボタン、チェックボックス、入力グループ、およびリストも影響を受けます。
 
->[!NOTE]
+> [!Note]
 >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
@@ -784,7 +785,7 @@ $custom-drop-down:drop-down-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -945,7 +946,7 @@ $custom-drop-down: drop-down-theme(
            github-src="{ComponentSample}/excel-style-filtering-style" >
 </code-view>
 
->[!NOTE]
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

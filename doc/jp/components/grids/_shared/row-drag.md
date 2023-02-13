@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} の行ドラッグ
@@ -248,7 +249,7 @@ export class {ComponentName}RowDragComponent {
 
 <!-- ComponentEnd: Grid -->
 
-> [!NOTE]
+> [!Note]
 > イベント引数 (**args.dragData.data**) または他の行プロパティからの行データを使用する場合、行全体が参照として引数に渡されることに注意してください。つまり、ソースグリッドのデータと区別する必要がある場合は、必要なデータを複製する必要があります。
 
 
@@ -425,7 +426,7 @@ enum DragIcon {
 </code-view>
 
 
-> [!NOTE]
+> [!Note]
 > 上記のデモで使用されている行ドラッグ ゴーストに適用されるクラスは ::ng-deep 修飾子を使用しています。これは、行ドラッグが内部グリッド機能であり、CSS カプセル化のためにアプリケーション レベルでアクセスできないためです。
 
 <!-- ComponentEnd: Grid -->
@@ -471,7 +472,7 @@ constructor() {
 </igx-hierarchical-grid>
 ```
 
-> [!NOTE]
+> [!Note]
 > グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
 `RowDraggable` が有効になり、ドロップ エリアが定義されたら、ドロップ イベントの単純なハンドラーを実装する必要があります。行をドラッグするときは、以下を確認してください:
@@ -786,7 +787,7 @@ class MyRowGhostComponent {
 
 カーソルの位置を追跡するために、行のドラッグを開始するときに `DragDirective` の `DragMove` イベントにバインドします。
 
-> [!NOTE]
+> [!Note]
 > グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
 ```typescript

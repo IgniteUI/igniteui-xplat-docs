@@ -3,6 +3,7 @@ title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
@@ -233,7 +234,7 @@ TO-DO H-GRID CODE SNIPPET
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
-> [!NOTE]
+> [!Note]
 > When there is a set of columns and column groups, pinning works only for top level column parents. More specifically pinning per nested column groups or columns is not allowed. <br />
 > Moving between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same `group`. <br />
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
@@ -464,7 +465,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
 ```html
@@ -530,7 +531,7 @@ The last step is to **include** the component mixins:
 @include igx-grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -566,7 +567,7 @@ $custom-theme: igx-grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/palette.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -635,7 +636,7 @@ import 'core-js/es7/array';
 
 ## Additional Resources
 
-* [Grid Overview](grid.md)
+* [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

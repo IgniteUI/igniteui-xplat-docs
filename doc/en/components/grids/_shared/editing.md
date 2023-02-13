@@ -4,6 +4,7 @@ _description: Get a powerful public API and an easy way to perform data manipula
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 test1 `{ComponentName}`

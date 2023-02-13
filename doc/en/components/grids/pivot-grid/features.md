@@ -3,13 +3,14 @@ title: {Platform} {PivotGridTitle} Features | Pivot Tables | Infragistics
 _description: Create fast, responsive {Platform} {PivotGridTitle} and tables with {ProductName} and perform complex data analysis via pivot data.
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features
 mentionedTypes: ['Infragistics.Controls.Grid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {PivotGridTitle} Features
 
 The pivot and flat grid components inherit from a common base and thus share some functionality and features.
 
->[!NOTE]
+> [!Note]
 >Some features do not have meaningful behavior in the context of a pivot table and therefore cannot be enabled for `PivotGrid`. These include:
 > - CRUD operations
 > - Grouping
@@ -21,7 +22,7 @@ The {PivotGridTitle} component has additional features and functionalities relat
 
 <code-view style="height: 700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/pivot-grid/features"
+           iframe-src="{environment:dvDemosBaseUrl}/{PivotGridSample}-features"
            github-src="{PivotGridSample}/features"
            alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
 </code-view>
@@ -31,12 +32,12 @@ The {PivotGridTitle} component has additional features and functionalities relat
 
 All dimensions (filters, rows, columns) can be filtered via the chip UI or the API. This functionality is embedded and enabled by default.
 
->[!NOTE]
+> [!Note]
 >You can use the filtering dimension to filter out data values which are not a part of the pivot view.
 
 The filtering UI can be opened via the dimension chips filter icon and allows excel-style filtering of the unique dimension values.
 
->[!NOTE]
+> [!Note]
 >If there is not enough space for all of the filtering chips, the {PivotGridTitle} will show the ones that were cut off into a dropdown. End-users can access and manipulate them there.
 
 Dimensions can also be filtered initially via the dimension configuration in `PivotConfiguration` with the dimension's `filter` property.
@@ -204,7 +205,7 @@ All chips can change their order within their area by drag & drop.
 The chips from `rows`, `column`, `filter`(dimension chips) can be moved from any of those areas to any other and at any place.
 Chips from these areas can not be moved to the `values` area and chips from the `values` area can not be moved to any of the dimension areas.
 
->[!NOTE]
+> [!Note]
 >The chips from the {PivotGridTitle} can not be moved to the Pivot Data Selector and items from the Pivot Data Selector can not be moved to the {PivotGridTitle}.
 
 ## API References

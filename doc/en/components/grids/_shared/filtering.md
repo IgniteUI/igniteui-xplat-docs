@@ -4,6 +4,7 @@ _description: Start using angular filter to return specific data with {Platform}
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Filtering
@@ -86,7 +87,7 @@ To enable the [Advanced filtering](advanced-filtering.md) however, you need to s
 ```
 <!-- end: WebComponents -->
 
->[!NOTE]
+> [!Note]
 >You can enable both the `QuickFilter` or `ExcelStyleFilter` and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 ## Interaction
@@ -144,7 +145,7 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 </IgbGrid>
 ```
 
-> [!NOTE]
+> [!Note]
 > If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
 
 You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
@@ -174,7 +175,7 @@ this.grid.filter('ProductName', 'myproduct', IgcStringFilteringOperand.instance(
 
 The only required parameters are the column field key and the filtering term. Both the condition and the case sensitivity will be inferred from the column properties if not provided. In the case of multiple filtering, the method accepts an array of filtering expressions.
 
-> [!NOTE]
+> [!Note]
 > The filtering operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
 ```typescript
@@ -651,10 +652,10 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
->[!NOTE]
+> [!Note]
 >We scope the **igx-button** and the **igx-input-group** mixins within `.igx-grid__filtering-row`, so that only the filtering row buttons and its input group would be styled. Otherwise other buttons and input groups in the grid would be affected too.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an `Emulated` ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -711,7 +712,7 @@ $dark-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -816,14 +817,14 @@ Don't forget to include the themes in the same way as it was demonstrated above.
            alt="{Platform} {ComponentTitle} Filtering Style Example">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
 
 ## Known Limitations
 
-> [!NOTE]
+> [!Note]
 > Some browsers such as Firefox fail to parse regional specific decimal separators by considering them grouping separators, thus resulting in them being invalid. When inputting such values for a numeric column filter value, only the valid part of the number will be applied to the filtering expression. For further information, refer to the Firefox [issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1199665).
 
 <!-- Angular -->

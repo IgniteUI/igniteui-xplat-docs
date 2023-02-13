@@ -95,7 +95,7 @@ Now that the spreadsheet module is imported, next is the basic configuration of 
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

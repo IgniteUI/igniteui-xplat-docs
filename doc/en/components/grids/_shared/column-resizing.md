@@ -4,6 +4,7 @@ _description: Start using {Platform} {ComponentTitle} Column Resizing in order t
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform}  {ComponentTitle} Column Resizing Overview
@@ -297,7 +298,7 @@ TO DO!
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
->[!NOTE]
+> [!Note]
 > There is a slight difference in the way resizing works for columns set in pixels and percentages.
 
 **Pixels**
@@ -443,7 +444,7 @@ $custom-grid-theme: grid-theme(
 );
 
 ```
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
 
 ```scss
@@ -475,7 +476,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please, refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -524,7 +525,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
            github-src="{ComponentSample}/column-resize-styling">
 </code-view>
 
->[!NOTE]
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

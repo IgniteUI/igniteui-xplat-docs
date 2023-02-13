@@ -3,6 +3,7 @@ title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
 mentionedTypes: ['TreeGrid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Tree Grid Overview and Configuration
@@ -158,7 +159,7 @@ Regardless of which option is used for building the tree grid's hierarchy (child
 - `GridCell` - Ordinary cell that contains a value.
 - `TreeGridCell` - Tree cell that contains a value, an expand/collapse indicator and an indentation div element, which is based on the level of the cell's row. The level of a row component can be accessed through the `level` property of its inner `treeRow`.
 
-> [!NOTE]
+> [!Note]
 > Each row can have only one tree cell, but it can have multiple (or none) ordinary cells.
 
 ### Initial Expansion Depth

@@ -98,7 +98,7 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
 
 ## 単一選択
@@ -135,7 +135,7 @@ IgrRatingModule.register();
            github-src="inputs/rating/custom">
 </code-view>
 
-> [!NOTE]
+> [!Note]
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
 
 ## 空および選択済み

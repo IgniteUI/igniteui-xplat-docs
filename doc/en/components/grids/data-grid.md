@@ -1,8 +1,9 @@
 ---
-title: {Platform} Data Grid Component (Data Table) - Infragistics 
-_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now! 
+title: {Platform} Data Grid Component (Data Table) - Infragistics
+_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
+namespace: Infragistics.Controls
 ---
 
 <style>
@@ -133,7 +134,7 @@ For more details on how to customize the appearance of the grid, you may have a 
 
 ### Component Modules
 
-The `DataGrid` requires the following modules: 
+The `DataGrid` requires the following modules:
 
 ```razor
 // in Program.cs file
@@ -327,7 +328,7 @@ function formatUppercase(value) {
 }
 ```
 
->[!NOTE]
+> [!Note]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
@@ -536,7 +537,7 @@ When changing data through the **cell template** using `ngModel`, you need to ca
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
 <!-- Angular -->
@@ -1693,7 +1694,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1701,20 +1702,20 @@ platformBrowserDynamic()
   .catch(err => console.error(err));
 ```
 
->[!NOTE]
+> [!Note]
 > This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github]({GithubLink}/discussions) page.
 
->[!NOTE]
+> [!Note]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
 
 <!-- end: Angular -->
 
 ## Styling {Platform} Grid
-> [!NOTE]
+> [!Note]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">

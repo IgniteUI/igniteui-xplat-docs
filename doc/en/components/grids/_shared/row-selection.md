@@ -4,6 +4,7 @@ _description: Perform data manipulation without affecting the underlying data wi
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Row Selection
@@ -494,7 +495,7 @@ In the above example we are using an `igx-checkbox` and we bind `rowContext.sele
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle the current row, especially in a child grid, when you implement a click handler that overrides the base functionality.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -568,7 +569,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 Each hierarchy level in an `{ComponentSelector}` can have its own row and header templating.
 
-> [!NOTE]
+> [!Note]
 The `headContext.selectAll()` and `headContext.deselectAll()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle all rows, especially in a child grid, when you implement a click handler that overrides the base functionality.
 
 <!-- ComponentEnd: HierarchicalGrid -->

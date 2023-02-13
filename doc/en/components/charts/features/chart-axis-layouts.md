@@ -9,7 +9,7 @@ mentionedTypes: [ "DomainChart", "CategoryChart", "XYChart", "DomainChart", "Xam
 
 All {ProductName} charts include options to configure many axis layout options such as location as well as having the ability to share axis between series or have multiple axes in the same chart. These features are demonstrated in the examples given below.
 
-> [!NOTE]
+> [!Note]
 > the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
 ## Axis Locations Example

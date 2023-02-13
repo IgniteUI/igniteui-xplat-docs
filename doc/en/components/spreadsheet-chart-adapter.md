@@ -82,7 +82,7 @@ There are over 35 chart types supported by the Spreadsheet ChartAdapters includi
 
 ## Dependencies
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

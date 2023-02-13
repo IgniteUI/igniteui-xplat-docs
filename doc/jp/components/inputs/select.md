@@ -62,7 +62,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 <!-- end: Blazor -->
 
-> [!NOTE]
+> [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
 コンポーネントの使用を開始するには、選択する `igc-select-item` のリストとともに `igc-select` を追加します。
@@ -106,7 +106,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 複数の `igc-select-item` を `igc-select-group` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`igc-select-group` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
 
-> [!NOTE] 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
+> [!Note]
+> 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
@@ -139,7 +140,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 - <kbd>下 / 右矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
-> [!NOTE] `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
+> [!Note]
+> `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
 <!-- WebComponents -->
 
@@ -151,29 +153,29 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 **Select コンポーネント**
 
-部分名 | 説明
----------|------------
-`input` | カプセル化された igc-input。
-`label` | カプセル化されたテキスト ラベル。
-`list` | オプションのリストを保持するラッパー。
-`prefix`  | 入力の前にコンテンツを描画するプレフィックス ラッパー。
-`suffix` | 入力後にコンテンツを描画するサフィックス ラッパー。
-`toggle-icon` | サフィックス ラッパー内のコンテンツを描画するトグル アイコン ラッパー。
-`helper-text` | 入力の下にコンテンツを描画するヘルパー テキスト ラッパー。
+| 部分名 | 説明 |
+| ---------|------------ |
+| `input` | カプセル化された igc-input。 |
+| `label` | カプセル化されたテキスト ラベル。 |
+| `list` | オプションのリストを保持するラッパー。 |
+| `prefix`  | 入力の前にコンテンツを描画するプレフィックス ラッパー。 |
+| `suffix` | 入力後にコンテンツを描画するサフィックス ラッパー。 |
+| `toggle-icon` | サフィックス ラッパー内のコンテンツを描画するトグル アイコン ラッパー。 |
+| `helper-text` | 入力の下にコンテンツを描画するヘルパー テキスト ラッパー。 |
 
 **Select Item コンポーネント**
 
-部分名 | 説明
----------|------------
-`content` | 項目のテキスト コンテンツを保持するメイン ラッパー。
-`prefix`  | メイン ラッパーの前にコンテンツを描画するプレフィックス ラッパー。
-`suffix` | メイン ラッパーの後にコンテンツを描画するサフィックス ラッパー。
+| 部分名 | 説明 |
+| ---------|------------ |
+| `content` | 項目のテキスト コンテンツを保持するメイン ラッパー。 |
+| `prefix`  | メイン ラッパーの前にコンテンツを描画するプレフィックス ラッパー。 |
+| `suffix` | メイン ラッパーの後にコンテンツを描画するサフィックス ラッパー。 |
 
 **Select Group コンポーネント**
 
-部分名 | 説明
----------|------------
-`label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。
+| 部分名 | 説明 |
+| ---------|------------ |
+| `label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
 
 <code-view style="height: 380px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"

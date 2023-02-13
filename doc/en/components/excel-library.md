@@ -132,7 +132,7 @@ The following is a list of the supported versions of Excel.**
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > The Excel Library does not support the Excel Binary Workbook (.xlsb) format at this time.
 
 ## Load and Save Workbooks
@@ -176,7 +176,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >

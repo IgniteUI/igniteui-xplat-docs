@@ -102,11 +102,11 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ                  | コントロール名   | API メンバー
-----------------------------|----------------|------------------------
-散布マーカー              | `XamDataChart` | `ScatterSeries`
-散布折れ線                | `XamDataChart` | `ScatterLineSeries`
-散布スプライン              | `XamDataChart` | `ScatterSplineSeries`
-高密度散布        | `XamDataChart` | `HighDensityScatterSeries`
-散布エリア                | `XamDataChart` | `ScatterAreaSeries`
-散布等高線             | `XamDataChart` | `ScatterContourSeries`
+| チャート タイプ                  | コントロール名   | API メンバー |
+| ----------------------------|----------------|------------------------ |
+| 散布マーカー              | `XamDataChart` | `ScatterSeries` |
+| 散布折れ線                | `XamDataChart` | `ScatterLineSeries` |
+| 散布スプライン              | `XamDataChart` | `ScatterSplineSeries` |
+| 高密度散布        | `XamDataChart` | `HighDensityScatterSeries` |
+| 散布エリア                | `XamDataChart` | `ScatterAreaSeries` |
+| 散布等高線             | `XamDataChart` | `ScatterContourSeries` |

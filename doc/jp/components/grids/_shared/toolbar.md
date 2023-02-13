@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infrag
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ツールバー
@@ -119,7 +120,8 @@ _language: ja
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> 注: 上記のコード スニペットに示されているように、事前定義された `Actions` UI コンポーネントは `GridToolbarActions` にラップされています。このように、ツールバーのタイトルはツールバーの左側に配置され、アクションはツールバーの右側に配置されます。
+> [!Note]
+> 上記のコード スニペットに示されているように、事前定義された `Actions` UI コンポーネントは `GridToolbarActions` にラップされています。このように、ツールバーのタイトルはツールバーの左側に配置され、アクションはツールバーの右側に配置されます。
 
 これらの UI はそれぞれ独立して追加することも、まったく追加しないこともできます。このようにして、ツールバー コンテナは空になります。
 
@@ -396,7 +398,7 @@ constructor() {
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > `{ComponentName}` または階層下の子グリッドのいずれかをエクスポートすると、エクスポートされるデータは、それぞれのグリッドに属する行のフラット コレクションになります (子グリッドはエクスポートされたデータに含まれません)。
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -469,7 +471,7 @@ export class AppModule { ... }
 
 エクスポートされたファイル名を変更することに加えて、ユーザーは `ToolbarExporting` イベントを待機し、イベント プロパティのオプション エントリをカスタマイズすることで、エクスポーター オプションをさらに構成できます。
 
-> [!NOTE]
+> [!Note]
 > デフォルトで CSV にエクスポートした際にエクスポーターがカンマ区切りセパレーターを使用してエクスポートし、出力ファイルに .csv 拡張しを使用します。
 > エクスポーターのイベントにサブスクライブまたはエクスポーター オプション フィールドの値を変更して、エクスポート パラメーターをカスタマイズできます。
 > またイベント引数のキャンセル フィールドを true に設定してエクスポートをキャンセルすることもできます。
@@ -585,7 +587,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 ## カスタム コンテンツ
 
-> [!NOTE]
+> [!Note]
 > これは、古いツールバー テンプレート ディレクティブを置き換えます。v11 より前のバージョンから移行する場合は、マイグレーションによってテンプレート コンテンツの移動が処理されます。ただし、テンプレート内のバインディングは処理しないため、マイグレーションの完了後に、変更されたテンプレート ファイルを再確認してください。
 
 ツールバー コンポーネントのアクション部分が特定のユース ケースに十分でない場合、ツールバー自体には、ユーザーが追加の UI を提供できる一般的なコンテンツ プロジェクションがあります。ユーザーが API 呼び出しまたはバインディングにそれぞれのグリッド インスタンスを必要とする場合は、テンプレート参照変数を作成できます。
@@ -712,7 +714,7 @@ $dark-input-group-theme: input-group-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >`$legacy-support` が `false(default)` に設定されている場合、css 変数 を以下のように含めます。
 
 ```scss
@@ -725,7 +727,7 @@ $dark-input-group-theme: input-group-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
 ```scss

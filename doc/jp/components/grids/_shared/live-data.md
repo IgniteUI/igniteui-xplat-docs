@@ -4,6 +4,7 @@ _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応�
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} のライブ データ更新
@@ -51,7 +52,7 @@ _language: ja
     this.localService.records.subscribe(x => { this.data = x; });
 ```
 
-データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
+データ フィールド値の変更またはデータ オブジェクト/データ コレクション参照の変更により、対応するパイプがトリガーされます。ただし、これは[複合データ オブジェクト](../data-grid.md#複雑なデータ-バインディング)にバインドされている列には当てはまりません。この状況を解決するには、プロパティを含むデータ オブジェクトの新しいオブジェクト参照を提供します。例:
 
 ```Razor
 <IgbDataGrid data="data">
