@@ -77,10 +77,10 @@ stages:
         language: jp
 
     - template: templates/build-steps-make-pr.yml
-        parameters:
-          buildType: $(buildType)
-          platform: Angular
-          language: jp
+      parameters:
+        buildType: $(buildType)
+        platform: Angular
+        language: jp
 
     - template: templates/build-steps-template.yml
       parameters:
@@ -101,10 +101,10 @@ stages:
         language: kr
 
     - template: templates/build-steps-make-pr.yml
-        parameters:
-          buildType: $(buildType)
-          platform: Angular
-          language: kr
+      parameters:
+        buildType: $(buildType)
+        platform: Angular
+        language: kr
 
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'
