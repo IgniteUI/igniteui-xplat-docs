@@ -4,6 +4,7 @@ _description: Check how easy it is to use cell data selection using variety of e
 _keywords: data select, igniteui for {Platform}, infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Cell Selection

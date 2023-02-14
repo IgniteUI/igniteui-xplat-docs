@@ -5,6 +5,7 @@ _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, �
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 一括編集とトランザクション

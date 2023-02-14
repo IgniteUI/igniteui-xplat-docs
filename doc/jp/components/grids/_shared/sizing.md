@@ -5,6 +5,7 @@ _keywords: sizing, {Platform}, {ComponentKeywords}, {ProductName}, サイズ設�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} サイズ変更

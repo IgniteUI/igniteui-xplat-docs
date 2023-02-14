@@ -4,6 +4,7 @@ _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応�
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} のライブ データ更新

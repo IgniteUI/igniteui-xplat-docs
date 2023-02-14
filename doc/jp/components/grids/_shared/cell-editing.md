@@ -5,6 +5,7 @@ _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {P
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->

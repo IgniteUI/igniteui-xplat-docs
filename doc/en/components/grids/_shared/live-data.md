@@ -3,6 +3,7 @@ title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
 _description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
 sharedComponents: ["Grid", "TreeGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Live Data Updates

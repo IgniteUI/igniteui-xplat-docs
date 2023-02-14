@@ -4,6 +4,7 @@ _description: Row dragging in {Platform} {ComponentTitle} is used to quickly rea
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # Row Dragging in {Platform} {ComponentTitle}

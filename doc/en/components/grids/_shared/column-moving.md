@@ -4,6 +4,7 @@ _description: Set custom column order & enable columns reordering via drag/drop 
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {ComponentTitle} Column Reordering & Moving

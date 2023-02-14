@@ -136,9 +136,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
+</code-view>
 
 ### Outlined ボタン
 
@@ -156,9 +157,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+<code-view style="height: 80px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
+</code-view>
 
 ### Flat ボタン
 
@@ -176,9 +178,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
+</code-view>
 
 ### Floating Action ボタン
 
@@ -196,9 +199,10 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
+</code-view>
 
 ## ボタンのサイズ設定
 
@@ -333,9 +337,10 @@ public onRadioChange(e: any) {
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
+</code-view>
 
 ## スタイル設定
 

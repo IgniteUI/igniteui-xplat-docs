@@ -4,6 +4,7 @@ _description: Get started with the {Platform} sorting feature of {ProductName} {
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Sorting

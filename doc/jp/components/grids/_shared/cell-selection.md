@@ -5,6 +5,7 @@ _keywords: data select, igniteui for {Platform}, infragistics, データ選択, 
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->

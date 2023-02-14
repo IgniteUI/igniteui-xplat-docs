@@ -4,6 +4,7 @@ _description: Configure {Platform} {ComponentTitle} summaries in the group foote
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Summaries

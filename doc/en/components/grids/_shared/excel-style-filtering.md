@@ -4,6 +4,7 @@ _description: Learn how to configure Excel filtering in {Platform} {ComponentTit
 _keywords: excel like filter, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # Excel Filtering in {Platform} {ComponentTitle}
