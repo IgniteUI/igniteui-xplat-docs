@@ -178,12 +178,23 @@ function transformCodeRefs(options: any) {
 
     function transformRef(node: any, index: number, parent: any) {
         let memberName = node.value;
+        if (memberName == "") {
+            transformWarning("found empty API member: ``");
+            return;
+        }
+
+        if (memberName && (
+            memberName.indexOf('sample=') >= 0 ||
+            memberName.indexOf('height=') >= 0)) {
+            return; // skip sample code viewers
+        }
+
         let docs = options.docs;
         let apiDocRoot: string = docs.apiDocRoot;
         let apiDocOverrideRoot: string = docs.apiDocOverrideRoot;
         let apiDocOverrideComponents: string[] = docs.apiDocOverrideComponents;
-        let createLink: boolean = <boolean><any>apiDocRoot;
         let apiTypeName: string | null = null;
+        let createLink: boolean = <boolean><any>apiDocRoot;
         let isTypeName: boolean = false;
 
         let memberHasCustomCSS = memberName.indexOf("--") == 0;
@@ -194,10 +205,6 @@ function transformCodeRefs(options: any) {
         let memberHasCharDot = memberName.includes(".", 0);
         let memberHasCharSpace = memberName.includes(" ");
         let memberHasInlineCode = memberName.includes("=") || memberName.includes(":") || memberName.includes("&") || memberName.includes("{");
-
-        if (memberName == "") {
-            transformWarning("found empty API member");
-        }
 
         if (memberHasCharSpace && !memberHasCharDot && !memberHasInlineCode) {
             var correctedMember = Strings.replace(Strings.toTitleCase(memberName), " ", "");
@@ -986,37 +993,146 @@ function componentsEqual(components: string[], otherComponents: string[]): boole
 }
 
 function transformSamples(options: any) {
+    // node.value=
+    // ``` sample="/charts/data-chart/bar-chart-multiple-sources", height=600, alt="{Platform} Bar Chart Multiple Sources" ```
     function transformSection(node: any, index: number, parent: any) {
 
-        // {
-        //     type: 'html',
-        //     value: '<code-view style="height: 480px"\r\n' +
-        //       '        data-demos-base-url="https://localhost:44317/blazor-client"\r\n' +
-        //       '        iframe-src="https://localhost:44317/blazor-client/scheduling/calendar-overview"\r\n' +
-        //       '        alt="{Platform} Calendar Example"\r\n' +
-        //       '        github-src="scheduling/calendar/overview">',
-        //     position: {
-        //       start: { line: 24, column: 1, offset: 1385 },
-        //       end: { line: 28, column: 54, offset: 1682 }
-        //     }
-        //   }
-        if (node.lang === "json" && node.value.indexOf('"sample":') >= 0) {
-            // console.log(node);
-            var height = 100;
-            var str = '<code-view style="height: ' + height + 'px" \n';
-            str += '   alt="{Platform} Calendar Example" \n';
-            str += '   iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview" \n';
-            str += '   github-src="scheduling/calendar/overview" \n';
-            str += '</code-view> \n';
-            // node.value = str;
-            // node.lang = "text";
+        // console.log(node);
+        if (!node) return;
+        if (!node.value) return;
+
+        // if (!node.children) return;
+        // if (!node.children[0]) return;
+        // if (!node.children[0].children) return;
+        // if (!node.children[0].children[0]) return;
+        // if (!node.children[0].children[0].value) return;
+        // console.log(node.children[0].children);
+
+        var code = node.value;
+        // var code = node.children[0].children[0].value;
+
+        if (code.indexOf('sample=') < 0) return;
+
+        var nodeLocation = options.filePath + ":";
+        if (node.position && node.position.start && node.position.line) {
+            nodeLocation +=  ":" + node.position.start.line;
         }
-        console.log(node);
+
+        if (code.indexOf(',') < 0) {
+            throw new Error("Topic is defines a sample without a comma between settings " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+        }
+
+        // extracting info for the sample
+        var sample: any = {};
+        var parts = code.split(',');
+        for (const part of parts) {
+            if (part.indexOf('alt=') >= 0) {
+                sample.alt = part.replace('alt=', "").split('"').join('').trim();
+            }
+
+            if (part.indexOf('height=') >= 0) {
+                sample.height = part.replace('height=', "").split('"').join('').replace('px', "").trim();
+            }
+
+            if (part.indexOf('sample=') >= 0) {
+                sample.path = part.replace('sample=', "").split('"').join('').trim();
+                if (sample.path.indexOf('/') === 0)  {
+                    sample.path = sample.path.replace('/', "")
+                }
+                sample.file = options.docs.samplesGithubFile;
+                sample.github = options.docs.samplesGithubTree + sample.path;
+
+                // TODO in 23.1, remove:
+                var routingParts = sample.path.split('/');
+                if (routingParts.length !== 3) {
+                    throw new Error("Failed to generate routing path " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+                }
+
+                // TODO in 23.1, replace sample.route = sample.path;
+                sample.route = routingParts[0] + "/" + routingParts[1] + "-" + routingParts[2]
+            }
+        }
+
+        if (!sample.alt) {
+            throw new Error("Topic is defines a sample without 'alt=' setting " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+        }
+
+        if (!sample.height) {
+            throw new Error("Topic is defines a sample without 'height=' setting " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+        }
+
+        if (!sample.path) {
+            throw new Error("Topic is defines a sample without 'sample=' path setting " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+        }
+
+        var sampleHostEnvironment = "";
+        if (options.platform === APIPlatform.Angular) {
+            sampleHostEnvironment = "{environment:dvDemosBaseUrl}";
+        } else {
+            sampleHostEnvironment = "{environment:demosBaseUrl}";
+        }
+
+        // generating <code-view />
+        var str = '<code-view style="height: ' + sample.height + 'px" alt="' + sample.alt + '"\n';
+        str += '    data-demos-base-url="' + sampleHostEnvironment + '"\n';
+        str += '             iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
+        str += '                                   github-src="' + sample.path + '">\n';
+        str += '</code-view>\n';
+
+        if (options.platform === APIPlatform.Angular) {
+            // injecting sandbox and stackblitz buttons below <code-view />
+            let editButtonTemplate = fs.readFileSync('./templates/sample.edit.buttons.html').toString();
+            // let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
+            let stackblitz = "https://stackblitz.com/" +  sample.github + "?file=src" + sample.file.replace('/', "%2F");
+            let sandbox = "https://codesandbox.io/s/" + sample.github + "?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/" + sample.file;
+            let editButtons = editButtonTemplate + "";
+
+            if (options.docs.samplesDisplayStackblitz) {
+                editButtons = editButtons.replace('{stackblitz}', stackblitz);
+            }
+            if (options.docs.codeSandboxButtonInject) {
+                editButtons = editButtons.replace('{sandbox}', sandbox);
+            }
+
+            if (options.docs.samplesDisplayStackblitz ||
+                options.docs.codeSandboxButtonInject) {
+                str += '\n';
+                str += editButtons + '\n';
+            }
+        }
+
+        node.value = str;
+        node.type = "html";
+        // node.children = undefined;
+        // console.log(node);
+        // console.log(node.type + " " + node.value); json
     }
 
     return function (tree: any) {
-        visit(tree, 'html', transformSection)
+        visit(tree, 'inlineCode', transformSection)
+        // visit(tree, 'blockquote', transformSection)
+        // visit(tree, 'html', transformSection)
         // visit(tree, 'code', transformSection)
+    }
+}
+
+function transformSampleLinks(options: any, sampleHost: string) {
+    function transformSection(node: any, index: number, parent: any) {
+
+        // console.log("transformSampleLinks " + sampleHost);
+        // console.log(node.type + " " + node.value);
+        if (sampleHost === "") return;
+        if (node.value.indexOf('environment') < 0) return;
+
+        if (node.type === "html") {
+            // console.log(node);
+
+            node.value = node.value.split("{environment:dvDemosBaseUrl}").join(sampleHost);
+            node.value = node.value.split("{environment:demosBaseUrl}").join(sampleHost);
+        }
+    }
+    return function (tree: any) {
+        visit(tree, 'html', transformSection)
     }
 }
 
@@ -1146,22 +1262,23 @@ function manageAutoButtons(options: any) {
     }
 }
 
-function omitStackblitzButtons(options: any) {
-    function omitButtons(node: any, index: number, parent: any) {
-        let docs = options.docs;
-        if (node.value.indexOf("class=\"stackblitz-btn\"" ||
-        node.value.indexOf("class='stackblitz-btn'") >= 0)) {
-            if (!docs.showStackblitzButtons) {
-                node.value = node.value.replace(/<\s*button[^>]+class=['"]stackblitz-btn['"][^>]*>[\s\S]*?<\/\s*button\s*>/, "");
-            }
-        }
-        //console.log(node);
-    }
+// obsolete
+// function omitStackblitzButtons(options: any) {
+//     function omitButtons(node: any, index: number, parent: any) {
+//         let docs = options.docs;
+//         if (node.value.indexOf("class=\"stackblitz-btn\"" ||
+//         node.value.indexOf("class='stackblitz-btn'") >= 0)) {
+//             if (!docs.samplesDisplayStackblitz) {
+//                 node.value = node.value.replace(/<\s*button[^>]+class=['"]stackblitz-btn['"][^>]*>[\s\S]*?<\/\s*button\s*>/, "");
+//             }
+//         }
+//         //console.log(node);
+//     }
 
-    return function (tree: any) {
-        visit(tree, 'html', omitButtons)
-    }
-}
+//     return function (tree: any) {
+//         visit(tree, 'html', omitButtons)
+//     }
+// }
 
 function omitFencedCode(options: any) {
     function omitFence(node: any, index: number, parent: any) {
@@ -1404,6 +1521,7 @@ export class MarkdownTransformer {
 
         let options = {
             typeName: typeName,
+            filePath: filePath,
             platform: this._platform,
             mappings: this._mappings,
             // targetComponent: targetComponent,
@@ -1419,6 +1537,7 @@ export class MarkdownTransformer {
             platformSpinalPrefix: null as string | null
         };
 
+        //TODO-MT remove
         if (this._platform === APIPlatform.Angular) {
             // injecting sandbox and stackblitz buttons
             let codeViewers = fileContent.split("<code-view");
@@ -1429,6 +1548,7 @@ export class MarkdownTransformer {
                 let viewerEnd = -1;
                 let viewerStart = viewer.indexOf("code-view");
                 if (viewerStart >= 0) {
+                    //TODO-MT remove
                     let samplePath = null;
                     let lines = viewer.split("\n");
                     for (let i = 0; i < lines.length; i++) {
@@ -1443,7 +1563,7 @@ export class MarkdownTransformer {
                             viewerEnd = i + 1;
                         }
                     }
-
+                    //TODO-MT remove
                     if (viewerEnd >= 0 && samplePath !== null) {
                         let github = "github/IgniteUI/igniteui-angular-examples/tree/master/samples/" + samplePath;
                         let stackblitz = "https://stackblitz.com/" +  github + "?file=src%2Fapp.component.html";
@@ -1460,6 +1580,7 @@ export class MarkdownTransformer {
             fileContent = codeViewers.join('<code-view');
         }
 
+        let sampleHost = "";
         // resolving links to sample browsers: local, staging, production
         // except for Angular because the main Angular repo will update these links
         if (this._platform === APIPlatform.Blazor ||
@@ -1468,19 +1589,22 @@ export class MarkdownTransformer {
             // using 'samplesBrowsers' variable in docConfig.json to replace samples URLs instead of using processor in igniteui-docfx-template
             if (this._envBrowser !== undefined &&
                 this._envBrowser !== "") {
-                let browserLink = this._envBrowser;
+                sampleHost = this._envBrowser;
                 if (filePath.indexOf("\\jp\\") > 0) {
                     // changing samples links to JP production website in JP topics
-                    browserLink = browserLink.replace('www.infragistics.com', 'jp.infragistics.com');
+                    sampleHost = sampleHost.replace('www.infragistics.com', 'jp.infragistics.com');
 
                     // changing samples links to JP staging website in JP topics
-                    browserLink = browserLink.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
+                    sampleHost = sampleHost.replace('staging.infragistics.com', 'jp.staging.infragistics.com');
                 }
 
-                fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", browserLink);
-                fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", browserLink);
+                // fileContent = this.replaceAll(fileContent, "{environment:dvDemosBaseUrl}", sampleHost);
+                // fileContent = this.replaceAll(fileContent, "{environment:demosBaseUrl}", sampleHost);
             }
         }
+
+            // console.log("sampleHost " + sampleHost);
+            // console.log(this._envBrowser);
 
         // using better looking arrows between API links this way we do not mess markdown with custom symbols
         fileContent = this.replaceAll(fileContent, "` -> `",  "` &#10132; `");
@@ -1559,15 +1683,16 @@ export class MarkdownTransformer {
             })
             .use(parse)
             .use(frontmatter, ['yaml', 'toml'])
-            // .use(transformSamples, options)
+            .use(transformSamples, options)
             .use(transformDocPlaceholders, options, false) // keeping vars in metadata
             // .use(transformDocPlaceholders, options, true) // removing vars in metadata
+            .use(transformSampleLinks, options, sampleHost)
             .use(getFrontMatterTypes, options, filePath)
             .use(transformCodeRefs, options) // filePath
             .use(transformDocLinks, options)
             .use(omitPlatformSpecificSections, options)
             .use(omitComponentSpecificSections, options)
-            .use(omitStackblitzButtons, options)
+            // .use(omitStackblitzButtons, options)
             .use(manageAutoButtons, options)
             .use(finishRemove, options)
             .use(omitFencedCode, options)
