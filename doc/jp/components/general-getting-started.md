@@ -61,13 +61,12 @@ yarn create react-app my-app-name --typescript
 このトピックでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
 
 ## Ignite UI Web Components の例
-以下のサンプルは、Web Components の概要を示し、それらを利用することで適切に構造化されたアプリを作成する方法を示しています。これは、ユーザーのアバター、サイド ナビゲーション、およびメイン コンテンツ領域を含むアプリ ヘッダーを含む旅行ブログのサンプルです。
 
 <code-view style="height: 750px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
-           alt="{Platform} 概要の例"
-           github-src="layouts/getting-started/overview">
+           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
+           alt="{Platform} Overview Example"
+           github-src="maps/geo-map/display-osm-imagery">
 </code-view>
 
 # 構成
