@@ -256,7 +256,7 @@ This example demonstrates a few of the data grid’s key features:
 
 <code-view style="height: 435px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/type-marketing-table"  >
+           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-marketing-table"  >
 </code-view>
 
 <div class="divider--half"></div>
