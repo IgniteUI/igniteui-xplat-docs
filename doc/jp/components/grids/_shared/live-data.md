@@ -19,8 +19,8 @@ namespace: Infragistics.Controls
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
-           github-src="{ComponentSample}/grid-finjs"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-finjs-live-data"
+           github-src="{ComponentSample}/finjs-live-data"
            alt="Angular ライブ データ更新の例">
 </code-view>
 
@@ -96,8 +96,8 @@ private updateData(data: IRecord[]) {
 igxGrid コンポーネントは、サーバーからの高頻度の更新を簡単に処理できます。SignalR を使用する ASP.NET Core アプリケーションのコードは、この[公開な GitHub リポジトリ](https://github.com/IgniteUI/finjs-web-api)にあります。
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
-           github-src="{ComponentSample}/grid-finjs-dock-manager"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-finjs-dock-manager"
+           github-src="{ComponentSample}/finjs-dock-manager"
            alt="{Platform} {ComponentTitle} サービスを使用したライブ データ更新の例">
 </code-view>
 <!-- end: Angular -->

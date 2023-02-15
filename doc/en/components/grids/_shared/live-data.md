@@ -18,8 +18,8 @@ Feed the same data into the [Line Chart](../charts/types/line-chart.md) to exper
 
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
-           github-src="{ComponentSample}/grid-finjs"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-finjs-live-data"
+           github-src="{ComponentSample}/finjs-live-data"
            alt="Angular Live-data Update Example">
 </code-view>
 
@@ -95,8 +95,8 @@ The purpose of this demo is to showcase a financial screen board with Real-time 
 As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
 <code-view style="height:700px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
-           github-src="{ComponentSample}/grid-finjs-dock-manager"
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-finjs-dock-manager"
+           github-src="{ComponentSample}/finjs-dock-manager"
            alt="{Platform} {ComponentTitle} Live-data Update Example with a service">
 </code-view>
 <!-- end: Angular -->

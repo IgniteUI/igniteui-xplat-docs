@@ -529,8 +529,8 @@ By default, the Excel Style Filtering dialog displays the items in a list view. 
 
 <code-view style="height:650px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-tree-filter-view"
-           github-src="{ComponentSample}/tree-filter-view" >
+           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filter-view"
+           github-src="{ComponentSample}/filter-view" >
 </code-view> -->
 
 <!-- ComponentEnd: TreeGrid -->
