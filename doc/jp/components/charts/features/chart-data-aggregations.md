@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、`XAxis` の Country メンバーでグループ化し、Sales Sum に基づいて集計と並べ替えを適用する[縦棒チャート](../types/column-chart.md)を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-aggregations"
-           alt="{Platform} データ集計の例"
-           github-src="charts/category-chart/data-aggregations">
-</code-view>
+`sample="/charts/category-chart/data-aggregations", height="500", alt="{Platform} データ集計の例"`
+
+
 
 ```html
 <igx-category-chart

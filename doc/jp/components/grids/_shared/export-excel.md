@@ -15,13 +15,7 @@ Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエ
 ## {Platform} Excel Exporter の例
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} Excel Exporter の例">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Excel Exporter の例"`
 
 
 
@@ -95,13 +89,7 @@ public exportButtonHandler() {
 グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例"`
 
 <!-- ComponentEnd: Grid -->
 
@@ -112,13 +100,7 @@ public exportButtonHandler() {
 > [!Note]
 > Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
-           github-src="{ComponentSample}/multi-column-headers-export"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例"`
 
 ## 固定された列ヘッダーを使用してグリッドをエクスポートする
 

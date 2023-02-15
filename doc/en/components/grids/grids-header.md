@@ -209,12 +209,9 @@ In this {Platform} grid example, you can see how users can customize their _data
 
 <div class="divider--half"></div>
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 

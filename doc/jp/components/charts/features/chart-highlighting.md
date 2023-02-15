@@ -15,12 +15,9 @@ _language: ja
 
 以下の例は、{Platform} チャートで使用できるさまざまな強調表示オプションを示しています。チェックボックスをクリックして強調表示タイプを有効にします。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="{Platform} チャート強調表示の例"
-           github-src="charts/category-chart/column-chart-with-highlighting">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} チャート強調表示の例"`
+
+
 
 <div class="divider--half"></div>
 

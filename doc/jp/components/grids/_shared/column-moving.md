@@ -55,12 +55,9 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## {Platform} {ComponentTitle} 列移動概要の例
 
-<code-view style="height:650px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-options"
-            github-src="{ComponentSample}/column-moving-options"
-            alt="{Platform} {ComponentTitle} 列移動概要の例">
-</code-view>
+`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} 列移動概要の例"`
+
+
 
 ## 概要
 
@@ -312,12 +309,9 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-styles"
-           github-src="{ComponentSample}/column-moving-styles"
-           alt="{Platform} {ComponentTitle} 列移動スタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} 列移動スタイル設定の例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
@@ -330,9 +324,6 @@ $dark-grid-column-moving-theme: grid-theme(
 * `{ComponentName}`
 
 ## その他のリソース
-
-
-
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

@@ -15,13 +15,7 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 高度なフィルタリングの例
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
-           alt="{Platform} {ComponentTitle} 高度なフィルタリングの例"
-           github-src="{ComponentSample}/advanced-filtering-options">
-</code-view>
-
+`sample="/{ComponentSample}/advanced-filtering-options", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリングの例"`
 
 ## インタラクション
 
@@ -142,11 +136,8 @@ connectedCallback(): void {
 
 ### デモ
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-advanced-filtering"
-           github-src="{ComponentSample}/external-advanced-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} external advanced filtering"`
+
 
 ### 使用方法
 
@@ -465,11 +456,8 @@ $custom-drop-down: drop-down-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
-           github-src="{ComponentSample}/advanced-filtering-style">
-</code-view>
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

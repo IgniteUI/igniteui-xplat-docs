@@ -13,12 +13,9 @@ In {ProductName} `{ComponentName}`, row dragging is initialized on the root `{Co
 
 ## {Platform} {ComponentTitle} Row Drag Example
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
-           github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentTitle} Row Drag Example" >
-</code-view>
+`sample="/{ComponentSample}/row-drag-base", height="560", alt="{Platform} {ComponentTitle} Row Drag Example"`
+
+
 
 ## Configuration
 
@@ -305,12 +302,9 @@ The drag ghost can be templated on every grid level, making it possible to have 
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
-           github-src="{ComponentSample}/multi-row-dragging"
-           alt="{Platform} {ComponentTitle} Multi Row Drag">
-</code-view>
+`sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} Multi Row Drag"`
+
+
 
 ### Templating the Drag Icon
 
@@ -393,12 +387,9 @@ The result of the configuration can be seem below:
 
 #### Example Demo
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
-           github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentTitle} Row Drag">
-</code-view>
+`sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} Row Drag"`
+
+
 
 <!-- end: Angular -->
 
@@ -417,13 +408,7 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
-           github-src="{ComponentSample}/row-dragging"
-           alt="{Platform} {ComponentTitle} Row Drag">
-</code-view>
-
+`sample="/{ComponentSample}/row-dragging", height="560", alt="{Platform} {ComponentTitle} Row Drag"`
 
 > [!Note]
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
@@ -664,12 +649,9 @@ Notice that we also have row selection enabled and we preserve the selection whe
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
-           github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} Row Reorder">
-</code-view>
+`sample="/{ComponentSample}/row-reorder", height="700", alt="{Platform} {ComponentTitle} Row Reorder"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -926,12 +908,9 @@ Following is the example of both scenarios described above - showing a drop indi
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:830px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
-           github-src="{ComponentSample}/row-drop-indicator"
-           alt="{Platform} {ComponentTitle} Drop Indicator">
-</code-view>
+`sample="/{ComponentSample}/row-drop-indicator", height="830", alt="{Platform} {ComponentTitle} Drop Indicator"`
+
+
 
 <!-- end: Angular -->
 
@@ -951,9 +930,6 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 * `{ComponentName}`
 
 ## Additional Resources
-
-
-
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} **Forums**]({ForumsLink})

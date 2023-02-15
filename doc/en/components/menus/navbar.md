@@ -14,12 +14,9 @@ The {ProductName} Navbar informs the user of their current position in an app. T
 
 The following example represents a `Navbar` with icons and text header:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="{Platform} Navbar Overview Example"
-           github-src="menus/nav-bar/overview">
-</code-view>
+`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Overview Example"`
+
+
 
 ## Usage
 
@@ -99,13 +96,7 @@ Then in the template of `Navbar`, you can add the following code to show a basic
 
 You can added some `Icon` elements using the `Start` and `End` slots to the`Navbar` as it is shown in the following sample:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="{Platform} Navbar Styling Example"
-           github-src="menus/nav-bar/overview">
-</code-view>
-
+`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar Styling Example"`
 
 ## Styling
 
@@ -136,13 +127,7 @@ igc-navbar::part(end) {
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="{Platform} Navbar Styling Example"
-           github-src="menus/nav-bar/styling">
-</code-view>
-
+`sample="/menus/nav-bar/styling", height="100", alt="{Platform} Navbar Styling Example"`
 
 <div class="divider"></div>
 

@@ -14,12 +14,9 @@ All {Platform} Charts support highlighting of visuals such as lines, columns, an
 
 The following example demonstrates the different highlighting options that are available on the {Platform} chart. Click on the checkboxes to enable the different highlight types.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="{Platform} Highlighting Example"
-           github-src="charts/category-chart/column-chart-with-highlighting">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} Highlighting Example"`
+
+
 
 <div class="divider--half"></div>
 

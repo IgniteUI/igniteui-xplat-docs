@@ -29,12 +29,9 @@ public pivotConfigHierarchy: IgcPivotConfiguration = {
 <!-- end: WebComponents -->
 
 The following example show how to handle scenarios, where the data is already aggregated and how its structure should look like:
-<code-view style="height: 530px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-remote"
-           github-src="{PivotGridSample}/remote"
-           alt="{Platform} Pivot Grid Custom Predefined Aggregations Example">
-</code-view>
+`sample="/{PivotGridSample}/remote", height="530", alt="{Platform} Pivot Grid Custom Predefined Aggregations Example"`
+
+
 
 Users have the ability to achieve certain scenarios by feeding the pivot grid with already aggregated data.
 There are some requirements on how the data should look like and some specifics regarding hierarchies in the pivot view. For example, to declare hierarchy in **rows** dimension:

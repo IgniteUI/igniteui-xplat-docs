@@ -13,12 +13,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 複数行レイアウトの例
 
-<code-view style="height:755px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-options"
-           github-src="{ComponentSample}/multi-row-layout-options"
-           alt="{Platform} {ComponentTitle} 複数行レイアウト概要の例">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-options", height="755", alt="{Platform} {ComponentTitle} 複数行レイアウト概要の例"`
+
+
 
 複数行レイアウトの宣言は、`ColumnLayout` コンポーネントによって実現されます。各 `ColumnLayout` コンポーネントは、単一または複数の `Column` コンポーネントを含むブロックと見なします。一部のグリッド機能はブロック レベルで機能します (下記の「機能の統合」セクション参照)。たとえば、仮想化ではブロックを使用して仮想チャンクを決定します。そのため、レイアウトで許容される場合は、パフォーマンスを向上させるために列を更に `ColumnLayout` ブロックに分割します。複数行のレイアウトを設定するときは、これらのブロックの外側に列がなく、`ColumnGroup` を使用しないでください。複数行のレイアウトは、[グリッド レイアウト](https://www.w3.org/TR/css-grid-1/)仕様上に実装されており、その要件に準拠する必要があります。
 
@@ -151,12 +148,9 @@ namespace: Infragistics.Controls
 ### デモ
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-mrl-navigation"
-           github-src="{ComponentSample}/keyboard-mrl-navigation"
-           alt="{Platform} {ComponentTitle} 複数行レイアウト ナビゲーションの例">
-</code-view>
+`sample="/{ComponentSample}/keyboard-mrl-navigation", height="605", alt="{Platform} {ComponentTitle} 複数行レイアウト ナビゲーションの例"`
+
+
 
 <!-- Angular -->
 
@@ -181,12 +175,9 @@ namespace: Infragistics.Controls
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
-           github-src="{ComponentSample}/multi-row-layout-configuration"
-           alt="{Platform} {ComponentTitle} 複数行レイアウト構成の例">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-configuration", height="500", alt="{Platform} {ComponentTitle} 複数行レイアウト構成の例"`
+
+
 
 <!-- end: Angular -->
 
@@ -317,12 +308,9 @@ $my-custom-schema: extend($light-schema, (
 
 ### デモ
 
-<code-view style="height:755px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
-           github-src="{ComponentSample}/multi-row-layout-styling"
-           alt="{Platform} {ComponentTitle} 複数行レイアウトのスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} 複数行レイアウトのスタイル設定の例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

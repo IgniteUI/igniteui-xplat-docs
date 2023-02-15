@@ -14,12 +14,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 表示密度の例
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-layout-display-density"
-           github-src="{ComponentSample}/layout-display-density"
-           alt="{Platform} {ComponentTitle} 表示密度の例">
-</code-view>
+`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} 表示密度の例"`
+
+
 
 ## 使用方法
 

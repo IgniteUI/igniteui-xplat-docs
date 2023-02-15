@@ -18,12 +18,9 @@ The following examples demonstrates two high performance scenarios of {Platform}
 
 In High-Frequency scenario, the {Platform} Charts can render data items that are updating in real time or at specified milliseconds intervals. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. The following sample demonstrates the `CategoryChart` in High-Frequency scenario.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           github-src="charts/category-chart/high-frequency"
-           alt="{Platform} Chart with High-Frequency" >
-</code-view>
+`sample="/charts/category-chart/high-frequency", height="400", alt="{Platform} Chart with High Frequency"`
+
+
 
 <div class="divider--half"></div>
 
@@ -31,12 +28,9 @@ In High-Frequency scenario, the {Platform} Charts can render data items that are
 
 In High-Volume scenario, the {Platform} Charts can render 1 million of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. The following sample demonstrates the `CategoryChart` in High-Volume scenario.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           github-src="charts/category-chart/high-volume"
-           alt="{Platform} Chart with High-Volume" >
-</code-view>
+`sample="/charts/category-chart/high-volume", height="400", alt="{Platform} Chart with High Volume"`
+
+
 
 <div class="divider--half"></div>
 

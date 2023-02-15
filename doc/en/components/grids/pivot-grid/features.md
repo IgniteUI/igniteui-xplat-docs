@@ -20,12 +20,9 @@ The pivot and flat grid components inherit from a common base and thus share som
 
 The {PivotGridTitle} component has additional features and functionalities related to its dimensions as described below.
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{PivotGridSample}-features"
-           github-src="{PivotGridSample}/features"
-           alt="{Platform} {PivotGridTitle} with Pivot Selector Example">
-</code-view>
+`sample="/{PivotGridSample}/features", height="700", alt="{Platform} {PivotGridTitle} with Pivot Selector Example"`
+
+
 
 <!-- Angular -->
 ## Dimensions Filtering
@@ -169,9 +166,6 @@ In case there are multiple row or column dimensions which would create groups th
 
 ## Super Compact Mode
 The `PivotGrid` component provides a `SuperCompactMode` input. It is suitable for cases that require a lot of cells to be present on the screen at once. If enabled the option ignores the `DisplayDensity` option for the {PivotGridTitle}. Enabling `SuperCompactMode` also sets the `DisplayDensity` input to `Compact` for each child component(like `Chip`) that does not have the `SuperCompactMode` option.
-
-
-
 <!-- Angular -->
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>

@@ -14,12 +14,9 @@ The {Platform} chart's hover interactions and annotations are implemented throug
 
 The following example demonstrates the annotation layers that are available on the {Platform} chart. Click on the checkboxes to turn each layer on and off.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="{Platform} Annotations Example"
-           github-src="charts/category-chart/line-chart-with-annotations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-annotations", height="600", alt="{Platform} Annotations Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -42,12 +39,9 @@ By default, the color of the crosshair lines is a lighter color than the series 
 
 The following example shows how to configure the crosshair layer but targeting a single series, setting the type to vertical and styling the brush color.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-crosshair-layer-styling"
-           alt="{Platform} Crosshair Layer Styling"
-           github-src="charts/data-chart/crosshair-layer-styling">
-</code-view>
+`sample="/charts/data-chart/crosshair-layer-styling", height="500", alt="{Platform} Crosshair Layer Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -65,12 +59,9 @@ You can also customize this annotation by setting the following properties:
 
 The following example demonstrates how to style the final value layer annotation by setting the properties listed above.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-final-value-layer-styling"
-           alt="{Platform} Final Value Layer Styling"
-           github-src="charts/data-chart/final-value-layer-styling">
-</code-view>
+`sample="/charts/data-chart/final-value-layer-styling", height="500", alt="{Platform} Final Value Layer Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -112,12 +103,9 @@ You can also customize this annotation by setting the following properties:
 
 The following example demonstrates how to style the callout layer annotations by setting the properties listed above:
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-callout-layer-styling"
-           alt="{Platform} Callout Layer Styling"
-           github-src="charts/data-chart/callout-layer-styling">
-</code-view>
+`sample="/charts/data-chart/callout-layer-styling", height="500", alt="{Platform} Callout Layer Styling"`
+
+
 
 <div class="divider--half"></div>
 

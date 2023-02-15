@@ -12,12 +12,9 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-collapsible-groups"
-           github-src="{ComponentSample}/column-collapsible-groups"
-           alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
-</code-view>
+`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example"`
+
+
 
 ## Setup
 

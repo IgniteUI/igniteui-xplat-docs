@@ -12,12 +12,9 @@ _language: ja
 
 ## {Platform} Button の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="{Platform} Button の例"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
+
+
 
 ## 使用方法
 
@@ -136,10 +133,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</code-view>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined ボタン
 
@@ -157,10 +151,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</code-view>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat ボタン
 
@@ -178,10 +169,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</code-view>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action ボタン
 
@@ -199,10 +187,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</code-view>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## ボタンのサイズ設定
 
@@ -300,12 +285,9 @@ public onRadioChange(e: any) {
 
 上記のコードを実装した結果は、次のようになります:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="{Platform} Button のサイズ設定"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button のサイズ設定"`
+
+
 
 ### ダウンロード
 
@@ -337,10 +319,7 @@ public onRadioChange(e: any) {
 </IgbButton>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</code-view>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## スタイル設定
 
@@ -354,12 +333,9 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="{Platform} Button スタイル設定の例"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button スタイル設定の例"`
+
+
 
 ## API リファレンス
 

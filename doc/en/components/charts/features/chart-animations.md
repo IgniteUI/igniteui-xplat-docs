@@ -16,12 +16,9 @@ Animations are disabled in the {ProductName} Charts, but they can be enabled by 
 
 The following example depicts a [Line Chart](../types/line-chart.md) with an animation set to the default `TransitionInMode` - "Auto." The drop-down and slider at the top in this example will allow you to modify the `TransitionInMode` and `TransitionInDuration`, respectively, so that you can see what the different supported animations look like at different speeds.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="{Platform} Configuration Options Example"
-           github-src="charts/category-chart/line-chart-with-animations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-animations", height="500", alt="{Platform} Configuration Options Example"`
+
+
 
 <div class="divider--half"></div>
 

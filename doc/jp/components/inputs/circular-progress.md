@@ -11,12 +11,9 @@ _language: ja
 
 ## {Platform} Circular Progress の例
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-simple"
-           alt="{Platform} Circular Progress の例"
-           github-src="inputs/circular-progress-indicator/simple">
-</code-view>
+`sample="/inputs/circular-progress-indicator/simple", height="150", alt="{Platform} Circular Progress の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -121,12 +118,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 次のサンプルは、上記の構成を示しています:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-indeterminate"
-           alt="{Platform} Circular Progress Indeterminate の例"
-           github-src="inputs/circular-progress-indicator/indeterminate">
-</code-view>
+`sample="/inputs/circular-progress-indicator/indeterminate", height="150", alt="{Platform} Circular Progress Indeterminate の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -150,12 +144,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 単色の代わりにカラー グラデーションを使用するためにプログレス バーをカスタマイズするには、公開された `gradient` スロットとグラデーション境界を定義する `CircularGradient` を使用します。
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-dynamic"
-           alt="{Platform} Circular Progress Dynamic の例"
-           github-src="inputs/circular-progress-indicator/dynamic">
-</code-view>
+`sample="/inputs/circular-progress-indicator/dynamic", height="200", alt="{Platform} Circular Progress Dynamic の例"`
+
+
 
 > [!Note]
 >{ProductName} `CircularProgress` のグラデーション スロットとして定義された `CircularGradient` ごとに、[SVG Stop](https://developer.mozilla.org/ja/docs/Web/SVG/Element/stop) 要素が作成されます。`color`、`offset`、および `opacity` として渡された値は、それ以上の検証なしで、SVG 要素の stop-color、offset、および stop-opacity として設定されます。
@@ -193,12 +184,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 
 {ProductName} Circular Procress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/circular-progress-indicator-styling"
-           alt="{Platform} Circular Progress のスタイル設定"
-           github-src="inputs/circular-progress-indicator/styling">
-</code-view>
+`sample="/inputs/circular-progress-indicator/styling", height="150", alt="{Platform} Circular Progress のスタイル設定"`
+
+
 
 次の表に、Circular Progress によって公開されるすべての CSS パーツを示します:
 
@@ -217,9 +205,6 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 | warning            | 進行状況インジケーターの warning 状態。     |
 | info               | 進行状況インジケーターの info の状態。       |
 | success            | 進行状況インジケーターの success 状態。  |
-
-
-
 <div class="divider"></div>
 
 ## API リファレンス

@@ -13,12 +13,9 @@ The {ProductName} Stacked Chart belongs to a special group of charts that render
 
 The following example, you can use the drop-down to switch between all of the different types stacked charts available in the {Platform} `XamDataChart` control.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-chart-types"
-           github-src="charts/data-chart/stacked-chart-types"
-           alt="{Platform} Stacked Chart Types" >
-</code-view>
+`sample="/charts/data-chart/stacked-chart-types", height="600", alt="{Platform} Stacked Chart Types"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,12 +27,9 @@ Stacked Area Charts are rendered using a collection of points connected by line 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedAreaSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
-           github-src="charts/data-chart/stacked-area-chart"
-           alt="{Platform} Stacked Area Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-area-chart", height="600", alt="{Platform} Stacked Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -46,12 +40,9 @@ Sometimes the series represent part of a whole being changed over time e.g. 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100AreaSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
-           github-src="charts/data-chart/stacked-100-area-chart"
-           alt="{Platform} Stacked 100 Area Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-area-chart", height="600", alt="{Platform} Stacked 100 Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -64,12 +55,9 @@ The Stacked Bar Chart differs from the [Bar Chart](bar-chart.md) in that the dat
 
 In this example of an Stacked Bar Chart, we have a Numeric X Axis (bottom labels of the chart) and a Category Y Axis (left labels of the chart). You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedBarSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           github-src="charts/data-chart/stacked-bar-chart"
-           alt="{Platform} Stacked Bar Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-bar-chart", height="600", alt="{Platform} Stacked Bar Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -80,12 +68,9 @@ The {Platform} Stacked 100% Bar Chart is identical to the {Platform} stacked bar
 
 In this example of a Stacked 100% Bar Chart, the Energy Product values are shown as a 100% value of all of the data in the fragments of the horizontal bars. You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           github-src="charts/data-chart/stacked-100-bar-chart"
-           alt="{Platform} Stacked 100 Bar Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-bar-chart", height="600", alt="{Platform} Stacked 100 Bar Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -96,12 +81,9 @@ The Stacked Column Chart is identical to the [Column Chart](column-chart.md) in 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedColumnSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
-           github-src="charts/data-chart/stacked-column-chart"
-           alt="{Platform} Stacked Column Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-column-chart", height="600", alt="{Platform} Stacked Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -112,12 +94,9 @@ The Stacked 100% Column Chart is identical to the Stacked Column Chart in all as
 
 The example below shows a study made for online shopping traffic by departments via tablet, phone and personal computers. You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100ColumnSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           github-src="charts/data-chart/stacked-100-column-chart"
-           alt="{Platform} Stacked 100 Column Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} Stacked 100 Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -126,12 +105,9 @@ The example below shows a study made for online shopping traffic by departments 
 
 The Stacked Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions. You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
-           alt="{Platform} Stacked Line Chart"
-           github-src="charts/data-chart/stacked-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} Stacked Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -142,12 +118,9 @@ The Stacked 100% Line Chart is identical to the Stacked Line Chart in all aspect
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100LineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
-           alt="{Platform} Stacked 100 Line Chart"
-           github-src="charts/data-chart/stacked-100-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} Stacked 100 Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -158,12 +131,9 @@ Stacked Spline Area Charts are rendered using a collection of points connected b
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedSplineAreaSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
-           github-src="charts/data-chart/stacked-spline-area-chart"
-           alt="{Platform} Stacked Spline Area Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-area-chart", height="600", alt="{Platform} Stacked Spline Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -174,12 +144,9 @@ The Stacked 100% Spline Area Chart is identical to the Stacked Spline Area Chart
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100SplineAreaSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
-           github-src="charts/data-chart/stacked-100-spline-area-chart"
-           alt="{Platform} Stacked 100 Spline Area Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-area-chart", height="600", alt="{Platform} Stacked 100 Spline Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -188,12 +155,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 The Stacked Spline Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions. You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedSplineSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           github-src="charts/data-chart/stacked-spline-chart"
-           alt="{Platform} Stacked Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} Stacked Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -204,12 +168,9 @@ The Stacked 100% Spline Chart is identical to the Stacked Spline Chart in all as
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100SplineSeries`.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           github-src="charts/data-chart/stacked-100-spline-chart"
-           alt="{Platform} Stacked 100 Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} Stacked 100 Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 

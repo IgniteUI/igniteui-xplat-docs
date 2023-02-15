@@ -12,12 +12,9 @@ With the {ProductName} map, you can plot geographic data loaded from various fil
 ## {Platform} Binding JSON Files with Geographic Locations Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
-           alt="{Platform} Binding JSON Files with Geographic Locations Example"
-           github-src="maps/geo-map/binding-data-json-points">
-</code-view>
+`sample="/maps/geo-map/binding-data-json-points", height="500", alt="{Platform} Binding JSON Files with Geographic Locations Example"`
+
+
 
 <div class="divider--half"></div>
 

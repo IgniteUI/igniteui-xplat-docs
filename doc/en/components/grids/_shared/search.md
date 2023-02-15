@@ -15,13 +15,7 @@ The {Platform} `{ComponentName}` search enables the process of finding values in
 
 The following example represents `{ComponentName}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
-           github-src="{ComponentSample}/data-searching"
-           alt="{Platform} {ComponentTitle} Search Example">
-</code-view>
-
+`sample="/{ComponentSample}/data-searching", height="600", alt="{Platform} {ComponentTitle} Search Example"`
 
 ## {Platform} Search Usage
 

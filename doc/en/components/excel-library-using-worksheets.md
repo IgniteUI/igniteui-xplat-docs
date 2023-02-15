@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Engine's `Worksheet` is where your data is kep
 ## {Platform} Using Worksheets Example
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="{Platform} Using Worksheets Example"
-           github-src="excel/excel-library/operations-on-worksheets">
-</code-view>
+`sample="/excel/excel-library/operations-on-worksheets", height="200", alt="{Platform} Using Worksheets Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -12,12 +12,9 @@ The {ProductName} Card displays text, images, icons, and buttons in a visually r
 
 ## {Platform} Card Example
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="{Platform} Card Example"
-           github-src="layouts/card/overview">
-</code-view>
+`sample="/layouts/card/overview", height="640", alt="{Platform} Card Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -328,12 +325,9 @@ The styles that `.card-horizontal` class applies are:
 
 If everything went well, our card should look like this:
 
-<code-view style="height: 270px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="{Platform} Card Example"
-           github-src="layouts/card/horizontal">
-</code-view>
+`sample="/layouts/card/horizontal", height="270", alt="{Platform} Card Example"`
+
+
 
 ### Alternative layouts
 
@@ -430,13 +424,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 }
 ```
 
-<code-view style="height: 340px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="{Platform} Semi Horizontal Card Example"
-           github-src="layouts/card/semi-horizontal">
-</code-view>
-
+`sample="/layouts/card/semi-horizontal", height="340", alt="{Platform} Semi Horizontal Card Example"`
 
 ### Card Actions
 
@@ -523,13 +511,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="{Platform} Card Styling Example"
-           github-src="layouts/card/styling">
-</code-view>
-
+`sample="/layouts/card/styling", height="640", alt="{Platform} Card Styling Example"`
 
 ### Summary
 In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional {Platform} inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.

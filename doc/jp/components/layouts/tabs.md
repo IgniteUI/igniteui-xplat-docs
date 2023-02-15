@@ -17,12 +17,9 @@ _language: ja
 
 以下の {Platform} タブの例では、3 つの異なるタブが 1 行に並んで表示されているため、それぞれをすばやく簡単に移動できます。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-overview"
-           alt="{Platform} タブの例"
-           github-src="layouts/tabs/overview">
-</code-view>
+`sample="/layouts/tabs/overview", height="150", alt="{Platform} タブの例"`
+
+
 
 ## {ProductName} でタブを使用する方法
 
@@ -105,23 +102,17 @@ defineComponents(IgcTabsComponent);
 
 スペースがすべてのタブに収まらない場合は、スクロール ボタンが表示されます。
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-alignment"
-           alt="{Platform} タブの例"
-           github-src="layouts/tabs/alignment">
-</code-view>
+`sample="/layouts/tabs/alignment", height="200", alt="{Platform} タブの例"`
+
+
 
 ### スクローリング
 
 スクロール ボタンは、利用可能なスペースがすべての {Platform} タブを描画するのに十分でない場合に表示されます。最初のタブが表示されている場合、スクロール開始ボタンは無効になります。最後のタブが表示されている場合、スクロール終了ボタンは無効になります。スクロール ボタンの 1 つを押すと、その方向のタブが完全に表示されるようにタブがスクロールされます。または、既に表示されている場合は、その方向の前 / 次のタブが表示されます。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-scrolling"
-           alt="{Platform} タブの例"
-           github-src="layouts/tabs/scrolling">
-</code-view>
+`sample="/layouts/tabs/scrolling", height="150", alt="{Platform} タブの例"`
+
+
 
 ### キーボード ナビゲーション
 
@@ -137,12 +128,9 @@ defineComponents(IgcTabsComponent);
 
 各タブには、情報を表示するためのデフォルト スロットがあります。アイコン、テキスト、またはその両方と、開始および / または終了に追加のコンテンツを表示するための `prefix` と `suffix` のスロットです。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-prefix-suffix"
-           alt="{Platform} タブの例"
-           github-src="layouts/tabs/prefix-suffix">
-</code-view>
+`sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} タブの例"`
+
+
 
 ### スタイル設定
 

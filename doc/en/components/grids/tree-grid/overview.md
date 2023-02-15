@@ -14,12 +14,9 @@ namespace: Infragistics.Controls
 
 In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
-           github-src="{TreeGridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -149,9 +146,6 @@ In order to achieve this, the tree grid provides us with a couple of ways to def
         this._bind();
     }
 ```
-
-
-
 ### Tree Cells
 
 Regardless of which option is used for building the tree grid's hierarchy (child collection or primary and foreign keys), the tree grid's rows are constructed of two types of cells:

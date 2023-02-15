@@ -15,12 +15,9 @@ The {Platform} Scatter Polygon Chart renders an array or array of arrays of poly
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolygonSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
-           github-src="charts/data-chart/type-scatter-polygon-series"
-           alt="{Platform} Scatter Polygon Chart" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-polygon-series", height="600", alt="{Platform} Scatter Polygon Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,12 +27,9 @@ The {Platform} Scatter Polyline Chart renders an array or array of arrays of pol
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterPolylineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
-           github-src="charts/data-chart/type-scatter-polyline-series"
-           alt="{Platform} Scatter Polyline Chart" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-polyline-series", height="600", alt="{Platform} Scatter Polyline Chart"`
+
+
 
 <div class="divider--half"></div>
 

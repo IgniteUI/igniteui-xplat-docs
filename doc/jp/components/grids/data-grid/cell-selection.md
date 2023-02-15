@@ -15,12 +15,9 @@ _language: ja
 ## {Platform} グリッド選択の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
-           alt="{Platform} グリッド選択の例"
-           github-src="grids/data-grid/cell-selection">
-</code-view>
+`sample="/grids/data-grid/cell-selection", height="600", alt="{Platform} グリッド選択の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -48,12 +45,9 @@ _language: ja
 
 次の例は、グリッド内のすべての行を選択または選択解除する方法を示しています。`SelectionMode` は MultipleRow に設定する必要があることに注意してください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
-           alt="{Platform} グリッド選択の例"
-           github-src="grids/data-grid/row-selection" >
-</code-view>
+`sample="/grids/data-grid/row-selection", height="600", alt="{Platform} グリッド選択の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports loading and saving the grid la
 ## {Platform} Grid Load & Save Layout Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-load-save-layout"
-           alt="{Platform} Grid Load & Save Layout Example"
-           github-src="grids/data-grid/load-save-layout">
-</code-view>
+`sample="/grids/data-grid/load-save-layout", height="600", alt="{Platform} Grid Load & Save Layout Example"`
+
+
 
 <div class="divider--half"></div>
 

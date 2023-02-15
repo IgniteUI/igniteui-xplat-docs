@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Engine enables you to save data to and load da
 ## {Platform} Using Workbooks Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
-           alt="{Platform} Using Workbooks Example"
-           github-src="excel/excel-library/operations-on-workbooks">
-</code-view>
+`sample="/excel/excel-library/operations-on-workbooks", height="500", alt="{Platform} Using Workbooks Example"`
+
+
 
 <div class="divider--half"></div>
 

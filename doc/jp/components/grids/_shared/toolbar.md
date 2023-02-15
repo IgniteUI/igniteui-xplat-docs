@@ -22,13 +22,7 @@ namespace: Infragistics.Controls
 ## {Platform} ツール バー グリッドの例
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           github-src="{ComponentSample}/toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} ツール バーの例">
-</code-view>
-
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツール バーの例"`
 
 事前定義された `Actions` および `Title` UI コンポーネントが  `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
@@ -209,11 +203,8 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 以下にリストされているのは、ツールバーの主な機能と、それぞれのサンプル コードです。
 
-<code-view style="height:630px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
-           github-src="{ComponentSample}/toolbar-sample-2">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+
 
 
 ### Title (タイトル)
@@ -558,11 +549,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 以下のサンプルは、エクスポート ファイルをカスタマイズする方法を示します。
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
-           github-src="{ComponentSample}/toolbar-sample-3">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} toolbar sample 3"`
+
 
 
 <!-- Angular -->
@@ -577,11 +565,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 370px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
-           github-src="{ComponentSample}/data-exporting-indicator">
-</code-view>
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+
 
 <!-- end: Angular -->
 
@@ -629,11 +614,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 以下のサンプルは、列ヘッダーをクリックして並べ替えセットをクリアするためのボタンをツールバーに追加する方法です。
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
-           github-src="{ComponentSample}/toolbar-sample-4">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
+
 
 <!-- Angular -->
 
@@ -746,11 +728,8 @@ $dark-input-group-theme: input-group-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
-           github-src="{ComponentSample}/toolbar-style">
-</code-view>
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+
 
 
 <div class="divider"></div>

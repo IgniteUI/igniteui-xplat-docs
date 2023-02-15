@@ -10,12 +10,9 @@ The {ProductName} Linear Progress Indicator component provides a visual indicato
 
 ## {Platform} Linear Progress Example
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="{Platform}  Linear Progress Example"
-           github-src="inputs/linear-progress-indicator/simple">
-</code-view>
+`sample="/inputs/linear-progress-indicator/simple", height="80", alt="{Platform} Linear Progress Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -106,12 +103,9 @@ You can set the type of your indicator, using  the `variant` attribute. There ar
 
 You can make the indicator striped, using the `striped` property:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="{Platform}  Linear Progress Striped Example"
-           github-src="inputs/linear-progress-indicator/types">
-</code-view>
+`sample="/inputs/linear-progress-indicator/types", height="200", alt="{Platform} Linear Progress Striped Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -145,12 +139,9 @@ The `labelFormat` property can be used to customize the `LinearProgress` default
 
 The following sample demonstrates the above configuration:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="{Platform} Linear Progress Text Example"
-           github-src="inputs/linear-progress-indicator/striped">
-</code-view>
+`sample="/inputs/linear-progress-indicator/striped", height="200", alt="{Platform} Linear Progress Text Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -158,12 +149,9 @@ The following sample demonstrates the above configuration:
 
 You can dynamically change the value of the progress indicator by using external controls like buttons. To achieve this, we can bind the value to a class property:
 
-<code-view style="height:200px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="{Platform} Linear Progress Dynamic Example"
-           github-src="inputs/linear-progress-indicator/dynamic">
-</code-view>
+`sample="/inputs/linear-progress-indicator/dynamic", height="200", alt="{Platform} Linear Progress Dynamic Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -171,12 +159,9 @@ You can dynamically change the value of the progress indicator by using external
 
 The Linear Progress Indicator component exposes CSS parts for almost all of its inner elements.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="{Platform} Linear Progress Styling"
-           github-src="inputs/linear-progress-indicator/styling">
-</code-view>
+`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress Styling"`
+
+
 
 The following table lists all CSS parts exposed by the Linear Progress:
 

@@ -21,12 +21,9 @@ _language: ja
 
 ## {Platform} 行の GroupBy 領域の例
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-grouping"
-           alt="{Platform} 行のグループ化の例"
-           github-src="grids/data-grid/row-grouping">
-</code-view>
+`sample="/grids/data-grid/row-grouping", height="600", alt="{Platform} 行のグループ化の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -36,12 +33,9 @@ _language: ja
 
 ## グループ化説明の使用の例
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-group-descriptions"
-           alt="{Platform} 行のグループ化の例"
-           github-src="grids/data-grid/row-grouping-descriptions">
-</code-view>
+`sample="/grids/data-grid/row-group-descriptions", height="600", alt="{Platform} 行のグループ化の例"`
+
+
 
 <div class="divider--half"></div>
 

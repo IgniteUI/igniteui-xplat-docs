@@ -13,12 +13,9 @@ _language: ja
 
 次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
 
-<code-view style="height: 725px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
-           alt="{Platform} ステッパーの例"
-           github-src="layouts/stepper/overview">
-</code-view>
+`sample="/layouts/stepper/overview", height="725", alt="{Platform} ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -113,12 +110,9 @@ defineComponents(IgcStepperComponent);
 
 以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。
 
-<code-view style="height: 528px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
-           alt="{Platform} ステッパー方向の例"
-           github-src="layouts/stepper/orientation">
-</code-view>
+`sample="/layouts/stepper/orientation", height="528", alt="{Platform} ステッパー方向の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -143,12 +137,9 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 以下の例は、リニア ステッパーを構成する方法を示しています。
 
-<code-view style="height: 430px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
-           alt="{Platform} リニア ステッパーの例"
-           github-src="layouts/stepper/linear">
-</code-view>
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} リニア ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -208,12 +199,9 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 以下のサンプルは公開されたすべてのステップ タイプと変更方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
-           alt="{Platform} ステップ タイプの例"
-           github-src="layouts/stepper/steptypes">
-</code-view>
+`sample="/layouts/stepper/steptypes", height="300", alt="{Platform} ステップ タイプの例"`
+
+
 
 <div class="divider--half"></div>
 

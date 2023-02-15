@@ -14,13 +14,7 @@ A Group By behavior in an {Platform} Material table or UI grid creates grouped d
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
-           github-src="{GridSample}/groupby-expressions"
-           alt="{Platform} {ComponentTitle} Group By Example">
-</code-view>
-
+`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {ComponentTitle} Group By Example"`
 
 ## Initial Grouping State
 
@@ -231,13 +225,7 @@ Groups that span multiple pages are split between them. The group row is visible
 ### {Platform} Group By With Paging Example
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
-           github-src="{GridSample}/groupby-paging"
-           alt="{Platform} {ComponentTitle} group by with paging example">
-</code-view>
-
+`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {ComponentTitle} group by with paging example"`
 
 ## Group By With Summaries
 
@@ -271,13 +259,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 ### {Platform} Custom Group By Example
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
-           github-src="{GridSample}/groupby-custom-coming-soon"
-           alt="{Platform} {ComponentTitle} custom group by example">
-</code-view>
-
+`sample="/{GridSample}/groupby-custom-coming-soon", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
 
 The sample defines custom sorting strategies for the different date conditions.
 Each custom strategy extends the base `DefaultSortingStrategy` and defines the `CompareValues` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
@@ -502,11 +484,8 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling"
-           github-src="{GridSample}/groupby-styling">
-</code-view>
+`sample="/{GridSample}/groupby-styling", height="570", alt="{Platform} {GridTitle} groupby styling"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

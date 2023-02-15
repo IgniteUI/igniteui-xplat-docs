@@ -14,12 +14,9 @@ _canonicalLink: {CanonicalLinkToGridCellEditing}
 ## {Platform} Grid 編集の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="{Platform} Grid 編集の例"
-           github-src="grids/data-grid/cell-editing">
-</code-view>
+`sample="/grids/data-grid/cell-editing", height="600", alt="{Platform} Grid 編集の例"`
+
+
 
 <div class="divider--half"></div>
 

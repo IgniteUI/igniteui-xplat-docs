@@ -130,12 +130,9 @@ import { IgxActionStripModule } from 'igniteui-angular';
 ```
 <!-- end: WebComponents -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
-           github-src="{ComponentSample}/action-strip"
-           alt="{Platform} {ComponentTitle} アクション ストリップの例" >
-</code-view>
+`sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} アクション ストリップの例"`
+
+
 
 <!-- Angular -->
 

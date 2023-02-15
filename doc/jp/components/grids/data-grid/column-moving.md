@@ -15,12 +15,9 @@ _language: ja
 ## {Platform} グリッド列移動の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
-           alt="{Platform} グリッド列移動の例"
-           github-src="grids/data-grid/column-moving">
-</code-view>
+`sample="/grids/data-grid/column-moving", height="600", alt="{Platform} グリッド列移動の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -16,12 +16,9 @@ namespace: Infragistics.Controls
 
 以下の手順では、`{ComponentName}` で行編集を有効にする方法を示します。セル値を変更してから同じ行の他のセルをクリックまたはナビゲーションした場合も **[完了]** ボタンを使用して確定するまで行値を更新しません。または **[キャンセル]** ボタンを使用して破棄します。
 
-<code-view style="height:550px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-options"
-            github-src="{ComponentSample}/row-editing-options"
-            alt="{Platform} {ComponentTitle} 行編集の例">
-</code-view>
+`sample="/{ComponentSample}/row-editing-options", height="550", alt="{Platform} {ComponentTitle} 行編集の例"`
+
+
 
 > [!Note]
 > 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
@@ -392,12 +389,9 @@ $button-theme: button-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-style"
-           github-src="{ComponentSample}/row-editing-style"
-           alt="{Platform} {ComponentTitle} 行編集のスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイル設定の例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

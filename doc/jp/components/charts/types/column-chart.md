@@ -14,12 +14,9 @@ _language: ja
 
 次の例に示すように、データをバインドし、`ChartType` を **Column** 列挙型に設定することで、`CategoryChart` コントロールに {Platform} 縦棒チャートを作成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           github-src="charts/category-chart/column-chart-multiple-sources"
-           alt="{Platform} 複数ソースの縦棒チャート" >
-</code-view>
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -55,12 +52,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source"
-           github-src="charts/category-chart/column-chart-single-source"
-           alt="単一シリーズの {Platform} 縦棒チャート" >
-</code-view>
+`sample="/charts/category-chart/column-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} 縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -68,12 +62,9 @@ _language: ja
 
 縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="{Platform} 複数シリーズの {Platform} 縦棒チャート"
-           github-src="charts/category-chart/column-chart-multiple-sources" >
-</code-view>
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} 縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -84,12 +75,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-styling"
-           alt="{Platform} 縦棒チャートのスタイル設定"
-           github-src="charts/category-chart/column-chart-styling">
-</code-view>
+`sample="/charts/category-chart/column-chart-styling", height="600", alt="{Platform} 縦棒チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -104,12 +92,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `WaterfallSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart"
-           github-src="charts/data-chart/waterfall-chart"
-           alt="{Platform} ウォーターフォール チャート" >
-</code-view>
+`sample="/charts/data-chart/waterfall-chart", height="600", alt="{Platform} ウォーターフォール チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -119,12 +104,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedBarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
-           github-src="charts/data-chart/stacked-column-chart"
-           alt="{Platform} 積層型縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-column-chart", height="600", alt="{Platform} 積層型縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -134,12 +116,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           github-src="charts/data-chart/stacked-100-column-chart"
-           alt="{Platform} 積層型 100% 縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} 積層型 100% 縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -151,12 +130,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RangeColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart"
-           github-src="charts/data-chart/range-column-chart"
-           alt="{Platform} 範囲縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/range-column-chart", height="600", alt="{Platform} 範囲縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -166,12 +142,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
-           github-src="charts/data-chart/radial-column-chart"
-           alt="{Platform} ラジアル縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-column-chart", height="600", alt="{Platform} ラジアル縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 

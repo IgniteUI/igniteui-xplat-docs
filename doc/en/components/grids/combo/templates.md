@@ -11,12 +11,9 @@ The {ProductName} ComboBox component allows defining custom templates for differ
 
 ## ComboBox Templates Example
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-templates"
-           alt="{Platform} Combo Templates"
-           github-src="grids/combo/templates">
-</code-view>
+`sample="/grids/combo/templates", height="400", alt="{Platform} Combo Templates"`
+
+
 
 ## Template Types
 

@@ -12,11 +12,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
-           github-src="grids/data-grid/row-pinning">
-</code-view>
+`sample="/grids/data-grid/row-pinning", height="600", alt="{Platform} data grid row pinning"`
+
 
 <div class="divider--half"></div>
 

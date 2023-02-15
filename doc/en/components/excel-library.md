@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Library allows you to work with spreadsheet da
 ## {Platform} Excel Library Example
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="{Platform} Excel Library Example"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel Library Example"`
+
+
 
 <div class="divider--half"></div>
 

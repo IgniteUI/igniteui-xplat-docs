@@ -13,12 +13,9 @@ The {ProductName} Step Chart belongs to a group of category charts that render a
 
 You can create {Platform} Step Area Chart in the `CategoryChart` control by setting `ChartType` property to **StepArea** enum, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
-           github-src="charts/category-chart/step-area-multiple-sources"
-           alt="{Platform} Step Area Chart Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/step-area-multiple-sources", height="600", alt="{Platform} Step Area Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,12 +25,9 @@ The {Platform} Step Line Chart is very similar to Step Area Chart, except that t
 
 You can create Step Line Chart in the `CategoryChart` control by binding your data and setting `ChartType` property to `StepLine` value, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           github-src="charts/category-chart/step-line-multiple-sources"
-           alt="{Platform} Step Line Chart Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="{Platform} Step Line Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -41,12 +35,9 @@ You can create Step Line Chart in the `CategoryChart` control by binding your da
 
 If you need Step Charts with more features such as composite other series, you can configure the `MarkerTypes`, `MarkerBrushes`, `MarkerOutlines`, lines' `Brushes`, and lines' `Outlines` properties on the `CategoryChart` control as demonstrated below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling"
-           github-src="charts/category-chart/step-line-styling"
-           alt="{Platform} Styling Step Line Chart" >
-</code-view>
+`sample="/charts/category-chart/step-line-styling", height="600", alt="{Platform} Styling Step Line Chart"`
+
+
 
 <div class="divider--half"></div>
 

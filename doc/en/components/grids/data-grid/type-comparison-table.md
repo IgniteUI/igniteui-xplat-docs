@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports [template columns](column-type
 ## {Platform} Binding Comparison Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-comparison-table"
-           alt="{Platform} Binding Comparison Data Example"
-           github-src="grids/data-grid/type-comparison-table">
-</code-view>
+`sample="/grids/data-grid/type-comparison-table", height="600", alt="{Platform} Binding Comparison Data Example"`
+
+
 
 ## API References
 

@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Bing Maps 画像の表示の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
-           alt="{Platform} Bing Maps 画像の表示の例"
-           github-src="maps/geo-map/display-bing-imagery">
-</code-view>
+`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"`
+
+
 
 <div class="divider--half"></div>
 

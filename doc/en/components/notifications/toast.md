@@ -15,11 +15,8 @@ The {Platform} Toast component is primarily used for system messaging, push noti
 
 Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button. 
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast Example"
-           github-src="notifications/toast/overview">
-</code-view>
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast Example"`
+
 
 <div class="divider--half"></div>
 
@@ -225,12 +222,9 @@ public onDisplayTimeButtonClicked() {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="{Platform} Toast Properties Example"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast Properties Example"`
+
+
 
 ## Styling
 
@@ -244,13 +238,7 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="{Platform} Toast Styling Example"
-           github-src="notifications/toast/styling">
-</code-view>
-
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast Styling Example"`
 
 <div class="divider--half"></div>
 

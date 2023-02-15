@@ -14,11 +14,8 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 集計概要の例
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 > [!Note]
 > 列の集計は列**値すべての関数**ですが、フィルタリングが適用された場合、列の集計**はフィルターされた結果値の関数になります**。
@@ -526,11 +523,8 @@ class MySummary extends IgcNumberSummaryOperand {
 Add blazor snippet for my summary
 ```-->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 ### 集計テンプレート
 `Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
@@ -588,11 +582,8 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 <!-- end: Angular -->
 
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-template"
-           github-src="{ComponentSample}/data-summary-template" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
+
 
 ## 集計のフォーマット
 デフォルトでは、組み込みの集計オペランドによって生成される集計結果は、グリッド `Locale` および列 `PipeArgs` に従ってローカライズおよびフォーマットされます。カスタム オペランドを使用する場合、`Locale` と `PipeArgs` は適用されません。集計結果のデフォルトの外観を変更する場合は、`SummaryFormatter` プロパティを使用してフォーマットできます。
@@ -649,11 +640,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 }, false);
 ```
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
-           github-src="{ComponentSample}/data-summary-formatter" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+
 
 <!-- ComponentStart: Grid -->
 
@@ -680,11 +668,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 ### デモ
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-options"
-           github-src="{ComponentSample}/groupby-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} groupby summary options"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -711,11 +696,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 > [!Note]
 > `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
-<code-view style="height:720px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-children"
-           github-src="{ComponentSample}/data-summary-children" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} data summary children"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -843,11 +825,8 @@ $custom-theme: grid-summary-theme(
 
 上記と同じ方法でテーマを含める必要があることに注意してください。
 
-<code-view style="height:710px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-styling"
-           github-src="{ComponentSample}/groupby-summary-styling" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+
 
 <!-- end: Angular -->
 

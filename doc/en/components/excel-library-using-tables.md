@@ -10,11 +10,8 @@ The Infragistics {Platform} Excel Engine's `WorksheetTable` functionality allows
 <!--## {Platform} Using Tables Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"
-           alt="{Platform} Using Tables Example" >
-</code-view>
+`sample="/excel/excel-library/working-with-tables", height="500", alt="{Platform} Using Tables Example"`
+
 
 -->
 

@@ -27,11 +27,8 @@ namespace: Infragistics.Controls
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-options"
-           github-src="{ComponentSample}/column-sorting-options">
-</code-view>
+`sample="/{ComponentSample}/column-sorting-options", height="550", alt="{Platform} {ComponentTitle} column sorting options"`
+
 
 以下のように `Sortable` 入力を使用します。`{ComponentName}` のソートで、`SortingIgnoreCase` プロパティを設定して大文字と小文字を区別するソートができます。
 
@@ -55,11 +52,8 @@ namespace: Infragistics.Controls
 
 <!-- ComponentStart: Grid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-indicators"
-           github-src="{ComponentSample}/column-sorting-indicators" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -388,11 +382,8 @@ $custom-theme: grid-theme(
 
 ### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-style"
-           github-src="{ComponentSample}/column-sorting-style" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

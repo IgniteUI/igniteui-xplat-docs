@@ -16,12 +16,9 @@ namespace: Infragistics.Controls
 
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle}  選択の例">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} 選択の例"`
+
+
 
 ## {Platform} {ComponentTitle} 選択のオプション
 
@@ -177,11 +174,8 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
-           github-src="{ComponentSample}/custom-context-menu">
-</code-view>
+`sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} custom context menu"`
+
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

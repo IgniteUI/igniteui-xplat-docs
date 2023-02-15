@@ -13,12 +13,9 @@ The {ProductName} Treemap chart displays hierarchical (tree-structured) data as 
 
 In the following example, the treemap demonstrates the 30 largest countries in the world by total area.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="{Platform} Treemap Example"
-           github-src="charts/tree-map/overview">
-</code-view>
+`sample="/charts/tree-map/overview", height="600", alt="{Platform} Treemap Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -63,12 +60,9 @@ There are several common use cases for choosing a Treemap. When you:
 
 In the following example, the treemap demonstrates the ability of changing it's algorithmic structure by modifying the `LayoutType` and `LayoutOrientation` properties.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
-           alt="{Platform} Treemap Layout Configuration"
-           github-src="charts/tree-map/layout">
-</code-view>
+`sample="/charts/tree-map/layout", height="600", alt="{Platform} Treemap Layout Configuration"`
+
+
 
 <div class="divider--half"></div>
 
@@ -98,12 +92,9 @@ Note that the `LayoutOrientation` property works with the layout types SliceAndD
 
 In the following example, the treemap demonstrates the ability of changing the look and feel of the nodes achieved by styling through the `NodeStylingScript` event.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
-           alt="{Platform} Treemap Styling"
-           github-src="charts/tree-map/styling">
-</code-view>
+`sample="/charts/tree-map/styling", height="600", alt="{Platform} Treemap Styling"`
+
+
 
 <div class="divider--half"></div>
 
