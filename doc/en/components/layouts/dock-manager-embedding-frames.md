@@ -11,12 +11,9 @@ The Infragistics {Platform} Dock Manager component provides you with the layout 
 ## {Platform} Embedding Frames in Dock Manager Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames"
-           alt="{Platform} Embedding Frames in Dock Manager Example"
-           github-src="layouts/dock-manager/embedding-frames">
-</code-view>
+`sample="/layouts/dock-manager/embedding-frames", height="600", alt="{Platform} Embedding Frames in Dock Manager Example"`
+
+
 
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

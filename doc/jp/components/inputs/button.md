@@ -12,12 +12,9 @@ _language: ja
 
 ## {Platform} Button の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="{Platform} Button の例"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button の例"`
+
+
 
 ## 使用方法
 
@@ -136,9 +133,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined ボタン
 
@@ -156,9 +151,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat ボタン
 
@@ -176,9 +169,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action ボタン
 
@@ -196,9 +187,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## ボタンのサイズ設定
 
@@ -296,12 +285,9 @@ public onRadioChange(e: any) {
 
 上記のコードを実装した結果は、次のようになります:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="{Platform} Button のサイズ設定"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button のサイズ設定"`
+
+
 
 ### ダウンロード
 
@@ -333,9 +319,7 @@ public onRadioChange(e: any) {
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## スタイル設定
 
@@ -349,12 +333,9 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="{Platform} Button スタイル設定の例"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button スタイル設定の例"`
+
+
 
 ## API リファレンス
 

@@ -13,10 +13,7 @@ Use the map component's `GeographicSymbolSeries` to display geo-spatial data usi
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"  >
-</code-view>
+`sample="/maps/geo-map/type-scatter-symbol-series", height="400", alt="{Platform} geo map type scatter symbol series"`
 
 <div class="divider--half"></div>
 

@@ -12,11 +12,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-performance"
-           github-src="grids/data-grid/performance">
-</code-view>
+`sample="/grids/data-grid/performance", height="600", alt="{Platform} data grid performance"`
+
 
 <div class="divider--half"></div>
 

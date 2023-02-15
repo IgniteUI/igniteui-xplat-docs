@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} ワークシートの使用の例
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="{Platform} ワークシートの使用の例"
-           github-src="excel/excel-library/operations-on-worksheets">
-</code-view>
+`sample="/excel/excel-library/operations-on-worksheets", height="200", alt="{Platform} ワークシートの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

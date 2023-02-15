@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports [template columns](column-type
 ## {Platform} Binding Matrix Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-matrix-table"
-           alt="{Platform} Binding Matrix Data Example"
-           github-src="grids/data-grid/type-matrix-table">
-</code-view>
+`sample="/grids/data-grid/type-matrix-table", height="600", alt="{Platform} Binding Matrix Data Example"`
+
+
 
 ## API References
 

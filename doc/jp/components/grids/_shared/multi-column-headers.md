@@ -4,6 +4,7 @@ _description: {ProductName} グリッドを使用して列ヘッダーを共通�
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数列ヘッダー, インフラジスティックス
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 複数列ヘッダーの概要
@@ -12,12 +13,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 複数列ヘッダーの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-overview"
-           github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダー概要の例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-overview", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダー概要の例"`
+
+
 
 複数列ヘッダーの宣言は、一連の列を `ColumnGroup` コンポーネントにラップし、`Header` タイトル情報を渡すことによって実現されます。
 
@@ -234,7 +232,7 @@ TO-DO H-GRID CODE SNIPPET
 <!-- ComponentEnd: HierarchicalGrid -->
 
 すべての `ColumnGroup` は、[移動](column-moving.md)、[ピン固定](column-pinning.md)、および[非表示](column-hiding.md)をサポートしています。
-> [!NOTE]
+> [!Note]
 > 列セットと列グループがある場合、ピン固定は列の一番上の親レベルでのみ可能です。具体的には、ネストされた column groups または columns ごとのピン固定は許可されていません。 <br />
 > columns と column groups 間の移動は、それらが階層内の同じレベルにあり、両方が同じ `group` にある場合にのみ許可されます。 <br />
 > `columns/column-groups` が現在の `group` によってラップされていない場合 (**一番上のレベル** `columns` の場合)、表示されている列全体の間で移動が許可されます。
@@ -465,7 +463,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > ヘッダーが再テンプレート化され、対応する列グループが移動可能な場合は、テンプレート要素で **draggable** 属性を **false** に設定する必要があり、これにより適用されるイベントをすべて処理できます。
 
 ```html
@@ -498,13 +496,7 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 次のサンプルは、ヘッダー テンプレートを使用して折りたたみ可能な列グループを実装する方法を示しています。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-header-template"
-           github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例">
-</code-view>
-
+`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
 
 ## スタイル設定
 
@@ -531,7 +523,7 @@ $custom-theme: igx-grid-theme(
 @include igx-grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
@@ -567,7 +559,7 @@ $custom-theme: igx-grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/palette.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -612,12 +604,9 @@ $custom-theme: igx-grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
-           github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダースタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダースタイル設定の例"`
+
+
 
 ## 既知の問題と制限
 

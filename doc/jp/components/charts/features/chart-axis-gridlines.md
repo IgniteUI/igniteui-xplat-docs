@@ -11,7 +11,7 @@ _language: ja
 
 すべての {ProductName} チャートには、軸線の外観、X 軸と Y 軸に描画される主/副グリッド線および目盛りの頻度を変更するための組み込み機能が含まれています。
 
-> [!NOTE]
+> [!Note]
 > 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
 軸の主グリッド線は、軸ラベルの位置から水平 (Y 軸) または垂直 (X 軸) に伸びる長い線であり、チャートのプロット領域を介して描画されます。軸の副グリッド線は、軸の主グリッド線の間に描画される線です。
@@ -22,12 +22,9 @@ _language: ja
 
 この例は、指定した間隔で主グリッド線と副グリッド線を表示するために軸グリッド線を構成する方法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} 軸グリッド線の例"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} 軸グリッド線の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -60,12 +57,9 @@ _language: ja
 
 以下の例は、上記のプロパティを設定してグリッド線をカスタマイズする方法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} 軸グリッド線の例"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} 軸グリッド線の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +71,9 @@ _language: ja
 
 以下の例は、上記のプロパティを設定して目盛りをカスタマイズする方法を示します。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
-           alt="{Platform} 軸目盛りの例"
-           github-src="charts/category-chart/axis-tickmarks">
-</code-view>
+`sample="/charts/category-chart/axis-tickmarks", height="450", alt="{Platform} 軸目盛りの例"`
+
+
 
 <div class="divider--half"></div>
 

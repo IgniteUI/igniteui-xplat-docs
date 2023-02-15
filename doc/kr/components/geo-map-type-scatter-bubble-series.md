@@ -13,10 +13,7 @@ Use the map component's `GeographicProportionalSymbolSeries` to plot markers for
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"  >
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="400", alt="{Platform} geo map type scatter bubble series"`
 
 <div class="divider--half"></div>
 

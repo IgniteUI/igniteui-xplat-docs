@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、`XamDataChart` コントロールで `ScatterPolygonSeries` を使用してガント チャートを作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-gantt-chart"
-           github-src="charts/data-chart/gantt-chart"
-           alt="{Platform} ガント チャートの例" >
-</code-view>
+`sample="/charts/data-chart/gantt-chart", height="600", alt="{Platform} ガント チャートの例"`
+
+
 
 <div class="divider--half"></div>
 

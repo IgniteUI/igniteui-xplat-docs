@@ -5,6 +5,7 @@ _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {P
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->
@@ -22,14 +23,11 @@ _language: ja
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
-           github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例">
-</code-view>
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
 
-> [!NOTE]
+
+
+> [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 ## セルの編集
@@ -53,7 +51,7 @@ _language: ja
  - 他のセルをシングル クリック - `{ComponentName}` で他のセルをクリックしたときに変更がサブミットされます。
  - その他の操作 (ページング、サイズ変更、ピン固定、移動など) は、編集モードを終了して変更を送信します。
 
-> [!NOTE]
+> [!Note]
 > セルは、垂直/水平方向へのスクロールや `{ComponentName}` 以外をクリックした場合も編集モードのままです。セル編集と行編集両方で有効です。
 
 ### API を介した編集
@@ -195,23 +193,20 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 このコードは、`Race`、`Class`、および `Alignment` 列のセルに [SelectComponent](../select.md) を実装する以下のサンプルで使用されています。
 
-<code-view style="height:625px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
-           github-src="{ComponentSample}/cell-selection-style"
-           alt="{Platform} {ComponentTitle} Select の例">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select の例"`
+
+
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > 編集モードでセルの `EditValue` に加えられた変更は、終了時に適切な[編集イベント](editing.md#イベントの引数とシーケンス)をトリガーし、トランザクションが有効な場合はトランザクション状態に適用されます。
 
-> [!NOTE]
+> [!Note]
 > セルテンプレート `Cell` は、編集モード外での列のセルの表示方法を制御します。
 > `CellEditor` セル編集テンプレート ディレクティブは、編集モードでの列のセルの表示方法を処理し、編集されたセルの編集値を制御します。
 
-> [!NOTE]
+> [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
 
 <!-- Angular -->
@@ -291,13 +286,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 ##### {Platform} Grid Excel スタイル編集のサンプル
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
-           github-src="{ComponentSample}/editing-excel-style"
-           alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例">
-</code-view>
-
+`sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例"`
 
 上記のアプローチの主な利点は次のとおりです:
 
@@ -308,7 +297,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 ## CRUD 操作
 
-> [!NOTE]
+> [!Note]
 > **CRUD 操作**を実行した場合、**filtering**、**sorting**、**grouping** などのパイプが再適用されるため、ビューが自動的に更新されることに注意してください。
 
 `{ComponentName}` は基本的な CRUD 操作のための簡易な API を提供します。
@@ -581,12 +570,9 @@ export class MyHGridEventsComponent {
 
 以下は、上記の検証が `{ComponentName}` に適用された結果のデモです。
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
-           github-src="{ComponentSample}/editing-events"
-           alt="{Platform} {ComponentTitle} 編集イベントの例">
-</code-view>
+`sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} 編集イベントの例"`
+
+
 
 <!-- Angular -->
 
@@ -648,9 +634,9 @@ $custom-grid-theme: grid-theme(
 
 このように、{Platform} の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
- >[!NOTE]
+ > [!Note]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
@@ -666,14 +652,11 @@ $custom-grid-theme: grid-theme(
 
 上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
-           github-src="{ComponentSample}/editing-style"
-           alt="{Platform} {ComponentTitle} 編集スタイルの例">
-</code-view>
+`sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
 
->[!NOTE]
+
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

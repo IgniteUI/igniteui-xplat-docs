@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentTitle}, {ComponentName}, {ProductName}, Infragi
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Excel へのエクスポート サービス
@@ -14,13 +15,7 @@ Excel Exporter サービスは `{ComponentName}` のデータを MS Excel へエ
 ## {Platform} Excel Exporter の例
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} Excel Exporter の例">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Excel Exporter の例"`
 
 
 
@@ -42,7 +37,7 @@ export class AppModule {}
 > [!Note]
 > v12.2.1 以降では、エクスポーター サービスは root で提供されます。つまり、AppModule プロバイダーでそれらを宣言する必要はありません。
 
-> [!NOTE]
+> [!Note]
 > Excel Exporter サービスは JSZip にピア依存関係があります。JSZip ライブラリは Excel Exporter の使用時にインストールしてください。
 
 エクスポート処理の開始は、コンポーネントのテンプレートでボタンのハンドラーを使用します。
@@ -94,13 +89,7 @@ public exportButtonHandler() {
 グループ化されたデータをエクスポートするには、`{ComponentName}` を 1 つ以上の列でグループ化する必要があります。ブラウザーは、選択した列でグループ化された MSExcel 形式の `{ComponentName}` コンポーネントからのデータを含む 「ExportedDataFile.xlsx」 という名前のファイルをダウンロードします。例:
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} グループ化されたデータのエクスポートの例"`
 
 <!-- ComponentEnd: Grid -->
 
@@ -108,16 +97,10 @@ public exportButtonHandler() {
 
 定義された[複数列ヘッダー](multi-column-headers.md)を使用して `{ComponentName}` をエクスポートできるようになりました。すべてのヘッダーは、`{ComponentName}` に表示されるときに、エクスポートされた Excel ファイルに反映されます。エクスポートされたデータから定義された複数列ヘッダーを除外する場合は、`ExporterOption` `IgnoreMultiColumnHeaders` を **true** に設定できます。
 
-> [!NOTE]
+> [!Note]
 > Excel テーブルは複数の行ヘッダーをサポートしていないため、エクスポートされた `{ComponentName}` はテーブルとしてフォーマットされません。
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
-           github-src="{ComponentSample}/multi-column-headers-export"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} 複数列ヘッダーのエクスポートの例"`
 
 ## 固定された列ヘッダーを使用してグリッドをエクスポートする
 
@@ -173,7 +156,7 @@ this.excelExportService.export(this.{ComponentTitle}, new ExcelExporterOptions('
 |ピン固定列された列のエクスポート|エクスポートされた Excel ファイルでは、ピン固定列は固定されませんが、グリッドに表示されるのと同じ順序で表示されます。|
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > [JSZip](https://www.npmjs.com/package/jszip) のライブラリの[問題](https://github.com/Stuk/jszip/issues/617)が原因で、大きな Excel ファイルのエクスポートが遅延する場合があります。問題が解決するまで、Excel エクスポーターの速度を上げるために、アプリケーションに [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) をインポートできます。
 
 ```cmd

@@ -14,12 +14,9 @@ _language: ja
 
 次の例では、`Treemap` は世界の最大総面積の上位 30 の国を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="{Platform} ツリーマップの例"
-           github-src="charts/tree-map/overview">
-</code-view>
+`sample="/charts/tree-map/overview", height="600", alt="{Platform} ツリーマップの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -64,12 +61,9 @@ _language: ja
 
 次の例では、ツリーマップは、`LayoutType` プロパティと `LayoutOrientation` プロパティを変更することにより、アルゴリズム構造を変更する機能を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-layout"
-           alt="{Platform} ツリーマップのレイアウト構成"
-           github-src="charts/tree-map/layout">
-</code-view>
+`sample="/charts/tree-map/layout", height="600", alt="{Platform} ツリーマップのレイアウト構成"`
+
+
 
 <div class="divider--half"></div>
 
@@ -99,12 +93,9 @@ _language: ja
 
 次の例では、ツリーマップは、`NodeStylingScript` イベントを介してスタイル設定することによって実現されるノードのルック アンド フィールを変更する機能を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-styling"
-           alt="{Platform} ツリーマップのスタイル設定"
-           github-src="charts/tree-map/styling">
-</code-view>
+`sample="/charts/tree-map/styling", height="600", alt="{Platform} ツリーマップのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

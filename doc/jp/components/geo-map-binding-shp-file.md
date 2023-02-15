@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} シェープ ファイルを地理的データにバインディングの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="{Platform} シェープ ファイルを地理的データにバインディングの例"
-           github-src="maps/geo-map/binding-shp-polylines">
-</code-view>
+`sample="/maps/geo-map/binding-shp-polylines", height="500", alt="{Platform} シェープ ファイルを地理的データにバインディングの例"`
+
+
 
 <div class="divider--half"></div>
 

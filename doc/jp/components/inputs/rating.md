@@ -10,11 +10,8 @@ _language: ja
 
 {ProductName} 評価コンポーネントを使用すると、ユーザーはフィードバックを表示して提供できます。
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-basic" alt="{Platform} Rating の基本的な例"
-           github-src="inputs/rating/basic">
-</code-view>
+`sample="/inputs/rating/basic", height="80", alt="{Platform} Rating の基本的な例"`
+
 
 <!-- WebComponents -->
 
@@ -92,13 +89,10 @@ IgrRatingModule.register();
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="{Platform} Rating カスタム シンボルの例"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating カスタム シンボルの例"`
 
-> [!NOTE]
+
+> [!Note]
 > 評価コンポーネントの開く括弧と閉じる括弧間の評価記号の数によって、最大値が決まります。
 
 ## 単一選択
@@ -129,13 +123,10 @@ IgrRatingModule.register();
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="単一選択による {Platform} Rating"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} 単一選択による {Platform} Rating"`
 
-> [!NOTE]
+
+> [!Note]
 > `step` 属性は単一選択モードでは機能しないことに注意してください。
 
 ## 空および選択済み
@@ -148,11 +139,8 @@ IgrRatingModule.register();
 </igc-rating-symbol>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-empty" alt="空および選択状態の {Platform} Rating"
-           github-src="inputs/rating/empty">
-</code-view>
+`sample="/inputs/rating/empty", height="100", alt="{Platform} 空および選択状態の {Platform} Rating"`
+
 
 ## 構成
 
@@ -217,11 +205,8 @@ IgrRatingModule.register();
 
 `Rating` コンポーネントは、base、label、value-label、symbol、およびコンポーネント シンボルとそれに含まれるラベルのスタイルを設定できるシンボルを提供します。
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-styling" alt="{Platform} Rating スタイル設定の例"
-           github-src="inputs/rating/styling">
-</code-view>
+`sample="/inputs/rating/styling", height="80", alt="{Platform} Rating スタイル設定の例"`
+
 
 ## API リファレンス
 

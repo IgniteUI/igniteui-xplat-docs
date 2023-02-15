@@ -4,6 +4,7 @@ _description: Perform data manipulation without affecting the underlying data wi
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Row Selection
@@ -24,13 +25,7 @@ The sample below demonstrates the three types of `{ComponentName}`'s **row selec
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-mode"
-           github-src="{ComponentSample}/row-selection-mode"
-           alt="{Platform} {ComponentTitle} Row Selection Example">
-</code-view>
-
+`sample="/{ComponentSample}/row-selection-mode", height="700", alt="{Platform} {ComponentTitle} Row Selection Example"`
 
 
 ## Setup
@@ -494,7 +489,7 @@ In the above example we are using an `igx-checkbox` and we bind `rowContext.sele
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 The `rowContext.select()` and `rowContext.deselect()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle the current row, especially in a child grid, when you implement a click handler that overrides the base functionality.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -568,7 +563,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 Each hierarchy level in an `{ComponentSelector}` can have its own row and header templating.
 
-> [!NOTE]
+> [!Note]
 The `headContext.selectAll()` and `headContext.deselectAll()` methods are exposed in the template context of an `{ComponentSelector}`. They make it easier to toggle all rows, especially in a child grid, when you implement a click handler that overrides the base functionality.
 
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -579,12 +574,9 @@ The `headContext.selectAll()` and `headContext.deselectAll()` methods are expose
 
 This demo shows the usage of custom header and row selectors. The latter uses `RowContext.Index` to display row numbers and an `Checkbox` bound to `RowContext.Selected`.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
-           github-src="{ComponentSample}/row-selection-template-numbers"
-           alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-numbers", height="550", alt="{Platform} {ComponentTitle} Selection Template Numbering Example"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -595,11 +587,8 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
-           github-src="{ComponentSample}/row-selection-template-excel"
-           alt="{Platform} {ComponentTitle} Selection Template Excel Example">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} Selection Template Excel Example"`
+
 
 <!-- end: Angular -->
 
@@ -609,12 +598,9 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 
 This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-row-selectors"
-           github-src="{ComponentSample}/conditional-row-selectors"
-           alt="{Platform} {ComponentTitle} Conditional Row Selectors Example">
-</code-view>
+`sample="/{ComponentSample}/conditional-row-selectors", height="550", alt="{Platform} {ComponentTitle} Conditional Row Selectors Example"`
+
+
 
 ## API References
 

@@ -13,12 +13,9 @@ _language: ja
 
 次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
 
-<code-view style="height: 725px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
-           alt="{Platform} ステッパーの例"
-           github-src="layouts/stepper/overview">
-</code-view>
+`sample="/layouts/stepper/overview", height="725", alt="{Platform} ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,7 +76,7 @@ defineComponents(IgcStepperComponent);
 ```
 各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。
 
-> [!NOTE]
+> [!Note]
 > `Default` の `Step` スロットは、ステップのコンテンツを描画します。
 
 ```html
@@ -113,12 +110,9 @@ defineComponents(IgcStepperComponent);
 
 以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。
 
-<code-view style="height: 528px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
-           alt="{Platform} ステッパー方向の例"
-           github-src="layouts/stepper/orientation">
-</code-view>
+`sample="/layouts/stepper/orientation", height="528", alt="{Platform} ステッパー方向の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -138,17 +132,14 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 現在のオプションではないステップが有効でない場合、現在のステップを検証するまで次のステップに進むことができません。
 
-> [!NOTE]
+> [!Note]
 > オプションのステップの有効性は考慮されません。
 
 以下の例は、リニア ステッパーを構成する方法を示しています。
 
-<code-view style="height: 430px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
-           alt="{Platform} リニア ステッパーの例"
-           github-src="layouts/stepper/linear">
-</code-view>
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} リニア ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -160,7 +151,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 - **prev** – 前の無効化されていないステップをアクティブ化します。
 - **reset** – ステッパーを初期状態にリセットします。
 
-> [!NOTE]
+> [!Note]
 > reset メソッドは、ステッパーを初期状態にリセットします。つまり、最初のステップをアクティブにします。reset メソッドはステップの内容をクリアしません。これは手動で行う必要があります。
 
 ### ステップのカスタマイズ
@@ -188,7 +179,7 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 向きが垂直に設定され、タイトルの位置が**定義されていない**場合、タイトルはインジケーターの**後**に表示されます。
 
-> [!NOTE]
+> [!Note]
 > **titlePosition** プロパティは、ステッパーの StepType プロパティが *full* に設定されている場合に**のみ**適用できます。
 
 **Indicator (インジケーター)**
@@ -203,17 +194,14 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 このように、サブタイトルが定義されている場合、それらもステップ タイトルの下に描画されます。
 
-> [!NOTE]
+> [!Note]
 > このコンテナーは、サイズ制限なしで要件に応じて再テンプレート化できます。たとえば、サイズが 24 ピクセルより大きいインジケーターを中に追加できます。
 
 以下のサンプルは公開されたすべてのステップ タイプと変更方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
-           alt="{Platform} ステップ タイプの例"
-           github-src="layouts/stepper/steptypes">
-</code-view>
+`sample="/layouts/stepper/steptypes", height="300", alt="{Platform} ステップ タイプの例"`
+
+
 
 <div class="divider--half"></div>
 

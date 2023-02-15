@@ -4,6 +4,7 @@ _description: Get a powerful public API and an easy way to perform data manipula
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 test1 `{ComponentName}`
@@ -84,11 +85,8 @@ The grid exposes a wide array of events that provide greater control over the ed
 
 The following sample demonstrates the editing execution sequence in action:
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-lifecycle"
-           github-src="{ComponentSample}/editing-lifecycle" >
-</code-view>
+`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} editing lifecycle"`
+
 
 ### Features integration
 While a cell/row is in edit mode, a user may interact with the grid in many ways. The following table specifies how a certain interaction affects the current editing:
@@ -173,9 +171,6 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
-
-
-
 ## Additional Resources
 
 <!-- Angular -->

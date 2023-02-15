@@ -5,6 +5,7 @@ _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 集計
@@ -13,13 +14,10 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 集計概要の例
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
 
-> [!NOTE]
+
+> [!Note]
 > 列の集計は列**値すべての関数**ですが、フィルタリングが適用された場合、列の集計**はフィルターされた結果値の関数になります**。
 
 `{ComponentName}` 集計を列ごとに有効にして必要な列のみアクティブ化できます。`{ComponentName}` 集計は、列のデータ型に基づいてデフォルト集計の定義済みセットを提供します。
@@ -371,7 +369,7 @@ Add SummaryResult snippet here
 and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
-> [!NOTE]
+> [!Note]
 > In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -525,11 +523,8 @@ class MySummary extends IgcNumberSummaryOperand {
 Add blazor snippet for my summary
 ```-->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 ### 集計テンプレート
 `Summary` は、列の集計の結果をコンテキストとして提供する列の集計を対象としています。
@@ -581,17 +576,14 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > 列の集計テンプレートは、列 `SummaryTemplate` プロパティを必要な TemplateRef に設定することにより、API を介して定義できます。
 
 <!-- end: Angular -->
 
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-template"
-           github-src="{ComponentSample}/data-summary-template" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
+
 
 ## 集計のフォーマット
 デフォルトでは、組み込みの集計オペランドによって生成される集計結果は、グリッド `Locale` および列 `PipeArgs` に従ってローカライズおよびフォーマットされます。カスタム オペランドを使用する場合、`Locale` と `PipeArgs` は適用されません。集計結果のデフォルトの外観を変更する場合は、`SummaryFormatter` プロパティを使用してフォーマットできます。
@@ -648,11 +640,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 }, false);
 ```
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
-           github-src="{ComponentSample}/data-summary-formatter" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+
 
 <!-- ComponentStart: Grid -->
 
@@ -674,16 +663,13 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、グループ行が縮小されたときに、集計行は表示されたままになります。
 
 
-> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
-> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
 ### デモ
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-options"
-           github-src="{ComponentSample}/groupby-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} groupby summary options"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -707,14 +693,11 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 
 `ShowSummaryOnCollapse` プロパティはブール値です。デフォルト値は **false** に設定されています。これは、親行が縮小されたときに集計行が非表示になることを意味します。プロパティが **true** に設定されている場合、親行が縮小されたときに、集計行は表示されたままになります。
 
-> [!NOTE] `SummaryPosition` プロパティは子レベルの集計のみに適用します。
-> ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
+> [!Note]
+> `SummaryPosition` プロパティは子レベルの集計のみに適用します。ルート レベルの集計は、`{ComponentName}` の下に常に固定されます。
 
-<code-view style="height:720px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-children"
-           github-src="{ComponentSample}/data-summary-children" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} data summary children"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -761,7 +744,7 @@ $custom-theme: grid-summary-theme(
 @include grid-summary($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
 
  ```scss
@@ -799,7 +782,7 @@ $custom-theme: grid-summary-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -842,11 +825,8 @@ $custom-theme: grid-summary-theme(
 
 上記と同じ方法でテーマを含める必要があることに注意してください。
 
-<code-view style="height:710px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-styling"
-           github-src="{ComponentSample}/groupby-summary-styling" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+
 
 <!-- end: Angular -->
 

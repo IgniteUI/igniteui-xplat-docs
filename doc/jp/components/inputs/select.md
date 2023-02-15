@@ -12,11 +12,8 @@ _language: ja
 
 ## {Platform} 選択の例
 
-<code-view style="height:220px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="{Platform} Select の例"
-           github-src="inputs/select/overview">
-</code-view>
+`sample="/inputs/select/overview", height="220", alt="{Platform} Select の例"`
+
 
 <div class="divider--half"></div>
 
@@ -62,7 +59,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 <!-- end: Blazor -->
 
-> [!NOTE]
+> [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
 コンポーネントの使用を開始するには、選択する `igc-select-item` のリストとともに `igc-select` を追加します。
@@ -84,36 +81,28 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 `igc-select-item` コンポーネントを使用すると、ユーザーは `igc-select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `igc-select-item` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="{Platform} Select Item の例"
-           github-src="inputs/select/item">
-</code-view>
+`sample="/inputs/select/item", height="220", alt="{Platform} Select Item の例"`
+
+
 
 ### Header (ヘッダー)
 
 `SelectHeader` を使用して、項目のグループのヘッダーを提供できます。
 
-<code-view style="height: 250px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="{Platform} Select Header の例"
-           github-src="inputs/select/header">
-</code-view>
+`sample="/inputs/select/header", height="250", alt="{Platform} Select Header の例"`
+
+
 
 ### Group (グループ)
 
 複数の `igc-select-item` を `igc-select-group` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`igc-select-group` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
 
-> [!NOTE] 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
+> [!Note]
+> 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="{Platform} Select Group の例"
-           github-src="inputs/select/group">
-</code-view>
+`sample="/inputs/select/group", height="480", alt="{Platform} Select Group の例"`
+
+
 
 ## 検証
 
@@ -139,7 +128,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 - <kbd>下 / 右矢印</kbd>キーを使用すると、リスト内の次の項目がアクティブになります。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
-> [!NOTE] `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
+> [!Note]
+> `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
 <!-- WebComponents -->
 
@@ -175,12 +165,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 | ---------|------------ |
 | `label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="{Platform} Select スタイル設定の例"
-           github-src="inputs/select/styling">
-</code-view>
+`sample="/inputs/select/styling", height="380", alt="{Platform} Select スタイル設定の例"`
+
+
 
 <!-- end: WebComponents -->
 

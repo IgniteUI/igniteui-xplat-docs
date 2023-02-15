@@ -12,11 +12,8 @@ _language: ja
 
 # {Platform} Icon Button の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="{Platform} Icon Button の例"
-           github-src="inputs/icon-button/size">
-</code-view>
+`sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button の例"`
+
 
 <div class="divider"></div>
 
@@ -92,11 +89,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 通常のボタン コンポーネントと同様に、アイコン ボタンはいくつかのバリアントをサポートします - `flat` (デフォルト)、`contained`、および `outlined`。アイコン ボタンのタイプを変更するには、アイコン ボタンの `variant` 属性を設定します。
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="{Platform} Icon Button の例"
-           github-src="inputs/icon-button/variant">
-</code-view>
+`sample="/inputs/icon-button/variant", height="100", alt="{Platform} Icon Button の例"`
+
 
 ```tsx
 <IgrIconButton name="search" collection="contained"></IgrIconButton>
@@ -114,11 +108,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbIconButtonModule));
 
 ボタンのサイズは、`size` 属性をサポートされている 3 つのサイズ - `small`、`medium`、`large` (デフォルト) - のいずれかに設定することで変更できます。
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="{Platform} Icon Button の例"
-           github-src="inputs/icon-button/size">
-</code-view>
+`sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button の例"`
+
 
 ```tsx
 <IgrIconButton name="thumb-up" size="medium"></IgrIconButton>
@@ -185,11 +176,8 @@ igc-icon-button::part(icon) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="{Platform} Icon Button の例"
-           github-src="inputs/icon-button/styling">
-</code-view>
+`sample="/inputs/icon-button/styling", height="100", alt="{Platform} Icon Button の例"`
+
 
 ## API リファレンス
 

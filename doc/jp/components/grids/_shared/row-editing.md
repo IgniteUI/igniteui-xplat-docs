@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 行の編集
@@ -15,14 +16,11 @@ _language: ja
 
 以下の手順では、`{ComponentName}` で行編集を有効にする方法を示します。セル値を変更してから同じ行の他のセルをクリックまたはナビゲーションした場合も **[完了]** ボタンを使用して確定するまで行値を更新しません。または **[キャンセル]** ボタンを使用して破棄します。
 
-<code-view style="height:550px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-options"
-            github-src="{ComponentSample}/row-editing-options"
-            alt="{Platform} {ComponentTitle} 行編集の例">
-</code-view>
+`sample="/{ComponentSample}/row-editing-options", height="550", alt="{Platform} {ComponentTitle} 行編集の例"`
 
-> [!NOTE]
+
+
+> [!Note]
 > 行が編集モードにある場合、他の行のセルをクリックすると [完了] ボタンが押されたように動作し、前の行の変更をすべての変更をサブミットします。フォーカスのある新しいセルが編集可能かどうか、新しい行が編集モードに入るかどうか、セルが編集できない場合は前の行のみ編集モードを終了します。
 
 ## 行編集の使用
@@ -129,10 +127,10 @@ public unitsInStockCellTemplate = (ctx: IgcCellTemplateContext) => {
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > プライマリキーは行編集操作で必須です。
 
-> [!NOTE]
+> [!Note]
 > 各列の編集を有効にする必要はありません。`{ComponentName}` で `RowEditable` プロパティを使用するとプライマリ行以外 `Field` プロパティを定義したすべての行が編集可能になります。特定の列の編集を無効にする場合、`Editable` 列の入力を **false** に設定します。
 
 <!-- Angular -->
@@ -159,7 +157,7 @@ export class {ComponentName}RowEditSampleComponent {
 <!-- end: Angular -->
 
 
-> [!NOTE]
+> [!Note]
 > `{ComponentName}` は、保留中のセル変更を保持するプロバイダー `BaseTransactionService` を行ステートをサブミットまたはキャンセルするまで内部使用します。
 
 ## 位置
@@ -329,9 +327,9 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 
 ### コンポーネント スタイル
 
-行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([theme/index インポート](#テーマのインポート)を含む) を定義できます。
+行編集オーバーレイは他の多くのコンポーネントのテーマを利用するため、グローバル スタイルでスタイル設定するとアプリケーションの他の部分 (バナー、ボタンなど) に影響を与える可能性があります。回避策としては、バナー テーマのスコープがあります。`{ComponentName}` を含むコンポーネントでスタイル ([theme インポート](#テーマのインポート)を含む) を定義できます。
 
->[!NOTE]
+> [!Note]
 >コンポーネントが [Emulated](themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
@@ -391,14 +389,11 @@ $button-theme: button-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-style"
-           github-src="{ComponentSample}/row-editing-style"
-           alt="{Platform} {ComponentTitle} 行編集のスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} 行編集のスタイル設定の例"`
 
->[!NOTE]
+
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 ## 既知の問題と制限

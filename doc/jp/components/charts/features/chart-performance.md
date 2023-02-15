@@ -19,12 +19,9 @@ _language: ja
 
 高頻度シナリオでは、{Platform} チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `CategoryChart` を示しています。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           github-src="charts/category-chart/high-frequency"
-           alt="高頻度 {Platform} チャート" >
-</code-view>
+`sample="/charts/category-chart/high-frequency", height="400", alt="{Platform} 高頻度 {Platform} チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -32,12 +29,9 @@ _language: ja
 
 大量データのシナリオでは、{Platform} チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `CategoryChart` を示しています。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           github-src="charts/category-chart/high-volume"
-           alt="大量のデータの {Platform} チャート" >
-</code-view>
+`sample="/charts/category-chart/high-volume", height="400", alt="{Platform} 大量のデータの {Platform} チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -249,7 +243,8 @@ this.LineSeries.Resolution = 10;
 
 データ ポイント間の時間間隔に基づくスペースが重要でない場合は、DateTime をサポートする x 軸の使用はお勧めしません。代わりに、順序/カテゴリ軸を使用する必要があります。これは、データを結合する方法がより効率的であるためです。また、順序/カテゴリ軸は、時間ベースの x 軸のようにデータのソートを実行しません。
 
-> 注: `CategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
+> [!Note]
+> `CategoryChart` はすでに順序/カテゴリ軸を使用しているため、そのプロパティを変更する必要はありません。
 
 このコード スニペットは、`FinancialChart` および `XamDataChart` コントロールで x 軸を順序付け/カテゴリ化する方法を示しています。
 
@@ -289,6 +284,7 @@ this.LineSeries.Resolution = 10;
 
 デフォルトでは、{Platform} チャートは、データの範囲に基づいて `YAxisInterval` を自動的に計算します。したがって、軸のグリッド線と軸のラベルが多すぎないように、軸の間隔を特に小さい値に設定することは避けてください。また、多くの軸グリッド線または軸ラベルが必要ない場合は、`YAxisInterval` プロパティを自動的に計算された軸間隔よりも大きい値に増やすことを検討することをお勧めします。
 
+> [!Note]
 > チャートのパフォーマンスが低下するため、軸の副間隔を設定することはお勧めしません。
 
 このコード スニペットは、{Platform} チャートで軸の主間隔を設定する方法を示しています。

@@ -5,6 +5,7 @@ _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics, {Platform} 
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} ソート
@@ -13,7 +14,8 @@ _language: ja
 
 <!-- Angular -->
 
-> 注: これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、gropuing を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
+> [!Note]
+> これまで、グループ化 / ソートは互いに連携して機能していました。13.2 バージョンでは、gropuing を sorting から切り離す新しい動作が導入されています。たとえば、グループ化をクリアしても、グリッド内のソート式はクリアされません。その逆も同様です。それでも、列がソートおよびグループ化されている場合は、グループ化された式が優先されます。
 
 <!-- end: Angular -->
 
@@ -25,11 +27,8 @@ _language: ja
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-options"
-           github-src="{ComponentSample}/column-sorting-options">
-</code-view>
+`sample="/{ComponentSample}/column-sorting-options", height="550", alt="{Platform} {ComponentTitle} column sorting options"`
+
 
 以下のように `Sortable` 入力を使用します。`{ComponentName}` のソートで、`SortingIgnoreCase` プロパティを設定して大文字と小文字を区別するソートができます。
 
@@ -53,11 +52,8 @@ _language: ja
 
 <!-- ComponentStart: Grid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-indicators"
-           github-src="{ComponentSample}/column-sorting-indicators" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -106,7 +102,7 @@ this.grid.sort([
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > Sorting は、`DefaultSortingStrategy` アルゴリズムを使用して実行されます。`Column` または `ISortingExpression` は、代替アルゴリズムとして `ISortingStrategy` のカスタム実装を使用できます。たとえば複雑なテンプレート列や画像列にユーザー定義のソートを定義する必要がある場合に便利です。
 
 フィルター動作と同様に、ソート状態をクリアするには `ClearSort` メソッドを使用します。
@@ -129,10 +125,10 @@ this.grid.clearSort();
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > `{ComponentName}` の `SortStrategy` は `Column` の `SortStrategy` と比較して異なるタイプです。異なるスコープで機能し、異なるパラメーターを公開するためです。
 
-> [!NOTE]
+> [!Note]
 > ソート操作で `{ComponentName}` の基になるデータ ソースは**変更しません**。
 
 ## 初期のソート状態
@@ -178,7 +174,7 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
-> [!NOTE]
+> [!Note]
 > `string` 型の値が `DataType` `Date` の列で使用される場合、`{ComponentName}` が値を `Date` オブジェクトに解析しないため `{ComponentName}` `Sorting` が正しく動作しません。`string` オブジェクトを使用する場合、値を `Date` オブジェクトに解析するためのロジックをアプリケーション レベルで実装する必要があります。
 
 <!-- ComponentStart: Grid -->
@@ -313,7 +309,7 @@ $custom-theme: grid-theme(
  @include grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
  ```scss
@@ -346,7 +342,7 @@ $custom-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -386,13 +382,10 @@ $custom-theme: grid-theme(
 
 ### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-style"
-           github-src="{ComponentSample}/column-sorting-style" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
 
->[!NOTE]
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

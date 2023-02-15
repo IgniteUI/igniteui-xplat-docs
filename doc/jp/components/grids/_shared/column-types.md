@@ -5,6 +5,7 @@ _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Inf
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 列タイプの概要
@@ -15,11 +16,8 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 列タイプの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
-           github-src="{ComponentSample}/column-data-types">
-</code-view>
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -478,7 +476,8 @@ constructor() {
 }
 ```
 
-> 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> [!Note]
+> 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
 

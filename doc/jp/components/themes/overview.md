@@ -30,7 +30,7 @@ _language: ja
 
 ## ランタイム テーマの切り替え
 
-> [!NOTE]
+> [!Note]
 ランタイムにテーマを変更するには、上の表のグローバル スタイルシートも置き換える必要があります。
 
 {ProductName} を使用すると、ライブラリによってエクスポートされた `ConfigureTheme` 関数を使用して、実行時にコンポーネントのテーマを切り替えることができます。
@@ -44,7 +44,7 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
-> [!NOTE]
+> [!Note]
 これは、内部スタイルを目的のテーマに切り替えるようにコンポーネントに指示するだけで、グローバル テーマ ファイルも上記のファイルのいずれかに切り替える必要があります。
 
 ## API リファレンス

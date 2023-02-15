@@ -4,6 +4,7 @@ _description: The {ComponentTitle} is using in-cell editing. It has a default ce
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Cell Editing
@@ -14,14 +15,11 @@ In addition, you can define your own custom templates for update-data actions an
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
-           github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
-</code-view>
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
 
-> [!NOTE]
+
+
+> [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 ## Cell Editing
@@ -45,7 +43,7 @@ You can exit edit mode and **commit** the changes in one of the following ways:
  - on single click to another cell - when you click on another cell in the `{ComponentName}`, your changes will be submitted.
  - operations like paging, resize, pin or move will exit edit mode and changes will be submitted.
 
-> [!NOTE]
+> [!Note]
 > The cell remains in edit mode when you scroll vertically or horizontally or click outside the `{ComponentName}`. This is valid for both cell editing and row editing.
 
 ### Editing through API
@@ -187,23 +185,20 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
-<code-view style="height:625px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
-           github-src="{ComponentSample}/cell-selection-style"
-           alt="{Platform} {ComponentTitle} Select Example">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select Example"`
+
+
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
 
-> [!NOTE]
+> [!Note]
 > The cell template `Cell` controls how a column's cells are shown when outside of edit mode.
 > The cell editing template directive `CellEditor`, handles how a column's cells in edit mode are displayed and controls the edited cell's edit value.
 
-> [!NOTE]
+> [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- Angular -->
@@ -283,13 +278,7 @@ Please check the full sample for further reference:
 
 ##### {Platform} Grid Excel Style Editing Sample
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
-           github-src="{ComponentSample}/editing-excel-style"
-           alt="{Platform} {ComponentTitle} Excel Style Editing Example">
-</code-view>
-
+`sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
 
 Main benefits of the above approach include:
 
@@ -300,7 +289,7 @@ Main benefits of the above approach include:
 
 ## CRUD operations
 
-> [!NOTE]
+> [!Note]
 > Please keep in mind that when you perform some **CRUD operation** all of the applied pipes like **filtering**, **sorting** and **grouping** will be re-applied and your view will be automatically updated.
 
 The `{ComponentName}` provides a straightforward API for basic CRUD operations.
@@ -573,12 +562,9 @@ Here, we are validating two columns. If the user tries to change an artist's **D
 
 The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
-           github-src="{ComponentSample}/editing-events"
-           alt="{Platform} {ComponentTitle} Editing Event Example">
-</code-view>
+`sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
+
+
 
 <!-- Angular -->
 
@@ -640,9 +626,9 @@ In order for the custom theme to affect only our specific component, we can move
 
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), our styles will be applied only to our custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >We wrap the statement inside of a `:host` selector to prevent our styles from affecting elements *outside of* our component:
 
 ```scss
@@ -658,14 +644,11 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
-           github-src="{ComponentSample}/editing-style"
-           alt="{Platform} {ComponentTitle} Editing Style Example">
-</code-view>
+`sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} Editing Style Example"`
 
->[!NOTE]
+
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

@@ -15,12 +15,9 @@ _language: ja
 ## {Platform} 行のピン固定の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
-           alt="{Platform} 行のピン固定の例"
-           github-src="grids/data-grid/row-pinning">
-</code-view>
+`sample="/grids/data-grid/row-pinning", height="600", alt="{Platform} 行のピン固定の例"`
+
+
 
 <div class="divider--half"></div>
 

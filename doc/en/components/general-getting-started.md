@@ -60,14 +60,10 @@ All components are based on the [Indigo.Design Design System](https://www.infrag
 This topic provides step-by-step instructions for creating Web Components application with Ignite UI for Web Components.
 
 ## Ignite UI Web Components Example
-The sample below provides an overview on the web components and shows how utilizing them can help you create a well structured app. It represents a sample travel blog that includes an app header with the user's avatar, side navigation and main content area.
 
-<code-view style="height: 750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
-           alt="{Platform} Overview Example"
-           github-src="layouts/getting-started/overview">
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
 
 # Configuration
 

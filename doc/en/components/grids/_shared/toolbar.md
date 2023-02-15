@@ -4,6 +4,7 @@ _description: Use {Platform} {ComponentTitle} for essential UI operations. Hosts
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Toolbar
@@ -20,13 +21,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 ## {Platform} Toolbar Grid Example
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           github-src="{ComponentSample}/toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} Toolbar Example">
-</code-view>
-
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
 
 The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
@@ -118,7 +113,8 @@ The predefined `Actions` and `Title` UI components are added inside the `GridToo
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> Note: As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
+> [!Note]
+> As seen in the code snippet above, the predefined `Actions` UI components are wrapped in the `GridToolbarActions` container. This way, the toolbar title is aligned to the left of the toolbar and the actions are aligned to the right of the toolbar.
 
 Of course, each of these UIs can be added independently of each other, or may not be added at all. This way the toolbar container will be rendered empty:
 
@@ -206,11 +202,8 @@ These features can be enabled independently from each other by following a patte
 
 Listed below are the main features of the toolbar with example code for each of them.
 
-<code-view style="height:630px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
-           github-src="{ComponentSample}/toolbar-sample-2">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+
 
 
 ### Title
@@ -397,7 +390,7 @@ Toolbar Advanced Filtering component provides the default UI for the Advanced Fi
 
 <!-- ComponentStart: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > When exporting the `{ComponentName}` or any of its child grids down the hierarchy, the exported data will be a flat collection of rows
 > belonging to their respective grid (the child grids will not be included in the exported data).
 
@@ -471,7 +464,7 @@ Here is a snippet showing some of the options which can be customized through th
 
 In addition to changing the exported filename, the user can further configure the exporter options by waiting for the `ToolbarExporting` event and customizing the options entry in the event properties.
 
-> [!NOTE]
+> [!Note]
 > By default when exporting to CSV the exporter exports using a comma separator and uses a '.csv' extension for the output file.
 > You can customize these exporting parameters by subscribing to events of the exporter or changing the values of the exporter options fields.
 > You can also cancel the export process by setting the cancel field of the event args to true.
@@ -558,11 +551,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 The following sample demonstrates how to customize the exported files:
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
-           github-src="{ComponentSample}/toolbar-sample-3">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} toolbar sample 3"`
+
 
 
 <!-- Angular -->
@@ -577,17 +567,14 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 370px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
-           github-src="{ComponentSample}/data-exporting-indicator">
-</code-view>
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+
 
 <!-- end: Angular -->
 
 ## Custom Content
 
-> [!NOTE]
+> [!Note]
 > This replaces the old toolbar template directive. If you are migrating from a version before v11 our migrations will handle the moving of the template content. However, we do not handle the bindings in the template, so make sure to double check the modified template files after the migration completes.
 
 If the actions part of the toolbar component is not sufficient for a particular use case, the toolbar itself has a general content projection where users can provide additional UI. If the user needs the respective grid instance for API calls or bindings, they can create a template reference variable.
@@ -629,11 +616,8 @@ Here is a sample snippet:
 
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
-           github-src="{ComponentSample}/toolbar-sample-4">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
+
 
 <!-- Angular -->
 
@@ -714,7 +698,7 @@ The last step is to **include** the newly created themes.
 }
 ```
 
->[!NOTE]
+> [!Note]
 >If `$legacy-support` is set to `false(default)`, include the component css variables like that:
 
 ```scss
@@ -727,7 +711,7 @@ The last step is to **include** the newly created themes.
 }
 ```
 
->[!NOTE]
+> [!Note]
 >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -746,11 +730,8 @@ The last step is to **include** the newly created themes.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
-           github-src="{ComponentSample}/toolbar-style">
-</code-view>
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+
 
 
 <div class="divider"></div>

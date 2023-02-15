@@ -3,6 +3,7 @@ title: {Platform} Pivot Grid & Table – {ProductName}
 _description: Create fast, responsive {Platform} pivot grids and tables with {ProductName}. Perform complex analysis and apply data sorting, grouping, or filtering.
 _keywords: {Platform} pivot grid, {Platform} material pivot table, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.PivotGrid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Pivot Grid Overview
@@ -21,12 +22,9 @@ The rows and columns represent distinct data groups, and the data cell values re
 
 The following is an {Platform} Pivot Grid example in combination with the {Platform} Pivot Data Selector Component. This way you can have more flexible runtime configuration options.
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/pivot-grid-data-selector"
-           github-src="{PivotGridSample}/pivot-grid-data-selector"
-           alt="{Platform} Pivot Grid with Pivot Selector Example">
-</code-view>
+`sample="/{PivotGridSample}/data-selector", height="700", alt="{Platform} Pivot Grid with Pivot Selector Example"`
+
+
 
 ## Getting Started With {Platform} Pivot Grid
 
@@ -453,13 +451,7 @@ public PivotSalesData()
 
 Using above code will result in the following example which groups the Product Categories unique columns, Sellers Countries in unique rows and displays the related aggregations for the number of units in the related cells:
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
-           github-src="{PivotGridSample}/features"
-           alt="{Platform} Pivot Grid Basic Features Example">
-</code-view>
-
+`sample="/{PivotGridSample}/features", height="700", alt="{Platform} Pivot Grid Basic Features Example"`
 
 ## Known Issues and Limitations
 

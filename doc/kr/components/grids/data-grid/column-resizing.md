@@ -13,11 +13,8 @@ The {ProductName} Data Grid supports the ability to resize columns, giving you f
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
-           github-src="grids/data-grid/column-resizing">
-</code-view>
+`sample="/grids/data-grid/column-resizing", height="600", alt="{Platform} data grid column resizing"`
+
 
 <div class="divider--half"></div>
 

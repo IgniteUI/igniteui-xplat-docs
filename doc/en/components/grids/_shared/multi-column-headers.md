@@ -3,6 +3,7 @@ title: Multi-Column Headers in {Platform} {ComponentTitle} - Infragistics
 _description: Start grouping column headers by placing them under a common hierarchical header with the help of {ProductName} grid and combine them into multi headers.
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Column Headers, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Multi-Column Headers Overview
@@ -11,12 +12,9 @@ The {Platform} `{ComponentName}` supports multi-column headers which allow you t
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-overview"
-           github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-overview", height="550", alt="{Platform} {ComponentTitle} Multi Column Headers Overview Example"`
+
+
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
 
@@ -233,7 +231,7 @@ TO-DO H-GRID CODE SNIPPET
 <!-- ComponentEnd: HierarchicalGrid -->
 
 Every `ColumnGroup` supports [moving](column-moving.md), [pinning](column-pinning.md) and [hiding](column-hiding.md).
-> [!NOTE]
+> [!Note]
 > When there is a set of columns and column groups, pinning works only for top level column parents. More specifically pinning per nested column groups or columns is not allowed. <br />
 > Moving between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same `group`. <br />
 > When `columns/column-groups` are not wrapped by current `group` which means they are **top level** `columns`, moving is allowed between whole visible columns.
@@ -464,7 +462,7 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
 ```html
@@ -497,13 +495,7 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-header-template"
-           github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
-</code-view>
-
+`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
 ## Styling
 
@@ -530,7 +522,7 @@ The last step is to **include** the component mixins:
 @include igx-grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -566,7 +558,7 @@ $custom-theme: igx-grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/palette.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -611,12 +603,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
-           github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
+
+
 
 ## Known Issues and Limitations
 

@@ -11,12 +11,9 @@ The {Platform} Button Component lets you enable clickable elements that trigger 
 
 ## {Platform} Button Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="{Platform} Button Example"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
+
+
 
 ## Usage
 
@@ -134,9 +131,7 @@ Use the `variant` attribute to add a simple contained button in your component t
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined Button
 
@@ -154,9 +149,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat Button
 
@@ -174,9 +167,7 @@ Analogically, we can switch to `flat` variant.
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action Button
 
@@ -194,9 +185,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## Button Sizing
 
@@ -294,12 +283,9 @@ public onRadioChange(e: any) {
 
 The result of implementing the above code should look like the following:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="{Platform} Button Sizing Example"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
+
+
 
 ### Download
 
@@ -331,9 +317,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## Styling
 
@@ -347,12 +331,9 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="{Platform} Button Styling Example"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
+
+
 
 ## API References
 

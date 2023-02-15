@@ -12,11 +12,8 @@ The {ProductName} Radio component allows the user to select a single option from
 
 ## {ProductName} Radio Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="{Platform} Radio & Radio Group Example"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group Example"`
+
 
 <div class="divider--half"></div>
 
@@ -160,12 +157,9 @@ The `Radio` can also be labelled by elements external to it. In this case the us
 <IgbRadio AriaLabelledBy="radio-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
-           alt="{Platform} Radio Example"
-           github-src="inputs/radio/label">
-</code-view>
+`sample="/inputs/radio/label", height="100", alt="{Platform} Radio Example"`
+
+
 
 ### Checked
 
@@ -198,12 +192,9 @@ You can use the `checked` attribute to toggle on the radio.
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
-           alt="{Platform} Radio Example"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio Example"`
+
+
 
 ### Invalid
 
@@ -221,12 +212,9 @@ You can use the `invalid` attribute to mark the radio as invalid.
 <IgbRadio Invalid="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
-           alt="{Platform} Radio Example"
-           github-src="inputs/radio/invalid">
-</code-view>
+`sample="/inputs/radio/invalid", height="100", alt="{Platform} Radio Example"`
+
+
 
 ### Disabled
 
@@ -259,12 +247,9 @@ You can use the `disabled` attribute to disable the radio.
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
-           alt="{Platform} Radio Example"
-           github-src="inputs/radio/disabled">
-</code-view>
+`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio Example"`
+
+
 
 ### Group Alignment
 
@@ -297,12 +282,9 @@ The `RadioGroup` allows you to easily change the placement directionality of the
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
-           alt="{Platform} Radio Example"
-           github-src="inputs/radio/alignment">
-</code-view>
+`sample="/inputs/radio/alignment", height="60", alt="{Platform} Radio Example"`
+
+
 
 ### Forms
 
@@ -351,12 +333,9 @@ igc-radio::part(control) {
 }
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
-           alt="{Platform} Radio Styling"
-           github-src="inputs/radio/styling">
-</code-view>
+`sample="/inputs/radio/styling", height="205", alt="{Platform} Radio Styling"`
+
+
 
 <div class="divider--half"></div>
 

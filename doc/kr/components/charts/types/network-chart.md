@@ -15,12 +15,9 @@ The following sections provide examples of various types of Network Charts.
 
 This example demonstrates how to create Network Polar Chart using `PolarScatterSeries` (for rendering node markers) and `PolarLineSeries` (for rendering node connections) in the `XamDataChart` control.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-polar-chart"
-           github-src="charts/data-chart/network-polar-chart"
-           alt="{Platform} Network Polar Chart" >
-</code-view>
+`sample="/charts/data-chart/network-polar-chart", height="600", alt="{Platform} Network Polar Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,12 +25,9 @@ This example demonstrates how to create Network Polar Chart using `PolarScatterS
 
 This example shows how to create Network Scatter Chart using `ScatterSeries` (for rendering node markers) and `ScatterPolylineSeries` (for rendering node connections) in the `XamDataChart` control.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-scatter-chart"
-           github-src="charts/data-chart/network-scatter-chart"
-           alt="{Platform} Network Scatter Chart" >
-</code-view>
+`sample="/charts/data-chart/network-scatter-chart", height="600", alt="{Platform} Network Scatter Chart"`
+
+
 
 <div class="divider--half"></div>
 

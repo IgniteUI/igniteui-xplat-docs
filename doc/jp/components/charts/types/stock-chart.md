@@ -14,12 +14,9 @@ _language: ja
 
 `FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           github-src="charts/financial-chart/multiple-data"
-           alt="{Platform} 株価チャートの例" >
-</code-view>
+`sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} 株価チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -64,12 +61,9 @@ _language: ja
 
 ## 複数シリーズの {Platform} 株価チャート
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           github-src="charts/financial-chart/multiple-data"
-           alt="{Platform} 株価指数チャート" >
-</code-view>
+`sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} 株価指数チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +71,9 @@ _language: ja
 
 この例では、株価チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
-           github-src="charts/financial-chart/stock-index-chart"
-           alt="{Platform} 株価指数チャート" >
-</code-view>
+`sample="/charts/financial-chart/stock-index-chart", height="600", alt="{Platform} 株価指数チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -91,11 +82,8 @@ _language: ja
 他のシリーズの複合などのより多くの機能を備えた株価チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、株価チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
-           alt="{Platform} 株価指数チャート" >
-</code-view>
+`sample="/charts/financial-chart/styling", height="600", alt="{Platform} 株価指数チャート"`
+
 
 <div class="divider--half"></div>
 
@@ -109,12 +97,9 @@ _language: ja
 
 注: X 軸モードを使用する際に CalloutsXMemberPath は数値インデックスをポイントする必要があります。あるいは、CalloutsXMemberPath を時間値にポイントしてください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
-           github-src="charts/financial-chart/annotations"
-           alt="{Platform} チャートの注釈" >
-</code-view>
+`sample="/charts/financial-chart/annotations", height="600", alt="{Platform} チャートの注釈"`
+
+
 
 <div class="divider--half"></div>
 
@@ -147,12 +132,9 @@ _language: ja
 
 この例では、株価チャートは米国の収益をプロットしています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
-           github-src="charts/financial-chart/panes"
-           alt="{Platform} チャートのペイン" >
-</code-view>
+`sample="/charts/financial-chart/panes", height="600", alt="{Platform} チャートのペイン"`
+
+
 
 <div class="divider--half"></div>
 

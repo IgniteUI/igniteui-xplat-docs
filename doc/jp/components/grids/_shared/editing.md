@@ -5,6 +5,7 @@ _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データ
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 編集
@@ -82,11 +83,8 @@ _language: ja
 
 以下のサンプルは、実行中の編集実行シーケンスを示しています。
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-lifecycle"
-           github-src="{ComponentSample}/editing-lifecycle" >
-</code-view>
+`sample="/{ComponentSample}/editing-lifecycle", height="620", alt="{Platform} {ComponentTitle} editing lifecycle"`
+
 
 ### 機能の統合
 セル/行が編集モードの場合、ユーザーはさまざまな方法でグリッドを操作できます。以下のテーブルは、特定の操作が現在の編集にどのように影響するかを示しています。
@@ -171,9 +169,6 @@ igRegisterScript("SortingHandler", SortingHandler, false);
 * `DatePickerComponent`
 * `CheckboxComponent`
 * `Overlay`
-
-
-
 ## その他のリソース
 
 <!-- Angular -->

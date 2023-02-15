@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} 地理ポリゴン マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="{Platform} シェイプ ポリゴン シリーズの使用の例"
-           github-src="maps/geo-map/type-shape-polygon-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polygon-series", height="500", alt="{Platform} シェイプ ポリゴン シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

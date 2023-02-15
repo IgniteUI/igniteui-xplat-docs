@@ -12,11 +12,8 @@ _language: ja
 
 ## {Platform} Ripple の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-button" alt="{Platform} Ripple の例"
-           github-src="inputs/ripple/button">
-</code-view>
+`sample="/inputs/ripple/button", height="80", alt="{Platform} Ripple の例"`
+
 
 ## 使用方法
 
@@ -109,13 +106,7 @@ igc-ripple {
 }
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/ripple-color" alt="{Platform} Ripple の例"
-           github-src="inputs/ripple/color">
-</code-view>
-
-
+`sample="/inputs/ripple/color", height="80", alt="{Platform} Ripple の例"`
 
 ## API リファレンス
 

@@ -3,6 +3,7 @@ title: {Platform} Data Grid Component (Data Table) - Infragistics
 _description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
+namespace: Infragistics.Controls
 ---
 
 <style>
@@ -59,12 +60,9 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
 
 In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -327,7 +325,7 @@ function formatUppercase(value) {
 }
 ```
 
->[!NOTE]
+> [!Note]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
@@ -536,7 +534,7 @@ When changing data through the **cell template** using `ngModel`, you need to ca
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
 <!-- Angular -->
@@ -1084,11 +1082,8 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
-           github-src="{GridSample}/binding-nested-data-2">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+
 
 <!-- end: Angular -->
 
@@ -1403,11 +1398,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 And the result from this configuration is:
 
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
-           github-src="{GridSample}/binding-nested-data-1">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+
 
 ### Working with Flat Data Overview
 
@@ -1654,11 +1646,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 Using code snippets from previous section will result in the following example of `Grid`
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
-           github-src="{GridSample}/binding-composite-data">
-</code-view>
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+
 
 ## Keyboard Navigation
 
@@ -1701,16 +1690,16 @@ platformBrowserDynamic()
   .catch(err => console.error(err));
 ```
 
->[!NOTE]
+> [!Note]
 > This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github]({GithubLink}/discussions) page.
 
->[!NOTE]
+> [!Note]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
 
 <!-- end: Angular -->
 
 ## Styling {Platform} Grid
-> [!NOTE]
+> [!Note]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->

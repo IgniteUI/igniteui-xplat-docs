@@ -12,12 +12,9 @@ Infragistics {Platform} Excel Engine の `WorksheetChart` 機能は、ワーク�
 ## {Platform} チャートの使用の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
-           alt="{Platform} チャートの使用の例"
-           github-src="excel/excel-library/working-with-charts">
-</code-view>
+`sample="/excel/excel-library/working-with-charts", height="500", alt="{Platform} チャートの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

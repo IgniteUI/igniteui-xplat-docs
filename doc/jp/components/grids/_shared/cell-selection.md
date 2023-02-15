@@ -5,6 +5,7 @@ _keywords: data select, igniteui for {Platform}, infragistics, データ選択, 
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <!-- Blazor, WebComponents -->
@@ -28,12 +29,9 @@ _language: ja
 
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle} セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="750", alt="{Platform} {ComponentTitle} セル選択の例"`
+
+
 
 ## 選択タイプ
 
@@ -57,12 +55,9 @@ _language: ja
 
 <!-- TODO sample does not load any data in Blazor -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"
-           github-src="{ComponentSample}/multi-cell-selection-mode"
-           alt="{Platform} {ComponentTitle} 複数セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-mode", height="700", alt="{Platform} {ComponentTitle} 複数セル選択の例"`
+
+
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -94,7 +89,7 @@ _language: ja
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> - フォーカスされているセルからグリッド内の最初のセルまでのすべてのセルを選択します。
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> - フォーカスされているセルからグリッド内の最後のセルまでのすべてのセルを選択します。
 
-> [!NOTE]
+> [!Note]
 > 連続スクロールは、グリッド本体でのみ可能です。
 
 ## API の使用
@@ -159,7 +154,7 @@ expectedData = [
 ];
 ```
 
-> [!NOTE]
+> [!Note]
 > `SelectedCells` は、セルがグリッド ビュー ポートに表示されていない場合でも、正しい結果を返します。`GetSelectedData` も選択されたセル データを返します。
 > `GetSelectedRanges` は、キーボードとポインタの両方の操作からグリッドで現在選択されている範囲を返します。タイプは **GridSelectionRange[]** です。
 <!-- end: Angular -->
@@ -223,7 +218,7 @@ $custom-grid-theme: grid-theme(
     @include grid($custom-grid-theme);
 ```
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
  > アプリケーション内に存在する可能性のある他のグリッドに影響を与えないように、スタイルを `:host `セレクターの下で範囲指定します。
 
@@ -239,14 +234,11 @@ $custom-grid-theme: grid-theme(
 カスタム テーマを適用すると、選択したグリッドセルが選択した色で強調表示されます。
 
 ### デモ
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
-           github-src="{ComponentSample}/multi-cell-selection-style"
-           alt="{Platform} {ComponentTitle} 複数セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} 複数セル選択の例"`
 
->[!NOTE]
+
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end:Angular -->

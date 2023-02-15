@@ -10,14 +10,16 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-> [!NOTE]
+> [!Note]
 (*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
 
 ## **{PackageVerChanges-22-2.1}**
 
 ### 新しいコンポーネント
 
+* [コンボ](grids/combo/overview.md)
 * [ピボット グリッド](grids/pivot-grid/overview.md)
+* [ステッパー](layouts/stepper.md)
 
 ## **{PackageVerChanges-22-2}**
 
@@ -132,7 +134,7 @@ namespace: Infragistics.Controls.Charts
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
 
-> [!NOTE]
+> [!Note]
 > 以下の重大な変更が導入されました:
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
@@ -206,7 +208,7 @@ namespace: Infragistics.Controls.Charts
 
 | 古いのブラシ/アウトライン | 新のアウトライン/ブラシ |
 | -------------------- | ------------------- |
-<span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br>
+| <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
 <div class="divider--half"></div>
 
@@ -279,7 +281,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageMaps}
 
-> [!NOTE]
+> [!Note]
 > これらの機能は CTP です。
 
 * マップの表示を折り返すためのサポートが追加されました (水平方向に無限にスクロールできます)。
@@ -324,7 +326,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids}
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、グリッド パッケージで導入されました。
 
 - PropertyPath の名称変更
@@ -353,7 +355,7 @@ income.field = "Income";
 
 Data Grid コンポーネントおよび対応するモジュールの名前が 「LiveGrid」 から 「DataGrid」 に変更されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 グリッドとそれに対応するモジュールをインポートする新しいコードは以下のとおりです。
@@ -381,7 +383,7 @@ Data Grid コンポーネントには 「inputs」 パッケージが必要で�
 
 Import ステートメントは、API クラスと列挙型へのフル パスではなくパッケージ名のみを使用するように簡素化されました。
 
-> [!NOTE]
+> [!Note]
 > これらの重大な変更は、これらのパッケージとコンポーネントでのみ導入されました:
 
 | 影響されるパッケージ | 影響されるコンポーネント |

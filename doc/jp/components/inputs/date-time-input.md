@@ -10,12 +10,9 @@ _language: ja
 
 {ProductName} 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="{Platform} 日時入力の概要の例"
-           github-src="inputs/date-time-input/overview">
-</code-view>
+`sample="/inputs/date-time-input/overview", height="150", alt="{Platform} 日時入力の概要の例"`
+
+
 
 ## 使用方法
 
@@ -116,12 +113,9 @@ input.value = date;
 
 以下は結果です:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="{Platform} 日時入力の表示書式の例"
-           github-src="inputs/date-time-input/input-format-display-format">
-</code-view>
+`sample="/inputs/date-time-input/input-format-display-format", height="150", alt="{Platform} 日時入力の表示書式の例"`
+
+
 
 ### 表示書式
 日時入力は、さまざまな方法で日付 / 時刻を表示するための事前定義された形式を公開します。以下の例はすべて、en-US ロケールで示されています。
@@ -142,33 +136,34 @@ input.value = date;
 | `fullTime` | 12:00:00 AM Eastern European Summer Time |
 
 さらに、ユーザーは、次の表で説明されているサポートされている記号を使用して、displayFormat 文字列を作成できます。
+<br>
 
 | タイプ | 書式 | 説明 | 例 |
 |:---|-------:|:-----------|:--------|
-| Day | `d` | Minimum digits. | 7, 17 |
-|   | `dd` | Zero padded. | 07, 17 |
-| Month | `M` | Minimum digits. | 3, 10 |
-|   | `MM` | Zero padded. | 03, 10 |
-|   | `MMM` | Abbreviated | Oct |
-|   | `MMMM` | Wide | October |
-|   | `MMMMM` | Narrow | O |
-| Year | `y` | Numeric | 2022 |
-|   | `yy` | Two digit | 22
-|   | `yyy` | Numeric | 2022
-|   | `yyyy` |  Numeric  | 2022
-| Hour 1-12 | `h` | Minimum digits | 1, 12 |
-|   | `hh` | Zero padded | 01, 12
-| Hour 1-24 | `H` | Minimum digits | 1, 23 |
-|   | `HH` | Zero padded | 01, 23 |
-| Minute | `m` | Minimum digits | 1, 59 |
-|   | `mm` | Zero padded | 01, 59 |
-| Second |  `s` | Minimum digits | 1, 59 |
-|   | `ss` | Zero padded | 01, 59 |
-| Time Period | `t` | Abbreviated | AM, PM |
-|   | `tt` | Abbreviated | AM, PM |
-|   | `ttt` | Short | noon |
-|   | `tttt` | Long | noon |
-|   | `ttttt` | Narrow | n |
+| 日付 | `d` | 最小桁数 | 7, 17 |
+|   | `dd` | ゼロ埋込み | 07, 17 |
+| 月 | `M` | 最小桁数 | 3, 10 |
+|   | `MM` | ゼロ埋込み | 03, 10 |
+|   | `MMM` | 省略 | Oct |
+|   | `MMMM` | ワイド | October |
+|   | `MMMMM` | 狭い | O |
+| 年 | `y` | 数値 | 2022 |
+|   | `yy` | 2 桁 | 22
+|   | `yyy` | 数値 | 2022
+|   | `yyyy` |  数値  | 2022
+| 12 時間 | `h` | 最小桁数 | 1, 12 |
+|   | `hh` | ゼロ埋込み | 01, 12
+| 24 時間 | `H` | 最小桁数 | 1, 23 |
+|   | `HH` | ゼロ埋込み | 01, 23 |
+| 分 | `m` | 最小桁数 | 1, 59 |
+|   | `mm` | ゼロ埋込み | 01, 59 |
+| 秒 |  `s` | 最小桁数 | 1, 59 |
+|   | `ss` | ゼロ埋込み | 01, 59 |
+| 期間 | `t` | 省略 | AM, PM |
+|   | `tt` | 省略 | AM, PM |
+|   | `ttt` | 短い | noon |
+|   | `tttt` | 長い | noon |
+|   | `ttttt` | 狭い | n |
 
 > 注:
 多くのロケールは、指定された書式に関係なく、同じ期間文字列を使用します。また、12 時間制を使用した場合にのみ効果があります。
@@ -189,13 +184,7 @@ input.minValue = new Date(2021, 0, 1);
 
 すべてがうまくいった場合、値が指定された日付よりも大きいか小さい場合、コンポーネントは`無効`になります。以下の例をご覧ください:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="{Platform} 日時入力最小 / 最大値の例"
-           github-src="inputs/date-time-input/min-max-value">
-</code-view>
-
+`sample="/inputs/date-time-input/min-max-value", height="150", alt="{Platform} 日時入力最小 / 最大値の例"`
 
 ## ステップアップ / ステップダウン
 
@@ -219,12 +208,9 @@ input.spinDelta = spinDelta;
 
 以下の例をご覧ください。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="{Platform} 日時入力ステップアップ / ステップダウンの例"
-           github-src="inputs/date-time-input/step-up-down">
-</code-view>
+`sample="/inputs/date-time-input/step-up-down", height="150", alt="{Platform} 日時入力ステップアップ / ステップダウンの例"`
+
+
 
 ## スタイル設定
 

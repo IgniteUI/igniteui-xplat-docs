@@ -4,6 +4,7 @@ _description: Handle cell and editing templates in {Platform} by choosing from s
 _keywords: Column Data Type , {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Types Overview
@@ -14,11 +15,8 @@ sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 
 ## {Platform} {ComponentTitle} Column Types Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
-           github-src="{ComponentSample}/column-data-types">
-</code-view>
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -477,7 +475,8 @@ constructor() {
 }
 ```
 
-> Note: When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
+> [!Note]
+> When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
 
 ## Default Editing Template
 

@@ -30,12 +30,9 @@ Finally, there is a summary row that displays the total of all series values. Th
 
 The following example demonstrates the data tooltip with a summary applied:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip"
-           alt="{Platform} Category Chart Data Tooltip Example"
-           github-src="charts/category-chart/data-tooltip">
-</code-view>
+`sample="/charts/category-chart/data-tooltip", height="450", alt="{Platform} Category Chart Data Tooltip Example"`
+
+
 
 ### {Platform} Data Tooltip Columns
 
@@ -71,12 +68,9 @@ The columns included in the `DataToolTipIncludedColumns` and `DataToolTipExclude
 
 The following example demonstrates a data tooltip with the added columns of Open, High, Low, Close, and Change:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip"
-           alt="{Platform} Financial Chart Data Tooltip Example"
-           github-src="charts/financial-chart/data-tooltip">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip", height="450", alt="{Platform} Financial Chart Data Tooltip Example"`
+
+
 
 ## {Platform} Data Tooltip Styling
 
@@ -84,12 +78,9 @@ The **DataToolTip** provides properties for styling each type of column. Each of
 
 The following example demonstrates usage of the styling properties mentioned above:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-styling-props"
-           alt="{Platform} Financial Chart Data Tooltip Styling Example"
-           github-src="charts/financial-chart/data-tooltip-styling-props">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip-styling-props", height="450", alt="{Platform} Financial Chart Data Tooltip Styling Example"`
+
+
 
 ## {Platform} Data Tooltip Grouping & Positioning
 
@@ -97,12 +88,9 @@ You can set `DataToolTipGroupingMode` property to either `Grouped` or `Individua
 
 The following example demonstrates a data tooltip positioned to the top-right of the chart:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-positioning"
-           alt="{Platform} Category Chart Data Tooltip Positioning Example"
-           github-src="charts/category-chart/data-tooltip-positioning">
-</code-view>
+`sample="/charts/category-chart/data-tooltip-positioning", height="450", alt="{Platform} Category Chart Data Tooltip Positioning Example"`
+
+
 
 ## {Platform} Data Tooltip Value Formatting
 
@@ -110,23 +98,17 @@ The **DataToolTip** provides automatic abbreviation of large numbers using its `
 
 The following example demonstrates a **DataToolTip** with the minimum and maximum fractions set:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-formatting-decimals"
-           alt="{Platform} Category Chart Data Tooltip Formatting Decimals Example"
-           github-src="charts/category-chart/data-tooltip-formatting-decimals">
-</code-view>
+`sample="/charts/category-chart/data-tooltip-formatting-decimals", height="450", alt="{Platform} Category Chart Data Tooltip Formatting Decimals Example"`
+
+
 
 ## {Platform} Data Tooltip Value Mode
 
 You can change the default decimal display of values within the **DataToolTip** to be currency by changing the `DataToolTipValueFormatMode` property of the layer. The **DataToolTip** also exposes the ability to modify the culture of the displayed currency symbol by using its `DataToolTipValueFormatCulture` property and setting it to its corresponding culture tag. For example, the following sample demonstrates a chart with the `DataToolTipValueFormatCulture` set to "en-GB":
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-formatting-currency"
-           alt="{Platform} Financial Chart Data Tooltip Formatting Currency Example"
-           github-src="charts/financial-chart/data-tooltip-formatting-currency">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} Financial Chart Data Tooltip Formatting Currency Example"`
+
+
 
 ## API References
 

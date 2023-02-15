@@ -13,12 +13,9 @@ _language: ja
 
 ## 例
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-titles"
-           alt="{Platform} チャート同期の例"
-           github-src="charts/category-chart/line-chart-with-titles">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-titles", height="600", alt="{Platform} チャート同期の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -44,11 +41,5 @@ _language: ja
 | `SubtitleLeftMargin`  | 数 | タイトルの左マージン。 |
 | `SubtitleRightMargin` | 数 | タイトルの右マージン。 |
 | `SubtitleBottomMargin`| 数 | タイトルの下マージン。 |
-
-
-
-
-
-
 
 

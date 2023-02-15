@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理高密度マップの例
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
-           alt="{Platform} 散布高密度シリーズの使用の例"
-           github-src="maps/geo-map/type-scatter-density-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-density-series", height="400", alt="{Platform} 散布高密度シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

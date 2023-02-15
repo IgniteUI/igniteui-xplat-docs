@@ -24,12 +24,9 @@ _language: ja
 ## {Platform} Grid 列オプションの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-options"
-           alt="{Platform} Grid 列オプションの例"
-           github-src="grids/data-grid/column-options">
-</code-view>
+`sample="/grids/data-grid/column-options", height="600", alt="{Platform} Grid 列オプションの例"`
+
+
 
 <div class="divider--half"></div>
 

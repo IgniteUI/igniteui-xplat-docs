@@ -20,12 +20,9 @@ The {ProductName} Data Table / Data Grid supports ascending and descending colum
 ## {Platform} Grid Sorting Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
-           alt="{Platform} Grid Sorting Example"
-           github-src="grids/data-grid/column-sorting">
-</code-view>
+`sample="/grids/data-grid/column-sorting", height="600", alt="{Platform} Grid Sorting Example"`
+
+
 
 <div class="divider--half"></div>
 

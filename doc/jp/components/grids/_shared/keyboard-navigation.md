@@ -4,6 +4,7 @@ _description: {ProductName} で {ComponentTitle} キーボード ナビゲーシ
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
@@ -20,11 +21,11 @@ _language: ja
 * **列の集計** (有効な場合)
 * **{ComponentTitle} ページネーター** (有効な場合)
 
->[!NOTE]
+> [!Note]
 > この変更のため、<kbd>tab</kbd> と  <kbd>Shift + Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>Tab</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
->[!NOTE]
+> [!Note]
 > テンプレートによっ**フォーカス可能な**要素を `{ComponentName}` の本体に公開すると、ブラウザのデフォルトの動作が防止されていないため、**予期されない結果**が発生する可能性があります。
 > したがって、それを適切に**防止/変更する**のは開発者の責任です。
 
@@ -126,11 +127,8 @@ _language: ja
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:470px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
 
@@ -149,7 +147,7 @@ _language: ja
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
->[!NOTE]
+> [!Note]
 > `GetNextCell` および `GetPreviousCell` は現在のレベルで使用し、上位または下位レベルのセルにアクセスできません。
 >
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -236,7 +234,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
             obj.target.activate();
         });
 ```
-> 注: 実装の詳細は、サンプルコードを参照してください。
+
+> [!Note]
+> 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
 - **Order** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
@@ -245,11 +245,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 #### デモ
 
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -276,11 +273,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- end: Angular -->
 
@@ -308,11 +302,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
 

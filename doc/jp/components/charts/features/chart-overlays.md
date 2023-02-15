@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、いくつかの水平値オーバーレイがプロットされた[縦棒チャート](../types/column-chart.md)を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="{Platform} 値オーバーレイの例"
-           github-src="charts/data-chart/series-value-overlay">
-</code-view>
+`sample="/charts/data-chart/series-value-overlay", height="600", alt="{Platform} 値オーバーレイの例"`
+
+
 
 <div class="divider--half"></div>
 

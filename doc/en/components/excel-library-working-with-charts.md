@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Engine's `WorksheetChart` functionality allows
 ## {Platform} Working with Charts Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
-           alt="{Platform} Working with Charts Example"
-           github-src="excel/excel-library/working-with-charts">
-</code-view>
+`sample="/excel/excel-library/working-with-charts", height="500", alt="{Platform} Working with Charts Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -5,6 +5,7 @@ _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 
@@ -14,13 +15,7 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 高度なフィルタリングの例
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
-           alt="{Platform} {ComponentTitle} 高度なフィルタリングの例"
-           github-src="{ComponentSample}/advanced-filtering-options">
-</code-view>
-
+`sample="/{ComponentSample}/advanced-filtering-options", height="530", alt="{Platform} {ComponentTitle} 高度なフィルタリングの例"`
 
 ## インタラクション
 
@@ -131,7 +126,7 @@ connectedCallback(): void {
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
->[!NOTE]
+> [!Note]
 >`{ComponentName}` で **QuickFilter**/**ExcelStyleFilter** と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
 <!-- Angular -->
@@ -141,11 +136,8 @@ connectedCallback(): void {
 
 ### デモ
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-advanced-filtering"
-           github-src="{ComponentSample}/external-advanced-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} external advanced filtering"`
+
 
 ### 使用方法
 
@@ -258,10 +250,10 @@ igx-advanced-filtering-dialog {
 }
 ```
 
->[!NOTE]
+> [!Note]
 >カスタム テーマが高度なフィルタリング ダイアログにネストされたコンポーネントのみに影響するように、コンポーネントのほとんどの mixins を `igx-advanced-filtering-dialog` 内にスコープします。そうでない場合、アプリケーション内の他のボタン、チップ、入力、ドロップダウンも影響を受けます。
 
->[!NOTE]
+> [!Note]
 >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
@@ -349,7 +341,7 @@ $custom-drop-down: drop-down-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -464,13 +456,10 @@ $custom-drop-down: drop-down-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
-           github-src="{ComponentSample}/advanced-filtering-style">
-</code-view>
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
 
->[!NOTE]
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

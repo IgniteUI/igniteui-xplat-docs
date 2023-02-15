@@ -14,12 +14,9 @@ _language: ja
 
 以下のサンプルは、`ZoomSlider` を使用して `XamDataChart` のコンテンツをナビゲートする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="{Platform} ズーム スライダーの例"
-           github-src="charts/zoomslider/overview">
-</code-view>
+`sample="/charts/zoomslider/overview", height="600", alt="{Platform} ズーム スライダーの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -14,12 +14,9 @@ $ ProductName$ データ チャートを使用すると、複数のチャート�
 
 このサンプルは、2 つの {Platform} データ チャートの同期を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
-           alt="{Platform} チャート同期化の例"
-           github-src="charts/data-chart/chart-synchronization">
-</code-view>
+`sample="/charts/data-chart/chart-synchronization", height="600", alt="{Platform} チャート同期化の例"`
+
+
 
 <div class="divider--half"></div>
 

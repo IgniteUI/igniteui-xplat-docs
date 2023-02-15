@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 列のサイズ変更の概要
@@ -13,12 +14,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 列のサイズ変更の例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
-           github-src="{ComponentSample}/column-resizing"
-           alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
-</code-view>
+`sample="/{ComponentSample}/column-resizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
+
+
 
 **列のサイズ変更**は列レベルで有効化にできます。つまり、`{ComponentName}` にサイズ変更可能な列およびサイズ変更不可の列の両方を含むことが可能です。`Column` の `Resizable` 入力によって制御されます。
 
@@ -298,7 +296,7 @@ TO DO!
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
->[!NOTE]
+> [!Note]
 > ピクセルとパーセンテージで設定された場合で列のサイズ変更の動作は少々異なります。
 
 **ピクセル**
@@ -416,12 +414,9 @@ constructor() {
 
 このアプローチは、初期化後の自動サイズ変更よりもパフォーマンスが最適化されており、特に多数の列のサイズを自動サイズ設定する必要がある場合に推奨されます。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
-           github-src="{ComponentSample}/column-auto-sizing"
-           alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
-</code-view>
+`sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
+
+
 
 <!-- Angular -->
 
@@ -445,7 +440,7 @@ $custom-grid-theme: grid-theme(
 );
 
 ```
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 
 ```scss
@@ -477,7 +472,7 @@ $custom-grid-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -520,13 +515,10 @@ $custom-grid-theme: grid-theme(
 
 ### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
-           github-src="{ComponentSample}/column-resize-styling">
-</code-view>
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} column resize styling"`
 
->[!NOTE]
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

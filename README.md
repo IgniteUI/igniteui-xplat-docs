@@ -140,7 +140,7 @@ However, this doesn't look very clean, so its best to avoid this unless the prec
 If you have some platform specific notes/warnings/etc, do call them out with DocFX style notes:
 
 ```md
-> [!NOTE]
+> [!Note]
 > For Angular:
 > This is an angular specific note.
 ```

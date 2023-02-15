@@ -12,10 +12,7 @@ The ZoomSlider control provides zooming functionality to range-enabled controls.
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"  >
-</code-view>
+`sample="/charts/zoomslider/overview", height="400", alt="{Platform} zoomslider overview"`
 
 <div class="divider--half"></div>
 

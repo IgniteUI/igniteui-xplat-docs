@@ -12,12 +12,9 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## {Platform} Excel ライブラリの例
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="{Platform} Excel ライブラリの例"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -133,7 +130,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > Excel ライブラリ は Excel Binary Workbook (.xlsb) フォーマットを現時点ではサポートしていません。
 
 ## ワークブックの読み込みと保存
@@ -177,7 +174,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >

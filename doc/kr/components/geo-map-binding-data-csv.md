@@ -13,10 +13,7 @@ With the {ProductName} map component, you can plot geographic data loaded from v
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"  >
-</code-view>
+`sample="/maps/geo-map/binding-data-csv", height="400", alt="{Platform} geo map binding data csv"`
 
 <div class="divider--half"></div>
 

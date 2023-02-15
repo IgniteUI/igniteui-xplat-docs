@@ -4,6 +4,7 @@ _description: Check how easy it is to use cell data selection using variety of e
 _keywords: data select, igniteui for {Platform}, infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Cell Selection
@@ -20,12 +21,9 @@ Let's dive deeper into each of these options.
 
 The sample below demonstrates the three types of `{ComponentName}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle} Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="750", alt="{Platform} {ComponentTitle} Cell Selection Example"`
+
+
 
 ## Selection Types
 
@@ -49,12 +47,9 @@ How to select cells:
 
 <!-- TODO sample does not load any data in Blazor -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"
-           github-src="{ComponentSample}/multi-cell-selection-mode"
-           alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-mode", height="700", alt="{Platform} {ComponentTitle} Multi Cell Selection Example"`
+
+
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -86,7 +81,7 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Home</kbd> to select all cells from the focused cell till the first-most cell in the grid
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>End</kbd> to select all cells from the focused cell till the last-most cell in the grid
 
-> [!NOTE]
+> [!Note]
 > Continuous scroll is possible only within Grid's body.
 
 ## Api Usage
@@ -151,7 +146,7 @@ expectedData = [
 ];
 ```
 
-> [!NOTE]
+> [!Note]
 > `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
 <!-- end: Angular -->
@@ -215,7 +210,7 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
     @include grid($custom-grid-theme);
 ```
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated ViewEncapsulation](../themes/styles.md#view-encapsulation), it is necessary to penetrate this encapsulation using `::ng-deep`.
  > We scope the style under `:host` selector so as not to affect any other grids we might have in our application.
 
@@ -231,14 +226,11 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
 With the custom theme applied, the selected grid cells are highlighted with our selected colors:
 
 ### Demo
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
-           github-src="{ComponentSample}/multi-cell-selection-style"
-           alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Multi Cell Selection Example"`
 
->[!NOTE]
+
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->

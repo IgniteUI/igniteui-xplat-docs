@@ -13,11 +13,8 @@ The {Platform} Spreadsheet is a {Platform} component that allows visualizing and
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           github-src="excel/spreadsheet/overview">
-</code-view>
+`sample="/excel/spreadsheet/overview", height="500", alt="{Platform} spreadsheet overview"`
+
 
 <div class="divider--half"></div>
 
@@ -95,7 +92,7 @@ Now that the spreadsheet module is imported, next is the basic configuration of 
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

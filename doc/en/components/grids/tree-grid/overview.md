@@ -3,6 +3,7 @@ title: {Platform} Tree Grid | Fastest {Platform} Tree Table | Infragistics
 _description: The {ProductName} Tree Grid is used to display and manipulate hierarchical or flat data with ease. Quickly bind your data with very little coding. Try it for FREE
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics
 mentionedTypes: ['TreeGrid']
+namespace: Infragistics.Controls
 ---
 
 # {Platform} Tree Grid Overview and Configuration
@@ -13,12 +14,9 @@ mentionedTypes: ['TreeGrid']
 
 In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
-           github-src="{TreeGridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -148,9 +146,6 @@ In order to achieve this, the tree grid provides us with a couple of ways to def
         this._bind();
     }
 ```
-
-
-
 ### Tree Cells
 
 Regardless of which option is used for building the tree grid's hierarchy (child collection or primary and foreign keys), the tree grid's rows are constructed of two types of cells:
@@ -158,7 +153,7 @@ Regardless of which option is used for building the tree grid's hierarchy (child
 - `GridCell` - Ordinary cell that contains a value.
 - `TreeGridCell` - Tree cell that contains a value, an expand/collapse indicator and an indentation div element, which is based on the level of the cell's row. The level of a row component can be accessed through the `level` property of its inner `treeRow`.
 
-> [!NOTE]
+> [!Note]
 > Each row can have only one tree cell, but it can have multiple (or none) ordinary cells.
 
 ### Initial Expansion Depth

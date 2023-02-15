@@ -4,6 +4,7 @@ _description: The {ComponentName} provides the ability to use ActionStrip and ut
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # Row Actions in {Platform} {ComponentTitle}
@@ -75,7 +76,8 @@ They are added inside the `{ComponentName}` and this is all needed to have an `A
 ```
 <!-- end: WebComponents -->
 
->Note: When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
+> [!Note]
+> When `ActionStripComponent` is a child component of the `{ComponentName}`, hovering a row will automatically show the UI.
 
 ## Custom Implementation
 
@@ -127,16 +129,14 @@ These components expose templates giving flexibility for customization. For inst
 ```
 <!-- end: WebComponents -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
-           github-src="{ComponentSample}/action-strip"
-           alt="{Platform} {ComponentTitle} Action Strip Example" >
-</code-view>
+`sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
+
+
 
 <!-- Angular -->
 
->Note: The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
+> [!Note]
+> The predefined actions inherit `GridActionsBaseDirective` and when creating a custom grid action component, it should also inherit `GridActionsBaseDirective`.
 
 <!-- end: Angular -->
 

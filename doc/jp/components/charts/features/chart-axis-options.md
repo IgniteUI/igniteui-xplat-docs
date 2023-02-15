@@ -15,12 +15,9 @@ _language: ja
 
 {Platform} チャートの軸タイトル機能を使用すると、チャートにコンテキスト情報を追加できます。さまざまなフォントスタイル、色、マージン、および配置を適用するなど、さまざまな方法で軸タイトルの外観をカスタマイズできます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-titles"
-           alt="{Platform} 軸タイトルの例"
-           github-src="charts/category-chart/axis-titles">
-</code-view>
+`sample="/charts/category-chart/axis-titles", height="450", alt="{Platform} 軸タイトルの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,12 +26,9 @@ _language: ja
 
 {Platform} チャートは、チャートで表示されるラベルの構成、書式設定、およびラベル フォントのスタイル設定を制御することが可能です。軸ラベルの回転角度、マージン、水平および垂直方向の配置、色、余白、および表示設定を変更できます。次の例は、これらの軸の機能を使用する方法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-labels"
-           alt="{Platform} 軸ラベルの例"
-           github-src="charts/category-chart/axis-labels">
-</code-view>
+`sample="/charts/category-chart/axis-labels", height="450", alt="{Platform} 軸ラベルの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -54,12 +48,9 @@ _language: ja
 
 既定では、{Platform} チャートは、データ内の対応する最小値と最大値に基づいて、数値と時間軸の範囲の最小値と最大値を計算しますが、この自動計算は、データセットには適していません。たとえば、データの最小値が 850 の場合、`YAxisMinimumValue` を 800 に設定してください。これにより、軸の最小値とデータ ポイントの最小値の間に 50 のスペース値ができます。`YAxisMaximumValue` プロパティを使用して、同じ方法を軸の最小値と最大値に適用することができます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-range"
-           alt="{Platform} 軸範囲の例"
-           github-src="charts/category-chart/axis-range">
-</code-view>
+`sample="/charts/category-chart/axis-range", height="450", alt="{Platform} 軸範囲の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -72,12 +63,9 @@ _language: ja
 
 `YAxisMode` プロパティに加えて、`FinancialChart` コントロールには X 軸に `Time` モードと `Ordinal` モードを提供する `XAxisMode` プロパティがあります。`Time` モードはデータのギャップを X 軸にスペースを用いて描画します。つまり、週末または休日に株取引がないことを示します。`Ordinal` モードはデータがない日付領域を縮小します。デフォルト値は `Ordinal` モードです。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-axis-types"
-           alt="{Platform} 軸範囲の例"
-           github-src="charts/financial-chart/axis-types">
-</code-view>
+`sample="/charts/financial-chart/axis-types", height="450", alt="{Platform} 軸範囲の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -91,12 +79,9 @@ _language: ja
 
 以下の例は、ニューヨーク市のセントラル パークの摂氏の平均最高気温を示しています。これは、`XAxisGap` が最初に 1 に設定された[縦棒チャート](../types/column-chart.md)で表されているため、列の間にカテゴリ全体の幅があります。スライダーを使用すると、この例のギャップを構成して、さまざまな値の効果を確認できます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
-           alt="{Platform} 軸間隔の例"
-           github-src="charts/category-chart/axis-gap">
-</code-view>
+`sample="/charts/category-chart/axis-gap", height="450", alt="{Platform} 軸間隔の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -106,12 +91,9 @@ _language: ja
 
 以下の例は、フランチャイズの世界の興行収入の合計とシリーズで最も収益の高い映画を比較した、世界で最も収益の高い映画フランチャイズの比較を示しています。これは、`XAxisOverlap` が最初に 1 に設定された[縦棒チャート](../types/column-chart.md)で表されており、列は完全に重なり合います。スライダーを使用すると、この例の重複を構成して、さまざまな値の効果を確認できます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
-           alt="{Platform} 軸重複の例"
-           github-src="charts/category-chart/axis-overlap">
-</code-view>
+`sample="/charts/category-chart/axis-overlap", height="450", alt="{Platform} 軸重複の例"`
+
+
 
 <div class="divider--half"></div>
 

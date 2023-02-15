@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} の行ドラッグ
@@ -13,12 +14,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 行ドラッグの例
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
-           github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentTitle} 行ドラッグの例">
-</code-view>
+`sample="/{ComponentSample}/row-drag-base", height="560", alt="{Platform} {ComponentTitle} 行ドラッグの例"`
+
+
 
 ## 構成
 
@@ -248,7 +246,7 @@ export class {ComponentName}RowDragComponent {
 
 <!-- ComponentEnd: Grid -->
 
-> [!NOTE]
+> [!Note]
 > イベント引数 (**args.dragData.data**) または他の行プロパティからの行データを使用する場合、行全体が参照として引数に渡されることに注意してください。つまり、ソースグリッドのデータと区別する必要がある場合は、必要なデータを複製する必要があります。
 
 
@@ -305,12 +303,9 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
-           github-src="{ComponentSample}/multi-row-dragging"
-           alt="{Platform} {ComponentTitle} 複数行のドラッグ">
-</code-view>
+`sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} 複数行のドラッグ"`
+
+
 
 ### ドラッグ アイコンのテンプレート化
 
@@ -393,12 +388,9 @@ enum DragIcon {
 
 #### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
-           github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentTitle} 行のドラッグ">
-</code-view>
+`sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} 行のドラッグ"`
+
+
 
 <!-- end: Angular -->
 
@@ -417,15 +409,9 @@ enum DragIcon {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
-           github-src="{ComponentSample}/row-dragging"
-           alt="{Platform} {ComponentTitle} 行のドラッグ">
-</code-view>
+`sample="/{ComponentSample}/row-dragging", height="560", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
-
-> [!NOTE]
+> [!Note]
 > 上記のデモで使用されている行ドラッグ ゴーストに適用されるクラスは ::ng-deep 修飾子を使用しています。これは、行ドラッグが内部グリッド機能であり、CSS カプセル化のためにアプリケーション レベルでアクセスできないためです。
 
 <!-- ComponentEnd: Grid -->
@@ -471,7 +457,7 @@ constructor() {
 </igx-hierarchical-grid>
 ```
 
-> [!NOTE]
+> [!Note]
 > グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
 `RowDraggable` が有効になり、ドロップ エリアが定義されたら、ドロップ イベントの単純なハンドラーを実装する必要があります。行をドラッグするときは、以下を確認してください:
@@ -664,12 +650,9 @@ export class HGridRowReorderComponent {
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
-           github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} 行の並べ替え">
-</code-view>
+`sample="/{ComponentSample}/row-reorder", height="700", alt="{Platform} {ComponentTitle} 行の並べ替え"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -786,7 +769,7 @@ class MyRowGhostComponent {
 
 カーソルの位置を追跡するために、行のドラッグを開始するときに `DragDirective` の `DragMove` イベントにバインドします。
 
-> [!NOTE]
+> [!Note]
 > グリッドに `PrimaryKey` が指定されていることを確認してください。ロジックが行を適切に並べ替えられるように、行には一意の識別子が必要です。
 
 ```typescript
@@ -926,12 +909,9 @@ class MyGridScrollComponent {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:830px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
-           github-src="{ComponentSample}/row-drop-indicator"
-           alt="{Platform} {ComponentTitle} ドロップ インジケーター">
-</code-view>
+`sample="/{ComponentSample}/row-drop-indicator", height="830", alt="{Platform} {ComponentTitle} ドロップ インジケーター"`
+
+
 
 <!-- end: Angular -->
 
@@ -951,9 +931,6 @@ class MyGridScrollComponent {
 * `{ComponentName}`
 
 ## その他のリソース
-
-
-
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})

@@ -14,12 +14,9 @@ _language: ja
 
 データ項目を文字列と数値データでバインドすることで、`XamPieChart` の円チャートが作成できます。これらのデータ値を足すと可視化率 100% になります。この例では部門ごとの予算支出の全体的な内訳を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           github-src="charts/pie-chart/overview"
-           alt="{Platform} 円チャートの概要" >
-</code-view>
+`sample="/charts/pie-chart/overview", height="600", alt="{Platform} 円チャートの概要"`
+
+
 
 <div class="divider--half"></div>
 
@@ -72,12 +69,9 @@ _language: ja
 
 また、凡例項目の外観をカスタマイズするために `LegendItemTemplate` および `LegendItemBadgeTemplate`プロパティ、`ItemLegend` の複数のフォント プロパティも使用できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
-           github-src="charts/pie-chart/legend"
-           alt="凡例付きの {Platform} 円チャート" >
-</code-view>
+`sample="/charts/pie-chart/legend", height="600", alt="{Platform} 凡例付きの {Platform} 円チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -89,12 +83,9 @@ _language: ja
 
 `OthersCategoryType` を Percent に設定すると、`OthersCategoryThreshold` は値ではなくパーセンテージとして解釈されます。つまり、値がすべての項目の値の合計の 2% 未満である項目は、Others カテゴリに割り当てられます。使用しているアプリケーションに最も適切な `OthersCategoryType` を使用できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
-           github-src="charts/pie-chart/others"
-           alt="{Platform} 円チャートその他の分類項目" >
-</code-view>
+`sample="/charts/pie-chart/others", height="600", alt="{Platform} 円チャートその他の分類項目"`
+
+
 
 <div class="divider--half"></div>
 
@@ -102,12 +93,9 @@ _language: ja
 
 円チャート コンポーネントは個々の円スライスの選択と展開だけでなく、選択状態を変更しカスタム ロジックを実装することを可能にする `SliceClick` イベントをコンポーネントサポートします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
-           github-src="charts/pie-chart/explosion"
-           alt="{Platform} 円チャートの展開" >
-</code-view>
+`sample="/charts/pie-chart/explosion", height="600", alt="{Platform} 円チャートの展開"`
+
+
 
 <div class="divider--half"></div>
 
@@ -132,12 +120,9 @@ _language: ja
 
 「その他」スライスをクリックすると、`PieSliceOthersContext` オブジェクトが返されます。オブジェクトは、「その他」スライスに含まれるデータ項目のリストがあります。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
-           github-src="charts/pie-chart/selection"
-           alt="{Platform} 円チャートの選択" >
-</code-view>
+`sample="/charts/pie-chart/selection", height="600", alt="{Platform} 円チャートの選択"`
+
+
 
 <div class="divider--half"></div>
 
@@ -147,12 +132,9 @@ _language: ja
 
 以下のコードでは、radiusFactor がチャートをサイズの 0.25% 増加し、startAngle がチャートを 1 度回転しています。radiusFactor と startAngle が最大値に達すると、アニメーション フラグをリセットし、間隔をクリアしてアニメーションを停止します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
-           github-src="charts/pie-chart/animation"
-           alt="{Platform} 円チャートのアニメーション" >
-</code-view>
+`sample="/charts/pie-chart/animation", height="600", alt="{Platform} 円チャートのアニメーション"`
+
+
 
 <div class="divider--half"></div>
 
@@ -161,11 +143,8 @@ _language: ja
 円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
-           alt="{Platform} 円チャートのスタイル設定" >
-</code-view>
+`sample="/charts/pie-chart/styling", height="600", alt="{Platform} 円チャートのスタイル設定"`
+
 
 <div class="divider--half"></div>
 
@@ -174,11 +153,8 @@ _language: ja
 ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           alt="{Platform} ラジアル円チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} ラジアル円チャート"`
+
 
 <div class="divider--half"></div>
 

@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} Grid 強調表示の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
-           alt="{Platform} Grid 強調表示の例"
-           github-src="grids/data-grid/row-highlighting">
-</code-view>
+`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid 強調表示の例"`
+
+
 
 <div class="divider--half"></div>
 

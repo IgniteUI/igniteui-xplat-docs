@@ -13,12 +13,9 @@ The Infragistics {Platform} Dock Manager provides a means to manage the layout o
 
 This example shows most functionalities and docking options of the `DockManager` that you can use in your application.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="{Platform} Dock Manager Example"
-           github-src="layouts/dock-manager/overview">
-</code-view>
+`sample="/layouts/dock-manager/overview", height="600", alt="{Platform} Dock Manager Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -51,7 +48,7 @@ Once the Dock Manager is imported, you can add it on the page:
 </igc-dockmanager>
 ```
 
-> [!NOTE]
+> [!Note]
 > Since the Dock Manager component uses ShadowDOM and slots it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
 
 The Dock Manager has a `Layout` property, which describes the layout of the panes. To start defining a layout, you should set the `RootPane` property and add child panes. Here is how you can define a layout with a single content pane:
@@ -326,12 +323,9 @@ this.dockManager.layout = { ...layout };
 Contents and panes can be added to the `Layout` at runtime. In the example below, you can see how you can add content, document and floating panes.
 
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
-           alt="{Platform} Dock Manager Add Content Runtime Example"
-           github-src="layouts/dock-manager/add-content-runtime">
-</code-view>
+`sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} Dock Manager Add Content Runtime Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -354,12 +348,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="{Platform} Dock Manager Pane Closing Example"
-           github-src="layouts/dock-manager/hiding-panes">
-</code-view>
+`sample="/layouts/dock-manager/hiding-panes", height="700", alt="{Platform} Dock Manager Pane Closing Example"`
+
+
 <!-- end: WebComponents -->
 
 <div class="divider--half"></div>
@@ -444,12 +435,9 @@ igc-dockmanager::part(pane-header-maximize-button) {
 If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
-           alt="{Platform} Dock Manager Customize Buttons Example"
-           github-src="layouts/dock-manager/customize-buttons">
-</code-view>
+`sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager Customize Buttons Example"`
+
+
 <!-- end: WebComponents -->
 
 Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
@@ -563,12 +551,9 @@ igc-dockmanager::part(content-pane) {
 
 In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="{Platform} Dock Manager Styling Example"
-           github-src="layouts/dock-manager/styling">
-</code-view>
+`sample="/layouts/dock-manager/styling", height="700", alt="{Platform} Dock Manager Styling Example"`
+
+
 
 <div class="divider--half"></div>
 

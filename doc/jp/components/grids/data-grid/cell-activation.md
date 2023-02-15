@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} グリッド セルのアクティブ化の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-activation"
-           alt="{Platform} グリッド セルのアクティブ化の例"
-           github-src="grids/data-grid/cell-activation">
-</code-view>
+`sample="/grids/data-grid/cell-activation", height="600", alt="{Platform} グリッド セルのアクティブ化の例"`
+
+
 
 <div class="divider--half"></div>
 

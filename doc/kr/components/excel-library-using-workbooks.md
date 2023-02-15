@@ -13,11 +13,8 @@ The Infragistics Excel Engine enables you to save data to and load data from Mic
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
-           github-src="excel/excel-library/operations-on-workbooks">
-</code-view>
+`sample="/excel/excel-library/operations-on-workbooks", height="500", alt="{Platform} excel library operations on workbooks"`
+
 
 <div class="divider--half"></div>
 

@@ -5,6 +5,7 @@ _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, イン�
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} 列ピン固定
@@ -15,12 +16,9 @@ _language: ja
 
 以下の例は、1 つまたは複数の列を `{ComponentName}` の左側または右側にピン固定する方法を示しています。
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options"
-           alt="{Platform} {ComponentTitle} 列ピン固定の例">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} 列ピン固定の例"`
+
+
 
 ## Column Pinning API
 
@@ -199,9 +197,6 @@ function onColumnPinned(e) {
 igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
 
-
-
-
 ## ピン固定の位置
 
 `Pinning` 設定オプションを使用して、列のピン固定の位置を変更できます。列の位置を [Start] または [End] のいずれかに設定できます。
@@ -240,11 +235,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
-           github-src="{ComponentSample}/column-pinning-right-side">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
 
 <!-- Angular -->
 
@@ -513,11 +505,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+
 
 <!-- end: Angular -->
 
@@ -618,9 +607,9 @@ $custom-theme: grid-theme(
 カスタム テーマが特定のコンポーネントのみに影響するように、定義したすべてのスタイルをグローバル スタイル ファイルからカスタム コンポーネントのスタイルファイルに移動できます (`index` ファイルのインポートを含む)。
 
 このように、Angular の [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation) により、スタイルはカスタム コンポーネントにのみ適用されます。
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、グリッドのスタイルを設定するには、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
- >[!NOTE]
+ > [!Note]
  >ステートメントがコンポーネントの外にある要素に影響を与えないよう、ステートメントを `:host` セレクター内にラップします。
 
 ```scss
@@ -634,13 +623,10 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:506px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
-           github-src="{ComponentSample}/column-pinning-styles">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
 
->[!NOTE]
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- ComponentEnd: Grid -->

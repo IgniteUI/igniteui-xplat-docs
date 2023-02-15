@@ -14,12 +14,9 @@ _language: ja
 
 次の例は、`XamDataChart` コントロールで `ColumnSeries` と `LineSeries` を使用して複合チャートを作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
-           github-src="charts/data-chart/composite-chart"
-           alt="{Platform} 複合チャートの例" >
-</code-view>
+`sample="/charts/data-chart/composite-chart", height="600", alt="{Platform} 複合チャートの例"`
+
+
 
 <div class="divider--half"></div>
 

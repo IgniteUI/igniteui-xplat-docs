@@ -17,12 +17,9 @@ The following is a basic {ProductName} Accordion example of a FAQ section. It op
 
 In it, you can see how to define an accordion and its expansion panels. The sample also demonstrates the two types of expansion behavior. The switch button sets the `SingleExpand` property to toggle between single and multiple branches to be expanded at a time.
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-overview"
-           alt="{Platform} Accordion Example"
-           github-src="layouts/accordion/overview">
-</code-view>
+`sample="/layouts/accordion/overview", height="460", alt="{Platform} Accordion Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -124,14 +121,12 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
-
-
-
 As demonstrated above, the `SingleExpand`property gives you the ability to set whether single or multiple panels can be expanded at a time.
 
 By using the `HideAll` and `ShowAll` methods you can respectively collapse and expand all `ExpansionPanel`s of the `Accordion` programmatically.
 
-> Note: If `SingleExpand` property is set to *true* calling `ShowAll` method would expand only the focused panel.
+> [!Note]
+> If `SingleExpand` property is set to *true* calling `ShowAll` method would expand only the focused panel.
 
 ### {Platform} Accordion Customization Example
 
@@ -139,12 +134,9 @@ With the {Platform} Accordion, you can customize the header and content panel's 
 
 The sample below demonstrates how elaborate filtering options can be implemented using the built-in slots of the `ExpansionPanel`.
 
-<code-view style="height: 550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-customization"
-           alt="{Platform} Accordion Customization Example"
-           github-src="layouts/accordion/customization">
-</code-view>
+`sample="/layouts/accordion/customization", height="550", alt="{Platform} Accordion Customization Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -152,12 +144,9 @@ The sample below demonstrates how elaborate filtering options can be implemented
 
 In the following {Platform} Accordion example is created a complex FAQ section in order to illustrate how you can go about this common application scenario. In the sample nested `Accordion` is achieved by adding an accordion inside an expansion panel.
 
-<code-view style="height: 550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-nested-scenario"
-           alt="{Platform} Accordion Nested Example"
-           github-src="layouts/accordion/nested-scenario">
-</code-view>
+`sample="/layouts/accordion/nested-scenario", height="550", alt="{Platform} Accordion Nested Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -30,12 +30,9 @@ _language: ja
 ## {Platform} Grid アクセシビリティの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-accessibility"
-           alt="{Platform} Grid セルのアクセシビリティの例"
-           github-src="grids/data-grid/accessibility">
-</code-view>
+`sample="/grids/data-grid/accessibility", height="600", alt="{Platform} Grid セルのアクセシビリティの例"`
+
+
 
 <div class="divider--half"></div>
 
