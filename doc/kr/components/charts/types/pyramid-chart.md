@@ -13,12 +13,9 @@ The {ProductName} Pyramid Chart, also called an age pyramid or population pyrami
 
 The following example demonstrates how to create Pyramid Chart using `BarSeries` in the `XamDataChart` control.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-pyramid-chart"
-           github-src="charts/data-chart/pyramid-chart"
-           alt="{Platform} Pyramid Chart Example" >
-</code-view>
+`sample="/charts/data-chart/pyramid-chart", height="600", alt="{Platform} Pyramid Chart Example"`
+
+
 
 <div class="divider--half"></div>
 

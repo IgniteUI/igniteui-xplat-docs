@@ -31,12 +31,9 @@ _language: ja
 
 次の例は、集計が適用されたデータ ツールチップを示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip"
-           alt="{Platform} カテゴリ チャート データ ツールチップの例"
-           github-src="charts/category-chart/data-tooltip">
-</code-view>
+`sample="/charts/category-chart/data-tooltip", height="450", alt="{Platform} カテゴリ チャート データ ツールチップの例"`
+
+
 
 ### {Platform} データ ツールチップの列
 
@@ -72,12 +69,9 @@ _language: ja
 
 次の例は、Open、High、Low、Close、および Change の列が追加されたデータ ツールチップを示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip"
-           alt="{Platform} ファイナンシャル チャート データ ツールチップの例"
-           github-src="charts/financial-chart/data-tooltip">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの例"`
+
+
 
 ## {Platform} データ ツールチップのスタイル設定
 
@@ -85,12 +79,9 @@ _language: ja
 
 次の例は、上記のスタイル設定プロパティの使用法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-styling-props"
-           alt="{Platform} ファイナンシャル チャート データ ツールチップのスタイル設定"
-           github-src="charts/financial-chart/data-tooltip-styling-props">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip-styling-props", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップのスタイル設定"`
+
+
 
 ## {Platform} データ ツールチップのグループ化と配置
 
@@ -98,12 +89,9 @@ _language: ja
 
 次の例は、チャートの右上に配置されたデータ ツールチップを示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-positioning"
-           alt="{Platform} カテゴリ チャート データツールチップの配置の例"
-           github-src="charts/category-chart/data-tooltip-positioning">
-</code-view>
+`sample="/charts/category-chart/data-tooltip-positioning", height="450", alt="{Platform} カテゴリ チャート データツールチップの配置の例"`
+
+
 
 ## {Platform} データ ツールチップ値の書式設定
 
@@ -111,23 +99,17 @@ _language: ja
 
 次の例は、最小分数と最大分数が設定された **DataToolTip** を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-tooltip-formatting-decimals"
-           alt="{Platform} カテゴリ チャート データ ツールチップの小数の書式設定"
-           github-src="charts/category-chart/data-tooltip-formatting-decimals">
-</code-view>
+`sample="/charts/category-chart/data-tooltip-formatting-decimals", height="450", alt="{Platform} カテゴリ チャート データ ツールチップの小数の書式設定"`
+
+
 
 ## {Platform} データ ツールチップの値モード
 
 レイヤーの `DataToolTipValueFormatMode` プロパティを変更することにより、**DataToolTip** 内の値のデフォルトの 10 進表示を通貨表示に変更できます。**DataToolTip** は、`DataToolTipValueFormatCulture` プロパティを使用し、対応するカルチャ タグに設定することにより、表示されている通貨記号のカルチャを変更する機能も公開します。たとえば、次のサンプルは、`DataToolTipValueFormatCulture` が「en-GB」に設定されたチャートを示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-tooltip-formatting-currency"
-           alt="{Platform} ファイナンシャル チャート データ ツールチップの通貨の書式設定"
-           github-src="charts/financial-chart/data-tooltip-formatting-currency">
-</code-view>
+`sample="/charts/financial-chart/data-tooltip-formatting-currency", height="450", alt="{Platform} ファイナンシャル チャート データ ツールチップの通貨の書式設定"`
+
+
 
 ## API リファレンス
 

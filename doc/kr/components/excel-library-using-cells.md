@@ -13,11 +13,8 @@ The `WorksheetCell` objects in an Excel worksheet is the object that holds your 
 ## Demo
 
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
-           github-src="excel/excel-library/working-with-cells">
-</code-view>
+`sample="/excel/excel-library/working-with-cells", height="150", alt="{Platform} excel library working with cells"`
+
 
 <div class="divider--half"></div>
 

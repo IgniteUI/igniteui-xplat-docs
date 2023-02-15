@@ -14,12 +14,9 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 The following example represents `{ComponentName}` pagination and exposes the options usage of items per page and how paging can be enabled. The user can also quickly navigate through the `{ComponentName}` pages via "Go to last page" and "Go to first page" buttons.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
-           github-src="{ComponentSample}/row-paging-basic"
-           alt="{Platform} {ComponentTitle} Pagination Example">
-</code-view>
+`sample="/{ComponentSample}/row-paging-basic", height="550", alt="{Platform} {ComponentTitle} Pagination Example"`
+
+
 
 <!-- Angular -->
 
@@ -170,12 +167,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### Paginator Component Demo
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
-           github-src="{ComponentSample}/row-paging-options"
-           alt="{Platform} {ComponentTitle} Reusable Paginator Example">
-</code-view>
+`sample="/{ComponentSample}/row-paging-options", height="550", alt="{Platform} {ComponentTitle} Reusable Paginator Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -370,12 +364,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
-           github-src="{ComponentSample}/row-paging-style"
-           alt="{Platform} {ComponentTitle} Paging Style Example">
-</code-view>
+`sample="/{ComponentSample}/row-paging-style", height="550", alt="{Platform} {ComponentTitle} Paging Style Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports single or multiple row and cel
 ## {Platform} Grid Selection Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-selection"
-           alt="{Platform} Grid Selection Example"
-           github-src="grids/data-grid/cell-selection">
-</code-view>
+`sample="/grids/data-grid/cell-selection", height="600", alt="{Platform} Grid Selection Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -54,12 +51,9 @@ Pressing the space bar toggles selection of active row via `MultipleRow` or `Sin
 
 The following example demonstrates how to selected or deselected all rows in the grid. Note, `SelectionMode` must be set to MultipleRow.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-selection"
-           alt="{Platform} Grid Selection Example"
-           github-src="grids/data-grid/row-selection" >
-</code-view>
+`sample="/grids/data-grid/row-selection", height="600", alt="{Platform} Grid Selection Example"`
+
+
 
 <div class="divider--half"></div>
 

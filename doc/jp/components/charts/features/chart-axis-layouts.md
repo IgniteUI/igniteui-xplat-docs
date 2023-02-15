@@ -19,12 +19,9 @@ _language: ja
 
 以下の例は、2009 年以降に生成された再生可能電力量を[折れ線チャート](../types/line-chart.md)で示しています。チャートのプロット領域の内側または外側の左側または右側にラベルを配置したときに軸がどのように見えるかを視覚化できるように、`YAxisLabelLocation` を構成できるドロップダウンがあります。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-locations"
-           alt="{Platform} 軸位置の例"
-           github-src="charts/category-chart/axis-locations">
-</code-view>
+`sample="/charts/category-chart/axis-locations", height="450", alt="{Platform} 軸位置の例"`
+
+
 
 <!-- ## 軸方向の例
 
@@ -42,12 +39,9 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 
 以下の例は、[株価チャート](../types/stock-chart.md)と[縦棒チャート](../types/column-chart.md)をプロットした株価および株取引量チャートを示しています。この場合、左側の Y 軸は[縦棒チャート](../types/column-chart.md)で使用され、右側の Y 軸は[株価チャート](../types/stock-chart.md)、X 軸は 2 つの間で共有されます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
-           alt="{Platform} 軸共有の例"
-           github-src="charts/data-chart/axis-sharing">
-</code-view>
+`sample="/charts/data-chart/axis-sharing", height="450", alt="{Platform} 軸共有の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -57,12 +51,9 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 
 以下の例は、[散布スプライン チャート](../types/scatter-chart.md)で表される Sin と Cos 波を示します。X 軸と Y 軸は (0、0) 原点で交差します。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="{Platform} 軸交差の例"
-           github-src="charts/data-chart/axis-crossing">
-</code-view>
+`sample="/charts/data-chart/axis-crossing", height="450", alt="{Platform} 軸交差の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -71,12 +62,9 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 
 次の例は、`TimeXAxis` をタイムラインとして使用してデータ チャートのスタイルを設定する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
-           alt="コールアウト レイヤーを使用した {Platform} タイムライン"
-           github-src="charts/data-chart/timeline-axis-type">
-</code-view>
+`sample="/charts/data-chart/timeline-axis-type", height="500", alt="{Platform} コールアウト レイヤーを使用した {Platform} タイムライン"`
+
+
 
 <div class="divider--half"></div>
 <!-- end: Blazor -->

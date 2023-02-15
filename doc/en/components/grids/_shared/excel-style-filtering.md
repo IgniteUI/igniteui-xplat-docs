@@ -13,11 +13,8 @@ The grid Excel filtering provides an Excel like filtering UI for any {Platform} 
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
-           github-src="{ComponentSample}/excel-style-filtering-sample-1" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+
 
 ## Usage
 
@@ -237,11 +234,8 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
-           github-src="{ComponentSample}/excel-style-filtering-sample-2" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-sample-2", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 2"`
+
 
 <!-- TODO -- there is still no excel style filtering components. Uncomment the below section once they exist. -->
 <!-- ## Templates
@@ -470,11 +464,8 @@ public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
-           github-src="{ComponentSample}/excel-style-filtering-sample-3" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-sample-3", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 3"`
+
 
 Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-header`
@@ -512,11 +503,8 @@ By default, the {ComponentTitle} component filters the data based on the origina
 
 <!--
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
-           github-src="{ComponentSample}/filtering-strategy" >
-</code-view>
+`sample="/{ComponentSample}/filtering-strategy", height="620", alt="{Platform} {ComponentTitle} filtering strategy"`
+
 
 > [!Note]
 >The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
@@ -526,11 +514,8 @@ By default, the {ComponentTitle} component filters the data based on the origina
 
 By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filter-view"
-           github-src="{ComponentSample}/filter-view" >
-</code-view> -->
+`sample="/{ComponentSample}/filter-view", height="650", alt="{Platform} {ComponentTitle} filter view"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -541,11 +526,8 @@ As you see at the demos above the default appearance of the Excel Style filterin
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
-           github-src="{ComponentSample}/external-excel-style-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-excel-style-filtering", height="620", alt="{Platform} {ComponentTitle} external excel style filtering"`
+
 
 ### Usage
 
@@ -629,11 +611,8 @@ However, elements that go outside of the grid (e.g. Excel Style filter) will con
 
 ### Demo
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-outlet"
-           github-src="{ComponentSample}/external-outlet" >
-</code-view> -->
+`sample="/{ComponentSample}/external-outlet", height="700", alt="{Platform} {ComponentTitle} external outlet"`
+
 
 <!-- Angular -->
 
@@ -941,11 +920,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:950px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
-           github-src="{ComponentSample}/excel-style-filtering-style" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

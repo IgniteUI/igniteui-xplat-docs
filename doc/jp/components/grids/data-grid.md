@@ -60,12 +60,9 @@ _language: ja
 
 この {ProductName} Grid の例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid の例">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -1081,11 +1078,8 @@ public class AminoWeight
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
-           github-src="{GridSample}/binding-nested-data-2">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+
 
 <!-- end: Angular -->
 
@@ -1402,11 +1396,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 以下は、この設定の結果です。
 
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
-           github-src="{GridSample}/binding-nested-data-1">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+
 
 ### フラット データの操作の概要
 
@@ -1653,11 +1644,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
-           github-src="{GridSample}/binding-composite-data">
-</code-view>
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+
 
 ## キーボード ナビゲーション
 

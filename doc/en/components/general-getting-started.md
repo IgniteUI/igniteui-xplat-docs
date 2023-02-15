@@ -61,12 +61,9 @@ This topic provides step-by-step instructions for creating Web Components applic
 
 ## Ignite UI Web Components Example
 
-<code-view style="height: 750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
-           alt="{Platform} Overview Example"
-           github-src="maps/geo-map/display-osm-imagery">
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
 
 # Configuration
 

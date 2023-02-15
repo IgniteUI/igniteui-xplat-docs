@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Spreadsheet の条件付き書式設定の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-conditional-formatting"
-           alt="{Platform} Spreadsheet の条件付き書式設定の例"
-           github-src="excel/spreadsheet/conditional-formatting">
-</code-view>
+`sample="/excel/spreadsheet/conditional-formatting", height="500", alt="{Platform} Spreadsheet の条件付き書式設定の例"`
+
+
 
 <div class="divider--half"></div>
 

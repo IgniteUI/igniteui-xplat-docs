@@ -13,11 +13,8 @@ The {ProductName} Data Grid supports the ability to move columns, giving you the
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
-           github-src="grids/data-grid/column-moving">
-</code-view>
+`sample="/grids/data-grid/column-moving", height="600", alt="{Platform} data grid column moving"`
+
 
 <div class="divider--half"></div>
 

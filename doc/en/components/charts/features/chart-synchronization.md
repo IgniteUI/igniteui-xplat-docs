@@ -13,12 +13,9 @@ The {ProductName} data chart allows for synchronization with respect to the coor
 
 This sample shows synchronization of two {Platform} data charts:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-synchronization"
-           alt="{Platform} Chart Synchronization Example"
-           github-src="charts/data-chart/chart-synchronization">
-</code-view>
+`sample="/charts/data-chart/chart-synchronization", height="600", alt="{Platform} Chart Synchronization Example"`
+
+
 
 <div class="divider--half"></div>
 

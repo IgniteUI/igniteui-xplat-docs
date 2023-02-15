@@ -62,12 +62,9 @@ yarn create react-app my-app-name --typescript
 
 ## Ignite UI Web Components の例
 
-<code-view style="height: 750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"
-           alt="{Platform} Overview Example"
-           github-src="maps/geo-map/display-osm-imagery">
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
 
 # 構成
 

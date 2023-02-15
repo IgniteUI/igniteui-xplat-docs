@@ -13,10 +13,7 @@ Use the map component's `GeographicHighDensityScatterSeries` to bind and show sc
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"  >
-</code-view>
+`sample="/maps/geo-map/type-scatter-density-series", height="400", alt="{Platform} geo map type scatter density series"`
 
 <div class="divider--half"></div>
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports [template columns](column-type
 ## {Platform} Binding Periodic Table Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-periodic-table"
-           alt="{Platform} Binding Periodic Table Example"
-           github-src="grids/data-grid/type-periodic-table">
-</code-view>
+`sample="/grids/data-grid/type-periodic-table", height="600", alt="{Platform} Binding Periodic Table Example"`
+
+
 
 ## API References
 

@@ -21,12 +21,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 行ピン固定の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-options"
-           github-src="{ComponentSample}/row-pinning-options"
-           alt="{Platform} {ComponentTitle} 行ピン固定の例">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-options", height="600", alt="{Platform} {ComponentTitle} 行ピン固定の例"`
+
+
 
 ## 行のピン固定 UI
 
@@ -301,12 +298,9 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 #### デモ
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
-            github-src="{ComponentSample}/row-pinning-extra-column"
-            alt="{Platform} {ComponentTitle} 行ピン固定の追加の列の例">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-extra-column", height="600", alt="{Platform} {ComponentTitle} 行ピン固定の追加の列の例"`
+
+
 
 <!-- end: Angular -->
 
@@ -362,12 +356,9 @@ public onDropAllowed(args) {
 
 #### デモ
 
-<code-view style="height:510px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-drag"
-            github-src="{ComponentSample}/row-pinning-drag"
-            alt="{Platform} {ComponentTitle} 行ピン固定ドラッグの例">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-drag", height="510", alt="{Platform} {ComponentTitle} 行ピン固定ドラッグの例"`
+
+
 
 <!-- end: Angular -->
 
@@ -451,12 +442,9 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:540px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"
-           github-src="{ComponentSample}/row-pinning-style"
-           alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} 行ピン固定スタイル設定の例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
@@ -469,9 +457,6 @@ Internet Explorer 11 のコンポーネントをスタイル設定するには�
 * `RowType`
 
 ## その他のリソース
-
-
-
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)

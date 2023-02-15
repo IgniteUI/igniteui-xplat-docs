@@ -12,12 +12,9 @@ The {ProductName} map component, the `ShapefileConverter` class loads geo-spatia
 ## {Platform} Binding Shape Files with Geo-spatial Data Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="{Platform} Binding Shape Files with Geo-spatial Data Example"
-           github-src="maps/geo-map/binding-shp-polylines">
-</code-view>
+`sample="/maps/geo-map/binding-shp-polylines", height="500", alt="{Platform} Binding Shape Files with Geo spatial Data Example"`
+
+
 
 <div class="divider--half"></div>
 

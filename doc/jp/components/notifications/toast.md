@@ -16,11 +16,8 @@ _language: ja
 
 以下の単純な Ignite UI for {Platform} Toast の例を見てください。ボタンをクリックすると、アニメーションの通知メッセージがポップアップ表示されます。
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast の例"
-           github-src="notifications/toast/overview">
-</code-view>
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast の例"`
+
 
 <div class="divider--half"></div>
 
@@ -226,12 +223,9 @@ public onDisplayTimeButtonClicked() {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="{Platform} Toast プロパティの例"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast プロパティの例"`
+
+
 
 ## スタイル設定
 
@@ -245,13 +239,7 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="{Platform} Toast スタイル設定の例"
-           github-src="notifications/toast/styling">
-</code-view>
-
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast スタイル設定の例"`
 
 <div class="divider--half"></div>
 

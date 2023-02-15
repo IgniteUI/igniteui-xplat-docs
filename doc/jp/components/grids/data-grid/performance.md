@@ -24,12 +24,9 @@ _language: ja
 このサンプルは、何千もの財務記録を {Platform} Data Grid に結合し、1 つの列 (Territory) にグループ化した複数の列を数ミリ秒ごとにライブ更新します。ラグ、画面のちらつき、または表示の遅延なしに、さまざまなオプションをリアル タイムで変更し、データ グリッドのパフォーマンスを変更できます。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-performance"
-           alt="{Platform} ライブ データの高パフォーマンスの例"
-           github-src="grids/data-grid/performance">
-</code-view>
+`sample="/grids/data-grid/performance", height="600", alt="{Platform} ライブ データの高パフォーマンスの例"`
+
+
 
 <div class="divider--half"></div>
 

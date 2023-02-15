@@ -13,12 +13,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-collapsible-groups"
-           github-src="{ComponentSample}/column-collapsible-groups"
-           alt="{Platform} {ComponentTitle} の縮小可能な列グループの例">
-</code-view>
+`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
+
+
 
 ## 設定
 

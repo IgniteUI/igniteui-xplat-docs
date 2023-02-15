@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} 複数のシェイプ ファイルのバインドとオーバーレイの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes"
-           alt="{Platform} 複数のシェイプ ファイルのバインドとオーバーレイの例"
-           github-src="maps/geo-map/binding-multiple-shapes">
-</code-view>
+`sample="/maps/geo-map/binding-multiple-shapes", height="500", alt="{Platform} 複数のシェイプ ファイルのバインドとオーバーレイの例"`
+
+
 
 <div class="divider--half"></div>
 

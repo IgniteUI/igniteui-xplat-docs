@@ -15,12 +15,9 @@ _language: ja
 
 異なる軸プロパティを使用して、X 軸と Y 軸の両方のすべての側面を変更またはカスタマイズします。グリッド線を表示したり、目盛りのスタイルをカスタマイズしたり、軸のタイトルを変更したり、軸の位置や交差値を変更したりすることもできます。{Platform} チャートのカスタマイズについての詳細には、[軸グリッド線](features/chart-axis-gridlines.md)、[軸レイアウト](features/chart-axis-layouts.md)、および[軸オプション](features/chart-axis-options.md)のトピックをご覧ください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="{Platform} 軸交差軸の例"
-           github-src="charts/data-chart/axis-crossing">
-</code-view>
+`sample="/charts/data-chart/axis-crossing", height="500", alt="{Platform} 軸交差軸の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,12 +25,9 @@ _language: ja
 
 これらの追加のレイヤーは、マウス/タッチに依存するほかのチャートレイヤーの上にあります。個別にまたは組み合わせて使用すると、チャート内の特定の値を強調するのに役立つ強力な操作を提供します。この機能の詳細については、[チャート注釈](features/chart-annotations.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="{Platform} 注釈の例"
-           github-src="charts/category-chart/line-chart-with-annotations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-annotations", height="500", alt="{Platform} 注釈の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -41,12 +35,9 @@ _language: ja
 
 アニメーションを有効にして、新しいデータ ソースを読み込むときにチャートをアニメーション化します。これらは、さまざまなタイプのアニメーションとそれらのアニメーションが実行される速度を設定することでカスタマイズできます。この機能の詳細については、[チャート アニメーション](features/chart-animations.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="{Platform} 構成オプションの例"
-           github-src="charts/category-chart/line-chart-with-animations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-animations", height="500", alt="{Platform} 構成オプションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -54,12 +45,9 @@ _language: ja
 
 線、列、マーカーなどのビジュアルに、マウスをデータ項目の上に置いたときに強調表示して、フォーカスを合わせます。この機能は、すべてのチャート タイプで有効になっています。この機能の詳細については、[チャート強調表示](features/chart-highlighting.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-highlighting"
-           alt="{Platform} 強調表示の例"
-           github-src="charts/category-chart/column-chart-with-highlighting">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-highlighting", height="500", alt="{Platform} 強調表示の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -67,12 +55,9 @@ _language: ja
 
 チャート シリーズのマーカーを使用して値が主要なグリッド線の間にある場合でも、データ ポイントをすばやく識別します。これらは、スタイル、カラー、および形状で完全にカスタマイズ可能です。この機能の詳細については、[チャート マーカー](features/chart-markers.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="{Platform} 構成オプションの例"
-           github-src="charts/category-chart/marker-options">
-</code-view>
+`sample="/charts/category-chart/marker-options", height="500", alt="{Platform} 構成オプションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -80,12 +65,9 @@ _language: ja
 
 マウス、キーボード、およびタッチ操作でズームおよびパンすることにより、チャートをナビゲートできます。この機能の詳細については、[チャート ナビゲーション](features/chart-navigation.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="{Platform} ナビゲーションの例"
-           github-src="charts/data-chart/chart-navigation">
-</code-view>
+`sample="/charts/data-chart/chart-navigation", height="500", alt="{Platform} ナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -93,12 +75,9 @@ _language: ja
 
 オーバーレイを使用すると、チャートに水平線または垂直線をプロットして、重要な値としきい値に注釈を付けることができます。この機能の詳細については、[チャート オーバーレイ](features/chart-overlays.md)トピックを参照してください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="{Platform} 値オーバーレイの例"
-           github-src="charts/data-chart/series-value-overlay">
-</code-view>
+`sample="/charts/data-chart/series-value-overlay", height="600", alt="{Platform} 値オーバーレイの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -106,12 +85,9 @@ _language: ja
 
 {Platform} チャートは、数百万のデータ ポイントを描画し、それらを数ミリ秒ごとに更新する高性能のために最適化されています。ただし、チャートのパフォーマンスに影響を与えるいくつかのチャート機能があり、アプリケーションのパフォーマンスを最適化するときにそれらを考慮する必要があります。この機能の詳細については、[チャート パフォーマンス](features/chart-performance.md)トピックを参照してください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           github-src="charts/category-chart/high-volume"
-           alt="{Platform} チャート パフォーマンスの例" >
-</code-view>
+`sample="/charts/category-chart/high-volume", height="600", alt="{Platform} チャート パフォーマンスの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -119,12 +95,9 @@ _language: ja
 
 ツールチップを使用して、特定のシリーズ タイプに関連するすべての情報を表示します。項目レベルやカテゴリ レベルのツールチップなど、有効にできるさまざまなツールチップがあります。この機能の詳細については、[チャート ツールチップ](features/chart-tooltips.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="{Platform} ツールチップ タイプの例"
-           github-src="charts/category-chart/column-chart-with-tooltips">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-tooltips", height="500", alt="{Platform} ツールチップ タイプの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -132,12 +105,9 @@ _language: ja
 
 トレンドラインを使用して、トレンドを特定したり、データ内のパターンを見つけたりします。{Platform} チャートでは、CubicFit や LinearFit など、さまざまなトレンドラインがサポートされています。この機能の詳細については、[チャート トレンドライン](features/chart-trendlines.md)トピックを参照してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="{Platform} トレンドラインの例"
-           github-src="charts/financial-chart/trendlines">
-</code-view>
+`sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} トレンドラインの例"`
+
+
 
 <div class="divider--half"></div>
 

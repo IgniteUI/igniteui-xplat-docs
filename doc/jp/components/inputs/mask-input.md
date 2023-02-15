@@ -12,12 +12,9 @@ _language: ja
 
 ### {Platform} マスク入力の例
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="{Platform} マスク入力の概要の例"
-           github-src="inputs/mask-input/overview">
-</code-view>
+`sample="/inputs/mask-input/overview", height="150", alt="{Platform} マスク入力の概要の例"`
+
+
 
 ## 使用方法
 
@@ -71,12 +68,9 @@ defineComponents(IgcMaskInputComponent);
 
 その後、ブラウザーに次のように表示されます:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="{Platform} マスク入力マスクの適用の例"
-           github-src="inputs/mask-input/applying-mask">
-</code-view>
+`sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} マスク入力マスクの適用の例"`
+
+
 
 ### プロンプト文字
 
@@ -100,12 +94,9 @@ defineComponents(IgcMaskInputComponent);
 
 IgcMaskInput は、特定のマスクが適用されたときにフォームにバインドする入力値 (書式設定付きまたは生) を構成するために `raw` および `withFormatting` オプションを選択できる `valueMode` プロパティを公開します。デフォルトでは、`valueMode` は *raw* に設定されています。以下の例をご覧ください:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="{Platform} マスク入力値モードの例"
-           github-src="inputs/mask-input/value-modes">
-</code-view>
+`sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} マスク入力値モードの例"`
+
+
 
 ## スタイル設定
 

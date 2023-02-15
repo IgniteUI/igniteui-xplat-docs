@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports column summaries. In some case
 ## {Platform} Column Summaries Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-summaries"
-           alt="{Platform} Column Summaries Example"
-           github-src="grids/data-grid/column-summaries">
-</code-view>
+`sample="/grids/data-grid/column-summaries", height="600", alt="{Platform} Column Summaries Example"`
+
+
 
 <div class="divider--half"></div>
 

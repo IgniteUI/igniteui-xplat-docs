@@ -18,12 +18,9 @@ Ignite UI for {Platform} ドロップダウン コンポーネントは、事前
 
 次の {Platform} ドロップダウン リストの例は、3 つの基本的なオプションから選択できる単純なインタラクティブな {Platform} ドロップダウン メニューを実際に使用する方法を示しています。この {Platform} ドロップダウン リストの例で実際の動作をご覧ください。
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
-           alt="{Platform} Dropdown の例"
-           github-src="inputs/dropdown/overview">
-</code-view>
+`sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown の例"`
+
+
 
 ## {ProductName} で Dropdown List を使用する方法
 
@@ -89,23 +86,17 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 {Platform} ドロップダウン リストは、ターゲットに対して相対的に配置されます。`target` スロットを使用すると、クリック時に `open` プロパティを切り替える組み込みコンポーネントを提供できます。場合によっては、外部ターゲットを使用するか、別のイベントを使用してドロップダウンの開始を切り替えることができます。これは、ターゲットをパラメーターとして提供できる `Show`、`Hide`、および `Toggle` メソッドを使用して実現できます。デフォルトでは、ドロップダウン リストは CSS の `absolute` 位置を使用します。ターゲット要素が固定コンテナー内にあるが、ドロップダウンがそうではない場合、{Platform} ドロップダウンの `PositionStrategy` を `fixed` に設定する必要があります。ドロップダウン リストは、その内容に基づいて自動的にサイズ変更されます。リストの幅をターゲットと同じにする場合は、`SameWidth` プロパティを **true** に設定する必要があります。
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-target"
-           alt="{Platform} Dropdown Target の例"
-           github-src="inputs/dropdown/target">
-</code-view>
+`sample="/inputs/dropdown/target", height="200", alt="{Platform} Dropdown Target の例"`
+
+
 
 ### 位置
 
 {Platform} ドロップダウンの優先配置は、`Placement` プロパティを使用して設定できます。ドロップダウンのデフォルトの配置は `bottom-start` です。`Flip` プロパティは、指定された配置でドロップダウンを表示するのに十分なスペースがない場合に配置を反転するかどうかを決定します。{Platform} ドロップダウン リストからそのターゲットまでの距離は、`Distance` プロパティを使用して指定できます。
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
-           alt="{Platform} Dropdown Position の例"
-           github-src="inputs/dropdown/position">
-</code-view>
+`sample="/inputs/dropdown/position", height="520", alt="{Platform} Dropdown Position の例"`
+
+
 
 ### 選択
 
@@ -115,34 +106,25 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 `DropdownItem` は、ドロップダウン リストで選択可能な項目を表します。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、項目を無効にして選択できないようにすることもできます。`DropdownItem` には、項目のコンテンツを指定できるデフォルトのスロットがあります。`prefix` スロットと `suffix` スロットを使用して、コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Value` プロパティを使用すると、項目にカスタム値を提供できます。`Value` が設定されていない場合は、項目のテキスト コンテンツに解決されます。
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
-           alt="{Platform} Dropdown Item の例"
-           github-src="inputs/dropdown/item">
-</code-view>
+`sample="/inputs/dropdown/item", height="220", alt="{Platform} Dropdown Item の例"`
+
+
 
 ### Header (ヘッダー)
 
 `DropdownHeader` を使用して、項目のグループのヘッダーを提供できます。
 
-<code-view style="height: 250px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-header"
-           alt="{Platform} Dropdown Header の例"
-           github-src="inputs/dropdown/header">
-</code-view>
+`sample="/inputs/dropdown/header", height="250", alt="{Platform} Dropdown Header の例"`
+
+
 
 ### Group (グループ)
 
 {Platform} ドロップダウンの項目は、`DropdownGroup` を使用してグループ化することもできるため、ユーザーは個別のカテゴリを簡単に区別できます。この {Platform} ドロップダウン リストの例で実際の動作をご覧ください。
 
-<code-view style="height: 420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
-           alt="{Platform} Dropdown Group の例"
-           github-src="inputs/dropdown/group">
-</code-view>
+`sample="/inputs/dropdown/group", height="420", alt="{Platform} Dropdown Group の例"`
+
+
 
 ### Scroll Strategy (スクロール方法)
 
@@ -156,12 +138,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDropdownModule));
 
 公開された CSS 部分を使用して、ドロップダウンとその項目の外観を変更できます。`Dropdown` は `base` 部分と `list` 部分を公開し、`DropdownItem` は `prefix`、`content`、`suffix` 部分を公開し、`DropdownGroup` は `label` 部分を公開します。
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
-           alt="{Platform} Dropdown Styling の例"
-           github-src="inputs/dropdown/styling">
-</code-view>
+`sample="/inputs/dropdown/styling", height="320", alt="{Platform} Dropdown Styling の例"`
+
+
 
 ## API リファレンス
 

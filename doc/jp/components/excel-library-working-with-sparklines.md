@@ -12,12 +12,9 @@ Infragistics {Platform} Excel Library は、Excel ワークシートにスパー
 ## {Platform} スパークラインを使用した作業の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines"
-           alt="{Platform} スパークラインを使用した作業の例"
-           github-src="excel/excel-library/working-with-sparklines">
-</code-view>
+`sample="/excel/excel-library/working-with-sparklines", height="500", alt="{Platform} スパークラインを使用した作業の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -12,11 +12,8 @@ The {ProductName} map component allows you to display data that contains geograp
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} geo map type scatter bubble series"`
+
 
 <div class="divider--half"></div>
 

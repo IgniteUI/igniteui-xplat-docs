@@ -12,12 +12,9 @@ In the {ProductName} map, you can add multiple geographic series objects to over
 ## {Platform} Binding and Overlaying Multiple Shape Files Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-shapes"
-           alt="{Platform} Binding and Overlaying Multiple Shape Files Example"
-           github-src="maps/geo-map/binding-multiple-shapes">
-</code-view>
+`sample="/maps/geo-map/binding-multiple-shapes", height="500", alt="{Platform} Binding and Overlaying Multiple Shape Files Example"`
+
+
 
 <div class="divider--half"></div>
 

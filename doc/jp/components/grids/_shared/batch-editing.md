@@ -34,12 +34,9 @@ namespace: Infragistics.Controls
 
 次のサンプルは、`{ComponentName}` で `BatchEditing` が有効になっており、行編集が有効になっているシナリオを示しています。行編集全体を確定後にトランザクションが追加されるようにします。
 
-<code-view style="height:680px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-actions"
-           github-src="{ComponentSample}/data-batch-editing-actions"
-           alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例" >
-</code-view>
+`sample="/{ComponentSample}/data-batch-editing-actions", height="680", alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例"`
+
+
 
 > [!Note]
 > トランザクション ステートは、すべての更新、追加、削除された行、そして最後のステートで構成されます。
@@ -408,12 +405,9 @@ export class HierarchicalGridBatchEditingSampleComponent {
 
 [完全なデモ構成は、こちらです。](remote-data-operations.md#一括編集のリモート-ページング)
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-remote"
-           github-src="{ComponentSample}/data-batch-editing-remote"
-           alt="{Platform} {ComponentTitle} 一括編集とリモート ページングの例" >
-</code-view>
+`sample="/{ComponentSample}/data-batch-editing-remote", height="620", alt="{Platform} {ComponentTitle} 一括編集とリモート ページングの例"`
+
+
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

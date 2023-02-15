@@ -15,12 +15,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 仮想化とパフォーマンスの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-virtualization"
-           github-src="{ComponentSample}/data-performance-virtualization"
-           alt="{Platform} {ComponentTitle} 仮想化とパフォーマンスの例">
-</code-view>
+`sample="/{ComponentSample}/data-performance-virtualization", height="550", alt="{Platform} {ComponentTitle} 仮想化とパフォーマンスの例"`
+
+
 
 ## 仮想化の有効化
 

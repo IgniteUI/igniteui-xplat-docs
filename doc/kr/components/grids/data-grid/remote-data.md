@@ -13,11 +13,8 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           github-src="grids/data-grid/binding-remote-data">
-</code-view>
+`sample="/grids/data-grid/binding-remote-data", height="600", alt="{Platform} data grid binding remote data"`
+
 
 <div class="divider--half"></div>
 

@@ -15,12 +15,9 @@ In addition, you can define your own custom templates for update-data actions an
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
-           github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
-</code-view>
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
+
+
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
@@ -188,12 +185,9 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
-<code-view style="height:625px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
-           github-src="{ComponentSample}/cell-selection-style"
-           alt="{Platform} {ComponentTitle} Select Example">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select Example"`
+
+
 
 <!-- end: Angular -->
 
@@ -284,13 +278,7 @@ Please check the full sample for further reference:
 
 ##### {Platform} Grid Excel Style Editing Sample
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
-           github-src="{ComponentSample}/editing-excel-style"
-           alt="{Platform} {ComponentTitle} Excel Style Editing Example">
-</code-view>
-
+`sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
 
 Main benefits of the above approach include:
 
@@ -574,12 +562,9 @@ Here, we are validating two columns. If the user tries to change an artist's **D
 
 The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
-           github-src="{ComponentSample}/editing-events"
-           alt="{Platform} {ComponentTitle} Editing Event Example">
-</code-view>
+`sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
+
+
 
 <!-- Angular -->
 
@@ -659,12 +644,9 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
-           github-src="{ComponentSample}/editing-style"
-           alt="{Platform} {ComponentTitle} Editing Style Example">
-</code-view>
+`sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} Editing Style Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

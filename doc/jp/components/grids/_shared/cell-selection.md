@@ -29,12 +29,9 @@ namespace: Infragistics.Controls
 
 以下のサンプルは、`{ComponentName}` の 3 種類の**セル選択**動作を示しています。以下のボタンを使用して、利用可能な各選択モードを有効にします。スナックバーのメッセージ ボックスを介して、各ボタンの操作に関する簡単な説明が提供されます。
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle} セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="750", alt="{Platform} {ComponentTitle} セル選択の例"`
+
+
 
 ## 選択タイプ
 
@@ -58,12 +55,9 @@ namespace: Infragistics.Controls
 
 <!-- TODO sample does not load any data in Blazor -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"
-           github-src="{ComponentSample}/multi-cell-selection-mode"
-           alt="{Platform} {ComponentTitle} 複数セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-mode", height="700", alt="{Platform} {ComponentTitle} 複数セル選択の例"`
+
+
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -240,12 +234,9 @@ $custom-grid-theme: grid-theme(
 カスタム テーマを適用すると、選択したグリッドセルが選択した色で強調表示されます。
 
 ### デモ
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
-           github-src="{ComponentSample}/multi-cell-selection-style"
-           alt="{Platform} {ComponentTitle} 複数セル選択の例">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} 複数セル選択の例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

@@ -16,13 +16,7 @@ namespace: Infragistics.Controls
 
 次の例は、すべての列と行を検索できる検索入力ボックスと、各列の特定のフィルタリング オプションを備えた `{ComponentName}` を表しています。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
-           github-src="{ComponentSample}/data-searching"
-           alt="{Platform} {ComponentTitle} 検索の例">
-</code-view>
-
+`sample="/{ComponentSample}/data-searching", height="600", alt="{Platform} {ComponentTitle} 検索の例"`
 
 ## {Platform} 検索の使用
 

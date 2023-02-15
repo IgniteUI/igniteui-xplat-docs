@@ -12,12 +12,9 @@ Dock Manager コンポーネントは、エンドユーザーの操作に基づ�
 ## {Platform} ドック マネージャー ペインの更新の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes"
-           alt="{Platform} ドック マネージャー ペインの更新の例"
-           github-src="layouts/dock-manager/updating-panes">
-</code-view>
+`sample="/layouts/dock-manager/updating-panes", height="600", alt="{Platform} ドック マネージャー ペインの更新の例"`
+
+
 
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

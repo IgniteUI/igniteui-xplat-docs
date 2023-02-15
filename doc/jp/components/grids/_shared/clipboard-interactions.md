@@ -14,12 +14,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} クリップボードの例
 
-<code-view style="height:635px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-clipboard-operations"
-           github-src="{ComponentSample}/clipboard-operations"
-           alt="{Platform} {ComponentTitle} クリップボードの操作の例">
-</code-view>
+`sample="/{ComponentSample}/clipboard-operations", height="635", alt="{Platform} {ComponentTitle} クリップボードの操作の例"`
+
+
 
 ## 機能
 

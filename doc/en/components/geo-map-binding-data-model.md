@@ -12,12 +12,9 @@ The {ProductName} map component is designed to display geo-spatial data from sha
 ## {Platform} Binding Geographic Data Models Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="{Platform} Binding Geographic Data Models Example"
-           github-src="maps/geo-map/binding-data-model">
-</code-view>
+`sample="/maps/geo-map/binding-data-model", height="500", alt="{Platform} Binding Geographic Data Models Example"`
+
+
 
 <div class="divider--half"></div>
 

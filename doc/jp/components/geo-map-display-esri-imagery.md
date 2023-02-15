@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Esri Maps から地理的画像を表示の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery"
-           alt="{Platform} Esri Maps から地理的画像を表示の例"
-           github-src="maps/geo-map/display-esri-imagery">
-</code-view>
+`sample="/maps/geo-map/display-esri-imagery", height="500", alt="{Platform} Esri Maps から地理的画像を表示の例"`
+
+
 
 <div class="divider--half"></div>
 

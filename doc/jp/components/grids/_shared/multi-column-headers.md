@@ -13,12 +13,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 複数列ヘッダーの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-overview"
-           github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダー概要の例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-overview", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダー概要の例"`
+
+
 
 複数列ヘッダーの宣言は、一連の列を `ColumnGroup` コンポーネントにラップし、`Header` タイトル情報を渡すことによって実現されます。
 
@@ -499,13 +496,7 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 次のサンプルは、ヘッダー テンプレートを使用して折りたたみ可能な列グループを実装する方法を示しています。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-header-template"
-           github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例">
-</code-view>
-
+`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} 複数列ヘッダーテンプレートの例"`
 
 ## スタイル設定
 
@@ -613,12 +604,9 @@ $custom-theme: igx-grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
-           github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentTitle} 複数列ヘッダースタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} 複数列ヘッダースタイル設定の例"`
+
+
 
 ## 既知の問題と制限
 

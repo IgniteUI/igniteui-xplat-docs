@@ -34,12 +34,9 @@ namespace: Infragistics.Controls
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
-           github-src="{ComponentSample}/column-selection-mode"
-           alt="{Platform} 列選択の例">
-</code-view>
+`sample="/{ComponentSample}/column-selection-mode", height="570", alt="{Platform} 列選択の例"`
+
+
 
 ## 基本的な使用方法
 
@@ -69,11 +66,8 @@ namespace: Infragistics.Controls
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
-           github-src="{ComponentSample}/column-selection-group">
-</code-view>
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+
 
 ## キーボードの組み合わせ
 
@@ -196,11 +190,8 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
-           github-src="{ComponentSample}/column-selection-styles">
-</code-view>
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

@@ -11,12 +11,9 @@ This topic explains how to perform clipboard operations on the {ProductName} spr
 ## {Platform} Working with Clipboard Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"
-           alt="{Platform} Working with Clipboard Example"
-           github-src="excel/spreadsheet/clipboard">
-</code-view>
+`sample="/excel/spreadsheet/clipboard", height="500", alt="{Platform} Working with Clipboard Example"`
+
+
 
 <div class="divider--half"></div>
 

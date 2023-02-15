@@ -12,12 +12,9 @@ The {ProductName} ComboBox component exposes several features such as filtering 
 ## Combobox Features Example
 The following demo shows some `ComboBox` features that are enabled/disabled at runtime:
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-features"
-           alt="{Platform} Combo Features"
-           github-src="grids/combo/features">
-</code-view>
+`sample="/grids/combo/features", height="400", alt="{Platform} Combo Features"`
+
+
 
 In our sample we are going to use the `Switch` component, so we have to register it together with the combo:
 

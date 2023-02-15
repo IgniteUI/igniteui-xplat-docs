@@ -13,12 +13,9 @@ The {Platform} ZoomSlider control provides zooming functionality to range-enable
 
 The following sample demonstrates how to use `ZoomSlider` to navigate content in `XamDataChart`.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="{Platform} Zoom Slider Example"
-           github-src="charts/zoomslider/overview">
-</code-view>
+`sample="/charts/zoomslider/overview", height="600", alt="{Platform} Zoom Slider Example"`
+
+
 
 <div class="divider--half"></div>
 

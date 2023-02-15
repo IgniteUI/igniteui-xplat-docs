@@ -14,12 +14,9 @@ In the {ProductName} `CategoryChart` control Data Aggregations feature allows yo
 
 The following example depicts a [Column Chart](../types/column-chart.md) that groups by the Country member of the `XAxis` and applies a summary and sort based on the Sales Sum.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-aggregations"
-           alt="{Platform} Data Aggregations Example"
-           github-src="charts/category-chart/data-aggregations">
-</code-view>
+`sample="/charts/category-chart/data-aggregations", height="500", alt="{Platform} Data Aggregations Example"`
+
+
 
 ```html
 <igx-category-chart

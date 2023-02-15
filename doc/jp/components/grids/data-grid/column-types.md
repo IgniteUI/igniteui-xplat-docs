@@ -24,12 +24,9 @@ _language: ja
 ## {Platform} 列タイプの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-types"
-           alt="{Platform} 列タイプの例"
-           github-src="grids/data-grid/column-types">
-</code-view>
+`sample="/grids/data-grid/column-types", height="600", alt="{Platform} 列タイプの例"`
+
+
 
 <div class="divider--half"></div>
 

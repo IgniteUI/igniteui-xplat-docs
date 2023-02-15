@@ -14,12 +14,9 @@ _language: ja
 
 次の例は、内部にいくつかの入力、ボタン、およびチェックボックスがある `Form` を表しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="{Platform} Form の例"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form の例"`
+
+
 
 ## 使用方法
 
@@ -75,12 +72,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbFormModule));
 
 `Form` の使用を開始する最も簡単な方法は次のとおりです:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="{Platform} Form の例"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form の例"`
+
+
 
 フォーム データは、次のコンポーネントについて収集されます:
 - `Checkbox`

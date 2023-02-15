@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、使用可能なすべての異なる `Sparkline` のタイプを示しています。タイプは `DisplayType` プロパティの設定により定義されます。`DisplayType` プロパティが指定されていない場合は、既定では `Line` 型が表示されます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           github-src="charts/sparkline/display-types"
-           alt="{Platform} スパークラインの例" >
-</code-view>
+`sample="/charts/sparkline/display-types", height="450", alt="{Platform} スパークラインの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -65,12 +62,9 @@ _language: ja
 - `Column`: スパークラインの縦棒チャート タイプを数値データで表示します。縦棒と表現される場合もあります。このタイプは単一データ ポイントを描画できますが、Sparkline に最小の値範囲プロパティ (minimum) を指定する必要があるので、供給される単一データ ポイントは表示可能です。そうでなければ、値は最小値として取り扱われ、表示されません。
 - `WinLoss`: このタイプは、外観は柱状チャートに似ています。各列の値はデータセットの正の最大値 (正の値の場合) または負の最小値 (負の値の場合) に等しくなります。ウィンまたはロス シナリオを示すのが目的です。Win/Loss チャートを正しく表示するには、データセットには正の値と負の値がなければなりません。WinLoss スパークラインが、数値のコレクションにバインドできる Line タイプなどの他のタイプと同じデータにバインドされている場合、{Platform} スパークライン コンポーネントはそのコレクションから最大値と最小値の 2 つの値を選択し、それらの値に基づいてスパークラインをレンダリングします。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           github-src="charts/sparkline/display-types"
-           alt="{Platform} スパークラインの例" >
-</code-view>
+`sample="/charts/sparkline/display-types", height="450", alt="{Platform} スパークラインの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -89,11 +83,8 @@ _language: ja
 
 上記のすべてのマーカーは、色、可視性、およびサイズの観点で関連マーカー タイプのプロパティを使用してカスタマイズできます。たとえば、上記の `Low` マーカーは、`LowMarkerBrush`、`LowMarkerVisibility`、`LowMarkerSize` の各プロパティを持ちます。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"
-           github-src="charts/sparkline/markers" >
-</code-view>
+`sample="/charts/sparkline/markers", height="300", alt="{Platform} sparkline markers"`
+
 
 <div class="divider--half"></div>
 
@@ -111,11 +102,8 @@ _language: ja
 
 `DisplayNormalRangeInFront` プロパティを設定することで、{Platform} スパークラインのプロットされたシリーズの前または後ろに標準範囲を表示するかどうかを設定することもできます。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"
-           github-src="charts/sparkline/normal-range" >
-</code-view>
+`sample="/charts/sparkline/normal-range", height="300", alt="{Platform} sparkline normal range"`
+
 
 <div class="divider--half"></div>
 
@@ -129,11 +117,8 @@ _language: ja
 
 以下のサンプルは、ドロップダウンを介して利用可能なすべてのトレンドラインを示しています:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"
-           github-src="charts/sparkline/trendlines" >
-</code-view>
+`sample="/charts/sparkline/trendlines", height="300", alt="{Platform} sparkline trendlines"`
+
 
 <div class="divider--half"></div>
 
@@ -143,11 +128,8 @@ _language: ja
 
 未知の値をプロットするために、{Platform} スパークラインの `UnknownValuePlotting` プロパティを設定することができます。以下のサンプルは、`UnknownValuePlotting` プロパティの値の違いを示しており、チェックボックスを使用してオンとオフを切り替えることができます。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"
-           github-src="charts/sparkline/unknown-values"  >
-</code-view>
+`sample="/charts/sparkline/unknown-values", height="300", alt="{Platform} sparkline unknown values"`
+
 
 <div class="divider--half"></div>
 
@@ -156,11 +138,8 @@ _language: ja
 
 {Platform} スパークラインは、データ グリッドのテンプレート列またはテンプレートをサポートする他の UI コントロールに埋め込むことができます。以下のコード例ではその方法を示します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           github-src="charts/sparkline/grid" >
-</code-view>
+`sample="/charts/sparkline/grid", height="600", alt="{Platform} sparkline grid"`
+
 
 ## その他のリソース
 

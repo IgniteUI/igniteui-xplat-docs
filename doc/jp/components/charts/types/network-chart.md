@@ -16,12 +16,9 @@ _language: ja
 
 次の例は、`XamDataChart` コントロールで `PolarScatterSeries` (ノード マーカーの描画用) と `PolarLineSeries` (ノード接続の描画用) を使用してネットワーク極座標チャートを作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-polar-chart"
-           github-src="charts/data-chart/network-polar-chart"
-           alt="{Platform} ネットワーク極座標チャート" >
-</code-view>
+`sample="/charts/data-chart/network-polar-chart", height="600", alt="{Platform} ネットワーク極座標チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,12 +26,9 @@ _language: ja
 
 次の例は、`XamDataChart` コントロールで `ScatterSeries` (ノード マーカーの描画用) と `ScatterPolylineSeries` (ノード接続の描画用) を使用してネットワーク散布図を作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-network-scatter-chart"
-           github-src="charts/data-chart/network-scatter-chart"
-           alt="{Platform} ネットワーク散布図" >
-</code-view>
+`sample="/charts/data-chart/network-scatter-chart", height="600", alt="{Platform} ネットワーク散布図"`
+
+
 
 <div class="divider--half"></div>
 

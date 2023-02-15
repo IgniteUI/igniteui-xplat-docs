@@ -14,12 +14,9 @@ _language: ja
 
 `CategoryChart` コントロールで {Platform}  ポイント チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Point** 列挙型に設定します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
-           github-src="charts/category-chart/point-chart-multiple-sources"
-           alt="{Platform} ポイント チャートの例" >
-</code-view>
+`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} ポイント チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -27,12 +24,9 @@ _language: ja
 
 次の例では、{Platform} ポイント チャートは、y 軸に数値データ列を、x 軸に非数値データ列を自動的に選択することにより、単一のデータ ソースをプロットします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-single-source"
-           github-src="charts/category-chart/point-chart-single-source"
-           alt="単一シリーズの {Platform} ポイント チャート" >
-</code-view>
+`sample="/charts/category-chart/point-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} ポイント チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -40,12 +34,9 @@ _language: ja
 
 {Platform} ポイント チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、ポイント チャートは追加データに合わせて自動的に更新されます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
-           github-src="charts/category-chart/point-chart-multiple-sources"
-           alt="複数シリーズの {Platform} ポイント チャート" >
-</code-view>
+`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} ポイント チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -53,12 +44,9 @@ _language: ja
 
 {Platform} ポイント チャートを設定したら、マーカーとそのアウトライン、ブラシ、太さを変更するなど、スタイルをさらにカスタマイズします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-styling"
-           github-src="charts/category-chart/point-chart-styling"
-           alt="ポイント チャートのスタイル設定" >
-</code-view>
+`sample="/charts/category-chart/point-chart-styling", height="600", alt="{Platform} ポイント チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports [template columns](column-type
 ## {Platform} Binding Heatmap Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-heatmap-table"
-           alt="{Platform} Binding Heatmap Data Example"
-           github-src="grids/data-grid/type-heatmap-table">
-</code-view>
+`sample="/grids/data-grid/type-heatmap-table", height="600", alt="{Platform} Binding Heatmap Data Example"`
+
+
 
 ## API References
 

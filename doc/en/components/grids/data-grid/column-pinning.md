@@ -23,12 +23,9 @@ A column or multiple columns can be pinned to the left-hand or right-hand side o
 ## {Platform} Grid Column Pinning Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="{Platform} Grid Column Pinning Example"
-           github-src="grids/data-grid/column-pinning-picker">
-</code-view>
+`sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid Column Pinning Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -275,11 +272,8 @@ The `DataGridToolbar` provides additional properties such as adding a title to t
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
-           github-src="grids/data-grid/column-pinning-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
+
 
 ## Code Snippet
 

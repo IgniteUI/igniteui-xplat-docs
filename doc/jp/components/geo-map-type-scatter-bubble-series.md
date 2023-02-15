@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理バブル マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           alt="{Platform} マップ | データ可視化ツール | 散布図比例"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} マップ | データ可視化ツール | 散布図比例"`
+
+
 
 <div class="divider--half"></div>
 

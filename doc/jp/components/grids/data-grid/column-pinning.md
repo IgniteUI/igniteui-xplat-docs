@@ -24,12 +24,9 @@ _language: ja
 ## {Platform} Grid 列ピン固定の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="{Platform} Grid 列ピン固定の例"
-           github-src="grids/data-grid/column-pinning-picker">
-</code-view>
+`sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid 列ピン固定の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -276,11 +273,8 @@ onButtonUnPin () {
 ## サンプル
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
-           github-src="grids/data-grid/column-pinning-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
+
 
 ## コード スニペット
 

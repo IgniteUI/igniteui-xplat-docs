@@ -13,10 +13,7 @@ Use the map component's `GeographicPolylineSeries` to display geo-spatial data u
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"  >
-</code-view>
+`sample="/maps/geo-map/type-shape-polyline-series", height="400", alt="{Platform} geo map type shape polyline series"`
 
 <div class="divider--half"></div>
 

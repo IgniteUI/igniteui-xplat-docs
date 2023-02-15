@@ -14,12 +14,9 @@ _language: ja
 
 次の例では、ドロップダウンを使用して、{Platform} `XamDataChart` コントロールで使用可能なさまざまなタイプの積層型チャートをすべて切り替えることができます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-chart-types"
-           github-src="charts/data-chart/stacked-chart-types"
-           alt="{Platform} 積層型チャートのタイプ" >
-</code-view>
+`sample="/charts/data-chart/stacked-chart-types", height="600", alt="{Platform} 積層型チャートのタイプ"`
+
+
 
 <div class="divider--half"></div>
 
@@ -31,12 +28,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedAreaSeries` にバインドします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
-           github-src="charts/data-chart/stacked-area-chart"
-           alt="{Platform} 積層型エリア チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-area-chart", height="600", alt="{Platform} 積層型エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -47,12 +41,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100AreaSeries` にバインドします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
-           github-src="charts/data-chart/stacked-100-area-chart"
-           alt="{Platform} 積層型 100 エリア チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-area-chart", height="600", alt="{Platform} 積層型 100 エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -65,12 +56,9 @@ _language: ja
 
 積層型棒チャートのこの例では、数値の X 軸 (チャートの下部のラベル) とカテゴリの Y 軸 (チャートの左側のラベル) があります。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedBarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           github-src="charts/data-chart/stacked-bar-chart"
-           alt="{Platform} 積層型 棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-bar-chart", height="600", alt="{Platform} 積層型 棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -81,12 +69,9 @@ _language: ja
 
 積層型 100% 棒チャートのこの例では、Energy Product (エネルギー積) の値は、水平棒のフラグメント内のすべてのデータの 100% 値として表示されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           github-src="charts/data-chart/stacked-100-bar-chart"
-           alt="{Platform} 積層型 100 棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-bar-chart", height="600", alt="{Platform} 積層型 100 棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -97,12 +82,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
-           github-src="charts/data-chart/stacked-column-chart"
-           alt="{Platform} 積層型縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-column-chart", height="600", alt="{Platform} 積層型縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -113,12 +95,9 @@ _language: ja
 
 以下の例は、タブレット、携帯電話、およびコンピューターを介した部門によるオンライン ショッピング トラフィックについて行われた調査を示しています。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100ColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           github-src="charts/data-chart/stacked-100-column-chart"
-           alt="{Platform} 積層型 100 縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} 積層型 100 縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -127,12 +106,9 @@ _language: ja
 
 積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
-           alt="{Platform} 積層型折れ線チャート"
-           github-src="charts/data-chart/stacked-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} 積層型折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -143,12 +119,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100LineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
-           alt="{Platform} 積層型 100 折れ線チャート"
-           github-src="charts/data-chart/stacked-100-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} 積層型 100 折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -159,12 +132,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineAreaSeries` にバインドします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
-           github-src="charts/data-chart/stacked-spline-area-chart"
-           alt="{Platform} 積層型 スプライン エリア チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-area-chart", height="600", alt="{Platform} 積層型 スプライン エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -175,12 +145,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100SplineAreaSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
-           github-src="charts/data-chart/stacked-100-spline-area-chart"
-           alt="{Platform} 積層型 100 スプライン エリア チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-area-chart", height="600", alt="{Platform} 積層型 100 スプライン エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -189,12 +156,9 @@ _language: ja
 
 積層型スプライン チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           github-src="charts/data-chart/stacked-spline-chart"
-           alt="{Platform} 積層型 スプライン チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} 積層型 スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -205,12 +169,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100SplineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           github-src="charts/data-chart/stacked-100-spline-chart"
-           alt="{Platform} 積層型 100 スプライン チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} 積層型 100 スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 

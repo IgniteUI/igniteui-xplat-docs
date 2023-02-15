@@ -12,12 +12,9 @@ mentionedTypes: ['Spreadsheet']
 ## {Platform} データ検証の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
-           alt="{Platform} データ検証の例"
-           github-src="excel/spreadsheet/data-validation">
-</code-view>
+`sample="/excel/spreadsheet/data-validation", height="500", alt="{Platform} データ検証の例"`
+
+
 
 <div class="divider--half"></div>
 
