@@ -1042,14 +1042,17 @@ function transformSamples(options: any) {
                 sample.file = options.docs.samplesGithubFile;
                 sample.github = options.docs.samplesGithubTree + sample.path;
 
-                // TODO in 23.1, remove:
-                var routingParts = sample.path.split('/');
-                if (routingParts.length !== 3) {
-                    throw new Error("Failed to generate routing path " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
-                }
 
-                // TODO in 23.1, replace sample.route = sample.path;
-                sample.route = routingParts[0] + "/" + routingParts[1] + "-" + routingParts[2]
+                // TODO in 23.1, replace this code block with: sample.route = sample.path;
+                var sampleRouteParts = sample.path.split('/');
+                var samplePathWithVars = sample.path.indexOf("Sample}") >= 0;
+                if (samplePathWithVars) {
+                    sample.route = sample.path.replace('Sample}/', 'Sample}-');
+                } else if (sampleRouteParts.length === 3) {
+                    sample.route = sampleRouteParts[0] + "/" + sampleRouteParts[1] + "-" + sampleRouteParts[2];
+                } else {
+                    throw new Error("Failed to get routing path " + nodeLocation + " file:\n" + node.value + "\n^^^^^^");
+                }
             }
         }
 
@@ -1074,9 +1077,9 @@ function transformSamples(options: any) {
 
         // generating <code-view />
         var str = '<code-view style="height: ' + sample.height + 'px" alt="' + sample.alt + '"\n';
-        str += '    data-demos-base-url="' + sampleHostEnvironment + '"\n';
-        str += '             iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
-        str += '                                   github-src="' + sample.path + '">\n';
+        str += '  data-demos-base-url="' + sampleHostEnvironment + '"\n';
+        str += '           iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
+        str += '                                        github-src="' + sample.path + '">\n';
         str += '</code-view>\n';
 
         if (options.platform === APIPlatform.Angular) {

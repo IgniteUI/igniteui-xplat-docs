@@ -1009,7 +1009,12 @@ function getSampleAltText(str) {
     str = str.split('>').join("");
     str = str.split('<').join("");
     str = str.split('"').join("");
+    str = str.split('  ').join(" ");
+    str = str.replace('Angular', "");
     str = str.trim();
+    if (str.indexOf("{Platform}") !== 0) {
+        str = "{Platform} " + str;
+    }
     return str;
 }
 
@@ -1034,7 +1039,10 @@ function getSampleSections(fileLines, filePath) {
             sample.height = sample.height.split('"').join("");
             sample.height = sample.height.split(':').join("");
             sample.height = sample.height.split(' ').join("");
+            sample.height = sample.height.split(';').join("");
             sample.height = sample.height.split('px').join("");
+            sample.height = sample.height.replace('<!--', "");
+            sample.height = sample.height.trim();
         }
         else if (line.indexOf("</code-view>") >= 0) {
             if (sample === undefined ) {
@@ -1057,8 +1065,8 @@ function getSampleSections(fileLines, filePath) {
                 sample.alt = getSampleAltText(sample.alt);
             }
 
-            // sample.code = '``` "sample": "' + sample.path + '", "height": ' + sample.height + ', "alt": "' + sample.alt + '" ```'
-            sample.code = '``` sample="' + sample.path + '", height= ' + sample.height + ', alt="' + sample.alt + '" ```'
+            // sample.code = '` "sample": "' + sample.path + '", "height": ' + sample.height + ', "alt": "' + sample.alt + '" ```'
+            sample.code = '`sample="' + sample.path + '", height="' + sample.height + '", alt="' + sample.alt + '"`'
 
             sampleSections.push(sample);
             sample = undefined;
@@ -1069,7 +1077,7 @@ function getSampleSections(fileLines, filePath) {
                 var components = ['data-chart', 'pie-chart', 'doughnut-chart', 'financial-chart',
                     'category-chart', 'sparkline', 'tree-map', 'zoomslider', 'date-picker', 'multi-column-combobox',
                     'excel-library', 'spreadsheet', 'bullet-graph', 'linear-gauge',
-                    'radial-gauge', 'data-grid', 'grid', 'list', 'combo', 'pivot-grid', 'tree-grid', 'tree', 'geo-map',
+                    'tree-map', 'radial-gauge', 'data-grid', 'grid', 'list', 'combo', 'pivot-grid', 'tree-grid', 'tree', 'geo-map',
                     'badge','button','checkbox','chip', 'circular-progress-indicator',
                     'date-time-input','dropdown','form','icon-button','input',
                     'linear-progress-indicator','mask-input',
@@ -1088,25 +1096,39 @@ function getSampleSections(fileLines, filePath) {
                     sample.path = sample.path.substring(0, altLocation)
                 }
 
+                sample.path = sample.path.replace('>', "");
                 sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
                 sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
+                sample.path = sample.path.replace('Sample}-', "Sample}/");
                 sample.path = sample.path.split('"').join("");
                 sample.path = sample.path.split(' ').join("");
                 sample.path = sample.path.trim();
+
                 for (const name of components) {
-                    sample.path = sample.path.replace('/'+name+'-', '/'+name+'/');
+                    if (sample.path.indexOf('/'+name+'-') > 0) {
+                        sample.path = sample.path.replace('/'+name+'-', '/'+name+'/');
+                        break;
+                    }
+                }
+
+                var sampleRouteParts = sample.path.split('/');
+                var samplePathWithVars = sample.path.indexOf("Sample}") >= 0;
+                if (samplePathWithVars) {
+                    if (sampleRouteParts.length !== 3 && sampleRouteParts.length !== 4) {
+                        throw new Error("Invalid sample path: " + sample.path + " L3=" + sampleRouteParts.length + " " + sample.file);
+                    }
+                } else if (sampleRouteParts.length !== 4) {
+                    throw new Error("Invalid sample path: " + sample.path + " L4=" + sampleRouteParts.length + " " + sample.file);
                 }
             }
 
             if (line.indexOf("alt=") >= 0) {
-
                 var altLocation = line.indexOf(' alt=')
                 if (altLocation > 0) {
                     sample.alt = line.substring(altLocation).replace("alt=", "")
                 } else {
                     sample.alt = line.replace("alt=", "");
                 }
-
                 sample.alt = getSampleAltText(sample.alt);
             }
         }
@@ -1134,7 +1156,12 @@ function simplifySamples(cb) {
     // 'doc/en/**/notifications/**/*.md',
     // 'doc/en/**/layouts/**/*.md',
     // 'doc/en/**/scheduling/calendar.md',
-    // 'doc/en/**/inputs/**/*.md',
+    // 'doc/**/inputs/**/*.md',
+    // 'doc/en/**/grids/**/*.md',
+    // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/charts/types/treemap-chart.md',
+    // 'doc/**/grids/grids.md',
+    // 'doc/en/**/general*.md',
     'doc/en/**/*.md',
     'doc/jp/**/*.md',
     'doc/kr/**/*.md',
@@ -1149,29 +1176,32 @@ function simplifySamples(cb) {
         var samples = getSampleSections(fileLines, filePath);
         // console.log(samples);
 
-        //samples.sort((a,b) => a.path - b.path);
-        for (const sample of samples) {
+        if (samples.length > 0) {
+            //samples.sort((a,b) => a.path - b.path);
+            for (const sample of samples) {
 
-            if (sample.path.indexOf('=') > 0) {
-                // console.log(" " + sample.path + " \t\t\t" + sample.file)
+                if (sample.path.indexOf('=') > 0) {
+                    // console.log(" " + sample.path + " \t\t\t" + sample.file)
+                }
+                // console.log(" " + sample.path + " ")
+                console.log(padRight(sample.height, 4) + " " + padLeft(sample.path, 60) + "\t\t" + sample.alt)
+                // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
+                // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
+
+                // setting new code-viewer, e.g. `sample="/charts/data-chart/overview", height=600, alt="{Platform} Chart Overview" `
+                fileLines[sample.lineStart] = sample.code;
+
+                for (let i = sample.lineStart + 1; i <= sample.lineEnd; i++) {
+                    fileLines[i] = ""; // removing previous code-viewer
+                }
             }
-
-            // console.log(" " + sample.path + " ")
-            console.log(" " + sample.path + " \t\t\t" + sample.alt)
-            // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
-            // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
-
-            // setting new code-viewer, e.g. `sample="/charts/data-chart/overview", height=600, alt="{Platform} Chart Overview" `
-            fileLines[sample.lineStart] = sample.code;
-
-            for (let i = sample.lineStart + 1; i <= sample.lineEnd; i++) {
-                fileLines[i] = ""; // removing previous code-viewer
-            }
+            fileContent = fileLines.join("\r\n");
+            // fileLines = fileContent.split("\r\n\r\n\r\n");
+            // fileContent = fileLines.join("\r\n");
+            fileLines = fileContent.split("\r\n\r\n\r\n\r\n");
+            fileContent = fileLines.join("\r\n");
+            fs.writeFileSync(filePath, fileContent);
         }
-        fileContent = fileLines.join("\r\n");
-        // fileLines = fileContent.split("\r\n\r\n\r\n");
-        // fileContent = fileLines.join("\r\n");
-        fs.writeFileSync(filePath, fileContent);
 
         filesCount++;
         fileCallback(null, file);
@@ -1193,3 +1223,13 @@ function simplifySamples(cb) {
     });
 }
 exports.simplifySamples = simplifySamples;
+
+function padLeft(num, width) {
+    let str = num.toString();
+    return str.length >= width ? str : str + (new Array(width - str.length + 1).join(' '));
+}
+
+function padRight(num, width) {
+    let str = num.toString();
+    return str.length >= width ? str : new Array(width - str.length + 1).join(' ') + str;
+}
