@@ -511,7 +511,9 @@ By default, the {ComponentTitle} component filters the data based on the origina
 
 <!-- The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values: -->
 
-<!-- <code-view style="height:620px"
+<!--
+
+<code-view style="height:620px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
            github-src="{ComponentSample}/filtering-strategy" >
