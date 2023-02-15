@@ -16,8 +16,8 @@ mentionedTypes: ['Switch']
 
 <code-view style="height:200px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="{Platform} Switch Example"
-           github-src="inputs/switch/sample-1">
+           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="{Platform} Switch Example"
+           github-src="inputs/switches/overview">
 </code-view>
 
 <div class="divider--half"></div>
@@ -74,9 +74,9 @@ The switch can also be labelled by elements external to the switch. In this case
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
            alt="{Platform} Avatar Example"
-           github-src="inputs/switch/label">
+           github-src="inputs/switches/label">
 </code-view>
 
 ### Checked
@@ -88,9 +88,9 @@ Use the `checked` attribute to toggle on the switch.
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
            alt="{Platform} Avatar Example"
-           github-src="inputs/switch/checked">
+           github-src="inputs/switches/checking">
 </code-view>
 
 ### Required
@@ -118,9 +118,9 @@ Use the `disabled` attribute to disable the switch.
 ```
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
            alt="{Platform} Avatar Example"
-           github-src="inputs/switch/disabled">
+           github-src="inputs/switches/disabled">
 </code-view>
 
 ### Forms
