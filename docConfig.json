@@ -3,7 +3,7 @@
         "isFirstRelease": false,
         "samplesGithubFile": "src/app.component.html",
         "samplesGithubTree": "github/IgniteUI/igniteui-angular-examples/tree/master/samples/",
-        "samplesDisplayStackblitz": true,
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ReleaseStatus_DockManager}",  "value": ""},
