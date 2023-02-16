@@ -4,6 +4,7 @@ _description: {ProductName} を使用して、高速で応答性の高い {Platf
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
 mentionedTypes: ['Infragistics.Controls.Grid']
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {PivotGridTitle} 機能

@@ -4,6 +4,7 @@ _description: {ProductName} ツリー グリッドは、階層データまたは
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
 mentionedTypes: ['TreeGrid']
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # {Platform} ツリー グリッドの概要と構成

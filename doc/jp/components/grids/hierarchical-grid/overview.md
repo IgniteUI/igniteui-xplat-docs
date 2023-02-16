@@ -3,6 +3,7 @@ title: {Platform} 階層データ グリッド | マテリアル テーブル | 
 _description: {Platform} マテリアル テーブルに基づいて {ProductName} データ グリッドを使用し、さまざまな Angular イベントを使用してタッチ応答 Angular コンポーネントを作成する方法を説明します。
 _keywords: angular data grid, igniteui for angular, infragistics, angular データ グリッド, インフラジスティックス
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 # 階層データ グリッドの概要と構成

@@ -111,7 +111,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
 `Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [<button>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [<a>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
 ボタン コンポーネントが実際の [<button>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
-- `submit` -フォーム データを送信する場合
+- `submit` - フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
 - `button` - ウェブページのどこかにカスタム機能を備えたボタンを追加する場合
 

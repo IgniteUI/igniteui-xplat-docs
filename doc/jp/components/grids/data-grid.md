@@ -4,6 +4,7 @@ _description: {ProductName} を使用して、超高速でレスポンシブな 
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
 _language: ja
+namespace: Infragistics.Controls
 ---
 
 <style>
