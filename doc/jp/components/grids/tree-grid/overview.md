@@ -258,9 +258,9 @@ const data = [
 ## API リファレンス
 
 * `TreeGrid`
-* `TreeGridRecord`
 * `Column`
 * `GridToolbar`
+* `TreeGridRecord`
 
 ## その他のリソース
 

@@ -178,3 +178,4 @@ ModuleManager.register(
 - `GeographicShapeSeries`
 - `GeographicProportionalSymbolSeries`
 - `GeographicSymbolSeries`
+- `GeographicScatterAreaSeries`

@@ -69,13 +69,12 @@ import { IgxGeographicSymbolSeriesComponent } from 'igniteui-angular-maps';
 import { IgxShapeDataSource } from 'igniteui-angular-core';
 ```
 
-
 ```razor
 // in Program.cs file
 
 builder.Services.AddIgniteUIBlazor(
-  typeof(IgbGeographicMapModule),
-  typeof(IgbDataChartInteractivityModule)
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
 );
 ```
 

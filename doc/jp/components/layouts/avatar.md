@@ -55,7 +55,6 @@ IgrAvatarModule.register();
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
 ```
-
 <!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Avatar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:

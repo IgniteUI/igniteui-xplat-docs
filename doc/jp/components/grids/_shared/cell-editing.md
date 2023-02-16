@@ -8,13 +8,6 @@ _language: ja
 namespace: Infragistics.Controls
 ---
 
-<!-- Blazor, WebComponents -->
-
-> [!Note]
-このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
-
-<!-- end: Blazor, WebComponents -->
-
 # {Platform} {ComponentTitle} セル編集
 
 {ProductName} `{ComponentName}` コンポーネントは、{Platform} CRUD 操作のための優れたデータ操作機能と強力な API を提供します。デフォルトで `{ComponentName}` は**セル内編集**を使用し、**デフォルトのセル編集テンプレート**によって、列のデータ型に基づいてさまざまなエディターが表示されます。
