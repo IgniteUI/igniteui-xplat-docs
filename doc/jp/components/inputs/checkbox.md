@@ -58,7 +58,6 @@ IgrCheckboxModule.register();
 
 `Checkbox` を使用する前に、次のように登録する必要があります:
 
-
 ```razor
 // in Program.cs file
 
@@ -286,5 +285,5 @@ igc-checkbox::part(indicator checked) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)** ]({ForumsLink})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
 * [{ProductName} **GitHub (英語)**]({GithubLink})

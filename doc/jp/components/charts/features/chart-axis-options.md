@@ -114,10 +114,10 @@ _language: ja
 | `Axes` -> `NumericYAxis` -> `MinimumValue`             | `YAxisMinimumValue`    | `YAxisMinimumValue`    |
 | `Axes` -> `NumericYAxis` -> `IsLogarithmic`            | `YAxisIsLogarithmic`   | `YAxisIsLogarithmic`   |
 | `Axes` -> `NumericYAxis` -> `LogarithmBase`            | `YAxisLogarithmBase`   | `YAxisLogarithmBase`   |
-| `Axes` -> `CategoryXAxis` -> `Gap`                     | None                   | `XAxisGap`             |
-| `Axes` -> `CategoryXAxis` -> `Overlap`                 | None                   | `XAxisOverlap`         |
-| `Axes` -> `TimeXAxis`                                  | `XAxisMode`            | None                   |
-| `Axes` -> `PercentChangeYAxis`                         | `YAxisMode`            | None                   |
+| `Axes` -> `CategoryXAxis` -> `Gap`                     | なし                   | `XAxisGap`             |
+| `Axes` -> `CategoryXAxis` -> `Overlap`                 | なし                   | `XAxisOverlap`         |
+| `Axes` -> `TimeXAxis`                                  | `XAxisMode`            | なし                   |
+| `Axes` -> `PercentChangeYAxis`                         | `YAxisMode`            | なし                   |
 | `Axes` -> `NumericYAxis` -> `labelSettings.angle`      | `YAxisLabelAngle`      | `YAxisLabelAngle`      |
 | `Axes` -> `NumericXAxis` -> `labelSettings.angle`      | `XAxisLabelAngle`      | `XAxisLabelAngle`      |
 | `Axes` -> `NumericYAxis` -> `labelSettings.textColor`  | `YAxisLabelForeground` | `YAxisLabelForeground` |

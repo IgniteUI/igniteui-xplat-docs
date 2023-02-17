@@ -3,8 +3,8 @@ title: {Platform} ピボット グリッドとテーブル – {ProductName}
 _description: {ProductName} を使用して、高速でレスポンシブな {Platform} ピボット グリッドとテーブルを作成します。複雑な分析を実行し、データのソート、グループ化、またはフィルター処理を適用します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, Infragistics, {Platform} ピボット グリッド, {Platform} マテリアル ピボット テーブル, {ProductName}, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.PivotGrid']
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} ピボット グリッドの概要

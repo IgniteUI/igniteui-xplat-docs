@@ -1,6 +1,6 @@
 ---
 title: {Platform} 日付選択 | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform}日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
+_description: インフラジスティックスの {Platform} 日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
 _keywords: {Platform} date picker, drop down, {ProductName}, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
 mentionedTypes: ['DatePicker']
 _language: ja
@@ -31,10 +31,12 @@ npm install --save {PackageLayouts}
 ## モジュールの要件
 
 日付選択コンポーネントを使用するには、以下のモジュールを登録する必要があります。
+
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbDatePickerModule));
 ```
 
 ```ts

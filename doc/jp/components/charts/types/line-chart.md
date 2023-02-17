@@ -71,7 +71,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-`sample="/charts/category-chart/line-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} 折れ線チャート"`
+`sample="/charts/category-chart/line-chart-single-source", height="600", alt="単一シリーズの {Platform} 折れ線チャート"`
 
 
 
@@ -83,7 +83,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} 折れ線チャート"`
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 折れ線チャート"`
 
 
 
@@ -97,7 +97,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-`sample="/charts/category-chart/high-frequency", height="600", alt="{Platform} ライブ データの {Platform} 折れ線チャートの例"`
+`sample="/charts/category-chart/high-frequency", height="600", alt="ライブ データの {Platform} 折れ線チャートの例"`
 
 
 

@@ -4,8 +4,8 @@ _description: カスタム列順序を設定し、マウスのドラッグ/ド�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {ComponentTitle} の列の並べ替えと移動

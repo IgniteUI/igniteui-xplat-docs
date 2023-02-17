@@ -56,7 +56,6 @@ IgrCircularProgressModule.register();
 
 `CircularProgress` を使用する前に、次のように登録する必要があります:
 
-
 ```razor
 // in Program.cs file
 
@@ -205,6 +204,8 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCircularProgressModule));
 | warning            | 進行状況インジケーターの warning 状態。     |
 | info               | 進行状況インジケーターの info の状態。       |
 | success            | 進行状況インジケーターの success 状態。  |
+
+
 <div class="divider"></div>
 
 ## API リファレンス

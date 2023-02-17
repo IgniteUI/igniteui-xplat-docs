@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} でデータの高度なフィルタ�
 _keywords: Advanced Filtering, {Platform}, {ProductName}, Infragistics, 高度なフィルタリング, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 
@@ -136,7 +136,7 @@ connectedCallback(): void {
 
 ### デモ
 
-`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} external advanced filtering"`
+`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} 外部の高度なフィルタリング"`
 
 
 ### 使用方法

@@ -56,7 +56,7 @@ _language: ja
 
 {Platform} エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
-`sample="/charts/category-chart/area-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} エリア チャート"`
+`sample="/charts/category-chart/area-chart-single-source", height="600", alt="単一シリーズの {Platform} エリア チャート"`
 
 
 
@@ -66,7 +66,7 @@ _language: ja
 
 複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコントロールに結合することもできます。これは、複数のデータ ソースを `CategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
 
-`sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} エリア チャート"`
+`sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} エリア チャート"`
 
 
 

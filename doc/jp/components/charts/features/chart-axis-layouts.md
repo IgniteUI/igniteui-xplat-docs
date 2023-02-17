@@ -47,7 +47,7 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 
 ### 軸交差の例
 
-軸をプロット領域の外側に配置することに加えて、{Platform} `XamDataChart` は、軸をプロット領域の内側に配置し、特定の値で交差させるオプションも提供します。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0, 0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
+軸をプロット領域の外側に配置することに加えて、{Platform} `XamDataChart` は、軸をプロット領域の内側に配置し、特定の値で交差させるオプションも提供します。たとえば、x 軸と y 軸の両方で `CrossingAxis` プロパティと `CrossingValue` プロパティを設定して、原点が (0、0) で 交差するように軸線と軸ラベルを描画することにより、三角関数チャートを作成できます。
 
 以下の例は、[散布スプライン チャート](../types/scatter-chart.md)で表される Sin と Cos 波を示します。X 軸と Y 軸は (0、0) 原点で交差します。
 
@@ -84,8 +84,8 @@ e.g. https://www.infragistics.com/help/wpf/datachart-axis-orientation
 
 | `XamDataChart`                                         | `CategoryChart`                 |
 | ------------------------------------------------------ | ------------------------------- |
-| `Axes` -> `NumericYAxis` -> `CrossingAxis`             | None                            |
-| `Axes` -> `NumericYAxis` -> `CrossingValue`            | None                            |
+| `Axes` -> `NumericYAxis` -> `CrossingAxis`             | なし                            |
+| `Axes` -> `NumericYAxis` -> `CrossingValue`            | なし                            |
 | `Axes` -> `NumericXAxis` -> `IsInverted`               | `XAxisInverted`                 |
 | `Axes` -> `NumericYAxis` -> `IsInverted`               | `YAxisInverted`                 |
 | `Axes` -> `NumericYAxis` -> `LabelLocation`            | `YAxisLabelLocation`            |

@@ -52,7 +52,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
-`sample="/charts/category-chart/column-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} 縦棒チャート"`
+`sample="/charts/category-chart/column-chart-single-source", height="600", alt="単一シリーズの {Platform} 縦棒チャート"`
 
 
 
@@ -62,7 +62,7 @@ _language: ja
 
 縦棒チャートは、比較のためにカテゴリごとに複数の列を描画できます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを **Column** 値に設定します:
 
-`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} 縦棒チャート"`
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 縦棒チャート"`
 
 
 
@@ -116,7 +116,7 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
-`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} 積層型 100% 縦棒チャート"`
+`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} 積層型 100 縦棒チャート"`
 
 
 

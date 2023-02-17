@@ -3,8 +3,8 @@ title: {Platform} Data Grid コンポーネント (Data Table) - インフラジ
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 <style>
@@ -50,8 +50,8 @@ namespace: Infragistics.Controls
                     src="../../images/general/landing-grid-page.png"
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
+                    alt="{Platform} Data Grid"
+                    title="{Platform} Data Grid">
             </div>
         </div>
     </article>
@@ -1007,6 +1007,7 @@ export class MyComponent implements OnInit {
 
 **注**: リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
 
+
 <!-- end: Angular, WebComponents -->
 ## 複雑なデータ バインディング
 
@@ -1072,6 +1073,7 @@ public class AminoWeight
 <!-- Angular -->
 
 詳しくは、以下のサンプルを参照してください。このバインディングのタイプは、グリッドに期待されるすべてのデフォルト機能をサポートします。
+
 つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
 >[!WARNING]
@@ -1667,14 +1669,14 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ## 状態保持
 
-新しい組み込み済みの [GridState](grid/state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+新しい組み込み済みの [GridState](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
 
 <!-- end: Angular -->
 
 <!-- The sizing topic is still not available thus the Sizing section is commented out. -->
 <!-- ## Sizing
 
-See the [Grid Sizing](grid/sizing.md) topic. -->
+See the [Grid Sizing](sizing.md) topic. -->
 
 
 <!-- Angular -->
@@ -1762,6 +1764,7 @@ platformBrowserDynamic()
 <!-- Angular -->
 
 ## テーマの依存関係
+
 * **Icon Theme**
 * **InputGroup Theme**
 * **Chip Theme**

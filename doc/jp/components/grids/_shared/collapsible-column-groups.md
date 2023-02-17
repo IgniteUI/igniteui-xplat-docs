@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} の縮小可能な列グループを�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 

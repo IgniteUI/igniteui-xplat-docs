@@ -4,8 +4,8 @@ _description: {ComponentTitle} コンポーネントに表示密度機能を適�
 _keywords: material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 表示密度

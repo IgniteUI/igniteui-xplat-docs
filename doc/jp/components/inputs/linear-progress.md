@@ -186,6 +186,7 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
 | bottom-start  | 進行状況ラベルの配置。 |
 | bottom-end    | 進行状況ラベルの配置。 |
 
+
 <div class="divider"></div>
 
 

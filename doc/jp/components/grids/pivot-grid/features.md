@@ -3,8 +3,8 @@ title: {Platform} {PivotGridTitle} 機能 | ピボット テーブル | イン�
 _description: {ProductName} を使用して、高速で応答性の高い {Platform} {PivotGridTitle} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
 mentionedTypes: ['Infragistics.Controls.Grid']
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {PivotGridTitle} 機能
@@ -21,7 +21,7 @@ namespace: Infragistics.Controls
 
 {PivotGridTitle} コンポーネントには、以下で説明するように、そのディメンションに関連する追加の機能があります。
 
-`sample="/{PivotGridSample}/features", height="700", alt="{Platform} ピボット セレクターを使用した {Platform} {PivotGridTitle} の例"`
+`sample="/{PivotGridSample}/features", height="700", alt="ピボット セレクターを使用した {Platform} {PivotGridTitle} の例"`
 
 
 

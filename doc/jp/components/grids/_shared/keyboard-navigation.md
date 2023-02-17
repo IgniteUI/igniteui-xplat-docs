@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} キーボード ナビゲーション - {Prod
 _description: {ProductName} で {ComponentTitle} キーボード ナビゲーションを使用する方法について説明します。キーボード インタラクションでは、セル、行、列を簡単に移動できます。
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
@@ -53,8 +53,8 @@ namespace: Infragistics.Controls
  - <kbd>Shift + Alt + 左矢印</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
  <!-- ComponentEnd:Grid -->
  - <kbd>Shift + Alt + 右矢印</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
- - <kbd>Alt +左矢印</kbd> または <kbd>Alt +上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
- - <kbd>Alt +右矢印</kbd> または <kbd>Alt +下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
+ - <kbd>Alt +左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
+ - <kbd>Alt +右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
 
 ## 本体ナビゲーション
 

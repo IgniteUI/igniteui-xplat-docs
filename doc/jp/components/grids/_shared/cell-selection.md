@@ -4,8 +4,8 @@ _description: さまざまなイベント、豊富な API、またはマウス�
 _keywords: data select, igniteui for {Platform}, infragistics, データ選択, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} セルの選択

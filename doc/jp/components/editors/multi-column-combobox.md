@@ -42,9 +42,11 @@ npm install --save {PackageLayouts}
 
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
-
 ```razor
-builder.Services.AddIgniteUIBlazor(typeof(IgbMultiColumnComboBoxModule));
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
