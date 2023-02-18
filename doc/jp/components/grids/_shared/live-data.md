@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} for {ProductName} のライブ データ更�
 _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} のライブ データ更新

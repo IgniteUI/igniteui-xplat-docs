@@ -4,8 +4,8 @@ _description: Angular フィルターを使用して、{Platform} {ComponentTitl
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} フィルタリング
@@ -67,6 +67,7 @@ namespace: Infragistics.Controls
 
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}  [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
 </{ComponentSelector}>

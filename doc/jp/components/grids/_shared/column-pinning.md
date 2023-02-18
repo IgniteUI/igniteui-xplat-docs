@@ -4,8 +4,8 @@ _description: アプリの開発時に {ProductName} のピン固定機能を使
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 列ピン固定

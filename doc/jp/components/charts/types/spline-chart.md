@@ -25,7 +25,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
-`sample="/charts/category-chart/spline-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} スプライン チャート"`
+`sample="/charts/category-chart/spline-single-source", height="600", alt="単一シリーズの {Platform} スプライン チャート"`
 
 
 
@@ -37,7 +37,7 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
-`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} スプライン チャート"`
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="複数シリーズの {Platform} スプライン チャート"`
 
 
 

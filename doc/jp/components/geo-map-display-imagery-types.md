@@ -17,8 +17,8 @@ _language: ja
 
 | 画像                    |説明   |
 |----------------------------| --------------|
-| Open Street Maps|1 色のテーマで道路地図スタイルだけを表示するためのオプションで、Open Street Maps サービスから地理的画像を提供します。 |
-| Bing Maps|Bing Maps サービスの地理的画像に、以下の地図スタイルを表示するための設定可能なオプションがあります。<ul><li> 衛星地図のスタイル</li><li> ラベル付きの衛星地図のスタイル</li><li> ロードマップ スタイル</li>|
+| Open Street Maps | 1 色のテーマで道路地図スタイルだけを表示するためのオプションで、Open Street Maps サービスから地理的画像を提供します。 |
+| Bing Maps | Bing Maps サービスの地理的画像に、以下の地図スタイルを表示するための設定可能なオプションがあります。<ul><li> 衛星地図のスタイル</li><li> ラベル付きの衛星地図のスタイル</li><li> ロードマップ スタイル</li>|
 
 <!-- | Map Quest |Provides custom geographic imagery from Map Quest service with configurable options to display the following map styles:<ul><li>Satellite Map Style</li><li>Road Map Style</li></ul> -->
 
@@ -27,7 +27,7 @@ _language: ja
 
 以下の表は、xamGeographicMap  コントロールによって提供される画像クラスを簡単に説明します。
 
-| 画像クラス|説明   |
+| 画像クラス | 説明   |
 |---------------|---------------|
 |`GeographicMapImagery`|サポートされている地理的画像タイルのすべてのタイプを表示するすべての画像クラスの基本コントロールを表します。このクラスは、Map Quest マッピング サービスなどの他の地理的画像ソースから地理的画像タイルのサポートを実装する目的のために拡張できます。|
 |`OpenStreetMapImagery`|Open Street Maps サービスから地理的画像タイルを表示するためのマルチスケール画像コントロールを表します。|

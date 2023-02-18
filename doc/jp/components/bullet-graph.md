@@ -16,7 +16,6 @@ _language: ja
 
 以下のサンプルは、同じ `XamBulletGraph` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-
 `sample="/gauges/bullet-graph/animation", height="155", alt="{Platform} ブレット グラフの例"`
 
 
@@ -39,7 +38,6 @@ npm install --save {PackageGauges}
 ## モジュールの要件
 
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
-
 
 ```razor
 // in Program.cs file

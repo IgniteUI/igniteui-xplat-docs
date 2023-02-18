@@ -8,6 +8,13 @@ _canonicalLink: {CanonicalLinkToGridRowPinning}
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} 行のピン固定
 
 {ProductName} Data Table / Data Grid では、キーまたは基本データ ソースの項目を使用した行のピン固定が可能です。行を固定するとその行が {PlatformLower} データ グリッドの最上部に複製され、薄い灰色の背景で固定されたままになり、実際の行は低い不透明度でレンダリングされます。

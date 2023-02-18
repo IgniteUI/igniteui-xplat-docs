@@ -70,20 +70,20 @@ _language: ja
 
 ## マーカー
 
-{Platform} スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが `Line`、`Area`、および `Column` のスパークラインに設定できます。``WinLoss`` 型のスパークラインは、現在マーカーを設定できません。デフォルトでは、マーカーは表示されませんが、対応するマーカーの可視性プロパティを設定することで有効にできます。
+{Platform} スパークライン コンポーネントを使用すると、マーカーをシリーズ上の円形のアイコンとして表示して、X/Y 座標に基づいて個々のデータポイントを示すことができます。マーカーは、表示タイプが `Line`、`Area`、および `Column` のスパークラインに設定できます。`WinLoss` 型のスパークラインは、現在マーカーを設定できません。デフォルトでは、マーカーは表示されませんが、対応するマーカーの可視性プロパティを設定することで有効にできます。
 
 スパークライン内のマーカーは、以下の場所を任意に組み合わせて配置できます。
 
-- `すべて`: スパークライン内のすべてのデータ ポイントにマーカーを表示します。
-- `低値`: 最低値のデータ ポイントにマーカーを表示します。最小値に複数の点がある場合は、その値を持つ各点に表示されます。
-- `高値`: 最低値のデータ ポイントにマーカーを表示します。最高値に複数のポイントがある場合は、その値を持つ各ポイントに表示されます。
-- `始値`: スパークラインの最初のデータポイントにマーカーを表示します。
-- `終値`: スパークラインの最後のデータ ポイントにマーカーを表示します。
-- `負数`: スパークラインにプロットされた負のデータ点にマーカーを表示します。
+- `All` (すべて): スパークライン内のすべてのデータ ポイントにマーカーを表示します。
+- `Low` (低値): 最低値のデータ ポイントにマーカーを表示します。最小値に複数の点がある場合は、その値を持つ各点に表示されます。
+- `High` (高値): 最低値のデータ ポイントにマーカーを表示します。最高値に複数のポイントがある場合は、その値を持つ各ポイントに表示されます。
+- `First` (始値): スパークラインの最初のデータポイントにマーカーを表示します。
+- `Last`: (終値)スパークラインの最後のデータ ポイントにマーカーを表示します。
+- `Negative` (負数): スパークラインにプロットされた負のデータ点にマーカーを表示します。
 
 上記のすべてのマーカーは、色、可視性、およびサイズの観点で関連マーカー タイプのプロパティを使用してカスタマイズできます。たとえば、上記の `Low` マーカーは、`LowMarkerBrush`、`LowMarkerVisibility`、`LowMarkerSize` の各プロパティを持ちます。
 
-`sample="/charts/sparkline/markers", height="300", alt="{Platform} sparkline markers"`
+`sample="/charts/sparkline/markers", height="300", alt="{Platform} スパークライン マーカー"`
 
 
 <div class="divider--half"></div>
@@ -102,7 +102,7 @@ _language: ja
 
 `DisplayNormalRangeInFront` プロパティを設定することで、{Platform} スパークラインのプロットされたシリーズの前または後ろに標準範囲を表示するかどうかを設定することもできます。
 
-`sample="/charts/sparkline/normal-range", height="300", alt="{Platform} sparkline normal range"`
+`sample="/charts/sparkline/normal-range", height="300", alt="{Platform} スパークライン標準範囲"`
 
 
 <div class="divider--half"></div>
@@ -117,7 +117,7 @@ _language: ja
 
 以下のサンプルは、ドロップダウンを介して利用可能なすべてのトレンドラインを示しています:
 
-`sample="/charts/sparkline/trendlines", height="300", alt="{Platform} sparkline trendlines"`
+`sample="/charts/sparkline/trendlines", height="300", alt="{Platform} スパークライン トレンドライン"`
 
 
 <div class="divider--half"></div>
@@ -128,7 +128,7 @@ _language: ja
 
 未知の値をプロットするために、{Platform} スパークラインの `UnknownValuePlotting` プロパティを設定することができます。以下のサンプルは、`UnknownValuePlotting` プロパティの値の違いを示しており、チェックボックスを使用してオンとオフを切り替えることができます。
 
-`sample="/charts/sparkline/unknown-values", height="300", alt="{Platform} sparkline unknown values"`
+`sample="/charts/sparkline/unknown-values", height="300", alt="{Platform} スパークライン不明な値"`
 
 
 <div class="divider--half"></div>
@@ -138,7 +138,7 @@ _language: ja
 
 {Platform} スパークラインは、データ グリッドのテンプレート列またはテンプレートをサポートする他の UI コントロールに埋め込むことができます。以下のコード例ではその方法を示します。
 
-`sample="/charts/sparkline/grid", height="600", alt="{Platform} sparkline grid"`
+`sample="/charts/sparkline/grid", height="600", alt="{Platform} スパークライン グリッド"`
 
 
 ## その他のリソース

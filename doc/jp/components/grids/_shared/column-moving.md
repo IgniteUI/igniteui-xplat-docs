@@ -4,16 +4,9 @@ _description: カスタム列順序を設定し、マウスのドラッグ/ド�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
-
-<!-- Blazor, WebComponents -->
-
-> [!Note]
-このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
-
-<!-- end: Blazor, WebComponents -->
 
 # {ComponentTitle} の列の並べ替えと移動
 

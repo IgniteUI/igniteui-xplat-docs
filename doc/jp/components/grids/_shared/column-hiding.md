@@ -4,8 +4,8 @@ _description: ユーザーが Ignite Material UI テーブルの UI で列の表
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の列非表示
@@ -80,6 +80,7 @@ namespace: Infragistics.Controls
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">

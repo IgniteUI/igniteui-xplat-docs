@@ -12,7 +12,7 @@ _language: ja
 ## {Platform} 地理バブル マップの例
 
 
-`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} マップ | データ可視化ツール | 散布図比例"`
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} 散布図比の使用の例"`
 
 
 

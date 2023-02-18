@@ -69,7 +69,7 @@ _language: ja
 
 また、凡例項目の外観をカスタマイズするために `LegendItemTemplate` および `LegendItemBadgeTemplate`プロパティ、`ItemLegend` の複数のフォント プロパティも使用できます。
 
-`sample="/charts/pie-chart/legend", height="600", alt="{Platform} 凡例付きの {Platform} 円チャート"`
+`sample="/charts/pie-chart/legend", height="600", alt="凡例付きの {Platform} 円チャート"`
 
 
 

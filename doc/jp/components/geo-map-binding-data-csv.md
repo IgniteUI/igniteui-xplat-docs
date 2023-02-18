@@ -242,7 +242,6 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">

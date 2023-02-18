@@ -4,8 +4,8 @@ _description: {ProductName} {ComponentTitle} の {Platform} ソート機能を�
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics, {Platform} ソート, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} ソート

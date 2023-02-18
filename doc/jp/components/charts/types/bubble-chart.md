@@ -24,7 +24,7 @@ _language: ja
 
 以下の例に示すように、データを `BubbleSeries` の `ItemsSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
-`sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} バブル チャート"`
+`sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="単一シリーズの {Platform} バブル チャート"`
 
 
 
@@ -34,7 +34,7 @@ _language: ja
 
 {Platform} バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
-`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} バブル チャート"`
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} バブル チャート"`
 
 
 

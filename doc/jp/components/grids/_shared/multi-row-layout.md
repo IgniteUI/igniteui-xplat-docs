@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} の複数行レイアウト - インフラジ
 _description: {ProductName} Data Grid の複数行レイアウト機能を使用して、列をより強力な方法で配置およびサイズ設定します。デモと例をお試しください。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, 複数行レイアウト, インフラジスティックス
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の複数行レイアウト
@@ -125,6 +125,7 @@ namespace: Infragistics.Controls
 
 
 ### 垂直ナビゲーション
+
 * <kbd>上矢印</kbd> または <kbd>下矢印</kbd> - 開始位置に対して上下のセルに移動し、行の影響は受けません。現在のセルが複数の列にまたがる場合は、次のアクティブ セルがナビゲーション開始セルに従って選択されます。
 * <kbd>Ctrl</kbd> + <kbd>上矢印</kbd> または <kbd>Ctrl</kbd> + <kbd>Down</kbd> - 最初の行または最後の行の同じ列に移動してフォーカスを適用します。
 * <kbd>Ctrl</kbd> + <kbd>Home</kbd> または <kbd>Ctrl</kbd> + <kbd>End</kbd> - 最初の行に移動して最初のセルに移動するか、最後のセルに移動します。最後のセルに移動してフォーカスを合わせます。

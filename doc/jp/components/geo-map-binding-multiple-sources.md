@@ -7,7 +7,7 @@ _language: ja
 ---
 # {Platform} 複数データ ソースのバインド
 
-{ProductName} マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
+{ProductName} マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための別の `GeographicPolylineSeries` などです。
 
 
 ## {Platform} 複数データ ソースのバインドの例

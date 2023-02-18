@@ -74,7 +74,7 @@ _language: ja
 
 棒チャートは、カテゴリ シリーズのグループに属し、チャートの左から右へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドします:
 
-`sample="/charts/data-chart/bar-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} 棒チャート"`
+`sample="/charts/data-chart/bar-chart-single-source", height="600", alt="単一シリーズの {Platform} 棒チャート"`
 
 
 
@@ -84,7 +84,7 @@ _language: ja
 
 棒チャートは、比較のためにカテゴリごとに複数の棒を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを複数の `BarSeries` にバインドします:
 
-`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} 棒チャート"`
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 棒チャート"`
 
 
 

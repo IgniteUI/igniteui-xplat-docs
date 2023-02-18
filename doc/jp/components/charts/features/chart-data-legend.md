@@ -45,7 +45,7 @@ _language: ja
 | -----------------|-------------- |
 | カテゴリ シリーズ  | Value |
 | ラジアル シリーズ    | Value |
-| 極座標シリーズ     | Radius, Angle |
+| 極座標シリーズ     | Radius、Angle |
 | バブル シリーズ    | X、Y、Radius |
 | 散布シリーズ   | X、Y |
 | 範囲シリーズ     | High、Low |
