@@ -193,8 +193,8 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 
 ## Additional Resources
 
-* [{Platform} Pivot Grid Features](pivot-grid-features.md)
-* [{Platform} Pivot Grid Overview](pivot-grid.md)
+<!-- * [{Platform} Pivot Grid Features](pivot-grid-features.md) -->
+* [{Platform} Pivot Grid Overview](overview.md)
 
 Our community is active and always welcoming to new ideas.
 
