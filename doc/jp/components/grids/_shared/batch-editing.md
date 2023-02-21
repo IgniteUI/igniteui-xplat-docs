@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集と
 _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 一括編集とトランザクション

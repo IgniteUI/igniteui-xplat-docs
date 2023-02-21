@@ -4,8 +4,8 @@ _description: 強力なパブリック API を使用し、レコードの作成�
 _keywords: data manipulation, {Platform}, {ProductName}, Infragistics, データの変更, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 編集

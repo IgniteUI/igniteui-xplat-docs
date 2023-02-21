@@ -14,7 +14,7 @@ _language: ja
 
 `CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを **StepArea** 列挙型に設定します。
 
-`sample="/charts/category-chart/step-area-multiple-sources", height="600", alt="{Platform} 複数ソースの {Platform} ステップ エリア チャート"`
+`sample="/charts/category-chart/step-area-multiple-sources", height="600", alt=" 複数ソースの {Platform} ステップ エリア チャート"`
 
 
 
@@ -26,7 +26,7 @@ _language: ja
 
 次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
-`sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="{Platform} 複数ソースの {Platform} ステップ折れ線チャート"`
+`sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="複数ソースの {Platform} ステップ折れ線チャート"`
 
 
 

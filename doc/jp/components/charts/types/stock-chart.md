@@ -154,6 +154,7 @@ _language: ja
 
 - `ChartType`
 - `CrosshairsSnapToData`
+- `ItemsSource`
+- `FinancialChart`
 - `IndicatorTypes`
 - `ZoomSliderType`
-- `FinancialChart`

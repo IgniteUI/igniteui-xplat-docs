@@ -109,7 +109,7 @@ namespace: Infragistics.Controls.Charts
 #### 新しいコンポーネントとテーマ
 
 * [スライダー](inputs/slider.md)を追加しました。
-*  [範囲スライダー](inputs/slider.md)を追加しました。
+* [範囲スライダー](inputs/slider.md)を追加しました。
 * `igniteui-webcomponents/themes/bootstrap.css` のテーマの構造を変更するダーク テーマを追加しました:
 ライト テーマの場合は `igniteui-webcomponents/themes/light/bootstrap.css`
 ダーク テーマの場合は `igniteui-webcomponents/themes/dark/bootstrap.css`

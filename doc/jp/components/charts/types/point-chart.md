@@ -24,7 +24,7 @@ _language: ja
 
 次の例では、{Platform} ポイント チャートは、y 軸に数値データ列を、x 軸に非数値データ列を自動的に選択することにより、単一のデータ ソースをプロットします。
 
-`sample="/charts/category-chart/point-chart-single-source", height="600", alt="{Platform} 単一シリーズの {Platform} ポイント チャート"`
+`sample="/charts/category-chart/point-chart-single-source", height="600", alt="単一シリーズの {Platform} ポイント チャート"`
 
 
 
@@ -34,7 +34,7 @@ _language: ja
 
 {Platform} ポイント チャートを使用すると、複数のシリーズを組み合わせて時間の経過に伴う変化を比較または確認できます。中国と米国のデータを含むデータ ソースにバインドするだけで、ポイント チャートは追加データに合わせて自動的に更新されます。
 
-`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} 複数シリーズの {Platform} ポイント チャート"`
+`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} ポイント チャート"`
 
 
 

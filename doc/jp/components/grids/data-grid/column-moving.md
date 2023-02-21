@@ -8,6 +8,13 @@ _canonicalLink: {CanonicalLinkToGridColumnMoving}
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} グリッド列移動の概要
 
 {ProductName} Data Grid は列を移動する機能をサポートしているので、表示されている列の順序に関して列の表示方法を柔軟に選択できます。

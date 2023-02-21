@@ -51,7 +51,7 @@ _language: ja
 以下は、上記のセクションで説明した API メンバーのリストです。
 
 - `XamDataChart`
-- `DataSource`
+- `ItemsSource`
 - `ValueOverlay`
 - `Axis`
 - `Brush`
