@@ -194,8 +194,8 @@ public noopSortStrategy = NoopSortingStrategy.instance();
 
 ## その他のリソース
 
-* [{Platform} ピボット グリッドの機能](pivot-grid-features.md)
-* [{Platform} グリッドの概要](pivot-grid.md)
+<!-- * [{Platform} ピボット グリッドの機能](pivot-grid-features.md) -->
+* [{Platform} グリッドの概要](overview.md)
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
