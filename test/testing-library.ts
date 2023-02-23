@@ -2,19 +2,22 @@ import * as fsSync from 'fs';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
+import * as docConfig from '../docConfig.json';
+
 export interface IFileGroups {
     "allFiles": string[],
     "allMarkdown": string[],
     "tocOnly": string[]
 }
 
-export type Platform = ('Blazor'|'WC'|'React')
-export type Language = ('jp'|'kr'|'en')
+export type Platform = ('Blazor' | 'WC' | 'React' | 'Angular')
+export type Language = ('jp' | 'kr' | 'en')
 
 export const productPathMap: Map<Platform, string> = new Map<Platform, string>([
     ['React', '../dist/React/{lang}/components'],
     ['WC', '../dist/WebComponents/{lang}/components'],
     ['Blazor', '../dist/Blazor/{lang}/components'],
+    ['Angular', '../dist/Angular/{lang}/components']
 ]);
 
 export const allPlatforms: Platform[] = ['Blazor', 'React', 'WC'];
@@ -37,10 +40,10 @@ export class SearchHandler {
      * @returns a Promise that resolves to a list of files that pass the search criteria
      */
     public static async searchInFiles(
-            searchRegex: RegExp[],
-            platforms?: Platform[],
-            langs?: Language[],
-            fileWildcards?: string[]): Promise<string[]> {
+        searchRegex: RegExp[],
+        platforms?: Platform[],
+        langs?: Language[],
+        fileWildcards?: string[]): Promise<string[]> {
         if (!platforms || !platforms.length) {
             platforms = allPlatforms;
         }
@@ -58,6 +61,18 @@ export class SearchHandler {
             .then((promiseResult) => {
                 return promiseResult.flat();
             });
+    }
+
+    public static buildFullRegex(platform: string): RegExp {
+        const replacements = docConfig[platform as keyof typeof docConfig].replacements;
+        let regExp = '';
+        for (const replacement of replacements) {
+            const key: string = (replacement as any)['name'];
+            if (key) {
+                regExp += `\{${key.slice(1, -1)}\}|`;
+            }
+        }
+        return new RegExp(`/${regExp.slice(0, -1)}/gm`);
     }
 
     private static async recursiveSearch(dir: string, searchRegex: RegExp[], fileWildcards?: string[]): Promise<string[]> {

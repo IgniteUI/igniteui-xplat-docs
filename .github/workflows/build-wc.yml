@@ -33,4 +33,4 @@ jobs:
     - name: Build WebComponents
       run: npm run buildWebComponents
     - name: Test Blazor
-      run: npm run test
+      run: npm run test --testPlatform=WC

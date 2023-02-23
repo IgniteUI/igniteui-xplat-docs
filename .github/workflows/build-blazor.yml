@@ -33,4 +33,4 @@ jobs:
     - name: Build Blazor
       run: npm run buildBlazor
     - name: Test Blazor
-      run: npm run test
+      run: npm run test --testPlatform=Blazor
