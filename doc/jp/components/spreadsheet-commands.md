@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} コマンドの使用の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands"
-           alt="コマンドの使用の例"
-           github-src="excel/spreadsheet/commands">
-</code-view>
+`sample="/excel/spreadsheet/commands", height="500", alt="{Platform} コマンドの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

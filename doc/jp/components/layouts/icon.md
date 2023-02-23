@@ -12,11 +12,8 @@ _language: ja
 
 ## {Platform} Icon の例
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon の例"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon の例"`
+
 
 <div class="divider--half"></div>
 
@@ -225,11 +222,8 @@ public iconRef(icon: IgrIcon){
 <IgrIcon size="large" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon のサイズ変更"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon のサイズ変更"`
+
 
 ### Mirrored (ミラー化済み)
 
@@ -258,13 +252,7 @@ igc-icon {
 }
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="{Platform} Icon のサイズ変更"
-           github-src="layouts/icon/styling">
-</code-view>
-
-
+`sample="/layouts/icon/styling", height="70", alt="{Platform} Icon のサイズ変更"`
 
 ## API リファレンス
 

@@ -25,12 +25,9 @@ _language: ja
 
 ## {Platform} グリッド ローカリゼーションの例
 
-<code-view style="height: 600px"
-    data-demos-base-url="{environment:dvDemosBaseUrl}"
-    iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-localization"
-    alt="{Platform} グリッド ローカリゼーションの例"
-    github-src="grids/data-grid/localization">
-</code-view>
+`sample="/grids/data-grid/localization", height="600", alt="{Platform} グリッド ローカリゼーションの例"`
+
+
 
 <div class="divider--half"></div>
 

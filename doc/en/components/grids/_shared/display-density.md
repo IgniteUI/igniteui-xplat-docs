@@ -13,12 +13,9 @@ The `{ComponentName}` design is based on [Material Design Guidelines](https://ma
 
 ## {Platform} {ComponentTitle} Display Density Example
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-layout-display-density"
-           github-src="{ComponentSample}/layout-display-density"
-           alt="{Platform} {ComponentTitle} Display Density Example">
-</code-view>
+`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} Display Density Example"`
+
+
 
 ## Usage
 

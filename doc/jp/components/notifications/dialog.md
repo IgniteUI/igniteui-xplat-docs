@@ -14,11 +14,8 @@ mentionedTypes: ['Dialog']
 
 このサンプルでは、Dialog コンポーネントを作成する方法を示します。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="{Platform} Dialog の例"
-           github-src="notifications/dialog/overview">
-</code-view>
+`sample="/notifications/dialog/overview", height="400", alt="{Platform} Dialog の例"`
+
 
 <div class="divider--half"></div>
 
@@ -62,21 +59,15 @@ Dialog のタイトルを設定するには、`title` プロパティを使用�
 
 `closeOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="{Platform} Dialog Closing のバリエーション"
-           github-src="notifications/dialog/closing-variations">
-</code-view>
+`sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing のバリエーション"`
+
 
 ### (フォーム)
 
 属性 `method="dialog"` がある場合、フォーム要素はダイアログを閉じることができます。フォームを送信すると、ダイアログが閉じられます。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="{Platform} Dialog Form の例"
-           github-src="notifications/dialog/form">
-</code-view>
+`sample="/notifications/dialog/form", height="500", alt="{Platform} Dialog Form の例"`
+
 
 ## スタイル設定
 
@@ -95,11 +86,8 @@ igc-dialog::part(footer) {
 }
 ```
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="{Platform} Dialog スタイル設定の例"
-           github-src="notifications/dialog/styling">
-</code-view>
+`sample="/notifications/dialog/styling", height="400", alt="{Platform} Dialog スタイル設定の例"`
+
 
 
 <div class="divider--half"></div>

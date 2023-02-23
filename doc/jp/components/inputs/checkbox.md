@@ -12,11 +12,8 @@ _language: ja
 
 ## Checkbox の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-overview" alt="{Platform} Checkbox の例"
-           github-src="inputs/checkbox/overview">
-</code-view>
+`sample="/inputs/checkbox/overview", height="100", alt="{Platform} Checkbox の例"`
+
 
 <div class="divider--half"></div>
 
@@ -60,7 +57,6 @@ IgrCheckboxModule.register();
 <!-- Blazor -->
 
 `Checkbox` を使用する前に、次のように登録する必要があります:
-
 
 ```razor
 // in Program.cs file
@@ -145,12 +141,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 <IgbCheckbox AriaLabelledby="checkbox-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="{Platform} Checkbox の例"
-           github-src="inputs/checkbox/label">
-</code-view>
+`sample="/inputs/checkbox/label", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### チェック済み
 
@@ -168,12 +161,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 <IgbCheckbox Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checking"
-           alt="{Platform} Checkbox の例"
-           github-src="inputs/checkbox/checking">
-</code-view>
+`sample="/inputs/checkbox/checking", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### 不確定
 
@@ -191,12 +181,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 <IgbCheckbox Indeterminate="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="{Platform} Checkbox の例"
-           github-src="inputs/checkbox/indeterminate">
-</code-view>
+`sample="/inputs/checkbox/indeterminate", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### 必須
 
@@ -246,12 +233,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 <IgbCheckbox Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="{Platform} Checkbox の例"
-           github-src="inputs/checkbox/disabled">
-</code-view>
+`sample="/inputs/checkbox/disabled", height="100", alt="{Platform} Checkbox の例"`
+
+
 
 ### フォーム
 
@@ -291,9 +275,6 @@ igc-checkbox::part(indicator checked) {
   }
 }
 ```
-
-
-
 ## API リファレンス
 
  - `Checkbox`
@@ -304,5 +285,5 @@ igc-checkbox::part(indicator checked) {
 
 ## その他のリソース
 
-* [{ProductName} **フォーラム (英語)** ]({ForumsLink})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
 * [{ProductName} **GitHub (英語)**]({GithubLink})

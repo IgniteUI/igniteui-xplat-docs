@@ -12,12 +12,9 @@ _language: ja
 
 ## {Platform} Badge の例
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="{Platform} Badge の例"
-           github-src="inputs/badge/outlined">
-</code-view>
+`sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge の例"`
+
+
 
 <div class="divider"></div>
 
@@ -59,7 +56,6 @@ IgrBadgeModule.register();
 <!-- Blazor -->
 
 `Badge` を使用する前に、次のように登録する必要があります。
-
 
 ```razor
 // in Program.cs file
@@ -121,12 +117,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="{Platform} Badge の例"
-           github-src="inputs/badge/variants">
-</code-view>
+`sample="/inputs/badge/variants", height="60", alt="{Platform} Badge の例"`
+
+
 
 ### 形状
 
@@ -144,12 +137,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbBadgeModule));
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="{Platform} Badge の例"
-           github-src="inputs/badge/shape">
-</code-view>
+`sample="/inputs/badge/shape", height="60", alt="{Platform} Badge の例"`
+
+
 
 ## スタイル設定
 

@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} コンテンツのナビゲーションの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
-           alt="{Platform} コンテンツのナビゲーションの例"
-           github-src="maps/geo-map/navigation">
-</code-view>
+`sample="/maps/geo-map/navigation", height="500", alt="{Platform} コンテンツのナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 

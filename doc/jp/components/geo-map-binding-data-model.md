@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} 地理的データ モデルのバインディングの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="{Platform} 地理的データ モデルのバインディングの例"
-           github-src="maps/geo-map/binding-data-model">
-</code-view>
+`sample="/maps/geo-map/binding-data-model", height="500", alt="{Platform} 地理的データ モデルのバインディングの例"`
+
+
 
 <div class="divider--half"></div>
 

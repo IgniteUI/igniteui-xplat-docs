@@ -19,12 +19,9 @@ _language: ja
 
 高頻度シナリオでは、{Platform} チャートは、リアルタイムまたは指定されたミリ秒間隔で更新されるデータ項目を描画できます。タッチ デバイスでチャートを操作しているときでも、ラグ、画面のちらつき、表示の遅れは発生しません。次のサンプルは、高頻度シナリオでの `CategoryChart` を示しています。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           github-src="charts/category-chart/high-frequency"
-           alt="高頻度 {Platform} チャート" >
-</code-view>
+`sample="/charts/category-chart/high-frequency", height="400", alt="{Platform} 高頻度 {Platform} チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -32,12 +29,9 @@ _language: ja
 
 大量データのシナリオでは、{Platform} チャートは 100 万のデータ ポイントを描画できますが、エンドユーザーがチャートのコンテンツをズームイン/ズームアウトまたはナビゲートしようとしたときにチャートはスムーズなパフォーマンスを提供し続けます。次のサンプルは、大量データのシナリオでの `CategoryChart` を示しています。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-volume"
-           github-src="charts/category-chart/high-volume"
-           alt="大量のデータの {Platform} チャート" >
-</code-view>
+`sample="/charts/category-chart/high-volume", height="400", alt="{Platform} 大量のデータの {Platform} チャート"`
+
+
 
 <div class="divider--half"></div>
 

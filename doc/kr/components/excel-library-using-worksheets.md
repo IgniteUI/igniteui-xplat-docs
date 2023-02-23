@@ -13,11 +13,8 @@ The Infragistics Excel Engine's `Worksheet` is where your data is kept. You can 
 ## Demo
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           github-src="excel/excel-library/operations-on-worksheets">
-</code-view>
+`sample="/excel/excel-library/operations-on-worksheets", height="200", alt="{Platform} excel library operations on worksheets"`
+
 
 <div class="divider--half"></div>
 

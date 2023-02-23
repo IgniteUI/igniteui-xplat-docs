@@ -15,12 +15,9 @@ The {Platform} `{ComponentName}` component provides three different filtering ty
 
 The sample below demonstrates `{ComponentName}`'s **Quick filtering** user experience.
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-options"
-           github-src="{ComponentSample}/filtering-options"
-           alt="{Platform} {ComponentTitle} Filtering Example">
-</code-view>
+`sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} Filtering Example"`
+
+
 
 ## Setup
 
@@ -552,13 +549,7 @@ constructor() {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-filtering"
-           github-src="{ComponentSample}/custom-filtering"
-           alt="{Platform} {ComponentTitle} Custom Filtering Example">
-</code-view>
-
+`sample="/{ComponentSample}/custom-filtering", height="600", alt="{Platform} {ComponentTitle} Custom Filtering Example"`
 
 ## Re-templating Filter Cell
 
@@ -566,12 +557,9 @@ You can add a template marked with `FilterCellTemplate` in order to retemplate t
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-template"
-           github-src="{ComponentSample}/filtering-template"
-           alt="{Platform} {ComponentTitle} Filtering Template Example">
-</code-view>
+`sample="/{ComponentSample}/filtering-template", height="500", alt="{Platform} {ComponentTitle} Filtering Template Example"`
+
+
 
 <!-- end: Angular -->
 
@@ -810,12 +798,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-style"
-           github-src="{ComponentSample}/filtering-style"
-           alt="{Platform} {ComponentTitle} Filtering Style Example">
-</code-view>
+`sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} Filtering Style Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

@@ -11,11 +11,8 @@ The {ProductName} Select component allows a single selection from a list of item
 
 ## {Platform} Select Example
 
-<code-view style="height:220px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="{Platform} Select Example"
-           github-src="inputs/select/overview">
-</code-view>
+`sample="/inputs/select/overview", height="220", alt="{Platform} Select Example"`
+
 
 <div class="divider--half"></div>
 
@@ -84,23 +81,17 @@ The `Select` component can be used inside an `Form` thus it exposes a `Name` pro
 
 The `SelectItem` component allows the users to declaratively specify a list of options to be used by the `Select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `SelectItem`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="{Platform} Select Item Example"
-           github-src="inputs/select/item">
-</code-view>
+`sample="/inputs/select/item", height="220", alt="{Platform} Select Item Example"`
+
+
 
 ### Header
 
 You can use the `SelectHeader` to provide a header for a group of items.
 
-<code-view style="height: 250px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="{Platform} Select Header Example"
-           github-src="inputs/select/header">
-</code-view>
+`sample="/inputs/select/header", height="250", alt="{Platform} Select Header Example"`
+
+
 
 ### Group
 
@@ -109,12 +100,9 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
 > [!Note]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="{Platform} Select Group Example"
-           github-src="inputs/select/group">
-</code-view>
+`sample="/inputs/select/group", height="480", alt="{Platform} Select Group Example"`
+
+
 
 ## Validation
 
@@ -177,12 +165,9 @@ You can change the appearance of the {ProductName} `Select` component and its it
 | ---------|------------ |
 | `Label` | A label wrapper that renders content above the select group items. |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="{Platform} Select Styling Example"
-           github-src="inputs/select/styling">
-</code-view>
+`sample="/inputs/select/styling", height="380", alt="{Platform} Select Styling Example"`
+
+
 
 <!-- end: WebComponents -->
 

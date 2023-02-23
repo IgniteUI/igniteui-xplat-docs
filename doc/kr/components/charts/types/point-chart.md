@@ -13,12 +13,9 @@ The {ProductName} Point Chart renders a collection of points. Values are represe
 
 You can create the {Platform} Point Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to `Point` value, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
-           github-src="charts/category-chart/point-chart-multiple-sources"
-           alt="{Platform} Point Chart Example" >
-</code-view>
+`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} Point Chart Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -26,12 +23,9 @@ You can create the {Platform} Point Chart in the `CategoryChart` control by bind
 
 In the following example, the {Platform} Point Chart is comparing the generation of renewable electricity for the countries Europe, China, and USA over the years of 2009 to 2019. The Y-Axis, or labels on the left of the chart, are displaying the terawatt hour (TWh) values of renewed electricity and the X-Axis, or labels on the bottom of the chart, are displaying the year.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-single-source"
-           github-src="charts/category-chart/point-chart-single-source"
-           alt="{Platform} Point Chart with Single Series" >
-</code-view>
+`sample="/charts/category-chart/point-chart-single-source", height="600", alt="{Platform} Point Chart with Single Series"`
+
+
 
 <div class="divider--half"></div>
 
@@ -39,12 +33,9 @@ In the following example, the {Platform} Point Chart is comparing the generation
 
 Since the {Platform} Point Chart allows you to combine multiple series and compare or see how they change over time, let’s see how easy it is to achieve this. All we need to do is bind to a data source containing the data for China and the USA, and the point chart will automatically update to fit the additional data.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-multiple-sources"
-           github-src="charts/category-chart/point-chart-multiple-sources"
-           alt="{Platform} Point Chart with Multiple Series" >
-</code-view>
+`sample="/charts/category-chart/point-chart-multiple-sources", height="600", alt="{Platform} Point Chart with Multiple Series"`
+
+
 
 <div class="divider--half"></div>
 
@@ -52,12 +43,9 @@ Since the {Platform} Point Chart allows you to combine multiple series and compa
 
 Once the {Platform} Point Chart is set up, we may want to make some further styling customizations such as change the markers and its outlines, brushes and thickness.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-point-chart-styling"
-           github-src="charts/category-chart/point-chart-styling"
-           alt="{Platform} Point Chart Styling" >
-</code-view>
+`sample="/charts/category-chart/point-chart-styling", height="600", alt="{Platform} Point Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 

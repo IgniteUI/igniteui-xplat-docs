@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Spreadsheet の構成の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           alt="{Platform} Spreadsheet の構成の例"
-           github-src="excel/spreadsheet/config-options">
-</code-view>
+`sample="/excel/spreadsheet/config-options", height="500", alt="{Platform} Spreadsheet の構成の例"`
+
+
 
 <div class="divider--half"></div>
 

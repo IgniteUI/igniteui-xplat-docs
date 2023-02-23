@@ -9,11 +9,8 @@ mentionedTypes: ["Rating"]
 
 The {ProductName} Rating component allows users to view and provide feedback.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-basic" alt="{Platform} Rating Basic Example"
-           github-src="inputs/rating/basic">
-</code-view>
+`sample="/inputs/rating/basic", height="80", alt="{Platform} Rating Basic Example"`
+
 
 <!-- WebComponents -->
 
@@ -91,11 +88,8 @@ The `Rating` component allows you to use custom symbols in place of the default 
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="{Platform} Rating Custom Symbols Example"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating Custom Symbols Example"`
+
 
 > [!Note]
 The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
@@ -128,11 +122,8 @@ The {ProductName} Rating component has a single selection mode that allows users
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="{Platform} Rating with Signle Selection"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating with Signle Selection"`
+
 
 > [!Note]
 Keep in mind that the `step` attribute doesn't work with single selection mode.
@@ -147,11 +138,8 @@ The {ProductName} Rating component allows users to use different icons/elements 
 </igc-rating-symbol>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-empty" alt="{Platform} Rating with Empty and Selected state"
-           github-src="inputs/rating/empty">
-</code-view>
+`sample="/inputs/rating/empty", height="100", alt="{Platform} Rating with Empty and Selected state"`
+
 
 ## Configuration
 
@@ -216,11 +204,8 @@ The `igcChange` event is fired when the selected value changes.
 
 The `Rating` component provides base, label, value-label, symbols, and symbol that allow you to style the component symbols and its encompassing label.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-styling" alt="{Platform} Rating Styling Example"
-           github-src="inputs/rating/styling">
-</code-view>
+`sample="/inputs/rating/styling", height="80", alt="{Platform} Rating Styling Example"`
+
 
 ## API Reference
 

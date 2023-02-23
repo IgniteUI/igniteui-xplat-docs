@@ -12,12 +12,9 @@ The Date Picker component allows users to use a drop-down calendar UI allowing t
 ## {Platform} Date Picker Example
 
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="{Platform} Date Picker Example"
-           github-src="editors/date-picker/overview">
-</code-view>
+`sample="/editors/date-picker/overview", height="300", alt="{Platform} Date Picker Example"`
+
+
 
 <!-- React, WebComponents -->
 ## Dependencies
@@ -89,12 +86,9 @@ Users can also customize the Date Picker's font by using the various text proper
 
 The following example demonstrates how to enable editing in the `DatePicker`.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="{Platform} Date Picker Editing Example"
-           github-src="editors/date-picker/editing">
-</code-view>
+`sample="/editors/date-picker/editing", height="300", alt="{Platform} Date Picker Editing Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -102,12 +96,9 @@ The following example demonstrates how to enable editing in the `DatePicker`.
 
 The following example demonstrates how to restrict selected dates in the `DatePicker`.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="{Platform} Date Picker Date Limits Example"
-           github-src="editors/date-picker/date-limits">
-</code-view>
+`sample="/editors/date-picker/date-limits", height="300", alt="{Platform} Date Picker Date Limits Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -115,12 +106,9 @@ The following example demonstrates how to restrict selected dates in the `DatePi
 
 The following example demonstrates how apply a long date in the `DatePicker`.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="{Platform} Date Picker Format Example"
-           github-src="editors/date-picker/format">
-</code-view>
+`sample="/editors/date-picker/format", height="300", alt="{Platform} Date Picker Format Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -128,12 +116,9 @@ The following example demonstrates how apply a long date in the `DatePicker`.
 
 The following example demonstrates how combine multiple `DatePicker` controls.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="{Platform} Date Picker Date Range Example"
-           github-src="editors/date-picker/range">
-</code-view>
+`sample="/editors/date-picker/range", height="300", alt="{Platform} Date Picker Date Range Example"`
+
+
 
 <div class="divider--half"></div>
 

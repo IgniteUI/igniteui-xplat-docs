@@ -11,12 +11,9 @@ In {Platform} map component, you can use the `GeographicHighDensityScatterSeries
 ## {Platform} Geographic High Density Map Example
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
-           alt="{Platform} Using Scatter High Density Series Example"
-           github-src="maps/geo-map/type-scatter-density-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-density-series", height="400", alt="{Platform} Using Scatter High Density Series Example"`
+
+
 
 <div class="divider--half"></div>
 

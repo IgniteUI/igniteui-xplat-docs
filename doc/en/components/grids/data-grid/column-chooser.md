@@ -21,12 +21,9 @@ The {ProductName} Data Grid supports the ability show and hide columns with the 
 ## {Platform} Grid Column Chooser Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-toolbar"
-           alt="{Platform} Grid Column Chooser Example"
-           github-src="grids/data-grid/column-chooser-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-chooser-toolbar", height="600", alt="{Platform} Grid Column Chooser Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -169,11 +166,8 @@ Let's say we want to manually display the `ColumnChooser` UI without the toolbar
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-picker"
-           github-src="grids/data-grid/column-chooser-picker">
-</code-view>
+`sample="/grids/data-grid/column-chooser-picker", height="600", alt="{Platform} data grid column chooser picker"`
+
 
 <div class="divider--half"></div>
 

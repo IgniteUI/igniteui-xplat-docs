@@ -11,12 +11,9 @@ In {Platform} map component, you can use the `GeographicSymbolSeries` to display
 ## {Platform} Geographic Symbol Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
-           alt="{Platform} Using Scatter Symbol Series Example"
-           github-src="maps/geo-map/type-scatter-symbol-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-symbol-series", height="500", alt="{Platform} Using Scatter Symbol Series Example"`
+
+
 
 <div class="divider--half"></div>
 

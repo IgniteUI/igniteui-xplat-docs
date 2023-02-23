@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} での編集と検証 - インフラジステ
 _description: グリッドでユーザーの入力を検証し、{Platform} {ComponentTitle} の使用中に有効かどうかを通知します。デモと例をお試しください。
 _keywords: {Platform} validation, {ProductName}, infragistics, {Platform} 検証, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 編集と検証
@@ -37,12 +37,9 @@ namespace: Infragistics.Controls
 
 以下のサンプルは、`{ComponentName}` に組み込み済みの `Required`、`Email` および `Min` 検証ディレクティブを使用する方法を示しています。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
-           github-src="{ComponentSample}/data-validator-service"
-           alt="{Platform} {ComponentTitle} 検証の基本例">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service", height="600", alt="{Platform} {ComponentTitle} 検証の基本例"`
+
+
 
 <!-- Angular -->
 
@@ -189,12 +186,9 @@ public cellEdit(evt) {
 
 以下の例は、上記のカスタマイズ オプションを示しています。
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-extended"
-           github-src="{ComponentSample}/data-validator-service-extended"
-           alt="{Platform} {ComponentTitle} カスタム検証の例">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-extended", height="570", alt="{Platform} {ComponentTitle} カスタム検証の例"`
+
+
 
 ### クロス フィールド検証
 
@@ -317,13 +311,7 @@ public stateMessage(cell: IgxGridCell) {
 
 以下のサンプルは、クロス フィールド検証の動作を示しています。
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
-</code-view>
-
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="560", alt="{Platform} {ComponentTitle} クロス フィールド検証の例"`
 
 <!-- ComponentEnd:Grid -->
 
@@ -425,12 +413,9 @@ public stateMessage(cell: IgxGridCell) {
 
 以下のサンプルは、ルート データと子データの両方について、`{ComponentName}` でのクロス フィールド検証を示しています。
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="530", alt="{Platform} {ComponentTitle} クロス フィールド検証の例"`
+
+
 
 <!-- ComponentEnd:HierarchicalGrid -->
 
@@ -531,12 +516,9 @@ public stateMessage(cell: IgxGridCell) {
 
 以下のサンプルは、クロス フィールド検証の動作を示しています。
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} クロス フィールド検証の例">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="570", alt="{Platform} {ComponentTitle} クロス フィールド検証の例"`
+
+
 
 <!-- ComponentEnd:TreeGrid -->
 
@@ -653,11 +635,8 @@ public cellStyles = {
 
 ### デモ
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style"
-           github-src="{ComponentSample}/data-validation-style">
-</code-view>
+`sample="/{ComponentSample}/data-validation-style", height="560", alt="{Platform} {ComponentTitle} data validation style"`
+
 
 <!-- end: Angular -->
 

@@ -16,13 +16,9 @@ _language: ja
 
 以下のサンプルは、同じ `XamBulletGraph` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
+`sample="/gauges/bullet-graph/animation", height="155", alt="{Platform} ブレット グラフの例"`
 
-<code-view style="height: 155px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
-           alt="{Platform} ブレット グラフの例"
-           github-src="gauges/bullet-graph/animation">
-</code-view>
+
 
 <div class="divider--half"></div>
 
@@ -42,7 +38,6 @@ npm install --save {PackageGauges}
 ## モジュールの要件
 
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
-
 
 ```razor
 // in Program.cs file
@@ -261,11 +256,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-measures"
-           github-src="gauges/bullet-graph/measures">
-</code-view>
+`sample="/gauges/bullet-graph/measures", height="125", alt="{Platform} bullet graph measures"`
+
 
 ## 比較範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -375,11 +367,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-ranges"
-           github-src="gauges/bullet-graph/ranges">
-</code-view>
+`sample="/gauges/bullet-graph/ranges", height="125", alt="{Platform} bullet graph ranges"`
+
 
 ## 目盛
 目盛は、ブレット グラフを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -465,11 +454,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-tickmarks"
-           github-src="gauges/bullet-graph/tickmarks">
-</code-view>
+`sample="/gauges/bullet-graph/tickmarks", height="125", alt="{Platform} bullet graph tickmarks"`
+
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -529,11 +515,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-labels"
-           github-src="gauges/bullet-graph/labels">
-</code-view>
+`sample="/gauges/bullet-graph/labels", height="125", alt="{Platform} bullet graph labels"`
+
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -589,11 +572,8 @@ MaximumValue="55" TargetValue="43">
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-background"
-           github-src="gauges/bullet-graph/background">
-</code-view>
+`sample="/gauges/bullet-graph/background", height="125", alt="{Platform} bullet graph background"`
+
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -652,11 +632,8 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-scale"
-           github-src="gauges/bullet-graph/scale">
-</code-view>
+`sample="/gauges/bullet-graph/scale", height="125", alt="{Platform} bullet graph scale"`
+
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

@@ -13,11 +13,8 @@ mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid','Infragistics.
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-paging"
-           github-src="grids/data-grid/row-paging">
-</code-view>
+`sample="/grids/data-grid/paging", height="600", alt="{Platform} data grid paging"`
+
 
 <div class="divider--half"></div>
 

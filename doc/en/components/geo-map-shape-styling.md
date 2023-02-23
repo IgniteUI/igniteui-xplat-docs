@@ -11,12 +11,9 @@ This topic explains how to apply custom styling to the `GeographicShapeSeries` i
 ## {Platform} Shape Styling on Geographic Shape Series Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling"
-           alt="{Platform} Shape Styling on Geographic Shape Series Example"
-           github-src="maps/geo-map/map-shape-styling">
-</code-view>
+`sample="/maps/geo-map/shape-styling", height="500", alt="{Platform} Shape Styling on Geographic Shape Series Example"`
+
+
 
 <div class="divider--half"></div>
 

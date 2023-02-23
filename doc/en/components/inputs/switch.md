@@ -11,11 +11,8 @@ The {ProductName} Switch component is a binary choice selection component that b
 
 ## {Platform} Switch Example
 
-<code-view style="height:100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="{Platform} Switch Example"
-           github-src="inputs/switches/overview">
-</code-view>
+`sample="/inputs/switches/overview", height="100", alt="{Platform} Switch Example"`
+
 
 <div class="divider--half"></div>
 
@@ -141,12 +138,9 @@ The switch can also be labelled by elements external to the switch. In this case
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switches/label">
-</code-view>
+`sample="/inputs/switches/label", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Checked
 
@@ -164,12 +158,9 @@ You can use the `checked` attribute to toggle on the switch.
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switches/checking">
-</code-view>
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Required
 
@@ -215,12 +206,9 @@ You can use the `disabled` attribute to disable the switch.
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switches/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar Example"`
+
+
 
 ### Forms
 

@@ -12,11 +12,8 @@ _language: ja
 
 ## {Platform} Switch の例
 
-<code-view style="height:100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="{Platform} Switch の例"
-           github-src="inputs/switches/overview">
-</code-view>
+`sample="/inputs/switches/overview", height="100", alt="{Platform} Switch の例"`
+
 
 <div class="divider--half"></div>
 
@@ -142,12 +139,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="{Platform} Avatar の例"
-           github-src="inputs/switches/label">
-</code-view>
+`sample="/inputs/switches/label", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### チェック済み
 
@@ -165,12 +159,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="{Platform} Avatar の例"
-           github-src="inputs/switches/checking">
-</code-view>
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### 必須
 
@@ -216,12 +207,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="{Platform} Avatar の例"
-           github-src="inputs/switches/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### フォーム
 

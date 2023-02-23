@@ -11,11 +11,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           github-src="grids/data-grid/overview">
-</code-view>
+`sample="/grids/data-grid/overview", height="600", alt="{Platform} data grid overview"`
+
 
 <div class="divider--half"></div>
 

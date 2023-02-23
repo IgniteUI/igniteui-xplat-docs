@@ -4,8 +4,8 @@ _description: アプリの開発時に {ProductName} のピン固定機能を使
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 列ピン固定
@@ -16,12 +16,9 @@ namespace: Infragistics.Controls
 
 以下の例は、1 つまたは複数の列を `{ComponentName}` の左側または右側にピン固定する方法を示しています。
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options"
-           alt="{Platform} {ComponentTitle} 列ピン固定の例">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} 列ピン固定の例"`
+
+
 
 ## Column Pinning API
 
@@ -200,9 +197,6 @@ function onColumnPinned(e) {
 igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
 
-
-
-
 ## ピン固定の位置
 
 `Pinning` 設定オプションを使用して、列のピン固定の位置を変更できます。列の位置を [Start] または [End] のいずれかに設定できます。
@@ -241,11 +235,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
-           github-src="{ComponentSample}/column-pinning-right-side">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
 
 <!-- Angular -->
 
@@ -514,11 +505,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+
 
 <!-- end: Angular -->
 
@@ -635,11 +623,8 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:506px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
-           github-src="{ComponentSample}/column-pinning-styles">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

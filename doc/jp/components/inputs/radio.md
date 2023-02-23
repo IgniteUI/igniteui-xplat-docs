@@ -13,11 +13,8 @@ _language: ja
 
 ## {ProductName} Radio の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="{Platform} Radio & Radio Group の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group の例"`
+
 
 <div class="divider--half"></div>
 
@@ -161,12 +158,9 @@ builder.Services.AddIgniteUIBlazor(
 <IgbRadio AriaLabelledBy="radio-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/label">
-</code-view>
+`sample="/inputs/radio/label", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### チェック済み
 
@@ -199,12 +193,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### 無効
 
@@ -222,12 +213,9 @@ builder.Services.AddIgniteUIBlazor(
 <IgbRadio Invalid="true" />
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/invalid">
-</code-view>
+`sample="/inputs/radio/invalid", height="205", alt="{Platform} Radio の例"`
+
+
 
 ### オフ
 
@@ -260,12 +248,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/disabled">
-</code-view>
+`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### グループの配置
 
@@ -298,12 +283,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/alignment">
-</code-view>
+`sample="/inputs/radio/alignment", height="60", alt="{Platform} Radio の例"`
+
+
 
 ### フォーム
 
@@ -352,12 +334,9 @@ igc-radio::part(control) {
 }
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
-           alt="{Platform} Radio スタイル設定"
-           github-src="inputs/radio/styling">
-</code-view>
+`sample="/inputs/radio/styling", height="205", alt="{Platform} Radio スタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

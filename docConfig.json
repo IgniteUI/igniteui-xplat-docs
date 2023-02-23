@@ -1,7 +1,9 @@
 {
     "Angular": {
         "isFirstRelease": false,
-        "showStackblitzButtons": true,
+        "samplesGithubFile": "src/app.component.html",
+        "samplesGithubTree": "github/IgniteUI/igniteui-angular-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ReleaseStatus_DockManager}",  "value": ""},
@@ -100,7 +102,9 @@
     },
     "React": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "src/index.tsx",
+        "samplesGithubTree": "github/IgniteUI/igniteui-react-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": true,
         "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
@@ -218,7 +222,9 @@
     },
     "WebComponents": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "index.html",
+        "samplesGithubTree": "github/IgniteUI/igniteui-wc-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": true,
         "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
@@ -383,7 +389,9 @@
     },
     "Blazor": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "App.razor",
+        "samplesGithubTree": "github/IgniteUI/igniteui-blazor-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ReleaseStatus_DockManager}",  "value": ""},

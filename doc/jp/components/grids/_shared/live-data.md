@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} for {ProductName} のライブ データ更�
 _description: {ProductName} {ComponentTitle} が、ユーザーの操作に応答し続けている間、1 秒あたり数千の更新を処理する方法を確認します。
 _keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics, 更新, ライブ データ, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} のライブ データ更新
@@ -17,12 +17,9 @@ namespace: Infragistics.Controls
 以下のサンプルは、すべてのレコードが 1 秒間に複数回更新される場合の {ComponentTitle} のパフォーマンスを示しています。UI コントロールを使用して、読み込むレコードの数と更新の頻度を選択します。
 同じデータを[折れ線チャート](../charts/types/line-chart.md)に入力して、Ignite UI for Angular の強力なチャート作成機能を体験してください。`Chart` ボタンには、選択した行の Category Prices per Region データが表示され、`Chart` 列ボタンには現在の行の同じデータが表示されます。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs"
-           github-src="{ComponentSample}/grid-finjs"
-           alt="Angular ライブ データ更新の例">
-</code-view>
+`sample="/{ComponentSample}/finjs-live-data", height="700", alt="{Platform} ライブ データ更新の例"`
+
+
 
 <!-- end: Angular -->
 ## データ バインディングおよび更新
@@ -94,12 +91,9 @@ private updateData(data: IRecord[]) {
 ## Dock Manager および igxGrid コンポーネントを使用したライブ データ フィード
 このデモの目的は、[SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) ハブ バックエンドを使用してリアルタイム データ ストリームを表示する財務用スクリーン ボードを紹介することです。
 igxGrid コンポーネントは、サーバーからの高頻度の更新を簡単に処理できます。SignalR を使用する ASP.NET Core アプリケーションのコードは、この[公開な GitHub リポジトリ](https://github.com/IgniteUI/finjs-web-api)にあります。
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-grid-finjs-dock-manager"
-           github-src="{ComponentSample}/grid-finjs-dock-manager"
-           alt="{Platform} {ComponentTitle} サービスを使用したライブ データ更新の例">
-</code-view>
+`sample="/{ComponentSample}/finjs-dock-manager", height="700", alt="{Platform} {ComponentTitle} サービスを使用したライブ データ更新の例"`
+
+
 <!-- end: Angular -->
 
 ### ハブ接続の開始

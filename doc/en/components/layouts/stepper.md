@@ -12,12 +12,9 @@ The {Platform} Stepper Component provides a wizard-like workflow and is used for
 
 The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps.
 
-<code-view style="height: 725px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
-           alt="{Platform} Stepper Example"
-           github-src="layouts/stepper/overview">
-</code-view>
+`sample="/layouts/stepper/overview", height="725", alt="{Platform} Stepper Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -112,12 +109,9 @@ You can easily switch from the horizontal to vertical layout. In order to change
 
 The sample below demonstrates how stepper orientation and titles position could be changed runtime.
 
-<code-view style="height: 528px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
-           alt="{Platform} Stepper Orientation Example"
-           github-src="layouts/stepper/orientation">
-</code-view>
+`sample="/layouts/stepper/orientation", height="528", alt="{Platform} Stepper Orientation Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -142,12 +136,9 @@ If the current non-optional step is not valid you cannot go forward to the next 
 
 The following example demonstrates how to configure a linear stepper:
 
-<code-view style="height: 430px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
-           alt="{Platform} Linear Stepper Example"
-           github-src="layouts/stepper/linear">
-</code-view>
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -207,12 +198,9 @@ In this way if subtitles are defined, they will also be rendered below the step 
 
 The sample below demonstrates all exposed step types and how they could be changed:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
-           alt="{Platform} Step Types Example"
-           github-src="layouts/stepper/steptypes">
-</code-view>
+`sample="/layouts/stepper/steptypes", height="300", alt="{Platform} Step Types Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -4,8 +4,8 @@ _description: {Platform} を使用して、定義済みの行追加機能の使�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 行の追加
@@ -24,12 +24,9 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} 行の追加の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-adding"
-           github-src="{ComponentSample}/row-adding"
-           alt="{Platform} {ComponentTitle} 行の追加の例">
-</code-view>
+`sample="/{ComponentSample}/row-adding", height="600", alt="{Platform} {ComponentTitle} 行の追加の例"`
+
+
 
 ## 行追加の使用
 

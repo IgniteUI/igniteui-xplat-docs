@@ -13,12 +13,9 @@ The {ProductName} List element is extremely useful when presenting a group of it
 
 The following example represents a list populated with contacts with a name and a phone number properties. The `List` component demonstrated below uses the `Avatar` and `Button` elements to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="{Platform} List Example"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -131,12 +128,9 @@ Now, we can add the following code to get a simple list of items:
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="{Platform} Add list items Example"
-           github-src="grids/list/add-list-items">
-</code-view>
+`sample="/grids/list/add-list-items", height="300", alt="{Platform} Add list items Example"`
+
+
 
 Let's up our game a bit and enhance our list items. Say we want to create a list of contacts with a name and a phone number displayed under the name. To achieve that we can use some of the slots that come with the list items as demonstrated in the next example:
 
@@ -202,12 +196,9 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 
 After implementing the above code, our list component should now look like the following:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="{Platform} List Example"
-           github-src="grids/list/list-item-content">
-</code-view>
+`sample="/grids/list/list-item-content", height="300", alt="{Platform} List Example"`
+
+
 
 ### Adding Avatar and Buttons
 
@@ -432,12 +423,9 @@ public onRadioChange(e: any) {
 
 The result of implementing the above code should look like the following:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="{Platform} List Example"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List Example"`
+
+
 
 ## Styling
 
@@ -464,13 +452,7 @@ igc-list-item::part(end) {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="{Platform} List Example"
-           github-src="grids/list/styling">
-</code-view>
-
+`sample="/grids/list/styling", height="300", alt="{Platform} List Example"`
 
 In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 

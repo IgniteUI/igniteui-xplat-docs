@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} 比較データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-comparison-table"
-           alt="{Platform} 比較データのバインディングの例"
-           github-src="grids/data-grid/type-comparison-table">
-</code-view>
+`sample="/grids/data-grid/type-comparison-table", height="600", alt="{Platform} 比較データのバインディングの例"`
+
+
 
 ## API リファレンス
 

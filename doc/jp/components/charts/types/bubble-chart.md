@@ -14,12 +14,9 @@ _language: ja
 
 次の例に示すように、`BubbleSeries` と 2 つの数値軸を使用して、`XamDataChart` コントロールで {ProductName} バブル チャートを作成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
-           alt="{Platform} バブル チャートの例" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="{Platform} バブル チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -27,12 +24,9 @@ _language: ja
 
 以下の例に示すように、データを `BubbleSeries` の `ItemsSource` プロパティにバインドし、その `XMemberPath`、`YMemberPath`、`RadiusMemberPath` プロパティを使用してデータ列をマップできます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
-           github-src="charts/data-chart/scatter-bubble-chart-single-source"
-           alt="単一シリーズの  {Platform} バブル チャート" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="単一シリーズの {Platform} バブル チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -40,12 +34,9 @@ _language: ja
 
 {Platform} バブル チャートでは、次の例に示すように、複数のデータ ソースのバインドは、新しい各データ ソースを追加の `BubbleSeries` の `ItemsSource` プロパティに設定することで機能します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
-           alt="複数シリーズの {Platform} バブル チャート" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} バブル チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -53,12 +44,9 @@ _language: ja
 
 {Platform} バブル チャートでは、`MarkerType` プロパティを使用してバブル マーカーの形状をカスタマイズし、`RadiusScale` プロパティを使用してサイズをカスタマイズし、`MarkerBrush`、`MarkerOutline`、`MarkerThickness` プロパティを使用して外観をカスタマイズできます。さらに、`FillMemberPath` プロパティと `FillScale` プロパティを使用して、データ列に基づいてバブル マーカーにカラーを付けることもできます。この例では、上記のプロパティの使用法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
-           github-src="charts/data-chart/scatter-bubble-chart-styling"
-           alt="{Platform} バブル チャートのスタイル設定" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-styling", height="600", alt="{Platform} バブル チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

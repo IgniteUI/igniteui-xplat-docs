@@ -13,12 +13,9 @@ With deferred grid column resizing, the user will see a temporary resize indicat
 
 ## {Platform}  {ComponentTitle} Column Resizing Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
-           github-src="{ComponentSample}/column-resizing"
-           alt="{Platform} {ComponentTitle} Column Resizing Example">
-</code-view>
+`sample="/{ComponentSample}/column-resizing", height="550", alt="{Platform} {ComponentTitle} Column Resizing Example"`
+
+
 
 **Column resizing** is also enabled per-column level, meaning that the `{ComponentName}` can have a mix of resizable and non-resizable columns. This is done via the `Resizable` input of the `Column`.
 
@@ -416,12 +413,9 @@ When the column is first initialized in the view it resolves its width to the si
 
 This approach is more performance optimized than auto-sizing post initialization and is recommended especially in cases where you need to auto-size a large number of columns.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
-           github-src="{ComponentSample}/column-auto-sizing"
-           alt="{Platform} {ComponentTitle} Column Resizing Example">
-</code-view>
+`sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} Column Resizing Example"`
+
+
 
 <!-- Angular -->
 
@@ -519,11 +513,8 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
-           github-src="{ComponentSample}/column-resize-styling">
-</code-view>
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} column resize styling"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

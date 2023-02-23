@@ -11,11 +11,8 @@ The {Platform} Icon component allows you to easily display font or choose from a
 
 ## {Platform} Icon Example
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon Example"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon Example"`
+
 
 <div class="divider--half"></div>
 
@@ -224,11 +221,8 @@ The icon component supports three icon sizes - `small`, `medium`(default), and `
 <IgrIcon size="large" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-sizing" alt="{Platform} Icon Sizing"
-           github-src="layouts/icon/sizing">
-</code-view>
+`sample="/layouts/icon/sizing", height="60", alt="{Platform} Icon Sizing"`
+
 
 ### Mirrored
 
@@ -257,13 +251,7 @@ igc-icon {
 }
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/icon-styling" alt="{Platform} Icon Sizing"
-           github-src="layouts/icon/styling">
-</code-view>
-
-
+`sample="/layouts/icon/styling", height="70", alt="{Platform} Icon Sizing"`
 
 ## API References
 

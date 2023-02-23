@@ -14,12 +14,9 @@ The {ProductName} Tree element allows users to represent hierarchical data in a 
 
 In this basic {ProductName} Tree example, you can see how to define a tree and its items by specifying the item hierarchy.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="{Platform} Tree Example"
-           github-src="grids/tree/basic-example">
-</code-view>
+`sample="/grids/tree/basic-example", height="400", alt="{Platform} Tree Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -273,12 +270,9 @@ When selection is enabled, end-user selection of items is only allowed through t
 
 The {ProductName} Tree can be rendered in such way that it requires the minimal amount of data to be retrieved from the server so the user could see it as quickly as possible. With this dynamic data loading approach, only after the user expands an item, the children for that particular parent item will be retrieved. This mechanism, also known as Load on Demand, can be easily configured to work with any remote data.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="{Platform} Tree Load On Demand Example"
-           github-src="grids/tree/load-on-demand">
-</code-view>
+`sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree Load On Demand Example"`
+
+
 
 After the user clicks the expand icon, it is replaced by a loading indicator. When the loading property resolves to false, the loading indicator disappears and the children are loaded.
 

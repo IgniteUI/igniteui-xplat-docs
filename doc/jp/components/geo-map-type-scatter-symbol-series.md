@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理記号マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
-           alt="{Platform} 散布図記号シリーズの使用の例"
-           github-src="maps/geo-map/type-scatter-symbol-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-symbol-series", height="500", alt="{Platform} 散布図記号シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

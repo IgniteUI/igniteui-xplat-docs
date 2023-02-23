@@ -207,11 +207,8 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 <div class="divider--half"></div>
 
 
-<code-view style="height: 435px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Grid 例" >
-</code-view>
+`sample="/grids/data-grid/overview", height="435", alt="{Platform} Grid 例"`
+
 
 このサンプルが気に入りましたか? 完全な {Platform} ツールキットにアクセスして、すばやく独自のアプリの作成を開始します。<a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">無料でダウンロードできます。</a>
 
@@ -254,10 +251,7 @@ Web コンポーネントは、既存の Web 標準に準拠した Web ベース
 <span class="h3">Demo</span>
 
 
-<code-view style="height: 435px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-marketing-table"  >
-</code-view>
+`sample="/grids/data-grid/type-marketing-table", height="435", alt="{Platform} data grid type marketing table"`
 
 <div class="divider--half"></div>
 

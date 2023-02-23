@@ -11,12 +11,9 @@ mentionedTypes: ['Chip']
 
 ## {Platform} Chip Example
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="{Platform} Chip Example"
-           github-src="inputs/chip/overview">
-</code-view>
+`sample="/inputs/chip/overview", height="80", alt="{Platform} Chip Example"`
+
+
 
 <div class="divider"></div>
 
@@ -144,12 +141,9 @@ The {ProductName} chip supports several pre-defined stylistic variants. You can 
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="{Platform} Chip Variants Example"
-           github-src="inputs/chip/variants">
-</code-view>
+`sample="/inputs/chip/variants", height="80", alt="{Platform} Chip Variants Example"`
+
+
 
 ### Disabled
 
@@ -177,12 +171,9 @@ With the `Prefix` and `Suffix` parts of the `Chip` component and their slots, we
 </igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
-           alt="{Platform} Chip Multiple Example"
-           github-src="inputs/chip/multiple">
-</code-view>
+`sample="/inputs/chip/multiple", height="80", alt="{Platform} Chip Multiple Example"`
+
+
 
 ## Size
 
@@ -206,12 +197,9 @@ We allow the user to choose the size of the `Chip` by using its `Size` property.
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
-           alt="{Platform} Chip Size Example"
-           github-src="inputs/chip/size">
-</code-view>
+`sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
+
+
 
 ## Styling
 
@@ -228,13 +216,7 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="{Platform} Chip Styling Example"
-           github-src="inputs/chip/styling">
-</code-view>
-
+`sample="/inputs/chip/styling", height="80", alt="{Platform} Chip Styling Example"`
 
 <div class="divider--half"></div>
 

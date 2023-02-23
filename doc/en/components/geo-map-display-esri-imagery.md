@@ -11,12 +11,9 @@ The `ArcGISOnlineMapImagery` is a free geographic imagery mapping service create
 ## {Platform} Displaying Imagery from Esri Maps Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery"
-           alt="{Platform} Displaying Imagery from Esri Maps Example"
-           github-src="maps/geo-map/display-esri-imagery">
-</code-view>
+`sample="/maps/geo-map/display-esri-imagery", height="500", alt="{Platform} Displaying Imagery from Esri Maps Example"`
+
+
 
 <div class="divider--half"></div>
 

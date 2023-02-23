@@ -14,11 +14,8 @@ mentionedTypes: ['Switch']
 
 ## Switch Example
 
-<code-view style="height:200px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="{Platform} Switch Example"
-           github-src="inputs/switch/sample-1">
-</code-view>
+`sample="/inputs/switches/overview", height="200", alt="{Platform} Switch Example"`
+
 
 <div class="divider--half"></div>
 
@@ -72,12 +69,9 @@ The switch can also be labelled by elements external to the switch. In this case
 <span id="switch-label">Label</span>
 <igc-switch aria-labelledby="switch-label"></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switch/label">
-</code-view>
+`sample="/inputs/switches/label", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Checked
 
@@ -86,12 +80,9 @@ Use the `checked` attribute to toggle on the switch.
 ```html
 <igc-switch checked></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switch/checked">
-</code-view>
+`sample="/inputs/switches/checking", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Required
 
@@ -116,12 +107,9 @@ Use the `disabled` attribute to disable the switch.
 ```html
 <igc-switch disabled></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
-           alt="{Platform} Avatar Example"
-           github-src="inputs/switch/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Forms
 

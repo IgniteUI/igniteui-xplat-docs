@@ -15,12 +15,9 @@ _language: ja
 
 `XamDataLegend` の行には、ヘッダー行、シリーズ行、および集計行が含まれます。ヘッダー行には、ホバーされたポイントの軸ラベルが表示され、`HeaderText` プロパティを使用して変更できます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend"
-           alt="{Platform} カテゴリ チャート データ凡例の例"
-           github-src="charts/category-chart/data-legend">
-</code-view>
+`sample="/charts/category-chart/data-legend", height="450", alt="{Platform} カテゴリ チャート データ凡例の例"`
+
+
 
 ### ヘッダー行
 
@@ -38,12 +35,9 @@ _language: ja
 
 `XamDataLegend` の列には、シリーズのタイトル、ラベル、データ列の値、および値に関連付けられたオプションの単位が含まれます。チャートの一部のシリーズには、ラベル、値、および単位の複数の列を含めることができます。たとえば、財務価格シリーズには、**High**、**Low**、**Open**、および **Close** のデータ列があります。これらは、`IncludedColumns` または `ExcludedColumns` プロパティを使用して `XamDataLegend` でフィルタリングできます。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend"
-           alt="{Platform} ファイナンシャル チャート データ凡例の例"
-           github-src="charts/financial-chart/data-legend">
-</code-view>
+`sample="/charts/financial-chart/data-legend", height="450", alt="{Platform} ファイナンシャル チャート データ凡例の例"`
+
+
 
 `IncludedColumns` プロパティと `ExcludedColumns` プロパティの値の設定は、シリーズのタイプとそれらがサポートするデータ列の数によって異なります。たとえば、`IncludedColumns` プロパティに **Open** および **Close** の文字列コレクションを設定すると、チャートがファイナンシャル シリーズをプロットしているときに、株価の始値と終値のみが表示されます。次の表に、データ シリーズの列をフィルタリングするために使用できるすべての列名を示します。
 
@@ -51,7 +45,7 @@ _language: ja
 | -----------------|-------------- |
 | カテゴリ シリーズ  | Value |
 | ラジアル シリーズ    | Value |
-| 極座標シリーズ     | Radius, Angle |
+| 極座標シリーズ     | Radius、Angle |
 | バブル シリーズ    | X、Y、Radius |
 | 散布シリーズ   | X、Y |
 | 範囲シリーズ     | High、Low |
@@ -94,34 +88,25 @@ OHLC 価格の **TypicalPrice** (標準価格) とパーセンテージの **Cha
 
 `XamDataLegend` は、各タイプの列をスタイル設定するためのプロパティを提供します。これらの各プロパティの名前は、**Title**、**Label**、**Value**、または **Units** で始まります。テキストの色、フォント、余白のスタイルを設定できます。たとえば、すべての列のテキストの色を設定する場合は、`TitleTextColor`、`LabelTextColor`、`ValueTextColor`、および `UnitsTextColor` プロパティを設定します。次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-styling-props"
-           alt="{Platform} データ凡例のスタイル設定"
-           github-src="charts/financial-chart/data-legend-styling-props">
-</code-view>
+`sample="/charts/financial-chart/data-legend-styling-props", height="450", alt="{Platform} データ凡例のスタイル設定"`
+
+
 
 ## {Platform} データ凡例値の書式設定
 
 `XamDataLegend` は、`ValueFormatAbbreviation` プロパティを使用して、大きな数値の自動省略形を提供します。これにより、単位の列に kilo、million、billion などの乗数が追加されます。`ValueFormatMinFractions` および `ValueFormatMaxFractions` を設定することにより、表示される小数桁数をカスタマイズできます。これにより、小数点以下に表示される最小桁数と最大桁数をそれぞれ決定できます。次の例は、これらのプロパティの使用方法を示しています:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-data-legend-formatting-decimals"
-           alt="{Platform} データ凡例の小数の書式設定"
-           github-src="charts/category-chart/data-legend-formatting-decimals">
-</code-view>
+`sample="/charts/category-chart/data-legend-formatting-decimals", height="450", alt="{Platform} データ凡例の小数の書式設定"`
+
+
 
 ## {Platform} データ凡例値モード
 
 `ValueFormatMode` プロパティを変更することにより、`XamDataLegend` 内の値のデフォルトの 10 進表示を通貨表示に変更することができます。また、`ValueFormatCulture` プロパティにカルチャ タグを設定することで、表示される通貨記号のカルチャを変更できます。たとえば、次のデータ凡例の例では、`ValueFormatCulture` が「en-GB」に設定されており、英国ポンド (£) の記号が表示されています:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-data-legend-formatting-currency"
-           alt="{Platform} 通貨の書式設定"
-           github-src="charts/financial-chart/data-legend-formatting-currency">
-</code-view>
+`sample="/charts/financial-chart/data-legend-formatting-currency", height="450", alt="{Platform} 通貨の書式設定"`
+
+
 
 ## {Platform} データ凡例のスタイル設定イベント
 

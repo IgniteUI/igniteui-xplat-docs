@@ -47,12 +47,9 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## {Platform} {ComponentTitle} Column Moving Overview Example
 
-<code-view style="height:650px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-options"
-            github-src="{ComponentSample}/column-moving-options"
-            alt="{Platform} {ComponentTitle} Column Moving Overview Example">
-</code-view>
+`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Column Moving Overview Example"`
+
+
 
 ## Overview
 
@@ -304,12 +301,9 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-moving-styles"
-           github-src="{ComponentSample}/column-moving-styles"
-           alt="{Platform} {ComponentTitle} Grid Moving Styled Example">
-</code-view>
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -322,9 +316,6 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 * `{ComponentName}`
 
 ## Additional Resources
-
-
-
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

@@ -13,11 +13,8 @@ The `Spreadsheet` allows the user to configure many different aspects of the con
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           github-src="excel/spreadsheet/config-options">
-</code-view>
+`sample="/excel/spreadsheet/config-options", height="500", alt="{Platform} spreadsheet config options"`
+
 
 <div class="divider--half"></div>
 

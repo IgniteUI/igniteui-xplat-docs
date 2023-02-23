@@ -11,12 +11,9 @@ The {Platform} Spreadsheet component allows display of pre-existing hyperlinks i
 ## {Platform} Spreadsheet Hyperlinks Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks"
-           alt="{Platform} Spreadsheet Hyperlinks Example"
-           github-src="excel/spreadsheet/hyperlinks">
-</code-view>
+`sample="/excel/spreadsheet/hyperlinks", height="500", alt="{Platform} Spreadsheet Hyperlinks Example"`
+
+
 
 <div class="divider--half"></div>
 

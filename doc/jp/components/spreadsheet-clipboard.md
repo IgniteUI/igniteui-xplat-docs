@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} クリップボードでの作業の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-clipboard"
-           alt="{Platform} クリップボードでの作業の例"
-           github-src="excel/spreadsheet/clipboard">
-</code-view>
+`sample="/excel/spreadsheet/clipboard", height="500", alt="{Platform} クリップボードでの作業の例"`
+
+
 
 <div class="divider--half"></div>
 

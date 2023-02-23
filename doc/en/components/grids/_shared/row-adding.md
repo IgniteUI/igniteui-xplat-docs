@@ -23,12 +23,9 @@ The `{ComponentName}` provides a convenient way to perform data manipulations th
 
 # {Platform} {ComponentTitle} Row Adding Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-adding"
-           github-src="{ComponentSample}/row-adding"
-           alt="{Platform} {ComponentTitle} Row Adding Example">
-</code-view>
+`sample="/{ComponentSample}/row-adding", height="600", alt="{Platform} {ComponentTitle} Row Adding Example"`
+
+
 
 ## Row Adding Usage
 

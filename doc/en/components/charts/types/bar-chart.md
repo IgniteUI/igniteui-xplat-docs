@@ -13,12 +13,9 @@ The {ProductName} Bar Chart, Bar Graph, or Horizontal Bar Chart, is among the mo
 
 You can create {Platform} Bar Chart in the `XamDataChart` control by binding your data sources to multiple `BarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="{Platform} Bar Chart Multiple Sources" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} Bar Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -76,12 +73,9 @@ These use cases are commonly used for the following scenarios:
 
 Bar Chart belongs to a group of Category Series and it is rendered using a collection of rectangles that extend from the left to right of the chart towards the values of data points. You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
-           github-src="charts/data-chart/bar-chart-single-source"
-           alt="{Platform} Bar Chart with Single Source" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-single-source", height="600", alt="{Platform} Bar Chart with Single Source"`
+
+
 
 <div class="divider--half"></div>
 
@@ -89,12 +83,9 @@ Bar Chart belongs to a group of Category Series and it is rendered using a colle
 
 The Bar Chart is able to render multiple bars per category for comparison purposes. In this example, the Bar Chart is comparing box office revenue amongst popular movie franchises. You can create this type of chart in the `XamDataChart` control by binding your data to multiple `BarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="{Platform} Bar Chart with Multiple Sources" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} Bar Chart with Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -102,12 +93,9 @@ The Bar Chart is able to render multiple bars per category for comparison purpos
 
 The Bar Chart can be styled, and allows for the ability to use [annotation values](../features/chart-annotations.md) for each bar, for example, to demonstrate percent comparisons. You can create this type of chart in the `XamDataChart` control by binding your data to a `BarSeries` and adding a `CalloutLayer`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
-           github-src="charts/data-chart/bar-chart-styling"
-           alt="{Platform} Bar Chart Styling" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-styling", height="600", alt="{Platform} Bar Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -119,12 +107,9 @@ The Stacked Bar Chart differs from the Bar Chart in that the data points represe
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedBarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           github-src="charts/data-chart/stacked-bar-chart"
-           alt="{Platform} Stacked Bar Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-bar-chart", height="600", alt="{Platform} Stacked Bar Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -134,12 +119,9 @@ The {Platform} Stacked 100% Bar Chart is identical to the {Platform} Stacked Bar
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           github-src="charts/data-chart/stacked-100-bar-chart"
-           alt="{Platform} Stacked 100 Bar Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-bar-chart", height="600", alt="{Platform} Stacked 100 Bar Chart"`
+
+
 
 <div class="divider--half"></div>
 

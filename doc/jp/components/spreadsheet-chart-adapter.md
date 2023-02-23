@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Spreadsheet チャート アダプターの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter-chart"
-           alt="{Platform} Spreadsheet チャート アダプターの例"
-           github-src="excel/spreadsheet/adapter-chart">
-</code-view>
+`sample="/excel/spreadsheet/adapter-chart", height="500", alt="{Platform} Spreadsheet チャート アダプターの例"`
+
+
 
 <div class="divider--half"></div>
 

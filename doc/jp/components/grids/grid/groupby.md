@@ -15,13 +15,7 @@ _language: ja
 この例は、大量のデータのグループ化が可能であることを示しています。列ヘッダーを一番上 (グループ化領域) にドラッグすると、ユーザーは選択した列のデータを階層構造で表示できます。さらに列ヘッダーを一番上にドラッグすることで、複数のフィールドでグループ化できます。これらのグループ化オプションは、ユーザーが多数の行と列を持つテーブルがあり、はるかに高速で視覚的に受け入れられる方法でデータを表示ようとする場合に役立ちます。
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
-           github-src="{GridSample}/groupby-expressions"
-           alt="{Platform} {ComponentTitle} グループ化の例">
-</code-view>
-
+`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {ComponentTitle} グループ化の例"`
 
 ## 初期のグループ化状態
 
@@ -232,13 +226,7 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 ### {Platform} ページングによるグループ化の例
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
-           github-src="{GridSample}/groupby-paging"
-           alt="{Platform} {ComponentTitle} ページングによるグループ化の例">
-</code-view>
-
+`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {ComponentTitle} ページングによるグループ化の例"`
 
 ## 集計でグループ化
 
@@ -272,13 +260,7 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
 ### {Platform} カスタム グループ化の例
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
-           github-src="{GridSample}/groupby-custom-coming-soon"
-           alt="{Platform} {ComponentTitle} カスタム グループ化の例">
-</code-view>
-
+`sample="/{GridSample}/groupby-custom-coming-soon", height="605", alt="{Platform} {ComponentTitle} カスタム グループ化の例"`
 
 このサンプルでは、さまざまな日付条件のカスタム ソートストラテジを定義しています。
 各カスタム ストラテジ、ベースの `DefaultSortingStrategy` を拡張し、`CompareValues` メソッドを定義します。値をソートするときに使用されるカスタム比較関数です。さらに、比較に必要な日付から値を抽出します。
@@ -503,11 +485,8 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling"
-           github-src="{GridSample}/groupby-styling">
-</code-view>
+`sample="/{GridSample}/groupby-styling", height="570", alt="{Platform} {GridTitle} groupby styling"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

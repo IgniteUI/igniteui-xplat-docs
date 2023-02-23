@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports configuring the appearance of 
 ## {Platform} Grid Highlighting Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
-           alt="{Platform} Grid Highlighting Example"
-           github-src="grids/data-grid/row-highlighting">
-</code-view>
+`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid Highlighting Example"`
+
+
 
 <div class="divider--half"></div>
 

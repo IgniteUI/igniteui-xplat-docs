@@ -21,12 +21,9 @@ _language: ja
 
 ## {Platform} グリッド セルの結合例
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
-           alt="{Platform} グリッド セルの結合例"
-           github-src="grids/data-grid/cell-merging">
-</code-view>
+`sample="/grids/data-grid/cell-merging", height="600", alt="{Platform} グリッド セルの結合例"`
+
+
 
 <div class="divider--half"></div>
 
