@@ -10,17 +10,17 @@ export interface IFileGroups {
     "tocOnly": string[]
 }
 
-export type Platform = ('Blazor' | 'WC' | 'React' | 'Angular')
+export type Platform = ('Blazor' | 'WebComponents' | 'React' | 'Angular')
 export type Language = ('jp' | 'kr' | 'en')
 
 export const productPathMap: Map<Platform, string> = new Map<Platform, string>([
     ['React', '../dist/React/{lang}/components'],
-    ['WC', '../dist/WebComponents/{lang}/components'],
+    ['WebComponents', '../dist/WebComponents/{lang}/components'],
     ['Blazor', '../dist/Blazor/{lang}/components'],
     ['Angular', '../dist/Angular/{lang}/components']
 ]);
 
-export const allPlatforms: Platform[] = ['Blazor', 'React', 'WC'];
+export const allPlatforms: Platform[] = ['Blazor', 'React', 'WebComponents', 'Angular'];
 export const allLangs: Language[] = ['en', 'jp', 'kr'];
 
 export const defaultFileGroups: IFileGroups = {
