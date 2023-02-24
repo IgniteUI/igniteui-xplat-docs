@@ -147,29 +147,35 @@ function rowPinningHandler(event) {
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
-<!-- Angular -->
+<!-- Angular, WebComponents  -->
 
 ## Pinning Position
 
 You can change the row pinning position via the `Pinning` configuration option. It allows you to set the pin area position to either Top or Bottom.
 When set to Bottom pinned rows are rendered at the bottom of the grid, after the unpinned rows. Unpinned rows can be scrolled vertically, while the pinned rows remain fixed at the bottom.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
-```html
-<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
-    </igc-pinning-config rows="Bottom">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
-
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { rows: RowPinningPosition.Bottom };
+```
+<!-- end: WebComponents -->
+
+
 
 ```razor
     <{ComponentSelector} Id="grid"
@@ -294,7 +300,7 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- ComponentStart: Grid -->
 
