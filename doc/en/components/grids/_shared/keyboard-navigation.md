@@ -131,6 +131,8 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 
 <!-- end: Angular -->
 
+<!-- Angular -->
+
 ## Custom Keyboard Navigation
 
 Overriding the default behavior for a certain key or keys combination is one of the benefits that the **Keyboard Navigation** feature provides. For example: press the <kbd>Enter</kbd> or <kbd>Tab</kbd> key to navigate to the next cell or the cell below. This or any other navigation scenario is easily achieved by the **Keyboard Navigation** API:
@@ -261,6 +263,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
     grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
         (obj) => { obj.target.nativeElement.focus(); });
 ```
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
