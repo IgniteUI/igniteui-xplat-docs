@@ -206,26 +206,26 @@ igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
-```
-
-<!-- WebComponents -->
-```html
-<{ComponentSelector} auto-generate="true">
-    <igc-pinning-config columns="End">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { columns: ColumnPinningPosition.End };
+```
+<!-- end: WebComponents -->
 
 ```razor
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+
 @code {
     private IgbPinningConfig pinningConfig = new() {
         Columns = ColumnPinningPosition.End
