@@ -97,6 +97,14 @@ stages:
           isVerbose: ${{ parameters.isVerbose }}
           workingDir: '$(selfSourcesDir)'
 
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
+
       - checkout: IgniteUIDocFX
 
       - task: CopyFiles@2
