@@ -99,6 +99,29 @@ stages:
 
       - checkout: IgniteUIDocFX
 
+      - task: CopyFiles@2
+        displayName: 'Copy the build files to the Git repo'
+        inputs:
+          SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\${{ parameters.language }}'
+          TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\${{ parameters.language }}'
+          OverWrite: true
+  
+      - script: |
+          git add -A
+          git commit -m "Adding changes from build $(Build.BuildNumber)"
+          git push -u origin ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+        displayName: 'Commit the changes and make a PR'
+        workingDirectory: $(System.DefaultWorkingDirectory)\igniteui-docfx
+      
+      - task: CreatePullRequest@1
+        inputs:
+          repoType: 'GitHub'
+          githubEndpoint: 'ESShared'
+          githubRepository: 'IgniteUI/igniteui-docfx'
+          sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
+          targetBranch: '$(Build.SourceBranchName)'
+          title: 'Changes from $(Build.DefinitionName)'
+
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
         inputs:
