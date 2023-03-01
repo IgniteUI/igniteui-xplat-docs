@@ -90,13 +90,6 @@ stages:
           language: en
           verbose: ${{ parameters.isVerbose }}
 
-#      - template: templates/build-steps-make-pr.yml
-#        parameters:
-#          buildType: $(buildType)
-#          platform: Angular
-#          language: en
-#          verbose: ${{ parameters.isVerbose }}
-
 
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
