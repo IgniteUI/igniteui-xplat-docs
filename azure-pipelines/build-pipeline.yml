@@ -67,7 +67,6 @@ stages:
 
       - task: Npm@1
         displayName: 'npm ci'
-        workingDir: 
         inputs:
           command: custom
           workingDir: '$(selfSourcesDir)'
