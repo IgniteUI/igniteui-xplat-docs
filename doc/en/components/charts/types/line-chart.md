@@ -13,12 +13,9 @@ The {ProductName} Line Chart or Line Graph is a type of category charts that sho
 
 You can create the {Platform} Line Chart in the `CategoryChart` control by binding your data to `ItemsSource` property and setting `ChartType` property to **Line** enum, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           github-src="charts/category-chart/line-chart-multiple-sources"
-           alt="{Platform} Line Chart Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -73,12 +70,9 @@ The {Platform} Line Chart is often used to show the change of value over time su
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
-           alt="{Platform} Line Chart with Single Source"
-           github-src="charts/category-chart/line-chart-single-source">
-</code-view>
+`sample="/charts/category-chart/line-chart-single-source", height="600", alt="{Platform} Line Chart with Single Source"`
+
+
 
 <div class="divider--half"></div>
 
@@ -88,12 +82,9 @@ Since the {Platform} Line Chart allows you to combine multiple series and compar
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="{Platform} Line Chart with Multiple Sources"
-           github-src="charts/category-chart/line-chart-multiple-sources'">
-</code-view>
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} Line Chart with Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -105,12 +96,9 @@ In this example, we are streaming live data into the {Platform} Line Chart at an
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="{Platform} Line Chart Live Data Example"
-           github-src="charts/category-chart/high-frequency">
-</code-view>
+`sample="/charts/category-chart/high-frequency", height="600", alt="{Platform} Line Chart Live Data Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -120,12 +108,9 @@ Once our chart is set up, we may want to make some further styling customization
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Line`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling"
-           alt="{Platform} Line Chart Styling"
-           github-src="charts/category-chart/line-chart-styling">
-</code-view>
+`sample="/charts/category-chart/line-chart-styling", height="600", alt="{Platform} Line Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -137,12 +122,9 @@ The following sections explain more advanced types of {Platform} Line Charts tha
 
 The Stacked Line Chart is often used to show the change of value over time such as the amount of renewable electricity produced for several years between regions. You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
-           alt="{Platform} Stacked Line Chart"
-           github-src="charts/data-chart/stacked-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} Stacked Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -152,12 +134,9 @@ The Stacked 100% Line Chart is identical to the Stacked Line Chart in all aspect
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100LineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
-           alt="{Platform} Stacked 100 Line Chart"
-           github-src="charts/data-chart/stacked-100-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} Stacked 100 Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -167,12 +146,9 @@ The Radial Line Chart belongs to a group of radial charts and has a shape of an 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           alt="{Platform} Radial Line Chart"
-           github-src="charts/data-chart/radial-line-chart">
-</code-view>
+`sample="/charts/data-chart/radial-line-chart", height="600", alt="{Platform} Radial Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -182,12 +158,9 @@ The Polar Line Chart belongs to a group of polar charts and is rendered using a 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
-           alt="{Platform} Polar Line Chart"
-           github-src="charts/data-chart/polar-line-chart">
-</code-view>
+`sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} Polar Line Chart"`
+
+
 
 <div class="divider--half"></div>
 

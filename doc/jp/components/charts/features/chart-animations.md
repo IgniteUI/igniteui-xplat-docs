@@ -17,12 +17,9 @@ _language: ja
 
 以下の例は、アニメーションをデフォルトの `TransitionInMode` ("Auto") に設定した[折れ線チャート](../types/line-chart.md)を示しています。この例の一番上のドロップダウンとスライダーは、`TransitionInMode` と `TransitionInDuration` をそれぞれ変更できるため、サポートされるさまざまなアニメーションが異なる速度でどのように見えるかを確認できます。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-animations"
-           alt="{Platform} 構成オプションの例"
-           github-src="charts/category-chart/line-chart-with-animations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-animations", height="500", alt="{Platform} 構成オプションの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -19,12 +19,9 @@ It is highly recommended that you review the [Binding Shape Files with Geo-Spati
 //WebComponents sample not working in CodeSandbox. Remove build flag once this is fixed.
 ```
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
-           alt="{Platform} Displaying Heat Imagery Example"
-           github-src="maps/geo-map/display-heat-imagery">
-</code-view>
+`sample="/maps/geo-map/display-heat-imagery", height="500", alt="{Platform} Displaying Heat Imagery Example"`
+
+
 
 <div class="divider--half"></div>
 

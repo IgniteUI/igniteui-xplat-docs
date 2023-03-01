@@ -12,12 +12,9 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## {Platform} Excel ライブラリの例
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="{Platform} Excel ライブラリの例"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
+
+
 
 <div class="divider--half"></div>
 

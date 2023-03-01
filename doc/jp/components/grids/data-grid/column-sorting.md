@@ -21,12 +21,9 @@ _language: ja
 ## {Platform} グリッド ソートの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
-           alt="{Platform} グリッド ソートの例"
-           github-src="grids/data-grid/column-sorting">
-</code-view>
+`sample="/grids/data-grid/column-sorting", height="600", alt="{Platform} グリッド ソートの例"`
+
+
 
 <div class="divider--half"></div>
 

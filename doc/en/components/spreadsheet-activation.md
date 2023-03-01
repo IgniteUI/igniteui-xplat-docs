@@ -12,12 +12,9 @@ The {Platform} Spreadsheet component exposes properties that allow you to determ
 ## {Platform} Spreadsheet Activation Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-activation"
-           alt="{Platform} Spreadsheet Activation Example"
-           github-src="excel/spreadsheet/activation">
-</code-view>
+`sample="/excel/spreadsheet/activation", height="500", alt="{Platform} Spreadsheet Activation Example"`
+
+
 
 <div class="divider--half"></div>
 

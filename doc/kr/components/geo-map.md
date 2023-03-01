@@ -13,10 +13,7 @@ The {ProductName} map component allows you to display data that contains geograp
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-overview"  >
-</code-view>
+`sample="/maps/geo-map/overview", height="400", alt="{Platform} geo map overview"`
 
 <div class="divider--half"></div>
 

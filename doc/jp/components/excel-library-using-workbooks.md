@@ -12,12 +12,9 @@ Infragistics {Platform} Excel Engine は、データを Microsoft® Excel® に�
 ## {Platform} ワークブックの使用の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-workbooks"
-           alt="{Platform} ワークブックの使用の例"
-           github-src="excel/excel-library/operations-on-workbooks">
-</code-view>
+`sample="/excel/excel-library/operations-on-workbooks", height="500", alt="{Platform} ワークブックの使用の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -13,11 +13,8 @@ The {ProductName} Dialog component is used to display some information or prompt
 
 This sample demonstrates how to create a Dialog component.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-overview" alt="{Platform} Dialog Example"
-           github-src="notifications/dialog/overview">
-</code-view>
+`sample="/notifications/dialog/overview", height="400", alt="{Platform} Dialog Example"`
+
 
 <div class="divider--half"></div>
 
@@ -61,21 +58,15 @@ By default, the Dialog is closed automatically when the user presses `ESC`. You 
 
 Use the `closeOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-closing-variations" alt="{Platform} Dialog Closing Variations"
-           github-src="notifications/dialog/closing-variations">
-</code-view>
+`sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing Variations"`
+
 
 ### Form
 
 Form elements can close a Dialog if they have the attribute `method="dialog"`. Submitting the form will trigger the closing of the dialog.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-form" alt="{Platform} Dialog Form Example"
-           github-src="notifications/dialog/form">
-</code-view>
+`sample="/notifications/dialog/form", height="500", alt="{Platform} Dialog Form Example"`
+
 
 ## Styling
 
@@ -94,11 +85,8 @@ igc-dialog::part(footer) {
 }
 ```
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/dialog-styling" alt="{Platform} Dialog Styling Example"
-           github-src="notifications/dialog/styling">
-</code-view>
+`sample="/notifications/dialog/styling", height="400", alt="{Platform} Dialog Styling Example"`
+
 
 
 <div class="divider--half"></div>

@@ -11,12 +11,9 @@ The {Platform} Spreadsheet component allows the user to configure many different
 ## {Platform} Configuring Spreadsheet Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           alt="{Platform} Configuring Spreadsheet Example"
-           github-src="excel/spreadsheet/config-options">
-</code-view>
+`sample="/excel/spreadsheet/config-options", height="500", alt="{Platform} Configuring Spreadsheet Example"`
+
+
 
 <div class="divider--half"></div>
 

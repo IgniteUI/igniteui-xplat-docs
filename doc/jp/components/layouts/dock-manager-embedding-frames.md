@@ -12,12 +12,9 @@ Dock Manager コンポーネントは、ペインを使用してアプリケー�
 ## {Platform} ドック マネージャーでのフレームの埋め込み例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-embedding-frames"
-           alt="{Platform} ドック マネージャーでのフレームの埋め込み例"
-           github-src="layouts/dock-manager/embedding-frames">
-</code-view>
+`sample="/layouts/dock-manager/embedding-frames", height="600", alt="{Platform} ドック マネージャーでのフレームの埋め込み例"`
+
+
 
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

@@ -13,11 +13,8 @@ The {Platform} Spreadsheet is a {Platform} component that allows visualizing and
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           github-src="excel/spreadsheet/overview">
-</code-view>
+`sample="/excel/spreadsheet/overview", height="500", alt="{Platform} spreadsheet overview"`
+
 
 <div class="divider--half"></div>
 

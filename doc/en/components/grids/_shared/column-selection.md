@@ -33,12 +33,9 @@ The sample below demonstrates the three types of `{ComponentName}`'s **column se
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
-           github-src="{ComponentSample}/column-selection-mode"
-           alt="{Platform} Column Selection Example">
-</code-view>
+`sample="/{ComponentSample}/column-selection-mode", height="570", alt="{Platform} Column Selection Example"`
+
+
 
 ## Basic Usage
 
@@ -68,11 +65,8 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
-           github-src="{ComponentSample}/column-selection-group">
-</code-view>
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+
 
 ## Keyboard Combinations
 
@@ -195,11 +189,8 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
-           github-src="{ComponentSample}/column-selection-styles">
-</code-view>
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

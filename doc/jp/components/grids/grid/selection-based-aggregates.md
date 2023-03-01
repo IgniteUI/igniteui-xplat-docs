@@ -45,11 +45,8 @@ const dates = data.filter(rec => isDate(rec));
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 560px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-summary-custom-selection"
-           github-src="{GridSample}/data-summary-custom-selection">
-</code-view>
+`sample="/{GridSample}/data-summary-custom-selection", height="560", alt="{Platform} {GridTitle} data summary custom selection"`
+
 
 <!-- end: Angular -->
 

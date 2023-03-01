@@ -15,11 +15,8 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} Column Types Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
-           github-src="{ComponentSample}/column-data-types">
-</code-view>
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+
 
 <!-- ComponentEnd: Grid -->
 

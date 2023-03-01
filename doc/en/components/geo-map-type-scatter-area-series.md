@@ -11,12 +11,9 @@ In {Platform} map component, you can use the `GeographicScatterAreaSeries` to dr
 ## {Platform} Geographic Area Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series"
-           alt="{Platform} Using Scatter Area Series Example"
-           github-src="maps/geo-map/type-scatter-area-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-area-series", height="500", alt="{Platform} Using Scatter Area Series Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -17,12 +17,9 @@ The Polar Area Chart renders using a collection of polygons connecting data poin
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
-           github-src="charts/data-chart/polar-area-chart"
-           alt="{Platform} Polar Area Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-area-chart", height="600", alt="{Platform} Polar Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -32,12 +29,9 @@ The Polar Spline Area Chart renders also as a collection of polygons but they ha
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
-           github-src="charts/data-chart/polar-spline-area-chart"
-           alt="{Platform} Polar Area Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-spline-area-chart", height="600", alt="{Platform} Polar Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -47,12 +41,9 @@ The Polar Marker Chart renders using a collection of markers representing data p
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarScatterSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-scatter-chart"
-           github-src="charts/data-chart/polar-scatter-chart"
-           alt="{Platform} Polar Marker Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-scatter-chart", height="600", alt="{Platform} Polar Marker Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -62,12 +53,9 @@ The Polar Line Chart renders using a collection of straight lines connecting dat
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
-           github-src="charts/data-chart/polar-line-chart"
-           alt="{Platform} Polar Line Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} Polar Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +65,9 @@ The Polar Spline Chart renders using a collection of curved splines connecting d
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarSplineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-chart"
-           github-src="charts/data-chart/polar-spline-chart"
-           alt="{Platform} Polar Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-spline-chart", height="600", alt="{Platform} Polar Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -92,12 +77,9 @@ Once our polar chart is created, we may want to make some further styling custom
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
-           github-src="charts/data-chart/polar-area-chart-styling"
-           alt="{Platform} Polar Area Chart Styling" >
-</code-view>
+`sample="/charts/data-chart/polar-area-chart-styling", height="600", alt="{Platform} Polar Area Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 

@@ -12,12 +12,9 @@ _language: ja
 
 ## {Platform} Icon Avatar の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-icon"
-           alt="{Platform} Avatar の例"
-           github-src="layouts/avatar/icon">
-</code-view>
+`sample="/layouts/avatar/icon", height="80", alt="{Platform} Avatar の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -58,7 +55,6 @@ IgrAvatarModule.register();
 
 builder.Services.AddIgniteUIBlazor(typeof(IgbAvatarModule));
 ```
-
 <!-- Blazor -->
 
 また、追加の CSS ファイルをリンクして、スタイルを `Avatar` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -135,12 +131,9 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-initials"
-           alt="{Platform} Avatar の例"
-           github-src="layouts/avatar/initials">
-</code-view>
+`sample="/layouts/avatar/initials", height="80", alt="{Platform} Avatar の例"`
+
+
 
 ### 画像
 
@@ -172,34 +165,25 @@ defineComponents(IgcAvatarComponent);
 </IgbAvatar>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-image"
-           alt="{Platform} Avatar の例"
-           github-src="layouts/avatar/image">
-</code-view>
+`sample="/layouts/avatar/image", height="80", alt="{Platform} Avatar の例"`
+
+
 
 アバターは、`circle`、`rounded`、`square` の 3 つの形状をサポートしています。アバターの形状は、`shape` 属性を介して変更できます。
 
 ### 形状
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-shape"
-           alt="{Platform} Avatar の例"
-           github-src="layouts/avatar/shape">
-</code-view>
+`sample="/layouts/avatar/shape", height="80", alt="{Platform} Avatar の例"`
+
+
 
 ### サイズ
 
 形状とは別に、`size` 属性を設定することでアバターのサイズを変更することもできます。サポートされているサイズは `small`、`medium`、`large` です。
 
-<code-view style="height: 130px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/avatar-size"
-           alt="{Platform} Avatar の例"
-           github-src="layouts/avatar/size">
-</code-view>
+`sample="/layouts/avatar/size", height="130", alt="{Platform} Avatar の例"`
+
+
 
 ### スタイル設定
 

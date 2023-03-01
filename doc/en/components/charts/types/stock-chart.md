@@ -13,12 +13,9 @@ The {ProductName} Stock Chart, sometimes referred to as {Platform} Financial Cha
 
 You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           github-src="charts/financial-chart/multiple-data"
-           alt="{Platform} Stock Chart Example" >
-</code-view>
+`sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} Stock Chart Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -63,12 +60,9 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 
 ## {Platform} Stock Chart with Multiple Series
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           github-src="charts/financial-chart/multiple-data"
-           alt="{Platform} Stock Index Chart" >
-</code-view>
+`sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} Stock Index Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -76,12 +70,9 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 
 In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
-           github-src="charts/financial-chart/stock-index-chart"
-           alt="{Platform} Stock Index Chart" >
-</code-view>
+`sample="/charts/financial-chart/stock-index-chart", height="600", alt="{Platform} Stock Index Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,11 +81,8 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
 If you need a Stock Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the stock chart is comparing revenue between Amazon, Microsoft and Tesla.
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
-           alt="{Platform} Stock Index Chart" >
-</code-view>
+`sample="/charts/financial-chart/styling", height="600", alt="{Platform} Stock Index Chart"`
+
 
 <div class="divider--half"></div>
 
@@ -108,12 +96,9 @@ The Callout Layer displays a callout at X/Y positions.
 
 Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point to the numeric index of the item, otherwise CalloutsXMemberPath should point to the time value.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
-           github-src="charts/financial-chart/annotations"
-           alt="{Platform} Chart Annotations" >
-</code-view>
+`sample="/charts/financial-chart/annotations", height="600", alt="{Platform} Chart Annotations"`
+
+
 
 <div class="divider--half"></div>
 
@@ -147,12 +132,9 @@ Note that you should set the `ZoomSliderType` option to the same value as the `C
 
 In this example, the stock chart is plotting revenue for United States.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
-           github-src="charts/financial-chart/panes"
-           alt="{Platform} Chart Panes" >
-</code-view>
+`sample="/charts/financial-chart/panes", height="600", alt="{Platform} Chart Panes"`
+
+
 
 <div class="divider--half"></div>
 

@@ -12,11 +12,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
-           github-src="grids/data-grid/column-filtering">
-</code-view>
+`sample="/grids/data-grid/column-filtering", height="600", alt="{Platform} data grid column filtering"`
+
 
 <div class="divider--half"></div>
 

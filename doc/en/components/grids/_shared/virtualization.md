@@ -14,12 +14,9 @@ In {ProductName}, the `{ComponentName}` control now utilizes the `ForOf` directi
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-virtualization"
-           github-src="{ComponentSample}/data-performance-virtualization"
-           alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
-</code-view>
+`sample="/{ComponentSample}/data-performance-virtualization", height="550", alt="{Platform} {ComponentTitle} Virtualization and Performance Example"`
+
+
 
 ## Enabling Virtualization
 

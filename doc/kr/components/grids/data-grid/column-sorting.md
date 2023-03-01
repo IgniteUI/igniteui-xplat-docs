@@ -11,11 +11,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-sorting"
-           github-src="grids/data-grid/column-sorting">
-</code-view>
+`sample="/grids/data-grid/column-sorting", height="600", alt="{Platform} data grid column sorting"`
+
 
 <div class="divider--half"></div>
 

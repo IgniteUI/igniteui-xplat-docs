@@ -21,13 +21,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 ## {Platform} Toolbar Grid Example
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           github-src="{ComponentSample}/toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} Toolbar Example">
-</code-view>
-
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
 
 The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
@@ -208,11 +202,8 @@ These features can be enabled independently from each other by following a patte
 
 Listed below are the main features of the toolbar with example code for each of them.
 
-<code-view style="height:630px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
-           github-src="{ComponentSample}/toolbar-sample-2">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+
 
 
 ### Title
@@ -560,11 +551,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 The following sample demonstrates how to customize the exported files:
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
-           github-src="{ComponentSample}/toolbar-sample-3">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} toolbar sample 3"`
+
 
 
 <!-- Angular -->
@@ -579,11 +567,8 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 370px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
-           github-src="{ComponentSample}/data-exporting-indicator">
-</code-view>
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+
 
 <!-- end: Angular -->
 
@@ -631,11 +616,8 @@ Here is a sample snippet:
 
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
-           github-src="{ComponentSample}/toolbar-sample-4">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
+
 
 <!-- Angular -->
 
@@ -748,11 +730,8 @@ The last step is to **include** the newly created themes.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
-           github-src="{ComponentSample}/toolbar-style">
-</code-view>
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+
 
 
 <div class="divider"></div>

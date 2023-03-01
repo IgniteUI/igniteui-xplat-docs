@@ -13,11 +13,8 @@ This topic explains to to configure and set the built-in data validation rules.
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
-           github-src="excel/spreadsheet/data-validation">
-</code-view>
+`sample="/excel/spreadsheet/data-validation", height="500", alt="{Platform} spreadsheet data validation"`
+
 
 <div class="divider--half"></div>
 

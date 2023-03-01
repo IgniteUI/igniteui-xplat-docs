@@ -18,12 +18,9 @@ For all axes, you can specify axis location in relationship to chart plot area. 
 
 The following example depicts the amount of renewable electricity produced since 2009, represented by a [Line Chart](../types/line-chart.md). There is a drop-down that lets you configure the `YAxisLabelLocation` so that you can visualize what the axes look like when the labels are placed on the left or right side on the inside or outside of the chart's plot area.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-locations"
-           alt="{Platform} Axis Locations Example"
-           github-src="charts/category-chart/axis-locations">
-</code-view>
+`sample="/charts/category-chart/axis-locations", height="450", alt="{Platform} Axis Locations Example"`
+
+
 
 <!-- ## Axis Orientation Example
 
@@ -41,12 +38,9 @@ You can share and add multiple axes in the same plot area of the {Platform} `Xam
 
 The following example depicts a stock price and trade volume chart with a [Stock Chart](../types/stock-chart.md) and a [Column Chart](../types/column-chart.md) plotted. In this case, the Y-Axis on the left is used by the [Column Chart](../types/column-chart.md) and the Y-Axis on the right is used by the [Stock Chart](../types/stock-chart.md), while the X-Axis is shared between the two.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
-           alt="{Platform} Axis Sharing Example"
-           github-src="charts/data-chart/axis-sharing">
-</code-view>
+`sample="/charts/data-chart/axis-sharing", height="450", alt="{Platform} Axis Sharing Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -56,12 +50,9 @@ In addition to placing axes outside plot area, the {Platform} `XamDataChart` als
 
 The following example shows a Sin and Cos wave represented by a [Scatter Spline Chart](../types/scatter-chart.md) with the X and Y axes crossing each other at the (0, 0) origin point.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="{Platform} Axis Crossing Axes Example"
-           github-src="charts/data-chart/axis-crossing">
-</code-view>
+`sample="/charts/data-chart/axis-crossing", height="450", alt="{Platform} Axis Crossing Axes Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -70,12 +61,9 @@ The following example shows a Sin and Cos wave represented by a [Scatter Spline 
 
 The following example demonstrates how to style the data chart using the `TimeXAxis` as a timeline:
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
-           alt="{Platform} TimeLine with Callout Layer"
-           github-src="charts/data-chart/timeline-axis-type">
-</code-view>
+`sample="/charts/data-chart/timeline-axis-type", height="500", alt="{Platform} TimeLine with Callout Layer"`
+
+
 
 <div class="divider--half"></div>
 <!-- end: Blazor -->

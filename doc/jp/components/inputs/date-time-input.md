@@ -10,12 +10,9 @@ _language: ja
 
 {ProductName} 日時入力を使用すると、ユーザーは選択した入力要素で日付と時刻を設定および編集できます。ユーザーは、編集可能なマスクされた入力を使用して、日付と時刻の両方の部分を編集できます。さらに、検証に最小値と最大値だけでなく、希望の表示形式および入力形式の設定を指定できます。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="{Platform} 日時入力の概要の例"
-           github-src="inputs/date-time-input/overview">
-</code-view>
+`sample="/inputs/date-time-input/overview", height="150", alt="{Platform} 日時入力の概要の例"`
+
+
 
 ## 使用方法
 
@@ -116,12 +113,9 @@ input.value = date;
 
 以下は結果です:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="{Platform} 日時入力の表示書式の例"
-           github-src="inputs/date-time-input/input-format-display-format">
-</code-view>
+`sample="/inputs/date-time-input/input-format-display-format", height="150", alt="{Platform} 日時入力の表示書式の例"`
+
+
 
 ### 表示書式
 日時入力は、さまざまな方法で日付 / 時刻を表示するための事前定義された形式を公開します。以下の例はすべて、en-US ロケールで示されています。
@@ -190,13 +184,7 @@ input.minValue = new Date(2021, 0, 1);
 
 すべてがうまくいった場合、値が指定された日付よりも大きいか小さい場合、コンポーネントは`無効`になります。以下の例をご覧ください:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="{Platform} 日時入力最小 / 最大値の例"
-           github-src="inputs/date-time-input/min-max-value">
-</code-view>
-
+`sample="/inputs/date-time-input/min-max-value", height="150", alt="{Platform} 日時入力最小 / 最大値の例"`
 
 ## ステップアップ / ステップダウン
 
@@ -220,12 +208,9 @@ input.spinDelta = spinDelta;
 
 以下の例をご覧ください。
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="{Platform} 日時入力ステップアップ / ステップダウンの例"
-           github-src="inputs/date-time-input/step-up-down">
-</code-view>
+`sample="/inputs/date-time-input/step-up-down", height="150", alt="{Platform} 日時入力ステップアップ / ステップダウンの例"`
+
+
 
 ## スタイル設定
 

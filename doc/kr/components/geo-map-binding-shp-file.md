@@ -14,10 +14,7 @@ The {ProductName} map component, the `ShapeDataSource` class loads geo-spatial d
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"  >
-</code-view>
+`sample="/maps/geo-map/binding-shp-polylines", height="400", alt="{Platform} geo map binding shp polylines"`
 
 <div class="divider--half"></div>
 

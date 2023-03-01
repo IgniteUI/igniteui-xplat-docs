@@ -13,12 +13,9 @@ The {ProductName} charts allows for interactive panning and zooming via the mous
 
 The following example shows all of the available panning and zooming options that are available. You can interact with the example by using the buttons, or select your desired options using the dropdowns or checkboxes.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="{Platform} Navigation Example"
-           github-src="charts/data-chart/chart-navigation">
-</code-view>
+`sample="/charts/data-chart/chart-navigation", height="600", alt="{Platform} Navigation Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -63,12 +60,9 @@ These can be configured to the following options
 
 The following example demonstrates enabling scrollbars.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
-           alt="{Platform} Navigation Example"
-           github-src="charts/financial-chart/scrollbars">
-</code-view>
+`sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} Navigation Example"`
+
+
 
 <div class="divider--half"></div>
 

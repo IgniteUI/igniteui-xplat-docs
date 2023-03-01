@@ -40,12 +40,9 @@ _language: ja
 
 {Platform} 棒チャート (棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの水平棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、ソートされたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの左から右にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[棒チャート](types/bar-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="{Platform} 複数ソースの棒チャート" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -53,12 +50,9 @@ _language: ja
 
 {Platform} 円チャート、または円グラフは、一般的な部分から全体へのチャート タイプです。部分から全体へのチャートは、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示します。カテゴリは、分析されている合計値に対する値のパーセンテージに基づいて、他のカテゴリに比例して表示されます。円チャートは、データ値を円形または円チャートのセクションとして描画します。各セクションまたは円スライスには、基本データ値に比例する円弧の長さがあります。円スライスで表される合計値は、100 または 100% などの全体の値を表します。円チャートは小さなデータセットに最適で、一目で簡単に読むことができます。[円チャート](types/pie-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           github-src="charts/pie-chart/overview"
-           alt="凡例付きの {Platform} 円チャート" >
-</code-view>
+`sample="/charts/pie-chart/overview", height="600", alt="{Platform} 凡例付きの {Platform} 円チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -66,12 +60,9 @@ _language: ja
 
 {Platform} 折れ線チャート、または折れ線グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の直線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。[折れ線チャート](types/line-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           github-src="charts/category-chart/line-chart-multiple-sources"
-           alt="{Platform} 複数ソースの折れ線チャート" >
-</code-view>
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,12 +70,9 @@ _language: ja
 
 {Platform} ドーナツ チャート、またはドーナツ グラフは、円チャートの変形であり、全体の一部を表す円内の変数の発生を比例的に示します。ドーナツ チャートには、円チャートの中央に円形の開口部があり、タイトルまたはカテゴリの説明を表示できます。ドーナツ チャートは、階層データを視覚化するための組み込みサポートを使用して、複数の同心円をサポートできます。[ドーナツ チャート](types/donut-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
-           github-src="charts/doughnut-chart/doughnut-chart-legend"
-           alt="凡例付きの {Platform} ドーナツ チャート" >
-</code-view>
+`sample="/charts/doughnut-chart/legend", height="600", alt="{Platform} 凡例付きの {Platform} ドーナツ チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -92,12 +80,9 @@ _language: ja
 
 {Platform} エリア チャートは、直線セグメントで接続されたポイントのコレクションを使用して描画され、線の下の領域が塗りつぶされます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。エリア チャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。[エリア チャート](types/area-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
-           github-src="charts/category-chart/area-chart-multiple-sources"
-           alt="{Platform} 複数ソースのエリア チャート" >
-</code-view>
+`sample="/charts/category-chart/area-chart-multiple-sources", height="600", alt="{Platform} 複数ソースのエリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -105,12 +90,9 @@ _language: ja
 
 {Platform} スパークライン チャート、またはスパークライン グラフは、グリッド セル内や、データ ストーリーを伝えるために単語サイズの視覚化が必要な場所など、小規模なレイアウト内で描画することを目的としたカテゴリ チャートの一種です。他の {Platform} チャート タイプと同様に、スパークライン チャートには、チャート タイプ、マーカー、範囲、トレンドライン、不明な値のプロット、ツールチップなど、構成およびカスタマイズできるいくつかの視覚要素と対応する機能があります。スパークライン チャートは、折れ線チャート、エリア チャート、縦棒チャート、または Win/Loss チャートとして描画できます。スパーク チャートに相当するフルサイズのチャートの違いは、Y 軸 (左側のラベル) と X 軸 (下部のラベル) が表示されないことです。[スパークライン チャート](types/sparkline-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           alt="{Platform} スパークライン チャートの例"
-           github-src="charts/sparkline/display-types">
-</code-view>
+`sample="/charts/sparkline/display-types", height="450", alt="{Platform} スパークライン チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -118,12 +100,9 @@ _language: ja
 
 {Platform} バブル チャート (バブル グラフ) は、3 つの数値で構成されるデータを表示するために使用されます。値の 2 つは、デカルト (X、Y) 座標系を使用して交点としてプロットされ、3 番目の値は点の直径サイズとして描画されます。これにより、バブル チャートにその名前が付けられます。これは、プロットの X 座標と Y 座標に沿ったさまざまなサイズのバブルの視覚化です。{Platform} バブル チャートは、データ相関とサイズによって描画されたデータ値の違いとの関係を示すために使用されます。4 番目のデータ ディメンション (通常は色) を使用して、バブル チャートの値をさらに区別することもできます。[バブル チャート](types/bubble-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
-           alt="{Platform} バブル チャート" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="{Platform} バブル チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -131,12 +110,9 @@ _language: ja
 
 {Platform} ファイナンシャル/株価チャートは、時系列チャートで株価デーとファイナンシャル データを描画する複合視覚化です。日/週/月フィルター、チャート タイプの選択、ボリューム タイプの選択、インジケーターの選択、トレンドラインの選択などのインタラクティブな視覚要素がツールバーに含まれています。カスタマイズ用に設計された {Platform} 株価チャートは、データの視覚化と解釈を容易にするために、任意の方法でカスタマイズできます。ファイナンシャル チャートは、X 軸 (下のラベル) に沿って日時データを描画し、Open、High、Low、Close ボリュームなどのフィールドを表示します。時系列データを描画するチャートのタイプは、棒、ローソク、縦棒、または折れ線です。[株価チャート](types/stock-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
-           github-src="charts/financial-chart/multiple-data"
-           alt="{Platform} 株価チャートの例" >
-</code-view>
+`sample="/charts/financial-chart/multiple-data", height="600", alt="{Platform} 株価チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -144,12 +120,9 @@ _language: ja
 
 {Platform} 縦棒チャート (縦棒グラフ) は、さまざまなカテゴリのデータの頻度、カウント、合計、または平均を、同じ幅と異なる長さの垂直棒でエンコードされたデータとすばやく比較するために使用される最も一般的なカテゴリ チャート タイプの 1 つです。これらは、時間の経過に伴う項目の価値の変動、データ分布、ソートされたデータのランキング (高から低、最悪から最高) を表示するのに理想的です。データは、チャートの上から下にデータ ポイントの値に向かって伸びる長方形のコレクションを使用して表されます。[縦棒チャート](types/column-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           github-src="charts/category-chart/column-chart-multiple-sources"
-           alt="{Platform} 複数ソースの縦棒チャート" >
-</code-view>
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -157,12 +130,9 @@ _language: ja
 
 {Platform} 複合チャートまたはコンボ チャートは、同じプロット領域でさまざまなチャート タイプを組み合わせた視覚化です。スケールが大きく異なり、異なる単位で表される可能性のある 2 つのデータ シリーズを表示する場合に非常に役立ちます。最も一般的な例は、一方の軸にドル、もう一方の軸にパーセンテージです。[複合チャート](types/composite-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-composite-chart"
-           github-src="charts/data-chart/composite-chart"
-           alt="{Platform} 複合チャートの例" >
-</code-view>
+`sample="/charts/data-chart/composite-chart", height="600", alt="{Platform} 複合チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -178,12 +148,9 @@ _language: ja
 
 {Platform} 極座標エリア チャートまたは極座標グラフは、極座標チャートのグループに属し、頂点または隅がデータ ポイントの極 (角度/半径) 座標に配置された塗りつぶされたポリゴンの形状を持っています。極座標エリア チャートは、散布図と同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に伸ばすのではなく、円の周りにラップします。他のシリーズ タイプと同じように、複数の極座標エリア チャートは同じデータ チャートにプロットでき、データセットの相違点を示すために互いにオーバーレイできます。[極座標チャート](types/polar-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
-           github-src="charts/data-chart/polar-line-chart"
-           alt="{Platform} 極座標型折れ線チャート" >
-</code-view>
+`sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} 極座標型折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -195,12 +162,9 @@ _language: ja
 
 {Platform} 散布図は、デカルト (X、Y) 座標系を使用してデータをプロットすることにより、2 つの値間の関係を示すために使用されます。各データ ポイントは、X 軸と Y 軸上のデータ値の交点として描画されます。散布図は、不均一な間隔またはデータのクラスターに注意を向けます。予測結果の収集データの標準偏差を強調表示し、科学データや統計データをプロットするためによく使用されます。{Platform} 散布図は、データがバインド前に時系列になっていない場合でも、X 軸と Y 軸でデータを時系列に整理してプロットします。[散布図](types/scatter-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
-           github-src="charts/data-chart/scatter-point-chart"
-           alt="{Platform} 散布マーカー チャート" >
-</code-view>
+`sample="/charts/data-chart/scatter-point-chart", height="600", alt="{Platform} 散布マーカー チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -208,12 +172,9 @@ _language: ja
 
 {Platform} シェープ チャートは、形状の配列 (X/Y ポイントの配列) を取り、デカルト (x、y) 座標系のポリゴンまたはポリラインのコレクションとして描画するチャートのグループです。これらは、科学データの強調領域でよく使用されますが、ダイアグラム、青写真、さらには建物の間取り図のプロットにも使用できます。[シェープ チャート](types/shape-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
-           github-src="charts/data-chart/type-scatter-polygon-series"
-           alt="{Platform} 散布ポリゴン チャート" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-polygon-series", height="600", alt="{Platform} 散布ポリゴン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -221,12 +182,9 @@ _language: ja
 
 {Platform} スプライン チャート、またはスプライン グラフは、傾向を示し、比較分析を実行するために、一定期間にわたる 1 つ以上の数量の滑らかな線セグメントで接続されたポイントによって表される連続データ値を示す一種のカテゴリ折れ線チャートです。Y 軸 (左側のラベル) は数値を示し、X 軸 (下側のラベル) は時系列または比較カテゴリを示します。比較する 1 つ以上のデータセットを含めることができます。これはチャートで複数の線として描画されます。{Platform} スプライン チャートは {Platform} 折れ線チャートと同じですが、唯一の違いは、折れ線チャートが直線で接続された点であるのに対し、スプライン チャートの点は滑らかな曲線で接続されていることです。[スプライン チャート](types/spline-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           github-src="charts/category-chart/spline-multiple-sources"
-           alt="{Platform} 複数ソースのスプライン チャート" >
-</code-view>
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} 複数ソースのスプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -234,12 +192,9 @@ _language: ja
 
 {Platform} ステップ折れ線チャート、またはステップ折れ線グラフは、ステップ状の進捗を形成する連続した垂直線と水平線で接続されたデータ ポイントのコレクションを描画するカテゴリ チャートです。値は Y 軸 (左側のラベル) に表示され、カテゴリは X 軸 (下部のラベル) に表示されます。{Platform} ステップ折れ線チャートは、一定期間の変化量を強調するか、複数の項目を比較します。{Platform} ステップ折れ線チャートは、ステップ線の下の領域が塗りつぶされていないことを除いて、すべての点で {Platform} ステップエリア チャートと同じです。[ステップ折れ線チャート](types/step-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           github-src="charts/category-chart/step-line-multiple-sources"
-           alt="{Platform} 複数ソースのステップ折れ線チャート" >
-</code-view>
+`sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="{Platform} 複数ソースのステップ折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -251,12 +206,9 @@ _language: ja
 
 {ProductName} ツリーマップは、ネストされた一連のノードとして階層 (ツリー構造) データを表示します。ツリーの各ブランチにはツリーマップ ノードが提供されて、サブマップを表す小さなノードでタイル化されます。各ノードの長方形には、データ上の指定されたディメンションに比例した領域があります。多くの場合、ノードは色分けされて、データの個別のディメンションを示します。[ツリーマップ](types/treemap-chart.md)の詳細をご覧ください。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/tree-map-overview"
-           alt="{Platform} ツリーマップの例"
-           github-src="charts/tree-map/overview">
-</code-view>
+`sample="/charts/tree-map/overview", height="600", alt="{Platform} ツリーマップの例"`
+
+
 
 <div class="divider--half"></div>
 

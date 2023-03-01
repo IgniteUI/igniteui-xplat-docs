@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports Column Animation during events
 ## {Platform} Grid Column Animations Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
-           alt="{Platform} Grid Column Animations Example"
-           github-src="grids/data-grid/column-animation">
-</code-view>
+`sample="/grids/data-grid/column-animation", height="600", alt="{Platform} Grid Column Animations Example"`
+
+
 
 <div class="divider--half"></div>
 

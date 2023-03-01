@@ -13,12 +13,9 @@ _language: ja
 
 ## {Platform} Card の例
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="{Platform} Card の例"
-           github-src="layouts/card/overview">
-</code-view>
+`sample="/layouts/card/overview", height="640", alt="{Platform} Card の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -329,12 +326,9 @@ defineComponents(IgcCardComponent);
 
 すべて適切に設定できると、結果は以下のようになります。
 
-<code-view style="height: 270px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="{Platform} Card の例"
-           github-src="layouts/card/horizontal">
-</code-view>
+`sample="/layouts/card/horizontal", height="270", alt="{Platform} Card の例"`
+
+
 
 ### その他のレイアウト
 
@@ -431,13 +425,7 @@ defineComponents(IgcCardComponent);
 }
 ```
 
-<code-view style="height: 340px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="{Platform} Semi Horizontal Card の例"
-           github-src="layouts/card/semi-horizontal">
-</code-view>
-
+`sample="/layouts/card/semi-horizontal", height="340", alt="{Platform} Semi Horizontal Card の例"`
 
 ### カード アクション
 
@@ -524,13 +512,7 @@ igc-icon-button+igc-icon-button {
 }
 ```
 
-<code-view style="height: 640px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="{Platform} Card スタイル設定の例"
-           github-src="layouts/card/styling">
-</code-view>
-
+`sample="/layouts/card/styling", height="640", alt="{Platform} Card スタイル設定の例"`
 
 ### まとめ
 このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の {Platform} を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。

@@ -23,12 +23,9 @@ The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component 
 This demo implements some of the features that are available in the Grid:
 Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Data Grid Example"
-           github-src="grids/data-grid/overview">
-</code-view>
+`sample="/grids/data-grid/overview", height="600", alt="{Platform} Data Grid Example"`
+
+
 
 <div class="divider--half"></div>
 

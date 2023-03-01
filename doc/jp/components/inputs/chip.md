@@ -12,12 +12,9 @@ _language: ja
 
 ## {Platform} Chip の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="{Platform} Chip の例"
-           github-src="inputs/chip/overview">
-</code-view>
+`sample="/inputs/chip/overview", height="80", alt="{Platform} Chip の例"`
+
+
 
 <div class="divider"></div>
 
@@ -59,7 +56,6 @@ IgrChipModule.register();
 <!-- Blazor -->
 
 `Chip` を使用する前に、次のように登録する必要があります:
-
 
 ```razor
 // in Program.cs file
@@ -146,12 +142,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="{Platform} Chip バリアントの例"
-           github-src="inputs/chip/variants">
-</code-view>
+`sample="/inputs/chip/variants", height="80", alt="{Platform} Chip バリアントの例"`
+
+
 
 ### 無効
 
@@ -179,12 +172,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 </igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
-           alt="{Platform} Chip Multiple Example"
-           github-src="inputs/chip/multiple">
-</code-view>
+`sample="/inputs/chip/multiple", height="80", alt="{Platform} Chip Multiple Example"`
+
+
 
 ## Size (サイズ)
 
@@ -208,12 +198,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
-           alt="{Platform} Chip Size Example"
-           github-src="inputs/chip/size">
-</code-view>
+`sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
+
+
 
 ## スタイル設定
 
@@ -230,13 +217,7 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="{Platform} Chip スタイル設定の例"
-           github-src="inputs/chip/styling">
-</code-view>
-
+`sample="/inputs/chip/styling", height="80", alt="{Platform} Chip スタイル設定の例"`
 
 <div class="divider--half"></div>
 

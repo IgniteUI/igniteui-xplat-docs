@@ -12,10 +12,7 @@ The Infragistics Excel Engine's `WorksheetTable` functionality allows you to for
 <!--## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"  >
-</code-view>
+`sample="/excel/excel-library/working-with-tables", height="500", alt="{Platform} excel library working with tables"`
 
 -->
 

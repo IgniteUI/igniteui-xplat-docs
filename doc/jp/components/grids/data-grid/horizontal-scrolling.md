@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} 水平方向のスクロールの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
-           alt="{Platform} 水平方向のスクロールの例"
-           github-src="grids/data-grid/column-scrolling">
-</code-view>
+`sample="/grids/data-grid/column-scrolling", height="600", alt="{Platform} 水平方向のスクロールの例"`
+
+
 
 <div class="divider--half"></div>
 

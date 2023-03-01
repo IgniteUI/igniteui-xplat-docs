@@ -14,12 +14,9 @@ _language: ja
 
 {ProductName} ラジアル エリア チャートは、データ ポイントを結ぶ直線のコレクションによってバインドされた塗りつぶされた多角形の形をしています。このチャートは、[エリア チャート](area-chart.md)と同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart"
-           github-src="charts/data-chart/radial-area-chart"
-           alt="{Platform} ラジアル エリア チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-area-chart", height="600", alt="{Platform} ラジアル エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -27,12 +24,9 @@ _language: ja
 
 ラジアル縦棒チャートは、チャートの中心からデータ ポイントの位置に向けて広がる矩形のコレクションを使用して表示されます。これは[縦棒チャート](column-chart.md)と同じデータ プロットの概念を使用していますが、データ ポイントを水平方向に引き伸ばすのではなく、データ ポイントを円でラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialColumnSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
-           github-src="charts/data-chart/radial-column-chart"
-           alt="{Platform} ラジアル縦棒チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-column-chart", height="600", alt="{Platform} ラジアル縦棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -40,12 +34,9 @@ _language: ja
 
 {ProductName} ラジアル折れ線チャートは、データ ポイントを結ぶ直線のコレクションとして描画されます。このチャートは、[折れ線チャート](line-chart.md)と同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           github-src="charts/data-chart/radial-line-chart"
-           alt="{Platform} ラジアル折れ線チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-line-chart", height="600", alt="{Platform} ラジアル折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -53,12 +44,9 @@ _language: ja
 
 ラジアル円チャートは、チャートの中心からデータ ポイントの位置に向けて広がる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialPieSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           github-src="charts/data-chart/radial-pie-chart"
-           alt="{Platform} ラジアル円チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} ラジアル円チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -68,12 +56,9 @@ _language: ja
 
 この例は、`XamDataChart` コントロールのスタイルをカスタマイズする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
-           github-src="charts/data-chart/radial-area-chart-styling"
-           alt="{Platform} ラジアル エリア チャートのスタイル設定" >
-</code-view>
+`sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} ラジアル エリア チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

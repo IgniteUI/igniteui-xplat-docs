@@ -14,12 +14,9 @@ The `Form` collects data from Ignite UI Webcomponents form controls and native f
 
 The following example represents a form that has some inputs, buttons and a checkbox inside.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="{Platform} Form Example"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
+
+
 
 ## Dependencies
 
