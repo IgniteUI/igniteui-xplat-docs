@@ -26,6 +26,13 @@ variables:
   ${{ else }}:  
     buildType: 'staging'
 
+resources:
+  repositories:
+    - repository: IgniteUIDocFX # In a different organization
+      endpoint: ESShared
+      type: github
+      name: IgniteUI/igniteui-docfx
+
 stages:
 - stage: Build
   pool:
@@ -34,6 +41,8 @@ stages:
   jobs:
   - job: BuildDocs
     steps:
+      - checkout: self
+      - checkout: IgniteUIDocFX
       - task: NodeTool@0
         inputs:
           versionSource: 'spec'
@@ -80,12 +89,13 @@ stages:
           language: en
           verbose: ${{ parameters.isVerbose }}
 
-      - template: templates/build-steps-make-pr.yml
-        parameters:
-          buildType: $(buildType)
-          platform: Angular
-          language: en
-          verbose: ${{ parameters.isVerbose }}
+#      - template: templates/build-steps-make-pr.yml
+#        parameters:
+#          buildType: $(buildType)
+#          platform: Angular
+#          language: en
+#          verbose: ${{ parameters.isVerbose }}
+
 
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
