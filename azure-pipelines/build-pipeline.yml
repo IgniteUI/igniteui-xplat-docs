@@ -43,7 +43,6 @@ stages:
   - job: BuildDocs
     steps:
       - checkout: self
-      - checkout: IgniteUIDocFX
       - task: NodeTool@0
         inputs:
           versionSource: 'spec'
@@ -90,6 +89,7 @@ stages:
           language: en
           isVerbose: ${{ parameters.isVerbose }}
 
+      - checkout: IgniteUIDocFX
 
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
