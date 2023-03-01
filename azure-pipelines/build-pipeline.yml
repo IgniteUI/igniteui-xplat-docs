@@ -22,6 +22,8 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
+  - name: selfSourcesDir
+    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
   ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
     buildType: 'production'
   ${{ else }}:  
@@ -41,6 +43,7 @@ stages:
     demands: npm
   jobs:
   - job: BuildDocs
+    
     steps:
       - checkout: self
       - task: NodeTool@0
@@ -62,9 +65,10 @@ stages:
 
       - task: Npm@1
         displayName: 'npm ci'
+        workingDir: 
         inputs:
           command: custom
-          workingDir: '$(Build.SourcesDirectory)'
+          workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: ci
 
@@ -74,6 +78,7 @@ stages:
           platform: WebComponents
           language: en
           isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       - template: templates/build-steps-template.yml
         parameters:
@@ -81,6 +86,7 @@ stages:
           platform: Blazor
           language: en
           isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       - template: templates/build-steps-template.yml
         parameters:
@@ -88,6 +94,7 @@ stages:
           platform: React
           language: en
           isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       - checkout: IgniteUIDocFX
 
