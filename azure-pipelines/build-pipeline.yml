@@ -3,6 +3,7 @@ trigger:
     include:
     - vnext
     - master
+    - sstoychev/ng-pipes
   paths:
     exclude:
     - '**/jp/*'
