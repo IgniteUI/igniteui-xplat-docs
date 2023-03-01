@@ -22,12 +22,14 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
+  - name: buildType
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      value: 'production'
+    ${{ else }}:  
+      value: 'staging'
+  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
   - name: selfSourcesDir
     value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    buildType: 'production'
-  ${{ else }}:  
-    buildType: 'staging'
 
 resources:
   repositories:
