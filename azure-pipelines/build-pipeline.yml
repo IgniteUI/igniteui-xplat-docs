@@ -127,7 +127,7 @@ stages:
 
       - script: |
           git fetch origin
-          git checkout -b ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+          git checkout -b ESShared/XPlaform_$(language)_$(Build.BuildNumber)
         displayName: 'Checkout a new branch in igniteui-docfx'
         workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
 
