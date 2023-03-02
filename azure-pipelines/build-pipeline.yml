@@ -130,12 +130,12 @@ stages:
 
       - powershell: |
           git add -A
-          Write-Host "AAAAAAAAAAAAAA"
+
           git commit --dry-run
-          Write-Host "AAAAAAAAAAAAAA"
+
           if ($? -eq $True) {
             git commit -m "Adding changes from build $(Build.BuildNumber)"
-            Write-Host "AAAAAAAAAAAAAA"
+
             git push -u origin ESShared/XPlaform_$(language)_$(Build.BuildNumber)
             Write-Host "##vso[task.setvariable variable=isAngularChanged;]true"
           }
@@ -150,7 +150,7 @@ stages:
 
       - task: CreatePullRequest@1
         displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
-        condition: eq(variables['isAngularChanged'], 'true')
+        condition: eq(variables['isAngularChanged'], true)
         inputs:
           repoType: 'GitHub'
           githubEndpoint: 'ESShared'
