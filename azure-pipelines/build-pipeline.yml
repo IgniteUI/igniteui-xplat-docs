@@ -78,7 +78,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: $(buildType)
+          buildType: '-$(buildType)'
           platform: WebComponents
           language: en
           isVerbose: ${{ parameters.isVerbose }}
@@ -86,7 +86,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: $(buildType)
+          buildType: '-$(buildType)'
           platform: Blazor
           language: en
           isVerbose: ${{ parameters.isVerbose }}
@@ -94,7 +94,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: $(buildType)
+          buildType: '-$(buildType)'
           platform: React
           language: en
           isVerbose: ${{ parameters.isVerbose }}
