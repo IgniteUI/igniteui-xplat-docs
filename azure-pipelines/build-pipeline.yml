@@ -40,6 +40,7 @@ resources:
       endpoint: ESShared
       type: github
       name: IgniteUI/igniteui-docfx
+      ref: '$(Build.SourceBranchName)'
 
 stages:
 - stage: Build
@@ -111,10 +112,10 @@ stages:
         displayName: 'Package Angular $(language) - zip'
         inputs:
           verbose: ${{ parameters.isVerbose }}
-          rootFolderOrFile: '$(selfSourcesDir)/dist/Angular/$(language)/'
+          rootFolderOrFile: $(selfSourcesDir)/dist/Angular/$(language)/
           includeRootFolder: false
           archiveType: 'zip'
-          archiveFile: $(Build.ArtifactStagingDirectory)/Angular_$(language)_$(buildType) }}.zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/Angular_$(language)_$(buildType).zip
           replaceExistingArchive: true
 
       - checkout: IgniteUIDocFX
