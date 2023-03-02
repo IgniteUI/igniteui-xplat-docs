@@ -136,17 +136,28 @@ stages:
         inputs:
           SourceFolder: '$(selfSourcesDir)\dist\Angular\$(language)'
           TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
-          OverWrite: true
+          CleanTargetFolder: true
 
       - script: |
           git add -A
-          git commit -m "Adding changes from build $(Build.BuildNumber)"
-          git push -u origin ESShared/XPlaform_$(language)_$(Build.BuildNumber)
+          git commit --dry-run
+          if ($? -eq $True) {
+            git commit -m "Adding changes from build $(Build.BuildNumber)"
+            git push -u origin ESShared/XPlaform_$(language)_$(Build.BuildNumber)
+            Write-Host "##vso[task.setvariable variable=isAngularChanged;]true"
+          }
+          else {
+            Write-Host "##vso[task.setvariable variable=isAngularChanged;]false"
+          }
         displayName: 'Commit the changes and make a PR'
         workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
-      
+        
+      - script: set
+        displayName: show all env vars
+
       - task: CreatePullRequest@1
         displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
+        condition: eq(variables['isAngularChanged'], true)
         inputs:
           repoType: 'GitHub'
           githubEndpoint: 'ESShared'
