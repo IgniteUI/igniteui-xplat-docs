@@ -30,6 +30,7 @@ variables:
   # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
   - name: selfSourcesDir
     value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
+  # This is the variable that the gulp script looks at internally. I am not sure 
   - name: 'NODE_ENV'
     value: '$(buildType)'
 
@@ -48,8 +49,6 @@ stages:
   jobs:
   - job: BuildDocs
     steps:
-      - script: set
-        displayName: show all env vars
       - checkout: self
       - task: NodeTool@0
         inputs:
@@ -78,7 +77,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: '-$(buildType)'
+          buildType: $(buildType)
           platform: WebComponents
           language: en
           isVerbose: ${{ parameters.isVerbose }}
@@ -86,7 +85,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: '-$(buildType)'
+          buildType: $(buildType)
           platform: Blazor
           language: en
           isVerbose: ${{ parameters.isVerbose }}
@@ -94,35 +93,45 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: '-$(buildType)'
+          buildType: $(buildType)
           platform: React
           language: en
           isVerbose: ${{ parameters.isVerbose }}
           workingDir: '$(selfSourcesDir)'
 
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: Angular
-          platform: Angular
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+      - task: Npm@1
+        displayName: 'Build Angular $(buildType) $(language)'
+        inputs:
+          command: custom
+          workingDir: ${{ parameters.workingDir }}
+          verbose: ${{ parameters.isVerbose }}
+          customCommand: 'run buildAngular -- --plat=Angular --lang=$(language)'
+      
+      - task: ArchiveFiles@2
+        displayName: 'Package Angular $(language) - zip'
+        inputs:
+          verbose: ${{ parameters.isVerbose }}
+          rootFolderOrFile: ${{ parameters.workingDir }}/dist/Angular/$(language)/
+          includeRootFolder: false
+          archiveType: 'zip'
+          archiveFile: $(Build.ArtifactStagingDirectory)/Angular_$(language)_$(buildType) }}.zip
+          replaceExistingArchive: true
 
       - checkout: IgniteUIDocFX
 
       - task: CopyFiles@2
-        displayName: 'Copy the build files to the Git repo'
+        displayName: 'Copy Angular dist files to the topics Git repo'
         inputs:
-          SourceFolder: '$(selfSourcesDir)\dist\Angular\en'
-          TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\en'
+          SourceFolder: '$(selfSourcesDir)\dist\Angular\$(language)'
+          TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
           OverWrite: true
   
       - script: |
           git add -A
           git commit -m "Adding changes from build $(Build.BuildNumber)"
-          git push -u origin ESShared/XPlaform_en_$(Build.BuildNumber)
+          git push -u origin ESShared/XPlaform_$(language)_$(Build.BuildNumber)
         displayName: 'Commit the changes and make a PR'
-        workingDirectory: $(System.DefaultWorkingDirectory)\igniteui-docfx
+        workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
       
       - task: CreatePullRequest@1
         displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranchName)'
@@ -130,7 +139,7 @@ stages:
           repoType: 'GitHub'
           githubEndpoint: 'ESShared'
           githubRepository: 'IgniteUI/igniteui-docfx'
-          sourceBranch: 'ESShared/XPlaform_en_$(Build.BuildNumber)'
+          sourceBranch: 'ESShared/XPlaform_$(language)_$(Build.BuildNumber)'
           targetBranch: '$(Build.SourceBranchName)'
           title: 'Changes from $(Build.DefinitionName)'
 
