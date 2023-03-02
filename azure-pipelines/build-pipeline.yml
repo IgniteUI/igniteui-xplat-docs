@@ -155,3 +155,8 @@ stages:
           targetBranch: '$(Build.SourceBranch)'
           title: 'Changes from $(Build.DefinitionName)'
 
+      - task: PublishPipelineArtifact@1
+        displayName: 'Publish pipeline artifacts'
+        inputs:
+          targetPath: '$(Build.ArtifactStagingDirectory)'
+          artifact: 'XPlatDocFX'
