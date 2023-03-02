@@ -40,7 +40,7 @@ resources:
       endpoint: ESShared
       type: github
       name: IgniteUI/igniteui-docfx
-      ref: '$(Build.SourceBranchName)'
+      ref: '$(Build.SourceBranch)'
 
 stages:
 - stage: Build
@@ -135,13 +135,13 @@ stages:
         workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
       
       - task: CreatePullRequest@1
-        displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranchName)'
+        displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
         inputs:
           repoType: 'GitHub'
           githubEndpoint: 'ESShared'
           githubRepository: 'IgniteUI/igniteui-docfx'
           sourceBranch: 'ESShared/XPlaform_$(language)_$(Build.BuildNumber)'
-          targetBranch: '$(Build.SourceBranchName)'
+          targetBranch: '$(Build.SourceBranch)'
           title: 'Changes from $(Build.DefinitionName)'
 
       - task: PublishPipelineArtifact@1
