@@ -33,6 +33,8 @@ variables:
   # This is the variable that the gulp script looks at internally. I am not sure 
   - name: 'NODE_ENV'
     value: '$(buildType)'
+  - name: 'language'
+    value: 'en'
 
 resources:
   repositories:
