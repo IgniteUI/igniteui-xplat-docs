@@ -132,6 +132,8 @@ _language: ja
 
 <!-- end: Angular -->
 
+<!-- Angular -->
+
 ## カスタム キーボード ナビゲーション
 
 特定のキーまたはキーの組み合わせのデフォルトの動作をオーバーライドすることができるは、**キーボード ナビゲーション**機能の利点の 1 つです。たとえば、<kbd>Enter</kbd> キーまたは <kbd>Tab</kbd> キーを押して次のセルまたは下のセルへ移動します。</kbd> </kbd> この以外のナビゲーションシナリオでも、**Keyboard Navigation** API で簡単に実現できます。
@@ -262,6 +264,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
     grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
         (obj) => { obj.target.nativeElement.focus(); });
 ```
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
