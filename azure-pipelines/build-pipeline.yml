@@ -122,6 +122,14 @@ stages:
           replaceExistingArchive: true
 
       - checkout: IgniteUIDocFX
+        persistCredentials: true
+        lfs: true
+
+      - script: |
+          git fetch origin
+          git checkout -b ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+        displayName: 'Checkout a new branch in igniteui-docfx'
+        workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
 
       - task: CopyFiles@2
         displayName: 'Copy Angular dist files to the topics Git repo'
@@ -129,7 +137,7 @@ stages:
           SourceFolder: '$(selfSourcesDir)\dist\Angular\$(language)'
           TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
           OverWrite: true
-  
+
       - script: |
           git add -A
           git commit -m "Adding changes from build $(Build.BuildNumber)"
@@ -147,8 +155,3 @@ stages:
           targetBranch: '$(Build.SourceBranch)'
           title: 'Changes from $(Build.DefinitionName)'
 
-      - task: PublishPipelineArtifact@1
-        displayName: 'Publish pipeline artifacts'
-        inputs:
-          targetPath: '$(Build.ArtifactStagingDirectory)'
-          artifact: 'XPlatDocFX'
