@@ -42,8 +42,8 @@ resources:
       endpoint: ESShared
       type: github
       name: IgniteUI/igniteui-docfx
-      # ref: '$(Build.SourceBranch)'
-      ref: ESShared/XPlaform_$(language)_$(Build.BuildNumber)
+      ref: '$(Build.SourceBranch)'
+      # ref: ESShared/XPlaform_$(language)_$(Build.BuildNumber)
 
 stages:
 - stage: Build
