@@ -138,7 +138,7 @@ stages:
           TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
           CleanTargetFolder: true
 
-      - script: |
+      - powershell: |
           git add -A
           git commit --dry-run
           if ($? -eq $True) {
@@ -157,7 +157,7 @@ stages:
 
       - task: CreatePullRequest@1
         displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
-        condition: eq(variables['isAngularChanged'], true)
+        condition: eq(variables['isAngularChanged'], 'true')
         inputs:
           repoType: 'GitHub'
           githubEndpoint: 'ESShared'
