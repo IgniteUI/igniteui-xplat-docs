@@ -176,6 +176,8 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
 ```
 <!-- end: WebComponents -->
 
+
+
 ```razor
     <{ComponentSelector} Id="grid"
             Width="100%"
