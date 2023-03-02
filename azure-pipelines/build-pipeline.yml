@@ -30,6 +30,8 @@ variables:
   # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
   - name: selfSourcesDir
     value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
+  - name: 'NODE_ENV'
+    value: '$(buildType)'
 
 resources:
   repositories:
@@ -45,8 +47,9 @@ stages:
     demands: npm
   jobs:
   - job: BuildDocs
-    
     steps:
+      - script: set
+        displayName: show all env vars
       - checkout: self
       - task: NodeTool@0
         inputs:
@@ -99,7 +102,7 @@ stages:
 
       - template: templates/build-steps-template.yml
         parameters:
-          buildType: $(buildType)
+          buildType: Angular
           platform: Angular
           language: en
           isVerbose: ${{ parameters.isVerbose }}
