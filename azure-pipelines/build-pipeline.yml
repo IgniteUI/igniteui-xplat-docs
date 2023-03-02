@@ -136,7 +136,7 @@ stages:
         inputs:
           SourceFolder: '$(selfSourcesDir)\dist\Angular\$(language)'
           TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
-          CleanTargetFolder: true
+          OverWrite:  true
 
       - powershell: |
           git add -A
