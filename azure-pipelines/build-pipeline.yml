@@ -79,29 +79,29 @@ stages:
           verbose: ${{ parameters.isVerbose }}
           customCommand: ci
 
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: WebComponents
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
-
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: Blazor
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
-
-      - template: templates/build-steps-template.yml
-        parameters:
-          buildType: $(buildType)
-          platform: React
-          language: en
-          isVerbose: ${{ parameters.isVerbose }}
-          workingDir: '$(selfSourcesDir)'
+#      - template: templates/build-steps-template.yml
+#        parameters:
+#          buildType: $(buildType)
+#          platform: WebComponents
+#          language: en
+#          isVerbose: ${{ parameters.isVerbose }}
+#          workingDir: '$(selfSourcesDir)'
+#
+#      - template: templates/build-steps-template.yml
+#        parameters:
+#          buildType: $(buildType)
+#          platform: Blazor
+#          language: en
+#          isVerbose: ${{ parameters.isVerbose }}
+#          workingDir: '$(selfSourcesDir)'
+#
+#      - template: templates/build-steps-template.yml
+#        parameters:
+#          buildType: $(buildType)
+#          platform: React
+#          language: en
+#          isVerbose: ${{ parameters.isVerbose }}
+#          workingDir: '$(selfSourcesDir)'
 
       - task: Npm@1
         displayName: 'Build Angular $(buildType) $(language)'
