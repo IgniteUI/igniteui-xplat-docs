@@ -103,7 +103,7 @@ stages:
         displayName: 'Build Angular $(buildType) $(language)'
         inputs:
           command: custom
-          workingDir: ${{ parameters.workingDir }}
+          workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: 'run buildAngular -- --plat=Angular --lang=$(language)'
       
@@ -111,7 +111,7 @@ stages:
         displayName: 'Package Angular $(language) - zip'
         inputs:
           verbose: ${{ parameters.isVerbose }}
-          rootFolderOrFile: ${{ parameters.workingDir }}/dist/Angular/$(language)/
+          rootFolderOrFile: '$(selfSourcesDir)/dist/Angular/$(language)/'
           includeRootFolder: false
           archiveType: 'zip'
           archiveFile: $(Build.ArtifactStagingDirectory)/Angular_$(language)_$(buildType) }}.zip
