@@ -5,9 +5,10 @@ npm-debug.log
 .DS_Store
 dist
 dist_BK
-test
 src/**/*.js
 src/**/*.js.map
+test/**/*.js
+test/**/*.js.map
 
 doc/**/obsolete
 

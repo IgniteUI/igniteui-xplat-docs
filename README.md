@@ -5,6 +5,10 @@
 
 # Cross Platform Docs for Ignite UI Components
 
+![Blazor CI](https://github.com/IgniteUI/igniteui-xplat-docs/actions/workflows/build-blazor.yml/badge.svg?branch=vnext)
+![React CI](https://github.com/IgniteUI/igniteui-xplat-docs/actions/workflows/build-react.yml/badge.svg?branch=vnext)
+![WebComponents CI](https://github.com/IgniteUI/igniteui-xplat-docs/actions/workflows/build-wc.yml/badge.svg?branch=vnext)
+
 ## Introduction
 
 The goal here is to provide cross platform long form doc for Angular, Blazor, React, and WebComponents using DocFX.
