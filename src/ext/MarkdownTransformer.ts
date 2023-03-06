@@ -1078,7 +1078,8 @@ function transformSamples(options: any) {
         // generating <code-view />
         var str = '<code-view style="height: ' + sample.height + 'px" alt="' + sample.alt + '"\n';
         str += '  data-demos-base-url="' + sampleHostEnvironment + '"\n';
-        str += '           iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
+     // str += '           iframe-src="' + sampleHostEnvironment + '/' + sample.route + '"\n';
+        str += '           iframe-src="' + sampleHostEnvironment + '/' + sample.path + '"\n';
         str += '                                        github-src="' + sample.path + '">\n';
         str += '</code-view>\n';
 
