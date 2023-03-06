@@ -148,29 +148,35 @@ function rowPinningHandler(event) {
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
-<!-- Angular -->
+<!-- Angular, WebComponents -->
 
 ## ピン固定の位置
 
 `Pinning` 設定オプションを使用して、行のピン固定の位置を変更できます。ピン固定の位置を Top または Bottom のいずれかに設定できます。
 Bottom に設定すると、行がピン固定されていない行の後に、グリッドの一番下にレンダリングされます。ピン固定されていない行は垂直にスクロールできますが、ピン固定された行は下側に固定されます。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
-```html
-<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
-    </igc-pinning-config rows="Bottom">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
-
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { rows: RowPinningPosition.Bottom };
+```
+<!-- end: WebComponents -->
+
+
 
 ```razor
     <{ComponentSelector} Id="grid"
@@ -295,7 +301,7 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 
 
-<!-- end: Angular -->
+<!-- end: Angular, WebComponents -->
 
 <!-- ComponentStart: Grid -->
 
