@@ -129,6 +129,7 @@ stages:
           OverWrite:  true
 
       - powershell: |
+          git status
           git add -A
 
           git commit --dry-run
