@@ -2,6 +2,7 @@ parameters:
   - name: buildType
   - name: platform
   - name: language
+  - name: primaryRepoWorkDir
   - name: isVerbose
     default: false
 
@@ -10,40 +11,54 @@ steps:
     displayName: 'Build ${{ parameters.platform }} ${{ parameters.buildType }} ${{ parameters.language }}'
     inputs:
       command: custom
-      workingDir: '$(Build.SourcesDirectory)'
+      workingDir: '${{ parameters.primaryRepoWorkDir }}'
       verbose: ${{ parameters.isVerbose }}
       customCommand: 'run build${{ parameters.platform }} -- --plat=${{ parameters.platform }} --lang=${{ parameters.language }}'
 
-  - script: |
-      git clone https://$(githubUser):$(githubToken)@github.com/IgniteUI/igniteui-docfx.git
-    displayName: 'Clone igniteui-docfx'
-    workingDirectory: $(Build.SourcesDirectory)
+  - checkout: IgniteUIDocFX
+    persistCredentials: true
+    lfs: true
 
   - script: |
       git fetch origin
-      git checkout -b ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber) origin/$(Build.SourceBranchName)
-    displayName: 'Checkout a new branch to push changes in'
+      git checkout -b ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+    displayName: 'Checkout a new branch in igniteui-docfx'
     workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
 
   - task: CopyFiles@2
-    displayName: 'Copy the build files to the Git repo'
+    displayName: 'Copy ${{ parameters.platform }} dist files to the topics Git repo'
     inputs:
-      SourceFolder: '$(Build.SourcesDirectory)\dist\Angular\${{ parameters.language }}'
+      SourceFolder: '${{ parameters.primaryRepoWorkDir }}\dist\${{ parameters.platform }}\${{ parameters.language }}'
       TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\${{ parameters.language }}'
-      OverWrite: true
+      OverWrite:  true
 
-  - script: |
+  - powershell: |
       git add -A
-      git commit -m "Adding changes from build $(Build.BuildNumber)"
-      git push -u origin ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
-    displayName: 'Commit the changes and make a PR'
-    workingDirectory: $(System.DefaultWorkingDirectory)\igniteui-docfx
-  
+      git commit --dry-run
+
+      if ($? -eq $True) {
+        git commit -m "Adding changes from build $(Build.BuildNumber)"
+
+        git push -u origin ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)
+        Write-Host "##vso[task.setvariable variable=isDestinationRepoChanged;]true"
+      }
+      else {
+        Write-Host "##vso[task.setvariable variable=isDestinationRepoChanged;]false"
+        return 0
+      }
+    displayName: 'If there are changes, commit & make PR'
+    workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
+    
+  - script: set
+    displayName: show all env vars
+
   - task: CreatePullRequest@1
+    displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
+    condition: eq(variables['isDestinationRepoChanged'], true)
     inputs:
       repoType: 'GitHub'
       githubEndpoint: 'ESShared'
       githubRepository: 'IgniteUI/igniteui-docfx'
       sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
-      targetBranch: '$(Build.SourceBranchName)'
+      targetBranch: '$(Build.SourceBranch)'
       title: 'Changes from $(Build.DefinitionName)'

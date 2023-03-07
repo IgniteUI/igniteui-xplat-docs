@@ -103,64 +103,17 @@ stages:
 #          isVerbose: ${{ parameters.isVerbose }}
 #          workingDir: '$(selfSourcesDir)'
 
-      - task: Npm@1
-        displayName: 'Build Angular $(buildType) $(language)'
-        inputs:
-          command: custom
-          workingDir: '$(selfSourcesDir)'
-          verbose: ${{ parameters.isVerbose }}
-          customCommand: 'run buildAngular -- --plat=Angular --lang=$(language)'
-
-      - checkout: IgniteUIDocFX
-        persistCredentials: true
-        lfs: true
-
-      - script: |
-          git fetch origin
-          git checkout -b ESShared/XPlaform_$(language)_$(Build.BuildNumber)
-        displayName: 'Checkout a new branch in igniteui-docfx'
-        workingDirectory: $(Build.SourcesDirectory)\igniteui-docfx
-
-      - task: CopyFiles@2
-        displayName: 'Copy Angular dist files to the topics Git repo'
-        inputs:
-          SourceFolder: '$(selfSourcesDir)\dist\Angular\$(language)'
-          TargetFolder: '$(Build.SourcesDirectory)\igniteui-docfx\$(language)'
-          OverWrite:  true
-
-      - powershell: |
-          git add -A
-          git commit --dry-run
-
-          if ($? -eq $True) {
-            git commit -m "Adding changes from build $(Build.BuildNumber)"
-
-            git push -u origin ESShared/XPlaform_$(language)_$(Build.BuildNumber)
-            Write-Host "##vso[task.setvariable variable=isAngularChanged;]true"
-          }
-          else {
-            Write-Host "##vso[task.setvariable variable=isAngularChanged;]false"
-            return 0
-          }
-        displayName: 'If there are changes, commit & make PR'
-        workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
-        
-      - script: set
-        displayName: show all env vars
-
-      - task: CreatePullRequest@1
-        displayName: 'Create PR to IgniteUI/igniteui-docfx $(Build.SourceBranch)'
-        condition: eq(variables['isAngularChanged'], true)
-        inputs:
-          repoType: 'GitHub'
-          githubEndpoint: 'ESShared'
-          githubRepository: 'IgniteUI/igniteui-docfx'
-          sourceBranch: 'ESShared/XPlaform_$(language)_$(Build.BuildNumber)'
-          targetBranch: '$(Build.SourceBranch)'
-          title: 'Changes from $(Build.DefinitionName)'
-
+      # Angular doesn't produce an artifact so we are publish right now.
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
         inputs:
           targetPath: '$(Build.ArtifactStagingDirectory)'
           artifact: 'XPlatDocFX'
+
+      - template: templates/build-steps-make-pr.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          primaryRepoWorkDir: '$(selfSourcesDir)'
