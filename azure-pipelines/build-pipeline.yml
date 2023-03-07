@@ -129,9 +129,7 @@ stages:
           OverWrite:  true
 
       - powershell: |
-          git status
           git add -A
-
           git commit --dry-run
 
           if ($? -eq $True) {
@@ -142,8 +140,9 @@ stages:
           }
           else {
             Write-Host "##vso[task.setvariable variable=isAngularChanged;]false"
+            return 0
           }
-        displayName: 'Commit the changes and make a PR'
+        displayName: 'If there are changes, commit & make PR'
         workingDirectory: '$(Build.SourcesDirectory)\igniteui-docfx'
         
       - script: set
