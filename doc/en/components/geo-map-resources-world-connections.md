@@ -1,10 +1,10 @@
 ---
-title: $Platform$ Map | World Connections | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate locations of airports, flight paths and geographic gridlines. View $ProductName$ map demos!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics
+title: {Platform} Map | World Connections | Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map data utility to generate locations of airports, flight paths and geographic gridlines. View {ProductName} map demos!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ World Connections
+# {Platform} World Connections
 
 The resource topic provides implementation of data utility for generating locations of airports, flight paths, and geographic gridlines. You can use these data sources as reference point for creating your own geographic data. Note that this utility depends on [WorldUtil](geo-map-resources-world-util.md) and [WorldLocations](geo-map-resources-world-locations.md) scripts.
 
@@ -304,6 +304,6 @@ export default class WorldConnections {
     }
 ```
 
- ## API Members
+## API References
 
  - `XamGeographicMap`

@@ -1,12 +1,13 @@
 ---
-title: $Platform$ データ可視化ツール | 作業の開始 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの $Platform$ データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
-_keywords: $ProductName$, Infragistics, Getting Started, インフラジスティックス, 作業の開始
+title: 作業の開始 | {ProductName} | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントを使用してアプリを作成し、世界最速の仮想化されたリアルタイムの {Platform} データ グリッドとファイナンシャル ストリーミングおよびビジネスとファイナンシャル チャートでデータの可視化を改善します。
+_keywords: {ProductName}, Infragistics, Getting Started, インフラジスティックス, 作業の開始
 _language: ja
+mentionedTypes: ['XamBulletGraph']
 ---
-# $ProductName$ を使用した作業の開始
 
 <!-- React -->
+# {ProductName} を使用した作業の開始
 
 このトピックでは、Ignite UI for React を使用して React アプリケーションを作成するための手順を説明します。
 
@@ -30,9 +31,109 @@ yarn create react-app my-app-name --typescript
 <!-- end: React -->
 
 <!-- WebComponents -->
+# {ProductName} パッケージの概要
 
-このトピックでは、Ignite UI for Web Components を使用して Web Components アプリケーションを作成するための手順を説明します。
+{ProductName} は、UI ウィジェット、コンポーネント、デザイン ツール用の UI キット、および Web コンポーネント用のサポート サービスの完全なセットです。開発者が、最新のデスクトップ ブラウザー、モバイル エクスペリエンス、およびブラウザーの Web コンポーネント API をターゲットとするプログレッシブ Web アプリ (PWA) 向けの最新の高性能 HTML5 および JavaScript アプリを構築できるように設計されています。
 
+## チャートおよびグラフ
+{ProductName} チャートおよびグラフは、65 種類以上のシリーズと組み合わせを通じて、あらゆる種類のデータを魅力的でインタラクティブなグラフとダッシュボードに視覚化できるライブラリです。速度と美しさを追求し、すべてのモダンブラウザーで動作するように設計されており、完全なタッチ操作とインタラクティブ機能により、あらゆるデバイスでレスポンシブなビジュアルをすばやく構築できます。
+
+## ゲージ
+{ProductName} ゲージは、簡単かつ直感的な方法でデータを示すために使用されるラジアル ゲージ コンポーネントとリニア ゲージ コンポーネントを提供します。
+ラジアル ゲージには、定義済みの形状とスケールを作成するためのさまざまなカスタマイズ オプションがあります。
+リニア ゲージは、スケールおよび 1 つ以上の範囲と比較した値の単純なビューを提供します。1 つのスケール、1 セットの目盛り、および 1 セットのラベルをサポートします。
+
+{ProductName} ゲージには、ダッシュボードで使用されているメーターとゲージを単純な棒チャートに置き換えて、データの視覚化を作成できる `XamBulletGraph` コンポーネントも含まれています。
+
+## マップ
+{ProductName} マップは、アプリケーションで地理データを視覚化する機能を提供します。マーカー、線、多角形、さらにはインタラクティブなビットマップの形状で、多くの地理的位置で構成されるデータ セットを描画できます。複数のマップ レイヤーを地理データでオーバーレイし、特定の地理的位置をマークし、カスタム マーカーと色を使用して情報を表示できます。
+
+## グリッドと入力
+{ProductName} グリッドは、わずかな設定でデータをバインドおよび表示できるグリッド コンポーネントです。また、フィルタリング、ソート、グループ化、ピン固定などの機能も提供します。
+
+## IgniteUI Web コンポーネント
+{ProductName} は UI コンポーネントの完全なライブラリであり、依存関係のないアプローチでカプセル化と再利用可能なコンポーネントの概念を使用して、最新の Web アプリケーションを構築する機能を提供します。[ストーリーブックはこちら](https://igniteui.github.io/igniteui-webcomponents)をご覧ください!
+
+すべてのコンポーネントは [Indigo.Design デザイン システム](https://jp.infragistics.com/products/appbuilder/ui-toolkit)に基づいており、[App Builder](https://appbuilder.indigo.design/) によって完全にサポートされており、Sketch、Adobe XD、および Figma 用のすぐに使用できる UI キットによって支えられています。
+
+# {ProductName} を使用した作業の開始
+
+このトピックでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
+
+## Ignite UI Web Components の例
+
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
+
+# 構成
+
+## IgniteUI CLI をインストールする
+
+アプリケーションを最初から作成し、Ignite UI Web Components を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+npm install -g igniteui-cli
+</pre>
+
+使用可能なオプションをガイド付きで体験したい場合は、新しいアプリケーションの作成とセットアップに役立つ手順モードを初期化できます。ガイドを開始するには、`ig` コマンドを実行するだけです。
+
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+ig
+</pre>
+
+次に、フレームワークとして Web Components を選択し、`Base` プロジェクト テンプレートを選択し、特定のコンポーネント / ビューを追加するか、`Complete & Run` を選択します。
+さらに、Ignite UI CLI の詳細については[こちら](general-cli-overview.md)を参照してください。
+
+## ポリフィルをインストールする
+
+次のコマンドを実行して、Web コンポーネントのポリフィルをインストールします。
+
+```bash
+npm install @webcomponents/custom-elements
+```
+
+次に、Web コンポーネントのポリフィルを index.js にインポートします。
+
+```ts
+import '@webcomponents/custom-elements/custom-elements.min';
+import '@webcomponents/custom-elements/src/native-shim.js';
+```
+
+## Ignite UI for Web Components のインストール
+アプリケーションで Ignite UI Web Components を使用するには、`igniteui-webcomponents` パッケージをインストールする必要があります。
+
+```
+npm install igniteui-webcomponents
+```
+
+次に、`index.ts` ファイルで使用するコンポーネントをインポートする必要があります。次のように `defineComponents` 関数を使用して 1 つ以上のコンポーネントをインポートできます:
+
+```ts
+import { defineComponents, IgcAvatarComponent, IgcBadgeComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcAvatarComponent, IgcBadgeComponent);
+```
+
+`defineAllComponents` 関数を使用して、すべてのコンポーネントをインポートすることもできます。
+
+```ts
+import { defineAllComponents } from 'igniteui-webcomponents';
+
+defineAllComponents();
+```
+
+> [!Note]
+> すべてのコンポーネントをインポートすると、アプリケーションのバンドル サイズが大きくなります。そのため、実際に使用しているコンポーネントのみをインポートすることをお勧めします。
+
+コンポーネントをインポートしたら、html で使用できます。
+
+```html
+<igc-avatar initials="AZ"></igc-avatar>
+<igc-badge></igc-badge>
+```
+
+# Charts および Map Web コンポーネント パッケージをインストールする
 ## 手順 1 - Web コンポーネント プロジェクトの作成
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
@@ -84,7 +185,7 @@ code .
 
 ```
   "scripts": {
-    "build": "webpack src/index.js -o dist/index.bundle.js"
+    "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
 ```
 
@@ -115,7 +216,7 @@ import '@webcomponents/custom-elements/custom-elements.min';
 import '@webcomponents/custom-elements/src/native-shim.js';
 ```
 
-## 手順 3 - Ignite UI for Web Components のインストール
+## 手順 3 - Ignite UI for Web Components と lit-html をインストール
 
 1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Map Web コンポーネントをインストールします。
 
@@ -123,9 +224,10 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
+npm install lit-html
 </pre>
 
-2 - Geographic Map モジュールと**ModuleManager** を **index.ts** ファイルにインポートします。
+2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
 
 ```ts
 import { IgcGeographicMapModule } from 'igniteui-webcomponents-maps';
@@ -187,10 +289,11 @@ npm run build
 <!-- end: WebComponents -->
 
 <!-- Angular, React -->
+# {ProductName} を使用した作業の開始
 
 ## 既存アプリの更新
 
-既存の $Platform$ CLI プロジェクト (以前のもの) で $ProductName$ を使用する場合は、以下のコマンドを実行します。
+既存の {Platform} CLI プロジェクト (以前のもの) で {ProductName} を使用する場合は、以下のコマンドを実行します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install --save {PackageCharts} {PackageCore}
@@ -212,15 +315,18 @@ yarn add {PackageMaps} {PackageCore}
 yarn add {PackageSpreadsheet} {PackageCore}
 </pre>
 
-これにより、$ProductName$ のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
+これにより、{ProductName} のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
 
 ## モジュールのインポート
 
 はじめに、使いたいコンポーネントの必要なモジュールをインポートします。[**GeographicMap**](geo-map.md) に対してこれを行います。
 
+
 ```razor
-IgbGeographicMapModule.Register(IgniteUIBlazor);
-IgbDataChartInteractivityModule.Register(IgniteUIBlazor);
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGeographicMapModule),
+    typeof(IgbDataChartInteractivityModule)
+);
 ```
 
 ```ts
@@ -247,7 +353,7 @@ ModuleManager.register(
 
 ## コンポーネントの使用
 
-マークアップに $ProductName$ マップ コンポーネントを使用する準備が整いました。以下のように定義します。
+マークアップに {ProductName} マップ コンポーネントを使用する準備が整いました。以下のように定義します。
 
 ```tsx
 // App.txs
@@ -281,7 +387,7 @@ render() {
 npm run-script start
 </pre>
 
-コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで $ProductName$ コンポーネントを使用できるようになります。
+コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。
 
 以下の画像は、上記を実行した結果です。
 
@@ -289,6 +395,7 @@ npm run-script start
 <!-- end: Angular, React -->
 
 <!-- Blazor -->
+# {ProductName} を使用した作業の開始
 
 このトピックでは、Visual Studio および Ignite UI for Blazor を使用して Blazor Server アプリケーションを作成するための手順を説明します。
 
@@ -343,7 +450,6 @@ var app = builder.Build();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -370,7 +476,6 @@ public void ConfigureServices(IServiceCollection services)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

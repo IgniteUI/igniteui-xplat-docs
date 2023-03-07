@@ -1,37 +1,31 @@
 ---
-title: $Platform$ コンボ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ コンボ コンポーネントは、データを表示するのに最適なチャートを選択するのに役立ちます。Ignite UI for $Platform$ でグラフと視覚化を改善します!
-_keywords: $Platform$ combo, drop down, $ProductName$, Infragistics, $Platform$ コンボ, ドロップダウン, インフラジスティックス
+title: {Platform} コンボ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} コンボ コンポーネントは、データを表示するのに最適なチャートを選択するのに役立ちます。{ProductName} でグラフと視覚化を改善します!
+_keywords: {Platform} combo, drop down, {ProductName}, Infragistics, {Platform} コンボ, ドロップダウン, インフラジスティックス
 mentionedTypes: []
 _language: ja
 ---
-# $Platform$ 複数列コンボ ボックスの概要
+# {Platform} 複数列コンボ ボックスの概要
 
 複数列コンボ ボックスは、データ オブジェクトのプロパティ列を自動的に生成します。このコンポーネントは、ドロップダウンに埋め込まれたデータ グリッドのように大量のデータを可視化するコンボ ボックスであるという点で独特です。
 
-## $Platform$ 複数列コンボ ボックスの例
+## {Platform} 複数列コンボ ボックスの例
 
 このサンプルは、ポップアップ ウィンドウの複数の列にデータを表示する `MultiColumnComboBox` を作成する方法を示しています。
 
 <!-- Blazor -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="$Platform$ 複数列コンボ ボックスの例"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
+
+
 
 <!-- end:Blazor -->
 
 <!-- Angular, React, WebComponents -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="$Platform$ 複数列コンボ ボックスの例"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
+
+
 
 ## 依存関係
 Chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
@@ -49,7 +43,10 @@ npm install --save {PackageLayouts}
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
 ```razor
-IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
@@ -106,7 +103,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -154,7 +150,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -196,7 +191,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -236,7 +230,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -280,13 +273,12 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `DataSource`
  - `Fields`

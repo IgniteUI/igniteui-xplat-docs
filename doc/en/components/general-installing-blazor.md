@@ -1,7 +1,7 @@
 ---
 title: Installing Ignite UI for Blazor
-_description: How to install $Platform$ using nuget packages.
-_keywords: $Platform$, NuGet, Feed, Infragistics, Install
+_description: How to install {Platform} using nuget packages.
+_keywords: {Platform}, NuGet, Feed, Infragistics, Install
 mentionedTypes: []
 ---
 

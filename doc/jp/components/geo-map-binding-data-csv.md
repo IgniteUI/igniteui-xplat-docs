@@ -1,24 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding, $Platform$ マップ, プロット データ, データ バインディング, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | CSV データのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップを使用して、ビュー モデルの地理的位置や CSV ファイルからロードされた地理的位置を含むデータの表示方法について説明します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, plot data, {ProductName}, Infragistics, data binding, {Platform} マップ, プロット データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 _language: ja
 ---
-# $Platform$ CSV ファイルを地理的な場所にバインド
+# {Platform} CSV ファイルを地理的な場所にバインド
 
-$ProductName$ Map コンポーネントを使用すると、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、カンマ区切り値 (CSV) ファイルから地理的な場所を読み込むことができます。
+{ProductName} Map コンポーネントを使用すると、さまざまな種類のファイルからロードされた地理データをプロットできます。たとえば、カンマ区切り値 (CSV) ファイルから地理的な場所を読み込むことができます。
 
-## $Platform$ CSV ファイルを地理的な場所にバインドの例
+## {Platform} CSV ファイルを地理的な場所にバインドの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
-           alt="$Platform$ CSV ファイルを地理的な場所にバインドの例"
-           github-src="maps/geo-map/binding-data-csv">
-</code-view>
+`sample="/maps/geo-map/binding-data-csv", height="500", alt="{Platform} CSV ファイルを地理的な場所にバインドの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -245,7 +242,6 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -265,8 +261,6 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         string url = "https://static.infragistics.com/xplatform/data/UsaCitiesPopulation.csv";
         string csv = await Http.GetStringAsync(url);
 
@@ -309,7 +303,7 @@ onDataLoaded(csvData: string) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `GeographicHighDensityScatterSeries`
  - `DataSource`

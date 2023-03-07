@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Switch コンポーネント – $ProductName$
-_description: $ProductName$ Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Switch コンポーネント, $Platform$ Switch コントロール
+title: {Platform} Switch コンポーネント – {ProductName}
+_description: {ProductName} Switch コンポーネントを使用すると、開発者はアプリケーション内でバイナリのオン/オフまたは true/false のデータ入力関数を使用できます。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Switch コンポーネント, {Platform} Switch コントロール
 mentionedTypes: ['Switch']
 _language: ja
 ---
 
-# $Platform$ Switch (スイッチ)
+# {Platform} Switch (スイッチ)
 
-$ProductName$ Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
+{ProductName} Switch コンポーネントは、iOS のスイッチ コンポーネントと同様に動作するバイナリ選択の選択コンポーネントです。
 
-## $Platform$ Switch の例
+## {Platform} Switch の例
 
-<code-view style="height:100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switches-overview" alt="$Platform$ Switch の例"
-           github-src="inputs/switches/overview">
-</code-view>
+`sample="/inputs/switches/overview", height="100", alt="{Platform} Switch の例"`
+
 
 <div class="divider--half"></div>
 
@@ -25,7 +22,7 @@ $ProductName$ Switch コンポーネントは、iOS のスイッチ コンポー
 `Switch` コンポーネントにより、オン/オフ状態を切り替えることができます。デフォルトのスタイル設定はマテリアル デザイン ガイドラインの選択コントロールの仕様に基づきます。
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -42,7 +39,7 @@ defineComponents(IgcSwitchComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -59,10 +56,13 @@ IgrSwitchModule.register();
 
 <!-- Blazor -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
+
 
 ```razor
-IgbSwitchModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Switch` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -139,12 +139,9 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <IgbSwitch AriaLabelledBy="switch-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-label"
-           alt="$Platform$ Avatar の例"
-           github-src="inputs/switches/label">
-</code-view>
+`sample="/inputs/switches/label", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### チェック済み
 
@@ -162,12 +159,9 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <IgbSwitch Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-checking"
-           alt="$Platform$ Avatar の例"
-           github-src="inputs/switches/checking">
-</code-view>
+`sample="/inputs/switches/checking", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### 必須
 
@@ -213,12 +207,9 @@ IgbSwitchModule.Register(IgniteUIBlazor);
 <IgbSwitch Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switches-disabled"
-           alt="$Platform$ Avatar の例"
-           github-src="inputs/switches/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="100", alt="{Platform} Avatar の例"`
+
+
 
 ### フォーム
 
@@ -253,39 +244,16 @@ igc-switch::part(thumb) {
 }
 ```
 
-<!-- WebComponents -->
-
-## API リファレンス
-
-* `Switch`
-
-<!-- end: WebComponents -->
-
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Form`
  - `LabelPosition`
  - `Switch`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

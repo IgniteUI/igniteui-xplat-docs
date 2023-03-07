@@ -1,30 +1,27 @@
 ---
 title: Radio と Radio Group
-_description: $ProductName$ Radio Button と Radio Group コントロールを使用すると、開発者はユーザーが選択できるオプションのリストをシームレスに表示して、テンプレート駆動型のリアクティブ フォームでより優れた UI を実現できます。
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Radio Button components, $Platform$ Radio Button controls, $Platform$ Radio Group component, $Platform$ Radio Group control, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Radio Button コンポーネント, $Platform$ Radio Button コントロール
+_description: {ProductName} Radio Button と Radio Group コントロールを使用すると、開発者はユーザーが選択できるオプションのリストをシームレスに表示して、テンプレート駆動型のリアクティブ フォームでより優れた UI を実現できます。
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Radio Button components, {Platform} Radio Button controls, {Platform} Radio Group component, {Platform} Radio Group control, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Radio Button コンポーネント, {Platform} Radio Button コントロール
 mentionedTypes: ['Radio', 'RadioGroup', 'Form']
 _language: ja
 ---
 
-# $Platform$ Radio & Radio Group (ラジオとラジオ グループ)
+# {Platform} Radio & Radio Group (ラジオとラジオ グループ)
 
-$ProductName$ Radio コンポーネントを使用すると、ユーザーは、並べて表示される利用可能なオプションのセットから 1 つのオプションを選択できます。
+{ProductName} Radio コンポーネントを使用すると、ユーザーは、並べて表示される利用可能なオプションのセットから 1 つのオプションを選択できます。
 
 
-## $ProductName$ Radio の例
+## {ProductName} Radio の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="$Platform$ Radio & Radio Group の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group の例"`
+
 
 <div class="divider--half"></div>
 
 ### 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcRadioComponent, IgcRadioGroupComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -61,9 +58,14 @@ IgrRadioGroupModule.register();
 
 `Radio` と `RadioGroup` を使用する前に、次のように登録する必要があります:
 
+
 ```razor
-IgbRadioModule.Register(IgniteUIBlazor);
-IgbRadioGroupModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbRadioModule),
+  typeof(IgbRadioGroupModule)
+);
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Radio` および `RadioGroup` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -156,12 +158,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 <IgbRadio AriaLabelledBy="radio-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
-           alt="$Platform$ Radio の例"
-           github-src="inputs/radio/label">
-</code-view>
+`sample="/inputs/radio/label", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### チェック済み
 
@@ -194,19 +193,16 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
-           alt="$Platform$ Radio の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### 無効
 
 `invalid` 属性を使用して、ラジオを無効としてマークできます。
 
 ```tsx
-<IgrRadio invalid="true"></IgrRadio> 
+<IgrRadio invalid="true"></IgrRadio>
 ```
 
 ```html
@@ -217,12 +213,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 <IgbRadio Invalid="true" />
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
-           alt="$Platform$ Radio の例"
-           github-src="inputs/radio/invalid">
-</code-view>
+`sample="/inputs/radio/invalid", height="205", alt="{Platform} Radio の例"`
+
+
 
 ### オフ
 
@@ -255,12 +248,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
-           alt="$Platform$ Radio の例"
-           github-src="inputs/radio/disabled">
-</code-view>
+`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### グループの配置
 
@@ -293,12 +283,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
-           alt="$Platform$ Radio の例"
-           github-src="inputs/radio/alignment">
-</code-view>
+`sample="/inputs/radio/alignment", height="60", alt="{Platform} Radio の例"`
+
+
 
 ### フォーム
 
@@ -337,9 +324,9 @@ IgbRadioGroupModule.Register(IgniteUIBlazor);
 
 ```scss
 :root {
-    --igc-primary-h: 60deg;
-    --igc-primary-s: 100%;
-    --igc-primary-l: 25%;
+    --ig-primary-h: 60deg;
+    --ig-primary-s: 100%;
+    --ig-primary-l: 25%;
 }
 
 igc-radio::part(control) {
@@ -347,47 +334,21 @@ igc-radio::part(control) {
 }
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
-           alt="$Platform$ Radio スタイル設定"
-           github-src="inputs/radio/styling">
-</code-view>
+`sample="/inputs/radio/styling", height="205", alt="{Platform} Radio スタイル設定"`
 
-<!-- WebComponents -->
 
-## API リファレンス
-
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
 
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [GitHub の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
+## API リファレンス
 
  - `Form`
  - `RadioGroup`
  - `Radio`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

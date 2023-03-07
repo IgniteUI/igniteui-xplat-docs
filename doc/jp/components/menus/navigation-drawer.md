@@ -1,32 +1,29 @@
 ---
-title: $Platform$ NavDrawer | インフラジスティックス
-_description: インフラジスティックスの $Platform$ NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
-_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+title: {Platform} NavDrawer | インフラジスティックス
+_description: インフラジスティックスの {Platform} NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
+_keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['NavDrawer']
 _language: ja
 ---
 
-# $Platform$ Navigation Drawer (ナビゲーション ドロワー) の概要
+# {Platform} Navigation Drawer (ナビゲーション ドロワー) の概要
 
-$Platform$ Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
+{Platform} Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
 
 
-## $Platform$ Navigation Drawer の例
+## {Platform} Navigation Drawer の例
 
 このサンプルは、`NavDrawer` コンポーネントを作成する方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer 項目の例"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
+
+
 
 ## 使用方法
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
@@ -36,7 +33,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -55,9 +52,14 @@ IgrNavDrawerModule.register();
 
 `NavDrawer` を使用する前に、次のように登録する必要があります。
 
+
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
 
 <!-- Blazor -->
@@ -75,7 +77,6 @@ import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents'
 
 defineComponents(IgcNavDrawerComponent);
 ```
-
 
 ## Navigation Drawer 項目の追加
 
@@ -135,12 +136,9 @@ defineComponents(IgcNavDrawerComponent);
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer 項目の例"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
+
+
 
 ## Navbar の統合
 
@@ -349,12 +347,9 @@ public onMenuIconClick() {
 
 すべてがうまくいけば、コンポーネントは次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar の例"
-           github-src="menus/nav-drawer/add-positions-navbar">
-</code-view>
+`sample="/menus/nav-drawer/add-positions-navbar", height="300", alt="{Platform} Navigation Drawer Navbar の例"`
+
+
 
 ## ミニ バリアント
 
@@ -424,12 +419,12 @@ public onMenuIconClick() {
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="home" collection="material"/>
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="search" collection="material" />
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
@@ -437,12 +432,9 @@ public onMenuIconClick() {
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini の例"
-           github-src="menus/nav-drawer/add-mini">
-</code-view>
+`sample="/menus/nav-drawer/add-mini", height="300", alt="{Platform} Navigation Drawer Mini の例"`
+
+
 
 ## Navigation Drawer のスタイル設定
 
@@ -471,54 +463,9 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer スタイル設定の例"
-           github-src="menus/nav-drawer/styling">
-</code-view>
-
-<!-- WebComponents -->
+`sample="/menus/nav-drawer/styling", height="300", alt="{Platform} Navigation Drawer スタイル設定の例"`
 
 ## API リファレンス
-
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-
-使用したその他の Web Components:
-
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
-
-## その他のリソース
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
 
  - `Button`
  - `Icon`
@@ -528,3 +475,8 @@ igc-nav-drawer-header-item {
  - `Navbar`
  - `RadioGroup`
  - `Radio`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

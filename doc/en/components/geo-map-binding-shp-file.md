@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding
+title: {Platform} Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to load geo-spatial data from shape files. View {ProductName} map demos!
+_keywords: {Platform} map, shapefiles, {ProductName}, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Binding Shape Files with Geo-spatial Data
+# {Platform} Binding Shape Files with Geo-spatial Data
 
-The $ProductName$ map component, the `ShapefileConverter` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
-
-
-## $Platform$ Binding Shape Files with Geo-spatial Data Example
+The {ProductName} map component, the `ShapefileConverter` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="$Platform$ Binding Shape Files with Geo-spatial Data Example"
-           github-src="maps/geo-map/binding-shp-polylines">
-</code-view>
+## {Platform} Binding Shape Files with Geo-spatial Data Example
+
+
+`sample="/maps/geo-map/binding-shp-polylines", height="500", alt="{Platform} Binding Shape Files with Geo spatial Data Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -232,7 +229,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
@@ -247,8 +244,6 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",
@@ -258,7 +253,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 }
 ```
 
- ## API Members
+## API References
 
  - `Fields`
  - `GeographicPolylineSeries`

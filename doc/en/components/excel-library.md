@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Excel Library| Data Spreadsheet and Table | Infragistics
-_description: Use Infragistics' $Platform$ excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using $ProductName$ excel library!
-_keywords: Excel library, $ProductName$, Infragistics, workbook
-mentionedTypes: ['Workbook']
+title: {Platform} Excel Library| Data Spreadsheet and Table | Infragistics
+_description: Use Infragistics' {Platform} excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using {ProductName} excel library!
+_keywords: Excel library, {ProductName}, Infragistics, workbook
+mentionedTypes: ['Workbook', 'Worksheet', 'Cell', 'Formula']
 ---
-# $Platform$ Excel Library Overview
+# {Platform} Excel Library Overview
 
-The Infragistics $Platform$ Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like `Workbook`, `Worksheet`, `Cell`, `Formula` and many more. The Infragistics $Platform$ Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
+The Infragistics {Platform} Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like `Workbook`, `Worksheet`, `Cell`, `Formula` and many more. The Infragistics {Platform} Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
-## $Platform$ Excel Library Example
+## {Platform} Excel Library Example
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="$Platform$ Excel Library Example"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel Library Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,9 +26,9 @@ npm install --save {PackageCore}
 npm install --save {PackageExcel}
 </pre>
 
-## Required Modules
+## Component Modules
 
-The $Platform$ excel library requires the following modules:
+The {Platform} excel library requires the following modules:
 
 ```ts
 // app.module.ts
@@ -79,7 +76,7 @@ The Excel Library contains 5 modules that you can use to limit bundle size of yo
 
 ## Requirements
 
-In order to use the $Platform$ excel library, you need to add the following using statement:
+In order to use the {Platform} excel library, you need to add the following using statement:
 
 ```razor
 @using Infragistics.Documents.Excel
@@ -132,7 +129,7 @@ The following is a list of the supported versions of Excel.**
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > The Excel Library does not support the Excel Binary Workbook (.xlsb) format at this time.
 
 ## Load and Save Workbooks
@@ -176,7 +173,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >
@@ -215,8 +212,9 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 >
 <!-- -->
 
- ## API Members
+## API References
 
  - `Load`
  - `WorkbookInProcessRuntime`
+ - `Worksheet`
  - `Workbook`

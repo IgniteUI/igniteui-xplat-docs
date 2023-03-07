@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Spreadsheet | Data Validation | Infragistics
-_description: Use Infragistics' $Platform$ spreadsheet control to setup built-in data validation rules. View $ProductName$ spreadsheet demos!
-_keywords: Excel Spreadsheet, data validation, $ProductName$, Infragistics
+title: {Platform} Spreadsheet | Data Validation | Infragistics
+_description: Use Infragistics' {Platform} spreadsheet control to setup built-in data validation rules. View {ProductName} spreadsheet demos!
+_keywords: Excel Spreadsheet, data validation, {ProductName}, Infragistics
 mentionedTypes: ['Spreadsheet']
 ---
-# $Platform$ Data Validation
+# {Platform} Data Validation
 
 This topic explains how to configure and set the built-in data validation rules.
 
-## $Platform$ Data Validation Example
+## {Platform} Data Validation Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-data-validation"
-           alt="$Platform$ Data Validation Example"
-           github-src="excel/spreadsheet/data-validation">
-</code-view>
+`sample="/excel/spreadsheet/data-validation", height="500", alt="{Platform} Data Validation Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -136,6 +133,6 @@ this.spreadsheet.workbook.worksheets(0).rows(7).cells(1).value = checkOutDate.to
 this.spreadsheet.workbook.worksheets(0).rows(7).cells(0).value = "Check Out Date";
 ```
 
- ## API Members
+## API References
 
  - `Spreadsheet`

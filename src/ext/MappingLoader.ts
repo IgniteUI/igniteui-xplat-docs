@@ -33,33 +33,60 @@ export class MappingLoader {
         if (member == null) {
             return null;
         }
-        
+
         for (let platformName of member.names) {
             if (platformName.platform == platform) {
                 return platformName.mappedName;
             }
         }
-                
+
         return null;
     }
 
     getType(name: string) : APITypeInfo | undefined {
-        if (name.indexOf(".") >= 0) {
+        if (name === undefined || name === null){
+            return undefined;
+        }
+        if (!(typeof name == "string")) {
+            return undefined;
+        }
+        else if (name.indexOf(".") >= 0) {
             return this._typeMap.get(name);
         } else {
             if (this._aliasedNames.has(name)) {
+
+                if (this.namespace === null && name === "Grid") {
+                    this.namespace = "Infragistics.Controls"; // defaulting to WebGrid's namespace
+                }
+
                 if (this.namespace) {
                     return this.getType(this.namespace + "." + name);
                 } else {
-                    throw new Error("type name is not unique, use namespace qualified: " + name);
+                    throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    // console.log(this._aliasedNames);
+                    // if (name === "Grid") {
+                    //     var gridAPI = this._quickTypeMap.get("Grid");
+                    //     if (gridAPI !== undefined) {
+                    //         // console.log(gridAPI);
+                    //         return gridAPI;
+                    //     }
+                    //     return gridAPI;
+                    // }
+                    // else {
+                        // console.log(this._quickTypeMap);
+                        // for (const [key, v] of this._quickTypeMap) {
+                        //     console.log(" " + v.originalNamespace + " " +  key); //
+                        // }
+                        // throw new Error("type name is not unique, use namespace qualified!. Found '" + name + "' with namespace: " + this.namespace);
+                    // }
                 }
             }
             return this._quickTypeMap.get(name);
         }
-    }   
+    }
 
     mergeNames(target: APIPlatformNameGroup, source: APIPlatformNameGroup): any {
-        
+
     }
 
     mergeMember(target: APIMemberInfo, source: APIMemberInfo): any {
@@ -84,7 +111,7 @@ export class MappingLoader {
             this._memberMap.set(target.originalNamespace + "." + target.originalName, new Map<string, APIMemberInfo>());
         }
         let map = this._memberMap.get(target.originalNamespace + "." + target.originalName)!;
-        
+
         if (source.members) {
             if (!target.members) {
                 target.members = [];
@@ -101,7 +128,7 @@ export class MappingLoader {
                 }
             }
         }
-        
+
         if (source.names) {
             if (!target.names) {
                 target.names = [];
@@ -136,7 +163,7 @@ export class MappingLoader {
         return this._mapping;
     }
 
-    private _memberMap: Map<string, Map<string, APIMemberInfo>> = new 
+    private _memberMap: Map<string, Map<string, APIMemberInfo>> = new
         Map<string, Map<string, APIMemberInfo>>();
 
     private _mapping: APIMapping = {

@@ -1,23 +1,20 @@
 ---
-title: $Platform$ ドック マネージャー | ペインの更新 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ドック マネージャー コントロールを使用して、操作に基づいて更新できるペインによってインタラクティブなコンテンツを作成します。$ProductName$ ドック マネージャー チュートリアルを是非お試しください!
-_keywords: dock manager, layout, updating panes, $ProductName$, ドック マネージャー, レイアウト, ペインの更新, インフラジスティックス
+title: {Platform} ドック マネージャー | ペインの更新 | インフラジスティックス
+_description: インフラジスティックスの {Platform} ドック マネージャー コントロールを使用して、操作に基づいて更新できるペインによってインタラクティブなコンテンツを作成します。{ProductName} ドック マネージャー チュートリアルを是非お試しください!
+_keywords: dock manager, layout, updating panes, {ProductName}, ドック マネージャー, レイアウト, ペインの更新, インフラジスティックス
 _language: ja
 mentionedTypes: ['DockManager']
 ---
-# $Platform$ ドック マネージャー ペインの更新
+# {Platform} ドック マネージャー ペインの更新
 
 Dock Manager コンポーネントは、エンドユーザーの操作に基づいて更新できるペインを使用して、アプリケーションでインタラクティブなコンテンツを作成するためのレイアウトを提供します。
 
-## $Platform$ ドック マネージャー ペインの更新の例
+## {Platform} ドック マネージャー ペインの更新の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes"
-           alt="$Platform$ ドック マネージャー ペインの更新の例"
-           github-src="layouts/dock-manager/updating-panes">
-</code-view>
+`sample="/layouts/dock-manager/updating-panes", height="600", alt="{Platform} ドック マネージャー ペインの更新の例"`
+
+
 
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz
@@ -63,6 +60,6 @@ this.dockManager.layout = {
 </igc-dockmanager>
 ``` -->
 
-## API メンバー
+## API リファレンス
 
- - [`DockManager`]({environment:infragisticsBaseUrl}/products/ignite-ui/dock-manager/docs/typescript/latest/classes/igcdockmanagercomponent.html)
+ - `DockManager`

@@ -1,26 +1,23 @@
 ---
-title: $Platform$ ツリー コンポーネント | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。$ProductName$ がデータの表示を改善するのにどのように役立つかをご覧ください。
-_keywords: $Platform$ ツリー、項目ツリー、概要、$ProductName$、インフラジスティックス
+title: {Platform} ツリー コンポーネント | インフラジスティックス
+_description: インフラジスティックスの {Platform} ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。{ProductName} がデータの表示を改善するのにどのように役立つかをご覧ください。
+_keywords: {Platform} ツリー、項目ツリー、概要、{ProductName}、インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
 ---
 
-# $Platform$ Tree (ツリー) の概要
+# {Platform} Tree (ツリー) の概要
 
-$ProductName$ ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
+{ProductName} ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
 
-## $Platform$ ツリーの例
+## {Platform} ツリーの例
 
-この基本的な $ProductName$ ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
+この基本的な {ProductName} ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="$Platform$ ツリーの例"
-           github-src="grids/tree/basic-example">
-</code-view>
+`sample="/grids/tree/basic-example", height="400", alt="{Platform} ツリーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,7 +25,7 @@ $ProductName$ ツリー要素を使用すると、ユーザーはツリービュ
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -45,7 +42,7 @@ defineComponents(IgcTreeComponent);
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -71,8 +68,12 @@ IgrTreeModule.register();
 <!-- end: Blazor -->
 
 ```razor
-IgbTreeModule.Register(IgniteUIBlazor);
-IgbTreeItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbTreeModule),
+    typeof(IgbTreeItemModule)
+);
 ```
 
 `Tree` の使用を開始する最も簡単な方法は次のとおりです:
@@ -170,7 +171,7 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
     </IgrTreeItem>
     <IgrTreeItem label='South America'>
         <IgrTreeItem label='Brazil' />
-        <IgrTreeItem label='Uruguay' />                        
+        <IgrTreeItem label='Uruguay' />
     </IgrTreeItem>
     <IgrTreeItem label='Europe'>
         <IgrTreeItem label='United Kingdom' />
@@ -180,7 +181,7 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 </IgrTree>
 ```
 
-> [!NOTE]
+> [!Note]
 > 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
 
 ### 項目のインタラクション
@@ -192,9 +193,9 @@ IgbTreeItemModule.Register(IgniteUIBlazor);
 - `select` - すべての項目を選択します。項目配列が渡された場合、指定された項目のみを選択します。`Selection` イベントを発行しません。
 - `deselect` - すべての項目の選択を解除します。項目配列が渡された場合、指定された項目のみの選択を解除します。`Selection` イベントを発行しません。
 
-## $Platform$ ツリーの選択
+## {Platform} ツリーの選択
 
-$ProductName$ ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
+{ProductName} ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
 
@@ -266,16 +267,13 @@ $ProductName$ ツリーで項目の選択を設定するには、その `selecti
 
 <!-- WebComponents -->
 
-## $Platform$ Tree ロードオンデマンド
+## {Platform} Tree ロードオンデマンド
 
-$ProductName$ Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
+{ProductName} Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="$Platform$ Tree ロードオンデマンドの例"
-           github-src="grids/tree/load-on-demand">
-</code-view>
+`sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree ロードオンデマンドの例"`
+
+
 
 ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
 
@@ -287,16 +285,16 @@ $ProductName$ Tree は、サーバーから最小限のデータのみ取得し�
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`TreeItem` の外観を変更できます:
 
-部分名 | 説明
----------|------------
-`wrapper` | ツリー項目のラッパー。
-`selected`  | 選択された状態を示します。`wrapper` に適用されます。
-`focused` | フォーカスされた状態を示します。`wrapper` に適用されます。
-`active` | アクティブ状態を示します。`wrapper` に適用されます。
-`indicator` | ツリー項目の展開インジケーター。
-`label` | ツリー項目のコンテンツ。
-`text` | ツリー項目の表示テキスト。
-`select` | 選択が有効になっている場合のツリー項目のチェックボックス。
+| 部分名 | 説明 |
+| ---------|------------ |
+| `wrapper` | ツリー項目のラッパー。 |
+| `selected`  | 選択された状態を示します。`wrapper` に適用されます。 |
+| `focused` | フォーカスされた状態を示します。`wrapper` に適用されます。 |
+| `active` | アクティブ状態を示します。`wrapper` に適用されます。 |
+| `indicator` | ツリー項目の展開インジケーター。 |
+| `label` | ツリー項目のコンテンツ。 |
+| `text` | ツリー項目の表示テキスト。 |
+| `select` | 選択が有効になっている場合のツリー項目のチェックボックス。 |
 
 これらの CSS パーツを使用して、次のように `Tree` コンポーネントの外観をカスタマイズできます:
 
@@ -315,7 +313,7 @@ igc-tree-item::part(active selected) {
 }
 ```
 
-<!-- WebComponents -->
+<div class="divider--half"></div>
 
 ## API リファレンス
 
@@ -324,33 +322,7 @@ igc-tree-item::part(active selected) {
 * `CircularProgress`
 * `Icon`
 
-<!-- end: WebComponents -->
-
-<div class="divider--half"></div>
-
 ## その他のリソース
 
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor)
-
-<!-- end: Blazor>
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-## API メンバー
-
- - `TreeItem`
- - `Tree`
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

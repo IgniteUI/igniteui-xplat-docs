@@ -1,14 +1,14 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 地理的画像 | インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | 地理的画像 | インフラジスティックス
 _description: このマップを使用すると、ビュー モデルからの地理的位置を含むデータ、またはシェープ ファイルから地理的画像マップにロードされた地理空間データを表示できます。詳細については、サンプル、依存関係、使用法、ツールバーをご覧ください。
-_keywords: $Platform$ map, Geographic Imagery, tiles, $ProductName$, Infragistics, $Platform$ マップ, 地理的画像, タイル, インフラジスティックス
+_keywords: {Platform} map, Geographic Imagery, tiles, {ProductName}, Infragistics, {Platform} マップ, 地理的画像, タイル, インフラジスティックス
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
 
-# $Platform$ 地理的画像
+# {Platform} 地理的画像
 
-$Platform$ 地理的画像は、上空から見た世界の詳細な表現です。マルチ スケール画像タイル構造の航空衛星地図または道路地図で構成できます。地理的なマップ構成要素は、エンドユーザーに豊かでインタラクティブな世界地図や地理空間データのための地理的状況を提供するために地理的画像を表示できます。
+{Platform} 地理的画像は、上空から見た世界の詳細な表現です。マルチ スケール画像タイル構造の航空衛星地図または道路地図で構成できます。地理的なマップ構成要素は、エンドユーザーに豊かでインタラクティブな世界地図や地理空間データのための地理的状況を提供するために地理的画像を表示できます。
 
 ## 地理的画像のタイプ
 マップ コンポーネントは、サポートされている 3 つのマッピング サービスまたはアプリケーションに簡単に実装できる他のマッピング サービスからの地理的画像タイルを表示できます。
@@ -17,8 +17,8 @@ $Platform$ 地理的画像は、上空から見た世界の詳細な表現です
 
 | 画像                    |説明   |
 |----------------------------| --------------|
-| Open Street Maps|1 色のテーマで道路地図スタイルだけを表示するためのオプションで、Open Street Maps サービスから地理的画像を提供します。 |
-| Bing Maps|Bing Maps サービスの地理的画像に、以下の地図スタイルを表示するための設定可能なオプションがあります。<ul><li> 衛星地図のスタイル</li><li> ラベル付きの衛星地図のスタイル</li><li> ロードマップ スタイル</li>|
+| Open Street Maps | 1 色のテーマで道路地図スタイルだけを表示するためのオプションで、Open Street Maps サービスから地理的画像を提供します。 |
+| Bing Maps | Bing Maps サービスの地理的画像に、以下の地図スタイルを表示するための設定可能なオプションがあります。<ul><li> 衛星地図のスタイル</li><li> ラベル付きの衛星地図のスタイル</li><li> ロードマップ スタイル</li>|
 
 <!-- | Map Quest |Provides custom geographic imagery from Map Quest service with configurable options to display the following map styles:<ul><li>Satellite Map Style</li><li>Road Map Style</li></ul> -->
 
@@ -27,7 +27,7 @@ $Platform$ 地理的画像は、上空から見た世界の詳細な表現です
 
 以下の表は、xamGeographicMap  コントロールによって提供される画像クラスを簡単に説明します。
 
-| 画像クラス|説明   |
+| 画像クラス | 説明   |
 |---------------|---------------|
 |`GeographicMapImagery`|サポートされている地理的画像タイルのすべてのタイプを表示するすべての画像クラスの基本コントロールを表します。このクラスは、Map Quest マッピング サービスなどの他の地理的画像ソースから地理的画像タイルのサポートを実装する目的のために拡張できます。|
 |`OpenStreetMapImagery`|Open Street Maps サービスから地理的画像タイルを表示するためのマルチスケール画像コントロールを表します。|
@@ -48,7 +48,7 @@ $Platform$ 地理的画像は、上空から見た世界の詳細な表現です
  TODO - ADD CODE SNIPPET
 ```
 
-## API メンバー
+## API リファレンス
 
  - `BackgroundContent`
  - `GeographicMapImagery`

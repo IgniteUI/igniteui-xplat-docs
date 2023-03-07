@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding CSV Data | Infragistics
-_description: Learn how to use Infragistics' $Platform$ map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View $ProductName$ map demos!
-_keywords: $Platform$ map, plot data, $ProductName$, Infragistics, data binding
+title: {Platform} Map | Data Visualization Tools | Binding CSV Data | Infragistics
+_description: Learn how to use Infragistics' {Platform} map to display data that contains geographic locations from view models or geographic locations loaded from CSV files. View {ProductName} map demos!
+_keywords: {Platform} map, plot data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['XamGeographicMap', 'Series']
 namespace: Infragistics.Controls.Maps
 ---
-# $Platform$ Binding CSV Files with Geographic Locations
+# {Platform} Binding CSV Files with Geographic Locations
 
-With the $ProductName$ map component, you can plot geographic data loaded from various file types. For example, you can load geographic locations from a comma separated values (CSV) file.
+With the {ProductName} map component, you can plot geographic data loaded from various file types. For example, you can load geographic locations from a comma separated values (CSV) file.
 
-## $Platform$ Binding CSV Files with Geographic Locations Example
+## {Platform} Binding CSV Files with Geographic Locations Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
-           alt="$Platform$ Binding CSV Files with Geographic Locations Example"
-           github-src="maps/geo-map/binding-data-csv">
-</code-view>
+`sample="/maps/geo-map/binding-data-csv", height="500", alt="{Platform} Binding CSV Files with Geographic Locations Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -244,7 +241,6 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -264,8 +260,6 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         string url = "https://static.infragistics.com/xplatform/data/UsaCitiesPopulation.csv";
         string csv = await Http.GetStringAsync(url);
 
@@ -308,7 +302,7 @@ onDataLoaded(csvData: string) {
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicHighDensityScatterSeries`
  - `DataSource`

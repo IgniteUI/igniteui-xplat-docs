@@ -1,0 +1,162 @@
+---
+title: Live Data updates in {Platform} {ComponentTitle} for {ProductName}
+_description: Check out how the {ProductName} {ComponentTitle} can handle thousands of updates per second, while staying responsive for user interactions.
+_keywords: {Platform} {ComponentKeywords} updates, {Platform} live data, infragistics
+sharedComponents: ["Grid", "TreeGrid"]
+namespace: Infragistics.Controls
+---
+
+# {Platform} {ComponentTitle} Live Data Updates
+
+The {Platform} `{ComponentName}` can handle thousands of updates per second, while staying responsive for user interactions.
+
+<!-- Angular -->
+## {Platform} Live-data Update Example
+
+The sample below demonstrates the {ComponentTitle} performance when all records are updated multiple times per second. Use the UI controls to choose the number of records loaded and the frequency of updates.
+Feed the same data into the [Line Chart](../charts/types/line-chart.md) to experience the powerful charting capabilities of Ignite UI for Angular. The `Chart` button will show Category Prices per Region data for the selected rows and the `Chart` column button will show the same for the current row.
+
+`sample="/{ComponentSample}/finjs-live-data", height="700", alt="{Platform} Live data Update Example"`
+
+
+
+<!-- end: Angular -->
+## Data binding and updates
+
+A service provides data to the component when the page loads, and when the slider controller is used to fetch a certain number of records. While in a real scenario updated data would be consumed from the service, here data is updated in code. This is done to keep the demo simple and focus on its main goal - demonstrate the grid performance.
+
+```Razor
+<IgbDataGrid data="data"><IgbDataGrid>
+```
+
+<!-- Angular -->
+```html
+<{ComponentSelector} [data]="data"></{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector}></{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+
+```typescript
+    this.localService.getData(this.volume);
+    this.volumeSlider.onValueChange.subscribe(x => this.localService.getData(this.volume);
+    this.localService.records.subscribe(x => { this.data = x; });
+```
+
+A change in the data field value or a change in the data object/data collection reference will trigger the corresponding pipes. However, this is not the case for columns, which are bound to [complex data objects](../data-grid.md#complex-data-binding). To resolve the situation, provide a new object reference for the data object containing the property. Example:
+
+```Razor
+<IgbDataGrid data="data">
+    <IgbTextColumn field="price.usd"/>
+</IgbDataGrid>
+```
+
+<!-- Angular -->
+```html
+<{ComponentSelector} #grid [data]="data">
+    <igx-column field="price.usd"></igx-column>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid">
+    <igc-column field="price.usd"></igc-column>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+```typescript
+private updateData(data: IRecord[]) {
+    const newData = []
+    for (const rowData of data) {
+        rowData.price = { usd: getUSD(), eur: getEUR() };
+        newData.push({...rowData});
+    }
+    this.grid.data = newData;
+}
+```
+
+## Templates
+Updating the view works the same way for columns with a default template and for columns with a custom template. However, it is recommended to keep custom templates relatively simple. As number of elements in the template grows, negative performance impact rises as well.
+
+<!-- Angular -->
+## Live-data feed with Dock Manager and igxGrid Components
+The purpose of this demo is to showcase a financial screen board with Real-time data stream using a [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr) hub back-end.
+As you can see the igxGrid component handles with ease the high-frequency updates from the server. The code for the ASP.NET Core application using SignalR could be found in this [public GitHub repository](https://github.com/IgniteUI/finjs-web-api).
+`sample="/{ComponentSample}/finjs-dock-manager", height="700", alt="{Platform} {ComponentTitle} Live data Update Example with a service"`
+
+
+<!-- end: Angular -->
+
+### Start the hub connection
+
+The signal-r.service handles the connectivity and updates of the exposed manageable parameters *frequency*, *volume* and *live-update state toggle* (Start/Stop).
+
+```ts
+this.hubConnection = new signalR.HubConnectionBuilder()
+        .configureLogging(signalR.LogLevel.Trace)
+        .withUrl('https://www.infragistics.com/angular-apis/webapi/streamHub')
+        .build();
+    this.hubConnection
+        .start()
+        .then(() => {
+            this.hasRemoteConnection = true;
+            this.registerSignalEvents();
+            this.broadcastParams(interval, volume, live, updateAll);
+        })
+        .catch(() => {});
+```
+
+Based on the specified frequency a total of 30 new updates will be received by the Grids from the server. A specific cellStyle classes are applied to the three columns that are handling the changes (Price, Change and Change in percent).
+
+### Update frequency and data volume
+
+By using the Action panel on the left, you can manage the frequency of the data feed and the volume of the requested data. All grids use the same data source. Feel free to use the other action elements to *stop the data feed*, change the *application theme* or add *dynamically a DockSlot container* with a igxGrid.
+
+We use the `updateParameters` method to request a new set of data with certain frequency. This method is part of the SignalR [stream hub implementation](https://github.com/IgniteUI/finjs-web-api/blob/master/WebAPI/Models/StreamHub.cs#L18).
+
+```ts
+this.hubConnection.invoke('updateparameters', frequency, volume, live, updateAll)
+    .then(() => console.log('requestLiveData', volume))
+    .catch(err => {
+        console.error(err);
+    });
+```
+
+### Dynamically create DockSlot and Grid components
+
+By using the [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) we are able to create DockSlot and Grid components on the fly.
+
+### DockManager component
+Take leverage of the [Dock Manager](../../layouts/dock-manager.md) WebComponent and build your own webview by using the docket or floating panels. In order to add a new floating panel, go ahead and open the Action pane on the right and click the 'Add floating pane' button. Drag and drop the new pane at the desired location.
+
+## API References
+* `{ComponentName}`
+* `Cell`
+* `BaseTransactionService`
+
+## Additional Resources
+
+* [Virtualization and Performance](virtualization.md)
+* [Paging](paging.md)
+* [Filtering](filtering.md)
+* [Sorting](sorting.md)
+* [Summaries](summaries.md)
+* [Column Moving](column-moving.md)
+* [Column Pinning](column-pinning.md)
+* [Column Resizing](column-resizing.md)
+* [Selection](selection.md)
+
+Our community is active and always welcoming to new ideas.
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
+
+

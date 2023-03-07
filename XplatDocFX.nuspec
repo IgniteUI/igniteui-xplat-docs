@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <id>XplatDocFX_$plat$_$lang$</id>
-    <title>Infragistics XplatDocFX_$plat$_$lang$</title>
+	<metadata>
+		<id>XplatDocFX_$plat$_$type$</id>
+		<title>Infragistics XplatDocFX_$plat$_$type$</title>
 		<version>1.0.0</version>
 		<authors>Infragistics</authors>
 		<owners>Infragistics, Inc.</owners>
@@ -12,4 +12,5 @@
 	<files>
 		<file src="dist\$plat$\$langFolder$\_site\**\*.*" target="\" />
 		<!-- <file src="web.config" target="" /> -->
-	</files></package>
+	</files>
+</package>

@@ -1,25 +1,22 @@
 ---
-title: $Platform$ Radial Gauge Chart | Data Visualization Tools | Infragistics
-_description: Use Infragistics' $Platform$ radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the $ProductName$ radial gauge configurable elements!
-_keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
+title: {Platform} Radial Gauge Chart | Data Visualization Tools | Infragistics
+_description: Use Infragistics' {Platform} radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the {ProductName} radial gauge configurable elements!
+_keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 namespace: Infragistics.Controls.Gauges
 ---
-# $Platform$ Radial Gauge Overview
+# {Platform} Radial Gauge Overview
 
-The $Platform$ radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale. The `XamRadialGauge`  also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
+The {Platform} radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale. The `XamRadialGauge`  also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
 
-## $Platform$ Radial Gauge Example
+## {Platform} Radial Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same `XamRadialGauge` can transform it to completely different radial gauge.
 
 
-<code-view style="height: 375px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$Platform$ Radial Gauge Example"
-           github-src="gauges/radial-gauge/animation">
-</code-view>
+`sample="/gauges/radial-gauge/animation", height="375", alt="{Platform} Radial Gauge Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -41,16 +38,19 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
-## Required Modules
+## Component Modules
 
 The `XamRadialGauge` requires the following modules:
 
+
 ```razor
-IgbRadialGaugeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts
@@ -263,11 +263,8 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
-           github-src="gauges/radial-gauge/backing">
-</code-view>
+`sample="/gauges/radial-gauge/backing", height="320", alt="{Platform} radial gauge backing"`
+
 
 ## Scale
 
@@ -337,11 +334,8 @@ The scale is visual element that highlights full range of values in the gauge wh
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
-           github-src="gauges/radial-gauge/scale">
-</code-view>
+`sample="/gauges/radial-gauge/scale", height="320", alt="{Platform} radial gauge scale"`
+
 
 ## Labels
 The radial gauge labels are visual elements displaying numeric values at a specified interval between values of the `MinimumValue` and `MaximumValue` properties. You can position labels by setting the `LabelExtent` property to a fraction, where 0 represents center of gauge and 1 represents outer extent of the gauge backing. Also, you can customize labels setting various styling properties such as `FontBrush` and `Font`.
@@ -397,11 +391,8 @@ The radial gauge labels are visual elements displaying numeric values at a speci
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
-           github-src="gauges/radial-gauge/labels">
-</code-view>
+`sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} radial gauge labels"`
+
 
 ## Tick Marks
 Tick marks are thin lines radiating from the center of the radial gauge. There are two types of tick marks: major and minor. Major tick marks are displayed at the `Interval` between the `MinimumValue` and `MaximumValue` properties. Use the `MinorTickCount` property to specify the number of minor tick marks displayed between each major tick mark. You can control the length of tick marks by setting a fraction (between 0 and 1) to `TickStartExtent`, `TickEndExtent`, `MinorTickStartExtent`, and `MinorTickEndExtent` properties.
@@ -476,11 +467,8 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
-           github-src="gauges/radial-gauge/tickmarks">
-</code-view>
+`sample="/gauges/radial-gauge/tickmarks", height="320", alt="{Platform} radial gauge tickmarks"`
+
 
 ## Ranges
 A range highlights a set of continuous values bound by a specified `MinimumValue` and `MaximumValue` properties. You can add multiple ranges to the radial gauge by specifying their starting and ending values. Each range has a few customization properties such as `Brush` and `Outline`. Alternatively, you can set `RangeBrushes` and `RangeOutlines` properties to a list of colors for the ranges.
@@ -565,11 +553,8 @@ A range highlights a set of continuous values bound by a specified `MinimumValue
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
-           github-src="gauges/radial-gauge/ranges">
-</code-view>
+`sample="/gauges/radial-gauge/ranges", height="320", alt="{Platform} radial gauge ranges"`
+
 
 ## Needle
 
@@ -661,11 +646,8 @@ You can enable an interactive mode of the gauge (using `IsNeedleDraggingEnabled`
 </IgbRadialGauge>
 ```
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
-           github-src="gauges/radial-gauge/needle">
-</code-view>
+`sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} radial gauge needle"`
+
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the radial gauge with all features and visuals enabled.
@@ -943,16 +925,16 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbRadialGauge>
 ```
 
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Bullet Graph](bullet-graph.md)
 - [Linear Gauge](Linear-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

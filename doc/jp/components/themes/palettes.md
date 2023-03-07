@@ -1,18 +1,18 @@
 ---
-title: $Platform$ スタイル設定およびテーマ | $Platform$ パレット | インフラジスティックス
+title: {Platform} スタイル設定およびテーマ | {Platform} パレット | インフラジスティックス
 _description:
-_keywords: $ProductName$, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
+_keywords: {ProductName}, Infragistics, Palettes, Styling, インフラジスティックス, パレット, スタイル設定
 mentionedTypes: ["Palettes"]
 _language: ja
 ---
 
-# $ProductName$ のパレット
+# {ProductName} のパレット
 
-$ProductName$ は、アプリケーションで一貫した方法でカラーを更新できる CSS 変数を公開します。
+{ProductName} は、アプリケーションで一貫した方法でカラーを更新できる CSS 変数を公開します。
 
 ## 概要
 
-$ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`success`、`warn`、`error`、および `surface`の 8 つの基本色に対して 100 を超えるカラー バリエーションを提供します。
+{ProductName} のパレットは、`primary`、`secondary`、`gray`、`info`、`success`、`warn`、`error`、および `surface`の 8 つの基本色に対して 100 を超えるカラー バリエーションを提供します。
 
 `primary`、`secondary`、および `gray` カラーは [2014 Material Design カラー パレット (英語)](https://material.io/design/color/the-color-system.html#tools-for-picking-colors) に則っています。これらのカラーが以下のバリアントを含みます:
 
@@ -44,44 +44,44 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 
 上記のカラーに加えて、各カラー バリアントに **Level AAA** [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 準拠の `contrast` カラーも含まれています。つまり、対応する `contrast` カラー バリアントをベースカラー バリアントの前景カラーとして安全に使用できます。
 
-> [!NOTE]
+> [!Note]
 > コントラスト カラーはビルド時に生成されるため、CSS 変数をオーバーライドしても、対応するコントラスト カラーは更新されません。
 
 以下は、Light Bootstrap パレットで宣言された `primary` カラーの抜粋です。
 
 ```css
 :root {
-  --igc-primary-h: 216deg;
-  --igc-primary-s: 98%;
-  --igc-primary-l: 52%;
-  --igc-primary-a: 1;
-  --igc-primary-50: hsla(
-                      var(--igc-primary-h),
-                      calc(var(--igc-primary-s) * 1.23),
-                      calc(var(--igc-primary-l) * 1.78),
-                      var(--igc-primary-a)
+  --ig-primary-h: 216deg;
+  --ig-primary-s: 98%;
+  --ig-primary-l: 52%;
+  --ig-primary-a: 1;
+  --ig-primary-50: hsla(
+                      var(--ig-primary-h),
+                      calc(var(--ig-primary-s) * 1.23),
+                      calc(var(--ig-primary-l) * 1.78),
+                      var(--ig-primary-a)
                     );
-  --igc-primary-100: hsla(
-                      var(--igc-primary-h),
-                      calc(var(--igc-primary-s) / 1.25),
-                      calc(var(--igc-primary-l) * 1.66),
-                      var(--igc-primary-a)
+  --ig-primary-100: hsla(
+                      var(--ig-primary-h),
+                      calc(var(--ig-primary-s) * 0.8),
+                      calc(var(--ig-primary-l) * 1.66),
+                      var(--ig-primary-a)
                     );
-  --igc-primary-200: hsla(
-                      var(--igc-primary-h),
-                      calc(var(--igc-primary-s) * .64),
-                      calc(var(--igc-primary-l) * 1.43),
-                      var(--igc-primary-a)
+  --ig-primary-200: hsla(
+                      var(--ig-primary-h),
+                      calc(var(--ig-primary-s) * .64),
+                      calc(var(--ig-primary-l) * 1.43),
+                      var(--ig-primary-a)
                     );
   // ...
-  --igc-primary-50-contrast: black;
-  --igc-primary-100-contrast: black;
-  --igc-primary-200-contrast: black;
+  --ig-primary-50-contrast: black;
+  --ig-primary-100-contrast: black;
+  --ig-primary-200-contrast: black;
   // ...
 }
 ```
 
-すべてのカラー バリアントは、`--igc-primary-h`、`--igc-primary-s`、`--igc-primary-l`、および `--igc-primary-a` の 4 つのベース変数から派生しています。これらの変数はそれぞれ、1つの色の  [HSLA](https://drafts.csswg.org/css-color/#the-hsl-notation) の各成分を保持します。HSLA は、`hue` (色相)、`saturation` (彩度)、`lightness` (明度)、および `alpha` (アルファ) を表します。これは、色を表すために使用される色空間の 1 つです。`primary`、`secondary`、その他のカラーのすべてのバリアントを実行時に変更できるため、この方法を使用することにしました。
+すべてのカラー バリアントは、`--ig-primary-h`、`--ig-primary-s`、`--ig-primary-l`、および `--ig-primary-a` の 4 つのベース変数から派生しています。これらの変数はそれぞれ、1つの色の  [HSLA](https://drafts.csswg.org/css-color/#the-hsl-notation) の各成分を保持します。HSLA は、`hue` (色相)、`saturation` (彩度)、`lightness` (明度)、および `alpha` (アルファ) を表します。これは、色を表すために使用される色空間の 1 つです。`primary`、`secondary`、その他のカラーのすべてのバリアントを実行時に変更できるため、この方法を使用することにしました。
 
 ## パレットの定義
 
@@ -91,10 +91,10 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 /* The HSLA representation of orange (#ffa500) */
 /* hsla(38.8, 100%, 50%, 1); */
 :root {
-  --igc-primary-h: 38.8deg;
-  --igc-primary-s: 100%;
-  --igc-primary-l: 50%;
-  --igc-primary-a: 1;
+  --ig-primary-h: 38.8deg;
+  --ig-primary-s: 100%;
+  --ig-primary-l: 50%;
+  --ig-primary-a: 1;
 }
 ```
 
@@ -105,7 +105,7 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 ```css
 /* The HSLA representation of darkorange (#ff6e00) */
 :root {
-  --igc-primary-600: 25.9deg, 100%, 50%, 1;
+  --ig-primary-600: 25.9deg, 100%, 50%;
 }
 ```
 
@@ -114,10 +114,10 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 ```css
 :root {
   /* The HSLA representation of orange (#ffa500) */
-  --igc-primary-500: 38.8deg, 100%, 50%, 1;
+  --ig-primary-500: 38.8deg, 100%, 50%;
 
   /* The HSLA representation of blue (#0080ff) */
-  --igc-primary-600: 210deg, 100%, 50%, 1;
+  --ig-primary-600: 210deg, 100%, 50%;
 }
 ```
 
@@ -131,16 +131,16 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 
 ```css
 :root {
-  --igc-primary-50: 305deg, 35%, 93%, 1;
-  --igc-primary-100: 304deg, 37%, 82%, 1;
-  --igc-primary-200: 303deg, 38%, 70%, 1;
-  --igc-primary-300: 303deg, 38%, 58%, 1;
-  --igc-primary-400: 303deg, 38%, 50%, 1;
-  --igc-primary-500: 302deg, 51%, 41%, 1;
-  --igc-primary-600: 298deg, 51%, 39%, 1;
-  --igc-primary-700: 293deg, 55%, 36%, 1;
-  --igc-primary-800: 289deg, 56%, 33%, 1;
-  --igc-primary-900: 279deg, 60%, 28%, 1;
+  --ig-primary-50: 305deg, 35%, 93%;
+  --ig-primary-100: 304deg, 37%, 82%;
+  --ig-primary-200: 303deg, 38%, 70%;
+  --ig-primary-300: 303deg, 38%, 58%;
+  --ig-primary-400: 303deg, 38%, 50%;
+  --ig-primary-500: 302deg, 51%, 41%;
+  --ig-primary-600: 298deg, 51%, 39%;
+  --ig-primary-700: 293deg, 55%, 36%;
+  --ig-primary-800: 289deg, 56%, 33%;
+  --ig-primary-900: 279deg, 60%, 28%;
 }
 ```
 
@@ -151,18 +151,18 @@ $ProductName$ のパレットは、`primary`、`secondary`、`gray`、`info`、`
 ```css
 /* cornflowerblue hsl(218.5, 79.2%, 66.1%) */
 .blue-theme {
-  --igc-primary-h: 218.5deg;
-  --igc-primary-s: 79.2%;
-  --igc-primary-l: 66.1%;
-  --igc-primary-a: 1;
+  --ig-primary-h: 218.5deg;
+  --ig-primary-s: 79.2%;
+  --ig-primary-l: 66.1%;
+  --ig-primary-a: 1;
 }
 
 /* brick red hsl(351.7, 57%, 52.5%) */
 .red-theme {
-  --igc-primary-h: 351.7deg;
-  --igc-primary-s: 57%;
-  --igc-primary-l: 52.5%;
-  --igc-primary-a: 1;
+  --ig-primary-h: 351.7deg;
+  --ig-primary-s: 57%;
+  --ig-primary-l: 52.5%;
+  --ig-primary-a: 1;
 }
 ```
 
@@ -170,7 +170,7 @@ class 属性の値を `blue-theme` から `red-theme` に変更することで�
 
 ## ダークとライト
 
-$ProductName$ のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
+{ProductName} のパレットは、テーマを明るくするか暗くするかを示します。最も影響を受ける 2 つのカラーは、`gray` と `surface` です。すべてのテーマの `gray` カラー バリアントは、`#fff` などの非常に明るい色合いか、あるいは `#222` などの非常に暗い色合いに基づきます。ライト テーマには暗い色合いの `gray` に基づいたグレー カラーのバリアントがあり、ダーク テーマはその反対で、すべての `gray` カラーのバリアントは白い色合いです。これらの `gray` カラーは、他のカラー (通常は `surface` カラー) に対して表示されます。テーマを適切に表示するために、`surface` のカラーは常にグレースケールの `gray` の反対の明度に設定します。
 
 ライト テーマとダーク テーマの両方について、`gray` と `surface` のカラー バリエーションの完全なリストを以下に示します。
 
@@ -178,24 +178,24 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
 ```css
 :root {
   /* surface is set to a shade of white */
-  --igc-surface-500: 210deg, 17%, 98%, 1;
+  --ig-surface-500: 210deg, 17%, 98%;
 
   /* gray variants */
-  --igc-gray-h: 210deg;
-  --igc-gray-s: 11%;
-  --igc-gray-l: 71%;
-  --igc-gray-a: 1;
+  --ig-gray-h: 210deg;
+  --ig-gray-s: 11%;
+  --ig-gray-l: 71%;
+  --ig-gray-a: 1;
 
-  --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 98%;
-  --igc-gray-100: var(--igc-gray-h), var(--igc-gray-s), 96%;
-  --igc-gray-200: var(--igc-gray-h), var(--igc-gray-s), 93%;
-  --igc-gray-300: var(--igc-gray-h), var(--igc-gray-s), 88%;
-  --igc-gray-400: var(--igc-gray-h), var(--igc-gray-s), 74%;
-  --igc-gray-500: var(--igc-gray-h), var(--igc-gray-s), 62%;
-  --igc-gray-600: var(--igc-gray-h), var(--igc-gray-s), 54%;
-  --igc-gray-700: var(--igc-gray-h), var(--igc-gray-s), 38%;
-  --igc-gray-800: var(--igc-gray-h), var(--igc-gray-s), 26%;
-  --igc-gray-900: var(--igc-gray-h), var(--igc-gray-s), 13%;
+  --ig-gray-50: var(--ig-gray-h), var(--ig-gray-s), 98%;
+  --ig-gray-100: var(--ig-gray-h), var(--ig-gray-s), 96%;
+  --ig-gray-200: var(--ig-gray-h), var(--ig-gray-s), 93%;
+  --ig-gray-300: var(--ig-gray-h), var(--ig-gray-s), 88%;
+  --ig-gray-400: var(--ig-gray-h), var(--ig-gray-s), 74%;
+  --ig-gray-500: var(--ig-gray-h), var(--ig-gray-s), 62%;
+  --ig-gray-600: var(--ig-gray-h), var(--ig-gray-s), 54%;
+  --ig-gray-700: var(--ig-gray-h), var(--ig-gray-s), 38%;
+  --ig-gray-800: var(--ig-gray-h), var(--ig-gray-s), 26%;
+  --ig-gray-900: var(--ig-gray-h), var(--ig-gray-s), 13%;
 }
 ```
 
@@ -203,24 +203,23 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
 ```css
 :root {
   /* surface is set to a dark shade of gray */
-  --igc-surface-500: 210deg, 11%, 15%, 1;
+  --ig-surface-500: 210deg, 11%, 15%;
 
   /* gray variants */
-  --igc-gray-h: 210deg;
-  --igc-gray-s: 11%;
-  --igc-gray-l: 71%;
-  --igc-gray-a: 1;
+  --ig-gray-h: 210deg;
+  --ig-gray-s: 11%;
+  --ig-gray-l: 71%;
 
-  --igc-gray-50: var(--igc-gray-h), var(--igc-gray-s), 13%;
-  --igc-gray-100: var(--igc-gray-h), var(--igc-gray-s), 26%;
-  --igc-gray-200: var(--igc-gray-h), var(--igc-gray-s), 38%;
-  --igc-gray-300: var(--igc-gray-h), var(--igc-gray-s), 54%;
-  --igc-gray-400: var(--igc-gray-h), var(--igc-gray-s), 62%;
-  --igc-gray-500: var(--igc-gray-h), var(--igc-gray-s), 74%;
-  --igc-gray-600: var(--igc-gray-h), var(--igc-gray-s), 88%;
-  --igc-gray-700: var(--igc-gray-h), var(--igc-gray-s), 93%;
-  --igc-gray-800: var(--igc-gray-h), var(--igc-gray-s), 96%;
-  --igc-gray-900: var(--igc-gray-h), var(--igc-gray-s), 98%;
+  --ig-gray-50: var(--ig-gray-h), var(--ig-gray-s), 13%;
+  --ig-gray-100: var(--ig-gray-h), var(--ig-gray-s), 26%;
+  --ig-gray-200: var(--ig-gray-h), var(--ig-gray-s), 38%;
+  --ig-gray-300: var(--ig-gray-h), var(--ig-gray-s), 54%;
+  --ig-gray-400: var(--ig-gray-h), var(--ig-gray-s), 62%;
+  --ig-gray-500: var(--ig-gray-h), var(--ig-gray-s), 74%;
+  --ig-gray-600: var(--ig-gray-h), var(--ig-gray-s), 88%;
+  --ig-gray-700: var(--ig-gray-h), var(--ig-gray-s), 93%;
+  --ig-gray-800: var(--ig-gray-h), var(--ig-gray-s), 96%;
+  --ig-gray-900: var(--ig-gray-h), var(--ig-gray-s), 98%;
 }
 ```
 
@@ -232,13 +231,13 @@ $ProductName$ のパレットは、テーマを明るくするか暗くするか
 
 ```css
 :root {
-  --igc-info-500: 190deg, 90%, 50%, 1;
-  --igc-success-500: 152deg, 69%, 31%, 1;
-  --igc-warn-500: 45deg, 100%, 51%, 1;
-  --igc-error-500: 354deg, 70%, 54%, 1;
+  --ig-info-500: 190deg, 90%, 50%;
+  --ig-success-500: 152deg, 69%, 31%;
+  --ig-warn-500: 45deg, 100%, 51%;
+  --ig-error-500: 354deg, 70%, 54%;
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `Palettes`

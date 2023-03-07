@@ -1,21 +1,18 @@
 ---
-title: $Platform$ Excel Library Using Tables
+title: {Platform} Excel Library Using Tables
 _description: The Ignite UI for Excel Library component Using Tables.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine, Tables, Sorting, Filtering
 _language: kr
 mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 ---
 
-# $Platform$ Using Tables
+# {Platform} Using Tables
 
 The Infragistics Excel Engine's `WorksheetTable` functionality allows you to format your data in rows and columns The data in a worksheet table can be managed independently from the data in the other rows and columns in a `Worksheet`.
 <!--## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"  >
-</code-view>
+`sample="/excel/excel-library/working-with-tables", height="500", alt="{Platform} excel library working with tables"`
 
 -->
 

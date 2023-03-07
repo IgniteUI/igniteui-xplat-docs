@@ -1,29 +1,26 @@
 ---
-title: $Platform$ 展開パネル | 展開パネル | インフラジスティックス
+title: {Platform} 展開パネル | 展開パネル | インフラジスティックス
 _description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
-_keywords: $Platform$ Expansion Panel, Infragistics, $Platform$ 展開パネル, $ProductName$, インフラジスティックス
+_keywords: {Platform} Expansion Panel, Infragistics, {Platform} 展開パネル, {ProductName}, インフラジスティックス
 mentionedTypes: ['ExpansionPanel']
 _language: ja
 ---
 
-# $Platform$ 展開パネルの概要
-$ProductName$ 展開パネルは、縮小または展開の 2 つの状態で描画できる軽量のアコーディオン コンポーネントです。展開パネルは、マウス クリックまたはキーボード操作によって切り替えることができます。
+# {Platform} 展開パネルの概要
+{ProductName} 展開パネルは、縮小または展開の 2 つの状態で描画できる軽量のアコーディオン コンポーネントです。展開パネルは、マウス クリックまたはキーボード操作によって切り替えることができます。
 
-## $Platform$ 展開パネルの例
+## {Platform} 展開パネルの例
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="$Platform$ 展開パネルの例"
-           github-src="layouts/expansion-panel/usage">
-</code-view>
+`sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} 展開パネルの例"`
+
+
 
 <div class="divider--half"></div>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcExpansionPanelComponent);
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -122,12 +119,9 @@ IgrExpansionPanelModule.register();
 
 <!-- end: React -->
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="$Platform$ 展開パネル"
-           github-src="layouts/expansion-panel/properties-and-events">
-</code-view>
+`sample="/layouts/expansion-panel/properties-and-events", height="320", alt="{Platform} 展開パネル"`
+
+
 
 <div class="divider--half"></div>
 
@@ -140,18 +134,15 @@ IgrExpansionPanelModule.register();
 
 次のコードサンプルは、コンポーネントのボタンが右側に移動するように構成する方法を示しています。
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="$Platform$ 展開パネルのカスタマイズ"
-           github-src="layouts/expansion-panel/component-customization">
-</code-view>
+`sample="/layouts/expansion-panel/component-customization", height="460", alt="{Platform} 展開パネルのカスタマイズ"`
+
+
 
 <div class="divider--half"></div>
 
 ## キーボード ナビゲーション
 
-$ProductName$ 展開パネルのキーボード ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすくなっています。
+{ProductName} 展開パネルのキーボード ナビゲーションは、W3C アクセシビリティ標準に準拠しており、使いやすくなっています。
 
 **キーの組み合わせ**
 
@@ -162,51 +153,18 @@ $ProductName$ 展開パネルのキーボード ナビゲーションは、W3C �
 
 ## スタイル設定
 
-$ProductName$ 展開パネル コンポーネントは、いくつかの CSS パーツ (`header`、`indicator`、`title`、`subtitle` および `content`) を公開して、スタイルを完全に制御できるようにします。
+{ProductName} 展開パネル コンポーネントは、いくつかの CSS パーツ (`header`、`indicator`、`title`、`subtitle` および `content`) を公開して、スタイルを完全に制御できるようにします。
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="$Platform$ 展開パネルのスタイル設定"
-           github-src="layouts/expansion-panel/styling">
-</code-view>
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-## API リファレンス
-
-展開パネルの API の詳細については、次のリンクを参照してください:
-* `ExpansionPanel`
-
-<!-- end: WebComponents -->
+`sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} 展開パネルのスタイル設定"`
 
 <div class="divider"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム (英語)**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例 (英語)](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語) ](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `ExpansionPanel`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

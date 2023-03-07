@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
-_description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Shape Polygon Series | Infragistics
+_description: Use Infragistics {Platform} map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 
-# $Platform$ Geographic Polygon Map
+# {Platform} Geographic Polygon Map
 
-In $Platform$ map component, you can use the `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
+In {Platform} map component, you can use the `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## $Platform$ Geographic Polygon Map Example
+## {Platform} Geographic Polygon Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="$Platform$ Using Shape Polygon Series Example"
-           github-src="maps/geo-map/type-shape-polygon-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polygon-series", height="500", alt="{Platform} Using Shape Polygon Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -292,7 +289,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
@@ -304,8 +301,6 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",
@@ -315,7 +310,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicPolylineSeries`
  - `GeographicShapeSeries`

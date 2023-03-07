@@ -1,36 +1,30 @@
 ---
-title: $Platform$ Combo | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  $Platform$!
-_keywords: $Platform$ combo, drop down, $ProductName$, Infragistics
+title: {Platform} Combo | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} combo component helps you select the best chart to display your data. Improve your graphs and visualization with Ignite UI for  {Platform}!
+_keywords: {Platform} combo, drop down, {ProductName}, Infragistics
 mentionedTypes: []
 ---
-# $Platform$ Multi-Column Combo Box Overview
+# {Platform} Multi-Column Combo Box Overview
 
 The Multi-Column Combo Box automatically generates columns for properties on the data object. This component is unique in that it's a combo box that visualizes large amounts of data similar to a data grid embedded in the dropdown.
 
-## $Platform$ Multi-Column Combo Box Example
+## {Platform} Multi-Column Combo Box Example
 
 This sample demonstrates how to create `MultiColumnComboBox` that displays data in multiple columns in a popup window.
 
 <!-- Blazor -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="$Platform$ Multi-Column Combo Box Example"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
+
+
 
 <!-- end:Blazor -->
 
 <!-- Angular, React, WebComponents -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="$Platform$ Multi-Column Combo Box Example"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
+
+
 
 ## Dependencies
 When installing the charts component, the core package must also be installed.
@@ -43,12 +37,15 @@ npm install --save {PackageLayouts}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The Multi-Column Combo Box requires the following modules:
 
 ```razor
-IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts
@@ -105,7 +102,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -153,7 +149,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -195,7 +190,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -235,7 +229,6 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
@@ -279,13 +272,12 @@ constructor() {
 
     protected override void OnInitialized()
     {
-        IgbMultiColumnComboBoxModule.Register(IgniteUIBlazor);
         this.CountryNames = CountryTreeData.Create();
     }
 }
 ```
 
- ## API Members
+## API References
 
  - `DataSource`
  - `Fields`

@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Map Navigation | Infragistics
+title: {Platform} Map | Data Visualization Tools | Map Navigation | Infragistics
 _description: The Map allows you to navigate using geographic coordinates or relative window coordinates.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Navigating Map Content
+# {Platform} Navigating Map Content
 
 Navigation in the `XamGeographicMap` control is enabled by default and it allows zooming and panning of the map content. However, this behavior can be changed using the `Zoomable` property. It is important to know that the map allows only synchronized zooming - scaling the map content with preserved aspect ratio. As result, it is not possible to scale the map content vertically without scaling it also horizontally and vice versa.
 
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-navigation"
-           github-src="maps/geo-map/navigation">
-</code-view>
+`sample="/maps/geo-map/navigation", height="400", alt="{Platform} geo map navigation"`
+
 
 <div class="divider--half"></div>
 

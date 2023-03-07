@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Excel Library| Using Cells | Infragistics
-_description: Learn how to perform operations on Infragistics' $Platform$ excel library's cells such as accessing them, adding formulas and comments, merging cells and formatting cells. View $ProductName$ excel demos!
-_keywords: Excel library,  cell operations, $ProductName$, Infragistics
+title: {Platform} Excel Library| Using Cells | Infragistics
+_description: Learn how to perform operations on Infragistics' {Platform} excel library's cells such as accessing them, adding formulas and comments, merging cells and formatting cells. View {ProductName} excel demos!
+_keywords: Excel library,  cell operations, {ProductName}, Infragistics
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'WorkbookStyleCollection', 'IWorksheetCellFormat', 'WorkbookColorInfo', 'DisplayOptions']
 ---
-# $Platform$ Using Cells
+# {Platform} Using Cells
 
 The `WorksheetCell` objects in an Excel worksheet is the object that holds your actual data values for the worksheet. This topic goes over the many operations that you can perform on these cells, such as accessing them and their regions by name, adding formulas and comments to the cells, and merging and formatting them.
 
-## $Platform$ Using Cells Example
+## {Platform} Using Cells Example
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
-           alt="$Platform$ Using Cells Example"
-           github-src="excel/excel-library/working-with-cells">
-</code-view>
+`sample="/excel/excel-library/working-with-cells", height="200", alt="{Platform} Using Cells Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -66,7 +63,7 @@ var region = worksheet.GetRegion("G1:G10");
 
 In Microsoft Excel, individual cells, as well as cell regions can have names assigned to them. The name of a cell or region can be used to reference that cell or region instead of their address.
 
-The Infragistics $Platform$ Excel Library supports the referencing of cells and regions by name through the `GetCell` and `GetRegion` methods of the `Worksheet` object. You refer to the cell or region using the `NamedReference` instance that refers to that cell or region.
+The Infragistics {Platform} Excel Library supports the referencing of cells and regions by name through the `GetCell` and `GetRegion` methods of the `Worksheet` object. You refer to the cell or region using the `NamedReference` instance that refers to that cell or region.
 
 You can use the following code snippet as an example for naming a cell or region:
 
@@ -100,7 +97,7 @@ var region = worksheet.GetRegion("myRegion");
 
 ## Adding a Comment to a Cell
 
-A comment allows you to display hints or notes for a cell when the end user’s mouse hovers over a cell. The comments display as a tooltip-like callout that contains text. The Infragistics $Platform$ Excel Library allows you to add comments to a cell by setting a `WorksheetCell` object’s `Comment` property.
+A comment allows you to display hints or notes for a cell when the end user’s mouse hovers over a cell. The comments display as a tooltip-like callout that contains text. The Infragistics {Platform} Excel Library allows you to add comments to a cell by setting a `WorksheetCell` object’s `Comment` property.
 
 The following example code demonstrates how to add a comment to a cell:
 
@@ -128,7 +125,7 @@ worksheet.Rows[0].Cells[0].Comment = cellComment;
 
 ## Adding a Formula to a Cell
 
-The Infragistics $Platform$ Excel Library allows you to add Microsoft Excel formulas to a cell or group of cells in a worksheet. You can do this using the `WorksheetCell` object’s `ApplyFormula` method or by instantiating a `Formula` object and applying it to a cell. Regardless of the manner in which you apply a formula to a cell, you can access the `Formula` object using the `WorksheetCell` object’s `Formula` property. If you need the value, use the cell’s `Value` property.
+The Infragistics {Platform} Excel Library allows you to add Microsoft Excel formulas to a cell or group of cells in a worksheet. You can do this using the `WorksheetCell` object’s `ApplyFormula` method or by instantiating a `Formula` object and applying it to a cell. Regardless of the manner in which you apply a formula to a cell, you can access the `Formula` object using the `WorksheetCell` object’s `Formula` property. If you need the value, use the cell’s `Value` property.
 
 The following code shows you how to add a formula to a cell.
 
@@ -183,7 +180,7 @@ worksheet.Columns[3].CellFormat.SetFormatting(worksheet.Columns[1].CellFormat);
 
 ## Formatting a Cell
 
-The Infragistics $Platform$ Excel Library allows you to customize the look and behavior of a cell. You can customize a cell by setting properties exposed by the `CellFormat` property of the `WorksheetCell`, `WorksheetRow`, `WorksheetColumn`, or `WorksheetMergedCellsRegion` objects.
+The Infragistics {Platform} Excel Library allows you to customize the look and behavior of a cell. You can customize a cell by setting properties exposed by the `CellFormat` property of the `WorksheetCell`, `WorksheetRow`, `WorksheetColumn`, or `WorksheetMergedCellsRegion` objects.
 
 You can customize every aspect of a cell’s appearance. You can set a cell’s font, background, and borders, as well as text alignment and rotation. You can even apply a different format on a character-by-character basis for a cell’s text.
 
@@ -431,7 +428,7 @@ var worksheet = workbook.Worksheets.Add("Sheet1");
 var cellText = worksheet.Rows[0].Cells[0].GetText();
 ```
 
-## API Members
+## API References
 
  - `Add`
  - `CellFillLinearGradient`

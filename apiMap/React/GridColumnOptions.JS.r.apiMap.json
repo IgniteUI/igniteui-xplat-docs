@@ -63,7 +63,7 @@
     { "names":[{"platform":"React","mappedType":"BaseControlTheme","mappedName":"actualBaseTheme"}],"originalName":"ActualBaseTheme"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"buttonDensity"}],"originalName":"ButtonDensity"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"actualButtonDensity"}],"originalName":"ActualButtonDensity"},
-    { "names":[{"platform":"React","mappedType":"IgrColumn","mappedName":"column"}],"originalName":"Column"},
+    { "names":[{"platform":"React","mappedType":"IgrDataGridColumn","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
     { "names":[{"platform":"React","mappedType":"ControlDisplayDensity","mappedName":"actualDensity"}],"originalName":"ActualDensity"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"},

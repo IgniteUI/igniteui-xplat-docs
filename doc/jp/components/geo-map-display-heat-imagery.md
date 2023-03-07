@@ -1,33 +1,23 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用してヒートマップ画像を表示します。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, heat map imagery, $ProductName$, Infragistics, $Platform$ マップ, ヒートマップ画像, インフラジスティックス
+title: {Platform} マップ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用してヒートマップ画像を表示します。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, heat map imagery, {ProductName}, Infragistics, {Platform} マップ, ヒートマップ画像, インフラジスティックス
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 _language: ja
 ---
-# $Platform$ ヒート画像の表示
+# {Platform} ヒート画像の表示
 
-$ProductName$ マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecords` を使用して、ヒートマップ画像を表示する機能があります。
+{ProductName} マップ コントロールには、Shape ファイルをタイル シリーズにロードして地理空間データをロードすることにより、`ShapefileConverter` によって生成される `ShapeFileRecords` を使用して、ヒートマップ画像を表示する機能があります。
 
 このトピックを読み進めるための前提条件として、[シェープ ファイルを地理的データにバインディング](geo-map-binding-shp-file.md)をお読みください。
 
-## $Platform$ ヒート画像の表示の例
+## {Platform} ヒート画像の表示の例
 
-<!-- Angular, React -->
-```ts
-//WebComponents サンプルが CodeSandbox で機能しません。これが修正されたら、ビルドのフラグを削除します。
-```
+`sample="/maps/geo-map/display-heat-imagery", height="500", alt="{Platform} ヒート画像の表示の例"`
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
-           alt="$Platform$ ヒート画像の表示の例"
-           github-src="maps/geo-map/display-heat-imagery">
-</code-view>
+
 
 <div class="divider--half"></div>
-
-<!-- end: Angular, React -->
 
 `ShapefileConverter` がそのシェイプ ファイルを読み込むと、そのデータを ShapeFileRecord オブジェクトに変換します。これらのオブジェクトは、`ShapefileConverter` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして地理タイルシリーズで使用できます。
 
@@ -136,7 +126,7 @@ ModuleManager.register(
 
 ## ヒートマップの作成
 
-以下のコード スニペットは、人口ベースのヒートマップを $ProductName$ マップ コンポーネントに表示する方法を示しています。
+以下のコード スニペットは、人口ベースのヒートマップを {ProductName} マップ コンポーネントに表示する方法を示しています。
 
 <!-- Angular -->
 ```html
@@ -354,7 +344,7 @@ public onDataLoaded(csvData: string) {
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `HeatTileGenerator`
  - `HeatTileGenerator`

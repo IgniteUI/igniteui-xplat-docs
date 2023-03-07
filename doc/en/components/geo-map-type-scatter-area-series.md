@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
-_description: Use Infragistics $Platform$ map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, scatter area series, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Scatter Area Series | Data Binding | Infragistics
+_description: Use Infragistics {Platform} map's scatter area series to draw a colored area surface based on a triangulation of longitude and latitude data with a numeric value assigned to each point. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, scatter area series, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap','GeographicScatterAreaSeries','CustomPaletteColorScale', 'Series']
 ---
-# $Platform$ Geographic Area Map
+# {Platform} Geographic Area Map
 
-In $Platform$ map component, you can use the `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
+In {Platform} map component, you can use the `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
 
-## $Platform$ Geographic Area Map Example
+## {Platform} Geographic Area Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-area-series"
-           alt="$Platform$ Using Scatter Area Series Example"
-           github-src="maps/geo-map/type-scatter-area-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-area-series", height="500", alt="{Platform} Using Scatter Area Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -307,7 +304,7 @@ createAreaSeries(data: any[]) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicScatterAreaSeries LongitudeMemberPath="Lon"
@@ -325,8 +322,6 @@ createAreaSeries(data: any[]) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         var brushes = "";
         brushes += "rgba(32, 146, 252, 0.5) "; // semi-transparent blue
         brushes += "rgba(14, 194, 14, 0.5) ";  // semi-transparent green
@@ -343,7 +338,7 @@ createAreaSeries(data: any[]) {
 }
 ```
 
- ## API Members
+## API References
 
  - `ColorMemberPath`
  - `ColorScale`

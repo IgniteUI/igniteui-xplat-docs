@@ -1,7 +1,8 @@
 ---
-title: $Platform$ Data Visualization Tools | $Platform$ Data Visualization Tools | Getting Started | Infragistics
-_description: Use Infragistics' $Platform$ components to create apps and improve data visualization with the world’s fastest, virtualized, real-time $Platform$ data grid and streaming financial and business and financial charts.
-_keywords: $ProductName$, Infragistics, Getting Started
+title: Getting Started | {ProductName} | Infragistics
+_description: Use Infragistics' {Platform} components to create apps and improve data visualization with the world’s fastest, virtualized, real-time {Platform} data grid and streaming financial and business and financial charts.
+_keywords: {ProductName}, Infragistics, Getting Started
+mentionedTypes: []
 ---
 # Getting Started with Ignite UI for Blazor WebAssembly
 
@@ -58,7 +59,6 @@ await builder.Build().RunAsync();
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```
@@ -86,7 +86,6 @@ public static async Task Main(string[] args)
 
 ```razor
 <head>
-    ...
     <link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 </head>
 ```

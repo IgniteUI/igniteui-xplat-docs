@@ -1,31 +1,28 @@
 ---
-title: $Platform$ NavDrawer | Infragistics
-_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} NavDrawer | Infragistics
+_description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 mentionedTypes: ['NavDrawer']
 ---
 
-# $Platform$ Navigation Drawer Overview
+# {Platform} Navigation Drawer Overview
 
-The $ProductName$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The {ProductName} Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 
-## $Platform$ Navigation Drawer Example
+## {Platform} Navigation Drawer Example
 
 This sample demonstrates how to create `NavDrawer` component.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
+
+
 
 ## Usage
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -35,7 +32,7 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -54,9 +51,14 @@ IgrNavDrawerModule.register();
 
 Before using the `NavDrawer`, you need to register it as follows:
 
+
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
 
 <!-- Blazor -->
@@ -133,12 +135,9 @@ The simplest way to start using the `NavDrawer` is as follows:
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
+
+
 
 ## Navbar Integration
 
@@ -347,12 +346,9 @@ public onMenuIconClick() {
 
 If all goes well, your component should now look like this:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar Example"
-           github-src="menus/nav-drawer/add-positions-navbar">
-</code-view>
+`sample="/menus/nav-drawer/add-positions-navbar", height="300", alt="{Platform} Navigation Drawer Navbar Example"`
+
+
 
 ## Mini Variant
 
@@ -422,12 +418,12 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="home" collection="material"/>
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
         <IgrNavDrawerItem>
             <div slot="icon">
                 <IgrIcon iconName="search" collection="material" />
-            </div>                                
+            </div>
         </IgrNavDrawerItem>
     </div>
 </IgrNavDrawer>
@@ -435,12 +431,9 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 
 And here's the result:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini Example"
-           github-src="menus/nav-drawer/add-mini">
-</code-view>
+`sample="/menus/nav-drawer/add-mini", height="300", alt="{Platform} Navigation Drawer Mini Example"`
+
+
 
 ## Styling the Navigation Drawer
 
@@ -469,54 +462,9 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer Styling Example"
-           github-src="menus/nav-drawer/styling">
-</code-view>
-
-<!-- WebComponents -->
+`sample="/menus/nav-drawer/styling", height="300", alt="{Platform} Navigation Drawer Styling Example"`
 
 ## API References
-
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-
-Additional Web Components that were used:
-
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
-
-## Additional Resources
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
 
  - `Button`
  - `Icon`
@@ -526,3 +474,8 @@ Additional Web Components that were used:
  - `Navbar`
  - `RadioGroup`
  - `Radio`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

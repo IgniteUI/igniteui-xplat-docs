@@ -1,27 +1,24 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 _language: kr
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Button Overview
+# {Platform} Button Overview
 
 The Ignite UI for Web Components Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
 
-## $Platform$ Button Example
+## {Platform} Button Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button Example"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
+
+
 
 ## Usage
 
-To get started we need to import the `Button` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Button` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcButtonComponent } from 'igniteui-webcomponents';
@@ -60,9 +57,7 @@ Use `variant` attribute to add a simple contained button in your component templ
 <igc-button variant="contained">Contained</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined Button
 
@@ -72,9 +67,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <igc-button variant="outlined">Outlined</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat Button
 
@@ -84,9 +77,7 @@ Analogically, we can switch to `flat` variant.
 <igc-button variant="flat">Flat</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action Button
 
@@ -96,9 +87,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <igc-button variant="fab">Fab</igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## Button Sizing
 
@@ -134,12 +123,9 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 And here's the result of all that work:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button Sizing Example"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
+
+
 
 ### Download
 
@@ -155,9 +141,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </igc-button>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## Styling
 
@@ -171,25 +155,18 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button Styling Example"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
+
+
 
 ## API Reference
 
 * `Button`
-
-Additional Web Components that were used:
-
 * `RadioGroup`
 * `Radio`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

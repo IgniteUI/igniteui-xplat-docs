@@ -1,28 +1,25 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | ESRI 画像の表示 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ を使用して ESRI Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
+title: {Platform} マップ | データ可視化ツール | ESRI 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの {Platform} を使用して ESRI Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, ESRI, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ Esri Maps から地理的画像を表示
+# {Platform} Esri Maps から地理的画像を表示
 
 `ArcGISOnlineMapImagery` は、<a href="https://www.esri.com/" target="_blank">Esri</a> によって作成された無料の地理的画像マッピング サービスです。世界の地理的画像タイルの 40 スタイル以上を提供します。この地理的画像サービスは、<a href="https://services.arcgisonline.com/ArcGIS/rest/services" target="_blank">www.arcgisonline.com</a> に直接アクセスして利用できます。
 
-## $Platform$ Esri Maps から地理的画像を表示の例
+## {Platform} Esri Maps から地理的画像を表示の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-esri-imagery"
-           alt="$Platform$ Esri Maps から地理的画像を表示の例"
-           github-src="maps/geo-map/display-esri-imagery">
-</code-view>
+`sample="/maps/geo-map/display-esri-imagery", height="500", alt="{Platform} Esri Maps から地理的画像を表示の例"`
+
+
 
 <div class="divider--half"></div>
 
 ## コード スニペット
-以下のコード スニペットは、`ArcGISOnlineMapImagery` クラスを使用して `XamGeographicMap` で Esri 画像サーバーからの $Platform$ 地理的画像タイルを表示する方法を示します。
+以下のコード スニペットは、`ArcGISOnlineMapImagery` クラスを使用して `XamGeographicMap` で Esri 画像サーバーからの {Platform} 地理的画像タイルを表示する方法を示します。
 
 ```html
 <igx-geographic-map #map
@@ -68,7 +65,7 @@ geoMap.backgroundContent = tileSource;
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%"
     Zoomable="true"
@@ -76,7 +73,6 @@ geoMap.backgroundContent = tileSource;
 
 protected override void OnInitialized()
 {
-    IgbGeographicMapModule.Register(IgniteUIBlazor);
     IgbArcGISOnlineMapImagery imagery = new IgbArcGISOnlineMapImagery()
     {
         MapServerUri = "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer"
@@ -128,7 +124,7 @@ geoMap.backgroundContent = tileSource;
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%"
     Zoomable="true"
@@ -136,7 +132,6 @@ geoMap.backgroundContent = tileSource;
 
 protected override void OnInitialized()
 {
-    IgbGeographicMapModule.Register(IgniteUIBlazor);
     IgbArcGISOnlineMapImagery imagery = new IgbArcGISOnlineMapImagery()
     {
         MapServerUri = EsriStyle.WorldOceansMap
@@ -146,7 +141,7 @@ protected override void OnInitialized()
 }
 ```
 
-## API メンバー
+## API リファレンス
 
  - `ArcGISOnlineMapImagery`
  - `XamGeographicMap`

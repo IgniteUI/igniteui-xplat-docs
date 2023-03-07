@@ -1,18 +1,18 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 _language: kr
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Icon Button Overview
+# {Platform} Icon Button Overview
 
-The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
+The {ProductName} Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -32,11 +32,8 @@ After we import the icon button component we are ready to start using it, so let
 
 Similar to the regular button components, the icon button supports several variants - `flat`(default), `contained`, and `outlined`; To change the icon button type set the `variant` attribute of the icon button.
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
-           github-src="inputs/icon-button/variant">
-</code-view>
+`sample="/inputs/icon-button/variant", height="100", alt="{Platform} Icon Button Example"`
+
 
 ```html
 <igc-icon-button name="search" variant="contained"></igc-icon-button>
@@ -46,11 +43,8 @@ Similar to the regular button components, the icon button supports several varia
 
 The size of the button can be changed by setting the `size` attribute to any of the three supported sizes - `small`, `medium`, `large`(default).
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
-           github-src="inputs/icon-button/size">
-</code-view>
+`sample="/inputs/icon-button/size", height="100", alt="{Platform} Icon Button Example"`
+
 
 ```html
 <igc-icon-button name="thumb-up" size="medium"></igc-icon-button>
@@ -93,19 +87,15 @@ igc-icon-button::part(icon) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
-           github-src="inputs/icon-button/styling">
-</code-view>
+`sample="/inputs/icon-button/styling", height="100", alt="{Platform} Icon Button Example"`
+
 
 ## API Reference
 
 * `IconButton`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

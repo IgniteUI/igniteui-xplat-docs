@@ -1,13 +1,14 @@
 ---
-title: $Platform$ CLI | データ可視化ツールおよびテーブル | インフラジスティックス
-_description: $ProductName$ ツールセットには $Platform$ CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ $ProductName$ アプリケーションを作成してください!
-_keywords: $Platform$ cli, command line interface, $ProductName$, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
+title: {Platform} CLI | データ可視化ツールおよびテーブル | インフラジスティックス
+_description: {ProductName} ツールセットには {Platform} CLI があり、生産性を高め、プロジェクトをすばやく開始できます。今すぐ {ProductName} アプリケーションを作成してください!
+_keywords: {Platform} cli, command line interface, {ProductName}, Infragistics, コマンド ライン インターフェイス, インフラジスティックス
 _language: ja
+mentionedTypes: []
 ---
 
-# $Platform$ Ignite UI CLI
+# {Platform} Ignite UI CLI
 
-CLI ツールでは、$ProductName$ の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
+CLI ツールでは、{ProductName} の定義済みのプロジェクト テンプレートが含まれ、アプリ開発を効率的に行うことができます。<!-- React --> <a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-react-project" target="_blank"><!-- end: React --><!-- WebComponents --><a href="https://github.com/IgniteUI/igniteui-cli/blob/master/README.md#generate-ignite-ui-for-web-components-project" target="_blank"><!-- end: WebComponents -->Ignite UI CLI</a> は、さまざまなフレームワーク用のアプリケーションを作成およびスキャフォールディングするためのスタンドアロン コマンドラインツールです。
 
 ## 作業の開始
 
@@ -17,11 +18,11 @@ CLI ツールでは、$ProductName$ の定義済みのプロジェクト テン�
 npm install -g igniteui-cli
 </pre>
 
-上記のインストール コマンドは、Ignite UI CLI を $ProductName$ アプリケーションの作成、スキャフォールディング、および実行に使用できるようにします。
+上記のインストール コマンドは、Ignite UI CLI を {ProductName} アプリケーションの作成、スキャフォールディング、および実行に使用できるようにします。
 
 ## 新しいプロジェクトの作成
 
-Ignite UI CLI を使用して、$ProductName$ コントロールを使用するように構成されたアプリケーションを作成するには、コマンドラインで次のテンプレートを使用できます。
+Ignite UI CLI を使用して、{ProductName} コントロールを使用するように構成されたアプリケーションを作成するには、コマンドラインで次のテンプレートを使用できます。
 
 <!-- React -->
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
@@ -67,7 +68,7 @@ ig list
 ig add [component_template] [component_name]
 </pre>
 
-上記の「component_template」は通常、$ProductName$ コンポーネント (grid、category-chart、linear-gauge など) と一致します。
+上記の「component_template」は通常、{ProductName} コンポーネント (grid、category-chart、linear-gauge など) と一致します。
 
 たとえば、「MyGrid Component」という名前のデータ グリッド テンプレート コンポーネントをアプリに追加する場合は、次のコマンドを実行します。
 
@@ -101,7 +102,7 @@ ig add grid MyGridComponent
 
 ## アプリをビルドして実行する
 
-$ProductName$ アプリをビルドして実行するには、**ig build** コマンドと **ig run** コマンドを呼び出します。
+{ProductName} アプリをビルドして実行するには、**ig build** コマンドと **ig run** コマンドを呼び出します。
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 ig build

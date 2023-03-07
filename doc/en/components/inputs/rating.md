@@ -1,23 +1,20 @@
 ---
-title: $Platform$ Rating
-_description: With $ProductName$ Rating, allows users to view and provide feedback using unicode symbols, svg, or icons.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Rating components, $Platform$ Rating controls
+title: {Platform} Rating
+_description: With {ProductName} Rating, allows users to view and provide feedback using unicode symbols, svg, or icons.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Rating components, {Platform} Rating controls
 mentionedTypes: ["Rating"]
 ---
 
-# $Platform$ Rating Overview
+# {Platform} Rating Overview
 
-The $ProductName$ Rating component allows users to view and provide feedback.
+The {ProductName} Rating component allows users to view and provide feedback.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-basic" alt="$Platform$ Rating Basic Example"
-           github-src="inputs/rating/basic">
-</code-view>
+`sample="/inputs/rating/basic", height="80", alt="{Platform} Rating Basic Example"`
+
 
 <!-- WebComponents -->
 
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -39,7 +36,7 @@ defineComponents(IgcRatingComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -91,16 +88,14 @@ The `Rating` component allows you to use custom symbols in place of the default 
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating Custom Symbols Example"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating Custom Symbols Example"`
 
-> [!NOTE] The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
+
+> [!Note]
+The number of rating symbols between the opening and closing brackets of the rating component determines the max value.
 
 ## Single Selection
-The $ProductName$ Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user. 
+The {ProductName} Rating component has a single selection mode that allows users to provide different icons/elements for the different rating values. In this case, only one of the icons/elements can be selected and reflect the feedback given by the user.
 
 ```html
 <igc-rating single>
@@ -127,16 +122,14 @@ The $ProductName$ Rating component has a single selection mode that allows users
 </igc-rating>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-custom" alt="$Platform$ Rating with Signle Selection"
-           github-src="inputs/rating/custom">
-</code-view>
+`sample="/inputs/rating/custom", height="100", alt="{Platform} Rating with Signle Selection"`
 
-> [!NOTE] Keep in mind that the `step` attribute doesn't work with single selection mode.
 
-## Empty & Selected 
-The $ProductName$ Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. It is mandatory to provide 2 icons for each slot(empty and full) when declaring a symbol, even if they are the same. For instance:
+> [!Note]
+Keep in mind that the `step` attribute doesn't work with single selection mode.
+
+## Empty & Selected
+The {ProductName} Rating component allows users to use different icons/elements for the empty and the selected state of a single rating value. It is mandatory to provide 2 icons for each slot(empty and full) when declaring a symbol, even if they are the same. For instance:
 
 ```html
 <igc-rating-symbol>
@@ -145,11 +138,8 @@ The $ProductName$ Rating component allows users to use different icons/elements 
 </igc-rating-symbol>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-empty" alt="$Platform$ Rating with Empty and Selected state"
-           github-src="inputs/rating/empty">
-</code-view>
+`sample="/inputs/rating/empty", height="100", alt="{Platform} Rating with Empty and Selected state"`
+
 
 ## Configuration
 
@@ -214,25 +204,15 @@ The `igcChange` event is fired when the selected value changes.
 
 The `Rating` component provides base, label, value-label, symbols, and symbol that allow you to style the component symbols and its encompassing label.
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/rating-styling" alt="$Platform$ Rating Styling Example"
-           github-src="inputs/rating/styling">
-</code-view>
+`sample="/inputs/rating/styling", height="80", alt="{Platform} Rating Styling Example"`
 
-<!-- WebComponents -->
 
 ## API Reference
 
 - `Rating`
 
-<!-- end: WebComponents -->
 
 ## Additional Resources
 
-<!-- WebComponents -->
-
-- [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-- [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

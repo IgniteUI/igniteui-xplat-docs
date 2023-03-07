@@ -1,30 +1,27 @@
 ---
-title: $Platform$ Chip | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
-_keywords: $Platform$, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, $Platform$ Chip コンポーネント, インフラジスティックス
+title: {Platform} Chip | インフラジスティックス
+_description: インフラジスティックスの {Platform} Chip コンポーネントを使用すると、コンテンツを事前定義されたスタイルで表示して、アプリケーション内の任意の場所にある他のコンポーネントを装飾できます。
+_keywords: {Platform}, UI コントロール, web ウィジェット, UI ウィジェット, Web Components, {Platform} Chip コンポーネント, インフラジスティックス
 mentionedTypes: ['Chip']
 _language: ja
 ---
 
-# $Platform$ Chip (チップ) の概要
+# {Platform} Chip (チップ) の概要
 
-$ProductName$ Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
+{ProductName} Chip は、ユーザーが情報を入力したり、選択したり、コンテンツをフィルタリングしたり、アクションをトリガーしたりするのに役立ちます。
 
-## $Platform$ Chip の例
+## {Platform} Chip の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-overview"
-           alt="$Platform$ Chip の例"
-           github-src="inputs/chip/overview">
-</code-view>
+`sample="/inputs/chip/overview", height="80", alt="{Platform} Chip の例"`
+
+
 
 <div class="divider"></div>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -41,7 +38,7 @@ defineComponents(IgcChipComponent);
 <!-- end: WebComponents -->
 
 <!-- React -->
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
@@ -61,7 +58,9 @@ IgrChipModule.register();
 `Chip` を使用する前に、次のように登録する必要があります:
 
 ```razor
-IgbChipModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbChipModule));
 ```
 
 また、追加の CSS ファイルをリンクして、スタイルを `Chip` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
@@ -85,7 +84,6 @@ IgbChipModule.Register(IgniteUIBlazor);
 
     protected override void OnInitialized()
     {
-        IgbChipModule.Register(IgniteUIBlazor);
     }
 }
 ```
@@ -130,7 +128,7 @@ IgbChipModule.Register(IgniteUIBlazor);
 
 ### バリアント
 
-$ProductName$ Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
+{ProductName} Chip は、いくつかの事前定義されたスタイルのバリエーションをサポートします。サポートされている値の 1 つ (`Primary`、`Info`、`Success`、`Warning`、または `Danger`) を `Variant` プロパティに割り当てることにより、バリアントを変更できます。
 
 ```tsx
 <IgrChip variant="success"></IgrChip>
@@ -144,16 +142,13 @@ $ProductName$ Chip は、いくつかの事前定義されたスタイルのバ�
 <IgbChip Variant="ChipVariant.Success"></IgbChip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-variants"
-           alt="$Platform$ Chip バリアントの例"
-           github-src="inputs/chip/variants">
-</code-view>
+`sample="/inputs/chip/variants", height="80", alt="{Platform} Chip バリアントの例"`
+
+
 
 ### 無効
 
-$ProductName$ Chip は、`Disabled` プロパティを使用して無効にできます。
+{ProductName} Chip は、`Disabled` プロパティを使用して無効にできます。
 
 ```tsx
 <IgrChip disabled="true"></IgrChip>
@@ -177,12 +172,9 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 </igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-multiple"
-           alt="$Platform$ Chip Multiple Example"
-           github-src="inputs/chip/multiple">
-</code-view>
+`sample="/inputs/chip/multiple", height="80", alt="{Platform} Chip Multiple Example"`
+
+
 
 ## Size (サイズ)
 
@@ -206,12 +198,9 @@ $ProductName$ Chip は、`Disabled` プロパティを使用して無効にで�
 <igc-chip size="large" selectable removable>Chip</igc-chip>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-size"
-           alt="$Platform$ Chip Size Example"
-           github-src="inputs/chip/size">
-</code-view>
+`sample="/inputs/chip/size", height="80", alt="{Platform} Chip Size Example"`
+
+
 
 ## スタイル設定
 
@@ -228,41 +217,16 @@ igc-chip::part(suffix) {
 }
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/chip-styling"
-           alt="$Platform$ Chip スタイル設定の例"
-           github-src="inputs/chip/styling">
-</code-view>
-
-
-## API リファレンス
-
-* `Chip`
+`sample="/inputs/chip/styling", height="80", alt="{Platform} Chip スタイル設定の例"`
 
 <div class="divider--half"></div>
 
-## その他のリソース
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub** (英語)](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-## API メンバー
+## API リファレンス
 
  - `Chip`
+
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

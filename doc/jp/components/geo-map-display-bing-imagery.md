@@ -1,28 +1,25 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | Bing 画像の表示 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ を使用して Microsoft Bing Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, bing maps, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, bing マップ, インフラジスティックス, 画像タイル ソース, マップ背景
+title: {Platform} マップ | データ可視化ツール | Bing 画像の表示 | インフラジスティックス
+_description: インフラジスティックスの {Platform} を使用して Microsoft Bing Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, bing maps, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, bing マップ, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap', 'BingMapsMapImagery']
 _language: ja
 ---
-# $Platform$ Bing Maps 画像の表示
+# {Platform} Bing Maps 画像の表示
 
-`BingMapsMapImagery` は、Microsoft® 社が提供する地理的画像マッピング サービスです。世界の地理的画像タイルを 3 以上提供します。この地理的画像サービスは、<a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> に直接アクセスして利用できます。$ProductName$ map コンポーネントは、`BingMapsMapImagery` クラスを使用して、地図の背景コンテンツに Bing Maps の地理的画像を表示します。
+`BingMapsMapImagery` は、Microsoft® 社が提供する地理的画像マッピング サービスです。世界の地理的画像タイルを 3 以上提供します。この地理的画像サービスは、<a href="http://www.bing.com/maps" target="_blank">www.bing.com/maps</a> に直接アクセスして利用できます。{ProductName} マップ コンポーネントは、`BingMapsMapImagery` クラスを使用して、地図の背景コンテンツに Bing Maps の地理的画像を表示します。
 
-## $Platform$ Bing Maps 画像の表示の例
+## {Platform} Bing Maps 画像の表示の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
-           alt="$Platform$ Bing Maps 画像の表示の例"
-           github-src="maps/geo-map/display-bing-imagery">
-</code-view>
+`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Bing Maps 画像の表示の例"`
+
+
 
 <div class="divider--half"></div>
 
 ## コード スニペット
-以下のコード スニペットは、`BingMapsMapImagery` を使用して $Platform$ `XamGeographicMap` で Bing Maps からの地理的画像を表示する方法を示します。
+以下のコード スニペットは、`BingMapsMapImagery` を使用して {Platform} `XamGeographicMap` で Bing Maps からの地理的画像を表示する方法を示します。
 
 ```html
 <igx-geographic-map #map
@@ -94,7 +91,7 @@ geoMap.backgroundContent = tileSource;
 |`SubDomains`|`SubDomainsCollection`|URI サブ ドメインの画像コレクションを表します。|
 |`TilePath`|文字列|マップ タイル画像 URI を設定するプロパティを表します。これは Bing Maps の実際の位置です。|
 
-## API メンバー
+## API リファレンス
 
  - `BingMapsImageryStyle`
  - `BingMapsMapImagery`

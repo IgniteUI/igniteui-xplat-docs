@@ -1,29 +1,26 @@
 ---
-title: $Platform$ 円チャートとグラフ | $ProductName$
-_description: $ProductName$ 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊な UI コントロールです。無料でお試しください。
-_keywords: $Platform$ charts, pie chart, $ProductName$, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
+title: {Platform} 円チャートとグラフ | {ProductName}
+_description: {ProductName} 円チャートは、セクションに分割された円形領域で構成される円チャートを描画する特殊な UI コントロールです。無料でお試しください。
+_keywords: {Platform} charts, pie chart, {ProductName}, Infragistics, data binding, slice selection, slice explosion, animation, チャート, 円チャート, データ バインディング, スライス選択, スライス切り離し, アニメーション, インフラジスティックス
 mentionedTypes: ["XamPieChart", "XamDataChart"]
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $Platform$ 円チャート
+# {Platform} 円チャート
 
-$ProductName$ 円チャート (円グラフ) は、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示す部分対全体チャートです。カテゴリは、円グラフまたは円グラフのセクションとして描画されます。各セクション (円スライス) は基本データ値に比例する円弧の長さを持ちます。カテゴリは、分析中の合計値に対する値の割合に基づいて、100 または 100% の部分として他のカテゴリに比例して表示されます。
+{ProductName} 円チャート (円グラフ) は、データセットのカテゴリ (部分) が合計 (全体) 値になる方法を示す部分対全体チャートです。カテゴリは、円グラフまたは円グラフのセクションとして描画されます。各セクション (円スライス) は基本データ値に比例する円弧の長さを持ちます。カテゴリは、分析中の合計値に対する値の割合に基づいて、100 または 100% の部分として他のカテゴリに比例して表示されます。
 
-## $Platform$ 円チャートの例
+## {Platform} 円チャートの例
 
 データ項目を文字列と数値データでバインドすることで、`XamPieChart` の円チャートが作成できます。これらのデータ値を足すと可視化率 100% になります。この例では部門ごとの予算支出の全体的な内訳を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           github-src="charts/pie-chart/overview"
-           alt="$Platform$ 円チャートの概要" >
-</code-view>
+`sample="/charts/pie-chart/overview", height="600", alt="{Platform} 円チャートの概要"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートの推奨事項
+## {Platform} 円チャートの推奨事項
 
 円チャートは小さいデータ セットに適していて、一目で読みやすくなります。円チャートは、部分対全体の可視化の一種です。その他:
 
@@ -37,7 +34,7 @@ $ProductName$ 円チャート (円グラフ) は、データセットのカテ�
 - ツリーマップ
 - ウォーターフォール
 
-$Platform$ 円チャートは、データを解析するためのビューアー ツールを提供するインタラクティブ機能を含みます。
+{Platform} 円チャートは、データを解析するためのビューアー ツールを提供するインタラクティブ機能を含みます。
 
 - 凡例
 - スライスの分割
@@ -64,7 +61,7 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 - 6 セグメントまたは 8 セグメント (大量のデータ) がある場合 - データ ストーリーに適した棒チャート、折れ線チャート、またはエリア チャートを検討してください。
 - 棒チャートで値の違いがわかりやすくなります。
 
-## $Platform$ 円チャートの凡例
+## {Platform} 円チャートの凡例
 
 凡例は、各ポイントに関する情報を表示し、そのポイントの合計に対する割合を示します 凡例クリックを使用してポイントを縮小できます。
 
@@ -72,16 +69,13 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 
 また、凡例項目の外観をカスタマイズするために `LegendItemTemplate` および `LegendItemBadgeTemplate`プロパティ、`ItemLegend` の複数のフォント プロパティも使用できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
-           github-src="charts/pie-chart/legend"
-           alt="凡例付きの $Platform$ 円チャート" >
-</code-view>
+`sample="/charts/pie-chart/legend", height="600", alt="凡例付きの {Platform} 円チャート"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートその他の分類項目
+## {Platform} 円チャートその他の分類項目
 
 円チャート コンポーネントの基本データに、小さい値を含む多くの項目が含まれる場合があります。この場合、Others カテゴリは、単一スライスへの複数のデータ値の自動集計を許可します。
 
@@ -89,29 +83,23 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 
 `OthersCategoryType` を Percent に設定すると、`OthersCategoryThreshold` は値ではなくパーセンテージとして解釈されます。つまり、値がすべての項目の値の合計の 2% 未満である項目は、Others カテゴリに割り当てられます。使用しているアプリケーションに最も適切な `OthersCategoryType` を使用できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
-           github-src="charts/pie-chart/others"
-           alt="$Platform$ 円チャートその他の分類項目" >
-</code-view>
+`sample="/charts/pie-chart/others", height="600", alt="{Platform} 円チャートその他の分類項目"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートの展開
+## {Platform} 円チャートの展開
 
 円チャート コンポーネントは個々の円スライスの選択と展開だけでなく、選択状態を変更しカスタム ロジックを実装することを可能にする `SliceClick` イベントをコンポーネントサポートします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
-           github-src="charts/pie-chart/explosion"
-           alt="$Platform$ 円チャートの展開" >
-</code-view>
+`sample="/charts/pie-chart/explosion", height="600", alt="{Platform} 円チャートの展開"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートの選択
+## {Platform} 円チャートの選択
 デフォルトで、円チャートはマウス クリックによるスライス選択をサポートします。選択されたスライスは、`SelectedItems` プロパティで取得します。選択したスライスがハイライトされます。
 
 円チャートのモードは `SelectionMode` プロパティで設定します。デフォルト値は `Single` です。選択機能を無効化するためにはプロパティを `Manual` に設定します。
@@ -132,53 +120,41 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 
 「その他」スライスをクリックすると、`PieSliceOthersContext` オブジェクトが返されます。オブジェクトは、「その他」スライスに含まれるデータ項目のリストがあります。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
-           github-src="charts/pie-chart/selection"
-           alt="$Platform$ 円チャートの選択" >
-</code-view>
+`sample="/charts/pie-chart/selection", height="600", alt="{Platform} 円チャートの選択"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートのアニメーション
+## {Platform} 円チャートのアニメーション
 
 チャートの半径をスケールする `radiusFactor` プロパティを設定して円チャートをすばやくアニメーション化できます。`startAngle` プロパティを設定してチャートが回転する間、チャートの角度が増加し続けるようにします。
 
 以下のコードでは、radiusFactor がチャートをサイズの 0.25% 増加し、startAngle がチャートを 1 度回転しています。radiusFactor と startAngle が最大値に達すると、アニメーション フラグをリセットし、間隔をクリアしてアニメーションを停止します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
-           github-src="charts/pie-chart/animation"
-           alt="$Platform$ 円チャートのアニメーション" >
-</code-view>
+`sample="/charts/pie-chart/animation", height="600", alt="{Platform} 円チャートのアニメーション"`
+
+
 
 <div class="divider--half"></div>
 
-## $Platform$ 円チャートのスタイル設定
+## {Platform} 円チャートのスタイル設定
 
 円チャートを作成したら、次に示すように、チャートのスライスの色を変更するなど、スタイルをさらにカスタマイズすることができます。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
-           alt="$Platform$ 円チャートのスタイル設定" >
-</code-view>
+`sample="/charts/pie-chart/styling", height="600", alt="{Platform} 円チャートのスタイル設定"`
+
 
 <div class="divider--half"></div>
 
-## $Platform$ ラジアル円チャート
+## {Platform} ラジアル円チャート
 
 ラジアル円チャートはラジアル チャートのグループに属し、チャートの中心からデータ ポイントの位置に向かって伸びる円スライスを使用します。このチャート タイプは、複数の一連のデータ ポイントを分類するという概念を採用しており、データ ポイントを水平線に沿って引き伸ばすのではなく、円形の軸に沿ってラップします。
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           alt="$Platform$ ラジアル円チャート" >
-</code-view>
+`sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} ラジアル円チャート"`
+
 
 <div class="divider--half"></div>
 
@@ -187,7 +163,7 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 - [極座標チャート](polar-chart.md)
 - [ラジアル チャート](radial-chart.md)
 
-## API メンバー
+## API リファレンス
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
 - `LegendItemBadgeTemplate`
@@ -197,8 +173,8 @@ $Platform$ 円チャートは、データを解析するためのビューアー
 - `OthersCategoryType`
 - `SelectionMode`
 
-チャート タイプ       | コントロール名   | API メンバー
------------------|----------------|------------
-円チャート      | `XamPieChart`     | `PieChart`
-ラジアル円チャート | `XamDataChart` | `RadialPieSeries`
+| チャート タイプ       | コントロール名   | API メンバー |
+| -----------------|----------------|------------ |
+| 円チャート      | `XamPieChart`     | `PieChart` |
+| ラジアル円チャート | `XamDataChart` | `RadialPieSeries` |
 

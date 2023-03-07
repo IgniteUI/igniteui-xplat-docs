@@ -1,28 +1,25 @@
 ---
-title: $Platform$ Expansion Panel | Expansion Panel | Infragistics
+title: {Platform} Expansion Panel | Expansion Panel | Infragistics
 _description: Expansion Panel component provides an easily configurable expandable component with two states - collapsed and expanded.
-_keywords: $Platform$ Expansion Panel, $ProductName$, Infragistics
+_keywords: {Platform} Expansion Panel, {ProductName}, Infragistics
 mentionedTypes: ['ExpansionPanel']
 ---
 
-# $Platform$ Expansion Panel Overview
-The $ProductName$ Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
+# {Platform} Expansion Panel Overview
+The {ProductName} Expansion Panel is a lightweight accordion component which can be rendered in two states - collapsed or expanded. The expansion panel can be toggled using mouse click, or keyboard interactions.
 
-## $Platform$ Expansion Panel Example
+## {Platform} Expansion Panel Example
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="$Platform$ Expansion Panel Example"
-           github-src="layouts/expansion-panel/usage">
-</code-view>
+`sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} Expansion Panel Example"`
+
+
 
 <div class="divider--half"></div>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +37,7 @@ defineComponents(IgcExpansionPanelComponent);
 
 <!-- React -->
 
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -121,17 +118,14 @@ We can do this by binding to the `Opened` and `Closed` events:
 
 <!-- end: React -->
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="$Platform$ Expansion Panel Events"
-           github-src="layouts/expansion-panel/properties-and-events">
-</code-view>
+`sample="/layouts/expansion-panel/properties-and-events", height="320", alt="{Platform} Expansion Panel Events"`
+
+
 
 <div class="divider--half"></div>
 
 ## Component Customization
-The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [`input`](../inputs/input.md), charts and even other expansion panels!
+The `ExpansionPanel` control allows all sorts of content to be added inside of its body. It can render [input](../inputs/input.md), charts and even other expansion panels!
 
 The `ExpansionPanel` allows for easy customization of the header through the exposed *title*, *subTitle* and *indicator* slots.
 
@@ -139,18 +133,15 @@ Configuring the position of the expansion indicator can be done through the `ind
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="$Platform$ Expansion Panel Customization"
-           github-src="layouts/expansion-panel/component-customization">
-</code-view>
+`sample="/layouts/expansion-panel/component-customization", height="460", alt="{Platform} Expansion Panel Customization"`
+
+
 
 <div class="divider--half"></div>
 
 ## Keyboard Navigation
 
-The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C accessibility standards and convenient to use.
+The {ProductName} Expansion Panel keyboard navigation is compliant with W3C accessibility standards and convenient to use.
 
 **Key Combinations**
 
@@ -161,51 +152,18 @@ The $ProductName$ Expansion Panel keyboard navigation is compliant with W3C acce
 
 ## Styling
 
-The $ProductName$ Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
+The {ProductName} Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="$Platform$ Expansion Panel Styling"
-           github-src="layouts/expansion-panel/styling">
-</code-view>
-
-<div class="divider--half"></div>
-
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the Expansion Panel's API, refer to the following links:
-* `ExpansionPanel`
-
-<!-- end: WebComponents -->
+`sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} Expansion Panel Styling"`
 
 <div class="divider"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React Examples on **GitHub**](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
- ## API Members
+## API References
 
  - `ExpansionPanel`
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

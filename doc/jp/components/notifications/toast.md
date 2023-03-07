@@ -1,32 +1,31 @@
 ---
-title: $Platform$ Toast | インフラジスティックス
-_description: $ProductName$ Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。
-_keywords: $ProductName$, UI コントロール, $Platform$ ウィジェット, web ウィジェット, UI ウィジェット, $Platform$, ネイティブ $Platform$ コンポーネント スイート, ネイティブ $Platform$ コントロール, ネイティブ $Platform$ コンポーネント ライブラリ, $Platform$ Toast コンポーネント
+title: {Platform} Toast Notifications | {ProductName}
+_description: {ProductName} Toast コンポーネントを使用すると、開発者はモバイルおよびデスクトップ アプリケーション内に簡潔な 1 行のメッセージを簡単に統合できます。今すぐお試しください。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} Toast コンポーネント
 mentionedTypes: ['Toast']
 _language: ja
 ---
 
-# $Platform$ Toast (トースト)
+# {Platform} Toast (トースト) の概要
 
-$ProductName$ Toast コンポーネントは、主にシステム メッセージ、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。
+{Platform} Toast (トースト) は、変更されたレコードの状態をエンド ユーザーに通知するメッセージ コンテンツを表示するために使用される超軽量で小さなポップアップ コンポーネントです。{Platform} トースト通知を画面の下部またはその他の指定された領域に簡単に配置して表示できます。または、シンプルで簡単な方法でそれらを却下することもできます。
 
-## $ProductName$ Toast の例
+{Platform} Toast コンポーネントは、主にシステム メッセージング、プッシュ通知、警告メッセージ、および情報に使用されます。ユーザーが却下することはできません。このコントロールには、アニメーション効果、トースト コンポーネントが表示される時間を構成するための表示時間プロパティ、スタイル設定などのさまざまな機能があります。
 
-このサンプルは、`Toast` コンポーネントの作成方法を示しています:
+## {Platform} Toast の例
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="$Platform$ Toast の例"
-           github-src="notifications/toast/overview">
-</code-view>
+以下の単純な Ignite UI for {Platform} Toast の例を見てください。ボタンをクリックすると、アニメーションの通知メッセージがポップアップ表示されます。
+
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast の例"`
+
 
 <div class="divider--half"></div>
 
-### 使用方法
+### {ProductName} のToast Notification (トースト通知) の使用方法
 
 <!-- WebComponents -->
 
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります:
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -36,13 +35,13 @@ npm install {PackageWebComponents}
 
 <!-- React -->
 
-まず、次のコマンドを実行して、対応する $ProductName$ npm パッケージをインストールする必要があります:
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
 
 ```cmd
 npm install igniteui-react
 ```
 
-次に、以下のように、`Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+次に、以下のように、{Platform} `Toast` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```tsx
 import { IgrToastModule, IgrToast } from 'igniteui-react';
@@ -53,10 +52,13 @@ IgrToastModule.register();
 
 <!-- end: React -->
 
-`Toast` を使用する前に、次のように登録する必要があります:
+{Platform} `Toast` を使用する前に、次のように登録する必要があります:
+
 
 ```razor
-IgbToastModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbToastModule));
 ```
 
 ```ts
@@ -91,8 +93,6 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToastButtonClick(MouseEventArgs args)
@@ -154,8 +154,6 @@ public onShowButtonClicked() {
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbToastModule.Register(IgniteUIBlazor);
     }
 
     public void OnToggleToastButtonClick(MouseEventArgs args)
@@ -225,16 +223,13 @@ public onDisplayTimeButtonClicked() {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="$Platform$ Toast プロパティの例"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast プロパティの例"`
+
+
 
 ## スタイル設定
 
-タグ セレクターを直接使用して、Toast のスタイルを設定できます: 
+タグ セレクターを使用して {Platform} `Toast` 通知を直接スタイル設定できます。
 
 ```css
 igc-toast {
@@ -244,46 +239,20 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="$Platform$ Toast スタイル設定の例"
-           github-src="notifications/toast/styling">
-</code-view>
-
-## API リファレンス
-
-* `Toast`
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast スタイル設定の例"`
 
 <div class="divider--half"></div>
 
-## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [**GitHub** の Ignite UI for Blazor の例 (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- React -->
-
-* [Ignite UI for React **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [**GitHub** の Ignite UI for React の例v](https://github.com/IgniteUI/igniteui-react-examples)
-
-<!-- end: React -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-## API メンバー
+## API リファレンス
 
  - `Calendar`
  - `DisplayTime`
  - `KeepOpen`
  - `Show`
  - `Toast`
+
+## その他のリソース
+
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

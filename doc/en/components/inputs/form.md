@@ -1,29 +1,26 @@
 ---
-title: $Platform$ Form Component | $ProductName$
-_description: Using the $Platform$ Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
-_keywords: $Platform$ form, $ProductName$, Infragistics
+title: {Platform} Form Component | {ProductName}
+_description: Using the {Platform} Form Component you can quickly and easily create new contact form or a registration page for your next app. Learn more here.
+_keywords: {Platform} form, {ProductName}, Infragistics
 mentionedTypes: ['Form', 'Checkbox', 'Input', 'Radio', 'Switch']
 ---
 
-# $Platform$ Form Overview
+# {Platform} Form Overview
 
-The Form Component in $Platform$ is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide $Platform$ form validation, define form orientation, and configure or customize your desired layout as well. The $Platform$ form component also exposes events that give you the opportunity to respond to user actions.
+The Form Component in {Platform} is used for setting up a contact form and/or a registration page that fit in any application's requirements. You can easily provide {Platform} form validation, define form orientation, and configure or customize your desired layout as well. The {Platform} form component also exposes events that give you the opportunity to respond to user actions.
 
-## $Platform$ Form Example
+## {Platform} Form Example
 
 The following example represents `Form` that has some inputs, buttons and a checkbox inside.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
+
+
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
@@ -40,7 +37,7 @@ defineComponents(IgcFormComponent, IgcInputComponent, IgcCheckboxComponent, IgcB
 <!-- end: WebComponents -->
 
 <!-- React -->
-First, you need to the install the corresponding $ProductName$ npm package by running the following command:
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
 
 ```cmd
 npm install igniteui-react
@@ -58,8 +55,11 @@ IgrFormModule.register();
 <!-- Blazor -->
 Before using the `Form`, you need to register it as follows:
 
+
 ```razor
-IgbFormModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbFormModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Form` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -71,12 +71,9 @@ You will also need to link an additional CSS file to apply the styling to the `F
 
 The simplest way to start using the `Form` is as follows:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="$Platform$ Form Example"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
+
+
 
 Form data is collected for the following components:
 - `Checkbox`
@@ -126,46 +123,10 @@ The Form component exposes the following methods:
 |`getFormData`|Collects the form data and returns a single FormData object.|
 |`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the form's API, refer to the following links:
-* `Form`
-
-Additional components and/or directives that were used:
-- `Button`
-- `Checkbox`
-* `Input`
-* `Radio`
-* `Switch`
-
-<!-- end: WebComponents -->
-
 <div class="divider"></div>
 
-## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
-<!-- React -->
-* [Ignite UI for React **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-react)
-* [Ignite UI for React **GitHub**](https://github.com/IgniteUI/igniteui-react)
-<!-- end: React -->
-
- ## API Members
+## API References
 
  - `Button`
  - `Checkbox`
@@ -173,3 +134,9 @@ Additional components and/or directives that were used:
  - `Input`
  - `Radio`
  - `Submit`
+
+
+## Additional Resources
+
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

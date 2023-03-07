@@ -1,24 +1,21 @@
 ---
-title: $Platform$ Switch Component – $ProductName$
-_description: $ProductName$ Switch component enables developers to use binary on/off or true/false data input functions within their applications.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Switch components, $Platform$ Switch controls
+title: {Platform} Switch Component – {ProductName}
+_description: {ProductName} Switch component enables developers to use binary on/off or true/false data input functions within their applications.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Switch components, {Platform} Switch controls
 _language: kr
 mentionedTypes: ['Switch']
 ---
 
-# $Platform$ Switch
+# {Platform} Switch
 
-$ProductName$ Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
+{ProductName} Switch component is a binary choice selection component that behaves similarly to the switch component in iOS.
 
 <div class="divider"></div>
 
 ## Switch Example
 
-<code-view style="height:200px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/switch-sample-1" alt="$Platform$ Switch Example"
-           github-src="inputs/switch/sample-1">
-</code-view>
+`sample="/inputs/switches/overview", height="200", alt="{Platform} Switch Example"`
+
 
 <div class="divider--half"></div>
 
@@ -26,13 +23,13 @@ $ProductName$ Switch component is a binary choice selection component that behav
 
 At its core the switch component allows for toggling between on/off states. The default styling is done according to the selection controls specification in the Material Design guidelines.
 
-To get started with the switch web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the switch web component, first you need to install the {ProductName} by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Switch` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Switch` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcSwitchComponent } from "igniteui-webcomponents";
@@ -72,12 +69,9 @@ The switch can also be labelled by elements external to the switch. In this case
 <span id="switch-label">Label</span>
 <igc-switch aria-labelledby="switch-label"></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-label"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switch/label">
-</code-view>
+`sample="/inputs/switches/label", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Checked
 
@@ -86,12 +80,9 @@ Use the `checked` attribute to toggle on the switch.
 ```html
 <igc-switch checked></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-checked"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switch/checked">
-</code-view>
+`sample="/inputs/switches/checking", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Required
 
@@ -116,12 +107,9 @@ Use the `disabled` attribute to disable the switch.
 ```html
 <igc-switch disabled></igc-switch>
 ```
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/switch-disabled"
-           alt="$Platform$ Avatar Example"
-           github-src="inputs/switch/disabled">
-</code-view>
+`sample="/inputs/switches/disabled", height="150", alt="{Platform} Avatar Example"`
+
+
 
 ### Forms
 
@@ -152,9 +140,8 @@ igc-switch::part(thumb) {
 
 * `Switch`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

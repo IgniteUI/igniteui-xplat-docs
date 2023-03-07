@@ -1,25 +1,22 @@
 ---
-title: $Platform$ Gantt Chart | Data Visualization | Infragistics
-_description: Infragistics' $Platform$ Gantt Chart
-_keywords: $Platform$ Charts, Gantt Chart, Infragistics
+title: {Platform} Gantt Chart | Data Visualization | Infragistics
+_description: Infragistics' {Platform} Gantt Chart
+_keywords: {Platform} Charts, Gantt Chart, Infragistics
 _language: kr
 mentionedTypes: ["XamDataChart"]
 ---
-# $Platform$ Gantt Chart
+# {Platform} Gantt Chart
 
-The $ProductName$ Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity.
+The {ProductName} Gantt Chart is a type of bar chart, that visualizes various categories into time series. Gantt charts illustrate the start and finish time in time period blocks. It is often used in project management as one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity.
 
 
-## $Platform$ Gantt Chart Example
+## {Platform} Gantt Chart Example
 
 The following example demonstrates how to create Gantt Chart using `ScatterPolygonSeries` in the `XamDataChart` control.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-gantt-chart"
-           github-src="charts/data-chart/gantt-chart"
-           alt="$Platform$ Gantt Chart Example" >
-</code-view>
+`sample="/charts/data-chart/gantt-chart", height="600", alt="{Platform} Gantt Chart Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,7 +27,7 @@ The following example demonstrates how to create Gantt Chart using `ScatterPolyg
 <!-- - [Pyramid Chart](pyramid-chart.md) -->
 - [Shape Chart](shape-chart.md)
 
-## API Members
+## API References
 - `CategoryYAxis`
 - `NumericXAxis`
 - `NumericYAxis`

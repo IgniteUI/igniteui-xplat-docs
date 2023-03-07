@@ -1,22 +1,19 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
-_description: Use Infragistics $Platform$ map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, scatter symbol series, $ProductName$, Infragistics
+title: {Platform} Map | Data Visualization Tools | Scatter Symbol Series | Data Binding | Infragistics
+_description: Use Infragistics {Platform} map's scatter symbol series to display geo-spatial data using points or markers in a geographic context.. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, scatter symbol series, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Geographic Symbol Map
+# {Platform} Geographic Symbol Map
 
-In $Platform$ map component, you can use the `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
+In {Platform} map component, you can use the `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
 
-## $Platform$ Geographic Symbol Map Example
+## {Platform} Geographic Symbol Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-symbol-series"
-           alt="$Platform$ Using Scatter Symbol Series Example"
-           github-src="maps/geo-map/type-scatter-symbol-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-symbol-series", height="500", alt="{Platform} Using Scatter Symbol Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -179,7 +176,7 @@ addSeriesWith(locations: any[], brush: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicSymbolSeries DataSource="Cities"
@@ -203,15 +200,13 @@ addSeriesWith(locations: any[], brush: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.Cities = WorldLocations.GetCities();
         this.Capitals = WorldLocations.GetCapitals();
     }
 }
 ```
 
- ## API Members
+## API References
 
  - `GeographicSymbolSeries`
  - `ItemsSource`

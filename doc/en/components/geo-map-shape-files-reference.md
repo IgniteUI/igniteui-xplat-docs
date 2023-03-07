@@ -1,15 +1,15 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Files Reference | Shape Files Editing | Infragistics
-_description: Learn about shape files format to use with Infragistics' $Platform$ map. Check out $ProductName$ map tutorials!
-_keywords: $Platform$ map, shape files, $ProductName$, Infragistics, shape editing
+title: {Platform} Map | Data Visualization Tools | Shape Files Reference | Shape Files Editing | Infragistics
+_description: Learn about shape files format to use with Infragistics' {Platform} map. Check out {ProductName} map tutorials!
+_keywords: {Platform} map, shape files, {ProductName}, Infragistics, shape editing
 mentionedTypes: ['XamGeographicMap']
 ---
 
-# $Platform$ Shape Files Reference
+# {Platform} Shape Files Reference
 
 ## Purpose
 
-This topic provides resources about maps and geo-spatial related material as well as information about shape files. Use these resources to learn about and obtain shape files as well as tools for their editing before starting to bind geo-spatial data to the $ProductName$ map component™ control.
+This topic provides resources about maps and geo-spatial related material as well as information about shape files. Use these resources to learn about and obtain shape files as well as tools for their editing before starting to bind geo-spatial data to the {ProductName} map component™ control.
 
 ## Resources
 
@@ -33,15 +33,15 @@ Before plotting geo-spatial data in the control, one should get familiar with th
 
 ## Shape Files Format
 
-The $Platform$ `XamGeographicMap` control uses popular [Shape Files](http://en.wikipedia.org/wiki/Shapefile#Overview) format as one of the sources for geo-spatial data. Shape files are usually shipped with other file types, generally files with  *.shp*, *.shx*, and *.dbf*  extensions.
+The {Platform} `XamGeographicMap` control uses popular [Shape Files](http://en.wikipedia.org/wiki/Shapefile#Overview) format as one of the sources for geo-spatial data. Shape files are usually shipped with other file types, generally files with  *.shp*, *.shx*, and *.dbf*  extensions.
 
 The following table provides basic information and purpose for each type of shape files.
 
-File Extension | Description
----------------|------------
-`.shp` | A shape file contains geo-spatial vector data items that describe points, polylines, and polygons. In this file, points may describe cities, polylines may describe roads, and polygons may describe shapes/borders of countries in geographic context.
-`.shx` | A shape index file contains an index for a quick lookup of a geo-spatial vector data items.
-`.dbf` | A shape database file contains a table in which a row corresponds to each geo-spatial data item from a shape (.shp) file. In the shape database file, string columns may describe attributes for geo-spatial data item such as strings (names of countries, regions, cities) and numeric columns (population of countries, location of cities).
+| File Extension | Description |
+| ---------------|------------ |
+| `.shp` | A shape file contains geo-spatial vector data items that describe points, polylines, and polygons. In this file, points may describe cities, polylines may describe roads, and polygons may describe shapes/borders of countries in geographic context. |
+| `.shx` | A shape index file contains an index for a quick lookup of a geo-spatial vector data items. |
+| `.dbf` | A shape database file contains a table in which a row corresponds to each geo-spatial data item from a shape (.shp) file. In the shape database file, string columns may describe attributes for geo-spatial data item such as strings (names of countries, regions, cities) and numeric columns (population of countries, location of cities). |
 
 
 
@@ -104,7 +104,7 @@ The following topics provide additional information related to this topic.
 
  * [Binding Shape Files](geo-map-binding-shp-file.md)
 
-## API Members
+## API References
 
  - `XamGeographicMap`
  - `GeographicPolylineSeries`
