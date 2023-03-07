@@ -1,7 +1,7 @@
 ---
 title: Infragistics NuGet フィード
-_description: インフラジスティックスの $Platform$ コンポーネントの NuGet フィード。
-_keywords: $Platform$, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
+_description: インフラジスティックスの {Platform} コンポーネントの NuGet フィード。
+_keywords: {Platform}, NuGet, Feed, Infragistics, NuGet, フィード, インフラジスティックス
 mentionedTypes: []
 _language: ja
 ---
@@ -14,7 +14,6 @@ Infragistics は製品版を使用するユーザーにプライベート NuGet 
 
 - Visual Studio で Infragistics NuGet フィードを追加
 - NuGet CLI で Infragistics NuGet フィードを追加
-
 
 ## Visual Studio を使用した追加
 

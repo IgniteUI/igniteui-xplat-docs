@@ -94,6 +94,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getFirstDistinctDateTimeProperty"}],"originalName":"GetFirstDistinctDateTimeProperty"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getFirstStringPropertyPreferringDistinct"}],"originalName":"GetFirstStringPropertyPreferringDistinct"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getTitleString"}],"originalName":"GetTitleString"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"getTitleStringWithSeparator"}],"originalName":"GetTitleStringWithSeparator"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"extractTitle"}],"originalName":"ExtractTitle"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"getNonNullPropertyValue"}],"originalName":"GetNonNullPropertyValue"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isStringPropertyDistinct"}],"originalName":"IsStringPropertyDistinct"},
@@ -205,6 +206,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"DataSeriesType","mappedName":"FinalValueLayer"}],"originalName":"FinalValueLayer"},
     { "names":[{"platform":"WebComponents","mappedType":"DataSeriesType","mappedName":"CategoryHighlightLayer"}],"originalName":"CategoryHighlightLayer"},
     { "names":[{"platform":"WebComponents","mappedType":"DataSeriesType","mappedName":"CategoryItemHighlightLayer"}],"originalName":"CategoryItemHighlightLayer"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataSeriesType","mappedName":"DataToolTipLayer"}],"originalName":"DataToolTipLayer"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"DataSeriesAxisType","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"DataSeriesAxisType.ts","mappedName":"DataSeriesAxisType"}],
@@ -236,7 +238,8 @@
   { "originalName":"IExternalDataSeriesAdapter",
     "names":[{"platform":"WebComponents","fileName":"IExternalDataSeriesAdapter.ts","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
+    { "names":[{"platform":"WebComponents","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"},
+    { "names":[{"platform":"WebComponents","mappedType":"IDataSource","mappedName":"getLocalDataSource"}],"originalName":"GetLocalDataSource"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"SimpleFinancialPriceSeriesRule",
     "names":[{"platform":"WebComponents","fileName":"SimpleFinancialPriceSeriesRule.ts","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[

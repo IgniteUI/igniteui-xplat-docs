@@ -94,6 +94,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"getFirstDistinctDateTimeProperty"}],"originalName":"GetFirstDistinctDateTimeProperty"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"getFirstStringPropertyPreferringDistinct"}],"originalName":"GetFirstStringPropertyPreferringDistinct"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"getTitleString"}],"originalName":"GetTitleString"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"getTitleStringWithSeparator"}],"originalName":"GetTitleStringWithSeparator"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"extractTitle"}],"originalName":"ExtractTitle"},
     { "names":[{"platform":"React","mappedType":"any","mappedName":"getNonNullPropertyValue"}],"originalName":"GetNonNullPropertyValue"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isStringPropertyDistinct"}],"originalName":"IsStringPropertyDistinct"},
@@ -205,6 +206,7 @@
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"FinalValueLayer"}],"originalName":"FinalValueLayer"},
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"CategoryHighlightLayer"}],"originalName":"CategoryHighlightLayer"},
     { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"CategoryItemHighlightLayer"}],"originalName":"CategoryItemHighlightLayer"},
+    { "names":[{"platform":"React","mappedType":"DataSeriesType","mappedName":"DataToolTipLayer"}],"originalName":"DataToolTipLayer"},
     { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"DataSeriesAxisType","isEnum":true,
     "names":[{"platform":"React","fileName":"DataSeriesAxisType.ts","mappedName":"DataSeriesAxisType"}],
@@ -236,7 +238,8 @@
   { "originalName":"IExternalDataSeriesAdapter",
     "names":[{"platform":"React","fileName":"IExternalDataSeriesAdapter.ts","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
+    { "names":[{"platform":"React","mappedType":"IDataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"},
+    { "names":[{"platform":"React","mappedType":"IDataSource","mappedName":"getLocalDataSource"}],"originalName":"GetLocalDataSource"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"SimpleFinancialPriceSeriesRule",
     "names":[{"platform":"React","fileName":"SimpleFinancialPriceSeriesRule.ts","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[

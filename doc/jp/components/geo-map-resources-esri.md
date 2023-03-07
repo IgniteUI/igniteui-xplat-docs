@@ -1,11 +1,11 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | ESRI マップのリソース | インフラジスティックス
-_description: インフラジスティックスの $Platform$ を使用して ESRI Maps からの画像を表示します。$ProductName$ マップ チュートリアルを是非お試しください!
-_keywords: $Platform$ map, ESRI, $ProductName$, Infragistics, imagery tile source, map background, $Platform$ マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
+title: {Platform} マップ | データ可視化ツール | ESRI マップのリソース | インフラジスティックス
+_description: インフラジスティックスの {Platform} を使用して ESRI Maps からの画像を表示します。{ProductName} マップ チュートリアルを是非お試しください!
+_keywords: {Platform} map, ESRI, {ProductName}, Infragistics, imagery tile source, map background, {Platform} マップ, ESRI, インフラジスティックス, 画像タイル ソース, マップ背景
 mentionedTypes: ['XamGeographicMap']
 _language: ja
 ---
-# $Platform$ Esri ユーティリティ
+# {Platform} Esri ユーティリティ
 
 リソース トピックは、Esri Maps が `XamGeographicMap` で提供する `ArcGISOnlineMapImagery` の使用に役立つユーティリティの実装を提供します。
 
@@ -126,3 +126,8 @@ public class EsriStyle
     public static string UsaRailNetwork = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer";
 }
 ```
+
+## API リファレンス
+
+ - `ArcGISOnlineMapImagery`
+ - `XamGeographicMap`

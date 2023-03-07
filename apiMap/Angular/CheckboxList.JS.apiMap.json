@@ -14,6 +14,8 @@
     { "names":[{"platform":"Angular","mappedType":"CheckboxListIndexType","mappedName":"indexType"}],"originalName":"IndexType"},
     { "names":[{"platform":"Angular","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"Angular","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
+    { "names":[{"platform":"Angular","mappedType":"ScrollbarStyle","mappedName":"scrollbarStyle"}],"originalName":"ScrollbarStyle"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"scrollbarBackground"}],"originalName":"ScrollbarBackground"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"selectAllCaption"}],"originalName":"SelectAllCaption"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"selectAllCaptionTextColor"}],"originalName":"SelectAllCaptionTextColor"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualSelectAllCaptionTextColor"}],"originalName":"ActualSelectAllCaptionTextColor"},

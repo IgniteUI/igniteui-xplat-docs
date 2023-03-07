@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Map | World Utility | Data Source | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map data utility to generate geographic data. View $ProductName$ map demos!
-_keywords: $Platform$ map, map data, $ProductName$, Infragistics
+title: {Platform} Map | World Utility | Data Source | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map data utility to generate geographic data. View {ProductName} map demos!
+_keywords: {Platform} map, map data, {ProductName}, Infragistics
 mentionedTypes: ['XamGeographicMap']
 ---
-# $Platform$ World Utility
+# {Platform} World Utility
 
-The resource topic provides implementation of utility that helps with generating $Platform$ geographic data.
+The resource topic provides implementation of utility that helps with generating {Platform} geographic data.
 
 ## Code Snippet
 
@@ -409,3 +409,7 @@ export default class WorldUtils {
         }
     }
 ```
+
+## API References
+
+ - `XamGeographicMap`

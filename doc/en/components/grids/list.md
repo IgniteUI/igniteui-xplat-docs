@@ -1,22 +1,22 @@
 ---
-title: $Platform$ List Component | Infragistics
-_description: Infragistics' $Platform$ List component helps you with presenting a group of items. Learn how $ProductName$ can help you better display your data!
-_keywords: $Platform$ List, Item List, overview, $ProductName$, data binding, Infragistics
+title: {Platform} List Component | Infragistics
+_description: Infragistics' {Platform} List component helps you with presenting a group of items. Learn how {ProductName} can help you better display your data!
+_keywords: {Platform} List, Item List, overview, {ProductName}, data binding, Infragistics
 mentionedTypes: ['List', 'ListHeader', 'ListItem', 'Avatar', 'Button', 'RadioGroup', 'Radio']
 ---
 
-# $Platform$ List Overview
+# {Platform} List Overview
 
-The $ProductName$ List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
+The {ProductName} List element is extremely useful when presenting a group of items. You can create a simple list of textual items, or a more complex one, containing an array of different layout elements. The `List` component displays rows of items and supports one or more headers as well. Each list item is completely templatable and will support any valid HTML or other components.
 
-## $Platform$ List Example
+## {Platform} List Example
 
 The following example represents a list populated with contacts with a name and a phone number properties. The `List` component demonstrated below uses the `Avatar` and `Button` elements to enrich the user experience and expose the capabilities of setting avatar picture and buttons for text and call actions.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/overview">
 </code-view>
 
@@ -27,26 +27,55 @@ The following example represents a list populated with contacts with a name and 
 At its core the list web component allows you to easily display a vertical list of items.
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `List`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrListModule, IgrList, IgrListHeader, IgrListItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrListModule.register();
+```
+
+<!-- end: React -->
+
 Before using the `List`, you need to register it as follows:
 
 ```razor
-IgbListModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbListModule));
 ```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `List` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
-import {defineComponents, IgcListComponent, IgcListHeaderComponent, IgcListItemComponent} from 'igniteui-webcomponents';
+import { defineComponents, IgcListComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcListComponent, IgcListHeaderComponent, IgcListItemComponent);
+defineComponents(IgcListComponent);
 ```
-
-The simplest way to start using the `List` is as follows:
 
 
 ### Add List Items
@@ -83,12 +112,29 @@ Now, we can add the following code to get a simple list of items:
 </IgbList>
 ```
 
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Header</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Item 1</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 2</h2>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Item 3</h2>
+    </IgrListItem>
+</IgrList>
+```
+
 If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="$Platform$ Add list items Example"
+           alt="{Platform} Add list items Example"
            github-src="grids/list/add-list-items">
 </code-view>
 
@@ -134,12 +180,32 @@ Let's up our game a bit and enhance our list items. Say we want to create a list
 </IgbList>
 ```
 
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+    </IgrListItem>
+    <IgrListItem>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+    </IgrListItem>
+</IgrList>
+```
+
 After implementing the above code, our list component should now look like the following:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/list-item-content">
 </code-view>
 
@@ -223,6 +289,65 @@ We can use some of our other components in conjunction with the `List` component
 </IgbList>
 ```
 
+```tsx
+<IgrList>
+    <IgrListHeader>
+        <span>Contacts</span>
+    </IgrListHeader>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/8.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Terrance Orta</h2>
+        <span slot="subtitle">770-504-2217</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/17.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Richard Mahoney</h2>
+        <span slot="subtitle">423-676-2869</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+    <IgrListItem>
+        <div slot="start">
+            <IgrAvatar src="https://static.infragistics.com/xplatform/images/avatars/9.jpg" shape="circle" />
+        </div>
+        <h2 slot="title">Donna Price</h2>
+        <span slot="subtitle">859-496-2817</span>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Text</span>
+            </IgrButton>
+        </div>
+        <div slot="end">
+            <IgrButton variant="outlined">
+                <span>Call</span>
+            </IgrButton>
+        </div>
+    </IgrListItem>
+</IgrList>
+```
+
 The `start` slot is meant to be used for adding some kind of media before all other content of our list items. The target element, in our case the `Avatar` component, will also be provided with a default position and spacing.
 
 The `end` slot is meant to be used for list items that have some kind of action or metadata, represented, for example, by a switch, a button, a checkbox, etc. We will use `Button` components.
@@ -283,12 +408,34 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="small" labelPosition="after" change={this.onRadioChange}>
+        <span>Small</span>
+    </IgrRadio>
+    <IgrRadio value="medium" labelPosition="after" change={this.onRadioChange}>
+        <span>Medium</span>
+    </IgrRadio>
+    <IgrRadio value="large" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Large</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrList size={this.state.listSize} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ listSize: e.value });
+    }
+}
+```
+
 The result of implementing the above code should look like the following:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/overview">
 </code-view>
 
@@ -313,51 +460,33 @@ igc-list-item::part(subtitle) {
 }
 
 igc-list-item::part(end) {
-    --igc-secondary-500: 230,48%,47%;
+    --ig-secondary-500: 230,48%,47%;
 }
 ```
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="$Platform$ List Example"
+           alt="{Platform} List Example"
            github-src="grids/list/styling">
 </code-view>
 
-<!-- WebComponents -->
 
-## API References
-
-In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional $ProductName$ components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
-
-* `List`
-* `ListHeader`
-* `ListItem`
-
-Additional components that were used:
-
-* `Avatar`
-* `Button`
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
+In this article we covered a lot of ground with the `List` component. First, we created a simple list with text items. Then, we created a list of contact items and added functionality to them by using some additional {ProductName} components, like the `Avatar` and `Button`. Finally, we changed the component's appearance through the exposed CSS parts.
 
 <div class="divider--half"></div>
 
+## API References
+
+ - `Avatar`
+ - `Button`
+ - `RadioGroup`
+ - `Radio`
+ - `ListHeader`
+ - `ListItem`
+ - `List`
+
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
-
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

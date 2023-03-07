@@ -1,10 +1,10 @@
 ---
-title: $Platform$ Excel Library | Excel Utility | Infragistics
-_description: Use Infragistics' $Platform$ excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using $ProductName$ excel library!
-_keywords: excel library, $ProductName$, Infragistics, saving files, loading files, WorkbookFormat
+title: {Platform} Excel Library | Excel Utility | Infragistics
+_description: Use Infragistics' {Platform} excel library to work with spreadsheet data using Microsoft Excel features.  Learn how easily you can transfer data from excel to your application using {ProductName} excel library!
+_keywords: excel library, {ProductName}, Infragistics, saving files, loading files, WorkbookFormat
 mentionedTypes: ['Workbook', 'WorkbookFormat', 'WorkbookSaveOptions']
 ---
-# $Platform$ Excel Utility
+# {Platform} Excel Utility
 
 This topic provides utility function for loading and saving Microsoft Excel files using [Excel Library](excel-library.md)
 
@@ -331,3 +331,9 @@ export class ExcelUtility {
     }
 }
 ```
+
+## API References
+
+ - `WorkbookFormat`
+ - `WorkbookSaveOptions`
+ - `Workbook`

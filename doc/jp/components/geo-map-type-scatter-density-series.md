@@ -1,21 +1,21 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics, $Platform$ マップ, 散布高密度シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} マップ | データ可視化ツール | 散布高密度シリーズ | データ バインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップの散布高密度シリーズを使用して、数百から数百万のデータ ポイントから構成される散布図データを最短のロード時間でバインドして表示できます。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, scatter high density series, {ProductName}, Infragistics, {Platform} マップ, 散布高密度シリーズ, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'Series']
 _language: ja
 ---
-# $Platform$ 散布高密度シリーズの使用
+# {Platform} 地理高密度マップ
 
-$Platform$ マップ コンポーネントの `GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
+{Platform} マップ コンポーネントでは、`GeographicHighDensityScatterSeries` を使用して、非常に少ないロード時間で、数百から数百万のデータ ポイントを持つ散布図データをバインドして表示できます。
 
-## $Platform$ 散布高密度シリーズの使用の例
+## {Platform} 地理高密度マップの例
 
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
-           alt="$Platform$ 散布高密度シリーズの使用の例"
+           alt="{Platform} 散布高密度シリーズの使用の例"
            github-src="maps/geo-map/type-scatter-density-series">
 </code-view>
 
@@ -31,21 +31,21 @@ $Platform$ マップ コンポーネントの `GeographicHighDensityScatterSerie
 ### データ バインディング
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
-プロパティ|タイプ|概要
----|---|---
-`ItemsSource`|any|項目ソースを取得または設定します。
-`LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
-`LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。
+| プロパティ|タイプ|概要 |
+| ---|---|--- |
+| `ItemsSource`|any|項目ソースを取得または設定します。 |
+| `LongitudeMemberPath`|経度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。 |
+| `LatitudeMemberPath`|string|緯度値が割り当てられた項目上の位置を決定するには ItemsSource プロパティを使用します。 |
 
 ## 熱色スケール
 熱色スケールは、シリーズ内のカラー パターンを決定するオプションの機能です。以下の表は、カラー スケールを決定するために使用するプロパティをまとめたものです。
 
-プロパティ|タイプ|概要
----|---|---
-`HeatMinimum`|カラー スケールの最小端を表す double 値を定義します。
-`HeatMaximum`|カラー スケールの最大端を表す double 値を定義します。
-`HeatMinimumColor`|Color|カラー スケールの下端で使用するポイント密度カラーを定義します。
-`HeatMaximumColor`|Color|カラー スケールの上端で使用するポイント密度カラーを定義します。
+| プロパティ|タイプ|概要 |
+| ---|---|--- |
+| `HeatMinimum`|カラー スケールの最小端を表す double 値を定義します。 |
+| `HeatMaximum`|カラー スケールの最大端を表す double 値を定義します。 |
+| `HeatMinimumColor`|Color|カラー スケールの下端で使用するポイント密度カラーを定義します。 |
+| `HeatMaximumColor`|Color|カラー スケールの上端で使用するポイント密度カラーを定義します。 |
 
 ## コード例
 
@@ -229,7 +229,7 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -251,8 +251,6 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 
         string csv = await Http.GetStringAsync(url);
@@ -290,3 +288,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+## API リファレンス
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

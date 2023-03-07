@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Excel ライブラリ | ワークシートの使用 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。$ProductName$ Excel からアプリケーションへデータを簡単に転送できます。
-_keywords: Excel library, worksheet, $ProductName$, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
+title: {Platform} Excel ライブラリ | ワークシートの使用 | インフラジスティックス
+_description: インフラジスティックスの {Platform} Excel ライブラリを使用してワークシートの行やセルにデータを入力でき、対応する値を設定できます。{ProductName} Excel からアプリケーションへデータを簡単に転送できます。
+_keywords: Excel library, worksheet, {ProductName}, Infragistics, Excel ライブラリ, ワークシート, インフラジスティックス
 mentionedTypes: ['Workbook', 'Worksheet', 'WorksheetCell', 'DisplayOptions', 'WorksheetFilterSettings', 'IWorksheetCellFormat']
 _language: ja
 ---
-# $Platform$ ワークシートの使用
+# {Platform} ワークシートの使用
 
-$Platform$ Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
+{Platform} Excel Engine の `Worksheet` にデータが保存されます。Worksheet の行やセルにデータを入力でき、対応する値を設定できます。`Worksheet` は、フィルター、ソート、セル書式のカスタマイズができます。
 
-## $Platform$ ワークシートの使用の例
+## {Platform} ワークシートの使用の例
 
 
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-operations-on-worksheets"
-           alt="$Platform$ ワークシートの使用の例"
+           alt="{Platform} ワークシートの使用の例"
            github-src="excel/excel-library/operations-on-worksheets">
 </code-view>
 
@@ -79,7 +79,7 @@ worksheet.DisplayOptions.GridlineColor = Core.Graphics.Colors.Red;
 ## ヘッダーの構成
 列ヘッダーと行ヘッダーは、列と行を視覚的に特定するために使用します。また、現在選択されているセルやセル領域を強調表示する場合にも使用します。
 
-列と行のヘッダーは、ワークシートの `DisplayOptions`  の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
+列と行のヘッダーは、ワークシートの `DisplayOptions` の `ShowRowAndColumnHeaders` プロパティを使用して、表示と非表示を切り替えることができます。以下のコードは、列と行ヘッダーを非表示にする方法を示します。
 
 ```ts
 var workbook = new Workbook(WorkbookFormat.Excel2007);
@@ -96,7 +96,7 @@ worksheet.DisplayOptions.ShowRowAndColumnHeaders = false;
 ```
 
 ## ワークシートの編集を設定
-デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、`false` に設定した場合はワークシートの編集を防止します。
+デフォルトで保存する `Worksheet` オブジェクトが有効です。`Worksheet` オブジェクトの `Protect` メソッドを使用してワークシートを保護することにより、ワークシートの編集を禁止できます。このメソッドは、保護する部分を決定する null 許容型 `bool` 引数が多くあり、オプションの 1 つは編集オブジェクトを許容し、**false** に設定した場合はワークシートの編集を防止します。
 
 以下のコードは、ワークシートで編集を無効にする方法を示します。
 
@@ -116,7 +116,7 @@ worksheet.Protect();
 
 `Worksheet` オブジェクトの `Protect` メソッドを使用して構造変更からワークシートを保護できます。
 
-保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を `false` に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
+保護が設定されると、Worksheet オブジェクトの保護をこれらのオブジェクトでオーバーライドするために、`CellFormat` オブジェクトの `Locked` プロパティを各セル、行、マージされたセル領域、または列で設定することができます。たとえば、1 つの列のセルを除き、ワークシートのすべてのセルを読み取り専用にする必要がある場合、特定の `WorksheetColumn` オブジェクトで `CellFormat` プロパティの `Locked` を **false** に設定します。これにより、その列内のセルの編集をユーザーに許可し、ワークシートの他のセルの編集は禁止できます。
 
 以下のコードはその方法を示します。
 
@@ -177,7 +177,7 @@ worksheet.FilterSettings.ApplyAverageFilter(0, Documents.Excel.Filtering.Average
 ## ペインの固定と分割
 ペイン固定機能は、行をワークシートの上または列を左にで固定できます。ユーザーがスクロールしている間、固定した行や列は表示されたままになります。固定された行列は、削除できない実線によってワークシートの残りの部分と区切られます。
 
-ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを `true` に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
+ペイン固定を有効にするために `Worksheet` オブジェクトの `DisplayOptions` の `PanesAreFrozen` プロパティを **true** に設定する必要があります。表示オプション `FrozenPaneSettings` の `FrozenRows` と `FrozenColumns` プロパティを使用して固定する行列を指定できます。
 
 また `FirstRowInBottomPane` と `FirstColumnInRightPane` を個々に使用して下ペインの最初の行または右ペインの最初の列を指定できます。
 
@@ -286,7 +286,7 @@ worksheet.Protect();
 ## ワークシートの条件付き書式設定
 `Worksheet` の条件付き書式を設定するには、ワークシートの `ConditionalFormats` コレクションで公開される多数の Add メソッドを使用できます。この Add メソッドの最初のパラメーターは条件付き書式に適用する Worksheet の `string` 領域です。
 
-Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell`  要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
+Worksheet に追加可能な条件付き書式にその条件が true の場合に `WorksheetCell` 要素の外観を決定する `CellFormat` プロパティがあります。たとえば、`Fill` や `Font` などのこの `CellFormat` プロパティにアタッチされるプロパティを使用してセルの背景およびフォント設定を決定できます。
 
 ワークシート セルの可視化の動作が異なるため、`CellFormat` プロパティがない条件付き書式もあります。この条件付き書式は `DataBarConditionalFormat`、`ColorScaleConditionalFormat`、`IconSetConditionalFormat` です。
 
@@ -312,3 +312,21 @@ var worksheet = workbook.Sheets.Add("Sheet1", SheetType.Worksheet) as Worksheet;
 var format = worksheet.ConditionalFormats.AddAverageCondition("A1:A10", Documents.Excel.ConditionalFormatting.FormatConditionAboveBelow.AboveAverage);
 format.CellFormat.Font.ColorInfo = new WorkbookColorInfo(Core.Graphics.Colors.Red);
 ```
+
+## API リファレンス
+
+ - `CellFormat`
+ - `ColorScaleConditionalFormat`
+ - `ConditionalFormats`
+ - `DataBarConditionalFormat`
+ - `DisplayOptions`
+ - `FilterSettings`
+ - `ShowGridlines`
+ - `ShowRowAndColumnHeaders`
+ - `SortSettings`
+ - `Workbook`
+ - `WorksheetCell`
+ - `WorksheetColumn`
+ - `WorksheetFilterSettings`
+ - `WorksheetSortSettings`
+ - `Worksheet`

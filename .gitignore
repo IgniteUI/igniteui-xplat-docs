@@ -18,3 +18,22 @@ docfx/**/web.config
 
 # excluding to avoid errors with yarn install
 # package-lock.json
+
+_exported_templates
+
+_angular-org-grids
+
+# shared-files-start
+doc/en/components/grids/grid/template.md
+doc/en/components/grids/tree-grid/template.md
+doc/en/components/grids/pivot-grid/template.md
+doc/en/components/grids/hierarchical-grid/template.md
+doc/jp/components/grids/grid/template.md
+doc/jp/components/grids/tree-grid/template.md
+doc/jp/components/grids/pivot-grid/template.md
+doc/jp/components/grids/hierarchical-grid/template.md
+doc/kr/components/grids/grid/template.md
+doc/kr/components/grids/tree-grid/template.md
+doc/kr/components/grids/pivot-grid/template.md
+doc/kr/components/grids/hierarchical-grid/template.md
+# shared-files-end

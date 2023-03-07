@@ -1,11 +1,12 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter Area Series | Infragistics
+title: {Platform} Map | Data Visualization Tools | Scatter Area Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Using Scatter Area Series
+# {Platform} Using Scatter Area Series
 
 Use the map component's `GeographicScatterAreaSeries` to draw a colored surface, in a geographic context, based on a triangulation of longitude and latitude data with a numeric value assigned to each point. This type of geographic series is useful for rendering scattered data, defined by geographic locations such as weather temperature, precipitation, population distribution, air pollution, etc.
 

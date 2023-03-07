@@ -1,26 +1,24 @@
 ---
-title: $Platform$ エリア チャート | データ可視化 | インフラジスティックス
-_description: インフラジスティックスの $Platform$ エリア チャート
-_keywords: $Platform$ Charts, Area Chart, Infragistics, $Platform$ チャート, エリア チャート, インフラジスティックス
-mentionedTypes: ["CategoryChart", "XamDataChart", "CategoryChartType"]
+title: {Platform} エリア チャート | データ可視化 | インフラジスティックス
+_description: インフラジスティックスの {Platform} エリア チャート
+_keywords: {Platform} Charts, Area Chart, Infragistics, {Platform} チャート, エリア チャート, インフラジスティックス
+mentionedTypes: ["DomainChart", "CategoryChart", "XamDataChart", "CategoryChartType", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $Platform$ エリア チャート
+# {Platform} エリア チャート
 
-$ProductName$ エリア チャートは、線の下の領域が塗りつぶされた直線セグメントで接続されたポイントのコレクションを使用して描画されます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。
+{ProductName} エリア チャートは、線の下の領域が塗りつぶされた直線セグメントで接続されたポイントのコレクションを使用して描画されます。値は y 軸 (左側のラベル) に表示され、カテゴリは x 軸 (下部のラベル) に表示されます。これらのチャートは、プロットされた値の合計を表示することにより、一定期間の変化量を強調したり、複数の項目や全体の一部の関係を比較したりします。そのため、時系列で量の変化を示します。たとえば、商品の経時的な蓄積などです。
 
-エリア チャートは、[折れ線チャート](line-chart.md)または[スプライン チャート](spline-chart.md)に基づいています。そのため、時系列で量の変化を示します。たとえば、商品の経時的な蓄積などです。
+## {Platform} エリア チャートの例
 
-## $Platform$ エリア チャートの例
-
-`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを `Area` 値に設定します。
+`CategoryChart` コントロールでエリア チャートを作成するには、以下の例のように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Area** 列挙型に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
            github-src="charts/category-chart/area-chart-multiple-sources"
-           alt="$Platform$ 複数ソースのエリア チャート" >
+           alt="{Platform} 複数ソースのエリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -57,20 +55,20 @@ $ProductName$ エリア チャートは、線の下の領域が塗りつぶさ�
 - すべてのデータ項目には、少なくとも 1 つのデータ列 (文字列または日時) が含まれている必要があります。
 - すべてのデータ項目には少なくとも 1 つの数値データ列が含まれている必要があります。
 
-## 単一シリーズの $Platform$ エリア チャート
+## 単一シリーズの {Platform} エリア チャート
 
-$Platform$ エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
+{Platform} エリア チャートは、生産される再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Area` 値に設定します。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-single-source"
            github-src="charts/category-chart/area-chart-single-source"
-           alt="単一シリーズの $Platform$ エリア チャート" >
+           alt="単一シリーズの {Platform} エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## 複数シリーズの $Platform$ エリア チャート
+## 複数シリーズの {Platform} エリア チャート
 
 複数の[折れ線チャート](line-chart.md)および[スプライン チャート](spline-chart.md)を表示する方法と同様に、複数のエリア チャートを同じコントロールに結合することもできます。これは、複数のデータ ソースを `CategoryChart` コントロールの `ItemsSource` プロパティにバインドすることによって実現されます。
 
@@ -78,12 +76,12 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-multiple-sources"
            github-src="charts/category-chart/area-chart-multiple-sources"
-           alt="複数シリーズの $Platform$ エリア チャート" >
+           alt="複数シリーズの {Platform} エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ エリア チャートのスタイル設定
+## {Platform} エリア チャートのスタイル設定
 
 エリア チャートには、多くの場合、その領域が半透明で塗りつぶされており、通常より太い線とわずかに大きいマーカーがあります。以下は、それに応じて以前のエリア チャートのスタイルを設定する方法を示す例です。
 
@@ -91,133 +89,133 @@ $Platform$ エリア チャートは、生産される再生可能電力の量�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-area-chart-styling"
            github-src="charts/category-chart/area-chart-styling"
-           alt="$Platform$ エリア チャートのスタイル設定" >
+           alt="{Platform} エリア チャートのスタイル設定" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 高度なタイプのエリア チャート
 
-次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $Platform$ エリア チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの {Platform} エリア チャートについて説明します。
 
-## $Platform$ ステップ エリア チャート
+## {Platform} ステップ エリア チャート
 
-$ProductName$ ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
+{ProductName} ステップ エリア チャートはカテゴリ チャートのグループに属し、連続する垂直線と水平線で接続されたポイントのコレクションを使用して描画され、線の下の領域は塗りつぶされます。値は y 軸に表示され、カテゴリが表示されます x 軸上。ステップ エリア チャートは、一定期間の変化量を強調するか、複数の項目を比較します。`CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `StepArea` 値に設定します。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
-           alt="$Platform$ ステップ エリア チャート" >
+           alt="{Platform} ステップ エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 高度なタイプのエリア チャート
 
-次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの $Platform$ エリア チャートについて説明します。
+次のセクションでは、簡略化された API を使用した `CategoryChart` コントロールの代わりに `XamDataChart` コントロールを使用して作成できる、より高度なタイプの {Platform} エリア チャートについて説明します。
 
-## $Platform$ 範囲エリア チャート
+## {Platform} 範囲エリア チャート
 
-$ProductName$ 範囲エリア チャートは、時間の経過とともに 2 つの値の範囲としてエリアを表示します。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RangeAreaSeries` にバインドします。
+{ProductName} 範囲エリア チャートは、時間の経過とともに 2 つの値の範囲としてエリアを表示します。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RangeAreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-area-chart"
            github-src="charts/data-chart/range-area-chart"
-           alt="$Platform$ 範囲エリア チャート" >
+           alt="{Platform} 範囲エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 積層型エリア チャート
+## {Platform} 積層型エリア チャート
 
-$ProductName$ 積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedAreaSeries` にバインドします。
+{ProductName} 積層型エリア チャートは、線分で接続されたポイントのコレクションを使用して描画され、線の下のエリアが塗りつぶされ、互いの上に積層されます。積層型エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積層されていることです。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedAreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-area-chart"
            github-src="charts/data-chart/stacked-area-chart"
-           alt="$Platform$ 積層型エリア チャート" >
+           alt="{Platform} 積層型エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 積層型 100% エリア チャート
+## {Platform} 積層型 100% エリア チャート
 
-$ProductName$ 積層型 100% エリア チャートを使用して、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表します。このような場合、積層されたすべての要素を均等に表すことをお勧めします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100AreaSeries` にバインドします。
+{ProductName} 積層型 100% エリア チャートを使用して、生産元に関連する国のエネルギー消費量など、時間の経過とともに変化する全体の一部を表します。このような場合、積層されたすべての要素を均等に表すことをお勧めします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100AreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-area-chart"
-           alt="$Platform$ 積層型 100% エリア チャート" >
+           alt="{Platform} 積層型 100% エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 積層型スプライン エリア チャート
+## {Platform} 積層型スプライン エリア チャート
 
-$ProductName$ 積層型スプライン エリア チャートは、曲線スプライン セグメントで接続されたポイントのコレクションを使用して描画され、曲線スプラインの下の領域が塗りつぶされ、互いに重ねて表示されます。積層型スプライン エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積み重なっていることです。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineAreaSeries` にバインドします。
+{ProductName} 積層型スプライン エリア チャートは、曲線スプライン セグメントで接続されたポイントのコレクションを使用して描画され、曲線スプラインの下の領域が塗りつぶされ、互いに重ねて表示されます。積層型スプライン エリア チャートは、エリア チャートとすべて同じ要件に従いますが、唯一の違いは、網掛けエリアが互いに積み重なっていることです。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineAreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-area-chart"
-           alt="$Platform$ 積層型スプライン エリア チャート" >
+           alt="{Platform} 積層型スプライン エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
 
-## $Platform$ 積層型 100% スプライン エリア チャート
+## {Platform} 積層型 100% スプライン エリア チャート
 
-$ProductName$ 積層型 100% スプライン エリア チャートは、y 軸の値の処理を除いて、すべての点で積層型スプラインエリア チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン エリア チャートは、特定のデータ ポイント内のすべての値の合計の割合でデータを表します。チャートは、時間の経過とともに変化する全体の一部を表す場合があります。たとえば、生産元に関連する国のエネルギー消費量。このような場合、積層されたすべての要素を均等に表すことをお勧めします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100SplineAreaSeries` にバインドします。
+{ProductName} 積層型 100% スプライン エリア チャートは、y 軸の値の処理を除いて、すべての点で積層型スプラインエリア チャートと同じです。データを直接表現するのでなく、積層型 100 スプライン エリア チャートは、特定のデータ ポイント内のすべての値の合計の割合でデータを表します。チャートは、時間の経過とともに変化する全体の一部を表す場合があります。たとえば、生産元に関連する国のエネルギー消費量。このような場合、積層されたすべての要素を均等に表すことをお勧めします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100SplineAreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-area-chart"
-           alt="$Platform$ 積層型 100% スプライン エリア チャート" >
+           alt="{Platform} 積層型 100% スプライン エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ ラジアル エリア チャート
+## {Platform} ラジアル エリア チャート
 
-$ProductName$ ラジアル エリア チャートは[ラジアル チャート](radial-chart.md)のグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶされたポリゴンの形状を持っています。このグラフ チャートは、エリア チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
+{ProductName} ラジアル エリア チャートは[ラジアル チャート](radial-chart.md)のグループに属し、データ ポイントを接続する直線のコレクションによってバインドされた塗りつぶされたポリゴンの形状を持っています。このグラフ チャートは、エリア チャートと同じデータ プロットの概念を使用しますが、データ ポイントを水平方向に引き伸ばすのではなく、円形の軸の周りにラップします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialAreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart"
-           alt="$Platform$ ラジアル エリア チャート" >
+           alt="{Platform} ラジアル エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 極座標型エリア チャート
+## {Platform} 極座標型エリア チャート
 
-$ProductName$ 極座標エリア チャートは[極座標チャート](polar-chart.md)のグループに属し、塗りつぶされたポリゴンの形状を持ちます。頂点または角はデータ ポイントの極座標 (角度/半径) に配置され、直線で接続されてから、接続されたポイントによって表された領域を塗りつぶします。極座標エリア チャートは、散布マーカー チャートと同じデータ プロットの概念を使用しますが、水平線に沿って塗りつぶされたポイントと領域を引き伸ばすのではなく、代わりに円の周りにポイントをラップし、描画された領域を塗りつぶします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarAreaSeries` にバインドします。
+{ProductName} 極座標エリア チャートは[極座標チャート](polar-chart.md)のグループに属し、塗りつぶされたポリゴンの形状を持ちます。頂点または角はデータ ポイントの極座標 (角度/半径) に配置され、直線で接続されてから、接続されたポイントによって表された領域を塗りつぶします。極座標エリア チャートは、散布マーカー チャートと同じデータ プロットの概念を使用しますが、水平線に沿って塗りつぶされたポイントと領域を引き伸ばすのではなく、代わりに円の周りにポイントをラップし、描画された領域を塗りつぶします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarAreaSeries` にバインドします。
 
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
-           alt="$Platform$ 極座標型エリア チャート" >
+           alt="{Platform} 極座標型エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 極座標型スプライン エリア チャート
+## {Platform} 極座標型スプライン エリア チャート
 
-$Platform$ 極座標スプライン エリア チャートは[極座標チャート](polar-chart.md)のグループに属し、塗りつぶされたポリゴンの形状を持ちます。頂点または角はデータ ポイントの極座標 (角度/半径) に配置され、曲線スプラインで接続されてから接続されたポイントで表された領域を塗りつぶします。極座標スプライン エリア チャートは、散布マーカー チャートと同じデータ プロットの概念を使用しますが、水平線に沿って塗りつぶされたポイントと領域を引き伸ばすのではなく、代わりに円の周りにポイントをラップして、描画された領域を塗りつぶします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarSplineAreaSeries` にバインドします。
+{Platform} 極座標スプライン エリア チャートは[極座標チャート](polar-chart.md)のグループに属し、塗りつぶされたポリゴンの形状を持ちます。頂点または角はデータ ポイントの極座標 (角度/半径) に配置され、曲線スプラインで接続されてから接続されたポイントで表された領域を塗りつぶします。極座標スプライン エリア チャートは、散布マーカー チャートと同じデータ プロットの概念を使用しますが、水平線に沿って塗りつぶされたポイントと領域を引き伸ばすのではなく、代わりに円の周りにポイントをラップして、描画された領域を塗りつぶします。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarSplineAreaSeries` にバインドします。
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
            github-src="charts/data-chart/polar-spline-area-chart"
-           alt="$Platform$ 極座標型スプライン エリア チャート" >
+           alt="{Platform} 極座標型スプライン エリア チャート" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -234,19 +232,19 @@ $Platform$ 極座標スプライン エリア チャートは[極座標チャー
 - [積層型チャート](stacked-chart.md)
 
 
-## API メンバー
+## API リファレンス
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ               | コントロール名       | API メンバー
--------------------------|--------------------|-----------------------
-エリア                     | `CategoryChart` | `ChartType` = `Area`
-ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea`
-範囲エリア               | `XamDataChart`     | `RangeAreaSeries`
-ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries`
-極座標エリア               | `XamDataChart`     | `PolarAreaSeries`
-極座標スプライン エリア        | `XamDataChart`     | `PolarSplineAreaSeries`
-積層型エリア             | `XamDataChart`     | `StackedAreaSeries`
-積層型スプライン エリア      | `XamDataChart`     | `StackedSplineAreaSeries`
-積層型 100% エリア        | `XamDataChart`     | `Stacked100AreaSeries`
-積層型 100% スプライン エリア | `XamDataChart`     | `Stacked100SplineAreaSeries`
+| チャート タイプ               | コントロール名       | API メンバー |
+| -------------------------|--------------------|----------------------- |
+| エリア                     | `CategoryChart` | `ChartType` = `Area` |
+| ステップ エリア                | `CategoryChart` | `ChartType` = `StepArea` |
+| 範囲エリア               | `XamDataChart`     | `RangeAreaSeries` |
+| ラジアル エリア              | `XamDataChart`     | `RadialAreaSeries` |
+| 極座標エリア               | `XamDataChart`     | `PolarAreaSeries` |
+| 極座標スプライン エリア        | `XamDataChart`     | `PolarSplineAreaSeries` |
+| 積層型エリア             | `XamDataChart`     | `StackedAreaSeries` |
+| 積層型スプライン エリア      | `XamDataChart`     | `StackedSplineAreaSeries` |
+| 積層型 100% エリア        | `XamDataChart`     | `Stacked100AreaSeries` |
+| 積層型 100% スプライン エリア | `XamDataChart`     | `Stacked100SplineAreaSeries` |

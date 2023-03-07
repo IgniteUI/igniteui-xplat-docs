@@ -1,27 +1,27 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
-_description: Use Infragistics' $Platform$ JavaScript map to load geo-spatial data from shape files. View $ProductName$ map demos!
-_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+title: {Platform} Map | Data Visualization Tools | Binding Geographic Shape Files | Infragistics
+_description: Use Infragistics' {Platform} JavaScript map to load geo-spatial data from shape files. View {ProductName} map demos!
+_keywords: {Platform} map, shapefiles, {ProductName}, Infragistics, data binding
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
-# $Platform$ Binding Shape Files with Geo-spatial Data
+# {Platform} Binding Shape Files with Geo-spatial Data
 
-The $ProductName$ map component, the `ShapeDataSource` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
+The {ProductName} map component, the `ShapefileConverter` class loads geo-spatial data (points/locations, polylines, polygons) from shape files and converts it to a collection of `ShapefileRecord` objects.
 
 
-## $Platform$ Binding Shape Files with Geo-spatial Data Example
+## {Platform} Binding Shape Files with Geo-spatial Data Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="$Platform$ Binding Shape Files with Geo-spatial Data Example"
+           alt="{Platform} Binding Shape Files with Geo-spatial Data Example"
            github-src="maps/geo-map/binding-shp-polylines">
 </code-view>
 
 <div class="divider--half"></div>
 
-The following table explains properties of the `ShapeDataSource` class for loading shape files.
+The following table explains properties of the `ShapefileConverter` class for loading shape files.
 
 
 | Property | Type | Description   |
@@ -32,10 +32,10 @@ The following table explains properties of the `ShapeDataSource` class for loadi
 <!-- TODO add for WPF only: -->
 <!-- Both of the source properties for shape files are of Uri type. This means that shape files can be embedded resources in the application assembly and on the internet (via http). Refer to the previous section for more information on this process. The rules for resolving Uri objects are equivalent to any standard Uri property, for example the BitmapImage.UriSource property. -->
 
-When both source properties are set to non-null values, then the `ShapeDataSource` object’s ImportAsync method is invoked which in return performs fetching and reading the shape files and finally doing the conversion. After this operation is complete, the `ShapeDataSource` is populated with `ShapefileRecord` objects and the `ImportCompleted` event is raised in order to notify about completed process of loading and converting geo-spatial data from shape files.
+When both source properties are set to non-null values, then the `ShapefileConverter` object’s ImportAsync method is invoked which in return performs fetching and reading the shape files and finally doing the conversion. After this operation is complete, the `ShapefileConverter` is populated with `ShapefileRecord` objects and the `ImportCompleted` event is raised in order to notify about completed process of loading and converting geo-spatial data from shape files.
 
 ## Loading Shapefiles
-The following code creates an instance of the `ShapeDataSource` object for loading a shape file that contains locations of major cities in the world. It also demonstrates how to handle the `ImportCompleted` event as a prerequisite for binding data to the map component.
+The following code creates an instance of the `ShapefileConverter` object for loading a shape file that contains locations of major cities in the world. It also demonstrates how to handle the `ImportCompleted` event as a prerequisite for binding data to the map component.
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -53,7 +53,7 @@ sds.dataBind();
 ```
 
 ## Binding Shapefiles
-In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `ItemsSource` property which can be bound to an array of objects. The `ShapeDataSource` is an example such array because it contains a list of `ShapefileRecord` objects.
+In the map component, Geographic Series are used for displaying geo-spatial data that is loaded from shape files. All types of Geographic Series have an `ItemsSource` property which can be bound to an array of objects. The `ShapefileConverter` is an example such array because it contains a list of `ShapefileRecord` objects.
 
 The `ShapefileRecord` class provides properties for storing geo-spatial data, listed in the following table.
 
@@ -66,8 +66,8 @@ The `ShapefileRecord` class provides properties for storing geo-spatial data, li
 This data structure is suitable for use in most Geographic Series as long as appropriate data columns are mapped to them.
 
 ## Code Snippet
-This code example assumes that shape files were loaded using the `ShapeDataSource`.
-The following code binds `GeographicPolylineSeries` in the map component to the `ShapeDataSource` and maps the `Points` property of all `ShapefileRecord` objects.
+This code example assumes that shape files were loaded using the `ShapefileConverter`.
+The following code binds `GeographicPolylineSeries` in the map component to the `ShapefileConverter` and maps the `Points` property of all `ShapefileRecord` objects.
 
 ```html
 <div className="sampleRoot" >
@@ -232,7 +232,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
@@ -247,8 +247,6 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",
@@ -257,3 +255,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
     }
 }
 ```
+
+## API References
+
+ - `Fields`
+ - `GeographicPolylineSeries`
+ - `ImportCompleted`
+ - `ItemsSource`
+ - `Points`
+ - `ShapefileConverter`

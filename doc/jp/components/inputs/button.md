@@ -1,47 +1,83 @@
 ---
-title: $Platform$ Button コンポーネント | $ProductName$
-_description: $Platform$ Button コンポーネントの使用を開始します。$Platform$ Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, $Platform$ Button コンポーネント, インフラジスティックス
+title: {Platform} Button コンポーネント | {ProductName}
+_description: {Platform} Button コンポーネントの使用を開始します。{Platform} Button OnClick イベントを通じて、ボタンのバリアントを選択し、サイズを構成し、スタイルを定義し、柔軟性を獲得します。
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics, UI コントロール, web ウィジェット, UI ウィジェット, {Platform} Button コンポーネント, インフラジスティックス
 mentionedTypes: ['Button', 'ButtonBase']
 _language: ja
 ---
 
-# $Platform$ Button (ボタン) の概要
+# {Platform} Button (ボタン) の概要
 
-$Platform$ Button コンポーネントを使用すると、$Platform$ アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、$Platform$ Button OnClick イベント、$Platform$ ボタンの切り替え、$Platform$ ボタンの無効化などを通じて柔軟性を提供します。
+{Platform} Button コンポーネントを使用すると、{Platform} アプリでアクションをトリガーするクリック可能な要素を有効にできます。ボタンのバリアントの設定方法、ラップされた要素のスタイルの構成方法、およびサイズの定義方法を完全に制御できます。Button コンポーネントは、{Platform} Button OnClick イベント、{Platform} ボタンの切り替え、{Platform} ボタンの無効化などを通じて柔軟性を提供します。
 
-## $Platform$ Button の例
+## {Platform} Button の例
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="$Platform$ Button の例"
+           alt="{Platform} Button の例"
            github-src="inputs/button/overview">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
-<!-- end: WebComponents -->
 
-`Button` を使用する前に、次のように登録する必要があります。
-
-```razor
-IgbButtonModule.Register(IgniteUIBlazor);
-```
+次に、以下のように、`Button` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
 ```ts
 import { defineComponents, IgcButtonComponent } from "igniteui-webcomponents";
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcButtonComponent);
 ```
+<!-- end: WebComponents -->
+
+<!-- React -->
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`Button` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrButtonModule, IgrButton } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrButtonModule.register();
+```
+<!-- end: React -->
+
+<!-- Blazor -->
+
+`Button` を使用する前に、次のように登録する必要があります。
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbButtonModule));
+```
+
+また、追加の CSS ファイルをリンクして、スタイルを `Button` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 `Button` の使用を開始する最も簡単な方法は次のとおりです:
+
+```tsx
+<IgrButton />
+```
 
 ```html
 <igc-button>Click me</igc-button>
@@ -54,6 +90,12 @@ defineComponents(IgcButtonComponent);
 ## Prefix / Suffix
 
 `Button` コンポーネントの `prefix` スロットと `suffix` スロットを使用すると、ボタンのメイン コンテンツの前後に異なるコンテンツを追加できます。
+
+```tsx
+<IgrButton type="button" variant="contained">
+    <span slot="prefix">+</span>Click me<span slot="suffix">-</span>
+</IgrButton>
+```
 
 ```html
 <igc-button type="button" variant="contained">
@@ -69,8 +111,8 @@ defineComponents(IgcButtonComponent);
 
 ## タイプ
 
-`Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [`<a>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
-ボタン コンポーネントが実際の [`<button>`](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
+`Href` 属性が設定されている場合、ボタン コンポーネントはその内部構造を [<button>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) から [<a>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a) タイプの要素に変更します。その場合、ボタンは通常のリンクと考えることができます。`Href` 属性を設定すると、`Rel`、`Target` および `Download` 属性も設定できます。
+ボタン コンポーネントが実際の [<button>](https://developer.mozilla.org/ja/docs/Web/HTML/Element/button) 要素を内部で使用する場合、プロパティを次のいずれかの値に設定することで、その `DisplayType` を指定できます。
 
 - `submit` -フォーム データを送信する場合
 - `reset` - フォーム データを初期値にリセットする場合
@@ -82,6 +124,10 @@ defineComponents(IgcButtonComponent);
 
 `variant` を使用して、コンポーネント テンプレートにシンプルなフラット ボタンを追加します。バリアントを設定しない場合、デフォルトではフラットに設定されることに注意してください。
 
+```tsx
+<IgrButton variant="contained"><span>Contained</span></IgrButton>
+```
+
 ```html
 <igc-button variant="contained">Contained</igc-button>
 ```
@@ -90,13 +136,18 @@ defineComponents(IgcButtonComponent);
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
+</code-view>
 
 ### Outlined ボタン
 
 `outlined` ボタンを作成するために必要なのは、`variant` プロパティの値を変更することだけです。
+
+```tsx
+<IgrButton variant="outlined"><span>Outlined</span></IgrButton>
+```
 
 ```html
 <igc-button variant="outlined">Outlined</igc-button>
@@ -106,13 +157,18 @@ defineComponents(IgcButtonComponent);
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<div class="sample-container loading" style="height: 80px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</iframe></div>
+<code-view style="height: 80px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
+</code-view>
 
 ### Flat ボタン
 
 同様に、`flat` バリアントに切り替えることができます。
+
+```tsx
+<IgrButton variant="flat"><span>Flat</span></IgrButton>
+```
 
 ```html
 <igc-button variant="flat">Flat</igc-button>
@@ -122,13 +178,18 @@ defineComponents(IgcButtonComponent);
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
+</code-view>
 
 ### Floating Action ボタン
 
 `variant` プロパティを `fab` に設定することで、フローティング アクション ボタンを作成できます。
+
+```tsx
+<IgrButton variant="fab"><span>Fab</span></IgrButton>
+```
 
 ```html
 <igc-button variant="fab">Fab</igc-button>
@@ -138,9 +199,10 @@ defineComponents(IgcButtonComponent);
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<div class="sample-container loading" style="height: 75px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
+</code-view>
 
 ## ボタンのサイズ設定
 
@@ -174,6 +236,37 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 });
 ```
 
+```tsx
+import { IgrButton, IgrRadio, IgrRadioGroup, IgrButtonModule, IgrRadioModule, IgrRadioGroupModule } from 'igniteui-react';
+
+<IgrRadioGroup alignment="horizontal" style={{display: 'flex', margin: '0 auto', width: '15%'}}>
+    <IgrRadio name="size" value="small" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Small</span>
+    </IgrRadio>
+    <IgrRadio name="size" value="medium" labelPosition="after" change={this.onRadioChange}>
+        <span>Medium</span>
+    </IgrRadio>
+    <IgrRadio name="size" value="large" labelPosition="after" change={this.onRadioChange}>
+        <span>Large</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<div>
+    <IgrButton ref={this.flatButtonRef}  className="flat-btn" variant="flat"><span>Flat</span></IgrButton>
+    <IgrButton ref={this.containedButtonRef}  className="contained-btn" variant="contained"><span>Contained</span></IgrButton>
+    <IgrButton ref={this.outlinedButtonRef}  className="outlined-btn" variant="outlined"><span>Outlined</span></IgrButton>
+    <IgrButton ref={this.fabButtonRef}  className="fab-btn" variant="fab"><span>Like</span></IgrButton>
+</div>
+
+
+public onRadioChange(e: any) {
+    this.flatButton.size = e.value;
+    this.containedButton.size = e.value;
+    this.outlinedButton.size = e.value;
+    this.fabButton.size = e.value;
+}
+```
+
 ```razor
 <IgbRadioGroup id="radioGroup" Alignment="RadioGroupAlignment.Horizontal" >
     <IgbRadio Value="small" LabelPosition="RadioLabelPosition.After" @onclick="OnSmallClick">Small</IgbRadio>
@@ -186,9 +279,6 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
     protected override void OnInitialized()
     {
-        IgbButtonModule.Register(IgniteUIBlazor);
-        IgbRadioModule.Register(IgniteUIBlazor);
-        IgbRadioGroupModule.Register(IgniteUIBlazor);
     }
 
     public void OnSmallClick(EventArgs e)
@@ -213,13 +303,23 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 <code-view style="height: 200px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="$Platform$ Button のサイズ設定"
+           alt="{Platform} Button のサイズ設定"
            github-src="inputs/button/size">
 </code-view>
 
 ### ダウンロード
 
 `download` プロパティを設定すると、リンクされた URL に移動する代わりに、保存するように求められます。
+
+```tsx
+<IgrButton
+    href=""
+    variant="contained"
+    download="url"
+    target="_blank" >
+    <span>Download</span>
+</IgrButton>
+```
 
 ```html
 <igc-button
@@ -237,9 +337,10 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </IgbButton>
 ```
 
-<div class="sample-container loading" style="height: 70px">
-    <iframe class="lazyload" seamless width="100%" height="100%" frameborder="0" data-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</iframe></div>
+<code-view style="height: 70px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
+</code-view>
 
 ## スタイル設定
 
@@ -256,35 +357,22 @@ igc-button::part(base) {
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="$Platform$ Button スタイル設定の例"
+           alt="{Platform} Button スタイル設定の例"
            github-src="inputs/button/styling">
 </code-view>
 
-<!-- WebComponents -->
-
 ## API リファレンス
 
-* `Button`
+ - `ButtonBase`
+ - `Button`
+ - `DisplayType`
+ - `Download`
+ - `Href`
+ - `RadioGroup`
+ - `Radio`
 
-使用したその他の Web Components:
-
-* `RadioGroup`
-* `Radio`
-
-<!-- end: WebComponents -->
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

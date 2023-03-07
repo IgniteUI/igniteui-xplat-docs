@@ -1,18 +1,18 @@
 ---
-title: $Platform$ ブレット グラフ | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックス データ視覚化ツールを是非お試しください!
-_keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, $Platform$ ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
+title: {Platform} ブレット グラフ | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} ブレット グラフ コントロールを使用すると、範囲を表示し、複数の測定値を比較するダッシュボードを作成できます。インフラジスティックス データ視覚化ツールを是非お試しください!
+_keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics, ブレット グラフ, インフラジスティックス, {Platform} ブレット グラフ, アニメーション, ラベル, ニードル, スケール, 範囲, 目盛, インフラジスティックス
 mentionedTypes: ['XamBulletGraph']
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
-# $Platform$ ブレット グラフの概要
+# {Platform} ブレット グラフの概要
 
-$Platform$ Bullet Graph コンポーネントは、目盛り上でメジャーの比較を簡潔にリニアで表示します。
+{Platform} Bullet Graph コンポーネントは、目盛り上でメジャーの比較を簡潔にリニアで表示します。
 
 ブレット グラフ コンポーネントは、きれいなデータ表現を作成するための多数の機能をサポートします。ブレット グラフは、目標に対する進捗状況、評価の範囲、複数の測定比較を表現する際に最も効率的で効果的なグラフの 1 つです。ブレット グラフは、水平または垂直のわずかな領域で、ゴールに至る進捗、評価の範囲、複数の測定比較を表現するための最も効率的で効果的な方法の 1 つです。
 
-## $Platform$ ブレット グラフの例
+## {Platform} ブレット グラフの例
 
 以下のサンプルは、同じ `XamBulletGraph` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
@@ -20,7 +20,7 @@ $Platform$ Bullet Graph コンポーネントは、目盛り上でメジャー�
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
-           alt="$Platform$ ブレット グラフの例"
+           alt="{Platform} ブレット グラフの例"
            github-src="gauges/bullet-graph/animation">
 </code-view>
 
@@ -43,11 +43,13 @@ npm install --save {PackageGauges}
 
 `XamBulletGraph` を作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbBulletGraphModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
@@ -69,11 +71,9 @@ IgrBulletGraphModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
 import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
+import { ModuleManager } from 'igniteui-webcomponents-core';
 
 // register the modules
 ModuleManager.register(
@@ -81,6 +81,7 @@ ModuleManager.register(
     IgcBulletGraphModule
 );
 ```
+
 
 <div class="divider--half"></div>
 
@@ -938,16 +939,17 @@ MaximumValue="55" TargetValue="43">
 </IgbBulletGraph>
 ```
 
+
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [リニア ゲージ](linear-gauge.md)
 - [ラジアル ゲージ](radial-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

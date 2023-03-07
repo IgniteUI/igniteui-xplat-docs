@@ -1,51 +1,92 @@
 ---
-title: $Platform$ Input | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ input is a component where the user can enter data. Improve your application with Ignite UI for $Platform$!
-_keywords: $Platform$ input, $ProductName$, Infragistics
+title: {Platform} Input | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} input is a component where the user can enter data. Improve your application with {ProductName}!
+_keywords: {Platform} input, {ProductName}, Infragistics
 mentionedTypes: ['Input', 'Icon', 'Radio']
 ---
-# $Platform$ Input Overview
+# {Platform} Input Overview
 
-The $ProductName$ Input is a component where the user can enter data.
+The {ProductName} Input is a component where the user can enter data.
 
-## $Platform$ Input Example
+## {Platform} Input Example
 
 <div class="divider--half"></div>
+
+<!-- React, WebComponents -->
 
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="$Platform$ Input Example"
+           alt="{Platform} Input Example"
            github-src="inputs/input/overview">
+</code-view>
+
+<!-- end:React, WebComponents -->
+
+<!-- Blazor -->
+
+<code-view style="height: 225px"
+           data-demos-base-url="{environment:dvDemosBaseUrl}"
+           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
+           alt="{Platform} Input Example"
+           github-src="inputs/input/binding">
 </code-view>
 
 ## Dependencies
 
-<!-- Blazor -->
-
 To get started with the Input component, you first need to register its module.
 
+<!-- Blazor -->
+
+
 ```razor
-IgbInputModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbInputModule));
+```
+
+You will also need to link an additional CSS file to apply the styling to the `Input` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
 ```
 
 <!-- end: Blazor -->
 
-<div class="divider--half"></div>
-
 <!-- WebComponents -->
 
-To get started we need to import the `Input` in our typescript file and register the component by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started we need to import the `Input` in our typescript file and register the component by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcInputComponent } from 'igniteui-webcomponents';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
 
 defineComponents(IgcInputComponent);
 ```
 
 <!-- end: WebComponents -->
 
+<!-- React -->
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `Input`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrInputModule, IgrInput } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+IgrInputModule.register();
+```
+<!-- end: React -->
+
 After we import the `Input` component we are ready to start using it, so let's add our first Input.
+
+```tsx
+<IgrInput type="email" label="Subscribe"></IgrInput>
+```
 
 ```html
 <igc-input type="email" label="Subscribe" placeholder="john.doe@mail.com"></igc-input>
@@ -62,7 +103,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 <code-view style="height: 120px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="$Platform$ Input Prefix & Suffix Example"
+           alt="{Platform} Input Prefix & Suffix Example"
            github-src="inputs/input/prefix-suffix">
 </code-view>
 
@@ -73,7 +114,7 @@ The `helper-text` slot provides a hint placed below the Input. Let's add some he
 <code-view style="height: 140px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="$Platform$ Input Helper Text Example"
+           alt="{Platform} Input Helper Text Example"
            github-src="inputs/input/helper-text">
 </code-view>
 
@@ -84,7 +125,7 @@ We can allow the user to choose the size of the `Input` by using its `Size` prop
 <code-view style="height: 320px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="$Platform$ Input Sizing Example"
+           alt="{Platform} Input Sizing Example"
            github-src="inputs/input/size">
 </code-view>
 
@@ -133,37 +174,21 @@ igc-input::part(suffix){
 <code-view style="height: 150px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="$Platform$ Input Styling"
+           alt="{Platform} Input Styling"
            github-src="inputs/input/styling">
 </code-view>
 
-<!-- WebComponents -->
+<div class="divider"></div>
+
 
 ## API References
 
-For more detailed information regarding the Input's API, refer to the following links:
-* `Input`
+ - `Icon`
+ - `Input`
+ - `Radio`
 
-Additional components and/or directives that were used:
-* `Icon`
-* `Radio`
-
-<!-- end: WebComponents -->
-
-<div class="divider"></div>
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

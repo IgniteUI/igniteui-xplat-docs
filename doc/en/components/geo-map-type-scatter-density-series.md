@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
-_description: Use Infragistics $Platform$ map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, scatter high density series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} Map | Data Visualization Tools | Scatter High Density Series | Data Binding | Infragistics
+_description: Use Infragistics {Platform} map's scatter high density series to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, scatter high density series, {ProductName}, Infragistics
+mentionedTypes: ['XamGeographicMap', 'Series']
 ---
-# $Platform$ Using Scatter High Density Series
+# {Platform} Geographic High Density Map
 
-Use the $Platform$ map component's `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
+In {Platform} map component, you can use the `GeographicHighDensityScatterSeries` to bind and show scatter data ranging from hundreds to millions of data points requiring exceedingly little loading time.
 
-## $Platform$ Using Scatter High Density Series Example
+## {Platform} Geographic High Density Map Example
 
 
 <code-view style="height: 400px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-density-series"
-           alt="$Platform$ Using Scatter High Density Series Example"
+           alt="{Platform} Using Scatter High Density Series Example"
            github-src="maps/geo-map/type-scatter-density-series">
 </code-view>
 
@@ -30,21 +30,21 @@ Similar to other types of scatter series in the map control, the `GeographicHigh
 ### Data Binding
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
-Property|Type|Description
----|---|---
-`ItemsSource`|any|Gets or sets the items source
-`LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
-`LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
+| Property|Type|Description |
+| ---|---|--- |
+| `ItemsSource`|any|Gets or sets the items source |
+| `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items |
+| `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items |
 
 ## Heat Color Scale
 The Heat Color Scale, an optional feature, determines the color pattern within the series. The following table summarizes the properties used for determining the color scale.
 
-Property |Type|Description
----|---|---
-`HeatMinimum`|Double|Defines the double value representing the minimum end of the color scale
-`HeatMaximum`|Double|Defines the double value representing the maximum end of the color scale
-`HeatMinimumColor`|Color|Defines the point density color used at the bottom end of the color scale
-`HeatMaximumColor`|Color|Defines the point density color used at the top end of the color scale
+| Property |Type|Description |
+| ---|---|--- |
+| `HeatMinimum`|Double|Defines the double value representing the minimum end of the color scale |
+| `HeatMaximum`|Double|Defines the double value representing the maximum end of the color scale |
+| `HeatMinimumColor`|Color|Defines the point density color used at the bottom end of the color scale |
+| `HeatMaximumColor`|Color|Defines the point density color used at the top end of the color scale |
 
 ## Code Example
 
@@ -228,7 +228,7 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
@@ -250,8 +250,6 @@ onDataLoaded(csvData: string) {
 
     protected override async Task OnInitializedAsync()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         string url = "https://static.infragistics.com/xplatform/data/AusPlaces.csv";
 
         string csv = await Http.GetStringAsync(url);
@@ -289,3 +287,14 @@ onDataLoaded(csvData: string) {
     }
 }
 ```
+
+
+## API References
+
+ - `GeographicHighDensityScatterSeries`
+ - `GeographicHighDensityScatterSeries`
+ - `HeatMaximumColor`
+ - `HeatMinimumColor`
+ - `ItemsSource`
+ - `LatitudeMemberPath`
+ - `LongitudeMemberPath`

@@ -1,20 +1,20 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Styling | Conditional Formatting | Infragistics
-_description: Learn how to apply custom styling to Infragistics' $Platform$ map's shape series. Check out $ProductName$ map tutorials!
-_keywords: $Platform$ map, custom styling, $ProductName$, Infragistics, conditional formatting, shape styling
-mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries']
+title: {Platform} Map | Data Visualization Tools | Shape Styling | Conditional Formatting | Infragistics
+_description: Learn how to apply custom styling to Infragistics' {Platform} map's shape series. Check out {ProductName} map tutorials!
+_keywords: {Platform} map, custom styling, {ProductName}, Infragistics, conditional formatting, shape styling
+mentionedTypes: ['XamGeographicMap', 'GeographicShapeSeries', 'Series']
 ---
-# $Platform$ Shape Styling on Geographic Shape Series
+# {Platform} Shape Styling on Geographic Shape Series
 
-This topic explains how to apply custom styling to the `GeographicShapeSeries` in the $Platform$ `XamGeographicMap`.
+This topic explains how to apply custom styling to the `GeographicShapeSeries` in the {Platform} `XamGeographicMap`.
 
-## $Platform$ Shape Styling on Geographic Shape Series Example
+## {Platform} Shape Styling on Geographic Shape Series Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling"
-           alt="$Platform$ Shape Styling on Geographic Shape Series Example"
+           alt="{Platform} Shape Styling on Geographic Shape Series Example"
            github-src="maps/geo-map/map-shape-styling">
 </code-view>
 
@@ -403,3 +403,8 @@ public onStylingShape(s: IgcGeographicShapeSeriesComponent, args: IgcStyleShapeE
     args.shapeStrokeThickness = shapeStyle.strokeThickness;
 }
 ```
+
+## API References
+
+ - `GeographicShapeSeries`
+ - `XamGeographicMap`

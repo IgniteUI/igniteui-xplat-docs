@@ -1,18 +1,16 @@
 ---
-title: $Platform$ ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの $Platform$ ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。$ProductName$ ラジアル ゲージの設定可能な要素について説明します。
-_keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
+title: {Platform} ラジアル ゲージ チャート | データ可視化ツール | インフラジスティックス
+_description: インフラジスティックスの {Platform} ラジアル ゲージコ ントロールを使用して、魅力的なデータ可視化とダッシュボードを作成し、豊富なスタイルと対話機能を KPI で実現できます。{ProductName} ラジアル ゲージの設定可能な要素について説明します。
+_keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks, ラジアル ゲージ, インフラジスティックス, アニメーション, ラベル, 針, スケール, 範囲, 目盛
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 namespace: Infragistics.Controls.Gauges
 _language: ja
 ---
-# $Platform$ ラジアル ゲージの概要
+# {Platform} ラジアル ゲージの概要
 
-$Platform$ Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。
+{Platform} Radial Gauge コンポーネントは、針、目盛り、範囲、ラベルなどの視覚要素をサポートし、定義済みの図形やスケールを表示できます。`XamRadialGauge` には、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
 
-$ProductName$ Radial Gauge コンポーネントは、ゲージを表示するデータ ビジュアライゼーション ツールです。スケール、目盛り、ラベル、針、および範囲などの複数の視覚要素を含むことができます。このコンポーネントには、アニメーション化されたトランジションのサポートも組み込まれています。アニメーションは、`TransitionDuration` プロパティの設定で簡単にカスタマイズできます。
-
-## $Platform$ ラジアル ゲージの例
+## {Platform} ラジアル ゲージの例
 
 以下のサンプルは、同じ `XamRadialGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
@@ -20,7 +18,7 @@ $ProductName$ Radial Gauge コンポーネントは、ゲージを表示する�
 <code-view style="height: 375px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$Platform$ ラジアル ゲージの例"
+           alt="{Platform} ラジアル ゲージの例"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 
@@ -44,7 +42,7 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 以下の名前空間を追加してコントロールの実装を開始できます。
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
@@ -52,8 +50,11 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 
 `XamRadialGauge` を作成するには、以下のモジュールが必要です。
 
+
 ```razor
-IgbRadialGaugeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts
@@ -946,16 +947,16 @@ IgrRadialGaugeModule.register();
 </IgbRadialGauge>
 ```
 
+## API リファレンス
+
+以下は上記のセクションで説明した API メンバーのリストです。
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## その他のリソース
 
 その他のゲージ タイプの詳細については、以下のトピックを参照してください。
 
 - [ブレット グラフ](bullet-graph.md)
 - [リニア ゲージ](linear-gauge.md)
-
-## API メンバー
-
-以下は上記のセクションで説明した API メンバーのリストです。
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

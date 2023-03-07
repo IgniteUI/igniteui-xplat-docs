@@ -1,17 +1,15 @@
 ---
-title: $Platform$ Radial Gauge Chart | Data Visualization Tools | Infragistics
-_description: Use Infragistics' $Platform$ radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the $ProductName$ radial gauge configurable elements!
-_keywords: Radial Gauge, $ProductName$, Infragistics, animation, labels, needle, scales, ranges, tick marks
+title: {Platform} Radial Gauge Chart | Data Visualization Tools | Infragistics
+_description: Use Infragistics' {Platform} radial gauge control to create engaging data visualizations and dashboards and show off KPIs with rich style and interactivity. Learn about the {ProductName} radial gauge configurable elements!
+_keywords: Radial Gauge, {ProductName}, Infragistics, animation, labels, needle, scales, ranges, tick marks
 mentionedTypes: ['XamRadialGauge', 'XamRadialGaugeRange']
 namespace: Infragistics.Controls.Gauges
 ---
-# $Platform$ Radial Gauge Overview
+# {Platform} Radial Gauge Overview
 
-The $Platform$ radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale.
+The {Platform} radial gauge component provides a number of visual elements, like a needle, tick marks, ranges, and labels, in order to create a predefined shape and scale. The `XamRadialGauge`  also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
 
-The $ProductName$ radial gauge component is a data visualization tool capable of displaying a radial gauge containing a number of visual elements, such as a scale with tick marks and labels, a needle, and a number of ranges. The component also has built-in support for animated transitions. This animation is easily customizable by setting the `TransitionDuration` property.
-
-## $Platform$ Radial Gauge Example
+## {Platform} Radial Gauge Example
 
 The following sample demonstrates how setting multiple properties on the same `XamRadialGauge` can transform it to completely different radial gauge.
 
@@ -19,7 +17,7 @@ The following sample demonstrates how setting multiple properties on the same `X
 <code-view style="height: 375px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="$Platform$ Radial Gauge Example"
+           alt="{Platform} Radial Gauge Example"
            github-src="gauges/radial-gauge/animation">
 </code-view>
 
@@ -43,16 +41,19 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 Afterwards you may start implementing the control by adding the following namespaces:
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 </pre>
 <!-- end: Blazor -->
 
-## Required Modules
+## Component Modules
 
 The `XamRadialGauge` requires the following modules:
 
+
 ```razor
-IgbRadialGaugeModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbRadialGaugeModule));
 ```
 
 ```ts
@@ -945,16 +946,16 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbRadialGauge>
 ```
 
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamRadialGauge`
+- `XamRadialGaugeRange`
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Bullet Graph](bullet-graph.md)
 - [Linear Gauge](Linear-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamRadialGauge`
-- `XamRadialGaugeRange`

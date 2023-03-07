@@ -1,11 +1,12 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Infragistics
+title: {Platform} Map | Data Visualization Tools | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Using Scatter Proportional Series
+# {Platform} Using Scatter Proportional Series
 
 Use the map component's `GeographicProportionalSymbolSeries` to plot markers for the geographic points specified by the data in your application. This map series can be useful for highlighting points of interest in your particular business case like department stores, warehouses, or offices. Also you can use this map series in a fleet management system or a GPS system for dynamic vehicle tracking.
 
@@ -26,15 +27,15 @@ Similar to other types of scatter series in the map control, the `GeographicProp
 
 The following table summarizes the GeographicHighDensityScatterSeries series properties used for data binding.
 
-Property|Type|Description
----|---|---
-`ItemsSource`|any|Gets or sets the items source
-`LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items
-`LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items
-`RadiusMemberPath`|string|Sets the path to use to get the radius values for the series.
-`RadiusScale`|`Ig$SizeScale`|Gets or sets the radius scale property for the current bubble series.
-`MinimumValue`|any|Configure the minimum value for calculating value sub ranges.
-`MaximumValue`|any|Configure the maximum value for calculating value sub ranges.
+| Property|Type|Description |
+| ---|---|--- |
+| `ItemsSource`|any|Gets or sets the items source |
+| `LongitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the longitude values on the assigned items |
+| `LatitudeMemberPath`|string|Uses the ItemsSource property to determine the location of the latitude values on the assigned items |
+| `RadiusMemberPath`|string|Sets the path to use to get the radius values for the series. |
+| `RadiusScale`|`Ig$SizeScale`|Gets or sets the radius scale property for the current bubble series. |
+| `MinimumValue`|any|Configure the minimum value for calculating value sub ranges. |
+| `MaximumValue`|any|Configure the maximum value for calculating value sub ranges. |
 
 ## Code Snippet
 

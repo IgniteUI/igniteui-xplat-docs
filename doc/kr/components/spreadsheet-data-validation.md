@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Spreadsheet | Grid Controls | Data Validation | Infragistics |
+title: {Platform} Spreadsheet | Grid Controls | Data Validation | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
-_keywords: Spreadsheet, $ProductName$, Infragistics
+_keywords: Spreadsheet, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Spreadsheet']
 ---
 
-# $Platform$ Data Validation
+# {Platform} Data Validation
 
 This topic explains to to configure and set the built-in data validation rules.
 

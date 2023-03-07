@@ -1,22 +1,22 @@
 ---
 title: Card コンポーネント
 _description: Ignite UI for Web Card コンポーネントを使用して、詳細情報のエントリ ポイントとして、ダッシュボード、テキスト、画像、アイコン、ボタンなどを表示します。
-_keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
+_keywords: {ProductName}, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls, UI コントロール, Web ウィジェット, web ウィジェット, UI ウィジェット, ネイティブ Web コンポーネント スイート, ネイティブ Web コントロール, ネイティブ Web コンポーネント ライブラリ, Web Card コンポーネント, Web Card コントロール
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 _language: ja
 ---
 
-# $Platform$ Card (カード) の概要
+# {Platform} Card (カード) の概要
 
-$ProductName$ Card は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
+{ProductName} Card は、テキスト、画像、アイコン、およびボタンを視覚的にリッチなプレゼンテーションで表示し、より詳細な情報へのエントリ ポイントとして機能します。Card を使用してマルチメディア ダッシュボードを作成できます。
 
 
-## $Platform$ Card の例
+## {Platform} Card の例
 
 <code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="$Platform$ Card の例"
+           alt="{Platform} Card の例"
            github-src="layouts/card/overview">
 </code-view>
 
@@ -30,23 +30,55 @@ Card コンポーネントは、様々なオブジェクト タイプ、サイ�
 
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-`Card` を使用する前に、次のように登録する必要があります:
+<!-- React -->
 
-```razor
-IgbCardModule.Register(IgniteUIBlazor);
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
 ```
 
-```ts
-import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+次に、以下のように、`Card` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
 
-defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
+```tsx
+import { IgrCardModule, IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCardModule.register();
+```
+
+<!-- end: React -->
+
+`Card` を使用する前に、次のように登録する必要があります:
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
+```
+
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `Card` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
+```ts
+import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcCardComponent);
 ```
 
 次に、デモのカード テンプレートを表すために、以下のコードを追加します:
@@ -81,6 +113,38 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
         </div>
     </igc-card-actions>
 </igc-card>
+```
+
+```tsx
+<IgrCard>
+    <IgrCardMedia>
+        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50"></img>
+    </IgrCardMedia>
+    <IgrCardHeader>
+        <h3 slot="title">New York City</h3>
+        <h5 slot="subtitle">City in New York</h5>
+    </IgrCardHeader>
+    <IgrCardContent>
+        <p>New York City comprises 5 boroughs sitting where the
+            Hudson River meets the Atlantic Ocean. At its core is Manhattan,
+            a densely populated borough that’s among the world’s major commercial,
+            financial and cultural centers.</p>
+    </IgrCardContent>
+    <IgrCardActions>
+        <IgrButton>
+            <span>Read more</span>
+            <IgrRipple />
+        </IgrButton>
+        <div slot="end">
+            <IgrIconButton iconName="twitter" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+            <IgrIconButton iconName="facebook" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+        </div>
+    </IgrCardActions>
+</IgrCard>
 ```
 
 ```razor
@@ -136,6 +200,16 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
+```
+
+```tsx
+<IgrCardHeader>
+    <div slot="thumbnail">
+        <IgrAvatar src="path/to/image" initials="TS" />
+    </div>
+    <h3 slot="title">Title</h3>
+    <h5 slot="subtitle">Subtitle</h5>
+</IgrCardHeader>
 ```
 
 ```razor
@@ -208,6 +282,30 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCard>
 ```
 
+```tsx
+<IgrCard>
+    <div className="card-horizontal">
+        <div>
+            <IgrCardHeader>
+                <img src="https://static.infragistics.com/xplatform/images/music/rozes.jpg" slot="thumbnail"></img>
+                <h5 slot="title">Rozes</h5>
+                <h5 slot="subtitle">Under the Grave (2016)</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>As I have always said: I write what’s real and what’s true,
+                    even if it means throwing myself under the bus.</p>
+            </IgrCardContent>
+        </div>
+        <div className="divider"></div>
+        <IgrCardActions>
+            <span className="material-icons">skip_previous</span>
+            <span className="material-icons">play_arrow</span>
+            <span className="material-icons">skip_next</span>
+        </IgrCardActions>
+    </div>
+</IgrCard>
+```
+
 追加の `div` 要素を使用して `CardHeader` と `CardContent` をバンドルし、それらを垂直方向に整列させ、`.card-horizontal` クラスをラッピング `div` 要素に適用して、カードの 2 つのセクションを水平方向に整列させます。
 
 `.card-horizontal` クラスが適用されるスタイルは次のとおりです。
@@ -234,7 +332,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 <code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="$Platform$ Card の例"
+           alt="{Platform} Card の例"
            github-src="layouts/card/horizontal">
 </code-view>
 
@@ -294,6 +392,32 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCard>
 ```
 
+```tsx
+<IgrCard>
+    <div className="semi-horizontal">
+        <div>
+            <IgrCardHeader>
+                <IgrAvatar src="https://static.infragistics.com/xplatform/images/music/singer_with_mic.jpg" slot="thumbnail" />
+                <h5 slot="title">HERE</h5>
+                <h5 slot="subtitle">by Mellow D</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>Far far away, behind the word mountains,
+                    far from the countries Vokalia and Consonantia,
+                    there live the blind texts.</p>
+            </IgrCardContent>
+            <IgrCardActions>
+                <IgrButton><span>Play Album</span></IgrButton>
+            </IgrCardActions>
+        </div>
+
+        <IgrCardMedia className='card-media'>
+            <img src="https://static.infragistics.com/xplatform/images/music/singer_female.jpg"></img>
+        </IgrCardMedia>
+    </div>
+</IgrCard>
+```
+
 ```css
 .semi-horizontal {
     display: flex;
@@ -310,7 +434,7 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 <code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="$Platform$ Semi Horizontal Card の例"
+           alt="{Platform} Semi Horizontal Card の例"
            github-src="layouts/card/semi-horizontal">
 </code-view>
 
@@ -355,6 +479,23 @@ defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentCompone
 </IgbCardActions>
 ```
 
+```tsx
+<IgrCardActions>
+    <IgrButton>
+        <span>Read more</span>
+        <IgrRipple />
+    </IgrButton>
+    <div slot="end">
+        <IgrIconButton ref={this.iconRef} className="marginIcon" iconName="twitter" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+        <IgrIconButton iconName="facebook" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+    </div>
+</IgrCardActions>
+```
+
 これで、アイコン ボタンがフラット スタイル テキスト ボタンの前に表示されます。
 
 また、slot プロパティを省略して要素をデフォルトのスロットに移動するだけで、間にコンテンツを追加することもできます。
@@ -386,50 +527,30 @@ igc-icon-button+igc-icon-button {
 <code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="$Platform$ Card スタイル設定の例"
+           alt="{Platform} Card スタイル設定の例"
            github-src="layouts/card/styling">
 </code-view>
 
 
 ### まとめ
-このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の $Platform$ を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
-
-<!-- Web Components -->
-
-## API リファレンス
-
-カード API に関する詳細な情報は、以下のリンクのトピックを参照してください。
-* `Card`
-* `CardHeader`
-* `CardContent`
-* `CardMedia`
-* `CardActions`
-
-
-使用したその他のコンポーネントとディレクティブ:
-
-* `Avatar`
-* `Icon`
-* `Button`
-* `IconButton`
-* `Ripple`
-
-<!-- end: WebComponents -->
+このトピックでは Card コンポーネントの詳細について説明しました。シンプルなカードを作成し、画像をいくつか追加して、もう少し魅力的にしました。カード内にアバター、ボタン、アイコンなどの追加の {Platform} を使用して、エクスペリエンスを充実させ、いくつかの機能を追加しました。そして最後に、基本要素の原色を変更することでカードの外観を変更しました。
 
 <div class="divider"></div>
 
+
+## API リファレンス
+
+ - `Avatar`
+ - `Button`
+ - `CardActions`
+ - `CardContent`
+ - `CardHeader`
+ - `CardMedia`
+ - `Card`
+ - `IconButton`
+ - `Icon`
+
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

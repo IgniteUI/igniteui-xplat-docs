@@ -1,34 +1,34 @@
 ---
-title: $Platform$ Calendar | Calendar | Infragistics
-_description: Create an intuitive calendar for applications to display date information, and users to input date information with $ProductName$ Calendar component.
-_keywords: $Platform$ Calendar, $ProductName$, Infragistics
+title: {Platform} Calendar | Calendar | Infragistics
+_description: Create an intuitive calendar for applications to display date information, and users to input date information with {ProductName} Calendar component.
+_keywords: {Platform} Calendar, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Calendar', 'DateRangeType', 'DateRangeDescriptor']
 ---
 
-# $Platform$ Calendar Overview
-The $ProductName$ Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
+# {Platform} Calendar Overview
+The {ProductName} Calendar component provides an easy and intuitive way to display date information. Users can choose from three different selection modes - single selection, multiple selection or range selection.
 
 
-## $Platform$ Calendar Example
+## {Platform} Calendar Example
 <div class="divider--half"></div>
 
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="$Platform$ Calendar Example"
+           alt="{Platform} Calendar Example"
            github-src="scheduling/calendar/overview">
 </code-view>
 
 ## Usage
 
-To get started with the Calendar component, first you need to install $ProductName$ package by typing the following command:
+To get started with the Calendar component, first you need to install {ProductName} package by typing the following command:
 
 <pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install {PackageComponents}
 </pre>
 
-The next step is to import the `Calendar` and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
+The next step is to import the `Calendar` and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
 ```ts
 import { defineComponents, IgcCalendarComponent } from 'igniteui-webcomponents';
@@ -58,7 +58,7 @@ We can easily change the default mode using the `Selection` property:
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="$Platform$ Calendar Multiple Selection Example"
+           alt="{Platform} Calendar Multiple Selection Example"
            github-src="scheduling/calendar/multiple-selection ">
 </code-view>
 
@@ -74,7 +74,7 @@ Following the same approach, we can switch to `range` selection mode:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="$Platform$ Calendar Range Selection Example"
+           alt="{Platform} Calendar Range Selection Example"
            github-src="scheduling/calendar/range-selection">
 </code-view>
 
@@ -84,15 +84,15 @@ The Calendar component allows you to switch between three different views: days,
 
 ### Header Options
 
-By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to `false`. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
+By default, the Calendar component renders a header area which contains information about the selected dates. You could hide the header by setting the `HasHeader` property to **false**. You could also configure `vertical` or `horizontal` orientation of the header using the `HeaderOrientation` property.
 
-> [!NOTE]
+> [!Note]
 > Please note that the Calendar header is not rendered when the selection is `multiple`.
 
-> [!NOTE]
+> [!Note]
 > Please note that the Calendar DOM properties use `camelCase` naming while their corresponding HTML attributes are using `kebab-case`. For example the `HeaderOrientation` property corresponds to the `header-orientation` attribute.
 
-The $ProductName$ Calendar component exposes a `title` slot which allows you to customize the title of the header.
+The {ProductName} Calendar component exposes a `title` slot which allows you to customize the title of the header.
 
 ```html
 <igc-calendar selection="range" header-orientation="vertical">
@@ -105,7 +105,7 @@ The following sample demonstrates the above configuration:
 <code-view style="height: 370px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="$Platform$ Calendar Header Example"
+           alt="{Platform} Calendar Header Example"
            github-src="scheduling/calendar/header">
 </code-view>
 
@@ -153,7 +153,7 @@ If everything went well, we should now have a Calendar with customized display, 
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="$Platform$ Calendar Formatting Example"
+           alt="{Platform} Calendar Formatting Example"
            github-src="scheduling/calendar/formatting">
 </code-view>
 
@@ -186,7 +186,7 @@ These configurations should have the following result:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="$Platform$ Calendar Disabled Dates Example"
+           alt="{Platform} Calendar Disabled Dates Example"
            github-src="scheduling/calendar/disabled-dates">
 </code-view>
 
@@ -211,7 +211,7 @@ The following demo illustrates a Calendar with a vacation request option:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="$Platform$ Calendar Special Dates Example"
+           alt="{Platform} Calendar Special Dates Example"
            github-src="scheduling/calendar/special-dates">
 </code-view>
 
@@ -227,7 +227,7 @@ The following demo illustrates a Calendar with enabled week numbers:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="$Platform$ Calendar Week Numbers Example"
+           alt="{Platform} Calendar Week Numbers Example"
            github-src="scheduling/calendar/week-numbers">
 </code-view>
 
@@ -235,7 +235,7 @@ The following demo illustrates a Calendar with enabled week numbers:
 
 Using the `VisibleMonths` property you can display more than one month when the Calendar is in days view. When multiple months are displayed you can configure whether you want to stack them vertically or horizontally using the `Orientation` property. By default the `Orientation` property is set to `horizontal`.
 
-The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to `true` or using its corresponding boolean attribute `hide-outside-days`.
+The Calendar displays leading and trailing dates from the previous and the next months. You could hide these dates by setting the `HideOutsideDays` property to **true** or using its corresponding boolean attribute `hide-outside-days`.
 
 ```html
 <igc-calendar visible-months="2" hide-outside-days></igc-calendar>
@@ -246,7 +246,7 @@ The following sample demonstrates the multiple months configuration:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="$Platform$ Calendar Multiple Months Example"
+           alt="{Platform} Calendar Multiple Months Example"
            github-src="scheduling/calendar/multiple-months">
 </code-view>
 
@@ -257,7 +257,7 @@ You could control the size and spacing of the Calendar inner elements by changin
 <code-view style="height: 520px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="$Platform$ Calendar Size Example"
+           alt="{Platform} Calendar Size Example"
            github-src="scheduling/calendar/size">
 </code-view>
 
@@ -386,7 +386,7 @@ The following sample demonstrates the above CSS configuration:
 <code-view style="height: 480px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="$Platform$ Calendar Styling Example"
+           alt="{Platform} Calendar Styling Example"
            github-src="scheduling/calendar/styling">
 </code-view>
 
@@ -396,10 +396,8 @@ The following sample demonstrates the above CSS configuration:
 * `Radio`
 * `RadioGroup`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-Our community is active and always welcoming to new ideas.
-
-* [$Platform$ **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [$Platform$ **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

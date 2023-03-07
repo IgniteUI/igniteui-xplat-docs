@@ -43,6 +43,8 @@
     "names":[{"platform":"Angular","fileName":"igx-anchored-category-series-component.ts","mappedName":"IgxAnchoredCategorySeriesComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueMemberPath"}],"originalName":"ValueMemberPath"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueMemberAsLegendLabel"}],"originalName":"ValueMemberAsLegendLabel"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueMemberAsLegendUnit"}],"originalName":"ValueMemberAsLegendUnit"},
     { "names":[{"platform":"Angular","mappedType":"TrendLineType","mappedName":"trendLineType"}],"originalName":"TrendLineType"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},

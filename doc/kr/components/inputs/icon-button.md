@@ -1,18 +1,18 @@
 ---
-title: $Platform$ Badge | Infragistics
-_description: Infragistics' $Platform$ Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
-_keywords: $Platform$, UI controls, web widgets, UI widgets, $Platform$ Button Components, Infragistics
+title: {Platform} Badge | Infragistics
+_description: Infragistics' {Platform} Button provides different variants and styles which are easily configurable to match the appearance and functionality that we want to achieve.
+_keywords: {Platform}, UI controls, web widgets, UI widgets, {Platform} Button Components, Infragistics
 _language: kr
 mentionedTypes: ['Button', 'ButtonBase']
 ---
 
-# $Platform$ Icon Button Overview
+# {Platform} Icon Button Overview
 
-The $ProductName$ Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
+The {ProductName} Icon Button component allows developers to use registered icons as buttons in their application. It carries all features of the [icon](../layouts/icon.md) component but adds features from the [button](button.md) component as well.
 
 ## Usage
 
-To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+To get started with the Icon Button Web Component we need to import the `IconButton` in our typescript file and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcIconButtonComponent } from "igniteui-webcomponents";
@@ -34,7 +34,7 @@ Similar to the regular button components, the icon button supports several varia
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-variant" alt="{Platform} Icon Button Example"
            github-src="inputs/icon-button/variant">
 </code-view>
 
@@ -48,7 +48,7 @@ The size of the button can be changed by setting the `size` attribute to any of 
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-size" alt="{Platform} Icon Button Example"
            github-src="inputs/icon-button/size">
 </code-view>
 
@@ -95,7 +95,7 @@ igc-icon-button::part(icon) {
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="$Platform$ Icon Button Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/icon-button-styling" alt="{Platform} Icon Button Example"
            github-src="inputs/icon-button/styling">
 </code-view>
 
@@ -103,9 +103,8 @@ igc-icon-button::part(icon) {
 
 * `IconButton`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

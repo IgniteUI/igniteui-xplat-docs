@@ -1,27 +1,28 @@
 ---
-title: $Platform$ Data Chart | Data Visualization Tools | Navigation | Infragistics
-_description: Navigate Infragistics' $Platform$ charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about $ProductName$ graph navigation capabilities!
-_keywords: $Platform$ charts, data chart, navigation, $ProductName$, Infragistics
+title: {Platform} Data Chart | Data Visualization Tools | Navigation | Infragistics
+_description: Navigate Infragistics' {Platform} charts by panning right and left and zooming horizontally and vertically using mouse or touch. Learn about {ProductName} graph navigation capabilities!
+_keywords: {Platform} charts, data chart, navigation, {ProductName}, Infragistics
+_language: kr
 mentionedTypes: ["XamDataChart", "CategoryChart", "FinancialChart", "ModifierKeys"]
 ---
-# $Platform$ Chart Navigation
+# {Platform} Chart Navigation
 
-The $ProductName$ charts allows for interactive panning and zooming via the mouse, keyboard and touch.
+The {ProductName} charts allows for interactive panning and zooming via the mouse, keyboard and touch.
 
-## $Platform$ Chart Navigation Example
+## {Platform} Chart Navigation Example
 
 The following example shows all of the available panning and zooming options that are available. You can interact with the example by using the buttons, or select your desired options using the dropdowns or checkboxes.
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="$Platform$ Navigation Example"
+           alt="{Platform} Navigation Example"
            github-src="charts/data-chart/chart-navigation">
 </code-view>
 
 <div class="divider--half"></div>
 
-Like this sample? Get access to our complete $Platform$ toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/$ProductSpinal$/download">Download it for free.</a>
+Like this sample? Get access to our complete {Platform} toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">Download it for free.</a>
 
 ## Chart Navigation with User Interactions
 
@@ -31,7 +32,7 @@ It is also possible to zoom or pan simply by clicking the mouse or using touch. 
 
 ## Chart Navigation with Touch, Mouse and Keyboard
 
-Navigation in the $Platform$ data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default:
+Navigation in the {Platform} data chart can happen with either touch, the mouse or the keyboard. The following operations can be invoked using touch, mouse or keyboard operations by default:
 
 - **Panning**: Using arrow keys on the keyboard or holding the Shift key, clicking and dragging with the mouse or pressing and moving your finger via touch.
 - **Zoom In**: Using the PageUp key on the keyboard, rolling the mouse wheel up, or pinching to zoom in via touch.
@@ -50,9 +51,10 @@ The zoom and pan operations can also be enabled by using modifier keys by settin
 
 ## Chart Navigation through Code
 
-> NOTE: Code navigation of the chart can only be used for the `XamDataChart` control.
+> [!Note]
+> Code navigation of the chart can only be used for the `XamDataChart` control.
 
-The $Platform$ data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
+The {Platform} data chart provides several navigation properties that are updated each time a zoom or pan operation happens in the chart. You can also set each of these properties to zoom or pan the data chart programmatically. The following is a list of these properties:
 
 - `WindowPositionHorizontal`: A numeric value describing the X portion of the content view rectangle displayed by the data chart.
 - `WindowPositionVertical`: A numeric value describing the Y portion of the content view rectangle displayed by the data chart.
@@ -67,7 +69,7 @@ You can find more information about related chart features in these topics:
 - [Chart Tooltips](chart-tooltips.md)
 - [Chart Trendlines](chart-trendlines.md)
 
-## API Members
+## API References
 
 The following is a list of API members mentioned in the above sections:
 

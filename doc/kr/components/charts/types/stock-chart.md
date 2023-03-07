@@ -1,14 +1,15 @@
 ---
-title: $Platform$ Stock/Financial Charts | $ProductName$
-_description: The $ProductName$ Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
-_keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
+title: {Platform} Stock/Financial Charts | {ProductName}
+_description: The {ProductName} Stock Chart is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Try for FREE.
+_keywords: {Platform} Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics
+_language: kr
 mentionedTypes: ["FinancialChart", "ChartType", "IndicatorTypes", "ZoomSliderType"]
 ---
-# $Platform$ Stock Chart
+# {Platform} Stock Chart
 
-The $ProductName$ Stock Chart, sometimes referred to as $Platform$ Financial Chart or Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock Chart shows stock prices for a ticker over time in a Time Series X-Axis. Also, this chart shows information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for configurable period of time. The Stock Chart offers multiple ways in which the data can be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
+The {ProductName} Stock Chart, sometimes referred to as {Platform} Financial Chart or Candlestick Chart, is a composite visualization that renders stock ticker data, or price data in an interactive time-series display. Stock Chart shows stock prices for a ticker over time in a Time Series X-Axis. Also, this chart shows information for a company’s ticker data like Open Price, High Price, Low Price and Close Price (OHLC) for configurable period of time. The Stock Chart offers multiple ways in which the data can be visualized and interpreted, including display modes for price and volume and a host of Stock indicators.
 
-## $Platform$ Stock Chart Example
+## {Platform} Stock Chart Example
 
 You can create Stock Chart using the `FinancialChart` control by binding your data and optionally setting `ChartType` property to `Line` value, as shown in the example below.
 
@@ -16,14 +17,14 @@ You can create Stock Chart using the `FinancialChart` control by binding your da
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            github-src="charts/financial-chart/multiple-data"
-           alt="$Platform$ Stock Chart Example" >
+           alt="{Platform} Stock Chart Example" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## Stock Chart Recommendations
 
-### Are $Platform$ Stock Charts right for your project?
+### Are {Platform} Stock Charts right for your project?
 
 The typical stock chart is represented with ticker data in a candlestick chart which is used for the technical analysis of the price ranges. A candlestick chart compares the high and low prices of a day to the open and close of the ticker symbol.
 
@@ -60,18 +61,18 @@ As a Stock Chart is meant to allow the user to perform data analysis functions, 
 - All data items must contain 4 numeric columns for Open, High, Low, Close (OHLC) for a Candlestick chart.
 - All data items must contain 5 numeric columns for Open, High, Low, Close and Volume for a Candlestick chart.
 
-## $Platform$ Stock Chart with Multiple Series
+## {Platform} Stock Chart with Multiple Series
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            github-src="charts/financial-chart/multiple-data"
-           alt="$Platform$ Stock Index Chart" >
+           alt="{Platform} Stock Index Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Stock Chart
+## {Platform} Stock Chart
 
 In this example the Stock Chart is representing the S&P 500 over the course of a year; useful for investors and conducting technical analysis and forecasting future pricing/reports.
 
@@ -79,12 +80,12 @@ In this example the Stock Chart is representing the S&P 500 over the course of a
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
            github-src="charts/financial-chart/stock-index-chart"
-           alt="$Platform$ Stock Index Chart" >
+           alt="{Platform} Stock Index Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Stock Chart Styling
+## {Platform} Stock Chart Styling
 
 If you need a Stock Chart with more features such as composite other series, you can configure the thickness, outlines, brushes, negative outlines, negative brushes as demonstrated below. In this example, the stock chart is comparing revenue between Amazon, Microsoft and Tesla.
 
@@ -92,12 +93,12 @@ If you need a Stock Chart with more features such as composite other series, you
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
-           alt="$Platform$ Stock Index Chart" >
+           alt="{Platform} Stock Index Chart" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Chart Annotations
+## {Platform} Chart Annotations
 
 The Crosshair Annotation Layer provides crossing lines that meet at the actual value of every targeted series. Crosshair types include: Horizontal, Vertical, and Both. The Crosshairs can also be configured to snap to data points by setting the `CrosshairsSnapToData` property to true, otherwise the crosshairs will be interpolated between data points. Annotations can also be enabled to display the crosshair's value along the axis.
 
@@ -111,12 +112,12 @@ Note: When using the ordinal X axis mode, the CalloutsXMemberPath should point t
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            github-src="charts/financial-chart/annotations"
-           alt="$Platform$ Chart Annotations" >
+           alt="{Platform} Chart Annotations" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ Chart Panes
+## {Platform} Chart Panes
 
 The following panes are available:
 
@@ -150,7 +151,7 @@ In this example, the stock chart is plotting revenue for United States.
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            github-src="charts/financial-chart/panes"
-           alt="$Platform$ Chart Panes" >
+           alt="{Platform} Chart Panes" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -165,7 +166,7 @@ You can find more information about related chart features in these topics:
 - [Chart Trendlines](../features/chart-trendlines.md)
 - [Chart Performance](../features/chart-performance.md)
 
-## API Members
+## API References
 
 The following table lists API members mentioned in the above sections:
 

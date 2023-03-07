@@ -94,6 +94,7 @@
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getFirstDistinctDateTimeProperty"}],"originalName":"GetFirstDistinctDateTimeProperty"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getFirstStringPropertyPreferringDistinct"}],"originalName":"GetFirstStringPropertyPreferringDistinct"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getTitleString"}],"originalName":"GetTitleString"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"getTitleStringWithSeparator"}],"originalName":"GetTitleStringWithSeparator"},
     { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"extractTitle"}],"originalName":"ExtractTitle"},
     { "names":[{"platform":"Blazor","mappedType":"any","mappedName":"getNonNullPropertyValue"}],"originalName":"GetNonNullPropertyValue"},
     { "names":[{"platform":"Blazor","mappedType":"boolean","mappedName":"isStringPropertyDistinct"}],"originalName":"IsStringPropertyDistinct"},
@@ -143,7 +144,8 @@
   { "originalName":"IExternalDataSeriesAdapter",
     "names":[{"platform":"Blazor","fileName":"IExternalDataSeriesAdapter.cs","mappedName":"IExternalDataSeriesAdapter"}],
     "members":[
-    { "names":[{"platform":"Blazor","mappedType":"DataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
+    { "names":[{"platform":"Blazor","mappedType":"DataSourceLocalDataProvider","mappedName":"getDataProvider"}],"originalName":"GetDataProvider"},
+    { "names":[{"platform":"Blazor","mappedType":"DataSource","mappedName":"getLocalDataSource"}],"originalName":"GetLocalDataSource"}],"originalNamespace":"Infragistics.Controls.Charts.DataAdapters"},
   { "originalName":"SimpleFinancialPriceSeriesRule",
     "names":[{"platform":"Blazor","fileName":"SimpleFinancialPriceSeriesRule.cs","mappedName":"SimpleFinancialPriceSeriesRule"}],
     "members":[

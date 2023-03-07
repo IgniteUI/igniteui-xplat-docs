@@ -100,7 +100,6 @@
   { "originalName":"MoneyFlowIndexIndicator",
     "names":[{"platform":"React","fileName":"igr-money-flow-index-indicator.ts","dynamicModuleName":"igr-money-flow-index-indicator-dynamic-module.ts","moduleName":"igr-money-flow-index-indicator-module.ts","mappedName":"IgrMoneyFlowIndexIndicator"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isFinancialIndicator"}],"originalName":"IsFinancialIndicator"},
     { "names":[{"platform":"React","mappedType":"IndicatorDisplayType","mappedName":"defaultDisplayType"}],"originalName":"DefaultDisplayType"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"period"}],"originalName":"Period"}],"originalBaseTypeName":"StrategyBasedIndicator","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"MovingAverageConvergenceDivergenceIndicator",

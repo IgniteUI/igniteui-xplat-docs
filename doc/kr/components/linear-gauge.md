@@ -1,11 +1,12 @@
 ---
-title: $Platform$ Linear Gauge Component - Native $Platform$ | $ProductName$
+title: {Platform} Linear Gauge Component - Native {Platform} | {ProductName}
 _description: Use the Linear Gauge component to see a simple display of a value compared against a scale and one or more ranges.
-_keywords: $Platform$, $ProductName$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Grid, $Platform$ Chart Control, $Platform$ Grid Component, $Platform$ linear graph Component, $Platform$ linear graph
+_keywords: {Platform}, {ProductName}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components, Native {Platform} Components Library, {Platform} Chart, {Platform} Data Grid, {Platform} Chart Control, {Platform} Grid Component, {Platform} linear graph Component, {Platform} linear graph
 _language: kr
+mentionedTypes: ['XamLinearGauge']
 ---
 
-# $Platform$ Linear Gauge
+# {Platform} Linear Gauge
 
 Use the Linear Gauge component to see a simple display of a value compared against a scale and one or more ranges.
 
@@ -32,14 +33,16 @@ When installing the gauge package, the core package must also be installed.
 - **npm install --save {PackageGauges}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamLinearGauge` requires the following modules:
 
-```razor
-LinearGaugeModule.Register(IgniteUIBlazor);
-```
 
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbLinearGaugeModule));
+```
 
 ```ts
 // app.module.ts
@@ -139,7 +142,7 @@ The following code demonstrates how create a linear gauge containing a needle an
 
 <div class="divider--half"></div>
 
-# $Platform$ Configurable Elements
+# {Platform} Configurable Elements
 
 ## Needle
 This is the primary measure displayed by the component and is visualized as a bar or you can customize it to show almost any shape as is demonstrated below.

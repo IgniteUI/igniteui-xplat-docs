@@ -1,53 +1,90 @@
 ---
-title: $Platform$ NavDrawer | Infragistics
-_description: Infragistics' $Platform$ NavDrawer provides side navigation that can be expanded or collapsed within the content
-_keywords: $Platform$ navbar, $ProductName$, Infragistics
+title: {Platform} NavDrawer | Infragistics
+_description: Infragistics' {Platform} NavDrawer provides side navigation that can be expanded or collapsed within the content
+_keywords: {Platform} navbar, {ProductName}, Infragistics
 mentionedTypes: ['NavDrawer']
 ---
 
-# $Platform$ Navigation Drawer Overview
+# {Platform} Navigation Drawer Overview
 
-The $ProductName$ Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
+The {ProductName} Navigation Drawer provides side navigation that can be expanded or collapsed within the content. A mini version provides quick access to navigation even when closed. Its content is completely customizable while also providing default menu item styling.
 
 
-## $Platform$ Navigation Drawer Example
+## {Platform} Navigation Drawer Example
+
+This sample demonstrates how to create `NavDrawer` component.
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
 ## Usage
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
+```
+
+You will then need to import the `NavDrawer`, its necessary CSS, and register its module, like so:
+
+```tsx
+import { IgrNavDrawerModule, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavDrawerModule.register();
+```
+
+<!-- end: React -->
 
 Before using the `NavDrawer`, you need to register it as follows:
 
+
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `NavDrawer` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
+defineComponents(IgcNavDrawerComponent);
 ```
-
 
 ## Adding Navigation Drawer Items
 
 The simplest way to start using the `NavDrawer` is as follows:
 
-```html    
+```html
 <igc-nav-drawer open="true">
     <igc-nav-drawer-header-item>
         Sample Drawer
@@ -60,7 +97,7 @@ The simplest way to start using the `NavDrawer` is as follows:
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -79,12 +116,32 @@ The simplest way to start using the `NavDrawer` is as follows:
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer open={true}>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 If all went well, you should see the following in your browser:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer Items Example"
+           alt="{Platform} Navigation Drawer Items Example"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
@@ -112,7 +169,7 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -136,15 +193,40 @@ To enhance our component a bit, we can use it in conjunction with the `Navbar`. 
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavbar>
+    <div slot="start">
+        <IgrIcon iconName="menu" collection="material"/>
+    </div>
+    <h2>Home</h2>
+</IgrNavbar>
+
+<IgrNavDrawer>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 Let's also add some radio buttons to display all `position` values. This way whenever one gets selected, we will change the position of the drawer.
 
 ```ts
 // ...
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-    IgcRadioComponent, IgcRadioGroupComponent);
+defineComponents(IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {
@@ -170,7 +252,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </IgbRadioGroup>
 
 @code {
-    
+
     public IgbNavDrawer NavDrawerRef { get; set; }
 
     public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
@@ -207,6 +289,31 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="start" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Start</span>
+    </IgrRadio>
+    <IgrRadio value="end" labelPosition="after" change={this.onRadioChange}>
+        <span>End</span>
+    </IgrRadio>
+    <IgrRadio value="top" labelPosition="after" change={this.onRadioChange}>
+        <span>Top</span>
+    </IgrRadio>
+    <IgrRadio value="bottom" labelPosition="after" change={this.onRadioChange}>
+        <span>Bottom</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrNavDrawer position={this.state.drawerPosition} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ drawerPosition: e.value });
+    }
+}
+```
+
 And finally, we need a way to open and close our navigation drawer. There are a couple of ways to achieve this, but for the sake of this example we will do the following:
 
 ```ts
@@ -230,7 +337,15 @@ public void OnMenuIconClick()
 {
     if(this.NavDrawerRef != null)
     {
-        this.NavDrawerRef.Show();        
+        this.NavDrawerRef.Show();
+    }
+}
+```
+
+```tsx
+public onMenuIconClick() {
+    if (this.navDrawerRef) {
+        this.navDrawerRef.show();
     }
 }
 ```
@@ -240,7 +355,7 @@ If all goes well, your component should now look like this:
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar Example"
+           alt="{Platform} Navigation Drawer Navbar Example"
            github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
 
@@ -248,7 +363,7 @@ If all goes well, your component should now look like this:
 
 With the mini variant, the Navigation Drawer changes its width instead of closing. It is used to maintain quick navigation, available at all times, leaving just the icons. To achieve that, you only need to set up the `mini` slot of the drawer.
 
-```html    
+```html
 <igc-nav-drawer position="start">
     <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
     <igc-nav-drawer-item>
@@ -267,7 +382,7 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
             <igc-icon slot="icon" name="search"></igc-icon>
         </igc-nav-drawer-item>
     </div>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -294,12 +409,41 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material"/>
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+    <div slot="mini">
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="home" collection="material"/>
+            </div>
+        </IgrNavDrawerItem>
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="search" collection="material" />
+            </div>
+        </IgrNavDrawerItem>
+    </div>
+</IgrNavDrawer>
+```
+
 And here's the result:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini Example"
+           alt="{Platform} Navigation Drawer Mini Example"
            github-src="menus/nav-drawer/add-mini">
 </code-view>
 
@@ -333,39 +477,23 @@ igc-nav-drawer-header-item {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer Styling Example"
+           alt="{Platform} Navigation Drawer Styling Example"
            github-src="menus/nav-drawer/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API References
 
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-
-Additional Web Components that were used:
-
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
+ - `Button`
+ - `Icon`
+ - `NavDrawerHeaderItem`
+ - `NavDrawerItem`
+ - `NavDrawer`
+ - `Navbar`
+ - `RadioGroup`
+ - `Radio`
 
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

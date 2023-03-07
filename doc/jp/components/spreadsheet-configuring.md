@@ -1,21 +1,21 @@
 ---
-title: $Platform$ スプレッドシート | 設定 | セル | 数式 | ナビゲーション | 選択 | インフラジスティックス
-_description: $ProductName$ によって $Platform$ スプレッドシートを設定して、チャート データを向上させる方法について説明します。Infragistics はデータ可視化を向上させます。
-_keywords: Excel Spreadsheet, $ProductName$, Infragistics, Excel スプレッドシート, インフラジスティックス
+title: {Platform} スプレッドシート | 設定 | セル | 数式 | ナビゲーション | 選択 | インフラジスティックス
+_description: {ProductName} によって {Platform} スプレッドシートを設定して、チャート データを向上させる方法について説明します。Infragistics はデータ可視化を向上させます。
+_keywords: Excel Spreadsheet, {ProductName}, Infragistics, Excel スプレッドシート, インフラジスティックス
 mentionedTypes: ['Spreadsheet']
 _language: ja
 ---
-# $Platform$ Spreadsheet の構成
+# {Platform} Spreadsheet の構成
 
-$Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズーム レベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
+{Platform} Spreadsheet コンポネントは、セルの編集、グリッド線とヘッダーの表示、保護、ズーム レベル、および Excel ワークシートに関連するその他のさまざまなプロパティなど、コントロールのさまざまな側面を設定できます。
 
-## $Platform$ Spreadsheet の構成の例
+## {Platform} Spreadsheet の構成の例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-config-options"
-           alt="$Platform$ Spreadsheet の構成の例"
+           alt="{Platform} Spreadsheet の構成の例"
            github-src="excel/spreadsheet/config-options">
 </code-view>
 
@@ -23,9 +23,9 @@ $Platform$ Spreadsheet コンポネントは、セルの編集、グリッド線
 
 ## セル編集の構成
 
-ユーザーがセルの値を編集して新しい入力を確認すると、スプレッドシートの構成に応じて、`Spreadsheet` コントロールに `Enter` キーを押すと現在アクティブなセルに隣接するセルに移動できます。
+ユーザーがセルの値を編集して新しい入力を確認すると、スプレッドシートの構成に応じて、`Spreadsheet` コントロールに <kbd>Enter</kbd> キーを押すと現在アクティブなセルに隣接するセルに移動できます。
 
-この `Enter` キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを `true` に設定できます。false に設定すると、`Enter` キーを押してもアクティブ セルは変わりません。
+この <kbd>Enter</kbd> キーナビゲーションを有効にするために、`IsEnterKeyNavigationEnabled` プロパティを **true** に設定できます。false に設定すると、<kbd>Enter</kbd> キーを押してもアクティブ セルは変わりません。
 
 Enter キーを押したときに移動する隣接セルの方向は、`EnterKeyNavigationDirection` プロパティを `Down`、`Up`、`Left`、`Right` に設定して構成することもできます。
 
@@ -64,7 +64,7 @@ this.spreadsheet.enterKeyNavigationDirection = SpreadsheetEnterKeyNavigationDire
 
 ## 数式バーの構成
 
-$Platform$ `Spreadsheet` は、コントロールの `IsFormulaBarVisible` プロパティを設定して数式バーの表示/非表示を設定できます。
+{Platform} `Spreadsheet` は、コントロールの `IsFormulaBarVisible` プロパティを設定して数式バーの表示/非表示を設定できます。
 
 以下のコード スニペットは上記のデモです。
 
@@ -134,7 +134,7 @@ this.spreadsheet.areHeadersVisible = false;
 
 たとえば、終了モードになっているときに、100x100 の大きなデータブロックをクリックして`右`矢印キーを押すと、現在の行の右端に移動し、データのある一番右の列に移動します。この操作の後、`Spreadsheet` は終了モードから飛び出します。
 
-ユーザーが `End` キーを押すと、実行時に終了モードが有効になりますが、スプレッドシート コントロールの `IsInEndMode` プロパティを設定することでプログラムで設定できます。
+ユーザーが <kbd>End</kbd> キーを押すと、実行時に終了モードが有効になりますが、スプレッドシート コントロールの `IsInEndMode` プロパティを設定することでプログラムで設定できます。
 
 以下のコード スニペットは、`Spreadsheet` を終了モードで開始させる方法を示しています。
 
@@ -229,7 +229,7 @@ this.spreadsheet.workbook.windowOptions.tabBarWidth = 200;
 
 ## ズーム レベルの設定
 
-$Platform$ Spreadsheet コンポーネントは、`ZoomLevel` プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
+{Platform} Spreadsheet コンポーネントは、`ZoomLevel` プロパティを設定してズームインとズームアウト機能を追加できます。ズーム レベルは最大 400%、最小 10% です。
 
 このプロパティを数値に設定すると、整数としてのパーセンテージが表されるため、`ZoomLevel` を 100 に設定することは、100% に設定することと同じです。
 
@@ -250,3 +250,17 @@ $Platform$ Spreadsheet コンポーネントは、`ZoomLevel` プロパティを
 ```ts
 this.spreadsheet.zoomLevel = 200;
 ```
+
+## API リファレンス
+
+ - `ActiveCell`
+ - `ActiveSelection`
+ - `CellRanges`
+ - `ExtendSelection`:
+ - `SelectionMode`
+ - `SpreadsheetCellRange`
+ - `SpreadsheetSelection`
+ - `Spreadsheet`
+ - `WindowOptions`
+ - `Workbook`
+ - `ZoomLevel`

@@ -1,11 +1,12 @@
 ---
-title: $Platform$ Excel Library Component - Native Angular | Ignite UI for Angular
+title: {Platform} Excel Library Component - Native Angular | Ignite UI for Angular
 _description: The Ignite UI for Excel Library component ... TODO.
 _keywords: Ignite UI for Angular, Angular, Native Angular Components Suite, Native Angular Controls, Native Angular Components, Native Angular Components Library, Angular Excel Library, Angular Excel Library Example, Angular Excel Library Component, Angular Excel Engine
 _language: kr
+mentionedTypes: ['Workbook', 'WorksheetTable', 'Worksheet', 'SortSettings']
 ---
 
-# $Platform$ Excel Library
+# {Platform} Excel Library
 
 The Infragistics Excel Library allows you to work with spreadsheet data using familiar Microsoft® Excel® spreadsheet objects like Workbooks, Worksheets, Cells, Formulas and many more. The Infragistics Excel Library makes it easy for you to represent the data of your application in an Excel spreadsheet as well as transfer data from Excel into your application.
 
@@ -85,13 +86,13 @@ The following is a list of the supported versions of Excel.**
 
 -  Microsoft Excel 2016
 
-> [!NOTE]
+> [!Note]
 > The Excel Library does not support the Excel Binary Workbook (.xlsb) format at this time.
 
 ## Load and Save Workbooks
 Now that the Excel Library module is imported, next step is to load a workbook.
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 
@@ -108,7 +109,7 @@ ExcelUtility.save(workbook, "fileName");
 
 ```
 
->[!NOTE]
+> [!Note]
 >For Angular
 ><div class="divider--half"></div>
 >

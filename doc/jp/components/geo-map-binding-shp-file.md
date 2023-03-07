@@ -1,28 +1,28 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
-_description: インフラジスティックスの $Platform$ JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。$ProductName$ マップのサンプルを是非お試しください!
-_keywords: $Platform$ map, shapefiles, $ProductName$, Infragistics, data binding, $Platform$ マップ, シェープファイル, データ バインディング, インフラジスティックス
-mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
+title: {Platform} マップ | データ可視化ツール | 地理的シェープ ファイルのバインディング | インフラジスティックス
+_description: インフラジスティックスの {Platform} JavaScript マップを使用して、シェイプ ファイルから地理空間データを読み込みます。{ProductName} マップのサンプルを是非お試しください!
+_keywords: {Platform} map, shapefiles, {ProductName}, Infragistics, data binding, {Platform} マップ, シェープファイル, データ バインディング, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
-# $Platform$ シェープ ファイルを地理的データにバインディング
+# {Platform} シェープ ファイルを地理的データにバインディング
 
-$ProductName$ Map コンポーネントの `ShapeDataSource` クラスは、形状ファイルから地理空間データ (ポイント/位置、ポリライン、ポリゴン) を読み込み、それを `ShapefileRecord` オブジェクトのコレクションに変換します。
+{ProductName} Map コンポーネントの `ShapefileConverter` クラスは、形状ファイルから地理空間データ (ポイント/位置、ポリライン、ポリゴン) を読み込み、それを `ShapefileRecord` オブジェクトのコレクションに変換します。
 
 
-## $Platform$ シェープ ファイルを地理的データにバインディングの例
+## {Platform} シェープ ファイルを地理的データにバインディングの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-shp-polylines"
-           alt="$Platform$ シェープ ファイルを地理的データにバインディングの例"
+           alt="{Platform} シェープ ファイルを地理的データにバインディングの例"
            github-src="maps/geo-map/binding-shp-polylines">
 </code-view>
 
 <div class="divider--half"></div>
 
-以下の表は、シェイプ ファイルを読み込むための `ShapeDataSource` クラスのプロパティを説明します。
+以下の表は、シェイプ ファイルを読み込むための `ShapefileConverter` クラスのプロパティを説明します。
 
 
 | プロパティ | 型 | 概要   |
@@ -33,10 +33,10 @@ $ProductName$ Map コンポーネントの `ShapeDataSource` クラスは、形�
 <!-- TODO add for WPF only: -->
 <!-- Both of the source properties for shape files are of Uri type. This means that shape files can be embedded resources in the application assembly and on the internet (via http). Refer to the previous section for more information on this process. The rules for resolving Uri objects are equivalent to any standard Uri property, for example the BitmapImage.UriSource property. -->
 
-両方のソース プロパティが null 以外の値に設定されると、`ShapeDataSource` オブジェクトの ImportAsync メソッドが起動し、シェイプ ファイルを取得して読み込み、最終的に変換を実行します。この操作が完了すると、`ShapeDataSource` は `ShapefileRecord` オブジェクトで生成され、シェイプ ファイルから地理空間データを読み込んで変換するプロセスが完了したことを通知するために、`ImportCompleted` イベントが起動されます。
+両方のソース プロパティが null 以外の値に設定されると、`ShapefileConverter` オブジェクトの ImportAsync メソッドが起動し、シェイプ ファイルを取得して読み込み、最終的に変換を実行します。この操作が完了すると、`ShapefileConverter` は `ShapefileRecord` オブジェクトで生成され、シェイプ ファイルから地理空間データを読み込んで変換するプロセスが完了したことを通知するために、`ImportCompleted` イベントが起動されます。
 
 ## シェープファイルの読み込み
-以下のコードは、世界の主要都市の場所を含むシェイプ ファイルを読み込むための `ShapeDataSource` オブジェクトのインスタンスを作成します。また、xamGeographicMap コントロールにデータをバインドするための前提条件として `ImportCompleted` イベントを処理する方法も示します。
+以下のコードは、世界の主要都市の場所を含むシェイプ ファイルを読み込むための `ShapefileConverter` オブジェクトのインスタンスを作成します。また、xamGeographicMap コントロールにデータをバインドするための前提条件として `ImportCompleted` イベントを処理する方法も示します。
 
 ```html
  TODO - ADD CODE SNIPPET
@@ -54,7 +54,7 @@ sds.dataBind();
 ```
 
 ## シェープファイルをバインド
-Map コンポーネントでは、Geographic Series は、シェイプ ファイルから読み込まれる地理的データを表示するために使用されます。すべてのタイプの地理的シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。`ShapeDataSource` は `ShapefileRecord` オブジェクトのリストを含むため、このような配列の例です。
+Map コンポーネントでは、Geographic Series は、シェイプ ファイルから読み込まれる地理的データを表示するために使用されます。すべてのタイプの地理的シリーズには、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。`ShapefileConverter` は `ShapefileRecord` オブジェクトのリストを含むため、このような配列の例です。
 
 `ShapefileRecord` クラスは、以下の表にリストする地理的データを保存するためのプロパティを提供します。
 
@@ -67,8 +67,8 @@ Map コンポーネントでは、Geographic Series は、シェイプ ファイ
 このデータ構造は、適切なデータ列がマップされている限り、ほとんどの地理的シリーズでの使用に適しています。
 
 ## コード スニペット
-このコード例は、シェープ ファイルが `ShapeDataSource` を使用して読み込まれたことを前提としています。
-以下のコードは、マップ コンポーネント内の `GeographicPolylineSeries` を `ShapeDataSource` にバインドし、すべての `ShapefileRecord` オブジェクトの `Points` プロパティをマップします。
+このコード例は、シェープ ファイルが `ShapefileConverter` を使用して読み込まれたことを前提としています。
+以下のコードは、マップ コンポーネント内の `GeographicPolylineSeries` を `ShapefileConverter` にバインドし、すべての `ShapefileRecord` オブジェクトの `Points` プロパティをマップします。
 
 ```html
 <div className="sampleRoot" >
@@ -233,7 +233,7 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <IgbGeographicPolylineSeries ShapefileDataSource="@DataSource"
@@ -248,8 +248,6 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCableRoutes.shp",
@@ -258,3 +256,12 @@ onDataLoaded(sds: IgcShapeDataSource, e: any) {
     }
 }
 ```
+
+## API リファレンス
+
+ - `Fields`
+ - `GeographicPolylineSeries`
+ - `ImportCompleted`
+ - `ItemsSource`
+ - `Points`
+ - `ShapefileConverter`

@@ -1,54 +1,91 @@
 ---
-title: $Platform$ NavDrawer | インフラジスティックス
-_description: インフラジスティックスの $Platform$ NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
-_keywords: $Platform$ navbar, $ProductName$, Infragistics, $Platform$ ナビゲーション バー, インフラジスティックス
+title: {Platform} NavDrawer | インフラジスティックス
+_description: インフラジスティックスの {Platform} NavDrawer は、コンテンツ内で展開または縮小ことができるサイド ナビゲーションを提供します。
+_keywords: {Platform} navbar, {ProductName}, Infragistics, {Platform} ナビゲーション バー, インフラジスティックス
 mentionedTypes: ['NavDrawer']
 _language: ja
 ---
 
-# $Platform$ Navigation Drawer (ナビゲーション ドロワー) の概要
+# {Platform} Navigation Drawer (ナビゲーション ドロワー) の概要
 
-$Platform$ Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
+{Platform} Navigation Drawer は、コンテンツ内で展開または縮小されることができるサイド ナビゲーションを提供します。ミニ バージョンが閉じている場合もナビゲーションへのクイック アクセスを提供します。そのコンテンツは完全にカスタマイズ可能であると同時に、デフォルトのメニュー項目のスタイルも提供します。
 
 
-## $Platform$ Navigation Drawer の例
+## {Platform} Navigation Drawer の例
+
+このサンプルは、`NavDrawer` コンポーネントを作成する方法を示しています。
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer 項目の例"
+           alt="{Platform} Navigation Drawer 項目の例"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
 ## 使用方法
 
 <!-- WebComponents -->
-まず、次のコマンドを実行して $ProductName$ をインストールする必要があります。
+
+まず、次のコマンドを実行して {ProductName} をインストールする必要があります。
 
 ```cmd
 npm install {PackageWebComponents}
 ```
+
 <!-- end: WebComponents -->
+
+<!-- React -->
+
+まず、次のコマンドを実行して、対応する {ProductName} npm パッケージをインストールする必要があります:
+
+```cmd
+npm install igniteui-react
+```
+
+次に、以下のように、`NavDrawer` とそれに必要な CSS をインポートし、そのモジュールを登録する必要があります:
+
+```tsx
+import { IgrNavDrawerModule, IgrNavDrawer, IgrNavDrawerHeaderItem, IgrNavDrawerItem } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrNavDrawerModule.register();
+```
+
+<!-- end: React -->
 
 `NavDrawer` を使用する前に、次のように登録する必要があります。
 
+
 ```razor
-IgbNavDrawerModule.Register(IgniteUIBlazor);
-IgbNavDrawerHeaderItemModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbNavDrawerModule),
+  typeof(IgbNavDrawerHeaderItemModule)
+);
 ```
+
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `NavDrawer` コンポーネントに適用する必要があります。以下は、**Blazor Web Assembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml** ファイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 ```ts
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent);
+defineComponents(IgcNavDrawerComponent);
 ```
-
 
 ## Navigation Drawer 項目の追加
 
 `NavDrawer` の使用を開始する最も簡単な方法は次のとおりです:
 
-```html    
+```html
 <igc-nav-drawer open="true">
     <igc-nav-drawer-header-item>
         Sample Drawer
@@ -61,7 +98,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -80,12 +117,32 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer open={true}>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 以下は結果です:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="$Platform$ Navigation Drawer 項目の例"
+           alt="{Platform} Navigation Drawer 項目の例"
            github-src="menus/nav-drawer/add-drawer-items">
 </code-view>
 
@@ -113,7 +170,7 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
         <igc-icon slot="icon" name="search"></igc-icon>
         <span slot="content">Search</span>
     </igc-nav-drawer-item>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -137,15 +194,40 @@ defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavD
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavbar>
+    <div slot="start">
+        <IgrIcon iconName="menu" collection="material"/>
+    </div>
+    <h2>Home</h2>
+</IgrNavbar>
+
+<IgrNavDrawer>
+    <IgrNavDrawerHeaderItem>
+        <span>Sample Drawer</span>
+    </IgrNavDrawerHeaderItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material" />
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+</IgrNavDrawer>
+```
+
 また、すべての `position` の値を表示するためにいくつかのラジオ ボタンを追加しましょう。このように、1 つが選択されるたびに、ドロワーの位置を変更します。
 
 ```ts
 // ...
-import { defineComponents, IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-  IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
+import { defineComponents, IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent } from 'igniteui-webcomponents';
 
-defineComponents(IgcNavDrawerComponent, IgcNavDrawerHeaderItemComponent, IgcNavDrawerItemComponent,
-    IgcRadioComponent, IgcRadioGroupComponent);
+defineComponents(IgcNavDrawerComponent, IgcRadioComponent, IgcRadioGroupComponent);
 this.navDrawer = document.getElementById('navDrawer') as IgcNavDrawerComponent;
 this.radioGroup = document.getElementById('radio-group') as IgcRadioGroupComponent;
 this.radioGroup.addEventListener('click', (radio: any) => {
@@ -171,7 +253,7 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 </IgbRadioGroup>
 
 @code {
-    
+
     public IgbNavDrawer NavDrawerRef { get; set; }
 
     public void OnRadioOptionClick(IgbComponentBoolValueChangedEventArgs args)
@@ -208,6 +290,31 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 }
 ```
 
+```tsx
+<IgrRadioGroup alignment="horizontal">
+    <IgrRadio value="start" labelPosition="after" checked={true} change={this.onRadioChange}>
+        <span>Start</span>
+    </IgrRadio>
+    <IgrRadio value="end" labelPosition="after" change={this.onRadioChange}>
+        <span>End</span>
+    </IgrRadio>
+    <IgrRadio value="top" labelPosition="after" change={this.onRadioChange}>
+        <span>Top</span>
+    </IgrRadio>
+    <IgrRadio value="bottom" labelPosition="after" change={this.onRadioChange}>
+        <span>Bottom</span>
+    </IgrRadio>
+</IgrRadioGroup>
+
+<IgrNavDrawer position={this.state.drawerPosition} />
+
+public onRadioChange(e: any) {
+    if (e.checked == true) {
+        this.setState({ drawerPosition: e.value });
+    }
+}
+```
+
 そして最後に、Navigation Drawer を開閉する方法が必要です。これを実現するにはいくつかの方法がありますが、この例のために、次のことを行います:
 
 ```ts
@@ -236,12 +343,20 @@ public void OnMenuIconClick()
 }
 ```
 
+```tsx
+public onMenuIconClick() {
+    if (this.navDrawerRef) {
+        this.navDrawerRef.show();
+    }
+}
+```
+
 すべてがうまくいけば、コンポーネントは次のようになります:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="$Platform$ Navigation Drawer Navbar の例"
+           alt="{Platform} Navigation Drawer Navbar の例"
            github-src="menus/nav-drawer/add-positions-navbar">
 </code-view>
 
@@ -249,7 +364,7 @@ public void OnMenuIconClick()
 
 ミニ バリアントを使用する場合、Navigation Drawer を閉じる代わりに幅を変更します。アイコンだけを残して、いつでも利用できるクイック ナビゲーションを維持するために使用されます。これを実現するには、ドロワーの `mini` スロットを設定するだけです。
 
-```html    
+```html
 <igc-nav-drawer position="start">
     <igc-nav-drawer-header-item>Sample Drawer</igc-nav-drawer-header-item>
     <igc-nav-drawer-item>
@@ -268,7 +383,7 @@ public void OnMenuIconClick()
             <igc-icon slot="icon" name="search"></igc-icon>
         </igc-nav-drawer-item>
     </div>
-</igc-nav-drawer>    
+</igc-nav-drawer>
 ```
 
 ```razor
@@ -295,12 +410,41 @@ public void OnMenuIconClick()
 </IgbNavDrawer>
 ```
 
+```tsx
+<IgrNavDrawer>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="home" collection="material" />
+        </div>
+        <span slot="content">Home</span>
+    </IgrNavDrawerItem>
+    <IgrNavDrawerItem>
+        <div slot="icon">
+            <IgrIcon iconName="search" collection="material"/>
+        </div>
+        <span slot="content">Search</span>
+    </IgrNavDrawerItem>
+    <div slot="mini">
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="home" collection="material"/>
+            </div>
+        </IgrNavDrawerItem>
+        <IgrNavDrawerItem>
+            <div slot="icon">
+                <IgrIcon iconName="search" collection="material" />
+            </div>
+        </IgrNavDrawerItem>
+    </div>
+</IgrNavDrawer>
+```
+
 以下は結果です:
 
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="$Platform$ Navigation Drawer Mini の例"
+           alt="{Platform} Navigation Drawer Mini の例"
            github-src="menus/nav-drawer/add-mini">
 </code-view>
 
@@ -334,39 +478,23 @@ igc-nav-drawer-header-item {
 <code-view style="height: 300px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="$Platform$ Navigation Drawer スタイル設定の例"
+           alt="{Platform} Navigation Drawer スタイル設定の例"
            github-src="menus/nav-drawer/styling">
 </code-view>
 
-<!-- WebComponents -->
 
 ## API リファレンス
 
-* `NavDrawer`
-* `NavDrawerItem`
-* `NavDrawerHeaderItem`
-
-使用したその他の Web Components:
-
-* `Icon`
-* `Button`
-* `Radio`
-* `RadioGroup`
-
-<!-- end: WebComponents -->
+ - `Button`
+ - `Icon`
+ - `NavDrawerHeaderItem`
+ - `NavDrawerItem`
+ - `NavDrawer`
+ - `Navbar`
+ - `RadioGroup`
+ - `Radio`
 
 ## その他のリソース
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub** (英語)](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **フォーラム** (英語)](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub** (英語)](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

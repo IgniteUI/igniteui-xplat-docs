@@ -1,12 +1,12 @@
 ---
-title: $Platform$ Bullet Graph Component - $Platform$ | $ProductName$
-_description: The Bullet Graph Component in $ProductName$ allows for a linear and concise view of measures compared against a scale.
-_keywords: $ProductName$, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components, Native $Platform$ Components Library, $Platform$ Chart, $Platform$ Data Grid, $Platform$ Chart Control, $Platform$ Grid Component, $Platform$ data grid Bullet graph component example, $Platform$ bullet graph
+title: {Platform} Bullet Graph Component - {Platform} | {ProductName}
+_description: The Bullet Graph Component in {ProductName} allows for a linear and concise view of measures compared against a scale.
+_keywords: {ProductName}, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components, Native {Platform} Components Library, {Platform} Chart, {Platform} Data Grid, {Platform} Chart Control, {Platform} Grid Component, {Platform} data grid Bullet graph component example, {Platform} bullet graph
 _language: kr
 mentionedTypes: ['XamBulletGraph']
 ---
 
-# $Platform$ Bullet Graph
+# {Platform} Bullet Graph
 
 The Bullet Graph Component allows for a linear and concise view of measures compared against a scale.
 
@@ -36,12 +36,15 @@ When installing the gauge package, the core package must also be installed.
 - **npm install --save {PackageGauges}**
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamBulletGraph` requires the following modules:
 
+
 ```razor
-BulletGraphModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
 ```ts

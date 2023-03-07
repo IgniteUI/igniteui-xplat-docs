@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Spreadsheet | Grid Controls | Overview | Infragistics |
+title: {Platform} Spreadsheet | Grid Controls | Overview | Infragistics |
 _description: Use the Spreadsheet control to embed Excel document creation and editing experiences right into your application.
-_keywords: Spreadsheet, $ProductName$, Infragistics
+_keywords: Spreadsheet, {ProductName}, Infragistics
 _language: kr
 mentionedTypes: ['Spreadsheet']
 ---
 
-# $Platform$ $Platform$ Spreadsheet
+# {Platform} {Platform} Spreadsheet
 
-The $Platform$ Spreadsheet is a $Platform$ component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
+The {Platform} Spreadsheet is a {Platform} component that allows visualizing and editing of spreadsheet data. Features include activation, cell editing, conditional formatting, selection, clipboard.
 
 ## Demo
 
@@ -29,13 +29,18 @@ When installing the spreadsheet package, the core and excel package must also be
 - **npm install --save {PackageSpreadsheet}**
 
 
-## Required Modules
+## Component Modules
 
 The `Spreadsheet` requires the following modules:
 
+
 ```razor
-ExcelModule.Register(IgniteUIBlazor);
-SpreadsheetModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+  typeof(IgbExcelModule),
+  typeof(IgbSpreadsheetModule)
+);
 ```
 
 ```ts
@@ -90,7 +95,7 @@ Now that the spreadsheet module is imported, next is the basic configuration of 
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

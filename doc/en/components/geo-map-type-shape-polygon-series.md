@@ -1,21 +1,21 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Shape Polygon Series | Infragistics
-_description: Use Infragistics $Platform$ map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about $ProductName$ map's series!
-_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} Map | Data Visualization Tools | Shape Polygon Series | Infragistics
+_description: Use Infragistics {Platform} map's shape polygon series to render shapes of countries or regions defined by geographic locations. Learn more about {ProductName} map's series!
+_keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 ---
 
-# $Platform$ Using Shape Polygon Series
+# {Platform} Geographic Polygon Map
 
-Use the $Platform$ map component's `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
+In {Platform} map component, you can use the `GeographicShapeSeries` to display geo-spatial data using shape polygons in a geographic context. This type of geographic series is often used to render shapes of countries or regions defined by geographic locations.
 
-## $Platform$ Using Shape Polygon Series Example
+## {Platform} Geographic Polygon Map Example
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="$Platform$ Using Shape Polygon Series Example"
+           alt="{Platform} Using Shape Polygon Series Example"
            github-src="maps/geo-map/type-shape-polygon-series">
 </code-view>
 
@@ -27,7 +27,7 @@ The `GeographicShapeSeries` works a lot like the `GeographicPolylineSeries` exce
 Similar to other types of geographic series in the map control, the `GeographicShapeSeries` has the `ItemsSource` property which can be bound to an array of objects. In addition, each data item in this object must have one data column that stores single/multiple shapes using an array of arrays of objects with x and y values representing geographic locations. This data column is then mapped to the `ShapeMemberPath` property. The `GeographicShapeSeries` uses points of this mapped data column to plot polygons in the map control.
 
 ## Code Snippet
-The following code demonstrates how to bind the `GeographicShapeSeries` to shapes of countries in the world loaded from a shape file using the `ShapeDataSource`.
+The following code demonstrates how to bind the `GeographicShapeSeries` to shapes of countries in the world loaded from a shape file using the `ShapefileConverter`.
 
 <!-- React -->
 ```tsx
@@ -292,7 +292,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
@@ -304,8 +304,6 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",
@@ -314,3 +312,11 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
     }
 }
 ```
+
+## API References
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`

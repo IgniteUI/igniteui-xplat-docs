@@ -1,16 +1,16 @@
 ---
-title: $Platform$ 株価/ファイナンシャル チャート | $ProductName$
-_description: $ProductName$ 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
-_keywords: $Platform$ Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, $Platform$ チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
-mentionedTypes: ["FinancialChart", "CategoryChartType", "IndicatorTypes", "ZoomSliderType"]
+title: {Platform} 株価/ファイナンシャル チャート | {ProductName}
+_description: {ProductName} 株価チャートは、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。無料でお試しください。
+_keywords: {Platform} Charts, Stock Chart, Financial Chart, Candlestick Chart, OHLC Chart, Infragistics, {Platform} チャート, 株価チャート, ファイナンシャル チャート, ローソク足チャート, OHLC チャート, インフラジスティックス
+mentionedTypes: ["DomainChart", "FinancialChart", "FinancialChartType", "IndicatorTypes", "ZoomSliderType", 'Series']
 namespace: Infragistics.Controls.Charts
 _language: ja
 ---
-# $Platform$ 株価チャート
+# {Platform} 株価チャート
 
-$ProductName$ 株価チャート ($Platform$ ファイナンシャル チャートまたはローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。また、このチャートには、設定可能な期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
+{ProductName} 株価チャート ({Platform} ファイナンシャル チャートまたはローソク足チャートと呼ばれることもあります) は、インタラクティブな時系列表示で株価ティッカー データまたは価格データを描画する複合視覚化です。株価チャートは、時系列 X 軸の時間の経過に伴うティッカーの株価を示します。また、このチャートには、設定可能な期間の始値、高値、安値、終値 (OHLC) などの企業のティッカー データの情報も表示されます。株価チャートは、価格とボリュームの表示モードや多数の株指標など、データを視覚化して解釈するための複数の方法を提供します。
 
-## $Platform$ 株価チャートの例
+## {Platform} 株価チャートの例
 
 `FinancialChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` 値に設定します。
 
@@ -18,14 +18,14 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            github-src="charts/financial-chart/multiple-data"
-           alt="$Platform$ 株価チャートの例" >
+           alt="{Platform} 株価チャートの例" >
 </code-view>
 
 <div class="divider--half"></div>
 
 ## 株価チャートの推奨事項
 
-### $Platform$ 株価チャートはプロジェクトに適していますか?
+### {Platform} 株価チャートはプロジェクトに適していますか?
 
 典型的な株価チャートは、価格帯のテクニカル分析に使用されるローソク足チャートのティッカー データで表されます。ローソク足チャートは、1 日の高値と安値を、ティッカー シンボルの始値と終値と比較します。
 
@@ -62,18 +62,18 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 - すべてのデータ項目には、ローソク足チャートの始値、高値、安値、終値 (OHLC) の 4 つの数値列が含まれている必要があります。
 - すべてのデータ項目には、ローソク足チャートの始値、高値、安値、終値、ボリュームの 5 つの数値列が含まれている必要があります。
 
-## 複数シリーズの $Platform$ 株価チャート
+## 複数シリーズの {Platform} 株価チャート
 
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-multiple-data"
            github-src="charts/financial-chart/multiple-data"
-           alt="$Platform$ 株価指数チャート" >
+           alt="{Platform} 株価指数チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 株価チャート
+## {Platform} 株価チャート
 
 この例では、株価チャートは 1 年間の S&P 500を表しています。投資家に役立ち、テクニカル解析を実施し、将来の価格/レポートを予測します。
 
@@ -81,12 +81,12 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-stock-index-chart"
            github-src="charts/financial-chart/stock-index-chart"
-           alt="$Platform$ 株価指数チャート" >
+           alt="{Platform} 株価指数チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ 株価チャートのスタイル設定
+## {Platform} 株価チャートのスタイル設定
 
 他のシリーズの複合などのより多くの機能を備えた株価チャートが必要な場合は、以下に示すように、厚さ、アウトライン、ブラシ、負のアウトライン、負のブラシを構成できます。この例では、株価チャートは Amazon、Microsoft、Tesla の収益を比較しています。
 
@@ -94,12 +94,12 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 <code-view style="height: 600px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-styling"
-           alt="$Platform$ 株価指数チャート" >
+           alt="{Platform} 株価指数チャート" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ チャートの注釈
+## {Platform} チャートの注釈
 
 十字線注釈レイヤーは、各ターゲット シリーズの実際の値に一致する十字線を提供します。十字線タイプは、Horizontal、Vertical、Both があります。`crosshairsSnapToData` プロパティを true に設定してデータに十字線のスナップできます。十字線がデータ ポイント間で補完されます。注釈を有効にして軸に沿って十字線の値を表示できます。
 
@@ -113,12 +113,12 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-annotations"
            github-src="charts/financial-chart/annotations"
-           alt="$Platform$ チャートの注釈" >
+           alt="{Platform} チャートの注釈" >
 </code-view>
 
 <div class="divider--half"></div>
 
-## $Platform$ チャートのペイン
+## {Platform} チャートのペイン
 
 以下のペインを使用できます:
 
@@ -151,7 +151,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-panes"
            github-src="charts/financial-chart/panes"
-           alt="$Platform$ チャートのペイン" >
+           alt="{Platform} チャートのペイン" >
 </code-view>
 
 <div class="divider--half"></div>
@@ -166,7 +166,7 @@ $ProductName$ 株価チャート ($Platform$ ファイナンシャル チャー�
 - [チャート トレンドライン](../features/chart-trendlines.md)
 - [チャートのパフォーマンス](../features/chart-performance.md)
 
-## API メンバー
+## API リファレンス
 
 以下は、上記のセクションで説明した API メンバーのリストです。
 

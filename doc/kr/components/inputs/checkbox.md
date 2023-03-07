@@ -1,14 +1,14 @@
 ---
-title: $Platform$ Checkbox Component
-_description: $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
-_keywords: $ProductName$, UI controls, $Platform$ widgets, web widgets, UI widgets, $Platform$, Native $Platform$ Components Suite, Native $Platform$ Controls, Native $Platform$ Components Library, $Platform$ Checkbox components, $Platform$ Checkbox controls
+title: {Platform} Checkbox Component
+_description: {ProductName} Checkbox component is a selection control that allows users to make a binary choice for a certain condition.
+_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} Checkbox components, {Platform} Checkbox controls
 _language: kr
 mentionedTypes: ['Checkbox']
 ---
 
-# $Platform$ Checkbox Overview
+# {Platform} Checkbox Overview
 
-The $ProductName$ Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.
+The {ProductName} Checkbox component is a selection control that allows users to make a binary choice for a certain condition. It behaves similarly to the native browser checkbox.
 
 <div class="divider"></div>
 
@@ -16,7 +16,7 @@ The $ProductName$ Checkbox component is a selection control that allows users to
 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="$Platform$ Checkbox Example"
+           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/sample-1">
 </code-view>
 
@@ -30,21 +30,24 @@ At its core, the checkbox component allows for a choice between selected/unselec
 
 To get started with the checkbox component, you will need to include its module, like so:
 
+
 ```razor
-IgbCheckboxModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCheckboxModule));
 ```
 
 <!-- end:Blazor>
 
 <!-- WebComponents -->
 
-To get started with the checkbox web component, first you need to install the $ProductName$ by typing the following command:
+To get started with the checkbox web component, first you need to install the {ProductName} by typing the following command:
 
 ```cmd
 npm install igniteui-webcomponents
 ```
 
-The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [`defineComponents()`]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
+The next step is to import the `Checkbox` in the typescript file where you want to use it and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows:
 
 ```ts
 import { defineComponents, IgcCheckboxComponent } from "igniteui-webcomponents";
@@ -108,7 +111,7 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/label">
 </code-view>
 
@@ -137,7 +140,7 @@ Use the `checked` attribute to toggle on the checkbox.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/checked">
 </code-view>
 
@@ -145,13 +148,13 @@ Use the `checked` attribute to toggle on the checkbox.
 
 <!-- Blazor -->
 
-Use the `Indeterminate` property of the component to set the checkbox's value to neither `true` nor `false`.
+Use the `Indeterminate` property of the component to set the checkbox's value to neither **true** nor **false**.
 
 <!-- end: Blazor -->
 
 <!-- WebComponents -->
 
-Use the `indeterminate` attribute to set the value of the checkbox to neither `true` nor `false`.
+Use the `indeterminate` attribute to set the value of the checkbox to neither **true** nor **false**.
 
 <!-- end: WebComponents -->
 
@@ -166,7 +169,7 @@ Use the `indeterminate` attribute to set the value of the checkbox to neither `t
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/indeterminate">
 </code-view>
 
@@ -239,7 +242,7 @@ Use the `disabled` attribute to disable the checkbox.
 <code-view style="height: 100px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="$Platform$ Checkbox Example"
+           alt="{Platform} Checkbox Example"
            github-src="inputs/checkbox/disabled">
 </code-view>
 
@@ -282,9 +285,8 @@ igc-checkbox::part(indicator checked) {
 
 * `Checkbox`
 
+
 ## Additional Resources
 
-<div class="divider--half"></div>
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})

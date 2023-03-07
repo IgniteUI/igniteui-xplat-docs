@@ -1,22 +1,22 @@
 ---
-title: $Platform$ マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
-_description: インフラジスティックスの $Platform$ マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。$ProductName$ マップ シーリズについての詳細を表示します。
-_keywords: $Platform$ map, shape polygon series, $ProductName$, Infragistics, $Platform$ マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
-mentionedTypes: ['XamGeographicMap']
+title: {Platform} マップ | データ可視化ツール | シェイプ ポリゴン シリーズ | インフラジスティックス
+_description: インフラジスティックスの {Platform} マップのシェイプ ポリゴン シリーズを使用して、地理的位置によって定義される国または地域の図形を描画します。{ProductName} マップ シーリズについての詳細を表示します。
+_keywords: {Platform} map, shape polygon series, {ProductName}, Infragistics, {Platform} マップ, シェイプ ポリゴン シリーズ, インフラジスティックス
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter', 'Series']
 _language: ja
 ---
 
-# $Platform$ シェイプ ポリゴン シリーズの使用
+# {Platform} 地理ポリゴン マップ
 
-地理的コンテキストで形状ポリゴンを使用して地理空間データを表示するには、$Platform$ マップ コンポーネントの `GeographicShapeSeries` を使用します。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
+{Platform} マップ コンポーネントでは、`GeographicShapeSeries` を使用して、地理的コンテキストで形状ポリゴンを使用して地理空間データを表示できます。地理的シリーズのこのタイプは、地理的位置で定義される国々または領域の図形を描画するためにしばしば使用されます。
 
-## $Platform$ シェイプ ポリゴン シリーズの使用の例
+## {Platform} 地理ポリゴン マップの例
 
 
 <code-view style="height: 500px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="$Platform$ シェイプ ポリゴン シリーズの使用の例"
+           alt="{Platform} シェイプ ポリゴン シリーズの使用の例"
            github-src="maps/geo-map/type-shape-polygon-series">
 </code-view>
 
@@ -28,7 +28,7 @@ _language: ja
 マップコントロールの他の種類の地理的シリーズと同様に、`GeographicShapeSeries` には、オブジェクトの配列にバインドできる `ItemsSource` プロパティがあります。さらに、このオブジェクトの各データ項目には、地理的位置を表す x 値と y 値を持つオブジェクトの配列の配列を使用して単一または複数の形状を格納する 1 つのデータ列が必要です。このデータ列は、`ShapeMemberPath` プロパティにマップされます。`GeographicShapeSeries` は、マップされたデータ列の点を使用してマップコントロールにポリゴンをプロットします。
 
 ## コード スニペット
-以下のコードは、`ShapeDataSource` を使用してシェイプ ファイルからロードした世界の国々の図形に `GeographicShapeSeries` をバインドする方法を示します。
+以下のコードは、`ShapefileConverter` を使用してシェイプ ファイルからロードした世界の国々の図形に `GeographicShapeSeries` をバインドする方法を示します。
 
 <!-- React -->
 ```tsx
@@ -293,7 +293,7 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
 ```razor
 @using IgniteUI.Blazor.Controls
-@inject IIgniteUIBlazor IgniteUIBlazor
+
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">
     <GeographicShapeSeries ShapefileDataSource="DataSource"/>
@@ -305,8 +305,6 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
 
     protected override void OnInitialized()
     {
-        IgbGeographicMapModule.Register(IgniteUIBlazor);
-
         this.DataSource = new IgbShapeDataSource()
         {
             ShapefileSource = "https://static.infragistics.com/xplatform/shapes/WorldCountries.shp",
@@ -315,3 +313,11 @@ createSeries(shapeData: any[], shapeBrush: string, shapeTitle: string)
     }
 }
 ```
+
+## API リファレンス
+
+ - `GeographicPolylineSeries`
+ - `GeographicShapeSeries`
+ - `ItemsSource`
+ - `ShapeMemberPath`
+ - `ShapefileConverter`

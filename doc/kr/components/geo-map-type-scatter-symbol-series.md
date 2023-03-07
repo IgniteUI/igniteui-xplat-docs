@@ -1,11 +1,12 @@
 ---
-title: $Platform$ Map | Data Visualization Tools | Symbol Series | Infragistics
+title: {Platform} Map | Data Visualization Tools | Symbol Series | Infragistics
 _description: The Map allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.View the demo, dependencies, usage and toolbar for more information.
-_keywords: map, $ProductName$, Infragistics
+_keywords: map, {ProductName}, Infragistics
 _language: kr
+mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 ---
 
-# $Platform$ Using Scatter Symbol Series
+# {Platform} Using Scatter Symbol Series
 
 Use the map component's `GeographicSymbolSeries` to display geo-spatial data using points or markers in a geographic context. This type of geographic series is often used to render a collection of geographic locations such as cities, airports, earthquakes, or points of interests.
 

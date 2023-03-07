@@ -41,6 +41,7 @@
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"dateTimeMemberPath"}],"originalName":"DateTimeMemberPath"},
     { "names":[{"platform":"React","mappedType":"TimeAxisLabellingMode","mappedName":"labellingMode"}],"originalName":"LabellingMode"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isOrdinal"}],"originalName":"IsOrdinal"},
     { "names":[{"platform":"React","mappedType":"IgrTimeAxisLabelFormatCollection","mappedName":"labelFormats"}],"originalName":"LabelFormats"},
     { "names":[{"platform":"React","mappedType":"Date","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"React","mappedType":"Date","mappedName":"maximumValue"}],"originalName":"MaximumValue"},

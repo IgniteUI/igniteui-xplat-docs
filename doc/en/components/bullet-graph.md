@@ -1,24 +1,24 @@
 ---
-title: $Platform$ Bullet Graph | Data Visualization Tools | Infragistics
-_description: Infragistics' $Platform$ bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
-_keywords: $Platform$ Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
+title: {Platform} Bullet Graph | Data Visualization Tools | Infragistics
+_description: Infragistics' {Platform} bullet graph control allows you to create dashboards displaying ranges or comparing multiple measurements. View our data visualization tools!
+_keywords: {Platform} Bullet Graph, animation, labels, needle, scales, ranges, tick marks, Infragistics
 mentionedTypes: ['XamBulletGraph']
 namespace: Infragistics.Controls.Gauges
 ---
-# $Platform$ Bullet Graph Overview
+# {Platform} Bullet Graph Overview
 
-The $Platform$ bullet graph component allows for a linear and concise view of measures compared against a scale.
+The {Platform} bullet graph component allows for a linear and concise view of measures compared against a scale.
 
-The $ProductName$ bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
+The {ProductName} bullet graph component provides you with the ability to create attractive data presentations, replacing meters and gauges that are used on dashboards with simple yet straightforward and clear bar charts. A bullet graph is one of the most effective and efficient ways to present progress towards goals, good/better/best ranges, or compare multiple measurements in as little horizontal or vertical space as possible.
 
-## $Platform$ Bullet Graph Example
+## {Platform} Bullet Graph Example
 
 The following sample demonstrates how setting multiple properties on the same `XamBulletGraph` can transform it to completely different bullet graph.
 
 <code-view style="height: 155px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/gauges/bullet-graph-animation"
-           alt="$Platform$ Bullet Graph Example"
+           alt="{Platform} Bullet Graph Example"
            github-src="gauges/bullet-graph/animation">
 </code-view>
 
@@ -37,15 +37,16 @@ npm install --save {PackageGauges}
 </pre>
 <!-- end: Angular, React, WebComponents -->
 
-## Required Modules
+## Component Modules
 
 The `XamBulletGraph` requires the following modules:
 
 ```razor
-IgbBulletGraphModule.Register(IgniteUIBlazor);
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbBulletGraphModule));
 ```
 
-<!-- Angular, React, WebComponents -->
 ```ts
 // app.module.ts
 import { IgxBulletGraphModule } from 'igniteui-angular-gauges';
@@ -67,11 +68,9 @@ IgrBulletGraphModule.register();
 ```
 
 ```ts
-// Module Manager for registering the modules of the chart
-import { ModuleManager } from 'igniteui-webcomponents-core';
-// Bullet Graph Module
 import { IgcBulletGraphCoreModule  } from 'igniteui-webcomponents-gauges';
 import { IgcBulletGraphModule } from 'igniteui-webcomponents-gauges';
+import { ModuleManager } from 'igniteui-webcomponents-core';
 
 // register the modules
 ModuleManager.register(
@@ -79,6 +78,7 @@ ModuleManager.register(
     IgcBulletGraphModule
 );
 ```
+
 
 <div class="divider--half"></div>
 
@@ -936,16 +936,18 @@ For your convenience, all above code snippets are combined into one code block b
 </IgbBulletGraph>
 ```
 
+
+## API References
+
+The following is a list of API members mentioned in the above sections:
+
+- `XamBulletGraph`
+- `XamLinearGraphRange`
+
+
 ## Additional Resources
 
 You can find more information about other types of gauges in these topics:
 
 - [Linear Gauge](Linear-gauge.md)
 - [Radial Gauge](radial-gauge.md)
-
-## API Members
-
-The following is a list of API members mentioned in the above sections:
-
-- `XamBulletGraph`
-- `XamLinearGraphRange`

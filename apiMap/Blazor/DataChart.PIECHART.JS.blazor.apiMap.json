@@ -113,6 +113,7 @@
     { "names":[{"platform":"Blazor","mappedType":"IgbFormatSpecifierCollection","mappedName":"LegendOthersLabelFormatSpecifiers"}],"originalName":"LegendOthersLabelFormatSpecifiers"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"LegendItemTemplate"}],"originalName":"LegendItemTemplate"},
     { "names":[{"platform":"Blazor","mappedType":"Object","mappedName":"LegendItemBadgeTemplate"}],"originalName":"LegendItemBadgeTemplate"},
+    { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsDragInteractionEnabled"}],"originalName":"IsDragInteractionEnabled"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},

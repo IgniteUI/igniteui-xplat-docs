@@ -1,21 +1,21 @@
 ---
 title: Card Component
 _description: Present users with dashboards and engaging text, images, icons or buttons as an entry point for detailed information with Ignite UI for Web Card component.
-_keywords: $ProductName$, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
+_keywords: {ProductName}, UI controls, Web widgets, web widgets, UI widgets, Native Web Components Suite, Native Web Controls, Native Web Components Library, Web Card component, Web Card controls
 mentionedTypes: ['Card', 'CardActions', 'CardContent', 'CardHeader', 'CardMedia', 'Avatar', 'Button', 'Icon', 'IconButton', 'Ripple']
 ---
 
-# $Platform$ Card Overview
+# {Platform} Card Overview
 
-The $ProductName$ Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
+The {ProductName} Card displays text, images, icons, and buttons in a visually rich presentation that can serve as an entry point to more detailed information. Cards can be used to create a multimedia dashboard.
 
 
-## $Platform$ Card Example
+## {Platform} Card Example
 
 <code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-overview"
-           alt="$Platform$ Card Example"
+           alt="{Platform} Card Example"
            github-src="layouts/card/overview">
 </code-view>
 
@@ -29,23 +29,55 @@ Cards allow you to easily display content composed of different types of objects
 
 
 <!-- WebComponents -->
-First, you need to install the $ProductName$ by running the following command:
+First, you need to install the {ProductName} by running the following command:
 
 ```cmd
 npm install {PackageWebComponents}
 ```
 <!-- end: WebComponents -->
 
-Before using the `Card`, you need to register it as follows:
+<!-- React -->
 
-```razor
-IgbCardModule.Register(IgniteUIBlazor);
+First, you need to the install the corresponding {ProductName} npm package by running the following command:
+
+```cmd
+npm install igniteui-react
 ```
 
-```ts
-import { defineComponents, IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent } from 'igniteui-webcomponents';
+You will then need to import the `Card`, its necessary CSS, and register its module, like so:
 
-defineComponents(IgcCardComponent, IgcCardHeaderComponent, IgcCardContentComponent, IgcCardMediaComponent, IgcCardActionsComponent);
+```tsx
+import { IgrCardModule, IgrCard, IgrCardHeader, IgrCardContent, IgrCardMedia, IgrCardActions } from 'igniteui-react';
+import 'igniteui-webcomponents/themes/light/bootstrap.css';
+
+IgrCardModule.register();
+```
+
+<!-- end: React -->
+
+Before using the `Card`, you need to register it as follows:
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbCardModule));
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Card` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
+
+```ts
+import { defineComponents, IgcCardComponent } from 'igniteui-webcomponents';
+
+defineComponents(IgcCardComponent );
 ```
 
 Then, to represent the demo card template, we can add the following code:
@@ -80,6 +112,38 @@ Then, to represent the demo card template, we can add the following code:
         </div>
     </igc-card-actions>
 </igc-card>
+```
+
+```tsx
+<IgrCard>
+    <IgrCardMedia>
+        <img src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=50"></img>
+    </IgrCardMedia>
+    <IgrCardHeader>
+        <h3 slot="title">New York City</h3>
+        <h5 slot="subtitle">City in New York</h5>
+    </IgrCardHeader>
+    <IgrCardContent>
+        <p>New York City comprises 5 boroughs sitting where the
+            Hudson River meets the Atlantic Ocean. At its core is Manhattan,
+            a densely populated borough that’s among the world’s major commercial,
+            financial and cultural centers.</p>
+    </IgrCardContent>
+    <IgrCardActions>
+        <IgrButton>
+            <span>Read more</span>
+            <IgrRipple />
+        </IgrButton>
+        <div slot="end">
+            <IgrIconButton iconName="twitter" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+            <IgrIconButton iconName="facebook" collection="material">
+                <IgrRipple />
+            </IgrIconButton>
+        </div>
+    </IgrCardActions>
+</IgrCard>
 ```
 
 ```razor
@@ -135,6 +199,16 @@ Taking the card above as an example, we can edit the contents of the `CardHeader
     <h3 slot="title">Title</h3>
     <h5 slot="subtitle">Subtitle</h5>
 </igc-card-header>
+```
+
+```tsx
+<IgrCardHeader>
+    <div slot="thumbnail">
+        <IgrAvatar src="path/to/image" initials="TS" />
+    </div>
+    <h3 slot="title">Title</h3>
+    <h5 slot="subtitle">Subtitle</h5>
+</IgrCardHeader>
 ```
 
 ```razor
@@ -207,6 +281,30 @@ Here's an example of an outlined horizontal card:
 </IgbCard>
 ```
 
+```tsx
+<IgrCard>
+    <div className="card-horizontal">
+        <div>
+            <IgrCardHeader>
+                <img src="https://static.infragistics.com/xplatform/images/music/rozes.jpg" slot="thumbnail"></img>
+                <h5 slot="title">Rozes</h5>
+                <h5 slot="subtitle">Under the Grave (2016)</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>As I have always said: I write what’s real and what’s true,
+                    even if it means throwing myself under the bus.</p>
+            </IgrCardContent>
+        </div>
+        <div className="divider"></div>
+        <IgrCardActions>
+            <span className="material-icons">skip_previous</span>
+            <span className="material-icons">play_arrow</span>
+            <span className="material-icons">skip_next</span>
+        </IgrCardActions>
+    </div>
+</IgrCard>
+```
+
 We are using an additional `div` element to bundle the `CardHeader` and `CardContent` together, keeping them aligned vertically, and applying the `.card-horizontal` class to the wrapping `div` element to align the two sections of the card horizontally.
 
 The styles that `.card-horizontal` class applies are:
@@ -233,7 +331,7 @@ If everything went well, our card should look like this:
 <code-view style="height: 270px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-horizontal"
-           alt="$Platform$ Card Example"
+           alt="{Platform} Card Example"
            github-src="layouts/card/horizontal">
 </code-view>
 
@@ -293,6 +391,32 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 </IgbCard>
 ```
 
+```tsx
+<IgrCard>
+    <div className="semi-horizontal">
+        <div>
+            <IgrCardHeader>
+                <IgrAvatar src="https://static.infragistics.com/xplatform/images/music/singer_with_mic.jpg" slot="thumbnail" />
+                <h5 slot="title">HERE</h5>
+                <h5 slot="subtitle">by Mellow D</h5>
+            </IgrCardHeader>
+            <IgrCardContent>
+                <p>Far far away, behind the word mountains,
+                    far from the countries Vokalia and Consonantia,
+                    there live the blind texts.</p>
+            </IgrCardContent>
+            <IgrCardActions>
+                <IgrButton><span>Play Album</span></IgrButton>
+            </IgrCardActions>
+        </div>
+
+        <IgrCardMedia className='card-media'>
+            <img src="https://static.infragistics.com/xplatform/images/music/singer_female.jpg"></img>
+        </IgrCardMedia>
+    </div>
+</IgrCard>
+```
+
 ```css
 .semi-horizontal {
     display: flex;
@@ -309,7 +433,7 @@ Below is an example showing how you can create a semi-horizontal card, where we 
 <code-view style="height: 340px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-semi-horizontal"
-           alt="$Platform$ Semi Horizontal Card Example"
+           alt="{Platform} Semi Horizontal Card Example"
            github-src="layouts/card/semi-horizontal">
 </code-view>
 
@@ -354,6 +478,23 @@ You can reverse the order of the text button and the icon buttons by switching t
 </IgbCardActions>
 ```
 
+```tsx
+<IgrCardActions>
+    <IgrButton>
+        <span>Read more</span>
+        <IgrRipple />
+    </IgrButton>
+    <div slot="end">
+        <IgrIconButton ref={this.iconRef} className="marginIcon" iconName="twitter" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+        <IgrIconButton iconName="facebook" collection="material">
+            <IgrRipple />
+        </IgrIconButton>
+    </div>
+</IgrCardActions>
+```
+
 Now the icon buttons will appear before the text button.
 
 You can also add more content in-between by simply omitting the slot property and let the elements go to the default slot.
@@ -385,50 +526,31 @@ igc-icon-button+igc-icon-button {
 <code-view style="height: 640px"
            data-demos-base-url="{environment:dvDemosBaseUrl}"
            iframe-src="{environment:dvDemosBaseUrl}/layouts/card-styling"
-           alt="$Platform$ Card Styling Example"
+           alt="{Platform} Card Styling Example"
            github-src="layouts/card/styling">
 </code-view>
 
 
 ### Summary
-In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional $Platform$ inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
+In this article we covered a lot of ground with the card component. We created a simple card and added some images to make it a bit more appealing. We used some additional {Platform} inside our card, like avatars, buttons and icons, to enrich the experience and add some functionality. And finally, we changed the card's appearance by changing the major colors of the building blocks.
 
-<!-- WebComponents -->
-
-## API References
-
-For more detailed information regarding the card's API, refer to the following links:
-* `Card`
-* `CardHeader`
-* `CardContent`
-* `CardMedia`
-* `CardActions`
-
-
-Additional components and/or directives that were used:
-
-* `Avatar`
-* `Icon`
-* `Button`
-* `IconButton`
-* `Ripple`
-
-<!-- end: WebComponents -->
 
 <div class="divider"></div>
 
+
+## API References
+
+ - `Avatar`
+ - `Button`
+ - `CardActions`
+ - `CardContent`
+ - `CardHeader`
+ - `CardMedia`
+ - `Card`
+ - `IconButton`
+ - `Icon`
+
 ## Additional Resources
 
-<!-- Blazor -->
-
-* [Ignite UI for Blazor **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-blazor)
-* [Ignite UI for Blazor Examples on **GitHub**](https://github.com/IgniteUI/igniteui-blazor-examples)
-
-<!-- end: Blazor -->
-
-<!-- WebComponents -->
-
-* [Ignite UI for Web Components **Forums**](https://www.infragistics.com/community/forums/f/ignite-ui-for-web-components)
-* [Ignite UI for Web Components **GitHub**](https://github.com/IgniteUI/igniteui-webcomponents)
-
-<!-- end: WebComponents -->
+* [{ProductName} **Forums**]({ForumsLink})
+* [{ProductName} **GitHub**]({GithubLink})
