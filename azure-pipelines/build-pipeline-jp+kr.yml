@@ -29,7 +29,7 @@ variables:
   # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
   - name: selfSourcesDir
     value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
-  # This is the variable that the gulp script looks at internally. This is the only wat I know how to pass it for Angular
+  # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
   - name: 'NODE_ENV'
     value: '$(buildType)'
 
