@@ -51,6 +51,7 @@ stages:
   - job: BuildDocs
     steps:
       - checkout: self
+      
       - task: NodeTool@0
         inputs:
           versionSource: 'spec'
@@ -76,29 +77,29 @@ stages:
           verbose: ${{ parameters.isVerbose }}
           customCommand: ci
 
-#      - template: templates/build-steps-template.yml
-#        parameters:
-#          buildType: $(buildType)
-#          platform: WebComponents
-#          language: en
-#          isVerbose: ${{ parameters.isVerbose }}
-#          workingDir: '$(selfSourcesDir)'
-#
-#      - template: templates/build-steps-template.yml
-#        parameters:
-#          buildType: $(buildType)
-#          platform: Blazor
-#          language: en
-#          isVerbose: ${{ parameters.isVerbose }}
-#          workingDir: '$(selfSourcesDir)'
-#
-#      - template: templates/build-steps-template.yml
-#        parameters:
-#          buildType: $(buildType)
-#          platform: React
-#          language: en
-#          isVerbose: ${{ parameters.isVerbose }}
-#          workingDir: '$(selfSourcesDir)'
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: WebComponents
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
+
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Blazor
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
+
+      - template: templates/build-steps-template.yml
+        parameters:
+          buildType: $(buildType)
+          platform: React
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       # Angular doesn't produce an artifact so we are publish right now.
       - task: PublishPipelineArtifact@1
