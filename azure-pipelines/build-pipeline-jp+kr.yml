@@ -119,3 +119,19 @@ stages:
       inputs:
         targetPath: '$(Build.ArtifactStagingDirectory)'
         artifact: 'XPlatDocFX'
+
+    - template: templates/build-steps-make-pr.yml
+      parameters:
+        buildType: $(buildType)
+        platform: Angular
+        language: jp
+        isVerbose: ${{ parameters.isVerbose }}
+        primaryRepoWorkDir: '$(selfSourcesDir)'
+
+    - template: templates/build-steps-make-pr.yml
+      parameters:
+        buildType: $(buildType)
+        platform: Angular
+        language: kr
+        isVerbose: ${{ parameters.isVerbose }}
+        primaryRepoWorkDir: '$(selfSourcesDir)'

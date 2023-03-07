@@ -18,6 +18,7 @@ steps:
   - checkout: IgniteUIDocFX
     persistCredentials: true
     lfs: true
+    clean: true
 
   - script: |
       git fetch origin
