@@ -21,10 +21,25 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    buildType: 'production'
-  ${{ else }}:  
-    buildType: 'staging'
+  - name: buildType
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      value: 'production'
+    ${{ else }}:  
+      value: 'staging'
+  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
+  - name: selfSourcesDir
+    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
+  # This is the variable that the gulp script looks at internally. I am not sure 
+  - name: 'NODE_ENV'
+    value: '$(buildType)'
+
+resources:
+  repositories:
+    - repository: IgniteUIDocFX # In a different organization
+      endpoint: ESShared
+      type: github
+      name: IgniteUI/igniteui-docfx
+      ref: '$(Build.SourceBranch)'
 
 stages:
 - stage: Build
@@ -64,56 +79,56 @@ stages:
         buildType: $(buildType)
         platform: WebComponents
         language: jp
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: Blazor
         language: jp
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: React
         language: jp
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-make-pr.yml
       parameters:
         buildType: $(buildType)
         platform: Angular
         language: jp
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: WebComponents
         language: kr
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: Blazor
         language: kr
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-template.yml
       parameters:
         buildType: $(buildType)
         platform: React
         language: kr
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - template: templates/build-steps-make-pr.yml
       parameters:
         buildType: $(buildType)
         platform: Angular
         language: kr
-        verbose: ${{ parameters.isVerbose }}
+        isVerbose: ${{ parameters.isVerbose }}
 
     - task: PublishPipelineArtifact@1
       displayName: 'Publish pipeline artifacts'

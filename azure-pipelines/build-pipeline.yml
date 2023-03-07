@@ -33,8 +33,6 @@ variables:
   # This is the variable that the gulp script looks at internally. I am not sure 
   - name: 'NODE_ENV'
     value: '$(buildType)'
-  - name: 'language'
-    value: 'en'
 
 resources:
   repositories:
@@ -43,7 +41,6 @@ resources:
       type: github
       name: IgniteUI/igniteui-docfx
       ref: '$(Build.SourceBranch)'
-      # ref: ESShared/XPlaform_$(language)_$(Build.BuildNumber)
 
 stages:
 - stage: Build
