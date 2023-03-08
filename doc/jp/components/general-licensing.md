@@ -16,10 +16,10 @@ If your trial has ended or your subscription [has expired](http://www.infragisti
 
 For detailed explanation of the Ignite UI license agreement and terms of use, [click here](https://www.infragistics.com/legal/license/igultimate-la).
 
-Infragistics offers free, non-commercial, not-for-resale (NFR) licenses for the following:
+インフラジスティックスは、以下の無料の非営利および再販禁止 (NFR) ライセンスを提供しています。
 
-  - If you are part of a developer program like the Microsoft MVP, Microsoft Regional Director, Google Developer Expert, etc.  
-  - If you are a primary, secondary or university student, or an academic institution, or a professor.  
+  - Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。  
+  - 小学生、中学生、大学生、または教育機関、または教授である場合。  
 
 If you qualify for a free, non-commercial, NFR license or if you have any license questions, please [contact us](https://www.infragistics.com/about-us/contact-us).
 
@@ -38,12 +38,12 @@ Infragistics {ProductName} は npm パッケージで提供され、[いくつ�
 
 これにより公開用の npm レジストリおよびプライベート Infragistics レジストリからのパッケージを同時に使用できます。Infragistics アカウントにログインするユーザー名およびパスワードを入力する必要があります。Infragistics プロファイルに登録されるメールも入力してください。
 
-> If your account is not licensed (you are still using a Trial account) the private package feed won't be accessible to you e.g. it will return 404 or 403 error message. **Only licensed accounts can access the packages.infragistics private feed.**
+> アカウントのライセンスがない場合 (トライアル版アカウントを使用している場合)、プライベート パッケージ フィードにアクセスできません (たとえば、404 または 403 エラーメッセージが返されます)。**ライセンスされているアカウントのみが packages.infragistics プライベート フィードにアクセスできます。**
 
-### Now, to log in to our private feed using npm
+### npm を使用してプライベート フィードにログインするには、次のようにします。
 
 #### npm バーション 9 以降
-Our private feed doesn't currently support login/adduser commands with npm v9, so we recommend the following steps instead to add the required auth fields to the config:
+プライベート フィードは現在、npm v9 で login/adduser コマンドをサポートしていないため、必要な認証フィールドを構成に追加する代わりに、次の手順をお勧めします。
 
 ```cmd
 npm config set @infragistics:registry https://packages.infragistics.com/npm/js-licensed/
@@ -55,22 +55,22 @@ npm config set //packages.infragistics.com/npm/js-licensed/:email=YOUR_IG_EMAIL
 npm config set //packages.infragistics.com/npm/js-licensed/:_auth=YOUR_IG_AUTH_TOKEN
 ```
 
-You can generate [Access Token](#access-token-usage) through your Infragistics profile.
+Infragistics プロファイルから[アクセス トークン](#アクセス-トークンの使用)を生成できます。
 
-This approach is applicable to all prior versions of `npm`.
+このアプローチは、以前のすべてのバージョンの npm に適用できます。
 
 #### v8 までの npm バージョン
-Run the `adduser` command and specify a user account and password:
+`adduser` コマンドを実行し、ユーザー アカウントとパスワードを指定します。
 
 ```cmd
 npm adduser --registry=https://packages.infragistics.com/npm/js-licensed/ --scope=@infragistics
 ```
 
-You will be asked to provide the username and the password that you use for logging into your Infragistics account. You should also provide the email that is registered to your Infragistics profile.
+Infragistics アカウントにログインするユーザー名およびパスワードを入力する必要があります。Infragistics プロファイルに登録されるメールも入力してください。
 
-> `npm` is disallowing the use of the `"@"` symbol inside your username as it is considered as being "not safe for the net". Because your username is actually the email that you use for your Infragistics account it always contains the symbol `"@"`. That's why you must escape this limitation by replacing the `"@"` symbol with `"!!"` (two exclamation marks). For example, if your username is `"username@example.com"` when asked about your username you should provide the following input: `"username!!example.com"`.
+> `npm` はユーザー名で `"@"` の使用を許可しません。ユーザー名が Infragistics アカウントのメール アドレスであるため、`"@"` 記号を含みます。この制限を回避するには、`"@"` 記号の代わりに `"!!"` (2 つの感嘆符) を使用します。たとえば、ユーザー名が `"username@example.com"` の場合、`"username!!example.com"` と入力します。
 
-#### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project:
+#### 完了した後に、ログイン済みの状態で、プロジェクトで Ignite UI の最新バージョンをインストールできます。
 
 ```cmd
 npm uninstall igniteui-dockmanager
@@ -183,13 +183,13 @@ before_install:
 * 暗号化して [.travis.yml](https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml) に追加します。
 * [リポジトリ設定](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings)に追加します。
 
-### GitHub Actions Configuration
+### GitHub Actions の構成
 
-Add the following scripts before the `npm i(ci)` step to your [CI workflow configuration](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions):
+`npm i(ci)` 手順の前に以下のスクリプトを [CI ワークフロー構成](https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions) に追加します:
 
 ```cmd
 - run: echo "@infragistics:registry=https://packages.infragistics.com/npm/js-licensed/" >> ~/.npmrc
 - run: echo "//packages.infragistics.com/npm/js-licensed/:_auth=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 ```
 
-Define [*secrets* (encrypted environment variables)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and use them in the GitHub actions workflow for sensitive information like the access token. 
+[*シークレット* (暗号化された環境変数)](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) を定義してアクセス トークンなどの機密情報に対して GitHub Actions ワークフローでそれらを使用します。 
