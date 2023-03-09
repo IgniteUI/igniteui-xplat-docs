@@ -6,24 +6,24 @@ _language: ja
 mentionedTypes: []
 ---
 
-# License FAQ and Installation
+# ライセンスについてのよくある質問とインストール
 # {ProductName} 使用許諾契約
 購入して使用する {ProductName} に関するすべての[使用条件](https://jp.infragistics.com/legal/license/igultimate-la)を知っておくことが重要です。
 
 > 2020 年第 2 四半期にライセンス条項とサブスクリプション モデルを更新しました。
 
-If your trial has ended or your subscription [has expired](http://www.infragistics.com/renewal), each developer on your team using Ignite UI will need to [purchase](https://www.infragistics.com/how-to-buy/product-pricing) a subscription. これにより、<https://packages.infragistics.com/npm/js-licensed/> でホストされるプライベート npm フィードを開発に使用できます。ここには、{ProductName} パッケージの最新バージョンがあります。現在サブスクリプションをお持ちの場合は、{ProductName} の製品版をプライベート フィードによりアクセスできます。
+トライアルが終了した場合、またはサブスクリプションが[期限切れ](https://jp.infragistics.com/renewal)になった場合、Ignite UI を使用しているチームの各開発者はサブスクリプションを[購入する](https://jp.infragistics.com/how-to-buy/product-pricing)必要があります。これにより、<https://packages.infragistics.com/npm/js-licensed/> でホストされるプライベート npm フィードを開発に使用できます。ここには、{ProductName} パッケージの最新バージョンがあります。現在サブスクリプションをお持ちの場合は、{ProductName} の製品版をプライベート フィードによりアクセスできます。
 
-For detailed explanation of the Ignite UI license agreement and terms of use, [click here](https://www.infragistics.com/legal/license/igultimate-la).
+Ignite UI ライセンス契約および使用条件の詳細については、[ここをクリック](https://jp.infragistics.com/legal/license/igultimate-la)してください。
 
 インフラジスティックスは、以下の無料の非営利および再販禁止 (NFR) ライセンスを提供しています。
 
   - Microsoft MVP、Microsoft Regional Director、Google Developer Expert などの開発者プログラムに参加している場合。  
   - 小学生、中学生、大学生、または教育機関、または教授である場合。  
 
-If you qualify for a free, non-commercial, NFR license or if you have any license questions, please [contact us](https://www.infragistics.com/about-us/contact-us).
+無料の非商用の NFR ライセンスを取得する資格がある場合、またはライセンスに関する質問がある場合は、[お問い合わせ](https://jp.infragistics.com/about-us/contact-us)ください。
 
-> Currently only the **igniteui-dockmanager** package is available in our private npm feed, but in the future we will add the other {ProductName} packages as well.
+> 現在、プライベート npm フィードで利用できるのは **igniteui-dockmanager** パッケージのみですが、将来的には他の {ProductName} パッケージも追加する予定です。
 
 ## {ProductName} npm パッケージ - プライベート npm フィードの使用
 Npm は Node.js ランタイム環境で使用する一般的なデフォルト パッケージ マネージャーです。プロジェクトに依存するパッケージをすばやく簡単に処理できます。npm の使用方法の詳細については、[npm ヘルプ](https://docs.npmjs.com/)を参照してください。
