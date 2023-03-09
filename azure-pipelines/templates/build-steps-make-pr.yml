@@ -62,4 +62,4 @@ steps:
       githubRepository: 'IgniteUI/igniteui-docfx'
       sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
       targetBranch: '$(Build.SourceBranch)'
-      title: 'Changes from $(Build.DefinitionName)'
+      title: 'Changes from $(Build.DefinitionName) for ${{ parameters.language }}'
