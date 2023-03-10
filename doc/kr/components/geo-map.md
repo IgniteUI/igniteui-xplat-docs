@@ -8,7 +8,7 @@ mentionedTypes: ['XamGeographicMap', 'ShapefileConverter']
 
 # {Platform} Map
 
-The {ProductName} map map map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
+The {ProductName} map component allows you to display data that contains geographic locations from view models or geo-spatial data loaded from shape files on geographic imagery maps.
 
 ## Demo
 
