@@ -17,12 +17,7 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 <igc-combo single-select></igc-combo>
 ```
 
-<code-view style="height:320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-simplified"
-           alt="{Platform} Single Selection Combo Example"
-           github-src="grids/combo/simplified">
-</code-view>
+`sample="/grids/combo/simplified", height="320", alt="{Platform} Single Selection Combo Example"`
 
 <div class="divider--half"></div>
 
