@@ -14,23 +14,20 @@ In {Platform} charts, tooltips provide details about bound data and they are ren
 
 {Platform} Chart provide three types of tooltips that you can with tooltips enabled by setting the `ToolTipType` property. The following example shows the [Column Chart](../types/column-chart.md) with a combo-box that you can use to change type of tooltips.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="{Platform} Tooltip Types Example"
-           github-src="charts/category-chart/column-chart-with-tooltips">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-tooltips", height="500", alt="{Platform} Tooltip Types Example"`
+
+
 
 <div class="divider--half"></div>
 
 The `ToolTipType` property is configurable and can be set to one of the following options:
 
-Property Value     | Description
--------------------|----------------
-`Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.
-`Data` Tooltip | Display the data tooltips for all series in the chart.
-`Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.
-`Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.
+| Property Value     | Description  |
+| -------------------|----------------  |
+| `Default`  Tooltip | Display a tooltip for a single item when the pointer is positioned over it.  |
+| `Data` Tooltip | Display the data tooltips for all series in the chart.  |
+| `Item`  Tooltip    | Display a tooltip for each data item in the category that the pointer is positioned over.  |
+| `Category` Tooltip | Display a grouped tooltip for all data points in the category that the pointer is positioned over.  |
 
 <div class="divider--half"></div>
 
@@ -42,12 +39,9 @@ If none of built-in types of tooltips are matching your requirements, you can cr
 
 This example shows how to create custom tooltips for all series in {Platform} `CategoryChart` control. Note that you can also apply the same logic to custom tooltips in {Platform} `FinancialChart` control.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
-           alt="{Platform} Tooltip Template"
-           github-src="charts/category-chart/tooltip-template">
-</code-view>
+`sample="/charts/category-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
+
+
 
 <div class="divider--half"></div>
 
@@ -56,12 +50,9 @@ This example shows how to create custom tooltips for all series in {Platform} `C
 
 This example shows how to create custom tooltips for each series in {Platform} Data Chart control.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
-           alt="{Platform} Tooltip Template"
-           github-src="charts/data-chart/tooltip-template">
-</code-view>
+`sample="/charts/data-chart/tooltip-template", height="500", alt="{Platform} Tooltip Template"`
+
+
 
 <div class="divider--half"></div>
 

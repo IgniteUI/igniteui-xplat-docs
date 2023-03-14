@@ -4,6 +4,7 @@ _description: ユーザーが作成したレイアウトの読み込みと保存
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクティブ化, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} グリッド レイアウトの読み込みと保存の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-load-save-layout"
-           alt="{Platform} グリッド レイアウトの読み込みと保存の例"
-           github-src="grids/data-grid/load-save-layout">
-</code-view>
+`sample="/grids/data-grid/load-save-layout", height="600", alt="{Platform} グリッド レイアウトの読み込みと保存の例"`
+
+
 
 <div class="divider--half"></div>
 

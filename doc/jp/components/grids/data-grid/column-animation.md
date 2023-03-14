@@ -4,6 +4,7 @@ _description: Infragistics {ProductName} データ テーブルとグリッド�
 _keywords: {Platform} Table, Data Grid, column animations, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列アニメーション, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} グリッド列アニメーションの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
-           alt="{Platform} グリッド列アニメーションの例"
-           github-src="grids/data-grid/column-animation">
-</code-view>
+`sample="/grids/data-grid/column-animation", height="600", alt="{Platform} グリッド列アニメーションの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -11,12 +11,9 @@ The Infragistics {Platform} Dock Manager component provides you with the layout 
 ## {Platform} Updating Panes in Dock Manager Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-updating-panes"
-           alt="{Platform} Updating Panes in Dock Manager Example"
-           github-src="layouts/dock-manager/updating-panes">
-</code-view>
+`sample="/layouts/dock-manager/updating-panes", height="600", alt="{Platform} Updating Panes in Dock Manager Example"`
+
+
 
 <!-- <div>
     <button data-localize="stackblitz" disabled class="stackblitz-btn" data-iframe-id="dock-manager-overview-iframe" data-demos-base-url="{environment:dvDemosBaseUrl}">View on StackBlitz

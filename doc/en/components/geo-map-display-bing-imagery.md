@@ -11,12 +11,9 @@ The {Platform} `BingMapsMapImagery` is geographic imagery mapping service provid
 ## {Platform} Displaying Imagery from Bing Maps Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-bing-imagery"
-           alt="{Platform} Displaying Imagery from Bing Maps Example"
-           github-src="maps/geo-map/display-bing-imagery">
-</code-view>
+`sample="/maps/geo-map/display-bing-imagery", height="500", alt="{Platform} Displaying Imagery from Bing Maps Example"`
+
+
 
 <div class="divider--half"></div>
 

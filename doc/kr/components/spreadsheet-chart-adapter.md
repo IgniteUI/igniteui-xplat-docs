@@ -13,10 +13,7 @@ The {Platform} Spreadsheet component allows displaying charts in your `Spreadshe
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-adapter"  >
-</code-view>
+`sample="/excel/spreadsheet/adapter", height="500", alt="{Platform} spreadsheet adapter"`
 
 <div class="divider--half"></div>
 
@@ -82,7 +79,7 @@ There are over 35 chart types supported by the Spreadsheet ChartAdapters includi
 
 ## Dependencies
 
-> [!NOTE]
+> [!Note]
 >
 > In the following code snippet, an external [ExcelUtility](excel-utility.md) class is used to save and load a `Workbook`.
 

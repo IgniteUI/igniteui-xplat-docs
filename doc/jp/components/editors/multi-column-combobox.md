@@ -15,23 +15,17 @@ _language: ja
 
 <!-- Blazor -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="{Platform} 複数列コンボ ボックスの例"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
+
+
 
 <!-- end:Blazor -->
 
 <!-- Angular, React, WebComponents -->
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="{Platform} 複数列コンボ ボックスの例"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
+
+
 
 ## 依存関係
 Chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
@@ -48,9 +42,11 @@ npm install --save {PackageLayouts}
 
 複数列コンボ ボックスを作成するには、以下のモジュールが必要です。
 
-
 ```razor
-builder.Services.AddIgniteUIBlazor(typeof(IgbMultiColumnComboBoxModule));
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbMultiColumnComboBoxModule));
 ```
 
 ```ts

@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid to support the c
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.GridActivationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports a cell activation feature that
 ## {Platform} Grid Cell Activation Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-activation"
-           alt="{Platform} Grid Cell Activation Example"
-           github-src="grids/data-grid/cell-activation">
-</code-view>
+`sample="/grids/data-grid/cell-activation", height="600", alt="{Platform} Grid Cell Activation Example"`
+
+
 
 <div class="divider--half"></div>
 

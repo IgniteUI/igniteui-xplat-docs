@@ -15,12 +15,9 @@ You can create this type of chart with the `XamPieChart` control by binding your
 
 This example of an {Platform} Pie Chart includes a simple data set with 6 values. Each key/pair value has a string and a numeric data value, the data values add up to a value of 100% of visualization. In this case, we are showing the overall breakdown of budget spend by department.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-overview"
-           github-src="charts/pie-chart/overview"
-           alt="{Platform} Pie Chart Overview" >
-</code-view>
+`sample="/charts/pie-chart/overview", height="600", alt="{Platform} Pie Chart Overview"`
+
+
 
 <div class="divider--half"></div>
 
@@ -73,12 +70,9 @@ In order to display a legend next to the pie chart an ItemLegend needs to be cre
 
 Additionally you can use the `LegendItemTemplate` and `LegendItemBadgeTemplate` properties and the various font properties on ItemLegend to further customize the look of the legend items.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-legend"
-           github-src="charts/pie-chart/legend"
-           alt="{Platform} Pie Chart Legend" >
-</code-view>
+`sample="/charts/pie-chart/legend", height="600", alt="{Platform} Pie Chart Legend"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,12 +84,9 @@ In the sample below, the `OthersCategoryThreshold` is set to 2, and `OthersCateg
 
 If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will be interpreted as a percentage rather than as a value, i.e. items whose values are less than 2% of the sum of all item values would be assigned to the Others category. You can use whichever `OthersCategoryType` is most appropriate for your application.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-others"
-           github-src="charts/pie-chart/others"
-           alt="{Platform} Pie Chart Others" >
-</code-view>
+`sample="/charts/pie-chart/others", height="600", alt="{Platform} Pie Chart Others"`
+
+
 
 <div class="divider--half"></div>
 
@@ -103,12 +94,9 @@ If you set `OthersCategoryType` to Percent, then `OthersCategoryThreshold` will 
 
 The pie chart supports explosion of individual pie slices as well as a `SliceClick` event that allows you to modify selection states and implement custom logic
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-explosion"
-           github-src="charts/pie-chart/explosion"
-           alt="{Platform} Pie Chart Explosion" >
-</code-view>
+`sample="/charts/pie-chart/explosion", height="600", alt="{Platform} Pie Chart Explosion"`
+
+
 
 <div class="divider--half"></div>
 
@@ -133,12 +121,9 @@ The events that end in “Changing” are cancelable events which means you can 
 
 For scenarios where you click on the Others slice, the pie chart will return an object called `PieSliceOthersContext`. This object contains a list of the data items contained within the Others slice.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-selection"
-           github-src="charts/pie-chart/selection"
-           alt="{Platform} Pie Chart Selection" >
-</code-view>
+`sample="/charts/pie-chart/selection", height="600", alt="{Platform} Pie Chart Selection"`
+
+
 
 <div class="divider--half"></div>
 
@@ -148,12 +133,9 @@ You can animate the pie chart smoothly by setting the `radiusFactor` property, w
 
 In the code below, the radiusFactor is increasing the chart by 0.25% of the size, and startAngle is rotating the chart by 1 degree. When radiusFactor and startAngle reached to its maximum limit the animation is stopped by reset the animation flag and clear the interval.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-animation"
-           github-src="charts/pie-chart/animation"
-           alt="{Platform} Pie Chart Animation" >
-</code-view>
+`sample="/charts/pie-chart/animation", height="600", alt="{Platform} Pie Chart Animation"`
+
+
 
 <div class="divider--half"></div>
 
@@ -162,11 +144,8 @@ In the code below, the radiusFactor is increasing the chart by 0.25% of the size
 Once our pie chart is created, we may want to make some further styling customizations such as a change of the colors for the slices of the chart, as demonstrated below:
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/pie-chart-styling"
-           alt="{Platform} Pie Chart Styling" >
-</code-view>
+`sample="/charts/pie-chart/styling", height="600", alt="{Platform} Pie Chart Styling"`
+
 
 <div class="divider--half"></div>
 
@@ -175,11 +154,8 @@ Once our pie chart is created, we may want to make some further styling customiz
 The Radial Pie Chart belongs to a group of Radial Charts and uses belongs to a group of radial charts and uses pie slices that extend from the center of chart towards locations of data points. This chart type takes concepts of categorizing multiple series of data points and wraps them around a circular axis rather than stretching data points along a horizontal line.
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           alt="{Platform} Radial Pie Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} Radial Pie Chart"`
+
 
 <div class="divider--half"></div>
 
@@ -198,8 +174,8 @@ The following table lists API members mentioned in the above sections:
 - `OthersCategoryType`
 - `SelectionMode`
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Pie Chart      | `XamPieChart`     | `PieChart`
-Radial Pie Chart | `XamDataChart` | `RadialPieSeries`
+| Chart Type       | Control Name   | API Members |
+| -----------------|----------------|------------ |
+| Pie Chart      | `XamPieChart`     | `PieChart` |
+| Radial Pie Chart | `XamDataChart` | `RadialPieSeries` |
 

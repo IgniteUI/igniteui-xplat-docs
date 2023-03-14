@@ -29,7 +29,7 @@ Here's the complete list of all bundled themes and their path:
 
 ## Runtime Theme Switching
 
-> [!NOTE]
+> [!Note]
 Changing the theme at runtime also requires you to replace the global stylesheet from the table above.
 
 {ProductName} allows you to switch the component themes at runtime by using the `ConfigureTheme` function exported by the library.
@@ -43,7 +43,7 @@ import { configureTheme } from "igniteui-webcomponents";
 configureTheme("material");
 ```
 
-> [!NOTE]
+> [!Note]
 This only tells components to switch their internal styles to the desired theme, you should also switch the global theme file to one of the listed files above.
 
 ## API References

@@ -4,6 +4,7 @@ _description: いくつかの定義済みの列データ型 - number、string、
 _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -15,11 +16,8 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 列タイプの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
-           github-src="{ComponentSample}/column-data-types">
-</code-view>
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -177,7 +175,7 @@ constructor() {
 | India Standard Time       |‘UTC+4’                    |
 
 
-`{ComponentName}` は、**Date オブジェクト**、**数値 (ミリ秒)** または **ISO 日付/時刻文字列**の日付値を受け取ります。このセクションは、[カスタム表示書式を構成する方法](../grid/overview.md#カスタム表示形式)を示します。
+`{ComponentName}` は、**Date オブジェクト**、**数値 (ミリ秒)** または **ISO 日付/時刻文字列**の日付値を受け取ります。このセクションは、[カスタム表示書式を構成する方法](../data-grid.md#カスタム表示形式)を示します。
 
 サンプルでは、特定の列タイプで使用可能な書式を紹介するために、さまざまな書式設定オプションを指定しています。たとえば、以下は日付オブジェクトの *time* 部分の書式設定オプションのサンプルです。
 
@@ -478,7 +476,8 @@ constructor() {
 }
 ```
 
-> 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
+> [!Note]
+> 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
 ## デフォルトの編集テンプレート
 

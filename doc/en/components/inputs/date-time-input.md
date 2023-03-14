@@ -9,12 +9,9 @@ mentionedTypes: ['DateTimeInput']
 
 The {ProductName} Date Time Input allows the user to set and edit the date and time in a chosen input element. The user can edit both date and time portions using an editable masked input. Additionally, one can specify a desired display and input format, as well as min and max values to utilize validation.
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-overview"
-           alt="{Platform} Date Time Input Overview Example"
-           github-src="inputs/date-time-input/overview">
-</code-view>
+`sample="/inputs/date-time-input/overview", height="150", alt="{Platform} Date Time Input Overview Example"`
+
+
 
 ## Usage
 
@@ -115,12 +112,9 @@ To set a specific input format, pass it as a string to the `DateTimeInput`. This
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-input-format-display-format"
-           alt="{Platform} Date Time Input Input Format Display Format Example"
-           github-src="inputs/date-time-input/input-format-display-format">
-</code-view>
+`sample="/inputs/date-time-input/input-format-display-format", height="150", alt="{Platform} Date Time Input Input Format Display Format Example"`
+
+
 
 ### Display format
 The date time input exposes predefined formats for displaying date/time in various manners. All of the examples below are given in en-US locale.
@@ -141,36 +135,37 @@ The date time input exposes predefined formats for displaying date/time in vario
 | `fullTime` | 12:00:00 AM Eastern European Summer Time |
 
 Furthermore, users can construct a displayFormat string using the supported symbols described in the following table.
+<br>
 
-Type | Format | Description | Example |
-|:---|:-------:|:-----------|:--------|
-Day of month | `d` | Minimum digits. | 7, 17 |
-|| `dd` | Zero padded. | 07, 17 |
-Month | `M` | Minimum digits. | 3, 10 |
-|| `MM` | Zero padded. | 03, 10 |
-|| `MMM` | Abbreviated | Oct |
-|| `MMMM` | Wide | October |
-|| `MMMMM` | Narrow | O |
-Year | `y` | Numeric | 2022
-|| `yy` | Two digit | 22
-|| `yyy` | Numeric | 2022
-|| `yyyy` | Numeric  | 2022
-Hour 1-12 | `h` | Minimum digits | 1, 12
-|| `hh` | Zero padded | 01, 12
-Hour 1-24 | `H` | Minimum digits | 1, 23
-|| `HH` | Zero padded | 01, 23
-Minute | `m` | Minimum digits | 1, 59
-|| `mm` | Zero padded | 01, 59
-Second | `s` | Minimum digits | 1, 59
-|| `ss` | Zero padded | 01, 59
-Time Period | `t` | Abbreviated | AM, PM
-|| `tt` | Abbreviated | AM, PM
-|| `ttt` | Short | noon
-|| `tttt` | Long | noon
-|| `ttttt` | Narrow | n
+| Type | Format | Description | Example |
+|:---|-------:|:-----------|:--------|
+| Day | `d` | Minimum digits. | 7, 17 |
+|   | `dd` | Zero padded. | 07, 17 |
+| Month | `M` | Minimum digits. | 3, 10 |
+|   | `MM` | Zero padded. | 03, 10 |
+|   | `MMM` | Abbreviated | Oct |
+|   | `MMMM` | Wide | October |
+|   | `MMMMM` | Narrow | O |
+| Year | `y` | Numeric | 2022 |
+|   | `yy` | Two digit | 22
+|   | `yyy` | Numeric | 2022
+|   | `yyyy` |  Numeric  | 2022
+| Hour 1-12 | `h` | Minimum digits | 1, 12 |
+|   | `hh` | Zero padded | 01, 12
+| Hour 1-24 | `H` | Minimum digits | 1, 23 |
+|   | `HH` | Zero padded | 01, 23 |
+| Minute | `m` | Minimum digits | 1, 59 |
+|   | `mm` | Zero padded | 01, 59 |
+| Second |  `s` | Minimum digits | 1, 59 |
+|   | `ss` | Zero padded | 01, 59 |
+| Time Period | `t` | Abbreviated | AM, PM |
+|   | `tt` | Abbreviated | AM, PM |
+|   | `ttt` | Short | noon |
+|   | `tttt` | Long | noon |
+|   | `ttttt` | Narrow | n |
 
-> Note:
-Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
+> [!Note]
+> Many locales use the same time period string, irrespective of the format specified. Also, it has an effect only if a 12-hour clock is used.
 
 ## Min/max value
 
@@ -188,13 +183,7 @@ input.minValue = new Date(2021, 0, 1);
 
 If all went well, the component will be `invalid` if the value is greater or lower than the given dates. Check out the example below:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-min-max-value"
-           alt="{Platform} Date Time Input Min Max Value Example"
-           github-src="inputs/date-time-input/min-max-value">
-</code-view>
-
+`sample="/inputs/date-time-input/min-max-value", height="150", alt="{Platform} Date Time Input Min Max Value Example"`
 
 ## Step up/down
 
@@ -218,12 +207,9 @@ input.spinDelta = spinDelta;
 
 Try it in the example below:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/date-time-input-step-up-down"
-           alt="{Platform} Date Time Input Step Up/Down Example"
-           github-src="inputs/date-time-input/step-up-down">
-</code-view>
+`sample="/inputs/date-time-input/step-up-down", height="150", alt="{Platform} Date Time Input Step Up/Down Example"`
+
+
 
 ## Styling
 

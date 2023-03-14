@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} Spreadsheet ハイパーリンクの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-hyperlinks"
-           alt="{Platform} Spreadsheet ハイパーリンクの例"
-           github-src="excel/spreadsheet/hyperlinks">
-</code-view>
+`sample="/excel/spreadsheet/hyperlinks", height="500", alt="{Platform} Spreadsheet ハイパーリンクの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -4,6 +4,7 @@ _description: マウスオーバーでインフラジスティックス {Platfor
 _keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行の強調表示, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} Grid 強調表示の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
-           alt="{Platform} Grid 強調表示の例"
-           github-src="grids/data-grid/row-highlighting">
-</code-view>
+`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid 強調表示の例"`
+
+
 
 <div class="divider--half"></div>
 

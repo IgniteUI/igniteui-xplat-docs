@@ -4,6 +4,7 @@ _description: ユーザーが Ignite Material UI テーブルの UI で列の表
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -17,12 +18,9 @@ _language: ja
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
-           github-src="{ComponentSample}/column-hiding-toolbar"
-           alt="{Platform} {ComponentTitle} 列非表示の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-toolbar", height="600", alt="{Platform} {ComponentTitle} 列非表示の例"`
+
+
 
 ## {ComponentTitle} のセットアップ
 
@@ -82,6 +80,7 @@ _language: ja
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -350,12 +349,9 @@ export class AppModule {}
 
 列非表示 UI コンポーネントは以下のようになります。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
-           github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} カスタム列非表示の例" >
-</code-view>
+`sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} カスタム列非表示の例"`
+
+
 
 ## スタイル設定
 
@@ -394,10 +390,10 @@ $custom-button: button-theme($flat-text-color: gold, $disabled-color: black);
 }
 ```
 
->[!NOTE]
+> [!Note]
 >**igx-button** mixin を `.igx-column-actions` 内にとどめ、列を非表示にするボタンのみがスタイル設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが `Emulated` ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
 
 ```scss
@@ -440,7 +436,7 @@ $custom-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`igx-color` および `igx-palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -498,12 +494,9 @@ $custom-button: button-theme(
 
 ### デモ
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
-            github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例"`
+
+
 
 <!-- end: Angular -->
 

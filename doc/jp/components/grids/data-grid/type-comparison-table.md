@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コンポーネントを使用して�
 _keywords: {Platform} Table, Data Grid, column template, comparison data, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, 比較データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} 比較データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-comparison-table"
-           alt="{Platform} 比較データのバインディングの例"
-           github-src="grids/data-grid/type-comparison-table">
-</code-view>
+`sample="/grids/data-grid/type-comparison-table", height="600", alt="{Platform} 比較データのバインディングの例"`
+
+
 
 ## API リファレンス
 

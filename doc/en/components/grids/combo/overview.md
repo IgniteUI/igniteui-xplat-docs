@@ -13,12 +13,9 @@ The {ProductName} ComboBox component provides a list of options from which users
 
 ## {Platform} ComboBox Example
 
-<code-view style="height:320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-overview"
-           alt="{Platform} Combo Example"
-           github-src="grids/combo/overview">
-</code-view>
+`sample="/grids/combo/overview", height="320", alt="{Platform} Combo Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -135,12 +132,9 @@ combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
-           alt="{Platform} Combo Selection Example"
-           github-src="grids/combo/selection">
-</code-view>
+`sample="/grids/combo/selection", height="380", alt="{Platform} Combo Selection Example"`
+
+
 
 ### Validation
 
@@ -195,12 +189,9 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 | `footer`             | The container holding the footer content.                                       |
 | `empty`              | The container holding the empty content.                                        |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-styling"
-           alt="{Platform} Combo Styling Example"
-           github-src="grids/combo/styling">
-</code-view>
+`sample="/grids/combo/styling", height="380", alt="{Platform} Combo Styling Example"`
+
+
 
 ## API Reference
 

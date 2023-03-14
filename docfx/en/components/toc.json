@@ -113,32 +113,32 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Styling & Themes",
     "header": true
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Overview",
     "href": "themes/overview.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
+    "exclude": ["Angular", "React", "Blazor"],
     "name": "Configuration",
     "href": "themes/configuration.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "Palettes",
-    "href": "themes/palettes.md",
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Elevations",
+    "href": "themes/elevations.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "Elevations",
-    "href": "themes/elevations.md",
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Palettes",
+    "href": "themes/palettes.md",
     "status": "NEW"
   },
   {
@@ -148,13 +148,13 @@
     "status": "NEW"
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "Component Styles",
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Styles",
     "href": "themes/styles.md",
     "status": "NEW"
   },
   {
-    "exclude": ["Angular"],
+    "exclude": ["Angular" ],
     "name": "Layouts",
     "header": true
   },

@@ -1,8 +1,9 @@
 ---
-title: {Platform} Grid | Build Fast {Platform} Tables | Infragistics
-_description: Create super fast, responsive {Platform} grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
+title: {Platform} Data Grid Component (Data Table) - Infragistics
+_description: Create super-fast, responsive {Platform} Data Grids and tables with {ProductName}. Supports editing, filtering, data binding and many more. Try it now!
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
+namespace: Infragistics.Controls
 ---
 
 <style>
@@ -37,7 +38,8 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
 <div class="sample-content">
     <article class="sample-column">
         <div class="tabbar-wrapper">
-            <p>The {Platform} `Grid` is used as a feature-rich control for displaying data in a tabular format quickly and easily. Modern grids are complex and are usually packed with a set of features like data selection, excel style filtering, sorting, paging, templating, column moving, exporting to Excel and CSV, and more.</p>
+            <p>The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component that allows you to quickly bind and display your data with little coding or configuration. Features of the {Platform} data grid in our toolbox include filtering, sorting, templates, row selection, row grouping, row pinning and movable columns.</p>
+            <p>The {Platform} tables are optimized for live streaming data, with the ability to handle unlimited data set size in a number of rows or columns. </p>
         </div>
     </article>
     <article class="sample-column">
@@ -47,31 +49,28 @@ mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipe
                     src="../../images/general/landing-grid-page.png"
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
+                    alt="{Platform} Data Grid"
+                    title="{Platform} Data Grid">
             </div>
         </div>
     </article>
 </div>
 
-## {Platform} Grid Example
+## {Platform} Data Grid Example
 
-In this grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, as well as the use of grid summaries and cell templating. The demo also includes paging set to display 10 items per page.
+In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 
-## Getting Started with {Platform} Grid
+## Getting Started with {Platform} Data Grid
 
 ### Dependencies
 
-To get started with the {Platform} grid, first you need to install the {ProductName} package.
+To get started with the {Platform} Data Grid, first you need to install the {ProductName} package.
 
 <!-- Blazor -->
 
@@ -131,6 +130,8 @@ For more details on how to customize the appearance of the grid, you may have a 
 <!-- Angular, React, Blazor -->
 
 ### Component Modules
+
+The `DataGrid` requires the following modules:
 
 ```razor
 // in Program.cs file
@@ -324,7 +325,7 @@ function formatUppercase(value) {
 }
 ```
 
->[!NOTE]
+> [!Note]
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
@@ -533,7 +534,7 @@ When changing data through the **cell template** using `ngModel`, you need to ca
 
 <!-- end: Angular -->
 
-> [!NOTE]
+> [!Note]
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
 <!-- Angular -->
@@ -1081,11 +1082,8 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
-           github-src="{GridSample}/binding-nested-data-2">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+
 
 <!-- end: Angular -->
 
@@ -1400,11 +1398,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 And the result from this configuration is:
 
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
-           github-src="{GridSample}/binding-nested-data-1">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+
 
 ### Working with Flat Data Overview
 
@@ -1651,11 +1646,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 Using code snippets from previous section will result in the following example of `Grid`
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
-           github-src="{GridSample}/binding-composite-data">
-</code-view>
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+
 
 ## Keyboard Navigation
 
@@ -1690,7 +1682,7 @@ See the [Grid Sizing](sizing.md) topic. -->
 
 ## Performance (Experimental)
 
-Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing ` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
+Design of the `Grid` allows it to take advantage of the Event Coalescing feature that has Angular introduced. This feature allows for improved performance with roughly around **20%** in terms of interactions and responsiveness. This feature can be enabled on application level by simply setting the `ngZoneEventCoalescing` and `ngZoneRunCoalescing` properties to **true** in the `bootstrapModule` method:
 
 ```typescript
 platformBrowserDynamic()
@@ -1698,20 +1690,20 @@ platformBrowserDynamic()
   .catch(err => console.error(err));
 ```
 
->[!NOTE]
+> [!Note]
 > This is still in experimental feature for the `IgxGridComponent`. This means that there might be some unexpected behaviors in the Grid. In case of encountering any such behavior, please contact us on our [Github]({GithubLink}/discussions) page.
 
->[!NOTE]
+> [!Note]
 > Enabling it can affects other parts of an Angular application that the `IgxGridComponent` is not related to.
 
 <!-- end: Angular -->
 
 ## Styling {Platform} Grid
-> [!NOTE]
+> [!Note]
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">

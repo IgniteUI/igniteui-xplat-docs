@@ -4,6 +4,7 @@ _description: Use the Infragistics {Platform} grid component's Virtual Data Sour
 _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,17 +21,11 @@ The {ProductName} Data Table / Data Grid supports data binding to remote datasou
 ## {Platform} Grid Binding Virtual Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           alt="{Platform} Grid Binding Virtual Data Example"
-           github-src="grids/data-grid/binding-remote-data">
-</code-view>
+`sample="/grids/data-grid/binding-remote-data", height="600", alt="{Platform} Grid Binding Virtual Data Example"`
+
+
 
 <div class="divider--half"></div>
-
-
-
 <!-- Angular, React, WebComponents -->
 In addition to the core and {Platform} data grid packages you will also have to install the datasources package.
 

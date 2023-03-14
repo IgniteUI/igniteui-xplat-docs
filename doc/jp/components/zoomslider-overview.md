@@ -14,25 +14,22 @@ _language: ja
 
 以下のサンプルは、`ZoomSlider` を使用して `XamDataChart` のコンテンツをナビゲートする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="{Platform} ズーム スライダーの例"
-           github-src="charts/zoomslider/overview">
-</code-view>
+`sample="/charts/zoomslider/overview", height="600", alt="{Platform} ズーム スライダーの例"`
+
+
 
 <div class="divider--half"></div>
 
 ## 使用方法
 
-機能名|説明
---------------------|-----------------------
-スクロールバーのナビゲーション|ZoomSlider スクロールバーの組み込み機能を使用して、スケールを変更してデータ範囲をスクロールできます。
-パンとズーム|サムパッドの端をドラッグして表示スケールを調節し、現在の表示範囲を広げる (ズーム アウト)、または狭くする (ズーム イン) ことができます。
-複数のユーザー インタラクション オプション|マウスによるすべてのインタラクションは、タッチ操作 (ほとんどはキーボードを介した操作) でもサポートされます。詳細は、ユーザー インタラクションと操作性を参照してください。
-タッチ サポート|タッチ対応デバイスでは、ZoomSlider のすべての機能を使用できます。すべてのマウス操作は、タッチ環境でもサポートされます。
-拡張性|ZoomSlider コントロールは、追加設定なしで DataChart コントロール をサポートします。
-構成可能なズーム範囲ウィンドウ|ズーム範囲ウィンドウの初期幅、初期位置、最小サイズは、構成可能です。
+| 機能名|説明 |
+| --------------------|----------------------- |
+| スクロールバーのナビゲーション|ZoomSlider スクロールバーの組み込み機能を使用して、スケールを変更してデータ範囲をスクロールできます。 |
+| パンとズーム|サムパッドの端をドラッグして表示スケールを調節し、現在の表示範囲を広げる (ズーム アウト)、または狭くする (ズーム イン) ことができます。 |
+| 複数のユーザー インタラクション オプション|マウスによるすべてのインタラクションは、タッチ操作 (ほとんどはキーボードを介した操作) でもサポートされます。詳細は、ユーザー インタラクションと操作性を参照してください。 |
+| タッチ サポート|タッチ対応デバイスでは、ZoomSlider のすべての機能を使用できます。すべてのマウス操作は、タッチ環境でもサポートされます。 |
+| 拡張性|ZoomSlider コントロールは、追加設定なしで DataChart コントロール をサポートします。 |
+| 構成可能なズーム範囲ウィンドウ|ズーム範囲ウィンドウの初期幅、初期位置、最小サイズは、構成可能です。 |
 
 <!-- Angular, React, WebComponents -->
 ## 依存関係
@@ -45,13 +42,14 @@ npm install --save {PackageCharts}
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
-`ZoomSlider` を作成するには、以下のモジュールが必要です。
 
+`ZoomSlider` を作成するには、以下のモジュールが必要です。
 
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbZoomSliderModule));
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbZoomSliderModule));
 ```
 
 ```ts

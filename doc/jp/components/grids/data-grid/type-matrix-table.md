@@ -4,6 +4,7 @@ _description: インフラジスティックスのグリッド コンポーネ�
 _keywords: {Platform} Table, Data Grid, column template, matrix table, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列テンプレート, マトリックス テーブル, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} マトリックス データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-matrix-table"
-           alt="{Platform} マトリックス データのバインディングの例"
-           github-src="grids/data-grid/type-matrix-table">
-</code-view>
+`sample="/grids/data-grid/type-matrix-table", height="600", alt="{Platform} マトリックス データのバインディングの例"`
+
+
 
 ## API リファレンス
 

@@ -3,6 +3,7 @@ title: {Platform} ツリー グリッド | 最速の {Platform} ツリー テー
 _description: {ProductName} ツリー グリッドは、階層データまたはフラット データを簡単に表示および操作するために使用されます。わずかなコーディングでデータをすばやくバインドできます。無料でお試しください。
 _keywords: {Platform} tree grid, igniteui for {Platform}, infragistics, {Platform} ツリー グリッド, インフラジスティックス
 mentionedTypes: ['TreeGrid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -14,12 +15,9 @@ _language: ja
 
 この例では、ユーザーが階層データまたはフラット データを操作する方法を確認できます。フィルタリングとソートのオプション、ピン固定と非表示、行の選択、Excel と csv へのエクスポートが含まれています。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
-           github-src="{TreeGridSample}/overview"
-           alt="グリッドの例">
-</code-view>
+`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} グリッドの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -149,9 +147,6 @@ export class AppModule {}
         this._bind();
     }
 ```
-
-
-
 ### ツリー セル
 
 ツリー グリッド階層の構築に使用するオプション (子コレクションまたは主キーまたは外部キー) にかかわらず、ツリー グリッドの行は 2 タイプのセルで構成されます。
@@ -159,7 +154,7 @@ export class AppModule {}
 - `GridCell` - 値を含む標準セル。
 - `TreeGridCell` - セル行のレベルに基づいた値、インジケーターの展開/縮小、インデント div 要素を含むツリー セル。行コンポーネントのレベルは、その内部の `treeRow` の `level` プロパティを通じてアクセスできます。
 
-> [!NOTE]
+> [!Note]
 > 各行にはツリー セルを 1 つのみ含むことができますが、標準セルは複数含むことが可能です。
 
 ### 初期展開時の深さ
@@ -263,9 +258,9 @@ const data = [
 ## API リファレンス
 
 * `TreeGrid`
-* `TreeGridRecord`
 * `Column`
 * `GridToolbar`
+* `TreeGridRecord`
 
 ## その他のリソース
 

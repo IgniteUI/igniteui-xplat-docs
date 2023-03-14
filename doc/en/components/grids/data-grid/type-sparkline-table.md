@@ -4,6 +4,7 @@ _description: See how {ProductName} Data Table & Grid supports a template column
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Sparkline']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -15,17 +16,14 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 # {Platform} Column Sparkline
 
-The {ProductName} Data Table / Data Grid supports a Template Column which provides you to a way to embed other components such as {ProductName} sparkline component. Refer to the [Column Types](data-grid-column-types.md) topic for other types of columns supported in the `Grid` component.
+The {ProductName} Data Table / Data Grid supports a Template Column which provides you to a way to embed other components such as {ProductName} sparkline component. Refer to the [Column Types](column-types.md) topic for other types of columns supported in the `Grid` component.
 
 ## {Platform} Column Sparkline Example
 
 
-<code-view style="height: 530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           alt="{Platform} Column Sparkline Example"
-           github-src="charts/sparkline/grid">
-</code-view>
+`sample="/charts/sparkline/grid", height="530", alt="{Platform} Column Sparkline Example"`
+
+
 
 <div class="divider--half"></div>
 

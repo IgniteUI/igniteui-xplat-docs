@@ -13,11 +13,8 @@ The {Platform} Spreadsheet component allows you to perform commands for activati
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-commands"
-           github-src="excel/spreadsheet/commands">
-</code-view>
+`sample="/excel/spreadsheet/commands", height="500", alt="{Platform} spreadsheet commands"`
+
 
 <div class="divider--half"></div>
 

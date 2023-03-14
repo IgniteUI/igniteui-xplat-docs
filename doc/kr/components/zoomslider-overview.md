@@ -12,23 +12,20 @@ The ZoomSlider control provides zooming functionality to range-enabled controls.
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"  >
-</code-view>
+`sample="/charts/zoomslider/overview", height="400", alt="{Platform} zoomslider overview"`
 
 <div class="divider--half"></div>
 
 ## Usage
 
-Feature Name        | Description
---------------------|-----------------------
-Scrollbar navigation       | Users can change scale and scroll through ranges of data using the built-in capabilities of the ZoomSlider scrollbar.
-Panning and zooming       | Users can adjust the display scale by dragging the edges of the thumb pad to either make the current display cover a larger range (zoom out) or a smaller range (zoom in).
-Multiple user interaction options       | All mouse user interactions are redundantly supported through touch and most of them – through the keyboard. For details, see User Interactions and Usability.
-Touch support       |  On touch-enabled devices, users can enjoy the full ZoomSlider functionality. All mouse interactions are supported in touch environment.
-Extensibility       | The ZoomSlider control supports DataChart control out-of the box.
-Configurable zoom-range window       | The initial zoom-range window width and position, as well as its minimum size, are configurable.
+| Feature Name        | Description |
+| --------------------|----------------------- |
+| Scrollbar navigation       | Users can change scale and scroll through ranges of data using the built-in capabilities of the ZoomSlider scrollbar. |
+| Panning and zooming       | Users can adjust the display scale by dragging the edges of the thumb pad to either make the current display cover a larger range (zoom out) or a smaller range (zoom in). |
+| Multiple user interaction options       | All mouse user interactions are redundantly supported through touch and most of them – through the keyboard. For details, see User Interactions and Usability. |
+| Touch support       |  On touch-enabled devices, users can enjoy the full ZoomSlider functionality. All mouse interactions are supported in touch environment. |
+| Extensibility       | The ZoomSlider control supports DataChart control out-of the box. |
+| Configurable zoom-range window       | The initial zoom-range window width and position, as well as its minimum size, are configurable. |
 
 
 <!-- Angular, React, WebComponents -->

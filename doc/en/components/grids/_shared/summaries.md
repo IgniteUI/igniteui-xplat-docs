@@ -4,6 +4,7 @@ _description: Configure {Platform} {ComponentTitle} summaries in the group foote
 _keywords: {Platform} {ComponentTitle} summaries, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Summaries
@@ -12,13 +13,10 @@ The {Platform} `{ComponentName}` has a **summaries** feature that functions on a
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
 
-> [!NOTE]
+
+> [!Note]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
 
 `{ComponentName}` summaries can also be enabled on a per-column level in {ProductName}, which means that you can activate it only for columns that you need. `{ComponentName}` summaries gives you a predefined set of default summaries, depending on the type of data in the column, so that you can save some time:
@@ -370,7 +368,7 @@ Add SummaryResult snippet here
 and take optional parameters for calculating the summaries.
 See [Custom summaries, which access all data](#custom-summaries-which-access-all-data) section below.
 
-> [!NOTE]
+> [!Note]
 > In order to calculate the summary row height properly, the {ComponentTitle} needs the `Operate` method to always return an array of `SummaryResult` with the proper length even when the data is empty. -->
 
 <!-- ComponentStart: Grid, TreeGrid -->
@@ -524,11 +522,8 @@ class MySummary extends IgcNumberSummaryOperand {
 Add blazor snippet for my summary
 ```-->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
@@ -580,17 +575,14 @@ When a default summary is defined, the height of the summary area is calculated 
 
 <!-- Angular -->
 
-> [!NOTE]
+> [!Note]
 > Column summary template could be defined through API by setting the column `SummaryTemplate` property to the required TemplateRef.
 
 <!-- end: Angular -->
 
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-template"
-           github-src="{ComponentSample}/data-summary-template" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
+
 
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
@@ -647,11 +639,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 }, false);
 ```
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
-           github-src="{ComponentSample}/data-summary-formatter" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+
 
 <!-- ComponentStart: Grid -->
 
@@ -673,16 +662,13 @@ The available values of the `SummaryPosition` property are:
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the group row is collapsed. If the property is set to **true** the summary row stays visible when group row is collapsed.
 
 
-> [!NOTE]
+> [!Note]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
 ### Demo
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-options"
-           github-src="{ComponentSample}/groupby-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} groupby summary options"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -706,14 +692,11 @@ The available values of the `SummaryPosition` property are:
 
 The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **false**, which means that the summary row would be hidden when the parent row is collapsed. If the property is set to **true** the summary row stays visible when parent row is collapsed.
 
-> [!NOTE]
+> [!Note]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
-<code-view style="height:720px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-children"
-           github-src="{ComponentSample}/data-summary-children" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} data summary children"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -760,7 +743,7 @@ The last step is to **include** the component mixins:
 @include grid-summary($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -798,7 +781,7 @@ $custom-theme: grid-summary-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -841,11 +824,8 @@ $custom-theme: grid-summary-theme(
 
 Don't forget to include the themes in the same way as it was demonstrated above.
 
-<code-view style="height:710px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-styling"
-           github-src="{ComponentSample}/groupby-summary-styling" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+
 
 <!-- end: Angular -->
 

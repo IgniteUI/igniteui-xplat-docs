@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's row pinning feature 
 _keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridRowPinning}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 ## {Platform} Row Pinning Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
-           alt="{Platform} Row Pinning Example"
-           github-src="grids/data-grid/row-pinning">
-</code-view>
+`sample="/grids/data-grid/row-pinning", height="600", alt="{Platform} Row Pinning Example"`
+
+
 
 <div class="divider--half"></div>
 

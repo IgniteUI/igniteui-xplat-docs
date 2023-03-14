@@ -14,11 +14,8 @@ The {ProductName} Checkbox component is a selection control that allows users to
 
 ## Checkbox Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/checkbox-sample-1" alt="{Platform} Checkbox Example"
-           github-src="inputs/checkbox/sample-1">
-</code-view>
+`sample="/inputs/checkbox/sample-1", height="100", alt="{Platform} Checkbox Example"`
+
 
 <div class="divider--half"></div>
 
@@ -108,12 +105,9 @@ The checkbox can also be labelled by elements external to the checkbox. In this 
 <IgbCheckbox AriaLabelledby="checkbox-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-label"
-           alt="{Platform} Checkbox Example"
-           github-src="inputs/checkbox/label">
-</code-view>
+`sample="/inputs/checkbox/label", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Checked
 
@@ -137,12 +131,9 @@ Use the `checked` attribute to toggle on the checkbox.
 <IgbCheckbox Checked="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-checked"
-           alt="{Platform} Checkbox Example"
-           github-src="inputs/checkbox/checked">
-</code-view>
+`sample="/inputs/checkbox/checked", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Indeterminate
 
@@ -166,12 +157,9 @@ Use the `indeterminate` attribute to set the value of the checkbox to neither **
 <IgbCheckbox Indeterminate="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-indeterminate"
-           alt="{Platform} Checkbox Example"
-           github-src="inputs/checkbox/indeterminate">
-</code-view>
+`sample="/inputs/checkbox/indeterminate", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Required
 
@@ -239,12 +227,9 @@ Use the `disabled` attribute to disable the checkbox.
 <IgbCheckbox Disabled="true" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/checkbox-disabled"
-           alt="{Platform} Checkbox Example"
-           github-src="inputs/checkbox/disabled">
-</code-view>
+`sample="/inputs/checkbox/disabled", height="100", alt="{Platform} Checkbox Example"`
+
+
 
 ### Forms
 

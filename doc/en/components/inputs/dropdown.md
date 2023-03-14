@@ -17,12 +17,9 @@ With our component, you get all the functions and customization options you need
 
 The following {Platform} Dropdown List example demonstrates the use of simple interactive {Platform} Dropdown menu in action with three basic options to choose from. See how it works.
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-overview"
-           alt="{Platform} Dropdown Example"
-           github-src="inputs/dropdown/overview">
-</code-view>
+`sample="/inputs/dropdown/overview", height="220", alt="{Platform} Dropdown Example"`
+
+
 
 ## How to use the Dropdown List with {ProductName}
 
@@ -88,23 +85,17 @@ The simplest way to start using the `Dropdown` is as follows:
 
 The {Platform} Dropdown list is positioned relatively to its target. The `target` slot allows you to provide a built-in component which toggles the `open` property on click. In some cases you would want to use an external target or use another event to toggle the opening of the Dropdown. You can achieve this using the `Show`, `Hide` and `Toggle` methods which allow you to provide the target as a parameter. By default, the Dropdown list uses `absolute` CSS position. You will need to set the `PositionStrategy` of the {Platform} Dropdown to `fixed` when the target element is inside a fixed container, but the Dropdown is not. The Dropdown list is automatically sized based on its content, if you want the list to have the same width as the target, you should set the `SameWidth` property to `true`.
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-target"
-           alt="{Platform} Dropdown Target Example"
-           github-src="inputs/dropdown/target">
-</code-view>
+`sample="/inputs/dropdown/target", height="200", alt="{Platform} Dropdown Target Example"`
+
+
 
 ### Position
 
 The preferred placement of the {Platform} Dropdown can be set using the `Placement` property. The default placement of the Dropdown is `bottom-start`. The `Flip` property determines whether the placement should be flipped if there is not enough space to display the Dropdown at the specified placement. The distance from the {Platform} Dropdown list to its target can be specified using the `Distance` property.
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-position"
-           alt="{Platform} Dropdown Position Example"
-           github-src="inputs/dropdown/position">
-</code-view>
+`sample="/inputs/dropdown/position", height="520", alt="{Platform} Dropdown Position Example"`
+
+
 
 ### Selection
 
@@ -114,34 +105,25 @@ The `Dropdown` emits the `igcChange` event when the user selects an item. The `S
 
 The `DropdownItem` represents a selectable item in the Dropdown list. You could predefine a selected item by setting the `Selected` property. You could also disable an item so that it can't be selected using the `Disabled` property. The `DropdownItem` has a default slot which allows you to specify the content of the item. You could also provide custom content to be rendered before or after the content using the `prefix` and `suffix` slots. The `Value` property allows you to provide a custom value to an item. If the `Value` is not set, it resolves to the text content of the item.
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-item"
-           alt="{Platform} Dropdown Item Example"
-           github-src="inputs/dropdown/item">
-</code-view>
+`sample="/inputs/dropdown/item", height="220", alt="{Platform} Dropdown Item Example"`
+
+
 
 ### Header
 
 You could use the `DropdownHeader` to provide a header for a group of items.
 
-<code-view style="height: 250px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-header"
-           alt="{Platform} Dropdown Header Example"
-           github-src="inputs/dropdown/header">
-</code-view>
+`sample="/inputs/dropdown/header", height="250", alt="{Platform} Dropdown Header Example"`
+
+
 
 ### Group
 
 The {Platform} Dropdown's items can also be grouped using the `DropdownGroup`, making it easier for users to differentiate separate categories. See it in action in this {Platform} Dropdown List example:
 
-<code-view style="height: 420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-group"
-           alt="{Platform} Dropdown Group Example"
-           github-src="inputs/dropdown/group">
-</code-view>
+`sample="/inputs/dropdown/group", height="420", alt="{Platform} Dropdown Group Example"`
+
+
 
 ### Scroll Strategy
 
@@ -155,12 +137,9 @@ By default, the Dropdown is closed automatically when the user clicks outside of
 
 You can change the appearance of the Dropdown and its items, by using the exposed CSS parts. The `Dropdown` exposes `base` and `list` parts, the `DropdownItem` exposes `prefix`, `content` and `suffix` parts and the `DropdownGroup` exposes `label` part.
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/dropdown-styling"
-           alt="{Platform} Dropdown Styling Example"
-           github-src="inputs/dropdown/styling">
-</code-view>
+`sample="/inputs/dropdown/styling", height="320", alt="{Platform} Dropdown Styling Example"`
+
+
 
 ## API Reference
 

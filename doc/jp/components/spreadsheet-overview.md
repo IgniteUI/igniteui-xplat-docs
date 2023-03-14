@@ -11,12 +11,9 @@ mentionedTypes: ['Spreadsheet']
 
 ## {Platform} Spreadsheet の例
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="{Platform} Spreadsheet の例"
-           github-src="excel/spreadsheet/overview">
-</code-view>
+`sample="/excel/spreadsheet/overview", height="500", alt="{Platform} Spreadsheet の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -128,7 +125,7 @@ ModuleManager.register(
 </igc-spreadsheet>
 ```
 
-> [!NOTE]
+> [!Note]
 >
 > 次のコード スニペットでは、外部の [ExcelUtility](excel-utility.md) クラスを使用して `Workbook` を保存およびロードしています。
 

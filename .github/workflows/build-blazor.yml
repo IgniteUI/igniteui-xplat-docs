@@ -30,5 +30,7 @@ jobs:
         args: install docfx -y
     - name: Install packages
       run: npm ci
-    - name: Build WebComponents
+    - name: Build Blazor
       run: npm run buildBlazor
+    - name: Test Blazor
+      run: npm run test --testPlatform=Blazor

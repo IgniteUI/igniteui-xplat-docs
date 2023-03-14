@@ -4,6 +4,7 @@ _description: See how easy it is to select data in {ProductName} grid using vari
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Selection Overview
@@ -14,12 +15,9 @@ With the {ProductName} `{ComponentName}` you can easily select data by using var
 
 The sample below demonstrates three types of **cell selection** behaviors in the `{ComponentName}`. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle}  Selection Example">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="650", alt="{Platform} {ComponentTitle} Selection Example"`
+
+
 
 ## {Platform} {ComponentTitle} Selection Options
 
@@ -175,11 +173,8 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-context-menu"
-           github-src="{ComponentSample}/custom-context-menu">
-</code-view>
+`sample="/{ComponentSample}/custom-context-menu", height="600", alt="{Platform} {ComponentTitle} custom context menu"`
+
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

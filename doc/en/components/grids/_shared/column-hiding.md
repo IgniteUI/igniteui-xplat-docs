@@ -4,6 +4,7 @@ _description: Learn how to use the Column Hiding feature that allows users to ch
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Hiding
@@ -16,12 +17,9 @@ The {ProductName} `{ComponentName}` has a built-in column hiding UI, which can b
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
-           github-src="{ComponentSample}/column-hiding-toolbar"
-           alt="{Platform} {ComponentTitle} Column Hiding Example">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-toolbar", height="600", alt="{Platform} {ComponentTitle} Column Hiding Example"`
+
+
 
 ## {ComponentTitle} Setup
 
@@ -350,12 +348,9 @@ We can easily prevent the user from being able to hide columns through the colum
 
 If all went well, this is how our column hiding UI component should look like:
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
-           github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} Custom Column Hiding Example" >
-</code-view>
+`sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} Custom Column Hiding Example"`
+
+
 
 ## Styling
 
@@ -394,10 +389,10 @@ The last step is to **include** the component mixins, each with its respective t
 }
 ```
 
->[!NOTE]
+> [!Note]
 >We scope the **igx-button** mixin within `.igx-column-actions`, so that only the column hiding buttons would be styled. Otherwise other buttons in the grid would be affected too.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an `Emulated`ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
 ```scss
@@ -440,7 +435,7 @@ $custom-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to `Palettes](themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -498,12 +493,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
-            github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentTitle} Column Hiding Styling Example">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} Column Hiding Styling Example"`
+
+
 
 <!-- end: Angular -->
 

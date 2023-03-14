@@ -13,12 +13,9 @@ The {ProductName} Donut Chart is similar to the [Pie Chart](pie-chart.md), pro
 
 You can create Donut Chart using the `XamDoughnutChart` control by binding your data as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
-           github-src="charts/doughnut-chart/legend"
-           alt="{Platform} Doughnut Legend" >
-</code-view>
+`sample="/charts/doughnut-chart/legend", height="600", alt="{Platform} Doughnut Legend"`
+
+
 
 <div class="divider--half"></div>
 
@@ -65,12 +62,9 @@ The {Platform} Donut Chart includes interactive features that give the viewer to
 
 The {Platform} Donut Chart has the ability to select slices on click. Optionally, you may apply a single custom visual style to the selected slices. The `SliceClick` event is raised when the user clicks on a slice. Enabling slice selection allows you to modify the slice's selection upon click. The following sample demonstrates how to enable slice selection and set the selected slice color to gray.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
-           github-src="charts/doughnut-chart/selection"
-           alt="{Platform} Donut Slice Selection" >
-</code-view>
+`sample="/charts/doughnut-chart/selection", height="600", alt="{Platform} Donut Slice Selection"`
+
+
 
 <div class="divider--half"></div>
 
@@ -78,12 +72,9 @@ The {Platform} Donut Chart has the ability to select slices on click. Optionally
 
 It is possible to have a multiple ring display in the {Platform} Donut Chart, with each of the rings capable of being bound to a different data item, or they can share a common data source. This can be helpful if you need to display your data as tiers that have an underlying common category, such as the season to month data display below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
-           github-src="charts/doughnut-chart/rings"
-           alt="{Platform} Doughnut Multiple Rings" >
-</code-view>
+`sample="/charts/doughnut-chart/rings", height="600", alt="{Platform} Doughnut Multiple Rings"`
+
+
 
 <div class="divider--half"></div>
 
@@ -99,6 +90,6 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type       | Control Name   | API Members
------------------|----------------|------------
-Donut Chart      | `XamDoughnutChart`     | `DoughnutChart`
+| Chart Type       | Control Name   | API Members |
+| -----------------|----------------|------------ |
+| Donut Chart      | `XamDoughnutChart`     | `DoughnutChart` |

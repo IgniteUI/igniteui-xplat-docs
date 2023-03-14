@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid which supports l
 _keywords: {Platform} Table, Data Grid, cell activation, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports loading and saving the grid la
 ## {Platform} Grid Load & Save Layout Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-load-save-layout"
-           alt="{Platform} Grid Load & Save Layout Example"
-           github-src="grids/data-grid/load-save-layout">
-</code-view>
+`sample="/grids/data-grid/load-save-layout", height="600", alt="{Platform} Grid Load & Save Layout Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} grid component to perform expressi
 _keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.FilterExpressions']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridFiltering}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid includes column filtering with both a f
 ## {Platform} Grid Filtering Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
-           alt="{Platform} Grid Filtering Example"
-           github-src="grids/data-grid/column-filtering">
-</code-view>
+`sample="/grids/data-grid/column-filtering", height="600", alt="{Platform} Grid Filtering Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -37,12 +35,9 @@ Filtering is also exposed in the column options UI by hovering a field and click
 
 In the example below, the data grid's FilterExpressions collection is updated to incorporate custom `FilterExpressions`.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
-           alt="{Platform} Grid Filter Expressions Example"
-           github-src="grids/data-grid/column-filter-expressions">
-</code-view>
+`sample="/grids/data-grid/column-filter-expressions", height="600", alt="{Platform} Grid Filter Expressions Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -60,12 +55,9 @@ In addition, the grid's `FilterLogicalOperator` property is responsible for indi
 Since the operands are applied to the column they can be added in several ways, such as inline, in-code, or in a separate class. Each approach is demonstrated in the example below.
 <!-- end:Blazor -->
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
-           alt="{Platform} Grid Filtering Example"
-           github-src="grids/data-grid/column-filter-operands">
-</code-view>
+`sample="/grids/data-grid/column-filter-operands", height="600", alt="{Platform} Grid Filtering Example"`
+
+
 
 <div class="divider--half"></div>
 

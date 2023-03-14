@@ -4,8 +4,16 @@ _description: インフラジスティックスの {Platform} グリッド コ�
 _keywords: {Platform} Table, Data Grid, row pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のピン固定, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridRowPinning}
 _language: ja
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
 
 # {Platform} 行のピン固定
 
@@ -14,12 +22,9 @@ _language: ja
 ## {Platform} 行のピン固定の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-pinning"
-           alt="{Platform} 行のピン固定の例"
-           github-src="grids/data-grid/row-pinning">
-</code-view>
+`sample="/grids/data-grid/row-pinning", height="600", alt="{Platform} 行のピン固定の例"`
+
+
 
 <div class="divider--half"></div>
 

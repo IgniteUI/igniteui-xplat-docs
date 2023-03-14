@@ -5,7 +5,16 @@ _language: ja
 _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics, {Platform} テーブル, データ グリッド, セルおよび行の編集, 一括更新, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.EditModeType', 'Infragistics.Controls.Grid.Implementation.TransactionType']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellEditing}
 ---
+
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} Grid 編集
 
 {ProductName} Data Table / Data Grid は、一括更新のセルおよび行編集をサポートします。注: 現在、これは非テンプレート列に制限されています。
@@ -13,12 +22,9 @@ namespace: Infragistics.Controls
 ## {Platform} Grid 編集の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="{Platform} Grid 編集の例"
-           github-src="grids/data-grid/cell-editing">
-</code-view>
+`sample="/grids/data-grid/cell-editing", height="600", alt="{Platform} Grid 編集の例"`
+
+
 
 <div class="divider--half"></div>
 

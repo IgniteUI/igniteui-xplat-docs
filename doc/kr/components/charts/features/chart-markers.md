@@ -16,12 +16,9 @@ In the following example, the [Line Chart](../types/line-chart.md) is comparing 
 
 The colors of the markers are also managed by setting the `MarkerBrushes` and `MarkerOutlines` properties in the sample below. The markers and `ChartType` is configurable in this sample by using the drop-downs as well.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="{Platform} Configuration Options Example"
-           github-src="charts/category-chart/marker-options">
-</code-view>
+`sample="/charts/category-chart/marker-options", height="500", alt="{Platform} Configuration Options Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,12 +26,9 @@ The colors of the markers are also managed by setting the `MarkerBrushes` and `M
 
 In addition to marker properties, you can implement your own marker by setting a function to the  `MarkerTemplate` property of a series rendered in the `CategoryChart` control as it is demonstrated in example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-templates"
-           alt="{Platform} Chart Marker Templates"
-           github-src="charts/category-chart/marker-templates">
-</code-view>
+`sample="/charts/category-chart/marker-templates", height="600", alt="{Platform} Chart Marker Templates"`
+
+
 
 <div class="divider--half"></div>
 

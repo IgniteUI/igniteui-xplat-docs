@@ -4,6 +4,7 @@ _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集と
 _keywords: crud, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -33,14 +34,11 @@ _language: ja
 
 次のサンプルは、`{ComponentName}` で `BatchEditing` が有効になっており、行編集が有効になっているシナリオを示しています。行編集全体を確定後にトランザクションが追加されるようにします。
 
-<code-view style="height:680px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-actions"
-           github-src="{ComponentSample}/data-batch-editing-actions"
-           alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例" >
-</code-view>
+`sample="/{ComponentSample}/data-batch-editing-actions", height="680", alt="{Platform} {ComponentTitle} 一括編集とトランザクションの例"`
 
-> [!NOTE]
+
+
+> [!Note]
 > トランザクション ステートは、すべての更新、追加、削除された行、そして最後のステートで構成されます。
 
 ## 使用方法
@@ -390,14 +388,14 @@ export class HierarchicalGridBatchEditingSampleComponent {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > トランザクション API は編集の終了を処理しないので、自分で行う必要があります。そうしないと、`{ComponentName}` は編集モードのままになります。これを行う 1 つの方法は、それぞれのメソッドで `EndEdit` を呼び出すことです。
 
 <!-- ComponentStart: TreeGrid -->
 `{ComponentName}` 内の親ノードの削除にはいくつかの特徴があります。階層データを使用している場合、親を削除すると子も削除されます。フラットデータを使用している場合、`{ComponentName}` の `CascadeOnDelete` プロパティを使用して必要な動作を設定できます。このプロパティは、親が削除されたときに子レコードを削除するかどうかを示します (デフォルトでは **true** に設定されています)。
 <!-- ComponentEnd: TreeGrid -->
 
-> [!NOTE]
+> [!Note]
 > `RowEditable` プロパティを無効にすると `{ComponentName}` を変更してセル変更でトランザクションを作成し、UI で行編集オーバーレイを公開しません。
 
 <!-- Angular -->
@@ -407,12 +405,9 @@ export class HierarchicalGridBatchEditingSampleComponent {
 
 [完全なデモ構成は、こちらです。](remote-data-operations.md#一括編集のリモート-ページング)
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-batch-editing-remote"
-           github-src="{ComponentSample}/data-batch-editing-remote"
-           alt="{Platform} {ComponentTitle} 一括編集とリモート ページングの例" >
-</code-view>
+`sample="/{ComponentSample}/data-batch-editing-remote", height="620", alt="{Platform} {ComponentTitle} 一括編集とリモート ページングの例"`
+
+
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->

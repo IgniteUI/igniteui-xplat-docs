@@ -24,12 +24,9 @@ _language: ja
 貼り付け後の新しいデータはイタリックで装飾されます。
 
 
-<code-view style="height: 570px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-paste-options"
-           github-src="{GridSample}/data-paste-options"
-           alt="{Platform} Excel から貼り付けの例">
-</code-view>
+`sample="/{GridSample}/data-paste-options", height="570", alt="{Platform} Excel から貼り付けの例"`
+
+
 
 <div class="divider"></div>
 

@@ -8,7 +8,7 @@ _language: ja
 
 # {Platform} Calendar (カレンダー) の概要
 
-{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。 
+{ProductName} Calendar コンポーネントは、軽量で構成が簡単です。日付と曜日を表示するために使用されます。また、エンド ユーザーに月次または年次ビューを提供するための最良の方法でもあります。{ProductName} カレンダー コントロールを使用すると、ユーザーがナビゲートできる最小および最大の日付範囲を制限できます。
 
 Ignite UI for {ProductName} Calendar は、日付情報を表示するための簡単で直感的な方法を提供します。単一または複数の日付選択モード、日付範囲の強表示と選択、キーボード ナビゲーション、週番号の有効化、サイズと間隔のオプションなど、さまざまな機能がパックされています。
 
@@ -18,12 +18,9 @@ Ignite UI for {ProductName} Calendar は、日付情報を表示するための�
 
 <div class="divider--half"></div>
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="{Platform} Calendar の例"
-           github-src="scheduling/calendar/overview">
-</code-view>
+`sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar の例"`
+
+
 
 ## {ProductNameShort} を使用して {Platform} で Calendar を作成する方法
 
@@ -111,12 +108,9 @@ defineComponents(IgcCalendarComponent);
 <IgrCalendar selection="multiple" />
 ```
 
-<code-view style="height: 370px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="{Platform} Calendar 複数選択の例"
-           github-src="scheduling/calendar/multiple-selection ">
-</code-view>
+`sample="/scheduling/calendar/multiple-selection", height="370", alt="{Platform} Calendar 複数選択の例"`
+
+
 
 ### 範囲選択
 
@@ -135,12 +129,9 @@ defineComponents(IgcCalendarComponent);
 <IgrCalendar selection="range" />
 ```
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="{Platform} Calendar 範囲選択の例"
-           github-src="scheduling/calendar/range-selection">
-</code-view>
+`sample="/scheduling/calendar/range-selection", height="480", alt="{Platform} Calendar 範囲選択の例"`
+
+
 
 ### Active View と Date
 
@@ -152,10 +143,10 @@ defineComponents(IgcCalendarComponent);
 
 デフォルトでは、{ProductName} Calendar コンポーネントは、選択された日付に関する情報を含むヘッダー領域を描画します。`HasHeader` プロパティを **false** に設定することで、ヘッダーを非表示にできます。`HeaderOrientation` プロパティを使用して、ヘッダーの `vertical` または `horizontal` を構成することもできます。
 
-> [!NOTE]
+> [!Note]
 > `Selection` が複数に設定されている場合、{ProductName} Calendar ヘッダーが描画されないことに注意してください。
 
-> [!NOTE]
+> [!Note]
 > {ProductName} Calendar の DOM プロパティは `camelCase` の命名を使用し、対応する HTML 属性は `kebab-case` を使用していることに注意してください。たとえば、`HeaderOrientation` プロパティは `header-orientation` 属性に対応します。
 
 {ProductName} Calendar コンポーネントは、ヘッダーのタイトルをカスタマイズできる `title` スロットを公開します。
@@ -168,12 +159,9 @@ defineComponents(IgcCalendarComponent);
 
 次のサンプルは、上記の構成を示しています:
 
-<code-view style="height: 370px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="{Platform} Calendar ヘッダーの例"
-           github-src="scheduling/calendar/header">
-</code-view>
+`sample="/scheduling/calendar/header", height="370", alt="{Platform} Calendar ヘッダーの例"`
+
+
 
 <!-- end: WebComponents -->
 
@@ -220,12 +208,9 @@ this.radios.forEach(radio => {
 
 すべて適切に設定できると、カスタマイズされた表示の Calendar ができあがります。これにより、ユーザーの選択に基づいてロケールの表現も変更されます。以下は結果です:
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="{Platform} Calendar 書式設定の例"
-           github-src="scheduling/calendar/formatting">
-</code-view>
+`sample="/scheduling/calendar/formatting", height="520", alt="{Platform} Calendar 書式設定の例"`
+
+
 
 <!-- end: WebComponents -->
 
@@ -257,12 +242,9 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 これらの構成では、次の結果が得られます:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="{Platform} Calendar 無効な日付の例"
-           github-src="scheduling/calendar/disabled-dates">
-</code-view>
+`sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar 無効な日付の例"`
+
+
 
 <!-- end: WebComponents -->
 
@@ -286,12 +268,9 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 次のデモは、休暇申請オプション付きの Calendar を示しています。
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="{Platform} Calendar 特定の日付の例"
-           github-src="scheduling/calendar/special-dates">
-</code-view>
+`sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar 特定の日付の例"`
+
+
 
 <!-- end: WebComponents -->
 
@@ -313,12 +292,9 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 次のデモは、週番号が有効になっている Calendar を示しています:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="{Platform} Calendar 週番号の例"
-           github-src="scheduling/calendar/week-numbers">
-</code-view>
+`sample="/scheduling/calendar/week-numbers", height="480", alt="{Platform} Calendar 週番号の例"`
+
+
 
 ### 複数の月
 
@@ -340,23 +316,17 @@ Calendar には、前月と翌月の前後の日付が表示されます。こ�
 
 次のサンプルは、複数月の構成を示しています:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="{Platform} 複数の月の例"
-           github-src="scheduling/calendar/multiple-months">
-</code-view>
+`sample="/scheduling/calendar/multiple-months", height="480", alt="{Platform} 複数の月の例"`
+
+
 
 ### サイズ
 
 `Size` プロパティを変更することで、Calendar の内部要素のサイズと間隔を制御できます。デフォルトの `Size` 値は `large` です。
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="{Platform} Calendar サイズの例"
-           github-src="scheduling/calendar/size">
-</code-view>
+`sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar サイズの例"`
+
+
 
 ### イベント
 
@@ -503,13 +473,7 @@ igc-calendar::part(year-inner current selected) {
 
 次のサンプルは、上記の CSS 構成を示しています:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="{Platform} スタイル設定の例"
-           github-src="scheduling/calendar/styling">
-</code-view>
-
+`sample="/scheduling/calendar/styling", height="480", alt="{Platform} スタイル設定の例"`
 
 ## API リファレンス
 

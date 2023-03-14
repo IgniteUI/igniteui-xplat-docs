@@ -4,6 +4,7 @@ _description: Get started with the {Platform} sorting feature of {ProductName} {
 _keywords: {Platform} sort, {Platform}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Sorting
@@ -12,7 +13,8 @@ In {Platform} `{ComponentName}`, data sorting is enabled on a per-column level, 
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples gropuing from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> [!Note]
+> Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
@@ -24,11 +26,8 @@ Additionally there is a custom contextmenu added for sorting using `{ComponentNa
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-options"
-           github-src="{ComponentSample}/column-sorting-options">
-</code-view>
+`sample="/{ComponentSample}/column-sorting-options", height="550", alt="{Platform} {ComponentTitle} column sorting options"`
+
 
 This is done via the `Sortable` input. With the `{ComponentName}` sorting, you can also set the `SortingIgnoreCase` property to perform case sensitive sorting:
 
@@ -52,11 +51,8 @@ The `{ComponentName}` provides a solution for this problem by indicating the ind
 
 <!-- ComponentStart: Grid -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-indicators"
-           github-src="{ComponentSample}/column-sorting-indicators" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-indicators", height="550", alt="{Platform} {ComponentTitle} column sorting indicators"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -105,7 +101,7 @@ this.grid.sort([
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > Sorting is performed using our `DefaultSortingStrategy` algorithm. Any `Column` or `ISortingExpression` can use a custom implementation of the `ISortingStrategy` as a substitute algorithm. This is useful when custom sorting needs to be defined for complex template columns, or image columns, for example.
 
 As with the filtering behavior, you can clear the sorting state by using the `ClearSort` method:
@@ -128,10 +124,10 @@ this.grid.clearSort();
 }
 ```
 
-> [!NOTE]
+> [!Note]
 > The `SortStrategy` of the `{ComponentName}` is of different type compared to the `SortStrategy` of the `Column`, since they work in different scopes and expose different parameters.
 
-> [!NOTE]
+> [!Note]
 > The sorting operation **DOES NOT** change the underlying data source of the `{ComponentName}`.
 
 ## Initial Sorting State
@@ -177,7 +173,7 @@ public connectedCallback() {
 ```
 <!-- end: WebComponents -->
 
-> [!NOTE]
+> [!Note]
 > If values of type `string` are used by a column of `DataType` `Date`, the `{ComponentName}` won't parse them to `Date` objects and using `{ComponentName}` `Sorting` won't work as expected. If you want to use `string` objects, additional logic should be implemented on an application level, in order to parse the values to `Date` objects.
 
 <!-- ComponentStart: Grid -->
@@ -312,7 +308,7 @@ The last step is to **include** the component mixins:
  @include grid($custom-theme);
 ```
 
->[!NOTE]
+> [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`:
 
  ```scss
@@ -345,7 +341,7 @@ $custom-theme: grid-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >The `igx-color` and `igx-palette` are powerful functions for generating and retrieving colors. Please refer to [Palettes](../themes/sass/palettes.md) topic for detailed guidance on how to use them.
 
 ### Using Schemas
@@ -385,13 +381,10 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-sorting-style"
-           github-src="{ComponentSample}/column-sorting-style" >
-</code-view>
+`sample="/{ComponentSample}/column-sorting-style", height="550", alt="{Platform} {ComponentTitle} column sorting style"`
 
->[!NOTE]
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

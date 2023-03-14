@@ -3,6 +3,7 @@ title: Multi Row Layout in {Platform} {ComponentTitle} - Infragistics
 _description: Position and size columns in a more powerful way, using the multi-row layout functionality in the {ProductName} Data Grid. Check out examples and demos!
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Multi-Row Layout, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Multi-row Layout
@@ -11,12 +12,9 @@ Multi-row Layout extends the rendering capabilities of the `{ComponentName}`. Th
 
 ## {Platform} Multi-row Layout Example
 
-<code-view style="height:755px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-options"
-           github-src="{ComponentSample}/multi-row-layout-options"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-options", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Overview Example"`
+
+
 
 The declaration of Multi-row Layout is achieved through `ColumnLayout` component. Each `ColumnLayout` component should be considered as a block, containing one or multiple `Column` components. Some of the grid features work on block level (those are listed in the "Feature Integration" section below). For example the virtualization will use the block to determine the virtual chunks, so for better performance split the columns into more `ColumnLayout` blocks if the layout allows it. There should be no columns outside of those blocks and no usage of `ColumnGroup` when configuring a multi-row layout. Multi-row Layout is implemented on top of the [grid layout](https://www.w3.org/TR/css-grid-1/) specification and should conform to its requirements.
 
@@ -150,12 +148,9 @@ The demo below adds additional navigation down/up via the <kbd>Enter</kbd> and <
 ### Demo
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-mrl-navigation"
-           github-src="{ComponentSample}/keyboard-mrl-navigation"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example">
-</code-view>
+`sample="/{ComponentSample}/keyboard-mrl-navigation", height="605", alt="{Platform} {ComponentTitle} Multi Row Layout Navigation Example"`
+
+
 
 <!-- Angular -->
 
@@ -180,12 +175,9 @@ By default we have set the same columns as our previous sample, but it can be cl
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-configuration"
-           github-src="{ComponentSample}/multi-row-layout-configuration"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-configuration", height="500", alt="{Platform} {ComponentTitle} Multi Row Layout Configuration Example"`
+
+
 
 <!-- end: Angular -->
 
@@ -301,9 +293,9 @@ In order for the custom theme do affect only specific component, you can move al
 
 This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
@@ -316,14 +308,11 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 ### Demo
 
-<code-view style="height:755px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-layout-styling"
-           github-src="{ComponentSample}/multi-row-layout-styling"
-           alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example">
-</code-view>
+`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
 
->[!NOTE]
+
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->

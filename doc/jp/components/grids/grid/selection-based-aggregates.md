@@ -31,7 +31,7 @@ const boolData = data.filter(rec => typeof rec === "boolean");
 const dates = data.filter(rec => isDate(rec));
 ```
 
-> [!NOTE]
+> [!Note]
 > `isDate` はカスタム関数であることに注意してください。
 
 データ タイプをグループ化した後、集計を開始できます。そのため、`NumberSummaryOperand` および `DateSummaryOperand` の既に公開されているメソッドを使用できます。
@@ -45,11 +45,8 @@ const dates = data.filter(rec => isDate(rec));
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 560px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-data-summary-custom-selection"
-           github-src="{GridSample}/data-summary-custom-selection">
-</code-view>
+`sample="/{GridSample}/data-summary-custom-selection", height="560", alt="{Platform} {GridTitle} data summary custom selection"`
+
 
 <!-- end: Angular -->
 
@@ -61,7 +58,7 @@ const dates = data.filter(rec => isDate(rec));
 ## その他のリソース
 <div class="divider--half"></div>
 
-* [Grid の概要](grid.md)
+* [Grid の概要](../data-grid.md)
 * [選択サービス]({environment:{Platform}ApiUrl}/classes/gridselectionservice.html)
 * [行の選択](row-selection.md)
 * [セルの選択](cell-selection.md)

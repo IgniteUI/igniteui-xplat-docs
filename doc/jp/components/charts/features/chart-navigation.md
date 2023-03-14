@@ -13,12 +13,9 @@ _language: ja
 
 次の例は、使用可能なすべてのパンやズームのオプションを示しています。ボタンを使用して例を操作したり、ドロップダウンまたはチェックボックスを使用して目的のオプションを選択したりできます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="{Platform} ナビゲーションの例"
-           github-src="charts/data-chart/chart-navigation">
-</code-view>
+`sample="/charts/data-chart/chart-navigation", height="600", alt="{Platform} ナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -42,13 +39,13 @@ _language: ja
 
 ズーム操作とパン操作は、それぞれ `DragModifier` プロパティと `PanModifier` プロパティを設定し、修飾キーを使用して有効にすることもできます。これらのプロパティは以下の修飾キーに設定することができ、押すと対応する操作が実行されます。
 
-修飾値 | 対応するキー
----------------|------------------
-`Shift`        | <kbd>Shift</kbd>
-`Control`      | <kbd>Ctrl</kbd>
-`Windows`      | <kbd>Win</kbd>
-`Apple`        | <kbd>Apple</kbd>
-`None`         | なし
+| 修飾値 | 対応するキー |
+| ---------------|------------------ |
+| `Shift`        | <kbd>Shift</kbd> |
+| `Control`      | <kbd>Ctrl</kbd> |
+| `Windows`      | <kbd>Win</kbd> |
+| `Apple`        | <kbd>Apple</kbd> |
+| `None`         | なし |
 
 ## スクロールバーを使用したチャート ナビゲーション
 
@@ -63,18 +60,15 @@ _language: ja
 
 次の例は、スクロールバーを有効にする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
-           alt="{Platform} ナビゲーションの例"
-           github-src="charts/financial-chart/scrollbars">
-</code-view>
+`sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} ナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 
 ## コードによるチャート ナビゲーション
 
-> [!NOTE]
+> [!Note]
 > チャートのコード ナビゲーションは、`XamDataChart` コントロールにのみ使用できます。
 
 {Platform} データ チャートは、チャートでズームまたはパン操作が行われるたびに更新されるいくつかのナビゲーション プロパティを提供します。各プロパティは、チャートでズームやパンニングするためにコードで設定できます。以下は、これらのプロパティの一覧です。

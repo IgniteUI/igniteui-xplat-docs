@@ -14,12 +14,9 @@ _language: ja
 
 次の例は、`XamDataChart` コントロールで `BarSeries` を使用してピラミッド チャートを作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-pyramid-chart"
-           github-src="charts/data-chart/pyramid-chart"
-           alt="{Platform} ピラミッド チャートの例" >
-</code-view>
+`sample="/charts/data-chart/pyramid-chart", height="600", alt="{Platform} ピラミッド チャートの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -14,12 +14,9 @@ _language: ja
 
 次の例に示すように、データを `ItemsSource` プロパティにバインドし、`ChartType` プロパティを **Line** 列挙型に設定することで、`CategoryChart`コントロールに {Platform} 折れ線チャートを作成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           github-src="charts/category-chart/line-chart-multiple-sources"
-           alt="{Platform} 複数ソースの折れ線チャート" >
-</code-view>
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -74,12 +71,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-single-source"
-           alt="単一シリーズの {Platform} 折れ線チャート"
-           github-src="charts/category-chart/line-chart-single-source">
-</code-view>
+`sample="/charts/category-chart/line-chart-single-source", height="600", alt="単一シリーズの {Platform} 折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -89,12 +83,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-multiple-sources"
-           alt="複数シリーズの {Platform} 折れ線チャート"
-           github-src="charts/category-chart/line-chart-multiple-sources'">
-</code-view>
+`sample="/charts/category-chart/line-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -106,12 +97,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-high-frequency"
-           alt="{Platform} ライブ データの {Platform} 折れ線チャートの例"
-           github-src="charts/category-chart/high-frequency">
-</code-view>
+`sample="/charts/category-chart/high-frequency", height="600", alt="ライブ データの {Platform} 折れ線チャートの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -121,12 +109,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Line` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-styling"
-           alt="{Platform} 折れ線チャートのスタイル設定"
-           github-src="charts/category-chart/line-chart-styling">
-</code-view>
+`sample="/charts/category-chart/line-chart-styling", height="600", alt="{Platform} 折れ線チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -138,12 +123,9 @@ _language: ja
 
 積層型折れ線チャートは、地域間で数年間に生成された再生可能電力の量など、時間の経過に伴う価値の変化を示すためによく使用されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedLineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-line-chart"
-           alt="{Platform} 積層型折れ線チャート"
-           github-src="charts/data-chart/stacked-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-line-chart", height="600", alt="{Platform} 積層型折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -153,12 +135,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100LineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-line-chart"
-           alt="{Platform} 積層型 100% 折れ線チャート"
-           github-src="charts/data-chart/stacked-100-line-chart">
-</code-view>
+`sample="/charts/data-chart/stacked-100-line-chart", height="600", alt="{Platform} 積層型 100% 折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -168,12 +147,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `RadialLineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           alt="{Platform} ラジアル折れ線チャート"
-           github-src="charts/data-chart/radial-line-chart">
-</code-view>
+`sample="/charts/data-chart/radial-line-chart", height="600", alt="{Platform} ラジアル折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -183,12 +159,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `PolarLineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
-           alt="{Platform} 極座標型折れ線チャート"
-           github-src="charts/data-chart/polar-line-chart">
-</code-view>
+`sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} 極座標型折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -207,10 +180,10 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ        | コントロール名       | API メンバー
-------------------|--------------------|-----------------------
-折れ線              | `CategoryChart` | `ChartType` = `Line`
-極座標折れ線        | `XamDataChart`     | `PolarLineSeries`
-ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries`
-積層型折れ線      | `XamDataChart`     | `StackedLineSeries`
-積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries`
+| チャート タイプ        | コントロール名       | API メンバー |
+| ------------------|--------------------|----------------------- |
+| 折れ線              | `CategoryChart` | `ChartType` = `Line` |
+| 極座標折れ線        | `XamDataChart`     | `PolarLineSeries` |
+| ラジアル折れ線       | `XamDataChart`     | `RadialLineSeries` |
+| 積層型折れ線      | `XamDataChart`     | `StackedLineSeries` |
+| 積層型 100% 折れ線 | `XamDataChart`     | `Stacked100LineSeries` |

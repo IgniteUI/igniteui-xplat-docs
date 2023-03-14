@@ -30,5 +30,7 @@ jobs:
         args: install docfx -y
     - name: Install packages
       run: npm ci
-    - name: Build WebComponents
+    - name: Build React
       run: npm run buildReact
+    - name: Test Blazor
+      run: npm run test --testPlatform=React

@@ -4,6 +4,7 @@ _description: Use the Infragistics' {Platform} table for high performance data s
 _keywords: {Platform} Table, Data Grid, performance, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -22,12 +23,9 @@ The {ProductName} Data Table / Data Grid is optimized for high-performance with 
 This sample demonstrates this performance by binding thousands of financial records to the {Platform} data grid, grouping them by 1 column (eg. Territory), and live-updating multiple columns every couple of milliseconds. You can change various options in real-time and the Data Grid performance with no lag, screen flicker, or visual delay
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-performance"
-           alt="{Platform} High Performance with Live Data Example"
-           github-src="grids/data-grid/performance">
-</code-view>
+`sample="/grids/data-grid/performance", height="600", alt="{Platform} High Performance with Live Data Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -10,12 +10,9 @@ The {ProductName} Expansion Panel is a lightweight accordion component which can
 
 ## {Platform} Expansion Panel Example
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="{Platform} Expansion Panel Example"
-           github-src="layouts/expansion-panel/usage">
-</code-view>
+`sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} Expansion Panel Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -121,12 +118,9 @@ We can do this by binding to the `Opened` and `Closed` events:
 
 <!-- end: React -->
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="{Platform} Expansion Panel Events"
-           github-src="layouts/expansion-panel/properties-and-events">
-</code-view>
+`sample="/layouts/expansion-panel/properties-and-events", height="320", alt="{Platform} Expansion Panel Events"`
+
+
 
 <div class="divider--half"></div>
 
@@ -139,12 +133,9 @@ Configuring the position of the expansion indicator can be done through the `ind
 
 The next code sample demonstrates how to configure the component's button to go on the *right* side.
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="{Platform} Expansion Panel Customization"
-           github-src="layouts/expansion-panel/component-customization">
-</code-view>
+`sample="/layouts/expansion-panel/component-customization", height="460", alt="{Platform} Expansion Panel Customization"`
+
+
 
 <div class="divider--half"></div>
 
@@ -163,13 +154,7 @@ The {ProductName} Expansion Panel keyboard navigation is compliant with W3C acce
 
 The {ProductName} Expansion Panel component exposes several CSS parts (`header`, `indicator`, `title`, `subtitle` and `content`) to give you full control over its styling.
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="{Platform} Expansion Panel Styling"
-           github-src="layouts/expansion-panel/styling">
-</code-view>
-
+`sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} Expansion Panel Styling"`
 
 <div class="divider"></div>
 

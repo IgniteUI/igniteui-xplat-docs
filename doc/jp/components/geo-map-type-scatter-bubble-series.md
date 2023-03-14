@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理バブル マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           alt="{Platform} マップ | データ可視化ツール | 散布図比例"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} 散布図比の使用の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,15 +25,15 @@ _language: ja
 
 以下の表に、データ バインドに使用される GeographicHighDensityScatterSeries シリーズのプロパティをまとめています。
 
-プロパティ|タイプ|概要
----|---|---
-`ItemsSource`|any|項目のソースを取得または設定します
-`LongitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の経度の値の場所を特定します。
-`LatitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の緯度値の場所を決定します。
-`RadiusMemberPath`|string|シリーズの半径値を取得するために使用するパスを設定します。
-`RadiusScale`|`SizeScale`|現在のバブル シリーズの半径スケール プロパティを取得または設定します。
-`MinimumValue`|any|値のサブ範囲を計算するための最小値を設定します。
-`MaximumValue`|any|値のサブ範囲を計算するための最大値を設定します。
+| プロパティ|タイプ|概要 |
+| ---|---|--- |
+| `ItemsSource`|any|項目のソースを取得または設定します |
+| `LongitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の経度の値の場所を特定します。 |
+| `LatitudeMemberPath`|string|ItemsSource プロパティを使用して、割り当てられた商品の緯度値の場所を決定します。 |
+| `RadiusMemberPath`|string|シリーズの半径値を取得するために使用するパスを設定します。 |
+| `RadiusScale`|`SizeScale`|現在のバブル シリーズの半径スケール プロパティを取得または設定します。 |
+| `MinimumValue`|any|値のサブ範囲を計算するための最小値を設定します。 |
+| `MaximumValue`|any|値のサブ範囲を計算するための最大値を設定します。 |
 
 ## コード スニペット
 

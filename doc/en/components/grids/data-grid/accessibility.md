@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid to support acces
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -28,12 +29,9 @@ This is activated by setting `--use-accessibility` property to **true** explicit
 ## {Platform} Grid Accessible Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-accessibility"
-           alt="{Platform} Grid Cell Accessibility Example"
-           github-src="grids/data-grid/accessibility">
-</code-view>
+`sample="/grids/data-grid/accessibility", height="600", alt="{Platform} Grid Cell Accessibility Example"`
+
+
 
 <div class="divider--half"></div>
 

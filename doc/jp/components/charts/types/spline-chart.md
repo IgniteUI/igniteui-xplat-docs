@@ -13,12 +13,9 @@ _language: ja
 
 次の例は、データをバインドし、`ChartType` プロパティを **Spline** 列挙型に設定することにより、`CategoryChart` コントロールで {Platform} スプライン チャートを作成する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           github-src="charts/category-chart/spline-multiple-sources"
-           alt="{Platform} 複数ソースのスプライン チャート" >
-</code-view>
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} 複数ソースのスプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,12 +25,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
-           github-src="charts/category-chart/spline-single-source"
-           alt="単一シリーズの {Platform} スプライン チャート" >
-</code-view>
+`sample="/charts/category-chart/spline-single-source", height="600", alt="単一シリーズの {Platform} スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -43,12 +37,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           github-src="charts/category-chart/spline-multiple-sources"
-           alt="複数シリーズの {Platform} スプライン チャート" >
-</code-view>
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="複数シリーズの {Platform} スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -58,12 +49,9 @@ _language: ja
 
 `CategoryChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データをバインドし、`ChartType` プロパティを `Spline` に設定します:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
-           github-src="charts/category-chart/spline-styling"
-           alt="{Platform} スプライン チャートのスタイル設定" >
-</code-view>
+`sample="/charts/category-chart/spline-styling", height="600", alt="{Platform} スプライン チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +65,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedSplineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           github-src="charts/data-chart/stacked-spline-chart"
-           alt="{Platform} 積層型スプライン チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} 積層型スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -92,12 +77,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100SplineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           github-src="charts/data-chart/stacked-100-spline-chart"
-           alt="{Platform} 積層型 100 スプライン チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} 積層型 100 スプライン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -115,8 +97,8 @@ _language: ja
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-チャート タイプ          | コントロール名       | API メンバー
---------------------|--------------------|--------------------------
-スプライン              | `CategoryChart` | `ChartType` = `Spline`
-積層型スプライン      | `XamDataChart`     | `StackedSplineSeries`
-積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries`
+| チャート タイプ          | コントロール名       | API メンバー |
+| --------------------|--------------------|-------------------------- |
+| スプライン              | `CategoryChart` | `ChartType` = `Spline` |
+| 積層型スプライン      | `XamDataChart`     | `StackedSplineSeries` |
+| 積層型 100% スプライン | `XamDataChart`     | `Stacked100SplineSeries` |

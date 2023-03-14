@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} grid component supports the ab
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.PinnedPositions', 'Infragistics.Controls.Grid.Implementation.PinColumn', 'Infragistics.Controls.Grid.Implementation.ColumnPinning', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnPinning}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -22,12 +23,9 @@ A column or multiple columns can be pinned to the left-hand or right-hand side o
 ## {Platform} Grid Column Pinning Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="{Platform} Grid Column Pinning Example"
-           github-src="grids/data-grid/column-pinning-picker">
-</code-view>
+`sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid Column Pinning Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -269,16 +267,13 @@ onButtonUnPin () {
 
 The Column Pinning UI is accessible within the `DataGridToolbar` component separate from the grid. For this purpose all we have to do is set the toolbar's `columnPinning` property to true. The toolbar will then display a `Button`, when clicked, will display the column pinning UI. This button also displays the total of pinned-left columns. If the toolbar is not created, enabling the `columnPinning` property will have no effect and hide the button.
 
-The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `toolbarTitle` property, placing text in the `Button` by setting the `columnPinningText` property, and adding a title header to the column hiding UI by setting `columnPinningTitle`.
+The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `ToolbarTitle` property, placing text in the `Button` by setting the `columnPinningText` property, and adding a title header to the column hiding UI by setting `columnPinningTitle`.
 
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
-           github-src="grids/data-grid/column-pinning-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
+
 
 ## Code Snippet
 

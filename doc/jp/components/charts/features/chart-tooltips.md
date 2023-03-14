@@ -15,23 +15,20 @@ _language: ja
 
 次の例は、開始時に `ToolTipType` プロパティを "Default" に設定することでツールチップが有効にした[縦棒チャート](../types/column-chart.md)を示しています。このプロパティはサンプルで構成可能であり、次のいずれかのオプションに設定できます。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-with-tooltips"
-           alt="{Platform} ツールチップ タイプの例"
-           github-src="charts/category-chart/column-chart-with-tooltips">
-</code-view>
+`sample="/charts/category-chart/column-chart-with-tooltips", height="500", alt="{Platform} ツールチップ タイプの例"`
+
+
 
 <div class="divider--half"></div>
 
 `ToolTipType` プロパティは構成可能であり、次のいずれかのオプションに設定できます。
 
-プロパティの値     | 説明
--------------------|----------------
-`Default` ツールチップ | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。
-`Data` ツールチップ | チャートのすべてのシリーズのデータ ツールチップを表示します。
-`Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。
-`Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。
+| プロパティの値     | 説明 |
+| -------------------|---------------- |
+| `Default` ツールチップ | ツールチップは、ポインタがその上に位置されると、単一の項目のツールチップを表示します。 |
+| `Data` ツールチップ | チャートのすべてのシリーズのデータ ツールチップを表示します。 |
+| `Item` ツールチップ | ツールチップは、ポインタが位置されているカテゴリの各データ項目のツールチップを表示します。 |
+| `Category` ツールチップ | ツールチップはポインターがデータ ポイント上に配置されたときにすべてのデータ ポイントに対してツールチップを表示できます。 |
 
 <div class="divider--half"></div>
 
@@ -43,12 +40,9 @@ _language: ja
 
 この例は、{Platform} `CategoryChart` コントロールですべてのシリーズのカスタム ツールチップを作成する方法を示しています。{Platform} `FinancialChart` コントロールのカスタム ツールチップにも同じロジックを適用できることに注意してください。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-tooltip-template"
-           alt="{Platform} ツールチップ テンプレート"
-           github-src="charts/category-chart/tooltip-template">
-</code-view>
+`sample="/charts/category-chart/tooltip-template", height="500", alt="{Platform} ツールチップ テンプレート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -57,12 +51,9 @@ _language: ja
 
 この例は、{Platform} データ チャート コントロールで各シリーズのカスタム ツールチップを作成する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-tooltip-template"
-           alt="{Platform} ツールチップ テンプレート"
-           github-src="charts/data-chart/tooltip-template">
-</code-view>
+`sample="/charts/data-chart/tooltip-template", height="500", alt="{Platform} ツールチップ テンプレート"`
+
+
 
 <div class="divider--half"></div>
 

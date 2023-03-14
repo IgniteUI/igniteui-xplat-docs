@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コンポーネントの列集計機�
 _keywords: {Platform} Table, Data Grid, column, summaries, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, 集計, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.SummaryScope', 'Infragistics.Controls.Grid.Implementation.GroupSummaryDisplayMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridSummaries}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} 列集計の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-summaries"
-           alt="{Platform} 列集計の例"
-           github-src="grids/data-grid/column-summaries">
-</code-view>
+`sample="/grids/data-grid/column-summaries", height="600", alt="{Platform} 列集計の例"`
+
+
 
 <div class="divider--half"></div>
 

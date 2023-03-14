@@ -4,6 +4,7 @@ _description: With {ProductName} Excel Exporter you can make client Excel functi
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Export to Excel Service
@@ -13,13 +14,7 @@ The Excel Exporter service can export data to excel from the `{ComponentName}`. 
 ## {Platform} Excel Exporter Example
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} Excel Exporter Example">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Excel Exporter Example"`
 
 
 
@@ -41,7 +36,7 @@ export class AppModule {}
 > [!Note]
 > In v12.2.1 and later, the exporter services are provided in root, which means you no longer need to declare them in the AppModule providers.
 
-> [!NOTE]
+> [!Note]
 > The Excel Exporter service has a peer dependency on the JSZip library. The JSZip library should be installed when using the Excel Exporter.
 
 To initiate an export process you may use the handler of a button in your component's template.
@@ -93,13 +88,7 @@ public exportButtonHandler() {
 To export grouped data you just need to group the `{ComponentName}` by one or more columns. The browser will download a file named "ExportedDataFile.xlsx" which contains the data from the `{ComponentName}` component in MS Excel format grouped by the selected column. Example:
 
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-exporting"
-           github-src="{ComponentSample}/excel-exporting"
-           alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example">
-</code-view>
+`sample="/{ComponentSample}/excel-exporting", height="750", alt="{Platform} {ComponentTitle} Grouped Data Excel Exporter Example"`
 
 <!-- ComponentEnd: Grid -->
 
@@ -107,16 +96,10 @@ To export grouped data you just need to group the `{ComponentName}` by one or mo
 
 It is now possible to export `{ComponentName}` with defined [multi-column headers](multi-column-headers.md). All headers will be reflected in the exported excel file as they are displayed in the `{ComponentName}`. If you want to exclude the defined multi-column headers from the exported data you can set the `ExporterOption` `IgnoreMultiColumnHeaders` to `true`.
 
-> [!NOTE]
+> [!Note]
 > The exported `{ComponentName}` will not be formatted as a table, since Excel tables do not support multiple row headers.
 
-<code-view style="height: 750px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           explicit-editor="stackblitz"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-export"
-           github-src="{ComponentSample}/multi-column-headers-export"
-           alt="{Platform} {ComponentTitle} Multi-Column Headers Export">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-export", height="750", alt="{Platform} {ComponentTitle} Multi Column Headers Export"`
 
 ## Export Grid with Frozen Column Headers
 
@@ -171,7 +154,7 @@ When you are exporting data from the `{ComponentName}` component, the export pro
 |Exporting pinned columns|In the exported Excel file, the pinned columns will not be frozen but will be displayed in the same order as they appear in the grid.|
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!NOTE]
+> [!Note]
 > Exporting large Excel files may be slow because of an [issue](https://github.com/Stuk/jszip/issues/617) in the [JSZip](https://www.npmjs.com/package/jszip) library. Until the issue is resolved, in order to speed up the Excel Exporter you could import a [setImmediate](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) [polyfill](https://www.npmjs.com/package/setimmediate) in your application.
 
 ```cmd

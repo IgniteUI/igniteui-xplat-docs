@@ -4,6 +4,7 @@ _description: Use Infragistics' {ProductName} Data Table & Grid which supports l
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -23,12 +24,9 @@ The Data Grid contains `SetCustomizedStringAsync` for assigning strings associat
 
 ## {Platform} Grid Localization Example
 
-<code-view style="height: 600px"
-    data-demos-base-url="{environment:dvDemosBaseUrl}"
-    iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-localization"
-    alt="{Platform} Grid Localization Example"
-    github-src="grids/data-grid/localization">
-</code-view>
+`sample="/grids/data-grid/localization", height="600", alt="{Platform} Grid Localization Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid control to bind to an array of d
 _keywords: {Platform} Table, Data Grid, binding to data, {ProductName}, Infragistics, data binding
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The following sample demonstrates the {ProductName} Data Table / Data Grid data 
 ## {Platform} Binding Local Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-local-data"
-           alt="{Platform} Binding Local Data Example"
-           github-src="grids/data-grid/binding-local-data">
-</code-view>
+`sample="/grids/data-grid/binding-local-data", height="600", alt="{Platform} Binding Local Data Example"`
+
+
 
 ## Code Snippet
 

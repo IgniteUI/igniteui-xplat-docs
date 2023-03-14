@@ -13,12 +13,9 @@ The Infragistics {Platform} Dock Manager provides a means to manage the layout o
 
 This example shows most functionalities and docking options of the `DockManager` that you can use in your application.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="{Platform} Dock Manager Example"
-           github-src="layouts/dock-manager/overview">
-</code-view>
+`sample="/layouts/dock-manager/overview", height="600", alt="{Platform} Dock Manager Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -51,7 +48,7 @@ Once the Dock Manager is imported, you can add it on the page:
 </igc-dockmanager>
 ```
 
-> [!NOTE]
+> [!Note]
 > Since the Dock Manager component uses ShadowDOM and slots it is not supported on older browsers like Internet Explorer 11 and Edge 18 and below (non-Chromium versions).
 
 The Dock Manager has a `Layout` property, which describes the layout of the panes. To start defining a layout, you should set the `RootPane` property and add child panes. Here is how you can define a layout with a single content pane:
@@ -326,12 +323,9 @@ this.dockManager.layout = { ...layout };
 Contents and panes can be added to the `Layout` at runtime. In the example below, you can see how you can add content, document and floating panes.
 
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
-           alt="{Platform} Dock Manager Add Content Runtime Example"
-           github-src="layouts/dock-manager/add-content-runtime">
-</code-view>
+`sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} Dock Manager Add Content Runtime Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -354,12 +348,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="{Platform} Dock Manager Pane Closing Example"
-           github-src="layouts/dock-manager/hiding-panes">
-</code-view>
+`sample="/layouts/dock-manager/hiding-panes", height="700", alt="{Platform} Dock Manager Pane Closing Example"`
+
+
 <!-- end: WebComponents -->
 
 <div class="divider--half"></div>
@@ -444,28 +435,25 @@ igc-dockmanager::part(pane-header-maximize-button) {
 If everything went well, we should now have a DockManager with customized icons and tab area. Let's have a look at it:
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
-           alt="{Platform} Dock Manager Customize Buttons Example"
-           github-src="layouts/dock-manager/customize-buttons">
-</code-view>
+`sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager Customize Buttons Example"`
+
+
 <!-- end: WebComponents -->
 
 Below you can find a list containing the slot names for all of the buttons as well as the splitter handle:
 
-Slot name | Description
-----------|------------
-`closeButton` | The close buttons.
-`paneHeaderCloseButton` | The close buttons of the pane headers.
-`tabHeaderCloseButton` | The close buttons of the tab headers.
-`moreTabsButton` | The more tabs buttons.
-`moreOptionsButton` | The more options buttons.
-`maximizeButton` | The maximize buttons.
-`minimizeButton` | The minimize buttons.
-`pinButton` | The pin buttons.
-`unpinButton` | The unpin buttons.
-`splitterHandle` | The splitter handle.
+| Slot name | Description |
+| ----------|------------ |
+| `closeButton` | The close buttons. |
+| `paneHeaderCloseButton` | The close buttons of the pane headers. |
+| `tabHeaderCloseButton` | The close buttons of the tab headers. |
+| `moreTabsButton` | The more tabs buttons. |
+| `moreOptionsButton` | The more options buttons. |
+| `maximizeButton` | The maximize buttons. |
+| `minimizeButton` | The minimize buttons. |
+| `pinButton` | The pin buttons. |
+| `unpinButton` | The unpin buttons. |
+| `splitterHandle` | The splitter handle. |
 
 You can find each slot's corresponding part in the **CSS Parts** under **Styling** section of this page.
 
@@ -563,65 +551,62 @@ igc-dockmanager::part(content-pane) {
 
 In the following example, we demonstrate the ability of customizing the Dock Manager through some of the CSS parts that we've exposed.
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="{Platform} Dock Manager Styling Example"
-           github-src="layouts/dock-manager/styling">
-</code-view>
+`sample="/layouts/dock-manager/styling", height="700", alt="{Platform} Dock Manager Styling Example"`
+
+
 
 <div class="divider--half"></div>
 
 ### CSS Parts
 
-Part name | Description
----------|------------
-`content-pane` | The content pane component.
-`pane-header`  | The content pane header component.
-`pane-header-content` | The content area of the content pane header.
-`pane-header-actions` | The actions area of the content pane header.
-`active` | Indicates an active state. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`, `tab-header`.
-`floating`  | Indicates a floating pane placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
-`window` | Indicates a floating window placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`.
-`split-pane` | The split pane component.
-`splitter` | The resizing splitter component.
-`splitter-base` | The base element of the splitter component.
-`splitter-ghost`| The ghost element of the splitter component.
-`unpinned-pane-header` | The unpinned pane header component.
-`tab-header` | The tab header component.
-`tab-header-more-options-button` | The more options button in the tab header.
-`tab-header-close-button` | The close button in the tab header.
-`selected` | Indicates a selected state. Applies to `tab-header` and `tab-header-close-button`.
-`hovered` | Indicates a hovered state. Applies to `tab-header-close-button`.
-`header-title` | The text title of the tab header.
-`tab-strip-area` | The tab strip area containing the tab headers.
-`tab-strip-actions` | The tab strip area containing the tab actions.
-`top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
-`bottom` | Indicates a bottom tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`.
-`context-menu` | The context menu component.
-`context-menu-item` | An item in the context menu component.
-`docking-preview` | The docking preview area.
-`docking-indicator` | The non-root docking indicator.
-`root-docking-indicator` | The root docking indicator.
-`pane-navigator` | The pane navigator component.
-`pane-navigator-header` | The header area of the pane navigator.
-`pane-navigator-body` | The body area of the pane navigator.
-`pane-navigator-items-group` | An items group in the pane navigator component.
-`pane-navigator-items-group-title` | The title element of an items group in the pane navigator.
-`pane-navigator-item` | An item in the pane navigator.
-`pane-header-close-button` | The close button in the pane header.
-`pane-header-maximize-button` | The maximize button in the pane header.
-`pane-header-minimize-button` | The minimize button in the pane header.
-`pane-header-pin-button` | The pin button in the pane header.
-`pane-header-unpin-button` | The unpin button in the pane header.
-`tabs-maximize-button` | The tabs maximize button.
-`tabs-minimize-button` | The tabs minimize button.
-`tabs-more-button` | The more tabs button.
-`context-menu-unpin-button` | The unpin button in the context menu.
-`context-menu-close-button` | The close button in the context menu.
-`splitter-handle` | The splitter handle.
-`horizontal` | Indicates a horizontal position. Applies to `splitter-handle`.
-`vertical` | Indicates a vertical position. Applies to `splitter-handle`.
+| Part name | Description |
+| ---------|------------ |
+| `content-pane` | The content pane component. |
+| `pane-header`  | The content pane header component. |
+| `pane-header-content` | The content area of the content pane header. |
+| `pane-header-actions` | The actions area of the content pane header. |
+| `active` | Indicates an active state. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`, `tab-header`. |
+| `floating`  | Indicates a floating pane placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`. |
+| `window` | Indicates a floating window placement. Applies to `pane-header`, `pane-header-content`, `pane-header-actions`. |
+| `split-pane` | The split pane component. |
+| `splitter` | The resizing splitter component. |
+| `splitter-base` | The base element of the splitter component. |
+| `splitter-ghost`| The ghost element of the splitter component. |
+| `unpinned-pane-header` | The unpinned pane header component. |
+| `tab-header` | The tab header component. |
+| `tab-header-more-options-button` | The more options button in the tab header. |
+| `tab-header-close-button` | The close button in the tab header. |
+| `selected` | Indicates a selected state. Applies to `tab-header` and `tab-header-close-button`. |
+| `hovered` | Indicates a hovered state. Applies to `tab-header-close-button`. |
+| `header-title` | The text title of the tab header. |
+| `tab-strip-area` | The tab strip area containing the tab headers. |
+| `tab-strip-actions` | The tab strip area containing the tab actions. |
+| `top` | Indicates a top tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`. |
+| `bottom` | Indicates a bottom tabs position. Applies to `tab-header`, `tab-strip-area`, `tab-strip-actions`. |
+| `context-menu` | The context menu component. |
+| `context-menu-item` | An item in the context menu component. |
+| `docking-preview` | The docking preview area. |
+| `docking-indicator` | The non-root docking indicator. |
+| `root-docking-indicator` | The root docking indicator. |
+| `pane-navigator` | The pane navigator component. |
+| `pane-navigator-header` | The header area of the pane navigator. |
+| `pane-navigator-body` | The body area of the pane navigator. |
+| `pane-navigator-items-group` | An items group in the pane navigator component. |
+| `pane-navigator-items-group-title` | The title element of an items group in the pane navigator. |
+| `pane-navigator-item` | An item in the pane navigator. |
+| `pane-header-close-button` | The close button in the pane header. |
+| `pane-header-maximize-button` | The maximize button in the pane header. |
+| `pane-header-minimize-button` | The minimize button in the pane header. |
+| `pane-header-pin-button` | The pin button in the pane header. |
+| `pane-header-unpin-button` | The unpin button in the pane header. |
+| `tabs-maximize-button` | The tabs maximize button. |
+| `tabs-minimize-button` | The tabs minimize button. |
+| `tabs-more-button` | The more tabs button. |
+| `context-menu-unpin-button` | The unpin button in the context menu. |
+| `context-menu-close-button` | The close button in the context menu. |
+| `splitter-handle` | The splitter handle. |
+| `horizontal` | Indicates a horizontal position. Applies to `splitter-handle`. |
+| `vertical` | Indicates a vertical position. Applies to `splitter-handle`. |
 
 ### Themes
 

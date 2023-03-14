@@ -4,6 +4,7 @@ _description: Learn how Infragistics' {ProductName} grid component supports the 
 _keywords: {Platform} Table, Data Grid, column chooser, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Button', 'Infragistics.Controls.Grid.Implementation.ColumnChooser', 'Infragistics.Controls.Grid.Implementation.ColumnHidingAnimationMode', 'ColumnShowingAnimationMode', 'ColumnChooserTitle', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Grid supports the ability show and hide columns with the 
 ## {Platform} Grid Column Chooser Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-toolbar"
-           alt="{Platform} Grid Column Chooser Example"
-           github-src="grids/data-grid/column-chooser-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-chooser-toolbar", height="600", alt="{Platform} Grid Column Chooser Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -34,7 +32,7 @@ The {ProductName} Data Grid supports the ability show and hide columns with the 
 
 The Column Chooser UI is accessible within the `DataGridToolbar` component separate from the grid. For this purpose all we have to do is set the toolbar's `ColumnChooser` property to true. The toolbar will then display a `Button`, when clicked, will display the column chooser UI. This button also displays the total of hidden columns. If the toolbar is not created, enabling the `ColumnChooser` property will have no effect and hide the button.
 
-The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `toolbarTitle` property, placing text in the `Button` by setting the `ColumnChooserText` property, and adding a title header to the column chooser UI by setting `ColumnChooserTitle`.
+The `DataGridToolbar` provides additional properties such as adding a title to the toolbar by using the `ToolbarTitle` property, placing text in the `Button` by setting the `ColumnChooserText` property, and adding a title header to the column chooser UI by setting `ColumnChooserTitle`.
 
 The Column Chooser can be configured with animations by setting the grid's `ColumnHidingAnimationMode` and `ColumnShowingAnimationMode` properties.
 
@@ -168,11 +166,8 @@ Let's say we want to manually display the `ColumnChooser` UI without the toolbar
 ## Demo
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-picker"
-           github-src="grids/data-grid/column-chooser-picker">
-</code-view>
+`sample="/grids/data-grid/column-chooser-picker", height="600", alt="{Platform} data grid column chooser picker"`
+
 
 <div class="divider--half"></div>
 

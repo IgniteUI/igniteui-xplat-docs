@@ -4,6 +4,7 @@ _description: {ProductName} {ComponentTitle} で列選択を構成する方法�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列選択
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -33,12 +34,9 @@ _language: ja
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
-           github-src="{ComponentSample}/column-selection-mode"
-           alt="{Platform} 列選択の例">
-</code-view>
+`sample="/{ComponentSample}/column-selection-mode", height="570", alt="{Platform} 列選択の例"`
+
+
 
 ## 基本的な使用方法
 
@@ -48,7 +46,7 @@ _language: ja
 
 デフォルトの選択モードは `None` です。`Single` または `Multiple` に設定されると、すべての列は `Selectable` になります。列を選択するには、列をクリックして `Selected` としてマークします。列が選択不可な場合、ホバー時に選択スタイルはヘッダーに適用されません。
 
-> [!NOTE]
+> [!Note]
 > [複数列ヘッダー](multi-column-headers.md)機能は `Selectable` 入力に反映されません。その子の 1 つ以上で選択動作が有効な場合、`ColumnGroupComponent` は `Selectable` です。さらに、すべての `Selectable` 子孫が `Selected` である場合、コンポーネントは `Selected` としてマークされます。
 
 <!-- ComponentStart: Grid -->
@@ -68,15 +66,12 @@ _language: ja
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
-           github-src="{ComponentSample}/column-selection-group">
-</code-view>
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+
 
 ## キーボードの組み合わせ
 
-> [!NOTE]
+> [!Note]
 > キーボードの組み合わせは、グリッドの `ColumnSelection` 入力が `multiple` に設定されている場合にのみ使用できます。
 
 **列の選択**機能のキーボード ナビゲーションには 2 つのオプションがあります。
@@ -87,7 +82,7 @@ _language: ja
 
 **API** は、**非表示**列に関していくつかの追加機能を提供し、対応する **setter** を設定することにより、すべての**非表示**列を `Selected` としてマークできます。
 
-> [!NOTE]
+> [!Note]
 > 上記は `ColumnGroupComponent` にも適用されますが、`Selected` プロパティを変更する場合、その子孫の状態を変更します。
 
 API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
@@ -109,7 +104,7 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 TO DO
 ```
 
->[!NOTE]
+> [!Note]
 >[行選択](row-selection.md)と[列選択](column-selection.md)は個別に操作できないことに注意してください。同じ`変数`に依存します。
 
 **選択**と**ホバー**のスタイル設定を変更します。 <br/>
@@ -176,7 +171,7 @@ TO DO
 ### 基本テーマのオーバーライド
 Internet Explorer 11 のコンポーネントをスタイル設定するには、CSS 変数をサポートしていないため、別のアプローチが必要です。
 
->[!NOTE]
+> [!Note]
 >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。カスタム テーマが他のコンポーネントに影響しないようにするには、`::ng-deep` の前に `:host` セレクターを含めるようにしてください。
 
 ```scss
@@ -195,13 +190,10 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
-           github-src="{ComponentSample}/column-selection-styles">
-</code-view>
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
 
->[!NOTE]
+
+> [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->

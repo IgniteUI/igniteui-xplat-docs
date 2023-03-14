@@ -16,12 +16,9 @@ Trendlines are off by default, but you can enable them by setting the `TrendLine
 
 The following sample depicts a `FinancialChart` showing the stock trend of Microsoft between 2013 and 2017 with a `QuinticFit` trendline initially applied. There is a drop-down that will allow you to change the type of trendline that is applied, and all possible trendline types are listed within that drop-down.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="{Platform} Trendlines Example"
-           github-src="charts/financial-chart/trendlines">
-</code-view>
+`sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} Trendlines Example"`
+
+
 
 <div class="divider--half"></div>
 

@@ -4,6 +4,7 @@ _description: Start using Infragistics' {Platform} grid component to resize colu
 _keywords: {Platform} Table, Data Grid, column resizing, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnResizingMode', 'Infragistics.Controls.Grid.Implementation.ColumnResizingAnimationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnResizing}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Grid supports the ability to resize columns, giving you f
 ## {Platform} Grid Column Resizing Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
-           alt="{Platform} Grid Column Resizing Example"
-           github-src="grids/data-grid/column-resizing">
-</code-view>
+`sample="/grids/data-grid/column-resizing", height="600", alt="{Platform} Grid Column Resizing Example"`
+
+
 
 <div class="divider--half"></div>
 

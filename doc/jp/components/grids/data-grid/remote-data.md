@@ -4,6 +4,7 @@ _description: インフラジスティックスの {Platform} グリッド コ�
 _keywords: {Platform} Table, Data Grid, virtual data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, 仮想データ, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,17 +22,11 @@ _language: ja
 ## {Platform} グリッド仮想データのバインディンの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-remote-data"
-           alt="{Platform} グリッド仮想データのバインディンの例"
-           github-src="grids/data-grid/binding-remote-data">
-</code-view>
+`sample="/grids/data-grid/binding-remote-data", height="600", alt="{Platform} グリッド仮想データのバインディンの例"`
+
+
 
 <div class="divider--half"></div>
-
-
-
 <!-- Angular, React, WebComponents -->
 コア パッケージと {Platform} データ グリッド パッケージに加えて、データ ソース パッケージもインストールする必要があります。
 

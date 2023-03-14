@@ -3,6 +3,7 @@ title: {Platform} {ComponentTitle} ページング - インフラジスティッ
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -14,12 +15,9 @@ _language: ja
 
 次の例は `{ComponentName}` のページネーションを表し、ページごとの項目のオプションの使用法とページングを有効にする方法を公開します。ユーザーは、[最後のページに移動] ボタンと [最初のページに移動] ボタンを使用して `{ComponentName}` ページをすばやく移動することもできます。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
-           github-src="{ComponentSample}/row-paging-basic"
-           alt="{Platform} {ComponentTitle} ページネーションの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-basic", height="550", alt="{Platform} {ComponentTitle} ページネーションの例"`
+
+
 
 <!-- Angular -->
 
@@ -170,12 +168,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### ページネーター コンポーネントのデモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
-           github-src="{ComponentSample}/row-paging-options"
-           alt="{Platform} {ComponentTitle} 再利用可能なページネーターの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-options", height="550", alt="{Platform} {ComponentTitle} 再利用可能なページネーターの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -242,10 +237,10 @@ $dark-button: button-theme(
 }
 ```
 
->[!NOTE]
+> [!Note]
 >`Button` ミックスインを `.igx-paginator__pager` 内でスコープして、ページネーター ボタンのみにスタイルが設定されるようにします。そうでない場合は、グリッド内の他のボタンも影響を受けます。
 
- >[!NOTE]
+ > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
@@ -293,7 +288,7 @@ $dark-button: button-theme(
 );
 ```
 
->[!NOTE]
+> [!Note]
 >`Color` および `Palette` は、色を生成および取得するための重要な機能です。使い方の詳細については[パレット](../themes/sass/palettes.md)のトピックを参照してください。
 
 ### スキーマの使用
@@ -370,12 +365,9 @@ $dark-button: button-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
-           github-src="{ComponentSample}/row-paging-style"
-           alt="{Platform} {ComponentTitle} ページング スタイルの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-style", height="550", alt="{Platform} {ComponentTitle} ページング スタイルの例"`
+
+
 
 <div class="divider--half"></div>
 

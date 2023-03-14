@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component which supports the cel
 _keywords: {Platform} Table, Data Grid, cell and row editing, {ProductName}, batch updating, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.EditModeType', 'Infragistics.Controls.Grid.Implementation.TransactionType']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridCellEditing}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports cell and row editing with batc
 ## {Platform} Grid Editing Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-editing"
-           alt="{Platform} Grid Editing Example"
-           github-src="grids/data-grid/cell-editing">
-</code-view>
+`sample="/grids/data-grid/cell-editing", height="600", alt="{Platform} Grid Editing Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -46,7 +44,7 @@ Commits can be approved or declined at the grid level by hooking `onDataCommitti
 
 ## Excel Style Editing
 
-`EditOnKeyPress ` enables you to instantly begin editing when typing similar to how Excel behaves. In addition you may set the `EditModeClickAction` property to `SingleClick` to allow users to quickly edit cells while navigating to other cells. By default double-clicking is required to enter edit mode.
+`EditOnKeyPress` enables you to instantly begin editing when typing similar to how Excel behaves. In addition you may set the `EditModeClickAction` property to `SingleClick` to allow users to quickly edit cells while navigating to other cells. By default double-clicking is required to enter edit mode.
 
 ## Code Snippet
 

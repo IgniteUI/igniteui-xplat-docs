@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} グリッド �
 _keywords: {Platform} Table, Data Grid, column chooser, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列選択, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Button', 'Infragistics.Controls.Grid.Implementation.ColumnChooser', 'Infragistics.Controls.Grid.Implementation.ColumnHidingAnimationMode', 'Infragistics.Controls.Grid.Implementation.ColumnShowingAnimationMode',  'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} Grid 列選択の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-toolbar"
-           alt="{Platform} Grid 列選択の例"
-           github-src="grids/data-grid/column-chooser-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-chooser-toolbar", height="600", alt="{Platform} Grid 列選択の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -36,7 +34,7 @@ _language: ja
 列選択 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。このため、ツールバーの `ColumnChooser` プロパティを true に設定します。
 ツールバーは `Button` を表示し、クリックすると列選択 UI を表示します。このボタンは、非表示列の合計も表示します。ツールバーが作成されていない場合、`ColumnChooser` プロパティを有効にしても効果はなく、ボタンを非表示にします。
 
-`DataGridToolbar` は、` toolbarTitle` プロパティを使用してツールバーにタイトルを追加、`ColumnChooserText` プロパティを設定して `Button` にテキストを配置、`ColumnChooserTitle` を設定して、タイトル ヘッダーを列選択 UI に追加などの追加プロパティを提供します。
+`DataGridToolbar` は、`ToolbarTitle` プロパティを使用してツールバーにタイトルを追加、`ColumnChooserText` プロパティを設定して `Button` にテキストを配置、`ColumnChooserTitle` を設定して、タイトル ヘッダーを列選択 UI に追加などの追加プロパティを提供します。
 
 列選択は、グリッドの `ColumnHidingAnimationMode` および `ColumnShowingAnimationMode` プロパティを設定することでアニメーションで構成できます。
 
@@ -170,11 +168,8 @@ connectedCallback() {
 ## サンプル
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-chooser-picker"
-           github-src="grids/data-grid/column-chooser-picker">
-</code-view>
+`sample="/grids/data-grid/column-chooser-picker", height="600", alt="{Platform} data grid column chooser picker"`
+
 
 <div class="divider--half"></div>
 

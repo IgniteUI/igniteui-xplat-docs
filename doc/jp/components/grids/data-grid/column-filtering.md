@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} グリッド �
 _keywords: {Platform} Table, Data Grid, column, filtering, filter expressions, filter operands, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列, フィルタリング, フィルター式, フィルター オペランド, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.FilterExpressions']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridFiltering}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} グリッド フィルターの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filtering"
-           alt="{Platform} グリッド フィルターの例"
-           github-src="grids/data-grid/column-filtering">
-</code-view>
+`sample="/grids/data-grid/column-filtering", height="600", alt="{Platform} グリッド フィルターの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -38,12 +36,9 @@ _language: ja
 
 以下の例では、データ グリッドの FilterExpressions コレクションが更新され、カスタムの `FilterExpressions` が組み込まれています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-expressions"
-           alt="{Platform} グリッド フィルター式の例"
-           github-src="grids/data-grid/column-filter-expressions">
-</code-view>
+`sample="/grids/data-grid/column-filter-expressions", height="600", alt="{Platform} グリッド フィルター式の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -61,12 +56,9 @@ _language: ja
 オペランドは列に適用されるため、インライン、コード内、または別のクラスなど、いくつかの方法で追加できます。各アプローチは、以下の例で示されています。
 <!-- end:Blazor -->
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-filter-operands"
-           alt="{Platform} グリッド フィルターの例"
-           github-src="grids/data-grid/column-filter-operands">
-</code-view>
+`sample="/grids/data-grid/column-filter-operands", height="600", alt="{Platform} グリッド フィルターの例"`
+
+
 
 <div class="divider--half"></div>
 

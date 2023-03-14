@@ -14,13 +14,7 @@ A Group By behavior in an {Platform} Material table or UI grid creates grouped d
 This example presents the grouping capabilities of a large amount of data. Dragging the column headers to the top (grouping area) allows users to see the data for the selected column in a hierarchical structure. They can do group by in multiple fields by dragging more column headers to the top. These grouping options come in handy when you have tables with numerous rows and columns where users want to present the data in a much faster and visually acceptable way.
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-expressions"
-           github-src="{GridSample}/groupby-expressions"
-           alt="{Platform} {ComponentTitle} Group By Example">
-</code-view>
-
+`sample="/{GridSample}/groupby-expressions", height="605", alt="{Platform} {ComponentTitle} Group By Example"`
 
 ## Initial Grouping State
 
@@ -90,7 +84,8 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 <!-- Angular -->
 
-> Note: Up until now, grouping/sorting worked in conjuction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
+> [!Note]
+> Up until now, grouping/sorting worked in conjunction with each other. In 13.2 version, a new behavior which decouples grouping from sorting is introduced. For example - clearing the grouping will not clear sorting expressions in the grid or vice versa. Still, if a column is both sorted and grouped, grouped expressions take precedence.
 
 <!-- end: Angular -->
 
@@ -230,13 +225,7 @@ Groups that span multiple pages are split between them. The group row is visible
 ### {Platform} Group By With Paging Example
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-paging"
-           github-src="{GridSample}/groupby-paging"
-           alt="{Platform} {ComponentTitle} group by with paging example">
-</code-view>
-
+`sample="/{GridSample}/groupby-paging", height="605", alt="{Platform} {ComponentTitle} group by with paging example"`
 
 ## Group By With Summaries
 
@@ -262,7 +251,7 @@ The grouping UI supports the following keyboard interactions:
 
 Grid allows defining custom grouping per column or per grouping expression, which provides grouping based on a custom condition. This is useful when you need to group by complex objects or for other application specific scenarios.
 
-> [!NOTE]
+> [!Note]
 > In order to implement custom grouping the data first needs to be sorted appropriately. Due to this you may also need to apply a custom sorting strategy that extends the base `DefaultSortingStrategy`. After the data is sorted the custom groups can be determined by specifying a `GroupingComparer` for the column or for the specific grouping expression.
 
 The sample below demonstrates custom grouping by `Date`, where the date values are sorted and grouped by Day, Week, Month or Year based on user-selected grouping mode.
@@ -270,13 +259,7 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 ### {Platform} Custom Group By Example
 
 
-<code-view style="height:605px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-custom-coming-soon"
-           github-src="{GridSample}/groupby-custom-coming-soon"
-           alt="{Platform} {ComponentTitle} custom group by example">
-</code-view>
-
+`sample="/{GridSample}/groupby-custom-coming-soon", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
 
 The sample defines custom sorting strategies for the different date conditions.
 Each custom strategy extends the base `DefaultSortingStrategy` and defines the `CompareValues` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
@@ -482,9 +465,9 @@ In order for the custom theme to affect only specific component, you can move al
 
 This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
 
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
@@ -501,13 +484,10 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-groupby-styling"
-           github-src="{GridSample}/groupby-styling">
-</code-view>
+`sample="/{GridSample}/groupby-styling", height="570", alt="{Platform} {GridTitle} groupby styling"`
 
->[!NOTE]
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end:Angular -->
@@ -529,7 +509,7 @@ This way, due to {Platform}'s [ViewEncapsulation](https://{Platform}.io/api/core
 
 ## Additional Resources
 
-* [Grid overview](grid.md)
+* [Grid overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)

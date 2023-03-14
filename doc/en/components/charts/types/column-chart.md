@@ -13,12 +13,9 @@ The {ProductName} Column Char, Column Graph, or Vertical Bar Chart is among the 
 
 You can create {Platform} Column Chart in the `CategoryChart` control by binding your data and setting `ChartType` to **Column** enum, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           github-src="charts/category-chart/column-chart-multiple-sources"
-           alt="{Platform} Column Chart Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} Column Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -54,12 +51,9 @@ Column Chart belongs to a group of Category Series and it is rendered using a co
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** value, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-single-source"
-           github-src="charts/category-chart/column-chart-single-source"
-           alt="{Platform} Column Chart with Single Source" >
-</code-view>
+`sample="/charts/category-chart/column-chart-single-source", height="600", alt="{Platform} Column Chart with Single Source"`
+
+
 
 <div class="divider--half"></div>
 
@@ -67,12 +61,9 @@ You can create this type of chart in the `CategoryChart` control by binding your
 
 The Column Chart is able to render multiple columns per category for comparison purposes. You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to **Column** value, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-multiple-sources"
-           alt="{Platform} Column Chart with Multiple Sources"
-           github-src="charts/category-chart/column-chart-multiple-sources" >
-</code-view>
+`sample="/charts/category-chart/column-chart-multiple-sources", height="600", alt="{Platform} Column Chart with Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -83,12 +74,9 @@ The {Platform} Column Chart has many options for styling and modification of the
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ColumnSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-column-chart-styling"
-           alt="{Platform} Column Chart Styling"
-           github-src="charts/category-chart/column-chart-styling">
-</code-view>
+`sample="/charts/category-chart/column-chart-styling", height="600", alt="{Platform} Column Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -103,12 +91,9 @@ The Waterfall Chart belongs to a group of category charts and it is rendered usi
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `WaterfallSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-waterfall-chart"
-           github-src="charts/data-chart/waterfall-chart"
-           alt="{Platform} Waterfall Chart" >
-</code-view>
+`sample="/charts/data-chart/waterfall-chart", height="600", alt="{Platform} Waterfall Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -118,12 +103,9 @@ The Stacked Column Chart is similar to the [Category Column Chart](column-chart.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedBarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-column-chart"
-           github-src="charts/data-chart/stacked-column-chart"
-           alt="{Platform} Stacked Column Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-column-chart", height="600", alt="{Platform} Stacked Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -133,12 +115,9 @@ The Stacked 100% Column Chart is identical to the [Stacked Column Chart](stacked
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100BarSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-column-chart"
-           github-src="charts/data-chart/stacked-100-column-chart"
-           alt="{Platform} Stacked 100 Column Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-column-chart", height="600", alt="{Platform} Stacked 100 Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -150,12 +129,9 @@ The Range Column Chart is identical to the [Range Area Chart](area-chart.md)(are
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RangeColumnSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-range-column-chart"
-           github-src="charts/data-chart/range-column-chart"
-           alt="{Platform} Range Column Chart" >
-</code-view>
+`sample="/charts/data-chart/range-column-chart", height="600", alt="{Platform} Range Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -165,12 +141,9 @@ The Radial Column Chart belongs to a group of [Radial Chart](radial-chart.md), a
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialColumnSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
-           github-src="charts/data-chart/radial-column-chart"
-           alt="{Platform} Radial Column Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-column-chart", height="600", alt="{Platform} Radial Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -187,11 +160,11 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type          | Control Name       | API Members
---------------------|--------------------|------------------------
-Column              | `CategoryChart`    | `ChartType` = **Column**
-Radial Column       | `XamDataChart`     | `RadialColumnSeries`
-Range Column        | `XamDataChart`     | `RangeColumnSeries`
-Stacked Column      | `XamDataChart`     | `StackedColumnSeries`
-Stacked 100% Column | `XamDataChart`     | `Stacked100ColumnSeries`
-Waterfall           | `XamDataChart`     | `WaterfallSeries`
+| Chart Type          | Control Name       | API Members  |
+| --------------------|--------------------|------------------------  |
+| Column              | `CategoryChart`    | `ChartType` = **Column** |
+| Radial Column       | `XamDataChart`     | `RadialColumnSeries` |
+| Range Column        | `XamDataChart`     | `RangeColumnSeries` |
+| Stacked Column      | `XamDataChart`     | `StackedColumnSeries` |
+| Stacked 100% Column | `XamDataChart`     | `Stacked100ColumnSeries` |
+| Waterfall           | `XamDataChart`     | `WaterfallSeries` |

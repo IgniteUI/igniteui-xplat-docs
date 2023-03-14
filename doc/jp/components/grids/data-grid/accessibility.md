@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} データ テ�
 _keywords: {Platform} Table, Data Grid, cell accessibility, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, セルのアクセシビリティ, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -29,12 +30,9 @@ _language: ja
 ## {Platform} Grid アクセシビリティの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-accessibility"
-           alt="{Platform} Grid セルのアクセシビリティの例"
-           github-src="grids/data-grid/accessibility">
-</code-view>
+`sample="/grids/data-grid/accessibility", height="600", alt="{Platform} Grid セルのアクセシビリティの例"`
+
+
 
 <div class="divider--half"></div>
 

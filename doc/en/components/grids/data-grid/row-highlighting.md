@@ -4,6 +4,7 @@ _description: Configuring the row highlight of the Infragistics' {Platform} data
 _keywords: {Platform} Table, Data Grid, row highlighting, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports configuring the appearance of 
 ## {Platform} Grid Highlighting Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-row-highlighting"
-           alt="{Platform} Grid Highlighting Example"
-           github-src="grids/data-grid/row-highlighting">
-</code-view>
+`sample="/grids/data-grid/row-highlighting", height="600", alt="{Platform} Grid Highlighting Example"`
+
+
 
 <div class="divider--half"></div>
 

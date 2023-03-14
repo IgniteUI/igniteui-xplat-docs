@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's template columns to 
 _keywords: {Platform} Table, Data Grid, column template, periodic table, {ProductName}, data binding, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -15,17 +16,14 @@ Please note that this control has been deprecated and replaced with the [Grid](.
 
 # {Platform} Binding Periodic Table
 
-The {ProductName} Data Table / Data Grid supports [template columns](data-grid-column-types.md#template-column) to create a periodic table.
+The {ProductName} Data Table / Data Grid supports [template columns](column-types.md#template-column) to create a periodic table.
 
 ## {Platform} Binding Periodic Table Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-periodic-table"
-           alt="{Platform} Binding Periodic Table Example"
-           github-src="grids/data-grid/type-periodic-table">
-</code-view>
+`sample="/grids/data-grid/type-periodic-table", height="600", alt="{Platform} Binding Periodic Table Example"`
+
+
 
 ## API References
 

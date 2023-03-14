@@ -1,6 +1,6 @@
 ---
 title: {Platform} 日付選択 | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform}日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
+_description: インフラジスティックスの {Platform} 日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
 _keywords: {Platform} date picker, drop down, {ProductName}, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
 mentionedTypes: ['DatePicker']
 _language: ja
@@ -13,12 +13,9 @@ _language: ja
 
 このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
-<code-view style="height: 350px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="{Platform} 日付選択の例"
-           github-src="editors/date-picker/overview">
-</code-view>
+`sample="/editors/date-picker/overview", height="350", alt="{Platform} 日付選択の例"`
+
+
 
 <!-- React, WebComponents -->
 ## 依存関係
@@ -35,12 +32,11 @@ npm install --save {PackageLayouts}
 
 日付選択コンポーネントを使用するには、以下のモジュールを登録する必要があります。
 
-
-
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbDatePickerModule));
 ```
 
 ```ts
@@ -68,23 +64,23 @@ ModuleManager.register(IgcDatePickerModule);
 
 - クリア ボタン: x アイコンは現在の値をクリアします。
 
-プロパティ | タイプ | 説明
----------|------|------------
-`IconColor` | string | カレンダー ボタンの色を変更します。
-`AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。
-`DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。
-`FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。例えば、月曜日から日曜日。
-`FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。
-`Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。
-`MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。
-`MaxDate` | DateTime | 後の日付が選択または表示されないように制限します。
-`Placeholder` | string  |  カレンダーの編集部分の値がクリアされたときに表示されるカスタム文字列。
-`ShowClearButton` | bool  |  デフォルトは true で、クリア ボタンはカレンダー ボタンのすぐ左にあり、X で視覚化されます。クリックすると、日付ピッカーの `Value` がクリアされます。クリア ボタンの表示は、オンとオフを切り替えることができます。
-`ShowTodayButton`| bool  |  本日は、カレンダーが開かれた日付のすぐ下に表示されます。クリックすると、現在の日付が選択されます。本日のボタンの表示は、オンとオフを切り替えることができます。
-`ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。
-`FirstWeekOfYear` | enum | 年間の週の開始番号を構成します。FirstDay、FirstFourDayWeek、FirstFullWeek に設定できます。
-`OpenOnFocus` | bool | デフォルトでは、日付ピッカーのドロップダウン部分はシングル クリックで開かれ、ユーザーはカレンダー ボタンをクリックしてカレンダーをドロップダウンする必要があります。
-`Value` | date | 日付ピッカーの値を設定し、ドロップダウン カレンダーで選択します。
+| プロパティ | タイプ | 説明 |
+| ---------|------|------------ |
+| `IconColor` | string | カレンダー ボタンの色を変更します。 |
+| `AllowTextInput`  |  bool   |  このプロパティを true に切り替えることで、日付ピッカーの値を入力して変更できます。 |
+| `DateFormat` | enum | デフォルトは DateShort です。例: 'mm/dd/yyyy'。DateLong に設定すると、エディターに表示される曜日を含めた日付が表示されます。例: 2021年4月14日水曜日。 |
+| `FirstDayOfWeek` | enum | デフォルトは日曜日です。特定の曜日が、カレンダーの各週の行の最初の日として使用されます。例えば、月曜日から日曜日。 |
+| `FormatString` | string  | DateShort を使用すると、日付の形式を構成できます。例えば、'dd/mm/yyyy'。`DateFormat` の DateLong と `FormatString` が設定されている場合、`DateFormat` は無視されることに注意してください。 |
+| `Label`  |  string | 日付ピッカーの左上隅の日付の上にカスタム テキストを表示します。 |
+| `MinDate` | DateTime | 以前の日付が選択または表示されないように制限します。 |
+| `MaxDate` | DateTime | 後の日付が選択または表示されないように制限します。 |
+| `Placeholder` | string  |  カレンダーの編集部分の値がクリアされたときに表示されるカスタム文字列。 |
+| `ShowClearButton` | bool  |  デフォルトは true で、クリア ボタンはカレンダー ボタンのすぐ左にあり、X で視覚化されます。クリックすると、日付ピッカーの `Value` がクリアされます。クリア ボタンの表示は、オンとオフを切り替えることができます。 |
+| `ShowTodayButton`| bool  |  本日は、カレンダーが開かれた日付のすぐ下に表示されます。クリックすると、現在の日付が選択されます。本日のボタンの表示は、オンとオフを切り替えることができます。 |
+| `ShowWeekNumbers` | bool | 週番号は、日付ピッカーのドロップダウン部分の日付のすべての行の左側に番号として表示できます。週番号の表示のオンとオフを切り替えることができます。 |
+| `FirstWeekOfYear` | enum | 年間の週の開始番号を構成します。FirstDay、FirstFourDayWeek、FirstFullWeek に設定できます。 |
+| `OpenOnFocus` | bool | デフォルトでは、日付ピッカーのドロップダウン部分はシングル クリックで開かれ、ユーザーはカレンダー ボタンをクリックしてカレンダーをドロップダウンする必要があります。 |
+| `Value` | date | 日付ピッカーの値を設定し、ドロップダウン カレンダーで選択します。 |
 
 ユーザーは、コントロールのさまざまなテキスト プロパティを使用して日付選択のフォントをカスタマイズできます。使用できるプロパティは `TextColor`、`TextFontFamily`、`TextFontSize`、`TextFontStyle`、および `TextFontWeight` です。
 
@@ -92,12 +88,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で編集を有効にする方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="{Platform} Date Picker 編集の例"
-           github-src="editors/date-picker/editing">
-</code-view>
+`sample="/editors/date-picker/editing", height="300", alt="{Platform} Date Picker 編集の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -105,12 +98,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で選択した日付を制限する方法を示しています。
 
-<code-view style="height: 360px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="{Platform} Date Picker 日付制限の例"
-           github-src="editors/date-picker/date-limits">
-</code-view>
+`sample="/editors/date-picker/date-limits", height="360", alt="{Platform} Date Picker 日付制限の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -118,12 +108,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で長い日付を適用する方法を示しています。
 
-<code-view style="height: 350px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="{Platform} Date Picker 書式の例"
-           github-src="editors/date-picker/format">
-</code-view>
+`sample="/editors/date-picker/format", height="350", alt="{Platform} Date Picker 書式の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -131,12 +118,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、複数の `DatePicker` コントロールを組み合わせる方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="{Platform} Date Picker 日付範囲の例"
-           github-src="editors/date-picker/range">
-</code-view>
+`sample="/editors/date-picker/range", height="300", alt="{Platform} Date Picker 日付範囲の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} JSON ファイルを地理的な場所にバインドの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-json-points"
-           alt="{Platform} JSON ファイルを地理的な場所にバインドの例"
-           github-src="maps/geo-map/binding-data-json-points">
-</code-view>
+`sample="/maps/geo-map/binding-data-json-points", height="500", alt="{Platform} JSON ファイルを地理的な場所にバインドの例"`
+
+
 
 <div class="divider--half"></div>
 

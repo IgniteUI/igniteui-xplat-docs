@@ -4,6 +4,7 @@ _description: {Platform} {ComponentTitle} のサイズ設定がどのように�
 _keywords: sizing, {Platform}, {ComponentKeywords}, {ProductName}, サイズ設定, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 

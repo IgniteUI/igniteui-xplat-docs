@@ -14,12 +14,9 @@ The {ProductName} Badge is a component used in conjunction with avatars, navigat
 
 ## {Platform} Badge Example
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-outlined"
-           alt="{Platform} Badge Example"
-           github-src="inputs/badge/outlined">
-</code-view>
+`sample="/inputs/badge/outlined", height="60", alt="{Platform} Badge Example"`
+
+
 
 <div class="divider"></div>
 
@@ -90,12 +87,9 @@ The {ProductName} badge supports several pre-defined stylistic variants. You can
 <IgbBadge Variant="@BadgeVariant.Success" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-variants"
-           alt="{Platform} Badge Example"
-           github-src="inputs/badge/variants">
-</code-view>
+`sample="/inputs/badge/variants", height="60", alt="{Platform} Badge Example"`
+
+
 
 ### Shape
 
@@ -109,12 +103,9 @@ The badge component supports `rounded`(default) and `square` shapes. These value
 <IgbBadge Shape="@BadgeShape.Square" />
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/badge-shape"
-           alt="{Platform} Badge Example"
-           github-src="inputs/badge/shape">
-</code-view>
+`sample="/inputs/badge/shape", height="60", alt="{Platform} Badge Example"`
+
+
 
 ## Styling
 

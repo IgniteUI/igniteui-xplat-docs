@@ -14,12 +14,9 @@ The {ProductName} Navigation Drawer provides side navigation that can be expande
 
 This sample demonstrates how to create `NavDrawer` component.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="{Platform} Navigation Drawer Items Example"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
+
+
 
 ## Usage
 
@@ -138,12 +135,9 @@ The simplest way to start using the `NavDrawer` is as follows:
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="{Platform} Navigation Drawer Items Example"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer Items Example"`
+
+
 
 ## Navbar Integration
 
@@ -352,12 +346,9 @@ public onMenuIconClick() {
 
 If all goes well, your component should now look like this:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="{Platform} Navigation Drawer Navbar Example"
-           github-src="menus/nav-drawer/add-positions-navbar">
-</code-view>
+`sample="/menus/nav-drawer/add-positions-navbar", height="300", alt="{Platform} Navigation Drawer Navbar Example"`
+
+
 
 ## Mini Variant
 
@@ -440,12 +431,9 @@ With the mini variant, the Navigation Drawer changes its width instead of closin
 
 And here's the result:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="{Platform} Navigation Drawer Mini Example"
-           github-src="menus/nav-drawer/add-mini">
-</code-view>
+`sample="/menus/nav-drawer/add-mini", height="300", alt="{Platform} Navigation Drawer Mini Example"`
+
+
 
 ## Styling the Navigation Drawer
 
@@ -474,13 +462,7 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="{Platform} Navigation Drawer Styling Example"
-           github-src="menus/nav-drawer/styling">
-</code-view>
-
+`sample="/menus/nav-drawer/styling", height="300", alt="{Platform} Navigation Drawer Styling Example"`
 
 ## API References
 

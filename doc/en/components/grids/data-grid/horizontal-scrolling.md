@@ -4,6 +4,7 @@ _description: Use Infragistics' {Platform} grid component's horizontal scrolling
 _keywords: {Platform} Table, Data Grid, column, horizontal, scrolling, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports Horizontal Scrolling is enable
 ## {Platform} Horizontal Scrolling Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-scrolling"
-           alt="{Platform} Horizontal Scrolling Example"
-           github-src="grids/data-grid/column-scrolling">
-</code-view>
+`sample="/grids/data-grid/column-scrolling", height="600", alt="{Platform} Horizontal Scrolling Example"`
+
+
 
 <div class="divider--half"></div>
 

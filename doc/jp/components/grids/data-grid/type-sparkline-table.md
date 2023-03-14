@@ -4,6 +4,7 @@ _description: {ProductName} Data Table / Data Grid は、列スパークライ�
 _keywords: {Platform} Table, Data Grid, column sparkline, {ProductName}, data binding, Infragistics, {Platform} テーブル, データ グリッド, 列スパークライン, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Sparkline']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} 列スパークラインの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           alt="{Platform} 列スパークラインの例"
-           github-src="charts/sparkline/grid">
-</code-view>
+`sample="/charts/sparkline/grid", height="600", alt="{Platform} 列スパークラインの例"`
+
+
 
 <div class="divider--half"></div>
 

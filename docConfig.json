@@ -1,7 +1,9 @@
 {
     "Angular": {
         "isFirstRelease": false,
-        "showStackblitzButtons": true,
+        "samplesGithubFile": "src/app.component.html",
+        "samplesGithubTree": "github/IgniteUI/igniteui-angular-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ReleaseStatus_DockManager}",  "value": ""},
@@ -100,7 +102,9 @@
     },
     "React": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "src/index.tsx",
+        "samplesGithubTree": "github/IgniteUI/igniteui-react-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": true,
         "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-react-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
@@ -191,8 +195,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igr-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-react-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": " ", "note": "do not remove spaces"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": " ", "note": "do not remove spaces"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -205,7 +222,9 @@
     },
     "WebComponents": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "index.html",
+        "samplesGithubTree": "github/IgniteUI/igniteui-wc-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": true,
         "codeSandboxButtonStartFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview&file=/src/$2\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
         "codeSandboxButtonIndexFileReplace": "<a style=\"margin-top: 0.10px\" target=\"_blank\" href=\"https://codesandbox.io/s/github/IgniteUI/igniteui-wc-examples/tree/master/samples/$1?fontsize=14&hidenavigation=1&theme=dark&view=preview\" rel=\"noopener noreferrer\">            <img height=\"40px\" style=\"border-radius: 0.25rem\" alt=\"Edit on CodeSandbox\" src=\"https://static.infragistics.com/xplatform/images/sandbox/code.png\"/>        </a>",
@@ -298,8 +317,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "igc-hierarchical-grid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-webcomponents-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": "grids/grid/cell-selection"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": "grids/grid/column-moving"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": "grids/grid/column-pinning"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": "grids/grid/column-resizing"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": "grids/grid/column-types"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": "grids/grid/filtering"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": "grids/grid/groupby"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": "grids/grid/paging"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": "grids/grid/row-pinning"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": "grids/grid/sorting"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": "grids/grid/summaries"}
         ],
         "samplesBrowsers" : {
             "development": "http://localhost:4200",
@@ -357,7 +389,9 @@
     },
     "Blazor": {
         "isFirstRelease": false,
-        "showStackblitzButtons": false,
+        "samplesGithubFile": "App.razor",
+        "samplesGithubTree": "github/IgniteUI/igniteui-blazor-examples/tree/master/samples/",
+        "samplesDisplayStackblitz": false,
         "codeSandboxButtonInject": false,
         "replacements": [
             { "name": "{ReleaseStatus_DockManager}",  "value": ""},
@@ -445,8 +479,21 @@
             { "name": "{HierarchicalGridSelector}",   "value": "IgbHierarchicalGrid"},
             { "name": "{HierarchicalGridPackage}",    "value": "igniteui-blazor-grids"},
             { "name": "{HierarchicalGridSample}",     "value": "grids/hierarchical-grid"},
-            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""}
+            { "name": "{HierarchicalGridApiMembers}", "value": "\"Infragistics.Controls.HierarchicalGrid\", \"Infragistics.Controls.HierarchicalGridRow\", \"Infragistics.Controls.GridCell\", \"Infragistics.Controls.Column\""},
 
+            { "name": "{CanonicalLinkToGridMain}",            "value": "grids/data-grid", "note": "data-grid is really gird overview topic"},
+            { "name": "{CanonicalLinkToGridCellEditing}",     "value": "grids/grid/cell-editing"},
+            { "name": "{CanonicalLinkToGridCellSelection}",   "value": "grids/grid/cell-selection"},
+            { "name": "{CanonicalLinkToGridColumnMoving}",    "value": "grids/grid/column-moving"},
+            { "name": "{CanonicalLinkToGridColumnPinning}",   "value": "grids/grid/column-pinning"},
+            { "name": "{CanonicalLinkToGridColumnResizing}",  "value": "grids/grid/column-resizing"},
+            { "name": "{CanonicalLinkToGridColumnTypes}",     "value": "grids/grid/column-types"},
+            { "name": "{CanonicalLinkToGridFiltering}",       "value": "grids/grid/filtering"},
+            { "name": "{CanonicalLinkToGridGroupBy}",         "value": "grids/grid/groupby"},
+            { "name": "{CanonicalLinkToGridPaging}",          "value": "grids/grid/paging"},
+            { "name": "{CanonicalLinkToGridRowPinning}",      "value": "grids/grid/row-pinning"},
+            { "name": "{CanonicalLinkToGridSorting}",         "value": "grids/grid/sorting"},
+            { "name": "{CanonicalLinkToGridSummaries}",       "value": "grids/grid/summaries"}
         ],
         "samplesBrowsers" : {
             "development": "https://localhost:44317/blazor-client",

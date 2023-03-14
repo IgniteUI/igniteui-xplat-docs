@@ -13,12 +13,9 @@ The {ProductName} Spline Chart belongs to a group of Category Charts that render
 
 The following example shows how to create {Platform} Spline Chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to Spline enum.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           github-src="charts/category-chart/spline-multiple-sources"
-           alt="{Platform} Spline Chart Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,12 +25,9 @@ The Spline Chart is often used to show the change of value over time such as the
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-single-source"
-           github-src="charts/category-chart/spline-single-source"
-           alt="{Platform} Spline Chart with Single Source" >
-</code-view>
+`sample="/charts/category-chart/spline-single-source", height="600", alt="{Platform} Spline Chart with Single Source"`
+
+
 
 <div class="divider--half"></div>
 
@@ -43,12 +37,9 @@ Since the Spline Chart allows you to combine multiple series and compare or see 
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-multiple-sources"
-           github-src="charts/category-chart/spline-multiple-sources"
-           alt="{Platform} Spline Chart with Multiple Sources" >
-</code-view>
+`sample="/charts/category-chart/spline-multiple-sources", height="600", alt="{Platform} Spline Chart with Multiple Sources"`
+
+
 
 <div class="divider--half"></div>
 
@@ -58,12 +49,9 @@ If you need a Spline Chart with more features such as composite other series, yo
 
 You can create this type of chart in the `CategoryChart` control by binding your data and setting the `ChartType` property to `Spline`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-spline-styling"
-           github-src="charts/category-chart/spline-styling"
-           alt="{Platform} Spline Chart Styling" >
-</code-view>
+`sample="/charts/category-chart/spline-styling", height="600", alt="{Platform} Spline Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +65,9 @@ The Stacked Spline Chart is often used to show the change of value over time suc
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `StackedSplineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-spline-chart"
-           github-src="charts/data-chart/stacked-spline-chart"
-           alt="{Platform} Stacked Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-spline-chart", height="600", alt="{Platform} Stacked Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -92,12 +77,9 @@ The Stacked 100% Spline Chart is identical to the Stacked Spline Chart in all as
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `Stacked100SplineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-spline-chart"
-           github-src="charts/data-chart/stacked-100-spline-chart"
-           alt="{Platform} Stacked 100 Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-spline-chart", height="600", alt="{Platform} Stacked 100 Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -115,8 +97,8 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-Chart Type          | Control Name       | API Members
---------------------|--------------------|--------------------------
-Spline              | `CategoryChart` | `ChartType` = `Spline`
-Stacked Spline      | `XamDataChart`     | `StackedSplineSeries`
-Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries`
+| Chart Type          | Control Name       | API Members |
+| --------------------|--------------------|-------------------------- |
+| Spline              | `CategoryChart` | `ChartType` = `Spline` |
+| Stacked Spline      | `XamDataChart`     | `StackedSplineSeries` |
+| Stacked 100% Spline | `XamDataChart`     | `Stacked100SplineSeries` |

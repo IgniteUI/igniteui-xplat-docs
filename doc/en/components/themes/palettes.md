@@ -43,7 +43,7 @@ As the table above shows, the `gray` color doesn't include the `A100`, `A200`, `
 
 On top of the aforementioned colors, we also include **Level AAA** [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) compliant `contrast` colors for each color variant. This means that you can safely use the corresponding `contrast` color variants as foreground colors for the base color variant.
 
-> [!NOTE]
+> [!Note]
 > Contrast colors are generated at build-time therefore overriding the CSS variables will not update the corresponding contrast colors.
 
 Here's an excerpt of the `primary` color as declared in the Light Bootstrap Palette:

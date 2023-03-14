@@ -4,6 +4,7 @@ _description: Want to use the Pinning feature of the {ProductName} when you deve
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Column Pinning
@@ -14,12 +15,9 @@ Column Pinning in {ProductName} allows the end users to lock column in a particu
 
 This example demonstrates how you can pin a column or multiple columns to the left or right side of the `{ComponentName}`.
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options"
-           alt="{Platform} {ComponentTitle} Column Pinning  Example">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} Column Pinning Example"`
+
+
 
 ## Column Pinning API
 
@@ -198,9 +196,6 @@ function onColumnPinned(e) {
 igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
 
-
-
-
 ## Pinning Position
 
 You can change the column pinning position via the `Pinning` configuration option. It allows you to set the columns position to either Start or End.
@@ -210,26 +205,26 @@ When set to End the columns are rendered at the end of the grid, after the unpin
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
-```
-
-<!-- WebComponents -->
-```html
-<{ComponentSelector} auto-generate="true">
-    <igc-pinning-config columns="End">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { columns: ColumnPinningPosition.End };
+```
+<!-- end: WebComponents -->
 
 ```razor
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+
 @code {
     private IgbPinningConfig pinningConfig = new() {
         Columns = ColumnPinningPosition.End
@@ -239,11 +234,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 ### Demo
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
-           github-src="{ComponentSample}/column-pinning-right-side">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
 
 <!-- Angular -->
 
@@ -512,11 +504,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### Demo
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+
 
 <!-- end: Angular -->
 
@@ -617,9 +606,9 @@ The easiest way to apply your theme is with a `sass` `@include` statement in the
 In order for the custom theme to affect only specific component, you can move all of the styles you just defined from the global styles file to the custom component's style file (including the import of the `index` file).
 
 This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Component#encapsulation), your styles will be applied only to your custom component.
- >[!NOTE]
+ > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to penetrate this encapsulation using `::ng-deep` in order to style the grid.
- >[!NOTE]
+ > [!Note]
  >Wrap the statement inside of a `:host` selector to prevent your styles from affecting elements *outside of* our component:
 
 ```scss
@@ -633,13 +622,10 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:506px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
-           github-src="{ComponentSample}/column-pinning-styles">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
 
->[!NOTE]
+
+> [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- ComponentEnd: Grid -->

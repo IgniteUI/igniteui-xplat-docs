@@ -4,6 +4,7 @@ _description: データの配列を取り込み、そのデータの一部を �
 _keywords: {Platform} Table, Data Grid, row, paging, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 行のページング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridPaging}
 _language: ja
 ---
 
@@ -22,12 +23,9 @@ _language: ja
 
 ## {Platform} 行のページングの例
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-pager"
-           alt="{Platform} 行のページングの例"
-           github-src="grids/data-grid/pager">
-</code-view>
+`sample="/grids/data-grid/pager", height="600", alt="{Platform} 行のページングの例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -3,6 +3,7 @@ title: {Platform} {ComponentTitle} キーボード ナビゲーション - {Prod
 _description: {ProductName} で {ComponentTitle} キーボード ナビゲーションを使用する方法について説明します。キーボード インタラクションでは、セル、行、列を簡単に移動できます。
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -20,11 +21,11 @@ _language: ja
 * **列の集計** (有効な場合)
 * **{ComponentTitle} ページネーター** (有効な場合)
 
->[!NOTE]
+> [!Note]
 > この変更のため、<kbd>tab</kbd> と  <kbd>Shift + Tab</kbd> キーでセル間を移動することは `{ComponentName}` でサポートされなくなりました。
 > <kbd>Tab</kbd> キーを押すと、**グループ化 / ツール バー** -> **ヘッダー** -> **本体** -> **集計** -> **フッター/ページネーター**の順序にタブ位置を移動します。
 
->[!NOTE]
+> [!Note]
 > テンプレートによっ**フォーカス可能な**要素を `{ComponentName}` の本体に公開すると、ブラウザのデフォルトの動作が防止されていないため、**予期されない結果**が発生する可能性があります。
 > したがって、それを適切に**防止/変更する**のは開発者の責任です。
 
@@ -52,8 +53,8 @@ _language: ja
  - <kbd>Shift + Alt + 左矢印</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
  <!-- ComponentEnd:Grid -->
  - <kbd>Shift + Alt + 右矢印</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
- - <kbd>Alt +左矢印</kbd> または <kbd>Alt +上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
- - <kbd>Alt +右矢印</kbd> または <kbd>Alt +下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
+ - <kbd>Alt +左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
+ - <kbd>Alt +右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
 
 ## 本体ナビゲーション
 
@@ -126,13 +127,12 @@ _language: ja
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:470px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
+
+<!-- Angular -->
 
 ## カスタム キーボード ナビゲーション
 
@@ -145,11 +145,11 @@ _language: ja
 | `ActiveNodeChange` | アクティブ ノードが変更されたときに発生するイベント。これを使用して、アクティブ フォーカス位置 (ヘッダー、tbody など)、列インデックス、行インデックス、またはネストされたレベルを決定できます。| `IActiveNodeChangeEventArgs` |
 | `NavigateTo` | 提供された `Rowindex` と `VisibleColumnIndex` に基づいてグリッド内の位置に移動します。```{ targetType: GridKeydownTargetType, target: Object }``` タイプのパラメーターを受け入れるコールバック関数を通してターゲット要素上でカスタム ロジックを実行することもできます。使用方法: <br />```grid.navigateTo(10, 3, (args) => { args.target.nativeElement.focus(); });``` | ```RowIndex: number, VisibleColumnIndex: number, callback: ({ targetType: GridKeydownTargetType, target: Object }) => {}``` |
 | `GetNextCell`| `RowIndex` と `VisibleColumnIndex` で次のセルを定義する `ICellPosition` オブジェクトを返します。コールバック関数は、`GetNextCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const nextEditableCell = grid.getNextCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, currentVisibleColumnIndex: number, callback: (Column) => boolean``` |
-| `GetPreviousCell`| `RowIndex` と ` VsibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
+| `GetPreviousCell`| `RowIndex` と `VisibleColumnIndex` で前のセルを定義する `ICellPosition`  オブジェクトを返します。コールバック関数は、`GetPreviousCell` メソッドの 3 番目のパラメーターとして渡すことができます。コールバック関数は、パラメーターとして `Column` を受け取り、指定された条件が満たされた場合に `boolean` 値を返します: <br />```const prevEditableCell = grid.getPreviousCell(0, 4, (col) => col.editable);``` | ```CurrentRowIndex: number, CurrentVisibleColumnIndex: number, callback: (Column`) => boolean``` |
 <br />
 
 <!-- ComponentStart: HierarchicalGrid -->
->[!NOTE]
+> [!Note]
 > `GetNextCell` および `GetPreviousCell` は現在のレベルで使用し、上位または下位レベルのセルにアクセスできません。
 >
 <!-- ComponentEnd: HierarchicalGrid -->
@@ -236,7 +236,9 @@ public customKeydown(args: IGridKeydownEventArgs) {
             obj.target.activate();
         });
 ```
-> 注: 実装の詳細は、サンプルコードを参照してください。
+
+> [!Note]
+> 実装の詳細は、サンプルコードを参照してください。
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
 - **Order** 列のセルをダブルクリックするか <kbd>F2</kbd> キーを押し、値を **7** に変更して <kbd>Tab</kbd> キーを押します。プロンプト メッセージが表示されます。
@@ -245,11 +247,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 #### デモ
 
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -266,6 +265,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
         (obj) => { obj.target.nativeElement.focus(); });
 ```
 
+<!-- end: Angular -->
+
 <!-- Angular -->
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
@@ -276,11 +277,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- end: Angular -->
 
@@ -308,11 +306,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
 

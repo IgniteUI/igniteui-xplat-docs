@@ -15,12 +15,9 @@ _language: ja
 
 この基本的な {ProductName} ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="{Platform} ツリーの例"
-           github-src="grids/tree/basic-example">
-</code-view>
+`sample="/grids/tree/basic-example", height="400", alt="{Platform} ツリーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -184,7 +181,7 @@ builder.Services.AddIgniteUIBlazor(
 </IgrTree>
 ```
 
-> [!NOTE]
+> [!Note]
 > 提供されている `indentation`、`indicator`、および `label` スロットを使用して、`TreeItem` のインデント、拡張、およびラベル領域ごとにカスタム スロット コンテンツを提供できます。
 
 ### 項目のインタラクション
@@ -274,12 +271,9 @@ builder.Services.AddIgniteUIBlazor(
 
 {ProductName} Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="{Platform} Tree ロードオンデマンドの例"
-           github-src="grids/tree/load-on-demand">
-</code-view>
+`sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree ロードオンデマンドの例"`
+
+
 
 ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
 
@@ -291,16 +285,16 @@ builder.Services.AddIgniteUIBlazor(
 
 以下にリストされている公開された CSS パーツのいくつかを使用して、`TreeItem` の外観を変更できます:
 
-部分名 | 説明
----------|------------
-`wrapper` | ツリー項目のラッパー。
-`selected`  | 選択された状態を示します。`wrapper` に適用されます。
-`focused` | フォーカスされた状態を示します。`wrapper` に適用されます。
-`active` | アクティブ状態を示します。`wrapper` に適用されます。
-`indicator` | ツリー項目の展開インジケーター。
-`label` | ツリー項目のコンテンツ。
-`text` | ツリー項目の表示テキスト。
-`select` | 選択が有効になっている場合のツリー項目のチェックボックス。
+| 部分名 | 説明 |
+| ---------|------------ |
+| `wrapper` | ツリー項目のラッパー。 |
+| `selected`  | 選択された状態を示します。`wrapper` に適用されます。 |
+| `focused` | フォーカスされた状態を示します。`wrapper` に適用されます。 |
+| `active` | アクティブ状態を示します。`wrapper` に適用されます。 |
+| `indicator` | ツリー項目の展開インジケーター。 |
+| `label` | ツリー項目のコンテンツ。 |
+| `text` | ツリー項目の表示テキスト。 |
+| `select` | 選択が有効になっている場合のツリー項目のチェックボックス。 |
 
 これらの CSS パーツを使用して、次のように `Tree` コンポーネントの外観をカスタマイズできます:
 

@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理シェイプ シリーズのスタイル設定の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-shape-styling"
-           alt="{Platform} 地理シェイプ シリーズのスタイル設定の例"
-           github-src="maps/geo-map/map-shape-styling">
-</code-view>
+`sample="/maps/geo-map/shape-styling", height="500", alt="{Platform} 地理シェイプ シリーズのスタイル設定の例"`
+
+
 
 <div class="divider--half"></div>
 

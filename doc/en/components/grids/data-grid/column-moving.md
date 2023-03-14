@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} Data Grid supports the ability
 _keywords: {Platform} Table, Data Grid, column moving, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.ColumnMovingMode', 'Infragistics.Controls.Grid.Implementation.ColumnMovingAnimationMode']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnMoving}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -20,12 +21,9 @@ The {ProductName} Data Grid supports the ability to move columns, giving you the
 ## {Platform} Grid Column Moving Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
-           alt="{Platform} Grid Column Moving Example"
-           github-src="grids/data-grid/column-moving">
-</code-view>
+`sample="/grids/data-grid/column-moving", height="600", alt="{Platform} Grid Column Moving Example"`
+
+
 
 <div class="divider--half"></div>
 

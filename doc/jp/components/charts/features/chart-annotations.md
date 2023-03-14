@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、{Platform} チャートで使用できる注釈レイヤーを示しています。チェックボックスをクリックして、各レイヤーのオンとオフを切り替えます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-line-chart-with-annotations"
-           alt="{Platform} 注釈の例"
-           github-src="charts/category-chart/line-chart-with-annotations">
-</code-view>
+`sample="/charts/category-chart/line-chart-with-annotations", height="600", alt="{Platform} 注釈の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -43,12 +40,9 @@ _language: ja
 
 次の例は、単一のシリーズをターゲットにして、タイプを垂直に設定し、ブラシの色をスタイリングすることによって、十字線レイヤーを構成する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-crosshair-layer-styling"
-           alt="{Platform} 十字線レイヤーのスタイル設定"
-           github-src="charts/data-chart/crosshair-layer-styling">
-</code-view>
+`sample="/charts/data-chart/crosshair-layer-styling", height="500", alt="{Platform} 十字線レイヤーのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -66,12 +60,9 @@ _language: ja
 
 次の例は、上記のプロパティを設定して、最終的な値レイヤーの注釈のスタイルを設定する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-final-value-layer-styling"
-           alt="{Platform} 最終値レイヤーのスタイル設定"
-           github-src="charts/data-chart/final-value-layer-styling">
-</code-view>
+`sample="/charts/data-chart/final-value-layer-styling", height="500", alt="{Platform} 最終値レイヤーのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -115,12 +106,9 @@ _language: ja
 
 次の例は、上記のプロパティを設定して、コールアウト レイヤーの注釈のスタイルを設定する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-callout-layer-styling"
-           alt="{Platform} コールアウト レイヤーのスタイル設定"
-           github-src="charts/data-chart/callout-layer-styling">
-</code-view>
+`sample="/charts/data-chart/callout-layer-styling", height="500", alt="{Platform} コールアウト レイヤーのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -169,12 +157,9 @@ chart.calloutsLabelMemberPath = "info";
 
 次の例は、上記の `AllowedPositions` プロパティを設定して、データ チャートを注釈付きのタイムラインとしてスタイル設定する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-timeline-axis-type"
-           alt="コールアウト レイヤーを使用した {Platform} タイムライン"
-           github-src="charts/data-chart/timeline-axis-type">
-</code-view>
+`sample="/charts/data-chart/timeline-axis-type", height="500", alt="{Platform} コールアウト レイヤーを使用した {Platform} タイムライン"`
+
+
 <!-- end: Blazor -->
 
 ## API リファレンス

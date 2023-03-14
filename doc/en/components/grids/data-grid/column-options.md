@@ -4,6 +4,7 @@ _description: See how Infragistics' {ProductName} Data Grid supports the ability
 _keywords: {Platform} Table, Data Grid, column options, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.HeaderClickAction', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -22,12 +23,9 @@ To enable the column options ui you can set the grid's `IsColumnOptionsEnabled` 
 ## {Platform} Grid Column Options Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-options"
-           alt="{Platform} Grid Column Options Example"
-           github-src="grids/data-grid/column-options">
-</code-view>
+`sample="/grids/data-grid/column-options", height="600", alt="{Platform} Grid Column Options Example"`
+
+
 
 <div class="divider--half"></div>
 

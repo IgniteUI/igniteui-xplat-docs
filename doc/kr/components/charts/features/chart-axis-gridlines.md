@@ -10,7 +10,8 @@ mentionedTypes: ["CategoryChart"]
 
 All {ProductName} charts include built-in capability to modify appearance of axis lines as well as frequency of major/minor gridlines and tickmarks that are rendered on the X-Axis and Y-Axis.
 
-> NOTE: the following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
+> [!Note]
+> The following examples can be applied to `CategoryChart` as well as `FinancialChart` controls.
 
 Axis major gridlines are long lines that extend horizontally along the Y-Axis or vertically along the X-Axis from locations of axis labels, and they render through the plot area of the chart. Axis minor gridlines are lines that render between axis major gridlines.
 
@@ -20,12 +21,9 @@ Axis tickmarks are displayed along all horizontal and vertical axes at each labe
 
 This example shows how configure the axis gridline to display major and minor gridlines at specified intervals:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} Axis Gridlines Example"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -37,14 +35,14 @@ In order to display minor gridlines that correspond to minor interval, you need 
 
 You can customize how the gridlines are displayed in your {Platform} chart by setting the following properties:
 
-Axis Visuals           | Type    | Property Names                                               | Description
------------------------|---------|--------------------------------------------------------------|----------------
-Major Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | These properties set the color of axis major gridlines.
-Minor Stroke Color     | string  | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | These properties set the color of axis minor gridlines.
-Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | These properties set the thickness in pixels of the axis major gridlines.
-Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | These properties set the thickness in pixels of the axis minor gridlines.
-Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`                         | These properties set interval between axis major gridlines and labels.
-Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | These properties set interval between axis minor gridlines, if used.
+| Axis Visuals           | Type    | Property Names                                               | Description |
+| -----------------------|---------|--------------------------------------------------------------|---------------- |
+| Major Stroke Color     | string  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | These properties set the color of axis major gridlines. |
+| Minor Stroke Color     | string  | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | These properties set the color of axis minor gridlines. |
+| Major Stroke Thickness | number  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | These properties set the thickness in pixels of the axis major gridlines. |
+| Minor Stroke Thickness | number  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | These properties set the thickness in pixels of the axis minor gridlines. |
+| Major Interval         | number  | `XAxisInterval` <br> `YAxisInterval`                         | These properties set interval between axis major gridlines and labels. |
+| Minor Interval         | number  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | These properties set interval between axis minor gridlines, if used. |
 
 Regarding the Major and Minor Interval in the table above, it is important to note that the major interval for axis labels will also be set by this value, displaying one label at the point on the axis associated with the interval. The minor interval gridlines are always rendered between the major gridlines, and as such, the minor interval properties should always be set to something much smaller (usually 2-5 times smaller) than the value of the major Interval properties.
 
@@ -56,12 +54,9 @@ On date time axes, this value is represented as time span between axis minimum v
 
 The following example demonstrates how to customize the gridlines by setting the properties above:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} Axis Gridlines Example"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -73,12 +68,9 @@ Tick marks are always extend from the axis line and point to the direction of th
 
 The following example demonstrates how to customize the tickmarks by setting the properties above:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
-           alt="{Platform} Axis Tickmarks Example"
-           github-src="charts/category-chart/axis-tickmarks">
-</code-view>
+`sample="/charts/category-chart/axis-tickmarks", height="450", alt="{Platform} Axis Tickmarks Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -86,11 +78,11 @@ The following example demonstrates how to customize the tickmarks by setting the
 
 You can customize how the axis tickmarks are displayed in our {Platform} chats by setting the following properties:
 
-Axis Visuals           | Type    | Property Names                                             | Description
------------------------|---------|------------------------------------------------------------|-------------------------
-Tick Stroke Color      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | These properties set the color of the tickmarks.
-Tick Stroke Thickness  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | These properties set the thickness of the axis tick marks.
-Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`                   | These properties set the length of the axis tick marks.
+| Axis Visuals           | Type    | Property Names                                             | Description |
+| -----------------------|---------|------------------------------------------------------------|------------------------- |
+| Tick Stroke Color      | string  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | These properties set the color of the tickmarks. |
+| Tick Stroke Thickness  | number  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | These properties set the thickness of the axis tick marks. |
+| Tick Stroke Length     | number  | `XAxisTickLength` <br> `YAxisTickLength`                   | These properties set the length of the axis tick marks. |
 
 
 ## Additional Resources

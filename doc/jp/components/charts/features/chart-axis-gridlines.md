@@ -11,7 +11,7 @@ _language: ja
 
 すべての {ProductName} チャートには、軸線の外観、X 軸と Y 軸に描画される主/副グリッド線および目盛りの頻度を変更するための組み込み機能が含まれています。
 
-> [!NOTE]
+> [!Note]
 > 次の例は、`CategoryChart` および `FinancialChart` コントロールに適用されます。
 
 軸の主グリッド線は、軸ラベルの位置から水平 (Y 軸) または垂直 (X 軸) に伸びる長い線であり、チャートのプロット領域を介して描画されます。軸の副グリッド線は、軸の主グリッド線の間に描画される線です。
@@ -22,12 +22,9 @@ _language: ja
 
 この例は、指定した間隔で主グリッド線と副グリッド線を表示するために軸グリッド線を構成する方法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} 軸グリッド線の例"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} 軸グリッド線の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -39,16 +36,16 @@ _language: ja
 
 以下のプロパティを設定して、{Platform} チャートでのグリッド線の表示をカスタマイズできます。
 
-軸ビジュアル           | タイプ    | プロパティ名                                               | 説明
------------------------|---------|--------------------------------------------------------------|----------------
-主なストロークの色     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | これらのプロパティは、軸の主グリッド線の色を設定します。
-副ストロークの色     | 文字列  | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | これらのプロパティは、軸の副グリッド線の色を設定します。
-主なストロークの太さ | 数  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | これらのプロパティは、軸の主グリッド線の太さをピクセル単位で設定します。
-副ストロークの太さ | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | これらのプロパティは、軸の副グリッド線の太さをピクセル単位で設定します。
-主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`                         | これらのプロパティは、軸の主グリッド線とラベルの間隔を設定します。
-副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | これらのプロパティは、軸の副グリッド線の間隔を設定します (使用する場合)。
-軸線のストローク色    | 文字列  | `XAxisStroke` <br> `YAxisStroke`                   | これらのプロパティは、軸線の色を設定します。
-軸のストロークの太さ | 数  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | これらのプロパティは、軸線のピクセル単位の太さを設定します。
+| 軸ビジュアル           | タイプ    | プロパティ名                                               | 説明 |
+| -----------------------|---------|--------------------------------------------------------------|---------------- |
+| 主なストロークの色     | 文字列  | `XAxisMajorStroke` <br> `YAxisMajorStroke`                   | これらのプロパティは、軸の主グリッド線の色を設定します。 |
+| 副ストロークの色     | 文字列  | `XAxisMinorStroke` <br> `YAxisMinorStroke`                   | これらのプロパティは、軸の副グリッド線の色を設定します。 |
+| 主なストロークの太さ | 数  | `XAxisMajorStrokeThickness` <br> `YAxisMajorStrokeThickness` | これらのプロパティは、軸の主グリッド線の太さをピクセル単位で設定します。 |
+| 副ストロークの太さ | 数  | `XAxisMinorStrokeThickness` <br> `YAxisMinorStrokeThickness` | これらのプロパティは、軸の副グリッド線の太さをピクセル単位で設定します。 |
+| 主間隔         | 数  | `XAxisInterval` <br> `YAxisInterval`                         | これらのプロパティは、軸の主グリッド線とラベルの間隔を設定します。 |
+| 副間隔         | 数  | `XAxisMinorInterval` <br> `YAxisMinorInterval`               | これらのプロパティは、軸の副グリッド線の間隔を設定します (使用する場合)。 |
+| 軸線のストローク色    | 文字列  | `XAxisStroke` <br> `YAxisStroke`                   | これらのプロパティは、軸線の色を設定します。 |
+| 軸のストロークの太さ | 数  | `XAxisStrokeThickness` <br> `YAxisStrokeThickness` | これらのプロパティは、軸線のピクセル単位の太さを設定します。 |
 
 上記のテーブルの主間隔と副間隔については、軸ラベルの主間隔も、この値によって設定され、間隔に関連付けられた軸のポイントにラベルが 1 つ表示されることに注意してください。副間隔グリッド線は常に主グリッド線の間に描画されるため、副間隔プロパティは常に主間隔プロパティの値よりもはるかに小さい値 (通常は 2〜5 倍小さい値) に設定する必要があります。
 
@@ -60,12 +57,9 @@ _language: ja
 
 以下の例は、上記のプロパティを設定してグリッド線をカスタマイズする方法を示しています。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} 軸グリッド線の例"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} 軸グリッド線の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +71,9 @@ _language: ja
 
 以下の例は、上記のプロパティを設定して目盛りをカスタマイズする方法を示します。
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
-           alt="{Platform} 軸目盛りの例"
-           github-src="charts/category-chart/axis-tickmarks">
-</code-view>
+`sample="/charts/category-chart/axis-tickmarks", height="450", alt="{Platform} 軸目盛りの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,11 +81,11 @@ _language: ja
 
 以下のプロパティを設定して、{Platform} チャートで軸の目盛りの表示方法をカスタマイズできます。
 
-軸ビジュアル           | タイプ    | プロパティ名                                             | 説明
------------------------|---------|------------------------------------------------------------|-------------------------
-目盛りストロークの色      | 文字列  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | これらのプロパティは、目盛りの色を設定します。
-目盛りストロークの太さ  | 数  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | これらのプロパティは、軸の目盛りの太さを設定します。
-目盛りストロークの長さ     | 数  | `XAxisTickLength` <br> `YAxisTickLength`                   | これらのプロパティは、軸の目盛りの長さを設定します。
+| 軸ビジュアル           | タイプ    | プロパティ名                                             | 説明 |
+| -----------------------|---------|------------------------------------------------------------|------------------------- |
+| 目盛りストロークの色      | 文字列  | `XAxisTickStroke` <br> `YAxisTickStroke`                   | これらのプロパティは、目盛りの色を設定します。 |
+| 目盛りストロークの太さ  | 数  | `XAxisTickStrokeThickness` <br> `YAxisTickStrokeThickness` | これらのプロパティは、軸の目盛りの太さを設定します。 |
+| 目盛りストロークの長さ     | 数  | `XAxisTickLength` <br> `YAxisTickLength`                   | これらのプロパティは、軸の目盛りの長さを設定します。 |
 
 
 ## その他のリソース

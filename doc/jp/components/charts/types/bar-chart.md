@@ -14,12 +14,9 @@ _language: ja
 
 次の例に示すように、データ ソースを複数の `BarSeries` にバインドすることにより、`XamDataChart` コントロールに {Platform} 棒チャートを作成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="{Platform} 複数ソースの棒チャート" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="{Platform} 複数ソースの棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -77,12 +74,9 @@ _language: ja
 
 棒チャートは、カテゴリ シリーズのグループに属し、チャートの左から右へデータ ポイント値に向かって延びる四角形のコレクションを使用して描画されます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-single-source"
-           github-src="charts/data-chart/bar-chart-single-source"
-           alt="{Platform} 単一シリーズの {Platform} 棒チャート" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-single-source", height="600", alt="単一シリーズの {Platform} 棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,12 +84,9 @@ _language: ja
 
 棒チャートは、比較のためにカテゴリごとに複数の棒を描画できます。この例では、棒チャートは人気のある映画フランチャイズの興行収益を比較しています。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを複数の `BarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-multiple-sources"
-           github-src="charts/data-chart/bar-chart-multiple-sources"
-           alt="{Platform} 複数シリーズの {Platform} 棒チャート" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-multiple-sources", height="600", alt="複数シリーズの {Platform} 棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -103,12 +94,9 @@ _language: ja
 
 棒チャートのスタイルを設定でき、パーセント比較を示すために各棒に[注釈値](../features/chart-annotations.md)を使用できます。`XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `BarSeries` にバインドし、`CalloutLayer` を追加します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-bar-chart-styling"
-           github-src="charts/data-chart/bar-chart-styling"
-           alt="{Platform} 棒チャートのスタイル設定" >
-</code-view>
+`sample="/charts/data-chart/bar-chart-styling", height="600", alt="{Platform} 棒チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 
@@ -120,12 +108,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `StackedBarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-bar-chart"
-           github-src="charts/data-chart/stacked-bar-chart"
-           alt="{Platform} 積層型棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-bar-chart", height="600", alt="{Platform} 積層型棒チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -135,12 +120,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `Stacked100BarSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-stacked-100-bar-chart"
-           github-src="charts/data-chart/stacked-100-bar-chart"
-           alt="{Platform} 積層型 100 棒チャート" >
-</code-view>
+`sample="/charts/data-chart/stacked-100-bar-chart", height="600", alt="{Platform} 積層型 100 棒チャート"`
+
+
 
 <div class="divider--half"></div>
 

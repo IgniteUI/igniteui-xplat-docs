@@ -16,12 +16,9 @@ The sparkline control has several visual elements and corresponding features tha
 
 The following example shows all the different sparkline types available. The type is defined by setting the `DisplayType` property. If the `DisplayType` property is not specified, then by default, the `Line` type is displayed.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           github-src="charts/sparkline/display-types"
-           alt="{Platform} Sparkline Example" >
-</code-view>
+`sample="/charts/sparkline/display-types", height="450", alt="{Platform} Sparkline Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -66,12 +63,9 @@ The {Platform} Sparkline supports the following types of sparklines by setting t
 - `Column`: Displays the Column chart type of Sparkline with numeric data. Some may refer to it as vertical bars. This type can render a single data point, but it would require specifying the minimum value range property (minimum) in Sparkline so the supplied single data point can be visible, otherwise the value will be treated as the minimum value and will not be visible.
 - `WinLoss`: This type is similar in its visual appearance to Column chart type, in which the value of each column is equal to either the positive maximum (for positive values) or the negative minimum (for negative value) of the data set. The idea is to indicate a win or loss scenario. For the Win/Loss chart to display properly, the data set must have both positive and negative values. If the WinLoss sparkline is bound to the same data as the other types such as the Line type, which can be bound to a collection of numeric values, then the {Platform} Sparkline will select two values from the collection - the highest and the lowest - and will render the sparkline based upon those values.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-display-types"
-           github-src="charts/sparkline/display-types"
-           alt="{Platform} Sparkline Example" >
-</code-view>
+`sample="/charts/sparkline/display-types", height="450", alt="{Platform} Sparkline Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,11 +84,8 @@ Markers in the sparkline can be placed in any combination of the following locat
 
 All of the markers mentioned above can be customized using the related marker type's property in aspects of color, visibility, and size. For example, the `Low` markers above will have properties `LowMarkerBrush`, `LowMarkerVisibility`, and `LowMarkerSize`.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-markers"
-           github-src="charts/sparkline/markers" >
-</code-view>
+`sample="/charts/sparkline/markers", height="300", alt="{Platform} sparkline markers"`
+
 
 <div class="divider--half"></div>
 
@@ -112,11 +103,8 @@ By default, the normal range is not displayed. When enabled, the normal range sh
 
 You can also configure whether to show the normal range in front of or behind the plotted series in your {Platform} Sparkline by setting the `DisplayNormalRangeInFront` property.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-normal-range"
-           github-src="charts/sparkline/normal-range" >
-</code-view>
+`sample="/charts/sparkline/normal-range", height="300", alt="{Platform} sparkline normal range"`
+
 
 <div class="divider--half"></div>
 
@@ -130,11 +118,8 @@ Trendlines can only be displayed one at a time and by default, the trendline is 
 
 The sample below shows all the available trendlines via the dropdown:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-trendlines"
-           github-src="charts/sparkline/trendlines" >
-</code-view>
+`sample="/charts/sparkline/trendlines", height="300", alt="{Platform} sparkline trendlines"`
+
 
 <div class="divider--half"></div>
 
@@ -144,11 +129,8 @@ The {Platform} Sparkline can detect unknown values and render the space for unkn
 
 To plot the unknown values, you can set the `UnknownValuePlotting` property of the {Platform} Sparkline. The sample below shows the differences between the values of the `UnknownValuePlotting` property, allowing you to toggle it on or off using a checkbox:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-unknown-values"
-           github-src="charts/sparkline/unknown-values"  >
-</code-view>
+`sample="/charts/sparkline/unknown-values", height="300", alt="{Platform} sparkline unknown values"`
+
 
 <div class="divider--half"></div>
 
@@ -157,11 +139,8 @@ To plot the unknown values, you can set the `UnknownValuePlotting` property 
 
 You can embed the {Platform} Sparkline in a template column of data grid or other UI controls that support templates. The following code example shows how to do this:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           github-src="charts/sparkline/grid" >
-</code-view>
+`sample="/charts/sparkline/grid", height="600", alt="{Platform} sparkline grid"`
+
 
 ## Additional Resources
 

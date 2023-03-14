@@ -4,6 +4,7 @@ _description: インフラジスティックスの {ProductName} グリッド �
 _keywords: {Platform} Table, Data Grid, column pinning, {ProductName}, Infragistics, {Platform} テーブル, データ グリッド, 列ピン固定, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.PinnedPositions', 'Infragistics.Controls.Grid.Implementation.PinColumn','Infragistics.Controls.Grid.Implementation.ColumnPinning', 'Infragistics.Controls.Grid.Implementation.DataGridToolbar', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnPinning}
 _language: ja
 ---
 
@@ -23,12 +24,9 @@ _language: ja
 ## {Platform} Grid 列ピン固定の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="{Platform} Grid 列ピン固定の例"
-           github-src="grids/data-grid/column-pinning-picker">
-</code-view>
+`sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid 列ピン固定の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -270,16 +268,13 @@ onButtonUnPin () {
 
 列ピン固定 UI は、グリッドとは別に `DataGridToolbar` コンポーネント内でアクセスできます。このため、ツールバーの `columnPinning` プロパティを true に設定します。ツールバーは `Button` を表示し、クリックすると列ピン固定 UI を表示します。このボタンは、左側にピン固定された列の合計も表示します。ツールバーが作成されていない場合、`columnPinning` プロパティを有効にしても効果はなく、ボタンを非表示にします。
 
-`DataGridToolbar` は、`toolbarTitle` プロパティを使用してツールバーにタイトルを追加、`columnPinningText` プロパティを設定して `Button` にテキストを配置、`columnPinningTitle` を設定して、タイトル ヘッダーを列非表示 UI に追加などの追加プロパティを提供します。
+`DataGridToolbar` は、`ToolbarTitle` プロパティを使用してツールバーにタイトルを追加、`columnPinningText` プロパティを設定して `Button` にテキストを配置、`columnPinningTitle` を設定して、タイトル ヘッダーを列非表示 UI に追加などの追加プロパティを提供します。
 
 ## サンプル
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
-           github-src="grids/data-grid/column-pinning-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
+
 
 ## コード スニペット
 

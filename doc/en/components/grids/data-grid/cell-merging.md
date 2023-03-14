@@ -4,6 +4,7 @@ _description: Use the cell merging feature of the Infragistics' {Platform} data 
 _keywords: {Platform} Table, Data Grid, cell merging, {ProductName}, Infragistics
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.MergedCellMode', 'Infragistics.Controls.Grid.Implementation.MergedCellEvaluationCriteria']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -19,12 +20,9 @@ The {ProductName} Data Table / Data Grid supports cell merging. You may opt-in a
 
 ## {Platform} Grid Cell Merging Example
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-merging"
-           alt="{Platform} Grid Cell Merging Example"
-           github-src="grids/data-grid/cell-merging">
-</code-view>
+`sample="/grids/data-grid/cell-merging", height="600", alt="{Platform} Grid Cell Merging Example"`
+
+
 
 <div class="divider--half"></div>
 

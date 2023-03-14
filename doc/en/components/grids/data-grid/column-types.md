@@ -4,6 +4,7 @@ _description: Learn how Infragistics' {ProductName} data table & grid supports f
 _keywords: {Platform} Table, Data Grid, column types, {ProductName}, Infragistics
 mentionedTypes: [ 'Infragistics.Controls.Grid.Implementation.Grid','Infragistics.Controls.Grid.Implementation.CellInfo', 'Infragistics.Controls.Grid.Implementation.TemplateCellInfo', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridColumnTypes}
 ---
 
 <!-- Blazor, WebComponents -->
@@ -22,12 +23,9 @@ Each column binds to data by setting the `Field` property to the name of the cor
 ## {Platform} Column Types Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-types"
-           alt="{Platform} Column Types Example"
-           github-src="grids/data-grid/column-types">
-</code-view>
+`sample="/grids/data-grid/column-types", height="600", alt="{Platform} Column Types Example"`
+
+
 
 <div class="divider--half"></div>
 

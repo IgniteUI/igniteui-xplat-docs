@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} スプレッドシートのアクティブ化の例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-activation"
-           alt="{Platform} スプレッドシートのアクティブ化の例"
-           github-src="excel/spreadsheet/activation">
-</code-view>
+`sample="/excel/spreadsheet/activation", height="500", alt="{Platform} スプレッドシートのアクティブ化の例"`
+
+
 
 <div class="divider--half"></div>
 

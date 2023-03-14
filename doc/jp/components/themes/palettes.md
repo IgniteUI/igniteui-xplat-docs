@@ -44,7 +44,7 @@ _language: ja
 
 上記のカラーに加えて、各カラー バリアントに **Level AAA** [WCAG](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) 準拠の `contrast` カラーも含まれています。つまり、対応する `contrast` カラー バリアントをベースカラー バリアントの前景カラーとして安全に使用できます。
 
-> [!NOTE]
+> [!Note]
 > コントラスト カラーはビルド時に生成されるため、CSS 変数をオーバーライドしても、対応するコントラスト カラーは更新されません。
 
 以下は、Light Bootstrap パレットで宣言された `primary` カラーの抜粋です。

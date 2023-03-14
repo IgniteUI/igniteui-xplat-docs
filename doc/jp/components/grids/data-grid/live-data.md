@@ -4,6 +4,7 @@ _description: Infragistics のテーブルを使用して、1 秒あたり数千
 _keywords: {Platform} Table, Data Grid, live data updates, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, ライブ データの更新, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} ライブ データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-live-data"
-           alt="{Platform} ライブ データのバインディングの例"
-           github-src="grids/data-grid/binding-live-data">
-</code-view>
+`sample="/grids/data-grid/binding-live-data", height="600", alt="{Platform} ライブ データのバインディングの例"`
+
+
 
 ## API リファレンス
 

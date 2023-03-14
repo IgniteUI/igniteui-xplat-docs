@@ -4,6 +4,7 @@ _description: Infragistics のグリッド コントロールを使用してデ�
 _keywords: {Platform} Table, Data Grid, binding to data, {ProductName}, Infragistics, data binding, {Platform} テーブル, データ グリッド, データへのバインド, データ バインディング, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid', 'Infragistics.Controls.Grid.Implementation.Column']
 namespace: Infragistics.Controls
+_canonicalLink: {CanonicalLinkToGridMain}
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 ## {Platform} ローカル データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-local-data"
-           alt="{Platform} ローカル データのバインディングの例"
-           github-src="grids/data-grid/binding-local-data">
-</code-view>
+`sample="/grids/data-grid/binding-local-data", height="600", alt="{Platform} ローカル データのバインディングの例"`
+
+
 
 ## コード スニペット
 

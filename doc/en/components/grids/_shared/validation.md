@@ -3,6 +3,7 @@ title: Editing and Validation in {Platform} {ComponentTitle} - Infragistics
 _description: Validate the input of the users in grid and notify them if it's valid or not while using {Platform} {ComponentTitle}. See demos & examples!
 _keywords: {Platform} validation, {ProductName}, infragistics,
 mentionedTypes: [{ComponentApiMembers}]
+namespace: Infragistics.Controls
 ---
 
 # {Platform} {ComponentTitle} Editing and Validation
@@ -35,12 +36,9 @@ To validate that a column input would be set and the value is going to be format
 
 The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentName}`.
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service"
-           github-src="{ComponentSample}/data-validator-service"
-           alt="{Platform} {ComponentTitle} Validation Basic Example">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service", height="600", alt="{Platform} {ComponentTitle} Validation Basic Example"`
+
+
 
 <!-- Angular -->
 
@@ -116,7 +114,8 @@ Validation will be triggered in the following scenarios:
 - When updating cells/rows via the API - `UpdateRow`, `UpdateCell`, etc.
 - When using batch editing and the `Undo`/`Redo` API of the transaction service.
 
-> Note: Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
+> [!Note]
+> Validation will not trigger for records that have not been edited via user input or via the editing API. Visual indicators on the cell will only shown if the related input is considered touched - either via user interaction or via the `MarkAsTouched` API of the validation service.
 
 <!-- Angular -->
 
@@ -186,12 +185,9 @@ public cellEdit(evt) {
 
 The below example demonstrates the above-mentioned customization options.
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-extended"
-           github-src="{ComponentSample}/data-validator-service-extended"
-           alt="{Platform} {ComponentTitle} Custom Validation Example">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-extended", height="570", alt="{Platform} {ComponentTitle} Custom Validation Example"`
+
+
 
 ### Cross-Field Validation
 
@@ -314,13 +310,7 @@ public stateMessage(cell: IgxGridCell) {
 
 The below sample demonstrates the cross-field validation in action.
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} Cross-field Validation Example">
-</code-view>
-
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="560", alt="{Platform} {ComponentTitle} Cross field Validation Example"`
 
 <!-- ComponentEnd:Grid -->
 
@@ -422,12 +412,9 @@ Errors and the detailed messages can be determined based on the row and cell's v
 
 The below sample demonstrates cross-field validation in a `{ComponentName}` for both the root and child data.
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} Cross-field Validation Example">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="530", alt="{Platform} {ComponentTitle} Cross field Validation Example"`
+
+
 
 <!-- ComponentEnd:HierarchicalGrid -->
 
@@ -528,12 +515,9 @@ public stateMessage(cell: IgxGridCell) {
 
 The below sample demonstrates the cross-field validation in action.
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validator-service-cross-field"
-           github-src="{ComponentSample}/data-validator-service-cross-field"
-           alt="{Platform} {ComponentTitle} Cross-field Validation Example">
-</code-view>
+`sample="/{ComponentSample}/data-validator-service-cross-field", height="570", alt="{Platform} {ComponentTitle} Cross field Validation Example"`
+
+
 
 <!-- ComponentEnd:TreeGrid -->
 
@@ -650,11 +634,8 @@ public cellStyles = {
 
 ### Demo
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-validation-style"
-           github-src="{ComponentSample}/data-validation-style">
-</code-view>
+`sample="/{ComponentSample}/data-validation-style", height="560", alt="{Platform} {ComponentTitle} data validation style"`
+
 
 <!-- end: Angular -->
 
