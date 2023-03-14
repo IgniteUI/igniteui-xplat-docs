@@ -8,7 +8,7 @@ namespace: Infragistics.Controls.Charts
 
 # {Platform} Axis Types
 
-The {ProductName} charts provide multiple axis types to visualize your data in different ways. This topic goes over each one, which series are compatible with which, and some specific properties to the unique axes.
+The {ProductName} Data Chart provides multiple axis types to visualize your data in different ways. This topic goes over each one, which series are compatible with which, and some specific properties to the unique axes.
 
 ## Cartesian Axes
 
@@ -26,6 +26,11 @@ Category Series  | Stacked Series | Financial Series
 -----------------|----------------|-----------------
  - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> <br>
 
+
+ The following example demonstrates usage of the `CategoryXAxis`:
+
+ `sample="/charts/data-chart/stacked-column-chart", height="500", alt="{Platform} Category X Axis Example"`
+
 ### Category Y Axis
 
 This axis type works very similarly to the `CategoryXAxis` described above, but it is placed vertically rather than horizontally.
@@ -34,9 +39,13 @@ The `CategoryYAxis` requires you to provide a `DataSource` and a `Label` in orde
 
 The following series types are usable with the `CategoryYAxis`:
 
-Category Series  | Stacked Series 
------------------|----------------
- - `BarSeries` <br> | -  `StackedBarSeries` <br> -  `Stacked100BarSeries` <br>
+ - `BarSeries`
+ - `StackedBarSeries`
+ - `Stacked100BarSeries`
+
+ The following example demonstrates usage of the `CategoryYAxis`:
+
+ `sample="/charts/data-chart/bar-chart-multiple-sources", height="500", alt="{Platform} Category Y Axis Example"`
 
 ### Numeric X Axis
 
@@ -44,9 +53,24 @@ The `NumericXAxis` treats its data as continously varying numerical data items. 
 
 The location of the `NumericXAxis` labels depends on the `XMemberPath` property of the various `Scatter Series` that it supports if combined with a `NumericYAxis`. Alternatively, if combined with the `CategoryXAxis`, these labels will be placed corresponding to the `ValueMemberPath` of the `BarSeries`, `StackedBarSeries`, and `Stacked100BarSeries`.
 
-Category Series  | Stacked Series 
------------------|----------------
- - `BarSeries` <br> | -  `StackedBarSeries` <br> -  `Stacked100BarSeries` <br>
+The following is a full list of the series-types that the `NumericXAxis` is compatible with:
+
+ - `BarSeries` 
+ - `BubbleSeries` 
+ - `HighDensityScatterSeries`
+ - `ScatterSeries`
+ - `ScatterLineSeries`
+ - `ScatterSplineSeries` 
+ - `ScatterAreaSeries`
+ - `ScatterContourSeries`
+ - `ScatterPolylineSeries`
+ - `ScatterPolygonSeries`
+ - `StackedBarSeries`
+ - `Stacked100BarSeries`
+
+ The following example demonstrates usage of the `NumericXAxis`:
+
+ `sample="/charts/data-chart/type-scatter-hd-series", height="500", alt="{Platform} Numeric X Axis Example"`
 
 ### Numeric Y Axis
 
@@ -60,7 +84,11 @@ The following series types are usable with the `NumericYAxis`:
 
 Category Series  | Stacked Series | Financial Series | Scatter Series 
 -----------------|----------------|------------------|---------------
- - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> | - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> -  `ScatterSeries` <br>  - `ScatterLineSeries` <br> -  `ScatterSplineSeries` <br> -  `ScatterAreaSeries` <br> -  `ScatterContourSeries` <br> -  `ScatterPolylineSeries`  <br> -  `ScatterPolygonSeries`  <br> 
+ - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> | - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> -  `ScatterSeries` <br>  - `ScatterLineSeries` <br> -  `ScatterSplineSeries` <br> -  `ScatterAreaSeries` <br> -  `ScatterContourSeries` <br> -  `ScatterPolylineSeries`  <br> -  `ScatterPolygonSeries`  <br>
+
+ The following example demonstrates usage of the `NumericYAxis`:
+
+ `sample="/charts/data-chart/scatter-line-chart", height="500", alt="{Platform} Numeric Y Axis Example"`
 
 ### Time X Axis
 
@@ -102,6 +130,10 @@ This type of axis can display almost any type of data including strings and numb
 
 The `CategoryAngleAxis` is generally combined with the `NumericRadiusAxis` to plot [Radial Series](../types/radial-chart.md).
 
+The following example demonstrates usage of the `CategoryAngleAxis`:
+
+ `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
+
 ### Numeric Angle Axis
 
 The `NumericAngleAxis` treats its data as continously varying numerical data items. The labels on this axis area placed along a radius line starting from the center of the circular plot.
@@ -110,6 +142,10 @@ The location of the labels on the `NumericAngleAxis` varies according to the val
 
 This axis can be combined with either the `CategoryAngleAxis` or the `NumericRadiusAxis`.
 
+The following example demonstrates usage of the `NumericAngleAxis`:
+
+ `sample="/charts/data-chart/polar-scatter-chart", height="500", alt="{Platform} Numeric Angle Axis Example"`
+
 ### Numeric Radius Axis
 
 The `NumericRadiusAxis` treats the data as continously varing numerical data items. The labels on this axis are placed around the circular plot.
@@ -117,6 +153,10 @@ The `NumericRadiusAxis` treats the data as continously varing numerical data ite
 The location of the labels varies according to the value in a data column mapped using the `AngleMemberPath` property of the corresponding polar series.
 
 This axis can be combined with the `NumericRadiusAxis` to plot [Polar Series](../types/polar-chart.md).
+
+The following example demonstrates usage of the `NumericRadiusAxis`:
+
+ `sample="/charts/data-chart/polar-line-chart", height="500", alt="{Platform} Numeric Radius Axis Example"`
 
 ## Additional Resources
 
