@@ -21,10 +21,25 @@ parameters:
 name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    buildType: 'production'
-  ${{ else }}:  
-    buildType: 'staging'
+  - name: buildType
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      value: 'production'
+    ${{ else }}:  
+      value: 'staging'
+  # Since we are using more than 1 git repo, we need to explicitly specify that we want to compile inside the 1st git repo
+  - name: selfSourcesDir
+    value: '$(Build.SourcesDirectory)\igniteui-xplat-docs'
+  # This is the variable that the gulp script looks at internally. This is the only way I know how to pass it for Angular
+  - name: 'NODE_ENV'
+    value: '$(buildType)'
+
+resources:
+  repositories:
+    - repository: IgniteUIDocFX
+      endpoint: ESShared
+      type: github
+      name: IgniteUI/igniteui-docfx
+      ref: '$(Build.SourceBranch)'
 
 stages:
 - stage: Build
@@ -34,6 +49,8 @@ stages:
   jobs:
   - job: BuildDocs
     steps:
+      - checkout: self
+
       - task: NodeTool@0
         inputs:
           versionSource: 'spec'
@@ -55,29 +72,45 @@ stages:
         displayName: 'npm ci'
         inputs:
           command: custom
-          workingDir: '$(Build.SourcesDirectory)'
+          workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
           customCommand: ci
+
       - template: templates/build-steps-template.yml
         parameters:
           buildType: $(buildType)
           platform: WebComponents
           language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       - template: templates/build-steps-template.yml
         parameters:
           buildType: $(buildType)
           platform: Blazor
           language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
       - template: templates/build-steps-template.yml
         parameters:
           buildType: $(buildType)
           platform: React
           language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          workingDir: '$(selfSourcesDir)'
 
+      # Angular doesn't produce an artifact so we are publish right now.
       - task: PublishPipelineArtifact@1
         displayName: 'Publish pipeline artifacts'
         inputs:
           targetPath: '$(Build.ArtifactStagingDirectory)'
           artifact: 'XPlatDocFX'
+
+      - template: templates/build-steps-make-pr.yml
+        parameters:
+          buildType: $(buildType)
+          platform: Angular
+          language: en
+          isVerbose: ${{ parameters.isVerbose }}
+          primaryRepoWorkDir: '$(selfSourcesDir)'
