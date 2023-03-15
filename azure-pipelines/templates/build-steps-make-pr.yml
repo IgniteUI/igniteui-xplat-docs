@@ -58,8 +58,9 @@ steps:
     condition: eq(variables['isDestinationRepoChanged'], true)
     inputs:
       repoType: 'GitHub'
-      githubEndpoint: 'ESShared'
+      githubEndpoint: 'IgniteUI'
       githubRepository: 'IgniteUI/igniteui-docfx'
       sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
       targetBranch: '$(Build.SourceBranch)'
       title: 'Changes from $(Build.DefinitionName) for ${{ parameters.language }}'
+      tags: 'dv-gauges;dv-maps;dv-charts'
