@@ -915,7 +915,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "Combo Box",
-    "status": "NEW",
+    "status": "UPDATED",
     "href": "grids/combo/overview.md",
     "items": [
       {
@@ -925,6 +925,11 @@
       {
         "name": "Templates",
         "href": "grids/combo/templates.md"
+      },
+      {
+        "name": "Single Selection",
+        "status": "NEW",
+        "href": "grids/combo/single-selection.md"
       }
     ]
   },
