@@ -63,3 +63,4 @@ steps:
       sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
       targetBranch: '$(Build.SourceBranch)'
       title: 'Changes from $(Build.DefinitionName) for ${{ parameters.language }}'
+      tags: 'dv-gauges;dv-maps;dv-charts'
