@@ -58,7 +58,7 @@ steps:
     condition: eq(variables['isDestinationRepoChanged'], true)
     inputs:
       repoType: 'GitHub'
-      githubEndpoint: 'ESShared'
+      githubEndpoint: 'IgniteUI'
       githubRepository: 'IgniteUI/igniteui-docfx'
       sourceBranch: 'ESShared/XPlaform_${{ parameters.language }}_$(Build.BuildNumber)'
       targetBranch: '$(Build.SourceBranch)'
