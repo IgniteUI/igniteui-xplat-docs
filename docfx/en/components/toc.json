@@ -1327,6 +1327,10 @@
           "href": "charts/features/chart-axis-options.md"
         },
         {
+          "name": "Axis Types",
+          "href": "charts/features/chart-axis-types.md"
+        },
+        {
           "name": "Chart Animations",
           "href": "charts/features/chart-animations.md",
           "status": ""
