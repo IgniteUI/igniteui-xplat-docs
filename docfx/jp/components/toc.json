@@ -915,7 +915,7 @@
   {
     "exclude": ["Angular", "React", "Blazor"],
     "name": "コンボ",
-    "status": "NEW",
+    "status": "UPDATED",
     "href": "grids/combo/overview.md",
     "items": [
       {
@@ -925,6 +925,11 @@
       {
         "name": "テンプレート",
         "href": "grids/combo/templates.md"
+      },
+      {
+        "name": "単一選択",
+        "status": "NEW",
+        "href": "grids/combo/single-selection.md"
       }
     ]
   },
@@ -1320,6 +1325,10 @@
         {
           "name": "軸オプション",
           "href": "charts/features/chart-axis-options.md"
+        },
+        {
+          "name": "軸タイプ",
+          "href": "charts/features/chart-axis-types.md"
         },
         {
           "name": "チャート アニメーション",
