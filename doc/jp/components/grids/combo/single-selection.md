@@ -10,7 +10,7 @@ _language: ja
 
 {Platform} `ComboBox` は、単一選択モードと、メインの入力プロンプトを介した項目リストのクイック フィルタリングをサポートしています。ユーザーは、数文字タイプすることで、オプションのリストに探している項目を表示できます。Enter キーを押すと、最初に強調表示された一致が選択されます。
 
-## {Platform} 単一 Selectoin の例
+## {Platform} 単一選択の例
 
 単一選択とクイック フィルタリングを有効にするには、`ComboBox` コンポーネントで `SingleSelect` プロパティを設定します。ユーザー エクスペリエンスとキーボード ナビゲーションはほとんど変わりませんが、オプション リストの上にある特別なフィルター ボックスに検索クエリを入力する代わりに、メインの入力ボックスが使用されます。
 
@@ -18,7 +18,7 @@ _language: ja
 <igc-combo single-select></igc-combo>
 ```
 
-`sample="/grids/combo/simplified", height="320", alt="{Platform} Single Selection Combo Example"`
+`sample="/grids/combo/simplified", height="320", alt="{Platform}単一選択コンボの例"`
 
 <div class="divider--half"></div>
 

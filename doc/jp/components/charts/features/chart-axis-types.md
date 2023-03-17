@@ -28,19 +28,19 @@ _language: ja
 
  次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
- `sample="/charts/data-chart/stacked-column-chart", height="500", alt="{Platform} Category X Axis Example"`
+ `sample="/charts/data-chart/stacked-column-chart", height="500", alt="{Platform} カテゴリ X 軸の例"`
 
 ### カテゴリ Y 軸
 
 `CategoryYAxis` は、上記の `CategoryXAxis` と非常によく似た働きをしますが、水平ではなく垂直に配置されます。また、この軸では、データをプロットするために `DataSource` と `Label` を提供する必要があります。`CategoryYAxis` は通常 `NumericXAxis`  と組み合わせて次のタイプのシリーズをプロットするために使用されます。
 
- - BarSeries`
+ - `BarSeries`
  - `StackedBarSeries`
  - `Stacked100BarSeries`
 
  次の例は、`CategoryYAxis` タイプの使用法を示しています:
 
- `sample="/charts/data-chart/bar-chart-multiple-sources", height="500", alt="{Platform} Category Y Axis Example"`
+ `sample="/charts/data-chart/bar-chart-multiple-sources", height="500", alt="{Platform} カテゴリ Y 軸の例"`
 
 ### 数値 X 軸
 
@@ -63,7 +63,7 @@ _language: ja
 
  次の例は、`NumericXAxis` の使用法を示しています:
 
- `sample="/charts/data-chart/type-scatter-hd-series", height="500", alt="{Platform} Numeric X Axis Example"`
+ `sample="/charts/data-chart/type-scatter-hd-series", height="500", alt="{Platform} 数値 X 軸の例"`
 
 ### 数値 Y 軸
 
@@ -77,7 +77,7 @@ _language: ja
 
  次の例は、`NumericYAxis` の使用法を示しています:
 
- `sample="/charts/data-chart/scatter-line-chart", height="500", alt="{Platform} Numeric Y Axis Example"`
+ `sample="/charts/data-chart/scatter-line-chart", height="500", alt="{Platform} 数値 Y 軸の例"`
 
 ### 時間 X 軸
 
@@ -101,7 +101,7 @@ _language: ja
 
 - `Interval`: 使用する間隔を指定します。`IntervalType` プロパティに関連付けられています。たとえば、`IntervalType` が `Days` に設定されている場合、`Interval` で指定される数値は日数になります。
 - `Range`: 軸間隔が別の間隔に切り替わる可視範囲を指定します。たとえば、範囲が 10 日間および 5 時間に設定された 2 つの TimeAxisInterval がある場合、軸の表示範囲が 10 日間より短くなる際に 5 時間範囲の間隔に変更します。
-- `IntervalType`: 軸間隔が別の間隔に切り替わる可視範囲を指定します。
+- `IntervalType`: `Interval` プロパティの時間単位を指定します。
 
 ## 極座標軸
 
@@ -115,7 +115,7 @@ _language: ja
 
 次の例は、`CategoryAngleAxis` タイプの使用法を示しています:
 
- `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
+ `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} カテゴリ角度軸の例"`
 
 ### 数字角度軸
 
@@ -125,7 +125,7 @@ _language: ja
 
 次の例は、`NumericAngleAxis` タイプの使用法を示しています:
 
- `sample="/charts/data-chart/polar-scatter-chart", height="500", alt="{Platform} Numeric Angle Axis Example"`
+ `sample="/charts/data-chart/polar-scatter-chart", height="500", alt="{Platform} 数字角度軸の例"`
 
 ### 数字半径軸
 
@@ -135,7 +135,7 @@ _language: ja
 
 次の例は、`NumericRadiusAxis` タイプの使用法を示しています:
 
- `sample="/charts/data-chart/polar-line-chart", height="500", alt="{Platform} Numeric Radius Axis Example"`
+ `sample="/charts/data-chart/polar-line-chart", height="500", alt="{Platform} 数字半径軸の例"`
 
 ## その他のリソース
 
