@@ -16,8 +16,6 @@ In this example, you can see how users can manipulate hierarchical or flat data.
 
 `sample="/{TreeGridSample}/overview", height="700", alt="{Platform} grid example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Getting Started with {ProductName} Tree Grid
