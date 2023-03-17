@@ -1,17 +1,18 @@
 ---
-title: {Platform} ComboBox Component – {ProductName}
-_description: {Platform} Combo component provides a powerful input, combining features of the basic HTML input, select, filtering and custom drop-down lists. Try it for FREE
-_keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widgets, {Platform}, Native {Platform} Components Suite, Native {Platform} Controls, Native {Platform} Components Library, {Platform} ComboBox component
+title: {Platform} ComboBox コンポーネント - {ProductName}
+_description: {Platform} Combo コンポーネントは、基本的な HTML 入力、選択、フィルタリング、およびカスタム ドロップダウン リストの機能を組み合わせた強力な入力を提供します。無料でお試しください。
+_keywords: {ProductName}, UI コントロール, {Platform} ウィジェット, web ウィジェット, UI ウィジェット, {Platform}, ネイティブ {Platform} コンポーネント スイート, ネイティブ {Platform} コントロール, ネイティブ {Platform} コンポーネント ライブラリ, {Platform} ComboBox コンポーネント
 mentionedTypes: ['Combo', 'Single Selection Combo', 'ComboItem', 'ComboHeader', 'ComboList']
+_language: ja
 ---
 
-# {Platform} Single Selection ComboBox
+# {Platform} 単一選択 ComboBox
 
-The {Platform} `ComboBox` supports single-selection mode and quick filtering of the list of items via the main input prompt. Users can quickly type in the item they are looking for and be presented with a list of options. Upon pressing the enter key, the first highlighted match will be selected.
+{Platform} `ComboBox` は、単一選択モードと、メインの入力プロンプトを介した項目リストのクイック フィルタリングをサポートしています。ユーザーは、数文字タイプすることで、オプションのリストに探している項目を表示できます。Enter キーを押すと、最初に強調表示された一致が選択されます。
 
-## {Platform} Single Selectoin Example
+## {Platform} 単一 Selectoin の例
 
-To enable single-selection and quick filtering, set the `SingleSelect` property on the `ComboBox` component. The user experience and keyboard navigation will mostly stay the same, but instead of having to type in your search query into a special filtering box above the list of options, the main input box will be used.
+単一選択とクイック フィルタリングを有効にするには、`ComboBox` コンポーネントで `SingleSelect` プロパティを設定します。ユーザー エクスペリエンスとキーボード ナビゲーションはほとんど変わりませんが、オプション リストの上にある特別なフィルター ボックスに検索クエリを入力する代わりに、メインの入力ボックスが使用されます。
 
 ```html
 <igc-combo single-select></igc-combo>
@@ -21,58 +22,58 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 
 <div class="divider--half"></div>
 
-## Selection API
+## 選択 API
 
-The selection API for a ComboBox with the `SingleSelect` property applied mostly remains the same, however, there are some important differences compared to ComboBoxes that don't have this property set.
+`SingleSelect` プロパティが適用された ComboBox の選択 API はほとんど同じままですが、このプロパティが設定されていない ComboBox と比べて重要な違いがいくつかあります。
 
-The main difference is that only one item can be selected at any time. For example, if you have specified a `ValueKey` for your combo component, passing more than one item to the `Select`/`Deselect` methods will have no effect. This also means that any previously selected items will automatically get deselected upon making a new selection.
+主な違いは、一度に 1 つの項目しか選択できないことです。たとえば、コンボ コンポーネントに `ValueKey` を指定した場合、複数の項目を `Select`/`Deselect` メソッドに渡しても効果はありません。これは、以前に選択した項目が、新しい選択を行うと自動的に選択解除されることも意味します。
 
-Here's how to select/deselect an item programmatically in a single selection combo.
+単一の選択コンボでプログラムによって項目を選択 / 選択解除する方法は次のとおりです。
 
-#### Selecting items:
+#### 項目の選択:
 
 ```ts
 // select the item matching the 'BG01' value of the value key field.
 combo.select('BG01');
 ```
 
-To deselect an item without making a new selection, call the `deselect` method.
+新たに選択せずに項目の選択を解除するには、`deselect` メソッドを呼び出します。
 
-#### Deselecting items:
+#### 項目の選択解除:
 
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
 ```
 
-## Disabled features
+## 無効な機能
 
-Naturally, some configuration options will have no effect in a single selection ComboBox.
+当然のことながら、一部の構成オプションは単一選択 ComboBox では効果がありません。
 
-### Placeholder
+### プレースホルダー
 
-Assigning a value to the `PlaceholderSearch` property will yield no result since the filtering input that usually is placed above the list of options will not be present in a single selection ComboBox.
+`PlaceholderSearch` プロパティに値を割り当てても結果は得られません。これは、通常、オプションのリストの上に配置されるフィルター入力が単一の選択 ComboBox に存在しないためです。
 
-### Autofocusing the list of options
+### オプション リストのオートフォーカス
 
-Setting the `AutofocusList` option on a single selection ComboBox will also have no effect.
+単一選択 ComboBox に `AutofocusList` オプションを設定しても効果はありません。
 
-## Keyboard Navigation
+## キーボード ナビゲーション
 
-The keyboard navigation should behave the same as with a non-single selection ComboBox, except for the fact that now the main input plays the role of a filtering prompt and so all keyboard actions that apply to the filtering/search input are moved to the main input prompt.
+キーボード ナビゲーションは、非単一選択 ComboBox と同じように動作しますが、メイン入力がフィルタリング プロンプトの役割を果たし、フィルタリング / 検索入力に適用されるすべてのキーボード アクションがメイン入力プロンプトに移動される点が異なります。
 
-## Other Features
+## その他の機能
 
-All other features will behave the same as in a non-single selection ComboBox component.
+他のすべての機能は、非単一選択 ComboBox コンポーネントと同じように動作します。
 
-## API Reference
+## API リファレンス
 
 * `Combo`
 * `ComboItem`
 * `ComboHeader`
 * `ComboList`
 
-## Additional Resources
+## その他のリソース
 
-* [{ProductName} **Forums**]({ForumsLink})
-* [{ProductName} **GitHub**]({GithubLink})
+* [{ProductName} **フォーラム (英語)**]({ForumsLink})
+* [{ProductName} **GitHub (英語)**]({GithubLink})

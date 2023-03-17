@@ -1,51 +1,52 @@
 ---
-title: {Platform} Axis Types | Data Visualization | Infragistics
-_description: Infragistics' {Platform} Axis Types
-_keywords: {Platform} Axis, Options, Title, Labels, Gap, Overlap, Range, Scale, Mode, Infragistics
+title: {Platform} 軸タイプ | データの視覚化 | インフラジスティックス
+_description: インフラジスティックスの {Platform} 軸タイプ
+_keywords: {Platform} 軸, オプション, タイトル, ラベル, ギャップ, オーバーラップ, 範囲, スケール, モード, インフラジスティックス
 mentionedTypes: ["DomainChart", "CategoryChart", "FinancialChart", "FinancialChartYAxisMode", "FinancialChartXAxisMode", "NumericYAxis", "CategoryXAxis"]
 namespace: Infragistics.Controls.Charts
+_language: ja
 ---
 
-# {Platform} Axis Types
+# {Platform} 軸タイプ
 
-The {ProductName} Category Chart uses only one `CategoryXAxis` and one `NumericYAxis` type. Similary, {ProductName} Financial Chart uses only one `TimeXAxis` and one `NumericYAxis` types. However, the {ProductName} Data Chart provides support for multiple axis types that you can position on any side of the chart by setting [axis location](chart-axis-layouts.md#axis-locations-example) or even inside of the chart by using [axis crossing](chart-axis-layouts.md#axis-crossing-example) properties. This topic goes over each one, which axes and series are compatible with each other, and some specific properties to the unique axes.
+{ProductName} カテゴリ チャートは、`CategoryXAxis` および `NumericYAxis` タイプを 1 つだけ使用します。同様に、{ProductName} ファイナンシャル チャートは、`TimeXAxis` タイプと `NumericYAxis` タイプを 1 つだけ使用します。ただし、{ProductName} データ チャートは複数の軸タイプをサポートしており、[軸の位置](chart-axis-layouts.md#axis-locations-example)を設定してチャートの任意の側に配置したり、[軸交差](chart-axis-layouts.md#axis-crossing-example)プロパティを使用してチャートの内部に配置したりできます。このトピックでは、相互に互換性のある軸とシリーズ、および固有の軸に対するいくつかの特定のプロパティについて、それぞれについて説明します。
 
-## Cartesian Axes
+## デカルト軸
 
-The `XamDataChart` with Cartesian Axes, allows you to plot data in horizontal (X-axis) and vertical (X-axis) direction with 3 types of X-Axis
-(`CategoryXAxis`, `NumericXAxis`, and `TimeXAxis`) and 2 types of Y-Axis (`CategoryYAxis` and `NumericYAxis`).
+デカルト軸を持つ `XamDataChart` では3 種類の X 軸を使用して水平 (X 軸) および垂直 (X 軸) 方向にデータをプロットすることが可能です。
+(`CategoryXAxis`、`NumericXAxis`、および `TimeXAxis`) と 2 種類の Y 軸 (`CategoryYAxis` および `NumericYAxis`)。
  
-### Category X-Axis
+### カテゴリ X 軸
 
-The `CategoryXAxis` treats its data as a sequence of categorical data items. It can display almost any type of data including strings and numbers. If you are plotting numbers on this axis, it is important to keep in mind that this axis is a discrete axis and not continuous. This means that each categorical data item will be placed equidistant from the one before it. The items will also be plotted in the order that they appear in the axis' data source.
+`CategoryXAxis` は、そのデータを一連のカテゴリ データ項目として扱います。文字列や数値など、ほぼすべてのタイプのデータを表示できます。この軸に数値をプロットする場合、この軸は離散軸であり、連続ではないことに注意してください。これは、各カテゴリ データ項目がその前のデータ項目から等距離に配置されることを意味します。また、項目は軸のデータ ソースに表示される順序でプロットされます。
 
-The `CategoryXAxis` requires you to provide a `DataSource` and a `Label` in order to plot data with it. It is generally used with the `NumericYAxis` to plot the following type of series:
+`CategoryXAxis` では、データをプロットするために `DataSource` と `Label` を提供する必要があります。通常、次のタイプの系列をプロットするために `NumericYAxis` と共に使用されます。
 
-| Category Series  | Stacked Series | Financial Series | 
+| カテゴリ シリーズ  | 積層型シリーズ | ファイナンシャル シリーズ | 
 |------------------|----------------|--------------------| 
 | - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> <br> <br> <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> <br> <br> <br> | 
 
- The following example demonstrates usage of the `CategoryXAxis` type:
+ 次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
  `sample="/charts/data-chart/stacked-column-chart", height="500", alt="{Platform} Category X Axis Example"`
 
-### Category Y-Axis
+### カテゴリ Y 軸
 
-The `CategoryYAxis` works very similarly to the `CategoryXAxis` described above, but it is placed vertically rather than horizontally. Also, this axis requires you to provide a `DataSource` and a `Label` in order to plot data with it. The `CategoryYAxis` is generally used with the `NumericXAxis` to plot the following type of series:
+`CategoryYAxis` は、上記の `CategoryXAxis` と非常によく似た働きをしますが、水平ではなく垂直に配置されます。また、この軸では、データをプロットするために `DataSource` と `Label` を提供する必要があります。`CategoryYAxis` は通常 `NumericXAxis`  と組み合わせて次のタイプのシリーズをプロットするために使用されます。
 
- - `BarSeries`
+ - BarSeries`
  - `StackedBarSeries`
  - `Stacked100BarSeries`
 
- The following example demonstrates usage of the `CategoryYAxis` type:
+ 次の例は、`CategoryYAxis` タイプの使用法を示しています:
 
  `sample="/charts/data-chart/bar-chart-multiple-sources", height="500", alt="{Platform} Category Y Axis Example"`
 
-### Numeric X-Axis
+### 数値 X 軸
 
-The `NumericXAxis` treats its data as continously varying numerical data items. Labels on this axis are placed horizontally along the X-Axis. The location of the `NumericXAxis` labels depends on the `XMemberPath` property of the various `Scatter Series` that it supports if combined with a `NumericYAxis`. Alternatively, if combined with the `CategoryXAxis`, these labels will be placed corresponding to the `ValueMemberPath` of the `BarSeries`, `StackedBarSeries`, and `Stacked100BarSeries`.
+`NumericXAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、X 軸に沿って水平に配置されます。`NumericXAxis` ラベルの位置は、`NumericYAxis` と組み合わせた場合にサポートされるさまざまな `Scatter Series` (散布シリーズ) の `XMemberPath` プロパティに依存します。または、`CategoryXAxis` と組み合わせた場合、これらのラベルは、`BarSeries`、`StackedBarSeries`、および `Stacked100BarSeries` の `ValueMemberPath` に対応して配置されます。
 
-The `NumericXAxis` is compatible with the following type of series:
+`NumericXAxis` は、次のタイプのシリーズと互換性があります:
 
  - `BarSeries` 
  - `BubbleSeries` 
@@ -60,86 +61,86 @@ The `NumericXAxis` is compatible with the following type of series:
  - `StackedBarSeries`
  - `Stacked100BarSeries`
 
- The following example demonstrates usage of the `NumericXAxis`:
+ 次の例は、`NumericXAxis` の使用法を示しています:
 
  `sample="/charts/data-chart/type-scatter-hd-series", height="500", alt="{Platform} Numeric X Axis Example"`
 
-### Numeric Y-Axis
+### 数値 Y 軸
 
-The `NumericYAxis` treats its data as continously varying numerical data items. Labels on this axis are placed vertically along the Y-Axis. The location of the `NumericYAxis` labels depends on the `YMemberPath` property of the various `Scatter Series` that is supports if combined with a `NumericXAxis`. Alternatively, if combined with the `CategoryYAxis`, these labels will be placed corresponding to the `ValueMemberPath` of the category or stacked series mentioned in the table above. If you are using one of the financial series, they will be placed corresponding to the Open/High/Low/Close paths and the series type that you are using.
+`NumericYAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、Y 軸に沿って垂直に配置されます。`NumericYAxis` ラベルの位置は、`NumericXAxis` と組み合わせた場合にサポートされるさまざまな `Scatter Series` (散布シリーズ) の `YMemberPath` プロパティに依存します。または、`CategoryYAxis` と組み合わせた場合、これらのラベルは、上記の表に記載されているカテゴリまたは積層シリーズの `ValueMemberPath` に対応して配置されます。財務シリーズのいずれかを使用している場合、Open/High/Low/Close のパスと使用しているシリーズ タイプに対応して配置されます。
 
-The `NumericYAxis` is compatible with the following type of series:
+`NumericYAxis` は、次のタイプのシリーズと互換性があります:
 
-| Category Series  | Stacked Series | Financial Series | Scatter Series |
+| カテゴリ シリーズ  | 積層型シリーズ | ファイナンシャル シリーズ | 散布シリーズ |
 |------------------|----------------|------------------|----------------|
 | - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` <br> | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> | - `BubbleSeries` <br> - `HighDensityScatterSeries` <br> -  `ScatterSeries` <br>  - `ScatterLineSeries` <br> -  `ScatterSplineSeries` <br> -  `ScatterAreaSeries` <br> -  `ScatterContourSeries` <br> -  `ScatterPolylineSeries`  <br> -  `ScatterPolygonSeries`  <br> |
 
- The following example demonstrates usage of the `NumericYAxis`:
+ 次の例は、`NumericYAxis` の使用法を示しています:
 
  `sample="/charts/data-chart/scatter-line-chart", height="500", alt="{Platform} Numeric Y Axis Example"`
 
-### Time X Axis
+### 時間 X 軸
 
-The `TimeXAxis` treats its data as a sequence of data items, sorted by date. Labels on this axis type are dates and can be formatted and arranged according to date intervals. The date range of this axis is determined by the date values in a data column that is mapped using its `DateTimeMemberPath`. This, along with a `DataSource` is required to plot data with this axis type.
+`TimeXAxis` は、そのデータを、日付でソートされた一連のデータ項目として扱います。この軸タイプのラベルは日付であり、日付間隔に従ってフォーマットおよび配置できます。この軸の日付範囲は、`DateTimeMemberPath` を使用してマップされたデータ列の日付値によって決定されます。これは、`DataSource` とともに、この軸タイプでデータをプロットするために必要です。
 
-The `TimeXAxis` is the X-Axis type in the `FinancialChart` component.
+`TimeXAxis` は、`FinancialChart` コンポーネントの X 軸タイプです。
 
-#### Breaks in Time X Axis
+#### 時間 X 軸のブレーク
 
-The `TimeXAxis` has the option to exclude intervals of data by using `Breaks`. As a result, the labels and plotted data will not appear at the excluded interval. For example, working/non-working days, holidays, and/or weekends. An instance of `TimeAxisBreak` can be added to the `Breaks` collection of the axis and configured by using a unique `Start`, `End` and `Interval`.
+`TimeXAxis` には、`Breaks` (ブレーク) を使用してデータの間隔を除外するオプションがあります。その結果、ラベルとプロットされたデータは除外された間隔では表示されません。たとえば、勤務日/休業日、休日、週末などです。`TimeAxisBreak` のインスタンスを軸の `Breaks` コレクションに追加し、一意の `Start`、`End`、および `Interval` を使用して構成できます。
 
-#### Formating in Time X Axis
+#### 時間 X 軸の書式設定
 
-The `TimeXAxis` has the `LabelFormats` property, which represents a collection of `TimeAxisLabelFormat` objects. Each `TimeAxisLabelFormat` added to the collection is responsible for assigning a unique `Format` and `Range`. This can be especially useful for drilling down data from years to milliseconds and adjusting the labels depending on the range of time shown by the chart.
+`TimeXAxis` には、`TimeAxisLabelFormat` オブジェクトのコレクションを表す `LabelFormats` プロパティがあります。コレクションに追加された各 `TimeAxisLabelFormat` は、一意の `Format` (書式) と `Range` (範囲) を割り当てる役割を果たします。これは、データを年からミリ秒にドリルダウンし、チャートに表示される時間の範囲に応じてラベルを調整する場合に特に役立ちます。
 
-The `Format` property of the `TimeAxisLabelFormat` specifies what format to use for a particular visible range. The `Range` property of the `TimeAxisLabelFormat` specifies the visible range at which the axis label formats will switch to a different format. For example, if you have two `TimeAxisLabelFormat` elements with a range set to 10 days and another set to 5 hours, then as soon as the visible range of the axis becomes less than 10 days, it will switch to 5-hour format.
+`TimeAxisLabelFormat` の `Format` プロパティは、特定の表示範囲に使用する形式を指定します。`TimeAxisLabelFormat` の `Range` プロパティは、軸ラベルの形式が別の形式に切り替わる表示範囲を指定します。たとえば、範囲が 10 日と 5 時間に設定された 2 つの `TimeAxisLabelFormat` 要素がある場合、軸の表示範囲が 10 日未満になるとすぐに、5 時間形式に切り替わります。
 
-#### Intervals in Time X Axis
+#### 時間 X 軸の間隔
 
-The `TimeXAxis` replaces the conventional `Interval` property of the category and numeric axes with an `Intervals` collection of type `TimeAxisInterval`. Each `TimeAxisInterval` added to the collection is responsible for assigning a unique `Interval`, `Range` and `IntervalType`. This can be especially useful for drilling down data from years to milliseconds to provide unique spacing between labels depending on the range of time shown by the chart. A description of these properties is below:
+`TimeXAxis` は、カテゴリ軸と数値軸の従来の `Interval` プロパティを `TimeAxisInterval` 型の `Intervals` コレクションに置き換えます。コレクションに追加された各 `TimeAxisInterval` は、一意の `Interval`、`Range`、および `IntervalType` を割り当てる役割を果たします。これは、データを年単位からミリ秒単位にドリルダウンして、チャートに表示される時間の範囲に応じてラベル間に一意の間隔を設ける場合に特に役立ちます。これらのプロパティの説明は次のとおりです。
 
-- `Interval`: This specifies the interval to use. This is tied to the `IntervalType` property. For example, if the `IntervalType` is set to `Days`, then the numeric value specified in `Interval` will be in days.
-- `Range`: This specifies the visible range at which the axis interval will switch to a different interval. For example, if you have two TimeAxisInterval with a range set to 10 days and another set to 5 hours, as soon as the visible range in the axis becomes less than 10 days it will switch to the interval whose range is 5 hours.
-- `IntervalType`: This specifies the unit of time for the `Interval` property.
+- `Interval`: 使用する間隔を指定します。`IntervalType` プロパティに関連付けられています。たとえば、`IntervalType` が `Days` に設定されている場合、`Interval` で指定される数値は日数になります。
+- `Range`: 軸間隔が別の間隔に切り替わる可視範囲を指定します。たとえば、範囲が 10 日間および 5 時間に設定された 2 つの TimeAxisInterval がある場合、軸の表示範囲が 10 日間より短くなる際に 5 時間範囲の間隔に変更します。
+- `IntervalType`: 軸間隔が別の間隔に切り替わる可視範囲を指定します。
 
-## Polar Axes
+## 極座標軸
 
-The `XamDataChart` with Polar Axes, allows you to plot data outwards (radius axis) from center of the chart and around (angle axis) of center of the chart.
+極座標軸を持つ `XamDataChart` により、チャートの中心から外側 (半径軸) およびチャートの中心の周り (角度軸) にデータをプロットできます。
 
-### Category Angle Axis
+### カテゴリ角度軸
 
-The `CategoryAngleAxis` treats its data as a sequence of category data items. The labels on this axis are placed along the edge of a circle according to their position in that sequence. This type of axis can display almost any type of data including strings and numbers. 
+`CategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、その順序での位置に従って円の端に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。 
 
-The `CategoryAngleAxis` is generally used with the `NumericRadiusAxis` to plot [Radial Series](../types/radial-chart.md).
+`CategoryAngleAxis` は通常、[ラジアル シリーズ](../types/radial-chart.md)をプロットするために `NumericRadiusAxis` と共に使用されます。
 
-The following example demonstrates usage of the `CategoryAngleAxis` type:
+次の例は、`CategoryAngleAxis` タイプの使用法を示しています:
 
  `sample="/charts/data-chart/radial-area-chart", height="500", alt="{Platform} Category Angle Axis Example"`
 
-### Numeric Angle Axis
+### 数字角度軸
 
-The `NumericAngleAxis` treats its data as continously varying numerical data items. The labels on this axis area placed along a radius line starting from the center of the circular plot. The location of the labels on the `NumericAngleAxis` varies according to the value in the data column mapped using the `RadiusMemberPath` property of the [Polar Series](../types/polar-chart.md) object or the `ValueMemberPath` property of the [Radial Series](../types/radial-chart.md) object. 
+`NumericAngleAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸領域のラベルは、円形プロットの中心から始まる半径線に沿って配置されます。`NumericAngleAxis` のラベルの位置は、[極座標シリーズ](../types/polar-chart.md) オブジェクトの `RadiusMemberPath` プロパティまたは[ラジアル シリーズ](../types/radial-chart.md) オブジェクトの `ValueMemberPath` プロパティを使用してマップされたデータ列の値によって異なります。 
 
-The The `NumericAngleAxis` can be used with either the `CategoryAngleAxis` to plot [Radial Series](../types/radial-chart.md) or with the `NumericRadiusAxis` to plot [Rolar Series](../types/polar-chart.md) respectively.
+`NumericAngleAxis` は、`CategoryAngleAxis` と共に使用して[ラジアル シリーズ](../types/radial-chart.md)をプロットするか、`NumericRadiusAxis` と共に使用して[極座標シリーズ](../types/polar-chart.md)をプロットすることができます。
 
-The following example demonstrates usage of the `NumericAngleAxis` type:
+次の例は、`NumericAngleAxis` タイプの使用法を示しています:
 
  `sample="/charts/data-chart/polar-scatter-chart", height="500", alt="{Platform} Numeric Angle Axis Example"`
 
-### Numeric Radius Axis
+### 数字半径軸
 
-The `NumericRadiusAxis` treats the data as continously varing numerical data items. The labels on this axis are placed around the circular plot. The location of the labels varies according to the value in a data column mapped using the `AngleMemberPath` property of the corresponding polar series.
+`NumericRadiusAxis` は、データを連続的に変化する数値データ項目として扱います。この軸のラベルは、円形プロットの周りに配置されます。ラベルの位置は、対応する極座標シリーズの `AngleMemberPath` プロパティを使用してマップされたデータ列の値によって異なります。
 
-The `NumericRadiusAxis` can be used with the `NumericRadiusAxis` to plot [Polar Series](../types/polar-chart.md).
+`NumericRadiusAxis` を `NumericRadiusAxis` と共に使用して、[極座標シリーズ](../types/polar-chart.md)をプロットできます。
 
-The following example demonstrates usage of the `NumericRadiusAxis` type:
+次の例は、`NumericRadiusAxis` タイプの使用法を示しています:
 
  `sample="/charts/data-chart/polar-line-chart", height="500", alt="{Platform} Numeric Radius Axis Example"`
 
-## Additional Resources
+## その他のリソース
 
-You can find more information about related chart features in these topics:
+関連するチャート機能の詳細については、次のトピックを参照してください:
 
-- [Axis Gridlines](chart-axis-gridlines.md)
-- [Axis Layouts](chart-axis-layouts.md)
-- [Axis Options](chart-axis-options.md)
+- [軸グリッド線](chart-axis-gridlines.md)
+- [軸レイアウト](chart-axis-layouts.md)
+- [軸オプション](chart-axis-options.md)
