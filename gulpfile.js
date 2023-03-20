@@ -1234,22 +1234,25 @@ function padRight(num, width) {
     return str.length >= width ? str : new Array(width - str.length + 1).join(' ') + str;
 }
 
-function logSampleLinks(cb, platform, isStaging) {
+function logSampleLinks(cb, platform, server) {
 
     console.log('logSampleLinks .md files ...');
     var sampleLinks = [];
     var sampleHost = ""
 
-    if (isStaging === undefined) isStaging = argv.stag !== undefined ? argv.stag : false;
-    if (isStaging) {
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (server === "staging") {
         sampleHost = "https://staging.infragistics.com";
+    } else if (server === "production" || server === "prod") {
+        sampleHost = "https://infragistics.com";
     } else {
         sampleHost = "https://localhost:4200";
     }
     // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
     // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
-    if (platform === "WC") {
+    if (platform === "WC" || platform === "WebComponents") {
+        platform = "WebComponents"
         sampleHost += "/webcomponents-demos/samples";
     } else if (platform === "Blazor") {
         sampleHost += "/blazor-client/samples";
@@ -1267,16 +1270,12 @@ function logSampleLinks(cb, platform, isStaging) {
     ];
 
     gulp.src([
-  //  'doc/en/**/charts/chart-overview.md',
-    //  'doc/en/**/notifications/**/*.md',
+    // 'doc/en/**/charts/chart-overview.md',
+    // 'doc/en/**/notifications/**/*.md',
     // 'doc/en/**/layouts/**/*.md',
     // 'doc/en/**/scheduling/calendar.md',
     // 'doc/**/inputs/**/*.md',
-  //   'doc/en/**/grids/**/*.md',
-    // 'doc/en/**/charts/**/*.md',
-    // 'doc/en/**/charts/types/treemap-chart.md',
-    // 'doc/**/grids/grids.md',
-    // 'doc/en/**/general*.md',
+    // 'doc/en/**/grids/**/*.md',
      'doc/en/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
@@ -1317,22 +1316,17 @@ function logSampleLinks(cb, platform, isStaging) {
         for (const link of sampleLinks) {
             console.log(link);
         }
-
         if (cb) cb();
     })
-    .on("error", (err) => {
-        console.log("Error in logSampleLinks()");
-        if (cb) cb(err);
-    });
 }
 
 exports.logSampleLinks = logSampleLinks;
-// use these gulp commands to log links to samples hosted on staging:
-// gulp logSampleLinks --stag=true --plat=Blazor
-// gulp logSampleLinks --stag=true --plat=Angular
-// gulp logSampleLinks --stag=true --plat=React
-// gulp logSampleLinks --stag=true --plat=WC
-// or use these gulp commands to log links to samples hosted locally:
+// use these gulp commands to log xplat samples as links to samples hosted staging:
+// gulp logSampleLinks --sever=staging --plat=Blazor
+// gulp logSampleLinks --sever=staging --plat=Angular
+// gulp logSampleLinks --sever=staging --plat=React
+// gulp logSampleLinks --sever=staging --plat=WC
+// or these gulp commands to log xplat samples as links to samples hosted locally:
 // gulp logSampleLinksAngular
 // gulp logSampleLinksBlazor
 // gulp logSampleLinksReact
@@ -1341,3 +1335,115 @@ exports.logSampleLinksAngular = function log(cb) { logSampleLinks(cb, "Angular")
 exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); }
 exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
 exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
+
+
+function extractSampleLinks(cb, platform, server) {
+
+    console.log('extractSampleLinks ./dist/**/end/*.md files ...');
+    var sampleLinks = [];
+    var sampleHost = ""
+    var sampleBrowser = "";
+
+   // if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+
+    if (platform === "WC" || platform === "WebComponents" || platform === "wc") {
+        platform = "WebComponents";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/webcomponents-demos/samples";
+    } else if (platform === "Blazor" || platform === "blazor") {
+        platform = "Blazor";
+        sampleHost = "https://localhost:44317";
+        sampleBrowser = "/blazor-client/samples";
+    } else if (platform === "Angular" || platform === "Angular" || platform === "angular") {
+        platform = "Angular";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/angular-demos-dv/samples";
+    } else if (platform === "React" || platform === "react") {
+        platform = "React";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/react-demos/samples";
+    } else {
+        console.log("UNKNOWN platform: " + platform);
+        cb();
+    }
+    var sourceDir = 'dist/' + platform + '/en';
+
+    if (!fs.existsSync(sourceDir)) {
+        console.log("--------------------------------------------------------------------");
+        console.log("ERROR: Cannot find directory: " + sourceDir);
+        console.log("HINT:  You must run this command first: npm run build" + platform);
+        console.log("--------------------------------------------------------------------");
+        cb();
+    }
+
+    gulp.src([
+    //  'dist/' + platform + '/en/components/**/charts/chart-overview.md',
+    //  'dist/' + platform + '/en/**/notifications/**/*.md',
+    // 'dist/' + platform + '/en/**/grids/grids.md',
+    'dist/' + platform + '/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\dist\\' + filePath.split('dist\\')[1];
+        //console.log('extractSampleLinks: ' + filePath);
+
+        var fileLines = fileContent.split("\n");
+
+        for (const line of fileLines) {
+            if (line.indexOf('iframe-src="') >= 0) {
+                var link = line.replace('iframe-src="', '');
+                link = link.trim();
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('/blazor-client', '');
+                link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
+                link = link.replace(sampleHost, sampleHost + sampleBrowser);
+
+                if (server === "staging") {
+                    link = link.replace(sampleHost, "http://staging.infragistics.com");
+                } else if (server === "production" || server === "prod") {
+                    link = link.replace(sampleHost, "http://infragistics.com");
+                }
+
+                link = link.replace('http://', 'https://');
+
+                if (sampleLinks.indexOf(link) < 0) {
+                    sampleLinks.push(link);
+                }
+            }
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        sampleLinks.sort();
+      //  for (const link of sampleLinks) {
+      //     console.log(link);
+      // }
+      //  console.log(sampleLinks[0])
+        //var outputPath = "./dist/" + platform + "/en/samples.json";
+        platform =  platform.replace("WebComponents", "wc");
+        var outputPath = "samples-" + platform.toLowerCase() + ".json";
+        var outputJSON = JSON.stringify(sampleLinks,  null, '  ');
+        fs.writeFileSync(outputPath, outputJSON);
+        console.log('extracted ' + sampleLinks.length + ' sample links to: ' + outputPath);
+
+        if (cb) cb();
+    })
+}
+exports.extractSampleLinks = extractSampleLinks;
+// use these gulp commands to extract links to samples hosted on staging:
+// gulp extractSampleLinks --server="staging" --plat=Angular
+// gulp extractSampleLinks --server="staging" --plat=Blazor
+// gulp extractSampleLinks --server="staging" --plat=React
+// gulp extractSampleLinks --server="staging" --plat=WC
+// or use these gulp commands to extract links to samples hosted locally:
+// gulp extractSampleLinksAngular
+// gulp extractSampleLinksBlazor
+// gulp extractSampleLinksReact
+// gulp extractSampleLinksWC
+exports.extractSampleLinksAngular = function extract(cb) { extractSampleLinks(cb, "Angular"); }
+exports.extractSampleLinksBlazor = function extract(cb) { extractSampleLinks(cb, "Blazor"); }
+exports.extractSampleLinksReact = function extract(cb) { extractSampleLinks(cb, "React"); }
+exports.extractSampleLinksWC = function extract(cb) { extractSampleLinks(cb, "WC"); };
