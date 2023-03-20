@@ -1327,12 +1327,12 @@ function logSampleLinks(cb, platform, isStaging) {
 }
 
 exports.logSampleLinks = logSampleLinks;
-// call one of the following gulp commands:
+// use these gulp commands to log links to samples hosted on staging:
 // gulp logSampleLinks --stag=true --plat=Blazor
 // gulp logSampleLinks --stag=true --plat=Angular
 // gulp logSampleLinks --stag=true --plat=React
 // gulp logSampleLinks --stag=true --plat=WC
-// or use these gulp commands:
+// or use these gulp commands to log links to samples hosted locally:
 // gulp logSampleLinksAngular
 // gulp logSampleLinksBlazor
 // gulp logSampleLinksReact
