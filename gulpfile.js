@@ -1326,11 +1326,17 @@ function logSampleLinks(cb, platform, isStaging) {
     });
 }
 
+exports.logSampleLinks = logSampleLinks;
+// call one of the following gulp commands:
 // gulp logSampleLinks --stag=true --plat=Blazor
 // gulp logSampleLinks --stag=true --plat=Angular
 // gulp logSampleLinks --stag=true --plat=React
 // gulp logSampleLinks --stag=true --plat=WC
-exports.logSampleLinks = logSampleLinks;
+// or use these gulp commands:
+// gulp logSampleLinksAngular
+// gulp logSampleLinksBlazor
+// gulp logSampleLinksReact
+// gulp logSampleLinksWC
 exports.logSampleLinksAngular = function log(cb) { logSampleLinks(cb, "Angular"); }
 exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); }
 exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
