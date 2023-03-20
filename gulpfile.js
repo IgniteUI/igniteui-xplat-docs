@@ -1344,7 +1344,7 @@ function extractSampleLinks(cb, platform, server) {
     var sampleHost = ""
     var sampleBrowser = "";
 
-   // if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
     if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
 
     if (platform === "WC" || platform === "WebComponents" || platform === "wc") {
@@ -1424,7 +1424,7 @@ function extractSampleLinks(cb, platform, server) {
       //  console.log(sampleLinks[0])
         //var outputPath = "./dist/" + platform + "/en/samples.json";
         platform =  platform.replace("WebComponents", "wc");
-        var outputPath = "samples-" + platform.toLowerCase() + ".json";
+        var outputPath = "samples-" + server + "-" + platform.toLowerCase() + ".json";
         var outputJSON = JSON.stringify(sampleLinks,  null, '  ');
         fs.writeFileSync(outputPath, outputJSON);
         console.log('extracted ' + sampleLinks.length + ' sample links to: ' + outputPath);
