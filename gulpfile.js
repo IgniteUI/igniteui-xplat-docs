@@ -1234,13 +1234,13 @@ function padRight(num, width) {
     return str.length >= width ? str : new Array(width - str.length + 1).join(' ') + str;
 }
 
-function logSamples(cb) {
+function logSampleLinks(cb, platform, isStaging) {
 
-    console.log('logSamples .md files ...');
-    var platform = "WC"; // Blazor
+    console.log('logSampleLinks .md files ...');
     var sampleLinks = [];
     var sampleHost = ""
-    var isStaging = false;
+
+    if (isStaging === undefined) isStaging = argv.stag !== undefined ? argv.stag : false;
     if (isStaging) {
         sampleHost = "https://staging.infragistics.com";
     } else {
@@ -1248,10 +1248,15 @@ function logSamples(cb) {
     }
     // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
     // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
+    if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
     if (platform === "WC") {
         sampleHost += "/webcomponents-demos/samples";
     } else if (platform === "Blazor") {
         sampleHost += "/blazor-client/samples";
+    } else if (platform === "Angular") {
+        sampleHost += "/angular-demos-dv/samples";
+    } else if (platform === "React") {
+        sampleHost += "/react-demos/samples";
     }
 
     var components = [
@@ -1262,8 +1267,8 @@ function logSamples(cb) {
     ];
 
     gulp.src([
-    // 'doc/en/**/charts/chart-overview.md',
-    // 'doc/en/**/notifications/**/*.md',
+  //  'doc/en/**/charts/chart-overview.md',
+    //  'doc/en/**/notifications/**/*.md',
     // 'doc/en/**/layouts/**/*.md',
     // 'doc/en/**/scheduling/calendar.md',
     // 'doc/**/inputs/**/*.md',
@@ -1272,13 +1277,13 @@ function logSamples(cb) {
     // 'doc/en/**/charts/types/treemap-chart.md',
     // 'doc/**/grids/grids.md',
     // 'doc/en/**/general*.md',
-        'doc/en/**/*.md',
+     'doc/en/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('logSamples: ' + filePath);
+        // console.log('logSampleLinks: ' + filePath);
 
         var fileLines = fileContent.split("\r\n");
         for (const line of fileLines) {
@@ -1316,8 +1321,17 @@ function logSamples(cb) {
         if (cb) cb();
     })
     .on("error", (err) => {
-        console.log("Error in logSamples()");
+        console.log("Error in logSampleLinks()");
         if (cb) cb(err);
     });
 }
-exports.logSamples = logSamples;
+
+// gulp logSampleLinks --stag=true --plat=Blazor
+// gulp logSampleLinks --stag=true --plat=Angular
+// gulp logSampleLinks --stag=true --plat=React
+// gulp logSampleLinks --stag=true --plat=WC
+exports.logSampleLinks = logSampleLinks;
+exports.logSampleLinksAngular = function log(cb) { logSampleLinks(cb, "Angular"); }
+exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); }
+exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
+exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
