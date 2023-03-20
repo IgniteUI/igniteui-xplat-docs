@@ -1233,3 +1233,91 @@ function padRight(num, width) {
     let str = num.toString();
     return str.length >= width ? str : new Array(width - str.length + 1).join(' ') + str;
 }
+
+function logSamples(cb) {
+
+    console.log('logSamples .md files ...');
+    var platform = "WC"; // Blazor
+    var sampleLinks = [];
+    var sampleHost = ""
+    var isStaging = false;
+    if (isStaging) {
+        sampleHost = "https://staging.infragistics.com";
+    } else {
+        sampleHost = "https://localhost:4200";
+    }
+    // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
+    // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
+    if (platform === "WC") {
+        sampleHost += "/webcomponents-demos/samples";
+    } else if (platform === "Blazor") {
+        sampleHost += "/blazor-client/samples";
+    }
+
+    var components = [
+        "grids/grid",
+        "grids/tree-grid",
+    //  "grids/pivot-grid",
+    //  "grids/hierarchical-grid"
+    ];
+
+    gulp.src([
+    // 'doc/en/**/charts/chart-overview.md',
+    // 'doc/en/**/notifications/**/*.md',
+    // 'doc/en/**/layouts/**/*.md',
+    // 'doc/en/**/scheduling/calendar.md',
+    // 'doc/**/inputs/**/*.md',
+  //   'doc/en/**/grids/**/*.md',
+    // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/charts/types/treemap-chart.md',
+    // 'doc/**/grids/grids.md',
+    // 'doc/en/**/general*.md',
+        'doc/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // console.log('logSamples: ' + filePath);
+
+        var fileLines = fileContent.split("\r\n");
+        for (const line of fileLines) {
+            if (line.indexOf("sample=") >= 0) {
+                var parts = line.split(',');
+                var link = parts[0].replace('sample="', '');
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('`', '');
+                link = link.replace('{PivotGridSample}', 'grids/tree-grid');
+                link = link.replace('{TreeGridSample}', 'grids/tree-grid');
+                link = link.replace('{GridSample}', 'grids/grid');
+                link = sampleHost + link;
+
+                if (link.indexOf("{ComponentSample}") >= 0) {
+                    for (const c of components) {
+                        var compLink = link.replace('{ComponentSample}', c);
+                        if (sampleLinks.indexOf(compLink) < 0) {
+                            sampleLinks.push(compLink);
+                        }
+                    }
+                } else if (sampleLinks.indexOf(link) < 0) {
+                    sampleLinks.push(link);
+                }
+            }
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        sampleLinks.sort();
+        for (const link of sampleLinks) {
+            console.log(link);
+        }
+
+        if (cb) cb();
+    })
+    .on("error", (err) => {
+        console.log("Error in logSamples()");
+        if (cb) cb(err);
+    });
+}
+exports.logSamples = logSamples;
