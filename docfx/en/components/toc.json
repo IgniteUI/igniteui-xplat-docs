@@ -827,7 +827,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "Remote Data Operations",
         "href": "grids/tree-grid/remote-data-operations.md",
         "status": "NEW"
