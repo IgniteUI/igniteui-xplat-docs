@@ -1744,7 +1744,7 @@
      "href": "notifications/toast.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Dialog",
     "href": "notifications/dialog.md",
     "status": ""
