@@ -17,8 +17,6 @@ _language: ja
 
 `sample="/{TreeGridSample}/overview", height="700", alt="{Platform} グリッドの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## {ProductName} Tree Grid で作業を開始
