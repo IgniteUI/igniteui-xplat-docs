@@ -113,85 +113,6 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular"],
-    "name": "レイアウト",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "アコーディオン",
-    "href": "layouts/accordion.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "アバター",
-    "href": "layouts/avatar.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "カード",
-    "href": "layouts/card.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "ドック マネージャー",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-        "exclude": ["Angular"],
-        "name": "ペインの更新",
-        "href": "layouts/dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "フレームの埋め込み",
-        "href": "layouts/dock-manager-embedding-frames.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "Blazor", "React"],
-        "name": "デスクトップ統合",
-        "href": "layouts/dock-manager-electron.md"
-      }
-    ]
-  },
-  {
-    "exclude":  ["Angular"],
-    "name": "展開パネル",
-    "href": "layouts/expansion-panel.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular","Blazor", "React"],
-    "name": "ステッパー",
-    "href": "layouts/stepper.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "タブ",
-    "href": "layouts/tabs.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "メニュー",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "ナビゲーション バー",
-    "href": "menus/navbar.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "ナビゲーション ドロワー",
-    "href": "menus/navigation-drawer.md"
-  },
-  {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "グリッド & リスト",
     "header": true,
@@ -1503,6 +1424,85 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "レイアウト",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "アコーディオン",
+    "href": "layouts/accordion.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "アバター",
+    "href": "layouts/avatar.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "カード",
+    "href": "layouts/card.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "ドック マネージャー",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Angular"],
+        "name": "ペインの更新",
+        "href": "layouts/dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "フレームの埋め込み",
+        "href": "layouts/dock-manager-embedding-frames.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "デスクトップ統合",
+        "href": "layouts/dock-manager-electron.md"
+      }
+    ]
+  },
+  {
+    "exclude":  ["Angular"],
+    "name": "展開パネル",
+    "href": "layouts/expansion-panel.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular","Blazor", "React"],
+    "name": "ステッパー",
+    "href": "layouts/stepper.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "タブ",
+    "href": "layouts/tabs.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "メニュー",
+    "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "ナビゲーション バー",
+    "href": "menus/navbar.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "ナビゲーション ドロワー",
+    "href": "menus/navigation-drawer.md"
   },
   {
     "name": "フレームワーク",
