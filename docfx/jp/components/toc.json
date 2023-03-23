@@ -113,47 +113,6 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "スタイル設定およびとテーマ",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "概要",
-    "href": "themes/overview.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "構成",
-    "href": "themes/configuration.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "エレベーション",
-    "href": "themes/elevations.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "パレット",
-    "href": "themes/palettes.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "タイポグラフィ",
-    "href": "themes/typography.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "スタイル",
-    "href": "themes/styles.md",
-    "status": ""
-  },
-  {
     "exclude": ["Angular"],
     "name": "レイアウト",
     "header": true
@@ -1763,6 +1722,47 @@
     "exclude": ["Angular"],
     "name": "日付ピッカー",
     "href": "editors/date-picker.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スタイル設定およびとテーマ",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "概要",
+    "href": "themes/overview.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "構成",
+    "href": "themes/configuration.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "エレベーション",
+    "href": "themes/elevations.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "パレット",
+    "href": "themes/palettes.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "タイポグラフィ",
+    "href": "themes/typography.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "スタイル",
+    "href": "themes/styles.md",
     "status": ""
   },
   {
