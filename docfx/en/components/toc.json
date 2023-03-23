@@ -113,126 +113,6 @@
     "status": "UPDATED"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Styling & Themes",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Overview",
-    "href": "themes/overview.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Configuration",
-    "href": "themes/configuration.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Elevations",
-    "href": "themes/elevations.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Palettes",
-    "href": "themes/palettes.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Typography",
-    "href": "themes/typography.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React", "Blazor"],
-    "name": "Styles",
-    "href": "themes/styles.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular" ],
-    "name": "Layouts",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Accordion",
-    "href": "layouts/accordion.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Avatar",
-    "href": "layouts/avatar.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Card",
-    "href": "layouts/card.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Dock Manager",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-        "exclude": ["Angular"],
-        "name": "Using Panes",
-        "href": "layouts/dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular"],
-        "name": "Embedding Frames",
-        "href": "layouts/dock-manager-embedding-frames.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "Blazor", "React"],
-        "name": "Desktop Integration",
-        "href": "layouts/dock-manager-electron.md"
-      }
-    ]
-  },
-  {
-    "exclude":  ["Angular"],
-    "name": "Expansion Panel",
-    "href": "layouts/expansion-panel.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular","Blazor", "React"],
-    "name": "Stepper",
-    "href": "layouts/stepper.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Tabs",
-    "href": "layouts/tabs.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Menus",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Navbar",
-    "href": "menus/navbar.md"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Navigation Drawer",
-    "href": "menus/navigation-drawer.md"
-  },
-  {
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Grids & Lists",
     "header": true,
@@ -1546,6 +1426,85 @@
     ]
   },
   {
+    "exclude": ["Angular" ],
+    "name": "Layouts",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Accordion",
+    "href": "layouts/accordion.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Avatar",
+    "href": "layouts/avatar.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Card",
+    "href": "layouts/card.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Dock Manager",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Angular"],
+        "name": "Using Panes",
+        "href": "layouts/dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular"],
+        "name": "Embedding Frames",
+        "href": "layouts/dock-manager-embedding-frames.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Desktop Integration",
+        "href": "layouts/dock-manager-electron.md"
+      }
+    ]
+  },
+  {
+    "exclude":  ["Angular"],
+    "name": "Expansion Panel",
+    "href": "layouts/expansion-panel.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular","Blazor", "React"],
+    "name": "Stepper",
+    "href": "layouts/stepper.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Tabs",
+    "href": "layouts/tabs.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Navbar",
+    "href": "menus/navbar.md"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md"
+  },
+  {
     "name": "Frameworks",
     "header": true
   },
@@ -1763,6 +1722,47 @@
     "exclude": ["Angular"],
     "name": "Date Picker",
     "href": "editors/date-picker.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Styling & Themes",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Overview",
+    "href": "themes/overview.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Configuration",
+    "href": "themes/configuration.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Elevations",
+    "href": "themes/elevations.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Palettes",
+    "href": "themes/palettes.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Typography",
+    "href": "themes/typography.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular", "React", "Blazor"],
+    "name": "Styles",
+    "href": "themes/styles.md",
     "status": ""
   },
   {
