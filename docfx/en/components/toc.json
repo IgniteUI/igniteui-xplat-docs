@@ -713,7 +713,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Cell Editing",
         "href": "grids/tree-grid/cell-editing.md",
         "status": "NEW"
@@ -731,7 +731,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Types",
         "href": "grids/tree-grid/column-types.md",
         "status": "NEW"
@@ -749,7 +749,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Hiding",
         "href": "grids/tree-grid/column-hiding.md",
         "status": "NEW"
@@ -767,7 +767,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Column Resizing",
         "href": "grids/tree-grid/column-resizing.md",
         "status": "NEW"
