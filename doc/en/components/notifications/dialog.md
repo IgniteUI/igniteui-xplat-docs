@@ -5,13 +5,13 @@ _keywords: {ProductName}, UI controls, {Platform} widgets, web widgets, UI widge
 mentionedTypes: ['Dialog']
 ---
 
-# {Platform} Dialog
+# {Platform} Dialog Overview
 
 The {ProductName} Dialog component is used to display some information or prompt the user for an action or confirmation. It is shown in a modal window, which means that the user is not allowed to interact with the main app until a certain action is performed that closes the dialog.
 
 ## {ProductName} Dialog Example
 
-This sample demonstrates how to create a Dialog component.
+This sample demonstrates how to create a Dialog component in {Platform}.
 
 `sample="/notifications/dialog/overview", height="400", alt="{Platform} Dialog Example"`
 
@@ -34,7 +34,33 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
-The simplest way to display the dialog component is to use its `show` method and call it on a button click.
+<!-- Blazor -->
+Before using the {Platform} `Dialog`, you need to register it as follows:
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDialogModule));
+```
+<!-- end: Blazor -->
+
+The simplest way to display the dialog component is to use its `Show` method and call it on a button click.
+
+```razor
+<div class="container vertical">
+    <IgbDialog @ref="_dialog" Title="Dialog Title">
+        <p>This is a sample message.</p>
+        <div slot="footer">
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dialog!.Hide())">Close</IgbButton>
+        </div>
+    </IgbDialog>
+
+    <IgbButton @onclick="@(e => _dialog!.Show())" class="button">
+        Open Dialog
+    </IgbButton>
+</div>
+```
 
 ```html
 <igc-button onclick="dialog.show()" variant="contained">Show Dialog</igc-button>
@@ -46,17 +72,17 @@ The simplest way to display the dialog component is to use its `show` method and
 </igc-dialog>
 ```
 
-The Dialog component provides an `open` property, which gives you the ability to configure its state as per your application scenario.
+The Dialog component provides an `Open` property, which gives you the ability to configure its state as per your application scenario.
 
-Use the `title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property.
+Use the `Title` property to set the title of the dialog. However, if any content is provided in the `title` slot, it will take precedence over the property.
 
-Action buttons or additional information can be placed in the bottom part of the dialog via the `footer` slot. If no content is added there, a default `OK` button will be shown that closes the Dialog when clicked. In case you do not want this button to be shown you can set the `hideDefaultAction` property to **true**. The default value is **false**.
+Action buttons or additional information can be placed in the bottom part of the dialog via the `footer` slot. If no content is added there, a default `OK` button will be shown that closes the Dialog when clicked. In case you do not want this button to be shown you can set the `HideDefaultAction` property to **true**. The default value is **false**.
 
 ### Closing
 
-By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `closeOnEscape` property. The default value is **true**. If there is an open dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
+By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `CloseOnEscape` property. The default value is **true**. If there is an open dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
 
-Use the `closeOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
+Use the `CloseOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
 
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing Variations"`
 
@@ -88,17 +114,16 @@ igc-dialog::part(footer) {
 `sample="/notifications/dialog/styling", height="400", alt="{Platform} Dialog Styling Example"`
 
 
-
 <div class="divider--half"></div>
 
 ## API References
 
-- `closeOnEscape`
-- `closeOnOutsideClick`
-- `hide`
-- `hideDefaultAction`
-- `open`
-- `title`
+- `CloseOnEscape`
+- `CloseOnOutsideClick`
+- `Hide`
+- `HideDefaultAction`
+- `Open`
+- `Title`
 - `Dialog`
 
 ## Additional Resources

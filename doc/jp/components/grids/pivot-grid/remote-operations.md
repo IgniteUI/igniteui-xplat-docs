@@ -74,8 +74,7 @@ public aggregatedData = [
 - **columnDimensionSeparator** - 一意の列フィールド値を生成するときに使用されるセパレーター。上からの例のダッシュ (**-**) - **All-Bulgaria** です。
 - **rowDimensionSeparator** - 一意の行フィールド値を生成するときに使用されるセパレーター。上記の例のアンダースコア (**_**) - **AllProducts_records** です。**records** (レコード) と **level** (レベル フィールド) を作成するときに使用されます。
 
-これらはすべて、`Pivo​​tConfiguration` の一部である **pivotKeys** プロパティに格納され、デフォルトのピボット キーを変更するために使用できます。
-これらのデフォルトは次のとおりです:
+これらはすべて、`Pivo​​tConfiguration` の一部である **pivotKeys** プロパティに格納され、デフォルトのピボット キーを変更するために使用できます。これらのデフォルトは次のとおりです:
 
 ```typescript
 export const   = {
