@@ -13,11 +13,8 @@ The {Platform} `{ComponentName}` has a **summaries** feature that functions on a
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 > [!Note]
 > The summary of the column is a **function of all column values**, unless filtering is applied, then the summary of the column will be **function of the filtered result values**
@@ -525,11 +522,8 @@ class MySummary extends IgcNumberSummaryOperand {
 Add blazor snippet for my summary
 ```-->
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-options"
-           github-src="{ComponentSample}/data-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+
 
 ### Summary Template
 `Summary` targets the column summary providing as a context the column summary results.
@@ -587,11 +581,8 @@ When a default summary is defined, the height of the summary area is calculated 
 <!-- end: Angular -->
 
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-template"
-           github-src="{ComponentSample}/data-summary-template" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
+
 
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
@@ -648,11 +639,8 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 }, false);
 ```
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-formatter"
-           github-src="{ComponentSample}/data-summary-formatter" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+
 
 <!-- ComponentStart: Grid -->
 
@@ -679,11 +667,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 
 ### Demo
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-options"
-           github-src="{ComponentSample}/groupby-summary-options" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-options", height="650", alt="{Platform} {ComponentTitle} groupby summary options"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -710,11 +695,8 @@ The `ShowSummaryOnCollapse` property is boolean. Its default value is set to **f
 > [!Note]
 > The `SummaryPosition` property applies only for the child level summaries. The root level summaries appear always fixed at the bottom of the `{ComponentName}`.
 
-<code-view style="height:720px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-summary-children"
-           github-src="{ComponentSample}/data-summary-children" >
-</code-view>
+`sample="/{ComponentSample}/data-summary-children", height="720", alt="{Platform} {ComponentTitle} data summary children"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -842,11 +824,8 @@ $custom-theme: grid-summary-theme(
 
 Don't forget to include the themes in the same way as it was demonstrated above.
 
-<code-view style="height:710px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-groupby-summary-styling"
-           github-src="{ComponentSample}/groupby-summary-styling" >
-</code-view>
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+
 
 <!-- end: Angular -->
 

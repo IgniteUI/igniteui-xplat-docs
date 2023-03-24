@@ -15,12 +15,9 @@ The {ProductName} Scatter Chart belongs to a group of charts that show the relat
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-point-chart"
-           github-src="charts/data-chart/scatter-point-chart"
-           alt="{Platform} Scatter Marker Chart" >
-</code-view>
+`sample="/charts/data-chart/scatter-point-chart", height="600", alt="{Platform} Scatter Marker Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,12 +27,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-line-chart"
-           github-src="charts/data-chart/scatter-line-chart"
-           alt="{Platform} Scatter Line Chart" >
-</code-view>
+`sample="/charts/data-chart/scatter-line-chart", height="600", alt="{Platform} Scatter Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -45,12 +39,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterSplineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-spline-chart"
-           github-src="charts/data-chart/scatter-spline-chart"
-           alt="{Platform} Scatter Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/scatter-spline-chart", height="600", alt="{Platform} Scatter Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -60,12 +51,9 @@ Use the {Platform} Scatter High Density (HD) Chart to bind and show scatter data
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `HighDensityScatterSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-hd-series"
-           github-src="charts/data-chart/type-scatter-hd-series"
-           alt="{Platform} Scatter HD Chart" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-hd-series", height="600", alt="{Platform} Scatter HD Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -75,12 +63,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-area-series"
-           github-src="charts/data-chart/type-scatter-area-series"
-           alt="{Platform} Scatter Area Chart" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-area-series", height="600", alt="{Platform} Scatter Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -90,12 +75,9 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `ScatterContourSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-contour-series"
-           github-src="charts/data-chart/type-scatter-contour-series"
-           alt="{Platform} Scatter Contour Chart" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-contour-series", height="600", alt="{Platform} Scatter Contour Chart"`
+
+
 
 <div class="divider--half"></div>
 

@@ -17,11 +17,8 @@ The linear gauge component allows for visualizing data in the form of a linear g
 The following sample demonstrates how setting multiple properties on the same gauge can transform it to completely different gauge.
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
-           github-src="gauges/linear-gauge/animation">
-</code-view>
+`sample="/gauges/linear-gauge/animation", height="125", alt="{Platform} linear gauge animation"`
+
 
 <div class="divider--half"></div>
 
@@ -217,11 +214,8 @@ This is the primary measure displayed by the component and is visualized as a ba
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
-           github-src="gauges/linear-gauge/needle">
-</code-view>
+`sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} linear gauge needle"`
+
 
 ## Ranges
 The ranges are visual elements that highlight a specified range of values on a scale. Their purpose is to visually communicate the qualitative state of the performance bar measure, illustrating at the same times the degree to which it resides within that state.
@@ -285,11 +279,8 @@ The ranges are visual elements that highlight a specified range of values on a s
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
-           github-src="gauges/linear-gauge/ranges">
-</code-view>
+`sample="/gauges/linear-gauge/ranges", height="125", alt="{Platform} linear gauge ranges"`
+
 
 ## Tick Marks
 The tick marks serve as a visual division of the scale into intervals in order to increase the readability of the linear gauge.
@@ -357,11 +348,8 @@ Minor tick marks – The minor tick marks represent helper tick marks, which mig
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
-           github-src="gauges/linear-gauge/tickmarks">
-</code-view>
+`sample="/gauges/linear-gauge/tickmarks", height="125", alt="{Platform} linear gauge tickmarks"`
+
 
 ## Labels
 The labels indicate the measures on the scale.
@@ -408,11 +396,8 @@ The labels indicate the measures on the scale.
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
-           github-src="gauges/linear-gauge/labels">
-</code-view>
+`sample="/gauges/linear-gauge/labels", height="125", alt="{Platform} linear gauge labels"`
+
 
 ## Backing
 The backing element represents background and border of the bullet graph control. It is always the first element rendered and all the rest of elements such as labels, and tick marks are overlaid on top of it.
@@ -455,11 +440,8 @@ The backing element represents background and border of the bullet graph control
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
-           github-src="gauges/linear-gauge/backing">
-</code-view>
+`sample="/gauges/linear-gauge/backing", height="125", alt="{Platform} linear gauge backing"`
+
 
 ## Scale
 The scale is a visual element that highlights the full range of values in the gauge. You can customize the appearance and the shape of the scale. It can also be inverted (using `IsScaleInverted` property) and all labels will be rendered from right-to-left instead of left-to-right.
@@ -511,11 +493,8 @@ The scale is a visual element that highlights the full range of values in the ga
 </igc-linear-gauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
-           github-src="gauges/linear-gauge/scale">
-</code-view>
+`sample="/gauges/linear-gauge/scale", height="125", alt="{Platform} linear gauge scale"`
+
 
 ## Summary
 For your convenience, all above code snippets are combined into one code block below that you can easily copy to your project and see the linear gauge with all features and visuals enabled.

@@ -14,12 +14,9 @@ Infragistics {Platform} Dock Manager は、ペインでアプリケーション�
 
 この例は、アプリケーションで使用できる `DockManager` のほとんどの機能とドッキング オプションを示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-overview"
-           alt="{Platform} ドック マネージャーの例"
-           github-src="layouts/dock-manager/overview">
-</code-view>
+`sample="/layouts/dock-manager/overview", height="600", alt="{Platform} ドック マネージャーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -327,12 +324,9 @@ this.dockManager.layout = { ...layout };
 コンテンツとペインは、実行時に `Layout` に追加できます。以下の例では、コンテンツ、ドキュメント、およびフローティング ペインを追加する方法を確認できます。
 
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-add-content-runtime"
-           alt="{Platform} ドック マネージャー実行時にペインを追加するの例"
-           github-src="layouts/dock-manager/add-content-runtime">
-</code-view>
+`sample="/layouts/dock-manager/add-content-runtime", height="700", alt="{Platform} ドック マネージャー実行時にペインを追加するの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -355,12 +349,9 @@ this.dockManager.addEventListener('paneClose', ev => console.log(ev.detail));
 <div class="divider--half"></div>
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-hiding-panes"
-           alt="{Platform} ドック マネージャー ペインを閉じる例"
-           github-src="layouts/dock-manager/hiding-panes">
-</code-view>
+`sample="/layouts/dock-manager/hiding-panes", height="700", alt="{Platform} ドック マネージャー ペインを閉じる例"`
+
+
 <!-- end: WebComponents -->
 
 <div class="divider--half"></div>
@@ -445,12 +436,9 @@ igc-dockmanager::part(pane-header-maximize-button) {
 すべて適切に設定できると、カスタマイズされたアイコンとタブ領域を持つ DockManager が表示されます。以下は結果です。
 
 <!-- WebComponents -->
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-customize-buttons"
-           alt="{Platform} Dock Manager カスタマイズ ボタンの例"
-           github-src="layouts/dock-manager/customize-buttons">
-</code-view>
+`sample="/layouts/dock-manager/customize-buttons", height="700", alt="{Platform} Dock Manager カスタマイズ ボタンの例"`
+
+
 <!-- end: WebComponents -->
 
 以下は、すべてのボタンとスプリッター ハンドルのスロット名のリストです。
@@ -564,12 +552,9 @@ igc-dockmanager::part(content-pane) {
 
 次の例では、公開した CSS パーツのいくつかを使用してドック マネージャーをカスタマイズする機能を紹介します。
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/dock-manager-styling"
-           alt="{Platform} ドック マネージャー スタイル設定の例"
-           github-src="layouts/dock-manager/styling">
-</code-view>
+`sample="/layouts/dock-manager/styling", height="700", alt="{Platform} ドック マネージャー スタイル設定の例"`
+
+
 
 <div class="divider--half"></div>
 

@@ -3,6 +3,7 @@ title: {Platform} {PivotGridTitle} 機能 | ピボット テーブル | イン�
 _description: {ProductName} を使用して、高速で応答性の高い {Platform} {PivotGridTitle} ピボット グリッドとテーブルを作成します。ピボット データを介して複雑なデータ分析を実行します。
 _keywords: {Platform}, {PivotGridTitle}, material pivot table, {ProductName}, grid features, pivot features, material ピボット テーブル, グリッド機能, ピボット機能
 mentionedTypes: ['Infragistics.Controls.Grid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -11,7 +12,7 @@ _language: ja
 ピボットおよびフラット グリッド コンポーネントは、共通ベースを継承しているため、いくつかの機能を共有しています。
 
 > [!Note]
->一部の機能は、ピボット テーブルのコンテキストで意味のある動作をしないため `PivotGrid`で有効にできません。以下が含まれます。
+>一部の機能は、ピボット テーブルのコンテキストで意味のある動作をしないため `PivotGrid` で有効にできません。以下が含まれます。
 > - CRUD 操作
 > - グループ化
 > - 行 / 列のピン固定
@@ -20,12 +21,9 @@ _language: ja
 
 {PivotGridTitle} コンポーネントには、以下で説明するように、そのディメンションに関連する追加の機能があります。
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{PivotGridSample}-features"
-           github-src="{PivotGridSample}/features"
-           alt="ピボット セレクターを使用した {Platform} {PivotGridTitle} の例">
-</code-view>
+`sample="/{PivotGridSample}/features", height="700", alt="ピボット セレクターを使用した {Platform} {PivotGridTitle} の例"`
+
+
 
 <!-- Angular -->
 ## ディメンション フィルタリング
@@ -35,7 +33,7 @@ _language: ja
 > [!Note]
 >フィルタリング ディメンションを使用して、ピボット ビューの一部ではないデータ値を除外できます。
 
-フィルタリング UI は、ディメンション チップ フィルターア イコンを介して開くことができ、一意のディメンション値の Excel スタイルのフィルタリングを可能にします。
+フィルタリング UI は、ディメンション チップ フィルター アイコンを介して開くことができ、一意のディメンション値の Excel スタイルのフィルタリングを可能にします。
 
 > [!Note]
 >すべてのフィルタリング チップに十分なスペースがない場合、{PivotGridTitle} には、ドロップダウンに切り取られたものが表示されます。エンドユーザーはそこでアクセスして操作できます。
@@ -73,7 +71,7 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 `rows` (行) または `columns` (列) のディメンション値は、関連するチップまたは API を介して並べ替えることができます。この機能は埋め込まれており、デフォルトで有効になっています。
 
-関連するチップをクリックするとディメンションが並べ替えられ、その結果、ディメンション値が昇順/降順で並べ替えられます。
+関連するチップをクリックするとディメンションが並べ替えられ、その結果、ディメンション値が昇順 / 降順で並べ替えられます。
 
 並べ替えは、ディメンション定義の `sortDirection` プロパティを介して最初に適用することもできます。
 
@@ -169,9 +167,6 @@ public pivotConfigHierarchy: IPivotConfiguration = {
 
 ## スーパー コンパクト モード
 `PivotGrid` コンポーネントは、`SuperCompactMode` 入力を提供します。一度にたくさんのセルが画面に表示させる必要がある場合に適しています。有効にすると、このオプションは {PivotGridTitle} の `DisplayDensity` オプションを無視します。`SuperCompactMode` を有効にすると、`SuperCompactMode` オプションがない子コンポーネント (`Chip` など) ごとに `DisplayDensity` 入力が `Compact` (コンパクト) に設定されます。
-
-
-
 <!-- Angular -->
 ```html
 <{PivotGridSelector} [superCompactMode]="true"></{PivotGridSelector}>

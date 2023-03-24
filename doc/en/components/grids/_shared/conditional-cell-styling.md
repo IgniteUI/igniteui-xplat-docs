@@ -110,12 +110,9 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-classes"
-           github-src="{ComponentSample}/row-classes" >
+`sample="/{ComponentSample}/row-classes", height="600", alt="{Platform} {ComponentTitle} row classes"`
 
-</code-view>
+
 
 <!-- end: Angular -->
 
@@ -289,11 +286,8 @@ constructor() {
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-styles"
-           github-src="{ComponentSample}/row-styles" >
-</code-view>
+`sample="/{ComponentSample}/row-styles", height="620", alt="{Platform} {ComponentTitle} row styles"`
+
 
 ## {ComponentTitle} Conditional Cell Styling
 
@@ -495,11 +489,8 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 
 ### Demo
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-1"
-           github-src="{ComponentSample}/conditional-cell-style-1" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-1", height="600", alt="{Platform} {ComponentTitle} conditional cell style 1"`
+
 
 - By using the `Column` input `CellStyles` which accepts an object literal where the keys are style properties and the values are expressions for evaluation.
 
@@ -701,11 +692,8 @@ Define a `popin` animanion:
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-2"
-           github-src="{ComponentSample}/conditional-cell-style-2" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
+
 
 <!-- Angular -->
 

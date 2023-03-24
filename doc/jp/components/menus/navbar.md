@@ -15,12 +15,9 @@ _language: ja
 
 次の例は、アイコンとテキスト ヘッダーのある `Navbar` を表しています:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="{Platform} Navbar 概要の例"
-           github-src="menus/nav-bar/overview">
-</code-view>
+`sample="/menus/nav-bar/overview", height="100", alt="{Platform} Navbar 概要の例"`
+
+
 
 ## 使用方法
 
@@ -100,13 +97,7 @@ IgrNavbarModule.register();
 
 次のサンプルに示すように、`Start` スロットと `End` スロットを使用して `Navbar` にいくつかの `Icon` 要素を追加できます。
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-content"
-           alt="{Platform} Navbar スタイル設定の例"
-           github-src="menus/nav-bar/content">
-</code-view>
-
+`sample="/menus/nav-bar/content", height="100", alt="{Platform} Navbar スタイル設定の例"`
 
 ## スタイル設定
 
@@ -137,13 +128,7 @@ igc-navbar::part(end) {
 
 以下は結果です:
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="{Platform} Navbar スタイル設定の例"
-           github-src="menus/nav-bar/styling">
-</code-view>
-
+`sample="/menus/nav-bar/styling", height="100", alt="{Platform} Navbar スタイル設定の例"`
 
 <div class="divider"></div>
 

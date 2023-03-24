@@ -14,12 +14,9 @@ _language: ja
 
 ## {Platform} コンボボックスの例
 
-<code-view style="height:320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-overview"
-           alt="{Platform} Combo の例"
-           github-src="grids/combo/overview">
-</code-view>
+`sample="/grids/combo/overview", height="320", alt="{Platform} Combo の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -136,12 +133,9 @@ combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
-           alt="{Platform} Combo 選択の例"
-           github-src="grids/combo/selection">
-</code-view>
+`sample="/grids/combo/selection", height="380", alt="{Platform} Combo 選択の例"`
+
+
 
 ### 検証
 
@@ -196,12 +190,9 @@ combo.deselect([cities[1], cities[5]]);
 | `footer`             | フッター コンテンツを保持するコンテナー。                                      |
 | `empty`              | 空のコンテンツを保持するコンテナ。                                       |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-styling"
-           alt="{Platform} Combo スタイル設定の例"
-           github-src="grids/combo/styling">
-</code-view>
+`sample="/grids/combo/styling", height="380", alt="{Platform} Combo スタイル設定の例"`
+
+
 
 ## API リファレンス
 

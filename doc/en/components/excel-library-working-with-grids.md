@@ -11,12 +11,9 @@ TODO
 ## {Platform} Working with Grids Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids"
-           alt="{Platform} Working with Grids Example"
-           github-src="excel/excel-library/working-with-grids">
-</code-view>
+`sample="/excel/excel-library/working-with-grids", height="500", alt="{Platform} Working with Grids Example"`
+
+
 
 <div class="divider--half"></div>
 

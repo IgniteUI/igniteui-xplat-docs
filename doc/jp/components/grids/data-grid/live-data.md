@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} ライブ データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-live-data"
-           alt="{Platform} ライブ データのバインディングの例"
-           github-src="grids/data-grid/binding-live-data">
-</code-view>
+`sample="/grids/data-grid/binding-live-data", height="600", alt="{Platform} ライブ データのバインディングの例"`
+
+
 
 ## API リファレンス
 

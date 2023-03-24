@@ -12,12 +12,9 @@ The Ignite UI for Web Components Button provides different variants and styles w
 
 ## {Platform} Button Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="{Platform} Button Example"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
+
+
 
 ## Usage
 
@@ -43,7 +40,7 @@ With `prefix` and `suffix` slots we can add different content before and after t
 
 ## Type
 
-The button component will change its internal structure from a [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [<a>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
+The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `href` attribute is set. In that case the button can be thought of as a regular link. Setting the `href` attribute will allow you to also set the `rel`, `target` and `download` attributes.
 In the case when the button component uses an actual `button` element internally, we can specify its `Type` by setting the property to any of the following values:
 
 - `submit` - when we want to submit the form data
@@ -60,10 +57,7 @@ Use `variant` attribute to add a simple contained button in your component templ
 <igc-button variant="contained">Contained</igc-button>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</code-view>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined Button
 
@@ -73,10 +67,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <igc-button variant="outlined">Outlined</igc-button>
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</code-view>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat Button
 
@@ -86,10 +77,7 @@ Analogically, we can switch to `flat` variant.
 <igc-button variant="flat">Flat</igc-button>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</code-view>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action Button
 
@@ -99,10 +87,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <igc-button variant="fab">Fab</igc-button>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</code-view>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## Button Sizing
 
@@ -138,12 +123,9 @@ this.radioGroup.addEventListener('click', (radio: any) => {
 
 And here's the result of all that work:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="{Platform} Button Sizing Example"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
+
+
 
 ### Download
 
@@ -159,10 +141,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </igc-button>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</code-view>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## Styling
 
@@ -176,12 +155,9 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="{Platform} Button Styling Example"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
+
+
 
 ## API Reference
 

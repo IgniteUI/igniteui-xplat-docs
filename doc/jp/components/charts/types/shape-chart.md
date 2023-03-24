@@ -16,12 +16,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterPolygonSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polygon-series"
-           github-src="charts/data-chart/type-scatter-polygon-series"
-           alt="{Platform} 散布ポリゴン チャート" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-polygon-series", height="600", alt="{Platform} 散布ポリゴン チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -31,12 +28,9 @@ _language: ja
 
 `XamDataChart` コントロールでこのチャート タイプを作成するには、以下の例のように、データを `ScatterPolylineSeries` にバインドします:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-type-scatter-polyline-series"
-           github-src="charts/data-chart/type-scatter-polyline-series"
-           alt="{Platform} 散布ポリライン チャート" >
-</code-view>
+`sample="/charts/data-chart/type-scatter-polyline-series", height="600", alt="{Platform} 散布ポリライン チャート"`
+
+
 
 <div class="divider--half"></div>
 

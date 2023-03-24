@@ -58,115 +58,6 @@
   },
   {
     "exclude": ["Angular"],
-    "name": "Layouts",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Avatar",
-    "href": "layouts/avatar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Badge",
-    "href": "inputs/badge.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Icon",
-    "href": "layouts/icon.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Card",
-    "href": "layouts/card.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "Blazor"],
-    "name": "Dock Manager",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-        "exclude": ["Blazor", "WebComponents"],
-        "name": "Using Panes",
-        "href": "layouts/dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Blazor", "WebComponents"],
-        "name": "Embedding Frames",
-        "href": "layouts/dock-manager-embedding-frames.md",
-        "status": ""
-      },
-      {
-        "exclude": ["Angular", "Blazor", "React"],
-        "name": "Desktop Integration",
-        "href": "layouts/dock-manager-electron.md",
-        "status": "NEW"
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular", "React", "WebComponents"],
-    "name": "Dock Manager (Coming Soon)",
-    "href": "layouts/dock-manager.md",
-    "status": "",
-    "items": [
-      {
-	    "exclude": ["Blazor"],
-        "name": "Using Panes",
-        "href": "dock-manager-updating-panes.md",
-        "status": ""
-      },
-      {
-	    "exclude": ["Blazor"],
-        "name": "Embedding Frames",
-        "href": "dock-manager-embedding-frames.md",
-        "status": ""
-      }
-    ]
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Menus",
-    "header": true
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Navbar",
-    "href": "menus/navbar.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular", "React"],
-    "name": "Navigation Drawer",
-    "href": "menus/navigation-drawer.md",
-    "status": "NEW"
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Editors",
-    "header": true
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Multi-Column Combo Box",
-    "href": "editors/multi-column-combobox.md",
-    "status": ""
-  },
-  {
-    "exclude": ["Angular"],
-    "name": "Date Picker",
-    "href": "editors/date-picker.md",
-    "status": "UPDATED"
-  },
-  {
-    "exclude": ["Angular"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
@@ -767,6 +658,115 @@
         "status": ""
       }
     ]
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Layouts",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Avatar",
+    "href": "layouts/avatar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Badge",
+    "href": "inputs/badge.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Icon",
+    "href": "layouts/icon.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Card",
+    "href": "layouts/card.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "Blazor"],
+    "name": "Dock Manager",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+        "exclude": ["Blazor", "WebComponents"],
+        "name": "Using Panes",
+        "href": "layouts/dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Blazor", "WebComponents"],
+        "name": "Embedding Frames",
+        "href": "layouts/dock-manager-embedding-frames.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "Blazor", "React"],
+        "name": "Desktop Integration",
+        "href": "layouts/dock-manager-electron.md",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React", "WebComponents"],
+    "name": "Dock Manager (Coming Soon)",
+    "href": "layouts/dock-manager.md",
+    "status": "",
+    "items": [
+      {
+	    "exclude": ["Blazor"],
+        "name": "Using Panes",
+        "href": "dock-manager-updating-panes.md",
+        "status": ""
+      },
+      {
+	    "exclude": ["Blazor"],
+        "name": "Embedding Frames",
+        "href": "dock-manager-embedding-frames.md",
+        "status": ""
+      }
+    ]
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Menus",
+    "header": true
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Navbar",
+    "href": "menus/navbar.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Navigation Drawer",
+    "href": "menus/navigation-drawer.md",
+    "status": "NEW"
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Editors",
+    "header": true
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Multi-Column Combo Box",
+    "href": "editors/multi-column-combobox.md",
+    "status": ""
+  },
+  {
+    "exclude": ["Angular"],
+    "name": "Date Picker",
+    "href": "editors/date-picker.md",
+    "status": "UPDATED"
   },
   {
     "name": "Frameworks",

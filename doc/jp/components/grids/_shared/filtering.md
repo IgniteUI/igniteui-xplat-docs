@@ -4,8 +4,8 @@ _description: Angular フィルターを使用して、{Platform} {ComponentTitl
 _keywords: filter, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, フィルター, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} フィルタリング
@@ -16,12 +16,9 @@ namespace: Infragistics.Controls
 
 以下のサンプルは、`{ComponentName}` の**クイック フィルタリング** ユーザー エクスペリエンスを示しています。
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-options"
-           github-src="{ComponentSample}/filtering-options"
-           alt="{Platform} {ComponentTitle} フィルタリングの例">
-</code-view>
+`sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} フィルタリングの例"`
+
+
 
 ## 設定
 
@@ -70,6 +67,7 @@ namespace: Infragistics.Controls
 
 [高度なフィルタリング](advanced-filtering.md) を有効にするには、`AllowAdvancedFiltering` 入力プロパティを **true** に設定します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}  [data]="data" [autoGenerate]="true" [allowAdvancedFiltering]="true">
 </{ComponentSelector}>
@@ -552,13 +550,7 @@ constructor() {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-filtering"
-           github-src="{ComponentSample}/custom-filtering"
-           alt="{Platform} {ComponentTitle} カスタム フィルタリングの例">
-</code-view>
-
+`sample="/{ComponentSample}/custom-filtering", height="600", alt="{Platform} {ComponentTitle} カスタム フィルタリングの例"`
 
 ## フィルター セルの再テンプレート化
 
@@ -566,12 +558,9 @@ constructor() {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-template"
-           github-src="{ComponentSample}/filtering-template"
-           alt="{Platform} {ComponentTitle} フィルタリング テンプレートの例">
-</code-view>
+`sample="/{ComponentSample}/filtering-template", height="500", alt="{Platform} {ComponentTitle} フィルタリング テンプレートの例"`
+
+
 
 <!-- end: Angular -->
 
@@ -810,12 +799,9 @@ $custom-input-group: input-group-theme(
 
 ### デモ
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-style"
-           github-src="{ComponentSample}/filtering-style"
-           alt="{Platform} {ComponentTitle} フィルタリング スタイルの例">
-</code-view>
+`sample="/{ComponentSample}/filtering-style", height="500", alt="{Platform} {ComponentTitle} フィルタリング スタイルの例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

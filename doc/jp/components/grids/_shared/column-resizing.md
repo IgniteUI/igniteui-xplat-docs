@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} の列サイズ変更を使用して�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 列のサイズ変更の概要
@@ -14,12 +14,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 列のサイズ変更の例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resizing"
-           github-src="{ComponentSample}/column-resizing"
-           alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
-</code-view>
+`sample="/{ComponentSample}/column-resizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
+
+
 
 **列のサイズ変更**は列レベルで有効化にできます。つまり、`{ComponentName}` にサイズ変更可能な列およびサイズ変更不可の列の両方を含むことが可能です。`Column` の `Resizable` 入力によって制御されます。
 
@@ -417,12 +414,9 @@ constructor() {
 
 このアプローチは、初期化後の自動サイズ変更よりもパフォーマンスが最適化されており、特に多数の列のサイズを自動サイズ設定する必要がある場合に推奨されます。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-auto-sizing"
-           github-src="{ComponentSample}/column-auto-sizing"
-           alt="{Platform} {ComponentTitle} 列のサイズ変更の例">
-</code-view>
+`sample="/{ComponentSample}/column-auto-sizing", height="550", alt="{Platform} {ComponentTitle} 列のサイズ変更の例"`
+
+
 
 <!-- Angular -->
 
@@ -437,8 +431,7 @@ constructor() {
 // @import '~igniteui-angular/lib/core/styles/themes/index';
 ```
 
-最も簡単な方法は、[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、
-`$resize-line-color` パラメーター以外にも多くのパラメータを受け入れます。
+最も簡単な方法は、[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、`$resize-line-color` パラメーター以外にも多くのパラメータを受け入れます。
 
 ``` scss
 $custom-grid-theme: grid-theme(
@@ -460,7 +453,7 @@ $custom-grid-theme: grid-theme(
 ### カラー パレットの定義
 カラーの値をハードコーディングする代わりに、[igx-palette]({environment:sassApiUrl}/index.html#function-igx-palette) および [igx-color]({environment:sassApiUrl}/index.html#function-igx-color) 関数を使用することによってカラーに関してより高い柔軟性を持つことができます。
 
-`Igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
+`igx-palette` は指定した一次色と二次色に基づいてカラーパレットを生成します。
 
 ```scss
 $primary-color: #0288D1;
@@ -521,11 +514,8 @@ $custom-grid-theme: grid-theme(
 
 ### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-resize-styling"
-           github-src="{ComponentSample}/column-resize-styling">
-</code-view>
+`sample="/{ComponentSample}/column-resize-styling", height="550", alt="{Platform} {ComponentTitle} column resize styling"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

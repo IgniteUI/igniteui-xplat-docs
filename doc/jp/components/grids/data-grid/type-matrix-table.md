@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} マトリックス データのバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-matrix-table"
-           alt="{Platform} マトリックス データのバインディングの例"
-           github-src="grids/data-grid/type-matrix-table">
-</code-view>
+`sample="/grids/data-grid/type-matrix-table", height="600", alt="{Platform} マトリックス データのバインディングの例"`
+
+
 
 ## API リファレンス
 

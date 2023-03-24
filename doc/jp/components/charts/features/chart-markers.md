@@ -17,12 +17,9 @@ _language: ja
 
 マーカーのカラーは、以下のサンプルの `MarkerBrushes`プロパティと `MarkerOutlines` プロパティを設定することによっても管理されます。このサンプルでは、ドロップダウンを使用してマーカーと `ChartType` を構成できます。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-options"
-           alt="{Platform} 構成オプションの例"
-           github-src="charts/category-chart/marker-options">
-</code-view>
+`sample="/charts/category-chart/marker-options", height="500", alt="{Platform} 構成オプションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,12 +27,9 @@ _language: ja
 
 以下の例に示すように、マーカー プロパティに加えて、`XamCategoryChart` コントロールで描画されたシリーズの `MarkerTemplate` プロパティに関数を設定することで、独自のマーカーを実装できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-marker-templates"
-           alt="{Platform} チャート マーカーのテンプレート"
-           github-src="charts/category-chart/marker-templates">
-</code-view>
+`sample="/charts/category-chart/marker-templates", height="600", alt="{Platform} チャート マーカーのテンプレート"`
+
+
 
 <div class="divider--half"></div>
 

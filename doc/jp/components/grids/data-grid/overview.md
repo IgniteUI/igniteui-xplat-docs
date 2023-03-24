@@ -24,12 +24,9 @@ _language: ja
 このデモは、グリッドで利用可能な機能のいくつかを実装しています:
 フィルタリング、グループ化、列のピン固定/ピン固定解除、列の再配置、ソート、および集計。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Data Grid の例"
-           github-src="grids/data-grid/overview">
-</code-view>
+`sample="/grids/data-grid/overview", height="600", alt="{Platform} Data Grid の例"`
+
+
 
 <div class="divider--half"></div>
 

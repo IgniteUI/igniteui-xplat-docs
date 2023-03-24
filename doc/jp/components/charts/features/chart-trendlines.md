@@ -17,12 +17,9 @@ _language: ja
 
 次のサンプルは、`QuinticFit` トレンドラインが最初に適用された、2013 年から 2017 年までの Microsoft の株価トレンドを示す `FinancialChart` を示しています。適用されるトレンドラインのタイプを変更できるドロップダウンがあり、可能なすべてのトレンドライン タイプがそのドロップダウン内に一覧表示されます。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-trendlines"
-           alt="{Platform} トレンドラインの例"
-           github-src="charts/financial-chart/trendlines">
-</code-view>
+`sample="/charts/financial-chart/trendlines", height="500", alt="{Platform} トレンドラインの例"`
+
+
 
 <div class="divider--half"></div>
 

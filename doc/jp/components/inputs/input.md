@@ -15,23 +15,17 @@ _language: ja
 
 <!-- React, WebComponents -->
 
-<code-view style="height: 120px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="{Platform} Input の例"
-           github-src="inputs/input/overview">
-</code-view>
+`sample="/inputs/input/overview", height="120", alt="{Platform} Input の例"`
+
+
 
 <!-- end:React, WebComponents -->
 
 <!-- Blazor -->
 
-<code-view style="height: 225px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
-           alt="{Platform} Input の例"
-           github-src="inputs/input/binding">
-</code-view>
+`sample="/inputs/input/binding", height="225", alt="{Platform} Input の例"`
+
+
 
 ## 依存関係
 
@@ -101,34 +95,25 @@ IgrInputModule.register();
 
 `prefix` スロットと `suffix` スロットを使用すると、入力のメイン コンテンツの前後に異なるコンテンツを追加できます。次のサンプルでは、テキスト プレフィックスとアイコン サフィックスを使用して新しい Input フィールドを作成します:
 
-<code-view style="height: 120px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="{Platform} Input Prefix & Suffix の例"
-           github-src="inputs/input/prefix-suffix">
-</code-view>
+`sample="/inputs/input/prefix-suffix", height="120", alt="{Platform} Input Prefix & Suffix の例"`
+
+
 
 ## ヘルパー テキスト
 
 `helper-text` スロットは、入力の下に配置されたヒントを提供します。Phone Input にヘルパー テキストを追加しましょう:
 
-<code-view style="height: 140px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="{Platform} Input ヘルパー テキストの例"
-           github-src="inputs/input/helper-text">
-</code-view>
+`sample="/inputs/input/helper-text", height="140", alt="{Platform} Input ヘルパー テキストの例"`
+
+
 
 ## Input のサイズ設定
 
 `Size` プロパティを使用して、ユーザーが `Input` のサイズを選択できるようにすることができます。これを行うには、すべてのサイズ値を表示するためのラジオ ボタンをいくつか追加します。このようにして、選択されるたびに、Input のサイズを変更します。
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="{Platform} Input サイズ設定の例"
-           github-src="inputs/input/size">
-</code-view>
+`sample="/inputs/input/size", height="320", alt="{Platform} Input サイズ設定の例"`
+
+
 
 上記のサンプルでは、次の属性の使用法を示しています:
 - `required` - 入力を必須としてマークするために使用されます。
@@ -172,12 +157,9 @@ igc-input::part(suffix){
 }
 ```
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="{Platform} Input のスタイル設定"
-           github-src="inputs/input/styling">
-</code-view>
+`sample="/inputs/input/styling", height="150", alt="{Platform} Input のスタイル設定"`
+
+
 
 <div class="divider"></div>
 

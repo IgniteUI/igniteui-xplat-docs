@@ -15,12 +15,9 @@ The {Platform} Radial Area Chart has a shape of a filled polygon that is bound b
 
 You can create this type of chart in `XamDataChart` control by binding your data to `RadialAreaSeries`, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart"
-           github-src="charts/data-chart/radial-area-chart"
-           alt="{Platform} Radial Area Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-area-chart", height="600", alt="{Platform} Radial Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -30,12 +27,9 @@ The Radial Column Chart is visualized by using a collection of rectangles that e
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialColumnSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-column-chart"
-           github-src="charts/data-chart/radial-column-chart"
-           alt="{Platform} Radial Column Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-column-chart", height="600", alt="{Platform} Radial Column Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -45,12 +39,9 @@ The {Platform} Radial Line Chart has renders as a collection of straight lines c
 
 You can create this type of chart in the `XamDataChart` control by binding your data to `RadialLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-line-chart"
-           github-src="charts/data-chart/radial-line-chart"
-           alt="{Platform} Radial Line Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-line-chart", height="600", alt="{Platform} Radial Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -60,12 +51,9 @@ The Radial Pie Chart uses pie slices that extend from the center of chart toward
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RadialPieSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-pie-chart"
-           github-src="charts/data-chart/radial-pie-chart"
-           alt="{Platform} Radial Pie Chart" >
-</code-view>
+`sample="/charts/data-chart/radial-pie-chart", height="600", alt="{Platform} Radial Pie Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -75,12 +63,9 @@ Once our radial chart is created, we may want to make some further styling custo
 
 This example demonstrates how to customize {Platform} Radial Chart.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-radial-area-chart-styling"
-           github-src="charts/data-chart/radial-area-chart-styling"
-           alt="{Platform} Radial Area Chart Styling" >
-</code-view>
+`sample="/charts/data-chart/radial-area-chart-styling", height="600", alt="{Platform} Radial Area Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 

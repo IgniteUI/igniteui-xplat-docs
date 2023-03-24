@@ -126,13 +126,12 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:470px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
+
+<!-- Angular -->
 
 ## Custom Keyboard Navigation
 
@@ -247,11 +246,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 #### Demo
 
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -268,6 +264,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
         (obj) => { obj.target.nativeElement.focus(); });
 ```
 
+<!-- end: Angular -->
+
 <!-- Angular -->
 
 Use the demo below to try out the custom scenarios that we just implemented:
@@ -278,11 +276,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- end: Angular -->
 
@@ -310,11 +305,8 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
 

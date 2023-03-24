@@ -18,12 +18,9 @@ _language: ja
 
 その中で、アコーディオンとその展開パネルを定義する方法を見ることができます。このサンプルは、2 種類の展開動作も示します。切り替えボタンは `SingleExpand` プロパティを設定し、一度に展開する単一ブランチと複数ブランチを切り替えます。
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-overview"
-           alt="{Platform} アコーディオンの例"
-           github-src="layouts/accordion/overview">
-</code-view>
+`sample="/layouts/accordion/overview", height="460", alt="{Platform} アコーディオンの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -125,9 +122,6 @@ constructor() {
 ```
 
 <!-- end: WebComponents -->
-
-
-
 上記で示したように、`SingleExpand` プロパティを使用すると、一度に 1 つまたは複数のパネルを展開できるかどうかを設定できます。
 
 `HideAll` メソッドと `ShowAll` メソッドを使用すると、`Accordion` のすべての `ExpansionPanel` をプログラムでそれぞれ省略したり展開したりできます。
@@ -141,12 +135,9 @@ constructor() {
 
 以下のサンプルは、`ExpansionPanel` の組み込みスロットを使用して、複雑なフィルタリング オプションを実装する方法を示しています。
 
-<code-view style="height: 550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-customization"
-           alt="{Platform} アコーディオンのカスタマイズの例"
-           github-src="layouts/accordion/customization">
-</code-view>
+`sample="/layouts/accordion/customization", height="550", alt="{Platform} アコーディオンのカスタマイズの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -154,12 +145,9 @@ constructor() {
 
 次の {Platform} アコーディオンの例では、この一般的なアプリケーション シナリオにどのように取り組むことができるかを説明するために、複雑な FAQ セクションが作成されています。サンプルでは、ネストされたアコーディオンは、展開パネル内に `Accordion` を追加することによって実現されます。
 
-<code-view style="height: 550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/accordion-nested-scenario"
-           alt="ネストされた {Platform} アコーディオンの例"
-           github-src="layouts/accordion/nested-scenario">
-</code-view>
+`sample="/layouts/accordion/nested-scenario", height="550", alt="{Platform} ネストされた {Platform} アコーディオンの例"`
+
+
 
 <div class="divider--half"></div>
 

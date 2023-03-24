@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid is able to handle thousands of updates 
 ## {Platform} Binding Live Data Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-binding-live-data"
-           alt="{Platform} Binding Live Data Example"
-           github-src="grids/data-grid/binding-live-data">
-</code-view>
+`sample="/grids/data-grid/binding-live-data", height="600", alt="{Platform} Binding Live Data Example"`
+
+
 
 ## API References
 

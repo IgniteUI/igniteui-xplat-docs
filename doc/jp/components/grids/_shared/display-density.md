@@ -4,8 +4,8 @@ _description: {ComponentTitle} コンポーネントに表示密度機能を適�
 _keywords: material density, {Platform}, {ProductName}, Infragistics, マテリアル密度, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 表示密度
@@ -14,26 +14,32 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 表示密度の例
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-layout-display-density"
-           github-src="{ComponentSample}/layout-display-density"
-           alt="{Platform} {ComponentTitle} 表示密度の例">
-</code-view>
+`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} 表示密度の例"`
+
+
 
 ## 使用方法
 
 上記デモで示されるように、`{ComponentName}` は 3 つの密度オプション (**compact、cosy、comfortable**) を提供します。以下のコード スニペットは、`DisplayDensity` を設定する方法を示します。
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} #grid [data]="data" [displayDensity]="'cosy'" >
 </{ComponentSelector}>
 ```
+<!-- Angular -->
 
 ```razor
 <{ComponentSelector} DisplayDensity="DisplayDensity.Cosy" Data=northwindEmployees @ref=grid>
 </{ComponentSelector}>
 ```
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" display-density="Cosy" >
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
 
 または
 

@@ -13,12 +13,9 @@ The {ProductName} Bubble Chart is a type of [Scatter Chart](scatter-chart.md) th
 
 You can create the Bubble Chart in `XamDataChart` control using the `BubbleSeries` and two numeric axes, as shown in the example below.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
-           alt="{Platform} Bubble Chart Example" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="{Platform} Bubble Chart Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -26,12 +23,9 @@ You can create the Bubble Chart in `XamDataChart` control using the `BubbleSerie
 
 You can bind your data to `ItemsSource` property of `BubbleSeries` and map data columns using its `XMemberPath`, `YMemberPath`, `RadiusMemberPath` properties, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-single-source"
-           github-src="charts/data-chart/scatter-bubble-chart-single-source"
-           alt="{Platform} Bubble Chart with Single Series" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-single-source", height="600", alt="{Platform} Bubble Chart with Single Series"`
+
+
 
 <div class="divider--half"></div>
 
@@ -39,12 +33,9 @@ You can bind your data to `ItemsSource` property of `BubbleSeries` and map data 
 
 In {Platform} Bubble Chart, binding multiple data sources works by setting each new data source to `ItemsSource` property of a additional `BubbleSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-multiple-sources"
-           github-src="charts/data-chart/scatter-bubble-chart-multiple-sources"
-           alt="{Platform} Bubble Chart with Multiple Series" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-multiple-sources", height="600", alt="{Platform} Bubble Chart with Multiple Series"`
+
+
 
 <div class="divider--half"></div>
 
@@ -52,12 +43,9 @@ In {Platform} Bubble Chart, binding multiple data sources works by setting each 
 
 In {Platform} Bubble Chart, you can customize shape of bubble markers using `MarkerType` property, their size with `RadiusScale` property, and their appearance using `MarkerBrush`, `MarkerOutline`, `MarkerThickness` properties. In addition, you can also color bubble markers based on a data column using `FillMemberPath` and `FillScale` properties. In this example, usage of above properties is demonstrated.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-scatter-bubble-chart-styling"
-           github-src="charts/data-chart/scatter-bubble-chart-styling"
-           alt="{Platform} Bubble Chart Styling" >
-</code-view>
+`sample="/charts/data-chart/scatter-bubble-chart-styling", height="600", alt="{Platform} Bubble Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 

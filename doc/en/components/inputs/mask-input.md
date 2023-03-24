@@ -11,12 +11,9 @@ The {ProductName} Mask Input is an input field that allows the developer to cont
 
 ### {Platform} Mask Input Example
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-overview"
-           alt="{Platform} Mask Input Overview Example"
-           github-src="inputs/mask-input/overview">
-</code-view>
+`sample="/inputs/mask-input/overview", height="150", alt="{Platform} Mask Input Overview Example"`
+
+
 
 ## Usage
 
@@ -70,12 +67,9 @@ In the example below, we will apply a mask for a phone number with an extension 
 
 After that you should see the following in your browser:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-applying-mask"
-           alt="{Platform} Mask Input Applying Mask Example"
-           github-src="inputs/mask-input/applying-mask">
-</code-view>
+`sample="/inputs/mask-input/applying-mask", height="150", alt="{Platform} Mask Input Applying Mask Example"`
+
+
 
 ### Prompt Character
 
@@ -99,12 +93,9 @@ Developers can also take advantage of the `placeholder` property, which serves t
 
 The `MaskInput` exposes a `valueMode` property that lets you choose between `raw` and `withFormatting` options to configure which input value (formatted or raw) to bind in your form when a specific mask is applied. By default, `valueMode` is set to *raw*. Try it for yourself in the example below:
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/mask-input-value-modes"
-           alt="{Platform} Mask Input Value Modes Example"
-           github-src="inputs/mask-input/value-modes">
-</code-view>
+`sample="/inputs/mask-input/value-modes", height="150", alt="{Platform} Mask Input Value Modes Example"`
+
+
 
 ## Styling
 

@@ -3,6 +3,7 @@ title: {Platform} Data Grid コンポーネント (Data Table) - インフラジ
 _description: {ProductName} を使用して、超高速でレスポンシブな {Platform} データ グリッドとテーブルを作成します。編集、フィルタリング、データ バインディングなどをサポートします。今すぐお試しください。
 _keywords: {Platform}, {ProductName}, Infragistics, Getting Started, Grid, 作業の開始, グリッド, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.Grid', 'Infragistics.Controls.ColumnPipeArgs']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -49,8 +50,8 @@ _language: ja
                     src="../../images/general/landing-grid-page.png"
                     data-src="../../images/general/landing-grid-page.png"
                     data-srcset="../../images/general/landing-grid-page.png 480w, ../../images/general/landing-grid-page.png 768w, ../../images/general/landing-grid-page.png 1100w"
-                    alt="Grid"
-                    title="Grid">
+                    alt="{Platform} Data Grid"
+                    title="{Platform} Data Grid">
             </div>
         </div>
     </article>
@@ -60,12 +61,9 @@ _language: ja
 
 この {ProductName} Grid の例では、ユーザーが基本スタイルと Excel スタイルの両方のフィルタリング、ライブ データのソート、およびグリッド集計とセル テンプレートの使用を実行する方法を確認できます。デモには、1 ページあたり 10 項目を表示するように設定されたページングも含まれています。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid の例">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -1009,6 +1007,7 @@ export class MyComponent implements OnInit {
 
 **注**: リモート データにバインドする場合、グリッドの `AutoGenerate` プロパティは使用しないことをお勧めします。データを検証して適切な列を生成するためにデータが利用可能である必要があります。リモート サービスの応答が完了するまでデータが利用できないため、グリッドはエラーを発生します。リモート サービスへバインド時に `AutoGenerate` を使用する機能は今後追加予定です。
 
+
 <!-- end: Angular, WebComponents -->
 ## 複雑なデータ バインディング
 
@@ -1074,6 +1073,7 @@ public class AminoWeight
 <!-- Angular -->
 
 詳しくは、以下のサンプルを参照してください。このバインディングのタイプは、グリッドに期待されるすべてのデフォルト機能をサポートします。
+
 つまり、追加の構成を行わなくても、すべてのソートおよびフィルタリング操作がそのまま使用できます。トランザクションの有無に関係なく、グループ化と編集の操作、およびバインドされた列のセルをテンプレート化する機能についても同様です。
 
 >[!WARNING]
@@ -1081,11 +1081,8 @@ public class AminoWeight
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
-           github-src="{GridSample}/binding-nested-data-2">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+
 
 <!-- end: Angular -->
 
@@ -1402,11 +1399,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 以下は、この設定の結果です。
 
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
-           github-src="{GridSample}/binding-nested-data-1">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+
 
 ### フラット データの操作の概要
 
@@ -1653,11 +1647,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 前のセクションのコード スニペットを使用すると、次の `Grid` の例になります。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
-           github-src="{GridSample}/binding-composite-data">
-</code-view>
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+
 
 ## キーボード ナビゲーション
 
@@ -1678,14 +1669,14 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 ## 状態保持
 
-新しい組み込み済みの [GridState](grid/state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
+新しい組み込み済みの [GridState](state-persistence.md) ディレクティブ を使用することで、パーシステンス フレームワークの実装がより簡単になりました。
 
 <!-- end: Angular -->
 
 <!-- The sizing topic is still not available thus the Sizing section is commented out. -->
 <!-- ## Sizing
 
-See the [Grid Sizing](grid/sizing.md) topic. -->
+See the [Grid Sizing](sizing.md) topic. -->
 
 
 <!-- Angular -->
@@ -1773,6 +1764,7 @@ platformBrowserDynamic()
 <!-- Angular -->
 
 ## テーマの依存関係
+
 * **Icon Theme**
 * **InputGroup Theme**
 * **Chip Theme**

@@ -11,12 +11,9 @@ _language: ja
 
 ## {Platform} Linear Progress の例
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-simple"
-           alt="{Platform}  Linear Progress の例"
-           github-src="inputs/linear-progress-indicator/simple">
-</code-view>
+`sample="/inputs/linear-progress-indicator/simple", height="80", alt="{Platform} Linear Progress の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -107,12 +104,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 `striped` プロパティを使用して、インジケーターをストライプにすることができます:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-types"
-           alt="{Platform}  Linear Progress Striped の例"
-           github-src="inputs/linear-progress-indicator/types">
-</code-view>
+`sample="/inputs/linear-progress-indicator/types", height="200", alt="{Platform} Linear Progress Striped の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -146,12 +140,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 次のサンプルは、上記の構成を示しています:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-striped"
-           alt="{Platform} Linear Progress Text の例"
-           github-src="inputs/linear-progress-indicator/striped">
-</code-view>
+`sample="/inputs/linear-progress-indicator/striped", height="200", alt="{Platform} Linear Progress Text の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -159,12 +150,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 ボタンなどの外部コントロールを使用して進行状況インジケーターの値を動的に変更できます。これを実現するには、値をクラス プロパティにバインドします。
 
-<code-view style="height:200px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-dynamic"
-           alt="{Platform} Linear Progress Dynamic の例"
-           github-src="inputs/linear-progress-indicator/dynamic">
-</code-view>
+`sample="/inputs/linear-progress-indicator/dynamic", height="200", alt="{Platform} Linear Progress Dynamic の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -172,12 +160,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbLinearProgressModule));
 
 Linear Progress Indicator コンポーネントは、その内部要素のほとんどすべての CSS パーツを公開します。
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/linear-progress-indicator-styling"
-           alt="{Platform} Linear Progress のスタイル設定"
-           github-src="inputs/linear-progress-indicator/styling">
-</code-view>
+`sample="/inputs/linear-progress-indicator/styling", height="80", alt="{Platform} Linear Progress のスタイル設定"`
+
+
 
 次の表に、Linear Progress によって公開されるすべての CSS パーツを示します:
 
@@ -200,6 +185,7 @@ Linear Progress Indicator コンポーネントは、その内部要素のほと
 | bottom        | 進行状況ラベルの配置。 |
 | bottom-start  | 進行状況ラベルの配置。 |
 | bottom-end    | 進行状況ラベルの配置。 |
+
 
 <div class="divider"></div>
 

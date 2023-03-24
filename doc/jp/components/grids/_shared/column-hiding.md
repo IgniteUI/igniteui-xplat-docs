@@ -4,8 +4,8 @@ _description: ユーザーが Ignite Material UI テーブルの UI で列の表
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の列非表示
@@ -18,12 +18,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
-           github-src="{ComponentSample}/column-hiding-toolbar"
-           alt="{Platform} {ComponentTitle} 列非表示の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-toolbar", height="600", alt="{Platform} {ComponentTitle} 列非表示の例"`
+
+
 
 ## {ComponentTitle} のセットアップ
 
@@ -83,6 +80,7 @@ namespace: Infragistics.Controls
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -351,12 +349,9 @@ export class AppModule {}
 
 列非表示 UI コンポーネントは以下のようになります。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
-           github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} カスタム列非表示の例" >
-</code-view>
+`sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} カスタム列非表示の例"`
+
+
 
 ## スタイル設定
 
@@ -499,12 +494,9 @@ $custom-button: button-theme(
 
 ### デモ
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
-            github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例"`
+
+
 
 <!-- end: Angular -->
 

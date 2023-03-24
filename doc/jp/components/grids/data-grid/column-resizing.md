@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} グリッドの列サイズ変更の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-resizing"
-           alt="{Platform} グリッドの列サイズ変更の例"
-           github-src="grids/data-grid/column-resizing">
-</code-view>
+`sample="/grids/data-grid/column-resizing", height="600", alt="{Platform} グリッドの列サイズ変更の例"`
+
+
 
 <div class="divider--half"></div>
 

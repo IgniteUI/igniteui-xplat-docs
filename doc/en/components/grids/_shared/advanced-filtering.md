@@ -14,13 +14,7 @@ The Advanced filtering provides a dialog which allows the creation of groups wit
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
-           alt="{Platform} {ComponentTitle} Advanced Filtering Example"
-           github-src="{ComponentSample}/advanced-filtering-options">
-</code-view>
-
+`sample="/{ComponentSample}/advanced-filtering-options", height="530", alt="{Platform} {ComponentTitle} Advanced Filtering Example"`
 
 ## Interaction
 
@@ -141,11 +135,8 @@ As you see in the demo above, the advanced filtering dialog is hosted in an over
 
 ### Demo
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-advanced-filtering"
-           github-src="{ComponentSample}/external-advanced-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} external advanced filtering"`
+
 
 ### Usage
 
@@ -464,11 +455,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
-           github-src="{ComponentSample}/advanced-filtering-style">
-</code-view>
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.

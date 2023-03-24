@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} ページング - インフラジスティッ
 _description: {Platform} ページネーションを構成し、Ignite UI によって {Platform} テーブルにカスタム ページを作成し、さまざまなイベントで要求されたページのデータを取得します。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, インフラジスティックス
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} ページネーションの概要
@@ -15,12 +15,9 @@ namespace: Infragistics.Controls
 
 次の例は `{ComponentName}` のページネーションを表し、ページごとの項目のオプションの使用法とページングを有効にする方法を公開します。ユーザーは、[最後のページに移動] ボタンと [最初のページに移動] ボタンを使用して `{ComponentName}` ページをすばやく移動することもできます。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-basic"
-           github-src="{ComponentSample}/row-paging-basic"
-           alt="{Platform} {ComponentTitle} ページネーションの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-basic", height="550", alt="{Platform} {ComponentTitle} ページネーションの例"`
+
+
 
 <!-- Angular -->
 
@@ -171,12 +168,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### ページネーター コンポーネントのデモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-options"
-           github-src="{ComponentSample}/row-paging-options"
-           alt="{Platform} {ComponentTitle} 再利用可能なページネーターの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-options", height="550", alt="{Platform} {ComponentTitle} 再利用可能なページネーターの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -371,12 +365,9 @@ $dark-button: button-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-paging-style"
-           github-src="{ComponentSample}/row-paging-style"
-           alt="{Platform} {ComponentTitle} ページング スタイルの例">
-</code-view>
+`sample="/{ComponentSample}/row-paging-style", height="550", alt="{Platform} {ComponentTitle} ページング スタイルの例"`
+
+
 
 <div class="divider--half"></div>
 

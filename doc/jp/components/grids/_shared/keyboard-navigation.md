@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} キーボード ナビゲーション - {Prod
 _description: {ProductName} で {ComponentTitle} キーボード ナビゲーションを使用する方法について説明します。キーボード インタラクションでは、セル、行、列を簡単に移動できます。
 _keywords: keyboard navigation, {ProductName}, infragistics, キーボード インタラクション, インフラジスティックス
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} キーボード ナビゲーション
@@ -53,8 +53,8 @@ namespace: Infragistics.Controls
  - <kbd>Shift + Alt + 左矢印</kbd> - 列がグループ化可能としてマークされている場合、列をグループ化します。
  <!-- ComponentEnd:Grid -->
  - <kbd>Shift + Alt + 右矢印</kbd> - 列がグループ化可能としてマークされている場合、列のグループ化を解除します。
- - <kbd>Alt +左矢印</kbd> または <kbd>Alt +上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
- - <kbd>Alt +右矢印</kbd> または <kbd>Alt +下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
+ - <kbd>Alt +左矢印</kbd> または <kbd>Alt + 上矢印</kbd> - 列が縮小されていない場合、列グループ ヘッダーを縮小します。
+ - <kbd>Alt +右矢印</kbd> または <kbd>Alt + 下矢印</kbd> - 列がまだ展開されていない場合、列グループヘッダーを展開します。
 
 ## 本体ナビゲーション
 
@@ -127,13 +127,12 @@ namespace: Infragistics.Controls
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:470px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
+
+<!-- Angular -->
 
 ## カスタム キーボード ナビゲーション
 
@@ -248,11 +247,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 #### デモ
 
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -269,6 +265,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
         (obj) => { obj.target.nativeElement.focus(); });
 ```
 
+<!-- end: Angular -->
+
 <!-- Angular -->
 
 実装したカスタム シナリオを試すには以下のデモを使用してください。
@@ -279,11 +277,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-custom-navigation"
-           github-src="{ComponentSample}/keyboard-custom-navigation">
-</code-view>
+`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
+
 
 <!-- end: Angular -->
 
@@ -311,11 +306,8 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-keyboard-navigation-guide"
-           github-src="{ComponentSample}/keyboard-navigation-guide">
-</code-view>
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+
 
 <!-- end: Angular -->
 

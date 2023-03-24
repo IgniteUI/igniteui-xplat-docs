@@ -8,6 +8,13 @@ _canonicalLink: {CanonicalLinkToGridColumnMoving}
 _language: ja
 ---
 
+<!-- Blazor, WebComponents -->
+
+> [!Note]
+このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
+
+<!-- end: Blazor, WebComponents -->
+
 # {Platform} グリッド列移動の概要
 
 {ProductName} Data Grid は列を移動する機能をサポートしているので、表示されている列の順序に関して列の表示方法を柔軟に選択できます。
@@ -15,12 +22,9 @@ _language: ja
 ## {Platform} グリッド列移動の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-moving"
-           alt="{Platform} グリッド列移動の例"
-           github-src="grids/data-grid/column-moving">
-</code-view>
+`sample="/grids/data-grid/column-moving", height="600", alt="{Platform} グリッド列移動の例"`
+
+
 
 <div class="divider--half"></div>
 

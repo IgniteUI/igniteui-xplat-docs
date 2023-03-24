@@ -17,12 +17,9 @@ The {ProductName} `{ComponentName}` has a built-in column hiding UI, which can b
 
 ## {Platform} {ComponentTitle} Column Hiding Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
-           github-src="{ComponentSample}/column-hiding-toolbar"
-           alt="{Platform} {ComponentTitle} Column Hiding Example">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-toolbar", height="600", alt="{Platform} {ComponentTitle} Column Hiding Example"`
+
+
 
 ## {ComponentTitle} Setup
 
@@ -351,12 +348,9 @@ We can easily prevent the user from being able to hide columns through the colum
 
 If all went well, this is how our column hiding UI component should look like:
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
-           github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} Custom Column Hiding Example" >
-</code-view>
+`sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} Custom Column Hiding Example"`
+
+
 
 ## Styling
 
@@ -499,12 +493,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
-            github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentTitle} Column Hiding Styling Example">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} Column Hiding Styling Example"`
+
+
 
 <!-- end: Angular -->
 

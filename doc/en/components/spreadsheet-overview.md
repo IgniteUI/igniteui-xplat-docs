@@ -10,12 +10,9 @@ The {Platform} Spreadsheet  (Excel viewer) component is lightweight, feature-ric
 
 ## {Platform} Spreadsheet Example
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="{Platform} Spreadsheet Example"
-           github-src="excel/spreadsheet/overview">
-</code-view>
+`sample="/excel/spreadsheet/overview", height="500", alt="{Platform} Spreadsheet Example"`
+
+
 
 <div class="divider--half"></div>
 

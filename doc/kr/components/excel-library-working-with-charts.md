@@ -13,11 +13,8 @@ The Infragistics Excel Engine's `WorksheetChart` functionality allows you to add
 ## Demo
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-charts"
-           github-src="excel/excel-library/working-with-charts">
-</code-view>
+`sample="/excel/excel-library/working-with-charts", height="500", alt="{Platform} excel library working with charts"`
+
 
 <div class="divider--half"></div>
 

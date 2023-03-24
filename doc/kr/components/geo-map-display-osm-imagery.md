@@ -15,10 +15,7 @@ By the default, the {ProductName} map component displays geographic imagery from
 ## Demo
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-osm-imagery"  >
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="400", alt="{Platform} geo map display osm imagery"`
 
 <div class="divider--half"></div>
 

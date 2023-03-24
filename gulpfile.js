@@ -404,6 +404,7 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/charts/features/*.md');
     // excludedTopics.push('doc/**/charts/types/*.md');
     // excludedTopics.push('doc/**/charts/chart-features.md');
+    // excludedTopics.push('doc/**/charts/chart-api.md');
     // excludedTopics.push('doc/**/charts/chart-overview.md');
     // excludedTopics.push('doc/**/editors/**/*.md');
     // excludedTopics.push('doc/**/inputs/**/*.md');
@@ -423,7 +424,7 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
 
-    log("excludedTopics: " + excludedTopics.length);
+    log("excludedTopicPatterns: " + excludedTopics.length);
 
     let platformName = PLAT;
     if (platformName === "Angular") {
@@ -444,7 +445,7 @@ function buildTOC(cb) {
         fileCallback(null, file);
     }))
     .on("end", () => {
-        log("excludedFiles: " + excludedFiles.length);
+        log("excludedTopicFiles: " + excludedFiles.length);
 
         let platformName = PLAT;
         ensureEnvironment();
@@ -1000,17 +1001,36 @@ function fixMarkdownTables(cb) {
 }
 exports.fixMarkdownTables = fixMarkdownTables;
 
-function getSampleLocations(fileLines, filePath) {
-    var topicSamples = [];
 
+function getSampleAltText(str) {
+    str = str.replace("Sample}", "Title}");
+    str = str.split('-').join(" ");
+    str = str.split('/>').join("");
+    str = str.split('>').join("");
+    str = str.split('<').join("");
+    str = str.split('"').join("");
+    str = str.split('  ').join(" ");
+    str = str.replace('Angular', "");
+    str = str.trim();
+    if (str.indexOf("{Platform}") !== 0) {
+        str = "{Platform} " + str;
+    }
+    return str;
+}
+
+function getSampleSections(fileLines, filePath) {
+    var sampleSections = [];
+
+    var sampleCount = 0;
     var sample = undefined;
     for (let i = 0; i < fileLines.length; i++) {
         var line = fileLines[i];
-        // var cvStart = fileContent.indexOf("<code-view");
-        // var cvEnds  = fileContent.indexOf("</code-view>");
-
         if (line.indexOf("<code-view") >= 0) {
+            sampleCount++;
             sample = {};
+
+            sample.file = filePath + ":" + i;
+
             sample.lineStart = i;
             sample.lineEnd = -1;
             sample.lines = [];
@@ -1019,7 +1039,10 @@ function getSampleLocations(fileLines, filePath) {
             sample.height = sample.height.split('"').join("");
             sample.height = sample.height.split(':').join("");
             sample.height = sample.height.split(' ').join("");
+            sample.height = sample.height.split(';').join("");
             sample.height = sample.height.split('px').join("");
+            sample.height = sample.height.replace('<!--', "");
+            sample.height = sample.height.trim();
         }
         else if (line.indexOf("</code-view>") >= 0) {
             if (sample === undefined ) {
@@ -1031,59 +1054,97 @@ function getSampleLocations(fileLines, filePath) {
             if (sample.alt === undefined && sample.path) {
                 var parts = sample.path.split("/");
                 if (parts.length === 4) {
-                    sample.alt4 = "{Platform} " + parts[2] + " " +  parts[3];
-
+                    sample.alt = "{Platform} " + parts[2] + " " +  parts[3];
                 } else if (parts.length === 3) {
-                    sample.alt3 = "{Platform} " + parts[1] + " " +  parts[2];
-
+                    sample.alt = "{Platform} " + parts[1] + " " +  parts[2];
                 } else if (parts.length === 2) {
-                    sample.alt2 = "{Platform} " + parts[1];
-
+                    sample.alt = "{Platform} " + parts[1];
                 } else {
-                    sample.altE = "{Platform} " + sample.path;
+                    sample.alt = "{Platform} " + sample.path;
                 }
-
-                if (sample.alt3) {
-                    sample.alt3 = sample.alt3.replace("Sample}", "Title}");
-                    sample.alt3 = sample.alt3.split('-').join(" ");
-                    sample.alt3 = sample.alt3.split('/>').join("");
-                    sample.alt3 = sample.alt3.split('>').join("");
-                    sample.alt3 = sample.alt3.split('<').join("");
-                    sample.alt3 = sample.alt3.split('"').join("");
-                    sample.alt3 = sample.alt3.trim();
-                }
+                sample.alt = getSampleAltText(sample.alt);
             }
 
-            topicSamples.push(sample);
-            sample = undefined;
+            // sample.code = '` "sample": "' + sample.path + '", "height": ' + sample.height + ', "alt": "' + sample.alt + '" ```'
+            sample.code = '`sample="' + sample.path + '", height="' + sample.height + '", alt="' + sample.alt + '"`'
 
+            sampleSections.push(sample);
+            sample = undefined;
         }
         else if (sample) {
             sample.lines.push(line);
             if (line.indexOf("iframe-src=") >= 0) {
+                var components = ['data-chart', 'pie-chart', 'doughnut-chart', 'financial-chart',
+                    'category-chart', 'sparkline', 'tree-map', 'zoomslider', 'date-picker', 'multi-column-combobox',
+                    'excel-library', 'spreadsheet', 'bullet-graph', 'linear-gauge',
+                    'tree-map', 'radial-gauge', 'data-grid', 'grid', 'list', 'combo', 'pivot-grid', 'tree-grid', 'tree', 'geo-map',
+                    'badge','button','checkbox','chip', 'circular-progress-indicator',
+                    'date-time-input','dropdown','form','icon-button','input',
+                    'linear-progress-indicator','mask-input',
+                    'radio','rating','ripple','select','slider','switches',
+                    'accordion','avatar','card','dock-manager','expansion-panel','icon',
+                    'stepper','tabs','nav-bar','nav-drawer','dialog','snackbar','toast','calendar',
+                    ,'{ComponentSample}',
+                ];
+
                 sample.path = line.replace("iframe-src=", "");
+
+                // console.log(sample.path);
+
+                var altLocation = sample.path.indexOf(' alt=')
+                if (altLocation > 0) {
+                    sample.path = sample.path.substring(0, altLocation)
+                }
+
+                sample.path = sample.path.replace('>', "");
                 sample.path = sample.path.replace('{environment:dvDemosBaseUrl}', "");
                 sample.path = sample.path.replace('{environment:demosBaseUrl}', "");
+                sample.path = sample.path.replace('Sample}-', "Sample}/");
                 sample.path = sample.path.split('"').join("");
                 sample.path = sample.path.split(' ').join("");
                 sample.path = sample.path.trim();
-                sample.path = sample.path.replace('-', "/");
+
+                for (const name of components) {
+                    if (sample.path.indexOf('/'+name+'-') > 0) {
+                        sample.path = sample.path.replace('/'+name+'-', '/'+name+'/');
+                        break;
+                    }
+                }
+
+                var sampleRouteParts = sample.path.split('/');
+                var samplePathWithVars = sample.path.indexOf("Sample}") >= 0;
+                if (samplePathWithVars) {
+                    if (sampleRouteParts.length !== 3 && sampleRouteParts.length !== 4) {
+                        throw new Error("Invalid sample path: " + sample.path + " L3=" + sampleRouteParts.length + " " + sample.file);
+                    }
+                } else if (sampleRouteParts.length !== 4) {
+                    throw new Error("Invalid sample path: " + sample.path + " L4=" + sampleRouteParts.length + " " + sample.file);
+                }
             }
 
             if (line.indexOf("alt=") >= 0) {
-                sample.alt = line.replace("alt=", "");
-                sample.alt = sample.alt.split('/>').join("");
-                sample.alt = sample.alt.split('>').join("");
-                sample.alt = sample.alt.split('<').join("");
-                sample.alt = sample.alt.split('"').join("");
-                sample.alt = sample.alt.trim();
+                var altLocation = line.indexOf(' alt=')
+                if (altLocation > 0) {
+                    sample.alt = line.substring(altLocation).replace("alt=", "")
+                } else {
+                    sample.alt = line.replace("alt=", "");
+                }
+                sample.alt = getSampleAltText(sample.alt);
             }
         }
 
     }
-    return topicSamples;
+
+    if (sampleSections.length !== sampleCount) {
+        throw new Error("Failed to get all sample sections in " + filePath);
+    }
+    return sampleSections;
 }
 
+// replacing <code-view/> with incline code in markdown files
+// which will be converted to <code-view/> when transforming markdown files
+// this way, defining a sample requires only 3 simple settings instead of 5 complex settings:
+// `sample="/charts/data-chart/overview", height=600, alt="{Platform} Chart Overview" `
 function simplifySamples(cb) {
 
     console.log('simplifySamples .md files ...');
@@ -1091,52 +1152,70 @@ function simplifySamples(cb) {
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
+    // 'doc/en/**/charts/chart-overview.md',
+    // 'doc/en/**/notifications/**/*.md',
+    // 'doc/en/**/layouts/**/*.md',
     // 'doc/en/**/scheduling/calendar.md',
+    // 'doc/**/inputs/**/*.md',
+    // 'doc/en/**/grids/**/*.md',
+    // 'doc/en/**/charts/**/*.md',
+    // 'doc/en/**/charts/types/treemap-chart.md',
+    // 'doc/**/grids/grids.md',
+    // 'doc/en/**/general*.md',
     'doc/en/**/*.md',
-    // 'doc/jp/**/*.md',
-    // 'doc/kr/**/*.md',
+    'doc/jp/**/*.md',
+    'doc/kr/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('  verifying: ' + filePath);
+        // console.log('simplifySamples: ' + filePath);
 
-        var lines = fileContent.split("\r\n");
-        var samples = getSampleLocations(lines, filePath);
+        var fileLines = fileContent.split("\r\n");
+        var samples = getSampleSections(fileLines, filePath);
         // console.log(samples);
 
-        for (const sample of samples) {
-            // if (!sample.alt && !sample.alt2) {
-            //     console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
-            // }
+        if (samples.length > 0) {
+            //samples.sort((a,b) => a.path - b.path);
+            for (const sample of samples) {
 
-            if (sample.alt3) {
-                console.log(filePath + ":" + sample.lineStart + " - " + sample.alt3)
+                if (sample.path.indexOf('=') > 0) {
+                    // console.log(" " + sample.path + " \t\t\t" + sample.file)
+                }
+                // console.log(" " + sample.path + " ")
+                console.log(padRight(sample.height, 4) + " " + padLeft(sample.path, 60) + "\t\t" + sample.alt)
+                // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
+                // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
+
+                // setting new code-viewer, e.g. `sample="/charts/data-chart/overview", height=600, alt="{Platform} Chart Overview" `
+                fileLines[sample.lineStart] = sample.code;
+
+                for (let i = sample.lineStart + 1; i <= sample.lineEnd; i++) {
+                    fileLines[i] = ""; // removing previous code-viewer
+                }
             }
-
-            // console.log(" " + sample.height + " " + sample.path + " " + sample.alt)
-            // console.log(sample.lines[0] + " " + sample.height + " " + sample.path + " ")
+            fileContent = fileLines.join("\r\n");
+            // fileLines = fileContent.split("\r\n\r\n\r\n");
+            // fileContent = fileLines.join("\r\n");
+            fileLines = fileContent.split("\r\n\r\n\r\n\r\n");
+            fileContent = fileLines.join("\r\n");
+            fs.writeFileSync(filePath, fileContent);
         }
-// ```json
-// { "height": "300", "sample": "scheduling/calendar/overview", "alt": "{Platform} Calendar Example" }
-// ```
-        // fs.writeFileSync(filePath, fileContent);
+
         filesCount++;
         fileCallback(null, file);
     }))
     .on("end", () => {
-
         if (errorsCount > 0) {
             var msg = "Correct above " + errorsCount + " errors in markdown files!";
             if (cb) cb(new Error(msg)); else console.log(msg);
             // if (cb) cb(msg); else console.log(msg);
         } else {
-            var msg = 'verifying .md files ... done - checked ' + filesCount + " files";
+            var msg = 'simplifySamples .md files ... done - checked ' + filesCount + " files";
             console.log(msg);
             if (cb) cb();
         }
-        // if (cb) cb();
     })
     .on("error", (err) => {
         console.log("Error in simplifySamples()");
@@ -1144,3 +1223,227 @@ function simplifySamples(cb) {
     });
 }
 exports.simplifySamples = simplifySamples;
+
+function padLeft(num, width) {
+    let str = num.toString();
+    return str.length >= width ? str : str + (new Array(width - str.length + 1).join(' '));
+}
+
+function padRight(num, width) {
+    let str = num.toString();
+    return str.length >= width ? str : new Array(width - str.length + 1).join(' ') + str;
+}
+
+function logSampleLinks(cb, platform, server) {
+
+    console.log('logSampleLinks .md files ...');
+    var sampleLinks = [];
+    var sampleHost = ""
+
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (server === "staging") {
+        sampleHost = "https://staging.infragistics.com";
+    } else if (server === "production" || server === "prod") {
+        sampleHost = "https://infragistics.com";
+    } else {
+        sampleHost = "https://localhost:4200";
+    }
+    // var sampleHost = "https://localhost:4200/webcomponents-demos/samples";
+    // var sampleHost = "https://staging.infragistics.com/webcomponents-demos/samples";
+    if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+    if (platform === "WC" || platform === "WebComponents") {
+        platform = "WebComponents"
+        sampleHost += "/webcomponents-demos/samples";
+    } else if (platform === "Blazor") {
+        sampleHost += "/blazor-client/samples";
+    } else if (platform === "Angular") {
+        sampleHost += "/angular-demos-dv/samples";
+    } else if (platform === "React") {
+        sampleHost += "/react-demos/samples";
+    }
+
+    var components = [
+        "grids/grid",
+        "grids/tree-grid",
+    //  "grids/pivot-grid",
+    //  "grids/hierarchical-grid"
+    ];
+
+    gulp.src([
+    // 'doc/en/**/charts/chart-overview.md',
+    // 'doc/en/**/notifications/**/*.md',
+    // 'doc/en/**/layouts/**/*.md',
+    // 'doc/en/**/scheduling/calendar.md',
+    // 'doc/**/inputs/**/*.md',
+    // 'doc/en/**/grids/**/*.md',
+     'doc/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\doc\\' + filePath.split('doc\\')[1];
+        // console.log('logSampleLinks: ' + filePath);
+
+        var fileLines = fileContent.split("\r\n");
+        for (const line of fileLines) {
+            if (line.indexOf("sample=") >= 0) {
+                var parts = line.split(',');
+                var link = parts[0].replace('sample="', '');
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('`', '');
+                link = link.replace('{PivotGridSample}', 'grids/tree-grid');
+                link = link.replace('{TreeGridSample}', 'grids/tree-grid');
+                link = link.replace('{GridSample}', 'grids/grid');
+                link = sampleHost + link;
+
+                if (link.indexOf("{ComponentSample}") >= 0) {
+                    for (const c of components) {
+                        var compLink = link.replace('{ComponentSample}', c);
+                        if (sampleLinks.indexOf(compLink) < 0) {
+                            sampleLinks.push(compLink);
+                        }
+                    }
+                } else if (sampleLinks.indexOf(link) < 0) {
+                    sampleLinks.push(link);
+                }
+            }
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        sampleLinks.sort();
+        for (const link of sampleLinks) {
+            console.log(link);
+        }
+        if (cb) cb();
+    })
+}
+
+exports.logSampleLinks = logSampleLinks;
+// use these gulp commands to log xplat samples as links to samples hosted staging:
+// gulp logSampleLinks --sever=staging --plat=Blazor
+// gulp logSampleLinks --sever=staging --plat=Angular
+// gulp logSampleLinks --sever=staging --plat=React
+// gulp logSampleLinks --sever=staging --plat=WC
+// or these gulp commands to log xplat samples as links to samples hosted locally:
+// gulp logSampleLinksAngular
+// gulp logSampleLinksBlazor
+// gulp logSampleLinksReact
+// gulp logSampleLinksWC
+exports.logSampleLinksAngular = function log(cb) { logSampleLinks(cb, "Angular"); }
+exports.logSampleLinksBlazor = function log(cb) { logSampleLinks(cb, "Blazor"); }
+exports.logSampleLinksReact = function log(cb) { logSampleLinks(cb, "React"); }
+exports.logSampleLinksWC = function log(cb) { logSampleLinks(cb, "WC"); };
+
+
+function extractSampleLinks(cb, platform, server) {
+
+    console.log('extractSampleLinks ./dist/**/end/*.md files ...');
+    var sampleLinks = [];
+    var sampleHost = ""
+    var sampleBrowser = "";
+
+    if (server === undefined) server = argv.server !== undefined ? argv.server : "local";
+    if (platform === undefined) platform = argv.plat !== undefined ? argv.plat : "WC";
+
+    if (platform === "WC" || platform === "WebComponents" || platform === "wc") {
+        platform = "WebComponents";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/webcomponents-demos/samples";
+    } else if (platform === "Blazor" || platform === "blazor") {
+        platform = "Blazor";
+        sampleHost = "https://localhost:44317";
+        sampleBrowser = "/blazor-client/samples";
+    } else if (platform === "Angular" || platform === "Angular" || platform === "angular") {
+        platform = "Angular";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/angular-demos-dv/samples";
+    } else if (platform === "React" || platform === "react") {
+        platform = "React";
+        sampleHost = "http://localhost:4200";
+        sampleBrowser = "/react-demos/samples";
+    } else {
+        console.log("UNKNOWN platform: " + platform);
+        cb();
+    }
+    var sourceDir = 'dist/' + platform + '/en';
+
+    if (!fs.existsSync(sourceDir)) {
+        console.log("--------------------------------------------------------------------");
+        console.log("ERROR: Cannot find directory: " + sourceDir);
+        console.log("HINT:  You must run this command first: npm run build" + platform);
+        console.log("--------------------------------------------------------------------");
+        cb();
+    }
+
+    gulp.src([
+    //  'dist/' + platform + '/en/components/**/charts/chart-overview.md',
+    //  'dist/' + platform + '/en/**/notifications/**/*.md',
+    // 'dist/' + platform + '/en/**/grids/grids.md',
+    'dist/' + platform + '/en/**/*.md',
+    ])
+    .pipe(es.map(function(file, fileCallback) {
+        var fileContent = file.contents.toString();
+        var filePath = file.dirname + "\\" + file.basename
+        filePath = '.\\dist\\' + filePath.split('dist\\')[1];
+        //console.log('extractSampleLinks: ' + filePath);
+
+        var fileLines = fileContent.split("\n");
+
+        for (const line of fileLines) {
+            if (line.indexOf('iframe-src="') >= 0) {
+                var link = line.replace('iframe-src="', '');
+                link = link.trim();
+                link = link.replace('"', '');
+                link = link.replace('`', '');
+                link = link.replace('/blazor-client', '');
+                link = link.replace('{environment:dvDemosBaseUrl}/', 'http://localhost:4200/');
+                link = link.replace(sampleHost, sampleHost + sampleBrowser);
+
+                if (server === "staging") {
+                    link = link.replace(sampleHost, "http://staging.infragistics.com");
+                } else if (server === "production" || server === "prod") {
+                    link = link.replace(sampleHost, "http://infragistics.com");
+                }
+
+                link = link.replace('http://', 'https://');
+
+                if (sampleLinks.indexOf(link) < 0) {
+                    sampleLinks.push(link);
+                }
+            }
+        }
+        fileCallback(null, file);
+    }))
+    .on("end", () => {
+        sampleLinks.sort();
+      //  for (const link of sampleLinks) {
+      //     console.log(link);
+      // }
+      //  console.log(sampleLinks[0])
+        //var outputPath = "./dist/" + platform + "/en/samples.json";
+        platform =  platform.replace("WebComponents", "wc");
+        var outputPath = "samples-" + server + "-" + platform.toLowerCase() + ".json";
+        var outputJSON = JSON.stringify(sampleLinks,  null, '  ');
+        fs.writeFileSync(outputPath, outputJSON);
+        console.log('extracted ' + sampleLinks.length + ' sample links to: ' + outputPath);
+
+        if (cb) cb();
+    })
+}
+exports.extractSampleLinks = extractSampleLinks;
+// use these gulp commands to extract links to samples hosted on staging:
+// gulp extractSampleLinks --server="staging" --plat=Angular
+// gulp extractSampleLinks --server="staging" --plat=Blazor
+// gulp extractSampleLinks --server="staging" --plat=React
+// gulp extractSampleLinks --server="staging" --plat=WC
+// or use these gulp commands to extract links to samples hosted locally:
+// gulp extractSampleLinksAngular
+// gulp extractSampleLinksBlazor
+// gulp extractSampleLinksReact
+// gulp extractSampleLinksWC
+exports.extractSampleLinksAngular = function extract(cb) { extractSampleLinks(cb, "Angular"); }
+exports.extractSampleLinksBlazor = function extract(cb) { extractSampleLinks(cb, "Blazor"); }
+exports.extractSampleLinksReact = function extract(cb) { extractSampleLinks(cb, "React"); }
+exports.extractSampleLinksWC = function extract(cb) { extractSampleLinks(cb, "WC"); };
