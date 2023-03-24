@@ -1,13 +1,17 @@
 ---
 title: {Platform} Tree Component | Infragistics
-_description: Infragistics' {Platform} Tree component helps you to display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Learn how {ProductName} can help you better display your data!
+_description: With {Platform} Tree component you can display hierarchical data in a tree-view structure, customize nodes easily and load data on demand. Try it now.
 _keywords: {Platform} Tree, Item Tree, overview, {ProductName}, Infragistics
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 ---
 
 # {Platform} Tree Overview
 
-The {ProductName} Tree element allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
+{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.  
+
+For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more. 
+
+The {ProductName} Tree component allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 
 
 ## {Platform} Tree Example
@@ -23,7 +27,7 @@ In this basic {ProductName} Tree example, you can see how to define a tree and i
 
 <div class="divider--half"></div>
 
-## Usage
+## How to Use {ProductName} Tree With Ignite UI
 
 <!-- WebComponents -->
 
@@ -197,7 +201,7 @@ The `Tree` provides the following API methods for item interactions:
 
 ## {Platform} Tree Selection
 
-In order to setup item selection in the {ProductName} Tree, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
+In order to setup item selection in the {ProductName} Tree component, you just need to set its `selection` property. This property accepts the following three modes: **None**, **Multiple** and **Cascade**. Below we will take a look at each of them in more detail.
 
 ### None
 
