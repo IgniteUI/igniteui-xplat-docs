@@ -1,6 +1,6 @@
 ---
 title: {Platform} ツリー コンポーネント | インフラジスティックス
-_description: インフラジスティックスの {Platform} ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。{ProductName} がデータの表示を改善するのにどのように役立つかをご覧ください。
+_description: {Platform} ツリー コンポーネントを使用すると、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。今すぐお試しください。
 _keywords: {Platform} ツリー、項目ツリー、概要、{ProductName}、インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
@@ -8,7 +8,11 @@ _language: ja
 
 # {Platform} Tree (ツリー) の概要
 
-{ProductName} ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
+{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.  
+
+For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more. 
+
+{ProductName} ツリー コンポーネントを使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
 
 ## {Platform} ツリーの例
@@ -21,7 +25,7 @@ _language: ja
 
 <div class="divider--half"></div>
 
-## 使用方法
+## Ignite UI で {ProductName} ツリーを使用する方法
 
 <!-- WebComponents -->
 
@@ -195,7 +199,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ## {Platform} ツリーの選択
 
-{ProductName} ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
+{ProductName} ツリー コンポーネントで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
 
