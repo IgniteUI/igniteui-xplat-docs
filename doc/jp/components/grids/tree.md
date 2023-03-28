@@ -1,7 +1,7 @@
 ---
 title: {Platform} ツリー コンポーネント | インフラジスティックス
 _description: {Platform} ツリー コンポーネントを使用すると、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。今すぐお試しください。
-_keywords: {Platform} ツリー、項目ツリー、概要、{ProductName}、インフラジスティックス
+_keywords: {Platform} ツリー, 項目ツリー, 概要, {ProductName}, インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
 ---
@@ -258,7 +258,7 @@ builder.Services.AddIgniteUIBlazor(
  - <kbd>Home</kbd> - 最初の項目に移動します。
  - <kbd>End</kbd> - 最後に表示された項目に移動します。
  - <kbd>Tab</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
- - <kbd>Shift +Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
+ - <kbd>Shift + Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
  - <kbd>Space</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
  - <kbd>Shift + Space</kbd> - 選択が有効になっている場合、Shift キーを押しながら、アクティブな項目と Space を押した項目の間ですべての項目の選択を切り替えます。
  - <kbd>Enter</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
