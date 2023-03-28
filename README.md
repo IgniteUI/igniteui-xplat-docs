@@ -24,7 +24,6 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 
 - [Writing Documentation](#Writing-Documentation)
   * [Creating Branches](#Creating-Branches)
-  * [Changing Docs](#Changing-Docs)
   * [Following Rules](#Following-Rules)
   * [Using Variables](#Using-Variables)
 
