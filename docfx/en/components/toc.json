@@ -793,23 +793,23 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Combo Box",
     "status": "UPDATED",
-    "href": "grids/combo/overview.md",
+    "href": "inputs/combo/overview.md",
     "items": [
       {
         "name": "Features",
-        "href": "grids/combo/features.md"
+        "href": "inputs/combo/features.md"
       },
       {
         "name": "Templates",
-        "href": "grids/combo/templates.md"
+        "href": "inputs/combo/templates.md"
       },
       {
         "name": "Single Selection",
         "status": "",
-        "href": "grids/combo/single-selection.md"
+        "href": "inputs/combo/single-selection.md"
       }
     ]
   },
