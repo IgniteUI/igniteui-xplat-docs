@@ -10,11 +10,13 @@ _language: ja
 
 # {Platform} {ComponentTitle} フィルタリング
 
-{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}`コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
+<!-- {Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}` コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。 -->
+
+{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、Excel スタイル フィルタリング、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}` コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
 
 ## {Platform} {ComponentTitle} フィルタリングの例
 
-以下のサンプルは、`{ComponentName}` の**クイック フィルタリング** ユーザー エクスペリエンスを示しています。
+以下のサンプルは、`{ComponentName}` の **Excel スタイル フィルタリング** ユーザー エクスペリエンスを示しています。
 
 `sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} フィルタリングの例"`
 
@@ -153,7 +155,7 @@ _language: ja
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
    - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
    - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `NumberFilteringOperand`  は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
+   - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
    - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
    - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
 

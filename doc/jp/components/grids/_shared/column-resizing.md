@@ -384,7 +384,7 @@ constructor() {
 
 ```razor
 @code {
-    private {ComponentName} gridRef;
+    private {ComponentSelector} gridRef;
 
     protected void OnInitialize()
     {

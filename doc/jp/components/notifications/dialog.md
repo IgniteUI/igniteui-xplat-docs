@@ -6,13 +6,13 @@ _language: ja
 mentionedTypes: ['Dialog']
 ---
 
-# {Platform} (ダイアログ)
+# {Platform} (ダイアログ) の概要
 
 {ProductName} Dialog コンポーネントは、情報を表示したり、ユーザーにアクションや確認を促すために使用されます。これはモーダル ウィンドウに表示されます。つまり、ダイアログを閉じる特定のアクションが実行されるまで、ユーザーはメイン アプリを操作できません。
 
 ## {ProductName} Dialog の例
 
-このサンプルでは、Dialog コンポーネントを作成する方法を示します。
+このサンプルでは、{Platform} で Dialog コンポーネントを作成する方法を示します。
 
 `sample="/notifications/dialog/overview", height="400", alt="{Platform} Dialog の例"`
 
@@ -35,7 +35,33 @@ import { defineComponents, IgcDialogComponent } from 'igniteui-webcomponents';
 defineComponents(IgcDialogComponent);
 ```
 
-Dialog コンポーネントを表示する最も簡単な方法は、`show` メソッドを使用して、ボタン クリックで呼び出すことです。
+<!-- Blazor -->
+{Platform} `Dialog` を使用する前に、次のように登録する必要があります:
+
+
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(typeof(IgbDialogModule));
+```
+<!-- end: Blazor -->
+
+Dialog コンポーネントを表示する最も簡単な方法は、`Show` メソッドを使用して、ボタン クリックで呼び出すことです。
+
+```razor
+<div class="container vertical">
+    <IgbDialog @ref="_dialog" Title="Dialog Title">
+        <p>This is a sample message.</p>
+        <div slot="footer">
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dialog!.Hide())">Close</IgbButton>
+        </div>
+    </IgbDialog>
+
+    <IgbButton @onclick="@(e => _dialog!.Show())" class="button">
+        Open Dialog
+    </IgbButton>
+</div>
+```
 
 ```html
 <igc-button onclick="dialog.show()" variant="contained">Show Dialog</igc-button>
@@ -47,17 +73,17 @@ Dialog コンポーネントを表示する最も簡単な方法は、`show` メ
 </igc-dialog>
 ```
 
-Dialog コンポーネントは `open` プロパティを提供します。これにより、アプリケーション シナリオに従ってその状態を構成できます。
+Dialog コンポーネントは `Open` プロパティを提供します。これにより、アプリケーション シナリオに従ってその状態を構成できます。
 
-Dialog のタイトルを設定するには、`title` プロパティを使用します。ただし、`title` スロットにコンテンツが指定されている場合は、プロパティよりも優先されます。
+Dialog のタイトルを設定するには、`Title` プロパティを使用します。ただし、`title` スロットにコンテンツが指定されている場合は、プロパティよりも優先されます。
 
-アクション ボタンまたは追加情報は、`footer` スロットを介してダイアログの下部に配置できます。そこにコンテンツが追加されていない場合、デフォルトの `[OK]` ボタンが表示され、クリックするとダイアログが閉じます。このボタンを表示したくない場合は、`hideDefaultAction` プロパティを **true** に設定できます。デフォルト値は **false** です。
+アクション ボタンまたは追加情報は、`footer` スロットを介してダイアログの下部に配置できます。そこにコンテンツが追加されていない場合、デフォルトの `[OK]` ボタンが表示され、クリックするとダイアログが閉じます。このボタンを表示したくない場合は、`HideDefaultAction` プロパティを **true** に設定できます。デフォルト値は **false** です。
 
 ### 閉じる (Closing)
 
-デフォルトでは、ユーザーが `ESC` キーを押すと、ダイアログは自動的に閉じられます。`closeOnEscape` プロパティを使用して、この動作を防ぐことができます。デフォルト値は **true** です。ダイアログに開いているドロップダウン (または `ESC` を内部で処理する必要があるその他の要素) がある場合、`ESC` を 1 回押すとドロップダウンが閉じ、もう一度押すとダイアログが閉じます。
+デフォルトでは、ユーザーが `ESC` キーを押すと、ダイアログは自動的に閉じられます。`CloseOnEscape` プロパティを使用して、この動作を防ぐことができます。デフォルト値は **true** です。ダイアログに開いているドロップダウン (または `ESC` を内部で処理する必要があるその他の要素) がある場合、`ESC` を 1 回押すとドロップダウンが閉じ、もう一度押すとダイアログが閉じます。
 
-`closeOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
+`CloseOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing のバリエーション"`
 
@@ -89,17 +115,16 @@ igc-dialog::part(footer) {
 `sample="/notifications/dialog/styling", height="400", alt="{Platform} Dialog スタイル設定の例"`
 
 
-
 <div class="divider--half"></div>
 
 ## API リファレンス
 
-- `closeOnEscape`
-- `closeOnOutsideClick`
-- `hide`
-- `hideDefaultAction`
-- `open`
-- `title`
+- `CloseOnEscape`
+- `CloseOnOutsideClick`
+- `Hide`
+- `HideDefaultAction`
+- `Open`
+- `Title`
 - `Dialog`
 
 ## その他のリソース
