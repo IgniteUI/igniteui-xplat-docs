@@ -8,9 +8,9 @@ _language: ja
 
 # {Platform} Tree (ツリー) の概要
 
-{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.  
+{ProductName} ツリーは、TreeView コンポーネントとも呼ばれ、ツリー状の UI 内で展開可能なデータ構造を視覚化する高性能コントロールであり、子項目をオンデマンドで読み込むことができます。{ProductName} ツリーは、ノードの展開と縮小、ネストされたアプリ ナビゲーションなどの機能も提供します。{ProductName} ツリーのノードは、手動で生成することも、バインドされたデータ ソースから生成することもできます。  
 
-For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more. 
+エンドユーザーにとって、これは、さまざまなアプリ ページ間を簡単にナビゲートし、選択、チェックボックスを使用し、テキスト、アイコン、画像などを追加できることを意味します。 
 
 {ProductName} ツリー コンポーネントを使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
