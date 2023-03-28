@@ -496,7 +496,7 @@
             { "name": "{CanonicalLinkToGridSummaries}",       "value": "grids/grid/summaries"}
         ],
         "samplesBrowsers" : {
-            "development": "https://localhost:44317/blazor-client",
+            "development": "https://localhost:44317",
             "staging":     "https://staging.infragistics.com/blazor-client",
             "production":  "https://www.infragistics.com/blazor-client"
         },
