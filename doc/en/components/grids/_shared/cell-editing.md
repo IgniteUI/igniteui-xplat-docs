@@ -142,11 +142,11 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
+
 ### Cell Editing Templates
 
 You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
-
-<!-- Angular -->
 
 If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
 
@@ -187,10 +187,6 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 `sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select Example"`
 
-
-
-<!-- end: Angular -->
-
 > [!Note]
 > Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
 
@@ -200,6 +196,8 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -324,6 +322,12 @@ public addNewChildRow() {
     this.treeGrid.addRow(record, 1);
 }
 ```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.TreeGridRef.AddRow(record);
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -404,6 +408,7 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -414,6 +419,7 @@ this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -436,13 +442,13 @@ These can be wired to user interactions, not necessarily related to the `{Compon
 
 Using the `{ComponentName}`'s editing events, we can alter how the user interacts with the `{ComponentName}`.
 
-In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event:
+In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event.
 
-```typescript
-event.cancel = true
-```
+<!-- Angular -->
 
 We'll also display a custom error message using [Toast](../../notifications/toast.md).
+
+<!-- end: Angular -->
 
 The first thing we need to is bind to the grid's event:
 
@@ -450,6 +456,11 @@ The first thing we need to is bind to the grid's event:
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} CellEditScript="HandleCellEdit" />
+```
+
 <!-- ComponentStart: Grid -->
 ```ts
 constructor() {
@@ -461,6 +472,7 @@ constructor() {
     this._bind();
 }
 ```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 ```ts
@@ -507,10 +519,26 @@ export class MyGridEventsComponent {
 }
 ```
 
-If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+
 ```typescript
 export class MyTreeGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -532,7 +560,28 @@ export class MyTreeGridEventsComponent {
 }
 ```
 
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+
+<!-- Angular -->
+
 Here, we are validating two columns. If the user tries to set an invalid value for an employee's **Age** (below 18) or their **Hire Date** (a future date), the editing will be cancelled (the value will not be submitted) and a toast with an error message will be displayed.
+
+<!-- end: Angular -->
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -557,14 +606,14 @@ export class MyHGridEventsComponent {
     }
 }
 ```
+
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
 
 `sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
-
-
 
 <!-- Angular -->
 
@@ -690,7 +739,7 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, WebComponents -->
 
 
 * [Virtualization and Performance](virtualization.md)
@@ -705,4 +754,4 @@ In addition to the steps above, we can also style the controls that are used for
 * [Searching](search.md)
 <!-- ComponentEnd:  HierarchicalGrid -->
 
-<!-- end: Blazor -->
+<!-- end: Blazor, WebComponents -->

@@ -519,7 +519,7 @@ public init(column: IgxColumnComponent) {
 
 <!-- end: Angular -->
 
-```html
+<!-- ```html
 <igc-grid id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
@@ -558,7 +558,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 public formatCurrency(value: number) {
 
 }
-```
+``` -->
 
 <!-- ```razor
 TO DO!
@@ -575,7 +575,7 @@ TO DO!
 
 ## Additional Resources
 
-* For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
+For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
 
 * [Editing](editing.md)
 * [Summaries](summaries.md)
