@@ -215,7 +215,7 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "exclude": ["Angular", "React"],
         "name": "Excel Style Filtering",
         "href": "grids/grid/excel-style-filtering.md",
         "status": ""
