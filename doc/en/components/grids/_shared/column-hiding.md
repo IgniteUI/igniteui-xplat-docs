@@ -107,19 +107,54 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
@@ -143,29 +178,65 @@ By using the `Title` property, we will set the title that is displayed inside th
 
 ```razor
 <div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
+    <IgbGrid Data=northwindEmployees>
         <IgbGridToolbar>
             <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
        </IgbGridToolbar>
-    </{ComponentSelector}>
+    </IgbGrid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 <!-- Angular -->
