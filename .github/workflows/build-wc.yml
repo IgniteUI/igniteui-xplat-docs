@@ -12,25 +12,23 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [16.x, 18.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install DocFX
-      uses: crazy-max/ghaction-chocolatey@v2
-      with:
-        args: install docfx -y
     - name: Install packages
       run: npm ci
+    - name: DotNet tool restore
+      run: dotnet tool restore
     - name: Build WebComponents
-      run: npm run buildWebComponents
+      run: npm run build-docfx-wc
     - name: Test Blazor
       run: npm run test --testPlatform=WebComponents
