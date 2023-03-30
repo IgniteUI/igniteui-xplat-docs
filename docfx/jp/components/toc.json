@@ -773,7 +773,7 @@
         "status": "NEW"
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "状態の保持",
         "href": "grids/tree-grid/state-persistence.md",
         "status": "NEW"
