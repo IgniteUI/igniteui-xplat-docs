@@ -206,7 +206,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular","Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "Stepper",
     "href": "layouts/stepper.md",
     "status": ""
