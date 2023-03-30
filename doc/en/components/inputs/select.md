@@ -108,7 +108,6 @@ You can use the `SelectHeader` to provide a header for a group of items.
 ```html
 <igc-select>
     <igc-select-header>Tasks</igc-select-header>
-    ...
 </igc-select>
 ```
 <!-- end: WebComponents -->
@@ -117,7 +116,6 @@ You can use the `SelectHeader` to provide a header for a group of items.
 ```razor
 <IgbSelect>
     <IgbSelectHeader>Tasks</IgbSelectHeader>
-    ...
 </IgbSelect>
 ```
 <!-- end: Blazor -->
