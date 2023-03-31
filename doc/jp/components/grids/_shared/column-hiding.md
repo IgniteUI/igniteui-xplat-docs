@@ -108,19 +108,54 @@ _language: ja
 </div>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
@@ -144,29 +179,65 @@ _language: ja
 
 ```razor
 <div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
+    <IgbGrid Data=northwindEmployees>
         <IgbGridToolbar>
             <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
        </IgbGridToolbar>
-    </{ComponentSelector}>
+    </IgbGrid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 <!-- Angular -->
