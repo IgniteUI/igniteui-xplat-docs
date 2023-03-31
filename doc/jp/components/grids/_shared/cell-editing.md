@@ -143,11 +143,11 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
+
 ### セル編集テンプレート
 
 デフォルトのセル編集テンプレートの詳細については、[編集トピック](editing.md#テンプレートの編集)を参照してください。
-
-<!-- Angular -->
 
 セルが編集モードのときに適用されるカスタム テンプレートを提供する場合は、`CellTemplateDirective` を使用できます。これを行うには、`CellEditor` ディレクティブでマークされた **ng-template** を渡し、カスタムコントロールをセルの `EditValue` に適切にバインドする必要があります。
 
@@ -188,10 +188,6 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 `sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select の例"`
 
-
-
-<!-- end: Angular -->
-
 > [!Note]
 > 編集モードでセルの `EditValue` に加えられた変更は、終了時に適切な[編集イベント](editing.md#イベントの引数とシーケンス)をトリガーし、トランザクションが有効な場合はトランザクション状態に適用されます。
 
@@ -201,6 +197,8 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 > [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -325,6 +323,12 @@ public addNewChildRow() {
     this.treeGrid.addRow(record, 1);
 }
 ```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.TreeGridRef.AddRow(record);
+```
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -405,6 +409,7 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -415,6 +420,7 @@ this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -439,11 +445,11 @@ row.delete();
 
 この例では、`CellEdit` イベントにバインドすることにより、入力されたデータに基づいてセルを検証します。セルの新しい値が事前定義された基準を満たしていない場合、イベントをキャンセルすることでデータソースに到達しないようにします。
 
-```typescript
-event.cancel = true
-```
+<!-- Angular -->
 
 また、[Toast](../../notifications/toast.md) を使用してカスタム エラーメッセージを表示します。
+
+<!-- end: Angular -->
 
 最初に必要なことは、グリッドのイベントにバインドすることです。
 
@@ -451,6 +457,11 @@ event.cancel = true
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} CellEditScript="HandleCellEdit" />
+```
+
 <!-- ComponentStart: Grid -->
 ```ts
 constructor() {
@@ -462,6 +473,7 @@ constructor() {
     this._bind();
 }
 ```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 ```ts
@@ -508,10 +520,25 @@ export class MyGridEventsComponent {
 }
 ```
 
-**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、エラー メッセージ付きのトーストが表示されます。
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+
 ```typescript
 export class MyTreeGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -533,7 +560,28 @@ export class MyTreeGridEventsComponent {
 }
 ```
 
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+
+<!-- Angular -->
+
 ここでは、2 つの列を検証しています。ユーザーが従業員の**Age (年齢、18歳未満)** または **Hire Date (雇用日、将来の日付)** に無効な値を設定しようとすると、編集がキャンセルされ (値は送信されません)、エラー メッセージ付きのトースターが表示されます。
+
+<!-- end: Angular -->
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -558,14 +606,14 @@ export class MyHGridEventsComponent {
     }
 }
 ```
+
 ここでは、2 つの列を検証しています。ユーザーがアーティストの **Debut (デビュー)** 年またはアルバムの **Launch Date (発売日)** を変更しようとした際に、グリッドは今日よりも後の日付を許可しません。
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 以下は、上記の検証が `{ComponentName}` に適用された結果のデモです。
 
 `sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} 編集イベントの例"`
-
-
 
 <!-- Angular -->
 
@@ -691,7 +739,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, WebComponents -->
 
 
 * [仮想化とパフォーマンス](virtualization.md)
@@ -706,4 +754,4 @@ $custom-grid-theme: grid-theme(
 * [検索](search.md)
 <!-- ComponentEnd:  HierarchicalGrid -->
 
-<!-- end: Blazor -->
+<!-- end: Blazor, WebComponents -->
