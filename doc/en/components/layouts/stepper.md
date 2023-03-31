@@ -125,7 +125,6 @@ For each step the user has the ability to configure indicator, title and subtitl
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
