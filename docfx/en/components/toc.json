@@ -1652,7 +1652,7 @@
     "href": "inputs/radio.md"
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Select",
     "status": "",
     "href": "inputs/select.md"
