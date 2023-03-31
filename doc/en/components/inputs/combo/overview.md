@@ -155,19 +155,19 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 @code {
     private List<City> Data;
     private IgbCombo Combo;
-    private object[] UKCities; 
+    private object[] Cities; 
 
     protected override void OnInitialized() {
         this.Data = SampleData.Cities;
-        this.UKCities = new object[] { "UK01", "UK02", "UK03", "UK04", "UK05" };
+        this.Cities = new object[] { "UK01", "UK02", "UK03", "UK04", "UK05" };
     }
 
-    public void SelectUKCities() {
-        this.Combo.Select(UKCities);
+    public void SelectCities() {
+        this.Combo.Select(Cities);
     }
 
-    public void DeselectUKCities() {
-        this.Combo.Deselect(UKCities);
+    public void DeselectCities() {
+        this.Combo.Deselect(Cities);
     }
 }
 ```
