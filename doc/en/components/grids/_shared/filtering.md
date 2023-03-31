@@ -13,7 +13,7 @@ The {Platform} `{ComponentName}` component provides three different filtering ty
 
 ## {Platform} {ComponentTitle} Filtering Example
 
-The sample below demonstrates `{ComponentName}`'s **Quick filtering** user experience.
+The sample below demonstrates `{ComponentName}`'s **Excel Style Filtering** user experience.
 
 `sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} Filtering Example"`
 
