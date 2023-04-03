@@ -13,7 +13,7 @@ _language: ja
 ## コンボボックス機能の例
 以下のデモは、ランタイムで有効または無効にできるいくつかの `ComboBox` 機能を示しています。
 
-`sample="/grids/combo/features", height="400", alt="{Platform} コンボ機能"`
+`sample="/inputs/combo/features", height="400", alt="{Platform} コンボ機能"`
 
 
 
