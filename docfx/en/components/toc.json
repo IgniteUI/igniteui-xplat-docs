@@ -793,27 +793,6 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "Combo Box",
-    "status": "UPDATED",
-    "href": "inputs/combo/overview.md",
-    "items": [
-      {
-        "name": "Features",
-        "href": "inputs/combo/features.md"
-      },
-      {
-        "name": "Templates",
-        "href": "inputs/combo/templates.md"
-      },
-      {
-        "name": "Single Selection",
-        "status": "",
-        "href": "inputs/combo/single-selection.md"
-      }
-    ]
-  },
-  {
     "exclude": ["Angular"],
     "name": "List",
     "href": "grids/list.md"
@@ -1604,6 +1583,27 @@
     "exclude": ["Angular"],
     "name": "Chip",
     "href": "inputs/chip.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "Combo Box",
+    "status": "UPDATED",
+    "href": "inputs/combo/overview.md",
+    "items": [
+      {
+        "name": "Features",
+        "href": "inputs/combo/features.md"
+      },
+      {
+        "name": "Templates",
+        "href": "inputs/combo/templates.md"
+      },
+      {
+        "name": "Single Selection",
+        "status": "",
+        "href": "inputs/combo/single-selection.md"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React"],

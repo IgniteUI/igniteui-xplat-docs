@@ -793,27 +793,6 @@
     ]
   },
   {
-    "exclude": ["Angular", "React"],
-    "name": "コンボ",
-    "status": "UPDATED",
-    "href": "inputs/combo/overview.md",
-    "items": [
-      {
-        "name": "機能",
-        "href": "inputs/combo/features.md"
-      },
-      {
-        "name": "テンプレート",
-        "href": "inputs/combo/templates.md"
-      },
-      {
-        "name": "単一選択",
-        "status": "",
-        "href": "inputs/combo/single-selection.md"
-      }
-    ]
-  },
-  {
     "exclude": ["Angular"],
     "name": "リスト",
     "href": "grids/list.md"
@@ -1604,6 +1583,27 @@
     "exclude": ["Angular"],
     "name": "チップ",
     "href": "inputs/chip.md"
+  },
+  {
+    "exclude": ["Angular", "React"],
+    "name": "コンボ",
+    "status": "UPDATED",
+    "href": "inputs/combo/overview.md",
+    "items": [
+      {
+        "name": "機能",
+        "href": "inputs/combo/features.md"
+      },
+      {
+        "name": "テンプレート",
+        "href": "inputs/combo/templates.md"
+      },
+      {
+        "name": "単一選択",
+        "status": "",
+        "href": "inputs/combo/single-selection.md"
+      }
+    ]
   },
   {
     "exclude": ["Angular", "React"],
