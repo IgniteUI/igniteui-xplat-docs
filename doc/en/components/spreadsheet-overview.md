@@ -176,7 +176,6 @@ const excelFile = '../../assets/Sample1.xlsx';
 ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
     spreadsheet.workbook = w;
 });
-
 ```
 
 ## API References

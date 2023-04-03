@@ -376,8 +376,8 @@ const colSortDesc = new IgcColumnSortDescription();
 colSortDesc.field = "UnitsInStock";
 const income = new IgcColumnGroupDescription();
 income.field = "Income";
-
 ```
+
 ## **{PackageVerRenamedGrid}**
 
 ### {PackageGrids}

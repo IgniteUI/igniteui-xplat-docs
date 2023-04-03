@@ -78,7 +78,6 @@ import { IgcZoomSliderModule } from 'igniteui-webcomponents-charts';
 import { IgcZoomSliderComponent } from "igniteui-webcomponents-charts";
 
 IgcZoomSliderModule.register();
-
 ```
 
 ## Code Snippet
