@@ -12,19 +12,9 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 This sample demonstrates how to create `MultiColumnComboBox` that displays data in multiple columns in a popup window.
 
-<!-- Blazor -->
-
 `sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
-
-
-
-<!-- end:Blazor -->
 
 <!-- Angular, React, WebComponents -->
-
-`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
-
-
 
 ## Dependencies
 When installing the charts component, the core package must also be installed.
