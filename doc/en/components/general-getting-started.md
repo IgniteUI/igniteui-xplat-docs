@@ -102,9 +102,9 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 ## Install Ignite UI for Web Components
 In order to use the Ignite UI Web Components in your application you should install the `igniteui-webcomponents` package:
 
-```
+<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
 npm install igniteui-webcomponents
-```
+</pre>
 
 Next you will need to import the components that you want to use in your `index.ts` file. You could import one or more components using the `defineComponents` function like this:
 
@@ -165,7 +165,7 @@ code .
 
 6 - Create a new file named **index.html** with this code:
 
-```
+```html
 <html>
     <head>
         <title>Getting Started with Ignite UI for Web Components</title>
@@ -182,7 +182,7 @@ code .
 
 8 - Update the **package.json** file to include a build script using **webpack**
 
-```
+```json
   "scripts": {
     "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
@@ -193,7 +193,7 @@ code .
 >
 > If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
 
-```
+```json
 "scripts": {
     "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
@@ -347,7 +347,6 @@ ModuleManager.register(
     IgcGeographicMapModule,
     IgcDataChartInteractivityModule
 );
-
 ```
 
 ## Using Components
@@ -425,9 +424,9 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ### .NET 6 Applications
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
-```
+```razor
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

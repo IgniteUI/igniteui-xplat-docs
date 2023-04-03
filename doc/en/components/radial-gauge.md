@@ -159,7 +159,6 @@ The following code demonstrates how create a radial gauge containing a needle an
 ```
 
 ```razor
-
 <IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
@@ -259,7 +258,6 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -387,7 +385,6 @@ The radial gauge labels are visual elements displaying numeric values at a speci
   Value="50"
   Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -463,7 +460,6 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 

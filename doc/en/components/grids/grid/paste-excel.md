@@ -214,7 +214,6 @@ export class PasteHandler {
         return pasteData;
     }
 }
-
 ```
 
 ## API References

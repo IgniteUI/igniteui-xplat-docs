@@ -612,7 +612,7 @@ In the following example, we demonstrate the ability of customizing the Dock Man
 
 The Dock Manager comes with a light and a dark theme. The light theme is the default one. To change it to dark, you only need to import the **igc.themes.css** file in your css and add the **dark-theme** class to the Dock Manager or any of its parents:
 
-```
+```scss
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
 ```
 
