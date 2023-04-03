@@ -21,9 +21,9 @@ The {ProductName} Calendar component provides an easy and intuitive way to displ
 
 To get started with the Calendar component, first you need to install {ProductName} package by typing the following command:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install {PackageComponents}
-</pre>
+```
 
 The next step is to import the `Calendar` and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 

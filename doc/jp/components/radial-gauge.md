@@ -25,10 +25,10 @@ _language: ja
 ## 依存関係
 gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
@@ -37,10 +37,10 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [NuGet パッケージの追加](general-nuget-feed.md)
 
 以下の名前空間を追加してコントロールの実装を開始できます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 ## モジュールの要件

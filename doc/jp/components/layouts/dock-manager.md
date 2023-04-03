@@ -23,9 +23,9 @@ Infragistics {Platform} Dock Manager は、ペインでアプリケーション�
 <!-- Angular, React, WebComponents -->
 ドック マネージャー パッケージをインストールするには、以下のコマンドを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageDockManager}
-</pre>
+```
 
 次に **defineCustomElements()** 関数をインポートして呼び出します。
 

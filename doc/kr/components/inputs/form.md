@@ -22,9 +22,9 @@ The following example represents a form that has some inputs, buttons and a chec
 
 In order to use the Form component, the web components package must be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install {PackageWebComponents}
-</pre>
+```
 
 ## Usage
 

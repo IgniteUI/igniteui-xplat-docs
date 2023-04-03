@@ -21,11 +21,11 @@ _language: ja
 ## 依存関係
 日付選択コンポーネントをインストールするときに core と input のパッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
-</pre>
+```
 <!-- end: React, WebComponents -->
 
 ## モジュールの要件
