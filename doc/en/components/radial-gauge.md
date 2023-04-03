@@ -24,10 +24,10 @@ The following sample demonstrates how setting multiple properties on the same `X
 ## Dependencies
 When installing the gauge component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
@@ -36,10 +36,10 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Adding Nuget Package](general-nuget-feed.md)
 
 Afterwards you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 ## Component Modules

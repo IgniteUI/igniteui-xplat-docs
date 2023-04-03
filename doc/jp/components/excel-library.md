@@ -22,10 +22,10 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## 依存関係
 excel パッケージをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
-</pre>
+```
 
 ## モジュールの要件
 

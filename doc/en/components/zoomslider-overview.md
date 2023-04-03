@@ -35,10 +35,10 @@ The following sample demonstrates how to use `ZoomSlider` to navigate content in
 ## Dependencies
 When installing the {Platform} chart component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## Component Modules
