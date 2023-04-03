@@ -793,23 +793,23 @@
     ]
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "コンボ",
     "status": "UPDATED",
-    "href": "grids/combo/overview.md",
+    "href": "inputs/combo/overview.md",
     "items": [
       {
         "name": "機能",
-        "href": "grids/combo/features.md"
+        "href": "inputs/combo/features.md"
       },
       {
         "name": "テンプレート",
-        "href": "grids/combo/templates.md"
+        "href": "inputs/combo/templates.md"
       },
       {
         "name": "単一選択",
         "status": "",
-        "href": "grids/combo/single-selection.md"
+        "href": "inputs/combo/single-selection.md"
       }
     ]
   },

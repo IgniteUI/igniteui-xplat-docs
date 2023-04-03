@@ -12,7 +12,7 @@ The {ProductName} ComboBox component exposes several features such as filtering 
 ## Combobox Features Example
 The following demo shows some `ComboBox` features that are enabled/disabled at runtime:
 
-`sample="/grids/combo/features", height="400", alt="{Platform} Combo Features"`
+`sample="/inputs/combo/features", height="400", alt="{Platform} Combo Features"`
 
 
 
@@ -31,7 +31,8 @@ defineComponents(IgcComboComponent, IgcSwitchComponent);
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule, IgbSwitchModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbComboModule));
+builder.Services.AddIgniteUIBlazor(typeof(IgbSwitchModule));
 ```
 
 You will also need to link an additional CSS file to apply the styling to the `Switch` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
@@ -42,7 +43,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 <!-- end: Blazor -->
 
-Then, we will add event listeners to all switch components so that we can control the combo features by toggling the switches:
+Then, we will add event handlers to all switch components so that we can control the combo features by toggling the switches:
 
 ```ts
 let combo = document.getElementById('combo') as IgcComboComponent<City>;
@@ -64,6 +65,46 @@ switchDisable.addEventListener("igcChange", () => {
 });
 ```
 
+```razor
+<IgbCombo 
+    Label="Cities" 
+    Placeholder="Pick a city" 
+    Data="Data" 
+    ValueKey="Id" 
+    DisplayKey="Name"
+    DisableFiltering="@DisableFiltering"
+    CaseSensitiveIcon="@CaseSensitiveIcon"
+    GroupKey="@Group"
+    Disabled="@Disabled">
+</IgbCombo>
+
+<IgbSwitch Change="@OnDisableFilteringClick">Disable Filtering</IgbSwitch>
+<IgbSwitch Change="@OnCaseSensitiveClick" Disabled="@DisableFiltering">Show Case-sensitive Icon</IgbSwitch>
+<IgbSwitch Change="@OnGroupClick">Enable Grouping</IgbSwitch>
+<IgbSwitch Change="@OnDisableClick">Disable Combo</IgbSwitch>
+
+@code {
+    private bool DisableFiltering = false;
+    private bool CaseSensitiveIcon = false;
+    private bool Disabled = false;
+
+    public void OnDisableFilteringClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.DisableFiltering = sw.Checked;
+    }
+
+    public void OnCaseSensitiveClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.CaseSensitiveIcon = sw.Checked;
+    }
+
+    public void OnDisableClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Disabled = sw.Checked;
+    }
+}
+```
+
 Note that grouping is enabled/disabled by setting the `GroupKey` property to a corresponding data source field:
 
 ```ts
@@ -72,6 +113,17 @@ let switchGroup = document.getElementById('grouping') as IgcSwitchComponent;
 switchGroup.addEventListener("igcChange", () => {
     this.combo.groupKey = switchGroup.checked ? "country" : undefined;
 });
+```
+
+```razor
+@code {
+    private string Group = "";
+
+    public void OnGroupClick(IgbComponentBoolValueChangedEventArgs e) {
+        IgbSwitch sw = e.Parent as IgbSwitch;
+        this.Group = sw.Checked ? "Country" : "";
+    }
+}
 ```
 
 ## Features
