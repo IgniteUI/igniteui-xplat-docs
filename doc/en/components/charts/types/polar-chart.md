@@ -91,7 +91,7 @@ The following table lists API members mentioned in the above sections:
 - `PolarSplineSeries`
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
-- `Series.ItemsSource`
+- `ItemsSource`
 - `AngleMemberPath`
 - `RadiusMemberPath`
 - `NumericAngleAxis`
