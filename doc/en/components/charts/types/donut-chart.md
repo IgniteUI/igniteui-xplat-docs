@@ -15,8 +15,6 @@ You can create Donut Chart using the `XamDoughnutChart` control by binding your 
 
 `sample="/charts/doughnut-chart/legend", height="600", alt="{Platform} Doughnut Legend"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} Donut Chart Recommendations
@@ -90,6 +88,8 @@ You can find more information about related chart types in these topics:
 
 The following table lists API members mentioned in the above sections:
 
-| Chart Type       | Control Name   | API Members |
-| -----------------|----------------|------------ |
-| Donut Chart      | `XamDoughnutChart`     | `DoughnutChart` |
+- `XamDoughnutChart`
+- `AllowSliceExplosion`
+- `AllowSliceSelection`
+- `InnerExtent`
+- `SliceClick`

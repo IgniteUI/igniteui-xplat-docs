@@ -227,7 +227,6 @@ export class MapTypeScatterContourSeriesComponent implements AfterViewInit {
         this.map.series.add(contourSeries);
     }
 }
-
 ```
 
 ```html

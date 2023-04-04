@@ -52,11 +52,11 @@ Excel でデータを操作するのと同じように、スプレッドシー�
 ## 依存関係
 {Platform} スプレッドシート コンポーネントをインストールするときは、core パッケージと excel パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 npm install --save {PackageSpreadsheet}
-</pre>
+```
 
 
 ## モジュールの要件

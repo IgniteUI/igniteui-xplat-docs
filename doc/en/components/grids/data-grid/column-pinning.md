@@ -325,7 +325,6 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
     this.toolbar.columnPinningTitle = "Pinning Title";
     }
 }
-
 ```
 
 <!--WebComponents-->
