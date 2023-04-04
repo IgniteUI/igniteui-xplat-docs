@@ -21,7 +21,7 @@ The {Platform} `XamGeographicMap` has the following API members:
 
 # {Platform} Geographic Series Types
 
-The {Platform} `XamGeographicMap` has 7 types of series and they have the `Series.ItemsSource` property for data binding.
+The {Platform} `XamGeographicMap` has 7 types of series and they have the `ItemsSource` property for data binding.
 
  - `GeographicHighDensityScatterSeries`
  - `GeographicSymbolSeries`
