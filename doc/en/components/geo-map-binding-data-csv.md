@@ -106,7 +106,6 @@ public onDataLoaded(csvData: string) {
     // adding symbol series to the geographic amp
     this.geoMap.series.add(geoSeries);
 }
-
 ```
 
 ```ts
@@ -177,7 +176,6 @@ export class MapBindingDataCsvComponent implements AfterViewInit {
         this.map.series.add(geoSeries);
     }
 }
-
 ```
 
 ```html

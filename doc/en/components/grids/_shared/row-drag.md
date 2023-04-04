@@ -759,7 +759,6 @@ class MyRowGhostComponent {
         }
     }
 }
-
 ```
 
 #### Displaying a Drop Indicator based on Cursor Position
