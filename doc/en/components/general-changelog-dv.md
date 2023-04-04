@@ -49,7 +49,7 @@ These new chart improvements include:
 The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties` because these properties are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -73,7 +73,7 @@ The Chart's [Aggregation](charts/features/chart-data-aggregations.md) will not w
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -109,7 +109,7 @@ This release introduces a few improvements and simplifications to visual design 
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -160,7 +160,7 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > These features are CTP
