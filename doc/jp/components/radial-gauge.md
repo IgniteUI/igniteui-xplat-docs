@@ -160,7 +160,6 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-
 <IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
@@ -260,7 +259,6 @@ IgrRadialGaugeModule.register();
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -388,7 +386,6 @@ IgrRadialGaugeModule.register();
   Value="50"
   Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -464,7 +461,6 @@ IgrRadialGaugeModule.register();
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 

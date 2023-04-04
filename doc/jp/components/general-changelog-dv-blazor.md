@@ -3,17 +3,45 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: [ComponentApiMembers, "SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, 'MaskInput']
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+## **{PackageVerChanges-22-2.65}**
+
+### {PackageDockManager}
+
+* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
+
+### {PackageGrids}
+
+* `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+* When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
+* When selected row is deleted from the grid component `rowSelectionChanging` event will no longer be emitted.
+* The `onGroupingDone` event has been renamed to `groupingDone` to not violate the no on-prefixed outputs convention.
+* The `onDensityChanged` event has been renamed to `densityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+
+###  {PackagePivotGrid}
+
+* The `IgbPivotDateDimension` properties `inBaseDimension` and `inOption` have been deprecated and renamed to `baseDimension` and `options` respectively.
+
+### {PackageInputs}
+
+* in `IgbDateTimeInput` the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date); is now trimmed down to DatePart instead of DateTimeInputDatePart
+* in `IgbRadio` and `IgbRadioGroup` added component validation along with styles for invalid state
+* in `IgbMask` directive, added the capability to escape mask pattern literals.
+* in `IgbBadge` added `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
+* in `IgbAvatar` the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
+
 ## **{PackageVerChanges-22-2.50}**
 
 ### 新しいコンポーネント
 
+* [コンボ](inputs/combo/overview.md)
 * [ピボット グリッド](grids/pivot-grid/overview.md)
 * .NET 7.0
 

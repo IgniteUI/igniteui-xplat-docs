@@ -103,7 +103,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 ## Ignite UI for Web Components のインストール
 アプリケーションで Ignite UI Web Components を使用するには、`igniteui-webcomponents` パッケージをインストールする必要があります。
 
-```
+```cmd
 npm install igniteui-webcomponents
 ```
 
@@ -153,7 +153,7 @@ npm init -y
 
 4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
 ```cmd
-> npm install webpack webpack-cli --save-dev
+npm install webpack webpack-cli --save-dev
 ```
 
 > [!Note]
@@ -166,7 +166,7 @@ code .
 
 6 - 以下のコードを使用して **index.html** という名前の新しいファイルを作成します。
 
-```
+```html
 <html>
     <head>
         <title>Getting Started with Ignite UI for Web Components</title>
@@ -183,7 +183,7 @@ code .
 
 8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
-```
+```json
   "scripts": {
     "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
@@ -194,7 +194,7 @@ code .
 >
 > ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
 
-```
+```json
 "scripts": {
     "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
@@ -348,7 +348,6 @@ ModuleManager.register(
     IgcGeographicMapModule,
     IgcDataChartInteractivityModule
 );
-
 ```
 
 ## コンポーネントの使用
@@ -426,9 +425,9 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ### .NET 6 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
-```
+```razor
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
