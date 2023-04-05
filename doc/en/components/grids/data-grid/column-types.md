@@ -288,7 +288,6 @@ public getRandomItem(array: any[]): any {
     const index = Math.round(this.getRandomNumber(0, array.length - 1));
     return array[index];
 }
-
 ```
 
 ```razor

@@ -39,20 +39,20 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Adding Nuget Package](../../general-nuget-feed.md)
 
 Afterwards, you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
 When installing the {Platform} grid package, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ### Component Modules

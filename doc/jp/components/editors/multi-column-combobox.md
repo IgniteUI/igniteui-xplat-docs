@@ -13,29 +13,19 @@ _language: ja
 
 このサンプルは、ポップアップ ウィンドウの複数の列にデータを表示する `MultiColumnComboBox` を作成する方法を示しています。
 
-<!-- Blazor -->
-
 `sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
-
-
-
-<!-- end:Blazor -->
 
 <!-- Angular, React, WebComponents -->
-
-`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} 複数列コンボ ボックスの例"`
-
-
 
 ## 依存関係
 Chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件

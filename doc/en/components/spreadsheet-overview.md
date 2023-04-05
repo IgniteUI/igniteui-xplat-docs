@@ -51,11 +51,11 @@ With the built-in Excel import/export functionality, you can instantly load an
 ## Dependencies
 When installing the {Platform} spreadsheet component, the core and excel package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 npm install --save {PackageSpreadsheet}
-</pre>
+```
 
 
 ## Component Modules
@@ -176,7 +176,6 @@ const excelFile = '../../assets/Sample1.xlsx';
 ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
     spreadsheet.workbook = w;
 });
-
 ```
 
 ## API References

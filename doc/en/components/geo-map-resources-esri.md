@@ -75,7 +75,6 @@ export enum EsriStyle {
     UsaRailNetwork = "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer",
 
 }
-
 ```
 
 ```razor
