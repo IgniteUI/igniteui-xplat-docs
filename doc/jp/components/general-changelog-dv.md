@@ -12,7 +12,7 @@ namespace: Infragistics.Controls.Charts
 
 > [!Note]
 > このトピックでは、{PackageAngularComponents} パッケージに含まれていないコンポーネントの変更についてのみ説明します。
-> {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md)を参照してください。
+> {PackageAngularComponents} コンポーネントに固有の変更については、[Ignite UI Angular 変更](https://github.com/IgniteUI/igniteui-angular/blob/master/CHANGELOG.md) の CHANGELOG.MD を参照してください。
 
 ## **{PackageVerChanges-22-2.1}**
 * Angular 15 のサポート。

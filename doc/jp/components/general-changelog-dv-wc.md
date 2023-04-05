@@ -10,14 +10,43 @@ namespace: Infragistics.Controls.Charts
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
+```md
 > [!Note]
 (*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+```
+
+
+## **{PackageVerChanges-22-2.2}**
+
+### {PackageDockManager}
+
+* DockManager のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
+
+### {PackageGrids}
+
+* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`oldSelection`、`newSelection`、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
+* 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
+* `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `onDensityChanged` イベントの名前が `densityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+
+###  {PackagePivotGrid}
+
+* `IgbPivotDateDimension` プロパティの `inBaseDimension` と `inOption` は廃止され、それぞれ `baseDimension` と `options` に名前が変更されました。
+
+### {PackageInputs}
+
+* `IgbDateTimeInput` で StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date)、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
+* `IgbRadio` および `IgbRadioGroup` で、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
+* `IgbMask` ディレクティブで、マスク パターン リテラルをエスケープする機能が追加されました。
+* `IgbBadge` に、バッジの形状を制御する `shape` プロパティが追加され、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgbAvatar` の `roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
 
 ## **{PackageVerChanges-22-2.1}**
 
 ### 新しいコンポーネント
 
-* [コンボ](grids/combo/overview.md)
+* [コンボ](inputs/combo/overview.md)
 * [ピボット グリッド](grids/pivot-grid/overview.md)
 * [ステッパー](layouts/stepper.md)
 
@@ -345,7 +374,6 @@ const colSortDesc = new IgcColumnSortDescription();
 colSortDesc.field = "UnitsInStock";
 const income = new IgcColumnGroupDescription();
 income.field = "Income";
-
 ```
 ## **{PackageVerRenamedGrid}**
 

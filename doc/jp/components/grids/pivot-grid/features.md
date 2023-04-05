@@ -63,7 +63,6 @@ public pivotConfigHierarchy: IPivotConfiguration = {
         }
     ]
 }
-
 ```
 <!-- end: Angular -->
 

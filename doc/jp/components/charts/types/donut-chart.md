@@ -16,8 +16,6 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 `sample="/charts/doughnut-chart/legend", height="600", alt="{Platform} ドーナツ チャートの凡例"`
 
-
-
 <div class="divider--half"></div>
 
 ## {Platform} ドーナツ チャートの推奨事項
@@ -91,6 +89,8 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-| チャート タイプ       | コントロール名   | API メンバー |
-| -----------------|----------------|------------ |
-| ドーナツ チャート      | `XamDoughnutChart`     | `DoughnutChart` |
+- `XamDoughnutChart`
+- `AllowSliceExplosion`
+- `AllowSliceSelection`
+- `InnerExtent`
+- `SliceClick`
