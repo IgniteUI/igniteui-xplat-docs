@@ -188,7 +188,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 ## 検証
 
-さらに、`Select` は、`Required`、`Disabled`、`autofocus` など、ほとんどの  `Input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
+さらに、`Select` は、`Required`、`Disabled`、`Autofocus` など、ほとんどの `Input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
 
 - `reportValidity` - 有効性をチェックし、無効な場合はコンポーネントにフォーカスします。
 
@@ -245,7 +245,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 | 部分名 | 説明 |
 | ---------|------------ |
-| `label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
+| `Label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
 
 `sample="/inputs/select/styling", height="380", alt="{Platform} Select スタイル設定の例"`
 

@@ -19,7 +19,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids}
 
-* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、` oldSelection `、` newSelection `、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`oldSelection`、`newSelection`、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
 * グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
 * 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
 * `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
