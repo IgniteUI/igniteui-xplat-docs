@@ -2260,7 +2260,7 @@
     "plugin-error" "^0.1.2"
     "through2" "^2.0.0"
 
-"gulp-replace@^1.1.3":
+"gulp-replace@^1.1.4":
   "integrity" "sha512-SVSF7ikuWKhpAW4l4wapAqPPSToJoiNKsbDoUnRrSgwZHH7lH8pbPeQj1aOVYQrbZKhfSVBxVW+Py7vtulRktw=="
   "resolved" "https://registry.npmjs.org/gulp-replace/-/gulp-replace-1.1.4.tgz"
   "version" "1.1.4"
@@ -2406,6 +2406,13 @@
   "resolved" "https://registry.npmjs.org/highlight.js/-/highlight.js-10.6.0.tgz"
   "version" "10.6.0"
 
+"highlightjs-cshtml-razor@^2.1.1":
+  "integrity" "sha512-EhJrk42Lp6UJyQTQBts4i8Hdd/eu3+3LPF5gg1xwNq+boGSyVbfFYD+AXSaP0u6YQfgQEYecQlqUPOi3hRlh0A=="
+  "resolved" "https://registry.npmjs.org/highlightjs-cshtml-razor/-/highlightjs-cshtml-razor-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "minimist" "^1.2.5"
+
 "homedir-polyfill@^1.0.1":
   "integrity" "sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA=="
   "resolved" "https://registry.npmjs.org/homedir-polyfill/-/homedir-polyfill-1.0.3.tgz"
@@ -2498,10 +2505,10 @@
 "ieee754@^1.2.1":
   "version" "1.2.1"
 
-"igniteui-docfx-template@3.5.0-beta.2":
-  "integrity" "sha512-GHrukR50vUXnYD6hW257oALm6UhprCvChEJ/5Ek9gxVEXIOav7PGV0xnX0DipYnngTmIiuAE4OaIbbCNiSn1fg=="
-  "resolved" "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.5.0-beta.2.tgz"
-  "version" "3.5.0-beta.2"
+"igniteui-docfx-template@^3.5.0-beta.5":
+  "integrity" "sha512-Oep2o/tRHNU97gH/iWOoOnExt2lpcndHg9ACP6DYe94X7znBrKRygeTKTQ0iyiEFXfuWJ1utlesHd9GZP/3QRQ=="
+  "resolved" "https://registry.npmjs.org/igniteui-docfx-template/-/igniteui-docfx-template-3.5.0-beta.5.tgz"
+  "version" "3.5.0-beta.5"
   dependencies:
     "@stackblitz/sdk" "^1.5.3"
     "anchor-js" "^4.3.0"
@@ -2509,6 +2516,7 @@
     "bootstrap" "^3.3.7"
     "clipboard" "^2.0.6"
     "highlight.js" "10.6.0"
+    "highlightjs-cshtml-razor" "^2.1.1"
     "i" "^0.3.6"
     "jquery-ui" "^1.12.1"
     "lazysizes" "^5.3.0"
@@ -3511,6 +3519,11 @@
   "version" "5.0.1"
   dependencies:
     "brace-expansion" "^2.0.1"
+
+"minimist@^1.2.5":
+  "integrity" "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="
+  "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz"
+  "version" "1.2.8"
 
 "minipass-collect@^1.0.2":
   "integrity" "sha512-6T6lH0H8OG9kITm/Jm6tdooIbogG9e0tLgpY6mphXSm/A9u8Nq1ryBG+Qspiub9LjWlBPsPS3tWQ/Botq4FdxA=="
