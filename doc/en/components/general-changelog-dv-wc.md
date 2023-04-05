@@ -17,11 +17,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2.2}**
 
-### {PackageDockManager}
+### {PackageDockManager} (DockManager)
 
 * DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
 * When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
@@ -29,11 +29,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 * The `onGroupingDone` event has been renamed to `groupingDone` to not violate the no on-prefixed outputs convention.
 * The `onDensityChanged` event has been renamed to `densityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
 
-###  {PackagePivotGrid}
+### {PackageGrids} (Pivot Grid)
 
 * The `IgbPivotDateDimension` properties `inBaseDimension` and `inOption` have been deprecated and renamed to `baseDimension` and `options` respectively.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 * in `IgbDateTimeInput` the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
 * in `IgbRadio` and `IgbRadioGroup` added component validation along with styles for invalid state
@@ -56,7 +56,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
@@ -88,7 +88,7 @@ These new chart improvements include:
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Changed `Column` to `DataGridColumn`
 * Changed `GridCellEventArgs` to `DataGridCellEventArgs`
@@ -96,7 +96,7 @@ These new chart improvements include:
 * Changed `SummaryOperand` to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -113,7 +113,7 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Feature Added:
 - [Row Paging](grids/data-grid/row-paging.md)
@@ -159,7 +159,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 ## **{PackageVerChanges-21-2.1}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 #### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
@@ -169,7 +169,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 - Changed `ValueField` property from type string[] to string.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
@@ -207,7 +207,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -242,7 +242,7 @@ This release introduces a few improvements and simplifications to visual design 
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Features Added:
     - [Filter Row](grids/data-grid/column-filtering.md)
@@ -259,7 +259,7 @@ This release introduces a few improvements and simplifications to visual design 
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -310,7 +310,7 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > These features are CTP
@@ -322,7 +322,7 @@ for example:
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
@@ -336,7 +336,7 @@ for example:
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 
@@ -355,7 +355,7 @@ for example:
 
 ## **{PackageVerChangedFields}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 > [!Note]
 > These breaking changes were introduce in the grid package.
@@ -380,7 +380,7 @@ income.field = "Income";
 
 ## **{PackageVerRenamedGrid}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - Changed Name of Live Grid
 

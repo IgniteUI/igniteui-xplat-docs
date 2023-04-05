@@ -52,7 +52,7 @@ namespace: Infragistics.Controls.Charts
 * [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
@@ -84,7 +84,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 `IncludedProperties` | `ExcludedProperties` を使用している場合、[チャート集計](charts/features/chart-data-aggregations.md)は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * `Column` を `DataGridColumn` に変更しました。
 * `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
@@ -93,7 +93,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-1}**
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
@@ -110,11 +110,11 @@ namespace: Infragistics.Controls.Charts
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
 * 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-### {PackageDockManager}
+### {PackageDockManager} (DockManager)
 
 * {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * 新規機能:
 - [行のページング](grids/data-grid/row-paging.md)
@@ -136,11 +136,11 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 > 以下の重大な変更が導入されました
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 - 新しい `ValueChanged` イベントは双方向バインディングをサポートしており、`Value` プロパティをバインドしていない場合にのみ処理する必要があります。データ バインディングなしでコントロールから Value フィールドを読み取るには、`ValueChanged` イベントを処理する必要があります。データがバインドされていない場合は、GetCurrentValueAsync を使用してコントロールの値を読み取る必要があります。
 
@@ -207,7 +207,7 @@ namespace: Infragistics.Controls.Charts
 | -------------------- | ------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * 新規機能:
     - [フィルター行](grids/data-grid/column-filtering.md)
@@ -284,7 +284,7 @@ namespace: Infragistics.Controls.Charts
 * シェイプ シリーズの強調表示のサポートが追加されました。
 * シェイプ シリーズの一部の注釈レイヤーのサポートが追加されました。
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
@@ -298,7 +298,7 @@ namespace: Infragistics.Controls.Charts
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 
