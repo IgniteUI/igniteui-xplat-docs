@@ -41,7 +41,8 @@
     "build-docfx-args": "tsc && gulp buildDocfx_WithArgs",
     "build-staging": "tsc && set NODE_ENV=staging && gulp buildDocfx_WithArgs",
     "build-production": "tsc && set NODE_ENV=production && gulp buildDocfx_WithArgs",
-    "test": "tsc && mocha"
+    "test": "tsc && mocha",
+    "postinstall": "dotnet tool restore"
   },
   "keywords": [],
   "author": "infragistics",
