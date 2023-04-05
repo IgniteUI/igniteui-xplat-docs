@@ -20,9 +20,9 @@ _language: ja
 - `GetGeographicPoint`
 - `GetPixelPoint`
 
-# {Platform} Geographic Series Types
+# {Platform} 地理的シリーズの種類
 
-The {Platform} `XamGeographicMap` has 7 types of series and they have the `ItemsSource` property for data binding.
+{Platform} `XamGeographicMap` には 7 種類のシリーズがあり、データ バインディング用の `ItemsSource` プロパティがあります。
 
  - `GeographicHighDensityScatterSeries`
  - `GeographicSymbolSeries`
@@ -32,11 +32,11 @@ The {Platform} `XamGeographicMap` has 7 types of series and they have the `Items
  - `GeographicScatterAreaSeries`
  - `GeographicContourLineSeries`
 
-In addition, each type of series has specific properties for mapping data items and styling their appearance:
+さらに、シリーズの各種類には、データ項目をマッピングし、その外観をスタイル設定するための特定のプロパティがあります。
 
-## {Platform} Geographic Symbol Series API
+## {Platform} 地理記号シリーズ API
 
-The {Platform} `GeographicSymbolSeries` (Geographic Marker Series) has the following API members:
+{Platform} `GeographicSymbolSeries` (地理マーカー シリーズ) には、次の API メンバーがあります。
 
 - `LatitudeMemberPath`
 - `LongitudeMemberPath`
@@ -44,9 +44,9 @@ The {Platform} `GeographicSymbolSeries` (Geographic Marker Series) has the follo
 - `MarkerBrush`
 - `MarkerOutline`
 
-## {Platform} Geographic Bubble Series API
+## {Platform} 地理バブル シリーズ API
 
-The {Platform} `GeographicProportionalSymbolSeries` (Geographic Bubble Series) has the following API members:
+{Platform} `GeographicProportionalSymbolSeries` (地理バブル シリーズ) には、次の API メンバーがあります。
 
 - `LatitudeMemberPath`
 - `LongitudeMemberPath`
@@ -55,37 +55,37 @@ The {Platform} `GeographicProportionalSymbolSeries` (Geographic Bubble Series) h
 - `FillScale`
 - `FillMemberPath`
 
-## {Platform} Geographic Shape Series API
+## {Platform} 地理シェイプ シリーズ API
 
-The {Platform} `GeographicShapeSeries` and `GeographicPolylineSeries` have the same API members:
+{Platform} `GeographicShapeSeries` と `GeographicPolylineSeries` には同じ API メンバーがあります。
 
 - `ShapeMemberPath`
 - `Thickness`
 - `Brush`
 - `Outline`
 
-## {Platform} Geographic Area Series API
+## {Platform} 地理エリア シリーズ API
 
 
-The {Platform} `GeographicScatterAreaSeries` has the following API members:
+{Platform} `GeographicScatterAreaSeries` には、次の API メンバーがあります。
 
 - `LatitudeMemberPath`
 - `LongitudeMemberPath`
 - `ColorMemberPath`
 - `ColorScale`
 
-## {Platform} Geographic Contour Series API
+## {Platform} 地理等高線シリーズ API
 
-The {Platform} `GeographicContourLineSeries` has the following API members:
+{Platform} `GeographicContourLineSeries` には、次の API メンバーがあります。
 
 - `LatitudeMemberPath`
 - `LongitudeMemberPath`
 - `ValueMemberPath`
 - `FillScale`
 
-## {Platform} Geographic HD Series API
+## {Platform} 地理 HD シリーズ API
 
-The {Platform} `GeographicHighDensityScatterSeries` has the following API members:
+{Platform} `GeographicHighDensityScatterSeries` には、次の API メンバーがあります。
 
 
 - `LatitudeMemberPath`

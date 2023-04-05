@@ -33,7 +33,7 @@ _language: ja
 
 | チャート プロパティ | 軸クラス |
 |------------------|----------|
-| - `SeriesViewer.Title` <br> - `SeriesViewer.Subtitle` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `PlotAreaMargin` <br> |  - `Axis` is base class for all axis types <br> - `CategoryXAxis` used with Category, Stacked, and Financial Series <br> - `CategoryYAxis` used with Category, Stacked Series <br> - `CategoryAngleAxis` used with Radial Series <br> - `NumericXAxis` used with Scatter and Stacked Bar Series <br> - `NumericYAxis` used with Category, Stacked, and Financial Series <br> - `NumericAngleAxis` used with Polar Series <br> - `NumericRadiusAxis` used with Polar and Radial Series <br> - `TimeXAxis` used with Category and Financial Series <br> |
+| - `SeriesViewer.Title` <br> - `SeriesViewer.Subtitle` <br> - `IsHorizontalZoomEnabled` <br> - `IsVerticalZoomEnabled` <br> - `Brushes` <br> - `Outlines` <br> - `MarkerBrushes` <br> - `MarkerOutlines` <br> - `PlotAreaMargin` <br> |  - `Axis` はすべての軸タイプの基本クラスです。 <br> - カテゴリ、積層、および財務シリーズで使用される `CategoryXAxis` <br> - カテゴリ、積層シリーズで使用で使用される `CategoryYAxis` <br> - ラジアル シリーズで使用される `CategoryAngleAxis` <br> - 散布シリーズおよび積層型棒シリーズで使用される `NumericXAxis` <br> - カテゴリ、積層、および財務シリーズで使用される `NumericYAxis` <br> - 極座標シリーズで使用される `NumericAngleAxis` <br> - 極座標およびラジアル シリーズで使用される `NumericRadiusAxis` <br> - カテゴリおよび財務シリーズで使用される `TimeXAxis` <br> |
 
 {Platform} `XamDataChart` は、`Series` から継承する次のタイプのシリーズを使用できます。
 
@@ -74,18 +74,18 @@ _language: ja
 - `BadgeShape`
 
 
-## {Platform} Donut Chart API Members
+## {Platform} ドーナツ チャート API メンバー
 
-The {Platform} `XamDoughnutChart` has the following API members:
+{Platform} `XamDoughnutChart` には、次の API メンバーがあります。
 
 - `AllowSliceExplosion`
 - `AllowSliceSelection`
 - `InnerExtent`
 - `SliceClick`
 
-## {Platform} Pie Chart API Members
+## {Platform} 円チャート API メンバー
 
-The {Platform} `XamPieChart` has the following API members:
+{Platform} `XamPieChart` には、次の API メンバーがあります。
 
 - `LegendItemBadgeTemplate`
 - `LegendItemTemplate`
@@ -94,9 +94,9 @@ The {Platform} `XamPieChart` has the following API members:
 - `OthersCategoryType`
 - `SelectionMode`
 
-## {Platform} Sparkline Chart API Members
+## {Platform} スパークライン チャート API メンバー
 
-The {Platform} `XamSparkline` has the following API members:
+{Platform} `XamSparkline` には、次の API メンバーがあります。
 
 - `DisplayNormalRangeInFront`
 - `XamSparkline.DisplayType`

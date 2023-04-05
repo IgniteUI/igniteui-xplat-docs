@@ -20,27 +20,27 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageDockManager}
 
-* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
+* DockManager のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
 
 ### {PackageGrids}
 
-* `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
-* When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-* When selected row is deleted from the grid component `rowSelectionChanging` event will no longer be emitted.
-* The `onGroupingDone` event has been renamed to `groupingDone` to not violate the no on-prefixed outputs convention.
-* The `onDensityChanged` event has been renamed to `densityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、oldSelection、newSelection、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
+* 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
+* `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `onDensityChanged` イベントの名前が `densityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
 
 ###  {PackagePivotGrid}
 
-* The `IgbPivotDateDimension` properties `inBaseDimension` and `inOption` have been deprecated and renamed to `baseDimension` and `options` respectively.
+* `IgbPivotDateDimension` プロパティの `inBaseDimension` と `inOption` は廃止され、それぞれ `baseDimension` と `options` に名前が変更されました。
 
 ### {PackageInputs}
 
-* in `IgbDateTimeInput` the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
-* in `IgbRadio` and `IgbRadioGroup` added component validation along with styles for invalid state
-* in `IgbMask` directive, added the capability to escape mask pattern literals.
-* in `IgbBadge` added `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
-* in `IgbAvatar` the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
+* `IgbDateTimeInput` で StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date)、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
+* `IgbRadio` および `IgbRadioGroup` で、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
+* `IgbMask` ディレクティブで、マスク パターン リテラルをエスケープする機能が追加されました。
+* `IgbBadge` に、バッジの形状を制御する `shape` プロパティが追加され、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgbAvatar` の `roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
 
 ## **{PackageVerChanges-22-2.1}**
 
