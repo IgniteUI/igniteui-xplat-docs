@@ -42,7 +42,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 `IncludedProperties` | `ExcludedProperties` を使用している場合、[チャート集計](charts/features/chart-data-aggregations.md)は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * `Column` を `DataGridColumn` に変更しました。
 * `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
@@ -50,7 +50,7 @@ namespace: Infragistics.Controls.Charts
 * `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
@@ -67,7 +67,7 @@ namespace: Infragistics.Controls.Charts
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
 * 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * 新規機能:
 - [行のページング](grids/data-grid/row-paging.md)
@@ -76,7 +76,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-21-2.1}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
@@ -86,7 +86,7 @@ namespace: Infragistics.Controls.Charts
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### 日付ピッカー
 - ValueChanged イベントを `SelectedValueChanged` に変更しました。
@@ -102,7 +102,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
@@ -137,7 +137,7 @@ namespace: Infragistics.Controls.Charts
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * 新規機能:
     - [フィルター行](grids/data-grid/column-filtering.md)
@@ -153,7 +153,7 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
@@ -204,7 +204,7 @@ namespace: Infragistics.Controls.Charts
 * バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
 * `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズの強調表示を有効にします。
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > これらの機能は CTP です。
@@ -215,7 +215,7 @@ namespace: Infragistics.Controls.Charts
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
@@ -229,7 +229,7 @@ namespace: Infragistics.Controls.Charts
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### 日付ピッカー
 
@@ -248,7 +248,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChangedFields}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 > [!Note]
 > これらの重大な変更は、グリッド パッケージで導入されました。
@@ -273,7 +273,7 @@ income.field = "Income";
 
 ## **{PackageVerRenamedGrid}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - Live Grid の名称変更
 
