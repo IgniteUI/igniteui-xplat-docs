@@ -714,8 +714,8 @@ public backgroundClasses = {
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
-
 ```
+
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
