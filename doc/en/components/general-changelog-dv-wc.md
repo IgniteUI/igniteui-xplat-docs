@@ -17,10 +17,6 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2.2}**
 
-### {PackageDockManager} (DockManager)
-
-* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
-
 ### {PackageGrids} (Data Grid)
 
 * A new argument `primaryKey` has been introduced to `IgbRowDataEventArgs`, and part of the event arguments that are emitted by the `rowAdded` and `rowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
@@ -33,6 +29,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 ### {PackageGrids} (Pivot Grid)
 
 * The `IgbPivotDateDimension` properties `inBaseDimension` and `inOption` have been deprecated and renamed to `baseDimension` and `options` respectively.
+
+### {PackageDockManager} (DockManager)
+
+* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
 
 ### {PackageInputs} (Inputs)
 
