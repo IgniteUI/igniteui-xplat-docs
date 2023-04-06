@@ -36,11 +36,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageInputs} (Inputs)
 
-* in `IgbDateTimeInput` the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
-* in `IgbRadio` and `IgbRadioGroup` added component validation along with styles for invalid state
-* in `IgbMask` directive, added the capability to escape mask pattern literals.
-* in `IgbBadge` added `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
-* in `IgbAvatar` the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
+* `IgbDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
+* `IgbRadio` and `IgbRadioGroup`, added component validation along with styles for invalid state
+* `IgbMask`, added the capability to escape mask pattern literals.
+* `IgbBadge` added a `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
+* `IgbAvatar`, the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
 
 ## **{PackageVerChanges-22-2.1}**
 
