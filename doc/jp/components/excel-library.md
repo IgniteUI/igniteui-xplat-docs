@@ -22,10 +22,10 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## 依存関係
 excel パッケージをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
-</pre>
+```
 
 ## モジュールの要件
 
@@ -130,6 +130,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 -  Microsoft Excel 2016
 
+```md
 > [!Note]
 > Excel ライブラリ は Excel Binary Workbook (.xlsb) フォーマットを現時点ではサポートしていません。
 
@@ -174,10 +175,8 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
-> [!Note]
->For Angular
-><div class="divider--half"></div>
->
+<!--Angular -->
+
 ## ヒープの管理
 >
 >Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
@@ -210,8 +209,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
         // ...
       }
 ```
->
-<!-- -->
+<!--end:Angular-->
 
 ## API リファレンス
 

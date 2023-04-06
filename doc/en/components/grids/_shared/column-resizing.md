@@ -432,11 +432,10 @@ To get started with the styling of the `{ComponentName}` column resize line, we 
 
 The simplest approach to achieve this is to create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts many parameters as well as the `$resize-line-color` parameter.
 
-``` scss
+```scss
 $custom-grid-theme: grid-theme(
     $resize-line-color: #0288D1
 );
-
 ```
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.

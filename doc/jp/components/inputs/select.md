@@ -63,8 +63,9 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 > [!Note]
 > ヘッダーとグループの選択コンポーネントは、使用しない限り必須ではないことに注意してください。
 
-コンポーネントの使用を開始するには、選択する `igc-select-item` のリストとともに `igc-select` を追加します。
+コンポーネントの使用を開始するには、選択する `SelectItem` のリストとともに `Select` を追加します。
 
+<!-- WebComponents -->
 ```html
 <igc-select>
     <igc-select-item value="orange">Orange</igc-select-item>
@@ -73,17 +74,28 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
     <igc-select-item value="mango">Mango</igc-select-item>
 </igc-select>
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectItem Value="orange">Orange</IgbSelectItem>
+    <IgbSelectItem Value="apple">Apple</IgbSelectItem>
+    <IgbSelectItem Value="banana">Banana</IgbSelectItem>
+    <IgbSelectItem Value="mango">Mango</IgbSelectItem>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ### Select (選択)
 
-`igc-select` コンポーネントは `igc-form` 内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。
+`Select` コンポーネントは `Form` コンポーネント内で使用できるため、登録する `Name` プロパティを公開します。また、`Label`、`Placeholder`、および `Size` プロパティもあります。`Outlined` プロパティは、Material テーマに関してのみ、スタイリング目的で使用されます。デフォルトのスロットを除いて、コンポーネントは、`header`、`footer`、`helper-text`、`prefix`、`suffix`、および `toggle-icon` を含む他のいくつかのスロットを提供します。
 
 ### Item (項目)
 
-`igc-select-item` コンポーネントを使用すると、ユーザーは `igc-select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `igc-select-item` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
+`SelectItem` コンポーネントを使用すると、ユーザーは `Select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `SelectItem` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
 
 `sample="/inputs/select/item", height="220", alt="{Platform} Select Item の例"`
-
 
 
 ### Header (ヘッダー)
@@ -93,30 +105,99 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 `sample="/inputs/select/header", height="250", alt="{Platform} Select Header の例"`
 
 
+<!-- WebComponents -->
+```html
+<igc-select>
+    <igc-select-header>Tasks</igc-select-header>
+</igc-select>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectHeader>Tasks</IgbSelectHeader>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ### Group (グループ)
 
-複数の `igc-select-item` を `igc-select-group` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`igc-select-group` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
+複数の `SelectItem` を `SelectGroup` コンポーネントの開く括弧と閉じる括弧の間に配置して、ユーザーがそれらを視覚的にグループ化できるようにすることができます。`SelectGroup` は、その `label` スロットを介してラベルを付け、その `Disabled` プロパティを介して無効にすることができます。
 
 > [!Note]
 > 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
 `sample="/inputs/select/group", height="480", alt="{Platform} Select Group の例"`
 
+<!-- WebComponents -->
+```html
+<igc-select>
+    <igc-select-group>
+        <span slot="label">Europe</span>
 
+        <igc-select-item>
+          <igc-icon @ref="IconRef" slot="prefix" name="place" collection="material"></igc-icon>
+          Germany
+          <span slot="suffix">DE</span>
+        </igc-select-item>
+
+        <igc-select-item>
+          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+          France
+          <span slot="suffix">FR</span>
+        </igc-select-item>
+
+        <igc-select-item>
+          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+          Spain
+          <span slot="suffix">ES</span>
+        </igc-select-item>
+    </igc-select-group>
+</igc-select>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectGroup>
+        <span slot="label">Europe</span>
+
+        <IgbSelectItem>
+          <IgbIcon @ref="IconRef" slot="prefix" name="place" collection="material"></IgbIcon>
+          Germany
+          <span slot="suffix">DE</span>
+        </IgbSelectItem>
+
+        <IgbSelectItem>
+          <IgbIcon slot="prefix" name="place" collection="material"></IgbIcon>
+          France
+          <span slot="suffix">FR</span>
+        </IgbSelectItem>
+
+        <IgbSelectItem>
+          <IgbIcon slot="prefix" name="place" collection="material"></IgbIcon>
+          Spain
+          <span slot="suffix">ES</span>
+        </IgbSelectItem>
+    </IgbSelectGroup>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ## 検証
 
-さらに、`igc-select` は、`required`、`disabled`、`autofocus` など、ほとんどの `igc-input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
+さらに、`Select` は、`Required`、`Disabled`、`Autofocus` など、ほとんどの `Input` プロパティをサポートします。コンポーネントは、その検証にバインドされたメソッドも公開します。
 
-- reportValidity() - 有効性をチェックし、無効な場合はコンポーネントにフォーカスします。
+- `reportValidity` - 有効性をチェックし、無効な場合はコンポーネントにフォーカスします。
 
 ## キーボード ナビゲーション
 
 選択がフォーカスされ、オプションのリストが**表示されていない**場合:
 
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`igc-select` を開きます。
-- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`igc-select` を閉じます。
+- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせを使用するか、<kbd>Space</kbd> または <kbd>Enter</kbd> キーをクリックして、`Select` を開きます。
+- <kbd>ALT + 上矢印 / 下矢印</kbd> の組み合わせ、または <kbd>Enter</kbd>、<kbd>Space</kbd>、<kbd>Esc</kbd>、`Tab` キーのいずれかを使用して、`Select` を閉じます。
 - <kbd>上 / 左矢印</kbd> キーを使用すると、リスト内の前の項目が選択されます。
 - <kbd>下 / 右矢印</kbd> キーを使用すると、リスト内の次の項目が選択されます。
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目が選択されます。
@@ -130,13 +211,13 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 - <kbd>Home</kbd> キーまたは <kbd>End</kbd> キーを使用すると、リストの最初または最後の項目がアクティブになります。
 
 > [!Note]
-> `igc-select` コンポーネントは、項目の**単一**選択のみをサポートします。
+> `Select` コンポーネントは、項目の**単一**選択のみをサポートします。
 
 <!-- WebComponents -->
 
 ## スタイル設定
 
-以下に示す公開された CSS パーツを使用して、{ProductName} 選択コンポーネントとその項目の外観を変更できます。
+以下に示す公開された CSS パーツを使用して、{ProductName} `Select` コンポーネントとその項目の外観を変更できます。
 
 ### CSS パーツ
 
@@ -164,7 +245,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 | 部分名 | 説明 |
 | ---------|------------ |
-| `label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
+| `Label` | 選択したグループ項目の上にコンテンツを描画するラベル ラッパー。 |
 
 `sample="/inputs/select/styling", height="380", alt="{Platform} Select スタイル設定の例"`
 

@@ -276,7 +276,6 @@ public onDataLoaded(sds: IgrShapeDataSource, e: any) {
         name="heatTiles"
         tileImagery={this.state.tileImagery} />
 </IgrGeographicMap>
-
 ```
 
 ```ts

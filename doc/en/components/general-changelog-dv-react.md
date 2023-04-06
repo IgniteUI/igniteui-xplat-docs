@@ -41,7 +41,7 @@ These new chart improvements include:
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Changed `Column` to `DataGridColumn`
 * Changed `GridCellEventArgs` to `DataGridCellEventArgs`
@@ -49,7 +49,7 @@ These new chart improvements include:
 * Changed `SummaryOperand` to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -66,7 +66,7 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Feature Added:
 - [Row Paging](grids/data-grid/row-paging.md)
@@ -75,7 +75,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 ## **{PackageVerChanges-21-2.1}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 #### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
@@ -85,7 +85,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 
 - Changed `ValueField` property from type string[] to string.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
@@ -101,7 +101,7 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -136,7 +136,7 @@ This release introduces a few improvements and simplifications to visual design 
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Features Added:
     - [Filter Row](grids/data-grid/column-filtering.md)
@@ -153,7 +153,7 @@ This release introduces a few improvements and simplifications to visual design 
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -204,7 +204,7 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > These features are CTP
@@ -216,7 +216,7 @@ for example:
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
@@ -230,7 +230,7 @@ for example:
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 
@@ -249,7 +249,7 @@ for example:
 
 ## **{PackageVerChangedFields}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 > [!Note]
 > These breaking changes were introduce in the grid package.
@@ -274,7 +274,7 @@ income.field = "Income";
 
 ## **{PackageVerRenamedGrid}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - Changed Name of Live Grid
 

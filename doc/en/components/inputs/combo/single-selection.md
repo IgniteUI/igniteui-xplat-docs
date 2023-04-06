@@ -17,7 +17,11 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 <igc-combo single-select></igc-combo>
 ```
 
-`sample="/grids/combo/simplified", height="320", alt="{Platform} Single Selection Combo Example"`
+```razor
+<IgbCombo SingleSelect></IgbCombo>
+```
+
+`sample="/inputs/combo/simplified", height="320", alt="{Platform} Single Selection Combo Example"`
 
 <div class="divider--half"></div>
 
@@ -36,6 +40,16 @@ Here's how to select/deselect an item programmatically in a single selection com
 combo.select('BG01');
 ```
 
+```razor
+<IgbCombo SingleSelect @ref="Combo"></IgbCombo>
+
+@code {
+    private IgbCombo Combo;
+
+    this.Combo.Select(new object[] { "UK01" });
+}
+```
+
 To deselect an item without making a new selection, call the `deselect` method.
 
 #### Deselecting items:
@@ -43,6 +57,16 @@ To deselect an item without making a new selection, call the `deselect` method.
 ```ts
 // deselect the item matching the 'BG01' value of the value key field.
 combo.deselect('BG01');
+```
+
+```razor
+<IgbCombo SingleSelect @ref="Combo"></IgbCombo>
+
+@code {
+    private IgbCombo Combo;
+
+    this.Combo.Deselect(new object[] { "UK01" });
+}
 ```
 
 ## Disabled features

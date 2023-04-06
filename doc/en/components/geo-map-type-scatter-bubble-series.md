@@ -204,9 +204,7 @@ export class MapTypeScatterBubbleSeriesComponent implements AfterViewInit {
 
         this.map.series.add(symbolSeries);
     }
-
 }
-
 ```
 
 ```html

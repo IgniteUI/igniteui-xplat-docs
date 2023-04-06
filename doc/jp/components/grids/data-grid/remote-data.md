@@ -63,10 +63,7 @@ import { IgcDataGridModule } from 'igniteui-webcomponents-grids';
 import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
 import { ODataVirtualDataSource } from 'igniteui-webcomponents-dataSource';
 
-ModuleManager.register(
-    IgcDataGridModule
-    )
-
+ModuleManager.register(IgcDataGridModule);
 ```
 
 <div class="divider--half"></div>

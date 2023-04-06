@@ -137,7 +137,6 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
         chart.dataSource = info.rowItem.OrderHistory;
     }
 }
-
 ```
 
 ```razor
