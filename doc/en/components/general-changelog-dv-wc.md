@@ -23,6 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Data Grid)
 
+* A new argument `primaryKey` has been introduced to `IgbRowDataEventArgs`, and part of the event arguments that are emitted by the `rowAdded` and `rowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
 * `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
 * When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
 * When selected row is deleted from the grid component `rowSelectionChanging` event will no longer be emitted.
