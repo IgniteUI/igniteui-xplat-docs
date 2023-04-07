@@ -23,7 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Pivot Grid)
 
-* The `IgbPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+* The `IgbPivotDateDimension` properties `BaseDimension` and `Option` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
 
 ### {PackageDockManager} (DockManager)
 
