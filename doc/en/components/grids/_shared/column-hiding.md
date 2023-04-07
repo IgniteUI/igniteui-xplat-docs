@@ -574,20 +574,20 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Angular -->
 In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional {ProductName} component - the [**IgxRadio**](../radio-button.md) button.
-<!-- end: Angular -->
-
-<!-- Blazor -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar.
-<!-- end: Blazor -->
-
-The column hiding UI has a few more APIs to explore, which are listed below.
-
-* `ColumnActions`
 
 Additional components and/or directives with relative APIs that were used:
 
-`{ComponentName}` properties:
-* `HiddenColumnsCount`
+* `ColumnActionsComponent`
+<!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar. The column hiding UI has a few more APIs to explore, which are listed below.
+
+* `ColumnActionsComponent`
+
+Additional components and/or directives with relative APIs that were used:
+
+<!-- end: Blazor, WebComponents -->
 
 `Column` properties:
 * `DisableHiding`
@@ -602,6 +602,9 @@ Additional components and/or directives with relative APIs that were used:
 <!-- end: Angular -->
 
 `GridToolbar` methods:
+* `GridToolbarHiding`
+* `GridToolbarActions`
+* `GridToolbarTitle`
 
 `{ComponentName}` events:
 * `ColumnVisibilityChanged`
@@ -613,7 +616,6 @@ Styles:
 <!-- end: Angular -->
 
 ## Additional Resources
-
 
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
