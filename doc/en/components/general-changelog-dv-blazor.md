@@ -14,16 +14,16 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Data Grid)
 
-* A new argument `primaryKey` has been introduced to `IgbRowDataEventArgs` from `Detail`, and part of the event arguments that are emitted by the `rowAdded` and `rowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to null.
-* `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+* A new argument `PrimaryKey` has been introduced to `IgbRowDataEventArgs` from `Detail`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to null.
+* `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
 * When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-* When selected row is deleted from the grid component `rowSelectionChanging` event will no longer be emitted.
-* The `onGroupingDone` event has been renamed to `groupingDone` to not violate the no on-prefixed outputs convention.
-* The `onDensityChanged` event has been renamed to `densityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+* When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
+* The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
+* The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
 
 ### {PackageGrids} (Pivot Grid)
 
-* The `IgbPivotDateDimension` properties `inBaseDimension` and `inOption` have been deprecated and renamed to `baseDimension` and `options` respectively.
+* The `IgbPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
 
 ### {PackageDockManager} (DockManager)
 
@@ -34,8 +34,8 @@ All notable changes for each version of {ProductName} are documented on this pag
 * `IgbDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
 * `IgbRadio` and `IgbRadioGroup`, added component validation along with styles for invalid state
 * `IgbMask`, added the capability to escape mask pattern literals.
-* `IgbBadge` added a `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
-* `IgbAvatar`, the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
+* `IgbBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
+* `IgbAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
 
 ## **{PackageVerChanges-22-2.50}**
 
