@@ -365,7 +365,9 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
+<!-- Angular -->
 In order to provide a custom loading template for the excel style filtering, we can use the `ExcelStyleLoading` directive:
+<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">

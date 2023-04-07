@@ -17,10 +17,12 @@ In addition, you can define your own custom templates for update-data actions an
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
 
-
+<!-- Angular -->
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- end:Angular -->
 
 ## Cell Editing
 
@@ -715,7 +717,9 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
+<!-- Angular -->
 * `InputDirective`
+<!-- end:Angular -->
 * `DatePickerComponent`
 
 ## Additional Resources

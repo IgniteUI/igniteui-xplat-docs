@@ -148,8 +148,6 @@ For more detailed information regarding the Action Strip API, refer to the follo
 
 Additional components and/or directives that can be used within the Action Strip:
 
-<!-- Angular -->
-
 * `GridActionsBaseDirective`
 * `DividerDirective`
 

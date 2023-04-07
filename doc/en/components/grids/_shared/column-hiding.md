@@ -585,7 +585,7 @@ In this article we learned how to use the built-in column hiding UI in the `{Com
 
 * `ColumnActionsComponent`
 
-Additional components and/or directives with relative APIs that were used:
+Additional components with relative APIs that were used:
 
 <!-- end: Blazor, WebComponents -->
 
