@@ -240,7 +240,9 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 
 Customizing the buttons of the row editing overlay also possible via templating.
 
+<!-- Angular -->
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
+<!-- end:Angular -->
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
