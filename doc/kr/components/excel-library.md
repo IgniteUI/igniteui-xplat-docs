@@ -106,8 +106,7 @@ ExcelUtility.save(workbook, "fileName");
 
 ```
 
-> [!Note]
->For Angular
+<!-- Angular -->
 ><div class="divider--half"></div>
 >
 ## Managing Heap
@@ -143,4 +142,4 @@ ExcelUtility.save(workbook, "fileName");
       }
 ```
 >
-<!-- -->
+<!-- end:Angular -->
