@@ -505,7 +505,7 @@ The `CellEdit` emits whenever **any** cell's value is about to be committed. In 
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
         const column = event.column;
-        if (column.field === 'Ordered') {
+        if (column.field === 'UnitsOnOrder') {
             const rowData = event.rowData;
             if (!rowData) {
                 return;
