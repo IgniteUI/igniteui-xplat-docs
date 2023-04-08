@@ -167,6 +167,8 @@ public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
 }
 ```
 
+<!-- Angular -->
+
 ### Group Row Selector Templates
 
 As mentioned above the group row except for the expand/collapse UI is fully templatable. To create a custom Group By row selector template within the Grid, declare an `<ng-template>` with `GroupByRowSelector` directive. From the template, you can access the implicitly provided context variable, with properties that give you information about the Group By row's state.
@@ -216,6 +218,8 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
     </ng-template>
 </igx-grid>
 ```
+
+<!-- end:Angular -->
 
 ## {Platform} Grid Group By With Paging
 
