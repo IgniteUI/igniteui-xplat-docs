@@ -170,8 +170,7 @@ For a comprehensive look over each of the default UI components, continue readin
 ## Toolbar with Child Grids
 
 Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, there is a caveat when
-using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure
-to use the IgxGridToolbar directive on the toolbar itself and pass the provided grid instance as an input property to the toolbar itself.
+using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure to use the IgxGridToolbar and pass the provided grid instance as an input property to the toolbar itself.
 This will make sure you always have the correct grid instance in the scope of your template:
 
 ```html
@@ -208,7 +207,7 @@ Listed below are the main features of the toolbar with example code for each of 
 
 ### Title
 
-Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
+Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitle`.
 
 Users can provide anything from simple text to more involved templates.
 
@@ -226,7 +225,8 @@ Users can provide anything from simple text to more involved templates.
 
 ### Actions
 
-The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
+
+The `GridToolbarTitle` is where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 
@@ -742,14 +742,12 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
 * `GridToolbarTitleDirective`
-
 
 * `{ComponentName}` Events:
 * `ToolbarExporting`

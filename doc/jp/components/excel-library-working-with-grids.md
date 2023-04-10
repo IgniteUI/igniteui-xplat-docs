@@ -14,17 +14,13 @@ TODO
 
 `sample="/excel/excel-library/working-with-grids", height="500", alt="{Platform} グリッドと Excel ライブラリの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## 使用方法
 以下のコードはその方法を示しています。TODO
 
 ```ts
-
 TODO
-
 ```
 
 ## API リファレンス

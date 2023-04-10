@@ -760,7 +760,6 @@ class MyRowGhostComponent {
         }
     }
 }
-
 ```
 
 #### カーソル位置に基づいたドロップ インジケーターの表示

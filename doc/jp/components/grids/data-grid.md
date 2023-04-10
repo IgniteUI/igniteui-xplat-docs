@@ -670,7 +670,6 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```razor
-
 <IgbGrid ColumnInit=OnColumnInit />
 
 @code {
@@ -814,37 +813,27 @@ constructor() {
 const OBJECT_ARRAY = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: valueN
     },
-    .
-    .
-    .
+    // ...
   }];
 
 const POJO = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: {
           ObjectKeyN1: value1,
           ObjectKeyN2: value2,
-          .
-          .
-          .
+          // ...
           ObjectKeyNM: valueNM,
         }
     },
-    .
-    .
-    .
+    // ...
   }];
-
 ```
+
 >[!WARNING]
 >**キー値に配列を含まないでください。**
 

@@ -333,7 +333,6 @@ constructor() {
 public handleRowSelectionChange(args) {
     args.cancel = true; // this will cancel the row selection
 }
-
 ```
 
 ```razor
