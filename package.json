@@ -41,6 +41,7 @@
     "build-docfx-args": "tsc && gulp buildDocfx_WithArgs",
     "build-staging": "tsc && set NODE_ENV=staging && gulp buildDocfx_WithArgs",
     "build-production": "tsc && set NODE_ENV=production && gulp buildDocfx_WithArgs",
+    "verifyMarkdown": "tsc && gulp verifyMarkdown",
     "test": "tsc && mocha"
   },
   "keywords": [],

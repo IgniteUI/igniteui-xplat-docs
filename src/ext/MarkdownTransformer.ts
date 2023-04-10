@@ -1851,6 +1851,35 @@ export class MarkdownTransformer {
         return { fileContent: fileContent, isValid: mdValidated};
     }
 
+    verifyLinksAPI(fileContent: string, filePath: string): any {
+        var lines = fileContent.split('\n');
+        var links = [];
+        for (let i = 0; i < lines.length; i++) {
+            let line = lines[i];
+            if (line.includes('| ')) continue;
+
+            let words = line.split(' ');
+            for (const word of words) {
+
+                var item = word.replace('\r', '').replace(',', '');
+                if (item.includes('sample=')) continue;
+                if (item.includes('```')) continue;
+                if (item.includes('-')) continue;
+                if (item.includes('<')) continue;
+                if (item.includes('`string')) continue;
+                if (item.includes('`number')) continue;
+                if (item.includes('`boolean')) continue;
+
+                if (item.startsWith('`')) {
+                    links.push(item);
+                    // console.log( filePath + ':' + i + " " + item);
+                }
+            }
+        }
+
+        console.log(links);
+    }
+
     // updateGitIgnore(excludeFiles: string[])
     // {
     //     let gitIgnore = fs.readFileSync(".gitignore").toString();
