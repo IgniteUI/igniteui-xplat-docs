@@ -15,16 +15,16 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* 新しい引数 `primaryKey` が `Detail` から `IgbRowDataEventArgs` に導入されました。これは、`rowAdded` および `rowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで null 値になります。
-* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`oldSelection`、`newSelection`、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* 新しい引数 `PrimaryKey` が `Detail` から `IgbRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで null 値になります。
+* `RowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
 * グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
-* 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
-* `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
-* `onDensityChanged` イベントの名前が `densityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+* 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
+* `OnGroupingDone` イベントは `GroupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `OnDensityChanged` イベントの名前が `DensityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
 
 ### {PackageGrids} (ピボット グリッド)
 
-* `IgbPivotDateDimension` プロパティの `inBaseDimension` と `inOption` は廃止され、それぞれ `baseDimension` と `options` に名前が変更されました。
+* `IgbPivotDateDimension` プロパティの `BaseDimension` と `Option` は廃止され、それぞれ `BaseDimension` と `Options` に名前が変更されました。
 
 ### {PackageDockManager} (DockManager)
 
@@ -35,8 +35,8 @@ namespace: Infragistics.Controls.Charts
 * `IgbDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
 * `IgbRadio` および `IgbRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
 * `IgbMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgbBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
-* `IgbAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
+* `IgbBadge` は、バッジの形状を制御する `Shape` プロパティを追加し、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgbAvatar`、`RoundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。これは、`Square`、`Rounded`、または `Circle` にすることができます。アバターのデフォルトの形状は `Square`です。
 
 ## **{PackageVerChanges-22-2.50}**
 
