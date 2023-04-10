@@ -577,17 +577,17 @@ $custom-button: button-theme(
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
 
 
-Additional components and/or directives with relative APIs that were used:
+その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
 * `ColumnActionsComponent`
 <!-- end: Angular -->
 
 <!-- Blazor, WebComponents -->
-このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。The column hiding UI has a few more APIs to explore, which are listed below.
+このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
 
 * `ColumnActionsComponent`
 
-Additional components with relative APIs that were used:
+その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- end: Blazor, WebComponents -->
 
