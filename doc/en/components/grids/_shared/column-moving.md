@@ -11,17 +11,17 @@ namespace: Infragistics.Controls
 
 The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
 
-> [!Note]
+>
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
 
-> [!Note]
+>
 > If a column header is templated and the Column Moving is enabled or the corresponding column is groupable, then the templated elements need to have the **draggable** attribute set to **false**!
 
 <!-- Angular -->
 This allows to attach handlers for any event emitted by the element, otherwise the event is consumed by the `igxDrag` directive.
 <!-- end: Angular -->
 
-> [!Note]
+>
 > If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentName}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
 
 ```html
@@ -33,7 +33,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```razor
     public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
     };
 ```
 
@@ -75,9 +75,8 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 In addition to the drag and drop functionality, the Column Moving feature also provides API methods to allow moving a column/reordering columns programmatically:
 
-<!-- Angular -->
-
 `MoveColumn` - Moves a column before or after another column (a target). The first parameter is the column to be moved, and the second parameter is the target column. Also accepts an optional third parameter `Position` (representing a `DropPosition` value), which determines whether to place the column before or after the target column.
+
 
 ```typescript
 // Move the ID column after the Name column
@@ -87,18 +86,15 @@ const nameColumn = grid.getColumnByName("Name");
 grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; }
-    public IgbColumn Col2 { get; set; }
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
+        IgbColumn Col2 = await this.grid.GetColumnByVisibleIndexAsync(1);
         this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
 
-<!-- end: Angular -->
 
 `Move` - Moves a column to a specified visible index. If the passed index parameter is invalid (is negative, or exceeds the number of columns), or if the column is not allowed to move to this index (if inside another group), no operation is performed.
 
@@ -108,20 +104,13 @@ const idColumn = grid.getColumnByName("ID");
 idColumn.move(3);
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; };
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
         this.Col1.Move(3);
     }
 ```
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 Note that when using the column moving feature, the `ColumnMovingEnd` event will be emitted if the operation was successful. Also note that in comparison to the drag and drop functionality, using the column moving feature does not require setting the `Moving` property to true.
 
@@ -153,7 +142,7 @@ constructor() {
 
     this._bind = () => {
         dataGrid.data = this.data;
-        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
     }
     this._bind();
 }
@@ -162,8 +151,8 @@ constructor() {
 
 ```typescript
 public onColumnMovingEnd(event) {
-    if (event.source.field === "Category" && event.target.field === "Change On Year(%)") {
-        event.cancel = true;
+    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
 }
 ```
