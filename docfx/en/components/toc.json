@@ -113,12 +113,14 @@
     "status": "UPDATED"
   },
   {
+    "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
   },
   {
+    "note": "THIS MAIN NODE FOR NEW XPLAT GRID",
     "exclude": ["Angular", "React"],
     "name": "Grids & Lists",
     "header": true,

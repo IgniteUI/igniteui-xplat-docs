@@ -14,7 +14,7 @@ _language: ja
 
 ## {Platform} コンボボックスの例
 
-`sample="/inputs/combo/overview", height="320", alt="{Platform} Combo の例"`
+`sample="/inputs/combo/overview", height="400", alt="{Platform} Combo の例"`
 
 
 
@@ -133,7 +133,7 @@ combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
 
-`sample="/inputs/combo/selection", height="380", alt="{Platform} Combo 選択の例"`
+`sample="/inputs/combo/selection", height="400", alt="{Platform} Combo 選択の例"`
 
 
 
@@ -190,7 +190,7 @@ combo.deselect([cities[1], cities[5]]);
 | `footer`             | フッター コンテンツを保持するコンテナー。                                      |
 | `empty`              | 空のコンテンツを保持するコンテナ。                                       |
 
-`sample="/inputs/combo/styling", height="380", alt="{Platform} Combo スタイル設定の例"`
+`sample="/inputs/combo/styling", height="400", alt="{Platform} Combo スタイル設定の例"`
 
 
 
