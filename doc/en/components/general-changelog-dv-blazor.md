@@ -2,7 +2,7 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: [ComponentApiMembers, "SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, 'MaskInput']
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "Infragistics.Controls.DataGridCellEventArgs", "Infragistics.Controls.GridBaseDirective", "MaskInput", "Shape", "RoundShape"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -23,11 +23,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### {PackageGrids} (Pivot Grid)
 
-* The `IgbPivotDateDimension` properties `BaseDimension` and `Option` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
-
-### {PackageDockManager} (DockManager)
-
-* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
+* The `IgbPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
 
 ### {PackageInputs} (Inputs)
 
@@ -36,6 +32,10 @@ All notable changes for each version of {ProductName} are documented on this pag
 * `IgbMask`, added the capability to escape mask pattern literals.
 * `IgbBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
 * `IgbAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
+
+### {PackageDockManager} (DockManager)
+
+* [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
 
 ## **{PackageVerChanges-22-2.50}**
 
@@ -110,16 +110,16 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageDockManager} (DockManager)
-
-* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
-
 ### {PackageGrids} (Data Grid)
 
 * New Feature Added:
 - [Row Paging](grids/data-grid/row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### {PackageDockManager} (Dock Manager)
+
+* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The [Dock Manager](layouts/dock-manager.md) allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
 
 ### New Components
 
