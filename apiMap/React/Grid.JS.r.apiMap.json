@@ -518,6 +518,8 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"customFilterIndex"}],"originalName":"CustomFilterIndex"},
     { "names":[{"platform":"React","mappedType":"DataSourceSchemaPropertyType","mappedName":"dataType"}],"originalName":"DataType"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"maxHeight"}],"originalName":"MaxHeight"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"background"}],"originalName":"Background"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"operatorCaptionTrue"}],"originalName":"OperatorCaptionTrue"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"operatorCaptionFalse"}],"originalName":"OperatorCaptionFalse"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"operatorCaptionEquals"}],"originalName":"OperatorCaptionEquals"},
