@@ -21,7 +21,7 @@ To enable single-selection and quick filtering, set the `SingleSelect` property 
 <IgbCombo SingleSelect></IgbCombo>
 ```
 
-`sample="/inputs/combo/simplified", height="320", alt="{Platform} Single Selection Combo Example"`
+`sample="/inputs/combo/simplified", height="400", alt="{Platform} Single Selection Combo Example"`
 
 <div class="divider--half"></div>
 
