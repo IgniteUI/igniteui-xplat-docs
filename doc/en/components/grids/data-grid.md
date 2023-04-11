@@ -325,7 +325,7 @@ function formatUppercase(value) {
 }
 ```
 
-> [!Note]
+> **Note**:
 >Whenever a header template is used along with grouping/moving functionality the column header area becomes draggable and you cannot access the custom elements part of the header template until you mark them as not draggable. Example below.
 
 ```html
@@ -357,11 +357,11 @@ constructor() {
 public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="text">${ctx.cell.column.field}</div>
-        <igc-icon click="${toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igc-icon>
+        <igc-icon click="${this.toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igc-icon>
     `;
 }
 
-public toggleSummary(column: IgxColumnComponent) {
+public toggleSummary(column: IgcColumnComponent) {
 }
 ```
 
@@ -416,6 +416,7 @@ public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 
 public formatTitleCase(value: string) {
+    return value.toUpperCase();
 }
 ```
 
@@ -477,23 +478,24 @@ constructor() {
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.row.index)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
 public subscriptionCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
-    `;
-}
-
-public updateValue(value: boolean) {
+    if (ctx.cell.value) {
+            return html` <input type="checkbox" checked /> `;
+    } else {
+            return html` <input type="checkbox"/> `;
+    }
 }
 
 public deleteRow(rowId: number) {
+     this.grid.deleteRow(rowId);
 }
 
 public formatTitleCase(value: string) {
+    return value.toUpperCase();
 }
 ```
 
@@ -534,7 +536,7 @@ When changing data through the **cell template** using `ngModel`, you need to ca
 
 <!-- end: Angular -->
 
-> [!Note]
+> **Note**:
 > The grid exposes a default handling for number, string, date and boolean column types. For example, the column will display `check` or `close` icon, instead of true/false by default, for boolean column type.
 
 <!-- Angular -->
@@ -834,7 +836,7 @@ const POJO = [{
   }];
 ```
 
->[!WARNING]
+>**WARNING**:
 >**The key values must not contain arrays**.
 
 >If you use `AutoGenerate` columns **the data keys must be identical.**
