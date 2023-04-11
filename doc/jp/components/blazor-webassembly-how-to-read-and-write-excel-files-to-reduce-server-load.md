@@ -69,7 +69,7 @@ Blazor WebAssembly 上で Infragistics Blazor Excel ライブラリによる Exc
 Blazor WebAssembly プロジェクト中のフォールバックページである wwwroot/index.html ファイル中に、下記のように `<script>` タグを追加します。
 
 ```razor
-    ....
+    <!-- ... -->
     <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
     <!--👇 この行を追加 -->
     <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
@@ -86,14 +86,13 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
 
 ```razor
 @inject IJSRuntime JSRuntime
-...
+@* ... *@
 @code {
-    ...
+    // ...
     // ⚠️注意 - Blazor WebAssembly 上で Excel ライブラリを使うには、
     //          Workbook.InProcessRuntime 静的プロパティの初期設定が必要です。
     if (Workbook.InProcessRuntime == null)
         Workbook.InProcessRuntime = this.JSRuntime as IJSInProcessRuntime;
-    ...
 ```
 
 ### Workbook クラスを使って Excel ファイルを読み書き
@@ -103,12 +102,12 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
 ```razor
 @inject HttpClient HttpClient
 @inject IJSRuntime JSRuntime
-...
+@* ... *@
 @code
 {
-    ...
+    // ...
     private IEnumerable<EarthquakeCountParDay>? _EarthquakeCountParDays;
-    ...
+    // ...
     // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
     // </summary>
@@ -138,7 +137,6 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
         workBook.Save(memStream);
         await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application/octet-stream" ,memStream.ToArray());
     }
-    ...
 ```
 
 以上の手順にて、Blazor WebAssembly アプリケーション上で、ひな形となる Excel ファイルのセルを実データで埋めてダウンロードさせる処理が実現できました。
@@ -207,10 +205,10 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 ```razor
 @using Microsoft.AspNetCore.Components.WebAssembly.Services
-...
+@* ... *@
 @inject LazyAssemblyLoader AssemblyLoader
 @code {
-    ...
+    // ...
     // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
     // </summary>
@@ -224,7 +222,6 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
             "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
         });
-    ...
 ```
 
 ### 遅延読み込みするアセンブリに関係する処理を別のスコープに切り出す
@@ -238,15 +235,15 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 これは遅延読み込みを行なっているのと同じメソッドのスコープ内でその遅延読み込みされるアセンブリ内に存在する型を参照していると、まだそのアセンブリが読み込まれていないのに、そのメソッドのスコープ内の型を解決しようとして、この例外となってしまいます。この問題を回避するには、遅延読み込みされるアセンブリ内に存在している型 (このサンプル アプリケーションの例ですと、Workbook クラスなど) を参照している処理を、別の独立したメソッドに切り出し、そのメソッドを呼び出すようにします。下記はその抜粋です。
 
 ```razor
-...
+@* ... *@
 @code {
-    ...
+    // ...
     // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
     // </summary>
     private async Task OnClickedDownloadAsync()
     {
-        ...
+        // ...
         await this .AssemblyLoader.LoadAssembliesAsync(new []
         {
             "IgniteUI.Blazor.Documents.Core.dll",
@@ -266,7 +263,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
     {
         // このメソッド内で Workbook クラスを使った Excel ファイルの読み書きを行ないます
     }
-    ...
+    // ...
 ```
 
 ## まとめと記事のポイント
