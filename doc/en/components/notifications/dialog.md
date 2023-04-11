@@ -80,8 +80,11 @@ By default, the Dialog is closed automatically when the user presses `ESC`. You 
 
 Use the `CloseOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
 
+<!-- Angular, WebComponents -->
+
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing Variations"`
 
+<!-- end: Angular, WebComponents -->
 
 ### Form
 
