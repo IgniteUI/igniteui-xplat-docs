@@ -87,7 +87,7 @@ defineComponents(IgcStepperComponent);
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
+          <!-- ... -->
        </div>
     </igc-step>
 </igc-stepper>
