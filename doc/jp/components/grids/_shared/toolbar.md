@@ -243,7 +243,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+        <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
