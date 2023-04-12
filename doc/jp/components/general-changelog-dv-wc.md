@@ -3,45 +3,39 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-```md
-> [!Note]
-(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
-```
-
-
 ## **{PackageVerChanges-22-2.2}**
 
 ### {PackageGrids} (データ グリッド)
 
-* 新しい引数 `primaryKey` が `IgbRowDataEventArgs` に導入されました。これは、`rowAdded` および `rowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
-* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`oldSelection`、`newSelection`、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
+* `RowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
 * グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
-* 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
-* `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
-* `onDensityChanged` イベントの名前が `densityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+* 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
+* `OnGroupingDone` イベントは `GroupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `OnDensityChanged` イベントの名前が `DensityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+
+### {PackageInputs}
+
+* `IgcDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
+* `IgcRadio` および `IgcRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
+* `IgcMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
+* `IgcBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
 
 ### {PackageGrids} (ピボット グリッド)
 
-* `IgbPivotDateDimension` プロパティの `inBaseDimension` と `inOption` は廃止され、それぞれ `baseDimension` と `options` に名前が変更されました。
+* `IgcPivotDateDimension` プロパティの `InBaseDimension` と `InOption` は廃止され、それぞれ `BaseDimension` と `Options` に名前が変更されました。
 
 ### {PackageDockManager} (DockManager)
 
-* DockManager のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
-
-### {PackageInputs} (入力)
-
-* `IgbDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
-* `IgbRadio` および `IgbRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
-* `IgbMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgbBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
-* `IgbAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
+* [ドック マネージャー](layouts/dock-manager.md) のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
 
 ## **{PackageVerChanges-22-2.1}**
 
@@ -58,7 +52,7 @@ namespace: Infragistics.Controls.Charts
 * [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
-### {PackageCharts} (チャート)
+### {PackageCharts}
 
 デフォルトの動作を大幅に改善し、カテゴリ チャート API を改良して使いやすくしました。
 
@@ -98,7 +92,7 @@ namespace: Infragistics.Controls.Charts
 * `SummaryOperand` を `DataSourceSummaryOperand` に変更しました。
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} (チャート)
+### {PackageCharts}
 
 * 高度に構成可能な [DataLegend](charts/features/chart-data-legend.md) コンポーネントが追加されました。これは、`Legend` とよく似たコンポーネントですが、シリーズの値を表示し、シリーズの行と値の列をフィルタリングし、値のスタイルとフォーマットを行うための多くの構成プロパティを提供します。
 * 高度に構成可能な [DataToolTip](charts/features/chart-data-tooltip.md) が追加されました。これは、シリーズの値とタイトル、およびシリーズの凡例バッジをツールチップに表示します。これは、すべてのチャート タイプのデフォルトのツールチップになりました。
@@ -135,8 +129,10 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **2.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### 新しいコンポーネントとテーマ
+
+これらは **{PackageComponents}** パッケージでのみ関連しています。
 
 * [スライダー](inputs/slider.md)を追加しました。
 * [範囲スライダー](inputs/slider.md)を追加しました。
@@ -169,7 +165,7 @@ namespace: Infragistics.Controls.Charts
 
 - `ValueField` プロパティを string[] 型から string に変更しました。
 
-### {PackageInputs} (入力)
+### {PackageInputs}
 
 #### 日付ピッカー
 - `ValueChanged` イベントを `SelectedValueChanged` に変更しました。
@@ -181,8 +177,10 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **1.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### 新しいコンポーネント
+
+これらは **{PackageComponents}** パッケージでのみ関連しています。
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -321,7 +319,7 @@ namespace: Infragistics.Controls.Charts
 
 <div class="divider--half"></div>
 
-### {PackageGrids} (データ グリッド)
+### {PackageGrids}
 
 * `EditOnKeyPress`、(別名: Excel スタイルの編集) を追加し、入力するとすぐに編集を開始します。
 * `EditModeClickAction` プロパティを追加しました - デフォルトでは、編集モードに入るにはダブル クリックが必要です。これを `SingleClick` に設定して、新しいセルを選択するときに編集モードを実行できるようにすることができます。
@@ -335,7 +333,7 @@ namespace: Infragistics.Controls.Charts
 * スペース バーを押すと、MultipleRow または SingleRow に設定された `GridSelectionMode` プロパティを介してアクティブな行の選択が切り替わります。
 * 列オプション ダイアログに列集計を追加しました。
 
-### {PackageInputs} (入力)
+### {PackageInputs}
 
 #### 日付ピッカー
 
