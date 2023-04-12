@@ -94,8 +94,8 @@ This can be done by using the following code:
     // ...
     // ⚠️ Note-To use the Excel library on Blazor WebAssembly,
     // you need to initialize the Workbook.InProcessRuntime static property.
-    if (Workbook.InProcessRuntime == null )
-    Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
+    if (Workbook.InProcessRuntime == null)
+        Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
     // ...
 ```
 
@@ -133,14 +133,14 @@ Note that the download triggering process on Blazor applications used an MIT-lic
         var row = 2;
         foreach (var item in this._EarthquakeCountParDays)
         {
-            sheet.GetCell ($"A{row}").Value = item.Date;
-            sheet.GetCell ($"B{row}").Value = item.Count;
+            sheet.GetCell($"A{row}").Value = item.Date;
+            sheet.GetCell($"B{row}").Value = item.Count;
             row++;
         }
 
         // Export the completed Workbook object to a .xlsx file format and have it downloaded by your browser.
         await using var memStream = new MemoryStream();
-        workBook.Save (memStream);
+        workBook.Save(memStream);
         await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application / octet-stream" ,memStream.ToArray());
     }
     // ...

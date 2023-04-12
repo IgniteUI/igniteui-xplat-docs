@@ -310,7 +310,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -318,22 +318,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );

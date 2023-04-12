@@ -174,7 +174,7 @@ scrollbar-style="thin"
 ```ts
 import { PinnedPositions } from 'igniteui-webcomponents-grids';
 
-onButtonPinLeft () {
+onButtonPinLeft() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);
@@ -191,7 +191,7 @@ onButtonPinLeft () {
     this.grid.pinColumn(lastNameColumn, PinnedPositions.Left);
 }
 
-onButtonPinRight () {
+onButtonPinRight() {
 
     let streetColumn = this.grid.actualColumns.item(6);
     let cityColumn = this.grid.actualColumns.item(7);
@@ -208,7 +208,7 @@ onButtonPinRight () {
     this.grid.pinColumn(countryColumn, PinnedPositions.Right);
 }
 
-onButtonUnPin () {
+onButtonUnPin() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);
