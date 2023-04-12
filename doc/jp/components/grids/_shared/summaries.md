@@ -591,7 +591,7 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');
@@ -603,7 +603,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```typescript
 public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');

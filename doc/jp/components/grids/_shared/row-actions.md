@@ -149,8 +149,6 @@ import { IgxActionStripModule } from 'igniteui-angular';
 
 アクション ストリップで使用できるその他のコンポーネントとディレクティブ:
 
-<!-- Angular -->
-
 * `GridActionsBaseDirective`
 * `DividerDirective`
 
