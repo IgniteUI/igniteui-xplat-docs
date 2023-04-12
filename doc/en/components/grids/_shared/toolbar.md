@@ -243,7 +243,7 @@ toolbar interaction components.
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```

@@ -370,14 +370,12 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 カスタム ボタンを定義した後は、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
 
 ```scss
-// custom.component.scss
-...
+// in custom.component.scss
 
 $button-theme: button-theme(
   $palette: $purple-palette
 );
-
-...
+// ...
 .custom-buttons {
     @include button($button-theme);
   }

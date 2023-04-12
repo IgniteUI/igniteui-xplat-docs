@@ -68,7 +68,7 @@ _language: ja
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -76,7 +76,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );

@@ -119,10 +119,9 @@ function customMarkerTemplateFunc() {
            measureInfo.width = size;
            easureInfo.height = size;
        }
-   } 
+   }
 }
 
-...
 ```
 
 ## マーカーのカスタム描画オブジェクトの render メソッドを実装
@@ -137,7 +136,7 @@ function customMarkerTemplateFunc() {
 
 function customMarkerTemplateFunc() {
     return {
-        ...
+        // ...
         render: function(renderInfo) {
             // 引数に渡された renderInfo に描画のための座標関係の情報がつまっているので、
             // これを取り出しておく
@@ -148,7 +147,7 @@ function customMarkerTemplateFunc() {
             // マーカーの塗りつぶしの色は、描画するデータの Color プロパティ値を使う
             // (ちなみに、既定のマーカーの塗りつぶし色は、
             //  renderInfo.data.actualItemBrush.fill に格納されています)
-            const color = renderInfo.data.item.Color; 
+            const color = renderInfo.data.item.Color;
             // HTML Canvas 要素の 2D コンテキストに対して、マーカーの描画を実行
             // (measure メソッドで算定した大きさで、真円のマーカーを描画)
             const ctx = renderInfo.context;
@@ -159,7 +158,6 @@ function customMarkerTemplateFunc() {
         }
     }
 }
-...
 ```
 なお、HTML Canvas の 2D コンテキストに対して行える処理は何でも実行可能ですので、どのようなカスタム描画も実装できます。
 
@@ -175,7 +173,7 @@ measure および render メソッドが実装できたら、残りの作業は�
 // wwwroot/customMarkerTemplateFunc.js
 
 function customMarkerTemplateFunc() {
-    ...
+    // ...
 }
 
 // 上で実装したファクトリー関数を、Ignite UI に登録します。
@@ -191,8 +189,8 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 (function() {
     function customMarkerTemplateFunc() {
-        ...
-    } 
+        // ...
+    }
     igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
@@ -206,10 +204,9 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
 
 <!-- Ignite UI for Blazor の JavaScript よりあとで、
-     マーカー表示のカスタム描画の JavaScript プログラムを読み込み --> 
+マーカー表示のカスタム描画の JavaScript プログラムを読み込み -->
 
 <script src="customMarkerTemplateFunc.js"></script>
-... 
 ```
 
 ## マーカー描画に指定のスクリプト名の JavaScript プログラムを使うよう指定
@@ -221,9 +218,9 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```razor
 @* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
 <IgbDataChart Height="320px" Width="320px">
-    ... 
-    <IgbScatterSeries ...
-        ...
+    @* ... *@
+    <IgbScatterSeries
+        @* ... *@
         MarkerTemplateScript="customMarkerTemplateFunc"/>
 </IgbDataChart>
 ```
