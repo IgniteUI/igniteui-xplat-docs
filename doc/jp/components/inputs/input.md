@@ -140,17 +140,17 @@ Input コンポーネントは、その内部要素のほとんどすべての C
 | helper-text | ヘルパー テキスト ラッパー。 |
 
 ```scss
-igc-input::part(input){
+igc-input::part(input) {
     background-color: rgb(169, 214, 229);
     border-color: rgb(42, 111, 151);
 }
 
-igc-input::part(label){
+igc-input::part(label) {
     color: rgb(1, 42, 74);
 }
 
 igc-input::part(prefix),
-igc-input::part(suffix){
+igc-input::part(suffix) {
     color: white;
     border-color: rgb(42, 111, 151);
     background-color: rgb(70, 143, 175);

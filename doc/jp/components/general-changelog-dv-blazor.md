@@ -3,7 +3,7 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: [ComponentApiMembers, "SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand, 'MaskInput']
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "Infragistics.Controls.DataGridCellEventArgs", "Infragistics.Controls.GridBaseDirective", "MaskInput", "Shape", "RoundShape"]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
@@ -15,28 +15,28 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageGrids} (データ グリッド)
 
-* 新しい引数 `primaryKey` が `Detail` から `IgbRowDataEventArgs` に導入されました。これは、`rowAdded` および `rowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで null 値になります。
-* `rowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`oldSelection`、`newSelection`、`added` および `removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* 新しい引数 `PrimaryKey` が `Detail` から `IgbRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで null 値になります。
+* `RowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
 * グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
-* 選択された行がグリッド コンポーネントから削除されると、`rowSelectionChanging` イベントは発生しなくなります。
-* `onGroupingDone` イベントは `groupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
-* `onDensityChanged` イベントの名前が `densityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+* 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
+* `OnGroupingDone` イベントは `GroupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `OnDensityChanged` イベントの名前が `DensityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
 
 ### {PackageGrids} (ピボット グリッド)
 
-* `IgbPivotDateDimension` プロパティの `inBaseDimension` と `inOption` は廃止され、それぞれ `baseDimension` と `options` に名前が変更されました。
-
-### {PackageDockManager} (DockManager)
-
-* DockManager のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
+* `IgbPivotDateDimension` プロパティの `InBaseDimension` と `InOption` は廃止され、それぞれ `BaseDimension` と `Options` に名前が変更されました。
 
 ### {PackageInputs} (入力)
 
 * `IgbDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
 * `IgbRadio` および `IgbRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
 * `IgbMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgbBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
-* `IgbAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
+* `IgbBadge` は、バッジの形状を制御する `Shape` プロパティを追加し、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgbAvatar`、`RoundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。これは、`Square`、`Rounded`、または `Circle` にすることができます。アバターのデフォルトの形状は `Square`です。
+
+### {PackageDockManager} (DockManager)
+
+* [ドック マネージャー](layouts/dock-manager.md)のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
 
 ## **{PackageVerChanges-22-2.50}**
 
@@ -111,16 +111,16 @@ namespace: Infragistics.Controls.Charts
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
 * 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-### {PackageDockManager} (DockManager)
-
-* {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。ドック マネージャーを使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
-
 ### {PackageGrids} (データ グリッド)
 
 * 新規機能:
 - [行のページング](grids/data-grid/row-paging.md)
 
 ページネーションは、大量のデータセットを類似したコンテンツを持つ一連のページに分割するために使用されます。ページネーションを使用すると、データを設定された行数で表示することができ、ユーザーはスクロール バーを使用せずにデータを順次閲覧することができます。テーブル ページネーションの UI には通常、現在のページ、合計ページ、ユーザーがページをめくるためのクリック可能な [前へ] と [次へ] の矢印 / ボタンなどが含まれます。
+
+### {PackageDockManager} (DockManager)
+
+* {Platform} ドック マネージャーは 現在「プレビュー」です。ドックマネージャーにより、さまざまなサイズ、位置、動作をするペインによって複雑なレイアウトを管理し、アプリ内のさまざまな場所にドッキングできます。[ドック マネージャー](layouts/dock-manager.md)を使用すると、エンドユーザーは、ピン固定、サイズ変更、移動、フローティング、および非表示にするなど、ペインをカスタマイズすることができます。
 
 ### 新しいコンポーネント
 

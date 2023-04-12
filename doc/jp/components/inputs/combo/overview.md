@@ -90,7 +90,33 @@ export class Sample {
 ```
 
 ```razor
-<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Cities" />
+<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
+
+@code {
+    private class City {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+    }
+
+    private List<City> Data = new List<City> {
+        new City {
+            Id = "UK01",
+            Name = "London",
+            Country = "United Kingdom",
+        },
+        new City {
+            Id = "BG01",
+            Name = "Sofia",
+            Country = "Bulgaria",
+        },
+        new City {
+            Id = "US01",
+            Name = "New York",
+            Country = "United States",
+        },
+    };
+}
 ```
 
 ### データ値と表示プロパティ
@@ -118,11 +144,53 @@ combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
 
+```razor
+<IgbCombo
+    @ref="Combo"
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
+    DisplayKey="Name">
+</IgbCombo>
+
+@code {
+    private List<City> Data;
+    private IgbCombo Combo;
+    private object[] Cities;
+
+    protected override void OnInitialized() {
+        this.Data = SampleData.Cities;
+        this.Cities = new object[] { "UK01", "UK02", "UK03", "UK04", "UK05" };
+    }
+
+    public void SelectCities() {
+        this.Combo.Select(Cities);
+    }
+
+    public void DeselectCities() {
+        this.Combo.Deselect(Cities);
+    }
+}
+```
+
 #### すべての項目を選択 / 選択解除:
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
+```
+
+```razor
+@code {
+    public void SelectAll() {
+        this.Combo.Select(new object[] {});
+    }
+
+    public void DeselectAll() {
+        this.Combo.Deselect(new object[] {});
+    }
+}
 ```
 
 `ValueKey` プロパティを省略した場合は、オブジェクト参照として選択 / 選択解除する項目を列挙する必要があります。

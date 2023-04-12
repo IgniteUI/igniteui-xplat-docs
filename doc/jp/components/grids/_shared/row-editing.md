@@ -241,7 +241,9 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 
 テンプレート化を使用した行編集オーバーレイのボタンのカスタマイズも可能です。
 
+<!-- Angular -->
 キーボード ナビゲーションにボタンを含める場合、各ボタンに `RowEditTabStopDirective` が必要です。
+<!-- end:Angular -->
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
@@ -368,15 +370,16 @@ public rowEditActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 カスタム ボタンを定義した後は、[button-theme]({environment:sassApiUrl}/index.html#function-button-theme) を使用してスタイルを設定できます。[こちら](../button.md#スタイル設定)で `igx-button` のスタイリングについてさらに学ぶことができます。`完了`と`キャンセル`のカスタム テーマを作成できます。
 
 ```scss
-// in custom.component.scss
+// custom.component.scss
+// ...
 
 $button-theme: button-theme(
   $palette: $purple-palette
 );
-// ...
+
 .custom-buttons {
     @include button($button-theme);
-  }
+}
 ```
 
 `@include` ステートメントを `.custom-buttons` でスコープ設定して、`[完了]` ボタンと`[キャンセル]` ボタンにのみ適用されるようにします。
