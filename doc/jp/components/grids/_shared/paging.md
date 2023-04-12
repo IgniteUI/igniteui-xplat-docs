@@ -150,7 +150,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### 子グリッド内のページネーター設定
 
+<!-- Angular -->
 `{ComponentName}` の子グリッドの実装方法および DI スコープの動作には一定の制限があるため、`RowIsland` タグ内でページネーターコンポーネントを定義する場合、ページネーター自体で `Paginator` ディレクティブを必ず使用してください。これにより、子グリッドが参照として正しいページネーター インスタンスを持つようになります。
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>

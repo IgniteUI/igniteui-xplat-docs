@@ -644,13 +644,11 @@ const column = this.grid.getColumnByName("User");
 column.bodyTemplate = this.smallView;
 ```
 <!-- end: Angular -->
-
 ```html
 <igc-grid>
     <!-- Column declarations -->
 </igc-grid>
 ```
-
 ```typescript
 var user = this.user = document.getElementById('user') as IgcColumnComponent;
 // Return the appropriate template based on some condition.

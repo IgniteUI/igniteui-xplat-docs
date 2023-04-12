@@ -575,20 +575,21 @@ $custom-button: button-theme(
 
 <!-- Angular -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
-<!-- end: Angular -->
 
-<!-- Blazor -->
-このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。
-<!-- end: Blazor -->
-
-以下は、列非表示 UI のその他の API です。
-
-* `ColumnActions`
 
 その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
-`{ComponentName}` プロパティ:
-* `HiddenColumnsCount`
+* `ColumnActionsComponent`
+<!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
+
+* `ColumnActionsComponent`
+
+その他のコンポーネント (またはそのいずれか) で使用した API:
+
+<!-- end: Blazor, WebComponents -->
 
 `Column` プロパティ:
 * `DisableHiding`
@@ -603,6 +604,9 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 `GridToolbar` メソッド:
+* `GridToolbarHiding`
+* `GridToolbarActions`
+* `GridToolbarTitle`
 
 `{ComponentName}` イベント:
 * `ColumnVisibilityChanged`
@@ -614,7 +618,6 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 ## その他のリソース
-
 
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)

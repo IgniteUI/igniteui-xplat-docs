@@ -15,7 +15,7 @@ _language: ja
 
 ### テンプレート駆動で構成する
 
-{Platform} Forms 検証ディレクティブは、`Column` で直接動作するよう拡張されています。同じ検証が `Column` で宣言的に設定される属性として利用できます。以下の検証は追加設定なしでサポートされます。
+{Platform} Forms 検証は、`Column` で直接動作するよう拡張されています。同じ検証が `Column` で宣言的に設定される属性として利用できます。以下の検証は追加設定なしでサポートされます。
 
 - Required
 - Min
@@ -24,6 +24,8 @@ _language: ja
 - MinLength
 - MaxLength
 - Pattern
+
+<!-- Angular -->
 
 列入力が設定され、値がメールとして書式設定されることを検証するには、関連するディレクティブを使用できます。
 
@@ -38,10 +40,6 @@ _language: ja
 以下のサンプルは、`{ComponentName}` に組み込み済みの `Required`、`Email` および `Min` 検証ディレクティブを使用する方法を示しています。
 
 `sample="/{ComponentSample}/data-validator-service", height="600", alt="{Platform} {ComponentTitle} 検証の基本例"`
-
-
-
-<!-- Angular -->
 
 ### リアクティブ フォームで構成する
 

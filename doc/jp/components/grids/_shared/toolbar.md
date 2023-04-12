@@ -171,7 +171,7 @@ _language: ja
 ## 子グリッド付きのツールバー
 
 IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動作には特定の制限があるため、子グリッドのスコープでツールバーを使用する場合は注意が必要です。
-`igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ずツールバー自体で IgxGridToolbar ディレクティブを使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
+`igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ず IgxGridToolbar を使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
 
 これにより、テンプレートのスコープ内に常に正しいグリッド インスタンスが含まれるようになります。
 
@@ -209,7 +209,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ### Title (タイトル)
 
-グリッドのツールバーのタイトルを設定するには、`GridToolbarTitleDirective` を使用します。
+グリッドのツールバーのタイトルを設定するには、`GridToolbarTitle` を使用します。
 
 ユーザーは、単純なテキストからより複雑なテンプレートまで、どんなものでも提供できます。
 
@@ -227,7 +227,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ### 操作
 
-`GridToolbarTitleDirective` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
+`GridToolbarTitle` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
 ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
 ```html
@@ -740,14 +740,12 @@ $dark-input-group-theme: input-group-theme(
 
 以下は、Grid Toolbar サービスのその他の API です。
 
-* `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
 * `GridToolbarTitleDirective`
-
 
 * `{ComponentName}` イベント:
 * `ToolbarExporting`
