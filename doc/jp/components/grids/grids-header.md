@@ -162,7 +162,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
     visibility: visible;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
     div#list-features-included {
         -webkit-box-orient: vertical;

@@ -530,10 +530,10 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 $custom-button-schema: extend($_dark-button,
     (
         flat-text-color:(
-           color:("secondary", 500)
+           color: ("secondary", 500)
         ),
         disabled-color:(
-           color:("primary", 700)
+           color: ("primary", 700)
         )
     )
 );

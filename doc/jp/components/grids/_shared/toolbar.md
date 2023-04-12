@@ -454,7 +454,7 @@ export class AppModule { ... }
             excel-text="Custom text for the excel export entry"
             csv-text="Custom text for the CSV export entry"
         </igc-grid-toolbar-exporter>
-    </igxc-grid-toolbar-actions>
+    </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
 

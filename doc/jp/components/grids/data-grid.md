@@ -726,7 +726,7 @@ public initColumns(column: IgcGridColumn) {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
         IgbColumn column = args.Detail;
-        if(column.Field == "ProductName"){
+        if (column.Field == "ProductName") {
             column.Sortable = true;
             column.Editable = true;
         }
@@ -792,11 +792,11 @@ constructor() {
 ```razor
 <IgbColumn Field="OrderDate"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 
 <IgbColumn Field="UnitPrice"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 ```
 
 `OrderDate` 列は `Format` および `Timezone` プロパティのみに遵守しますが、`UnitPrice` は `DigitsInfo` のみに遵守します。
@@ -1122,10 +1122,10 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public getName(rowId: number){
+public getName(rowId: number) {
     //row.data['name']
 }
-public getWeight(rowId: number){
+public getWeight(rowId: number) {
     //row.data['weight']['molecular']
 }
 ```
@@ -1357,7 +1357,7 @@ public getAge(rowId: number) {
 //In JavaScript:
 igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
     const people = ctx.cell.value;
@@ -1608,7 +1608,7 @@ public updatePostalCode(rowId: number) {
 //In JavaScript:
 igRegisterScript("AddressEditCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
 

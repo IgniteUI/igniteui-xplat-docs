@@ -47,7 +47,7 @@ Column pinning is controlled through the `Pinned` property of the `Column`. Pinn
 <igc-grid id="grid1" width="700px" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
     <igc-column field="AthleteNumber"></igc-column>
-    <igc-column field="TrackProgress"></igxc-column>
+    <igc-column field="TrackProgress"></igc-column>
     <igc-paginator per-page="10">
     </igc-paginator>
 </igc-grid>
@@ -251,7 +251,7 @@ This can be done by creating a header template for the column with a custom icon
 ```html
 <igx-grid #grid1 [data]="data" [width]="'100%'" [height]="'500px'">
     <igx-column #col *ngFor="let c of columns" [field]="c.field" [header]="c.header" [width]="c.width" [pinned]='c.pinned'
-        [hidden]='c.hidden' [headerClasses]="'customHeaderSyle'">
+        [hidden]='c.hidden' [headerClasses]="'customHeaderStyle'">
         <ng-template igxHeader>
             <div class="title-inner">
                 <span style="float:left">{{col.header}}</span>
@@ -448,7 +448,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
             <igc-column field="Quantity" width="150px"></igx-column>
             <igc-column field="Discount" width="150px"></igx-column>
         </igc-row-island>
-    </igxc-row-island>
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -580,8 +580,8 @@ Extend one of the two predefined schemas, that are provided for every component.
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
     pinned-border-style: double,
-    pinned-border-color: color:("secondary", 500),
-    cell-active-border-color: color:("secondary", 500)
+    pinned-border-color: color: ("secondary", 500),
+    cell-active-border-color: color: ("secondary", 500)
 ));
 ```
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.

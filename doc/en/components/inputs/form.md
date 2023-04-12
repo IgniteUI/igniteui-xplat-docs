@@ -118,10 +118,10 @@ The Form component exposes the following methods:
 
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
-|`submit`|Submits the form data.|
-|`reset`|Resets the form data.|
-|`getFormData`|Collects the form data and returns a single FormData object.|
-|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
+| `Submit` | Submits the form data.|
+| `Reset` | Resets the form data.|
+| `GetFormData` | Collects the form data and returns a single FormData object.|
+| `ReportValidity` | Returns whether the element's child controls satisfy their validation constraints.|
 
 <div class="divider"></div>
 
