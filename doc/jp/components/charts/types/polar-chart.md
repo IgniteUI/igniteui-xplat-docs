@@ -93,9 +93,7 @@ _language: ja
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
 - `ItemsSource`
-- `AngleAxisName`
 - `AngleMemberPath`
-- `RadiusAxisName`
 - `RadiusMemberPath`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

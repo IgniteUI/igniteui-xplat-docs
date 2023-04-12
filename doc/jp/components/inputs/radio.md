@@ -293,28 +293,28 @@ builder.Services.AddIgniteUIBlazor(
 
 ```tsx
 <IgrRadioGroup>
-  <IgrRadio name="option1" value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio name="option2" value="banana"><span>Banana</span></IgrRadio>
-  <IgrRadio name="option3" value="Mango"><span>Mango</span></IgrRadio>
-  <IgrRadio name="option4" value="orange"><span>Orange</span></IgrRadio>
+  <IgrRadio name="fruit" value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio name="fruit" value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio name="fruit" value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio name="fruit" value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
 ```
 
 ```html
 <igc-radio-group>
-  <igc-radio name="option1" value="apple">Apple</igc-radio>
-  <igc-radio name="option2" value="banana">Banana</igc-radio>
-  <igc-radio name="option4" value="mango">Mango</igc-radio>
-  <igc-radio name="option3" value="banana">Orange</igc-radio>
+  <igc-radio name="fruit" value="apple">Apple</igc-radio>
+  <igc-radio name="fruit" value="banana">Banana</igc-radio>
+  <igc-radio name="fruit" value="mango">Mango</igc-radio>
+  <igc-radio name="fruit" value="banana">Orange</igc-radio>
 </igc-radio-group>
 ```
 
 ```razor
 <IgbRadioGroup>
-    <IgbRadio Name="option1" Value="apple">Apple</IgbRadio>
-    <IgbRadio Name="option2" Value="banana">Banana</IgbRadio>
-    <IgbRadio Name="option3" Value="mango">Mango</IgbRadio>
-    <IgbRadio Name="option4" Value="orange">Orange</IgbRadio>
+    <IgbRadio Name="fruit" Value="apple">Apple</IgbRadio>
+    <IgbRadio Name="fruit" Value="banana">Banana</IgbRadio>
+    <IgbRadio Name="fruit" Value="mango">Mango</IgbRadio>
+    <IgbRadio Name="fruit" Value="orange">Orange</IgbRadio>
 </IgbRadioGroup>
 ```
 

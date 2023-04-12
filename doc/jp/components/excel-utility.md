@@ -9,7 +9,6 @@ _language: ja
 
 [Excel ライブラリ](excel-library.md)には、Microsoft Excel ファイルの読み込みや保存が可能なユーティリティ関数があります。
 
-
 <!-- Angular -->
 ```ts
 import { saveAs } from "file-saver"; // npm package: "file-saver": "^1.3.8"
@@ -110,8 +109,6 @@ export class ExcelUtility {
         });
     }
 }
-
-
 ```
 
 <!-- React -->
@@ -222,7 +219,6 @@ export class ExcelUtility {
         });
     }
 }
-
 ```
 
 <!-- WebComponents -->

@@ -285,9 +285,8 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 *LOCALE_ID を使用する場合:*
 ```ts
 import { LOCALE_ID } from '@angular/core';
-...
-
- @Component({
+// ...
+@Component({
     selector: 'app-component.sample',
     templateUrl: 'grid-component.sample.html',
     providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }]
@@ -520,7 +519,7 @@ public init(column: IgxColumnComponent) {
 
 <!-- end: Angular -->
 
-```html
+<!-- ```html
 <igc-grid id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
@@ -559,7 +558,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 public formatCurrency(value: number) {
 
 }
-```
+``` -->
 
 <!-- ```razor
 TO DO!
@@ -576,7 +575,7 @@ TO DO!
 
 ## その他のリソース
 
-* カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
 
 * [編集](editing.md)
 * [集計](summaries.md)

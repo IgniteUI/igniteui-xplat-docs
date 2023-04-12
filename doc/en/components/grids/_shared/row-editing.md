@@ -240,7 +240,9 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 
 Customizing the buttons of the row editing overlay also possible via templating.
 
+<!-- Angular -->
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
+<!-- end:Angular -->
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
@@ -368,16 +370,15 @@ After we've defined our custom buttons, we can make use of the [button-theme]({e
 
 ```scss
 // custom.component.scss
-...
+// ...
 
 $button-theme: button-theme(
   $palette: $purple-palette
 );
 
-...
 .custom-buttons {
     @include button($button-theme);
-  }
+}
 ```
 
 We scope our `@include` statement in `.custom-buttons` so that it is only applied to the `Done`and `Cancel` buttons.

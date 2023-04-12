@@ -119,8 +119,6 @@ public createPolylineSeries(flight: any)
     lineSeries.shapeStroke = flight.color;
     this.geoMap.series.add(lineSeries);
 }
-
-
 ```
 
 ```ts

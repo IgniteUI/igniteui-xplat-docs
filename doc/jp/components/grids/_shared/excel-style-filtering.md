@@ -10,7 +10,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} の Excel スタイル フィルタリング
 
-グリッド Excel フィルタリングは、{Platform} `{ComponentName}` に対して Excel のようなフィルタリング UI を提供します。
+{Platform} `{ComponentName}` は、Excel のようなフィルタリング UI を提供する Excel スタイルのフィルタリング機能を公開します。
 
 ## {Platform} {ComponentTitle} Excel スタイル フィルタリングの例
 
@@ -19,7 +19,7 @@ _language: ja
 
 ## 使用方法
 
-Excel フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
+`Grid` コンポーネントの Excel スタイル フィルタリングをオンにするには、2 つの入力を設定します。`AllowFiltering` を **true** に設定し、`FilterMode` を `ExcelStyleFilter` に設定してください。
 
 <!-- Angular -->
 ```html
@@ -238,17 +238,54 @@ Add blazor snippets here
 `sample="/{ComponentSample}/excel-style-filtering-sample-2", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 2"`
 
 
-<!-- TODO -- there is still no excel style filtering components. Uncomment the below section once they exist. -->
-<!-- ## Templates
-TODO: check when decide how to support directives
+## テンプレート
 
-If you want to further customize the Excel style filter menu without disabling the column features you could use custom templates. The Excel Style filter menu provides two directives for templating:
-- `IgxExcelStyleColumnOperationsTemplateDirective` - re-templates the area with all column operations like sorting, pinning, etc.
-- `IgxExcelStyleFilterOperationsTemplateDirective` - re-templates the area with all filter specific operations.
+<!-- Angular -->
 
-You could either re-template only one of those areas or both of them. You could put any custom content inside those directives or you could use any of our built-in Excel style filtering components.
+列機能を無効にせずに Excel スタイル フィルター メニューをさらにカスタマイズする場合は、カスタム テンプレートを使用できます。Excel スタイル フィルター メニューには、テンプレート化のための 2 つのディレクティブがあります。
+- `IgxExcelStyleColumnOperationsTemplateDirective` - ソート、移動、固定などのすべての列操作で領域を再テンプレート化します。
+- `IgxExcelStyleFilterOperationsTemplateDirective` - すべてのフィルター固有の操作で領域を再テンプレート化します。
 
-The following code demonstrates how to define a custom Excel style filter menu using the `excel-style-header`, `excel-style-sorting` and `excel-style-search` components. -->
+これらの領域の 1 つだけ、または両方を再テンプレート化できます。これらのディレクティブ内にカスタム コンテンツを配置したり、組み込みの Excel スタイル フィルタリング コンポーネントを使用できます。
+
+次のコードは、`excel-style-header`、`excel-style-sorting`、および `excel-style-search` コンポーネントを使用してカスタム Excel スタイル フィルター メニューを定義する方法を示しています。
+
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+
+Excel スタイル フィルター メニューをさらにカスタマイズする場合は、`ExcelStyleHeaderIconTemplate` プロパティを使用して、メニューのヘッダー アイコンのカスタム テンプレートを定義できます。
+
+次のコードは、`ExcelStyleHeaderIconTemplate` を使用して Excel スタイル フィルター メニューをカスタマイズする方法を示しています。
+
+```razor
+<IgbGrid    
+    Name="grid"
+    @ref="grid"
+    Data="Data"    
+    AllowFiltering="true"
+    FilterMode="FilterMode.ExcelStyleFilter"
+    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate"/>
+
+*** In JavaScript ***
+igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+        return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
+}, false);
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.excelStyleHeaderIconTemplate = this.webGridFilterAltIconTemplate;
+}
+
+public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
+}
+```
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- ComponentStart: Grid -->
 
@@ -278,7 +315,7 @@ The following code demonstrates how to define a custom Excel style filter menu u
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-grid id="grid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" filter-mode="ExcelStyleFilter">
 
     <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
@@ -298,7 +335,7 @@ Add razor snipets
     </igc-grid-excel-style-filtering>
 
 </igc-grid>
-```
+``` -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -330,7 +367,7 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true"
     primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
 
@@ -351,7 +388,7 @@ Add razor snipets
     </igc-grid-excel-style-filtering>
 
 </igc-tree-grid>
-```
+``` -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -400,7 +437,7 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-hierarchical-grid class="hgrid" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter"
     height="650px" width="100%" row-height="65px" id="hierarchicalGrid">
 
@@ -437,14 +474,15 @@ Add razor snipets
         </igc-grid-excel-style-filtering>
 
 </igc-hierarchical-grid>
-```
+``` -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<!-- You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive: -->
-
 <!-- Angular -->
+
+`ExcelStyleHeaderIcon` ディレクティブを使用して、列ヘッダーの Excel スタイル フィルタリング アイコンを再テンプレート化することもできます。
+
 ```html
 <{ComponentSelector}>
     <ng-template igxExcelStyleHeaderIcon>
@@ -452,21 +490,19 @@ Add razor snipets
     </ng-template>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-<!-- ```razor
-Templating header icon
-``` -->
 
 ```ts
-
 public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`<igx-icon>filter_alt</igx-icon>`;
 }
 ```
 
+<!-- end: Angular -->
+
 `sample="/{ComponentSample}/excel-style-filtering-sample-3", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 3"`
 
+
+<!-- Angular -->
 
 以下は、使用可能な Excel スタイルフィルタリング コンポーネントの完全なリストです。
 - `Excel-style-header`
@@ -477,62 +513,73 @@ public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 - `Excel-style-selecting`
 - `Excel-style-clear-filters`
 - `Excel-style-conditional-filter`
-- `Excel-style-search` -->
+- `Excel-style-search`
+
+<!-- end: Angular -->
+
+<!-- Angular -->
 
 ## 一意の列値戦略
 
 Excel スタイル フィルタリング ダイアログ内のリスト項目は、それぞれの列の一意の値を表します。これらの値は手動で提供し、ロード オン デマンドすることができます。詳細については、[{ComponentTitle} リモート データ操作](remote-data-operations.md#一意の列値ストラテジ)で説明されています。
 
-<!-- TODO -- uncomment below section when we can define a filtering strategy on the grid. -->
-<!-- ## Formatted Values Filtering Strategy
+<!-- end: Angular -->
 
-By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values. -->
+<!-- Angular -->
+
+ ## 書式設定された値のフィルタリング ストラテジ
+
+デフォルトでは、{ComponentTitle} コンポーネントは元のセル値に基づいてデータをフィルター処理しますが、場合によっては、書式設定された値に基づいてデータをフィルター処理することが必要になる場合があります。
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-<!-- In order to do that you can use the `FormattedValuesFilteringStrategy`. -->
+これを行うには、`FormattedValuesFilteringStrategy` を使用できます。
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-<!-- In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`. -->
+そのためには、`TreeGridFormattedValuesFilteringStrategy` を使用できます。
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values: -->
+以下のサンプルは、列の数値を文字列として書式設定し、文字列値に基づいて {ComponentTitle} をフィルターする方法を示します。
 
-<!--
+
 
 `sample="/{ComponentSample}/filtering-strategy", height="620", alt="{Platform} {ComponentTitle} filtering strategy"`
 
 
 > [!Note]
->The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
+>データの同じフィールドに複数の列がバインドされていて、1 つの列にフォーマッタがある場合、書式設定された値のフィルタリング ストラテジは正しく動作しません。
+
+<!-- end: Angular -->
 
 <!-- ComponentStart: TreeGrid -->
-<!-- ## Tree Filter View
 
-By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
+## ツリー フィルター ビュー
+
+デフォルトでは、Excel スタイル フィルタリング ダイアログはリスト ビューで項目を表示します。それらをツリー ビューに表示するには、`TreeGridFilteringStrategy` を使用して、列フィールド名の配列を指定します。フィルター項目は、指定された列の場合はツリー ビューに、他のすべての列の場合はリスト ビューに表示されます。次のサンプルは、最初の列のツリー ビューにフィルター項目を表示する方法を示しています:
 
 `sample="/{ComponentSample}/filter-view", height="650", alt="{Platform} {ComponentTitle} filter view"`
 
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- TODO -- No excel style filtering component -->
-<!-- ## External Excel Style filtering
+<!-- Angular -->
 
-As you see at the demos above the default appearance of the Excel Style filtering dialog is inside the `{ComponentName}`. So this dialog is only visible when configuring the filters. There is a way to make that dialog stay always visible - it can be used outside of the grid as a standalone component. In the demo below, the Excel style filtering is declared separately of the `{ComponentName}`.
+## 外部の Excel スタイル フィルタリング
 
-### Demo
+上記デモで示されるように、Excel スタイル フィルタリング ダイアログのデフォルトの外観は `{ComponentName}` 内にあります。このダイアログは、フィルターを構成するときにのみ表示されます。ダイアログはグリッドの外部でスタンドアロン コンポーネントとして使用すると、常に表示になります。以下のデモでは、Excel スタイル フィルタリングが `{ComponentName}` とは別に宣言されます。
+
+### デモ
 
 `sample="/{ComponentSample}/external-excel-style-filtering", height="620", alt="{Platform} {ComponentTitle} external excel style filtering"`
 
 
-### Usage
+### 使用方法
 
-In order to configure the Excel style filtering component, you should set its `Column` property to one of the {ComponentTitle}'s columns. In the sample above, we have bound the `Column` property to the value of an SelectComponent that displays the {ComponentTitle}'s columns. -->
+Excel スタイル フィルタリング コンポーネントを設定するには、その `Column` プロパティを {ComponentTitle} の列の 1 つに設定する必要があります。上記のサンプルでは、{ComponentTitle} の列を表示する SelectComponent の値に `Column` プロパティをバインドしています。
 
 
 <!-- ComponentStart: Grid -->
@@ -604,15 +651,20 @@ Add snippet for blazor
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- TODO -- uncomment below when there is igxOverlayOutlet -->
-<!-- ## External Outlet
+<!-- end: Angular -->
 
-The {ComponentTitle}'s [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) creates separate stacking context for each grid in the DOM. This ensures that all descendant elements of the grid will render as intended, without overlapping one another.
-However, elements that go outside of the grid (e.g. Excel Style filter) will conflict with outside elements with the same `z-index` (e.g. having two grids one under another) resulting in false rendering. The solution for this issue is to set the `Outlet` property to an external outlet directive which allows the overlay elements to always appear on top.
+<!-- Angular -->
 
-### Demo
+## 表示要素が重なる場合のアウトレット設定
+
+{ComponentTitle} の [z-index](https://developer.mozilla.org/ja/docs/Web/CSS/z-index) は、DOM のグリッドごとに個別のスタック コンテキストを作成します。これにより、グリッドのすべての子孫要素が互いに重ね合うことなく意図したとおりに描画されます。
+ただし、グリッドの外側にある要素 (Excel スタイル フィルターなど) は、同じ `z-index` を持つ外側の要素 (たとえば、2 つのグリッドが上下に重ねる) と競合し、誤った描画が発生します。この問題の解決策は、`Outlet` プロパティを外部アウトレット ディレクティブに設定して、オーバーレイ要素が常に一番上に表示されるようにすることです。
+
+### デモ
 
 `sample="/{ComponentSample}/external-outlet", height="700", alt="{Platform} {ComponentTitle} external outlet"`
+
+<!-- end: Angular -->
 
 
 <!-- Angular -->
@@ -928,10 +980,11 @@ $custom-drop-down: drop-down-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
 ## API リファレンス
 
 * `Column`
-
+* `Grid`
 
 ## その他のリソース
 

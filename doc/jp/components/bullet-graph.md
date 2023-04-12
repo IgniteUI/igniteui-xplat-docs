@@ -29,10 +29,10 @@ _language: ja
 ## 依存関係
 gauge パッケージのインストール時に core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
@@ -90,8 +90,8 @@ ModuleManager.register(
                    width="300"
                    minimumValue="5"
                    maximumValue="55"
-                   value = "35"
-                   targetValue = "43">
+                   value="35"
+                   targetValue="43">
         <igx-linear-graph-range startValue="0"
                                 endValue="15"
                                 brush="#828181">
@@ -132,7 +132,7 @@ ModuleManager.register(
     minimum-value="5"
     maximum-value="55"
     value="35"
-    target-value = "43">
+    target-value="43">
     <igc-linear-graph-range
       start-value="0"
       end-value="15"

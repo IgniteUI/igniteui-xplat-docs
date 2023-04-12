@@ -18,12 +18,12 @@ With above prerequisites installed, we can create a new React application.
 
 2 - Type one of these commands in terminal window:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npx create-react-app my-app-name --typescript
-</pre>
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```
+```cmd
 yarn create react-app my-app-name --typescript
-</pre>
+```
 
 Refer to this <a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">website</a> for more information on above commands.
 
@@ -71,15 +71,15 @@ This topic provides step-by-step instructions for creating Web Components applic
 
 To create an application from scratch and configure it to use the Ignite UI Web Components you can use the Ignite UI CLI. The first step is to install the respective package globally as follows:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install -g igniteui-cli
-</pre>
+```
 
 If you want to get a guided experience through the available options, you can initialize the step by step mode that will help you create and setup your new application. To start the guide, simply run the `ig` command:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig
-</pre>
+```
 
 Then choose Web Components as framework, select `Base` project template, add a specific component/view or select `Complete & Run`.
 Additionally, you can read more about the Ignite UI CLI [here](general-cli-overview.md).
@@ -102,7 +102,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 ## Install Ignite UI for Web Components
 In order to use the Ignite UI Web Components in your application you should install the `igniteui-webcomponents` package:
 
-```
+```cmd
 npm install igniteui-webcomponents
 ```
 
@@ -136,36 +136,36 @@ After the components are imported you can use them in your html:
 ## Step 1 - Create the Web Component Project
 
 1 - Open a command line and create a directory named **wc-html**
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 mkdir wc-html
-</pre>
+```
 
 2 - Change the command line path to the newly created directory
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 cd wc-html
-</pre>
+```
 
 3 - Initialize **npm** in the directory
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm init -y
-</pre>
+```
 
 4 - Install the **webpack** bundler and the **webpack cli** as a developer dependency
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install webpack webpack-cli --save-dev
-</pre>
+```
 
 > [!Note]
 > Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
 5 - Open the project in **VS Code**
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 code .
-</pre>
+```
 
 6 - Create a new file named **index.html** with this code:
 
-```
+```html
 <html>
     <head>
         <title>Getting Started with Ignite UI for Web Components</title>
@@ -182,7 +182,7 @@ code .
 
 8 - Update the **package.json** file to include a build script using **webpack**
 
-```
+```json
   "scripts": {
     "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
@@ -193,7 +193,7 @@ code .
 >
 > If a **javaScript heap out of memory** issue occurs while building you can increase the heap size by using this build command instead:
 
-```
+```json
 "scripts": {
     "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
@@ -205,9 +205,9 @@ code .
 
 2 - Type this command to install the web component polyfills:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install @webcomponents/custom-elements
-</pre>
+```
 
 3 - Import the web component polyfills into **index.js**
 ```ts
@@ -219,12 +219,12 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 
 1 - Install the Ignite UI for Web Component using **npm**. In this example, we will install the Map web component:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
 npm install lit-html
-</pre>
+```
 
 2 - Import the Geographic Map modules and **ModuleManager** in **index.js** file:
 
@@ -257,9 +257,9 @@ ModuleManager.register(
 
 1 - Open a terminal in **VS Code** and execute the **build** script
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm run build
-</pre>
+```
 
 > [!Note]
 > This command will run the build script we created earlier. The build script will generate a file named **index.bundle.js** in a folder named **dist**
@@ -294,25 +294,25 @@ npm run build
 
 If you want to use {ProductName} in an existing {Platform} CLI project (one that you have from before). We have you covered! All you have to do is execute these commands:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCharts} {PackageCore}
 npm install --save {PackageExcel} {PackageCore}
 npm install --save {PackageGauges} {PackageCore}
 npm install --save {PackageGrids} {PackageCore}
 npm install --save {PackageMaps} {PackageCore}
 npm install --save {PackageSpreadsheet} {PackageCore}
-</pre>
+```
 
 Or
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 yarn add {PackageCharts} {PackageCore}
 yarn add {PackageExcel} {PackageCore}
 yarn add {PackageGauges} {PackageCore}
 yarn add {PackageGrids} {PackageCore}
 yarn add {PackageMaps} {PackageCore}
 yarn add {PackageSpreadsheet} {PackageCore}
-</pre>
+```
 
 This will automatically install packages for {ProductName}, along with all of their dependencies, font imports and styles references to the existing project.
 
@@ -347,7 +347,6 @@ ModuleManager.register(
     IgcGeographicMapModule,
     IgcDataChartInteractivityModule
 );
-
 ```
 
 ## Using Components
@@ -382,9 +381,9 @@ render() {
 
 Finally, we can run our new application by using one of the following commands:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm run-script start
-</pre>
+```
 
 After executing this command, your project will be built and served locally on your computer. It will automatically open in your default browser and you will be able to use {ProductName} components in your project.
 
@@ -425,9 +424,9 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ### .NET 6 Applications
 
-1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - Open the **Program.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
-```
+```razor
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

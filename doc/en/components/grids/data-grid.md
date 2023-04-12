@@ -147,9 +147,9 @@ import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -636,7 +636,7 @@ public normalView: TemplateRef<any>;
 @ViewChild("smallView", { read: TemplateRef })
 public smallView: TemplateRef<any>;
 
-....
+// ...
 
 const column = this.grid.getColumnByName("User");
 // Return the appropriate template based on some condition.
@@ -670,7 +670,6 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```razor
-
 <IgbGrid ColumnInit=OnColumnInit />
 
 @code {
@@ -808,43 +807,33 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJO (Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: valueN
     },
-    .
-    .
-    .
+    // ...
   }];
 
 const POJO = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: {
           ObjectKeyN1: value1,
           ObjectKeyN2: value2,
-          .
-          .
-          .
+          // ...
           ObjectKeyNM: valueNM,
         }
     },
-    .
-    .
-    .
+    // ...
   }];
-
 ```
+
 >[!WARNING]
 >**The key values must not contain arrays**.
 

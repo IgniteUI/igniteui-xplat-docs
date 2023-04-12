@@ -281,7 +281,6 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
         this.map.series.add(symbolSeries);
     }
 }
-
 ```
 
 ```razor

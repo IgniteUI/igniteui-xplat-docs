@@ -208,7 +208,6 @@ export class MapTypeShapePolylineSeriesComponent implements AfterViewInit {
         this.map.series.add(lineSeries);
     }
 }
-
 ```
 
 ```html

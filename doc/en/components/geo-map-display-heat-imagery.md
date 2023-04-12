@@ -91,8 +91,7 @@ import { IgrGeographicTileSeries } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 import { IgrTileGeneratorMapImagery } from 'igniteui-react-maps';
 import { IgrShapeDataSource } from 'igniteui-react-core';
-...
-
+// ...
 IgrDataChartInteractivityModule.register();
 IgrGeographicMapModule.register();
 ```
@@ -276,7 +275,6 @@ public onDataLoaded(sds: IgrShapeDataSource, e: any) {
         name="heatTiles"
         tileImagery={this.state.tileImagery} />
 </IgrGeographicMap>
-
 ```
 
 ```ts
