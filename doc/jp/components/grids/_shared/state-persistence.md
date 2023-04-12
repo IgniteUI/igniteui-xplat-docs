@@ -541,13 +541,6 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentEnd: PivotGrid -->
 
-
-## API リファレンス
-
-* `{ComponentName}`
-* `GridStateDirective`
-
-
 ## その他のリソース
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->

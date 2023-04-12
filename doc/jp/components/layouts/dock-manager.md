@@ -613,7 +613,7 @@ igc-dockmanager::part(content-pane) {
 
 ドック マネージャーには、light (明るい) テーマと dark (暗い) テーマがあります。Light テーマがデフォルトです。Dark に変更するには、**igc.themes.css** ファイルを css にインポートし、**dark-theme** クラスをドック マネージャーまたはその親に追加します。
 
-```
+```scss
 @import '~igniteui-dockmanager/dist/collection/styles/igc.themes';
 ```
 

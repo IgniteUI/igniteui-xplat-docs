@@ -67,7 +67,7 @@ First we need to import the `DragDropModule` in our app module:
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -75,7 +75,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -419,9 +419,11 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 ### Row Reordering Demo
 
+<!-- Angular -->
 With the help of the grid's row drag events and the `Drop` directive, you can create a grid that allows you to reorder rows by dragging them.
 
 Since all of the actions will be happening _inside_ of the grid's body, that's where you have to attach the `Drop` directive:
+<!-- end:Angular -->
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
@@ -761,6 +763,8 @@ class MyRowGhostComponent {
 }
 ```
 
+<!-- Angular -->
+
 #### Displaying a Drop Indicator based on Cursor Position
 
 In the demo in the next section you see how you can display an indicator of where the dragged row would be dropped. You can customize this indicator as you like - it may be a placeholder row, placed at the position where the dragged row would be dropped, a border style indicating if the dragged row would be dropped above or below the currently hovered row, etc.
@@ -830,8 +834,6 @@ private changeHighlightedElement(newElement: HTMLElement) {
   }
 }
 ```
-
-<!-- Angular -->
 
 #### Scrolling the Grid on Row Drag
 
@@ -916,10 +918,9 @@ Following is the example of both scenarios described above - showing a drop indi
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-
 ## Limitations
 
-Currently, there are no known limitations for the `RowDraggable` directive.
+Currently, there are no known limitations for the `RowDraggable`.
 
 ## API References
 

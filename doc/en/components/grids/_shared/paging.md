@@ -149,7 +149,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### Paginator Configuration within Child Grids
 
+<!-- Angular -->
 Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>

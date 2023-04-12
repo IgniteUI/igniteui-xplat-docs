@@ -562,10 +562,11 @@ builder.Services.AddIgniteUIBlazor(
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+        <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {

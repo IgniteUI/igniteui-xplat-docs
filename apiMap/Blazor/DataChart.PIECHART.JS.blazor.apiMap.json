@@ -117,6 +117,7 @@
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"IsSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"Blazor","mappedType":"bool"  ,"mappedName":"ShouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"Blazor","mappedType":"LegendEmptyValuesMode","mappedName":"LegendEmptyValuesMode"}],"originalName":"LegendEmptyValuesMode"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"PixelScalingRatio"}],"originalName":"PixelScalingRatio"},
     { "names":[{"platform":"Blazor","mappedType":"double","mappedName":"ActualPixelScalingRatio"}],"originalName":"ActualPixelScalingRatio"},
     { "names":[{"platform":"Blazor","mappedType":"SliceSelectionMode","mappedName":"SelectionMode"}],"originalName":"SelectionMode"},
