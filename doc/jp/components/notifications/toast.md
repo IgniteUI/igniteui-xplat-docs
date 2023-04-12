@@ -97,7 +97,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
     public void OnToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Show();
         }
@@ -114,13 +114,13 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onShowButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.show();
     }
 }
@@ -158,7 +158,7 @@ public onShowButtonClicked() {
 
     public void OnToggleToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Toggle();
         }
@@ -166,7 +166,7 @@ public onShowButtonClicked() {
 
     public void OnToggleKeepOpenButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.KeepOpen = !this.ToastRef.KeepOpen;
         }
@@ -174,7 +174,7 @@ public onShowButtonClicked() {
 
     public void OnDisplayTimeButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.DisplayTime = 8000;
         }
@@ -199,25 +199,25 @@ public onShowButtonClicked() {
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onToggleButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.toggle();
     }
 }
 
 public onKeepOpenButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.keepOpen = !this.toastRef.keepOpen;
     }
 }
 
 public onDisplayTimeButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.displayTime = 8000;
     }
 }

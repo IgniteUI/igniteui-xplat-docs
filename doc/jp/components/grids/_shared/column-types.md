@@ -286,6 +286,7 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 ```ts
 import { LOCALE_ID } from '@angular/core';
 // ...
+
 @Component({
     selector: 'app-component.sample',
     templateUrl: 'grid-component.sample.html',

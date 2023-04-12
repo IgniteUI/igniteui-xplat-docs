@@ -69,13 +69,10 @@ Blazor WebAssembly 上で Infragistics Blazor Excel ライブラリによる Exc
 Blazor WebAssembly プロジェクト中のフォールバックページである wwwroot/index.html ファイル中に、下記のように `<script>` タグを追加します。
 
 ```razor
-    <!-- ... -->
-    <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
     <!--👇 この行を追加 -->
-    <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
-    <script src="_framework/blazor.webassembly.js"></script>
-  </body>
-</html>
+<script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
+<script src="_framework/blazor.webassembly.js"></script> </body></ html>
 ```
 
 ### Workbook.InProcessRuntime 静的プロパティを設定
@@ -183,17 +180,16 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 まずは Blazor WebAssembly のプロジェクトファイル (.csproj) にて、`<ItemGroup>` 要素内に `<BlazorWebAssemblyLazyLoad>` 要素を並べて、遅延読み込みさせたいアセンブリファイル (.dll) の名前を列記します。Infragistics Blazor Excel ライブラリが提供するアセンブリファイルを遅延読み込みさせる例が下記となります。
 
-```xml
-<!-- Blazor WebAssembly のプロジェクトファイル (.csproj) -->
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
-  ...
-  <!-- 遅延読み込みさせたいアセンブリファイル (.dll) のファイル名を、
-         BlazorWebAssemblyLazyLoad 要素で指定します。 -->
+```razor
+<!- Blazor WebAssembly のプロジェクト ファイル (.csproj) ->
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly" >
+
+  <!- 遅延読み込みさせたいアセンブリ ファイル (.dll) のファイル名を、BlazorWebAssemblyLazyLoad 要素で指定します。 ->
   <ItemGroup>
     <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Core.dll" />
     <BlazorWebAssemblyLazyLoad Include="IgniteUI.Blazor.Documents.Excel.dll" />
   </ItemGroup>
-  ...
+
 </ Project>
 ```
 
@@ -205,8 +201,8 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
 
 ```razor
 @using Microsoft.AspNetCore.Components.WebAssembly.Services
-@* ... *@
 @inject LazyAssemblyLoader AssemblyLoader
+@* ... *@
 @code {
     // ...
     // <summary>
