@@ -86,7 +86,7 @@ Call the SuspendCalculations () and ResumeCalculations () methods of the Workboo
 ```razor
 @using Infragistics.Documents.Excel
 // ...
-var workbook = Workbook.Load ( "path-to-your-file" );
+var workbook = Workbook.Load("path-to-your-file");
 
 // Calling SuspendCalculations function will stop the automatic calculation of formulas.
 workbook.SuspendCalculations();

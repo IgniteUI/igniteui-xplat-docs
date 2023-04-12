@@ -148,8 +148,8 @@
         "href": "grids/grid/cell-selection.md",
         "status": ""
       },
-      {
-        "exclude": ["Angular", "React"],
+      {      
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
         "name": "クリップボードの操作",
         "href": "grids/grid/clipboard-interactions.md",
         "status": ""
