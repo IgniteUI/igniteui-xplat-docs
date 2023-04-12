@@ -356,8 +356,8 @@ constructor() {
 
 public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <div class="text">${ctx.cell.column.field}</div>
-        <igc-icon click="${this.toggleSummary(ctx.cell.column)}" [attr.draggable]="false">functions</igc-icon>
+        <div class="text">${ctx.column.field}</div>
+        <igc-icon click="${this.toggleSummary(ctx.cell.column)}" name="functions"></igc-icon>
     `;
 }
 
@@ -374,8 +374,8 @@ igRegisterScript("ProductNameHeaderTemplate", (ctx) => {
     var html = window.igTemplating.html;
 
     return html`
-        <div class="text">${ctx.cell.column.field}</div>
-        <igc-icon [attr.draggable]="false">functions</igc-icon>
+        <div class="text">${ctx.column.field}</div>
+        <igc-icon name="functions"></igc-icon>
     `;
 }, false)
 ```
@@ -431,7 +431,7 @@ igRegisterScript("NameCellTemplate", (ctx) => {
 }, false);
 
 function formatTitleCase(value) {
-    return value;
+    return value.toUpperCase();
 }
 ```
 
@@ -478,7 +478,7 @@ constructor() {
 
 public nameCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.row.index)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id.rowIndex)}">${this.formatTitleCase(ctx.cell.value)}</span>
     `;
 }
 
@@ -490,8 +490,8 @@ public subscriptionCellTemplate = (ctx: IgcCellTemplateContext) => {
     }
 }
 
-public deleteRow(rowId: number) {
-     this.grid.deleteRow(rowId);
+public deleteRow(rowIndex: number) {
+     this.grid.deleteRow(rowIndex);
 }
 
 public formatTitleCase(value: string) {
@@ -500,33 +500,36 @@ public formatTitleCase(value: string) {
 ```
 
 ```razor
-<IgbGrid AutoGenerate=false>
+<IgbGrid Id="grid" AutoGenerate=false>
     <IgbColumn Field="Name" BodyTemplateScript="NameCellTemplate" />
     <IgbColumn Field="Subscription" BodyTemplateScript="SubscriptionCellTemplate" />
 </IgbGrid>
 
 //In JavaScript:
 igRegisterScript("NameCellTemplate", (ctx) => {
-    var html = window.igTemplating.html;
+       var html = window.igTemplating.html;
     return html`
-        <span tabindex="0" onkeydown="${this.deleteRow(ctx.cell.id)}">${this.formatTitleCase(ctx.cell.value)}</span>
+        <span tabindex="0" @keyup=${(e) => this.deleteRow(e, ctx.cell.id.rowIndex)}> ${this.formatTitleCase(ctx.cell.value)}</span >
     `;
 }, false);
 
 igRegisterScript("SubscriptionCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    return html`
-        <input type="checkbox" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}" />
-    `;
+     if (ctx.cell.value) {
+            return html` <input type="checkbox" checked /> `;
+    } else {
+            return html` <input type="checkbox"/> `;
+    }
 }, false);
 
-function updateValue(value) {
-}
-
-function deleteRow(rowId) {
+function deleteRow(e, rowIndex) {
+    if (e.code === "Delete") {
+        this.grid.deleteRow(rowIndex);
+    }
 }
 
 function formatTitleCase(value) {
+    return value.toUpperCase();
 }
 ```
 
@@ -602,11 +605,12 @@ igRegisterScript("PriceCellTemplate", (ctx) => {
         <label>
             Enter the new price tag
         </label>
-        <input name="price" type="number" value="${ctx.cell.value}" onchange="${this.updateValue(ctx.cell.value)}"  />
+        <input name="price" type="number" value="${ctx.cell.value}"
+        @change=${(e) => this.updateValue(e, ctx.cell.value)} />
     `;
 }, false);
 
-function updateValue(value) {
+function updateValue(event, value) {
 }
 ```
 
@@ -1153,19 +1157,20 @@ igRegisterScript("AbbreviationLongCellTemplate", (ctx) => {
         <div>
             <div>
                 ${ctx.cell.value}
-                ${this.GetName(ctx.cell)}
-                ${this.GetWeight(ctx.cell)}
+                ${this.GetName(ctx.cell.id.rowIndex)}
+                ${this.GetWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
     `;
 }, false);
 
-function GetName(value) {
+function GetName(rowIndex) {
+    return this.grid.getRowByIndex(rowIndex).data["Name"];
 
 }
 
-function GetWeight(value) {
-
+function GetWeight(rowIndex) {
+return this.grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
 }
 ```
 
