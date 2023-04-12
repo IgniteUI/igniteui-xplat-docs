@@ -28,7 +28,7 @@ jobs:
       run: npm ci
     - name: DotNet tool restore
       run: dotnet tool restore
-    - name: Build WebComponents
+    - name: Build Angular
       run: npm run build-docfx-angular
     - name: Test Angular
       run: npm run test --testPlatform=Angular
