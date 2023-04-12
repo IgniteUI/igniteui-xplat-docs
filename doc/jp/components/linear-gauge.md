@@ -100,9 +100,9 @@ ModuleManager.register(
 ```tsx
  <IgrLinearGauge width="700px"
                    height="30px"
-                   minimumValue = {5}
-                   maximumValue = {55}
-                   value = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={43}>
     <IgrLinearGraphRange startValue={0}
                             endValue={15}
                             brush="red"/>
