@@ -561,10 +561,11 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+    <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {
