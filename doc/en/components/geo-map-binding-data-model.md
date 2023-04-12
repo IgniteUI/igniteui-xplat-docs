@@ -364,13 +364,13 @@ createPolylineSeries(flight: any)
         WorldCity cityLAX = new WorldCity() { Lat = 34.000, Lon = -118.25, Country = "US", Name = "Los Angeles" };
 
         this.DataSource = new List<FlightInfo>() {
-            new FlightInfo(){ Origin = cityDAL, Dest = citySNG, Color = "Green" },
-            new FlightInfo(){ Origin = cityMOS, Dest = cityNZL, Color = "Red" },
-            new FlightInfo(){ Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
-            new FlightInfo(){ Origin = cityPAN, Dest = cityROM, Color = "Orange" },
-            new FlightInfo(){ Origin = cityALT, Dest = cityJOH, Color = "Black" },
-            new FlightInfo(){ Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
-            new FlightInfo(){ Origin = cityLAX, Dest = citySYD, Color = "Gray" },
+            new FlightInfo() { Origin = cityDAL, Dest = citySNG, Color = "Green" },
+            new FlightInfo() { Origin = cityMOS, Dest = cityNZL, Color = "Red" },
+            new FlightInfo() { Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
+            new FlightInfo() { Origin = cityPAN, Dest = cityROM, Color = "Orange" },
+            new FlightInfo() { Origin = cityALT, Dest = cityJOH, Color = "Black" },
+            new FlightInfo() { Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
+            new FlightInfo() { Origin = cityLAX, Dest = citySYD, Color = "Gray" },
         };
     }
 

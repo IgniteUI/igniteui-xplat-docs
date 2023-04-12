@@ -92,7 +92,7 @@ public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 // wwwroot/customMarkerTemplateFunc.js
 function customMarkerTemplateFunc() {
     return {
-        measure: function(mesureInfo) {},
+        measure: function(measureInfo) {},
         render: function(renderInfo) {}
    }
 }

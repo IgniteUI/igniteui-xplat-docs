@@ -7,9 +7,9 @@ mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 
 # {Platform} Tree Overview
 
-{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.  
+{ProductName} Tree, also known as TreeView component, is a high-performance control that visualizes expandable data structures within a tree-like UI, enabling you to apply load on demand for child items. The {ProductName} Tree also provides features like expanding and collapsing nodes, nested app navigation, {ProductName} Tree nodes either can be generated manually or from a bound data source.
 
-For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more. 
+For end-users this means they can easily navigate across different app pages, use selection, checkboxes, add texts, icons, images and more.
 
 The {ProductName} Tree component allows users to represent hierarchical data in a tree-view structure, maintaining parent-child relationships, as well as to define static tree-view structure without a corresponding data model. Its primary purpose is to allow end-users to visualize and navigate within hierarchical data structures. The `Tree` component also provides load on demand capabilities, item activation, multiple and cascade selection of items through built-in checkboxes, built-in keyboard navigation and more.
 

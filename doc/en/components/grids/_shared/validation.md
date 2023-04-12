@@ -429,7 +429,7 @@ private rowValidator(): ValidatorFn {
 
         const age = formGroup.get('Age');
         const hireDate = formGroup.get('HireDate');
-        if((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
+        if ((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
             returnObject['ageLessHireDate'] = true;
         }
 
