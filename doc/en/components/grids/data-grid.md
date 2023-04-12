@@ -849,7 +849,11 @@ const POJO = [{
 Before going any further with the grid we want to change the grid to bind to remote data service, which is the common scenario in large-scale applications.
 
 <!-- WebComponents -->
-You can do this by fetching the data from a given url receiving a JSON response and assigning it to the `northwindEmployees` property that will be used as the grid's data source:
+You can do this by fetching the data from a given url receiving a JSON response and assigning it to the grid's `data` property that is used as the grid's data source:
+
+```html
+<igc-grid id="grid1"></igc-grid>
+```
 
 ```typescript
 public fetchData(url: string): void {
@@ -858,17 +862,9 @@ public fetchData(url: string): void {
       .then(data => this.onDataLoaded(data));
 }
 public onDataLoaded(jsonData: any[]) {
-    this.northwindEmployees = jsonData;
+    var grid1 = document.getElementById("grid1") as IgcGridComponent;
+    grid1.data = jsonData;
   }
-
-@property()
-private northwindEmployees?: any[];
-```
-
-And then you can bind the grid to that data:
-
-```html
-<igc-grid id="grid1" .data="${this.northwindEmployees}">
 ```
 
 <!-- end:WebComponents -->
@@ -1068,19 +1064,32 @@ the default functionality that you would expect from the grid.
 That is all sorting and filtering operations work out of the box without any additional
 configuration. Same goes for grouping and editing operations with or without transactions as well as the ability to template the cells of the bound column.
 
->[!WARNING]
+>**WARNING**
 >The grids **do not** support this kind of binding for `PrimaryKey`, `ForeignKey` and `ChildKey` properties where applicable.
 
 <!-- NOTE this sample is differed -->
 
 `sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
 
-
 <!-- end: Angular -->
 
 An alternative way to bind complex data, or to visualize composite data (from more than one column) in the `Grid` is to use a custom body template for the column. Generally, one can:
-    - use the `value` of the cell, that contains the nested data
-    - use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` and interpolate those in the template.
+
+- use the `value` of the cell, that contains the nested data
+
+<!-- Angular -->
+
+- use the `cell` object in the template, from which to access the `row.data`, therefore retrieve any value from it, i.e `cell.row.data[field]` and `cell.row.data[field][nestedField]` and interpolate those in the template.
+
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+- use the `cell` object in the template, from which to access the `ctx.cell.id.rowIndex` or `ctx.cell.id.rowID` to get the row via the grid's API and retrieve any value from it and interpolate those in the template.
+
+<!-- end: WebComponents -->
+
+<!-- Angular -->
 
 ```html
 <igx-column field="abbreviation.long" header="Long">
@@ -1096,12 +1105,15 @@ An alternative way to bind complex data, or to visualize composite data (from mo
 </igx-column>
 ```
 
+<!-- end: Angular -->
+
 ```html
 <igc-column id="abbreviationLong" field="abbreviation.long"></igc-column>
 ```
 
 ```typescript
 constructor() {
+    var grid = (this.grid = document.getElementById("grid") as IgcGridComponent);
     var abbreviationLong = this.abbreviationLong = document.getElementById('abbreviationLong') as IgcColumnComponent;
 
     this._bind = () => {
@@ -1116,19 +1128,19 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
         <div>
             <div>
                 ${ ctx.cell.value }
-                ${ this.getName(ctx.cell.id) }
-                ${ this.getWeight(ctx.cell.id) }
+                    ${this.getName(ctx.cell.id.rowIndex)} 
+                    ${this.getWeight(ctx.cell.id.rowIndex)}
             </div>
         </div>
     `;
 }
 
-public getName(rowId: number){
-    //row.data['name']
-}
-public getWeight(rowId: number){
-    //row.data['weight']['molecular']
-}
+    public getName(rowIndex: number) {
+        return this.grid.getRowByIndex(rowIndex).data["Name"];
+    }
+    public getWeight(rowIndex: number) {
+        return this.grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
+    }
 ```
 
 ```razor
@@ -1315,40 +1327,22 @@ constructor() {
 
 public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
-        <div class="employees-container">
-            <igc-expansion-panel >
-                <igc-expansion-panel-header iconPosition="right">
-                    <igc-expansion-panel-description>
-                        ${this.getName(ctx.cell.id.rowIndex)}
-                    </igc-expansion-panel-description>
-                </igc-expansion-panel-header>
-                <igc-expansion-panel-body>
-                    <div class="description">
-                        <igc-input-group keydown="${this.stop()}" display-density="compact">
-                            <label for="title">Title</label>
-                            <input type="text" name="title" value="${this.getTitle(ctx.cell.id.rowIndex)}" style="text-overflow: ellipsis;" />
-                        </igc-input-group>
-                        <igc-input-group keydown="${this.stop()}" display-density="compact" style="width: 15%;">
-                            <label for="age">Age</label>
-                            <input type="number" name="age" value="${this.getAge(ctx.cell.id.rowIndex)}" />
-                        </igc-input-group>
-                    </div>
-                </igc-expansion-panel-body>
-            </igc-expansion-panel>
-        </div>
+    <igc-expansion-panel>
+            <div slot="title" style="font-size: 1.1em; font-weight: bold; margin-top: 1rem; margin-bottom: 0.25rem;">
+            ${ctx.cell.value[0].Name}
+            </div>
+            <div class="description">
+                <div style="display: flex; align-items: center;">
+                    <div for="title" style="width: 2rem; margin: 0rem;">Title</div>
+                    <input id='Title' type="text" name="title" value="${ctx.cell.value[0].Title}" style="text-overflow: ellipsis;" />
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div for="age" style="width: 2rem; margin: 0rem;">Age</div>
+                    <input id='Age' type="text" name="title" value="${ctx.cell.value[0].Age}" style="text-overflow: ellipsis;" />
+                </div>
+            </div>
+        </igc-expansion-panel>
     `;
-}
-
-public stop() {
-}
-
-public getName(rowId: number) {
-}
-
-public getTitle(rowId: number) {
-}
-
-public getAge(rowId: number) {
 }
 ```
 
@@ -1477,7 +1471,7 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
         <div class="address-container">
         <!-- In the Address column combine the Country, City and PostCode values of the corresponding data record -->
-            <span><strong>Country:</strong> ${this.getName(ctx.cell.id.rowIndex)}</span>
+            <span><strong>Country:</strong> ${this.getCountry(ctx.cell.id.rowIndex)}</span>
             <br/>
             <span><strong>City:</strong> ${this.getCity(ctx.cell.id.rowIndex)}</span>
             <br/>
@@ -1486,13 +1480,16 @@ public addressCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public getCountry(rowId: number) {
+public getCountry(rowIndex: number) {
+    return this.grid.getRowByIndex(rowIndex).data["Country"];
 }
 
-public getCity(rowId: number) {
+public getCity(rowIndex: number) {
+     return this.grid.getRowByIndex(rowIndex).data["City"];
 }
 
-public getPostalCode(rowId: number) {
+public getPostalCode(rowIndex: number) {
+     return this.grid.getRowByIndex(rowIndex).data["PostalCode"];
 }
 ```
 
@@ -1557,47 +1554,44 @@ constructor() {
     var address = this.address = document.getElementById('address') as IgcColumnComponent;
 
     this._bind = () => {
-        address.inlineEditorTemplate = this.addressEditCellTemplate;
+        address.inlineEditorTemplate = this.webGridCompositeAddressEditCellTemplate;
     }
 
     this._bind();
 }
 
-public addressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-        <div class="address-container">
-            <span>
-                <strong>Country:</strong> ${this.getName(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updateCountry(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
-            <span>
-                <strong>City:</strong> ${this.getCity(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updateCity(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
-            <span>
-                <strong>Postal Code:</strong> ${this.getPostalCode(ctx.cell.id)}
-                <igc-input-group width="100%">
-                        <input onchange="${this.updatePostalCode(ctx.cell.id)}" />
-                </igc-input-group>
-            </span>
-            <br/>
-        </div>
-    `;
-}
+public webGridCompositeAddressEditCellTemplate = (ctx: IgcCellTemplateContext) => {
 
-public updateCountry(rowId: number) {
-}
+        var cell = ctx.cell as any;
+        if (cell === undefined || cell.row === undefined || cell.row.data === undefined) {
+            return html``
+        }
 
-public updateCity(rowId: number) {
-}
+        function keyUpHandler(event: any, ctx: IgcCellTemplateContext) {
+            var cell = ctx.cell as any;
+            if (cell !== undefined && cell.row !== undefined && cell.row.data !== undefined) {
+                cell.row.data[event.target.id] = event.target.value;
+            }
+         }
 
-public updatePostalCode(rowId: number) {
+        return html`<div class="address-container--edit" style="display: inline-grid">
+             <div>
+                 <span><strong>Country:</strong></span>
+                 <input id='Country' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.Country}"></input>
+                 <br>
+                 <span><strong>City:</strong></span>
+                 <input id='City' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.City}"></input>
+             </div>
+             <div>
+                 <span><strong>Postal Code:</strong></span>
+                 <input id='PostalCode' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.PostalCode}"></input>
+                 <br>
+                 <span><strong>Selected:</strong></span>
+                 <input id='Phone' @keyup=${(e: any) => keyUpHandler(e, ctx)} value="${cell.row.data.Phone}"></input>
+             </div>
+             <br>
+         </div>`;
+        }
 }
 ```
 
@@ -1690,7 +1684,7 @@ platformBrowserDynamic()
 <!-- end: Angular -->
 
 ## Styling {Platform} Grid
-> [!Note]
+> **Note**:
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
