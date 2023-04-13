@@ -1170,7 +1170,7 @@ function GetName(rowIndex) {
 }
 
 function GetWeight(rowIndex) {
-return this.grid.getRowByIndex(rowIndex).data["weight"]["molecular"];
+    return this.grid.getRowByIndex(rowIndex).data["Weight"]["Molecular"];
 }
 ```
 
