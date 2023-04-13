@@ -24,9 +24,7 @@ var docsComponents = null;
 let LANG = argv.lang === undefined ? "en" : argv.lang;
 let PLAT = argv.plat === undefined ? "React": argv.plat;
 let PLAT_API = undefined;
-let ENV_TARGET = process.env === undefined ? "development" :
-                 process.env.NODE_ENV === undefined ? "development" :
-                 process.env.NODE_ENV.trim(); // staging/production
+let ENV_TARGET = argv.env || "development";
 
 let DOCFX_BASE = {
     en: `./dist/${PLAT}/en`,
@@ -38,7 +36,6 @@ let DOCFX_PATH = `${DOCFX_BASE[LANG]}`;
 let DOCFX_CONF = `${DOCFX_PATH}/docfx.json`;
 let DOCFX_TEMPLATE_GLOBAL = path.join(__dirname, `./node_modules/igniteui-docfx-template/template/bundling.global.json`);
 let DOCFX_SITE = `${DOCFX_PATH}/_site`;
-let DOCFX_ARTICLES = `${DOCFX_PATH}/components`;
 
 function log(msg) { console.log(">> " + msg); }
 
@@ -102,7 +99,6 @@ function transformFiles() {
 
       var fileContent = file.contents.toString();
       var fileDir = path.dirname(file.path) + "\\";
-      var fileName = file.path.replace(fileDir, "");
 
       var typeName = path.basename(path.dirname(file.path))
       console.log("- transforming " + file.path);
@@ -786,7 +782,7 @@ function buildSite(cb) {
         siteDir: DOCFX_SITE,
         projectDir: DOCFX_PATH,
         environment: process.env.NODE_ENV ? process.env.NODE_ENV.trim() : null
-      });
+    });
 }
 
 exports.buildSite = buildSite;
