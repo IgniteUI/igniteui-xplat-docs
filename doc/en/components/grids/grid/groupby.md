@@ -51,10 +51,19 @@ Grouping expressions implement the `ISortingExpression` interface.
 Grouping is available through the UI and through a robust API exposed by the grid component. Developers can allow end-users to group the grid data by certain columns, by setting each column's `Groupable` property to `true`.
 
 ```html
-<igx-grid [data]="data">
-    <igc-column *ngFor="let c of columns" [field]="c.field" [groupable]="true">
-    </igc-column>
-</igx-grid>
+<igc-grid auto-generate="false"id="grid" id="grid">
+    <igc-column field="OrderID" hidden="true"></igc-column>
+    <igc-column field="ShipCountry" header="Ship Country" width="200px" groupable="true"> </igc-column>
+    <igc-column field="OrderDate" header="Order Date" data-type="date" width="200px" groupable="true"> </igc-column>
+    <igc-column field="PostalCode" header="Postal Code" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Discontinued" width="200px" data-type="boolean" groupable="true" name="column1" id="column1"> </igc-column>
+    <igc-column field="ShipName" header="Ship Name" width="200px" groupable="true"> </igc-column>
+    <igc-column field="ShipCity" header="Ship City" width="200px" groupable="true"> </igc-column>
+    <igc-column field="ShipperName" header="Shipper Name" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Salesperson" header="Sales Person" width="200px" groupable="true"> </igc-column>
+    <igc-column field="UnitPrice" header="Unit Price" width="200px" groupable="true"> </igc-column>
+    <igc-column field="Quantity" width="200px" groupable="true"> </igc-column>
+</igc-grid>
 ```
 
 <!-- Angular -->
@@ -69,11 +78,10 @@ public ngOnInit() {
 
 <!-- WebComponents -->
 ```typescript
-connectedCallback() {
-    grid.columns.forEach((column) => {
-        column.groupable = true;
-    });
-}
+    constructor() {
+        var column1 = (this.column1 = document.getElementById("column1") as IgcColumnComponent);
+        column1.groupable = true;
+    }
 ```
 
 During runtime the expressions are gettable and settable from the `groupingExpressions` property. If you need to add or change an existing expression you may also use the `GroupBy` method with either a single or an array of `ISortingExpression`.
@@ -108,9 +116,7 @@ export interface IGroupByExpandState {
 As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
-    const groupRow = this.grid.getRowByIndex(0).groupRow;
-    grid.toggleGroup(groupRow);
+    const groupRow = this.grid.getRowByIndex(0);
     groupRow.expanded = false;
 ```
 
@@ -123,7 +129,6 @@ Selecting/Deselecting all rows in a group is available through the `SelectRowsIn
 The code snippet below can be used to select all rows within a group using the group record instance `SelectRowsInGroup` method. Additionally, the second parameter of this method is a boolean property through which you may choose whether the previous row selection will be cleared or not. The previous selection is preserved by default.
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.selectRowsInGroup(groupRow);
 ```
@@ -131,7 +136,6 @@ The code snippet below can be used to select all rows within a group using the g
 If you need to deselect all rows within a group programmatically, you can use the `DeselectRowsInGroup` method.
 
 ```typescript
-    const groupRow = this.grid.groupsRecords.find(r => r.value === "France");
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.deselectRowsInGroup(groupRow);
 ```
@@ -162,9 +166,10 @@ As an example, the following template would make the group rows summary more ver
 ```
 
 ```ts
-public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
-    return html`<span>Total items with value: ${ ctx.value } are ${ ctx.records.length }</span>`;
-}
+    public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
+        const groupRow: any = ctx["$implicit"];
+        return html`<span>Total items with value: ${ groupRow.value } are ${ groupRow.records.length }</span>`;
+    }
 ```
 
 <!-- Angular -->
@@ -263,82 +268,41 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 ### {Platform} Custom Group By Example
 
 
-`sample="/{GridSample}/groupby-custom-coming-soon", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
+`sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
 
 The sample defines custom sorting strategies for the different date conditions.
 Each custom strategy extends the base `DefaultSortingStrategy` and defines the `CompareValues` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
 
 ```typescript
-class BaseSortingStrategy extends DefaultSortingStrategy {
-
-    public getParsedDate(date: any) {
+public groupByMode = "Month";
+public getParsedDate(date: any) {
         return {
             day: date.getDay(),
             month: date.getMonth() + 1,
             year: date.getFullYear()
         };
     }
-
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : dateA.month  < dateB.month ?
-            -1 : dateA.month > dateB.month ?
-            1 : 0;
-    }
-}
-
-class DaySortingStrategy extends BaseSortingStrategy {
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : dateA.month  < dateB.month ?
-            -1 : dateA.month > dateB.month ?
-            1 : dateA.day < dateB.day ?
-            -1 : dateA.day > dateB.day ?
-            1 : 0;
-    }
-}
-
-class WeekSortingStrategy extends BaseSortingStrategy {
-
-    public getWeekOfDate(a: any) {
-       return parseInt(new DatePipe("en-US").transform(a, 'w'), 10);
-    }
-
-    compareValues(a: any, b: any) {
-        const dateA = this.getParsedDate(a);
-        const dateB = this.getParsedDate(b);
-        const weekA = this.getWeekOfDate(a);
-        const weekB = this.getWeekOfDate(b);
-        return dateA.year < dateB.year ?
-            -1 : dateA.year > dateB.year ?
-            1 : weekA < weekB ?
-            -1 : weekA > weekB ?
-            1 : 0;
-    }
-}
 ```
 
 A `GroupingComparer` function is defined for the grouping expressions, which determines the items belonging to the same group based on the selected grouping mode. Values in the sorted data for which this function returns 0 are marked as part of the same group.
 
 ```typescript
- groupingComparer: (a, b) => {
-    const dateA = this.sortingStrategy.getParsedDate(a);
-    const dateB = this.sortingStrategy.getParsedDate(b);
-    if (this.groupByMode === 'Month') {
-        return dateA.month === dateB.month ? 0 : -1;
-    } else if (this.groupByMode === "Year") {
-        return dateA.year === dateB.year ? 0 : -1;
-    } else if (this.groupByMode === "Week") {
-        return this.sortingStrategy.getWeekOfDate(a) === this.sortingStrategy.getWeekOfDate(b) ? 0 : -1;
+grid.groupingExpressions = [
+    { fieldName: 'OrderDate', dir: SortingDirection.Desc,
+    groupingComparer: (a, b) => {
+        const dateA = this.getParsedDate(a);
+        const dateB = this.getParsedDate(b);
+        if (this.groupByMode === 'Month') {
+            return dateA.month === dateB.month ? 0 : -1;
+        } else if (this.groupByMode === "Year") {
+            return dateA.year === dateB.year ? 0 : -1;
+        } else if (this.groupByMode === "Week") {
+            return this.sortingStrategy.getWeekOfDate(a) === this.sortingStrategy.getWeekOfDate(b) ? 0 : -1;
+        }
+        return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
+        }
     }
-    return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
-}
+];
 ```
 
 <!-- Angular -->
