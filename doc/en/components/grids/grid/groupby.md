@@ -33,7 +33,8 @@ public ngOnInit() {
 
 <!-- WebComponents -->
 ```typescript
-connectedCallback() {
+constructor() {
+    var grid = document.getElementById("grid") as IgcGridComponent;
     grid.groupingExpressions = [
         { fieldName: 'ProductName', dir: SortingDirection.Desc },
         { fieldName: 'Released', dir: SortingDirection.Desc }
@@ -41,6 +42,23 @@ connectedCallback() {
 }
 ```
 <!-- end: WebComponents -->
+
+<!-- Blazor -->
+
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" @ref="grid" Id="grid" GroupingExpressions="GroupingExpression1"></IgbGrid>
+
+@code {
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+}
+```
+
+<!-- end: Blazor -->
+
 
 Grouping expressions implement the `ISortingExpression` interface.
 
@@ -66,6 +84,26 @@ Grouping is available through the UI and through a robust API exposed by the gri
 </igc-grid>
 ```
 
+<!-- Blazor -->
+
+```razor
+<IgbGrid AutoGenerate="false" Data="InvoicesData" @ref="grid" Id="grid" GroupingExpressions="GroupingExpression1" GroupRowTemplateScript="WebGridGroupByRowTemplate">
+    <IgbColumn Field="OrderID" Hidden="true"></IgbColumn>
+    <IgbColumn Field="ShipCountry" Header="Ship Country" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="PostalCode" Header="Postal Code" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="Discontinued" Width="200px" DataType="GridColumnDataType.Boolean" Groupable="true" BodyTemplateScript="WebGridBooleanCellTemplate" Name="column1" @ref="column1"></IgbColumn>
+    <IgbColumn Field="ShipName" Header="Ship Name" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="ShipCity" Header="Ship City" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="ShipperName" Header="Shipper Name"Width="200px"Groupable="true"></IgbColumn>
+    <IgbColumn Field="Salesperson" Header="Sales Person" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="UnitPrice" Header="Unit Price" Width="200px" Groupable="true"></IgbColumn>
+    <IgbColumn Field="Quantity" Width="200px" Groupable="true"></IgbColumn>
+</IgbGrid>
+```
+
+<!-- end: Blazor -->
+
 <!-- Angular -->
 ```typescript
 public ngOnInit() {
@@ -90,6 +128,28 @@ During runtime the expressions are gettable and settable from the `groupingExpre
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
 
+<!-- Blazor -->
+
+```razor
+@code {
+    public IgbGrid grid;
+
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+
+
+    private void GroupGrid()
+    {
+        this.grid.GroupBy(GroupingExpression1);
+    }
+}
+```
+
+<!-- end: Blazor -->
+
 <!-- Angular -->
 
 > [!Note]
@@ -99,7 +159,11 @@ grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase:
 
 ### Expand/Collapse API
 
-In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. This means that the signature of an expansion state interface is the following:
+In addition to grouping expressions you can also control the expansion states for group rows. They are stored in a separate property of the `Grid` component `GroupingExpansionState`. A group row is uniquely identified based on the field name it is created for and the value it represents for each level of grouping. 
+
+<!-- WebComponents -->
+
+This means that the signature of an expansion state interface is the following:
 
 ```typescript
 export interface IGroupByKey {
@@ -113,11 +177,30 @@ export interface IGroupByExpandState {
 }
 ```
 
+<!-- end: WebComponents -->
+
 As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
 
 ```typescript
     const groupRow = this.grid.getRowByIndex(0);
     groupRow.expanded = false;
+```
+
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" GroupingExpressions="GroupingExpression1" GroupingExpansionState=ExpansionState @ref="grid" Id="grid">
+</IgbGrid>
+
+@code {
+    public IgbGroupingExpression[] GroupingExpression1 = new IgbGroupingExpression[2]
+    {
+        new IgbGroupingExpression(){ FieldName = "ShipCountry", Dir= SortingDirection.Asc },
+        new IgbGroupingExpression() { FieldName = "ShipCity", Dir= SortingDirection.Asc  }
+    };
+    public IgbGroupByExpandState[] state = new IgbGroupByExpandState[1]
+    {
+        new IgbGroupByExpandState(){ Hierarchy = new IgbGroupByKey[1]{ new IgbGroupByKey() { FieldName="ShipCountry", Value = "USA" } },  Expanded = false }
+    };
+}
 ```
 
 Groups can be created expanded (***default***) or collapsed and the expansion states would generally only contain the state opposite to the default behavior. You can control whether groups should be created expanded or not through the `GroupsExpanded` property.
