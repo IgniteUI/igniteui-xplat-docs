@@ -2,17 +2,51 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "Infragistics.Controls.Grid.Implementation.Grid", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode", "Infragistics.Controls.DataGridCellEventArgs", "Infragistics.Controls.GridBaseDirective", "MaskInput", "Shape", "RoundShape"]
+sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
 
+## **{PackageVerChanges-22-2.65}**
+
+### New Components
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
+### {PackageGrids} (Data Grid)
+
+* A new argument `PrimaryKey` has been introduced to `IgbRowDataEventArgs` from `Detail`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to null.
+* `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+* When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
+* When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
+* The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
+* The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+
+### {PackageGrids} (Pivot Grid)
+
+* The `IgbPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+
+### {PackageInputs} (Inputs)
+
+* `IgbDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
+* `IgbRadio` and `IgbRadioGroup`, added component validation along with styles for invalid state
+* `IgbMask`, added the capability to escape mask pattern literals.
+* `IgbBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
+* `IgbAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
+
+### {PackageDockManager} (DockManager)
+
+* [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
+
 ## **{PackageVerChanges-22-2.50}**
 
 ### New Components
 
+* [Combo](inputs/combo/overview.md)
 * [Pivot Grid](grids/pivot-grid/overview.md)
 * .NET 7.0
 
@@ -23,7 +57,7 @@ All notable changes for each version of {ProductName} are documented on this pag
 * [Grid](grids/data-grid.md)
 * [TreeGrid](grids/tree-grid/overview.md)
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
@@ -55,7 +89,7 @@ These new chart improvements include:
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Changed `Column` to `DataGridColumn`
 * Changed `GridCellEventArgs` to `DataGridCellEventArgs`
@@ -64,7 +98,7 @@ These new chart improvements include:
 
 ## **{PackageVerChanges-22-1}**
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -81,16 +115,16 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageDockManager}
-
-* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The dock manager allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
-
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Feature Added:
 - [Row Paging](grids/data-grid/row-paging.md)
 
 Pagination is used to split a large set of data into a sequence of pages that have similar content. With pagination, data can be displayed in a set number of rows, letting users “scroll” through their data, without needing a scroll bar. The UI for table pagination usually includes things like the current page, total pages, and clickable Previous and Next arrows/buttons that let users flip through the pages of data.
+
+### {PackageDockManager} (Dock Manager)
+
+* The {Platform} Dock Manager is now in "Preview" state, that provides a way to manage a complex layout using different type of panes with various sizes, positions, and behaviors, and that can be docked to various locations within an app. The [Dock Manager](layouts/dock-manager.md) allows your end-users to customize it further by pinning, resizing, moving, floating, and hiding panes.
 
 ### New Components
 
@@ -107,11 +141,11 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 > [!Note]
 > The following breaking changes were introduced
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - Changed `ValueField` property from type string[] to string.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 - A new `ValueChanged` event supports 2-way binding and should only be handled if you have not bound the `Value` property. In order to read the Value field from the control without databinding the `ValueChanged` event should be handled, otherwise if your data is not bound you should use GetCurrentValueAsync to read the controls Value.
 
@@ -178,7 +212,7 @@ This release introduces a few improvements and simplifications to visual design 
 | -------------------- | ------------------- |
 | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8B5BB1">#8B5BB1</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#F8A15F">#F8A15F</span> <br><span style="color:#EE5879">#EE5879</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F7D262">#F7D262</span> <br><span style="color:#8CE7D9">#8CE7D9</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#A8A8B7">#A8A8B7</span> | <span style="color:#8BDC5C">#8BDC5C</span> <br><span style="color:#8961A9">#8961A9</span> <br><span style="color:#6DB1FF">#6DB1FF</span> <br><span style="color:#82E9D9">#82E9D9</span> <br><span style="color:#EA3C63">#EA3C63</span> <br><span style="color:#735656">#735656</span> <br><span style="color:#F8CE4F">#F8CE4F</span> <br><span style="color:#A8A8B7">#A8A8B7</span> <br><span style="color:#E051A9">#E051A9</span> <br><span style="color:#FF903B">#FF903B</span> <br> |
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Features Added:
     - [Filter Row](grids/data-grid/column-filtering.md)
@@ -256,7 +290,7 @@ for example:
 * Added support for highlighting of the shape series
 * Added support for some annotation layers for the shape series
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
@@ -270,7 +304,7 @@ for example:
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
-### {PackageInputs}
+### {PackageInputs} (Inputs)
 
 #### Date Picker
 

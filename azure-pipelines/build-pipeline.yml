@@ -74,7 +74,7 @@ stages:
           command: custom
           workingDir: '$(selfSourcesDir)'
           verbose: ${{ parameters.isVerbose }}
-          customCommand: ci
+          customCommand: 'ci --production=false'
 
       - template: templates/build-steps-template.yml
         parameters:

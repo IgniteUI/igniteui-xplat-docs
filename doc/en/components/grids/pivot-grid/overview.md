@@ -426,7 +426,7 @@ public data = [
 ];
 ```
 
-```
+```razor
 public PivotSalesData()
 {
     this.Add(new PivotSalesDataItem()

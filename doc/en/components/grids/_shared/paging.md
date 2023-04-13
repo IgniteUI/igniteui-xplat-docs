@@ -149,7 +149,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### Paginator Configuration within Child Grids
 
+<!-- Angular -->
 Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>
@@ -307,7 +309,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -315,22 +317,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );

@@ -78,9 +78,9 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```html
  <igx-linear-gauge width="70px"
                    height="300px"
-                   minimumValue = "5"
-                   maximumValue = "55"
-                   value = "43">
+                   minimumValue="5"
+                   maximumValue="55"
+                   value="43">
     <igx-linear-graph-range startValue="0"
                             endValue="15"
                             brush="red">
@@ -99,9 +99,9 @@ The following code demonstrates how create a linear gauge containing a needle an
 ```tsx
  <IgrLinearGauge width="70px"
                    height="300px"
-                   minimumValue = {5}
-                   maximumValue = {55}
-                   value = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={43}>
     <IgrLinearGraphRange startValue={0}
                             endValue={15}
                             brush="red"/>

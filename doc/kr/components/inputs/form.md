@@ -22,9 +22,9 @@ The following example represents a form that has some inputs, buttons and a chec
 
 In order to use the Form component, the web components package must be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install {PackageWebComponents}
-</pre>
+```
 
 ## Usage
 
@@ -66,10 +66,10 @@ When a form control is invalid, the form will not be submitted and an error mess
 ### Events
 
 The Form component raises the following events:
-- igcSubmit - Raised when the form is submitted
-- igcReset - Raised when the form is reset
+- `Submit` - Raised when the form is submitted
+- `Reset` - Raised when the form is reset
 
-Here is an example showing how to add an event listener for the `Submit] event:
+Here is an example showing how to add an event listener for the `Submit` event:
 
 ```ts
 document.addEventListener('igcSubmit', function (event) {
@@ -82,12 +82,12 @@ document.addEventListener('igcSubmit', function (event) {
 
 The Form component exposes the following methods:
 
-| Method			| Description     			|
-| ------------- 	|:-------------:			|
-|`submit`|Submits the form data.|
-|`reset`|Resets the form data.|
-|`getFormData`|Collects the form data and returns a single FormData object.|
-|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
+| Method           | Description   |
+| -----------------|:-------------:|
+| `Submit`         | Submits the form data. |
+| `Reset`          | Resets the form data. |
+| `GetFormData`    | Collects the form data and returns a single FormData object. |
+| `ReportValidity` | Returns whether the element's child controls satisfy their validation constraints. |
 
 ## API References
 

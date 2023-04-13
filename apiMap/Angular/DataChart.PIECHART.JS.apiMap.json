@@ -1,5 +1,12 @@
 {"extraFiles":["igx-pie-chart-core-module.ts","igx-pie-chart-module.ts"],
   "types":[
+  { "originalName":"LegendEmptyValuesMode","isEnum":true,
+    "names":[{"platform":"Angular","fileName":"LegendEmptyValuesMode.ts","mappedName":"LegendEmptyValuesMode"}],
+    "members":[
+    { "names":[{"platform":"Angular","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysHidden"}],"originalName":"AlwaysHidden"},
+    { "names":[{"platform":"Angular","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysVisible"}],"originalName":"AlwaysVisible"},
+    { "names":[{"platform":"Angular","mappedType":"LegendEmptyValuesMode","mappedName":"ShowWhenNoOthersCategory"}],"originalName":"ShowWhenNoOthersCategory"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LabelsPosition","isEnum":true,
     "names":[{"platform":"Angular","fileName":"LabelsPosition.ts","mappedName":"LabelsPosition"}],
     "members":[
@@ -146,6 +153,7 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"shouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"Angular","mappedType":"LegendEmptyValuesMode","mappedName":"legendEmptyValuesMode"}],"originalName":"LegendEmptyValuesMode"},
     { "names":[{"platform":"Angular","mappedType":"(obj: any) => string","mappedName":"formatLabel"}],"originalName":"FormatLabel"},
     { "names":[{"platform":"Angular","mappedType":"(obj: any) => string","mappedName":"formatLegendLabel"}],"originalName":"FormatLegendLabel"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},

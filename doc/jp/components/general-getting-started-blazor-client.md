@@ -36,15 +36,11 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ### .NET 6 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
-```
+```razor
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
-
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
+// ...
 builder.Services.AddIgniteUIBlazor();
 
 await builder.Build().RunAsync();
@@ -66,7 +62,7 @@ await builder.Build().RunAsync();
 
 ### .NET 5 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
 ```razor
 public static async Task Main(string[] args)

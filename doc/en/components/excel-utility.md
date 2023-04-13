@@ -108,8 +108,6 @@ export class ExcelUtility {
         });
     }
 }
-
-
 ```
 
 <!-- React -->
@@ -220,7 +218,6 @@ export class ExcelUtility {
         });
     }
 }
-
 ```
 
 <!-- WebComponents -->

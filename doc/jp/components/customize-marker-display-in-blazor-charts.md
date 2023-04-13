@@ -88,11 +88,11 @@ public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 まずはじめに、マーカー描画の必要が発生する毎に Ignite UI 側から呼び出される measure および render という2つのメソッドを持つ JavaScript オブジェクトを返す、そのような関数を定義します。
 例えば下記のとおり customMarkerTemplateFunc() とします。
 
-```js
-// wwwroot/customMarkerTemplateFunc.js
-function customMarkerTemplateFunc() {
+```razor
+// /wwwroot/customMarkerTemplateFunc.js で
+function customMarkerTemplateFunc () {
     return {
-        measure: function(mesureInfo) {},
+        measure: function(measureInfo) {},
         render: function(renderInfo) {}
    }
 }
@@ -105,12 +105,12 @@ function customMarkerTemplateFunc() {
 
 Ignite UI への回答方法は、この measure メソッド呼び出し時の引数の width および height フィールドにマーカーの幅と高さ (いずれも px 単位) を設定することで行ないます。
 
-```js
-// wwwroot/customMarkerTemplateFunc.js
+```razor
+// /wwwroot/customMarkerTemplateFunc.js で
 
-function customMarkerTemplateFunc() {
+function customMarkerTemplateFunc () {
     return {
-        measure: function(measureInfo) {
+        measure: function ( measureInfo ) {
            // この例では、描画するデータの Volume プロパティ値に基づいて、
            // その 3倍を半径とした (なので直径はその2倍) 円をマーカーとして
            // 描画することとして、width と height を計算・設定しています。
@@ -119,10 +119,8 @@ function customMarkerTemplateFunc() {
            measureInfo.width = size;
            easureInfo.height = size;
        }
-   } 
+   }
 }
-
-...
 ```
 
 ## マーカーのカスタム描画オブジェクトの render メソッドを実装
@@ -132,13 +130,13 @@ function customMarkerTemplateFunc() {
 
 そのため、measure メソッドのときと同じように render メソッド呼び出し時も、その描画対象のデータを、その JavaScript 側表現を介して、マーカー描画のパラメータとして参照できます。そしてまた、render メソッド呼び出し時の引数には、マーカーを描画する対象となる HTML Canvas 要素の 2D コンテキストオブジェクトも、そのフィールド変数に格納されています。render メソッドでは、その引数経由で渡された 2D コンテキストオブジェクトに対して、マーカーの描画を実行します。以下にコード例を示します。
 
-```js
-// wwwroot/customMarkerTemplateFunc.js
+```razor
+// /wwwroot/customMarkerTemplateFunc.js で
 
-function customMarkerTemplateFunc() {
+function customMarkerTemplateFunc () {
     return {
-        ...
-        render: function(renderInfo) {
+        // ...
+        render: function ( renderInfo ) {
             // 引数に渡された renderInfo に描画のための座標関係の情報がつまっているので、
             // これを取り出しておく
             const cx = renderInfo.xPosition;
@@ -148,7 +146,7 @@ function customMarkerTemplateFunc() {
             // マーカーの塗りつぶしの色は、描画するデータの Color プロパティ値を使う
             // (ちなみに、既定のマーカーの塗りつぶし色は、
             //  renderInfo.data.actualItemBrush.fill に格納されています)
-            const color = renderInfo.data.item.Color; 
+            const color = renderInfo.data.item.Color;
             // HTML Canvas 要素の 2D コンテキストに対して、マーカーの描画を実行
             // (measure メソッドで算定した大きさで、真円のマーカーを描画)
             const ctx = renderInfo.context;
@@ -159,7 +157,6 @@ function customMarkerTemplateFunc() {
         }
     }
 }
-...
 ```
 なお、HTML Canvas の 2D コンテキストに対して行える処理は何でも実行可能ですので、どのようなカスタム描画も実装できます。
 
@@ -171,11 +168,11 @@ measure および render メソッドが実装できたら、残りの作業は�
 
 このとき、igRegisterScript() 関数の第1引数に、文字列の「スクリプト名」を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した「スクリプト名」で識別されます。以下にコード例を示します。
 
-```js
-// wwwroot/customMarkerTemplateFunc.js
+```razor
+// /wwwroot/customMarkerTemplateFunc.js で
 
 function customMarkerTemplateFunc() {
-    ...
+    // ...
 }
 
 // 上で実装したファクトリー関数を、Ignite UI に登録します。
@@ -186,14 +183,14 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 以上の JavaScript プログラムをブラウザに読み込ませるわけですが、ブラウザに読み込まれたときに、上記スクリプト登録が実行されつつグローバル汚染を避けるために、ここまでの JavaScript プログラムを即時実行の無名関数でくるんでおくことにします。以下にコード例を示します。
 
-```js
-// wwwroot/customMarkerTemplateFunc.js
+```razor
+// /wwwroot/customMarkerTemplateFunc.js で
 
-(function() {
+(function () {
     function customMarkerTemplateFunc() {
-        ...
-    } 
-    igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
+        // ...
+    }
+    igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
 }) ();
 ```
 これで JavaScript 側の実装がひととおり完了となります。
@@ -202,14 +199,13 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 その際、Ignite UI for Blazor の JavaScript ランタイムよりあとで読み込まれるよう、script 要素の配置順にはご注意ください。以下に Blazor WebAssembly プログラムにおけるコード例を示します。
 
-```html
-<script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
+```razor
+<script src="_content / IgniteUI.Blazor / app.bundle.js"> </script>
 
-<!-- Ignite UI for Blazor の JavaScript よりあとで、
-     マーカー表示のカスタム描画の JavaScript プログラムを読み込み --> 
+<!-Ignite UI for Blazor の JavaScript よりあとで、
+マーカー表示のカスタム描画の JavaScript プログラムを読み込み->
 
 <script src="customMarkerTemplateFunc.js"></script>
-... 
 ```
 
 ## マーカー描画に指定のスクリプト名の JavaScript プログラムを使うよう指定
@@ -221,10 +217,9 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```razor
 @* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
 <IgbDataChart Height="320px" Width="320px">
-    ... 
-    <IgbScatterSeries ...
-        ...
-        MarkerTemplateScript="customMarkerTemplateFunc"/>
+    @*...*@
+    <IgbScatterSeries MarkerTemplateScript="customMarkerTemplateFunc"/>
+    @*...*@
 </IgbDataChart>
 ```
 これで、バインドした項目のプロパティに応じた大きさと塗りつぶし色のマーカーで、散布図が表示されるようになりました。

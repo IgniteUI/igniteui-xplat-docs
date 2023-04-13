@@ -17,10 +17,12 @@ In addition, you can define your own custom templates for update-data actions an
 
 `sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
 
-
+<!-- Angular -->
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- end:Angular -->
 
 ## Cell Editing
 
@@ -222,10 +224,9 @@ public keydownHandler(event) {
   const grid = this.grid;
   const activeElem = grid.navigation.activeNode;
 
-  if(
-    (key >= 48 && key <= 57) ||
-    (key >= 65 && key <= 90) ||
-    (key >= 97 && key <= 122)){
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
         // Number or Alphabet upper case or Alphabet lower case
         const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
         const cell = grid.getCellByColumn(activeElem.row, columnName);
@@ -245,7 +246,7 @@ if (key == 13) {
     const column = activeElem.column;
     const rowInfo = grid.dataView;
 
-    // to find the next eiligible cell, we will use a custom method that will check the next suitable index
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
     let nextRow = this.getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
@@ -265,7 +266,7 @@ if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowInd
 return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
-if(previous){
+if (previous) {
 return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
@@ -505,7 +506,7 @@ The `CellEdit` emits whenever **any** cell's value is about to be committed. In 
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
         const column = event.column;
-        if (column.field === 'Ordered') {
+        if (column.field === 'UnitsOnOrder') {
             const rowData = event.rowData;
             if (!rowData) {
                 return;
@@ -715,7 +716,9 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
+<!-- Angular -->
 * `InputDirective`
+<!-- end:Angular -->
 * `DatePickerComponent`
 
 ## Additional Resources

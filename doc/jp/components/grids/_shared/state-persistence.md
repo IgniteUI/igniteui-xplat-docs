@@ -537,16 +537,11 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular -->
 * `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
+<!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
-
-
-## API リファレンス
-
-* `{ComponentName}`
-* `GridStateDirective`
-
 
 ## その他のリソース
 

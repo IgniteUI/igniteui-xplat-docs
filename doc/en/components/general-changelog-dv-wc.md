@@ -2,30 +2,62 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-> [!Note]
-Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
+## **{PackageVerChanges-22-2.2}**
+
+### New Components
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
+### {PackageGrids} (Data Grid)
+
+* A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
+* `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+* When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
+* When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
+* The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
+* The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+
+### {PackageInputs}
+
+* `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
+* `IgcRadio` and `IgcRadioGroup`, added component validation along with styles for invalid state
+* `IgcMask`, added the capability to escape mask pattern literals.
+* `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
+* `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
+
+### {PackageGrids} (Pivot Grid)
+
+* The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+
+### {PackageDockManager} (DockManager)
+
+* [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
 
 ## **{PackageVerChanges-22-2.1}**
 
 ### New Components
 
-* [Combo](grids/combo/overview.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
 * [Pivot Grid](grids/pivot-grid/overview.md)
 * [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### New Components
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
 
@@ -59,7 +91,7 @@ These new chart improvements include:
 > [!Note]
 [Chart Aggregation](charts/features/chart-data-aggregations.md) will not work when using `IncludedProperties` | `ExcludedProperties`. These properties on the chart are meant for non-aggregated data. Once you attempt to aggregate data these properties should no longer be used. The reason it does not work is because aggregation replaces the collection that is passed to the chart for render.  The include/exclude properties are designed to filter in/out properties of that data and those properties no longer exist in the new aggregated collection.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * Changed `Column` to `DataGridColumn`
 * Changed `GridCellEventArgs` to `DataGridCellEventArgs`
@@ -84,7 +116,7 @@ These new chart improvements include:
 * New `XAxisMaximumGap`, determines the maximum allowed value for the plotted series when using `XAxisGap`. The gap determines the amount of space between columns or bars of plotted series.
 * New `XAxisMinimumGapSize`, determines the minimum allowed pixel-based value for the plotted series when using `XAxisGap` to ensure there is always some spacing between each category.
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Feature Added:
 - [Row Paging](grids/data-grid/row-paging.md)
@@ -104,8 +136,10 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 <div class="divider--half"></div>
 
 ## **2.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### New Components & Themes
+
+These are related only in the **{PackageComponents}** package.
 
 * Added [Slider](inputs/slider.md)
 * Added [Range Slider](inputs/slider.md)
@@ -130,7 +164,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 ## **{PackageVerChanges-21-2.1}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 #### Data Grid
 - Added `ValueMultiField`, of type string[], in the `ComboBoxColumn` to be used when your items in the drop down contain a key that consists of multiple fields.
@@ -152,8 +186,10 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 <div class="divider--half"></div>
 
 ## **1.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### New Components
+
+These are related only in the **{PackageComponents}** package.
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -178,7 +214,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 > [!Note]
 > Please ensure package "lit-html": "^2.0.0" or newer is added to your project for optimal compatibility.
 
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces a few improvements and simplifications to visual design and configuration options for the geographic map and all chart components.
 
@@ -213,7 +249,7 @@ This release introduces a few improvements and simplifications to visual design 
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 * New Features Added:
     - [Filter Row](grids/data-grid/column-filtering.md)
@@ -230,7 +266,7 @@ This release introduces a few improvements and simplifications to visual design 
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (Charts)
 
 This release introduces several new and improved visual design and configuration options for all of the chart components, e.g. `DataChart`, `CategoryChart`, and `FinancialChart`.
 
@@ -281,7 +317,7 @@ for example:
 * Added horizontal `Orientation` property to ItemLegend that can be used with Bubble, Donut, and Pie Chart
 * Added `LegendHighlightingMode` property - Enables series highlighting when hovering over legend items
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > These features are CTP
@@ -326,7 +362,7 @@ for example:
 
 ## **{PackageVerChangedFields}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 > [!Note]
 > These breaking changes were introduce in the grid package.
@@ -347,11 +383,11 @@ const colSortDesc = new IgcColumnSortDescription();
 colSortDesc.field = "UnitsInStock";
 const income = new IgcColumnGroupDescription();
 income.field = "Income";
-
 ```
+
 ## **{PackageVerRenamedGrid}**
 
-### {PackageGrids}
+### {PackageGrids} (Data Grid)
 
 - Changed Name of Live Grid
 

@@ -68,7 +68,7 @@ _language: ja
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -76,7 +76,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -420,9 +420,11 @@ enum DragIcon {
 
 ### 行の並べ替えデモ
 
+<!-- Angular -->
 グリッドの行ドラッグ イベントと `Drop` ディレクティブを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
 
 すべてのアクションはグリッド本体の**内側**で発生するため、ここで `Drop` ディレクティブをアタッチする必要があります:
+<!-- end:Angular -->
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">
@@ -760,8 +762,9 @@ class MyRowGhostComponent {
         }
     }
 }
-
 ```
+
+<!-- Angular -->
 
 #### カーソル位置に基づいたドロップ インジケーターの表示
 
@@ -832,8 +835,6 @@ private changeHighlightedElement(newElement: HTMLElement) {
   }
 }
 ```
-
-<!-- Angular -->
 
 #### 行ドラッグでグリッドをスクロールする
 
@@ -918,10 +919,9 @@ class MyGridScrollComponent {
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-
 ## 制限
 
-現在、`RowDraggable` ディレクティブに既知の制限はありません。
+現在、`RowDraggable` に既知の制限はありません。
 
 ## API リファレンス
 

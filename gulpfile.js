@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var yaml = require('gulp-yaml');
 var del = require('del');
 var flatten = require('gulp-flatten');
+var replace = require('gulp-replace');
 var es = require('event-stream');
 var through = require('through2');
 var path = require('path');
@@ -558,11 +559,11 @@ function buildPlatform(cb) {
             ])
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
-                if (platformName == "Angular") {
-                    log("building " + PLAT + " ... done ");
-                    log("=========================================================");
-                    cb();
-                } else {
+                // if (platformName == "Angular") {
+                //     log("building " + PLAT + " ... done ");
+                //     log("=========================================================");
+                //     cb();
+                // } else {
                     gulp.src([
                         'docfx/**/*.*'
                     ])
@@ -573,7 +574,7 @@ function buildPlatform(cb) {
                         log("=========================================================");
                         cb();
                     });
-                }
+                // }
             });
         })
         .on("error", (err) => {
@@ -585,6 +586,17 @@ function buildPlatform(cb) {
         console.log("ERROR building platform: " + platformName.toString());
         cb(err);
     });
+}
+
+function replaceEnvironmentVariables(cb) {
+    const environment = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : 'development';
+    const config = require(`./docfx/${LANG}/environment.json`);
+    return gulp.src(`${DOCFX_SITE}/**/*.html`)
+        .pipe(replace(/(\{|\%7B)environment:([a-zA-Z]+)(\}|\%7D)/g, function (match, brace1, environmentVarable, brace2) {
+            const value = config[environment][environmentVarable];
+            return value || match;
+        }))
+        .pipe(gulp.dest(DOCFX_SITE));
 }
 
 let tocLanguage = 'en';
@@ -789,11 +801,11 @@ exports.buildSite = buildSite;
 exports['build-site'] = buildSite;
 
 // functions for building Docfx for each platform:
-var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, updateSiteMap);
-var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, updateSiteMap);
-var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, updateSiteMap);
-var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, updateSiteMap);
+var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap);
+var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
+var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
 // function for building Docfx for a platform specified in arguments, e.g. --plat=React
 var buildDocfx_WithArgs = gulp.series(buildWithArgs, buildSite, updateSiteMap);
 // exporting functions for building Docfx for each platform:

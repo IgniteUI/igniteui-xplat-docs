@@ -147,9 +147,9 @@ import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -636,7 +636,7 @@ public normalView: TemplateRef<any>;
 @ViewChild("smallView", { read: TemplateRef })
 public smallView: TemplateRef<any>;
 
-....
+// ...
 
 const column = this.grid.getColumnByName("User");
 // Return the appropriate template based on some condition.
@@ -670,7 +670,6 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```razor
-
 <IgbGrid ColumnInit=OnColumnInit />
 
 @code {
@@ -727,7 +726,7 @@ public initColumns(column: IgcGridColumn) {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
         IgbColumn column = args.Detail;
-        if(column.Field == "ProductName"){
+        if (column.Field == "ProductName") {
             column.Sortable = true;
             column.Editable = true;
         }
@@ -793,11 +792,11 @@ constructor() {
 ```razor
 <IgbColumn Field="OrderDate"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 
 <IgbColumn Field="UnitPrice"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 ```
 
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
@@ -808,43 +807,33 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJO (Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: valueN
     },
-    .
-    .
-    .
+    // ...
   }];
 
 const POJO = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: {
           ObjectKeyN1: value1,
           ObjectKeyN2: value2,
-          .
-          .
-          .
+          // ...
           ObjectKeyNM: valueNM,
         }
     },
-    .
-    .
-    .
+    // ...
   }];
-
 ```
+
 >[!WARNING]
 >**The key values must not contain arrays**.
 
@@ -1132,10 +1121,10 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public getName(rowId: number){
+public getName(rowId: number) {
     //row.data['name']
 }
-public getWeight(rowId: number){
+public getWeight(rowId: number) {
     //row.data['weight']['molecular']
 }
 ```
@@ -1367,7 +1356,7 @@ public getAge(rowId: number) {
 //In JavaScript:
 igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
     const people = ctx.cell.value;
@@ -1618,7 +1607,7 @@ public updatePostalCode(rowId: number) {
 //In JavaScript:
 igRegisterScript("AddressEditCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
 

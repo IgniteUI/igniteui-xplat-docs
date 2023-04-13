@@ -43,7 +43,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualSummaryListDensity"}],"originalName":"ActualSummaryListDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"filterListDensity"}],"originalName":"FilterListDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualFilterListDensity"}],"originalName":"ActualFilterListDensity"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"filterListPlaceholderText"}],"originalName":"FilterListPlaceholderText"}],"originalBaseTypeName":"GridColumnOptionsBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"filterListPlaceholderText"}],"originalName":"FilterListPlaceholderText"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryListTextColor"}],"originalName":"SummaryListTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryListBackground"}],"originalName":"SummaryListBackground"}],"originalBaseTypeName":"GridColumnOptionsBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"},
   { "originalName":"GridColumnOptionsSimpleSectionBase",
     "names":[{"platform":"WebComponents","fileName":"igc-grid-column-options-simple-section-base-component.ts","mappedName":"IgcGridColumnOptionsSimpleSectionBaseComponent"}],
     "members":[
@@ -108,6 +110,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"summaryListDensity"}],"originalName":"SummaryListDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"actualSummaryListDensity"}],"originalName":"ActualSummaryListDensity"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"activeCount"}],"originalName":"ActiveCount"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryListTextColor"}],"originalName":"SummaryListTextColor"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"summaryListBackground"}],"originalName":"SummaryListBackground"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"onApply"}],"originalName":"OnApply"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"onCancel"}],"originalName":"OnCancel"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"closeMenu"}],"originalName":"CloseMenu"}],"originalBaseTypeName":"GridColumnOptionsSectionBase","originalBaseTypeNamespace":"Infragistics.Controls.Grid.Implementation","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}

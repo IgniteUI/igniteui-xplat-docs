@@ -168,6 +168,8 @@ public groupByRowTemplate = (ctx: IgcGroupByRowTemplateContext) => {
 }
 ```
 
+<!-- Angular -->
+
 ### グループ行セレクター テンプレート
 
 上記のように、展開/縮小 UI を除くグループ行は完全にテンプレート化可能です。グリッド内にカスタムの GroupBy 行セレクター テンプレートを作成するには、`GroupByRowSelector` ディレクティブを使用して `<ng-template>` を宣言します。テンプレートから、Group By 行の状態に関する情報を提供するプロパティを使用して、暗黙的に提供されたコンテキスト変数にアクセスできます。
@@ -217,6 +219,8 @@ public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) 
     </ng-template>
 </igx-grid>
 ```
+
+<!-- end:Angular -->
 
 ## {Platform} Grid ページングによるグループ化
 

@@ -41,11 +41,11 @@ _language: ja
 
 グリッドは、集計が表示される場所の構成をサポートします。これを構成するには、`GroupSummaryDisplayMode` プロパティを使用します。このプロパティのオプションは以下のとおりです。
 
-- `List`: グループ集計をスパン グループ ヘッダーのフラット リストにレンダリングします。
-- `Cells`: グループ ヘッダーをセルとしてレンダリングし、集計値を対応する列に揃えてセル内にレンダリングします。グリッドは、このオプションを使用して列ごとに 1 つの集計のみを表示します。
-- `RowTop`: グループ集計をグループの上部に集計行としてレンダリングします。
-- `RowBottom`: グループ集計をグループの下部に集計行としてレンダリングします。
-- `None`: グループ集計のレンダリングを無効にします。
+- **List**: グループ集計をスパン グループ ヘッダーのフラット リストにレンダリングします。
+- **Cells**: グループ ヘッダーをセルとしてレンダリングし、集計値を対応する列に揃えてセル内にレンダリングします。グリッドは、このオプションを使用して列ごとに 1 つの集計のみを表示します。
+- **RowTop**: グループ集計をグループの上部に集計行としてレンダリングします。
+- **RowBottom**: グループ集計をグループの下部に集計行としてレンダリングします。
+- **None**: グループ集計のレンダリングを無効にします。
 
 ## コード スニペット
 
@@ -73,8 +73,7 @@ _language: ja
     auto-generate-columns="false"
     is-group-collapsable="true"
     group-header-display-mode="combined"
-    default-column-min-width="100"
-    >
+    default-column-min-width="100">
         <igc-text-column field="ProductName" header-text="Product"></igc-text-column>
         <igc-numeric-column positive-prefix="$" field="BundlePrice" show-grouping-separator="true" header-text="Price" ></igc-numeric-column>
         <igc-numeric-column field="OrderItems" header-text="Order Items"></igc-numeric-column>
@@ -93,34 +92,29 @@ public componentDidMount() {
 }
 
 public onLoad() {
-
-    //Count Operand
+    // Count Operand
     const productCount = new IgrColumnSummaryDescription();
     productCount.field = "ProductName";
     productCount.operand = SummaryOperand.Count;
     this.grid.summaryDescriptions.add(productCount);
-
-    //Min Operand with formatting
+    // Min Operand with formatting
     const priceMin = new IgrColumnSummaryDescription();
     priceMin.field = "BundlePrice";
     priceMin.operand = SummaryOperand.Min;
     priceMin.formatOverride = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
     this.grid.summaryDescriptions.add(priceMin);
-
-    //Max Operand and formatting
+    // Max Operand and formatting
     const priceMax = new IgrColumnSummaryDescription();
     priceMax.field = "BundlePrice";
     priceMax.operand = SummaryOperand.Max;
     priceMax.formatOverride = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
     this.grid.summaryDescriptions.add(priceMax);
-
-    //Sum Operand
+    // Sum Operand
     const orderSum = new IgrColumnSummaryDescription();
     orderSum.field = "OrderItems";
     orderSum.operand = SummaryOperand.Sum;
     this.grid.summaryDescriptions.add(orderSum);
-
-    //Average Operand and formatting
+    // Average Operand and formatting
     const orderValueAvg = new IgrColumnSummaryDescription();
     orderValueAvg.field = "OrderValue";
     orderValueAvg.operand = SummaryOperand.Average;
@@ -136,44 +130,38 @@ import { SummaryOperand, SummaryCalculator, DefaultSummaryResult, IDataSource, I
 
 connectedCallback() {
 
-    //Count Operand
+    // Count Operand
     const productCount = new IgcColumnSummaryDescription();
     productCount.field = "ProductName";
     productCount.operand = SummaryOperand.Count;
     this.grid.summaryDescriptions.add(productCount);
-
-    //Min Operand with formatting
+    // Min Operand with formatting
     const priceMin = new IgcColumnSummaryDescription();
     priceMin.field = "BundlePrice";
     priceMin.operand = SummaryOperand.Min;
     priceMin.formatOverride = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
     this.grid.summaryDescriptions.add(priceMin);
-
-    //Max Operand and formatting
+    // Max Operand and formatting
     const priceMax = new IgcColumnSummaryDescription();
     priceMax.field = "BundlePrice";
     priceMax.operand = SummaryOperand.Max;
     priceMax.formatOverride = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
     this.grid.summaryDescriptions.add(priceMax);
-
-    //Sum Operand
+    // Sum Operand
     const orderSum = new IgcColumnSummaryDescription();
     orderSum.field = "OrderItems";
     orderSum.operand = SummaryOperand.Sum;
     this.grid.summaryDescriptions.add(orderSum);
-
-    //Average Operand and formatting
+    // Average Operand and formatting
     const orderValueAvg = new IgcColumnSummaryDescription();
     orderValueAvg.field = "OrderValue";
     orderValueAvg.operand = SummaryOperand.Average;
     orderValueAvg.formatOverride = new Intl.NumberFormat('en-EN', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
     this.grid.summaryDescriptions.add(orderValueAvg);
 }
-
 ```
 
 ```razor
-
 <IgbDataGrid Height="500px" Width="100%"
     @ref="DataGridRef"
     SummaryScope="DataSourceSummaryScope.Root"
@@ -204,35 +192,11 @@ connectedCallback() {
 
     private void OnDataGridRef()
     {
-        var productCount = new ColumnSummaryDescription()
-        {
-            Field = "ProductName",
-            Operand = SummaryOperand.Count
-        };
-
-        var priceMin = new ColumnSummaryDescription()
-        {
-            Field = "BundlePrice",
-            Operand = SummaryOperand.Min
-        };
-
-        var priceMax = new ColumnSummaryDescription()
-        {
-            Field = "BundlePrice",
-            Operand = SummaryOperand.Max
-        };
-
-        var orderSum = new ColumnSummaryDescription()
-        {
-            Field = "OrderItems",
-            Operand = SummaryOperand.Sum
-        };
-
-        var orderValueAvg = new ColumnSummaryDescription()
-        {
-            Field = "OrderValue",
-            Operand = SummaryOperand.Average
-        };
+        var productCount = new ColumnSummaryDescription() { Field = "ProductName", Operand = SummaryOperand.Count };
+        var priceMin = new ColumnSummaryDescription() { Field = "BundlePrice", Operand = SummaryOperand.Min };
+        var priceMax = new ColumnSummaryDescription() { Field = "BundlePrice", Operand = SummaryOperand.Max };
+        var orderSum = new ColumnSummaryDescription() { Field = "OrderItems", Operand = SummaryOperand.Sum };
+        var orderValueAvg = new ColumnSummaryDescription() { Field = "OrderValue", Operand = SummaryOperand.Average };
 
         this.DataGridRef.SummaryDescriptions.Add(productCount);
         this.DataGridRef.SummaryDescriptions.Add(priceMin);
@@ -255,9 +219,8 @@ import { IgrProvideCalculatorEventArgs } from 'igniteui-react-core';
 
 public onLoad()
 {
-
-    //...
-    //Custom Operand with calculator
+    // ...
+    // Custom Operand with calculator
     const countries = new IgrColumnSummaryDescription();
     countries.field = "Countries";
     countries.operand = SummaryOperand.Custom;
@@ -286,7 +249,7 @@ class CustomDomestic extends SummaryCalculator
         return new DefaultSummaryResult(this.propertyName, SummaryOperand.Custom, this.usCountries)
     }
     public aggregate(a: any): void {
-        if(a.Countries === "USA")
+        if (a.Countries === "USA")
         {
             this.usCountries++;
         }
@@ -326,7 +289,7 @@ class CustomDomestic extends SummaryCalculator
        return new DefaultSummaryResult(this.propertyName, SummaryOperand.Custom, this.usCountries)
     }
     public aggregate(a: any): void {
-       if(a.Countries === "USA")
+       if (a.Countries === "USA")
        {
             this.usCountries++;
        }
