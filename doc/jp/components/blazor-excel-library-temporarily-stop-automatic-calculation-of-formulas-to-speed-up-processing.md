@@ -85,7 +85,7 @@ Infragistics Blazor Excel Engine を使用することで、以下が可能に�
 ```razor
 @using Infragistics.Documents.Excel
 // ...
-var workbook = Workbook.Load ( "path-to-your-file" );
+var workbook = Workbook.Load("path-to-your-file");
 
 // 👇 SuspendCalculations() 関数を呼び出すと、これ以降、数式の自動計算が止る
 workbook.SuspendCalculations();

@@ -424,14 +424,12 @@ export class AppModule { ... }
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>

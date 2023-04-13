@@ -12,6 +12,11 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2.2}**
 
+### 新しいコンポーネント
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
 ### {PackageGrids} (データ グリッド)
 
 * 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
@@ -41,16 +46,19 @@ namespace: Infragistics.Controls.Charts
 
 ### 新しいコンポーネント
 
-* [コンボ](inputs/combo/overview.md)
-* [ピボット グリッド](grids/pivot-grid/overview.md)
-* [ステッパー](layouts/stepper.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
+* [Pivot Grid](grids/pivot-grid/overview.md)
+* [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### 新しいコンポーネント
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
 

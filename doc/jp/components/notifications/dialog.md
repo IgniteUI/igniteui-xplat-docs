@@ -50,16 +50,12 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 
 ```razor
 <div class="container vertical">
-    <IgbDialog @ref="_dialog" Title="Dialog Title">
-        <p>This is a sample message.</p>
-        <div slot="footer">
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dialog!.Hide())">Close</IgbButton>
-        </div>
+    <IgbButton onclick="dialog.show()" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
+    <IgbDialog id="dialog" Title="Confirmation">
+        <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
+        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
+        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>OK</IgbButton>
     </IgbDialog>
-
-    <IgbButton @onclick="@(e => _dialog!.Show())" class="button">
-        Open Dialog
-    </IgbButton>
 </div>
 ```
 
@@ -85,8 +81,11 @@ Dialog のタイトルを設定するには、`Title` プロパティを使用�
 
 `CloseOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
+<!-- Angular, WebComponents -->
+
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing のバリエーション"`
 
+<!-- end: Angular, WebComponents -->
 
 ### (フォーム)
 
@@ -102,13 +101,13 @@ Dialog コンポーネントは、いくつかの CSS パーツ (`base`、`title
 ```css
 igc-dialog::part(content) {
     background: #011627;
-    color:white;
+    color: white;
 }
 
 igc-dialog::part(title),
 igc-dialog::part(footer) {
     background: #011627;
-    color:#ECAA53;
+    color: #ECAA53;
 }
 ```
 

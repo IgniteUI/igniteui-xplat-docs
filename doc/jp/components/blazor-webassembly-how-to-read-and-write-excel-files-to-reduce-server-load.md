@@ -70,7 +70,7 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
 
 ```razor
 <script src="_content/IgniteUI.Blazor/app.bundle.js"></script>
-    <!--👇 この行を追加 -->
+<!-👇 この行を追加->
 <script src="_content/IgniteUI.Blazor.Documents.Excel/excel.js"></script>
 <script src="_framework/blazor.webassembly.js"></script> </body></ html>
 ```
@@ -87,9 +87,10 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
 @code {
     // ...
     // ⚠️注意 - Blazor WebAssembly 上で Excel ライブラリを使うには、
-    //          Workbook.InProcessRuntime 静的プロパティの初期設定が必要です。
+    //  Workbook.InProcessRuntime 静的プロパティの初期設定が必要です。
     if (Workbook.InProcessRuntime == null)
-        Workbook.InProcessRuntime = this.JSRuntime as IJSInProcessRuntime;
+        Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
+    // ...
 ```
 
 ### Workbook クラスを使って Excel ファイルを読み書き
@@ -103,18 +104,18 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
 @code
 {
     // ...
-    private IEnumerable<EarthquakeCountParDay>? _EarthquakeCountParDays;
-    // ...
+    private IEnumerable <EarthquakeCountParDay>? _EarthquakeCountParDays;
+
     // <summary>
     // [ダウンロード] ボタンがクリックされたときに呼び出され、直近1週間の1日ごと地震発生回数データを Excel ファイルに収めてダウンロードさせます。
     // </summary>
     private async Task OnClickedDownloadAsync()
     {
         // ⚠️注意 - Blazor WebAssembly 上で Excel ライブラリを使うには、Workbook.InProcessRuntime 静的プロパティの初期設定が必要です。
-        if (Workbook.InProcessRuntime == null) Workbook.InProcessRuntime = this.JSRuntime as IJSInProcessRuntime;
+        if (Workbook.InProcessRuntime == null) Workbook.InProcessRuntime = this .JSRuntime as IJSInProcessRuntime;
 
         // 雛形の Excel ファイルをサーバーから取得し、Workbook オブジェクトに読み込みます。
-        await using var templateStream = await this.HttpClient.GetStreamAsync("./TemplateBook.xlsx");
+        await using var templateStream = await this .HttpClient.GetStreamAsync ("./TemplateBook.xlsx");
 
         var workBook = Workbook.Load(templateStream);
         await templateStream.DisposeAsync();
@@ -132,8 +133,9 @@ Blazor WebAssembly プロジェクト中のフォールバックページであ�
         // 記入が終わった Workbook オブジェクトを .xlsx ファイル形式に書き出し、ブラウザにダウンロードさせます。
         await using var memStream = new MemoryStream();
         workBook.Save(memStream);
-        await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application/octet-stream" ,memStream.ToArray());
+        await this.JSRuntime.InvokeDownloadAsync("Book.xlsx", "application / octet-stream" ,memStream.ToArray());
     }
+    // ...
 ```
 
 以上の手順にて、Blazor WebAssembly アプリケーション上で、ひな形となる Excel ファイルのセルを実データで埋めてダウンロードさせる処理が実現できました。
@@ -213,11 +215,12 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
         // プロジェクトファイル (IgbExcelDemo.Client.csproj) にて遅延読み込みを指定しておいた
         // アセンブリファイル (.dll) を、ここで AssemblyLoader を使って読み込みます。
         // (補足: 繰り返し何度も呼び出しても大丈夫です、まだいちども読み込まれていない .dll のみが読み込まれます)
-        await this.AssemblyLoader.LoadAssembliesAsync(new []
+        await this.AssemblyLoader.LoadAssembliesAsync(new [])
         {
             "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
         });
+    // ...
 ```
 
 ### 遅延読み込みするアセンブリに関係する処理を別のスコープに切り出す
@@ -240,7 +243,7 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
     private async Task OnClickedDownloadAsync()
     {
         // ...
-        await this .AssemblyLoader.LoadAssembliesAsync(new []
+        await this .AssemblyLoader.LoadAssembliesAsync ( new [] )
         {
             "IgniteUI.Blazor.Documents.Core.dll",
             "IgniteUI.Blazor.Documents.Excel.dll"
@@ -249,13 +252,12 @@ Infragistics Blazor Excel ライブラリが提供するアセンブリファイ
         // アセンブリの遅延読み込みを行なってから、その遅延読み込みされるアセンブリ内の機能を使うメソッドを呼び出します。
         // (アセンブリの遅延読み込みを行なうメソッド内で直接、遅延読み込みしたアセンブリ内の機能を参照していると、
         //  System.IO.FileNotFoundException: Could not load file or assembly 例外が発生します。)
-        await this.DownloadAsExcelAsync();
+        Await this.DownloadAsExcelAsync();
     }
-
     // <summary>
     // アセンブリの遅延読み込みを有効にするために、Excel ライブラリを使用するコードを独立したメソッドに切り出します。
     // </summary>
-    private async ValueTask DownloadAsExcelAsync()
+    private async ValueTask DownloadAsExcelAsync ()
     {
         // このメソッド内で Workbook クラスを使った Excel ファイルの読み書きを行ないます
     }
