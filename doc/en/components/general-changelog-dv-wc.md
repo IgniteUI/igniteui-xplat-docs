@@ -11,6 +11,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ## **{PackageVerChanges-22-2.2}**
 
+### New Components
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
 ### {PackageGrids} (Data Grid)
 
 * A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
@@ -40,16 +45,19 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 ### New Components
 
-* [Combo](inputs/combo/overview.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
 * [Pivot Grid](grids/pivot-grid/overview.md)
 * [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### New Components
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
 

@@ -15,6 +15,11 @@ All notable changes for each version of {ProductName} are documented on this pag
 
 * [Stepper](layouts/stepper.md)
 
+### New Components
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
 ### {PackageGrids} (Data Grid)
 
 * A new argument `PrimaryKey` has been introduced to `IgbRowDataEventArgs` from `Detail`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to null.

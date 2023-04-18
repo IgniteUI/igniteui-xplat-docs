@@ -133,8 +133,8 @@ The `RegisterIcon` method allows you to register an SVG image as an icon from an
 
 <IgrIcon ref={this.iconRef} iconName="search" collection="material" />
 
-public iconRef(icon: IgrIcon){
-    if(!icon){
+public iconRef(icon: IgrIcon) {
+    if (!icon) {
         return;
     }
 
@@ -191,8 +191,8 @@ registerIconFromText("search", searchIcon, "material");
 
 <IgrIcon ref={this.iconRef} iconName="search" collection="material" />
 
-public iconRef(icon: IgrIcon){
-    if(!icon){
+public iconRef(icon: IgrIcon) {
+    if (!icon) {
         return;
     }
 
