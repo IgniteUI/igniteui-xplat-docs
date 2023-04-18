@@ -203,7 +203,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 以下にリストされているのは、ツールバーの主な機能と、それぞれのサンプル コードです。
 
-`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} ツールバー サンプル 2"`
 
 
 
@@ -243,7 +243,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        <!-- ... -->
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
@@ -302,7 +302,7 @@ constructor() {
 }
 ```
 
-デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* )外側のクリックで閉じる) インタラクションが有効になっています。
+デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* (外側のクリックで閉じる) インタラクションが有効になっています。
 
 ### 列のピン固定
 
@@ -424,14 +424,12 @@ export class AppModule { ... }
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>
@@ -549,7 +547,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 以下のサンプルは、エクスポート ファイルをカスタマイズする方法を示します。
 
 
-`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} toolbar sample 3"`
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} ツールバー サンプル 3"`
 
 
 
@@ -614,7 +612,7 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 以下のサンプルは、列ヘッダーをクリックして並べ替えセットをクリアするためのボタンをツールバーに追加する方法です。
 
-`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} ツールバー サンプル 4"`
 
 
 <!-- Angular -->
@@ -710,7 +708,7 @@ $dark-input-group-theme: input-group-theme(
 ```
 
 > [!Note]
->コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+>コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {

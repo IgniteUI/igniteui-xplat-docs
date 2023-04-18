@@ -13,6 +13,11 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2.65}**
 
+### 新しいコンポーネント
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
 ### {PackageGrids} (データ グリッド)
 
 * 新しい引数 `PrimaryKey` が `Detail` から `IgbRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで null 値になります。
