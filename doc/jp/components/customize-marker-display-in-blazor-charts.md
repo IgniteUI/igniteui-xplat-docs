@@ -32,7 +32,7 @@ mentionedTypes: []
 さて、バインドするサンプルデータの型ですが、下記のレコード型とします。
 
 ```razor
-public record SampleDataType(
+public record SampleDataType (
     string Name,
     double XValue,
     double YValue,
@@ -54,11 +54,11 @@ public record SampleDataType(
 // サンプルの Razor コンポーネント (.razor) 中の @code ブロック内にて
 public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 {
-    new (Name: "item1", XValue: 0, YValue: 2, Volume: 5.7, Color: System.Drawing.Color.Fuchsia),
-    new (Name: "item2", XValue: 2, YValue: 5, Volume: 3.6, Color: System.Drawing.Color.MediumOrchid),
-    new (Name: "item3", XValue: 3, YValue: 1, Volume: 2.3, Color: System.Drawing.Color.DarkViolet),
-    new (Name: "item4", XValue: 4, YValue: 6, Volume: 8.5, Color: System.Drawing.Color.SlateBlue),
-    new (Name: "item5", XValue: 6, YValue: 3, Volume: 4.2, Color: System.Drawing.Color.RoyalBlue),
+    new ( Name: "item1" , XValue: 0 , YValue: 2 , Volume: 5.7 , Color: System.Drawing.Color.Fuchsia ),
+    new ( Name: "item2" , XValue: 2 , YValue: 5 , Volume: 3.6 , Color: System.Drawing.Color.MediumOrchid ),
+    new ( Name: "item3" , XValue: 3 , YValue: 1 , Volume: 2.3 , Color: System.Drawing.Color.DarkViolet ),
+    new ( Name: "item4" , XValue: 4 , YValue: 6 , Volume: 8.5 , Color: System.Drawing.Color.SlateBlue ),
+    new ( Name: "item5" , XValue: 6 , YValue: 3 , Volume: 4.2 , Color: System.Drawing.Color.RoyalBlue ),
 };
 ```
 
@@ -90,10 +90,10 @@ public IEnumerable<SampleDataType> DataSource { get; } = new SampleDataType[]
 
 ```razor
 // /wwwroot/customMarkerTemplateFunc.js で
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
-        measure: function(measureInfo) {},
-        render: function(renderInfo) {}
+        measure: function (measureInfo) {},
+        render: function (renderInfo) {}
    }
 }
 ```
@@ -108,7 +108,7 @@ Ignite UI への回答方法は、この measure メソッド呼び出し時の�
 ```razor
 // /wwwroot/customMarkerTemplateFunc.js で
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
         measure: function ( measureInfo ) {
            // この例では、描画するデータの Volume プロパティ値に基づいて、
@@ -117,7 +117,7 @@ function customMarkerTemplateFunc () {
            const item = measureInfo.data.item;
            const size = item.Volume * 3 * 2;
            measureInfo.width = size;
-           easureInfo.height = size;
+           measureInfo.height = size;
        }
    }
 }
@@ -133,7 +133,7 @@ function customMarkerTemplateFunc () {
 ```razor
 // /wwwroot/customMarkerTemplateFunc.js で
 
-function customMarkerTemplateFunc () {
+function customMarkerTemplateFunc() {
     return {
         // ...
         render: function ( renderInfo ) {
@@ -149,10 +149,10 @@ function customMarkerTemplateFunc () {
             const color = renderInfo.data.item.Color;
             // HTML Canvas 要素の 2D コンテキストに対して、マーカーの描画を実行
             // (measure メソッドで算定した大きさで、真円のマーカーを描画)
-            const ctx = renderInfo.context;
+            const ctx = renderInfo.context ;
             ctx.beginPath();
-            ctx.fillStyle = `rgba (${color.R}, ${color.G}, ${color.B}, ${color.A})`;
-            ctx.ellipse(cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180);
+            ctx.fillStyle = `rgba (${color.R} , ${color.G} , ${color.B} , ${color.A})`;
+            ctx.ellipse (cx, cy, halfWidth, halfHeight, 0 , 0 , 360 * Math.PI / 180);
             ctx.fill();
         }
     }
@@ -164,9 +164,9 @@ function customMarkerTemplateFunc () {
 
 ## マーカーのカスタム描画オブジェクトを返すファクトリー関数を、Ignite UI に登録
 
-measure および render メソッドが実装できたら、残りの作業はあと少しです。ここまでで実装した、measure および render の 2つのメソッドを持つオブジェクトを返す関数を、Ignite UI が提供する igRegisterScript() 関数を呼び出して、Ignite UI に対して登録します。
+measure および render メソッドが実装できたら、残りの作業はあと少しです。ここまでで実装した、measure および render の 2つのメソッドを持つオブジェクトを返す関数を、Ignite UI が提供する igRegisterScript 関数を呼び出して、Ignite UI に対して登録します。
 
-このとき、igRegisterScript() 関数の第1引数に、文字列の「スクリプト名」を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した「スクリプト名」で識別されます。以下にコード例を示します。
+このとき、igRegisterScript 関数の第1引数に、文字列の「スクリプト名」を指定します。このスクリプト名は任意の名称とすることができ、実装した JavaScript 関数の名前と同じである必要はありません。Ignite UI からは、実際の JavaScript 関数の名前とは関係なく、この第1引数に指定した「スクリプト名」で識別されます。以下にコード例を示します。
 
 ```razor
 // /wwwroot/customMarkerTemplateFunc.js で
@@ -186,11 +186,11 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 ```razor
 // /wwwroot/customMarkerTemplateFunc.js で
 
-(function () {
+(function() {
     function customMarkerTemplateFunc() {
         // ...
     }
-    igRegisterScript ("customMarkerTemplateFunc" , customMarkerTemplateFunc);
+    igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 }) ();
 ```
 これで JavaScript 側の実装がひととおり完了となります。
@@ -212,7 +212,7 @@ igRegisterScript("customMarkerTemplateFunc", customMarkerTemplateFunc);
 
 最後に、ここまでで作成した、マーカーのカスタム描画を行なう JavaScript を使うよう、シリーズのパラメータにて、"スクリプト名" で指定します。
 
-具体的には MarkerTemplateScript という string 型のパラメータがありますので、ここに、マーカーのカスタム描画を行なう JavaScript プログラムのスクリプト名 (igRegisterScript() JavaScript 関数での登録時に、第1引数に指定した文字列で識別) を指定します。下記にコード例を示します。
+具体的には MarkerTemplateScript という string 型のパラメータがありますので、ここに、マーカーのカスタム描画を行なう JavaScript プログラムのスクリプト名 (igRegisterScript 関数での登録時に、第1引数に指定した文字列で識別) を指定します。下記にコード例を示します。
 
 ```razor
 @* サンプルの Razor コンポーネント (.razor) 内のマークアップにて *@
