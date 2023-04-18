@@ -31,8 +31,8 @@ namespace: Infragistics.Controls.Charts
 * `IgcDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
 * `IgcRadio` および `IgcRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
 * `IgcMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgcBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
-* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
+* `IgcBadge` は、バッジの形状を制御する `Shape` プロパティを追加し、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。これは、`Square`、`Rounded`、または `Circle` にすることができます。アバターのデフォルトの形状は `Square`です。
 
 ### {PackageGrids} (ピボット グリッド)
 

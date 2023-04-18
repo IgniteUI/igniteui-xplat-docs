@@ -52,7 +52,7 @@ Blazor WebAssembly (WASM とも呼ばれます) は、[W3C](https://www.computer
 
 ### NuGet パッケージの追加
 
-Infragistics Blazor Excel ライブラリの利用には、NuGet パッケージ「IgniteUI.Blazor.Documents.Excel」が必要です。Visual Studio を使用している場合は NuGet パッケージマネージャーを使うなどして、Blazor WebAssembly プロジェクトに NuGet パッケージ「IgniteUI.Blazor.Documents.Excel」を追加しておきます。
+Infragistics Blazor Excel ライブラリの利用には、NuGet パッケージ「IgniteUI.Blazor.Documents.Excel」が必要です。Visual Studio を使用している場合は NuGet パッケージマネージャーを使うなどして、Blazor WebAssembly プロジェクトに NuGet パッケージ **IgniteUI.Blazor.Documents.Excel** を追加しておきます。
 
 および、このあと記述するプログラムコードにて名前空間の記述を簡略化するため、_Imports.razor に Infragistics Blazor Excel ライブラリの名前空間 Infragistics.Documents.Excel を予め開いておくことにします。
 
