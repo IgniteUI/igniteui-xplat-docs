@@ -12,6 +12,11 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-22-2.2}**
 
+### 新しいコンポーネント
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
 ### {PackageGrids} (データ グリッド)
 
 * 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
@@ -26,8 +31,8 @@ namespace: Infragistics.Controls.Charts
 * `IgcDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
 * `IgcRadio` および `IgcRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
 * `IgcMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
-* `IgcBadge` は、バッジの形状を制御する `shape` プロパティを追加し、`square` または `rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
-* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `shape` 属性によってアバターの形状を制御できます。これは、`square`、`rounded`、または `circle` にすることができます。アバターのデフォルトの形状は `square`です。
+* `IgcBadge` は、バッジの形状を制御する `Shape` プロパティを追加し、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。これは、`Square`、`Rounded`、または `Circle` にすることができます。アバターのデフォルトの形状は `Square`です。
 
 ### {PackageGrids} (ピボット グリッド)
 
@@ -41,16 +46,19 @@ namespace: Infragistics.Controls.Charts
 
 ### 新しいコンポーネント
 
-* [コンボ](inputs/combo/overview.md)
-* [ピボット グリッド](grids/pivot-grid/overview.md)
-* [ステッパー](layouts/stepper.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
+* [Pivot Grid](grids/pivot-grid/overview.md)
+* [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### 新しいコンポーネント
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
 
