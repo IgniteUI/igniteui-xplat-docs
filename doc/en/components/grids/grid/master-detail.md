@@ -20,7 +20,8 @@ This mode is useful when you need to display master-detail style data in a hiera
 
 ## Configuration
 
-To configure the `Grid` to display in master-detail mode you need to specify a template inside the grid, marked with the `GridDetail` directive:
+To configure the `Grid` to display in master-detail mode you need to specify a template for the grid:
+
 
 ```html
 <{ComponentSelector}>
@@ -29,6 +30,22 @@ To configure the `Grid` to display in master-detail mode you need to specify a t
         </ng-template>
 </{ComponentSelector}>
 ```
+
+```ts
+constructor() {
+  var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+  this._bind = () => {
+    grid.data = this.customersData;
+    grid.detailTemplate = this.masterDetailTemplate;
+  }
+  this._bind();
+}
+```
+
+```razor
+    <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
+```
+
 
 Context of the template is the master record data, so that values from the master record can be displayed in the detail template. For example:
 
@@ -43,16 +60,48 @@ Context of the template is the master record data, so that values from the maste
 </{ComponentSelector}>
 ```
 
+```ts
+    public masterDetailTemplate = (ctx: IgcGridMasterDetailContext) => {
+        var data = (ctx as any)["$implicit"];
+        return html` <div class="contact-container">
+        <span><strong>Name:</strong> ${data.ContactName}</span>
+        <br />
+        <span><strong>Title:</strong> ${data.ContactTitle}</span>
+        <br />
+        <span><strong>Company:</strong> ${data.CompanyName}</span>
+        <br />
+    </div>`;
+    }
+```
+
+```razor
+// In JavaScript
+igRegisterScript("DetailTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var data = (ctx as any)["$implicit"];
+    return html` <div class="contact-container">
+        <span><strong>Name:</strong> ${data.ContactName}</span>
+        <br />
+        <span><strong>Title:</strong> ${data.ContactTitle}</span>
+        <br />
+        <span><strong>Company:</strong> ${data.CompanyName}</span>
+        <br />
+    </div>`;
+}, false);
+```
 
 ## API
+
+<!-- Angular -->
 
 The expansion states can be controlled via the `ExpansionStates` input of the `Grid`. States are stored in key-value pairs [row identifier, expansion state]. The property gets/sets the current expansion states and supports two-way binding:
 
 ```html
   <{ComponentSelector} [(expansionStates)]='expansionState' >
-    <!--...-->
   </{ComponentSelector}>
 ```
+
+<!-- end: Angular -->
 
 Additional API methods for controlling the expansion states are also exposed:
 - `ExpandAll`

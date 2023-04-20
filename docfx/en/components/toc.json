@@ -234,6 +234,12 @@
       },
       {
         "exclude": ["Angular", "React"],
+        "name": "Master-Detail",
+        "href": "grids/grid/master-detail.md",
+        "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
         "name": "Keyboard navigation",
         "href": "grids/grid/keyboard-navigation.md",
         "status": ""
