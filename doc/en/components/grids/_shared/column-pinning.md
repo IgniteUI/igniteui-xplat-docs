@@ -15,7 +15,7 @@ Column Pinning in {ProductName} allows the end users to lock column in a particu
 
 This example demonstrates how you can pin a column or multiple columns to the left or right side of the `{ComponentName}`.
 
-`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} Column Pinning Example"`
+`sample="/{ComponentSample}/column-pinning", height="510", alt="{Platform} {ComponentTitle} Column Pinning Example"`
 
 
 
@@ -54,17 +54,12 @@ Column pinning is controlled through the `Pinned` property of the `Column`. Pinn
 ```
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-        this.initColumns = this.initColumns.bind(this);
-        this.selectCell = this.selectCell.bind(this);
-
-        this._bind = () => {
-            grid.data = this.data;
-            grid.columnInit = this.initColumns;
-            grid.selected = this.selectCell;
-        }
-        this._bind();
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    this._bind = () => {
+        grid.data = this.data;
     }
+    this._bind();
+}
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -166,7 +161,7 @@ constructor() {
 
     this._bind = () => {
         dataGrid.data = this.data;
-        datagrid.columnPin = this.columnPinning;
+        dataGrid.addEventListener("columnPin", this.columnPinning);
     }
     this._bind();
 }
@@ -176,24 +171,24 @@ constructor() {
 
 ```typescript
 public columnPinning(event) {
-    if (event.column.field === 'Name') {
-        event.insertAtIndex = 0;
+    if (event.detail.column.field === 'Name') {
+        event.detail.insertAtIndex = 0;
     }
 }
 ```
 
 ```razor
-<{ComponentSelector} Data=data AutoGenerate=true ColumnPinnedScript="onColumnPin"/>
+<{ComponentSelector} Data=data AutoGenerate=true ColumnPinScript="onColumnPin"/>
 
 
 //In JavaScript
-function onColumnPinned(e) {
+function onColumnPin(e) {
     if (e.detail.column.field == "Country") {
         e.detail.insertAtIndex = 0;
     }
 }
 
-igRegisterScript("onColumnPinned", onColumnPinned, false);
+igRegisterScript("onColumnPin", onColumnPin, false);
 ```
 
 ## Pinning Position
@@ -237,15 +232,13 @@ grid.pinning = { columns: ColumnPinningPosition.End };
 `sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
 
 
-<!-- Angular -->
-
 ## Custom Column Pinning UI
 
 You can define your custom UI and change the pin state of the columns via the related API.
 
 Let's say that instead of a toolbar you would like to define pin icons in the column headers that the end user can click to change the particular column's pin state.
 
-This can be done by creating a header template for the column with a custom icon.
+This can be done by creating a header template for the columns with a custom icon.
 
 <!-- ComponentStart: Grid -->
 ```html
@@ -307,7 +300,7 @@ constructor() {
     }
     this._bind();
 }
-}
+
 
 public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`
@@ -317,6 +310,36 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
         </div>
     `;
 }
+```
+
+```razor
+<IgbGrid AutoGenerate="false" Data="CustomersData" Name="grid" @ref="grid">
+    <IgbColumn Field="ID" Hidden="true"></IgbColumn>
+
+    <IgbColumn Field="CompanyName" Header="Company" Width="300px" 
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column1" @ref="column1"></IgbColumn>
+
+    <IgbColumn Field="ContactName" Header="Name" Width="200px" Pinned="true"
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column2" @ref="column2"> </IgbColumn>
+
+    <IgbColumn Field="ContactTitle" Header="Title" Width="200px" Pinned="true"
+    HeaderTemplateScript="WebGridPinHeaderTemplate" Name="column3" @ref="column3"> </IgbColumn>
+</IgbGrid>
+
+// In JavaScript
+igRegisterScript("WebGridPinHeaderTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleColumnPin = function toggleColumnPin(field) {
+        var grid = document.getElementsByTagName("igc-grid")[0];
+        var col = grid.getColumnByName(field);
+        col.pinned = !col.pinned;
+        grid.markForCheck();
+    }
+    return html`<div>
+    <span style="float:left">${ctx.column.field}</span>
+    <span style="float:right" onpointerdown='toggleColumnPin("${ctx.column.field}")'>📌</span>
+</div>`;
+}, false);
 ```
 <!-- ComponentEnd: Grid -->
 
@@ -492,11 +515,6 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 On click of the custom icon the pin state of the related column can be changed using the column's API methods.
 
 ```typescript
-public toggleColumn(col: IgxColumnComponent) {
-    col.pinned ? col.unpin() : col.pin();
-}
-```
-```typescript
 public toggleColumn(col: IgcColumnComponent) {
     col.pinned ? col.unpin() : col.pin();
 }
@@ -506,8 +524,6 @@ public toggleColumn(col: IgcColumnComponent) {
 
 `sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
 
-
-<!-- end: Angular -->
 
 ## Pinning Limitations
 
@@ -633,7 +649,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 ## API References
 * `{ComponentName}`
-* `ColumnComponent`
+* `Column`
 
 ## Additional Resources
 
