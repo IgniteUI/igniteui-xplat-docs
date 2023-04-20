@@ -11,17 +11,17 @@ namespace: Infragistics.Controls
 
 The `{ComponentName}` component in {ProductName} provides the **Column Moving** feature to allow columns reordering via standard drag/drop mouse or touch gestures, or by using the Column Moving API. Column moving works both with pinned and unpinned columns and with [Multi-Column Headers](multi-column-headers.md). Moving a column into the pinned area pins the column and vice versa, moving a column outside of the pinned area unpins the column.
 
->
+> [!Note]
 > Reordering between columns and column groups is allowed only when they are at the same level in the hierarchy and both are in the same group. Moving is allowed between columns/column-groups, if they are top level columns.
 
->
+> [!Note]
 > If a column header is templated and the Column Moving is enabled or the corresponding column is groupable, then the templated elements need to have the **draggable** attribute set to **false**!
 
 <!-- Angular -->
 This allows to attach handlers for any event emitted by the element, otherwise the event is consumed by the `igxDrag` directive.
 <!-- end: Angular -->
 
->
+> [!Note]
 > If the pinned area exceeds its maximum allowed width (80% of the total `{ComponentName}` width), a visual clue notifies the end user that the drop operation is forbidden and pinning is not possible. This means you won't be allowed to drop a column in the pinned area.
 
 ```html
