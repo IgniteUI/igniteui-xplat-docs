@@ -756,12 +756,16 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 
  ```razor
  <{ComponentSelector} Width="100%" Height="100%"
-             @ref=grid
-             AutoGenerate=true
-             Data=northwindEmployees
-             RowHeight="80"
-             DisplayDensity=@density>
+             @ref="grid"
+             AutoGenerate="true"
+             Data="northwindEmployees"
+             RowHeight="rowHeight"
+             DisplayDensity="@density">
 </{ComponentSelector}>
+
+@code {
+    private string rowHeight = "80px";
+}
  ```
 
  <!-- WebComponents -->
