@@ -216,12 +216,23 @@ The code snippet below can be used to select all rows within a group using the g
     grid.selectRowsInGroup(groupRow);
 ```
 
+```razor
+var row = await this.grid.GetRowByIndexAsync(0);
+this.grid.SelectRowsInGroup(row.GroupRow, true);
+```
+
 If you need to deselect all rows within a group programmatically, you can use the `DeselectRowsInGroup` method.
 
 ```typescript
     const groupRow = this.grid.getRowByIndex(0).groupRow;
     grid.deselectRowsInGroup(groupRow);
 ```
+
+```razor
+var row = await this.grid.GetRowByIndexAsync(0);
+this.grid.DeselectRowsInGroup(row.GroupRow);
+```
+
 
 ## Templating
 
@@ -253,6 +264,18 @@ As an example, the following template would make the group rows summary more ver
         const groupRow: any = ctx["$implicit"];
         return html`<span>Total items with value: ${ groupRow.value } are ${ groupRow.records.length }</span>`;
     }
+```
+
+```razor
+<IgbGrid AutoGenerate="true" Data="InvoicesData" @ref="grid" Id="grid" GroupRowTemplateScript="WebGridGroupByRowTemplate"></IgbGrid>
+
+
+//In JavaScript:
+igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var groupRow = ctx["$implicit"];
+    return html`<span>Total items with value: ${groupRow.value} are ${groupRow.records.length}</span>`;
+}, false);
 ```
 
 <!-- Angular -->
@@ -339,12 +362,18 @@ The grouping UI supports the following keyboard interactions:
    - <kbd>DELETE</kbd> - ungroups the field
    - The seperate elements of the chip are also focusable and can be interacted with using the <kbd>ENTER</kbd> key.
 
+<!-- WebComponents, Angular -->
+
 ## {Platform} Grid Custom Group By
 
 Grid allows defining custom grouping per column or per grouping expression, which provides grouping based on a custom condition. This is useful when you need to group by complex objects or for other application specific scenarios.
 
+<!-- Angular -->
+
 > [!Note]
 > In order to implement custom grouping the data first needs to be sorted appropriately. Due to this you may also need to apply a custom sorting strategy that extends the base `DefaultSortingStrategy`. After the data is sorted the custom groups can be determined by specifying a `GroupingComparer` for the column or for the specific grouping expression.
+
+<!-- end:Angular -->
 
 The sample below demonstrates custom grouping by `Date`, where the date values are sorted and grouped by Day, Week, Month or Year based on user-selected grouping mode.
 
@@ -353,8 +382,8 @@ The sample below demonstrates custom grouping by `Date`, where the date values a
 
 `sample="/{GridSample}/groupby-custom", height="605", alt="{Platform} {ComponentTitle} custom group by example"`
 
-The sample defines custom sorting strategies for the different date conditions.
-Each custom strategy extends the base `DefaultSortingStrategy` and defines the `CompareValues` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
+The sample defines custom sorting for the different date conditions.
+Each custom strategy defines the `GroupingComparer` method, which is the custom compare function used when sorting the values. Additionally it extracts the values from the date needed for the comparison.
 
 ```typescript
 public groupByMode = "Month";
@@ -379,14 +408,16 @@ grid.groupingExpressions = [
             return dateA.month === dateB.month ? 0 : -1;
         } else if (this.groupByMode === "Year") {
             return dateA.year === dateB.year ? 0 : -1;
-        } else if (this.groupByMode === "Week") {
-            return this.sortingStrategy.getWeekOfDate(a) === this.sortingStrategy.getWeekOfDate(b) ? 0 : -1;
+        } else if (this.groupByMode === 'Week') {
+            return this.getWeekOfDate(a) === this.getWeekOfDate(b) ? 0 : -1;
         }
         return dateA.day === dateB.day && dateA.month === dateB.month ? 0 : -1;
         }
     }
 ];
 ```
+
+<!-- end:WebComponents, Angular -->
 
 <!-- Angular -->
 ## Styling
