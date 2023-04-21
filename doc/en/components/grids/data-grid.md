@@ -1692,15 +1692,20 @@ platformBrowserDynamic()
 > **Note**:
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
-<!-- WebComponents -->
+<!-- WebComponents, Blazor -->
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">
 ```
 
+```razor
+ <IgbGrid Class="grid"></IgbGrid>
+```
+
 Then set the `--header-background` and `--header-text-color` CSS properties for that class:
 
+<!-- WebComponents -->
 ```css
 .grid {
     --header-background: #494949;
@@ -1708,6 +1713,17 @@ Then set the `--header-background` and `--header-text-color` CSS properties for 
 }
 ```
 <!-- end: WebComponents -->
+
+```razor
+<style>
+    .grid * {
+        --header-background: #494949;
+        --header-text-color: #FFF;
+    }
+</style>
+```
+
+<!-- end: WebComponents, Blazor -->
 
 <!--  Angular -->
 In [**Angular**](https://angular.io/) most of the styles are prefixed implicitly thanks to the [Autoprefixer](https://www.npmjs.com/package/autoprefixer) plugin.
