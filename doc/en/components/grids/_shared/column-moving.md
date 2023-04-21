@@ -263,7 +263,7 @@ $dark-grid-column-moving-schema: extend($_light-grid,
                color: ("secondary", 200)
             ),
             ghost-header-icon-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );

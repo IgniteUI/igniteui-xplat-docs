@@ -95,12 +95,12 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }

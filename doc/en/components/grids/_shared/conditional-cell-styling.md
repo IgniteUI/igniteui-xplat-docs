@@ -666,7 +666,7 @@ constructor() {
 }
 ```
 
-Define a `popin` animanion:
+Define a `popin` animation:
 
 ```css
 @keyframes popin {
