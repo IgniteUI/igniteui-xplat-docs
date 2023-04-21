@@ -199,6 +199,53 @@ The multi-cell selection is index based (DOM elements selection).
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
+
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+<!-- WebComponents -->
+
+```css
+.grid {
+    --cell-selected-text-color: #FFFFFF;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062A3;
+}
+```
+
+<!-- end: WebComponents -->
+
+```razor
+<style>
+.grid * {
+    --cell-selected-text-color: #FFFFFF;
+    --cell-active-border-color: #f2c43c;
+    --cell-selected-background: #0062A3;
+}
+</style>
+```
+
+### Demo
+
+`sample="/{ComponentSample}/cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Cell Selection Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 ## Styling Guidelines
 
