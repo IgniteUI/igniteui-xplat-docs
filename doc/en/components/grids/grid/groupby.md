@@ -419,8 +419,62 @@ grid.groupingExpressions = [
 
 <!-- end:WebComponents, Angular -->
 
-<!-- Angular -->
+<!-- WebComponents, Blazor -->
 ## Styling
+
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](https://www.infragistics.com/products/ignite-ui-angular/docs/sass/latest/index.html#function-grid-theme).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+<!-- WebComponents -->
+
+```css
+.grid {
+    --group-row-background: #969799;
+    --group-row-selected-background: #969799;
+    --group-label-column-name-text: #f8f8f8;
+    --group-label-text: #f8f8f8;
+    --group-count-text-color: #222;
+    --expand-icon-color: #f8f8f8;
+    --expand-icon-hover-color: #f8f8f8;
+}
+```
+
+<!-- end: WebComponents -->
+
+```razor
+<style>
+.grid * {
+    --group-row-background: #969799;
+    --group-row-selected-background: #969799;
+    --group-label-column-name-text: #f8f8f8;
+    --group-label-text: #f8f8f8;
+    --group-count-text-color: #222;
+    --expand-icon-color: #f8f8f8;
+    --expand-icon-hover-color: #f8f8f8;
+}
+</style>
+
+```
+
+### Demo
+
+`sample="/{GridSample}/groupby-styling", height="605", alt="{Platform} {ComponentTitle} Group By Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
+
+<!-- Angular -->
 
 The Grid allows styling through the [{ProductName} Theme Library](../themes/styles.md). The grid's theme exposes a wide variety of properties, which allow the customization of all the features of the grid.
 
