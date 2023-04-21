@@ -88,10 +88,41 @@ If you want to disable cell selection you can just set `CellSelection` to **none
 
 Below are the methods that you can use in order to select ranges, clear selection or get selected cells data.
 
-<!-- Angular -->
+
+<!-- Angular, WebComponents -->
+
+### Select range
+
+`selectRange` - Select a range of cells with the API. rowStart and rowEnd should use row indexes and columnStart and columnEnd could use column index or column data field value.
+
+```ts
+const range = { rowStart: 2, rowEnd: 2, columnStart: 1, columnEnd: 1 };
+this.grid.selectRange(range);
+```
+
+<!-- end: Angular, WebComponents -->
+
 ### Get Selected Data
 
-`GetSelectedData` will return array of the selected data in format depending on the selection. Examples below:
+<!-- Blazor -->
+`GetSelectedData` will return array of the selected data in Dictionary format. Examples below:
+
+```razor
+<IgbGrid @ref=grid  CellSelection="GridSelectionMode.Multiple" AutoGenerate=true></IgbGrid>
+
+@code {
+    private IgbGrid grid;
+
+    private async void GetSelectedData()
+    {
+        object[] data = await this.grid.GetSelectedDataAsync(true, true);
+    }
+}
+```
+<!-- end: Blazor -->
+
+<!-- Angular, WebComponents -->
+`getSelectedData` will return array of the selected data in format depending on the selection. Examples below:
 
 1. If three different single cells are selected:
 ```typescript
@@ -146,6 +177,9 @@ expectedData = [
 ];
 ```
 
+<!-- end: Angular, WebComponents -->
+
+<!-- Angular -->
 > [!Note]
 > `SelectedCells` will return the correct result even if the cell is not visible in grids view port. `GetSelectedData` will also return the selected cell data.
 > `GetSelectedRanges` will return the current selected ranges in the grid from both keyboard and pointer interactions. The type is **GridSelectionRange[]**.
