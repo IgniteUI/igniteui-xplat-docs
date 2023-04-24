@@ -217,26 +217,12 @@ In case you would like to change some of the colors, you need to set a class for
 
 Then set the related CSS properties for that class:
 
-<!-- WebComponents -->
-
 ```css
 .grid {
-    --cell-selected-text-color: #FFFFFF;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062A3;
+    --igx-grid-cell-selected-text-color: #FFFFFF;
+    --igx-grid-cell-active-border-color: #f2c43c;
+    --igx-grid-cell-selected-background: #0062A3;
 }
-```
-
-<!-- end: WebComponents -->
-
-```razor
-<style>
-.grid * {
-    --cell-selected-text-color: #FFFFFF;
-    --cell-active-border-color: #f2c43c;
-    --cell-selected-background: #0062A3;
-}
-</style>
 ```
 
 ### Demo
