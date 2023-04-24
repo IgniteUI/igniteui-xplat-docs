@@ -436,35 +436,16 @@ In case you would like to change some of the colors, you need to set a class for
 
 Then set the related CSS properties for that class:
 
-<!-- WebComponents -->
-
 ```css
 .grid {
-    --group-row-background: #969799;
-    --group-row-selected-background: #969799;
-    --group-label-column-name-text: #f8f8f8;
-    --group-label-text: #f8f8f8;
-    --group-count-text-color: #222;
-    --expand-icon-color: #f8f8f8;
-    --expand-icon-hover-color: #f8f8f8;
+    --igx-grid-group-row-background: #969799;
+    --igx-grid-group-row-selected-background: #969799;
+    --igx-grid-group-label-column-name-text: #f8f8f8;
+    --igx-grid-group-label-text: #f8f8f8;
+    --igx-grid-group-count-text-color: #222;
+    --igx-grid-expand-icon-color: #f8f8f8;
+    --igx-grid-expand-icon-hover-color: #f8f8f8;
 }
-```
-
-<!-- end: WebComponents -->
-
-```razor
-<style>
-.grid * {
-    --group-row-background: #969799;
-    --group-row-selected-background: #969799;
-    --group-label-column-name-text: #f8f8f8;
-    --group-label-text: #f8f8f8;
-    --group-count-text-color: #222;
-    --expand-icon-color: #f8f8f8;
-    --expand-icon-hover-color: #f8f8f8;
-}
-</style>
-
 ```
 
 ### Demo
