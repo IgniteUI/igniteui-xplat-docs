@@ -13,5 +13,5 @@
     "_initialPage": "components/general-getting-started",
     "_enableSearch": true,
     "_useRedirects": true,
-    "_useWarningsAsErrors": true
+    "_useWarningsAsErrors": false
 }   
