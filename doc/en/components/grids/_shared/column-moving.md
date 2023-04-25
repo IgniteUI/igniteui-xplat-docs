@@ -299,6 +299,35 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-ghost-header-text-color: #f4d45c;
+    --igx-grid-ghost-header-background: #ad9d9d;
+    --igx-grid-ghost-header-icon-color: #f4d45c;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+
+<!-- end: WebComponents, Blazor -->
+
 ## API References
 
 * `Column`
