@@ -10,7 +10,6 @@
     "tocBuildW": "tsc && gulp --lang=en buildTOC --plat=WebComponents",
     "toc2json": "tsc && gulp generateTocJson --plat=Blazor --lang=en",
     "updateApiSection": "tsc && gulp updateApiSection",
-    "verifyMarkdown": "tsc && gulp verifyMarkdown",
     "logArgs": "tsc && gulp logArgs --plat=Blazor --lang=en",
     "generateRedirects": "tsc && gulp generateRedirects",
     "build": "tsc",
@@ -42,6 +41,7 @@
     "build-staging": "tsc && set NODE_ENV=staging && gulp buildDocfx_WithArgs",
     "build-production": "tsc && set NODE_ENV=production && gulp buildDocfx_WithArgs",
     "verifyMarkdown": "tsc && gulp verifyMarkdown",
+    "verifyMarkdownDocs": "tsc && gulp verifyMarkdownDocs",
     "test": "tsc && mocha"
   },
   "keywords": [],

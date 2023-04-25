@@ -692,7 +692,7 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
-var verifyFiles = gulp.series(verifyMarkdown);
+var verifyFiles = gulp.series(verifyMarkdownDocs);
 
 function buildCore(cb) {
     // clean output files
@@ -878,12 +878,16 @@ function copyTemplateBackup(cb) {
 }
 exports.copyTemplateBackup = copyTemplateBackup;
 
-function verifyMarkdown(cb) {
-    ensureEnvironment();
-    if (transformer === null || transformer === undefined) {
-        if (cb) cb("transformer failed to load"); return;
-    }
+function verifyMarkdownDocs(cb) {
+    // ensureEnvironment();
+    // if (transformer === null || transformer === undefined) {
+    //     if (cb) cb("transformer failed to load"); return;
+    // }
     console.log('verifying .md files ...');
+
+    // var vm = require('./test/verify-markdown.js')
+    var mvFile = require('./src/ext/MarkdownVerifier');
+    var mv = new mvFile.MarkdownVerifier();
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -900,20 +904,23 @@ function verifyMarkdown(cb) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        console.log('verifying: ' + filePath);
         filesCount++;
-        var result = transformer.verifyMetadata(fileContent, filePath);
-        if (result.isValid) {
-            // console.log('verified:  ' + filePath);
-            // fileContent = result.fileContent;
-            //file.contents = Buffer.from(fileContent);
-            // auto-update topics with corrections if any
-            //fs.writeFileSync(filePath, fileContent);
-            transformer.verifyLinksAPI(fileContent, filePath);
+        // var isValid = transformer.verifyMarkdown(fileContent, filePath);
+        mv.verifyMarkdownFile(fileContent, filePath);
 
-        } else {
-            errorsCount++;
-        }
+        // var result = transformer.verifyMetadata(fileContent, filePath);
+        // if (result.isValid) {
+        //     // console.log('verified:  ' + filePath);
+        //     // fileContent = result.fileContent;
+        //     //file.contents = Buffer.from(fileContent);
+        //     // auto-update topics with corrections if any
+        //     //fs.writeFileSync(filePath, fileContent);
+        //     // transformer.verifyLinksAPI(fileContent, filePath);
+
+        // } else {
+        //     errorsCount++;
+        // }
         fileCallback(null, file);
     }))
     .on("end", () => {
@@ -928,11 +935,11 @@ function verifyMarkdown(cb) {
         }
     })
     .on("error", (err) => {
-        console.log("Error in verifyMarkdown()");
+        console.log("Error in verifyMarkdownDocs()");
         if (cb) cb(err);
     });
 }
-exports.verifyMarkdown = verifyMarkdown;
+exports.verifyMarkdownDocs = verifyMarkdownDocs;
 
 
 function verifyMarkdownTables(cb) {
