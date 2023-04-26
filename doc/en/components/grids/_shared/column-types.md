@@ -177,6 +177,8 @@ The `{ComponentName}` accepts date values of type *Date object*, *Number (millis
 
 As you can see in the sample, we specify a different format options in order to showcase the available formats for the specific column type. For example, below you can find the format options for the *time* portion of the date object:
 
+<!-- Angular, WebComponents -->
+
 ```ts
 // Time format with equivalent example
 public timeFormats = [
@@ -186,6 +188,7 @@ public timeFormats = [
     { format: 'fullTime', eq: 'h:mm:ss a zzzz' },
 ];
 ```
+<!-- end: Angular, WebComponents -->
 
 ```razor
 // Time format with equivalent example
@@ -258,7 +261,11 @@ Default template is using the value coming from the data as an image source to a
 </igc-grid>
 ```
 
-When `autoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
+```razor
+<IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
+```
+
+When `AutoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
 
 ### Currency
 
@@ -302,7 +309,6 @@ By using the `PipeArgs` input the end-user can customize the number format by *d
 ```ts
 public options = {
   digitsInfo: '3.4-4',
-  currencyCode: 'USD',
   display: 'symbol-narrow'
 };
 public formatOptions = this.options;
@@ -324,7 +330,6 @@ public formatOptions = this.options;
     private IgbColumnPipeArgs formatOptions = new IgbColumnPipeArgs()
     {
         DigitsInfo = "3.4-4",
-        CurrencyCode = "USD",
         Display = "symbol-narrow"
     };
 }
@@ -496,6 +501,19 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 }
 ```
 
+```razor
+<IgbGrid>
+ <IgbColumn InlineEditorTemplate="EditTemplate"></IgbColumn>
+</IgbGrid>
+@code {
+    public RenderFragment<IgbCellTemplateContext> EditTemplate = (ctx) =>
+    {
+        var value = ctx.Cell.Value;
+        return@<input value="@value" />;
+    };
+}
+```
+
 ### Column Formatter
 
 ```html
@@ -518,6 +536,17 @@ constructor() {
 public formatCurrency(value: number) {
     return `$ ${value.toFixed(0)}`;
 }
+```
+
+```razor
+<IgbGrid>
+ <IgbColumn FormatterScript="CurrencyFormatter"></IgbColumn>
+</IgbGrid>
+
+//In Javascript
+igRegisterScript("CurrencyFormatter", (value) => {
+    return `$ ${value.toFixed(0)}`;
+}, false);
 ```
 
 <!-- Angular -->
