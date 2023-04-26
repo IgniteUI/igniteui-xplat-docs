@@ -240,37 +240,25 @@ The default template is using material icons for visualization of boolean values
 </igc-column>
 ```
 
-<!-- Blazor -->
-
 ### Image
 
-While there does not exist a built-in template for an image column in the `{ComponentName}` at this time, this can be simply implemented by providing a `BodyTemplateScript` to one of your `Column`s. This property points at a JavaScript function that can be defined like so:
+Default template is using the value coming from the data as an image source to a default image template. The default image template will extract the name of the image file and set it as `alt` attribute of the image to meet the accessibility requirement. The displayed cell size is adjusted to the sizes of the images rendered, so keep in mind that large images will still be rendered and the grid rows will become as large as the images in the image column. Filtering, sorting and grouping will be turned off by default for image type columns. If you want to enable them, you need to provide custom strategies which perform the data operations.
 
-```razor
-<IgbColumn Field="ImageSource" BodyTemplateScript="ImageCellTemplate" />
-
-//In JavaScript
-igRegisterScript("ImageCellTemplate", (ctx) => {
-    var html = window.igTemplating.html;
-    return html`<div>
-        <img src="${ctx.cell.value}"/>
-    </div>`;
-}, false);
+```html
+<igx-grid>
+    <igx-column [dataType]="'image'">
+    </igx-column>
+<igx-grid>
 ```
 
-Alternatively, you can do this in a more "Blazor" way by providing a template in your .razor file to the `BodyTemplate` property of the `Column`. Please note though, that this will not be as performant as using the JavaScript `BodyTemplateScript` mentioned above. The code to do this in .razor can be found below:
-
-```razor
-<IgbColumn Field="ImageSource" BodyTemplate="ImageCellTemplate" />
-
-@code {
-    public RenderFragment<IgbCellTemplateContext> ImageCellTemplate = (ctx) => {
-        return @<img src=@ctx.Cell.Value style="height: 30px; width: 60px"/>;
-    };
-}
+```html
+<igc-grid id="grid1" auto-generate="false">
+    <igc-column field="Image" data-type="image">
+    </igc-column>
+</igc-grid>
 ```
 
-<!-- end: Blazor -->
+When `autoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
 
 ### Currency
 
