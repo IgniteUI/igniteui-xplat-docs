@@ -62,7 +62,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" data-type="Number">
+<igc-column id="column" data-type="number">
 </igc-column>
 ```
 
@@ -130,7 +130,7 @@ public formatOptions = this.options;
 ```
 
 ```html
-<igc-column id="column" data-type="Date">
+<igc-column id="column" data-type="date">
 </igc-column>
 ```
 
@@ -140,9 +140,8 @@ private _formatDateOptions: any | null = null;
         if (this._formatDateOptions == null)
         {
             var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "1.4-4";
-            columnPipeArgs.format: 'longDate';
-            columnPipeArgs.timezone: 'GMT';
+            columnPipeArgs2.format = "long";
+            columnPipeArgs2.timezone = "UTC+0";
             this._formatDateOptions = columnPipeArgs;
         }
         return this._formatDateOptions;
@@ -237,7 +236,7 @@ The default template is using material icons for visualization of boolean values
 ```
 
 ```html
-<igc-column data-type="Boolean">
+<igc-column data-type="boolean">
 </igc-column>
 ```
 
@@ -292,33 +291,21 @@ import { LOCALE_ID } from '@angular/core';
     providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }]
 })
 ```
-<!-- end: Angular -->
-
-<!-- Blazor -->
-
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed. Both currency symbol location and number value formatting is based on the provided {ComponentTitle} `Locale`.
-
-<!-- end: Blazor -->
 
 *By using Grid's locale*
-<!-- Angular -->
+
 ```html
 <{ComponentSelector} [locale]="'fr-FR'" [data]="data">
 </{ComponentSelector}>
 ```
+
 <!-- end: Angular -->
 
-```razor
-<{ComponentSelector} Locale="'fr-FR'" Data=data>
-</{ComponentSelector}>
-```
+<!-- Blazor, WebComponents -->
 
-<!-- WebComponents -->
-```html
-<{ComponentSelector} locale="'fr-FR'">
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
+The default template will show a numeric value with currency symbol that would be either prefixed or suffixed.
+
+<!-- end: Blazor, WebComponents -->
 
 By using the `PipeArgs` input the end-user can customize the number format by *decimal point*, *currencyCode* and *display*.
 
@@ -333,14 +320,14 @@ public options = {
 public formatOptions = this.options;
 ```
 
-<!-- end: Angular -->
-
 ```html
 <igx-column field="UnitsInStock"
     [pipeArgs]="formatOptions"
     [dataType]="'currency'">
 </igx-column>
 ```
+
+<!-- end: Angular -->
 
 ```razor
 <IgbColumn Field="UnitsInStock" DataType="GridColumnDataType.Currency" PipeArgs=formatOptions></IgbColumn>
@@ -357,7 +344,7 @@ public formatOptions = this.options;
 
 ```html
 <igc-column id="column" field="UnitsInStock"
-    data-type="Currency">
+    data-type="currency">
 </igc-column>
 ```
 
@@ -367,8 +354,7 @@ private _formatOptions: any | null = null;
         if (this._formatOptions == null)
         {
             var columnPipeArgs: any = {};
-            columnPipeArgs.digitsInfo = "3.4-4";
-            columnPipeArgs.currencyCode = "USD";
+            columnPipeArgs.digitsInfo = "1.4-4";
             columnPipeArgs.display = "symbol-narrow";
             this._formatOptions = columnPipeArgs;
         }
@@ -388,8 +374,10 @@ constructor() {
 | Parameter                 | Description                                                |
 |---------------------------| -------------------------                                  |
 | digitsInfo                | Represents Decimal representation of currency value        |
-| currencyCode              | ISO 4217 currency code                                     |
 | display*                  | Displays the value by narrow or wide symbol                |
+<!-- Angular -->
+| currencyCode              | ISO 4217 currency code                                     |
+<!-- end: Angular -->
 
 *display - for the default en-US locale, the code USD can be represented by the narrow symbol $ or the wide symbol US$.
 
@@ -449,7 +437,7 @@ public formatPercentOptions = this.options;
 
 ```html
 <igc-column id="column" field="UnitsInStock"
-    data-type="Percent">
+    data-type="percent">
 </igc-column>
 ```
 
@@ -482,7 +470,6 @@ constructor() {
 
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
 
-<!-- Angular -->
 ## Custom Editing Template and Formatter
 
 Custom template and column formatter definition will always take precedence over the column data type set:
@@ -499,8 +486,53 @@ Custom template and column formatter definition will always take precedence over
 </igx-grid>
 ```
 
+```html
+<igc-grid id="grid1" auto-generate="false">
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency" editable="true">
+    </igc-column>
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
+    }
+    this._bind();
+}
+
+public editCellTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<input></input>`;
+}
+```
+
 ### Column Formatter
 
+```html
+<igc-grid id="grid1" auto-generate="false">
+    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="currency">
+    </igc-column>
+</igc-grid>
+```
+
+```ts
+constructor() {
+    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
+
+    this._bind = () => {
+        unitsInStock.formatter = this.formatCurrency;
+    }
+    this._bind();
+}
+
+public formatCurrency(value: number) {
+    return `$ ${value.toFixed(0)}`;
+}
+```
+
+<!-- Angular -->
 ```ts
  // Through column formatter property
 public formatCurrency(value: number) {
@@ -516,53 +548,8 @@ public init(column: IgxColumnComponent) {
             return;
 }
 ```
-
 <!-- end: Angular -->
 
-<!-- ```html
-<igc-grid id="grid1" auto-generate="false">
-    <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
-    </igc-column>
-</igc-grid>
-```
-
-```ts
-constructor() {
-    var unitsInStock = this.unitsInStock = document.getElementById('UnitsInStock') as IgcColumnComponent;
-
-    this._bind = () => {
-        unitsInStock.pipeArgs = this.formatOptions;
-        unitsInStock.inlineEditorTemplate = this.editCellTemplate;
-    }
-    this._bind();
-}
-
- // Through column formatter property
-public formatCurrency(value: number) {
-    return `Dollar sign ${value.toFixed(0)}`;
-}
-
-public init(column: IgcColumnComponent) {
-    switch (column.field) {
-        case 'UnitsInStock':
-            column.formatter = this.formatCurrency;
-            break;
-        default:
-            return;
-}
-
-public editCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`${ this.formatCurrency(ctx.cell.value)}`;
-}
-
-public formatCurrency(value: number) {
-
-}
-``` -->
-
-<!-- ```razor
-TO DO!
-``` -->
 
 ## API References
 
