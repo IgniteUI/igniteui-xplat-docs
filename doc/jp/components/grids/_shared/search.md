@@ -562,10 +562,11 @@ builder.Services.AddIgniteUIBlazor(
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+        <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {
@@ -842,7 +843,7 @@ public findNext(e) {
 `Column` プロパティ:
 -   `Searchable`
 
-その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
+その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- Angular -->
 

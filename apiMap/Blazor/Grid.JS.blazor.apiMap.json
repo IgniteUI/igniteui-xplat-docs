@@ -324,6 +324,8 @@
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"CustomFilterIndex"}],"originalName":"CustomFilterIndex"},
     { "names":[{"platform":"Blazor","mappedType":"DataSourceSchemaPropertyType","mappedName":"DataType"}],"originalName":"DataType"},
     { "names":[{"platform":"Blazor","mappedType":"int"   ,"mappedName":"MaxHeight"}],"originalName":"MaxHeight"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"TextColor"}],"originalName":"TextColor"},
+    { "names":[{"platform":"Blazor","mappedType":"string","mappedName":"Background"}],"originalName":"Background"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"ProvideContainer"}],"originalName":"ProvideContainer"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"Dispose"}],"originalName":"Dispose"},
     { "names":[{"platform":"Blazor","mappedType":"method","mappedName":"GetDropdownHeight"}],"originalName":"GetDropdownHeight"},

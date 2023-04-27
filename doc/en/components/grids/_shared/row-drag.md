@@ -19,7 +19,7 @@ In {ProductName} `{ComponentName}`, row dragging is initialized on the root `{Co
 
 ## Configuration
 
-In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
+In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
 <!-- Angular -->
 ```html
@@ -40,7 +40,7 @@ In order to enable row-dragging for your `{ComponentName}`, all you need to do i
 ```
 <!-- end: WebComponents -->
 
-Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
+<!-- Angular -->
 
 Below, you can find a walkthrough on how to configure an `{ComponentName}` to support row dragging and how to properly handle the drop event.
 
@@ -56,8 +56,6 @@ In this example, we'll handle dragging a row from one grid to another, removing 
 
 <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
-
 ### Drop Areas
 
 Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-*dropping*.
@@ -67,7 +65,7 @@ First we need to import the `DragDropModule` in our app module:
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -75,7 +73,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -390,13 +388,7 @@ The result of the configuration can be seem below:
 `sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} Row Drag"`
 
 
-
-<!-- end: Angular -->
-
-
 ## Application Demo
-
-<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -415,15 +407,11 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 <!-- ComponentEnd: Grid -->
 
-<!-- end: Angular -->
-
 ### Row Reordering Demo
 
-<!-- Angular -->
 With the help of the grid's row drag events and the `Drop` directive, you can create a grid that allows you to reorder rows by dragging them.
 
 Since all of the actions will be happening _inside_ of the grid's body, that's where you have to attach the `Drop` directive:
-<!-- end:Angular -->
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">

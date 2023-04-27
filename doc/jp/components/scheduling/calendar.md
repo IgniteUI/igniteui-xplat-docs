@@ -354,7 +354,7 @@ this.calendar.addEventListener('igcChange', ev => console.log(ev.detail));
 ```tsx
 <IgbCalendar change={this.onCalendarChange} />
 
-public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs){
+public onCalendarChange(calendar: IgrCalendar, e: IgrComponentDataValueChangedEventArgs) {
 
 }
 ```

@@ -370,16 +370,15 @@ After we've defined our custom buttons, we can make use of the [button-theme]({e
 
 ```scss
 // custom.component.scss
-...
+// ...
 
 $button-theme: button-theme(
   $palette: $purple-palette
 );
 
-...
 .custom-buttons {
     @include button($button-theme);
-  }
+}
 ```
 
 We scope our `@include` statement in `.custom-buttons` so that it is only applied to the `Done`and `Cancel` buttons.

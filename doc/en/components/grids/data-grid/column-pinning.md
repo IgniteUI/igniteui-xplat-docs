@@ -54,7 +54,7 @@ height="calc(100% - 40px)"
 width="100%"
 autoGenerateColumns="false"
 defaultColumnMinWidth={120}
-scrollbarStyle = "thin"
+scrollbarStyle="thin"
 dataSource={this.data}>
 
     {/*Columns pinned left*/}
@@ -153,7 +153,7 @@ height="calc(100% - 40px)"
 width="100%"
 auto-generate-columns="false"
 default-column-min-width="120px"
-scrollbar-style = "thin"
+scrollbar-style="thin"
 >
     <igc-text-column pinned="left" field="ID" header-text="Employee ID" width="100"  horizontal-alignment="center"></igc-text-column>
     <igc-text-column pinned="left" field="FirstName" header-text="First Name" width="170"></igc-text-column>
@@ -173,7 +173,7 @@ scrollbar-style = "thin"
 ```ts
 import { PinnedPositions } from 'igniteui-webcomponents-grids';
 
-onButtonPinLeft () {
+onButtonPinLeft() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);
@@ -190,7 +190,7 @@ onButtonPinLeft () {
     this.grid.pinColumn(lastNameColumn, PinnedPositions.Left);
 }
 
-onButtonPinRight () {
+onButtonPinRight() {
 
     let streetColumn = this.grid.actualColumns.item(6);
     let cityColumn = this.grid.actualColumns.item(7);
@@ -207,7 +207,7 @@ onButtonPinRight () {
     this.grid.pinColumn(countryColumn, PinnedPositions.Right);
 }
 
-onButtonUnPin () {
+onButtonUnPin() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);

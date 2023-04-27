@@ -94,12 +94,12 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }

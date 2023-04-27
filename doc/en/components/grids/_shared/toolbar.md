@@ -243,7 +243,7 @@ toolbar interaction components.
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
@@ -426,14 +426,12 @@ Here is a snippet showing some of the options which can be customized through th
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>
@@ -456,7 +454,7 @@ Here is a snippet showing some of the options which can be customized through th
             excel-text="Custom text for the excel export entry"
             csv-text="Custom text for the CSV export entry"
         </igc-grid-toolbar-exporter>
-    </igxc-grid-toolbar-actions>
+    </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
 

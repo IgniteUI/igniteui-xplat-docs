@@ -18,7 +18,7 @@ _language: ja
 <igc-combo single-select></igc-combo>
 ```
 
-`sample="/inputs/combo/simplified", height="320", alt="{Platform}単一選択コンボの例"`
+`sample="/inputs/combo/simplified", height="400", alt="{Platform}単一選択コンボの例"`
 
 <div class="divider--half"></div>
 

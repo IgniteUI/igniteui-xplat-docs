@@ -284,9 +284,9 @@ The default template will show a numeric value with currency symbol that would b
 *By using LOCALE_ID*
 ```ts
 import { LOCALE_ID } from '@angular/core';
-...
+// ...
 
- @Component({
+@Component({
     selector: 'app-component.sample',
     templateUrl: 'grid-component.sample.html',
     providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }]

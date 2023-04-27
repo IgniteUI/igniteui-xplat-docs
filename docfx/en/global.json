@@ -12,5 +12,6 @@
     "_toc-dir": "components",
     "_initialPage": "components/general-getting-started",
     "_enableSearch": true,
-    "_useRedirects": true
+    "_useRedirects": true,
+    "_useWarningsAsErrors": false
 }   

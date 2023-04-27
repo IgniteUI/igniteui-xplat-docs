@@ -33,7 +33,7 @@ This allows to attach handlers for any event emitted by the element, otherwise t
 ```razor
     public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
     };
 ```
 
@@ -75,9 +75,8 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 In addition to the drag and drop functionality, the Column Moving feature also provides API methods to allow moving a column/reordering columns programmatically:
 
-<!-- Angular -->
-
 `MoveColumn` - Moves a column before or after another column (a target). The first parameter is the column to be moved, and the second parameter is the target column. Also accepts an optional third parameter `Position` (representing a `DropPosition` value), which determines whether to place the column before or after the target column.
+
 
 ```typescript
 // Move the ID column after the Name column
@@ -87,18 +86,15 @@ const nameColumn = grid.getColumnByName("Name");
 grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; }
-    public IgbColumn Col2 { get; set; }
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
+        IgbColumn Col2 = await this.grid.GetColumnByVisibleIndexAsync(1);
         this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
 
-<!-- end: Angular -->
 
 `Move` - Moves a column to a specified visible index. If the passed index parameter is invalid (is negative, or exceeds the number of columns), or if the column is not allowed to move to this index (if inside another group), no operation is performed.
 
@@ -108,20 +104,13 @@ const idColumn = grid.getColumnByName("ID");
 idColumn.move(3);
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; };
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
         this.Col1.Move(3);
     }
 ```
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 Note that when using the column moving feature, the `ColumnMovingEnd` event will be emitted if the operation was successful. Also note that in comparison to the drag and drop functionality, using the column moving feature does not require setting the `Moving` property to true.
 
@@ -153,7 +142,7 @@ constructor() {
 
     this._bind = () => {
         dataGrid.data = this.data;
-        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
     }
     this._bind();
 }
@@ -162,8 +151,8 @@ constructor() {
 
 ```typescript
 public onColumnMovingEnd(event) {
-    if (event.source.field === "Category" && event.target.field === "Change On Year(%)") {
-        event.cancel = true;
+    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
 }
 ```
@@ -274,7 +263,7 @@ $dark-grid-column-moving-schema: extend($_light-grid,
                color: ("secondary", 200)
             ),
             ghost-header-icon-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -309,6 +298,35 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-ghost-header-text-color: #f4d45c;
+    --igx-grid-ghost-header-background: #ad9d9d;
+    --igx-grid-ghost-header-icon-color: #f4d45c;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 
