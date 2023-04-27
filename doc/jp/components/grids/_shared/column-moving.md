@@ -34,7 +34,7 @@ _language: ja
 ```razor
     public RenderFragment<IgbColumnTemplateContext> headerTemplate = (context) =>
     {
-        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" onclick="onClick()"></IgbIcon>;
+        return @<IgbIcon Collection="fas" IconName="fa-thumbtack" draggable="false" onclick="onClick()"></IgbIcon>;
     };
 ```
 
@@ -76,9 +76,8 @@ public headerTemplate = (ctx: IgcCellTemplateContext) => {
 
 ドラッグアンドドロップ機能に加えて、列の移動機能には、プログラムで列を移動/並べ替えできる API メソッドも用意されています。
 
-<!-- Angular -->
-
 `MoveColumn` - 列を別の列 (ターゲット) の前または後に移動します。最初のパラメーターは移動する列で、2 番目のパラメーターはターゲット列です。オプションの 3 番目のパラメーター `Position` (`DropPosition` 値を表す) でターゲット列の前または後に列を配置するかどうかを決定します。
+
 
 ```typescript
 // Move the ID column after the Name column
@@ -88,18 +87,15 @@ const nameColumn = grid.getColumnByName("Name");
 grid.moveColumn(idColumn, nameColumn, DropPosition.AfterDropTarget);
 ```
 
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; }
-    public IgbColumn Col2 { get; set; }
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
+        IgbColumn Col2 = await this.grid.GetColumnByVisibleIndexAsync(1);
         this.Grid.MoveColumn(Col1,Col2, DropPosition.AfterDropTarget);
     }
 ```
 
-<!-- end: Angular -->
 
 `Move` - 列を指定した表示インデックスに移動します。渡されたインデックス パラメーターが無効である場合 (負である/列数を超える場合)、または列がこのインデックスに移動できない場合 (別のグループ内にある場合)、操作は実行されません。
 
@@ -109,20 +105,13 @@ const idColumn = grid.getColumnByName("ID");
 idColumn.move(3);
 ```
 
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
-
-
-<!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
-
 ```razor
-    public IgbColumn Col1 { get; set; };
-    public void HandleClick()
+    public async void HandleClick()
     {
+        IgbColumn Col1 = await this.grid.GetColumnByVisibleIndexAsync(0);
         this.Col1.Move(3);
     }
 ```
-
-<!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 
 列移動機能を使用する場合、操作が成功すると、`ColumnMovingEnd` イベントが発生することに注意してください。また、ドラッグアンドドロップ機能と比較して、列移動機能を使用するために `Moving` プロパティを true に設定する必要がないことにも注意してください。
 
@@ -154,7 +143,7 @@ constructor() {
 
     this._bind = () => {
         dataGrid.data = this.data;
-        datagrid.columnMovingEnd = this.onColumnMovingEnd;
+        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
     }
     this._bind();
 }
@@ -163,8 +152,8 @@ constructor() {
 
 ```typescript
 public onColumnMovingEnd(event) {
-    if (event.source.field === "Category" && event.target.field === "Change On Year(%)") {
-        event.cancel = true;
+    if (event.detail.source.field === "Category" && event.detail.target.field === "Change On Year(%)") {
+        event.detail.cancel = true;
     }
 }
 ```
@@ -310,6 +299,35 @@ $dark-grid-column-moving-theme: grid-theme(
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+次に、関連する CSS プロパティをこのクラスに設定します:
+
+```css
+.grid {
+    --igx-grid-ghost-header-text-color: #f4d45c;
+    --igx-grid-ghost-header-background: #ad9d9d;
+    --igx-grid-ghost-header-icon-color: #f4d45c;
+}
+```
+### デモ
+
+`sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
+
+<!-- end: WebComponents, Blazor -->
 
 ## API リファレンス
 
