@@ -137,11 +137,11 @@ public rowStyles = {
 ```
 
 ```razor
-igRegisterScript("RowStylesHandler", () => {
+igRegisterScript("WebGridRowStylesHandler", () => {
     return {
-        background: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000088' : '#00000000',
-        border: (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '2px solid' : '1px solid',
-        'border-color': (row) => (+row.data['Change'] < 0 && +row.data['Change On Year(%)'] < 0) ? '#FF000099' : '#E9E9E9'
+        'background': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000088' : '#00000000',
+        'border': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '2px solid' : '1px solid',
+        'border-color': (row) => (+row.data['Change'] < 0 && +row.data['AnnualChange'] < 0) ? '#FF000099' : '#E9E9E9'
     };
 }, true);
 ```
@@ -153,7 +153,7 @@ igRegisterScript("RowStylesHandler", () => {
 ```
 
 ```razor
-<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="RowStylesHandler" @ref="grid">
+<IgbGrid AutoGenerate="true" Id="grid" Data="CustomersData" Name="grid" RowStylesScript="WebGridRowStylesHandler" @ref="grid">
 </IgbGrid>
 ```
 
@@ -500,6 +500,9 @@ In the [sample above](#demo) we've created:
 
 Let's define our styles:
 
+
+<!-- Angular -->
+
 ```typescript
 public oddColStyles = {
     background: 'linear-gradient(to right, #b993d6, #8ca6db)',
@@ -514,39 +517,40 @@ public evenColStyles = {
 };
 ```
 
-```razor
-igRegisterScript("OddColStyles", () => {
-    return {
-        background: 'linear-gradient(to right, #b993d6, #8ca6db)',
-        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
-        animation: '0.75s popin'
-    };
-}, true);
+<!-- end:Angular -->
 
-igRegisterScript("EvenColStyles", () => {
+```razor
+igRegisterScript("WebGridCellStylesHandler", () => {
     return {
-        background: 'linear-gradient(to right, #8ca6db, #b993d6)',
-        color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
-        animation: '0.75s popin'
+        background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+        color: (rowData, columnKey, cellValue, rowIndex) => {
+            if (columnKey === "Position") {
+                switch (cellValue) {
+                    case "up": return "#28a745";
+                    case "down": return "#dc3545";
+                    case "current": return "#17a2b8"
+                }
+            }
+        }
     };
 }, true);
 ```
 
 ```ts
-public OddColStyles(args: any) {
-    return {
-            background: 'linear-gradient(to right, #b993d6, #8ca6db)',
-            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'white' : 'gray',
-            animation: '0.75s popin'
+    public WebGridCellStylesHandler(): any {
+        return {
+            background: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? "#EFF4FD" : null,
+            color: (rowData, columnKey, cellValue, rowIndex) => {
+                if (columnKey === "Position") {
+                    switch (cellValue) {
+                        case "up": return "#28a745";
+                        case "down": return "#dc3545";
+                        case "current": return "#17a2b8"
+                    }
+                }
+            }
         };
-}
-public EvenColStyles(args: any) {
-    return {
-            background: 'linear-gradient(to right, #8ca6db, #b993d6)',
-            color: (rowData, columnKey, cellValue, rowIndex) => rowIndex % 2 === 0 ? 'gray' : 'white',
-            animation: '0.75s popin'
-        };
-}
+    }
 ```
 
 <!-- Angular -->
@@ -621,60 +625,11 @@ Define a `popin` animation
 <!-- Blazor -->
 
 ```razor
-<IgbColumn Field="ID" CellStylesScript="EvenColStyles">
-</IgbColumn>
-<IgbColumn Field="CompanyName" CellStylesScript="OddColStyles">
+<IgbColumn CellStylesScript="WebGridCellStylesHandler">
 </IgbColumn>
 ```
 
-```html
-<igc-grid id="grid1"
-    primary-key="ID"
-    width="80%"
-    height="300px">
-    <igc-column id="field"
-        field="field"
-        header="field"
-        cellStyles="c.cellStyles">
-    </igc-column>
-</igc-grid>
-```
 
-```ts
-constructor() {
-    var grid = this.grid = document.getElementById('grid1') as IgcGridComponent;
-    var field = this.field = document.getElementById('field') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid.data = this.data;
-        field.cellClasses = this.cellStyles;
-    }
-    this._bind();
-}
-```
-
-Define a `popin` animanion:
-
-```css
-@keyframes popin {
-    0% {
-        opacity: 0.1;
-        transform: scale(.75, .75);
-        filter: blur(3px) invert(1);
-    }
-
-    50% {
-        opacity: .5;
-        filter: blur(1px);
-    }
-
-    100% {
-        transform: scale(1, 1);
-        opacity: 1;
-        filter: none;
-    }
-}
-```
 <!-- end: Blazor -->
 
 ### Demo
@@ -685,6 +640,8 @@ Define a `popin` animanion:
 ## Known issues and limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
+
+<!-- Angular, WebComponents -->
 
 A check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that.
 
@@ -733,6 +690,8 @@ constructor() {
     this._bind();
 }
 ```
+
+<!-- end:Angular, WebComponents -->
 
 ## API References
 
