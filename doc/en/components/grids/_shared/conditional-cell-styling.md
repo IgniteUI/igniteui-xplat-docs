@@ -105,16 +105,10 @@ public rowClasses(args: any) {
 Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down through the current component and its children.
 <!-- end: Angular -->
 
-<!-- Angular -->
 ### Demo
-
-<!-- NOTE this sample is differed -->
 
 `sample="/{ComponentSample}/row-classes", height="600", alt="{Platform} {ComponentTitle} row classes"`
 
-
-
-<!-- end: Angular -->
 
 ### Using Row Styles
 
@@ -404,15 +398,6 @@ igRegisterScript("CellClassesHandler", () => {
 }, true);
 ```
 
-```ts
-public cellClasses(args: any) {
-    return {
-            downFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] <= 95,
-            upFont: (rowData, columnKey, cellValue, rowIndex) => rowData[columnKey] > 95
-        };
-}
-```
-
 <!-- Angular -->
 ```scss
 // sample.component.scss
@@ -431,11 +416,11 @@ public cellClasses(args: any) {
 
 ```css
 .upFont {
-    color: green;
+    color: green !important;
 }
 
 .downFont {
-    color: red;
+    color: red !important;
 }
 ```
 
@@ -634,6 +619,7 @@ Define a `popin` animation
 <!-- end: Angular -->
 
 <!-- Blazor -->
+
 ```razor
 <IgbColumn Field="ID" CellStylesScript="EvenColStyles">
 </IgbColumn>
@@ -653,9 +639,10 @@ Define a `popin` animation
     </igc-column>
 </igc-grid>
 ```
+
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
+    var grid = this.grid = document.getElementById('grid1') as IgcGridComponent;
     var field = this.field = document.getElementById('field') as IgcColumnComponent;
 
     this._bind = () => {
@@ -695,13 +682,11 @@ Define a `popin` animanion:
 `sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
 
 
-<!-- Angular -->
-
 ## Known issues and limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
-A pipe check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that with a **spread operator** ... on `OnCellEdit` event. This will copy the original object with a new instance, and lead pure pipe to be fired.
+A check should be performed in order to apply the changes to the rest of the cells. The example below shows how to do that.
 
 ```ts
 public backgroundClasses = {
@@ -710,8 +695,8 @@ public backgroundClasses = {
     }
 };
 
-editDone(evt) {
-    this.backgroundClasses = {...this.backgroundClasses};
+public editDone(evt) {
+    this.Col1.cellClasses = {...this.backgroundClasses};
 }
 ```
 
@@ -722,18 +707,18 @@ editDone(evt) {
   <igx-column field="Col3" header="Col3" dataType="string" [cellClasses]="backgroundClasses"></igx-column>
 </igx-grid>
 ```
-<!-- end: Angular -->
 
 ```html
-<igx-grid id="grid1" height="500px" width="100%" >
-  <igx-column id="Col1" field="Col1" data-type="Number"></igx-column>
-  <igx-column id="Col2" field="Col2" data-type="Number" editable="true"></igx-column>
-  <igx-column id="Col3" field="Col3" header="Col3" data-type="String"></igx-column>
-</igx-grid>
+<igc-grid id="grid1" height="500px" width="100%" >
+  <igc-column id="Col1" field="Col1" data-type="number"></igx-column>
+  <igc-column id="Col2" field="Col2" data-type="number" editable="true"></igx-column>
+  <igc-column id="Col3" field="Col3" header="Col3" data-type="string"></igx-column>
+</igc-grid>
 ```
+
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid1') as IgcGridomponent;
+    var grid = this.grid = document.getElementById('grid1') as IgcGridComponent;
     var Col1 = this.Col1 = document.getElementById('Col1') as IgcColumnComponent;
     var Col2 = this.Col2 = document.getElementById('Col2') as IgcColumnComponent;
     var Col3 = this.Col3 = document.getElementById('Col3') as IgcColumnComponent;
@@ -747,6 +732,7 @@ constructor() {
     }
     this._bind();
 }
+```
 
 ## API References
 
