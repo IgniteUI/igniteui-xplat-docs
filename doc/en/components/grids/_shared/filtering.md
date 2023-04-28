@@ -145,6 +145,8 @@ The filtering feature is enabled for the `{ComponentName}` component by setting 
 > [!Note]
 > If values of type *string* are used by a column of data type *date*, the `{ComponentName}` won't parse them to *date* objects and using filtering conditions won't be possible. If you want to use *string* objects, additional logic should be implemented on the application level, in order to parse the values to *date* objects.
 
+<!-- Angular, WebComponents -->
+
 You can filter any column or a combination of columns through the `{ComponentName}` API. The `{ComponentName}` exposes several methods for this task - `Filter`, `FilterGlobal` and `ClearFilter`.
 
 *   `Filter` - filter a single column or a combination of columns.
@@ -269,6 +271,8 @@ this.grid.clearFilter();
 ```
 <!-- end: WebComponents -->
 
+<!-- Angular, WebComponents -->
+
 ## Initial filtered state
 
 To set the initial filtering state of the `{ComponentName}`, set the `{ComponentName}` `FilteringExpressionsTree` property to an array of `FilteringExpressionsTree` for each column to be filtered.
@@ -310,9 +314,15 @@ constructor() {
 }
 ```
 
+<!-- end: Angular, WebComponents -->
+
 ### Filtering logic
 
 The `FilteringLogic` property of the `{ComponentName}` controls how filtering multiple columns will resolve in the `{ComponentName}`. You can change it at any time through the `{ComponentName}` API, or through the `{ComponentName}` input property.
+
+```razor
+ <IgbGrid FilteringLogic="FilteringLogic.Or"></IgbGrid>
+```
 
 <!-- Angular -->
 ```typescript
