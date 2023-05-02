@@ -12,6 +12,9 @@ namespace: Infragistics.Controls.Charts
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
 ## **{PackageVerChanges-22-2.65}**
+### 新しいコンポーネント
+
+* [Stepper](layouts/stepper.md)
 
 ### 新しいコンポーネント
 
