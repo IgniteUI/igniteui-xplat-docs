@@ -341,7 +341,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 ## カスタム フィルタリング オペランド
 
-フィルタリング メニューは、フィルタリング オペランド削除または変更してカスタマイズします。デフォルトでフィルタリング メニューは列のデータ型 (`BooleanFilteringOperand`、`DateFilteringOperand`, `NumberFilteringOperand`、`StringFilteringOperand`) に基づいて特定のオペランドを含みます。これらのクラスまたは基本クラス `FilteringOperand` を拡張してフィルタリング メニュー項目の動作を変更できます。
+フィルタリング メニューは、フィルタリング オペランド削除または変更してカスタマイズします。デフォルトでフィルタリング メニューは列のデータ型 (`BooleanFilteringOperand`、`DateFilteringOperand`、`NumberFilteringOperand`、`StringFilteringOperand`) に基づいて特定のオペランドを含みます。これらのクラスまたは基本クラス `FilteringOperand` を拡張してフィルタリング メニュー項目の動作を変更できます。
 
 以下のサンプルの 「Product Name」 と 「Discontinued」 列フィルタリング メニューを確認してください。「Discontinued」 列フィルターでは、オペランドの数が All に制限されています。「Product Name」 列フィルター - Contains および Does Not Contain オペランド ロジックを変更して大文字と小文字を区別した検索を実行し、Empty と Not Empty を追加します。
 

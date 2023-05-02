@@ -283,7 +283,7 @@ public findNext(e) {
 
 <!-- Angular -->
 
-ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。 `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
+ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。`PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- end: Angular -->
 
