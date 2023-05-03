@@ -520,6 +520,45 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change the color of the resize handle, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS property for that class:
+
+<!-- WebComponents -->
+
+```css
+.grid {
+    --igx-grid-resize-line-color: #f35b04;
+}
+```
+
+<!-- end: WebComponents -->
+
+```razor
+<style>
+.grid {
+    --igx-grid-resize-line-color: #f35b04;
+}
+</style>
+```
+<!-- end: WebComponents, Blazor -->
+
+### Demo
+
+`sample="/{ComponentSample}/column-resizing-styling", height="550", alt="{Platform} {ComponentTitle} Column Resizing Styling Example"`
+
 ## API References
 
 * `Column`
