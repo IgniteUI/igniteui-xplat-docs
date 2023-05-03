@@ -460,8 +460,6 @@ public headerTemplate = (ctx: IgcColumnTemplateContext) => {
 };
 ```
 
-<!-- Angular -->
-
 > [!Note]
 > If a header is re-templated and the corresponding column group is movable, you have to set the **draggable** attribute to **false** on the templated elements, so that you can handle any of the events that are applied!
 
@@ -497,6 +495,7 @@ The following sample demonstrates how to implement collapsible column groups usi
 
 `sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
+<!-- Angular -->
 ## Styling
 
 To get started with styling the sorting behavior, we need to import the `index` file, where all the theme functions and component mixins live:
@@ -616,6 +615,38 @@ import 'core-js/es7/array';
 ```
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-header-background: #e0f3ff;
+    --igx-grid-header-text-color: #e41c77;
+    --igx-grid-header-border-width: 1px;
+    --igx-grid-header-border-style: solid;
+    --igx-grid-header-border-color: rgba(0, 0, 0, 0.08);
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 
