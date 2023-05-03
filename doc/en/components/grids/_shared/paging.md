@@ -115,7 +115,7 @@ constructor() {
         grid.data = this.data;
         paginator.page = grid.page;
         paginator.totalRecords = grid.totalRecords;
-        paginator.selectOption = selectOptions;
+        paginator.selectOptions = selectOptions;
         paginator.displayDensity = grid.displayDensity;
     }
     this._bind();
@@ -376,7 +376,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## API References
 * `{ComponentName}`
-* `GridPaginator`
+* `Paginator`
 
 ## Additional Resources
 
