@@ -74,9 +74,9 @@ The `Column` component exposes four `Input` properties to determine the location
 	<igc-column row-start="1" col-start="1" row-end="3" field="ID"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
-	<igc-column row-start="1" [col-start="1" col-end="3" field="CompanyName"></igc-column>
-	<igc-column row-start="2" [col-start="1" col-end="2" field="ContactName"></igc-column>
-	<igc-column row-start="2" [col-start="2" col-end="3" field="ContactTitle"></igc-column>
+	<igc-column row-start="1" col-start="1" col-end="3" field="CompanyName"></igc-column>
+	<igc-column row-start="2" col-start="1" col-end="2" field="ContactName"></igc-column>
+	<igc-column row-start="2" col-start="2" col-end="3" field="ContactTitle"></igc-column>
 </igc-column-layout>
 <igc-column-layout>
 	<igc-column row-start="1" col-start="1" col-end="3" field="Country"></igc-column>
@@ -316,6 +316,39 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```html
+<igc-grid class="grid"></igc-grid>
+```
+
+```razor
+<IgbGrid class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties to this class:
+
+```css
+.grid {
+    --igx-grid-cell-active-border-color: #ffcd0f;
+    --igx-grid-cell-selected-background: #6f6f6f;
+    --igx-grid-row-hover-background: #fde069;
+    --igx-grid-row-selected-background: #8d8d8d;
+    --igx-grid-header-background: #494949;
+    --igx-grid-header-text-color: #fff;
+}
+```
+### Demo
+
+`sample="/{ComponentSample}/multi-row-layout-styling", height="755", alt="{Platform} {ComponentTitle} Multi Row Layout Styling Example"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 ## API References
 
