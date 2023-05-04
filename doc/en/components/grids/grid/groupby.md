@@ -279,11 +279,10 @@ igRegisterScript("WebGridGroupByRowTemplate", (ctx) => {
 }, false);
 ```
 
-<!-- Angular -->
 
 ### Group Row Selector Templates
 
-As mentioned above the group row except for the expand/collapse UI is fully templatable. To create a custom Group By row selector template within the Grid, declare an `<ng-template>` with `GroupByRowSelector` directive. From the template, you can access the implicitly provided context variable, with properties that give you information about the Group By row's state.
+As mentioned above the group row except for the expand/collapse UI is fully templatable. To create a custom Group By row selector template use `GroupByRowSelectorTemplate`. From the template, you can access the implicitly provided context variable, with properties that give you information about the Group By row's state.
 
 The `SelectedCount` property shows how many of the group records are currently selected while `TotalCount` shows how many records belong to the group.
 
@@ -294,11 +293,22 @@ The `SelectedCount` property shows how many of the group records are currently s
 ```
 
 ```ts
-public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
-    return html`
-        ${ ctx.selectedCount } / ${ ctx.totalCount  }
-    `;
-}
+    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+        const context: any = (ctx as any)["$implicit"];
+        return html`
+            ${ context.selectedCount } / ${ context.totalCount  }
+        `;
+    }
+```
+
+```razor
+<IgbGrid GroupByRowSelectorTemplateScript="GroupByRowSelectorTemplate"></IgbGrid>
+//In Javascript
+igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var context = ctx["$implicit"];
+    return html` ${context.selectedCount} / ${context.totalCount} `;
+}, false);
 ```
 
 The `GroupRow` property returns a reference to the group row.
@@ -310,11 +320,22 @@ The `GroupRow` property returns a reference to the group row.
 ```
 
 ```ts
-public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateDetails) => {
-    return html`
-        <div onClick="${ handleGroupByRowSelectorClick($event, groupByRowContext.groupRow) }">Handle groupRow</div>
-    `;
-}
+    public groupByRowSelectorTemplate = (ctx: IgcGroupByRowSelectorTemplateContext) => {
+        const context: any = (ctx as any)["$implicit"];
+        const groupRow = context.groupRow;
+        return html` <div @click=${(e: any) => this.handleGroupByRowSelectorClick(e, groupRow)} ">Handle groupRow</div> `;
+    };
+```
+
+```razor
+<IgbGrid GroupByRowSelectorTemplateScript="GroupByRowSelectorTemplate"></IgbGrid>
+//In Javascript
+igRegisterScript("GroupByRowSelectorTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var context = ctx["$implicit"];
+    var groupRow = context.groupRow;
+    return html`<div onclick="handleGroupByRowSelectorClick()">Handle groupRow</div> `;
+}, false);
 ```
 
 The `SelectedCount` and `TotalCount` properties can be used to determine if the Group By row selector should be checked or indeterminate (partially selected).
@@ -323,15 +344,14 @@ The `SelectedCount` and `TotalCount` properties can be used to determine if the 
 <igx-grid #grid [data]="gridData" primaryKey="ProductID" rowSelection="multiple">
     <!-- ... -->
     <ng-template GroupByRowSelector let-context>
-        <igc-checkbox
+        <igx-checkbox
             [checked]=" context.selectedCount > 0 && context.selectedCount === context.totalCount"
             [indeterminate]="context.selectedCount > 0 && context.selectedCount !== context.totalCount">
-        </igc-checkbox>
+        </igx-checkbox>
     </ng-template>
 </igx-grid>
 ```
 
-<!-- end:Angular -->
 
 ## {Platform} Grid Group By With Paging
 
