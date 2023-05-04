@@ -52,8 +52,8 @@ The simplest way to display the dialog component is to use its `Show` method and
     <IgbButton @onclick="ToggleDialog" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
     <IgbDialog @ref="_dialog" Title="Confirmation">
         <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
-        <IgbButton slot="footer" Variant="ButtonVariant.Flat" @onclick="ToggleDialog">Cancel</IgbButton>
-        <IgbButton slot="footer" Variant="ButtonVariant.Flat" @onclick="ToggleDialog">OK</IgbButton>
+        <IgbButton slot="footer" @onclick="ToggleDialog" Variant="ButtonVariant.Flat">Cancel</IgbButton>
+        <IgbButton slot="footer" @onclick="ToggleDialog" Variant="ButtonVariant.Flat">OK</IgbButton>
     </IgbDialog>
 </div>
 
