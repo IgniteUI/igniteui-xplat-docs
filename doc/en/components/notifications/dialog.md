@@ -50,7 +50,7 @@ The simplest way to display the dialog component is to use its `Show` method and
 ```razor
 <div class="container vertical">
     <IgbButton @onclick="ToggleDialog" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
-    <IgbDialog @ref="_dialog" Title="Confirmation">
+    <IgbDialog @ref="DialogRef" Title="Confirmation">
         <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
         <IgbButton slot="footer" @onclick="ToggleDialog" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
         <IgbButton slot="footer" @onclick="ToggleDialog" Variant=@ButtonVariant.Flat>OK</IgbButton>
@@ -58,13 +58,13 @@ The simplest way to display the dialog component is to use its `Show` method and
 </div>
 
 @code {
-    private IgbDialog _dialog;
+    public IgbDialog DialogRef;
 
-    private void ToggleDialog()
+    public void ToggleDialog()
     {
-        if (this._dialog != null)
+        if (this.DialogRef != null)
         {
-            this._dialog.Toggle();
+            this.DialogRef.Toggle();
         }
     }
 }
