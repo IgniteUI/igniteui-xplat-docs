@@ -60,9 +60,12 @@ The simplest way to display the dialog component is to use its `Show` method and
 @code {
     private IgbDialog _dialog;
 
-    private async Task ToggleDialog()
+    private void ToggleDialog()
     {
-        if (this._dialog != null) await this._dialog.ToggleAsync();
+        if (this._dialog != null)
+        {
+            this._dialog.Toggle();
+        }
     }
 }
 ```
