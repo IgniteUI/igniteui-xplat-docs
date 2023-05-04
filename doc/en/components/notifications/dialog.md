@@ -48,14 +48,23 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbDialogModule));
 The simplest way to display the dialog component is to use its `Show` method and call it on a button click.
 
 ```razor
-<div class="container vertical">
-    <IgbButton onclick="dialog.show()" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
-    <IgbDialog id="dialog" Title="Confirmation">
+<div class="row-layout master-view-container">
+    <IgbButton @onclick="ToggleDialog" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
+    <IgbDialog @ref="_dialog" Title="Confirmation">
         <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
-        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
-        <IgbButton slot="footer" onclick="dialog.hide()" Variant=@ButtonVariant.Flat>OK</IgbButton>
+        <IgbButton slot="footer" Variant="ButtonVariant.Flat" @onclick="ToggleDialog">Cancel</IgbButton>
+        <IgbButton slot="footer" Variant="ButtonVariant.Flat" @onclick="ToggleDialog">OK</IgbButton>
     </IgbDialog>
 </div>
+
+@code {
+    private IgbDialog _dialog;
+
+    private async Task ToggleDialog()
+    {
+        if (this._dialog != null) await this._dialog.ToggleAsync();
+    }
+}
 ```
 
 ```html
