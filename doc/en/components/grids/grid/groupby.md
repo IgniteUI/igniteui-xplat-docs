@@ -127,6 +127,7 @@ During runtime the expressions are gettable and settable from the `groupingExpre
 ```typescript
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
+<!-- end: WebComponents -->
 
 <!-- Blazor -->
 
