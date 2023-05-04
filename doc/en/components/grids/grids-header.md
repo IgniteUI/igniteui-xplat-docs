@@ -237,7 +237,10 @@ Here are a few of the data grid’s key features:
 <ul id="features-list">
 <li>[**Virtualized Rows and Columns**](grid/virtualization.md) so you can load millions of records</li>
 
-<li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), [**Row**](grid/row-editing.md), and [**Batch**](grid/batch-editing.md) Update options</li>
+<li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), and [**Row**](grid/row-editing.md) Update options</li>
+
+<!--Add back when batch editing is available>
+<!-- <li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), [**Row**](grid/row-editing.md), and [**Batch**](grid/batch-editing.md) Update options</li> -->
 
 <li>[**Excel-style Filtering**](grid/excel-style-filtering.md) and full [**Excel Keyboard Navigation**](grid/keyboard-navigation.md) capability</li>
 
@@ -375,7 +378,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 </ul>
 <ul>
     <li>[Column Moving](grid/column-moving.md)</li>
-    <li>[Cell Copy and Paste](grid/clipboard-interactions.md)</li>
+    <!-- <li>[Cell Copy and Paste](grid/clipboard-interactions.md)</li> -->
     <li>[Cell Styling](grid/conditional-cell-styling.md)</li>
     <!-- <li>[Real-time/Live Data Theming](grid/live-data.md)</li> -->
     <!-- <li>[Custom Grid Toolbar](grid/toolbar.md)</li> -->
@@ -465,7 +468,7 @@ There are multiple options to get access to our award-winning support at Infragi
         <div class="faqs-accordion-panel">
             <ul>
                 <li>[Virtualized Rows and Columns](grid/virtualization.md) so you can load millions of records</li>
-                <li>[Inline Editing](grid/row-editing.md) with Cell, Row, and [Batch](grid/batch-editing.md) Update options</li>
+                <!-- <li>[Inline Editing](grid/row-editing.md) with Cell, Row, and [Batch](grid/batch-editing.md) Update options</li> -->
                 <li>[Excel-style Filtering](grid/excel-style-filtering.md) and full [Excel Keyboard Navigation](grid/keyboard-navigation.md) capability</li>
                 <li>Interactive [Outlook-style Grouping](grid/groupby.md)</li>
                 <li>[Column Summaries](grid/summaries.md) based on any data in a grid cell or column</li>
