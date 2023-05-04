@@ -299,7 +299,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents -->
 ## Styling
 
 In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
@@ -326,7 +326,7 @@ Then set the related CSS properties to this class:
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents -->
 
 ## API References
 
@@ -334,6 +334,8 @@ Then set the related CSS properties to this class:
 * `{ComponentName}`
 
 ## Additional Resources
+
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -342,9 +344,8 @@ Then set the related CSS properties to this class:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentStart: HierarchicalGrid -->
 * [Searching](search.md)
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
