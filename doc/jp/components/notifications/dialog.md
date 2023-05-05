@@ -60,21 +60,15 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 
 @code {
     public IgbDialog DialogRef;
-
     public void OnDialogShow()
     {
         if (this.DialogRef != null)
-        {
             this.DialogRef.Show();
-        }
     }
-
     public void OnDialogHide()
     {
         if (this.DialogRef != null)
-        {
             this.DialogRef.Hide();
-        }
     }
 }
 ```
