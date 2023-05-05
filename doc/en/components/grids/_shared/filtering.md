@@ -207,7 +207,7 @@ gridFilteringExpressionsTree.filteringOperands.push(priceFilteringExpressionsTre
 this.@@igObjectRef.filteringExpressionsTree = gridFilteringExpressionsTree;
 ```
 
-<!-- end:Angular -->
+<!-- end: Angular -->
 
 ```typescript
 // Multi column filtering
@@ -426,7 +426,7 @@ export class BooleanFilteringOperand extends IgxBooleanFilteringOperand {
 }
 ```
 
-<!-- end:Angular -->
+<!-- end: Angular -->
 
 ```typescript
 
@@ -572,7 +572,7 @@ constructor() {
 
 `sample="/{ComponentSample}/custom-filtering", height="600", alt="{Platform} {ComponentTitle} Custom Filtering Example"`
 
-<!-- end:Angular, WebComponents -->
+<!-- end: Angular, WebComponents -->
 
 <!-- Angular -->
 
