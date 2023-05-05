@@ -59,21 +59,15 @@ The simplest way to display the dialog component is to use its `Show` method and
 
 @code {
     public IgbDialog DialogRef;
-
     public void OnDialogShow()
     {
         if (this.DialogRef != null)
-        {
             this.DialogRef.Show();
-        }
     }
-
     public void OnDialogHide()
     {
         if (this.DialogRef != null)
-        {
             this.DialogRef.Hide();
-        }
     }
 }
 ```
