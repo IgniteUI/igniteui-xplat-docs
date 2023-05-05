@@ -121,7 +121,7 @@ Or to link it:
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-For more details on how to customize the appearance of the grid, you may have a look at the [styling](data-grid.md#web-components-grid-styling-configuration) section.
+For more details on how to customize the appearance of the grid, you may have a look at the [styling](data-grid.md#styling-{PlatformLower}-grid) section.
 
 <!-- end: WebComponents -->
 
