@@ -121,9 +121,12 @@ public ngOnInit() {
         column1.groupable = true;
     }
 ```
+<!-- end: WebComponents -->
 
-During runtime the expressions are gettable and settable from the `groupingExpressions` property. If you need to add or change an existing expression you may also use the `GroupBy` method with either a single or an array of `ISortingExpression`.
+During runtime the expressions are gettable and settable from the `groupingExpressions` property. If you need to add or change an existing expression you may also use the `GroupBy` method with either a single or an array of expressions.
 
+
+<!-- WebComponents -->
 ```typescript
 grid.groupBy({ fieldName: 'ProductName', dir: SortingDirection.Desc, ignoreCase: true });
 ```
@@ -180,7 +183,12 @@ export interface IGroupByExpandState {
 
 <!-- end: WebComponents -->
 
-As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method that toggles a group by the group record instance.
+As with `GroupingExpressions`, setting a list of `IGroupByExpandState` directly to the `GroupingExpansionState` will change the expansion accordingly. Additionally `Grid` exposes a method `toggleGroup` that toggles a group by the group record instance or via the `expanded` property of the row.
+
+```typescript
+   const groupRow = this.grid.getRowByIndex(0).groupRow;
+    grid.toggleGroup(groupRow);
+```
 
 ```typescript
     const groupRow = this.grid.getRowByIndex(0);
