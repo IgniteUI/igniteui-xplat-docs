@@ -50,17 +50,27 @@ Dialog コンポーネントを表示する最も簡単な方法は、`Show` メ
 
 ```razor
 <div class="container vertical">
-    <IgbDialog @ref="_dialog" Title="Dialog Title">
-        <p>This is a sample message.</p>
-        <div slot="footer">
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dialog!.Hide())">Close</IgbButton>
-        </div>
+    <IgbButton @onclick="OnDialogShow" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
+    <IgbDialog @ref="DialogRef" Title="Confirmation">
+        <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>OK</IgbButton>
     </IgbDialog>
-
-    <IgbButton @onclick="@(e => _dialog!.Show())" class="button">
-        Open Dialog
-    </IgbButton>
 </div>
+
+@code {
+    public IgbDialog DialogRef;
+    public void OnDialogShow()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Show();
+    }
+    public void OnDialogHide()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Hide();
+    }
+}
 ```
 
 ```html
@@ -81,12 +91,15 @@ Dialog のタイトルを設定するには、`Title` プロパティを使用�
 
 ### 閉じる (Closing)
 
-デフォルトでは、ユーザーが `ESC` キーを押すと、ダイアログは自動的に閉じられます。`CloseOnEscape` プロパティを使用して、この動作を防ぐことができます。デフォルト値は **true** です。ダイアログに開いているドロップダウン (または `ESC` を内部で処理する必要があるその他の要素) がある場合、`ESC` を 1 回押すとドロップダウンが閉じ、もう一度押すとダイアログが閉じます。
+デフォルトでは、ユーザーが `ESC` キーを押すと、ダイアログは自動的に閉じられます。`KeepOpenOnEscape` プロパティを使用して、この動作を防ぐことができます。デフォルト値は **false** です。ダイアログに開いているドロップダウン (または `ESC` を内部で処理する必要があるその他の要素) がある場合、`ESC` を 1 回押すとドロップダウンが閉じ、もう一度押すとダイアログが閉じます。
 
 `CloseOnOutsideClick` プロパティを使用して、ダイアログの外側をクリックしたときにダイアログを閉じるかどうかを構成します。デフォルト値は **false** です。
 
+<!-- Angular, WebComponents -->
+
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing のバリエーション"`
 
+<!-- end: Angular, WebComponents -->
 
 ### (フォーム)
 
@@ -102,13 +115,13 @@ Dialog コンポーネントは、いくつかの CSS パーツ (`base`、`title
 ```css
 igc-dialog::part(content) {
     background: #011627;
-    color:white;
+    color: white;
 }
 
 igc-dialog::part(title),
 igc-dialog::part(footer) {
     background: #011627;
-    color:#ECAA53;
+    color: #ECAA53;
 }
 ```
 
@@ -119,7 +132,7 @@ igc-dialog::part(footer) {
 
 ## API リファレンス
 
-- `CloseOnEscape`
+- `KeepOpenOnEscape`
 - `CloseOnOutsideClick`
 - `Hide`
 - `HideDefaultAction`
