@@ -624,6 +624,7 @@ import 'core-js/es7/array';
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
 * [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -633,6 +634,7 @@ import 'core-js/es7/array';
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Group by](groupby.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
