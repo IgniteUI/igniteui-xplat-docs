@@ -21,11 +21,9 @@ The `{ComponentName}` provides a convenient way to perform data manipulations th
 
 <!-- ComponentEnd: TreeGrid -->
 
-# {Platform} {ComponentTitle} Row Adding Example
+## {Platform} {ComponentTitle} Row Adding Example
 
 `sample="/{ComponentSample}/row-adding", height="600", alt="{Platform} {ComponentTitle} Row Adding Example"`
-
-
 
 ## Row Adding Usage
 
@@ -46,8 +44,11 @@ export class AppModule {}
 
 Then define a `{ComponentName}` with bound data source, `RowEditable` set to true and an `ActionStrip` component with editing actions enabled. The `AddRow` input controls the visibility of the button that spawns the row adding UI.
 
+<!-- ComponentStart: Grid -->
+
+<!-- Angular -->
 ```html
-<igx-grid [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
+<{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
     <igx-column field="ProductID" header="Product ID" dataType="number"></igx-column>
     <igx-column field="ReorderLevel" header="ReorderLever" dataType="number"></igx-column>
     <igx-column field="ProductName" header="ProductName" dataType="string"></igx-column>
@@ -58,11 +59,49 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
     <igx-action-strip #actionstrip>
         <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
     </igx-action-strip>
-</igx-grid>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="grid" primary-key="ProductID" auto-generate="false" row-editable="true">
+    <igc-column field="ProductID" header="Product ID" data-type="Number"></igc-column>
+    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
+    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
+    <igc-column field="UnitsInStock" header="UnitsInStock" data-type="Number"></igc-column>
+    <igc-column field="OrderDate" data-type="Date"></igc-column>
+    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
+
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+```razor
+<{ComponentSelector} AutoGenerate="false" Id="grid" Data="NwindData" PrimaryKey="ProductID" RowEditable="true">
+    <IgbColumn Field="ProductID" Header="Product ID" DataType="GridColumnDataType.Number"></IgbColumn>
+    <IgbColumn Field="ReorderLevel" Header="Reorder Level" DataType="GridColumnDataType.Number"></IgbColumn>
+    <IgbColumn Field="ProductName" Header="Product Name" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="UnitsInStock" Header="Units In Stock" DataType="GridColumnDataType.Number"></IgbColumn>
+    <IgbColumn Field="OrderDate" Header="Order Date" DataType="GridColumnDataType.Date"></IgbColumn>
+    <IgbColumn Field="Discontinued" Header="Discontinued" DataType="GridColumnDataType.Boolean"></IgbColumn>
+
+    <IgbActionStrip>
+        <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
+    </IgbActionStrip>
+</{ComponentSelector}>
 ```
 
+<!-- ComponentEnd: Grid -->
+
+<!-- ComponentStart: TreeGrid -->
+
+<!-- Angular -->
 ```html
-<igx-tree-grid igxPreventDocumentScroll [data]="data"
+<{ComponentSelector} igxPreventDocumentScroll [data]="data"
     primaryKey="ID" foreignKey="ParentID" [rowEditable]="true">
     <igx-column [field]="'Name'" dataType="string"></igx-column>
     <igx-column [field]="'Title'" dataType="string"></igx-column>
@@ -77,11 +116,47 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
         <igx-grid-editing-actions [addRow]="true" [addChild]="actionstrip.context?.treeRow.level < 2">
         </igx-grid-editing-actions>
     </igx-action-strip>
-</igx-tree-grid>
+</{ComponentSelector}>
+```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
+    <igc-column field="Name" data-type="String"></igc-column>
+    <igc-column field="Title" data-type="String"></igc-column>
+    <igc-column field="HireDate" data-type="Date"></igc-column>
+    <igc-column field="OnPTO" data-type="Boolean" width="130px">
+    </igc-column>
+    <igc-column field="Age" data-type="Number"></igc-column>
+    <igc-action-strip id="actionstrip">
+        <igc-grid-editing-actions add-row="true">
+        </igc-grid-editing-actions>
+    </igc-action-strip>
+</{ComponentSelector}>
+```
+<!-- end: WebComponents -->
+
+```razor
+<{ComponentSelector} AutoGenerate="false" Id="treegrid" PrimaryKey="ID" ForeignKey="ParentID" RowEditable="true">
+    <IgbColumn Field="Name" Header="Name" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="Title" Header="Title" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="HireDate" Header="Hire Date" DataType="GridColumnDataType.Date"></IgbColumn>
+    <IgbColumn Field="OnPTO" Header="On PTO" DataType="GridColumnDataType.Boolean"></IgbColumn>
+
+    <IgbActionStrip>
+        <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
+    </IgbActionStrip>
+</{ComponentSelector}>
 ```
 
+<!-- ComponentEnd: TreeGrid -->
+
+<!-- ComponentStart: HierarchicalGrid -->
+
+<!-- Angular -->
 ```html
-<igx-hierarchical-grid igxPreventDocumentScroll [data]="localdata"
+<{ComponentSelector} igxPreventDocumentScroll [data]="localdata"
     [autoGenerate]="false" [primaryKey]="'Debut'" [rowEditable]="true">
     <igx-column field="Artist" [dataType]="'string'"></igx-column>
     <igx-column field="HasGrammyAward" header="Has Grammy Award?" [dataType]="'boolean'">
@@ -115,42 +190,13 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
             <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
         </igx-action-strip>
     </igx-row-island>
-</igx-hierarchical-grid>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
 ```html
-<igc-grid id="grid" primary-key="ProductID" auto-generate="false" row-editable="true">
-    <igc-column field="ProductID" header="Product ID" data-type="Number"></igc-column>
-    <igc-column field="ReorderLevel" header="ReorderLever" data-type="Number"></igc-column>
-    <igc-column field="ProductName" header="ProductName" data-type="String"></igc-column>
-    <igc-column field="UnitsInStock" header="UnitsInStock" data-type="Number"></igc-column>
-    <igc-column field="OrderDate" data-type="Date"></igc-column>
-    <igc-column field="Discontinued" header="Discontinued" data-type="Boolean"></igc-column>
-
-    <igc-action-strip id="actionstrip">
-        <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
-    </igc-action-strip>
-</igc-grid>
-```
-
-```html
-<igc-tree-grid id="treeGrid" primary-key="ID" foreign-key="ParentID" row-editable="true">
-    <igc-column field="Name" data-type="String"></igc-column>
-    <igc-column field="Title" data-type="String"></igc-column>
-    <igc-column field="HireDate" data-type="Date"></igc-column>
-    <igc-column field="OnPTO" data-type="Boolean" width="130px">
-    </igc-column>
-    <igc-column field="Age" data-type="Number"></igc-column>
-    <igc-action-strip id="actionstrip">
-        <igc-grid-editing-actions add-row="true">
-        </igc-grid-editing-actions>
-    </igc-action-strip>
-</igc-tree-grid>
-```
-
-```html
-<igc-hierarchical-grid id="hGrid"
-    auto-generate="false" primary-key="Debut" row-editable="true">
+<{ComponentSelector} id="hGrid" auto-generate="false" primary-key="Debut" row-editable="true">
     <igc-column field="Artist" data-type="String"></igc-column>
     <igc-column field="HasGrammyAward" header="Has Grammy Award?" data-type="Boolean'">
     </igc-column>
@@ -183,8 +229,48 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
             <igc-grid-editing-actions add-row="true"></igc-grid-editing-actions>
         </igc-action-strip>
     </igc-row-island>
-</igc-hierarchical-grid>
+</{ComponentSelector}>
 ```
+<!-- end: WebComponents -->
+
+```razor
+<{ComponentSelector} AutoGenerate="false" Id="hGrid" PrimaryKey="Debut" RowEditable="true">
+    <IgbColumn Field="Artist" Header="Artist" DataType="GridColumnDataType.String"></IgbColumn>
+    <IgbColumn Field="HasGrammyAward" Header="Has Grammy Award" DataType="GridColumnDataType.Boolean"></IgbColumn>
+    <IgbColumn Field="Debut" Header="Debut" DataType="GridColumnDataType.Number"></IgbColumn>
+    <IgbColumn Field="GrammyNominations" Header="Grammy Nominations" DataType="GridColumnDataType.Number"></IgbColumn>
+    <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number"></IgbColumn>
+
+    <IgbActionStrip>
+        <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
+    </IgbActionStrip>
+    
+    <IgbRowIsland AutoGenerate="false" Key="Albums" PrimaryKey="USBillboard200" RowEditable="true">
+        <IgbColumn Field="Album" Header="Album" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="LaunchDate" Header="Launch Date" DataType="GridColumnDataType.Date"></IgbColumn>
+        <IgbColumn Field="BillboardReview" Header="Billboard Review" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="USBillboard200" Header="US Billboard 200" DataType="GridColumnDataType.Number"></IgbColumn>
+        <IgbColumn Field="GrammyAwards" Header="Grammy Awards" DataType="GridColumnDataType.Number"></IgbColumn>
+
+        <IgbRowIsland AutoGenerate="false" Key="Songs" PrimaryKey="Number" RowEditable="true">
+            <IgbColumn Field="Number" Header="Number" DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Title" DataType="GridColumnDataType.String"></IgbColumn>
+            <IgbColumn Field="Released" DataType="GridColumnDataType.Date"></IgbColumn>
+            <IgbColumn Field="Genre" DataType="GridColumnDataType.String"></IgbColumn>
+
+            <IgbActionStrip>
+                <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
+            </IgbActionStrip>
+        </IgbRowIsland>
+
+        <IgbActionStrip>
+            <IgbGridEditingActions AddRow="true"></IgbGridEditingActions>
+        </IgbActionStrip>
+    </IgbRowIsland>
+</{ComponentSelector}>
+```
+
+<!-- ComponentEnd: HierarchicalGrid -->
 
 > [!Note]
 > Setting primary key is mandatory for row adding operations.
@@ -221,11 +307,25 @@ this.grid.beginAddRowById('ALFKI');  // Spawns the add row UI under the row with
 this.grid.beginAddRowById(null);     // Spawns the add row UI as the first record
 ```
 
+```razor
+@code {
+    await this.grid.BeginAddRowByIdAsync('ALFKI', false);  // Spawns the add row UI under the row with PK 'ALFKI'
+    await this.grid.BeginAddRowByIdAsync(null, false);     // Spawns the add row UI as the first record
+}
+```
+
 The `beginAddRowByIndex` method works similarly but requires you to specify the index at which the UI should spawn. Allowed values range between 0 and the size of the data view - 1.
 
 ```typescript
 this.grid.beginAddRowByIndex(10);   // Spawns the add row UI at index 10
 this.grid.beginAddRowByIndex(0);    // Spawns the add row UI as the first record
+```
+
+```razor
+@code {
+    await this.grid.BeginAddRowByIndexAsync(10);   // Spawns the add row UI at index 10
+    await this.grid.BeginAddRowByIndexAsync(0);    // Spawns the add row UI as the first record
+}
 ```
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
@@ -239,11 +339,25 @@ this.treeGrid.beginAddRowById('ALFKI', true);   // Spawns the add row UI to add 
 this.treeGrid.beginAddRowById(null);            // Spawns the add row UI as the first record
 ```
 
+```razor
+@code {
+    await this.treeGrid.BeginAddRowByIdAsync('ALFKI', true);  // Spawns the add row UI to add a child for the row with PK 'ALFKI'
+    await this.treeGrid.BeginAddRowByIdAsync(null, false);     // Spawns the add row UI as the first record
+}
+```
+
 The `BeginAddRowByIndex` method works similarly but the row to use as context is specified by index.
 
 ```typescript
 this.treeGrid.beginAddRowByIndex(10, true);   // Spawns the add row UI to add a child for the row at index 10
 this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the first record
+```
+
+```razor
+@code {
+    await this.treeGrid.BeginAddRowByIndexAsync(10, true);   // Spawns the add row UI to add a child for the row at index 10
+    await this.treeGrid.BeginAddRowByIndexAsync(0);    // Spawns the add row UI as the first record
+}
 ```
 
 <!-- ComponentEnd: TreeGrid -->
@@ -287,22 +401,39 @@ After a new row is added through the row adding UI, its position and/or visibili
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- Angular -->
 ## Customizing Row Adding Overlay
 
 ### Customizing Text
 
 Customizing the text of the row adding overlay is possible using the `RowAddTextDirective`.
 
+<!-- Angular -->
 ```html
-<ng-template igxRowAddText>
-	Adding Row
-</ng-template>
+<{ComponentSelector} [data]="data" [primaryKey]="'ProductID'" [autoGenerate]="false" [rowEditable]="true">
+    <ng-template igxRowAddText>
+	    Adding Row
+    </ng-template>
+</{ComponentSelector}>
 ```
+<!-- end: Angular -->
 
+<!-- WebComponents -->
 ```ts
-public addRowTextTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+this.grid.rowAddTextTemplate = (ctx: IgcGridEmptyTemplateContext) => {
     return html`Adding Row`;
+}
+```
+<!-- end: WebComponents -->
+
+```razor
+<{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowAddTextTemplate="addTextTemplate">
+</{ComponentSelector}>
+
+@code {
+    private RenderFragment<IgbGridEmptyTemplateContext> addTextTemplate = (context) =>
+    {
+        return @<span>Adding Row</span>;
+    };
 }
 ```
 
@@ -312,24 +443,50 @@ Customizing the buttons of the row editing overlay is possible using the `RowEdi
 
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
 
- ```html
- <ng-template igxRowEditActions let-endRowEdit>
+<!-- Angular -->
+```html
+<ng-template igxRowEditActions let-endRowEdit>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(false)">Cancel</button>
 	<button igxButton igxRowEditTabStop (click)="endRowEdit(true)">Apply</button>
 </ng-template>
 ```
 
+> [!Note]
+> Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
+<!-- end: Angular -->
+
+<!-- WebComponents -->
 ```ts
-public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
+this.grid.rowEditActionsTemplate = (ctx: IgxGridRowEditActionsTemplateContext) => {
     return html`
         <button onClick="${this.endRowEdit(false)}">Cancel</button>
 	    <button onClick="${this.endRowEdit(true)}">Apply</button>
     `;
 }
 ```
-> [!Note]
-> Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
+<!-- end: WebComponents -->
 
+```razor
+<{ComponentSelector} Data="data" PrimaryKey="ProductID" AutoGenerate="false" RowEditable="true" RowEditActionsTemplate="rowEditActionsTemplate">
+</{ComponentSelector}>
+
+@code {
+    private RenderFragment<IgbGridRowEditActionsTemplateContext> rowEditActionsTemplate = (context) =>
+    {
+        return @<div class="row-actions">
+                    <button onClick="${this.endRowEdit(false)}">Cancel</button>
+                    <button onClick="${this.endRowEdit(true)}">Apply</button>
+                </div>;
+    };
+}
+```
+
+<!-- Blazor, WebComponents -->
+> [!Note]
+> Using `RowEditActions` template will change edit actions for both editing and adding overlay buttons.
+<!-- end: Blazor, WebComponents -->
+
+<!-- Angular -->
 ## Remote Scenarios
 
 In most remote data scenarios the Primary Key assignment happens on the create server request. In this case the added records on the client will not have the final primary key value until saved on the server's data base. In that case the recommended way to handle this update in the `{ComponentName}` is as follows:
@@ -343,16 +500,15 @@ In most remote data scenarios the Primary Key assignment happens on the create s
     Once the create request or batch update request is successfully completed and returns the added record instances (with their db generated ids), the related ADD transactions should be cleared from the transaction log using the `Clear` API method. This is necessary because the local transaction will have a generated id field, which may differ than the one created in the data base, so they should be cleared. You can then add the record(s) passed in the response to the local data instance.
 
 This will ensure that the remotely generated ids are always reflected in the local data, and subsequent update/delete operations target the correct record ids.
+<!-- end: Angular -->
 
 ## Styling
 
 The row adding UI comprises the buttons in the `ActionStrip` editing actions, the editing editors and overlay, as well as the snackbar which allows end users to scroll to the newly added row. To style these components you may refer to these comprehensive guides in their respective topics:
 
 - [{ComponentTitle} Row Editing](row-editing.md#styling)
-- [Snackbar](../snackbar.md#styling)
-- [ActionStrip](../action-strip.md#styling)
-
-<!-- end: Angular -->
+- [Snackbar](../../notifications/snackbar.md#styling)
+<!-- - [ActionStrip](../action-strip.md#styling) -->
 
 ## API References
 
