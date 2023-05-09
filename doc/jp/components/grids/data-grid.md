@@ -122,7 +122,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](data-grid.md#web-components-グリッド-スタイルの構成)セクションを参照してください。
+グリッドの外観をカスタマイズする方法の詳細については、[スタイリング](data-grid.md#{PlatformLower}-grid-スタイル設定の構成)セクションを参照してください。
 
 <!-- end: WebComponents -->
 
@@ -1693,7 +1693,9 @@ platformBrowserDynamic()
 > グリッドは **css グリッド レイアウト**を使用しますが、これは**プレフィックスなしでは IE ではサポートされていません**。その結果、適切に描画されません。
 
 <!-- WebComponents -->
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
+<!-- 定義済みのテーマに加えて、利用可能な [CSS プロパティ](theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。-->
+
+ヘッダーの背景とテキストの色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```typescript
 <igc-grid class="grid">

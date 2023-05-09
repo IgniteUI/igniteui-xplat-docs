@@ -394,7 +394,8 @@ constructor() {
 
 *display - デフォルトの en-US ロケールの場合、USD コードは省略記号 $ または記号 US$ で表すことができます。
 
-セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+<!-- ComponentStart:  Grid -->
+セルの値を編集すると、**通貨記号**がサフィックスまたはプレフィックスとして表示されます。詳細については、公式の[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。<!-- ComponentEnd:  Grid -->
 
 > 注: 上/下矢印キーを使用する場合、値は digitsInfo - minFractionDigits (小数点以下の最小桁数。デフォルトは 0 です。) に基づいてステップで増減します。
 
@@ -481,7 +482,9 @@ constructor() {
 
 ## デフォルトの編集テンプレート
 
+<!-- ComponentStart:  Grid -->
 [{ComponentTitle} 編集トピック](editing.md#テンプレートの編集)の編集テンプレート部分を参照してください。
+<!-- ComponentEnd:  Grid -->
 
 <!-- Angular -->
 ## カスタム編集テンプレートとフォーマッタ
@@ -575,8 +578,10 @@ TO DO!
 * `DataType`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+
 
 * [編集](editing.md)
 * [集計](summaries.md)
+<!-- ComponentEnd:  Grid -->
