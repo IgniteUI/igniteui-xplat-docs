@@ -522,7 +522,7 @@ class MySummary extends IgcNumberSummaryOperand {
 Add blazor snippet for my summary
 ```-->
 
-`sample="/{ComponentSample}/data-summary-options", height="650", alt="{Platform} {ComponentTitle} data summary options"`
+`sample="/{ComponentSample}/data-summaries-custom", height="650", alt="{Platform} {ComponentTitle} data summary custom"`
 
 
 ### Summary Template
