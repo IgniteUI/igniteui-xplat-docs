@@ -9,7 +9,7 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Summaries
 
-The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom angular template in the `{ComponentName}`.
+The {Platform} `{ComponentName}` has a **summaries** feature that functions on a per-column level as group footer. {Platform} grid summaries is powerful feature which enables the user to see column information in a separate container with a predefined set of default summary items, depending on the type of data within the column or by implementing a custom  template in the `{ComponentName}`.
 
 ## {Platform} {ComponentTitle} Summaries Overview Example
 
@@ -74,7 +74,7 @@ All available column data types could be found in the official [Column types top
     </igc-column>
     <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
     </igc-column>
-    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="true">
     </igc-column>
 </{ComponentSelector}>
 ```
@@ -111,8 +111,8 @@ Add blazor snippet for hgrid
     <igc-column field="Photo">
     </igc-column>
     <igc-column field="Debut" has-summary='true'></igc-column>
-    <igc-column field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
-    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+    <igc-column field="Grammy Nominations" has-summary='true' data-type="number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="number"></igc-column>
 </igc-hierarchical-grid>
 ```
 
@@ -145,7 +145,7 @@ The other way to enable/disable summaries for a specific column or a list of col
     </igc-column>
     <igc-column field="ProductName" header="Product Name" width="200px" sortable="true" has-summary="true">
     </igc-column>
-    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="false">
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="false">
     </igc-column>
 </{ComponentSelector}>
 <button id="enableBtn">Enable Summary</button>
@@ -170,12 +170,12 @@ constructor() {
 ```typescript
 public enableSummary() {
     this.grid.enableSummaries([
-        {fieldName: 'ReorderLevel', customSummary: this.mySummary},
+        {fieldName: 'ReorderLevel'},
         {fieldName: 'ProductID'}
     ]);
 }
 public disableSummary() {
-    this.grid.disableSummaries('ProductName');
+    this.grid.disableSummaries(['ProductID']);
 }
 ```
 
@@ -395,9 +395,9 @@ See [Custom summaries, which access all data](#custom-summaries-which-access-all
     </igc-column>
     <igc-column field="ProductName" width="200px" sortable="true" has-summary="true">
     </igc-column>
-    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" dataType="'number'" has-summary="true" sortable="true">
+    <igc-column id="unitsInStock" field="UnitsInStock" width="200px" dataType="number" has-summary="true" sortable="true">
     </igc-column>
-    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="Number" has-summary="true">
+    <igc-column field="ReorderLevel" width="200px" editable="true" data-type="number" has-summary="true">
     </igc-column>
 </{ComponentSelector}>
 ```
@@ -455,8 +455,8 @@ Add blazor snippet
     <igc-column field="Photo">
     </igc-column>
     <igc-column field="Debut" has-summary='true'></igc-column>
-    <igc-column id="grammyNom" field="Grammy Nominations" has-summary='true' data-type="Number"></igc-column>
-    <igc-column field="Grammy Awards" has-summary='true' data-type="Number"></igc-column>
+    <igc-column id="grammyNom" field="Grammy Nominations" has-summary='true' data-type="number"></igc-column>
+    <igc-column field="Grammy Awards" has-summary='true' data-type="number"></igc-column>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -552,9 +552,10 @@ constructor() {
 }
 
 public summaryTemplate = (ctx: IgcSummaryTemplateContext) => {
+    var context = (ctx as any)['$implicit'];
     return html`
         <span> My custom summary template</span>
-        <span>${ ctx.label } - ${ ctx.summaryResult }</span>
+        <span>${ context[0].label } - ${ context[0].summaryResult }</span>
     `;
 }
 ```
@@ -600,15 +601,14 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```
 
 ```typescript
-public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
-    const result = summary.summaryResult;
-    if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
-        && result !== null && result !== undefined) {
-        const pipe = new DatePipe('en-US');
-        return pipe.transform(result,'MMM YYYY');
+    public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
+        const result = summary.summaryResult;
+        if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== "count" && result !== null && result !== undefined) {
+            const format = new Intl.DateTimeFormat("en", { year: "numeric" });
+            return format.format(new Date(result));
+        }
+        return result;
     }
-    return result;
-}
 ```
 
 ```html
@@ -616,7 +616,7 @@ public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOp
 ```
 
 ```html
-<igc-column id="column" [summaryFormatter]="dateSummaryFormat"></igx-column>
+<igc-column id="column"></igx-column>
 ```
 ```ts
 constructor() {
