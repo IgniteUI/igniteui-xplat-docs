@@ -272,22 +272,22 @@ Then define a `{ComponentName}` with bound data source, `RowEditable` set to tru
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-> [!Note]
+> **Note**:
 > Setting primary key is mandatory for row adding operations.
 
-> [!Note]
+> **Note**:
 > Every column excluding the primary key one is editable in the row adding UI by default. If you want to disable editing for a specific column, then you have to set the `Editable` column's input to `false`.
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-> [!Note]
+> **Note**:
 > The `GridEditingActions` input controlling the visibility of the add row button may use the action strip context (which is of type `RowType` to fine tune which records the button shows for.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-> [!Note]
+> **Note**:
 > The `GridEditingActions` inputs controlling the visibility of the add row and add child buttons may use the action strip context (which is of type `RowType` to fine tune which records the buttons show for.
 
 <!-- ComponentEnd: TreeGrid -->
@@ -451,7 +451,7 @@ If you want the buttons to be part of the keyboard navigation, then each on of t
 </ng-template>
 ```
 
-> [!Note]
+> **Note**:
 > Using `RowEditActions` directive will change edit actions for both editing and adding overlay buttons.
 <!-- end: Angular -->
 
@@ -482,7 +482,7 @@ this.grid.rowEditActionsTemplate = (ctx: IgxGridRowEditActionsTemplateContext) =
 ```
 
 <!-- Blazor, WebComponents -->
-> [!Note]
+> **Note**:
 > Using `RowEditActions` template will change edit actions for both editing and adding overlay buttons.
 <!-- end: Blazor, WebComponents -->
 
