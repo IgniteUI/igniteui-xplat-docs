@@ -98,7 +98,7 @@ _language: ja
 | --drop-area-border-radius                | 0 ～ 1 の数   | ドロップ領域に使用される境界半径。0 ～ 1 の任意の小数、ピクセル、またはパーセントを指定できます。 |
 
 ### 使用方法
-前述のように、テーブルの CSS 変数を使用すると、グリッドのスタイルを設定できます。Let's say that we want to change the grid to use a Dark Theme, by changing the following header background and text colors etc., we can do that like so in a file optionally called dark-theme.css.
+前述のように、テーブルの CSS 変数を使用すると、グリッドのスタイルを設定できます。次のヘッダーの背景やテキストの色などを変更することで、ダーク テーマを使用するようにグリッドを変更したいとします。これは、オプションで dark-theme.css というファイルで行うことができます。
 
 import "./dark-theme.css";
 
