@@ -585,6 +585,8 @@ When a default summary is defined, the height of the summary area is calculated 
 `sample="/{ComponentSample}/data-summary-template", height="650", alt="{Platform} {ComponentTitle} data summary template"`
 
 
+<!-- Angular, WebComponents -->
+
 ## Formatting summaries
 By default, summary results, produced by the built-in summary operands, are localized and formatted according to the grid `Locale` and column `PipeArgs`. When using custom operands, the `Locale` and `PipeArgs` are not applied. If you want to change the default appearance of the summary results, you may format them using the `SummaryFormatter` property.
 
@@ -640,6 +642,9 @@ igRegisterScript("SummaryFormatter", (summary, summaryOperand) => {
 ```
 
 `sample="/{ComponentSample}/data-summary-formatter", height="650", alt="{Platform} {ComponentTitle} data summary formatter"`
+
+
+<!-- end: Angular, WebComponents -->
 
 
 <!-- ComponentStart: Grid -->
@@ -711,6 +716,40 @@ The summary rows can be navigated with the following keyboard interactions:
 - <kbd>RIGHT</kbd> - navigates one cell right.
 - <kbd>CTRL</kbd> + <kbd>LEFT</kbd> or <kbd>HOME</kbd> - navigates to the leftmost cell.
 - <kbd>CTRL</kbd> + <kbd>RIGHT</kbd> or <kbd>END</kbd> - navigates to the rightmost cell.
+
+
+<!-- WebComponents, Blazor -->
+
+## Styling
+
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    --igx-grid-summary-background-color:#e0f3ff;
+    --igx-grid-summary-focus-background-color: rgba( #94d1f7, .3 );
+    --igx-grid-summary-label-color: rgb(228, 27, 117);
+    --igx-grid-summary-result-color: black;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/groupby-summary-styling", height="710", alt="{Platform} {ComponentTitle} groupby summary styling"`
+
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 ## Styling
