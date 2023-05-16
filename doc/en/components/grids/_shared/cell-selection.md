@@ -124,7 +124,7 @@ this.grid.selectRange(range);
 <!-- Angular, WebComponents -->
 `getSelectedData` will return array of the selected data in format depending on the selection. Examples below:
 
-1. If three different single cells are selected:
+- If three different single cells are selected:
 
 ```typescript
 expectedData = [
@@ -134,7 +134,7 @@ expectedData = [
 ];
 ```
 
-2. If three cells from one column are selected:
+- If three cells from one column are selected:
 
 ```typescript
 expectedData = [
@@ -144,7 +144,7 @@ expectedData = [
 ];
 ```
 
-3. If three cells are selected with mouse drag from one row and three columns:
+- If three cells are selected with mouse drag from one row and three columns:
 
 ```typescript
 expectedData = [
@@ -152,7 +152,7 @@ expectedData = [
 ];
 ```
 
-4. If three cells are selected with mouse drag from two rows and three columns:
+- If three cells are selected with mouse drag from two rows and three columns:
 
 ```typescript
 expectedData = [
@@ -161,7 +161,7 @@ expectedData = [
 ];
 ```
 
-5. If two different ranges are selected:
+- If two different ranges are selected:
 
 ```typescript
 expectedData = [
@@ -172,7 +172,7 @@ expectedData = [
 ];
 ```
 
-6. If two overlapping ranges are selected, the format would be:
+- If two overlapping ranges are selected, the format would be:
 
 ```typescript
 expectedData = [
