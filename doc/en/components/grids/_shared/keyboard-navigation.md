@@ -125,7 +125,7 @@ Practice all of the above mentioned actions in the demo sample below. Focus any 
 ## Demo
 
 
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
+`sample="/{ComponentSample}/keyboard-navigation-guide", height="600", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
 
 ## Custom Keyboard Navigation
