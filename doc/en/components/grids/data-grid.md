@@ -354,10 +354,10 @@ constructor() {
     this._bind();
 }
 
-public productNameHeaderTemplate = (ctx: IgcCellTemplateContext) => {
+public productNameHeaderTemplate = (ctx: IgcColumnTemplateContext) => {
     return html`
         <div class="text">${ctx.column.field}</div>
-        <igc-icon click="${this.toggleSummary(ctx.cell.column)}" name="functions"></igc-icon>
+        <igc-icon click="${this.toggleSummary(ctx.column)}" name="functions"></igc-icon>
     `;
 }
 
@@ -1705,22 +1705,11 @@ In addition to the predefined themes, the grid could be further customized by se
 
 Then set the `--header-background` and `--header-text-color` CSS properties for that class:
 
-<!-- WebComponents -->
 ```css
 .grid {
     --header-background: #494949;
     --header-text-color: #FFF;
 }
-```
-<!-- end: WebComponents -->
-
-```razor
-<style>
-    .grid * {
-        --header-background: #494949;
-        --header-text-color: #FFF;
-    }
-</style>
 ```
 
 <!-- end: WebComponents, Blazor -->
