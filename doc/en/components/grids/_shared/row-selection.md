@@ -609,7 +609,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Cell selection](cell-selection.md)
 * [Paging](paging.md)
@@ -620,7 +620,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

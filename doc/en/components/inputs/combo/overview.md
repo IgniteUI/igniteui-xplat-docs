@@ -13,7 +13,7 @@ The {ProductName} ComboBox component provides a list of options from which users
 
 ## {Platform} ComboBox Example
 
-`sample="/inputs/combo/overview", height="320", alt="{Platform} Combo Example"`
+`sample="/inputs/combo/overview", height="400", alt="{Platform} Combo Example"`
 
 
 <div class="divider--half"></div>
@@ -143,19 +143,19 @@ combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
 
 ```razor
-<IgbCombo 
+<IgbCombo
     @ref="Combo"
-    Label="Cities" 
-    Placeholder="Pick a city" 
-    Data="Data" 
-    ValueKey="Id" 
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
     DisplayKey="Name">
 </IgbCombo>
 
 @code {
     private List<City> Data;
     private IgbCombo Combo;
-    private object[] Cities; 
+    private object[] Cities;
 
     protected override void OnInitialized() {
         this.Data = SampleData.Cities;
@@ -256,7 +256,7 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 | `footer`             | The container holding the footer content.                                       |
 | `empty`              | The container holding the empty content.                                        |
 
-`sample="/inputs/combo/styling", height="380", alt="{Platform} Combo Styling Example"`
+`sample="/inputs/combo/styling", height="400", alt="{Platform} Combo Styling Example"`
 
 
 

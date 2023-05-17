@@ -23,11 +23,11 @@ _language: ja
 
 | Geographic シリーズ  | プロパティ   | 概要   |
 |--------------|---------------| ---------------|
-| `GeographicSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
-| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
-| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `RadiusMemberPath`   | 2 つの経度座標と緯度座標の名前と、シンボルのサイズ/半径の数字列を 1 列指定します。 |
-| `GeographicScatterAreaSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ColorMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
-| `GeographicContourLineSeries` | `LongitudeMemberPath`, `LatitudeMemberPath`, `ValueMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
+| `GeographicSymbolSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
+| `GeographicHighDensityScatterSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`   | 2 つの数値の経度と緯度座標の名前を指定します。 |
+| `GeographicProportionalSymbolSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`RadiusMemberPath`   | 2 つの経度座標と緯度座標の名前と、シンボルのサイズ/半径の数字列を 1 列指定します。 |
+| `GeographicScatterAreaSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`ColorMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
+| `GeographicContourLineSeries` | `LongitudeMemberPath`、`LatitudeMemberPath`、`ValueMemberPath`   | 数値の三角測量のために、2 つの経度と緯度座標および数値列を 1 列指定します。 |
 |`GeographicShapeSeries`|`ShapeMemberPath`|図形の地理的ポイントを含む `ItemsSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
 |`GeographicPolylineSeries`|`ShapeMemberPath`|線の地理的座標を含む `ItemsSource` 項目のデータ列の名前を指定します。このプロパティは、x プロパティと y プロパティを持つオブジェクトの配列の配列にマップする必要があります。 |
 
@@ -365,13 +365,13 @@ createPolylineSeries(flight: any)
         WorldCity cityLAX = new WorldCity() { Lat = 34.000, Lon = -118.25, Country = "US", Name = "Los Angeles" };
 
         this.DataSource = new List<FlightInfo>() {
-            new FlightInfo(){ Origin = cityDAL, Dest = citySNG, Color = "Green" },
-            new FlightInfo(){ Origin = cityMOS, Dest = cityNZL, Color = "Red" },
-            new FlightInfo(){ Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
-            new FlightInfo(){ Origin = cityPAN, Dest = cityROM, Color = "Orange" },
-            new FlightInfo(){ Origin = cityALT, Dest = cityJOH, Color = "Black" },
-            new FlightInfo(){ Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
-            new FlightInfo(){ Origin = cityLAX, Dest = citySYD, Color = "Gray" },
+            new FlightInfo() { Origin = cityDAL, Dest = citySNG, Color = "Green" },
+            new FlightInfo() { Origin = cityMOS, Dest = cityNZL, Color = "Red" },
+            new FlightInfo() { Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
+            new FlightInfo() { Origin = cityPAN, Dest = cityROM, Color = "Orange" },
+            new FlightInfo() { Origin = cityALT, Dest = cityJOH, Color = "Black" },
+            new FlightInfo() { Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
+            new FlightInfo() { Origin = cityLAX, Dest = citySYD, Color = "Gray" },
         };
     }
 

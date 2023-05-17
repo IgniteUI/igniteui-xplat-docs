@@ -935,7 +935,7 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 * `{ComponentName}`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
@@ -945,6 +945,7 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
