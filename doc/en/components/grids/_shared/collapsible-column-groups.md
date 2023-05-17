@@ -112,6 +112,7 @@ To summarize, every child column has three states:
 
 The initial state of the column group which is specified as collapsible is `Expanded` set to **true**, but you can easily change this behavior by setting it to **false**.
 
+<!-- Angular, WebComponents -->
 ## Expand/Collapse Indicator Template
 
 Default expand indicator for the `{ComponentName}` is the following:
@@ -124,6 +125,7 @@ Default collapse indicator for the `{ComponentName}` is the following:
 
 Also, if you need to change the default expand/collapse indicator, we provide templating options in order to achieve this.
 
+<!-- CollapsibleIndicatorTemplate not being reevaluated: Work Item #23864  -->
 ```razor
  <IgbColumnGroup @ref="infoColumn" Header="Customer Information" Collapsible="true">
     <IgbColumn Field="CustomerName" Header="Full name" VisibleWhenCollapsed="true"></IgbColumn>
@@ -182,7 +184,7 @@ public indTemplate = (ctx: IgcColumnTemplateContext) => {
     `;
 }
 ```
-
+<!-- end: Angular, WebComponents -->
 <!-- Angular -->
 
 ### Using Property
@@ -223,7 +225,7 @@ Another way to achieve this behavior is to use the igxCollapsibleIndicator direc
 
 <!-- end: Angular -->
 
-> [!Note]
+> **Note**
 > Please keep in mind that initially collapse group option takes precedence over column hidden - If you declared your column to be hidden using the property
 > hidden and you have a group defined where the same column should be shown, the column will be shown.
 
