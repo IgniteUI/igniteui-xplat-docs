@@ -432,9 +432,11 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
+
+<!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 <!-- end: Blazor -->
 
