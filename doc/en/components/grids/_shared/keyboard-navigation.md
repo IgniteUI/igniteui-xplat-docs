@@ -118,20 +118,15 @@ When the `{ComponentName}` body is focused, the following key combinations are a
  - <kbd>Space</kbd> - over Group Row - selects all rows in the group, if `RowSelection` property is set to multiple.
  <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
+
 
 Practice all of the above mentioned actions in the demo sample below. Focus any navigable grid element and a list with some of the available actions for the element will be shown to guide you through.
 
 ## Demo
 
-<!-- NOTE this sample is differed -->
 
 `sample="/{ComponentSample}/keyboard-navigation-guide", height="470", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
 
-
-<!-- end: Angular -->
-
-<!-- Angular -->
 
 ## Custom Keyboard Navigation
 
@@ -160,16 +155,20 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 <igx-grid #grid1 [data]="data" [primaryKey]="'ProductID'" (gridKeydown)="customKeydown($event)">
 ```
 ```html
-<igc-grid id="grid1" primary-key="ProductID">
-</igc-grid
+<{ComponentSelector} id="grid1" primary-key="ProductID">
+</{ComponentSelector}>
 ```
+
+```razor
+```
+
 ```ts
 constructor() {
         var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
         this._bind = () => {
             grid.data = this.data
-            grid.gridKeydown = this.customKeydown
+            grid.addEventListener("gridKeydown", this.customKeydown);
         }
         this._bind();
 
@@ -177,40 +176,13 @@ constructor() {
 ```
 <!-- ComponentEnd: Grid -->
 
-<!-- ComponentStart: HierarchicalGrid -->
-
-```html
-<igx-hierarchical-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event, grid1)">
-    <igx-row-island [key]="'Albums'" (gridCreated)="childGridCreated($event)">
-    </igx-row-island>
-</igx-hierarchical-grid>
-```
-
-In order to add custom keyboard navigation to `{ComponentName}` child grids too, each child grid should subscribe to `GridKeydown` event. That's why in example above we have registered and event handler for for the `GridCreated` event:
 
 ```typescript
-public childGridCreated(event: IGridCreatedEventArgs) {
-    const grid = event.grid;
-    event.grid.gridKeydown.subscribe((args) => {
-        this.customKeydown(args, grid);
-    });
-}
-```
-<!-- ComponentEnd: HierarchicalGrid -->
-
-
-<!-- ComponentStart: TreeGrid -->
-```html
-<igx-tree-grid #grid1 [data]="data" (gridKeydown)="customKeydown($event)">
-</igx-tree-grid>
-```
-<!-- ComponentEnd: TreeGrid -->
-
-```typescript
-public customKeydown(args: IGridKeydownEventArgs) {
-    const target: IgxGridCell = args.target as IgxGridCell;
-    const evt: KeyboardEvent = args.event as KeyboardEvent;
-    const type = args.targetType;
+public customKeydown(args: any) {
+    const evt = args.detail;
+    const target: IgxGridCell = evt.target as IgxGridCell;
+    const evt: KeyboardEvent = evt.event as KeyboardEvent;
+    const type = evt.targetType;
 
     if (type === 'dataCell' && target.inEditMode && evt.key.toLowerCase() === 'tab') {
         // 1. USER INPUT VALIDATION ON TAB
@@ -223,7 +195,6 @@ public customKeydown(args: IGridKeydownEventArgs) {
 
 Based on the `IGridKeydownEventArgs` values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
 
-<!-- ComponentStart: Grid -->
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
     if (target.column.dataType === 'number' && target.editValue < 10) {
@@ -248,69 +219,6 @@ Use the demo below to try out the custom scenarios that we just implemented:
 
 `sample="/{ComponentSample}/keyboard-custom-navigation", height="400", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
 
-
-<!-- ComponentEnd: Grid -->
-
-<!-- ComponentStart: HierarchicalGrid -->
-```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 0) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
-```
-
-<!-- end: Angular -->
-
-<!-- Angular -->
-
-Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the **Grammy Nominations** column, change the value to `-2` and press <kbd>tab</kbd> key. Prompt message will be shown.
-- Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
-
-#### Demo
-
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/keyboard-custom-navigation", height="520", alt="{Platform} {ComponentTitle} keyboard custom navigation"`
-
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
-<!-- ComponentStart: TreeGrid -->
-
-```typescript
-    // 1. USER INPUT VALIDATION ON TAB
-    if (target.column.dataType === 'number' && target.editValue < 18) {
-        // alert the user that the input is invalid
-        return;
-    }
-    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
-    const nexRowIndex = target.row.expanded ? target.rowIndex + 2 : target.rowIndex + 1;
-    grid.navigateTo(nexRowIndex, target.visibleColumnIndex,
-        (obj) => { obj.target.nativeElement.focus(); });
-```
-
-<!-- Angular -->
-
-Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the `Age` column, change the value to `16` and press <kbd>tab</kbd> key. Prompt message will be shown.
-- Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
-
-<!-- NOTE this sample is differed -->
-
-`sample="/{ComponentSample}/keyboard-navigation-guide", height="520", alt="{Platform} {ComponentTitle} keyboard navigation guide"`
-
-
-<!-- end: Angular -->
-
-<!-- ComponentEnd : TreeGrid -->
 
 ## Known Limitations
 
