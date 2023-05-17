@@ -205,7 +205,7 @@ h3#excel-library-for-the-angular-grid ~ h3{
 
 ## {Platform} Grid Example
 
-In this {Platform} grid example, you can see how users can customize their _data view_ by leveraging the various features built into the grid, like data search and filtering, columns sorting, resizing, pinning and hiding, row selection, export to excel and csv, horizontal and vertical scrolling. We have provided examples for cell templating that includes components like linear progress bar indicator and sparkline. View more features [here](#list-features).
+In this {Platform} grid example, you can see how users can customize their _data view_ by leveraging the various features built into the grid, like data search and filtering, columns sorting, resizing, pinning and hiding, row selection, export to excel and csv, horizontal and vertical scrolling. We have provided examples for cell templating that includes components like linear progress bar indicator and sparkline. View more features [here](#{PlatformLower}-grid-features).
 
 <div class="divider--half"></div>
 
@@ -237,7 +237,10 @@ Here are a few of the data grid’s key features:
 <ul id="features-list">
 <li>[**Virtualized Rows and Columns**](grid/virtualization.md) so you can load millions of records</li>
 
-<li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), [**Row**](grid/row-editing.md), and [**Batch**](grid/batch-editing.md) Update options</li>
+<li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), and [**Row**](grid/row-editing.md) Update options</li>
+
+<!--Add back when batch editing is available>
+<!-- <li>[**Inline Editing**](grid/editing.md) with [**Cell**](grid/cell-editing.md), [**Row**](grid/row-editing.md), and [**Batch**](grid/batch-editing.md) Update options</li> -->
 
 <li>[**Excel-style Filtering**](grid/excel-style-filtering.md) and full [**Excel Keyboard Navigation**](grid/keyboard-navigation.md) capability</li>
 
@@ -281,7 +284,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of filtering capabilities within {Platform} Data Grid" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-filtering-ui-768.gif?v=201811121733" alt="Animation of filtering capabilities within {Platform} Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} Grid Paging, Sorting, Filtering, & Searching<a class="anchorjs-link" href="#{Platform}-grid-paging-sorting-filtering--searching" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Allow users to navigate your data set with our default [pager](grid/paging.md) or create your own template to give your own paging experience. With complete support for single and multi-column sorting, full-text [search](grid/search.md) on the grid, and several [advanced filtering](grid/advanced-filtering.md) options, including data-type based [Microsoft Excel-style Filtering](grid/excel-style-filtering.md).</p>
     </div>
 </div>
@@ -293,7 +295,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
         <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of filtering capabilities within {Platform} Data Grid" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-inline-grid-editing-1100.jpg?v=201808021304" alt="Animation of filtering capabilities within {Platform} Data Grid">
     </div>
     <div class="feature__details">
-        <span class="h3 features__heading">Inline {Platform} Grid Editing<a class="anchorjs-link" href="#inline-{Platform}-grid-editing" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>We provide you default [cell templates for editable columns](data-grid.md#cell-editing-template) which are based on the data type of the column. You can define your own custom templates for editable columns and override default behavior for committing and discarding changes in the cell value.</p>
     </div>
 </div>
@@ -303,7 +304,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of keyboard navigation functionality" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-keyboard-navigation-1100.gif?v=201808021304" alt="Animation of keyboard navigation functionality within {Platform} Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">Keyboard Navigation & Row/Cell Selection in the {Platform} Grid<a class="anchorjs-link" href="#keyboard-navigation--rowcell-selection-in-the-{Platform}-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Ensure accessibility compliance and improve usability, enabling Excel-like [keyboard navigation](grid/keyboard-navigation.md) in the {Platform} data grid, using the up, down, right, left, tab, and Enter keys. You can toggle single or multiple row selection in the {Platform} grid using the mouse or keyboard to select or de-select full rows, or use the built-in select all / de-select all checkbox in the grid toolbar to work with row selection. <a class="no-external-icon" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility-">Learn about our most recent enhancements to this feature</a>.</p>
     </div>
 </div>
@@ -314,7 +314,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     <div class="feature__image feature__image--right">
 <img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Icon representation for ARIA support" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-aria-support-1100.jpg?v=201808021304" alt="Icon representation for ARIA support on the Angular Data Grid Component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">{Platform} Grid Accessibility & ARIA Support<a class="anchorjs-link" href="#angular-grid-accessibility--aria-support" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Each of our {Platform} components in {ProductName} has been implemented according to the latest accessibility guidelines and specifications. Our {Platform} components have been tested using OS or Browser provided accessibility technology – screen readers. Our team ensures not only that the guidelines are implemented, but also that the actual content delivered to visually impaired or blind people is actually consumable and user-friendly for them. The {ProductName} data grid is fully accessible with a11y Keyboard accessibility, ARIA, and accessible color palette. <a class="no-external-icons" href="https://www.infragistics.com/community/blogs/b/engineering/posts/grid-keyboard-navigation-accessibility">Learn more</a>.</p>
     </div>
 </div>
@@ -324,7 +323,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with column grouping, pinning and summary features enabled" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-summaries-1100.jpg?v=201808021304" alt="Grid of data with column grouping, pinning and summary features enabled for {Platform} Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">Column Grouping, Pinning, Summaries, & Moving in the {Platform} Grid<a class="anchorjs-link" href="#column-grouping-pinning-summaries--moving-in-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Group columns or pre-set column groups via mouse interaction, touch or our API, with support for built-in column [summaries](grid/summaries.md) or custom summary templates. Enable users to interactively [hide](grid/column-hiding.md) or [move columns](grid/column-moving.md), with full support for interactive [column pinning](grid/column-pinning.md), during move, drag, and reorder operations.</p>
     </div>
 </div>
@@ -334,7 +332,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Grid of data with Multi-Column Headers feature enabled" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-multi-column-headers-1100.jpg?v=201808021304" alt="Grid of data with Multi-Column Headers feature enabled on the {Platform} Data Grid component"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">Multi-Column Headers in the {Platform} Grid<a class="anchorjs-link" href="#multi-column-headers-in-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Enable [multi-column headers](grid/multi-column-headers.md), allowing you to group columns under a common header. Every column group could be a representation of combinations between other groups or columns, with full support for column pinning, interactive column moving within groups, sorting, and hiding groups.</p>
     </div>
 </div>
@@ -346,7 +343,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 <div class="feature">
     <div class="feature__image feature__image--right"><img class="b-lazy b-lazy-gifs b-loaded responsive-img" title="Animation of different grids design showing the themeing and templating capabilities" src="https://static.infragistics.com/marketing/ignite-ui-angular/grid/ignite-ui-angular-grid-cell-styling-1100.gif?v=201808021304" alt="Animation of different grids design showing the themeing and templating capabilities of the Angular Data Grid"></div>
     <div class="feature__details">
-        <span class="h3 features__heading">Theming, Styling, & Templating in the {Platform} Grid<a class="anchorjs-link" href="#theming-styling--templating-in-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>With {ProductName} you can customize cell appearance with CSS or re-template any cell with ng-template to give any cell render appearance. With full support for Material Design, you can customize your branded experience with our simple-to-use theming engine.</p>
     </div>
 </div>
@@ -361,7 +357,6 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
     <div class="feature__image feature__image--right"><img class="b-lazy b-loaded responsive-img" title="Icon representation of Microsoft Excel-like features" src="https://static.infragistics.com/marketing/Website/products/Ignite-UI-for-Angular/ignite-ui-angular-grid-export-to-excel-2-1100.jpg?v=201808021304" alt="Icon representation of Microsoft Excel-like features on the Angular Data Grid">
 </div>
     <div class="feature__details" id="list-features">
-        <span class="h3 features__heading">Excel Library for the {Platform} Grid<a class="anchorjs-link" href="#excel-library-for-the-angular-grid" aria-label="Anchor" data-anchorjs-icon="" style="padding-left: 0.375em;"></a></span>
         <p>Full support for exporting data grids to XLXS, XLS, TSV or CSV. The {ProductName} [Excel library](excel-library.md) includes 300+ formulas, Table support, Conditional Formatting, Chart creation and more – all without needing Microsoft Excel on the client machine.</p>
     </div>
 </div>
@@ -383,7 +378,7 @@ Seamlessly scroll through unlimited rows and columns in your {Platform} grid, wi
 </ul>
 <ul>
     <li>[Column Moving](grid/column-moving.md)</li>
-    <li>[Cell Copy and Paste](grid/clipboard-interactions.md)</li>
+    <!-- <li>[Cell Copy and Paste](grid/clipboard-interactions.md)</li> -->
     <li>[Cell Styling](grid/conditional-cell-styling.md)</li>
     <!-- <li>[Real-time/Live Data Theming](grid/live-data.md)</li> -->
     <!-- <li>[Custom Grid Toolbar](grid/toolbar.md)</li> -->
@@ -473,7 +468,7 @@ There are multiple options to get access to our award-winning support at Infragi
         <div class="faqs-accordion-panel">
             <ul>
                 <li>[Virtualized Rows and Columns](grid/virtualization.md) so you can load millions of records</li>
-                <li>[Inline Editing](grid/row-editing.md) with Cell, Row, and [Batch](grid/batch-editing.md) Update options</li>
+                <!-- <li>[Inline Editing](grid/row-editing.md) with Cell, Row, and [Batch](grid/batch-editing.md) Update options</li> -->
                 <li>[Excel-style Filtering](grid/excel-style-filtering.md) and full [Excel Keyboard Navigation](grid/keyboard-navigation.md) capability</li>
                 <li>Interactive [Outlook-style Grouping](grid/groupby.md)</li>
                 <li>[Column Summaries](grid/summaries.md) based on any data in a grid cell or column</li>
