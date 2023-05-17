@@ -561,10 +561,11 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+    <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {
@@ -864,7 +865,7 @@ Additional components with relative APIs that were used:
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -874,6 +875,7 @@ Additional components with relative APIs that were used:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

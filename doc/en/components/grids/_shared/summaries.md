@@ -590,7 +590,7 @@ By default, summary results, produced by the built-in summary operands, are loca
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');
@@ -602,7 +602,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```typescript
 public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');
@@ -862,7 +862,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Column Data Types](column-types.md#default-template)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -872,6 +872,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

@@ -49,17 +49,27 @@ The simplest way to display the dialog component is to use its `Show` method and
 
 ```razor
 <div class="container vertical">
-    <IgbDialog @ref="_dialog" Title="Dialog Title">
-        <p>This is a sample message.</p>
-        <div slot="footer">
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => _dialog!.Hide())">Close</IgbButton>
-        </div>
+    <IgbButton @onclick="OnDialogShow" Variant=@ButtonVariant.Contained>Show Dialog</IgbButton>
+    <IgbDialog @ref="DialogRef" Title="Confirmation">
+        <p>Are you sure you want to delete the Annual_Report_2016.pdf and Annual_Report_2017.pdf files?</p>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>Cancel</IgbButton>
+        <IgbButton slot="footer" @onclick="OnDialogHide" Variant=@ButtonVariant.Flat>OK</IgbButton>
     </IgbDialog>
-
-    <IgbButton @onclick="@(e => _dialog!.Show())" class="button">
-        Open Dialog
-    </IgbButton>
 </div>
+
+@code {
+    public IgbDialog DialogRef;
+    public void OnDialogShow()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Show();
+    }
+    public void OnDialogHide()
+    {
+        if (this.DialogRef != null)
+            this.DialogRef.Hide();
+    }
+}
 ```
 
 ```html
@@ -80,12 +90,15 @@ Action buttons or additional information can be placed in the bottom part of the
 
 ### Closing
 
-By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `CloseOnEscape` property. The default value is **true**. If there is an open dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
+By default, the Dialog is closed automatically when the user presses `ESC`. You could prevent this behavior using the `KeepOpenOnEscape` property. The default value is **false**. If there is an open dropdown (or any other element that should handle `ESC` internally) in the dialog, pressing `ESC` once will close the dropdown and pressing it again will close the dialog.
 
 Use the `CloseOnOutsideClick` property to configure if the dialog should be closed when clicking outside of it. The default value is **false**.
 
+<!-- Angular, WebComponents -->
+
 `sample="/notifications/dialog/closing-variations", height="400", alt="{Platform} Dialog Closing Variations"`
 
+<!-- end: Angular, WebComponents -->
 
 ### Form
 
@@ -101,13 +114,13 @@ The dialog component exposes several CSS parts (`base`, `title`, `content` and `
 ```css
 igc-dialog::part(content) {
     background: #011627;
-    color:white;
+    color: white;
 }
 
 igc-dialog::part(title),
 igc-dialog::part(footer) {
     background: #011627;
-    color:#ECAA53;
+    color: #ECAA53;
 }
 ```
 
@@ -118,7 +131,7 @@ igc-dialog::part(footer) {
 
 ## API References
 
-- `CloseOnEscape`
+- `KeepOpenOnEscape`
 - `CloseOnOutsideClick`
 - `Hide`
 - `HideDefaultAction`

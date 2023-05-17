@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} の仮想化とパフォーマンス - {ProductName}
-_description: {ProductName} の仮想化ディレクティブは、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
+_description: {ProductName} の仮想化は、大規模なデータセットを処理する際のグリッドのスピードとパフォーマンスの背後にあるコア メカニズムです。無料でお試しください。
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}, {ComponentTitle} パフォーマンス, データ  テーブルの仮想, インフラジスティックス
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
@@ -11,7 +11,7 @@ _language: ja
 
 # {Platform} {ComponentTitle} 仮想化とパフォーマンス
 
-{ProductName} の `{ComponentName}` コントロールは、`igxForOf` ディレクティブを使用し、水平および垂直方向にコンテンツを仮想化します。
+{ProductName} の `{ComponentName}` コントロールは水平および垂直方向にコンテンツを仮想化します。
 
 ## {Platform} {ComponentTitle} 仮想化とパフォーマンスの例
 
@@ -21,7 +21,7 @@ _language: ja
 
 ## 仮想化の有効化
 
-`ForOf` ディレクティブは、ビューポートに表示されているデータのみを描画し、ユーザーがスクロール時に表示データを切り替えた際に `{ComponentName}` が DOM 描画およびメモリ使用を最適化します。`{ComponentName}` の `Width` および `Height` のデフォルト値は `100%` です。コンテンツが利用可能なスペースにフィットせず、垂直方向または水平方向にスクロールバーが必要な場合に仮想化が有効になります。
+`{ComponentName}` は、ビューポートに表示されているデータのみを描画し、ユーザーがスクロール時に表示データを切り替えた際に、DOM 描画およびメモリ使用を最適化します。`{ComponentName}` の `Width` および `Height` のデフォルト値は `100%` です。コンテンツが利用可能なスペースにフィットせず、垂直方向または水平方向にスクロールバーが必要な場合に仮想化が有効になります。
 
 ただし、`{ComponentName}` の `Width` または `Height` を明示的に `null` 値に設定できます。つまり、関連するディメンションが項目の合計サイズに基づいて決定されます。スクロールバーが表示されず、すべての項目が相対するディメンション (`Width` が `null` 値の場合は列で、`Height` が `null` 値の場合は行) に描画されます。
 
@@ -59,7 +59,7 @@ _language: ja
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -68,6 +68,7 @@ _language: ja
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

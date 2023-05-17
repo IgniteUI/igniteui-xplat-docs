@@ -527,7 +527,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -536,6 +536,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

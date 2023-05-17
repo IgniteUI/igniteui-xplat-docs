@@ -58,7 +58,7 @@ Without information about the sizes of the container and the items before render
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -67,6 +67,7 @@ Without information about the sizes of the container and the items before render
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

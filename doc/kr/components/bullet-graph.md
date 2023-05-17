@@ -88,8 +88,8 @@ The following code walks through creating a bullet graph component, and configur
                    width="300"
                    minimumValue="5"
                    maximumValue="55"
-                   value = "35"
-                   targetValue = "43">
+                   value="35"
+                   targetValue="43">
         <igx-linear-graph-range startValue="0"
                                 endValue="15"
                                 Brush="#828181">
@@ -108,10 +108,10 @@ The following code walks through creating a bullet graph component, and configur
 ```tsx
  <IgrBulletGraph height="100"
                    width="300"
-                   minimumValue= {5}
-                   maximumValue= {55}
-                   value = {35}
-                   targetValue = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={35}
+                   targetValue={43}>
         <IgrLinearGraphRange startValue={0}
                                 endValue={15}
                                 Brush="#828181"/>
@@ -130,7 +130,7 @@ The following code walks through creating a bullet graph component, and configur
     minimum-value="5"
     maximum-value="55"
     value="35"
-    target-value = "43">
+    target-value="43">
     <igc-linear-graph-range
       start-value="0"
       end-value="15"
