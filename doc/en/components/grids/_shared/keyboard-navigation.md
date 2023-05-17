@@ -160,6 +160,24 @@ Let's try the API to demonstrate how to achieve common scenarios like user input
 ```
 
 ```razor
+<{ComponentSelector} PrimaryKey="ProductID" GridKeydownScript="WebGridCustomKBNav">
+</{ComponentSelector}>
+
+// In JavaScript
+
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
+
+    if (type === 'dataCell' && target.editMode && evt.key.toLowerCase() === 'tab') {
+        // 1. USER INPUT VALIDATION ON TAB
+    } else if (type === 'dataCell' && evt.key.toLowerCase() === 'enter') {
+        // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+    }
+}, false);
 ```
 
 ```ts
@@ -193,7 +211,7 @@ public customKeydown(args: any) {
 }
 ```
 
-Based on the `IGridKeydownEventArgs` values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
+Based on the event arg values we identified two cases, where to provide our own logic (see above). Now, using the methods from the API, let's perform the desired - if the user is pressing <kbd>Tab</kbd> key over a cell in edit mode, we will perform validation on the input. If the user is pressing <kbd>Enter</kbd> key over a cell, we will move focus to cell in the next row:
 
 ```typescript
     // 1. USER INPUT VALIDATION ON TAB
@@ -207,11 +225,35 @@ Based on the `IGridKeydownEventArgs` values we identified two cases, where to pr
         });
 ```
 
+```razor
+
+// In JavaScript
+
+igRegisterScript("WebGridCustomKBNav", (evtArgs) => {
+    const args = evtArgs.detail;
+    const target = args.target;
+    const evt = args.event;
+    const type = args.targetType;
+    const grid = document.getElementsByTagName("igc-grid")[0];
+
+    // 1. USER INPUT VALIDATION ON TAB
+    if (target.column.dataType === 'number' && target.editValue < 10) {
+        // alert the user that the input is invalid
+        return;
+    }
+    // 2. CUSTOM NAVIGATION ON ENTER KEY PRESS
+    grid.navigateTo(target.row.index + 1, target.column.visibleIndex, (obj) => {
+            obj.target.activate();
+    });
+}, false);
+
+```
+
 > [!Note]
 > Please refer to the sample code for full implementation details.
 
 Use the demo below to try out the custom scenarios that we just implemented:
-- Double click or press <kbd>F2</kbd> key on a cell in the **Order** column, change the value to **7** and press <kbd>Tab</kbd> key. Prompt message will be shown.
+- Double click or press <kbd>F2</kbd> key on a cell in a numeric column, change the value to **7** and press <kbd>Tab</kbd> key. Prompt message will be shown.
 - Select a cell and press <kbd>Enter</kbd> key a couple of times. Every key press will move the focus to a cell in the next row, under the same column.
 
 #### Demo
