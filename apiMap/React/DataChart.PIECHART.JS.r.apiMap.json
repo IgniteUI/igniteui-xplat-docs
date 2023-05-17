@@ -1,5 +1,12 @@
 {"extraFiles":["igr-pie-chart-core-module.ts","igr-pie-chart-module.ts"],
   "types":[
+  { "originalName":"LegendEmptyValuesMode","isEnum":true,
+    "names":[{"platform":"React","fileName":"LegendEmptyValuesMode.ts","mappedName":"LegendEmptyValuesMode"}],
+    "members":[
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysHidden"}],"originalName":"AlwaysHidden"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"AlwaysVisible"}],"originalName":"AlwaysVisible"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"ShowWhenNoOthersCategory"}],"originalName":"ShowWhenNoOthersCategory"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LabelsPosition","isEnum":true,
     "names":[{"platform":"React","fileName":"LabelsPosition.ts","mappedName":"LabelsPosition"}],
     "members":[
@@ -146,6 +153,7 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldDisplayMockData"}],"originalName":"ShouldDisplayMockData"},
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"shouldUseSkeletonStyleForMockData"}],"originalName":"ShouldUseSkeletonStyleForMockData"},
+    { "names":[{"platform":"React","mappedType":"LegendEmptyValuesMode","mappedName":"legendEmptyValuesMode"}],"originalName":"LegendEmptyValuesMode"},
     { "names":[{"platform":"React","mappedType":"(obj: any) => string","mappedName":"formatLabel"}],"originalName":"FormatLabel"},
     { "names":[{"platform":"React","mappedType":"(obj: any) => string","mappedName":"formatLegendLabel"}],"originalName":"FormatLegendLabel"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"pixelScalingRatio"}],"originalName":"PixelScalingRatio"},

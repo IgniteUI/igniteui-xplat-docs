@@ -73,7 +73,7 @@ _language: ja
 
 グループ行は、データ行とともにページング プロセスに関係します。それらは各ページのページ サイズにカウントされます。折りたたまれた行はページング プロセスに含まれません。
 
-ページングとグループ化の統合については、[グループ化](groupby.md#grid-ページングでグループ化)のトピックで説明しています。
+ページングとグループ化の統合については、[グループ化](groupby.md#{PlatformLower}-grid-ページングでグループ化)のトピックで説明しています。
 
 <!-- ComponentEnd: Grid -->
 
@@ -150,7 +150,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### 子グリッド内のページネーター設定
 
+<!-- Angular -->
 `{ComponentName}` の子グリッドの実装方法および DI スコープの動作には一定の制限があるため、`RowIsland` タグ内でページネーターコンポーネントを定義する場合、ページネーター自体で `Paginator` ディレクティブを必ず使用してください。これにより、子グリッドが参照として正しいページネーター インスタンスを持つようになります。
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>
@@ -308,7 +310,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -316,22 +318,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );
@@ -379,6 +381,8 @@ $dark-button: button-theme(
 
 ## その他のリソース
 
+<!-- ComponentStart:  Grid -->
+
 <!-- * [ページネーター](../paginator.md) -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)
@@ -388,6 +392,7 @@ $dark-button: button-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

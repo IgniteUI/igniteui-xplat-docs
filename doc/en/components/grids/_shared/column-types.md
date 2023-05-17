@@ -278,9 +278,9 @@ The default template will show a numeric value with currency symbol that would b
 *By using LOCALE_ID*
 ```ts
 import { LOCALE_ID } from '@angular/core';
-...
+// ...
 
- @Component({
+@Component({
     selector: 'app-component.sample',
     templateUrl: 'grid-component.sample.html',
     providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }]
@@ -374,7 +374,9 @@ constructor() {
 
 *display - for the default en-US locale, the code USD can be represented by the narrow symbol $ or the wide symbol US$.
 
-Upon editing of cell's value the *currency symbol* will be visible as suffix or prefix. More about that could be found in the official [Cell editing topic](cell-editing.md#cell-editing-templates).
+<!-- ComponentStart:  Grid -->
+Upon editing of cell's value the *currency symbol* will be visible as suffix or prefix. More about that could be found in the official [Cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example).
+<!-- ComponentEnd:  Grid -->
 
 > When using up/down arrow keys the value will increment/decrement with a step based on the digitsInfo - minFractionDigits (The minimum number of digits after the decimal point. Default is 0)
 
@@ -461,7 +463,9 @@ constructor() {
 
 ## Default Editing Template
 
+<!-- ComponentStart:  Grid -->
 See the editing templates part of [{ComponentTitle} Editing topic](editing.md#editing-templates)
+<!-- ComponentEnd:  Grid -->
 
 ## Custom Editing Template and Formatter
 
@@ -578,8 +582,10 @@ public init(column: IgxColumnComponent) {
 * `DataType`
 
 ## Additional Resources
+<!-- ComponentStart:  Grid -->
+For custom templates you can see [cell editing topic](cell-editing.md#{PlatformLower}-grid-cell-editing-and-edit-templates-example)
 
-For custom templates you can see [cell editing topic](cell-editing.md#cell-editing-templates)
 
 * [Editing](editing.md)
 * [Summaries](summaries.md)
+<!-- ComponentEnd:  Grid -->

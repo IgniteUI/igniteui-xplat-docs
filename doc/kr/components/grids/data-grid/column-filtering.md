@@ -122,7 +122,7 @@ document.getElementById("filterTextBox").addEventListener("change", this.onFilte
         this.applyFilter();
     }
 
-    public applyFilter(){
+    public applyFilter() {
         this.grid.filterExpressions.clear();
         if (this.filterText === "" || this.filterText === null) {
             return;

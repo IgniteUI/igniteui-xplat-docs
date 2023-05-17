@@ -591,7 +591,7 @@ igRegisterScript("SummaryTemplate", (ctx) => {
 ```typescript
 public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgxDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');
@@ -603,7 +603,7 @@ public dateSummaryFormat(summary: IgxSummaryResult, summaryOperand: IgxSummaryOp
 ```typescript
 public dateSummaryFormat(summary: IgcSummaryResult, summaryOperand: IgcSummaryOperand): string {
     const result = summary.summaryResult;
-    if(summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
+    if (summaryOperand instanceof IgcDateSummaryOperand && summary.key !== 'count'
         && result !== null && result !== undefined) {
         const pipe = new DatePipe('en-US');
         return pipe.transform(result,'MMM YYYY');
@@ -863,7 +863,7 @@ $custom-theme: grid-summary-theme(
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [列のデータ型](column-types.md#デフォルトのテンプレート)
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
@@ -873,6 +873,7 @@ $custom-theme: grid-summary-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 
