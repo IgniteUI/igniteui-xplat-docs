@@ -78,6 +78,7 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
     let isInterface = false;
     let isEnum = false;
     let platform = <APIPlatform>options.platform;
+    let packageName: string | null = null;
 
     if (!(typeName.indexOf(options.platformPascalPrefix) == 0)) {
         resolvedTypeName = mappings.getPlatformTypeName(typeName, <APIPlatform>options.platform);
@@ -89,6 +90,10 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                 } else {
                     //todo: interfaces.
                     isClass = true;
+                }
+
+                if (typeInfo.packageName) {
+                    packageName = typeInfo.packageName;
                 }
             }
         }
@@ -122,12 +127,26 @@ function getApiLink(apiRoot: string, typeName: string, memberName: string | null
                 }
             }
 
+            let packageText = "";
+            if (packageName) {
+                if (packageName == "igniteui-webgrids") {
+                    packageText = "igniteui_" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "_grids_grids."
+                } else if (packageName == "igniteui-webinputs") {
+                    packageText = "";
+                } else {
+                    packageText = packageName;
+                    packageText = packageText.replace("igniteui-", "igniteui-" + getPlatformName(<APIPlatform>options.platform).toLowerCase() + "-");
+                    packageText = packageText.replace(/-/gm, "_");
+                    packageText += ".";
+                }
+            }
+
             if (isClass) {
-                linkText = apiRoot + "classes/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "classes/" + packageText + resolvedTypeName.toLowerCase() + ".html";
             } else if (isEnum) {
-                linkText = apiRoot + "enums/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "enums/" + + packageText + resolvedTypeName.toLowerCase() + ".html";
             } else if (isInterface) {
-                linkText = apiRoot + "interfaces/" + resolvedTypeName.toLowerCase() + ".html";
+                linkText = apiRoot + "interfaces/" + packageText + resolvedTypeName.toLowerCase() + ".html";
             }
         }
     }

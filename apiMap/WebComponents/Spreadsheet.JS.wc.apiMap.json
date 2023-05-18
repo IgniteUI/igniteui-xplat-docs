@@ -3,7 +3,7 @@
   { "originalName":"SpreadsheetChartAdapterBase",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetChartAdapterBase.ts","mappedName":"SpreadsheetChartAdapterBase"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids"},
   { "originalName":"Spreadsheet",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-component.ts","mappedName":"IgcSpreadsheetComponent"}],
     "members":[
@@ -40,11 +40,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"executeAction"}],"originalName":"ExecuteCommand"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"styleUpdated"}],"originalName":"StyleUpdated"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetContextMenuOpeningEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-context-menu-opening-event-args.ts","mappedName":"IgcSpreadsheetContextMenuOpeningEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetContextMenuArea","mappedName":"menuArea"}],"originalName":"MenuArea"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetContextMenuArea","mappedName":"menuArea"}],"originalName":"MenuArea"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCell",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCell.ts","mappedName":"SpreadsheetCell"}],
     "members":[
@@ -53,7 +53,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"row"}],"originalName":"Row"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"column"}],"originalName":"Column"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"equals"}],"originalName":"Equals"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRange",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellRange.ts","mappedName":"SpreadsheetCellRange"}],
     "members":[
@@ -70,7 +70,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"intersectsWith"}],"originalName":"IntersectsWith"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellRange","mappedName":"union"}],"originalName":"Union"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"equals"}],"originalName":"Equals"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetSelection",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetSelection.ts","mappedName":"SpreadsheetSelection"}],
     "members":[
@@ -82,7 +82,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"clearCellRanges"}],"originalName":"ClearCellRanges"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"resetSelection"}],"originalName":"ResetSelection"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"setActiveCell"}],"originalName":"SetActiveCell"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"unselectRange"}],"originalName":"UnselectRange"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"unselectRange"}],"originalName":"UnselectRange"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandType","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetAction.ts","mappedName":"SpreadsheetAction"}],
     "members":[
@@ -290,14 +290,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetAction","mappedName":"showCellDropDown"}],"originalName":"ShowCellDropDown"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetAction","mappedName":"pickFromDropDownList"}],"originalName":"PickFromDropDownList"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetAction","mappedName":"showCustomSortDialog"}],"originalName":"ShowCustomSortDialog"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellEditMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellEditMode.ts","mappedName":"SpreadsheetCellEditMode"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellEditMode","mappedName":"notInEditMode"}],"originalName":"NotInEditMode"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellEditMode","mappedName":"arrowKeysNavigateBetweenCells"}],"originalName":"ArrowKeysNavigateBetweenCells"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellEditMode","mappedName":"arrowKeysNavigateInCell"}],"originalName":"ArrowKeysNavigateInCell"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRangeBorders","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellRangeBorders.ts","mappedName":"SpreadsheetCellRangeBorders"}],
     "members":[
@@ -312,14 +312,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellRangeBorders","mappedName":"outsideBorder"}],"originalName":"OutsideBorder"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellRangeBorders","mappedName":"insideBorder"}],"originalName":"InsideBorder"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellRangeBorders","mappedName":"allBorder"}],"originalName":"AllBorder"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellSelectionMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellSelectionMode.ts","mappedName":"SpreadsheetCellSelectionMode"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellSelectionMode","mappedName":"normal"}],"originalName":"Normal"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellSelectionMode","mappedName":"extendSelection"}],"originalName":"ExtendSelection"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellSelectionMode","mappedName":"addToSelection"}],"originalName":"AddToSelection"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetContextMenuArea","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetContextMenuArea.ts","mappedName":"SpreadsheetContextMenuArea"}],
     "members":[
@@ -331,7 +331,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetContextMenuArea","mappedName":"formulaBarEditor"}],"originalName":"FormulaBarEditor"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetContextMenuArea","mappedName":"selectAllButton"}],"originalName":"SelectAllButton"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetContextMenuArea","mappedName":"tableCell"}],"originalName":"TableCell"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeValidationErrorAction","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetEditModeValidationErrorAction.ts","mappedName":"SpreadsheetEditModeValidationErrorAction"}],
     "members":[
@@ -339,7 +339,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"stayInEditMode"}],"originalName":"StayInEditMode"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"revertChange"}],"originalName":"RevertChange"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"acceptChange"}],"originalName":"AcceptChange"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEnterKeyNavigationDirection","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetEnterKeyNavigationDirection.ts","mappedName":"SpreadsheetEnterKeyNavigationDirection"}],
     "members":[
@@ -347,7 +347,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"right"}],"originalName":"Right"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"up"}],"originalName":"Up"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEnterKeyNavigationDirection","mappedName":"left"}],"originalName":"Left"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetUserPromptTrigger","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetUserPromptTrigger.ts","mappedName":"SpreadsheetUserPromptTrigger"}],
     "members":[
@@ -384,77 +384,77 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"largePasteOperation"}],"originalName":"LargePasteOperation"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"invalidSortOrFilterRange"}],"originalName":"InvalidSortOrFilterRange"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"largeCopyOperation"}],"originalName":"LargeCopyOperation"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveCellChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-active-cell-changed-event-args.ts","mappedName":"IgcSpreadsheetActiveCellChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActivePaneChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-active-pane-changed-event-args.ts","mappedName":"IgcSpreadsheetActivePaneChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetPane","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetPane","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetPane","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveTableChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-active-table-changed-event-args.ts","mappedName":"IgcSpreadsheetActiveTableChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"WorksheetTable","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"WorksheetTable","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"WorksheetTable","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetActiveWorksheetChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-active-worksheet-changed-event-args.ts","mappedName":"IgcSpreadsheetActiveWorksheetChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"Worksheet","mappedName":"newValue"}],"originalName":"NewValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"Worksheet","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"Worksheet","mappedName":"oldValue"}],"originalName":"OldValue"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandExecutedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-action-executed-event-args.ts","mappedName":"IgcSpreadsheetActionExecutedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetAction","mappedName":"command"}],"originalName":"Command"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCommandExecutingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-action-executing-event-args.ts","mappedName":"IgcSpreadsheetActionExecutingEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetAction","mappedName":"command"}],"originalName":"Command"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"commandParameter"}],"originalName":"CommandParameter"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeExitingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-mode-exiting-event-args.ts","mappedName":"IgcSpreadsheetEditModeExitingEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"acceptChanges"}],"originalName":"AcceptChanges"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"canCancel"}],"originalName":"CanCancel"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editText"}],"originalName":"EditText"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"editText"}],"originalName":"EditText"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeExitedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-mode-exited-event-args.ts","mappedName":"IgcSpreadsheetEditModeExitedEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeEnteringEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-mode-entering-event-args.ts","mappedName":"IgcSpreadsheetEditModeEnteringEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeEnteredEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-mode-entered-event-args.ts","mappedName":"IgcSpreadsheetEditModeEnteredEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditModeValidationErrorEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-mode-validation-error-event-args.ts","mappedName":"IgcSpreadsheetEditModeValidationErrorEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetEditModeValidationErrorAction","mappedName":"action"}],"originalName":"Action"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"canStayInEditMode"}],"originalName":"CanStayInEditMode"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCell","mappedName":"cell"}],"originalName":"Cell"},
-    { "names":[{"platform":"WebComponents","mappedType":"DataValidationRule","mappedName":"validationRule"}],"originalName":"ValidationRule"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"DataValidationRule","mappedName":"validationRule"}],"originalName":"ValidationRule"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetEditRangePasswordNeededEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-edit-range-password-needed-event-args.ts","mappedName":"IgcSpreadsheetEditRangePasswordNeededEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"WorksheetProtectedRange[]","mappedName":"ranges"}],"originalName":"Ranges"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"unprotect"}],"originalName":"Unprotect"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"unprotect"}],"originalName":"Unprotect"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetHyperlinkExecutingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-hyperlink-executing-event-args.ts","mappedName":"IgcSpreadsheetHyperlinkExecutingEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"WorksheetHyperlink","mappedName":"hyperlink"}],"originalName":"Hyperlink"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"workingDirectory"}],"originalName":"WorkingDirectory"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"workingDirectory"}],"originalName":"WorkingDirectory"}],"originalBaseTypeName":"CancelEventArgs","originalBaseTypeNamespace":"System.ComponentModel","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetSelectionChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-selection-changed-event-args.ts","mappedName":"IgcSpreadsheetSelectionChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetPane","mappedName":"pane"}],"originalName":"Pane"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetPane","mappedName":"pane"}],"originalName":"Pane"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetUserPromptDisplayingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-user-prompt-displaying-event-args.ts","mappedName":"IgcSpreadsheetUserPromptDisplayingEventArgs"}],
     "members":[
@@ -464,9 +464,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"displayMessage"}],"originalName":"DisplayMessage"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"exception"}],"originalName":"Exception"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"message"}],"originalName":"Message"},
-    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"trigger"}],"originalName":"Trigger"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetUserPromptTrigger","mappedName":"trigger"}],"originalName":"Trigger"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetWorkbookDirtiedEventArgs",
-    "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-workbook-dirtied-event-args.ts","mappedName":"IgcSpreadsheetWorkbookDirtiedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"WebComponents","fileName":"igc-spreadsheet-workbook-dirtied-event-args.ts","mappedName":"IgcSpreadsheetWorkbookDirtiedEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetCellRangeFormat",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellRangeFormat.ts","mappedName":"SpreadsheetCellRangeFormat"}],
     "members":[
@@ -481,9 +481,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"WorkbookStyle","mappedName":"style"}],"originalName":"Style"},
     { "names":[{"platform":"WebComponents","mappedType":"VerticalCellAlignment","mappedName":"verticalAlignment"}],"originalName":"VerticalAlignment"},
     { "names":[{"platform":"WebComponents","mappedType":"Nullable","mappedName":"wrapText"}],"originalName":"WrapText"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"setBorders"}],"originalName":"SetBorders"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"setBorders"}],"originalName":"SetBorders"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetColumnScrollRegion",
-    "names":[{"platform":"WebComponents","fileName":"SpreadsheetColumnScrollRegion.ts","mappedName":"SpreadsheetColumnScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"WebComponents","fileName":"SpreadsheetColumnScrollRegion.ts","mappedName":"SpreadsheetColumnScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetPane",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetPane.ts","mappedName":"SpreadsheetPane"}],
     "members":[
@@ -494,9 +494,9 @@
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"scrollCellIntoView"}],"originalName":"ScrollCellIntoView"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"scrollColumnIntoView"}],"originalName":"ScrollColumnIntoView"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"scrollRangeIntoView"}],"originalName":"ScrollRangeIntoView"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"scrollRowIntoView"}],"originalName":"ScrollRowIntoView"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"scrollRowIntoView"}],"originalName":"ScrollRowIntoView"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetRowScrollRegion",
-    "names":[{"platform":"WebComponents","fileName":"SpreadsheetRowScrollRegion.ts","mappedName":"SpreadsheetRowScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    "names":[{"platform":"WebComponents","fileName":"SpreadsheetRowScrollRegion.ts","mappedName":"SpreadsheetRowScrollRegion"}],"members":[],"originalBaseTypeName":"SpreadsheetScrollRegion","originalBaseTypeNamespace":"Infragistics.Controls.Grids.Core","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetScrollRegion",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetScrollRegion.ts","mappedName":"SpreadsheetScrollRegion"}],
     "members":[
@@ -504,7 +504,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"actualExtent"}],"originalName":"ActualExtent"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"endIndex"}],"originalName":"EndIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isFrozen"}],"originalName":"IsFrozen"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"startIndex"}],"originalName":"StartIndex"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"startIndex"}],"originalName":"StartIndex"}],"originalBaseTypeName":"PropertyChangeNotifierExtended","originalBaseTypeNamespace":"Infragistics","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"SpreadsheetResourceId","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetResourceId.ts","mappedName":"SpreadsheetResourceId"}],
     "members":[
@@ -581,12 +581,12 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetResourceId","mappedName":"dropDownButtonOpenForeground"}],"originalName":"DropDownButtonOpenForeground"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetResourceId","mappedName":"unselectCellsFill"}],"originalName":"UnselectCellsFill"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetResourceId","mappedName":"unselectCellsBorder"}],"originalName":"UnselectCellsBorder"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core"},
   { "originalName":"PaletteEntry",
     "names":[{"platform":"WebComponents","fileName":"PaletteEntry.ts","mappedName":"PaletteEntry"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"WorkbookColorInfo","mappedName":"colorInfo"}],"originalName":"ColorInfo"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"color"}],"originalName":"Color"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"color"}],"originalName":"Color"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"SpreadsheetFilterDialogOption","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetFilterDialogOption.ts","mappedName":"SpreadsheetFilterDialogOption"}],
     "members":[
@@ -604,7 +604,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetFilterDialogOption","mappedName":"doesNotContain"}],"originalName":"DoesNotContain"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetFilterDialogOption","mappedName":"between"}],"originalName":"Between"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetFilterDialogOption","mappedName":"custom"}],"originalName":"Custom"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"ComboBoxListItem",
     "names":[{"platform":"WebComponents","fileName":"ComboBoxListItem.ts","mappedName":"ComboBoxListItem"}],
     "members":[
@@ -612,18 +612,18 @@
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"dataValue"}],"originalName":"DataValue"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"displayText"}],"originalName":"DisplayText"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"tag"}],"originalName":"Tag"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"EnumWrapper",
     "names":[{"platform":"WebComponents","fileName":"EnumWrapper`1.ts","mappedName":"EnumWrapper`1"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"toString"}],"originalName":"ToString"},
     { "names":[{"platform":"WebComponents","mappedType":"tEnum","mappedName":"enumValue"}],"originalName":"EnumValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"enumValueNameLocalized"}],"originalName":"EnumValueNameLocalized"}],"originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"enumValueNameLocalized"}],"originalName":"EnumValueNameLocalized"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.Core.Dialogs"},
   { "originalName":"SpreadsheetVisualDataBase",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetVisualDataBase.ts","mappedName":"SpreadsheetVisualDataBase"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetVisualData.ts","mappedName":"SpreadsheetVisualData"}],
     "members":[
@@ -632,7 +632,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetCellAreaVisualDataList","mappedName":"cellAreas"}],"originalName":"CellAreas"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetHeaderAreaVisualDataList","mappedName":"rowHeaderAreas"}],"originalName":"RowHeaderAreas"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetHeaderAreaVisualDataList","mappedName":"columnHeaderAreas"}],"originalName":"ColumnHeaderAreas"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetHeaderAreaVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetHeaderAreaVisualData.ts","mappedName":"SpreadsheetHeaderAreaVisualData"}],
     "members":[
@@ -640,11 +640,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"items"}],"originalName":"Items"},
     { "names":[{"platform":"WebComponents","mappedType":"PrimitiveVisualDataList","mappedName":"shapes"}],"originalName":"Shapes"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetHeaderAreaVisualDataList",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetHeaderAreaVisualDataList.ts","mappedName":"SpreadsheetHeaderAreaVisualDataList"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetCellAreaVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellAreaVisualData.ts","mappedName":"SpreadsheetCellAreaVisualData"}],
     "members":[
@@ -653,11 +653,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"columns"}],"originalName":"Columns"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetRowColumnVisualDataList","mappedName":"rows"}],"originalName":"Rows"},
     { "names":[{"platform":"WebComponents","mappedType":"PrimitiveVisualDataList","mappedName":"shapes"}],"originalName":"Shapes"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetCellAreaVisualDataList",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetCellAreaVisualDataList.ts","mappedName":"SpreadsheetCellAreaVisualDataList"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetRowColumnVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetRowColumnVisualData.ts","mappedName":"SpreadsheetRowColumnVisualData"}],
     "members":[
@@ -665,18 +665,18 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"offset"}],"originalName":"Offset"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"extent"}],"originalName":"Extent"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetRowColumnVisualDataList",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetRowColumnVisualDataList.ts","mappedName":"SpreadsheetRowColumnVisualDataList"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabItemAreaVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetTabItemAreaVisualData.ts","mappedName":"SpreadsheetTabItemAreaVisualData"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"},
     { "names":[{"platform":"WebComponents","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"WebComponents","mappedType":"SpreadsheetTabVisualDataList","mappedName":"tabs"}],"originalName":"Tabs"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabVisualData",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetTabVisualData.ts","mappedName":"SpreadsheetTabVisualData"}],
     "members":[
@@ -688,8 +688,8 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSelected"}],"originalName":"IsSelected"},
     { "names":[{"platform":"WebComponents","mappedType":"RectData","mappedName":"relativeBounds"}],"originalName":"RelativeBounds"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"serialize"}],"originalName":"Serialize"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetVisualDataBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids.VisualData","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"},
   { "originalName":"SpreadsheetTabVisualDataList",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetTabVisualDataList.ts","mappedName":"SpreadsheetTabVisualDataList"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","originalNamespace":"Infragistics.Controls.Grids.VisualData"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"List","originalBaseTypeNamespace":"System.Collections.Generic","packageName":"igniteui-spreadsheet","originalNamespace":"Infragistics.Controls.Grids.VisualData"}]}

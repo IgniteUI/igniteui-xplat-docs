@@ -9,4 +9,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"filterPlaceholderText"}],"originalName":"FilterPlaceholderText"},
     { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"baseTheme"}],"originalName":"BaseTheme"},
     { "names":[{"platform":"WebComponents","mappedType":"ControlDisplayDensity","mappedName":"density"}],"originalName":"Density"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"backgroundColor"}],"originalName":"BackgroundColor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
