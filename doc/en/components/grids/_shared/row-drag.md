@@ -246,6 +246,7 @@ We define a reference to each of our grids via the **ViewChild** decorator and t
 > [!Note]
 > When using row data from the event arguments (**args.dragData.data**) or any other row property, note that the entire row is passed in the arguments as a reference, which means that you must clone the data you need, if you want to distinguish it from the one in the source grid.
 
+<!-- Angular -->
 
 ### Templating the Drag Ghost
 
@@ -277,12 +278,14 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 ```
 
 The result of the configuration can be seem below in a `{ComponentName}` with row dragging and multiple selection enabled. The demo shows the count of the currently dragged rows:
+<!-- end: Angular -->
 
 #### Example Demo
 
 <!-- ComponentStart: HierarchicalGrid -->
 
 The drag ghost can be templated on every grid level, making it possible to have multiple ghost templates or to only provide a template for a single row island.
+
 
 ```html
 <{ComponentSelector}>
@@ -304,12 +307,16 @@ The drag ghost can be templated on every grid level, making it possible to have 
 
 
 
+<!-- end: Angular -->
+
+
 ### Templating the Drag Icon
 
 The drag handle icon can be templated using the grid's `DragIndicatorIconTemplate`. In the example we're building, let's change the icon from the default one (**drag_indicator**) to **drag_handle**.
 
 To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{ComponentSelector}`'s body:
 
+<!-- Angular -->
 ```html
 <{ComponentSelector}>
     <ng-template igxDragIndicatorIcon>
@@ -317,6 +324,14 @@ To do so, we can use the `DragIndicatorIcon` to pass a template inside of the `{
     </ng-template>
 </{ComponentSelector}>
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+
+```html
+<{ComponentSelector} row-draggable="true">
+</{ComponentSelector}>
+``
 
 ```ts
 constructor() {
@@ -328,10 +343,12 @@ constructor() {
     this._bind();
 }
 
-public dragIndicatorIconTemplate = (ctx: IgcDragIndicatorIconContext) => {
-    return html`<igc-icon>drag_handle</igc-icon>`;
+public dragIndicatorIconTemplate = (ctx: IgcGridEmptyTemplateContext) => {
+    return html`<igc-icon name="drag_handle" collection="material"></igc-icon>`;
 }
 ```
+
+<!-- end: WebComponents -->
 
 Once we've set the new icon template, we also need to adjust the **DEFAULT** icon in our **DragIcon enum**, so it's properly change by the `ChangeIcon` method:
 
@@ -341,6 +358,7 @@ enum DragIcon {
 }
 ```
 <!-- ComponentStart: TreeGrid, HierarchicalGrid -->
+
 
 <!-- Angular -->
 
@@ -387,10 +405,13 @@ The result of the configuration can be seem below:
 
 `sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} Row Drag"`
 
+<!-- end: Angular -->
 
 ## Application Demo
 
 <!-- ComponentStart: Grid -->
+
+<!-- Angular -->
 
 ### Using Row Drag Events
 
@@ -406,6 +427,8 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 
 <!-- ComponentEnd: Grid -->
+
+<!-- end: Angular -->
 
 ### Row Reordering Demo
 
@@ -428,7 +451,7 @@ constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
 
     this._bind = () => {
-        grid.dropped = this.onDropAllowed;
+         grid.addEventListener("rowDragEnd", this.webGridReorderRowHandler)
     }
     this._bind();
 }
@@ -474,28 +497,30 @@ Below, you can see this implemented:
 <!-- ComponentStart: Grid -->
 
 ```typescript
-export class GridRowReorderComponent {
-    public onDropAllowed(args) {
-        const event = args.originalEvent;
-        const currRowIndex = this.getCurrentRowIndex(this.grid.rowList.toArray(),
-            { x: event.clientX, y: event.clientY });
+    public webGridReorderRowHandler(args: CustomEvent<IgcRowDragEndEventArgs>): void {
+        const ghostElement = args.detail.dragDirective.ghostElement;
+        const dragElementPos = ghostElement.getBoundingClientRect();
+        const grid = document.getElementsByTagName("igc-grid")[0] as any;
+        const rows = Array.prototype.slice.call(document.getElementsByTagName("igx-grid-row"));
+        const currRowIndex = this.getCurrentRowIndex(rows,
+        { x: dragElementPos.x, y: dragElementPos.y });
         if (currRowIndex === -1) { return; }
-        this.grid.deleteRow(args.dragData.key);
-        this.data.splice(currRowIndex, 0, args.dragData.data);
+        // remove the row that was dragged and place it onto its new location
+        grid.deleteRow(args.detail.dragData.key);
+        grid.data.splice(currRowIndex, 0, args.detail.dragData.data);
     }
-
-    private getCurrentRowIndex(rowList, cursorPosition) {
+        
+    public getCurrentRowIndex(rowList: any[], cursorPosition) {
         for (const row of rowList) {
-            const rowRect = row.nativeElement.getBoundingClientRect();
+            const rowRect = row.getBoundingClientRect();
             if (cursorPosition.y > rowRect.top + window.scrollY && cursorPosition.y < rowRect.bottom + window.scrollY &&
                 cursorPosition.x > rowRect.left + window.scrollX && cursorPosition.x < rowRect.right + window.scrollX) {
-                return this.data.indexOf(this.data.find((r) => r.rowID === row.rowID));
+                // return the index of the targeted row
+                return parseInt(row.attributes["data-rowindex"].value);
             }
         }
-
         return -1;
     }
-}
 ```
 
 <!-- ComponentEnd: Grid -->
@@ -645,6 +670,8 @@ Notice that we also have row selection enabled and we preserve the selection whe
 
 <!-- ComponentStart: Grid -->
 
+<!-- Angular -->
+
 ### Improving UX in Row Drag Scenarios
 
 Being able to obtain the row index which is currently below the cursor provides you with the opportunity to build rich custom functionalities and to improve the UX of your application. For example, you can change the drag ghost or display a drop indicator, based on the position of the dragged row over the grid. Another useful behavior that you can achieve that way is to scroll the grid up or down while dragging a row, when reaching the border of the grid.
@@ -750,8 +777,6 @@ class MyRowGhostComponent {
     }
 }
 ```
-
-<!-- Angular -->
 
 #### Displaying a Drop Indicator based on Cursor Position
 
