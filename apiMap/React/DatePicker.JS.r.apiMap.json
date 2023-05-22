@@ -15,7 +15,7 @@
     { "names":[{"platform":"React","mappedType":"any","mappedName":"_timeShortFormat"}],"originalName":"_timeShortFormat"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"formatDate"}],"originalName":"FormatDate"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"getPattern"}],"originalName":"GetPattern"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs"},
   { "originalName":"DatePicker",
     "names":[{"platform":"React","fileName":"igr-date-picker.ts","mappedName":"IgrDatePicker"}],
     "members":[
@@ -42,14 +42,14 @@
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isDisabled"}],"originalName":"IsDisabled"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"select"}],"originalName":"Select"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"exportVisualModel"}],"originalName":"ExportVisualModel"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualModel"}],"originalName":"ExportSerializedVisualModel"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"GotFocusEventArgs",
-    "names":[{"platform":"React","fileName":"igr-got-focus-event-args.ts","mappedName":"IgrGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    "names":[{"platform":"React","fileName":"igr-got-focus-event-args.ts","mappedName":"IgrGotFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"LostFocusEventArgs",
-    "names":[{"platform":"React","fileName":"igr-lost-focus-event-args.ts","mappedName":"IgrLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    "names":[{"platform":"React","fileName":"igr-lost-focus-event-args.ts","mappedName":"IgrLostFocusEventArgs"}],"members":[],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"DateFormats","isEnum":true,
     "names":[{"platform":"React","fileName":"DateFormats.ts","mappedName":"DateFormats"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"DateFormats","mappedName":"DateShort"}],"originalName":"DateShort"},
     { "names":[{"platform":"React","mappedType":"DateFormats","mappedName":"DateLong"}],"originalName":"DateLong"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-inputs","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

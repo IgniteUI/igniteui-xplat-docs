@@ -129,6 +129,10 @@ export class MappingLoader {
             }
         }
 
+        if (source.packageName) {
+            target.packageName = source.packageName;
+        }
+
         if (source.names) {
             if (!target.names) {
                 target.names = [];
@@ -252,6 +256,7 @@ export interface APITypeInfo {
     originalBaseTypeNamespace?: string;
     originalName: string;
     originalNamespace: string;
+    packageName: string;
     members?: APIMemberInfo[];
     names: APIPlatformNameGroup[];
     isEnum: boolean;
