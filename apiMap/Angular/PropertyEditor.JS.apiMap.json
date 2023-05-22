@@ -23,4 +23,4 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grids.Implementation"}]}
