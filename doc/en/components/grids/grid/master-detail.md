@@ -17,7 +17,6 @@ This mode is useful when you need to display master-detail style data in a hiera
 `sample="/{GridSample}/master-detail", height="600", alt="{Platform} {ComponentTitle} Master Detail Example"`
 
 
-
 ## Configuration
 
 To configure the `Grid` to display in master-detail mode you need to specify a template for the grid:
@@ -46,7 +45,6 @@ constructor() {
     <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
 ```
 
-
 Context of the template is the master record data, so that values from the master record can be displayed in the detail template. For example:
 
 ```html
@@ -64,12 +62,9 @@ Context of the template is the master record data, so that values from the maste
     public masterDetailTemplate = (ctx: IgcGridMasterDetailContext) => {
         var data = (ctx as any)["$implicit"];
         return html` <div class="contact-container">
-        <span><strong>Name:</strong> ${data.ContactName}</span>
-        <br />
-        <span><strong>Title:</strong> ${data.ContactTitle}</span>
-        <br />
-        <span><strong>Company:</strong> ${data.CompanyName}</span>
-        <br />
+        <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
+        <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
+        <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
     </div>`;
     }
 ```
@@ -80,12 +75,9 @@ igRegisterScript("DetailTemplate", (ctx) => {
     var html = window.igTemplating.html;
     var data = ctx["$implicit"];
     return html` <div class="contact-container">
-        <span><strong>Name:</strong> ${data.ContactName}</span>
-        <br />
-        <span><strong>Title:</strong> ${data.ContactTitle}</span>
-        <br />
-        <span><strong>Company:</strong> ${data.CompanyName}</span>
-        <br />
+        <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
+        <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
+        <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
     </div>`;
 }, false);
 ```
@@ -114,14 +106,14 @@ Additional API methods for controlling the expansion states are also exposed:
 
 - When focus is on a detail row:
 
-    - `Arrow Up` - navigates one row up, focusing a cell from the previous row.
-    - `Arrow Down` -  navigates one row down, focusing a cell from the next row.
-    - `Tab` - Allows focus to move to the next focusable element inside the template if there are focusable elements, otherwise moves to the next grid row.
-    - `Shift + Tab` -  moves the focus to the previous row.
+    - <kbd>🡑</kbd> - navigates one row up, focusing a cell from the previous row.
+    - <kbd>🡓</kbd> -  navigates one row down, focusing a cell from the next row.
+    - <kbd>Tab</kbd> - Allows focus to move to the next focusable element inside the template if there are focusable elements, otherwise moves to the next grid row.
+    - <kbd>Shift + <kbd>Tab</kbd> -  moves the focus to the previous row.
 
 - When focus is on a data row with expander:
-    - `Alt + Arrow Right/ Down` - expands the row.
-    - `Alt + Arrow Left/Down` - collapses the row.
+    - <kbd>Alt</kbd> + <kbd>🡒</kbd> or <kbd>Alt</kbd> + <kbd>🡓</kbd> - expands the row.
+    - <kbd>Alt</kbd> + <kbd>🡐</kbd> or <kbd>Alt</kbd> + <kbd>🡑</kbd> - collapses the row.
 
 ## Known Issues and Limitations
 
