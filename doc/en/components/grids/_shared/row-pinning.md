@@ -62,7 +62,7 @@ The built-in row pinning UI is enabled by adding an `ActionStrip` component with
 <{ComponentSelector} auto-generate="false">
     <igc-column field="field" header="field">
     </igc-column>
-    <igc-action-strip #actionStrip>
+    <igc-action-strip>
         <igc-grid-pinning-actions></igc-grid-pinning-actions>
         <igc-grid-editing-actions></igc-grid-editing-actions>
     </igc-action-strip>
@@ -112,20 +112,16 @@ A row is pinned below the last pinned row. Changing the order of the pinned rows
 ```
 ```ts
 constructor() {
-    var grid1 = this.grid1 = document.getElementById('grid1') as IgcGridComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        grid1.rowPinning = this.rowPinning;
-    }
-    this._bind();
+    var grid1 = document.getElementById('grid1') as IgcGridComponent;
+    grid1.data = this.data;
+    grid1.addEventListener("rowPinning", this.rowPinning);
 }
 ```
 <!-- end: WebComponents -->
 
 ```typescript
 public rowPinning(event) {
-    event.insertAtIndex = 0;
+    event.detail.insertAtIndex = 0;
 }
 ```
 
@@ -170,7 +166,7 @@ public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
 
 ```typescript
-var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+var grid = document.getElementById('dataGrid') as IgcGridComponent;
 grid.pinning = { rows: RowPinningPosition.Bottom };
 ```
 <!-- end: WebComponents -->
@@ -241,34 +237,22 @@ This can be done by adding an extra column with a cell template containing the c
 
 <!-- WebComponents -->
 ```html
-<{ComponentSelector} id="grid" primary-key]="ID" auto-generate="false">
+<{ComponentSelector} id="grid" primary-key="ID" auto-generate="false">
     <igc-column id="column" width="70px">
-        <ng-template igxCell let-cell="cell" let-val>
-            <igx-icon class="pin-icon" (mousedown)="togglePinning(cell.row, $event)">
-                {{cell.row.pinned ? 'lock' : 'lock_open'}}
-            </igx-icon>
-        </ng-template>
     </igc-column>
 </{ComponentSelector}>
 ```
 ```ts
 constructor() {
-    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-    var column = this.column = document.getElementById('column') as IgcColumnComponent;
-
-    this._bind = () => {
-        grid1.data = this.data;
-        column.bodyTemplate = this.cellPinCellTemplate;
-    }
-    this._bind();
+    var grid = document.getElementById('grid') as IgcGridComponent;
+    var column = document.getElementById('column') as IgcColumnComponent;
+    grid.data = this.data;
+    column.bodyTemplate = this.cellPinCellTemplate;
 }
 
 public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
-    return html`
-    <igc-icon class="pin-icon" mousedown="${this.togglePinning(ctx.cell.row, $event)}">
-        ${ctx.cell.row.pinned ? 'lock' : 'lock_open'}
-    </igc-icon>
-            `;
+const index = ctx.cell.id.rowIndex;
+return html`<span @pointerdown=${(e: any) => this.toggleRowPin(index)}>📌</span>`
 }
 ```
 <!-- end: WebComponents -->
@@ -276,13 +260,9 @@ public cellPinCellTemplate = (ctx: IgcCellTemplateContext) => {
 On click of the custom icon the pin state of the related row can be changed using the row's API methods.
 
 ```typescript
-public togglePinning(row: IgxGridRow, event) {
-    event.preventDefault();
-    if (row.pinned) {
-        row.unpin();
-    } else {
-        row.pin();
-    }
+public toggleRowPin(index: number) {
+    const grid = document.getElementsByTagName("igc-grid")[0] as IgcGridComponent;
+    grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
 }
 ```
 
