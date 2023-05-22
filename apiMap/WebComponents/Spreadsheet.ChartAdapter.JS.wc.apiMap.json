@@ -3,4 +3,4 @@
   { "originalName":"SpreadsheetChartAdapter",
     "names":[{"platform":"WebComponents","fileName":"SpreadsheetChartAdapter.ts","mappedName":"SpreadsheetChartAdapter"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetChartAdapterBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids","originalNamespace":"Infragistics.Controls.Grids"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalBaseTypeName":"SpreadsheetChartAdapterBase","originalBaseTypeNamespace":"Infragistics.Controls.Grids","packageName":"igniteui-spreadsheet-chart-adapter","originalNamespace":"Infragistics.Controls.Grids"}]}

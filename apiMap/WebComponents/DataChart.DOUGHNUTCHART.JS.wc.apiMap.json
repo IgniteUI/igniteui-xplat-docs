@@ -3,12 +3,12 @@
   { "originalName":"HierarchicalRingSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-hierarchical-ring-series-component.ts","dynamicModuleName":"igc-hierarchical-ring-series-dynamic-module.ts","moduleName":"igc-hierarchical-ring-series-module.ts","mappedName":"IgcHierarchicalRingSeriesComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"childrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"childrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HoleDimensionsChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-hole-dimensions-changed-event-args.ts","mappedName":"IgcHoleDimensionsChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"IgPoint","mappedName":"center"}],"originalName":"Center"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Ring",
     "names":[{"platform":"WebComponents","fileName":"igc-ring.ts","mappedName":"IgcRing"}],
     "members":[
@@ -19,11 +19,11 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcRingSeriesBaseComponent","mappedName":"ringSeries"}],"originalName":"RingSeries"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"ringBreadth"}],"originalName":"RingBreadth"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"renderArcs"}],"originalName":"RenderArcs"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"prepareArcs"}],"originalName":"PrepareArcs"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"prepareArcs"}],"originalName":"PrepareArcs"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-ring-series-component.ts","dynamicModuleName":"igc-ring-series-dynamic-module.ts","moduleName":"igc-ring-series-module.ts","mappedName":"IgcRingSeriesComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"IgcRing","mappedName":"ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcRing","mappedName":"ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeriesBase",
     "names":[{"platform":"WebComponents","fileName":"igc-ring-series-base-component.ts","mappedName":"IgcRingSeriesBaseComponent"}],
     "members":[
@@ -79,7 +79,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"labelInnerColor"}],"originalName":"LabelInnerColor"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusFactor"}],"originalName":"RadiusFactor"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamDoughnutChart",
     "names":[{"platform":"WebComponents","fileName":"igc-doughnut-chart-component.ts","mappedName":"IgcDoughnutChartComponent"}],
     "members":[
@@ -107,4 +107,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
