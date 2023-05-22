@@ -636,7 +636,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * `ColumnComponent`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -645,6 +645,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

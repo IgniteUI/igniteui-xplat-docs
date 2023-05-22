@@ -433,9 +433,12 @@ $button-theme: button-theme(
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
+
+<!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 <!-- end: Blazor -->
 
