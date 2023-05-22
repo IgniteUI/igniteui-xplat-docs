@@ -79,7 +79,7 @@ this.grid.getRowByIndex(0).pinned = true;
 ```
 
 ```razor
-this.Grid.PinRow("ALFKI", 0);
+this.Grid.PinRowAsync("ALFKI", 0);
 ```
 
 You may also use the `{ComponentName}`'s `PinRow` or `UnpinRow` methods of the to pin or unpin records by their ID:
@@ -90,8 +90,8 @@ this.grid.unpinRow('ALFKI');
 ```
 
 ```razor
-this.Grid.PinRow("ALFKI", 0);
-this.Grid.UnpinRow("ALFKI");
+this.Grid.PinRowAsync("ALFKI", 0);
+this.Grid.UnpinRowAsync("ALFKI");
 ```
 
 Note that the row ID is the primary key value, defined by the `PrimaryKey` of the grid, or the record instance itself. Both methods return a boolean value indicating whether their respective operation is successful or not. Usually the reason they fail is that the row is already in the desired state.
@@ -138,7 +138,7 @@ public rowPinning(event) {
 
 ```razor
 function rowPinningHandler(event) {
-    event.insertAtIndex = 0;
+    event.detail.insertAtIndex = 0;
 }
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
@@ -195,6 +195,7 @@ grid.pinning = { rows: RowPinningPosition.Bottom };
         }
     }
 ```
+<!-- end: Angular, WebComponents -->
 
 ## Custom Row Pinning UI
 
@@ -206,19 +207,24 @@ Let's say that instead of an action strip you would like to show a pin icon in e
 This can be done by adding an extra column with a cell template containing the custom icon.
 
 ```razor
-<IgbColumn Width="70px" BodyTemplate=@bodyTemplate/>
+<IgbColumn Width="70px" BodyTemplateScript="WebGridRowPinCellTemplate"/>
 
-@code {
-    public RenderFragment<IgbCellTemplateContext> bodyTemplate = (context) =>
-    {
-        double index = context.Cell.Id.RowIndex;
-        var grid = context.Cell.Grid;
-        bool pinned = grid.GetRowByIndex(index).Pinned;
-        var icon = pinned ? "lock" : "lock_open";
-        string onPin = "togglePinning(" + index + ")";
-        return @<IgbIcon Size="SizableComponentSize.Small" IconName="@icon" Collection="material" onclick='@onPin' />;
-    };
-}
+// In Javascript
+
+igRegisterScript("WebGridRowPinCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    window.toggleRowPin = function toggleRowPin(index) {
+        var grid = document.getElementsByTagName("igc-grid")[0];
+        grid.getRowByIndex(index).pinned = !grid.getRowByIndex(index).pinned;
+    }
+    const index = ctx.cell.id.rowIndex;
+    return html`<div>
+    <span onpointerdown='toggleRowPin("${index}")'>📌</span>
+</div>`;
+}, false);
+
+
+
 ```
 
 ```html
@@ -266,21 +272,13 @@ public toggleRowPin(index: number) {
 }
 ```
 
-```razor
-function togglePinning(rowIndex) {
-    const row = grid1.getRowByIndex(0).pinned;
-    row.pinned = !row.pinned;
-}
-igRegisterScript("togglePinning", togglePinning, false);
-```
-
 #### Demo
 
 `sample="/{ComponentSample}/row-pinning-extra-column", height="600", alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example"`
 
 
 
-<!-- end: Angular, WebComponents -->
+
 
 <!-- ComponentStart: Grid -->
 
