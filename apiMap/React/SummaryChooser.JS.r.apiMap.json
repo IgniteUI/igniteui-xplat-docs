@@ -4,4 +4,4 @@
     "names":[{"platform":"React","fileName":"igr-summary-changed-event-args.ts","mappedName":"IgrSummaryChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"iD"}],"originalName":"ID"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isEnabled"}],"originalName":"IsEnabled"}],"originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isEnabled"}],"originalName":"IsEnabled"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Grid.Implementation"}]}

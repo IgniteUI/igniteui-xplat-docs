@@ -3,36 +3,36 @@
   { "originalName":"FunnelSliceDataContext",
     "names":[{"platform":"React","fileName":"igr-funnel-slice-data-context.ts","mappedName":"IgrFunnelSliceDataContext"}],
     "members":[
-    { "names":[{"platform":"React","mappedType":"string","mappedName":"itemOutline"}],"originalName":"ItemOutline"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"string","mappedName":"itemOutline"}],"originalName":"ItemOutline"}],"originalBaseTypeName":"DataContext","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelDataContext",
     "names":[{"platform":"React","fileName":"igr-funnel-data-context.ts","mappedName":"IgrFunnelDataContext"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelSliceDisplay","isEnum":true,
     "names":[{"platform":"React","fileName":"FunnelSliceDisplay.ts","mappedName":"FunnelSliceDisplay"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"FunnelSliceDisplay","mappedName":"Uniform"}],"originalName":"Uniform"},
     { "names":[{"platform":"React","mappedType":"FunnelSliceDisplay","mappedName":"Weighted"}],"originalName":"Weighted"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"OuterLabelAlignment","isEnum":true,
     "names":[{"platform":"React","fileName":"OuterLabelAlignment.ts","mappedName":"OuterLabelAlignment"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"OuterLabelAlignment","mappedName":"Left"}],"originalName":"Left"},
     { "names":[{"platform":"React","mappedType":"OuterLabelAlignment","mappedName":"Right"}],"originalName":"Right"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelSliceClickedEventArgs",
     "names":[{"platform":"React","fileName":"igr-funnel-slice-clicked-event-args.ts","mappedName":"IgrFunnelSliceClickedEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"},
     { "names":[{"platform":"React","mappedType":"IgRect","mappedName":"bounds"}],"originalName":"Bounds"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FunnelSliceEventArgs",
     "names":[{"platform":"React","fileName":"igr-funnel-slice-event-args.ts","mappedName":"IgrFunnelSliceEventArgs"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"number","mappedName":"index"}],"originalName":"Index"},
     { "names":[{"platform":"React","mappedType":"IgRect","mappedName":"bounds"}],"originalName":"Bounds"},
-    { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"any","mappedName":"item"}],"originalName":"Item"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamFunnelChart",
     "names":[{"platform":"React","fileName":"igr-funnel-chart.ts","mappedName":"IgrFunnelChart"}],
     "members":[
@@ -84,4 +84,4 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"toggleSelection"}],"originalName":"ToggleSelection"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
