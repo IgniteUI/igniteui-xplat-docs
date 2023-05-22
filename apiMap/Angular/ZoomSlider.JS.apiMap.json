@@ -59,9 +59,9 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"trackDirty"}],"originalName":"TrackDirty"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"show"}],"originalName":"Show"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"hide"}],"originalName":"Hide"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Navigation.Implementation"},
   { "originalName":"ZoomSliderResolvingAxisValueEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-zoom-slider-resolving-axis-value-event-args.ts","mappedName":"IgxZoomSliderResolvingAxisValueEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"position"}],"originalName":"Position"},
-    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"}],"originalNamespace":"Infragistics.Controls.Navigation.Implementation"}]}
+    { "names":[{"platform":"Angular","mappedType":"any","mappedName":"value"}],"originalName":"Value"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Navigation.Implementation"}]}
