@@ -221,15 +221,15 @@ Visualize your data by creating new [Composite Chart](types/Composite-chart.md) 
 
 ### Custom Tooltips
 
-Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can create [Custom Tooltips](features/chart-tooltips.md#{Platform}-Chart-Tooltip-Template) with images, data binding, and even combine tooltips of multiple series into single tooltip.
+Visualize your data by creating new composite views and overlapping multiple series in single chart. In the Chart, you can create [Custom Tooltips](features/chart-tooltips.md#{PlatformLower}-Chart-Tooltip-Template) with images, data binding, and even combine tooltips of multiple series into single tooltip.
 
 ### High-Performance, Real-Time Charting
 
-Display thousands of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#{Platform}-Chart-with-High-Frequency) topic.
+Display thousands of data points with milliseconds-level updates in real time with live, streaming data. You will experience no lag, no screen-flicker, and no visual delays, even as you interact with the chart on a touch-device. For a demo, refer to the [Chart with High-Frequency](features/chart-performance.md#{PlatformLower}-Chart-with-High-Frequency) topic.
 
 ### High-Volume Data Handling
 
-Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#{Platform}-Chart-with-High-Volume) topic.
+Optimize [Chart Performance](features/chart-performance.md) to render millions of data points while the chart keeps providing smooth performance when end-users tries zooming in/out or navigating chart content. For a demo, refer to the [Chart with High-Volume](features/chart-performance.md#{PlatformLower}-Chart-with-High-Volume) topic.
 
 ### Modular Design
 
@@ -261,7 +261,7 @@ alt="{Platform} Charts Interactive Panning and Zooming"/>
 
 ### Markers, Tooltips, and Templates
 
-Use one of 10 [Marker Types](features/chart-markers.md) or create your own [Marker Template](features/chart-markers.md#{Platform}-Chart-Marker-Templates) to highlight data or use simple [Tooltips](features/chart-tooltips.md) or multi-axis and multi-series chart with [Custom Tooltips](features/chart-tooltips.md#{Platform}-Chart-Tooltip-Template) to give more context and meaning to your data.
+Use one of 10 [Marker Types](features/chart-markers.md) or create your own [Marker Template](features/chart-markers.md#{PlatformLower}-Chart-Marker-Templates) to highlight data or use simple [Tooltips](features/chart-tooltips.md) or multi-axis and multi-series chart with [Custom Tooltips](features/chart-tooltips.md#{PlatformLower}-Chart-Tooltip-Template) to give more context and meaning to your data.
 
 <img class="responsive-img" src="../../images/charts/ignite-ui-angular-financial-chart-custom-tooltips-1100.jpg"
 alt="{Platform} Charts Markers, Tooltips, and Templates"/>

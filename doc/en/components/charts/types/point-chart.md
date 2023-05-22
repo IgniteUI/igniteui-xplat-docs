@@ -54,9 +54,9 @@ Once the {Platform} Point Chart is set up, we may want to make some further styl
 You can create more advanced types of {Platform} Point Charts using the `XamDataChart` control instead of `CategoryChart` control by following these topics:
 
 - [Scatter Bubble Chart](bubble-chart.md)
-- [Scatter Marker Chart](scatter-chart.md#{Platform}-scatter-marker-chart)
-- [Scatter HD Chart](scatter-chart.md#{Platform}-scatter-high-density-chart)
-- [Polar Marker Chart](polar-chart.md#{Platform}-polar-Marker-chart)
+- [Scatter Marker Chart](scatter-chart.md#{PlatformLower}-scatter-marker-chart)
+- [Scatter HD Chart](scatter-chart.md#{PlatformLower}-scatter-high-density-chart)
+- [Polar Marker Chart](polar-chart.md#{PlatformLower}-polar-Marker-chart)
 
 ## Additional Resources
 
