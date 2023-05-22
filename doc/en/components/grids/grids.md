@@ -135,7 +135,7 @@ div#faqs-accordion-wrapper {
     border-bottom: none;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
     div#list-features-included {
         -webkit-box-orient: vertical;
@@ -1128,7 +1128,7 @@ If you are developing applications on multiple platforms, consider our complete 
 <!-- end: Blazor -->
 
 <script>
-    (function(){
+    (function() {
         var acc = document.getElementsByClassName("faqs-accordion");
         var i;
 

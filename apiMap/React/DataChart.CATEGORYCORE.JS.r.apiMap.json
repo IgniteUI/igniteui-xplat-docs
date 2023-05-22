@@ -22,7 +22,7 @@
     { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromCategoryAxisMaximum"}],"originalName":"AccordionFromCategoryAxisMaximum"},
     { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMinimum"}],"originalName":"AccordionFromValueAxisMinimum"},
     { "names":[{"platform":"React","mappedType":"CategoryTransitionInMode","mappedName":"AccordionFromValueAxisMaximum"}],"originalName":"AccordionFromValueAxisMaximum"},
-    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategorySeries",
     "names":[{"platform":"React","fileName":"igr-category-series.ts","mappedName":"IgrCategorySeries"}],
     "members":[
@@ -38,4 +38,4 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

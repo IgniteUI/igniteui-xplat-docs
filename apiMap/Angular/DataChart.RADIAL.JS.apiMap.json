@@ -9,6 +9,7 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"Angular","mappedType":"number[]","mappedName":"trendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"trendLineZIndex"}],"originalName":"TrendLineZIndex"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"hasValueAxis"}],"originalName":"HasValueAxis"},
@@ -20,12 +21,12 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"RadialBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"RadialBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialAreaSeries",
     "names":[{"platform":"Angular","fileName":"igx-radial-area-series-component.ts","dynamicModuleName":"igx-radial-area-series-dynamic-module.ts","moduleName":"igx-radial-area-series-module.ts","mappedName":"IgxRadialAreaSeriesComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
-    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialBase",
     "names":[{"platform":"Angular","fileName":"igx-radial-base-component.ts","mappedName":"IgxRadialBaseComponent"}],
     "members":[
@@ -43,7 +44,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getOffsetValue"}],"originalName":"GetOffsetValue"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getCategoryWidth"}],"originalName":"GetCategoryWidth"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialColumnSeries",
     "names":[{"platform":"Angular","fileName":"igx-radial-column-series-component.ts","dynamicModuleName":"igx-radial-column-series-dynamic-module.ts","moduleName":"igx-radial-column-series-module.ts","mappedName":"IgxRadialColumnSeriesComponent"}],
     "members":[
@@ -52,13 +53,13 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onApplyTemplate"}],"originalName":"OnApplyTemplate"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialLineSeries",
     "names":[{"platform":"Angular","fileName":"igx-radial-line-series-component.ts","dynamicModuleName":"igx-radial-line-series-dynamic-module.ts","moduleName":"igx-radial-line-series-module.ts","mappedName":"IgxRadialLineSeriesComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"},
     { "names":[{"platform":"Angular","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onApplyTemplate"}],"originalName":"OnApplyTemplate"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"onApplyTemplate"}],"originalName":"OnApplyTemplate"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RadialPieSeries",
     "names":[{"platform":"Angular","fileName":"igx-radial-pie-series-component.ts","dynamicModuleName":"igx-radial-pie-series-dynamic-module.ts","moduleName":"igx-radial-pie-series-module.ts","mappedName":"IgxRadialPieSeriesComponent"}],
     "members":[
@@ -66,4 +67,4 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isMarkerlessDisplayPreferred"}],"originalName":"IsMarkerlessDisplayPreferred"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"AnchoredRadialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

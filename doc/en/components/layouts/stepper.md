@@ -37,6 +37,23 @@ defineComponents(IgcStepperComponent);
 ```
 
 <!-- end: WebComponents -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbStepperModule)
+);
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Stepper` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
@@ -61,6 +78,17 @@ Steps can be declared using one of the following approaches.
 </igc-stepper>
 ```
 
+```razor
+<IgbStepper>
+    @foreach (var item in this.StepsData)
+    {
+        <IgbStep Disabled="@item.Disabled">
+          <p slot="title">@item.Title</p>
+        </IgbStep>
+    }
+</IgbStepper>
+```
+
 - Creating static steps
 
 ```html
@@ -72,6 +100,17 @@ Steps can be declared using one of the following approaches.
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
 ```
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
@@ -86,10 +125,23 @@ For each step the user has the ability to configure indicator, title and subtitl
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <IgbIcon slot="indicator" IconName="home" Collection="material" />
+       <p slot="title">Home</p>
+       <p slot="subtitle">Home Sub Title</p>
+       <div>
+          Step Content
+          ...
+       </div>
+    </IgbStep>
+</IgbStepper>
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 

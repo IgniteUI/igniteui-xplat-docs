@@ -610,7 +610,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [選択](selection.md)
 * [セル選択](cell-selection.md)
 * [ページング](paging.md)
@@ -621,7 +621,7 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [仮想化とパフォーマンス](virtualization.md)
-
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

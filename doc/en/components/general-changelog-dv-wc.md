@@ -2,62 +2,64 @@
 title: {Platform} What's New | {ProductName} | Infragistics
 _description: Learn about new features in the {ProductName}.
 _keywords: Changelog, What's New,  {ProductName}, Infragistics
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} Changelog
 
 All notable changes for each version of {ProductName} are documented on this page.
 
-```md
-> [!Note]
-> Changes listed with (*) are separate and are related only in the **{PackageComponents}** package.
-```
-
-
 ## **{PackageVerChanges-22-2.2}**
+
+### New Components
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
 
 ### {PackageGrids} (Data Grid)
 
-* A new argument `primaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `rowAdded` and `rowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
-* `rowSelectionChanging` event arguments are changed. Now, the `oldSelection`, `newSelection`, `added` and `removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
+* A new argument `PrimaryKey` has been introduced to `IgcRowDataEventArgs`, and part of the event arguments that are emitted by the `RowAdded` and `RowDeleted` events. When the grid has a primary key attribute added, then the emitted primaryKey event argument represents the row ID, otherwise it defaults to undefined.
+* `RowSelectionChanging` event arguments are changed. Now, the `OldSelection`, `NewSelection`, `Added` and `Removed` collections no longer consist of the row keys of the selected elements when the grid has set a primaryKey, but now in any case the row data is emitted.
 * When the grid is working with remote data and a primary key has been set, the selected rows that are not currently part of the grid view will be emitted for a partial row data object.
-* When selected row is deleted from the grid component `rowSelectionChanging` event will no longer be emitted.
-* The `onGroupingDone` event has been renamed to `groupingDone` to not violate the no on-prefixed outputs convention.
-* The `onDensityChanged` event has been renamed to `densityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
+* When selected row is deleted from the grid component `RowSelectionChanging` event will no longer be emitted.
+* The `OnGroupingDone` event has been renamed to `GroupingDone` to not violate the no on-prefixed outputs convention.
+* The `OnDensityChanged` event has been renamed to `DensityChanged` to not violate the no on-prefixed outputs convention. All components exposing this event are affected.
 
-### {PackageGrids} (Pivot Grid)
-
-* The `IgcPivotDateDimension` properties `baseDimension` and `option` have been deprecated and renamed to `baseDimension` and `options` respectively.
-
-### {PackageDockManager} (DockManager)
-
-* DockManager's Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
-
-### {PackageInputs} (Inputs)
+### {PackageInputs}
 
 * `IgcDateTimeInput`, the StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) is now trimmed down to DatePart instead of DateTimeInputDatePart
 * `IgcRadio` and `IgcRadioGroup`, added component validation along with styles for invalid state
 * `IgcMask`, added the capability to escape mask pattern literals.
-* `IgcBadge` added a `shape` property that controls the shape of the badge and can be either `square` or `rounded`. The default shape of the badge is rounded.
-* `IgcAvatar`, the `roundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `shape` attribute that can be `square`, `rounded` or `circle`. The default shape of the avatar is `square`.
+* `IgcBadge` added a `Shape` property that controls the shape of the badge and can be either `Square` or `Rounded`. The default shape of the badge is rounded.
+* `IgcAvatar`, the `RoundShape` property has been deprecated and will be removed in a future version. Users can control the shape of the avatar by the newly added `Shape` attribute that can be `Square`, `Rounded` or `Circle`. The default shape of the avatar is `Square`.
+
+### {PackageGrids} (Pivot Grid)
+
+* The `IgcPivotDateDimension` properties `InBaseDimension` and `InOption` have been deprecated and renamed to `BaseDimension` and `Options` respectively.
+
+### {PackageDockManager} (DockManager)
+
+* [Dock Manager's](layouts/dock-manager.md) Panes collection now has a protected setter; requires you to call Add rather than set panes in a nested structure when creating them.
 
 ## **{PackageVerChanges-22-2.1}**
 
 ### New Components
 
-* [Combo](inputs/combo/overview.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
 * [Pivot Grid](grids/pivot-grid/overview.md)
 * [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### New Components
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
-### {PackageCharts} (Charts)
+### {PackageCharts}
 
 Added significant improvements to default behaviors, and refined the Category Chart API to make it easier to use.
 
@@ -97,7 +99,7 @@ These new chart improvements include:
 * Changed `SummaryOperand` to `DataSourceSummaryOperand`
 
 ## **{PackageVerChanges-22-1}**
-### {PackageCharts} (Charts)
+### {PackageCharts}
 
 * Added the highly-configurable [DataLegend](charts/features/chart-data-legend.md) component, which works much like the `Legend`, but it shows values of series and provides many configuration properties for filtering series rows and values columns, styling and formatting values.
 * Added the highly-configurable [DataToolTip](charts/features/chart-data-tooltip.md) which displays values and titles of series as well as legend badges of series in a tooltip. This is now the default tooltip for all chart types.
@@ -134,8 +136,10 @@ Pagination is used to split a large set of data into a sequence of pages that ha
 <div class="divider--half"></div>
 
 ## **2.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### New Components & Themes
+
+These are related only in the **{PackageComponents}** package.
 
 * Added [Slider](inputs/slider.md)
 * Added [Range Slider](inputs/slider.md)
@@ -170,7 +174,7 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 
 - Changed `ValueField` property from type string[] to string.
 
-### {PackageInputs} (Inputs)
+### {PackageInputs}
 
 #### Date Picker
 - Changed ValueChanged event to `SelectedValueChanged`.
@@ -182,8 +186,10 @@ This release introduces few major changes in the API of the Calendar, Card, Navi
 <div class="divider--half"></div>
 
 ## **1.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### New Components
+
+These are related only in the **{PackageComponents}** package.
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -323,7 +329,7 @@ for example:
 
 <div class="divider--half"></div>
 
-### {PackageGrids} (Data Grid)
+### {PackageGrids}
 
 * Added `EditOnKeyPress` aka Excel-style Editing, instantly begin editing when typing.
 * Added `EditModeClickAction` property - By default double-clicking is required to enter edit mode. This can be set to `SingleClick` to allow for edit mode to occur when selecting a new cell.
@@ -337,7 +343,7 @@ for example:
 * Pressing space bar toggles selection of active row via `GridSelectionMode` property set to MultipleRow or SingleRow
 * Added Column Summaries to Column Options Dialog.
 
-### {PackageInputs} (Inputs)
+### {PackageInputs}
 
 #### Date Picker
 

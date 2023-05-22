@@ -547,11 +547,12 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 

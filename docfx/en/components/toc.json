@@ -113,12 +113,14 @@
     "status": "UPDATED"
   },
   {
+    "note": "THIS MAIN NODE FOR OLD XPLAT GRID",
     "exclude": ["Angular", "Blazor", "WebComponents"],
     "name": "Grids & Lists",
     "header": true,
     "href": "grids/grids.md"
   },
   {
+    "note": "THIS MAIN NODE FOR NEW XPLAT GRID",
     "exclude": ["Angular", "React"],
     "name": "Grids & Lists",
     "header": true,
@@ -149,7 +151,8 @@
         "status": ""
       },
       {
-        "exclude": ["Angular", "React"],
+        "exclude": ["Angular", "React", "WebComponents", "Blazor"],
+        "note": "Clipboard Operations are not yet implemented. Uncomment this once they are implemented",
         "name": "Clipboard Interactions",
         "href": "grids/grid/clipboard-interactions.md",
         "status": ""
@@ -590,7 +593,7 @@
     "exclude": ["Angular", "React"],
     "name": "Tree Grid",
     "href": "grids/tree-grid/overview.md",
-    "status": "NEW",
+    "status": "UPDATED",
     "items": [
       {
         "exclude": ["Angular", "React", "WebComponents", "Blazor"],
@@ -1463,7 +1466,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular","Blazor", "React"],
+    "exclude": ["Angular", "React"],
     "name": "Stepper",
     "href": "layouts/stepper.md",
     "status": ""
@@ -1660,8 +1663,8 @@
   {
     "exclude": ["Angular", "React"],
     "name": "Select",
-    "status": "",
-    "href": "inputs/select.md"
+    "href": "inputs/select.md",
+    "status": "NEW"
   },
   {
     "exclude": ["Angular", "React", "Blazor"],
@@ -1712,7 +1715,7 @@
     "exclude": ["Angular", "React"],
     "name": "Dialog",
     "href": "notifications/dialog.md",
-    "status": ""
+    "status": "NEW"
   },
   {
     "exclude": ["Angular"],
@@ -1731,7 +1734,7 @@
     "status": ""
   },
   {
-    "exclude": ["Angular", "React", "Blazor"],
+    "exclude": ["Angular", "React"],
     "name": "Styling & Themes",
     "header": true
   },

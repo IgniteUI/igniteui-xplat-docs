@@ -9,7 +9,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledAngle"}],"originalName":"GetScaledAngle"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryDateTimeXAxis",
     "names":[{"platform":"Angular","fileName":"igx-category-date-time-x-axis-component.ts","dynamicModuleName":"igx-category-date-time-x-axis-dynamic-module.ts","moduleName":"igx-category-date-time-x-axis-module.ts","mappedName":"IgxCategoryDateTimeXAxisComponent"}],
     "members":[
@@ -20,14 +20,14 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"minorInterval"}],"originalName":"MinorInterval"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"actualMinorInterval"}],"originalName":"ActualMinorInterval"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCategoryDateTime"}],"originalName":"IsCategoryDateTime"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"NumericAngleAxis",
     "names":[{"platform":"Angular","fileName":"igx-numeric-angle-axis-component.ts","dynamicModuleName":"igx-numeric-angle-axis-dynamic-module.ts","moduleName":"igx-numeric-angle-axis-module.ts","mappedName":"IgxNumericAngleAxisComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isAngular"}],"originalName":"IsAngular"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"startAngleOffset"}],"originalName":"StartAngleOffset"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledAngle"}],"originalName":"GetScaledAngle"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledAngle"}],"originalName":"GetUnscaledAngle"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"NumericRadiusAxis",
     "names":[{"platform":"Angular","fileName":"igx-numeric-radius-axis-component.ts","dynamicModuleName":"igx-numeric-radius-axis-dynamic-module.ts","moduleName":"igx-numeric-radius-axis-module.ts","mappedName":"IgxNumericRadiusAxisComponent"}],
     "members":[
@@ -35,7 +35,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusExtentScale"}],"originalName":"RadiusExtentScale"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"innerRadiusExtentScale"}],"originalName":"InnerRadiusExtentScale"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getScaledValue3"}],"originalName":"GetScaledValue"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getUnscaledValue3"}],"originalName":"GetUnscaledValue"}],"originalBaseTypeName":"NumericAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"OrdinalTimeXAxis",
     "names":[{"platform":"Angular","fileName":"igx-ordinal-time-x-axis-component.ts","dynamicModuleName":"igx-ordinal-time-x-axis-dynamic-module.ts","moduleName":"igx-ordinal-time-x-axis-module.ts","mappedName":"IgxOrdinalTimeXAxisComponent"}],
     "members":[
@@ -45,9 +45,9 @@
     { "names":[{"platform":"Angular","mappedType":"IgxTimeAxisLabelFormatCollection","mappedName":"labelFormats"}],"originalName":"LabelFormats"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getValueLabel"}],"originalName":"GetValueLabel"}],"originalBaseTypeName":"CategoryXAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getValueLabel"}],"originalName":"GetValueLabel"}],"originalBaseTypeName":"CategoryXAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PercentChangeYAxis",
-    "names":[{"platform":"Angular","fileName":"igx-percent-change-y-axis-component.ts","dynamicModuleName":"igx-percent-change-y-axis-dynamic-module.ts","moduleName":"igx-percent-change-y-axis-module.ts","mappedName":"IgxPercentChangeYAxisComponent"}],"members":[],"originalBaseTypeName":"NumericYAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"Angular","fileName":"igx-percent-change-y-axis-component.ts","dynamicModuleName":"igx-percent-change-y-axis-dynamic-module.ts","moduleName":"igx-percent-change-y-axis-module.ts","mappedName":"IgxPercentChangeYAxisComponent"}],"members":[],"originalBaseTypeName":"NumericYAxis","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisBase",
     "names":[{"platform":"Angular","fileName":"igx-time-axis-base-component.ts","mappedName":"IgxTimeAxisBaseComponent"}],
     "members":[
@@ -61,26 +61,26 @@
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSorting"}],"originalName":"IsSorting"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyDataChanged"}],"originalName":"NotifyDataChanged"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyDataChanged"}],"originalName":"NotifyDataChanged"}],"originalBaseTypeName":"CategoryAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisLabellingMode","isEnum":true,
     "names":[{"platform":"Angular","fileName":"TimeAxisLabellingMode.ts","mappedName":"TimeAxisLabellingMode"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"TimeAxisLabellingMode","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"Angular","mappedType":"TimeAxisLabellingMode","mappedName":"Normal"}],"originalName":"Normal"},
     { "names":[{"platform":"Angular","mappedType":"TimeAxisLabellingMode","mappedName":"Compressed"}],"originalName":"Compressed"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisBreak",
     "names":[{"platform":"Angular","fileName":"igx-time-axis-break-component.ts","dynamicModuleName":"igx-time-axis-break-dynamic-module.ts","moduleName":"igx-time-axis-break-module.ts","mappedName":"IgxTimeAxisBreakComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"start"}],"originalName":"Start"},
     { "names":[{"platform":"Angular","mappedType":"Date","mappedName":"end"}],"originalName":"End"},
-    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisInterval",
     "names":[{"platform":"Angular","fileName":"igx-time-axis-interval-component.ts","dynamicModuleName":"igx-time-axis-interval-dynamic-module.ts","moduleName":"igx-time-axis-interval-module.ts","mappedName":"IgxTimeAxisIntervalComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"range"}],"originalName":"Range"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"interval"}],"originalName":"Interval"},
-    { "names":[{"platform":"Angular","mappedType":"TimeAxisIntervalType","mappedName":"intervalType"}],"originalName":"IntervalType"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"TimeAxisIntervalType","mappedName":"intervalType"}],"originalName":"IntervalType"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisIntervalType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"TimeAxisIntervalType.ts","mappedName":"TimeAxisIntervalType"}],
     "members":[
@@ -93,7 +93,7 @@
     { "names":[{"platform":"Angular","mappedType":"TimeAxisIntervalType","mappedName":"Weeks"}],"originalName":"Weeks"},
     { "names":[{"platform":"Angular","mappedType":"TimeAxisIntervalType","mappedName":"Months"}],"originalName":"Months"},
     { "names":[{"platform":"Angular","mappedType":"TimeAxisIntervalType","mappedName":"Years"}],"originalName":"Years"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeAxisLabelFormat",
     "names":[{"platform":"Angular","fileName":"igx-time-axis-label-format-component.ts","dynamicModuleName":"igx-time-axis-label-format-dynamic-module.ts","moduleName":"igx-time-axis-label-format-module.ts","mappedName":"IgxTimeAxisLabelFormatComponent"}],
     "members":[
@@ -101,7 +101,7 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"format"}],"originalName":"Format"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"repeatedYearFormat"}],"originalName":"RepeatedYearFormat"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"repeatedMonthFormat"}],"originalName":"RepeatedMonthFormat"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"repeatedDayFormat"}],"originalName":"RepeatedDayFormat"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"repeatedDayFormat"}],"originalName":"RepeatedDayFormat"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"TimeXAxis",
     "names":[{"platform":"Angular","fileName":"igx-time-x-axis-component.ts","dynamicModuleName":"igx-time-x-axis-dynamic-module.ts","moduleName":"igx-time-x-axis-module.ts","mappedName":"IgxTimeXAxisComponent"}],
     "members":[
@@ -112,4 +112,4 @@
     { "names":[{"platform":"Angular","mappedType":"IgxTimeAxisIntervalCollection","mappedName":"intervals"}],"originalName":"Intervals"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isCategoryDateTime"}],"originalName":"IsCategoryDateTime"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getValueLabel"}],"originalName":"GetValueLabel"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getIndexClosestToUnscaledValue"}],"originalName":"GetIndexClosestToUnscaledValue"}],"originalBaseTypeName":"TimeAxisBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

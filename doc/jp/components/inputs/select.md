@@ -12,7 +12,7 @@ _language: ja
 
 ## {Platform} 選択の例
 
-`sample="/inputs/select/overview", height="220", alt="{Platform} Select の例"`
+`sample="/inputs/select/overview", height="275", alt="{Platform} Select の例"`
 
 
 <div class="divider--half"></div>
@@ -95,14 +95,14 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 
 `SelectItem` コンポーネントを使用すると、ユーザーは `Select` コントロールで使用されるオプションのリストを宣言的に指定できます。各項目は、選択時に保持されるデータを表す `Value` プロパティを提供します。`SelectItem` には、項目のテキスト コンテンツを指定できるデフォルトのスロットがあります。このテキスト コンテンツは、`Value` プロパティが `SelectItem` に存在しない場合に値として使用されます。`prefix` スロットと `suffix` スロットを使用して、`SelectItem` コンテンツの前後に描画されるカスタム コンテンツを提供することもできます。`Selected` プロパティを設定することにより、選択した項目を事前定義できます。`Disabled` プロパティを使用して、一部またはすべての項目を無効にすることもできます。
 
-`sample="/inputs/select/item", height="220", alt="{Platform} Select Item の例"`
+`sample="/inputs/select/item", height="275", alt="{Platform} Select Item の例"`
 
 
 ### Header (ヘッダー)
 
 `SelectHeader` を使用して、項目のグループのヘッダーを提供できます。
 
-`sample="/inputs/select/header", height="250", alt="{Platform} Select Header の例"`
+`sample="/inputs/select/header", height="275", alt="{Platform} Select Header の例"`
 
 
 <!-- WebComponents -->
@@ -128,7 +128,7 @@ builder.Services.AddIgniteUIBlazor(typeof(IgbSelectModule));
 > [!Note]
 > 選択グループが無効になっている場合、そのグループの個別の項目を有効にすることはできないことに注意してください。
 
-`sample="/inputs/select/group", height="480", alt="{Platform} Select Group の例"`
+`sample="/inputs/select/group", height="500", alt="{Platform} Select Group の例"`
 
 <!-- WebComponents -->
 ```html
