@@ -38,6 +38,7 @@
     "build-docfx-blazor": "tsc && gulp buildDocfx_Blazor",
     "build-docfx-react": "tsc && gulp buildDocfx_React",
     "build-docfx-wc": "tsc && gulp buildDocfx_WC",
+    "build-docfx-wc-jp": "tsc && gulp buildDocfx_WC --lang=jp",
     "build-docfx-args": "tsc && gulp buildDocfx_WithArgs",
     "build-staging": "tsc && gulp buildDocfx_WithArgs --env=staging",
     "build-production": "tsc && gulp buildDocfx_WithArgs --env=production",
