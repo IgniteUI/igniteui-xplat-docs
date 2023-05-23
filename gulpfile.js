@@ -891,7 +891,7 @@ function verifyMarkdown(cb) {
     if (transformer === null || transformer === undefined) {
         if (cb) cb("transformer failed to load"); return;
     }
-    console.log('verifying .md files ...');
+    console.log('verifying markdown files:');
 
     var filesCount = 0;
     var errorsCount = 0;
@@ -900,22 +900,25 @@ function verifyMarkdown(cb) {
     'doc/jp/**/*.md',
     'doc/kr/**/*.md',
     //'doc/kr/**/chart-legends.md',
+    // 'doc/en/**/charts/**/*.md',
     // 'doc/en/**/zoomslider*.md',
+    // 'doc/en/**/point-chart.md',
+    // 'doc/jp/components/grids/_shared/cell-editing.md',
     '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        console.log('verifying: ' + filePath);
         filesCount++;
-        var result = transformer.verifyMetadata(fileContent, filePath);
+        var result = transformer.verifyMarkdown(fileContent, filePath);
         if (result.isValid) {
             // console.log('verified:  ' + filePath);
             // fileContent = result.fileContent;
             //file.contents = Buffer.from(fileContent);
             // auto-update topics with corrections if any
-            //fs.writeFileSync(filePath, fileContent);
+            fs.writeFileSync(filePath, result.fileContent);
         } else {
             errorsCount++;
         }
