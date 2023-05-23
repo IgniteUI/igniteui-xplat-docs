@@ -536,7 +536,7 @@ igc-dockmanager::part(pane-header-maximize-button) {
 ### その他
  - <kbd>Alt</kbd> + <kbd>F3</kbd> アクティブなペインを閉じます。
 
-サンプル [demo](dock-manager.md#{Platform}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
+サンプル [demo](dock-manager.md#{PlatformLower}-ドック-マネージャーの例) で上記のすべてのアクションを練習しましょう。
 
 <!-- WebComponents -->
 
