@@ -400,26 +400,26 @@ function buildTOC(cb) {
     // excludedTopics.push('doc/**/grids/theming.md');
     // excludedTopics.push('doc/**/grids/tree.md');
     // excludedTopics.push('doc/**/grids/list.md');
-    // excludedTopics.push('doc/**/charts/**/*.md');
-    // excludedTopics.push('doc/**/charts/features/*.md');
-    // excludedTopics.push('doc/**/charts/types/*.md');
-    // excludedTopics.push('doc/**/charts/chart-features.md');
-    // excludedTopics.push('doc/**/charts/chart-api.md');
-    // excludedTopics.push('doc/**/charts/chart-overview.md');
-    // excludedTopics.push('doc/**/editors/**/*.md');
-    // excludedTopics.push('doc/**/inputs/**/*.md');
-    // excludedTopics.push('doc/**/layouts/**/*.md');
-    // excludedTopics.push('doc/**/menus/**/*.md');
-    // excludedTopics.push('doc/**/*map*.md');
-    // excludedTopics.push('doc/**/bullet-graph.md');
-    // excludedTopics.push('doc/**/linear-gauge.md');
-    // excludedTopics.push('doc/**/radial-gauge.md');
-    // excludedTopics.push('doc/**/*excel*.md');
-    // excludedTopics.push('doc/**/spreadsheet*.md');
-    // excludedTopics.push('doc/**/scheduling/*.md');
-    // excludedTopics.push('doc/**/notifications/*.md');
-    // excludedTopics.push('doc/**/themes/*.md');
-    // excludedTopics.push('doc/**/zoomslider-overview.md');
+    excludedTopics.push('doc/**/charts/**/*.md');
+    excludedTopics.push('doc/**/charts/features/*.md');
+    excludedTopics.push('doc/**/charts/types/*.md');
+    excludedTopics.push('doc/**/charts/chart-features.md');
+    excludedTopics.push('doc/**/charts/chart-api.md');
+    excludedTopics.push('doc/**/charts/chart-overview.md');
+    excludedTopics.push('doc/**/editors/**/*.md');
+    excludedTopics.push('doc/**/inputs/**/*.md');
+    excludedTopics.push('doc/**/layouts/**/*.md');
+    excludedTopics.push('doc/**/menus/**/*.md');
+    excludedTopics.push('doc/**/*map*.md');
+    excludedTopics.push('doc/**/bullet-graph.md');
+    excludedTopics.push('doc/**/linear-gauge.md');
+    excludedTopics.push('doc/**/radial-gauge.md');
+    excludedTopics.push('doc/**/*excel*.md');
+    excludedTopics.push('doc/**/spreadsheet*.md');
+    excludedTopics.push('doc/**/scheduling/*.md');
+    excludedTopics.push('doc/**/notifications/*.md');
+    excludedTopics.push('doc/**/themes/*.md');
+    excludedTopics.push('doc/**/zoomslider-overview.md');
     // uncomment these lines to skip JP and KR topics:
     // excludedTopics.push('doc/**/jp/**/*.md');
     // excludedTopics.push('doc/**/kr/**/*.md');
@@ -454,12 +454,12 @@ function buildTOC(cb) {
         let isFirstRelease = docsConfig[platformName].isFirstRelease;
         // generating an array of topic and TOC.yml files from TOC.json files:
         let enTopics = generateTocFor(platformName, 'en', isFirstRelease, excludedFiles);
-        let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease, excludedFiles);
-        let krTopics = generateTocFor(platformName, 'kr', isFirstRelease, excludedFiles);
+        // let jpTopics = generateTocFor(platformName, 'jp', isFirstRelease, excludedFiles);
+        // let krTopics = generateTocFor(platformName, 'kr', isFirstRelease, excludedFiles);
         var tocTopics = [];
         tocTopics = tocTopics.concat(enTopics); // including EN topics
-        tocTopics = tocTopics.concat(jpTopics); // including JP topics
-        tocTopics = tocTopics.concat(krTopics); // including KR topics
+        // tocTopics = tocTopics.concat(jpTopics); // including JP topics
+        // tocTopics = tocTopics.concat(krTopics); // including KR topics
         tocTopics.sort();
 
         log("tocTopics: " + tocTopics.length);
@@ -692,7 +692,7 @@ function updateSiteMap(cb) {
 }
 exports.updateSiteMap = updateSiteMap
 
-var verifyFiles = gulp.series(verifyMarkdown);
+var verifyFiles = gulp.series(verifyMarkdownDocs);
 
 function buildCore(cb) {
     // clean output files
@@ -878,19 +878,24 @@ function copyTemplateBackup(cb) {
 }
 exports.copyTemplateBackup = copyTemplateBackup;
 
-function verifyMarkdown(cb) {
-    ensureEnvironment();
-    if (transformer === null || transformer === undefined) {
-        if (cb) cb("transformer failed to load"); return;
-    }
+function verifyMarkdownDocs(cb) {
+    // ensureEnvironment();
+    // if (transformer === null || transformer === undefined) {
+    //     if (cb) cb("transformer failed to load"); return;
+    // }
     console.log('verifying .md files ...');
+
+    // var vm = require('./test/verify-markdown.js')
+    var mvFile = require('./src/ext/MarkdownVerifier');
+    var mv = new mvFile.MarkdownVerifier();
 
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    'doc/en/**/*.md',
-    'doc/jp/**/*.md',
-    'doc/kr/**/*.md',
+    'doc/en/**/inputs/combo/overview.md',
+    // 'doc/en/**/*.md',
+    // 'doc/jp/**/*.md',
+    // 'doc/kr/**/*.md',
     //'doc/kr/**/chart-legends.md',
     // 'doc/en/**/zoomslider*.md',
     '!doc/**/obsolete/**/*.md',
@@ -899,18 +904,23 @@ function verifyMarkdown(cb) {
         var fileContent = file.contents.toString();
         var filePath = file.dirname + "\\" + file.basename
         // filePath = '.\\doc\\' + filePath.split('doc\\')[1];
-        // console.log('verifying: ' + filePath);
+        console.log('verifying: ' + filePath);
         filesCount++;
-        var result = transformer.verifyMetadata(fileContent, filePath);
-        if (result.isValid) {
-            // console.log('verified:  ' + filePath);
-            // fileContent = result.fileContent;
-            //file.contents = Buffer.from(fileContent);
-            // auto-update topics with corrections if any
-            //fs.writeFileSync(filePath, fileContent);
-        } else {
-            errorsCount++;
-        }
+        // var isValid = transformer.verifyMarkdown(fileContent, filePath);
+        mv.verifyMarkdownFile(fileContent, filePath);
+
+        // var result = transformer.verifyMetadata(fileContent, filePath);
+        // if (result.isValid) {
+        //     // console.log('verified:  ' + filePath);
+        //     // fileContent = result.fileContent;
+        //     //file.contents = Buffer.from(fileContent);
+        //     // auto-update topics with corrections if any
+        //     //fs.writeFileSync(filePath, fileContent);
+        //     // transformer.verifyLinksAPI(fileContent, filePath);
+
+        // } else {
+        //     errorsCount++;
+        // }
         fileCallback(null, file);
     }))
     .on("end", () => {
@@ -925,23 +935,23 @@ function verifyMarkdown(cb) {
         }
     })
     .on("error", (err) => {
-        console.log("Error in verifyMarkdown()");
+        console.log("Error in verifyMarkdownDocs()");
         if (cb) cb(err);
     });
 }
-exports.verifyMarkdown = verifyMarkdown;
+exports.verifyMarkdownDocs = verifyMarkdownDocs;
 
 
-function fixMarkdownTables(cb) {
+function verifyMarkdownTables(cb) {
 
-    console.log('fixMarkdownTables .md files ...');
+    console.log('verifyMarkdownTables .md files ...');
 
     var filesCount = 0;
     var errorsCount = 0;
     gulp.src([
-    // 'doc/en/**/*.md',
+    'doc/en/**/*.md',
     // 'doc/jp/**/*.md',
-    'doc/kr/**/*.md',
+    // 'doc/kr/**/*.md',
     '!doc/**/obsolete/**/*.md',
     ])
     .pipe(es.map(function(file, fileCallback) {
@@ -995,11 +1005,11 @@ function fixMarkdownTables(cb) {
         // if (cb) cb();
     })
     .on("error", (err) => {
-        console.log("Error in fixMarkdownTables()");
+        console.log("Error in verifyMarkdownTables()");
         if (cb) cb(err);
     });
 }
-exports.fixMarkdownTables = fixMarkdownTables;
+exports.verifyMarkdownTables = verifyMarkdownTables;
 
 
 function getSampleAltText(str) {

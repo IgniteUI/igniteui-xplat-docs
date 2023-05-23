@@ -1419,6 +1419,7 @@ export class MarkdownTransformer {
     private _envBrowser: string = "";
 
     public docsLanguage: string = '';
+    public docsAutoCorrect: boolean = false;
 
     shouldOmitFencedCode(language: string, platform: APIPlatform[], components: string[], options: any) {
 
@@ -1868,6 +1869,106 @@ export class MarkdownTransformer {
         //console.log("metadata " + filePath);
 
         return { fileContent: fileContent, isValid: mdValidated};
+    }
+
+    verifyLinkToSample(str: string, filePath: string, lineIndex: number) {
+
+    }
+
+    verifyLinkToAPI(str: string, filePath: string, lineIndex: number): string | null {
+
+        var location = filePath + ":" + lineIndex;
+        var skipTypes = ["boolean", "number", "string", "class"];
+        var skipValues = ["true", "false", "null", "undefined"];
+
+        if (str.includes('-')) null;
+        if (str.includes('<')) null;
+
+        var apiMember = str.split("`").join("").trim();
+        if (skipTypes.includes(apiMember)) return null;
+        if (skipValues.includes(apiMember)) return null;
+
+        if (str === ``)
+        {
+            return location + " API link cannot be empty: " + str;
+        }
+
+        if (str.startsWith("` "))
+        {
+            if (this.docsAutoCorrect) str = str.replace("` ", "`");
+
+            return location + " API link cannot start with space: " + str;
+        }
+        if (str.startsWith(" `"))
+        {
+            if (this.docsAutoCorrect) str = str.replace(" `", "`");
+
+            return location + " API link cannot end with space: " + str;
+        }
+
+        if (str[0] === str[0].toLowerCase())
+        {
+            if (this.docsAutoCorrect) str = str.replace( str[0].toLowerCase(),  str[0].toUpperCase());
+
+            return location + " API link cannot start with lowercase: " + str;
+        }
+
+        var platformPrefixes = ["Igb", "Igx", "Igr", "Igc"];
+        for (const prefix of platformPrefixes)
+        {
+            if (str.startsWith("`" + prefix))
+            {
+                if (this.docsAutoCorrect) str = str.replace("`" + prefix, "`");
+
+                return location + " API link cannot start with '" + prefix + "' prefix: " + str;
+            }
+        }
+
+        return null;
+    }
+
+    verifyMarkdown(fileContent: string, filePath: string): any {
+        var result: any = {};
+        result.isValid = true;
+
+        var sections = fileContent.split('\n\r\n\r');
+
+        console.log(sections[0]);
+        console.log("-------------------------------------")
+        console.log(sections[1]);
+        return result;
+    }
+
+    verifyLinksAPI(fileContent: string, filePath: string): any {
+        var issues: any[] = [];
+        var lines = fileContent.split('\n');
+        var links = [];
+        for (let i = 0; i < lines.length; i++) {
+            let line = lines[i];
+            if (line.includes('| ')) continue;
+
+            let words = line.split(' ');
+            for (const word of words) {
+
+                var item = word.replace('\r', '').replace(',', '');
+                if (item.includes('sample=')) continue;
+                if (item.includes('```')) continue;
+
+                if (item.includes('-')) continue;
+                if (item.includes('<')) continue;
+                if (item.includes('`string')) continue;
+                if (item.includes('`number')) continue;
+                if (item.includes('`boolean')) continue;
+
+                if (item.startsWith('`')) {
+                    var check = this.verifyLinkToAPI(item, filePath, i)
+                    links.push(item);
+                    // console.log( filePath + ':' + i + " " + item);
+                }
+            }
+        }
+
+        console.log(links);
     }
 
     // updateGitIgnore(excludeFiles: string[])
