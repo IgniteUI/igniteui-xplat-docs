@@ -354,6 +354,12 @@
         "name": "Virtualization and performance",
         "href": "grids/grid/virtualization.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Theming",
+        "href": "grids/theming.md",
+        "status": ""
       }
     ]
   },
@@ -969,11 +975,6 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "name": "Theming",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   },
@@ -1963,12 +1964,6 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "Theming",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   }
