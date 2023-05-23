@@ -31,7 +31,7 @@ The Polar Spline Area Chart renders also as a collection of polygons but they ha
 
 ## {Platform} Polar Marker Chart
 
-The Polar Marker Chart renders using a collection of markers representing data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Marker Chart](scatter-chart.md#{PlatformLower}-Scatter-Marker-Chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarScatterSeries`, as shown in the example below:
+The Polar Marker Chart renders using a collection of markers representing data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Marker Chart](scatter-chart.md#{PlatformLower}-scatter-marker-chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarScatterSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/polar-scatter-chart", height="600", alt="{Platform} Polar Marker Chart"`
 
@@ -41,7 +41,7 @@ The Polar Marker Chart renders using a collection of markers representing data p
 
 ## {Platform} Polar Line Chart
 
-The Polar Line Chart renders using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md#{PlatformLower}-Scatter-Line-Chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
+The Polar Line Chart renders using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md#{PlatformLower}-scatter-line-chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} Polar Line Chart"`
 
@@ -51,7 +51,7 @@ The Polar Line Chart renders using a collection of straight lines connecting dat
 
 ## {Platform} Polar Spline Chart
 
-The Polar Spline Chart renders using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. This Chart uses the same concepts of data plotting as the [Scatter Spline Chart](scatter-chart.md#{PlatformLower}-Scatter-spline-chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarSplineSeries`, as shown in the example below:
+The Polar Spline Chart renders using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. This Chart uses the same concepts of data plotting as the [Scatter Spline Chart](scatter-chart.md#{PlatformLower}-scatter-spline-chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarSplineSeries`, as shown in the example below:
 
 `sample="/charts/data-chart/polar-spline-chart", height="600", alt="{Platform} Polar Spline Chart"`
 

@@ -125,7 +125,7 @@ You can create this type of chart in the `XamDataChart` control by binding your 
 
 The {Platform} Range Column Chart belongs to a group of range charts and is rendered using vertical rectangles that can appear in the middle of the plot area of the chart, rather than stretching from the bottom like the traditional [Category Column Chart](column-chart.md#{PlatformLower}-column-chart-example). This type of series emphasizes the amount of change between low values and high values in the same data point over a period of time or compares multiple items. Range values are represented on the Y-Axis and categories are displayed on the X-Axis.
 
-The Range Column Chart is identical to the [Range Area Chart](area-chart.md)(area-chart.md#{PlatformLower}-Range-Area-chart) in all aspects except that the ranges are represented as a set of vertical columns rather than a filled area.
+The Range Column Chart is identical to the [Range Area Chart](area-chart.md)(area-chart.md#{PlatformLower}-range-area-chart) in all aspects except that the ranges are represented as a set of vertical columns rather than a filled area.
 
 You can create this type of chart in the `XamDataChart` control by binding your data to a `RangeColumnSeries`, as shown in the example below:
 
