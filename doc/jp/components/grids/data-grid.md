@@ -122,7 +122,7 @@ import 'igniteui-webcomponents-grids/grids/themes/light/bootstrap.css';
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-グリッドの外観をカスタマイズする方法の詳細については、[スタイル設定](data-grid.md#{PlatformLower}-grid-スタイル設定の構成)セクションを参照してください。
+グリッドの外観をカスタマイズする方法の詳細については、[スタイル設定](data-grid.md#{PlatformLower}-grid-スタイル設定の構成) セクションを参照してください。
 
 <!-- end: WebComponents -->
 

@@ -43,9 +43,9 @@ _language: ja
 
 多数のデータ ポイント (10,000 以上など) を含むデータ ソースをプロットする必要がある場合は、その目的のために特別にデザインされた次のタイプのシリーズのいずれかで {Platform} `XamDataChart` を使用することをお勧めします。
 
-- [カテゴリ ポイント チャート](../types/point-chart.md)や[散布マーカー チャート](../types/scatter-chart.md#{PlatformLower}-散布マーカー-チャート)の代わりに[散布高密度チャート](../types/scatter-chart.md#{PlatformLower}-散布高密度チャート)
-- [カテゴリ折れ線チャート](../types/line-chart.md#{PlatformLower}-折れ線チャートの例)や[散布折れ線チャート](../types/scatter-chart.md#{PlatformLower}-散布折れ線チャート)の代わりに[散布ポリライン チャート](../types/shape-chart.md#{PlatformLower}-散布ポリライン-チャート)
-- [カテゴリ エリア チャート](../types/area-chart.md#{PlatformLower}-エリア-チャートの例)や[縦棒チャート](../types/column-chart.md#{PlatformLower}-縦棒チャートの例)の代わりに[散布ポリゴン チャート](../types/shape-chart.md#{PlatformLower}-散布ポリゴン-チャート)
+- [カテゴリ ポイント チャート](../types/point-chart.md) や[散布マーカー チャート](../types/scatter-chart.md#{PlatformLower}-散布マーカー-チャート) の代わりに[散布高密度チャート](../types/scatter-chart.md#{PlatformLower}-散布高密度チャート)
+- [カテゴリ折れ線チャート](../types/line-chart.md#{PlatformLower}-折れ線チャートの例) や[散布折れ線チャート](../types/scatter-chart.md#{PlatformLower}-散布折れ線チャート) の代わりに[散布ポリライン チャート](../types/shape-chart.md#{PlatformLower}-散布ポリライン-チャート)
+- [カテゴリ エリア チャート](../types/area-chart.md#{PlatformLower}-エリア-チャートの例) や[縦棒チャート](../types/column-chart.md#{PlatformLower}-縦棒チャートの例) の代わりに[散布ポリゴン チャート](../types/shape-chart.md#{PlatformLower}-散布ポリゴン-チャート)
 
 ### データ構造
 
