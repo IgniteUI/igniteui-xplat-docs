@@ -6,7 +6,7 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"position"}],"originalName":"Position"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"count"}],"originalName":"Count"},
     { "names":[{"platform":"React","mappedType":"IgrFinancialCalculationDataSource","mappedName":"dataSource"}],"originalName":"DataSource"},
-    { "names":[{"platform":"React","mappedType":"IgrFinancialCalculationSupportingCalculations","mappedName":"supportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"IgrFinancialCalculationSupportingCalculations","mappedName":"supportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialPriceSeries",
     "names":[{"platform":"React","fileName":"igr-financial-price-series.ts","dynamicModuleName":"igr-financial-price-series-dynamic-module.ts","moduleName":"igr-financial-price-series-module.ts","mappedName":"IgrFinancialPriceSeries"}],
     "members":[
@@ -15,6 +15,7 @@
     { "names":[{"platform":"React","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"React","mappedType":"number[]","mappedName":"trendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"React","mappedType":"PriceDisplayType","mappedName":"displayType"}],"originalName":"DisplayType"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"negativeOutline"}],"originalName":"NegativeOutline"},
@@ -29,7 +30,7 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialSeries",
     "names":[{"platform":"React","fileName":"igr-financial-series.ts","mappedName":"IgrFinancialSeries"}],
     "members":[
@@ -70,7 +71,7 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationSupportingCalculations",
     "names":[{"platform":"React","fileName":"igr-financial-calculation-supporting-calculations.ts","mappedName":"IgrFinancialCalculationSupportingCalculations"}],
     "members":[
@@ -82,13 +83,13 @@
     { "names":[{"platform":"React","mappedType":"IgrDataSourceSupportingCalculation","mappedName":"longVolumeOscillatorAverage"}],"originalName":"LongVolumeOscillatorAverage"},
     { "names":[{"platform":"React","mappedType":"IgrDataSourceSupportingCalculation","mappedName":"shortPriceOscillatorAverage"}],"originalName":"ShortPriceOscillatorAverage"},
     { "names":[{"platform":"React","mappedType":"IgrDataSourceSupportingCalculation","mappedName":"longPriceOscillatorAverage"}],"originalName":"LongPriceOscillatorAverage"},
-    { "names":[{"platform":"React","mappedType":"(arg1: number) => number","mappedName":"makeSafe"}],"originalName":"MakeSafe"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"(arg1: number) => number","mappedName":"makeSafe"}],"originalName":"MakeSafe"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ColumnSupportingCalculation",
-    "names":[{"platform":"React","fileName":"igr-column-supporting-calculation.ts","mappedName":"IgrColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"React","fileName":"igr-column-supporting-calculation.ts","mappedName":"IgrColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataSourceSupportingCalculation",
-    "names":[{"platform":"React","fileName":"igr-data-source-supporting-calculation.ts","mappedName":"IgrDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"React","fileName":"igr-data-source-supporting-calculation.ts","mappedName":"IgrDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalculatedColumn",
-    "names":[{"platform":"React","fileName":"igr-calculated-column.ts","mappedName":"IgrCalculatedColumn"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"React","fileName":"igr-calculated-column.ts","mappedName":"IgrCalculatedColumn"}],"members":[],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationDataSource",
     "names":[{"platform":"React","fileName":"igr-financial-calculation-data-source.ts","mappedName":"IgrFinancialCalculationDataSource"}],
     "members":[
@@ -104,4 +105,4 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"multiplier"}],"originalName":"Multiplier"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"specifiesRange"}],"originalName":"SpecifiesRange"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"specifiesRange"}],"originalName":"SpecifiesRange"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
