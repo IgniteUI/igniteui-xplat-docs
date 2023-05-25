@@ -666,7 +666,7 @@ constructor() {
 }
 ```
 
-Define a `popin` animanion:
+Define a `popin` animation:
 
 ```css
 @keyframes popin {
@@ -697,7 +697,7 @@ Define a `popin` animanion:
 
 <!-- Angular -->
 
-## Known issues and limitations
+### Known issues and limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
@@ -713,8 +713,8 @@ public backgroundClasses = {
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
-
 ```
+
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
@@ -747,15 +747,16 @@ constructor() {
     }
     this._bind();
 }
+```
 
-## API References
+### API References
 
 * `Column`
 * `{ComponentName}`
 
-## Additional Resources
+### Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -768,9 +769,10 @@ constructor() {
 * [Column Hiding](column-hiding.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-* [Toolbar](toolbar.md)
+<!-- * [Toolbar](toolbar.md) -->
 * [Multi-column Headers](multi-column-headers.md)
 * [Display Density](display-density.md)
+<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.

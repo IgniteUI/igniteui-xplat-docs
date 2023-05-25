@@ -24,7 +24,6 @@ The goal here is to provide cross platform long form doc for Angular, Blazor, Re
 
 - [Writing Documentation](#Writing-Documentation)
   * [Creating Branches](#Creating-Branches)
-  * [Changing Docs](#Changing-Docs)
   * [Following Rules](#Following-Rules)
   * [Using Variables](#Using-Variables)
 
@@ -48,11 +47,11 @@ This section provides information on how to install software required for runnin
 1. Install [Node.js](https://nodejs.org)
 2. Install [Yarn](https://yarnpkg.com/en/)
 
-#### Installing DocFX
+#### Installing DocFX (v.2.48.1.0)
 
 On Windows based platforms, install [chocolatey](https://chocolatey.org/) and then run:
 ```
-choco install docfx
+choco install docfx -y --version=2.48.1.0
 ```
 
 On macOS based platforms, use `brew` to install the latest version of [DocFX](https://dotnet.github.io/docfx)

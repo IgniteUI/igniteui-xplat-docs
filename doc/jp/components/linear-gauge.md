@@ -24,10 +24,10 @@ _language: ja
 ## 依存関係
 {Platform} gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
@@ -79,9 +79,9 @@ ModuleManager.register(
 ```html
  <igx-linear-gauge width="700px"
                    height="30px"
-                   minimumValue = "5"
-                   maximumValue = "55"
-                   value = "43">
+                   minimumValue="5"
+                   maximumValue="55"
+                   value="43">
     <igx-linear-graph-range startValue="0"
                             endValue="15"
                             brush="red">
@@ -100,9 +100,9 @@ ModuleManager.register(
 ```tsx
  <IgrLinearGauge width="700px"
                    height="30px"
-                   minimumValue = {5}
-                   maximumValue = {55}
-                   value = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={43}>
     <IgrLinearGraphRange startValue={0}
                             endValue={15}
                             brush="red"/>

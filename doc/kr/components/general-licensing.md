@@ -37,17 +37,17 @@ This will allow you to seamlessly use a mix of packages from the public npm regi
 
 ### Now, to log in to our private feed using npm, run the adduser command and specify a user account and password:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm adduser --registry=https://packages.infragistics.com/npm/js-licensed/ --scope=@infragistics --always-auth
-</pre>
+```
 
 
 ### After this is done, you will be logged in and you will be able to install the latest versions of the Ignite UI packages into your project:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm uninstall igniteui-dockmanager
 npm install @infragistics/igniteui-dockmanager
-</pre>
+```
 
 Have in mind that we have set the {ProductName} package to be scoped, meaning that no changing the registries is needed if you want to install packages from our private feed and from npmjs.org simultaneously.
 
@@ -113,11 +113,11 @@ The following information is on how to setup authentication to our private npm r
 Update the azure-pipelines.yml with the following steps:
 
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm config set @infragistics:registry $(npmRegistry)
 npm config set always-auth true --scope:@infragistics
 npm config set _auth=$(token) --scope:@infragistics
-</pre>
+```
 
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 380px"
   src="../images/general/azure-ci-pipelines-ci-yml-3.jpg"

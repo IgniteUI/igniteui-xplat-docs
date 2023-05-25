@@ -14,7 +14,7 @@ The `{ComponentName}` provides editing that has a built-in validation mechanism 
 
 ### Configure via Template-Driven Configuration
 
-We extend some of the {Platform} Forms validator directives to directly work with the `Column`. The same validators are available as attributes to be set declaratively in `Column`. The following validators are supported out-of-the-box:
+We extend some of the {Platform} Forms validator to directly work with the `Column`. The same validators are available as attributes to be set declaratively in `Column`. The following validators are supported out-of-the-box:
 
 - Required
 - Min
@@ -23,6 +23,8 @@ We extend some of the {Platform} Forms validator directives to directly work wit
 - MinLength
 - MaxLength
 - Pattern
+
+<!-- Angular -->
 
 To validate that a column input would be set and the value is going to be formatted as an email, you can use the related directives:
 
@@ -37,10 +39,6 @@ To validate that a column input would be set and the value is going to be format
 The following sample demonstrates how to use the prebuilt `Required`, `Email` and `Min` validator directives in a `{ComponentName}`.
 
 `sample="/{ComponentSample}/data-validator-service", height="600", alt="{Platform} {ComponentTitle} Validation Basic Example"`
-
-
-
-<!-- Angular -->
 
 ### Configure via Reactive Forms
 
@@ -431,7 +429,7 @@ private rowValidator(): ValidatorFn {
 
         const age = formGroup.get('Age');
         const hireDate = formGroup.get('HireDate');
-        if((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
+        if ((new Date().getFullYear() - new Date(hireDate.value).getFullYear()) + 18 >= age.value) {
             returnObject['ageLessHireDate'] = true;
         }
 
@@ -661,11 +659,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
 * [{ComponentTitle} Row Editing](row-editing.md)
 * [{ComponentTitle} Row Adding](row-adding.md)
 * [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 

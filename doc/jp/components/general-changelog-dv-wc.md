@@ -3,30 +3,62 @@ title: {Platform} 新機能 | {ProductName} | インフラジスティックス
 _description: {ProductName} の新機能について学んでください。
 _keywords: Changelog, What's New, {ProductName}, Infragistics, 変更ログ, 新機能, インフラジスティックス
 _language: ja
-mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Grid", "GridSelectionMode", DataGridCellEventArgs, DataGridSelectionMode, DataSourceSummaryOperand]
+mentionedTypes: ["SeriesViewer", "XYChart", "DomainChart", "XamDataChart", "XamGeographicMap", "DatePicker", "MultiColumnComboBox", "CategoryChart", "CrosshairLayer", "FinalValueLayer", "CalloutLayer", "DataLegend", "Infragistics.Controls.Grid", "Infragistics.Controls.GridSelectionMode"]
 namespace: Infragistics.Controls.Charts
 ---
 # {ProductName} 変更ログ
 
 {ProductName} の各バージョンのすべての重要な変更は、このページに記載されています。
 
-> [!Note]
-(*) でリストされている変更するは個別であり、**{PackageComponents}** パッケージでのみ関連しています。
+## **{PackageVerChanges-22-2.2}**
+
+### 新しいコンポーネント
+
+* [Dialog](notifications/dialog.md)
+* [Select](inputs/select.md)
+
+### {PackageGrids} (データ グリッド)
+
+* 新しい引数 `PrimaryKey` が `IgcRowDataEventArgs` に導入されました。これは、`RowAdded` および `RowDeleted` イベントによって発行されるイベント引数の一部です。グリッドに主キー属性が追加されている場合、発行された primaryKey イベント引数は行 ID を表し、それ以外の場合はデフォルトで未定義になります。
+* `RowSelectionChanging` イベント引数が変更されました。現在、グリッドが primaryKey を設定した場合、`OldSelection`、`NewSelection`、`Added` および `Removed` コレクションは、選択された要素の行キーで構成されなくなりましたが、いずれにしても行データが出力されるようになりました。
+* グリッドがリモート データを操作していて、主キーが設定されている場合、現在グリッド ビューに含まれていない選択された行に対して、部分的な行データ オブジェクトが発行されます。
+* 選択された行がグリッド コンポーネントから削除されると、`RowSelectionChanging` イベントは発生しなくなります。
+* `OnGroupingDone` イベントは `GroupingDone` に名前が変更され、on プレフィックスを付けない出力規則に違反しなくなりました。
+* `OnDensityChanged` イベントの名前が `DensityChanged` に変更され、on プレフィックスを付けない出力規則に違反しなくなりました。このイベントを公開しているすべてのコンポーネントが影響を受けます。
+
+### {PackageInputs}
+
+* `IgcDateTimeInput`、StepDownAsync(DateTimeInputDatePart.Date, SpinDelta.Date) は、DateTimeInputDatePart ではなく DatePart に切り詰められるようになりました。
+* `IgcRadio` および `IgcRadioGroup` は、無効な状態のスタイルとともにコンポーネントの検証が追加されました。
+* `IgcMask` は、マスク パターン リテラルをエスケープする機能が追加されました。
+* `IgcBadge` は、バッジの形状を制御する `Shape` プロパティを追加し、`Square` または `Rounded` のいずれかになります。デフォルトでは、バッジの形状は rounded です。
+* `IgcAvatar`、`roundShape` プロパティは廃止され、将来のバージョンで削除される予定です。ユーザーは、新しく追加された `Shape` 属性によってアバターの形状を制御できます。これは、`Square`、`Rounded`、または `Circle` にすることができます。アバターのデフォルトの形状は `Square`です。
+
+### {PackageGrids} (ピボット グリッド)
+
+* `IgcPivotDateDimension` プロパティの `InBaseDimension` と `InOption` は廃止され、それぞれ `BaseDimension` と `Options` に名前が変更されました。
+
+### {PackageDockManager} (DockManager)
+
+* [ドック マネージャー](layouts/dock-manager.md) のペイン コレクションに保護されたセッターが追加されました。ペインを作成するときに、ネストされた構造でペインを設定するのではなく、Add を呼び出す必要があります。
 
 ## **{PackageVerChanges-22-2.1}**
 
 ### 新しいコンポーネント
 
-* [コンボ](grids/combo/overview.md)
-* [ピボット グリッド](grids/pivot-grid/overview.md)
-* [ステッパー](layouts/stepper.md)
+* [Accordion](layouts/accordion.md)
+* [Combo Box](inputs/combo/overview.md)
+* [Expansion Panel](layouts/expansion-panel.md)
+* [Pivot Grid](grids/pivot-grid/overview.md)
+* [Stepper](layouts/stepper.md)
+* [Tabs](layouts/tabs.md)
 
 ## **{PackageVerChanges-22-2}**
 
 ### 新しいコンポーネント
 
 * [Grid](grids/data-grid.md)
-* [TreeGrid](grids/tree-grid/overview.md)
+* [Tree Grid](grids/tree-grid/overview.md)
 
 ### {PackageCharts}
 
@@ -60,7 +92,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 `IncludedProperties` | `ExcludedProperties` を使用している場合、[チャート集計](charts/features/chart-data-aggregations.md)は機能しません。チャートのこれらのプロパティは非集計データ用です。データを集計しようとすると、これらのプロパティは使用できなくなります。うまくいかない理由は、描画のためにチャートに渡されたコレクションを集計により置き換えるためです。include/exclude プロパティは、そのデータの in/out プロパティをフィルターするように設計されており、それらのプロパティは新しい集計されたコレクションには存在しません。
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 * `Column` を `DataGridColumn` に変更しました。
 * `GridCellEventArgs` を `DataGridCellEventArgs` に変更しました。
@@ -85,7 +117,7 @@ namespace: Infragistics.Controls.Charts
 * 新しい `XAxisMaximumGap` は、`XAxisGap` を使用するときにプロットされたシリーズの最大許容値を決定します。ギャップは、プロットされたシリーズの列またはバー間のスペースの量を決定します。
 * 新しい `XAxisMinimumGapSize` は、`XAxisGap` を使用するときに、プロットされたシリーズの最小許容ピクセルベース値を決定し、各カテゴリ間に常にある程度の間隔があることを保証します。
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 * 新規機能:
 - [行のページング](grids/data-grid/row-paging.md)
@@ -105,8 +137,10 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **2.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### 新しいコンポーネントとテーマ
+
+これらは **{PackageComponents}** パッケージでのみ関連しています。
 
 * [スライダー](inputs/slider.md)を追加しました。
 * [範囲スライダー](inputs/slider.md)を追加しました。
@@ -129,7 +163,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChanges-21-2.1}**
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 #### データ グリッド
 - ドロップダウンの項目に複数のフィールドで構成されるキーが含まれている場合に使用される `ComboBoxColumn` に string[] 型の `ValueMultiField` が追加されました。
@@ -151,8 +185,10 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **1.0.0**
-### (*) {PackageComponents}
+### {PackageComponents}
 #### 新しいコンポーネント
+
+これらは **{PackageComponents}** パッケージでのみ関連しています。
 
 * [Avatar](layouts/avatar.md)
 * [Badge](inputs/badge.md)
@@ -177,7 +213,7 @@ namespace: Infragistics.Controls.Charts
 > [!Note]
 > パッケージ 「lit-html」 を確認してください。最適な互換性のために、「^2.0.0」 以降がプロジェクトに追加されます。
 
-### {PackageCharts}
+### {PackageCharts} (チャート)
 
 このリリースでは、地理マップとすべてのチャート コンポーネントのビジュアル デザインと構成オプションにいくつかの改善と簡素化が導入されています。
 
@@ -212,7 +248,7 @@ namespace: Infragistics.Controls.Charts
 
 <div class="divider--half"></div>
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 * 新規機能:
     - [フィルター行](grids/data-grid/column-filtering.md)
@@ -228,7 +264,7 @@ namespace: Infragistics.Controls.Charts
 <div class="divider--half"></div>
 
 ## **{PackageVerChanges-21-1}**
-### {PackageCharts}
+### {PackageCharts} (チャート)
 
 このリリースでは、すべてのチャート コンポーネントに、いくつかの新しく改善されたビジュアル デザインと構成オプションが導入されています。例えば、`DataChart`、`CategoryChart`、および `FinancialChart`。
 
@@ -279,7 +315,7 @@ namespace: Infragistics.Controls.Charts
 * バブル、ドーナツ、および円チャートで使用できる水平方向の `Orientation` プロパティを ItemLegend に追加しました。
 * `LegendHighlightingMode` プロパティの追加 - 凡例項目にホバーした時にシリーズの強調表示を有効にします。
 
-### {PackageMaps}
+### {PackageMaps} (GeoMap)
 
 > [!Note]
 > これらの機能は CTP です。
@@ -307,7 +343,7 @@ namespace: Infragistics.Controls.Charts
 
 ### {PackageInputs}
 
-#### Date Picker
+#### 日付ピッカー
 
 * `ShowTodayButton` - 現在の日付のボタンの表示を切り替えます。
 * `Label` - 日付値の上にラベルを追加します。
@@ -324,7 +360,7 @@ namespace: Infragistics.Controls.Charts
 
 ## **{PackageVerChangedFields}**
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 > [!Note]
 > これらの重大な変更は、グリッド パッケージで導入されました。
@@ -345,11 +381,11 @@ const colSortDesc = new IgcColumnSortDescription();
 colSortDesc.field = "UnitsInStock";
 const income = new IgcColumnGroupDescription();
 income.field = "Income";
-
 ```
+
 ## **{PackageVerRenamedGrid}**
 
-### {PackageGrids}
+### {PackageGrids} (データ グリッド)
 
 - Live Grid の名称変更
 

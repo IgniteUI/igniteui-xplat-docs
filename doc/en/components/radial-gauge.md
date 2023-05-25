@@ -24,10 +24,10 @@ The following sample demonstrates how setting multiple properties on the same `X
 ## Dependencies
 When installing the gauge component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
@@ -36,10 +36,10 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Adding Nuget Package](general-nuget-feed.md)
 
 Afterwards you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 ## Component Modules
@@ -159,7 +159,6 @@ The following code demonstrates how create a radial gauge containing a needle an
 ```
 
 ```razor
-
 <IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
@@ -259,7 +258,6 @@ The backing can be circular or fitted. A circular shape creates a 360 degree cir
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -387,7 +385,6 @@ The radial gauge labels are visual elements displaying numeric values at a speci
   Value="50"
   Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
@@ -463,7 +460,6 @@ Tick marks are thin lines radiating from the center of the radial gauge. There a
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 

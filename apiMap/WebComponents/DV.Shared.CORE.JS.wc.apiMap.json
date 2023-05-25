@@ -29,6 +29,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"StandardDeviation"}],"originalName":"StandardDeviation"},
     { "names":[{"platform":"WebComponents","mappedType":"ErrorBarCalculatorType","mappedName":"StandardError"}],"originalName":"StandardError"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics"},
+  { "originalName":"FocusEventArgs",
+    "names":[{"platform":"WebComponents","fileName":"igc-focus-event-args.ts","mappedName":"IgcFocusEventArgs"}],
+    "members":[
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"target"}],"originalName":"Target"}],"originalNamespace":"Infragistics"},
   { "originalName":"RectChangedEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-rect-changed-event-args.ts","mappedName":"IgcRectChangedEventArgs"}],
     "members":[
@@ -359,6 +363,10 @@
     { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"Default"}],"originalName":"Default"},
     { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"DenaliLight"}],"originalName":"DenaliLight"},
     { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"MaterialLight"}],"originalName":"MaterialLight"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"SlingshotLight"}],"originalName":"SlingshotLight"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"SlingshotDark"}],"originalName":"SlingshotDark"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"RevealLight"}],"originalName":"RevealLight"},
+    { "names":[{"platform":"WebComponents","mappedType":"BaseControlTheme","mappedName":"RevealDark"}],"originalName":"RevealDark"},
     { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Theming.Implementation"},
   { "originalName":"ElevationMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"ElevationMode.ts","mappedName":"ElevationMode"}],

@@ -97,36 +97,35 @@ ngAfterViewInit(): void {
 
 ```typescript
 connectedCallback(): void {
-    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
     tree.filteringOperands.push({
-        fieldName: 'ID',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('contains'),
-        searchVal: 'a',
+        searchVal: 'cha',
         ignoreCase: true
     });
-    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    const subTree = new IgcFilteringExpressionsTree(FilteringLogic.Or);
     subTree.filteringOperands.push({
-        fieldName: 'ContactTitle',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
         searchVal: 'b',
         ignoreCase: true
     });
     subTree.filteringOperands.push({
-        fieldName: 'CompanyName',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('startsWith'),
-        searchVal: 'c',
+        searchVal: 'Chan',
         ignoreCase: true
     });
     tree.filteringOperands.push(subTree);
-
-    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
+    grid.advancedFilteringExpressionsTree = tree;
 }
 ```
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
-> [!Note]
->You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
+>
+> You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 <!-- Angular -->
 ## External Advanced Filtering
@@ -470,7 +469,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -481,6 +480,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

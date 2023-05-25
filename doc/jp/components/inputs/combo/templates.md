@@ -12,7 +12,7 @@ _language: ja
 
 ## コンボボックス テンプレートの例
 
-`sample="/grids/combo/templates", height="400", alt="{Platform} コンボ テンプレート"`
+`sample="/inputs/combo/templates", height="400", alt="{Platform} コンボ テンプレート"`
 
 
 

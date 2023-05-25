@@ -2,7 +2,7 @@
 title: {Platform} Grid theming | Real-Time {Platform} Tables | The Lightweight {Platform} Web Components table | Infragistics
 _description: .
 _keywords: {Platform} data grid, infragistics, data grids theming, theming, {ProductName}, table
-mentionedTypes: ['Infragistics.Controls.Grid']
+mentionedTypes: ['Infragistics.Controls.Grid.Implementation.Grid']
 namespace: Infragistics.Controls
 ---
 
@@ -97,12 +97,86 @@ In addition to predefined themes and palettes, you can further customize the loo
 | --drop-area-border-radius                | number between 0 and 1   | The border radius used for drop-area. Can be a fraction between 0 and 1, pixels, or percent. |
 
 ### How to use
-As mentioned above Using the CSS vars from the table allow us to style our grid. Let's say that we want to change the grid header background and text colors, we can do that like so.
+As mentioned above Using the CSS vars from the table allow us to style our grid. Let's say that we want to change the grid to use a Dark Theme, by changing the following header background and text colors etc., we can do that like so in a file optionally called dark-theme.css.
 
-```CSS
-.my-grid {
-    --header-background: #09f;
-    --header-text-color: #fff;
+import "./dark-theme.css";
+
+```css
+.ig-data-grid {
+  /* shared variables used in custom properties */
+  --cell-text-color:#58258b;
+  --cell-background:#191919;
+  --cell-selected-background: #58258b;
+  --cell-selected-within-text-color: #191919;
+  --cell-selected-within-background: #58258b;
+
+  --row-selected-background:var(--cell-selected-background);
+  --row-hover-background:var(--cell-selected-background);
+  --row-hover-text-color:var(--cell-background);
+
+  --header-background: #58258b;
+  --header-text-color: #191919;
+  --header-separator-background: #58258b;
+  --header-separator-width: 5px;
+
+  --section-header-background: #191919;
+  --section-header-text-color: #58258b;
+  --section-header-selected-background: #58258b;
+  --section-header-selected-text-color: #191919;
+
+  --row-separator-background: #191919;
+  --row-separator-last-sticky-row-background: #191919;
+  --row-separator-pinned-row-background: #58258b;
+  --row-separator-sticky-row-background: #58258b;
+
+  --column-resizing-separator-background: #58258b;
+  --column-moving-separator-background: #58258b;
+
+
+  --filtering-header-background: #272727;
+  --filtering-header-text-color: #ffffff;
+  --filtering-row-background: #272727;
+  --filtering-row-text-color: #ffffff;
+  --tree-filtered-text-color: #ffffff;
+
+  --summary-root-background: #7446b9;
+  --summary-root-label-text-color: #191919;
+  --summary-root-value-text-color: #191919;
+}
+
+.ig-grid-column-options {
+  --background-color: black;
+  --text-color: #7446b9;
+  --summary-list-text-color: #7446b9;
+  --summary-list-background: #191919;
+}
+
+.ig-data-grid-toolbar {
+  --background-color: #191919;
+  --text-color: #58258b;
+  --dialog-background-color: #191919;
+}
+
+.ig-column-chooser {
+  --background-color: #191919;
+  --title-color: green;
+  --select-all-caption-text-color: #58258b;
+  --search-icon-color: #58258b;
+  --search-text-color: #58258b;
+  --search-background-color: #191919;
+  --search-border-color: #58258b;
+  --search-text-style: 12px 'Courier';
+}
+
+.ig-column-pinning {
+  --background-color: white;
+  --text-color: #7446b9;
+  --select-all-caption-text-color: #58258b;
+  --search-icon-color: #58258b;
+  --search-text-color: #58258b;
+  --search-background-color: #191919;
+  --search-border-color: #58258b;
+  --search-text-style: 12px 'Courier';
 }
 ```
 

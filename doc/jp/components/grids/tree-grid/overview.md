@@ -17,8 +17,6 @@ _language: ja
 
 `sample="/{TreeGridSample}/overview", height="700", alt="{Platform} グリッドの例"`
 
-
-
 <div class="divider--half"></div>
 
 ## {ProductName} Tree Grid で作業を開始
@@ -99,9 +97,9 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxTreeGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -186,10 +184,10 @@ const EMPLOYEE_DATA = [
                 Age: 29,
                 Employees: []
             },
-            ...
+            // ...
         ]
     },
-    ...
+    // ...
 ]
 ```
 
@@ -238,7 +236,10 @@ const data = [
 <!-- WebComponents -->
 ## {Platform} ツリー グリッド スタイル設定の構成
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、ツリー グリッドをさらにカスタマイズできます。ヘッダーの背景とテキストの色を変更したい場合は最初にツリー グリッドのクラスを設定する必要があります:
+
+<!-- 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、ツリー グリッドをさらにカスタマイズできます。 -->
+
+ヘッダーの背景とテキストの色を変更したい場合は最初にツリー グリッドのクラスを設定する必要があります:
 
 ```typescript
 <igc-tree-grid class="tree-grid">

@@ -21,7 +21,9 @@ The sample below demonstrates three types of **cell selection** behaviors in the
 
 ## {Platform} {ComponentTitle} Selection Options
 
+<!-- ComponentStart:  Grid -->
 The {ProductName} `{ComponentName}` component provides three different selection modes - [Row selection](row-selection.md), [Cell selection](cell-selection.md) and [Column selection](column-selection.md). By default only **Multi-cell selection** mode is enabled in the `{ComponentName}`. In order to change/enable selection mode you can use `RowSelection`, `CellSelection` or `Selectable` properties.
+<!-- ComponentEnd:  Grid -->
 
 ### {Platform} {ComponentTitle} Row Selection
 
@@ -47,7 +49,9 @@ Property `CellSelection` enables you to specify the following options:
 - `Single` - Selection of only one cell within the `{ComponentName}` would be available.
 - `Multiple` - Currently, this is the default state of the selection in the `{ComponentName}`. Multi-cell selection is available by mouse dragging over the cells, after a left button mouse clicked continuously.
 
+<!-- ComponentStart:  Grid -->
 > Go to [Cell selection topic](cell-selection.md) for more information.
+<!-- ComponentEnd:  Grid -->
 
 ### {Platform} {ComponentTitle} Column Selection
 
@@ -59,7 +63,9 @@ This leads to the following three variations:
 - Multi column selection - holding <kbd>ctrl</kbd> + <kbd>mouse click</kbd> over the column cells.
 - Range column selection - holding <kbd>shift</kbd> + <kbd>mouse click</kbd> selects everything in between.
 
+<!-- ComponentStart:  Grid -->
 > Go to [Column selection topic](column-selection.md) for more information.
+<!-- ComponentEnd:  Grid -->
 
 <!-- ComponentStart: Grid -->
 <!-- Angular -->
@@ -218,7 +224,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Row Selection](row-selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
@@ -227,6 +233,7 @@ When the grid has no `PrimaryKey` set and remote data scenarios are enabled (whe
 * [Summaries](summaries.md)
 * [Column Moving](column-moving.md)
 * [Virtualization and Performance](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

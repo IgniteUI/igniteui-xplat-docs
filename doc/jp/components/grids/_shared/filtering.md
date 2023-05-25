@@ -10,11 +10,11 @@ _language: ja
 
 # {Platform} {ComponentTitle} フィルタリング
 
-{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}`コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
+{Platform} `{ComponentName}` コンポーネントは、クイック フィルタリング、[Excel スタイル フィルタリング](excel-style-filtering.md)、および[高度なフィルタリング](advanced-filtering.md)の 3 つの異なるフィルタリング タイプを提供します。それらのフィルタリング タイプは指定された基準を満たすレコードのみを表示できるようにします。{Platform} の `{ComponentName}` コンポーネントは、`{ComponentName}` がバインドされているデータコンテナを介して、フィルター機能と広範なフィルター API を提供します。
 
 ## {Platform} {ComponentTitle} フィルタリングの例
 
-以下のサンプルは、`{ComponentName}` の**クイック フィルタリング** ユーザー エクスペリエンスを示しています。
+以下のサンプルは、`{ComponentName}` の **Excel スタイル フィルタリング** ユーザー エクスペリエンスを示しています。
 
 `sample="/{ComponentSample}/filtering-options", height="500", alt="{Platform} {ComponentTitle} フィルタリングの例"`
 
@@ -153,7 +153,7 @@ _language: ja
 以下の 5 つのフィルタリング オペランド クラスが公開されます。
    - `FilteringOperand`: カスタムフィルタリング条件の定義時に継承できるベース フィルタリング オペランドです。
    - `BooleanFilteringOperand` は、*boolean* 型のすべてのデフォルト フィルタリング条件を定義します。
-   - `NumberFilteringOperand`  は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
+   - `NumberFilteringOperand` は、*numeric* 型のすべてのデフォルト フィルタリング条件を定義します。
    - `StringFilteringOperand` は、*string* 型のすべてのデフォルト フィルタリング条件を定義します。
    - `DateFilteringOperand` は、*date* 型のすべてのデフォルト フィルタリング条件を定義します。
 
@@ -341,7 +341,7 @@ this.grid.filteringLogic = FilteringLogic.OR;
 
 ## カスタム フィルタリング オペランド
 
-フィルタリング メニューは、フィルタリング オペランド削除または変更してカスタマイズします。デフォルトでフィルタリング メニューは列のデータ型 (`BooleanFilteringOperand`、`DateFilteringOperand`, `NumberFilteringOperand`、`StringFilteringOperand`) に基づいて特定のオペランドを含みます。これらのクラスまたは基本クラス `FilteringOperand` を拡張してフィルタリング メニュー項目の動作を変更できます。
+フィルタリング メニューは、フィルタリング オペランド削除または変更してカスタマイズします。デフォルトでフィルタリング メニューは列のデータ型 (`BooleanFilteringOperand`、`DateFilteringOperand`、`NumberFilteringOperand`、`StringFilteringOperand`) に基づいて特定のオペランドを含みます。これらのクラスまたは基本クラス `FilteringOperand` を拡張してフィルタリング メニュー項目の動作を変更できます。
 
 以下のサンプルの 「Product Name」 と 「Discontinued」 列フィルタリング メニューを確認してください。「Discontinued」 列フィルターでは、オペランドの数が All に制限されています。「Product Name」 列フィルター - Contains および Does Not Contain オペランド ロジックを変更して大文字と小文字を区別した検索を実行し、Empty と Not Empty を追加します。
 
@@ -839,7 +839,7 @@ $custom-input-group: input-group-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [ソート](sorting.md)
@@ -848,6 +848,7 @@ $custom-input-group: input-group-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

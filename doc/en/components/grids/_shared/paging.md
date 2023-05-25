@@ -72,7 +72,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process.
 
-Integration between Paging and Group By is described in the [Group By](groupby.md#grid-group-by-with-paging) topic.
+Integration between Paging and Group By is described in the [Group By](groupby.md#{PlatformLower}-grid-group-by-with-paging) topic.
 
 <!-- ComponentEnd: Grid -->
 
@@ -149,7 +149,9 @@ TO-DO H-GRID CODE SNIPPET
 
 ### Paginator Configuration within Child Grids
 
+<!-- Angular -->
 Due to certain limitations in how the child grids of an `{ComponentName}` are implemented and how DI scope works, when defining a paginator component inside the `RowIsland` tags, always make sure to use the `Paginator` directive on the paginator itself. This will make sure that the child grid have the correct paginator instance as a reference:
+<!-- end:Angular -->
 
 ```html
 <igx-hierarchical-grid>
@@ -307,7 +309,7 @@ $dark-paginator-schema: extend($_dark-pagination,
                color: ("primary", 200)
             ),
             border-color:(
-               color:( "primary", 500)
+               color: ("primary", 500)
             )
         )
 );
@@ -315,22 +317,22 @@ $dark-paginator-schema: extend($_dark-pagination,
 $dark-button-schema: extend($_dark-button,
         (
             icon-color:(
-               color:("secondary", 700)
+               color: ("secondary", 700)
             ),
             icon-hover-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-hover-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             icon-focus-color:(
-               color:("primary", 500)
+               color: ("primary", 500)
             ),
             icon-focus-background:(
-               color:("secondary", 500)
+               color: ("secondary", 500)
             ),
             disabled-color:(
-               color:("primary", 700)
+               color: ("primary", 700)
             )
         )
 );
@@ -378,6 +380,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
+
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
@@ -387,6 +391,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

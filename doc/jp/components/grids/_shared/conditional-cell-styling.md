@@ -698,7 +698,7 @@ constructor() {
 
 <!-- Angular -->
 
-## 既知の問題と制限
+### 既知の問題と制限
 
 - 他の列に同じ条件でバインドされたセルがある場合に、そのうち 1 つのセルが更新された際に条件が満たされている場合も、他のセルが新しい値に基づいて更新されない問題。
 
@@ -714,8 +714,8 @@ public backgroundClasses = {
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
-
 ```
+
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
@@ -750,14 +750,14 @@ constructor() {
 }
 ```
 
-## API リファレンス
+### API リファレンス
 
 * `Column`
 * `{ComponentName}`
 
-## その他のリソース
+### その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -770,10 +770,10 @@ constructor() {
 * [列の非表示](column-hiding.md)
 * [選択](selection.md)
 * [検索](search.md)
-* [ツールバー](toolbar.md)
+<!-- * [Toolbar](toolbar.md) -->
 * [複数列ヘッダー](multi-column-headers.md)
 * [表示密度](display-density.md)
-
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

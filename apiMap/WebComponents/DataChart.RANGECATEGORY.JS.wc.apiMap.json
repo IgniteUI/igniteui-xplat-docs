@@ -4,7 +4,7 @@
     "names":[{"platform":"WebComponents","fileName":"igc-range-area-series-component.ts","dynamicModuleName":"igc-range-area-series-dynamic-module.ts","moduleName":"igc-range-area-series-module.ts","mappedName":"IgcRangeAreaSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HorizontalRangeCategorySeries",
     "names":[{"platform":"WebComponents","fileName":"igc-horizontal-range-category-series-component.ts","mappedName":"IgcHorizontalRangeCategorySeriesComponent"}],
     "members":[
@@ -26,14 +26,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesLowValuePosition"}],"originalName":"GetSeriesLowValuePosition"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeCategorySeries",
     "names":[{"platform":"WebComponents","fileName":"igc-range-category-series-component.ts","mappedName":"IgcRangeCategorySeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"lowMemberPath"}],"originalName":"LowMemberPath"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"highMemberPath"}],"originalName":"HighMemberPath"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeColumnSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-range-column-series-component.ts","dynamicModuleName":"igc-range-column-series-dynamic-module.ts","moduleName":"igc-range-column-series-module.ts","mappedName":"IgcRangeColumnSeriesComponent"}],
     "members":[
@@ -42,4 +42,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

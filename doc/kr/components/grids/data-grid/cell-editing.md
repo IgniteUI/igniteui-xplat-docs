@@ -70,7 +70,7 @@ import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
 
 this.onCommitClick = this.onCommitClick.bind(this);
 
-public onCommitClick(){
+public onCommitClick() {
     this.grid.commitEdits();
 }
 ```
@@ -138,15 +138,15 @@ onRedoClick = () => {
 ```ts
 import { IgcDataGridComponent } from 'igniteui-webcomponents-grids';
 
-public onUndoClick(){
+public onUndoClick() {
     this.grid.undo();
-    if(this.grid.editMode === EditModeType.CellBatch && this.redo !== null)
+    if (this.grid.editMode === EditModeType.CellBatch && this.redo !== null)
     {
         this.redo.disabled = false;
     }
 }
 
-public onRedoClick(){
+public onRedoClick() {
     this.grid.redo();
 }
 ```
@@ -207,7 +207,7 @@ import { TransactionType } from 'igniteui-react-core'
 
 onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => {
     //check if value is empty upon exiting edit mode.
-    if(e.newValue === "") {
+    if (e.newValue === "") {
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
@@ -216,7 +216,7 @@ onCellValueChanging = (s: IgrDataGrid, e: IgrGridCellValueChangingEventArgs) => 
 
 onDataCommitting = (s: IgrDataGrid, e: IgrGridDataCommittingEventArgs) => {
 
-    if(e.changes[0].transactionType === TransactionType.Update) {
+    if (e.changes[0].transactionType === TransactionType.Update) {
         //commit was passed
         s.acceptCommit(e.commitID);
     }
@@ -239,13 +239,13 @@ this.grid.dataCommitting = this.onDataCommitting;
 
 
 public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChangingEventArgs) {
-    if(s.editMode === EditModeType.CellBatch && this.undo !== null)
+    if (s.editMode === EditModeType.CellBatch && this.undo !== null)
     {
         this.undo.disabled = false;
     }
 
     //check if value is empty upon exiting edit mode.
-    if(e.newValue === "") {
+    if (e.newValue === "") {
         s.setEditError(e.editID, "Error, cell is empty");
         //or revert changes
         s.rejectEdit(e.editID);
@@ -253,7 +253,7 @@ public onCellValueChanging (s: IgcDataGridComponent, e: IgcGridCellValueChanging
 }
 
 public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventArgs) {
-    if(e.changes[0].transactionType === TransactionType.Update) {
+    if (e.changes[0].transactionType === TransactionType.Update) {
         //commit was passed
         s.acceptCommit(e.commitID);
     }
@@ -268,7 +268,7 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 @code {
     public void OnCellValueChanging(GridCellValueChangingEventArgs e)
     {
-        if(e.NewValue == "")
+        if (e.NewValue == "")
         {
             this.DataGridRef.SetEditError(e.EditID, "Error, cell is empty");
             this.DataGridRef.RejectEdit(e.EditID);
@@ -277,7 +277,7 @@ public onDataCommitting (s: IgcDataGridComponent, e: IgcGridDataCommittingEventA
 
     public void OnDataCommitting(GridDataCommittingEventArgs e)
     {
-        if(e.Changes[0].TransactionType == TransactionType.Update)
+        if (e.Changes[0].TransactionType == TransactionType.Update)
         {
             this.DataGridRef.AcceptCommit(e.CommitID);
         }

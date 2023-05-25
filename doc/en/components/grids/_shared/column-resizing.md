@@ -383,7 +383,7 @@ constructor() {
 
 ```razor
 @code {
-    private {ComponentName} gridRef;
+    private {ComponentSelector} gridRef;
 
     protected void OnInitialize()
     {
@@ -432,11 +432,10 @@ To get started with the styling of the `{ComponentName}` column resize line, we 
 
 The simplest approach to achieve this is to create a new theme that extends the [grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) and accepts many parameters as well as the `$resize-line-color` parameter.
 
-``` scss
+```scss
 $custom-grid-theme: grid-theme(
     $resize-line-color: #0288D1
 );
-
 ```
  > [!Note]
  >If the component is using an [Emulated](../themes/styles.md#view-encapsulation) ViewEncapsulation, it is necessary to `penetrate` this encapsulation using `::ng-deep`.
@@ -528,7 +527,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -537,6 +536,7 @@ Don't forget to include the theme in the same way as it was demonstrated above.
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -536,27 +536,23 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular -->
 * `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions,
  `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
+<!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
-
-
-## API References
-
-* `{ComponentName}`
-* `GridStateDirective`
-
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 

@@ -365,7 +365,9 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
+<!-- Angular -->
 In order to provide a custom loading template for the excel style filtering, we can use the `ExcelStyleLoading` directive:
+<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -933,7 +935,7 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 * `{ComponentName}`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
@@ -943,6 +945,7 @@ As you can see in the `Paginate` method, custom pagination logic is performed, b
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

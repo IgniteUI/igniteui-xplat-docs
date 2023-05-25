@@ -13,9 +13,9 @@ Our CLI tools provide project templates pre-configured for the {ProductName} too
 
 To get started, install the CLI:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install -g igniteui-cli
-</pre>
+```
 
 The above install command will make the Ignite UI CLI available for creation, scaffolding, and running of your {ProductName} application.
 
@@ -24,56 +24,56 @@ The above install command will make the Ignite UI CLI available for creation, sc
 To create an application that is configured to use the {ProductName} controls using the Ignite UI CLI, you can use the following template in your command line:
 
 <!-- React -->
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "[name_of_project]" --framework=[target_framework] --type=[project_type]
-</pre>
+```
 
 Using the above template, if you wanted to create a **React** application named "My Project" targeting ES6, you could write the following command:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "My Project" --framework=react --type=igr-es6
-</pre>
+```
 <!-- end: React -->
 
 <!-- WebComponents -->
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "[name_of_project]" --framework=[target_framework]
-</pre>
+```
 
 Using the above template, if you wanted to create a **Web Components** application named "My Project" you could write the following command:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig new "My Project" --framework=webcomponents
-</pre>
+```
 <!-- end: WebComponents -->
 
 ## Adding Components
 
 Once you have created a project, you can then add additional component templates using **ig add** at any point. Running this command without any parameters will guide you through the available templates by using a keyboard navigation CLI to add the control of your choosing.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add
-</pre>
+```
 
 Alternatively, you can simply run the **ig list** command to get a full list of supported templates in the current project you have created.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig list
-</pre>
+```
 
 After running **ig list** and you find the component template you would like to add, you can do so quickly by following this template in your command line:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add [component_template] [component_name]
-</pre>
+```
 
 The "component_template" above will generally match an {ProductName} component ("grid", "category-chart", "linear-gauge", etc.).
 
 For example, if you wanted to add a data grid templated component named "MyGridComponent" to your application, you could run the following:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig add grid MyGridComponent
-</pre>
+```
 
 <!-- WebComponents -->
 Currently the CLI can be used with the following Web Components:
@@ -103,10 +103,10 @@ Currently the CLI can be used with the following Web Components:
 
 In order to build and run the {ProductName} application, you can call the **ig build** and **ig run** commands:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig build
 ig run
-</pre>
+```
 
 ## Ignite UI CLI Commands
 

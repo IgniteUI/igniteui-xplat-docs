@@ -170,8 +170,7 @@ For a comprehensive look over each of the default UI components, continue readin
 ## Toolbar with Child Grids
 
 Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, there is a caveat when
-using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure
-to use the IgxGridToolbar directive on the toolbar itself and pass the provided grid instance as an input property to the toolbar itself.
+using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure to use the IgxGridToolbar and pass the provided grid instance as an input property to the toolbar itself.
 This will make sure you always have the correct grid instance in the scope of your template:
 
 ```html
@@ -208,7 +207,7 @@ Listed below are the main features of the toolbar with example code for each of 
 
 ### Title
 
-Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
+Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitle`.
 
 Users can provide anything from simple text to more involved templates.
 
@@ -226,7 +225,8 @@ Users can provide anything from simple text to more involved templates.
 
 ### Actions
 
-The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
+
+The `GridToolbarTitle` is where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 
@@ -243,7 +243,7 @@ toolbar interaction components.
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
@@ -426,14 +426,12 @@ Here is a snippet showing some of the options which can be customized through th
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>
@@ -456,7 +454,7 @@ Here is a snippet showing some of the options which can be customized through th
             excel-text="Custom text for the excel export entry"
             csv-text="Custom text for the CSV export entry"
         </igc-grid-toolbar-exporter>
-    </igxc-grid-toolbar-actions>
+    </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
 
@@ -742,14 +740,12 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
 * `GridToolbarTitleDirective`
-
 
 * `{ComponentName}` Events:
 * `ToolbarExporting`

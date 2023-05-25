@@ -107,19 +107,54 @@ For this purpose all we have to do is set both the `GridToolbarActions` and the 
 </div>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 The `{ComponentName}` provides us with some useful properties when it comes to using the toolbar's column hiding UI.
@@ -143,29 +178,65 @@ By using the `Title` property, we will set the title that is displayed inside th
 
 ```razor
 <div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
+    <IgbGrid Data=northwindEmployees>
         <IgbGridToolbar>
             <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
        </IgbGridToolbar>
-    </{ComponentSelector}>
+    </IgbGrid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 <!-- Angular -->
@@ -458,10 +529,10 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 $custom-button-schema: extend($_dark-button,
     (
         flat-text-color:(
-           color:("secondary", 500)
+           color: ("secondary", 500)
         ),
         disabled-color:(
-           color:("primary", 700)
+           color: ("primary", 700)
         )
     )
 );
@@ -503,20 +574,20 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- Angular -->
 In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar and we defined it as a separate component as well. We introduced a UI that allows the user to choose between different column orders and we set our own custom title and filter prompt texts. We also used an additional {ProductName} component - the [**IgxRadio**](../radio-button.md) button.
-<!-- end: Angular -->
-
-<!-- Blazor -->
-In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar.
-<!-- end: Blazor -->
-
-The column hiding UI has a few more APIs to explore, which are listed below.
-
-* `ColumnActions`
 
 Additional components and/or directives with relative APIs that were used:
 
-`{ComponentName}` properties:
-* `HiddenColumnsCount`
+* `ColumnActionsComponent`
+<!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+In this article we learned how to use the built-in column hiding UI in the `{ComponentName}`'s toolbar. The column hiding UI has a few more APIs to explore, which are listed below.
+
+* `ColumnActionsComponent`
+
+Additional components with relative APIs that were used:
+
+<!-- end: Blazor, WebComponents -->
 
 `Column` properties:
 * `DisableHiding`
@@ -531,6 +602,9 @@ Additional components and/or directives with relative APIs that were used:
 <!-- end: Angular -->
 
 `GridToolbar` methods:
+* `GridToolbarHiding`
+* `GridToolbarActions`
+* `GridToolbarTitle`
 
 `{ComponentName}` events:
 * `ColumnVisibilityChanged`
@@ -542,8 +616,7 @@ Styles:
 <!-- end: Angular -->
 
 ## Additional Resources
-
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -552,6 +625,7 @@ Styles:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -384,7 +384,7 @@ constructor() {
 
 ```razor
 @code {
-    private {ComponentName} gridRef;
+    private {ComponentSelector} gridRef;
 
     protected void OnInitialize()
     {
@@ -433,11 +433,10 @@ constructor() {
 
 最も簡単な方法は、[grid-theme]({environment:sassApiUrl}/index.html#function-grid-theme) を拡張し、`$resize-line-color` パラメーター以外にも多くのパラメータを受け入れます。
 
-``` scss
+```scss
 $custom-grid-theme: grid-theme(
     $resize-line-color: #0288D1
 );
-
 ```
  > [!Note]
  >コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化を解除する必要があります。
@@ -529,7 +528,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -538,6 +537,7 @@ $custom-grid-theme: grid-theme(
 * [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

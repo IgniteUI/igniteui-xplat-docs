@@ -48,21 +48,15 @@ For more information on installing Ignite UI for Blazor using NuGet, read the [I
 
 ## Register Ignite UI for Blazor
 
-1 - Open the **MauiProgram.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor()**:
+1 - Open the **MauiProgram.cs** file and register the Ignite UI for Blazor Service by calling **builder.Services.AddIgniteUIBlazor** function:
 
-```
+```cs
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder
-			.UseMauiApp<App>()
-			.ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-			});
-
+        // ...
 		builder.Services.AddMauiBlazorWebView();
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
@@ -70,7 +64,6 @@ public static class MauiProgram
 
         //register IgniteUI for Blazor
 		builder.Services.AddIgniteUIBlazor();
-
 		return builder.Build();
 	}
 }

@@ -7,7 +7,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isDefaultTooltipBehaviorDisabled"}],"originalName":"IsDefaultTooltipBehaviorDisabled"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcAxisComponent","mappedName":"targetAxis"}],"originalName":"TargetAxis"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryTooltipLayerPosition","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"CategoryTooltipLayerPosition.ts","mappedName":"CategoryTooltipLayerPosition"}],
     "members":[
@@ -16,7 +16,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTooltipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTooltipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryTooltipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemToolTipLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-item-tool-tip-layer-component.ts","dynamicModuleName":"igc-item-tool-tip-layer-dynamic-module.ts","moduleName":"igc-item-tool-tip-layer-module.ts","mappedName":"IgcItemToolTipLayerComponent"}],
     "members":[
@@ -27,7 +27,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ValueOverlay",
     "names":[{"platform":"WebComponents","fileName":"igc-value-overlay-component.ts","dynamicModuleName":"igc-value-overlay-dynamic-module.ts","moduleName":"igc-value-overlay-module.ts","mappedName":"IgcValueOverlayComponent"}],
     "members":[
@@ -52,7 +52,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getLabel"}],"originalName":"GetLabel"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getLabel"}],"originalName":"GetLabel"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AnnotationLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-annotation-layer-component.ts","mappedName":"IgcAnnotationLayerComponent"}],
     "members":[
@@ -64,7 +64,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isIndexed"}],"originalName":"IsIndexed"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isUsableInLegend"}],"originalName":"IsUsableInLegend"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAnnotationLayer"}],"originalName":"IsAnnotationLayer"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldRenderAsOverlay"}],"originalName":"ShouldRenderAsOverlay"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"shouldRenderAsOverlay"}],"originalName":"ShouldRenderAsOverlay"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AxisAnnotation",
     "names":[{"platform":"WebComponents","fileName":"igc-axis-annotation.ts","mappedName":"IgcAxisAnnotation"}],
     "members":[
@@ -83,7 +83,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"resetCachedExtent"}],"originalName":"ResetCachedExtent"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"resolveLabelValue"}],"originalName":"ResolveLabelValue"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"resolveLabelValue"}],"originalName":"ResolveLabelValue"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutAnnotation",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-annotation.ts","mappedName":"IgcCalloutAnnotation"}],
     "members":[
@@ -103,14 +103,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingTop"}],"originalName":"BackgroundPaddingTop"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingRight"}],"originalName":"BackgroundPaddingRight"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundPaddingBottom"}],"originalName":"BackgroundPaddingBottom"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"backgroundCornerRadius"}],"originalName":"BackgroundCornerRadius"}],"originalBaseTypeName":"DependencyObject","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryHighlightLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-category-highlight-layer-component.ts","dynamicModuleName":"igc-category-highlight-layer-dynamic-module.ts","moduleName":"igc-category-highlight-layer-module.ts","mappedName":"IgcCategoryHighlightLayerComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isAnnotationHoverLayer"}],"originalName":"IsAnnotationHoverLayer"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcCategoryAxisBaseComponent","mappedName":"targetAxis"}],"originalName":"TargetAxis"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"useInterpolation"}],"originalName":"UseInterpolation"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-layer-component.ts","dynamicModuleName":"igc-callout-layer-dynamic-module.ts","moduleName":"igc-callout-layer-module.ts","mappedName":"IgcCalloutLayerComponent"}],
     "members":[
@@ -148,14 +148,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"calloutStrokeThickness"}],"originalName":"CalloutStrokeThickness"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"invalidateCalloutContent"}],"originalName":"InvalidateCalloutContent"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"invalidateCalloutContent"}],"originalName":"InvalidateCalloutContent"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutContentUpdatingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-content-updating-event-args.ts","mappedName":"IgcCalloutContentUpdatingEventArgs"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"xValue"}],"originalName":"XValue"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"content"}],"originalName":"Content"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutLabelUpdatingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-label-updating-event-args.ts","mappedName":"IgcCalloutLabelUpdatingEventArgs"}],
     "members":[
@@ -164,7 +164,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSeriesComponent","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"},
-    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"label"}],"originalName":"Label"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutSeriesSelectingEventArgs",
     "names":[{"platform":"WebComponents","fileName":"igc-callout-series-selecting-event-args.ts","mappedName":"IgcCalloutSeriesSelectingEventArgs"}],
     "members":[
@@ -172,7 +172,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"yValue"}],"originalName":"YValue"},
     { "names":[{"platform":"WebComponents","mappedType":"any","mappedName":"item"}],"originalName":"Item"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcSeriesComponent","mappedName":"series"}],"originalName":"Series"},
-    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"seriesName"}],"originalName":"SeriesName"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalloutCollisionMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"CalloutCollisionMode.ts","mappedName":"CalloutCollisionMode"}],
     "members":[
@@ -180,14 +180,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"CalloutCollisionMode","mappedName":"SimulatedAnnealing"}],"originalName":"SimulatedAnnealing"},
     { "names":[{"platform":"WebComponents","mappedType":"CalloutCollisionMode","mappedName":"Greedy"}],"originalName":"Greedy"},
     { "names":[{"platform":"WebComponents","mappedType":"CalloutCollisionMode","mappedName":"GreedyCenterOfMass"}],"originalName":"GreedyCenterOfMass"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"AutoCalloutVisibilityMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"AutoCalloutVisibilityMode.ts","mappedName":"AutoCalloutVisibilityMode"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"Normal"}],"originalName":"Normal"},
     { "names":[{"platform":"WebComponents","mappedType":"AutoCalloutVisibilityMode","mappedName":"DedicatedLanes"}],"originalName":"DedicatedLanes"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataTooltipConstraintMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"DataTooltipConstraintMode.ts","mappedName":"DataTooltipConstraintMode"}],
     "members":[
@@ -196,7 +196,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"Chart"}],"originalName":"Chart"},
     { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"PlotArea"}],"originalName":"PlotArea"},
     { "names":[{"platform":"WebComponents","mappedType":"DataTooltipConstraintMode","mappedName":"None"}],"originalName":"None"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-data-tool-tip-layer-component.ts","dynamicModuleName":"igc-data-tool-tip-layer-dynamic-module.ts","moduleName":"igc-data-tool-tip-layer-module.ts","mappedName":"IgcDataToolTipLayerComponent"}],
     "members":[
@@ -335,7 +335,7 @@
     { 
     "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"top"}],"originalName":"labelTextMargin.top"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTips"}],"originalName":"HideToolTips"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"hideToolTipsImmediate"}],"originalName":"HideToolTipsImmediate"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataToolTipLayerPosition","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"DataToolTipLayerPosition.ts","mappedName":"DataToolTipLayerPosition"}],
     "members":[
@@ -344,7 +344,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"InsideStart"}],"originalName":"InsideStart"},
     { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"InsideEnd"}],"originalName":"InsideEnd"},
     { "names":[{"platform":"WebComponents","mappedType":"DataToolTipLayerPosition","mappedName":"OutsideEnd"}],"originalName":"OutsideEnd"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-final-value-layer-component.ts","dynamicModuleName":"igc-final-value-layer-dynamic-module.ts","moduleName":"igc-final-value-layer-module.ts","mappedName":"IgcFinalValueLayerComponent"}],
     "members":[
@@ -361,7 +361,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationPaddingTop"}],"originalName":"AxisAnnotationPaddingTop"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationPaddingRight"}],"originalName":"AxisAnnotationPaddingRight"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationPaddingBottom"}],"originalName":"AxisAnnotationPaddingBottom"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"axisAnnotationStrokeThickness"}],"originalName":"AxisAnnotationStrokeThickness"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinalValueSelectionMode","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"FinalValueSelectionMode.ts","mappedName":"FinalValueSelectionMode"}],
     "members":[
@@ -369,14 +369,14 @@
     { "names":[{"platform":"WebComponents","mappedType":"FinalValueSelectionMode","mappedName":"FinalVisible"}],"originalName":"FinalVisible"},
     { "names":[{"platform":"WebComponents","mappedType":"FinalValueSelectionMode","mappedName":"FinalVisibleInterpolated"}],"originalName":"FinalVisibleInterpolated"},
     { "names":[{"platform":"WebComponents","mappedType":"FinalValueSelectionMode","mappedName":"Final"}],"originalName":"Final"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryItemHighlightType","isEnum":true,
     "names":[{"platform":"WebComponents","fileName":"CategoryItemHighlightType.ts","mappedName":"CategoryItemHighlightType"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"CategoryItemHighlightType","mappedName":"Auto"}],"originalName":"Auto"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryItemHighlightType","mappedName":"Marker"}],"originalName":"Marker"},
     { "names":[{"platform":"WebComponents","mappedType":"CategoryItemHighlightType","mappedName":"Shape"}],"originalName":"Shape"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CategoryItemHighlightLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-category-item-highlight-layer-component.ts","dynamicModuleName":"igc-category-item-highlight-layer-dynamic-module.ts","moduleName":"igc-category-item-highlight-layer-module.ts","mappedName":"IgcCategoryItemHighlightLayerComponent"}],
     "members":[
@@ -390,7 +390,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"markerOutline"}],"originalName":"MarkerOutline"},
     { "names":[{"platform":"WebComponents","mappedType":"IgDataTemplate","mappedName":"markerTemplate"}],"originalName":"MarkerTemplate"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"bandHighlightWidth"}],"originalName":"BandHighlightWidth"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CrosshairLayer",
     "names":[{"platform":"WebComponents","fileName":"igc-crosshair-layer-component.ts","dynamicModuleName":"igc-crosshair-layer-dynamic-module.ts","moduleName":"igc-crosshair-layer-module.ts","mappedName":"IgcCrosshairLayerComponent"}],
     "members":[
@@ -424,4 +424,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"yAxisAnnotationStrokeThickness"}],"originalName":"YAxisAnnotationStrokeThickness"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"verticalLineVisibility"}],"originalName":"VerticalLineVisibility"},
     { "names":[{"platform":"WebComponents","mappedType":"Visibility","mappedName":"horizontalLineVisibility"}],"originalName":"HorizontalLineVisibility"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"skipUnknownValues"}],"originalName":"SkipUnknownValues"}],"originalBaseTypeName":"AnnotationLayer","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

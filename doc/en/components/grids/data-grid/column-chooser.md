@@ -88,7 +88,6 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
     this.toolbar.columnChooserTitle = "Column Chooser";
     }
 }
-
 ```
 
 ```html

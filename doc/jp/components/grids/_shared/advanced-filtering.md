@@ -98,35 +98,34 @@ ngAfterViewInit(): void {
 
 ```typescript
 connectedCallback(): void {
-    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
     tree.filteringOperands.push({
-        fieldName: 'ID',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('contains'),
-        searchVal: 'a',
+        searchVal: 'cha',
         ignoreCase: true
     });
-    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    const subTree = new IgcFilteringExpressionsTree(FilteringLogic.Or);
     subTree.filteringOperands.push({
-        fieldName: 'ContactTitle',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
         searchVal: 'b',
         ignoreCase: true
     });
     subTree.filteringOperands.push({
-        fieldName: 'CompanyName',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('startsWith'),
-        searchVal: 'c',
+        searchVal: 'Chan',
         ignoreCase: true
     });
     tree.filteringOperands.push(subTree);
-
-    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
+    grid.advancedFilteringExpressionsTree = tree;
 }
 ```
 
 `{ComponentName}` ツールバーを表示したくない場合は、`OpenAdvancedFilteringDialog` および `CloseAdvancedFilteringDialog` メソッドを使用して、高度なフィルタリング ダイアログをコーディングを使用して開いたり閉じたりできます。
 
-> [!Note]
+>
 >`{ComponentName}` で **QuickFilter**/**ExcelStyleFilter** と高度なフィルタリング ユーザー インターフェイスの両方を有効にできます。両フィルタリング ユーザー インターフェイスは、互いに依存せずに機能します。`{ComponentName}` の最終的なフィルター結果は、2 つのフィルター結果の共通部分です。
 
 <!-- Angular -->
@@ -471,7 +470,7 @@ $custom-drop-down: drop-down-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [フィルタリング](filtering.md)
 * [Excel スタイル フィルタリング](excel-style-filtering.md)
 * [仮想化とパフォーマンス](virtualization.md)
@@ -482,6 +481,7 @@ $custom-drop-down: drop-down-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

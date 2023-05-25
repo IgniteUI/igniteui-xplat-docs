@@ -13,17 +13,13 @@ TODO
 
 `sample="/excel/excel-library/working-with-grids", height="500", alt="{Platform} Working with Grids Example"`
 
-
-
 <div class="divider--half"></div>
 
 ## Usage
 The following code demonstrates how to use ... TODO
 
 ```ts
-
 TODO
-
 ```
 
 ## API References
