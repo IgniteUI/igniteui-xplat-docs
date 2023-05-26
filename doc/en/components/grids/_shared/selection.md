@@ -153,7 +153,19 @@ public rightClick(eventArgs: any) {
 <!-- end: WebComponents -->
 
 ```razor
-TO DO
+    public void RightClick(MouseEventArgs e)
+    {
+        this.MenuX = e.ClientX + "px";
+        this.MenuY = e.ClientY + "px";
+    }
+
+
+    public void onMenuShow(IgbGridCellEventArgs e)
+    {
+        IgbGridCellEventArgsDetail detail = e.Detail;
+        this.ShowMenu = true;
+        this.ClickedCell = detail.Cell;
+    }
 ```
 
 The context menu will have the following functions:
@@ -232,7 +244,29 @@ public copySelectedCells(event) {
 
 
 ```razor
-TO DO
+    public void CopyCellData()
+    {
+        this.ShowMenu = false;
+        this.SelectedData = this.ClickedCell.Value.ToString();
+        StateHasChanged();
+    }
+
+
+    public async void CopyRowData()
+    {
+        this.ShowMenu = false;
+        NwindDataItem rowData = this.NwindData.ElementAt(this.ClickedCell.Id.RowIndex);
+        this.SelectedData = JsonConvert.SerializeObject(rowData);
+        StateHasChanged();
+}
+
+    public async void CopyCellsData()
+    {
+        this.ShowMenu = false;
+        var selectedData = await this.grid.GetSelectedDataAsync(true, false);
+        this.SelectedData = JsonConvert.SerializeObject(selectedData);
+        StateHasChanged();
+    }
 ```
 
 The `{ComponentName}` will fetch the copied data and will paste it in a container element.
@@ -300,7 +334,62 @@ The template we are going to use to combine the grid with the context menu:
 <!-- end: WebComponents -->
 
 ```razor
-TO DO
+<div class="container vertical">
+    <div class="wrapper" oncontextmenu="event.preventDefault()">
+        <IgbGrid AutoGenerate="false"
+                 CellSelection="GridSelectionMode.Multiple"
+                 ContextMenu="onMenuShow"
+                 @oncontextmenu="RightClick"
+                 Name="grid"
+                 @ref="grid"
+                 Data="NwindData">
+            <IgbColumn Field="ProductID"
+                       Header="Product ID">
+            </IgbColumn>
+
+            <IgbColumn Field="ProductName"
+                       Header="Product Name">
+            </IgbColumn>
+
+            <IgbColumn Field="UnitsInStock"
+                       Header="Units In Stock"
+                       DataType="GridColumnDataType.Number">
+            </IgbColumn>
+
+            <IgbColumn Field="UnitPrice"
+                       Header="Units Price"
+                       DataType="GridColumnDataType.Number">
+            </IgbColumn>
+
+            <IgbColumn Field="Discontinued"
+                       DataType="GridColumnDataType.Boolean">
+            </IgbColumn>
+
+            <IgbColumn Field="OrderDate"
+                       Header="Order Date"
+                       DataType="GridColumnDataType.Date">
+            </IgbColumn>
+
+        </IgbGrid>
+        <div class="selected-data-area">
+            @SelectedData
+        </div>
+        </div>
+        @if (ShowMenu)
+        {
+            <div id="menu" class="contextmenu" style="left: @MenuX; top: @MenuY">
+                <span id="copySingleCell" class="item" @onclick="CopyCellData">
+                    <IgbIcon @ref=icon IconName="content_copy" Collection="material"></IgbIcon>Copy Cell Data
+                </span>
+            <span id="copyRow" class="item" @onclick="CopyRowData">
+                    <IgbIcon IconName="content_copy" Collection="material"></IgbIcon>Copy Row Data
+                </span>
+            <span id="copyMultiCells" class="item" @onclick="CopyCellsData">
+                    <IgbIcon IconName="content_copy" Collection="material"></IgbIcon>Copy Cells Data
+                </span>
+            </div>
+        }
+</div>
 ```
 
  Select multiple cells and press the right mouse button. The context menu will appear and after selecting **Copy cells data** the selected data will appear in the right empty box.
