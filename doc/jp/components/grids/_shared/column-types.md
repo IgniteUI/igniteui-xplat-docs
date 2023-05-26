@@ -246,7 +246,7 @@ public timeFormats = [
 
 ### 画像
 
-Default template is using the value coming from the data as an image source to a default image template. The default image template will extract the name of the image file and set it as `alt` attribute of the image to meet the accessibility requirement. The displayed cell size is adjusted to the sizes of the images rendered, so keep in mind that large images will still be rendered and the grid rows will become as large as the images in the image column. Filtering, sorting and grouping will be turned off by default for image type columns. If you want to enable them, you need to provide custom strategies which perform the data operations.
+デフォルトのテンプレートは、デフォルの画像テンプレートへの画像ソースとしてデータからの値を使用しています。デフォルトの画像テンプレートは、画像ファイルの名前を抽出し、アクセシビリティ要件を満たすために画像の `alt` 属性として設定します。表示されるセル サイズは描画される画像のサイズに合わせて調整されるため、大きな画像も描画され、グリッド行は画像列の画像と同じ大きさになることに注意してください。画像タイプの列では、フィルタリング、ソート、およびグループ化はデフォルトでオフになっています。それらを有効にしたい場合は、データ操作を実行するカスタム ストラテジを提供する必要があります。
 
 ```html
 <igx-grid>
@@ -266,7 +266,7 @@ Default template is using the value coming from the data as an image source to a
 <IgbColumn DataType="GridColumnDataType.Image"></IgbColumn>
 ```
 
-When `AutoGenerate` is used for the columns, the grid analyses the values in the first data record. If a value is of type string and matches the pattern of a url ending in an image extension (gif, jpg, jpeg, tiff, png, webp, bmp) then the column will automatically be marked as `dataType === GridColumnDataType.Image` and a default image template will be rendered.
+列に `AutoGenerate` を使用すると、グリッドは最初のデータ レコードの値を分析します。値が文字列型で、画像拡張子 (gif、jpg、jpeg、tiff、png、webp、bmp) で終わる URL のパターンと一致する場合、列は自動的に `dataType === GridColumnDataType.Image` としてマークされ、 デフォルトの画像テンプレートが描画されます。
 
 ### 通貨
 
@@ -299,7 +299,7 @@ import { LOCALE_ID } from '@angular/core';
 
 <!-- Blazor, WebComponents -->
 
-The default template will show a numeric value with currency symbol that would be either prefixed or suffixed.
+デフォルトのテンプレートには、接頭辞または接尾辞が付いた通貨記号を含む数値を表示します。
 
 <!-- end: Blazor, WebComponents -->
 
@@ -368,7 +368,7 @@ constructor() {
 | パラメーター                 | 説明                                                |
 |---------------------------| -------------------------                                  |
 | digitsInfo                | 通貨値の 10 進数表現を表します。        |
-| display*                  | Displays the value by narrow or wide symbol                |
+| display*                  | 狭義または広義の記号で値を表示します。                |
 <!-- Angular -->
 | currencyCode              | ISO 4217 通貨コード                                     |
 <!-- end: Angular -->

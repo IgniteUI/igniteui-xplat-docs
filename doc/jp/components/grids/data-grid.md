@@ -853,7 +853,7 @@ const POJO = [{
 はじめにリモート データ サービスにバインドするためにグリッドを変更します。大規模なアプリケーション レベルでは一般的なシナリオです。
 
 <!-- WebComponents -->
-You can do this by fetching the data from a given url receiving a JSON response and assigning it to the grid's `data` property that is used as the grid's data source:
+これを行うには、JSON 応答を受信して指定された URL からデータを取得し、それをグリッドのデータ ソースとして使用されるグリッドの `data` プロパティに割り当てます。
 
 ```html
 <igc-grid id="grid1"></igc-grid>
@@ -1088,7 +1088,7 @@ public class AminoWeight
 
 <!-- WebComponents -->
 
-- use the `cell` object in the template, from which to access the `ctx.cell.id.rowIndex` or `ctx.cell.id.rowID` to get the row via the grid's API and retrieve any value from it and interpolate those in the template.
+- テンプレート内の `cell` オブジェクトを使用し、そこから `ctx.cell.id.rowIndex` または `ctx.cell.id.rowID` にアクセスして、グリッドの API 経由で行を取得します。そこから任意の値を取得し、テンプレートに補間します。
 
 <!-- end: WebComponents -->
 

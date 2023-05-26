@@ -91,8 +91,7 @@ API 操作の詳細については、[API リファレンス](#api-リファレ�
 
 ## スタイル設定
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
-In case you would like to change some of the colors, you need to set a class for the grid first:
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
 
 ```ts
 <igc-grid class="grid">
@@ -102,7 +101,7 @@ In case you would like to change some of the colors, you need to set a class for
 <IgbGrid Class="grid"></IgbGrid>
 ```
 
-Then set the related CSS properties for that class:
+次に、そのクラスに関連する CSS プロパティを設定します。
 
 ```css
 .grid {
