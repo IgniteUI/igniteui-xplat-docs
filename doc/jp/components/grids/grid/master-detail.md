@@ -18,10 +18,9 @@ _language: ja
 `sample="/{GridSample}/master-detail", height="600", alt="{Platform} {ComponentTitle} マスターと詳細の例"`
 
 
-
 ## 構成
 
-マスターと詳細モードで表示するように `Grid` を設定するには、`GridDetail` ディレクティブでマークされたグリッド内のテンプレートを指定する必要があります。
+マスターと詳細モードで表示するように `Grid` を設定するには、グリッドのテンプレートを指定する必要があります。
 
 ```html
 <{ComponentSelector}>
@@ -29,6 +28,21 @@ _language: ja
               <!-- Custom detail template content here -->
         </ng-template>
 </{ComponentSelector}>
+```
+
+```ts
+constructor() {
+  var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+  this._bind = () => {
+    grid.data = this.customersData;
+    grid.detailTemplate = this.masterDetailTemplate;
+  }
+  this._bind();
+}
+```
+
+```razor
+    <IgbGrid DetailTemplateScript="DetailTemplate"  AutoGenerate=true  Data=northwindEmployees></IgbGrid>
 ```
 
 テンプレートのコンテキストはマスター レコード データであるため、マスター レコードの値を詳細テンプレートに表示できます。例:
@@ -44,16 +58,42 @@ _language: ja
 </{ComponentSelector}>
 ```
 
+```ts
+    public masterDetailTemplate = (ctx: IgcGridMasterDetailContext) => {
+        var data = (ctx as any)["$implicit"];
+        return html` <div class="contact-container">
+        <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
+        <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
+        <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
+    </div>`;
+    }
+```
+
+```razor
+// In JavaScript
+igRegisterScript("DetailTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    var data = ctx["$implicit"];
+    return html` <div class="contact-container">
+        <span><strong>Name:</strong> ${data.ContactName}</span> <br/>
+        <span><strong>Title:</strong> ${data.ContactTitle}</span> <br/>
+        <span><strong>Company:</strong> ${data.CompanyName}</span> <br/>
+    </div>`;
+}, false);
+```
 
 ## API
+
+<!-- Angular -->
 
 展開状態は、`Grid` の `ExpansionStates` 入力で制御できます。状態はキーと値のペア [行識別子、展開状態] に保存されます。このプロパティは、展開状態を取得/設定し、双方向バインディングをサポートします。
 
 ```html
   <{ComponentSelector} [(expansionStates)]='expansionState' >
-    <!--...-->
   </{ComponentSelector}>
 ```
+
+<!-- end: Angular -->
 
 展開状態を制御するための追加の API メソッドも公開されています。
 - `ExpandAll`
@@ -66,14 +106,14 @@ _language: ja
 
 - 詳細行にフォーカスがある場合:
 
-    - `上矢印` - 前の行のセルにフォーカスし、1 つ上の行へ移動します。
-    - `下矢印` - 次の行のセルにフォーカスし、1 つ下の行へ移動します。
-    - `Tab` - フォーカス可能な要素がある場合、テンプレート内の次のフォーカス可能な要素にフォーカスを移動します。そうでない場合は、次のグリッド行に移動します。
-    - `Shift + Tab` - 前の行にフォーカスします。
+    - <kbd>🡑</kbd> - 前の行のセルにフォーカスし、1 つ上の行へ移動します。
+    - <kbd>🡓</kbd> - 次の行のセルにフォーカスし、1 つ下の行へ移動します。
+    - <kbd>Tab</kbd> - フォーカス可能な要素がある場合、テンプレート内の次のフォーカス可能な要素にフォーカスを移動します。そうでない場合は、次のグリッド行に移動します。
+    - <kbd>Shift + <kbd>Tab</kbd> - 前の行にフォーカスします。
 
 - エキスパンダーのデータ行にフォーカスがある場合:
-    - `Alt + 右矢印/下矢印` - 行を展開します。
-    - `Alt + 左矢印/下矢印` - 行を縮小します。
+    - <kbd>Alt</kbd> + <kbd>🡒</kbd> or <kbd>Alt</kbd> + <kbd>🡓</kbd> - 行を展開します。
+    - <kbd>Alt</kbd> + <kbd>🡐</kbd> or <kbd>Alt</kbd> + <kbd>🡑</kbd> - 行を縮小します。
 
 ## 既知の問題と制限
 

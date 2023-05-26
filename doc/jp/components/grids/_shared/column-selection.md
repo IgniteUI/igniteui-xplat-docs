@@ -87,6 +87,41 @@ _language: ja
 
 API 操作の詳細については、[API リファレンス](#api-リファレンス) セクションを参照してください。
 
+<!-- WebComponents, Blazor -->
+
+## スタイル設定
+
+定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。一部の色を変更したい場合は、最初にグリッドのクラスを設定する必要があります。
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+次に、そのクラスに関連する CSS プロパティを設定します。
+
+```css
+.grid {
+    --igx-grid-row-selected-background: #0062A3;
+    --igx-grid-row-selected-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+    --igx-grid-header-selected-text-color: #ecaa53;
+    --igx-grid-header-selected-background: #0062A3;
+    --igx-grid-row-selected-hover-text-color: #ecaa53;
+    --igx-grid-row-selected-hover-background: #0062A3;
+}
+```
+
+### デモ
+
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
+
+<!-- end: WebComponents, Blazor -->
+
 <!-- Angular -->
 
 ## スタイル設定
