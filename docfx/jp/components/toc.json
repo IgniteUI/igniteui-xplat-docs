@@ -234,7 +234,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Master-Detail",
+        "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
         "status": ""
       },
