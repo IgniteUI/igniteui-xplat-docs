@@ -559,11 +559,11 @@ function buildPlatform(cb) {
             ])
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
-                // if (platformName == "Angular") {
-                //     log("building " + PLAT + " ... done ");
-                //     log("=========================================================");
-                //     cb();
-                // } else {
+                if (platformName == "Angular") {
+                    log("building " + PLAT + " ... done ");
+                    log("=========================================================");
+                    cb();
+                } else {
                     gulp.src([
                         'docfx/**/*.*'
                     ])
@@ -574,7 +574,7 @@ function buildPlatform(cb) {
                         log("=========================================================");
                         cb();
                     });
-                // }
+                }
             });
         })
         .on("error", (err) => {

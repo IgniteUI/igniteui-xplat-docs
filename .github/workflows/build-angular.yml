@@ -29,6 +29,6 @@ jobs:
     - name: DotNet tool restore
       run: dotnet tool restore
     - name: Build Angular
-      run: npm run build-docfx-angular
+      run: npm run buildAngular # this should be build-docfx-angular, but that doesn't work yet
     - name: Test Angular
       run: npm run test --testPlatform=Angular
