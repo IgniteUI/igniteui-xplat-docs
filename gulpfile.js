@@ -560,7 +560,7 @@ function buildPlatform(cb) {
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
                 if (platformName == "Angular") {
-                    log("building " + PLAT + " ... done ");
+                    log("Copying " + PLAT + " .md and /images... done. Docfx build not executed.");
                     log("=========================================================");
                     cb();
                 } else {
