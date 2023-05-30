@@ -37,6 +37,7 @@ let DOCFX_PATH = `${DOCFX_BASE[LANG]}`;
 let DOCFX_CONF = `${DOCFX_PATH}/docfx.json`;
 let DOCFX_TEMPLATE_GLOBAL = path.join(__dirname, `./node_modules/igniteui-docfx-template/template/bundling.global.json`);
 let DOCFX_SITE = `${DOCFX_PATH}/_site`;
+let DOCFX_FORCE_OUTPUT = false; // this is true when building Angular CI (build-docfx-angular)
 
 function log(msg) { console.log(">> " + msg); }
 
@@ -519,7 +520,7 @@ function buildPlatform(cb) {
     let platformName = PLAT;
     let apiPlatform = PLAT_API;
     log("=========================================================");
-    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment");
+    log("building '" + PLAT + "' docs for '" + ENV_TARGET + "' environment and force docFX output is " + DOCFX_FORCE_OUTPUT );
     ensureEnvironment();
 
     log("building with " + includedTopics.length + " topics");
@@ -559,7 +560,7 @@ function buildPlatform(cb) {
             ])
             .pipe(gulp.dest("dist/" + platformName))
             .on("end", function () {
-                if (platformName == "Angular") {
+                if (platformName == "Angular" && !DOCFX_FORCE_OUTPUT) {
                     log("Copying " + PLAT + " .md and /images... done. Docfx build not executed.");
                     log("=========================================================");
                     cb();
@@ -716,7 +717,8 @@ function buildCore(cb) {
 exports.buildCoreAndTOC = buildCoreAndTOC = gulp.series(buildTOC, buildCore)
 
 // functions for building each platform:
-function buildAngular(cb)   { PLAT = "Angular"; buildCoreAndTOC(cb); }
+function buildAngularDocFX(cb) { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = true;  buildCoreAndTOC(cb); }
+function buildAngular(cb)      { PLAT = "Angular"; DOCFX_FORCE_OUTPUT = false; buildCoreAndTOC(cb); }
 function buildBlazor(cb)    { PLAT = "Blazor"; buildCoreAndTOC(cb); }
 function buildReact(cb)     { PLAT = "React"; buildCoreAndTOC(cb); }
 function buildWC(cb)        { PLAT = "WebComponents"; buildCoreAndTOC(cb); }
@@ -802,7 +804,7 @@ exports['build-site'] = buildSite;
 
 // functions for building Docfx for each platform:
 var buildDocfx_All      = gulp.series(verifyFiles, buildAll, buildSite, replaceEnvironmentVariables, updateSiteMap);
-var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngular, buildSite, replaceEnvironmentVariables, updateSiteMap);
+var buildDocfx_Angular  = gulp.series(verifyFiles, buildAngularDocFX, buildSite, replaceEnvironmentVariables, updateSiteMap);
 var buildDocfx_Blazor   = gulp.series(verifyFiles, buildBlazor, buildSite, replaceEnvironmentVariables,  updateSiteMap);
 var buildDocfx_React    = gulp.series(verifyFiles, buildReact, buildSite, replaceEnvironmentVariables,  updateSiteMap);
 var buildDocfx_WC       = gulp.series(verifyFiles, buildWC, buildSite, replaceEnvironmentVariables, updateSiteMap);
