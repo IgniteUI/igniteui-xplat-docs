@@ -708,9 +708,38 @@ The result of the above validation being applied to our `{ComponentName}` can be
 
 `sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
 
-<!-- Angular -->
-
 ## Styling
+
+<!-- WebComponents, Blazor -->
+
+In addition to the predifined themes, the grid could be further customized by setting some of the available [CSS Properties](theming.md).
+In case you would like to change some of the colors, you need to set a class for the grid first:
+
+```ts
+<igc-grid class="grid">
+```
+
+```razor
+<IgbGrid Class="grid"></IgbGrid>
+```
+
+Then set the related CSS properties for that class:
+
+```css
+.grid {
+    igx-grid__td--editing-background: #57A0D2;
+    igx-grid__td--editing-color: #FFA500;
+    igx-grid__td--editing-border-color: #000080;
+}
+```
+
+### Demo
+
+`sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
+
+<!-- end: WebComponents, Blazor -->
+
+<!-- Angular -->
 
 The `{ComponentName}` allows for its cells to be styled through the [{ProductName} Theme Library](../themes/styles.md). The grid's [theme]({environment:sassApiUrl}/index.html#function-grid-theme) exposes a wide range of properties, which allow users to style many different aspects of the grid.
 
