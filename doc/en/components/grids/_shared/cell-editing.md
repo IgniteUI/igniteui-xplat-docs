@@ -733,7 +733,7 @@ Then set the related CSS properties for that class:
 }
 ```
 
-### Demo
+### Styling Example
 
 `sample="/{ComponentSample}/cell-editing-style", height="650", alt="{Platform} {ComponentTitle} Cell Editing Styling Example"`
 
