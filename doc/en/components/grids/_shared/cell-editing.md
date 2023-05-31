@@ -144,11 +144,12 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- Angular -->
 
 ### Cell Editing Templates
 
 You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
+
+<!-- Angular -->
 
 If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
 
@@ -200,6 +201,97 @@ This code is used in the sample below which implements an [SelectComponent](../s
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
 
 <!-- end: Angular -->
+
+<!-- Blazor -->
+
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. 
+
+```Razor
+
+<IgbColumn
+            Field="AnnualChange"
+            Header="Annual Change"
+            DataType="GridColumnDataType.Number"
+            BodyTemplateScript="WebGridCurrencyCellTemplate"
+            HeaderTemplateScript="WebGridPinHeaderTemplate"
+            Name="column9"
+            @ref="column9">
+            </IgbColumn>
+
+
+```
+
+and pass the template:
+
+```javascript
+
+igRegisterScript("WebGridCurrencyCellTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+    if (ctx.cell.value > 0) {
+        return html`<div>
+        <igc-badge variant="success"><span>▲</span></igc-badge>
+        <span style='color:green;'>${ctx.cell.value}</span>
+        </div>`;
+    } else {
+        return html`<div>
+        <igc-badge variant="danger"><span>▼</span></igc-badge>
+        <span style='color:red;'>${ctx.cell.value}</span>
+        </div>`;
+    }
+}, false);
+
+```
+Working sample of the above can be found here for further referencee: 
+
+`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: Blazor -->
+
+<!-- WebComponents -->
+
+If you want to provide a custom template which will be applied to a cell, you can pass such template either to the cell itself, or to its header. First create the column as you usually would:
+
+```html
+
+<igc-column
+            field="ChangePercent"
+            header="Change Percent"
+            data-type="number"
+            name="changePercent"
+            id="changePercent">
+
+```
+
+and pass the templates to this column in the index.ts file:
+
+```ts
+
+this._bind = () => {
+    changePercent.bodyTemplate = this.webGridCurrencyCellTemplate;
+    changePercent.headerTemplate = this.webGridPinHeaderTemplate;
+}
+
+
+public webGridCurrencyCellTemplate = (ctx: IgcCellTemplateContext) => {
+        if (ctx.cell.value > 0) {
+            return html`<div>
+            <igc-badge variant="success"><span>▲</span></igc-badge>
+            <span style='color:green;'>${ctx.cell.value.toFixed(2)}</span>
+            </div>`;
+        } else {
+            return html`<div>
+            <igc-badge variant="danger"><span>▼</span></igc-badge>
+            <span style='color:red;'>${ctx.cell.value.toFixed(2)}</span>
+            </div>`;
+        };
+    }
+
+```
+Working sample of the above can be found here for further referencee: 
+
+`sample="/{ComponentSample}/column-moving-options", height="650", alt="{Platform} {ComponentTitle} Cell Editing Template Sample"`
+
+<!-- end: WebComponents -->
 
 <!-- Angular -->
 
