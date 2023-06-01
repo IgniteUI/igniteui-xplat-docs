@@ -9,22 +9,22 @@ _language: ja
 
 # {Platform} 軸タイプ
 
-{ProductName} カテゴリ チャートは、`CategoryXAxis` および `NumericYAxis` タイプを 1 つだけ使用します。同様に、{ProductName} ファイナンシャル チャートは、`TimeXAxis` タイプと `NumericYAxis` タイプを 1 つだけ使用します。ただし、{ProductName} データ チャートは複数の軸タイプをサポートしており、[軸の位置](chart-axis-layouts.md#axis-locations-example)を設定してチャートの任意の側に配置したり、[軸交差](chart-axis-layouts.md#axis-crossing-example)プロパティを使用してチャートの内部に配置したりできます。このトピックでは、相互に互換性のある軸とシリーズ、および固有の軸に対するいくつかの特定のプロパティについて、それぞれについて説明します。
+{ProductName} カテゴリ チャートは、`CategoryXAxis` および `NumericYAxis` タイプを 1 つだけ使用します。同様に、{ProductName} ファイナンシャル チャートは、`TimeXAxis` タイプと `NumericYAxis` タイプを 1 つだけ使用します。ただし、{ProductName} データ チャートは複数の軸タイプをサポートしており、[軸の位置](chart-axis-layouts.md#axis-locations-example) を設定してチャートの任意の側に配置したり、[軸交差](chart-axis-layouts.md#axis-crossing-example) プロパティを使用してチャートの内部に配置したりできます。このトピックでは、相互に互換性のある軸とシリーズ、および固有の軸に対するいくつかの特定のプロパティについて、それぞれについて説明します。
 
 ## デカルト軸
 
 デカルト軸を持つ `XamDataChart` では3 種類の X 軸を使用して水平 (X 軸) および垂直 (X 軸) 方向にデータをプロットすることが可能です。
 (`CategoryXAxis`、`NumericXAxis`、および `TimeXAxis`) と 2 種類の Y 軸 (`CategoryYAxis` および `NumericYAxis`)。
- 
+
 ### カテゴリ X 軸
 
 `CategoryXAxis` は、そのデータを一連のカテゴリ データ項目として扱います。文字列や数値など、ほぼすべてのタイプのデータを表示できます。この軸に数値をプロットする場合、この軸は離散軸であり、連続ではないことに注意してください。これは、各カテゴリ データ項目がその前のデータ項目から等距離に配置されることを意味します。また、項目は軸のデータ ソースに表示される順序でプロットされます。
 
 `CategoryXAxis` では、データをプロットするために `DataSource` と `Label` を提供する必要があります。通常、次のタイプの系列をプロットするために `NumericYAxis` と共に使用されます。
 
-| カテゴリ シリーズ  | 積層型シリーズ | ファイナンシャル シリーズ | 
-|------------------|----------------|--------------------| 
-| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> <br> <br> <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> <br> <br> <br> | 
+| カテゴリ シリーズ  | 積層型シリーズ | ファイナンシャル シリーズ |
+|------------------|----------------|--------------------|
+| - `AreaSeries` <br> - `ColumnSeries` <br> - `LineSeries` <br> -  `PointSeries`  <br> - `SplineSeries` <br>  -  `SplineAreaSeries` <br> -  `StepLineSeries` <br> -  `StepAreaSeries` <br> - `RangeAreaSeries` <br> - `RangeColumnSeries` <br> - `WaterfallSeries` | -  `StackedAreaSeries` <br> -  `StackedColumnSeries` <br> -  `StackedLineSeries` <br> -  `StackedSplineSeries` <br> -  `Stacked100AreaSeries` <br> -  `Stacked100ColumnSeries` <br> -  `Stacked100LineSeries` <br> -  `Stacked100SplineSeries` <br> <br> <br> <br> | - `FinancialPriceSeries` <br> -  `BollingerBandsOverlay` <br> -  `ForceIndexIndicator` <br> -  `MedianPriceIndicator` <br> - `MassIndexIndicator`  <br> - `RelativeStrengthIndexIndicator` <br> - `StandardDeviationIndicator` <br> -  `TypicalPriceIndicator` <br> <br> <br> <br> |
 
  次の例は、上記のスタイル設定プロパティの使用法を示しています:
 
@@ -44,16 +44,16 @@ _language: ja
 
 ### 数値 X 軸
 
-`NumericXAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、X 軸に沿って水平に配置されます。`NumericXAxis` ラベルの位置は、`NumericYAxis` と組み合わせた場合にサポートされるさまざまな `Scatter Series` (散布シリーズ) の `XMemberPath` プロパティに依存します。または、`CategoryXAxis` と組み合わせた場合、これらのラベルは、`BarSeries`、`StackedBarSeries`、および `Stacked100BarSeries` の `ValueMemberPath` に対応して配置されます。
+`NumericXAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、X 軸に沿って水平に配置されます。`NumericXAxis` ラベルの位置は、`NumericYAxis` と組み合わせた場合にサポートされるさまざまな [ScatterSeries](../types/scatter-chart.md) (散布シリーズ) の `XMemberPath` プロパティに依存します。または、`CategoryXAxis` と組み合わせた場合、これらのラベルは、`BarSeries`、`StackedBarSeries`、および `Stacked100BarSeries` の `ValueMemberPath` に対応して配置されます。
 
 `NumericXAxis` は、次のタイプのシリーズと互換性があります:
 
- - `BarSeries` 
- - `BubbleSeries` 
+ - `BarSeries`
+ - `BubbleSeries`
  - `HighDensityScatterSeries`
  - `ScatterSeries`
  - `ScatterLineSeries`
- - `ScatterSplineSeries` 
+ - `ScatterSplineSeries`
  - `ScatterAreaSeries`
  - `ScatterContourSeries`
  - `ScatterPolylineSeries`
@@ -67,7 +67,7 @@ _language: ja
 
 ### 数値 Y 軸
 
-`NumericYAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、Y 軸に沿って垂直に配置されます。`NumericYAxis` ラベルの位置は、`NumericXAxis` と組み合わせた場合にサポートされるさまざまな `Scatter Series` (散布シリーズ) の `YMemberPath` プロパティに依存します。または、`CategoryYAxis` と組み合わせた場合、これらのラベルは、上記の表に記載されているカテゴリまたは積層シリーズの `ValueMemberPath` に対応して配置されます。財務シリーズのいずれかを使用している場合、Open/High/Low/Close のパスと使用しているシリーズ タイプに対応して配置されます。
+`NumericYAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸のラベルは、Y 軸に沿って垂直に配置されます。`NumericYAxis` ラベルの位置は、`NumericXAxis` と組み合わせた場合にサポートされるさまざまな [ScatterSeries](../types/scatter-chart.md) (散布シリーズ) の `YMemberPath` プロパティに依存します。または、`CategoryYAxis` と組み合わせた場合、これらのラベルは、上記の表に記載されているカテゴリまたは積層シリーズの `ValueMemberPath` に対応して配置されます。財務シリーズのいずれかを使用している場合、Open/High/Low/Close のパスと使用しているシリーズ タイプに対応して配置されます。
 
 `NumericYAxis` は、次のタイプのシリーズと互換性があります:
 
@@ -109,7 +109,7 @@ _language: ja
 
 ### カテゴリ角度軸
 
-`CategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、その順序での位置に従って円の端に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。 
+`CategoryAngleAxis` は、そのデータを一連のカテゴリ データ項目として扱います。この軸のラベルは、その順序での位置に従って円の端に沿って配置されます。この軸の種類では、数字、文字列などのほぼすべてのデータのタイプを表示できます。
 
 `CategoryAngleAxis` は通常、[ラジアル シリーズ](../types/radial-chart.md)をプロットするために `NumericRadiusAxis` と共に使用されます。
 
@@ -119,7 +119,7 @@ _language: ja
 
 ### 数字角度軸
 
-`NumericAngleAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸領域のラベルは、円形プロットの中心から始まる半径線に沿って配置されます。`NumericAngleAxis` のラベルの位置は、[極座標シリーズ](../types/polar-chart.md) オブジェクトの `RadiusMemberPath` プロパティまたは[ラジアル シリーズ](../types/radial-chart.md) オブジェクトの `ValueMemberPath` プロパティを使用してマップされたデータ列の値によって異なります。 
+`NumericAngleAxis` は、そのデータを連続的に変化する数値データ項目として扱います。この軸領域のラベルは、円形プロットの中心から始まる半径線に沿って配置されます。`NumericAngleAxis` のラベルの位置は、[極座標シリーズ](../types/polar-chart.md) オブジェクトの `RadiusMemberPath` プロパティまたは[ラジアル シリーズ](../types/radial-chart.md) オブジェクトの `ValueMemberPath` プロパティを使用してマップされたデータ列の値によって異なります。
 
 `NumericAngleAxis` は、`CategoryAngleAxis` と共に使用して[ラジアル シリーズ](../types/radial-chart.md)をプロットするか、`NumericRadiusAxis` と共に使用して[極座標シリーズ](../types/polar-chart.md)をプロットすることができます。
 

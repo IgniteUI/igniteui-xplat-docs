@@ -660,11 +660,12 @@ public cellStyles = {
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} 編集](editing.md)
 * [{ComponentTitle} 行の編集](row-editing.md)
 * [{ComponentTitle} 行の追加](row-adding.md)
 * [{ComponentTitle} トランザクション](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- end: Blazor -->
 
