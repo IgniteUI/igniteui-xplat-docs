@@ -357,11 +357,7 @@ The `ng-template` is provided with the column group object as a context.
 ```ts
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.generalHeaderTemplate;
-    }
-    this._bind();
+    general.headerTemplate = this.generalHeaderTemplate;
 }
 
 public generalHeaderTemplate = (ctx: IgcCellTemplateContext) => {
@@ -395,12 +391,8 @@ If you want to re-use a single template for several column groups, you could set
 constructor() {
     var general = this.general = document.getElementById('General') as IgcColumnComponent;
     var addresss = this.address = document.getElementById('Address') as IgcColumnComponent;
-
-    this._bind = () => {
-        general.headerTemplate = this.columnGroupHeaderTemplate;
-        addresss.headerTemplate = this.columnGroupHeaderTemplate;
-    }
-    this._bind();
+    general.headerTemplate = this.columnGroupHeaderTemplate;
+    addresss.headerTemplate = this.columnGroupHeaderTemplate;
 }
 
 public columnGroupHeaderTemplate = (ctx: IgcCellTemplateContext) => {
@@ -444,12 +436,8 @@ Each of the column groups of the grid can be templated separately. The following
 constructor() {
     var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
     var columnGroup = this.columnGroup = document.getElementById('addressInfoGroup') as IgcColumnGroupComponent;
-
-    this._bind = () => {
-        grid.data = this.customersData
-        columnGroup.headerTemplate = this.headerTemplate;
-    }
-    this._bind();
+    grid.data = this.customersData
+    columnGroup.headerTemplate = this.headerTemplate;
 }
 
 public headerTemplate = (ctx: IgcColumnTemplateContext) => {
@@ -619,7 +607,7 @@ import 'core-js/es7/array';
 <!-- WebComponents, Blazor -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
