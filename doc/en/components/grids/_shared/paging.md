@@ -72,7 +72,7 @@ The following example represents `{ComponentName}` pagination and exposes the op
 
 Group rows participate in the paging process along with data rows. They count towards the page size for each page. Collapsed rows are not included in the paging process.
 
-Integration between Paging and Group By is described in the [Group By](groupby.md#grid-group-by-with-paging) topic.
+Integration between Paging and Group By is described in the [Group By](groupby.md#{PlatformLower}-grid-group-by-with-paging) topic.
 
 <!-- ComponentEnd: Grid -->
 
@@ -380,6 +380,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
+
 <!-- * [Paginator](../paginator.md) -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
@@ -389,6 +391,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

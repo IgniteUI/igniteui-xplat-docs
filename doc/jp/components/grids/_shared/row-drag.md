@@ -20,7 +20,7 @@ _language: ja
 
 ## 構成
 
-`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。
+`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
 
 <!-- Angular -->
 ```html
@@ -41,7 +41,7 @@ _language: ja
 ```
 <!-- end: WebComponents -->
 
-ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
+<!-- Angular -->
 
 以下は、行ドラッグをサポートするための `{ComponentName}` の設定方法と、ドロップイベントの適切な処理方法についてのチュートリアルです。
 
@@ -56,8 +56,6 @@ _language: ja
 この例では、あるグリッドから別のグリッドに行をドラッグし、それを最初のデータソースから削除し、それを 2 番目のデータソースに追加します。
 
 <!-- ComponentEnd: Grid -->
-
-<!-- Angular -->
 
 ### ドロップエリア
 
@@ -391,13 +389,7 @@ enum DragIcon {
 `sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
 
-
-<!-- end: Angular -->
-
-
 ## アプリケーション デモ
-
-<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -416,15 +408,11 @@ enum DragIcon {
 
 <!-- ComponentEnd: Grid -->
 
-<!-- end: Angular -->
-
 ### 行の並べ替えデモ
 
-<!-- Angular -->
 グリッドの行ドラッグ イベントと `Drop` ディレクティブを使用して、ドラッグよる行の並べ替えるが可能なグリッドを作成できます。
 
 すべてのアクションはグリッド本体の**内側**で発生するため、ここで `Drop` ディレクティブをアタッチする必要があります:
-<!-- end:Angular -->
 
 ```html
 <igx-grid #grid [data]="data" [rowDraggable]="true" [primaryKey]="'ID'" igxDrop (dropped)="onDropAllowed($event)">

@@ -369,7 +369,7 @@ The row adding UI comprises the buttons in the `ActionStrip` editing actions, th
 
 
 * [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+<!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 Our community is active and always welcoming to new ideas.
 
