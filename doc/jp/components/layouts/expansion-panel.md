@@ -2,7 +2,8 @@
 title: {Platform} 展開パネル | 展開パネル | インフラジスティックス
 _description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
 _keywords: {Platform} Expansion Panel, Infragistics, {Platform} 展開パネル, {ProductName}, インフラジスティックス
-mentionedTypes: ['ExpansionPanel']
+mentionedTypes: ['Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+namespace: Infragistics.Controls
 _language: ja
 ---
 

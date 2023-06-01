@@ -3,7 +3,7 @@
     "names":[{"platform":"WebComponents","fileName":"igc-polar-area-series-component.ts","dynamicModuleName":"igc-polar-area-series-dynamic-module.ts","moduleName":"igc-polar-area-series-module.ts","mappedName":"IgcPolarAreaSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
-    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarBase",
     "names":[{"platform":"WebComponents","fileName":"igc-polar-base-component.ts","mappedName":"IgcPolarBaseComponent"}],
     "members":[
@@ -18,6 +18,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"number[]","mappedName":"trendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"trendLineZIndex"}],"originalName":"TrendLineZIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"clipSeriesToBounds"}],"originalName":"ClipSeriesToBounds"},
@@ -37,26 +38,26 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsRadiusAxis"}],"originalName":"CanUseAsRadiusAxis"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsAngleAxis"}],"originalName":"CanUseAsAngleAxis"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"canUseAsAngleAxis"}],"originalName":"CanUseAsAngleAxis"}],"originalBaseTypeName":"MarkerSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarLineSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-polar-line-series-component.ts","dynamicModuleName":"igc-polar-line-series-dynamic-module.ts","moduleName":"igc-polar-line-series-module.ts","mappedName":"IgcPolarLineSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isLineOnly"}],"originalName":"IsLineOnly"},
-    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"UnknownValuePlotting","mappedName":"unknownValuePlotting"}],"originalName":"UnknownValuePlotting"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarLineSeriesBase",
-    "names":[{"platform":"WebComponents","fileName":"igc-polar-line-series-base-component.ts","mappedName":"IgcPolarLineSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"WebComponents","fileName":"igc-polar-line-series-base-component.ts","mappedName":"IgcPolarLineSeriesBaseComponent"}],"members":[],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarScatterSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-polar-scatter-series-component.ts","dynamicModuleName":"igc-polar-scatter-series-dynamic-module.ts","moduleName":"igc-polar-scatter-series-module.ts","mappedName":"IgcPolarScatterSeriesComponent"}],
     "members":[
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hasOnlyMarkers"}],"originalName":"HasOnlyMarkers"}],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"hasOnlyMarkers"}],"originalName":"HasOnlyMarkers"}],"originalBaseTypeName":"PolarBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarSplineAreaSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-polar-spline-area-series-component.ts","dynamicModuleName":"igc-polar-spline-area-series-dynamic-module.ts","moduleName":"igc-polar-spline-area-series-module.ts","mappedName":"IgcPolarSplineAreaSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"},
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"PolarSplineSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-polar-spline-series-component.ts","dynamicModuleName":"igc-polar-spline-series-dynamic-module.ts","moduleName":"igc-polar-spline-series-module.ts","mappedName":"IgcPolarSplineSeriesComponent"}],
     "members":[
     { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"isSpline"}],"originalName":"IsSpline"},
-    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"stiffness"}],"originalName":"Stiffness"}],"originalBaseTypeName":"PolarLineSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

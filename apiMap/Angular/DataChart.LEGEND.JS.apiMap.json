@@ -134,7 +134,7 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"flush"}],"originalName":"Flush"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getAbbreviatedNumber"}],"originalName":"GetAbbreviatedNumber"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getAbbreviatedSymbol"}],"originalName":"GetAbbreviatedSymbol"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"getAbbreviatedString"}],"originalName":"GetAbbreviatedString"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendSummaryEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-data-legend-summary-event-args.ts","mappedName":"IgxDataLegendSummaryEventArgs"}],
     "members":[
@@ -142,7 +142,7 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"columnMemberPath"}],"originalName":"ColumnMemberPath"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"summaryValue"}],"originalName":"SummaryValue"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryUnits"}],"originalName":"SummaryUnits"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"summaryLabel"}],"originalName":"SummaryLabel"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendMouseEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-legend-mouse-event-args.ts","mappedName":"IgxLegendMouseEventArgs"}],
     "members":[
@@ -151,7 +151,7 @@
     { "names":[{"platform":"Angular","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"Angular","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendMouseButtonEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-legend-mouse-button-event-args.ts","mappedName":"IgxLegendMouseButtonEventArgs"}],
     "members":[
@@ -161,7 +161,7 @@
     { "names":[{"platform":"Angular","mappedType":"ILegendSeries","mappedName":"series"}],"originalName":"Series"},
     { "names":[{"platform":"Angular","mappedType":"ILegendOwner","mappedName":"chart"}],"originalName":"Chart"},
     { "names":[{"platform":"Angular","mappedType":"any","mappedName":"legendItem"}],"originalName":"LegendItem"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"toString"}],"originalName":"ToString"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendStylingRowEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-data-legend-styling-row-event-args.ts","mappedName":"IgxDataLegendStylingRowEventArgs"}],
     "members":[
@@ -171,7 +171,7 @@
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"seriesIndex"}],"originalName":"SeriesIndex"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"seriesTitle"}],"originalName":"SeriesTitle"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleText"}],"originalName":"TitleText"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"titleTextColor"}],"originalName":"TitleTextColor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataLegendStylingColumnEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-data-legend-styling-column-event-args.ts","mappedName":"IgxDataLegendStylingColumnEventArgs"}],
     "members":[
@@ -187,35 +187,35 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueText"}],"originalName":"ValueText"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelTextColor"}],"originalName":"LabelTextColor"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"unitsTextColor"}],"originalName":"UnitsTextColor"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"valueTextColor"}],"originalName":"ValueTextColor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ItemLegend",
     "names":[{"platform":"Angular","fileName":"igx-item-legend-component.ts","mappedName":"IgxItemLegendComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
     { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Legend",
     "names":[{"platform":"Angular","fileName":"igx-legend-component.ts","mappedName":"IgxLegendComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"orientation"}],"originalName":"Orientation"},
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textColor"}],"originalName":"TextColor"},
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"textStyle"}],"originalName":"TextStyle"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendOrientation","isEnum":true,
     "names":[{"platform":"Angular","fileName":"LegendOrientation.ts","mappedName":"LegendOrientation"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"Horizontal"}],"originalName":"Horizontal"},
     { "names":[{"platform":"Angular","mappedType":"LegendOrientation","mappedName":"Vertical"}],"originalName":"Vertical"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"LegendBase",
     "names":[{"platform":"Angular","fileName":"igx-legend-base-component.ts","mappedName":"IgxLegendBaseComponent"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isItemwise"}],"originalName":"IsItemwise"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"ContentControl","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialLegend",
     "names":[{"platform":"Angular","fileName":"igx-financial-legend-component.ts","mappedName":"IgxFinancialLegendComponent"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isFinancial"}],"originalName":"IsFinancial"}],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ScaleLegend",
-    "names":[{"platform":"Angular","fileName":"igx-scale-legend-component.ts","mappedName":"IgxScaleLegendComponent"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    "names":[{"platform":"Angular","fileName":"igx-scale-legend-component.ts","mappedName":"IgxScaleLegendComponent"}],"members":[],"originalBaseTypeName":"LegendBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

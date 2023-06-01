@@ -30,4 +30,4 @@
     { "names":[{"platform":"Angular","mappedType":"OpenPackagingNonConformanceReason","mappedName":"relationshipTargetInvalid"}],"originalName":"RelationshipTargetInvalid"},
     { "names":[{"platform":"Angular","mappedType":"OpenPackagingNonConformanceReason","mappedName":"relationshipTargetNotRelativeReference"}],"originalName":"RelationshipTargetNotRelativeReference"},
     { "names":[{"platform":"Angular","mappedType":"OpenPackagingNonConformanceReason","mappedName":"relationshipNameInvalid"}],"originalName":"RelationshipNameInvalid"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Documents.Excel.Serialization.Excel2007"}]}
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":".ctor"}],"originalName":".ctor"}],"packageName":"igniteui-excel","originalNamespace":"Infragistics.Documents.Excel.Serialization.Excel2007"}]}
