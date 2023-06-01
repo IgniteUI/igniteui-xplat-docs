@@ -497,7 +497,7 @@ Then set the related CSS properties to this class:
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -508,6 +508,7 @@ Then set the related CSS properties to this class:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

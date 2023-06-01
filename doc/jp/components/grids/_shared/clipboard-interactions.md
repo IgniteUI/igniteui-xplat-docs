@@ -64,7 +64,7 @@ _language: ja
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
 * [ソート](sorting.md)
@@ -73,6 +73,7 @@ _language: ja
 * [選択](selection.md)
 * [仮想化とパフォーマンス](virtualization.md)
 * [複数列ヘッダー](multi-column-headers.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 

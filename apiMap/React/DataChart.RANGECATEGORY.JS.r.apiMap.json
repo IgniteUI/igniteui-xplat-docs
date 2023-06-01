@@ -4,7 +4,7 @@
     "names":[{"platform":"React","fileName":"igr-range-area-series.ts","dynamicModuleName":"igr-range-area-series-dynamic-module.ts","moduleName":"igr-range-area-series-module.ts","mappedName":"IgrRangeAreaSeries"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isAreaOrLine"}],"originalName":"IsAreaOrLine"},
-    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"boolean","mappedName":"isArea"}],"originalName":"IsArea"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HorizontalRangeCategorySeries",
     "names":[{"platform":"React","fileName":"igr-horizontal-range-category-series.ts","mappedName":"IgrHorizontalRangeCategorySeries"}],
     "members":[
@@ -26,14 +26,14 @@
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesLowValuePosition"}],"originalName":"GetSeriesLowValuePosition"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValuePosition"}],"originalName":"GetSeriesValuePosition"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsYAxis"}],"originalName":"CanUseAsYAxis"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"canUseAsXAxis"}],"originalName":"CanUseAsXAxis"}],"originalBaseTypeName":"RangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeCategorySeries",
     "names":[{"platform":"React","fileName":"igr-range-category-series.ts","mappedName":"IgrRangeCategorySeries"}],
     "members":[
     { "names":[{"platform":"React","mappedType":"string","mappedName":"lowMemberPath"}],"originalName":"LowMemberPath"},
     { "names":[{"platform":"React","mappedType":"string","mappedName":"highMemberPath"}],"originalName":"HighMemberPath"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemValue"}],"originalName":"GetItemValue"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"}],"originalBaseTypeName":"CategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RangeColumnSeries",
     "names":[{"platform":"React","fileName":"igr-range-column-series.ts","dynamicModuleName":"igr-range-column-series-dynamic-module.ts","moduleName":"igr-range-column-series-module.ts","mappedName":"IgrRangeColumnSeries"}],
     "members":[
@@ -42,4 +42,4 @@
     { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusX"}],"originalName":"RadiusX"},
     { "names":[{"platform":"React","mappedType":"number","mappedName":"radiusY"}],"originalName":"RadiusY"},
     { "names":[{"platform":"React","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
-    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"React","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"}],"originalBaseTypeName":"HorizontalRangeCategorySeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

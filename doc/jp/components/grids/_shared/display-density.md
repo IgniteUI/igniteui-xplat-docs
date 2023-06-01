@@ -779,7 +779,7 @@ public selectDensity(event) {
 * `Column`
 
 ## その他のリソース
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [編集](editing.md)
 * [ページング](paging.md)
@@ -789,13 +789,8 @@ public selectDensity(event) {
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 * [検索](search.md)
-
-<!-- ComponentEnd: HierarchicalGrid -->
-
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
