@@ -139,12 +139,9 @@ You can subscribe to the `ColumnMovingEnd` event of the `{ComponentName}` to imp
 ```typescript
 constructor() {
     var dataGrid = this.dataGrid = document.getElementById('dataGrid') as IgcGridComponent;
+    dataGrid.data = this.data;
+    dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
 
-    this._bind = () => {
-        dataGrid.data = this.data;
-        dataGrid.addEventListener("columnMovingEnd", this.onColumnMovingEnd);
-    }
-    this._bind();
 }
 ```
 <!-- end: WebComponents -->
