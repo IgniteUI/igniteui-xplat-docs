@@ -7,7 +7,7 @@
     { "names":[{"platform":"Angular","mappedType":"SparklineDisplayType","mappedName":"Area"}],"originalName":"Area"},
     { "names":[{"platform":"Angular","mappedType":"SparklineDisplayType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"Angular","mappedType":"SparklineDisplayType","mappedName":"WinLoss"}],"originalName":"WinLoss"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamSparkline",
     "names":[{"platform":"Angular","fileName":"igx-sparkline-component.ts","mappedName":"IgxSparklineComponent"}],
     "members":[
@@ -67,4 +67,4 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

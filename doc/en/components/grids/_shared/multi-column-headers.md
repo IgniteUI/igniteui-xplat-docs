@@ -655,6 +655,7 @@ Then set the related CSS properties to this class:
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
 * [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -664,6 +665,7 @@ Then set the related CSS properties to this class:
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Group by](groupby.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 
