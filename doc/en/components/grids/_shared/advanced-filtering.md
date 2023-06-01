@@ -53,10 +53,7 @@ To enable the advanced filtering, the `AllowAdvancedFiltering` input property sh
 ```ts
 constructor() {
     let grid = (document.getElementById("grid") as IgcGridComponent);
-    this._bind = () => {
-            grid.data = this.data
-    }
-    this._bind();
+    grid.data = this.data
 }
 ```
 <!-- end: WebComponents -->
@@ -465,7 +462,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- WebComponents, Blazor -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
