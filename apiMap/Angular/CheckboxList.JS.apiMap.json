@@ -42,19 +42,19 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"addKeyValue"}],"originalName":"AddKeyValue"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"removeKeyValue"}],"originalName":"RemoveKeyValue"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"isNothingSelected"}],"originalName":"IsNothingSelected"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"isEverythingSelected"}],"originalName":"IsEverythingSelected"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"isEverythingSelected"}],"originalName":"IsEverythingSelected"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"CheckedChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-checked-changed-event-args.ts","mappedName":"IgxCheckedChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"index"}],"originalName":"Index"},
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"SelectAllCheckboxChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-select-all-checkbox-changed-event-args.ts","mappedName":"IgxSelectAllCheckboxChangedEventArgs"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
+    { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isChecked"}],"originalName":"IsChecked"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"},
   { "originalName":"CheckboxListIndexType","isEnum":true,
     "names":[{"platform":"Angular","fileName":"CheckboxListIndexType.ts","mappedName":"CheckboxListIndexType"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"CheckboxListIndexType","mappedName":"Selected"}],"originalName":"Selected"},
     { "names":[{"platform":"Angular","mappedType":"CheckboxListIndexType","mappedName":"DeSelected"}],"originalName":"DeSelected"},
-    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}
+    { "names":[{"platform":"Angular","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-grids","originalNamespace":"Infragistics.Controls.Inputs.Implementation"}]}

@@ -209,7 +209,7 @@ $dark-grid-column-moving-theme: grid-theme(
 ```
 
 > [!Note]
-> コンポーネントの [**View Encapsulation**](/components/themes/sass/component-themes.html#表示のカプセル化) ストラテジに基づいて、::ng-deep を使用してこのカプセル化を`解除する`必要があります。
+> コンポーネントの [**View Encapsulation**](/components/themes/sass/component-themes.html#表示のカプセル化) ストラテジに基づいて、`::ng-deep` を使用してこのカプセル化を`解除する`必要があります。
 
 ```scss
 :host {
@@ -270,7 +270,7 @@ $dark-grid-column-moving-schema: extend($_light-grid,
 );
 ```
 
-カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-light-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
+カスタム スキーマを適用するには、グローバル ([light]({environment:sassApiUrl}/index.html#variable-light-schema) または [dark]({environment:sassApiUrl}/index.html#variable-dark-schema)) の 1 つを**拡張する**必要があります。これは基本的にカスタム スキーマでコンポーネントを指し示し、その後それぞれのコンポーネント テーマに追加するものです。
 
 ```scss
 // Extending the global dark-schema
@@ -300,10 +300,11 @@ $dark-grid-column-moving-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- WebComponents, Blazor -->
+<!-- WebComponents -->
 ## スタイル設定
 
-定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。
+<!-- 定義済みのテーマに加えて、利用可能な [CSS プロパティ](../theming.md)のいくつかを設定することで、グリッドをさらにカスタマイズできます。 -->
+
 色を変更したい場合は、最初にグリッドのクラスを設定する必要があります:
 
 ```html
@@ -327,7 +328,7 @@ $dark-grid-column-moving-theme: grid-theme(
 
 `sample="/{ComponentSample}/column-moving-styles", height="650", alt="{Platform} {ComponentTitle} Grid Moving Styled Example"`
 
-<!-- end: WebComponents, Blazor -->
+<!-- end: WebComponents -->
 
 ## API リファレンス
 
@@ -335,6 +336,8 @@ $dark-grid-column-moving-theme: grid-theme(
 * `{ComponentName}`
 
 ## その他のリソース
+
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -343,9 +346,8 @@ $dark-grid-column-moving-theme: grid-theme(
 * [列のピン固定](column-pinning.md)
 * [列のサイズ変更](column-resizing.md)
 * [選択](selection.md)
-<!-- ComponentStart: HierarchicalGrid -->
 * [検索](search.md)
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
