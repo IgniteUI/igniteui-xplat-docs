@@ -6,7 +6,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"position"}],"originalName":"Position"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"count"}],"originalName":"Count"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcFinancialCalculationDataSource","mappedName":"dataSource"}],"originalName":"DataSource"},
-    { "names":[{"platform":"WebComponents","mappedType":"IgcFinancialCalculationSupportingCalculations","mappedName":"supportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"IgcFinancialCalculationSupportingCalculations","mappedName":"supportingCalculations"}],"originalName":"SupportingCalculations"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialPriceSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-financial-price-series-component.ts","dynamicModuleName":"igc-financial-price-series-dynamic-module.ts","moduleName":"igc-financial-price-series-module.ts","mappedName":"IgcFinancialPriceSeriesComponent"}],
     "members":[
@@ -15,6 +15,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"trendLineBrush"}],"originalName":"TrendLineBrush"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"actualTrendLineBrush"}],"originalName":"ActualTrendLineBrush"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"trendLineThickness"}],"originalName":"TrendLineThickness"},
+    { "names":[{"platform":"WebComponents","mappedType":"number[]","mappedName":"trendLineDashArray"}],"originalName":"TrendLineDashArray"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"trendLinePeriod"}],"originalName":"TrendLinePeriod"},
     { "names":[{"platform":"WebComponents","mappedType":"PriceDisplayType","mappedName":"displayType"}],"originalName":"DisplayType"},
     { "names":[{"platform":"WebComponents","mappedType":"string","mappedName":"negativeOutline"}],"originalName":"NegativeOutline"},
@@ -29,7 +30,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getSeriesValueBoundingBox"}],"originalName":"GetSeriesValueBoundingBox"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"scrollIntoView"}],"originalName":"ScrollIntoView"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemSpan"}],"originalName":"GetItemSpan"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"FinancialSeries","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialSeries",
     "names":[{"platform":"WebComponents","fileName":"igc-financial-series-component.ts","mappedName":"IgcFinancialSeriesComponent"}],
     "members":[
@@ -70,7 +71,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getExactItemIndex"}],"originalName":"GetExactItemIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItemIndex"}],"originalName":"GetItemIndex"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"getItem"}],"originalName":"GetItem"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"setNegativeColors"}],"originalName":"SetNegativeColors"}],"originalBaseTypeName":"Series","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationSupportingCalculations",
     "names":[{"platform":"WebComponents","fileName":"igc-financial-calculation-supporting-calculations.ts","mappedName":"IgcFinancialCalculationSupportingCalculations"}],
     "members":[
@@ -82,13 +83,13 @@
     { "names":[{"platform":"WebComponents","mappedType":"IgcDataSourceSupportingCalculation","mappedName":"longVolumeOscillatorAverage"}],"originalName":"LongVolumeOscillatorAverage"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcDataSourceSupportingCalculation","mappedName":"shortPriceOscillatorAverage"}],"originalName":"ShortPriceOscillatorAverage"},
     { "names":[{"platform":"WebComponents","mappedType":"IgcDataSourceSupportingCalculation","mappedName":"longPriceOscillatorAverage"}],"originalName":"LongPriceOscillatorAverage"},
-    { "names":[{"platform":"WebComponents","mappedType":"(arg1: number) => number","mappedName":"makeSafe"}],"originalName":"MakeSafe"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"(arg1: number) => number","mappedName":"makeSafe"}],"originalName":"MakeSafe"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"ColumnSupportingCalculation",
-    "names":[{"platform":"WebComponents","fileName":"igc-column-supporting-calculation.ts","mappedName":"IgcColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"WebComponents","fileName":"igc-column-supporting-calculation.ts","mappedName":"IgcColumnSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"DataSourceSupportingCalculation",
-    "names":[{"platform":"WebComponents","fileName":"igc-data-source-supporting-calculation.ts","mappedName":"IgcDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"WebComponents","fileName":"igc-data-source-supporting-calculation.ts","mappedName":"IgcDataSourceSupportingCalculation"}],"members":[],"originalBaseTypeName":"SupportingCalculation","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"CalculatedColumn",
-    "names":[{"platform":"WebComponents","fileName":"igc-calculated-column.ts","mappedName":"IgcCalculatedColumn"}],"members":[],"originalNamespace":"Infragistics.Controls.Charts"},
+    "names":[{"platform":"WebComponents","fileName":"igc-calculated-column.ts","mappedName":"IgcCalculatedColumn"}],"members":[],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"FinancialCalculationDataSource",
     "names":[{"platform":"WebComponents","fileName":"igc-financial-calculation-data-source.ts","mappedName":"IgcFinancialCalculationDataSource"}],
     "members":[
@@ -104,4 +105,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"multiplier"}],"originalName":"Multiplier"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"minimumValue"}],"originalName":"MinimumValue"},
     { "names":[{"platform":"WebComponents","mappedType":"number","mappedName":"maximumValue"}],"originalName":"MaximumValue"},
-    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"specifiesRange"}],"originalName":"SpecifiesRange"}],"originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"boolean","mappedName":"specifiesRange"}],"originalName":"SpecifiesRange"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}
