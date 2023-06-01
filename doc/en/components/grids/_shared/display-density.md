@@ -782,7 +782,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * `Column`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -792,12 +792,8 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 * [Searching](search.md)
-
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.

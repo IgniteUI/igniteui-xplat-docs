@@ -7,7 +7,7 @@
     { "names":[{"platform":"WebComponents","mappedType":"SparklineDisplayType","mappedName":"Area"}],"originalName":"Area"},
     { "names":[{"platform":"WebComponents","mappedType":"SparklineDisplayType","mappedName":"Column"}],"originalName":"Column"},
     { "names":[{"platform":"WebComponents","mappedType":"SparklineDisplayType","mappedName":"WinLoss"}],"originalName":"WinLoss"},
-    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"WebComponents","mappedType":"void","mappedName":"init"}],"originalName":".ctor"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamSparkline",
     "names":[{"platform":"WebComponents","fileName":"igc-sparkline-component.ts","mappedName":"IgcSparklineComponent"}],
     "members":[
@@ -67,4 +67,4 @@
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"},
     { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportVisualData"}],"originalName":"ExportVisualData"},
-    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"WebComponents","mappedType":"method","mappedName":"exportSerializedVisualData"}],"originalName":"ExportSerializedVisualData"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

@@ -3,12 +3,12 @@
   { "originalName":"HierarchicalRingSeries",
     "names":[{"platform":"Angular","fileName":"igx-hierarchical-ring-series-component.ts","dynamicModuleName":"igx-hierarchical-ring-series-dynamic-module.ts","moduleName":"igx-hierarchical-ring-series-module.ts","mappedName":"IgxHierarchicalRingSeriesComponent"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"childrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"string","mappedName":"childrenMemberPath"}],"originalName":"ChildrenMemberPath"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"HoleDimensionsChangedEventArgs",
     "names":[{"platform":"Angular","fileName":"igx-hole-dimensions-changed-event-args.ts","mappedName":"IgxHoleDimensionsChangedEventArgs"}],
     "members":[
     { "names":[{"platform":"Angular","mappedType":"IgPoint","mappedName":"center"}],"originalName":"Center"},
-    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radius"}],"originalName":"Radius"}],"originalBaseTypeName":"EventArgs","originalBaseTypeNamespace":"System","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"Ring",
     "names":[{"platform":"Angular","fileName":"igx-ring.ts","mappedName":"IgxRing"}],
     "members":[
@@ -19,11 +19,11 @@
     { "names":[{"platform":"Angular","mappedType":"IgxRingSeriesBaseComponent","mappedName":"ringSeries"}],"originalName":"RingSeries"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"ringBreadth"}],"originalName":"RingBreadth"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"renderArcs"}],"originalName":"RenderArcs"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"prepareArcs"}],"originalName":"PrepareArcs"}],"originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"prepareArcs"}],"originalName":"PrepareArcs"}],"packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeries",
     "names":[{"platform":"Angular","fileName":"igx-ring-series-component.ts","dynamicModuleName":"igx-ring-series-dynamic-module.ts","moduleName":"igx-ring-series-module.ts","mappedName":"IgxRingSeriesComponent"}],
     "members":[
-    { "names":[{"platform":"Angular","mappedType":"IgxRing","mappedName":"ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"IgxRing","mappedName":"ring"}],"originalName":"Ring"}],"originalBaseTypeName":"RingSeriesBase","originalBaseTypeNamespace":"Infragistics.Controls.Charts","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"RingSeriesBase",
     "names":[{"platform":"Angular","fileName":"igx-ring-series-base-component.ts","mappedName":"IgxRingSeriesBaseComponent"}],
     "members":[
@@ -79,7 +79,7 @@
     { "names":[{"platform":"Angular","mappedType":"string","mappedName":"labelInnerColor"}],"originalName":"LabelInnerColor"},
     { "names":[{"platform":"Angular","mappedType":"boolean","mappedName":"isSurfaceInteractionDisabled"}],"originalName":"IsSurfaceInteractionDisabled"},
     { "names":[{"platform":"Angular","mappedType":"number","mappedName":"radiusFactor"}],"originalName":"RadiusFactor"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"},
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"provideContainer"}],"originalName":"ProvideContainer"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"},
   { "originalName":"XamDoughnutChart",
     "names":[{"platform":"Angular","fileName":"igx-doughnut-chart-component.ts","mappedName":"IgxDoughnutChartComponent"}],
     "members":[
@@ -107,4 +107,4 @@
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyInsertItem"}],"originalName":"NotifyInsertItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifySetItem"}],"originalName":"NotifySetItem"},
     { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyClearItems"}],"originalName":"NotifyClearItems"},
-    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","originalNamespace":"Infragistics.Controls.Charts"}]}
+    { "names":[{"platform":"Angular","mappedType":"method","mappedName":"notifyRemoveItem"}],"originalName":"NotifyRemoveItem"}],"originalBaseTypeName":"Control","originalBaseTypeNamespace":"System.Windows","packageName":"igniteui-charts","originalNamespace":"Infragistics.Controls.Charts"}]}

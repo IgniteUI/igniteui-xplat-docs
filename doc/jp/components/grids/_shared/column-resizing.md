@@ -528,7 +528,7 @@ $custom-grid-theme: grid-theme(
 
 ## その他のリソース
 
-
+<!-- ComponentStart:  Grid -->
 * [仮想化とパフォーマンス](virtualization.md)
 * [ページング](paging.md)
 * [フィルタリング](filtering.md)
@@ -537,6 +537,7 @@ $custom-grid-theme: grid-theme(
 * [列の移動](column-moving.md)
 * [列のピン固定](column-pinning.md)
 * [選択](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 コミュニティに参加して新しいアイデアをご提案ください。
 
