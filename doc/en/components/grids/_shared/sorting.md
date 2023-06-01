@@ -232,12 +232,9 @@ The sorting indicator icon in the column header can be customized using a templa
 
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-        this._bind = () => {
-            grid.data = this.data;
-            grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
-        }
-        this._bind();
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortHeaderIconTemplate = this.sortHeaderIconTemplate;
 }
 
 public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
@@ -272,12 +269,9 @@ public sortHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
 
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-        this._bind = () => {
-            grid.data = this.data;
-            grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
-        }
-        this._bind();
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortAscendingHeaderIconTemplate = this.sortAscendingHeaderIconTemplate;
 }
 
 public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
@@ -313,12 +307,9 @@ public sortAscendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => 
 
 ```ts
 constructor() {
-        var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
-        this._bind = () => {
-            grid.data = this.data;
-            grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
-        }
-        this._bind();
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.data = this.data;
+    grid.sortDescendingHeaderIconTemplate = this.sortDescendingHeaderIconTemplate;
 }
 
 public sortDescendingHeaderIconTemplate = (ctx: IgcGridHeaderTemplateContext) => {
@@ -437,7 +428,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 <!-- WebComponents, Blazor -->
 ## Styling
 
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).
+In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](../theming.md).
 In case you would like to change some of the colors, you need to set a class for the grid first:
 
 ```html
