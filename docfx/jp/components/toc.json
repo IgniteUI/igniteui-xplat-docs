@@ -234,7 +234,7 @@
       },
       {
         "exclude": ["Angular", "React"],
-        "name": "Master-Detail",
+        "name": "マスター / 詳細",
         "href": "grids/grid/master-detail.md",
         "status": ""
       },
@@ -351,6 +351,12 @@
         "name": "仮想化とパフォーマンス",
         "href": "grids/grid/virtualization.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "テーマ設定",
+        "status": "",
+        "href": "grids/theming.md"
       }
     ]
   },
@@ -966,11 +972,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   },
@@ -1960,12 +1961,6 @@
         "name": "行のピン固定",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
-      },
-      {
-        "exclude": ["Angular", "React"],
-        "name": "テーマ設定",
-        "status": "",
-        "href": "grids/data-grid/theming.md"
       }
     ]
   }
