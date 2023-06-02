@@ -12,12 +12,9 @@ In {Platform} map component, you can use the `GeographicShapeSeries` to display 
 ## {Platform} Geographic Polygon Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polygon-series"
-           alt="{Platform} Using Shape Polygon Series Example"
-           github-src="maps/geo-map/type-shape-polygon-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polygon-series", height="500", alt="{Platform} Using Shape Polygon Series Example"`
+
+
 
 <div class="divider--half"></div>
 

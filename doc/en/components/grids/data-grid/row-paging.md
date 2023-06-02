@@ -22,12 +22,9 @@ Row Paging is enabled within the {ProductName} Data Table / Data Grid by setting
 
 ## {Platform} Row Paging Example
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-pager"
-           alt="{Platform} Row Paging Example"
-           github-src="grids/data-grid/pager">
-</code-view>
+`sample="/grids/data-grid/pager", height="600", alt="{Platform} Row Paging Example"`
+
+
 
 <div class="divider--half"></div>
 

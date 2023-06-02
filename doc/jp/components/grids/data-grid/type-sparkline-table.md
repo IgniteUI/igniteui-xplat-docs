@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} 列スパークラインの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           alt="{Platform} 列スパークラインの例"
-           github-src="charts/sparkline/grid">
-</code-view>
+`sample="/charts/sparkline/grid", height="600", alt="{Platform} 列スパークラインの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -140,7 +137,6 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
         chart.dataSource = info.rowItem.OrderHistory;
     }
 }
-
 ```
 
 ```razor

@@ -4,8 +4,8 @@ _description: いくつかの定義済みの列データ型 - number、string、
 _keywords: Column Data Type, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス, 列のデータ型
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 列タイプの概要
@@ -16,11 +16,8 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 列タイプの例
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-data-types"
-           github-src="{ComponentSample}/column-data-types">
-</code-view>
+`sample="/{ComponentSample}/column-data-types", height="550", alt="{Platform} {ComponentTitle} column data types"`
+
 
 <!-- ComponentEnd: Grid -->
 
@@ -288,9 +285,9 @@ igRegisterScript("ImageCellTemplate", (ctx) => {
 *LOCALE_ID を使用する場合:*
 ```ts
 import { LOCALE_ID } from '@angular/core';
-...
+// ...
 
- @Component({
+@Component({
     selector: 'app-component.sample',
     templateUrl: 'grid-component.sample.html',
     providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }]
@@ -523,7 +520,7 @@ public init(column: IgxColumnComponent) {
 
 <!-- end: Angular -->
 
-```html
+<!-- ```html
 <igc-grid id="grid1" auto-generate="false">
     <igc-column id="UnitsInStock" field="UnitsInStock" data-type="Currency" editable="true">
     </igc-column>
@@ -562,7 +559,7 @@ public editCellTemplate = (ctx: IgcCellTemplateContext) => {
 public formatCurrency(value: number) {
 
 }
-```
+``` -->
 
 <!-- ```razor
 TO DO!
@@ -579,7 +576,7 @@ TO DO!
 
 ## その他のリソース
 
-* カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
+カスタム テンプレートについては、[セル編集トピック](cell-editing.md#セル編集テンプレート)を参照してください。
 
 * [編集](editing.md)
 * [集計](summaries.md)

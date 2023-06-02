@@ -13,16 +13,13 @@ In {ProductName} `{ComponentName}`, row dragging is initialized on the root `{Co
 
 ## {Platform} {ComponentTitle} Row Drag Example
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
-           github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentTitle} Row Drag Example" >
-</code-view>
+`sample="/{ComponentSample}/row-drag-base", height="560", alt="{Platform} {ComponentTitle} Row Drag Example"`
+
+
 
 ## Configuration
 
-In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging.
+In order to enable row-dragging for your `{ComponentName}`, all you need to do is set the grid's `RowDraggable` to **true**. Once this is enabled, a row-drag handle will be displayed on each row. This handle can be used to initiate row dragging. Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
 
 <!-- Angular -->
 ```html
@@ -43,7 +40,7 @@ In order to enable row-dragging for your `{ComponentName}`, all you need to do i
 ```
 <!-- end: WebComponents -->
 
-Clicking on the drag-handle and *moving the cursor* while holding down the button will cause the grid's `RowDragStart` event to fire. Releasing the click at any time will cause `RowDragEnd` event to fire.
+<!-- Angular -->
 
 Below, you can find a walkthrough on how to configure an `{ComponentName}` to support row dragging and how to properly handle the drop event.
 
@@ -59,8 +56,6 @@ In this example, we'll handle dragging a row from one grid to another, removing 
 
 <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
-
 ### Drop Areas
 
 Enabling row-dragging was pretty easy, but now we have to configure how we'll handle row-*dropping*.
@@ -70,7 +65,7 @@ First we need to import the `DragDropModule` in our app module:
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -78,7 +73,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -305,12 +300,9 @@ The drag ghost can be templated on every grid level, making it possible to have 
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
-           github-src="{ComponentSample}/multi-row-dragging"
-           alt="{Platform} {ComponentTitle} Multi Row Drag">
-</code-view>
+`sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} Multi Row Drag"`
+
+
 
 ### Templating the Drag Icon
 
@@ -393,19 +385,10 @@ The result of the configuration can be seem below:
 
 #### Example Demo
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
-           github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentTitle} Row Drag">
-</code-view>
-
-<!-- end: Angular -->
+`sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} Row Drag"`
 
 
 ## Application Demo
-
-<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -417,20 +400,12 @@ Try to drag moons from the grid and drop them to their corresponding planets. Ro
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
-           github-src="{ComponentSample}/row-dragging"
-           alt="{Platform} {ComponentTitle} Row Drag">
-</code-view>
-
+`sample="/{ComponentSample}/row-dragging", height="560", alt="{Platform} {ComponentTitle} Row Drag"`
 
 > [!Note]
 > The classes applied to the row drag ghost, used in the demo above, are using ::ng-deep modifier, because row drag is an internal grid feature and cannot be accessed on application level, due to the CSS encapsulation.
 
 <!-- ComponentEnd: Grid -->
-
-<!-- end: Angular -->
 
 ### Row Reordering Demo
 
@@ -664,12 +639,9 @@ Notice that we also have row selection enabled and we preserve the selection whe
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
-           github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} Row Reorder">
-</code-view>
+`sample="/{ComponentSample}/row-reorder", height="700", alt="{Platform} {ComponentTitle} Row Reorder"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -777,8 +749,9 @@ class MyRowGhostComponent {
         }
     }
 }
-
 ```
+
+<!-- Angular -->
 
 #### Displaying a Drop Indicator based on Cursor Position
 
@@ -849,8 +822,6 @@ private changeHighlightedElement(newElement: HTMLElement) {
   }
 }
 ```
-
-<!-- Angular -->
 
 #### Scrolling the Grid on Row Drag
 
@@ -926,22 +897,18 @@ Following is the example of both scenarios described above - showing a drop indi
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:830px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
-           github-src="{ComponentSample}/row-drop-indicator"
-           alt="{Platform} {ComponentTitle} Drop Indicator">
-</code-view>
+`sample="/{ComponentSample}/row-drop-indicator", height="830", alt="{Platform} {ComponentTitle} Drop Indicator"`
+
+
 
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-
 ## Limitations
 
-Currently, there are no known limitations for the `RowDraggable` directive.
+Currently, there are no known limitations for the `RowDraggable`.
 
 ## API References
 
@@ -951,9 +918,6 @@ Currently, there are no known limitations for the `RowDraggable` directive.
 * `{ComponentName}`
 
 ## Additional Resources
-
-
-
 Our community is active and always welcoming to new ideas.
 
 * [{ProductName} **Forums**]({ForumsLink})

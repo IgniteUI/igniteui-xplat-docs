@@ -12,11 +12,8 @@ _language: kr
 ## 데모
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-animation"
-           github-src="grids/data-grid/column-animation">
-</code-view>
+`sample="/grids/data-grid/column-animation", height="600", alt="{Platform} data grid column animation"`
+
 
 <div class="divider--half"></div>
 

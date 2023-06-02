@@ -1,6 +1,6 @@
 ---
 title: {Platform} {ComponentTitle} Virtualization and Performance - {ProductName}
-_description: The {ProductName} Virtualization directive is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
+_description: The {ProductName} Virtualization is the core mechanic behind the speed & performance of the grid when handling large data sets. Try for free!
 _keywords: {Platform} {ComponentTitle}, {ComponentTitle} performance, data table virtualization, {ProductName}
 _canonicalLink: grid/virtualization
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
@@ -10,20 +10,17 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} Virtualization and Performance
 
-In {ProductName}, the `{ComponentName}` control now utilizes the `ForOf` directive and virtualizes its content both vertically and horizontally.
+In {ProductName}, the `{ComponentName}` control virtualizes its content both vertically and horizontally.
 
 ## {Platform} {ComponentTitle} Virtualization and Performance Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-virtualization"
-           github-src="{ComponentSample}/data-performance-virtualization"
-           alt="{Platform} {ComponentTitle} Virtualization and Performance Example">
-</code-view>
+`sample="/{ComponentSample}/data-performance-virtualization", height="550", alt="{Platform} {ComponentTitle} Virtualization and Performance Example"`
+
+
 
 ## Enabling Virtualization
 
-By utilizing the `ForOf` directive the `{ComponentName}` now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. The `{ComponentName}`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally.
+The `{ComponentName}` now optimizes DOM rendering and memory consumption by rendering only what is currently visible in the view port and swapping the displayed data while the user scrolls the data horizontally/vertically. The `{ComponentName}`'s `Width` and `Height` defaults to `100%` which will enable virtualization if the content displayed cannot fit inside the available space and scrollbars are required either vertically or horizontally.
 
 However, it is also possible to explicitly set the `{ComponentName}`'s `Width` and/or `Height` to `null` which means that the related dimension will be determined by the total size of the items inside. No scrollbar will then be shown and all items will be rendered along the respective dimension (columns if `Width` is `null` and rows if `Height` is `null`).
 
@@ -61,7 +58,7 @@ Without information about the sizes of the container and the items before render
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
@@ -70,6 +67,7 @@ Without information about the sizes of the container and the items before render
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

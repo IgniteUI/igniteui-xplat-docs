@@ -24,12 +24,9 @@ _language: ja
 このデモは、グリッドで利用可能な機能のいくつかを実装しています:
 フィルタリング、グループ化、列のピン固定/ピン固定解除、列の再配置、ソート、および集計。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Data Grid の例"
-           github-src="grids/data-grid/overview">
-</code-view>
+`sample="/grids/data-grid/overview", height="600", alt="{Platform} Data Grid の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -43,20 +40,20 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [NuGet パッケージの追加](../../general-nuget-feed.md)
 
 以下の名前空間を追加してコントロールの実装を開始できます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
 {Platform} Grid のパッケージをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ### モジュールの要件

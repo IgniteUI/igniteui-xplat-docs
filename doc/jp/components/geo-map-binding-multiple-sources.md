@@ -7,18 +7,15 @@ _language: ja
 ---
 # {Platform} 複数データ ソースのバインド
 
-{ProductName} マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための 2nd `GeographicPolylineSeries` などです。
+{ProductName} マップでは、カスタム データ ソースを地理空間データとオーバーレイするために複数の地理的シリーズ オブジェクトを追加できます。たとえば、空港の地理的位置をプロットするための `GeographicSymbolSeries`、空港間のフライトをプロットするための `GeographicPolylineSeries`、主要な地理座標のグリッド線をプロットするための別の `GeographicPolylineSeries` などです。
 
 
 ## {Platform} 複数データ ソースのバインドの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-multiple-sources"
-           alt="{Platform} 複数データ ソースのバインドの例"
-           github-src="maps/geo-map/binding-multiple-sources">
-</code-view>
+`sample="/maps/geo-map/binding-multiple-sources", height="500", alt="{Platform} 複数データ ソースのバインドの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -284,7 +281,6 @@ export class MapBindingMultipleSourcesComponent implements AfterViewInit {
         this.map.series.add(symbolSeries);
     }
 }
-
 ```
 
 ```razor

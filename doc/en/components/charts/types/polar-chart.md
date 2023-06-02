@@ -13,12 +13,9 @@ The {ProductName} Polar Chart uses the polar coordinate system (angle, radius) i
 
 The Polar Area Chart renders using a collection of polygons connecting data points and it uses the same concepts of data plotting as the [Category Area Chart](area-chart.md#{Platform}-area-chart-example) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart"
-           github-src="charts/data-chart/polar-area-chart"
-           alt="{Platform} Polar Area Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-area-chart", height="600", alt="{Platform} Polar Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -26,12 +23,9 @@ The Polar Area Chart renders using a collection of polygons connecting data poin
 
 The Polar Spline Area Chart renders also as a collection of polygons but they have curved splines connecting data points instead of straight lines like [Polar Area Chart](polar-chart.md#{Platform}-polar-area-chart) does. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-area-chart"
-           github-src="charts/data-chart/polar-spline-area-chart"
-           alt="{Platform} Polar Area Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-spline-area-chart", height="600", alt="{Platform} Polar Area Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -39,12 +33,9 @@ The Polar Spline Area Chart renders also as a collection of polygons but they ha
 
 The Polar Marker Chart renders using a collection of markers representing data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Marker Chart](scatter-chart.md#{Platform}-Scatter-Marker-Chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarScatterSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-scatter-chart"
-           github-src="charts/data-chart/polar-scatter-chart"
-           alt="{Platform} Polar Marker Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-scatter-chart", height="600", alt="{Platform} Polar Marker Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -52,12 +43,9 @@ The Polar Marker Chart renders using a collection of markers representing data p
 
 The Polar Line Chart renders using a collection of straight lines connecting data points in polar (angle/radius) coordinate system. This chart uses the same concepts of data plotting as the [Scatter Line Chart](scatter-chart.md#{Platform}-Scatter-Line-Chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarLineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-line-chart"
-           github-src="charts/data-chart/polar-line-chart"
-           alt="{Platform} Polar Line Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-line-chart", height="600", alt="{Platform} Polar Line Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -65,12 +53,9 @@ The Polar Line Chart renders using a collection of straight lines connecting dat
 
 The Polar Spline Chart renders using a collection of curved splines connecting data points in polar (angle/radius) coordinate system. This Chart uses the same concepts of data plotting as the [Scatter Spline Chart](scatter-chart.md#{Platform}-Scatter-spline-chart) with the difference that the visualization wraps data points around a circle rather than stretching them horizontally. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarSplineSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-spline-chart"
-           github-src="charts/data-chart/polar-spline-chart"
-           alt="{Platform} Polar Spline Chart" >
-</code-view>
+`sample="/charts/data-chart/polar-spline-chart", height="600", alt="{Platform} Polar Spline Chart"`
+
+
 
 <div class="divider--half"></div>
 
@@ -78,12 +63,9 @@ The Polar Spline Chart renders using a collection of curved splines connecting d
 
 Once our polar chart is created, we may want to make some further styling customizations such as a change of the line colors, marker types, or outline colors of those markers. You can create this type of chart in the `XamDataChart` control by binding your data to a `PolarAreaSeries`, as shown in the example below:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-polar-area-chart-styling"
-           github-src="charts/data-chart/polar-area-chart-styling"
-           alt="{Platform} Polar Area Chart Styling" >
-</code-view>
+`sample="/charts/data-chart/polar-area-chart-styling", height="600", alt="{Platform} Polar Area Chart Styling"`
+
+
 
 <div class="divider--half"></div>
 
@@ -110,9 +92,7 @@ The following table lists API members mentioned in the above sections:
 - `PolarSplineAreaSeries`
 - `PolarScatterSeries`
 - `ItemsSource`
-- `AngleAxisName`
 - `AngleMemberPath`
-- `RadiusAxisName`
 - `RadiusMemberPath`
 - `NumericAngleAxis`
 - `NumericRadiusAxis`

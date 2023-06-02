@@ -14,20 +14,17 @@ mentionedTypes: ['Navbar']
 
 The following example represents a `Navbar` with icons and text header:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-overview"
-           alt="{Platform} Navbar Overview Example"
-           github-src="menus/nav-bar/overview">
-</code-view>
+`sample="/menus/nav-bar/overview", height="300", alt="{Platform} Navbar Overview Example"`
+
+
 
 ## Dependencies
 
 In order to use the Navigation Bar component, the web components package must be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install {PackageWebComponents}
-</pre>
+```
 
 ## Usage
 
@@ -87,12 +84,9 @@ igc-navbar::part(end) {
 
 If all went well, you should see the following in your browser:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-bar-styling"
-           alt="{Platform} Navbar Styling Example"
-           github-src="menus/nav-bar/styling">
-</code-view>
+`sample="/menus/nav-bar/styling", height="300", alt="{Platform} Navbar Styling Example"`
+
+
 
 ## API References
 

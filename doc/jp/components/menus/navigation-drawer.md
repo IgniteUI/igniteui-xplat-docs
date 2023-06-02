@@ -15,12 +15,9 @@ _language: ja
 
 このサンプルは、`NavDrawer` コンポーネントを作成する方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="{Platform} Navigation Drawer 項目の例"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
+
+
 
 ## 使用方法
 
@@ -139,12 +136,9 @@ defineComponents(IgcNavDrawerComponent);
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-drawer-items"
-           alt="{Platform} Navigation Drawer 項目の例"
-           github-src="menus/nav-drawer/add-drawer-items">
-</code-view>
+`sample="/menus/nav-drawer/add-drawer-items", height="300", alt="{Platform} Navigation Drawer 項目の例"`
+
+
 
 ## Navbar の統合
 
@@ -327,7 +321,7 @@ menu!.addEventListener('click', () => {
 })
 
 document.getElementById('root')!.onclick = (e) => {
-    if(e.target != document.getElementById('navDrawer')) {
+    if (e.target != document.getElementById('navDrawer')) {
         navDrawer.hide();
     }
 }
@@ -336,7 +330,7 @@ document.getElementById('root')!.onclick = (e) => {
 ```razor
 public void OnMenuIconClick()
 {
-    if(this.NavDrawerRef != null)
+    if (this.NavDrawerRef != null)
     {
         this.NavDrawerRef.Show();
     }
@@ -353,12 +347,9 @@ public onMenuIconClick() {
 
 すべてがうまくいけば、コンポーネントは次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-positions-navbar"
-           alt="{Platform} Navigation Drawer Navbar の例"
-           github-src="menus/nav-drawer/add-positions-navbar">
-</code-view>
+`sample="/menus/nav-drawer/add-positions-navbar", height="300", alt="{Platform} Navigation Drawer Navbar の例"`
+
+
 
 ## ミニ バリアント
 
@@ -441,12 +432,9 @@ public onMenuIconClick() {
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-add-mini"
-           alt="{Platform} Navigation Drawer Mini の例"
-           github-src="menus/nav-drawer/add-mini">
-</code-view>
+`sample="/menus/nav-drawer/add-mini", height="300", alt="{Platform} Navigation Drawer Mini の例"`
+
+
 
 ## Navigation Drawer のスタイル設定
 
@@ -475,13 +463,7 @@ igc-nav-drawer-header-item {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/menus/nav-drawer-styling"
-           alt="{Platform} Navigation Drawer スタイル設定の例"
-           github-src="menus/nav-drawer/styling">
-</code-view>
-
+`sample="/menus/nav-drawer/styling", height="300", alt="{Platform} Navigation Drawer スタイル設定の例"`
 
 ## API リファレンス
 

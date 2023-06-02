@@ -4,8 +4,8 @@ _description: 包括的な {ProductName} のツールセットを使用して、
 _keywords: state persistence, {Platform}, {ProductName}, Infragistics, 状態の永続化, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 状態保持
@@ -451,11 +451,8 @@ setState snippet
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:763px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-state"
-           github-src="{ComponentSample}/data-persistence-state" >
-</code-view>
+`sample="/{ComponentSample}/data-persistence-state", height="763", alt="{Platform} {ComponentTitle} data persistence state"`
+
 
 
 <!-- ComponentStart: PivotGrid -->
@@ -512,12 +509,9 @@ public restoreState() {
 Add snippet for blazor for restore state
 ```
 
-<code-view style="height:580px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-noop"
-           github-src="{ComponentSample}/data-persistence-noop" >
+`sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
 
-</code-view>
+
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -543,16 +537,11 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular -->
 * `GetState` メソッドは、JSON.stringify() メソッドを使用して、元のオブジェクトをJSON文字列に変換します。JSON.stringify() は関数をサポートされていないため、`GridState` ディレクティブはピボット ディメンション `MemberFunction`、ピボット値 `Member`、`Formatter`、カスタム `Aggregate` 関数、`Styles`、およびピボット構成戦略 (`ColumnStrategy` および `RowStrategy`) を無視します。
+<!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
-
-
-## API リファレンス
-
-* `{ComponentName}`
-* `GridStateDirective`
-
 
 ## その他のリソース
 

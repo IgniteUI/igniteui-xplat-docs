@@ -14,11 +14,8 @@ _language: ja
 
 このサンプルは、`Snackbar` コンポーネントを作成する方法を示しています。
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="{Platform} Snackbar の例"
-           github-src="notifications/snackbar/overview">
-</code-view>
+`sample="/notifications/snackbar/overview", height="230", alt="{Platform} Snackbar の例"`
+
 
 <div class="divider--half"></div>
 
@@ -98,12 +95,12 @@ Snackbar コンポーネントを表示する最も簡単な方法は、`Show` �
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }
@@ -115,23 +112,17 @@ public onShowButtonClicked() {
 
 `DisplayTime` プロパティを使用して、Snackbar コンポーネントが表示される期間を構成します。デフォルトでは、4000 ミリ秒に設定されています。
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-display-time"
-           alt="{Platform} Snackbar 表示時間の例"
-           github-src="notifications/snackbar/display-time">
-</code-view>
+`sample="/notifications/snackbar/display-time", height="230", alt="{Platform} Snackbar 表示時間の例"`
+
+
 
 ### Action Text (アクション テキスト)
 
 デフォルトでは、Snackbar コンポーネントは、`DisplayTime` で指定された期間が経過すると自動的に非表示になります。`KeepOpen` プロパティを使用して、この動作を変更できます。この場合、Snackbar は非表示になりません。Snackbar の `ActionText` を使用すると、コンポーネント内にアクション ボタンを表示できます。
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-action-text"
-           alt="{Platform} Sanckbar アクション テキストの例"
-           github-src="notifications/snackbar/action-text">
-</code-view>
+`sample="/notifications/snackbar/action-text", height="230", alt="{Platform} Sanckbar アクション テキストの例"`
+
+
 
 ## スタイル設定
 
@@ -145,13 +136,7 @@ igc-snackbar::part(base) {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="{Platform} SnackBar スタイル設定の例"
-           github-src="notifications/snackbar/styling">
-</code-view>
-
+`sample="/notifications/snackbar/styling", height="230", alt="{Platform} SnackBar スタイル設定の例"`
 
 <div class="divider--half"></div>
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports a cell activation feature that
 ## {Platform} Grid Cell Activation Example
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-cell-activation"
-           alt="{Platform} Grid Cell Activation Example"
-           github-src="grids/data-grid/cell-activation">
-</code-view>
+`sample="/grids/data-grid/cell-activation", height="600", alt="{Platform} Grid Cell Activation Example"`
+
+
 
 <div class="divider--half"></div>
 

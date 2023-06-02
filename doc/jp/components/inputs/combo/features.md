@@ -13,12 +13,9 @@ _language: ja
 ## コンボボックス機能の例
 以下のデモは、ランタイムで有効または無効にできるいくつかの `ComboBox` 機能を示しています。
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-features"
-           alt="{Platform} コンボ機能"
-           github-src="grids/combo/features">
-</code-view>
+`sample="/inputs/combo/features", height="400", alt="{Platform} コンボ機能"`
+
+
 
 このサンプルでは、`Switch` コンポーネントを使用するため、コンボと一緒に登録する必要があります。
 

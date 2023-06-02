@@ -3,8 +3,8 @@ title: {Platform} {ComponentTitle} のリモート データ操作 - インフ�
 _description: リモート フィルタリング、リモートソート、リモート スクロールなどの Angular リモート データ操作を使用して、{ProductName} のサーバーからデータをロードします。
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
 _keywords: Remote Data, Paging, {Platform}, {ComponentKeywords}, {ProductName}, ページング, リモート データ, インフラジスティックス
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} のリモート データ操作
@@ -15,12 +15,9 @@ namespace: Infragistics.Controls
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-filtering-data"
-           github-src="{ComponentSample}/remote-filtering-data"
-           alt="{Platform} {ComponentTitle} リモート データ操作概要の例">
-</code-view>
+`sample="/{ComponentSample}/remote-filtering-data", height="550", alt="{Platform} {ComponentTitle} リモート データ操作概要の例"`
+
+
 
 デフォルトで、`{ComponentName}` は独自のロジックを使用してデータ操作を実行します。
 
@@ -85,12 +82,9 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-operations"
-           github-src="{ComponentSample}/data-performance-operations"
-           alt="{Platform} {ComponentTitle} リモート データ操作概要の例">
-</code-view>
+`sample="/{ComponentSample}/data-performance-operations", height="550", alt="{Platform} {ComponentTitle} リモート データ操作概要の例"`
+
+
 
 <!-- end: Angular -->
 
@@ -161,12 +155,9 @@ BLAZOR CODE SNIPPET HERE
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-performance-infinite-scroll"
-           github-src="{ComponentSample}/data-performance-infinite-scroll"
-           alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例">
-</code-view>
+`sample="/{ComponentSample}/data-performance-infinite-scroll", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の無限スクロールの例"`
+
+
 
 <!-- end: Angular -->
 
@@ -339,12 +330,9 @@ BLAZOR CODE SNIPPET HERE
 
 #### 一意の列値ストラテジーのデモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-load-on-demand"
-           github-src="{ComponentSample}/excel-style-filtering-load-on-demand"
-           alt="{Platform} {ComponentTitle} リモート データ操作の一意の列値ストラテジー例">
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-load-on-demand", height="550", alt="{Platform} {ComponentTitle} リモート データ操作の一意の列値ストラテジー例"`
+
+
 
 ```html
 <igx-hierarchical-grid #hierarchicalGrid [primaryKey]="'Artist'" [data]="data" [filterMode]="'excelStyleFilter'"
@@ -378,7 +366,9 @@ this.remoteValuesService.getColumnData(
 BLAZOR CODE SNIPPET HERE
 ```
 
+<!-- Angular -->
 Excel スタイル フィルタリングのカスタム ロード テンプレートを提供するには、`ExcelStyleLoading` ディレクティブを使用できます。
+<!-- end:Angular -->
 
 ```html
 <igx-grid [data]="data" [filterMode]="'excelStyleFilter'" [uniqueColumnValuesStrategy]="columnValuesStrategy">
@@ -653,12 +643,9 @@ public paginate(page: number) {
 BLAZOR CODE SNIPPET HERE
 ```
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-template"
-           github-src="{ComponentSample}/remote-paging-template"
-           alt="{Platform} {ComponentTitle} リモート ページングのテンプレート テンプレートの例">
-</code-view>
+`sample="/{ComponentSample}/remote-paging-template", height="620", alt="{Platform} {ComponentTitle} リモート ページングのテンプレート テンプレートの例"`
+
+
 
 ### カスタム ページネーター コンテンツのリモート ページング
 
@@ -809,24 +796,18 @@ BLAZOR CODE SNIPPET HERE
 
 上記すべての設定を完了すると以下のような結果になります。
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-data"
-           github-src="{ComponentSample}/remote-paging-data"
-           alt="{Platform} {ComponentTitle} リモート ページングのカスタム テンプレートの例">
-</code-view>
+`sample="/{ComponentSample}/remote-paging-data", height="620", alt="{Platform} {ComponentTitle} リモート ページングのカスタム テンプレートの例"`
+
+
 
 <!-- ComponentStart: Grid -->
 ### カスタム ページネーターのリモート ページング
 
 独自のページング動作を定義するために、ページング テンプレートを使用してカスタム ロジックを追加できます。上記を実証するために、リモート ページングの例を拡張します。
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-custom"
-           github-src="{ComponentSample}/remote-paging-custom"
-           alt="{Platform} {ComponentTitle} リモート ページングのカスタム ページングの例">
-</code-view>
+`sample="/{ComponentSample}/remote-paging-custom", height="620", alt="{Platform} {ComponentTitle} リモート ページングのカスタム ページングの例"`
+
+
 
 以下に、独自の `next` および `previous` のページ操作を実装するために定義したメソッドを示します。
 
@@ -934,12 +915,9 @@ BLAZOR CODE SNIPPET HERE
 
 #### 一括編集のリモート ページング デモ
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-remote-paging-batch-editing"
-           github-src="{ComponentSample}/remote-paging-batch-editing"
-           alt="{Platform} {ComponentTitle} リモート ページングの一括編集の例" >
-</code-view>
+`sample="/{ComponentSample}/remote-paging-batch-editing", height="620", alt="{Platform} {ComponentTitle} リモート ページングの一括編集の例"`
+
+
 
 <!-- ComponentEnd: Grid -->
 

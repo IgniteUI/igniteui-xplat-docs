@@ -13,11 +13,8 @@ The {ProductName} Snackbar component is used to provide feedback about an operat
 
 This sample demonstrates how to create `Snackbar` component.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/snackbar-overview" alt="{Platform} Snackbar Example"
-           github-src="notifications/snackbar/overview">
-</code-view>
+`sample="/notifications/snackbar/overview", height="230", alt="{Platform} Snackbar Example"`
+
 
 <div class="divider--half"></div>
 
@@ -97,12 +94,12 @@ The simplest way to display the snackbar component is to use its `Show` method a
     <span>Snackbar Message</span>
 </IgrSnackbar>
 
-public onSnackbarRef(snackbar: IgrSnackbar){
+public onSnackbarRef(snackbar: IgrSnackbar) {
     if (!snackbar) { return; }
     this.snackbarRef = snackbar;
 }
 public onShowButtonClicked() {
-    if(this.snackbarRef){
+    if (this.snackbarRef) {
         this.snackbarRef.show();
     }
 }
@@ -114,23 +111,17 @@ public onShowButtonClicked() {
 
 Use the `DisplayTime` property to configure how long the snackbar component is visible. By default, it's set to 4000 milliseconds.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-display-time"
-           alt="{Platform} Snackbar Display Time Example"
-           github-src="notifications/snackbar/display-time">
-</code-view>
+`sample="/notifications/snackbar/display-time", height="230", alt="{Platform} Snackbar Display Time Example"`
+
+
 
 ### Action Text
 
 By default, the snackbar component is hidden automatically after a period specified by the `DisplayTime`. You can use `KeepOpen` property to change this behavior. In this way, the snackbar will remain visible. Using the snackbar `ActionText` you can display an action button inside the component.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-action-text"
-           alt="{Platform} Sanckbar Action Text Example"
-           github-src="notifications/snackbar/action-text">
-</code-view>
+`sample="/notifications/snackbar/action-text", height="230", alt="{Platform} Sanckbar Action Text Example"`
+
+
 
 ## Styling
 
@@ -144,13 +135,7 @@ igc-snackbar::part(base) {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/snackbar-styling"
-           alt="{Platform} SnackBar Styling Example"
-           github-src="notifications/snackbar/styling">
-</code-view>
-
+`sample="/notifications/snackbar/styling", height="230", alt="{Platform} SnackBar Styling Example"`
 
 <div class="divider--half"></div>
 

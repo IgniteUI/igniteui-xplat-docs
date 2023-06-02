@@ -14,12 +14,9 @@ _language: ja
 
 次の例は、名前と電話番号のプロパティを持つ連絡先が入力されたリストを表しています。以下に示す `List` コンポーネントは、`Avatar` 要素と `Button` 要素を使用して、ユーザー エクスペリエンスを強化し、テキストと呼び出しアクションのアバター画像とボタンを設定する機能を公開します。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="{Platform} List の例"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -132,12 +129,9 @@ defineComponents(IgcListComponent);
 
 以下は結果です:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-add-list-items"
-           alt="{Platform} リスト項目の追加の例"
-           github-src="grids/list/add-list-items">
-</code-view>
+`sample="/grids/list/add-list-items", height="300", alt="{Platform} リスト項目の追加の例"`
+
+
 
 リスト項目を次のように強化できます。名前と名前の下に表示される電話番号を使用して連絡先のリストを作成するとします。これを実現するために、次の例に示すように、リスト項目に付属するいくつかのスロットを使用できます。
 
@@ -203,12 +197,9 @@ defineComponents(IgcListComponent);
 
 上記のコードを実装すると、リスト コンポーネントは次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-list-item-content"
-           alt="{Platform} List の例"
-           github-src="grids/list/list-item-content">
-</code-view>
+`sample="/grids/list/list-item-content", height="300", alt="{Platform} List の例"`
+
+
 
 ### アバターおよびボタンの追加
 
@@ -433,12 +424,9 @@ public onRadioChange(e: any) {
 
 上記のコードを実装した結果は、次のようになります:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-overview"
-           alt="{Platform} List の例"
-           github-src="grids/list/overview">
-</code-view>
+`sample="/grids/list/overview", height="300", alt="{Platform} List の例"`
+
+
 
 ## スタイル設定
 
@@ -465,13 +453,7 @@ igc-list-item::part(end) {
 }
 ```
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/list-styling"
-           alt="{Platform} List の例"
-           github-src="grids/list/styling">
-</code-view>
-
+`sample="/grids/list/styling", height="300", alt="{Platform} List の例"`
 
 この記事では、`List` コンポーネントで多くのことを取り上げました。最初に、テキスト項目を含む簡単なリストを作成しました。次に、連絡先項目のリストを作成し、`Avatar` や `Button` などの追加の {ProductName} コンポーネントを使用してそれらに機能を追加しました。最後に、公開された CSS パーツを使用してコンポーネントの外観を変更しました。
 

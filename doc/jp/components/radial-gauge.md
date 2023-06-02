@@ -15,12 +15,9 @@ _language: ja
 以下のサンプルは、同じ `XamRadialGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
 
-<code-view style="height: 375px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-animation"
-           alt="{Platform} ラジアル ゲージの例"
-           github-src="gauges/radial-gauge/animation">
-</code-view>
+`sample="/gauges/radial-gauge/animation", height="375", alt="{Platform} ラジアル ゲージの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -28,10 +25,10 @@ _language: ja
 ## 依存関係
 gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 <!-- Blazor -->
@@ -40,10 +37,10 @@ IgniteUI.Blazor パッケージの追加については、以下のトピック�
 - [NuGet パッケージの追加](general-nuget-feed.md)
 
 以下の名前空間を追加してコントロールの実装を開始できます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 ## モジュールの要件
@@ -163,7 +160,6 @@ IgrRadialGaugeModule.register();
 ```
 
 ```razor
-
 <IgbRadialGauge Height="100%" Width="100%"
       MinimumValue="0" Value="25"
       MaximumValue="100" Interval="5" >
@@ -263,15 +259,11 @@ IgrRadialGaugeModule.register();
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-backing"
-           github-src="gauges/radial-gauge/backing">
-</code-view>
+`sample="/gauges/radial-gauge/backing", height="320", alt="{Platform} radial gauge backing"`
+
 
 ## スケール
 
@@ -341,11 +333,8 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-scale"
-           github-src="gauges/radial-gauge/scale">
-</code-view>
+`sample="/gauges/radial-gauge/scale", height="320", alt="{Platform} radial gauge scale"`
+
 
 ## ラベル
 ゲージ ラベルは `MinimumValue` と `MaximumValue` の値の間で指定された間隔で数値を表示する視覚要素です。0 はゲージ中央、1 はゲージ バッキングの外側範囲を表す `LabelExtent` プロパティで小数を使用してラベルの配置を設定できます。`FontBrush` や `Font` など、さまざまなスタイル プロパティを設定してラベルをカスタマイズできます。
@@ -397,15 +386,11 @@ IgrRadialGaugeModule.register();
   Value="50"
   Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-labels"
-           github-src="gauges/radial-gauge/labels">
-</code-view>
+`sample="/gauges/radial-gauge/labels", height="320", alt="{Platform} radial gauge labels"`
+
 
 ## 目盛
 目盛は、ラジアル ゲージの中央から放射状に表示される細い線です。目盛には、主目盛および副目盛の 2 種類があり、主目盛りは `MinimumValue` と `MaximumValue` の間の `Interval` に表示されます。また `MinorTickCount` プロパティは、隣接する 2 つの主目盛間の副目盛の数を指定します。目盛りの長さは、`TickStartExtent`、`TickEndExtent`、`MinorTickStartExtent`、`MinorTickEndExtent` に少数値 (0 から 1 の間) を設定して制御できます。
@@ -476,15 +461,11 @@ IgrRadialGaugeModule.register();
     Value="50"
     Interval="10">
 </IgbRadialGauge>
-
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-tickmarks"
-           github-src="gauges/radial-gauge/tickmarks">
-</code-view>
+`sample="/gauges/radial-gauge/tickmarks", height="320", alt="{Platform} radial gauge tickmarks"`
+
 
 ## 範囲
 範囲に `MinimumValue` や `MaximumValue` プロパティで指定した連続値の境界を強調表示します。開始値と終了値を指定してゲージに複数の範囲を追加でき、各範囲には、`Brush` や `Outline` などのカスタマイズ プロパティがあります。または、`RangeBrushes` や `RangeOutlines` プロパティを範囲の色リストに設定することもできます。
@@ -569,11 +550,8 @@ IgrRadialGaugeModule.register();
 ```
 
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-ranges"
-           github-src="gauges/radial-gauge/ranges">
-</code-view>
+`sample="/gauges/radial-gauge/ranges", height="320", alt="{Platform} radial gauge ranges"`
+
 
 ## 針
 
@@ -665,11 +643,8 @@ IgrRadialGaugeModule.register();
 </IgbRadialGauge>
 ```
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/radial-gauge-needle"
-           github-src="gauges/radial-gauge/needle">
-</code-view>
+`sample="/gauges/radial-gauge/needle", height="320", alt="{Platform} radial gauge needle"`
+
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

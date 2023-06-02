@@ -14,23 +14,17 @@ The {ProductName} Input is a component where the user can enter data.
 
 <!-- React, WebComponents -->
 
-<code-view style="height: 120px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-overview"
-           alt="{Platform} Input Example"
-           github-src="inputs/input/overview">
-</code-view>
+`sample="/inputs/input/overview", height="120", alt="{Platform} Input Example"`
+
+
 
 <!-- end:React, WebComponents -->
 
 <!-- Blazor -->
 
-<code-view style="height: 225px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-binding"
-           alt="{Platform} Input Example"
-           github-src="inputs/input/binding">
-</code-view>
+`sample="/inputs/input/binding", height="225", alt="{Platform} Input Example"`
+
+
 
 ## Dependencies
 
@@ -100,34 +94,25 @@ After we import the `Input` component we are ready to start using it, so let's a
 
 With `prefix` and `suffix` slots we can add different content before and after the main content of the Input. In the following sample we will create a new Input field with a text prefix and an icon suffix:
 
-<code-view style="height: 120px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-prefix-suffix"
-           alt="{Platform} Input Prefix & Suffix Example"
-           github-src="inputs/input/prefix-suffix">
-</code-view>
+`sample="/inputs/input/prefix-suffix", height="120", alt="{Platform} Input Prefix & Suffix Example"`
+
+
 
 ## Helper Text
 
 The `helper-text` slot provides a hint placed below the Input. Let's add some helper text to our phone Input:
 
-<code-view style="height: 140px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-helper-text"
-           alt="{Platform} Input Helper Text Example"
-           github-src="inputs/input/helper-text">
-</code-view>
+`sample="/inputs/input/helper-text", height="140", alt="{Platform} Input Helper Text Example"`
+
+
 
 ## Input Sizing
 
 We can allow the user to choose the size of the `Input` by using its `Size` property. То do this, we will add some radio buttons to display all size values. This way whenever one gets selected, we will change the size of the Input:
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-size"
-           alt="{Platform} Input Sizing Example"
-           github-src="inputs/input/size">
-</code-view>
+`sample="/inputs/input/size", height="320", alt="{Platform} Input Sizing Example"`
+
+
 
 In the sample above we have demonstrated the use of the following attributes:
 - `required` - Used to mark the input as required
@@ -154,29 +139,26 @@ The Input component exposes CSS parts for almost all of its inner elements. The 
 | helper-text | The helper text wrapper. |
 
 ```scss
-igc-input::part(input){
+igc-input::part(input) {
     background-color: rgb(169, 214, 229);
     border-color: rgb(42, 111, 151);
 }
 
-igc-input::part(label){
+igc-input::part(label) {
     color: rgb(1, 42, 74);
 }
 
 igc-input::part(prefix),
-igc-input::part(suffix){
+igc-input::part(suffix) {
     color: white;
     border-color: rgb(42, 111, 151);
     background-color: rgb(70, 143, 175);
 }
 ```
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/input-styling"
-           alt="{Platform} Input Styling"
-           github-src="inputs/input/styling">
-</code-view>
+`sample="/inputs/input/styling", height="150", alt="{Platform} Input Styling"`
+
+
 
 <div class="divider"></div>
 

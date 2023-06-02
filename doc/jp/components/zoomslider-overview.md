@@ -14,12 +14,9 @@ _language: ja
 
 以下のサンプルは、`ZoomSlider` を使用して `XamDataChart` のコンテンツをナビゲートする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/zoomslider-overview"
-           alt="{Platform} ズーム スライダーの例"
-           github-src="charts/zoomslider/overview">
-</code-view>
+`sample="/charts/zoomslider/overview", height="600", alt="{Platform} ズーム スライダーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -38,20 +35,21 @@ _language: ja
 ## 依存関係
 {Platform} chart コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
-`ZoomSlider` を作成するには、以下のモジュールが必要です。
 
+`ZoomSlider` を作成するには、以下のモジュールが必要です。
 
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbZoomSliderModule));
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbZoomSliderModule));
 ```
 
 ```ts
@@ -80,7 +78,6 @@ import { IgcZoomSliderModule } from 'igniteui-webcomponents-charts';
 import { IgcZoomSliderComponent } from "igniteui-webcomponents-charts";
 
 IgcZoomSliderModule.register();
-
 ```
 
 ## コード スニペット

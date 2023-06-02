@@ -14,12 +14,9 @@ _language: ja
 
 `CategoryChart` コントロールでステップ エリア チャートを作成するには、以下の例のように、`ChartType` プロパティを **StepArea** 列挙型に設定します。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-area-multiple-sources"
-           github-src="charts/category-chart/step-area-multiple-sources"
-           alt="複数ソースの {Platform} ステップ エリア チャート" >
-</code-view>
+`sample="/charts/category-chart/step-area-multiple-sources", height="600", alt=" 複数ソースの {Platform} ステップ エリア チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -29,12 +26,9 @@ _language: ja
 
 次の例に示すように、データをバインドし、`ChartType` プロパティを `StepLine` 値に設定することで、`CategoryChart` コントロールでステップ折れ線チャートを作成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-multiple-sources"
-           github-src="charts/category-chart/step-line-multiple-sources"
-           alt="複数ソースの {Platform} ステップ折れ線チャート" >
-</code-view>
+`sample="/charts/category-chart/step-line-multiple-sources", height="600", alt="複数ソースの {Platform} ステップ折れ線チャート"`
+
+
 
 <div class="divider--half"></div>
 
@@ -42,12 +36,9 @@ _language: ja
 
 他のシリーズの複合などのより多くの機能を備えたステップ チャートが必要な場合は、以下に示すように、`CategoryChart` コントロールの `MarkerTypes`、`MarkerBrushes`、`MarkerOutlines`、折れ線の `Brushes`、および折れ線の `Outlines` プロパティを構成できます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-step-line-styling"
-           github-src="charts/category-chart/step-line-styling"
-           alt="{Platform} ステップ折れ線チャートのスタイル設定" >
-</code-view>
+`sample="/charts/category-chart/step-line-styling", height="600", alt="{Platform} ステップ折れ線チャートのスタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

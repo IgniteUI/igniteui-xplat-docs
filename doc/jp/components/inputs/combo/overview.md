@@ -14,12 +14,9 @@ _language: ja
 
 ## {Platform} コンボボックスの例
 
-<code-view style="height:320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-overview"
-           alt="{Platform} Combo の例"
-           github-src="grids/combo/overview">
-</code-view>
+`sample="/inputs/combo/overview", height="400", alt="{Platform} Combo の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -93,7 +90,33 @@ export class Sample {
 ```
 
 ```razor
-<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Cities" />
+<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
+
+@code {
+    private class City {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+    }
+
+    private List<City> Data = new List<City> {
+        new City {
+            Id = "UK01",
+            Name = "London",
+            Country = "United Kingdom",
+        },
+        new City {
+            Id = "BG01",
+            Name = "Sofia",
+            Country = "Bulgaria",
+        },
+        new City {
+            Id = "US01",
+            Name = "New York",
+            Country = "United States",
+        },
+    };
+}
 ```
 
 ### データ値と表示プロパティ
@@ -121,11 +144,53 @@ combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
 
+```razor
+<IgbCombo
+    @ref="Combo"
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
+    DisplayKey="Name">
+</IgbCombo>
+
+@code {
+    private List<City> Data;
+    private IgbCombo Combo;
+    private object[] Cities;
+
+    protected override void OnInitialized() {
+        this.Data = SampleData.Cities;
+        this.Cities = new object[] { "UK01", "UK02", "UK03", "UK04", "UK05" };
+    }
+
+    public void SelectCities() {
+        this.Combo.Select(Cities);
+    }
+
+    public void DeselectCities() {
+        this.Combo.Deselect(Cities);
+    }
+}
+```
+
 #### すべての項目を選択 / 選択解除:
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
+```
+
+```razor
+@code {
+    public void SelectAll() {
+        this.Combo.Select(new object[] {});
+    }
+
+    public void DeselectAll() {
+        this.Combo.Deselect(new object[] {});
+    }
+}
 ```
 
 `ValueKey` プロパティを省略した場合は、オブジェクト参照として選択 / 選択解除する項目を列挙する必要があります。
@@ -136,12 +201,9 @@ combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
-           alt="{Platform} Combo 選択の例"
-           github-src="grids/combo/selection">
-</code-view>
+`sample="/inputs/combo/selection", height="400", alt="{Platform} Combo 選択の例"`
+
+
 
 ### 検証
 
@@ -196,12 +258,9 @@ combo.deselect([cities[1], cities[5]]);
 | `footer`             | フッター コンテンツを保持するコンテナー。                                      |
 | `empty`              | 空のコンテンツを保持するコンテナ。                                       |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-styling"
-           alt="{Platform} Combo スタイル設定の例"
-           github-src="grids/combo/styling">
-</code-view>
+`sample="/inputs/combo/styling", height="400", alt="{Platform} Combo スタイル設定の例"`
+
+
 
 ## API リファレンス
 

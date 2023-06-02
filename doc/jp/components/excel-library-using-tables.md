@@ -12,11 +12,8 @@ Infragistics {Platform} Excel Engine の `WorksheetTable` 機能は、行列の�
 <!--## {Platform} Using Tables Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-tables"
-           alt="{Platform} Using Tables Example" >
-</code-view>
+`sample="/excel/excel-library/working-with-tables", height="500", alt="{Platform} Using Tables Example"`
+
 
 -->
 

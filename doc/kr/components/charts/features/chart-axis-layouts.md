@@ -19,12 +19,9 @@ The `XAxisGap` property of the {Platform} charts, determines the amount of space
 
 The following example shows the average maximum temperature in Celsius in New York City's Central Park represented by a [Column Chart](../types/column-chart.md) with an `XAxisGap` initially set to 1, and so there will be a full category's width between the columns. There is a slider that allows you to configure the gap in this example so that you can see what the different values do.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gap"
-           alt="{Platform} Axis Gap Example"
-           github-src="charts/category-chart/axis-gap">
-</code-view>
+`sample="/charts/category-chart/axis-gap", height="450", alt="{Platform} Axis Gap Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -34,12 +31,9 @@ The `XAxisOverlap` property of the {Platform} charts, allows setting the overlap
 
 The following example shows a comparison of the highest grossing worldwide film franchises compared by the total world box office revenue of the franchise and the highest grossing movie in the series, represented by a [Column Chart](../types/column-chart.md) with an `XAxisOverlap` initially set to 1, and so the columns will completely overlap each other. There is a slider that allows you to configure the overlap in this example so that you can see what the different values do.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-overlap"
-           alt="{Platform} Axis Overlap Example"
-           github-src="charts/category-chart/axis-overlap">
-</code-view>
+`sample="/charts/category-chart/axis-overlap", height="450", alt="{Platform} Axis Overlap Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -49,12 +43,9 @@ For all axes, you can specify axis location in relationship to chart plot area. 
 
 The following example depicts the amount of renewable electricity produced since 2009, represented by a [Line Chart](../types/line-chart.md). There is a drop-down that lets you configure the `YAxisLabelLocation` so that you can visualize what the axes look like when the labels are placed on the left or right side on the inside or outside of the chart's plot area.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-locations"
-           alt="{Platform} Axis Locations Example"
-           github-src="charts/category-chart/axis-locations">
-</code-view>
+`sample="/charts/category-chart/axis-locations", height="450", alt="{Platform} Axis Locations Example"`
+
+
 
 <!-- ## Axis Orientation Example
 
@@ -72,12 +63,9 @@ You can share and add multiple axes in the same plot area of the {Platform} Data
 
 The following example depicts a stock price and trade volume chart with a [Stock Chart](../types/stock-chart.md) and a [Column Chart](../types/column-chart.md) plotted. In this case, the Y-Axis on the left is used by the [Column Chart](../types/column-chart.md) and the Y-Axis on the right is used by the [Stock Chart](../types/stock-chart.md), while the X-Axis is shared between the two.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-sharing"
-           alt="{Platform} Axis Sharing Example"
-           github-src="charts/data-chart/axis-sharing">
-</code-view>
+`sample="/charts/data-chart/axis-sharing", height="450", alt="{Platform} Axis Sharing Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -87,12 +75,9 @@ In the the {Platform} Data Chart, you can also position axes inside of plot area
 
 The following example shows a Sin and Cos wave represented by a [Scatter Spline Chart](../types/scatter-chart.md) with the X and Y axes crossing each other at the (0, 0) origin point. The sliders provided can help you to configure where the X and Y axis cross each other in this case.
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-axis-crossing"
-           alt="{Platform} Axis Crossing Axes Example"
-           github-src="charts/data-chart/axis-crossing">
-</code-view>
+`sample="/charts/data-chart/axis-crossing", height="450", alt="{Platform} Axis Crossing Axes Example"`
+
+
 
 <div class="divider--half"></div>
 

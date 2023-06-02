@@ -1,30 +1,31 @@
 ---
 title: {Platform} ツリー コンポーネント | インフラジスティックス
-_description: インフラジスティックスの {Platform} ツリー コンポーネントは、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。{ProductName} がデータの表示を改善するのにどのように役立つかをご覧ください。
-_keywords: {Platform} ツリー、項目ツリー、概要、{ProductName}、インフラジスティックス
+_description: {Platform} ツリー コンポーネントを使用すると、ツリービュー構造で階層データを表示し、ノードを簡単にカスタマイズし、オンデマンドでデータを読み込むのに役立ちます。今すぐお試しください。
+_keywords: {Platform} ツリー, 項目ツリー, 概要, {ProductName}, インフラジスティックス
 mentionedTypes: ['Tree', 'TreeItem', 'Icon', 'CircularProgress']
 _language: ja
 ---
 
 # {Platform} Tree (ツリー) の概要
 
-{ProductName} ツリー要素を使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
+{ProductName} ツリーは、TreeView コンポーネントとも呼ばれ、ツリー状の UI 内で展開可能なデータ構造を視覚化する高性能コントロールであり、子項目をオンデマンドで読み込むことができます。{ProductName} ツリーは、ノードの展開と縮小、ネストされたアプリ ナビゲーションなどの機能も提供します。{ProductName} ツリーのノードは、手動で生成することも、バインドされたデータ ソースから生成することもできます。
+
+エンドユーザーにとって、これは、さまざまなアプリ ページ間を簡単にナビゲートし、選択、チェックボックスを使用し、テキスト、アイコン、画像などを追加できることを意味します。
+
+{ProductName} ツリー コンポーネントを使用すると、ユーザーはツリービュー構造で階層データを表現し、親子関係を維持したり、対応するデータ モデルなしで静的ツリービュー構造を定義したりできます。その主な目的は、エンドユーザーが階層データ構造内を視覚化してナビゲートできるようにすることです。`Tree` コンポーネントは、ロードオンデマンド機能、項目のアクティブ化、組み込みのチェックボックス、組み込みのキーボード ナビゲーションなどによる項目の複数のカスケード選択も提供します。
 
 
 ## {Platform} ツリーの例
 
 この基本的な {ProductName} ツリーの例では、項目階層を指定することにより、ツリーとその項目を定義する方法を確認できます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-basic-example"
-           alt="{Platform} ツリーの例"
-           github-src="grids/tree/basic-example">
-</code-view>
+`sample="/grids/tree/basic-example", height="400", alt="{Platform} ツリーの例"`
+
+
 
 <div class="divider--half"></div>
 
-## 使用方法
+## Ignite UI で {ProductName} ツリーを使用する方法
 
 <!-- WebComponents -->
 
@@ -198,7 +199,7 @@ builder.Services.AddIgniteUIBlazor(
 
 ## {Platform} ツリーの選択
 
-{ProductName} ツリーで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
+{ProductName} ツリー コンポーネントで項目の選択を設定するには、その `selection` プロパティを設定する必要があります。このプロパティは、次の 3 つのモードを受け入れます: **None**、**Multiple** および **Cascade**。以下で、それぞれについて詳しく説明します。
 
 ### None
 
@@ -257,7 +258,7 @@ builder.Services.AddIgniteUIBlazor(
  - <kbd>Home</kbd> - 最初の項目に移動します。
  - <kbd>End</kbd> - 最後に表示された項目に移動します。
  - <kbd>Tab</kbd> - ツリーの外側にあるページ上の次のフォーカス可能な要素に移動します。
- - <kbd>Shift +Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
+ - <kbd>Shift + Tab</kbd> - ツリーの外側で、ページ上の前のフォーカス可能な要素に移動します。
  - <kbd>Space</kbd> - 現在の項目の選択を切り替えます。ノードをアクティブとしてマークします。
  - <kbd>Shift + Space</kbd> - 選択が有効になっている場合、Shift キーを押しながら、アクティブな項目と Space を押した項目の間ですべての項目の選択を切り替えます。
  - <kbd>Enter</kbd> - フォーカスされた項目をアクティブにします。項目にリンクがある場合は、リンクを開きます。
@@ -274,12 +275,9 @@ builder.Services.AddIgniteUIBlazor(
 
 {ProductName} Tree は、サーバーから最小限のデータのみ取得して描画されるため、ユーザーにすばやくデータを表示できます。この動的データ読み込みアプローチでは、ユーザーが項目を展開した後にのみ、その特定の親ノードの子が取得されます。このメカニズムは、ロードオンデマンドであらゆるリモート データとの設定が簡単にできます。
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/tree-load-on-demand"
-           alt="{Platform} Tree ロードオンデマンドの例"
-           github-src="grids/tree/load-on-demand">
-</code-view>
+`sample="/grids/tree/load-on-demand", height="400", alt="{Platform} Tree ロードオンデマンドの例"`
+
+
 
 ユーザーが展開アイコンをクリックすると、ロード アイコンに変わります。Loading プロパティが false に解決されると、読み込みインジケーターが消え、子が読み込まれます。
 

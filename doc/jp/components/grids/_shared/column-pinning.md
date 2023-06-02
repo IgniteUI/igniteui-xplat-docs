@@ -4,8 +4,8 @@ _description: アプリの開発時に {ProductName} のピン固定機能を使
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 列ピン固定
@@ -16,12 +16,9 @@ namespace: Infragistics.Controls
 
 以下の例は、1 つまたは複数の列を `{ComponentName}` の左側または右側にピン固定する方法を示しています。
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options"
-           alt="{Platform} {ComponentTitle} 列ピン固定の例">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} 列ピン固定の例"`
+
+
 
 ## Column Pinning API
 
@@ -51,7 +48,7 @@ namespace: Infragistics.Controls
 <igc-grid id="grid1" width="700px" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
     <igc-column field="AthleteNumber"></igc-column>
-    <igc-column field="TrackProgress"></igxc-column>
+    <igc-column field="TrackProgress"></igc-column>
     <igc-paginator per-page="10">
     </igc-paginator>
 </igc-grid>
@@ -200,9 +197,6 @@ function onColumnPinned(e) {
 igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
 
-
-
-
 ## ピン固定の位置
 
 `Pinning` 設定オプションを使用して、列のピン固定の位置を変更できます。列の位置を [Start] または [End] のいずれかに設定できます。
@@ -212,26 +206,26 @@ igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
-```
-
-<!-- WebComponents -->
-```html
-<{ComponentSelector} auto-generate="true">
-    <igc-pinning-config columns="End">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { columns: ColumnPinningPosition.End };
+```
+<!-- end: WebComponents -->
 
 ```razor
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+
 @code {
     private IgbPinningConfig pinningConfig = new() {
         Columns = ColumnPinningPosition.End
@@ -241,11 +235,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
-           github-src="{ComponentSample}/column-pinning-right-side">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
 
 <!-- Angular -->
 
@@ -261,7 +252,7 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```html
 <igx-grid #grid1 [data]="data" [width]="'100%'" [height]="'500px'">
     <igx-column #col *ngFor="let c of columns" [field]="c.field" [header]="c.header" [width]="c.width" [pinned]='c.pinned'
-        [hidden]='c.hidden' [headerClasses]="'customHeaderSyle'">
+        [hidden]='c.hidden' [headerClasses]="'customHeaderStyle'">
         <ng-template igxHeader>
             <div class="title-inner">
                 <span style="float:left">{{col.header}}</span>
@@ -458,7 +449,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
             <igc-column field="Quantity" width="150px"></igx-column>
             <igc-column field="Discount" width="150px"></igx-column>
         </igc-row-island>
-    </igxc-row-island>
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -514,11 +505,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### デモ
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+
 
 <!-- end: Angular -->
 
@@ -593,8 +581,8 @@ $custom-theme: grid-theme(
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
     pinned-border-style: double,
-    pinned-border-color: color:("secondary", 500),
-    cell-active-border-color: color:("secondary", 500)
+    pinned-border-color: color: ("secondary", 500),
+    cell-active-border-color: color: ("secondary", 500)
 ));
 ```
 カスタム スキーマを適用するには、`light` グローバルまたは `dark` グローバルを拡張する必要があります。プロセス全体が実際にコンポーネントにカスタム スキーマを提供し、その後、それぞれのコンポーネントテーマに追加します。
@@ -635,11 +623,8 @@ $custom-theme: grid-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:506px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
-           github-src="{ComponentSample}/column-pinning-styles">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。

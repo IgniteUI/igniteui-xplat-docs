@@ -12,12 +12,9 @@ _language: ja
 
 ## コンボボックス テンプレートの例
 
-<code-view style="height:400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-templates"
-           alt="{Platform} コンボ テンプレート"
-           github-src="grids/combo/templates">
-</code-view>
+`sample="/inputs/combo/templates", height="400", alt="{Platform} コンボ テンプレート"`
+
+
 
 ## テンプレート タイプ
 

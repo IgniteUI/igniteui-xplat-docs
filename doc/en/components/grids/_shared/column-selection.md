@@ -33,12 +33,9 @@ The sample below demonstrates the three types of `{ComponentName}`'s **column se
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-mode"
-           github-src="{ComponentSample}/column-selection-mode"
-           alt="{Platform} Column Selection Example">
-</code-view>
+`sample="/{ComponentSample}/column-selection-mode", height="570", alt="{Platform} Column Selection Example"`
+
+
 
 ## Basic Usage
 
@@ -68,11 +65,8 @@ The default selection mode is `None`. If set to `Single` or `Multiple`, all of t
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-group"
-           github-src="{ComponentSample}/column-selection-group">
-</code-view>
+`sample="/{ComponentSample}/column-selection-group", height="570", alt="{Platform} {ComponentTitle} column selection group"`
+
 
 ## Keyboard Combinations
 
@@ -110,7 +104,9 @@ TO DO
 ```
 
 > [!Note]
+<!-- ComponentStart:  Grid -->
 >Please note that [row selection](row-selection.md) and [column selection](column-selection.md) can't be manipulated   independently. They depend on the same `variables`.
+<!-- ComponentEnd:  Grid -->
 
 With that being said, let's move on and change the **selection** and **hover** styles. <br/>
 
@@ -195,11 +191,8 @@ TO DO
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:570px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-selection-styles"
-           github-src="{ComponentSample}/column-selection-styles">
-</code-view>
+`sample="/{ComponentSample}/column-selection-styles", height="570", alt="{Platform} {ComponentTitle} column selection styles"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -235,7 +228,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Cell Selection](cell-selection.md)
 * [Paging](paging.md)
@@ -246,6 +239,7 @@ The column selection UI has a few more APIs to explore, which are listed below.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

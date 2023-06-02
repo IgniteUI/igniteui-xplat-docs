@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Library allows you to work with spreadsheet da
 ## {Platform} Excel Library Example
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="{Platform} Excel Library Example"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel Library Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -24,10 +21,10 @@ The Infragistics {Platform} Excel Library allows you to work with spreadsheet da
 ## Dependencies
 When installing the excel package, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
-</pre>
+```
 
 ## Component Modules
 
@@ -132,8 +129,10 @@ The following is a list of the supported versions of Excel.**
 
 -  Microsoft Excel 2016
 
+```md
 > [!Note]
 > The Excel Library does not support the Excel Binary Workbook (.xlsb) format at this time.
+```
 
 ## Load and Save Workbooks
 Now that the Excel Library module is imported, next step is to load a workbook.
@@ -176,18 +175,15 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
-> [!Note]
->For Angular
-><div class="divider--half"></div>
->
+<!--Angular -->
+
 ## Managing Heap
->
->Due to the size of the Excel Library, it's recommended to disable the source map generation.
->
->Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
->
+
+Due to the size of the Excel Library, it's recommended to disable the source map generation.
+
+Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
+
 ```ts
-...
     "architect": {
         "build": {
           "builder": "...",
@@ -212,8 +208,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
         // ...
       }
 ```
->
-<!-- -->
+<!--end:Angular-->
 
 ## API References
 

@@ -21,12 +21,9 @@ The {ProductName} Data Table / Data Grid supports a Template Column which provid
 ## {Platform} Column Sparkline Example
 
 
-<code-view style="height: 530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/sparkline-grid"
-           alt="{Platform} Column Sparkline Example"
-           github-src="charts/sparkline/grid">
-</code-view>
+`sample="/charts/sparkline/grid", height="530", alt="{Platform} Column Sparkline Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -139,7 +136,6 @@ public onUpdatingHistoryColumn(s: IgcTemplateColumnComponent, e: IgcTemplateCell
         chart.dataSource = info.rowItem.OrderHistory;
     }
 }
-
 ```
 
 ```razor

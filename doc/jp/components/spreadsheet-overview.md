@@ -11,12 +11,9 @@ mentionedTypes: ['Spreadsheet']
 
 ## {Platform} Spreadsheet の例
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/spreadsheet-overview"
-           alt="{Platform} Spreadsheet の例"
-           github-src="excel/spreadsheet/overview">
-</code-view>
+`sample="/excel/spreadsheet/overview", height="500", alt="{Platform} Spreadsheet の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -55,11 +52,11 @@ Excel でデータを操作するのと同じように、スプレッドシー�
 ## 依存関係
 {Platform} スプレッドシート コンポーネントをインストールするときは、core パッケージと excel パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
 npm install --save {PackageSpreadsheet}
-</pre>
+```
 
 
 ## モジュールの要件
@@ -180,7 +177,6 @@ const excelFile = '../../assets/Sample1.xlsx';
 ExcelUtility.loadFromUrl(excelFile).then((w: Workbook) => {
     spreadsheet.workbook = w;
 });
-
 ```
 
 ## API リファレンス

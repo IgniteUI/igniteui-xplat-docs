@@ -3,6 +3,7 @@ title: {Platform} ピボット グリッドとテーブル – {ProductName}
 _description: {ProductName} を使用して、高速でレスポンシブな {Platform} ピボット グリッドとテーブルを作成します。複雑な分析を実行し、データのソート、グループ化、またはフィルター処理を適用します。
 _keywords: {Platform} pivot grid, {Platform} material pivot table, Infragistics, {Platform} ピボット グリッド, {Platform} マテリアル ピボット テーブル, {ProductName}, インフラジスティックス
 mentionedTypes: ['Infragistics.Controls.PivotGrid']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -21,12 +22,9 @@ _language: ja
 
 以下は、{Platform} ピボット データ セレクター コンポーネントと組み合わせた {Platform} ピボット グリッドの例です。このようにして、より柔軟なランタイム構成オプションを使用できます。
 
-<code-view style="height: 750px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-data-selector"
-           github-src="{PivotGridSample}/data-selector"
-           alt="{Platform} ピボット セレクターを使用したピボット グリッドの例">
-</code-view>
+`sample="/{PivotGridSample}/data-selector", height="750", alt="{Platform} ピボット セレクターを使用したピボット グリッドの例"`
+
+
 
 ## {Platform} ピボット グリッドを使用した作業の開始
 
@@ -428,7 +426,7 @@ public data = [
 ];
 ```
 
-```
+```razor
 public PivotSalesData()
 {
     this.Add(new PivotSalesDataItem()
@@ -453,13 +451,7 @@ public PivotSalesData()
 
 上記のコードを使用すると、Product (製品) カテゴリの一意の列、Sellers Countries (売り手の国) を一意の行にグループ化し、関連するセルのユニット数に関連する集計を表示する次の例が得られます。
 
-<code-view style="height: 700px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/{PivotGridSample}-features"
-           github-src="{PivotGridSample}/features"
-           alt="{Platform} ピボット グリッドの例">
-</code-view>
-
+`sample="/{PivotGridSample}/features", height="700", alt="{Platform} ピボット グリッドの例"`
 
 ## 既知の問題と制限
 

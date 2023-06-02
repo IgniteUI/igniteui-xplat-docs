@@ -4,16 +4,9 @@ _description: {ComponentTitle} はセル内編集を使用しています。デ�
 _keywords: data manipulation, excel editing, {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, データの変更, excel 編集, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
-
-<!-- Blazor, WebComponents -->
-
-> [!Note]
-このコントロールは非推奨であり、[Grid](grid/overview.md) に置き換えられていることに注意してください。そのため、そのコントロールに移行することをお勧めします。これは新しい機能を受け取ることはなく、バグ修正は優先されません。コードベースをデータ グリッドに移行する際のヘルプや質問については、サポートにお問い合わせください。
-
-<!-- end: Blazor, WebComponents -->
 
 # {Platform} {ComponentTitle} セル編集
 
@@ -23,15 +16,14 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} セル編集と編集テンプレートの例
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
-           github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例">
-</code-view>
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} セル編集と編集テンプレートの例"`
+
+<!-- Angular -->
 
 > [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+
+<!-- end:Angular -->
 
 ## セルの編集
 
@@ -153,11 +145,11 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
+
 ### セル編集テンプレート
 
 デフォルトのセル編集テンプレートの詳細については、[編集トピック](editing.md#テンプレートの編集)を参照してください。
-
-<!-- Angular -->
 
 セルが編集モードのときに適用されるカスタム テンプレートを提供する場合は、`CellTemplateDirective` を使用できます。これを行うには、`CellEditor` ディレクティブでマークされた **ng-template** を渡し、カスタムコントロールをセルの `EditValue` に適切にバインドする必要があります。
 
@@ -196,14 +188,7 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 このコードは、`Race`、`Class`、および `Alignment` 列のセルに [SelectComponent](../select.md) を実装する以下のサンプルで使用されています。
 
-<code-view style="height:625px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
-           github-src="{ComponentSample}/cell-selection-style"
-           alt="{Platform} {ComponentTitle} Select の例">
-</code-view>
-
-<!-- end: Angular -->
+`sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select の例"`
 
 > [!Note]
 > 編集モードでセルの `EditValue` に加えられた変更は、終了時に適切な[編集イベント](editing.md#イベントの引数とシーケンス)をトリガーし、トランザクションが有効な場合はトランザクション状態に適用されます。
@@ -214,6 +199,8 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 > [!Note]
 >任意のタイプのエディター コンポーネントで `CellEditor` を使用すると、キーボード ナビゲーション フローが中断されます。同じことが、編集モードに入るカスタム セルの直接編集にも当てはまります。これは、追加したエディター コンポーネントではなく、**セル要素**に**フォーカス**が残るためです。これが、`Focus` ディレクティブを利用する必要がある理由です。これにより、フォーカスがセル内コンポーネントに直接移動し、セル/行の**流暢な編集フロー**が維持されます。
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -238,10 +225,9 @@ public keydownHandler(event) {
   const grid = this.grid;
   const activeElem = grid.navigation.activeNode;
 
-  if(
-    (key >= 48 && key <= 57) ||
-    (key >= 65 && key <= 90) ||
-    (key >= 97 && key <= 122)){
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
         // Number or Alphabet upper case or Alphabet lower case
         const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
         const cell = grid.getCellByColumn(activeElem.row, columnName);
@@ -261,7 +247,7 @@ if (key == 13) {
     const column = activeElem.column;
     const rowInfo = grid.dataView;
 
-    // to find the next eiligible cell, we will use a custom method that will check the next suitable index
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
     let nextRow = this.getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
@@ -281,7 +267,7 @@ if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowInd
 return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
-if(previous){
+if (previous) {
 return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
@@ -292,13 +278,7 @@ return dataView.findIndex((rec, index) => index > currentRowIndex && this.isEdit
 
 ##### {Platform} Grid Excel スタイル編集のサンプル
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
-           github-src="{ComponentSample}/editing-excel-style"
-           alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例">
-</code-view>
-
+`sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style スタイル編集の例"`
 
 上記のアプローチの主な利点は次のとおりです:
 
@@ -343,6 +323,12 @@ public addNewChildRow() {
     const record = this.getNewRecord();
     this.treeGrid.addRow(record, 1);
 }
+```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.TreeGridRef.AddRow(record);
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -424,6 +410,7 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -434,6 +421,7 @@ this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -458,11 +446,11 @@ row.delete();
 
 この例では、`CellEdit` イベントにバインドすることにより、入力されたデータに基づいてセルを検証します。セルの新しい値が事前定義された基準を満たしていない場合、イベントをキャンセルすることでデータソースに到達しないようにします。
 
-```typescript
-event.cancel = true
-```
+<!-- Angular -->
 
 また、[Toast](../../notifications/toast.md) を使用してカスタム エラーメッセージを表示します。
+
+<!-- end: Angular -->
 
 最初に必要なことは、グリッドのイベントにバインドすることです。
 
@@ -470,6 +458,11 @@ event.cancel = true
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} CellEditScript="HandleCellEdit" />
+```
+
 <!-- ComponentStart: Grid -->
 ```ts
 constructor() {
@@ -481,6 +474,7 @@ constructor() {
     this._bind();
 }
 ```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 ```ts
@@ -513,7 +507,7 @@ constructor() {
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
         const column = event.column;
-        if (column.field === 'Ordered') {
+        if (column.field === 'UnitsOnOrder') {
             const rowData = event.rowData;
             if (!rowData) {
                 return;
@@ -527,10 +521,25 @@ export class MyGridEventsComponent {
 }
 ```
 
-**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、エラー メッセージ付きのトーストが表示されます。
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+
 ```typescript
 export class MyTreeGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -552,7 +561,28 @@ export class MyTreeGridEventsComponent {
 }
 ```
 
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+**Units on Order (注文済み)** 列の下のセルに入力された値が使用可能量 (**Units in Stock、在庫数** の値) よりも大きい場合、編集はキャンセルされ、ユーザーにキャンセルの警告が表示されます。
+
+<!-- Angular -->
+
 ここでは、2 つの列を検証しています。ユーザーが従業員の**Age (年齢、18歳未満)** または **Hire Date (雇用日、将来の日付)** に無効な値を設定しようとすると、編集がキャンセルされ (値は送信されません)、エラー メッセージ付きのトースターが表示されます。
+
+<!-- end: Angular -->
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -577,17 +607,14 @@ export class MyHGridEventsComponent {
     }
 }
 ```
+
 ここでは、2 つの列を検証しています。ユーザーがアーティストの **Debut (デビュー)** 年またはアルバムの **Launch Date (発売日)** を変更しようとした際に、グリッドは今日よりも後の日付を許可しません。
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 以下は、上記の検証が `{ComponentName}` に適用された結果のデモです。
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
-           github-src="{ComponentSample}/editing-events"
-           alt="{Platform} {ComponentTitle} 編集イベントの例">
-</code-view>
+`sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} 編集イベントの例"`
 
 <!-- Angular -->
 
@@ -667,12 +694,9 @@ $custom-grid-theme: grid-theme(
 
 上記の手順に加えて、セルの編集テンプレートに使用されるコントロールのスタイルを設定することもできます ([igx-input-group](../input-group.md#スタイル設定)、[igx-datepicker](../date-picker.md#スタイル設定) および [igx-checkbox](../checkbox.md#スタイル設定))。
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
-           github-src="{ComponentSample}/editing-style"
-           alt="{Platform} {ComponentTitle} 編集スタイルの例">
-</code-view>
+`sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} 編集スタイルの例"`
+
+
 
 > [!Note]
 >サンプルは、**テーマの変更**で選択したグローバル テーマの影響を受けません。
@@ -692,7 +716,9 @@ $custom-grid-theme: grid-theme(
 
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
+<!-- Angular -->
 * `InputDirective`
+<!-- end:Angular -->
 * `DatePickerComponent`
 
 ## その他のリソース
@@ -716,7 +742,7 @@ $custom-grid-theme: grid-theme(
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, WebComponents -->
 
 
 * [仮想化とパフォーマンス](virtualization.md)
@@ -731,4 +757,4 @@ $custom-grid-theme: grid-theme(
 * [検索](search.md)
 <!-- ComponentEnd:  HierarchicalGrid -->
 
-<!-- end: Blazor -->
+<!-- end: Blazor, WebComponents -->

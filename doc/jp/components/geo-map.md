@@ -13,11 +13,8 @@ _language: ja
 
 以下のサンプルは、Bubble Series (バブル シリーズ) とも呼ばれる `GeographicProportionalSymbolSeries` を使用して `XamGeographicMap` にデータを表示する方法を示しています。
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} geo map type scatter bubble series"`
+
 
 <div class="divider--half"></div>
 
@@ -32,17 +29,16 @@ Map は、マウス、キーボード、またはコードビハインドを使�
 
 地理マップコンポーネントを使用するには、はじめにこれらのパッケージをインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
 
 `XamGeographicMap` には以下のモジュールが必要ですが、DataChartInteractivityModule は、マップ コンテンツのパンやズームなどのマウス操作にのみ必要です。
-
 
 ```razor
 // in Program.cs file
@@ -181,3 +177,4 @@ ModuleManager.register(
 - `GeographicShapeSeries`
 - `GeographicProportionalSymbolSeries`
 - `GeographicSymbolSeries`
+- `GeographicScatterAreaSeries`

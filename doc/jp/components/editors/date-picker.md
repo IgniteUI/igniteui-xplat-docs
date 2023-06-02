@@ -1,6 +1,6 @@
 ---
 title: {Platform} 日付選択 | データ可視化ツール | インフラジスティックス
-_description: インフラジスティックスの {Platform}日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
+_description: インフラジスティックスの {Platform} 日付選択コンポーネントは、ユーザーの日付選択を支援します。{ProductName} でグラフと視覚化を改善します!
 _keywords: {Platform} date picker, drop down, {ProductName}, Infragistics, 日付選択, ドロップダウン, インフラジスティックス
 mentionedTypes: ['DatePicker']
 _language: ja
@@ -13,34 +13,30 @@ _language: ja
 
 このサンプルは、単一の日付を選択するオプションを使用して `DatePicker` を作成する方法を示しています。
 
-<code-view style="height: 350px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-overview"
-           alt="{Platform} 日付選択の例"
-           github-src="editors/date-picker/overview">
-</code-view>
+`sample="/editors/date-picker/overview", height="350", alt="{Platform} 日付選択の例"`
+
+
 
 <!-- React, WebComponents -->
 ## 依存関係
 日付選択コンポーネントをインストールするときに core と input のパッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
-</pre>
+```
 <!-- end: React, WebComponents -->
 
 ## モジュールの要件
 
 日付選択コンポーネントを使用するには、以下のモジュールを登録する必要があります。
 
-
-
 ```razor
 // in Program.cs file
 
-builder.Services.AddIgniteUIBlazor(typeof(IgbDatePickerModule));
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbDatePickerModule));
 ```
 
 ```ts
@@ -92,12 +88,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で編集を有効にする方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-editing"
-           alt="{Platform} Date Picker 編集の例"
-           github-src="editors/date-picker/editing">
-</code-view>
+`sample="/editors/date-picker/editing", height="300", alt="{Platform} Date Picker 編集の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -105,12 +98,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で選択した日付を制限する方法を示しています。
 
-<code-view style="height: 360px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-date-limits"
-           alt="{Platform} Date Picker 日付制限の例"
-           github-src="editors/date-picker/date-limits">
-</code-view>
+`sample="/editors/date-picker/date-limits", height="360", alt="{Platform} Date Picker 日付制限の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -118,12 +108,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、`DatePicker` で長い日付を適用する方法を示しています。
 
-<code-view style="height: 350px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-format"
-           alt="{Platform} Date Picker 書式の例"
-           github-src="editors/date-picker/format">
-</code-view>
+`sample="/editors/date-picker/format", height="350", alt="{Platform} Date Picker 書式の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -131,12 +118,9 @@ ModuleManager.register(IgcDatePickerModule);
 
 次の例は、複数の `DatePicker` コントロールを組み合わせる方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/date-picker-range"
-           alt="{Platform} Date Picker 日付範囲の例"
-           github-src="editors/date-picker/range">
-</code-view>
+`sample="/editors/date-picker/range", height="300", alt="{Platform} Date Picker 日付範囲の例"`
+
+
 
 <div class="divider--half"></div>
 

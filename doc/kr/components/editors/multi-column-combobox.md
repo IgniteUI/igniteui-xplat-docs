@@ -12,21 +12,18 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 ## {Platform} Multi-Column Combo Box Example
 
 
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="{Platform} Multi-Column Combo Box Example"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
+
+
 
 <!-- Angular, React, WebComponents -->
 ## Dependencies
 When installing the charts component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageInputs}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## Component Modules

@@ -110,12 +110,9 @@ Use **::ng-deep** or **ViewEncapsulation.Non** to force the custom styles down t
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-classes"
-           github-src="{ComponentSample}/row-classes" >
+`sample="/{ComponentSample}/row-classes", height="600", alt="{Platform} {ComponentTitle} row classes"`
 
-</code-view>
+
 
 <!-- end: Angular -->
 
@@ -289,11 +286,8 @@ constructor() {
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-styles"
-           github-src="{ComponentSample}/row-styles" >
-</code-view>
+`sample="/{ComponentSample}/row-styles", height="620", alt="{Platform} {ComponentTitle} row styles"`
+
 
 ## {ComponentTitle} Conditional Cell Styling
 
@@ -495,11 +489,8 @@ Use **::ng-deep** or **ViewEncapsulation.None** to force the custom styles down 
 
 ### Demo
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-1"
-           github-src="{ComponentSample}/conditional-cell-style-1" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-1", height="600", alt="{Platform} {ComponentTitle} conditional cell style 1"`
+
 
 - By using the `Column` input `CellStyles` which accepts an object literal where the keys are style properties and the values are expressions for evaluation.
 
@@ -675,7 +666,7 @@ constructor() {
 }
 ```
 
-Define a `popin` animanion:
+Define a `popin` animation:
 
 ```css
 @keyframes popin {
@@ -701,15 +692,12 @@ Define a `popin` animanion:
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-2"
-           github-src="{ComponentSample}/conditional-cell-style-2" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
+
 
 <!-- Angular -->
 
-## Known issues and limitations
+### Known issues and limitations
 
 - If there are cells bind to the same condition (from different columns) and one cell is updated, the other cells won't be updated based on the new value, if the condition is met.
 
@@ -725,8 +713,8 @@ public backgroundClasses = {
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
-
 ```
+
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>
@@ -759,15 +747,16 @@ constructor() {
     }
     this._bind();
 }
+```
 
-## API References
+### API References
 
 * `Column`
 * `{ComponentName}`
 
-## Additional Resources
+### Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -780,9 +769,10 @@ constructor() {
 * [Column Hiding](column-hiding.md)
 * [Selection](selection.md)
 * [Searching](search.md)
-* [Toolbar](toolbar.md)
+<!-- * [Toolbar](toolbar.md) -->
 * [Multi-column Headers](multi-column-headers.md)
 * [Display Density](display-density.md)
+<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.

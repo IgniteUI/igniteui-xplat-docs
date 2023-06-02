@@ -13,20 +13,17 @@ The {ProductName} Calendar component provides an easy and intuitive way to displ
 ## {Platform} Calendar Example
 <div class="divider--half"></div>
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-overview"
-           alt="{Platform} Calendar Example"
-           github-src="scheduling/calendar/overview">
-</code-view>
+`sample="/scheduling/calendar/overview", height="480", alt="{Platform} Calendar Example"`
+
+
 
 ## Usage
 
 To get started with the Calendar component, first you need to install {ProductName} package by typing the following command:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install {PackageComponents}
-</pre>
+```
 
 The next step is to import the `Calendar` and register it by calling the [defineComponents()]({environment:wcApiUrl}/index.html#defineComponents) function as follows::
 
@@ -55,12 +52,9 @@ We can easily change the default mode using the `Selection` property:
 <igc-calendar selection="multiple"></igc-calendar>
 ```
 
-<code-view style="height: 370px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-selection"
-           alt="{Platform} Calendar Multiple Selection Example"
-           github-src="scheduling/calendar/multiple-selection ">
-</code-view>
+`sample="/scheduling/calendar/multiple-selection", height="370", alt="{Platform} Calendar Multiple Selection Example"`
+
+
 
 ### Range Selection
 
@@ -71,12 +65,9 @@ Following the same approach, we can switch to `range` selection mode:
 <igc-calendar selection="range"></igc-calendar>
 ```
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-range-selection"
-           alt="{Platform} Calendar Range Selection Example"
-           github-src="scheduling/calendar/range-selection">
-</code-view>
+`sample="/scheduling/calendar/range-selection", height="480", alt="{Platform} Calendar Range Selection Example"`
+
+
 
 ### Active View and Date
 
@@ -102,12 +93,9 @@ The {ProductName} Calendar component exposes a `title` slot which allows you to 
 
 The following sample demonstrates the above configuration:
 
-<code-view style="height: 370px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-header"
-           alt="{Platform} Calendar Header Example"
-           github-src="scheduling/calendar/header">
-</code-view>
+`sample="/scheduling/calendar/header", height="370", alt="{Platform} Calendar Header Example"`
+
+
 
 ### Localization and Formatting
 
@@ -150,12 +138,9 @@ this.radios.forEach(radio => {
 
 If everything went well, we should now have a Calendar with customized display, that also changes the locale representation, based on the user selection. Let's have a look at it:
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-formatting"
-           alt="{Platform} Calendar Formatting Example"
-           github-src="scheduling/calendar/formatting">
-</code-view>
+`sample="/scheduling/calendar/formatting", height="520", alt="{Platform} Calendar Formatting Example"`
+
+
 
 ### Disabled dates
 
@@ -183,12 +168,9 @@ this.calendar.disabledDates = [{ type: DateRangeType.Between, dateRange: range }
 
 These configurations should have the following result:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-disabled-dates"
-           alt="{Platform} Calendar Disabled Dates Example"
-           github-src="scheduling/calendar/disabled-dates">
-</code-view>
+`sample="/scheduling/calendar/disabled-dates", height="480", alt="{Platform} Calendar Disabled Dates Example"`
+
+
 
 ### Special dates
 
@@ -208,12 +190,9 @@ this.calendar.specialDates = [{ type: DateRangeType.Between, dateRange: range }]
 
 The following demo illustrates a Calendar with a vacation request option:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-special-dates"
-           alt="{Platform} Calendar Special Dates Example"
-           github-src="scheduling/calendar/special-dates">
-</code-view>
+`sample="/scheduling/calendar/special-dates", height="480", alt="{Platform} Calendar Special Dates Example"`
+
+
 
 ### Week numbers
 
@@ -224,12 +203,9 @@ You can use the `ShowWeekNumbers` property to show the week numbers of the Calen
 ```
 The following demo illustrates a Calendar with enabled week numbers:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-week-numbers"
-           alt="{Platform} Calendar Week Numbers Example"
-           github-src="scheduling/calendar/week-numbers">
-</code-view>
+`sample="/scheduling/calendar/week-numbers", height="480", alt="{Platform} Calendar Week Numbers Example"`
+
+
 
 ### Multiple Months
 
@@ -243,23 +219,17 @@ The Calendar displays leading and trailing dates from the previous and the next 
 
 The following sample demonstrates the multiple months configuration:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-multiple-months"
-           alt="{Platform} Calendar Multiple Months Example"
-           github-src="scheduling/calendar/multiple-months">
-</code-view>
+`sample="/scheduling/calendar/multiple-months", height="480", alt="{Platform} Calendar Multiple Months Example"`
+
+
 
 ### Size
 
 You could control the size and spacing of the Calendar inner elements by changing its `Size` property. The default `Size` value is `large`.
 
-<code-view style="height: 520px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-size"
-           alt="{Platform} Calendar Size Example"
-           github-src="scheduling/calendar/size">
-</code-view>
+`sample="/scheduling/calendar/size", height="520", alt="{Platform} Calendar Size Example"`
+
+
 
 ### Events
 
@@ -383,12 +353,9 @@ igc-calendar::part(year-inner current selected) {
 
 The following sample demonstrates the above CSS configuration:
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/scheduling/calendar-styling"
-           alt="{Platform} Calendar Styling Example"
-           github-src="scheduling/calendar/styling">
-</code-view>
+`sample="/scheduling/calendar/styling", height="480", alt="{Platform} Calendar Styling Example"`
+
+
 
 ## API References
 

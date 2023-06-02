@@ -11,12 +11,9 @@ In {Platform} map component, you can use the `GeographicPolylineSeries` to displ
 ## {Platform} Geographic Polyline Map Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
-           alt="{Platform} Using Shape Polyline Series Example"
-           github-src="maps/geo-map/type-shape-polyline-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polyline-series", height="500", alt="{Platform} Using Shape Polyline Series Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -211,7 +208,6 @@ export class MapTypeShapePolylineSeriesComponent implements AfterViewInit {
         this.map.series.add(lineSeries);
     }
 }
-
 ```
 
 ```html

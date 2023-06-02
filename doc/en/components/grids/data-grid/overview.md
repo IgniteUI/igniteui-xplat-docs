@@ -23,12 +23,9 @@ The {ProductName} Data Table / Data Grid is a tabular {Platform} grid component 
 This demo implements some of the features that are available in the Grid:
 Filtering, Grouping, Pin/Unpin columns, Reposition columns, Sorting, and Summaries
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Data Grid Example"
-           github-src="grids/data-grid/overview">
-</code-view>
+`sample="/grids/data-grid/overview", height="600", alt="{Platform} Data Grid Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -42,20 +39,20 @@ Please refer to these topics on adding the IgniteUI.Blazor package.
 - [Adding Nuget Package](../../general-nuget-feed.md)
 
 Afterwards, you may start implementing the control by adding the following namespaces:
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-@using IgniteUI.Blazor.Controls
 
-</pre>
+```razor
+@using IgniteUI.Blazor.Controls
+```
 <!-- end: Blazor -->
 
 <!-- Angular, React, WebComponents -->
 When installing the {Platform} grid package, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ### Component Modules

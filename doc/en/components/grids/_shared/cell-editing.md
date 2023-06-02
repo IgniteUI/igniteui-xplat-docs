@@ -15,15 +15,14 @@ In addition, you can define your own custom templates for update-data actions an
 
 ## {Platform} {ComponentTitle} Cell Editing and Edit Templates Example
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-columns"
-           github-src="{ComponentSample}/editing-columns"
-           alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example">
-</code-view>
+`sample="/{ComponentSample}/editing-columns", height="700", alt="{Platform} {ComponentTitle} Cell Editing and Edit Templates Example"`
+
+<!-- Angular -->
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- end:Angular -->
 
 ## Cell Editing
 
@@ -145,11 +144,11 @@ private UpdateCell() {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
+
 ### Cell Editing Templates
 
 You can see and learn more for default cell editing templates in the [general editing topic](editing.md#editing-templates).
-
-<!-- Angular -->
 
 If you want to provide a custom template which will be applied when a cell is in edit mode, you can make use of the `CellTemplateDirective`. To do this, you need to pass an **ng-template** marked with the `CellEditor` directive and properly bind your custom control to the cell `EditValue`:
 
@@ -188,14 +187,7 @@ public classEditTemplate = (ctx: IgcCellTemplateContext) => {
 
 This code is used in the sample below which implements an [SelectComponent](../select.md) in the cells of the `Race`, `Class` and `Alignment` columns.
 
-<code-view style="height:625px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-style"
-           github-src="{ComponentSample}/cell-selection-style"
-           alt="{Platform} {ComponentTitle} Select Example">
-</code-view>
-
-<!-- end: Angular -->
+`sample="/{ComponentSample}/cell-selection-style", height="625", alt="{Platform} {ComponentTitle} Select Example"`
 
 > [!Note]
 > Any changes made to the cell's `EditValue` in edit mode, will trigger the appropriate [editing event](editing.md#event-arguments-and-sequence) on exit and apply to the transaction state if transactions are enabled.
@@ -206,6 +198,8 @@ This code is used in the sample below which implements an [SelectComponent](../s
 
 > [!Note]
 >By using `CellEditor` with any type of editor component, the keyboard navigation flow will be disrupted. The same applies to direct editing of the custom cell that enters edit mode. This is because the **focus** will remain on the **cell element**, not on the editor component that we've added. This is why we should take leverage of the `Focus` directive, which will move the focus directly in the in-cell component and will preserve **a fluent editing flow** of the cell/row.
+
+<!-- end: Angular -->
 
 <!-- Angular -->
 
@@ -230,10 +224,9 @@ public keydownHandler(event) {
   const grid = this.grid;
   const activeElem = grid.navigation.activeNode;
 
-  if(
-    (key >= 48 && key <= 57) ||
-    (key >= 65 && key <= 90) ||
-    (key >= 97 && key <= 122)){
+  if ((key >= 48 && key <= 57) ||
+      (key >= 65 && key <= 90) ||
+      (key >= 97 && key <= 122)) {
         // Number or Alphabet upper case or Alphabet lower case
         const columnName = grid.getColumnByVisibleIndex(activeElem.column).field;
         const cell = grid.getCellByColumn(activeElem.row, columnName);
@@ -253,7 +246,7 @@ if (key == 13) {
     const column = activeElem.column;
     const rowInfo = grid.dataView;
 
-    // to find the next eiligible cell, we will use a custom method that will check the next suitable index
+    // to find the next eligible cell, we will use a custom method that will check the next suitable index
     let nextRow = this.getNextEditableRowIndex(thisRow, rowInfo, event.shiftKey);
 
     // and then we will navigate to it using the grid's built in method navigateTo
@@ -273,7 +266,7 @@ if (currentRowIndex < 0 || (currentRowIndex === 0 && previous) || (currentRowInd
 return currentRowIndex;
 }
 // in case using shift + enter combination, we look for the first suitable cell going up the field
-if(previous){
+if (previous) {
 return  dataView.findLastIndex((rec, index) => index < currentRowIndex && this.isEditableDataRecordAtIndex(index, dataView));
 }
 // or for the next one down the field
@@ -284,13 +277,7 @@ Please check the full sample for further reference:
 
 ##### {Platform} Grid Excel Style Editing Sample
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-excel-style"
-           github-src="{ComponentSample}/editing-excel-style"
-           alt="{Platform} {ComponentTitle} Excel Style Editing Example">
-</code-view>
-
+`sample="/{ComponentSample}/editing-excel-style", height="550", alt="{Platform} {ComponentTitle} Excel Style Editing Example"`
 
 Main benefits of the above approach include:
 
@@ -335,6 +322,12 @@ public addNewChildRow() {
     const record = this.getNewRecord();
     this.treeGrid.addRow(record, 1);
 }
+```
+
+```razor
+//Assuming we have a `GetNewRecord` method returning the new row data.
+const record = this.GetNewRecord();
+this.TreeGridRef.AddRow(record);
 ```
 <!-- ComponentEnd: TreeGrid -->
 
@@ -416,6 +409,7 @@ this.grid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.grid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
@@ -426,6 +420,7 @@ this.treeGrid.deleteRow(this.selectedCell.cellID.rowID);
 const row = this.treeGrid.getRowByIndex(rowIndex);
 row.delete();
 ```
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -448,13 +443,13 @@ These can be wired to user interactions, not necessarily related to the `{Compon
 
 Using the `{ComponentName}`'s editing events, we can alter how the user interacts with the `{ComponentName}`.
 
-In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event:
+In this example, we'll validate a cell based on the data entered in it by binding to the `CellEdit` event. If the new value of the cell does not meet our predefined criteria, we'll prevent it from reaching the data source by cancelling the event.
 
-```typescript
-event.cancel = true
-```
+<!-- Angular -->
 
 We'll also display a custom error message using [Toast](../../notifications/toast.md).
+
+<!-- end: Angular -->
 
 The first thing we need to is bind to the grid's event:
 
@@ -462,6 +457,11 @@ The first thing we need to is bind to the grid's event:
 <{ComponentSelector} (cellEdit)="handleCellEdit($event)">
 </{ComponentSelector}>
 ```
+
+```razor
+<{ComponentSelector} CellEditScript="HandleCellEdit" />
+```
+
 <!-- ComponentStart: Grid -->
 ```ts
 constructor() {
@@ -473,6 +473,7 @@ constructor() {
     this._bind();
 }
 ```
+
 <!-- ComponentEnd: Grid -->
 <!-- ComponentStart: TreeGrid -->
 ```ts
@@ -505,7 +506,7 @@ The `CellEdit` emits whenever **any** cell's value is about to be committed. In 
 export class MyGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
         const column = event.column;
-        if (column.field === 'Ordered') {
+        if (column.field === 'UnitsOnOrder') {
             const rowData = event.rowData;
             if (!rowData) {
                 return;
@@ -519,10 +520,26 @@ export class MyGridEventsComponent {
 }
 ```
 
-If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and a toast with an error message will be displayed.
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+
 <!-- ComponentEnd: Grid -->
 
 <!-- ComponentStart: TreeGrid -->
+
 ```typescript
 export class MyTreeGridEventsComponent {
     public handleCellEdit(event: IGridEditEventArgs): void {
@@ -544,7 +561,28 @@ export class MyTreeGridEventsComponent {
 }
 ```
 
+```razor
+*** In JavaScript ***
+igRegisterScript("HandleCellEdit", (ev) => {
+    var d = ev.detail;
+
+    if (d.column != null && d.column.field == "UnitsOnOrder") {
+        if (d.newValue > d.rowData.UnitsInStock) {
+            d.cancel = true;
+            alert("You cannot order more than the units in stock!")
+        }
+    }
+}, false);
+```
+
+If the value entered in a cell under the **Units On Order** column is larger than the available amount (the value under **Units in Stock**), the editing will be cancelled and the user will be alerted to the cancellation.
+
+<!-- Angular -->
+
 Here, we are validating two columns. If the user tries to set an invalid value for an employee's **Age** (below 18) or their **Hire Date** (a future date), the editing will be cancelled (the value will not be submitted) and a toast with an error message will be displayed.
+
+<!-- end: Angular -->
+
 <!-- ComponentEnd: TreeGrid -->
 
 <!-- ComponentStart: HierarchicalGrid -->
@@ -569,17 +607,14 @@ export class MyHGridEventsComponent {
     }
 }
 ```
+
 Here, we are validating two columns. If the user tries to change an artist's **Debut** year or an album's **Launch Date**, the grid will not allow any dates that are greater than today.
+
 <!-- ComponentEnd: HierarchicalGrid -->
 
 The result of the above validation being applied to our `{ComponentName}` can be seen in the below demo:
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-events"
-           github-src="{ComponentSample}/editing-events"
-           alt="{Platform} {ComponentTitle} Editing Event Example">
-</code-view>
+`sample="/{ComponentSample}/editing-events", height="650", alt="{Platform} {ComponentTitle} Editing Event Example"`
 
 <!-- Angular -->
 
@@ -659,12 +694,9 @@ This way, due to {Platform}'s [ViewEncapsulation](https://angular.io/api/core/Co
 
 In addition to the steps above, we can also style the controls that are used for the cells' editing templates: [igx-input-group](../input-group.md#styling), [igx-datepicker](../date-picker.md#styling) & [igx-checkbox](../checkbox.md#styling)
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-editing-style"
-           github-src="{ComponentSample}/editing-style"
-           alt="{Platform} {ComponentTitle} Editing Style Example">
-</code-view>
+`sample="/{ComponentSample}/editing-style", height="700", alt="{Platform} {ComponentTitle} Editing Style Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -684,7 +716,9 @@ In addition to the steps above, we can also style the controls that are used for
 
 <!-- ComponentEnd: TreeGrid -->
 * `GridCell`
+<!-- Angular -->
 * `InputDirective`
+<!-- end:Angular -->
 * `DatePickerComponent`
 
 ## Additional Resources
@@ -703,14 +737,14 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 <!-- ComponentStart:  HierarchicalGrid -->
-* [Searching](search.md)
+<!-- * [Searching](search.md) -->
 <!-- ComponentEnd:  HierarchicalGrid -->
 
 <!-- end: Angular -->
 
-<!-- Blazor -->
+<!-- Blazor, WebComponents -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -719,8 +753,7 @@ In addition to the steps above, we can also style the controls that are used for
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-<!-- ComponentStart:  HierarchicalGrid -->
 * [Searching](search.md)
-<!-- ComponentEnd:  HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
-<!-- end: Blazor -->
+<!-- end: Blazor, WebComponents -->

@@ -11,11 +11,8 @@ The {ProductName} Select component allows a single selection from a list of item
 
 ## {Platform} Select Example
 
-<code-view style="height:220px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/select-overview" alt="{Platform} Select Example"
-           github-src="inputs/select/overview">
-</code-view>
+`sample="/inputs/select/overview", height="275", alt="{Platform} Select Example"`
+
 
 <div class="divider--half"></div>
 
@@ -67,6 +64,7 @@ You will also need to link an additional CSS file to apply the styling to the `S
 
 To start using the component add the `Select` along with a list of `SelectItem`'s to choose from:
 
+<!-- WebComponents -->
 ```html
 <igc-select>
     <igc-select-item value="orange">Orange</igc-select-item>
@@ -75,32 +73,52 @@ To start using the component add the `Select` along with a list of `SelectItem`'
     <igc-select-item value="mango">Mango</igc-select-item>
 </igc-select>
 ```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectItem Value="orange">Orange</IgbSelectItem>
+    <IgbSelectItem Value="apple">Apple</IgbSelectItem>
+    <IgbSelectItem Value="banana">Banana</IgbSelectItem>
+    <IgbSelectItem Value="mango">Mango</IgbSelectItem>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ### Select
 
-The `Select` component can be used inside an `Form` thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
+The `Select` component can be used inside a `Form` component, thus it exposes a `Name` property to be registered with. It also has a `Label`, `Placeholder`, and `Size` properties. The `Outlined` property is used for styling purposes only when it comes to the Material theme. Except for the default slot, the component provides a few other slots including `header`, `footer`, `helper-text`, `prefix`, `suffix`, and `toggle-icon`.
 
 ### Item
 
 The `SelectItem` component allows the users to declaratively specify a list of options to be used by the `Select` control. Each item provides a `Value` property that represents the data it carries upon selection. The `SelectItem` has a default slot which allows you to specify the text content of the item. This text content will be used as value in case the `Value` property is not present on the `SelectItem`. You could also provide custom content to be rendered before or after the `SelectItem` content using the `prefix` and `suffix` slots. You could predefine a selected item by setting the `Selected` property. You could also disable some or all items via the `Disabled` property.
 
-<code-view style="height: 220px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-item"
-           alt="{Platform} Select Item Example"
-           github-src="inputs/select/item">
-</code-view>
+`sample="/inputs/select/item", height="275", alt="{Platform} Select Item Example"`
+
 
 ### Header
 
 You can use the `SelectHeader` to provide a header for a group of items.
 
-<code-view style="height: 250px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-header"
-           alt="{Platform} Select Header Example"
-           github-src="inputs/select/header">
-</code-view>
+`sample="/inputs/select/header", height="275", alt="{Platform} Select Header Example"`
+
+
+<!-- WebComponents -->
+```html
+<igc-select>
+    <igc-select-header>Tasks</igc-select-header>
+</igc-select>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectHeader>Tasks</IgbSelectHeader>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ### Group
 
@@ -109,18 +127,69 @@ Multiple `SelectItem`s can be placed between the opening and closing brackets of
 > [!Note]
 > Keep in mind that if a select group is disabled, you cannot enable separate items of it.
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-group"
-           alt="{Platform} Select Group Example"
-           github-src="inputs/select/group">
-</code-view>
+`sample="/inputs/select/group", height="500", alt="{Platform} Select Group Example"`
+
+<!-- WebComponents -->
+```html
+<igc-select>
+    <igc-select-group>
+        <span slot="label">Europe</span>
+
+        <igc-select-item>
+          <igc-icon @ref="IconRef" slot="prefix" name="place" collection="material"></igc-icon>
+          Germany
+          <span slot="suffix">DE</span>
+        </igc-select-item>
+
+        <igc-select-item>
+          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+          France
+          <span slot="suffix">FR</span>
+        </igc-select-item>
+
+        <igc-select-item>
+          <igc-icon slot="prefix" name="place" collection="material"></igc-icon>
+          Spain
+          <span slot="suffix">ES</span>
+        </igc-select-item>
+    </igc-select-group>
+</igc-select>
+```
+<!-- end: WebComponents -->
+
+<!-- Blazor -->
+```razor
+<IgbSelect>
+    <IgbSelectGroup>
+        <span slot="label">Europe</span>
+
+        <IgbSelectItem>
+          <IgbIcon @ref="IconRef" slot="prefix" name="place" collection="material"></IgbIcon>
+          Germany
+          <span slot="suffix">DE</span>
+        </IgbSelectItem>
+
+        <IgbSelectItem>
+          <IgbIcon slot="prefix" name="place" collection="material"></IgbIcon>
+          France
+          <span slot="suffix">FR</span>
+        </IgbSelectItem>
+
+        <IgbSelectItem>
+          <IgbIcon slot="prefix" name="place" collection="material"></IgbIcon>
+          Spain
+          <span slot="suffix">ES</span>
+        </IgbSelectItem>
+    </IgbSelectGroup>
+</IgbSelect>
+```
+<!-- end: Blazor -->
 
 ## Validation
 
 In addition, the `Select` supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, etc. The component also exposes a method bound to its validation:
 
-- reportValidity() - checks for validity and focuses the component if invalid.
+- `reportValidity` - checks for validity and focuses the component if invalid.
 
 ## Keyboard Navigation
 
@@ -177,12 +246,9 @@ You can change the appearance of the {ProductName} `Select` component and its it
 | ---------|------------ |
 | `Label` | A label wrapper that renders content above the select group items. |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/select-styling"
-           alt="{Platform} Select Styling Example"
-           github-src="inputs/select/styling">
-</code-view>
+`sample="/inputs/select/styling", height="380", alt="{Platform} Select Styling Example"`
+
+
 
 <!-- end: WebComponents -->
 

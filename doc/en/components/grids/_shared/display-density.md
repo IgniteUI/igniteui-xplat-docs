@@ -13,12 +13,9 @@ The `{ComponentName}` design is based on [Material Design Guidelines](https://ma
 
 ## {Platform} {ComponentTitle} Display Density Example
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-layout-display-density"
-           github-src="{ComponentSample}/layout-display-density"
-           alt="{Platform} {ComponentTitle} Display Density Example">
-</code-view>
+`sample="/{ComponentSample}/layout-display-density", height="620", alt="{Platform} {ComponentTitle} Display Density Example"`
+
+
 
 ## Usage
 
@@ -781,7 +778,7 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * `Column`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Editing](editing.md)
 * [Paging](paging.md)
@@ -791,12 +788,8 @@ We can now extend our sample and add `RowHeight` property to the `{ComponentName
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
-<!-- ComponentStart: HierarchicalGrid -->
-
 * [Searching](search.md)
-
-<!-- ComponentEnd: HierarchicalGrid -->
+<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.

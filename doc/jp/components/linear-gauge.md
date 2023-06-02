@@ -14,12 +14,9 @@ _language: ja
 
 以下のサンプルは、同じ `XamLinearGauge` でいくつかのプロパティを設定して全く異なるゲージにする方法を示します。
 
-<code-view style="height: 155px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-animation"
-           alt="{Platform} リニア ゲージの例"
-           github-src="gauges/linear-gauge/animation">
-</code-view>
+`sample="/gauges/linear-gauge/animation", height="155", alt="{Platform} リニア ゲージの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -27,10 +24,10 @@ _language: ja
 ## 依存関係
 {Platform} gauge コンポーネントをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGauges}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## モジュールの要件
@@ -82,9 +79,9 @@ ModuleManager.register(
 ```html
  <igx-linear-gauge width="700px"
                    height="30px"
-                   minimumValue = "5"
-                   maximumValue = "55"
-                   value = "43">
+                   minimumValue="5"
+                   maximumValue="55"
+                   value="43">
     <igx-linear-graph-range startValue="0"
                             endValue="15"
                             brush="red">
@@ -103,9 +100,9 @@ ModuleManager.register(
 ```tsx
  <IgrLinearGauge width="700px"
                    height="30px"
-                   minimumValue = {5}
-                   maximumValue = {55}
-                   value = {43}>
+                   minimumValue={5}
+                   maximumValue={55}
+                   value={43}>
     <IgrLinearGraphRange startValue={0}
                             endValue={15}
                             brush="red"/>
@@ -256,11 +253,8 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-needle"
-           github-src="gauges/linear-gauge/needle">
-</code-view>
+`sample="/gauges/linear-gauge/needle", height="125", alt="{Platform} linear gauge needle"`
+
 
 ## 範囲
 範囲はスケールで指定した値の範囲を強調表示する視覚的な要素です。その目的は、パフォーマンス バー メジャーの質的状態を視覚で伝えると同時に、その状態をレベルとして示すことにあります。
@@ -347,11 +341,8 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-ranges"
-           github-src="gauges/linear-gauge/ranges">
-</code-view>
+`sample="/gauges/linear-gauge/ranges", height="125", alt="{Platform} linear gauge ranges"`
+
 
 ## 目盛
 目盛は、リニア ゲージを読み取りやすくするために、目盛の間隔でスケールを分割して見せる役割を果たします。
@@ -437,11 +428,8 @@ ModuleManager.register(
 </IgbLinearGauge>
 ```
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-tickmarks"
-           github-src="gauges/linear-gauge/tickmarks">
-</code-view>
+`sample="/gauges/linear-gauge/tickmarks", height="125", alt="{Platform} linear gauge tickmarks"`
+
 
 ## ラベル
 ラベルはスケールのメジャーを示します。
@@ -500,11 +488,8 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-labels"
-           github-src="gauges/linear-gauge/labels">
-</code-view>
+`sample="/gauges/linear-gauge/labels", height="125", alt="{Platform} linear gauge labels"`
+
 
 ## バッキング
 バッキング要素はブレット グラフ コントロールの背景と境界線を表します。常に最初に描画される要素でラベルやメモリなどの残りの要素は互いにオーバーレイします。
@@ -562,11 +547,8 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-backing"
-           github-src="gauges/linear-gauge/backing">
-</code-view>
+`sample="/gauges/linear-gauge/backing", height="125", alt="{Platform} linear gauge backing"`
+
 
 ## スケール
 スケールはゲージで値の全範囲を強調表示する視覚的な要素です。外観やスケールの図形のカスタマイズ、更にスケールを反転 (`IsScaleInverted` プロパティを使用) させて、すべてのラベルを左から右ではなく、右から左へ描画することもできます。
@@ -633,11 +615,8 @@ ModuleManager.register(
 ```
 
 
-<code-view style="height: 125px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/gauges/linear-gauge-scale"
-           github-src="gauges/linear-gauge/scale">
-</code-view>
+`sample="/gauges/linear-gauge/scale", height="125", alt="{Platform} linear gauge scale"`
+
 
 ## まとめ
 上記すべてのコード スニペットを以下のコード ブロックにまとめています。プロジェクトに簡単にコピーしてブレットグラフのすべての機能を再現できます。

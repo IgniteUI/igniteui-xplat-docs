@@ -12,12 +12,9 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## {Platform} Excel ライブラリの例
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           alt="{Platform} Excel ライブラリの例"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} Excel ライブラリの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -25,10 +22,10 @@ Infragistics {Platform} Excel ライブラリは、`Workbook`、`Worksheet`、`C
 ## 依存関係
 excel パッケージをインストールするときに core パッケージもインストールする必要があります。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageExcel}
-</pre>
+```
 
 ## モジュールの要件
 
@@ -133,6 +130,7 @@ Web Assembly (WASM) Blazor プロジェクトを使用している場合は、�
 
 -  Microsoft Excel 2016
 
+```md
 > [!Note]
 > Excel ライブラリ は Excel Binary Workbook (.xlsb) フォーマットを現時点ではサポートしていません。
 
@@ -177,18 +175,15 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
 }
 ```
 
-> [!Note]
->For Angular
-><div class="divider--half"></div>
->
+<!--Angular -->
+
 ## ヒープの管理
->
->Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
->
->architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
->
+
+Excel Library のサイズに因り、ソースマップの生成を無効にすることを推奨します。
+
+architect => build => options から serve の options で `vendorSourceMap` オプションを設定して `angular.json` を変更します。
+
 ```ts
-...
     "architect": {
         "build": {
           "builder": "...",
@@ -213,8 +208,7 @@ private void SaveFile(byte[] bytes, string fileName, string mime)
         // ...
       }
 ```
->
-<!-- -->
+<!--end:Angular-->
 
 ## API リファレンス
 

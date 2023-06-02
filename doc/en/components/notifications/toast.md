@@ -7,19 +7,16 @@ mentionedTypes: ['Toast']
 
 # {Platform} Toast Overview
 
-The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.  
+The {Platform} Toast is a super lightweight and small pop-up component that is used for displaying a message content, notifying end-users about the status of a changed record. You can easily position and show {Platform} toast notifications at the bottom or at any other specified area of the screen. Or you can also dismiss them in a simple and easy way.
 
-The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others. 
+The {Platform} Toast component is primarily used for system messaging, push notifications, warning messages, and information. It cannot be dismissed by the user. This control has different features like animation effects, display time property to configure how long the toast component is visible, styling, and others.
 
 ## {Platform} Toast Example
 
-Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button. 
+Take a look at the simple Ignite UI for {Platform} Toast example below. The animated notification message pops up after clicking on the button.
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast Example"
-           github-src="notifications/toast/overview">
-</code-view>
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast Example"`
+
 
 <div class="divider--half"></div>
 
@@ -99,7 +96,7 @@ The simplest way to display the toast component is to use its `Show` method and 
 
     public void OnToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Show();
         }
@@ -116,13 +113,13 @@ The simplest way to display the toast component is to use its `Show` method and 
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onShowButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.show();
     }
 }
@@ -160,7 +157,7 @@ By default, the toast component is hidden automatically after a period specified
 
     public void OnToggleToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Toggle();
         }
@@ -168,7 +165,7 @@ By default, the toast component is hidden automatically after a period specified
 
     public void OnToggleKeepOpenButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.KeepOpen = !this.ToastRef.KeepOpen;
         }
@@ -176,7 +173,7 @@ By default, the toast component is hidden automatically after a period specified
 
     public void OnDisplayTimeButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.DisplayTime = 8000;
         }
@@ -201,36 +198,33 @@ By default, the toast component is hidden automatically after a period specified
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onToggleButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.toggle();
     }
 }
 
 public onKeepOpenButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.keepOpen = !this.toastRef.keepOpen;
     }
 }
 
 public onDisplayTimeButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.displayTime = 8000;
     }
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="{Platform} Toast Properties Example"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast Properties Example"`
+
+
 
 ## Styling
 
@@ -244,13 +238,7 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="{Platform} Toast Styling Example"
-           github-src="notifications/toast/styling">
-</code-view>
-
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast Styling Example"`
 
 <div class="divider--half"></div>
 

@@ -2,7 +2,8 @@
 title: {Platform} 展開パネル | 展開パネル | インフラジスティックス
 _description: 展開パネル コンポーネントは、縮小と展開の 2 つの状態を持つ簡単に構成可能な展開可能なコンポーネントを提供します。
 _keywords: {Platform} Expansion Panel, Infragistics, {Platform} 展開パネル, {ProductName}, インフラジスティックス
-mentionedTypes: ['ExpansionPanel']
+mentionedTypes: ['Infragistics.Controls.Layouts.Implementation.ExpansionPanel']
+namespace: Infragistics.Controls
 _language: ja
 ---
 
@@ -11,12 +12,9 @@ _language: ja
 
 ## {Platform} 展開パネルの例
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-usage"
-           alt="{Platform} 展開パネルの例"
-           github-src="layouts/expansion-panel/usage">
-</code-view>
+`sample="/layouts/expansion-panel/usage", height="320", alt="{Platform} 展開パネルの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -122,12 +120,9 @@ IgrExpansionPanelModule.register();
 
 <!-- end: React -->
 
-<code-view style="height: 320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-properties-and-events"
-           alt="{Platform} 展開パネル"
-           github-src="layouts/expansion-panel/properties-and-events">
-</code-view>
+`sample="/layouts/expansion-panel/properties-and-events", height="320", alt="{Platform} 展開パネル"`
+
+
 
 <div class="divider--half"></div>
 
@@ -140,12 +135,9 @@ IgrExpansionPanelModule.register();
 
 次のコードサンプルは、コンポーネントのボタンが右側に移動するように構成する方法を示しています。
 
-<code-view style="height: 460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-component-customization"
-           alt="{Platform} 展開パネルのカスタマイズ"
-           github-src="layouts/expansion-panel/component-customization">
-</code-view>
+`sample="/layouts/expansion-panel/component-customization", height="460", alt="{Platform} 展開パネルのカスタマイズ"`
+
+
 
 <div class="divider--half"></div>
 
@@ -164,13 +156,7 @@ IgrExpansionPanelModule.register();
 
 {ProductName} 展開パネル コンポーネントは、いくつかの CSS パーツ (`header`、`indicator`、`title`、`subtitle` および `content`) を公開して、スタイルを完全に制御できるようにします。
 
-<code-view style="height: 480px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/expansion-panel-styling"
-           alt="{Platform} 展開パネルのスタイル設定"
-           github-src="layouts/expansion-panel/styling">
-</code-view>
-
+`sample="/layouts/expansion-panel/styling", height="480", alt="{Platform} 展開パネルのスタイル設定"`
 
 <div class="divider"></div>
 

@@ -12,12 +12,9 @@ Multi-column headers allow you to have multiple levels of nested columns and col
 
 ## {Platform} {ComponentTitle} Collapsible Column Groups Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-collapsible-groups"
-           github-src="{ComponentSample}/column-collapsible-groups"
-           alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example">
-</code-view>
+`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} Collapsible Column Groups Overview Example"`
+
+
 
 ## Setup
 
@@ -244,7 +241,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -253,6 +250,7 @@ public indTemplate = (ctx: IgcCellTemplateContext) => {
 * [Column Moving](column-moving.md)
 * [Column Pinning](column-pinning.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

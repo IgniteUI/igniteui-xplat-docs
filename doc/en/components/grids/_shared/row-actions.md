@@ -129,12 +129,9 @@ These components expose templates giving flexibility for customization. For inst
 ```
 <!-- end: WebComponents -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-action-strip"
-           github-src="{ComponentSample}/action-strip"
-           alt="{Platform} {ComponentTitle} Action Strip Example" >
-</code-view>
+`sample="/{ComponentSample}/action-strip", height="600", alt="{Platform} {ComponentTitle} Action Strip Example"`
+
+
 
 <!-- Angular -->
 
@@ -150,8 +147,6 @@ For more detailed information regarding the Action Strip API, refer to the follo
 * `ActionStripComponent`
 
 Additional components and/or directives that can be used within the Action Strip:
-
-<!-- Angular -->
 
 * `GridActionsBaseDirective`
 * `DividerDirective`

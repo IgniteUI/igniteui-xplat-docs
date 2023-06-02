@@ -22,12 +22,9 @@ _language: ja
 ## {Platform} 周期表のバインディングの例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-periodic-table"
-           alt="{Platform} 周期表のバインディングの例"
-           github-src="grids/data-grid/type-periodic-table">
-</code-view>
+`sample="/grids/data-grid/type-periodic-table", height="600", alt="{Platform} 周期表のバインディングの例"`
+
+
 
 ## API リファレンス
 

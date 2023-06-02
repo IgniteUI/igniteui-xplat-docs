@@ -4,8 +4,8 @@ _description: 重要な UI 操作には {Platform} {ComponentTitle} を使用し
 _keywords: {Platform}, {ComponentTitle}, {ComponentTitle}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} ツールバー
@@ -22,13 +22,7 @@ namespace: Infragistics.Controls
 ## {Platform} ツール バー グリッドの例
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           github-src="{ComponentSample}/toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} ツール バーの例">
-</code-view>
-
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} ツール バーの例"`
 
 事前定義された `Actions` および `Title` UI コンポーネントが  `GridToolbar` 内に追加されます。これはすべて、対応するグリッド機能とのデフォルトのインタラクションを提供するツールバーを持つために必要です。
 
@@ -177,7 +171,7 @@ namespace: Infragistics.Controls
 ## 子グリッド付きのツールバー
 
 IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動作には特定の制限があるため、子グリッドのスコープでツールバーを使用する場合は注意が必要です。
-`igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ずツールバー自体で IgxGridToolbar ディレクティブを使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
+`igx-row-island` タグ内でツールバー コンポーネントを定義するときは、必ず IgxGridToolbar を使用し、提供されたグリッド インスタンスを入力プロパティとしてツールバー自体に渡すようにしてください。
 
 これにより、テンプレートのスコープ内に常に正しいグリッド インスタンスが含まれるようになります。
 
@@ -209,16 +203,13 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 以下にリストされているのは、ツールバーの主な機能と、それぞれのサンプル コードです。
 
-<code-view style="height:630px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
-           github-src="{ComponentSample}/toolbar-sample-2">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} ツールバー サンプル 2"`
+
 
 
 ### Title (タイトル)
 
-グリッドのツールバーのタイトルを設定するには、`GridToolbarTitleDirective` を使用します。
+グリッドのツールバーのタイトルを設定するには、`GridToolbarTitle` を使用します。
 
 ユーザーは、単純なテキストからより複雑なテンプレートまで、どんなものでも提供できます。
 
@@ -236,7 +227,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 
 ### 操作
 
-`GridToolbarTitleDirective` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
+`GridToolbarTitle` は、ユーザーが親グリッドに関連して操作 / インタラクションを配置できる特定のコンテナを公開します。
 ツールバーのタイトル部分と同様に、ユーザーは、デフォルトのツールバー インタラクション コンポーネントを含め、そのテンプレート部分内にどんなものでも提供できます。
 
 ```html
@@ -252,7 +243,7 @@ IgxHierarchicalGrid の子グリッドの実装方法と DI スコープの動�
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
@@ -311,7 +302,7 @@ constructor() {
 }
 ```
 
-デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* )外側のクリックで閉じる) インタラクションが有効になっています。
+デフォルトの overlaySettings は、*ConnectedPositionStrategy* と *Absolute* スクロール方法を使用しています。*modal* は false に設定されており、*close on escape* ([Esc] キーを押して閉じる) インタラクションと *close on outside click* (外側のクリックで閉じる) インタラクションが有効になっています。
 
 ### 列のピン固定
 
@@ -433,14 +424,12 @@ export class AppModule { ... }
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>
@@ -463,7 +452,7 @@ export class AppModule { ... }
             excel-text="Custom text for the excel export entry"
             csv-text="Custom text for the CSV export entry"
         </igc-grid-toolbar-exporter>
-    </igxc-grid-toolbar-actions>
+    </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
 
@@ -558,11 +547,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 以下のサンプルは、エクスポート ファイルをカスタマイズする方法を示します。
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
-           github-src="{ComponentSample}/toolbar-sample-3">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} ツールバー サンプル 3"`
+
 
 
 <!-- Angular -->
@@ -577,11 +563,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 370px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
-           github-src="{ComponentSample}/data-exporting-indicator">
-</code-view>
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+
 
 <!-- end: Angular -->
 
@@ -629,11 +612,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 
 以下のサンプルは、列ヘッダーをクリックして並べ替えセットをクリアするためのボタンをツールバーに追加する方法です。
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
-           github-src="{ComponentSample}/toolbar-sample-4">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} ツールバー サンプル 4"`
+
 
 <!-- Angular -->
 
@@ -728,7 +708,7 @@ $dark-input-group-theme: input-group-theme(
 ```
 
 > [!Note]
->コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除`する必要があります。
+>コンポーネントが [Emulated](../themes/styles.md#表示のカプセル化) ViewEncapsulation を使用している場合、`::ng-deep` を使用してこのカプセル化に`解除する`必要があります。
 
 ```scss
 :host {
@@ -746,11 +726,8 @@ $dark-input-group-theme: input-group-theme(
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
-           github-src="{ComponentSample}/toolbar-style">
-</code-view>
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+
 
 
 <div class="divider"></div>
@@ -761,14 +738,12 @@ $dark-input-group-theme: input-group-theme(
 
 以下は、Grid Toolbar サービスのその他の API です。
 
-* `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
 * `GridToolbarTitleDirective`
-
 
 * `{ComponentName}` イベント:
 * `ToolbarExporting`

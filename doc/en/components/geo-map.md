@@ -12,11 +12,8 @@ The {ProductName} map component allows you to display data that contains geograp
 
 The following sample demonstrates how display data in `XamGeographicMap` using `GeographicProportionalSymbolSeries` also known as Bubble Series.
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-scatter-bubble-series"
-           github-src="maps/geo-map/type-scatter-bubble-series">
-</code-view>
+`sample="/maps/geo-map/type-scatter-bubble-series", height="500", alt="{Platform} geo map type scatter bubble series"`
+
 
 <div class="divider--half"></div>
 
@@ -31,11 +28,11 @@ The map provides customizable navigation behaviors for navigating map content us
 
 The {Platform} geographic map component, you need to first install these packages:
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## Component Modules

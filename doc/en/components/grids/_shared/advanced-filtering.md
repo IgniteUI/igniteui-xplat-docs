@@ -14,13 +14,7 @@ The Advanced filtering provides a dialog which allows the creation of groups wit
 
 ## {Platform} {ComponentTitle} Advanced Filtering Example
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-options"
-           alt="{Platform} {ComponentTitle} Advanced Filtering Example"
-           github-src="{ComponentSample}/advanced-filtering-options">
-</code-view>
-
+`sample="/{ComponentSample}/advanced-filtering-options", height="530", alt="{Platform} {ComponentTitle} Advanced Filtering Example"`
 
 ## Interaction
 
@@ -103,36 +97,35 @@ ngAfterViewInit(): void {
 
 ```typescript
 connectedCallback(): void {
-    const tree = new FilteringExpressionsTree(FilteringLogic.And);
+    const tree = new IgcFilteringExpressionsTree(FilteringLogic.And);
     tree.filteringOperands.push({
-        fieldName: 'ID',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('contains'),
-        searchVal: 'a',
+        searchVal: 'cha',
         ignoreCase: true
     });
-    const subTree = new FilteringExpressionsTree(FilteringLogic.Or);
+    const subTree = new IgcFilteringExpressionsTree(FilteringLogic.Or);
     subTree.filteringOperands.push({
-        fieldName: 'ContactTitle',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('doesNotContain'),
         searchVal: 'b',
         ignoreCase: true
     });
     subTree.filteringOperands.push({
-        fieldName: 'CompanyName',
+        fieldName: 'ProductName',
         condition: IgcStringFilteringOperand.instance().condition('startsWith'),
-        searchVal: 'c',
+        searchVal: 'Chan',
         ignoreCase: true
     });
     tree.filteringOperands.push(subTree);
-
-    this.advancedFiltering.advancedFilteringExpressionsTree = tree;
+    grid.advancedFilteringExpressionsTree = tree;
 }
 ```
 
 In case you don't want to show the `{ComponentName}` toolbar, you could use the `OpenAdvancedFilteringDialog` and `CloseAdvancedFilteringDialog` methods to open and close the advanced filtering dialog programmatically.
 
-> [!Note]
->You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
+>
+> You can enable both the **QuickFilter**/**ExcelStyleFilter** and the advanced filtering user interfaces in the `{ComponentName}`. Both filtering user interfaces will work independently of one another. The final filtered result in the `{ComponentName}` is the intersection between the results of the two filters.
 
 <!-- Angular -->
 ## External Advanced Filtering
@@ -141,11 +134,8 @@ As you see in the demo above, the advanced filtering dialog is hosted in an over
 
 ### Demo
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-advanced-filtering"
-           github-src="{ComponentSample}/external-advanced-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-advanced-filtering", height="750", alt="{Platform} {ComponentTitle} external advanced filtering"`
+
 
 ### Usage
 
@@ -464,11 +454,8 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:530px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-advanced-filtering-style"
-           github-src="{ComponentSample}/advanced-filtering-style">
-</code-view>
+`sample="/{ComponentSample}/advanced-filtering-style", height="530", alt="{Platform} {ComponentTitle} advanced filtering style"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -482,7 +469,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Filtering](filtering.md)
 * [Excel Style Filtering](excel-style-filtering.md)
 * [Virtualization and Performance](virtualization.md)
@@ -493,6 +480,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -12,12 +12,9 @@ _language: ja
 ## {Platform} 地理ポリライン マップの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-type-shape-polyline-series"
-           alt="{Platform} シェイプ ポリライン シリーズの使用の例"
-           github-src="maps/geo-map/type-shape-polyline-series">
-</code-view>
+`sample="/maps/geo-map/type-shape-polyline-series", height="500", alt="{Platform} シェイプ ポリライン シリーズの使用の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -212,7 +209,6 @@ export class MapTypeShapePolylineSeriesComponent implements AfterViewInit {
         this.map.series.add(lineSeries);
     }
 }
-
 ```
 
 ```html

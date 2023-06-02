@@ -15,12 +15,9 @@ The `{ComponentName}` provides a convenient way to perform data manipulations th
 
 The following sample demonstrates how to enable row editing in the `{ComponentName}`. Changing a cell value and then clicking or navigating to another cell on the same row won't  update the row value until confirmed by using the **Done** button, or discarded by using **Cancel** button.
 
-<code-view style="height:550px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-options"
-            github-src="{ComponentSample}/row-editing-options"
-            alt="{Platform} {ComponentTitle} Editing Rows Example">
-</code-view>
+`sample="/{ComponentSample}/row-editing-options", height="550", alt="{Platform} {ComponentTitle} Editing Rows Example"`
+
+
 
 > [!Note]
 > When a row is in edit mode, then clicking on a cell on another row will act like the Done button is pressed - submit all the changes of the previous row. If the new cell that gets focus is editable, then the new row also enters edit mode, while if the cell is not editable, then only the previous row exits edit mode.
@@ -243,7 +240,9 @@ public rowEditTextTemplate = (ctx: IgcGridRowEditTextTemplateContext) => {
 
 Customizing the buttons of the row editing overlay also possible via templating.
 
+<!-- Angular -->
 If you want the buttons to be part of the keyboard navigation, then each on of them should have the `RowEditTabStopDirective`.
+<!-- end:Angular -->
 
  ```html
  <ng-template igxRowEditActions let-endRowEdit>
@@ -371,16 +370,15 @@ After we've defined our custom buttons, we can make use of the [button-theme]({e
 
 ```scss
 // custom.component.scss
-...
+// ...
 
 $button-theme: button-theme(
   $palette: $purple-palette
 );
 
-...
 .custom-buttons {
     @include button($button-theme);
-  }
+}
 ```
 
 We scope our `@include` statement in `.custom-buttons` so that it is only applied to the `Done`and `Cancel` buttons.
@@ -391,12 +389,9 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-editing-style"
-           github-src="{ComponentSample}/row-editing-style"
-           alt="{Platform} {ComponentTitle} Row Editing Styling Example">
-</code-view>
+`sample="/{ComponentSample}/row-editing-style", height="560", alt="{Platform} {ComponentTitle} Row Editing Styling Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -437,9 +432,11 @@ After styling the banner and buttons, we also define a custom style for [the cel
 
 <!-- Blazor -->
 
-
+<!-- ComponentStart:  Grid -->
 * [{ComponentTitle} Editing](editing.md)
-* [{ComponentTitle} Transactions](batch-editing.md)
+<!-- ComponentEnd:  Grid -->
+
+<!-- * [{ComponentTitle} Transactions](batch-editing.md) -->
 
 <!-- end: Blazor -->
 

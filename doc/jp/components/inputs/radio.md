@@ -13,11 +13,8 @@ _language: ja
 
 ## {ProductName} Radio の例
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/inputs/radio-group" alt="{Platform} Radio & Radio Group の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio & Radio Group の例"`
+
 
 <div class="divider--half"></div>
 
@@ -161,12 +158,9 @@ builder.Services.AddIgniteUIBlazor(
 <IgbRadio AriaLabelledBy="radio-label" />
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-label"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/label">
-</code-view>
+`sample="/inputs/radio/label", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### チェック済み
 
@@ -199,12 +193,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-group"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/group">
-</code-view>
+`sample="/inputs/radio/group", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### 無効
 
@@ -222,12 +213,9 @@ builder.Services.AddIgniteUIBlazor(
 <IgbRadio Invalid="true" />
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-invalid"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/invalid">
-</code-view>
+`sample="/inputs/radio/invalid", height="205", alt="{Platform} Radio の例"`
+
+
 
 ### オフ
 
@@ -260,12 +248,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-disabled"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/disabled">
-</code-view>
+`sample="/inputs/radio/disabled", height="100", alt="{Platform} Radio の例"`
+
+
 
 ### グループの配置
 
@@ -298,12 +283,9 @@ builder.Services.AddIgniteUIBlazor(
 </IgbRadioGroup>
 ```
 
-<code-view style="height: 60px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-alignment"
-           alt="{Platform} Radio の例"
-           github-src="inputs/radio/alignment">
-</code-view>
+`sample="/inputs/radio/alignment", height="60", alt="{Platform} Radio の例"`
+
+
 
 ### フォーム
 
@@ -311,28 +293,28 @@ builder.Services.AddIgniteUIBlazor(
 
 ```tsx
 <IgrRadioGroup>
-  <IgrRadio name="option1" value="apple"><span>Apple</span></IgrRadio>
-  <IgrRadio name="option2" value="banana"><span>Banana</span></IgrRadio>
-  <IgrRadio name="option3" value="Mango"><span>Mango</span></IgrRadio>
-  <IgrRadio name="option4" value="orange"><span>Orange</span></IgrRadio>
+  <IgrRadio name="fruit" value="apple"><span>Apple</span></IgrRadio>
+  <IgrRadio name="fruit" value="banana"><span>Banana</span></IgrRadio>
+  <IgrRadio name="fruit" value="Mango"><span>Mango</span></IgrRadio>
+  <IgrRadio name="fruit" value="orange"><span>Orange</span></IgrRadio>
 </IgrRadioGroup>
 ```
 
 ```html
 <igc-radio-group>
-  <igc-radio name="option1" value="apple">Apple</igc-radio>
-  <igc-radio name="option2" value="banana">Banana</igc-radio>
-  <igc-radio name="option4" value="mango">Mango</igc-radio>
-  <igc-radio name="option3" value="banana">Orange</igc-radio>
+  <igc-radio name="fruit" value="apple">Apple</igc-radio>
+  <igc-radio name="fruit" value="banana">Banana</igc-radio>
+  <igc-radio name="fruit" value="mango">Mango</igc-radio>
+  <igc-radio name="fruit" value="banana">Orange</igc-radio>
 </igc-radio-group>
 ```
 
 ```razor
 <IgbRadioGroup>
-    <IgbRadio Name="option1" Value="apple">Apple</IgbRadio>
-    <IgbRadio Name="option2" Value="banana">Banana</IgbRadio>
-    <IgbRadio Name="option3" Value="mango">Mango</IgbRadio>
-    <IgbRadio Name="option4" Value="orange">Orange</IgbRadio>
+    <IgbRadio Name="fruit" Value="apple">Apple</IgbRadio>
+    <IgbRadio Name="fruit" Value="banana">Banana</IgbRadio>
+    <IgbRadio Name="fruit" Value="mango">Mango</IgbRadio>
+    <IgbRadio Name="fruit" Value="orange">Orange</IgbRadio>
 </IgbRadioGroup>
 ```
 
@@ -352,12 +334,9 @@ igc-radio::part(control) {
 }
 ```
 
-<code-view style="height: 205px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/radio-styling"
-           alt="{Platform} Radio スタイル設定"
-           github-src="inputs/radio/styling">
-</code-view>
+`sample="/inputs/radio/styling", height="205", alt="{Platform} Radio スタイル設定"`
+
+
 
 <div class="divider--half"></div>
 

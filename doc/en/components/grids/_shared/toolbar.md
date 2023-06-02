@@ -21,13 +21,7 @@ or just any other custom content. The toolbar and the predefined UI components s
 ## {Platform} Toolbar Grid Example
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-1"
-           github-src="{ComponentSample}/toolbar-sample-1"
-           alt="{Platform} {ComponentTitle} Toolbar Example">
-</code-view>
-
+`sample="/{ComponentSample}/toolbar-sample-1", height="420", alt="{Platform} {ComponentTitle} Toolbar Example"`
 
 The predefined `Actions` and `Title` UI components are added inside the `GridToolbar` and this is all needed to have a toolbar providing default interactions with the corresponding Grid features:
 
@@ -176,8 +170,7 @@ For a comprehensive look over each of the default UI components, continue readin
 ## Toolbar with Child Grids
 
 Due to certain limitations in how the child grids of an IgxHierarchicalGrid are implemented and how DI scope works, there is a caveat when
-using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure
-to use the IgxGridToolbar directive on the toolbar itself and pass the provided grid instance as an input property to the toolbar itself.
+using the toolbar in the scope of child grids. When defining a toolbar component inside the `igx-row-island` tags, always make sure to use the IgxGridToolbar and pass the provided grid instance as an input property to the toolbar itself.
 This will make sure you always have the correct grid instance in the scope of your template:
 
 ```html
@@ -208,16 +201,13 @@ These features can be enabled independently from each other by following a patte
 
 Listed below are the main features of the toolbar with example code for each of them.
 
-<code-view style="height:630px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-2"
-           github-src="{ComponentSample}/toolbar-sample-2">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-2", height="630", alt="{Platform} {ComponentTitle} toolbar sample 2"`
+
 
 
 ### Title
 
-Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitleDirective`.
+Setting a title for the toolbar in your grid is achieved by using the `GridToolbarTitle`.
 
 Users can provide anything from simple text to more involved templates.
 
@@ -235,7 +225,8 @@ Users can provide anything from simple text to more involved templates.
 
 ### Actions
 
-The `GridToolbarTitleDirective` exposes a container where users can place actions/interactions in relation to the parent grid.
+
+The `GridToolbarTitle` is where users can place actions/interactions in relation to the parent grid.
 As with the title portion of the toolbar, users can provide anything inside that template part, including the default
 toolbar interaction components.
 
@@ -252,7 +243,7 @@ toolbar interaction components.
 ```html
 <igc-grid-toolbar>
     <igc-grid-toolbar-actions>
-        ...
+    <!-- ... -->
     </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
@@ -435,14 +426,12 @@ Here is a snippet showing some of the options which can be customized through th
 ```html
 <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
+        <!-- exportCSV enables the csv export entry in the dropdown UI -->
+        <!-- exportExcel enables the excel export entry in the dropdown UI -->
         <igx-grid-toolbar-exporter
-            <!-- If active, enables the csv export entry in the dropdown UI -->
             [exportCSV]="csvExportEnabled"
-            <!-- If active, enables the excel export entry in the dropdown UI -->
             [exportExcel]="excelExportEnabled"
-            <!-- The name of the generated export file without the file extension -->
-            filename="exported_data"
-        >
+            filename="exported_data">
             Custom text for the exporter button
             <span excelText>Custom text for the excel export entry</span>
             <span csvText>Custom text for the CSV export entry</span>
@@ -465,7 +454,7 @@ Here is a snippet showing some of the options which can be customized through th
             excel-text="Custom text for the excel export entry"
             csv-text="Custom text for the CSV export entry"
         </igc-grid-toolbar-exporter>
-    </igxc-grid-toolbar-actions>
+    </igc-grid-toolbar-actions>
 </igc-grid-toolbar>
 ```
 
@@ -560,11 +549,8 @@ configureExport(args: IGridToolbarExportEventArgs) {
 The following sample demonstrates how to customize the exported files:
 
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-3"
-           github-src="{ComponentSample}/toolbar-sample-3">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-3", height="420", alt="{Platform} {ComponentTitle} toolbar sample 3"`
+
 
 
 <!-- Angular -->
@@ -579,11 +565,8 @@ The sample belows uses has significant amount of data, in order to increase the 
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height: 370px;"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-exporting-indicator"
-           github-src="{ComponentSample}/data-exporting-indicator">
-</code-view>
+`sample="/{ComponentSample}/data-exporting-indicator", height="370", alt="{Platform} {ComponentTitle} data exporting indicator"`
+
 
 <!-- end: Angular -->
 
@@ -631,11 +614,8 @@ Here is a sample snippet:
 
 The following sample demonstrates how to add an additional button to the toolbar to clear the sorting set by clicking on the columns' headers:
 
-<code-view style="height:420px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-sample-4"
-           github-src="{ComponentSample}/toolbar-sample-4">
-</code-view>
+`sample="/{ComponentSample}/toolbar-sample-4", height="420", alt="{Platform} {ComponentTitle} toolbar sample 4"`
+
 
 <!-- Angular -->
 
@@ -748,11 +728,8 @@ The last step is to **include** the newly created themes.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-toolbar-style"
-           github-src="{ComponentSample}/toolbar-style">
-</code-view>
+`sample="/{ComponentSample}/toolbar-style", height="510", alt="{Platform} {ComponentTitle} toolbar style"`
+
 
 
 <div class="divider"></div>
@@ -763,14 +740,12 @@ The last step is to **include** the newly created themes.
 
 The Grid Toolbar service has a few more APIs to explore, which are listed below.
 
-* `GridToolbarActionsDirective`
 * `GridToolbarAdvancedFilteringComponent`
 * `GridToolbar`
 * `GridToolbarExporter`
 * `GridToolbarHiding`
 * `GridToolbarPinning`
 * `GridToolbarTitleDirective`
-
 
 * `{ComponentName}` Events:
 * `ToolbarExporting`

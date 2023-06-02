@@ -15,13 +15,7 @@ The {Platform} `{ComponentName}` search enables the process of finding values in
 
 The following example represents `{ComponentName}` with search input box that allows searching in all columns and rows, as well as specific filtering options for each column.
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
-           github-src="{ComponentSample}/data-searching"
-           alt="{Platform} {ComponentTitle} Search Example">
-</code-view>
-
+`sample="/{ComponentSample}/data-searching", height="600", alt="{Platform} {ComponentTitle} Search Example"`
 
 ## {Platform} Search Usage
 
@@ -567,10 +561,11 @@ We will wrap all of our components inside an [InputGroup](../input-group.md). On
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+    <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {
@@ -848,7 +843,7 @@ In this article we implemented our own search bar for the `{ComponentName}` with
 `Column` properties:
 -   `Searchable`
 
-Additional components and/or directives with relative APIs that were used:
+Additional components with relative APIs that were used:
 
 <!-- Angular -->
 
@@ -870,7 +865,7 @@ Additional components and/or directives with relative APIs that were used:
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Filtering](filtering.md)
 * [Paging](paging.md)
@@ -880,6 +875,7 @@ Additional components and/or directives with relative APIs that were used:
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

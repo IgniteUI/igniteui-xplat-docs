@@ -13,12 +13,8 @@ The {ProductName} ComboBox component provides a list of options from which users
 
 ## {Platform} ComboBox Example
 
-<code-view style="height:320px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-overview"
-           alt="{Platform} Combo Example"
-           github-src="grids/combo/overview">
-</code-view>
+`sample="/inputs/combo/overview", height="400", alt="{Platform} Combo Example"`
+
 
 <div class="divider--half"></div>
 
@@ -92,7 +88,33 @@ export class Sample {
 ```
 
 ```razor
-<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Cities" />
+<IgbCombo Id="basic-combo" DisplayKey="name" ValueKey="id" Data="Data" />
+
+@code {
+    private class City {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+    }
+
+    private List<City> Data = new List<City> {
+        new City {
+            Id = "UK01",
+            Name = "London",
+            Country = "United Kingdom",
+        },
+        new City {
+            Id = "BG01",
+            Name = "Sofia",
+            Country = "Bulgaria",
+        },
+        new City {
+            Id = "US01",
+            Name = "New York",
+            Country = "United States",
+        },
+    };
+}
 ```
 
 ### Data value and display properties
@@ -120,11 +142,53 @@ combo.select(['BG01', 'BG02', 'BG03', 'BG04']);
 combo.deselect(['BG01', 'BG02', 'BG03', 'BG04']);
 ```
 
+```razor
+<IgbCombo
+    @ref="Combo"
+    Label="Cities"
+    Placeholder="Pick a city"
+    Data="Data"
+    ValueKey="Id"
+    DisplayKey="Name">
+</IgbCombo>
+
+@code {
+    private List<City> Data;
+    private IgbCombo Combo;
+    private object[] Cities;
+
+    protected override void OnInitialized() {
+        this.Data = SampleData.Cities;
+        this.Cities = new object[] { "UK01", "UK02", "UK03", "UK04", "UK05" };
+    }
+
+    public void SelectCities() {
+        this.Combo.Select(Cities);
+    }
+
+    public void DeselectCities() {
+        this.Combo.Deselect(Cities);
+    }
+}
+```
+
 #### Select/deselect all items:
 ```ts
 // Select/deselect all items
 combo.select();
 combo.deselect();
+```
+
+```razor
+@code {
+    public void SelectAll() {
+        this.Combo.Select(new object[] {});
+    }
+
+    public void DeselectAll() {
+        this.Combo.Deselect(new object[] {});
+    }
+}
 ```
 
 If the `ValueKey` property is omitted, you will have to list the items you wish to select/deselect as objects references:
@@ -135,19 +199,16 @@ combo.select([cities[1], cities[5]]);
 combo.deselect([cities[1], cities[5]]);
 ```
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-selection"
-           alt="{Platform} Combo Selection Example"
-           github-src="grids/combo/selection">
-</code-view>
+`sample="/inputs/combo/selection", height="380", alt="{Platform} Combo Selection Example"`
+
+
 
 ### Validation
 
 The {ProductName} Combo component supports most of the `Input` properties, such as `Required`, `Disabled`, `Autofocus`, `Invalid`, etc. The component also exposes two methods bound to its validation:
 
-- reportValidity() - checks for validity and returns true if the component satisfies the validation constraints.
-- checkValidity() - a wrapper around reportValidity to comply with the native input API.
+- `reportValidity` - checks for validity and returns true if the component satisfies the validation constraints.
+- `checkValidity` - a wrapper around reportValidity to comply with the native input API.
 
 ## Keyboard Navigation
 
@@ -195,12 +256,9 @@ You can change the appearance of the {ProductName} `Combo` component and its ite
 | `footer`             | The container holding the footer content.                                       |
 | `empty`              | The container holding the empty content.                                        |
 
-<code-view style="height: 380px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/combo-styling"
-           alt="{Platform} Combo Styling Example"
-           github-src="grids/combo/styling">
-</code-view>
+`sample="/inputs/combo/styling", height="400", alt="{Platform} Combo Styling Example"`
+
+
 
 ## API Reference
 

@@ -13,12 +13,9 @@ The Form Component in {Platform} is used for setting up a contact form and/or a 
 
 The following example represents `Form` that has some inputs, buttons and a checkbox inside.
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="{Platform} Form Example"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
+
+
 
 ## Usage
 
@@ -74,12 +71,9 @@ You will also need to link an additional CSS file to apply the styling to the `F
 
 The simplest way to start using the `Form` is as follows:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/form-overview"
-           alt="{Platform} Form Example"
-           github-src="inputs/form/overview">
-</code-view>
+`sample="/inputs/form/overview", height="300", alt="{Platform} Form Example"`
+
+
 
 Form data is collected for the following components:
 - `Checkbox`
@@ -124,10 +118,10 @@ The Form component exposes the following methods:
 
 | Method			| Description     			|
 | ------------- 	|:-------------:			|
-|`submit`|Submits the form data.|
-|`reset`|Resets the form data.|
-|`getFormData`|Collects the form data and returns a single FormData object.|
-|`reportValidity`|Returns whether the element's child controls satisfy their validation constraints.|
+| `Submit` | Submits the form data.|
+| `Reset` | Resets the form data.|
+| `GetFormData` | Collects the form data and returns a single FormData object.|
+| `ReportValidity` | Returns whether the element's child controls satisfy their validation constraints.|
 
 <div class="divider"></div>
 

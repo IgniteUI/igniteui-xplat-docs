@@ -25,13 +25,7 @@ The sample below demonstrates the three types of `{ComponentName}`'s **row selec
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-mode"
-           github-src="{ComponentSample}/row-selection-mode"
-           alt="{Platform} {ComponentTitle} Row Selection Example">
-</code-view>
-
+`sample="/{ComponentSample}/row-selection-mode", height="700", alt="{Platform} {ComponentTitle} Row Selection Example"`
 
 
 ## Setup
@@ -338,7 +332,6 @@ constructor() {
 public handleRowSelectionChange(args) {
     args.cancel = true; // this will cancel the row selection
 }
-
 ```
 
 ```razor
@@ -580,12 +573,9 @@ The `headContext.selectAll()` and `headContext.deselectAll()` methods are expose
 
 This demo shows the usage of custom header and row selectors. The latter uses `RowContext.Index` to display row numbers and an `Checkbox` bound to `RowContext.Selected`.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
-           github-src="{ComponentSample}/row-selection-template-numbers"
-           alt="{Platform} {ComponentTitle} Selection Template Numbering Example">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-numbers", height="550", alt="{Platform} {ComponentTitle} Selection Template Numbering Example"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -596,11 +586,8 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
-           github-src="{ComponentSample}/row-selection-template-excel"
-           alt="{Platform} {ComponentTitle} Selection Template Excel Example">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} Selection Template Excel Example"`
+
 
 <!-- end: Angular -->
 
@@ -610,12 +597,9 @@ This demo uses custom templates to resemble Excel-like header and row selectors.
 
 This demo prevents some rows from being selected using the `RowSelectionChanging` event and a custom template with disabled checkbox for non-selectable rows.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-row-selectors"
-           github-src="{ComponentSample}/conditional-row-selectors"
-           alt="{Platform} {ComponentTitle} Conditional Row Selectors Example">
-</code-view>
+`sample="/{ComponentSample}/conditional-row-selectors", height="550", alt="{Platform} {ComponentTitle} Conditional Row Selectors Example"`
+
+
 
 ## API References
 
@@ -625,7 +609,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Cell selection](cell-selection.md)
 * [Paging](paging.md)
@@ -636,7 +620,7 @@ This demo prevents some rows from being selected using the `RowSelectionChanging
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
-
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

@@ -14,12 +14,7 @@ namespace: Infragistics.Controls
 
 In this example, you can see how users can manipulate hierarchical or flat data. We have included filtering and sorting options, pinning and hiding, row selection, export to excel and csv.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{TreeGridSample}-overview"
-           github-src="{TreeGridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{TreeGridSample}/overview", height="700", alt="{Platform} grid example"`
 
 <div class="divider--half"></div>
 
@@ -101,9 +96,9 @@ import { IgxTreeGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxTreeGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -149,9 +144,6 @@ In order to achieve this, the tree grid provides us with a couple of ways to def
         this._bind();
     }
 ```
-
-
-
 ### Tree Cells
 
 Regardless of which option is used for building the tree grid's hierarchy (child collection or primary and foreign keys), the tree grid's rows are constructed of two types of cells:
@@ -191,10 +183,10 @@ const EMPLOYEE_DATA = [
                 Age: 29,
                 Employees: []
             },
-            ...
+            // ...
         ]
     },
-    ...
+    // ...
 ]
 ```
 
@@ -243,7 +235,10 @@ The indentation of the **tree cells** persists across other tree grid features l
 <!-- WebComponents -->
 ## {Platform} Tree Grid Styling Configuration
 
-In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md). In case you would like to change the header background and text color you need to set a class for the tree grid first:
+
+<!-- In addition to the predefined themes, the tree grid could be further customized by setting some of the available [CSS properties](../theming.md).  -->
+
+In case you would like to change the header background and text color you need to set a class for the tree grid first:
 
 ```typescript
 <igc-tree-grid class="tree-grid">

@@ -13,15 +13,11 @@ _language: ja
 
 ## {Platform} ヒート画像の表示の例
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-display-heat-imagery"
-           alt="{Platform} ヒート画像の表示の例"
-           github-src="maps/geo-map/display-heat-imagery">
-</code-view>
+`sample="/maps/geo-map/display-heat-imagery", height="500", alt="{Platform} ヒート画像の表示の例"`
+
+
 
 <div class="divider--half"></div>
-
 
 `ShapefileConverter` がそのシェイプ ファイルを読み込むと、そのデータを ShapeFileRecord オブジェクトに変換します。これらのオブジェクトは、`ShapefileConverter` の `GetPointData()` メソッドから取得でき、`TileGenerator` プロパティに割り当てられた `HeatTileGenerator` で `TileGeneratorMapImagery` オブジェクトを使用してヒートマップを作成するために使用できます。この `TileGeneratorMapImagery` は、`TileImagery` ソースとして地理タイルシリーズで使用できます。
 
@@ -60,7 +56,7 @@ let worker: Worker = self as any;
 worker.onmessage = HeatTileGeneratorWebWorker.onmessage;
 HeatTileGeneratorWebWorker.postmessage = postMessageFunction;
 HeatTileGeneratorWebWorker.start();
-function postMessageFunction(){
+function postMessageFunction() {
     self.postMessage.apply(self, Array.prototype.slice.call(arguments));
 }
 export default {} as typeof Worker & (new () => Worker);
@@ -75,7 +71,7 @@ let worker: Worker = self as any;
 worker.onmessage = HeatTileGeneratorWebWorker.onmessage;
 HeatTileGeneratorWebWorker.postmessage = postMessageFunction;
 HeatTileGeneratorWebWorker.start();
-function postMessageFunction(){
+function postMessageFunction() {
     self.postMessage.apply(self, Array.prototype.slice.call(arguments));
 }
 export default {} as typeof Worker & (new () => Worker);
@@ -96,8 +92,7 @@ import { IgrGeographicTileSeries } from 'igniteui-react-maps';
 import { IgrDataChartInteractivityModule } from 'igniteui-react-charts';
 import { IgrTileGeneratorMapImagery } from 'igniteui-react-maps';
 import { IgrShapeDataSource } from 'igniteui-react-core';
-...
-
+// ...
 IgrDataChartInteractivityModule.register();
 IgrGeographicMapModule.register();
 ```
@@ -281,7 +276,6 @@ public onDataLoaded(sds: IgrShapeDataSource, e: any) {
         name="heatTiles"
         tileImagery={this.state.tileImagery} />
 </IgrGeographicMap>
-
 ```
 
 ```ts

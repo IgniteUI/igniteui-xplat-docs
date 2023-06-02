@@ -12,12 +12,9 @@ With the {ProductName} map component, you can plot geographic data loaded from v
 ## {Platform} Binding CSV Files with Geographic Locations Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
-           alt="{Platform} Binding CSV Files with Geographic Locations Example"
-           github-src="maps/geo-map/binding-data-csv">
-</code-view>
+`sample="/maps/geo-map/binding-data-csv", height="500", alt="{Platform} Binding CSV Files with Geographic Locations Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -109,7 +106,6 @@ public onDataLoaded(csvData: string) {
     // adding symbol series to the geographic amp
     this.geoMap.series.add(geoSeries);
 }
-
 ```
 
 ```ts
@@ -180,7 +176,6 @@ export class MapBindingDataCsvComponent implements AfterViewInit {
         this.map.series.add(geoSeries);
     }
 }
-
 ```
 
 ```html

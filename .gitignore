@@ -5,11 +5,14 @@ npm-debug.log
 .DS_Store
 dist
 dist_BK
-test
 src/**/*.js
 src/**/*.js.map
+test/**/*.js
+test/**/*.js.map
 
 doc/**/obsolete
+
+samples-*.json
 
 # excluding auto-generated files:
 docfx/**/components/toc_*.json

@@ -21,12 +21,9 @@ Let's dive deeper into each of these options.
 
 The sample below demonstrates the three types of `{ComponentName}`'s **cell selection** behavior. Use the buttons below to enable each of the available selection modes. A brief description will be provided on each button interaction through a snackbar message box.
 
-<code-view style="height:750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-cell-selection-mode"
-           github-src="{ComponentSample}/cell-selection-mode"
-           alt="{Platform} {ComponentTitle} Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/cell-selection-mode", height="750", alt="{Platform} {ComponentTitle} Cell Selection Example"`
+
+
 
 ## Selection Types
 
@@ -50,12 +47,9 @@ How to select cells:
 
 <!-- TODO sample does not load any data in Blazor -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-mode"
-           github-src="{ComponentSample}/multi-cell-selection-mode"
-           alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-mode", height="700", alt="{Platform} {ComponentTitle} Multi Cell Selection Example"`
+
+
 
 <!-- ComponentEnd: Grid, TreeGrid -->
 
@@ -232,12 +226,9 @@ Afterwards, all we need to do is include the mixin in our component's style (cou
 With the custom theme applied, the selected grid cells are highlighted with our selected colors:
 
 ### Demo
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-cell-selection-style"
-           github-src="{ComponentSample}/multi-cell-selection-style"
-           alt="{Platform} {ComponentTitle} Multi Cell Selection Example">
-</code-view>
+`sample="/{ComponentSample}/multi-cell-selection-style", height="620", alt="{Platform} {ComponentTitle} Multi Cell Selection Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -261,7 +252,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Selection](selection.md)
 * [Row Selection](row-selection.md)
 * [Filtering](filtering.md)
@@ -271,6 +262,7 @@ With the custom theme applied, the selected grid cells are highlighted with our 
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Virtualization and Performance](virtualization.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

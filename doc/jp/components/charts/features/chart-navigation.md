@@ -13,12 +13,9 @@ _language: ja
 
 次の例は、使用可能なすべてのパンやズームのオプションを示しています。ボタンを使用して例を操作したり、ドロップダウンまたはチェックボックスを使用して目的のオプションを選択したりできます。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-chart-navigation"
-           alt="{Platform} ナビゲーションの例"
-           github-src="charts/data-chart/chart-navigation">
-</code-view>
+`sample="/charts/data-chart/chart-navigation", height="600", alt="{Platform} ナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -63,12 +60,9 @@ _language: ja
 
 次の例は、スクロールバーを有効にする方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/financial-chart-scrollbars"
-           alt="{Platform} ナビゲーションの例"
-           github-src="charts/financial-chart/scrollbars">
-</code-view>
+`sample="/charts/financial-chart/scrollbars", height="600", alt="{Platform} ナビゲーションの例"`
+
+
 
 <div class="divider--half"></div>
 

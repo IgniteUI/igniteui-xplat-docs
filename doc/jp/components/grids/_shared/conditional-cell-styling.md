@@ -4,8 +4,8 @@ _description: ユーザーが異なるセルをすばやく識別できるよう
 _keywords: conditional styling, {Platform}, {ProductName}, Infragistics, 条件付きスタイル設定, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の条件付きセルのスタイル設定
@@ -111,12 +111,9 @@ public rowClasses(args: any) {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-classes"
-           github-src="{ComponentSample}/row-classes" >
+`sample="/{ComponentSample}/row-classes", height="600", alt="{Platform} {ComponentTitle} row classes"`
 
-</code-view>
+
 
 <!-- end: Angular -->
 
@@ -290,11 +287,8 @@ constructor() {
 
 ### デモ
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-styles"
-           github-src="{ComponentSample}/row-styles" >
-</code-view>
+`sample="/{ComponentSample}/row-styles", height="620", alt="{Platform} {ComponentTitle} row styles"`
+
 
 ## {ComponentTitle} 条件付きセルのスタイル設定
 
@@ -496,11 +490,8 @@ Add hierarchical grid example
 
 ### デモ
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-1"
-           github-src="{ComponentSample}/conditional-cell-style-1" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-1", height="600", alt="{Platform} {ComponentTitle} conditional cell style 1"`
+
 
 - `Column` 入力を使用して、キーがスタイル プロパティであり、値が評価用の式であるオブジェクト リテラルを受け取る `CellStyles`。
 
@@ -702,11 +693,8 @@ constructor() {
 
 ### デモ
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-cell-style-2"
-           github-src="{ComponentSample}/conditional-cell-style-2" >
-</code-view>
+`sample="/{ComponentSample}/conditional-cell-style-2", height="620", alt="{Platform} {ComponentTitle} conditional cell style 2"`
+
 
 <!-- Angular -->
 
@@ -726,8 +714,8 @@ public backgroundClasses = {
 editDone(evt) {
     this.backgroundClasses = {...this.backgroundClasses};
 }
-
 ```
+
 ```html
 <igx-grid #grid1 [data]="data" height="500px" width="100%" (onCellEdit)="editDone($event)">
   <igx-column field="Col1" dataType="number" [cellClasses]="backgroundClasses"></igx-column>

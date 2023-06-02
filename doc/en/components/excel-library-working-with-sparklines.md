@@ -11,12 +11,9 @@ The Infragistics {Platform} Excel Library has support for adding sparklines to a
 ## {Platform} Working with Sparklines Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-sparklines"
-           alt="{Platform} Working with Sparklines Example"
-           github-src="excel/excel-library/working-with-sparklines">
-</code-view>
+`sample="/excel/excel-library/working-with-sparklines", height="500", alt="{Platform} Working with Sparklines Example"`
+
+
 
 <div class="divider--half"></div>
 

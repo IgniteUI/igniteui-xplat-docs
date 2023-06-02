@@ -15,12 +15,9 @@ _language: ja
 ## {Platform} Grid マスターと詳細の例
 
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-grid-master-detail"
-           github-src="{GridSample}/grid-master-detail"
-           alt="{Platform} {ComponentTitle} マスターと詳細の例">
-</code-view>
+`sample="/{GridSample}/master-detail", height="600", alt="{Platform} {ComponentTitle} マスターと詳細の例"`
+
+
 
 ## 構成
 

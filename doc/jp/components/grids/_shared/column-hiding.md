@@ -4,8 +4,8 @@ _description: ユーザーが Ignite Material UI テーブルの UI で列の表
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の列非表示
@@ -18,12 +18,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 列非表示の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-toolbar"
-           github-src="{ComponentSample}/column-hiding-toolbar"
-           alt="{Platform} {ComponentTitle} 列非表示の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-toolbar", height="600", alt="{Platform} {ComponentTitle} 列非表示の例"`
+
+
 
 ## {ComponentTitle} のセットアップ
 
@@ -83,6 +80,7 @@ namespace: Infragistics.Controls
 
 これには、`{ComponentName}` 内に `GridToolbarActions` と `GridToolbarHiding` の両方を設定することだけです。ツールバーにタイトルを追加するには、`GridToolbarTitle` を設定し、{ComponentTitle} のラッパーにカスタム スタイルを設定します。
 
+<!-- Angular -->
 ```html
 <div class="grid__wrapper">
     <{ComponentSelector} [data]="localdata">
@@ -110,19 +108,54 @@ namespace: Infragistics.Controls
 </div>
 ```
 
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 `{ComponentName}` にはツールバーの列非表示 UI に便利なプロパティがあります。
@@ -146,29 +179,65 @@ namespace: Infragistics.Controls
 
 ```razor
 <div class="grid__wrapper">
-    <{ComponentSelector} Data=northwindEmployees>
+    <IgbGrid Data=northwindEmployees>
         <IgbGridToolbar>
             <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
             <IgbGridToolbarActions>
                 <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
             </IgbGridToolbarActions>
        </IgbGridToolbar>
-    </{ComponentSelector}>
+    </IgbGrid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```razor
+<div class="treeGrid__wrapper">
+    <IgbTreeGrid Data=northwindEmployees>
+        <IgbGridToolbar>
+            <IgbGridToolbarTitle>Employees</IgbGridToolbarTitle>
+            <IgbGridToolbarActions>
+                <IgbGridToolbarHiding @ref=HidingAction Title="Column Hiding"></IgbGridToolbarHiding>
+            </IgbGridToolbarActions>
+       </IgbGridToolbar>
+    </IgbTreeGrid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- WebComponents -->
 ```html
 <div class="grid__wrapper">
-    <{ComponentSelector} id="grid">
+    <igc-grid id="grid">
         <igc-grid-toolbar>
             <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
             <igc-grid-toolbar-actions>
                 <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
             </igc-grid-toolbar-actions>
         </igc-grid-toolbar>
-    </{ComponentSelector}>
+    </igc-grid>
 </div>
 ```
+
+<!-- ComponentStart: TreeGrid -->
+
+```html
+<div class="treeGrid__wrapper">
+    <igc-tree-grid id="grid">
+        <igc-grid-toolbar>
+            <igc-grid-toolbar-title>Employees</igc-grid-toolbar-title>
+            <igc-grid-toolbar-actions>
+                <igc-grid-toolbar-hiding id="hidingAction" title="Column Hiding"></igc-grid-toolbar-hiding>
+            </igc-grid-toolbar-actions>
+        </igc-grid-toolbar>
+    </igc-tree-grid>
+</div>
+```
+
+<!-- ComponentEnd: TreeGrid -->
+
 <!-- end: WebComponents -->
 
 <!-- Angular -->
@@ -351,12 +420,9 @@ export class AppModule {}
 
 列非表示 UI コンポーネントは以下のようになります。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-custom-column-hiding"
-           github-src="{ComponentSample}/custom-column-hiding"
-           alt="{Platform} {ComponentTitle} カスタム列非表示の例" >
-</code-view>
+`sample="/{ComponentSample}/custom-column-hiding", height="600", alt="{Platform} {ComponentTitle} カスタム列非表示の例"`
+
+
 
 ## スタイル設定
 
@@ -464,10 +530,10 @@ $custom-column-actions-schema: extend($_dark-column-actions,
 $custom-button-schema: extend($_dark-button,
     (
         flat-text-color:(
-           color:("secondary", 500)
+           color: ("secondary", 500)
         ),
         disabled-color:(
-           color:("primary", 700)
+           color: ("primary", 700)
         )
     )
 );
@@ -499,12 +565,9 @@ $custom-button: button-theme(
 
 ### デモ
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-hiding-style"
-            github-src="{ComponentSample}/column-hiding-style"
-            alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例">
-</code-view>
+`sample="/{ComponentSample}/column-hiding-style", height="600", alt="{Platform} {ComponentTitle} 列非表示のスタイル設定の例"`
+
+
 
 <!-- end: Angular -->
 
@@ -512,20 +575,21 @@ $custom-button: button-theme(
 
 <!-- Angular -->
 このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法や別のコンポーネントとして定義する方法について説明しました。その他の列順序から選択する機能を提供する UI を実装し、カスタム タイトルおよびフィルター プロンプト テキストを設定しました。[**IgxRadio**](../radio-button.md) ボタンなどその他の {ProductName} コンポーネントも使用しています。
-<!-- end: Angular -->
 
-<!-- Blazor -->
-このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。
-<!-- end: Blazor -->
-
-以下は、列非表示 UI のその他の API です。
-
-* `ColumnActions`
 
 その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
 
-`{ComponentName}` プロパティ:
-* `HiddenColumnsCount`
+* `ColumnActionsComponent`
+<!-- end: Angular -->
+
+<!-- Blazor, WebComponents -->
+このトピックでは、`{ComponentName}` のツールバーの定義済みの列非表示 UI の使用方法について学びました。以下は、列非表示 UI のその他の API です。
+
+* `ColumnActionsComponent`
+
+その他のコンポーネント (またはそのいずれか) で使用した API:
+
+<!-- end: Blazor, WebComponents -->
 
 `Column` プロパティ:
 * `DisableHiding`
@@ -540,6 +604,9 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 `GridToolbar` メソッド:
+* `GridToolbarHiding`
+* `GridToolbarActions`
+* `GridToolbarTitle`
 
 `{ComponentName}` イベント:
 * `ColumnVisibilityChanged`
@@ -551,7 +618,6 @@ $custom-button: button-theme(
 <!-- end: Angular -->
 
 ## その他のリソース
-
 
 * [仮想化とパフォーマンス](virtualization.md)
 * [フィルタリング](filtering.md)

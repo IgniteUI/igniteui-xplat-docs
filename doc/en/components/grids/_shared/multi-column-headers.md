@@ -12,12 +12,9 @@ The {Platform} `{ComponentName}` supports multi-column headers which allow you t
 
 ## {Platform} {ComponentTitle} Multi-Column Headers Example
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-overview"
-           github-src="{ComponentSample}/multi-column-headers"
-           alt="{Platform} {ComponentTitle} Multi-Column Headers Overview Example">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-overview", height="550", alt="{Platform} {ComponentTitle} Multi Column Headers Overview Example"`
+
+
 
 The declaration of multi-column headers is achieved by wrapping a set of columns into an `ColumnGroup` component with `Header` title information passed.
 
@@ -498,13 +495,7 @@ public columnHeaderTemplate = (ctx: IgcCellTemplateContext) => {
 
 The following sample demonstrates how to implement collapsible column groups using header templates.
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-header-template"
-           github-src="{ComponentSample}/multi-column-header-template"
-           alt="{Platform} {ComponentTitle} Multi Column Header Template Sample">
-</code-view>
-
+`sample="/{ComponentSample}/multi-column-header-template", height="550", alt="{Platform} {ComponentTitle} Multi Column Header Template Sample"`
 
 ## Styling
 
@@ -612,12 +603,9 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-column-headers-styling"
-           github-src="{ComponentSample}/multi-column-headers-styling"
-           alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample">
-</code-view>
+`sample="/{ComponentSample}/multi-column-headers-styling", height="500", alt="{Platform} {ComponentTitle} Multi Column Headers Styling Sample"`
+
+
 
 ## Known Issues and Limitations
 
@@ -636,6 +624,7 @@ import 'core-js/es7/array';
 
 ## Additional Resources
 
+<!-- ComponentStart:  Grid -->
 * [Grid Overview](../data-grid.md)
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
@@ -645,6 +634,7 @@ import 'core-js/es7/array';
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
 * [Group by](groupby.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

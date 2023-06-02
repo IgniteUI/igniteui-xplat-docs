@@ -12,12 +12,7 @@ TODO
 ## {Platform} グリッドと Excel ライブラリの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-grids"
-           alt="{Platform} グリッドと Excel ライブラリの例"
-           github-src="excel/excel-library/working-with-grids">
-</code-view>
+`sample="/excel/excel-library/working-with-grids", height="500", alt="{Platform} グリッドと Excel ライブラリの例"`
 
 <div class="divider--half"></div>
 
@@ -25,9 +20,7 @@ TODO
 以下のコードはその方法を示しています。TODO
 
 ```ts
-
 TODO
-
 ```
 
 ## API リファレンス

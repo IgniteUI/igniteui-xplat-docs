@@ -12,12 +12,9 @@ The {ProductName} map component is designed to display geo-spatial data from sha
 ## {Platform} Binding Geographic Data Models Example
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-model"
-           alt="{Platform} Binding Geographic Data Models Example"
-           github-src="maps/geo-map/binding-data-model">
-</code-view>
+`sample="/maps/geo-map/binding-data-model", height="500", alt="{Platform} Binding Geographic Data Models Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -121,8 +118,6 @@ public createPolylineSeries(flight: any)
     lineSeries.shapeStroke = flight.color;
     this.geoMap.series.add(lineSeries);
 }
-
-
 ```
 
 ```ts
@@ -369,13 +364,13 @@ createPolylineSeries(flight: any)
         WorldCity cityLAX = new WorldCity() { Lat = 34.000, Lon = -118.25, Country = "US", Name = "Los Angeles" };
 
         this.DataSource = new List<FlightInfo>() {
-            new FlightInfo(){ Origin = cityDAL, Dest = citySNG, Color = "Green" },
-            new FlightInfo(){ Origin = cityMOS, Dest = cityNZL, Color = "Red" },
-            new FlightInfo(){ Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
-            new FlightInfo(){ Origin = cityPAN, Dest = cityROM, Color = "Orange" },
-            new FlightInfo(){ Origin = cityALT, Dest = cityJOH, Color = "Black" },
-            new FlightInfo(){ Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
-            new FlightInfo(){ Origin = cityLAX, Dest = citySYD, Color = "Gray" },
+            new FlightInfo() { Origin = cityDAL, Dest = citySNG, Color = "Green" },
+            new FlightInfo() { Origin = cityMOS, Dest = cityNZL, Color = "Red" },
+            new FlightInfo() { Origin = cityCHL, Dest = cityJAP, Color = "Blue" },
+            new FlightInfo() { Origin = cityPAN, Dest = cityROM, Color = "Orange" },
+            new FlightInfo() { Origin = cityALT, Dest = cityJOH, Color = "Black" },
+            new FlightInfo() { Origin = cityNYC, Dest = cityQTR, Color = "Purple" },
+            new FlightInfo() { Origin = cityLAX, Dest = citySYD, Color = "Gray" },
         };
     }
 

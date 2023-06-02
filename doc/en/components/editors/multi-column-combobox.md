@@ -12,35 +12,19 @@ The Multi-Column Combo Box automatically generates columns for properties on the
 
 This sample demonstrates how to create `MultiColumnComboBox` that displays data in multiple columns in a popup window.
 
-<!-- Blazor -->
-
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="{Platform} Multi-Column Combo Box Example"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
-
-<!-- end:Blazor -->
+`sample="/editors/multi-column-combobox/overview", height="400", alt="{Platform} Multi Column Combo Box Example"`
 
 <!-- Angular, React, WebComponents -->
-
-<code-view style="height: 400px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/editors/multi-column-combobox-overview"
-           alt="{Platform} Multi-Column Combo Box Example"
-           github-src="editors/multi-column-combobox/overview">
-</code-view>
 
 ## Dependencies
 When installing the charts component, the core package must also be installed.
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageGrids}
 npm install --save {PackageInputs}
 npm install --save {PackageLayouts}
-</pre>
+```
 <!-- end: Angular, React, WebComponents -->
 
 ## Component Modules

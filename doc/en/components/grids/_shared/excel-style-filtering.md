@@ -9,19 +9,16 @@ namespace: Infragistics.Controls
 
 # Excel Filtering in {Platform} {ComponentTitle}
 
-The grid Excel filtering provides an Excel like filtering UI for any {Platform} `{ComponentName}`.
+The {Platform} `{ComponentName}` exposes an Excel-style filtering feature that provides an Excel-like filtering UI.
 
 ## {Platform} {ComponentTitle} Excel Style Filtering Example
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-1"
-           github-src="{ComponentSample}/excel-style-filtering-sample-1" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-sample-1", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 1"`
+
 
 ## Usage
 
-To turn on the grid excel filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
+To turn on the `Grid` component's Excel-style filtering, two inputs should be set. The `AllowFiltering` should be set to **true** and the `FilterMode` should be set to `ExcelStyleFilter` value.
 
 <!-- Angular -->
 ```html
@@ -237,15 +234,12 @@ In the sample below 'Artist' column have all three features enabled, 'Debut' hav
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-2"
-           github-src="{ComponentSample}/excel-style-filtering-sample-2" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-sample-2", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 2"`
 
-<!-- TODO -- there is still no excel style filtering components. Uncomment the below section once they exist. -->
-<!-- ## Templates
-TODO: check when decide how to support directives
+
+## Templates
+
+<!-- Angular -->
 
 If you want to further customize the Excel style filter menu without disabling the column features you could use custom templates. The Excel Style filter menu provides two directives for templating:
 - `IgxExcelStyleColumnOperationsTemplateDirective` - re-templates the area with all column operations like sorting, pinning, etc.
@@ -253,7 +247,44 @@ If you want to further customize the Excel style filter menu without disabling t
 
 You could either re-template only one of those areas or both of them. You could put any custom content inside those directives or you could use any of our built-in Excel style filtering components.
 
-The following code demonstrates how to define a custom Excel style filter menu using the `excel-style-header`, `excel-style-sorting` and `excel-style-search` components. -->
+The following code demonstrates how to define a custom Excel style filter menu using the `excel-style-header`, `excel-style-sorting` and `excel-style-search` components.
+
+<!-- end: Angular -->
+
+<!-- WebComponents, Blazor -->
+
+If you want to further customize the Excel style filter menu, you can use the `ExcelStyleHeaderIconTemplate` property to define a custom template for the header icon of the menu.
+
+The following code demonstrates how to customize the Excel style filter menu using the `ExcelStyleHeaderIconTemplate`:
+
+```razor
+<IgbGrid    
+    Name="grid"
+    @ref="grid"
+    Data="Data"    
+    AllowFiltering="true"
+    FilterMode="FilterMode.ExcelStyleFilter"
+    ExcelStyleHeaderIconTemplateScript="WebGridFilterAltIconTemplate"/>
+
+*** In JavaScript ***
+igRegisterScript("WebGridFilterAltIconTemplate", (ctx) => {
+    var html = window.igTemplating.html;
+        return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
+}, false);
+```
+
+```ts
+constructor() {
+    var grid = this.grid = document.getElementById('grid') as IgcGridComponent;
+    grid.excelStyleHeaderIconTemplate = this.webGridFilterAltIconTemplate;
+}
+
+public webGridFilterAltIconTemplate = (ctx: IgcCellTemplateContext) => {
+    return html`<img height="15px" width="15px" src="http://static.infragistics.com/xplatform/images/grid/propeller-logo.svg" title="Continued" alt="Continued" />`
+}
+```
+
+<!-- end: WebComponents, Blazor -->
 
 <!-- ComponentStart: Grid -->
 
@@ -283,7 +314,7 @@ The following code demonstrates how to define a custom Excel style filter menu u
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-grid id="grid1" auto-generate="false" height="650px" width="100%" allow-filtering="true" filter-mode="ExcelStyleFilter">
 
     <igc-grid-excel-style-filtering min-height="380px" max-height="500px">
@@ -303,7 +334,7 @@ Add razor snipets
     </igc-grid-excel-style-filtering>
 
 </igc-grid>
-```
+``` -->
 
 <!-- ComponentEnd: Grid -->
 
@@ -335,7 +366,7 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-tree-grid id="treegrid1" auto-generate="false" height="650px" width="100%" allow-filtering="true"
     primary-key="ID" foreign-key="ParentID" filter-mode="ExcelStyleFilter">
 
@@ -356,7 +387,7 @@ Add razor snipets
     </igc-grid-excel-style-filtering>
 
 </igc-tree-grid>
-```
+``` -->
 
 <!-- ComponentEnd: TreeGrid -->
 
@@ -405,7 +436,7 @@ Add razor snipets
 Add razor snipets
 ``` -->
 
-```html
+<!-- ```html
 <igc-hierarchical-grid class="hgrid" auto-generate="false" allow-fFiltering='true' filter-mode="ExcelStyleFilter"
     height="650px" width="100%" row-height="65px" id="hierarchicalGrid">
 
@@ -442,14 +473,15 @@ Add razor snipets
         </igc-grid-excel-style-filtering>
 
 </igc-hierarchical-grid>
-```
+``` -->
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
 
-<!-- You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive: -->
-
 <!-- Angular -->
+
+You could also re-template the Excel style filtering icon in the column header using the `ExcelStyleHeaderIcon` directive:
+
 ```html
 <{ComponentSelector}>
     <ng-template igxExcelStyleHeaderIcon>
@@ -457,24 +489,19 @@ Add razor snipets
     </ng-template>
 </{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-<!-- ```razor
-Templating header icon
-``` -->
 
 ```ts
-
 public filterIconHeaderTemplate = (ctx: IgcCellTemplateContext) => {
     return html`<igx-icon>filter_alt</igx-icon>`;
 }
 ```
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-sample-3"
-           github-src="{ComponentSample}/excel-style-filtering-sample-3" >
-</code-view>
+<!-- end: Angular -->
+
+`sample="/{ComponentSample}/excel-style-filtering-sample-3", height="620", alt="{Platform} {ComponentTitle} excel style filtering sample 3"`
+
+
+<!-- Angular -->
 
 Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-header`
@@ -485,69 +512,73 @@ Here is the full list of Excel style filtering components that you could use:
 - `Excel-style-selecting`
 - `Excel-style-clear-filters`
 - `Excel-style-conditional-filter`
-- `Excel-style-search` -->
+- `Excel-style-search`
+
+<!-- end: Angular -->
+
+<!-- Angular -->
 
 ## Unique Column Values Strategy
 
 The list items inside the Excel Style Filtering dialog represent the unique values for the respective column. These values can be provided manually and loaded on demand, which is demonstrated in the [{ComponentTitle} Remote Data Operations](remote-data-operations.md#unique-column-values-strategy) topic.
 
-<!-- TODO -- uncomment below section when we can define a filtering strategy on the grid. -->
-<!-- ## Formatted Values Filtering Strategy
+<!-- end: Angular -->
 
-By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values. -->
+<!-- Angular -->
+
+ ## Formatted Values Filtering Strategy
+
+By default, the {ComponentTitle} component filters the data based on the original cell values, however in some cases you may want to filter the data based on the formatted values.
 
 <!-- ComponentStart: Grid, HierarchicalGrid -->
 
-<!-- In order to do that you can use the `FormattedValuesFilteringStrategy`. -->
+In order to do that you can use the `FormattedValuesFilteringStrategy`.
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
 <!-- ComponentStart: TreeGrid -->
 
-<!-- In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`. -->
+In order to do that you can use the `TreeGridFormattedValuesFilteringStrategy`.
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values: -->
+The following sample demonstrates how to format the numeric values of a column as strings and filter the {ComponentTitle} based on the string values:
 
-<!-- <code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-filtering-strategy"
-           github-src="{ComponentSample}/filtering-strategy" >
-</code-view>
+
+
+`sample="/{ComponentSample}/filtering-strategy", height="620", alt="{Platform} {ComponentTitle} filtering strategy"`
+
 
 > [!Note]
->The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter. -->
+>The formatted values filtering strategy won't work correctly if you have more than one column bound to the same field from your data and one of the columns has a formatter.
+
+<!-- end: Angular -->
 
 <!-- ComponentStart: TreeGrid -->
-<!-- ## Tree Filter View
+
+## Tree Filter View
 
 By default, the Excel Style Filtering dialog displays the items in a list view. In order to display them in a tree view you can use the `TreeGridFilteringStrategy` and specify an array of column field names. Filter items will be displayed in a tree view for the speicified columns and in a list view for all other columns. The following sample demonstrates how to show filter items in a tree view for the first column:
 
-<code-view style="height:650px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-tree-filter-view"
-           github-src="{ComponentSample}/tree-filter-view" >
-</code-view> -->
+`sample="/{ComponentSample}/filter-view", height="650", alt="{Platform} {ComponentTitle} filter view"`
+
 
 <!-- ComponentEnd: TreeGrid -->
 
-<!-- TODO -- No excel style filtering component -->
-<!-- ## External Excel Style filtering
+<!-- Angular -->
+
+## External Excel Style filtering
 
 As you see at the demos above the default appearance of the Excel Style filtering dialog is inside the `{ComponentName}`. So this dialog is only visible when configuring the filters. There is a way to make that dialog stay always visible - it can be used outside of the grid as a standalone component. In the demo below, the Excel style filtering is declared separately of the `{ComponentName}`.
 
 ### Demo
 
-<code-view style="height:620px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-excel-style-filtering"
-           github-src="{ComponentSample}/external-excel-style-filtering" >
-</code-view>
+`sample="/{ComponentSample}/external-excel-style-filtering", height="620", alt="{Platform} {ComponentTitle} external excel style filtering"`
+
 
 ### Usage
 
-In order to configure the Excel style filtering component, you should set its `Column` property to one of the {ComponentTitle}'s columns. In the sample above, we have bound the `Column` property to the value of an SelectComponent that displays the {ComponentTitle}'s columns. -->
+In order to configure the Excel style filtering component, you should set its `Column` property to one of the {ComponentTitle}'s columns. In the sample above, we have bound the `Column` property to the value of an SelectComponent that displays the {ComponentTitle}'s columns.
 
 
 <!-- ComponentStart: Grid -->
@@ -619,19 +650,21 @@ Add snippet for blazor
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<!-- TODO -- uncomment below when there is igxOverlayOutlet -->
-<!-- ## External Outlet
+<!-- end: Angular -->
+
+<!-- Angular -->
+
+## External Outlet
 
 The {ComponentTitle}'s [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) creates separate stacking context for each grid in the DOM. This ensures that all descendant elements of the grid will render as intended, without overlapping one another.
 However, elements that go outside of the grid (e.g. Excel Style filter) will conflict with outside elements with the same `z-index` (e.g. having two grids one under another) resulting in false rendering. The solution for this issue is to set the `Outlet` property to an external outlet directive which allows the overlay elements to always appear on top.
 
 ### Demo
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-external-outlet"
-           github-src="{ComponentSample}/external-outlet" >
-</code-view> -->
+`sample="/{ComponentSample}/external-outlet", height="700", alt="{Platform} {ComponentTitle} external outlet"`
+
+<!-- end: Angular -->
+
 
 <!-- Angular -->
 
@@ -939,24 +972,23 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 
 ### Demo
 
-<code-view style="height:950px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-excel-style-filtering-style"
-           github-src="{ComponentSample}/excel-style-filtering-style" >
-</code-view>
+`sample="/{ComponentSample}/excel-style-filtering-style", height="950", alt="{Platform} {ComponentTitle} excel style filtering style"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
 
 <!-- end: Angular -->
+
 ## API References
 
 * `Column`
+* `Grid`
 
 
 ## Additional Resources
 
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Sorting](sorting.md)
@@ -965,6 +997,7 @@ Don't forget to include the themes in the same way as it was demonstrated above.
 * [Column Pinning](column-pinning.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 
 Our community is active and always welcoming to new ideas.

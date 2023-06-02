@@ -11,12 +11,9 @@ The {Platform} Button Component lets you enable clickable elements that trigger 
 
 ## {Platform} Button Example
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-overview"
-           alt="{Platform} Button Example"
-           github-src="inputs/button/overview">
-</code-view>
+`sample="/inputs/button/overview", height="100", alt="{Platform} Button Example"`
+
+
 
 ## Usage
 
@@ -109,10 +106,10 @@ With `prefix` and `suffix` slots of the `Button` component, we can add different
 
 ## Type
 
-The button component will change its internal structure from a [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [<a>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
-In the case when the button component uses an actual [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
+The button component will change its internal structure from a [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) to an [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) type element when the `Href` attribute is set. In that case the button can be thought of as a regular link. Setting the `Href` attribute will allow you to also set the `Rel`, `Target` and `Download` attributes.
+In the case when the button component uses an actual [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element internally, we can specify its `DisplayType` by setting the property to any of the following values:
 
-- `submit` - when we want to submit the form data
+- `Submit` - when we want to submit the form data
 - `reset` - when we want to reset form data to its initial values
 - `button` - when we want to add button with a custom functionality anywhere on a webpage
 
@@ -134,10 +131,7 @@ Use the `variant` attribute to add a simple contained button in your component t
 <IgbButton Variant="@ButtonVariant.Contained" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-contained">
-</code-view>
+`sample="/inputs/button/contained", height="70", alt="{Platform} button contained"`
 
 ### Outlined Button
 
@@ -155,10 +149,7 @@ All you have to do to create an `outlined` button is to change the value of the 
 <IgbButton Variant="@ButtonVariant.Outlined" />
 ```
 
-<code-view style="height: 80px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-outlined">
-</code-view>
+`sample="/inputs/button/outlined", height="80", alt="{Platform} button outlined"`
 
 ### Flat Button
 
@@ -176,10 +167,7 @@ Analogically, we can switch to `flat` variant.
 <IgbButton Variant="@ButtonVariant.Flat" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-flat">
-</code-view>
+`sample="/inputs/button/flat", height="70", alt="{Platform} button flat"`
 
 ### Floating Action Button
 
@@ -197,10 +185,7 @@ We can create a floating action button by setting the `variant` property to `fab
 <IgbButton Variant="@ButtonVariant.Fab" />
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-fab">
-</code-view>
+`sample="/inputs/button/fab", height="70", alt="{Platform} button fab"`
 
 ## Button Sizing
 
@@ -298,12 +283,9 @@ public onRadioChange(e: any) {
 
 The result of implementing the above code should look like the following:
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-size"
-           alt="{Platform} Button Sizing Example"
-           github-src="inputs/button/size">
-</code-view>
+`sample="/inputs/button/size", height="200", alt="{Platform} Button Sizing Example"`
+
+
 
 ### Download
 
@@ -335,10 +317,7 @@ Setting the `download` property will prompt the user to save the linked URL inst
 </IgbButton>
 ```
 
-<code-view style="height: 70px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-download">
-</code-view>
+`sample="/inputs/button/download", height="70", alt="{Platform} button download"`
 
 ## Styling
 
@@ -352,12 +331,9 @@ igc-button::part(base) {
 }
 ```
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/inputs/button-styling"
-           alt="{Platform} Button Styling Example"
-           github-src="inputs/button/styling">
-</code-view>
+`sample="/inputs/button/styling", height="100", alt="{Platform} Button Styling Example"`
+
+
 
 ## API References
 

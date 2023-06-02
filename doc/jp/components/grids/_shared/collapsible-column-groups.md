@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} の縮小可能な列グループを�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 # {Platform} {ComponentTitle} の縮小可能な列グループの概要
 
@@ -13,12 +13,9 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} の縮小可能な列グループの例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-collapsible-groups"
-           github-src="{ComponentSample}/column-collapsible-groups"
-           alt="{Platform} {ComponentTitle} の縮小可能な列グループの例">
-</code-view>
+`sample="/{ComponentSample}/column-collapsible-groups", height="600", alt="{Platform} {ComponentTitle} の縮小可能な列グループの例"`
+
+
 
 ## 設定
 

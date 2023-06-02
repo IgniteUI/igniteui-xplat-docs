@@ -14,12 +14,9 @@ The {Platform} `XamDataChart` allows for placement of horizontal or vertical lin
 
 The following example depicts a [Column Chart](../types/column-chart.md) with a few horizontal value overlays plotted.
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/data-chart-series-value-overlay"
-           alt="{Platform} Value Overlay Example"
-           github-src="charts/data-chart/series-value-overlay">
-</code-view>
+`sample="/charts/data-chart/series-value-overlay", height="600", alt="{Platform} Value Overlay Example"`
+
+
 
 <div class="divider--half"></div>
 

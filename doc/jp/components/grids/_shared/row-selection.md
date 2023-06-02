@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "PivotGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 行の選択
@@ -26,13 +26,7 @@ namespace: Infragistics.Controls
 
 <!-- ComponentEnd: Grid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-mode"
-           github-src="{ComponentSample}/row-selection-mode"
-           alt="{Platform} {ComponentTitle} 行選択の例">
-</code-view>
-
+`sample="/{ComponentSample}/row-selection-mode", height="700", alt="{Platform} {ComponentTitle} 行選択の例"`
 
 
 ## 設定
@@ -339,7 +333,6 @@ constructor() {
 public handleRowSelectionChange(args) {
     args.cancel = true; // this will cancel the row selection
 }
-
 ```
 
 ```razor
@@ -581,12 +574,9 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 このデモでは、カスタム ヘッダーと行セレクターの使用方法を示します。後者は、`RowContext.Index` を使用して行番号と、`RowContext.Selected` にバインドされた `Checkbox` を表示します。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-numbers"
-           github-src="{ComponentSample}/row-selection-template-numbers"
-           alt="{Platform} {ComponentTitle} 選択テンプレートの番号付けの例">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-numbers", height="550", alt="{Platform} {ComponentTitle} 選択テンプレートの番号付けの例"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -597,11 +587,8 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:550px"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-selection-template-excel"
-           github-src="{ComponentSample}/row-selection-template-excel"
-           alt="{Platform} {ComponentTitle} 選択テンプレート Excel の例">
-</code-view>
+`sample="/{ComponentSample}/row-selection-template-excel", height="550", alt="{Platform} {ComponentTitle} 選択テンプレート Excel の例"`
+
 
 <!-- end: Angular -->
 
@@ -611,12 +598,9 @@ public headSelectorTemplate = (ctx: IgcHeadSelectorTemplateContext) => {
 
 このデモでは、`RowSelectionChanging` イベントと、選択できない行のチェックボックスが無効になっているカスタム テンプレートを使用して、一部の行が選択されないようにします。
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-conditional-row-selectors"
-           github-src="{ComponentSample}/conditional-row-selectors"
-           alt="{Platform} {ComponentTitle} 条件行セレクターの例">
-</code-view>
+`sample="/{ComponentSample}/conditional-row-selectors", height="550", alt="{Platform} {ComponentTitle} 条件行セレクターの例"`
+
+
 
 ## API リファレンス
 

@@ -19,12 +19,12 @@ mentionedTypes: ['XamBulletGraph']
 
 2 - ターミナル ウィンドウに以下のコマンドのいずれかを入力します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npx create-react-app my-app-name --typescript
-</pre>
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```
+```cmd
 yarn create react-app my-app-name --typescript
-</pre>
+```
 
 以上のコマンドについての詳細は<a href="https://facebook.github.io/create-react-app/docs/adding-typescript" target="_blank">こちら</a>を参照してください。
 
@@ -61,14 +61,10 @@ yarn create react-app my-app-name --typescript
 このトピックでは、Ignite UI for Web Components を使用して Web コンポーネント アプリケーションを作成するための手順を説明します。
 
 ## Ignite UI Web Components の例
-以下のサンプルは、Web Components の概要を示し、それらを利用することで適切に構造化されたアプリを作成する方法を示しています。これは、ユーザーのアバター、サイド ナビゲーション、およびメイン コンテンツ領域を含むアプリ ヘッダーを含む旅行ブログのサンプルです。
 
-<code-view style="height: 750px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/getting-started-overview"
-           alt="{Platform} 概要の例"
-           github-src="layouts/getting-started/overview">
-</code-view>
+`sample="/maps/geo-map/display-osm-imagery", height="750", alt="{Platform} Overview Example"`
+
+
 
 # 構成
 
@@ -76,15 +72,15 @@ yarn create react-app my-app-name --typescript
 
 アプリケーションを最初から作成し、Ignite UI Web Components を使用するように構成するには、Ignite UI CLI を使用できます。最初の手順には、以下のように各パッケージをグローバルにインストールします。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install -g igniteui-cli
-</pre>
+```
 
 使用可能なオプションをガイド付きで体験したい場合は、新しいアプリケーションの作成とセットアップに役立つ手順モードを初期化できます。ガイドを開始するには、`ig` コマンドを実行するだけです。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 ig
-</pre>
+```
 
 次に、フレームワークとして Web Components を選択し、`Base` プロジェクト テンプレートを選択し、特定のコンポーネント / ビューを追加するか、`Complete & Run` を選択します。
 さらに、Ignite UI CLI の詳細については[こちら](general-cli-overview.md)を参照してください。
@@ -107,7 +103,7 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 ## Ignite UI for Web Components のインストール
 アプリケーションで Ignite UI Web Components を使用するには、`igniteui-webcomponents` パッケージをインストールする必要があります。
 
-```
+```cmd
 npm install igniteui-webcomponents
 ```
 
@@ -141,36 +137,36 @@ defineAllComponents();
 ## 手順 1 - Web コンポーネント プロジェクトの作成
 
 1 - コマンドラインを開き、**wc-html** という名前のディレクトリを作成します。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 mkdir wc-html
-</pre>
+```
 
 2 - コマンドライン パスを新しく作成したディレクトリに変更します。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 cd wc-html
-</pre>
+```
 
 3 - ディレクトリで **npm** を初期化します。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm init -y
-</pre>
+```
 
 4 - **webpack** バンドラー および **webpack cli** を developer dependency としてインストールします。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
-> npm install webpack webpack-cli --save-dev
-</pre>
+```cmd
+npm install webpack webpack-cli --save-dev
+```
 
 > [!Note]
 > Webpack はモジュール バンドラーです。主な目的は、ブラウザーで使用するために JavaScript ファイルをバンドルすることですが、あらゆるリソースやアセットを変換、バンドル、またはパッケージ化することもできます。
 
 5 - **VS Code** でプロジェクトを開きます。
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 code .
-</pre>
+```
 
 6 - 以下のコードを使用して **index.html** という名前の新しいファイルを作成します。
 
-```
+```html
 <html>
     <head>
         <title>Getting Started with Ignite UI for Web Components</title>
@@ -187,7 +183,7 @@ code .
 
 8 - **package.json** ファイルを、**webpack** を使用してビルド スクリプトを含めるよう変更します。
 
-```
+```json
   "scripts": {
     "build": "webpack ./src/index.js -o ./dist/ --output-filename index.bundle.js"
   },
@@ -198,7 +194,7 @@ code .
 >
 > ビルド中に **javaScript のメモリ不足** の問題が発生した場合、代わりに以下のビルド コマンドを使用してヒープ サイズを増やすことができます。
 
-```
+```json
 "scripts": {
     "build": "node --max_old_space_size=8192 node_modules/webpack/bin/webpack src/index.js -o dist/index.bundle.js"
 },
@@ -210,9 +206,9 @@ code .
 
 2 - Web コンポーネントのポリフィルで以下のコマンドを入力します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install @webcomponents/custom-elements
-</pre>
+```
 
 3 - Web コンポーネントのポリフィルを **index.js** にインポートします。
 ```ts
@@ -224,12 +220,12 @@ import '@webcomponents/custom-elements/src/native-shim.js';
 
 1 - **npm** を使用して Ignite UI for Web コンポーネントをインストールします。この例では、Map Web コンポーネントをインストールします。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCore}
 npm install --save {PackageCharts}
 npm install --save {PackageMaps}
 npm install lit-html
-</pre>
+```
 
 2 - Geographic Map モジュールと**ModuleManager** を **index.js** ファイルにインポートします。
 
@@ -262,9 +258,9 @@ ModuleManager.register(
 
 1 - **VS Code** でターミナルを開き、**build** スクリプトを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm run build
-</pre>
+```
 
 > [!Note]
 > このコマンドは、前に作成したビルド スクリプトを実行します。ビルド スクリプトは、**dist** という名前のフォルダーに **index.bundle.js** という名前のファイルを生成します。
@@ -299,25 +295,25 @@ npm run build
 
 既存の {Platform} CLI プロジェクト (以前のもの) で {ProductName} を使用する場合は、以下のコマンドを実行します。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm install --save {PackageCharts} {PackageCore}
 npm install --save {PackageExcel} {PackageCore}
 npm install --save {PackageGauges} {PackageCore}
 npm install --save {PackageGrids} {PackageCore}
 npm install --save {PackageMaps} {PackageCore}
 npm install --save {PackageSpreadsheet} {PackageCore}
-</pre>
+```
 
 また
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 yarn add {PackageCharts} {PackageCore}
 yarn add {PackageExcel} {PackageCore}
 yarn add {PackageGauges} {PackageCore}
 yarn add {PackageGrids} {PackageCore}
 yarn add {PackageMaps} {PackageCore}
 yarn add {PackageSpreadsheet} {PackageCore}
-</pre>
+```
 
 これにより、{ProductName} のパッケージが、それらのすべての依存関係、フォントのインポート、および既存のプロジェクトへのスタイル参照と共に自動的にインストールされます。
 
@@ -352,7 +348,6 @@ ModuleManager.register(
     IgcGeographicMapModule,
     IgcDataChartInteractivityModule
 );
-
 ```
 
 ## コンポーネントの使用
@@ -387,9 +382,9 @@ render() {
 
 以下のコマンドを使用して新しいアプリケーションを実行できます。
 
-<pre style="background:#141414;color:white;display:inline-block;padding:16x;margin-top:10px;font-family:'Consolas';border-radius:5px;width:100%">
+```cmd
 npm run-script start
-</pre>
+```
 
 コマンドを実行した後、プロジェクトがローカルでビルドされて提供されます。これでデフォルトのブラウザーで自動的に開き、プロジェクトで {ProductName} コンポーネントを使用できるようになります。
 
@@ -430,9 +425,9 @@ NuGet を使用した Ignite UI for Blazor のインストールの詳細につ�
 
 ### .NET 6 アプリケーション
 
-1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** を呼び出して Ignite UI for Blazor サービスを登録します。
+1 - **Program.cs** ファイルを開き、**builder.Services.AddIgniteUIBlazor()** 関数を呼び出して Ignite UI for Blazor サービスを登録します。
 
-```
+```razor
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

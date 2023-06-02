@@ -16,11 +16,8 @@ _language: ja
 
 以下の単純な Ignite UI for {Platform} Toast の例を見てください。ボタンをクリックすると、アニメーションの通知メッセージがポップアップ表示されます。
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:demosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/notifications/toast-overview" alt="{Platform} Toast の例"
-           github-src="notifications/toast/overview">
-</code-view>
+`sample="/notifications/toast/overview", height="230", alt="{Platform} Toast の例"`
+
 
 <div class="divider--half"></div>
 
@@ -100,7 +97,7 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
 
     public void OnToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Show();
         }
@@ -117,13 +114,13 @@ Toast コンポーネントを表示する最も簡単な方法は、`Show` メ�
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onShowButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.show();
     }
 }
@@ -161,7 +158,7 @@ public onShowButtonClicked() {
 
     public void OnToggleToastButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.Toggle();
         }
@@ -169,7 +166,7 @@ public onShowButtonClicked() {
 
     public void OnToggleKeepOpenButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.KeepOpen = !this.ToastRef.KeepOpen;
         }
@@ -177,7 +174,7 @@ public onShowButtonClicked() {
 
     public void OnDisplayTimeButtonClick(MouseEventArgs args)
     {
-        if(this.ToastRef != null)
+        if (this.ToastRef != null)
         {
             this.ToastRef.DisplayTime = 8000;
         }
@@ -202,36 +199,33 @@ public onShowButtonClicked() {
     <span>Toast Message</span>
 </IgrToast>
 
-public onToastRef(toast: IgrToast){
+public onToastRef(toast: IgrToast) {
     if (!toast) { return; }
     this.toastRef = toast;
 }
 
 public onToggleButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.toggle();
     }
 }
 
 public onKeepOpenButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.keepOpen = !this.toastRef.keepOpen;
     }
 }
 
 public onDisplayTimeButtonClicked() {
-    if(this.toastRef){
+    if (this.toastRef) {
         this.toastRef.displayTime = 8000;
     }
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-properties"
-           alt="{Platform} Toast プロパティの例"
-           github-src="notifications/toast/properties">
-</code-view>
+`sample="/notifications/toast/properties", height="230", alt="{Platform} Toast プロパティの例"`
+
+
 
 ## スタイル設定
 
@@ -245,13 +239,7 @@ igc-toast {
 }
 ```
 
-<code-view style="height: 230px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/notifications/toast-styling"
-           alt="{Platform} Toast スタイル設定の例"
-           github-src="notifications/toast/styling">
-</code-view>
-
+`sample="/notifications/toast/styling", height="230", alt="{Platform} Toast スタイル設定の例"`
 
 <div class="divider--half"></div>
 

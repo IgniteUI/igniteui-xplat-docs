@@ -15,12 +15,9 @@ Column Pinning in {ProductName} allows the end users to lock column in a particu
 
 This example demonstrates how you can pin a column or multiple columns to the left or right side of the `{ComponentName}`.
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options"
-           alt="{Platform} {ComponentTitle} Column Pinning  Example">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} Column Pinning Example"`
+
+
 
 ## Column Pinning API
 
@@ -50,7 +47,7 @@ Column pinning is controlled through the `Pinned` property of the `Column`. Pinn
 <igc-grid id="grid1" width="700px" auto-generate="false">
     <igc-column field="Name" pinned="true"></igc-column>
     <igc-column field="AthleteNumber"></igc-column>
-    <igc-column field="TrackProgress"></igxc-column>
+    <igc-column field="TrackProgress"></igc-column>
     <igc-paginator per-page="10">
     </igc-paginator>
 </igc-grid>
@@ -199,9 +196,6 @@ function onColumnPinned(e) {
 igRegisterScript("onColumnPinned", onColumnPinned, false);
 ```
 
-
-
-
 ## Pinning Position
 
 You can change the column pinning position via the `Pinning` configuration option. It allows you to set the columns position to either Start or End.
@@ -211,26 +205,26 @@ When set to End the columns are rendered at the end of the grid, after the unpin
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
-<!-- end: Angular -->
-
-```razor
-<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
-```
-
-<!-- WebComponents -->
-```html
-<{ComponentSelector} auto-generate="true">
-    <igc-pinning-config columns="End">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
 
 ```typescript
 public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { columns: ColumnPinningPosition.End };
+```
+<!-- end: WebComponents -->
 
 ```razor
+<{ComponentSelector} Data=data AutoGenerate=true Pinning="pinningConfig"></IgbGrid>
+
 @code {
     private IgbPinningConfig pinningConfig = new() {
         Columns = ColumnPinningPosition.End
@@ -240,11 +234,8 @@ public pinningConfig: IPinningConfig = { columns: ColumnPinningPosition.End };
 
 ### Demo
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-right-side"
-           github-src="{ComponentSample}/column-pinning-right-side">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-right-side", height="510", alt="{Platform} {ComponentTitle} column pinning right side"`
+
 
 <!-- Angular -->
 
@@ -260,7 +251,7 @@ This can be done by creating a header template for the column with a custom icon
 ```html
 <igx-grid #grid1 [data]="data" [width]="'100%'" [height]="'500px'">
     <igx-column #col *ngFor="let c of columns" [field]="c.field" [header]="c.header" [width]="c.width" [pinned]='c.pinned'
-        [hidden]='c.hidden' [headerClasses]="'customHeaderSyle'">
+        [hidden]='c.hidden' [headerClasses]="'customHeaderStyle'">
         <ng-template igxHeader>
             <div class="title-inner">
                 <span style="float:left">{{col.header}}</span>
@@ -457,7 +448,7 @@ public pinHeaderTemplate = (ctx: IgcCellTemplateContext) => {
             <igc-column field="Quantity" width="150px"></igx-column>
             <igc-column field="Discount" width="150px"></igx-column>
         </igc-row-island>
-    </igxc-row-island>
+    </igc-row-island>
 </igc-hierarchical-grid>
 ```
 ```ts
@@ -513,11 +504,8 @@ public toggleColumn(col: IgcColumnComponent) {
 
 ### Demo
 
-<code-view style="height:510px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-options"
-           github-src="{ComponentSample}/column-pinning-options">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-options", height="510", alt="{Platform} {ComponentTitle} column pinning options"`
+
 
 <!-- end: Angular -->
 
@@ -592,8 +580,8 @@ Extend one of the two predefined schemas, that are provided for every component.
 $custom-grid-schema: extend($_light-grid,(
     pinned-border-width: 5px,
     pinned-border-style: double,
-    pinned-border-color: color:("secondary", 500),
-    cell-active-border-color: color:("secondary", 500)
+    pinned-border-color: color: ("secondary", 500),
+    cell-active-border-color: color: ("secondary", 500)
 ));
 ```
 In order for the custom schema to be applied, either `light`, or `dark` globals has to be extended. The whole process is actually supplying a component with a custom schema and adding it to the respective component theme afterwards.
@@ -634,11 +622,8 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:506px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-column-pinning-styles"
-           github-src="{ComponentSample}/column-pinning-styles">
-</code-view>
+`sample="/{ComponentSample}/column-pinning-styles", height="506", alt="{Platform} {ComponentTitle} column pinning styles"`
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -651,7 +636,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * `ColumnComponent`
 
 ## Additional Resources
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -660,6 +645,7 @@ This way, due to Angular's [ViewEncapsulation](https://angular.io/api/core/Compo
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

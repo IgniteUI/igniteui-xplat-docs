@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} は、{ComponentTitle} 一括編集を
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 検索フィルター
@@ -16,13 +16,7 @@ namespace: Infragistics.Controls
 
 次の例は、すべての列と行を検索できる検索入力ボックスと、各列の特定のフィルタリング オプションを備えた `{ComponentName}` を表しています。
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-searching"
-           github-src="{ComponentSample}/data-searching"
-           alt="{Platform} {ComponentTitle} 検索の例">
-</code-view>
-
+`sample="/{ComponentSample}/data-searching", height="600", alt="{Platform} {ComponentTitle} 検索の例"`
 
 ## {Platform} 検索の使用
 
@@ -289,7 +283,7 @@ public findNext(e) {
 
 <!-- Angular -->
 
-ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。 `PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
+ユーザーは矢印キーと <kbd>Enter</kbd> キーで結果を移動できます。`PreventDefault` メソッドのデフォルト キャレットの移動を防止する検索入力の **keydown** イベントを処理し、ユーザーが押したキーに基づいて `FindNext`/`FindPrev` メソッドを呼び出します。
 
 <!-- end: Angular -->
 
@@ -568,10 +562,11 @@ builder.Services.AddIgniteUIBlazor(
     <input id="search1" placeholder="Search" />
 
     <igc-suffix>
-        ...
+        <!-- ... -->
     </igc-suffix>
 </igc-input-group>
 ```
+
 <!-- Angular -->
 ```typescript
 public clearSearch() {
@@ -848,7 +843,7 @@ public findNext(e) {
 `Column` プロパティ:
 -   `Searchable`
 
-その他のコンポーネントおよびディレクティブ (またはそのいずれか) で使用した API:
+その他のコンポーネント (またはそのいずれか) で使用した API:
 
 <!-- Angular -->
 

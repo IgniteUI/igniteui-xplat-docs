@@ -4,8 +4,8 @@ _description: {Platform} {ComponentTitle} の行ドラッグは、マウスで�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} の行ドラッグ
@@ -14,16 +14,13 @@ namespace: Infragistics.Controls
 
 ## {Platform} {ComponentTitle} 行ドラッグの例
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-base"
-           github-src="{ComponentSample}/row-drag-base"
-           alt="{Platform} {ComponentTitle} 行ドラッグの例">
-</code-view>
+`sample="/{ComponentSample}/row-drag-base", height="560", alt="{Platform} {ComponentTitle} 行ドラッグの例"`
+
+
 
 ## 構成
 
-`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。
+`{ComponentName}` の行ドラッグを有効にするには、グリッドの `RowDraggable` を **true** に設定します。これが有効になると、行ドラッグ ハンドルが各行に表示されます。このハンドルは行ドラッグを開始するために使用できます。ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
 
 <!-- Angular -->
 ```html
@@ -44,7 +41,7 @@ namespace: Infragistics.Controls
 ```
 <!-- end: WebComponents -->
 
-ドラッグ ハンドルをクリックしてボタンを押しながらカーソルを動かすと、グリッドの `RowDragStart` イベントが発生します。クリックをリリースすると、`RowDragEnd` イベントが発生します。
+<!-- Angular -->
 
 以下は、行ドラッグをサポートするための `{ComponentName}` の設定方法と、ドロップイベントの適切な処理方法についてのチュートリアルです。
 
@@ -60,8 +57,6 @@ namespace: Infragistics.Controls
 
 <!-- ComponentEnd: Grid -->
 
-<!-- Angular -->
-
 ### ドロップエリア
 
 行ドラッグを簡単に有効にできました。次は行ドロップを処理する方法を設定する必要があります。
@@ -71,7 +66,7 @@ namespace: Infragistics.Controls
 
 ```typescript
 import { ..., IgxDragDropModule } from 'igniteui-angular';
-...
+// ...
 @NgModule({
     imports: [..., IgxDragDropModule]
 })
@@ -79,7 +74,7 @@ import { ..., IgxDragDropModule } from 'igniteui-angular';
 
 ```typescript
 import { IgcDragDropModule } from 'igniteui-webcomponents';
-...
+// ...
 ModuleManager.register(
     IgcDragDropModule
 );
@@ -306,12 +301,9 @@ public rowDragGhostTemplate = (ctx: IgcGridRowDragGhostContext) => {
 ```
 <!-- ComponentEnd: HierarchicalGrid -->
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-multi-row-dragging"
-           github-src="{ComponentSample}/multi-row-dragging"
-           alt="{Platform} {ComponentTitle} 複数行のドラッグ">
-</code-view>
+`sample="/{ComponentSample}/multi-row-dragging", height="600", alt="{Platform} {ComponentTitle} 複数行のドラッグ"`
+
+
 
 ### ドラッグ アイコンのテンプレート化
 
@@ -394,19 +386,10 @@ enum DragIcon {
 
 #### デモ
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drag-to-grid"
-           github-src="{ComponentSample}/row-drag-to-grid"
-           alt="{Platform} {ComponentTitle} 行のドラッグ">
-</code-view>
-
-<!-- end: Angular -->
+`sample="/{ComponentSample}/row-drag-to-grid", height="550", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
 
 ## アプリケーション デモ
-
-<!-- Angular -->
 
 <!-- ComponentStart: Grid -->
 
@@ -418,20 +401,12 @@ enum DragIcon {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:560px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-dragging"
-           github-src="{ComponentSample}/row-dragging"
-           alt="{Platform} {ComponentTitle} 行のドラッグ">
-</code-view>
-
+`sample="/{ComponentSample}/row-dragging", height="560", alt="{Platform} {ComponentTitle} 行のドラッグ"`
 
 > [!Note]
 > 上記のデモで使用されている行ドラッグ ゴーストに適用されるクラスは ::ng-deep 修飾子を使用しています。これは、行ドラッグが内部グリッド機能であり、CSS カプセル化のためにアプリケーション レベルでアクセスできないためです。
 
 <!-- ComponentEnd: Grid -->
-
-<!-- end: Angular -->
 
 ### 行の並べ替えデモ
 
@@ -665,12 +640,9 @@ export class HGridRowReorderComponent {
 
 <!-- ComponentEnd: TreeGrid, HierarchicalGrid -->
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-reorder"
-           github-src="{ComponentSample}/row-reorder"
-           alt="{Platform} {ComponentTitle} 行の並べ替え">
-</code-view>
+`sample="/{ComponentSample}/row-reorder", height="700", alt="{Platform} {ComponentTitle} 行の並べ替え"`
+
+
 
 <!-- ComponentStart: Grid -->
 
@@ -778,8 +750,9 @@ class MyRowGhostComponent {
         }
     }
 }
-
 ```
+
+<!-- Angular -->
 
 #### カーソル位置に基づいたドロップ インジケーターの表示
 
@@ -850,8 +823,6 @@ private changeHighlightedElement(newElement: HTMLElement) {
   }
 }
 ```
-
-<!-- Angular -->
 
 #### 行ドラッグでグリッドをスクロールする
 
@@ -927,22 +898,18 @@ class MyGridScrollComponent {
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:830px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-drop-indicator"
-           github-src="{ComponentSample}/row-drop-indicator"
-           alt="{Platform} {ComponentTitle} ドロップ インジケーター">
-</code-view>
+`sample="/{ComponentSample}/row-drop-indicator", height="830", alt="{Platform} {ComponentTitle} ドロップ インジケーター"`
+
+
 
 <!-- end: Angular -->
 
 <!-- ComponentEnd: Grid -->
 <!-- end: Angular -->
 
-
 ## 制限
 
-現在、`RowDraggable` ディレクティブに既知の制限はありません。
+現在、`RowDraggable` に既知の制限はありません。
 
 ## API リファレンス
 
@@ -952,9 +919,6 @@ class MyGridScrollComponent {
 * `{ComponentName}`
 
 ## その他のリソース
-
-
-
 コミュニティに参加して新しいアイデアをご提案ください。
 
 * [{ProductName} **フォーラム (英語)**]({ForumsLink})

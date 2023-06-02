@@ -11,12 +11,9 @@ The `WorksheetCell` objects in an Excel worksheet is the object that holds your 
 ## {Platform} Using Cells Example
 
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-working-with-cells"
-           alt="{Platform} Using Cells Example"
-           github-src="excel/excel-library/working-with-cells">
-</code-view>
+`sample="/excel/excel-library/working-with-cells", height="200", alt="{Platform} Using Cells Example"`
+
+
 
 <div class="divider--half"></div>
 

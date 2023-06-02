@@ -60,12 +60,9 @@ namespace: Infragistics.Controls
 
 In this {ProductName} Grid example, you can see how users can do both basic and excel-style filtering, live-data sorting, and use grid summaries as well as cell templating. The demo also includes paging set to display 10 items per page.
 
-<code-view style="height:700px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-overview"
-           github-src="{GridSample}/overview"
-           alt="grid example">
-</code-view>
+`sample="/{GridSample}/overview", height="700", alt="{Platform} grid example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -124,7 +121,7 @@ Or to link it:
 <link rel='stylesheet' href='node_modules/igniteui-webcomponents-grids/grids/themes/light/bootstrap.css'>
 ```
 
-For more details on how to customize the appearance of the grid, you may have a look at the [styling](data-grid.md#web-components-grid-styling-configuration) section.
+For more details on how to customize the appearance of the grid, you may have a look at the [styling](data-grid.md#styling-{PlatformLower}-grid) section.
 
 <!-- end: WebComponents -->
 
@@ -150,9 +147,9 @@ import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
     imports: [
-        ...
+        // ...
         IgxGridModule,
-        ...
+        // ...
     ]
 })
 export class AppModule {}
@@ -639,7 +636,7 @@ public normalView: TemplateRef<any>;
 @ViewChild("smallView", { read: TemplateRef })
 public smallView: TemplateRef<any>;
 
-....
+// ...
 
 const column = this.grid.getColumnByName("User");
 // Return the appropriate template based on some condition.
@@ -673,7 +670,6 @@ public smallViewTemplate = (ctx: IgcCellTemplateContext) => {
 ```
 
 ```razor
-
 <IgbGrid ColumnInit=OnColumnInit />
 
 @code {
@@ -730,7 +726,7 @@ public initColumns(column: IgcGridColumn) {
     public void OnColumnInit(IgbColumnComponentEventArgs args)
     {
         IgbColumn column = args.Detail;
-        if(column.Field == "ProductName"){
+        if (column.Field == "ProductName") {
             column.Sortable = true;
             column.Editable = true;
         }
@@ -796,11 +792,11 @@ constructor() {
 ```razor
 <IgbColumn Field="OrderDate"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 
 <IgbColumn Field="UnitPrice"
            DataType=GridColumnDataType.Date
-           PipeArgs=@(new IgbColumnPipeArgs(){ Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
+           PipeArgs=@(new IgbColumnPipeArgs() { Timezone="UTC+0", DigitsInfo="1.2-2", Format = "longDate" }) />
 ```
 
 The `OrderDate` column will respect only the `Format` and `Timezone` properties, while the `UnitPrice` will only respect the `DigitsInfo`.
@@ -811,43 +807,33 @@ All available column data types could be found in the official [Column types top
 
 ## Grid Data Structure
 
-The `Grid` handles **flat data** and nested **POJOs(Plain old Java objects)**. The data structure specific for rendering is in the form:
+The `Grid` handles **flat data** and nested **POJO (Plain old Java objects)**. The data structure specific for rendering is in the form:
 
 ```typescript
 const OBJECT_ARRAY = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: valueN
     },
-    .
-    .
-    .
+    // ...
   }];
 
 const POJO = [{
         ObjectKey1: value1,
         ObjectKey2: value2,
-        .
-        .
-        .
+        // ...
         ObjectKeyN: {
           ObjectKeyN1: value1,
           ObjectKeyN2: value2,
-          .
-          .
-          .
+          // ...
           ObjectKeyNM: valueNM,
         }
     },
-    .
-    .
-    .
+    // ...
   }];
-
 ```
+
 >[!WARNING]
 >**The key values must not contain arrays**.
 
@@ -1085,11 +1071,8 @@ configuration. Same goes for grouping and editing operations with or without tra
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-2"
-           github-src="{GridSample}/binding-nested-data-2">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-2", height="460", alt="{Platform} {GridTitle} binding nested data 2"`
+
 
 <!-- end: Angular -->
 
@@ -1138,10 +1121,10 @@ public abbreviationLongCellTemplate = (ctx: IgcCellTemplateContext) => {
     `;
 }
 
-public getName(rowId: number){
+public getName(rowId: number) {
     //row.data['name']
 }
-public getWeight(rowId: number){
+public getWeight(rowId: number) {
     //row.data['weight']['molecular']
 }
 ```
@@ -1373,7 +1356,7 @@ public getAge(rowId: number) {
 //In JavaScript:
 igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
     const people = ctx.cell.value;
@@ -1404,11 +1387,8 @@ igRegisterScript("WebGridNestedDataCellTemplate", (ctx) => {
 And the result from this configuration is:
 
 
-<code-view style="height:460px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-nested-data-1"
-           github-src="{GridSample}/binding-nested-data-1">
-</code-view>
+`sample="/{GridSample}/binding-nested-data-1", height="460", alt="{Platform} {GridTitle} binding nested data 1"`
+
 
 ### Working with Flat Data Overview
 
@@ -1627,7 +1607,7 @@ public updatePostalCode(rowId: number) {
 //In JavaScript:
 igRegisterScript("AddressEditCellTemplate", (ctx) => {
     var html = window.igTemplating.html;
-    window.keyUpHandler = function () {
+    window.keyUpHandler = function() {
         ctx.cell.row.data[window.event.target.id] = window.event.target.value;
     }
 
@@ -1655,11 +1635,8 @@ igRegisterScript("AddressEditCellTemplate", (ctx) => {
 
 Using code snippets from previous section will result in the following example of `Grid`
 
-<code-view style="height:550px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{GridSample}-binding-composite-data"
-           github-src="{GridSample}/binding-composite-data">
-</code-view>
+`sample="/{GridSample}/binding-composite-data", height="550", alt="{Platform} {GridTitle} binding composite data"`
+
 
 ## Keyboard Navigation
 
@@ -1715,7 +1692,9 @@ platformBrowserDynamic()
 > The grid uses **css grid layout**, which is **not supported in IE without prefixing**, consequently it will not render properly.
 
 <!-- WebComponents -->
-In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md). In case you would like to change the header background and text color, you need to set a class for the grid first:
+<!-- In addition to the predefined themes, the grid could be further customized by setting some of the available [CSS properties](theming.md).  -->
+
+In case you would like to change the header background and text color, you need to set a class for the grid first:
 
 ```typescript
 <igc-grid class="grid">

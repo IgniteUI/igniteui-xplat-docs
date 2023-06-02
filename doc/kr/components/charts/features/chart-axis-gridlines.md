@@ -21,12 +21,9 @@ Axis tickmarks are displayed along all horizontal and vertical axes at each labe
 
 This example shows how configure the axis gridline to display major and minor gridlines at specified intervals:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} Axis Gridlines Example"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -57,12 +54,9 @@ On date time axes, this value is represented as time span between axis minimum v
 
 The following example demonstrates how to customize the gridlines by setting the properties above:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-gridlines"
-           alt="{Platform} Axis Gridlines Example"
-           github-src="charts/category-chart/axis-gridlines">
-</code-view>
+`sample="/charts/category-chart/axis-gridlines", height="450", alt="{Platform} Axis Gridlines Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -74,12 +68,9 @@ Tick marks are always extend from the axis line and point to the direction of th
 
 The following example demonstrates how to customize the tickmarks by setting the properties above:
 
-<code-view style="height: 450px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/category-chart-axis-tickmarks"
-           alt="{Platform} Axis Tickmarks Example"
-           github-src="charts/category-chart/axis-tickmarks">
-</code-view>
+`sample="/charts/category-chart/axis-tickmarks", height="450", alt="{Platform} Axis Tickmarks Example"`
+
+
 
 <div class="divider--half"></div>
 

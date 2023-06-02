@@ -13,12 +13,9 @@ In the {Platform} `{ComponentName}`, you can pin one or multiple rows to the top
 
 ## {Platform} {ComponentTitle} Row Pinning Example
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-options"
-           github-src="{ComponentSample}/row-pinning-options"
-           alt="{Platform} {ComponentTitle} Row Pinning Example">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-options", height="600", alt="{Platform} {ComponentTitle} Row Pinning Example"`
+
+
 
 ## Row Pinning UI
 
@@ -150,29 +147,35 @@ function rowPinningHandler(event) {
 
 igRegisterScript("rowPinningHandler", rowPinningHandler, false);
 ```
-<!-- Angular -->
+<!-- Angular, WebComponents  -->
 
 ## Pinning Position
 
 You can change the row pinning position via the `Pinning` configuration option. It allows you to set the pin area position to either Top or Bottom.
 When set to Bottom pinned rows are rendered at the bottom of the grid, after the unpinned rows. Unpinned rows can be scrolled vertically, while the pinned rows remain fixed at the bottom.
 
+<!-- Angular -->
 ```html
 <{ComponentSelector} [data]="data" [autoGenerate]="true" [pinning]="pinningConfig"></{ComponentSelector}>
 ```
 
-<!-- WebComponents -->
-```html
-<{ComponentSelector} data="data" auto-generate="true" pinning="pinningConfig">
-    </igc-pinning-config rows="Bottom">
-    </igc-pinning-config>
-</{ComponentSelector}>
-```
-<!-- end: WebComponents -->
-
 ```typescript
 public pinningConfig: IPinningConfig = { rows: RowPinningPosition.Bottom };
 ```
+<!-- end: Angular -->
+
+<!-- WebComponents -->
+```html
+<{ComponentSelector} id="dataGrid" auto-generate="true"></{ComponentSelector}>
+```
+
+```typescript
+var grid = (this.grid = document.getElementById('dataGrid') as any) as IgcGridComponent;
+grid.pinning = { rows: RowPinningPosition.Bottom };
+```
+<!-- end: WebComponents -->
+
+
 
 ```razor
     <{ComponentSelector} Id="grid"
@@ -293,14 +296,11 @@ igRegisterScript("togglePinning", togglePinning, false);
 
 #### Demo
 
-<code-view style="height:600px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-extra-column"
-            github-src="{ComponentSample}/row-pinning-extra-column"
-            alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-extra-column", height="600", alt="{Platform} {ComponentTitle} Row Pinning Extra Column Example"`
 
-<!-- end: Angular -->
+
+
+<!-- end: Angular, WebComponents -->
 
 <!-- ComponentStart: Grid -->
 
@@ -354,12 +354,9 @@ This would allow reordering the rows and moving them between the pinned and unpi
 
 #### Demo
 
-<code-view style="height:510px"
-            data-demos-base-url="{environment:dvDemosBaseUrl}"
-            iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-drag"
-            github-src="{ComponentSample}/row-pinning-drag"
-            alt="{Platform} {ComponentTitle} Row Pinning Drag Example">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-drag", height="510", alt="{Platform} {ComponentTitle} Row Pinning Drag Example"`
+
+
 
 <!-- end: Angular -->
 
@@ -443,12 +440,9 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:540px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-pinning-style"
-           github-src="{ComponentSample}/row-pinning-style"
-           alt="{Platform} {ComponentTitle} Row Pinning Styling Example">
-</code-view>
+`sample="/{ComponentSample}/row-pinning-style", height="540", alt="{Platform} {ComponentTitle} Row Pinning Styling Example"`
+
+
 
 > [!Note]
 >The sample will not be affected by the selected global theme from **Change Theme**.
@@ -462,8 +456,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 
 ## Additional Resources
 
-
-
+<!-- ComponentStart:  Grid -->
 * [Virtualization and Performance](virtualization.md)
 * [Paging](paging.md)
 * [Filtering](filtering.md)
@@ -472,7 +465,7 @@ If the component is using an [Emulated](../themes/styles.md#view-encapsulation) 
 * [Column Moving](column-moving.md)
 * [Column Resizing](column-resizing.md)
 * [Selection](selection.md)
-
+<!-- ComponentEnd:  Grid -->
 
 Our community is active and always welcoming to new ideas.
 

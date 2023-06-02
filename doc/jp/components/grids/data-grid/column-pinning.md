@@ -24,12 +24,9 @@ _language: ja
 ## {Platform} Grid 列ピン固定の例
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-picker"
-           alt="{Platform} Grid 列ピン固定の例"
-           github-src="grids/data-grid/column-pinning-picker">
-</code-view>
+`sample="/grids/data-grid/column-pinning-picker", height="600", alt="{Platform} Grid 列ピン固定の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -58,7 +55,7 @@ height="calc(100% - 40px)"
 width="100%"
 autoGenerateColumns="false"
 defaultColumnMinWidth={120}
-scrollbarStyle = "thin"
+scrollbarStyle="thin"
 dataSource={this.data}>
 
     {/*Columns pinned left*/}
@@ -157,7 +154,7 @@ height="calc(100% - 40px)"
 width="100%"
 auto-generate-columns="false"
 default-column-min-width="120px"
-scrollbar-style = "thin"
+scrollbar-style="thin"
 >
     <igc-text-column pinned="left" field="ID" header-text="Employee ID" width="100"  horizontal-alignment="center"></igc-text-column>
     <igc-text-column pinned="left" field="FirstName" header-text="First Name" width="170"></igc-text-column>
@@ -177,7 +174,7 @@ scrollbar-style = "thin"
 ```ts
 import { PinnedPositions } from 'igniteui-webcomponents-grids';
 
-onButtonPinLeft () {
+onButtonPinLeft() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);
@@ -194,7 +191,7 @@ onButtonPinLeft () {
     this.grid.pinColumn(lastNameColumn, PinnedPositions.Left);
 }
 
-onButtonPinRight () {
+onButtonPinRight() {
 
     let streetColumn = this.grid.actualColumns.item(6);
     let cityColumn = this.grid.actualColumns.item(7);
@@ -211,7 +208,7 @@ onButtonPinRight () {
     this.grid.pinColumn(countryColumn, PinnedPositions.Right);
 }
 
-onButtonUnPin () {
+onButtonUnPin() {
 
     let idColumn = this.grid.actualColumns.item(0);
     let firstNameColumn = this.grid.actualColumns.item(1);
@@ -276,11 +273,8 @@ onButtonUnPin () {
 ## サンプル
 
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-column-pinning-toolbar"
-           github-src="grids/data-grid/column-pinning-toolbar">
-</code-view>
+`sample="/grids/data-grid/column-pinning-toolbar", height="600", alt="{Platform} data grid column pinning toolbar"`
+
 
 ## コード スニペット
 
@@ -332,7 +326,6 @@ public onToolbarRef(toolbar: IgrDataGridToolbar) {
     this.toolbar.columnPinningTitle = "Pinning Title";
     }
 }
-
 ```
 
 <!--WebComponents-->

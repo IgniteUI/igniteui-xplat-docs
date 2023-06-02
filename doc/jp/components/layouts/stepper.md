@@ -13,12 +13,9 @@ _language: ja
 
 次の {ProductName} ステッパーの例は、動作中のコンポーネントを示しています。これは、エンド ユーザーがクレジット カードの資格情報を変更するために通過しなければならないプロセスを、いくつかの連続したステップに従って視覚化します。
 
-<code-view style="height: 725px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
-           alt="{Platform} ステッパーの例"
-           github-src="layouts/stepper/overview">
-</code-view>
+`sample="/layouts/stepper/overview", height="725", alt="{Platform} ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -41,6 +38,23 @@ defineComponents(IgcStepperComponent);
 ```
 
 <!-- end: WebComponents -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbStepperModule)
+);
+```
+
+<!-- Blazor -->
+
+また、追加の CSS ファイルをリンクして、スタイルを `Stepper` コンポーネントに適用する必要があります。以下は、**Blazor WebAssembly** プロジェクトの **wwwroot/index.html** ファイルまたは **Blazor Server** プロジェクトの **Pages/_Host.cshtml**フ ァイルに配置する必要があります:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 これで、{Platform} `Stepper` とそのパネルの基本構成から始めることができます。
 
@@ -65,6 +79,17 @@ defineComponents(IgcStepperComponent);
 </igc-stepper>
 ```
 
+```razor
+<IgbStepper>
+    @foreach (var item in this.StepsData)
+    {
+        <IgbStep Disabled="@item.Disabled">
+          <p slot="title">@item.Title</p>
+        </IgbStep>
+    }
+</IgbStepper>
+```
+
 - 静的ステップの作成
 
 ```html
@@ -76,6 +101,17 @@ defineComponents(IgcStepperComponent);
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
 ```
 各ステップで、`Indicator`、`Title`、および `Subtitle` スロットを使用してインジケーター、タイトル、およびサブタイトルを構成できます。
 
@@ -90,10 +126,23 @@ defineComponents(IgcStepperComponent);
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <IgbIcon slot="indicator" IconName="home" Collection="material" />
+       <p slot="title">Home</p>
+       <p slot="subtitle">Home Sub Title</p>
+       <div>
+          Step Content
+          ...
+       </div>
+    </IgbStep>
+</IgbStepper>
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
@@ -113,12 +162,9 @@ defineComponents(IgcStepperComponent);
 
 以下のサンプルは、実行時にステッパーの向きとタイトルの位置を変更する方法を示しています。
 
-<code-view style="height: 528px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
-           alt="{Platform} ステッパー方向の例"
-           github-src="layouts/stepper/orientation">
-</code-view>
+`sample="/layouts/stepper/orientation", height="528", alt="{Platform} ステッパー方向の例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -143,12 +189,9 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 以下の例は、リニア ステッパーを構成する方法を示しています。
 
-<code-view style="height: 430px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
-           alt="{Platform} リニア ステッパーの例"
-           github-src="layouts/stepper/linear">
-</code-view>
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} リニア ステッパーの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -208,12 +251,9 @@ linear プロパティが *true* に設定されている場合、ステッパ�
 
 以下のサンプルは公開されたすべてのステップ タイプと変更方法を示しています。
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
-           alt="{Platform} ステップ タイプの例"
-           github-src="layouts/stepper/steptypes">
-</code-view>
+`sample="/layouts/stepper/steptypes", height="300", alt="{Platform} ステップ タイプの例"`
+
+
 
 <div class="divider--half"></div>
 

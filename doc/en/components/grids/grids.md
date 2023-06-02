@@ -135,7 +135,7 @@ div#faqs-accordion-wrapper {
     border-bottom: none;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
     div#list-features-included {
         -webkit-box-orient: vertical;
@@ -206,11 +206,8 @@ In this {Platform} grid example, you can see how users can customize their view 
 <div class="divider--half"></div>
 
 
-<code-view style="height: 435px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-overview"
-           alt="{Platform} Grid Example" >
-</code-view>
+`sample="/grids/data-grid/overview", height="435", alt="{Platform} Grid Example"`
+
 
 Like this sample? Get access to our complete {Platform} toolkit and start building your own apps in minutes. <a href="{environment:infragisticsBaseUrl}/products/{ProductSpinal}/download">Download it for free.</a>
 
@@ -253,10 +250,7 @@ This example demonstrates a few of the data grid’s key features:
 <span class="h3">Demo</span>
 
 
-<code-view style="height: 435px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/grids/data-grid-type-marketing-table"  >
-</code-view>
+`sample="/grids/data-grid/type-marketing-table", height="435", alt="{Platform} data grid type marketing table"`
 
 <div class="divider--half"></div>
 
@@ -1134,7 +1128,7 @@ If you are developing applications on multiple platforms, consider our complete 
 <!-- end: Blazor -->
 
 <script>
-    (function(){
+    (function() {
         var acc = document.getElementsByClassName("faqs-accordion");
         var i;
 

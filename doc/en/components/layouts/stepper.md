@@ -12,12 +12,9 @@ The {Platform} Stepper Component provides a wizard-like workflow and is used for
 
 The following {ProductName} Stepper Example below shows the component in action. It visualizes the process that an end-user must pass through to change the credentials of their credit card, following several consecutive steps.
 
-<code-view style="height: 725px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-overview"
-           alt="{Platform} Stepper Example"
-           github-src="layouts/stepper/overview">
-</code-view>
+`sample="/layouts/stepper/overview", height="725", alt="{Platform} Stepper Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -40,6 +37,23 @@ defineComponents(IgcStepperComponent);
 ```
 
 <!-- end: WebComponents -->
+```razor
+// in Program.cs file
+
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbStepperModule)
+);
+```
+
+<!-- Blazor -->
+
+You will also need to link an additional CSS file to apply the styling to the `Stepper` component. The following needs to be placed in the **wwwroot/index.html** file in a **Blazor Web Assembly** project or the **Pages/_Host.cshtml** file in a **Blazor Server** project:
+
+```razor
+<link href="_content/IgniteUI.Blazor/themes/light/bootstrap.css" rel="stylesheet" />
+```
+
+<!-- end: Blazor -->
 
 Now you can start with a basic configuration of the {Platform} `Stepper` and its steps.
 
@@ -64,6 +78,17 @@ Steps can be declared using one of the following approaches.
 </igc-stepper>
 ```
 
+```razor
+<IgbStepper>
+    @foreach (var item in this.StepsData)
+    {
+        <IgbStep Disabled="@item.Disabled">
+          <p slot="title">@item.Title</p>
+        </IgbStep>
+    }
+</IgbStepper>
+```
+
 - Creating static steps
 
 ```html
@@ -75,6 +100,17 @@ Steps can be declared using one of the following approaches.
        <p slot="title">Step 2</p>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <p slot="title">Step 1</p>
+    </IgbStep>
+     <IgbStep>
+       <p slot="title">Step 2</p>
+    </IgbStep>
+</IgbStepper>
 ```
 For each step the user has the ability to configure indicator, title and subtitle using the `Indicator`, `Title` and `Subtitle` slots as follows:
 
@@ -89,10 +125,23 @@ For each step the user has the ability to configure indicator, title and subtitl
        <p slot="subtitle">Home Sub Title</p>
        <div>
           Step Content
-          ...
        </div>
     </igc-step>
 </igc-stepper>
+```
+
+```razor
+<IgbStepper>
+    <IgbStep>
+       <IgbIcon slot="indicator" IconName="home" Collection="material" />
+       <p slot="title">Home</p>
+       <p slot="subtitle">Home Sub Title</p>
+       <div>
+          Step Content
+          ...
+       </div>
+    </IgbStep>
+</IgbStepper>
 ```
 <img class="responsive-img" style="margin-bottom:10px; -webkit-box-shadow: 4px 4px 4px 4px #ccc; -moz-box-shadow: 4px 4px 4px 4px #ccc; box-shadow: 4px 4px 4px 4px #ccc; max-width: 500px" src="../../images/stepper/stepper-step.png"/>
 
@@ -112,12 +161,9 @@ You can easily switch from the horizontal to vertical layout. In order to change
 
 The sample below demonstrates how stepper orientation and titles position could be changed runtime.
 
-<code-view style="height: 528px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-orientation"
-           alt="{Platform} Stepper Orientation Example"
-           github-src="layouts/stepper/orientation">
-</code-view>
+`sample="/layouts/stepper/orientation", height="528", alt="{Platform} Stepper Orientation Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -142,12 +188,9 @@ If the current non-optional step is not valid you cannot go forward to the next 
 
 The following example demonstrates how to configure a linear stepper:
 
-<code-view style="height: 430px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-linear"
-           alt="{Platform} Linear Stepper Example"
-           github-src="layouts/stepper/linear">
-</code-view>
+`sample="/layouts/stepper/linear", height="430", alt="{Platform} Linear Stepper Example"`
+
+
 
 <div class="divider--half"></div>
 
@@ -207,12 +250,9 @@ In this way if subtitles are defined, they will also be rendered below the step 
 
 The sample below demonstrates all exposed step types and how they could be changed:
 
-<code-view style="height: 300px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:demosBaseUrl}/layouts/stepper-steptypes"
-           alt="{Platform} Step Types Example"
-           github-src="layouts/stepper/steptypes">
-</code-view>
+`sample="/layouts/stepper/steptypes", height="300", alt="{Platform} Step Types Example"`
+
+
 
 <div class="divider--half"></div>
 

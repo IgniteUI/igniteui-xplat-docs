@@ -450,11 +450,8 @@ setState snippet
 
 <!-- NOTE this sample is differed -->
 
-<code-view style="height:763px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-state"
-           github-src="{ComponentSample}/data-persistence-state" >
-</code-view>
+`sample="/{ComponentSample}/data-persistence-state", height="763", alt="{Platform} {ComponentTitle} data persistence state"`
+
 
 
 <!-- ComponentStart: PivotGrid -->
@@ -511,12 +508,9 @@ public restoreState() {
 Add snippet for blazor for restore state
 ```
 
-<code-view style="height:580px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-data-persistence-noop"
-           github-src="{ComponentSample}/data-persistence-noop" >
+`sample="/{ComponentSample}/data-persistence-noop", height="580", alt="{Platform} {ComponentTitle} data persistence noop"`
 
-</code-view>
+
 
 <!-- ComponentEnd: PivotGrid -->
 
@@ -542,27 +536,23 @@ state.setState(gridState.columnSelection);
 
 <!-- ComponentStart: PivotGrid -->
 
+<!-- Angular -->
 * `GetState` method uses JSON.stringify() method to convert the original objects to a JSON string. JSON.stringify() does not support Functions, thats why the `GridState` directive will ignore the pivot dimension `MemberFunction`, pivot values `Member`, `Formatter`, custom `Aggregate` functions,
  `Styles` and pivot configuration strategies: `ColumnStrategy` and `RowStrategy`.
+<!-- end:Angular -->
 
 <!-- ComponentEnd: PivotGrid -->
-
-
-## API References
-
-* `{ComponentName}`
-* `GridStateDirective`
-
 
 ## Additional Resources
 
 <!-- ComponentStart: Grid, HierarchicalGrid, TreeGrid -->
 
-
+<!-- ComponentStart:  Grid -->
 * [Paging](paging.md)
 * [Filtering](filtering.md)
 * [Sorting](sorting.md)
 * [Selection](selection.md)
+<!-- ComponentEnd:  Grid -->
 
 <!-- ComponentEnd: Grid, HierarchicalGrid, TreeGrid -->
 

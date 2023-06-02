@@ -15,12 +15,9 @@ The {ProductName} Tabs organizes and switches between similar data sets. The tab
 
 The {Platform} Tabs example below displays three different tabs aligned in a single line so you can navigate across each in a fast and easy way.
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-overview"
-           alt="{Platform} Tabs Example"
-           github-src="layouts/tabs/overview">
-</code-view>
+`sample="/layouts/tabs/overview", height="150", alt="{Platform} Tabs Example"`
+
+
 
 ## How to use Tabs with {ProductName}
 
@@ -104,23 +101,17 @@ The `Alignment` property controls how {Platform} tabs are positioned. It accepts
 
 If the space is not enough to fit all tabs, scroll buttons are displayed.
 
-<code-view style="height: 200px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-alignment"
-           alt="{Platform} Tabs Example"
-           github-src="layouts/tabs/alignment">
-</code-view>
+`sample="/layouts/tabs/alignment", height="200", alt="{Platform} Tabs Example"`
+
+
 
 ### Scrolling
 
 Scroll buttons are shown when the available space is not enough to render all {Platform} tabs. The start scroll button is disabled if the first tab is in view. Respectively, when last tab is in view the end scroll button is disabled. By pressing one of the scroll buttons the tabs are scrolled so the tab in that direction is fully visible, or if it is already visible the previous/next tab in that direction is displayed.
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-scrolling"
-           alt="{Platform} Tabs Example"
-           github-src="layouts/tabs/scrolling">
-</code-view>
+`sample="/layouts/tabs/scrolling", height="150", alt="{Platform} Tabs Example"`
+
+
 
 ### Keyboard Navigation
 
@@ -136,12 +127,9 @@ Scroll buttons are shown when the available space is not enough to render all {P
 
 Each tab has default slot to display information - icon, text or both and `prefix` and `suffix` slots to show additional content in the beginning and/or in the end.
 
-<code-view style="height: 150px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/layouts/tabs-prefix-suffix"
-           alt="{Platform} Tabs Example"
-           github-src="layouts/tabs/prefix-suffix">
-</code-view>
+`sample="/layouts/tabs/prefix-suffix", height="150", alt="{Platform} Tabs Example"`
+
+
 
 ### Styling
 

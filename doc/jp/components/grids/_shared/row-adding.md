@@ -4,8 +4,8 @@ _description: {Platform} を使用して、定義済みの行追加機能の使�
 _keywords: {Platform}, {ComponentKeywords}, {ProductName}, Infragistics, インフラジスティックス
 mentionedTypes: [{ComponentApiMembers}]
 sharedComponents: ["Grid", "TreeGrid", "HierarchicalGrid"]
-_language: ja
 namespace: Infragistics.Controls
+_language: ja
 ---
 
 # {Platform} {ComponentTitle} 行の追加
@@ -24,12 +24,9 @@ namespace: Infragistics.Controls
 
 # {Platform} {ComponentTitle} 行の追加の例
 
-<code-view style="height:600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/{ComponentSample}-row-adding"
-           github-src="{ComponentSample}/row-adding"
-           alt="{Platform} {ComponentTitle} 行の追加の例">
-</code-view>
+`sample="/{ComponentSample}/row-adding", height="600", alt="{Platform} {ComponentTitle} 行の追加の例"`
+
+
 
 ## 行追加の使用
 
@@ -291,6 +288,7 @@ this.treeGrid.beginAddRowByIndex(null);       // Spawns the add row UI as the fi
 
 <!-- ComponentEnd: HierarchicalGrid -->
 
+<!-- Angular -->
 ## 行追加オーバーレイのカスタマイズ
 
 ### テキストのカスタマイズ
@@ -333,8 +331,6 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
 > [!Note]
 > `RowEditActions` ディレクティブを使用すると、オーバーレイ ボタンの編集と追加の両方の編集アクションが変更されます。
 
-<!-- Angular -->
-
 ## リモート シナリオ
 
 ほとんどのリモート データ シナリオでは、主キーの割り当てはサーバーの作成要求で発生します。この場合、クライアントに追加されたレコードは、サーバーのデータベースに保存されるまで最終的な主キー値を持ちません。`{ComponentName}` でこの更新を処理する推奨される方法は以下のとおりです。
@@ -348,10 +344,6 @@ public editActionsTemplate = (ctx: IgcGridRowEditActionsTemplateContext) => {
     作成要求または一括更新要求が正常に完了し、追加されたレコード インスタンス (db で生成された ID) を返すと、`Clear` API メソッド を使用して関連する ADD トランザクションをトランザクション ログからクリアする必要があります。ローカル トランザクションに生成された id フィールドがあり、データベースで作成された id フィールドと異なる場合があるため、クリアする必要があります。返却されたレコードをローカル データ インスタンスに追加できます。
 
 これにより、リモートで生成された ID がローカル データに常に反映され、以降の更新/削除操作で正しいレコード ID がターゲットになります。
-
-<!-- end: Angular -->
-
-<!-- Angular -->
 
 ## スタイル設定
 

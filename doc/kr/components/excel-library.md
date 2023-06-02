@@ -13,11 +13,8 @@ The Infragistics Excel Library allows you to work with spreadsheet data using fa
 ## Demo
 
 
-<code-view style="height: 100px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/excel/excel-library-overview"
-           github-src="excel/excel-library/overview">
-</code-view>
+`sample="/excel/excel-library/overview", height="100", alt="{Platform} excel library overview"`
+
 
 <div class="divider--half"></div>
 
@@ -109,41 +106,39 @@ ExcelUtility.save(workbook, "fileName");
 
 ```
 
-> [!Note]
->For Angular
-><div class="divider--half"></div>
->
+<!-- Angular -->
+<div class="divider--half"></div>
+
 ## Managing Heap
->
->Due to the size of the Excel Library, it's recommended to disable the source map generation.
->
->Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
->
+
+Due to the size of the Excel Library, it's recommended to disable the source map generation.
+
+Modify `angular.json` by setting the `vendorSourceMap` option under architect => build => options and under serve => options:
+
 ```ts
-...
-    "architect": {
-        "build": {
-          "builder": "...",
-          "options": {
-            "vendorSourceMap": false,
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-                  // ...
-          },
-              // ...
+  // ...
+  "architect": {
+      "build": {
+        "builder": "...",
+        "options": {
+          "vendorSourceMap": false,
+          "outputPath": "dist",
+          "index": "src/index.html",
+          "main": "src/main.ts",
+          "tsConfig": "src/tsconfig.app.json",
+                // ...
         },
-        "serve": {
-          "builder": "...",
-          "options": {
-            "vendorSourceMap": false,
-            "browserTarget": "my-app:build"
-          },
-              // ...
+            // ...
+      },
+      "serve": {
+        "builder": "...",
+        "options": {
+          "vendorSourceMap": false,
+          "browserTarget": "my-app:build"
         },
-        // ...
-      }
+            // ...
+      },
+      // ...
+    }
 ```
->
-<!-- -->
+<!-- end:Angular -->

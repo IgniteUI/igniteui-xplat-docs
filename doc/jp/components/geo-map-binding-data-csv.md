@@ -13,12 +13,9 @@ _language: ja
 ## {Platform} CSV ファイルを地理的な場所にバインドの例
 
 
-<code-view style="height: 500px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/maps/geo-map-binding-data-csv"
-           alt="{Platform} CSV ファイルを地理的な場所にバインドの例"
-           github-src="maps/geo-map/binding-data-csv">
-</code-view>
+`sample="/maps/geo-map/binding-data-csv", height="500", alt="{Platform} CSV ファイルを地理的な場所にバインドの例"`
+
+
 
 <div class="divider--half"></div>
 
@@ -110,7 +107,6 @@ public onDataLoaded(csvData: string) {
     // adding symbol series to the geographic amp
     this.geoMap.series.add(geoSeries);
 }
-
 ```
 
 ```ts
@@ -181,7 +177,6 @@ export class MapBindingDataCsvComponent implements AfterViewInit {
         this.map.series.add(geoSeries);
     }
 }
-
 ```
 
 ```html
@@ -245,7 +240,6 @@ onDataLoaded(csvData: string) {
 
 ```razor
 @using IgniteUI.Blazor.Controls
-
 @inject HttpClient Http
 
 <IgbGeographicMap Height="100%" Width="100%" Zoomable="true">

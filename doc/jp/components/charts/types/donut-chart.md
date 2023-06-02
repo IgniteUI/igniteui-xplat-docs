@@ -14,12 +14,7 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 `XamDoughnutChart` コントロールでドーナツ チャートを作成するには、以下の例のように、データをバインドします。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-legend"
-           github-src="charts/doughnut-chart/legend"
-           alt="{Platform} ドーナツ チャートの凡例" >
-</code-view>
+`sample="/charts/doughnut-chart/legend", height="600", alt="{Platform} ドーナツ チャートの凡例"`
 
 <div class="divider--half"></div>
 
@@ -66,12 +61,9 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 {Platform} ドーナツ チャートには、クリック時にスライスを選択する機能があります。任意で、単一のカスタム ビジュアル スタイルを選択済みスライスに適用できます。`SliceClick` イベントは、ユーザーがスライスをクリックすると発生します。スライス選択を有効にすると、クリック時にスライスの選択を変更できます。次のサンプルは、スライスの選択を有効にし、選択したスライスの色を灰色に設定する方法を示しています。
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-selection"
-           github-src="charts/doughnut-chart/selection"
-           alt="{Platform} ドーナツ スライスの選択" >
-</code-view>
+`sample="/charts/doughnut-chart/selection", height="600", alt="{Platform} ドーナツ スライスの選択"`
+
+
 
 <div class="divider--half"></div>
 
@@ -79,12 +71,9 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 {Platform} ドーナツ チャートに複数の輪を表示して、各輪を異なるデータ 項目にバインドしたり、共通のデータ ソースを共有したりすることができます。これは、以下の季節ごとのデータ表示など、基礎となる共通のカテゴリを持つ層としてデータを表示する必要がある場合に役立ちます:
 
-<code-view style="height: 600px"
-           data-demos-base-url="{environment:dvDemosBaseUrl}"
-           iframe-src="{environment:dvDemosBaseUrl}/charts/doughnut-chart-rings"
-           github-src="charts/doughnut-chart/rings"
-           alt="{Platform} ドーナツ チャート複数のリング" >
-</code-view>
+`sample="/charts/doughnut-chart/rings", height="600", alt="{Platform} ドーナツ チャート複数のリング"`
+
+
 
 <div class="divider--half"></div>
 
@@ -100,6 +89,8 @@ The {ProductName} ドーナツ チャートは[円チャート](pie-chart.md)と
 
 以下のテーブルは、上記のセクションで説明した API メンバーをリストします。
 
-| チャート タイプ       | コントロール名   | API メンバー |
-| -----------------|----------------|------------ |
-| ドーナツ チャート      | `XamDoughnutChart`     | `DoughnutChart` |
+- `XamDoughnutChart`
+- `AllowSliceExplosion`
+- `AllowSliceSelection`
+- `InnerExtent`
+- `SliceClick`
