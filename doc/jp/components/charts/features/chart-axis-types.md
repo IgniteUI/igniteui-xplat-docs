@@ -9,7 +9,7 @@ _language: ja
 
 # {Platform} 軸タイプ
 
-{ProductName} カテゴリ チャートは、`CategoryXAxis` および `NumericYAxis` タイプを 1 つだけ使用します。同様に、{ProductName} ファイナンシャル チャートは、`TimeXAxis` タイプと `NumericYAxis` タイプを 1 つだけ使用します。ただし、{ProductName} データ チャートは複数の軸タイプをサポートしており、[軸の位置](chart-axis-layouts.md#axis-locations-example) を設定してチャートの任意の側に配置したり、[軸交差](chart-axis-layouts.md#axis-crossing-example) プロパティを使用してチャートの内部に配置したりできます。このトピックでは、相互に互換性のある軸とシリーズ、および固有の軸に対するいくつかの特定のプロパティについて、それぞれについて説明します。
+{ProductName} カテゴリ チャートは、`CategoryXAxis` および `NumericYAxis` タイプを 1 つだけ使用します。同様に、{ProductName} ファイナンシャル チャートは、`TimeXAxis` タイプと `NumericYAxis` タイプを 1 つだけ使用します。ただし、{ProductName} データ チャートは複数の軸タイプをサポートしており、[軸の位置](chart-axis-layouts.md#軸位置の例) を設定してチャートの任意の側に配置したり、[軸交差](chart-axis-layouts.md#軸交差の例) プロパティを使用してチャートの内部に配置したりできます。このトピックでは、相互に互換性のある軸とシリーズ、および固有の軸に対するいくつかの特定のプロパティについて、それぞれについて説明します。
 
 ## デカルト軸
 
