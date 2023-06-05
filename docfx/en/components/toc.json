@@ -975,6 +975,12 @@
         "name": "Row Pinning",
         "href": "grids/data-grid/row-pinning.md",
         "status": ""
+      },
+      {
+        "exclude": ["Angular", "React"],
+        "name": "Grid with Cascading Combos",
+        "href": "grids/grid/cascading-combos.md",
+        "status": ""
       }
     ]
   },
