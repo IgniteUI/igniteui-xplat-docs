@@ -29,7 +29,8 @@ In order enable column editing, make sure `editable` property is set to `true`.
 
 Once the column editing is enabled, you can start by adding your `Combo`. Please note that here in order to have only one single selection available, you will need to use set the `singleSelect` property.
 
-<!-- WebComponents -->
+
+<!-- WebComponents, Blazor -->
 To get started with the `Combo`, first you need to import it:
 
 ```ts
@@ -37,7 +38,28 @@ import { IgcComboComponent, defineAllComponents } from 'igniteui-webcomponents';
 defineAllComponents();
 ```
 
+```razor
+builder.Services.AddIgniteUIBlazor(
+    typeof(IgbGridModule), 
+    typeof(IgbComboModule)
+);
+```
+
 Then you should define the column template with the combo:
+
+
+```razor
+<IgbColumn Field="Country" Header="Country" BodyTemplate="WebGridCountryDropDownTemplate"></IgbColumn>
+
+@code{
+    public static RenderFragment<IgbCellTemplateContext> WebGridCountryDropDownTemplate = (context) =>
+    {
+        var id = "country_" + context.Cell.Id.RowID;
+        return @<IgbCombo id="@id" Placeholder="Choose Country..." SingleSelect=true ValueKey="Country" DisplayKey="Country" ChangeScript="CountryChange"></IgbCombo>;
+    };
+}
+
+```
 
 ```ts
 public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext> = (ctx: IgcCellTemplateContext) => {
@@ -50,6 +72,28 @@ public webGridCountryDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext>
 - `displayKey` - Required for object arrays - Specifies which property will be used for the items' text. If no value is specified for `displayKey`, the  combo will use the specified `valueKey` (if any).
 
 In order to handle the selection change, we need the `change` event. The emitted event arguments contain information about the selection prior to the change, the current selection and the items that were added or removed. Therefore, it will filter the values based on the selection of the previous combo.
+
+```razor
+//In Javascript
+igRegisterScript("ComboCountryChange", (ctx) => {
+    const value = e.detail.newValue;
+    cell.update(value);
+    const nextCombo = document.getElementById("region_" + cell.id.rowID);
+    const nextProgress = document.getElementById("progress_region_" + cell.id.rowID);
+    if (value === "") {
+        nextCombo.deselect(nextCombo.value);
+        nextCombo.disabled = true;
+        nextCombo.data = [];
+    } else {
+        nextProgress.style.display = "block";
+        setTimeout(() => {
+            nextProgress.style.display = "none";
+            nextCombo.disabled = false;
+            nextCombo.data = this.regions.filter(x => x.Country === value);
+        }, 2000);
+    }
+});
+```
 
 ```ts
  public countries = [...this.worldCitiesAbove500K].filter(x => this.countryNames.indexOf(x.Country) !== -1).filter((value, index, array) => array.findIndex(x => x.Country === value.Country) === index); 
@@ -84,7 +128,7 @@ public bindEventsCountryCombo(rowId: any, cell: any) {
     }
 ```
 
-<!-- end: WebComponents -->
+<!-- end: WebComponents, Blazor -->
 
 <!-- Angular -->
 
@@ -136,14 +180,9 @@ public countryChanging(event: IComboSelectionChangeEventArgs) {
     }
 }
 ```
-
-<!-- end: Angular -->
-
-
 And lastly, adding the `LinearProgress`, which is required while loading the list of data.
 The `id` is necessary to set the value of `id` attribute.
 
-<!-- Angular -->
 ```html
  <igx-linear-bar 
     [id]="'region-progress-' + cell.row.data.ID" 
@@ -153,6 +192,10 @@ The `id` is necessary to set the value of `id` attribute.
 ```
 <!-- end: Angular -->
 
+<!-- WebComponents -->
+
+And lastly, adding the `LinearProgress`, which is required while loading the list of data.
+The `id` is necessary to set the value of `id` attribute.
 
 ```ts
     public webGridRegionDropDownTemplate: IgcRenderFunction<IgcCellTemplateContext> = (ctx: IgcCellTemplateContext) => {
@@ -165,6 +208,22 @@ The `id` is necessary to set the value of `id` attribute.
 ```
 
 
+<!-- end: WebComponents -->
+
+
+<!-- Blazor -->
+And lastly, adding the `LinearProgress`, which is required while loading the list of data.
+
+
+
+```razor
+    public static RenderFragment<IgbCellTemplateContext> WebGridRegionDropDownTemplate = (context) =>
+    {
+        var id = "region_" + context.Cell.Id.RowID;
+        return @<div style="display:flex;flex-direction:column;"><IgbCombo id="@id" Placeholder="Choose Region..." SingleSelect=true ValueKey="Region" DisplayKey="Region" ChangeScript="RegionChange"></IgbCombo><IgbLinearProgress Indeterminate=true></IgbLinearProgress></div>;
+    };
+```
+<!-- end: Blazor -->
 
 ## {Platform} {ComponentTitle} API Members
 - `{ComponentName}`
